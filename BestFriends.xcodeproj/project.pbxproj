@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,9 @@
 		7A9EC401260E7960007A1CD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9EC400260E7960007A1CD3 /* ContentView.swift */; };
 		7A9EC403260E7962007A1CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9EC402260E7962007A1CD3 /* Assets.xcassets */; };
 		7A9EC406260E7962007A1CD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A9EC405260E7962007A1CD3 /* Preview Assets.xcassets */; };
+		7ACD4E82260E7C2200AC17EA /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ACD4E80260E7C2200AC17EA /* awsconfiguration.json */; };
+		7ACD4E83260E7C2200AC17EA /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7ACD4E81260E7C2200AC17EA /* amplifyconfiguration.json */; };
+		7ACD4E86260E7CFE00AC17EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD4E85260E7CFE00AC17EA /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		7A9EC402260E7962007A1CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A9EC405260E7962007A1CD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A9EC407260E7962007A1CD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ACD4E80260E7C2200AC17EA /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		7ACD4E81260E7C2200AC17EA /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
+		7ACD4E85260E7CFE00AC17EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEA4FE43D9DFD6A03953AE89 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,7 +65,10 @@
 		7A9EC3FD260E7960007A1CD3 /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7ACD4E81260E7C2200AC17EA /* amplifyconfiguration.json */,
+				7ACD4E80260E7C2200AC17EA /* awsconfiguration.json */,
 				7A9EC3FE260E7960007A1CD3 /* BestFriendsApp.swift */,
+				7ACD4E85260E7CFE00AC17EA /* AppDelegate.swift */,
 				7A9EC400260E7960007A1CD3 /* ContentView.swift */,
 				7A9EC402260E7962007A1CD3 /* Assets.xcassets */,
 				7A9EC407260E7962007A1CD3 /* Info.plist */,
@@ -82,7 +91,6 @@
 				52BDD07C707D278B0C010487 /* Pods-BestFriends.debug.xcconfig */,
 				EEA4FE43D9DFD6A03953AE89 /* Pods-BestFriends.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,6 +163,8 @@
 			files = (
 				7A9EC406260E7962007A1CD3 /* Preview Assets.xcassets in Resources */,
 				7A9EC403260E7962007A1CD3 /* Assets.xcassets in Resources */,
+				7ACD4E82260E7C2200AC17EA /* awsconfiguration.json in Resources */,
+				7ACD4E83260E7C2200AC17EA /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ACD4E86260E7CFE00AC17EA /* AppDelegate.swift in Sources */,
 				7A9EC401260E7960007A1CD3 /* ContentView.swift in Sources */,
 				7A9EC3FF260E7960007A1CD3 /* BestFriendsApp.swift in Sources */,
 			);

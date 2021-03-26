@@ -7,5 +7,6 @@ target 'BestFriends' do
 
   # Pods for BestFriends
   pod 'Amplify'
+  pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
 
 end
