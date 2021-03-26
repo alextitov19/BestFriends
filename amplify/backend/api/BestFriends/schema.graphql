@@ -1,0 +1,6 @@
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String!
+  birthday: AWSDate!
+  rooms: [String]!
+}
