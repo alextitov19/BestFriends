@@ -1,0 +1,8 @@
+{
+    "CreateAPIKey": 1,
+    "AppSyncApiName": "BestFriends",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-bestfriends-staging-193047-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/dbdde2aabefe0d6a6e243329f3debe1c1bd7972b"
+}

@@ -1,0 +1,63 @@
+{
+    "UserAgent": "aws-amplify-cli/2.0",
+    "Version": "1.0",
+    "api": {
+        "plugins": {
+            "awsAPIPlugin": {
+                "BestFriends": {
+                    "endpointType": "GraphQL",
+                    "endpoint": "https://xys6mhvn4bawlnrfseag7w6evu.appsync-api.us-east-2.amazonaws.com/graphql",
+                    "region": "us-east-2",
+                    "authorizationType": "API_KEY",
+                    "apiKey": "da2-ouyottx3uvd43myxgeb54ybz2e"
+                }
+            }
+        }
+    },
+    "auth": {
+        "plugins": {
+            "awsCognitoAuthPlugin": {
+                "UserAgent": "aws-amplify/cli",
+                "Version": "0.1.0",
+                "IdentityManager": {
+                    "Default": {}
+                },
+                "AppSync": {
+                    "Default": {
+                        "ApiUrl": "https://xys6mhvn4bawlnrfseag7w6evu.appsync-api.us-east-2.amazonaws.com/graphql",
+                        "Region": "us-east-2",
+                        "AuthMode": "API_KEY",
+                        "ApiKey": "da2-ouyottx3uvd43myxgeb54ybz2e",
+                        "ClientDatabasePrefix": "BestFriends_API_KEY"
+                    },
+                    "BestFriends_AWS_IAM": {
+                        "ApiUrl": "https://xys6mhvn4bawlnrfseag7w6evu.appsync-api.us-east-2.amazonaws.com/graphql",
+                        "Region": "us-east-2",
+                        "AuthMode": "AWS_IAM",
+                        "ClientDatabasePrefix": "BestFriends_AWS_IAM"
+                    }
+                },
+                "CredentialsProvider": {
+                    "CognitoIdentity": {
+                        "Default": {
+                            "PoolId": "us-east-2:f6c3e3f8-e6b7-4bbf-a9cf-adb6ffbad372",
+                            "Region": "us-east-2"
+                        }
+                    }
+                },
+                "CognitoUserPool": {
+                    "Default": {
+                        "PoolId": "us-east-2_C6i3SQk5l",
+                        "AppClientId": "6oea21tlqi39ru06eer4eu9cph",
+                        "Region": "us-east-2"
+                    }
+                },
+                "Auth": {
+                    "Default": {
+                        "authenticationFlowType": "USER_SRP_AUTH"
+                    }
+                }
+            }
+        }
+    }
+}
