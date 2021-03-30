@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		76CE2E12B5EDE73F7B8244DC /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE27205E2929B955DC3C24B /* Pods_BestFriends.framework */; };
+		7AF5916126129B7A00A6DB20 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF5916026129B7A00A6DB20 /* SignUpViewController.swift */; };
 		7AF6E0D8260E869E00FA7CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6E0D7260E869E00FA7CFF /* AppDelegate.swift */; };
 		7AF6E0DA260E869E00FA7CFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6E0D9260E869E00FA7CFF /* SceneDelegate.swift */; };
 		7AF6E0DC260E869E00FA7CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6E0DB260E869E00FA7CFF /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		1150487C590F3FF531C8DA06 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		7AF5916026129B7A00A6DB20 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7AF6E0D4260E869E00FA7CFF /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF6E0D7260E869E00FA7CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AF6E0D9260E869E00FA7CFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7AF5916326129B7F00A6DB20 /* Fundamental */ = {
+			isa = PBXGroup;
+			children = (
+				7AF5916026129B7A00A6DB20 /* SignUpViewController.swift */,
+			);
+			path = Fundamental;
+			sourceTree = "<group>";
+		};
 		7AF6E0CB260E869E00FA7CFF = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 				7AF6E0E0260E869F00FA7CFF /* Assets.xcassets */,
 				7AF6E0E2260E869F00FA7CFF /* LaunchScreen.storyboard */,
 				7AF6E0E5260E869F00FA7CFF /* Info.plist */,
+				7AF5916326129B7F00A6DB20 /* Fundamental */,
 			);
 			path = BestFriends;
 			sourceTree = "<group>";
@@ -215,6 +226,7 @@
 			files = (
 				7AF6E0DC260E869E00FA7CFF /* ViewController.swift in Sources */,
 				7AF6E0D8260E869E00FA7CFF /* AppDelegate.swift in Sources */,
+				7AF5916126129B7A00A6DB20 /* SignUpViewController.swift in Sources */,
 				7AF6E0DA260E869E00FA7CFF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

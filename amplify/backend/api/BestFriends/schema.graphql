@@ -1,6 +1,7 @@
 type User @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String!
-  birthday: AWSDate!
+  birthdate: AWSDate!
   rooms: [String]!
 }
+ 

@@ -1,7 +1,7 @@
 {
     "identityPoolName": "testAuthIdentityPool",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "bestfrc3dbc9f7",
+    "resourceNameTruncated": "bestfra9dd3610",
     "userPoolName": "BestFriends",
     "autoVerifiedAttributes": [
         "phone_number"
@@ -11,7 +11,7 @@
         "SMS Text Message"
     ],
     "smsAuthenticationMessage": "Your authentication code is {####}",
-    "smsVerificationMessage": "Forgot password code: {####}",
+    "smsVerificationMessage": "Body {####}",
     "emailVerificationSubject": "Your verification code",
     "emailVerificationMessage": "Your verification code is {####}",
     "defaultPasswordPolicy": false,
@@ -22,16 +22,15 @@
         "Requires Uppercase"
     ],
     "requiredAttributes": [
-        "email",
-        "birthdate"
+        "email"
     ],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientWriteAttributes": [],
     "userpoolClientReadAttributes": [],
-    "userpoolClientLambdaRole": "BestFrc3dbc9f7_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "BestFra9dd3610_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "c3dbc9f7",
+    "sharedId": "a9dd3610",
     "resourceName": "BestFriends",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {

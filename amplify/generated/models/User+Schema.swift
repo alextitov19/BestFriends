@@ -7,7 +7,7 @@ extension User {
    public enum CodingKeys: String, ModelKey {
     case id
     case name
-    case birthday
+    case birthdate
     case rooms
   }
   
@@ -22,7 +22,7 @@ extension User {
     model.fields(
       .id(),
       .field(user.name, is: .required, ofType: .string),
-      .field(user.birthday, is: .required, ofType: .date),
+      .field(user.birthdate, is: .required, ofType: .date),
       .field(user.rooms, is: .optional, ofType: .embeddedCollection(of: String.self))
     )
     }

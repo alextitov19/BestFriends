@@ -1,7 +1,7 @@
 type User @aws_iam @aws_api_key {
   id: ID!
   name: String!
-  birthday: AWSDate!
+  birthdate: AWSDate!
   rooms: [String]!
   _version: Int!
   _deleted: Boolean
@@ -97,7 +97,7 @@ input ModelSizeInput {
 input ModelUserFilterInput {
   id: ModelIDInput
   name: ModelStringInput
-  birthday: ModelStringInput
+  birthdate: ModelStringInput
   rooms: ModelStringInput
   and: [ModelUserFilterInput]
   or: [ModelUserFilterInput]
@@ -126,7 +126,7 @@ type Query {
 input CreateUserInput {
   id: ID
   name: String!
-  birthday: AWSDate!
+  birthdate: AWSDate!
   rooms: [String]!
   _version: Int
 }
@@ -134,7 +134,7 @@ input CreateUserInput {
 input UpdateUserInput {
   id: ID!
   name: String
-  birthday: AWSDate
+  birthdate: AWSDate
   rooms: [String]
   _version: Int
 }
@@ -152,7 +152,7 @@ type Mutation {
 
 input ModelUserConditionInput {
   name: ModelStringInput
-  birthday: ModelStringInput
+  birthdate: ModelStringInput
   rooms: ModelStringInput
   and: [ModelUserConditionInput]
   or: [ModelUserConditionInput]
