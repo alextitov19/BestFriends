@@ -36,6 +36,7 @@
 		7AF6E0F7260E885A00FA7CFF /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		DCA082BA9E342F2EF9E678A3 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
 		EBE27205E2929B955DC3C24B /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAF05779BF5435894F36560 /* amplifytools.xcconfig */ = {isa = PBXFileReference; name = "amplifytools.xcconfig"; path = "amplifytools.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.xcconfig; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 		7AF6E0CB260E869E00FA7CFF = {
 			isa = PBXGroup;
 			children = (
+				393FFD3AA7BC4A7F9B81962B /* AmplifyConfig */,
 				7AF6E0D6260E869E00FA7CFF /* BestFriends */,
 				7AF6E0D5260E869E00FA7CFF /* Products */,
 				C00F713330B57352CF16275D /* Pods */,
@@ -109,6 +111,23 @@
 				DCA082BA9E342F2EF9E678A3 /* Pods-BestFriends.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		393FFD3AA7BC4A7F9B81962B /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				0DAF05779BF5435894F36560 /* amplifytools.xcconfig */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		ADE777A4B1AC440083E1BE4B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = undefined;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
