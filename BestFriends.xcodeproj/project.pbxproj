@@ -18,6 +18,9 @@
 		7AF6E0E4260E869F00FA7CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AF6E0E2260E869F00FA7CFF /* LaunchScreen.storyboard */; };
 		7AF6E0F8260E885A00FA7CFF /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AF6E0F6260E885A00FA7CFF /* amplifyconfiguration.json */; };
 		7AF6E0F9260E885A00FA7CFF /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AF6E0F7260E885A00FA7CFF /* awsconfiguration.json */; };
+		F869C50D82E04A8681C21D84 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B32F5ECD10C429FB5685C99 /* AmplifyModels.swift */; };
+		500A937FC68B4103A187B9F6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD572398BCE40F586964801 /* Message.swift */; };
+		4BC7423C629C4426B1EF02FE /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE4C7E34B443C4B178B277 /* Message+Schema.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		DCA082BA9E342F2EF9E678A3 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
 		EBE27205E2929B955DC3C24B /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DAF05779BF5435894F36560 /* amplifytools.xcconfig */ = {isa = PBXFileReference; name = "amplifytools.xcconfig"; path = "amplifytools.xcconfig"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.xcconfig; explicitFileType = undefined; includeInIndex = 0; };
+		2B32F5ECD10C429FB5685C99 /* AmplifyModels.swift */ = {isa = PBXFileReference; name = "AmplifyModels.swift"; path = "amplify/generated/models/AmplifyModels.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		7CD572398BCE40F586964801 /* Message.swift */ = {isa = PBXFileReference; name = "Message.swift"; path = "amplify/generated/models/Message.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		D1EE4C7E34B443C4B178B277 /* Message+Schema.swift */ = {isa = PBXFileReference; name = "Message+Schema.swift"; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		47EB3ABED7904B02997C6D45 /* schema.graphql */ = {isa = PBXFileReference; name = "schema.graphql"; path = "amplify/backend/api/bestfriends/schema.graphql"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,7 @@
 		7AF6E0CB260E869E00FA7CFF = {
 			isa = PBXGroup;
 			children = (
+				C0EFCCFA3B214262A6580CE6 /* AmplifyModels */,
 				393FFD3AA7BC4A7F9B81962B /* AmplifyConfig */,
 				7AF6E0D6260E869E00FA7CFF /* BestFriends */,
 				7AF6E0D5260E869E00FA7CFF /* Products */,
@@ -117,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				0DAF05779BF5435894F36560 /* amplifytools.xcconfig */,
+				47EB3ABED7904B02997C6D45 /* schema.graphql */,
 			);
 			name = AmplifyConfig;
 			path = .;
@@ -128,6 +137,17 @@
 			);
 			name = Resources;
 			path = undefined;
+			sourceTree = "<group>";
+		};
+		C0EFCCFA3B214262A6580CE6 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				2B32F5ECD10C429FB5685C99 /* AmplifyModels.swift */,
+				7CD572398BCE40F586964801 /* Message.swift */,
+				D1EE4C7E34B443C4B178B277 /* Message+Schema.swift */,
+			);
+			name = AmplifyModels;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +271,9 @@
 				7AF5916126129B7A00A6DB20 /* SignUpViewController.swift in Sources */,
 				7AF591662612A7B900A6DB20 /* SignInViewController.swift in Sources */,
 				7AF6E0DA260E869E00FA7CFF /* SceneDelegate.swift in Sources */,
+				F869C50D82E04A8681C21D84 /* AmplifyModels.swift in Sources */,
+				500A937FC68B4103A187B9F6 /* Message.swift in Sources */,
+				4BC7423C629C4426B1EF02FE /* Message+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
