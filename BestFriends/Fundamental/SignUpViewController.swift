@@ -25,24 +25,24 @@ class SignUpViewController: UIViewController {
         guard let email = emailTextField.text else {return}
         guard let password = passwordTextField.text else {return}
         let birthdate = datePicker.date
-        signUp(username: email, password: password)
+//        signUp(username: email, password: password)
 
     }
     
-    func signUp(username: String, password: String) {
-        Amplify.Auth.signUp(username: username, password: password) { result in
-            switch result {
-            case .success(let signUpResult):
-                if case let .confirmUser(deliveryDetails, _) = signUpResult.nextStep {
-                    print("Delivery details \(String(describing: deliveryDetails))")
-                } else {
-                    print("SignUp Complete")
-                }
-            case .failure(let error):
-                print("An error occurred while registering a user \(error)")
-            }
-        }
-    }
+//    func signUp(username: String, password: String) {
+//        Amplify.Auth.signUp(username: username, password: password) { result in
+//            switch result {
+//            case .success(let signUpResult):
+//                if case let .confirmUser(deliveryDetails, _) = signUpResult.nextStep {
+//                    print("Delivery details \(String(describing: deliveryDetails))")
+//                } else {
+//                    print("SignUp Complete")
+//                }
+//            case .failure(let error):
+//                print("An error occurred while registering a user \(error)")
+//            }
+//        }
+//    }
     
 
 

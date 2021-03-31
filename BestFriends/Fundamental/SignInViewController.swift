@@ -23,18 +23,18 @@ class SignInViewController: UIViewController {
     @IBAction func signInClicked(_ sender: UIButton) {
         guard let email = emailTextField.text else {return}
         guard let password = passwordTextField.text else {return}
-        signIn(username: email, password: password)
+        //signIn(username: email, password: password)
     }
     
-    func signIn(username: String, password: String) {
-        Amplify.Auth.signIn(username: username, password: password) { result in
-            switch result {
-            case .success:
-                print("Sign in succeeded")
-            case .failure(let error):
-                print("Sign in failed \(error)")
-            }
-        }
-    }
+//    func signIn(username: String, password: String) {
+//        Amplify.Auth.signIn(username: username, password: password) { result in
+//            switch result {
+//            case .success:
+//                print("Sign in succeeded")
+//            case .failure(let error):
+//                print("Sign in failed \(error)")
+//            }
+//        }
+//    }
     
 }

@@ -10,8 +10,8 @@
 		4BC7423C629C4426B1EF02FE /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EE4C7E34B443C4B178B277 /* Message+Schema.swift */; };
 		500A937FC68B4103A187B9F6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD572398BCE40F586964801 /* Message.swift */; };
 		76CE2E12B5EDE73F7B8244DC /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBE27205E2929B955DC3C24B /* Pods_BestFriends.framework */; };
-		7A7133FA2614055F00180072 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A7133F82614055F00180072 /* amplifyconfiguration.json */; };
-		7A7133FB2614055F00180072 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A7133F92614055F00180072 /* awsconfiguration.json */; };
+		7A713401261405A800180072 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A7133FF261405A800180072 /* awsconfiguration.json */; };
+		7A713402261405A800180072 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A713400261405A800180072 /* amplifyconfiguration.json */; };
 		7AF5916126129B7A00A6DB20 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF5916026129B7A00A6DB20 /* SignUpViewController.swift */; };
 		7AF591662612A7B900A6DB20 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF591652612A7B900A6DB20 /* SignInViewController.swift */; };
 		7AF6E0D8260E869E00FA7CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6E0D7260E869E00FA7CFF /* AppDelegate.swift */; };
@@ -28,8 +28,8 @@
 		1150487C590F3FF531C8DA06 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		2B32F5ECD10C429FB5685C99 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		47EB3ABED7904B02997C6D45 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/bestfriends/schema.graphql; sourceTree = "<group>"; };
-		7A7133F82614055F00180072 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
-		7A7133F92614055F00180072 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		7A7133FF261405A800180072 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		7A713400261405A800180072 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		7AF5916026129B7A00A6DB20 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7AF591652612A7B900A6DB20 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		7AF6E0D4260E869E00FA7CFF /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,8 +108,8 @@
 		7AF6E0D6260E869E00FA7CFF /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
-				7A7133F82614055F00180072 /* amplifyconfiguration.json */,
-				7A7133F92614055F00180072 /* awsconfiguration.json */,
+				7A713400261405A800180072 /* amplifyconfiguration.json */,
+				7A7133FF261405A800180072 /* awsconfiguration.json */,
 				7AF6E0D7260E869E00FA7CFF /* AppDelegate.swift */,
 				7AF6E0D9260E869E00FA7CFF /* SceneDelegate.swift */,
 				7AF6E0DB260E869E00FA7CFF /* ViewController.swift */,
@@ -201,11 +201,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7133FB2614055F00180072 /* awsconfiguration.json in Resources */,
+				7A713401261405A800180072 /* awsconfiguration.json in Resources */,
 				7AF6E0E4260E869F00FA7CFF /* LaunchScreen.storyboard in Resources */,
+				7A713402261405A800180072 /* amplifyconfiguration.json in Resources */,
 				7AF6E0E1260E869F00FA7CFF /* Assets.xcassets in Resources */,
 				7AF6E0DF260E869E00FA7CFF /* Main.storyboard in Resources */,
-				7A7133FA2614055F00180072 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
