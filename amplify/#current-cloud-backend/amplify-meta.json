@@ -35,7 +35,7 @@
         "GraphQLAPIEndpointOutput": "https://xys6mhvn4bawlnrfseag7w6evu.appsync-api.us-east-2.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-ouyottx3uvd43myxgeb54ybz2e"
       },
-      "lastPushTimeStamp": "2021-03-30T23:46:24.867Z",
+      "lastPushTimeStamp": "2021-03-30T00:19:22.122Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-193047-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiBestFriends"
@@ -52,7 +52,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-193047-deployment/amplify-cfn-templates/auth/BestFriends-cloudformation-template.yml",
         "logicalId": "authBestFriends"
       },
-      "lastPushTimeStamp": "2021-03-30T23:46:24.869Z",
+      "lastPushTimeStamp": "2021-03-30T00:19:22.133Z",
       "output": {
         "UserPoolId": "us-east-2_iQ38JnB4Y",
         "AppClientIDWeb": "4umdhm5ta9ujqd09r9hs2kagmt",
@@ -62,26 +62,6 @@
         "UserPoolName": "BestFriends"
       },
       "lastPushDirHash": "xI+qv/XrTOSwbPnuskX5glua1Q4="
-    }
-  },
-  "storage": {
-    "usertable": {
-      "service": "DynamoDB",
-      "providerPlugin": "awscloudformation",
-      "providerMetadata": {
-        "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-193047-deployment/amplify-cfn-templates/storage/usertable-cloudformation-template.json",
-        "logicalId": "storageusertable"
-      },
-      "lastPushTimeStamp": "2021-03-30T23:46:24.873Z",
-      "output": {
-        "PartitionKeyName": "id",
-        "Region": "us-east-2",
-        "Arn": "arn:aws:dynamodb:us-east-2:565456385125:table/usertable-staging",
-        "StreamArn": "arn:aws:dynamodb:us-east-2:565456385125:table/usertable-staging/stream/2021-03-30T23:43:59.973",
-        "PartitionKeyType": "S",
-        "Name": "usertable-staging"
-      },
-      "lastPushDirHash": "veHlW5RkJk/SGrMQXoauI46wzG4="
     }
   }
 }
