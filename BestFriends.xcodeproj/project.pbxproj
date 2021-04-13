@@ -11,6 +11,7 @@
 		3C586E6A678347F39E0D918E /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D9D3FE78943F58CED6B43 /* awsconfiguration.json */; };
 		7A934CC926251FB30056E953 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A934CC726251FB30056E953 /* amplifyconfiguration.json */; };
 		7A934CCA26251FB30056E953 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A934CC826251FB30056E953 /* awsconfiguration.json */; };
+		7A934CCD262520C60056E953 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934CCC262520C60056E953 /* Backend.swift */; };
 		7AD70A0B26251D0300838B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70A0A26251D0300838B4D /* AppDelegate.swift */; };
 		7AD70A0D26251D0300838B4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70A0C26251D0300838B4D /* SceneDelegate.swift */; };
 		7AD70A0F26251D0300838B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70A0E26251D0300838B4D /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 		3E7D9D3FE78943F58CED6B43 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		7A934CC726251FB30056E953 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		7A934CC826251FB30056E953 /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		7A934CCC262520C60056E953 /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
 		7AD70A0726251D0300838B4D /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD70A0A26251D0300838B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AD70A0C26251D0300838B4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD70A0A26251D0300838B4D /* AppDelegate.swift */,
+				7A934CCC262520C60056E953 /* Backend.swift */,
 				7AD70A0C26251D0300838B4D /* SceneDelegate.swift */,
 				7AD70A0E26251D0300838B4D /* ViewController.swift */,
 				7AD70A1026251D0300838B4D /* Main.storyboard */,
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A934CCD262520C60056E953 /* Backend.swift in Sources */,
 				7AD70A0F26251D0300838B4D /* ViewController.swift in Sources */,
 				7AD70A0B26251D0300838B4D /* AppDelegate.swift in Sources */,
 				7AD70A0D26251D0300838B4D /* SceneDelegate.swift in Sources */,

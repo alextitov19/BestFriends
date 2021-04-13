@@ -15,12 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        do {
-            try Amplify.configure()
-            print("Initialized Amplify");
-        } catch {
-            print("Could not initialize Amplify: \(error)")
-        }
+        
+        // initialize Amplify
+        let _ = Backend.initialize()
         
         return true
     }
