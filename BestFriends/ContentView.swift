@@ -30,6 +30,28 @@ class Note : Identifiable, ObservableObject {
         self.description = description
         self.imageName = image
     }
+    
+    convenience init(from data: NoteData) {
+        self.init(id: data.id, name: data.name, description: data.description, image: data.image)
+     
+        // store API object for easy retrieval later
+        self._data = data
+    }
+
+    fileprivate var _data : NoteData?
+
+    // access the privately stored NoteData or build one if we don't have one.
+    var data : NoteData {
+
+        if (_data == nil) {
+            _data = NoteData(id: self.id,
+                                name: self.name,
+                                description: self.description,
+                                image: self.imageName)
+        }
+
+        return _data!
+    }
 }
 
 // a view to represent a single list item
@@ -62,6 +84,13 @@ struct ListRow: View {
 // this is the main view of our app,
 // it is made of a Table with one line per Note
 struct ContentView: View {
+    // add at the begining of ContentView class
+    @State var showCreateNote = false
+
+    @State var name : String        = "New Note"
+    @State var description : String = "This is a new note"
+    @State var image : String       = "image"
+    
     @ObservedObject private var userData: UserData = .shared
 
     var body: some View {
@@ -72,13 +101,68 @@ struct ContentView: View {
                     List {
                         ForEach(userData.notes) { note in
                             ListRow(note: note)
+                        }.onDelete { indices in
+                            indices.forEach {
+                                // removing from user data will refresh UI
+                                let note = self.userData.notes.remove(at: $0)
+
+                                // asynchronously remove from database
+                                Backend.shared.deleteNote(note: note)
+                            }
                         }
                     }
                     .navigationBarTitle(Text("Notes"))
-                    .navigationBarItems(leading: SignOutButton())
+                    .navigationBarItems(leading: SignOutButton(),
+                                            trailing: Button(action: {
+                            self.showCreateNote.toggle()
+                        }) {
+                            Image(systemName: "plus")
+                        })
+                    }.sheet(isPresented: $showCreateNote) {
+                        AddNoteView(isPresented: self.$showCreateNote, userData: self.userData)
                 }
             } else {
                 SignInButton()
+            }
+        }
+    }
+}
+
+struct AddNoteView: View {
+    @Binding var isPresented: Bool
+    var userData: UserData
+
+    @State var name : String        = "New Note"
+    @State var description : String = "This is a new note"
+    @State var image : String       = "image"
+    var body: some View {
+        Form {
+
+            Section(header: Text("TEXT")) {
+                TextField("Name", text: $name)
+                TextField("Name", text: $description)
+            }
+
+            Section(header: Text("PICTURE")) {
+                TextField("Name", text: $image)
+            }
+
+            Section {
+                Button(action: {
+                    self.isPresented = false
+                    let noteData = NoteData(id : UUID().uuidString,
+                                            name: self.$name.wrappedValue,
+                                            description: self.$description.wrappedValue)
+                    let note = Note(from: noteData)
+
+                    // asynchronously store the note (and assume it will succeed)
+                    Backend.shared.createNote(note: note)
+
+                    // add the new note in our userdata, this will refresh UI
+                    self.userData.notes.append(note)
+                }) {
+                    Text("Create this note")
+                }
             }
         }
     }
