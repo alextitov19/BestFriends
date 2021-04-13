@@ -10,6 +10,11 @@
       "StackName": "amplify-bestfriends-dev-182511",
       "StackId": "arn:aws:cloudformation:us-east-2:565456385125:stack/amplify-bestfriends-dev-182511/1897a1b0-9bf7-11eb-84a1-06cf7588ecca",
       "AmplifyAppId": "de41dugubu253"
+    },
+    "categories": {
+      "auth": {
+        "bestfriends330b7cc3": {}
+      }
     }
   }
 }

@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "bestfriends330b7cc3": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

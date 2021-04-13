@@ -6,7 +6,9 @@ target 'BestFriends' do
   use_frameworks!
 
   # Pods for BestFriends
-  pod 'Amplify', '~> 1.0'             # required amplify dependency
-  pod 'Amplify/Tools', '~> 1.0'       # allows to call amplify CLI from within Xcode
+  pod 'Amplify', '~> 1.0'                             # required amplify dependency
+  pod 'Amplify/Tools', '~> 1.0'                       # allows to call amplify CLI from within Xcode
+
+  pod 'AmplifyPlugins/AWSCognitoAuthPlugin', '~> 1.0' # support for Cognito user authentication
 
 end
