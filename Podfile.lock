@@ -14,6 +14,10 @@ PODS:
     - AWSCore (~> 2.23.3)
     - AWSMobileClient (~> 2.23.3)
     - AWSPluginsCore (= 1.8.0)
+  - AmplifyPlugins/AWSS3StoragePlugin (1.8.0):
+    - AWSCore (~> 2.23.3)
+    - AWSPluginsCore (= 1.8.0)
+    - AWSS3 (~> 2.23.3)
   - AppSyncRealTimeClient (1.4.4):
     - Starscream (~> 3.1.1)
   - AWSAuthCore (2.23.3):
@@ -31,6 +35,8 @@ PODS:
   - AWSPluginsCore (1.8.0):
     - Amplify (= 1.8.0)
     - AWSCore (~> 2.23.3)
+  - AWSS3 (2.23.3):
+    - AWSCore (= 2.23.3)
   - Starscream (3.1.1)
 
 DEPENDENCIES:
@@ -38,6 +44,7 @@ DEPENDENCIES:
   - Amplify/Tools (~> 1.0)
   - AmplifyPlugins/AWSAPIPlugin (~> 1.0)
   - AmplifyPlugins/AWSCognitoAuthPlugin (~> 1.0)
+  - AmplifyPlugins/AWSS3StoragePlugin (~> 1.0)
 
 SPEC REPOS:
   trunk:
@@ -50,6 +57,7 @@ SPEC REPOS:
     - AWSCore
     - AWSMobileClient
     - AWSPluginsCore
+    - AWSS3
     - Starscream
 
 SPEC CHECKSUMS:
@@ -62,8 +70,9 @@ SPEC CHECKSUMS:
   AWSCore: c60e635b1a61cb27b6dfff646ce9f402be870b62
   AWSMobileClient: bdfc148fc11b846331f2bec4a7063c95e66c329e
   AWSPluginsCore: 6305f711ed8d967ba3b46e272cdad8f857e2ed4a
+  AWSS3: d8e8a6d7328e7fa1468788c4d7efa71d7f3a6caa
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
-PODFILE CHECKSUM: a4b18254f95848db25d6ea93ba9db4e3fe812b0a
+PODFILE CHECKSUM: 071f0a8809eae4a4b34fb84eb2eab45b7c5d7c3d
 
 COCOAPODS: 1.10.1

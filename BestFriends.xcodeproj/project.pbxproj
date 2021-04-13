@@ -20,6 +20,7 @@
 		7A71BD3326254E2300E6FA9E /* NoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD3026254E2300E6FA9E /* NoteData.swift */; };
 		7A71BD3426254E2300E6FA9E /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD3126254E2300E6FA9E /* AmplifyModels.swift */; };
 		7A71BD3526254E2300E6FA9E /* NoteData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD3226254E2300E6FA9E /* NoteData+Schema.swift */; };
+		7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */; };
 		7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */; };
 		9C782915556B4CDB8644758F /* NoteData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D4D06C27E34EA49B70327B /* NoteData+Schema.swift */; };
 		F11E8CF700902496B65C1C89 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */; };
@@ -45,6 +46,7 @@
 		7A71BD3026254E2300E6FA9E /* NoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteData.swift; sourceTree = "<group>"; };
 		7A71BD3126254E2300E6FA9E /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		7A71BD3226254E2300E6FA9E /* NoteData+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteData+Schema.swift"; sourceTree = "<group>"; };
+		7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImageView.swift; sourceTree = "<group>"; };
 		7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7A71BD2026252BCD00E6FA9E /* AppDelegate.swift */,
 				7A71BD002625292A00E6FA9E /* ContentView.swift */,
+				7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */,
 				7A71BD1926252B1300E6FA9E /* Backend.swift */,
 				7A71BD022625292B00E6FA9E /* Assets.xcassets */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
@@ -286,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A71BD2126252BCD00E6FA9E /* AppDelegate.swift in Sources */,
+				7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */,
 				7A71BD3326254E2300E6FA9E /* NoteData.swift in Sources */,
 				7A71BD3526254E2300E6FA9E /* NoteData+Schema.swift in Sources */,
 				7A71BD012625292A00E6FA9E /* ContentView.swift in Sources */,
