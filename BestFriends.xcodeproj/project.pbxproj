@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17CB3BBAE42F4F268E7E293A /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 321A9BE1631440EF8BE4AB39 /* amplifyconfiguration.json */; };
+		3C586E6A678347F39E0D918E /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D9D3FE78943F58CED6B43 /* awsconfiguration.json */; };
 		7AD70A0B26251D0300838B4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70A0A26251D0300838B4D /* AppDelegate.swift */; };
 		7AD70A0D26251D0300838B4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70A0C26251D0300838B4D /* SceneDelegate.swift */; };
 		7AD70A0F26251D0300838B4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD70A0E26251D0300838B4D /* ViewController.swift */; };
 		7AD70A1226251D0300838B4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD70A1026251D0300838B4D /* Main.storyboard */; };
 		7AD70A1426251D0500838B4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AD70A1326251D0500838B4D /* Assets.xcassets */; };
 		7AD70A1726251D0500838B4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD70A1526251D0500838B4D /* LaunchScreen.storyboard */; };
+		FB409EE065B71E68DABBF0B4 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C500E7F6CDEC7D70D05BA00E /* Pods_BestFriends.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		321A9BE1631440EF8BE4AB39 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = amplifyconfiguration.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		3E7D9D3FE78943F58CED6B43 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = awsconfiguration.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		7AD70A0726251D0300838B4D /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD70A0A26251D0300838B4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AD70A0C26251D0300838B4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,10 @@
 		7AD70A1326251D0500838B4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AD70A1626251D0500838B4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AD70A1826251D0500838B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D7C2EFA0CB36DE51B24E357 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
+		C500E7F6CDEC7D70D05BA00E /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66BD919DCD244D49271899D /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; name = amplifytools.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		D74C6BDE5926572EC633FD98 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB409EE065B71E68DABBF0B4 /* Pods_BestFriends.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05B8D0147E474125870F8EF1 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				D66BD919DCD244D49271899D /* amplifytools.xcconfig */,
+				321A9BE1631440EF8BE4AB39 /* amplifyconfiguration.json */,
+				3E7D9D3FE78943F58CED6B43 /* awsconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		15CDFF33E05AB7D0833AAFA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C500E7F6CDEC7D70D05BA00E /* Pods_BestFriends.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7AD709FE26251D0300838B4D = {
 			isa = PBXGroup;
 			children = (
+				05B8D0147E474125870F8EF1 /* AmplifyConfig */,
 				7AD70A0926251D0300838B4D /* BestFriends */,
 				7AD70A0826251D0300838B4D /* Products */,
+				8C6296C7EC3AFDF729BFCE9F /* Pods */,
+				15CDFF33E05AB7D0833AAFA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +99,16 @@
 			path = BestFriends;
 			sourceTree = "<group>";
 		};
+		8C6296C7EC3AFDF729BFCE9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D74C6BDE5926572EC633FD98 /* Pods-BestFriends.debug.xcconfig */,
+				8D7C2EFA0CB36DE51B24E357 /* Pods-BestFriends.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AD70A1B26251D0500838B4D /* Build configuration list for PBXNativeTarget "BestFriends" */;
 			buildPhases = (
+				C7A723B6FCB76010B78CF1CF /* [CP] Check Pods Manifest.lock */,
 				7AD70A0326251D0300838B4D /* Sources */,
 				7AD70A0426251D0300838B4D /* Frameworks */,
 				7AD70A0526251D0300838B4D /* Resources */,
+				E69CDD7F6D2D0512BC6935F7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,10 +171,54 @@
 				7AD70A1726251D0500838B4D /* LaunchScreen.storyboard in Resources */,
 				7AD70A1426251D0500838B4D /* Assets.xcassets in Resources */,
 				7AD70A1226251D0300838B4D /* Main.storyboard in Resources */,
+				17CB3BBAE42F4F268E7E293A /* amplifyconfiguration.json in Resources */,
+				3C586E6A678347F39E0D918E /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7A723B6FCB76010B78CF1CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BestFriends-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E69CDD7F6D2D0512BC6935F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BestFriends/Pods-BestFriends-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BestFriends/Pods-BestFriends-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BestFriends/Pods-BestFriends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AD70A0326251D0300838B4D /* Sources */ = {
@@ -283,6 +371,7 @@
 		};
 		7AD70A1C26251D0500838B4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74C6BDE5926572EC633FD98 /* Pods-BestFriends.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +390,7 @@
 		};
 		7AD70A1D26251D0500838B4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D7C2EFA0CB36DE51B24E357 /* Pods-BestFriends.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
