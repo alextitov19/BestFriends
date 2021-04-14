@@ -8,18 +8,46 @@
 import SwiftUI
 
 struct ContentView: View {
+        
+    var body: some View {
+        NavigationView{
+            ZStack {
+                Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
+                VStack {
+                    NavigationLink(destination: Page1()) {
+                                        Text("Sign Up")
+                                            .font(.title)
+                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                    }
+                }
+            }
+        }
+    }
+}
+
+struct Page1: View {
     
     @State private var name: String = ""
     
     var body: some View {
-        VStack {
-            TextField("Enter your name", text: $name)
-                .multilineTextAlignment(.center)
-                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-            
+        ZStack {
+            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
+            VStack {
+                
+                TextField("Enter your first name", text: $name)
+                    .multilineTextAlignment(.center)
+                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .frame(width: 300, height: 40, alignment: .center)
+                    .font(.title)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .cornerRadius(20)
+                
+            }
         }
     }
 }
+
+
 
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
