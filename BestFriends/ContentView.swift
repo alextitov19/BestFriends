@@ -42,6 +42,18 @@ struct Page1: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .cornerRadius(20)
                 
+                Spacer()
+                    .frame(height: 50)
+                
+                Button {
+                    print("Going to page 2")
+                } label: {
+                    Text("Next")
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
+                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                }
             }
         }
     }
@@ -53,6 +65,7 @@ struct Page1: View {
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
        ContentView()
+        Page1()
     }
 }
 #endif
