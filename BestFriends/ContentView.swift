@@ -18,6 +18,9 @@ struct ContentView: View {
                                         Text("Sign Up")
                                             .font(.title)
                                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                            .frame(width: 200, height: 50)
+                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
                                     }
                 }
             }
@@ -27,14 +30,47 @@ struct ContentView: View {
 
 struct Page1: View {
     
-    @State private var name: String = ""
+    @State private var firstName: String = ""
+    
+    var body: some View {
+        ZStack {
+            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
+            VStack {
+                TextField("Enter your first name", text: $firstName)
+                    .multilineTextAlignment(.center)
+                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .frame(width: 300, height: 40, alignment: .center)
+                    .font(.title)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .cornerRadius(20)
+                
+                Spacer()
+                    .frame(height: 50)
+                
+                NavigationLink(destination: Page2()) {
+                                    Text("Next")
+                                        .font(.title)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                        .frame(width: 200, height: 50)
+                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                        .cornerRadius(25)
+                                }
+                
+            }
+        }
+    }
+}
+
+struct Page2: View {
+    
+    @State private var lastName: String = ""
     
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
             VStack {
                 
-                TextField("Enter your first name", text: $name)
+                TextField("Enter your last name", text: $lastName)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 300, height: 40, alignment: .center)
