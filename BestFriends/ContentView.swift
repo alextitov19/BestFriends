@@ -261,7 +261,6 @@ struct Page7: View {
 
 struct QuestionPage: View {
     
-    
     @State private var birthDate: Date = Date()
     
     var body: some View {
