@@ -10,7 +10,7 @@
 		0C9894BDC0804D72887277E4 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F279D4342ADB43CD9975D6E8 /* AmplifyModels.swift */; };
 		221B32BB2FDB4A74A8AC7691 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */; };
 		7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */; };
-		7A71BD012625292A00E6FA9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD002625292A00E6FA9E /* ContentView.swift */; };
+		7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD002625292A00E6FA9E /* SignUpView.swift */; };
 		7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD022625292B00E6FA9E /* Assets.xcassets */; };
 		7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD052625292B00E6FA9E /* Preview Assets.xcassets */; };
 		7A71BD1626252B0300E6FA9E /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD1426252B0200E6FA9E /* awsconfiguration.json */; };
@@ -37,7 +37,7 @@
 		71B5DFCDF98DAA323331D1BC /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		7A71BCFB2625292A00E6FA9E /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsApp.swift; sourceTree = "<group>"; };
-		7A71BD002625292A00E6FA9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7A71BD002625292A00E6FA9E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		7A71BD022625292B00E6FA9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A71BD052625292B00E6FA9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A71BD072625292B00E6FA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,14 +95,12 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7AE31CB926293ABE001EC5A3 /* Refrence Code */,
 				7A71BD2E26254E2300E6FA9E /* generated */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7A71BD2026252BCD00E6FA9E /* AppDelegate.swift */,
-				7A71BD002625292A00E6FA9E /* ContentView.swift */,
+				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
 				7AA058CD2628AFFB0067C18A /* SessionManager.swift */,
-				7ADC62A22627AA7300791689 /* TutorialCode.swift */,
-				7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */,
-				7A71BD1926252B1300E6FA9E /* Backend.swift */,
 				7A71BD022625292B00E6FA9E /* Assets.xcassets */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
@@ -135,6 +133,16 @@
 				7A71BD3226254E2300E6FA9E /* NoteData+Schema.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		7AE31CB926293ABE001EC5A3 /* Refrence Code */ = {
+			isa = PBXGroup;
+			children = (
+				7ADC62A22627AA7300791689 /* TutorialCode.swift */,
+				7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */,
+				7A71BD1926252B1300E6FA9E /* Backend.swift */,
+			);
+			path = "Refrence Code";
 			sourceTree = "<group>";
 		};
 		9E0E510CD719430077541E98 /* Pods */ = {
@@ -299,7 +307,7 @@
 				7A71BD3326254E2300E6FA9E /* NoteData.swift in Sources */,
 				7A71BD3526254E2300E6FA9E /* NoteData+Schema.swift in Sources */,
 				7ADC62A32627AA7300791689 /* TutorialCode.swift in Sources */,
-				7A71BD012625292A00E6FA9E /* ContentView.swift in Sources */,
+				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
 				7A71BD3426254E2300E6FA9E /* AmplifyModels.swift in Sources */,
 				7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */,
