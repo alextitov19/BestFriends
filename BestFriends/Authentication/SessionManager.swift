@@ -16,4 +16,12 @@ enum AuthState {
 
 final class SessionManager: ObservableObject {
     @Published var authState: AuthState = .login
+    
+    func getCurrentUser() {
+        if let user = Amplify.Auth.getCurrentUser() {
+            authState = .session(user: user)
+        } else {
+            authState = .login
+        }
+    }
 }
