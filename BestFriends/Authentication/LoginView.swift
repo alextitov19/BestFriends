@@ -26,7 +26,7 @@ struct LoginView: View {
             
             Spacer()
             
-            Button("Don't have an account? Sign up.", action: {})
+            Button("Don't have an account? Sign up.", action: sessionManager.showSignUp)
         }
         .padding()
     }

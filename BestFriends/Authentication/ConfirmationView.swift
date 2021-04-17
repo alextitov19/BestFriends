@@ -21,7 +21,9 @@ struct ConfirmationView: View {
             
             TextField("Confirmation Code", text: $confirmationCode)
             
-            Button("Confirm", action: {})
+            Button("Confirm", action: {
+                sessionManager.confirm(username: username, code: confirmationCode)
+            })
         }
     }
 }
