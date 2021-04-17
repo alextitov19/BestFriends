@@ -44,4 +44,33 @@ class DataSource: ObservableObject {
             }
         }
     }
+    
+    var subscription: GraphQLSubscriptionOperation<Message>?
+    
+    func observeMessages() {
+        subscription = Amplify.API.subscribe(
+            request: .subscription(of: Message.self, type: .onCreate),
+            
+            valueListener: { [weak self] subscriptionEvent in
+                switch subscriptionEvent {
+                case .connection(let connectionState):
+                    print("connection state:", connectionState)
+                    
+                case .data(let dataResult):
+                    do {
+                        let message = try dataResult.get()
+                        
+                        DispatchQueue.main.async {
+                            self?.messages.append(message)
+                        }
+                    } catch {
+                        print(error)
+                    }
+                }
+             },
+             completionListener: { completion in
+                print(completion)
+             }
+        )
+    }
 }

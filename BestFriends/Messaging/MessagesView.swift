@@ -16,6 +16,7 @@ struct MessagesView: View {
     
     init() {
         dataSource.getMessages()
+        dataSource.observeMessages()
     }
     
     var body: some View {
@@ -47,9 +48,9 @@ struct MessagesView: View {
         print(text)
         
         let message = Message(
-            id: "32973424",
+            id: "1235342",
             senderName: currentUser,
-            senderID: "778432784239",
+            senderID: "123231",
             body: text,
             creationDate: .now()
         )
