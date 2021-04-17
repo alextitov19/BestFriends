@@ -7,28 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View {
-        
-    var body: some View {
-        NavigationView{
-            ZStack {
-                Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
-                VStack {
-                    NavigationLink(destination: Page1()) {
-                                        Text("Sign Up")
-                                            .font(.title)
-                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                            .frame(width: 200, height: 50)
-                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                    }
-                }
-            }
-        }
-    }
-}
 
-struct Page1: View {
+struct SignUpPage1: View {
     
     @State private var firstName: String = ""
     
@@ -47,7 +27,7 @@ struct Page1: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: Page2()) {
+                NavigationLink(destination: SignUpPage2()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -61,7 +41,7 @@ struct Page1: View {
     }
 }
 
-struct Page2: View {
+struct SignUpPage2: View {
     
     @State private var lastName: String = ""
     
@@ -80,7 +60,7 @@ struct Page2: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: Page3()) {
+                NavigationLink(destination: SignUpPage3()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -94,7 +74,7 @@ struct Page2: View {
     }
 }
 
-struct Page3: View {
+struct SignUpPage3: View {
     
     @State private var username: String = ""
     
@@ -113,7 +93,7 @@ struct Page3: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: Page4()) {
+                NavigationLink(destination: SignUpPage4()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -127,7 +107,7 @@ struct Page3: View {
     }
 }
 
-struct Page4: View {
+struct SignUpPage4: View {
     
     @State private var password: String = ""
     
@@ -146,7 +126,7 @@ struct Page4: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: Page5()) {
+                NavigationLink(destination: SignUpPage5()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -160,7 +140,7 @@ struct Page4: View {
     }
 }
 
-struct Page5: View {
+struct SignUpPage5: View {
     
     @State private var email: String = ""
     
@@ -179,7 +159,7 @@ struct Page5: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: Page6()) {
+                NavigationLink(destination: SignUpPage6()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -193,7 +173,7 @@ struct Page5: View {
     }
 }
 
-struct Page6: View {
+struct SignUpPage6: View {
     
     @State private var pronouns: String = ""
     
@@ -212,7 +192,7 @@ struct Page6: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: Page7()) {
+                NavigationLink(destination: SignUpPage7()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -226,7 +206,7 @@ struct Page6: View {
     }
 }
 
-struct Page7: View {
+struct SignUpPage7: View {
     
     
     @State private var birthDate: Date = Date()
@@ -245,7 +225,7 @@ struct Page7: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: QuestionPage()) {
+                NavigationLink(destination: SignUpQuestionPage()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -259,7 +239,7 @@ struct Page7: View {
     }
 }
 
-struct QuestionPage: View {
+struct SignUpQuestionPage: View {
     
     @State private var birthDate: Date = Date()
     
@@ -280,11 +260,17 @@ struct QuestionPage: View {
     }
 }
 
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
+struct SignUpView_Previews : PreviewProvider {
     static var previews: some View {
-       Page7()
+        SignUpPage1()
+        SignUpPage2()
+        SignUpPage3()
+        SignUpPage4()
+        SignUpPage5()
+        SignUpPage6()
+        SignUpPage7()
+        SignUpQuestionPage()
+
     }
 }
-#endif
 

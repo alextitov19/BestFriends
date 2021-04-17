@@ -23,6 +23,7 @@
 		7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */; };
 		7AA058CE2628AFFB0067C18A /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA058CD2628AFFB0067C18A /* SessionManager.swift */; };
 		7ADC62A32627AA7300791689 /* TutorialCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC62A22627AA7300791689 /* TutorialCode.swift */; };
+		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
 		7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */; };
 		9C782915556B4CDB8644758F /* NoteData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D4D06C27E34EA49B70327B /* NoteData+Schema.swift */; };
 		F11E8CF700902496B65C1C89 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */; };
@@ -51,6 +52,7 @@
 		7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImageView.swift; sourceTree = "<group>"; };
 		7AA058CD2628AFFB0067C18A /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		7ADC62A22627AA7300791689 /* TutorialCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCode.swift; sourceTree = "<group>"; };
+		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
@@ -95,11 +97,11 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7AE31CBD262A9A7F001EC5A3 /* Authentication */,
 				7AE31CB926293ABE001EC5A3 /* Refrence Code */,
 				7A71BD2E26254E2300E6FA9E /* generated */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7A71BD2026252BCD00E6FA9E /* AppDelegate.swift */,
-				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
 				7AA058CD2628AFFB0067C18A /* SessionManager.swift */,
 				7A71BD022625292B00E6FA9E /* Assets.xcassets */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
@@ -143,6 +145,15 @@
 				7A71BD1926252B1300E6FA9E /* Backend.swift */,
 			);
 			path = "Refrence Code";
+			sourceTree = "<group>";
+		};
+		7AE31CBD262A9A7F001EC5A3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
+				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		9E0E510CD719430077541E98 /* Pods */ = {
@@ -310,6 +321,7 @@
 				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
 				7A71BD3426254E2300E6FA9E /* AmplifyModels.swift in Sources */,
+				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */,
 				0C9894BDC0804D72887277E4 /* AmplifyModels.swift in Sources */,
 				FA3D3DDBD82B4D40AA22F9E0 /* NoteData.swift in Sources */,
