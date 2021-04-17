@@ -25,6 +25,7 @@ struct LoginView: View {
             
             Button("Don't have an account? Sign up.", action: {})
         }
+        .padding()
     }
 }
 
