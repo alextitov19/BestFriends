@@ -19,11 +19,11 @@ struct SessionView: View {
         VStack {
             Spacer()
             
-            Text("You signed in using Amplify!")
+            Text("You signed in as \(user.username) using Amplify!")
             
             Spacer()
             
-            Button("Sign Out", action: {})
+            Button("Sign Out", action: sessionManager.signOut)
         }
     }
 }

@@ -16,7 +16,7 @@ struct BestFriendsApp: App {
     
     init() {
         configureAmplify()
-        
+        sessionManager.getSurrentAuthUser()
     }
     
     var body: some Scene {
