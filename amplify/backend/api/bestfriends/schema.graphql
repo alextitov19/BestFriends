@@ -3,5 +3,5 @@ type Message @model {
   senderName: String!
   senderID: String!
   body: String!
-  creationDate: AWSDate!
+  creationDate: AWSTimestamp!
 }

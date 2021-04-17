@@ -52,6 +52,6 @@ struct MessageRow: View {
 }
 struct MessageRow_Previews: PreviewProvider {
     static var previews: some View {
-        MessageRow(message: Message(id: "184302", senderName: "Alex Titov", senderID: "389234y723", body: "This is my first message lol.", creationDate: .now()), isCurrentUser: true)
+        MessageRow(message: Message(id: "184302", senderName: "Alex Titov", senderID: "389234y723", body: "This is my first message lol.", creationDate: 0), isCurrentUser: true)
     }
 }

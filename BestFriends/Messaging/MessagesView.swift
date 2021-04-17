@@ -52,7 +52,7 @@ struct MessagesView: View {
             senderName: currentUser,
             senderID: "123231",
             body: text,
-            creationDate: .now()
+            creationDate: Int(Date().timeIntervalSince1970)
         )
         
         dataSource.send(message)

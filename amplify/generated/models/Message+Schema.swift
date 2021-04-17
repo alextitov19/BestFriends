@@ -25,7 +25,7 @@ extension Message {
       .field(message.senderName, is: .required, ofType: .string),
       .field(message.senderID, is: .required, ofType: .string),
       .field(message.body, is: .required, ofType: .string),
-      .field(message.creationDate, is: .required, ofType: .date)
+      .field(message.creationDate, is: .required, ofType: .int)
     )
     }
 }

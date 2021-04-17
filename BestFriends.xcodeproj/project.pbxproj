@@ -30,6 +30,9 @@
 		7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */; };
 		7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */; };
 		F11E8CF700902496B65C1C89 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */; };
+		8F464A0A6BEA4CD09C25CF86 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
+		3FAFF6936D7B422DBF25E91A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
+		84EA879CC8D44C9CB6FBFFCB /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		F6C3BE1022B34C5FA7EE9A20 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/bestfriends/schema.graphql; sourceTree = "<group>"; };
+		C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */ = {isa = PBXFileReference; name = "AmplifyModels.swift"; path = "amplify/generated/models/AmplifyModels.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		42D64405355643289A8035B8 /* Message.swift */ = {isa = PBXFileReference; name = "Message.swift"; path = "amplify/generated/models/Message.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
+		19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */ = {isa = PBXFileReference; name = "Message+Schema.swift"; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.swift; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		7A71BCF22625292A00E6FA9E = {
 			isa = PBXGroup;
 			children = (
+				DBFB8C7AC87F4062BC821677 /* AmplifyModels */,
 				7A71BD1526252B0200E6FA9E /* amplifyconfiguration.json */,
 				7A71BD1426252B0200E6FA9E /* awsconfiguration.json */,
 				C3F02F5A8A994BECAB094217 /* AmplifyConfig */,
@@ -191,6 +198,25 @@
 			);
 			name = AmplifyConfig;
 			path = .;
+			sourceTree = "<group>";
+		};
+		DBFB8C7AC87F4062BC821677 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */,
+				42D64405355643289A8035B8 /* Message.swift */,
+				19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */,
+			);
+			name = AmplifyModels;
+			path = .;
+			sourceTree = "<group>";
+		};
+		477BE3FF40DC412CA50AA026 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = undefined;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +352,9 @@
 				7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */,
 				7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */,
 				7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */,
+				8F464A0A6BEA4CD09C25CF86 /* AmplifyModels.swift in Sources */,
+				3FAFF6936D7B422DBF25E91A /* Message.swift in Sources */,
+				84EA879CC8D44C9CB6FBFFCB /* Message+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

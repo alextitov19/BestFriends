@@ -5,7 +5,7 @@ import AWSAppSync
 public struct CreateMessageInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, senderName: String, senderId: String, body: String, creationDate: String) {
+  public init(id: GraphQLID? = nil, senderName: String, senderId: String, body: String, creationDate: Int) {
     graphQLMap = ["id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate]
   }
 
@@ -45,9 +45,9 @@ public struct CreateMessageInput: GraphQLMapConvertible {
     }
   }
 
-  public var creationDate: String {
+  public var creationDate: Int {
     get {
-      return graphQLMap["creationDate"] as! String
+      return graphQLMap["creationDate"] as! Int
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "creationDate")
@@ -58,7 +58,7 @@ public struct CreateMessageInput: GraphQLMapConvertible {
 public struct ModelMessageConditionInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(senderName: ModelStringInput? = nil, senderId: ModelStringInput? = nil, body: ModelStringInput? = nil, creationDate: ModelStringInput? = nil, and: [ModelMessageConditionInput?]? = nil, or: [ModelMessageConditionInput?]? = nil, not: ModelMessageConditionInput? = nil) {
+  public init(senderName: ModelStringInput? = nil, senderId: ModelStringInput? = nil, body: ModelStringInput? = nil, creationDate: ModelIntInput? = nil, and: [ModelMessageConditionInput?]? = nil, or: [ModelMessageConditionInput?]? = nil, not: ModelMessageConditionInput? = nil) {
     graphQLMap = ["senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "and": and, "or": or, "not": not]
   }
 
@@ -89,9 +89,9 @@ public struct ModelMessageConditionInput: GraphQLMapConvertible {
     }
   }
 
-  public var creationDate: ModelStringInput? {
+  public var creationDate: ModelIntInput? {
     get {
-      return graphQLMap["creationDate"] as! ModelStringInput?
+      return graphQLMap["creationDate"] as! ModelIntInput?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "creationDate")
@@ -387,10 +387,99 @@ public struct ModelSizeInput: GraphQLMapConvertible {
   }
 }
 
+public struct ModelIntInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(ne: Int? = nil, eq: Int? = nil, le: Int? = nil, lt: Int? = nil, ge: Int? = nil, gt: Int? = nil, between: [Int?]? = nil, attributeExists: Bool? = nil, attributeType: ModelAttributeTypes? = nil) {
+    graphQLMap = ["ne": ne, "eq": eq, "le": le, "lt": lt, "ge": ge, "gt": gt, "between": between, "attributeExists": attributeExists, "attributeType": attributeType]
+  }
+
+  public var ne: Int? {
+    get {
+      return graphQLMap["ne"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "ne")
+    }
+  }
+
+  public var eq: Int? {
+    get {
+      return graphQLMap["eq"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "eq")
+    }
+  }
+
+  public var le: Int? {
+    get {
+      return graphQLMap["le"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "le")
+    }
+  }
+
+  public var lt: Int? {
+    get {
+      return graphQLMap["lt"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "lt")
+    }
+  }
+
+  public var ge: Int? {
+    get {
+      return graphQLMap["ge"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "ge")
+    }
+  }
+
+  public var gt: Int? {
+    get {
+      return graphQLMap["gt"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "gt")
+    }
+  }
+
+  public var between: [Int?]? {
+    get {
+      return graphQLMap["between"] as! [Int?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "between")
+    }
+  }
+
+  public var attributeExists: Bool? {
+    get {
+      return graphQLMap["attributeExists"] as! Bool?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "attributeExists")
+    }
+  }
+
+  public var attributeType: ModelAttributeTypes? {
+    get {
+      return graphQLMap["attributeType"] as! ModelAttributeTypes?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "attributeType")
+    }
+  }
+}
+
 public struct UpdateMessageInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, senderName: String? = nil, senderId: String? = nil, body: String? = nil, creationDate: String? = nil) {
+  public init(id: GraphQLID, senderName: String? = nil, senderId: String? = nil, body: String? = nil, creationDate: Int? = nil) {
     graphQLMap = ["id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate]
   }
 
@@ -430,9 +519,9 @@ public struct UpdateMessageInput: GraphQLMapConvertible {
     }
   }
 
-  public var creationDate: String? {
+  public var creationDate: Int? {
     get {
-      return graphQLMap["creationDate"] as! String?
+      return graphQLMap["creationDate"] as! Int?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "creationDate")
@@ -460,7 +549,7 @@ public struct DeleteMessageInput: GraphQLMapConvertible {
 public struct ModelMessageFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: ModelIDInput? = nil, senderName: ModelStringInput? = nil, senderId: ModelStringInput? = nil, body: ModelStringInput? = nil, creationDate: ModelStringInput? = nil, and: [ModelMessageFilterInput?]? = nil, or: [ModelMessageFilterInput?]? = nil, not: ModelMessageFilterInput? = nil) {
+  public init(id: ModelIDInput? = nil, senderName: ModelStringInput? = nil, senderId: ModelStringInput? = nil, body: ModelStringInput? = nil, creationDate: ModelIntInput? = nil, and: [ModelMessageFilterInput?]? = nil, or: [ModelMessageFilterInput?]? = nil, not: ModelMessageFilterInput? = nil) {
     graphQLMap = ["id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "and": and, "or": or, "not": not]
   }
 
@@ -500,9 +589,9 @@ public struct ModelMessageFilterInput: GraphQLMapConvertible {
     }
   }
 
-  public var creationDate: ModelStringInput? {
+  public var creationDate: ModelIntInput? {
     get {
-      return graphQLMap["creationDate"] as! ModelStringInput?
+      return graphQLMap["creationDate"] as! ModelIntInput?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "creationDate")
@@ -713,7 +802,7 @@ public final class CreateMessageMutation: GraphQLMutation {
         GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
-        GraphQLField("creationDate", type: .nonNull(.scalar(String.self))),
+        GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -724,7 +813,7 @@ public final class CreateMessageMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: String, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -773,9 +862,9 @@ public final class CreateMessageMutation: GraphQLMutation {
         }
       }
 
-      public var creationDate: String {
+      public var creationDate: Int {
         get {
-          return snapshot["creationDate"]! as! String
+          return snapshot["creationDate"]! as! Int
         }
         set {
           snapshot.updateValue(newValue, forKey: "creationDate")
@@ -854,7 +943,7 @@ public final class UpdateMessageMutation: GraphQLMutation {
         GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
-        GraphQLField("creationDate", type: .nonNull(.scalar(String.self))),
+        GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -865,7 +954,7 @@ public final class UpdateMessageMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: String, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -914,9 +1003,9 @@ public final class UpdateMessageMutation: GraphQLMutation {
         }
       }
 
-      public var creationDate: String {
+      public var creationDate: Int {
         get {
-          return snapshot["creationDate"]! as! String
+          return snapshot["creationDate"]! as! Int
         }
         set {
           snapshot.updateValue(newValue, forKey: "creationDate")
@@ -995,7 +1084,7 @@ public final class DeleteMessageMutation: GraphQLMutation {
         GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
-        GraphQLField("creationDate", type: .nonNull(.scalar(String.self))),
+        GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -1006,7 +1095,7 @@ public final class DeleteMessageMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: String, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -1055,9 +1144,9 @@ public final class DeleteMessageMutation: GraphQLMutation {
         }
       }
 
-      public var creationDate: String {
+      public var creationDate: Int {
         get {
-          return snapshot["creationDate"]! as! String
+          return snapshot["creationDate"]! as! Int
         }
         set {
           snapshot.updateValue(newValue, forKey: "creationDate")
@@ -1134,7 +1223,7 @@ public final class GetMessageQuery: GraphQLQuery {
         GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
-        GraphQLField("creationDate", type: .nonNull(.scalar(String.self))),
+        GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -1145,7 +1234,7 @@ public final class GetMessageQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: String, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -1194,9 +1283,9 @@ public final class GetMessageQuery: GraphQLQuery {
         }
       }
 
-      public var creationDate: String {
+      public var creationDate: Int {
         get {
-          return snapshot["creationDate"]! as! String
+          return snapshot["creationDate"]! as! Int
         }
         set {
           snapshot.updateValue(newValue, forKey: "creationDate")
@@ -1323,7 +1412,7 @@ public final class ListMessagesQuery: GraphQLQuery {
           GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
           GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
           GraphQLField("body", type: .nonNull(.scalar(String.self))),
-          GraphQLField("creationDate", type: .nonNull(.scalar(String.self))),
+          GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
           GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
         ]
@@ -1334,7 +1423,7 @@ public final class ListMessagesQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: String, createdAt: String, updatedAt: String) {
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, createdAt: String, updatedAt: String) {
           self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
@@ -1383,9 +1472,9 @@ public final class ListMessagesQuery: GraphQLQuery {
           }
         }
 
-        public var creationDate: String {
+        public var creationDate: Int {
           get {
-            return snapshot["creationDate"]! as! String
+            return snapshot["creationDate"]! as! Int
           }
           set {
             snapshot.updateValue(newValue, forKey: "creationDate")
@@ -1456,7 +1545,7 @@ public final class OnCreateMessageSubscription: GraphQLSubscription {
         GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
-        GraphQLField("creationDate", type: .nonNull(.scalar(String.self))),
+        GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -1467,7 +1556,7 @@ public final class OnCreateMessageSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: String, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -1516,9 +1605,9 @@ public final class OnCreateMessageSubscription: GraphQLSubscription {
         }
       }
 
-      public var creationDate: String {
+      public var creationDate: Int {
         get {
-          return snapshot["creationDate"]! as! String
+          return snapshot["creationDate"]! as! Int
         }
         set {
           snapshot.updateValue(newValue, forKey: "creationDate")
@@ -1588,7 +1677,7 @@ public final class OnUpdateMessageSubscription: GraphQLSubscription {
         GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
-        GraphQLField("creationDate", type: .nonNull(.scalar(String.self))),
+        GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -1599,7 +1688,7 @@ public final class OnUpdateMessageSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: String, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -1648,9 +1737,9 @@ public final class OnUpdateMessageSubscription: GraphQLSubscription {
         }
       }
 
-      public var creationDate: String {
+      public var creationDate: Int {
         get {
-          return snapshot["creationDate"]! as! String
+          return snapshot["creationDate"]! as! Int
         }
         set {
           snapshot.updateValue(newValue, forKey: "creationDate")
@@ -1720,7 +1809,7 @@ public final class OnDeleteMessageSubscription: GraphQLSubscription {
         GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
-        GraphQLField("creationDate", type: .nonNull(.scalar(String.self))),
+        GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -1731,7 +1820,7 @@ public final class OnDeleteMessageSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: String, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -1780,9 +1869,9 @@ public final class OnDeleteMessageSubscription: GraphQLSubscription {
         }
       }
 
-      public var creationDate: String {
+      public var creationDate: Int {
         get {
-          return snapshot["creationDate"]! as! String
+          return snapshot["creationDate"]! as! Int
         }
         set {
           snapshot.updateValue(newValue, forKey: "creationDate")
