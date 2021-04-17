@@ -10,18 +10,26 @@ import SwiftUI
 struct MessagesView: View {
     
     @State var text: String = ""
+    @ObservedObject var dataSource = DataSource()
+    
+    let currentUser = "Alex Titov"
     
     var body: some View {
         VStack {
             ScrollView {
                 LazyVStack {
-                    
+                    ForEach(dataSource.messages) { message in
+                        MessageRow(
+                            message: message,
+                            isCurrentUser: message.senderName == currentUser
+                        )
+                    }
                 }
             }
             
             HStack {
                 TextField("Enter message", text: $text)
-                Button("Send", action: {})
+                Button("Send", action: didTapSend)
                     .padding()
                     .foregroundColor(.white)
                     .background(Color.purple)
@@ -29,7 +37,16 @@ struct MessagesView: View {
         }
         .padding(.horizontal, 16)
     }
+    
+    
+    func didTapSend() {
+        print(text)
+        text.removeAll()
+    }
+    
 }
+
+
 
 
 struct MessagesView_Previews: PreviewProvider {

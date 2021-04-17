@@ -13,6 +13,8 @@
 		7A6A4CD0262B554600561D87 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CCD262B554600561D87 /* Message+Schema.swift */; };
 		7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD3262B570400561D87 /* MessagesView.swift */; };
 		7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD6262B5DA900561D87 /* MessageRow.swift */; };
+		7A6A4CDA262B658200561D87 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* DataSource.swift */; };
+		7A6A4CDD262B68A600561D87 /* Message+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CDC262B68A600561D87 /* Message+Extensions.swift */; };
 		7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */; };
 		7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD002625292A00E6FA9E /* SignUpView.swift */; };
 		7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD022625292B00E6FA9E /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		7A6A4CCD262B554600561D87 /* Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+Schema.swift"; sourceTree = "<group>"; };
 		7A6A4CD3262B570400561D87 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		7A6A4CD6262B5DA900561D87 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		7A6A4CD9262B658200561D87 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		7A6A4CDC262B68A600561D87 /* Message+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+Extensions.swift"; sourceTree = "<group>"; };
 		7A71BCFB2625292A00E6FA9E /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsApp.swift; sourceTree = "<group>"; };
 		7A71BD002625292A00E6FA9E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 			children = (
 				7A6A4CD3262B570400561D87 /* MessagesView.swift */,
 				7A6A4CD6262B5DA900561D87 /* MessageRow.swift */,
+				7A6A4CD9262B658200561D87 /* DataSource.swift */,
+				7A6A4CDC262B68A600561D87 /* Message+Extensions.swift */,
 			);
 			path = Messaging;
 			sourceTree = "<group>";
@@ -307,6 +313,8 @@
 				7A6A4CCE262B554600561D87 /* AmplifyModels.swift in Sources */,
 				7AE31CC2262A9BE1001EC5A3 /* SessionView.swift in Sources */,
 				7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */,
+				7A6A4CDD262B68A600561D87 /* Message+Extensions.swift in Sources */,
+				7A6A4CDA262B658200561D87 /* DataSource.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */,
 				7ADC62A32627AA7300791689 /* TutorialCode.swift in Sources */,
