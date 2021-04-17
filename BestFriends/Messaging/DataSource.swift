@@ -37,13 +37,21 @@ class DataSource: ObservableObject {
                 let messages = try result.get().get()
                 
                 DispatchQueue.main.async {
-                    self?.messages = messages
+                    self?.messages = messages.sorted(by: { $0.creationDate < $1.creationDate})
                 }
             } catch {
                 print("Error getting messages: ", error)
             }
         }
     }
+    
+    
+    func delete(_ message: Message) {
+        Amplify.API.mutate(request: .delete(message)) { result in
+            print(result)
+        }
+    }
+    
     
     var subscription: GraphQLSubscriptionOperation<Message>?
     
@@ -73,4 +81,6 @@ class DataSource: ObservableObject {
              }
         )
     }
+    
+   
 }
