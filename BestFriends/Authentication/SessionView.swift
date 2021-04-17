@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Amplify
+import AVKit
 
 
 struct SessionView: View {
@@ -18,8 +19,10 @@ struct SessionView: View {
     var body: some View {
         NavigationView{
             ZStack {
-                Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
+                
+                BackgroundVideoController()
                     .ignoresSafeArea()
+            
             
                 VStack {
                     Spacer()
@@ -65,5 +68,9 @@ struct SessionView_Previews : PreviewProvider {
     
     static var previews: some View {
         SessionView(user: DummyUser())
-            .environmentObject(SessionManager())    }
+            .environmentObject(SessionManager())
+        
+    }
 }
+
+

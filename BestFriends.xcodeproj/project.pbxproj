@@ -16,6 +16,8 @@
 		7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD6262B5DA900561D87 /* MessageRow.swift */; };
 		7A6A4CDA262B658200561D87 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* DataSource.swift */; };
 		7A6A4CDD262B68A600561D87 /* Message+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CDC262B68A600561D87 /* Message+Extensions.swift */; };
+		7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */; };
+		7A6A4D07262B8A5000561D87 /* BackgroundVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4D06262B8A5000561D87 /* BackgroundVideoController.swift */; };
 		7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */; };
 		7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD002625292A00E6FA9E /* SignUpView.swift */; };
 		7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD022625292B00E6FA9E /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 		7A6A4CD6262B5DA900561D87 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		7A6A4CD9262B658200561D87 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		7A6A4CDC262B68A600561D87 /* Message+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+Extensions.swift"; sourceTree = "<group>"; };
+		7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundAnimation.mp4; sourceTree = "<group>"; };
+		7A6A4D06262B8A5000561D87 /* BackgroundVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundVideoController.swift; sourceTree = "<group>"; };
 		7A71BCFB2625292A00E6FA9E /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsApp.swift; sourceTree = "<group>"; };
 		7A71BD002625292A00E6FA9E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,23 @@
 			path = Messaging;
 			sourceTree = "<group>";
 		};
+		7A6A4D00262B865D00561D87 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7A71BD022625292B00E6FA9E /* Assets.xcassets */,
+				7A6A4D01262B866500561D87 /* Videos */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		7A6A4D01262B866500561D87 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		7A71BCF22625292A00E6FA9E = {
 			isa = PBXGroup;
 			children = (
@@ -129,12 +150,12 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7A6A4D00262B865D00561D87 /* Assets */,
 				7A6A4CD2262B56E900561D87 /* Messaging */,
 				7A6A4CCA262B554600561D87 /* models */,
 				7AE31CBD262A9A7F001EC5A3 /* Authentication */,
 				7AE31CB926293ABE001EC5A3 /* Refrence Code */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
-				7A71BD022625292B00E6FA9E /* Assets.xcassets */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
 			);
@@ -165,6 +186,7 @@
 				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
 				7AE31CC1262A9BE1001EC5A3 /* SessionView.swift */,
+				7A6A4D06262B8A5000561D87 /* BackgroundVideoController.swift */,
 				7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */,
 				7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */,
 			);
@@ -271,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A71BD1626252B0300E6FA9E /* awsconfiguration.json in Resources */,
+				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				7A71BD1726252B0300E6FA9E /* amplifyconfiguration.json in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
@@ -329,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A6A4CCE262B554600561D87 /* AmplifyModels.swift in Sources */,
+				7A6A4D07262B8A5000561D87 /* BackgroundVideoController.swift in Sources */,
 				7AE31CC2262A9BE1001EC5A3 /* SessionView.swift in Sources */,
 				7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */,
 				7A6A4CDD262B68A600561D87 /* Message+Extensions.swift in Sources */,
