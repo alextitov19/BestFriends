@@ -16,8 +16,10 @@ struct LoginView: View {
 
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
+            Image("blueBackground")
+                .resizable()
                 .ignoresSafeArea()
+                .scaledToFill()
             
             VStack {
                 Spacer()
