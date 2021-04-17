@@ -16,14 +16,19 @@ struct SessionView: View {
     let user: AuthUser
 
     var body: some View {
-        VStack {
-            Spacer()
+        ZStack {
+            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
+                .ignoresSafeArea()
             
-            Text("You signed in as \(user.username) using Amplify!")
-            
-            Spacer()
-            
-            Button("Sign Out", action: sessionManager.signOut)
+            VStack {
+                Spacer()
+                
+                Text("You signed in as \(user.username) using Amplify!")
+                
+                Spacer()
+                
+                Button("Sign Out", action: sessionManager.signOut)
+            }
         }
     }
 }
@@ -36,5 +41,5 @@ struct SessionView_Previews : PreviewProvider {
     
     static var previews: some View {
         SessionView(user: DummyUser())
-    }
+            .environmentObject(SessionManager())    }
 }

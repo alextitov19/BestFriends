@@ -17,29 +17,74 @@ struct SignUpView: View {
     @State var password = ""
 
     var body: some View {
-        VStack {
-            Spacer()
+        ZStack {
+            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
+                .ignoresSafeArea()
             
-            TextField("Username", text: $username)
-            
-            TextField("Email", text: $email)
-
-            SecureField("Password", text: $password)
-            
-            Button("Sign Up", action: {
-                sessionManager.signUp(
-                    username: username,
-                    email: email,
-                    password: password
+            VStack {
+                Spacer()
+                    .frame(height: 75)
                 
-                )
-            })
-            
-            Spacer()
-            
-            Button("Already ahve an account? Log in.", action: sessionManager.showLogin)
+                Text("Sign Up")
+                    .font(.largeTitle)
+                    .bold()
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+
+                Spacer()
+                
+                VStack {
+                    TextField("Username", text: $username)
+                        .frame(width: 200, height: 50, alignment: .center)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .cornerRadius(25)
+                    
+                    Spacer()
+                        .frame(height: 50)
+                    
+
+                    TextField("Email", text: $email)
+                        .frame(width: 200, height: 50, alignment: .center)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .cornerRadius(25)
+                    
+                    Spacer()
+                        .frame(height: 50)
+                    
+
+                    SecureField("Password", text: $password)
+                        .frame(width: 200, height: 50, alignment: .center)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .cornerRadius(25)
+                    
+                    Spacer()
+                        .frame(height: 75)
+                }
+                
+                Button("Sign Up", action: {
+                    sessionManager.signUp(
+                        username: username,
+                        email: email,
+                        password: password
+                    
+                    )
+                })
+                .frame(width: 150, height: 50, alignment: .center)
+                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                .cornerRadius(25)
+                
+                Spacer()
+                
+                Button("Already ahve an account? Log in.", action: sessionManager.showLogin)
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
