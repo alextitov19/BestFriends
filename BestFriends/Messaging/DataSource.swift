@@ -30,4 +30,18 @@ class DataSource: ObservableObject {
             }
         }
     }
+    
+    func getMessages() {
+        Amplify.API.query(request: .list(Message.self)) { [weak self] result in
+            do {
+                let messages = try result.get().get()
+                
+                DispatchQueue.main.async {
+                    self?.messages = messages
+                }
+            } catch {
+                print("Error getting messages: ", error)
+            }
+        }
+    }
 }

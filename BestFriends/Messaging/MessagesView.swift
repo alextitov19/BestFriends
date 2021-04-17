@@ -14,6 +14,10 @@ struct MessagesView: View {
     
     let currentUser = "Alex Titov"
     
+    init() {
+        dataSource.getMessages()
+    }
+    
     var body: some View {
         VStack {
             ScrollView {
