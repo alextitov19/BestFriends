@@ -31,35 +31,35 @@ struct LandingView: View {
             
             
                 VStack {
-                    Spacer()
-                    
-                    Text("You signed in as \(user.username) using Amplify!")
-                        .font(.title)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    Spacer()
-                        .frame(height: 75)
-                    
-                    
-                        NavigationLink("Goto app", destination: MessagesView())
-                            .frame(width: 300, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
-                                    )
                     
                     
                     Spacer()
+                    
+                    HStack {
+                        Spacer()
+                    
+                        NavigationLink(destination: MessagesView()) {
+                               Image("messageIconWhite")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                           }
+                        
+                        Spacer()
+                        
+                        NavigationLink(destination: MessagesView()) {
+                               Image("settingsIconWhite")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                           }
+                        
+                        Spacer()
+                    }
+                            
+                    
+                    
 
-                    
-                    Button("Sign Out", action: sessionManager.signOut)
-                        .frame(width: 300, height: 50)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
-                                )
                 }
             }
         }
