@@ -14,9 +14,10 @@
       "output": {
         "authConfig": {
           "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authbestfriends330b7cc3"
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": ""
             }
           },
           "additionalAuthenticationProviders": []
@@ -24,10 +25,5 @@
       }
     }
   },
-  "storage": {
-    "image": {
-      "service": "S3",
-      "providerPlugin": "awscloudformation"
-    }
-  }
+  "storage": {}
 }

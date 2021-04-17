@@ -40,8 +40,12 @@ struct BestFriendsApp: App {
     
     private func configureAmplify() {
         do {
+            let models = AmplifyModels()
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.add(plugin: AWSAPIPlugin(modelRegistration: models))
+            
             try Amplify.configure()
+            
             print("Amplify configured successfully")
         } catch {
             print("Could not initialize Amplify", error)
