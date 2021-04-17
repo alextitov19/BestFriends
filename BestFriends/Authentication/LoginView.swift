@@ -22,7 +22,12 @@ struct LoginView: View {
             
             TextField("Password", text: $password)
             
-            Button("Login", action: {})
+            Button("Login", action: {
+                sessionManager.login(
+                    username: username,
+                    password: password
+                )
+            })
             
             Spacer()
             

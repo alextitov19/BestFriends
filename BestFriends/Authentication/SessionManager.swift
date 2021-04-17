@@ -89,4 +89,25 @@ final class SessionManager: ObservableObject {
             }
         }
     }
+    
+    func login(username: String, password: String) {
+        _ = Amplify.Auth.signIn(
+            username: username,
+            password: password
+        ) { [weak self] result in
+            
+            switch result {
+            case .success(let signInResult):
+                print(signInResult)
+                if signInResult.isSignedIn {
+                    DispatchQueue.main.async {
+                        self?.getSurrentAuthUser()
+                    }
+                }
+                
+            case .failure(let error):
+                print("Login error:", error)
+            }
+        }
+    }
 }
