@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct MessagesView: View {
+    
+    @State var text: String = ""
+    
     var body: some View {
-        Text("Welcome to MessagesView!!!!")
+        VStack {
+            ScrollView {
+                LazyVStack {
+                    
+                }
+            }
+            
+            HStack {
+                TextField("Enter message", text: $text)
+                Button("Send", action: {})
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.purple)
+            }
+        }
+        .padding(.horizontal, 16)
     }
 }
 
