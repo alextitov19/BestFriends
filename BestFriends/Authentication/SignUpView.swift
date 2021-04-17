@@ -24,7 +24,7 @@ struct SignUpView: View {
             
             TextField("Email", text: $email)
 
-            TextField("Password", text: $password)
+            SecureField("Password", text: $password)
             
             Button("Sign Up", action: {
                 sessionManager.signUp(
@@ -300,6 +300,7 @@ struct SignUpQuestionPage: View {
 struct SignUpView_Previews : PreviewProvider {
     static var previews: some View {
         SignUpView()
+            .environmentObject(SessionManager())
     }
 }
 
