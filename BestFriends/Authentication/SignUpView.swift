@@ -8,6 +8,34 @@
 import SwiftUI
 
 
+struct SignUpView: View {
+    
+    @State var username = ""
+    @State var email = ""
+    @State var password = ""
+
+    var body: some View {
+        VStack {
+            Spacer()
+            
+            TextField("Username", text: $username)
+            
+            TextField("Email", text: $email)
+
+            TextField("Password", text: $password)
+            
+            Button("Sign Up", action: {})
+            
+            Spacer()
+            
+            Button("Already ahve an account? Log in.", action: {})
+        }
+        .padding()
+    }
+}
+
+
+
 struct SignUpPage1: View {
     
     @State private var firstName: String = ""
@@ -262,15 +290,7 @@ struct SignUpQuestionPage: View {
 
 struct SignUpView_Previews : PreviewProvider {
     static var previews: some View {
-        SignUpPage1()
-        SignUpPage2()
-        SignUpPage3()
-        SignUpPage4()
-        SignUpPage5()
-        SignUpPage6()
-        SignUpPage7()
-        SignUpQuestionPage()
-
+        SignUpView()
     }
 }
 

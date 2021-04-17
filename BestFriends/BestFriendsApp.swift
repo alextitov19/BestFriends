@@ -24,12 +24,16 @@ struct BestFriendsApp: App {
             switch sessionManager.authState {
             case .login:
                 LoginView()
+                    .environmentObject(sessionManager)
             case .signUp:
-                SignUpPage1()
+                SignUpView()
+                    .environmentObject(sessionManager)
             case .confirmationCode(let username):
                 ConfirmationView(username: username)
+                    .environmentObject(sessionManager)
             case .session(let user):
                 SessionView(user: user)
+                    .environmentObject(sessionManager)
             }
         }
     }
