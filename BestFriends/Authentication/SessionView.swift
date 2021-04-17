@@ -19,9 +19,15 @@ struct SessionView: View {
     var body: some View {
         NavigationView{
             ZStack {
-                
+
                 BackgroundVideoController()
                     .ignoresSafeArea()
+                
+                Image("purpleBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
             
             
                 VStack {
