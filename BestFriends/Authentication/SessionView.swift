@@ -24,10 +24,19 @@ struct SessionView: View {
                 Spacer()
                 
                 Text("You signed in as \(user.username) using Amplify!")
-                
+                    .font(.title)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+
                 Spacer()
                 
                 Button("Sign Out", action: sessionManager.signOut)
+                    .frame(width: 300, height: 50)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                            )
             }
         }
     }

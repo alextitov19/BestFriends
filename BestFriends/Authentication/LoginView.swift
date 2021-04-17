@@ -64,6 +64,12 @@ struct LoginView: View {
                 Spacer()
                 
                 Button("Don't have an account? Sign up.", action: sessionManager.showSignUp)
+                    .frame(width: 300, height: 50)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                            )
           
             }
         }

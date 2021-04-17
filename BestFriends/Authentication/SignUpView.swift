@@ -81,7 +81,13 @@ struct SignUpView: View {
                 
                 Spacer()
                 
-                Button("Already ahve an account? Log in.", action: sessionManager.showLogin)
+                Button("Already have an account? Log in.", action: sessionManager.showLogin)
+                    .frame(width: 300, height: 50)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25)
+                            .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                            )
             }
             .padding()
         }
