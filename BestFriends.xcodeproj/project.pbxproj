@@ -16,7 +16,6 @@
 		7A71BD1626252B0300E6FA9E /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD1426252B0200E6FA9E /* awsconfiguration.json */; };
 		7A71BD1726252B0300E6FA9E /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD1526252B0200E6FA9E /* amplifyconfiguration.json */; };
 		7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD1926252B1300E6FA9E /* Backend.swift */; };
-		7A71BD2126252BCD00E6FA9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD2026252BCD00E6FA9E /* AppDelegate.swift */; };
 		7A71BD3326254E2300E6FA9E /* NoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD3026254E2300E6FA9E /* NoteData.swift */; };
 		7A71BD3426254E2300E6FA9E /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD3126254E2300E6FA9E /* AmplifyModels.swift */; };
 		7A71BD3526254E2300E6FA9E /* NoteData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD3226254E2300E6FA9E /* NoteData+Schema.swift */; };
@@ -47,7 +46,6 @@
 		7A71BD1426252B0200E6FA9E /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		7A71BD1526252B0200E6FA9E /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		7A71BD1926252B1300E6FA9E /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
-		7A71BD2026252BCD00E6FA9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A71BD3026254E2300E6FA9E /* NoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteData.swift; sourceTree = "<group>"; };
 		7A71BD3126254E2300E6FA9E /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		7A71BD3226254E2300E6FA9E /* NoteData+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoteData+Schema.swift"; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 				7AE31CB926293ABE001EC5A3 /* Refrence Code */,
 				7A71BD2E26254E2300E6FA9E /* generated */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
-				7A71BD2026252BCD00E6FA9E /* AppDelegate.swift */,
 				7A71BD022625292B00E6FA9E /* Assets.xcassets */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
@@ -319,7 +316,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A71BD2126252BCD00E6FA9E /* AppDelegate.swift in Sources */,
 				7AE31CC2262A9BE1001EC5A3 /* SessionView.swift in Sources */,
 				7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */,
 				7A71BD3326254E2300E6FA9E /* NoteData.swift in Sources */,

@@ -6,14 +6,32 @@
 //
 
 import SwiftUI
+import Amplify
+import AmplifyPlugins
 
 @main
 struct BestFriendsApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+    @ObservedObject var sessionManager = SessionManager()
+    
+    init() {
+        configureAmplify()
+        
+    }
     
     var body: some Scene {
         WindowGroup {
             LoginView()
+        }
+    }
+    
+    private func configureAmplify() {
+        do {
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.configure()
+            print("Amplify configured successfully")
+        } catch {
+            print("Could not initialize Amplify", error)
         }
     }
 }

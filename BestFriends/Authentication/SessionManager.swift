@@ -24,4 +24,12 @@ final class SessionManager: ObservableObject {
             authState = .login
         }
     }
+    
+    func showSignUp() {
+        authState = .signUp
+    }
+    
+    func showLogin() {
+        authState = .login
+    }
 }
