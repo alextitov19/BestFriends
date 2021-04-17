@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct SessionView: View {
-    @State var username = ""
-    @State var password = ""
 
     var body: some View {
         VStack {
