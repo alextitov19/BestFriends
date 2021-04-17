@@ -21,7 +21,16 @@ struct BestFriendsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            switch sessionManager.authState {
+            case .login:
+                LoginView()
+            case .signUp:
+                SignUpPage1()
+            case .confirmationCode(let username):
+                ConfirmationView(username: username)
+            case .session(let user):
+                SessionView(user: user)
+            }
         }
     }
     
