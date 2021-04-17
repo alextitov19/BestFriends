@@ -11,6 +11,8 @@ import Amplify
 
 struct SessionView: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+    
     let user: AuthUser
 
     var body: some View {

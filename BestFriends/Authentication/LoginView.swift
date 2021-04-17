@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @EnvironmentObject var sessionManager: SessionManager
+    
     @State var username = ""
     @State var password = ""
 

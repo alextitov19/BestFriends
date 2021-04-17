@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ConfirmationView: View {
+    
+    @EnvironmentObject var sessionManager: SessionManager
+
     @State var confirmationCode = ""
 
     let username: String
