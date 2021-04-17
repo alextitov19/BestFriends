@@ -41,6 +41,17 @@ struct MessagesView: View {
     
     func didTapSend() {
         print(text)
+        
+        let message = Message(
+            id: "32973424",
+            senderName: currentUser,
+            senderID: "778432784239",
+            body: text,
+            creationDate: .now()
+        )
+        
+        dataSource.send(message)
+        
         text.removeAll()
     }
     
