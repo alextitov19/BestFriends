@@ -11,6 +11,7 @@
 		7A6A4CCE262B554600561D87 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CCB262B554600561D87 /* AmplifyModels.swift */; };
 		7A6A4CCF262B554600561D87 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CCC262B554600561D87 /* Message.swift */; };
 		7A6A4CD0262B554600561D87 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CCD262B554600561D87 /* Message+Schema.swift */; };
+		7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD3262B570400561D87 /* MessagesView.swift */; };
 		7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */; };
 		7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD002625292A00E6FA9E /* SignUpView.swift */; };
 		7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD022625292B00E6FA9E /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 		7A6A4CCB262B554600561D87 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		7A6A4CCC262B554600561D87 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7A6A4CCD262B554600561D87 /* Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+Schema.swift"; sourceTree = "<group>"; };
+		7A6A4CD3262B570400561D87 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		7A71BCFB2625292A00E6FA9E /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsApp.swift; sourceTree = "<group>"; };
 		7A71BD002625292A00E6FA9E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 			path = amplify/generated/models;
 			sourceTree = SOURCE_ROOT;
 		};
+		7A6A4CD2262B56E900561D87 /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				7A6A4CD3262B570400561D87 /* MessagesView.swift */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
 		7A71BCF22625292A00E6FA9E = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7A6A4CD2262B56E900561D87 /* Messaging */,
 				7A6A4CCA262B554600561D87 /* models */,
 				7AE31CBD262A9A7F001EC5A3 /* Authentication */,
 				7AE31CB926293ABE001EC5A3 /* Refrence Code */,
@@ -301,6 +312,7 @@
 				7A6A4CD0262B554600561D87 /* Message+Schema.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */,
+				7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */,
 				7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
