@@ -48,7 +48,7 @@ struct MessagesView: View {
         print(text)
         
         let message = Message(
-            id: "1235342",
+            id: String(Int.random(in: 10000000..<99999999)),
             senderName: currentUser,
             senderID: "123231",
             body: text,
@@ -59,6 +59,8 @@ struct MessagesView: View {
         
         text.removeAll()
     }
+    
+    
     
 }
 
