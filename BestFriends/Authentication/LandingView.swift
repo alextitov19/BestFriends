@@ -10,7 +10,7 @@ import Amplify
 import AVKit
 
 
-struct SessionView: View {
+struct LandingView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -66,14 +66,14 @@ struct SessionView: View {
     }
 }
 
-struct SessionView_Previews : PreviewProvider {
+struct LandingView_Previews : PreviewProvider {
     private struct DummyUser: AuthUser {
         var userId: String = "1"
         var username: String = "dummy"
     }
     
     static var previews: some View {
-        SessionView(user: DummyUser())
+        LandingView(user: DummyUser())
             .environmentObject(SessionManager())
         
     }

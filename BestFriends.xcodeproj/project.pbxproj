@@ -28,7 +28,7 @@
 		7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */; };
 		7ADC62A32627AA7300791689 /* TutorialCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC62A22627AA7300791689 /* TutorialCode.swift */; };
 		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
-		7AE31CC2262A9BE1001EC5A3 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC1262A9BE1001EC5A3 /* SessionView.swift */; };
+		7AE31CC2262A9BE1001EC5A3 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC1262A9BE1001EC5A3 /* LandingView.swift */; };
 		7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */; };
 		7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */; };
 		7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */; };
@@ -64,7 +64,7 @@
 		7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImageView.swift; sourceTree = "<group>"; };
 		7ADC62A22627AA7300791689 /* TutorialCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCode.swift; sourceTree = "<group>"; };
 		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		7AE31CC1262A9BE1001EC5A3 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
+		7AE31CC1262A9BE1001EC5A3 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,7 +185,7 @@
 			children = (
 				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
-				7AE31CC1262A9BE1001EC5A3 /* SessionView.swift */,
+				7AE31CC1262A9BE1001EC5A3 /* LandingView.swift */,
 				7A6A4D06262B8A5000561D87 /* BackgroundVideoController.swift */,
 				7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */,
 				7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */,
@@ -353,7 +353,7 @@
 			files = (
 				7A6A4CCE262B554600561D87 /* AmplifyModels.swift in Sources */,
 				7A6A4D07262B8A5000561D87 /* BackgroundVideoController.swift in Sources */,
-				7AE31CC2262A9BE1001EC5A3 /* SessionView.swift in Sources */,
+				7AE31CC2262A9BE1001EC5A3 /* LandingView.swift in Sources */,
 				7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */,
 				7A6A4CDD262B68A600561D87 /* Message+Extensions.swift in Sources */,
 				7A6A4CDA262B658200561D87 /* DataSource.swift in Sources */,
