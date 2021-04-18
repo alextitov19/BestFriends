@@ -62,7 +62,7 @@ struct LandingView: View {
                             
                         }
                         .sheet(isPresented: $showingSheet) {
-                                    SheetView(image: myQRCode)
+                                    QRCodeView(image: myQRCode)
                                 }
 
                         Spacer()
@@ -120,36 +120,6 @@ struct LandingView: View {
     }
 }
 
-struct SheetView: View {
-    @Environment(\.presentationMode) var presentationMode
-    let image: UIImage
-
-    var body: some View {
-        VStack{
-            Spacer()
-            
-            Text("Tap the QR code to dismiss")
-                .font(.title)
-            
-            Spacer()
-                .frame(height: 30)
-            
-            Image(uiImage: image)
-                .interpolation(.none)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 350, height: 350).gesture(
-                    TapGesture()
-                        .onEnded { _ in
-                            presentationMode.wrappedValue.dismiss()
-                        }
-                    )
-            
-            Spacer()
-        }
-        
-    }
-}
 
 
 

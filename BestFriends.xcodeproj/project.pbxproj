@@ -35,6 +35,8 @@
 		7AE31CC2262A9BE1001EC5A3 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC1262A9BE1001EC5A3 /* LandingView.swift */; };
 		7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */; };
 		7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */; };
+		7AEFD543262CED3A00247757 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFD542262CED3A00247757 /* QRCodeView.swift */; };
+		7AEFD546262CED7A00247757 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFD545262CED7A00247757 /* ImagePicker.swift */; };
 		7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */; };
 		84EA879CC8D44C9CB6FBFFCB /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		8F464A0A6BEA4CD09C25CF86 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
@@ -75,6 +77,8 @@
 		7AE31CC1262A9BE1001EC5A3 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		7AEFD542262CED3A00247757 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		7AEFD545262CED7A00247757 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
@@ -175,6 +179,8 @@
 			children = (
 				7AE31CC1262A9BE1001EC5A3 /* LandingView.swift */,
 				7A6A4D06262B8A5000561D87 /* BackgroundVideoController.swift */,
+				7AEFD542262CED3A00247757 /* QRCodeView.swift */,
+				7AEFD545262CED7A00247757 /* ImagePicker.swift */,
 			);
 			path = LandingPage;
 			sourceTree = "<group>";
@@ -377,6 +383,7 @@
 				7AC0DA95262BAE09007FC643 /* AmplifyModels.swift in Sources */,
 				7A6A4D07262B8A5000561D87 /* BackgroundVideoController.swift in Sources */,
 				7AE31CC2262A9BE1001EC5A3 /* LandingView.swift in Sources */,
+				7AEFD546262CED7A00247757 /* ImagePicker.swift in Sources */,
 				7AC0DA97262BAE09007FC643 /* User+Schema.swift in Sources */,
 				7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */,
 				7A6A4CDD262B68A600561D87 /* Message+Extensions.swift in Sources */,
@@ -392,6 +399,7 @@
 				7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */,
 				7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */,
 				7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */,
+				7AEFD543262CED3A00247757 /* QRCodeView.swift in Sources */,
 				8F464A0A6BEA4CD09C25CF86 /* AmplifyModels.swift in Sources */,
 				3FAFF6936D7B422DBF25E91A /* Message.swift in Sources */,
 				84EA879CC8D44C9CB6FBFFCB /* Message+Schema.swift in Sources */,
