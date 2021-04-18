@@ -111,7 +111,7 @@ struct LandingView: View {
         let filter = CIFilter.qrCodeGenerator()
         var QRCode: UIImage?
         
-        guard let userID = Amplify.Auth.getCurrentUser()?.userId else { return }
+        guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }
         
         let data = Data(userID.utf8)
             filter.setValue(data, forKey: "inputMessage")
