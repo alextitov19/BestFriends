@@ -17,6 +17,9 @@ struct LandingView: View {
     @State private var showingSheet = false
     @State private var showingActionSheet = false
     @State private var myQRCode: UIImage = UIImage()
+    @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
+
 
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -55,7 +58,7 @@ struct LandingView: View {
                         .actionSheet(isPresented: $showingActionSheet) {
                             ActionSheet(title: Text("Add Friends"), message: Text("Add your friends via QR code"), buttons: [
                                 .default(Text("My QR Code")) { showMyQR() },
-                                .default(Text("Green")) {  },
+                                .default(Text("Photo Library")) { getImage() },
                                 .default(Text("Blue")) {  },
                                 .cancel()
                             ])
@@ -64,6 +67,9 @@ struct LandingView: View {
                         .sheet(isPresented: $showingSheet) {
                                     QRCodeView(image: myQRCode)
                                 }
+                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                            ImagePicker(image: self.$inputImage)
+                        }
 
                         Spacer()
                         
@@ -73,6 +79,7 @@ struct LandingView: View {
                                 .frame(width: 40, height: 40)
                                 .scaledToFill()
                            }
+                        
                         
                         Spacer()
                         
@@ -118,6 +125,17 @@ struct LandingView: View {
         
         showingSheet.toggle()
     }
+    
+    private func getImage() {
+        self.showingImagePicker = true
+
+    }
+    
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        print("Got the image")
+    }
+    
 }
 
 
