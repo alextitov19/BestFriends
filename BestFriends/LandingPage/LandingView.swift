@@ -126,17 +126,28 @@ struct SheetView: View {
 
     var body: some View {
         VStack{
-            Image(uiImage: image)
-                .resizable()
-                .frame(width: 200, height: 200)
+            Spacer()
             
-            Button("Press to dismiss") {
-                presentationMode.wrappedValue.dismiss()
-            }
-            .font(.title)
-            .padding()
-            .background(Color.black)
+            Text("Tap the QR code to dismiss")
+                .font(.title)
+            
+            Spacer()
+                .frame(height: 30)
+            
+            Image(uiImage: image)
+                .interpolation(.none)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 350, height: 350).gesture(
+                    TapGesture()
+                        .onEnded { _ in
+                            presentationMode.wrappedValue.dismiss()
+                        }
+                    )
+            
+            Spacer()
         }
+        
     }
 }
 
