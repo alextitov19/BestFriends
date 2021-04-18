@@ -31,12 +31,26 @@ struct LandingView: View {
             
             
                 VStack {
-                    
-                    
+
                     Spacer()
+                       
                     
                     HStack {
+                        
                         Spacer()
+                        
+                        Button(action: {
+                            print("button pressed")
+
+                          }) {
+                              Image("whitePlus")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                          }
+                        
+                        Spacer()
+                        
+                        
                     
                         NavigationLink(destination: MessagesView()) {
                                Image("messageIconWhite")
@@ -56,7 +70,7 @@ struct LandingView: View {
                         
                         Spacer()
                         
-                        Button("Signout", action: sessionManager.signOut)
+//                        Button("Signout", action: sessionManager.signOut)
                     }
                             
                     
