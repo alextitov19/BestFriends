@@ -100,31 +100,41 @@ struct SignUpView: View {
 
 struct SignUpPage1: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+    
     @State private var firstName: String = ""
 
     var body: some View {
-        ZStack {
-            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
-            VStack {
-                TextField("Enter your first name", text: $firstName)
-                    .multilineTextAlignment(.center)
-                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .frame(width: 300, height: 40, alignment: .center)
-                    .font(.title)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .cornerRadius(20)
-                
-                Spacer()
-                    .frame(height: 50)
-                
-                NavigationLink(destination: SignUpPage2(firstName: firstName)) {
-                                    Text("Next")
-                                        .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 200, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                                }
+        NavigationView{
+            ZStack {
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+            
+                VStack {
+                    TextField("Enter your first name", text: $firstName)
+                        .multilineTextAlignment(.center)
+                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 300, height: 40, alignment: .center)
+                        .font(.title)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .cornerRadius(20)
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
+
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    NavigationLink(destination: SignUpPage2(firstName: firstName).environmentObject(sessionManager)) {
+                                        Text("Next")
+                                            .font(.title)
+                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                            .frame(width: 200, height: 50)
+                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                                    }
+                }
             }
         }
     }
@@ -132,12 +142,17 @@ struct SignUpPage1: View {
 
 struct SignUpPage2: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
     @State private var lastName: String = ""
     var firstName: String
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
             VStack {
                 TextField("Enter your last name", text: $lastName)
                     .multilineTextAlignment(.center)
@@ -146,11 +161,13 @@ struct SignUpPage2: View {
                     .font(.title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .cornerRadius(20)
-                
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage3(firstName: firstName, lastName: lastName)) {
+                NavigationLink(destination: SignUpPage3(firstName: firstName, lastName: lastName).environmentObject(sessionManager)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -166,6 +183,7 @@ struct SignUpPage2: View {
 
 struct SignUpPage3: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
     @State private var username: String = ""
     
     var firstName: String
@@ -174,7 +192,10 @@ struct SignUpPage3: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
             VStack {
                 TextField("Enter your username", text: $username)
                     .multilineTextAlignment(.center)
@@ -183,11 +204,14 @@ struct SignUpPage3: View {
                     .font(.title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .cornerRadius(20)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+
                 
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username)) {
+                NavigationLink(destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username).environmentObject(sessionManager)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -203,6 +227,7 @@ struct SignUpPage3: View {
 
 struct SignUpPage4: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
     @State private var password: String = ""
     
     var firstName: String
@@ -211,7 +236,10 @@ struct SignUpPage4: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
             VStack {
                 TextField("Enter your password", text: $password)
                     .multilineTextAlignment(.center)
@@ -220,11 +248,13 @@ struct SignUpPage4: View {
                     .font(.title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .cornerRadius(20)
-                
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
+
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password)) {
+                NavigationLink(destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password).environmentObject(sessionManager)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -240,6 +270,7 @@ struct SignUpPage4: View {
 
 struct SignUpPage5: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
     @State private var email: String = ""
     
     var firstName: String
@@ -250,7 +281,10 @@ struct SignUpPage5: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
             VStack {
                 TextField("Enter your email", text: $email)
                     .multilineTextAlignment(.center)
@@ -259,11 +293,13 @@ struct SignUpPage5: View {
                     .font(.title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .cornerRadius(20)
-                
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage6(firstName: firstName, lastName: lastName, username: username, password: password, email: email)) {
+                NavigationLink(destination: SignUpPage6(firstName: firstName, lastName: lastName, username: username, password: password, email: email).environmentObject(sessionManager)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -279,6 +315,7 @@ struct SignUpPage5: View {
 
 struct SignUpPage6: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
     @State private var pronouns: String = ""
     
     var firstName: String
@@ -289,7 +326,10 @@ struct SignUpPage6: View {
 
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
             VStack {
                 TextField("Enter your pronouns", text: $pronouns)
                     .multilineTextAlignment(.center)
@@ -298,11 +338,13 @@ struct SignUpPage6: View {
                     .font(.title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .cornerRadius(20)
-                
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage7(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns)) {
+                NavigationLink(destination: SignUpPage7(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns).environmentObject(sessionManager)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -318,7 +360,7 @@ struct SignUpPage6: View {
 
 struct SignUpPage7: View {
     
-    
+    @EnvironmentObject var sessionManager: SessionManager
     @State private var birthDate: Date = Date()
     
     var firstName: String
@@ -330,7 +372,10 @@ struct SignUpPage7: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
             VStack {
                 Text("Please enter your birthdate")
                     .font(.title)
@@ -342,13 +387,14 @@ struct SignUpPage7: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpQuestionPage(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate)) {
+                NavigationLink(destination: SignUpQuestionPage(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
+
                                 }
                 
             }
@@ -359,7 +405,7 @@ struct SignUpPage7: View {
 struct SignUpQuestionPage: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-    @EnvironmentObject var userMamager: UserManager
+    var userMamager = UserManager()
         
     var firstName: String
     var lastName: String
@@ -371,14 +417,18 @@ struct SignUpQuestionPage: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
             VStack {
                 Text("Please answer these questions for personalized ads")
                     .font(.title)
                     .bold()
                     .frame(width: 300, height: 200, alignment: .center)
                     .multilineTextAlignment(.center)
-                
+                    .disableAutocorrection(true)
+
                 
                 Button("Sign Up", action: {
                     sessionManager.signUp(
@@ -389,8 +439,8 @@ struct SignUpQuestionPage: View {
                     )
                     
                     let user = User(
-                        id: Amplify.Auth.getCurrentUser()!.userId,
-                        username: Amplify.Auth.getCurrentUser()!.userId,
+                        id: username,
+                        username: username,
                         firstName: firstName,
                         lastName: lastName,
                         birthday: Temporal.Date(birthdate),
@@ -416,8 +466,7 @@ struct SignUpQuestionPage: View {
 
 struct SignUpView_Previews : PreviewProvider {
     static var previews: some View {
-        SignUpView()
-            .environmentObject(SessionManager())
+        SignUpPage1()
     }
 }
 
