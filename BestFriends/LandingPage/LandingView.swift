@@ -12,6 +12,8 @@ import AVKit
 
 struct LandingView: View {
     
+    @State private var showingActionSheet = false
+
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: AuthUser
@@ -31,27 +33,33 @@ struct LandingView: View {
             
             
                 VStack {
-
                     Spacer()
-                       
                     
                     HStack {
-                        
                         Spacer()
                         
                         Button(action: {
-                            print("button pressed")
+                            //Display invite menu
+                            self.showingActionSheet = true
 
                           }) {
                               Image("whitePlus")
                                 .resizable()
                                 .frame(width: 40, height: 40)
+                            
                           }
+                        .actionSheet(isPresented: $showingActionSheet) {
+                            ActionSheet(title: Text("Add Friends"), message: Text("Add your friends via QR code"), buttons: [
+                                .default(Text("Red")) {  },
+                                .default(Text("Green")) {  },
+                                .default(Text("Blue")) {  },
+                                .cancel()
+                            ])
+                            
+                        }
                         
                         Spacer()
                         
-                        
-                    
                         NavigationLink(destination: MessagesView()) {
                                Image("messageIconWhite")
                                 .resizable()
@@ -78,16 +86,14 @@ struct LandingView: View {
                            }
                         
                         Spacer()
-                        
-//                        Button("Signout", action: sessionManager.signOut)
                     }
-                            
-                    
-                    
-
                 }
             }
         }
+    }
+    
+    private func openCamera(action: UIAlertAction) {
+        
     }
 }
 
