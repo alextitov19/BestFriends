@@ -62,6 +62,15 @@ struct LandingView: View {
                         Spacer()
                         
                         NavigationLink(destination: MessagesView()) {
+                               Image("whiteSmiley")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                           }
+                        
+                        Spacer()
+                        
+                        NavigationLink(destination: MessagesView()) {
                                Image("settingsIconWhite")
                                 .resizable()
                                 .frame(width: 40, height: 40)
