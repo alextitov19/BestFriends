@@ -58,7 +58,7 @@ struct LandingView: View {
                         .actionSheet(isPresented: $showingActionSheet) {
                             ActionSheet(title: Text("Add Friends"), message: Text("Add your friends via QR code"), buttons: [
                                 .default(Text("My QR Code")) { showMyQR() },
-                                .default(Text("Photo Library")) { getImage() },
+                                .default(Text("Photo Library")) { self.showingImagePicker = true },
                                 .default(Text("Blue")) {  },
                                 .cancel()
                             ])
@@ -126,14 +126,42 @@ struct LandingView: View {
         showingSheet.toggle()
     }
     
-    private func getImage() {
-        self.showingImagePicker = true
-
-    }
-    
     func loadImage() {
         guard let inputImage = inputImage else { return }
         print("Got the image")
+        displayQRString(image: inputImage)
+        
+    }
+    
+    
+    
+    func detectQRCode(_ image: UIImage?) -> [CIFeature]? {
+        if let image = image, let ciImage = CIImage.init(image: image){
+            var options: [String: Any]
+            let context = CIContext()
+            options = [CIDetectorAccuracy: CIDetectorAccuracyHigh]
+            let qrDetector = CIDetector(ofType: CIDetectorTypeQRCode, context: context, options: options)
+            if ciImage.properties.keys.contains((kCGImagePropertyOrientation as String)){
+                options = [CIDetectorImageOrientation: ciImage.properties[(kCGImagePropertyOrientation as String)] ?? 1]
+            } else {
+                options = [CIDetectorImageOrientation: 1]
+            }
+            let features = qrDetector?.features(in: ciImage, options: options)
+            return features
+
+        }
+        return nil
+    }
+    
+    private func displayQRString(image: UIImage) {
+        print("Got into display")
+        if let features = detectQRCode(image), !features.isEmpty{
+            print("Got into if")
+            for case let row as CIQRCodeFeature in features{
+                guard let uid = row.messageString as String? else { return }
+                print("Preparing to send to: ", uid)
+            }
+        }
     }
     
 }
