@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Amplify
 
 struct SignUpView: View {
     
@@ -101,7 +101,7 @@ struct SignUpView: View {
 struct SignUpPage1: View {
     
     @State private var firstName: String = ""
-    
+
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
@@ -117,7 +117,7 @@ struct SignUpPage1: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage2()) {
+                NavigationLink(destination: SignUpPage2(firstName: firstName)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -125,7 +125,6 @@ struct SignUpPage1: View {
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                                 }
-                
             }
         }
     }
@@ -134,6 +133,7 @@ struct SignUpPage1: View {
 struct SignUpPage2: View {
     
     @State private var lastName: String = ""
+    var firstName: String
     
     var body: some View {
         ZStack {
@@ -150,7 +150,7 @@ struct SignUpPage2: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage3()) {
+                NavigationLink(destination: SignUpPage3(firstName: firstName, lastName: lastName)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -168,6 +168,10 @@ struct SignUpPage3: View {
     
     @State private var username: String = ""
     
+    var firstName: String
+    var lastName: String
+
+    
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
@@ -183,7 +187,7 @@ struct SignUpPage3: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage4()) {
+                NavigationLink(destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -201,6 +205,10 @@ struct SignUpPage4: View {
     
     @State private var password: String = ""
     
+    var firstName: String
+    var lastName: String
+    var username: String
+    
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
@@ -216,7 +224,7 @@ struct SignUpPage4: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage5()) {
+                NavigationLink(destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -234,6 +242,12 @@ struct SignUpPage5: View {
     
     @State private var email: String = ""
     
+    var firstName: String
+    var lastName: String
+    var username: String
+    var password: String
+
+    
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
@@ -249,7 +263,7 @@ struct SignUpPage5: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage6()) {
+                NavigationLink(destination: SignUpPage6(firstName: firstName, lastName: lastName, username: username, password: password, email: email)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -267,6 +281,12 @@ struct SignUpPage6: View {
     
     @State private var pronouns: String = ""
     
+    var firstName: String
+    var lastName: String
+    var username: String
+    var password: String
+    var email: String
+
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
@@ -282,7 +302,7 @@ struct SignUpPage6: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage7()) {
+                NavigationLink(destination: SignUpPage7(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -301,6 +321,13 @@ struct SignUpPage7: View {
     
     @State private var birthDate: Date = Date()
     
+    var firstName: String
+    var lastName: String
+    var username: String
+    var password: String
+    var email: String
+    var pronouns: String
+    
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)).ignoresSafeArea()
@@ -315,7 +342,7 @@ struct SignUpPage7: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpQuestionPage()) {
+                NavigationLink(destination: SignUpQuestionPage(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -331,7 +358,16 @@ struct SignUpPage7: View {
 
 struct SignUpQuestionPage: View {
     
-    @State private var birthDate: Date = Date()
+    @EnvironmentObject var sessionManager: SessionManager
+    @EnvironmentObject var userMamager: UserManager
+        
+    var firstName: String
+    var lastName: String
+    var username: String
+    var password: String
+    var email: String
+    var pronouns: String
+    var birthdate: Date
     
     var body: some View {
         ZStack {
@@ -342,6 +378,34 @@ struct SignUpQuestionPage: View {
                     .bold()
                     .frame(width: 300, height: 200, alignment: .center)
                     .multilineTextAlignment(.center)
+                
+                
+                Button("Sign Up", action: {
+                    sessionManager.signUp(
+                        username: username,
+                        email: email,
+                        password: password
+                    
+                    )
+                    
+                    let user = User(
+                        id: Amplify.Auth.getCurrentUser()!.userId,
+                        username: Amplify.Auth.getCurrentUser()!.userId,
+                        firstName: firstName,
+                        lastName: lastName,
+                        birthday: Temporal.Date(birthdate),
+                        pronouns: pronouns,
+                        location: "San Diego",
+                        adPreference: "Climate Change")
+                    
+                    userMamager.create(user)
+                    
+                })
+                .frame(width: 150, height: 50, alignment: .center)
+                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                .cornerRadius(25)
+                
                 
         
                 

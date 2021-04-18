@@ -41,3 +41,54 @@ mutation DeleteMessage(
     updatedAt
   }
 }
+mutation CreateUser(
+  $input: CreateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  createUser(input: $input, condition: $condition) {
+    id
+    username
+    firstName
+    lastName
+    birthday
+    pronouns
+    location
+    adPreference
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateUser(
+  $input: UpdateUserInput!
+  $condition: ModelUserConditionInput
+) {
+  updateUser(input: $input, condition: $condition) {
+    id
+    username
+    firstName
+    lastName
+    birthday
+    pronouns
+    location
+    adPreference
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteUser(
+  $input: DeleteUserInput!
+  $condition: ModelUserConditionInput
+) {
+  deleteUser(input: $input, condition: $condition) {
+    id
+    username
+    firstName
+    lastName
+    birthday
+    pronouns
+    location
+    adPreference
+    createdAt
+    updatedAt
+  }
+}

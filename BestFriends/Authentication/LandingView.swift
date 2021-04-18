@@ -55,6 +55,8 @@ struct LandingView: View {
                            }
                         
                         Spacer()
+                        
+                        Button("Signout", action: sessionManager.signOut)
                     }
                             
                     

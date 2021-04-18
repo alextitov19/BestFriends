@@ -32,3 +32,45 @@ subscription OnDeleteMessage {
     updatedAt
   }
 }
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    username
+    firstName
+    lastName
+    birthday
+    pronouns
+    location
+    adPreference
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    username
+    firstName
+    lastName
+    birthday
+    pronouns
+    location
+    adPreference
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    username
+    firstName
+    lastName
+    birthday
+    pronouns
+    location
+    adPreference
+    createdAt
+    updatedAt
+  }
+}
