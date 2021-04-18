@@ -5,3 +5,13 @@ type Message @model {
   body: String!
   creationDate: AWSTimestamp!
 }
+
+type User @model {
+  username: String!
+  firstName: String!
+  lastName: String!
+  birthday: AWSDate!
+  pronouns: String!
+  location: String!
+  adPreference: String!
+}
