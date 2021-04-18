@@ -8,11 +8,14 @@
 import SwiftUI
 import Amplify
 import AVKit
+import CoreImage.CIFilterBuiltins
+
 
 
 struct LandingView: View {
     
     @State private var showingActionSheet = false
+    @State private var isPresented = false
 
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -50,13 +53,14 @@ struct LandingView: View {
                           }
                         .actionSheet(isPresented: $showingActionSheet) {
                             ActionSheet(title: Text("Add Friends"), message: Text("Add your friends via QR code"), buttons: [
-                                .default(Text("Red")) {  },
+                                .default(Text("My QR Code")) { showMyQR() },
                                 .default(Text("Green")) {  },
                                 .default(Text("Blue")) {  },
                                 .cancel()
                             ])
                             
                         }
+                        .fullScreenCover(isPresented: $isPresented, content: FullScreenModalView.init)
                         
                         Spacer()
                         
@@ -92,10 +96,42 @@ struct LandingView: View {
         }
     }
     
-    private func openCamera(action: UIAlertAction) {
+    private func showMyQR() {
+        let context = CIContext()
+        let filter = CIFilter.qrCodeGenerator()
+        var QRCode: UIImage?
+        
+        guard let userID = Amplify.Auth.getCurrentUser()?.userId else { return }
+        
+        let data = Data(userID.utf8)
+            filter.setValue(data, forKey: "inputMessage")
+
+            if let outputImage = filter.outputImage {
+                if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
+                    QRCode = UIImage(cgImage: cgimg)
+                }
+            }
+
+            QRCode = UIImage(systemName: "xmark.circle") ?? UIImage()
+        
+        isPresented.toggle()
         
     }
 }
+
+struct FullScreenModalView: View {
+    @Environment(\.presentationMode) var presentationMode
+
+    var body: some View {
+        Button("Dismiss Modal") {
+            presentationMode.wrappedValue.dismiss()
+        }
+    }
+}
+
+
+
+
 
 struct LandingView_Previews : PreviewProvider {
     private struct DummyUser: AuthUser {
