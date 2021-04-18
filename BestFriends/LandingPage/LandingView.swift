@@ -14,8 +14,9 @@ import CoreImage.CIFilterBuiltins
 
 struct LandingView: View {
     
+    @State private var showingSheet = false
     @State private var showingActionSheet = false
-    @State private var isPresented = false
+    @State private var myQRCode: UIImage = UIImage()
 
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -60,8 +61,10 @@ struct LandingView: View {
                             ])
                             
                         }
-                        .fullScreenCover(isPresented: $isPresented, content: FullScreenModalView.init)
-                        
+                        .sheet(isPresented: $showingSheet) {
+                                    SheetView(image: myQRCode)
+                                }
+
                         Spacer()
                         
                         NavigationLink(destination: MessagesView()) {
@@ -109,22 +112,30 @@ struct LandingView: View {
             if let outputImage = filter.outputImage {
                 if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
                     QRCode = UIImage(cgImage: cgimg)
+                    myQRCode = QRCode!
                 }
             }
-
-            QRCode = UIImage(systemName: "xmark.circle") ?? UIImage()
         
-        isPresented.toggle()
-        
+        showingSheet.toggle()
     }
 }
 
-struct FullScreenModalView: View {
+struct SheetView: View {
     @Environment(\.presentationMode) var presentationMode
+    let image: UIImage
 
     var body: some View {
-        Button("Dismiss Modal") {
-            presentationMode.wrappedValue.dismiss()
+        VStack{
+            Image(uiImage: image)
+                .resizable()
+                .frame(width: 200, height: 200)
+            
+            Button("Press to dismiss") {
+                presentationMode.wrappedValue.dismiss()
+            }
+            .font(.title)
+            .padding()
+            .background(Color.black)
         }
     }
 }
