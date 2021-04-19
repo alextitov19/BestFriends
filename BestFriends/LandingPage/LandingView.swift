@@ -106,6 +106,8 @@ struct LandingView: View {
         }
     }
     
+    // MARK: QR Code Functions
+    
     private func showMyQR() {
         let context = CIContext()
         let filter = CIFilter.qrCodeGenerator()
