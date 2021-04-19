@@ -30,4 +30,9 @@ struct UserDataSource {
         }
     }
     
+    func addFriend(user: User) {
+        
+    }
+    
+    
 }

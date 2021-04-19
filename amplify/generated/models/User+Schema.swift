@@ -13,6 +13,8 @@ extension User {
     case pronouns
     case location
     case adPreference
+    case friends
+    case rooms
   }
   
   public static let keys = CodingKeys.self
@@ -31,7 +33,9 @@ extension User {
       .field(user.birthday, is: .required, ofType: .date),
       .field(user.pronouns, is: .required, ofType: .string),
       .field(user.location, is: .required, ofType: .string),
-      .field(user.adPreference, is: .required, ofType: .string)
+      .field(user.adPreference, is: .required, ofType: .string),
+      .field(user.friends, is: .optional, ofType: .embeddedCollection(of: String.self)),
+      .field(user.rooms, is: .optional, ofType: .embeddedCollection(of: String.self))
     )
     }
 }

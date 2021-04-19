@@ -11,6 +11,8 @@ public struct User: Model {
   public var pronouns: String
   public var location: String
   public var adPreference: String
+  public var friends: [String]?
+  public var rooms: [String]?
   
   public init(id: String = UUID().uuidString,
       username: String,
@@ -19,7 +21,9 @@ public struct User: Model {
       birthday: Temporal.Date,
       pronouns: String,
       location: String,
-      adPreference: String) {
+      adPreference: String,
+      friends: [String]? = [],
+      rooms: [String]? = []) {
       self.id = id
       self.username = username
       self.firstName = firstName
@@ -28,5 +32,7 @@ public struct User: Model {
       self.pronouns = pronouns
       self.location = location
       self.adPreference = adPreference
+      self.friends = friends
+      self.rooms = rooms
   }
 }
