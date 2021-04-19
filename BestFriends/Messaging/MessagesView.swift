@@ -10,7 +10,7 @@ import SwiftUI
 struct MessagesView: View {
     
     @State var text: String = ""
-    @ObservedObject var dataSource = DataSource()
+    @ObservedObject var dataSource = MessageDataSource()
     
     let currentUser = "Alex Titov"
     

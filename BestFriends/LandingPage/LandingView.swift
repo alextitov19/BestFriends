@@ -100,6 +100,9 @@ struct LandingView: View {
                            }
                         
                         Spacer()
+                        
+                        Button("Sign Out", action: {sessionManager.signOut()})
+                        
                     }
                 }
             }
@@ -162,8 +165,13 @@ struct LandingView: View {
             for case let row as CIQRCodeFeature in features{
                 guard let uid = row.messageString as String? else { return }
                 print("Preparing to send to: ", uid)
+                addFriend(id: uid)
             }
         }
+    }
+    
+    private func addFriend(id: String) {
+        UserDataSource().getUser(id: id)
     }
     
 }

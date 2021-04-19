@@ -8,7 +8,7 @@
 import Amplify
 import Foundation
 
-class DataSource: ObservableObject {
+class MessageDataSource: ObservableObject {
     @Published var messages = [Message]()
     
     func send(_ message: Message) {
