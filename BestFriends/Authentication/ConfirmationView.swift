@@ -47,7 +47,8 @@ struct ConfirmationView: View {
                     .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .cornerRadius(25)
-                
+                    .autocapitalization(.none)
+
                 Spacer()
                     .frame(height: 50)
                 

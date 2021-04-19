@@ -241,7 +241,7 @@ struct SignUpPage4: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             VStack {
-                TextField("Enter your password", text: $password)
+                SecureField("Enter your password", text: $password)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 300, height: 40, alignment: .center)
