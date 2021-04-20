@@ -47,7 +47,6 @@ mutation CreateUser(
 ) {
   createUser(input: $input, condition: $condition) {
     id
-    username
     firstName
     lastName
     birthday
@@ -66,7 +65,6 @@ mutation UpdateUser(
 ) {
   updateUser(input: $input, condition: $condition) {
     id
-    username
     firstName
     lastName
     birthday
@@ -85,7 +83,6 @@ mutation DeleteUser(
 ) {
   deleteUser(input: $input, condition: $condition) {
     id
-    username
     firstName
     lastName
     birthday

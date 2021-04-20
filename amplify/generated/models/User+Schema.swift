@@ -6,7 +6,6 @@ extension User {
   // MARK: - CodingKeys 
    public enum CodingKeys: String, ModelKey {
     case id
-    case username
     case firstName
     case lastName
     case birthday
@@ -27,7 +26,6 @@ extension User {
     
     model.fields(
       .id(),
-      .field(user.username, is: .required, ofType: .string),
       .field(user.firstName, is: .required, ofType: .string),
       .field(user.lastName, is: .required, ofType: .string),
       .field(user.birthday, is: .required, ofType: .date),

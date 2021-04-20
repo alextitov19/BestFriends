@@ -7,7 +7,6 @@ type Message @model {
 }
 
 type User @model {
-  username: String!
   firstName: String!
   lastName: String!
   birthday: AWSDate!

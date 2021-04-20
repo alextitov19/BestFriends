@@ -31,7 +31,6 @@ query ListMessages(
 query GetUser($id: ID!) {
   getUser(id: $id) {
     id
-    username
     firstName
     lastName
     birthday
@@ -52,7 +51,6 @@ query ListUsers(
   listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
     items {
       id
-      username
       firstName
       lastName
       birthday

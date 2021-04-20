@@ -440,7 +440,6 @@ struct SignUpQuestionPage: View {
                     
                     let user = User(
                         id: username,
-                        username: username,
                         firstName: firstName,
                         lastName: lastName,
                         birthday: Temporal.Date(birthdate),
