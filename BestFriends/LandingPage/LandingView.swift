@@ -19,8 +19,7 @@ struct LandingView: View {
     @State private var myQRCode: UIImage = UIImage()
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
-    
-    var friendIDs: [String] = []
+    @State private var friendIDs: [String] = []
     
     var myID: String
 
@@ -192,8 +191,16 @@ struct LandingView: View {
     
     private func getFriends() {
         let user = UserDataSource().getUser(id: myID)
-
+        guard let friends = user.friends else { return }
+        friendIDs = friends
+        displayStars()
     }
+    
+    private func displayStars() {
+        print("Friend count: ", friendIDs.count)
+    }
+    
+    
     
     
 }
