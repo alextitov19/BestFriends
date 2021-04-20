@@ -38,6 +38,8 @@ query GetUser($id: ID!) {
     pronouns
     location
     adPreference
+    friends
+    rooms
     createdAt
     updatedAt
   }
@@ -57,6 +59,8 @@ query ListUsers(
       pronouns
       location
       adPreference
+      friends
+      rooms
       createdAt
       updatedAt
     }

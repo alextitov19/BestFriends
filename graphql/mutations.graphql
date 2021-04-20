@@ -54,6 +54,8 @@ mutation CreateUser(
     pronouns
     location
     adPreference
+    friends
+    rooms
     createdAt
     updatedAt
   }
@@ -71,6 +73,8 @@ mutation UpdateUser(
     pronouns
     location
     adPreference
+    friends
+    rooms
     createdAt
     updatedAt
   }
@@ -88,6 +92,8 @@ mutation DeleteUser(
     pronouns
     location
     adPreference
+    friends
+    rooms
     createdAt
     updatedAt
   }
