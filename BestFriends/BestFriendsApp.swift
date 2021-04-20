@@ -32,7 +32,7 @@ struct BestFriendsApp: App {
                 ConfirmationView(username: username)
                     .environmentObject(sessionManager)
             case .session(let user):
-                LandingView(user: user)
+                LandingView(myID: user.username)
                     .environmentObject(sessionManager)
             }
         }

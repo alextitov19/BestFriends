@@ -19,11 +19,19 @@ struct LandingView: View {
     @State private var myQRCode: UIImage = UIImage()
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
-
+    
+    var friendIDs: [String] = []
+    
+    var myID: String
 
     @EnvironmentObject var sessionManager: SessionManager
+     
+    private func reloadData() {
+        getFriends()
+        
+    }
     
-    let user: AuthUser
+//    let user: AuthUser
 
     var body: some View {
         NavigationView{
@@ -107,9 +115,10 @@ struct LandingView: View {
                 }
             }
         }
+        .onAppear(perform: reloadData)
     }
     
-    // MARK: QR Code Functions
+    // MARK: QR Code
     
     private func showMyQR() {
         let context = CIContext()
@@ -170,12 +179,22 @@ struct LandingView: View {
         }
     }
     
+    //MARK: End of QR Code
+    
     private func addFriend(id: String) {
         let user = UserDataSource().getUser(id: id)
-        print("done")
+        print("got the user")
         UserDataSource().addFriend(user: user)
-        print("done 2")
+        print("done adding friends")
     }
+    
+    
+    
+    private func getFriends() {
+        let user = UserDataSource().getUser(id: myID)
+
+    }
+    
     
 }
 
@@ -184,16 +203,20 @@ struct LandingView: View {
 
 
 
+
+
+
+
+
+
+
+
+
+
 struct LandingView_Previews : PreviewProvider {
-    private struct DummyUser: AuthUser {
-        var userId: String = "1"
-        var username: String = "dummy"
-    }
-    
     static var previews: some View {
-        LandingView(user: DummyUser())
+        LandingView(myID: " ")
             .environmentObject(SessionManager())
-        
     }
 }
 
