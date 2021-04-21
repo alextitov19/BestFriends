@@ -20,6 +20,7 @@ struct LandingView: View {
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
     @State private var friendIDs: [String] = []
+    @State private var stars: [Star] = []
     
     var myID: String
 
@@ -198,6 +199,15 @@ struct LandingView: View {
     
     private func displayStars() {
         print("Friend count: ", friendIDs.count)
+        
+        for friendID in friendIDs {
+            let user = UserDataSource().getUser(id: friendID)
+            guard let initial = user.lastName.first else { return }
+            var name = user.firstName + " "
+            name.append(initial)
+            let star = Star(id: user.id, name: name)
+            print("Successfully amde a star for user: ", user.id)
+        }
     }
     
     
