@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Star {
+struct Star: Hashable {
     let id: String
     let name: String
     

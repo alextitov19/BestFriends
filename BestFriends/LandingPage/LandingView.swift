@@ -113,6 +113,10 @@ struct LandingView: View {
                         
                     }
                 }
+                
+                ForEach(stars, id: \.self) { star in
+                    Text(star.name)
+                }
             }
         }
         .onAppear(perform: reloadData)
@@ -206,9 +210,12 @@ struct LandingView: View {
             var name = user.firstName + " "
             name.append(initial)
             let star = Star(id: user.id, name: name)
-            print("Successfully amde a star for user: ", user.id)
+            print("Successfully added a star for user: ", user.id)
+            stars.append(star)
         }
     }
+    
+ 
     
     
     
