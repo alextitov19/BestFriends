@@ -117,10 +117,15 @@ struct LandingView: View {
                 VStack {
                     ForEach(stars, id: \.self) { star in
                         GeometryReader { geometry in
-                            HStack {
+                            VStack {
+                                HStack {
+                                    Spacer()
+                                        .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
+                                    star.body
+                                }
+                                
                                 Spacer()
-                                    .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
-                                star.body
+                                    .frame(height: 50)
                             }
                         }
                     }
