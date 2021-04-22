@@ -203,6 +203,7 @@ struct LandingView: View {
         print("got the user")
         UserDataSource().addFriend(user: user)
         print("done adding friends")
+        getFriends()
     }
     
     
