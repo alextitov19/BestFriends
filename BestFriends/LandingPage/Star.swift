@@ -12,9 +12,18 @@ struct Star: Hashable {
     let name: String
     
     var body: some View {
-        Image("starBig")
-            .resizable()
-            .scaledToFill()
-            .frame(width: 40, height: 40)
+        VStack {
+            Text(name)
+                .font(.headline)
+                .foregroundColor(.white)
+            
+//            Spacer()
+//                .frame(height: 10)
+            
+            Image("starBig")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 70, height: 70)
+        }
     }
 }

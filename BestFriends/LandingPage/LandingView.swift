@@ -114,8 +114,16 @@ struct LandingView: View {
                     }
                 }
                 
-                ForEach(stars, id: \.self) { star in
-                    Text(star.name)
+                VStack {
+                    ForEach(stars, id: \.self) { star in
+                        GeometryReader { geometry in
+                            HStack {
+                                Spacer()
+                                    .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
+                                star.body
+                            }
+                        }
+                    }
                 }
             }
         }
