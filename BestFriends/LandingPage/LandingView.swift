@@ -67,7 +67,6 @@ struct LandingView: View {
                             ActionSheet(title: Text("Add Friends"), message: Text("Add your friends via QR code"), buttons: [
                                 .default(Text("My QR Code")) { showMyQR() },
                                 .default(Text("Photo Library")) { self.showingImagePicker = true },
-                                .default(Text("Blue")) {  },
                                 .cancel()
                             ])
                             

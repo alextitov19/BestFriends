@@ -405,6 +405,13 @@ struct SignUpPage7: View {
 struct SignUpQuestionPage: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    @State var selectedOptions: [String] = []
+    @State var didTap1 = false
+    @State var didTap2 = false
+    @State var didTap3 = false
+    @State var didTap4 = false
+    @State var didTap5 = false
+    
     var userMamager = UserManager()
         
     var firstName: String
@@ -422,13 +429,118 @@ struct SignUpQuestionPage: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             VStack {
-                Text("Please answer these questions for personalized ads")
+                VStack {
+                Text("Protecting Your Privacy is #1")
                     .font(.title)
-                    .bold()
-                    .frame(width: 300, height: 200, alignment: .center)
+                    .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .disableAutocorrection(true)
+                
+                Spacer()
+                    .frame(height: 50)
+                
+                Text("Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day,")
+                    .font(.body)
+                    .foregroundColor(.red)
+                    .frame(width: 400)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 50)
+                
+                Text("We’ll Simply ‘Ask’ You")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .frame(width: 400)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 20)
 
+                Text("-    You keep 'Your Privacy’")
+                    .font(.body)
+                    .foregroundColor(.white)
+                    .frame(width: 220)
+                    .multilineTextAlignment(.leading)
+                
+                Text("-    We keep the lights on   ")
+                    .font(.body)
+                    .foregroundColor(.white)
+                    .frame(width: 220)
+                    .multilineTextAlignment(.leading)
+
+                    Spacer()
+                        .frame(height: 20)
+                }
+                
+                VStack {
+                
+                    Text("My Interests")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .frame(width: 200)
+                        .multilineTextAlignment(.center)
+                
+                    Spacer()
+                        .frame(height: 40)
+                
+                    
+                    VStack {
+                        Button("Beauty / Fashion", action: {
+                            didTap1.toggle()
+                        })
+                        .frame(width: 250, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                        .background(didTap1 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                        .cornerRadius(25)
+                        
+                        Spacer()
+                            .frame(height: 15)
+                    
+                        Button("Health / Fitness / Nutrition", action: {
+                            didTap2.toggle()
+                        })
+                        .frame(width: 250, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                        .background(didTap2 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                        .cornerRadius(25)
+                        
+                        Spacer()
+                            .frame(height: 15)
+                    
+                        Button("Sports / Apparel", action: {
+                            didTap3.toggle()
+                        })
+                        .frame(width: 250, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                        .background(didTap3 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                        .cornerRadius(25)
+                        
+                        Spacer()
+                            .frame(height: 15)
+                    
+                        Button("Climate Justice / Animal Rights", action: {
+                            didTap4.toggle()
+                        })
+                        .frame(width: 250, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                        .background(didTap4 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                        .cornerRadius(25)
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        Button("Lifestyle", action: {
+                            didTap5.toggle()
+                        })
+                        .frame(width: 250, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                        .background(didTap5 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                        .cornerRadius(25)
+                        
+                        Spacer()
+                            .frame(height: 15)
+                    }
+                }
                 
                 Button("Sign Up", action: {
                     sessionManager.signUp(
@@ -438,6 +550,23 @@ struct SignUpQuestionPage: View {
                     
                     )
                     
+                    var adPref: String = ""
+                    if didTap1 {
+                        adPref.append("BF ")
+                    }
+                    if didTap2 {
+                        adPref.append("HFN ")
+                    }
+                    if didTap3 {
+                        adPref.append("SA ")
+                    }
+                    if didTap4 {
+                        adPref.append("CJAR ")
+                    }
+                    if didTap5 {
+                        adPref.append("L ")
+                    }
+                    
                     let user = User(
                         id: username,
                         firstName: firstName,
@@ -445,12 +574,13 @@ struct SignUpQuestionPage: View {
                         birthday: Temporal.Date(birthdate),
                         pronouns: pronouns,
                         location: "San Diego",
-                        adPreference: "Climate Change")
+                        adPreference: adPref)
                     
                     userMamager.create(user)
                     
                 })
-                .frame(width: 150, height: 50, alignment: .center)
+                .frame(width: 100, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4 || didTap5) ? 50 : 0))
+                .disabled(!(didTap1 || didTap2 || didTap3 || didTap4 || didTap5))
                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                 .cornerRadius(25)
@@ -465,7 +595,7 @@ struct SignUpQuestionPage: View {
 
 struct SignUpView_Previews : PreviewProvider {
     static var previews: some View {
-        SignUpPage1()
+        SignUpQuestionPage(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
     }
 }
 
