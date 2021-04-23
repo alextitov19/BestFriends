@@ -4,10 +4,10 @@ import Foundation
 
 public struct Room: Model {
   public let id: String
-  public var messages: [Message]
+  public var messages: [String]
   
   public init(id: String = UUID().uuidString,
-      messages: [Message] = []) {
+      messages: [String] = []) {
       self.id = id
       self.messages = messages
   }
