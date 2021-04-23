@@ -478,17 +478,8 @@ struct SignUpQuestionPage2: View {
             VStack {
                 VStack {
                 
-                Text("Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day,")
-                    .font(.system(size: 25))
-                    .foregroundColor(Color(#colorLiteral(red: 0.9123591852, green: 0.4802204413, blue: 1, alpha: 1)))
-                    .frame(width: 400)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 50)
-                
                 Text("We’ll Simply ‘Ask’ You")
-                    .font(.title)
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
                     .frame(width: 400)
                     .multilineTextAlignment(.center)
@@ -497,19 +488,28 @@ struct SignUpQuestionPage2: View {
                     .frame(height: 20)
 
                 Text("-    You keep 'Your Privacy’")
-                    .font(.system(size: 20))
+                    .font(.system(size: 23))
                     .foregroundColor(.white)
                     .frame(width: 320)
                     .multilineTextAlignment(.leading)
                 
                 Text("-    We keep the lights on   ")
-                    .font(.system(size: 20))
+                    .font(.system(size: 23))
                     .foregroundColor(.white)
                     .frame(width: 320)
                     .multilineTextAlignment(.leading)
+                
+                Spacer()
+                    .frame(height: 70)
+                
+                Text("Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day,")
+                    .font(.system(size: 25))
+                    .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
+                    .frame(width: 400)
+                    .multilineTextAlignment(.center)
 
-                    Spacer()
-                        .frame(height: 120)
+                Spacer()
+                    .frame(height: 120)
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
                                         Text("Ok, Sounds Good")

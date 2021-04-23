@@ -36,22 +36,46 @@ struct LandingView: View {
     var body: some View {
         NavigationView{
             ZStack {
-
-                BackgroundVideoController()
-                    .ignoresSafeArea()
                 
                 Image("purpleBackground")
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
-                    .blendMode(.screen)
+                    
             
+
+                BackgroundVideoController()
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
+                
             
                 VStack {
+                    
                     Spacer()
+                        .frame(height: 10)
+                    
+                    ForEach(stars, id: \.self) { star in
+                        GeometryReader { geometry in
+                            VStack {
+                                HStack {
+                                    Spacer()
+                                        .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
+                                    star.body
+                                }
+
+                                Spacer()
+                                    .frame(height: 50)
+                            }
+                        }
+                    }
+                    
+                    Spacer()
+                        
                     
                     HStack {
-                        Spacer()
+                        
+                        
                         
                         Button(action: {
                             //Display invite menu
@@ -112,23 +136,8 @@ struct LandingView: View {
                         
                     }
                 }
+               
                 
-                VStack {
-                    ForEach(stars, id: \.self) { star in
-                        GeometryReader { geometry in
-                            VStack {
-                                HStack {
-                                    Spacer()
-                                        .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
-                                    star.body
-                                }
-                                
-                                Spacer()
-                                    .frame(height: 50)
-                            }
-                        }
-                    }
-                }
             }
         }
         .onAppear(perform: reloadData)
