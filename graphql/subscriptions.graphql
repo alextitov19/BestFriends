@@ -1,33 +1,42 @@
 # this is an auto generated file. This will be overwritten
-subscription OnCreateMessage {
-  onCreateMessage {
+subscription OnCreateRoom {
+  onCreateRoom {
     id
-    senderName
-    senderID
-    body
-    creationDate
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }
 }
-subscription OnUpdateMessage {
-  onUpdateMessage {
+subscription OnUpdateRoom {
+  onUpdateRoom {
     id
-    senderName
-    senderID
-    body
-    creationDate
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }
 }
-subscription OnDeleteMessage {
-  onDeleteMessage {
+subscription OnDeleteRoom {
+  onDeleteRoom {
     id
-    senderName
-    senderID
-    body
-    creationDate
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }

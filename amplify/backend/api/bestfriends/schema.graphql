@@ -1,4 +1,9 @@
-type Message @model {
+type Room @model {
+  id: ID!
+  messages: [Message!]
+}
+
+type Message {
   id: ID!
   senderName: String!
   senderID: String!

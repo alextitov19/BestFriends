@@ -1,42 +1,51 @@
 # this is an auto generated file. This will be overwritten
-mutation CreateMessage(
-  $input: CreateMessageInput!
-  $condition: ModelMessageConditionInput
+mutation CreateRoom(
+  $input: CreateRoomInput!
+  $condition: ModelRoomConditionInput
 ) {
-  createMessage(input: $input, condition: $condition) {
+  createRoom(input: $input, condition: $condition) {
     id
-    senderName
-    senderID
-    body
-    creationDate
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }
 }
-mutation UpdateMessage(
-  $input: UpdateMessageInput!
-  $condition: ModelMessageConditionInput
+mutation UpdateRoom(
+  $input: UpdateRoomInput!
+  $condition: ModelRoomConditionInput
 ) {
-  updateMessage(input: $input, condition: $condition) {
+  updateRoom(input: $input, condition: $condition) {
     id
-    senderName
-    senderID
-    body
-    creationDate
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }
 }
-mutation DeleteMessage(
-  $input: DeleteMessageInput!
-  $condition: ModelMessageConditionInput
+mutation DeleteRoom(
+  $input: DeleteRoomInput!
+  $condition: ModelRoomConditionInput
 ) {
-  deleteMessage(input: $input, condition: $condition) {
+  deleteRoom(input: $input, condition: $condition) {
     id
-    senderName
-    senderID
-    body
-    creationDate
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }
