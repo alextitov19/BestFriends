@@ -13,6 +13,8 @@ final class BackgroundVideoController : UIViewControllerRepresentable {
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<BackgroundVideoController>) ->
         AVPlayerViewController {
+            
+        
             let controller = AVPlayerViewController()
             controller.showsPlaybackControls = false
             
@@ -25,11 +27,9 @@ final class BackgroundVideoController : UIViewControllerRepresentable {
             let playerItem = AVPlayerItem(asset: asset)
             let queuePlayer = AVQueuePlayer()
             // OR let queuePlayer = AVQueuePlayer(items: [playerItem]) to pass in items
-            
+
             playerLooper = AVPlayerLooper(player: queuePlayer, templateItem: playerItem)
-            queuePlayer.play()
             controller.player = queuePlayer
-                
             return controller
         }
     
