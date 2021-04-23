@@ -387,7 +387,7 @@ struct SignUpPage7: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpQuestionPage(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
+                NavigationLink(destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -402,7 +402,131 @@ struct SignUpPage7: View {
     }
 }
 
-struct SignUpQuestionPage: View {
+struct SignUpQuestionPage1: View {
+    
+    @EnvironmentObject var sessionManager: SessionManager
+
+    var firstName: String
+    var lastName: String
+    var username: String
+    var password: String
+    var email: String
+    var pronouns: String
+    var birthdate: Date
+    
+    var body: some View {
+        ZStack {
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            VStack {
+                VStack {
+                
+                    Text("help us protect")
+                        .font(.system(size: 40))
+                        .italic()
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                    
+                        
+                    
+                    Spacer()
+                        .frame(height: 80)
+                    
+                    Text("Your Privacy")
+                        .font(.system(size: 55))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+
+                    Spacer()
+                        .frame(height: 120)
+                    
+                    NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
+                                        Text("Ok, Let's Go!")
+                                            .font(.title)
+                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                            .frame(width: 200, height: 50)
+                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+
+                                    }
+                }
+            }
+        }
+    }
+}
+
+struct SignUpQuestionPage2: View {
+    
+    @EnvironmentObject var sessionManager: SessionManager
+
+    var firstName: String
+    var lastName: String
+    var username: String
+    var password: String
+    var email: String
+    var pronouns: String
+    var birthdate: Date
+    
+    var body: some View {
+        ZStack {
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            VStack {
+                VStack {
+                
+                Text("Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day,")
+                    .font(.system(size: 25))
+                    .foregroundColor(Color(#colorLiteral(red: 0.9123591852, green: 0.4802204413, blue: 1, alpha: 1)))
+                    .frame(width: 400)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 50)
+                
+                Text("We’ll Simply ‘Ask’ You")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .frame(width: 400)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 20)
+
+                Text("-    You keep 'Your Privacy’")
+                    .font(.system(size: 20))
+                    .foregroundColor(.white)
+                    .frame(width: 320)
+                    .multilineTextAlignment(.leading)
+                
+                Text("-    We keep the lights on   ")
+                    .font(.system(size: 20))
+                    .foregroundColor(.white)
+                    .frame(width: 320)
+                    .multilineTextAlignment(.leading)
+
+                    Spacer()
+                        .frame(height: 120)
+                    
+                    NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
+                                        Text("Ok, Sounds Good")
+                                            .font(.system(size: 23))
+                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                            .frame(width: 200, height: 50)
+                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+
+                                    }
+                }
+            }
+        }
+    }
+}
+
+struct SignUpQuestionPage3: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     @State var selectedOptions: [String] = []
@@ -428,59 +552,15 @@ struct SignUpQuestionPage: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             VStack {
-                VStack {
-                Text("Protecting Your Privacy is #1")
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 50)
-                
-                Text("Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day,")
-                    .font(.body)
-                    .foregroundColor(.red)
-                    .frame(width: 400)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 50)
-                
-                Text("We’ll Simply ‘Ask’ You")
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .frame(width: 400)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 20)
-
-                Text("-    You keep 'Your Privacy’")
-                    .font(.body)
-                    .foregroundColor(.white)
-                    .frame(width: 220)
-                    .multilineTextAlignment(.leading)
-                
-                Text("-    We keep the lights on   ")
-                    .font(.body)
-                    .foregroundColor(.white)
-                    .frame(width: 220)
-                    .multilineTextAlignment(.leading)
-
-                    Spacer()
-                        .frame(height: 20)
-                }
-                
-                VStack {
                 
                     Text("My Interests")
-                        .font(.title)
+                        .font(.system(size: 45))
                         .foregroundColor(.white)
-                        .frame(width: 200)
+                        .frame(width: 300)
                         .multilineTextAlignment(.center)
                 
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 100)
                 
                     
                     VStack {
@@ -493,7 +573,7 @@ struct SignUpQuestionPage: View {
                         .cornerRadius(25)
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 30)
                     
                         Button("Health / Fitness / Nutrition", action: {
                             didTap2.toggle()
@@ -504,7 +584,7 @@ struct SignUpQuestionPage: View {
                         .cornerRadius(25)
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 30)
                     
                         Button("Sports / Apparel", action: {
                             didTap3.toggle()
@@ -515,7 +595,7 @@ struct SignUpQuestionPage: View {
                         .cornerRadius(25)
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 30)
                         
                         Button("Lifestyle", action: {
                             didTap4.toggle()
@@ -526,9 +606,9 @@ struct SignUpQuestionPage: View {
                         .cornerRadius(25)
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 30)
                         
-                        Button("NGO / Non-Profit", action: {
+                        Button("NGO / Social Impact", action: {
                         })
                         .frame(width: 300, height: 50, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -536,8 +616,8 @@ struct SignUpQuestionPage: View {
                         .cornerRadius(25)
                         
                         Spacer()
-                            .frame(height: 15)
-                    }
+                            .frame(height: 100)
+                    
                 }
                 
                 Button("Sign Up", action: {
@@ -590,7 +670,14 @@ struct SignUpQuestionPage: View {
 
 struct SignUpView_Previews : PreviewProvider {
     static var previews: some View {
-        SignUpQuestionPage(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
+        SignUpQuestionPage1(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
+            .environmentObject(SessionManager())
+        
+        SignUpQuestionPage2(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
+            .environmentObject(SessionManager())
+        
+        SignUpQuestionPage3(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
+            .environmentObject(SessionManager())
     }
 }
 

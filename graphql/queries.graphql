@@ -2,13 +2,7 @@
 query GetRoom($id: ID!) {
   getRoom(id: $id) {
     id
-    messages {
-      id
-      senderName
-      senderID
-      body
-      creationDate
-    }
+    messages
     createdAt
     updatedAt
   }
@@ -21,13 +15,36 @@ query ListRooms(
   listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {
     items {
       id
-      messages {
-        id
-        senderName
-        senderID
-        body
-        creationDate
-      }
+      messages
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetMessage($id: ID!) {
+  getMessage(id: $id) {
+    id
+    senderName
+    senderID
+    body
+    creationDate
+    createdAt
+    updatedAt
+  }
+}
+query ListMessages(
+  $filter: ModelMessageFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      senderName
+      senderID
+      body
+      creationDate
       createdAt
       updatedAt
     }
