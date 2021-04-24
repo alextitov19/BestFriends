@@ -21,6 +21,7 @@ struct LandingView: View {
     @State private var inputImage: UIImage?
     @State private var friendIDs: [String] = []
     @State private var stars: [Star] = []
+    @State private var inviteMode = false
     
     var myID: String
 
@@ -44,13 +45,33 @@ struct LandingView: View {
                     
             
                 //need a replacement, doesnt work
-//                BackgroundVideoController()
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
+                BackgroundVideoController()
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
                 
                 
             
                 VStack {
+                    
+                    HStack {
+                        Spacer()
+                            .frame(height: 150)
+                        
+                        Button(action: {
+                            //Display invite menu
+                            inviteMode = true
+
+                          }) {
+                              Image("newMessageWhite")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                            
+                          }
+                        
+                        Spacer()
+                            .frame(width: 20)
+                    }
+                    .ignoresSafeArea()
                     
                     Spacer()
                         .frame(height: 10)
@@ -74,12 +95,14 @@ struct LandingView: View {
                     
                     HStack {
                         
+                        Spacer()
+                        
                         Button(action: {
                             //Display invite menu
                             self.showingActionSheet = true
 
                           }) {
-                              Image("whitePlus")
+                              Image("inviteWhite")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                             
@@ -137,7 +160,7 @@ struct LandingView: View {
                 
             }
         }
-        .onAppear(perform: reloadData)
+//        .onAppear(perform: reloadData)
     }
     
     // MARK: QR Code
