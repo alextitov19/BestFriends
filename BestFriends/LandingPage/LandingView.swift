@@ -68,44 +68,21 @@ struct LandingView: View {
                         
                         Button(action: {
                             //Display invite menu
-//                            inviteMode = true
-                            print(stars.count)
                             for index in 0..<stars.count {
                                 stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
-                                print(stars[index])
                             }
-
-
                           }) {
                               Image("newMessageWhite")
                                 .resizable()
                                 .frame(width: 30, height: 30)
-                            
                           }
                         
                         Spacer()
-                            .frame(width: 20)
+                            .frame(width: 50)
                     }
                     
                     Spacer()
                         .frame(height: 10)
-                    
-//                    ForEach(stars, id: \.self) { star in
-//                        GeometryReader { geometry in
-//                            VStack {
-//                                HStack {
-//                                    Spacer()
-//                                        .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
-//
-//                                    star.body
-//                                }
-//
-//                                Spacer()
-//                                    .frame(height: 50)
-//                            }
-//                        }
-//                    }
-//                    .opacity(inviteMode ? 0 : 1)
                     
                     ForEach(stars, id: \.id) { star in
                         GeometryReader { geometry in

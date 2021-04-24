@@ -21,6 +21,7 @@ struct Star: View {
         
             Button(action: {
                 isSelected.toggle()
+                print("Toggled")
             }) {
                   image
                     .resizable()
