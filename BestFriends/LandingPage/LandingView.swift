@@ -71,9 +71,7 @@ struct LandingView: View {
 //                            inviteMode = true
                             print(stars.count)
                             for index in 0..<stars.count {
-                                var newStar = Star(id: stars[index].id, name: stars[index].name)
-                                newStar.imageName = "starWhite"
-                                stars[index] = newStar
+                                stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
                                 print(stars[index])
                             }
 
@@ -114,13 +112,13 @@ struct LandingView: View {
                                                     VStack {
                                                         HStack {
                                                             Spacer()
-                                                                .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
+                                                                .frame(width: 100)
                         
                                                             star
                                                         }
                         
                                                         Spacer()
-                                                            .frame(height: 50)
+                                                            .frame(height: 20)
                                                     }
                                                 }
                     }

@@ -11,7 +11,7 @@ struct Star: View {
     var id: String
     var name: String
     @State var isSelected = false
-    var imageName = "starBig"
+    var image = Image(uiImage: UIImage(named: "starBig")!)
     
     var body: some View {
         VStack {
@@ -22,9 +22,10 @@ struct Star: View {
             Button(action: {
                 isSelected.toggle()
             }) {
-                  Image(imageName)
+                  image
                     .resizable()
-                    .frame(width: 80, height: 70)
+                    .frame(width: 80, height: 80, alignment: .center)
+                    .scaledToFill()
                     .blendMode(.screen)
                     
               }
