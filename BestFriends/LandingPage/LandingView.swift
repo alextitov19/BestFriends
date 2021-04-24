@@ -66,12 +66,7 @@ struct LandingView: View {
                     HStack {
                         Spacer()
                         
-                        Button(action: {
-                            //Display invite menu
-                            for index in 0..<stars.count {
-                                stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
-                            }
-                          }) {
+                        Button(action: { inviteClicked() }) {
                               Image("newMessageWhite")
                                 .resizable()
                                 .frame(width: 30, height: 30)
@@ -272,7 +267,19 @@ struct LandingView: View {
     }
     
 
-   
+    private func inviteClicked() {
+        for index in 0..<stars.count {
+            stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            inviteSelectedFriends()
+        }
+    }
+    
+    private func inviteSelectedFriends() {
+        print("Inviting selected friends")
+    }
     
     
     
