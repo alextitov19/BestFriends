@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct Star: View {
-    let id: String
-    let name: String
+    var id: String
+    var name: String
     @State var isSelected = false
-    @State var imageName = "starBig"
+    var imageName = "starBig"
     
     var body: some View {
         VStack {
@@ -25,16 +25,9 @@ struct Star: View {
                   Image(imageName)
                     .resizable()
                     .frame(width: 80, height: 70)
+                    .blendMode(.screen)
                     
               }
-        }
-    }
-    
-    func changeBackground(colored: Bool) {
-        if colored {
-            imageName = "starBig"
-        } else {
-            imageName = "starWhite"
         }
     }
    

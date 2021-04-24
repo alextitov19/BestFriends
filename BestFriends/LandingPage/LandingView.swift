@@ -22,6 +22,7 @@ struct LandingView: View {
     @State private var friendIDs: [String] = []
     @State private var stars: [Star] = []
     @State private var starButtons: [UIButton] = []
+    @State private var titleText = ""
 //    @State private var inviteMode = false
     
     @State private var selectedFriends = []
@@ -32,6 +33,7 @@ struct LandingView: View {
     @EnvironmentObject var sessionManager: SessionManager
      
     private func reloadData() {
+        print("Reloading...")
         getFriends()
         
     }
@@ -40,6 +42,7 @@ struct LandingView: View {
 
     var body: some View {
         NavigationView{
+            
             ZStack {
                 
                 Image("purpleBackground")
@@ -56,6 +59,9 @@ struct LandingView: View {
                 
             
                 VStack {
+                    Text(titleText)
+                        .foregroundColor(.white)
+                        .font(.title)
                     
                     HStack {
                         Spacer()
@@ -63,9 +69,14 @@ struct LandingView: View {
                         Button(action: {
                             //Display invite menu
 //                            inviteMode = true
-                            for star in stars {
-                                star.changeBackground(colored: false)
+                            print(stars.count)
+                            for index in 0..<stars.count {
+                                var newStar = Star(id: stars[index].id, name: stars[index].name)
+                                newStar.imageName = "starWhite"
+                                stars[index] = newStar
+                                print(stars[index])
                             }
+
 
                           }) {
                               Image("newMessageWhite")
@@ -105,7 +116,7 @@ struct LandingView: View {
                                                             Spacer()
                                                                 .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
                         
-                                                            star.body
+                                                            star
                                                         }
                         
                                                         Spacer()
@@ -179,9 +190,12 @@ struct LandingView: View {
                         
                     }
                 }
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
                
                 
             }
+            
         }
         .onAppear(perform: reloadData)
     }
@@ -274,7 +288,7 @@ struct LandingView: View {
             guard let initial = user.lastName.first else { return }
             var name = user.firstName + " "
             name.append(initial)
-            let star = Star(id: user.id, name: name)
+            var star = Star(id: user.id, name: name)
             print("Successfully added a star for user: ", user.id)
             stars.append(star)
             
