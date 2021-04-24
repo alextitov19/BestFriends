@@ -26,6 +26,8 @@ struct LandingView: View {
 //    @State private var inviteMode = false
     
     @State private var selectedFriends = []
+    
+    @State var idsToInvite: [String] = []
 
     
     var myID: String
@@ -279,6 +281,13 @@ struct LandingView: View {
     
     private func inviteSelectedFriends() {
         print("Inviting selected friends")
+        var idsToInvite: [String] = []
+        for star in stars {
+            if star.isSelected == true {
+                idsToInvite.append(star.id)
+            }
+        }
+        print(idsToInvite)
     }
     
     
