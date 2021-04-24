@@ -21,7 +21,11 @@ struct LandingView: View {
     @State private var inputImage: UIImage?
     @State private var friendIDs: [String] = []
     @State private var stars: [Star] = []
-    @State private var inviteMode = false
+    @State private var starButtons: [UIButton] = []
+//    @State private var inviteMode = false
+    
+    @State private var selectedFriends = []
+
     
     var myID: String
 
@@ -55,11 +59,13 @@ struct LandingView: View {
                     
                     HStack {
                         Spacer()
-                            .frame(height: 150)
                         
                         Button(action: {
                             //Display invite menu
-                            inviteMode = true
+//                            inviteMode = true
+                            for star in stars {
+                                star.changeBackground(colored: false)
+                            }
 
                           }) {
                               Image("newMessageWhite")
@@ -71,24 +77,29 @@ struct LandingView: View {
                         Spacer()
                             .frame(width: 20)
                     }
-                    .ignoresSafeArea()
                     
                     Spacer()
                         .frame(height: 10)
                     
-                    ForEach(stars, id: \.self) { star in
-                        GeometryReader { geometry in
-                            VStack {
-                                HStack {
-                                    Spacer()
-                                        .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
-                                    star.body
-                                }
-
-                                Spacer()
-                                    .frame(height: 50)
-                            }
-                        }
+//                    ForEach(stars, id: \.self) { star in
+//                        GeometryReader { geometry in
+//                            VStack {
+//                                HStack {
+//                                    Spacer()
+//                                        .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
+//
+//                                    star.body
+//                                }
+//
+//                                Spacer()
+//                                    .frame(height: 50)
+//                            }
+//                        }
+//                    }
+//                    .opacity(inviteMode ? 0 : 1)
+                    
+                    ForEach(stars, id: \.id) { star in
+                       star
                     }
                     
                     Spacer()
@@ -160,7 +171,7 @@ struct LandingView: View {
                 
             }
         }
-//        .onAppear(perform: reloadData)
+        .onAppear(perform: reloadData)
     }
     
     // MARK: QR Code
@@ -254,11 +265,13 @@ struct LandingView: View {
             let star = Star(id: user.id, name: name)
             print("Successfully added a star for user: ", user.id)
             stars.append(star)
+            
+            
         }
     }
     
- 
-    
+
+   
     
     
     

@@ -7,23 +7,34 @@
 
 import SwiftUI
 
-struct Star: Hashable {
+struct Star: View {
     let id: String
     let name: String
+    @State var isSelected = false
+    @State var imageName = "starBig"
     
     var body: some View {
         VStack {
             Text(name)
                 .font(.headline)
                 .foregroundColor(.white)
-            
-//            Spacer()
-//                .frame(height: 10)
-            
-            Image("starBig")
-                .resizable()
-                .scaledToFill()
-                .frame(width: 70, height: 70)
+        
+            let button = Button(action: {
+                isSelected.toggle()
+            }) {
+                  Image(imageName)
+                    .resizable()
+                    .frame(width: 30, height: 30)
+              }
         }
     }
+    
+    func changeBackground(colored: Bool) {
+        if colored {
+            imageName = "starBig"
+        } else {
+            imageName = "starWhite"
+        }
+    }
+   
 }
