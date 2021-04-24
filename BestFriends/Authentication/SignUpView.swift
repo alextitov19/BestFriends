@@ -423,7 +423,7 @@ struct SignUpQuestionPage1: View {
             VStack {
                 VStack {
                 
-                    Text("help us protect")
+                    Text("Help us protect")
                         .font(.system(size: 40))
                         .italic()
                         .foregroundColor(.white)
@@ -502,7 +502,7 @@ struct SignUpQuestionPage2: View {
                 Spacer()
                     .frame(height: 70)
                 
-                Text("Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day,")
+                Text("Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day.")
                     .font(.system(size: 25))
                     .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
                     .frame(width: 400)
