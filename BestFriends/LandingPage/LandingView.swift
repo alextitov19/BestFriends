@@ -99,7 +99,19 @@ struct LandingView: View {
 //                    .opacity(inviteMode ? 0 : 1)
                     
                     ForEach(stars, id: \.id) { star in
-                       star
+                        GeometryReader { geometry in
+                                                    VStack {
+                                                        HStack {
+                                                            Spacer()
+                                                                .frame(width: geometry.size.width * CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
+                        
+                                                            star.body
+                                                        }
+                        
+                                                        Spacer()
+                                                            .frame(height: 50)
+                                                    }
+                                                }
                     }
                     
                     Spacer()

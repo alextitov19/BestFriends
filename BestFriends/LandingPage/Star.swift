@@ -19,12 +19,13 @@ struct Star: View {
                 .font(.headline)
                 .foregroundColor(.white)
         
-            let button = Button(action: {
+            Button(action: {
                 isSelected.toggle()
             }) {
                   Image(imageName)
                     .resizable()
-                    .frame(width: 30, height: 30)
+                    .frame(width: 80, height: 70)
+                    
               }
         }
     }
