@@ -283,9 +283,7 @@ struct LandingView: View {
         print("Inviting selected friends")
         var idsToInvite: [String] = []
         for star in stars {
-            if star.isSelected == true {
                 idsToInvite.append(star.id)
-            }
         }
         print(idsToInvite)
     }
