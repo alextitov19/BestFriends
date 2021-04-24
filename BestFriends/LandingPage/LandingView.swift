@@ -43,10 +43,10 @@ struct LandingView: View {
                     .ignoresSafeArea()
                     
             
-
-                BackgroundVideoController()
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+                //need a replacement, doesnt work
+//                BackgroundVideoController()
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
                 
                 
             
@@ -70,14 +70,9 @@ struct LandingView: View {
                         }
                     }
                     
-                    
-                    
                     Spacer()
-                        
                     
                     HStack {
-                        
-                        
                         
                         Button(action: {
                             //Display invite menu
