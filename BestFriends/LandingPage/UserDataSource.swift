@@ -45,56 +45,40 @@ struct UserDataSource {
             
     }
     
+    func updateUser(user: User) {
+        Amplify.API.mutate(request: .update(user)) { event in  //update user
+                switch event {
+                case .success(let result):
+                    switch result {
+                    case .success(let user):
+                        print("Successfully updated user: \(user)")
+                    case .failure(let error):
+                        print("Got failed result with \(error.errorDescription)")
+                    }
+                case .failure(let error):
+                    print("Got failed event with error \(error)")
+                }
+            }
+    }
+    
     func addFriend(user: User) {
         //add myself as a friend of user
         guard let myID = Amplify.Auth.getCurrentUser()?.username else { return } // get my id
-        if ((user.friends?.contains(myID)) == true) { //if that user already contains my id in their list of friend ids we abort
-            return
-        }
-        
-        var updatedUser = user
-        
-        updatedUser.friends?.append(myID) // append our id to user's friends list of ids
-        
-        print("Preparing to update 1 ----------------------------")
-
-            Amplify.API.mutate(request: .update(updatedUser)) { event in  //update user
-                    switch event {
-                    case .success(let result):
-                        switch result {
-                        case .success(let updatedUser):
-                            print("Successfully updated user: \(updatedUser)")
-                        case .failure(let error):
-                            print("Got failed result with \(error.errorDescription)")
-                        }
-                    case .failure(let error):
-                        print("Got failed event with error \(error)")
-                    }
-                }
-        
-        
+        if ((user.friends?.contains(myID)) == true) { return }
+        var friendUser = user
+        friendUser.friends?.append(myID) // append our id to user's friends list of ids
+        print("Preparing to update FriendUser ----------------------------")
+         updateUser(user: friendUser)
+    
         var myUser = getUser(id: myID) //add user as a friend of mine
-
         myUser.friends?.append(user.id)         // appends other user's id to our own friend array of ids
-
-
-
-            Amplify.API.mutate(request: .update(myUser)) { event in  //update my user
-                    switch event {
-                    case .success(let result):
-                        switch result {
-                        case .success(let myUser):
-                            print("Successfully updated my user: \(myUser)")
-                        case .failure(let error):
-                            print("Got failed result with \(error.errorDescription)")
-                        }
-                    case .failure(let error):
-                        print("Got failed event with error \(error)")
-                    }
-                }
-        
-        
-
+        updateUser(user: myUser)
+    }
+    
+    func addRoom(userID: String, roomID: String) {
+        var user = getUser(id: userID)
+        user.rooms?.append(roomID)
+        updateUser(user: user)
     }
     
     

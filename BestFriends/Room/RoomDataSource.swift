@@ -11,15 +11,15 @@ import Foundation
 class RoomDataSource: ObservableObject {
     @Published var rooms = [Room]()
 
-    func createRoom(_ message: Message) {
-        Amplify.API.mutate(request: .create(message)) { [weak self] mutationResult in
+    func createRoom(room: Room) {
+        Amplify.API.mutate(request: .create(room)) { [weak self] mutationResult in
             switch mutationResult {
 
             case .success(let creationResult):
 
                 switch creationResult {
                 case .success:
-                    print("Successfully created message")
+                    print("Successfully created room")
 
                 case .failure(let error):
                     print(error)

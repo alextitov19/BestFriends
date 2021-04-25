@@ -286,6 +286,13 @@ struct LandingView: View {
                 idsToInvite.append(star.id)
         }
         print(idsToInvite)
+        
+        let room = Room()
+        print("RoomID: ", room.id)
+        RoomDataSource().createRoom(room: room)
+        for id in idsToInvite {
+            UserDataSource().addRoom(userID: id, roomID: room.id)
+        }
     }
     
     
