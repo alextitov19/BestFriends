@@ -28,6 +28,9 @@
 		7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD1926252B1300E6FA9E /* Backend.swift */; };
 		7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */; };
 		7AA200FD2635C6EF00C9F00C /* RoomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */; };
+		7AA2010F2635D21100C9F00C /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2010E2635D21100C9F00C /* RoomView.swift */; };
+		7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201102635D2E100C9F00C /* RoomRow.swift */; };
+		7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201122635D5F500C9F00C /* Room+Extensions.swift */; };
 		7AC0DA95262BAE09007FC643 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC0DA90262BAE09007FC643 /* AmplifyModels.swift */; };
 		7AC0DA96262BAE09007FC643 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC0DA91262BAE09007FC643 /* Message.swift */; };
 		7AC0DA97262BAE09007FC643 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC0DA92262BAE09007FC643 /* User+Schema.swift */; };
@@ -74,6 +77,9 @@
 		7A71BD1926252B1300E6FA9E /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
 		7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImageView.swift; sourceTree = "<group>"; };
 		7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDataSource.swift; sourceTree = "<group>"; };
+		7AA2010E2635D21100C9F00C /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
+		7AA201102635D2E100C9F00C /* RoomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRow.swift; sourceTree = "<group>"; };
+		7AA201122635D5F500C9F00C /* Room+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+Extensions.swift"; sourceTree = "<group>"; };
 		7AC0DA90262BAE09007FC643 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		7AC0DA91262BAE09007FC643 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7AC0DA92262BAE09007FC643 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
@@ -202,6 +208,9 @@
 			isa = PBXGroup;
 			children = (
 				7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */,
+				7AA201122635D5F500C9F00C /* Room+Extensions.swift */,
+				7AA201102635D2E100C9F00C /* RoomRow.swift */,
+				7AA2010E2635D21100C9F00C /* RoomView.swift */,
 			);
 			path = Room;
 			sourceTree = "<group>";
@@ -411,8 +420,10 @@
 				7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */,
 				7A6A4CDD262B68A600561D87 /* Message+Extensions.swift in Sources */,
 				7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */,
+				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AC0DA96262BAE09007FC643 /* Message.swift in Sources */,
 				7AC0DA99262BAE09007FC643 /* Message+Schema.swift in Sources */,
+				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */,
 				7ADC62A32627AA7300791689 /* TutorialCode.swift in Sources */,
@@ -433,6 +444,7 @@
 				7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */,
 				7AF6973F2630EE1900CF49CC /* Star.swift in Sources */,
 				7AC0DA98262BAE09007FC643 /* User.swift in Sources */,
+				7AA2010F2635D21100C9F00C /* RoomView.swift in Sources */,
 				5CC0808D963A49AE969F958B /* Room.swift in Sources */,
 				31843DD5A561448D8998CA30 /* Room+Schema.swift in Sources */,
 			);

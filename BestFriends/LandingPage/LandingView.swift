@@ -130,15 +130,15 @@ struct LandingView: View {
 
                         Spacer()
                         
-//                        NavigationLink(destination: MessagesView()) {
-//                               Image("messageIconWhite")
-//                                .resizable()
-//                                .frame(width: 40, height: 40)
-//                                .scaledToFill()
-//                           }
-//                        
-//                        
-//                        Spacer()
+                        NavigationLink(destination: RoomView()) {
+                               Image("messageIconWhite")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                           }
+                        
+                        
+                        Spacer()
 //                        
 //                        NavigationLink(destination: MessagesView()) {
 //                               Image("whiteSmiley")
@@ -290,6 +290,8 @@ struct LandingView: View {
         let room = Room()
         print("RoomID: ", room.id)
         RoomDataSource().createRoom(room: room)
+        guard let myID = Amplify.Auth.getCurrentUser()?.username else { return }
+        UserDataSource().addRoom(userID: myID, roomID: room.id)
         for id in idsToInvite {
             UserDataSource().addRoom(userID: id, roomID: room.id)
         }
