@@ -5,7 +5,13 @@ mutation CreateRoom(
 ) {
   createRoom(input: $input, condition: $condition) {
     id
-    messages
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }
@@ -16,7 +22,13 @@ mutation UpdateRoom(
 ) {
   updateRoom(input: $input, condition: $condition) {
     id
-    messages
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }
@@ -27,49 +39,13 @@ mutation DeleteRoom(
 ) {
   deleteRoom(input: $input, condition: $condition) {
     id
-    messages
-    createdAt
-    updatedAt
-  }
-}
-mutation CreateMessage(
-  $input: CreateMessageInput!
-  $condition: ModelMessageConditionInput
-) {
-  createMessage(input: $input, condition: $condition) {
-    id
-    senderName
-    senderID
-    body
-    creationDate
-    createdAt
-    updatedAt
-  }
-}
-mutation UpdateMessage(
-  $input: UpdateMessageInput!
-  $condition: ModelMessageConditionInput
-) {
-  updateMessage(input: $input, condition: $condition) {
-    id
-    senderName
-    senderID
-    body
-    creationDate
-    createdAt
-    updatedAt
-  }
-}
-mutation DeleteMessage(
-  $input: DeleteMessageInput!
-  $condition: ModelMessageConditionInput
-) {
-  deleteMessage(input: $input, condition: $condition) {
-    id
-    senderName
-    senderID
-    body
-    creationDate
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }

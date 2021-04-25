@@ -19,7 +19,7 @@ extension Room {
     
     model.fields(
       .id(),
-      .field(room.messages, is: .required, ofType: .embeddedCollection(of: String.self))
+      .field(room.messages, is: .required, ofType: .embeddedCollection(of: Message.self))
     )
     }
 }

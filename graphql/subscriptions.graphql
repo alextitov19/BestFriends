@@ -2,7 +2,13 @@
 subscription OnCreateRoom {
   onCreateRoom {
     id
-    messages
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }
@@ -10,7 +16,13 @@ subscription OnCreateRoom {
 subscription OnUpdateRoom {
   onUpdateRoom {
     id
-    messages
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }
@@ -18,40 +30,13 @@ subscription OnUpdateRoom {
 subscription OnDeleteRoom {
   onDeleteRoom {
     id
-    messages
-    createdAt
-    updatedAt
-  }
-}
-subscription OnCreateMessage {
-  onCreateMessage {
-    id
-    senderName
-    senderID
-    body
-    creationDate
-    createdAt
-    updatedAt
-  }
-}
-subscription OnUpdateMessage {
-  onUpdateMessage {
-    id
-    senderName
-    senderID
-    body
-    creationDate
-    createdAt
-    updatedAt
-  }
-}
-subscription OnDeleteMessage {
-  onDeleteMessage {
-    id
-    senderName
-    senderID
-    body
-    creationDate
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+    }
     createdAt
     updatedAt
   }
