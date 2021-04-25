@@ -1,86 +1,86 @@
+////
+////  DataSource.swift
+////  BestFriends
+////
+////  Created by Alex Titov on 4/17/21.
+////
 //
-//  DataSource.swift
-//  BestFriends
+//import Amplify
+//import Foundation
 //
-//  Created by Alex Titov on 4/17/21.
+//class MessageDataSource: ObservableObject {
+//    @Published var messages = [Message]()
+//    
+//    func send(_ message: Message) {
+//        Amplify.API.mutate(request: .create(message)) { [weak self] mutationResult in
+//            switch mutationResult {
 //
-
-import Amplify
-import Foundation
-
-class MessageDataSource: ObservableObject {
-    @Published var messages = [Message]()
-    
-    func send(_ message: Message) {
-        Amplify.API.mutate(request: .create(message)) { [weak self] mutationResult in
-            switch mutationResult {
-
-            case .success(let creationResult):
-                
-                switch creationResult {
-                case .success:
-                    print("Successfully created message")
-                    
-                case .failure(let error):
-                    print(error)
-                }
-                
-            case .failure(let apiError):
-                print(apiError)
-            }
-        }
-    }
-    
-    func getMessages() {
-        Amplify.API.query(request: .list(Message.self)) { [weak self] result in
-            do {
-                let messages = try result.get().get()
-                
-                DispatchQueue.main.async {
-                    self?.messages = messages.sorted(by: { $0.creationDate < $1.creationDate})
-                }
-            } catch {
-                print("Error getting messages: ", error)
-            }
-        }
-    }
-    
-    
-    func delete(_ message: Message) {
-        Amplify.API.mutate(request: .delete(message)) { result in
-            print(result)
-        }
-    }
-    
-    
-    var subscription: GraphQLSubscriptionOperation<Message>?
-    
-    func observeMessages() {
-        subscription = Amplify.API.subscribe(
-            request: .subscription(of: Message.self, type: .onCreate),
-            
-            valueListener: { [weak self] subscriptionEvent in
-                switch subscriptionEvent {
-                case .connection(let connectionState):
-                    print("connection state:", connectionState)
-                    
-                case .data(let dataResult):
-                    do {
-                        let message = try dataResult.get()
-                        
-                        DispatchQueue.main.async {
-                            self?.messages.append(message)
-                        }
-                    } catch {
-                        print(error)
-                    }
-                }
-             },
-             completionListener: { completion in
-                print(completion)
-             }
-        )
-    }
-    
-   
-}
+//            case .success(let creationResult):
+//                
+//                switch creationResult {
+//                case .success:
+//                    print("Successfully created message")
+//                    
+//                case .failure(let error):
+//                    print(error)
+//                }
+//                
+//            case .failure(let apiError):
+//                print(apiError)
+//            }
+//        }
+//    }
+//    
+//    func getMessages() {
+//        Amplify.API.query(request: .list(Message.self)) { [weak self] result in
+//            do {
+//                let messages = try result.get().get()
+//                
+//                DispatchQueue.main.async {
+//                    self?.messages = messages.sorted(by: { $0.creationDate < $1.creationDate})
+//                }
+//            } catch {
+//                print("Error getting messages: ", error)
+//            }
+//        }
+//    }
+//    
+//    
+//    func delete(_ message: Message) {
+//        Amplify.API.mutate(request: .delete(message)) { result in
+//            print(result)
+//        }
+//    }
+//    
+//    
+//    var subscription: GraphQLSubscriptionOperation<Message>?
+//    
+//    func observeMessages() {
+//        subscription = Amplify.API.subscribe(
+//            request: .subscription(of: Message.self, type: .onCreate),
+//            
+//            valueListener: { [weak self] subscriptionEvent in
+//                switch subscriptionEvent {
+//                case .connection(let connectionState):
+//                    print("connection state:", connectionState)
+//                    
+//                case .data(let dataResult):
+//                    do {
+//                        let message = try dataResult.get()
+//                        
+//                        DispatchQueue.main.async {
+//                            self?.messages.append(message)
+//                        }
+//                    } catch {
+//                        print(error)
+//                    }
+//                }
+//             },
+//             completionListener: { completion in
+//                print(completion)
+//             }
+//        )
+//    }
+//    
+//   
+//}
