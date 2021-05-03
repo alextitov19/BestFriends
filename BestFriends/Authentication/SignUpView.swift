@@ -8,93 +8,93 @@
 import SwiftUI
 import Amplify
 
-struct SignUpView: View {
-    
-    @EnvironmentObject var sessionManager: SessionManager
-
-    @State var username = ""
-    @State var email = ""
-    @State var password = ""
-
-    var body: some View {
-        ZStack {
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-            
-            VStack {
-                Spacer()
-                    .frame(height: 75)
-                
-                Text("Sign Up")
-                    .font(.largeTitle)
-                    .bold()
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-
-                Spacer()
-                
-                VStack {
-                    TextField("Username", text: $username)
-                        .frame(width: 200, height: 50, alignment: .center)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .cornerRadius(25)
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    
-
-                    TextField("Email", text: $email)
-                        .frame(width: 200, height: 50, alignment: .center)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .cornerRadius(25)
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    
-
-                    SecureField("Password", text: $password)
-                        .frame(width: 200, height: 50, alignment: .center)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .cornerRadius(25)
-                    
-                    Spacer()
-                        .frame(height: 75)
-                }
-                
-                Button("Sign Up", action: {
-                    sessionManager.signUp(
-                        username: username,
-                        email: email,
-                        password: password
-                    
-                    )
-                })
-                .frame(width: 150, height: 50, alignment: .center)
-                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                .cornerRadius(25)
-                
-                Spacer()
-                
-                Button("Already have an account? Log in.", action: sessionManager.showLogin)
-                    .frame(width: 300, height: 50)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 25)
-                            .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
-                            )
-            }
-            .padding()
-        }
-    }
-}
+//struct SignUpView: View {
+//
+//    @EnvironmentObject var sessionManager: SessionManager
+//
+//    @State var username = ""
+//    @State var email = ""
+//    @State var password = ""
+//
+//    var body: some View {
+//        ZStack {
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
+//            VStack {
+//                Spacer()
+//                    .frame(height: 75)
+//
+//                Text("Sign Up")
+//                    .font(.largeTitle)
+//                    .bold()
+//                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//
+//                Spacer()
+//
+//                VStack {
+//                    TextField("Username", text: $username)
+//                        .frame(width: 200, height: 50, alignment: .center)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+//                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                        .cornerRadius(25)
+//
+//                    Spacer()
+//                        .frame(height: 50)
+//
+//
+//                    TextField("Email", text: $email)
+//                        .frame(width: 200, height: 50, alignment: .center)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+//                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                        .cornerRadius(25)
+//
+//                    Spacer()
+//                        .frame(height: 50)
+//
+//
+//                    SecureField("Password", text: $password)
+//                        .frame(width: 200, height: 50, alignment: .center)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+//                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                        .cornerRadius(25)
+//
+//                    Spacer()
+//                        .frame(height: 75)
+//                }
+//
+//                Button("Sign Up", action: {
+//                    sessionManager.signUp(
+//                        username: username,
+//                        email: email,
+//                        password: password
+//
+//                    )
+//                })
+//                .frame(width: 150, height: 50, alignment: .center)
+//                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+//                .cornerRadius(25)
+//
+//                Spacer()
+//
+//                Button("Already have an account? Log in.", action: sessionManager.showLogin)
+//                    .frame(width: 300, height: 50)
+//                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                    .overlay(
+//                        RoundedRectangle(cornerRadius: 25)
+//                            .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+//                            )
+//            }
+//            .padding()
+//        }
+//    }
+//}
 
 
 
@@ -113,6 +113,14 @@ struct SignUpPage1: View {
                     .scaledToFill()
             
                 VStack {
+                    Text("Header")
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 50)
+                    
                     TextField("Enter your first name", text: $firstName)
                         .multilineTextAlignment(.center)
                         .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -134,6 +142,15 @@ struct SignUpPage1: View {
                                             .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                             .cornerRadius(25)
                                     }
+                    
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    Text("Footer")
+                        .font(.system(size: 30))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
                 }
             }
         }
@@ -670,6 +687,29 @@ struct SignUpQuestionPage3: View {
 
 struct SignUpView_Previews : PreviewProvider {
     static var previews: some View {
+        
+        SignUpPage1()
+            .environmentObject(SessionManager())
+
+        SignUpPage2(firstName: " ")
+            .environmentObject(SessionManager())
+
+        SignUpPage3(firstName: "", lastName: "")
+            .environmentObject(SessionManager())
+
+        SignUpPage4(firstName: "", lastName: "", username: "")
+            .environmentObject(SessionManager())
+
+        SignUpPage5(firstName: "", lastName: "", username: "", password: "")
+            .environmentObject(SessionManager())
+
+        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "")
+            .environmentObject(SessionManager())
+
+        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
+            .environmentObject(SessionManager())
+
+        
         SignUpQuestionPage1(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
             .environmentObject(SessionManager())
         
