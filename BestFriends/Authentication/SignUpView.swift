@@ -119,7 +119,7 @@ struct SignUpPage1: View {
                     
                     Image("Penguin2")
                         .resizable()
-                        .frame(width: 135, height: 135)
+                        .frame(width: 225, height:225)
                         .scaledToFill()
                     
                     Spacer()
@@ -266,7 +266,7 @@ struct SignUpPage3: View {
                 
                 Image("Penguin1")
                     .resizable()
-                    .frame(width: 135, height: 135)
+                    .frame(width: 200, height: 200)
                     .scaledToFill()
                 
                 Spacer()
@@ -342,33 +342,75 @@ struct SignUpPage4: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+            
             VStack {
-                SecureField("Enter your password", text: $password)
-                    .multilineTextAlignment(.center)
-                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .frame(width: 300, height: 40, alignment: .center)
-                    .font(.title)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .cornerRadius(20)
-                    .autocapitalization(.none)
-                    .disableAutocorrection(true)
+                Spacer()
+                
+                Image("Penguin Sticker 24")
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    .scaledToFill()
+                
+                Spacer()
+                    .frame(height: 125)
+                
+                VStack {
+                    Text("Now, let's create a password")
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    SecureField("Enter password", text: $password)
+                        .multilineTextAlignment(.center)
+                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 300, height: 40, alignment: .center)
+                        .font(.title)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .cornerRadius(20)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    NavigationLink(destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password).environmentObject(sessionManager)) {
+                                        Text("Next")
+                                            .font(.title)
+                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                            .frame(width: 200, height: 50)
+                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                       
+                                    }
+                    
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    Text("Nice!")
+                        .italic()
+                        .font(.system(size: 25))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+
+                }
 
                 Spacer()
-                    .frame(height: 50)
-                
-                NavigationLink(destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password).environmentObject(sessionManager)) {
-                                    Text("Next")
-                                        .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 200, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                                }
-                
+                    .frame(height: 125)
+
             }
         }
     }
 }
+
+
+
+                    
+                    
+                    
 
 struct SignUpPage5: View {
     
