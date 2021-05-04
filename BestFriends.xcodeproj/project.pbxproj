@@ -34,7 +34,6 @@
 		7A71BD1726252B0300E6FA9E /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD1526252B0200E6FA9E /* amplifyconfiguration.json */; };
 		7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD1926252B1300E6FA9E /* Backend.swift */; };
 		7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */; };
-		7A9617B62640C16B003D1172 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9617B42640C16B003D1172 /* Main.storyboard */; };
 		7AA200FD2635C6EF00C9F00C /* RoomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */; };
 		7AA2010F2635D21100C9F00C /* RoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2010E2635D21100C9F00C /* RoomView.swift */; };
 		7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201102635D2E100C9F00C /* RoomRow.swift */; };
@@ -85,7 +84,6 @@
 		7A71BD1526252B0200E6FA9E /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		7A71BD1926252B1300E6FA9E /* Backend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backend.swift; sourceTree = "<group>"; };
 		7A71BD5026255BF900E6FA9E /* CaptureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImageView.swift; sourceTree = "<group>"; };
-		7A9617B52640C16B003D1172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDataSource.swift; sourceTree = "<group>"; };
 		7AA2010E2635D21100C9F00C /* RoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomView.swift; sourceTree = "<group>"; };
 		7AA201102635D2E100C9F00C /* RoomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRow.swift; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 		7A9617A32640C148003D1172 /* InfoPages */ = {
 			isa = PBXGroup;
 			children = (
-				7A9617B42640C16B003D1172 /* Main.storyboard */,
 			);
 			name = InfoPages;
 			path = ../../RobLearningSwift/RobPlayground/InfoPages;
@@ -374,7 +371,6 @@
 				7A71BD1626252B0300E6FA9E /* awsconfiguration.json in Resources */,
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				7A71BD1726252B0300E6FA9E /* amplifyconfiguration.json in Resources */,
-				7A9617B62640C16B003D1172 /* Main.storyboard in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */,
@@ -472,17 +468,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		7A9617B42640C16B003D1172 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A9617B52640C16B003D1172 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7A71BD082625292B00E6FA9E /* Debug */ = {
