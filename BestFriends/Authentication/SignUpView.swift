@@ -113,7 +113,14 @@ struct SignUpPage1: View {
                     .scaledToFill()
             
                 VStack {
-                    Text("Header")
+                    
+                    Image("pegnuin")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .scaledToFill()
+                    
+                    
+                    Text("Hi, what is your first name?")
                         .font(.system(size: 30))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -121,11 +128,12 @@ struct SignUpPage1: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    TextField("Enter your first name", text: $firstName)
+                    TextField("First name", text: $firstName)
                         .multilineTextAlignment(.center)
                         .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .frame(width: 300, height: 40, alignment: .center)
                         .font(.title)
+                        
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .cornerRadius(20)
                         .disableAutocorrection(true)
@@ -146,9 +154,11 @@ struct SignUpPage1: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("Footer")
-                        .font(.system(size: 30))
+                    Text("Protecting 'Your Privacy' is #1")
+                        .italic()
+                        .font(.system(size: 25))
                         .fontWeight(.ultraLight)
+                        
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                 }
@@ -171,7 +181,7 @@ struct SignUpPage2: View {
                 .scaledToFill()
             
             VStack {
-                TextField("Enter your last name", text: $lastName)
+                TextField("Last name", text: $lastName)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 300, height: 40, alignment: .center)
@@ -193,6 +203,17 @@ struct SignUpPage2: View {
                                         .cornerRadius(25)
                                 }
                 
+                Spacer()
+                    .frame(height: 50)
+                
+                Text("Nope, we never sell or share your info!")
+                    .italic()
+                    .font(.system(size: 25))
+                    .fontWeight(.ultraLight)
+                    
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+            
             }
         }
     }
@@ -209,12 +230,21 @@ struct SignUpPage3: View {
     
     var body: some View {
         ZStack {
+            
+            
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             VStack {
-                TextField("Enter your username", text: $username)
+                Text("ok, let's createa a username")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 50)
+                TextField("Username", text: $username)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 300, height: 40, alignment: .center)
