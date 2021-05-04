@@ -130,7 +130,7 @@ struct LandingView: View {
 
                         Spacer()
                         
-                        NavigationLink(destination: RoomView()) {
+                        NavigationLink(destination: RoomsView()) {
                                Image("messageIconWhite")
                                 .resizable()
                                 .frame(width: 40, height: 40)
