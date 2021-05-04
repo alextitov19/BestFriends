@@ -11,16 +11,13 @@ import Amplify
 
 struct MessageRoomView: View {
     
-    var messageDataSource: MessageDataSource
+    @ObservedObject var messageDataSource: MessageDataSource
     var user: User
-    var room: Room
     
     init(room: Room) {
-        self.room = room
         let id = Amplify.Auth.getCurrentUser()?.username ?? "Failed getting id"
         self.user = UserDataSource().getUser(id: id)
-        
-        self.messageDataSource = MessageDataSource(room: room)
+        self.messageDataSource  = MessageDataSource(room: room)
     }
     
     @State var currentBody: String = ""
@@ -29,7 +26,7 @@ struct MessageRoomView: View {
         VStack {
             ScrollView {
                 LazyVStack {
-                    ForEach(room.messages, id: \.id) { message in
+                    ForEach(messageDataSource.room.messages, id: \.id) { message in
                         Text(message.body)
                             .font(.headline)
                             .foregroundColor(.black)

@@ -10,7 +10,8 @@ import Foundation
 
 class MessageDataSource: ObservableObject {
   
-    var room: Room
+    @Published var room: Room
+    var subscription: GraphQLSubscriptionOperation<Room>?
     
     init(room: Room) {
         self.room = room
@@ -34,6 +35,33 @@ class MessageDataSource: ObservableObject {
                 case .failure(let apiError):
                     print("Message sending api error: ", apiError)
                 }
+        }
+    }
+    
+    func createSubscription() {
+        subscription = Amplify.API.subscribe(request: .subscription(of: Room.self, type: .onUpdate), valueListener: { (subscriptionEvent) in
+            switch subscriptionEvent {
+            case .connection(let subscriptionConnectionState):
+                print("Subscription connect state is \(subscriptionConnectionState)")
+            case .data(let result):
+                switch result {
+                case .success(let updatedRoom):
+                    print("Successfully got the updated room from subscription: \(updatedRoom)")
+                    if updatedRoom.id == self.room.id {
+                        self.room = updatedRoom
+                        print("Updated room: ", self.room)
+                    }
+                case .failure(let error):
+                    print("Got failed result with \(error.errorDescription)")
+                }
+            }
+        }) { result in
+            switch result {
+            case .success:
+                print("Subscription has been closed successfully")
+            case .failure(let apiError):
+                print("Subscription has terminated with \(apiError)")
+            }
         }
     }
     
