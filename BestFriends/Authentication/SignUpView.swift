@@ -112,55 +112,67 @@ struct SignUpPage1: View {
                     .ignoresSafeArea()
                     .scaledToFill()
             
+               
+                
                 VStack {
+                    Spacer()
                     
-                    Image("pegnuin")
+                    Image("Penguin2")
                         .resizable()
-                        .frame(width: 50, height: 50)
+                        .frame(width: 135, height: 135)
                         .scaledToFill()
                     
-                    
-                    Text("Hi, what is your first name?")
-                        .font(.system(size: 30))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                    
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 125)
                     
-                    TextField("First name", text: $firstName)
-                        .multilineTextAlignment(.center)
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 300, height: 40, alignment: .center)
-                        .font(.title)
+                    VStack {
+                    
+                        Text("Hi, what's your first name?")
+                            .font(.system(size: 30))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
                         
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .cornerRadius(20)
-                        .disableAutocorrection(true)
-                        .autocapitalization(.none)
+                        Spacer()
+                            .frame(height: 50)
+                        
+                        TextField("First name", text: $firstName)
+                            .multilineTextAlignment(.center)
+                            .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 300, height: 40, alignment: .center)
+                            .font(.title)
+                            
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .cornerRadius(20)
+                            .disableAutocorrection(true)
+                            .autocapitalization(.none)
 
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    NavigationLink(destination: SignUpPage2(firstName: firstName).environmentObject(sessionManager)) {
-                                        Text("Next")
-                                            .font(.title)
-                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                            .frame(width: 200, height: 50)
-                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                    }
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    Text("Protecting 'Your Privacy' is #1")
-                        .italic()
-                        .font(.system(size: 25))
-                        .fontWeight(.ultraLight)
+                        Spacer()
+                            .frame(height: 50)
                         
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
+                        NavigationLink(destination: SignUpPage2(firstName: firstName).environmentObject(sessionManager)) {
+                                            Text("Next")
+                                                .font(.title)
+                                                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                                .frame(width: 200, height: 50)
+                                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                                .cornerRadius(25)
+                                        }
+                        
+                        Spacer()
+                            .frame(height: 50)
+                        
+                        Text("Protecting 'Your Privacy' is #1")
+                            .italic()
+                            .font(.system(size: 25))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                    
+                    }
+                    
+                    Spacer()
+                        .frame(height: 125)
+                    
                 }
             }
         }
@@ -181,6 +193,14 @@ struct SignUpPage2: View {
                 .scaledToFill()
             
             VStack {
+                Image("Penguin Sticker 38")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .scaledToFill()
+                
+                Spacer()
+                    .frame(height: 125)
+                
                 TextField("Last name", text: $lastName)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -204,7 +224,7 @@ struct SignUpPage2: View {
                                 }
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 125)
                 
                 Text("Nope, we never sell or share your info!")
                     .italic()
@@ -215,6 +235,9 @@ struct SignUpPage2: View {
                     .multilineTextAlignment(.center)
             
             }
+            Spacer()
+                .frame(height: 125)
+            
         }
     }
 }
@@ -236,37 +259,69 @@ struct SignUpPage3: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+            
+            
             VStack {
-                Text("ok, let's createa a username")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
+                Spacer()
+                
+                Image("Penguin1")
+                    .resizable()
+                    .frame(width: 135, height: 135)
+                    .scaledToFill()
                 
                 Spacer()
-                    .frame(height: 50)
-                TextField("Username", text: $username)
-                    .multilineTextAlignment(.center)
-                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .frame(width: 300, height: 40, alignment: .center)
-                    .font(.title)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .cornerRadius(20)
-                    .disableAutocorrection(true)
-                    .autocapitalization(.none)
+                    .frame(height: 125)
+                
+                VStack {
+                    Text("ok, let's create a username")
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 50)
+                    TextField("Username", text: $username)
+                        .multilineTextAlignment(.center)
+                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 300, height: 40, alignment: .center)
+                        .font(.title)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .cornerRadius(20)
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
 
-                
+                    
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    NavigationLink(destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username).environmentObject(sessionManager)) {
+                                        Text("Next")
+                                            .font(.title)
+                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                            .frame(width: 200, height: 50)
+                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                                    }
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    Text("Search & Add friends w/ QR codes,")
+                        .italic()
+                        .font(.system(size: 25))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                   
+                    
+                    Text("prtecting you from trolls.")
+                        .italic()
+                        .font(.system(size: 25))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                }
                 Spacer()
-                    .frame(height: 50)
-                
-                NavigationLink(destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username).environmentObject(sessionManager)) {
-                                    Text("Next")
-                                        .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 200, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                                }
-                
+                    .frame(height: 125)
             }
         }
     }
@@ -750,4 +805,5 @@ struct SignUpView_Previews : PreviewProvider {
             .environmentObject(SessionManager())
     }
 }
+
 
