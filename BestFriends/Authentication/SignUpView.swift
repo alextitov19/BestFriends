@@ -429,59 +429,67 @@ struct SignUpPage5: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+            
             VStack {
-                
-                Spacer()
-                
                 Image("Penguin Sticker 32")
                     .resizable()
                     .frame(width: 225, height:225)
                     .scaledToFill()
+           }
                 
-                Spacer()
-                    .frame(height: 125)
-                
-                TextField("Enter your email", text: $email)
-                    .multilineTextAlignment(.center)
-                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .frame(width: 300, height: 40, alignment: .center)
-                    .font(.title)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .cornerRadius(20)
-                    .disableAutocorrection(true)
-                    .autocapitalization(.none)
+                   
+                VStack {
+                        Text("Can we get an email?")
+                            .font(.system(size: 30))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 50)
+                        
+                        
+                        
+                        TextField("Enter your email", text: $email)
+                        .multilineTextAlignment(.center)
+                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 300, height: 40, alignment: .center)
+                        .font(.title)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .cornerRadius(20)
+                        .disableAutocorrection(true)
+                        .autocapitalization(.none)
 
-                Spacer()
-                    .frame(height: 50)
-                
-                NavigationLink(destination: SignUpPage6(firstName: firstName, lastName: lastName, username: username, password: password, email: email).environmentObject(sessionManager)) {
-                                    Text("Next")
-                                        .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 200, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                                }
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    NavigationLink(destination: SignUpPage6(firstName: firstName, lastName: lastName, username: username, password: password, email: email).environmentObject(sessionManager)) {
+                                        Text("Next")
+                                            .font(.title)
+                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                            .frame(width: 200, height: 50)
+                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                                    }
 
-                Spacer()
-                    .frame(height: 50)
-                
-                Text("Just in case we need to")
-                    .italic()
-                    .font(.system(size: 25))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-               
-                
-                Text("re-set your password.")
-                    .italic()
-                    .font(.system(size: 25))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                
-                }
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    Text("Just in case we need to")
+                        .italic()
+                        .font(.system(size: 25))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                   
+                    
+                    Text("re-set your password.")
+                        .italic()
+                        .font(.system(size: 25))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                    
+                    }
                 
                 Spacer()
                     .frame(height: 125)
@@ -735,7 +743,7 @@ struct SignUpQuestionPage1: View {
                         .frame(height: 120)
                     
                     NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
-                                        Text("Ok, Let's Go!")
+                                        Text("I'm down!")
                                             .font(.title)
                                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                             .frame(width: 200, height: 50)
@@ -815,12 +823,15 @@ struct SignUpQuestionPage2: View {
                
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
-                                        Text("We cool?")
-                                            .font(.system(size: 23))
-                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                            .frame(width: 200, height: 50)
-                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
+                        
+                            Text("We cool?")
+                                .font(.title)
+                                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                .frame(width: 200, height: 50)
+                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .cornerRadius(25)
+                        
+                        
 
                                     }
                 }
@@ -856,7 +867,7 @@ struct SignUpQuestionPage3: View {
                 .scaledToFill()
             VStack {
                 
-                    Text("Tap your interests")
+                    Text("Simply tap your interests")
                         .font(.system(size: 35))
                         .foregroundColor(.white)
                         .frame(width: 300)
@@ -922,6 +933,9 @@ struct SignUpQuestionPage3: View {
                             .frame(height: 100)
                     
                 }
+                
+                
+                
                 
                 Button("Sign Up", action: {
                     sessionManager.signUp(
