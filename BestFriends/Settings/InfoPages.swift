@@ -10,10 +10,11 @@
 import Amplify
 import SwiftUI
 
+
 struct InfoViewPage1: View {
 
     var body: some View {
-
+        NavigationView{
         ZStack {
             
             
@@ -74,8 +75,7 @@ struct InfoViewPage1: View {
                     Spacer()
                         .frame(height: 20)
                    
-                   
-             
+                NavigationLink(destination: InfoViewPage2()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -83,10 +83,14 @@ struct InfoViewPage1: View {
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                                 }
-                 
+             
+               
+                                }
+        }
                 }
                 Spacer()
                     .frame(height: 225)
+       
             }
     }
 struct InfoViewPage1_Previews : PreviewProvider {
@@ -515,7 +519,7 @@ struct InfoViewPage6: View {
                     
                 
                     
-                    Text("Just quickly tap their 'stars' on Homepage. We find them and get their availability for you.")
+                    Text("Just quickly tap their 'stars' on Homepage and we find them and get their availability for you")
                        
                         .font(.system(size: 35))
                         .fontWeight(.regular)
