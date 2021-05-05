@@ -23,38 +23,43 @@ struct MessageRoomView: View {
     @State var currentBody: String = ""
 
     var body: some View {
-        VStack {
-            ScrollView {
-                LazyVStack {
-                    ForEach(messageDataSource.room.messages, id: \.id) { message in
-                        Text(message.body)
-                            .font(.headline)
-                            .foregroundColor(.black)
-                        
-                        Spacer()
-                            .frame(height: 20)
+        ZStack{
+            Image("purpleBackground")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
+            VStack {
+                ScrollView {
+                    LazyVStack {
+                        ForEach(messageDataSource.room.messages, id: \.id) { message in
+                            ChatBubble(msg: message)
+                            
+                            Spacer()
+                                .frame(height: 20)
+                        }
                     }
                 }
-            }
-            
-            Spacer()
-            
-            HStack {
-                TextField("", text: $currentBody)
-                    .foregroundColor(.black)
-                    .frame(width: 200, height: 50)
                 
                 Spacer()
-                    .frame(width: 30)
                 
-                Button("Send", action: {
+                HStack {
+                    TextField("", text: $currentBody)
+                        .foregroundColor(.black)
+                        .frame(width: 200, height: 50)
                     
-                    let message = Message(id: randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
+                    Spacer()
+                        .frame(width: 30)
                     
-                    messageDataSource.sendMessage(message: message)
-                })
+                    Button("Send", action: {
+                        
+                        let message = Message(id: randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
+                        
+                        messageDataSource.sendMessage(message: message)
+                    })
+                }
+                
             }
-            
         }
         
     }
