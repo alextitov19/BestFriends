@@ -41,12 +41,15 @@ struct MessageRoomView: View {
                     }
                 }
                 
-                Spacer()
+                Spacer().frame(height: 30)
                 
                 HStack {
+                    Spacer().frame(width: 30)
+                    
                     TextField("", text: $currentBody)
-                        .foregroundColor(.black)
-                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.4884749055, green: 0.2207083404, blue: 0.971470058, alpha: 0.3971501029)))
+                        .frame(width: 270, height: 30)
+                        .cornerRadius(15)
                     
                     Spacer()
                         .frame(width: 30)
@@ -57,7 +60,15 @@ struct MessageRoomView: View {
                         
                         messageDataSource.sendMessage(message: message)
                     })
+                    .frame(width: 50, height: 30, alignment: .center)
+                    .background(Color(#colorLiteral(red: 0.4913904071, green: 0, blue: 1, alpha: 1)))
+                    .foregroundColor(.white)
+                    .cornerRadius(15)
+                    
+                    Spacer().frame(width: 30)
                 }
+                
+                Spacer().frame(height: 20)
                 
             }
         }
