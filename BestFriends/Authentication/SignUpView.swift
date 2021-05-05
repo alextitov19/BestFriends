@@ -1087,8 +1087,8 @@ struct SignUpQuestionPage3: View {
 struct SignUpView_Previews : PreviewProvider {
     static var previews: some View {
         
-        //SignUpPage1()
-        //    .environmentObject(SessionManager())
+        SignUpPage1()
+           .environmentObject(SessionManager())
 
       SignUpPage2(firstName: " ")
         .environmentObject(SessionManager())
@@ -1108,8 +1108,8 @@ struct SignUpView_Previews : PreviewProvider {
         SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
             .environmentObject(SessionManager())
 
-        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
-            .environmentObject(SessionManager())
+        //SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
+          //  .environmentObject(SessionManager())
         
         SignUpQuestionPage1(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
             .environmentObject(SessionManager())
