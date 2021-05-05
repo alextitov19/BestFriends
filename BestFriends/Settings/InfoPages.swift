@@ -25,15 +25,17 @@ struct InfoViewPage1: View {
               
             VStack {
                     
-                    HStack {
-                        VStack {
+                HStack {
+                    VStack {
+                                               
+                       
                                                    
-                            Spacer()
-                                .frame(height: 155)
+                        Spacer()
+                            .frame(height: 125)
                                                     
                             Image("Penguin Sticker 38")
                                 .resizable()
-                                .frame(width: 175, height: 175)
+                                .frame(width: 150, height: 150)
                                 .scaledToFill()
                                                     
                                 }
@@ -44,36 +46,36 @@ struct InfoViewPage1: View {
                                 
                                 Image("ChatBubbleTrans")
                                     .resizable()
-                                    .frame(width: 300, height: 300)
+                                    .frame(width: 300, height: 175)
                                     .scaledToFill()
                             
                                 Text("ShakingCool - finding smiles everyday")
                                     .italic()
-                                    .font(.system(size: 25))
+                                    .font(.system(size: 20))
                                     .fontWeight(.ultraLight)
                                     .foregroundColor(.white)
                                     .multilineTextAlignment(.center)
                                     .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
-                            Spacer()
-                                .frame(height: 125)
+                           
                         }
                     }
                     
-                
+                Spacer()
+                    .frame(height: 100)
                     
                     Text("Just shake your phone & your 3 favorite pics that always make you smile pop up")
                        
-                        .font(.system(size: 35))
+                        .font(.system(size: 25))
                         .fontWeight(.regular)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .frame(width: 400, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                       
                     
-                    Spacer()
-                        .frame(height: 20)
+                Spacer()
+                    .frame(height: 50)
                    
                 NavigationLink(destination: InfoViewPage2()) {
                                     Text("Next")
@@ -82,11 +84,18 @@ struct InfoViewPage1: View {
                                         .frame(width: 200, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
+                    
+                  
                     }
-               }
+                Spacer()
+                    .frame(height: 75)
+            
             }
+            }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
         }
-               
+       
        
         }
     }
@@ -115,11 +124,11 @@ struct InfoViewPage2: View {
                         VStack {
                                                    
                             Spacer()
-                                .frame(height: 155)
+                                .frame(height: 10)
                                                     
                             Image("Penguin Sticker 38")
                                 .resizable()
-                                .frame(width: 175, height: 175)
+                                .frame(width: 150, height: 150)
                                 .scaledToFill()
                                                     
                                 }
@@ -130,12 +139,12 @@ struct InfoViewPage2: View {
                                 
                                 Image("ChatBubbleTrans")
                                     .resizable()
-                                    .frame(width: 300, height: 300)
+                                    .frame(width: 300, height: 175)
                                     .scaledToFill()
                             
                                 Text("SmileNotes - can't find that 'special' message.")
                                     .italic()
-                                    .font(.system(size: 25))
+                                    .font(.system(size: 20))
                                     .fontWeight(.ultraLight)
                                     .foregroundColor(.white)
                                     .multilineTextAlignment(.center)
@@ -150,16 +159,14 @@ struct InfoViewPage2: View {
                     
                     Text("Just long-tap 'special' messages. We save & re-deliver them next time we see you.")
                        
-                        .font(.system(size: 35))
+                        .font(.system(size: 25))
                         .fontWeight(.regular)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .frame(width: 400, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 385, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                       
-                    
-                    Spacer()
-                        .frame(height: 20)
+                   
                    
                 NavigationLink(destination: InfoViewPage2()) {
                                     Text("Next")
