@@ -704,6 +704,58 @@ struct SignUpPage7: View {
     }
 }
 
+
+struct SignUpPage8: View {
+    
+    @EnvironmentObject var sessionManager: SessionManager
+    @State private var birthDate: Date = Date()
+    
+    var firstName: String
+    var lastName: String
+    var username: String
+    var password: String
+    var email: String
+    var pronouns: String
+    
+    var body: some View {
+        ZStack {
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            VStack {
+                Text("Where on Earth are you?")
+                    .font(.title)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                Spacer()
+                    .frame(height: 250)
+                
+                NavigationLink(destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
+                                    Text("Next")
+                                        .font(.title)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                        .frame(width: 200, height: 50)
+                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                        .cornerRadius(25)
+
+                                }
+                
+            }
+        }
+    }
+}
+
+
+
 struct SignUpQuestionPage1: View {
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -1035,11 +1087,11 @@ struct SignUpQuestionPage3: View {
 struct SignUpView_Previews : PreviewProvider {
     static var previews: some View {
         
-        SignUpPage1()
-            .environmentObject(SessionManager())
+        //SignUpPage1()
+        //    .environmentObject(SessionManager())
 
-        SignUpPage2(firstName: " ")
-            .environmentObject(SessionManager())
+      SignUpPage2(firstName: " ")
+        .environmentObject(SessionManager())
 
         SignUpPage3(firstName: "", lastName: "")
             .environmentObject(SessionManager())
@@ -1056,6 +1108,8 @@ struct SignUpView_Previews : PreviewProvider {
         SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
             .environmentObject(SessionManager())
 
+        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
+            .environmentObject(SessionManager())
         
         SignUpQuestionPage1(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
             .environmentObject(SessionManager())
