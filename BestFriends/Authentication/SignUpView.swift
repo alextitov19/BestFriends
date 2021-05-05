@@ -117,12 +117,20 @@ struct SignUpPage1: View {
             
                     
                     VStack {
-                    
-                        Text("Hi, can we get your first name?")
+                        
+                        Spacer()
+                            .frame(height: 50)
+                        Text("Welcome to BestFriends")
                             .font(.system(size: 30))
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
+                        Spacer()
+                            .frame(height: 50)
                         
+                        Text("Can we get your first name?")
+                            .font(.system(size: 30))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
                         Spacer()
                             .frame(height: 50)
                         
@@ -808,16 +816,16 @@ struct SignUpQuestionPage2: View {
             VStack {
                 VStack {
                     
-                    Text("ok everyone, here's the deal ...")
+                    Text("You'll like this ...")
                         .font(.system(size: 35))
                         .foregroundColor(.white)
                         .frame(width: 400)
                         .multilineTextAlignment(.center)
                     Spacer()
-                        .frame(height: 120)
+                        .frame(height: 100)
                     
                     Text("Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day.")
-                        .font(.system(size: 25))
+                        .font(.system(size: 35))
                         .fontWeight(.ultraLight)
                         .italic()
                         .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
