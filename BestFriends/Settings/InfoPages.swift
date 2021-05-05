@@ -28,10 +28,7 @@ struct InfoView: View {
                 Spacer()
                     .frame(height: 125)
                 
-            Image("Penguin1")
-                .resizable()
-                .frame(width: 200, height: 200)
-                .scaledToFill()
+       
             
                 VStack {
                     Text("Put Text Here")
@@ -50,7 +47,10 @@ struct InfoView: View {
                     
                     
                    
-                    
+                    Image("Penguin1")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                        .scaledToFill()
                     
                 }
                 Spacer()
@@ -58,5 +58,10 @@ struct InfoView: View {
             }
         
     
+    }
+}
+struct InfoView_Previews : PreviewProvider {
+    static var previews: some View {
+        InfoView()
     }
 }
