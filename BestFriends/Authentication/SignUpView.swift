@@ -117,7 +117,10 @@ struct SignUpPage1: View {
             
                     
                     VStack {
-                        
+                        Text("Hi")
+                            .font(.system(size: 100))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
                         Spacer()
                             .frame(height: 50)
                         Text("Welcome to BestFriends")
@@ -127,10 +130,7 @@ struct SignUpPage1: View {
                         Spacer()
                             .frame(height: 50)
                         
-                        Text("Can we get your first name?")
-                            .font(.system(size: 30))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
+                      
                         Spacer()
                             .frame(height: 50)
                         
@@ -824,7 +824,7 @@ struct SignUpQuestionPage2: View {
                     Spacer()
                         .frame(height: 100)
                     
-                    Text("Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day.")
+                    Text("Instead of us following your every move on your iPhone and laptop, then bombarding you with Ads aligning with what you have been looking at all day.")
                         .font(.system(size: 35))
                         .fontWeight(.ultraLight)
                         .italic()
