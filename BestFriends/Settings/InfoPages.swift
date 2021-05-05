@@ -161,19 +161,19 @@ struct InfoViewPage2: View {
                     Spacer()
                         .frame(height: 20)
                    
-                NavigationLink(destination: InfoViewPage3()) {
+                NavigationLink(destination: InfoViewPage2()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
-             
-                }
-           }
+                    }
+               }
+            }
         }
-    }
-              
+               
+       
         }
     }
 
@@ -184,7 +184,7 @@ struct InfoViewPage2: View {
 struct InfoViewPage3: View {
 
     var body: some View {
-
+        NavigationView{
     
   
         ZStack {
@@ -250,19 +250,21 @@ struct InfoViewPage3: View {
                    
                    
              
+                NavigationLink(destination: InfoViewPage2()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
-                                }
-                }
-                
+                    }
+               }
             }
+        }
+               
+       
+        }
     }
-
-
 
 
 
@@ -270,7 +272,7 @@ struct InfoViewPage3: View {
 struct InfoViewPage4: View {
 
     var body: some View {
-
+        NavigationView{
     
   
         ZStack {
@@ -335,17 +337,20 @@ struct InfoViewPage4: View {
                         .frame(height: 20)
                    
                    
-             
+                NavigationLink(destination: InfoViewPage2()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
-                                }
-                }
-                
+                    }
+               }
             }
+        }
+               
+       
+        }
     }
 
 
@@ -355,7 +360,7 @@ struct InfoViewPage4: View {
 struct InfoViewPage5: View {
 
     var body: some View {
-
+        NavigationView{
     
   
         ZStack {
@@ -420,19 +425,21 @@ struct InfoViewPage5: View {
                         .frame(height: 20)
                    
                    
-             
+                NavigationLink(destination: InfoViewPage2()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
-                                }
-                }
-               
+                    }
+               }
             }
+        }
+               
+       
+        }
     }
-
 
 
 
@@ -441,7 +448,7 @@ struct InfoViewPage5: View {
 struct InfoViewPage6: View {
 
     var body: some View {
-
+        NavigationView{
     
   
         ZStack {
@@ -505,18 +512,20 @@ struct InfoViewPage6: View {
                     Spacer()
                         .frame(height: 20)
                    
-                   
-             
+                NavigationLink(destination: InfoViewPage2()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
-                                }
-                }
-                
+                    }
+               }
             }
+        }
+               
+       
+        }
     }
 
 
