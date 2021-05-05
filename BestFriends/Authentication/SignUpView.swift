@@ -678,15 +678,16 @@ struct SignUpPage7: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             VStack {
-                Text("Please enter your birthdate")
+                Text("Can we know your age?")
                     .font(.title)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 
                 DatePicker("", selection: $birthDate, displayedComponents: .date)
-                    .datePickerStyle(GraphicalDatePickerStyle())
-                    
+                    .datePickerStyle(WheelDatePickerStyle())
+                    .colorScheme(.dark)
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 250)
                 
                 NavigationLink(destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
                                     Text("Next")
@@ -723,14 +724,7 @@ struct SignUpQuestionPage1: View {
                 .scaledToFill()
             
           VStack {
-           //     VStack {
-             //
-               //     Text("Help us protect")
-                 //       .font(.system(size: 30))
-                   //     .italic()
-                     //   .foregroundColor(.white)
-                       // .fontWeight(.ultraLight)
-             //           .multilineTextAlignment(.center)
+          
                     
             HStack {
                 VStack {
