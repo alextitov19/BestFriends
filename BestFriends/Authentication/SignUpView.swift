@@ -117,22 +117,18 @@ struct SignUpPage1: View {
             
                     
                     VStack {
-                        Text("Hi")
-                            .font(.system(size: 100))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
+                       
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 20)
                         Text("Welcome to BestFriends")
                             .font(.system(size: 30))
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
-                        Spacer()
-                            .frame(height: 50)
+                       
                         
                       
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 200)
                         
                         TextField("First name", text: $firstName)
                             .multilineTextAlignment(.center)
