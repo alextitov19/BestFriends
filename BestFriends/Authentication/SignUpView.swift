@@ -926,7 +926,7 @@ struct SignUpQuestionPage3: View {
                         .multilineTextAlignment(.center)
                 
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 50)
                 
                     
                     VStack {
@@ -986,7 +986,11 @@ struct SignUpQuestionPage3: View {
                     
                 }
                 
-                
+                Text("Thx for helping fix social media 💕")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .frame(width: 400)
+                    .multilineTextAlignment(.center)
                 
                 
                 Button("Sign Up", action: {
