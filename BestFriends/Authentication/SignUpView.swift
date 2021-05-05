@@ -987,8 +987,9 @@ struct SignUpQuestionPage3: View {
                 }
                 
                 Text("Thx for helping fix social media 💕")
-                    .font(.system(size: 35))
+                    .font(.system(size: 25))
                     .foregroundColor(.white)
+                    .italic()
                     .frame(width: 400)
                     .multilineTextAlignment(.center)
                 
