@@ -451,7 +451,7 @@ struct SignUpPage5: View {
                                     .frame(width: 300, height: 300)
                                     .scaledToFill()
                             
-                                Text("Just in case we need to reset your password")
+                                Text("Just in case you need to reset your password")
                                     .italic()
                                     .font(.system(size: 25))
                                     .fontWeight(.ultraLight)
