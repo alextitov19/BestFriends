@@ -114,20 +114,11 @@ struct SignUpPage1: View {
             
                
                 
-                VStack {
-                    Spacer()
-                    
-                    Image("Penguin2")
-                        .resizable()
-                        .frame(width: 225, height:225)
-                        .scaledToFill()
-                    
-                    Spacer()
-                        .frame(height: 125)
+            
                     
                     VStack {
                     
-                        Text("Hi, what's your first name?")
+                        Text("Hi, can we get your first name?")
                             .font(.system(size: 30))
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
@@ -172,7 +163,7 @@ struct SignUpPage1: View {
             }
         }
     }
-}
+
 
 struct SignUpPage2: View {
     
@@ -191,11 +182,17 @@ struct SignUpPage2: View {
             VStack {
                     
                     HStack {
-                       
-                        Image("Penguin Sticker 38")
-                            .resizable()
-                            .frame(width: 150, height: 150)
-                            .scaledToFill()
+                        VStack {
+                                                   
+                            Spacer()
+                                .frame(height: 155)
+                                                    
+                            Image("Penguin Sticker 18")
+                                .resizable()
+                                .frame(width: 175, height: 175)
+                                .scaledToFill()
+                                                    
+                                }
                         VStack {
                        
                             ZStack {
@@ -203,22 +200,23 @@ struct SignUpPage2: View {
                                 
                                 Image("ChatBubbleTrans")
                                     .resizable()
-                                    .frame(width: 300, height: 250)
+                                    .frame(width: 300, height: 300)
                                     .scaledToFill()
                             
-                                Text("Nope, we never sell or share your info!")
+                                Text("We never sell or share your info!")
                                     .italic()
                                     .font(.system(size: 25))
                                     .fontWeight(.ultraLight)
                                     .foregroundColor(.white)
                                     .multilineTextAlignment(.center)
+                                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
                             Spacer()
                                 .frame(height: 125)
                         }
                     }
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 75)
                 
                 TextField("Last name", text: $lastName)
                     .multilineTextAlignment(.center)
@@ -271,19 +269,15 @@ struct SignUpPage3: View {
                 .scaledToFill()
             
             
-            VStack {
-                Spacer()
+            
                 
-                Image("Penguin1")
-                    .resizable()
-                    .frame(width: 200, height: 200)
-                    .scaledToFill()
+               
                 
                 Spacer()
                     .frame(height: 125)
                 
                 VStack {
-                    Text("ok, let's create a username")
+                    Text("Let's create a username")
                         .font(.system(size: 30))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -315,27 +309,28 @@ struct SignUpPage3: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("Search & add friends w/ QR codes,")
-                        .italic()
-                        .font(.system(size: 25))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                   
                     
-                    Text("protecting you from trolls.")
+                    
+                    Text("Your 'username' generates a QR code - blocking trolls ")
                         .italic()
                         .font(.system(size: 25))
                         .fontWeight(.ultraLight)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 250, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    Image("Penguin1")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                        .scaledToFill()
                 }
                 Spacer()
                     .frame(height: 125)
             }
         }
     }
-}
+
 
 struct SignUpPage4: View {
     
@@ -354,18 +349,13 @@ struct SignUpPage4: View {
                 .scaledToFill()
             
             VStack {
-                Spacer()
-                
-                Image("Penguin Sticker 24")
-                    .resizable()
-                    .frame(width: 200, height: 200)
-                    .scaledToFill()
+               
                 
                 Spacer()
                     .frame(height: 125)
                 
                 VStack {
-                    Text("Now, let's create a password")
+                    Text("You'll need a password")
                         .font(.system(size: 30))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -399,13 +389,16 @@ struct SignUpPage4: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("Nice!")
+                    Text("You got this, nice job!")
                         .italic()
                         .font(.system(size: 25))
                         .fontWeight(.ultraLight)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-
+                    Image("Penguin Sticker 24")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                        .scaledToFill()
                 }
 
                 Spacer()
@@ -459,7 +452,7 @@ struct SignUpPage5: View {
                         
                         
                         
-                        TextField("Enter your email", text: $email)
+                        TextField("Enter email", text: $email)
                         .multilineTextAlignment(.center)
                         .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .frame(width: 300, height: 40, alignment: .center)
@@ -484,20 +477,14 @@ struct SignUpPage5: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("Just in case we need to")
+                    Text("Just in case we need to re-set your password.")
                         .italic()
                         .font(.system(size: 25))
                         .fontWeight(.ultraLight)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
+                        .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                    
-                    
-                    Text("re-set your password.")
-                        .italic()
-                        .font(.system(size: 25))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
                     
                     }
                 
@@ -538,17 +525,13 @@ struct SignUpPage6: View {
                 .scaledToFill()
             VStack {
                 
-                Text("ok, please")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
+               
                 
                 Spacer()
                     .frame(height: 50)
                 
                 
-                Text("Select your Pronouns")
+                Text("Pronouns?")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
@@ -729,20 +712,56 @@ struct SignUpQuestionPage1: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            VStack {
+            
+          VStack {
+           //     VStack {
+             //
+               //     Text("Help us protect")
+                 //       .font(.system(size: 30))
+                   //     .italic()
+                     //   .foregroundColor(.white)
+                       // .fontWeight(.ultraLight)
+             //           .multilineTextAlignment(.center)
+                    
+            HStack {
                 VStack {
-                
-                    Text("Now, let's protect")
-                        .font(.system(size: 30))
-                        .italic()
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                    
-                        
-                    
+                                           
                     Spacer()
-                        .frame(height: 80)
+                        .frame(height: 155)
+                                            
+                    Image("Penguin Sticker 38")
+                        .resizable()
+                        .frame(width: 175, height: 175)
+                        .scaledToFill()
+                                            
+                        }
+                VStack {
+               
+                    ZStack {
+                        
+                        
+                        Image("ChatBubbleTrans")
+                            .resizable()
+                            .frame(width: 300, height: 300)
+                            .scaledToFill()
+                    
+                        Text("Help us protect")
+                            .italic()
+                            .font(.system(size: 25))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    }
+                    Spacer()
+                        .frame(height: 125)
+                }
+            }
+        Spacer()
+            .frame(height: 75)
+          
+                    Spacer()
+                        .frame(height: 20)
                     
                     Text("YOUR Privacy")
                         .font(.system(size: 55))
@@ -753,7 +772,7 @@ struct SignUpQuestionPage1: View {
                         .frame(height: 120)
                     
                     NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
-                                        Text("I'm down!")
+                                        Text("Sounds great!")
                                             .font(.title)
                                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                             .frame(width: 200, height: 50)
@@ -765,7 +784,7 @@ struct SignUpQuestionPage1: View {
             }
         }
     }
-}
+
 
 struct SignUpQuestionPage2: View {
     
@@ -785,9 +804,19 @@ struct SignUpQuestionPage2: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+            
             VStack {
                 VStack {
-                    Text("*Note: Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day.")
+                    
+                    Text("ok everyone, here's the deal ...")
+                        .font(.system(size: 35))
+                        .foregroundColor(.white)
+                        .frame(width: 400)
+                        .multilineTextAlignment(.center)
+                    Spacer()
+                        .frame(height: 120)
+                    
+                    Text("Instead of us following your every move on your phone and laptop, then bombarding you with Ads aligning with what you have been looking at all day.")
                         .font(.system(size: 25))
                         .fontWeight(.ultraLight)
                         .italic()
@@ -798,7 +827,8 @@ struct SignUpQuestionPage2: View {
 
                     Spacer()
                         .frame(height: 120)
-                Text("We’ll simply ‘Ask’ you")
+                    
+                Text("We’ll simply ‘Ask’")
                     .font(.system(size: 35))
                     .foregroundColor(.white)
                     .frame(width: 400)
@@ -814,34 +844,25 @@ struct SignUpQuestionPage2: View {
                         .multilineTextAlignment(.center)
                     
                     Spacer()
-                        .frame(height: 20)
-                Text("-    You keep 'Your Privacy’")
-                    .font(.system(size: 23))
-                    .foregroundColor(.white)
-                    .frame(width: 320)
-                    .multilineTextAlignment(.leading)
+                       
                 
-                Text("-    We keep the lights on   ")
-                    .font(.system(size: 23))
-                    .foregroundColor(.white)
-                    .frame(width: 320)
-                    .multilineTextAlignment(.leading)
+               
                 
                 Spacer()
-                    .frame(height: 70)
+                    .frame(height: 10)
                 
                
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
                         
-                            Text("We cool?")
+                            Text("Next")
                                 .font(.title)
                                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                 .frame(width: 200, height: 50)
                                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                 .cornerRadius(25)
                         
-                        
+                    
 
                                     }
                 }
@@ -877,7 +898,7 @@ struct SignUpQuestionPage3: View {
                 .scaledToFill()
             VStack {
                 
-                    Text("Simply tap your interests")
+                    Text("Simply tap one")
                         .font(.system(size: 35))
                         .foregroundColor(.white)
                         .frame(width: 300)
