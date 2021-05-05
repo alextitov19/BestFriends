@@ -82,22 +82,15 @@ struct InfoViewPage1: View {
                                         .frame(width: 200, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
-                                }
-             
-               
-                                }
-        }
-                }
-                Spacer()
-                    .frame(height: 225)
-       
+                    }
+               }
             }
+        }
+               
+       
+        }
     }
-struct InfoViewPage1_Previews : PreviewProvider {
-    static var previews: some View {
-        InfoViewPage1()
-    }
-}
+
 
 
 
@@ -106,9 +99,7 @@ struct InfoViewPage1_Previews : PreviewProvider {
 struct InfoViewPage2: View {
 
     var body: some View {
-
-    
-  
+        NavigationView{
         ZStack {
             
             
@@ -170,26 +161,23 @@ struct InfoViewPage2: View {
                     Spacer()
                         .frame(height: 20)
                    
-                   
-             
+                NavigationLink(destination: InfoViewPage3()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
-                                }
+             
                 }
-                Spacer()
-                    .frame(height: 225)
-            }
+           }
+        }
+    }
+              
+        }
     }
 
-struct InfoViewPage2_Previews : PreviewProvider {
-    static var previews: some View {
-        InfoViewPage2()
-    }
-}
+
 
 
 // ************************************************
@@ -270,16 +258,11 @@ struct InfoViewPage3: View {
                                         .cornerRadius(25)
                                 }
                 }
-                Spacer()
-                    .frame(height: 225)
+                
             }
     }
 
-struct InfoViewPage3_Previews : PreviewProvider {
-    static var previews: some View {
-        InfoViewPage3()
-    }
-}
+
 
 
 
@@ -361,16 +344,11 @@ struct InfoViewPage4: View {
                                         .cornerRadius(25)
                                 }
                 }
-                Spacer()
-                    .frame(height: 225)
+                
             }
     }
 
-struct InfoViewPage4_Previews : PreviewProvider {
-    static var previews: some View {
-        InfoViewPage4()
-    }
-}
+
 
 
 // ************************************************
@@ -451,16 +429,11 @@ struct InfoViewPage5: View {
                                         .cornerRadius(25)
                                 }
                 }
-                Spacer()
-                    .frame(height: 225)
+               
             }
     }
 
-struct InfoViewPage5_Previews : PreviewProvider {
-    static var previews: some View {
-        InfoViewPage5()
-    }
-}
+
 
 
 
@@ -542,13 +515,22 @@ struct InfoViewPage6: View {
                                         .cornerRadius(25)
                                 }
                 }
-                Spacer()
-                    .frame(height: 225)
+                
             }
     }
 
-struct InfoViewPage6_Previews : PreviewProvider {
+
+
+
+struct InfoViewPage1_Previews : PreviewProvider {
     static var previews: some View {
+   
+        InfoViewPage1()
+        InfoViewPage2()
+        InfoViewPage3()
+        InfoViewPage4()
+        InfoViewPage5()
         InfoViewPage6()
+       
     }
 }
