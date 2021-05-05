@@ -23,7 +23,7 @@ struct ChatBubble: View {
         if message.senderID == myID {
             // A message sent by the CURRENT USED
             HStack {
-                Spacer().frame(width: 200)
+                Spacer()
 
                 ZStack{
                     Rectangle()
@@ -32,7 +32,7 @@ struct ChatBubble: View {
                         .cornerRadius(25)
 
                     HStack {
-                        Spacer()
+                        Spacer().frame(width: 0, height: 5)
                         
                         Text(message.body)
                             .frame(width: 200, height: 40)
@@ -40,14 +40,18 @@ struct ChatBubble: View {
                             .font(.headline)
                             .foregroundColor(.white)
                         
-                        Spacer()
+                        Spacer().frame(width: 0, height: 5)
                     }
                 }
+                
+                Spacer().frame(width: 20)
             }
             
         } else {
             // All other messages aka messages sent by USER'S FRIENDS
             HStack {
+                Spacer().frame(width: 10)
+                
                 ZStack{
                     Rectangle()
                         .frame(width: 200, height: 50)
@@ -63,7 +67,7 @@ struct ChatBubble: View {
                             .font(.headline)
                             .foregroundColor(.white)
                         
-                        Spacer().frame(width: 200)
+                        Spacer()
                     }
                 }
                 
