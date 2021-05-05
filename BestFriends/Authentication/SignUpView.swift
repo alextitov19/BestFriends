@@ -211,7 +211,7 @@ struct SignUpPage2: View {
                                     .frame(width: 300, height: 300)
                                     .scaledToFill()
                             
-                                Text("We never sell or share your info!")
+                                Text("We'll never sell or share your info!")
                                     .italic()
                                     .font(.system(size: 25))
                                     .fontWeight(.ultraLight)
@@ -319,14 +319,7 @@ struct SignUpPage3: View {
                     
                     
                     
-                    Text("Your 'username' generates a QR code - blocking trolls ")
-                        .italic()
-                        .font(.system(size: 25))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 250, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                   
                     
                     Image("Penguin1")
                         .resizable()
@@ -363,7 +356,7 @@ struct SignUpPage4: View {
                     .frame(height: 125)
                 
                 VStack {
-                    Text("You'll need a password")
+                    Text("Yep, you'll need a password")
                         .font(.system(size: 30))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -397,12 +390,8 @@ struct SignUpPage4: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("You got this, nice job!")
-                        .italic()
-                        .font(.system(size: 25))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
+                   
+                   
                     Image("Penguin Sticker 24")
                         .resizable()
                         .frame(width: 200, height: 200)
@@ -441,25 +430,47 @@ struct SignUpPage5: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
+            
             VStack {
-                Image("Penguin Sticker 32")
-                    .resizable()
-                    .frame(width: 225, height:225)
-                    .scaledToFill()
-           }
+                    
+                    HStack {
+                        VStack {
+                                                   
+                            Spacer()
+                                .frame(height: 155)
+                                                    
+                            Image("Penguin Sticker 18")
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                                .scaledToFill()
+                                                    
+                                }
+                        VStack {
+                       
+                            ZStack {
+                                
+                                
+                                Image("ChatBubbleTrans")
+                                    .resizable()
+                                    .frame(width: 300, height: 300)
+                                    .scaledToFill()
+                            
+                                Text("Just in case we need to reset your password")
+                                    .italic()
+                                    .font(.system(size: 25))
+                                    .fontWeight(.ultraLight)
+                                    .foregroundColor(.white)
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            }
+                            Spacer()
+                                .frame(height: 125)
+                        }
+                    }
+               
                 
-                   
-                VStack {
-                        Text("Can we get an email?")
-                            .font(.system(size: 30))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                        
-                        Spacer()
-                            .frame(height: 50)
-                        
-                        
-                        
+           
+                      
                         TextField("Enter email", text: $email)
                         .multilineTextAlignment(.center)
                         .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -480,18 +491,12 @@ struct SignUpPage5: View {
                                             .frame(width: 200, height: 50)
                                             .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                             .cornerRadius(25)
-                                    }
+                    }
 
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("Just in case we need to re-set your password.")
-                        .italic()
-                        .font(.system(size: 25))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
                    
                     
                     }
@@ -753,7 +758,7 @@ struct SignUpQuestionPage1: View {
                             .frame(width: 300, height: 300)
                             .scaledToFill()
                     
-                        Text("Help us protect")
+                        Text("Helping us - help YOU")
                             .italic()
                             .font(.system(size: 25))
                             .fontWeight(.ultraLight)
@@ -770,8 +775,16 @@ struct SignUpQuestionPage1: View {
           
                     Spacer()
                         .frame(height: 20)
-                    
-                    Text("YOUR Privacy")
+            Text("Protect")
+                .font(.system(size: 45))
+                .foregroundColor(.white)
+                .multilineTextAlignment(.center)
+                   
+            Spacer()
+                .frame(height: 20)
+            
+            
+            Text("'YOUR' Privacy")
                         .font(.system(size: 55))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
