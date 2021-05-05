@@ -22,29 +22,48 @@ struct ChatBubble: View {
         
         if message.senderID == myID {
             // A message sent by the CURRENT USED
-            HStack {
-                Spacer()
+            VStack {
+                HStack {
+                    Spacer()
 
-                ZStack{
-                    Rectangle()
-                        .frame(width: 200, height: 50)
-                        .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.1039135661)))
-                        .cornerRadius(25)
-
-                    HStack {
-                        Spacer().frame(width: 0, height: 5)
-                        
-                        Text(message.body)
-                            .frame(width: 200, height: 40)
-                            .multilineTextAlignment(.center)
-                            .font(.headline)
-                            .foregroundColor(.white)
-                        
-                        Spacer().frame(width: 0, height: 5)
-                    }
+                    Text(message.senderName)
+                        .frame(width: 100, height: 12)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
+                        .font(.system(size: 14).weight(.thin))
+                    
                 }
                 
-                Spacer().frame(width: 20)
+                
+                HStack {
+                    Spacer()
+
+                    VStack {
+                            
+                                                
+                        ZStack{
+                            Rectangle()
+                                .frame(width: 200, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.1039135661)))
+                                .cornerRadius(25)
+
+                            HStack {
+                                Spacer().frame(width: 0, height: 5)
+                                
+                                Text(message.body)
+                                    .frame(width: 200, height: 40)
+                                    .multilineTextAlignment(.center)
+                                    .font(.system(size: 16).weight(.light))
+                                    .foregroundColor(.white)
+                                
+                                Spacer().frame(width: 0, height: 5)
+                            }
+                            
+                        }
+                    }
+                    Spacer().frame(width: 20)
+                    
+                }
             }
             
         } else {
