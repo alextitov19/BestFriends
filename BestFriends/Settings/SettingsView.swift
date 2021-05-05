@@ -29,7 +29,7 @@ struct SettingsView: View {
                 VStack {
                     
                     
-                    Link("Privacy Policy", destination: URL(string: "https://SocialTechLabs.com")!)
+                    Link("Privacy Policy / Terms of Service", destination: URL(string: "https://MadlyRadLabs.com/terms-of-service")!)
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
@@ -40,7 +40,7 @@ struct SettingsView: View {
                     Spacer()
                         .frame(height: 30)
                 
-                    Button("Health / Fitness / Nutrition", action: {
+                    Button("'BestFriends' Unique Features", action: {
 
                     })
                     .frame(width: 300, height: 50, alignment: .center)
@@ -51,7 +51,7 @@ struct SettingsView: View {
                     Spacer()
                         .frame(height: 30)
                 
-                    Button("Sports Stuff", action: {
+                    Button("ShakingCool Setup", action: {
 
                     })
                     .frame(width: 300, height: 50, alignment: .center)
@@ -62,7 +62,7 @@ struct SettingsView: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("Lifestyle", action: {
+                    Button("My Account / Reset Password", action: {
 
                     })
                     .frame(width: 300, height: 50, alignment: .center)
@@ -73,7 +73,7 @@ struct SettingsView: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("NGO / Social Impact", action: {
+                    Button("", action: {
                         
                     })
                     .frame(width: 300, height: 50, alignment: .center)
