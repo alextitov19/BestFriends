@@ -39,6 +39,7 @@
 		7AA2010F2635D21100C9F00C /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2010E2635D21100C9F00C /* RoomsView.swift */; };
 		7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201102635D2E100C9F00C /* RoomRow.swift */; };
 		7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201122635D5F500C9F00C /* Room+Extensions.swift */; };
+		7AB62A8526426F86005A7744 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB62A8426426F86005A7744 /* SettingsView.swift */; };
 		7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC0DA9B262BAF3B007FC643 /* UserManager.swift */; };
 		7ADC62A32627AA7300791689 /* TutorialCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADC62A22627AA7300791689 /* TutorialCode.swift */; };
 		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
@@ -90,6 +91,7 @@
 		7AA2010E2635D21100C9F00C /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
 		7AA201102635D2E100C9F00C /* RoomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRow.swift; sourceTree = "<group>"; };
 		7AA201122635D5F500C9F00C /* Room+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+Extensions.swift"; sourceTree = "<group>"; };
+		7AB62A8426426F86005A7744 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7AC0DA9B262BAF3B007FC643 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		7ADC62A22627AA7300791689 /* TutorialCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCode.swift; sourceTree = "<group>"; };
 		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -175,7 +177,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
-				7A9617A32640C148003D1172 /* InfoPages */,
+				7AB62A8326426F7A005A7744 /* Settings */,
 				7AA200FB2635C6D100C9F00C /* Room */,
 				7A8943D2262CCA84008F7582 /* LandingPage */,
 				7AC0DA8F262BAE09007FC643 /* models */,
@@ -211,14 +213,6 @@
 			path = LandingPage;
 			sourceTree = "<group>";
 		};
-		7A9617A32640C148003D1172 /* InfoPages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = InfoPages;
-			path = ../../RobLearningSwift/RobPlayground/InfoPages;
-			sourceTree = "<group>";
-		};
 		7AA200FB2635C6D100C9F00C /* Room */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +222,14 @@
 				7AA2010E2635D21100C9F00C /* RoomsView.swift */,
 			);
 			path = Room;
+			sourceTree = "<group>";
+		};
+		7AB62A8326426F7A005A7744 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7AB62A8426426F86005A7744 /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		7AC0DA8F262BAE09007FC643 /* models */ = {
@@ -440,6 +442,7 @@
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */,
+				7AB62A8526426F86005A7744 /* SettingsView.swift in Sources */,
 				7ADC62A32627AA7300791689 /* TutorialCode.swift in Sources */,
 				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,
 				7A13BE31263E039D005B98A2 /* User.swift in Sources */,

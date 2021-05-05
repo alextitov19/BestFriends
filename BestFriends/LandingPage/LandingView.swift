@@ -140,12 +140,12 @@ struct LandingView: View {
                         
                         Spacer()
 //                        
-//                        NavigationLink(destination: MessagesView()) {
-//                               Image("whiteSmiley")
-//                                .resizable()
-//                                .frame(width: 40, height: 40)
-//                                .scaledToFill()
-//                           }
+                        NavigationLink(destination: SettingsView()) {
+                               Image("whiteSmiley")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                           }
 //                        
 //                        Spacer()
 //                        
