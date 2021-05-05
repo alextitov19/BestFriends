@@ -120,15 +120,24 @@ struct SignUpPage1: View {
                        
                         Spacer()
                             .frame(height: 20)
-                        Text("Welcome to BestFriends")
+                        Text("Welcome to")
                             .font(.system(size: 30))
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
-                       
+                            
                         
                       
                         Spacer()
-                            .frame(height: 200)
+                            .frame(height: 50)
+                        
+                        Text("BestFriends")
+                            .font(.system(size: 75))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 100)
+                        
                         
                         TextField("First name", text: $firstName)
                             .multilineTextAlignment(.center)
