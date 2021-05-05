@@ -161,12 +161,7 @@ struct SignUpPage1: View {
                         Spacer()
                             .frame(height: 50)
                         
-                        Text("Protecting 'Your Privacy' is #1")
-                            .italic()
-                            .font(.system(size: 25))
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
+                     
                     
                     }
                     
@@ -191,13 +186,37 @@ struct SignUpPage2: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            
+           
+           
             VStack {
-                Image("Penguin Sticker 38")
-                    .resizable()
-                    .frame(width: 150, height: 150)
-                    .scaledToFill()
-                
+                    
+                    HStack {
+                       
+                        Image("Penguin Sticker 38")
+                            .resizable()
+                            .frame(width: 150, height: 150)
+                            .scaledToFill()
+                        VStack {
+                       
+                            ZStack {
+                                
+                                
+                                Image("ChatBubbleTrans")
+                                    .resizable()
+                                    .frame(width: 300, height: 250)
+                                    .scaledToFill()
+                            
+                                Text("Nope, we never sell or share your info!")
+                                    .italic()
+                                    .font(.system(size: 25))
+                                    .fontWeight(.ultraLight)
+                                    .foregroundColor(.white)
+                                    .multilineTextAlignment(.center)
+                            }
+                            Spacer()
+                                .frame(height: 125)
+                        }
+                    }
                 Spacer()
                     .frame(height: 125)
                 
@@ -226,17 +245,8 @@ struct SignUpPage2: View {
                 Spacer()
                     .frame(height: 125)
                 
-                Text("Nope, we never sell or share your info!")
-                    .italic()
-                    .font(.system(size: 25))
-                    .fontWeight(.ultraLight)
-                    
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-            
             }
-            Spacer()
-                .frame(height: 125)
+            
             
         }
     }
