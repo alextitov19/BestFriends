@@ -171,7 +171,7 @@ struct InfoViewPage2: View {
                     .frame(height: 50)
                    
                    
-                NavigationLink(destination: InfoViewPage2()) {
+                NavigationLink(destination: InfoViewPage3()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -264,7 +264,7 @@ struct InfoViewPage3: View {
                     .frame(height: 50)
                    
                 
-                NavigationLink(destination: InfoViewPage2()) {
+                NavigationLink(destination: InfoViewPage4()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -361,7 +361,7 @@ struct InfoViewPage4: View {
                         .frame(height: 50)
                    
                    
-                NavigationLink(destination: InfoViewPage2()) {
+                NavigationLink(destination: InfoViewPage5()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -455,7 +455,7 @@ struct InfoViewPage5: View {
                     .frame(height: 50)
                    
                    
-                NavigationLink(destination: InfoViewPage2()) {
+                NavigationLink(destination: InfoViewPage6()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -533,7 +533,7 @@ struct InfoViewPage6: View {
                     .frame(height: 100)
                     
                 
-                    Text("Just quickly tap their 'stars' on Homepage and we find them and get their availability for you")
+                    Text("Just quickly tap your friend's 'stars' on Homepage and we'll find them and get their availability for you.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
