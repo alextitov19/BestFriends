@@ -120,8 +120,9 @@ struct SignUpPage1: View {
                        
                         Spacer()
                             .frame(height: 20)
-                        Text("Welcome to")
-                            .font(.system(size: 30))
+                        Text("We're excited you're joining us, welcome to")
+                            .font(.system(size: 25))
+                            .italic()
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                             
@@ -202,7 +203,7 @@ struct SignUpPage2: View {
                                                     
                             Image("Penguin Sticker 18")
                                 .resizable()
-                                .frame(width: 175, height: 175)
+                                .frame(width: 200, height: 200)
                                 .scaledToFill()
                                                     
                                 }
@@ -213,12 +214,12 @@ struct SignUpPage2: View {
                                 
                                 Image("ChatBubbleTrans")
                                     .resizable()
-                                    .frame(width: 300, height: 300)
+                                    .frame(width: 300, height: 175)
                                     .scaledToFill()
                             
                                 Text("We'll never sell or share your info!")
                                     .italic()
-                                    .font(.system(size: 25))
+                                    .font(.system(size: 20))
                                     .fontWeight(.ultraLight)
                                     .foregroundColor(.white)
                                     .multilineTextAlignment(.center)
@@ -290,7 +291,7 @@ struct SignUpPage3: View {
                     .frame(height: 125)
                 
                 VStack {
-                    Text("Let's create a username")
+                    Text("What username do you want?")
                         .font(.system(size: 30))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -361,7 +362,7 @@ struct SignUpPage4: View {
                     .frame(height: 125)
                 
                 VStack {
-                    Text("Yep, you'll need a password")
+                    Text("Choose your password.")
                         .font(.system(size: 30))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -457,12 +458,12 @@ struct SignUpPage5: View {
                                 
                                 Image("ChatBubbleTrans")
                                     .resizable()
-                                    .frame(width: 300, height: 300)
+                                    .frame(width: 300, height: 175)
                                     .scaledToFill()
                             
                                 Text("Just in case you need to reset your password")
                                     .italic()
-                                    .font(.system(size: 25))
+                                    .font(.system(size: 20))
                                     .fontWeight(.ultraLight)
                                     .foregroundColor(.white)
                                     .multilineTextAlignment(.center)
@@ -549,7 +550,7 @@ struct SignUpPage6: View {
                     .frame(height: 50)
                 
                 
-                Text("Pronouns?")
+                Text("Please select your Pronouns?")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
@@ -614,7 +615,9 @@ struct SignUpPage6: View {
                     
                     Spacer()
                         .frame(height: 100)
-                
+            
+                    
+              
             }
             
             Button("Next", action: {
@@ -687,9 +690,10 @@ struct SignUpPage7: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             VStack {
-                Text("Can we know your age?")
-                    .font(.title)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                Text("Your age?")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
                 
                 DatePicker("", selection: $birthDate, displayedComponents: .date)
                     .datePickerStyle(WheelDatePickerStyle())
@@ -791,11 +795,11 @@ struct SignUpQuestionPage1: View {
                 VStack {
                                            
                     Spacer()
-                        .frame(height: 155)
+                        .frame(height: 125)
                                             
                     Image("Penguin Sticker 38")
                         .resizable()
-                        .frame(width: 175, height: 175)
+                        .frame(width: 150, height: 150)
                         .scaledToFill()
                                             
                         }
@@ -806,23 +810,23 @@ struct SignUpQuestionPage1: View {
                         
                         Image("ChatBubbleTrans")
                             .resizable()
-                            .frame(width: 300, height: 300)
+                            .frame(width: 300, height: 175)
                             .scaledToFill()
                     
-                        Text("Helping us - help YOU")
+                        Text("Please help us - help 'YOU'")
                             .italic()
-                            .font(.system(size: 25))
+                            .font(.system(size: 20))
                             .fontWeight(.ultraLight)
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                             .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     }
-                    Spacer()
-                        .frame(height: 125)
+                   
                 }
             }
+            
         Spacer()
-            .frame(height: 75)
+            .frame(height: 100)
           
                     Spacer()
                         .frame(height: 20)
@@ -837,6 +841,7 @@ struct SignUpQuestionPage1: View {
             
             Text("'YOUR' Privacy")
                         .font(.system(size: 55))
+                        .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
 
@@ -844,7 +849,7 @@ struct SignUpQuestionPage1: View {
                         .frame(height: 120)
                     
                     NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
-                                        Text("Sounds great!")
+                                        Text("Ok, let's go!")
                                             .font(.title)
                                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                             .frame(width: 200, height: 50)
@@ -880,50 +885,35 @@ struct SignUpQuestionPage2: View {
             VStack {
                 VStack {
                     
-                    Text("You'll like this ...")
-                        .font(.system(size: 35))
-                        .foregroundColor(.white)
+                    Text("We hope you'll like our new approach.")
+                        .font(.system(size: 30))
+                        .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
                         .frame(width: 400)
                         .multilineTextAlignment(.center)
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 75)
                     
-                    Text("Instead of us following your every move on your iPhone and laptop, then bombarding you with Ads aligning with what you have been looking at all day.")
-                        .font(.system(size: 35))
+                    Text("Instead of us following your every move on your iPhone and laptop, then bombarding you with Ads aligning with what you have been looking at.")
+                        .font(.system(size: 38))
                         .fontWeight(.ultraLight)
                         .italic()
-                        .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
+                        .foregroundColor(Color.white)
                         .frame(width: 400)
                     
                         .multilineTextAlignment(.center)
 
                     Spacer()
-                        .frame(height: 120)
+                        .frame(height: 75)
                     
-                Text("We’ll simply ‘Ask’")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .frame(width: 400)
+                Text("We simply ‘Ask’ you about your interests.")
+                    .font(.system(size: 30))
+                    .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
+                    .frame(width: 350)
                     .multilineTextAlignment(.center)
                 
-                Spacer()
-                    .frame(height: 20)
-                   
-                    Text("your interests.")
-                        .font(.system(size: 35))
-                        .foregroundColor(.white)
-                        .frame(width: 400)
-                        .multilineTextAlignment(.center)
-                    
+           
                     Spacer()
-                       
-                
-               
-                
-                Spacer()
-                    .frame(height: 10)
-                
-               
+                        .frame(height: 120)
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
                         
@@ -934,14 +924,23 @@ struct SignUpQuestionPage2: View {
                                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                 .cornerRadius(25)
                         
-                    
+                    }
+    
+    Spacer()
+        .frame(height: 50)
+    
+ 
 
-                                    }
-                }
-            }
-        }
-    }
 }
+
+Spacer()
+    .frame(height: 125)
+
+}
+}
+}
+}
+
 
 struct SignUpQuestionPage3: View {
     
@@ -970,10 +969,10 @@ struct SignUpQuestionPage3: View {
                 .scaledToFill()
             VStack {
                 
-                    Text("Simply tap one")
-                        .font(.system(size: 35))
-                        .foregroundColor(.white)
-                        .frame(width: 300)
+                    Text("Just select what interests you the most and we're done.")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
+                        .frame(width: 350)
                         .multilineTextAlignment(.center)
                 
                     Spacer()
@@ -1033,24 +1032,25 @@ struct SignUpQuestionPage3: View {
                         .cornerRadius(25)
                         
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 50)
                     
                 }
                 
-                Text("Thx for helping fix social media 💕")
+                Text("💕We're changing how social media gathers information about it's users. ")
                     .font(.system(size: 25))
                     .foregroundColor(.white)
                     .italic()
                     .frame(width: 400)
                     .multilineTextAlignment(.center)
                 
-                
-                Button("Sign Up", action: {
+            
+                   
+                Button("Register", action: {
                     sessionManager.signUp(
                         username: username,
                         email: email,
                         password: password
-                    
+                            
                     )
                     
                     var adPref: String = "NGO "
