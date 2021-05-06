@@ -40,11 +40,11 @@ PODS:
   - Starscream (3.1.1)
 
 DEPENDENCIES:
-  - Amplify (~> 1.0)
-  - Amplify/Tools (~> 1.0)
-  - AmplifyPlugins/AWSAPIPlugin (~> 1.0)
-  - AmplifyPlugins/AWSCognitoAuthPlugin (~> 1.0)
-  - AmplifyPlugins/AWSS3StoragePlugin (~> 1.0)
+  - Amplify
+  - Amplify/Tools
+  - AmplifyPlugins/AWSAPIPlugin
+  - AmplifyPlugins/AWSCognitoAuthPlugin
+  - AmplifyPlugins/AWSS3StoragePlugin
 
 SPEC REPOS:
   trunk:
@@ -73,6 +73,6 @@ SPEC CHECKSUMS:
   AWSS3: d8e8a6d7328e7fa1468788c4d7efa71d7f3a6caa
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
-PODFILE CHECKSUM: 071f0a8809eae4a4b34fb84eb2eab45b7c5d7c3d
+PODFILE CHECKSUM: 0df6a7f54b46f77d6881fb2c7543ebb2468cc37e
 
 COCOAPODS: 1.10.1

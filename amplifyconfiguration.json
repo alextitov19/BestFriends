@@ -62,8 +62,29 @@
                         "AuthMode": "API_KEY",
                         "ApiKey": "da2-mhmehp3pena5dcm6vhxmzutztq",
                         "ClientDatabasePrefix": "bestfriends_API_KEY"
+                    },
+                    "bestfriends_AWS_IAM": {
+                        "ApiUrl": "https://toigxxissjebvi2vq6ej3x3eom.appsync-api.us-east-2.amazonaws.com/graphql",
+                        "Region": "us-east-2",
+                        "AuthMode": "AWS_IAM",
+                        "ClientDatabasePrefix": "bestfriends_AWS_IAM"
+                    }
+                },
+                "S3TransferUtility": {
+                    "Default": {
+                        "Bucket": "bestfriendsae04fc9228fc41328f479e84fd109b87182511-dev",
+                        "Region": "us-east-2"
                     }
                 }
+            }
+        }
+    },
+    "storage": {
+        "plugins": {
+            "awsS3StoragePlugin": {
+                "bucket": "bestfriendsae04fc9228fc41328f479e84fd109b87182511-dev",
+                "region": "us-east-2",
+                "defaultAccessLevel": "guest"
             }
         }
     }

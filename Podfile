@@ -6,12 +6,10 @@ target 'BestFriends' do
   use_frameworks!
 
   # Pods for BestFriends
-  pod 'Amplify', '~> 1.0'                             # required amplify dependency
-  pod 'Amplify/Tools', '~> 1.0'                       # allows to call amplify CLI from within Xcode
-
-  pod 'AmplifyPlugins/AWSCognitoAuthPlugin', '~> 1.0' # support for Cognito user authentication
-  pod 'AmplifyPlugins/AWSAPIPlugin', '~> 1.0'         # support for GraphQL API
-  pod 'AmplifyPlugins/AWSS3StoragePlugin', '~> 1.0'   # support for Amazon S3 storage
-
+  pod 'Amplify'
+  pod 'Amplify/Tools'
+  pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
+  pod 'AmplifyPlugins/AWSAPIPlugin'
+  pod 'AmplifyPlugins/AWSS3StoragePlugin'
 
 end
