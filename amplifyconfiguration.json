@@ -72,7 +72,7 @@
                 },
                 "S3TransferUtility": {
                     "Default": {
-                        "Bucket": "bestfriendsae04fc9228fc41328f479e84fd109b87182511-dev",
+                        "Bucket": "bestfriendsattachments182511-dev",
                         "Region": "us-east-2"
                     }
                 }
@@ -82,7 +82,7 @@
     "storage": {
         "plugins": {
             "awsS3StoragePlugin": {
-                "bucket": "bestfriendsae04fc9228fc41328f479e84fd109b87182511-dev",
+                "bucket": "bestfriendsattachments182511-dev",
                 "region": "us-east-2",
                 "defaultAccessLevel": "guest"
             }

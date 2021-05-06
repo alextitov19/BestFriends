@@ -26,7 +26,7 @@
     }
   },
   "storage": {
-    "s3bc32c166": {
+    "Attachments": {
       "service": "S3",
       "providerPlugin": "awscloudformation"
     }
