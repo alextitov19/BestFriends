@@ -108,7 +108,7 @@ struct InfoViewPage1: View {
 struct InfoViewPage2: View {
 
     var body: some View {
-        NavigationView{
+        
         ZStack {
             
             
@@ -183,10 +183,11 @@ struct InfoViewPage2: View {
                 .frame(height: 75)
         
         }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
-    }
+   
+    
    
    
     }
@@ -199,7 +200,7 @@ struct InfoViewPage2: View {
 struct InfoViewPage3: View {
 
     var body: some View {
-        NavigationView{
+       
     
   
         ZStack {
@@ -280,7 +281,7 @@ struct InfoViewPage3: View {
         }
     .navigationBarTitle("")
     .navigationBarHidden(true)
-    }
+    
    
    
     }
@@ -292,7 +293,7 @@ struct InfoViewPage3: View {
 struct InfoViewPage4: View {
 
     var body: some View {
-        NavigationView{
+        
     
   
         ZStack {
@@ -376,7 +377,7 @@ struct InfoViewPage4: View {
         }
     .navigationBarTitle("")
     .navigationBarHidden(true)
-    }
+    
    
    
     }
@@ -387,7 +388,7 @@ struct InfoViewPage4: View {
 struct InfoViewPage5: View {
 
     var body: some View {
-        NavigationView{
+        
     
   
         ZStack {
@@ -470,7 +471,7 @@ struct InfoViewPage5: View {
         }
     .navigationBarTitle("")
     .navigationBarHidden(true)
-    }
+    
    
    
     }
@@ -481,7 +482,7 @@ struct InfoViewPage5: View {
 struct InfoViewPage6: View {
 
     var body: some View {
-        NavigationView{
+      
     
   
         ZStack {
@@ -501,7 +502,7 @@ struct InfoViewPage6: View {
                             Spacer()
                                 .frame(height: 125)
                                                     
-                            Image("Penguin Sticker 24 ")
+                            Image("Penguin Sticker 24")
                                 .resizable()
                                 .frame(width: 150, height: 150)
                                 .scaledToFill()
@@ -546,7 +547,7 @@ struct InfoViewPage6: View {
                 Spacer()
                     .frame(height: 50)
                    
-                NavigationLink(destination: InfoViewPage2()) {
+                NavigationLink(destination: SettingsView()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -561,7 +562,7 @@ struct InfoViewPage6: View {
         }
     .navigationBarTitle("")
     .navigationBarHidden(true)
-    }
+    
    
    
     }
