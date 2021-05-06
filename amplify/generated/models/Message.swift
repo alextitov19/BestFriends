@@ -8,4 +8,5 @@ public struct Message: Embeddable {
   var senderID: String
   var body: String
   var creationDate: Int
+  var attachmentPath: String?
 }

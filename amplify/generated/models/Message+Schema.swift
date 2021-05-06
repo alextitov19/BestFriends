@@ -10,6 +10,7 @@ extension Message {
     case senderID
     case body
     case creationDate
+    case attachmentPath
   }
   
   public static let keys = CodingKeys.self
@@ -25,7 +26,8 @@ extension Message {
       .field(message.senderName, is: .required, ofType: .string),
       .field(message.senderID, is: .required, ofType: .string),
       .field(message.body, is: .required, ofType: .string),
-      .field(message.creationDate, is: .required, ofType: .int)
+      .field(message.creationDate, is: .required, ofType: .int),
+      .field(message.attachmentPath, is: .optional, ofType: .string)
     )
     }
 }

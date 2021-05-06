@@ -9,6 +9,7 @@ type Message {
   senderID: String!
   body: String!
   creationDate: AWSTimestamp!
+  attachmentPath: String
 }
 
 type User @model {

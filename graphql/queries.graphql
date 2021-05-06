@@ -8,6 +8,7 @@ query GetRoom($id: ID!) {
       senderID
       body
       creationDate
+      attachmentPath
     }
     createdAt
     updatedAt
@@ -27,6 +28,7 @@ query ListRooms(
         senderID
         body
         creationDate
+        attachmentPath
       }
       createdAt
       updatedAt

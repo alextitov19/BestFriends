@@ -31,8 +31,8 @@ public struct CreateRoomInput: GraphQLMapConvertible {
 public struct MessageInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int) {
-    graphQLMap = ["id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate]
+  public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+    graphQLMap = ["id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath]
   }
 
   public var id: GraphQLID {
@@ -77,6 +77,15 @@ public struct MessageInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "creationDate")
+    }
+  }
+
+  public var attachmentPath: String? {
+    get {
+      return graphQLMap["attachmentPath"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "attachmentPath")
     }
   }
 }
@@ -1009,7 +1018,7 @@ public struct ModelUserFilterInput: GraphQLMapConvertible {
 
 public final class CreateRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateRoom($input: CreateRoomInput!, $condition: ModelRoomConditionInput) {\n  createRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateRoom($input: CreateRoomInput!, $condition: ModelRoomConditionInput) {\n  createRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateRoomInput
   public var condition: ModelRoomConditionInput?
@@ -1125,6 +1134,7 @@ public final class CreateRoomMutation: GraphQLMutation {
           GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
           GraphQLField("body", type: .nonNull(.scalar(String.self))),
           GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
         ]
 
         public var snapshot: Snapshot
@@ -1133,8 +1143,8 @@ public final class CreateRoomMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
         }
 
         public var __typename: String {
@@ -1190,6 +1200,15 @@ public final class CreateRoomMutation: GraphQLMutation {
             snapshot.updateValue(newValue, forKey: "creationDate")
           }
         }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
       }
     }
   }
@@ -1197,7 +1216,7 @@ public final class CreateRoomMutation: GraphQLMutation {
 
 public final class UpdateRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateRoom($input: UpdateRoomInput!, $condition: ModelRoomConditionInput) {\n  updateRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateRoom($input: UpdateRoomInput!, $condition: ModelRoomConditionInput) {\n  updateRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateRoomInput
   public var condition: ModelRoomConditionInput?
@@ -1313,6 +1332,7 @@ public final class UpdateRoomMutation: GraphQLMutation {
           GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
           GraphQLField("body", type: .nonNull(.scalar(String.self))),
           GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
         ]
 
         public var snapshot: Snapshot
@@ -1321,8 +1341,8 @@ public final class UpdateRoomMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
         }
 
         public var __typename: String {
@@ -1378,6 +1398,15 @@ public final class UpdateRoomMutation: GraphQLMutation {
             snapshot.updateValue(newValue, forKey: "creationDate")
           }
         }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
       }
     }
   }
@@ -1385,7 +1414,7 @@ public final class UpdateRoomMutation: GraphQLMutation {
 
 public final class DeleteRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteRoom($input: DeleteRoomInput!, $condition: ModelRoomConditionInput) {\n  deleteRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteRoom($input: DeleteRoomInput!, $condition: ModelRoomConditionInput) {\n  deleteRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteRoomInput
   public var condition: ModelRoomConditionInput?
@@ -1501,6 +1530,7 @@ public final class DeleteRoomMutation: GraphQLMutation {
           GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
           GraphQLField("body", type: .nonNull(.scalar(String.self))),
           GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
         ]
 
         public var snapshot: Snapshot
@@ -1509,8 +1539,8 @@ public final class DeleteRoomMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
         }
 
         public var __typename: String {
@@ -1564,6 +1594,15 @@ public final class DeleteRoomMutation: GraphQLMutation {
           }
           set {
             snapshot.updateValue(newValue, forKey: "creationDate")
+          }
+        }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
           }
         }
       }
@@ -2116,7 +2155,7 @@ public final class DeleteUserMutation: GraphQLMutation {
 
 public final class GetRoomQuery: GraphQLQuery {
   public static let operationString =
-    "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -2230,6 +2269,7 @@ public final class GetRoomQuery: GraphQLQuery {
           GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
           GraphQLField("body", type: .nonNull(.scalar(String.self))),
           GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
         ]
 
         public var snapshot: Snapshot
@@ -2238,8 +2278,8 @@ public final class GetRoomQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
         }
 
         public var __typename: String {
@@ -2295,6 +2335,15 @@ public final class GetRoomQuery: GraphQLQuery {
             snapshot.updateValue(newValue, forKey: "creationDate")
           }
         }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
       }
     }
   }
@@ -2302,7 +2351,7 @@ public final class GetRoomQuery: GraphQLQuery {
 
 public final class ListRoomsQuery: GraphQLQuery {
   public static let operationString =
-    "query ListRooms($filter: ModelRoomFilterInput, $limit: Int, $nextToken: String) {\n  listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      messages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n      }\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListRooms($filter: ModelRoomFilterInput, $limit: Int, $nextToken: String) {\n  listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      messages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n      }\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelRoomFilterInput?
   public var limit: Int?
@@ -2466,6 +2515,7 @@ public final class ListRoomsQuery: GraphQLQuery {
             GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
             GraphQLField("body", type: .nonNull(.scalar(String.self))),
             GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+            GraphQLField("attachmentPath", type: .scalar(String.self)),
           ]
 
           public var snapshot: Snapshot
@@ -2474,8 +2524,8 @@ public final class ListRoomsQuery: GraphQLQuery {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
           }
 
           public var __typename: String {
@@ -2529,6 +2579,15 @@ public final class ListRoomsQuery: GraphQLQuery {
             }
             set {
               snapshot.updateValue(newValue, forKey: "creationDate")
+            }
+          }
+
+          public var attachmentPath: String? {
+            get {
+              return snapshot["attachmentPath"] as? String
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "attachmentPath")
             }
           }
         }
@@ -2948,7 +3007,7 @@ public final class ListUsersQuery: GraphQLQuery {
 
 public final class OnCreateRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateRoom {\n  onCreateRoom {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateRoom {\n  onCreateRoom {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -3055,6 +3114,7 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
           GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
           GraphQLField("body", type: .nonNull(.scalar(String.self))),
           GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
         ]
 
         public var snapshot: Snapshot
@@ -3063,8 +3123,8 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
         }
 
         public var __typename: String {
@@ -3120,6 +3180,15 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
             snapshot.updateValue(newValue, forKey: "creationDate")
           }
         }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
       }
     }
   }
@@ -3127,7 +3196,7 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
 
 public final class OnUpdateRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateRoom {\n  onUpdateRoom {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateRoom {\n  onUpdateRoom {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -3234,6 +3303,7 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
           GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
           GraphQLField("body", type: .nonNull(.scalar(String.self))),
           GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
         ]
 
         public var snapshot: Snapshot
@@ -3242,8 +3312,8 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
         }
 
         public var __typename: String {
@@ -3299,6 +3369,15 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
             snapshot.updateValue(newValue, forKey: "creationDate")
           }
         }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
       }
     }
   }
@@ -3306,7 +3385,7 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
 
 public final class OnDeleteRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteRoom {\n  onDeleteRoom {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteRoom {\n  onDeleteRoom {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -3413,6 +3492,7 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
           GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
           GraphQLField("body", type: .nonNull(.scalar(String.self))),
           GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
         ]
 
         public var snapshot: Snapshot
@@ -3421,8 +3501,8 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
         }
 
         public var __typename: String {
@@ -3476,6 +3556,15 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
           }
           set {
             snapshot.updateValue(newValue, forKey: "creationDate")
+          }
+        }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
           }
         }
       }

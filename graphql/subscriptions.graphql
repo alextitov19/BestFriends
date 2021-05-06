@@ -8,6 +8,7 @@ subscription OnCreateRoom {
       senderID
       body
       creationDate
+      attachmentPath
     }
     createdAt
     updatedAt
@@ -22,6 +23,7 @@ subscription OnUpdateRoom {
       senderID
       body
       creationDate
+      attachmentPath
     }
     createdAt
     updatedAt
@@ -36,6 +38,7 @@ subscription OnDeleteRoom {
       senderID
       body
       creationDate
+      attachmentPath
     }
     createdAt
     updatedAt

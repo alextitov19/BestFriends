@@ -66,6 +66,8 @@ class MessageDataSource: ObservableObject {
     }
     
     func uploadImage(image: UIImage) {
+        guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }
+        let user = UserDataSource().getUser(id: userID)
         let data = image.pngData()!
         let key = "Image/" + randomString(length: 20)
         Amplify.Storage.uploadData(key: key, data: data,
@@ -75,6 +77,7 @@ class MessageDataSource: ObservableObject {
                 switch event {
                 case .success(let data):
                     print("Completed: \(data)")
+                    self.sendMessage(message: Message(id: self.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "", creationDate: Int(NSDate().timeIntervalSince1970), attachmentPath: key))
                 case .failure(let storageError):
                     print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
             }

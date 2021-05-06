@@ -11,6 +11,7 @@ mutation CreateRoom(
       senderID
       body
       creationDate
+      attachmentPath
     }
     createdAt
     updatedAt
@@ -28,6 +29,7 @@ mutation UpdateRoom(
       senderID
       body
       creationDate
+      attachmentPath
     }
     createdAt
     updatedAt
@@ -45,6 +47,7 @@ mutation DeleteRoom(
       senderID
       body
       creationDate
+      attachmentPath
     }
     createdAt
     updatedAt
