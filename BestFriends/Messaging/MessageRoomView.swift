@@ -48,9 +48,13 @@ struct MessageRoomView: View {
                 HStack {
                     Spacer().frame(width: 30)
                     
-                    Button("Camera", action: {
+                    Button(action: {
                         showingImagePicker = true
-                    })
+                    }) {
+                        Image("camera")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
                     
                     Spacer().frame(width: 30)
                     
