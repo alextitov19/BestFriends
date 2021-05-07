@@ -253,7 +253,7 @@ struct InfoViewPage3: View {
                     
                 
                     
-                    Text("Hide Chat - Restroe w/ Secret PIN. All Chat messages blocked from screen-shots.")
+                    Text("Hide Chat - Restore w/ Secret PIN. All Chat messages blocked from screen-shots.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
