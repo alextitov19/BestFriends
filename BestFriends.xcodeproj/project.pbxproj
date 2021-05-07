@@ -54,6 +54,9 @@
 		84EA879CC8D44C9CB6FBFFCB /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		8F464A0A6BEA4CD09C25CF86 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
+		D1949C392644F3F800FDB6C5 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C382644F3F800FDB6C5 /* ResetPassword.swift */; };
+		D1949C3B2644F41600FDB6C5 /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3A2644F41600FDB6C5 /* DeleteAccount.swift */; };
+		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
 		D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D27D39264303E300BDA75F /* InfoPages.swift */; };
 		DB6EB8B021C24EAB932F2DCC /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		F11E8CF700902496B65C1C89 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */; };
@@ -111,6 +114,9 @@
 		C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
+		D1949C382644F3F800FDB6C5 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		D1949C3A2644F41600FDB6C5 /* DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccount.swift; sourceTree = "<group>"; };
+		D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFriend.swift; sourceTree = "<group>"; };
 		D1D27D39264303E300BDA75F /* InfoPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPages.swift; sourceTree = "<group>"; };
 		DB24A96E58E94680A190216A /* User+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "User+Schema.swift"; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
 		E31DEA02CBB542D5AA59CA4B /* User.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
@@ -237,6 +243,9 @@
 				7AB62A8426426F86005A7744 /* SettingsView.swift */,
 				D1D27D39264303E300BDA75F /* InfoPages.swift */,
 				D1949C342644E15E00FDB6C5 /* MyAccount.swift */,
+				D1949C382644F3F800FDB6C5 /* ResetPassword.swift */,
+				D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */,
+				D1949C3A2644F41600FDB6C5 /* DeleteAccount.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -444,8 +453,10 @@
 				7AEFD546262CED7A00247757 /* ImagePicker.swift in Sources */,
 				7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */,
 				7A13BE2E263E039D005B98A2 /* AmplifyModels.swift in Sources */,
+				D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */,
 				7A13BE32263E039D005B98A2 /* Room+Schema.swift in Sources */,
 				7A6A4CDD262B68A600561D87 /* Message+Extensions.swift in Sources */,
+				D1949C392644F3F800FDB6C5 /* ResetPassword.swift in Sources */,
 				7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */,
@@ -468,6 +479,7 @@
 				7A13BE2D263E039D005B98A2 /* Message.swift in Sources */,
 				84EA879CC8D44C9CB6FBFFCB /* Message+Schema.swift in Sources */,
 				7A13BE30263E039D005B98A2 /* User+Schema.swift in Sources */,
+				D1949C3B2644F41600FDB6C5 /* DeleteAccount.swift in Sources */,
 				7AA200FD2635C6EF00C9F00C /* RoomDataSource.swift in Sources */,
 				24481C20A13049E6A98BAB56 /* User.swift in Sources */,
 				D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */,
