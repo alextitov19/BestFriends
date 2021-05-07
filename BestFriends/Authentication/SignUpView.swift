@@ -120,7 +120,7 @@ struct SignUpPage1: View {
                        
                         Spacer()
                             .frame(height: 20)
-                        Text("We're excited you're joining us, welcome to")
+                        Text("Welcome to")
                             .font(.system(size: 25))
                             .italic()
                             .foregroundColor(.white)
@@ -135,6 +135,15 @@ struct SignUpPage1: View {
                             .font(.system(size: 75))
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
+                        
+                       
+                        Text("tag line here")
+                            .font(.system(size: 25))
+                            .italic()
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                        
+                        
                         
                         Spacer()
                             .frame(height: 100)
@@ -620,7 +629,7 @@ struct SignUpPage6: View {
               
             }
             
-            Button("Next", action: {
+            Button(action: {
                 sessionManager.signUp(
                     username: username,
                     email: email,
@@ -646,8 +655,11 @@ struct SignUpPage6: View {
                 }
              
                 ready = true
-                })
-                .frame(width: 100, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4) ? 50 : 0))
+                }) {
+                    Text("Next")
+                    .font(.title)
+                    }
+                .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4) ? 50 : 0))
                 .disabled(!(didTap1 || didTap2 || didTap3 || didTap4))
                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -894,7 +906,7 @@ struct SignUpQuestionPage2: View {
                         .frame(height: 75)
                     
                     Text("Instead of us following your every move on your iPhone and laptop, then bombarding you with Ads aligning with what you have been looking at.")
-                        .font(.system(size: 38))
+                        .font(.system(size: 19))
                         .fontWeight(.ultraLight)
                         .italic()
                         .foregroundColor(Color.white)
@@ -1045,7 +1057,7 @@ struct SignUpQuestionPage3: View {
                 
             
                    
-                Button("Register", action: {
+                Button(action: {
                     sessionManager.signUp(
                         username: username,
                         email: email,
@@ -1078,8 +1090,11 @@ struct SignUpQuestionPage3: View {
                     
                     userMamager.create(user)
                     
-                })
-                .frame(width: 100, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4) ? 50 : 0))
+                }) {
+                    Text("Register")
+                        .font(.title)
+                }
+                .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4) ? 50 : 0))
                 .disabled(!(didTap1 || didTap2 || didTap3 || didTap4))
                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
