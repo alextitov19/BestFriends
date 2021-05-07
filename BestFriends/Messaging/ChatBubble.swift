@@ -9,7 +9,7 @@ import SwiftUI
 import Amplify
 
 struct ChatBubble: View {
-    
+
     let message: Message
     let myID: String
     let messageDataSource: MessageDataSource
@@ -48,8 +48,7 @@ struct ChatBubble: View {
                         Spacer()
 
                         Text(message.senderName)
-                            .frame(width: 100, height: 12)
-                            .multilineTextAlignment(.center)
+                            .frame(width: getWidth(text: message.senderName) + 30, alignment: .center)
                             .foregroundColor(.white)
                             .font(.system(size: 14).weight(.thin))
                         
@@ -64,16 +63,17 @@ struct ChatBubble: View {
                                                     
                             ZStack{
                                 Rectangle()
-                                    .frame(width: 200, height: 50)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.1039135661)))
-                                    .cornerRadius(25)
+                                    .frame(width: getWidth(text: message.body) + 15, height: getHeight(text: message.body))
+                                    .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.2547570032)))
+                                    .cornerRadius(15)
 
                                 HStack {
                                     Spacer().frame(width: 0, height: 5)
                                     
                                     Text(message.body)
-                                        .frame(width: 200, height: 40)
-                                        .multilineTextAlignment(.center)
+                                        .frame(width: getWidth(text: message.body), height: getHeight(text: message.body))
+                                        .fixedSize(horizontal: true, vertical: false)
+                                        .multilineTextAlignment(.leading)
                                         .font(.system(size: 16).weight(.light))
                                         .foregroundColor(.white)
                                     
@@ -98,10 +98,10 @@ struct ChatBubble: View {
                     HStack {
 
                         Text(message.senderName)
-                            .frame(width: 100, height: 12)
-                            .multilineTextAlignment(.center)
+                            .frame(width: getWidth(text: message.senderName) + 30, alignment: .center)
                             .foregroundColor(.white)
                             .font(.system(size: 14).weight(.thin))
+                        
                         Spacer()
 
                         
@@ -116,18 +116,20 @@ struct ChatBubble: View {
                                                     
                             ZStack{
                                 Rectangle()
-                                    .frame(width: 200, height: 50)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.1039135661)))
-                                    .cornerRadius(25)
+                                    .frame(width: getWidth(text: message.body) + 15, height: getHeight(text: message.body) + 10)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.2547570032)))
+                                    .cornerRadius(15)
 
                                 HStack {
                                     Spacer().frame(width: 0, height: 5)
                                     
                                     Text(message.body)
-                                        .frame(width: 200, height: 40)
-                                        .multilineTextAlignment(.center)
+                                        .frame(width: getWidth(text: message.body), height: getHeight(text: message.body))
+                                        .fixedSize(horizontal: true, vertical: false)
+                                        .multilineTextAlignment(.leading)
                                         .font(.system(size: 16).weight(.light))
                                         .foregroundColor(.white)
+
                                     
                                     Spacer().frame(width: 0, height: 5)
                                 }
@@ -141,7 +143,20 @@ struct ChatBubble: View {
             }
             
         }
-            
-        
     }
+            
+    func getWidth(text: String) -> CGFloat {
+        if text.count > 24 {
+            return 200
+        } else {
+            return CGFloat(text.count * (11))
+        }
+    }
+    
+    func getHeight(text: String) -> CGFloat {
+        let result = Double(text.count / 24)
+        let rows = result.rounded(.up) + 1
+        return CGFloat(rows * 30)
+    }
+    
 }
