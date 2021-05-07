@@ -35,7 +35,7 @@ struct MessageRoomView: View {
                 ScrollView {
                     LazyVStack {
                         ForEach(messageDataSource.room.messages, id: \.id) { message in
-                            ChatBubble(msg: message)
+                            ChatBubble(msg: message, messageDS: messageDataSource)
                             
                             Spacer()
                                 .frame(height: 20)

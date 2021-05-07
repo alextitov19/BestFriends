@@ -12,15 +12,22 @@ struct ChatBubble: View {
     
     let message: Message
     let myID: String
+    let messageDataSource: MessageDataSource
     
-    init(msg: Message) {
+    init(msg: Message, messageDS: MessageDataSource) {
         message = msg
+        messageDataSource = messageDS
         myID = Amplify.Auth.getCurrentUser()?.username ?? "could not find username"
     }
     
     var body: some View {
         
-        if message.senderID == myID {
+        if message.attachmentPath != nil {
+            // A message that was sent with an image (no body text, just image)
+            Image(uiImage: messageDataSource.downloadImage(key: message.attachmentPath!))
+            
+            
+        } else if message.senderID == myID {
             // A message sent by the CURRENT USED
                 
                 VStack {

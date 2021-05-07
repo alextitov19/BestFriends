@@ -100,6 +100,34 @@ class MessageDataSource: ObservableObject {
         return randomString
     }
     
+    func downloadImage(key: String) -> UIImage {
+        var image = UIImage()
+        
+        let group = DispatchGroup()
+        group.enter()
+        
+        Amplify.Storage.downloadData(
+            key: key,
+            progressListener: { progress in
+                print("Progress: \(progress)")
+            }, resultListener: { (event) in
+                switch event {
+                case let .success(data):
+                    print("Completed: \(data)")
+                    //data downloaded
+                    image = UIImage(data: data) ?? UIImage()
+                    group.leave()
+                    
+                case let .failure(storageError):
+                    print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+            }
+        })
+        
+        group.wait()
+        
+        return image
+    }
+    
 }
 
 
