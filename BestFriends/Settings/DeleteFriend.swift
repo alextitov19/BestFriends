@@ -1,16 +1,15 @@
 //
-//  ResetPassword.swift
+//  DeleteFriend.swift
 //  BestFriends
 //
 //  Created by Robert Roe on 5/7/21.
 //
 
-
 import Amplify
 import SwiftUI
 
 
-struct ResetPassword: View {
+struct DeleteFriend: View {
 
     var body: some View {
         NavigationView{
@@ -26,8 +25,9 @@ struct ResetPassword: View {
     }
 }
 
-struct ResetPassword_Previews : PreviewProvider {
+struct DeleteFriend_Previews : PreviewProvider {
     static var previews: some View {
         SettingsView()
     }
 }
+
