@@ -103,7 +103,7 @@ struct SettingsView: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Button("Delete BestFriends", action: {
+                        Button("Delete BestFriends App", action: {
                             
                         })
                         .frame(width: 300, height: 50, alignment: .center)
