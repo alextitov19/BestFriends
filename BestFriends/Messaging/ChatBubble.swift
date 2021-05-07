@@ -24,7 +24,20 @@ struct ChatBubble: View {
         
         if message.attachmentPath != nil {
             // A message that was sent with an image (no body text, just image)
-            Image(uiImage: messageDataSource.downloadImage(key: message.attachmentPath!))
+            let uiimage = messageDataSource.downloadImage(key: message.attachmentPath!)
+            
+            VStack {
+
+                Text(message.senderName)
+                    .frame(width: 100, height: 12)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.white)
+                    .font(.system(size: 14).weight(.thin))
+                
+                Image(uiImage: uiimage)
+                    .resizable()
+                    .aspectRatio(uiimage.size, contentMode: .fill)
+            }
             
             
         } else if message.senderID == myID {
