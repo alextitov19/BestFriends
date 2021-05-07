@@ -66,16 +66,16 @@ struct MessageRoomView: View {
                     Spacer()
                         .frame(width: 30)
                     
-                    Button("Send", action: {
+                    Button(action: {
                         
                         let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
                         
                         messageDataSource.sendMessage(message: message)
-                    })
-                    .frame(width: 50, height: 30, alignment: .center)
-                    .background(Color(#colorLiteral(red: 0.4913904071, green: 0, blue: 1, alpha: 1)))
-                    .foregroundColor(.white)
-                    .cornerRadius(15)
+                    }) {
+                        Image("arrow")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
                     
                     Spacer().frame(width: 30)
                 }
