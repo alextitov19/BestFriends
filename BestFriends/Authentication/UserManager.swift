@@ -45,4 +45,42 @@ class UserManager: ObservableObject {
             }
         }
     }
+
+    func confirmResetPassword(
+        username: String,
+        newPassword: String,
+        confirmationCode: String
+    ) {
+        Amplify.Auth.confirmResetPassword(
+            for: username,
+            with: newPassword,
+            confirmationCode: confirmationCode
+        ) { result in
+            switch result {
+            case .success:
+                print("Password reset confirmed")
+            case .failure(let error):
+                print("Reset password failed with error \(error)")
+            }
+        }
+    }
+
+    func changePassword(oldPassword: String, newPassword: String) {
+        Amplify.Auth.update(oldPassword: oldPassword, to: newPassword) { result in
+            switch result {
+            case .success:
+                print("Change password succeeded")
+            case .failure(let error):
+                print("Change password failed with error \(error)")
+            }
+        }
+    }
+
+
+
+
+
 }
+
+
+
