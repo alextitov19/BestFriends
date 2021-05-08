@@ -25,6 +25,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
         // Present the user with a request to authorize push notifications
         registerForPushNotifications()
+        
+        AWSDDLog.sharedInstance.logLevel = .verbose
+        AWSDDLog.add(AWSDDTTYLogger.sharedInstance)
 
         return true
     }
@@ -71,4 +74,50 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                     didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("Failed to register: \(error)")
     }
+    
+    func application(_ application: UIApplication,
+                    didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+                    fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult)
+                        -> Void) {
+        // if the app is in the foreground, create an alert modal with the contents
+        if application.applicationState == .active {
+            let alert = UIAlertController(title: "Notification Received",
+                                          message: userInfo.description,
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+
+            UIApplication.shared.keyWindow?.rootViewController?.present(
+                alert, animated: true, completion: nil
+            )
+        }
+
+        // Pass this remote notification event to pinpoint SDK to keep track of notifications produced by AWS Pinpoint campaigns.
+        pinpoint?.notificationManager.interceptDidReceiveRemoteNotification(
+            userInfo, fetchCompletionHandler: completionHandler
+        )
+
+        // Pinpoint SDK will not call the `completionHandler` for you. Make sure to call `completionHandler` or your app may be terminated
+        // See https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623013-application for more details
+        completionHandler(.newData)
+    }
+}
+
+extension AppDelegate {
+func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: (UNNotificationPresentationOptions) -> Void) {
+    // Handle foreground push notifications
+    pinpoint?.notificationManager.interceptDidReceiveRemoteNotification(notification.request.content.userInfo, fetchCompletionHandler: { _ in })
+
+    // Make sure to call `completionHandler`
+    // See https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/1649518-usernotificationcenter for more details
+    completionHandler(.badge)
+ }
+
+func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: () -> Void)  {
+    // Handle background and closed push notifications
+    pinpoint?.notificationManager.interceptDidReceiveRemoteNotification(response.notification.request.content.userInfo, fetchCompletionHandler: { _ in })
+
+    // Make sure to call `completionHandler`
+    // See https://developer.apple.com/documentation/usernotifications/unusernotificationcenterdelegate/1649501-usernotificationcenter for more details
+    completionHandler()
+}
 }
