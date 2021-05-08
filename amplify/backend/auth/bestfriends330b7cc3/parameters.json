@@ -1,6 +1,6 @@
 {
     "identityPoolName": "bestfriends330b7cc3_identitypool_330b7cc3",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "bestfr330b7cc3",
     "userPoolName": "bestfriends330b7cc3_userpool_330b7cc3",
     "autoVerifiedAttributes": [

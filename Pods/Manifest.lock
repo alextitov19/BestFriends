@@ -32,6 +32,8 @@ PODS:
     - AWSCognitoIdentityProvider (= 2.23.3)
     - AWSCognitoIdentityProviderASF (= 2.23.3)
     - AWSCore (= 2.23.3)
+  - AWSPinpoint (2.23.3):
+    - AWSCore (= 2.23.3)
   - AWSPluginsCore (1.8.0):
     - Amplify (= 1.8.0)
     - AWSCore (~> 2.23.3)
@@ -45,6 +47,8 @@ DEPENDENCIES:
   - AmplifyPlugins/AWSAPIPlugin
   - AmplifyPlugins/AWSCognitoAuthPlugin
   - AmplifyPlugins/AWSS3StoragePlugin
+  - AWSMobileClient
+  - AWSPinpoint
 
 SPEC REPOS:
   trunk:
@@ -56,6 +60,7 @@ SPEC REPOS:
     - AWSCognitoIdentityProviderASF
     - AWSCore
     - AWSMobileClient
+    - AWSPinpoint
     - AWSPluginsCore
     - AWSS3
     - Starscream
@@ -69,10 +74,11 @@ SPEC CHECKSUMS:
   AWSCognitoIdentityProviderASF: 719578cca39b3233bd67e656bdf04d409e8fc255
   AWSCore: c60e635b1a61cb27b6dfff646ce9f402be870b62
   AWSMobileClient: bdfc148fc11b846331f2bec4a7063c95e66c329e
+  AWSPinpoint: 72c99dbf5c37464f87cbf4515d6d027c996ddc96
   AWSPluginsCore: 6305f711ed8d967ba3b46e272cdad8f857e2ed4a
   AWSS3: d8e8a6d7328e7fa1468788c4d7efa71d7f3a6caa
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
-PODFILE CHECKSUM: 0df6a7f54b46f77d6881fb2c7543ebb2468cc37e
+PODFILE CHECKSUM: 684ba38c3ad1394ffeac6df9f22c1847fb3ea1aa
 
 COCOAPODS: 1.10.1
