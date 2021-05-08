@@ -12,6 +12,7 @@ import AmplifyPlugins
 @main
 struct BestFriendsApp: App {
 
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @ObservedObject var sessionManager = SessionManager()
     
     init() {

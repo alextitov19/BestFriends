@@ -47,6 +47,7 @@
 		7AE31CC2262A9BE1001EC5A3 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC1262A9BE1001EC5A3 /* LandingView.swift */; };
 		7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */; };
 		7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */; };
+		7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED44FB26473F7100944708 /* AppDelegate.swift */; };
 		7AEFD543262CED3A00247757 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFD542262CED3A00247757 /* QRCodeView.swift */; };
 		7AEFD546262CED7A00247757 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFD545262CED7A00247757 /* ImagePicker.swift */; };
 		7AF6973F2630EE1900CF49CC /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6973E2630EE1900CF49CC /* Star.swift */; };
@@ -109,6 +110,7 @@
 		7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		7AED44FA2647310700944708 /* BestFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriends.entitlements; sourceTree = "<group>"; };
+		7AED44FB26473F7100944708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AEFD542262CED3A00247757 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		7AEFD545262CED7A00247757 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		7AF6973E2630EE1900CF49CC /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				7AE31CBD262A9A7F001EC5A3 /* Authentication */,
 				7AE31CB926293ABE001EC5A3 /* Refrence Code */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
+				7AED44FB26473F7100944708 /* AppDelegate.swift */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
 			);
@@ -478,6 +481,7 @@
 				7A6A4CDD262B68A600561D87 /* Message+Extensions.swift in Sources */,
 				7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
+				7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */,
 				D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */,
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
