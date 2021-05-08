@@ -24,12 +24,12 @@ struct ResetPassword: View {
                 
                 VStack {
                     Text("Enter old password.")
-                        .font(.system(size: 30))
+                        .font(.system(size: 20))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 30)
                     
                     SecureField("Enter old password", text: $password)
                         .multilineTextAlignment(.center)
@@ -42,41 +42,49 @@ struct ResetPassword: View {
                         .disableAutocorrection(true)
 
                     Spacer()
-                        .frame(height: 50)
-        
-        
-                    Text("Enter old password.")
-                        .font(.system(size: 30))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
+                        .frame(height: 30)
                     
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    SecureField("Enter old password", text: $password)
+                    Text("Fogot old password? Click here.")
+                        .font(.system(size: 20))
+                        .foregroundColor(.blue)
                         .multilineTextAlignment(.center)
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 300, height: 40, alignment: .center)
-                        .font(.title)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .cornerRadius(20)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
+                    VStack {
+                        Spacer()
+                            .frame(height: 60)
+                        
+                        Text("Enter NEW password.")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 30)
+                        
+                        SecureField("Enter NEW password", text: $password)
+                            .multilineTextAlignment(.center)
+                            .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 300, height: 40, alignment: .center)
+                            .font(.title)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .cornerRadius(20)
+                            .autocapitalization(.none)
+                            .disableAutocorrection(true)
 
-                    Spacer()
-                        .frame(height: 50)
-        
-    }
-    
-    
-    
-}
+                        Spacer()
+                            .frame(height: 50)
+                        
+              
+                }
             }
+        }
     }
 }
-struct ResetPassword_Previews : PreviewProvider {
+
+    struct ResetPassword_Previews : PreviewProvider {
     static var previews: some View {
         ResetPassword()
     }
 }
+
+    }
 
