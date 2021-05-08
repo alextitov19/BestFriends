@@ -17,7 +17,7 @@ import SwiftUI
 struct InfoViewPage1: View {
 
     var body: some View {
-        
+        NavigationView{
     
   
         ZStack {
@@ -69,7 +69,7 @@ struct InfoViewPage1: View {
                     .frame(height: 25)
                 
                     
-                    Text("STOP! Before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private, harmful messages - just switch to 'Dark' mode.")
+                    Text("STOP! Before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private, harmful messages - just switch to 'Dark' mode on Landing pg.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -112,7 +112,7 @@ struct InfoViewPage1: View {
    
     }
 }
-
+}
 
 // ************************************************
 struct InfoViewPage2: View {
@@ -154,7 +154,7 @@ struct InfoViewPage2: View {
                                     .frame(width: 300, height: 175)
                                     .scaledToFill()
                             
-                                Text("9 of 10 times you'll make up. Let us help stop the hurt!")
+                                Text("9 of 10 times you'll make up. Let us help minimize the hurt!")
                                     .italic()
                                     .font(.system(size: 20))
                                     .fontWeight(.ultraLight)
@@ -199,11 +199,11 @@ struct InfoViewPage2: View {
             .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
             .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
             .cornerRadius(25)
-                
-           
+            
                 
                 Spacer()
                     .frame(height: 50)
+
                 NavigationLink(destination: InfoViewPage3()) {
                                     Text("Next")
                                         .font(.title)
@@ -699,7 +699,7 @@ struct InfoViewPage1_Previews : PreviewProvider {
         InfoViewPage4()
         InfoViewPage5()
         InfoViewPage6()
-       
+        InfoViewPage7()
     }
 }
 

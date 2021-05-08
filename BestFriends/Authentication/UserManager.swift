@@ -30,4 +30,19 @@ class UserManager: ObservableObject {
         }
     }
     
+    func resetPassword(username: String) {
+        Amplify.Auth.resetPassword(for: username) { result in
+            do {
+                let resetResult = try result.get()
+                switch resetResult.nextStep {
+                case .confirmResetPasswordWithCode(let deliveryDetails, let info):
+                    print("Confirm reset password with code send to - \(deliveryDetails) \(info)")
+                case .done:
+                    print("Reset completed")
+                }
+            } catch {
+                print("Reset password failed with error \(error)")
+            }
+        }
+    }
 }

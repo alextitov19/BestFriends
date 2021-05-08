@@ -32,7 +32,7 @@ struct SettingsView: View {
                         NavigationLink(
                             destination: InfoViewPage1(),
                             label: {
-                                Text("Unlock BestFriend's Secrets")
+                                Text("Introducing BestFriend's Secrets")
                             })
                         .frame(width: 300, height: 50, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -55,7 +55,7 @@ struct SettingsView: View {
                         .frame(height: 30)
                  
                 
-                    Link("Report Abuse / Users", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
+                    Link("Report Abuse & Users", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
@@ -73,7 +73,7 @@ struct SettingsView: View {
                         NavigationLink(
                             destination: MyAccount(),
                             label: {
-                                Text("MyAccount")
+                                Text("My Account")
                             })
                         .frame(width: 300, height: 50, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -103,7 +103,7 @@ struct SettingsView: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Button("Delete BestFriends App", action: {
+                        Button("Delete My Accont", action: {
                             
                         })
                         .frame(width: 300, height: 50, alignment: .center)
