@@ -55,6 +55,7 @@
 		84EA879CC8D44C9CB6FBFFCB /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		8F464A0A6BEA4CD09C25CF86 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
 		D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD682647458900BFE179 /* ResetPassword.swift */; };
+		D15CCD6B2647A06E00BFE179 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD6A2647A06E00BFE179 /* ForgotPassword.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
 		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
 		D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */; };
@@ -120,6 +121,7 @@
 		C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		D15CCD682647458900BFE179 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		D15CCD6A2647A06E00BFE179 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFriend.swift; sourceTree = "<group>"; };
 		D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMyFriends.swift; sourceTree = "<group>"; };
@@ -251,13 +253,10 @@
 		7AB62A8326426F7A005A7744 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				D15CCD6526473E6700BFE179 /* MyAccount */,
 				7AB62A8426426F86005A7744 /* SettingsView.swift */,
 				D1D27D39264303E300BDA75F /* InfoPages.swift */,
-				D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */,
-				D1949C442644FE6C00FDB6C5 /* AddFriend.swift */,
-				D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */,
-				D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */,
+				D15CCD6526473E6700BFE179 /* MyAccount */,
+				D15CCD6D2647A10100BFE179 /* ManageMyFriends */,
 				D1949C422644FDA200FDB6C5 /* DeleteBestFriends.swift */,
 			);
 			path = Settings;
@@ -333,8 +332,20 @@
 			children = (
 				D1949C342644E15E00FDB6C5 /* MyAccount.swift */,
 				D15CCD682647458900BFE179 /* ResetPassword.swift */,
+				D15CCD6A2647A06E00BFE179 /* ForgotPassword.swift */,
 			);
 			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		D15CCD6D2647A10100BFE179 /* ManageMyFriends */ = {
+			isa = PBXGroup;
+			children = (
+				D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */,
+				D1949C442644FE6C00FDB6C5 /* AddFriend.swift */,
+				D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */,
+				D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */,
+			);
+			path = ManageMyFriends;
 			sourceTree = "<group>";
 		};
 		DBFB8C7AC87F4062BC821677 /* AmplifyModels */ = {
@@ -519,6 +530,7 @@
 				5CC0808D963A49AE969F958B /* Room.swift in Sources */,
 				31843DD5A561448D8998CA30 /* Room+Schema.swift in Sources */,
 				7A13BE2F263E039D005B98A2 /* Room.swift in Sources */,
+				D15CCD6B2647A06E00BFE179 /* ForgotPassword.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
