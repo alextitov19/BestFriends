@@ -57,6 +57,11 @@
 		D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD682647458900BFE179 /* ResetPassword.swift */; };
 		D15CCD6B2647A06E00BFE179 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD6A2647A06E00BFE179 /* ForgotPassword.swift */; };
 		D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */; };
+		D15CCD722648867F00BFE179 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD712648867F00BFE179 /* Prompts.swift */; };
+		D15CCD74264886A300BFE179 /* ShakingCoolDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */; };
+		D15CCD76264886C900BFE179 /* StickersDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD75264886C900BFE179 /* StickersDark.swift */; };
+		D15CCD78264886E100BFE179 /* PreAgreementDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD77264886E100BFE179 /* PreAgreementDark.swift */; };
+		D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD792648870500BFE179 /* PrizesDark.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
 		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
 		D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */; };
@@ -123,6 +128,11 @@
 		D15CCD682647458900BFE179 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		D15CCD6A2647A06E00BFE179 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
+		D15CCD712648867F00BFE179 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
+		D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolDark.swift; sourceTree = "<group>"; };
+		D15CCD75264886C900BFE179 /* StickersDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersDark.swift; sourceTree = "<group>"; };
+		D15CCD77264886E100BFE179 /* PreAgreementDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreAgreementDark.swift; sourceTree = "<group>"; };
+		D15CCD792648870500BFE179 /* PrizesDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizesDark.swift; sourceTree = "<group>"; };
 		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFriend.swift; sourceTree = "<group>"; };
 		D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMyFriends.swift; sourceTree = "<group>"; };
@@ -183,6 +193,7 @@
 				7A71BD1526252B0200E6FA9E /* amplifyconfiguration.json */,
 				7A71BD1426252B0200E6FA9E /* awsconfiguration.json */,
 				C3F02F5A8A994BECAB094217 /* AmplifyConfig */,
+				D15CCD702648862700BFE179 /* DarkMode */,
 				7A71BCFD2625292A00E6FA9E /* BestFriends */,
 				7A71BCFC2625292A00E6FA9E /* Products */,
 				9E0E510CD719430077541E98 /* Pods */,
@@ -348,6 +359,18 @@
 			path = ManageMyFriends;
 			sourceTree = "<group>";
 		};
+		D15CCD702648862700BFE179 /* DarkMode */ = {
+			isa = PBXGroup;
+			children = (
+				D15CCD712648867F00BFE179 /* Prompts.swift */,
+				D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */,
+				D15CCD75264886C900BFE179 /* StickersDark.swift */,
+				D15CCD77264886E100BFE179 /* PreAgreementDark.swift */,
+				D15CCD792648870500BFE179 /* PrizesDark.swift */,
+			);
+			path = DarkMode;
+			sourceTree = "<group>";
+		};
 		DBFB8C7AC87F4062BC821677 /* AmplifyModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,6 +517,8 @@
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */,
 				D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */,
+				D15CCD722648867F00BFE179 /* Prompts.swift in Sources */,
+				D15CCD78264886E100BFE179 /* PreAgreementDark.swift in Sources */,
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */,
@@ -503,6 +528,7 @@
 				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,
 				7A13BE31263E039D005B98A2 /* User.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
+				D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */,
 				7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */,
@@ -516,6 +542,7 @@
 				7A13BE2D263E039D005B98A2 /* Message.swift in Sources */,
 				84EA879CC8D44C9CB6FBFFCB /* Message+Schema.swift in Sources */,
 				7A13BE30263E039D005B98A2 /* User+Schema.swift in Sources */,
+				D15CCD74264886A300BFE179 /* ShakingCoolDark.swift in Sources */,
 				7AA200FD2635C6EF00C9F00C /* RoomDataSource.swift in Sources */,
 				24481C20A13049E6A98BAB56 /* User.swift in Sources */,
 				D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */,
@@ -529,6 +556,7 @@
 				7AA2010F2635D21100C9F00C /* RoomsView.swift in Sources */,
 				5CC0808D963A49AE969F958B /* Room.swift in Sources */,
 				31843DD5A561448D8998CA30 /* Room+Schema.swift in Sources */,
+				D15CCD76264886C900BFE179 /* StickersDark.swift in Sources */,
 				7A13BE2F263E039D005B98A2 /* Room.swift in Sources */,
 				D15CCD6B2647A06E00BFE179 /* ForgotPassword.swift in Sources */,
 			);

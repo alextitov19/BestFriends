@@ -63,7 +63,7 @@ struct MyAccount: View {
                       NavigationLink(
                           destination: ResetPassword(),
                           label: {
-                              Text("Account Recovery")
+                              Text("Change Email")
                           })
                       .frame(width: 300, height: 50, alignment: .center)
                       .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
