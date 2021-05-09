@@ -1,15 +1,16 @@
 //
-//  DeleteBestFriends.swift
+//  DeleteMyAccount.swift
 //  BestFriends
 //
-//  Created by Robert Roe on 5/7/21.
+//  Created by Robert Roe on 5/9/21.
 //
+
 
 import Amplify
 import SwiftUI
 
 
-struct DeleteBestFriends: View {
+struct DeleteMyAccount: View {
 
     var body: some View {
         NavigationView{
@@ -25,8 +26,8 @@ struct DeleteBestFriends: View {
     }
 }
 
-struct DeleteBestFriend_Previews : PreviewProvider {
+struct DeleteMyAccount_Previews : PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        DeleteMyAccount()
     }
 }
