@@ -60,9 +60,9 @@
 		D15CCD722648867F00BFE179 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD712648867F00BFE179 /* Prompts.swift */; };
 		D15CCD74264886A300BFE179 /* ShakingCoolDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */; };
 		D15CCD76264886C900BFE179 /* StickersDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD75264886C900BFE179 /* StickersDark.swift */; };
-		D15CCD78264886E100BFE179 /* PreAgreementDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD77264886E100BFE179 /* PreAgreementDark.swift */; };
 		D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD792648870500BFE179 /* PrizesDark.swift */; };
 		D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */; };
+		D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD83264908A300BFE179 /* DarkModePage1.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
 		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
 		D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */; };
@@ -132,9 +132,9 @@
 		D15CCD712648867F00BFE179 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
 		D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolDark.swift; sourceTree = "<group>"; };
 		D15CCD75264886C900BFE179 /* StickersDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersDark.swift; sourceTree = "<group>"; };
-		D15CCD77264886E100BFE179 /* PreAgreementDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreAgreementDark.swift; sourceTree = "<group>"; };
 		D15CCD792648870500BFE179 /* PrizesDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizesDark.swift; sourceTree = "<group>"; };
 		D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
+		D15CCD83264908A300BFE179 /* DarkModePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModePage1.swift; sourceTree = "<group>"; };
 		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFriend.swift; sourceTree = "<group>"; };
 		D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMyFriends.swift; sourceTree = "<group>"; };
@@ -364,10 +364,10 @@
 		D15CCD702648862700BFE179 /* DarkMode */ = {
 			isa = PBXGroup;
 			children = (
+				D15CCD83264908A300BFE179 /* DarkModePage1.swift */,
 				D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */,
 				D15CCD712648867F00BFE179 /* Prompts.swift */,
 				D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */,
-				D15CCD77264886E100BFE179 /* PreAgreementDark.swift */,
 				D15CCD75264886C900BFE179 /* StickersDark.swift */,
 				D15CCD792648870500BFE179 /* PrizesDark.swift */,
 			);
@@ -522,7 +522,6 @@
 				7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */,
 				D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */,
 				D15CCD722648867F00BFE179 /* Prompts.swift in Sources */,
-				D15CCD78264886E100BFE179 /* PreAgreementDark.swift in Sources */,
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */,
@@ -534,6 +533,7 @@
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
 				D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
+				D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */,
 				7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */,
 				7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */,
 				7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */,
