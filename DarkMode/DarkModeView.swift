@@ -27,7 +27,7 @@ struct DarkModeView: View {
                     .font(.title)
             
                 Spacer().frame(height: 5)
-                Text("Let's fix this mess!")
+                Text("Pulling the two of you from this wreckage before your hearts become forever dented!")
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
                     .foregroundColor(.white)

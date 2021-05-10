@@ -69,7 +69,7 @@ struct DarkModePage1: View {
                     .frame(height: 25)
                 
                     
-                    Text("STOP! Before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private, harmful messages - just switch to 'Dark' mode on Landing pg.")
+                    Text("STOP! Before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private, harmful messages - give our 'Dark Mode' a try.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -81,7 +81,7 @@ struct DarkModePage1: View {
                     Spacer()
                         .frame(height: 50)
                    
-                Text("Unlocking special features helping you fix this drama.")
+                Text("We unlock special features helping you fix this mess.")
                    
                     .font(.system(size: 25))
                     .fontWeight(.regular)
@@ -92,8 +92,8 @@ struct DarkModePage1: View {
                 
                 Spacer()
                     .frame(height: 50)
-                NavigationLink(destination: InfoViewPage2()) {
-                                    Text("Next")
+                NavigationLink(destination: DarkModeView()) {
+                                    Text("Ok, I agree")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)
