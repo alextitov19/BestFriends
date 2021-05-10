@@ -37,7 +37,7 @@ struct DarkModePage1: View {
                             Spacer()
                                 .frame(height: 125)
                                                     
-                            Image("Penguin Sticker 24")
+                            Image("Penguin4")
                                 .resizable()
                                 .frame(width: 150, height: 150)
                                 .scaledToFill()
@@ -69,7 +69,7 @@ struct DarkModePage1: View {
                     .frame(height: 25)
                 
                     
-                    Text("STOP! Before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private, harmful messages - give our 'Dark Mode' a try.")
+                    Text("STOP! Before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private, harmful, hurtful messages - give 'BlueHeart Mode' a try.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -81,7 +81,7 @@ struct DarkModePage1: View {
                     Spacer()
                         .frame(height: 50)
                    
-                Text("We unlock special features helping you fix this mess.")
+                Text("We'll unlock special features helping you fix this mess.")
                    
                     .font(.system(size: 25))
                     .fontWeight(.regular)
@@ -93,7 +93,7 @@ struct DarkModePage1: View {
                 Spacer()
                     .frame(height: 50)
                 NavigationLink(destination: DarkModeView()) {
-                                    Text("Ok, I agree")
+                                    Text("Ok, fine.")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)

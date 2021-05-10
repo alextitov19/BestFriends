@@ -20,19 +20,39 @@ struct DarkModeView: View {
                 .scaledToFill()
             
             VStack {
-                Text("'DarkMode'")
+                // blueheart try
+               // Spacer()
+                 //   .frame(height: 125)
+                                        
+                Image("blueHeart")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .scaledToFill()
+              //blueheart try ^^^
+                
+                Spacer().frame(height: 25)
+                
+                Text("'BlueHeart'' Mode")
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                     .font(.title)
             
-                Spacer().frame(height: 5)
-                Text("Pulling the two of you from this wreckage before your hearts become forever dented!")
+               
+                
+                Spacer().frame(height: 25)
+                
+                Text("Helping pull the two of you from this wreckage before your hearts become forever dented!")
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                     .font(.title)
             
+                   // try below
+                    .multilineTextAlignment(.center)
+                    .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                
                 Spacer().frame(height: 25)
                 VStack {
                 
@@ -68,12 +88,28 @@ struct DarkModeView: View {
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("Special Stickers")
+                            Text("Special 'BlueHeart' Stickers")
                         })
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
                     .cornerRadius(25)
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    
+                    NavigationLink(
+                        destination: InfoViewPage1(),
+                        label: {
+                            Text("Set time to talk")
+                        })
+                    .frame(width: 325, height: 50, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                    .cornerRadius(25)
+                    
+                    
                     
 }
         }
