@@ -62,6 +62,7 @@
 		D15CCD76264886C900BFE179 /* StickersDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD75264886C900BFE179 /* StickersDark.swift */; };
 		D15CCD78264886E100BFE179 /* PreAgreementDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD77264886E100BFE179 /* PreAgreementDark.swift */; };
 		D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD792648870500BFE179 /* PrizesDark.swift */; };
+		D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
 		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
 		D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */; };
@@ -133,6 +134,7 @@
 		D15CCD75264886C900BFE179 /* StickersDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersDark.swift; sourceTree = "<group>"; };
 		D15CCD77264886E100BFE179 /* PreAgreementDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreAgreementDark.swift; sourceTree = "<group>"; };
 		D15CCD792648870500BFE179 /* PrizesDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizesDark.swift; sourceTree = "<group>"; };
+		D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
 		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFriend.swift; sourceTree = "<group>"; };
 		D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMyFriends.swift; sourceTree = "<group>"; };
@@ -362,10 +364,11 @@
 		D15CCD702648862700BFE179 /* DarkMode */ = {
 			isa = PBXGroup;
 			children = (
+				D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */,
 				D15CCD712648867F00BFE179 /* Prompts.swift */,
 				D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */,
-				D15CCD75264886C900BFE179 /* StickersDark.swift */,
 				D15CCD77264886E100BFE179 /* PreAgreementDark.swift */,
+				D15CCD75264886C900BFE179 /* StickersDark.swift */,
 				D15CCD792648870500BFE179 /* PrizesDark.swift */,
 			);
 			path = DarkMode;
@@ -511,6 +514,7 @@
 				7A71BD5126255BF900E6FA9E /* CaptureImageView.swift in Sources */,
 				7A13BE2E263E039D005B98A2 /* AmplifyModels.swift in Sources */,
 				D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */,
+				D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */,
 				7A13BE32263E039D005B98A2 /* Room+Schema.swift in Sources */,
 				7A6A4CDD262B68A600561D87 /* Message+Extensions.swift in Sources */,
 				7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */,
