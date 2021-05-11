@@ -731,6 +731,200 @@ public struct DeleteUserInput: GraphQLMapConvertible {
   }
 }
 
+public struct CreateNotificationInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID? = nil, targetId: String, targetDevice: String, senderId: String, body: String) {
+    graphQLMap = ["id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body]
+  }
+
+  public var id: GraphQLID? {
+    get {
+      return graphQLMap["id"] as! GraphQLID?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var targetId: String {
+    get {
+      return graphQLMap["targetID"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "targetID")
+    }
+  }
+
+  public var targetDevice: String {
+    get {
+      return graphQLMap["targetDevice"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "targetDevice")
+    }
+  }
+
+  public var senderId: String {
+    get {
+      return graphQLMap["senderID"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "senderID")
+    }
+  }
+
+  public var body: String {
+    get {
+      return graphQLMap["body"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "body")
+    }
+  }
+}
+
+public struct ModelNotificationConditionInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(targetId: ModelStringInput? = nil, targetDevice: ModelStringInput? = nil, senderId: ModelStringInput? = nil, body: ModelStringInput? = nil, and: [ModelNotificationConditionInput?]? = nil, or: [ModelNotificationConditionInput?]? = nil, not: ModelNotificationConditionInput? = nil) {
+    graphQLMap = ["targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "and": and, "or": or, "not": not]
+  }
+
+  public var targetId: ModelStringInput? {
+    get {
+      return graphQLMap["targetID"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "targetID")
+    }
+  }
+
+  public var targetDevice: ModelStringInput? {
+    get {
+      return graphQLMap["targetDevice"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "targetDevice")
+    }
+  }
+
+  public var senderId: ModelStringInput? {
+    get {
+      return graphQLMap["senderID"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "senderID")
+    }
+  }
+
+  public var body: ModelStringInput? {
+    get {
+      return graphQLMap["body"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "body")
+    }
+  }
+
+  public var and: [ModelNotificationConditionInput?]? {
+    get {
+      return graphQLMap["and"] as! [ModelNotificationConditionInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "and")
+    }
+  }
+
+  public var or: [ModelNotificationConditionInput?]? {
+    get {
+      return graphQLMap["or"] as! [ModelNotificationConditionInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "or")
+    }
+  }
+
+  public var not: ModelNotificationConditionInput? {
+    get {
+      return graphQLMap["not"] as! ModelNotificationConditionInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "not")
+    }
+  }
+}
+
+public struct UpdateNotificationInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID, targetId: String? = nil, targetDevice: String? = nil, senderId: String? = nil, body: String? = nil) {
+    graphQLMap = ["id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body]
+  }
+
+  public var id: GraphQLID {
+    get {
+      return graphQLMap["id"] as! GraphQLID
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var targetId: String? {
+    get {
+      return graphQLMap["targetID"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "targetID")
+    }
+  }
+
+  public var targetDevice: String? {
+    get {
+      return graphQLMap["targetDevice"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "targetDevice")
+    }
+  }
+
+  public var senderId: String? {
+    get {
+      return graphQLMap["senderID"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "senderID")
+    }
+  }
+
+  public var body: String? {
+    get {
+      return graphQLMap["body"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "body")
+    }
+  }
+}
+
+public struct DeleteNotificationInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID? = nil) {
+    graphQLMap = ["id": id]
+  }
+
+  public var id: GraphQLID? {
+    get {
+      return graphQLMap["id"] as! GraphQLID?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+}
+
 public struct ModelRoomFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -1009,6 +1203,86 @@ public struct ModelUserFilterInput: GraphQLMapConvertible {
   public var not: ModelUserFilterInput? {
     get {
       return graphQLMap["not"] as! ModelUserFilterInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "not")
+    }
+  }
+}
+
+public struct ModelNotificationFilterInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: ModelIDInput? = nil, targetId: ModelStringInput? = nil, targetDevice: ModelStringInput? = nil, senderId: ModelStringInput? = nil, body: ModelStringInput? = nil, and: [ModelNotificationFilterInput?]? = nil, or: [ModelNotificationFilterInput?]? = nil, not: ModelNotificationFilterInput? = nil) {
+    graphQLMap = ["id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "and": and, "or": or, "not": not]
+  }
+
+  public var id: ModelIDInput? {
+    get {
+      return graphQLMap["id"] as! ModelIDInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var targetId: ModelStringInput? {
+    get {
+      return graphQLMap["targetID"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "targetID")
+    }
+  }
+
+  public var targetDevice: ModelStringInput? {
+    get {
+      return graphQLMap["targetDevice"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "targetDevice")
+    }
+  }
+
+  public var senderId: ModelStringInput? {
+    get {
+      return graphQLMap["senderID"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "senderID")
+    }
+  }
+
+  public var body: ModelStringInput? {
+    get {
+      return graphQLMap["body"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "body")
+    }
+  }
+
+  public var and: [ModelNotificationFilterInput?]? {
+    get {
+      return graphQLMap["and"] as! [ModelNotificationFilterInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "and")
+    }
+  }
+
+  public var or: [ModelNotificationFilterInput?]? {
+    get {
+      return graphQLMap["or"] as! [ModelNotificationFilterInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "or")
+    }
+  }
+
+  public var not: ModelNotificationFilterInput? {
+    get {
+      return graphQLMap["not"] as! ModelNotificationFilterInput?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "not")
@@ -2153,6 +2427,429 @@ public final class DeleteUserMutation: GraphQLMutation {
   }
 }
 
+public final class CreateNotificationMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation CreateNotification($input: CreateNotificationInput!, $condition: ModelNotificationConditionInput) {\n  createNotification(input: $input, condition: $condition) {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: CreateNotificationInput
+  public var condition: ModelNotificationConditionInput?
+
+  public init(input: CreateNotificationInput, condition: ModelNotificationConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("createNotification", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(CreateNotification.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(createNotification: CreateNotification? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "createNotification": createNotification.flatMap { $0.snapshot }])
+    }
+
+    public var createNotification: CreateNotification? {
+      get {
+        return (snapshot["createNotification"] as? Snapshot).flatMap { CreateNotification(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "createNotification")
+      }
+    }
+
+    public struct CreateNotification: GraphQLSelectionSet {
+      public static let possibleTypes = ["Notification"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var targetId: String {
+        get {
+          return snapshot["targetID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetID")
+        }
+      }
+
+      public var targetDevice: String {
+        get {
+          return snapshot["targetDevice"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetDevice")
+        }
+      }
+
+      public var senderId: String {
+        get {
+          return snapshot["senderID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "senderID")
+        }
+      }
+
+      public var body: String {
+        get {
+          return snapshot["body"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "body")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class UpdateNotificationMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation UpdateNotification($input: UpdateNotificationInput!, $condition: ModelNotificationConditionInput) {\n  updateNotification(input: $input, condition: $condition) {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: UpdateNotificationInput
+  public var condition: ModelNotificationConditionInput?
+
+  public init(input: UpdateNotificationInput, condition: ModelNotificationConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("updateNotification", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(UpdateNotification.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(updateNotification: UpdateNotification? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "updateNotification": updateNotification.flatMap { $0.snapshot }])
+    }
+
+    public var updateNotification: UpdateNotification? {
+      get {
+        return (snapshot["updateNotification"] as? Snapshot).flatMap { UpdateNotification(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "updateNotification")
+      }
+    }
+
+    public struct UpdateNotification: GraphQLSelectionSet {
+      public static let possibleTypes = ["Notification"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var targetId: String {
+        get {
+          return snapshot["targetID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetID")
+        }
+      }
+
+      public var targetDevice: String {
+        get {
+          return snapshot["targetDevice"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetDevice")
+        }
+      }
+
+      public var senderId: String {
+        get {
+          return snapshot["senderID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "senderID")
+        }
+      }
+
+      public var body: String {
+        get {
+          return snapshot["body"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "body")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class DeleteNotificationMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation DeleteNotification($input: DeleteNotificationInput!, $condition: ModelNotificationConditionInput) {\n  deleteNotification(input: $input, condition: $condition) {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: DeleteNotificationInput
+  public var condition: ModelNotificationConditionInput?
+
+  public init(input: DeleteNotificationInput, condition: ModelNotificationConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("deleteNotification", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(DeleteNotification.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(deleteNotification: DeleteNotification? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "deleteNotification": deleteNotification.flatMap { $0.snapshot }])
+    }
+
+    public var deleteNotification: DeleteNotification? {
+      get {
+        return (snapshot["deleteNotification"] as? Snapshot).flatMap { DeleteNotification(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "deleteNotification")
+      }
+    }
+
+    public struct DeleteNotification: GraphQLSelectionSet {
+      public static let possibleTypes = ["Notification"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var targetId: String {
+        get {
+          return snapshot["targetID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetID")
+        }
+      }
+
+      public var targetDevice: String {
+        get {
+          return snapshot["targetDevice"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetDevice")
+        }
+      }
+
+      public var senderId: String {
+        get {
+          return snapshot["senderID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "senderID")
+        }
+      }
+
+      public var body: String {
+        get {
+          return snapshot["body"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "body")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
 public final class GetRoomQuery: GraphQLQuery {
   public static let operationString =
     "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
@@ -2980,6 +3677,335 @@ public final class ListUsersQuery: GraphQLQuery {
           }
           set {
             snapshot.updateValue(newValue, forKey: "rooms")
+          }
+        }
+
+        public var createdAt: String {
+          get {
+            return snapshot["createdAt"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "createdAt")
+          }
+        }
+
+        public var updatedAt: String {
+          get {
+            return snapshot["updatedAt"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "updatedAt")
+          }
+        }
+      }
+    }
+  }
+}
+
+public final class GetNotificationQuery: GraphQLQuery {
+  public static let operationString =
+    "query GetNotification($id: ID!) {\n  getNotification(id: $id) {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var id: GraphQLID
+
+  public init(id: GraphQLID) {
+    self.id = id
+  }
+
+  public var variables: GraphQLMap? {
+    return ["id": id]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Query"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("getNotification", arguments: ["id": GraphQLVariable("id")], type: .object(GetNotification.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(getNotification: GetNotification? = nil) {
+      self.init(snapshot: ["__typename": "Query", "getNotification": getNotification.flatMap { $0.snapshot }])
+    }
+
+    public var getNotification: GetNotification? {
+      get {
+        return (snapshot["getNotification"] as? Snapshot).flatMap { GetNotification(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "getNotification")
+      }
+    }
+
+    public struct GetNotification: GraphQLSelectionSet {
+      public static let possibleTypes = ["Notification"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var targetId: String {
+        get {
+          return snapshot["targetID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetID")
+        }
+      }
+
+      public var targetDevice: String {
+        get {
+          return snapshot["targetDevice"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetDevice")
+        }
+      }
+
+      public var senderId: String {
+        get {
+          return snapshot["senderID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "senderID")
+        }
+      }
+
+      public var body: String {
+        get {
+          return snapshot["body"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "body")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class ListNotificationsQuery: GraphQLQuery {
+  public static let operationString =
+    "query ListNotifications($filter: ModelNotificationFilterInput, $limit: Int, $nextToken: String) {\n  listNotifications(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      targetID\n      targetDevice\n      senderID\n      body\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+
+  public var filter: ModelNotificationFilterInput?
+  public var limit: Int?
+  public var nextToken: String?
+
+  public init(filter: ModelNotificationFilterInput? = nil, limit: Int? = nil, nextToken: String? = nil) {
+    self.filter = filter
+    self.limit = limit
+    self.nextToken = nextToken
+  }
+
+  public var variables: GraphQLMap? {
+    return ["filter": filter, "limit": limit, "nextToken": nextToken]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Query"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("listNotifications", arguments: ["filter": GraphQLVariable("filter"), "limit": GraphQLVariable("limit"), "nextToken": GraphQLVariable("nextToken")], type: .object(ListNotification.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(listNotifications: ListNotification? = nil) {
+      self.init(snapshot: ["__typename": "Query", "listNotifications": listNotifications.flatMap { $0.snapshot }])
+    }
+
+    public var listNotifications: ListNotification? {
+      get {
+        return (snapshot["listNotifications"] as? Snapshot).flatMap { ListNotification(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "listNotifications")
+      }
+    }
+
+    public struct ListNotification: GraphQLSelectionSet {
+      public static let possibleTypes = ["ModelNotificationConnection"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("items", type: .list(.object(Item.selections))),
+        GraphQLField("nextToken", type: .scalar(String.self)),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(items: [Item?]? = nil, nextToken: String? = nil) {
+        self.init(snapshot: ["__typename": "ModelNotificationConnection", "items": items.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "nextToken": nextToken])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var items: [Item?]? {
+        get {
+          return (snapshot["items"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { Item(snapshot: $0) } } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "items")
+        }
+      }
+
+      public var nextToken: String? {
+        get {
+          return snapshot["nextToken"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "nextToken")
+        }
+      }
+
+      public struct Item: GraphQLSelectionSet {
+        public static let possibleTypes = ["Notification"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
+          GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("body", type: .nonNull(.scalar(String.self))),
+          GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+          GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var targetId: String {
+          get {
+            return snapshot["targetID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "targetID")
+          }
+        }
+
+        public var targetDevice: String {
+          get {
+            return snapshot["targetDevice"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "targetDevice")
+          }
+        }
+
+        public var senderId: String {
+          get {
+            return snapshot["senderID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderID")
+          }
+        }
+
+        public var body: String {
+          get {
+            return snapshot["body"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "body")
           }
         }
 
@@ -4064,6 +5090,402 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "rooms")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class OnCreateNotificationSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnCreateNotification {\n  onCreateNotification {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onCreateNotification", type: .object(OnCreateNotification.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onCreateNotification: OnCreateNotification? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onCreateNotification": onCreateNotification.flatMap { $0.snapshot }])
+    }
+
+    public var onCreateNotification: OnCreateNotification? {
+      get {
+        return (snapshot["onCreateNotification"] as? Snapshot).flatMap { OnCreateNotification(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onCreateNotification")
+      }
+    }
+
+    public struct OnCreateNotification: GraphQLSelectionSet {
+      public static let possibleTypes = ["Notification"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var targetId: String {
+        get {
+          return snapshot["targetID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetID")
+        }
+      }
+
+      public var targetDevice: String {
+        get {
+          return snapshot["targetDevice"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetDevice")
+        }
+      }
+
+      public var senderId: String {
+        get {
+          return snapshot["senderID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "senderID")
+        }
+      }
+
+      public var body: String {
+        get {
+          return snapshot["body"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "body")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class OnUpdateNotificationSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnUpdateNotification {\n  onUpdateNotification {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onUpdateNotification", type: .object(OnUpdateNotification.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onUpdateNotification: OnUpdateNotification? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onUpdateNotification": onUpdateNotification.flatMap { $0.snapshot }])
+    }
+
+    public var onUpdateNotification: OnUpdateNotification? {
+      get {
+        return (snapshot["onUpdateNotification"] as? Snapshot).flatMap { OnUpdateNotification(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onUpdateNotification")
+      }
+    }
+
+    public struct OnUpdateNotification: GraphQLSelectionSet {
+      public static let possibleTypes = ["Notification"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var targetId: String {
+        get {
+          return snapshot["targetID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetID")
+        }
+      }
+
+      public var targetDevice: String {
+        get {
+          return snapshot["targetDevice"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetDevice")
+        }
+      }
+
+      public var senderId: String {
+        get {
+          return snapshot["senderID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "senderID")
+        }
+      }
+
+      public var body: String {
+        get {
+          return snapshot["body"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "body")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class OnDeleteNotificationSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnDeleteNotification {\n  onDeleteNotification {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onDeleteNotification", type: .object(OnDeleteNotification.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onDeleteNotification: OnDeleteNotification? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onDeleteNotification": onDeleteNotification.flatMap { $0.snapshot }])
+    }
+
+    public var onDeleteNotification: OnDeleteNotification? {
+      get {
+        return (snapshot["onDeleteNotification"] as? Snapshot).flatMap { OnDeleteNotification(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onDeleteNotification")
+      }
+    }
+
+    public struct OnDeleteNotification: GraphQLSelectionSet {
+      public static let possibleTypes = ["Notification"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var targetId: String {
+        get {
+          return snapshot["targetID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetID")
+        }
+      }
+
+      public var targetDevice: String {
+        get {
+          return snapshot["targetDevice"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "targetDevice")
+        }
+      }
+
+      public var senderId: String {
+        get {
+          return snapshot["senderID"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "senderID")
+        }
+      }
+
+      public var body: String {
+        get {
+          return snapshot["body"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "body")
         }
       }
 

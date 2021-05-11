@@ -107,3 +107,45 @@ mutation DeleteUser(
     updatedAt
   }
 }
+mutation CreateNotification(
+  $input: CreateNotificationInput!
+  $condition: ModelNotificationConditionInput
+) {
+  createNotification(input: $input, condition: $condition) {
+    id
+    targetID
+    targetDevice
+    senderID
+    body
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateNotification(
+  $input: UpdateNotificationInput!
+  $condition: ModelNotificationConditionInput
+) {
+  updateNotification(input: $input, condition: $condition) {
+    id
+    targetID
+    targetDevice
+    senderID
+    body
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteNotification(
+  $input: DeleteNotificationInput!
+  $condition: ModelNotificationConditionInput
+) {
+  deleteNotification(input: $input, condition: $condition) {
+    id
+    targetID
+    targetDevice
+    senderID
+    body
+    createdAt
+    updatedAt
+  }
+}

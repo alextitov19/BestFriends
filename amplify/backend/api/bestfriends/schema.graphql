@@ -23,3 +23,12 @@ type User @model {
   friends: [String]
   rooms: [String]
 }
+
+type Notification @model {
+  id: ID!
+  targetID: String!
+  targetDevice: String!
+  senderID: String!
+  body: String!
+
+}

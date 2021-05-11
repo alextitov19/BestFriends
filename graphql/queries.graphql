@@ -73,3 +73,32 @@ query ListUsers(
     nextToken
   }
 }
+query GetNotification($id: ID!) {
+  getNotification(id: $id) {
+    id
+    targetID
+    targetDevice
+    senderID
+    body
+    createdAt
+    updatedAt
+  }
+}
+query ListNotifications(
+  $filter: ModelNotificationFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listNotifications(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      targetID
+      targetDevice
+      senderID
+      body
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

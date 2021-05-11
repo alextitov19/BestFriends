@@ -89,3 +89,36 @@ subscription OnDeleteUser {
     updatedAt
   }
 }
+subscription OnCreateNotification {
+  onCreateNotification {
+    id
+    targetID
+    targetDevice
+    senderID
+    body
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateNotification {
+  onUpdateNotification {
+    id
+    targetID
+    targetDevice
+    senderID
+    body
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteNotification {
+  onDeleteNotification {
+    id
+    targetID
+    targetDevice
+    senderID
+    body
+    createdAt
+    updatedAt
+  }
+}
