@@ -32,7 +32,7 @@ struct DarkModeView: View {
                 
                 Spacer().frame(height: 25)
                 
-                Text("'BlueHeart'' Mode")
+                Text("'BlueMode'")
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
                     .foregroundColor(.blue)
@@ -73,7 +73,7 @@ struct DarkModeView: View {
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("ShakingCool-Together")
+                            Text("ShakingCool-Do NOT send hurtful images; you will be blocked.")
                         })
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -88,7 +88,7 @@ struct DarkModeView: View {
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("Special 'BlueHeart' Stickers")
+                            Text("Special 'BlueMode' Stickers")
                         })
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
