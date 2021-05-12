@@ -1,19 +1,6 @@
 {
     "UserAgent": "aws-amplify-cli/2.0",
     "Version": "1.0",
-    "analytics": {
-        "plugins": {
-            "awsPinpointAnalyticsPlugin": {
-                "pinpointAnalytics": {
-                    "appId": "50ff58db8ed84bd49f77a6b6228cd0c7",
-                    "region": "us-east-1"
-                },
-                "pinpointTargeting": {
-                    "region": "us-east-1"
-                }
-            }
-        }
-    },
     "api": {
         "plugins": {
             "awsAPIPlugin": {
@@ -87,17 +74,6 @@
                     "Default": {
                         "Bucket": "bestfriendsattachments182511-dev",
                         "Region": "us-east-2"
-                    }
-                },
-                "PinpointAnalytics": {
-                    "Default": {
-                        "AppId": "50ff58db8ed84bd49f77a6b6228cd0c7",
-                        "Region": "us-east-1"
-                    }
-                },
-                "PinpointTargeting": {
-                    "Default": {
-                        "Region": "us-east-1"
                     }
                 }
             }
