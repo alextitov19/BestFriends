@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+       
+                
 struct LongTapTest: View {
     // 1.
     @State var circleColor = Color.yellow
@@ -22,9 +24,6 @@ struct LongTapTest: View {
         .onEnded { _ in
             if self.circleColor == .yellow {
                 self.circleColor = .red
-                
-                
-                
             } else {
                 self.circleColor = .yellow
             }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LT3: View {
+struct ContentView: View {
     var body: some View {
         VStack {
             Text("On long press")
@@ -22,17 +22,9 @@ struct LT3: View {
     
     var menuItems: some View {
         Group {
-            Button("Swith to BlueMode", action: {})
-            
-            
-            Button("Block Friend", action: {})
-            
-            
-            Button("Delete Friend", action: {})
-            
-            
-            
-            
+            Button("Action 1", action: {})
+            Button("Action 2", action: {})
+            Button("Action 3", action: {})
         }
     }
 }
