@@ -31,25 +31,13 @@ struct BlueModeNotReadyTalk: View {
                 
                 Spacer().frame(height: 25)
                 
-                Text("'Not Quite Ready to Talk Yet?'")
+                Text("Not Talking? Let's give this a try.")
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
                     .foregroundColor(.blue)
                     .font(.title)
             
-               
-                
-                Spacer().frame(height: 25)
-                
-                Text("Helping pull the two of you from this wreckage before your hearts become forever dented!")
-                    .navigationBarTitle("")
-                    .navigationBarHidden(true)
-                    .foregroundColor(.blue)
-                    .font(.title)
-            
-                   // try below
-                    .multilineTextAlignment(.center)
-                    .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+             
                 
                 
                 Spacer().frame(height: 25)
@@ -64,7 +52,7 @@ struct BlueModeNotReadyTalk: View {
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("ShakingCool-Do NOT send hurtful images; you will be blocked.")
+                            Text("'ShakingCool-BlueMode' Send an image of the two from better days. ***")
                         })
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -79,7 +67,7 @@ struct BlueModeNotReadyTalk: View {
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("Special 'BlueMode' Stickers")
+                            Text("Let a special 'BlueMode - Sticker' say the first words for you.")
                         })
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -101,7 +89,18 @@ struct BlueModeNotReadyTalk: View {
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
                     .cornerRadius(25)
-}
+
+                    Spacer().frame(height: 75)
+                    
+                    Text("*** Do NOT send hurtful images in ShakingCool: You will be blocked.")
+                        .navigationBarTitle("")
+                        .navigationBarHidden(true)
+                        .foregroundColor(.blue)
+                        .font(.title)
+                
+                
+                
+                }
         }
     }
 }
