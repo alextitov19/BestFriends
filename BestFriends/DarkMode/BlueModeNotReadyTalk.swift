@@ -52,7 +52,7 @@ struct BlueModeNotReadyTalk: View {
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("'ShakingCool-BlueMode' Send an image of the two from better days. ***")
+                            Text("When your frind shakes their phone an image of the two from better days pops up. ***")
                         })
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -67,7 +67,7 @@ struct BlueModeNotReadyTalk: View {
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("Let a special 'BlueMode - Sticker' say the first words for you.")
+                            Text("Unlock special stickers to say the first words for you.")
                         })
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -92,7 +92,7 @@ struct BlueModeNotReadyTalk: View {
 
                     Spacer().frame(height: 75)
                     
-                    Text("*** Do NOT send hurtful images in ShakingCool: You will be blocked.")
+                    Text("*** Do NOT upload hurtful images in ShakingCool: You will be blocked.")
                         .navigationBarTitle("")
                         .navigationBarHidden(true)
                         .foregroundColor(.blue)
