@@ -897,8 +897,8 @@ struct SignUpQuestionPage2: View {
             VStack {
                 VStack {
                    
-                    Text("💕We're changing how social media gathers information about it's users.")
-                        .font(.system(size: 30))
+                    Text("💕We're changing how social media gathers information.")
+                        .font(.system(size: 25))
                         .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
                         .frame(width: 350)
                         .multilineTextAlignment(.center)
@@ -931,12 +931,14 @@ struct SignUpQuestionPage2: View {
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
                         
-                            Text("Next")
-                                .font(.title)
-                                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                .frame(width: 200, height: 50)
-                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                .cornerRadius(25)
+                        Text("Next")
+                            .font(.title)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 200, height: 50)
+                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                        
+                           
                        
                         Spacer()
                             .frame(height: 50)
