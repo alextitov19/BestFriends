@@ -23,13 +23,13 @@ struct ResetPassword: View {
                     .scaledToFill()
                 
                 VStack {
-                    Text("Reset Password.")
+                    Text("Reset Password")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 50)
                     
                     SecureField("Enter OLD password", text: $password)
                         .multilineTextAlignment(.center)
