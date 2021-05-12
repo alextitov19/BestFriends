@@ -31,6 +31,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
         return true
     }
+    
+    
+    // MARK: Background fetch
+    
+    func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+//        // fetch data from internet now
+//        guard let data = fetchSomeData() else {
+//            // data download failed
+//            completionHandler(.failed)
+//            return
+//        }
+//
+//        if data.isNew {
+//            // data download succeeded and is new
+//            completionHandler(.newData)
+//        } else {
+//            // data downloaded succeeded and is not new
+//            completionHandler(.noData)
+//        }
+    }
+    
+    
+    
+    
+    
 
     // MARK: Push Notification methods
 
