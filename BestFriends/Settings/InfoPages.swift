@@ -69,7 +69,7 @@ struct InfoViewPage1: View {
                     .frame(height: 25)
                 
                     
-                    Text("STOP! Before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private, harmful messages - just switch to 'Dark' mode on Landing pg.")
+                    Text("Please STOP! We know you're upset and hurt. But, before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private messages that will be hurtful - let's give 'BlueMode' a try.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -81,7 +81,7 @@ struct InfoViewPage1: View {
                     Spacer()
                         .frame(height: 50)
                    
-                Text("Unlocking special features helping you fix this drama.")
+                Text("* From Homepage just 'long-tap' your friends star unlocking special features helping you fix this drama.")
                    
                     .font(.system(size: 25))
                     .fontWeight(.regular)

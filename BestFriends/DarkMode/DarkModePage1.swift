@@ -69,7 +69,7 @@ struct DarkModePage1: View {
                     .frame(height: 25)
                 
                     
-                    Text("Please STOP! We know you're upset and hurt. But, before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private, harmful, hurtful messages - let's give 'BlueMode' a try.")
+                    Text("Please STOP! We know you're upset and hurt. But, before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private messages that will be hurtful - let's give 'BlueMode' a try.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
