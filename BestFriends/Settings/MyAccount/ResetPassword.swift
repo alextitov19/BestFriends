@@ -23,7 +23,7 @@ struct ResetPassword: View {
                     .scaledToFill()
                 
                 VStack {
-                    Text("Enter old password.")
+                    Text("Reset Password.")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -41,15 +41,7 @@ struct ResetPassword: View {
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
 
-                    Spacer()
-                        .frame(height: 30)
-                    
-              
-                        
-                        Text("Enter NEW password.")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
+                 
                         
                         Spacer()
                             .frame(height: 30)
