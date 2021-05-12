@@ -38,7 +38,7 @@ struct BestFriendsApp: App {
             }
         }
     }
-    
+   
     private func configureAmplify() {
         do {
             let models = AmplifyModels()
@@ -56,3 +56,7 @@ struct BestFriendsApp: App {
     
     
 }
+
+
+
+
