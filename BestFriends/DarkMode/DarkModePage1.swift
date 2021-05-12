@@ -69,7 +69,7 @@ struct DarkModePage1: View {
                     .frame(height: 25)
                 
                     
-                    Text("STOP! Before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private, harmful, hurtful messages - give 'BlueHeart Mode' a try.")
+                    Text("Please STOP! We know you're upset & hurt. But before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private messages that will hurt - let's give 'BlueMode' a try.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -93,7 +93,7 @@ struct DarkModePage1: View {
                 Spacer()
                     .frame(height: 50)
                 NavigationLink(destination: DarkModeView()) {
-                                    Text("Ok, fine.")
+                                    Text("Ok, I'll try.")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)
