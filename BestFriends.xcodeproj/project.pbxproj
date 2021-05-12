@@ -67,7 +67,6 @@
 		D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD792648870500BFE179 /* PrizesDark.swift */; };
 		D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */; };
 		D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD83264908A300BFE179 /* DarkModePage1.swift */; };
-		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
 		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
 		D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */; };
 		D1949C412644FD4F00FDB6C5 /* DeleteFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */; };
@@ -143,7 +142,6 @@
 		D15CCD792648870500BFE179 /* PrizesDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizesDark.swift; sourceTree = "<group>"; };
 		D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
 		D15CCD83264908A300BFE179 /* DarkModePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModePage1.swift; sourceTree = "<group>"; };
-		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFriend.swift; sourceTree = "<group>"; };
 		D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMyFriends.swift; sourceTree = "<group>"; };
 		D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFriend.swift; sourceTree = "<group>"; };
@@ -353,7 +351,6 @@
 		D15CCD6526473E6700BFE179 /* MyAccount */ = {
 			isa = PBXGroup;
 			children = (
-				D1949C342644E15E00FDB6C5 /* MyAccount.swift */,
 				D15CCD682647458900BFE179 /* ResetPassword.swift */,
 				D15CCD6A2647A06E00BFE179 /* ForgotPassword.swift */,
 			);
@@ -530,7 +527,6 @@
 				7A9AB6C3264B232B00D47971 /* Notification+Schema.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */,
-				D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */,
 				D15CCD722648867F00BFE179 /* Prompts.swift in Sources */,
 				7A9AB6C2264B232B00D47971 /* Message.swift in Sources */,
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
