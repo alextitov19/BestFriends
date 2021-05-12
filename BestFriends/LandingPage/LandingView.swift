@@ -119,7 +119,6 @@ struct LandingView: View {
                                 .default(Text("Photo Library")) { self.showingImagePicker = true },
                                 .cancel()
                             ])
-                            
                         }
                         .sheet(isPresented: $showingSheet) {
                                     QRCodeView(image: myQRCode)

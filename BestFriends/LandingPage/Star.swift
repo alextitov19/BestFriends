@@ -11,6 +11,7 @@ struct Star: View {
     var id: String
     var name: String
     @State var isSelected = false
+    @State var showingActionSheet = false
     var image = Image(uiImage: UIImage(named: "starBig")!)
     
     var body: some View {
@@ -18,6 +19,10 @@ struct Star: View {
             Text(name)
                 .font(.headline)
                 .foregroundColor(.white)
+                .gesture(LongPressGesture(minimumDuration: 1)
+                .onEnded { _ in
+                    showingActionSheet = true
+                })
         
             Button(action: {
                 isSelected.toggle()
@@ -31,6 +36,24 @@ struct Star: View {
                     
               }
         }
+        .actionSheet(isPresented: $showingActionSheet) {
+            ActionSheet(title: Text("Manage \(name)"), message: Text("Before you block or delete your friend, try BlueMode!"), buttons: [
+                .default(Text("Switch to BlueMode")) {
+                    // Code for switching to BlueMode below
+                    
+                },
+                .default(Text("Block \(name)")) {
+                    // Code for blocking your friend below
+                    
+                },
+                .default(Text("Delete \(name)")) {
+                    // Code for deleting your friend below
+                    
+                },
+                .cancel()
+            ])
+        }
+        
     }
    
 }
