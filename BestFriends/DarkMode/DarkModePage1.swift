@@ -69,11 +69,7 @@ struct DarkModePage1: View {
                     .frame(height: 25)
                 
                     
-<<<<<<< Updated upstream:BestFriends/DarkMode/DarkModePage1.swift
                     Text("Please STOP! We know you're upset & hurt. But before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private messages that will hurt - let's give 'BlueMode' a try.")
-=======
-                    Text("Please STOP! We know you're upset. Before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private, hurtful messages - let's give 'BlueMode' a try.")
->>>>>>> Stashed changes:DarkMode/DarkModePage1.swift
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)

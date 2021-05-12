@@ -72,26 +72,24 @@ struct ResetPassword: View {
 
                         Spacer()
                             .frame(height: 50)
-                        Text("Register")
+                        
+                        Text("Submit")
                             .font(.title)
-                    }
-                    .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4) ? 50 : 0))
-                    .disabled(!(didTap1 || didTap2 || didTap3 || didTap4))
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 200, height: 50)
+                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
               
-                }
+                        Spacer()
+                            .frame(height: 50)
+                
             }
         }
     }
 }
 
-    struct ResetPassword_Previews : PreviewProvider {
-    static var previews: some View {
-        ResetPassword()
+   
     }
 }
 
-    }
-
+  
