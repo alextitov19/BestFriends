@@ -31,7 +31,7 @@ struct ResetPassword: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    SecureField("Enter old password", text: $password)
+                    SecureField("Enter OLD password", text: $password)
                         .multilineTextAlignment(.center)
                         .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .frame(width: 300, height: 40, alignment: .center)
@@ -44,13 +44,7 @@ struct ResetPassword: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("Fogot old password? Click here.")
-                        .font(.system(size: 20))
-                        .foregroundColor(.blue)
-                        .multilineTextAlignment(.center)
-                    VStack {
-                        Spacer()
-                            .frame(height: 60)
+              
                         
                         Text("Enter NEW password.")
                             .font(.system(size: 20))
@@ -90,6 +84,6 @@ struct ResetPassword: View {
 
    
     }
-}
+
 
   
