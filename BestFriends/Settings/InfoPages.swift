@@ -81,7 +81,7 @@ struct InfoViewPage1: View {
                     Spacer()
                         .frame(height: 50)
                    
-                Text("* From Homepage just 'long-tap' your friends star unlocking special features helping you fix this hurt.")
+                Text("* From Homepage just 'long-tap' your friends 'name' unlocking special features helping you fix this hurt.")
                    
                     .font(.system(size: 25))
                     .fontWeight(.regular)
@@ -170,9 +170,13 @@ struct InfoViewPage2: View {
                    
               
                 
-                Button("Send a special 'BlueMode' sticker saying the words you can't seem to say.", action: {
-
-                })
+                Button(action: {
+                              
+                            }) {
+                    Text("Send a special 'BlueMode Sticker' saying the words you can't seem to say.")
+                                    .frame(width: 325, height: 80, alignment: .center)
+                                       
+                              }
                 .frame(width: 400, height: 75, alignment: .center)
                 .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
@@ -181,9 +185,15 @@ struct InfoViewPage2: View {
                     Spacer()
                         .frame(height: 30)
                
-                Button("Activate 'ShakingCool-BlueMode', allowing your friend to see your images. Send one of you both smiling.", action: {
-
-                })
+                
+                
+                Button(action: {
+                              
+                            }) {
+                    Text("ShakingCool-BlueMode', allowing your friend to see your images. Send one of you both smiling.")
+                                    .frame(width: 325, height: 80, alignment: .center)
+                
+                }
                 .frame(width: 400, height: 75, alignment: .center)
                 .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
@@ -192,9 +202,14 @@ struct InfoViewPage2: View {
                 Spacer()
                     .frame(height: 30)
            
-            Button("Don't know where to start. Send a proven 'reconciliation' prompt.", action: {
-
-            })
+                
+                Button(action: {
+                              
+                            }) {
+                    Text("Don't know where to start. Send a proven 'reconciliation' prompt.")
+                                    .frame(width: 325, height: 80, alignment: .center)
+            
+            }
             .frame(width: 400, height: 75, alignment: .center)
             .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
             .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
