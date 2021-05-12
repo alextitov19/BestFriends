@@ -896,12 +896,14 @@ struct SignUpQuestionPage2: View {
             
             VStack {
                 VStack {
-                    
-                    Text("We hope you'll like our new approach.")
+                   
+                    Text("💕We're changing how social media gathers information about it's users.")
                         .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
-                        .frame(width: 400)
+                        .frame(width: 350)
                         .multilineTextAlignment(.center)
+                    
+                   
                     Spacer()
                         .frame(height: 75)
                     
@@ -935,7 +937,11 @@ struct SignUpQuestionPage2: View {
                                 .frame(width: 200, height: 50)
                                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                 .cornerRadius(25)
+                       
+                        Spacer()
+                            .frame(height: 50)
                         
+                     
                     }
     
     Spacer()
@@ -1048,12 +1054,6 @@ struct SignUpQuestionPage3: View {
                     
                 }
                 
-                Text("💕We're changing how social media gathers information about it's users. ")
-                    .font(.system(size: 25))
-                    .foregroundColor(.white)
-                    .italic()
-                    .frame(width: 400)
-                    .multilineTextAlignment(.center)
                 
             
                    
@@ -1091,7 +1091,7 @@ struct SignUpQuestionPage3: View {
                     userMamager.create(user)
                     
                 }) {
-                    Text("Register")
+                    Text("Submit")
                         .font(.title)
                 }
                 .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4) ? 50 : 0))
@@ -1100,6 +1100,15 @@ struct SignUpQuestionPage3: View {
                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                 .cornerRadius(25)
                 
+                Spacer()
+                    .frame(height: 30)
+                
+                
+                Link("By tapping [Submit] you agree to our Privacy Policy & Terms of Service", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
+                .frame(width: 325, height: 50, alignment: .center)
+                .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                .cornerRadius(25)
                 
                 
                 

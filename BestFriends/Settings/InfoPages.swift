@@ -53,7 +53,7 @@ struct InfoViewPage1: View {
                                     .frame(width: 300, height: 175)
                                     .scaledToFill()
                             
-                                Text("Just had a huge fight with your friend.")
+                                Text("Just had a fight with your friend.")
                                     .italic()
                                     .font(.system(size: 20))
                                     .fontWeight(.ultraLight)

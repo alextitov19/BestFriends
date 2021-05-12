@@ -22,7 +22,7 @@ struct ManageMyFriends: View {
                     .scaledToFill()
                 
                 VStack {
-                    Text("Manage my Friends")
+                    Text("Manage Friends *** Move this to Login Pg")
                         .navigationBarTitle("")
                         .navigationBarHidden(true)
                         .foregroundColor(.white)
