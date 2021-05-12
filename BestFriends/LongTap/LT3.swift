@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LT3: View {
     var body: some View {
         VStack {
             Text("On long press")

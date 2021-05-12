@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ActionSheetView: View {
+struct LT4: View {
 @State private var showingActionSheet = false
 var body: some View {
 Button(action: {
@@ -22,8 +22,8 @@ ActionSheet(title: Text("SwiftUI ActionSheet"), message: Text("How was that"), b
      }
    }
 }
-struct ActionSheetView_Previews: PreviewProvider {
+struct LT4_Previews: PreviewProvider {
 static var previews: some View {
-   ActionSheetView()
+   LT4()
    }
 }
