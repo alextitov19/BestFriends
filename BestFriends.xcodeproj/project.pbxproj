@@ -70,6 +70,7 @@
 		D15CCD86264BB08600BFE179 /* LongTapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD85264BB08500BFE179 /* LongTapTest.swift */; };
 		D15CCD88264BB5CA00BFE179 /* LT2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD87264BB5CA00BFE179 /* LT2.swift */; };
 		D15CCD8A264BB79A00BFE179 /* LT3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD89264BB79A00BFE179 /* LT3.swift */; };
+		D15CCD8C264BC3A200BFE179 /* LT4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD8B264BC3A200BFE179 /* LT4.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
 		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
 		D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */; };
@@ -148,6 +149,7 @@
 		D15CCD85264BB08500BFE179 /* LongTapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LongTapTest.swift; path = BestFriends/LongTapTest.swift; sourceTree = SOURCE_ROOT; };
 		D15CCD87264BB5CA00BFE179 /* LT2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT2.swift; sourceTree = "<group>"; };
 		D15CCD89264BB79A00BFE179 /* LT3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT3.swift; sourceTree = "<group>"; };
+		D15CCD8B264BC3A200BFE179 /* LT4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT4.swift; sourceTree = "<group>"; };
 		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFriend.swift; sourceTree = "<group>"; };
 		D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMyFriends.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				D15CCD85264BB08500BFE179 /* LongTapTest.swift */,
 				D15CCD87264BB5CA00BFE179 /* LT2.swift */,
 				D15CCD89264BB79A00BFE179 /* LT3.swift */,
+				D15CCD8B264BC3A200BFE179 /* LT4.swift */,
 				D15CCD702648862700BFE179 /* DarkMode */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
 				7AB62A8326426F7A005A7744 /* Settings */,
@@ -543,6 +546,7 @@
 				D15CCD722648867F00BFE179 /* Prompts.swift in Sources */,
 				7A9AB6C2264B232B00D47971 /* Message.swift in Sources */,
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
+				D15CCD8C264BC3A200BFE179 /* LT4.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */,
 				7A9AB6BE264B232B00D47971 /* AmplifyModels.swift in Sources */,
