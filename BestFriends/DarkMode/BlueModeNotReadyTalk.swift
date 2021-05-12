@@ -1,13 +1,14 @@
 //
-//  DarkModeView.swift
+//  BlueModeNotReadyTalk.swift
 //  BestFriends
 //
-//  Created by Robert Roe on 5/9/21.
+//  Created by Robert Roe on 5/12/21.
 //
 
 import SwiftUI
 
-struct DarkModeView: View {
+
+struct BlueModeNotReadyTalk: View {
     
 
     var body: some View {
@@ -20,9 +21,7 @@ struct DarkModeView: View {
                 .scaledToFill()
             
             VStack {
-                // blueheart try
-               // Spacer()
-                 //   .frame(height: 125)
+               
                                         
                 Image("blueHeart")
                     .resizable()
@@ -32,7 +31,7 @@ struct DarkModeView: View {
                 
                 Spacer().frame(height: 25)
                 
-                Text("'BlueMode'")
+                Text("'Not Quite Ready to Talk Yet?'")
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
                     .foregroundColor(.blue)
@@ -56,15 +55,7 @@ struct DarkModeView: View {
                 Spacer().frame(height: 25)
                 VStack {
                 
-                    Spacer()
-                        .frame(height: 30)
-                    
-                   
-                    Link("Getting Started - 10 Best questions to ask first!", destination: URL(string: "https://socialtechlabs.com/darkMode/")!)
-                    .frame(width: 325, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
-                    .cornerRadius(25)
+               
                     
                     Spacer()
                         .frame(height: 30)
@@ -94,20 +85,7 @@ struct DarkModeView: View {
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
                     .cornerRadius(25)
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    
-                    NavigationLink(
-                        destination: InfoViewPage1(),
-                        label: {
-                            Text("Set time to talk")
-                        })
-                    .frame(width: 325, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
-                    .cornerRadius(25)
+                  
                     
                     
                     Spacer()
@@ -130,8 +108,9 @@ struct DarkModeView: View {
     }
 }
 
-struct DarkModeView_Previews : PreviewProvider {
+struct BlueModeNotReadyTalk_Previews : PreviewProvider {
     static var previews: some View {
-        DarkModeView()
+        BlueModeNotReadyTalk()
     }
 }
+

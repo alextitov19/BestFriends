@@ -72,6 +72,7 @@
 		D15CCD88264BB5CA00BFE179 /* LT2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD87264BB5CA00BFE179 /* LT2.swift */; };
 		D15CCD8A264BB79A00BFE179 /* LT3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD89264BB79A00BFE179 /* LT3.swift */; };
 		D15CCD8C264BC3A200BFE179 /* LT4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD8B264BC3A200BFE179 /* LT4.swift */; };
+		D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
 		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
 		D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */; };
@@ -152,6 +153,7 @@
 		D15CCD87264BB5CA00BFE179 /* LT2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT2.swift; sourceTree = "<group>"; };
 		D15CCD89264BB79A00BFE179 /* LT3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT3.swift; sourceTree = "<group>"; };
 		D15CCD8B264BC3A200BFE179 /* LT4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT4.swift; sourceTree = "<group>"; };
+		D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeNotReadyTalk.swift; sourceTree = "<group>"; };
 		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFriend.swift; sourceTree = "<group>"; };
 		D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMyFriends.swift; sourceTree = "<group>"; };
@@ -404,6 +406,7 @@
 			children = (
 				D15CCD83264908A300BFE179 /* DarkModePage1.swift */,
 				D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */,
+				D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */,
 				D15CCD712648867F00BFE179 /* Prompts.swift */,
 				D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */,
 				D15CCD75264886C900BFE179 /* StickersDark.swift */,
@@ -579,6 +582,7 @@
 				D15CCD86264BB08600BFE179 /* LongTapTest.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */,
+				D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */,
 				7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */,
 				7A71BD1A26252B1300E6FA9E /* Backend.swift in Sources */,
 				7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */,
