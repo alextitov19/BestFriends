@@ -146,7 +146,7 @@
 		D15CCD792648870500BFE179 /* PrizesDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizesDark.swift; sourceTree = "<group>"; };
 		D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
 		D15CCD83264908A300BFE179 /* DarkModePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModePage1.swift; sourceTree = "<group>"; };
-		D15CCD85264BB08500BFE179 /* LongTapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LongTapTest.swift; path = BestFriends/LongTapTest.swift; sourceTree = SOURCE_ROOT; };
+		D15CCD85264BB08500BFE179 /* LongTapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LongTapTest.swift; path = BestFriends/LongTap/LongTapTest.swift; sourceTree = SOURCE_ROOT; };
 		D15CCD87264BB5CA00BFE179 /* LT2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT2.swift; sourceTree = "<group>"; };
 		D15CCD89264BB79A00BFE179 /* LT3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT3.swift; sourceTree = "<group>"; };
 		D15CCD8B264BC3A200BFE179 /* LT4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT4.swift; sourceTree = "<group>"; };
@@ -172,6 +172,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A2954A3264C2B5600676F02 /* LongTap */ = {
+			isa = PBXGroup;
+			children = (
+				D15CCD85264BB08500BFE179 /* LongTapTest.swift */,
+				D15CCD87264BB5CA00BFE179 /* LT2.swift */,
+				D15CCD89264BB79A00BFE179 /* LT3.swift */,
+				D15CCD8B264BC3A200BFE179 /* LT4.swift */,
+			);
+			path = LongTap;
+			sourceTree = "<group>";
+		};
 		7A6A4CD2262B56E900561D87 /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,10 +238,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
-				D15CCD85264BB08500BFE179 /* LongTapTest.swift */,
-				D15CCD87264BB5CA00BFE179 /* LT2.swift */,
-				D15CCD89264BB79A00BFE179 /* LT3.swift */,
-				D15CCD8B264BC3A200BFE179 /* LT4.swift */,
+				7A2954A3264C2B5600676F02 /* LongTap */,
 				D15CCD702648862700BFE179 /* DarkMode */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
 				7AB62A8326426F7A005A7744 /* Settings */,
