@@ -54,7 +54,7 @@ struct BlueModeNotReadyTalk: View {
                         label: {
                             Text("When your frind shakes their phone an image of the two from better days pops up. ***")
                         })
-                    .frame(width: 325, height: 50, alignment: .center)
+                    .frame(width: 300, height: 100, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
                     .cornerRadius(25)
@@ -69,7 +69,7 @@ struct BlueModeNotReadyTalk: View {
                         label: {
                             Text("Unlock special stickers to say the first words for you.")
                         })
-                    .frame(width: 325, height: 50, alignment: .center)
+                    .frame(width: 300, height: 100, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
                     .cornerRadius(25)
@@ -85,21 +85,25 @@ struct BlueModeNotReadyTalk: View {
                         label: {
                             Text("'BlueMode-Journal' coming V2.0")
                         })
-                    .frame(width: 325, height: 50, alignment: .center)
+                    .frame(width: 300, height: 100, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
                     .cornerRadius(25)
 
-                    Spacer().frame(height: 75)
+                    Spacer().frame(height: 50)
                     
+                 
+                
                     Text("*** Do NOT upload hurtful images in ShakingCool: You will be blocked.")
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
-                        .foregroundColor(.blue)
-                        .font(.title)
-                
-                
-                
+                        .italic()
+                        .font(.system(size: 20))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 300, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                  
+                    
+                    
                 }
         }
     }

@@ -190,7 +190,7 @@ struct InfoViewPage2: View {
                 Button(action: {
                               
                             }) {
-                    Text("ShakingCool-BlueMode', allowing your friend to see your images. Send one of you both smiling.")
+                    Text("ShakingCool-BlueMode', allowing your friend to see your images. Send one of the two of you - Smiling!")
                                     .frame(width: 325, height: 80, alignment: .center)
                 
                 }
@@ -206,7 +206,7 @@ struct InfoViewPage2: View {
                 Button(action: {
                               
                             }) {
-                    Text("Don't know where to start. Send a proven 'reconciliation' prompt.")
+                    Text("Don't know where to start. Send a proven 'reconciliation' message.")
                                     .frame(width: 325, height: 80, alignment: .center)
             
             }

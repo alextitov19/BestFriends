@@ -93,7 +93,7 @@ struct DarkModeView: View {
                                         Text("Not ready to talk just yet?")
                                             .font(.title)
                                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                            .frame(width: 325, height: 50)
+                                            .frame(width: 400, height: 50)
                                             .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                             .cornerRadius(25)
                     }
