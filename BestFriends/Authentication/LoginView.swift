@@ -68,6 +68,14 @@ struct LoginView: View {
                 
                 Spacer()
                 
+               
+                
+                // Put in Forgot Password
+              
+                // Put in Forgot Username
+                
+                
+                
                 Button("Don't have an account? Sign up.", action: sessionManager.showSignUp)
                     .frame(width: 300, height: 50)
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))

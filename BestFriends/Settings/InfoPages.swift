@@ -81,7 +81,7 @@ struct InfoViewPage1: View {
                     Spacer()
                         .frame(height: 50)
                    
-                Text("* From Homepage just 'long-tap' your friends star unlocking special features helping you fix this drama.")
+                Text("* From Homepage just 'long-tap' your friends star unlocking special features helping you fix this hurt.")
                    
                     .font(.system(size: 25))
                     .fontWeight(.regular)
@@ -118,7 +118,7 @@ struct InfoViewPage1: View {
 struct InfoViewPage2: View {
 
     var body: some View {
-        
+        NavigationView{
     
   
         ZStack {
@@ -170,7 +170,7 @@ struct InfoViewPage2: View {
                    
               
                 
-                Button("Send a special sticker saying the words you can't seem to say.", action: {
+                Button("Send a special 'BlueMode' sticker saying the words you can't seem to say.", action: {
 
                 })
                 .frame(width: 400, height: 75, alignment: .center)
@@ -181,7 +181,7 @@ struct InfoViewPage2: View {
                     Spacer()
                         .frame(height: 30)
                
-                Button("Activate 'ShakingCool Dark', allowing your frind to see your images. Send one of you both smiling.", action: {
+                Button("Activate 'ShakingCool-BlueMode', allowing your friend to see your images. Send one of you both smiling.", action: {
 
                 })
                 .frame(width: 400, height: 75, alignment: .center)
@@ -192,7 +192,7 @@ struct InfoViewPage2: View {
                 Spacer()
                     .frame(height: 30)
            
-            Button("Don't know where to start. Send a researched & tested 'reconciliation' prompt.", action: {
+            Button("Don't know where to start. Send a proven 'reconciliation' prompt.", action: {
 
             })
             .frame(width: 400, height: 75, alignment: .center)
@@ -220,7 +220,7 @@ struct InfoViewPage2: View {
     .navigationBarTitle("")
     .navigationBarHidden(true)
     
-   
+        }
    
     }
 }
