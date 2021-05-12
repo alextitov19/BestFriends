@@ -930,6 +930,9 @@ struct SignUpQuestionPage2: View {
                         .frame(height: 120)
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
+                       
+                        Spacer()
+                            .frame(height: 50)
                         
                         Text("Next")
                             .font(.title)
