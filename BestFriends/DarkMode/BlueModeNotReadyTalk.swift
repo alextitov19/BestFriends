@@ -90,7 +90,7 @@ struct BlueModeNotReadyTalk: View {
                     .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
                     .cornerRadius(25)
 
-                    Spacer().frame(height: 50)
+                    Spacer().frame(height: 30)
                     
                  
                 
