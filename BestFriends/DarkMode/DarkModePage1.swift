@@ -57,7 +57,7 @@ struct DarkModePage1: View {
                                     .italic()
                                     .font(.system(size: 20))
                                     .fontWeight(.ultraLight)
-                                    .foregroundColor(.blue)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
                                     .multilineTextAlignment(.center)
                                     .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }

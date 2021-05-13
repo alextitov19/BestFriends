@@ -47,7 +47,7 @@ struct BlueModeNotReadyTalk: View {
                         })
                     .frame(width: 300, height: 100, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
                     .cornerRadius(25)
                     
                     
@@ -74,7 +74,7 @@ struct BlueModeNotReadyTalk: View {
                         destination: SmileNotesLibrary(),
                         label: {
                             Text("Push back SmileNotes you received from them.")
-                                .frame(width: 280, height: 100, alignment: .center)
+                                .frame(width: 275, height: 100, alignment: .center)
                         })
                     .frame(width: 300, height: 75, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
