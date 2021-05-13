@@ -27,7 +27,7 @@ type User @model {
 type Notification @model {
   id: ID!
   body: String!
-  targetDeviceID: String!
+  targetDeviceToken: String!
   senderID: String!
   senderName: String!
 }
