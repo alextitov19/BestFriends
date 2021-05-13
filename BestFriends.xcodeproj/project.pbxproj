@@ -151,7 +151,6 @@
 		D1D27D39264303E300BDA75F /* InfoPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPages.swift; sourceTree = "<group>"; };
 		DB24A96E58E94680A190216A /* User+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "User+Schema.swift"; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
 		E31DEA02CBB542D5AA59CA4B /* User.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
-		E3B0B7BB39874435A32489EA /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
 		F6C3BE1022B34C5FA7EE9A20 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/bestfriends/schema.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -356,7 +355,6 @@
 				C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */,
 				A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */,
 				F6C3BE1022B34C5FA7EE9A20 /* schema.graphql */,
-				E3B0B7BB39874435A32489EA /* amplifytools.xcconfig */,
 			);
 			name = AmplifyConfig;
 			path = .;

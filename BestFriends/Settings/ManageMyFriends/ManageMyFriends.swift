@@ -22,11 +22,7 @@ struct ManageMyFriends: View {
                     .scaledToFill()
                 
                 VStack {
-                    Text("Manage Friends *** Move this to Login Pg")
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
-                        .foregroundColor(.white)
-                        .font(.title)
+                    
                 
                     Spacer().frame(height: 25)
                     VStack {
@@ -34,37 +30,33 @@ struct ManageMyFriends: View {
                        
                           Spacer()
                               .frame(height: 30)
-                      
-                          NavigationLink(
-                              destination: ResetPassword(),
-                              label: {
-                                  Text("Block Friend")
-                              })
-                          .frame(width: 300, height: 50, alignment: .center)
-                          .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                          .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
-                          .cornerRadius(25)
-                          
+                        Spacer()
+                            .frame(height: 75)
                         
-                          Spacer()
-                              .frame(height: 30)
-                      
-                          NavigationLink(
-                              destination: ResetPassword(),
-                              label: {
-                                  Text("Delete Friend")
-                              })
-                          .frame(width: 300, height: 50, alignment: .center)
-                          .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                          .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
-                          .cornerRadius(25)
-                          
+                        Text("You may manage your friends (move to BlueMode, Block or Delete) by long-tapping your friends name above their star on Homepage.")
+                            .font(.system(size: 19))
+                            .fontWeight(.ultraLight)
+                            .italic()
+                            .foregroundColor(Color.white)
+                            .frame(width: 400)
+                        
+                            .multilineTextAlignment(.center)
+                         
                         Spacer()
                             .frame(height: 30)
                      
                         
                         
-                        
+                        Spacer()
+                            .frame(height: 50)
+                        NavigationLink(destination: LandingView(myID: " ")) {
+                                            Text("Go to Homepage")
+                                                .font(.title)
+                                                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                                .frame(width: 200, height: 50)
+                                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                                .cornerRadius(25)
+                        }
                         
                         Spacer()
                             .frame(height: 100)
