@@ -44,7 +44,7 @@ struct SettingsView: View {
                             label: {
                                 Text("BestFriends Walk-through")
                             })
-                            .frame(width: 300, height: 50)
+                            .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
@@ -58,7 +58,7 @@ struct SettingsView: View {
                     
                     
                     Link("Privacy Policy / Terms of Service", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
-                        .frame(width: 300, height: 50)
+                        .frame(width: 325, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
@@ -70,7 +70,7 @@ struct SettingsView: View {
                  
                 
                     Link("Report Objectional Content & Behavior", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
-                        .frame(width: 300, height: 50)
+                        .frame(width: 325, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
@@ -87,7 +87,7 @@ struct SettingsView: View {
                     
                         
                         Link("Report Copyright Infringment", destination: URL(string: "https://socialtechlabs.com/report-copyright-infringements/")!)
-                            .frame(width: 300, height: 50)
+                            .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
@@ -106,7 +106,7 @@ struct SettingsView: View {
                             label: {
                                 Text("My Account")
                             })
-                            .frame(width: 300, height: 50)
+                            .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
@@ -127,7 +127,7 @@ struct SettingsView: View {
                                 Text("Manage my Friends")
                             })
                        
-                            .frame(width: 300, height: 50)
+                            .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
@@ -145,7 +145,7 @@ struct SettingsView: View {
                                 Text("Change Chat Background")
                             })
                        
-                            .frame(width: 300, height: 50)
+                            .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
@@ -163,7 +163,7 @@ struct SettingsView: View {
                                 Text("Delete My Account")
                             })
                        
-                            .frame(width: 300, height: 50)
+                            .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
