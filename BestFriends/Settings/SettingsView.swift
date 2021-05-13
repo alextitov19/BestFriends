@@ -114,6 +114,23 @@ struct SettingsView: View {
                                     .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
                                     )
                             
+                        
+                        
+                        Spacer()
+                            .frame(height: 30)
+                        
+                        NavigationLink(
+                            destination: ChangeChatBackground(),
+                            label: {
+                                Text("Change Chat Background")
+                            })
+                       
+                            .frame(width: 300, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    )
                             
                           
                         
