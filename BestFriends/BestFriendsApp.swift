@@ -26,6 +26,7 @@ struct BestFriendsApp: App {
     init() {
         configureAmplify()
         sessionManager.getSurrentAuthUser()
+        notificationService.requestPermission()
     }
     
     var body: some Scene {
@@ -34,9 +35,8 @@ struct BestFriendsApp: App {
             case .login:
                 LoginView()
                     .environmentObject(sessionManager)
-                    .onAppear(perform: notificationService.requestPermission)
             case .signUp:
-                SettingsView()
+                SignUpPage1()
                     .environmentObject(sessionManager)
             case .confirmationCode(let username):
                 ConfirmationView(username: username)
@@ -44,6 +44,7 @@ struct BestFriendsApp: App {
             case .session(let user):
                 LandingView(myID: user.username)
                     .environmentObject(sessionManager)
+
             }
         }
     }

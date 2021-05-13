@@ -269,13 +269,14 @@ struct LandingView: View {
     
 
     private func inviteClicked() {
-        for index in 0..<stars.count {
-            stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            inviteSelectedFriends()
-        }
+//        for index in 0..<stars.count {
+//            stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
+//        }
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+//            inviteSelectedFriends()
+//        }
+        sendMessage()
     }
     
     private func inviteSelectedFriends() {
@@ -298,6 +299,8 @@ struct LandingView: View {
     
     func sendMessage() {
         guard let deviceToken = DeviceTokenManager.shared.deviceToken else { return }
+        
+        print("Sending to device token: ", deviceToken)
     }
     
 }
