@@ -25,14 +25,14 @@ struct BlueModeNotReadyTalk: View {
                 
                 Spacer().frame(height: 25)
                 
-                Text("Just too early to talk - let's give this a try.")
+                Text("np - let's give this a try first.")
                     .frame(width: 400, height: 100, alignment:.center)
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
-                    .foregroundColor(.blue)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                     .font(.title)
             
-             
+               
                 VStack {
                 
                     Spacer()
