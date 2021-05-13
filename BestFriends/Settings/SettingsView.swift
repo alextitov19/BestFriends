@@ -134,20 +134,22 @@ struct SettingsView: View {
                             
                           
                         
-                        
-                        
                         Spacer()
                             .frame(height: 30)
                         
-                        Button("Delete my Accont", action: {
+                        NavigationLink(
+                            destination: DeleteMyAccount(),
+                            label: {
+                                Text("Delete My Account")
+                            })
+                       
+                            .frame(width: 300, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    )
                             
-                        })
-                        .frame(width: 300, height: 50)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
-                                )
                         
                    
                                     

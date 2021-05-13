@@ -105,8 +105,8 @@ struct InfoViewPage1: View {
         
         }
         }
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
+  //  .navigationBarTitle("")
+   // .navigationBarHidden(true)
     
    
    
@@ -232,8 +232,8 @@ struct InfoViewPage2: View {
         
         }
         }
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
+  //  .navigationBarTitle("")
+  //  .navigationBarHidden(true)
     
         }
    
