@@ -299,8 +299,9 @@ struct LandingView: View {
     
     func sendMessage() {
         guard let deviceToken = DeviceTokenManager.shared.deviceToken else { return }
-        
+        let notification = Notification(body: "A test notification", targetDeviceToken: deviceToken, senderID: "someID", senderName: "someName")
         print("Sending to device token: ", deviceToken)
+        NotificationDataSource().createNotification(notification: notification)
     }
     
 }

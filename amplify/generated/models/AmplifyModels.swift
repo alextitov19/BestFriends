@@ -5,7 +5,7 @@ import Foundation
 // Contains the set of classes that conforms to the `Model` protocol. 
 
 final public class AmplifyModels: AmplifyModelRegistration {
-  public let version: String = "b08ce1b83c592f596ae39ff358b08697"
+  public let version: String = "a2e247c976fe19476b4086ca7fd138d9"
   
   public func registerModels(registry: ModelRegistry.Type) {
     ModelRegistry.register(modelType: Room.self)
