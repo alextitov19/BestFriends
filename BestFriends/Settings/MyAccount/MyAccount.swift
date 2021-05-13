@@ -48,7 +48,7 @@ struct MyAccount: View {
                           .frame(height: 30)
                   
                       NavigationLink(
-                          destination: ResetPassword(),
+                          destination: ChangeEmail(),
                           label: {
                               Text("Update my Email")
                           })

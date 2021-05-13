@@ -36,7 +36,7 @@ struct BestFriendsApp: App {
                     .environmentObject(sessionManager)
                     .onAppear(perform: notificationService.requestPermission)
             case .signUp:
-                ResetPassword()
+                SettingsView()
                     .environmentObject(sessionManager)
             case .confirmationCode(let username):
                 ConfirmationView(username: username)
