@@ -25,7 +25,7 @@ struct BlueModeNotReadyTalk: View {
                 
                 Spacer().frame(height: 25)
                 
-                Text("np - let's give this a try first.")
+                Text("np - let's give this a try first then.")
                     .frame(width: 400, height: 100, alignment:.center)
                     .navigationBarTitle("")
                     .navigationBarHidden(true)

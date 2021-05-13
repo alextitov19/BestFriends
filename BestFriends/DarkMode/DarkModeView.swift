@@ -104,9 +104,9 @@ struct DarkModeView: View {
                     NavigationLink(destination: BlueModeNotReadyTalk()) {
                                         Text("Not ready to talk just yet?")
                                             .font(.title)
-                                            .foregroundColor(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
+                                            .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                                             .frame(width: 400, height: 50)
-                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .cornerRadius(25)
                     }
                 Spacer()
