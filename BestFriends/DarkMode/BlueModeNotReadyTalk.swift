@@ -53,6 +53,7 @@ struct BlueModeNotReadyTalk: View {
                         destination: InfoViewPage1(),
                         label: {
                             Text("When your frind shakes their phone an image of the two from better days pops up. ***")
+                                .frame(width: 270, height: 100, alignment: .center)
                         })
                     .frame(width: 300, height: 100, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -68,6 +69,7 @@ struct BlueModeNotReadyTalk: View {
                         destination: InfoViewPage1(),
                         label: {
                             Text("Unlock special stickers to say the first words for you.")
+                                .frame(width: 270, height: 100, alignment: .center)
                         })
                     .frame(width: 300, height: 75, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -84,6 +86,7 @@ struct BlueModeNotReadyTalk: View {
                         destination: InfoViewPage1(),
                         label: {
                             Text("'BlueMode-Journal' coming V2.0")
+                                .frame(width: 280, height: 100, alignment: .center)
                         })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))

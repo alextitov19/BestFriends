@@ -49,7 +49,7 @@ struct ManageMyFriends: View {
                         
                         Spacer()
                             .frame(height: 50)
-                        NavigationLink(destination: SettingsView()) {
+                        NavigationLink(destination: LandingView(myID: " ")) {
                                             Text("Take me to Homepage")
                                                 .font(.title)
                                                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
