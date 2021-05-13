@@ -87,13 +87,13 @@ struct DeleteMyAccount: View {
                 
                 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 75)
                 
                 Button("Delete my Account", action: {()
                 })
-                .frame(width: 300, height: 50, alignment: .center)
-                .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                .frame(width: 230, height: 50, alignment: .center)
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
                 .cornerRadius(25)
                 
                 
@@ -111,5 +111,5 @@ struct DeleteMyAccount: View {
    
     }
 }
-}
+
 
