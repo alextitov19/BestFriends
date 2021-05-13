@@ -41,11 +41,9 @@ struct BestFriendsApp: App {
    
     private func configureAmplify() {
         do {
-            let models = AmplifyModels()
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
             try Amplify.add(plugin: AWSS3StoragePlugin())
-            try Amplify.add(plugin: AWSAPIPlugin(modelRegistration: models))
-            
+            try Amplify.add(plugin: AWSAPIPlugin())
             try Amplify.configure()
             
             print("Amplify configured successfully")
