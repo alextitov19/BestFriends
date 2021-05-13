@@ -22,31 +22,21 @@ struct BlueModeNotReadyTalk: View {
             
             VStack {
                
-                                        
-                Image("blueHeart")
-                    .resizable()
-                    .frame(width: 50, height: 50)
-                    .scaledToFill()
-              //blueheart try ^^^
                 
                 Spacer().frame(height: 25)
                 
-                Text("Not Talking? Let's give this a try.")
+                Text("Just too early to talk - let's give this a try.")
+                    .frame(width: 400, height: 100, alignment:.center)
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
                     .foregroundColor(.blue)
                     .font(.title)
             
              
-                
-                
-                Spacer().frame(height: 25)
                 VStack {
                 
-               
-                    
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                     
                     
                     NavigationLink(
@@ -76,7 +66,21 @@ struct BlueModeNotReadyTalk: View {
                     .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                     .cornerRadius(25)
                   
+                    Spacer()
+                        .frame(height: 30)
                     
+                    
+                    NavigationLink(
+                        destination: SmileNotesLibrary(),
+                        label: {
+                            Text("Push back SmileNotes you received from them.")
+                                .frame(width: 290, height: 100, alignment: .center)
+                        })
+                    .frame(width: 300, height: 75, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                  
                     
                     Spacer()
                         .frame(height: 30)

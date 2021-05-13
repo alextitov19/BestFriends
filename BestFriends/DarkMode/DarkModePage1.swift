@@ -57,7 +57,7 @@ struct DarkModePage1: View {
                                     .italic()
                                     .font(.system(size: 20))
                                     .fontWeight(.ultraLight)
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.blue)
                                     .multilineTextAlignment(.center)
                                     .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
@@ -73,7 +73,7 @@ struct DarkModePage1: View {
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
-                        .foregroundColor(.white)
+                        .foregroundColor(.blue)
                         .multilineTextAlignment(.center)
                         .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
@@ -93,10 +93,10 @@ struct DarkModePage1: View {
                 Spacer()
                     .frame(height: 50)
                 NavigationLink(destination: DarkModeView()) {
-                                    Text("Ok, Activate BlueMode.")
+                                    Text("Ok, activate 'BlueMode'")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 300, height: 50)
+                                        .frame(width: 350, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                 }

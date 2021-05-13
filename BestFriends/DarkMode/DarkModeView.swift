@@ -20,15 +20,13 @@ struct DarkModeView: View {
                 .scaledToFill()
             
             VStack {
-                // blueheart try
-               // Spacer()
-                 //   .frame(height: 125)
+                
                                         
                 Image("blueHeart")
                     .resizable()
                     .frame(width: 50, height: 50)
                     .scaledToFill()
-              //blueheart try ^^^
+           
                 
                 Spacer().frame(height: 25)
                 
@@ -43,6 +41,7 @@ struct DarkModeView: View {
                 Spacer().frame(height: 25)
                 
                 Text("Helping pull the two of you from this wreckage before your hearts become forever dented!")
+                    .frame(width: 400, height: 150, alignment: .center)
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
                     .foregroundColor(.blue)
@@ -53,11 +52,10 @@ struct DarkModeView: View {
                     .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 
-                Spacer().frame(height: 25)
                 VStack {
                 
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 25)
                     
                    
                     Link("Ten 'Best' questions to ask first!", destination: URL(string: "https://socialtechlabs.com/darkMode/")!)
@@ -99,7 +97,7 @@ struct DarkModeView: View {
                     
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 50)
                     
                 
 
