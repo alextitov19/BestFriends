@@ -386,7 +386,6 @@
 				C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */,
 				A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */,
 				F6C3BE1022B34C5FA7EE9A20 /* schema.graphql */,
-				4ECE051F3F364D9A937FFF2F /* amplifytools.xcconfig */,
 			);
 			name = AmplifyConfig;
 			path = .;
