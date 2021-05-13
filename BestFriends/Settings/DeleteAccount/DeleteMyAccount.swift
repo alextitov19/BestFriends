@@ -32,7 +32,7 @@ struct DeleteMyAccount: View {
                             Spacer()
                                 .frame(height: 25)
                                                     
-                            Image("Penguin Sticker 24")
+                            Image("Penguin2")
                                 .resizable()
                                 .frame(width: 150, height: 150)
                                 .scaledToFill()
@@ -64,20 +64,20 @@ struct DeleteMyAccount: View {
                     .frame(height: 25)
                 
                     
-                    Text("If you have time we would love to get your feedback about BestFriends in a short two minute Survey.")
+                    Text("If you have a minute for a ONE question survey  - we'd love to get your feedback.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                     
                
                     
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 0)
                 
                 Link("Survey", destination: URL(string: "https://socialtechlabs.com/survey/")!)
                 .frame(width: 230, height: 50, alignment: .center)
@@ -85,23 +85,22 @@ struct DeleteMyAccount: View {
                 .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 .cornerRadius(25)
                 
-                    
-                    
-                    Spacer()
-                        .frame(height: 0)
-                    
-                    NavigationLink(destination: InfoViewPage2()) {
-                                        Text("Delete Account")
-                                            .font(.title)
-                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                            .frame(width: 230, height: 50)
-                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
+                
+                Spacer()
+                    .frame(height: 30)
+                
+                Button("Delete my Account", action: {()
+                })
+                .frame(width: 300, height: 50, alignment: .center)
+                .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                .cornerRadius(25)
+                
+                
                         Spacer()
                             .frame(height: 200)
                 }
-           // Spacer()
-              //  .frame(height: 75)
+           
         
         }
         }
