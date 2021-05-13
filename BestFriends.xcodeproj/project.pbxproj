@@ -21,6 +21,7 @@
 		7A2954B6264C3E7800676F02 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2954AD264C3E7700676F02 /* User+Schema.swift */; };
 		7A2954B7264C3E7800676F02 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2954AE264C3E7800676F02 /* Room.swift */; };
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
+		7A5D2149264CB70300B76A55 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5D2148264CB70300B76A55 /* NotificationService.swift */; };
 		7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD3262B570400561D87 /* MessagesView.swift */; };
 		7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD6262B5DA900561D87 /* MessageRow.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
@@ -92,6 +93,7 @@
 		7A2954AD264C3E7700676F02 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
 		7A2954AE264C3E7800676F02 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
+		7A5D2148264CB70300B76A55 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		7A6A4CD3262B570400561D87 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		7A6A4CD6262B5DA900561D87 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
@@ -177,6 +179,14 @@
 			path = LongTap;
 			sourceTree = "<group>";
 		};
+		7A5D2147264CB6EC00B76A55 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				7A5D2148264CB70300B76A55 /* NotificationService.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		7A6A4CD2262B56E900561D87 /* Messaging */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +242,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7A5D2147264CB6EC00B76A55 /* Notifications */,
 				7A2954A3264C2B5600676F02 /* LongTap */,
 				D15CCD702648862700BFE179 /* DarkMode */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
@@ -542,6 +553,7 @@
 				7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */,
 				7A2954B0264C3E7800676F02 /* Message.swift in Sources */,
 				D15CCD88264BB5CA00BFE179 /* LT2.swift in Sources */,
+				7A5D2149264CB70300B76A55 /* NotificationService.swift in Sources */,
 				D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */,
 				D15CCD722648867F00BFE179 /* Prompts.swift in Sources */,
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,

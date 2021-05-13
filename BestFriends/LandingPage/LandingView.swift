@@ -296,7 +296,9 @@ struct LandingView: View {
         }
     }
     
-    
+    func sendMessage() {
+        guard let deviceToken = DeviceTokenManager.shared.deviceToken else { return }
+    }
     
 }
 

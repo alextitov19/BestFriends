@@ -9,11 +9,19 @@ import SwiftUI
 import Amplify
 import AmplifyPlugins
 
+class DeviceTokenManager {
+    private init() {}
+    static let shared = DeviceTokenManager()
+    
+    var deviceToken: String?
+}
+
 @main
 struct BestFriendsApp: App {
 
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @ObservedObject var sessionManager = SessionManager()
+    @State var notificationService = NotificationService()
     
     init() {
         configureAmplify()
@@ -26,6 +34,7 @@ struct BestFriendsApp: App {
             case .login:
                 LoginView()
                     .environmentObject(sessionManager)
+                    .onAppear(perform: notificationService.requestPermission)
             case .signUp:
                 ResetPassword()
                     .environmentObject(sessionManager)
