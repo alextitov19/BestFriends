@@ -74,17 +74,17 @@ struct MyAccount: View {
         }
         }
         
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
+      //  .navigationBarTitle("")
+      //  .navigationBarHidden(true)
     }
 
 }
 
 
-struct MyAccount_Previews : PreviewProvider {
-    static var previews: some View {
-        MyAccount()
-    }
-}
+//struct MyAccount_Previews : PreviewProvider {
+//    static var previews: some View {
+ //       MyAccount()
+//    }
+// }
 
 

@@ -68,18 +68,18 @@ struct ManageMyFriends: View {
             }
             }
             
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
+          //  .navigationBarTitle("")
+            //.navigationBarHidden(true)
         }
 
     }
 
 
-    struct ManageMyFriends_Previews : PreviewProvider {
-        static var previews: some View {
-            ManageMyFriends()
-        }
-    }
+   // struct ManageMyFriends_Previews : PreviewProvider {
+     //   static var previews: some View {
+       //     ManageMyFriends()
+        //}
+   // }
 
 
 
