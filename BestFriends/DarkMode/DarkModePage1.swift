@@ -93,7 +93,7 @@ struct DarkModePage1: View {
                 Spacer()
                     .frame(height: 50)
                 NavigationLink(destination: DarkModeView()) {
-                                    Text("Ok, I'll try it.")
+                                    Text("Ok, Activate BlueMode.")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)

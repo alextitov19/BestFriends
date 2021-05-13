@@ -86,11 +86,18 @@ struct SettingsView: View {
                             label: {
                                 Text("My Account")
                             })
-                        .frame(width: 325, height: 50, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(25)
+                            .frame(width: 300, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    )
                     
+                        
+                        
+                        
+                        
+                        
                         Spacer()
                             .frame(height: 30)
                         
@@ -99,10 +106,18 @@ struct SettingsView: View {
                             label: {
                                 Text("Manage my Friends")
                             })
-                        .frame(width: 325, height: 50, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(25)
+                       
+                            .frame(width: 300, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    )
+                            
+                            
+                          
+                        
+                        
                         
                         Spacer()
                             .frame(height: 30)
