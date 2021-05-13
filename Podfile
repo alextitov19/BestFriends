@@ -11,7 +11,5 @@ target 'BestFriends' do
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
   pod 'AmplifyPlugins/AWSAPIPlugin'
   pod 'AmplifyPlugins/AWSS3StoragePlugin'
-  pod  'AWSPinpoint'
-  pod  'AWSMobileClient'
 
 end
