@@ -24,3 +24,10 @@ type User @model {
   rooms: [String]
 }
 
+type Notification @model {
+  id: ID!
+  body: String!
+  targetDeviceID: String!
+  senderID: String!
+  senderName: String!
+}

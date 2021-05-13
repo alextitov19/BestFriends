@@ -92,10 +92,10 @@ subscription OnDeleteUser {
 subscription OnCreateNotification {
   onCreateNotification {
     id
-    targetID
-    targetDevice
-    senderID
     body
+    targetDeviceID
+    senderID
+    senderName
     createdAt
     updatedAt
   }
@@ -103,10 +103,10 @@ subscription OnCreateNotification {
 subscription OnUpdateNotification {
   onUpdateNotification {
     id
-    targetID
-    targetDevice
-    senderID
     body
+    targetDeviceID
+    senderID
+    senderName
     createdAt
     updatedAt
   }
@@ -114,10 +114,10 @@ subscription OnUpdateNotification {
 subscription OnDeleteNotification {
   onDeleteNotification {
     id
-    targetID
-    targetDevice
-    senderID
     body
+    targetDeviceID
+    senderID
+    senderName
     createdAt
     updatedAt
   }

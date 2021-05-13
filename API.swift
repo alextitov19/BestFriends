@@ -734,8 +734,8 @@ public struct DeleteUserInput: GraphQLMapConvertible {
 public struct CreateNotificationInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, targetId: String, targetDevice: String, senderId: String, body: String) {
-    graphQLMap = ["id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body]
+  public init(id: GraphQLID? = nil, body: String, targetDeviceId: String, senderId: String, senderName: String) {
+    graphQLMap = ["id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName]
   }
 
   public var id: GraphQLID? {
@@ -747,21 +747,21 @@ public struct CreateNotificationInput: GraphQLMapConvertible {
     }
   }
 
-  public var targetId: String {
+  public var body: String {
     get {
-      return graphQLMap["targetID"] as! String
+      return graphQLMap["body"] as! String
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "targetID")
+      graphQLMap.updateValue(newValue, forKey: "body")
     }
   }
 
-  public var targetDevice: String {
+  public var targetDeviceId: String {
     get {
-      return graphQLMap["targetDevice"] as! String
+      return graphQLMap["targetDeviceID"] as! String
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "targetDevice")
+      graphQLMap.updateValue(newValue, forKey: "targetDeviceID")
     }
   }
 
@@ -774,12 +774,12 @@ public struct CreateNotificationInput: GraphQLMapConvertible {
     }
   }
 
-  public var body: String {
+  public var senderName: String {
     get {
-      return graphQLMap["body"] as! String
+      return graphQLMap["senderName"] as! String
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "body")
+      graphQLMap.updateValue(newValue, forKey: "senderName")
     }
   }
 }
@@ -787,25 +787,25 @@ public struct CreateNotificationInput: GraphQLMapConvertible {
 public struct ModelNotificationConditionInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(targetId: ModelStringInput? = nil, targetDevice: ModelStringInput? = nil, senderId: ModelStringInput? = nil, body: ModelStringInput? = nil, and: [ModelNotificationConditionInput?]? = nil, or: [ModelNotificationConditionInput?]? = nil, not: ModelNotificationConditionInput? = nil) {
-    graphQLMap = ["targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "and": and, "or": or, "not": not]
+  public init(body: ModelStringInput? = nil, targetDeviceId: ModelStringInput? = nil, senderId: ModelStringInput? = nil, senderName: ModelStringInput? = nil, and: [ModelNotificationConditionInput?]? = nil, or: [ModelNotificationConditionInput?]? = nil, not: ModelNotificationConditionInput? = nil) {
+    graphQLMap = ["body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName, "and": and, "or": or, "not": not]
   }
 
-  public var targetId: ModelStringInput? {
+  public var body: ModelStringInput? {
     get {
-      return graphQLMap["targetID"] as! ModelStringInput?
+      return graphQLMap["body"] as! ModelStringInput?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "targetID")
+      graphQLMap.updateValue(newValue, forKey: "body")
     }
   }
 
-  public var targetDevice: ModelStringInput? {
+  public var targetDeviceId: ModelStringInput? {
     get {
-      return graphQLMap["targetDevice"] as! ModelStringInput?
+      return graphQLMap["targetDeviceID"] as! ModelStringInput?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "targetDevice")
+      graphQLMap.updateValue(newValue, forKey: "targetDeviceID")
     }
   }
 
@@ -818,12 +818,12 @@ public struct ModelNotificationConditionInput: GraphQLMapConvertible {
     }
   }
 
-  public var body: ModelStringInput? {
+  public var senderName: ModelStringInput? {
     get {
-      return graphQLMap["body"] as! ModelStringInput?
+      return graphQLMap["senderName"] as! ModelStringInput?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "body")
+      graphQLMap.updateValue(newValue, forKey: "senderName")
     }
   }
 
@@ -858,8 +858,8 @@ public struct ModelNotificationConditionInput: GraphQLMapConvertible {
 public struct UpdateNotificationInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, targetId: String? = nil, targetDevice: String? = nil, senderId: String? = nil, body: String? = nil) {
-    graphQLMap = ["id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body]
+  public init(id: GraphQLID, body: String? = nil, targetDeviceId: String? = nil, senderId: String? = nil, senderName: String? = nil) {
+    graphQLMap = ["id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName]
   }
 
   public var id: GraphQLID {
@@ -871,21 +871,21 @@ public struct UpdateNotificationInput: GraphQLMapConvertible {
     }
   }
 
-  public var targetId: String? {
+  public var body: String? {
     get {
-      return graphQLMap["targetID"] as! String?
+      return graphQLMap["body"] as! String?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "targetID")
+      graphQLMap.updateValue(newValue, forKey: "body")
     }
   }
 
-  public var targetDevice: String? {
+  public var targetDeviceId: String? {
     get {
-      return graphQLMap["targetDevice"] as! String?
+      return graphQLMap["targetDeviceID"] as! String?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "targetDevice")
+      graphQLMap.updateValue(newValue, forKey: "targetDeviceID")
     }
   }
 
@@ -898,12 +898,12 @@ public struct UpdateNotificationInput: GraphQLMapConvertible {
     }
   }
 
-  public var body: String? {
+  public var senderName: String? {
     get {
-      return graphQLMap["body"] as! String?
+      return graphQLMap["senderName"] as! String?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "body")
+      graphQLMap.updateValue(newValue, forKey: "senderName")
     }
   }
 }
@@ -1213,8 +1213,8 @@ public struct ModelUserFilterInput: GraphQLMapConvertible {
 public struct ModelNotificationFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: ModelIDInput? = nil, targetId: ModelStringInput? = nil, targetDevice: ModelStringInput? = nil, senderId: ModelStringInput? = nil, body: ModelStringInput? = nil, and: [ModelNotificationFilterInput?]? = nil, or: [ModelNotificationFilterInput?]? = nil, not: ModelNotificationFilterInput? = nil) {
-    graphQLMap = ["id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "and": and, "or": or, "not": not]
+  public init(id: ModelIDInput? = nil, body: ModelStringInput? = nil, targetDeviceId: ModelStringInput? = nil, senderId: ModelStringInput? = nil, senderName: ModelStringInput? = nil, and: [ModelNotificationFilterInput?]? = nil, or: [ModelNotificationFilterInput?]? = nil, not: ModelNotificationFilterInput? = nil) {
+    graphQLMap = ["id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName, "and": and, "or": or, "not": not]
   }
 
   public var id: ModelIDInput? {
@@ -1226,21 +1226,21 @@ public struct ModelNotificationFilterInput: GraphQLMapConvertible {
     }
   }
 
-  public var targetId: ModelStringInput? {
+  public var body: ModelStringInput? {
     get {
-      return graphQLMap["targetID"] as! ModelStringInput?
+      return graphQLMap["body"] as! ModelStringInput?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "targetID")
+      graphQLMap.updateValue(newValue, forKey: "body")
     }
   }
 
-  public var targetDevice: ModelStringInput? {
+  public var targetDeviceId: ModelStringInput? {
     get {
-      return graphQLMap["targetDevice"] as! ModelStringInput?
+      return graphQLMap["targetDeviceID"] as! ModelStringInput?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "targetDevice")
+      graphQLMap.updateValue(newValue, forKey: "targetDeviceID")
     }
   }
 
@@ -1253,12 +1253,12 @@ public struct ModelNotificationFilterInput: GraphQLMapConvertible {
     }
   }
 
-  public var body: ModelStringInput? {
+  public var senderName: ModelStringInput? {
     get {
-      return graphQLMap["body"] as! ModelStringInput?
+      return graphQLMap["senderName"] as! ModelStringInput?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "body")
+      graphQLMap.updateValue(newValue, forKey: "senderName")
     }
   }
 
@@ -2429,7 +2429,7 @@ public final class DeleteUserMutation: GraphQLMutation {
 
 public final class CreateNotificationMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateNotification($input: CreateNotificationInput!, $condition: ModelNotificationConditionInput) {\n  createNotification(input: $input, condition: $condition) {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateNotification($input: CreateNotificationInput!, $condition: ModelNotificationConditionInput) {\n  createNotification(input: $input, condition: $condition) {\n    __typename\n    id\n    body\n    targetDeviceID\n    senderID\n    senderName\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateNotificationInput
   public var condition: ModelNotificationConditionInput?
@@ -2475,10 +2475,10 @@ public final class CreateNotificationMutation: GraphQLMutation {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
-        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
-        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDeviceID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -2489,8 +2489,8 @@ public final class CreateNotificationMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, body: String, targetDeviceId: String, senderId: String, senderName: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -2511,21 +2511,21 @@ public final class CreateNotificationMutation: GraphQLMutation {
         }
       }
 
-      public var targetId: String {
+      public var body: String {
         get {
-          return snapshot["targetID"]! as! String
+          return snapshot["body"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetID")
+          snapshot.updateValue(newValue, forKey: "body")
         }
       }
 
-      public var targetDevice: String {
+      public var targetDeviceId: String {
         get {
-          return snapshot["targetDevice"]! as! String
+          return snapshot["targetDeviceID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetDevice")
+          snapshot.updateValue(newValue, forKey: "targetDeviceID")
         }
       }
 
@@ -2538,12 +2538,12 @@ public final class CreateNotificationMutation: GraphQLMutation {
         }
       }
 
-      public var body: String {
+      public var senderName: String {
         get {
-          return snapshot["body"]! as! String
+          return snapshot["senderName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "body")
+          snapshot.updateValue(newValue, forKey: "senderName")
         }
       }
 
@@ -2570,7 +2570,7 @@ public final class CreateNotificationMutation: GraphQLMutation {
 
 public final class UpdateNotificationMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateNotification($input: UpdateNotificationInput!, $condition: ModelNotificationConditionInput) {\n  updateNotification(input: $input, condition: $condition) {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateNotification($input: UpdateNotificationInput!, $condition: ModelNotificationConditionInput) {\n  updateNotification(input: $input, condition: $condition) {\n    __typename\n    id\n    body\n    targetDeviceID\n    senderID\n    senderName\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateNotificationInput
   public var condition: ModelNotificationConditionInput?
@@ -2616,10 +2616,10 @@ public final class UpdateNotificationMutation: GraphQLMutation {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
-        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
-        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDeviceID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -2630,8 +2630,8 @@ public final class UpdateNotificationMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, body: String, targetDeviceId: String, senderId: String, senderName: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -2652,21 +2652,21 @@ public final class UpdateNotificationMutation: GraphQLMutation {
         }
       }
 
-      public var targetId: String {
+      public var body: String {
         get {
-          return snapshot["targetID"]! as! String
+          return snapshot["body"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetID")
+          snapshot.updateValue(newValue, forKey: "body")
         }
       }
 
-      public var targetDevice: String {
+      public var targetDeviceId: String {
         get {
-          return snapshot["targetDevice"]! as! String
+          return snapshot["targetDeviceID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetDevice")
+          snapshot.updateValue(newValue, forKey: "targetDeviceID")
         }
       }
 
@@ -2679,12 +2679,12 @@ public final class UpdateNotificationMutation: GraphQLMutation {
         }
       }
 
-      public var body: String {
+      public var senderName: String {
         get {
-          return snapshot["body"]! as! String
+          return snapshot["senderName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "body")
+          snapshot.updateValue(newValue, forKey: "senderName")
         }
       }
 
@@ -2711,7 +2711,7 @@ public final class UpdateNotificationMutation: GraphQLMutation {
 
 public final class DeleteNotificationMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteNotification($input: DeleteNotificationInput!, $condition: ModelNotificationConditionInput) {\n  deleteNotification(input: $input, condition: $condition) {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteNotification($input: DeleteNotificationInput!, $condition: ModelNotificationConditionInput) {\n  deleteNotification(input: $input, condition: $condition) {\n    __typename\n    id\n    body\n    targetDeviceID\n    senderID\n    senderName\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteNotificationInput
   public var condition: ModelNotificationConditionInput?
@@ -2757,10 +2757,10 @@ public final class DeleteNotificationMutation: GraphQLMutation {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
-        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
-        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDeviceID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -2771,8 +2771,8 @@ public final class DeleteNotificationMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, body: String, targetDeviceId: String, senderId: String, senderName: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -2793,21 +2793,21 @@ public final class DeleteNotificationMutation: GraphQLMutation {
         }
       }
 
-      public var targetId: String {
+      public var body: String {
         get {
-          return snapshot["targetID"]! as! String
+          return snapshot["body"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetID")
+          snapshot.updateValue(newValue, forKey: "body")
         }
       }
 
-      public var targetDevice: String {
+      public var targetDeviceId: String {
         get {
-          return snapshot["targetDevice"]! as! String
+          return snapshot["targetDeviceID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetDevice")
+          snapshot.updateValue(newValue, forKey: "targetDeviceID")
         }
       }
 
@@ -2820,12 +2820,12 @@ public final class DeleteNotificationMutation: GraphQLMutation {
         }
       }
 
-      public var body: String {
+      public var senderName: String {
         get {
-          return snapshot["body"]! as! String
+          return snapshot["senderName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "body")
+          snapshot.updateValue(newValue, forKey: "senderName")
         }
       }
 
@@ -3704,7 +3704,7 @@ public final class ListUsersQuery: GraphQLQuery {
 
 public final class GetNotificationQuery: GraphQLQuery {
   public static let operationString =
-    "query GetNotification($id: ID!) {\n  getNotification(id: $id) {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetNotification($id: ID!) {\n  getNotification(id: $id) {\n    __typename\n    id\n    body\n    targetDeviceID\n    senderID\n    senderName\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -3748,10 +3748,10 @@ public final class GetNotificationQuery: GraphQLQuery {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
-        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
-        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDeviceID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -3762,8 +3762,8 @@ public final class GetNotificationQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, body: String, targetDeviceId: String, senderId: String, senderName: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -3784,21 +3784,21 @@ public final class GetNotificationQuery: GraphQLQuery {
         }
       }
 
-      public var targetId: String {
+      public var body: String {
         get {
-          return snapshot["targetID"]! as! String
+          return snapshot["body"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetID")
+          snapshot.updateValue(newValue, forKey: "body")
         }
       }
 
-      public var targetDevice: String {
+      public var targetDeviceId: String {
         get {
-          return snapshot["targetDevice"]! as! String
+          return snapshot["targetDeviceID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetDevice")
+          snapshot.updateValue(newValue, forKey: "targetDeviceID")
         }
       }
 
@@ -3811,12 +3811,12 @@ public final class GetNotificationQuery: GraphQLQuery {
         }
       }
 
-      public var body: String {
+      public var senderName: String {
         get {
-          return snapshot["body"]! as! String
+          return snapshot["senderName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "body")
+          snapshot.updateValue(newValue, forKey: "senderName")
         }
       }
 
@@ -3843,7 +3843,7 @@ public final class GetNotificationQuery: GraphQLQuery {
 
 public final class ListNotificationsQuery: GraphQLQuery {
   public static let operationString =
-    "query ListNotifications($filter: ModelNotificationFilterInput, $limit: Int, $nextToken: String) {\n  listNotifications(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      targetID\n      targetDevice\n      senderID\n      body\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListNotifications($filter: ModelNotificationFilterInput, $limit: Int, $nextToken: String) {\n  listNotifications(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      body\n      targetDeviceID\n      senderID\n      senderName\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelNotificationFilterInput?
   public var limit: Int?
@@ -3937,10 +3937,10 @@ public final class ListNotificationsQuery: GraphQLQuery {
         public static let selections: [GraphQLSelection] = [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-          GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
-          GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
-          GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
           GraphQLField("body", type: .nonNull(.scalar(String.self))),
+          GraphQLField("targetDeviceID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
           GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
         ]
@@ -3951,8 +3951,8 @@ public final class ListNotificationsQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
-          self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+        public init(id: GraphQLID, body: String, targetDeviceId: String, senderId: String, senderName: String, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "Notification", "id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
         public var __typename: String {
@@ -3973,21 +3973,21 @@ public final class ListNotificationsQuery: GraphQLQuery {
           }
         }
 
-        public var targetId: String {
+        public var body: String {
           get {
-            return snapshot["targetID"]! as! String
+            return snapshot["body"]! as! String
           }
           set {
-            snapshot.updateValue(newValue, forKey: "targetID")
+            snapshot.updateValue(newValue, forKey: "body")
           }
         }
 
-        public var targetDevice: String {
+        public var targetDeviceId: String {
           get {
-            return snapshot["targetDevice"]! as! String
+            return snapshot["targetDeviceID"]! as! String
           }
           set {
-            snapshot.updateValue(newValue, forKey: "targetDevice")
+            snapshot.updateValue(newValue, forKey: "targetDeviceID")
           }
         }
 
@@ -4000,12 +4000,12 @@ public final class ListNotificationsQuery: GraphQLQuery {
           }
         }
 
-        public var body: String {
+        public var senderName: String {
           get {
-            return snapshot["body"]! as! String
+            return snapshot["senderName"]! as! String
           }
           set {
-            snapshot.updateValue(newValue, forKey: "body")
+            snapshot.updateValue(newValue, forKey: "senderName")
           }
         }
 
@@ -5116,7 +5116,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
 
 public final class OnCreateNotificationSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateNotification {\n  onCreateNotification {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateNotification {\n  onCreateNotification {\n    __typename\n    id\n    body\n    targetDeviceID\n    senderID\n    senderName\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -5153,10 +5153,10 @@ public final class OnCreateNotificationSubscription: GraphQLSubscription {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
-        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
-        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDeviceID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -5167,8 +5167,8 @@ public final class OnCreateNotificationSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, body: String, targetDeviceId: String, senderId: String, senderName: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -5189,21 +5189,21 @@ public final class OnCreateNotificationSubscription: GraphQLSubscription {
         }
       }
 
-      public var targetId: String {
+      public var body: String {
         get {
-          return snapshot["targetID"]! as! String
+          return snapshot["body"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetID")
+          snapshot.updateValue(newValue, forKey: "body")
         }
       }
 
-      public var targetDevice: String {
+      public var targetDeviceId: String {
         get {
-          return snapshot["targetDevice"]! as! String
+          return snapshot["targetDeviceID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetDevice")
+          snapshot.updateValue(newValue, forKey: "targetDeviceID")
         }
       }
 
@@ -5216,12 +5216,12 @@ public final class OnCreateNotificationSubscription: GraphQLSubscription {
         }
       }
 
-      public var body: String {
+      public var senderName: String {
         get {
-          return snapshot["body"]! as! String
+          return snapshot["senderName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "body")
+          snapshot.updateValue(newValue, forKey: "senderName")
         }
       }
 
@@ -5248,7 +5248,7 @@ public final class OnCreateNotificationSubscription: GraphQLSubscription {
 
 public final class OnUpdateNotificationSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateNotification {\n  onUpdateNotification {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateNotification {\n  onUpdateNotification {\n    __typename\n    id\n    body\n    targetDeviceID\n    senderID\n    senderName\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -5285,10 +5285,10 @@ public final class OnUpdateNotificationSubscription: GraphQLSubscription {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
-        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
-        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDeviceID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -5299,8 +5299,8 @@ public final class OnUpdateNotificationSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, body: String, targetDeviceId: String, senderId: String, senderName: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -5321,21 +5321,21 @@ public final class OnUpdateNotificationSubscription: GraphQLSubscription {
         }
       }
 
-      public var targetId: String {
+      public var body: String {
         get {
-          return snapshot["targetID"]! as! String
+          return snapshot["body"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetID")
+          snapshot.updateValue(newValue, forKey: "body")
         }
       }
 
-      public var targetDevice: String {
+      public var targetDeviceId: String {
         get {
-          return snapshot["targetDevice"]! as! String
+          return snapshot["targetDeviceID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetDevice")
+          snapshot.updateValue(newValue, forKey: "targetDeviceID")
         }
       }
 
@@ -5348,12 +5348,12 @@ public final class OnUpdateNotificationSubscription: GraphQLSubscription {
         }
       }
 
-      public var body: String {
+      public var senderName: String {
         get {
-          return snapshot["body"]! as! String
+          return snapshot["senderName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "body")
+          snapshot.updateValue(newValue, forKey: "senderName")
         }
       }
 
@@ -5380,7 +5380,7 @@ public final class OnUpdateNotificationSubscription: GraphQLSubscription {
 
 public final class OnDeleteNotificationSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteNotification {\n  onDeleteNotification {\n    __typename\n    id\n    targetID\n    targetDevice\n    senderID\n    body\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteNotification {\n  onDeleteNotification {\n    __typename\n    id\n    body\n    targetDeviceID\n    senderID\n    senderName\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -5417,10 +5417,10 @@ public final class OnDeleteNotificationSubscription: GraphQLSubscription {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("targetID", type: .nonNull(.scalar(String.self))),
-        GraphQLField("targetDevice", type: .nonNull(.scalar(String.self))),
-        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
         GraphQLField("body", type: .nonNull(.scalar(String.self))),
+        GraphQLField("targetDeviceID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -5431,8 +5431,8 @@ public final class OnDeleteNotificationSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, targetId: String, targetDevice: String, senderId: String, body: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Notification", "id": id, "targetID": targetId, "targetDevice": targetDevice, "senderID": senderId, "body": body, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, body: String, targetDeviceId: String, senderId: String, senderName: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Notification", "id": id, "body": body, "targetDeviceID": targetDeviceId, "senderID": senderId, "senderName": senderName, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -5453,21 +5453,21 @@ public final class OnDeleteNotificationSubscription: GraphQLSubscription {
         }
       }
 
-      public var targetId: String {
+      public var body: String {
         get {
-          return snapshot["targetID"]! as! String
+          return snapshot["body"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetID")
+          snapshot.updateValue(newValue, forKey: "body")
         }
       }
 
-      public var targetDevice: String {
+      public var targetDeviceId: String {
         get {
-          return snapshot["targetDevice"]! as! String
+          return snapshot["targetDeviceID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "targetDevice")
+          snapshot.updateValue(newValue, forKey: "targetDeviceID")
         }
       }
 
@@ -5480,12 +5480,12 @@ public final class OnDeleteNotificationSubscription: GraphQLSubscription {
         }
       }
 
-      public var body: String {
+      public var senderName: String {
         get {
-          return snapshot["body"]! as! String
+          return snapshot["senderName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "body")
+          snapshot.updateValue(newValue, forKey: "senderName")
         }
       }
 

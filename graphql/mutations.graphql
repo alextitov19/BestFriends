@@ -113,10 +113,10 @@ mutation CreateNotification(
 ) {
   createNotification(input: $input, condition: $condition) {
     id
-    targetID
-    targetDevice
-    senderID
     body
+    targetDeviceID
+    senderID
+    senderName
     createdAt
     updatedAt
   }
@@ -127,10 +127,10 @@ mutation UpdateNotification(
 ) {
   updateNotification(input: $input, condition: $condition) {
     id
-    targetID
-    targetDevice
-    senderID
     body
+    targetDeviceID
+    senderID
+    senderName
     createdAt
     updatedAt
   }
@@ -141,10 +141,10 @@ mutation DeleteNotification(
 ) {
   deleteNotification(input: $input, condition: $condition) {
     id
-    targetID
-    targetDevice
-    senderID
     body
+    targetDeviceID
+    senderID
+    senderName
     createdAt
     updatedAt
   }
