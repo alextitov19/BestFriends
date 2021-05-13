@@ -30,7 +30,7 @@ struct DeleteMyAccount: View {
                         VStack {
                                                    
                             Spacer()
-                                .frame(height: 125)
+                                .frame(height: 25)
                                                     
                             Image("Penguin Sticker 24")
                                 .resizable()
@@ -64,7 +64,7 @@ struct DeleteMyAccount: View {
                     .frame(height: 25)
                 
                     
-                    Text("If you have time we would love to get your feedback about BestFriends in a short two minute Survey. Please tap [Survey] below.")
+                    Text("If you have time we would love to get your feedback about BestFriends in a short two minute Survey.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -79,6 +79,9 @@ struct DeleteMyAccount: View {
                 Spacer()
                     .frame(height: 50)
                 NavigationLink(destination: InfoViewPage2()) {
+                    
+                    // Take user to Website to take Survey
+                    
                                     Text("Survey")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -88,7 +91,8 @@ struct DeleteMyAccount: View {
                     
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 25)
+                    
                     NavigationLink(destination: InfoViewPage2()) {
                                         Text("Delete Account")
                                             .font(.title)
@@ -96,10 +100,11 @@ struct DeleteMyAccount: View {
                                             .frame(width: 200, height: 50)
                                             .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                             .cornerRadius(25)
-                        
+                        Spacer()
+                            .frame(height: 200)
                 }
-            Spacer()
-                .frame(height: 75)
+           // Spacer()
+              //  .frame(height: 75)
         
         }
         }
@@ -109,5 +114,6 @@ struct DeleteMyAccount: View {
    
    
     }
+}
 }
 }
