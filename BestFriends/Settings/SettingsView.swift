@@ -32,7 +32,7 @@ struct SettingsView: View {
                         NavigationLink(
                             destination: InfoViewPage1(),
                             label: {
-                                Text("Introducing BestFriends")
+                                Text("BestFriends Walk-through")
                             })
                         .frame(width: 325, height: 50, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
