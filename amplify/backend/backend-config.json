@@ -32,10 +32,5 @@
         }
     },
     "analytics": {},
-    "notifications": {
-        "BestFriends4u0Xn": {
-            "service": "Pinpoint",
-            "channels": []
-        }
-    }
+    "notifications": {}
 }
