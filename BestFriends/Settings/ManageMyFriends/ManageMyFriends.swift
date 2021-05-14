@@ -23,43 +23,72 @@ struct ManageMyFriends: View {
                 
                 VStack {
                     
-                
-                    Spacer().frame(height: 25)
-                    VStack {
-                    
+                    Text("To:")
                        
-                          Spacer()
-                              .frame(height: 30)
-                        Spacer()
-                            .frame(height: 75)
+                        .font(.system(size: 25))
+                        .fontWeight(.regular)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
-                        Text("You may manage your friends (move to BlueMode, Block or Delete) by long-tapping your friends name above their star on Homepage.")
-                            .font(.system(size: 19))
-                            .fontWeight(.ultraLight)
-                            .italic()
-                            .foregroundColor(Color.white)
-                            .frame(width: 400)
-                        
-                            .multilineTextAlignment(.center)
+                                 Spacer()
+                                     .frame(height: 30)
+                      
+                      Text("[Switch to BlueMode],")
                          
-                        Spacer()
-                            .frame(height: 30)
+                          .font(.system(size: 25))
+                          .fontWeight(.regular)
+                          .foregroundColor(.white)
+                          .multilineTextAlignment(.center)
+                          .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                          
+                                   Spacer()
+                                       .frame(height: 30)
+                               
+                        
+                        Text("[Block a Friend] or")
+                           
+                            .font(.system(size: 25))
+                            .fontWeight(.regular)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                                     Spacer()
+                                         .frame(height: 30)
+                        
+                        
+                        Text("[Delete a Friend]")
+                           
+                            .font(.system(size: 25))
+                            .fontWeight(.regular)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                                     Spacer()
+                                         .frame(height: 30)
+                        
+                        
+                        
+                                 
+                                 Text("just long-tapping your friend's name above their star on Homepage.")
+                                    
+                                     .font(.system(size: 25))
+                                     .fontWeight(.regular)
+                                     .foregroundColor(.white)
+                                     .multilineTextAlignment(.center)
+                                     .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
                      
                         
-                        
-                        Spacer()
-                            .frame(height: 50)
-                        NavigationLink(destination: LandingView(myID: " ")) {
-                                            Text("Take me to Homepage")
-                                                .font(.title)
-                                                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                                .frame(width: 350, height: 50)
-                                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                                .cornerRadius(25)
+  
+                            
+                            
+                            
                         }
                         
-                        Spacer()
-                            .frame(height: 100)
+                      
                     
                     }
                     
@@ -68,18 +97,15 @@ struct ManageMyFriends: View {
             }
             }
             
-          //  .navigationBarTitle("")
-            //.navigationBarHidden(true)
-        }
+         
+        
 
-    }
+    
 
 
-   // struct ManageMyFriends_Previews : PreviewProvider {
-     //   static var previews: some View {
-       //     ManageMyFriends()
-        //}
-   // }
+
+
+
 
 
 

@@ -79,7 +79,7 @@ struct DeleteMyAccount: View {
                 Spacer()
                     .frame(height: 0)
                 
-                Link("Survey", destination: URL(string: "https://socialtechlabs.com/survey/")!)
+                Link("Exit Survey", destination: URL(string: "https://socialtechlabs.com/survey/")!)
                 .frame(width: 230, height: 50, alignment: .center)
                 .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))

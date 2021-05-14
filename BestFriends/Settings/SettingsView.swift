@@ -20,22 +20,23 @@ struct SettingsView: View {
             
             VStack {
                 Text("Settings")
-                    .navigationBarTitle("")
-                    .navigationBarHidden(true)
+                    .font(.system(size: 40))
+                    .fontWeight(.regular)
                     .foregroundColor(.white)
-                    .font(.title)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
-                Spacer().frame(height: 25)
+                Spacer().frame(height: 20)
                 VStack {
                  
                     
-                        Link("Give feedback/suggestions - Join BetaTeam!", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
-                        .frame(width: 375, height: 50, alignment: .center)
+                        Link("We ask for your help w/ Feedback & Suggestions - Join Beta Test Team!", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
+                        .frame(width: 325, height: 70, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
                         .cornerRadius(25)
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                     
                     
                     
@@ -51,10 +52,20 @@ struct SettingsView: View {
                                     .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
                                     )
                     
-              
-                    
                     Spacer()
                         .frame(height: 30)
+                    
+                    
+                    Text("Privacy / Reporting Abuse")
+                       
+                        .font(.system(size: 32))
+                        .fontWeight(.regular)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
+                        
+                    
                     
                     
                     Link("Privacy Policy / Terms of Service", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
@@ -66,7 +77,7 @@ struct SettingsView: View {
                                 )
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                  
                 
                     Link("Report Objectional Content & Behavior", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
@@ -80,7 +91,7 @@ struct SettingsView: View {
                    
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                  
                   
                     VStack {
@@ -94,17 +105,25 @@ struct SettingsView: View {
                                     .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
                                     )
                             
-                            
-                        
-                       
-                        
                         Spacer()
                             .frame(height: 30)
+                        
+                        
+                        Text("Account Services")
+                           
+                            .font(.system(size: 32))
+                            .fontWeight(.regular)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 385, height: 50, alignment: .center
+                            )
+                        
+                     
                     
                         NavigationLink(
                             destination: MyAccount(),
                             label: {
-                                Text("My Account")
+                                Text("Password / Email")
                             })
                             .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -119,7 +138,7 @@ struct SettingsView: View {
                         
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 20)
                         
                         NavigationLink(
                             destination: ManageMyFriends(),
@@ -137,7 +156,7 @@ struct SettingsView: View {
                         
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 20)
                         
                         NavigationLink(
                             destination: ChangeChatBackground(),
@@ -155,7 +174,7 @@ struct SettingsView: View {
                           
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 20)
                         
                         NavigationLink(
                             destination: DeleteMyAccount(),
