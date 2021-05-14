@@ -1,0 +1,33 @@
+type Room @model {
+  id: ID!
+  messages: [Message!]
+}
+
+type Message {
+  id: ID!
+  senderName: String!
+  senderID: String!
+  body: String!
+  creationDate: AWSTimestamp!
+  attachmentPath: String
+}
+
+type User @model {
+  id: ID!
+  firstName: String!
+  lastName: String!
+  birthday: AWSDate!
+  pronouns: String!
+  location: String!
+  adPreference: String!
+  friends: [String]
+  rooms: [String]
+}
+
+type Notification @model {
+  id: ID!
+  body: String!
+  deviceToken: String!
+  senderID: String!
+  senderName: String!
+}

@@ -1,0 +1,82 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bestfriends-dev-182511-authRole",
+      "UnauthRoleArn": "arn:aws:iam::565456385125:role/amplify-bestfriends-dev-182511-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::565456385125:role/amplify-bestfriends-dev-182511-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-bestfriends-dev-182511-deployment",
+      "UnauthRoleName": "amplify-bestfriends-dev-182511-unauthRole",
+      "StackName": "amplify-bestfriends-dev-182511",
+      "StackId": "arn:aws:cloudformation:us-east-2:565456385125:stack/amplify-bestfriends-dev-182511/1897a1b0-9bf7-11eb-84a1-06cf7588ecca",
+      "AmplifyAppId": "de41dugubu253"
+    }
+  },
+  "auth": {
+    "bestfriends330b7cc3": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "us-east-2_LOn6BUlfT",
+        "AppClientIDWeb": "6n65tq8rrt3c7dshhuohig6lrc",
+        "AppClientID": "37uqgm91g6j23h0p79cve7n4nc",
+        "HostedUIDomain": "bestfriends330b7cc3-330b7cc3-dev",
+        "IdentityPoolId": "us-east-2:174b1ab0-9a4e-4acd-8761-7b63f551b0f0",
+        "IdentityPoolName": "bestfriends330b7cc3_identitypool_330b7cc3__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"authentication://\"],\"LogoutURLs\":[\"authentication://\"]}",
+        "UserPoolName": "bestfriends330b7cc3_userpool_330b7cc3"
+      },
+      "lastPushTimeStamp": "2021-05-14T07:15:37.042Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-dev-182511-deployment/amplify-cfn-templates/auth/bestfriends330b7cc3-cloudformation-template.yml",
+        "logicalId": "authbestfriends330b7cc3"
+      }
+    }
+  },
+  "api": {
+    "bestfriends": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": ""
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "5n5loejuyzb2fdwnmk5s7lrbw4",
+        "GraphQLAPIEndpointOutput": "https://toigxxissjebvi2vq6ej3x3eom.appsync-api.us-east-2.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-mhmehp3pena5dcm6vhxmzutztq"
+      },
+      "lastPushTimeStamp": "2021-05-14T07:15:39.840Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-dev-182511-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apibestfriends"
+      },
+      "lastPushDirHash": "hKfG1srD7+pG15golIN/3zkUOjI="
+    }
+  },
+  "storage": {
+    "Attachments": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "BucketName": "bestfriendsattachments182511-dev",
+        "Region": "us-east-2"
+      },
+      "lastPushTimeStamp": "2021-05-14T07:15:37.048Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-dev-182511-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageAttachments"
+      }
+    }
+  },
+  "analytics": {},
+  "notifications": {}
+}
