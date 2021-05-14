@@ -15,7 +15,13 @@
             "auth": {
                 "bestfriends330b7cc3": {}
             },
-            "notifications": {}
+            "notifications": {
+                "Pinpoint": {
+                    "Name": "BestFriends4u0Xn-dev",
+                    "Id": "7928a0c3f246481cbd10fd529fae732e",
+                    "Region": "us-east-1"
+                }
+            }
         }
     }
 }

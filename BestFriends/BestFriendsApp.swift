@@ -21,12 +21,10 @@ struct BestFriendsApp: App {
 
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @ObservedObject var sessionManager = SessionManager()
-    @State var notificationService = NotificationService()
     
     init() {
         configureAmplify()
         sessionManager.getSurrentAuthUser()
-        notificationService.requestPermission()
     }
     
     var body: some Scene {
