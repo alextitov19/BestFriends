@@ -30,7 +30,7 @@ struct SettingsView: View {
                 VStack {
                  
                     
-                        Link("We ask for your help w/ Feedback & Suggestions - Join Beta Test Team!", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
+                        Link("We ask for your help w/ Feedback & Suggestions - Join Beta-Test Team!", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
                         .frame(width: 325, height: 70, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                         .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
