@@ -89,36 +89,3 @@ subscription OnDeleteUser {
     updatedAt
   }
 }
-subscription OnCreateNotification {
-  onCreateNotification {
-    id
-    body
-    deviceToken
-    senderID
-    senderName
-    createdAt
-    updatedAt
-  }
-}
-subscription OnUpdateNotification {
-  onUpdateNotification {
-    id
-    body
-    deviceToken
-    senderID
-    senderName
-    createdAt
-    updatedAt
-  }
-}
-subscription OnDeleteNotification {
-  onDeleteNotification {
-    id
-    body
-    deviceToken
-    senderID
-    senderName
-    createdAt
-    updatedAt
-  }
-}

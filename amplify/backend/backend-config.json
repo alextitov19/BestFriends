@@ -35,9 +35,7 @@
     "notifications": {
         "BestFriends4u0Xn": {
             "service": "Pinpoint",
-            "channels": [
-                "APNS"
-            ]
+            "channels": []
         }
     }
 }
