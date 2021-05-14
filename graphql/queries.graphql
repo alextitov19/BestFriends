@@ -77,7 +77,7 @@ query GetNotification($id: ID!) {
   getNotification(id: $id) {
     id
     body
-    targetDeviceToken
+    deviceToken
     senderID
     senderName
     createdAt
@@ -93,7 +93,7 @@ query ListNotifications(
     items {
       id
       body
-      targetDeviceToken
+      deviceToken
       senderID
       senderName
       createdAt

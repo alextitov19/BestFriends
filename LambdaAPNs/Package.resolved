@@ -2,6 +2,42 @@
   "object": {
     "pins": [
       {
+        "package": "HypertextApplicationLanguage",
+        "repositoryURL": "https://github.com/swift-aws/HypertextApplicationLanguage.git",
+        "state": {
+          "branch": null,
+          "revision": "aa2c9141d491682f17b2310aed17b9adfc006256",
+          "version": "1.1.1"
+        }
+      },
+      {
+        "package": "INIParser",
+        "repositoryURL": "https://github.com/swift-aws/Perfect-INIParser.git",
+        "state": {
+          "branch": null,
+          "revision": "42de0efc7a01105e19b80d533d3d282a98277f6c",
+          "version": "3.0.3"
+        }
+      },
+      {
+        "package": "AWSSDKSwift",
+        "repositoryURL": "https://github.com/soto-project/soto.git",
+        "state": {
+          "branch": null,
+          "revision": "b402b8a434ca39f24d189289ab93fbee96664502",
+          "version": "4.9.0"
+        }
+      },
+      {
+        "package": "AWSSDKSwiftCore",
+        "repositoryURL": "https://github.com/soto-project/soto-core.git",
+        "state": {
+          "branch": null,
+          "revision": "856a7df0c15763de4f9f3e3d7baea4a8aa009d22",
+          "version": "4.7.2"
+        }
+      },
+      {
         "package": "swift-aws-lambda-runtime",
         "repositoryURL": "https://github.com/swift-server/swift-aws-lambda-runtime.git",
         "state": {
@@ -35,6 +71,24 @@
           "branch": null,
           "revision": "d161bf658780b209c185994528e7e24376cf7283",
           "version": "2.29.0"
+        }
+      },
+      {
+        "package": "swift-nio-ssl",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl.git",
+        "state": {
+          "branch": null,
+          "revision": "6363cdf6d2fb863e82434f3c4618f4e896e37569",
+          "version": "2.13.1"
+        }
+      },
+      {
+        "package": "swift-nio-transport-services",
+        "repositoryURL": "https://github.com/apple/swift-nio-transport-services.git",
+        "state": {
+          "branch": null,
+          "revision": "657537c2cf1845f8d5201ecc4e48f21f21841128",
+          "version": "1.10.0"
         }
       }
     ]

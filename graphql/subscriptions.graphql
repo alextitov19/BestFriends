@@ -93,7 +93,7 @@ subscription OnCreateNotification {
   onCreateNotification {
     id
     body
-    targetDeviceToken
+    deviceToken
     senderID
     senderName
     createdAt
@@ -104,7 +104,7 @@ subscription OnUpdateNotification {
   onUpdateNotification {
     id
     body
-    targetDeviceToken
+    deviceToken
     senderID
     senderName
     createdAt
@@ -115,7 +115,7 @@ subscription OnDeleteNotification {
   onDeleteNotification {
     id
     body
-    targetDeviceToken
+    deviceToken
     senderID
     senderName
     createdAt
