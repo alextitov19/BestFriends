@@ -32,5 +32,12 @@
         }
     },
     "analytics": {},
-    "notifications": {}
+    "notifications": {
+        "BestFriends4u0Xn": {
+            "service": "Pinpoint",
+            "channels": [
+                "APNS"
+            ]
+        }
+    }
 }
