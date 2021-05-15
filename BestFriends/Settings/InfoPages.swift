@@ -177,10 +177,14 @@ struct InfoViewPage2: View {
                                     .frame(width: 325, height: 80, alignment: .center)
                                        
                               }
-                .frame(width: 400, height: 75, alignment: .center)
-                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                .cornerRadius(25)
+                .frame(width: 400, height: 75)
+                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 25)
+                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
+                        )
+                
+                
                     
                     Spacer()
                         .frame(height: 30)
@@ -194,10 +198,12 @@ struct InfoViewPage2: View {
                                     .frame(width: 325, height: 80, alignment: .center)
                 
                 }
-                .frame(width: 400, height: 75, alignment: .center)
-                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                .cornerRadius(25)
+                .frame(width: 400, height: 75)
+                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 25)
+                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
+                        )
             
                 Spacer()
                     .frame(height: 30)
@@ -210,10 +216,12 @@ struct InfoViewPage2: View {
                                     .frame(width: 325, height: 80, alignment: .center)
             
             }
-            .frame(width: 400, height: 75, alignment: .center)
-            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-            .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-            .cornerRadius(25)
+                .frame(width: 400, height: 75)
+                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 25)
+                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
+                        )
             
                 
                 Spacer()
