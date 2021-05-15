@@ -23,18 +23,9 @@ struct ManageMyFriends: View {
                 
                 VStack {
                     
-                    Text("To:")
-                       
-                        .font(.system(size: 25))
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                                 Spacer()
-                                     .frame(height: 30)
+                
                       
-                      Text("[Switch to BlueMode],")
+                      Text("To [Switch to BlueMode],")
                          
                           .font(.system(size: 25))
                           .fontWeight(.regular)
