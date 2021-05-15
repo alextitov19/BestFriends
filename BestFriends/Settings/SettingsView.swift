@@ -18,49 +18,69 @@ struct SettingsView: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
+            ScrollView {
             VStack {
                 Text("Settings")
-                    .font(.system(size: 40))
-                    .fontWeight(.regular)
+                    .font(.system(size: 50))
+                    .fontWeight(.ultraLight)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
                 Spacer().frame(height: 20)
+               
+               
+               
+                
+                    NavigationLink(
+                        destination: InfoViewPage1(),
+                        label: {
+                            Text("BestFriends Walk-through")
+                        })
+                        .frame(width: 325, height: 50)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                )
+                
+                
+                Spacer()
+                    .frame(height: 45)
+                
+                
+                
+                Text("Making BestFriends Better")
+                    .font(.system(size: 32))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+            
+                
                 VStack {
-                 
                     
                         Link("We ask for your help w/ Feedback & Suggestions - Join Beta-Test Team!", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
-                        .frame(width: 325, height: 70, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
-                        .cornerRadius(25)
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    
-                    
-                        NavigationLink(
-                            destination: InfoViewPage1(),
-                            label: {
-                                Text("BestFriends Walk-through")
-                            })
                             .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    .stroke(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)), lineWidth: 1)
                                     )
                     
+                   
+                    
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 45)
                     
                     
                     Text("Privacy / Reporting Abuse")
                        
                         .font(.system(size: 32))
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
+                        
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .multilineTextAlignment(.center)
                         .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
@@ -73,7 +93,7 @@ struct SettingsView: View {
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
                                 )
                     
                     Spacer()
@@ -85,7 +105,7 @@ struct SettingsView: View {
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
                                 )
                     
                    
@@ -102,18 +122,19 @@ struct SettingsView: View {
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
                                     )
                             
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 45)
                         
                         
                         Text("Account Services")
                            
                             .font(.system(size: 32))
-                            .fontWeight(.regular)
-                            .foregroundColor(.white)
+                            .fontWeight(.ultraLight)
+                            
+                            .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                             .multilineTextAlignment(.center)
                             .frame(width: 385, height: 50, alignment: .center
                             )
@@ -126,10 +147,10 @@ struct SettingsView: View {
                                 Text("Password / Email")
                             })
                             .frame(width: 325, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
                                     )
                     
                         
@@ -150,7 +171,7 @@ struct SettingsView: View {
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
                                     )
                             
                         
@@ -168,7 +189,7 @@ struct SettingsView: View {
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
                                     )
                             
                           
@@ -186,7 +207,7 @@ struct SettingsView: View {
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
                                     )
                             
                         
@@ -200,6 +221,7 @@ struct SettingsView: View {
                 }
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
+            }
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)

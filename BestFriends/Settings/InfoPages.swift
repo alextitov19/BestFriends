@@ -66,32 +66,32 @@ struct InfoViewPage1: View {
                     }
                     
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 15)
                 
                     
-                    Text("Please STOP! We know you're upset and hurt. But, before you start thinking about 'unfriending' each other on IG & Snap, or re-posting private messages that will be hurtful - let's give 'BlueMode' a try.")
+                    Text("Please STOP! We know you're upset and hurt. But, before you start thinking about 'unfriending' each other on IG & Snap, or reposting private messages that will be hurtfuf. Let's give 'BlueMode' a try.")
                        
-                        .font(.system(size: 25))
+                        .font(.system(size: 20))
                         .fontWeight(.regular)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 30)
                    
                 Text("* From Homepage just 'long-tap' your friends 'name' unlocking special features helping you fix this hurt.")
                    
-                    .font(.system(size: 25))
+                    .font(.system(size: 20))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 400, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 30)
                 NavigationLink(destination: InfoViewPage2()) {
                                     Text("Next")
                                         .font(.title)
@@ -227,8 +227,8 @@ struct InfoViewPage2: View {
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                 }
-            Spacer()
-                .frame(height: 75)
+                Spacer()
+                    .frame(height: 100)
         
         }
         }
@@ -318,7 +318,7 @@ struct InfoViewPage3: View {
                   
                     }
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 100)
             
             }
             }
@@ -409,8 +409,8 @@ struct InfoViewPage4: View {
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                 }
-            Spacer()
-                .frame(height: 75)
+                Spacer()
+                    .frame(height: 100)
         
         }
             .navigationBarTitle("")

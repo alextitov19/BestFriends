@@ -9,15 +9,16 @@
 import Amplify
 import SwiftUI
 
+
 struct DeleteMyAccount: View {
 
-    var body: some View {
-        NavigationView{
-    
-  
+    @EnvironmentObject var sessionManager: SessionManager
+
+    @State private var Reason: String = ""
+
+var body: some View {
+    NavigationView{
         ZStack {
-            
-            
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
@@ -64,7 +65,7 @@ struct DeleteMyAccount: View {
                     .frame(height: 25)
                 
                     
-                    Text("If you have a minute for a ONE question survey  - we'd love to get your feedback.")
+                    Text("We're working hard to make BestFriends better and better. Before you go, please give us a short reason for leaving.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -72,22 +73,26 @@ struct DeleteMyAccount: View {
                         .multilineTextAlignment(.center)
                         .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
-                    
-               
-                    
-                
+                 
                 Spacer()
-                    .frame(height: 0)
-                
-                Link("Exit Survey", destination: URL(string: "https://socialtechlabs.com/survey/")!)
-                .frame(width: 230, height: 50, alignment: .center)
-                .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .cornerRadius(25)
+                    .frame(height: 20)
                 
                 
+                TextField("Reason", text: $Reason)
+                    .multilineTextAlignment(.center)
+                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .frame(width: 300, height: 40, alignment: .center)
+                    .font(.title)
+                    
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .cornerRadius(20)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 50)
+                
+                
                 
                 Button("Delete my Account", action: {()
                 })
@@ -96,9 +101,8 @@ struct DeleteMyAccount: View {
                 .background(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
                 .cornerRadius(25)
                 
-                
-                        Spacer()
-                            .frame(height: 200)
+                Spacer()
+                    .frame(height: 210)
                 }
            
         
