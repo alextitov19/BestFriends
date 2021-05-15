@@ -64,9 +64,7 @@ struct InfoViewPage1: View {
                            
                         }
                     }
-                    
-                Spacer()
-                    .frame(height: 15)
+           
                 
                     
                     Text("Please STOP! We know you're upset and hurt. But, before you start thinking about 'unfriending' each other on IG & Snap, or reposting private messages that will be hurtfuf. Let's give 'BlueMode' a try.")
@@ -178,7 +176,7 @@ struct InfoViewPage2: View {
                                        
                               }
                 .frame(width: 400, height: 75, alignment: .center)
-                .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
                 .cornerRadius(25)
                     
@@ -217,7 +215,7 @@ struct InfoViewPage2: View {
             
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 30)
 
                 NavigationLink(destination: InfoViewPage3()) {
                                     Text("Next")
@@ -228,7 +226,7 @@ struct InfoViewPage2: View {
                                         .cornerRadius(25)
                 }
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 75)
         
         }
         }
@@ -290,9 +288,7 @@ struct InfoViewPage3: View {
                            
                         }
                     }
-                    
-                Spacer()
-                    .frame(height: 100)
+              
                     
                     Text("Just shake your phone & your 3 favorite pics that always make you smile pop up")
                        
@@ -318,7 +314,7 @@ struct InfoViewPage3: View {
                   
                     }
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 75)
             
             }
             }
