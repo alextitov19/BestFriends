@@ -12,7 +12,8 @@ struct SwipeGesture: View {
 
     var body: some View {
         VStack {
-            Image("Penguine Sticker 18")
+            Text("Drag me")
+                .frame(width:200, height: 100)
                 .gesture(
                     DragGesture(minimumDistance: 50)
                         .onEnded { _ in
