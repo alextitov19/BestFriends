@@ -12,4 +12,6 @@ target 'BestFriends' do
   pod 'AmplifyPlugins/AWSAPIPlugin'
   pod 'AmplifyPlugins/AWSS3StoragePlugin'
 
+  pod 'Firebase/Analytics'
+
 end

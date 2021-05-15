@@ -8,6 +8,7 @@
 import SwiftUI
 import Amplify
 import AmplifyPlugins
+import Firebase
 
 class DeviceTokenManager {
     private init() {}
@@ -24,6 +25,7 @@ struct BestFriendsApp: App {
     
     init() {
         configureAmplify()
+        configureFirebase()
         sessionManager.getSurrentAuthUser()
     }
     
@@ -31,10 +33,10 @@ struct BestFriendsApp: App {
         WindowGroup {
             switch sessionManager.authState {
             case .login:
-                InfoViewPage1()
+                LoginView()
                     .environmentObject(sessionManager)
             case .signUp:
-                InfoViewPage1()
+                SignUpPage1()
                     .environmentObject(sessionManager)
             case .confirmationCode(let username):
                 ConfirmationView(username: username)
@@ -58,6 +60,10 @@ struct BestFriendsApp: App {
         } catch {
             print("Could not initialize Amplify", error)
         }
+    }
+    
+    private func configureFirebase() {
+            FirebaseApp.configure()
     }
     
     

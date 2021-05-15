@@ -58,6 +58,7 @@
 		7A08E35F264F1A3900AEBC8F /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E358264F1A3900AEBC8F /* AmplifyModels.swift */; };
 		7A08E360264F1A3900AEBC8F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E359264F1A3900AEBC8F /* Message.swift */; };
 		7A08E361264F1A3900AEBC8F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E35A264F1A3900AEBC8F /* User.swift */; };
+		7A08E363264FAB6800AEBC8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A08E362264FAB6800AEBC8F /* GoogleService-Info.plist */; };
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
 		7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD3262B570400561D87 /* MessagesView.swift */; };
@@ -181,6 +182,7 @@
 		7A08E358264F1A3900AEBC8F /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		7A08E359264F1A3900AEBC8F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7A08E35A264F1A3900AEBC8F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7A08E362264FAB6800AEBC8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
 		7A6A4CD3262B570400561D87 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7A08E362264FAB6800AEBC8F /* GoogleService-Info.plist */,
 				7A2954A3264C2B5600676F02 /* LongTap */,
 				D15CCD702648862700BFE179 /* DarkMode */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
@@ -601,6 +604,7 @@
 				0B8A5735A1E658DE4FC62119 /* amplifyconfiguration.json in Resources */,
 				F4D242A7842387FEB78858DA /* awsconfiguration.json in Resources */,
 				DB15C6B4674E946ADCCFE253 /* amplifyconfiguration.json in Resources */,
+				7A08E363264FAB6800AEBC8F /* GoogleService-Info.plist in Resources */,
 				C40B21779B4A21AEE4E5C9BB /* awsconfiguration.json in Resources */,
 				FADB708799E1553410EFE827 /* amplifyconfiguration.json in Resources */,
 				371A608B589BED4B51C92A46 /* awsconfiguration.json in Resources */,
@@ -643,13 +647,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BestFriends/Pods-BestFriends-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BestFriends/Pods-BestFriends-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
