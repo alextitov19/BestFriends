@@ -10,13 +10,6 @@ import Amplify
 import AmplifyPlugins
 import Firebase
 
-class DeviceTokenManager {
-    private init() {}
-    static let shared = DeviceTokenManager()
-    
-    var deviceToken: String?
-}
-
 @main
 struct BestFriendsApp: App {
 
@@ -64,6 +57,7 @@ struct BestFriendsApp: App {
     
     private func configureFirebase() {
             FirebaseApp.configure()
+        
     }
     
     
