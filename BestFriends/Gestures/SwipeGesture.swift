@@ -12,7 +12,7 @@ struct SwipeGesture: View {
 
     var body: some View {
         VStack {
-            Image("iceland")
+            Image("Penguine Sticker 18")
                 .gesture(
                     DragGesture(minimumDistance: 50)
                         .onEnded { _ in
