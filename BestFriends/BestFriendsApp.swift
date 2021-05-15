@@ -18,7 +18,6 @@ struct BestFriendsApp: App {
     
     init() {
         configureAmplify()
-        configureFirebase()
         sessionManager.getSurrentAuthUser()
     }
     
@@ -53,11 +52,6 @@ struct BestFriendsApp: App {
         } catch {
             print("Could not initialize Amplify", error)
         }
-    }
-    
-    private func configureFirebase() {
-            FirebaseApp.configure()
-        
     }
     
     

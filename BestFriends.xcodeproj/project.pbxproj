@@ -59,6 +59,7 @@
 		7A08E360264F1A3900AEBC8F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E359264F1A3900AEBC8F /* Message.swift */; };
 		7A08E361264F1A3900AEBC8F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E35A264F1A3900AEBC8F /* User.swift */; };
 		7A08E363264FAB6800AEBC8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A08E362264FAB6800AEBC8F /* GoogleService-Info.plist */; };
+		7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */; };
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
 		7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD3262B570400561D87 /* MessagesView.swift */; };
@@ -183,6 +184,7 @@
 		7A08E359264F1A3900AEBC8F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7A08E35A264F1A3900AEBC8F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A08E362264FAB6800AEBC8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
 		7A6A4CD3262B570400561D87 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
@@ -262,6 +264,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A08E364264FB6CA00AEBC8F /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		7A2954A3264C2B5600676F02 /* LongTap */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +338,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7A08E364264FB6CA00AEBC8F /* Notifications */,
 				7A08E362264FAB6800AEBC8F /* GoogleService-Info.plist */,
 				7A2954A3264C2B5600676F02 /* LongTap */,
 				D15CCD702648862700BFE179 /* DarkMode */,
@@ -717,6 +728,7 @@
 				7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */,
 				7AF6973F2630EE1900CF49CC /* Star.swift in Sources */,
 				7AA2010F2635D21100C9F00C /* RoomsView.swift in Sources */,
+				7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */,
 				5CC0808D963A49AE969F958B /* Room.swift in Sources */,
 				D157779F264D8EA400B6551A /* ChangeChatBackground.swift in Sources */,
 				31843DD5A561448D8998CA30 /* Room+Schema.swift in Sources */,
