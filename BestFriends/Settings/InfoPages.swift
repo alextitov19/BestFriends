@@ -83,7 +83,7 @@ struct InfoViewPage1: View {
                    
                 Text("(From Homepage just 'long-tap' your friends 'name' unlocking special features helping you fix this mess.)")
                     .italic()
-                    .font(.system(size: 15))
+                    .font(.system(size: 17))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
@@ -294,7 +294,7 @@ struct InfoViewPage3: View {
                 Spacer()
                     .frame(height: 15)
                     
-                    Text("Just shake your phone & your 3 favorite pics that always make you smile pop up")
+                    Text("Just shake your phone and your 3 favorite pics that always make you smile ... Pop up!")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -388,7 +388,7 @@ struct InfoViewPage4: View {
                     
                 
                     
-                    Text("STOP SCROLLING. Just long-tap special messages when you get them. We save & re-deliver them next time we see you.")
+                    Text("STOP SCROLLING. Just long-tap special messages when you get them. We save them for the next time we see you.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -477,21 +477,24 @@ struct InfoViewPage5: View {
                         }
                     }
                     
-           
-                    
-                
-                    
-                    Text("Hide Chat - Restore w/ Secret PIN. All Chat messages blocked from screen-shots.")
-                       
+                    Text("Hide your Chat messages from prying eyes. Only you can get them back with your 'secret' PIN.")
                         .font(.system(size: 25))
                         .fontWeight(.regular)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                Spacer()
-                    .frame(height: 30)
+                        .frame(width: 400, height: 120, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                 
+                
+                Text("You won't see your chat messages splashed all over IG or Snap. BestFriends blocks screen-shots in Chat.")
                    
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+            Spacer()
+                .frame(height: 30)
                 
                 NavigationLink(destination: InfoViewPage6()) {
                                     Text("Next")
@@ -577,7 +580,7 @@ struct InfoViewPage6: View {
                         .fontWeight(.regular)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 400, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                       
                     
@@ -658,12 +661,9 @@ struct InfoViewPage7: View {
                            
                         }
                     }
-                    
-                Spacer()
-                    .frame(height: 100)
-                    
+                 
                 
-                    Text("Just quickly tap your friend's 'stars' on Homepage and we'll find them and get their availability for you.")
+                    Text("Quick! Tap your friend's 'stars' on Homepage and we'll find them and get their availability fast.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
