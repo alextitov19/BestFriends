@@ -58,10 +58,10 @@
 		7A08E35F264F1A3900AEBC8F /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E358264F1A3900AEBC8F /* AmplifyModels.swift */; };
 		7A08E360264F1A3900AEBC8F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E359264F1A3900AEBC8F /* Message.swift */; };
 		7A08E361264F1A3900AEBC8F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E35A264F1A3900AEBC8F /* User.swift */; };
-		7A08E363264FAB6800AEBC8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A08E362264FAB6800AEBC8F /* GoogleService-Info.plist */; };
 		7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */; };
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
+		7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */; };
 		7A6A4CD4262B570400561D87 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD3262B570400561D87 /* MessagesView.swift */; };
 		7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD6262B5DA900561D87 /* MessageRow.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
@@ -128,7 +128,6 @@
 		D157779B264D086000B6551A /* SmileNotesLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779A264D086000B6551A /* SmileNotesLibrary.swift */; };
 		D157779F264D8EA400B6551A /* ChangeChatBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779E264D8EA400B6551A /* ChangeChatBackground.swift */; };
 		D15777A3264DB7FD00B6551A /* BetaTesters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15777A2264DB7FD00B6551A /* BetaTesters.swift */; };
-		D15777AD2650400F00B6551A /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15777AC2650400F00B6551A /* SwipeGesture.swift */; };
 		D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD682647458900BFE179 /* ResetPassword.swift */; };
 		D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */; };
 		D15CCD722648867F00BFE179 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD712648867F00BFE179 /* Prompts.swift */; };
@@ -137,6 +136,10 @@
 		D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD792648870500BFE179 /* PrizesDark.swift */; };
 		D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */; };
 		D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD83264908A300BFE179 /* DarkModePage1.swift */; };
+		D15CCD86264BB08600BFE179 /* LongTapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD85264BB08500BFE179 /* LongTapTest.swift */; };
+		D15CCD88264BB5CA00BFE179 /* LT2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD87264BB5CA00BFE179 /* LT2.swift */; };
+		D15CCD8A264BB79A00BFE179 /* LT3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD89264BB79A00BFE179 /* LT3.swift */; };
+		D15CCD8C264BC3A200BFE179 /* LT4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD8B264BC3A200BFE179 /* LT4.swift */; };
 		D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
 		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
@@ -181,10 +184,10 @@
 		7A08E358264F1A3900AEBC8F /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		7A08E359264F1A3900AEBC8F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7A08E35A264F1A3900AEBC8F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		7A08E362264FAB6800AEBC8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
+		7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7A6A4CD3262B570400561D87 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		7A6A4CD6262B5DA900561D87 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
@@ -228,7 +231,6 @@
 		D157779A264D086000B6551A /* SmileNotesLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesLibrary.swift; sourceTree = "<group>"; };
 		D157779E264D8EA400B6551A /* ChangeChatBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatBackground.swift; sourceTree = "<group>"; };
 		D15777A2264DB7FD00B6551A /* BetaTesters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTesters.swift; sourceTree = "<group>"; };
-		D15777AC2650400F00B6551A /* SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
 		D15CCD682647458900BFE179 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
 		D15CCD712648867F00BFE179 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
@@ -237,6 +239,10 @@
 		D15CCD792648870500BFE179 /* PrizesDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizesDark.swift; sourceTree = "<group>"; };
 		D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
 		D15CCD83264908A300BFE179 /* DarkModePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModePage1.swift; sourceTree = "<group>"; };
+		D15CCD85264BB08500BFE179 /* LongTapTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LongTapTest.swift; path = BestFriends/LongTap/LongTapTest.swift; sourceTree = SOURCE_ROOT; };
+		D15CCD87264BB5CA00BFE179 /* LT2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT2.swift; sourceTree = "<group>"; };
+		D15CCD89264BB79A00BFE179 /* LT3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT3.swift; sourceTree = "<group>"; };
+		D15CCD8B264BC3A200BFE179 /* LT4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LT4.swift; sourceTree = "<group>"; };
 		D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeNotReadyTalk.swift; sourceTree = "<group>"; };
 		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFriend.swift; sourceTree = "<group>"; };
@@ -267,6 +273,17 @@
 				7A934001264FC94900BB5972 /* PushNotificationSender.swift */,
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		7A2954A3264C2B5600676F02 /* LongTap */ = {
+			isa = PBXGroup;
+			children = (
+				D15CCD85264BB08500BFE179 /* LongTapTest.swift */,
+				D15CCD87264BB5CA00BFE179 /* LT2.swift */,
+				D15CCD89264BB79A00BFE179 /* LT3.swift */,
+				D15CCD8B264BC3A200BFE179 /* LT4.swift */,
+			);
+			path = LongTap;
 			sourceTree = "<group>";
 		};
 		7A6A4CD2262B56E900561D87 /* Messaging */ = {
@@ -324,9 +341,9 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */,
 				7A08E364264FB6CA00AEBC8F /* Notifications */,
-				7A08E362264FAB6800AEBC8F /* GoogleService-Info.plist */,
-				D15777A926503D8500B6551A /* Gestures */,
+				7A2954A3264C2B5600676F02 /* LongTap */,
 				D15CCD702648862700BFE179 /* DarkMode */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
 				D1577799264D082800B6551A /* SmileNotes */,
@@ -482,14 +499,6 @@
 			path = DeleteAccount;
 			sourceTree = "<group>";
 		};
-		D15777A926503D8500B6551A /* Gestures */ = {
-			isa = PBXGroup;
-			children = (
-				D15777AC2650400F00B6551A /* SwipeGesture.swift */,
-			);
-			path = Gestures;
-			sourceTree = "<group>";
-		};
 		D15CCD6526473E6700BFE179 /* MyAccount */ = {
 			isa = PBXGroup;
 			children = (
@@ -609,7 +618,7 @@
 				0B8A5735A1E658DE4FC62119 /* amplifyconfiguration.json in Resources */,
 				F4D242A7842387FEB78858DA /* awsconfiguration.json in Resources */,
 				DB15C6B4674E946ADCCFE253 /* amplifyconfiguration.json in Resources */,
-				7A08E363264FAB6800AEBC8F /* GoogleService-Info.plist in Resources */,
+				7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */,
 				C40B21779B4A21AEE4E5C9BB /* awsconfiguration.json in Resources */,
 				FADB708799E1553410EFE827 /* amplifyconfiguration.json in Resources */,
 				371A608B589BED4B51C92A46 /* awsconfiguration.json in Resources */,
@@ -669,6 +678,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A6A4D07262B8A5000561D87 /* BackgroundVideoController.swift in Sources */,
+				D15CCD8A264BB79A00BFE179 /* LT3.swift in Sources */,
 				D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */,
 				D15777A3264DB7FD00B6551A /* BetaTesters.swift in Sources */,
 				7AE31CC2262A9BE1001EC5A3 /* LandingView.swift in Sources */,
@@ -681,9 +691,11 @@
 				7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */,
+				D15CCD88264BB5CA00BFE179 /* LT2.swift in Sources */,
 				D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */,
 				D15CCD722648867F00BFE179 /* Prompts.swift in Sources */,
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
+				D15CCD8C264BC3A200BFE179 /* LT4.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */,
 				D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */,
@@ -692,6 +704,7 @@
 				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
 				D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */,
+				D15CCD86264BB08600BFE179 /* LongTapTest.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */,
 				D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */,
@@ -747,7 +760,6 @@
 				5604759D595C31770986E9DB /* AmplifyModels.swift in Sources */,
 				54D643D7DB636616E72ECCFD /* Message+Schema.swift in Sources */,
 				338DFF00E2A84783DDC53568 /* Message.swift in Sources */,
-				D15777AD2650400F00B6551A /* SwipeGesture.swift in Sources */,
 				B0C7AFCB85C34ACC0E38A4B1 /* Room+Schema.swift in Sources */,
 				8195EF9985493DF0513FE41E /* Room.swift in Sources */,
 				5F191B231895C081FA325B55 /* User+Schema.swift in Sources */,
