@@ -269,13 +269,15 @@ struct LandingView: View {
     
 
     private func inviteClicked() {
-        for index in 0..<stars.count {
-            stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
-        }
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            inviteSelectedFriends()
-        }
+//        for index in 0..<stars.count {
+//            stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
+//        }
+//
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+//            inviteSelectedFriends()
+//        }
+        let sender = PushNotificationSender()
+        sender.sendPushNotification(to: "eUQ_bhgw9E12qeZTEvPs4J:APA91bF7Ctromn1OjgNFpjHUSmpbB3f_bQy3D_x6o7KLISJyYmPqy-7ET6TcSYU6LH2zVMDjkiz3_xMWXdIzQHpUETLNd_Ds4HHwSdxPCvAMj8YvJl_5eGQEob0Z10HLO0rQIG60NUW9", title: "Notification title", body: "Notification body")
     }
     
     private func inviteSelectedFriends() {
