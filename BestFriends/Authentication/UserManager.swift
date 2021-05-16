@@ -76,10 +76,6 @@ class UserManager: ObservableObject {
         }
     }
 
-
-
-
-
 }
 
 
