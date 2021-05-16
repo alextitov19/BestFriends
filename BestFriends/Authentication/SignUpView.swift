@@ -137,7 +137,7 @@ struct SignUpPage1: View {
                             .multilineTextAlignment(.center)
                         
                        
-                        Text("tag line here")
+                        Text("the positivity app")
                             .font(.system(size: 25))
                             .italic()
                             .foregroundColor(.white)
