@@ -88,6 +88,7 @@
 		7A95EA52265301A400C6C700 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95EA49265301A400C6C700 /* Room.swift */; };
 		7A95EA53265301A400C6C700 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95EA4A265301A400C6C700 /* User+Schema.swift */; };
 		7A95EA54265301A400C6C700 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95EA4B265301A400C6C700 /* AmplifyModels.swift */; };
+		7A95EA5826530DDA00C6C700 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95EA5726530DDA00C6C700 /* PinView.swift */; };
 		7AA200FD2635C6EF00C9F00C /* RoomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */; };
 		7AA2010F2635D21100C9F00C /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2010E2635D21100C9F00C /* RoomsView.swift */; };
 		7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201102635D2E100C9F00C /* RoomRow.swift */; };
@@ -231,6 +232,7 @@
 		7A95EA49265301A400C6C700 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		7A95EA4A265301A400C6C700 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
 		7A95EA4B265301A400C6C700 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		7A95EA5726530DDA00C6C700 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDataSource.swift; sourceTree = "<group>"; };
 		7AA2010E2635D21100C9F00C /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
 		7AA201102635D2E100C9F00C /* RoomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRow.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				7A6A4CDC262B68A600561D87 /* Message+Extensions.swift */,
 				7A33B63B2640D463004CB47F /* MessageRoomView.swift */,
 				7A7F6E37264305AA0022F078 /* ChatBubble.swift */,
+				7A95EA5726530DDA00C6C700 /* PinView.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -812,6 +815,7 @@
 				23C49EFC4154BF7DF764B9AF /* Room.swift in Sources */,
 				66FA0758D3541691EAEF1509 /* User+Schema.swift in Sources */,
 				8F058474DF8708334F0D590E /* User.swift in Sources */,
+				7A95EA5826530DDA00C6C700 /* PinView.swift in Sources */,
 				56AACACC183D2DB3F6E65CF6 /* AmplifyModels.swift in Sources */,
 				DBD65123E0B424F8C930E0B3 /* Message+Schema.swift in Sources */,
 				FCC954ECADC01992D3731835 /* Message.swift in Sources */,

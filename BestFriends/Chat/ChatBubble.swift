@@ -52,6 +52,8 @@ struct ChatBubble: View {
                             .foregroundColor(.white)
                             .font(.system(size: 14).weight(.thin))
                         
+                        Spacer().frame(width: 30)
+                        
                     }
                     
                     
@@ -82,7 +84,7 @@ struct ChatBubble: View {
                                 
                             }
                         }
-                        Spacer().frame(width: 20)
+                        Spacer().frame(width: 40)
                         
                     }
                 }
@@ -160,3 +162,4 @@ struct ChatBubble: View {
     }
     
 }
+

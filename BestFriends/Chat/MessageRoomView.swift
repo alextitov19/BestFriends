@@ -13,13 +13,16 @@ struct MessageRoomView: View {
     
     @ObservedObject var messageDataSource: MessageDataSource
     @State var showingImagePicker = false
+    @State var showingPin = false
     @State var inputImage: UIImage?
     var user: User
+    var room: Room
     
     init(room: Room) {
         let id = Amplify.Auth.getCurrentUser()?.username ?? "Failed getting id"
         self.user = UserDataSource().getUser(id: id)
         self.messageDataSource  = MessageDataSource(room: room)
+        self.room = room
     }
     
     @State var currentBody: String = ""
@@ -33,7 +36,36 @@ struct MessageRoomView: View {
             
             VStack {
                 HStack { //header
+                    Spacer()
+
+                    Button(action: {
+                        
+                    }) {
+                        Text("< Back")
+                    }
                     
+                    Spacer()
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Text(room.name)
+                            .font(.system(size: 30).bold())
+                            .foregroundColor(.white)
+                    }
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        showingPin = true
+                    }) {
+                        Image("whiteLock")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFit()
+                    }
+                    
+                    Spacer()
                 }
                 
                 ScrollView { //messages
@@ -89,6 +121,8 @@ struct MessageRoomView: View {
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
+            
+            NavigationLink(destination: PinView(), isActive: $showingPin) { EmptyView() }
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
