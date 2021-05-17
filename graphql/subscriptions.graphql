@@ -2,6 +2,8 @@
 subscription OnCreateRoom {
   onCreateRoom {
     id
+    name
+    members
     messages {
       id
       senderName
@@ -17,6 +19,8 @@ subscription OnCreateRoom {
 subscription OnUpdateRoom {
   onUpdateRoom {
     id
+    name
+    members
     messages {
       id
       senderName
@@ -32,6 +36,8 @@ subscription OnUpdateRoom {
 subscription OnDeleteRoom {
   onDeleteRoom {
     id
+    name
+    members
     messages {
       id
       senderName

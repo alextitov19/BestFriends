@@ -2,6 +2,8 @@
 query GetRoom($id: ID!) {
   getRoom(id: $id) {
     id
+    name
+    members
     messages {
       id
       senderName
@@ -22,6 +24,8 @@ query ListRooms(
   listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {
     items {
       id
+      name
+      members
       messages {
         id
         senderName

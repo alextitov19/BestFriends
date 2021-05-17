@@ -22,22 +22,52 @@ struct RoomsView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
-                ScrollView {
-                    LazyVStack {
-                        ForEach(dataSource.rooms) { room in
-                            NavigationLink(destination: MessageRoomView(room: room)) {
-                                RoomRow()
+            ZStack {
+                
+                Image("purpleBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                    
+                VStack {
+                    Text("Chat Rooms")
+                        .font(.system(size: 40).bold())
+                        .foregroundColor(.white)
+                    
+                    Spacer().frame(height: 30)
+                    
+                    HStack {
+                        Spacer().frame(width: 20)
+                        
+                        ScrollView {
+                            LazyVStack {
+                                Spacer().frame(height: 10)
+                                
+                                ForEach(dataSource.rooms) { room in
+                                    NavigationLink(destination: MessageRoomView(room: room)) {
+                                        RoomRow(room: room)
+                                    }
+                                    Spacer()
+                                        .frame(height: 30)
+                                }
                             }
-                            Spacer()
-                                .frame(height: 30)
                         }
+                        
+                        Spacer().frame(width: 20)
                     }
+                    
                 }
             }
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
         
+    }
+}
+
+
+struct RoomsView_Previews : PreviewProvider {
+    static var previews: some View {
+        RoomsView()
     }
 }

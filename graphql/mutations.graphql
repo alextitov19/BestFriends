@@ -5,6 +5,8 @@ mutation CreateRoom(
 ) {
   createRoom(input: $input, condition: $condition) {
     id
+    name
+    members
     messages {
       id
       senderName
@@ -23,6 +25,8 @@ mutation UpdateRoom(
 ) {
   updateRoom(input: $input, condition: $condition) {
     id
+    name
+    members
     messages {
       id
       senderName
@@ -41,6 +45,8 @@ mutation DeleteRoom(
 ) {
   deleteRoom(input: $input, condition: $condition) {
     id
+    name
+    members
     messages {
       id
       senderName

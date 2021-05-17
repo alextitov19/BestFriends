@@ -5,8 +5,8 @@ import AWSAppSync
 public struct CreateRoomInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, messages: [MessageInput]? = nil) {
-    graphQLMap = ["id": id, "messages": messages]
+  public init(id: GraphQLID? = nil, name: String, members: [String], messages: [MessageInput]? = nil) {
+    graphQLMap = ["id": id, "name": name, "members": members, "messages": messages]
   }
 
   public var id: GraphQLID? {
@@ -15,6 +15,24 @@ public struct CreateRoomInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var name: String {
+    get {
+      return graphQLMap["name"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "name")
+    }
+  }
+
+  public var members: [String] {
+    get {
+      return graphQLMap["members"] as! [String]
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "members")
     }
   }
 
@@ -93,8 +111,26 @@ public struct MessageInput: GraphQLMapConvertible {
 public struct ModelRoomConditionInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(and: [ModelRoomConditionInput?]? = nil, or: [ModelRoomConditionInput?]? = nil, not: ModelRoomConditionInput? = nil) {
-    graphQLMap = ["and": and, "or": or, "not": not]
+  public init(name: ModelStringInput? = nil, members: ModelStringInput? = nil, and: [ModelRoomConditionInput?]? = nil, or: [ModelRoomConditionInput?]? = nil, not: ModelRoomConditionInput? = nil) {
+    graphQLMap = ["name": name, "members": members, "and": and, "or": or, "not": not]
+  }
+
+  public var name: ModelStringInput? {
+    get {
+      return graphQLMap["name"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "name")
+    }
+  }
+
+  public var members: ModelStringInput? {
+    get {
+      return graphQLMap["members"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "members")
+    }
   }
 
   public var and: [ModelRoomConditionInput?]? {
@@ -118,245 +154,6 @@ public struct ModelRoomConditionInput: GraphQLMapConvertible {
   public var not: ModelRoomConditionInput? {
     get {
       return graphQLMap["not"] as! ModelRoomConditionInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "not")
-    }
-  }
-}
-
-public struct UpdateRoomInput: GraphQLMapConvertible {
-  public var graphQLMap: GraphQLMap
-
-  public init(id: GraphQLID, messages: [MessageInput]? = nil) {
-    graphQLMap = ["id": id, "messages": messages]
-  }
-
-  public var id: GraphQLID {
-    get {
-      return graphQLMap["id"] as! GraphQLID
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "id")
-    }
-  }
-
-  public var messages: [MessageInput]? {
-    get {
-      return graphQLMap["messages"] as! [MessageInput]?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "messages")
-    }
-  }
-}
-
-public struct DeleteRoomInput: GraphQLMapConvertible {
-  public var graphQLMap: GraphQLMap
-
-  public init(id: GraphQLID? = nil) {
-    graphQLMap = ["id": id]
-  }
-
-  public var id: GraphQLID? {
-    get {
-      return graphQLMap["id"] as! GraphQLID?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "id")
-    }
-  }
-}
-
-public struct CreateUserInput: GraphQLMapConvertible {
-  public var graphQLMap: GraphQLMap
-
-  public init(id: GraphQLID? = nil, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, friends: [String?]? = nil, rooms: [String?]? = nil) {
-    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "friends": friends, "rooms": rooms]
-  }
-
-  public var id: GraphQLID? {
-    get {
-      return graphQLMap["id"] as! GraphQLID?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "id")
-    }
-  }
-
-  public var firstName: String {
-    get {
-      return graphQLMap["firstName"] as! String
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "firstName")
-    }
-  }
-
-  public var lastName: String {
-    get {
-      return graphQLMap["lastName"] as! String
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lastName")
-    }
-  }
-
-  public var birthday: String {
-    get {
-      return graphQLMap["birthday"] as! String
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "birthday")
-    }
-  }
-
-  public var pronouns: String {
-    get {
-      return graphQLMap["pronouns"] as! String
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "pronouns")
-    }
-  }
-
-  public var location: String {
-    get {
-      return graphQLMap["location"] as! String
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "location")
-    }
-  }
-
-  public var adPreference: String {
-    get {
-      return graphQLMap["adPreference"] as! String
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "adPreference")
-    }
-  }
-
-  public var friends: [String?]? {
-    get {
-      return graphQLMap["friends"] as! [String?]?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "friends")
-    }
-  }
-
-  public var rooms: [String?]? {
-    get {
-      return graphQLMap["rooms"] as! [String?]?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "rooms")
-    }
-  }
-}
-
-public struct ModelUserConditionInput: GraphQLMapConvertible {
-  public var graphQLMap: GraphQLMap
-
-  public init(firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, and: [ModelUserConditionInput?]? = nil, or: [ModelUserConditionInput?]? = nil, not: ModelUserConditionInput? = nil) {
-    graphQLMap = ["firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "friends": friends, "rooms": rooms, "and": and, "or": or, "not": not]
-  }
-
-  public var firstName: ModelStringInput? {
-    get {
-      return graphQLMap["firstName"] as! ModelStringInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "firstName")
-    }
-  }
-
-  public var lastName: ModelStringInput? {
-    get {
-      return graphQLMap["lastName"] as! ModelStringInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lastName")
-    }
-  }
-
-  public var birthday: ModelStringInput? {
-    get {
-      return graphQLMap["birthday"] as! ModelStringInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "birthday")
-    }
-  }
-
-  public var pronouns: ModelStringInput? {
-    get {
-      return graphQLMap["pronouns"] as! ModelStringInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "pronouns")
-    }
-  }
-
-  public var location: ModelStringInput? {
-    get {
-      return graphQLMap["location"] as! ModelStringInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "location")
-    }
-  }
-
-  public var adPreference: ModelStringInput? {
-    get {
-      return graphQLMap["adPreference"] as! ModelStringInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "adPreference")
-    }
-  }
-
-  public var friends: ModelStringInput? {
-    get {
-      return graphQLMap["friends"] as! ModelStringInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "friends")
-    }
-  }
-
-  public var rooms: ModelStringInput? {
-    get {
-      return graphQLMap["rooms"] as! ModelStringInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "rooms")
-    }
-  }
-
-  public var and: [ModelUserConditionInput?]? {
-    get {
-      return graphQLMap["and"] as! [ModelUserConditionInput?]?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "and")
-    }
-  }
-
-  public var or: [ModelUserConditionInput?]? {
-    get {
-      return graphQLMap["or"] as! [ModelUserConditionInput?]?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "or")
-    }
-  }
-
-  public var not: ModelUserConditionInput? {
-    get {
-      return graphQLMap["not"] as! ModelUserConditionInput?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "not")
@@ -625,6 +422,263 @@ public struct ModelSizeInput: GraphQLMapConvertible {
   }
 }
 
+public struct UpdateRoomInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID, name: String? = nil, members: [String]? = nil, messages: [MessageInput]? = nil) {
+    graphQLMap = ["id": id, "name": name, "members": members, "messages": messages]
+  }
+
+  public var id: GraphQLID {
+    get {
+      return graphQLMap["id"] as! GraphQLID
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var name: String? {
+    get {
+      return graphQLMap["name"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "name")
+    }
+  }
+
+  public var members: [String]? {
+    get {
+      return graphQLMap["members"] as! [String]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "members")
+    }
+  }
+
+  public var messages: [MessageInput]? {
+    get {
+      return graphQLMap["messages"] as! [MessageInput]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "messages")
+    }
+  }
+}
+
+public struct DeleteRoomInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID? = nil) {
+    graphQLMap = ["id": id]
+  }
+
+  public var id: GraphQLID? {
+    get {
+      return graphQLMap["id"] as! GraphQLID?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+}
+
+public struct CreateUserInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID? = nil, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, friends: [String?]? = nil, rooms: [String?]? = nil) {
+    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "friends": friends, "rooms": rooms]
+  }
+
+  public var id: GraphQLID? {
+    get {
+      return graphQLMap["id"] as! GraphQLID?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var firstName: String {
+    get {
+      return graphQLMap["firstName"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "firstName")
+    }
+  }
+
+  public var lastName: String {
+    get {
+      return graphQLMap["lastName"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "lastName")
+    }
+  }
+
+  public var birthday: String {
+    get {
+      return graphQLMap["birthday"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "birthday")
+    }
+  }
+
+  public var pronouns: String {
+    get {
+      return graphQLMap["pronouns"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "pronouns")
+    }
+  }
+
+  public var location: String {
+    get {
+      return graphQLMap["location"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "location")
+    }
+  }
+
+  public var adPreference: String {
+    get {
+      return graphQLMap["adPreference"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "adPreference")
+    }
+  }
+
+  public var friends: [String?]? {
+    get {
+      return graphQLMap["friends"] as! [String?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "friends")
+    }
+  }
+
+  public var rooms: [String?]? {
+    get {
+      return graphQLMap["rooms"] as! [String?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "rooms")
+    }
+  }
+}
+
+public struct ModelUserConditionInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, and: [ModelUserConditionInput?]? = nil, or: [ModelUserConditionInput?]? = nil, not: ModelUserConditionInput? = nil) {
+    graphQLMap = ["firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "friends": friends, "rooms": rooms, "and": and, "or": or, "not": not]
+  }
+
+  public var firstName: ModelStringInput? {
+    get {
+      return graphQLMap["firstName"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "firstName")
+    }
+  }
+
+  public var lastName: ModelStringInput? {
+    get {
+      return graphQLMap["lastName"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "lastName")
+    }
+  }
+
+  public var birthday: ModelStringInput? {
+    get {
+      return graphQLMap["birthday"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "birthday")
+    }
+  }
+
+  public var pronouns: ModelStringInput? {
+    get {
+      return graphQLMap["pronouns"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "pronouns")
+    }
+  }
+
+  public var location: ModelStringInput? {
+    get {
+      return graphQLMap["location"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "location")
+    }
+  }
+
+  public var adPreference: ModelStringInput? {
+    get {
+      return graphQLMap["adPreference"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "adPreference")
+    }
+  }
+
+  public var friends: ModelStringInput? {
+    get {
+      return graphQLMap["friends"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "friends")
+    }
+  }
+
+  public var rooms: ModelStringInput? {
+    get {
+      return graphQLMap["rooms"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "rooms")
+    }
+  }
+
+  public var and: [ModelUserConditionInput?]? {
+    get {
+      return graphQLMap["and"] as! [ModelUserConditionInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "and")
+    }
+  }
+
+  public var or: [ModelUserConditionInput?]? {
+    get {
+      return graphQLMap["or"] as! [ModelUserConditionInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "or")
+    }
+  }
+
+  public var not: ModelUserConditionInput? {
+    get {
+      return graphQLMap["not"] as! ModelUserConditionInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "not")
+    }
+  }
+}
+
 public struct UpdateUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -734,8 +788,8 @@ public struct DeleteUserInput: GraphQLMapConvertible {
 public struct ModelRoomFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: ModelIDInput? = nil, and: [ModelRoomFilterInput?]? = nil, or: [ModelRoomFilterInput?]? = nil, not: ModelRoomFilterInput? = nil) {
-    graphQLMap = ["id": id, "and": and, "or": or, "not": not]
+  public init(id: ModelIDInput? = nil, name: ModelStringInput? = nil, members: ModelStringInput? = nil, and: [ModelRoomFilterInput?]? = nil, or: [ModelRoomFilterInput?]? = nil, not: ModelRoomFilterInput? = nil) {
+    graphQLMap = ["id": id, "name": name, "members": members, "and": and, "or": or, "not": not]
   }
 
   public var id: ModelIDInput? {
@@ -744,6 +798,24 @@ public struct ModelRoomFilterInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var name: ModelStringInput? {
+    get {
+      return graphQLMap["name"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "name")
+    }
+  }
+
+  public var members: ModelStringInput? {
+    get {
+      return graphQLMap["members"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "members")
     }
   }
 
@@ -1018,7 +1090,7 @@ public struct ModelUserFilterInput: GraphQLMapConvertible {
 
 public final class CreateRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateRoom($input: CreateRoomInput!, $condition: ModelRoomConditionInput) {\n  createRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateRoom($input: CreateRoomInput!, $condition: ModelRoomConditionInput) {\n  createRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateRoomInput
   public var condition: ModelRoomConditionInput?
@@ -1064,6 +1136,8 @@ public final class CreateRoomMutation: GraphQLMutation {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("name", type: .nonNull(.scalar(String.self))),
+        GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
@@ -1075,8 +1149,8 @@ public final class CreateRoomMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, messages: [Message]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, members: [String], messages: [Message]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -1094,6 +1168,24 @@ public final class CreateRoomMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var name: String {
+        get {
+          return snapshot["name"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "name")
+        }
+      }
+
+      public var members: [String] {
+        get {
+          return snapshot["members"]! as! [String]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "members")
         }
       }
 
@@ -1216,7 +1308,7 @@ public final class CreateRoomMutation: GraphQLMutation {
 
 public final class UpdateRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateRoom($input: UpdateRoomInput!, $condition: ModelRoomConditionInput) {\n  updateRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateRoom($input: UpdateRoomInput!, $condition: ModelRoomConditionInput) {\n  updateRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateRoomInput
   public var condition: ModelRoomConditionInput?
@@ -1262,6 +1354,8 @@ public final class UpdateRoomMutation: GraphQLMutation {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("name", type: .nonNull(.scalar(String.self))),
+        GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
@@ -1273,8 +1367,8 @@ public final class UpdateRoomMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, messages: [Message]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, members: [String], messages: [Message]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -1292,6 +1386,24 @@ public final class UpdateRoomMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var name: String {
+        get {
+          return snapshot["name"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "name")
+        }
+      }
+
+      public var members: [String] {
+        get {
+          return snapshot["members"]! as! [String]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "members")
         }
       }
 
@@ -1414,7 +1526,7 @@ public final class UpdateRoomMutation: GraphQLMutation {
 
 public final class DeleteRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteRoom($input: DeleteRoomInput!, $condition: ModelRoomConditionInput) {\n  deleteRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteRoom($input: DeleteRoomInput!, $condition: ModelRoomConditionInput) {\n  deleteRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteRoomInput
   public var condition: ModelRoomConditionInput?
@@ -1460,6 +1572,8 @@ public final class DeleteRoomMutation: GraphQLMutation {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("name", type: .nonNull(.scalar(String.self))),
+        GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
@@ -1471,8 +1585,8 @@ public final class DeleteRoomMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, messages: [Message]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, members: [String], messages: [Message]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -1490,6 +1604,24 @@ public final class DeleteRoomMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var name: String {
+        get {
+          return snapshot["name"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "name")
+        }
+      }
+
+      public var members: [String] {
+        get {
+          return snapshot["members"]! as! [String]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "members")
         }
       }
 
@@ -2155,7 +2287,7 @@ public final class DeleteUserMutation: GraphQLMutation {
 
 public final class GetRoomQuery: GraphQLQuery {
   public static let operationString =
-    "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    name\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -2199,6 +2331,8 @@ public final class GetRoomQuery: GraphQLQuery {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("name", type: .nonNull(.scalar(String.self))),
+        GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
@@ -2210,8 +2344,8 @@ public final class GetRoomQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, messages: [Message]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, members: [String], messages: [Message]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -2229,6 +2363,24 @@ public final class GetRoomQuery: GraphQLQuery {
         }
         set {
           snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var name: String {
+        get {
+          return snapshot["name"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "name")
+        }
+      }
+
+      public var members: [String] {
+        get {
+          return snapshot["members"]! as! [String]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "members")
         }
       }
 
@@ -2351,7 +2503,7 @@ public final class GetRoomQuery: GraphQLQuery {
 
 public final class ListRoomsQuery: GraphQLQuery {
   public static let operationString =
-    "query ListRooms($filter: ModelRoomFilterInput, $limit: Int, $nextToken: String) {\n  listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      messages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n      }\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListRooms($filter: ModelRoomFilterInput, $limit: Int, $nextToken: String) {\n  listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      name\n      members\n      messages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n      }\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelRoomFilterInput?
   public var limit: Int?
@@ -2445,6 +2597,8 @@ public final class ListRoomsQuery: GraphQLQuery {
         public static let selections: [GraphQLSelection] = [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("name", type: .nonNull(.scalar(String.self))),
+          GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
           GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
           GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
@@ -2456,8 +2610,8 @@ public final class ListRoomsQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, messages: [Message]? = nil, createdAt: String, updatedAt: String) {
-          self.init(snapshot: ["__typename": "Room", "id": id, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
+        public init(id: GraphQLID, name: String, members: [String], messages: [Message]? = nil, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
         public var __typename: String {
@@ -2475,6 +2629,24 @@ public final class ListRoomsQuery: GraphQLQuery {
           }
           set {
             snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var name: String {
+          get {
+            return snapshot["name"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "name")
+          }
+        }
+
+        public var members: [String] {
+          get {
+            return snapshot["members"]! as! [String]
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "members")
           }
         }
 
@@ -3007,7 +3179,7 @@ public final class ListUsersQuery: GraphQLQuery {
 
 public final class OnCreateRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateRoom {\n  onCreateRoom {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateRoom {\n  onCreateRoom {\n    __typename\n    id\n    name\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -3044,6 +3216,8 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("name", type: .nonNull(.scalar(String.self))),
+        GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
@@ -3055,8 +3229,8 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, messages: [Message]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, members: [String], messages: [Message]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -3074,6 +3248,24 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var name: String {
+        get {
+          return snapshot["name"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "name")
+        }
+      }
+
+      public var members: [String] {
+        get {
+          return snapshot["members"]! as! [String]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "members")
         }
       }
 
@@ -3196,7 +3388,7 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
 
 public final class OnUpdateRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateRoom {\n  onUpdateRoom {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateRoom {\n  onUpdateRoom {\n    __typename\n    id\n    name\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -3233,6 +3425,8 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("name", type: .nonNull(.scalar(String.self))),
+        GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
@@ -3244,8 +3438,8 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, messages: [Message]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, members: [String], messages: [Message]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -3263,6 +3457,24 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var name: String {
+        get {
+          return snapshot["name"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "name")
+        }
+      }
+
+      public var members: [String] {
+        get {
+          return snapshot["members"]! as! [String]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "members")
         }
       }
 
@@ -3385,7 +3597,7 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
 
 public final class OnDeleteRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteRoom {\n  onDeleteRoom {\n    __typename\n    id\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteRoom {\n  onDeleteRoom {\n    __typename\n    id\n    name\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -3422,6 +3634,8 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("name", type: .nonNull(.scalar(String.self))),
+        GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
@@ -3433,8 +3647,8 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, messages: [Message]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, members: [String], messages: [Message]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -3452,6 +3666,24 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var name: String {
+        get {
+          return snapshot["name"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "name")
+        }
+      }
+
+      public var members: [String] {
+        get {
+          return snapshot["members"]! as! [String]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "members")
         }
       }
 
