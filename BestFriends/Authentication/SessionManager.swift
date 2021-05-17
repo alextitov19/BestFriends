@@ -18,7 +18,7 @@ enum AuthState {
 final class SessionManager: ObservableObject {
     @Published var authState: AuthState = .login
     
-    func getSurrentAuthUser() {
+    func getCurrentAuthUser() {
         if let user = Amplify.Auth.getCurrentUser() {
             authState = .session(user: user)
         } else {
@@ -101,7 +101,7 @@ final class SessionManager: ObservableObject {
                 print(signInResult)
                 if signInResult.isSignedIn {
                     DispatchQueue.main.async {
-                        self?.getSurrentAuthUser()
+                        self?.getCurrentAuthUser()
                     }
                 }
                 
@@ -116,7 +116,7 @@ final class SessionManager: ObservableObject {
             switch result {
             case .success():
                 DispatchQueue.main.async {
-                    self?.getSurrentAuthUser()
+                    self?.getCurrentAuthUser()
                 }
                 
             case .failure(let error):

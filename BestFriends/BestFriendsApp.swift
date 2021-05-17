@@ -13,12 +13,12 @@ import Firebase
 @main
 struct BestFriendsApp: App {
 
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+//    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @ObservedObject var sessionManager = SessionManager()
     
     init() {
         configureAmplify()
-        sessionManager.getSurrentAuthUser()
+        sessionManager.getCurrentAuthUser()
     }
     
     var body: some Scene {
