@@ -305,6 +305,7 @@
 		7A71BCF22625292A00E6FA9E = {
 			isa = PBXGroup;
 			children = (
+				D1E3CFDD26522ECB00A26779 /* Blue */,
 				DBFB8C7AC87F4062BC821677 /* AmplifyModels */,
 				7A71BD1526252B0200E6FA9E /* amplifyconfiguration.json */,
 				7A71BD1426252B0200E6FA9E /* awsconfiguration.json */,
@@ -497,15 +498,22 @@
 		D15CCD702648862700BFE179 /* DarkMode */ = {
 			isa = PBXGroup;
 			children = (
-				D15CCD83264908A300BFE179 /* DarkModePage1.swift */,
-				D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */,
-				D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */,
 				D15CCD712648867F00BFE179 /* Prompts.swift */,
 				D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */,
 				D15CCD75264886C900BFE179 /* StickersDark.swift */,
 				D15CCD792648870500BFE179 /* PrizesDark.swift */,
 			);
 			path = DarkMode;
+			sourceTree = "<group>";
+		};
+		D1E3CFDD26522ECB00A26779 /* Blue */ = {
+			isa = PBXGroup;
+			children = (
+				D15CCD83264908A300BFE179 /* DarkModePage1.swift */,
+				D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */,
+				D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */,
+			);
+			path = Blue;
 			sourceTree = "<group>";
 		};
 		DBFB8C7AC87F4062BC821677 /* AmplifyModels */ = {
