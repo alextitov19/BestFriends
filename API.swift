@@ -581,7 +581,7 @@ public struct DeleteReportedMessageInput: GraphQLMapConvertible {
 public struct CreateUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: Int? = nil, friends: [String?]? = nil, rooms: [String?]? = nil) {
+  public init(id: GraphQLID? = nil, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil) {
     graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms]
   }
 
@@ -666,9 +666,9 @@ public struct CreateUserInput: GraphQLMapConvertible {
     }
   }
 
-  public var secretPin: Int? {
+  public var secretPin: String? {
     get {
-      return graphQLMap["secretPin"] as! Int?
+      return graphQLMap["secretPin"] as! String?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "secretPin")
@@ -697,7 +697,7 @@ public struct CreateUserInput: GraphQLMapConvertible {
 public struct ModelUserConditionInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, secretPin: ModelIntInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, and: [ModelUserConditionInput?]? = nil, or: [ModelUserConditionInput?]? = nil, not: ModelUserConditionInput? = nil) {
+  public init(firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, secretPin: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, and: [ModelUserConditionInput?]? = nil, or: [ModelUserConditionInput?]? = nil, not: ModelUserConditionInput? = nil) {
     graphQLMap = ["firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "and": and, "or": or, "not": not]
   }
 
@@ -773,9 +773,9 @@ public struct ModelUserConditionInput: GraphQLMapConvertible {
     }
   }
 
-  public var secretPin: ModelIntInput? {
+  public var secretPin: ModelStringInput? {
     get {
-      return graphQLMap["secretPin"] as! ModelIntInput?
+      return graphQLMap["secretPin"] as! ModelStringInput?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "secretPin")
@@ -872,99 +872,10 @@ public struct ModelBooleanInput: GraphQLMapConvertible {
   }
 }
 
-public struct ModelIntInput: GraphQLMapConvertible {
-  public var graphQLMap: GraphQLMap
-
-  public init(ne: Int? = nil, eq: Int? = nil, le: Int? = nil, lt: Int? = nil, ge: Int? = nil, gt: Int? = nil, between: [Int?]? = nil, attributeExists: Bool? = nil, attributeType: ModelAttributeTypes? = nil) {
-    graphQLMap = ["ne": ne, "eq": eq, "le": le, "lt": lt, "ge": ge, "gt": gt, "between": between, "attributeExists": attributeExists, "attributeType": attributeType]
-  }
-
-  public var ne: Int? {
-    get {
-      return graphQLMap["ne"] as! Int?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "ne")
-    }
-  }
-
-  public var eq: Int? {
-    get {
-      return graphQLMap["eq"] as! Int?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "eq")
-    }
-  }
-
-  public var le: Int? {
-    get {
-      return graphQLMap["le"] as! Int?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "le")
-    }
-  }
-
-  public var lt: Int? {
-    get {
-      return graphQLMap["lt"] as! Int?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lt")
-    }
-  }
-
-  public var ge: Int? {
-    get {
-      return graphQLMap["ge"] as! Int?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "ge")
-    }
-  }
-
-  public var gt: Int? {
-    get {
-      return graphQLMap["gt"] as! Int?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "gt")
-    }
-  }
-
-  public var between: [Int?]? {
-    get {
-      return graphQLMap["between"] as! [Int?]?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "between")
-    }
-  }
-
-  public var attributeExists: Bool? {
-    get {
-      return graphQLMap["attributeExists"] as! Bool?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "attributeExists")
-    }
-  }
-
-  public var attributeType: ModelAttributeTypes? {
-    get {
-      return graphQLMap["attributeType"] as! ModelAttributeTypes?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "attributeType")
-    }
-  }
-}
-
 public struct UpdateUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, firstName: String? = nil, lastName: String? = nil, birthday: String? = nil, pronouns: String? = nil, location: String? = nil, adPreference: String? = nil, deviceFcmToken: String? = nil, isOnline: Bool? = nil, secretPin: Int? = nil, friends: [String?]? = nil, rooms: [String?]? = nil) {
+  public init(id: GraphQLID, firstName: String? = nil, lastName: String? = nil, birthday: String? = nil, pronouns: String? = nil, location: String? = nil, adPreference: String? = nil, deviceFcmToken: String? = nil, isOnline: Bool? = nil, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil) {
     graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms]
   }
 
@@ -1049,9 +960,9 @@ public struct UpdateUserInput: GraphQLMapConvertible {
     }
   }
 
-  public var secretPin: Int? {
+  public var secretPin: String? {
     get {
-      return graphQLMap["secretPin"] as! Int?
+      return graphQLMap["secretPin"] as! String?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "secretPin")
@@ -1319,7 +1230,7 @@ public struct ModelReportedMessageFilterInput: GraphQLMapConvertible {
 public struct ModelUserFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: ModelIDInput? = nil, firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, secretPin: ModelIntInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, and: [ModelUserFilterInput?]? = nil, or: [ModelUserFilterInput?]? = nil, not: ModelUserFilterInput? = nil) {
+  public init(id: ModelIDInput? = nil, firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, secretPin: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, and: [ModelUserFilterInput?]? = nil, or: [ModelUserFilterInput?]? = nil, not: ModelUserFilterInput? = nil) {
     graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "and": and, "or": or, "not": not]
   }
 
@@ -1404,9 +1315,9 @@ public struct ModelUserFilterInput: GraphQLMapConvertible {
     }
   }
 
-  public var secretPin: ModelIntInput? {
+  public var secretPin: ModelStringInput? {
     get {
-      return graphQLMap["secretPin"] as! ModelIntInput?
+      return graphQLMap["secretPin"] as! ModelStringInput?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "secretPin")
@@ -2763,7 +2674,7 @@ public final class CreateUserMutation: GraphQLMutation {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("secretPin", type: .scalar(Int.self)),
+        GraphQLField("secretPin", type: .scalar(String.self)),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
@@ -2776,7 +2687,7 @@ public final class CreateUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: Int? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -2870,9 +2781,9 @@ public final class CreateUserMutation: GraphQLMutation {
         }
       }
 
-      public var secretPin: Int? {
+      public var secretPin: String? {
         get {
-          return snapshot["secretPin"] as? Int
+          return snapshot["secretPin"] as? String
         }
         set {
           snapshot.updateValue(newValue, forKey: "secretPin")
@@ -2974,7 +2885,7 @@ public final class UpdateUserMutation: GraphQLMutation {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("secretPin", type: .scalar(Int.self)),
+        GraphQLField("secretPin", type: .scalar(String.self)),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
@@ -2987,7 +2898,7 @@ public final class UpdateUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: Int? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -3081,9 +2992,9 @@ public final class UpdateUserMutation: GraphQLMutation {
         }
       }
 
-      public var secretPin: Int? {
+      public var secretPin: String? {
         get {
-          return snapshot["secretPin"] as? Int
+          return snapshot["secretPin"] as? String
         }
         set {
           snapshot.updateValue(newValue, forKey: "secretPin")
@@ -3185,7 +3096,7 @@ public final class DeleteUserMutation: GraphQLMutation {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("secretPin", type: .scalar(Int.self)),
+        GraphQLField("secretPin", type: .scalar(String.self)),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
@@ -3198,7 +3109,7 @@ public final class DeleteUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: Int? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -3292,9 +3203,9 @@ public final class DeleteUserMutation: GraphQLMutation {
         }
       }
 
-      public var secretPin: Int? {
+      public var secretPin: String? {
         get {
-          return snapshot["secretPin"] as? Int
+          return snapshot["secretPin"] as? String
         }
         set {
           snapshot.updateValue(newValue, forKey: "secretPin")
@@ -4320,7 +4231,7 @@ public final class GetUserQuery: GraphQLQuery {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("secretPin", type: .scalar(Int.self)),
+        GraphQLField("secretPin", type: .scalar(String.self)),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
@@ -4333,7 +4244,7 @@ public final class GetUserQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: Int? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -4427,9 +4338,9 @@ public final class GetUserQuery: GraphQLQuery {
         }
       }
 
-      public var secretPin: Int? {
+      public var secretPin: String? {
         get {
-          return snapshot["secretPin"] as? Int
+          return snapshot["secretPin"] as? String
         }
         set {
           snapshot.updateValue(newValue, forKey: "secretPin")
@@ -4579,7 +4490,7 @@ public final class ListUsersQuery: GraphQLQuery {
           GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
           GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
           GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-          GraphQLField("secretPin", type: .scalar(Int.self)),
+          GraphQLField("secretPin", type: .scalar(String.self)),
           GraphQLField("friends", type: .list(.scalar(String.self))),
           GraphQLField("rooms", type: .list(.scalar(String.self))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
@@ -4592,7 +4503,7 @@ public final class ListUsersQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: Int? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
+        public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
           self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
@@ -4686,9 +4597,9 @@ public final class ListUsersQuery: GraphQLQuery {
           }
         }
 
-        public var secretPin: Int? {
+        public var secretPin: String? {
           get {
-            return snapshot["secretPin"] as? Int
+            return snapshot["secretPin"] as? String
           }
           set {
             snapshot.updateValue(newValue, forKey: "secretPin")
@@ -5976,7 +5887,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("secretPin", type: .scalar(Int.self)),
+        GraphQLField("secretPin", type: .scalar(String.self)),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
@@ -5989,7 +5900,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: Int? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -6083,9 +5994,9 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         }
       }
 
-      public var secretPin: Int? {
+      public var secretPin: String? {
         get {
-          return snapshot["secretPin"] as? Int
+          return snapshot["secretPin"] as? String
         }
         set {
           snapshot.updateValue(newValue, forKey: "secretPin")
@@ -6178,7 +6089,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("secretPin", type: .scalar(Int.self)),
+        GraphQLField("secretPin", type: .scalar(String.self)),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
@@ -6191,7 +6102,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: Int? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -6285,9 +6196,9 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         }
       }
 
-      public var secretPin: Int? {
+      public var secretPin: String? {
         get {
-          return snapshot["secretPin"] as? Int
+          return snapshot["secretPin"] as? String
         }
         set {
           snapshot.updateValue(newValue, forKey: "secretPin")
@@ -6380,7 +6291,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("secretPin", type: .scalar(Int.self)),
+        GraphQLField("secretPin", type: .scalar(String.self)),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
@@ -6393,7 +6304,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: Int? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -6487,9 +6398,9 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         }
       }
 
-      public var secretPin: Int? {
+      public var secretPin: String? {
         get {
-          return snapshot["secretPin"] as? Int
+          return snapshot["secretPin"] as? String
         }
         set {
           snapshot.updateValue(newValue, forKey: "secretPin")

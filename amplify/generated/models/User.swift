@@ -12,7 +12,7 @@ public struct User: Model {
   public var adPreference: String
   public var deviceFCMToken: String
   public var isOnline: Bool
-  public var secretPin: Int?
+  public var secretPin: String?
   public var friends: [String]?
   public var rooms: [String]?
   
@@ -25,7 +25,7 @@ public struct User: Model {
       adPreference: String,
       deviceFCMToken: String,
       isOnline: Bool,
-      secretPin: Int? = nil,
+      secretPin: String? = nil,
       friends: [String]? = [],
       rooms: [String]? = []) {
       self.id = id
