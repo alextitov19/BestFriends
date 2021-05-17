@@ -28,6 +28,7 @@ type User @model {
   adPreference: String!
   deviceFCMToken: String!
   isOnline: Boolean!
+  secretPin: Int
   friends: [String]
   rooms: [String]
 }

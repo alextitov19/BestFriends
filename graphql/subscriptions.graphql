@@ -106,6 +106,7 @@ subscription OnCreateUser {
     adPreference
     deviceFCMToken
     isOnline
+    secretPin
     friends
     rooms
     createdAt
@@ -123,6 +124,7 @@ subscription OnUpdateUser {
     adPreference
     deviceFCMToken
     isOnline
+    secretPin
     friends
     rooms
     createdAt
@@ -140,6 +142,7 @@ subscription OnDeleteUser {
     adPreference
     deviceFCMToken
     isOnline
+    secretPin
     friends
     rooms
     createdAt

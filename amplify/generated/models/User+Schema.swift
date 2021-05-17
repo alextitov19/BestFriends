@@ -14,6 +14,7 @@ extension User {
     case adPreference
     case deviceFCMToken
     case isOnline
+    case secretPin
     case friends
     case rooms
   }
@@ -36,6 +37,7 @@ extension User {
       .field(user.adPreference, is: .required, ofType: .string),
       .field(user.deviceFCMToken, is: .required, ofType: .string),
       .field(user.isOnline, is: .required, ofType: .bool),
+      .field(user.secretPin, is: .optional, ofType: .int),
       .field(user.friends, is: .optional, ofType: .embeddedCollection(of: String.self)),
       .field(user.rooms, is: .optional, ofType: .embeddedCollection(of: String.self))
     )

@@ -127,6 +127,7 @@ mutation CreateUser(
     adPreference
     deviceFCMToken
     isOnline
+    secretPin
     friends
     rooms
     createdAt
@@ -147,6 +148,7 @@ mutation UpdateUser(
     adPreference
     deviceFCMToken
     isOnline
+    secretPin
     friends
     rooms
     createdAt
@@ -167,6 +169,7 @@ mutation DeleteUser(
     adPreference
     deviceFCMToken
     isOnline
+    secretPin
     friends
     rooms
     createdAt

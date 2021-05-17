@@ -32,7 +32,11 @@ struct MessageRoomView: View {
                 .ignoresSafeArea()
             
             VStack {
-                ScrollView {
+                HStack { //header
+                    
+                }
+                
+                ScrollView { //messages
                     LazyVStack {
                         ForEach(messageDataSource.room.messages, id: \.id) { message in
                             ChatBubble(msg: message, messageDS: messageDataSource)
@@ -45,7 +49,7 @@ struct MessageRoomView: View {
                 
                 Spacer().frame(height: 30)
                 
-                HStack {
+                HStack { //footer
                     Spacer().frame(width: 30)
                     
                     Button(action: {
@@ -83,6 +87,8 @@ struct MessageRoomView: View {
                 Spacer().frame(height: 20)
                 
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
