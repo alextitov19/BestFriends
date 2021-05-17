@@ -380,7 +380,6 @@
 				D157779D264D8E6D00B6551A /* ChangeBackground */,
 				D15CCD6526473E6700BFE179 /* MyAccount */,
 				D15CCD6D2647A10100BFE179 /* ManageMyFriends */,
-				D15777A1264D955200B6551A /* DeleteAccount */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -457,14 +456,6 @@
 			path = ChangeBackground;
 			sourceTree = "<group>";
 		};
-		D15777A1264D955200B6551A /* DeleteAccount */ = {
-			isa = PBXGroup;
-			children = (
-				D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */,
-			);
-			path = DeleteAccount;
-			sourceTree = "<group>";
-		};
 		D15777B22650522200B6551A /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +470,7 @@
 				D1949C342644E15E00FDB6C5 /* MyAccount.swift */,
 				D15CCD682647458900BFE179 /* ResetPassword.swift */,
 				D1577796264CBBAD00B6551A /* ChangeEmail.swift */,
+				D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */,
 			);
 			path = MyAccount;
 			sourceTree = "<group>";
