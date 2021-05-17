@@ -20,6 +20,8 @@ struct LandingView: View {
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
     @State private var friendIDs: [String] = []
+    @State private var friendIDsToInvite: [String] = []
+    @State private var friendNamesToInvite: [String] = []
     @State private var stars: [Star] = []
     @State private var starButtons: [UIButton] = []
     @State private var titleText = ""
@@ -80,19 +82,27 @@ struct LandingView: View {
                         .frame(height: 10)
                     
                     ForEach(stars, id: \.id) { star in
-                        GeometryReader { geometry in
-                                                    VStack {
-                                                        HStack {
-                                                            Spacer()
-                                                                .frame(width: 100)
-                        
-                                                            star
-                                                        }
-                        
-                                                        Spacer()
-                                                            .frame(height: 20)
-                                                    }
-                                                }
+                        VStack {
+                            
+                            HStack {
+                                
+                                Spacer()
+                                    .frame(width: 100)
+                                
+                                Button(action: {
+                                    if friendIDsToInvite.contains(star.id) {
+                                        friendIDsToInvite.remove(at: friendIDsToInvite.firstIndex(of: star.id)!)
+                                        friendNamesToInvite.remove(at: friendNamesToInvite.firstIndex(of: star.name)!)
+                                    } else {
+                                        friendIDsToInvite.append(star.id)
+                                        friendNamesToInvite.append(star.name)
+                                    }
+                                }) { star }
+                            }
+
+                            Spacer()
+                                .frame(height: 20)
+                        }
                     }
                     
                     Spacer()
@@ -279,22 +289,17 @@ struct LandingView: View {
     }
     
     private func inviteSelectedFriends() {
-        print("Inviting selected friends")
-        var idsToInvite: [String] = []
-        var friendNames: [String] = []
-        for star in stars {
-            idsToInvite.append(star.id)
-            friendNames.append(star.name)
-        }
-        print(idsToInvite)
-        
-        let room = Room(name: "Chat Room", members: friendNames)
-        print("RoomID: ", room.id)
-        RoomDataSource().createRoom(room: room)
-        guard let myID = Amplify.Auth.getCurrentUser()?.username else { return }
-        UserDataSource().addRoom(userID: myID, roomID: room.id)
-        for id in idsToInvite {
-            UserDataSource().addRoom(userID: id, roomID: room.id)
+        if friendIDsToInvite != [] {
+            print("Inviting selected friends: ", friendIDsToInvite)
+            
+            let room = Room(name: "Chat Room", members: friendNamesToInvite)
+            print("RoomID: ", room.id)
+            RoomDataSource().createRoom(room: room)
+            guard let myID = Amplify.Auth.getCurrentUser()?.username else { return }
+            UserDataSource().addRoom(userID: myID, roomID: room.id)
+            for id in friendIDsToInvite {
+                UserDataSource().addRoom(userID: id, roomID: room.id)
+            }
         }
     }
     
