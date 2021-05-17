@@ -40,6 +40,43 @@ query ListRooms(
     nextToken
   }
 }
+query GetReportedMessage($id: ID!) {
+  getReportedMessage(id: $id) {
+    id
+    message {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListReportedMessages(
+  $filter: ModelReportedMessageFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listReportedMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
 query GetUser($id: ID!) {
   getUser(id: $id) {
     id
@@ -49,6 +86,8 @@ query GetUser($id: ID!) {
     pronouns
     location
     adPreference
+    deviceFCMToken
+    isOnline
     friends
     rooms
     createdAt
@@ -69,6 +108,8 @@ query ListUsers(
       pronouns
       location
       adPreference
+      deviceFCMToken
+      isOnline
       friends
       rooms
       createdAt

@@ -14,6 +14,10 @@ type Message {
   attachmentPath: String
 }
 
+type ReportedMessage @model {
+  message: Message!
+}
+
 type User @model {
   id: ID!
   firstName: String!
@@ -22,6 +26,8 @@ type User @model {
   pronouns: String!
   location: String!
   adPreference: String!
+  deviceFCMToken: String!
+  isOnline: Boolean!
   friends: [String]
   rooms: [String]
 }

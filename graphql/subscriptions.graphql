@@ -50,6 +50,51 @@ subscription OnDeleteRoom {
     updatedAt
   }
 }
+subscription OnCreateReportedMessage {
+  onCreateReportedMessage {
+    id
+    message {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateReportedMessage {
+  onUpdateReportedMessage {
+    id
+    message {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteReportedMessage {
+  onDeleteReportedMessage {
+    id
+    message {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    createdAt
+    updatedAt
+  }
+}
 subscription OnCreateUser {
   onCreateUser {
     id
@@ -59,6 +104,8 @@ subscription OnCreateUser {
     pronouns
     location
     adPreference
+    deviceFCMToken
+    isOnline
     friends
     rooms
     createdAt
@@ -74,6 +121,8 @@ subscription OnUpdateUser {
     pronouns
     location
     adPreference
+    deviceFCMToken
+    isOnline
     friends
     rooms
     createdAt
@@ -89,6 +138,8 @@ subscription OnDeleteUser {
     pronouns
     location
     adPreference
+    deviceFCMToken
+    isOnline
     friends
     rooms
     createdAt

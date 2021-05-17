@@ -10,6 +10,8 @@ public struct User: Model {
   public var pronouns: String
   public var location: String
   public var adPreference: String
+  public var deviceFCMToken: String
+  public var isOnline: Bool
   public var friends: [String]?
   public var rooms: [String]?
   
@@ -20,6 +22,8 @@ public struct User: Model {
       pronouns: String,
       location: String,
       adPreference: String,
+      deviceFCMToken: String,
+      isOnline: Bool,
       friends: [String]? = [],
       rooms: [String]? = []) {
       self.id = id
@@ -29,6 +33,8 @@ public struct User: Model {
       self.pronouns = pronouns
       self.location = location
       self.adPreference = adPreference
+      self.deviceFCMToken = deviceFCMToken
+      self.isOnline = isOnline
       self.friends = friends
       self.rooms = rooms
   }

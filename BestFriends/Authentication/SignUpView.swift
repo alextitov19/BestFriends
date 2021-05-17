@@ -1091,7 +1091,9 @@ struct SignUpQuestionPage3: View {
                         birthday: Temporal.Date(birthdate),
                         pronouns: pronouns,
                         location: "San Diego",
-                        adPreference: adPref)
+                        adPreference: adPref,
+                        deviceFCMToken: " ",
+                        isOnline: true)
                     
                     userMamager.create(user)
                     

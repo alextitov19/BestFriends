@@ -59,6 +59,60 @@ mutation DeleteRoom(
     updatedAt
   }
 }
+mutation CreateReportedMessage(
+  $input: CreateReportedMessageInput!
+  $condition: ModelReportedMessageConditionInput
+) {
+  createReportedMessage(input: $input, condition: $condition) {
+    id
+    message {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateReportedMessage(
+  $input: UpdateReportedMessageInput!
+  $condition: ModelReportedMessageConditionInput
+) {
+  updateReportedMessage(input: $input, condition: $condition) {
+    id
+    message {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteReportedMessage(
+  $input: DeleteReportedMessageInput!
+  $condition: ModelReportedMessageConditionInput
+) {
+  deleteReportedMessage(input: $input, condition: $condition) {
+    id
+    message {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    createdAt
+    updatedAt
+  }
+}
 mutation CreateUser(
   $input: CreateUserInput!
   $condition: ModelUserConditionInput
@@ -71,6 +125,8 @@ mutation CreateUser(
     pronouns
     location
     adPreference
+    deviceFCMToken
+    isOnline
     friends
     rooms
     createdAt
@@ -89,6 +145,8 @@ mutation UpdateUser(
     pronouns
     location
     adPreference
+    deviceFCMToken
+    isOnline
     friends
     rooms
     createdAt
@@ -107,6 +165,8 @@ mutation DeleteUser(
     pronouns
     location
     adPreference
+    deviceFCMToken
+    isOnline
     friends
     rooms
     createdAt

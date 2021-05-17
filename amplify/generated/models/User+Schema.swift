@@ -12,6 +12,8 @@ extension User {
     case pronouns
     case location
     case adPreference
+    case deviceFCMToken
+    case isOnline
     case friends
     case rooms
   }
@@ -32,6 +34,8 @@ extension User {
       .field(user.pronouns, is: .required, ofType: .string),
       .field(user.location, is: .required, ofType: .string),
       .field(user.adPreference, is: .required, ofType: .string),
+      .field(user.deviceFCMToken, is: .required, ofType: .string),
+      .field(user.isOnline, is: .required, ofType: .bool),
       .field(user.friends, is: .optional, ofType: .embeddedCollection(of: String.self)),
       .field(user.rooms, is: .optional, ofType: .embeddedCollection(of: String.self))
     )
