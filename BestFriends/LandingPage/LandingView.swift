@@ -51,12 +51,8 @@ struct LandingView: View {
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
-                    
-            
-                //need a replacement, doesnt work
-                BackgroundVideoController()
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+                
+                PlayerView()
                 
                 
             
@@ -299,6 +295,7 @@ struct LandingView: View {
             UserDataSource().addRoom(userID: id, roomID: room.id)
         }
     }
+    
     
     
 }
