@@ -53,6 +53,8 @@ struct LandingView: View {
                     .ignoresSafeArea()
                 
                 PlayerView()
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
                 
                 
             
