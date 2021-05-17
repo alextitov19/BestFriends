@@ -75,6 +75,34 @@ class UserManager: ObservableObject {
             }
         }
     }
+    
+    func updateEmail(email: String) {
+        Amplify.Auth.update(userAttribute: AuthUserAttribute(.email, value: email)) { result in
+            do {
+                let updateResult = try result.get()
+                switch updateResult.nextStep {
+                case .confirmAttributeWithCode(let deliveryDetails, let info):
+                    print("Confirm the attribute with details send to - \(deliveryDetails) \(String(describing: info))")
+                case .done:
+                    print("Update completed")
+                }
+            } catch {
+                print("Update attribute failed with error \(error)")
+            }
+        }
+    }
+    
+    func confirmEmailUpdate(code: String) {
+        Amplify.Auth.confirm(userAttribute: .email, confirmationCode: code) { result in
+            switch result {
+            case .success:
+                print("Attribute verified")
+            case .failure(let error):
+                print("Update attribute failed with error \(error)")
+            }
+        }
+    }
+
 
 }
 
