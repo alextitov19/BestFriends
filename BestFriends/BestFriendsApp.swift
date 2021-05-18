@@ -25,7 +25,7 @@ struct BestFriendsApp: App {
         WindowGroup {
             switch sessionManager.authState {
             case .login:
-                DarkModePage1()
+                SettingsView()
                     .environmentObject(sessionManager)
             case .signUp:
                 SettingsView()

@@ -172,6 +172,7 @@
 		D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D27D39264303E300BDA75F /* InfoPages.swift */; };
 		D1E3CFDF2653A35700A26779 /* BlueModeLP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */; };
 		D1E3CFE12653AB9200A26779 /* BlueModeMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFE02653AB9200A26779 /* BlueModeMusic.swift */; };
+		D1E3CFE326543C4D00A26779 /* ChangePIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFE226543C4D00A26779 /* ChangePIN.swift */; };
 		D201C6D8515541F50AD3C719 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		D360EFFF81A1960D29489A06 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		DB15C6B4674E946ADCCFE253 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */; };
@@ -277,6 +278,7 @@
 		D1D27D39264303E300BDA75F /* InfoPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPages.swift; sourceTree = "<group>"; };
 		D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeLP.swift; sourceTree = "<group>"; };
 		D1E3CFE02653AB9200A26779 /* BlueModeMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeMusic.swift; sourceTree = "<group>"; };
+		D1E3CFE226543C4D00A26779 /* ChangePIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePIN.swift; sourceTree = "<group>"; };
 		DB24A96E58E94680A190216A /* User+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "User+Schema.swift"; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
 		E31DEA02CBB542D5AA59CA4B /* User.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
 		F6C3BE1022B34C5FA7EE9A20 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/bestfriends/schema.graphql; sourceTree = "<group>"; };
@@ -514,6 +516,7 @@
 				D1949C342644E15E00FDB6C5 /* MyAccount.swift */,
 				D15CCD682647458900BFE179 /* ResetPassword.swift */,
 				D1577796264CBBAD00B6551A /* ChangeEmail.swift */,
+				D1E3CFE226543C4D00A26779 /* ChangePIN.swift */,
 				D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */,
 			);
 			path = MyAccount;
@@ -854,6 +857,7 @@
 				8FE1F6B29927D7277CD1FB6A /* Room+Schema.swift in Sources */,
 				7A54B86526534E24005EACB4 /* Room+Schema.swift in Sources */,
 				C6A858535E070565DF118AAB /* Room.swift in Sources */,
+				D1E3CFE326543C4D00A26779 /* ChangePIN.swift in Sources */,
 				A20883FC4BFEC45F646B169E /* User+Schema.swift in Sources */,
 				F448AA3262ADF2D73791AE6B /* AmplifyModels.swift in Sources */,
 				8DFA6C0C1027C5D93D05C2C0 /* Message+Schema.swift in Sources */,
