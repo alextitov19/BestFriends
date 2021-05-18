@@ -13,7 +13,7 @@ struct SettingsView: View {
         NavigationView {
         ZStack {
             
-            Image("purpleBackground")
+            Image("Blue")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()

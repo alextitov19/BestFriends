@@ -25,10 +25,10 @@ struct BestFriendsApp: App {
         WindowGroup {
             switch sessionManager.authState {
             case .login:
-                LoginView()
+                DarkModeView()
                     .environmentObject(sessionManager)
             case .signUp:
-                DarkModePage1()
+                SettingsView()
                     .environmentObject(sessionManager)
             case .confirmationCode(let username):
                 ConfirmationView(username: username)

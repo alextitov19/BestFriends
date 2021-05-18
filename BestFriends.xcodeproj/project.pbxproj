@@ -161,9 +161,6 @@
 		D15777B42650522200B6551A /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15777B32650522200B6551A /* SwipeGesture.swift */; };
 		D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD682647458900BFE179 /* ResetPassword.swift */; };
 		D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */; };
-		D15CCD722648867F00BFE179 /* Prompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD712648867F00BFE179 /* Prompts.swift */; };
-		D15CCD74264886A300BFE179 /* ShakingCoolDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */; };
-		D15CCD76264886C900BFE179 /* StickersDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD75264886C900BFE179 /* StickersDark.swift */; };
 		D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD792648870500BFE179 /* PrizesDark.swift */; };
 		D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */; };
 		D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD83264908A300BFE179 /* DarkModePage1.swift */; };
@@ -267,9 +264,6 @@
 		D15777B32650522200B6551A /* SwipeGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
 		D15CCD682647458900BFE179 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
-		D15CCD712648867F00BFE179 /* Prompts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prompts.swift; sourceTree = "<group>"; };
-		D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolDark.swift; sourceTree = "<group>"; };
-		D15CCD75264886C900BFE179 /* StickersDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersDark.swift; sourceTree = "<group>"; };
 		D15CCD792648870500BFE179 /* PrizesDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizesDark.swift; sourceTree = "<group>"; };
 		D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
 		D15CCD83264908A300BFE179 /* DarkModePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModePage1.swift; sourceTree = "<group>"; };
@@ -534,9 +528,6 @@
 		D15CCD702648862700BFE179 /* DarkMode */ = {
 			isa = PBXGroup;
 			children = (
-				D15CCD712648867F00BFE179 /* Prompts.swift */,
-				D15CCD73264886A300BFE179 /* ShakingCoolDark.swift */,
-				D15CCD75264886C900BFE179 /* StickersDark.swift */,
 				D15CCD792648870500BFE179 /* PrizesDark.swift */,
 			);
 			path = DarkMode;
@@ -715,7 +706,6 @@
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */,
 				D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */,
-				D15CCD722648867F00BFE179 /* Prompts.swift in Sources */,
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				7A6A4CD7262B5DA900561D87 /* MessageRow.swift in Sources */,
@@ -736,7 +726,6 @@
 				8F464A0A6BEA4CD09C25CF86 /* AmplifyModels.swift in Sources */,
 				3FAFF6936D7B422DBF25E91A /* Message.swift in Sources */,
 				84EA879CC8D44C9CB6FBFFCB /* Message+Schema.swift in Sources */,
-				D15CCD74264886A300BFE179 /* ShakingCoolDark.swift in Sources */,
 				7AA200FD2635C6EF00C9F00C /* RoomDataSource.swift in Sources */,
 				24481C20A13049E6A98BAB56 /* User.swift in Sources */,
 				D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */,
@@ -752,7 +741,6 @@
 				5CC0808D963A49AE969F958B /* Room.swift in Sources */,
 				D157779F264D8EA400B6551A /* ChangeChatBackground.swift in Sources */,
 				31843DD5A561448D8998CA30 /* Room+Schema.swift in Sources */,
-				D15CCD76264886C900BFE179 /* StickersDark.swift in Sources */,
 				0A83B8FEF0AD77CED43B4F41 /* AmplifyModels.swift in Sources */,
 				BAA73C73B1F59C7C49B7B17D /* Message+Schema.swift in Sources */,
 				2AEB7D73941F5D3330870819 /* Room.swift in Sources */,

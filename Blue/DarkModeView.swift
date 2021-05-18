@@ -14,11 +14,12 @@ struct DarkModeView: View {
         NavigationView {
         ZStack {
 
-            Image("purpleBackground")
+            Image("blue3C")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
+            ScrollView {
             VStack {
                 
                                         
@@ -30,11 +31,12 @@ struct DarkModeView: View {
                 
                 Spacer().frame(height: 25)
                 
-                Text("'BlueMode'")
-                    .navigationBarTitle("")
-                    .navigationBarHidden(true)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                    .font(.title)
+                Text("BlueMode")
+                    .font(.system(size: 50))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(.blue)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
                
                 
@@ -44,7 +46,7 @@ struct DarkModeView: View {
                     .frame(width: 400, height: 150, alignment: .center)
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
                     .font(.title)
             
                    // try below
@@ -121,10 +123,26 @@ struct DarkModeView: View {
                                                 .frame(width: 400, height: 50)
                                                 .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .cornerRadius(25)
+                       
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                         }
                     Spacer()
                         .frame(height: 75)
                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                     }
                 }
             }
@@ -132,9 +150,8 @@ struct DarkModeView: View {
     }
 }
 
-struct DarkModeView_Previews : PreviewProvider {
-    static var previews: some View {
-        DarkModeView()
+
         }
     }
-}
+
+

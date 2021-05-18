@@ -15,17 +15,15 @@ struct BlueModeNotReadyTalk: View {
         NavigationView {
         ZStack {
 
-            Image("purpleBackground")
+            Image("Blue")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
                
-                
-                Spacer().frame(height: 25)
-                
-                Text("np - let's give this a try first then.")
+              
+                Text("Let's give this a try first.")
                     .frame(width: 400, height: 100, alignment:.center)
                     .navigationBarTitle("")
                     .navigationBarHidden(true)
@@ -35,81 +33,89 @@ struct BlueModeNotReadyTalk: View {
                
                 VStack {
                 
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    
-                    NavigationLink(
-                        destination: InfoViewPage1(),
-                        label: {
-                            Text("When your frind shakes their phone an image of the two from better days pops up. ***")
-                                .frame(width: 270, height: 100, alignment: .center)
-                        })
-                    .frame(width: 300, height: 100, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
-                    .cornerRadius(25)
-                    
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    
-                    NavigationLink(
-                        destination: InfoViewPage1(),
-                        label: {
-                            Text("Unlock special stickers to say the first words for you.")
-                                .frame(width: 270, height: 100, alignment: .center)
-                        })
-                    .frame(width: 300, height: 75, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
-                    .cornerRadius(25)
                   
+                    
+                    NavigationLink(
+                        destination: InfoViewPage1(),
+                        label: {
+                            Text("Upload an image of the two of you to 'their' ShakingCool from happier days!")
+                                .frame(width: 400, height: 100, alignment: .center)
+                        })
+                    .frame(width: 400, height: 75, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
+                    .cornerRadius(25)
+                    
+                    
                     Spacer()
                         .frame(height: 30)
-                    
-                    
+                   
                     NavigationLink(
                         destination: SmileNotesLibrary(),
                         label: {
-                            Text("Push back SmileNotes you received from them.")
-                                .frame(width: 275, height: 100, alignment: .center)
+                            Text("Send back SmileNotes from your friend - letting them know you care.")
+                                .frame(width: 400, height: 100, alignment: .center)
                         })
-                    .frame(width: 300, height: 75, alignment: .center)
+                    .frame(width: 400, height: 75, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
                     .cornerRadius(25)
-                  
+                    
+                   
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("'BlueMode-Journal' coming V2.0")
-                                .frame(width: 280, height: 100, alignment: .center)
+                            Text("Unlock special stickers saying the words you can't seem to say right now.")
+                                .frame(width: 400, height: 100, alignment: .center)
                         })
-                    .frame(width: 300, height: 50, alignment: .center)
+                    .frame(width: 400, height: 75, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
                     .cornerRadius(25)
-
-                    Spacer().frame(height: 30)
-                    
-                 
-                
-                    Text("*** Do NOT upload hurtful images in ShakingCool: You will be blocked.")
-                        .italic()
-                        .font(.system(size: 20))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 300, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                   
+                    VStack {
+                        Spacer()
+                            .frame(height: 30)
+                        
+                        
+                        NavigationLink(
+                            destination: InfoViewPage1(),
+                            label: {
+                                Text("Waiting for a respones sucks. In BlueMode we send a push notification as soon as your message is read.")
+                                    .frame(width: 400, height: 100, alignment: .center)
+                            })
+                        .frame(width: 400, height: 75, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
+                        .cornerRadius(25)
+
+                        Spacer().frame(height: 30)
+                        
+                        NavigationLink(
+                            destination: InfoViewPage1(),
+                            label: {
+                                Text("Waiting for a respones sucks. In BlueMode we send a push notification as soon as your message is read.")
+                                    .frame(width: 400, height: 100, alignment: .center)
+                            })
+                        .frame(width: 400, height: 75, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
+                        .cornerRadius(25)
                     
+                        
+                        Text("*** Do NOT upload hurtful images in ShakingCool: You will be blocked.")
+                            .italic()
+                            .font(.system(size: 20))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 300, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                      
+                        
                     
                 }
         }
@@ -121,6 +127,6 @@ struct BlueModeNotReadyTalk: View {
 struct BlueModeNotReadyTalk_Previews : PreviewProvider {
     static var previews: some View {
         BlueModeNotReadyTalk()
+        }
     }
 }
-
