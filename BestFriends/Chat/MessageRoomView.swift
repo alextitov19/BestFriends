@@ -59,6 +59,13 @@ struct MessageRoomView: View {
                     
                     Button(action: {
                         showingPin = true
+                        var rooms = user.hiddenRooms ?? []
+                        if rooms.contains(room.id) == false {
+                            rooms.append(room.id)
+                        }
+                        var updatedUser = user
+                        updatedUser.hiddenRooms = rooms
+                        UserDataSource().updateUser(user: updatedUser)
                     }) {
                         Image("whiteLock")
                             .resizable()
