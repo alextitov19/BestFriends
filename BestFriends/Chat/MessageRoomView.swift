@@ -28,6 +28,7 @@ struct MessageRoomView: View {
     @State var currentBody: String = ""
 
     var body: some View {
+        
         ZStack{
             Image("purpleBackground")
                 .resizable()
@@ -70,11 +71,14 @@ struct MessageRoomView: View {
                 
                 ScrollView { //messages
                     LazyVStack {
-                        ForEach(messageDataSource.room.messages, id: \.id) { message in
-                            ChatBubble(msg: message, messageDS: messageDataSource)
-                            
-                            Spacer()
-                                .frame(height: 20)
+                        let rooms: [String] = user.hiddenRooms ?? []
+                        if rooms.contains(room.id) == false {
+                            ForEach(messageDataSource.room.messages, id: \.id) { message in
+                                ChatBubble(msg: message, messageDS: messageDataSource)
+                                
+                                Spacer()
+                                    .frame(height: 20)
+                            }
                         }
                     }
                 }
