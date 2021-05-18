@@ -16,6 +16,13 @@ struct QRCodeView: View {
         VStack{
             Spacer()
             
+            Text("Here is your QR code, screenshot it and send it to your friends!")
+                .font(.title)
+                .multilineTextAlignment(.center)
+            
+            Spacer()
+                .frame(height: 80)
+            
             Text("Tap the QR code to dismiss")
                 .font(.title)
             
