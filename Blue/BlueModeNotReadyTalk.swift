@@ -15,7 +15,7 @@ struct BlueModeNotReadyTalk: View {
         NavigationView {
         ZStack {
 
-            Image("blueC")
+            Image("buyimage")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -26,13 +26,13 @@ struct BlueModeNotReadyTalk: View {
             
                
                 VStack {
-                
+            
                   
                     
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("Upload an image of the two of you to 'their' ShakingCool from happier days!")
+                            Text("Upload an image of the two from happier days to 'their' ShakingCool!")
                                 .frame(width: 400, height: 100, alignment: .center)
                         })
                     .frame(width: 400, height: 75, alignment: .center)

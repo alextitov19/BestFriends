@@ -45,7 +45,7 @@ struct BlueModeMusic: View {
                      NavigationLink(
                          destination: InfoViewPage1(),
                          label: {
-                             Text("Waiting sucks, we send a push notification as soon as your message is read.")
+                             Text("Waiting sucks, we send a push notification as soon as your messages are read in BlueMode.")
                                  .frame(width: 375, height: 150, alignment: .center)
                          })
                         .frame(width: 380, height: 75)
@@ -55,9 +55,8 @@ struct BlueModeMusic: View {
                                 .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                 )
 
+                Spacer().frame(height: 10)
                 
-                    Spacer()
-                        .frame(height: 30)
                 
                 NavigationLink(destination: DarkModePage1()) {
                                     Text("Take me to BlueMode Chat")
@@ -67,7 +66,9 @@ struct BlueModeMusic: View {
                                         .frame(width: 350, height: 50)
                                         .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .cornerRadius(25)
-
+                
+                    
+                    
                 }
            
         
