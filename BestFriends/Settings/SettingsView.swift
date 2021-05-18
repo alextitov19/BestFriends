@@ -182,7 +182,7 @@ struct SettingsView: View {
                         NavigationLink(
                             destination: ChangeChatBackground(),
                             label: {
-                                Text("Change Chat Background (Building)")
+                                Text("Change Chat Background (Not Built)")
                             })
                        
                             .frame(width: 325, height: 50)
