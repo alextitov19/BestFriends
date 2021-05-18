@@ -65,34 +65,23 @@ struct InfoViewPage1: View {
                         }
                     }
                     
-                Spacer()
-                    .frame(height: 15)
-                
-                    
-                    Text("Please STOP! We know you're upset and hurt. But, before you start thinking about 'unfriending' each other on IG & Snap, or reposting private messages that will be hurtfuf. Let's give 'BlueMode' a try.")
-                       
-                        .font(.system(size: 20))
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
+               
                     
                     Spacer()
                         .frame(height: 30)
                    
-                Text("(From Homepage just 'long-tap' your friends 'name' unlocking special features helping you fix this mess.)")
+                Text("From Homepage just 'long-tap' your friends 'name' and select 'BlueMode' unlocking special features helping you fix this mess.")
                     .italic()
-                    .font(.system(size: 17))
+                    .font(.system(size: 25))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                 
                 Spacer()
                     .frame(height: 30)
-                NavigationLink(destination: InfoViewPage2()) {
+                NavigationLink(destination: InfoViewPage3()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -115,138 +104,6 @@ struct InfoViewPage1: View {
 }
 
 // ************************************************
-struct InfoViewPage2: View {
-
-    var body: some View {
-        NavigationView{
-    
-  
-        ZStack {
-            
-            
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-            
-                
-            VStack {
-                    
-                    HStack {
-                        VStack {
-                                                   
-                            Spacer()
-                                .frame(height: 125)
-                                                    
-                            Image("Penguin Sticker 24")
-                                .resizable()
-                                .frame(width: 150, height: 150)
-                                .scaledToFill()
-                                                    
-                                }
-                        VStack {
-                       
-                            ZStack {
-                                
-                                
-                                Image("ChatBubbleTrans")
-                                    .resizable()
-                                    .frame(width: 300, height: 175)
-                                    .scaledToFill()
-                            
-                                Text("9 of 10 times you'll make up. Let us help minimize the hurt!")
-                                    .italic()
-                                    .font(.system(size: 20))
-                                    .fontWeight(.ultraLight)
-                                    .foregroundColor(.white)
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            }
-                           
-                        }
-                    }
-                    
-                Spacer()
-                   
-              
-                
-                Button(action: {
-                              
-                            }) {
-                    Text("Send a special 'BlueMode Sticker' saying the words you can't seem to say.")
-                                    .frame(width: 325, height: 80, alignment: .center)
-                                       
-                              }
-                .frame(width: 400, height: 75)
-                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 25)
-                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                        )
-                
-                
-                    
-                    Spacer()
-                        .frame(height: 30)
-               
-                
-                
-                Button(action: {
-                              
-                            }) {
-                    Text("ShakingCool-BlueMode', allowing your friend to see your images. Send one of the two of you - Smiling!")
-                                    .frame(width: 325, height: 80, alignment: .center)
-                
-                }
-                .frame(width: 400, height: 75)
-                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 25)
-                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                        )
-            
-                Spacer()
-                    .frame(height: 30)
-           
-                
-                Button(action: {
-                              
-                            }) {
-                    Text("Don't know where to start. Send a proven 'reconciliation' message.")
-                                    .frame(width: 325, height: 80, alignment: .center)
-            
-            }
-                .frame(width: 400, height: 75)
-                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 25)
-                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                        )
-            
-                
-                Spacer()
-                    .frame(height: 50)
-
-                NavigationLink(destination: InfoViewPage3()) {
-                                    Text("Next")
-                                        .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 200, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                }
-                Spacer()
-                    .frame(height: 75)
-        
-        }
-        }
-  //  .navigationBarTitle("")
-  //  .navigationBarHidden(true)
-    
-        }
-   
-    }
-}
 
 //***************************************
 struct InfoViewPage3: View {
@@ -596,94 +453,6 @@ struct InfoViewPage6: View {
                     .frame(height: 30)
                    
                    
-                NavigationLink(destination: InfoViewPage7()) {
-                                    Text("Next")
-                                        .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 200, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                }
-            Spacer()
-                .frame(height: 75)
-        
-        }
-        }
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
-    
-   
-   
-    }
-}
-
-
-// ************************************************
-struct InfoViewPage7: View {
-
-    var body: some View {
-      
-    
-  
-        ZStack {
-            
-            
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-            
-                
-            VStack {
-                    
-                    HStack {
-                        VStack {
-                                                   
-                            Spacer()
-                                .frame(height: 125)
-                                                    
-                            Image("Penguin Sticker 24")
-                                .resizable()
-                                .frame(width: 150, height: 150)
-                                .scaledToFill()
-                                                    
-                                }
-                        VStack {
-                       
-                            ZStack {
-                                
-                                
-                                Image("ChatBubbleTrans")
-                                    .resizable()
-                                    .frame(width: 300, height: 175)
-                                    .scaledToFill()
-                            
-                                Text("Having a really bad day. Need your friends, Now!")
-                                    .italic()
-                                    .font(.system(size: 20))
-                                    .fontWeight(.ultraLight)
-                                    .foregroundColor(.white)
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            }
-                           
-                        }
-                    }
-                 
-                
-                    Text("Quick! Tap your friend's 'stars' on Homepage and we'll find them and get their availability fast.")
-                       
-                        .font(.system(size: 25))
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 380, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                      
-                    
-                Spacer()
-                    .frame(height: 30)
-                   
                 NavigationLink(destination: SettingsView()) {
                                     Text("Next")
                                         .font(.title)
@@ -706,17 +475,18 @@ struct InfoViewPage7: View {
 }
 
 
+// ************************************************
 
 struct InfoViewPage1_Previews : PreviewProvider {
     static var previews: some View {
    
         InfoViewPage1()
-        InfoViewPage2()
+        
         InfoViewPage3()
         InfoViewPage4()
         InfoViewPage5()
         InfoViewPage6()
-        InfoViewPage7()
+        
     }
 }
 
