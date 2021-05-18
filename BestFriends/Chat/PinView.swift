@@ -6,21 +6,34 @@
 //
 
 import SwiftUI
+import Amplify
 
 struct PinView: View {
     
+    @State var title: String = "Enter your pin"
     @State var currentPin: String = ""
+    
+    var roomID: String
+    
+    init(roomID: String) {
+        self.roomID = roomID
+    }
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+            Image("purpleBackground")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
         
             VStack {
-                Text(currentPin)
-                    .frame(width: 200, height: 40)
-                    .background(Color.white)
-                Spacer().frame(height: 40)
+            
+                Text(title)
+                    .font(.system(size: 40).bold())
+                    .foregroundColor(.white)
+                
+                Spacer().frame(height: 100)
+                    
                 HStack {
                     Button(action: { currentPin.append("7") }) {
                         Text("7")
@@ -168,11 +181,37 @@ struct PinView: View {
             
         }
     }
+    
+    private func numberEntered() {
+        if currentPin.count == 4 {
+            let userDataSource = UserDataSource()
+            
+            guard let userID = Amplify.Auth.getCurrentUser()?.username else {return}
+            var user = userDataSource.getUser(id: userID)
+            
+            if currentPin == user.secretPin {
+                // passcode correct -> remove or add current room id to hidden room ids for the current user
+                var rooms = user.hiddenRooms ?? []
+                if rooms.contains(roomID) {
+                    rooms.remove(at: rooms.firstIndex(of: roomID)!)
+                } else {
+                    rooms.append(roomID)
+                }
+                
+                user.hiddenRooms = rooms
+                userDataSource.updateUser(user: user)
+                
+            } else {
+                title = "Wrong pin"
+                currentPin = ""
+            }
+        }   
+    }
 }
 
 
 struct PinView_Previews : PreviewProvider {
     static var previews: some View {
-        PinView()
+        PinView(roomID: "")
     }
 }

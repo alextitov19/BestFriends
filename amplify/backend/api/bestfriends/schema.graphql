@@ -31,5 +31,6 @@ type User @model {
   secretPin: String
   friends: [String]
   rooms: [String]
+  hiddenRooms: [String]
 }
 

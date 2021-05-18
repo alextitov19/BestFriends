@@ -122,7 +122,7 @@ struct MessageRoomView: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             
-            NavigationLink(destination: PinView(), isActive: $showingPin) { EmptyView() }
+            NavigationLink(destination: PinView(roomID: room.id), isActive: $showingPin) { EmptyView() }
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)

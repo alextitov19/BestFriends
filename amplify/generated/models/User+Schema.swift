@@ -17,6 +17,7 @@ extension User {
     case secretPin
     case friends
     case rooms
+    case hiddenRooms
   }
   
   public static let keys = CodingKeys.self
@@ -39,7 +40,8 @@ extension User {
       .field(user.isOnline, is: .required, ofType: .bool),
       .field(user.secretPin, is: .optional, ofType: .string),
       .field(user.friends, is: .optional, ofType: .embeddedCollection(of: String.self)),
-      .field(user.rooms, is: .optional, ofType: .embeddedCollection(of: String.self))
+      .field(user.rooms, is: .optional, ofType: .embeddedCollection(of: String.self)),
+      .field(user.hiddenRooms, is: .optional, ofType: .embeddedCollection(of: String.self))
     )
     }
 }

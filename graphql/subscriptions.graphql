@@ -109,6 +109,7 @@ subscription OnCreateUser {
     secretPin
     friends
     rooms
+    hiddenRooms
     createdAt
     updatedAt
   }
@@ -127,6 +128,7 @@ subscription OnUpdateUser {
     secretPin
     friends
     rooms
+    hiddenRooms
     createdAt
     updatedAt
   }
@@ -145,6 +147,7 @@ subscription OnDeleteUser {
     secretPin
     friends
     rooms
+    hiddenRooms
     createdAt
     updatedAt
   }

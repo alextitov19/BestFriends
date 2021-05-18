@@ -91,6 +91,7 @@ query GetUser($id: ID!) {
     secretPin
     friends
     rooms
+    hiddenRooms
     createdAt
     updatedAt
   }
@@ -114,6 +115,7 @@ query ListUsers(
       secretPin
       friends
       rooms
+      hiddenRooms
       createdAt
       updatedAt
     }

@@ -15,6 +15,7 @@ public struct User: Model {
   public var secretPin: String?
   public var friends: [String]?
   public var rooms: [String]?
+  public var hiddenRooms: [String]?
   
   public init(id: String = UUID().uuidString,
       firstName: String,
@@ -27,7 +28,8 @@ public struct User: Model {
       isOnline: Bool,
       secretPin: String? = nil,
       friends: [String]? = [],
-      rooms: [String]? = []) {
+      rooms: [String]? = [],
+      hiddenRooms: [String]? = []) {
       self.id = id
       self.firstName = firstName
       self.lastName = lastName
@@ -40,5 +42,6 @@ public struct User: Model {
       self.secretPin = secretPin
       self.friends = friends
       self.rooms = rooms
+      self.hiddenRooms = hiddenRooms
   }
 }
