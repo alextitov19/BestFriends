@@ -14,7 +14,7 @@ struct DarkModeView: View {
         NavigationView {
         ZStack {
 
-            Image("blue3C")
+            Image("blueBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -60,7 +60,7 @@ struct DarkModeView: View {
                         .frame(height: 25)
                     
                    
-                    Link("Fight w/ Best Friend - what to ask?!", destination: URL(string: "https://socialtechlabs.com/darkmode/")!)
+                    Link("Fight w/ Best Friend - what to ask them?", destination: URL(string: "https://socialtechlabs.com/darkmode/")!)
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
@@ -86,7 +86,7 @@ struct DarkModeView: View {
                         .frame(height: 30)
                     
                    
-                    Link("Fight w/ Boyfriend", destination: URL(string: "https://socialtechlabs.com/fight-w-boyfriend/")!)
+                    Link("Fight w/ significant other", destination: URL(string: "https://socialtechlabs.com/fight-w-boyfriend/")!)
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
@@ -103,7 +103,7 @@ struct DarkModeView: View {
                         NavigationLink(
                             destination: InfoViewPage1(),
                             label: {
-                                Text("Ready? Let's try to set a time to talk.")
+                                Text("Ready? Let's try to set a time to meet or talk.")
                             })
                         .frame(width: 325, height: 50, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))

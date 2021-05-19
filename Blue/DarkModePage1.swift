@@ -50,13 +50,13 @@ struct DarkModePage1: View {
                                     .frame(width: 500, height: 185)
                                     .scaledToFill()
                             
-                                Text("Just had a huge fight with your friend.")
+                                Text("Just had a huge fight with your best friend or significant other.")
                                     .italic()
                                     .font(.system(size: 25))
                                     .fontWeight(.regular)
                                     .foregroundColor(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
                                     .multilineTextAlignment(.center)
-                                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width: 250, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
                            
                         }
