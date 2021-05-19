@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Amplify
+import Combine
 
 
 struct MessageRoomView: View {
@@ -15,6 +16,8 @@ struct MessageRoomView: View {
     @State var showingImagePicker = false
     @State var showingPin = false
     @State var inputImage: UIImage?
+    @State private var keyboardHeight: CGFloat = 0
+
     var user: User
     var room: Room
     
@@ -89,6 +92,7 @@ struct MessageRoomView: View {
                         }
                     }
                 }
+                .padding()
                 
                 Spacer().frame(height: 30)
                 
@@ -127,9 +131,13 @@ struct MessageRoomView: View {
                     Spacer().frame(width: 30)
                 }
                 
+                
                 Spacer().frame(height: 20)
                 
             }
+            .padding()
+            .padding(.bottom, keyboardHeight)
+            .onReceive(Publishers.keyboardHeight) { self.keyboardHeight = $0 }
             .navigationBarTitle("")
             .navigationBarHidden(true)
             

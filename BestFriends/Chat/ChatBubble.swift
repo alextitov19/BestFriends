@@ -48,11 +48,11 @@ struct ChatBubble: View {
                         Spacer()
 
                         Text(message.senderName)
-                            .frame(width: getWidth(text: message.senderName) + 30, alignment: .center)
+                            .frame(width: 200, alignment: .trailing)
                             .foregroundColor(.white)
                             .font(.system(size: 14).weight(.thin))
                         
-                        Spacer().frame(width: 30)
+                        Spacer().frame(width: 12)
                         
                     }
                     
@@ -65,7 +65,7 @@ struct ChatBubble: View {
                                                     
                             ZStack{
                                 Rectangle()
-                                    .frame(width: getWidth(text: message.body) + 15, height: getHeight(text: message.body))
+                                    .frame(width: getWidth(text: message.body) + 10, height: getHeight(text: message.body))
                                     .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.2547570032)))
                                     .cornerRadius(15)
 
@@ -84,7 +84,7 @@ struct ChatBubble: View {
                                 
                             }
                         }
-                        Spacer().frame(width: 40)
+                        Spacer().frame(width: 10)
                         
                     }
                 }
@@ -111,7 +111,7 @@ struct ChatBubble: View {
                     
                     
                     HStack {
-                        Spacer().frame(width: 20)
+//                        Spacer().frame(width: 20)
 
                         VStack {
                                 
@@ -151,7 +151,7 @@ struct ChatBubble: View {
         if text.count > 24 {
             return 200
         } else {
-            return CGFloat(text.count * (11))
+            return CGFloat(text.count * (10))
         }
     }
     
