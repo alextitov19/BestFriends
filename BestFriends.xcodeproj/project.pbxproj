@@ -66,6 +66,7 @@
 		77FC07C16E388B9965B5EC17 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
 		78F9D5FE5DD3051379CAC40E /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */; };
+		7A1146E42655DBAC008AEB20 /* KeyboardGuardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1146E32655DBAC008AEB20 /* KeyboardGuardian.swift */; };
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
 		7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */; };
@@ -78,7 +79,7 @@
 		7A54B86826534E24005EACB4 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54B85F26534E24005EACB4 /* Room.swift */; };
 		7A54B86926534E24005EACB4 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54B86026534E24005EACB4 /* AmplifyModels.swift */; };
 		7A54B86A26534E24005EACB4 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A54B86126534E24005EACB4 /* User+Schema.swift */; };
-		7A584D8F2655580300F4A424 /* ChatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A584D8E2655580300F4A424 /* ChatExtensions.swift */; };
+		7A584D8F2655580300F4A424 /* GeometryGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A584D8E2655580300F4A424 /* GeometryGetter.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
 		7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */; };
 		7A6A4D07262B8A5000561D87 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4D06262B8A5000561D87 /* PlayerView.swift */; };
@@ -209,6 +210,7 @@
 		71B5DFCDF98DAA323331D1BC /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		762CEB4FA7014E308E51B33B /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
 		7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		7A1146E32655DBAC008AEB20 /* KeyboardGuardian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardGuardian.swift; sourceTree = "<group>"; };
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
 		7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -221,7 +223,7 @@
 		7A54B85F26534E24005EACB4 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		7A54B86026534E24005EACB4 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		7A54B86126534E24005EACB4 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
-		7A584D8E2655580300F4A424 /* ChatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatExtensions.swift; sourceTree = "<group>"; };
+		7A584D8E2655580300F4A424 /* GeometryGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryGetter.swift; sourceTree = "<group>"; };
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
 		7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundAnimation.mp4; sourceTree = "<group>"; };
 		7A6A4D06262B8A5000561D87 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
@@ -308,7 +310,8 @@
 				7A33B63B2640D463004CB47F /* MessageRoomView.swift */,
 				7A7F6E37264305AA0022F078 /* ChatBubble.swift */,
 				7A95EA5726530DDA00C6C700 /* PinView.swift */,
-				7A584D8E2655580300F4A424 /* ChatExtensions.swift */,
+				7A584D8E2655580300F4A424 /* GeometryGetter.swift */,
+				7A1146E32655DBAC008AEB20 /* KeyboardGuardian.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -795,7 +798,7 @@
 				2D5448E868D8E3B2F77DB8B9 /* Room.swift in Sources */,
 				BD165E2C4BE6EBD43DA6A0FE /* AmplifyModels.swift in Sources */,
 				A660C4679BA4FBE0D97E4A8A /* Message+Schema.swift in Sources */,
-				7A584D8F2655580300F4A424 /* ChatExtensions.swift in Sources */,
+				7A584D8F2655580300F4A424 /* GeometryGetter.swift in Sources */,
 				60B293451EBBEBA36B24B7AE /* Message.swift in Sources */,
 				7A54B86926534E24005EACB4 /* AmplifyModels.swift in Sources */,
 				F90FF0703C95F3D3F216C5C9 /* Room+Schema.swift in Sources */,
@@ -825,6 +828,7 @@
 				A04F3874D90661DBC964AF00 /* User.swift in Sources */,
 				AE56B536499AFEEF85F2E2A5 /* AmplifyModels.swift in Sources */,
 				65C68608F0AAA5FE3FC8297B /* Message+Schema.swift in Sources */,
+				7A1146E42655DBAC008AEB20 /* KeyboardGuardian.swift in Sources */,
 				305854323792558A4A1A518C /* Message.swift in Sources */,
 				93096F3D5D117A3B05E29A67 /* Room+Schema.swift in Sources */,
 				E1EA963FDCDEDF76BED98898 /* Room.swift in Sources */,

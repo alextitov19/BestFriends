@@ -16,7 +16,7 @@ struct MessageRoomView: View {
     @State var showingImagePicker = false
     @State var showingPin = false
     @State var inputImage: UIImage?
-    @State private var keyboardHeight: CGFloat = 0
+    @ObservedObject private var kGuardian = KeyboardGuardian(textFieldCount: 1)
 
     var user: User
     var room: Room
@@ -91,6 +91,7 @@ struct MessageRoomView: View {
                             }
                         }
                     }
+                    .padding()
                 }
                 .padding()
                 
@@ -130,14 +131,13 @@ struct MessageRoomView: View {
                     
                     Spacer().frame(width: 30)
                 }
+                .background(GeometryGetter(rect: $kGuardian.rects[0]))
                 
                 
                 Spacer().frame(height: 20)
                 
             }
-            .padding()
-            .padding(.bottom, keyboardHeight)
-            .onReceive(Publishers.keyboardHeight) { self.keyboardHeight = $0 }
+            .offset(y: kGuardian.slide - 80).animation(.easeInOut(duration: 1.0))
             .navigationBarTitle("")
             .navigationBarHidden(true)
             
