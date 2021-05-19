@@ -182,7 +182,7 @@ struct SettingsView: View {
                         NavigationLink(
                             destination: ChangeRestoreChatPIN(),
                             label: {
-                                Text("Change Restore Chat PIN (Not Built)")
+                                Text("Change 'Restore Chat' PIN (Not Built)")
                             })
                             .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
