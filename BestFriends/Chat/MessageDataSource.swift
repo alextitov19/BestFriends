@@ -62,6 +62,27 @@ class MessageDataSource: ObservableObject {
         }
     }
     
+    func reportMessage(message: Message) {
+        let reportedMessage: ReportedMessage = ReportedMessage(message: message)
+        Amplify.API.mutate(request: .create(reportedMessage)) { [weak self] mutationResult in
+            switch mutationResult {
+
+            case .success(let creationResult):
+                
+                switch creationResult {
+                case .success:
+                    print("Successfully reported mesage")
+                    
+                case .failure(let error):
+                    print("Failed to report message: ", error)
+                }
+                
+            case .failure(let apiError):
+                print("Report message api error: ", apiError)
+            }
+        }
+    }
+    
     func createSubscription() {
         subscription = Amplify.API.subscribe(request: .subscription(of: Room.self, type: .onUpdate), valueListener: { (subscriptionEvent) in
             switch subscriptionEvent {

@@ -46,13 +46,13 @@ struct ChatBubble: View {
             .actionSheet(isPresented: $showingActionSheet) {
                 ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
                         .default(Text("Save to SmileNotes")) {
-                            
+                            messageDataSource.saveToSmileNotes(message: message)
                         },
                         .default(Text("Delete")) {
                             
                         },
                         .default(Text("Report")) {
-                            
+                            messageDataSource.reportMessage(message: message)
                         },
                         .cancel()
                     ])
@@ -114,13 +114,13 @@ struct ChatBubble: View {
                 .actionSheet(isPresented: $showingActionSheet) {
                     ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
                             .default(Text("Save to SmileNotes")) {
-                                
+                                messageDataSource.saveToSmileNotes(message: message)
                             },
                             .default(Text("Delete")) {
                                 
                             },
                             .default(Text("Report")) {
-                                
+                                messageDataSource.reportMessage(message: message)
                             },
                             .cancel()
                         ])
@@ -180,7 +180,7 @@ struct ChatBubble: View {
                             
                         },
                         .default(Text("Report")) {
-                            
+                            messageDataSource.reportMessage(message: message)
                         },
                         .cancel()
                     ])
