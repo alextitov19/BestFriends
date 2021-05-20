@@ -6,7 +6,9 @@ extension ReportedMessage {
   // MARK: - CodingKeys 
    public enum CodingKeys: String, ModelKey {
     case id
-    case message
+    case reporterID
+    case reportedMessage
+    case previousMessages
   }
   
   public static let keys = CodingKeys.self
@@ -19,7 +21,9 @@ extension ReportedMessage {
     
     model.fields(
       .id(),
-      .field(reportedMessage.message, is: .required, ofType: .embedded(type: Message.self))
+      .field(reportedMessage.reporterID, is: .required, ofType: .string),
+      .field(reportedMessage.reportedMessage, is: .required, ofType: .embedded(type: Message.self)),
+      .field(reportedMessage.previousMessages, is: .required, ofType: .embeddedCollection(of: Message.self))
     )
     }
 }

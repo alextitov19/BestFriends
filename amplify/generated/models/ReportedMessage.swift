@@ -4,11 +4,17 @@ import Foundation
 
 public struct ReportedMessage: Model {
   public let id: String
-  public var message: Message
+  public var reporterID: String
+  public var reportedMessage: Message
+  public var previousMessages: [Message]
   
   public init(id: String = UUID().uuidString,
-      message: Message) {
+      reporterID: String,
+      reportedMessage: Message,
+      previousMessages: [Message] = []) {
       self.id = id
-      self.message = message
+      self.reporterID = reporterID
+      self.reportedMessage = reportedMessage
+      self.previousMessages = previousMessages
   }
 }

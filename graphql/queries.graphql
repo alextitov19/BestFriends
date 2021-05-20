@@ -43,7 +43,16 @@ query ListRooms(
 query GetReportedMessage($id: ID!) {
   getReportedMessage(id: $id) {
     id
-    message {
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    previousMessages {
       id
       senderName
       senderID
@@ -63,7 +72,16 @@ query ListReportedMessages(
   listReportedMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {
     items {
       id
-      message {
+      reporterID
+      reportedMessage {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+      }
+      previousMessages {
         id
         senderName
         senderID
@@ -92,6 +110,14 @@ query GetUser($id: ID!) {
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }
@@ -116,6 +142,14 @@ query ListUsers(
       friends
       rooms
       hiddenRooms
+      smileNotes {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+      }
       createdAt
       updatedAt
     }

@@ -13,7 +13,8 @@ struct ChatBubble: View {
     let message: Message
     let myID: String
     let messageDataSource: MessageDataSource
-    
+    @State var showingActionSheet = false
+
     init(msg: Message, messageDS: MessageDataSource) {
         message = msg
         messageDataSource = messageDS
@@ -37,6 +38,21 @@ struct ChatBubble: View {
                 Image(uiImage: uiimage)
                     .resizable()
                     .aspectRatio(uiimage.size, contentMode: .fill)
+                    .gesture(LongPressGesture(minimumDuration: 1)
+                    .onEnded { _ in
+                        showingActionSheet = true
+                    })
+            }
+            .actionSheet(isPresented: $showingActionSheet) {
+                ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
+                        .default(Text("Save to SmileNotes")) {
+                            messageDataSource.saveToSmileNotes(message: message)
+                        },
+                        .default(Text("Report as abusive")) {
+                            messageDataSource.reportMessage(message: message)
+                        },
+                        .cancel()
+                    ])
             }
             
             
@@ -78,6 +94,10 @@ struct ChatBubble: View {
                                         .multilineTextAlignment(.leading)
                                         .font(.system(size: 16).weight(.light))
                                         .foregroundColor(.white)
+                                        .gesture(LongPressGesture(minimumDuration: 1)
+                                        .onEnded { _ in
+                                            showingActionSheet = true
+                                        })
                                     
                                     Spacer().frame(width: 0, height: 5)
                                 }
@@ -88,14 +108,22 @@ struct ChatBubble: View {
                         
                     }
                 }
+                .actionSheet(isPresented: $showingActionSheet) {
+                    ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
+                            .default(Text("Save to SmileNotes")) {
+                                messageDataSource.saveToSmileNotes(message: message)
+                            },
+                            .default(Text("Delete")) {
+                                messageDataSource.deleteMessage(message: message)
+                            },
+                            .cancel()
+                        ])
+                }
                 
             
             
         } else {
             // All other messages aka messages sent by USER'S FRIENDS
-            
-            
-                
                 VStack {
                     HStack {
                         Spacer().frame(width: 5)
@@ -106,17 +134,10 @@ struct ChatBubble: View {
                             .font(.system(size: 14).weight(.thin))
                         
                         Spacer()
-
-                        
                     }
                     
-                    
                     HStack {
-//                        Spacer().frame(width: 5)
-
                         VStack {
-                                
-                                                    
                             ZStack{
                                 Rectangle()
                                     .frame(width: getWidth(text: message.body) + 10, height: getHeight(text: message.body))
@@ -132,20 +153,32 @@ struct ChatBubble: View {
                                         .multilineTextAlignment(.leading)
                                         .font(.system(size: 16).weight(.light))
                                         .foregroundColor(.white)
+                                        .gesture(LongPressGesture(minimumDuration: 1)
+                                        .onEnded { _ in
+                                            showingActionSheet = true
+                                        })
 
-                                    
                                     Spacer().frame(width: 0, height: 5)
                                 }
-                                
                             }
                         }
                         Spacer()
-                        
                     }
-                
             }
-            
+            .actionSheet(isPresented: $showingActionSheet) {
+                ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
+                        .default(Text("Save to SmileNotes")) {
+                            messageDataSource.saveToSmileNotes(message: message)
+                        },
+                        .default(Text("Report as abusive")) {
+                            messageDataSource.reportMessage(message: message)
+                        },
+                        .cancel()
+                    ])
+            }
         }
+            
+        
     }
             
     func getWidth(text: String) -> CGFloat {

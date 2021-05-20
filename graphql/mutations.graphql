@@ -65,7 +65,16 @@ mutation CreateReportedMessage(
 ) {
   createReportedMessage(input: $input, condition: $condition) {
     id
-    message {
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    previousMessages {
       id
       senderName
       senderID
@@ -83,7 +92,16 @@ mutation UpdateReportedMessage(
 ) {
   updateReportedMessage(input: $input, condition: $condition) {
     id
-    message {
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    previousMessages {
       id
       senderName
       senderID
@@ -101,7 +119,16 @@ mutation DeleteReportedMessage(
 ) {
   deleteReportedMessage(input: $input, condition: $condition) {
     id
-    message {
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    previousMessages {
       id
       senderName
       senderID
@@ -131,6 +158,14 @@ mutation CreateUser(
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }
@@ -153,6 +188,14 @@ mutation UpdateUser(
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }
@@ -175,6 +218,14 @@ mutation DeleteUser(
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }
