@@ -84,14 +84,16 @@ struct MessageRoomView: View {
                         if rooms.contains(room.id) == false {
                             ForEach(messageDataSource.room.messages, id: \.id) { message in
                                 ChatBubble(msg: message, messageDS: messageDataSource)
+                                    .padding()
                                 
-                                Spacer()
-                                    .frame(height: 20)
+//                                Spacer()
+//                                    .frame(height: 20)
                             }
                         }
                     }
                     .padding()
                 }
+                .padding()
                 .offset(y: -self.offset)
 
                 
@@ -108,6 +110,7 @@ struct MessageRoomView: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                     }
+                    .padding()
                     
                     Spacer().frame(width: 30)
                     
@@ -115,6 +118,7 @@ struct MessageRoomView: View {
                         .background(Color(#colorLiteral(red: 0.4884749055, green: 0.2207083404, blue: 0.971470058, alpha: 0.3971501029)))
                         .frame(width: 210, height: 30)
                         .cornerRadius(15)
+                        .padding()
                     
                     Spacer()
                         .frame(width: 30)
@@ -129,6 +133,7 @@ struct MessageRoomView: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                     }
+                    .padding()
                     
                     Spacer().frame(width: 30)
                 }
@@ -138,7 +143,7 @@ struct MessageRoomView: View {
                     NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { (noti) in
                         let value = noti.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
                         let height = value.height
-                        self.offset = height/3.2
+                        self.offset = height/2.3
                     }
                     
                     NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { (noti) in
