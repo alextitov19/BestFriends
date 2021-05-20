@@ -62,6 +62,26 @@ class MessageDataSource: ObservableObject {
         }
     }
     
+    func deleteMessage(message: Message) {
+        room.messages.removeAll { $0.id == message.id }
+        Amplify.API.mutate(request: .update(room)) { [weak self] mutationResult in
+            switch mutationResult {
+                case .success(let creationResult):
+
+                    switch creationResult {
+                    case .success:
+                        print("Successfully deleted a message", message)
+
+                    case .failure(let error):
+                        print("Message deletion error: ", error)
+                    }
+
+                case .failure(let apiError):
+                    print("Message deletion api error: ", apiError)
+                }
+        }
+    }
+    
     func reportMessage(message: Message) {
         let reportedMessage: ReportedMessage = ReportedMessage(message: message)
         Amplify.API.mutate(request: .create(reportedMessage)) { [weak self] mutationResult in
