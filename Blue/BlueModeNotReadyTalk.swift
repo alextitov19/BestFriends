@@ -15,7 +15,7 @@ struct BlueModeNotReadyTalk: View {
         NavigationView {
         ZStack {
 
-            Image("blueC")
+            Image("blueBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
