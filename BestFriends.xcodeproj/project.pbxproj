@@ -170,6 +170,7 @@
 		D1E3CFDF2653A35700A26779 /* BlueModeLP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */; };
 		D1E3CFE12653AB9200A26779 /* BlueModeMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFE02653AB9200A26779 /* BlueModeMusic.swift */; };
 		D1E3CFE326543C4D00A26779 /* ChangePIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFE226543C4D00A26779 /* ChangePIN.swift */; };
+		D1E3CFE526561E3700A26779 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFE426561E3700A26779 /* AudioPlayer.swift */; };
 		D201C6D8515541F50AD3C719 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		D360EFFF81A1960D29489A06 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		DB15C6B4674E946ADCCFE253 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */; };
@@ -273,6 +274,7 @@
 		D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeLP.swift; sourceTree = "<group>"; };
 		D1E3CFE02653AB9200A26779 /* BlueModeMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeMusic.swift; sourceTree = "<group>"; };
 		D1E3CFE226543C4D00A26779 /* ChangePIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePIN.swift; sourceTree = "<group>"; };
+		D1E3CFE426561E3700A26779 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		DB24A96E58E94680A190216A /* User+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "User+Schema.swift"; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
 		E31DEA02CBB542D5AA59CA4B /* User.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
 		F6C3BE1022B34C5FA7EE9A20 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/bestfriends/schema.graphql; sourceTree = "<group>"; };
@@ -330,7 +332,9 @@
 		7A71BCF22625292A00E6FA9E = {
 			isa = PBXGroup;
 			children = (
+				D1E3CFE92656D2C900A26779 /* InfoPages */,
 				D1E3CFDD26522ECB00A26779 /* Blue */,
+				D1577799264D082800B6551A /* SmileNotes */,
 				DBFB8C7AC87F4062BC821677 /* AmplifyModels */,
 				7A71BD1526252B0200E6FA9E /* amplifyconfiguration.json */,
 				7A71BD1426252B0200E6FA9E /* awsconfiguration.json */,
@@ -382,8 +386,6 @@
 			isa = PBXGroup;
 			children = (
 				7A08E364264FB6CA00AEBC8F /* Notifications */,
-				D1577799264D082800B6551A /* SmileNotes */,
-				D15CCD702648862700BFE179 /* DarkMode */,
 				7AE31CC1262A9BE1001EC5A3 /* LandingView.swift */,
 				7AF6973E2630EE1900CF49CC /* Star.swift */,
 				7A6A4D06262B8A5000561D87 /* PlayerView.swift */,
@@ -411,7 +413,6 @@
 				D15777B22650522200B6551A /* Gestures */,
 				7AB62A8426426F86005A7744 /* SettingsView.swift */,
 				D15777A2264DB7FD00B6551A /* BetaTesters.swift */,
-				D1D27D39264303E300BDA75F /* InfoPages.swift */,
 				D157779D264D8E6D00B6551A /* ChangeBackground */,
 				D15CCD6526473E6700BFE179 /* MyAccount */,
 				D15CCD6D2647A10100BFE179 /* ManageMyFriends */,
@@ -523,14 +524,6 @@
 			path = ManageMyFriends;
 			sourceTree = "<group>";
 		};
-		D15CCD702648862700BFE179 /* DarkMode */ = {
-			isa = PBXGroup;
-			children = (
-				D15CCD792648870500BFE179 /* PrizesDark.swift */,
-			);
-			path = DarkMode;
-			sourceTree = "<group>";
-		};
 		D1E3CFDD26522ECB00A26779 /* Blue */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,8 +532,18 @@
 				D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */,
 				D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */,
 				D1E3CFE02653AB9200A26779 /* BlueModeMusic.swift */,
+				D1E3CFE426561E3700A26779 /* AudioPlayer.swift */,
+				D15CCD792648870500BFE179 /* PrizesDark.swift */,
 			);
 			path = Blue;
+			sourceTree = "<group>";
+		};
+		D1E3CFE92656D2C900A26779 /* InfoPages */ = {
+			isa = PBXGroup;
+			children = (
+				D1D27D39264303E300BDA75F /* InfoPages.swift */,
+			);
+			path = InfoPages;
 			sourceTree = "<group>";
 		};
 		DBFB8C7AC87F4062BC821677 /* AmplifyModels */ = {
@@ -857,6 +860,7 @@
 				8525261D20BAFDDB5000B434 /* User+Schema.swift in Sources */,
 				3145E0E5CE17043ADA0D5422 /* User.swift in Sources */,
 				32497A5B1BE051F67C2DBF00 /* AmplifyModels.swift in Sources */,
+				D1E3CFE526561E3700A26779 /* AudioPlayer.swift in Sources */,
 				BC2479D8AE43CCF690CE8097 /* Message+Schema.swift in Sources */,
 				C0D408EDC638CE85970F205A /* Message.swift in Sources */,
 				1E8DC087BEF1F92F47CEE099 /* ReportedMessage.swift in Sources */,

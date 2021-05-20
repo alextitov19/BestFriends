@@ -81,7 +81,7 @@ struct InfoViewPage1: View {
                 
                 Spacer()
                     .frame(height: 30)
-                NavigationLink(destination: InfoViewPage3()) {
+                NavigationLink(destination: InfoViewPage2()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -104,6 +104,102 @@ struct InfoViewPage1: View {
 }
 
 // ************************************************
+
+struct InfoViewPage2: View {
+
+    var body: some View {
+        NavigationView{
+        ZStack {
+            
+            
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+              
+            VStack {
+                    
+                HStack {
+                    VStack {
+                                               
+                       
+                                                   
+                        Spacer()
+                            .frame(height: 125)
+                                                    
+                            Image("Penguin Sticker 38")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                                .scaledToFill()
+                                                    
+                                }
+                        VStack {
+                       
+                            ZStack {
+                                
+                                
+                                Image("ChatBubbleTrans")
+                                    .resizable()
+                                    .frame(width: 300, height: 175)
+                                    .scaledToFill()
+                            
+                                Text("BestFriends is about positivity")
+                                    .italic()
+                                    .font(.system(size: 20))
+                                    .fontWeight(.ultraLight)
+                                    .foregroundColor(.white)
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            }
+                           
+                        }
+                    }
+                    
+                Spacer()
+                    .frame(height: 15)
+                    
+                    Text("We have a zero tolorane policy concerning sending hurtful messages to your friends. Please play nice!")
+                       
+                        .font(.system(size: 25))
+                        .fontWeight(.regular)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
+                      
+                    
+                Spacer()
+                    .frame(height: 30)
+                   
+                NavigationLink(destination: InfoViewPage3()) {
+                                    Text("Next")
+                                        .font(.title)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                        .frame(width: 200, height: 50)
+                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                        .cornerRadius(25)
+                    
+                  
+                    }
+                Spacer()
+                    .frame(height: 75)
+            
+            }
+            }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        }
+       
+       
+        }
+    }
+
+
+
+
+
+
+
 
 //***************************************
 struct InfoViewPage3: View {
@@ -481,7 +577,7 @@ struct InfoViewPage1_Previews : PreviewProvider {
     static var previews: some View {
    
         InfoViewPage1()
-        
+        InfoViewPage2()
         InfoViewPage3()
         InfoViewPage4()
         InfoViewPage5()
