@@ -25,7 +25,11 @@ struct BestFriendsApp: App {
         WindowGroup {
             switch sessionManager.authState {
             case .login:
+<<<<<<< Updated upstream
                 BlueModeMusic()
+=======
+                SettingsView()
+>>>>>>> Stashed changes
                     .environmentObject(sessionManager)
             case .signUp:
                 SignUpPage1()
