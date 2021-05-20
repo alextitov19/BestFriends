@@ -92,8 +92,8 @@ struct DarkModePage1: View {
         
         }
         }
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
+//    .navigationBarTitle("")
+//    .navigationBarHidden(true)
     
    
    

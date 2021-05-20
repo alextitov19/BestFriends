@@ -10,7 +10,6 @@ import SwiftUI
 struct BlueModeMusic: View {
 
     var body: some View {
-        NavigationView{
     
   
         ZStack {
@@ -69,9 +68,7 @@ struct BlueModeMusic: View {
         
                 
         }
-        }
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
+
     
    
    

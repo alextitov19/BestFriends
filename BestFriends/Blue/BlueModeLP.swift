@@ -11,7 +11,6 @@ import SwiftUI
 struct BlueModeLP: View {
 
     var body: some View {
-        NavigationView{
     
   
         ZStack {
@@ -93,9 +92,8 @@ struct BlueModeLP: View {
         
                 
         }
-        }
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
+//    .navigationBarTitle("")
+//    .navigationBarHidden(true)
     
    
    

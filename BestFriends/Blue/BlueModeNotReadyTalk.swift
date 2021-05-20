@@ -12,7 +12,6 @@ struct BlueModeNotReadyTalk: View {
     
 
     var body: some View {
-        NavigationView {
         ZStack {
 
             Image("blueBackground")
@@ -119,7 +118,6 @@ struct BlueModeNotReadyTalk: View {
                         .frame(height: 7)
                     
                 }
-        }
     }
 }
     }

@@ -11,7 +11,6 @@ struct DarkModeView: View {
     
 
     var body: some View {
-        NavigationView {
         ZStack {
 
             Image("blueBackground")
@@ -44,8 +43,6 @@ struct DarkModeView: View {
                 
                 Text("Helping pull the two of you from this wreckage before your hearts become forever dented!")
                     .frame(width: 400, height: 150, alignment: .center)
-                    .navigationBarTitle("")
-                    .navigationBarHidden(true)
                     .foregroundColor(Color(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)))
                     .font(.title)
             
@@ -140,9 +137,7 @@ struct DarkModeView: View {
                         
                         
                         
-                        
-                        
-                        
+                        }
                     }
                 }
             }
@@ -151,7 +146,6 @@ struct DarkModeView: View {
 }
 
 
-        }
-    }
+ 
 
 
