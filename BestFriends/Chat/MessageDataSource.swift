@@ -38,6 +38,30 @@ class MessageDataSource: ObservableObject {
         }
     }
     
+    func saveToSmileNotes(message: Message) {
+        guard let userid = Amplify.Auth.getCurrentUser()?.username else {return}
+        var user = UserDataSource().getUser(id: userid)
+        var smileNotes: [Message] = user.smileNotes ?? []
+        smileNotes.append(message)
+        user.smileNotes = smileNotes
+        Amplify.API.mutate(request: .update(user)) { [weak self] mutationResult in
+            switch mutationResult {
+                case .success(let creationResult):
+
+                    switch creationResult {
+                    case .success:
+                        print("Successfully saved a message to Smile Notes", message)
+
+                    case .failure(let error):
+                        print("Message saving to Smile Notes error: ", error)
+                    }
+
+                case .failure(let apiError):
+                    print("Message sending api error: ", apiError)
+                }
+        }
+    }
+    
     func createSubscription() {
         subscription = Amplify.API.subscribe(request: .subscription(of: Room.self, type: .onUpdate), valueListener: { (subscriptionEvent) in
             switch subscriptionEvent {
@@ -127,6 +151,7 @@ class MessageDataSource: ObservableObject {
         
         return image
     }
+    
     
 }
 
