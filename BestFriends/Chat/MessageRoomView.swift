@@ -16,8 +16,7 @@ struct MessageRoomView: View {
     @State var showingImagePicker = false
     @State var showingPin = false
     @State var inputImage: UIImage?
-    @ObservedObject private var kGuardian = KeyboardGuardian(textFieldCount: 1)
-
+    @State var offset: CGFloat = 0
     var user: User
     var room: Room
     
@@ -93,7 +92,9 @@ struct MessageRoomView: View {
                     }
                     .padding()
                 }
-                .padding()
+                .offset(y: -self.offset)
+
+                
                 
                 Spacer().frame(height: 30)
                 
@@ -131,13 +132,21 @@ struct MessageRoomView: View {
                     
                     Spacer().frame(width: 30)
                 }
-                .background(GeometryGetter(rect: $kGuardian.rects[0]))
-                
-                
-                Spacer().frame(height: 20)
+                .offset(y: -self.offset)
+                .animation(.spring())
+                .onAppear {
+                    NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { (noti) in
+                        let value = noti.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
+                        let height = value.height
+                        self.offset = height/3.2
+                    }
+                    
+                    NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { (noti) in
+                        self.offset = 0
+                    }
+                }
                 
             }
-            .offset(y: kGuardian.slide - 80).animation(.easeInOut(duration: 1.0))
             .navigationBarTitle("")
             .navigationBarHidden(true)
             
