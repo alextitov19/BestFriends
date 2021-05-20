@@ -131,6 +131,14 @@ mutation CreateUser(
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }
@@ -153,6 +161,14 @@ mutation UpdateUser(
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }
@@ -175,6 +191,14 @@ mutation DeleteUser(
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }

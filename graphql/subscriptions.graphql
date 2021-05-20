@@ -110,6 +110,14 @@ subscription OnCreateUser {
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }
@@ -129,6 +137,14 @@ subscription OnUpdateUser {
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }
@@ -148,6 +164,14 @@ subscription OnDeleteUser {
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }

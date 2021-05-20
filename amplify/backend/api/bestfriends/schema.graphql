@@ -32,5 +32,6 @@ type User @model {
   friends: [String]
   rooms: [String]
   hiddenRooms: [String]
+  smileNotes: [Message]
 }
 

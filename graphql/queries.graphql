@@ -92,6 +92,14 @@ query GetUser($id: ID!) {
     friends
     rooms
     hiddenRooms
+    smileNotes {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
     createdAt
     updatedAt
   }
@@ -116,6 +124,14 @@ query ListUsers(
       friends
       rooms
       hiddenRooms
+      smileNotes {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+      }
       createdAt
       updatedAt
     }
