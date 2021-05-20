@@ -22,8 +22,20 @@ struct BlueModeNotReadyTalk: View {
             
             VStack {
                
-              
             
+                
+                Text("BlueMode")
+                    .font(.system(size: 50))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(.blue)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            
+               
+                
+               
+            
+                Spacer().frame(height: 25)
                
                 VStack {
             
@@ -72,11 +84,28 @@ struct BlueModeNotReadyTalk: View {
                     .cornerRadius(25)
                   
                     VStack {
+                       
+                        
                         Spacer()
                             .frame(height: 30)
                         
+                        NavigationLink(
+                            destination: InfoViewPage1(),
+                            label: {
+                                Text("All this waiting sucks, we send a push notification as soon as your messages are read in BlueMode.")
+                                    .frame(width: 400, height: 100, alignment: .center)
+                            })
+                        .frame(width: 400, height: 75, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                        .cornerRadius(25)
+                        
+                        
+                        
+                        
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 15)
+                        
                         NavigationLink(destination: BlueModeMusic()) {
                                             Text("Next")
                                                 .font(.system(size: 30))
@@ -87,7 +116,7 @@ struct BlueModeNotReadyTalk: View {
                                                 .cornerRadius(25)
                         }
                     Spacer()
-                        .frame(height: 75)
+                        .frame(height: 7)
                     
                 }
         }

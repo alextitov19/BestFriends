@@ -112,7 +112,7 @@ struct DarkModeView: View {
                         
                         
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 15)
                         
                     
 

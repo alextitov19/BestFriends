@@ -23,8 +23,10 @@ struct BlueModeMusic: View {
             
                 
             VStack {
-             
-                    Spacer().frame(height: 230)
+                
+               
+                
+                    Spacer().frame(height: 175)
                     
                 NavigationLink(
                     destination: InfoViewPage1(),
@@ -39,24 +41,17 @@ struct BlueModeMusic: View {
                             .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                             )
                
-                Spacer().frame(height: 30)
+              
                      
-                     
-                     NavigationLink(
-                         destination: InfoViewPage1(),
-                         label: {
-                             Text("Waiting sucks, we send a push notification as soon as your messages are read in BlueMode.")
-                                 .frame(width: 375, height: 150, alignment: .center)
-                         })
-                        .frame(width: 380, height: 75)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
-
-                Spacer().frame(height: 10)
+                Text("It remains forever hard to un-break a heart; remembering that in the end some things can never be taken back!!!.")
+                    .italic()
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 350, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
+               
                 
                 NavigationLink(destination: DarkModePage1()) {
                                     Text("Take me to BlueMode Chat")

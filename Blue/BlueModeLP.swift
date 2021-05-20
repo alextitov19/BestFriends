@@ -76,7 +76,7 @@ struct BlueModeLP: View {
                 
                 
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 7)
                 NavigationLink(destination: DarkModeView()) {
                                     Text("Ok, activate 'BlueMode'")
                                         .font(.system(size: 30))
