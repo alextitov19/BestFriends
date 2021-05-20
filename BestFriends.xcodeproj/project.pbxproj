@@ -345,9 +345,6 @@
 		7A71BCF22625292A00E6FA9E = {
 			isa = PBXGroup;
 			children = (
-				D1E3CFE92656D2C900A26779 /* InfoPages */,
-				D1E3CFDD26522ECB00A26779 /* Blue */,
-				D1577799264D082800B6551A /* SmileNotes */,
 				DBFB8C7AC87F4062BC821677 /* AmplifyModels */,
 				7A71BD1526252B0200E6FA9E /* amplifyconfiguration.json */,
 				7A71BD1426252B0200E6FA9E /* awsconfiguration.json */,
@@ -370,6 +367,9 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				D1E3CFE92656D2C900A26779 /* InfoPages */,
+				D1E3CFDD26522ECB00A26779 /* Blue */,
+				D1577799264D082800B6551A /* SmileNotes */,
 				7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
 				7AC0DA8F262BAE09007FC643 /* models */,
