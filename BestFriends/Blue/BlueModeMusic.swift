@@ -6,26 +6,22 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct BlueModeMusic: View {
+    
+//    @State var AudioPlayer = AVAudioPlayer()
+
 
     var body: some View {
-    
-  
         ZStack {
-            
-            
             Image("Shayla3 copy")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            
                 
             VStack {
-                
-               
-                
-                    Spacer().frame(height: 175)
+                Spacer().frame(height: 175)
                     
                 NavigationLink(
                     destination: InfoViewPage1(),
@@ -40,8 +36,6 @@ struct BlueModeMusic: View {
                             .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                             )
                
-              
-                     
                 Text("It remains forever hard to un-break a heart; remembering that in the end some things can never be taken back!!!.")
                     .italic()
                     .font(.system(size: 25))
@@ -49,8 +43,6 @@ struct BlueModeMusic: View {
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .frame(width: 350, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-               
                 
                 NavigationLink(destination: DarkModePage1()) {
                                     Text("Take me to BlueMode Chat")
@@ -60,19 +52,18 @@ struct BlueModeMusic: View {
                                         .frame(width: 350, height: 50)
                                         .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .cornerRadius(25)
-                
-                    
-                    
                 }
-           
-        
-                
+            }
         }
+//        .onAppear {
+//            let AssortedMusics = URL(fileURLWithPath: Bundle.main.path(forResource: "wind", ofType: "mp3")!)
+//            AudioPlayer = try! AVAudioPlayer(contentsOf: AssortedMusics)
+//                    AudioPlayer.prepareToPlay()
+//                    AudioPlayer.numberOfLoops = -1
+//                    AudioPlayer.play()
+//        }
+    }
 
     
-   
-   
-    }
-}
 }
 
