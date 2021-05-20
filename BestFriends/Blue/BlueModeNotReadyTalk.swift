@@ -21,7 +21,7 @@ struct BlueModeNotReadyTalk: View {
             
             VStack {
                
-            
+               
                 
                 Text("BlueMode")
                     .font(.system(size: 50))
@@ -38,12 +38,21 @@ struct BlueModeNotReadyTalk: View {
                
                 VStack {
             
-                  
+                    Text("It remains forever hard to un-break a heart; remembering that in the end some things can never be taken back!")
+                      //  .italic()
+                        .font(.system(size: 25))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 425, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    
+                    Spacer().frame(height: 25)
                     
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("Upload an image of the two from happier days to 'their' ShakingCool!")
+                            Text("Upload images of both of yoy from happier days to your 'FRIEND'S' ShakingCool activating good vibes!")
                                 .frame(width: 400, height: 100, alignment: .center)
                         })
                     .frame(width: 400, height: 75, alignment: .center)
@@ -58,7 +67,7 @@ struct BlueModeNotReadyTalk: View {
                     NavigationLink(
                         destination: SmileNotesLibrary(),
                         label: {
-                            Text("Send back SmileNotes from your friend - letting them know you care.")
+                            Text("View all the SmileNotes from your friend - rembering nice things that your were told.")
                                 .frame(width: 400, height: 100, alignment: .center)
                         })
                     .frame(width: 400, height: 75, alignment: .center)
@@ -91,7 +100,7 @@ struct BlueModeNotReadyTalk: View {
                         NavigationLink(
                             destination: InfoViewPage1(),
                             label: {
-                                Text("All this waiting sucks, we send a push notification as soon as your messages are read in BlueMode.")
+                                Text("Yep, all this waiting to hear back sucks. We'll send push notifications once your messages are read or new messages are posted in BlueMode.")
                                     .frame(width: 400, height: 100, alignment: .center)
                             })
                         .frame(width: 400, height: 75, alignment: .center)
@@ -99,14 +108,18 @@ struct BlueModeNotReadyTalk: View {
                         .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                         .cornerRadius(25)
                         
+                     
+                        Text("Ready to get started - take a breath.")
+                          //  .italic()
+                            .font(.system(size: 25))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 425, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
-                        
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        NavigationLink(destination: BlueModeMusic()) {
-                                            Text("Next")
+                     
+                        NavigationLink(destination: DarkModePage1()) {
+                                            Text("Let's do this >>>")
                                                 .font(.system(size: 30))
                                                 .fontWeight(.ultraLight)
                                                 .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
@@ -114,8 +127,7 @@ struct BlueModeNotReadyTalk: View {
                                                 .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .cornerRadius(25)
                         }
-                    Spacer()
-                        .frame(height: 7)
+                  
                     
                 }
     }
