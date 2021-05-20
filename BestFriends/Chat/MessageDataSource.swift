@@ -83,7 +83,8 @@ class MessageDataSource: ObservableObject {
     }
     
     func reportMessage(message: Message) {
-        let reportedMessage: ReportedMessage = ReportedMessage(message: message)
+        guard let userid = Amplify.Auth.getCurrentUser()?.username else {return}
+        let reportedMessage: ReportedMessage = ReportedMessage(reporterID: userid, reportedMessage: message, previousMessages: room.messages)
         Amplify.API.mutate(request: .create(reportedMessage)) { [weak self] mutationResult in
             switch mutationResult {
 

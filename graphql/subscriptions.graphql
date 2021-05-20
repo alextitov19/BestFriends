@@ -53,7 +53,16 @@ subscription OnDeleteRoom {
 subscription OnCreateReportedMessage {
   onCreateReportedMessage {
     id
-    message {
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    previousMessages {
       id
       senderName
       senderID
@@ -68,7 +77,16 @@ subscription OnCreateReportedMessage {
 subscription OnUpdateReportedMessage {
   onUpdateReportedMessage {
     id
-    message {
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    previousMessages {
       id
       senderName
       senderID
@@ -83,7 +101,16 @@ subscription OnUpdateReportedMessage {
 subscription OnDeleteReportedMessage {
   onDeleteReportedMessage {
     id
-    message {
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    previousMessages {
       id
       senderName
       senderID

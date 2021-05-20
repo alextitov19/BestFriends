@@ -43,7 +43,16 @@ query ListRooms(
 query GetReportedMessage($id: ID!) {
   getReportedMessage(id: $id) {
     id
-    message {
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+    }
+    previousMessages {
       id
       senderName
       senderID
@@ -63,7 +72,16 @@ query ListReportedMessages(
   listReportedMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {
     items {
       id
-      message {
+      reporterID
+      reportedMessage {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+      }
+      previousMessages {
         id
         senderName
         senderID

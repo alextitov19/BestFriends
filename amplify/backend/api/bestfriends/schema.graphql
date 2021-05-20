@@ -15,7 +15,9 @@ type Message {
 }
 
 type ReportedMessage @model {
-  message: Message!
+  reporterID: String!
+  reportedMessage: Message!
+  previousMessages: [Message!]
 }
 
 type User @model {

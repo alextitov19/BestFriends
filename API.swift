@@ -469,13 +469,13 @@ public struct UpdateRoomInput: GraphQLMapConvertible {
 public struct DeleteRoomInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil) {
+  public init(id: GraphQLID) {
     graphQLMap = ["id": id]
   }
 
-  public var id: GraphQLID? {
+  public var id: GraphQLID {
     get {
-      return graphQLMap["id"] as! GraphQLID?
+      return graphQLMap["id"] as! GraphQLID
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "id")
@@ -486,8 +486,8 @@ public struct DeleteRoomInput: GraphQLMapConvertible {
 public struct CreateReportedMessageInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, message: MessageInput) {
-    graphQLMap = ["id": id, "message": message]
+  public init(id: GraphQLID? = nil, reporterId: String, reportedMessage: MessageInput, previousMessages: [MessageInput]? = nil) {
+    graphQLMap = ["id": id, "reporterID": reporterId, "reportedMessage": reportedMessage, "previousMessages": previousMessages]
   }
 
   public var id: GraphQLID? {
@@ -499,12 +499,30 @@ public struct CreateReportedMessageInput: GraphQLMapConvertible {
     }
   }
 
-  public var message: MessageInput {
+  public var reporterId: String {
     get {
-      return graphQLMap["message"] as! MessageInput
+      return graphQLMap["reporterID"] as! String
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "message")
+      graphQLMap.updateValue(newValue, forKey: "reporterID")
+    }
+  }
+
+  public var reportedMessage: MessageInput {
+    get {
+      return graphQLMap["reportedMessage"] as! MessageInput
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "reportedMessage")
+    }
+  }
+
+  public var previousMessages: [MessageInput]? {
+    get {
+      return graphQLMap["previousMessages"] as! [MessageInput]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "previousMessages")
     }
   }
 }
@@ -512,8 +530,17 @@ public struct CreateReportedMessageInput: GraphQLMapConvertible {
 public struct ModelReportedMessageConditionInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(and: [ModelReportedMessageConditionInput?]? = nil, or: [ModelReportedMessageConditionInput?]? = nil, not: ModelReportedMessageConditionInput? = nil) {
-    graphQLMap = ["and": and, "or": or, "not": not]
+  public init(reporterId: ModelStringInput? = nil, and: [ModelReportedMessageConditionInput?]? = nil, or: [ModelReportedMessageConditionInput?]? = nil, not: ModelReportedMessageConditionInput? = nil) {
+    graphQLMap = ["reporterID": reporterId, "and": and, "or": or, "not": not]
+  }
+
+  public var reporterId: ModelStringInput? {
+    get {
+      return graphQLMap["reporterID"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "reporterID")
+    }
   }
 
   public var and: [ModelReportedMessageConditionInput?]? {
@@ -547,16 +574,34 @@ public struct ModelReportedMessageConditionInput: GraphQLMapConvertible {
 public struct UpdateReportedMessageInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(message: MessageInput? = nil) {
-    graphQLMap = ["message": message]
+  public init(reporterId: String? = nil, reportedMessage: MessageInput? = nil, previousMessages: [MessageInput]? = nil) {
+    graphQLMap = ["reporterID": reporterId, "reportedMessage": reportedMessage, "previousMessages": previousMessages]
   }
 
-  public var message: MessageInput? {
+  public var reporterId: String? {
     get {
-      return graphQLMap["message"] as! MessageInput?
+      return graphQLMap["reporterID"] as! String?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "message")
+      graphQLMap.updateValue(newValue, forKey: "reporterID")
+    }
+  }
+
+  public var reportedMessage: MessageInput? {
+    get {
+      return graphQLMap["reportedMessage"] as! MessageInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "reportedMessage")
+    }
+  }
+
+  public var previousMessages: [MessageInput]? {
+    get {
+      return graphQLMap["previousMessages"] as! [MessageInput]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "previousMessages")
     }
   }
 }
@@ -564,13 +609,13 @@ public struct UpdateReportedMessageInput: GraphQLMapConvertible {
 public struct DeleteReportedMessageInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil) {
+  public init(id: GraphQLID) {
     graphQLMap = ["id": id]
   }
 
-  public var id: GraphQLID? {
+  public var id: GraphQLID {
     get {
-      return graphQLMap["id"] as! GraphQLID?
+      return graphQLMap["id"] as! GraphQLID
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "id")
@@ -1036,13 +1081,13 @@ public struct UpdateUserInput: GraphQLMapConvertible {
 public struct DeleteUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil) {
+  public init(id: GraphQLID) {
     graphQLMap = ["id": id]
   }
 
-  public var id: GraphQLID? {
+  public var id: GraphQLID {
     get {
-      return graphQLMap["id"] as! GraphQLID?
+      return graphQLMap["id"] as! GraphQLID
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "id")
@@ -1240,8 +1285,17 @@ public struct ModelIDInput: GraphQLMapConvertible {
 public struct ModelReportedMessageFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(and: [ModelReportedMessageFilterInput?]? = nil, or: [ModelReportedMessageFilterInput?]? = nil, not: ModelReportedMessageFilterInput? = nil) {
-    graphQLMap = ["and": and, "or": or, "not": not]
+  public init(reporterId: ModelStringInput? = nil, and: [ModelReportedMessageFilterInput?]? = nil, or: [ModelReportedMessageFilterInput?]? = nil, not: ModelReportedMessageFilterInput? = nil) {
+    graphQLMap = ["reporterID": reporterId, "and": and, "or": or, "not": not]
+  }
+
+  public var reporterId: ModelStringInput? {
+    get {
+      return graphQLMap["reporterID"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "reporterID")
+    }
   }
 
   public var and: [ModelReportedMessageFilterInput?]? {
@@ -2080,7 +2134,7 @@ public final class DeleteRoomMutation: GraphQLMutation {
 
 public final class CreateReportedMessageMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateReportedMessage($input: CreateReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  createReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    message {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateReportedMessage($input: CreateReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  createReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateReportedMessageInput
   public var condition: ModelReportedMessageConditionInput?
@@ -2126,7 +2180,9 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("message", type: .nonNull(.object(Message.selections))),
+        GraphQLField("reporterID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reportedMessage", type: .nonNull(.object(ReportedMessage.selections))),
+        GraphQLField("previousMessages", type: .list(.nonNull(.object(PreviousMessage.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -2137,8 +2193,8 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, message: Message, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "message": message.snapshot, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, reporterId: String, reportedMessage: ReportedMessage, previousMessages: [PreviousMessage]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "reporterID": reporterId, "reportedMessage": reportedMessage.snapshot, "previousMessages": previousMessages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -2159,12 +2215,30 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
         }
       }
 
-      public var message: Message {
+      public var reporterId: String {
         get {
-          return Message(snapshot: snapshot["message"]! as! Snapshot)
+          return snapshot["reporterID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue.snapshot, forKey: "message")
+          snapshot.updateValue(newValue, forKey: "reporterID")
+        }
+      }
+
+      public var reportedMessage: ReportedMessage {
+        get {
+          return ReportedMessage(snapshot: snapshot["reportedMessage"]! as! Snapshot)
+        }
+        set {
+          snapshot.updateValue(newValue.snapshot, forKey: "reportedMessage")
+        }
+      }
+
+      public var previousMessages: [PreviousMessage]? {
+        get {
+          return (snapshot["previousMessages"] as? [Snapshot]).flatMap { $0.map { PreviousMessage(snapshot: $0) } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.snapshot } }, forKey: "previousMessages")
         }
       }
 
@@ -2186,7 +2260,94 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
         }
       }
 
-      public struct Message: GraphQLSelectionSet {
+      public struct ReportedMessage: GraphQLSelectionSet {
+        public static let possibleTypes = ["Message"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
+          GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("body", type: .nonNull(.scalar(String.self))),
+          GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var senderName: String {
+          get {
+            return snapshot["senderName"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderName")
+          }
+        }
+
+        public var senderId: String {
+          get {
+            return snapshot["senderID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderID")
+          }
+        }
+
+        public var body: String {
+          get {
+            return snapshot["body"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "body")
+          }
+        }
+
+        public var creationDate: Int {
+          get {
+            return snapshot["creationDate"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "creationDate")
+          }
+        }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
+      }
+
+      public struct PreviousMessage: GraphQLSelectionSet {
         public static let possibleTypes = ["Message"]
 
         public static let selections: [GraphQLSelection] = [
@@ -2278,7 +2439,7 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
 
 public final class UpdateReportedMessageMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateReportedMessage($input: UpdateReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  updateReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    message {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateReportedMessage($input: UpdateReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  updateReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateReportedMessageInput
   public var condition: ModelReportedMessageConditionInput?
@@ -2324,7 +2485,9 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("message", type: .nonNull(.object(Message.selections))),
+        GraphQLField("reporterID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reportedMessage", type: .nonNull(.object(ReportedMessage.selections))),
+        GraphQLField("previousMessages", type: .list(.nonNull(.object(PreviousMessage.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -2335,8 +2498,8 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, message: Message, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "message": message.snapshot, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, reporterId: String, reportedMessage: ReportedMessage, previousMessages: [PreviousMessage]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "reporterID": reporterId, "reportedMessage": reportedMessage.snapshot, "previousMessages": previousMessages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -2357,12 +2520,30 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
         }
       }
 
-      public var message: Message {
+      public var reporterId: String {
         get {
-          return Message(snapshot: snapshot["message"]! as! Snapshot)
+          return snapshot["reporterID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue.snapshot, forKey: "message")
+          snapshot.updateValue(newValue, forKey: "reporterID")
+        }
+      }
+
+      public var reportedMessage: ReportedMessage {
+        get {
+          return ReportedMessage(snapshot: snapshot["reportedMessage"]! as! Snapshot)
+        }
+        set {
+          snapshot.updateValue(newValue.snapshot, forKey: "reportedMessage")
+        }
+      }
+
+      public var previousMessages: [PreviousMessage]? {
+        get {
+          return (snapshot["previousMessages"] as? [Snapshot]).flatMap { $0.map { PreviousMessage(snapshot: $0) } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.snapshot } }, forKey: "previousMessages")
         }
       }
 
@@ -2384,7 +2565,94 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
         }
       }
 
-      public struct Message: GraphQLSelectionSet {
+      public struct ReportedMessage: GraphQLSelectionSet {
+        public static let possibleTypes = ["Message"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
+          GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("body", type: .nonNull(.scalar(String.self))),
+          GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var senderName: String {
+          get {
+            return snapshot["senderName"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderName")
+          }
+        }
+
+        public var senderId: String {
+          get {
+            return snapshot["senderID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderID")
+          }
+        }
+
+        public var body: String {
+          get {
+            return snapshot["body"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "body")
+          }
+        }
+
+        public var creationDate: Int {
+          get {
+            return snapshot["creationDate"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "creationDate")
+          }
+        }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
+      }
+
+      public struct PreviousMessage: GraphQLSelectionSet {
         public static let possibleTypes = ["Message"]
 
         public static let selections: [GraphQLSelection] = [
@@ -2476,7 +2744,7 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
 
 public final class DeleteReportedMessageMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteReportedMessage($input: DeleteReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  deleteReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    message {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteReportedMessage($input: DeleteReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  deleteReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteReportedMessageInput
   public var condition: ModelReportedMessageConditionInput?
@@ -2522,7 +2790,9 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("message", type: .nonNull(.object(Message.selections))),
+        GraphQLField("reporterID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reportedMessage", type: .nonNull(.object(ReportedMessage.selections))),
+        GraphQLField("previousMessages", type: .list(.nonNull(.object(PreviousMessage.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -2533,8 +2803,8 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, message: Message, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "message": message.snapshot, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, reporterId: String, reportedMessage: ReportedMessage, previousMessages: [PreviousMessage]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "reporterID": reporterId, "reportedMessage": reportedMessage.snapshot, "previousMessages": previousMessages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -2555,12 +2825,30 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
         }
       }
 
-      public var message: Message {
+      public var reporterId: String {
         get {
-          return Message(snapshot: snapshot["message"]! as! Snapshot)
+          return snapshot["reporterID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue.snapshot, forKey: "message")
+          snapshot.updateValue(newValue, forKey: "reporterID")
+        }
+      }
+
+      public var reportedMessage: ReportedMessage {
+        get {
+          return ReportedMessage(snapshot: snapshot["reportedMessage"]! as! Snapshot)
+        }
+        set {
+          snapshot.updateValue(newValue.snapshot, forKey: "reportedMessage")
+        }
+      }
+
+      public var previousMessages: [PreviousMessage]? {
+        get {
+          return (snapshot["previousMessages"] as? [Snapshot]).flatMap { $0.map { PreviousMessage(snapshot: $0) } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.snapshot } }, forKey: "previousMessages")
         }
       }
 
@@ -2582,7 +2870,94 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
         }
       }
 
-      public struct Message: GraphQLSelectionSet {
+      public struct ReportedMessage: GraphQLSelectionSet {
+        public static let possibleTypes = ["Message"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
+          GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("body", type: .nonNull(.scalar(String.self))),
+          GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var senderName: String {
+          get {
+            return snapshot["senderName"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderName")
+          }
+        }
+
+        public var senderId: String {
+          get {
+            return snapshot["senderID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderID")
+          }
+        }
+
+        public var body: String {
+          get {
+            return snapshot["body"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "body")
+          }
+        }
+
+        public var creationDate: Int {
+          get {
+            return snapshot["creationDate"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "creationDate")
+          }
+        }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
+      }
+
+      public struct PreviousMessage: GraphQLSelectionSet {
         public static let possibleTypes = ["Message"]
 
         public static let selections: [GraphQLSelection] = [
@@ -4111,7 +4486,7 @@ public final class ListRoomsQuery: GraphQLQuery {
 
 public final class GetReportedMessageQuery: GraphQLQuery {
   public static let operationString =
-    "query GetReportedMessage($id: ID!) {\n  getReportedMessage(id: $id) {\n    __typename\n    id\n    message {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetReportedMessage($id: ID!) {\n  getReportedMessage(id: $id) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -4155,7 +4530,9 @@ public final class GetReportedMessageQuery: GraphQLQuery {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("message", type: .nonNull(.object(Message.selections))),
+        GraphQLField("reporterID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reportedMessage", type: .nonNull(.object(ReportedMessage.selections))),
+        GraphQLField("previousMessages", type: .list(.nonNull(.object(PreviousMessage.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -4166,8 +4543,8 @@ public final class GetReportedMessageQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, message: Message, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "message": message.snapshot, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, reporterId: String, reportedMessage: ReportedMessage, previousMessages: [PreviousMessage]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "reporterID": reporterId, "reportedMessage": reportedMessage.snapshot, "previousMessages": previousMessages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -4188,12 +4565,30 @@ public final class GetReportedMessageQuery: GraphQLQuery {
         }
       }
 
-      public var message: Message {
+      public var reporterId: String {
         get {
-          return Message(snapshot: snapshot["message"]! as! Snapshot)
+          return snapshot["reporterID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue.snapshot, forKey: "message")
+          snapshot.updateValue(newValue, forKey: "reporterID")
+        }
+      }
+
+      public var reportedMessage: ReportedMessage {
+        get {
+          return ReportedMessage(snapshot: snapshot["reportedMessage"]! as! Snapshot)
+        }
+        set {
+          snapshot.updateValue(newValue.snapshot, forKey: "reportedMessage")
+        }
+      }
+
+      public var previousMessages: [PreviousMessage]? {
+        get {
+          return (snapshot["previousMessages"] as? [Snapshot]).flatMap { $0.map { PreviousMessage(snapshot: $0) } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.snapshot } }, forKey: "previousMessages")
         }
       }
 
@@ -4215,7 +4610,94 @@ public final class GetReportedMessageQuery: GraphQLQuery {
         }
       }
 
-      public struct Message: GraphQLSelectionSet {
+      public struct ReportedMessage: GraphQLSelectionSet {
+        public static let possibleTypes = ["Message"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
+          GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("body", type: .nonNull(.scalar(String.self))),
+          GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var senderName: String {
+          get {
+            return snapshot["senderName"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderName")
+          }
+        }
+
+        public var senderId: String {
+          get {
+            return snapshot["senderID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderID")
+          }
+        }
+
+        public var body: String {
+          get {
+            return snapshot["body"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "body")
+          }
+        }
+
+        public var creationDate: Int {
+          get {
+            return snapshot["creationDate"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "creationDate")
+          }
+        }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
+      }
+
+      public struct PreviousMessage: GraphQLSelectionSet {
         public static let possibleTypes = ["Message"]
 
         public static let selections: [GraphQLSelection] = [
@@ -4307,7 +4789,7 @@ public final class GetReportedMessageQuery: GraphQLQuery {
 
 public final class ListReportedMessagesQuery: GraphQLQuery {
   public static let operationString =
-    "query ListReportedMessages($filter: ModelReportedMessageFilterInput, $limit: Int, $nextToken: String) {\n  listReportedMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n      }\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListReportedMessages($filter: ModelReportedMessageFilterInput, $limit: Int, $nextToken: String) {\n  listReportedMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      reporterID\n      reportedMessage {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n      }\n      previousMessages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n      }\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelReportedMessageFilterInput?
   public var limit: Int?
@@ -4401,7 +4883,9 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
         public static let selections: [GraphQLSelection] = [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-          GraphQLField("message", type: .nonNull(.object(Message.selections))),
+          GraphQLField("reporterID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("reportedMessage", type: .nonNull(.object(ReportedMessage.selections))),
+          GraphQLField("previousMessages", type: .list(.nonNull(.object(PreviousMessage.selections)))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
           GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
         ]
@@ -4412,8 +4896,8 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, message: Message, createdAt: String, updatedAt: String) {
-          self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "message": message.snapshot, "createdAt": createdAt, "updatedAt": updatedAt])
+        public init(id: GraphQLID, reporterId: String, reportedMessage: ReportedMessage, previousMessages: [PreviousMessage]? = nil, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "reporterID": reporterId, "reportedMessage": reportedMessage.snapshot, "previousMessages": previousMessages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
         public var __typename: String {
@@ -4434,12 +4918,30 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
           }
         }
 
-        public var message: Message {
+        public var reporterId: String {
           get {
-            return Message(snapshot: snapshot["message"]! as! Snapshot)
+            return snapshot["reporterID"]! as! String
           }
           set {
-            snapshot.updateValue(newValue.snapshot, forKey: "message")
+            snapshot.updateValue(newValue, forKey: "reporterID")
+          }
+        }
+
+        public var reportedMessage: ReportedMessage {
+          get {
+            return ReportedMessage(snapshot: snapshot["reportedMessage"]! as! Snapshot)
+          }
+          set {
+            snapshot.updateValue(newValue.snapshot, forKey: "reportedMessage")
+          }
+        }
+
+        public var previousMessages: [PreviousMessage]? {
+          get {
+            return (snapshot["previousMessages"] as? [Snapshot]).flatMap { $0.map { PreviousMessage(snapshot: $0) } }
+          }
+          set {
+            snapshot.updateValue(newValue.flatMap { $0.map { $0.snapshot } }, forKey: "previousMessages")
           }
         }
 
@@ -4461,7 +4963,94 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
           }
         }
 
-        public struct Message: GraphQLSelectionSet {
+        public struct ReportedMessage: GraphQLSelectionSet {
+          public static let possibleTypes = ["Message"]
+
+          public static let selections: [GraphQLSelection] = [
+            GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+            GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+            GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
+            GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+            GraphQLField("body", type: .nonNull(.scalar(String.self))),
+            GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+            GraphQLField("attachmentPath", type: .scalar(String.self)),
+          ]
+
+          public var snapshot: Snapshot
+
+          public init(snapshot: Snapshot) {
+            self.snapshot = snapshot
+          }
+
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
+          }
+
+          public var __typename: String {
+            get {
+              return snapshot["__typename"]! as! String
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "__typename")
+            }
+          }
+
+          public var id: GraphQLID {
+            get {
+              return snapshot["id"]! as! GraphQLID
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "id")
+            }
+          }
+
+          public var senderName: String {
+            get {
+              return snapshot["senderName"]! as! String
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "senderName")
+            }
+          }
+
+          public var senderId: String {
+            get {
+              return snapshot["senderID"]! as! String
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "senderID")
+            }
+          }
+
+          public var body: String {
+            get {
+              return snapshot["body"]! as! String
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "body")
+            }
+          }
+
+          public var creationDate: Int {
+            get {
+              return snapshot["creationDate"]! as! Int
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "creationDate")
+            }
+          }
+
+          public var attachmentPath: String? {
+            get {
+              return snapshot["attachmentPath"] as? String
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "attachmentPath")
+            }
+          }
+        }
+
+        public struct PreviousMessage: GraphQLSelectionSet {
           public static let possibleTypes = ["Message"]
 
           public static let selections: [GraphQLSelection] = [
@@ -5864,7 +6453,7 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
 
 public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateReportedMessage {\n  onCreateReportedMessage {\n    __typename\n    id\n    message {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateReportedMessage {\n  onCreateReportedMessage {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -5901,7 +6490,9 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("message", type: .nonNull(.object(Message.selections))),
+        GraphQLField("reporterID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reportedMessage", type: .nonNull(.object(ReportedMessage.selections))),
+        GraphQLField("previousMessages", type: .list(.nonNull(.object(PreviousMessage.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -5912,8 +6503,8 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, message: Message, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "message": message.snapshot, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, reporterId: String, reportedMessage: ReportedMessage, previousMessages: [PreviousMessage]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "reporterID": reporterId, "reportedMessage": reportedMessage.snapshot, "previousMessages": previousMessages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -5934,12 +6525,30 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
         }
       }
 
-      public var message: Message {
+      public var reporterId: String {
         get {
-          return Message(snapshot: snapshot["message"]! as! Snapshot)
+          return snapshot["reporterID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue.snapshot, forKey: "message")
+          snapshot.updateValue(newValue, forKey: "reporterID")
+        }
+      }
+
+      public var reportedMessage: ReportedMessage {
+        get {
+          return ReportedMessage(snapshot: snapshot["reportedMessage"]! as! Snapshot)
+        }
+        set {
+          snapshot.updateValue(newValue.snapshot, forKey: "reportedMessage")
+        }
+      }
+
+      public var previousMessages: [PreviousMessage]? {
+        get {
+          return (snapshot["previousMessages"] as? [Snapshot]).flatMap { $0.map { PreviousMessage(snapshot: $0) } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.snapshot } }, forKey: "previousMessages")
         }
       }
 
@@ -5961,7 +6570,94 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
         }
       }
 
-      public struct Message: GraphQLSelectionSet {
+      public struct ReportedMessage: GraphQLSelectionSet {
+        public static let possibleTypes = ["Message"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
+          GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("body", type: .nonNull(.scalar(String.self))),
+          GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var senderName: String {
+          get {
+            return snapshot["senderName"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderName")
+          }
+        }
+
+        public var senderId: String {
+          get {
+            return snapshot["senderID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderID")
+          }
+        }
+
+        public var body: String {
+          get {
+            return snapshot["body"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "body")
+          }
+        }
+
+        public var creationDate: Int {
+          get {
+            return snapshot["creationDate"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "creationDate")
+          }
+        }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
+      }
+
+      public struct PreviousMessage: GraphQLSelectionSet {
         public static let possibleTypes = ["Message"]
 
         public static let selections: [GraphQLSelection] = [
@@ -6053,7 +6749,7 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
 
 public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateReportedMessage {\n  onUpdateReportedMessage {\n    __typename\n    id\n    message {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateReportedMessage {\n  onUpdateReportedMessage {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -6090,7 +6786,9 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("message", type: .nonNull(.object(Message.selections))),
+        GraphQLField("reporterID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reportedMessage", type: .nonNull(.object(ReportedMessage.selections))),
+        GraphQLField("previousMessages", type: .list(.nonNull(.object(PreviousMessage.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -6101,8 +6799,8 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, message: Message, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "message": message.snapshot, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, reporterId: String, reportedMessage: ReportedMessage, previousMessages: [PreviousMessage]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "reporterID": reporterId, "reportedMessage": reportedMessage.snapshot, "previousMessages": previousMessages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -6123,12 +6821,30 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
         }
       }
 
-      public var message: Message {
+      public var reporterId: String {
         get {
-          return Message(snapshot: snapshot["message"]! as! Snapshot)
+          return snapshot["reporterID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue.snapshot, forKey: "message")
+          snapshot.updateValue(newValue, forKey: "reporterID")
+        }
+      }
+
+      public var reportedMessage: ReportedMessage {
+        get {
+          return ReportedMessage(snapshot: snapshot["reportedMessage"]! as! Snapshot)
+        }
+        set {
+          snapshot.updateValue(newValue.snapshot, forKey: "reportedMessage")
+        }
+      }
+
+      public var previousMessages: [PreviousMessage]? {
+        get {
+          return (snapshot["previousMessages"] as? [Snapshot]).flatMap { $0.map { PreviousMessage(snapshot: $0) } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.snapshot } }, forKey: "previousMessages")
         }
       }
 
@@ -6150,7 +6866,94 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
         }
       }
 
-      public struct Message: GraphQLSelectionSet {
+      public struct ReportedMessage: GraphQLSelectionSet {
+        public static let possibleTypes = ["Message"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
+          GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("body", type: .nonNull(.scalar(String.self))),
+          GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var senderName: String {
+          get {
+            return snapshot["senderName"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderName")
+          }
+        }
+
+        public var senderId: String {
+          get {
+            return snapshot["senderID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderID")
+          }
+        }
+
+        public var body: String {
+          get {
+            return snapshot["body"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "body")
+          }
+        }
+
+        public var creationDate: Int {
+          get {
+            return snapshot["creationDate"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "creationDate")
+          }
+        }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
+      }
+
+      public struct PreviousMessage: GraphQLSelectionSet {
         public static let possibleTypes = ["Message"]
 
         public static let selections: [GraphQLSelection] = [
@@ -6242,7 +7045,7 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
 
 public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteReportedMessage {\n  onDeleteReportedMessage {\n    __typename\n    id\n    message {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteReportedMessage {\n  onDeleteReportedMessage {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -6279,7 +7082,9 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
       public static let selections: [GraphQLSelection] = [
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
-        GraphQLField("message", type: .nonNull(.object(Message.selections))),
+        GraphQLField("reporterID", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reportedMessage", type: .nonNull(.object(ReportedMessage.selections))),
+        GraphQLField("previousMessages", type: .list(.nonNull(.object(PreviousMessage.selections)))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -6290,8 +7095,8 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, message: Message, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "message": message.snapshot, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, reporterId: String, reportedMessage: ReportedMessage, previousMessages: [PreviousMessage]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ReportedMessage", "id": id, "reporterID": reporterId, "reportedMessage": reportedMessage.snapshot, "previousMessages": previousMessages.flatMap { $0.map { $0.snapshot } }, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -6312,12 +7117,30 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
         }
       }
 
-      public var message: Message {
+      public var reporterId: String {
         get {
-          return Message(snapshot: snapshot["message"]! as! Snapshot)
+          return snapshot["reporterID"]! as! String
         }
         set {
-          snapshot.updateValue(newValue.snapshot, forKey: "message")
+          snapshot.updateValue(newValue, forKey: "reporterID")
+        }
+      }
+
+      public var reportedMessage: ReportedMessage {
+        get {
+          return ReportedMessage(snapshot: snapshot["reportedMessage"]! as! Snapshot)
+        }
+        set {
+          snapshot.updateValue(newValue.snapshot, forKey: "reportedMessage")
+        }
+      }
+
+      public var previousMessages: [PreviousMessage]? {
+        get {
+          return (snapshot["previousMessages"] as? [Snapshot]).flatMap { $0.map { PreviousMessage(snapshot: $0) } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.snapshot } }, forKey: "previousMessages")
         }
       }
 
@@ -6339,7 +7162,94 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
         }
       }
 
-      public struct Message: GraphQLSelectionSet {
+      public struct ReportedMessage: GraphQLSelectionSet {
+        public static let possibleTypes = ["Message"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("senderName", type: .nonNull(.scalar(String.self))),
+          GraphQLField("senderID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("body", type: .nonNull(.scalar(String.self))),
+          GraphQLField("creationDate", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("attachmentPath", type: .scalar(String.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var senderName: String {
+          get {
+            return snapshot["senderName"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderName")
+          }
+        }
+
+        public var senderId: String {
+          get {
+            return snapshot["senderID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "senderID")
+          }
+        }
+
+        public var body: String {
+          get {
+            return snapshot["body"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "body")
+          }
+        }
+
+        public var creationDate: Int {
+          get {
+            return snapshot["creationDate"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "creationDate")
+          }
+        }
+
+        public var attachmentPath: String? {
+          get {
+            return snapshot["attachmentPath"] as? String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "attachmentPath")
+          }
+        }
+      }
+
+      public struct PreviousMessage: GraphQLSelectionSet {
         public static let possibleTypes = ["Message"]
 
         public static let selections: [GraphQLSelection] = [

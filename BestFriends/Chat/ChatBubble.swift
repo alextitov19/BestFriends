@@ -48,7 +48,7 @@ struct ChatBubble: View {
                         .default(Text("Save to SmileNotes")) {
                             messageDataSource.saveToSmileNotes(message: message)
                         },
-                        .default(Text("Report")) {
+                        .default(Text("Report as abusive")) {
                             messageDataSource.reportMessage(message: message)
                         },
                         .cancel()
@@ -116,9 +116,6 @@ struct ChatBubble: View {
                             .default(Text("Delete")) {
                                 messageDataSource.deleteMessage(message: message)
                             },
-                            .default(Text("Report")) {
-                                messageDataSource.reportMessage(message: message)
-                            },
                             .cancel()
                         ])
                 }
@@ -173,7 +170,7 @@ struct ChatBubble: View {
                         .default(Text("Save to SmileNotes")) {
                             messageDataSource.saveToSmileNotes(message: message)
                         },
-                        .default(Text("Report")) {
+                        .default(Text("Report as abusive")) {
                             messageDataSource.reportMessage(message: message)
                         },
                         .cancel()
