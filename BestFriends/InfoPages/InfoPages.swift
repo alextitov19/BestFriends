@@ -17,7 +17,6 @@ import SwiftUI
 struct InfoViewPage1: View {
 
     var body: some View {
-        NavigationView{
     
   
         ZStack {
@@ -93,10 +92,7 @@ struct InfoViewPage1: View {
                 .frame(height: 75)
         
         }
-        }
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
-    
+
    
    
     }
@@ -108,7 +104,6 @@ struct InfoViewPage1: View {
 struct InfoViewPage2: View {
 
     var body: some View {
-        NavigationView{
         ZStack {
             
             
@@ -186,9 +181,7 @@ struct InfoViewPage2: View {
             
             }
             }
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
-        }
+
        
        
         }
@@ -205,7 +198,6 @@ struct InfoViewPage2: View {
 struct InfoViewPage3: View {
 
     var body: some View {
-        NavigationView{
         ZStack {
             
             
@@ -283,9 +275,7 @@ struct InfoViewPage3: View {
             
             }
             }
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
-        }
+
        
        
         }
@@ -373,8 +363,7 @@ struct InfoViewPage4: View {
                     .frame(height: 75)
         
         }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
+            
         }
    
     
@@ -471,8 +460,7 @@ struct InfoViewPage5: View {
         
         }
         }
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
+
     
    
    
@@ -562,8 +550,7 @@ struct InfoViewPage6: View {
         
         }
         }
-    .navigationBarTitle("")
-    .navigationBarHidden(true)
+
     
    
    

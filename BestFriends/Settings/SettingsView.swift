@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsView: View {
 
     var body: some View {
-        NavigationView {
+//        NavigationView {
         ZStack {
             
             Image("purpleBackground")
@@ -249,7 +249,7 @@ struct SettingsView: View {
         
         .navigationBarTitle("")
         .navigationBarHidden(true)
-}
+//}
 
 }
 
