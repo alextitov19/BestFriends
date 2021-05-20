@@ -52,7 +52,7 @@ struct ChatBubble: View {
                             .foregroundColor(.white)
                             .font(.system(size: 14).weight(.thin))
                         
-                        Spacer().frame(width: 12)
+                        Spacer().frame(width: 5)
                         
                     }
                     
@@ -84,7 +84,7 @@ struct ChatBubble: View {
                                 
                             }
                         }
-                        Spacer().frame(width: 10)
+//                        Spacer().frame(width: 5)
                         
                     }
                 }
@@ -98,9 +98,10 @@ struct ChatBubble: View {
                 
                 VStack {
                     HStack {
+                        Spacer().frame(width: 5)
 
                         Text(message.senderName)
-                            .frame(width: getWidth(text: message.senderName) + 30, alignment: .center)
+                            .frame(width: 200, alignment: .leading)
                             .foregroundColor(.white)
                             .font(.system(size: 14).weight(.thin))
                         
@@ -111,14 +112,14 @@ struct ChatBubble: View {
                     
                     
                     HStack {
-//                        Spacer().frame(width: 20)
+//                        Spacer().frame(width: 5)
 
                         VStack {
                                 
                                                     
                             ZStack{
                                 Rectangle()
-                                    .frame(width: getWidth(text: message.body) + 15, height: getHeight(text: message.body) + 10)
+                                    .frame(width: getWidth(text: message.body) + 10, height: getHeight(text: message.body))
                                     .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.2547570032)))
                                     .cornerRadius(15)
 
