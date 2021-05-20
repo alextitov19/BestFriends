@@ -52,7 +52,7 @@ struct BlueModeNotReadyTalk: View {
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("Upload images of both of yoy from happier days to your 'FRIEND'S' ShakingCool activating good vibes!")
+                            Text("Upload images of you two from happier days to your 'FRIEND'S' ShakingCool activating good vibes!")
                                 .frame(width: 400, height: 100, alignment: .center)
                         })
                     .frame(width: 400, height: 75, alignment: .center)

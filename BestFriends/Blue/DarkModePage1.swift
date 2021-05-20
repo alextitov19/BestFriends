@@ -58,7 +58,7 @@ struct DarkModePage1: View {
                
                     
                     Spacer()
-                        .frame(height: 375)
+                        .frame(height: 335)
                    
                 Text("We'll unlock special features helping you fix this mess.")
                    
