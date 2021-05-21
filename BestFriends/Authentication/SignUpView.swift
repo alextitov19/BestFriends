@@ -564,12 +564,7 @@ struct SignUpPage6: View {
             }
             
             Button(action: {
-                sessionManager.signUp(
-                    username: username,
-                    email: email,
-                    password: password
                 
-                )
                 
                 
                 if didTap1 {
@@ -883,7 +878,7 @@ struct SignUpPage8: View {
                 Spacer()
 
                 
-                NavigationLink(destination: SignUpPage9(), isActive: $isLinkActive) { EmptyView() }
+                NavigationLink(destination: SignUpPage9(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin).environmentObject(sessionManager), isActive: $isLinkActive) { EmptyView() }
                 
                 
             }
@@ -902,8 +897,19 @@ struct SignUpPage8: View {
 
 struct SignUpPage9: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+    
+    var firstName: String
+    var lastName: String
+    var username: String
+    var password: String
+    var email: String
+    var pronouns: String
+    var birthdate: Date
+    var currentPin: String
+    @State var locationString: String = ""
+
     private let locationManager = LocationManager()
-    @State var locationText: String = ""
 
     var body: some View {
         ZStack {
@@ -920,34 +926,37 @@ struct SignUpPage9: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 120, alignment: .center)
 
-                
-                HStack {
-                    Text("Location: \(locationText)")
                     .onAppear(){
                         guard let exposedLocation = self.locationManager.exposedLocation else {
-                                    print("*** Error in \(#function): exposedLocation is nil")
-                                    return
-                                }
+                            print("*** Error in \(#function): exposedLocation is nil")
+                            return
+                        }
                                 
-                                self.locationManager.getPlace(for: exposedLocation) { placemark in
-                                    guard let placemark = placemark else { return }
-                                    
-                                    var output = "Our location is:"
-                                    if let country = placemark.country {
-                                        output = output + "\n\(country)"
-                                    }
-                                    if let state = placemark.administrativeArea {
-                                        output = output + "\n\(state)"
-                                    }
-                                    if let town = placemark.locality {
-                                        output = output + "\n\(town)"
-                                    }
-                                    self.locationText = output
-                                }
+                        self.locationManager.getPlace(for: exposedLocation) { placemark in
+                            guard let placemark = placemark else { return }
+                            
+                            locationString = ""
+                            if let country = placemark.country {
+                                locationString = locationString + ", \(country)"
+                            }
+                            if let state = placemark.administrativeArea {
+                                locationString = locationString + ", \(state)"
+                            }
+                            if let town = placemark.locality {
+                                locationString = locationString + ", \(town)"
+                            }
+                        }
                     }
+                
+                NavigationLink(destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: locationString).environmentObject(sessionManager)) {
+                                    Text("Next")
+                                        .font(.title)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                        .frame(width: 200, height: 50)
+                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                        .cornerRadius(25)
 
-                }
-                    
+                                }
             }
         }
     }
@@ -972,6 +981,8 @@ struct SignUpQuestionPage1: View {
     var email: String
     var pronouns: String
     var birthdate: Date
+    var currentPin: String
+    var location: String
     
     var body: some View {
         ZStack {
@@ -1040,7 +1051,7 @@ struct SignUpQuestionPage1: View {
                     Spacer()
                         .frame(height: 120)
                     
-                    NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
+                    NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
                                         Text("Ok, let's go!")
                                             .font(.title)
                                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -1066,6 +1077,8 @@ struct SignUpQuestionPage2: View {
     var email: String
     var pronouns: String
     var birthdate: Date
+    var currentPin: String
+    var location: String
     
     var body: some View {
         ZStack {
@@ -1109,7 +1122,7 @@ struct SignUpQuestionPage2: View {
                     Spacer()
                         .frame(height: 120)
                     
-                    NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
+                    NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
                        
                         Spacer()
                             .frame(height: 50)
@@ -1163,6 +1176,8 @@ struct SignUpQuestionPage3: View {
     var email: String
     var pronouns: String
     var birthdate: Date
+    var currentPin: String
+    var location: String
     
     var body: some View {
         ZStack {
@@ -1270,10 +1285,12 @@ struct SignUpQuestionPage3: View {
                         lastName: lastName,
                         birthday: Temporal.Date(birthdate),
                         pronouns: pronouns,
-                        location: "San Diego",
+                        location: location,
                         adPreference: adPref,
                         deviceFCMToken: " ",
-                        isOnline: true)
+                        isOnline: true,
+                        secretPin: currentPin)
+                    
                     
                     userMamager.create(user)
                     
@@ -1307,11 +1324,6 @@ struct SignUpQuestionPage3: View {
     }
 }
 
-struct SignUpView_Previews : PreviewProvider {
-    static var previews: some View {
-        SignUpPage9()
-            .environmentObject(SessionManager())
-    }
-}
+
 
 

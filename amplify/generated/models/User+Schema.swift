@@ -39,7 +39,7 @@ extension User {
       .field(user.adPreference, is: .required, ofType: .string),
       .field(user.deviceFCMToken, is: .required, ofType: .string),
       .field(user.isOnline, is: .required, ofType: .bool),
-      .field(user.secretPin, is: .optional, ofType: .string),
+      .field(user.secretPin, is: .required, ofType: .string),
       .field(user.friends, is: .optional, ofType: .embeddedCollection(of: String.self)),
       .field(user.rooms, is: .optional, ofType: .embeddedCollection(of: String.self)),
       .field(user.hiddenRooms, is: .optional, ofType: .embeddedCollection(of: String.self)),
