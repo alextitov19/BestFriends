@@ -937,7 +937,7 @@ struct SignUpPage9: View {
                             
                             locationString = ""
                             if let country = placemark.country {
-                                locationString = locationString + ", \(country)"
+                                locationString = locationString + "\(country)"
                             }
                             if let state = placemark.administrativeArea {
                                 locationString = locationString + ", \(state)"
