@@ -484,7 +484,11 @@ struct SignUpPage6: View {
                 VStack {
                     
                     Button("she / her", action: {
-                        didTap1.toggle()
+                            didTap1 = true
+                            didTap2 = false
+                            didTap3 = false
+                            didTap4 = false
+                            didTap5 = false
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -495,7 +499,11 @@ struct SignUpPage6: View {
                         .frame(height: 30)
                 
                     Button("he / him", action: {
-                        didTap2.toggle()
+                            didTap1 = false
+                            didTap2 = true
+                            didTap3 = false
+                            didTap4 = false
+                            didTap5 = false
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -506,7 +514,11 @@ struct SignUpPage6: View {
                         .frame(height: 30)
                 
                     Button("they / them", action: {
-                        didTap3.toggle()
+                        didTap1 = false
+                        didTap2 = false
+                        didTap3 = true
+                        didTap4 = false
+                        didTap5 = false
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -517,7 +529,11 @@ struct SignUpPage6: View {
                         .frame(height: 30)
                     
                     Button("other", action: {
-                        didTap4.toggle()
+                        didTap1 = false
+                        didTap2 = false
+                        didTap3 = false
+                        didTap4 = true
+                        didTap5 = false
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -528,7 +544,12 @@ struct SignUpPage6: View {
                         .frame(height: 30)
                     
                     Button("prefer not to say", action: {
-                        didTap5.toggle()
+                        didTap1 = false
+                        didTap2 = false
+                        didTap3 = false
+                        didTap4 = false
+                        didTap5 = true
+
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -552,19 +573,19 @@ struct SignUpPage6: View {
                 
                 
                 if didTap1 {
-                    pronouns.append("SHE ")
+                    pronouns = "SHE"
                 }
                 if didTap2 {
-                    pronouns.append("HIM ")
+                    pronouns = "HE"
                 }
                 if didTap3 {
-                    pronouns.append("THEY ")
+                    pronouns = "THEY"
                 }
                 if didTap4 {
-                    pronouns.append("OTHER ")
+                    pronouns = "OTHER"
                 }
                 if didTap5 {
-                    pronouns.append("nSay ")
+                    pronouns = "PNTS"
                 }
              
                 ready = true
