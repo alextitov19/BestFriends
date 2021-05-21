@@ -34,8 +34,6 @@ struct LiquidSwipe: Shape {
             let mid : CGFloat = 80 + ((to - 80) / 2)
             
             path.addCurve(to: CGPoint(x: rect.width, y: to), control1: CGPoint(x: width - 50, y: mid), control2: CGPoint(x: width - 50, y: mid))
-
-
         }
     }
 }
