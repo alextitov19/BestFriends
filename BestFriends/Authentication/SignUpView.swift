@@ -901,93 +901,41 @@ struct SignUpPage8: View {
 
 
 struct SignUpPage9: View {
+    
+    @StateObject var locationManager = LocationManager()
+    
+    var userLatitude: String {
+        return "\(locationManager.lastLocation?.coordinate.latitude ?? 0)"
+    }
+    
+    var userLongitude: String {
+        return "\(locationManager.lastLocation?.coordinate.longitude ?? 0)"
+    }
 
     var body: some View {
-       
-    
-  
         ZStack {
-            
-            
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            
                 
             VStack {
-                    
-                    HStack {
-                        VStack {
-                                                   
-                            Spacer()
-                                .frame(height: 125)
-                                                    
-                            Image("Penguin Sticker 18")
-                                .resizable()
-                                .frame(width: 150, height: 150)
-                                .scaledToFill()
-                                                    
-                                }
-                        VStack {
-                       
-                            ZStack {
-                                
-                                
-                                Image("ChatBubbleTrans")
-                                    .resizable()
-                                    .frame(width: 300, height: 175)
-                                    .scaledToFill()
-                            
-                                Text("Your protected from 'Phone Grabs' & 'Cancel Culture'.")
-                                    .italic()
-                                    .font(.system(size: 20))
-                                    .fontWeight(.ultraLight)
-                                    .foregroundColor(.white)
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            }
-                           
-                        }
-                    }
-                    
-                    Text("Hide your Chat messages from prying eyes. Only you can get them back with your 'secret' PIN.")
-                        .font(.system(size: 25))
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 400, height: 120, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                 
-                
-                Text("You won't see your chat messages splashed all over IG or Snap. BestFriends blocks screen-shots in Chat.")
-                   
-                    .font(.system(size: 25))
+                Text("Where on Earth are you?")
+                    .font(.system(size: 35))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
-            Spacer()
-                .frame(height: 30)
-                
-                NavigationLink(destination: InfoViewPage6()) {
-                                    Text("Next")
-                                        .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 200, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
- 
-                }
-            Spacer()
-                .frame(height: 75)
-        
-        }
-        }
+                    .frame(width: 400, height: 120, alignment: .center)
 
-    
-   
-   
+                
+                Text("location status: \(locationManager.statusString)")
+                HStack {
+                    Text("latitude: \(userLatitude)")
+                    Text("longitude: \(userLongitude)")
+                }
+                    
+            }
+        }
     }
 }
 
@@ -1347,43 +1295,7 @@ struct SignUpQuestionPage3: View {
 
 struct SignUpView_Previews : PreviewProvider {
     static var previews: some View {
-        
-        SignUpPage1()
-           .environmentObject(SessionManager())
-
-      SignUpPage2(firstName: " ")
-        .environmentObject(SessionManager())
-
-        SignUpPage3(firstName: "", lastName: "")
-            .environmentObject(SessionManager())
-
-        SignUpPage4(firstName: "", lastName: "", username: "")
-            .environmentObject(SessionManager())
-
-        SignUpPage5(firstName: "", lastName: "", username: "", password: "")
-            .environmentObject(SessionManager())
-
-        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "")
-            .environmentObject(SessionManager())
-
-        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
-            .environmentObject(SessionManager())
-
-        //SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
-          //  .environmentObject(SessionManager())
-        
-        
-        
-        
-        
-        
-        SignUpQuestionPage1(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
-            .environmentObject(SessionManager())
-        
-        SignUpQuestionPage2(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
-            .environmentObject(SessionManager())
-        
-        SignUpQuestionPage3(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
+        SignUpPage9()
             .environmentObject(SessionManager())
     }
 }
