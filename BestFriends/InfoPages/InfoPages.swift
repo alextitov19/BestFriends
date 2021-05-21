@@ -334,7 +334,7 @@ struct InfoViewPage4: View {
                                         .cornerRadius(25)
                 }
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 95)
         
         }
             
