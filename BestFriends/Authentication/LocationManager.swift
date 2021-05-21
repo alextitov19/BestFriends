@@ -7,47 +7,70 @@
 
 import Foundation
 import CoreLocation
-import Combine
 
-class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 
+class LocationManager: NSObject {
+    
+    
+    // - Private
     private let locationManager = CLLocationManager()
-    @Published var locationStatus: CLAuthorizationStatus?
-    @Published var lastLocation: CLLocation?
-
+    
+    
+    // - API
+    public var exposedLocation: CLLocation? {
+        return self.locationManager.location
+    }
+    
     override init() {
         super.init()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
+        self.locationManager.delegate = self
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.requestWhenInUseAuthorization()
     }
+}
 
-   
+
+// MARK: - Core Location Delegate
+extension LocationManager: CLLocationManagerDelegate {
     
-    var statusString: String {
-        guard let status = locationStatus else {
-            return "unknown"
-        }
-        
+    
+    func locationManager(_ manager: CLLocationManager,
+                         didChangeAuthorization status: CLAuthorizationStatus) {
+
         switch status {
-        case .notDetermined: return "notDetermined"
-        case .authorizedWhenInUse: return "authorizedWhenInUse"
-        case .authorizedAlways: return "authorizedAlways"
-        case .restricted: return "restricted"
-        case .denied: return "denied"
-        default: return "unknown"
+    
+        case .notDetermined         : print("notDetermined")        // location permission not asked for yet
+        case .authorizedWhenInUse   : print("authorizedWhenInUse")  // location authorized
+        case .authorizedAlways      : print("authorizedAlways")     // location authorized
+        case .restricted            : print("restricted")           // TODO: handle
+        case .denied                : print("denied")               // TODO: handle
         }
     }
+}
 
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        locationStatus = status
-        print(#function, statusString)
-    }
+// MARK: - Get Placemark
+extension LocationManager {
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else { return }
-        lastLocation = location
-        print(#function, location)
+    
+    func getPlace(for location: CLLocation,
+                  completion: @escaping (CLPlacemark?) -> Void) {
+        
+        let geocoder = CLGeocoder()
+        geocoder.reverseGeocodeLocation(location) { placemarks, error in
+            
+            guard error == nil else {
+                print("*** Error in \(#function): \(error!.localizedDescription)")
+                completion(nil)
+                return
+            }
+            
+            guard let placemark = placemarks?[0] else {
+                print("*** Error in \(#function): placemark is nil")
+                completion(nil)
+                return
+            }
+            
+            completion(placemark)
+        }
     }
 }

@@ -902,15 +902,8 @@ struct SignUpPage8: View {
 
 struct SignUpPage9: View {
     
-    @StateObject var locationManager = LocationManager()
-    
-    var userLatitude: String {
-        return "\(locationManager.lastLocation?.coordinate.latitude ?? 0)"
-    }
-    
-    var userLongitude: String {
-        return "\(locationManager.lastLocation?.coordinate.longitude ?? 0)"
-    }
+    private let locationManager = LocationManager()
+    @State var locationText: String = ""
 
     var body: some View {
         ZStack {
@@ -928,10 +921,31 @@ struct SignUpPage9: View {
                     .frame(width: 400, height: 120, alignment: .center)
 
                 
-                Text("location status: \(locationManager.statusString)")
                 HStack {
-                    Text("latitude: \(userLatitude)")
-                    Text("longitude: \(userLongitude)")
+                    Text("Location: \(locationText)")
+                    .onAppear(){
+                        guard let exposedLocation = self.locationManager.exposedLocation else {
+                                    print("*** Error in \(#function): exposedLocation is nil")
+                                    return
+                                }
+                                
+                                self.locationManager.getPlace(for: exposedLocation) { placemark in
+                                    guard let placemark = placemark else { return }
+                                    
+                                    var output = "Our location is:"
+                                    if let country = placemark.country {
+                                        output = output + "\n\(country)"
+                                    }
+                                    if let state = placemark.administrativeArea {
+                                        output = output + "\n\(state)"
+                                    }
+                                    if let town = placemark.locality {
+                                        output = output + "\n\(town)"
+                                    }
+                                    self.locationText = output
+                                }
+                    }
+
                 }
                     
             }
