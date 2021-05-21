@@ -28,8 +28,6 @@ struct DarkModeView: View {
           //          .scaledToFill()
           //
                 
-                Spacer().frame(height: 25)
-                
                 Text("BlueMode")
                     .font(.system(size: 50))
                     .fontWeight(.ultraLight)
@@ -43,7 +41,7 @@ struct DarkModeView: View {
                 
                 Text("Helping pull the two of you from this wreckage before your hearts become forever dented!")
                     .frame(width: 400, height: 150, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.3333333433, green: 0.3333333433, blue: 0.3333333433, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.title)
             
                    // try below
@@ -70,7 +68,7 @@ struct DarkModeView: View {
                         .frame(height: 30)
                     
                    
-                    Link("If, you should Apologize", destination: URL(string: "https://socialtechlabs.com/you-owe-apology/")!)
+                    Link("Should you Apologize", destination: URL(string: "https://socialtechlabs.com/you-owe-apology/")!)
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
@@ -109,7 +107,7 @@ struct DarkModeView: View {
                         
                         
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 20)
                         
                     
 

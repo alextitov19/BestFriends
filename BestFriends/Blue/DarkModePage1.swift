@@ -23,7 +23,7 @@ struct DarkModePage1: View {
         ZStack {
             
             
-            Image("blue8C")
+            Image("AriC2")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -32,14 +32,7 @@ struct DarkModePage1: View {
             VStack {
                     
                     HStack {
-                        VStack {
-                                                   
-                            Spacer()
-                                .frame(height: 0)
-                                                    
-                          
-                                                    
-                                }
+                       
                         VStack {
                        
                             ZStack {
@@ -50,11 +43,11 @@ struct DarkModePage1: View {
                                     .frame(width: 500, height: 185)
                                     .scaledToFill()
                             
-                                Text("Just had a huge fight with your best friend or significant other.")
+                                Text("Just had a huge fight with your best friend or significant other?")
                                     .italic()
                                     .font(.system(size: 25))
                                     .fontWeight(.regular)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)))
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .multilineTextAlignment(.center)
                                     .frame(width: 250, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
@@ -65,7 +58,7 @@ struct DarkModePage1: View {
                
                     
                     Spacer()
-                        .frame(height: 350)
+                        .frame(height: 335)
                    
                 Text("We'll unlock special features helping you fix this mess.")
                    
@@ -73,22 +66,25 @@ struct DarkModePage1: View {
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                 
-                Spacer()
-                    .frame(height: 50)
+               Spacer()
+                    .frame(height: 3)
+               
+                
+                
                 NavigationLink(destination: BlueModeLP()) {
-                                    Text("Damn, this hurts!")
+                                    Text("Good because this, SUCKS!")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                                        .frame(width: 350, height: 50)
+                                        .frame(width: 400, height: 50)
                                         .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .cornerRadius(25)
                 }
             Spacer()
-                .frame(height: 75)
+                .frame(height: 100)
         
         }
         }
