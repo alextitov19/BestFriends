@@ -65,7 +65,7 @@ struct BlueModeNotReadyTalk: View {
                         .frame(height: 30)
                    
                     NavigationLink(
-                        destination: SmileNotesLibrary(),
+                        destination: SmileNotesView(),
                         label: {
                             Text("View all the SmileNotes from your friend - rembering nice things that your were told.")
                                 .frame(width: 400, height: 100, alignment: .center)

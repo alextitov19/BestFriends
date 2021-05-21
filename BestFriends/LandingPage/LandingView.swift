@@ -144,7 +144,15 @@ struct LandingView: View {
                                 .scaledToFill()
                            }
                         
-                        
+                        Spacer()
+//
+                        NavigationLink(destination: SmileNotesView()) {
+                               Image("whiteSmiley")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                           }
+
                         Spacer()
 //                        
                         NavigationLink(destination: SettingsView()) {
