@@ -39,23 +39,43 @@ struct BlueMessageRoomView: View {
             
             VStack {
                 HStack { //header
-                    Spacer()
+                    
+                    Button(action: {
+                        showingPin = true
+                        var rooms = user.hiddenRooms ?? []
+                        if rooms.contains(room.id) == false {
+                            rooms.append(room.id)
+                        }
+                        var updatedUser = user
+                        updatedUser.hiddenRooms = rooms
+                        UserDataSource().updateUser(user: updatedUser)
+                    }) {
+                        Image("whiteLock")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFit()
+                    }
+                    .padding()
 
-                    Button(action: {
-                        
-                    }) {
-                        Text("< Back")
-                    }
-                    
                     Spacer()
                     
                     Button(action: {
-                        
+                        showingPin = true
+                        var rooms = user.hiddenRooms ?? []
+                        if rooms.contains(room.id) == false {
+                            rooms.append(room.id)
+                        }
+                        var updatedUser = user
+                        updatedUser.hiddenRooms = rooms
+                        UserDataSource().updateUser(user: updatedUser)
                     }) {
-                        Text(room.name)
-                            .font(.system(size: 30).bold())
-                            .foregroundColor(.white)
+                        Image("whiteLock")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFit()
                     }
+                    .padding()
+
                     
                     Spacer()
                     
@@ -74,9 +94,51 @@ struct BlueMessageRoomView: View {
                             .frame(width: 40, height: 40)
                             .scaledToFit()
                     }
+                    .padding()
+
                     
                     Spacer()
+                    
+                    Button(action: {
+                        showingPin = true
+                        var rooms = user.hiddenRooms ?? []
+                        if rooms.contains(room.id) == false {
+                            rooms.append(room.id)
+                        }
+                        var updatedUser = user
+                        updatedUser.hiddenRooms = rooms
+                        UserDataSource().updateUser(user: updatedUser)
+                    }) {
+                        Image("whiteLock")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFit()
+                    }
+                    .padding()
+
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        showingPin = true
+                        var rooms = user.hiddenRooms ?? []
+                        if rooms.contains(room.id) == false {
+                            rooms.append(room.id)
+                        }
+                        var updatedUser = user
+                        updatedUser.hiddenRooms = rooms
+                        UserDataSource().updateUser(user: updatedUser)
+                    }) {
+                        Image("whiteLock")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFit()
+                    }
+                    .padding()
+
+                    
                 }
+                .padding()
                 
                 ScrollView { //messages
                     LazyVStack {
