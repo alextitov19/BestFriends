@@ -88,7 +88,6 @@
 		7A6DC5B02656D15B00492603 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6DC5A72656D15A00492603 /* Message+Schema.swift */; };
 		7A6DC5B12656D15B00492603 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6DC5A82656D15A00492603 /* User.swift */; };
 		7A6DC5B22656D15B00492603 /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6DC5A92656D15A00492603 /* ReportedMessage+Schema.swift */; };
-		7A6DC5B52656E25B00492603 /* wind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6DC5B42656E25B00492603 /* wind.mp3 */; };
 		7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */; };
 		7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD002625292A00E6FA9E /* SignUpView.swift */; };
 		7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD022625292B00E6FA9E /* Assets.xcassets */; };
@@ -237,7 +236,6 @@
 		7A6DC5A72656D15A00492603 /* Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+Schema.swift"; sourceTree = "<group>"; };
 		7A6DC5A82656D15A00492603 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A6DC5A92656D15A00492603 /* ReportedMessage+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReportedMessage+Schema.swift"; sourceTree = "<group>"; };
-		7A6DC5B42656E25B00492603 /* wind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wind.mp3; sourceTree = "<group>"; };
 		7A71BCFB2625292A00E6FA9E /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsApp.swift; sourceTree = "<group>"; };
 		7A71BD002625292A00E6FA9E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -367,7 +365,6 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
-				7A6DC5B42656E25B00492603 /* wind.mp3 */,
 				D1E3CFE92656D2C900A26779 /* InfoPages */,
 				D1E3CFDD26522ECB00A26779 /* Blue */,
 				D1577799264D082800B6551A /* SmileNotes */,
@@ -645,7 +642,6 @@
 				AB791B981F62744749FC786D /* awsconfiguration.json in Resources */,
 				0B8A5735A1E658DE4FC62119 /* amplifyconfiguration.json in Resources */,
 				F4D242A7842387FEB78858DA /* awsconfiguration.json in Resources */,
-				7A6DC5B52656E25B00492603 /* wind.mp3 in Resources */,
 				DB15C6B4674E946ADCCFE253 /* amplifyconfiguration.json in Resources */,
 				7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */,
 				C40B21779B4A21AEE4E5C9BB /* awsconfiguration.json in Resources */,

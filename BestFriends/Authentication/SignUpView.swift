@@ -572,8 +572,8 @@ struct SignUpPage6: View {
                     Text("Next")
                     .font(.title)
                     }
-                .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4) ? 50 : 0))
-                .disabled(!(didTap1 || didTap2 || didTap3 || didTap4))
+                .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4 || didTap5) ? 50 : 0))
+                .disabled(!(didTap1 || didTap2 || didTap3 || didTap4 || didTap5))
                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                 .cornerRadius(25)
@@ -627,7 +627,7 @@ struct SignUpPage7: View {
                 Spacer()
                     .frame(height: 250)
                 
-                NavigationLink(destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
+                NavigationLink(destination: SignUpPage8(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -646,8 +646,9 @@ struct SignUpPage7: View {
 struct SignUpPage8: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-    @State private var birthDate: Date = Date()
-    
+    @State var currentPin: String = ""
+    @State var isLinkActive = false
+
     var firstName: String
     var lastName: String
     var username: String
@@ -664,50 +665,189 @@ struct SignUpPage8: View {
                 .scaledToFill()
            
             VStack {
-                Text("Enter PIN")
+                
+                Text("Hide your Chat messages from prying eyes. Only you can get them back with your 'secret' PIN.")
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 400, height: 120, alignment: .center)
+                
+                Spacer()
+                
+                Text("Enter 4-digit PIN")
                     .font(.title)
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 
-                HStack {
-                    Button(action: {
-                        currentPin.append("7")
-                        numberEntered()
-                    }) {
-                        Text("7")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 85)
-                                    .stroke(Color.white, lineWidth: 2)
-                            )
+                Spacer()
+
+                
+                //From here down, only buttons
+                VStack {
+                    HStack {
+                        Button(action: {
+                            currentPin.append("7")
+                            numberEntered()
+                        }) {
+                            Text("7")
+                               .frame(width: 100, height: 100)
+                               .foregroundColor(Color.white)
+                               .background(Color.clear)
+                               .clipShape(Circle())
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 85)
+                                        .stroke(Color.white, lineWidth: 2)
+                                )
+                        }
+                        
+                        Spacer().frame(width: 20)
+                        
+                        Button(action: {
+                            currentPin.append("8")
+                            numberEntered()
+                        }) {
+                            Text("8")
+                               .frame(width: 100, height: 100)
+                               .foregroundColor(Color.white)
+                               .background(Color.clear)
+                               .clipShape(Circle())
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 85)
+                                        .stroke(Color.white, lineWidth: 2)
+                                )
+                        }
+                        
+                        Spacer().frame(width: 20)
+                        
+                        Button(action: {
+                            currentPin.append("9")
+                            numberEntered()
+                        }) {
+                            Text("9")
+                               .frame(width: 100, height: 100)
+                               .foregroundColor(Color.white)
+                               .background(Color.clear)
+                               .clipShape(Circle())
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 85)
+                                        .stroke(Color.white, lineWidth: 2)
+                                )
+                        }
                     }
                     
-                    Spacer().frame(width: 20)
+                    Spacer().frame(height: 20)
                     
-                    Button(action: {
-                        currentPin.append("8")
-                        numberEntered()
-                    }) {
-                        Text("8")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 85)
-                                    .stroke(Color.white, lineWidth: 2)
-                            )
+                    HStack {
+                        Button(action: {
+                            currentPin.append("4")
+                            numberEntered()
+                        }) {
+                            Text("4")
+                               .frame(width: 100, height: 100)
+                               .foregroundColor(Color.white)
+                               .background(Color.clear)
+                               .clipShape(Circle())
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 85)
+                                        .stroke(Color.white, lineWidth: 2)
+                                )
+                        }
+                        
+                        Spacer().frame(width: 20)
+                        
+                        Button(action: {
+                            currentPin.append("5")
+                            numberEntered()
+                        }) {
+                            Text("5")
+                               .frame(width: 100, height: 100)
+                               .foregroundColor(Color.white)
+                               .background(Color.clear)
+                               .clipShape(Circle())
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 85)
+                                        .stroke(Color.white, lineWidth: 2)
+                                )
+                        }
+                        
+                        Spacer().frame(width: 20)
+                        
+                        Button(action: {
+                            currentPin.append("6")
+                            numberEntered()
+                        }) {
+                            Text("6")
+                               .frame(width: 100, height: 100)
+                               .foregroundColor(Color.white)
+                               .background(Color.clear)
+                               .clipShape(Circle())
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 85)
+                                        .stroke(Color.white, lineWidth: 2)
+                                )
+                        }
                     }
                     
-                    Spacer().frame(width: 20)
+                    Spacer().frame(height: 20)
+                    
+                    HStack {
+                        Button(action: {
+                            currentPin.append("1")
+                            numberEntered()
+                        }) {
+                            Text("1")
+                               .frame(width: 100, height: 100)
+                               .foregroundColor(Color.white)
+                               .background(Color.clear)
+                               .clipShape(Circle())
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 85)
+                                        .stroke(Color.white, lineWidth: 2)
+                                )
+                        }
+                        
+                        Spacer().frame(width: 20)
+                        
+                        Button(action: {
+                            currentPin.append("2")
+                            numberEntered()
+                        }) {
+                            Text("2")
+                               .frame(width: 100, height: 100)
+                               .foregroundColor(Color.white)
+                               .background(Color.clear)
+                               .clipShape(Circle())
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 85)
+                                        .stroke(Color.white, lineWidth: 2)
+                                )
+                        }
+                        
+                        Spacer().frame(width: 20)
+                        
+                        Button(action: {
+                            currentPin.append("3")
+                            numberEntered()
+                        }) {
+                            Text("3")
+                               .frame(width: 100, height: 100)
+                               .foregroundColor(Color.white)
+                               .background(Color.clear)
+                               .clipShape(Circle())
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 85)
+                                        .stroke(Color.white, lineWidth: 2)
+                                )
+                        }
+                    }
+                    
+                    Spacer().frame(height: 20)
                     
                     Button(action: {
-                        currentPin.append("9")
+                        currentPin.append("0")
                         numberEntered()
                     }) {
-                        Text("9")
+                        Text("0")
                            .frame(width: 100, height: 100)
                            .foregroundColor(Color.white)
                            .background(Color.clear)
@@ -718,150 +858,20 @@ struct SignUpPage8: View {
                             )
                     }
                 }
-                
-                Spacer().frame(height: 20)
-                
-                HStack {
-                    Button(action: {
-                        currentPin.append("4")
-                        numberEntered()
-                    }) {
-                        Text("4")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 85)
-                                    .stroke(Color.white, lineWidth: 2)
-                            )
-                    }
-                    
-                    Spacer().frame(width: 20)
-                    
-                    Button(action: {
-                        currentPin.append("5")
-                        numberEntered()
-                    }) {
-                        Text("5")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 85)
-                                    .stroke(Color.white, lineWidth: 2)
-                            )
-                    }
-                    
-                    Spacer().frame(width: 20)
-                    
-                    Button(action: {
-                        currentPin.append("6")
-                        numberEntered()
-                    }) {
-                        Text("6")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 85)
-                                    .stroke(Color.white, lineWidth: 2)
-                            )
-                    }
-                }
-                
-                Spacer().frame(height: 20)
-                
-                HStack {
-                    Button(action: {
-                        currentPin.append("1")
-                        numberEntered()
-                    }) {
-                        Text("1")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 85)
-                                    .stroke(Color.white, lineWidth: 2)
-                            )
-                    }
-                    
-                    Spacer().frame(width: 20)
-                    
-                    Button(action: {
-                        currentPin.append("2")
-                        numberEntered()
-                    }) {
-                        Text("2")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 85)
-                                    .stroke(Color.white, lineWidth: 2)
-                            )
-                    }
-                    
-                    Spacer().frame(width: 20)
-                    
-                    Button(action: {
-                        currentPin.append("3")
-                        numberEntered()
-                    }) {
-                        Text("3")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 85)
-                                    .stroke(Color.white, lineWidth: 2)
-                            )
-                    }
-                }
-                
-                Spacer().frame(height: 20)
-                
-                Button(action: {
-                    currentPin.append("0")
-                    numberEntered()
-                }) {
-                    Text("0")
-                       .frame(width: 100, height: 100)
-                       .foregroundColor(Color.white)
-                       .background(Color.clear)
-                       .clipShape(Circle())
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 85)
-                                .stroke(Color.white, lineWidth: 2)
-                        )
-                }
-                
-                
-                
-                
-                
-                
                 
                 Spacer()
-                    .frame(height: 250)
-                
-                NavigationLink(destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate, PIN: PIN).environmentObject(sessionManager)) {
-                                    Text("Next")
-                                        .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 200, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
 
-                                }
+                
+                NavigationLink(destination: SignUpPage9(), isActive: $isLinkActive) { EmptyView() }
+                
                 
             }
+        }
+    }
+    
+    private func numberEntered() {
+        if currentPin.count == 4 {
+            isLinkActive = true
         }
     }
 }
