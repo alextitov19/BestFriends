@@ -165,6 +165,7 @@
 		C40B21779B4A21AEE4E5C9BB /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */; };
 		C454F27B552AE618EFF45F48 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
 		C6A858535E070565DF118AAB /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
+		CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2226584E1800B69506 /* BlueTransitionPage.swift */; };
 		D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1577796264CBBAD00B6551A /* ChangeEmail.swift */; };
 		D157779B264D086000B6551A /* SmileNotesLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779A264D086000B6551A /* SmileNotesLibrary.swift */; };
 		D157779F264D8EA400B6551A /* ChangeChatBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779E264D8EA400B6551A /* ChangeChatBackground.swift */; };
@@ -274,6 +275,7 @@
 		A22146DA7D2C4FF68985049A /* Room.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Room.swift; path = amplify/generated/models/Room.swift; sourceTree = "<group>"; };
 		C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		CF436A2226584E1800B69506 /* BlueTransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage.swift; sourceTree = "<group>"; };
 		D1577796264CBBAD00B6551A /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
 		D157779A264D086000B6551A /* SmileNotesLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesLibrary.swift; sourceTree = "<group>"; };
 		D157779E264D8EA400B6551A /* ChangeChatBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatBackground.swift; sourceTree = "<group>"; };
@@ -549,6 +551,7 @@
 				D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */,
 				D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */,
 				D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */,
+				CF436A2226584E1800B69506 /* BlueTransitionPage.swift */,
 				D15CCD792648870500BFE179 /* PrizesDark.swift */,
 				7A9A733E265744A900177652 /* BlueMessageRoomView.swift */,
 			);
@@ -886,6 +889,7 @@
 				A8DF522C45B5D1E27ECFA53B /* User.swift in Sources */,
 				43FBF4B6AEB15D3660E44192 /* Message.swift in Sources */,
 				878B397ACE5C6EB7A0702603 /* ReportedMessage+Schema.swift in Sources */,
+				CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */,
 				4A0EE14A55E35F38E0951451 /* Room+Schema.swift in Sources */,
 				3C3FB2395155D9C097328686 /* User+Schema.swift in Sources */,
 				D700102D6749C68650A383E9 /* User.swift in Sources */,
