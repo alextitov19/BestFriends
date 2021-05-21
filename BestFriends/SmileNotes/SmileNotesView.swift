@@ -58,15 +58,19 @@ struct SmileNotesView: View {
                 .padding()
             
             if showHome {
-                Text("Welcome to Home!")
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .onTapGesture {
-                        withAnimation(.spring()) {
-                            offset = .zero
-                            showHome.toggle()
+                ZStack {
+                    Color(.red)
+                    
+                    Text("Welcome to Home!")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .onTapGesture {
+                            withAnimation(.spring()) {
+                                offset = .zero
+                                showHome.toggle()
+                            }
                         }
-                    }
+                }
             }
             
             
