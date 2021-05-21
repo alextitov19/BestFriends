@@ -30,35 +30,26 @@ struct DarkModePage1: View {
             
                 
             VStack {
+                       
+                    ZStack {
+                        Image("ChatBubbleTrans")
+                            .resizable()
+                            .frame(width: 400, height: 185)
+                            .scaledToFill()
                     
-                    HStack {
-                       
-                        VStack {
-                       
-                            ZStack {
-                                
-                                
-                                Image("ChatBubbleTrans")
-                                    .resizable()
-                                    .frame(width: 500, height: 185)
-                                    .scaledToFill()
-                            
-                                Text("Just had a huge fight with your best friend or significant other?")
-                                    .italic()
-                                    .font(.system(size: 25))
-                                    .fontWeight(.regular)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 250, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            }
-                           
-                        }
+                        Text("Just had a huge fight with your best friend or significant other?")
+                            .italic()
+                            .font(.system(size: 25))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 275, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     }
+    
                     
                
                     
                     Spacer()
-                        .frame(height: 335)
                    
                 Text("We'll unlock special features helping you fix this mess.")
                    
@@ -82,17 +73,23 @@ struct DarkModePage1: View {
                                         .frame(width: 400, height: 50)
                                         .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .cornerRadius(25)
-                }
-            Spacer()
-                .frame(height: 100)
-        
+                    }
+                
+                Spacer()
+                    .frame(height: 160)
+            
+                    }
+            }
         }
-        }
-//    .navigationBarTitle("")
-//    .navigationBarHidden(true)
-    
-   
-   
     }
 }
+
+
+struct DarkModePage1_Previews : PreviewProvider {
+    static var previews: some View {
+   
+        DarkModePage1()
+
+        
+    }
 }
