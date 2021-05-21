@@ -561,15 +561,11 @@ struct InfoViewPage6: View {
 
 // ************************************************
 
-struct InfoViewPage1_Previews : PreviewProvider {
+struct InfoViewPags_Previews : PreviewProvider {
     static var previews: some View {
    
         InfoViewPage1()
-        InfoViewPage2()
-        InfoViewPage3()
-        InfoViewPage4()
-        InfoViewPage5()
-        InfoViewPage6()
+
         
     }
 }
