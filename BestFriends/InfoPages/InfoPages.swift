@@ -561,7 +561,7 @@ struct InfoViewPage7: View {
                     
                     
                     Spacer()
-                        .frame(height: 7)
+                        .frame(height: 0)
                 
                     
                 HStack {
@@ -583,7 +583,7 @@ struct InfoViewPage7: View {
                         ZStack {
                             Image("ChatBubbleTrans")
                                 .resizable()
-                                .frame(width: 350, height: 200)
+                                .frame(width: 300, height: 150)
                                 .scaledToFill()
                         
                             
@@ -611,7 +611,7 @@ struct InfoViewPage7: View {
                 }
  
                 Spacer()
-                    .frame(height: 300)
+                    .frame(height: 250)
                    
                    
                 NavigationLink(destination: SettingsView()) {
@@ -623,7 +623,7 @@ struct InfoViewPage7: View {
                                         .cornerRadius(25)
                 }
             Spacer()
-                .frame(height: 100)
+                .frame(height: 150)
         
         }
         }
