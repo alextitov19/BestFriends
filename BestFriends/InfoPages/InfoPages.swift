@@ -512,6 +512,130 @@ struct InfoViewPage6: View {
 }
 
 
+
+
+// ************************************************
+struct InfoViewPage7: View {
+
+    var body: some View {
+
+        ZStack {
+            Image("Transition2")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+                
+            VStack {
+                
+                VStack {
+                    
+                   
+                    HStack {
+                        Spacer()
+                            
+                        
+                        VStack {
+                        Text("Welcome to")
+                        .italic() .italic()
+                        .font(.system(size: 25))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 275, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                
+                    Text("BestFriends")
+                        
+                        .font(.system(size: 45))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 275, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        }
+                        
+                        Spacer()
+                            .frame(width: 50)
+                        
+                    }
+                    
+                    
+                    
+                    Spacer()
+                        .frame(height: 7)
+                
+                    
+                HStack {
+                    VStack {
+                        Spacer()
+                            .frame(height: 125)
+                                                
+                        Image("Penguin Sticker 32")
+                            .resizable()
+                            .frame(width: 150, height: 150)
+                            .scaledToFill()
+                                                
+                    }
+                    
+                  
+                        
+                        
+                        
+                        ZStack {
+                            Image("ChatBubbleTrans")
+                                .resizable()
+                                .frame(width: 350, height: 200)
+                                .scaledToFill()
+                        
+                            
+                            VStack {
+                                Text("The 'Positivity' app.")
+                                    .italic() .italic()
+                                    .font(.system(size: 35))
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 275, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                
+                            
+                                Spacer()
+                                    .frame(height: 7)
+                            
+                            }
+                            
+                            
+                        }
+                        
+                        Spacer()
+                            .frame(height: 75)
+                    }
+                }
+ 
+                Spacer()
+                    .frame(height: 300)
+                   
+                   
+                NavigationLink(destination: SettingsView()) {
+                                    Text("Take me to Homepage")
+                                        .font(.title)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                        .frame(width: 325, height: 50)
+                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                        .cornerRadius(25)
+                }
+            Spacer()
+                .frame(height: 100)
+        
+        }
+        }
+
+    
+   
+   
+    }
+}
+
+
+
 // ************************************************
 
 struct InfoViewPags_Previews : PreviewProvider {
@@ -522,6 +646,9 @@ struct InfoViewPags_Previews : PreviewProvider {
         InfoViewPage4()
         InfoViewPage5()
         InfoViewPage6()
+        InfoViewPage7()
     }
 }
+
+
 
