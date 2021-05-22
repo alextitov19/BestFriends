@@ -650,7 +650,7 @@ struct SignUpPage7: View {
                     .padding()
                 
                 Spacer()
-                    .frame(height: 250)
+                    .frame(height: 175)
                 
                 NavigationLink(destination: SignUpPage8(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
                                     Text("Next")
