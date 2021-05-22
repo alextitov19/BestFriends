@@ -20,11 +20,7 @@ struct SettingsView: View {
             
             ScrollView {
             VStack {
-                
-              
 
-                
-                
                 Text("Settings")
                     .font(.system(size: 50))
                     .fontWeight(.ultraLight)
