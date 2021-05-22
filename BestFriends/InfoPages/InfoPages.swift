@@ -615,7 +615,7 @@ struct InfoViewPage7: View {
                    
                    
                 NavigationLink(destination: SettingsView()) {
-                                    Text("Take me to Homepage")
+                                    Text("Take me to Settings")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 325, height: 50)

@@ -12,7 +12,7 @@ struct BlueModePage1: View {
 
     var body: some View {
 
-        NavigationView{
+       // NavigationView{
         
         ZStack {
             Image("Transition3")
@@ -138,7 +138,7 @@ struct BlueModePaqe1_Previews : PreviewProvider {
         BlueModePage1()
     }
 }
-}
+
 
 
 
@@ -393,7 +393,7 @@ struct BlueModePage4: View {
                         
                     
 
-                        NavigationLink(destination: BlueModePage4()) {
+                        NavigationLink(destination: BlueModePage5()) {
                                             Text("Not ready to talk just yet?")
                                                 .font(.system(size: 30))
                                                 .fontWeight(.ultraLight)
@@ -618,7 +618,7 @@ struct BlueModePage6: View {
                
                 
                 
-                NavigationLink(destination: BlueModeLP()) {
+                NavigationLink(destination: SettingsView()) {
                                     Text("Ok, take me to Chat")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
