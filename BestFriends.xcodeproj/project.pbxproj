@@ -452,9 +452,9 @@
 		7AB62A8326426F7A005A7744 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				D15777B22650522200B6551A /* Gestures */,
 				7AB62A8426426F86005A7744 /* SettingsView.swift */,
 				D15777A2264DB7FD00B6551A /* BetaTesters.swift */,
+				D15777B22650522200B6551A /* Gestures */,
 				D157779D264D8E6D00B6551A /* ChangeBackground */,
 				D15CCD6526473E6700BFE179 /* MyAccount */,
 				D15CCD6D2647A10100BFE179 /* ManageMyFriends */,
