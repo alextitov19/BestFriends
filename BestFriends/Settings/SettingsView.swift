@@ -20,6 +20,16 @@ struct SettingsView: View {
             
             ScrollView {
             VStack {
+                
+                NavigationLink(destination: BlueModePage1()) {
+                       Image("whiteSmiley")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                   }
+
+                
+                
                 Text("Settings")
                     .font(.system(size: 50))
                     .fontWeight(.ultraLight)
@@ -30,8 +40,6 @@ struct SettingsView: View {
                 Spacer().frame(height: 20)
                
                
-               
-                
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
@@ -43,6 +51,24 @@ struct SettingsView: View {
                             RoundedRectangle(cornerRadius: 25)
                                 .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
                                 )
+                
+                
+                Spacer().frame(height: 20)
+               
+               
+                    NavigationLink(
+                        destination: BlueModePage1(),
+                        label: {
+                            Text("BlueMode Walk-through")
+                        })
+                        .frame(width: 325, height: 50)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                )
+                
+                
                 
                 
                 Spacer()

@@ -484,7 +484,11 @@ struct SignUpPage6: View {
                 VStack {
                     
                     Button("she / her", action: {
-                        didTap1.toggle()
+                            didTap1 = true
+                            didTap2 = false
+                            didTap3 = false
+                            didTap4 = false
+                            didTap5 = false
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -495,7 +499,11 @@ struct SignUpPage6: View {
                         .frame(height: 30)
                 
                     Button("he / him", action: {
-                        didTap2.toggle()
+                            didTap1 = false
+                            didTap2 = true
+                            didTap3 = false
+                            didTap4 = false
+                            didTap5 = false
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -506,7 +514,11 @@ struct SignUpPage6: View {
                         .frame(height: 30)
                 
                     Button("they / them", action: {
-                        didTap3.toggle()
+                        didTap1 = false
+                        didTap2 = false
+                        didTap3 = true
+                        didTap4 = false
+                        didTap5 = false
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -517,7 +529,11 @@ struct SignUpPage6: View {
                         .frame(height: 30)
                     
                     Button("other", action: {
-                        didTap4.toggle()
+                        didTap1 = false
+                        didTap2 = false
+                        didTap3 = false
+                        didTap4 = true
+                        didTap5 = false
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -528,7 +544,12 @@ struct SignUpPage6: View {
                         .frame(height: 30)
                     
                     Button("prefer not to say", action: {
-                        didTap5.toggle()
+                        didTap1 = false
+                        didTap2 = false
+                        didTap3 = false
+                        didTap4 = false
+                        didTap5 = true
+
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -543,28 +564,23 @@ struct SignUpPage6: View {
             }
             
             Button(action: {
-                sessionManager.signUp(
-                    username: username,
-                    email: email,
-                    password: password
                 
-                )
                 
                 
                 if didTap1 {
-                    pronouns.append("SHE ")
+                    pronouns = "SHE"
                 }
                 if didTap2 {
-                    pronouns.append("HIM ")
+                    pronouns = "HE"
                 }
                 if didTap3 {
-                    pronouns.append("THEY ")
+                    pronouns = "THEY"
                 }
                 if didTap4 {
-                    pronouns.append("OTHER ")
+                    pronouns = "OTHER"
                 }
                 if didTap5 {
-                    pronouns.append("nSay ")
+                    pronouns = "PNTS"
                 }
              
                 ready = true
@@ -862,7 +878,7 @@ struct SignUpPage8: View {
                 Spacer()
 
                 
-                NavigationLink(destination: SignUpPage9(), isActive: $isLinkActive) { EmptyView() }
+                NavigationLink(destination: SignUpPage9(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin).environmentObject(sessionManager), isActive: $isLinkActive) { EmptyView() }
                 
                 
             }
@@ -880,93 +896,69 @@ struct SignUpPage8: View {
 
 
 struct SignUpPage9: View {
+    
+    @EnvironmentObject var sessionManager: SessionManager
+    
+    var firstName: String
+    var lastName: String
+    var username: String
+    var password: String
+    var email: String
+    var pronouns: String
+    var birthdate: Date
+    var currentPin: String
+    @State var locationString: String = ""
+
+    private let locationManager = LocationManager()
 
     var body: some View {
-       
-    
-  
         ZStack {
-            
-            
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            
                 
             VStack {
-                    
-                    HStack {
-                        VStack {
-                                                   
-                            Spacer()
-                                .frame(height: 125)
-                                                    
-                            Image("Penguin Sticker 18")
-                                .resizable()
-                                .frame(width: 150, height: 150)
-                                .scaledToFill()
-                                                    
-                                }
-                        VStack {
-                       
-                            ZStack {
-                                
-                                
-                                Image("ChatBubbleTrans")
-                                    .resizable()
-                                    .frame(width: 300, height: 175)
-                                    .scaledToFill()
-                            
-                                Text("Your protected from 'Phone Grabs' & 'Cancel Culture'.")
-                                    .italic()
-                                    .font(.system(size: 20))
-                                    .fontWeight(.ultraLight)
-                                    .foregroundColor(.white)
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            }
-                           
-                        }
-                    }
-                    
-                    Text("Hide your Chat messages from prying eyes. Only you can get them back with your 'secret' PIN.")
-                        .font(.system(size: 25))
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 400, height: 120, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                 
-                
-                Text("You won't see your chat messages splashed all over IG or Snap. BestFriends blocks screen-shots in Chat.")
-                   
-                    .font(.system(size: 25))
+                Text("Where on Earth are you?")
+                    .font(.system(size: 35))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
-            Spacer()
-                .frame(height: 30)
+                    .frame(width: 400, height: 120, alignment: .center)
+
+                    .onAppear(){
+                        guard let exposedLocation = self.locationManager.exposedLocation else {
+                            print("*** Error in \(#function): exposedLocation is nil")
+                            return
+                        }
+                                
+                        self.locationManager.getPlace(for: exposedLocation) { placemark in
+                            guard let placemark = placemark else { return }
+                            
+                            locationString = ""
+                            if let country = placemark.country {
+                                locationString = locationString + "\(country)"
+                            }
+                            if let state = placemark.administrativeArea {
+                                locationString = locationString + ", \(state)"
+                            }
+                            if let town = placemark.locality {
+                                locationString = locationString + ", \(town)"
+                            }
+                        }
+                    }
                 
-                NavigationLink(destination: InfoViewPage6()) {
+                NavigationLink(destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: locationString).environmentObject(sessionManager)) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                         .frame(width: 200, height: 50)
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
- 
-                }
-            Spacer()
-                .frame(height: 75)
-        
-        }
-        }
 
-    
-   
-   
+                                }
+            }
+        }
     }
 }
 
@@ -989,6 +981,8 @@ struct SignUpQuestionPage1: View {
     var email: String
     var pronouns: String
     var birthdate: Date
+    var currentPin: String
+    var location: String
     
     var body: some View {
         ZStack {
@@ -1057,7 +1051,7 @@ struct SignUpQuestionPage1: View {
                     Spacer()
                         .frame(height: 120)
                     
-                    NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
+                    NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
                                         Text("Ok, let's go!")
                                             .font(.title)
                                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -1083,6 +1077,8 @@ struct SignUpQuestionPage2: View {
     var email: String
     var pronouns: String
     var birthdate: Date
+    var currentPin: String
+    var location: String
     
     var body: some View {
         ZStack {
@@ -1126,7 +1122,7 @@ struct SignUpQuestionPage2: View {
                     Spacer()
                         .frame(height: 120)
                     
-                    NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate).environmentObject(sessionManager)) {
+                    NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
                        
                         Spacer()
                             .frame(height: 50)
@@ -1180,6 +1176,8 @@ struct SignUpQuestionPage3: View {
     var email: String
     var pronouns: String
     var birthdate: Date
+    var currentPin: String
+    var location: String
     
     var body: some View {
         ZStack {
@@ -1287,10 +1285,12 @@ struct SignUpQuestionPage3: View {
                         lastName: lastName,
                         birthday: Temporal.Date(birthdate),
                         pronouns: pronouns,
-                        location: "San Diego",
+                        location: location,
                         adPreference: adPref,
                         deviceFCMToken: " ",
-                        isOnline: true)
+                        isOnline: true,
+                        secretPin: currentPin)
+                    
                     
                     userMamager.create(user)
                     
@@ -1324,47 +1324,6 @@ struct SignUpQuestionPage3: View {
     }
 }
 
-struct SignUpView_Previews : PreviewProvider {
-    static var previews: some View {
-        
-        SignUpPage1()
-           .environmentObject(SessionManager())
 
-      SignUpPage2(firstName: " ")
-        .environmentObject(SessionManager())
-
-        SignUpPage3(firstName: "", lastName: "")
-            .environmentObject(SessionManager())
-
-        SignUpPage4(firstName: "", lastName: "", username: "")
-            .environmentObject(SessionManager())
-
-        SignUpPage5(firstName: "", lastName: "", username: "", password: "")
-            .environmentObject(SessionManager())
-
-        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "")
-            .environmentObject(SessionManager())
-
-        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
-            .environmentObject(SessionManager())
-
-        //SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
-          //  .environmentObject(SessionManager())
-        
-        
-        
-        
-        
-        
-        SignUpQuestionPage1(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
-            .environmentObject(SessionManager())
-        
-        SignUpQuestionPage2(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
-            .environmentObject(SessionManager())
-        
-        SignUpQuestionPage3(firstName: " ", lastName: " ", username: " ", password: " ", email: " ", pronouns: " ", birthdate: Date())
-            .environmentObject(SessionManager())
-    }
-}
 
 

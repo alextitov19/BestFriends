@@ -19,6 +19,7 @@ extension User {
     case rooms
     case hiddenRooms
     case smileNotes
+    case shakingCoolLinks
   }
   
   public static let keys = CodingKeys.self
@@ -39,11 +40,12 @@ extension User {
       .field(user.adPreference, is: .required, ofType: .string),
       .field(user.deviceFCMToken, is: .required, ofType: .string),
       .field(user.isOnline, is: .required, ofType: .bool),
-      .field(user.secretPin, is: .optional, ofType: .string),
+      .field(user.secretPin, is: .required, ofType: .string),
       .field(user.friends, is: .optional, ofType: .embeddedCollection(of: String.self)),
       .field(user.rooms, is: .optional, ofType: .embeddedCollection(of: String.self)),
       .field(user.hiddenRooms, is: .optional, ofType: .embeddedCollection(of: String.self)),
-      .field(user.smileNotes, is: .optional, ofType: .embeddedCollection(of: Message.self))
+      .field(user.smileNotes, is: .optional, ofType: .embeddedCollection(of: Message.self)),
+      .field(user.shakingCoolLinks, is: .required, ofType: .embeddedCollection(of: String.self))
     )
     }
 }

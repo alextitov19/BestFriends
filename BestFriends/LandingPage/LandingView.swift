@@ -122,7 +122,7 @@ struct LandingView: View {
                             
                           }
                         .actionSheet(isPresented: $showingActionSheet) {
-                            ActionSheet(title: Text("Add Friends"), message: Text("Add your friends via QR code"), buttons: [
+                            ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR code"), buttons: [
                                 .default(Text("My QR Code")) { showMyQR() },
                                 .default(Text("Photo Library")) { self.showingImagePicker = true },
                                 .cancel()
@@ -144,11 +144,19 @@ struct LandingView: View {
                                 .scaledToFill()
                            }
                         
-                        
+                        Spacer()
+//
+                        NavigationLink(destination: SmileNotesView()) {
+                               Image("whiteSmiley")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                           }
+
                         Spacer()
 //                        
                         NavigationLink(destination: SettingsView()) {
-                               Image("whiteSmiley")
+                               Image("settingsiconwhite")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .scaledToFill()
