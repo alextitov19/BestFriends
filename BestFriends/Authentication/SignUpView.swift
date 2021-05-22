@@ -641,9 +641,13 @@ struct SignUpPage7: View {
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
+                Spacer()
+                    .frame(height: 75)
+                
                 DatePicker("", selection: $birthDate, displayedComponents: .date)
                     .datePickerStyle(WheelDatePickerStyle())
                     .colorScheme(.dark)
+                    .padding()
                 
                 Spacer()
                     .frame(height: 250)
@@ -1331,18 +1335,18 @@ struct SignUpQuestionPage3: View {
 
 struct SignUpPage1_Previews : PreviewProvider {
     static var previews: some View {
-        SignUpPage1()
-        SignUpPage2(firstName: "")
-        SignUpPage3(firstName: "", lastName: "")
-        SignUpPage4(firstName: "", lastName: "", username: "")
-        SignUpPage5(firstName: "", lastName: "", username: "", password: "")
-        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "")
-        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
-        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date())
-        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "")
+        SignUpPage1().environmentObject(SessionManager())
+        SignUpPage2(firstName: "").environmentObject(SessionManager())
+        SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
+        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
+        SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
+        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
+        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
+        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
+        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
       
         
-        SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "")
+        SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
        
     }
 }
