@@ -35,5 +35,6 @@ type User @model {
   rooms: [String]
   hiddenRooms: [String]
   smileNotes: [Message]
+  shakingCoolLinks: [String!]
 }
 
