@@ -170,6 +170,7 @@
 		CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2226584E1800B69506 /* BlueTransitionPage.swift */; };
 		CF436A252658C64200B69506 /* BlueTransitionPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A242658C64200B69506 /* BlueTransitionPage1.swift */; };
 		CF436A272658D66F00B69506 /* BlueModePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A262658D66F00B69506 /* BlueModePages.swift */; };
+		CF436A2926599EE000B69506 /* PreLoadPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2826599EE000B69506 /* PreLoadPage.swift */; };
 		D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1577796264CBBAD00B6551A /* ChangeEmail.swift */; };
 		D157779B264D086000B6551A /* SmileNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779A264D086000B6551A /* SmileNotesView.swift */; };
 		D157779F264D8EA400B6551A /* ChangeChatBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779E264D8EA400B6551A /* ChangeChatBackground.swift */; };
@@ -285,6 +286,7 @@
 		CF436A2226584E1800B69506 /* BlueTransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage.swift; sourceTree = "<group>"; };
 		CF436A242658C64200B69506 /* BlueTransitionPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage1.swift; sourceTree = "<group>"; };
 		CF436A262658D66F00B69506 /* BlueModePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModePages.swift; sourceTree = "<group>"; };
+		CF436A2826599EE000B69506 /* PreLoadPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoadPage.swift; sourceTree = "<group>"; };
 		D1577796264CBBAD00B6551A /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
 		D157779A264D086000B6551A /* SmileNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesView.swift; sourceTree = "<group>"; };
 		D157779E264D8EA400B6551A /* ChangeChatBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatBackground.swift; sourceTree = "<group>"; };
@@ -468,6 +470,7 @@
 		7AE31CBD262A9A7F001EC5A3 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				CF436A2826599EE000B69506 /* PreLoadPage.swift */,
 				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
 				7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */,
@@ -900,6 +903,7 @@
 				15C914E3BDA25500D050B277 /* Room.swift in Sources */,
 				CF436A272658D66F00B69506 /* BlueModePages.swift in Sources */,
 				46791643C6EBAF6EB2B027C6 /* User.swift in Sources */,
+				CF436A2926599EE000B69506 /* PreLoadPage.swift in Sources */,
 				A8DF522C45B5D1E27ECFA53B /* User.swift in Sources */,
 				43FBF4B6AEB15D3660E44192 /* Message.swift in Sources */,
 				878B397ACE5C6EB7A0702603 /* ReportedMessage+Schema.swift in Sources */,
