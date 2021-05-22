@@ -145,5 +145,10 @@ struct DarkModeView: View {
 
 
  
+struct DarkModeView_Previews : PreviewProvider {
+    static var previews: some View {
+        DarkModeView()
+    }
+}
 
 
