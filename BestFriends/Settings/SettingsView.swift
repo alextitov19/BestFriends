@@ -20,16 +20,7 @@ struct SettingsView: View {
             
             ScrollView {
             VStack {
-                
-                NavigationLink(destination: BlueModePage1()) {
-                       Image("whiteSmiley")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                   }
 
-                
-                
                 Text("Settings")
                     .font(.system(size: 50))
                     .fontWeight(.ultraLight)
