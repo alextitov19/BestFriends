@@ -118,6 +118,7 @@ query GetUser($id: ID!) {
       creationDate
       attachmentPath
     }
+    shakingCoolLinks
     createdAt
     updatedAt
   }
@@ -150,6 +151,7 @@ query ListUsers(
         creationDate
         attachmentPath
       }
+      shakingCoolLinks
       createdAt
       updatedAt
     }
