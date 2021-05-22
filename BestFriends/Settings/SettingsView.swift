@@ -21,7 +21,7 @@ struct SettingsView: View {
             ScrollView {
             VStack {
                 
-                NavigationLink(destination: BlueTransitionPage1()) {
+                NavigationLink(destination: BlueModePage1()) {
                        Image("whiteSmiley")
                         .resizable()
                         .frame(width: 40, height: 40)
