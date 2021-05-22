@@ -520,7 +520,7 @@ struct InfoViewPage7: View {
     var body: some View {
 
         ZStack {
-            Image("Transition2")
+            Image("Transition3")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
