@@ -84,6 +84,7 @@
 		7A1DBD5B2659766600EB4B42 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD522659766600EB4B42 /* Message+Schema.swift */; };
 		7A1DBD5C2659766600EB4B42 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD532659766600EB4B42 /* Message.swift */; };
 		7A1DBD5D2659766600EB4B42 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD542659766600EB4B42 /* Room+Schema.swift */; };
+		7A1DBD5F26599BB600EB4B42 /* SmileNotesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD5E26599BB600EB4B42 /* SmileNotesCard.swift */; };
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
 		7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
@@ -244,6 +245,7 @@
 		7A1DBD522659766600EB4B42 /* Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+Schema.swift"; sourceTree = "<group>"; };
 		7A1DBD532659766600EB4B42 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		7A1DBD542659766600EB4B42 /* Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Room+Schema.swift"; sourceTree = "<group>"; };
+		7A1DBD5E26599BB600EB4B42 /* SmileNotesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesCard.swift; sourceTree = "<group>"; };
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
 		7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
@@ -514,6 +516,7 @@
 			isa = PBXGroup;
 			children = (
 				D157779A264D086000B6551A /* SmileNotesView.swift */,
+				7A1DBD5E26599BB600EB4B42 /* SmileNotesCard.swift */,
 				7AC8564126585CD20045D145 /* LiquidSwipe.swift */,
 			);
 			path = SmileNotes;
@@ -815,6 +818,7 @@
 				E651934A8005549C6B9ECC28 /* Message+Schema.swift in Sources */,
 				77FC07C16E388B9965B5EC17 /* Room.swift in Sources */,
 				65A53B669FCD9653F5AD90CA /* AmplifyModels.swift in Sources */,
+				7A1DBD5F26599BB600EB4B42 /* SmileNotesCard.swift in Sources */,
 				50CB6AE5A0477FF85FEF0B97 /* Message.swift in Sources */,
 				7C378F2D8EE76AAEC4410FDA /* Room+Schema.swift in Sources */,
 				BC9C960C84181F2B3FE2B5E4 /* Room.swift in Sources */,
