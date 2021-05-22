@@ -10,6 +10,8 @@ import SwiftUI
 struct SmileNotesCard: View {
     
     let message: Message
+    
+    var hidden: Bool = true
 
     var body: some View {
         ZStack {
@@ -37,6 +39,7 @@ struct SmileNotesCard: View {
             }
         }
         .frame(width: 350, height: 350, alignment: .center)
+        .isHidden(hidden)
     }
     
 }

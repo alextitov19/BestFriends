@@ -6,6 +6,7 @@ struct SmileNotesView: View {
     
     @State var messages: [Message] = []
     @State var cards: [SmileNotesCard] = []
+    @State var index: Int = 0
     
     var body: some View {
         ZStack {
@@ -34,7 +35,18 @@ struct SmileNotesView: View {
             }
             
         }
-        .onAppear { loadMessages() }
+        .onAppear {
+            loadMessages()
+            switchCard()
+        }
+    }
+    
+    private func switchCard() {
+        for i in 0 ... cards.count - 1 {
+            cards[i].hidden = true
+        }
+        
+        cards[index].hidden = false
     }
     
     private func loadMessages() {
@@ -43,7 +55,9 @@ struct SmileNotesView: View {
         let user = UserDataSource().getUser(id: id)
         messages = user.smileNotes ?? []
         for message in messages {
-            cards.append(SmileNotesCard(message: message))
+            var card = SmileNotesCard(message: message)
+            card.hidden = true
+            cards.append(card)
         }
     }
     
