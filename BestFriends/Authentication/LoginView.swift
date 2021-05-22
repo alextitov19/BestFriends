@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Amplify
 
 struct LoginView: View {
     
@@ -160,6 +161,8 @@ struct ForgotPassword: View {
                             .frame(height: 50)
                     
                     NavigationLink(destination: ConfirmNewPassword(username: username), isActive: $readyToProceed) { EmptyView() }
+                    
+                    
                 }
             }
         }
@@ -170,6 +173,7 @@ struct ConfirmNewPassword: View {
    
     @State private var password: String = ""
     @State private var code: String = ""
+    
     
     let username: String
     
