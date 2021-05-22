@@ -31,8 +31,43 @@ struct SmileNotesView: View {
                     
                 Spacer()
                 
+                HStack {
+                    
+                    Text("Previous")
+                        .frame(width: 150, height: 75, alignment: .center)
+                        .background(Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)))
+                        .cornerRadius(30)
+                        .onTapGesture {
+                            if index > 0 {
+                                index -= 1
+                                switchCard()
+                            }
+                        }
+                        .isHidden(index <= 0)
+                
+                
+             
+                    Text("Next")
+                        .frame(width: 150, height: 75, alignment: .center)
+                        .background(Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)))
+                        .cornerRadius(30)
+                        .onTapGesture {
+                            if index < cards.count - 1 {
+                                index += 1
+                                switchCard()
+                            }
+                        }
+                        .isHidden(index >= cards.count - 1)
+                    
+                }
+                
+                Spacer()
                 
             }
+            
+            
             
         }
         .onAppear {
