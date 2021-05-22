@@ -648,6 +648,8 @@ struct SignUpPage7: View {
                     .datePickerStyle(WheelDatePickerStyle())
                     .colorScheme(.dark)
                     .padding()
+                    .offset(x: -70)
+                
                 
                 Spacer()
                     .frame(height: 250)
