@@ -14,7 +14,7 @@ struct ChangeEmail: View {
     @State private var readyToProceed = false
     
     var body: some View {
-            NavigationView {
+            
             ZStack {
                 
                 Image("purpleBackground")
@@ -68,14 +68,14 @@ struct ChangeEmail: View {
             }
         }
     }
-}
+
 
 struct ConfirmEmail: View {
    
     @State private var code: String = ""
     
     var body: some View {
-            NavigationView {
+        
             ZStack {
                 
                 Image("purpleBackground")
@@ -124,17 +124,14 @@ struct ConfirmEmail: View {
                             .frame(height: 50)
                     
                 }
-                .navigationTitle("")
-                .navigationBarHidden(true)
+                
             }
-            .navigationTitle("")
-            .navigationBarHidden(true)
+          
         }
-            .navigationTitle("")
-            .navigationBarHidden(true)
+         
     }
 
-}
+
 
    
 

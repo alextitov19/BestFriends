@@ -10,7 +10,7 @@ import SwiftUI
 struct MyAccount: View {
 
     var body: some View {
-        NavigationView {
+        
         ZStack {
             
             Image("purpleBackground")
@@ -20,8 +20,6 @@ struct MyAccount: View {
             
             VStack {
                 Text("My Account")
-                    .navigationBarTitle("")
-                    .navigationBarHidden(true)
                     .foregroundColor(.white)
                     .font(.title)
             
@@ -67,24 +65,15 @@ struct MyAccount: View {
                     Spacer()
                         .frame(height: 100)
                 
+                    }
                 }
-                
-                
             }
         }
-        }
-        
-      //  .navigationBarTitle("")
-      //  .navigationBarHidden(true)
     }
 
+struct MyAccount_Previews : PreviewProvider {
+    static var previews: some View {
+        MyAccount()
+    }
 }
-
-
-//struct MyAccount_Previews : PreviewProvider {
-//    static var previews: some View {
- //       MyAccount()
-//    }
-// }
-
 

@@ -631,6 +631,11 @@ struct SignUpPage7: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             VStack {
+                
+                
+                Spacer()
+                    .frame(height: 100)
+                
                 Text("Your age?")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
@@ -1324,6 +1329,23 @@ struct SignUpQuestionPage3: View {
     }
 }
 
+struct SignUpPage1_Previews : PreviewProvider {
+    static var previews: some View {
+        SignUpPage1()
+        SignUpPage2(firstName: "")
+        SignUpPage3(firstName: "", lastName: "")
+        SignUpPage4(firstName: "", lastName: "", username: "")
+        SignUpPage5(firstName: "", lastName: "", username: "", password: "")
+        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "")
+        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "")
+        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date())
+        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "")
+      
+        
+        SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "")
+       
+    }
+}
 
 
 

@@ -15,7 +15,7 @@ struct ResetPassword: View {
 
     
     var body: some View {
-            NavigationView {
+            
             ZStack {
                 
                 Image("purpleBackground")
@@ -83,7 +83,7 @@ struct ResetPassword: View {
             }
         }
     }
-}
+
 
 
 
