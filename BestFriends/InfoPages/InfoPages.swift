@@ -491,7 +491,7 @@ struct InfoViewPage6: View {
                     .frame(height: 30)
                    
                    
-                NavigationLink(destination: SettingsView()) {
+                NavigationLink(destination: InfoViewPage7()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))

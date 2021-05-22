@@ -17,7 +17,7 @@ import SwiftUI
 struct DarkModePage1: View {
 
     var body: some View {
-        NavigationView{
+     //   NavigationView{
     
   
         ZStack {
@@ -82,7 +82,7 @@ struct DarkModePage1: View {
             }
         }
     }
-}
+
 
 
 struct DarkModePage1_Previews : PreviewProvider {
