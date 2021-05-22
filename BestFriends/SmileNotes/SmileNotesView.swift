@@ -5,6 +5,7 @@ import Amplify
 struct SmileNotesView: View {
     
     @State var messages: [Message] = []
+    @State var cards: [SmileNotesCard] = []
     
     var body: some View {
         ZStack {
@@ -21,19 +22,29 @@ struct SmileNotesView: View {
                 
                 Spacer()
                 
-                
+                ZStack {
+                    ForEach(cards, id: \.message.id) { card in
+                        card
+                    }
+                }
+                    
+                Spacer()
                 
                 
             }
             
         }
-//        .onAppear { loadMessages() }
+        .onAppear { loadMessages() }
     }
     
     private func loadMessages() {
+        cards = []
         guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
         let user = UserDataSource().getUser(id: id)
         messages = user.smileNotes ?? []
+        for message in messages {
+            cards.append(SmileNotesCard(message: message))
+        }
     }
     
 }
