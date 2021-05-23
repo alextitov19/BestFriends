@@ -185,6 +185,9 @@ struct LandingView: View {
                 
             }
         .onAppear(perform: reloadData)
+        .onShake {
+            print("Shaking shaking...")
+        }
     }
     
     // MARK: QR Code
