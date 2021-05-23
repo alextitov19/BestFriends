@@ -35,7 +35,7 @@ struct BlueModePage1: View {
                             .italic()
                             .font(.system(size: 25))
                             .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
                             .multilineTextAlignment(.center)
                             .frame(width: 275, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     }
@@ -595,9 +595,9 @@ struct BlueModePage6: View {
                             .frame(width: 425, height: 185)
                             .scaledToFill()
                     
-                        Text("Let's start fixing this, NOW!!!")
+                        Text("When you're ready - tap below")
                             .italic()
-                            .font(.system(size: 37))
+                            .font(.system(size: 35))
                             .fontWeight(.regular)
                             .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                             .multilineTextAlignment(.center)
