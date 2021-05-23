@@ -439,6 +439,7 @@ struct SignUpPage5: View {
                 
                
 
+// *******************************************
 
 struct SignUpPage6: View {
     

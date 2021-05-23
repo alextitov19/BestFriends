@@ -134,17 +134,9 @@ struct BlueTransitionPage1: View {
 
 struct BlueTransitionPaqe1_Previews : PreviewProvider {
     static var previews: some View {
-   
         BlueTransitionPage1()
-        DarkModePage1()
-        BlueModeLP()
-        DarkModeView()
-        BlueModeNotReadyTalk()
-        BlueTransitionPage()
-
-        
+      
+        }
     }
 }
 
-
-}
