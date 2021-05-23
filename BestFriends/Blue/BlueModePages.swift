@@ -618,8 +618,8 @@ struct BlueModePage6: View {
                
                 
                 
-                NavigationLink(destination: BlueSurvey()) {
-                                    Text("Ok, take me to BlueSurvey")
+                NavigationLink(destination: SettingsView()) {
+                                    Text("Ok, take me to BlueMode")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
