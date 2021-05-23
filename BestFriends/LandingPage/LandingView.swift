@@ -146,12 +146,13 @@ struct LandingView: View {
                         
                         Spacer()
 //
-                        NavigationLink(destination: SmileNotesView()) {
                                Image("whiteSmiley")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .scaledToFill()
-                           }
+                                .onTapGesture {
+                                    sessionManager.showSmileNotes()
+                                }
 
                         Spacer()
 //                        

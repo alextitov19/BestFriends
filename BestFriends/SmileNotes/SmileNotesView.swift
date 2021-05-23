@@ -8,6 +8,8 @@ struct SmileNotesView: View {
     @State var cards: [SmileNotesCard] = []
     @State var index: Int = 0
     
+    @EnvironmentObject var sessionManager: SessionManager
+    
     var body: some View {
         ZStack {
             Image("SmileNote4")

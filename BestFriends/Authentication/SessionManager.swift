@@ -15,6 +15,7 @@ enum AppState {
     case home(userID: String)
     case rooms
     case settings
+    case smileNotes
 }
 
 final class SessionManager: ObservableObject {
@@ -34,6 +35,10 @@ final class SessionManager: ObservableObject {
     
     func showSettings() {
         appState = .settings
+    }
+    
+    func showSmileNotes() {
+        appState = .smileNotes
     }
     
     func showSignUp() {

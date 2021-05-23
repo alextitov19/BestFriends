@@ -39,6 +39,9 @@ struct BestFriendsApp: App {
             case .rooms:
                 RoomsView()
                     .environmentObject(sessionManager)
+            case .smileNotes:
+                SmileNotesView()
+                    .environmentObject(sessionManager)
             case .settings:
                 SettingsView()
                     .environmentObject(sessionManager)

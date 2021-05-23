@@ -12,7 +12,7 @@ struct SettingsView: View {
     @EnvironmentObject var sessionManager: SessionManager
 
     var body: some View {
-//        NavigationView {
+        NavigationView {
         ZStack {
             
             Image("purpleBackground")
@@ -267,7 +267,7 @@ struct SettingsView: View {
         
         .navigationBarTitle("")
         .navigationBarHidden(true)
-//}
+}
 
 }
 
