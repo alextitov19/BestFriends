@@ -83,7 +83,7 @@ struct BlueModePage1: View {
                         
                             
                             VStack {
-                                Text("Helping you slow the drama.")
+                                Text("Helping you makeup.")
                                     .italic() .italic()
                                     .font(.system(size: 37))
                                     .fontWeight(.regular)
@@ -618,8 +618,8 @@ struct BlueModePage6: View {
                
                 
                 
-                NavigationLink(destination: SettingsView()) {
-                                    Text("Ok, take me to Chat")
+                NavigationLink(destination: BlueSurvey()) {
+                                    Text("Ok, take me to BlueSurvey")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
