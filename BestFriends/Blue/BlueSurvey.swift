@@ -43,7 +43,8 @@ struct BlueSurvey: View {
                     .frame(height: 50)
                 
                 
-                Text("Please select your Pronouns?")
+                Text("Question? What part of BlueMode helped the most?")
+                    .italic()
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
@@ -54,7 +55,7 @@ struct BlueSurvey: View {
                 
                 VStack {
                     
-                    Button("she / her", action: {
+                    Button("Being able to see when my friend read my message in Chat.", action: {
                             didTap1 = true
                             didTap2 = false
                             didTap3 = false
@@ -84,7 +85,7 @@ struct BlueSurvey: View {
                     Spacer()
                         .frame(height: 30)
                 
-                    Button("they / them", action: {
+                    Button("ShakingCool with the BlueMode option.", action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = true
@@ -114,7 +115,7 @@ struct BlueSurvey: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("prefer not to say", action: {
+                    Button("?????", action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = false
@@ -156,7 +157,7 @@ struct BlueSurvey: View {
              
                 ready = true
                 }) {
-                    Text("Next")
+                    Text("Submit")
                     .font(.title)
                     }
                 .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4 || didTap5) ? 50 : 0))
@@ -175,8 +176,8 @@ struct BlueSurvey: View {
                 label: {
                     
                 })
+            
         }
-                
     }
 }
     
