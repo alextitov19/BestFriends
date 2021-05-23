@@ -23,7 +23,7 @@ struct BestFriendsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            switch sessionManager.authState {
+            switch sessionManager.appState {
             case .login:
                 LoginView()
                     .environmentObject(sessionManager)
@@ -33,11 +33,21 @@ struct BestFriendsApp: App {
             case .confirmationCode(let username):
                 ConfirmationView(username: username)
                     .environmentObject(sessionManager)
-            case .session(let user): 
-                LandingView(myID: user.username)
+            case .home(let userID):
+                LandingView(myID: userID)
                     .environmentObject(sessionManager)
-
+            case .rooms:
+                RoomsView()
+                    .environmentObject(sessionManager)
+            case .smileNotes:
+                SmileNotesView()
+                    .environmentObject(sessionManager)
+            case .settings:
+                SettingsView()
+                    .environmentObject(sessionManager)
+                
             }
+            
         }
     }
    

@@ -45,7 +45,6 @@ struct LandingView: View {
 //    let user: AuthUser
 
     var body: some View {
-        NavigationView{
             
             ZStack {
                 
@@ -137,31 +136,34 @@ struct LandingView: View {
 
                         Spacer()
                         
-                        NavigationLink(destination: RoomsView()) {
                                Image("messageIconWhite")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .scaledToFill()
-                           }
+                                .onTapGesture {
+                                    sessionManager.showRooms()
+                                }
                         
                         Spacer()
 //
-                        NavigationLink(destination: SmileNotesView()) {
                                Image("whiteSmiley")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .scaledToFill()
-                           }
+                                .onTapGesture {
+                                    sessionManager.showSmileNotes()
+                                }
 
                         Spacer()
 //                        
-                        NavigationLink(destination: SettingsView()) {
                                Image("settingsiconwhite")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .scaledToFill()
-                           }
-//                        
+                                .onTapGesture {
+                                    sessionManager.showSettings()
+                                }
+//
 //                        Spacer()
 //                        
 //                        NavigationLink(destination: MessagesView()) {
@@ -182,9 +184,10 @@ struct LandingView: View {
                
                 
             }
-            
-        }
         .onAppear(perform: reloadData)
+        .onShake {
+            print("Shaking shaking...")
+        }
     }
     
     // MARK: QR Code
