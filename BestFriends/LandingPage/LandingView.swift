@@ -45,7 +45,6 @@ struct LandingView: View {
 //    let user: AuthUser
 
     var body: some View {
-        NavigationView{
             
             ZStack {
                 
@@ -137,12 +136,13 @@ struct LandingView: View {
 
                         Spacer()
                         
-                        NavigationLink(destination: RoomsView()) {
                                Image("messageIconWhite")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .scaledToFill()
-                           }
+                                .onTapGesture {
+                                    sessionManager.showRooms()
+                                }
                         
                         Spacer()
 //
@@ -155,13 +155,14 @@ struct LandingView: View {
 
                         Spacer()
 //                        
-                        NavigationLink(destination: SettingsView()) {
                                Image("settingsiconwhite")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                                 .scaledToFill()
-                           }
-//                        
+                                .onTapGesture {
+                                    sessionManager.showSettings()
+                                }
+//
 //                        Spacer()
 //                        
 //                        NavigationLink(destination: MessagesView()) {
@@ -182,8 +183,6 @@ struct LandingView: View {
                
                 
             }
-            
-        }
         .onAppear(perform: reloadData)
     }
     

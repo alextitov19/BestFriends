@@ -14,6 +14,8 @@ struct RoomsView: View {
     @State var text: String = ""
     @ObservedObject var dataSource = RoomDataSource()
 
+    @EnvironmentObject var sessionManager: SessionManager
+
 
     init() {
         dataSource.getRooms()

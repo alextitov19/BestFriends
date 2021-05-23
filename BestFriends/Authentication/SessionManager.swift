@@ -8,30 +8,40 @@
 import Amplify
 import AmplifyPlugins
 
-enum AuthState {
+enum AppState {
     case signUp
     case login
     case confirmationCode(username: String)
-    case session(user: AuthUser)
+    case home(userID: String)
+    case rooms
+    case settings
 }
 
 final class SessionManager: ObservableObject {
-    @Published var authState: AuthState = .login
+    @Published var appState: AppState = .login
     
     func getCurrentAuthUser() {
         if let user = Amplify.Auth.getCurrentUser() {
-            authState = .session(user: user)
+            appState = .home(userID: user.username)
         } else {
-            authState = .login
+            appState = .login
         }
     }
     
+    func showRooms() {
+        appState = .rooms
+    }
+    
+    func showSettings() {
+        appState = .settings
+    }
+    
     func showSignUp() {
-        authState = .signUp
+        appState = .signUp
     }
     
     func showLogin() {
-        authState = .login
+        appState = .login
     }
     
     func signUp(username: String, email: String, password: String) {
@@ -57,7 +67,7 @@ final class SessionManager: ObservableObject {
                     print(details ?? "no details")
                     
                     DispatchQueue.main.async {
-                        self?.authState = .confirmationCode(username: username)
+                        self?.appState = .confirmationCode(username: username)
                     }
                 }
                 

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SettingsView: View {
 
+    @EnvironmentObject var sessionManager: SessionManager
+
     var body: some View {
 //        NavigationView {
         ZStack {
