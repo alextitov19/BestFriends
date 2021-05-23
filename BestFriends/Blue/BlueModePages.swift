@@ -11,6 +11,90 @@ import SwiftUI
 struct BlueModePage1: View {
 
     var body: some View {
+     //   NavigationView{
+    
+  
+        ZStack {
+            
+            
+            Image("AriC2")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
+                
+            VStack {
+                       
+                    ZStack {
+                        Image("ChatBubbleTrans")
+                            .resizable()
+                            .frame(width: 400, height: 185)
+                            .scaledToFill()
+                    
+                        Text("Just had a huge fight with your best friend or significant other?")
+                            .italic()
+                            .font(.system(size: 25))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 275, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    }
+    
+                    
+               
+                    
+                    Spacer()
+                   
+                Text("We'll unlock special features helping you fix this mess.")
+                   
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                
+               Spacer()
+                    .frame(height: 3)
+               
+                
+                
+                NavigationLink(destination: BlueModePage2()) {
+                                    Text("Good because this, SUCKS!")
+                                        .font(.system(size: 30))
+                                        .fontWeight(.ultraLight)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                        .frame(width: 400, height: 50)
+                                        .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .cornerRadius(25)
+                    }
+                
+                Spacer()
+                    .frame(height: 160)
+            
+                    }
+            }
+        }
+    }
+
+
+
+struct BlueModePage1_Previews : PreviewProvider {
+    static var previews: some View {
+   
+        BlueModePage1()
+
+    }
+}
+
+
+
+
+// ********************************************
+
+struct BlueModePage2: View {
+
+    var body: some View {
 
        // NavigationView{
         
@@ -83,7 +167,7 @@ struct BlueModePage1: View {
                         
                             
                             VStack {
-                                Text("Helping you makeup.")
+                                Text("Helping you fix this mess!")
                                     .italic() .italic()
                                     .font(.system(size: 37))
                                     .fontWeight(.regular)
@@ -109,7 +193,7 @@ struct BlueModePage1: View {
                     .frame(height: 250)
                    
                    
-                NavigationLink(destination: BlueModePage2()) {
+                NavigationLink(destination: BlueModePage3()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
@@ -122,105 +206,20 @@ struct BlueModePage1: View {
         
         }
         }
-
-    
-   
-   
     }
 }
 
 
 
 
-struct BlueModePaqe1_Previews : PreviewProvider {
-    static var previews: some View {
-   
-        BlueModePage1()
-    }
-}
-
-
-
-
-// ********************************************
-struct BlueModePage2: View {
-
-    var body: some View {
-     //   NavigationView{
-    
-  
-        ZStack {
-            
-            
-            Image("AriC2")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-            
-                
-            VStack {
-                       
-                    ZStack {
-                        Image("ChatBubbleTrans")
-                            .resizable()
-                            .frame(width: 400, height: 185)
-                            .scaledToFill()
-                    
-                        Text("Just had a huge fight with your best friend or significant other?")
-                            .italic()
-                            .font(.system(size: 25))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 275, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    }
-    
-                    
-               
-                    
-                    Spacer()
-                   
-                Text("We'll unlock special features helping you fix this mess.")
-                   
-                    .font(.system(size: 25))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
-                
-               Spacer()
-                    .frame(height: 3)
-               
-                
-                
-                NavigationLink(destination: BlueModePage3()) {
-                                    Text("Good because this, SUCKS!")
-                                        .font(.system(size: 30))
-                                        .fontWeight(.ultraLight)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                                        .frame(width: 400, height: 50)
-                                        .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .cornerRadius(25)
-                    }
-                
-                Spacer()
-                    .frame(height: 160)
-            
-                    }
-            }
-        }
-    }
-
-
-
-struct BlueModePage2_Previews : PreviewProvider {
+struct BlueModePaqe2_Previews : PreviewProvider {
     static var previews: some View {
    
         BlueModePage2()
-
     }
 }
+
+
 
 
 // ***********************************
@@ -619,7 +618,7 @@ struct BlueModePage6: View {
                 
                 
                 NavigationLink(destination: SettingsView()) {
-                                    Text("Ok, take me to BlueMode")
+                                    Text("Ok, take me to Blue-Chat")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
