@@ -40,21 +40,22 @@ struct BlueSurvey: View {
                
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 1
+                    )
                 
                 Text("Quick Question.")
                     .italic()
-                    .font(.system(size: 23))
-                    .foregroundColor(.white)
+                    .font(.system(size: 30))
+                  //  .foregroundColor(.white)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 1)
                 
                 
-                
-                
-                Text("What part of BlueMode helped the most?")
+                Text("What part of BlueMode helped you the most?")
+                    .frame(width: 380, height: 75, alignment: .center)
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
@@ -65,47 +66,53 @@ struct BlueSurvey: View {
                 
                 VStack {
                     
-                    Button("Being able to see when my friend read my messages in Chat.", action: {
+                    Button("Being able to see when my friend read my messages in Blue-Chat.", action: {
                             didTap1 = true
                             didTap2 = false
                             didTap3 = false
                             didTap4 = false
                             didTap5 = false
                     })
-                    .frame(width: 350, height: 60, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                    .frame(width: 380, height: 75, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                     .background(didTap1 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                     .cornerRadius(25)
+                    .font(.system(size: 20))
+                    
                     
                     Spacer()
                         .frame(height: 30)
                 
-                    Button("he / him", action: {
+                    Button("Being able to load pics of the two of us having fun into my friend's ShakingCool.", action: {
                             didTap1 = false
                             didTap2 = true
                             didTap3 = false
                             didTap4 = false
                             didTap5 = false
                     })
-                    .frame(width: 350, height: 60, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                    .frame(width: 380, height: 75, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                     .background(didTap2 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                     .cornerRadius(25)
+                    .font(.system(size: 20))
+                    
                     
                     Spacer()
                         .frame(height: 30)
                 
-                    Button("ShakingCool with the BlueMode option - so my friend could see my images when they .", action: {
+                    Button("Getting Push Notifications when my friend sent me a message in Blue-Chat.", action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = true
                         didTap4 = false
                         didTap5 = false
                     })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                    .frame(width: 380, height: 75, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                     .background(didTap3 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                     .cornerRadius(25)
+                    .font(.system(size: 20))
+                    
                     
                     Spacer()
                         .frame(height: 30)
@@ -113,22 +120,32 @@ struct BlueSurvey: View {
                     
                     VStack {
                         
-                            Button("other", action: {
+                            Button("Having SmileNote bubbles float up in Blue-Chat.", action: {
                             didTap1 = false
                             didTap2 = false
                             didTap3 = false
                             didTap4 = true
                             didTap5 = false
                         })
-                        .frame(width: 300, height: 50, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                        .frame(width: 380, height: 75, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                         .background(didTap4 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                         .cornerRadius(25)
+                        .font(.system(size: 20))
+                        
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 40)
                         
-                        Button("?????", action: {
+                        
+                        Text("What do you wish we would add to BlueMode?")
+                            .frame(width: 380, height: 75, alignment: .center)
+                            .font(.system(size: 30))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Button("", action: {
                             didTap1 = false
                             didTap2 = false
                             didTap3 = false
@@ -144,8 +161,6 @@ struct BlueSurvey: View {
                         Spacer()
                             .frame(height: 100)
                 
-                        Spacer()
-                            .frame(height: 200)
 //
 //                        NavigationLink(destination: SettingsView()) {
 //                                            Text("Take me to Settings")
