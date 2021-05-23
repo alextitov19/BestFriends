@@ -28,16 +28,16 @@ struct BlueModePage1: View {
                     ZStack {
                         Image("ChatBubbleTrans")
                             .resizable()
-                            .frame(width: 400, height: 185)
+                            .frame(width: 500, height: 285)
                             .scaledToFill()
                     
                         Text("Just had a huge fight with your best friend or significant other?")
                             .italic()
-                            .font(.system(size: 25))
+                            .font(.system(size: 35))
                             .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .multilineTextAlignment(.center)
-                            .frame(width: 275, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 400, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     }
     
                     
@@ -162,7 +162,7 @@ struct BlueModePage2: View {
                         ZStack {
                             Image("ChatBubbleTrans")
                                 .resizable()
-                                .frame(width: 325, height: 150)
+                                .frame(width: 350, height: 150)
                                 .scaledToFill()
                         
                             
@@ -237,16 +237,16 @@ struct BlueModePage3: View {
                 ZStack {
                     Image("ChatBubbleTrans")
                         .resizable()
-                        .frame(width: 400, height: 250)
+                        .frame(width: 500, height: 275)
                         .scaledToFill()
                     
                     Text("Before you start 'unfriending' each other on IG & Snap, or repost private messages that will be hurtful - let's try 'BlueMode'.")
                         .italic()
-                        .font(.system(size: 21))
+                        .font(.system(size: 27))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 250, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 375, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 }
                 .padding()
                 
@@ -272,7 +272,7 @@ struct BlueModePage3: View {
                     }
                 
                 Spacer()
-                    .frame(height: 160)
+                    .frame(height: 180)
                 }
             }
         }
