@@ -6,6 +6,7 @@ struct SmileNotesView: View {
     
     @State var messages: [Message] = []
     @State var cards: [SmileNotesCard] = []
+    @State var displayedCards: [SmileNotesCard] = []
     @State var index: Int = 0
     @State var selectedFriendID: String = "All Friends"
     @State var selectedFriendName: String = "All Friends"
@@ -54,6 +55,7 @@ struct SmileNotesView: View {
                                 selectedFriendID = id
                                 selectedFriendName = friendNames[friendIDs.firstIndex(of: id) ?? 0]
                                 hidingFriendButtons = true
+                                newSelection()
                             }
 
                     }
@@ -62,10 +64,8 @@ struct SmileNotesView: View {
                 Spacer()
                 
                 ZStack {
-                    ForEach(cards, id: \.message.id) { card in
-                        if(selectedFriendID == "All Friends" || selectedFriendID == card.message.senderID) {
-                            card
-                        }
+                    ForEach(displayedCards, id: \.message.id) { card in
+                        card
                     }
                 }
                     
@@ -94,12 +94,12 @@ struct SmileNotesView: View {
                         .foregroundColor(Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)))
                         .cornerRadius(30)
                         .onTapGesture {
-                            if index < cards.count - 1 {
+                            if index < displayedCards.count - 1 {
                                 index += 1
                                 switchCard()
                             }
                         }
-                        .isHidden(index >= cards.count - 1)
+                        .isHidden(index >= displayedCards.count - 1)
                     
                 }
                 
@@ -112,26 +112,28 @@ struct SmileNotesView: View {
         }
         .onAppear {
             loadData()
+            newSelection()
             switchCard()
         }
     }
     
     private func switchCard() {
-        for i in 0 ... cards.count - 1 {
-            cards[i].hidden = true
+        if displayedCards.count  <= 0 { return }
+        for i in 0 ... displayedCards.count - 1 {
+            displayedCards[i].hidden = true
         }
         
-        cards[index].hidden = false
+        displayedCards[index].hidden = false
     }
     
     private func loadData() {
+        displayedCards = []
         cards = []
         guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
         let user = UserDataSource().getUser(id: id)
         messages = user.smileNotes ?? []
         for message in messages {
             var card = SmileNotesCard(message: message)
-            card.hidden = true
             cards.append(card)
             
             if (friendIDs.contains(message.senderID) == false) {
@@ -140,6 +142,21 @@ struct SmileNotesView: View {
             }
         }
     
+    }
+    
+    private func newSelection() {
+        index = 0
+        displayedCards = []
+        if selectedFriendID == "All Friends" {
+            displayedCards = cards
+        } else {
+            for card in cards {
+                if card.message.senderID == selectedFriendID {
+                    displayedCards.append(card)
+                }
+            }
+        }
+        switchCard()
     }
     
 }
