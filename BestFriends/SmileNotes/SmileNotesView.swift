@@ -7,7 +7,7 @@ struct SmileNotesView: View {
     @State var messages: [Message] = []
     @State var cards: [SmileNotesCard] = []
     @State var index: Int = 0
-    @State var selectedFriendID: String = ""
+    @State var selectedFriendID: String = "All Friends"
     @State var selectedFriendName: String = "All Friends"
     @State var hidingFriendButtons: Bool = true
     @State var friendIDs: [String] = []
@@ -63,7 +63,9 @@ struct SmileNotesView: View {
                 
                 ZStack {
                     ForEach(cards, id: \.message.id) { card in
-                        card
+                        if(selectedFriendID == "All Friends" || selectedFriendID == card.message.senderID) {
+                            card
+                        }
                     }
                 }
                     
