@@ -30,10 +30,17 @@ struct SettingsView: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
-                Spacer().frame(height: 20)
+                Spacer().frame(height: 40)
                
-               
-                    NavigationLink(
+                
+                Text("BestFriend Feature's Walk-throughs and Setups")
+                    .font(.system(size: 32))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                   
+                NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
                             Text("BestFriends Walk-through")
@@ -60,22 +67,38 @@ struct SettingsView: View {
                             RoundedRectangle(cornerRadius: 25)
                                 .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
                                 )
+                VStack {
                 
                 
-                
-                
-                Spacer()
-                    .frame(height: 45)
-                
-                
-                
-                Text("Making BestFriends Better")
-                    .font(.system(size: 32))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
+                    Spacer().frame(height: 20)
+                   
+                   
+                        NavigationLink(
+                            destination: BlueModePage1(),
+                            label: {
+                                Text("ShakingCool SetUp")
+                            })
+                            .frame(width: 325, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                    )
+                    
+                    
+                    
+                    Spacer()
+                        .frame(height: 45)
+                    
+                    
+                    
+                    Text("Making BestFriends Better")
+                        .font(.system(size: 32))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
             
                 
                 VStack {
@@ -247,9 +270,9 @@ struct SettingsView: View {
                                 .frame(height: 20)
                             
                             NavigationLink(
-                                destination: DeleteMyAccount(),
+                                destination: Notifications(),
                                 label: {
-                                    Text("Notifications (Not Built)")
+                                    Text("Notifications (Need Backend)")
                                 })
                                 .frame(width: 325, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -284,10 +307,11 @@ struct SettingsView: View {
 
 }
 
+//
+//struct SettingsView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        SettingsView()
+//    }
+}
+}
 
-struct SettingsView_Previews : PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-    }
-}
-}
