@@ -46,65 +46,56 @@ struct BlueSurvey: View {
                     .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                     .multilineTextAlignment(.center)
                 
-                Spacer()
-                    .frame(height: 1)
-                
-                
-                Text("What part of BlueMode helped you the most?")
-                    .frame(width: 380, height: 75, alignment: .center)
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                
+              
                 Spacer()
                     .frame(height: 25)
      
                 
                 VStack {
                     
-                    Button("Being able to see when my friend read my messages in Blue-Chat.", action: {
+                    Button("Do you like getting Push Notifications when your friend sends me a message in Blue-Chat.", action: {
                             didTap1 = true
                             didTap2 = false
                             didTap3 = false
                          
                     })
-                    .frame(width: 380, height: 75, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                    .frame(width: 400, height: 175, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
                     .background(didTap1 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                     .cornerRadius(25)
-                    .font(.system(size: 20))
+                    .font(.system(size: 30))
                     
                     
                     Spacer()
                         .frame(height: 30)
                 
-                    Button("Being able to load pics of the two of us having fun into my friend's ShakingCool.", action: {
+                    Button("Yes", action: {
                             didTap1 = false
                             didTap2 = true
                             didTap3 = false
                           
                     })
-                    .frame(width: 380, height: 75, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                    .frame(width: 100, height: 75, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
                     .background(didTap2 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                     .cornerRadius(25)
-                    .font(.system(size: 20))
+                    .font(.system(size: 30))
                     
                     
                     Spacer()
                         .frame(height: 30)
                 
-                    Button("Getting Push Notifications when my friend sent me a message in Blue-Chat.", action: {
+                    Button("No", action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = true
                      
                     })
-                    .frame(width: 380, height: 75, alignment: .center)
+                    .frame(width: 100, height: 75, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                     .background(didTap3 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                     .cornerRadius(25)
-                    .font(.system(size: 20))
+                    .font(.system(size: 30))
                     
                     
                     Spacer()
@@ -146,13 +137,13 @@ struct BlueSurvey: View {
                 
                 
                 if didTap1 {
-                    pronouns = "WHENREAD"
+                    pronouns = "YES"
                 }
                 if didTap2 {
-                    pronouns = "SHAKINGCOOL"
+                    pronouns = "YES"
                 }
                 if didTap3 {
-                    pronouns = "PNOTIFICATION"
+                    pronouns = "NO"
                 }
 
              
