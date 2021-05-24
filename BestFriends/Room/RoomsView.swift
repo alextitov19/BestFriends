@@ -46,7 +46,7 @@ struct RoomsView: View {
                                 Spacer().frame(height: 10)
                                 
                                 ForEach(dataSource.rooms) { room in
-                                    NavigationLink(destination: BlueMessageRoomView(room: room)) {
+                                    NavigationLink(destination: MessageRoomView(room: room)) {
                                         RoomRow(room: room)
                                     }
                                     Spacer()

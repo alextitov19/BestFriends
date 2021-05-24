@@ -39,6 +39,7 @@ struct SmileNotesCard: View {
             }
         }
         .frame(width: 350, height: 350, alignment: .center)
+        .cornerRadius(50)
         .isHidden(hidden)
     }
     
