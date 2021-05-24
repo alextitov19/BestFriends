@@ -50,6 +50,11 @@ struct SmileNotesView: View {
                             .background(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
                             .cornerRadius(30)
                             .isHidden(hidingFriendButtons)
+                            .onTapGesture {
+                                selectedFriendID = id
+                                selectedFriendName = friendNames[friendIDs.firstIndex(of: id) ?? 0]
+                                hidingFriendButtons = true
+                            }
 
                     }
                 }
