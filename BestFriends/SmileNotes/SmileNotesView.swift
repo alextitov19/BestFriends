@@ -7,6 +7,14 @@ struct SmileNotesView: View {
     @State var messages: [Message] = []
     @State var cards: [SmileNotesCard] = []
     @State var index: Int = 0
+    @State var selectedFriendID: String = ""
+    @State var selectedFriendName: String = "All Friends"
+    @State var hidingFriendButtons: Bool = true
+    @State var friendIDs: [String] = []
+    @State var friendNames: [String] = []
+
+
+
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -21,9 +29,26 @@ struct SmileNotesView: View {
             VStack {
                 // MARK: Header
                 HStack {
-                    Text("Smile Notes")
-                        .font(.title).bold()
-                        .foregroundColor(.white)
+                    Button( action: {
+                        
+                    }) {
+                        Text(selectedFriendName)
+                            .font(.title).bold()
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                hidingFriendButtons = false
+                            }
+                    }
+                    
+                }
+                
+                ZStack {
+                    ForEach(friendIDs, id: \.self) { id in
+                        Text("ID")
+                            .onAppear {
+                                print("Added text: ", id)
+                            }
+                    }
                 }
                 
                 Spacer()
@@ -76,7 +101,7 @@ struct SmileNotesView: View {
             
         }
         .onAppear {
-            loadMessages()
+            loadData()
             switchCard()
         }
     }
@@ -89,7 +114,7 @@ struct SmileNotesView: View {
         cards[index].hidden = false
     }
     
-    private func loadMessages() {
+    private func loadData() {
         cards = []
         guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
         let user = UserDataSource().getUser(id: id)
@@ -98,7 +123,13 @@ struct SmileNotesView: View {
             var card = SmileNotesCard(message: message)
             card.hidden = true
             cards.append(card)
+            
+            if (friendIDs.contains(message.senderID) == false) {
+                friendIDs.append(message.senderID)
+                friendNames.append(message.senderName)
+            }
         }
+    
     }
     
 }
