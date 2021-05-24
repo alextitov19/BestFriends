@@ -10,7 +10,9 @@ import Amplify
 import SwiftUI
 
 struct Notifications: View {
-
+    @State private var landingPageNotifications = true
+    @State private var blueChatNotifications = true
+   
     var body: some View {
         
         ZStack {
@@ -26,43 +28,41 @@ struct Notifications: View {
                     .font(.title)
             
                 Spacer().frame(height: 25)
-                VStack {
+               
                 
-                  
-                    Spacer()
-                        .frame(height: 30)
-                
-                    NavigationLink(
-                        destination: ResetPassword(),
-                        label: {
-                            Text("LandingPage Notifications")
-                        })
+                Text("Dont remove lp notifications")
                     .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .cornerRadius(25)
+                    .font(.system(size: 25).italic())
                     
-                      
+                
+                VStack {
                     
-                      Spacer()
-                          .frame(height: 75)
-                  
-                      NavigationLink(
-                          destination: ChangeEmail(),
-                          label: {
-                              Text("Blue-Chat 'messages' Notifications")
-                          })
-                      .frame(width: 300, height: 50, alignment: .center)
-                      .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                      .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                      .cornerRadius(25)
-                      
                     Spacer()
-                        .frame(height: 30)
-                 
+                        .frame(height: 75)
+                   
+                        Toggle("LandingPage Notifications", isOn: $landingPageNotifications)
+                           
+                            .frame(width: 375, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .cornerRadius(25)
+                            .font(.system(size: 25, weight: .semibold))
+                           
+                        
+                    Spacer()
+                        .frame(height: 50)
+                   
+                        
+                    Toggle("Blue-Chat Notifications", isOn: $blueChatNotifications)
+                       
+                        .frame(width: 375, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .cornerRadius(25)
+                        .font(.system(size: 25, weight: .semibold))
+                       
                     
-                    
-                    
+              
                     
                     Spacer()
                         .frame(height: 100)
@@ -78,4 +78,5 @@ struct Notifications_Previews : PreviewProvider {
         Notifications()
     }
 }
+
 
