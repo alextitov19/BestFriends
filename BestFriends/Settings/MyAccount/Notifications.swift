@@ -27,15 +27,26 @@ struct Notifications: View {
                     .foregroundColor(.white)
                     .font(.title)
             
-                Spacer().frame(height: 25)
+                Spacer().frame(height: 50)
                
                 
-                Text("Hold Up! Here's the Dealio - BestFriends is designed to help you track down your friends when you NEED them. If you turn off 'Homepage Notifications' we can NOT find your friends in a timely manner.")
-                    .frame(width: 415, height: 250, alignment: .center)
+                Text("Hold Up! Here's the Dealio ... ")
+                    .frame(width: 415, height: 30, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                     .cornerRadius(25)
                     .font(.system(size: 25).italic())
-                    
+                
+                Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off 'Homepage Notifications' we can NOT find your friends in a timely manner.")
+                    .frame(width: 415, height: 200, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                    .cornerRadius(25)
+                    .font(.system(size: 25).italic())
+                
+                
+                
+                
+                
+                
                 
                 VStack {
 
