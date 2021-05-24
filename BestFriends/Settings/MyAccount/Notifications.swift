@@ -30,19 +30,20 @@ struct Notifications: View {
                 Spacer().frame(height: 25)
                
                 
-                Text("Dont remove lp notifications")
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                Text("Hold Up! Here's the Dealio - BestFriends is designed to help you track down your friends when you NEED them. If you turn off 'Homepage Notifications' we can NOT find your friends in a timely manner.")
+                    .frame(width: 415, height: 250, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                     .cornerRadius(25)
                     .font(.system(size: 25).italic())
                     
                 
                 VStack {
+
                     
                     Spacer()
                         .frame(height: 75)
                    
-                        Toggle("LandingPage Notifications", isOn: $landingPageNotifications)
+                        Toggle("HomePage Notifications", isOn: $landingPageNotifications)
                            
                             .frame(width: 375, height: 50, alignment: .center)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
