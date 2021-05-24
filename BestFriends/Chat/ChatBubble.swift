@@ -37,7 +37,9 @@ struct ChatBubble: View {
                 
                 Image(uiImage: uiimage)
                     .resizable()
-                    .aspectRatio(uiimage.size, contentMode: .fill)
+                    .scaledToFit()
+                    .frame(width: 300, height: 200)
+//                    .aspectRatio(uiimage.size, contentMode: .fill)
                     .gesture(LongPressGesture(minimumDuration: 1)
                     .onEnded { _ in
                         showingActionSheet = true
