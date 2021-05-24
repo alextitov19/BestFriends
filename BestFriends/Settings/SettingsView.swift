@@ -43,7 +43,7 @@ struct SettingsView: View {
                 NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("BestFriends Walk-through")
+                            Text("BestFriends App Walk-through")
                         })
                         .frame(width: 325, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -303,15 +303,17 @@ struct SettingsView: View {
         
         .navigationBarTitle("")
         .navigationBarHidden(true)
+            
+            
+            }
+        }
+    }
 }
 
+struct SettingsView_Previews : PreviewProvider {
+    static var previews: some View {
+        SettingsView()
+    }
 }
 
-//
-//struct SettingsView_Previews : PreviewProvider {
-//    static var previews: some View {
-//        SettingsView()
-//    }
-}
-}
 
