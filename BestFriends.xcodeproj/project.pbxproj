@@ -177,6 +177,7 @@
 		CF436A272658D66F00B69506 /* BlueModePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A262658D66F00B69506 /* BlueModePages.swift */; };
 		CF436A2926599EE000B69506 /* PreLoadPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2826599EE000B69506 /* PreLoadPage.swift */; };
 		CF436A30265A0FF400B69506 /* BlueSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2F265A0FF400B69506 /* BlueSurvey.swift */; };
+		CF436A32265B40DD00B69506 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A31265B40DD00B69506 /* Notifications.swift */; };
 		D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1577796264CBBAD00B6551A /* ChangeEmail.swift */; };
 		D157779B264D086000B6551A /* SmileNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779A264D086000B6551A /* SmileNotesView.swift */; };
 		D157779F264D8EA400B6551A /* ChangeChatBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779E264D8EA400B6551A /* ChangeChatBackground.swift */; };
@@ -299,6 +300,7 @@
 		CF436A262658D66F00B69506 /* BlueModePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModePages.swift; sourceTree = "<group>"; };
 		CF436A2826599EE000B69506 /* PreLoadPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoadPage.swift; sourceTree = "<group>"; };
 		CF436A2F265A0FF400B69506 /* BlueSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSurvey.swift; sourceTree = "<group>"; };
+		CF436A31265B40DD00B69506 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		D1577796264CBBAD00B6551A /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
 		D157779A264D086000B6551A /* SmileNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesView.swift; sourceTree = "<group>"; };
 		D157779E264D8EA400B6551A /* ChangeChatBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatBackground.swift; sourceTree = "<group>"; };
@@ -600,6 +602,7 @@
 				D1577796264CBBAD00B6551A /* ChangeEmail.swift */,
 				D1E3CFE226543C4D00A26779 /* ChangePIN.swift */,
 				D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */,
+				CF436A31265B40DD00B69506 /* Notifications.swift */,
 			);
 			path = MyAccount;
 			sourceTree = "<group>";
@@ -957,6 +960,7 @@
 				C0D408EDC638CE85970F205A /* Message.swift in Sources */,
 				1E8DC087BEF1F92F47CEE099 /* ReportedMessage.swift in Sources */,
 				15C914E3BDA25500D050B277 /* Room.swift in Sources */,
+				CF436A32265B40DD00B69506 /* Notifications.swift in Sources */,
 				CF436A272658D66F00B69506 /* BlueModePages.swift in Sources */,
 				46791643C6EBAF6EB2B027C6 /* User.swift in Sources */,
 				CF436A2926599EE000B69506 /* PreLoadPage.swift in Sources */,
