@@ -42,12 +42,15 @@ struct SmileNotesView: View {
                     
                 }
                 
-                ZStack {
+                VStack {
                     ForEach(friendIDs, id: \.self) { id in
-                        Text("ID")
-                            .onAppear {
-                                print("Added text: ", id)
-                            }
+                        Text(friendNames[friendIDs.firstIndex(of: id) ?? 0])
+                            .frame(width: 200, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .background(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
+                            .cornerRadius(30)
+                            .isHidden(hidingFriendButtons)
+
                     }
                 }
                 
