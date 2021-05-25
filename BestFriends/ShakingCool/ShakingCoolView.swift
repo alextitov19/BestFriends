@@ -23,25 +23,21 @@ struct ShakingCoolView: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1))
+            Image("purpleBackground")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
             
             VStack {
                 // MARK: Header
                 HStack {
-                    Text("Add Image")
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .font(.system(size: 40, weight: .heavy))
-                        .onTapGesture {
-                            showingImagePicker = true
-                        }
-                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                            ImagePicker(image: self.$inputImage)
-                        }
+                    Text("Shaking Cool")
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 40, weight: .thin))
                 }
                 
                 
-                Spacer().frame(height: 10)
+                Spacer().frame(height: 30)
 
                 ScrollView {
                     ForEach(shakingCoolLinks, id: \.self) { link in
@@ -51,13 +47,36 @@ struct ShakingCoolView: View {
                             .frame(height: 200)
                             .onTapGesture {
                                 shakingCoolDataSource.deleteImage(id: link)
+                                showingImagePicker = true
                             }
                         
+                        Spacer()
+                            .frame(height: 30)
                         
                     }
                 }
                 
                 Spacer()
+                
+               Text("You can delete/replace an image by tapping it")
+                .font(.system(size: 20, weight: .thin))
+                .foregroundColor(.white)
+                
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("Add Image")
+                    .frame(width: 150, height: 50, alignment: .center)
+                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 25, weight: .regular))
+                    .cornerRadius(25)
+                    .onTapGesture {
+                        showingImagePicker = true
+                    }
+                    .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                        ImagePicker(image: self.$inputImage)
+                    }
                 
             }
             
