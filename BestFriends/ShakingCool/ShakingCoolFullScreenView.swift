@@ -34,7 +34,7 @@ struct ShakingCoolFullScreenView: View {
             image
                 .resizable()
                 .ignoresSafeArea()
-                .scaledToFit()
+                .scaledToFill()
             
         }
     }

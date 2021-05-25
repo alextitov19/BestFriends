@@ -1301,7 +1301,8 @@ struct SignUpQuestionPage3: View {
                         adPreference: adPref,
                         deviceFCMToken: " ",
                         isOnline: true,
-                        secretPin: currentPin)
+                        secretPin: currentPin,
+                        shakingCoolSeconds: 2)
                     
                     
                     userMamager.create(user)

@@ -167,6 +167,7 @@ mutation CreateUser(
       attachmentPath
     }
     shakingCoolLinks
+    shakingCoolSeconds
     createdAt
     updatedAt
   }
@@ -198,6 +199,7 @@ mutation UpdateUser(
       attachmentPath
     }
     shakingCoolLinks
+    shakingCoolSeconds
     createdAt
     updatedAt
   }
@@ -229,6 +231,7 @@ mutation DeleteUser(
       attachmentPath
     }
     shakingCoolLinks
+    shakingCoolSeconds
     createdAt
     updatedAt
   }

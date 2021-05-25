@@ -146,6 +146,7 @@ subscription OnCreateUser {
       attachmentPath
     }
     shakingCoolLinks
+    shakingCoolSeconds
     createdAt
     updatedAt
   }
@@ -174,6 +175,7 @@ subscription OnUpdateUser {
       attachmentPath
     }
     shakingCoolLinks
+    shakingCoolSeconds
     createdAt
     updatedAt
   }
@@ -202,6 +204,7 @@ subscription OnDeleteUser {
       attachmentPath
     }
     shakingCoolLinks
+    shakingCoolSeconds
     createdAt
     updatedAt
   }
