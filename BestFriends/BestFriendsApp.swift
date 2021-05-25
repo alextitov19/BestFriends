@@ -40,7 +40,7 @@ struct BestFriendsApp: App {
                 RoomsView()
                     .environmentObject(sessionManager)
             case .smileNotes:
-                ShakingCoolView()
+                SmileNotesView()
                     .environmentObject(sessionManager)
             case .settings:
                 SettingsView()

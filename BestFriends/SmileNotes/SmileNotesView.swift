@@ -9,7 +9,7 @@ struct SmileNotesView: View {
     @State var displayedCards: [SmileNotesCard] = []
     @State var index: Int = 0
     @State var selectedFriendID: String = "All Friends"
-    @State var selectedFriendName: String = "All Friends"
+    @State var selectedFriendName: String = "Filter By Friend"
     @State var hidingFriendButtons: Bool = true
     @State var friendIDs: [String] = []
     @State var friendNames: [String] = []
@@ -44,13 +44,24 @@ struct SmileNotesView: View {
                 }
                 
                 VStack {
+                    Text("All Friends")
+                        .frame(width: 130, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                        .background(Color(.clear))
+                        .cornerRadius(30)
+                        .onTapGesture {
+                            selectedFriendID = "All Friends"
+                            selectedFriendName = "All Friends"
+                            hidingFriendButtons = true
+                            newSelection()
+                        }
+                    
                     ForEach(friendIDs, id: \.self) { id in
                         Text(friendNames[friendIDs.firstIndex(of: id) ?? 0])
-                            .frame(width: 200, height: 50, alignment: .center)
+                            .frame(width: 130, height: 50, alignment: .center)
                             .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                            .background(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
+                            .background(Color(.clear))
                             .cornerRadius(30)
-                            .isHidden(hidingFriendButtons)
                             .onTapGesture {
                                 selectedFriendID = id
                                 selectedFriendName = friendNames[friendIDs.firstIndex(of: id) ?? 0]
@@ -60,6 +71,9 @@ struct SmileNotesView: View {
 
                     }
                 }
+                .border(Color.white, width: 1)
+                .isHidden(hidingFriendButtons)
+
                 
                 Spacer()
                 
