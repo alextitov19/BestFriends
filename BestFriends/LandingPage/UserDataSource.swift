@@ -11,7 +11,7 @@ import Amplify
 struct UserDataSource {
         
     func getUser(id: String) -> User {
-        var finaluser = User(id: " ", firstName: " ", lastName: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], shakingCoolSeconds: 2)
+        var finaluser = User(id: " ", firstName: " ", lastName: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [])
 
         let group = DispatchGroup()
         group.enter()

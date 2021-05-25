@@ -13,11 +13,13 @@ struct ShakingCoolFullScreenView: View {
     @State var image: Image = Image("Loading")
     @State var index: Int = 0
     
+    
+    
     let shakingCoolDataSource = ShakingCoolDataSource()
     
     @State var links: [String] = []
-    let timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
-
+    var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    
     var body: some View {
         ZStack {
             Button("Dismiss Modal") {
@@ -26,9 +28,6 @@ struct ShakingCoolFullScreenView: View {
             .onReceive(timer) { time in
                 print("Switching image")
                 cycleImages()
-            }
-            .onAppear {
-                loadData()
             }
             
             image
@@ -46,7 +45,7 @@ struct ShakingCoolFullScreenView: View {
         print("Got user: ", user)
         guard let userlinks = user.shakingCoolLinks else { return }
         links = userlinks
-        print("THe links are: ", links)
+        print("The links are: ", links)
     }
     
     private func cycleImages() {

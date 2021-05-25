@@ -36,6 +36,5 @@ type User @model {
   hiddenRooms: [String]
   smileNotes: [Message]
   shakingCoolLinks: [String]
-  shakingCoolSeconds: Float!
 }
 

@@ -18,7 +18,6 @@ public struct User: Model {
   public var hiddenRooms: [String]?
   public var smileNotes: [Message]?
   public var shakingCoolLinks: [String]?
-  public var shakingCoolSeconds: Double
   
   public init(id: String = UUID().uuidString,
       firstName: String,
@@ -34,8 +33,7 @@ public struct User: Model {
       rooms: [String]? = [],
       hiddenRooms: [String]? = [],
       smileNotes: [Message]? = [],
-      shakingCoolLinks: [String]? = [],
-      shakingCoolSeconds: Double) {
+      shakingCoolLinks: [String]? = []) {
       self.id = id
       self.firstName = firstName
       self.lastName = lastName
@@ -51,6 +49,5 @@ public struct User: Model {
       self.hiddenRooms = hiddenRooms
       self.smileNotes = smileNotes
       self.shakingCoolLinks = shakingCoolLinks
-      self.shakingCoolSeconds = shakingCoolSeconds
   }
 }
