@@ -34,7 +34,7 @@ struct SettingsView: View {
                     Spacer().frame(height: 40)
                    
                     
-                    Text("BestFriend Feature's Walk-throughs and Setups")
+                    Text("BestFriend 'Feature Walk-throughs' and Setups")
                         .font(.system(size: 32))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
