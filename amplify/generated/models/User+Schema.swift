@@ -47,7 +47,7 @@ extension User {
       .field(user.hiddenRooms, is: .optional, ofType: .embeddedCollection(of: String.self)),
       .field(user.smileNotes, is: .optional, ofType: .embeddedCollection(of: Message.self)),
       .field(user.shakingCoolLinks, is: .optional, ofType: .embeddedCollection(of: String.self)),
-      .field(user.shakingCoolSeconds, is: .required, ofType: .int)
+      .field(user.shakingCoolSeconds, is: .required, ofType: .double)
     )
     }
 }

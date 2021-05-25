@@ -14,7 +14,8 @@ struct ShakingCoolView: View {
 
     @State var showingImagePicker = false
     @State var inputImage: UIImage?
-    
+    @State var secondsChange: Double = 0
+    var shakingCoolSeconds: Double = 0
     var shakingCoolDataSource = ShakingCoolDataSource()
     
     init() {
@@ -62,6 +63,8 @@ struct ShakingCoolView: View {
                 
                 Spacer()
                 
+                VStack {
+                
                Text("You can delete/replace an image by tapping it")
                 .font(.system(size: 20, weight: .thin))
                 .foregroundColor(.white)
@@ -69,20 +72,55 @@ struct ShakingCoolView: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("Add Image")
-                    .frame(width: 150, height: 50, alignment: .center)
-                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 25, weight: .regular))
-                    .cornerRadius(25)
-                    .onTapGesture {
-                        if howManyLeft() > 0 {
-                            showingImagePicker = true
+                Text("You can see each image for \(String(format: "%.1f", shakingCoolSeconds + secondsChange)) seconds")
+                 .font(.system(size: 20, weight: .thin))
+                 .foregroundColor(.white)
+                    
+                    Spacer()
+                        .frame(height: 10)
+                }
+                
+                HStack {
+                    
+                    Text("-")
+                        .frame(width: 150, height: 50, alignment: .center)
+                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 25, weight: .regular))
+                        .cornerRadius(25)
+                        .onTapGesture {
+                            changeSeconds(change: -0.5)
                         }
-                    }
-                    .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                        ImagePicker(image: self.$inputImage)
-                    }
+                    
+                    Spacer()
+                
+                    Text("Add Image")
+                        .frame(width: 150, height: 50, alignment: .center)
+                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 25, weight: .regular))
+                        .cornerRadius(25)
+                        .onTapGesture {
+                            if howManyLeft() > 0 {
+                                showingImagePicker = true
+                            }
+                        }
+                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                            ImagePicker(image: self.$inputImage)
+                        }
+                    
+                    Text("+")
+                        .frame(width: 150, height: 50, alignment: .center)
+                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 25, weight: .regular))
+                        .cornerRadius(25)
+                        .onTapGesture {
+                            changeSeconds(change: 0.5)
+                        }
+                    
+                    Spacer()
+                }
                 
             }
             
@@ -94,7 +132,6 @@ struct ShakingCoolView: View {
         guard let inputImage = inputImage else { return }
         print("Got the image")
         ShakingCoolDataSource().uploadImage(image: inputImage)
-        
     }
     
     private mutating func reloadData() {
@@ -104,6 +141,7 @@ struct ShakingCoolView: View {
         guard let links = user.shakingCoolLinks else { return }
         self.shakingCoolLinks = links
         print("Shaking Cool Links: ", shakingCoolLinks)
+        self.shakingCoolSeconds = user.shakingCoolSeconds
     }
     
     private func howManyLeft() -> Int {
@@ -112,6 +150,14 @@ struct ShakingCoolView: View {
         let first = user.friends?.count ?? 0
         let second = user.shakingCoolLinks?.count ?? 0
         return 2 + first - second
+    }
+    
+    private func changeSeconds(change: Double) {
+        guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
+        var user = UserDataSource().getUser(id: id)
+        user.shakingCoolSeconds += change
+        self.secondsChange += change
+        UserDataSource().updateUser(user: user)
     }
 }
 
