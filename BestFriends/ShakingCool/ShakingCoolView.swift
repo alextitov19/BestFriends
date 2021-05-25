@@ -30,11 +30,15 @@ struct ShakingCoolView: View {
             
             VStack {
                 // MARK: Header
-                HStack {
-                    Text("Shaking Cool")
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 40, weight: .thin))
-                }
+                Text("Shaking Cool")
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 40, weight: .thin))
+                
+                Spacer().frame(height: 20)
+                
+                Text("You can add \(howManyLeft()) more images")
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 20, weight: .thin))
                 
                 
                 Spacer().frame(height: 30)
@@ -46,8 +50,8 @@ struct ShakingCoolView: View {
                             .scaledToFit()
                             .frame(height: 200)
                             .onTapGesture {
-                                shakingCoolDataSource.deleteImage(id: link)
-                                showingImagePicker = true
+                                    shakingCoolDataSource.deleteImage(id: link)
+                                    showingImagePicker = true
                             }
                         
                         Spacer()
@@ -72,7 +76,9 @@ struct ShakingCoolView: View {
                     .font(.system(size: 25, weight: .regular))
                     .cornerRadius(25)
                     .onTapGesture {
-                        showingImagePicker = true
+                        if howManyLeft() > 0 {
+                            showingImagePicker = true
+                        }
                     }
                     .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                         ImagePicker(image: self.$inputImage)
@@ -98,6 +104,14 @@ struct ShakingCoolView: View {
         guard let links = user.shakingCoolLinks else { return }
         self.shakingCoolLinks = links
         print("Shaking Cool Links: ", shakingCoolLinks)
+    }
+    
+    private func howManyLeft() -> Int {
+        guard let id = Amplify.Auth.getCurrentUser()?.username else { return 0 }
+        let user = UserDataSource().getUser(id: id)
+        let first = user.friends?.count ?? 0
+        let second = user.shakingCoolLinks?.count ?? 0
+        return 2 + first - second
     }
 }
 
