@@ -74,7 +74,7 @@ struct SettingsView: View {
                    
                    
                         NavigationLink(
-                            destination: BlueModePage1(),
+                            destination: ShakingCoolView(),
                             label: {
                                 Text("ShakingCool SetUp")
                             })
