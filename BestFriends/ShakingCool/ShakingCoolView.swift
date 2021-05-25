@@ -10,9 +10,12 @@ import Amplify
 
 struct ShakingCoolView: View {
     
-    @State var shakingCoolImages: [UIImage] = []
+    var shakingCoolLinks: [String] = []
+
     @State var showingImagePicker = false
     @State var inputImage: UIImage?
+    
+    var shakingCoolDataSource = ShakingCoolDataSource()
     
     init() {
         reloadData()
@@ -40,8 +43,11 @@ struct ShakingCoolView: View {
                 
                 Spacer()
                 
-                ForEach(shakingCoolImages, id: \.self) { uiimage in
-                    Image(uiImage: uiimage)
+                ForEach(shakingCoolLinks, id: \.self) { link in
+                    Image(uiImage: shakingCoolDataSource.downloadImage(key: link))
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300, height: 200)
                 }
                 
             }
@@ -57,19 +63,13 @@ struct ShakingCoolView: View {
         
     }
     
-    private func reloadData() {
-        shakingCoolImages = []
+    private mutating func reloadData() {
         guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
         let user = UserDataSource().getUser(id: id)
-        let shakingCoolLinks = user.shakingCoolLinks
-        if shakingCoolLinks.count > 0 {
-            for link in shakingCoolLinks {
-                let uiimage = ShakingCoolDataSource().downloadImage(key: link)
-                shakingCoolImages.append(uiimage)
-                print("Image count, ", shakingCoolImages.count)
-            }
-        }
-        
+        print("Got user: ", user)
+        guard let links = user.shakingCoolLinks else { return }
+        self.shakingCoolLinks = links
+        print("Shaking Cool Links: ", shakingCoolLinks)
     }
 }
 

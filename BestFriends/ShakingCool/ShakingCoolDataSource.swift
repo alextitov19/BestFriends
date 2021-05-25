@@ -51,7 +51,9 @@ struct ShakingCoolDataSource {
                     print("Completed: \(data)")
                     guard let userid = Amplify.Auth.getCurrentUser()?.username else { return }
                     var user = UserDataSource().getUser(id: userid)
-                    user.shakingCoolLinks.append(key)
+                    guard var links = user.shakingCoolLinks else { return }
+                    links.append(key)
+                    user.shakingCoolLinks = links
                     UserDataSource().updateUser(user: user)
                 case .failure(let storageError):
                     print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")

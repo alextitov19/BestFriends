@@ -626,7 +626,7 @@ public struct DeleteReportedMessageInput: GraphQLMapConvertible {
 public struct CreateUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [MessageInput?]? = nil, shakingCoolLinks: [String]? = nil) {
+  public init(id: GraphQLID? = nil, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [MessageInput?]? = nil, shakingCoolLinks: [String?]? = nil) {
     graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes, "shakingCoolLinks": shakingCoolLinks]
   }
 
@@ -756,9 +756,9 @@ public struct CreateUserInput: GraphQLMapConvertible {
     }
   }
 
-  public var shakingCoolLinks: [String]? {
+  public var shakingCoolLinks: [String?]? {
     get {
-      return graphQLMap["shakingCoolLinks"] as! [String]?
+      return graphQLMap["shakingCoolLinks"] as! [String?]?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "shakingCoolLinks")
@@ -965,7 +965,7 @@ public struct ModelBooleanInput: GraphQLMapConvertible {
 public struct UpdateUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, firstName: String? = nil, lastName: String? = nil, birthday: String? = nil, pronouns: String? = nil, location: String? = nil, adPreference: String? = nil, deviceFcmToken: String? = nil, isOnline: Bool? = nil, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [MessageInput?]? = nil, shakingCoolLinks: [String]? = nil) {
+  public init(id: GraphQLID, firstName: String? = nil, lastName: String? = nil, birthday: String? = nil, pronouns: String? = nil, location: String? = nil, adPreference: String? = nil, deviceFcmToken: String? = nil, isOnline: Bool? = nil, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [MessageInput?]? = nil, shakingCoolLinks: [String?]? = nil) {
     graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes, "shakingCoolLinks": shakingCoolLinks]
   }
 
@@ -1095,9 +1095,9 @@ public struct UpdateUserInput: GraphQLMapConvertible {
     }
   }
 
-  public var shakingCoolLinks: [String]? {
+  public var shakingCoolLinks: [String?]? {
     get {
-      return graphQLMap["shakingCoolLinks"] as! [String]?
+      return graphQLMap["shakingCoolLinks"] as! [String?]?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "shakingCoolLinks")
@@ -3144,7 +3144,7 @@ public final class CreateUserMutation: GraphQLMutation {
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
-        GraphQLField("shakingCoolLinks", type: .list(.nonNull(.scalar(String.self)))),
+        GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -3155,7 +3155,7 @@ public final class CreateUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -3294,9 +3294,9 @@ public final class CreateUserMutation: GraphQLMutation {
         }
       }
 
-      public var shakingCoolLinks: [String]? {
+      public var shakingCoolLinks: [String?]? {
         get {
-          return snapshot["shakingCoolLinks"] as? [String]
+          return snapshot["shakingCoolLinks"] as? [String?]
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
@@ -3472,7 +3472,7 @@ public final class UpdateUserMutation: GraphQLMutation {
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
-        GraphQLField("shakingCoolLinks", type: .list(.nonNull(.scalar(String.self)))),
+        GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -3483,7 +3483,7 @@ public final class UpdateUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -3622,9 +3622,9 @@ public final class UpdateUserMutation: GraphQLMutation {
         }
       }
 
-      public var shakingCoolLinks: [String]? {
+      public var shakingCoolLinks: [String?]? {
         get {
-          return snapshot["shakingCoolLinks"] as? [String]
+          return snapshot["shakingCoolLinks"] as? [String?]
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
@@ -3800,7 +3800,7 @@ public final class DeleteUserMutation: GraphQLMutation {
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
-        GraphQLField("shakingCoolLinks", type: .list(.nonNull(.scalar(String.self)))),
+        GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -3811,7 +3811,7 @@ public final class DeleteUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -3950,9 +3950,9 @@ public final class DeleteUserMutation: GraphQLMutation {
         }
       }
 
-      public var shakingCoolLinks: [String]? {
+      public var shakingCoolLinks: [String?]? {
         get {
-          return snapshot["shakingCoolLinks"] as? [String]
+          return snapshot["shakingCoolLinks"] as? [String?]
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
@@ -5266,7 +5266,7 @@ public final class GetUserQuery: GraphQLQuery {
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
-        GraphQLField("shakingCoolLinks", type: .list(.nonNull(.scalar(String.self)))),
+        GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -5277,7 +5277,7 @@ public final class GetUserQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -5416,9 +5416,9 @@ public final class GetUserQuery: GraphQLQuery {
         }
       }
 
-      public var shakingCoolLinks: [String]? {
+      public var shakingCoolLinks: [String?]? {
         get {
-          return snapshot["shakingCoolLinks"] as? [String]
+          return snapshot["shakingCoolLinks"] as? [String?]
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
@@ -5642,7 +5642,7 @@ public final class ListUsersQuery: GraphQLQuery {
           GraphQLField("rooms", type: .list(.scalar(String.self))),
           GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
           GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
-          GraphQLField("shakingCoolLinks", type: .list(.nonNull(.scalar(String.self)))),
+          GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
           GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
         ]
@@ -5653,7 +5653,7 @@ public final class ListUsersQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String]? = nil, createdAt: String, updatedAt: String) {
+        public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
           self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
@@ -5792,9 +5792,9 @@ public final class ListUsersQuery: GraphQLQuery {
           }
         }
 
-        public var shakingCoolLinks: [String]? {
+        public var shakingCoolLinks: [String?]? {
           get {
-            return snapshot["shakingCoolLinks"] as? [String]
+            return snapshot["shakingCoolLinks"] as? [String?]
           }
           set {
             snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
@@ -7477,7 +7477,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
-        GraphQLField("shakingCoolLinks", type: .list(.nonNull(.scalar(String.self)))),
+        GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -7488,7 +7488,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -7627,9 +7627,9 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         }
       }
 
-      public var shakingCoolLinks: [String]? {
+      public var shakingCoolLinks: [String?]? {
         get {
-          return snapshot["shakingCoolLinks"] as? [String]
+          return snapshot["shakingCoolLinks"] as? [String?]
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
@@ -7796,7 +7796,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
-        GraphQLField("shakingCoolLinks", type: .list(.nonNull(.scalar(String.self)))),
+        GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -7807,7 +7807,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -7946,9 +7946,9 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         }
       }
 
-      public var shakingCoolLinks: [String]? {
+      public var shakingCoolLinks: [String?]? {
         get {
-          return snapshot["shakingCoolLinks"] as? [String]
+          return snapshot["shakingCoolLinks"] as? [String?]
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
@@ -8115,7 +8115,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         GraphQLField("rooms", type: .list(.scalar(String.self))),
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
-        GraphQLField("shakingCoolLinks", type: .list(.nonNull(.scalar(String.self)))),
+        GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -8126,7 +8126,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String]? = nil, createdAt: String, updatedAt: String) {
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
         self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
@@ -8265,9 +8265,9 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         }
       }
 
-      public var shakingCoolLinks: [String]? {
+      public var shakingCoolLinks: [String?]? {
         get {
-          return snapshot["shakingCoolLinks"] as? [String]
+          return snapshot["shakingCoolLinks"] as? [String?]
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
