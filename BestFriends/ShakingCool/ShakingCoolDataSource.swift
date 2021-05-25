@@ -34,6 +34,10 @@ struct ShakingCoolDataSource {
         
         group.wait()
         
+        if image.size.height > image.size.width {
+            image = image.rotate(radians: (.pi/2))
+        }
+        
         return image
     }
     

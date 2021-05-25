@@ -42,15 +42,13 @@ struct ShakingCoolView: View {
                 
                 
                 Spacer().frame(height: 40)
-                
+
                 ForEach(shakingCoolLinks, id: \.self) { link in
                     Image(uiImage: shakingCoolDataSource.downloadImage(key: link))
                         .resizable()
                         .scaledToFit()
-                        .rotationEffect(.degrees(-90))
-                        .frame(width: 200, height: 300)
+                        .frame(height: 200)
                     
-                    Spacer().frame(height: 30)
                 }
                 
                 Spacer()
