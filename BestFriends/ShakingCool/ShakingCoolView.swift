@@ -45,7 +45,7 @@ struct ShakingCoolView: View {
 
                 ScrollView {
                     ForEach(shakingCoolLinks, id: \.self) { link in
-                        Image(uiImage: shakingCoolDataSource.downloadImage(key: link, rotating: true))
+                        Image(uiImage: shakingCoolDataSource.downloadImage(key: link, rotating: true, tall: false))
                             .resizable()
                             .scaledToFit()
                             .frame(height: 200)

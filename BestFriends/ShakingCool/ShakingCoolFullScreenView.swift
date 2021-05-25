@@ -53,7 +53,7 @@ struct ShakingCoolFullScreenView: View {
         if index == links.count {
             presentationMode.wrappedValue.dismiss()
         } else if index < links.count {
-            image = Image(uiImage: shakingCoolDataSource.downloadImage(key: links[index], rotating: false))
+            image = Image(uiImage: shakingCoolDataSource.downloadImage(key: links[index], rotating: true, tall: true))
             index += 1
         }
     }

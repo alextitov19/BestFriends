@@ -9,7 +9,7 @@ import SwiftUI
 import Amplify
 
 struct ShakingCoolDataSource {
-    func downloadImage(key: String, rotating: Bool) -> UIImage {
+    func downloadImage(key: String, rotating: Bool, tall: Bool) -> UIImage {
         var image = UIImage()
         
         let group = DispatchGroup()
@@ -33,10 +33,18 @@ struct ShakingCoolDataSource {
         })
         
         group.wait()
-        
-        if (rotating && image.size.height > image.size.width) {
-            image = image.rotate(radians: (.pi/2))
+        if rotating {
+            if tall {
+                if (image.size.width > image.size.height) {
+                    image = image.rotate(radians: (.pi/2))
+                }
+            } else {
+                if (image.size.height > image.size.width) {
+                    image = image.rotate(radians: (.pi/2))
+                }
+            }
         }
+        
         
         return image
     }
