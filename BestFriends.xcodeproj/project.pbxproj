@@ -81,6 +81,7 @@
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
 		7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */; };
 		7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */; };
+		7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
 		7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */; };
 		7A6A4D07262B8A5000561D87 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4D06262B8A5000561D87 /* PlayerView.swift */; };
@@ -253,6 +254,7 @@
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
 		7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolFullScreenView.swift; sourceTree = "<group>"; };
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
 		7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundAnimation.mp4; sourceTree = "<group>"; };
 		7A6A4D06262B8A5000561D87 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
@@ -511,6 +513,7 @@
 				7AD10454265AB9BE007627FD /* DeviceShakeViewModifier.swift */,
 				7AAB4449265C619A00488983 /* ShakingCoolView.swift */,
 				7AAB444B265C6B6800488983 /* ShakingCoolDataSource.swift */,
+				7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */,
 			);
 			path = ShakingCool;
 			sourceTree = "<group>";
@@ -864,6 +867,7 @@
 				C454F27B552AE618EFF45F48 /* AmplifyModels.swift in Sources */,
 				B031E6E1EB9A9930A2A37A8E /* Message+Schema.swift in Sources */,
 				F1324683D113A7F735C673FB /* Message.swift in Sources */,
+				7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */,
 				465E146884826052FA24AA60 /* Room+Schema.swift in Sources */,
 				B4F2F53FF19090F52F04FD07 /* Room.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,

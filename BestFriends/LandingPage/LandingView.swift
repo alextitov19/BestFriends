@@ -25,6 +25,9 @@ struct LandingView: View {
     @State private var stars: [Star] = []
     @State private var starButtons: [UIButton] = []
     @State private var titleText = ""
+    
+    @State private var isShakingCoolPresented = false
+
 //    @State private var inviteMode = false
     
     @State private var selectedFriends = []
@@ -184,9 +187,10 @@ struct LandingView: View {
                
                 
             }
+            .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onAppear(perform: reloadData)
         .onShake {
-            print("Shaking shaking...")
+            isShakingCoolPresented = true
         }
     }
     
