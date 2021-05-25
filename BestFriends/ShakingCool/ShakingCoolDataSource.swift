@@ -80,4 +80,15 @@ struct ShakingCoolDataSource {
 
         return randomString
     }
+    
+    func deleteImage(id: String) {
+        guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }
+        var user = UserDataSource().getUser(id: userID)
+        guard var links = user.shakingCoolLinks else { return }
+        if links.contains(id) {
+            links.remove(at: links.firstIndex(of: id)!)
+        }
+        user.shakingCoolLinks = links
+        UserDataSource().updateUser(user: user)
+    }
 }

@@ -29,7 +29,7 @@ struct ShakingCoolView: View {
             VStack {
                 // MARK: Header
                 HStack {
-                    Text("Shaking Cool")
+                    Text("Add Image")
                         .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                         .font(.system(size: 40, weight: .heavy))
                         .onTapGesture {
@@ -41,14 +41,20 @@ struct ShakingCoolView: View {
                 }
                 
                 
-                Spacer().frame(height: 40)
+                Spacer().frame(height: 10)
 
-                ForEach(shakingCoolLinks, id: \.self) { link in
-                    Image(uiImage: shakingCoolDataSource.downloadImage(key: link))
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 200)
-                    
+                ScrollView {
+                    ForEach(shakingCoolLinks, id: \.self) { link in
+                        Image(uiImage: shakingCoolDataSource.downloadImage(key: link))
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 200)
+                            .onTapGesture {
+                                shakingCoolDataSource.deleteImage(id: link)
+                            }
+                        
+                        
+                    }
                 }
                 
                 Spacer()
