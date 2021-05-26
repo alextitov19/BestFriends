@@ -90,6 +90,7 @@
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
 		7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */; };
+		7A417EC3265ECF5900E95364 /* first.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A417EC2265ECF5900E95364 /* first.mp4 */; };
 		7A42AE42265DFCBC0007C258 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE37265DFCBB0007C258 /* User+Schema.swift */; };
 		7A42AE43265DFCBC0007C258 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE38265DFCBB0007C258 /* User.swift */; };
 		7A42AE44265DFCBC0007C258 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE39265DFCBB0007C258 /* Message+Schema.swift */; };
@@ -281,6 +282,7 @@
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
 		7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		7A417EC2265ECF5900E95364 /* first.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = first.mp4; sourceTree = "<group>"; };
 		7A42AE37265DFCBB0007C258 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
 		7A42AE38265DFCBB0007C258 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7A42AE39265DFCBB0007C258 /* Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+Schema.swift"; sourceTree = "<group>"; };
@@ -420,6 +422,7 @@
 		7A6A4D01262B866500561D87 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				7A417EC2265ECF5900E95364 /* first.mp4 */,
 				7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */,
 			);
 			path = Videos;
@@ -774,6 +777,7 @@
 				C40B21779B4A21AEE4E5C9BB /* awsconfiguration.json in Resources */,
 				FADB708799E1553410EFE827 /* amplifyconfiguration.json in Resources */,
 				371A608B589BED4B51C92A46 /* awsconfiguration.json in Resources */,
+				7A417EC3265ECF5900E95364 /* first.mp4 in Resources */,
 				242A027DC74FA98F23E36884 /* amplifyconfiguration.json in Resources */,
 				BAF6287D80906E82F5F341CE /* awsconfiguration.json in Resources */,
 				FABC7029337D477527295A4B /* amplifyconfiguration.json in Resources */,
