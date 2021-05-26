@@ -206,3 +206,33 @@ subscription OnDeleteUser {
     updatedAt
   }
 }
+subscription OnCreateAdvertisement {
+  onCreateAdvertisement {
+    id
+    category
+    videoLink
+    adLink
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateAdvertisement {
+  onUpdateAdvertisement {
+    id
+    category
+    videoLink
+    adLink
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteAdvertisement {
+  onDeleteAdvertisement {
+    id
+    category
+    videoLink
+    adLink
+    createdAt
+    updatedAt
+  }
+}

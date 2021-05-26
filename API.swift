@@ -1122,6 +1122,173 @@ public struct DeleteUserInput: GraphQLMapConvertible {
   }
 }
 
+public struct CreateAdvertisementInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID? = nil, category: String, videoLink: String, adLink: String) {
+    graphQLMap = ["id": id, "category": category, "videoLink": videoLink, "adLink": adLink]
+  }
+
+  public var id: GraphQLID? {
+    get {
+      return graphQLMap["id"] as! GraphQLID?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var category: String {
+    get {
+      return graphQLMap["category"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "category")
+    }
+  }
+
+  public var videoLink: String {
+    get {
+      return graphQLMap["videoLink"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "videoLink")
+    }
+  }
+
+  public var adLink: String {
+    get {
+      return graphQLMap["adLink"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "adLink")
+    }
+  }
+}
+
+public struct ModelAdvertisementConditionInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(category: ModelStringInput? = nil, videoLink: ModelStringInput? = nil, adLink: ModelStringInput? = nil, and: [ModelAdvertisementConditionInput?]? = nil, or: [ModelAdvertisementConditionInput?]? = nil, not: ModelAdvertisementConditionInput? = nil) {
+    graphQLMap = ["category": category, "videoLink": videoLink, "adLink": adLink, "and": and, "or": or, "not": not]
+  }
+
+  public var category: ModelStringInput? {
+    get {
+      return graphQLMap["category"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "category")
+    }
+  }
+
+  public var videoLink: ModelStringInput? {
+    get {
+      return graphQLMap["videoLink"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "videoLink")
+    }
+  }
+
+  public var adLink: ModelStringInput? {
+    get {
+      return graphQLMap["adLink"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "adLink")
+    }
+  }
+
+  public var and: [ModelAdvertisementConditionInput?]? {
+    get {
+      return graphQLMap["and"] as! [ModelAdvertisementConditionInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "and")
+    }
+  }
+
+  public var or: [ModelAdvertisementConditionInput?]? {
+    get {
+      return graphQLMap["or"] as! [ModelAdvertisementConditionInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "or")
+    }
+  }
+
+  public var not: ModelAdvertisementConditionInput? {
+    get {
+      return graphQLMap["not"] as! ModelAdvertisementConditionInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "not")
+    }
+  }
+}
+
+public struct UpdateAdvertisementInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID, category: String? = nil, videoLink: String? = nil, adLink: String? = nil) {
+    graphQLMap = ["id": id, "category": category, "videoLink": videoLink, "adLink": adLink]
+  }
+
+  public var id: GraphQLID {
+    get {
+      return graphQLMap["id"] as! GraphQLID
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var category: String? {
+    get {
+      return graphQLMap["category"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "category")
+    }
+  }
+
+  public var videoLink: String? {
+    get {
+      return graphQLMap["videoLink"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "videoLink")
+    }
+  }
+
+  public var adLink: String? {
+    get {
+      return graphQLMap["adLink"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "adLink")
+    }
+  }
+}
+
+public struct DeleteAdvertisementInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID) {
+    graphQLMap = ["id": id]
+  }
+
+  public var id: GraphQLID {
+    get {
+      return graphQLMap["id"] as! GraphQLID
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+}
+
 public struct ModelRoomFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -1507,6 +1674,77 @@ public struct ModelUserFilterInput: GraphQLMapConvertible {
   public var not: ModelUserFilterInput? {
     get {
       return graphQLMap["not"] as! ModelUserFilterInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "not")
+    }
+  }
+}
+
+public struct ModelAdvertisementFilterInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: ModelIDInput? = nil, category: ModelStringInput? = nil, videoLink: ModelStringInput? = nil, adLink: ModelStringInput? = nil, and: [ModelAdvertisementFilterInput?]? = nil, or: [ModelAdvertisementFilterInput?]? = nil, not: ModelAdvertisementFilterInput? = nil) {
+    graphQLMap = ["id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "and": and, "or": or, "not": not]
+  }
+
+  public var id: ModelIDInput? {
+    get {
+      return graphQLMap["id"] as! ModelIDInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var category: ModelStringInput? {
+    get {
+      return graphQLMap["category"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "category")
+    }
+  }
+
+  public var videoLink: ModelStringInput? {
+    get {
+      return graphQLMap["videoLink"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "videoLink")
+    }
+  }
+
+  public var adLink: ModelStringInput? {
+    get {
+      return graphQLMap["adLink"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "adLink")
+    }
+  }
+
+  public var and: [ModelAdvertisementFilterInput?]? {
+    get {
+      return graphQLMap["and"] as! [ModelAdvertisementFilterInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "and")
+    }
+  }
+
+  public var or: [ModelAdvertisementFilterInput?]? {
+    get {
+      return graphQLMap["or"] as! [ModelAdvertisementFilterInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "or")
+    }
+  }
+
+  public var not: ModelAdvertisementFilterInput? {
+    get {
+      return graphQLMap["not"] as! ModelAdvertisementFilterInput?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "not")
@@ -4067,6 +4305,399 @@ public final class DeleteUserMutation: GraphQLMutation {
   }
 }
 
+public final class CreateAdvertisementMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation CreateAdvertisement($input: CreateAdvertisementInput!, $condition: ModelAdvertisementConditionInput) {\n  createAdvertisement(input: $input, condition: $condition) {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: CreateAdvertisementInput
+  public var condition: ModelAdvertisementConditionInput?
+
+  public init(input: CreateAdvertisementInput, condition: ModelAdvertisementConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("createAdvertisement", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(CreateAdvertisement.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(createAdvertisement: CreateAdvertisement? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "createAdvertisement": createAdvertisement.flatMap { $0.snapshot }])
+    }
+
+    public var createAdvertisement: CreateAdvertisement? {
+      get {
+        return (snapshot["createAdvertisement"] as? Snapshot).flatMap { CreateAdvertisement(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "createAdvertisement")
+      }
+    }
+
+    public struct CreateAdvertisement: GraphQLSelectionSet {
+      public static let possibleTypes = ["Advertisement"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("category", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var category: String {
+        get {
+          return snapshot["category"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "category")
+        }
+      }
+
+      public var videoLink: String {
+        get {
+          return snapshot["videoLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "videoLink")
+        }
+      }
+
+      public var adLink: String {
+        get {
+          return snapshot["adLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class UpdateAdvertisementMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation UpdateAdvertisement($input: UpdateAdvertisementInput!, $condition: ModelAdvertisementConditionInput) {\n  updateAdvertisement(input: $input, condition: $condition) {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: UpdateAdvertisementInput
+  public var condition: ModelAdvertisementConditionInput?
+
+  public init(input: UpdateAdvertisementInput, condition: ModelAdvertisementConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("updateAdvertisement", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(UpdateAdvertisement.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(updateAdvertisement: UpdateAdvertisement? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "updateAdvertisement": updateAdvertisement.flatMap { $0.snapshot }])
+    }
+
+    public var updateAdvertisement: UpdateAdvertisement? {
+      get {
+        return (snapshot["updateAdvertisement"] as? Snapshot).flatMap { UpdateAdvertisement(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "updateAdvertisement")
+      }
+    }
+
+    public struct UpdateAdvertisement: GraphQLSelectionSet {
+      public static let possibleTypes = ["Advertisement"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("category", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var category: String {
+        get {
+          return snapshot["category"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "category")
+        }
+      }
+
+      public var videoLink: String {
+        get {
+          return snapshot["videoLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "videoLink")
+        }
+      }
+
+      public var adLink: String {
+        get {
+          return snapshot["adLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class DeleteAdvertisementMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation DeleteAdvertisement($input: DeleteAdvertisementInput!, $condition: ModelAdvertisementConditionInput) {\n  deleteAdvertisement(input: $input, condition: $condition) {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: DeleteAdvertisementInput
+  public var condition: ModelAdvertisementConditionInput?
+
+  public init(input: DeleteAdvertisementInput, condition: ModelAdvertisementConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("deleteAdvertisement", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(DeleteAdvertisement.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(deleteAdvertisement: DeleteAdvertisement? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "deleteAdvertisement": deleteAdvertisement.flatMap { $0.snapshot }])
+    }
+
+    public var deleteAdvertisement: DeleteAdvertisement? {
+      get {
+        return (snapshot["deleteAdvertisement"] as? Snapshot).flatMap { DeleteAdvertisement(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "deleteAdvertisement")
+      }
+    }
+
+    public struct DeleteAdvertisement: GraphQLSelectionSet {
+      public static let possibleTypes = ["Advertisement"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("category", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var category: String {
+        get {
+          return snapshot["category"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "category")
+        }
+      }
+
+      public var videoLink: String {
+        get {
+          return snapshot["videoLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "videoLink")
+        }
+      }
+
+      public var adLink: String {
+        get {
+          return snapshot["adLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
 public final class GetRoomQuery: GraphQLQuery {
   public static let operationString =
     "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    name\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
@@ -5903,6 +6534,315 @@ public final class ListUsersQuery: GraphQLQuery {
             set {
               snapshot.updateValue(newValue, forKey: "attachmentPath")
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+public final class GetAdvertisementQuery: GraphQLQuery {
+  public static let operationString =
+    "query GetAdvertisement($id: ID!) {\n  getAdvertisement(id: $id) {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var id: GraphQLID
+
+  public init(id: GraphQLID) {
+    self.id = id
+  }
+
+  public var variables: GraphQLMap? {
+    return ["id": id]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Query"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("getAdvertisement", arguments: ["id": GraphQLVariable("id")], type: .object(GetAdvertisement.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(getAdvertisement: GetAdvertisement? = nil) {
+      self.init(snapshot: ["__typename": "Query", "getAdvertisement": getAdvertisement.flatMap { $0.snapshot }])
+    }
+
+    public var getAdvertisement: GetAdvertisement? {
+      get {
+        return (snapshot["getAdvertisement"] as? Snapshot).flatMap { GetAdvertisement(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "getAdvertisement")
+      }
+    }
+
+    public struct GetAdvertisement: GraphQLSelectionSet {
+      public static let possibleTypes = ["Advertisement"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("category", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var category: String {
+        get {
+          return snapshot["category"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "category")
+        }
+      }
+
+      public var videoLink: String {
+        get {
+          return snapshot["videoLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "videoLink")
+        }
+      }
+
+      public var adLink: String {
+        get {
+          return snapshot["adLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class ListAdvertisementsQuery: GraphQLQuery {
+  public static let operationString =
+    "query ListAdvertisements($filter: ModelAdvertisementFilterInput, $limit: Int, $nextToken: String) {\n  listAdvertisements(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      category\n      videoLink\n      adLink\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+
+  public var filter: ModelAdvertisementFilterInput?
+  public var limit: Int?
+  public var nextToken: String?
+
+  public init(filter: ModelAdvertisementFilterInput? = nil, limit: Int? = nil, nextToken: String? = nil) {
+    self.filter = filter
+    self.limit = limit
+    self.nextToken = nextToken
+  }
+
+  public var variables: GraphQLMap? {
+    return ["filter": filter, "limit": limit, "nextToken": nextToken]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Query"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("listAdvertisements", arguments: ["filter": GraphQLVariable("filter"), "limit": GraphQLVariable("limit"), "nextToken": GraphQLVariable("nextToken")], type: .object(ListAdvertisement.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(listAdvertisements: ListAdvertisement? = nil) {
+      self.init(snapshot: ["__typename": "Query", "listAdvertisements": listAdvertisements.flatMap { $0.snapshot }])
+    }
+
+    public var listAdvertisements: ListAdvertisement? {
+      get {
+        return (snapshot["listAdvertisements"] as? Snapshot).flatMap { ListAdvertisement(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "listAdvertisements")
+      }
+    }
+
+    public struct ListAdvertisement: GraphQLSelectionSet {
+      public static let possibleTypes = ["ModelAdvertisementConnection"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("items", type: .list(.object(Item.selections))),
+        GraphQLField("nextToken", type: .scalar(String.self)),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(items: [Item?]? = nil, nextToken: String? = nil) {
+        self.init(snapshot: ["__typename": "ModelAdvertisementConnection", "items": items.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "nextToken": nextToken])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var items: [Item?]? {
+        get {
+          return (snapshot["items"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { Item(snapshot: $0) } } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "items")
+        }
+      }
+
+      public var nextToken: String? {
+        get {
+          return snapshot["nextToken"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "nextToken")
+        }
+      }
+
+      public struct Item: GraphQLSelectionSet {
+        public static let possibleTypes = ["Advertisement"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("category", type: .nonNull(.scalar(String.self))),
+          GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+          GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+          GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+          GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var category: String {
+          get {
+            return snapshot["category"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "category")
+          }
+        }
+
+        public var videoLink: String {
+          get {
+            return snapshot["videoLink"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "videoLink")
+          }
+        }
+
+        public var adLink: String {
+          get {
+            return snapshot["adLink"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "adLink")
+          }
+        }
+
+        public var createdAt: String {
+          get {
+            return snapshot["createdAt"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "createdAt")
+          }
+        }
+
+        public var updatedAt: String {
+          get {
+            return snapshot["updatedAt"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "updatedAt")
           }
         }
       }
@@ -8376,6 +9316,372 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
           set {
             snapshot.updateValue(newValue, forKey: "attachmentPath")
           }
+        }
+      }
+    }
+  }
+}
+
+public final class OnCreateAdvertisementSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnCreateAdvertisement {\n  onCreateAdvertisement {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onCreateAdvertisement", type: .object(OnCreateAdvertisement.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onCreateAdvertisement: OnCreateAdvertisement? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onCreateAdvertisement": onCreateAdvertisement.flatMap { $0.snapshot }])
+    }
+
+    public var onCreateAdvertisement: OnCreateAdvertisement? {
+      get {
+        return (snapshot["onCreateAdvertisement"] as? Snapshot).flatMap { OnCreateAdvertisement(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onCreateAdvertisement")
+      }
+    }
+
+    public struct OnCreateAdvertisement: GraphQLSelectionSet {
+      public static let possibleTypes = ["Advertisement"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("category", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var category: String {
+        get {
+          return snapshot["category"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "category")
+        }
+      }
+
+      public var videoLink: String {
+        get {
+          return snapshot["videoLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "videoLink")
+        }
+      }
+
+      public var adLink: String {
+        get {
+          return snapshot["adLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class OnUpdateAdvertisementSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnUpdateAdvertisement {\n  onUpdateAdvertisement {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onUpdateAdvertisement", type: .object(OnUpdateAdvertisement.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onUpdateAdvertisement: OnUpdateAdvertisement? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onUpdateAdvertisement": onUpdateAdvertisement.flatMap { $0.snapshot }])
+    }
+
+    public var onUpdateAdvertisement: OnUpdateAdvertisement? {
+      get {
+        return (snapshot["onUpdateAdvertisement"] as? Snapshot).flatMap { OnUpdateAdvertisement(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onUpdateAdvertisement")
+      }
+    }
+
+    public struct OnUpdateAdvertisement: GraphQLSelectionSet {
+      public static let possibleTypes = ["Advertisement"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("category", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var category: String {
+        get {
+          return snapshot["category"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "category")
+        }
+      }
+
+      public var videoLink: String {
+        get {
+          return snapshot["videoLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "videoLink")
+        }
+      }
+
+      public var adLink: String {
+        get {
+          return snapshot["adLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class OnDeleteAdvertisementSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnDeleteAdvertisement {\n  onDeleteAdvertisement {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onDeleteAdvertisement", type: .object(OnDeleteAdvertisement.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onDeleteAdvertisement: OnDeleteAdvertisement? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onDeleteAdvertisement": onDeleteAdvertisement.flatMap { $0.snapshot }])
+    }
+
+    public var onDeleteAdvertisement: OnDeleteAdvertisement? {
+      get {
+        return (snapshot["onDeleteAdvertisement"] as? Snapshot).flatMap { OnDeleteAdvertisement(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onDeleteAdvertisement")
+      }
+    }
+
+    public struct OnDeleteAdvertisement: GraphQLSelectionSet {
+      public static let possibleTypes = ["Advertisement"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("category", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var category: String {
+        get {
+          return snapshot["category"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "category")
+        }
+      }
+
+      public var videoLink: String {
+        get {
+          return snapshot["videoLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "videoLink")
+        }
+      }
+
+      public var adLink: String {
+        get {
+          return snapshot["adLink"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
         }
       }
     }

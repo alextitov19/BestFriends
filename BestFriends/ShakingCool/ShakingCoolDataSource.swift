@@ -98,5 +98,14 @@ struct ShakingCoolDataSource {
         }
         user.shakingCoolLinks = links
         UserDataSource().updateUser(user: user)
+        
+        Amplify.Storage.remove(key: id) { event in
+            switch event {
+            case let .success(data):
+                print("Completed: Deleted \(data)")
+            case let .failure(storageError):
+                print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+            }
+        }
     }
 }

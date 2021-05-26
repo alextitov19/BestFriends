@@ -233,3 +233,42 @@ mutation DeleteUser(
     updatedAt
   }
 }
+mutation CreateAdvertisement(
+  $input: CreateAdvertisementInput!
+  $condition: ModelAdvertisementConditionInput
+) {
+  createAdvertisement(input: $input, condition: $condition) {
+    id
+    category
+    videoLink
+    adLink
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateAdvertisement(
+  $input: UpdateAdvertisementInput!
+  $condition: ModelAdvertisementConditionInput
+) {
+  updateAdvertisement(input: $input, condition: $condition) {
+    id
+    category
+    videoLink
+    adLink
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteAdvertisement(
+  $input: DeleteAdvertisementInput!
+  $condition: ModelAdvertisementConditionInput
+) {
+  deleteAdvertisement(input: $input, condition: $condition) {
+    id
+    category
+    videoLink
+    adLink
+    createdAt
+    updatedAt
+  }
+}

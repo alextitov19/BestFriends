@@ -38,3 +38,9 @@ type User @model {
   shakingCoolLinks: [String]
 }
 
+type Advertisement @model {
+  id: ID!
+  category: String!
+  videoLink: String!
+  adLink: String!
+}
