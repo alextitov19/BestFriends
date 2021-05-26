@@ -12,12 +12,19 @@ struct ShakingCoolFullScreenView: View {
     @Environment(\.presentationMode) var presentationMode
     @State var image: Image = Image("Loading")
     @State var index: Int = 0
+    @State var isPaused = false
     
+    var images: [Image] = []
+    
+    init() {
+        loadData()
+    }
     
     
     let shakingCoolDataSource = ShakingCoolDataSource()
     
-    @State var links: [String] = []
+    var links: [String] = []
+    
     var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -34,26 +41,41 @@ struct ShakingCoolFullScreenView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+                .gesture(LongPressGesture(minimumDuration: 1)
+                .onEnded { _ in
+                    isPaused.toggle()
+                    print("Are we paused? - ", isPaused)
+                })
             
         }
     }
     
     
-    private func loadData() {
+    private mutating func loadData() {
         guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
         let user = UserDataSource().getUser(id: id)
         print("Got user: ", user)
         guard let userlinks = user.shakingCoolLinks else { return }
         links = userlinks
         print("The links are: ", links)
+        for link in links {
+            images.append(Image(uiImage: shakingCoolDataSource.downloadImage(key: link, rotating: true, tall: true)))
+            if images.count == 1 {
+                image = images[0]
+                index += 1
+            }
+        }
+        print("Inmages count: ", images.count)
     }
     
     private func cycleImages() {
         if index == links.count {
             presentationMode.wrappedValue.dismiss()
         } else if index < links.count {
-            image = Image(uiImage: shakingCoolDataSource.downloadImage(key: links[index], rotating: true, tall: true))
-            index += 1
+            if !isPaused {
+                image = images[index]
+                index += 1
+            }
         }
     }
 }
