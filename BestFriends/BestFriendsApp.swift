@@ -18,7 +18,6 @@ struct BestFriendsApp: App {
     
     init() {
         configureAmplify()
-        uploadAnAd(name: "firstAd")
         sessionManager.getCurrentAuthUser()
     }
     
