@@ -293,3 +293,36 @@ mutation DeleteAdvertisement(
     updatedAt
   }
 }
+mutation CreateManagementDocument(
+  $input: CreateManagementDocumentInput!
+  $condition: ModelManagementDocumentConditionInput
+) {
+  createManagementDocument(input: $input, condition: $condition) {
+    id
+    documents
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateManagementDocument(
+  $input: UpdateManagementDocumentInput!
+  $condition: ModelManagementDocumentConditionInput
+) {
+  updateManagementDocument(input: $input, condition: $condition) {
+    id
+    documents
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteManagementDocument(
+  $input: DeleteManagementDocumentInput!
+  $condition: ModelManagementDocumentConditionInput
+) {
+  deleteManagementDocument(input: $input, condition: $condition) {
+    id
+    documents
+    createdAt
+    updatedAt
+  }
+}

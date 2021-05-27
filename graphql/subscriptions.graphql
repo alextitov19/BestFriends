@@ -257,3 +257,27 @@ subscription OnDeleteAdvertisement {
     updatedAt
   }
 }
+subscription OnCreateManagementDocument {
+  onCreateManagementDocument {
+    id
+    documents
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateManagementDocument {
+  onUpdateManagementDocument {
+    id
+    documents
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteManagementDocument {
+  onDeleteManagementDocument {
+    id
+    documents
+    createdAt
+    updatedAt
+  }
+}

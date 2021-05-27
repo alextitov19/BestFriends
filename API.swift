@@ -1656,6 +1656,119 @@ public struct DeleteAdvertisementInput: GraphQLMapConvertible {
   }
 }
 
+public struct CreateManagementDocumentInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID? = nil, documents: [String?]? = nil) {
+    graphQLMap = ["id": id, "documents": documents]
+  }
+
+  public var id: GraphQLID? {
+    get {
+      return graphQLMap["id"] as! GraphQLID?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var documents: [String?]? {
+    get {
+      return graphQLMap["documents"] as! [String?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "documents")
+    }
+  }
+}
+
+public struct ModelManagementDocumentConditionInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(documents: ModelStringInput? = nil, and: [ModelManagementDocumentConditionInput?]? = nil, or: [ModelManagementDocumentConditionInput?]? = nil, not: ModelManagementDocumentConditionInput? = nil) {
+    graphQLMap = ["documents": documents, "and": and, "or": or, "not": not]
+  }
+
+  public var documents: ModelStringInput? {
+    get {
+      return graphQLMap["documents"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "documents")
+    }
+  }
+
+  public var and: [ModelManagementDocumentConditionInput?]? {
+    get {
+      return graphQLMap["and"] as! [ModelManagementDocumentConditionInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "and")
+    }
+  }
+
+  public var or: [ModelManagementDocumentConditionInput?]? {
+    get {
+      return graphQLMap["or"] as! [ModelManagementDocumentConditionInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "or")
+    }
+  }
+
+  public var not: ModelManagementDocumentConditionInput? {
+    get {
+      return graphQLMap["not"] as! ModelManagementDocumentConditionInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "not")
+    }
+  }
+}
+
+public struct UpdateManagementDocumentInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID, documents: [String?]? = nil) {
+    graphQLMap = ["id": id, "documents": documents]
+  }
+
+  public var id: GraphQLID {
+    get {
+      return graphQLMap["id"] as! GraphQLID
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var documents: [String?]? {
+    get {
+      return graphQLMap["documents"] as! [String?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "documents")
+    }
+  }
+}
+
+public struct DeleteManagementDocumentInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID) {
+    graphQLMap = ["id": id]
+  }
+
+  public var id: GraphQLID {
+    get {
+      return graphQLMap["id"] as! GraphQLID
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+}
+
 public struct ModelRoomFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -2175,6 +2288,59 @@ public struct ModelAdvertisementFilterInput: GraphQLMapConvertible {
   public var not: ModelAdvertisementFilterInput? {
     get {
       return graphQLMap["not"] as! ModelAdvertisementFilterInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "not")
+    }
+  }
+}
+
+public struct ModelManagementDocumentFilterInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: ModelIDInput? = nil, documents: ModelStringInput? = nil, and: [ModelManagementDocumentFilterInput?]? = nil, or: [ModelManagementDocumentFilterInput?]? = nil, not: ModelManagementDocumentFilterInput? = nil) {
+    graphQLMap = ["id": id, "documents": documents, "and": and, "or": or, "not": not]
+  }
+
+  public var id: ModelIDInput? {
+    get {
+      return graphQLMap["id"] as! ModelIDInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var documents: ModelStringInput? {
+    get {
+      return graphQLMap["documents"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "documents")
+    }
+  }
+
+  public var and: [ModelManagementDocumentFilterInput?]? {
+    get {
+      return graphQLMap["and"] as! [ModelManagementDocumentFilterInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "and")
+    }
+  }
+
+  public var or: [ModelManagementDocumentFilterInput?]? {
+    get {
+      return graphQLMap["or"] as! [ModelManagementDocumentFilterInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "or")
+    }
+  }
+
+  public var not: ModelManagementDocumentFilterInput? {
+    get {
+      return graphQLMap["not"] as! ModelManagementDocumentFilterInput?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "not")
@@ -5338,6 +5504,339 @@ public final class DeleteAdvertisementMutation: GraphQLMutation {
   }
 }
 
+public final class CreateManagementDocumentMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation CreateManagementDocument($input: CreateManagementDocumentInput!, $condition: ModelManagementDocumentConditionInput) {\n  createManagementDocument(input: $input, condition: $condition) {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: CreateManagementDocumentInput
+  public var condition: ModelManagementDocumentConditionInput?
+
+  public init(input: CreateManagementDocumentInput, condition: ModelManagementDocumentConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("createManagementDocument", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(CreateManagementDocument.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(createManagementDocument: CreateManagementDocument? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "createManagementDocument": createManagementDocument.flatMap { $0.snapshot }])
+    }
+
+    public var createManagementDocument: CreateManagementDocument? {
+      get {
+        return (snapshot["createManagementDocument"] as? Snapshot).flatMap { CreateManagementDocument(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "createManagementDocument")
+      }
+    }
+
+    public struct CreateManagementDocument: GraphQLSelectionSet {
+      public static let possibleTypes = ["ManagementDocument"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var documents: [String?]? {
+        get {
+          return snapshot["documents"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "documents")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class UpdateManagementDocumentMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation UpdateManagementDocument($input: UpdateManagementDocumentInput!, $condition: ModelManagementDocumentConditionInput) {\n  updateManagementDocument(input: $input, condition: $condition) {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: UpdateManagementDocumentInput
+  public var condition: ModelManagementDocumentConditionInput?
+
+  public init(input: UpdateManagementDocumentInput, condition: ModelManagementDocumentConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("updateManagementDocument", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(UpdateManagementDocument.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(updateManagementDocument: UpdateManagementDocument? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "updateManagementDocument": updateManagementDocument.flatMap { $0.snapshot }])
+    }
+
+    public var updateManagementDocument: UpdateManagementDocument? {
+      get {
+        return (snapshot["updateManagementDocument"] as? Snapshot).flatMap { UpdateManagementDocument(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "updateManagementDocument")
+      }
+    }
+
+    public struct UpdateManagementDocument: GraphQLSelectionSet {
+      public static let possibleTypes = ["ManagementDocument"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var documents: [String?]? {
+        get {
+          return snapshot["documents"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "documents")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class DeleteManagementDocumentMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation DeleteManagementDocument($input: DeleteManagementDocumentInput!, $condition: ModelManagementDocumentConditionInput) {\n  deleteManagementDocument(input: $input, condition: $condition) {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: DeleteManagementDocumentInput
+  public var condition: ModelManagementDocumentConditionInput?
+
+  public init(input: DeleteManagementDocumentInput, condition: ModelManagementDocumentConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("deleteManagementDocument", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(DeleteManagementDocument.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(deleteManagementDocument: DeleteManagementDocument? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "deleteManagementDocument": deleteManagementDocument.flatMap { $0.snapshot }])
+    }
+
+    public var deleteManagementDocument: DeleteManagementDocument? {
+      get {
+        return (snapshot["deleteManagementDocument"] as? Snapshot).flatMap { DeleteManagementDocument(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "deleteManagementDocument")
+      }
+    }
+
+    public struct DeleteManagementDocument: GraphQLSelectionSet {
+      public static let possibleTypes = ["ManagementDocument"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var documents: [String?]? {
+        get {
+          return snapshot["documents"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "documents")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
 public final class GetRoomQuery: GraphQLQuery {
   public static let operationString =
     "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    name\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    createdAt\n    updatedAt\n  }\n}"
@@ -7605,6 +8104,275 @@ public final class ListAdvertisementsQuery: GraphQLQuery {
           }
           set {
             snapshot.updateValue(newValue, forKey: "clicks")
+          }
+        }
+
+        public var createdAt: String {
+          get {
+            return snapshot["createdAt"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "createdAt")
+          }
+        }
+
+        public var updatedAt: String {
+          get {
+            return snapshot["updatedAt"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "updatedAt")
+          }
+        }
+      }
+    }
+  }
+}
+
+public final class GetManagementDocumentQuery: GraphQLQuery {
+  public static let operationString =
+    "query GetManagementDocument($id: ID!) {\n  getManagementDocument(id: $id) {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var id: GraphQLID
+
+  public init(id: GraphQLID) {
+    self.id = id
+  }
+
+  public var variables: GraphQLMap? {
+    return ["id": id]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Query"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("getManagementDocument", arguments: ["id": GraphQLVariable("id")], type: .object(GetManagementDocument.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(getManagementDocument: GetManagementDocument? = nil) {
+      self.init(snapshot: ["__typename": "Query", "getManagementDocument": getManagementDocument.flatMap { $0.snapshot }])
+    }
+
+    public var getManagementDocument: GetManagementDocument? {
+      get {
+        return (snapshot["getManagementDocument"] as? Snapshot).flatMap { GetManagementDocument(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "getManagementDocument")
+      }
+    }
+
+    public struct GetManagementDocument: GraphQLSelectionSet {
+      public static let possibleTypes = ["ManagementDocument"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var documents: [String?]? {
+        get {
+          return snapshot["documents"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "documents")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class ListManagementDocumentsQuery: GraphQLQuery {
+  public static let operationString =
+    "query ListManagementDocuments($filter: ModelManagementDocumentFilterInput, $limit: Int, $nextToken: String) {\n  listManagementDocuments(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      documents\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+
+  public var filter: ModelManagementDocumentFilterInput?
+  public var limit: Int?
+  public var nextToken: String?
+
+  public init(filter: ModelManagementDocumentFilterInput? = nil, limit: Int? = nil, nextToken: String? = nil) {
+    self.filter = filter
+    self.limit = limit
+    self.nextToken = nextToken
+  }
+
+  public var variables: GraphQLMap? {
+    return ["filter": filter, "limit": limit, "nextToken": nextToken]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Query"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("listManagementDocuments", arguments: ["filter": GraphQLVariable("filter"), "limit": GraphQLVariable("limit"), "nextToken": GraphQLVariable("nextToken")], type: .object(ListManagementDocument.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(listManagementDocuments: ListManagementDocument? = nil) {
+      self.init(snapshot: ["__typename": "Query", "listManagementDocuments": listManagementDocuments.flatMap { $0.snapshot }])
+    }
+
+    public var listManagementDocuments: ListManagementDocument? {
+      get {
+        return (snapshot["listManagementDocuments"] as? Snapshot).flatMap { ListManagementDocument(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "listManagementDocuments")
+      }
+    }
+
+    public struct ListManagementDocument: GraphQLSelectionSet {
+      public static let possibleTypes = ["ModelManagementDocumentConnection"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("items", type: .list(.object(Item.selections))),
+        GraphQLField("nextToken", type: .scalar(String.self)),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(items: [Item?]? = nil, nextToken: String? = nil) {
+        self.init(snapshot: ["__typename": "ModelManagementDocumentConnection", "items": items.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "nextToken": nextToken])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var items: [Item?]? {
+        get {
+          return (snapshot["items"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { Item(snapshot: $0) } } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "items")
+        }
+      }
+
+      public var nextToken: String? {
+        get {
+          return snapshot["nextToken"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "nextToken")
+        }
+      }
+
+      public struct Item: GraphQLSelectionSet {
+        public static let possibleTypes = ["ManagementDocument"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("documents", type: .list(.scalar(String.self))),
+          GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+          GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var documents: [String?]? {
+          get {
+            return snapshot["documents"] as? [String?]
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "documents")
           }
         }
 
@@ -10654,6 +11422,312 @@ public final class OnDeleteAdvertisementSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "clicks")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class OnCreateManagementDocumentSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnCreateManagementDocument {\n  onCreateManagementDocument {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onCreateManagementDocument", type: .object(OnCreateManagementDocument.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onCreateManagementDocument: OnCreateManagementDocument? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onCreateManagementDocument": onCreateManagementDocument.flatMap { $0.snapshot }])
+    }
+
+    public var onCreateManagementDocument: OnCreateManagementDocument? {
+      get {
+        return (snapshot["onCreateManagementDocument"] as? Snapshot).flatMap { OnCreateManagementDocument(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onCreateManagementDocument")
+      }
+    }
+
+    public struct OnCreateManagementDocument: GraphQLSelectionSet {
+      public static let possibleTypes = ["ManagementDocument"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var documents: [String?]? {
+        get {
+          return snapshot["documents"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "documents")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class OnUpdateManagementDocumentSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnUpdateManagementDocument {\n  onUpdateManagementDocument {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onUpdateManagementDocument", type: .object(OnUpdateManagementDocument.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onUpdateManagementDocument: OnUpdateManagementDocument? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onUpdateManagementDocument": onUpdateManagementDocument.flatMap { $0.snapshot }])
+    }
+
+    public var onUpdateManagementDocument: OnUpdateManagementDocument? {
+      get {
+        return (snapshot["onUpdateManagementDocument"] as? Snapshot).flatMap { OnUpdateManagementDocument(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onUpdateManagementDocument")
+      }
+    }
+
+    public struct OnUpdateManagementDocument: GraphQLSelectionSet {
+      public static let possibleTypes = ["ManagementDocument"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var documents: [String?]? {
+        get {
+          return snapshot["documents"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "documents")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class OnDeleteManagementDocumentSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnDeleteManagementDocument {\n  onDeleteManagementDocument {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onDeleteManagementDocument", type: .object(OnDeleteManagementDocument.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onDeleteManagementDocument: OnDeleteManagementDocument? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onDeleteManagementDocument": onDeleteManagementDocument.flatMap { $0.snapshot }])
+    }
+
+    public var onDeleteManagementDocument: OnDeleteManagementDocument? {
+      get {
+        return (snapshot["onDeleteManagementDocument"] as? Snapshot).flatMap { OnDeleteManagementDocument(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onDeleteManagementDocument")
+      }
+    }
+
+    public struct OnDeleteManagementDocument: GraphQLSelectionSet {
+      public static let possibleTypes = ["ManagementDocument"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var documents: [String?]? {
+        get {
+          return snapshot["documents"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "documents")
         }
       }
 

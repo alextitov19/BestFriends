@@ -199,3 +199,30 @@ query ListAdvertisements(
     nextToken
   }
 }
+query GetManagementDocument($id: ID!) {
+  getManagementDocument(id: $id) {
+    id
+    documents
+    createdAt
+    updatedAt
+  }
+}
+query ListManagementDocuments(
+  $filter: ModelManagementDocumentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listManagementDocuments(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      documents
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

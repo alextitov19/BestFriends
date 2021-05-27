@@ -45,31 +45,38 @@ struct AdDataSource {
             
     }
     
-    func getAllAds() -> [Advertisement] {
-        var finalAds: [Advertisement] = []
+    func getAdDocuemnt() -> ManagementDocument {
+        var adDoc = ManagementDocument(id: "", documents: [])
 
         let group = DispatchGroup()
+        group.enter()
         
-        Amplify.API.query(request: .paginatedList(Advertisement.self)) { event in
-            switch event {
-            case .success(let result):
-                switch result {
-                case .success(let ads):
-                    print("Successfully retrieved list of ads: \(ads)")
-                    finalAds = Array(ads)
-                    group.leave()
-
+            Amplify.API.query(request: .get(ManagementDocument.self, byId: "currentRuningAds")) { event in
+                switch event {
+                case .success(let result):
+                    switch result {
+                    case .success(let addoc):
+                        guard let addoc = addoc else {
+                            print("Could not find ad doc")
+                            return
+                        }
+                        print("Successfully retrieved ad doc: \(addoc)")
+                        //ad found
+                        adDoc = addoc
+                        group.leave()
+                    
+                    case .failure(let error):
+                        print("Got failed result with \(error.errorDescription)")
+                    }
                 case .failure(let error):
-                    print("Got failed result with \(error.errorDescription)")
+                    print("Got failed event with error \(error)")
                 }
-            case .failure(let error):
-                print("Got failed event with error \(error)")
             }
-        }
+        
         
         group.wait()
         
-        return finalAds
+        return adDoc
     }
   
     

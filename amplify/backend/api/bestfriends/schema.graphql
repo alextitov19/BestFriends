@@ -51,3 +51,8 @@ type Advertisement @model {
   shares: Int!
   clicks: Int!
 }
+
+type ManagementDocument @model {
+  id: ID!
+  documents: [String]
+}

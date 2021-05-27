@@ -21,6 +21,8 @@ struct MessageRoomView: View {
     
     var adIDs: [String] = []
     var adNames: [String] = []
+    
+    let adDataSource = AdDataSource()
 
     
     var user: User
@@ -37,10 +39,11 @@ struct MessageRoomView: View {
         self.messageDataSource  = MessageDataSource(room: room)
         self.room = room
         
-        let ads = AdDataSource().getAllAds()
-        for ad in ads {
-            self.adIDs.append(ad.id)
-            self.adNames.append(ad.videoName)
+        let adDoc = adDataSource.getAdDocuemnt()
+        let ids = adDoc.documents ?? []
+        self.adIDs = ids
+        for id in ids {
+            self.adNames.append(adDataSource.getAd(id: id).videoName)
         }
         print("Count of ids: \(adIDs.count), count of names: \(adNames.count)")
         

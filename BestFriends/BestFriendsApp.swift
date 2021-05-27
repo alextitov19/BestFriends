@@ -19,6 +19,25 @@ struct BestFriendsApp: App {
     init() {
         configureAmplify()
         sessionManager.getCurrentAuthUser()
+        
+        let adDoc = ManagementDocument(id: "currentRuningAds", documents: ["5A1F13A5-E2E4-46A8-A1A9-83E09193902F", "57B0D99E-EEA8-4A68-9DB7-EFFA9D81276A", "811C5961-C15E-41C3-AC0B-1474E871623D"])
+        Amplify.API.mutate(request: .create(adDoc)) { mutationResult in
+            switch mutationResult {
+
+            case .success(let creationResult):
+                
+                switch creationResult {
+                case .success:
+                    print("Successfully created adDoc")
+                    
+                case .failure(let error):
+                    print(error)
+                }
+                
+            case .failure(let apiError):
+                print(apiError)
+            }
+        }
     }
     
     var body: some Scene {
