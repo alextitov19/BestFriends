@@ -27,6 +27,8 @@ struct LandingView: View {
     @State private var titleText = ""
     
     @State private var isShakingCoolPresented = false
+    @State private var isAdViewPresented = false
+
 
 //    @State private var inviteMode = false
     
@@ -188,9 +190,10 @@ struct LandingView: View {
                 
             }
             .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
+            .fullScreenCover(isPresented: $isAdViewPresented, content: AdViewFullScreen.init)
         .onAppear(perform: reloadData)
         .onShake {
-            isShakingCoolPresented = true
+            isAdViewPresented = true
         }
     }
     
