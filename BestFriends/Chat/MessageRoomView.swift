@@ -18,6 +18,7 @@ struct MessageRoomView: View {
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
     @State var areAdsHidden = true
+    @State var currentAdIndex = 0
     
     var adIDs: [String] = []
     var adNames: [String] = []
@@ -63,9 +64,15 @@ struct MessageRoomView: View {
                     showAd()
                 }
             
-            AdPlayerView(name: "first")
-                .ignoresSafeArea()
-                .isHidden(areAdsHidden)
+            if areAdsHidden {
+                AdPlayerView(name: "defaultAd")
+                    .ignoresSafeArea()
+                    .isHidden(areAdsHidden)
+            } else {
+                AdPlayerView(name: adNames[currentAdIndex])
+                    .ignoresSafeArea()
+                    .isHidden(areAdsHidden)
+            }
             
             VStack {
                 HStack { //header
