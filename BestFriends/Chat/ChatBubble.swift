@@ -38,7 +38,7 @@ struct ChatBubble: View {
                 Image(uiImage: uiimage)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 300, height: 200)
+//                    .frame(width: 300, height: 200)
 //                    .aspectRatio(uiimage.size, contentMode: .fill)
                     .gesture(LongPressGesture(minimumDuration: 1)
                     .onEnded { _ in
@@ -84,7 +84,7 @@ struct ChatBubble: View {
                             ZStack{
                                 Rectangle()
                                     .frame(width: getWidth(text: message.body) + 10, height: getHeight(text: message.body))
-                                    .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.2547570032)))
+                                    .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.850110995)))
                                     .cornerRadius(15)
 
                                 HStack {
@@ -143,7 +143,7 @@ struct ChatBubble: View {
                             ZStack{
                                 Rectangle()
                                     .frame(width: getWidth(text: message.body) + 10, height: getHeight(text: message.body))
-                                    .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.2547570032)))
+                                    .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.8533502238)))
                                     .cornerRadius(15)
 
                                 HStack {
