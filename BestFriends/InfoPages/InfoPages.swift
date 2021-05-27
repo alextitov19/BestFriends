@@ -10,11 +10,95 @@
 import Amplify
 import SwiftUI
 
-
-
-
-// ************************************************
 struct InfoViewPage1: View {
+
+    var body: some View {
+        
+        ZStack {
+            Image("Transition3")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
+            VStack {
+                Text("Welcome to")
+                     .italic() .italic()
+                     .font(.system(size: 25))
+                     .fontWeight(.regular)
+                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                     .multilineTextAlignment(.center)
+                     .frame(width: 275, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                Spacer()
+                    .frame(height: 20)
+
+                Text("BestFriends")
+                    .font(.system(size: 60))
+                     .fontWeight(.regular)
+                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                     .multilineTextAlignment(.center)
+                     .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                Spacer()
+                    .frame(height: 20)
+                
+                Text("the 'positivity app")
+                    .font(.system(size: 30))
+                     .fontWeight(.regular)
+                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                     .multilineTextAlignment(.center)
+                     .frame(width: 275, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                
+                Spacer()
+                    .frame(height: 300)
+                
+                VStack {
+                
+                    NavigationLink(destination: InfoViewPage3()) {
+                                        Text("Walk me through BestFriends")
+                                            .font(.title)
+                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                            .frame(width: 400, height: 50)
+                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                        }
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    NavigationLink(destination: InfoViewPage3()) {
+                                        Text("SKIP")
+                                            .font(.title)
+                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                            .frame(width: 100, height: 50)
+                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                        }
+                    
+                    
+                    Spacer()
+                        .frame(height: 100)
+                    
+                    
+                    Text("BestFriends Walk-through is also in Settings.")
+                        .italic()
+                        .font(.system(size: 25))
+                         .fontWeight(.regular)
+                         .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                         .multilineTextAlignment(.center)
+                         .frame(width: 250, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                }
+            }
+        }
+        
+    }
+}
+
+        
+        
+        
+        
+
+struct InfoViewPage2: View {
 
     var body: some View {
   
@@ -77,7 +161,7 @@ struct InfoViewPage1: View {
                 
                 Spacer()
                     .frame(height: 30)
-                NavigationLink(destination: InfoViewPage2()) {
+                NavigationLink(destination: InfoViewPage3()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -85,6 +169,7 @@ struct InfoViewPage1: View {
                                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                     }
+               
                 Spacer()
                     .frame(height: 75)
         
@@ -93,9 +178,11 @@ struct InfoViewPage1: View {
     }
 }
 
-// ************************************************
 
-struct InfoViewPage2: View {
+
+
+
+struct InfoViewPage3: View {
 
     var body: some View {
         ZStack {
@@ -156,7 +243,7 @@ struct InfoViewPage2: View {
                 Spacer()
                     .frame(height: 30)
                    
-                NavigationLink(destination: InfoViewPage3()) {
+                NavigationLink(destination: InfoViewPage4()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -185,7 +272,7 @@ struct InfoViewPage2: View {
 
 
 //***************************************
-struct InfoViewPage3: View {
+struct InfoViewPage4: View {
 
     var body: some View {
         ZStack {
@@ -244,7 +331,7 @@ struct InfoViewPage3: View {
                 Spacer()
                     .frame(height: 50)
                    
-                NavigationLink(destination: InfoViewPage4()) {
+                NavigationLink(destination: InfoViewPage5()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -267,7 +354,7 @@ struct InfoViewPage3: View {
 
 
 // ************************************************
-struct InfoViewPage4: View {
+struct InfoViewPage5: View {
 
     var body: some View {
         
@@ -325,7 +412,7 @@ struct InfoViewPage4: View {
                     .frame(height: 50)
                    
                    
-                NavigationLink(destination: InfoViewPage5()) {
+                NavigationLink(destination: InfoViewPage6()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -351,7 +438,7 @@ struct InfoViewPage4: View {
 
 // ************************************************
 
-struct InfoViewPage5: View {
+struct InfoViewPage6: View {
 
     var body: some View {
         ZStack {
@@ -413,7 +500,7 @@ struct InfoViewPage5: View {
                 Spacer()
                     .frame(height: 30)
                 
-                NavigationLink(destination: InfoViewPage6()) {
+                NavigationLink(destination: InfoViewPage7()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -432,8 +519,8 @@ struct InfoViewPage5: View {
 
 
 
-// ************************************************
-struct InfoViewPage6: View {
+// ***********************************************
+struct InfoViewPage7: View {
 
     var body: some View {
 
@@ -491,7 +578,7 @@ struct InfoViewPage6: View {
                     .frame(height: 30)
                    
                    
-                NavigationLink(destination: InfoViewPage7()) {
+                NavigationLink(destination: SettingsView()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -515,125 +602,6 @@ struct InfoViewPage6: View {
 
 
 // ************************************************
-struct InfoViewPage7: View {
-
-    var body: some View {
-
-        ZStack {
-            Image("Transition3")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-                
-            VStack {
-                
-                VStack {
-                    
-                   
-                    HStack {
-                        Spacer()
-                            
-                        
-                        VStack {
-                        Text("Welcome to")
-                        .italic() .italic()
-                        .font(.system(size: 25))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 275, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
-                
-                    Text("BestFriends")
-                        
-                        .font(.system(size: 45))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 275, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        }
-                        
-                        Spacer()
-                            .frame(width: 50)
-                        
-                    }
-                    
-                    
-                    
-                    Spacer()
-                        .frame(height: 0)
-                
-                    
-                HStack {
-                    VStack {
-                        Spacer()
-                            .frame(height: 125)
-                                                
-                        Image("Penguin Sticker 32")
-                            .resizable()
-                            .frame(width: 150, height: 150)
-                            .scaledToFill()
-                                                
-                    }
-                    
-                  
-                        
-                        
-                        
-                        ZStack {
-                            Image("ChatBubbleTrans")
-                                .resizable()
-                                .frame(width: 300, height: 150)
-                                .scaledToFill()
-                        
-                            
-                            VStack {
-                                Text("The 'Positivity' app.")
-                                    .italic() .italic()
-                                    .font(.system(size: 35))
-                                    .fontWeight(.regular)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 275, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                
-                            
-                                Spacer()
-                                    .frame(height: 7)
-                            
-                            }
-                            
-                            
-                        }
-                        
-                        Spacer()
-                            .frame(height: 75)
-                    }
-                }
- 
-                Spacer()
-                    .frame(height: 250)
-                   
-                   
-                NavigationLink(destination: SettingsView()) {
-                                    Text("Take me to Settings")
-                                        .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 325, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                }
-            Spacer()
-                .frame(height: 150)
-        
-        }
-        }
-
-    
-   
-   
-    }
-}
-
 
 
 // ************************************************
@@ -647,8 +615,11 @@ struct InfoViewPags_Previews : PreviewProvider {
         InfoViewPage5()
         InfoViewPage6()
         InfoViewPage7()
+        
+        }
     }
-}
+
+
 
 
 
