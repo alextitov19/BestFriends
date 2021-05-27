@@ -19,6 +19,10 @@ struct MessageRoomView: View {
     @State var offset: CGFloat = 0
     @State var areAdsHidden = true
     
+    var adIDs: [String] = []
+    var adNames: [String] = []
+
+    
     var user: User
     var room: Room
     
@@ -32,6 +36,14 @@ struct MessageRoomView: View {
         self.user = UserDataSource().getUser(id: id)
         self.messageDataSource  = MessageDataSource(room: room)
         self.room = room
+        
+        let ads = AdDataSource().getAllAds()
+        for ad in ads {
+            self.adIDs.append(ad.id)
+            self.adNames.append(ad.videoName)
+        }
+        print("Count of ids: \(adIDs.count), count of names: \(adNames.count)")
+        
     }
     
     @State var currentBody: String = ""

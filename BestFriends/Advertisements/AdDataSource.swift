@@ -44,6 +44,33 @@ struct AdDataSource {
         return finalAd
             
     }
+    
+    func getAllAds() -> [Advertisement] {
+        var finalAds: [Advertisement] = []
+
+        let group = DispatchGroup()
+        
+        Amplify.API.query(request: .paginatedList(Advertisement.self)) { event in
+            switch event {
+            case .success(let result):
+                switch result {
+                case .success(let ads):
+                    print("Successfully retrieved list of ads: \(ads)")
+                    finalAds = Array(ads)
+                    group.leave()
+
+                case .failure(let error):
+                    print("Got failed result with \(error.errorDescription)")
+                }
+            case .failure(let error):
+                print("Got failed event with error \(error)")
+            }
+        }
+        
+        group.wait()
+        
+        return finalAds
+    }
   
     
     
@@ -63,7 +90,7 @@ struct AdDataSource {
                                 case .success(let data):
                                     print("Completed: \(data)")
                                     print("Path for uploaded file: \(key)")
-                                    registerAnAd(name: key, category: "Non-Profit", link: "https://socialtechlabs.com/")
+                                    registerAnAd(name: key, category: "Non-Profit", link: "https://socialtechlabs.com/", hasAudio: false)
                                 case .failure(let storageError):
                                     print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
                             }
@@ -75,8 +102,8 @@ struct AdDataSource {
         
     }
     
-    private func registerAnAd(name: String, category: String, link: String) {
-        let ad = Advertisement(category: category, videoName: name, adLink: link, duration: 0, hasAudio: false, likes: 0, views: 0, shares: 0, clicks: 0)
+    func registerAnAd(name: String, category: String, link: String, hasAudio: Bool) {
+        let ad = Advertisement(category: category, videoName: name, adLink: link, duration: 0, hasAudio: hasAudio, likes: 0, views: 0, shares: 0, clicks: 0)
         Amplify.API.mutate(request: .create(ad)) { mutationResult in
             switch mutationResult {
 
