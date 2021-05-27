@@ -7,8 +7,14 @@ extension Advertisement {
    public enum CodingKeys: String, ModelKey {
     case id
     case category
-    case videoLink
+    case videoName
     case adLink
+    case duration
+    case hasAudio
+    case likes
+    case views
+    case shares
+    case clicks
   }
   
   public static let keys = CodingKeys.self
@@ -22,8 +28,14 @@ extension Advertisement {
     model.fields(
       .id(),
       .field(advertisement.category, is: .required, ofType: .string),
-      .field(advertisement.videoLink, is: .required, ofType: .string),
-      .field(advertisement.adLink, is: .required, ofType: .string)
+      .field(advertisement.videoName, is: .required, ofType: .string),
+      .field(advertisement.adLink, is: .required, ofType: .string),
+      .field(advertisement.duration, is: .required, ofType: .double),
+      .field(advertisement.hasAudio, is: .required, ofType: .bool),
+      .field(advertisement.likes, is: .required, ofType: .int),
+      .field(advertisement.views, is: .required, ofType: .int),
+      .field(advertisement.shares, is: .required, ofType: .int),
+      .field(advertisement.clicks, is: .required, ofType: .int)
     )
     }
 }

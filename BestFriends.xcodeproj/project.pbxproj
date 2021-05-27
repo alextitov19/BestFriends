@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0197EF17B2F6CF10AC0C8D42 /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B48DCD6F3795913CB8E7E /* ReportedMessage.swift */; };
 		022365EEE0F8A028BE2E2A3F /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		057AC40C939DA1B21E69D43C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
 		0671786ACECB150C46CF88E8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
+		07BCD6A1A2F5BDFF06C886CB /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5F0D769FDC2A7AA84971E /* Advertisement+Schema.swift */; };
 		09069158D1137375A60A22F2 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938CF675DE8432796534940 /* Room+Schema.swift */; };
 		0A83B8FEF0AD77CED43B4F41 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
 		0B8A5735A1E658DE4FC62119 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD1526252B0200E6FA9E /* amplifyconfiguration.json */; };
 		0DDF637AD6D067513082CCF9 /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B48DCD6F3795913CB8E7E /* ReportedMessage.swift */; };
+		0F76A1A4C4B4775323F587AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
+		0FB40EE3C7DA519CEA4ED929 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
 		15C914E3BDA25500D050B277 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
 		17734CCAEEA0746B06AD4AC9 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		1CEB4306559911B9B3658CF3 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		1D37B58C1F0D89EA1794C0EF /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFB42098DF99F6CDE844A /* ReportedMessage+Schema.swift */; };
 		1E7C5B77E12EC898F10D69BB /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		1E8DC087BEF1F92F47CEE099 /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B48DCD6F3795913CB8E7E /* ReportedMessage.swift */; };
+		1FBCA289D47FFC9AC28A2DB3 /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFB42098DF99F6CDE844A /* ReportedMessage+Schema.swift */; };
 		221B32BB2FDB4A74A8AC7691 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */; };
 		22AF4F61FE0C4025498B38CF /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938CF675DE8432796534940 /* Room+Schema.swift */; };
 		2381563E094E6AAC9BF8FA6C /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
@@ -38,6 +43,7 @@
 		31223FCB13E88AAA26DAA50A /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
 		3145E0E5CE17043ADA0D5422 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		31843DD5A561448D8998CA30 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938CF675DE8432796534940 /* Room+Schema.swift */; };
+		31DB123848D9899C61BDCC5E /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		32497A5B1BE051F67C2DBF00 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
 		338DFF00E2A84783DDC53568 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
 		34BF2987B33E35AE2FA98E84 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
@@ -45,6 +51,7 @@
 		36A551BD3419DCFF33B11EC2 /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5F0D769FDC2A7AA84971E /* Advertisement+Schema.swift */; };
 		371A608B589BED4B51C92A46 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */; };
 		39A762DE4DC6434DDA8D8F6F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
+		39B5C7597BDBB1981E1EAFD0 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
 		3C3FB2395155D9C097328686 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		3FAFF6936D7B422DBF25E91A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
 		43FBF4B6AEB15D3660E44192 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
@@ -54,6 +61,7 @@
 		46791643C6EBAF6EB2B027C6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		46F3F6EFB7074D9A590873D3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		4A0EE14A55E35F38E0951451 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938CF675DE8432796534940 /* Room+Schema.swift */; };
+		4FC657A1EA5A5AED47A7A4DA /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
 		501DD3033F14DD6F9FE2FD02 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938CF675DE8432796534940 /* Room+Schema.swift */; };
 		509DEB9E61F9F50DE54287CC /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		50CB6AE5A0477FF85FEF0B97 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
@@ -94,17 +102,6 @@
 		7A417EC6265ED4B000E95364 /* AdViewFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417EC5265ED4B000E95364 /* AdViewFullScreen.swift */; };
 		7A417EC8265ED52900E95364 /* AdDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417EC7265ED52900E95364 /* AdDataSource.swift */; };
 		7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417ECB265F236700E95364 /* AdPlayerView.swift */; };
-		7A42AE42265DFCBC0007C258 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE37265DFCBB0007C258 /* User+Schema.swift */; };
-		7A42AE43265DFCBC0007C258 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE38265DFCBB0007C258 /* User.swift */; };
-		7A42AE44265DFCBC0007C258 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE39265DFCBB0007C258 /* Message+Schema.swift */; };
-		7A42AE45265DFCBC0007C258 /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE3A265DFCBB0007C258 /* Advertisement+Schema.swift */; };
-		7A42AE46265DFCBC0007C258 /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE3B265DFCBB0007C258 /* Advertisement.swift */; };
-		7A42AE47265DFCBC0007C258 /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE3C265DFCBB0007C258 /* ReportedMessage+Schema.swift */; };
-		7A42AE48265DFCBC0007C258 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE3D265DFCBC0007C258 /* Message.swift */; };
-		7A42AE49265DFCBC0007C258 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE3E265DFCBC0007C258 /* Room+Schema.swift */; };
-		7A42AE4A265DFCBC0007C258 /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE3F265DFCBC0007C258 /* ReportedMessage.swift */; };
-		7A42AE4B265DFCBC0007C258 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE40265DFCBC0007C258 /* Room.swift */; };
-		7A42AE4C265DFCBC0007C258 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A42AE41265DFCBC0007C258 /* AmplifyModels.swift */; };
 		7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */; };
 		7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
@@ -140,6 +137,17 @@
 		7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED44FB26473F7100944708 /* AppDelegate.swift */; };
 		7AEFD543262CED3A00247757 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFD542262CED3A00247757 /* QRCodeView.swift */; };
 		7AEFD546262CED7A00247757 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFD545262CED7A00247757 /* ImagePicker.swift */; };
+		7AF4FBC5265FE0C100E08DE6 /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBBA265FE0C100E08DE6 /* Advertisement.swift */; };
+		7AF4FBC6265FE0C100E08DE6 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBBB265FE0C100E08DE6 /* Message+Schema.swift */; };
+		7AF4FBC7265FE0C100E08DE6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBBC265FE0C100E08DE6 /* Room.swift */; };
+		7AF4FBC8265FE0C100E08DE6 /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBBD265FE0C100E08DE6 /* Advertisement+Schema.swift */; };
+		7AF4FBC9265FE0C100E08DE6 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBBE265FE0C100E08DE6 /* Room+Schema.swift */; };
+		7AF4FBCA265FE0C100E08DE6 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBBF265FE0C100E08DE6 /* User+Schema.swift */; };
+		7AF4FBCB265FE0C100E08DE6 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBC0265FE0C100E08DE6 /* AmplifyModels.swift */; };
+		7AF4FBCC265FE0C100E08DE6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBC1265FE0C100E08DE6 /* Message.swift */; };
+		7AF4FBCD265FE0C100E08DE6 /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBC2265FE0C100E08DE6 /* ReportedMessage.swift */; };
+		7AF4FBCE265FE0C100E08DE6 /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBC3265FE0C100E08DE6 /* ReportedMessage+Schema.swift */; };
+		7AF4FBCF265FE0C100E08DE6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF4FBC4265FE0C100E08DE6 /* User.swift */; };
 		7AF6973F2630EE1900CF49CC /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6973E2630EE1900CF49CC /* Star.swift */; };
 		7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */; };
 		7B1E9A27E36DA1C1943BC11F /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
@@ -164,18 +172,22 @@
 		9377FB049DF072F15B5B34CE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		937B3A060884FD3387D7DE64 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		93BAA494B7C636FE258E29BA /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
+		93C2AA5044241F901DFD7D55 /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B48DCD6F3795913CB8E7E /* ReportedMessage.swift */; };
 		96BE80D3C2D79258AB967B6C /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938CF675DE8432796534940 /* Room+Schema.swift */; };
 		9916DE97C16E159A69C25B42 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		9BCBE8B67FA3DF4CC48CB9E2 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
+		9BFFA004BC0E31A2A7C6D537 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		A04F3874D90661DBC964AF00 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		A20883FC4BFEC45F646B169E /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		A31644573038796B82EFAD25 /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFB42098DF99F6CDE844A /* ReportedMessage+Schema.swift */; };
 		A539CD393F413305386AC2D9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
+		A54F56B564AFF5664F2DAA6A /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		A5B2804ED2A42A48A58E5076 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
 		A660C4679BA4FBE0D97E4A8A /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		A8B16C4337B39FBF513CF14E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		A8DF522C45B5D1E27ECFA53B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		A92A5D1570B625FA91DDEF74 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
+		AA66BCF22FD8F96B4C12A0DE /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
 		AB791B981F62744749FC786D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */; };
 		AE56B536499AFEEF85F2E2A5 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
 		AEB78543D580A33282AC938C /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FBDEA8A886CB212104DF8 /* Advertisement.swift */; };
@@ -198,6 +210,7 @@
 		BD253B059E2352B594CFC605 /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBFB42098DF99F6CDE844A /* ReportedMessage+Schema.swift */; };
 		C0D408EDC638CE85970F205A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
 		C12E59BC024AA8574F66559E /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938CF675DE8432796534940 /* Room+Schema.swift */; };
+		C31C394D4C3B31825DA66371 /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FBDEA8A886CB212104DF8 /* Advertisement.swift */; };
 		C40B21779B4A21AEE4E5C9BB /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */; };
 		C454F27B552AE618EFF45F48 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
 		C6A858535E070565DF118AAB /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
@@ -219,6 +232,7 @@
 		D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */; };
 		D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD83264908A300BFE179 /* DarkModePage1.swift */; };
 		D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */; };
+		D16B11BC61C141F3FC75849A /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938CF675DE8432796534940 /* Room+Schema.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
 		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
 		D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */; };
@@ -246,6 +260,7 @@
 		E64781C9F709D25B802CD011 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
 		E651934A8005549C6B9ECC28 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		E6AA8B8CFF0B3ED4E990AB48 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
+		E71A7B74C9F2B2C8B92BE182 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */; };
 		E9E3F159C2FC434B8748CC56 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		EB084914F4CFFD698963E903 /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B48DCD6F3795913CB8E7E /* ReportedMessage.swift */; };
 		EDD05FF3F02498F20DD5CFE4 /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
@@ -289,17 +304,6 @@
 		7A417EC5265ED4B000E95364 /* AdViewFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewFullScreen.swift; sourceTree = "<group>"; };
 		7A417EC7265ED52900E95364 /* AdDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDataSource.swift; sourceTree = "<group>"; };
 		7A417ECB265F236700E95364 /* AdPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdPlayerView.swift; sourceTree = "<group>"; };
-		7A42AE37265DFCBB0007C258 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
-		7A42AE38265DFCBB0007C258 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		7A42AE39265DFCBB0007C258 /* Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+Schema.swift"; sourceTree = "<group>"; };
-		7A42AE3A265DFCBB0007C258 /* Advertisement+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Advertisement+Schema.swift"; sourceTree = "<group>"; };
-		7A42AE3B265DFCBB0007C258 /* Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advertisement.swift; sourceTree = "<group>"; };
-		7A42AE3C265DFCBB0007C258 /* ReportedMessage+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReportedMessage+Schema.swift"; sourceTree = "<group>"; };
-		7A42AE3D265DFCBC0007C258 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		7A42AE3E265DFCBC0007C258 /* Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Room+Schema.swift"; sourceTree = "<group>"; };
-		7A42AE3F265DFCBC0007C258 /* ReportedMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportedMessage.swift; sourceTree = "<group>"; };
-		7A42AE40265DFCBC0007C258 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
-		7A42AE41265DFCBC0007C258 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
 		7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolFullScreenView.swift; sourceTree = "<group>"; };
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
@@ -338,6 +342,17 @@
 		7AED44FB26473F7100944708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AEFD542262CED3A00247757 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		7AEFD545262CED7A00247757 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		7AF4FBBA265FE0C100E08DE6 /* Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advertisement.swift; sourceTree = "<group>"; };
+		7AF4FBBB265FE0C100E08DE6 /* Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+Schema.swift"; sourceTree = "<group>"; };
+		7AF4FBBC265FE0C100E08DE6 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		7AF4FBBD265FE0C100E08DE6 /* Advertisement+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Advertisement+Schema.swift"; sourceTree = "<group>"; };
+		7AF4FBBE265FE0C100E08DE6 /* Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Room+Schema.swift"; sourceTree = "<group>"; };
+		7AF4FBBF265FE0C100E08DE6 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
+		7AF4FBC0265FE0C100E08DE6 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		7AF4FBC1265FE0C100E08DE6 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7AF4FBC2265FE0C100E08DE6 /* ReportedMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportedMessage.swift; sourceTree = "<group>"; };
+		7AF4FBC3265FE0C100E08DE6 /* ReportedMessage+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReportedMessage+Schema.swift"; sourceTree = "<group>"; };
+		7AF4FBC4265FE0C100E08DE6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7AF6973E2630EE1900CF49CC /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
@@ -519,17 +534,17 @@
 		7A8F4256265797FD00E9CBF0 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				7A42AE3B265DFCBB0007C258 /* Advertisement.swift */,
-				7A42AE3A265DFCBB0007C258 /* Advertisement+Schema.swift */,
-				7A42AE41265DFCBC0007C258 /* AmplifyModels.swift */,
-				7A42AE3D265DFCBC0007C258 /* Message.swift */,
-				7A42AE39265DFCBB0007C258 /* Message+Schema.swift */,
-				7A42AE3F265DFCBC0007C258 /* ReportedMessage.swift */,
-				7A42AE3C265DFCBB0007C258 /* ReportedMessage+Schema.swift */,
-				7A42AE40265DFCBC0007C258 /* Room.swift */,
-				7A42AE3E265DFCBC0007C258 /* Room+Schema.swift */,
-				7A42AE38265DFCBB0007C258 /* User.swift */,
-				7A42AE37265DFCBB0007C258 /* User+Schema.swift */,
+				7AF4FBBA265FE0C100E08DE6 /* Advertisement.swift */,
+				7AF4FBBD265FE0C100E08DE6 /* Advertisement+Schema.swift */,
+				7AF4FBC0265FE0C100E08DE6 /* AmplifyModels.swift */,
+				7AF4FBC1265FE0C100E08DE6 /* Message.swift */,
+				7AF4FBBB265FE0C100E08DE6 /* Message+Schema.swift */,
+				7AF4FBC2265FE0C100E08DE6 /* ReportedMessage.swift */,
+				7AF4FBC3265FE0C100E08DE6 /* ReportedMessage+Schema.swift */,
+				7AF4FBBC265FE0C100E08DE6 /* Room.swift */,
+				7AF4FBBE265FE0C100E08DE6 /* Room+Schema.swift */,
+				7AF4FBC4265FE0C100E08DE6 /* User.swift */,
+				7AF4FBBF265FE0C100E08DE6 /* User+Schema.swift */,
 			);
 			name = models;
 			path = amplify/generated/models;
@@ -873,10 +888,8 @@
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */,
 				7AB62A8526426F86005A7744 /* SettingsView.swift in Sources */,
-				7A42AE48265DFCBC0007C258 /* Message.swift in Sources */,
 				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
-				7A42AE47265DFCBC0007C258 /* ReportedMessage+Schema.swift in Sources */,
 				D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */,
 				7AAB444A265C619A00488983 /* ShakingCoolView.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
@@ -896,10 +909,10 @@
 				DB6EB8B021C24EAB932F2DCC /* User+Schema.swift in Sources */,
 				7A7F6E38264305AA0022F078 /* ChatBubble.swift in Sources */,
 				7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */,
+				7AF4FBCE265FE0C100E08DE6 /* ReportedMessage+Schema.swift in Sources */,
 				D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */,
 				7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */,
 				D157779B264D086000B6551A /* SmileNotesView.swift in Sources */,
-				7A42AE4A265DFCBC0007C258 /* ReportedMessage.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */,
 				7AF6973F2630EE1900CF49CC /* Star.swift in Sources */,
@@ -913,28 +926,29 @@
 				2AEB7D73941F5D3330870819 /* Room.swift in Sources */,
 				E6AA8B8CFF0B3ED4E990AB48 /* User+Schema.swift in Sources */,
 				6FCBFC40BA00DE840AEAC7C8 /* Message+Schema.swift in Sources */,
+				7AF4FBCC265FE0C100E08DE6 /* Message.swift in Sources */,
 				5EA31C694618CCAB2CFE2BDE /* Message.swift in Sources */,
 				22AF4F61FE0C4025498B38CF /* Room+Schema.swift in Sources */,
 				3538CC4D46D5A0BFA35F1192 /* User.swift in Sources */,
 				EDF592FBA0E9C2EBB80C63B0 /* AmplifyModels.swift in Sources */,
 				F7179E96B7FEE3FF832DD68C /* Message.swift in Sources */,
 				72C99B5350F9212CD7229578 /* Room+Schema.swift in Sources */,
+				7AF4FBCB265FE0C100E08DE6 /* AmplifyModels.swift in Sources */,
 				2C932E3E03457BE2ED135C3F /* Room.swift in Sources */,
 				DFA71D03CF6E976C515EB902 /* User+Schema.swift in Sources */,
 				A8B16C4337B39FBF513CF14E /* User.swift in Sources */,
 				C454F27B552AE618EFF45F48 /* AmplifyModels.swift in Sources */,
 				B031E6E1EB9A9930A2A37A8E /* Message+Schema.swift in Sources */,
 				F1324683D113A7F735C673FB /* Message.swift in Sources */,
-				7A42AE46265DFCBC0007C258 /* Advertisement.swift in Sources */,
 				7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */,
 				465E146884826052FA24AA60 /* Room+Schema.swift in Sources */,
 				B4F2F53FF19090F52F04FD07 /* Room.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				509DEB9E61F9F50DE54287CC /* User+Schema.swift in Sources */,
 				D360EFFF81A1960D29489A06 /* User.swift in Sources */,
+				7AF4FBCD265FE0C100E08DE6 /* ReportedMessage.swift in Sources */,
 				5604759D595C31770986E9DB /* AmplifyModels.swift in Sources */,
 				54D643D7DB636616E72ECCFD /* Message+Schema.swift in Sources */,
-				7A42AE45265DFCBC0007C258 /* Advertisement+Schema.swift in Sources */,
 				338DFF00E2A84783DDC53568 /* Message.swift in Sources */,
 				D15777B42650522200B6551A /* SwipeGesture.swift in Sources */,
 				B0C7AFCB85C34ACC0E38A4B1 /* Room+Schema.swift in Sources */,
@@ -952,7 +966,6 @@
 				7C378F2D8EE76AAEC4410FDA /* Room+Schema.swift in Sources */,
 				BC9C960C84181F2B3FE2B5E4 /* Room.swift in Sources */,
 				63B94C1A963D52C6AF13E5E2 /* User+Schema.swift in Sources */,
-				7A42AE4C265DFCBC0007C258 /* AmplifyModels.swift in Sources */,
 				8E8C4C915C414F62393EDF24 /* User.swift in Sources */,
 				F63CFB27793A3A3FF58E96B6 /* AmplifyModels.swift in Sources */,
 				93BAA494B7C636FE258E29BA /* Message+Schema.swift in Sources */,
@@ -962,11 +975,13 @@
 				1E7C5B77E12EC898F10D69BB /* User+Schema.swift in Sources */,
 				5361116234EF899CFD549392 /* Message+Schema.swift in Sources */,
 				501DD3033F14DD6F9FE2FD02 /* Room+Schema.swift in Sources */,
+				7AF4FBCF265FE0C100E08DE6 /* User.swift in Sources */,
 				2D5448E868D8E3B2F77DB8B9 /* Room.swift in Sources */,
 				BD165E2C4BE6EBD43DA6A0FE /* AmplifyModels.swift in Sources */,
 				A660C4679BA4FBE0D97E4A8A /* Message+Schema.swift in Sources */,
 				60B293451EBBEBA36B24B7AE /* Message.swift in Sources */,
 				7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */,
+				7AF4FBCA265FE0C100E08DE6 /* User+Schema.swift in Sources */,
 				F90FF0703C95F3D3F216C5C9 /* Room+Schema.swift in Sources */,
 				7AD10455265AB9BE007627FD /* DeviceShakeViewModifier.swift in Sources */,
 				9BCBE8B67FA3DF4CC48CB9E2 /* Room.swift in Sources */,
@@ -987,6 +1002,7 @@
 				8F058474DF8708334F0D590E /* User.swift in Sources */,
 				7A95EA5826530DDA00C6C700 /* PinView.swift in Sources */,
 				56AACACC183D2DB3F6E65CF6 /* AmplifyModels.swift in Sources */,
+				7AF4FBC6265FE0C100E08DE6 /* Message+Schema.swift in Sources */,
 				DBD65123E0B424F8C930E0B3 /* Message+Schema.swift in Sources */,
 				FCC954ECADC01992D3731835 /* Message.swift in Sources */,
 				61B717AC7CC5C6028851470E /* Room+Schema.swift in Sources */,
@@ -1017,7 +1033,6 @@
 				1D37B58C1F0D89EA1794C0EF /* ReportedMessage+Schema.swift in Sources */,
 				46527AC65BCAE963361E00F0 /* ReportedMessage.swift in Sources */,
 				A31644573038796B82EFAD25 /* ReportedMessage+Schema.swift in Sources */,
-				7A42AE44265DFCBC0007C258 /* Message+Schema.swift in Sources */,
 				0DDF637AD6D067513082CCF9 /* ReportedMessage.swift in Sources */,
 				8FE1F6B29927D7277CD1FB6A /* Room+Schema.swift in Sources */,
 				C6A858535E070565DF118AAB /* Room.swift in Sources */,
@@ -1053,6 +1068,7 @@
 				1CEB4306559911B9B3658CF3 /* Message+Schema.swift in Sources */,
 				25EE09CBD6D5045339DB2CE3 /* ReportedMessage+Schema.swift in Sources */,
 				DCD418FA200B1317E320D295 /* ReportedMessage.swift in Sources */,
+				7AF4FBC9265FE0C100E08DE6 /* Room+Schema.swift in Sources */,
 				C12E59BC024AA8574F66559E /* Room+Schema.swift in Sources */,
 				46F3F6EFB7074D9A590873D3 /* User.swift in Sources */,
 				274F96C2EC40F1750969C164 /* Message+Schema.swift in Sources */,
@@ -1064,17 +1080,13 @@
 				F6FD5C4EECDC34CB1C528ED7 /* AmplifyModels.swift in Sources */,
 				FA09CDBDD4FF9FFA6832B338 /* ReportedMessage.swift in Sources */,
 				8D23D769F140842D1CBF289D /* Room+Schema.swift in Sources */,
-				7A42AE4B265DFCBC0007C258 /* Room.swift in Sources */,
 				2381563E094E6AAC9BF8FA6C /* AmplifyModels.swift in Sources */,
-				7A42AE42265DFCBC0007C258 /* User+Schema.swift in Sources */,
 				A539CD393F413305386AC2D9 /* Message.swift in Sources */,
 				B433B2188ED1A3147D2D6D69 /* Room+Schema.swift in Sources */,
 				86628BA8F4E7E890D4287515 /* Message+Schema.swift in Sources */,
-				7A42AE43265DFCBC0007C258 /* User.swift in Sources */,
 				7C38F661F1B88CF801F842EE /* Message.swift in Sources */,
 				EB084914F4CFFD698963E903 /* ReportedMessage.swift in Sources */,
 				E05016A218F2C90CA2A3C6F3 /* Room+Schema.swift in Sources */,
-				7A42AE49265DFCBC0007C258 /* Room+Schema.swift in Sources */,
 				28A289FB874841635C89F27B /* User+Schema.swift in Sources */,
 				D5B2BF303EDD2A997ECB21B7 /* Message+Schema.swift in Sources */,
 				057AC40C939DA1B21E69D43C /* Message.swift in Sources */,
@@ -1084,6 +1096,7 @@
 				9377FB049DF072F15B5B34CE /* User.swift in Sources */,
 				D5763FB3A4F0132AE74E8CAC /* Advertisement+Schema.swift in Sources */,
 				AEB78543D580A33282AC938C /* Advertisement.swift in Sources */,
+				7AF4FBC8265FE0C100E08DE6 /* Advertisement+Schema.swift in Sources */,
 				D324E866D9FE3549753E4521 /* Message+Schema.swift in Sources */,
 				09069158D1137375A60A22F2 /* Room+Schema.swift in Sources */,
 				36A551BD3419DCFF33B11EC2 /* Advertisement+Schema.swift in Sources */,
@@ -1093,6 +1106,23 @@
 				8BC0FB414EC277D1190E89E4 /* ReportedMessage.swift in Sources */,
 				31223FCB13E88AAA26DAA50A /* Room.swift in Sources */,
 				44B4ABBC0B506C4DD3AD32F4 /* User.swift in Sources */,
+				07BCD6A1A2F5BDFF06C886CB /* Advertisement+Schema.swift in Sources */,
+				E71A7B74C9F2B2C8B92BE182 /* AmplifyModels.swift in Sources */,
+				93C2AA5044241F901DFD7D55 /* ReportedMessage.swift in Sources */,
+				7AF4FBC5265FE0C100E08DE6 /* Advertisement.swift in Sources */,
+				D16B11BC61C141F3FC75849A /* Room+Schema.swift in Sources */,
+				AA66BCF22FD8F96B4C12A0DE /* Room.swift in Sources */,
+				0F76A1A4C4B4775323F587AD /* User.swift in Sources */,
+				7AF4FBC7265FE0C100E08DE6 /* Room.swift in Sources */,
+				C31C394D4C3B31825DA66371 /* Advertisement.swift in Sources */,
+				39B5C7597BDBB1981E1EAFD0 /* AmplifyModels.swift in Sources */,
+				A54F56B564AFF5664F2DAA6A /* Message+Schema.swift in Sources */,
+				0FB40EE3C7DA519CEA4ED929 /* Message.swift in Sources */,
+				1FBCA289D47FFC9AC28A2DB3 /* ReportedMessage+Schema.swift in Sources */,
+				0197EF17B2F6CF10AC0C8D42 /* ReportedMessage.swift in Sources */,
+				4FC657A1EA5A5AED47A7A4DA /* Room.swift in Sources */,
+				31DB123848D9899C61BDCC5E /* User+Schema.swift in Sources */,
+				9BFFA004BC0E31A2A7C6D537 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

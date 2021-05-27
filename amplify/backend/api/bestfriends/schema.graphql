@@ -36,11 +36,18 @@ type User @model {
   hiddenRooms: [String]
   smileNotes: [Message]
   shakingCoolLinks: [String]
+  tokens: Int!
 }
 
 type Advertisement @model {
   id: ID!
   category: String!
-  videoLink: String!
+  videoName: String!
   adLink: String!
+  duration: Float!
+  hasAudio: Boolean!
+  likes: Int!
+  views: Int!
+  shares: Int!
+  clicks: Int!
 }

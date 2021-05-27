@@ -119,6 +119,7 @@ query GetUser($id: ID!) {
       attachmentPath
     }
     shakingCoolLinks
+    tokens
     createdAt
     updatedAt
   }
@@ -152,6 +153,7 @@ query ListUsers(
         attachmentPath
       }
       shakingCoolLinks
+      tokens
       createdAt
       updatedAt
     }
@@ -162,8 +164,14 @@ query GetAdvertisement($id: ID!) {
   getAdvertisement(id: $id) {
     id
     category
-    videoLink
+    videoName
     adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
     createdAt
     updatedAt
   }
@@ -177,8 +185,14 @@ query ListAdvertisements(
     items {
       id
       category
-      videoLink
+      videoName
       adLink
+      duration
+      hasAudio
+      likes
+      views
+      shares
+      clicks
       createdAt
       updatedAt
     }

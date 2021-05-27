@@ -146,6 +146,7 @@ subscription OnCreateUser {
       attachmentPath
     }
     shakingCoolLinks
+    tokens
     createdAt
     updatedAt
   }
@@ -174,6 +175,7 @@ subscription OnUpdateUser {
       attachmentPath
     }
     shakingCoolLinks
+    tokens
     createdAt
     updatedAt
   }
@@ -202,6 +204,7 @@ subscription OnDeleteUser {
       attachmentPath
     }
     shakingCoolLinks
+    tokens
     createdAt
     updatedAt
   }
@@ -210,8 +213,14 @@ subscription OnCreateAdvertisement {
   onCreateAdvertisement {
     id
     category
-    videoLink
+    videoName
     adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
     createdAt
     updatedAt
   }
@@ -220,8 +229,14 @@ subscription OnUpdateAdvertisement {
   onUpdateAdvertisement {
     id
     category
-    videoLink
+    videoName
     adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
     createdAt
     updatedAt
   }
@@ -230,8 +245,14 @@ subscription OnDeleteAdvertisement {
   onDeleteAdvertisement {
     id
     category
-    videoLink
+    videoName
     adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
     createdAt
     updatedAt
   }

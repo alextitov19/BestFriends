@@ -32,13 +32,14 @@ struct MessageRoomView: View {
     var body: some View {
         
         ZStack{
-//            Image("purpleBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .ignoresSafeArea()
+            Image("purpleBackground")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
             
             AdPlayerView()
                 .ignoresSafeArea()
+                .isHidden(true)
             
             VStack {
                 HStack { //header

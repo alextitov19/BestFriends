@@ -11,7 +11,7 @@ import Amplify
 struct AdDataSource {
     
     func getAd(id: String) -> Advertisement {
-        var finalAd = Advertisement(category: "", videoLink: "", adLink: "")
+        var finalAd = Advertisement(category: "", videoName: "", adLink: "", duration: 0, hasAudio: false, likes: 0, views: 0, shares: 0, clicks: 0)
 
         let group = DispatchGroup()
         group.enter()
@@ -63,7 +63,7 @@ struct AdDataSource {
                                 case .success(let data):
                                     print("Completed: \(data)")
                                     print("Path for uploaded file: \(key)")
-                                    registerAnAd(key: key, category: "Non-Profit", link: "https://socialtechlabs.com/")
+                                    registerAnAd(name: key, category: "Non-Profit", link: "https://socialtechlabs.com/")
                                 case .failure(let storageError):
                                     print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
                             }
@@ -75,8 +75,8 @@ struct AdDataSource {
         
     }
     
-    private func registerAnAd(key: String, category: String, link: String) {
-        let ad = Advertisement(category: category, videoLink: key, adLink: link)
+    private func registerAnAd(name: String, category: String, link: String) {
+        let ad = Advertisement(category: category, videoName: name, adLink: link, duration: 0, hasAudio: false, likes: 0, views: 0, shares: 0, clicks: 0)
         Amplify.API.mutate(request: .create(ad)) { mutationResult in
             switch mutationResult {
 

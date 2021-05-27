@@ -626,8 +626,8 @@ public struct DeleteReportedMessageInput: GraphQLMapConvertible {
 public struct CreateUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [MessageInput?]? = nil, shakingCoolLinks: [String?]? = nil) {
-    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes, "shakingCoolLinks": shakingCoolLinks]
+  public init(id: GraphQLID? = nil, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [MessageInput?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int) {
+    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens]
   }
 
   public var id: GraphQLID? {
@@ -764,13 +764,22 @@ public struct CreateUserInput: GraphQLMapConvertible {
       graphQLMap.updateValue(newValue, forKey: "shakingCoolLinks")
     }
   }
+
+  public var tokens: Int {
+    get {
+      return graphQLMap["tokens"] as! Int
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "tokens")
+    }
+  }
 }
 
 public struct ModelUserConditionInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, secretPin: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, hiddenRooms: ModelStringInput? = nil, shakingCoolLinks: ModelStringInput? = nil, and: [ModelUserConditionInput?]? = nil, or: [ModelUserConditionInput?]? = nil, not: ModelUserConditionInput? = nil) {
-    graphQLMap = ["firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "shakingCoolLinks": shakingCoolLinks, "and": and, "or": or, "not": not]
+  public init(firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, secretPin: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, hiddenRooms: ModelStringInput? = nil, shakingCoolLinks: ModelStringInput? = nil, tokens: ModelIntInput? = nil, and: [ModelUserConditionInput?]? = nil, or: [ModelUserConditionInput?]? = nil, not: ModelUserConditionInput? = nil) {
+    graphQLMap = ["firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "and": and, "or": or, "not": not]
   }
 
   public var firstName: ModelStringInput? {
@@ -890,6 +899,15 @@ public struct ModelUserConditionInput: GraphQLMapConvertible {
     }
   }
 
+  public var tokens: ModelIntInput? {
+    get {
+      return graphQLMap["tokens"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "tokens")
+    }
+  }
+
   public var and: [ModelUserConditionInput?]? {
     get {
       return graphQLMap["and"] as! [ModelUserConditionInput?]?
@@ -962,11 +980,100 @@ public struct ModelBooleanInput: GraphQLMapConvertible {
   }
 }
 
+public struct ModelIntInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(ne: Int? = nil, eq: Int? = nil, le: Int? = nil, lt: Int? = nil, ge: Int? = nil, gt: Int? = nil, between: [Int?]? = nil, attributeExists: Bool? = nil, attributeType: ModelAttributeTypes? = nil) {
+    graphQLMap = ["ne": ne, "eq": eq, "le": le, "lt": lt, "ge": ge, "gt": gt, "between": between, "attributeExists": attributeExists, "attributeType": attributeType]
+  }
+
+  public var ne: Int? {
+    get {
+      return graphQLMap["ne"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "ne")
+    }
+  }
+
+  public var eq: Int? {
+    get {
+      return graphQLMap["eq"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "eq")
+    }
+  }
+
+  public var le: Int? {
+    get {
+      return graphQLMap["le"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "le")
+    }
+  }
+
+  public var lt: Int? {
+    get {
+      return graphQLMap["lt"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "lt")
+    }
+  }
+
+  public var ge: Int? {
+    get {
+      return graphQLMap["ge"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "ge")
+    }
+  }
+
+  public var gt: Int? {
+    get {
+      return graphQLMap["gt"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "gt")
+    }
+  }
+
+  public var between: [Int?]? {
+    get {
+      return graphQLMap["between"] as! [Int?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "between")
+    }
+  }
+
+  public var attributeExists: Bool? {
+    get {
+      return graphQLMap["attributeExists"] as! Bool?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "attributeExists")
+    }
+  }
+
+  public var attributeType: ModelAttributeTypes? {
+    get {
+      return graphQLMap["attributeType"] as! ModelAttributeTypes?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "attributeType")
+    }
+  }
+}
+
 public struct UpdateUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, firstName: String? = nil, lastName: String? = nil, birthday: String? = nil, pronouns: String? = nil, location: String? = nil, adPreference: String? = nil, deviceFcmToken: String? = nil, isOnline: Bool? = nil, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [MessageInput?]? = nil, shakingCoolLinks: [String?]? = nil) {
-    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes, "shakingCoolLinks": shakingCoolLinks]
+  public init(id: GraphQLID, firstName: String? = nil, lastName: String? = nil, birthday: String? = nil, pronouns: String? = nil, location: String? = nil, adPreference: String? = nil, deviceFcmToken: String? = nil, isOnline: Bool? = nil, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [MessageInput?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int? = nil) {
+    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens]
   }
 
   public var id: GraphQLID {
@@ -1103,6 +1210,15 @@ public struct UpdateUserInput: GraphQLMapConvertible {
       graphQLMap.updateValue(newValue, forKey: "shakingCoolLinks")
     }
   }
+
+  public var tokens: Int? {
+    get {
+      return graphQLMap["tokens"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "tokens")
+    }
+  }
 }
 
 public struct DeleteUserInput: GraphQLMapConvertible {
@@ -1125,8 +1241,8 @@ public struct DeleteUserInput: GraphQLMapConvertible {
 public struct CreateAdvertisementInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, category: String, videoLink: String, adLink: String) {
-    graphQLMap = ["id": id, "category": category, "videoLink": videoLink, "adLink": adLink]
+  public init(id: GraphQLID? = nil, category: String, videoName: String, adLink: String, duration: Double, hasAudio: Bool, likes: Int, views: Int, shares: Int, clicks: Int) {
+    graphQLMap = ["id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks]
   }
 
   public var id: GraphQLID? {
@@ -1147,12 +1263,12 @@ public struct CreateAdvertisementInput: GraphQLMapConvertible {
     }
   }
 
-  public var videoLink: String {
+  public var videoName: String {
     get {
-      return graphQLMap["videoLink"] as! String
+      return graphQLMap["videoName"] as! String
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "videoLink")
+      graphQLMap.updateValue(newValue, forKey: "videoName")
     }
   }
 
@@ -1164,13 +1280,67 @@ public struct CreateAdvertisementInput: GraphQLMapConvertible {
       graphQLMap.updateValue(newValue, forKey: "adLink")
     }
   }
+
+  public var duration: Double {
+    get {
+      return graphQLMap["duration"] as! Double
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "duration")
+    }
+  }
+
+  public var hasAudio: Bool {
+    get {
+      return graphQLMap["hasAudio"] as! Bool
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "hasAudio")
+    }
+  }
+
+  public var likes: Int {
+    get {
+      return graphQLMap["likes"] as! Int
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "likes")
+    }
+  }
+
+  public var views: Int {
+    get {
+      return graphQLMap["views"] as! Int
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "views")
+    }
+  }
+
+  public var shares: Int {
+    get {
+      return graphQLMap["shares"] as! Int
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "shares")
+    }
+  }
+
+  public var clicks: Int {
+    get {
+      return graphQLMap["clicks"] as! Int
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "clicks")
+    }
+  }
 }
 
 public struct ModelAdvertisementConditionInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(category: ModelStringInput? = nil, videoLink: ModelStringInput? = nil, adLink: ModelStringInput? = nil, and: [ModelAdvertisementConditionInput?]? = nil, or: [ModelAdvertisementConditionInput?]? = nil, not: ModelAdvertisementConditionInput? = nil) {
-    graphQLMap = ["category": category, "videoLink": videoLink, "adLink": adLink, "and": and, "or": or, "not": not]
+  public init(category: ModelStringInput? = nil, videoName: ModelStringInput? = nil, adLink: ModelStringInput? = nil, duration: ModelFloatInput? = nil, hasAudio: ModelBooleanInput? = nil, likes: ModelIntInput? = nil, views: ModelIntInput? = nil, shares: ModelIntInput? = nil, clicks: ModelIntInput? = nil, and: [ModelAdvertisementConditionInput?]? = nil, or: [ModelAdvertisementConditionInput?]? = nil, not: ModelAdvertisementConditionInput? = nil) {
+    graphQLMap = ["category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks, "and": and, "or": or, "not": not]
   }
 
   public var category: ModelStringInput? {
@@ -1182,12 +1352,12 @@ public struct ModelAdvertisementConditionInput: GraphQLMapConvertible {
     }
   }
 
-  public var videoLink: ModelStringInput? {
+  public var videoName: ModelStringInput? {
     get {
-      return graphQLMap["videoLink"] as! ModelStringInput?
+      return graphQLMap["videoName"] as! ModelStringInput?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "videoLink")
+      graphQLMap.updateValue(newValue, forKey: "videoName")
     }
   }
 
@@ -1197,6 +1367,60 @@ public struct ModelAdvertisementConditionInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "adLink")
+    }
+  }
+
+  public var duration: ModelFloatInput? {
+    get {
+      return graphQLMap["duration"] as! ModelFloatInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "duration")
+    }
+  }
+
+  public var hasAudio: ModelBooleanInput? {
+    get {
+      return graphQLMap["hasAudio"] as! ModelBooleanInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "hasAudio")
+    }
+  }
+
+  public var likes: ModelIntInput? {
+    get {
+      return graphQLMap["likes"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "likes")
+    }
+  }
+
+  public var views: ModelIntInput? {
+    get {
+      return graphQLMap["views"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "views")
+    }
+  }
+
+  public var shares: ModelIntInput? {
+    get {
+      return graphQLMap["shares"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "shares")
+    }
+  }
+
+  public var clicks: ModelIntInput? {
+    get {
+      return graphQLMap["clicks"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "clicks")
     }
   }
 
@@ -1228,11 +1452,100 @@ public struct ModelAdvertisementConditionInput: GraphQLMapConvertible {
   }
 }
 
+public struct ModelFloatInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(ne: Double? = nil, eq: Double? = nil, le: Double? = nil, lt: Double? = nil, ge: Double? = nil, gt: Double? = nil, between: [Double?]? = nil, attributeExists: Bool? = nil, attributeType: ModelAttributeTypes? = nil) {
+    graphQLMap = ["ne": ne, "eq": eq, "le": le, "lt": lt, "ge": ge, "gt": gt, "between": between, "attributeExists": attributeExists, "attributeType": attributeType]
+  }
+
+  public var ne: Double? {
+    get {
+      return graphQLMap["ne"] as! Double?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "ne")
+    }
+  }
+
+  public var eq: Double? {
+    get {
+      return graphQLMap["eq"] as! Double?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "eq")
+    }
+  }
+
+  public var le: Double? {
+    get {
+      return graphQLMap["le"] as! Double?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "le")
+    }
+  }
+
+  public var lt: Double? {
+    get {
+      return graphQLMap["lt"] as! Double?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "lt")
+    }
+  }
+
+  public var ge: Double? {
+    get {
+      return graphQLMap["ge"] as! Double?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "ge")
+    }
+  }
+
+  public var gt: Double? {
+    get {
+      return graphQLMap["gt"] as! Double?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "gt")
+    }
+  }
+
+  public var between: [Double?]? {
+    get {
+      return graphQLMap["between"] as! [Double?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "between")
+    }
+  }
+
+  public var attributeExists: Bool? {
+    get {
+      return graphQLMap["attributeExists"] as! Bool?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "attributeExists")
+    }
+  }
+
+  public var attributeType: ModelAttributeTypes? {
+    get {
+      return graphQLMap["attributeType"] as! ModelAttributeTypes?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "attributeType")
+    }
+  }
+}
+
 public struct UpdateAdvertisementInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, category: String? = nil, videoLink: String? = nil, adLink: String? = nil) {
-    graphQLMap = ["id": id, "category": category, "videoLink": videoLink, "adLink": adLink]
+  public init(id: GraphQLID, category: String? = nil, videoName: String? = nil, adLink: String? = nil, duration: Double? = nil, hasAudio: Bool? = nil, likes: Int? = nil, views: Int? = nil, shares: Int? = nil, clicks: Int? = nil) {
+    graphQLMap = ["id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks]
   }
 
   public var id: GraphQLID {
@@ -1253,12 +1566,12 @@ public struct UpdateAdvertisementInput: GraphQLMapConvertible {
     }
   }
 
-  public var videoLink: String? {
+  public var videoName: String? {
     get {
-      return graphQLMap["videoLink"] as! String?
+      return graphQLMap["videoName"] as! String?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "videoLink")
+      graphQLMap.updateValue(newValue, forKey: "videoName")
     }
   }
 
@@ -1268,6 +1581,60 @@ public struct UpdateAdvertisementInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "adLink")
+    }
+  }
+
+  public var duration: Double? {
+    get {
+      return graphQLMap["duration"] as! Double?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "duration")
+    }
+  }
+
+  public var hasAudio: Bool? {
+    get {
+      return graphQLMap["hasAudio"] as! Bool?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "hasAudio")
+    }
+  }
+
+  public var likes: Int? {
+    get {
+      return graphQLMap["likes"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "likes")
+    }
+  }
+
+  public var views: Int? {
+    get {
+      return graphQLMap["views"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "views")
+    }
+  }
+
+  public var shares: Int? {
+    get {
+      return graphQLMap["shares"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "shares")
+    }
+  }
+
+  public var clicks: Int? {
+    get {
+      return graphQLMap["clicks"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "clicks")
     }
   }
 }
@@ -1523,8 +1890,8 @@ public struct ModelReportedMessageFilterInput: GraphQLMapConvertible {
 public struct ModelUserFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: ModelIDInput? = nil, firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, secretPin: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, hiddenRooms: ModelStringInput? = nil, shakingCoolLinks: ModelStringInput? = nil, and: [ModelUserFilterInput?]? = nil, or: [ModelUserFilterInput?]? = nil, not: ModelUserFilterInput? = nil) {
-    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "shakingCoolLinks": shakingCoolLinks, "and": and, "or": or, "not": not]
+  public init(id: ModelIDInput? = nil, firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, secretPin: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, hiddenRooms: ModelStringInput? = nil, shakingCoolLinks: ModelStringInput? = nil, tokens: ModelIntInput? = nil, and: [ModelUserFilterInput?]? = nil, or: [ModelUserFilterInput?]? = nil, not: ModelUserFilterInput? = nil) {
+    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "and": and, "or": or, "not": not]
   }
 
   public var id: ModelIDInput? {
@@ -1653,6 +2020,15 @@ public struct ModelUserFilterInput: GraphQLMapConvertible {
     }
   }
 
+  public var tokens: ModelIntInput? {
+    get {
+      return graphQLMap["tokens"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "tokens")
+    }
+  }
+
   public var and: [ModelUserFilterInput?]? {
     get {
       return graphQLMap["and"] as! [ModelUserFilterInput?]?
@@ -1684,8 +2060,8 @@ public struct ModelUserFilterInput: GraphQLMapConvertible {
 public struct ModelAdvertisementFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: ModelIDInput? = nil, category: ModelStringInput? = nil, videoLink: ModelStringInput? = nil, adLink: ModelStringInput? = nil, and: [ModelAdvertisementFilterInput?]? = nil, or: [ModelAdvertisementFilterInput?]? = nil, not: ModelAdvertisementFilterInput? = nil) {
-    graphQLMap = ["id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "and": and, "or": or, "not": not]
+  public init(id: ModelIDInput? = nil, category: ModelStringInput? = nil, videoName: ModelStringInput? = nil, adLink: ModelStringInput? = nil, duration: ModelFloatInput? = nil, hasAudio: ModelBooleanInput? = nil, likes: ModelIntInput? = nil, views: ModelIntInput? = nil, shares: ModelIntInput? = nil, clicks: ModelIntInput? = nil, and: [ModelAdvertisementFilterInput?]? = nil, or: [ModelAdvertisementFilterInput?]? = nil, not: ModelAdvertisementFilterInput? = nil) {
+    graphQLMap = ["id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks, "and": and, "or": or, "not": not]
   }
 
   public var id: ModelIDInput? {
@@ -1706,12 +2082,12 @@ public struct ModelAdvertisementFilterInput: GraphQLMapConvertible {
     }
   }
 
-  public var videoLink: ModelStringInput? {
+  public var videoName: ModelStringInput? {
     get {
-      return graphQLMap["videoLink"] as! ModelStringInput?
+      return graphQLMap["videoName"] as! ModelStringInput?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "videoLink")
+      graphQLMap.updateValue(newValue, forKey: "videoName")
     }
   }
 
@@ -1721,6 +2097,60 @@ public struct ModelAdvertisementFilterInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "adLink")
+    }
+  }
+
+  public var duration: ModelFloatInput? {
+    get {
+      return graphQLMap["duration"] as! ModelFloatInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "duration")
+    }
+  }
+
+  public var hasAudio: ModelBooleanInput? {
+    get {
+      return graphQLMap["hasAudio"] as! ModelBooleanInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "hasAudio")
+    }
+  }
+
+  public var likes: ModelIntInput? {
+    get {
+      return graphQLMap["likes"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "likes")
+    }
+  }
+
+  public var views: ModelIntInput? {
+    get {
+      return graphQLMap["views"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "views")
+    }
+  }
+
+  public var shares: ModelIntInput? {
+    get {
+      return graphQLMap["shares"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "shares")
+    }
+  }
+
+  public var clicks: ModelIntInput? {
+    get {
+      return graphQLMap["clicks"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "clicks")
     }
   }
 
@@ -3323,7 +3753,7 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
 
 public final class CreateUserMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateUser($input: CreateUserInput!, $condition: ModelUserConditionInput) {\n  createUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateUser($input: CreateUserInput!, $condition: ModelUserConditionInput) {\n  createUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    tokens\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateUserInput
   public var condition: ModelUserConditionInput?
@@ -3383,6 +3813,7 @@ public final class CreateUserMutation: GraphQLMutation {
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
         GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
+        GraphQLField("tokens", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -3393,8 +3824,8 @@ public final class CreateUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -3538,6 +3969,15 @@ public final class CreateUserMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
+        }
+      }
+
+      public var tokens: Int {
+        get {
+          return snapshot["tokens"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "tokens")
         }
       }
 
@@ -3651,7 +4091,7 @@ public final class CreateUserMutation: GraphQLMutation {
 
 public final class UpdateUserMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateUser($input: UpdateUserInput!, $condition: ModelUserConditionInput) {\n  updateUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateUser($input: UpdateUserInput!, $condition: ModelUserConditionInput) {\n  updateUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    tokens\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateUserInput
   public var condition: ModelUserConditionInput?
@@ -3711,6 +4151,7 @@ public final class UpdateUserMutation: GraphQLMutation {
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
         GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
+        GraphQLField("tokens", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -3721,8 +4162,8 @@ public final class UpdateUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -3866,6 +4307,15 @@ public final class UpdateUserMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
+        }
+      }
+
+      public var tokens: Int {
+        get {
+          return snapshot["tokens"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "tokens")
         }
       }
 
@@ -3979,7 +4429,7 @@ public final class UpdateUserMutation: GraphQLMutation {
 
 public final class DeleteUserMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteUser($input: DeleteUserInput!, $condition: ModelUserConditionInput) {\n  deleteUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteUser($input: DeleteUserInput!, $condition: ModelUserConditionInput) {\n  deleteUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    tokens\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteUserInput
   public var condition: ModelUserConditionInput?
@@ -4039,6 +4489,7 @@ public final class DeleteUserMutation: GraphQLMutation {
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
         GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
+        GraphQLField("tokens", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -4049,8 +4500,8 @@ public final class DeleteUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -4197,6 +4648,15 @@ public final class DeleteUserMutation: GraphQLMutation {
         }
       }
 
+      public var tokens: Int {
+        get {
+          return snapshot["tokens"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "tokens")
+        }
+      }
+
       public var createdAt: String {
         get {
           return snapshot["createdAt"]! as! String
@@ -4307,7 +4767,7 @@ public final class DeleteUserMutation: GraphQLMutation {
 
 public final class CreateAdvertisementMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateAdvertisement($input: CreateAdvertisementInput!, $condition: ModelAdvertisementConditionInput) {\n  createAdvertisement(input: $input, condition: $condition) {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateAdvertisement($input: CreateAdvertisementInput!, $condition: ModelAdvertisementConditionInput) {\n  createAdvertisement(input: $input, condition: $condition) {\n    __typename\n    id\n    category\n    videoName\n    adLink\n    duration\n    hasAudio\n    likes\n    views\n    shares\n    clicks\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateAdvertisementInput
   public var condition: ModelAdvertisementConditionInput?
@@ -4354,8 +4814,14 @@ public final class CreateAdvertisementMutation: GraphQLMutation {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
-        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoName", type: .nonNull(.scalar(String.self))),
         GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("duration", type: .nonNull(.scalar(Double.self))),
+        GraphQLField("hasAudio", type: .nonNull(.scalar(Bool.self))),
+        GraphQLField("likes", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("views", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("shares", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("clicks", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -4366,8 +4832,8 @@ public final class CreateAdvertisementMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, category: String, videoName: String, adLink: String, duration: Double, hasAudio: Bool, likes: Int, views: Int, shares: Int, clicks: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -4397,12 +4863,12 @@ public final class CreateAdvertisementMutation: GraphQLMutation {
         }
       }
 
-      public var videoLink: String {
+      public var videoName: String {
         get {
-          return snapshot["videoLink"]! as! String
+          return snapshot["videoName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "videoLink")
+          snapshot.updateValue(newValue, forKey: "videoName")
         }
       }
 
@@ -4412,6 +4878,60 @@ public final class CreateAdvertisementMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var duration: Double {
+        get {
+          return snapshot["duration"]! as! Double
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "duration")
+        }
+      }
+
+      public var hasAudio: Bool {
+        get {
+          return snapshot["hasAudio"]! as! Bool
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "hasAudio")
+        }
+      }
+
+      public var likes: Int {
+        get {
+          return snapshot["likes"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "likes")
+        }
+      }
+
+      public var views: Int {
+        get {
+          return snapshot["views"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "views")
+        }
+      }
+
+      public var shares: Int {
+        get {
+          return snapshot["shares"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "shares")
+        }
+      }
+
+      public var clicks: Int {
+        get {
+          return snapshot["clicks"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "clicks")
         }
       }
 
@@ -4438,7 +4958,7 @@ public final class CreateAdvertisementMutation: GraphQLMutation {
 
 public final class UpdateAdvertisementMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateAdvertisement($input: UpdateAdvertisementInput!, $condition: ModelAdvertisementConditionInput) {\n  updateAdvertisement(input: $input, condition: $condition) {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateAdvertisement($input: UpdateAdvertisementInput!, $condition: ModelAdvertisementConditionInput) {\n  updateAdvertisement(input: $input, condition: $condition) {\n    __typename\n    id\n    category\n    videoName\n    adLink\n    duration\n    hasAudio\n    likes\n    views\n    shares\n    clicks\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateAdvertisementInput
   public var condition: ModelAdvertisementConditionInput?
@@ -4485,8 +5005,14 @@ public final class UpdateAdvertisementMutation: GraphQLMutation {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
-        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoName", type: .nonNull(.scalar(String.self))),
         GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("duration", type: .nonNull(.scalar(Double.self))),
+        GraphQLField("hasAudio", type: .nonNull(.scalar(Bool.self))),
+        GraphQLField("likes", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("views", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("shares", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("clicks", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -4497,8 +5023,8 @@ public final class UpdateAdvertisementMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, category: String, videoName: String, adLink: String, duration: Double, hasAudio: Bool, likes: Int, views: Int, shares: Int, clicks: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -4528,12 +5054,12 @@ public final class UpdateAdvertisementMutation: GraphQLMutation {
         }
       }
 
-      public var videoLink: String {
+      public var videoName: String {
         get {
-          return snapshot["videoLink"]! as! String
+          return snapshot["videoName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "videoLink")
+          snapshot.updateValue(newValue, forKey: "videoName")
         }
       }
 
@@ -4543,6 +5069,60 @@ public final class UpdateAdvertisementMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var duration: Double {
+        get {
+          return snapshot["duration"]! as! Double
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "duration")
+        }
+      }
+
+      public var hasAudio: Bool {
+        get {
+          return snapshot["hasAudio"]! as! Bool
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "hasAudio")
+        }
+      }
+
+      public var likes: Int {
+        get {
+          return snapshot["likes"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "likes")
+        }
+      }
+
+      public var views: Int {
+        get {
+          return snapshot["views"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "views")
+        }
+      }
+
+      public var shares: Int {
+        get {
+          return snapshot["shares"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "shares")
+        }
+      }
+
+      public var clicks: Int {
+        get {
+          return snapshot["clicks"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "clicks")
         }
       }
 
@@ -4569,7 +5149,7 @@ public final class UpdateAdvertisementMutation: GraphQLMutation {
 
 public final class DeleteAdvertisementMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteAdvertisement($input: DeleteAdvertisementInput!, $condition: ModelAdvertisementConditionInput) {\n  deleteAdvertisement(input: $input, condition: $condition) {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteAdvertisement($input: DeleteAdvertisementInput!, $condition: ModelAdvertisementConditionInput) {\n  deleteAdvertisement(input: $input, condition: $condition) {\n    __typename\n    id\n    category\n    videoName\n    adLink\n    duration\n    hasAudio\n    likes\n    views\n    shares\n    clicks\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteAdvertisementInput
   public var condition: ModelAdvertisementConditionInput?
@@ -4616,8 +5196,14 @@ public final class DeleteAdvertisementMutation: GraphQLMutation {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
-        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoName", type: .nonNull(.scalar(String.self))),
         GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("duration", type: .nonNull(.scalar(Double.self))),
+        GraphQLField("hasAudio", type: .nonNull(.scalar(Bool.self))),
+        GraphQLField("likes", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("views", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("shares", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("clicks", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -4628,8 +5214,8 @@ public final class DeleteAdvertisementMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, category: String, videoName: String, adLink: String, duration: Double, hasAudio: Bool, likes: Int, views: Int, shares: Int, clicks: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -4659,12 +5245,12 @@ public final class DeleteAdvertisementMutation: GraphQLMutation {
         }
       }
 
-      public var videoLink: String {
+      public var videoName: String {
         get {
-          return snapshot["videoLink"]! as! String
+          return snapshot["videoName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "videoLink")
+          snapshot.updateValue(newValue, forKey: "videoName")
         }
       }
 
@@ -4674,6 +5260,60 @@ public final class DeleteAdvertisementMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var duration: Double {
+        get {
+          return snapshot["duration"]! as! Double
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "duration")
+        }
+      }
+
+      public var hasAudio: Bool {
+        get {
+          return snapshot["hasAudio"]! as! Bool
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "hasAudio")
+        }
+      }
+
+      public var likes: Int {
+        get {
+          return snapshot["likes"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "likes")
+        }
+      }
+
+      public var views: Int {
+        get {
+          return snapshot["views"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "views")
+        }
+      }
+
+      public var shares: Int {
+        get {
+          return snapshot["shares"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "shares")
+        }
+      }
+
+      public var clicks: Int {
+        get {
+          return snapshot["clicks"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "clicks")
         }
       }
 
@@ -5840,7 +6480,7 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
 
 public final class GetUserQuery: GraphQLQuery {
   public static let operationString =
-    "query GetUser($id: ID!) {\n  getUser(id: $id) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetUser($id: ID!) {\n  getUser(id: $id) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    tokens\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -5898,6 +6538,7 @@ public final class GetUserQuery: GraphQLQuery {
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
         GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
+        GraphQLField("tokens", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -5908,8 +6549,8 @@ public final class GetUserQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -6056,6 +6697,15 @@ public final class GetUserQuery: GraphQLQuery {
         }
       }
 
+      public var tokens: Int {
+        get {
+          return snapshot["tokens"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "tokens")
+        }
+      }
+
       public var createdAt: String {
         get {
           return snapshot["createdAt"]! as! String
@@ -6166,7 +6816,7 @@ public final class GetUserQuery: GraphQLQuery {
 
 public final class ListUsersQuery: GraphQLQuery {
   public static let operationString =
-    "query ListUsers($filter: ModelUserFilterInput, $limit: Int, $nextToken: String) {\n  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      firstName\n      lastName\n      birthday\n      pronouns\n      location\n      adPreference\n      deviceFCMToken\n      isOnline\n      secretPin\n      friends\n      rooms\n      hiddenRooms\n      smileNotes {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n      }\n      shakingCoolLinks\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListUsers($filter: ModelUserFilterInput, $limit: Int, $nextToken: String) {\n  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      firstName\n      lastName\n      birthday\n      pronouns\n      location\n      adPreference\n      deviceFCMToken\n      isOnline\n      secretPin\n      friends\n      rooms\n      hiddenRooms\n      smileNotes {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n      }\n      shakingCoolLinks\n      tokens\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelUserFilterInput?
   public var limit: Int?
@@ -6274,6 +6924,7 @@ public final class ListUsersQuery: GraphQLQuery {
           GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
           GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
           GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
+          GraphQLField("tokens", type: .nonNull(.scalar(Int.self))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
           GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
         ]
@@ -6284,8 +6935,8 @@ public final class ListUsersQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
-          self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
+        public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
         public var __typename: String {
@@ -6432,6 +7083,15 @@ public final class ListUsersQuery: GraphQLQuery {
           }
         }
 
+        public var tokens: Int {
+          get {
+            return snapshot["tokens"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "tokens")
+          }
+        }
+
         public var createdAt: String {
           get {
             return snapshot["createdAt"]! as! String
@@ -6543,7 +7203,7 @@ public final class ListUsersQuery: GraphQLQuery {
 
 public final class GetAdvertisementQuery: GraphQLQuery {
   public static let operationString =
-    "query GetAdvertisement($id: ID!) {\n  getAdvertisement(id: $id) {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetAdvertisement($id: ID!) {\n  getAdvertisement(id: $id) {\n    __typename\n    id\n    category\n    videoName\n    adLink\n    duration\n    hasAudio\n    likes\n    views\n    shares\n    clicks\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -6588,8 +7248,14 @@ public final class GetAdvertisementQuery: GraphQLQuery {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
-        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoName", type: .nonNull(.scalar(String.self))),
         GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("duration", type: .nonNull(.scalar(Double.self))),
+        GraphQLField("hasAudio", type: .nonNull(.scalar(Bool.self))),
+        GraphQLField("likes", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("views", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("shares", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("clicks", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -6600,8 +7266,8 @@ public final class GetAdvertisementQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, category: String, videoName: String, adLink: String, duration: Double, hasAudio: Bool, likes: Int, views: Int, shares: Int, clicks: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -6631,12 +7297,12 @@ public final class GetAdvertisementQuery: GraphQLQuery {
         }
       }
 
-      public var videoLink: String {
+      public var videoName: String {
         get {
-          return snapshot["videoLink"]! as! String
+          return snapshot["videoName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "videoLink")
+          snapshot.updateValue(newValue, forKey: "videoName")
         }
       }
 
@@ -6646,6 +7312,60 @@ public final class GetAdvertisementQuery: GraphQLQuery {
         }
         set {
           snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var duration: Double {
+        get {
+          return snapshot["duration"]! as! Double
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "duration")
+        }
+      }
+
+      public var hasAudio: Bool {
+        get {
+          return snapshot["hasAudio"]! as! Bool
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "hasAudio")
+        }
+      }
+
+      public var likes: Int {
+        get {
+          return snapshot["likes"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "likes")
+        }
+      }
+
+      public var views: Int {
+        get {
+          return snapshot["views"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "views")
+        }
+      }
+
+      public var shares: Int {
+        get {
+          return snapshot["shares"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "shares")
+        }
+      }
+
+      public var clicks: Int {
+        get {
+          return snapshot["clicks"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "clicks")
         }
       }
 
@@ -6672,7 +7392,7 @@ public final class GetAdvertisementQuery: GraphQLQuery {
 
 public final class ListAdvertisementsQuery: GraphQLQuery {
   public static let operationString =
-    "query ListAdvertisements($filter: ModelAdvertisementFilterInput, $limit: Int, $nextToken: String) {\n  listAdvertisements(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      category\n      videoLink\n      adLink\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListAdvertisements($filter: ModelAdvertisementFilterInput, $limit: Int, $nextToken: String) {\n  listAdvertisements(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      category\n      videoName\n      adLink\n      duration\n      hasAudio\n      likes\n      views\n      shares\n      clicks\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelAdvertisementFilterInput?
   public var limit: Int?
@@ -6767,8 +7487,14 @@ public final class ListAdvertisementsQuery: GraphQLQuery {
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
           GraphQLField("category", type: .nonNull(.scalar(String.self))),
-          GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+          GraphQLField("videoName", type: .nonNull(.scalar(String.self))),
           GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+          GraphQLField("duration", type: .nonNull(.scalar(Double.self))),
+          GraphQLField("hasAudio", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("likes", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("views", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("shares", type: .nonNull(.scalar(Int.self))),
+          GraphQLField("clicks", type: .nonNull(.scalar(Int.self))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
           GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
         ]
@@ -6779,8 +7505,8 @@ public final class ListAdvertisementsQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
-          self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+        public init(id: GraphQLID, category: String, videoName: String, adLink: String, duration: Double, hasAudio: Bool, likes: Int, views: Int, shares: Int, clicks: Int, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
         public var __typename: String {
@@ -6810,12 +7536,12 @@ public final class ListAdvertisementsQuery: GraphQLQuery {
           }
         }
 
-        public var videoLink: String {
+        public var videoName: String {
           get {
-            return snapshot["videoLink"]! as! String
+            return snapshot["videoName"]! as! String
           }
           set {
-            snapshot.updateValue(newValue, forKey: "videoLink")
+            snapshot.updateValue(newValue, forKey: "videoName")
           }
         }
 
@@ -6825,6 +7551,60 @@ public final class ListAdvertisementsQuery: GraphQLQuery {
           }
           set {
             snapshot.updateValue(newValue, forKey: "adLink")
+          }
+        }
+
+        public var duration: Double {
+          get {
+            return snapshot["duration"]! as! Double
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "duration")
+          }
+        }
+
+        public var hasAudio: Bool {
+          get {
+            return snapshot["hasAudio"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasAudio")
+          }
+        }
+
+        public var likes: Int {
+          get {
+            return snapshot["likes"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "likes")
+          }
+        }
+
+        public var views: Int {
+          get {
+            return snapshot["views"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "views")
+          }
+        }
+
+        public var shares: Int {
+          get {
+            return snapshot["shares"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "shares")
+          }
+        }
+
+        public var clicks: Int {
+          get {
+            return snapshot["clicks"]! as! Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "clicks")
           }
         }
 
@@ -8367,7 +9147,7 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
 
 public final class OnCreateUserSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateUser {\n  onCreateUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateUser {\n  onCreateUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    tokens\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -8418,6 +9198,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
         GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
+        GraphQLField("tokens", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -8428,8 +9209,8 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -8573,6 +9354,15 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
+        }
+      }
+
+      public var tokens: Int {
+        get {
+          return snapshot["tokens"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "tokens")
         }
       }
 
@@ -8686,7 +9476,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
 
 public final class OnUpdateUserSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateUser {\n  onUpdateUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateUser {\n  onUpdateUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    tokens\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -8737,6 +9527,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
         GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
+        GraphQLField("tokens", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -8747,8 +9538,8 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -8892,6 +9683,15 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "shakingCoolLinks")
+        }
+      }
+
+      public var tokens: Int {
+        get {
+          return snapshot["tokens"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "tokens")
         }
       }
 
@@ -9005,7 +9805,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
 
 public final class OnDeleteUserSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteUser {\n  onDeleteUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteUser {\n  onDeleteUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n    }\n    shakingCoolLinks\n    tokens\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -9056,6 +9856,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         GraphQLField("hiddenRooms", type: .list(.scalar(String.self))),
         GraphQLField("smileNotes", type: .list(.object(SmileNote.selections))),
         GraphQLField("shakingCoolLinks", type: .list(.scalar(String.self))),
+        GraphQLField("tokens", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -9066,8 +9867,8 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -9214,6 +10015,15 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         }
       }
 
+      public var tokens: Int {
+        get {
+          return snapshot["tokens"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "tokens")
+        }
+      }
+
       public var createdAt: String {
         get {
           return snapshot["createdAt"]! as! String
@@ -9324,7 +10134,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
 
 public final class OnCreateAdvertisementSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateAdvertisement {\n  onCreateAdvertisement {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateAdvertisement {\n  onCreateAdvertisement {\n    __typename\n    id\n    category\n    videoName\n    adLink\n    duration\n    hasAudio\n    likes\n    views\n    shares\n    clicks\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -9362,8 +10172,14 @@ public final class OnCreateAdvertisementSubscription: GraphQLSubscription {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
-        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoName", type: .nonNull(.scalar(String.self))),
         GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("duration", type: .nonNull(.scalar(Double.self))),
+        GraphQLField("hasAudio", type: .nonNull(.scalar(Bool.self))),
+        GraphQLField("likes", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("views", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("shares", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("clicks", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -9374,8 +10190,8 @@ public final class OnCreateAdvertisementSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, category: String, videoName: String, adLink: String, duration: Double, hasAudio: Bool, likes: Int, views: Int, shares: Int, clicks: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -9405,12 +10221,12 @@ public final class OnCreateAdvertisementSubscription: GraphQLSubscription {
         }
       }
 
-      public var videoLink: String {
+      public var videoName: String {
         get {
-          return snapshot["videoLink"]! as! String
+          return snapshot["videoName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "videoLink")
+          snapshot.updateValue(newValue, forKey: "videoName")
         }
       }
 
@@ -9420,6 +10236,60 @@ public final class OnCreateAdvertisementSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var duration: Double {
+        get {
+          return snapshot["duration"]! as! Double
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "duration")
+        }
+      }
+
+      public var hasAudio: Bool {
+        get {
+          return snapshot["hasAudio"]! as! Bool
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "hasAudio")
+        }
+      }
+
+      public var likes: Int {
+        get {
+          return snapshot["likes"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "likes")
+        }
+      }
+
+      public var views: Int {
+        get {
+          return snapshot["views"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "views")
+        }
+      }
+
+      public var shares: Int {
+        get {
+          return snapshot["shares"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "shares")
+        }
+      }
+
+      public var clicks: Int {
+        get {
+          return snapshot["clicks"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "clicks")
         }
       }
 
@@ -9446,7 +10316,7 @@ public final class OnCreateAdvertisementSubscription: GraphQLSubscription {
 
 public final class OnUpdateAdvertisementSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateAdvertisement {\n  onUpdateAdvertisement {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateAdvertisement {\n  onUpdateAdvertisement {\n    __typename\n    id\n    category\n    videoName\n    adLink\n    duration\n    hasAudio\n    likes\n    views\n    shares\n    clicks\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -9484,8 +10354,14 @@ public final class OnUpdateAdvertisementSubscription: GraphQLSubscription {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
-        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoName", type: .nonNull(.scalar(String.self))),
         GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("duration", type: .nonNull(.scalar(Double.self))),
+        GraphQLField("hasAudio", type: .nonNull(.scalar(Bool.self))),
+        GraphQLField("likes", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("views", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("shares", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("clicks", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -9496,8 +10372,8 @@ public final class OnUpdateAdvertisementSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, category: String, videoName: String, adLink: String, duration: Double, hasAudio: Bool, likes: Int, views: Int, shares: Int, clicks: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -9527,12 +10403,12 @@ public final class OnUpdateAdvertisementSubscription: GraphQLSubscription {
         }
       }
 
-      public var videoLink: String {
+      public var videoName: String {
         get {
-          return snapshot["videoLink"]! as! String
+          return snapshot["videoName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "videoLink")
+          snapshot.updateValue(newValue, forKey: "videoName")
         }
       }
 
@@ -9542,6 +10418,60 @@ public final class OnUpdateAdvertisementSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var duration: Double {
+        get {
+          return snapshot["duration"]! as! Double
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "duration")
+        }
+      }
+
+      public var hasAudio: Bool {
+        get {
+          return snapshot["hasAudio"]! as! Bool
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "hasAudio")
+        }
+      }
+
+      public var likes: Int {
+        get {
+          return snapshot["likes"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "likes")
+        }
+      }
+
+      public var views: Int {
+        get {
+          return snapshot["views"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "views")
+        }
+      }
+
+      public var shares: Int {
+        get {
+          return snapshot["shares"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "shares")
+        }
+      }
+
+      public var clicks: Int {
+        get {
+          return snapshot["clicks"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "clicks")
         }
       }
 
@@ -9568,7 +10498,7 @@ public final class OnUpdateAdvertisementSubscription: GraphQLSubscription {
 
 public final class OnDeleteAdvertisementSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteAdvertisement {\n  onDeleteAdvertisement {\n    __typename\n    id\n    category\n    videoLink\n    adLink\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteAdvertisement {\n  onDeleteAdvertisement {\n    __typename\n    id\n    category\n    videoName\n    adLink\n    duration\n    hasAudio\n    likes\n    views\n    shares\n    clicks\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -9606,8 +10536,14 @@ public final class OnDeleteAdvertisementSubscription: GraphQLSubscription {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("category", type: .nonNull(.scalar(String.self))),
-        GraphQLField("videoLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("videoName", type: .nonNull(.scalar(String.self))),
         GraphQLField("adLink", type: .nonNull(.scalar(String.self))),
+        GraphQLField("duration", type: .nonNull(.scalar(Double.self))),
+        GraphQLField("hasAudio", type: .nonNull(.scalar(Bool.self))),
+        GraphQLField("likes", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("views", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("shares", type: .nonNull(.scalar(Int.self))),
+        GraphQLField("clicks", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -9618,8 +10554,8 @@ public final class OnDeleteAdvertisementSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, category: String, videoLink: String, adLink: String, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoLink": videoLink, "adLink": adLink, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, category: String, videoName: String, adLink: String, duration: Double, hasAudio: Bool, likes: Int, views: Int, shares: Int, clicks: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Advertisement", "id": id, "category": category, "videoName": videoName, "adLink": adLink, "duration": duration, "hasAudio": hasAudio, "likes": likes, "views": views, "shares": shares, "clicks": clicks, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -9649,12 +10585,12 @@ public final class OnDeleteAdvertisementSubscription: GraphQLSubscription {
         }
       }
 
-      public var videoLink: String {
+      public var videoName: String {
         get {
-          return snapshot["videoLink"]! as! String
+          return snapshot["videoName"]! as! String
         }
         set {
-          snapshot.updateValue(newValue, forKey: "videoLink")
+          snapshot.updateValue(newValue, forKey: "videoName")
         }
       }
 
@@ -9664,6 +10600,60 @@ public final class OnDeleteAdvertisementSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "adLink")
+        }
+      }
+
+      public var duration: Double {
+        get {
+          return snapshot["duration"]! as! Double
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "duration")
+        }
+      }
+
+      public var hasAudio: Bool {
+        get {
+          return snapshot["hasAudio"]! as! Bool
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "hasAudio")
+        }
+      }
+
+      public var likes: Int {
+        get {
+          return snapshot["likes"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "likes")
+        }
+      }
+
+      public var views: Int {
+        get {
+          return snapshot["views"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "views")
+        }
+      }
+
+      public var shares: Int {
+        get {
+          return snapshot["shares"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "shares")
+        }
+      }
+
+      public var clicks: Int {
+        get {
+          return snapshot["clicks"]! as! Int
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "clicks")
         }
       }
 

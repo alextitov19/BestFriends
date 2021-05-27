@@ -167,6 +167,7 @@ mutation CreateUser(
       attachmentPath
     }
     shakingCoolLinks
+    tokens
     createdAt
     updatedAt
   }
@@ -198,6 +199,7 @@ mutation UpdateUser(
       attachmentPath
     }
     shakingCoolLinks
+    tokens
     createdAt
     updatedAt
   }
@@ -229,6 +231,7 @@ mutation DeleteUser(
       attachmentPath
     }
     shakingCoolLinks
+    tokens
     createdAt
     updatedAt
   }
@@ -240,8 +243,14 @@ mutation CreateAdvertisement(
   createAdvertisement(input: $input, condition: $condition) {
     id
     category
-    videoLink
+    videoName
     adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
     createdAt
     updatedAt
   }
@@ -253,8 +262,14 @@ mutation UpdateAdvertisement(
   updateAdvertisement(input: $input, condition: $condition) {
     id
     category
-    videoLink
+    videoName
     adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
     createdAt
     updatedAt
   }
@@ -266,8 +281,14 @@ mutation DeleteAdvertisement(
   deleteAdvertisement(input: $input, condition: $condition) {
     id
     category
-    videoLink
+    videoName
     adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
     createdAt
     updatedAt
   }
