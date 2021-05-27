@@ -18,7 +18,7 @@ struct AdViewFullScreen: View {
     
     var body: some View {
         ZStack {            
-            AdPlayerView()
+            AdPlayerView(name: "first")
                 .ignoresSafeArea()
             
             Text("Like button")

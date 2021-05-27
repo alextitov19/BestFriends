@@ -48,7 +48,7 @@ struct MessageRoomView: View {
                     showAd()
                 }
             
-            AdPlayerView()
+            AdPlayerView(name: "first")
                 .ignoresSafeArea()
                 .isHidden(areAdsHidden)
             
@@ -191,7 +191,7 @@ struct MessageRoomView: View {
         areAdsHidden = false
         let seconds = 5.0
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            // Put your code which should be executed with a delay here
+            // After ad is fully shown once
             areAdsHidden = true
         }
         

@@ -10,11 +10,18 @@ import AVKit
 import AVFoundation
 
 struct AdPlayerView: UIViewRepresentable {
+    
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
     func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<AdPlayerView>) {
     }
 
     func makeUIView(context: Context) -> UIView {
-        return AdLoopingPlayerUIView(frame: .zero)
+        return AdLoopingPlayerUIView(frame: .zero, name: name)
     }
 }
 
@@ -22,13 +29,18 @@ struct AdPlayerView: UIViewRepresentable {
 class AdLoopingPlayerUIView: UIView {
     private let playerLayer = AVPlayerLayer()
     private var playerLooper: AVPlayerLooper?
-
+    
+    var name: String
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override init(frame: CGRect) {
+    init(frame: CGRect, name: String) {
+        self.name = name
+        
         super.init(frame: frame)
+        
 
         // Load the resource
         let fileUrl = Bundle.main.url(forResource: "first", withExtension: "mp4")!
