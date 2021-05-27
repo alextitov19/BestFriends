@@ -22,6 +22,8 @@ struct MessageRoomView: View {
     @State var currentLink = ""
     @State var currentLikes = 0
     @State var hasLiked = false
+    @State var hasClickedLink = false
+    @Environment(\.openURL) var openURL
     @State var adButtonsHidden = true
     
     var adIDs: [String] = []
@@ -206,20 +208,17 @@ struct MessageRoomView: View {
                     }
                 Text("\(currentLikes)")
                     .foregroundColor(.white)
-                Link("Learn more", destination: (URL(string: currentLink) ?? URL(string: "https://socialtechlabs.com/"))!)
+                Text("Learn more!")
+                    .foregroundColor(.red)
+                    .onTapGesture {
+                        hasClickedLink = true
+                        doneWithAd()
+                        openURL(URL(string: currentLink)!)
+                    }
                 Text("Dismiss")
                     .foregroundColor(.white)
                     .onTapGesture {
-                        var ad = adDataSource.getAd(id: adIDs[currentAdIndex])
-                        ad.views += 1
-                        if hasLiked {
-                            ad.likes += 1
-                        }
-                        adDataSource.updateAd(ad: ad)
-                        adButtonsHidden = true
-                        if currentAdIndex < adIDs.count - 1 {
-                            currentAdIndex += 1
-                        }
+                        doneWithAd()
                     }
             }
             .isHidden(adButtonsHidden)
@@ -251,6 +250,24 @@ struct MessageRoomView: View {
             adButtonsHidden = false
         }
         
+    }
+    
+    private func doneWithAd() {
+        var ad = adDataSource.getAd(id: adIDs[currentAdIndex])
+        ad.views += 1
+        if hasLiked {
+            ad.likes += 1
+        }
+        if hasClickedLink {
+            ad.clicks += 1
+        }
+        adDataSource.updateAd(ad: ad)
+        adButtonsHidden = true
+        if currentAdIndex < adIDs.count - 1 {
+            currentAdIndex += 1
+        }
+        hasClickedLink = false
+        hasLiked = false
     }
     
     
