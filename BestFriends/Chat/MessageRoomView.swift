@@ -17,8 +17,15 @@ struct MessageRoomView: View {
     @State var showingPin = false
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
+    @State var areAdsHidden = true
+    
     var user: User
     var room: Room
+    
+    var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+
+    
+
     
     init(room: Room) {
         let id = Amplify.Auth.getCurrentUser()?.username ?? "Failed getting id"
@@ -36,10 +43,14 @@ struct MessageRoomView: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
+                .onReceive(timer) { time in
+                    print("Showing an ad")
+                    showAd()
+                }
             
             AdPlayerView()
                 .ignoresSafeArea()
-                .isHidden(true)
+                .isHidden(areAdsHidden)
             
             VStack {
                 HStack { //header
@@ -167,11 +178,17 @@ struct MessageRoomView: View {
         
     }
     
-    func loadImage() {
+    private func loadImage() {
         showingImagePicker = false
         guard let inputImage = inputImage else { return }
         print("Got the image")
         messageDataSource.uploadImage(image: inputImage)
+        
+    }
+    
+    private func showAd() {
+        print("Showing ad")
+        areAdsHidden = false
         
     }
     
