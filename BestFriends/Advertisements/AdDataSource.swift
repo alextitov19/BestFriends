@@ -80,7 +80,21 @@ struct AdDataSource {
     }
   
     
-    
+    func updateAd(ad: Advertisement) {
+        Amplify.API.mutate(request: .update(ad)) { event in  //update user
+                switch event {
+                case .success(let result):
+                    switch result {
+                    case .success(let ad):
+                        print("Successfully updated ad: \(ad)")
+                    case .failure(let error):
+                        print("Got failed result with \(error.errorDescription)")
+                    }
+                case .failure(let error):
+                    print("Got failed event with error \(error)")
+                }
+            }
+    }
     
     private func uploadAnAd(name: String) {
         guard let url = Bundle.main.url(forResource: "first", withExtension: "mp4") else { fatalError() }

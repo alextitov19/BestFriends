@@ -19,6 +19,10 @@ struct MessageRoomView: View {
     @State var offset: CGFloat = 0
     @State var areAdsHidden = true
     @State var currentAdIndex = 0
+    @State var currentLink = ""
+    @State var currentLikes = 0
+    @State var hasLiked = false
+    @State var adButtonsHidden = true
     
     var adIDs: [String] = []
     var adNames: [String] = []
@@ -193,6 +197,32 @@ struct MessageRoomView: View {
             .navigationBarHidden(true)
             
             NavigationLink(destination: PinView(roomID: room.id), isActive: $showingPin) { EmptyView() }
+            
+            VStack { // Advertisement Buttons
+                Text("Like")
+                    .foregroundColor(.white)
+                    .onTapGesture {
+                        hasLiked = true
+                    }
+                Text("\(currentLikes)")
+                    .foregroundColor(.white)
+                Link("Learn more", destination: (URL(string: currentLink) ?? URL(string: "https://socialtechlabs.com/"))!)
+                Text("Dismiss")
+                    .foregroundColor(.white)
+                    .onTapGesture {
+                        var ad = adDataSource.getAd(id: adIDs[currentAdIndex])
+                        ad.views += 1
+                        if hasLiked {
+                            ad.likes += 1
+                        }
+                        adDataSource.updateAd(ad: ad)
+                        adButtonsHidden = true
+                        if currentAdIndex < adIDs.count - 1 {
+                            currentAdIndex += 1
+                        }
+                    }
+            }
+            .isHidden(adButtonsHidden)
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
@@ -211,10 +241,14 @@ struct MessageRoomView: View {
     private func showAd() {
         print("Showing ad")
         areAdsHidden = false
-        let seconds = 5.0
+        let ad = adDataSource.getAd(id: adIDs[currentAdIndex])
+        let seconds = ad.duration
+        currentLikes = ad.likes
+        currentLink = ad.adLink
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             // After ad is fully shown once
             areAdsHidden = true
+            adButtonsHidden = false
         }
         
     }
