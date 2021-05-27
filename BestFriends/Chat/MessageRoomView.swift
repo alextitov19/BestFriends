@@ -22,7 +22,7 @@ struct MessageRoomView: View {
     var user: User
     var room: Room
     
-    var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    var timer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
 
     
 
@@ -189,6 +189,11 @@ struct MessageRoomView: View {
     private func showAd() {
         print("Showing ad")
         areAdsHidden = false
+        let seconds = 5.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+            // Put your code which should be executed with a delay here
+            areAdsHidden = true
+        }
         
     }
     
