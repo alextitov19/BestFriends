@@ -237,6 +237,9 @@
 		CF436A30265A0FF400B69506 /* BlueSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2F265A0FF400B69506 /* BlueSurvey.swift */; };
 		CF436A32265B40DD00B69506 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A31265B40DD00B69506 /* Notifications.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
+		CFE6FD3C2661B6EB00DF92BD /* InAppOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD3B2661B6EB00DF92BD /* InAppOverlay.swift */; };
+		CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */; };
+		CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */; };
 		D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1577796264CBBAD00B6551A /* ChangeEmail.swift */; };
 		D157779B264D086000B6551A /* SmileNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779A264D086000B6551A /* SmileNotesView.swift */; };
 		D157779F264D8EA400B6551A /* ChangeChatBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779E264D8EA400B6551A /* ChangeChatBackground.swift */; };
@@ -386,6 +389,9 @@
 		CF436A2F265A0FF400B69506 /* BlueSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSurvey.swift; sourceTree = "<group>"; };
 		CF436A31265B40DD00B69506 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
+		CFE6FD3B2661B6EB00DF92BD /* InAppOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppOverlay.swift; sourceTree = "<group>"; };
+		CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesEnjoyingApp.swift; sourceTree = "<group>"; };
+		CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEnjoyingApp.swift; sourceTree = "<group>"; };
 		D1577796264CBBAD00B6551A /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
 		D157779A264D086000B6551A /* SmileNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesView.swift; sourceTree = "<group>"; };
 		D157779E264D8EA400B6551A /* ChangeChatBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatBackground.swift; sourceTree = "<group>"; };
@@ -505,6 +511,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				CFE6FD3A2661B65700DF92BD /* GetPossitiveReviews */,
 				7A417EC4265ED49C00E95364 /* Advertisements */,
 				7AD10453265AB9AF007627FD /* ShakingCool */,
 				7A1DBD602659B1A400EB4B42 /* Extensions */,
@@ -671,6 +678,16 @@
 				7A9A733E265744A900177652 /* BlueMessageRoomView.swift */,
 			);
 			path = BlueChat;
+			sourceTree = "<group>";
+		};
+		CFE6FD3A2661B65700DF92BD /* GetPossitiveReviews */ = {
+			isa = PBXGroup;
+			children = (
+				CFE6FD3B2661B6EB00DF92BD /* InAppOverlay.swift */,
+				CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */,
+				CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */,
+			);
+			path = GetPossitiveReviews;
 			sourceTree = "<group>";
 		};
 		D1577799264D082800B6551A /* SmileNotes */ = {
@@ -969,6 +986,7 @@
 				C454F27B552AE618EFF45F48 /* AmplifyModels.swift in Sources */,
 				B031E6E1EB9A9930A2A37A8E /* Message+Schema.swift in Sources */,
 				F1324683D113A7F735C673FB /* Message.swift in Sources */,
+				CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */,
 				7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */,
 				465E146884826052FA24AA60 /* Room+Schema.swift in Sources */,
 				B4F2F53FF19090F52F04FD07 /* Room.swift in Sources */,
@@ -1100,6 +1118,7 @@
 				DCD418FA200B1317E320D295 /* ReportedMessage.swift in Sources */,
 				C12E59BC024AA8574F66559E /* Room+Schema.swift in Sources */,
 				46F3F6EFB7074D9A590873D3 /* User.swift in Sources */,
+				CFE6FD3C2661B6EB00DF92BD /* InAppOverlay.swift in Sources */,
 				274F96C2EC40F1750969C164 /* Message+Schema.swift in Sources */,
 				FDFBA7AC9BFD4EEB442619DC /* Message.swift in Sources */,
 				BA5874FFE8B0019439907566 /* AmplifyModels.swift in Sources */,
@@ -1113,6 +1132,7 @@
 				2381563E094E6AAC9BF8FA6C /* AmplifyModels.swift in Sources */,
 				A539CD393F413305386AC2D9 /* Message.swift in Sources */,
 				B433B2188ED1A3147D2D6D69 /* Room+Schema.swift in Sources */,
+				CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */,
 				86628BA8F4E7E890D4287515 /* Message+Schema.swift in Sources */,
 				7C38F661F1B88CF801F842EE /* Message.swift in Sources */,
 				EB084914F4CFFD698963E903 /* ReportedMessage.swift in Sources */,
