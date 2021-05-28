@@ -21,6 +21,10 @@ struct InfoViewPage1: View {
                 .scaledToFill()
             
             VStack {
+                
+                Spacer()
+                    .frame(height: 100)
+                
                 Text("Welcome to")
                      .italic() .italic()
                      .font(.system(size: 25))
@@ -49,7 +53,7 @@ struct InfoViewPage1: View {
                 
                 
                 Spacer()
-                    .frame(height: 300)
+                    .frame(height: 370)
                 
                 VStack {
                 
@@ -63,29 +67,25 @@ struct InfoViewPage1: View {
                         }
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 40)
                     
                     NavigationLink(destination: InfoViewPage3()) {
                                         Text("SKIP")
                                             .font(.title)
                                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                            .frame(width: 100, height: 50)
+                                            .frame(width: 100, height: 40)
                                             .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                             .cornerRadius(25)
                         }
+                 
                     
-                    
-                    Spacer()
-                        .frame(height: 100)
-                    
-                    
-                    Text("BestFriends Walk-through is also in Settings.")
+                    Text("Walk-through is also in Settings.")
                         .italic()
                         .font(.system(size: 25))
                          .fontWeight(.regular)
-                         .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                          .multilineTextAlignment(.center)
-                         .frame(width: 250, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                         .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 }
             }
         }
