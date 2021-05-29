@@ -21,9 +21,9 @@ struct NotEnjoyingApp: View {
             
             VStack {
                 
-                Text("Sorry to hear that.")
+                Text("We're sorry to hear that.")
                     .foregroundColor(.white)
-                    .font(.system(size: 50))
+                    .font(.system(size: 40))
                     .font(.title)
             
                 Spacer().frame(height: 25)
@@ -40,29 +40,31 @@ struct NotEnjoyingApp: View {
                 VStack {
                 
                   
+            
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
+                 
                 
-                    NavigationLink(
-                        destination: ResetPassword(),
-                        label: {
-                            Text("Reason")
-                        })
-                    .frame(width: 300, height: 50, alignment: .center)
+                    Link("My Reason", destination: URL(string: "https://socialtechlabs.com/survey/")!)
+                       // .frame(width: 325, height: 50)
+                        .frame(width: 300, height: 50, alignment: .center)
                         .font(.system(size: 35))
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
-                    
-                      
+                       
+                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
+                                
                     
                       Spacer()
-                          .frame(height: 30)
+                          .frame(height: 50)
                   
+                    
+                    // We want to take the user back to the page they were previously on before the popup came up.
+                    
                       NavigationLink(
-                          destination: ChangeEmail(),
+                          destination: SettingsView(),
                           label: {
-                              Text("No thank you")
+                              Text("Maybe Later")
                           })
                       .frame(width: 300, height: 50, alignment: .center)
                         .font(.system(size: 35))
