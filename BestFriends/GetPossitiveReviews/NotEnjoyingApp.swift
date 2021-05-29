@@ -54,9 +54,11 @@ struct NotEnjoyingApp: View {
                     Spacer()
                         .frame(height: 20)
                  
-                
+               // The user is taken to our website and their 'Reason' is sent to Admin@SocialTechLabs.com
+                //
+                    
                     Link("My Reason", destination: URL(string: "https://socialtechlabs.com/survey/")!)
-                       // .frame(width: 325, height: 50)
+                   
                         .frame(width: 300, height: 50, alignment: .center)
                         .font(.system(size: 35))
                        

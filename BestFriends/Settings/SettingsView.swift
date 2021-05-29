@@ -103,7 +103,7 @@ struct SettingsView: View {
                             NavigationLink(
                                 destination: EnjoyingBestFriends(),
                                 label: {
-                                    Text("Are You Enjoying BestFriends?")
+                                    Text("Are you enjoying BestFriends?")
                                 })
                                 .frame(width: 325, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
