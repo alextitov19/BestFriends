@@ -21,8 +21,18 @@ struct NotEnjoyingApp: View {
             
             VStack {
                 
-                Text("We're sorry to hear that.")
+                Text("Darn it.")
                     .foregroundColor(.white)
+                    .font(.system(size: 75))
+                    .font(.title)
+            
+                Spacer().frame(height: 25)
+                
+                
+                Text("We're sorry to hear this.")
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 350, height: 100, alignment: .center)
                     .font(.system(size: 40))
                     .font(.title)
             

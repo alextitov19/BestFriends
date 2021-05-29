@@ -45,7 +45,7 @@ struct YesEnjoyingApp: View {
                 
                     // Take the to the app store to write review
                     NavigationLink(
-                        destination: ResetPassword(),
+                        destination: SettingsView(),
                         label: {
                             Text("Write Review")
                         })
@@ -63,7 +63,7 @@ struct YesEnjoyingApp: View {
                   
                     // Take the user back to the page they were on when the popup came up
                       NavigationLink(
-                          destination: ChangeEmail(),
+                          destination: SettingsView(),
                           label: {
                               Text("No thank you")
                           })

@@ -45,7 +45,7 @@ struct EnjoyingBestFriends: View {
                 
                     // Take the to the app store to write review
                     NavigationLink(
-                        destination: ResetPassword(),
+                        destination: YesEnjoyingApp(),
                         label: {
                             Text("Yes")
                         })
@@ -63,7 +63,7 @@ struct EnjoyingBestFriends: View {
                   
                     // Take the user back to the page they were on when the popup came up
                       NavigationLink(
-                          destination: ChangeEmail(),
+                          destination: NotEnjoyingApp(),
                           label: {
                               Text("No")
                           })
