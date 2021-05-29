@@ -239,7 +239,7 @@
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
 		CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */; };
 		CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */; };
-		CFE6FD442661BB7D00DF92BD /* EnjoyingBestFriends?.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD432661BB7D00DF92BD /* EnjoyingBestFriends?.swift */; };
+		CFE6FD4626620E9A00DF92BD /* EnjoyingBestFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD4526620E9A00DF92BD /* EnjoyingBestFriends.swift */; };
 		D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1577796264CBBAD00B6551A /* ChangeEmail.swift */; };
 		D157779B264D086000B6551A /* SmileNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779A264D086000B6551A /* SmileNotesView.swift */; };
 		D157779F264D8EA400B6551A /* ChangeChatBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779E264D8EA400B6551A /* ChangeChatBackground.swift */; };
@@ -391,7 +391,7 @@
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesEnjoyingApp.swift; sourceTree = "<group>"; };
 		CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEnjoyingApp.swift; sourceTree = "<group>"; };
-		CFE6FD432661BB7D00DF92BD /* EnjoyingBestFriends?.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EnjoyingBestFriends?.swift"; sourceTree = "<group>"; };
+		CFE6FD4526620E9A00DF92BD /* EnjoyingBestFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyingBestFriends.swift; sourceTree = "<group>"; };
 		D1577796264CBBAD00B6551A /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
 		D157779A264D086000B6551A /* SmileNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesView.swift; sourceTree = "<group>"; };
 		D157779E264D8EA400B6551A /* ChangeChatBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatBackground.swift; sourceTree = "<group>"; };
@@ -683,7 +683,7 @@
 		CFE6FD3A2661B65700DF92BD /* GetPossitiveReviews */ = {
 			isa = PBXGroup;
 			children = (
-				CFE6FD432661BB7D00DF92BD /* EnjoyingBestFriends?.swift */,
+				CFE6FD4526620E9A00DF92BD /* EnjoyingBestFriends.swift */,
 				CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */,
 				CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */,
 			);
@@ -1106,7 +1106,6 @@
 				46791643C6EBAF6EB2B027C6 /* User.swift in Sources */,
 				CF436A2926599EE000B69506 /* PreLoadPage.swift in Sources */,
 				A8DF522C45B5D1E27ECFA53B /* User.swift in Sources */,
-				CFE6FD442661BB7D00DF92BD /* EnjoyingBestFriends?.swift in Sources */,
 				43FBF4B6AEB15D3660E44192 /* Message.swift in Sources */,
 				878B397ACE5C6EB7A0702603 /* ReportedMessage+Schema.swift in Sources */,
 				CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */,
@@ -1174,6 +1173,7 @@
 				6E09253C455DAECB0198472C /* Advertisement+Schema.swift in Sources */,
 				B8772A1AE19B02235885F9DC /* Advertisement.swift in Sources */,
 				722FBE25A1F44C30D0BFDA13 /* AmplifyModels.swift in Sources */,
+				CFE6FD4626620E9A00DF92BD /* EnjoyingBestFriends.swift in Sources */,
 				318FE14244A28E3055064727 /* ManagementDocument+Schema.swift in Sources */,
 				7AEA652726600E00001DBAD7 /* Message+Schema.swift in Sources */,
 				35C44836B3C13F7A0955BB73 /* ManagementDocument.swift in Sources */,

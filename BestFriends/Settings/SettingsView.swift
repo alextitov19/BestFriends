@@ -86,6 +86,20 @@ struct SettingsView: View {
                                         .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
                                         )
                         
+                        Spacer().frame(height: 20)
+                       
+                       
+                            NavigationLink(
+                                destination: EnjoyingBestFriends(),
+                                label: {
+                                    Text("Are You Enjoying BestFriends?")
+                                })
+                                .frame(width: 325, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                        )
                         
                         
                         Spacer()
