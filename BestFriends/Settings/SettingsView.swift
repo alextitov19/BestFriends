@@ -85,10 +85,21 @@ struct SettingsView: View {
                                     RoundedRectangle(cornerRadius: 25)
                                         .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
                                         )
+                     
+                        Spacer().frame(height: 45)
+                      
+                       
+                        Text("We'd Love to Hear from You")
+                           
+                            .font(.system(size: 32))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            
                         
-                        Spacer().frame(height: 20)
-                       
-                       
+                        
                             NavigationLink(
                                 destination: EnjoyingBestFriends(),
                                 label: {
@@ -98,7 +109,7 @@ struct SettingsView: View {
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                        .stroke(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)), lineWidth: 1)
                                         )
                         
                         

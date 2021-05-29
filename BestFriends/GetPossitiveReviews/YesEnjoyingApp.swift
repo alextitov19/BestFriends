@@ -28,7 +28,7 @@ struct YesEnjoyingApp: View {
             
                 Spacer().frame(height: 25)
                 
-                Text("Would you be so kind to write a short review?")
+                Text("Could you take a moment to write a short review?")
                     .italic()
                     .font(.system(size: 35))
                     .fontWeight(.regular)
