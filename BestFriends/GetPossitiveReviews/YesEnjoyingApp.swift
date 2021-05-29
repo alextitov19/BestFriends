@@ -28,7 +28,7 @@ struct YesEnjoyingApp: View {
             
                 Spacer().frame(height: 25)
                 
-                Text("Would you be so kind to write us a short review?")
+                Text("Would you be so kind to write a short review?")
                     .italic()
                     .font(.system(size: 35))
                     .fontWeight(.regular)
@@ -43,6 +43,7 @@ struct YesEnjoyingApp: View {
                     Spacer()
                         .frame(height: 30)
                 
+                    // Take the to the app store to write review
                     NavigationLink(
                         destination: ResetPassword(),
                         label: {
@@ -53,12 +54,14 @@ struct YesEnjoyingApp: View {
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                     .cornerRadius(25)
-                    
+
                       
+                    
                     
                       Spacer()
                           .frame(height: 30)
                   
+                    // Take the user back to the page they were on when the popup came up
                       NavigationLink(
                           destination: ChangeEmail(),
                           label: {
