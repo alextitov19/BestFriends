@@ -33,7 +33,7 @@ struct ChangeBackground: View {
                         .frame(height: 30)
                 
                     NavigationLink(
-                        destination: ResetPassword(),
+                        destination: MotionBackground(),
                         label: {
                             Text("Motion Backgrounds")
                         })
