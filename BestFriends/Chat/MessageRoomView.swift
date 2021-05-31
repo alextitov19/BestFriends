@@ -214,8 +214,10 @@ struct MessageRoomView: View {
                         .onTapGesture {
                             hasLiked = true
                         }
+                    
                     Text("\(currentLikes)")
                         .foregroundColor(.white)
+                    
                     Text("Learn more!")
                         .foregroundColor(.red)
                         .onTapGesture {
@@ -223,6 +225,7 @@ struct MessageRoomView: View {
                             doneWithAd()
                             openURL(URL(string: currentLink)!)
                         }
+                    
                     Text("Dismiss")
                         .foregroundColor(.white)
                         .onTapGesture {
