@@ -240,6 +240,8 @@
 		CF5263D7266477C600243DD7 /* FieldFlowers.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */; };
 		CF5263D9266477D300243DD7 /* Skateboard.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D8266477D300243DD7 /* Skateboard.mp4 */; };
 		CF5263DB266477DF00243DD7 /* CityMopeds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263DA266477DF00243DD7 /* CityMopeds.mp4 */; };
+		CF5263DE266479E400243DD7 /* MotionBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263DD266479E400243DD7 /* MotionBackground.swift */; };
+		CF5263E026647A0A00243DD7 /* StaticBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263DF26647A0A00243DD7 /* StaticBackground.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
 		CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */; };
 		CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */; };
@@ -396,6 +398,8 @@
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
 		CF5263DA266477DF00243DD7 /* CityMopeds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CityMopeds.mp4; sourceTree = "<group>"; };
+		CF5263DD266479E400243DD7 /* MotionBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionBackground.swift; sourceTree = "<group>"; };
+		CF5263DF26647A0A00243DD7 /* StaticBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticBackground.swift; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesEnjoyingApp.swift; sourceTree = "<group>"; };
 		CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEnjoyingApp.swift; sourceTree = "<group>"; };
@@ -692,6 +696,16 @@
 			path = BlueChat;
 			sourceTree = "<group>";
 		};
+		CF5263DC266479B700243DD7 /* ChangingBackground */ = {
+			isa = PBXGroup;
+			children = (
+				CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */,
+				CF5263DD266479E400243DD7 /* MotionBackground.swift */,
+				CF5263DF26647A0A00243DD7 /* StaticBackground.swift */,
+			);
+			path = ChangingBackground;
+			sourceTree = "<group>";
+		};
 		CFE6FD3A2661B65700DF92BD /* GetPossitiveReviews */ = {
 			isa = PBXGroup;
 			children = (
@@ -735,7 +749,7 @@
 				D15CCD682647458900BFE179 /* ResetPassword.swift */,
 				D1577796264CBBAD00B6551A /* ChangeEmail.swift */,
 				D1E3CFE226543C4D00A26779 /* ChangePIN.swift */,
-				CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */,
+				CF5263DC266479B700243DD7 /* ChangingBackground */,
 				D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */,
 				CF436A31265B40DD00B69506 /* Notifications.swift */,
 			);
@@ -990,6 +1004,7 @@
 				6FCBFC40BA00DE840AEAC7C8 /* Message+Schema.swift in Sources */,
 				7AEA652426600E00001DBAD7 /* ReportedMessage.swift in Sources */,
 				5EA31C694618CCAB2CFE2BDE /* Message.swift in Sources */,
+				CF5263E026647A0A00243DD7 /* StaticBackground.swift in Sources */,
 				22AF4F61FE0C4025498B38CF /* Room+Schema.swift in Sources */,
 				3538CC4D46D5A0BFA35F1192 /* User.swift in Sources */,
 				EDF592FBA0E9C2EBB80C63B0 /* AmplifyModels.swift in Sources */,
@@ -1097,6 +1112,7 @@
 				A31644573038796B82EFAD25 /* ReportedMessage+Schema.swift in Sources */,
 				0DDF637AD6D067513082CCF9 /* ReportedMessage.swift in Sources */,
 				7AEA652D26600E01001DBAD7 /* User.swift in Sources */,
+				CF5263DE266479E400243DD7 /* MotionBackground.swift in Sources */,
 				8FE1F6B29927D7277CD1FB6A /* Room+Schema.swift in Sources */,
 				C6A858535E070565DF118AAB /* Room.swift in Sources */,
 				D1E3CFE326543C4D00A26779 /* ChangePIN.swift in Sources */,
