@@ -38,15 +38,15 @@ struct MotionBackground: View {
                        
                         VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
                             .frame(width: 100, height: 200)
-                            .onTapGesture {
-                                
-                            }
+                           
+                       
+                        
                         Spacer()
                             .frame(width: 50)
                         
                         VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "FieldFlowers", withExtension: "mp4")!))
                             .frame(width: 100, height: 200)
-                            .onTapGesture { }
+                           
                             
                     }
                   
@@ -57,17 +57,15 @@ struct MotionBackground: View {
                     HStack {
                         
                        
-                        VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "citycars", withExtension: "mp4")!))
+                        VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "first", withExtension: "mp4")!))
                             .frame(width: 100, height: 200)
-                            .onTapGesture {
-                                
-                            }
+                           
                         Spacer()
                             .frame(width: 50)
                         
                         VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "Skateboard", withExtension: "mp4")!))
                             .frame(width: 100, height: 200)
-                            .onTapGesture { }
+                           
                         
                         
                         
