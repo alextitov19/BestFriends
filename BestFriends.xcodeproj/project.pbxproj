@@ -236,6 +236,10 @@
 		CF436A2926599EE000B69506 /* PreLoadPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2826599EE000B69506 /* PreLoadPage.swift */; };
 		CF436A30265A0FF400B69506 /* BlueSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2F265A0FF400B69506 /* BlueSurvey.swift */; };
 		CF436A32265B40DD00B69506 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A31265B40DD00B69506 /* Notifications.swift */; };
+		CF5263D5266477B300243DD7 /* citycars.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D4266477B300243DD7 /* citycars.mp4 */; };
+		CF5263D7266477C600243DD7 /* FieldFlowers.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */; };
+		CF5263D9266477D300243DD7 /* Skateboard.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D8266477D300243DD7 /* Skateboard.mp4 */; };
+		CF5263DB266477DF00243DD7 /* CityMopeds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263DA266477DF00243DD7 /* CityMopeds.mp4 */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
 		CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */; };
 		CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */; };
@@ -388,6 +392,10 @@
 		CF436A2826599EE000B69506 /* PreLoadPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoadPage.swift; sourceTree = "<group>"; };
 		CF436A2F265A0FF400B69506 /* BlueSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSurvey.swift; sourceTree = "<group>"; };
 		CF436A31265B40DD00B69506 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		CF5263D4266477B300243DD7 /* citycars.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = citycars.mp4; sourceTree = "<group>"; };
+		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
+		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
+		CF5263DA266477DF00243DD7 /* CityMopeds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CityMopeds.mp4; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesEnjoyingApp.swift; sourceTree = "<group>"; };
 		CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEnjoyingApp.swift; sourceTree = "<group>"; };
@@ -480,6 +488,10 @@
 		7A6A4D01262B866500561D87 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CF5263DA266477DF00243DD7 /* CityMopeds.mp4 */,
+				CF5263D8266477D300243DD7 /* Skateboard.mp4 */,
+				CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */,
+				CF5263D4266477B300243DD7 /* citycars.mp4 */,
 				7A417EC2265ECF5900E95364 /* first.mp4 */,
 				7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */,
 			);
@@ -837,15 +849,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5263DB266477DF00243DD7 /* CityMopeds.mp4 in Resources */,
 				7A71BD1626252B0300E6FA9E /* awsconfiguration.json in Resources */,
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				7A71BD1726252B0300E6FA9E /* amplifyconfiguration.json in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
+				CF5263D5266477B300243DD7 /* citycars.mp4 in Resources */,
 				7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */,
 				221B32BB2FDB4A74A8AC7691 /* awsconfiguration.json in Resources */,
 				AB791B981F62744749FC786D /* awsconfiguration.json in Resources */,
 				0B8A5735A1E658DE4FC62119 /* amplifyconfiguration.json in Resources */,
+				CF5263D7266477C600243DD7 /* FieldFlowers.mp4 in Resources */,
 				F4D242A7842387FEB78858DA /* awsconfiguration.json in Resources */,
 				DB15C6B4674E946ADCCFE253 /* amplifyconfiguration.json in Resources */,
 				7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */,
@@ -856,6 +871,7 @@
 				242A027DC74FA98F23E36884 /* amplifyconfiguration.json in Resources */,
 				BAF6287D80906E82F5F341CE /* awsconfiguration.json in Resources */,
 				FABC7029337D477527295A4B /* amplifyconfiguration.json in Resources */,
+				CF5263D9266477D300243DD7 /* Skateboard.mp4 in Resources */,
 				771AD6089F6265A871F0F171 /* awsconfiguration.json in Resources */,
 				D47225F699860CA207C669C9 /* amplifyconfiguration.json in Resources */,
 			);
