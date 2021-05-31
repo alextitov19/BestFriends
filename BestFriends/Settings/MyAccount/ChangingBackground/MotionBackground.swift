@@ -106,6 +106,9 @@ struct MotionBackground: View {
     
     private func saveData() {
         print("Saving new background as ontion #\(selectedBackground)")
+        var user = UserDataSource().getCurrentUser()
+        user.background = selectedBackground
+        UserDataSource().updateUser(user: user)
     }
 }
 

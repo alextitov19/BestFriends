@@ -168,6 +168,7 @@ mutation CreateUser(
     }
     shakingCoolLinks
     tokens
+    background
     createdAt
     updatedAt
   }
@@ -200,6 +201,7 @@ mutation UpdateUser(
     }
     shakingCoolLinks
     tokens
+    background
     createdAt
     updatedAt
   }
@@ -232,6 +234,7 @@ mutation DeleteUser(
     }
     shakingCoolLinks
     tokens
+    background
     createdAt
     updatedAt
   }

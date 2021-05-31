@@ -147,6 +147,7 @@ subscription OnCreateUser {
     }
     shakingCoolLinks
     tokens
+    background
     createdAt
     updatedAt
   }
@@ -176,6 +177,7 @@ subscription OnUpdateUser {
     }
     shakingCoolLinks
     tokens
+    background
     createdAt
     updatedAt
   }
@@ -205,6 +207,7 @@ subscription OnDeleteUser {
     }
     shakingCoolLinks
     tokens
+    background
     createdAt
     updatedAt
   }
