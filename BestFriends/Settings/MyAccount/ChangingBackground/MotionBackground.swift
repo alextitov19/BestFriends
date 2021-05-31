@@ -21,7 +21,10 @@ struct MotionBackground: View {
                 .scaledToFill()
             
             VStack {
-                Text("Motion Backgrounds")
+                
+                Spacer().frame(height: 50)
+                
+                Text("Select Motion Background")
                     .foregroundColor(.white)
                     .font(.title)
             
