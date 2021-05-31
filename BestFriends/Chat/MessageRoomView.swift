@@ -202,7 +202,7 @@ struct MessageRoomView: View {
             
             ZStack {
                 Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
-                    .frame(width: 100, height: 200)
+                    .frame(width: 75, height: 300)
                     .cornerRadius(50)
                 
                 VStack { // Advertisement Buttons
@@ -218,15 +218,25 @@ struct MessageRoomView: View {
                     Text("\(currentLikes)")
                         .foregroundColor(.white)
                     
-                    Text("Learn more!")
-                        .foregroundColor(.red)
+                    Spacer().frame(height: 10)
+                    
+                    Image("whiteLink")
+                        .resizable()
+                        .frame(width: 35, height: 35)
+                        .scaledToFit()
+                        .foregroundColor(.white)
                         .onTapGesture {
                             hasClickedLink = true
                             doneWithAd()
                             openURL(URL(string: currentLink)!)
                         }
                     
-                    Text("Dismiss")
+                    Spacer().frame(height: 30)
+
+                    Image("whiteX")
+                        .resizable()
+                        .frame(width: 35, height: 35)
+                        .scaledToFit()
                         .foregroundColor(.white)
                         .onTapGesture {
                             doneWithAd()
