@@ -26,10 +26,14 @@ struct MotionBackground: View {
                 
                 Spacer().frame(height: 50)
                 
-                Text("Select Motion Background")
+                Text("Chat 'Motion Background'")
                     .foregroundColor(.white)
                     .font(.title)
             
+                Text("Options")
+                    .foregroundColor(.white)
+                    .font(.title)
+                
                 Spacer().frame(height: 50)
                 
                 
@@ -89,15 +93,19 @@ struct MotionBackground: View {
                             })
                            
                         
-                        
-                        
-                        
+                   
                     }
                     
-            
-                    
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 50)
+                    
+                    Text("Longtap your choice")
+                        .foregroundColor(.white)
+                        .font(.title)
+                        .italic()
+                        .frame(width: 300, height: 100)
+                    
+                  
                 
                     }
                 }
