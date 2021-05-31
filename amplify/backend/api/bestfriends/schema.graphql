@@ -37,6 +37,7 @@ type User @model {
   smileNotes: [Message]
   shakingCoolLinks: [String]
   tokens: Int!
+  background: Int!
 }
 
 type Advertisement @model {

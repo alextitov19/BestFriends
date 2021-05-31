@@ -1302,7 +1302,8 @@ struct SignUpQuestionPage3: View {
                         deviceFCMToken: " ",
                         isOnline: true,
                         secretPin: currentPin,
-                        tokens: 0)
+                        tokens: 0,
+                        background: 1)
                     
                     userMamager.create(user)
                     
