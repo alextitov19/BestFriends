@@ -200,27 +200,39 @@ struct MessageRoomView: View {
             
             NavigationLink(destination: PinView(roomID: room.id), isActive: $showingPin) { EmptyView() }
             
-            VStack { // Advertisement Buttons
-                Text("Like")
-                    .foregroundColor(.white)
-                    .onTapGesture {
-                        hasLiked = true
-                    }
-                Text("\(currentLikes)")
-                    .foregroundColor(.white)
-                Text("Learn more!")
-                    .foregroundColor(.red)
-                    .onTapGesture {
-                        hasClickedLink = true
-                        doneWithAd()
-                        openURL(URL(string: currentLink)!)
-                    }
-                Text("Dismiss")
-                    .foregroundColor(.white)
-                    .onTapGesture {
-                        doneWithAd()
-                    }
+            ZStack {
+                Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
+                    .frame(width: 100, height: 200)
+                    .cornerRadius(50)
+                
+                VStack { // Advertisement Buttons
+                    Image("whiteHeart")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFit()
+                        .foregroundColor(.white)
+                        .onTapGesture {
+                            hasLiked = true
+                        }
+                    Text("\(currentLikes)")
+                        .foregroundColor(.white)
+                    Text("Learn more!")
+                        .foregroundColor(.red)
+                        .onTapGesture {
+                            hasClickedLink = true
+                            doneWithAd()
+                            openURL(URL(string: currentLink)!)
+                        }
+                    Text("Dismiss")
+                        .foregroundColor(.white)
+                        .onTapGesture {
+                            doneWithAd()
+                        }
+                    
+                
+                }
             }
+            .offset(x: -150)
             .isHidden(adButtonsHidden)
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
