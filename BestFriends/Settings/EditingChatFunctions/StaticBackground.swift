@@ -26,7 +26,11 @@ struct StaticBackground: View {
                 
                 Spacer().frame(height: 50)
                 
-                Text("Chat 'Static Background'")
+                Text("Chat")
+                    .foregroundColor(.white)
+                    .font(.title)
+                
+                Text("'Static Background'")
                     .foregroundColor(.white)
                     .font(.title)
             
@@ -108,9 +112,7 @@ struct StaticBackground: View {
                         
                    
                     }
-                    
-                    Spacer()
-                        .frame(height: 50)
+               
                     
                     
                     Text("Longtap image to save your choice")

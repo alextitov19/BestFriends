@@ -48,7 +48,7 @@ struct ChangeBackground: View {
                           .frame(height: 30)
                   
                       NavigationLink(
-                          destination: ChangeEmail(),
+                          destination: StaticBackground(),
                           label: {
                               Text("Static Backgrounds")
                           })

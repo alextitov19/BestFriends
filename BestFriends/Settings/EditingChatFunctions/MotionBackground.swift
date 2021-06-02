@@ -26,7 +26,12 @@ struct MotionBackground: View {
                 
                 Spacer().frame(height: 50)
                 
-                Text("Chat 'Motion Background'")
+                Text("Chat")
+                    .foregroundColor(.white)
+                    .font(.title)
+                
+                
+                Text("'Motion Background'")
                     .foregroundColor(.white)
                     .font(.title)
             
@@ -96,8 +101,7 @@ struct MotionBackground: View {
                    
                     }
                     
-                    Spacer()
-                        .frame(height: 50)
+                    
                     
                     
                     Text("Longtap video to save your choice")
