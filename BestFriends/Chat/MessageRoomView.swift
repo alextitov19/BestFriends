@@ -37,7 +37,7 @@ struct MessageRoomView: View {
     
     var timer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
 
-    
+    @State private var adButtonOffset: Float = 0
 
     
     init(room: Room) {
@@ -71,7 +71,7 @@ struct MessageRoomView: View {
                 }
             
             if areAdsHidden {
-                AdPlayerView(name: "defaultAd")
+                AdPlayerView(name: "first")
                     .ignoresSafeArea()
                     .isHidden(areAdsHidden)
             } else {
@@ -200,53 +200,66 @@ struct MessageRoomView: View {
             
             NavigationLink(destination: PinView(roomID: room.id), isActive: $showingPin) { EmptyView() }
             
-            ZStack {
-                Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
-                    .frame(width: 75, height: 300)
-                    .cornerRadius(50)
-                
+            if adButtonsHidden == false {
                 VStack { // Advertisement Buttons
-                    Image("whiteHeart")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFit()
-                        .foregroundColor(.white)
-                        .onTapGesture {
-                            hasLiked = true
-                        }
-                    
-                    Text("\(currentLikes)")
-                        .foregroundColor(.white)
+                    ZStack {
+                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
+                            .frame(width: 60, height: 60)
+                            .cornerRadius(30)
+                        
+                        Image("whiteHeart")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .scaledToFit()
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                hasLiked = true
+                            }
+                        
+                        Text("\(currentLikes)")
+                            .foregroundColor(.white)
+                            .font(.system(size: 15))
+                    }
                     
                     Spacer().frame(height: 10)
                     
-                    Image("whiteLink")
-                        .resizable()
-                        .frame(width: 35, height: 35)
-                        .scaledToFit()
-                        .foregroundColor(.white)
-                        .onTapGesture {
-                            hasClickedLink = true
-                            doneWithAd()
-                            openURL(URL(string: currentLink)!)
-                        }
+                    ZStack {
+                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
+                            .frame(width: 60, height: 60)
+                            .cornerRadius(30)
+                        
+                        Image("whiteLink")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFit()
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                hasClickedLink = true
+                                doneWithAd()
+                                openURL(URL(string: currentLink)!)
+                            }
+                    }
                     
-                    Spacer().frame(height: 30)
+                    Spacer().frame(height: 10)
 
-                    Image("whiteX")
-                        .resizable()
-                        .frame(width: 35, height: 35)
-                        .scaledToFit()
-                        .foregroundColor(.white)
-                        .onTapGesture {
-                            doneWithAd()
-                        }
-                    
-                
+                    ZStack {
+                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
+                            .frame(width: 60, height: 60)
+                            .cornerRadius(30)
+                        
+                        Image("whiteX")
+                            .resizable()
+                            .frame(width: 35, height: 35)
+                            .scaledToFit()
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                doneWithAd()
+                            }
+                    }
                 }
+                .offset(x: -165)
+                .transition(.move(edge: .leading))
             }
-            .offset(x: -150)
-            .isHidden(adButtonsHidden)
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
@@ -272,7 +285,9 @@ struct MessageRoomView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             // After ad is fully shown once
             areAdsHidden = true
-            adButtonsHidden = false
+            withAnimation {
+                adButtonsHidden = false
+            }
         }
         
     }
