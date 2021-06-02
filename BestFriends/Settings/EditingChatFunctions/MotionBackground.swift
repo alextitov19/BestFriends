@@ -99,21 +99,24 @@ struct MotionBackground: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("Longtap your choice")
-                        .foregroundColor(.white)
-                        .font(.title)
-                        .italic()
-                        .frame(width: 300, height: 100)
                     
-                  
-                
+                    Text("Longtap video to save your choice")
+                       
+                        .font(.system(size: 32))
+                        .fontWeight(.ultraLight)
+                        .italic()
+                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 385, height: 100, alignment: .center
+                        
+                        )
                     }
                 }
             }
         }
     
     private func saveData() {
-        print("Saving new background as ontion #\(selectedBackground)")
+        print("Saving new background as option #\(selectedBackground)")
         var user = UserDataSource().getCurrentUser()
         user.background = selectedBackground
         UserDataSource().updateUser(user: user)

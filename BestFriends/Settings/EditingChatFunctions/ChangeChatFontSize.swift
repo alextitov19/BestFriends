@@ -1,15 +1,15 @@
 //
-//  ChangeChatBackground.swift
+//  ChangeChatFontSize.swift
 //  BestFriends
 //
-//  Created by Robert Roe on 5/13/21.
+//  Created by Social Tech on 6/2/21.
 //
 
 import Amplify
 import SwiftUI
 
 
-struct ChangeChatBackground: View {
+struct ChangeChatFontSize: View {
 
     var body: some View {
         NavigationView{
@@ -25,8 +25,9 @@ struct ChangeChatBackground: View {
     }
 }
 
-struct ChangeChatBackground_Previews : PreviewProvider {
+struct ChangeChatFontSize_Previews : PreviewProvider {
     static var previews: some View {
-        ChangeChatBackground()
+        ChangeChatFontSize()
     }
 }
+

@@ -118,7 +118,7 @@ struct SettingsView: View {
                         
                         
                         
-                        Text("Making BestFriends Better")
+                        Text("Be a BestFriends Beta-tester")
                             .font(.system(size: 32))
                             .fontWeight(.ultraLight)
                             .foregroundColor(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
@@ -129,7 +129,7 @@ struct SettingsView: View {
                     
                     VStack {
                         
-                            Link("We ask for your help w/ Feedback & Suggestions - Join Beta-Test Team!", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
+                            Link("Work with our staff making BestFriends better!", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
                                 .frame(width: 325, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .overlay(
@@ -196,7 +196,7 @@ struct SettingsView: View {
                                 .frame(height: 45)
                             
                             
-                            Text("Account Services")
+                            Text("Manage my Account")
                                
                                 .font(.system(size: 32))
                                 .fontWeight(.ultraLight)
@@ -207,11 +207,26 @@ struct SettingsView: View {
                                 )
                             
                          
-                        
+                            NavigationLink(
+                                destination: ManageMyFriends(),
+                                label: {
+                                    Text("Manage my Friends")
+                                })
+                           
+                                .frame(width: 325, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
+                                        )
+                            
+                            Spacer()
+                                .frame(height: 20)
+                            
                             NavigationLink(
                                 destination: MyAccount(),
                                 label: {
-                                    Text("Password / Email")
+                                    Text("Change Password / Email")
                                 })
                                 .frame(width: 325, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -227,58 +242,22 @@ struct SettingsView: View {
                             
                             Spacer()
                                 .frame(height: 20)
-                            
-                            NavigationLink(
-                                destination: ManageMyFriends(),
-                                label: {
-                                    Text("Manage my Friends")
-                                })
-                           
-                                .frame(width: 325, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                        )
+                          
+                                NavigationLink(
+                                    destination: Notifications(),
+                                    label: {
+                                        Text("Notification Settings (Need B/E)")
+                                    })
+                                    .frame(width: 325, height: 50)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 25)
+                                            .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
+                                            )
                                 
-                         
-                            
-                            Spacer()
-                                .frame(height: 20)
-                            
-                            NavigationLink(
-                                destination: ChangeRestoreChatPIN(),
-                                label: {
-                                    Text("Change 'Restore Chat' PIN (Not Built)")
-                                })
-                                .frame(width: 325, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                        )
-                            
-                            
-                            
-                            
-                            Spacer()
-                                .frame(height: 20)
-                            
-                            NavigationLink(
-                                destination: ChangeBackground(),
-                                label: {
-                                    Text("Change Chat Background")
-                                })
-                                .frame(width: 325, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                        )
-                            
-                            Spacer()
-                                .frame(height: 20)
-                            
+                                Spacer()
+                                    .frame(height: 20)
+                                
                             NavigationLink(
                                 destination: DeleteMyAccount(),
                                 label: {
@@ -291,21 +270,56 @@ struct SettingsView: View {
                                         .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
                                         )
                                 
-                                VStack {
-                                    Spacer()
-                                        .frame(height: 20)
+                                
+                                Spacer()
+                                    .frame(height: 45)
+                                
+                                
+                                Text("Customize my Chat Rooms")
+                                   
+                                    .font(.system(size: 32))
+                                    .fontWeight(.ultraLight)
                                     
-                                    NavigationLink(
-                                        destination: Notifications(),
-                                        label: {
-                                            Text("Notifications (Need Backend)")
-                                        })
-                                        .frame(width: 325, height: 50)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 25)
-                                                .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                                )
+                                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 385, height: 50, alignment: .center
+                                    )
+                                
+                                NavigationLink(
+                                    destination: ChangeBackground(),
+                                    label: {
+                                        Text("Customize Chat Backgrounds")
+                                    })
+                               
+                                    .frame(width: 325, height: 50)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 25)
+                                            .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
+                                            )
+                                
+                                Spacer()
+                                    .frame(height: 20)
+                                
+                                NavigationLink(
+                                    destination: ChangeChatFontSize(),
+                                    label: {
+                                        Text("Chat Font Size")
+                                    })
+                               
+                                    .frame(width: 325, height: 50)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 25)
+                                            .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
+                                            )
+                                VStack {
+                                 
+                                    
+                                    
+                                    
+                                    
+                                    
                                     
                                    
                                         Spacer()
@@ -322,14 +336,23 @@ struct SettingsView: View {
                                             .frame(width: 385, height: 50, alignment: .center
                                        )
                            
-                                    Link("Anonymously talk to a trained teen outside your BestFriends 'TeenLine'", destination: URL(string: "https://teenlineinc.org")!)
+                                    
+                                    Link("Anonymously chat with trained teen on 'TeenLine'", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
                                         .frame(width: 325, height: 50)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 25)
-                                                .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
+                                                .stroke(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)), lineWidth: 1)
                                                 )
-                                        
+                                    
+                                    
+                                 
+                                   
+                                    
+                                    
+                                    
+                                    
+                                    
                             
                             
                         }
