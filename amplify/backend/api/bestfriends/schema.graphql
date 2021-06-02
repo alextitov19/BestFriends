@@ -38,6 +38,7 @@ type User @model {
   shakingCoolLinks: [String]
   tokens: Int!
   background: Int!
+  unlockedStickers: [Int]
 }
 
 type Advertisement @model {

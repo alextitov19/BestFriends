@@ -121,6 +121,7 @@ query GetUser($id: ID!) {
     shakingCoolLinks
     tokens
     background
+    unlockedStickers
     createdAt
     updatedAt
   }
@@ -156,6 +157,7 @@ query ListUsers(
       shakingCoolLinks
       tokens
       background
+      unlockedStickers
       createdAt
       updatedAt
     }

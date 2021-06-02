@@ -22,6 +22,7 @@ extension User {
     case shakingCoolLinks
     case tokens
     case background
+    case unlockedStickers
   }
   
   public static let keys = CodingKeys.self
@@ -49,7 +50,8 @@ extension User {
       .field(user.smileNotes, is: .optional, ofType: .embeddedCollection(of: Message.self)),
       .field(user.shakingCoolLinks, is: .optional, ofType: .embeddedCollection(of: String.self)),
       .field(user.tokens, is: .required, ofType: .int),
-      .field(user.background, is: .required, ofType: .int)
+      .field(user.background, is: .required, ofType: .int),
+      .field(user.unlockedStickers, is: .optional, ofType: .embeddedCollection(of: Int.self))
     )
     }
 }

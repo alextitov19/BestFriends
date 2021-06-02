@@ -30,6 +30,7 @@ struct MessageRoomView: View {
     var adNames: [String] = []
     
     let adDataSource = AdDataSource()
+    let userDataSource = UserDataSource()
 
     
     var user: User
@@ -294,14 +295,18 @@ struct MessageRoomView: View {
     
     private func doneWithAd() {
         var ad = adDataSource.getAd(id: adIDs[currentAdIndex])
+        var user = userDataSource.getCurrentUser()
+        user.tokens += 1
         ad.views += 1
         if hasLiked {
             ad.likes += 1
         }
         if hasClickedLink {
             ad.clicks += 1
+            user.tokens += 3
         }
         adDataSource.updateAd(ad: ad)
+        userDataSource.updateUser(user: user)
         adButtonsHidden = true
         if currentAdIndex < adIDs.count - 1 {
             currentAdIndex += 1

@@ -169,6 +169,7 @@ mutation CreateUser(
     shakingCoolLinks
     tokens
     background
+    unlockedStickers
     createdAt
     updatedAt
   }
@@ -202,6 +203,7 @@ mutation UpdateUser(
     shakingCoolLinks
     tokens
     background
+    unlockedStickers
     createdAt
     updatedAt
   }
@@ -235,6 +237,7 @@ mutation DeleteUser(
     shakingCoolLinks
     tokens
     background
+    unlockedStickers
     createdAt
     updatedAt
   }
