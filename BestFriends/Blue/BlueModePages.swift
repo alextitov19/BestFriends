@@ -39,38 +39,43 @@ struct BlueModePage1: View {
                             .multilineTextAlignment(.center)
                             .frame(width: 400, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     }
-    
+            
                     
                
                     
                     Spacer()
                    
-                Text("We'll unlock special features helping you fix this mess.")
-                   
-                    .font(.system(size: 25))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+              
                     
                 
-               Spacer()
-                    .frame(height: 3)
+             
                
                 
-                
                 NavigationLink(destination: BlueModePage2()) {
-                                    Text("Good because this, SUCKS!")
+                                    Text("Yes, unlock special features for me to help fix this mess.")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .frame(width: 400, height: 50)
+                                        .frame(width: 400, height: 75)
                                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                        .cornerRadius(25)
+                }
+                
+                Spacer()
+                     .frame(height: 20)
+                
+                NavigationLink(destination: BlueModePage6()) {
+                                    Text("Skip Walk-through")
+                                        .font(.system(size: 30))
+                                        .fontWeight(.ultraLight)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                        .frame(width: 300, height: 50)
+                                        .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .cornerRadius(25)
                     }
                 
                 Spacer()
-                    .frame(height: 160)
+                    .frame(height: 130)
             
                     }
             }
@@ -258,18 +263,18 @@ struct BlueModePage3: View {
                 Spacer()
                 
                 Text("We can help.")
-                    .font(.system(size: 25))
+                    .font(.system(size: 45))
                     .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 NavigationLink(destination: BlueModePage4()) {
-                        Text("Ok, activate 'BlueMode'")
+                        Text("Ok, what should I do first?")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .frame(width: 350, height: 50)
+                            .frame(width: 375, height: 50)
                             .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
            
@@ -306,13 +311,7 @@ struct BlueModePage4: View {
             ScrollView {
             VStack {
                 
-                                        
-           //     Image("blueHeart")
-           //         .resizable()
-           //         .frame(width: 50, height: 50)
-          //          .scaledToFill()
-          //
-                
+     
                 Text("BlueMode")
                     .font(.system(size: 50))
                     .fontWeight(.ultraLight)
@@ -596,16 +595,16 @@ struct BlueModePage6: View {
                     ZStack {
                         Image("ChatBubbleTrans")
                             .resizable()
-                            .frame(width: 425, height: 185)
+                            .frame(width: 475, height: 250)
                             .scaledToFill()
                     
-                        Text("When you're ready - tap below")
+                        Text("You'll find icons for all these features in BlueMode Chat.")
                             .italic()
                             .font(.system(size: 35))
                             .fontWeight(.regular)
                             .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                             .multilineTextAlignment(.center)
-                            .frame(width: 275, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 300, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     }
     
                     
@@ -622,17 +621,17 @@ struct BlueModePage6: View {
                 
                 
                 NavigationLink(destination: SettingsView()) {
-                                    Text("Ok, take me to Blue-Chat")
+                                    Text("Ok, take me to BlueMode Chat")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .frame(width: 325, height: 50)
+                                        .frame(width: 400, height: 50)
                                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                     }
                 
                 Spacer()
-                    .frame(height: 160)
+                    .frame(height: 185)
             
                     }
             }
