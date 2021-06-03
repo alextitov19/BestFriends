@@ -63,9 +63,9 @@ struct BlueModePage1: View {
                                     Text("Good because this, SUCKS!")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .frame(width: 400, height: 50)
-                                        .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                     }
                 
@@ -196,10 +196,14 @@ struct BlueModePage2: View {
                 NavigationLink(destination: BlueModePage3()) {
                                     Text("Next")
                                         .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .frame(width: 325, height: 50)
-                                        .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
+                    
+                    
+                    
+                    
                 }
             Spacer()
                 .frame(height: 150)
@@ -264,9 +268,9 @@ struct BlueModePage3: View {
                         Text("Ok, activate 'BlueMode'")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
-                            .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .frame(width: 350, height: 50)
-                            .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
            
                     }
@@ -396,9 +400,9 @@ struct BlueModePage4: View {
                                             Text("Not ready to talk just yet?")
                                                 .font(.system(size: 30))
                                                 .fontWeight(.ultraLight)
-                                                .foregroundColor(.blue)
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .frame(width: 400, height: 50)
-                                                .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                                 .cornerRadius(25)
                        
                         
@@ -549,9 +553,9 @@ struct BlueModePage5: View {
                                             Text("Let's do this >>>")
                                                 .font(.system(size: 30))
                                                 .fontWeight(.ultraLight)
-                                                .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .frame(width: 350, height: 50)
-                                                .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                                 .cornerRadius(25)
                         }
                   
@@ -621,9 +625,9 @@ struct BlueModePage6: View {
                                     Text("Ok, take me to Blue-Chat")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .frame(width: 325, height: 50)
-                                        .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                     }
                 
