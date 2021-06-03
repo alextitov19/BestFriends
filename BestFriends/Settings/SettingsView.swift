@@ -325,7 +325,7 @@ struct SettingsView: View {
                                         .font(.system(size: 32))
                                         .fontWeight(.ultraLight)
                                         
-                                        .foregroundColor(Color(#colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)))
+                                        .foregroundColor(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
                                         .multilineTextAlignment(.center)
                                         .frame(width: 385, height: 50, alignment: .center
                                    )
@@ -334,9 +334,9 @@ struct SettingsView: View {
                                         .frame(height: 20)
                                     
                                     NavigationLink(
-                                        destination: ChangeChatFontSize(),
+                                        destination: SettingsView(),
                                         label: {
-                                            Text("Chat Font Size")
+                                            Text("Schedule Time to Talk")
                                         })
                                    
                                         .frame(width: 325, height: 50)
