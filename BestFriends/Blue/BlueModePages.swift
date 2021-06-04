@@ -385,7 +385,7 @@ struct BlueModePage4: View {
                             .frame(height: 15)
                         
                         
-                        Text("(Note: You can access all these links from BlueMode Chat.)")
+                        Text("(Note: You can access all BlueMode functions from BlueMode Chat.)")
 
                             .font(.system(size: 20))
                             .italic()
@@ -463,7 +463,8 @@ struct BlueModePage5: View {
                 
                
             
-                Spacer().frame(height: 25)
+                Spacer()
+                    .frame(height: 25)
                
                 VStack {
             
@@ -481,7 +482,7 @@ struct BlueModePage5: View {
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("Upload images of you two from happier days to your 'FRIEND'S' ShakingCool activating good vibes!")
+                            Text("Upload images of happier days to your friend's ShakingCool - prompting a smile!")
                                 .frame(width: 400, height: 100, alignment: .center)
                         })
                     .frame(width: 400, height: 75, alignment: .center)
@@ -496,7 +497,7 @@ struct BlueModePage5: View {
                     NavigationLink(
                         destination: SmileNotesView(),
                         label: {
-                            Text("View all the SmileNotes from your friend - rembering nice things that your were told.")
+                            Text("View your friend's SmileNotes - remembering the nice things.")
                                 .frame(width: 400, height: 100, alignment: .center)
                         })
                     .frame(width: 400, height: 75, alignment: .center)
@@ -512,7 +513,7 @@ struct BlueModePage5: View {
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("Unlock special stickers saying the words you can't seem to say right now.")
+                            Text("Unlock special stickers - saying the words you can't seem to say right now.")
                                 .frame(width: 400, height: 100, alignment: .center)
                         })
                     .frame(width: 400, height: 75, alignment: .center)
@@ -529,7 +530,7 @@ struct BlueModePage5: View {
                         NavigationLink(
                             destination: InfoViewPage1(),
                             label: {
-                                Text("Yep, all this waiting to hear back sucks. We'll send push notifications once your messages are read or new messages are posted in BlueMode.")
+                                Text("We'll send push notifications instantly when your messages are read & new messages are posted in BlueMode Chat.")
                                     .frame(width: 400, height: 100, alignment: .center)
                             })
                         .frame(width: 400, height: 75, alignment: .center)
@@ -537,19 +538,10 @@ struct BlueModePage5: View {
                         .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                         .cornerRadius(25)
                         
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        Text("(Note: You can access all these links from BlueMode Chat.)")
-
-                            .font(.system(size: 20))
-                            .italic()
-                            .frame(width: 300, height: 50, alignment: .center)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                     
 
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 35)
                      
                         NavigationLink(destination: BlueModePage6()) {
                                             Text("Ok, let's do this >>>")
@@ -565,7 +557,7 @@ struct BlueModePage5: View {
                         }
                   
                         Spacer()
-                            .frame(height: 75)
+                            .frame(height: 60)
                     
                 }
     }
