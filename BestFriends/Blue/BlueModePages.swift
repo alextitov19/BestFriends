@@ -7,6 +7,7 @@
 
 import Amplify
 import SwiftUI
+import AVKit
 
 
 struct BlueModePage1: View {
@@ -53,7 +54,7 @@ struct BlueModePage1: View {
                
                 
                 NavigationLink(destination: BlueModePage2()) {
-                                    Text("Click here to unlock special features to help fix this mess.")
+                                    Text("Unlock special features to help fix this mess.    >>>   Click Here")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -65,7 +66,7 @@ struct BlueModePage1: View {
                 Spacer()
                      .frame(height: 20)
                 
-                NavigationLink(destination: BlueModePage6()) {
+                NavigationLink(destination: BlueHeartVid()) {
                                     Text("Skip Walk-through")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
@@ -164,7 +165,7 @@ struct BlueModePage2: View {
                         
                             
                             VStack {
-                                Text("Because fights suck!")
+                                Text("Because this Suck!")
                                     .italic() .italic()
                                     .font(.system(size: 60))
                                     .fontWeight(.regular)
@@ -542,7 +543,7 @@ struct BlueModePage5: View {
                      
 
                         Spacer()
-                            .frame(height: 35)
+                            .frame(height: 55)
                      
                         NavigationLink(destination: BlueHeartVid()) {
                                             Text("Ok, let's do this >>>")
@@ -572,33 +573,34 @@ struct BlueModePage5_Previews : PreviewProvider {
         }
     }
 }
+}
 
-// ***************************************
 
+// Diverting to the BlueHeartVid page instead of page 6
 
 struct BlueModePage6: View {
 
     var body: some View {
         NavigationView{
-    
-  
+
+
         ZStack {
-            
-            
+
+
             Image("Transition")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            
-                
+
+
             VStack {
-                       
+
                     ZStack {
                         Image("ChatBubbleTrans")
                             .resizable()
                             .frame(width: 500, height: 250)
                             .scaledToFill()
-                    
+
                         Text("Before things get any worse.")
                             .italic()
                             .font(.system(size: 35))
@@ -607,11 +609,11 @@ struct BlueModePage6: View {
                             .multilineTextAlignment(.center)
                             .frame(width: 300, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     }
-    
-                    
+
+
                     Spacer()
-        
-                
+
+
                 NavigationLink(destination: SettingsView()) {
                                     Text("Take me to BlueMode Chat")
                                         .font(.system(size: 30))
@@ -621,10 +623,10 @@ struct BlueModePage6: View {
                                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                     }
-                
+
                 Spacer()
                     .frame(height: 215)
-            
+
                     }
             }
         }
@@ -634,11 +636,12 @@ struct BlueModePage6: View {
 
 struct BlueModePaqe6_Previews : PreviewProvider {
     static var previews: some View {
-   
+
         BlueModePage6()
 
-        
+
     }
 }
 
-}
+
+
