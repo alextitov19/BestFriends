@@ -198,7 +198,7 @@ struct BlueModePage2: View {
                     
                 }
             Spacer()
-                .frame(height: 275)
+                .frame(height: 265)
         
         }
         }
