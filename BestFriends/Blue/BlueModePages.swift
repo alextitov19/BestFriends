@@ -125,7 +125,7 @@ struct BlueModePage2: View {
                         .italic() .italic()
                         .font(.system(size: 45))
                         .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
                         .frame(width: 275, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
@@ -578,70 +578,70 @@ struct BlueModePage5_Previews : PreviewProvider {
 
 // Diverting to the BlueHeartVid page instead of page 6
 
-struct BlueModePage6: View {
-
-    var body: some View {
-        NavigationView{
-
-
-        ZStack {
-
-
-            Image("Transition")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-
-
-            VStack {
-
-                    ZStack {
-                        Image("ChatBubbleTrans")
-                            .resizable()
-                            .frame(width: 500, height: 250)
-                            .scaledToFill()
-
-                        Text("Before things get any worse.")
-                            .italic()
-                            .font(.system(size: 35))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 300, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    }
-
-
-                    Spacer()
-
-
-                NavigationLink(destination: SettingsView()) {
-                                    Text("Take me to BlueMode Chat")
-                                        .font(.system(size: 30))
-                                        .fontWeight(.ultraLight)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .frame(width: 400, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                    }
-
-                Spacer()
-                    .frame(height: 215)
-
-                    }
-            }
-        }
-    }
-}
-
-
-struct BlueModePaqe6_Previews : PreviewProvider {
-    static var previews: some View {
-
-        BlueModePage6()
-
-
-    }
-}
-
-
-
+//struct BlueModePage6: View {
+//
+//    var body: some View {
+//        NavigationView{
+//
+//
+//        ZStack {
+//
+//
+//            Image("Transition")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
+//
+//            VStack {
+//
+//                    ZStack {
+//                        Image("ChatBubbleTrans")
+//                            .resizable()
+//                            .frame(width: 500, height: 250)
+//                            .scaledToFill()
+//
+//                        Text("Before things get any worse.")
+//                            .italic()
+//                            .font(.system(size: 35))
+//                            .fontWeight(.regular)
+//                            .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+//                            .multilineTextAlignment(.center)
+//                            .frame(width: 300, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                    }
+//
+//
+//                    Spacer()
+//
+//
+//                NavigationLink(destination: SettingsView()) {
+//                                    Text("Take me to BlueMode Chat")
+//                                        .font(.system(size: 30))
+//                                        .fontWeight(.ultraLight)
+//                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                        .frame(width: 400, height: 50)
+//                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+//                                        .cornerRadius(25)
+//                    }
+//
+//                Spacer()
+//                    .frame(height: 215)
+//
+//                    }
+//            }
+//        }
+//    }
+//}
+//
+//
+//struct BlueModePaqe6_Previews : PreviewProvider {
+//    static var previews: some View {
+//
+//        BlueModePage6()
+//
+//
+//    }
+//}
+//
+//
+//
