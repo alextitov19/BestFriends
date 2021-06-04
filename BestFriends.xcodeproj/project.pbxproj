@@ -270,6 +270,8 @@
 		CF5263E62669E94000243DD7 /* BestFriens Ads Video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF5263E52669E94000243DD7 /* BestFriens Ads Video.m4v */; };
 		CF5263E8266A1BE400243DD7 /* SocialChange.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263E7266A1BE400243DD7 /* SocialChange.mp4 */; };
 		CF5263EC266A246A00243DD7 /* SocialChangeVid2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */; };
+		CF5263EE266A294400243DD7 /* BlueHeartVid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263ED266A294400243DD7 /* BlueHeartVid.mp4 */; };
+		CF5263F0266A2B0D00243DD7 /* BlueHeartVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263EF266A2B0D00243DD7 /* BlueHeartVid.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
 		CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */; };
 		CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */; };
@@ -435,6 +437,8 @@
 		CF5263E52669E94000243DD7 /* BestFriens Ads Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BestFriens Ads Video.m4v"; path = "../../../../../../Desktop/BestFriens Ads Video.m4v"; sourceTree = "<group>"; };
 		CF5263E7266A1BE400243DD7 /* SocialChange.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = SocialChange.mp4; path = ../../../../../../Desktop/SocialChange.mp4; sourceTree = "<group>"; };
 		CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialChangeVid2.swift; sourceTree = "<group>"; };
+		CF5263ED266A294400243DD7 /* BlueHeartVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlueHeartVid.mp4; path = ../../../../../../Desktop/BlueHeartVid.mp4; sourceTree = "<group>"; };
+		CF5263EF266A2B0D00243DD7 /* BlueHeartVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueHeartVid.swift; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesEnjoyingApp.swift; sourceTree = "<group>"; };
 		CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEnjoyingApp.swift; sourceTree = "<group>"; };
@@ -528,6 +532,7 @@
 			children = (
 				CF5263E52669E94000243DD7 /* BestFriens Ads Video.m4v */,
 				CF5263E7266A1BE400243DD7 /* SocialChange.mp4 */,
+				CF5263ED266A294400243DD7 /* BlueHeartVid.mp4 */,
 				CF5263DA266477DF00243DD7 /* CityMopeds.mp4 */,
 				CF5263D8266477D300243DD7 /* Skateboard.mp4 */,
 				CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */,
@@ -799,6 +804,7 @@
 			isa = PBXGroup;
 			children = (
 				CF436A262658D66F00B69506 /* BlueModePages.swift */,
+				CF5263EF266A2B0D00243DD7 /* BlueHeartVid.swift */,
 				CF436A2F265A0FF400B69506 /* BlueSurvey.swift */,
 			);
 			path = Blue;
@@ -914,6 +920,7 @@
 				371A608B589BED4B51C92A46 /* awsconfiguration.json in Resources */,
 				7A417EC3265ECF5900E95364 /* first.mp4 in Resources */,
 				242A027DC74FA98F23E36884 /* amplifyconfiguration.json in Resources */,
+				CF5263EE266A294400243DD7 /* BlueHeartVid.mp4 in Resources */,
 				BAF6287D80906E82F5F341CE /* awsconfiguration.json in Resources */,
 				FABC7029337D477527295A4B /* amplifyconfiguration.json in Resources */,
 				CF5263D9266477D300243DD7 /* Skateboard.mp4 in Resources */,
@@ -1064,6 +1071,7 @@
 				8195EF9985493DF0513FE41E /* Room.swift in Sources */,
 				D1E3CFDF2653A35700A26779 /* BlueModeLP.swift in Sources */,
 				5F191B231895C081FA325B55 /* User+Schema.swift in Sources */,
+				CF5263F0266A2B0D00243DD7 /* BlueHeartVid.swift in Sources */,
 				7AC8A23F26578C3E001812EF /* LocationManager.swift in Sources */,
 				F0CB1CEEB2A43F6F2842A262 /* User.swift in Sources */,
 				E651934A8005549C6B9ECC28 /* Message+Schema.swift in Sources */,

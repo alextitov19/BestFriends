@@ -8,6 +8,7 @@
 import Amplify
 import SwiftUI
 
+
 struct BlueModePage1: View {
 
     var body: some View {
@@ -543,7 +544,7 @@ struct BlueModePage5: View {
                         Spacer()
                             .frame(height: 35)
                      
-                        NavigationLink(destination: BlueModePage6()) {
+                        NavigationLink(destination: BlueHeartVid()) {
                                             Text("Ok, let's do this >>>")
                                                 .font(.system(size: 30))
                                                 .fontWeight(.ultraLight)
@@ -598,7 +599,7 @@ struct BlueModePage6: View {
                             .frame(width: 500, height: 250)
                             .scaledToFill()
                     
-                        Text("Before things any any worse.")
+                        Text("Before things get any worse.")
                             .italic()
                             .font(.system(size: 35))
                             .fontWeight(.regular)
