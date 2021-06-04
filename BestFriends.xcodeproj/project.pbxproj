@@ -267,6 +267,9 @@
 		CF5263DE266479E400243DD7 /* MotionBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263DD266479E400243DD7 /* MotionBackground.swift */; };
 		CF5263E026647A0A00243DD7 /* StaticBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263DF26647A0A00243DD7 /* StaticBackground.swift */; };
 		CF5263E32667621B00243DD7 /* ChangeChatFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */; };
+		CF5263E62669E94000243DD7 /* BestFriens Ads Video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF5263E52669E94000243DD7 /* BestFriens Ads Video.m4v */; };
+		CF5263E8266A1BE400243DD7 /* SocialChange.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263E7266A1BE400243DD7 /* SocialChange.mp4 */; };
+		CF5263EC266A246A00243DD7 /* SocialChangeVid2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
 		CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */; };
 		CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */; };
@@ -429,6 +432,9 @@
 		CF5263DD266479E400243DD7 /* MotionBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionBackground.swift; sourceTree = "<group>"; };
 		CF5263DF26647A0A00243DD7 /* StaticBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticBackground.swift; sourceTree = "<group>"; };
 		CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatFontSize.swift; sourceTree = "<group>"; };
+		CF5263E52669E94000243DD7 /* BestFriens Ads Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BestFriens Ads Video.m4v"; path = "../../../../../../Desktop/BestFriens Ads Video.m4v"; sourceTree = "<group>"; };
+		CF5263E7266A1BE400243DD7 /* SocialChange.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = SocialChange.mp4; path = ../../../../../../Desktop/SocialChange.mp4; sourceTree = "<group>"; };
+		CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialChangeVid2.swift; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesEnjoyingApp.swift; sourceTree = "<group>"; };
 		CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEnjoyingApp.swift; sourceTree = "<group>"; };
@@ -520,6 +526,8 @@
 		7A6A4D01262B866500561D87 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CF5263E52669E94000243DD7 /* BestFriens Ads Video.m4v */,
+				CF5263E7266A1BE400243DD7 /* SocialChange.mp4 */,
 				CF5263DA266477DF00243DD7 /* CityMopeds.mp4 */,
 				CF5263D8266477D300243DD7 /* Skateboard.mp4 */,
 				CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */,
@@ -664,6 +672,7 @@
 			children = (
 				CF436A2826599EE000B69506 /* PreLoadPage.swift */,
 				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
+				CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
 				7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */,
 				7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */,
@@ -900,6 +909,8 @@
 				7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */,
 				C40B21779B4A21AEE4E5C9BB /* awsconfiguration.json in Resources */,
 				FADB708799E1553410EFE827 /* amplifyconfiguration.json in Resources */,
+				CF5263E8266A1BE400243DD7 /* SocialChange.mp4 in Resources */,
+				CF5263E62669E94000243DD7 /* BestFriens Ads Video.m4v in Resources */,
 				371A608B589BED4B51C92A46 /* awsconfiguration.json in Resources */,
 				7A417EC3265ECF5900E95364 /* first.mp4 in Resources */,
 				242A027DC74FA98F23E36884 /* amplifyconfiguration.json in Resources */,
@@ -980,6 +991,7 @@
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */,
+				CF5263EC266A246A00243DD7 /* SocialChangeVid2.swift in Sources */,
 				7AB62A8526426F86005A7744 /* SettingsView.swift in Sources */,
 				7A12E7F926681F130080040B /* ReportedMessage+Schema.swift in Sources */,
 				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,

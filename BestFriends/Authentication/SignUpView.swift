@@ -8,6 +8,7 @@
 import SwiftUI
 import Amplify
 
+import AVKit
 
 
 
@@ -1094,10 +1095,11 @@ struct SignUpQuestionPage2: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+          Image("purpleBackground")
+               .resizable()                .ignoresSafeArea()
+               .scaledToFill()
+            
+
             
             VStack {
                 VStack {
@@ -1354,6 +1356,7 @@ struct SignUpPage1_Previews : PreviewProvider {
        
     }
 }
+
 
 
 
