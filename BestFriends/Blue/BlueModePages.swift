@@ -75,7 +75,7 @@ struct BlueModePage1: View {
                     }
                 
                 Spacer()
-                    .frame(height: 130)
+                    .frame(height: 175)
             
                     }
             }
@@ -171,8 +171,7 @@ struct BlueModePage2: View {
                                     .multilineTextAlignment(.center)
                                     .frame(width: 350, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 
-                                Spacer()
-                                    .frame(height: 30)
+                              
                             
                             }
                             
@@ -184,7 +183,6 @@ struct BlueModePage2: View {
                 }
  
                 Spacer()
-                    .frame(height: 200)
                    
                    
                 NavigationLink(destination: BlueModePage3()) {
@@ -200,7 +198,7 @@ struct BlueModePage2: View {
                     
                 }
             Spacer()
-                .frame(height: 200)
+                .frame(height: 275)
         
         }
         }
@@ -276,7 +274,7 @@ struct BlueModePage3: View {
                     }
                 
                 Spacer()
-                    .frame(height: 250)
+                    .frame(height: 270)
                 }
             }
         }
@@ -384,10 +382,19 @@ struct BlueModePage4: View {
                         
                         
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 15)
                         
-                    
+                        
+                        Text("(Note: You can access all these links from BlueMode Chat.)")
 
+                            .font(.system(size: 20))
+                            .italic()
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+
+                        Spacer()
+                            .frame(height: 30)
+                        
                         NavigationLink(destination: BlueModePage5()) {
                                             Text("Not ready to talk just yet?")
                                                 .font(.system(size: 30))
@@ -400,19 +407,11 @@ struct BlueModePage4: View {
                         
                         }
                         
-                        Spacer().frame(height: 50)
                         
-                        
-                        
-                        Text("(Note: You can access all these links from BlueMode Chat.)")
-
-                            .font(.system(size: 20))
-                            .italic()
-                            .frame(width: 300, height: 150, alignment: .center)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                       
     
                     Spacer()
-                        .frame(height: 75)
+                        .frame(height: 200)
                 
                         
                         
@@ -538,15 +537,19 @@ struct BlueModePage5: View {
                         .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                         .cornerRadius(25)
                         
-                     
-                        Text("Ready to get started - take a breath.")
-                          //  .italic()
-                            .font(.system(size: 25))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 425, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        Text("(Note: You can access all these links from BlueMode Chat.)")
+
+                            .font(.system(size: 20))
+                            .italic()
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+
+                        Spacer()
+                            .frame(height: 20)
                      
                         NavigationLink(destination: BlueModePage6()) {
                                             Text("Ok, let's do this >>>")
@@ -554,10 +557,15 @@ struct BlueModePage5: View {
                                                 .fontWeight(.ultraLight)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .frame(width: 350, height: 50)
-                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                                .cornerRadius(25)
+                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))) .cornerRadius(25)
+                       
+                        
+                           
+                        
                         }
                   
+                        Spacer()
+                            .frame(height: 75)
                     
                 }
     }
@@ -608,17 +616,8 @@ struct BlueModePage6: View {
                     }
     
                     
-               
-                    
                     Spacer()
-                   
-              
-                    
-                
-               Spacer()
-                    .frame(height: 3)
-               
-                
+        
                 
                 NavigationLink(destination: SettingsView()) {
                                     Text("Take me to BlueMode Chat")
@@ -631,7 +630,7 @@ struct BlueModePage6: View {
                     }
                 
                 Spacer()
-                    .frame(height: 185)
+                    .frame(height: 215)
             
                     }
             }
