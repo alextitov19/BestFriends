@@ -30,10 +30,13 @@ struct BlueModePage1: View {
                     ZStack {
                         Image("ChatBubbleTrans")
                             .resizable()
-                            .frame(width: 500, height: 285)
+                            .frame(width: 550, height: 285)
                             .scaledToFill()
                     
-                        Text("Just had a huge fight with your best friend or significant other?")
+                   
+                        
+                        
+                        Text("WOW! Just had a huge fight with your best friend or significant other?")
                             .italic()
                             .font(.system(size: 35))
                             .fontWeight(.regular)
@@ -54,11 +57,12 @@ struct BlueModePage1: View {
                
                 
                 NavigationLink(destination: BlueModePage2()) {
-                                    Text("Unlock special features to help fix this mess.    >>>   Click Here")
+                                    Text(" Unlock special features in 'BlueMode' to help ease this pain.")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .frame(width: 400, height: 75)
+                                        .frame(width: 425, height: 75
+                                        )
                                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                 }
@@ -67,7 +71,7 @@ struct BlueModePage1: View {
                      .frame(height: 20)
                 
                 NavigationLink(destination: BlueHeartVid()) {
-                                    Text("Skip Walk-through")
+                                    Text("or 'Skip' walk-through")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -77,7 +81,7 @@ struct BlueModePage1: View {
                     }
                 
                 Spacer()
-                    .frame(height: 175)
+                    .frame(height: 250)
             
                     }
             }
@@ -121,24 +125,24 @@ struct BlueModePage2: View {
                             
                         
                         VStack {
-                        Text("Why,")
+                        Text("duck into")
                         .italic() .italic()
                         .font(.system(size: 45))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 275, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 325, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                             Spacer()
                                 .frame(height: 20)
+                            
+                            Text("BlueMode")
+                                .font(.system(size: 50))
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(.blue)
+                                .multilineTextAlignment(.center)
+                                .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
-                    Text("BlueMode?")
-                        
-                        .font(.system(size: 60))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 300, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         }
                         
                         Spacer()
@@ -146,9 +150,6 @@ struct BlueModePage2: View {
                         
                     }
                     
-//                    Spacer()
-//                        .frame(height: 75)
-                
                     
                 HStack {
                     VStack {
@@ -165,7 +166,7 @@ struct BlueModePage2: View {
                         
                             
                             VStack {
-                                Text("Because this Suck!")
+                                Text("Because this hurts 💔")
                                     .italic() .italic()
                                     .font(.system(size: 60))
                                     .fontWeight(.regular)
@@ -238,7 +239,7 @@ struct BlueModePage3: View {
                         .frame(width: 525, height: 300)
                         .scaledToFill()
                     
-                    Text("Before you start 'unfriending' each other on IG & Snap, or repost private messages that will be hurtful - let's try 'BlueMode'.")
+                    Text("Before you start 'unfriending' each other on IG & Snap, or reposting private messages that will be hurtful - let's try 'BlueMode'.")
                         .italic()
                         .font(.system(size: 27))
                         .fontWeight(.regular)
@@ -254,18 +255,18 @@ struct BlueModePage3: View {
                 Spacer()
                     .frame(height: 325)
                 
-                Text("We can help.")
+                Text("We know you're upset & hurt, wondering how it came to this after so much good from before.")
                 .italic()
-                .font(.system(size: 50))
+                .font(.system(size: 27))
                 .fontWeight(.regular)
-                .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .multilineTextAlignment(.center)
-                .frame(width: 300, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 425, height: 125, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
                     .frame(height: 15)
                 NavigationLink(destination: BlueModePage4()) {
-                        Text("Ok, what should I do first?")
+                        Text("Maybe we can help.")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -573,7 +574,7 @@ struct BlueModePage5_Previews : PreviewProvider {
         }
     }
 }
-}
+
 
 
 // Diverting to the BlueHeartVid page instead of page 6
@@ -645,3 +646,4 @@ struct BlueModePage5_Previews : PreviewProvider {
 //
 //
 //
+}
