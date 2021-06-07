@@ -272,6 +272,7 @@
 		CF5263EC266A246A00243DD7 /* SocialChangeVid2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */; };
 		CF5263EE266A294400243DD7 /* BlueHeartVid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263ED266A294400243DD7 /* BlueHeartVid.mp4 */; };
 		CF5263F0266A2B0D00243DD7 /* BlueHeartVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263EF266A2B0D00243DD7 /* BlueHeartVid.swift */; };
+		CF5263F2266DDD4200243DD7 /* BlueModeUserDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
 		CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */; };
 		CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */; };
@@ -439,6 +440,7 @@
 		CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialChangeVid2.swift; sourceTree = "<group>"; };
 		CF5263ED266A294400243DD7 /* BlueHeartVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = BlueHeartVid.mp4; path = ../../../../../../Desktop/BlueHeartVid.mp4; sourceTree = "<group>"; };
 		CF5263EF266A2B0D00243DD7 /* BlueHeartVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueHeartVid.swift; sourceTree = "<group>"; };
+		CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeUserDashboard.swift; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesEnjoyingApp.swift; sourceTree = "<group>"; };
 		CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEnjoyingApp.swift; sourceTree = "<group>"; };
@@ -734,6 +736,8 @@
 			isa = PBXGroup;
 			children = (
 				7A9A733E265744A900177652 /* BlueMessageRoomView.swift */,
+				CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */,
+				CF436A2F265A0FF400B69506 /* BlueSurvey.swift */,
 			);
 			path = BlueChat;
 			sourceTree = "<group>";
@@ -805,7 +809,6 @@
 			children = (
 				CF436A262658D66F00B69506 /* BlueModePages.swift */,
 				CF5263EF266A2B0D00243DD7 /* BlueHeartVid.swift */,
-				CF436A2F265A0FF400B69506 /* BlueSurvey.swift */,
 			);
 			path = Blue;
 			sourceTree = "<group>";
@@ -1184,6 +1187,7 @@
 				D700102D6749C68650A383E9 /* User.swift in Sources */,
 				F9AEF842466D79078E5E3E88 /* AmplifyModels.swift in Sources */,
 				1CEB4306559911B9B3658CF3 /* Message+Schema.swift in Sources */,
+				CF5263F2266DDD4200243DD7 /* BlueModeUserDashboard.swift in Sources */,
 				25EE09CBD6D5045339DB2CE3 /* ReportedMessage+Schema.swift in Sources */,
 				7A12E7F126681F130080040B /* Advertisement.swift in Sources */,
 				DCD418FA200B1317E320D295 /* ReportedMessage.swift in Sources */,

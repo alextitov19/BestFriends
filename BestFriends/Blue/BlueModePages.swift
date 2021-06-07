@@ -68,7 +68,7 @@ struct BlueModePage1: View {
                 }
                 
                 Spacer()
-                     .frame(height: 20)
+                     .frame(height: 10)
                 
                 NavigationLink(destination: BlueHeartVid()) {
                                     Text("or 'Skip' walk-through")
@@ -81,7 +81,7 @@ struct BlueModePage1: View {
                     }
                 
                 Spacer()
-                    .frame(height: 250)
+                    .frame(height: 185)
             
                     }
             }
@@ -131,7 +131,7 @@ struct BlueModePage2: View {
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 375, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                             Spacer()
                                 .frame(height: 20)
