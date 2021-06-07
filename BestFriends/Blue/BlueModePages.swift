@@ -125,13 +125,13 @@ struct BlueModePage2: View {
                             
                         
                         VStack {
-                        Text("duck into")
+                        Text("Duck in for some quiet time with your thoughts & memories or invite your friend to fix this mess!")
                         .italic() .italic()
-                        .font(.system(size: 45))
+                        .font(.system(size: 30))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 325, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                             Spacer()
                                 .frame(height: 20)
