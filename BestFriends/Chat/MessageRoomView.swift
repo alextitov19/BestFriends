@@ -162,7 +162,6 @@ struct MessageRoomView: View {
                         .padding(10)
                     
                     Button(action: {
-                        
                         let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
                         
                         messageDataSource.sendMessage(message: message)
