@@ -1256,7 +1256,7 @@ struct SignUpQuestionPage3: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Button("NGO / Social Impact", action: {
+                        Button("Social Impact / NGO's", action: {
                         })
                         .frame(width: 300, height: 50, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))

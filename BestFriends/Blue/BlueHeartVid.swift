@@ -23,7 +23,7 @@ struct BlueHeartVid: View {
             
       
                 VStack {
-                    NavigationLink(destination: BlueMessageRoomView(room: <#Room#>)) {
+                    NavigationLink(destination: SettingsView()) {
                     Text("Take me to BlueMode Chat")
                         .font(.system(size: 30))
                         .fontWeight(.ultraLight)
