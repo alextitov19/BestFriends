@@ -139,6 +139,7 @@
 		7A417EC6265ED4B000E95364 /* AdViewFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417EC5265ED4B000E95364 /* AdViewFullScreen.swift */; };
 		7A417EC8265ED52900E95364 /* AdDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417EC7265ED52900E95364 /* AdDataSource.swift */; };
 		7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417ECB265F236700E95364 /* AdPlayerView.swift */; };
+		7A4B9B5E266FD00A00EAF3B9 /* EnrichHER.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B9B5D266FD00A00EAF3B9 /* EnrichHER.m4v */; };
 		7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */; };
 		7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
@@ -271,7 +272,6 @@
 		CF5263F0266A2B0D00243DD7 /* BlueHeartVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263EF266A2B0D00243DD7 /* BlueHeartVid.swift */; };
 		CF5263F2266DDD4200243DD7 /* BlueModeUserDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */; };
 		CF5263F8266F1D5B00243DD7 /* EnrichHERVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F7266F1D5B00243DD7 /* EnrichHERVideo.swift */; };
-		CF52640B266F68D100243DD7 /* EnrichHER.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF52640A266F68D100243DD7 /* EnrichHER.m4v */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
 		CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */; };
 		CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */; };
@@ -377,6 +377,7 @@
 		7A417EC5265ED4B000E95364 /* AdViewFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewFullScreen.swift; sourceTree = "<group>"; };
 		7A417EC7265ED52900E95364 /* AdDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDataSource.swift; sourceTree = "<group>"; };
 		7A417ECB265F236700E95364 /* AdPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdPlayerView.swift; sourceTree = "<group>"; };
+		7A4B9B5D266FD00A00EAF3B9 /* EnrichHER.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = EnrichHER.m4v; sourceTree = "<group>"; };
 		7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolFullScreenView.swift; sourceTree = "<group>"; };
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
@@ -441,7 +442,6 @@
 		CF5263FD266F202400243DD7 /* BlueHeartVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlueHeartVid.mp4; sourceTree = "<group>"; };
 		CF526401266F20A000243DD7 /* BestFriens Ads Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BestFriens Ads Video.m4v"; sourceTree = "<group>"; };
 		CF526402266F20A600243DD7 /* Mieko3.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mieko3.m4v; sourceTree = "<group>"; };
-		CF52640A266F68D100243DD7 /* EnrichHER.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = EnrichHER.m4v; path = ../../../../../../../../Desktop/EnrichHER.m4v; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesEnjoyingApp.swift; sourceTree = "<group>"; };
 		CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEnjoyingApp.swift; sourceTree = "<group>"; };
@@ -509,6 +509,14 @@
 				CF5263F7266F1D5B00243DD7 /* EnrichHERVideo.swift */,
 			);
 			path = Advertisements;
+			sourceTree = "<group>";
+		};
+		7A4B9B5C266FD00900EAF3B9 /* Social Impact */ = {
+			isa = PBXGroup;
+			children = (
+				7A4B9B5D266FD00A00EAF3B9 /* EnrichHER.m4v */,
+			);
+			path = "Social Impact";
 			sourceTree = "<group>";
 		};
 		7A6A4CD2262B56E900561D87 /* Chat */ = {
@@ -752,9 +760,9 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
+				7A4B9B5C266FD00900EAF3B9 /* Social Impact */,
 				CF526400266F209600243DD7 /* Our Ads */,
 				CF5263FF266F208600243DD7 /* Beauty Fashion */,
-				CF526404266F20CA00243DD7 /* Social Impact NGOs */,
 			);
 			path = "Ad Videos";
 			sourceTree = "<group>";
@@ -786,14 +794,6 @@
 				CF526401266F20A000243DD7 /* BestFriens Ads Video.m4v */,
 			);
 			path = "Our Ads";
-			sourceTree = "<group>";
-		};
-		CF526404266F20CA00243DD7 /* Social Impact NGOs */ = {
-			isa = PBXGroup;
-			children = (
-				CF52640A266F68D100243DD7 /* EnrichHER.m4v */,
-			);
-			path = "Social Impact NGOs";
 			sourceTree = "<group>";
 		};
 		CFE6FD3A2661B65700DF92BD /* GetPossitiveReviews */ = {
@@ -956,7 +956,7 @@
 				AB791B981F62744749FC786D /* awsconfiguration.json in Resources */,
 				0B8A5735A1E658DE4FC62119 /* amplifyconfiguration.json in Resources */,
 				CF5263D7266477C600243DD7 /* FieldFlowers.mp4 in Resources */,
-				CF52640B266F68D100243DD7 /* EnrichHER.m4v in Resources */,
+				7A4B9B5E266FD00A00EAF3B9 /* EnrichHER.m4v in Resources */,
 				F4D242A7842387FEB78858DA /* awsconfiguration.json in Resources */,
 				DB15C6B4674E946ADCCFE253 /* amplifyconfiguration.json in Resources */,
 				7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */,
