@@ -69,39 +69,24 @@ struct ChatBubble: View {
                             .frame(width: 200, alignment: .trailing)
                             .foregroundColor(.white)
                             .font(.system(size: 14).weight(.thin))
-                        
-                        Spacer().frame(width: 5)
-                        
+                            .offset(x: -5, y: 5)
                     }
                     
                     
                     HStack {
                         Spacer()
-
-                        VStack {
-                                
-                                                
-                            HStack {
-                                Spacer().frame(width: 0, height: 5)
-                                
-                                Text(message.body)
-                                    .padding(10)
-                                    .multilineTextAlignment(.leading)
-                                    .font(.system(size: 16).weight(.light))
-                                    .foregroundColor(.white)
-                                    .background(Color(.purple))
-                                    .cornerRadius(15)
-                                    .gesture(LongPressGesture(minimumDuration: 1)
-                                    .onEnded { _ in
-                                        showingActionSheet = true
-                                    })
-                                
-                                Spacer().frame(width: 0, height: 5)
-                            
-                            }
-                        }
-//                        Spacer().frame(width: 5)
                         
+                        Text(message.body)
+                            .padding(10)
+                            .multilineTextAlignment(.leading)
+                            .font(.system(size: 16).weight(.light))
+                            .foregroundColor(.white)
+                            .background(Color(.purple))
+                            .cornerRadius(15)
+                            .gesture(LongPressGesture(minimumDuration: 1)
+                            .onEnded { _ in
+                                showingActionSheet = true
+                            })
                     }
                 }
                 .actionSheet(isPresented: $showingActionSheet) {
