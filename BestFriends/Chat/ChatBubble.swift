@@ -80,30 +80,24 @@ struct ChatBubble: View {
 
                         VStack {
                                 
-                                                    
-                            ZStack{
-                                Rectangle()
-                                    .frame(width: getWidth(text: message.body) + 10, height: getHeight(text: message.body))
-                                    .foregroundColor(Color(#colorLiteral(red: 0.50868994, green: 0.20776546, blue: 0.9665626884, alpha: 0.850110995)))
-                                    .cornerRadius(15)
-
-                                HStack {
-                                    Spacer().frame(width: 0, height: 5)
-                                    
-                                    Text(message.body)
-                                        .frame(width: getWidth(text: message.body), height: getHeight(text: message.body))
-                                        .fixedSize(horizontal: true, vertical: false)
-                                        .multilineTextAlignment(.leading)
-                                        .font(.system(size: 16).weight(.light))
-                                        .foregroundColor(.white)
-                                        .gesture(LongPressGesture(minimumDuration: 1)
-                                        .onEnded { _ in
-                                            showingActionSheet = true
-                                        })
-                                    
-                                    Spacer().frame(width: 0, height: 5)
-                                }
+                                                
+                            HStack {
+                                Spacer().frame(width: 0, height: 5)
                                 
+                                Text(message.body)
+                                    .padding(10)
+                                    .multilineTextAlignment(.leading)
+                                    .font(.system(size: 16).weight(.light))
+                                    .foregroundColor(.white)
+                                    .background(Color(.purple))
+                                    .cornerRadius(15)
+                                    .gesture(LongPressGesture(minimumDuration: 1)
+                                    .onEnded { _ in
+                                        showingActionSheet = true
+                                    })
+                                
+                                Spacer().frame(width: 0, height: 5)
+                            
                             }
                         }
 //                        Spacer().frame(width: 5)
