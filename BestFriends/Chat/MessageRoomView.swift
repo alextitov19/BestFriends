@@ -14,6 +14,9 @@ struct MessageRoomView: View {
     
     @ObservedObject var messageDataSource: MessageDataSource
     @State var showingImagePicker = false
+    @State var showingMediaMenu = false
+    @State var stickerPopoverShowing = false
+
     @State var showingPin = false
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
@@ -146,9 +149,9 @@ struct MessageRoomView: View {
                 
                 HStack { //footer
                     Button(action: {
-                        showingImagePicker = true
+                        stickerPopoverShowing = true
                     }) {
-                        Image("camera")
+                        Image("menuWhite")
                             .resizable()
                             .frame(width: 30, height: 30)
                     }
@@ -186,6 +189,11 @@ struct MessageRoomView: View {
                         self.offset = 0
                     }
                 }
+                .popover(isPresented: $stickerPopoverShowing) {
+                            Text("Stickers")
+                                .font(.headline)
+                                .padding()
+                        }
                 
             }
             .navigationBarTitle("")
