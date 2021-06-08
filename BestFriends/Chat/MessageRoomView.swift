@@ -149,17 +149,24 @@ struct MessageRoomView: View {
                 
                 HStack { //footer
                     Button(action: {
-                        stickerPopoverShowing = true
+                        showingImagePicker = true
                     }) {
-                        Image("menuWhite")
+                        Image("camera")
                             .resizable()
                             .frame(width: 30, height: 30)
                     }
                     
+                    Button(action: {
+                        stickerPopoverShowing = true
+                    }) {
+                        Image("stickerWhite")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
                     
                     TextField("Message...", text: $currentBody)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(maxWidth: 300)
+                        .frame(maxWidth: 270)
                         .background(Color(#colorLiteral(red: 0.4884749055, green: 0.2207083404, blue: 0.971470058, alpha: 0.3971501029)))
                         .cornerRadius(15)
                         .padding(10)
@@ -182,7 +189,7 @@ struct MessageRoomView: View {
                     NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { (noti) in
                         let value = noti.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
                         let height = value.height
-                        self.offset = height/2.3
+                        self.offset = height/4
                     }
                     
                     NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { (noti) in
