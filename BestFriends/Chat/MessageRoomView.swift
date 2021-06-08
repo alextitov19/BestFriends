@@ -145,8 +145,6 @@ struct MessageRoomView: View {
                 Spacer().frame(height: 30)
                 
                 HStack { //footer
-                    Spacer().frame(width: 30)
-                    
                     Button(action: {
                         showingImagePicker = true
                     }) {
@@ -154,18 +152,14 @@ struct MessageRoomView: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                     }
-                    .padding()
                     
-                    Spacer().frame(width: 30)
                     
-                    TextField("", text: $currentBody)
+                    TextField("Message...", text: $currentBody)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .frame(maxWidth: 300)
                         .background(Color(#colorLiteral(red: 0.4884749055, green: 0.2207083404, blue: 0.971470058, alpha: 0.3971501029)))
-                        .frame(width: 210, height: 30)
                         .cornerRadius(15)
-                        .padding()
-                    
-                    Spacer()
-                        .frame(width: 30)
+                        .padding(10)
                     
                     Button(action: {
                         
@@ -177,10 +171,9 @@ struct MessageRoomView: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                     }
-                    .padding()
                     
-                    Spacer().frame(width: 30)
                 }
+                .padding()
                 .offset(y: -self.offset)
                 .animation(.spring())
                 .onAppear {
