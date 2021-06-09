@@ -60,7 +60,7 @@ struct SettingsView: View {
                         NavigationLink(
                             destination: BlueModePage1(),
                             label: {
-                                Text("BlueMode Walk-through")
+                                Text("BlueMode Walk-through & Setup")
                             })
                             .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
