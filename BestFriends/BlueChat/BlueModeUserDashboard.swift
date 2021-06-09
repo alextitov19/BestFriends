@@ -211,40 +211,18 @@ struct BlueModeUserDashboard: View {
                                         .multilineTextAlignment(.center)
                                         .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                
-                                    VStack {
+                                   
                                     
-                                    Spacer()
-                                        .frame(height: 45)
-                                    
+                                 
 
                                 
                                 
                                     VStack {
                                  
                                    
-                                        Spacer()
-                                            .frame(height: 45)
-                                        
                                        
                                             
-                                        Text("Aditional Resources")
-                                           
-                                            .font(.system(size: 32))
-                                            .fontWeight(.ultraLight)
-                                            
-                                            .foregroundColor(Color(#colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)))
-                                            .multilineTextAlignment(.center)
-                                            .frame(width: 385, height: 50, alignment: .center
-                                       )
-                           
-                                        
-                                        Link("In 'crisis' mode? Anonymously chat with trained teens on 'TeenLine'", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
-                                            .frame(width: 325, height: 50)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 25)
-                                                    .stroke(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)), lineWidth: 1)
-                                                    )
+                                     
                                         
                                         Spacer()
                                             .frame(height: 45)
@@ -263,7 +241,7 @@ struct BlueModeUserDashboard: View {
                                          NavigationLink(
                                              destination: BlueSurvey(),
                                              label: {
-                                                 Text("BlueMode Survey")
+                                                 Text("BlueMode Survey - *Make this a popup*")
                                              })
                                              .frame(width: 325, height: 50)
                                              .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -353,7 +331,7 @@ struct BlueModeUserDashboard: View {
 //    static var previews: some View {
 //        BlueModeUserDashboard()
     }
-}
+
 
 
 
