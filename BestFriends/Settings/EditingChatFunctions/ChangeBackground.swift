@@ -25,6 +25,18 @@ struct ChangeBackground: View {
                     .foregroundColor(.white)
                     .font(.title)
             
+               
+                Text("Not available in BlueMode - coming soon")
+                   
+                    .font(.system(size: 25))
+                    .fontWeight(.ultraLight)
+                    .italic()
+                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 300, height: 100, alignment: .center
+                    )
+                
+                
                 Spacer().frame(height: 25)
                 VStack {
                 
