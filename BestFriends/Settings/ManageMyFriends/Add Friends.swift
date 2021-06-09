@@ -28,7 +28,7 @@ struct AddFriends: View {
                         .fontWeight(.regular)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     
                     Text("Just tap the 'Add Friends' icon at bottom of Homepage and text your friend your QR code on your phone.")
@@ -43,7 +43,7 @@ struct AddFriends: View {
                     
                     
                     Spacer()
-                        .frame(height: 90)
+                        .frame(height: 100)
                     
                     Text("Add friend's image to your ShakingCool")
                        
@@ -58,7 +58,7 @@ struct AddFriends: View {
                             .fontWeight(.regular)
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                                      Spacer()
                                          .frame(height: 30)
