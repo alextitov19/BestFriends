@@ -30,6 +30,14 @@ struct BlueModeUserDashboard: View {
                         .foregroundColor(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
                         .multilineTextAlignment(.center)
                         .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
+                        
+                        Text("Dashboard")
+                            .font(.system(size: 50))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                     Spacer().frame(height: 40)
                  
@@ -178,7 +186,7 @@ struct BlueModeUserDashboard: View {
                                     Spacer()
                                         .frame(height: 20)
                                     
-                                    Text("Not knowing if your messages are read or not SUCKS!")
+                                    Text("Not knowing if your messages are read or not, SUCKS!")
                                         .font(.system(size: 20))
                                         .fontWeight(.regular)
                                         .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
