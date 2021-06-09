@@ -124,7 +124,8 @@ struct BlueModeUserDashboard: View {
                                     .multilineTextAlignment(.center)
                                     .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     
-                            
+                                Spacer()
+                                    .frame(height: 20)
                             
                                 NavigationLink(
                                     destination: ShakingCoolView(),
@@ -174,22 +175,25 @@ struct BlueModeUserDashboard: View {
                               
                                 VStack {
                                    
-                                  
+                                    Spacer()
+                                        .frame(height: 20)
                                     
-                                    NavigationLink(
-                                        destination: InfoViewPage1(),
-                                        label: {
-                                            Text(">>> We'll send push notifications instantly when your messages are read in BlueMode Chat.")
-                                                .frame(width: 350, height: 100, alignment: .center)
-                                        })
-                               
-                                    NavigationLink(
-                                        destination: InfoViewPage1(),
-                                        label: {
-                                            Text(">>> We 'time-stamp' when your messages are read - just so you know.")
-                                                .frame(width: 350, height: 100, alignment: .center)
-                                        })
-                                 
+                                    Text("Not knowing if your messages are read or not SUCKS!")
+                                        .font(.system(size: 20))
+                                        .fontWeight(.regular)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
+                                        .multilineTextAlignment(.center)
+                                        .frame(width: 350, height: 100)
+                                    
+                                    Text("     1) We send you push notifications instantly when you receive a message in BlueMode Chat, and 2) We 'time-stamp' when your messages are read - just so you know.")
+                                        .italic()
+                                        .font(.system(size: 15))
+                                        .fontWeight(.regular)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
+                                        .multilineTextAlignment(.center)
+                                        .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    
+                                  
                                     
                                     Text("It remains forever hard to un-break a heart; remembering that in the end some things can never be taken back!")
                                       //  .italic()
