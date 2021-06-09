@@ -28,7 +28,7 @@ struct BestFriendsApp: App {
                 LoginView()
                     .environmentObject(sessionManager)
             case .signUp:
-                SettingsView()
+                BlueModeUserDashboard()
                     .environmentObject(sessionManager)
             case .confirmationCode(let username):
                 ConfirmationView(username: username)
