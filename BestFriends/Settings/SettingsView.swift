@@ -59,7 +59,7 @@ struct SettingsView: View {
                            
                            
                                 NavigationLink(
-                                    destination: ManageMyFriends(),
+                                    destination: AddFriends(),
                                     label: {
                                         Text("Add Friends")
                                     })
