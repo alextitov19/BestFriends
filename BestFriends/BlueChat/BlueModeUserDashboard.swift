@@ -216,30 +216,7 @@ struct BlueModeUserDashboard: View {
                                     Spacer()
                                         .frame(height: 45)
                                     
-                                    
-                                    Text("Customize BlueMode Chat")
-                                       
-                                        .font(.system(size: 32))
-                                        .fontWeight(.ultraLight)
-                                        
-                                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                                        .multilineTextAlignment(.center)
-                                        .frame(width: 385, height: 50, alignment: .center
-                                        )
-                                    
-                                    NavigationLink(
-                                        destination: ChangeBackground(),
-                                        label: {
-                                            Text("BlueMode Chat Backgrounds")
-                                        })
-                                   
-                                        .frame(width: 325, height: 50)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 25)
-                                                .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                                )
-                                    
+
                                 
                                 
                                     VStack {
@@ -248,7 +225,8 @@ struct BlueModeUserDashboard: View {
                                         Spacer()
                                             .frame(height: 45)
                                         
-                                        
+                                       
+                                            
                                         Text("Aditional Resources")
                                            
                                             .font(.system(size: 32))
