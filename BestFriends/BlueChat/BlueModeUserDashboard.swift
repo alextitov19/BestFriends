@@ -127,7 +127,7 @@ struct BlueModeUserDashboard: View {
                                    
                                     .font(.system(size: 32))
                                     .fontWeight(.ultraLight)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .multilineTextAlignment(.center)
                                     .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     
@@ -143,9 +143,9 @@ struct BlueModeUserDashboard: View {
                                 NavigationLink(
                                     destination: ShakingCoolView(),
                                     label: {
-                                    Text("ShakingCool SetUp")
+                                    Text("BlueMode ShakingCool SetUp")
                                         })
-                                    .frame(width: 325, height: 50)
+                                    .frame(width: 400, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 25)
@@ -157,13 +157,15 @@ struct BlueModeUserDashboard: View {
                                 NavigationLink(
                                     destination: SmileNotesView(),
                                     label: {
-                                        Text("View your friend's SmileNotes - remembering the nice things.")
+                                        Text("Filtering SmileNotes - remembering the nice things")
                                             .frame(width: 400, height: 100, alignment: .center)
                                     })
-                                .frame(width: 400, height: 75, alignment: .center)
-                                .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                                .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                                .cornerRadius(25)
+                                    .frame(width: 400, height: 50)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 25)
+                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                        )
                                 
                                
                                 
@@ -173,44 +175,35 @@ struct BlueModeUserDashboard: View {
                                 NavigationLink(
                                     destination: InfoViewPage1(),
                                     label: {
-                                        Text("Unlock special stickers - saying the words you can't seem to say right now.")
+                                        Text("BlueMode stickers - saying the words you can't seem to say right now.")
                                             .frame(width: 400, height: 100, alignment: .center)
                                     })
-                                .frame(width: 400, height: 75, alignment: .center)
-                                .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                                .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                                .cornerRadius(25)
+                                    .frame(width: 400, height: 50)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 25)
+                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                        )
                               
                                 VStack {
                                    
-                                    
-                                    Spacer()
-                                        .frame(height: 30)
+                                  
                                     
                                     NavigationLink(
                                         destination: InfoViewPage1(),
                                         label: {
-                                            Text("We'll send push notifications instantly when your messages are read & new messages are posted in BlueMode Chat.")
-                                                .frame(width: 400, height: 100, alignment: .center)
+                                            Text(">>> We'll send push notifications instantly when your messages are read & new messages are posted in BlueMode Chat.")
+                                                .frame(width: 350, height: 150, alignment: .center)
                                         })
-                                    .frame(width: 400, height: 75, alignment: .center)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                                    .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                                    .cornerRadius(25)
-                                    
+                               
+                                    NavigationLink(
+                                        destination: InfoViewPage1(),
+                                        label: {
+                                            Text(">>> We 'time-stamp' when your messages are read - just so you know.")
+                                                .frame(width: 350, height: 100, alignment: .center)
+                                        })
                                  
-
-                                 
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                        
+                          
                                 VStack {
                                     
                                     Spacer()
