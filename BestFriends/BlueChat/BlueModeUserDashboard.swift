@@ -45,14 +45,7 @@ struct BlueModeUserDashboard: View {
                                     .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
                                     )
                     
-                    
-                    
-                    Spacer().frame(height: 20)
-                       
-                       
-                     
-                     
-                    Spacer().frame(height: 45)
+              
                 
                         VStack {
                         
@@ -125,25 +118,19 @@ struct BlueModeUserDashboard: View {
                                 
                                 Text("Unlock Special Features")
                                    
-                                    .font(.system(size: 32))
+                                    .font(.system(size: 40))
                                     .fontWeight(.ultraLight)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .multilineTextAlignment(.center)
                                     .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     
-                                
-                                Text("It remains forever hard to un-break a heart; remembering that in the end some things can never be taken back!")
-                                  //  .italic()
-                                    .font(.system(size: 20))
-                                    .fontWeight(.regular)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 375, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
                             
                                 NavigationLink(
                                     destination: ShakingCoolView(),
                                     label: {
-                                    Text("BlueMode ShakingCool SetUp")
+                                    Text("BlueMode ShakingCool - seeing each others 'good times together' images")
+                                        .frame(width: 350, height: 100, alignment: .center)
                                         })
                                     .frame(width: 400, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -158,7 +145,7 @@ struct BlueModeUserDashboard: View {
                                     destination: SmileNotesView(),
                                     label: {
                                         Text("Filtering SmileNotes - remembering the nice things")
-                                            .frame(width: 400, height: 100, alignment: .center)
+                                            .frame(width: 350, height: 100, alignment: .center)
                                     })
                                     .frame(width: 400, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -176,7 +163,7 @@ struct BlueModeUserDashboard: View {
                                     destination: InfoViewPage1(),
                                     label: {
                                         Text("BlueMode stickers - saying the words you can't seem to say right now.")
-                                            .frame(width: 400, height: 100, alignment: .center)
+                                            .frame(width: 350, height: 100, alignment: .center)
                                     })
                                     .frame(width: 400, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -192,8 +179,8 @@ struct BlueModeUserDashboard: View {
                                     NavigationLink(
                                         destination: InfoViewPage1(),
                                         label: {
-                                            Text(">>> We'll send push notifications instantly when your messages are read & new messages are posted in BlueMode Chat.")
-                                                .frame(width: 350, height: 150, alignment: .center)
+                                            Text(">>> We'll send push notifications instantly when your messages are read in BlueMode Chat.")
+                                                .frame(width: 350, height: 100, alignment: .center)
                                         })
                                
                                     NavigationLink(
@@ -203,8 +190,16 @@ struct BlueModeUserDashboard: View {
                                                 .frame(width: 350, height: 100, alignment: .center)
                                         })
                                  
-                          
-                                VStack {
+                                    
+                                    Text("It remains forever hard to un-break a heart; remembering that in the end some things can never be taken back!")
+                                      //  .italic()
+                                        .font(.system(size: 20))
+                                        .fontWeight(.regular)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .multilineTextAlignment(.center)
+                                        .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                               
+                                    VStack {
                                     
                                     Spacer()
                                         .frame(height: 45)
