@@ -24,39 +24,15 @@ struct BlueModeUserDashboard: View {
                 VStack {
                     ScrollView {
 
-                    Text("Settings")
+                    Text("BlueMode")
                         .font(.system(size: 50))
                         .fontWeight(.ultraLight)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
                         .multilineTextAlignment(.center)
                         .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                     Spacer().frame(height: 40)
-                   
-                    
-                    Text("BestFriend 'Feature Walk-throughs' and Setups")
-                        .font(.system(size: 32))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                       
-                    NavigationLink(
-                            destination: InfoViewPage1(),
-                            label: {
-                                Text("BestFriends App Walk-through")
-                            })
-                            .frame(width: 325, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
-                                    )
-                    
-                    
-                    Spacer().frame(height: 20)
-                   
-                   
+                 
                         NavigationLink(
                             destination: BlueModePage1(),
                             label: {
@@ -68,149 +44,70 @@ struct BlueModeUserDashboard: View {
                                 RoundedRectangle(cornerRadius: 25)
                                     .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
                                     )
-                    VStack {
                     
                     
-                        Spacer().frame(height: 20)
+                    
+                    Spacer().frame(height: 20)
                        
                        
-                            NavigationLink(
-                                destination: ShakingCoolView(),
-                                label: {
-                                    Text("ShakingCool SetUp")
-                                })
-                                .frame(width: 325, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
-                                        )
                      
-                        Spacer().frame(height: 45)
-                      
-                       
-                        Text("We'd Love to Hear from You")
-                           
-                            .font(.system(size: 32))
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
-                            
-                        
-                        
-                            NavigationLink(
-                                destination: EnjoyingBestFriends(),
-                                label: {
-                                    Text("Are you enjoying BestFriends?")
-                                })
-                                .frame(width: 325, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)), lineWidth: 1)
-                                        )
-                        
-                        
-                        Spacer()
-                            .frame(height: 45)
-                        
-                        
-                        
-                        Text("Be a BestFriends Beta-tester")
-                            .font(.system(size: 32))
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
+                     
+                    Spacer().frame(height: 45)
                 
-                    
-                    VStack {
-                        
-                            Link("Work with our staff making BestFriends better!", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
-                                .frame(width: 325, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)), lineWidth: 1)
-                                        )
-                        
-                       
-                        
-                        Spacer()
-                            .frame(height: 45)
-                        
-                        
-                        Text("Privacy / Reporting Abuse")
-                           
-                            .font(.system(size: 32))
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
-                            
-                        
-                        
-                        
-                        Link("Privacy Policy / Terms of Service", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
-                            .frame(width: 325, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
-                                    )
-                        
-                        Spacer()
-                            .frame(height: 20)
-                     
-                    
-                        Link("Report Objectional Content & Behavior", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
-                            .frame(width: 325, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
-                                    )
-                        
-                       
-                        
-                        Spacer()
-                            .frame(height: 20)
-                     
-                      
                         VStack {
                         
-                            
-                            Link("Report Copyright Infringment", destination: URL(string: "https://socialtechlabs.com/report-copyright-infringements/")!)
-                                .frame(width: 325, height: 50)
+                          
+                                
+                            Text("Helping pull the two of you from this wreckage before your hearts become forever dented!")
+                                .frame(width: 375, height: 150, alignment: .center)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
-                                        )
-                                
-                            Spacer()
-                                .frame(height: 45)
-                            
-                            
-                            Text("Manage my Account")
-                               
-                                .font(.system(size: 32))
-                                .fontWeight(.ultraLight)
-                                
-                                .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                               // .font(.title)
+                                .font(.system(size: 20))
                                 .multilineTextAlignment(.center)
-                                .frame(width: 385, height: 50, alignment: .center
-                                )
+                                .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
-                         
+                            
+                            Link("Fight w/ Best Friend - what to ask them?", destination: URL(string: "https://socialtechlabs.com/darkmode/")!)
+                            .frame(width: 325, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                            .cornerRadius(25)
+                            
+                        
+                            
+                            
+                            Spacer()
+                                .frame(height: 30)
+                            
+                           
+                            Link("Should you Apologize", destination: URL(string: "https://socialtechlabs.com/you-owe-apology/")!)
+                            .frame(width: 325, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                            .cornerRadius(25)
+                            
+                           
+                            
+                            
+                            Spacer()
+                                .frame(height: 30)
+                            
+                           
+                            Link("Fight w/ significant other", destination: URL(string: "https://socialtechlabs.com/fight-w-boyfriend/")!)
+                            .frame(width: 325, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                            .cornerRadius(25)
+                            
+                    
+                          
+                            Spacer()
+                                .frame(height: 20)
+                            
                             NavigationLink(
-                                destination: ManageMyFriends(),
+                                destination: SettingsView(),
                                 label: {
-                                    Text("Manage my Friends")
+                                    Text("Schedule Time to Talk")
                                 })
                            
                                 .frame(width: 325, height: 50)
@@ -219,124 +116,121 @@ struct BlueModeUserDashboard: View {
                                     RoundedRectangle(cornerRadius: 25)
                                         .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
                                         )
-                            
-                            Spacer()
-                                .frame(height: 20)
-                            
-                            NavigationLink(
-                                destination: MyAccount(),
-                                label: {
-                                    Text("Change Password / Email")
-                                })
-                                .frame(width: 325, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                        )
-                        
-                            
-                            
-                            
+                          
+                          
                             VStack {
                             
-                            Spacer()
-                                .frame(height: 20)
-                          
-                                NavigationLink(
-                                    destination: Notifications(),
-                                    label: {
-                                        Text("Notification Settings (Need B/E)")
-                                    })
-                                    .frame(width: 325, height: 50)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 25)
-                                            .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                            )
-                                
                                 Spacer()
-                                    .frame(height: 20)
+                                    .frame(height: 35)
                                 
-                            NavigationLink(
-                                destination: DeleteMyAccount(),
-                                label: {
-                                    Text("Delete Account (Not Built)")
-                                })
-                                .frame(width: 325, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                        )
-                                
-                                
-                                Spacer()
-                                    .frame(height: 45)
-                                
-                                
-                                Text("Customize my Chat Rooms")
+                                Text("Unlock Special Features")
                                    
                                     .font(.system(size: 32))
                                     .fontWeight(.ultraLight)
-                                    
-                                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                    .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                     .multilineTextAlignment(.center)
-                                    .frame(width: 385, height: 50, alignment: .center
-                                    )
+                                    .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    
                                 
+                                Text("It remains forever hard to un-break a heart; remembering that in the end some things can never be taken back!")
+                                  //  .italic()
+                                    .font(.system(size: 20))
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 375, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
                                 NavigationLink(
-                                    destination: ChangeBackground(),
+                                    destination: ShakingCoolView(),
                                     label: {
-                                        Text("Customize Chat Backgrounds")
-                                    })
-                               
+                                    Text("ShakingCool SetUp")
+                                        })
                                     .frame(width: 325, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 25)
-                                            .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                            )
+                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                        )
+                                Spacer()
+                                    .frame(height: 30)
+                               
+                                NavigationLink(
+                                    destination: SmileNotesView(),
+                                    label: {
+                                        Text("View your friend's SmileNotes - remembering the nice things.")
+                                            .frame(width: 400, height: 100, alignment: .center)
+                                    })
+                                .frame(width: 400, height: 75, alignment: .center)
+                                .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                                .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                .cornerRadius(25)
+                                
+                               
                                 
                                 Spacer()
-                                    .frame(height: 20)
+                                    .frame(height: 30)
                                 
                                 NavigationLink(
-                                    destination: ChangeChatFontSize(),
+                                    destination: InfoViewPage1(),
                                     label: {
-                                        Text("Chat Font Size")
+                                        Text("Unlock special stickers - saying the words you can't seem to say right now.")
+                                            .frame(width: 400, height: 100, alignment: .center)
                                     })
-                               
-                                    .frame(width: 325, height: 50)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 25)
-                                            .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                            )
+                                .frame(width: 400, height: 75, alignment: .center)
+                                .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                                .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                .cornerRadius(25)
+                              
                                 VStack {
+                                   
+                                    
+                                    Spacer()
+                                        .frame(height: 30)
+                                    
+                                    NavigationLink(
+                                        destination: InfoViewPage1(),
+                                        label: {
+                                            Text("We'll send push notifications instantly when your messages are read & new messages are posted in BlueMode Chat.")
+                                                .frame(width: 400, height: 100, alignment: .center)
+                                        })
+                                    .frame(width: 400, height: 75, alignment: .center)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                                    .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                    .cornerRadius(25)
+                                    
                                  
+
+                                 
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                        
+                                VStack {
                                     
                                     Spacer()
                                         .frame(height: 45)
                                     
                                     
-                                    Text("BlueMode Settings")
+                                    Text("Customize BlueMode Chat")
                                        
                                         .font(.system(size: 32))
                                         .fontWeight(.ultraLight)
                                         
-                                        .foregroundColor(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
+                                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                                         .multilineTextAlignment(.center)
                                         .frame(width: 385, height: 50, alignment: .center
-                                   )
-                                    
-                                    Spacer()
-                                        .frame(height: 20)
+                                        )
                                     
                                     NavigationLink(
-                                        destination: SettingsView(),
+                                        destination: ChangeBackground(),
                                         label: {
-                                            Text("Schedule Time to Talk")
+                                            Text("BlueMode Chat Backgrounds")
                                         })
                                    
                                         .frame(width: 325, height: 50)
@@ -346,7 +240,10 @@ struct BlueModeUserDashboard: View {
                                                 .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
                                                 )
                                     
-                                    
+                                
+                                
+                                    VStack {
+                                 
                                    
                                         Spacer()
                                             .frame(height: 45)
@@ -362,17 +259,41 @@ struct BlueModeUserDashboard: View {
                                             .frame(width: 385, height: 50, alignment: .center
                                        )
                            
-                                    
-                                    Link("In 'crisis' mode? Anonymously chat with trained teens on 'TeenLine'", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
-                                        .frame(width: 325, height: 50)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 25)
-                                                .stroke(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)), lineWidth: 1)
-                                                )
-                                    
-                                    
-                                 
+                                        
+                                        Link("In 'crisis' mode? Anonymously chat with trained teens on 'TeenLine'", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
+                                            .frame(width: 325, height: 50)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 25)
+                                                    .stroke(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)), lineWidth: 1)
+                                                    )
+                                        
+                                        Spacer()
+                                            .frame(height: 45)
+                                        
+                                         Text("We'd Love to Hear from You")
+                                            
+                                             .font(.system(size: 32))
+                                             .fontWeight(.ultraLight)
+                                             .foregroundColor(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+                                             .multilineTextAlignment(.center)
+                                             .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                             
+                                             
+                                         
+                                     
+                                         NavigationLink(
+                                             destination: BlueSurvey(),
+                                             label: {
+                                                 Text("BlueMode Survey")
+                                             })
+                                             .frame(width: 325, height: 50)
+                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                             .overlay(
+                                                 RoundedRectangle(cornerRadius: 25)
+                                                     .stroke(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)), lineWidth: 1)
+                                                     )
+                                     
                                    
                                     
                                     
@@ -448,14 +369,15 @@ struct BlueModeUserDashboard: View {
             }
         }
     }
-}
-
-struct BlueModeUserDashboard_Previews : PreviewProvider {
-    static var previews: some View {
-        BlueModeUserDashboard()
+//
+//
+//struct BlueModeUserDashboard_Previews : PreviewProvider {
+//    static var previews: some View {
+//        BlueModeUserDashboard()
     }
 }
 
 
-}
+
+
 
