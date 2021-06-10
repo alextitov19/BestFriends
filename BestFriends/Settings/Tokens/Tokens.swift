@@ -28,10 +28,10 @@ struct Tokens: View {
                     .fontWeight(.ultraLight)
                     .foregroundColor(.blue)
                     .multilineTextAlignment(.center)
-                    .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 400, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
-                Text("Stickers & Gif Purchases")
-                    .font(.system(size: 40))
+                Text("(Stickers & Gif Purchases)")
+                    .font(.system(size: 30))
                     .fontWeight(.ultraLight)
                     .foregroundColor(.blue)
                     .multilineTextAlignment(.center)
@@ -39,14 +39,21 @@ struct Tokens: View {
                 
                 Spacer().frame(height: 20)
                 
-                Text("Tokens are earned by watching Ad videos from the 'interest category' you selected at Registration. Tokens may be used to purchase Stickers and Gifs.")
-                    .frame(width: 400, height: 175, alignment: .center)
+                Text("Tokens are earned by watching Ad videos from the 'interest category' you selected at Registration. Tokens may be used to purchase premimum Stickers and Gifs.")
+                    .frame(width: 380, height: 210, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.title)
                     .multilineTextAlignment(.center)
                     .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
+                Spacer().frame(height: 20)
                 
+                Text("Earning Tokens")
+                    .font(.system(size: 40))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(.blue)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 400, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 VStack {
                 
                     Spacer()
@@ -79,12 +86,12 @@ struct Tokens: View {
                     
                     
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 20)
                     
                     NavigationLink(
                         destination: InfoViewPage1(),
                         label: {
-                            Text("My Token Bank")
+                            Text("How many tokens do I have?")
                         })
                     .frame(width: 325, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -99,11 +106,16 @@ struct Tokens: View {
                         Spacer()
                             .frame(height: 20)
                         
+                      
+                        
+                        
+                        Spacer()
+                            .frame(height: 25)
                         
                         NavigationLink(
                             destination: SettingsView(),
                             label: {
-                                Text("Stickers are 5 tokens. Gifs are 10 Tokens")
+                                Text("Edit my Ad 'interest category' - coming soon.")
                             })
                         .frame(width: 325, height: 50, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -114,26 +126,8 @@ struct Tokens: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        NavigationLink(
-                            destination: SettingsView(),
-                            label: {
-                                Text("Purchase Stickers & Gifs in Chat")
-                            })
-                        .frame(width: 325, height: 50, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                        .cornerRadius(25)
-                        
-                        
-                        Spacer()
-                            .frame(height: 15)
-                       
-
-                        Spacer()
-                            .frame(height: 30)
-                        
                         NavigationLink(destination: SettingsView()) {
-                                            Text("Edit my Ad 'interest category'")
+                                            Text("Purchase Stickers in Chat >>>")
                                                 .font(.system(size: 30))
                                                 .fontWeight(.ultraLight)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -147,8 +141,6 @@ struct Tokens: View {
                         
                        
     
-                    Spacer()
-                        .frame(height: 200)
                 
                         
                         
