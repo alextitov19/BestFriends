@@ -115,7 +115,7 @@ struct SettingsView: View {
                             Spacer().frame(height: 45)
                            
                             
-                            Text("Purchase Stickers & Gifs w/ Tokens")
+                            Text("Purchase Stickers & Gifs with Tokens")
                                 .font(.system(size: 32))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
