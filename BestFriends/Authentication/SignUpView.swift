@@ -1107,7 +1107,7 @@ struct SignUpQuestionPage2: View {
             VStack {
                 VStack {
                    
-                    Text("💕We're changing how social media gathers information.")
+                    Text("💕We're changing how social media gathers user information.")
                         .font(.system(size: 25))
                         .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
                         .frame(width: 350)
@@ -1122,7 +1122,7 @@ struct SignUpQuestionPage2: View {
                         .fontWeight(.ultraLight)
                         .italic()
                         .foregroundColor(Color.white)
-                        .frame(width: 400)
+                        .frame(width: 400, height: 75)
                     
                         .multilineTextAlignment(.center)
 
@@ -1153,21 +1153,21 @@ struct SignUpQuestionPage2: View {
                             .multilineTextAlignment(.center)
                            
                        
-                        Spacer()
+                      Spacer()
                             .frame(height: 50)
                         
                      
                     }
     
-    Spacer()
-        .frame(height: 50)
+   // Spacer()
+     //   .frame(height: 50)
     
  
 
 }
 
-Spacer()
-    .frame(height: 125)
+//Spacer()
+  //  .frame(height: 10)
 
 }
 }
