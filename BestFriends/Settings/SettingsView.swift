@@ -359,7 +359,7 @@ struct SettingsView: View {
                                     
                                     
                                         NavigationLink(
-                                            destination: EnjoyingBestFriends(),
+                                            destination: ReviewPopup(),
                                             label: {
                                                 Text("Are you enjoying BestFriends? - make popup")
                                             })

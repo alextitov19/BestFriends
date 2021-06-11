@@ -198,7 +198,7 @@ struct LandingView: View {
                 }
                 .frame(alignment: .leading)
                 
-                EnjoyingBestFriends()
+                ReviewPopup()
             }
             .isHidden(isReviewPopupShowing)
                

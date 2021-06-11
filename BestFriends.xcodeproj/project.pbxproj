@@ -276,9 +276,7 @@
 		CF5263F8266F1D5B00243DD7 /* EnrichHERVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F7266F1D5B00243DD7 /* EnrichHERVideo.swift */; };
 		CF52640D2671351900243DD7 /* Add Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52640C2671351800243DD7 /* Add Friends.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
-		CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */; };
-		CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */; };
-		CFE6FD4626620E9A00DF92BD /* EnjoyingBestFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD4526620E9A00DF92BD /* EnjoyingBestFriends.swift */; };
+		CFE6FD4626620E9A00DF92BD /* Popups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD4526620E9A00DF92BD /* Popups.swift */; };
 		D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1577796264CBBAD00B6551A /* ChangeEmail.swift */; };
 		D157779B264D086000B6551A /* SmileNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779A264D086000B6551A /* SmileNotesView.swift */; };
 		D15777A3264DB7FD00B6551A /* BetaTesters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15777A2264DB7FD00B6551A /* BetaTesters.swift */; };
@@ -449,9 +447,7 @@
 		CF526402266F20A600243DD7 /* Mieko3.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mieko3.m4v; sourceTree = "<group>"; };
 		CF52640C2671351800243DD7 /* Add Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add Friends.swift"; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
-		CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesEnjoyingApp.swift; sourceTree = "<group>"; };
-		CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEnjoyingApp.swift; sourceTree = "<group>"; };
-		CFE6FD4526620E9A00DF92BD /* EnjoyingBestFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnjoyingBestFriends.swift; sourceTree = "<group>"; };
+		CFE6FD4526620E9A00DF92BD /* Popups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popups.swift; sourceTree = "<group>"; };
 		D1577796264CBBAD00B6551A /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
 		D157779A264D086000B6551A /* SmileNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesView.swift; sourceTree = "<group>"; };
 		D15777A2264DB7FD00B6551A /* BetaTesters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTesters.swift; sourceTree = "<group>"; };
@@ -580,7 +576,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
-				CFE6FD3A2661B65700DF92BD /* GetPossitiveReviews */,
+				7A08E364264FB6CA00AEBC8F /* Notifications */,
 				7A417EC4265ED49C00E95364 /* Advertisements */,
 				7AD10453265AB9AF007627FD /* ShakingCool */,
 				7A1DBD602659B1A400EB4B42 /* Extensions */,
@@ -617,7 +613,7 @@
 		7A8943D2262CCA84008F7582 /* LandingPage */ = {
 			isa = PBXGroup;
 			children = (
-				7A08E364264FB6CA00AEBC8F /* Notifications */,
+				CFE6FD4526620E9A00DF92BD /* Popups.swift */,
 				7AE31CC1262A9BE1001EC5A3 /* LandingView.swift */,
 				7AF6973E2630EE1900CF49CC /* Star.swift */,
 				7A6A4D06262B8A5000561D87 /* PlayerView.swift */,
@@ -810,16 +806,6 @@
 				CF526401266F20A000243DD7 /* BestFriens Ads Video.m4v */,
 			);
 			path = "Our Ads";
-			sourceTree = "<group>";
-		};
-		CFE6FD3A2661B65700DF92BD /* GetPossitiveReviews */ = {
-			isa = PBXGroup;
-			children = (
-				CFE6FD4526620E9A00DF92BD /* EnjoyingBestFriends.swift */,
-				CFE6FD3D2661B7AA00DF92BD /* YesEnjoyingApp.swift */,
-				CFE6FD412661BA5C00DF92BD /* NotEnjoyingApp.swift */,
-			);
-			path = GetPossitiveReviews;
 			sourceTree = "<group>";
 		};
 		D1577799264D082800B6551A /* SmileNotes */ = {
@@ -1117,7 +1103,6 @@
 				C454F27B552AE618EFF45F48 /* AmplifyModels.swift in Sources */,
 				B031E6E1EB9A9930A2A37A8E /* Message+Schema.swift in Sources */,
 				F1324683D113A7F735C673FB /* Message.swift in Sources */,
-				CFE6FD3E2661B7AA00DF92BD /* YesEnjoyingApp.swift in Sources */,
 				7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */,
 				465E146884826052FA24AA60 /* Room+Schema.swift in Sources */,
 				B4F2F53FF19090F52F04FD07 /* Room.swift in Sources */,
@@ -1269,7 +1254,6 @@
 				7A12E7EE26681F130080040B /* Message.swift in Sources */,
 				B433B2188ED1A3147D2D6D69 /* Room+Schema.swift in Sources */,
 				7A12E7FA26681F130080040B /* Room.swift in Sources */,
-				CFE6FD422661BA5C00DF92BD /* NotEnjoyingApp.swift in Sources */,
 				86628BA8F4E7E890D4287515 /* Message+Schema.swift in Sources */,
 				7C38F661F1B88CF801F842EE /* Message.swift in Sources */,
 				EB084914F4CFFD698963E903 /* ReportedMessage.swift in Sources */,
@@ -1310,7 +1294,7 @@
 				6E09253C455DAECB0198472C /* Advertisement+Schema.swift in Sources */,
 				B8772A1AE19B02235885F9DC /* Advertisement.swift in Sources */,
 				722FBE25A1F44C30D0BFDA13 /* AmplifyModels.swift in Sources */,
-				CFE6FD4626620E9A00DF92BD /* EnjoyingBestFriends.swift in Sources */,
+				CFE6FD4626620E9A00DF92BD /* Popups.swift in Sources */,
 				318FE14244A28E3055064727 /* ManagementDocument+Schema.swift in Sources */,
 				35C44836B3C13F7A0955BB73 /* ManagementDocument.swift in Sources */,
 				491FC288C77582E68742BFA1 /* Message+Schema.swift in Sources */,
