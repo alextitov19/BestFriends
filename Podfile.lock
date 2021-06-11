@@ -212,65 +212,65 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
-  - Amplify (1.8.0):
-    - Amplify/Default (= 1.8.0)
-  - Amplify/Default (1.8.0)
-  - Amplify/Tools (1.8.0)
-  - AmplifyPlugins/AWSAPIPlugin (1.8.0):
-    - AppSyncRealTimeClient (~> 1.4.0)
-    - AWSCore (~> 2.23.3)
-    - AWSPluginsCore (= 1.8.0)
-  - AmplifyPlugins/AWSCognitoAuthPlugin (1.8.0):
-    - AWSAuthCore (~> 2.23.3)
-    - AWSCognitoIdentityProvider (~> 2.23.3)
-    - AWSCognitoIdentityProviderASF (~> 2.23.3)
-    - AWSCore (~> 2.23.3)
-    - AWSMobileClient (~> 2.23.3)
-    - AWSPluginsCore (= 1.8.0)
-  - AmplifyPlugins/AWSS3StoragePlugin (1.8.0):
-    - AWSCore (~> 2.23.3)
-    - AWSPluginsCore (= 1.8.0)
-    - AWSS3 (~> 2.23.3)
-  - AppSyncRealTimeClient (1.4.4):
+  - Amplify (1.10.0):
+    - Amplify/Default (= 1.10.0)
+  - Amplify/Default (1.10.0)
+  - Amplify/Tools (1.10.0)
+  - AmplifyPlugins/AWSAPIPlugin (1.10.0):
+    - AppSyncRealTimeClient (~> 1.4)
+    - AWSCore (~> 2.24.0)
+    - AWSPluginsCore (= 1.10.0)
+  - AmplifyPlugins/AWSCognitoAuthPlugin (1.10.0):
+    - AWSAuthCore (~> 2.24.0)
+    - AWSCognitoIdentityProvider (~> 2.24.0)
+    - AWSCognitoIdentityProviderASF (~> 2.24.0)
+    - AWSCore (~> 2.24.0)
+    - AWSMobileClient (~> 2.24.0)
+    - AWSPluginsCore (= 1.10.0)
+  - AmplifyPlugins/AWSS3StoragePlugin (1.10.0):
+    - AWSCore (~> 2.24.0)
+    - AWSPluginsCore (= 1.10.0)
+    - AWSS3 (~> 2.24.0)
+  - AppSyncRealTimeClient (1.5.0):
     - Starscream (~> 3.1.1)
-  - AWSAuthCore (2.23.3):
-    - AWSCore (= 2.23.3)
-  - AWSCognitoIdentityProvider (2.23.3):
-    - AWSCognitoIdentityProviderASF (= 2.23.3)
-    - AWSCore (= 2.23.3)
-  - AWSCognitoIdentityProviderASF (2.23.3)
-  - AWSCore (2.23.3)
-  - AWSMobileClient (2.23.3):
-    - AWSAuthCore (= 2.23.3)
-    - AWSCognitoIdentityProvider (= 2.23.3)
-    - AWSCognitoIdentityProviderASF (= 2.23.3)
-    - AWSCore (= 2.23.3)
-  - AWSPluginsCore (1.8.0):
-    - Amplify (= 1.8.0)
-    - AWSCore (~> 2.23.3)
-  - AWSS3 (2.23.3):
-    - AWSCore (= 2.23.3)
+  - AWSAuthCore (2.24.2):
+    - AWSCore (= 2.24.2)
+  - AWSCognitoIdentityProvider (2.24.2):
+    - AWSCognitoIdentityProviderASF (= 2.24.2)
+    - AWSCore (= 2.24.2)
+  - AWSCognitoIdentityProviderASF (2.24.2)
+  - AWSCore (2.24.2)
+  - AWSMobileClient (2.24.2):
+    - AWSAuthCore (= 2.24.2)
+    - AWSCognitoIdentityProvider (= 2.24.2)
+    - AWSCognitoIdentityProviderASF (= 2.24.2)
+    - AWSCore (= 2.24.2)
+  - AWSPluginsCore (1.10.0):
+    - Amplify (= 1.10.0)
+    - AWSCore (~> 2.24.0)
+  - AWSS3 (2.24.2):
+    - AWSCore (= 2.24.2)
   - BoringSSL-GRPC (0.0.7):
     - BoringSSL-GRPC/Implementation (= 0.0.7)
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
-  - Firebase/Analytics (8.0.0):
+  - Firebase/Analytics (8.1.0):
     - Firebase/Core
-  - Firebase/Core (8.0.0):
+  - Firebase/Core (8.1.0):
     - Firebase/CoreOnly
-    - FirebaseAnalytics (~> 8.0.0)
-  - Firebase/CoreOnly (8.0.0):
-    - FirebaseCore (= 8.0.0)
-  - Firebase/Firestore (8.0.0):
+    - FirebaseAnalytics (~> 8.1.0)
+  - Firebase/CoreOnly (8.1.0):
+    - FirebaseCore (= 8.1.0)
+  - Firebase/Firestore (8.1.0):
     - Firebase/CoreOnly
-    - FirebaseFirestore (~> 8.0.0)
-  - Firebase/Messaging (8.0.0):
+    - FirebaseFirestore (~> 8.1.0)
+  - Firebase/Messaging (8.1.0):
     - Firebase/CoreOnly
-    - FirebaseMessaging (~> 8.0.0)
-  - FirebaseAnalytics (8.0.0):
-    - FirebaseAnalytics/AdIdSupport (= 8.0.0)
+    - FirebaseMessaging (~> 8.1.0)
+  - FirebaseAnalytics (8.1.0):
+    - FirebaseAnalytics/AdIdSupport (= 8.1.0)
     - FirebaseCore (~> 8.0)
     - FirebaseInstallations (~> 8.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
@@ -278,17 +278,17 @@ PODS:
     - GoogleUtilities/Network (~> 7.4)
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
     - nanopb (~> 2.30908.0)
-  - FirebaseAnalytics/AdIdSupport (8.0.0):
-    - FirebaseAnalytics/Base (= 8.0.0)
+  - FirebaseAnalytics/AdIdSupport (8.1.0):
+    - FirebaseAnalytics/Base (= 8.1.0)
     - FirebaseCore (~> 8.0)
     - FirebaseInstallations (~> 8.0)
-    - GoogleAppMeasurement (= 8.0.0)
+    - GoogleAppMeasurement (= 8.1.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
     - GoogleUtilities/MethodSwizzler (~> 7.4)
     - GoogleUtilities/Network (~> 7.4)
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
     - nanopb (~> 2.30908.0)
-  - FirebaseAnalytics/Base (8.0.0):
+  - FirebaseAnalytics/Base (8.1.0):
     - FirebaseCore (~> 8.0)
     - FirebaseInstallations (~> 8.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
@@ -296,16 +296,16 @@ PODS:
     - GoogleUtilities/Network (~> 7.4)
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
     - nanopb (~> 2.30908.0)
-  - FirebaseCore (8.0.0):
+  - FirebaseCore (8.1.0):
     - FirebaseCoreDiagnostics (~> 8.0)
     - GoogleUtilities/Environment (~> 7.4)
     - GoogleUtilities/Logger (~> 7.4)
-  - FirebaseCoreDiagnostics (8.0.0):
+  - FirebaseCoreDiagnostics (8.1.0):
     - GoogleDataTransport (~> 9.0)
     - GoogleUtilities/Environment (~> 7.4)
     - GoogleUtilities/Logger (~> 7.4)
     - nanopb (~> 2.30908.0)
-  - FirebaseFirestore (8.0.0):
+  - FirebaseFirestore (8.1.0):
     - abseil/algorithm (= 0.20200225.0)
     - abseil/base (= 0.20200225.0)
     - abseil/memory (= 0.20200225.0)
@@ -317,32 +317,32 @@ PODS:
     - "gRPC-C++ (~> 1.28.0)"
     - leveldb-library (~> 1.22)
     - nanopb (~> 2.30908.0)
-  - FirebaseInstallations (8.0.0):
+  - FirebaseInstallations (8.1.0):
     - FirebaseCore (~> 8.0)
     - GoogleUtilities/Environment (~> 7.4)
     - GoogleUtilities/UserDefaults (~> 7.4)
     - PromisesObjC (~> 1.2)
-  - FirebaseMessaging (8.0.0):
+  - FirebaseMessaging (8.1.0):
     - FirebaseCore (~> 8.0)
     - FirebaseInstallations (~> 8.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
     - GoogleUtilities/Environment (~> 7.4)
     - GoogleUtilities/Reachability (~> 7.4)
     - GoogleUtilities/UserDefaults (~> 7.4)
-  - GoogleAppMeasurement (8.0.0):
-    - GoogleAppMeasurement/AdIdSupport (= 8.0.0)
+  - GoogleAppMeasurement (8.1.0):
+    - GoogleAppMeasurement/AdIdSupport (= 8.1.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
     - GoogleUtilities/MethodSwizzler (~> 7.4)
     - GoogleUtilities/Network (~> 7.4)
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
     - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (8.0.0):
+  - GoogleAppMeasurement/AdIdSupport (8.1.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
     - GoogleUtilities/MethodSwizzler (~> 7.4)
     - GoogleUtilities/Network (~> 7.4)
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
     - nanopb (~> 2.30908.0)
-  - GoogleDataTransport (9.0.0):
+  - GoogleDataTransport (9.0.1):
     - GoogleUtilities/Environment (~> 7.2)
     - nanopb (~> 2.30908.0)
     - PromisesObjC (~> 1.2)
@@ -442,26 +442,26 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
-  Amplify: 550f9e628e68f829ee4d9daa802912ad3644cb96
-  AmplifyPlugins: 3ed478220b60e5544f3a4968beb971b4d8abcb34
-  AppSyncRealTimeClient: 4479354d262a23d2cc9fea1760f3815b75a4091a
-  AWSAuthCore: 2aaf8dec7f50e3f7606857bdca0db9263faed0c5
-  AWSCognitoIdentityProvider: fcd9b00fec0ef5ac6768548af948ad033b52da98
-  AWSCognitoIdentityProviderASF: 719578cca39b3233bd67e656bdf04d409e8fc255
-  AWSCore: c60e635b1a61cb27b6dfff646ce9f402be870b62
-  AWSMobileClient: bdfc148fc11b846331f2bec4a7063c95e66c329e
-  AWSPluginsCore: 6305f711ed8d967ba3b46e272cdad8f857e2ed4a
-  AWSS3: d8e8a6d7328e7fa1468788c4d7efa71d7f3a6caa
+  Amplify: 11e56f4e8ae5abc7a3c2e061c5b99265f81cc93a
+  AmplifyPlugins: ff526ead875caa68c7a6b369f4be332df317bf79
+  AppSyncRealTimeClient: 2b4482b1770a3e5cf64f9714a6d198550017b5a2
+  AWSAuthCore: d2cb921db598ea03d67284977a3c691e9a1aee83
+  AWSCognitoIdentityProvider: f9d68c563718fa5aa76e077752df06c73810efba
+  AWSCognitoIdentityProviderASF: 21681469334e286df6e5470f3cbab3b10edbf818
+  AWSCore: 08a61ac2b1d98b2d43f59ee40c4bd68e58dfdea3
+  AWSMobileClient: 6af7fff9e58f8d427acf3381cbbae2f0c34d52ab
+  AWSPluginsCore: 744703798503e07230cc64b67b1f7ff0569e06e9
+  AWSS3: 1782d0db43a1219a118ea6263d4ea01f76f8cdf4
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
-  Firebase: 73c3e3b216ec1ecbc54d2ffdd4670c65c749edb1
-  FirebaseAnalytics: dcb92c7c9ef4fa7ffac276e8f87bd4fc8c97f1b8
-  FirebaseCore: 3f09591d51292843e2a46f18358d60bf4e996255
-  FirebaseCoreDiagnostics: a31d987ba0fe16d59886a5dbadc2f1de871f88c8
-  FirebaseFirestore: 7f6576eaca9f821e864c3e917d68aa99f4e6b613
-  FirebaseInstallations: c4aab1005d6547b00a7529777fe52f5d4d45165b
-  FirebaseMessaging: 1a33b4af3c8042ed6ddacb6c031894af2064bfab
-  GoogleAppMeasurement: c6bbc9753d046b5456dd4f940057fbad2c28419e
-  GoogleDataTransport: 11e3a5f2c190327df1a4a5d7e7ae3d4d5b9c9e4c
+  Firebase: b5956acddaaa53a6c292bec00649fadd18367344
+  FirebaseAnalytics: e812eaae316ba8914b1ef06bef18f11efc1f56c6
+  FirebaseCore: 389c4ce9a7cce4a7e25eb22326b4bee0050557b2
+  FirebaseCoreDiagnostics: 3e249cee3de5c5f9cfd6cc2a19997231286fec11
+  FirebaseFirestore: c4be8314e9fa156f44b54025f7a98ecbff6971a6
+  FirebaseInstallations: 7f31798a8198c354eadcb87176d2090b62edc187
+  FirebaseMessaging: c8871b0907dcf4e76de81241eb6a62be6d657d2f
+  GoogleAppMeasurement: 9ff7b9e23cced93a5a41736c09bdeb5b5b7fb111
+  GoogleDataTransport: 04c3e9a480bbcaa2ec3f5d27f1cdeb6a92f20c8d
   GoogleUtilities: f8a43108b38a68eebe8b3540e1f4f2d28843ce20
   "gRPC-C++": 13d8ccef97d5c3c441b7e3c529ef28ebee86fad2
   gRPC-Core: 4afa11bfbedf7cdecd04de535a9e046893404ed5

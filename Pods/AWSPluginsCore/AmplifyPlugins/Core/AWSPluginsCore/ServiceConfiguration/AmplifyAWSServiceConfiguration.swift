@@ -9,7 +9,7 @@ import Foundation
 import AWSCore
 
 public class AmplifyAWSServiceConfiguration: AWSServiceConfiguration {
-    static let version = "1.8.0"
+    static let version = "1.10.0"
 
     override public class func baseUserAgent() -> String! {
         //TODO: Retrieve this version from a centralized location:
@@ -40,5 +40,15 @@ public class AmplifyAWSServiceConfiguration: AWSServiceConfiguration {
 
     public init(region regionType: AWSRegionType) {
         super.init(region: regionType, credentialsProvider: nil)
+    }
+
+    override public init(region regionType: AWSRegionType,
+                         endpoint: AWSEndpoint,
+                         credentialsProvider: AWSCredentialsProvider,
+                         localTestingEnabled: Bool) {
+        super.init(region: regionType,
+                   endpoint: endpoint,
+                   credentialsProvider: credentialsProvider,
+                   localTestingEnabled: localTestingEnabled)
     }
 }
