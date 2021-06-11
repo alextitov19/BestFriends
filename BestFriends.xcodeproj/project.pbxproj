@@ -274,10 +274,11 @@
 		CB96B1E180F3CE953BF0D177 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		CF356D1C2671FE4900BCF572 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1B2671FE4900BCF572 /* Tokens.swift */; };
 		CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */; };
+		CF356D24267395B900BCF572 /* SplashScreenVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D23267395B900BCF572 /* SplashScreenVid.swift */; };
+		CF356D2826739DA300BCF572 /* SplashScreen.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF356D2726739DA300BCF572 /* SplashScreen.m4v */; };
 		CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2226584E1800B69506 /* BlueTransitionPage.swift */; };
 		CF436A252658C64200B69506 /* BlueTransitionPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A242658C64200B69506 /* BlueTransitionPage1.swift */; };
 		CF436A272658D66F00B69506 /* BlueModePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A262658D66F00B69506 /* BlueModePages.swift */; };
-		CF436A2926599EE000B69506 /* PreLoadPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2826599EE000B69506 /* PreLoadPage.swift */; };
 		CF436A30265A0FF400B69506 /* BlueSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2F265A0FF400B69506 /* BlueSurvey.swift */; };
 		CF436A32265B40DD00B69506 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A31265B40DD00B69506 /* Notifications.swift */; };
 		CF5263D5266477B300243DD7 /* citycars.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D4266477B300243DD7 /* citycars.mp4 */; };
@@ -446,10 +447,11 @@
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		CF356D1B2671FE4900BCF572 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreLoad.swift; sourceTree = "<group>"; };
+		CF356D23267395B900BCF572 /* SplashScreenVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVid.swift; sourceTree = "<group>"; };
+		CF356D2726739DA300BCF572 /* SplashScreen.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = SplashScreen.m4v; path = ../../../../../../../Desktop/SplashScreen.m4v; sourceTree = "<group>"; };
 		CF436A2226584E1800B69506 /* BlueTransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage.swift; sourceTree = "<group>"; };
 		CF436A242658C64200B69506 /* BlueTransitionPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage1.swift; sourceTree = "<group>"; };
 		CF436A262658D66F00B69506 /* BlueModePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModePages.swift; sourceTree = "<group>"; };
-		CF436A2826599EE000B69506 /* PreLoadPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoadPage.swift; sourceTree = "<group>"; };
 		CF436A2F265A0FF400B69506 /* BlueSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSurvey.swift; sourceTree = "<group>"; };
 		CF436A31265B40DD00B69506 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		CF5263D4266477B300243DD7 /* citycars.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = citycars.mp4; sourceTree = "<group>"; };
@@ -703,7 +705,6 @@
 		7AE31CBD262A9A7F001EC5A3 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				CF436A2826599EE000B69506 /* PreLoadPage.swift */,
 				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
 				CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
@@ -712,6 +713,7 @@
 				7AC0DA9B262BAF3B007FC643 /* UserManager.swift */,
 				7AC8A23E26578C3E001812EF /* LocationManager.swift */,
 				CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */,
+				CF356D23267395B900BCF572 /* SplashScreenVid.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -801,6 +803,7 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CF356D2726739DA300BCF572 /* SplashScreen.m4v */,
 				7A417EC2265ECF5900E95364 /* first.mp4 */,
 				CF5263FD266F202400243DD7 /* BlueHeartVid.mp4 */,
 				CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */,
@@ -987,6 +990,7 @@
 				771AD6089F6265A871F0F171 /* awsconfiguration.json in Resources */,
 				F6CC570AA97FB396E0CB48CA /* awsconfiguration.json in Resources */,
 				0CD3136A72279D2BCF55EF7A /* amplifyconfiguration.json in Resources */,
+				CF356D2826739DA300BCF572 /* SplashScreen.m4v in Resources */,
 				4606F3DF2D174863997B7782 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1237,7 +1241,6 @@
 				CF436A32265B40DD00B69506 /* Notifications.swift in Sources */,
 				CF436A272658D66F00B69506 /* BlueModePages.swift in Sources */,
 				46791643C6EBAF6EB2B027C6 /* User.swift in Sources */,
-				CF436A2926599EE000B69506 /* PreLoadPage.swift in Sources */,
 				A8DF522C45B5D1E27ECFA53B /* User.swift in Sources */,
 				43FBF4B6AEB15D3660E44192 /* Message.swift in Sources */,
 				878B397ACE5C6EB7A0702603 /* ReportedMessage+Schema.swift in Sources */,
@@ -1337,6 +1340,7 @@
 				50F72423B2278C6D331924A6 /* Room.swift in Sources */,
 				7F18CC0EC6D0B456D6443CF7 /* Advertisement.swift in Sources */,
 				3B15D8D6E1897757FD7700B4 /* AmplifyModels.swift in Sources */,
+				CF356D24267395B900BCF572 /* SplashScreenVid.swift in Sources */,
 				CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */,
 				4595F794360ECA666B80CD23 /* ManagementDocument+Schema.swift in Sources */,
 				7AEEFDAC26731AB2004A29A0 /* Advertisement+Schema.swift in Sources */,
