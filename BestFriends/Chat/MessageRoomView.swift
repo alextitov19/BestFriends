@@ -198,8 +198,6 @@ struct MessageRoomView: View {
                 }
                 .popover(isPresented: $stickerPopoverShowing) {
                             Text("Stickers")
-                                .font(.headline)
-                                .padding()
                         }
                 
             }
