@@ -274,8 +274,8 @@
 		CB96B1E180F3CE953BF0D177 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		CF356D1C2671FE4900BCF572 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1B2671FE4900BCF572 /* Tokens.swift */; };
 		CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */; };
-		CF356D222673949400BCF572 /* SplashScreen.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF356D212673949400BCF572 /* SplashScreen.m4v */; };
 		CF356D24267395B900BCF572 /* SplashScreenVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D23267395B900BCF572 /* SplashScreenVid.swift */; };
+		CF356D2826739DA300BCF572 /* SplashScreen.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF356D2726739DA300BCF572 /* SplashScreen.m4v */; };
 		CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2226584E1800B69506 /* BlueTransitionPage.swift */; };
 		CF436A252658C64200B69506 /* BlueTransitionPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A242658C64200B69506 /* BlueTransitionPage1.swift */; };
 		CF436A272658D66F00B69506 /* BlueModePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A262658D66F00B69506 /* BlueModePages.swift */; };
@@ -447,8 +447,8 @@
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		CF356D1B2671FE4900BCF572 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreLoad.swift; sourceTree = "<group>"; };
-		CF356D212673949400BCF572 /* SplashScreen.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = SplashScreen.m4v; path = ../../../../../../../Desktop/SplashScreen.m4v; sourceTree = "<group>"; };
 		CF356D23267395B900BCF572 /* SplashScreenVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVid.swift; sourceTree = "<group>"; };
+		CF356D2726739DA300BCF572 /* SplashScreen.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = SplashScreen.m4v; path = ../../../../../../../Desktop/SplashScreen.m4v; sourceTree = "<group>"; };
 		CF436A2226584E1800B69506 /* BlueTransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage.swift; sourceTree = "<group>"; };
 		CF436A242658C64200B69506 /* BlueTransitionPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage1.swift; sourceTree = "<group>"; };
 		CF436A262658D66F00B69506 /* BlueModePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModePages.swift; sourceTree = "<group>"; };
@@ -803,7 +803,7 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
-				CF356D212673949400BCF572 /* SplashScreen.m4v */,
+				CF356D2726739DA300BCF572 /* SplashScreen.m4v */,
 				7A417EC2265ECF5900E95364 /* first.mp4 */,
 				CF5263FD266F202400243DD7 /* BlueHeartVid.mp4 */,
 				CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */,
@@ -990,7 +990,7 @@
 				771AD6089F6265A871F0F171 /* awsconfiguration.json in Resources */,
 				F6CC570AA97FB396E0CB48CA /* awsconfiguration.json in Resources */,
 				0CD3136A72279D2BCF55EF7A /* amplifyconfiguration.json in Resources */,
-				CF356D222673949400BCF572 /* SplashScreen.m4v in Resources */,
+				CF356D2826739DA300BCF572 /* SplashScreen.m4v in Resources */,
 				4606F3DF2D174863997B7782 /* amplifyconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
