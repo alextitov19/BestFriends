@@ -199,6 +199,7 @@ struct LandingView: View {
                 .frame(alignment: .leading)
                 
                 ReviewPopup()
+                    .padding(20)
             }
             .isHidden(isReviewPopupShowing)
                
