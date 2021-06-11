@@ -325,15 +325,13 @@ struct BlueModeUserDashboard: View {
             }
         }
     }
-//
-//
-//struct BlueModeUserDashboard_Previews : PreviewProvider {
-//    static var previews: some View {
-//        BlueModeUserDashboard()
+
+
+struct BlueModeUserDashboard_Previews : PreviewProvider {
+    static var previews: some View {
+        BlueModeUserDashboard()
     }
 
 
-
-
-
-
+}
+}

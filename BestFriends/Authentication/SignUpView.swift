@@ -559,7 +559,7 @@ struct SignUpPage6: View {
                     .cornerRadius(25)
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 35)
             
                     
               
@@ -654,7 +654,7 @@ struct SignUpPage7: View {
                 
                 
                 Spacer()
-                    .frame(height: 175)
+                    .frame(height: 75)
                 
                 NavigationLink(destination: SignUpPage8(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
                                     Text("Next")
@@ -1042,7 +1042,7 @@ struct SignUpQuestionPage1: View {
             }
             
         Spacer()
-            .frame(height: 100)
+            .frame(height: 50)
           
                     Spacer()
                         .frame(height: 20)
@@ -1062,7 +1062,7 @@ struct SignUpQuestionPage1: View {
                         .multilineTextAlignment(.center)
 
                     Spacer()
-                        .frame(height: 120)
+                        .frame(height: 10)
                     
                     NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
                                         Text("Ok, let's go!")
@@ -1072,6 +1072,9 @@ struct SignUpQuestionPage1: View {
                                             .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                             .cornerRadius(25)
 
+//                        Spacer()
+//                            .frame(height: 25)
+//
                                     }
                 }
             }
@@ -1104,7 +1107,7 @@ struct SignUpQuestionPage2: View {
             VStack {
                 VStack {
                    
-                    Text("💕We're changing how social media gathers information.")
+                    Text("💕We're changing how social media gathers user information.")
                         .font(.system(size: 25))
                         .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
                         .frame(width: 350)
@@ -1119,7 +1122,7 @@ struct SignUpQuestionPage2: View {
                         .fontWeight(.ultraLight)
                         .italic()
                         .foregroundColor(Color.white)
-                        .frame(width: 400)
+                        .frame(width: 400, height: 75)
                     
                         .multilineTextAlignment(.center)
 
@@ -1150,21 +1153,21 @@ struct SignUpQuestionPage2: View {
                             .multilineTextAlignment(.center)
                            
                        
-                        Spacer()
+                      Spacer()
                             .frame(height: 50)
                         
                      
                     }
     
-    Spacer()
-        .frame(height: 50)
+   // Spacer()
+     //   .frame(height: 50)
     
  
 
 }
 
-Spacer()
-    .frame(height: 125)
+//Spacer()
+  //  .frame(height: 10)
 
 }
 }
@@ -1341,6 +1344,8 @@ struct SignUpQuestionPage3: View {
 
 struct SignUpPage1_Previews : PreviewProvider {
     static var previews: some View {
+        
+        
         SignUpPage1().environmentObject(SessionManager())
         SignUpPage2(firstName: "").environmentObject(SessionManager())
         SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
@@ -1351,12 +1356,16 @@ struct SignUpPage1_Previews : PreviewProvider {
         SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
         SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
       
-        
+        VStack {
         SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
-       
+        
+        SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+        
+        SignUpQuestionPage3(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+        
+        
+        }
     }
 }
-
-
 
 
