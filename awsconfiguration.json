@@ -1,0 +1,66 @@
+{
+    "UserAgent": "aws-amplify/cli",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-east-2:174b1ab0-9a4e-4acd-8761-7b63f551b0f0",
+                "Region": "us-east-2"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-2_LOn6BUlfT",
+            "AppClientId": "37uqgm91g6j23h0p79cve7n4nc",
+            "Region": "us-east-2"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "OAuth": {
+                "WebDomain": "bestfriends330b7cc3-330b7cc3-dev.auth.us-east-2.amazoncognito.com",
+                "AppClientId": "37uqgm91g6j23h0p79cve7n4nc",
+                "SignInRedirectURI": "authentication://",
+                "SignOutRedirectURI": "authentication://",
+                "Scopes": [
+                    "phone",
+                    "email",
+                    "openid",
+                    "profile",
+                    "aws.cognito.signin.user.admin"
+                ]
+            },
+            "authenticationFlowType": "USER_SRP_AUTH"
+        }
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://toigxxissjebvi2vq6ej3x3eom.appsync-api.us-east-2.amazonaws.com/graphql",
+            "Region": "us-east-2",
+            "AuthMode": "API_KEY",
+            "ApiKey": "da2-f4vqp4yvgnhlrjz3h6caczdury",
+            "ClientDatabasePrefix": "bestfriends_API_KEY"
+        }
+    },
+    "S3TransferUtility": {
+        "Default": {
+            "Bucket": "bestfriendsattachments182511-dev",
+            "Region": "us-east-2"
+        }
+    },
+    "PinpointAnalytics": {
+        "Default": {
+            "AppId": "7928a0c3f246481cbd10fd529fae732e",
+            "Region": "us-east-1"
+        }
+    },
+    "PinpointTargeting": {
+        "Default": {
+            "Region": "us-east-1"
+        }
+    }
+}
