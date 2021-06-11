@@ -1,17 +1,16 @@
 //
-//  BlueHeartVid.swift
+//  SplashScreenVid.swift
 //  BestFriends
 //
-//  Created by Social Tech on 6/4/21.
+//  Created by Social Tech on 6/11/21.
 //
-
 
 
 import SwiftUI
 
 import AVKit
 
-struct BlueHeartVid: View {
+struct SplashScreenVid: View {
     @Environment(\.presentationMode) var presentationMode
     
     var names: [String] = ["BlueHeartVid"]
@@ -44,8 +43,8 @@ struct BlueHeartVid: View {
         }
     }
 
-struct BlueHeartVid_Previews : PreviewProvider {
+struct SplashScreenVid_Previews : PreviewProvider {
     static var previews: some View {
-        BlueHeartVid()
+        SplashScreenVid()
         }
 }
