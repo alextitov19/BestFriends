@@ -28,6 +28,7 @@ struct LandingView: View {
     
     @State private var isShakingCoolPresented = false
     @State private var isAdViewPresented = false
+    @State private var isReviewPopupShowing = false //change to true to show popup
 
 
 //    @State private var inviteMode = false
@@ -51,7 +52,7 @@ struct LandingView: View {
 
     var body: some View {
             
-            ZStack {
+        ZStack {
                 
                 Image("purpleBackground")
                     .resizable()
@@ -186,11 +187,25 @@ struct LandingView: View {
                 }
                 .navigationBarTitle("")
                 .navigationBarHidden(true)
+            
+            VStack {
+                Button(action: {
+                    isReviewPopupShowing = false
+                }) {
+                    Text("X")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                }
+                .frame(alignment: .leading)
+                
+                EnjoyingBestFriends()
+            }
+            .isHidden(isReviewPopupShowing)
                
                 
-            }
-            .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
-            .fullScreenCover(isPresented: $isAdViewPresented, content: AdViewFullScreen.init)
+        }
+        .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
+        .fullScreenCover(isPresented: $isAdViewPresented, content: AdViewFullScreen.init)
         .onAppear(perform: reloadData)
         .onShake {
             isAdViewPresented = true
