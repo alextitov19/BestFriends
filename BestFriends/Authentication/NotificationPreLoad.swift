@@ -125,6 +125,7 @@ struct NotificationPreLoad: View {
 
 
                     }
+            
         }
         }
     }
