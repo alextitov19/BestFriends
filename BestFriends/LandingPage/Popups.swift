@@ -6,13 +6,96 @@
 //
 import SwiftUI
 
+struct ShakingCoolPopup: View {
+
+    var body: some View {
+            VStack {
+                Text("Certian images always make you smile. Go ahead - shake your phone and SMILE.")
+                    .italic()
+                    .font(.system(size: 25, weight: .regular))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
+                    .padding(5)
+                
+                    // Take the user to the beta tester page on the website
+                NavigationLink(
+                    destination: ShakingCoolView(),
+                    label: {
+                        Text("Setup ShakingCool")
+                    })
+                    .font(.system(size: 27))
+                    .multilineTextAlignment(.center)
+                .foregroundColor(Color(#colorLiteral(red: 0, green: 1, blue: 0, alpha: 1)))
+                .cornerRadius(25)
+        }
+        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+    }
+}
+
+struct SmileNotesPopup: View {
+
+    var body: some View {
+            VStack {
+                Text("Looking for that special message from a month ago. Stop scrolling - try SmileNotes.")
+                    .italic()
+                    .font(.system(size: 25, weight: .regular))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
+                    .padding(5)
+                
+                    // Take the user to the beta tester page on the website
+                NavigationLink(
+                    destination: InfoViewPage1(),
+                    label: {
+                        Text("Long-tap your favorite messages - we just saved them for you!")
+                    })
+                    .font(.system(size: 27))
+                    .multilineTextAlignment(.center)
+                .foregroundColor(Color(#colorLiteral(red: 0, green: 1, blue: 0, alpha: 1)))
+                .cornerRadius(25)
+        }
+        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+    }
+}
+
+
+
+struct BFWalkThroughPopup: View {
+
+    var body: some View {
+            VStack {
+                Text("Take a quick tour of BestFriends.")
+                    .italic()
+                    .font(.system(size: 35, weight: .regular))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
+                    .padding(5)
+                
+                    // Take the user to the beta tester page on the website
+                NavigationLink(
+                    destination: InfoViewPage1(),
+                    label: {
+                        Text("Ok")
+                    })
+                    .font(.system(size: 35))
+                .foregroundColor(Color(#colorLiteral(red: 0, green: 1, blue: 0, alpha: 1)))
+                .cornerRadius(25)
+        }
+        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+    }
+}
+
+
 struct BetaTesterPopup: View {
 
     var body: some View {
             VStack {
-                Text("Help BestFriends give you more of what you want.")
+                Text("Give us your Feedback so we can make BestFrinds better, giving you more of what you want.")
                     .italic()
-                    .font(.system(size: 35, weight: .regular))
+                    .font(.system(size: 25, weight: .regular))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity)
@@ -32,9 +115,9 @@ struct BlueModePopup: View {
 
     var body: some View {
             VStack {
-                Text("Have you had a fight with your best friend?")
+                Text("Just had a huge fight with your best friend - we can help 💕")
                     .italic()
-                    .font(.system(size: 35, weight: .regular))
+                    .font(.system(size: 30, weight: .regular))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .frame(maxWidth: .infinity)
@@ -263,6 +346,9 @@ struct NotEnjoyingApp: View {
 
 struct Popups_Previews : PreviewProvider {
     static var previews: some View {
+        ShakingCoolPopup()
+        SmileNotesPopup()
+        BFWalkThroughPopup()
         BetaTesterPopup()
         BlueModePopup()
         ReviewPopup()
