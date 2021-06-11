@@ -277,7 +277,6 @@
 		CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2226584E1800B69506 /* BlueTransitionPage.swift */; };
 		CF436A252658C64200B69506 /* BlueTransitionPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A242658C64200B69506 /* BlueTransitionPage1.swift */; };
 		CF436A272658D66F00B69506 /* BlueModePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A262658D66F00B69506 /* BlueModePages.swift */; };
-		CF436A2926599EE000B69506 /* PreLoadPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2826599EE000B69506 /* PreLoadPage.swift */; };
 		CF436A30265A0FF400B69506 /* BlueSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2F265A0FF400B69506 /* BlueSurvey.swift */; };
 		CF436A32265B40DD00B69506 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A31265B40DD00B69506 /* Notifications.swift */; };
 		CF5263D5266477B300243DD7 /* citycars.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D4266477B300243DD7 /* citycars.mp4 */; };
@@ -449,7 +448,6 @@
 		CF436A2226584E1800B69506 /* BlueTransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage.swift; sourceTree = "<group>"; };
 		CF436A242658C64200B69506 /* BlueTransitionPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage1.swift; sourceTree = "<group>"; };
 		CF436A262658D66F00B69506 /* BlueModePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModePages.swift; sourceTree = "<group>"; };
-		CF436A2826599EE000B69506 /* PreLoadPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreLoadPage.swift; sourceTree = "<group>"; };
 		CF436A2F265A0FF400B69506 /* BlueSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSurvey.swift; sourceTree = "<group>"; };
 		CF436A31265B40DD00B69506 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		CF5263D4266477B300243DD7 /* citycars.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = citycars.mp4; sourceTree = "<group>"; };
@@ -703,7 +701,6 @@
 		7AE31CBD262A9A7F001EC5A3 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				CF436A2826599EE000B69506 /* PreLoadPage.swift */,
 				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
 				CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
@@ -1237,7 +1234,6 @@
 				CF436A32265B40DD00B69506 /* Notifications.swift in Sources */,
 				CF436A272658D66F00B69506 /* BlueModePages.swift in Sources */,
 				46791643C6EBAF6EB2B027C6 /* User.swift in Sources */,
-				CF436A2926599EE000B69506 /* PreLoadPage.swift in Sources */,
 				A8DF522C45B5D1E27ECFA53B /* User.swift in Sources */,
 				43FBF4B6AEB15D3660E44192 /* Message.swift in Sources */,
 				878B397ACE5C6EB7A0702603 /* ReportedMessage+Schema.swift in Sources */,
