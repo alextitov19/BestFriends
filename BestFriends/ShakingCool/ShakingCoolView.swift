@@ -33,9 +33,20 @@ struct ShakingCoolView: View {
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 40, weight: .thin))
                 
+                Text("As you add friends they can send you a favorite image to add to 'your' ShakingCool.")
+                    .italic()
+                    .font(.system(size: 20))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 385, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                
+                
+                
                 Spacer().frame(height: 20)
                 
-                Text("You can add \(howManyLeft()) more images")
+                Text("You can add \(howManyLeft()) more image(s)")
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 20, weight: .thin))
                 

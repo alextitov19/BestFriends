@@ -38,7 +38,7 @@ struct AddFriends: View {
                          .multilineTextAlignment(.center)
                          .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
-                    Text("BestFriends is about building your team of friends that you trust, confide in and that actually care about you and your happiness.")
+                    Text("BestFriends is about building your team of friends that you trust, confide in and that really care about you - and your happiness.")
                         
                          .font(.system(size: 30))
                          .fontWeight(.regular)
@@ -52,7 +52,7 @@ struct AddFriends: View {
                     NavigationLink(
                         destination: SettingsView(),
                         label: {
-                            Text("Let's get started")
+                            Text("Let's get started ***(not linked yet)")
                         })
                              .frame(width: 325, height: 50)
                              .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

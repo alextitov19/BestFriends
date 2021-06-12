@@ -127,7 +127,7 @@ struct LandingView: View {
                             
                           }
                         .actionSheet(isPresented: $showingActionSheet) {
-                            ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR code"), buttons: [
+                            ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR code. Add friends that you trust, confide in and that really care about you - and your happiness."), buttons: [
                                 .default(Text("My QR Code")) { showMyQR() },
                                 .default(Text("Photo Library")) { self.showingImagePicker = true },
                                 .cancel()
