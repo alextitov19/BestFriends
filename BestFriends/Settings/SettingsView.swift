@@ -103,7 +103,7 @@ struct SettingsView: View {
                             NavigationLink(
                                 destination: BlueModePage1(),
                                 label: {
-                                    Text("BlueMode Walk-through & Setup")
+                                    Text("BlueMode Demo & Setup")
                                 })
                                 .frame(width: 325, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -207,7 +207,7 @@ struct SettingsView: View {
                             NavigationLink(
                                 destination: ManageMyFriends(),
                                 label: {
-                                    Text("Add Friends - Block Friends")
+                                    Text("Add, Block or Delete my Friends")
                                 })
                            
                                 .frame(width: 325, height: 50)
@@ -361,7 +361,7 @@ struct SettingsView: View {
                                         NavigationLink(
                                             destination: ReviewPopup(),
                                             label: {
-                                                Text("Are you enjoying BestFriends? - make popup")
+                                                Text("Are you enjoying BestFriends?")
                                             })
                                             .frame(width: 325, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
