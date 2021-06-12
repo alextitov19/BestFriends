@@ -34,7 +34,7 @@ struct SettingsView: View {
                     Spacer().frame(height: 40)
                    
                     
-                    Text("BestFriend 'Walk-throughs' and Setup")
+                    Text("BestFriend Demo & Setup")
                         .font(.system(size: 32))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -44,7 +44,7 @@ struct SettingsView: View {
                     NavigationLink(
                             destination: InfoViewPage1(),
                             label: {
-                                Text("BestFriends Walk-through")
+                                Text("BestFriends Demo")
                             })
                             .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -61,7 +61,7 @@ struct SettingsView: View {
                                 NavigationLink(
                                     destination: AddFriends(),
                                     label: {
-                                        Text("Add Friends")
+                                        Text("Add my Friends")
                                     })
                                     .frame(width: 325, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
