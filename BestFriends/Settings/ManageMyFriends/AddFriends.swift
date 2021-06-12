@@ -57,7 +57,7 @@ struct AddFriends: View {
                     
                
                     
-                    Text("Just tap the 'Add Friends' icon at bottom of Homepage and text your friend your QR code on your phone.")
+                    Text("Tap 'Add Friends' icon at bottom of Homepage. Text your friend your QR code on your phone.")
                        
                         .font(.system(size: 20))
                         .fontWeight(.regular)
@@ -67,7 +67,7 @@ struct AddFriends: View {
                       
                   
                     
-                    Text("When a frined adds you send them a pic you want them to put on their ShakingCool.")
+                    Text("Notes: 1) When a friend adds you send them a pic you want them to put on their ShakingCool. 2) You can be in multiple frind groups.")
                        
                         .font(.system(size: 20))
                         .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))

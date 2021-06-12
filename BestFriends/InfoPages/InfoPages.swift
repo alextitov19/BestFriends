@@ -333,7 +333,19 @@ struct InfoViewPage4: View {
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
+                  
+                Spacer()
+                    .frame(height: 35)
+                
+                
+                Text(" When a friend adds you to BestFrineds send them a pic you want them to put in their ShakingCool.")
+                   
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+               
                 Spacer()
                     .frame(height: 50)
                    
