@@ -30,21 +30,22 @@ struct Tokens: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
-                Text("(Stickers & Gif Purchases)")
-                    .font(.system(size: 30))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(.blue)
-                    .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+               
                 
-                Spacer().frame(height: 20)
+                Spacer().frame(height: 45)
                 
-                Text("Tokens are earned by watching Ad videos from the 'interest category' you selected at Registration. Tokens may be used to purchase premimum Stickers and Gifs.")
-                    .frame(width: 380, height: 210, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.title)
-                    .multilineTextAlignment(.center)
-                    .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                Text("Tokens are earned by watching Ad videos. Tokens may be used to purchase premimum Stickers.")
+              
+                     .italic() .italic()
+                     .font(.system(size: 25))
+                     .fontWeight(.regular)
+                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                     .multilineTextAlignment(.center)
+                     .frame(width: 400, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+              
+                
                 
                 Spacer().frame(height: 20)
                 
@@ -112,15 +113,20 @@ struct Tokens: View {
                         Spacer()
                             .frame(height: 25)
                         
-                        NavigationLink(
-                            destination: SettingsView(),
-                            label: {
-                                Text("Edit my Ad 'interest category' - coming soon.")
-                            })
-                        .frame(width: 325, height: 50, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                        .cornerRadius(25)
+                        
+                           NavigationLink(
+                               destination: SettingsView(),
+                               label: {
+                                   Text("Edit my 'ad interest' categories")
+                               })
+                          
+                               .frame(width: 325, height: 50)
+                               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                               .overlay(
+                                   RoundedRectangle(cornerRadius: 25)
+                                       .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
+                                       )
+                           
                         
                         
                         Spacer()

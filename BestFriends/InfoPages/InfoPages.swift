@@ -32,6 +32,7 @@ struct InfoViewPage1: View {
                      .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                      .multilineTextAlignment(.center)
                      .frame(width: 275, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
                 Spacer()
                     .frame(height: 20)
 
@@ -53,11 +54,11 @@ struct InfoViewPage1: View {
                 
                 
                 Spacer()
-                    .frame(height: 250)
+                    .frame(height: 225)
                 
                 VStack {
                 
-                    NavigationLink(destination: InfoViewPage3()) {
+                    NavigationLink(destination: InfoViewPage2()) {
                                         Text("Show me BestFriends")
                                             .font(.title)
                                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -67,22 +68,32 @@ struct InfoViewPage1: View {
                         }
                     Spacer()
                         .frame(height: 20)
-                    Text("Walk-through is also in Settings.")
+
+                    HStack {
+                    
+                    
+                    NavigationLink(destination: SettingsView()) {
+                                        Text("Later")
+                                            .font(.title)
+                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                            .frame(width: 100, height: 30)
+                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                    
+                    
+                    Text("demo also in settings")
                         .italic()
-                        .font(.system(size: 25))
+                        .font(.system(size: 20))
                          .fontWeight(.regular)
                          .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                          .multilineTextAlignment(.center)
-                         .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 190, height: 50, alignment: .trailing)
                    
-                    NavigationLink(destination: InfoViewPage3()) {
-                                        Text("SKIP")
-                                            .font(.title)
-                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                            .frame(width: 100, height: 40)
-                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                        }
+                   
+                        Spacer()
+                            .frame(height: 10)
+                    }
+                    }
                  
                     
                    
@@ -225,7 +236,7 @@ struct InfoViewPage3: View {
                 Spacer()
                     .frame(height: 70)
                     
-                    Text("We have a zero tolorane policy concerning sending hurtful messages to your friends. Please play nice!")
+                    Text("We have a zero tolorane policy concerning sending hurtful messages to your friends. Please play nicely!")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -282,7 +293,7 @@ struct InfoViewPage4: View {
                         Spacer()
                             .frame(height: 125)
                                                     
-                            Image("Penguin Sticker 38")
+                            Image("Penguin2")
                                 .resizable()
                                 .frame(width: 150, height: 150)
                                 .scaledToFill()
@@ -493,7 +504,7 @@ struct InfoViewPage6: View {
                     .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 10)
                 
                 NavigationLink(destination: InfoViewPage7()) {
                                     Text("Next")
@@ -505,7 +516,7 @@ struct InfoViewPage6: View {
                     }
                 
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 130)
         
             }
         }
@@ -575,7 +586,7 @@ struct InfoViewPage7: View {
                     
                 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 65)
                 NavigationLink(destination: SettingsView()) {
                                     Text("Next")
                                         .font(.title)
@@ -586,7 +597,7 @@ struct InfoViewPage7: View {
                     }
                
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 95)
         
             }
         }
