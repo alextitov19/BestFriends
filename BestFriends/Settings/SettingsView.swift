@@ -381,7 +381,8 @@ struct SettingsView: View {
                                                     )
                                  
                                    
-                                    
+                                    Spacer()
+                                        .frame(height: 100)
                                     
                                     
                                     
