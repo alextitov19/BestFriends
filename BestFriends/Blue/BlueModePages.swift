@@ -13,7 +13,7 @@ import AVKit
 struct BlueModePage1: View {
 
     var body: some View {
-       NavigationView{
+      // NavigationView{
     
        
         ZStack {
@@ -646,4 +646,4 @@ struct BlueModePage5_Previews : PreviewProvider {
 //
 //
 //
-}
+

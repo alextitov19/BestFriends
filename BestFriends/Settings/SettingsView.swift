@@ -24,14 +24,14 @@ struct SettingsView: View {
                 VStack {
                     ScrollView {
 
-                    Text("Settings")
+                    Text("Settings, Demos & Customizations")
                         .font(.system(size: 50))
                         .fontWeight(.ultraLight)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
-                    Spacer().frame(height: 40)
+                    Spacer().frame(height: 60)
                    
                     
                     Text("BestFriend Demo & Setup")

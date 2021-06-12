@@ -276,6 +276,7 @@
 		CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */; };
 		CF356D24267395B900BCF572 /* SplashScreenVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D23267395B900BCF572 /* SplashScreenVid.swift */; };
 		CF356D2C2674637000BCF572 /* SplashScreen.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF356D2B2674637000BCF572 /* SplashScreen.m4v */; };
+		CF356D322674E3F100BCF572 /* AddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D312674E3F100BCF572 /* AddFriends.swift */; };
 		CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2226584E1800B69506 /* BlueTransitionPage.swift */; };
 		CF436A252658C64200B69506 /* BlueTransitionPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A242658C64200B69506 /* BlueTransitionPage1.swift */; };
 		CF436A272658D66F00B69506 /* BlueModePages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A262658D66F00B69506 /* BlueModePages.swift */; };
@@ -292,7 +293,6 @@
 		CF5263F0266A2B0D00243DD7 /* BlueHeartVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263EF266A2B0D00243DD7 /* BlueHeartVid.swift */; };
 		CF5263F2266DDD4200243DD7 /* BlueModeUserDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */; };
 		CF5263F8266F1D5B00243DD7 /* EnrichHERVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F7266F1D5B00243DD7 /* EnrichHERVideo.swift */; };
-		CF52640D2671351900243DD7 /* Add Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52640C2671351800243DD7 /* Add Friends.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
 		CFE6FD4626620E9A00DF92BD /* Popups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD4526620E9A00DF92BD /* Popups.swift */; };
 		D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1577796264CBBAD00B6551A /* ChangeEmail.swift */; };
@@ -449,6 +449,7 @@
 		CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreLoad.swift; sourceTree = "<group>"; };
 		CF356D23267395B900BCF572 /* SplashScreenVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVid.swift; sourceTree = "<group>"; };
 		CF356D2B2674637000BCF572 /* SplashScreen.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = SplashScreen.m4v; path = ../../../../../../../Desktop/SplashScreen.m4v; sourceTree = "<group>"; };
+		CF356D312674E3F100BCF572 /* AddFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriends.swift; sourceTree = "<group>"; };
 		CF436A2226584E1800B69506 /* BlueTransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage.swift; sourceTree = "<group>"; };
 		CF436A242658C64200B69506 /* BlueTransitionPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage1.swift; sourceTree = "<group>"; };
 		CF436A262658D66F00B69506 /* BlueModePages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModePages.swift; sourceTree = "<group>"; };
@@ -468,7 +469,6 @@
 		CF5263FD266F202400243DD7 /* BlueHeartVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlueHeartVid.mp4; sourceTree = "<group>"; };
 		CF526401266F20A000243DD7 /* BestFriens Ads Video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BestFriens Ads Video.m4v"; sourceTree = "<group>"; };
 		CF526402266F20A600243DD7 /* Mieko3.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mieko3.m4v; sourceTree = "<group>"; };
-		CF52640C2671351800243DD7 /* Add Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Add Friends.swift"; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		CFE6FD4526620E9A00DF92BD /* Popups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popups.swift; sourceTree = "<group>"; };
 		D1577796264CBBAD00B6551A /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
@@ -864,7 +864,7 @@
 		D15CCD6D2647A10100BFE179 /* ManageMyFriends */ = {
 			isa = PBXGroup;
 			children = (
-				CF52640C2671351800243DD7 /* Add Friends.swift */,
+				CF356D312674E3F100BCF572 /* AddFriends.swift */,
 				D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */,
 				D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */,
 				D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */,
@@ -1092,7 +1092,6 @@
 				7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */,
 				D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */,
 				7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */,
-				CF52640D2671351900243DD7 /* Add Friends.swift in Sources */,
 				D157779B264D086000B6551A /* SmileNotesView.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */,
@@ -1313,6 +1312,7 @@
 				318FE14244A28E3055064727 /* ManagementDocument+Schema.swift in Sources */,
 				35C44836B3C13F7A0955BB73 /* ManagementDocument.swift in Sources */,
 				491FC288C77582E68742BFA1 /* Message+Schema.swift in Sources */,
+				CF356D322674E3F100BCF572 /* AddFriends.swift in Sources */,
 				AA63971095E98FB1FFC64E65 /* Message.swift in Sources */,
 				52CD226509A3861C98BBBF86 /* ReportedMessage+Schema.swift in Sources */,
 				838C782A20D1A1C80358A8CC /* ReportedMessage.swift in Sources */,
