@@ -26,11 +26,10 @@ struct ChangeBackground: View {
                     .font(.title)
             
                
-                Text("Not available in BlueMode - coming soon")
-                   
+                Text("(Not available in BlueMode - coming soon)")
+                    .italic()
                     .font(.system(size: 25))
                     .fontWeight(.ultraLight)
-                    .italic()
                     .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .frame(width: 300, height: 100, alignment: .center
@@ -47,28 +46,33 @@ struct ChangeBackground: View {
                     NavigationLink(
                         destination: MotionBackground(),
                         label: {
-                            Text("Motion Backgrounds")
+                            Text("Motion Background")
                         })
-                    
-                        .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
+                   
+                        .frame(width: 250, height: 50)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                )
                     
                       
                     
                       Spacer()
                           .frame(height: 30)
                   
-                      NavigationLink(
-                          destination: StaticBackground(),
-                          label: {
-                              Text("Static Backgrounds")
-                          })
-                      .frame(width: 300, height: 50, alignment: .center)
-                      .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                      .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                      .cornerRadius(25)
+                    NavigationLink(
+                        destination: StaticBackground(),
+                        label: {
+                            Text("StaticBackground")
+                        })
+                   
+                        .frame(width: 250, height: 50)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                )
                       
                     Spacer()
                         .frame(height: 30)

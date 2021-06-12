@@ -32,8 +32,6 @@ struct Tokens: View {
             
                
                 
-                Spacer().frame(height: 45)
-                
                 
                 Text("Tokens are earned by watching Ad videos. Tokens may be used to purchase premimum Stickers.")
               
@@ -47,7 +45,7 @@ struct Tokens: View {
               
                 
                 
-                Spacer().frame(height: 20)
+                Spacer().frame(height: 30)
                 
                 Text("Earning Tokens")
                     .font(.system(size: 40))

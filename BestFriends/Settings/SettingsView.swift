@@ -253,7 +253,7 @@ struct SettingsView: View {
                                 NavigationLink(
                                     destination: Notifications(),
                                     label: {
-                                        Text("Notification Settings (Need B/E)")
+                                        Text("Notification Settings ***(Need B/E)")
                                     })
                                     .frame(width: 325, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -268,7 +268,7 @@ struct SettingsView: View {
                             NavigationLink(
                                 destination: DeleteMyAccount(),
                                 label: {
-                                    Text("Delete Account (Not Built)")
+                                    Text("Delete Account ***(Not Built)")
                                 })
                                 .frame(width: 325, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -311,7 +311,7 @@ struct SettingsView: View {
                                 NavigationLink(
                                     destination: ChangeChatFontSize(),
                                     label: {
-                                        Text("Chat Font Size")
+                                        Text("Chat Font Size *** (Not Built Yet)")
                                     })
                                
                                     .frame(width: 325, height: 50)
@@ -343,7 +343,7 @@ struct SettingsView: View {
                                        )
                            
                                     
-                                    Link("In 'crisis' mode? Anonymously chat with trained teens on 'TeenLine'", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
+                                    Link("In 'crisis' mode? Anonymously chat with trained teens on 'TeenLine'", destination: URL(string: "https://teenlineonline.org/")!)
                                         .frame(width: 325, height: 50)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .overlay(

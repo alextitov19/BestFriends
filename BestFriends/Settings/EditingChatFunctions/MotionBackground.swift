@@ -17,29 +17,14 @@ struct MotionBackground: View {
         
         ZStack {
             
-            Image("purpleBackground")
+            Image("")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
                 
-                Spacer().frame(height: 50)
-                
-                Text("Chat")
-                    .foregroundColor(.white)
-                    .font(.title)
-                
-                
-                Text("'Motion Background'")
-                    .foregroundColor(.white)
-                    .font(.title)
-            
-                Text("Options")
-                    .foregroundColor(.white)
-                    .font(.title)
-                
-                Spacer().frame(height: 50)
+             
                 
                 
                 VStack {
@@ -97,23 +82,19 @@ struct MotionBackground: View {
                                 saveData()
                             })
                            
-                        
-                   
                     }
-                    
-                    
-                    
-                    
-                    Text("Longtap video to save your choice")
+                      Text("Longtap video to save your choice")
                        
                         .font(.system(size: 32))
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.regular)
                         .italic()
-                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 100, alignment: .center
+                        .frame(width: 300, height: 100, alignment: .center
                         
                         )
+                    
+                  
                     }
                 }
             }

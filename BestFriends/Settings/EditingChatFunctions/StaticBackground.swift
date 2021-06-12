@@ -17,32 +17,14 @@ struct StaticBackground: View {
         
         ZStack {
             
-            Image("ShaylaC2")
+            Image("")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            VStack {
-                
-                Spacer().frame(height: 50)
-                
-                Text("Chat")
-                    .foregroundColor(.white)
-                    .font(.title)
-                
-                Text("'Static Background'")
-                    .foregroundColor(.white)
-                    .font(.title)
-            
-                Text("Options")
-                    .foregroundColor(.white)
-                    .font(.title)
-                
-                Spacer().frame(height: 50)
-                
-                
+            VStack {  
                 VStack {
-                
+                   
                     HStack {
                         
                         Image("purpleBackground")
@@ -115,14 +97,14 @@ struct StaticBackground: View {
                
                     
                     
-                    Text("Longtap image to save your choice")
+                    Text("Long-tap image to save your choice")
                        
                         .font(.system(size: 32))
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.regular)
                         .italic()
-                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 100, alignment: .center
+                        .frame(width: 300, height: 100, alignment: .center
                         
                         )
                     }
