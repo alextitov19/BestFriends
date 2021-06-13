@@ -379,7 +379,33 @@ struct SettingsView: View {
                                                 RoundedRectangle(cornerRadius: 25)
                                                     .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                                     )
-                                 
+                                    Spacer()
+                                        .frame(height: 45)
+                                    
+                                    
+                                    
+                                    Text("Become Official BestFriends Beta Tester")
+                                       
+                                        .font(.system(size: 32))
+                                        .fontWeight(.ultraLight)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .multilineTextAlignment(.center)
+                                        .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                        
+                                        
+                                    
+                                    
+                                        NavigationLink(
+                                            destination: BetaTesters(),
+                                            label: {
+                                                Text("I'm In!")
+                                            })
+                                            .frame(width: 325, height: 50)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .overlay(
+                                                RoundedRectangle(cornerRadius: 25)
+                                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                                    )
                                    
                                     Spacer()
                                         .frame(height: 100)

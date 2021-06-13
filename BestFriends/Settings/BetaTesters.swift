@@ -63,7 +63,7 @@ struct BetaTesters: View {
                     .frame(height: 25)
                 
                     
-                    Text("We're holding weekly Zoom calls to talk to our users in person every ____________ at __ pm EDT.")
+                    Text("We're holding special events to talk to our users on one of our MeetUp Groups.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)

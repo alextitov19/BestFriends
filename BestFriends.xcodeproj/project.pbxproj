@@ -681,12 +681,12 @@
 			isa = PBXGroup;
 			children = (
 				7AB62A8426426F86005A7744 /* SettingsView.swift */,
-				D15777A2264DB7FD00B6551A /* BetaTesters.swift */,
 				D15777B22650522200B6551A /* Gestures */,
 				CF356D1A2671FE2100BCF572 /* Tokens */,
 				CF5263E1266761CC00243DD7 /* EditingChatFunctions */,
 				D15CCD6526473E6700BFE179 /* MyAccount */,
 				D15CCD6D2647A10100BFE179 /* ManageMyFriends */,
+				D15777A2264DB7FD00B6551A /* BetaTesters.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
