@@ -43,7 +43,7 @@ class AdLoopingPlayerUIView: UIView {
         
 
         // Load the resource
-        let fileUrl = Bundle.main.url(forResource: name, withExtension: "mp4")!
+         let fileUrl = Bundle.main.url(forResource: name, withExtension: "mp4")!
         let asset = AVAsset(url: fileUrl)
         let item = AVPlayerItem(asset: asset)
         
