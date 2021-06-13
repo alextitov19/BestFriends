@@ -63,7 +63,7 @@ struct BetaTesters: View {
                     .frame(height: 25)
                 
                     
-                    Text("We're holding special events to talk to our users on one of our MeetUp Groups.")
+                    Text("Here is your chance to have your voice heard about BestFriends. Join our beta testing MeetUp group and talk to co-founders, staff and other users - it's cool.")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
@@ -102,7 +102,7 @@ struct BetaTesters: View {
                 
                 
                         Spacer()
-                            .frame(height: 175)
+                            .frame(height: 125)
                 }
             }
         }
