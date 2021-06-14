@@ -126,7 +126,7 @@ struct BlueModePage2: View {
                         
                         VStack {
                         Text("Duck in for some quiet time with your thoughts & memories or invite your friend to fix this mess!")
-                        .italic() .italic()
+                        .italic()
                         .font(.system(size: 30))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -167,7 +167,7 @@ struct BlueModePage2: View {
                             
                             VStack {
                                 Text("Because this hurts 💔")
-                                    .italic() .italic()
+                                    .italic()
                                     .font(.system(size: 60))
                                     .fontWeight(.regular)
                                     .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))

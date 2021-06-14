@@ -10,7 +10,8 @@ import Amplify
 
 struct PinView: View {
     
-    @State var title: String = "Enter your pin"
+    @State var title: String = "To Restore Chat Messages, Enter your PIN"
+   
     @State var currentPin: String = ""
     
     var roomID: String
@@ -29,10 +30,20 @@ struct PinView: View {
             VStack {
             
                 Text(title)
-                    .font(.system(size: 40).bold())
-                    .foregroundColor(.white)
+                   // .font(.system(size: 20).bold())
+                 //   .foregroundColor(.white)
                 
-                Spacer().frame(height: 100)
+                    .italic()
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 300, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                
+                
+                
+                Spacer().frame(height: 85)
                     
                 HStack {
                     Button(action: {
