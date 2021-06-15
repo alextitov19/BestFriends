@@ -14,6 +14,10 @@ struct BlueMessageRoomView: View {
     
     @ObservedObject var messageDataSource: MessageDataSource
     @State var showingImagePicker = false
+   // Added ShowingMediaMenu and stickerPopoverShowing
+    @State var showingMediaMenu = false
+    @State var stickerPopoverShowing = false
+// these ^^ two above
     @State var showingPin = false
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0

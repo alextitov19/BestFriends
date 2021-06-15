@@ -302,7 +302,6 @@
 		D15777B42650522200B6551A /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15777B32650522200B6551A /* SwipeGesture.swift */; };
 		D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD682647458900BFE179 /* ResetPassword.swift */; };
 		D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */; };
-		D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD792648870500BFE179 /* PrizesDark.swift */; };
 		D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */; };
 		D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD83264908A300BFE179 /* DarkModePage1.swift */; };
 		D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */; };
@@ -478,7 +477,6 @@
 		D15777B32650522200B6551A /* SwipeGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
 		D15CCD682647458900BFE179 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
-		D15CCD792648870500BFE179 /* PrizesDark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizesDark.swift; sourceTree = "<group>"; };
 		D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
 		D15CCD83264908A300BFE179 /* DarkModePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModePage1.swift; sourceTree = "<group>"; };
 		D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeNotReadyTalk.swift; sourceTree = "<group>"; };
@@ -598,15 +596,15 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				CF356D4226774AE700BCF572 /* BestFriendsInfoPages */,
 				7A08E364264FB6CA00AEBC8F /* Notifications */,
 				7A417EC4265ED49C00E95364 /* Advertisements */,
 				7AD10453265AB9AF007627FD /* ShakingCool */,
 				7A1DBD602659B1A400EB4B42 /* Extensions */,
 				7A8F4256265797FD00E9CBF0 /* models */,
-				D1E3CFE92656D2C900A26779 /* InfoPages */,
-				CF436A2E265A0E9200B69506 /* BlueChat */,
-				D1E3CFDD26522ECB00A26779 /* Blue */,
-				CF436A2D265A0D3B00B69506 /* BlueSinglePages */,
+				CF356D4426774C2E00BCF572 /* BlueModeInfoPages */,
+				CF356D4326774BF500BCF572 /* BlueModeChat */,
+				CF356D4126774A4700BCF572 /* BlueChatVideos */,
 				D1577799264D082800B6551A /* SmileNotes */,
 				7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
@@ -756,6 +754,41 @@
 			path = Tokens;
 			sourceTree = "<group>";
 		};
+		CF356D4126774A4700BCF572 /* BlueChatVideos */ = {
+			isa = PBXGroup;
+			children = (
+				CF5263EF266A2B0D00243DD7 /* BlueHeartVid.swift */,
+			);
+			path = BlueChatVideos;
+			sourceTree = "<group>";
+		};
+		CF356D4226774AE700BCF572 /* BestFriendsInfoPages */ = {
+			isa = PBXGroup;
+			children = (
+				D1D27D39264303E300BDA75F /* InfoPages.swift */,
+			);
+			path = BestFriendsInfoPages;
+			sourceTree = "<group>";
+		};
+		CF356D4326774BF500BCF572 /* BlueModeChat */ = {
+			isa = PBXGroup;
+			children = (
+				7A9A733E265744A900177652 /* BlueMessageRoomView.swift */,
+				CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */,
+			);
+			path = BlueModeChat;
+			sourceTree = "<group>";
+		};
+		CF356D4426774C2E00BCF572 /* BlueModeInfoPages */ = {
+			isa = PBXGroup;
+			children = (
+				CF436A262658D66F00B69506 /* BlueModePages.swift */,
+				CF436A2F265A0FF400B69506 /* BlueSurvey.swift */,
+				CF436A2D265A0D3B00B69506 /* BlueSinglePages */,
+			);
+			path = BlueModeInfoPages;
+			sourceTree = "<group>";
+		};
 		CF436A2D265A0D3B00B69506 /* BlueSinglePages */ = {
 			isa = PBXGroup;
 			children = (
@@ -765,19 +798,8 @@
 				D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */,
 				CF436A242658C64200B69506 /* BlueTransitionPage1.swift */,
 				CF436A2226584E1800B69506 /* BlueTransitionPage.swift */,
-				D15CCD792648870500BFE179 /* PrizesDark.swift */,
 			);
 			path = BlueSinglePages;
-			sourceTree = "<group>";
-		};
-		CF436A2E265A0E9200B69506 /* BlueChat */ = {
-			isa = PBXGroup;
-			children = (
-				7A9A733E265744A900177652 /* BlueMessageRoomView.swift */,
-				CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */,
-				CF436A2F265A0FF400B69506 /* BlueSurvey.swift */,
-			);
-			path = BlueChat;
 			sourceTree = "<group>";
 		};
 		CF5263E1266761CC00243DD7 /* EditingChatFunctions */ = {
@@ -871,23 +893,6 @@
 				D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */,
 			);
 			path = ManageMyFriends;
-			sourceTree = "<group>";
-		};
-		D1E3CFDD26522ECB00A26779 /* Blue */ = {
-			isa = PBXGroup;
-			children = (
-				CF436A262658D66F00B69506 /* BlueModePages.swift */,
-				CF5263EF266A2B0D00243DD7 /* BlueHeartVid.swift */,
-			);
-			path = Blue;
-			sourceTree = "<group>";
-		};
-		D1E3CFE92656D2C900A26779 /* InfoPages */ = {
-			isa = PBXGroup;
-			children = (
-				D1D27D39264303E300BDA75F /* InfoPages.swift */,
-			);
-			path = InfoPages;
 			sourceTree = "<group>";
 		};
 		DBFB8C7AC87F4062BC821677 /* AmplifyModels */ = {
@@ -1072,7 +1077,6 @@
 				7AEEFDA126731AB2004A29A0 /* ManagementDocument+Schema.swift in Sources */,
 				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
-				D15CCD7A2648870500BFE179 /* PrizesDark.swift in Sources */,
 				7AAB444A265C619A00488983 /* ShakingCoolView.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */,

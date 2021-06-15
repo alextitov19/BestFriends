@@ -10,8 +10,9 @@ import Amplify
 
 struct PinView: View {
     
+  //  @State var title: String = "Enter your PIN"
     @State var title: String = "To Restore Chat Messages, Enter your PIN"
-   
+    
     @State var currentPin: String = ""
     
     var roomID: String
