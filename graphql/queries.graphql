@@ -11,6 +11,7 @@ query GetRoom($id: ID!) {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     createdAt
     updatedAt
@@ -33,6 +34,7 @@ query ListRooms(
         body
         creationDate
         attachmentPath
+        stickerNumber
       }
       createdAt
       updatedAt
@@ -51,6 +53,7 @@ query GetReportedMessage($id: ID!) {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     previousMessages {
       id
@@ -59,6 +62,7 @@ query GetReportedMessage($id: ID!) {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     createdAt
     updatedAt
@@ -80,6 +84,7 @@ query ListReportedMessages(
         body
         creationDate
         attachmentPath
+        stickerNumber
       }
       previousMessages {
         id
@@ -88,6 +93,7 @@ query ListReportedMessages(
         body
         creationDate
         attachmentPath
+        stickerNumber
       }
       createdAt
       updatedAt
@@ -117,6 +123,7 @@ query GetUser($id: ID!) {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     shakingCoolLinks
     tokens
@@ -153,6 +160,7 @@ query ListUsers(
         body
         creationDate
         attachmentPath
+        stickerNumber
       }
       shakingCoolLinks
       tokens

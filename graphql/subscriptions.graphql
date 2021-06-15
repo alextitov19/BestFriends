@@ -11,6 +11,7 @@ subscription OnCreateRoom {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     createdAt
     updatedAt
@@ -28,6 +29,7 @@ subscription OnUpdateRoom {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     createdAt
     updatedAt
@@ -45,6 +47,7 @@ subscription OnDeleteRoom {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     createdAt
     updatedAt
@@ -61,6 +64,7 @@ subscription OnCreateReportedMessage {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     previousMessages {
       id
@@ -69,6 +73,7 @@ subscription OnCreateReportedMessage {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     createdAt
     updatedAt
@@ -85,6 +90,7 @@ subscription OnUpdateReportedMessage {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     previousMessages {
       id
@@ -93,6 +99,7 @@ subscription OnUpdateReportedMessage {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     createdAt
     updatedAt
@@ -109,6 +116,7 @@ subscription OnDeleteReportedMessage {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     previousMessages {
       id
@@ -117,6 +125,7 @@ subscription OnDeleteReportedMessage {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     createdAt
     updatedAt
@@ -144,6 +153,7 @@ subscription OnCreateUser {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     shakingCoolLinks
     tokens
@@ -175,6 +185,7 @@ subscription OnUpdateUser {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     shakingCoolLinks
     tokens
@@ -206,6 +217,7 @@ subscription OnDeleteUser {
       body
       creationDate
       attachmentPath
+      stickerNumber
     }
     shakingCoolLinks
     tokens

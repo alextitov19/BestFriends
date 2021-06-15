@@ -206,11 +206,17 @@ struct MessageRoomView: View {
                                 ForEach(1...13, id: \.self) { i in
                                     HStack {
                                         ForEach(1...4, id: \.self) { j in
-                                            Image("Sticker\((4*(i-1))+j)")
+                                            let number = (4*(i-1))+j
+                                            Image("Sticker\(number)")
                                                 .resizable()
                                                 .frame(width: 65, height: 65)
                                                 .scaledToFit()
                                                 .padding()
+                                                .onTapGesture {
+                                                    let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "sticker", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
+                                                    
+                                                    messageDataSource.sendMessage(message: message)
+                                                }
                                         }
                                     }
                                 }

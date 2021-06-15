@@ -9,4 +9,5 @@ public struct Message: Embeddable {
   var body: String
   var creationDate: Int
   var attachmentPath: String?
+  var stickerNumber: Int?
 }
