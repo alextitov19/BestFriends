@@ -76,17 +76,24 @@ struct ChatBubble: View {
                     HStack {
                         Spacer()
                         
-                        Text(message.body)
-                            .padding(10)
-                            .multilineTextAlignment(.leading)
-                            .font(.system(size: 16).weight(.light))
-                            .foregroundColor(.white)
-                            .background(Color(.purple))
-                            .cornerRadius(15)
-                            .gesture(LongPressGesture(minimumDuration: 1)
-                            .onEnded { _ in
-                                showingActionSheet = true
-                            })
+                        if message.stickerNumber != nil {
+                            Image("Sticker\(message.stickerNumber!)")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                                .scaledToFit()
+                        } else {
+                            Text(message.body)
+                                .padding(10)
+                                .multilineTextAlignment(.leading)
+                                .font(.system(size: 16).weight(.light))
+                                .foregroundColor(.white)
+                                .background(Color(.purple))
+                                .cornerRadius(15)
+                                .gesture(LongPressGesture(minimumDuration: 1)
+                                .onEnded { _ in
+                                    showingActionSheet = true
+                                })
+                        }
                     }
                 }
                 .actionSheet(isPresented: $showingActionSheet) {
@@ -117,17 +124,24 @@ struct ChatBubble: View {
                     }
                     
                     HStack {
-                        Text(message.body)
-                            .padding(10)
-                            .multilineTextAlignment(.leading)
-                            .font(.system(size: 16).weight(.light))
-                            .foregroundColor(.white)
-                            .background(Color(.purple))
-                            .cornerRadius(15)
-                            .gesture(LongPressGesture(minimumDuration: 1)
-                            .onEnded { _ in
-                                showingActionSheet = true
-                            })
+                        if message.stickerNumber != nil {
+                            Image("Sticker\(message.stickerNumber!)")
+                                .resizable()
+                                .frame(width: 150, height: 150)
+                                .scaledToFit()
+                        } else {
+                            Text(message.body)
+                                .padding(10)
+                                .multilineTextAlignment(.leading)
+                                .font(.system(size: 16).weight(.light))
+                                .foregroundColor(.white)
+                                .background(Color(.purple))
+                                .cornerRadius(15)
+                                .gesture(LongPressGesture(minimumDuration: 1)
+                                .onEnded { _ in
+                                    showingActionSheet = true
+                                })
+                        }
                         
                         Spacer()
                     }
