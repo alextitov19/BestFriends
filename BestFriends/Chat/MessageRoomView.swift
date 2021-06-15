@@ -74,15 +74,13 @@ struct MessageRoomView: View {
                     showAd()
                 }
             
-            if areAdsHidden {
                 AdPlayerView(name: "first")
                     .ignoresSafeArea()
                     .isHidden(areAdsHidden)
-            } else {
-                AdPlayerView(name: adNames[currentAdIndex])
+            
+                AdPlayerView(name: "FieldFlowers")
                     .ignoresSafeArea()
-                    .isHidden(areAdsHidden)
-            }
+                    .isHidden(!areAdsHidden)
             
             VStack {
                 HStack { //header
