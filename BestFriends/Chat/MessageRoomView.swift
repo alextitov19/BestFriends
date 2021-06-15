@@ -197,8 +197,27 @@ struct MessageRoomView: View {
                     }
                 }
                 .popover(isPresented: $stickerPopoverShowing) {
-                            Text("Stickers")
+                    ZStack {
+                        Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+                            .ignoresSafeArea()
+                    
+                        ScrollView {
+                            VStack {
+                                ForEach(1...13, id: \.self) { i in
+                                    HStack {
+                                        ForEach(1...4, id: \.self) { j in
+                                            Image("Sticker\((4*(i-1))+j)")
+                                                .resizable()
+                                                .frame(width: 65, height: 65)
+                                                .scaledToFit()
+                                                .padding()
+                                        }
+                                    }
+                                }
+                            }
                         }
+                    }
+                }
                 
             }
             .navigationBarTitle("")
