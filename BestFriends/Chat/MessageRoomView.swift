@@ -78,7 +78,7 @@ struct MessageRoomView: View {
                     .ignoresSafeArea()
                     .isHidden(areAdsHidden)
             
-                AdPlayerView(name: "FieldFlowers")
+                AdPlayerView(name: "purpleChat")
                     .ignoresSafeArea()
                     .isHidden(!areAdsHidden)
             
