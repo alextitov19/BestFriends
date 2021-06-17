@@ -31,7 +31,15 @@ struct SettingsView: View {
                         .multilineTextAlignment(.center)
                         .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
-                    Spacer().frame(height: 60)
+                        Text("Because we can't wait until life isn't hard anymore to SMILE💕")
+                            .font(.system(size: 22))
+                            .italic()
+                            .fontWeight(.regular)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 365, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
+                    Spacer().frame(height: 40)
                    
                     
                     Text("BestFriend Demo & Setup")
