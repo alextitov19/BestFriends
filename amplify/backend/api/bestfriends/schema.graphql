@@ -12,6 +12,7 @@ type Message {
   body: String!
   creationDate: AWSTimestamp!
   attachmentPath: String
+  stickerNumber: Int
 }
 
 type ReportedMessage @model {

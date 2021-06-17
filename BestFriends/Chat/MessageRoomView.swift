@@ -28,6 +28,7 @@ struct MessageRoomView: View {
     @State var hasClickedLink = false
     @Environment(\.openURL) var openURL
     @State var adButtonsHidden = true
+    @State var roomname = ""
     
     var adIDs: [String] = []
     var adNames: [String] = []
@@ -58,6 +59,8 @@ struct MessageRoomView: View {
         }
         print("Count of ids: \(adIDs.count), count of names: \(adNames.count)")
         
+        roomname = room.name
+        
     }
     
     @State var currentBody: String = ""
@@ -74,15 +77,13 @@ struct MessageRoomView: View {
                     showAd()
                 }
             
-            if areAdsHidden {
                 AdPlayerView(name: "first")
                     .ignoresSafeArea()
                     .isHidden(areAdsHidden)
-            } else {
-                AdPlayerView(name: adNames[currentAdIndex])
+            
+                AdPlayerView(name: "purpleChat")
                     .ignoresSafeArea()
-                    .isHidden(areAdsHidden)
-            }
+                    .isHidden(!areAdsHidden)
             
             VStack {
                 HStack { //header
@@ -96,13 +97,15 @@ struct MessageRoomView: View {
                     
                     Spacer()
                     
-                    Button(action: {
-                        
-                    }) {
-                        Text(room.name)
-                            .font(.system(size: 30).bold())
-                            .foregroundColor(.white)
+                   
+                    TextField(room.name, text: $roomname) { changed in
+                        print("Editing...")
+                    } onCommit: {
+                        print("Uploading new name...")
+                        RoomDataSource().updateRoomName(room: room, name: roomname)
                     }
+
+                            
                     
                     Spacer()
                     
@@ -197,8 +200,33 @@ struct MessageRoomView: View {
                     }
                 }
                 .popover(isPresented: $stickerPopoverShowing) {
-                            Text("Stickers")
+                    ZStack {
+                        Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+                            .ignoresSafeArea()
+                    
+                        ScrollView {
+                            VStack {
+                                ForEach(1...13, id: \.self) { i in
+                                    HStack {
+                                        ForEach(1...4, id: \.self) { j in
+                                            let number = (4*(i-1))+j
+                                            Image("Sticker\(number)")
+                                                .resizable()
+                                                .frame(width: 65, height: 65)
+                                                .scaledToFit()
+                                                .padding()
+                                                .onTapGesture {
+                                                    let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "sticker", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
+                                                    
+                                                    messageDataSource.sendMessage(message: message)
+                                                }
+                                        }
+                                    }
+                                }
+                            }
                         }
+                    }
+                }
                 
             }
             .navigationBarTitle("")

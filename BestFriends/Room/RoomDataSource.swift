@@ -60,6 +60,24 @@ class RoomDataSource: ObservableObject {
         }
                 
     }
+    
+    func updateRoomName(room: Room, name: String) {
+        var newroom = room
+        newroom.name = name
+        Amplify.API.mutate(request: .update(newroom)) { event in  //update room
+                switch event {
+                case .success(let result):
+                    switch result {
+                    case .success(let room):
+                        print("Successfully updated room: \(newroom)")
+                    case .failure(let error):
+                        print("Got failed result with \(error.errorDescription)")
+                    }
+                case .failure(let error):
+                    print("Got failed event with error \(error)")
+                }
+            }
+    }
 
 
 //    func delete(_ message: Message) {
