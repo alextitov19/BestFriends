@@ -29,15 +29,15 @@ struct SettingsView: View {
                         .fontWeight(.ultraLight)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
-                        Text("Because we can't wait until life isn't hard anymore to SMILE💕")
+                        Text("BestFriends: Because we can't wait until life isn't hard anymore to SMILE💕")
                             .font(.system(size: 22))
                             .italic()
                             .fontWeight(.regular)
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
-                            .frame(width: 365, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                     Spacer().frame(height: 40)
                    
