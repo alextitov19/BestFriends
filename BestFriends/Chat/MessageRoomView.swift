@@ -59,7 +59,6 @@ struct MessageRoomView: View {
         }
         print("Count of ids: \(adIDs.count), count of names: \(adNames.count)")
         
-        roomname = room.name
         
     }
     
@@ -97,13 +96,27 @@ struct MessageRoomView: View {
                     
                     Spacer()
                     
-                   
-                    TextField(room.name, text: $roomname) { changed in
-                        print("Editing...")
-                    } onCommit: {
-                        print("Uploading new name...")
-                        RoomDataSource().updateRoomName(room: room, name: roomname)
+                    ZStack {
+                        if roomname == "" {
+                            Text(room.name)
+                            .font(.system(size: 40))
+                            .foregroundColor(.white)
+                        } else {
+                            Text(roomname)
+                            .font(.system(size: 40))
+                            .foregroundColor(.white)
+                        }
+                        
+                        TextField("", text: $roomname) { changed in
+                            print("Editing...")
+                        } onCommit: {
+                            print("Uploading new name...")
+                            RoomDataSource().updateRoomName(room: room, name: roomname)
+                        }
+                        .foregroundColor(.clear)
+                        .background(Color(.clear))
                     }
+                   
 
                             
                     
