@@ -24,7 +24,7 @@ struct SettingsView: View {
                 VStack {
                     ScrollView {
 
-                    Text("Settings, Demos & Customizations")
+                    Text("Settings")
                         .font(.system(size: 50))
                         .fontWeight(.ultraLight)
                         .foregroundColor(.white)
