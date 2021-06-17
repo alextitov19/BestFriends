@@ -115,6 +115,7 @@ struct MessageRoomView: View {
                         }
                         .foregroundColor(.clear)
                         .background(Color(.clear))
+                        .frame(width:200)
                     }
                    
 
