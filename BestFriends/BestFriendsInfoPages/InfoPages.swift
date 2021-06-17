@@ -23,7 +23,7 @@ struct InfoViewPage1: View {
             VStack {
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 10)
                 
                 Text("Welcome to")
                      .italic() .italic()
@@ -42,8 +42,7 @@ struct InfoViewPage1: View {
                      .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                      .multilineTextAlignment(.center)
                      .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                Spacer()
-                    .frame(height: 20)
+              
                 
                 Text("the 'positivity' app")
                     .font(.system(size: 30))
@@ -54,12 +53,25 @@ struct InfoViewPage1: View {
                 
                 
                 Spacer()
+                    .frame(height: 30)
+                
+                
+                Text("Because we can't wait until life isn't hard anymore to SMILE💕")
+                    .font(.system(size: 30))
+                     .fontWeight(.regular)
+                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                     .multilineTextAlignment(.center)
+                     .frame(width: 275, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                
+                
+                Spacer()
                     .frame(height: 225)
                 
                 VStack {
                 
                     NavigationLink(destination: InfoViewPage2()) {
-                                        Text("Show me BestFriends")
+                                        Text("Find my SMILES >>>")
                                             .font(.title)
                                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                             .frame(width: 400, height: 50)
