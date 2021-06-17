@@ -4,7 +4,7 @@
 //
 //  Created by Social Tech on 5/22/21.
 //
-
+import Foundation
 import Amplify
 import SwiftUI
 import AVKit

@@ -4,7 +4,7 @@
 //
 //  Created by Alex Titov on 5/4/21.
 //
-
+import Foundation
 import SwiftUI
 
 struct SettingsView: View {
