@@ -28,6 +28,7 @@ struct MessageRoomView: View {
     @State var hasClickedLink = false
     @Environment(\.openURL) var openURL
     @State var adButtonsHidden = true
+    @State var roomname = ""
     
     var adIDs: [String] = []
     var adNames: [String] = []
@@ -57,6 +58,8 @@ struct MessageRoomView: View {
             self.adNames.append(adDataSource.getAd(id: id).videoName)
         }
         print("Count of ids: \(adIDs.count), count of names: \(adNames.count)")
+        
+        roomname = room.name
         
     }
     
@@ -94,13 +97,15 @@ struct MessageRoomView: View {
                     
                     Spacer()
                     
-                    Button(action: {
-                        
-                    }) {
-                        Text(room.name)
-                            .font(.system(size: 30).bold())
-                            .foregroundColor(.white)
+                   
+                    TextField(room.name, text: $roomname) { changed in
+                        print("Editing...")
+                    } onCommit: {
+                        print("Uploading new name...")
+                        RoomDataSource().updateRoomName(room: room, name: roomname)
                     }
+
+                            
                     
                     Spacer()
                     
