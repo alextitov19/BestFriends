@@ -324,12 +324,12 @@ struct LandingView: View {
     
     private func inviteSelectedFriends() {
         if friendIDsToInvite != [] {
+            guard let myID = Amplify.Auth.getCurrentUser()?.username else { return }
+            friendIDsToInvite.append(myID)
             print("Inviting selected friends: ", friendIDsToInvite)
-            
-            let room = Room(name: "Chat Room", members: friendNamesToInvite, blueMode: false)
+            let room = Room(name: "Chat Room", members: friendIDsToInvite, blueMode: false)
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
-            guard let myID = Amplify.Auth.getCurrentUser()?.username else { return }
             UserDataSource().addRoom(userID: myID, roomID: room.id)
             for id in friendIDsToInvite {
                 UserDataSource().addRoom(userID: id, roomID: room.id)

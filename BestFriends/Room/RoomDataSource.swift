@@ -87,12 +87,12 @@ class RoomDataSource: ObservableObject {
             newroom.lastSeenByMember2 = Int(Date().timeIntervalSince1970)
         }
         
-        Amplify.API.mutate(request: .update(room)) { event in  //update room
+        Amplify.API.mutate(request: .update(newroom)) { event in  //update room
                 switch event {
                 case .success(let result):
                     switch result {
-                    case .success(let room):
-                        print("Successfully updated room: \(room)")
+                    case .success(let newroom):
+                        print("Successfully updated room: \(newroom)")
                     case .failure(let error):
                         print("Got failed result with \(error.errorDescription)")
                     }
