@@ -44,7 +44,7 @@ struct RoomRow: View {
             }
             .overlay(
                         RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.white, lineWidth: 2)
+                            .stroke(room.blueMode == true ? Color.blue : Color.white, lineWidth: 2)
                     )
             
             Spacer().frame(width: 10)
