@@ -39,6 +39,7 @@ struct MessageRoomView: View {
     
     var user: User
     var room: Room
+    var lastRead: Int?
     
     var timer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
 
@@ -60,13 +61,14 @@ struct MessageRoomView: View {
         print("Count of ids: \(adIDs.count), count of names: \(adNames.count)")
         
         
-        
         if room.blueMode == true {
             
             if room.members[0] == Amplify.Auth.getCurrentUser()!.username {
                 RoomDataSource().updateRoomTime(room: room, isMember1: true)
+                lastRead = room.lastSeenByMember2
             } else {
                 RoomDataSource().updateRoomTime(room: room, isMember1: false)
+                lastRead = room.lastSeenByMember1
             }
         }
         

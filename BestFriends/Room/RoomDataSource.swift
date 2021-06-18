@@ -82,9 +82,9 @@ class RoomDataSource: ObservableObject {
     func updateRoomTime(room: Room, isMember1: Bool) {
         var newroom = room
         if isMember1 {
-            newroom.lastReadByMember1 = Int(Date().timeIntervalSince1970)
+            newroom.lastSeenByMember1 = Int(Date().timeIntervalSince1970)
         } else {
-            newroom.lastReadByMember2 = Int(Date().timeIntervalSince1970)
+            newroom.lastSeenByMember2 = Int(Date().timeIntervalSince1970)
         }
         
         Amplify.API.mutate(request: .update(room)) { event in  //update room
