@@ -631,6 +631,7 @@
 				CF356D4426774C2E00BCF572 /* BlueModeInfoPages */,
 				CF356D4326774BF500BCF572 /* BlueModeChat */,
 				CF356D4126774A4700BCF572 /* BlueChatVideos */,
+				D15777B22650522200B6551A /* Gestures */,
 				D1577799264D082800B6551A /* SmileNotes */,
 				7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
@@ -706,7 +707,6 @@
 			isa = PBXGroup;
 			children = (
 				7AB62A8426426F86005A7744 /* SettingsView.swift */,
-				D15777B22650522200B6551A /* Gestures */,
 				CF356D1A2671FE2100BCF572 /* Tokens */,
 				CF5263E1266761CC00243DD7 /* EditingChatFunctions */,
 				D15CCD6526473E6700BFE179 /* MyAccount */,
@@ -799,8 +799,8 @@
 		CF356D4326774BF500BCF572 /* BlueModeChat */ = {
 			isa = PBXGroup;
 			children = (
-				7A9A733E265744A900177652 /* BlueMessageRoomView.swift */,
 				CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */,
+				7A9A733E265744A900177652 /* BlueMessageRoomView.swift */,
 			);
 			path = BlueModeChat;
 			sourceTree = "<group>";
