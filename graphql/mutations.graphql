@@ -15,9 +15,10 @@ mutation CreateRoom(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     blueMode
+    lastSeenByMember1
+    lastSeenByMember2
     createdAt
     updatedAt
   }
@@ -38,9 +39,10 @@ mutation UpdateRoom(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     blueMode
+    lastSeenByMember1
+    lastSeenByMember2
     createdAt
     updatedAt
   }
@@ -61,9 +63,10 @@ mutation DeleteRoom(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     blueMode
+    lastSeenByMember1
+    lastSeenByMember2
     createdAt
     updatedAt
   }
@@ -83,7 +86,6 @@ mutation CreateReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     previousMessages {
       id
@@ -93,7 +95,6 @@ mutation CreateReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     createdAt
     updatedAt
@@ -114,7 +115,6 @@ mutation UpdateReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     previousMessages {
       id
@@ -124,7 +124,6 @@ mutation UpdateReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     createdAt
     updatedAt
@@ -145,7 +144,6 @@ mutation DeleteReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     previousMessages {
       id
@@ -155,7 +153,6 @@ mutation DeleteReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     createdAt
     updatedAt
@@ -187,7 +184,6 @@ mutation CreateUser(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     shakingCoolLinks
     tokens
@@ -224,7 +220,6 @@ mutation UpdateUser(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     shakingCoolLinks
     tokens
@@ -261,7 +256,6 @@ mutation DeleteUser(
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     shakingCoolLinks
     tokens

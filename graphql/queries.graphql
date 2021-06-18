@@ -12,9 +12,10 @@ query GetRoom($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     blueMode
+    lastSeenByMember1
+    lastSeenByMember2
     createdAt
     updatedAt
   }
@@ -37,9 +38,10 @@ query ListRooms(
         creationDate
         attachmentPath
         stickerNumber
-        lastRead
       }
       blueMode
+      lastSeenByMember1
+      lastSeenByMember2
       createdAt
       updatedAt
     }
@@ -58,7 +60,6 @@ query GetReportedMessage($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     previousMessages {
       id
@@ -68,7 +69,6 @@ query GetReportedMessage($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     createdAt
     updatedAt
@@ -91,7 +91,6 @@ query ListReportedMessages(
         creationDate
         attachmentPath
         stickerNumber
-        lastRead
       }
       previousMessages {
         id
@@ -101,7 +100,6 @@ query ListReportedMessages(
         creationDate
         attachmentPath
         stickerNumber
-        lastRead
       }
       createdAt
       updatedAt
@@ -132,7 +130,6 @@ query GetUser($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
-      lastRead
     }
     shakingCoolLinks
     tokens
@@ -171,7 +168,6 @@ query ListUsers(
         creationDate
         attachmentPath
         stickerNumber
-        lastRead
       }
       shakingCoolLinks
       tokens

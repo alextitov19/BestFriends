@@ -176,77 +176,94 @@ struct MessageRoomView: View {
                 
                 
                 Spacer().frame(height: 30)
-                
-                HStack { //footer
-                    Button(action: {
-                        showingImagePicker = true
-                    }) {
-                        Image("camera")
-                            .resizable()
-                            .frame(width: 30, height: 30)
+                VStack {
+                    if lastRead != nil {
+                        HStack {
+                            Image("whiteEye")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                            
+                            Text(String(lastRead!))
+                                .foregroundColor(.white)
+                                .font(.system(size: 16))
+                            
+                            Spacer()
+                        }
                     }
-                    
-                    Button(action: {
-                        stickerPopoverShowing = true
-                    }) {
-                        Image("stickerWhite")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                    }
-                    
-                    TextField("Message...", text: $currentBody)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .frame(maxWidth: 270)
-                        .background(Color(#colorLiteral(red: 0.4884749055, green: 0.2207083404, blue: 0.971470058, alpha: 0.3971501029)))
-                        .cornerRadius(15)
-                        .padding(10)
-                    
-                    Button(action: {
-                        let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
                         
-                        messageDataSource.sendMessage(message: message)
-                    }) {
-                        Image("arrow")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                    }
                     
-                }
-                .padding()
-                .offset(y: -self.offset)
-                .animation(.spring())
-                .onAppear {
-                    NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { (noti) in
-                        let value = noti.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
-                        let height = value.height
-                        self.offset = height/4
+                    HStack { //footer
+                        Button(action: {
+                            showingImagePicker = true
+                        }) {
+                            Image("camera")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                        }
+                        
+                        Button(action: {
+                            stickerPopoverShowing = true
+                        }) {
+                            Image("stickerWhite")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                        }
+                        
+                        TextField("Message...", text: $currentBody)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .frame(maxWidth: 270)
+                            .background(Color(#colorLiteral(red: 0.4884749055, green: 0.2207083404, blue: 0.971470058, alpha: 0.3971501029)))
+                            .cornerRadius(15)
+                            .padding(10)
+                        
+                        Button(action: {
+                            let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
+                            
+                            messageDataSource.sendMessage(message: message)
+                        }) {
+                            Image("arrow")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                        }
+                        
                     }
-                    
-                    NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { (noti) in
-                        self.offset = 0
+                    .padding()
+                    .offset(y: -self.offset)
+                    .animation(.spring())
+                    .onAppear {
+                        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { (noti) in
+                            let value = noti.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
+                            let height = value.height
+                            self.offset = height/4
+                        }
+                        
+                        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { (noti) in
+                            self.offset = 0
+                        }
                     }
-                }
-                .popover(isPresented: $stickerPopoverShowing) {
-                    ZStack {
-                        Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
-                            .ignoresSafeArea()
-                    
-                        ScrollView {
-                            VStack {
-                                ForEach(1...13, id: \.self) { i in
-                                    HStack {
-                                        ForEach(1...4, id: \.self) { j in
-                                            let number = (4*(i-1))+j
-                                            Image("Sticker\(number)")
-                                                .resizable()
-                                                .frame(width: 65, height: 65)
-                                                .scaledToFit()
-                                                .padding()
-                                                .onTapGesture {
-                                                    let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "sticker", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
-                                                    
-                                                    messageDataSource.sendMessage(message: message)
-                                                }
+                    .popover(isPresented: $stickerPopoverShowing) {
+                        ZStack {
+                            Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+                                .ignoresSafeArea()
+                        
+                            ScrollView {
+                                VStack {
+                                    ForEach(1...13, id: \.self) { i in
+                                        HStack {
+                                            ForEach(1...4, id: \.self) { j in
+                                                let number = (4*(i-1))+j
+                                                Image("Sticker\(number)")
+                                                    .resizable()
+                                                    .frame(width: 65, height: 65)
+                                                    .scaledToFit()
+                                                    .padding()
+                                                    .onTapGesture {
+                                                        let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "sticker", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
+                                                        
+                                                        messageDataSource.sendMessage(message: message)
+                                                    }
+                                            }
                                         }
                                     }
                                 }
