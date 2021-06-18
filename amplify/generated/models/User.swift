@@ -21,6 +21,7 @@ public struct User: Model {
   public var tokens: Int
   public var background: Int
   public var unlockedStickers: [Int]?
+  public var blueMode: Bool
   
   public init(id: String = UUID().uuidString,
       firstName: String,
@@ -39,7 +40,8 @@ public struct User: Model {
       shakingCoolLinks: [String]? = [],
       tokens: Int,
       background: Int,
-      unlockedStickers: [Int]? = []) {
+      unlockedStickers: [Int]? = [],
+      blueMode: Bool) {
       self.id = id
       self.firstName = firstName
       self.lastName = lastName
@@ -58,5 +60,6 @@ public struct User: Model {
       self.tokens = tokens
       self.background = background
       self.unlockedStickers = unlockedStickers
+      self.blueMode = blueMode
   }
 }

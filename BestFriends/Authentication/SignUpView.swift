@@ -1308,7 +1308,8 @@ struct SignUpQuestionPage3: View {
                         isOnline: true,
                         secretPin: currentPin,
                         tokens: 0,
-                        background: 1)
+                        background: 1,
+                        blueMode: false)
                     
                     userMamager.create(user)
                     

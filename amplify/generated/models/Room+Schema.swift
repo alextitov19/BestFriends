@@ -9,6 +9,7 @@ extension Room {
     case name
     case members
     case messages
+    case blueMode
   }
   
   public static let keys = CodingKeys.self
@@ -23,7 +24,8 @@ extension Room {
       .id(),
       .field(room.name, is: .required, ofType: .string),
       .field(room.members, is: .required, ofType: .embeddedCollection(of: String.self)),
-      .field(room.messages, is: .required, ofType: .embeddedCollection(of: Message.self))
+      .field(room.messages, is: .required, ofType: .embeddedCollection(of: Message.self)),
+      .field(room.blueMode, is: .required, ofType: .bool)
     )
     }
 }

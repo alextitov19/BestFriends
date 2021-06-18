@@ -54,6 +54,6 @@ struct RoomRow: View {
 
 struct RoomsRow_Previews : PreviewProvider {
     static var previews: some View {
-        RoomRow(room: Room(id: "", name: "Friends", members: ["", ""], messages: [Message(id: "", senderName: "", senderID: "", body: "Hello friends how are yall doing?", creationDate: Int(Date().timeIntervalSinceNow), attachmentPath: "")]))
+        RoomRow(room: Room(id: "", name: "Friends", members: ["", ""], messages: [Message(id: "", senderName: "", senderID: "", body: "Hello friends how are yall doing?", creationDate: Int(Date().timeIntervalSinceNow), attachmentPath: "")], blueMode: false))
     }
 }
