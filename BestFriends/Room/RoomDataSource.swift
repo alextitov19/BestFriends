@@ -78,6 +78,29 @@ class RoomDataSource: ObservableObject {
                 }
             }
     }
+    
+    func updateRoomTime(room: Room, isMember1: Bool) {
+        var newroom = room
+        if isMember1 {
+            newroom.lastReadByMember1 = Int(Date().timeIntervalSince1970)
+        } else {
+            newroom.lastReadByMember2 = Int(Date().timeIntervalSince1970)
+        }
+        
+        Amplify.API.mutate(request: .update(room)) { event in  //update room
+                switch event {
+                case .success(let result):
+                    switch result {
+                    case .success(let room):
+                        print("Successfully updated room: \(room)")
+                    case .failure(let error):
+                        print("Got failed result with \(error.errorDescription)")
+                    }
+                case .failure(let error):
+                    print("Got failed event with error \(error)")
+                }
+            }
+    }
 
 
 //    func delete(_ message: Message) {

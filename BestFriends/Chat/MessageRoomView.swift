@@ -60,6 +60,17 @@ struct MessageRoomView: View {
         print("Count of ids: \(adIDs.count), count of names: \(adNames.count)")
         
         
+        
+        if room.blueMode == true {
+            
+            if room.members[0] == Amplify.Auth.getCurrentUser()!.username {
+                RoomDataSource().updateRoomTime(room: room, isMember1: true)
+            } else {
+                RoomDataSource().updateRoomTime(room: room, isMember1: false)
+            }
+        }
+        
+        
     }
     
     @State var currentBody: String = ""

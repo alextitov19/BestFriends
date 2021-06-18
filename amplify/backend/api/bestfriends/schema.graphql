@@ -14,7 +14,7 @@ type Message {
   creationDate: AWSTimestamp!
   attachmentPath: String
   stickerNumber: Int
-  timestamp: AWSTimestamp
+  lastRead: AWSTimestamp
 }
 
 type ReportedMessage @model {

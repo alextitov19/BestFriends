@@ -12,7 +12,7 @@ extension Message {
     case creationDate
     case attachmentPath
     case stickerNumber
-    case timestamp
+    case lastRead
   }
   
   public static let keys = CodingKeys.self
@@ -31,7 +31,7 @@ extension Message {
       .field(message.creationDate, is: .required, ofType: .int),
       .field(message.attachmentPath, is: .optional, ofType: .string),
       .field(message.stickerNumber, is: .optional, ofType: .int),
-      .field(message.timestamp, is: .optional, ofType: .int)
+      .field(message.lastRead, is: .optional, ofType: .int)
     )
     }
 }
