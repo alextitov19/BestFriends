@@ -12,7 +12,9 @@ query GetRoom($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
+    blueMode
     createdAt
     updatedAt
   }
@@ -35,7 +37,9 @@ query ListRooms(
         creationDate
         attachmentPath
         stickerNumber
+        timestamp
       }
+      blueMode
       createdAt
       updatedAt
     }
@@ -54,6 +58,7 @@ query GetReportedMessage($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     previousMessages {
       id
@@ -63,6 +68,7 @@ query GetReportedMessage($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     createdAt
     updatedAt
@@ -85,6 +91,7 @@ query ListReportedMessages(
         creationDate
         attachmentPath
         stickerNumber
+        timestamp
       }
       previousMessages {
         id
@@ -94,6 +101,7 @@ query ListReportedMessages(
         creationDate
         attachmentPath
         stickerNumber
+        timestamp
       }
       createdAt
       updatedAt
@@ -124,11 +132,13 @@ query GetUser($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     shakingCoolLinks
     tokens
     background
     unlockedStickers
+    blueMode
     createdAt
     updatedAt
   }
@@ -161,11 +171,13 @@ query ListUsers(
         creationDate
         attachmentPath
         stickerNumber
+        timestamp
       }
       shakingCoolLinks
       tokens
       background
       unlockedStickers
+      blueMode
       createdAt
       updatedAt
     }

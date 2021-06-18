@@ -12,7 +12,9 @@ subscription OnCreateRoom {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
+    blueMode
     createdAt
     updatedAt
   }
@@ -30,7 +32,9 @@ subscription OnUpdateRoom {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
+    blueMode
     createdAt
     updatedAt
   }
@@ -48,7 +52,9 @@ subscription OnDeleteRoom {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
+    blueMode
     createdAt
     updatedAt
   }
@@ -65,6 +71,7 @@ subscription OnCreateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     previousMessages {
       id
@@ -74,6 +81,7 @@ subscription OnCreateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     createdAt
     updatedAt
@@ -91,6 +99,7 @@ subscription OnUpdateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     previousMessages {
       id
@@ -100,6 +109,7 @@ subscription OnUpdateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     createdAt
     updatedAt
@@ -117,6 +127,7 @@ subscription OnDeleteReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     previousMessages {
       id
@@ -126,6 +137,7 @@ subscription OnDeleteReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     createdAt
     updatedAt
@@ -154,11 +166,13 @@ subscription OnCreateUser {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     shakingCoolLinks
     tokens
     background
     unlockedStickers
+    blueMode
     createdAt
     updatedAt
   }
@@ -186,11 +200,13 @@ subscription OnUpdateUser {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     shakingCoolLinks
     tokens
     background
     unlockedStickers
+    blueMode
     createdAt
     updatedAt
   }
@@ -218,11 +234,13 @@ subscription OnDeleteUser {
       creationDate
       attachmentPath
       stickerNumber
+      timestamp
     }
     shakingCoolLinks
     tokens
     background
     unlockedStickers
+    blueMode
     createdAt
     updatedAt
   }
