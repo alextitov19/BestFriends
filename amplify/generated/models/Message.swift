@@ -10,5 +10,4 @@ public struct Message: Embeddable {
   var creationDate: Int
   var attachmentPath: String?
   var stickerNumber: Int?
-  var lastRead: Int?
 }

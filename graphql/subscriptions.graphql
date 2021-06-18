@@ -12,10 +12,9 @@ subscription OnCreateRoom {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     blueMode
-    lastReadByMember1
-    lastReadByMember2
     createdAt
     updatedAt
   }
@@ -33,10 +32,9 @@ subscription OnUpdateRoom {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     blueMode
-    lastReadByMember1
-    lastReadByMember2
     createdAt
     updatedAt
   }
@@ -54,10 +52,9 @@ subscription OnDeleteRoom {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     blueMode
-    lastReadByMember1
-    lastReadByMember2
     createdAt
     updatedAt
   }
@@ -74,6 +71,7 @@ subscription OnCreateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     previousMessages {
       id
@@ -83,6 +81,7 @@ subscription OnCreateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     createdAt
     updatedAt
@@ -100,6 +99,7 @@ subscription OnUpdateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     previousMessages {
       id
@@ -109,6 +109,7 @@ subscription OnUpdateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     createdAt
     updatedAt
@@ -126,6 +127,7 @@ subscription OnDeleteReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     previousMessages {
       id
@@ -135,6 +137,7 @@ subscription OnDeleteReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     createdAt
     updatedAt
@@ -163,6 +166,7 @@ subscription OnCreateUser {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     shakingCoolLinks
     tokens
@@ -196,6 +200,7 @@ subscription OnUpdateUser {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     shakingCoolLinks
     tokens
@@ -229,6 +234,7 @@ subscription OnDeleteUser {
       creationDate
       attachmentPath
       stickerNumber
+      lastRead
     }
     shakingCoolLinks
     tokens

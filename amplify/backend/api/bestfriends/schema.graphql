@@ -4,6 +4,8 @@ type Room @model {
   members: [String!]!
   messages: [Message!]
   blueMode: Boolean!
+  lastSeenByMember1: AWSTimestamp
+  lastSeenByMember2: AWSTimestamp
 }
 
 type Message {
@@ -14,7 +16,6 @@ type Message {
   creationDate: AWSTimestamp!
   attachmentPath: String
   stickerNumber: Int
-  lastRead: AWSTimestamp
 }
 
 type ReportedMessage @model {
