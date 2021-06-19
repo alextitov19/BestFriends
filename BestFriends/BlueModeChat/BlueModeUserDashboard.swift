@@ -35,7 +35,7 @@ struct BlueModeUserDashboard: View {
                         Text("Dashboard")
                             .font(.system(size: 50))
                             .fontWeight(.ultraLight)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                             .multilineTextAlignment(.center)
                             .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
@@ -190,7 +190,7 @@ struct BlueModeUserDashboard: View {
                                     Text("Not knowing if your messages are read or not, SUCKS!")
                                         .font(.system(size: 40))
                                         .fontWeight(.ultraLight)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                                         .multilineTextAlignment(.center)
                                         .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     
