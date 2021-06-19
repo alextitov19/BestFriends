@@ -16,6 +16,7 @@ enum AppState {
     case rooms
     case settings
     case smileNotes
+    case chat(room: Room)
 }
 
 final class SessionManager: ObservableObject {
@@ -31,6 +32,10 @@ final class SessionManager: ObservableObject {
     
     func showRooms() {
         appState = .rooms
+    }
+    
+    func chat(room: Room) {
+        appState = .chat(room: room)
     }
     
     func showSettings() {

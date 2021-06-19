@@ -45,6 +45,9 @@ struct BestFriendsApp: App {
             case .settings:
                 SettingsView()
                     .environmentObject(sessionManager)
+            case .chat(let room):
+                MessageRoomView(room: room)
+                    .environmentObject(sessionManager)
                 
             }
             
