@@ -156,7 +156,6 @@
 		78F9D5FE5DD3051379CAC40E /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */; };
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
-		7A1DBD5F26599BB600EB4B42 /* SmileNotesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD5E26599BB600EB4B42 /* SmileNotesCard.swift */; };
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
 		7A383FF9267AC306002F354A /* BlueHeartVid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263FD266F202400243DD7 /* BlueHeartVid.mp4 */; };
@@ -329,6 +328,7 @@
 		CA909277B750EED5E379C48D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		CABEC851257D408360ADBACC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D64405355643289A8035B8 /* Message.swift */; };
 		CB96B1E180F3CE953BF0D177 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
+		CF30FF91267E9066000B2730 /* SmileNotesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30FF90267E9066000B2730 /* SmileNotesCard.swift */; };
 		CF356D1C2671FE4900BCF572 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1B2671FE4900BCF572 /* Tokens.swift */; };
 		CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */; };
 		CF356D24267395B900BCF572 /* SplashScreenVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D23267395B900BCF572 /* SplashScreenVid.swift */; };
@@ -440,7 +440,6 @@
 		762CEB4FA7014E308E51B33B /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
 		7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
-		7A1DBD5E26599BB600EB4B42 /* SmileNotesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesCard.swift; sourceTree = "<group>"; };
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
 		7A383FEE267AC235002F354A /* blueChat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueChat.mp4; sourceTree = "<group>"; };
@@ -510,6 +509,7 @@
 		A22146DA7D2C4FF68985049A /* Room.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = Room.swift; path = amplify/generated/models/Room.swift; sourceTree = "<group>"; };
 		C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		CF30FF90267E9066000B2730 /* SmileNotesCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SmileNotesCard.swift; path = ../../../../../.Trash/SmileNotesCard.swift; sourceTree = "<group>"; };
 		CF356D1B2671FE4900BCF572 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreLoad.swift; sourceTree = "<group>"; };
 		CF356D23267395B900BCF572 /* SplashScreenVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVid.swift; sourceTree = "<group>"; };
@@ -916,8 +916,8 @@
 			isa = PBXGroup;
 			children = (
 				D157779A264D086000B6551A /* SmileNotesView.swift */,
-				7A1DBD5E26599BB600EB4B42 /* SmileNotesCard.swift */,
 				7AC8564126585CD20045D145 /* LiquidSwipe.swift */,
+				CF30FF90267E9066000B2730 /* SmileNotesCard.swift */,
 			);
 			path = SmileNotes;
 			sourceTree = "<group>";
@@ -1210,7 +1210,6 @@
 				E651934A8005549C6B9ECC28 /* Message+Schema.swift in Sources */,
 				77FC07C16E388B9965B5EC17 /* Room.swift in Sources */,
 				65A53B669FCD9653F5AD90CA /* AmplifyModels.swift in Sources */,
-				7A1DBD5F26599BB600EB4B42 /* SmileNotesCard.swift in Sources */,
 				50CB6AE5A0477FF85FEF0B97 /* Message.swift in Sources */,
 				7C378F2D8EE76AAEC4410FDA /* Room+Schema.swift in Sources */,
 				BC9C960C84181F2B3FE2B5E4 /* Room.swift in Sources */,
@@ -1278,6 +1277,7 @@
 				937B3A060884FD3387D7DE64 /* User+Schema.swift in Sources */,
 				D201C6D8515541F50AD3C719 /* User.swift in Sources */,
 				022365EEE0F8A028BE2E2A3F /* Message+Schema.swift in Sources */,
+				CF30FF91267E9066000B2730 /* SmileNotesCard.swift in Sources */,
 				A5B2804ED2A42A48A58E5076 /* Message.swift in Sources */,
 				1D37B58C1F0D89EA1794C0EF /* ReportedMessage+Schema.swift in Sources */,
 				46527AC65BCAE963361E00F0 /* ReportedMessage.swift in Sources */,
