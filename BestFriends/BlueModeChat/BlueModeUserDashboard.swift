@@ -27,7 +27,7 @@ struct BlueModeUserDashboard: View {
                     Text("BlueMode")
                         .font(.system(size: 50))
                         .fontWeight(.ultraLight)
-                        .foregroundColor(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)))
                         .multilineTextAlignment(.center)
                         .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
@@ -60,12 +60,12 @@ struct BlueModeUserDashboard: View {
                           
                                 
                             Text("Helping pull the two of you from this wreckage before your hearts become forever dented!")
-                                .frame(width: 375, height: 150, alignment: .center)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                               // .font(.title)
-                                .font(.system(size: 20))
+                                .italic()
+                                .font(.system(size: 25))
+                                .fontWeight(.regular)
+                                .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                                 .multilineTextAlignment(.center)
-                                .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 350, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             
                             Link("Fight w/ Best Friend - what to ask them?", destination: URL(string: "https://socialtechlabs.com/darkmode/")!)
@@ -103,7 +103,7 @@ struct BlueModeUserDashboard: View {
                     
                           
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 30)
                             
                             NavigationLink(
                                 destination: SettingsView(),
@@ -190,7 +190,7 @@ struct BlueModeUserDashboard: View {
                                     Text("Not knowing if your messages are read or not, SUCKS!")
                                         .font(.system(size: 40))
                                         .fontWeight(.ultraLight)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
                                         .multilineTextAlignment(.center)
                                         .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     
@@ -218,7 +218,7 @@ struct BlueModeUserDashboard: View {
                                     NavigationLink(
                                         destination: ShakingCoolView(),
                                         label: {
-                                        Text("We 'time-stamp' when your messages are read - just so you know.")
+                                        Text("We 'time-stamp' when your messages are read - removing the uncertianty.")
                                             .frame(width: 350, height: 175, alignment: .center)
                                             .font(.system(size: 27)) })
                                         .frame(width: 400, height: 140)
@@ -232,12 +232,12 @@ struct BlueModeUserDashboard: View {
                                         .frame(height: 70)
                                     
                                     Text("It remains forever hard to un-break a heart; remembering that in the end some things can never be taken back!")
-                                      .italic()
+                                        .italic()
                                         .font(.system(size: 25))
                                         .fontWeight(.regular)
                                         .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                                         .multilineTextAlignment(.center)
-                                        .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                        .frame(width: 350, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                
                                    
                                     
