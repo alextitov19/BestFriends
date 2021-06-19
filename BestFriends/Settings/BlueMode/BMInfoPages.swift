@@ -70,7 +70,7 @@ struct BlueModePage1: View {
                 Spacer()
                      .frame(height: 10)
                 
-                NavigationLink(destination: BlueHeartVid()) {
+                NavigationLink(destination: EmptyView()) {
                                     Text("or 'Skip' walk-through")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
@@ -546,7 +546,7 @@ struct BlueModePage5: View {
                         Spacer()
                             .frame(height: 55)
                      
-                        NavigationLink(destination: BlueHeartVid()) {
+                        NavigationLink(destination: EmptyView()) {
                                             Text("Ok, let's do this >>>")
                                                 .font(.system(size: 30))
                                                 .fontWeight(.ultraLight)
