@@ -108,29 +108,28 @@ struct BlueModeUserDashboard: View {
                             NavigationLink(
                                 destination: SettingsView(),
                                 label: {
-                                    Text("Schedule Time to Talk")
+                                    Text("Schedule a time to Talk")
+                                .italic()
+                                .font(.system(size: 27))
+                                .frame(width: 325, height: 50, alignment: .center)
+                                .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
+                                .background(Color(#colorLiteral(red: 0, green: 1, blue: 0, alpha: 1)))
+                                .cornerRadius(25)
+                               
                                 })
-                           
-                                .frame(width: 325, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 1)
-                                        )
-                          
                           
                             VStack {
                             
                                 Spacer()
-                                    .frame(height: 35)
+                                    .frame(height: 60)
                                 
-                                Text("Unlock Special Features")
+                                Text("Unlock Special Features in BlueMode")
                                    
                                     .font(.system(size: 40))
                                     .fontWeight(.ultraLight)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .multilineTextAlignment(.center)
-                                    .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     
                                 Spacer()
                                     .frame(height: 20)
@@ -138,10 +137,10 @@ struct BlueModeUserDashboard: View {
                                 NavigationLink(
                                     destination: ShakingCoolView(),
                                     label: {
-                                    Text("BlueMode ShakingCool - seeing each others 'good times together' images")
-                                        .frame(width: 350, height: 100, alignment: .center)
-                                        })
-                                    .frame(width: 400, height: 50)
+                                    Text("BlueMode ShakingCool allows you to upload an image to your friend's ShakingCool. So send one of the two of your pre-fight!!!")
+                                        .frame(width: 350, height: 175, alignment: .center)
+                                        .font(.system(size: 27)) })
+                                    .frame(width: 400, height: 175)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 25)
@@ -153,10 +152,11 @@ struct BlueModeUserDashboard: View {
                                 NavigationLink(
                                     destination: SmileNotesView(),
                                     label: {
-                                        Text("Filtering SmileNotes - remembering the nice things")
+                                        Text("BlueMode SmileNotes - Filter just for your friend's nice messages.")
                                             .frame(width: 350, height: 100, alignment: .center)
+                                            .font(.system(size: 27))
                                     })
-                                    .frame(width: 400, height: 50)
+                                    .frame(width: 400, height: 100)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 25)
@@ -173,8 +173,9 @@ struct BlueModeUserDashboard: View {
                                     label: {
                                         Text("BlueMode stickers - saying the words you can't seem to say right now.")
                                             .frame(width: 350, height: 100, alignment: .center)
+                                            .font(.system(size: 27))
                                     })
-                                    .frame(width: 400, height: 50)
+                                    .frame(width: 400, height: 100)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 25)
@@ -184,30 +185,57 @@ struct BlueModeUserDashboard: View {
                                 VStack {
                                    
                                     Spacer()
-                                        .frame(height: 20)
+                                        .frame(height: 70)
                                     
                                     Text("Not knowing if your messages are read or not, SUCKS!")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.regular)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
+                                        .font(.system(size: 40))
+                                        .fontWeight(.ultraLight)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .multilineTextAlignment(.center)
-                                        .frame(width: 350, height: 100)
+                                        .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     
-                                    Text("     1) We send you push notifications instantly when you receive a message in BlueMode Chat, and 2) We 'time-stamp' when your messages are read - just so you know.")
-                                        .italic()
-                                        .font(.system(size: 15))
-                                        .fontWeight(.regular)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
-                                        .multilineTextAlignment(.center)
-                                        .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    Spacer()
+                                        .frame(height: 30)
                                     
-                                  
+                                    
+                                    NavigationLink(
+                                        destination: ShakingCoolView(),
+                                        label: {
+                                        Text("We send you push notifications instantly when you receive a message in BlueMode Chat.")
+                                            .frame(width: 350, height: 175, alignment: .center)
+                                            .font(.system(size: 27)) })
+                                        .frame(width: 400, height: 175)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 25)
+                                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                            )
+                                    
+                                    Spacer()
+                                        .frame(height: 30)
+                                    
+                                    
+                                    NavigationLink(
+                                        destination: ShakingCoolView(),
+                                        label: {
+                                        Text("We 'time-stamp' when your messages are read - just so you know.")
+                                            .frame(width: 350, height: 175, alignment: .center)
+                                            .font(.system(size: 27)) })
+                                        .frame(width: 400, height: 140)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 25)
+                                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                            )
+                                
+                                    Spacer()
+                                        .frame(height: 70)
                                     
                                     Text("It remains forever hard to un-break a heart; remembering that in the end some things can never be taken back!")
-                                      //  .italic()
-                                        .font(.system(size: 20))
+                                      .italic()
+                                        .font(.system(size: 25))
                                         .fontWeight(.regular)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                                         .multilineTextAlignment(.center)
                                         .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                
