@@ -12,6 +12,7 @@ import Amplify
 struct RoomsView: View {
 
     @State var text: String = ""
+    @State var showingPopup = true
     @ObservedObject var dataSource = RoomDataSource()
 
     @EnvironmentObject var sessionManager: SessionManager
@@ -61,6 +62,9 @@ struct RoomsView: View {
                     }
                     
                 }
+            }
+            .popover(isPresented: $showingPopup) {
+                SmieNotePopover()
             }
         }
         .navigationBarTitle("")
