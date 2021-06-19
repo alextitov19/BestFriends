@@ -201,7 +201,7 @@ struct LandingView: View {
                 ReviewPopup()
                     .padding(20)
             }
-            .isHidden(isReviewPopupShowing)
+            .isHidden(!isReviewPopupShowing)
                
                 
         }
