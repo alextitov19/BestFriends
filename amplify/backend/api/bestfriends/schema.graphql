@@ -8,6 +8,12 @@ type Room @model {
   lastSeenByMember2: AWSTimestamp
 }
 
+type SmileNote {
+  id: ID!
+  message: Message!
+  favorite: Boolean!
+}
+
 type Message {
   id: ID!
   senderName: String!
@@ -38,7 +44,7 @@ type User @model {
   friends: [String]
   rooms: [String]
   hiddenRooms: [String]
-  smileNotes: [Message]
+  smileNotes: [SmileNote]
   shakingCoolLinks: [String]
   tokens: Int!
   background: Int!

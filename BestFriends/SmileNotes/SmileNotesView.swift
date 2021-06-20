@@ -145,14 +145,14 @@ struct SmileNotesView: View {
         cards = []
         guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
         let user = UserDataSource().getUser(id: id)
-        messages = user.smileNotes ?? []
-        for message in messages {
-            var card = SmileNotesCard(message: message)
+        var smileNotes = user.smileNotes ?? []
+        for smileNote in smileNotes {
+            var card = SmileNotesCard(message: smileNote.message)
             cards.append(card)
             
-            if (friendIDs.contains(message.senderID) == false) {
-                friendIDs.append(message.senderID)
-                friendNames.append(message.senderName)
+            if (friendIDs.contains(smileNote.message.senderID) == false) {
+                friendIDs.append(smileNote.message.senderID)
+                friendNames.append(smileNote.message.senderName)
             }
         }
     

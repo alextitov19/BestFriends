@@ -157,12 +157,16 @@ subscription OnCreateUser {
     hiddenRooms
     smileNotes {
       id
-      senderName
-      senderID
-      body
-      creationDate
-      attachmentPath
-      stickerNumber
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
     }
     shakingCoolLinks
     tokens
@@ -190,12 +194,16 @@ subscription OnUpdateUser {
     hiddenRooms
     smileNotes {
       id
-      senderName
-      senderID
-      body
-      creationDate
-      attachmentPath
-      stickerNumber
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
     }
     shakingCoolLinks
     tokens
@@ -223,12 +231,16 @@ subscription OnDeleteUser {
     hiddenRooms
     smileNotes {
       id
-      senderName
-      senderID
-      body
-      creationDate
-      attachmentPath
-      stickerNumber
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
     }
     shakingCoolLinks
     tokens

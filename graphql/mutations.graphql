@@ -178,12 +178,16 @@ mutation CreateUser(
     hiddenRooms
     smileNotes {
       id
-      senderName
-      senderID
-      body
-      creationDate
-      attachmentPath
-      stickerNumber
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
     }
     shakingCoolLinks
     tokens
@@ -214,12 +218,16 @@ mutation UpdateUser(
     hiddenRooms
     smileNotes {
       id
-      senderName
-      senderID
-      body
-      creationDate
-      attachmentPath
-      stickerNumber
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
     }
     shakingCoolLinks
     tokens
@@ -250,12 +258,16 @@ mutation DeleteUser(
     hiddenRooms
     smileNotes {
       id
-      senderName
-      senderID
-      body
-      creationDate
-      attachmentPath
-      stickerNumber
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
     }
     shakingCoolLinks
     tokens

@@ -10,12 +10,12 @@ import Amplify
 
 struct SmieNotePopover: View {
     
-    var messages: [Message]
+    var smileNotes: [SmileNote]
     
     init() {
         let username = Amplify.Auth.getCurrentUser()?.username ?? "Could not find user"
         let user = UserDataSource().getUser(id: username)
-        self.messages = user.smileNotes ?? []
+        self.smileNotes = user.smileNotes ?? []
     }
     
     var body: some View {
@@ -25,8 +25,8 @@ struct SmieNotePopover: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            if messages.count > 0 {
-                SmileNotesCard(message: messages.randomElement()!, hidden: false)
+            if smileNotes.count > 0 {
+                SmileNotesCard(message: smileNotes.randomElement()!.message, hidden: false)
             } else {
              Text("No SmileNotes yet, you should add some!")
                 .foregroundColor(.white)

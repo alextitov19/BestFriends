@@ -16,7 +16,7 @@ public struct User: Model {
   public var friends: [String]?
   public var rooms: [String]?
   public var hiddenRooms: [String]?
-  public var smileNotes: [Message]?
+  public var smileNotes: [SmileNote]?
   public var shakingCoolLinks: [String]?
   public var tokens: Int
   public var background: Int
@@ -36,7 +36,7 @@ public struct User: Model {
       friends: [String]? = [],
       rooms: [String]? = [],
       hiddenRooms: [String]? = [],
-      smileNotes: [Message]? = [],
+      smileNotes: [SmileNote]? = [],
       shakingCoolLinks: [String]? = [],
       tokens: Int,
       background: Int,

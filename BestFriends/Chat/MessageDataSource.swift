@@ -40,9 +40,10 @@ class MessageDataSource: ObservableObject {
     
     func saveToSmileNotes(message: Message) {
         guard let userid = Amplify.Auth.getCurrentUser()?.username else {return}
+        let smileNote = SmileNote(id: randomString(length: 20), message: message, favorite: false)
         var user = UserDataSource().getUser(id: userid)
-        var smileNotes: [Message] = user.smileNotes ?? []
-        smileNotes.append(message)
+        var smileNotes: [SmileNote] = user.smileNotes ?? []
+        smileNotes.append(smileNote)
         user.smileNotes = smileNotes
         Amplify.API.mutate(request: .update(user)) { [weak self] mutationResult in
             switch mutationResult {

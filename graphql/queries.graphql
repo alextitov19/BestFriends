@@ -124,12 +124,16 @@ query GetUser($id: ID!) {
     hiddenRooms
     smileNotes {
       id
-      senderName
-      senderID
-      body
-      creationDate
-      attachmentPath
-      stickerNumber
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
     }
     shakingCoolLinks
     tokens
@@ -162,12 +166,7 @@ query ListUsers(
       hiddenRooms
       smileNotes {
         id
-        senderName
-        senderID
-        body
-        creationDate
-        attachmentPath
-        stickerNumber
+        favorite
       }
       shakingCoolLinks
       tokens
