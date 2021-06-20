@@ -172,6 +172,20 @@ struct MessageRoomView: View {
                 }
                 .padding()
                 .offset(y: -self.offset)
+                
+                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                                    .onEnded({ value in
+                                        if value.translation.width < -10 {
+                                            // left
+                                            print("Left")
+                                            
+                                        }
+
+                                        if value.translation.width > 10 {
+                                            // right
+                                            print("Right")
+                                        }
+                                    }))
 
                 
                 
@@ -271,6 +285,8 @@ struct MessageRoomView: View {
                         }
                     }
                 }
+                
+                
                 
             }
             .navigationBarTitle("")
