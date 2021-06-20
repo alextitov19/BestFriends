@@ -30,17 +30,20 @@ struct SmileNotesView: View {
             VStack {
                 // MARK: Header
                 HStack {
-                    Button( action: {
-                        
-                    }) {
-                        Text(selectedFriendName)
-                            .font(.title).bold()
-                            .foregroundColor(.white)
-                            .onTapGesture {
-                                hidingFriendButtons = false
-                            }
-                    }
+                    Text(selectedFriendName)
+                        .font(.title).bold()
+                        .foregroundColor(.white)
+                        .onTapGesture {
+                            hidingFriendButtons = false
+                        }
                     
+                    Image("favoritesIcon")
+                        .resizable()
+                        .frame(width: 40, height: 40, alignment: .center)
+                        .scaledToFit()
+                        .onTapGesture {
+                            toggleFavorite()
+                        }
                 }
                 
                 VStack {
@@ -78,7 +81,7 @@ struct SmileNotesView: View {
                 Spacer()
                 
                 ZStack {
-                    ForEach(displayedCards, id: \.message.id) { card in
+                    ForEach(displayedCards, id: \.smileNote.message.id) { card in
                         card
                     }
                 }
@@ -147,7 +150,7 @@ struct SmileNotesView: View {
         let user = UserDataSource().getUser(id: id)
         var smileNotes = user.smileNotes ?? []
         for smileNote in smileNotes {
-            var card = SmileNotesCard(message: smileNote.message)
+            var card = SmileNotesCard(smileNote: smileNote)
             cards.append(card)
             
             if (friendIDs.contains(smileNote.message.senderID) == false) {
@@ -165,7 +168,7 @@ struct SmileNotesView: View {
             displayedCards = cards
         } else {
             for card in cards {
-                if card.message.senderID == selectedFriendID {
+                if card.smileNote.message.senderID == selectedFriendID {
                     displayedCards.append(card)
                 }
             }
@@ -173,6 +176,23 @@ struct SmileNotesView: View {
         switchCard()
     }
     
+    private func toggleFavorite() {
+        let oldSmileNote = displayedCards[index].smileNote
+        var newSmileNote = oldSmileNote
+        newSmileNote.favorite.toggle()
+        guard let username = Amplify.Auth.getCurrentUser()?.username else { return }
+        var user = UserDataSource().getUser(id: username)
+        if user.smileNotes != nil {
+            for i in 0..<user.smileNotes!.count {
+                if user.smileNotes![i].id == oldSmileNote.id {
+                    user.smileNotes?.remove(at: i)
+                    user.smileNotes?.insert(newSmileNote, at: i)
+                    UserDataSource().updateUser(user: user)
+                    return
+                }
+            }
+        }
+    }
 }
 
 struct SileNotesView_Previews : PreviewProvider {

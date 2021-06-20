@@ -26,7 +26,7 @@ struct SmieNotePopover: View {
                 .scaledToFill()
             
             if smileNotes.count > 0 {
-                SmileNotesCard(message: smileNotes.randomElement()!.message, hidden: false)
+                SmileNotesCard(smileNote: smileNotes.randomElement()!, hidden: false)
             } else {
              Text("No SmileNotes yet, you should add some!")
                 .foregroundColor(.white)

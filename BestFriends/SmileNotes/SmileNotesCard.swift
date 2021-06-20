@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SmileNotesCard: View {
     
-    let message: Message
+    let smileNote: SmileNote
     
     var hidden: Bool = true
 
@@ -23,7 +23,7 @@ struct SmileNotesCard: View {
                 )
             
             VStack {
-                Text("\"" + message.body + "\"")
+                Text("\"" + smileNote.message.body + "\"")
                     .font(.system(size: 30, weight: .semibold))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
@@ -31,7 +31,7 @@ struct SmileNotesCard: View {
                 
                 Spacer().frame(height: 20)
                 
-                Text("- " + message.senderName)
+                Text("- " + smileNote.message.senderName)
                     .font(.system(size: 20, weight: .semibold))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .frame(width: 330, alignment: .trailing)
@@ -43,11 +43,5 @@ struct SmileNotesCard: View {
         .isHidden(hidden)
     }
     
-}
-
-struct SileNotesCard_Previews : PreviewProvider {
-    static var previews: some View {
-        SmileNotesCard(message: Message(id: "", senderName: "Fred S", senderID: "", body: "You are a great friend! Have a good day.", creationDate: 1))
-    }
 }
 
