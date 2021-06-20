@@ -39,11 +39,11 @@ struct BlueSurvey: View {
                     .frame(height: 5
                     )
                 
-                Text("Quick Question")
+                Text("Got a second?")
                     .italic()
                     .font(.system(size: 50))
                   //  .foregroundColor(.white)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                 
               
@@ -53,15 +53,15 @@ struct BlueSurvey: View {
                 
                 VStack {
                     
-                    Button("Do you like getting Push Notifications when your friend sends me a message in Blue-Chat.", action: {
+                    Button("Would you be very dissapointed if we removed BlueMode from BestFriends?", action: {
                             didTap1 = true
                             didTap2 = false
                             didTap3 = false
                          
                     })
                     .frame(width: 400, height: 175, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
-                    .background(didTap1 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .background(didTap1 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
                     .cornerRadius(25)
                     .font(.system(size: 30))
                     
@@ -76,8 +76,8 @@ struct BlueSurvey: View {
                           
                     })
                     .frame(width: 100, height: 75, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
-                    .background(didTap2 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .background(didTap2 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 0, green: 1, blue: 0, alpha: 1)))
                     .cornerRadius(25)
                     .font(.system(size: 30))
                     
@@ -92,8 +92,8 @@ struct BlueSurvey: View {
                      
                     })
                     .frame(width: 100, height: 75, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
-                    .background(didTap3 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .background(didTap3 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
                     .cornerRadius(25)
                     .font(.system(size: 30))
                     
@@ -106,11 +106,12 @@ struct BlueSurvey: View {
                         
 
                         
-                        Text("What do you wish we would add to BlueMode?")
-                            .frame(width: 380, height: 75, alignment: .center)
+                        Text("How can we improve BlueMode for you?")
+                            .frame(width: 385, height: 75, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
+                            .cornerRadius(25)
                             .font(.system(size: 30))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
                         
 
 

@@ -152,7 +152,7 @@ struct BlueModeUserDashboard: View {
                                 NavigationLink(
                                     destination: SmileNotesView(),
                                     label: {
-                                        Text("BlueMode SmileNotes - Filter just for your friend's nice messages.")
+                                        Text("BlueMode SmileNotes - Filter just for this friend's nice messages.")
                                             .frame(width: 350, height: 100, alignment: .center)
                                             .font(.system(size: 27))
                                     })
