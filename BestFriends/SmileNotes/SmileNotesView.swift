@@ -59,6 +59,18 @@ struct SmileNotesView: View {
                             newSelection()
                         }
                     
+                    Text("Favorites")
+                        .frame(width: 130, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                        .background(Color(.clear))
+                        .cornerRadius(30)
+                        .onTapGesture {
+                            selectedFriendID = "Favorites"
+                            selectedFriendName = "Favorties"
+                            hidingFriendButtons = true
+                            newSelection()
+                        }
+                    
                     ForEach(friendIDs, id: \.self) { id in
                         Text(friendNames[friendIDs.firstIndex(of: id) ?? 0])
                             .frame(width: 130, height: 50, alignment: .center)
@@ -166,6 +178,12 @@ struct SmileNotesView: View {
         displayedCards = []
         if selectedFriendID == "All Friends" {
             displayedCards = cards
+        } else if selectedFriendID == "Favorites" {
+            for card in cards {
+                if card.smileNote.favorite {
+                    displayedCards.append(card)
+                }
+            }
         } else {
             for card in cards {
                 if card.smileNote.message.senderID == selectedFriendID {
