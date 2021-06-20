@@ -29,6 +29,7 @@ struct MessageRoomView: View {
     @Environment(\.openURL) var openURL
     @State var adButtonsHidden = true
     @State var roomname = ""
+    @State var presentingDashboard = false
     
     var adIDs: [String] = []
     var adNames: [String] = []
@@ -172,18 +173,16 @@ struct MessageRoomView: View {
                 }
                 .padding()
                 .offset(y: -self.offset)
-                
                 .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
                                     .onEnded({ value in
-                                        if value.translation.width < -10 {
-                                            // left
-                                            print("Left")
-                                            
-                                        }
-
-                                        if value.translation.width > 10 {
-                                            // right
-                                            print("Right")
+                                        if room.blueMode {
+                                            if value.translation.width < -10 || value.translation.width > 10{
+                                                // horizontal
+                                                print("Swipe horizontal")
+                                                withAnimation {
+                                                                    presentingDashboard = true
+                                                                }
+                                            }
                                         }
                                     }))
 
@@ -353,6 +352,23 @@ struct MessageRoomView: View {
                 }
                 .offset(x: -165)
                 .transition(.move(edge: .leading))
+            }
+            
+            if presentingDashboard {
+                BlueModeUserDashboard()
+                    .transition(.scale)
+                    .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                                        .onEnded({ value in
+                                            if room.blueMode {
+                                                if value.translation.width < -10 || value.translation.width > 10{
+                                                    // horizontal
+                                                    print("Swipe horizontal")
+                                                    withAnimation {
+                                                                        presentingDashboard = false
+                                                                    }
+                                                }
+                                            }
+                                        }))
             }
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
