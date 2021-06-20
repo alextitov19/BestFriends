@@ -55,13 +55,13 @@ struct NotificationPreLoad: View {
                                
                                
                             
-                            Spacer().frame(height: 50)
+                            Spacer().frame(height: 100)
                            
                            
                                 NavigationLink(
                                     destination: SettingsView(),
                                     label: {
-                                        Text("Give me 10 min")
+                                        Text("Give me ...")
                                     })
                                     .font(.system(size: 32))
                                     .frame(width: 275, height: 50, alignment: .center)
@@ -73,20 +73,23 @@ struct NotificationPreLoad: View {
                        
                         VStack {
                         Spacer().frame(height: 40)
-                       
-                       
-                            TextField("Give me X hours ...", text: $giveMeXHours)
-                                .multilineTextAlignment(.center)
-                                .background(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
-                                .frame(width: 300, height: 70, alignment: .center)
-                              //  .font(.title)
-                                .font(.system(size: 32))
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .textFieldStyle(RoundedBorderTextFieldStyle())
-                                .cornerRadius(25)
-                                .disableAutocorrection(true)
-                                .autocapitalization(.none)
                             
+                            Spacer().frame(height: 50)
+                           
+                           
+                                NavigationLink(
+                                    destination: SettingsView(),
+                                    label: {
+                                        Text("Unavailable")
+                                    })
+                                    .font(.system(size: 32))
+                                    .frame(width: 275, height: 50, alignment: .center)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
+                                    .background(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
+                                    .cornerRadius(25)
+                                            
+                       
+                       
  
                         Spacer().frame(height: 20)
                        
