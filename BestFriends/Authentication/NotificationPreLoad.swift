@@ -26,25 +26,11 @@ struct NotificationPreLoad: View {
                 VStack {
                     ScrollView {
 
-                    Text("BestFriends Chat")
-                        .font(.system(size: 50))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 400, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                        Spacer().frame(height: 20)
-                       
-                        Text("ALERT")
-                            .font(.system(size: 90))
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 400, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                  
                     
                         Spacer().frame(height: 25)
                        
-                    Text("Display who invited here")
+                    Text("Ted & Tim invited you to chat")
                         .font(.system(size: 32))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
@@ -105,24 +91,7 @@ struct NotificationPreLoad: View {
                         Spacer().frame(height: 20)
                        
                         
-                        Text("Urgency Level")
-                            .font(.system(size: 32))
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                       
-                            NavigationLink(
-                                destination: BlueModePage1(),
-                                label: {
-                                    Text(" [1]      [2]      [3]")
-                                })
-                                .frame(width: 325, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
-                                        )
+                      
                             
                         }
                     }
