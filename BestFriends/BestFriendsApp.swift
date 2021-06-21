@@ -19,6 +19,11 @@ struct BestFriendsApp: App {
     init() {
         configureAmplify()
         sessionManager.getCurrentAuthUser()
+        
+        NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: .main) { _ in
+            // terminating
+            print("App is in background")
+        }
     }
     
     var body: some Scene {
