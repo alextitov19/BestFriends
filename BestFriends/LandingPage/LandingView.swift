@@ -25,6 +25,8 @@ struct LandingView: View {
     @State private var stars: [Star] = []
     @State private var starButtons: [UIButton] = []
     @State private var titleText = ""
+    @State private var invitedChatIDs: [String] = []
+    
     
     @State private var isShakingCoolPresented = false
     @State private var isAdViewPresented = false
@@ -36,6 +38,8 @@ struct LandingView: View {
     @State private var selectedFriends = []
     
     @State var idsToInvite: [String] = []
+    
+    var userDataSource = UserDataSource()
 
     
     var myID: String
@@ -45,7 +49,8 @@ struct LandingView: View {
     private func reloadData() {
         print("Reloading...")
         getFriends()
-        UserDataSource().setOnlineStatus(isOnline: true)
+        userDataSource.setOnlineStatus(isOnline: true)
+        invitedChatIDs = userDataSource.getCurrentUser().invitedRooms ?? []
     }
     
 //    let user: AuthUser
@@ -202,6 +207,10 @@ struct LandingView: View {
                     .padding(20)
             }
             .isHidden(!isReviewPopupShowing)
+            
+            ForEach(invitedChatIDs, id: \.self) { id in
+                NotificationPreLoad()
+            }
                
                 
         }
@@ -277,7 +286,7 @@ struct LandingView: View {
     //MARK: End of QR Code
     
     private func addFriend(id: String) {
-        let user = UserDataSource().getUser(id: id)
+        let user = userDataSource.getUser(id: id)
         print("got the user")
         UserDataSource().addFriend(user: user)
         print("done adding friends")
@@ -287,7 +296,7 @@ struct LandingView: View {
     
     
     private func getFriends() {
-        let user = UserDataSource().getUser(id: myID)
+        let user = userDataSource.getUser(id: myID)
         guard let friends = user.friends else { return }
         friendIDs = friends
         displayStars()
@@ -297,7 +306,7 @@ struct LandingView: View {
         print("Friend count: ", friendIDs.count)
         
         for friendID in friendIDs {
-            let user = UserDataSource().getUser(id: friendID)
+            let user = userDataSource.getUser(id: friendID)
             guard let initial = user.lastName.first else { return }
             var name = user.firstName + " "
             name.append(initial)
@@ -324,15 +333,13 @@ struct LandingView: View {
     
     private func inviteSelectedFriends() {
         if friendIDsToInvite != [] {
-            guard let myID = Amplify.Auth.getCurrentUser()?.username else { return }
-            friendIDsToInvite.append(myID)
             print("Inviting selected friends: ", friendIDsToInvite)
             let room = Room(name: "Chat Room", members: friendIDsToInvite, blueMode: false)
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
-            UserDataSource().addRoom(userID: myID, roomID: room.id)
+            userDataSource.addRoom(userID: myID, roomID: room.id)
             for id in friendIDsToInvite {
-                UserDataSource().addRoom(userID: id, roomID: room.id)
+                userDataSource.addRoom(userID: id, roomID: room.id)
             }
         }
     }

@@ -117,6 +117,9 @@ struct UserDataSource {
     func addRoom(userID: String, roomID: String) {
         var user = getUser(id: userID)
         user.rooms?.append(roomID)
+        if userID != Amplify.Auth.getCurrentUser()!.username {
+            user.invitedRooms?.append(roomID)
+        }
         updateUser(user: user)
     }
     
