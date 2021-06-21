@@ -118,6 +118,8 @@ query GetUser($id: ID!) {
     adPreference
     deviceFCMToken
     isOnline
+    invitedRooms
+    invitedTimers
     secretPin
     friends
     rooms
@@ -160,6 +162,8 @@ query ListUsers(
       adPreference
       deviceFCMToken
       isOnline
+      invitedRooms
+      invitedTimers
       secretPin
       friends
       rooms

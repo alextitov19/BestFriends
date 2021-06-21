@@ -12,6 +12,8 @@ public struct User: Model {
   public var adPreference: String
   public var deviceFCMToken: String
   public var isOnline: Bool
+  public var invitedRooms: [String]?
+  public var invitedTimers: [Int]?
   public var secretPin: String
   public var friends: [String]?
   public var rooms: [String]?
@@ -32,6 +34,8 @@ public struct User: Model {
       adPreference: String,
       deviceFCMToken: String,
       isOnline: Bool,
+      invitedRooms: [String]? = [],
+      invitedTimers: [Int]? = [],
       secretPin: String,
       friends: [String]? = [],
       rooms: [String]? = [],
@@ -51,6 +55,8 @@ public struct User: Model {
       self.adPreference = adPreference
       self.deviceFCMToken = deviceFCMToken
       self.isOnline = isOnline
+      self.invitedRooms = invitedRooms
+      self.invitedTimers = invitedTimers
       self.secretPin = secretPin
       self.friends = friends
       self.rooms = rooms

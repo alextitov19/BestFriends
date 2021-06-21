@@ -40,6 +40,8 @@ type User @model {
   adPreference: String!
   deviceFCMToken: String!
   isOnline: Boolean!
+  invitedRooms: [String]
+  invitedTimers: [AWSTimestamp]
   secretPin: String!
   friends: [String]
   rooms: [String]
