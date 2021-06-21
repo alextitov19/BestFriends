@@ -120,5 +120,10 @@ struct UserDataSource {
         updateUser(user: user)
     }
     
+    func setOnlineStatus(isOnline: Bool) {
+        var user = getCurrentUser()
+        user.isOnline = isOnline
+        updateUser(user: user)
+    }
     
 }

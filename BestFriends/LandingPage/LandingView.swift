@@ -41,11 +41,11 @@ struct LandingView: View {
     var myID: String
 
     @EnvironmentObject var sessionManager: SessionManager
-     
+    
     private func reloadData() {
         print("Reloading...")
         getFriends()
-        
+        UserDataSource().setOnlineStatus(isOnline: true)
     }
     
 //    let user: AuthUser

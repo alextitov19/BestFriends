@@ -21,8 +21,10 @@ struct BestFriendsApp: App {
         sessionManager.getCurrentAuthUser()
         
         NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: .main) { _ in
-            // terminating
+            // Background...
+            // Change user isOnline to false
             print("App is in background")
+            UserDataSource().setOnlineStatus(isOnline: false)
         }
     }
     
