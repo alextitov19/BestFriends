@@ -15,10 +15,10 @@ struct NotificationPreLoad: View {
     
     var roomID: String
     var members: [String] = []
+    var userDataSource = UserDataSource()
     
     init(roomID: String) {
         self.roomID = roomID
-        
     }
     
     var body: some View {
@@ -43,7 +43,13 @@ struct NotificationPreLoad: View {
                     .padding(20)
                     
                     Button(action: {
-                        
+                        var user = userDataSource.getCurrentUser()
+                        for i in 0..<user.invitedRooms!.count {
+                            if user.invitedRooms![i].roomID == roomID {
+                                user.invitedRooms![i].timer = 5
+                                userDataSource.updateUser(user: user)
+                            }
+                        }
                     }) {
                         Text("Give me 5 minutes")
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
@@ -53,7 +59,13 @@ struct NotificationPreLoad: View {
                     .padding(20)
                     
                     Button(action: {
-                        
+                        var user = userDataSource.getCurrentUser()
+                        for i in 0..<user.invitedRooms!.count {
+                            if user.invitedRooms![i].roomID == roomID {
+                                user.invitedRooms![i].timer = 10
+                                userDataSource.updateUser(user: user)
+                            }
+                        }
                     }) {
                         Text("Give me 10 minutes")
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
@@ -63,7 +75,13 @@ struct NotificationPreLoad: View {
                     .padding(20)
                     
                     Button(action: {
-                        
+                        var user = userDataSource.getCurrentUser()
+                        for i in 0..<user.invitedRooms!.count {
+                            if user.invitedRooms![i].roomID == roomID {
+                                user.invitedRooms![i].timer = 15
+                                userDataSource.updateUser(user: user)
+                            }
+                        }
                     }) {
                         Text("Give me 15 minutes")
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
@@ -73,7 +91,13 @@ struct NotificationPreLoad: View {
                     .padding(20)
                     
                     Button(action: {
-                        
+                        var user = userDataSource.getCurrentUser()
+                        for i in 0..<user.invitedRooms!.count {
+                            if user.invitedRooms![i].roomID == roomID {
+                                user.invitedRooms![i].timer = 30
+                                userDataSource.updateUser(user: user)
+                            }
+                        }
                     }) {
                         Text("Give me 30 minutes")
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
@@ -83,7 +107,13 @@ struct NotificationPreLoad: View {
                     .padding(20)
                     
                     Button(action: {
-                        
+                        var user = userDataSource.getCurrentUser()
+                        for i in 0..<user.invitedRooms!.count {
+                            if user.invitedRooms![i].roomID == roomID {
+                                user.invitedRooms![i].timer = 60
+                                userDataSource.updateUser(user: user)
+                            }
+                        }
                     }) {
                         Text("Give me an hour")
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
@@ -93,7 +123,13 @@ struct NotificationPreLoad: View {
                     .padding(20)
                     
                     Button(action: {
-                        
+                        var user = userDataSource.getCurrentUser()
+                        for i in 0..<user.invitedRooms!.count {
+                            if user.invitedRooms![i].roomID == roomID {
+                                user.invitedRooms![i].timer = -1
+                                userDataSource.updateUser(user: user)
+                            }
+                        }
                     }) {
                         Text("Can't chat for a while")
                             .foregroundColor(.red)
