@@ -14,9 +14,11 @@ struct NotificationPreLoad: View {
     @State private var selectedMinutes: Int = -1
     
     var roomID: String
+    var members: [String] = []
     
     init(roomID: String) {
         self.roomID = roomID
+        
     }
     
     var body: some View {
@@ -28,8 +30,10 @@ struct NotificationPreLoad: View {
                     .scaledToFill()
                 
                 VStack {
+                    
+                    
                     Button(action: {
-                        
+                        sessionManager.chat(room: RoomDataSource().getRoom(id: roomID))
                     }) {
                         Text("Chat now")
                             .foregroundColor(.green)

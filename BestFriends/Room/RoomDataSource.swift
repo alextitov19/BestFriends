@@ -37,28 +37,40 @@ class RoomDataSource: ObservableObject {
         guard let roomIDs: [String] = user.rooms else {return}
         
         for roomID in roomIDs {
-            Amplify.API.query(request: .get(Room.self, byId: roomID)) { event in
-                switch event {
-                case .success(let result):
-                    switch result {
-                    case .success(let room):
-                        guard let room = room else {
-                            print("Could not find room")
-                            return
-                        }
-                        print("Successfully retrieved room: \(room)")
-                        //user found
-                        self.rooms.append(room)
-                    
-                    case .failure(let error):
-                        print("Got failed result with \(error.errorDescription)")
+            self.rooms.append(getRoom(id: roomID))
+        }
+    }
+    
+    func getRoom(id: String) -> Room {
+        var finalroom = Room(id: "", name: "", members: [], messages: [], blueMode: false, lastSeenByMember1: 0, lastSeenByMember2: 0)
+        
+        let group = DispatchGroup()
+        group.enter()
+        
+        Amplify.API.query(request: .get(Room.self, byId: id)) { event in
+            switch event {
+            case .success(let result):
+                switch result {
+                case .success(let room):
+                    guard let room = room else {
+                        print("Could not find room")
+                        return
                     }
+                    print("Successfully retrieved room: \(room)")
+                    finalroom = room
+                    group.leave()
+                
                 case .failure(let error):
-                    print("Got failed event with error \(error)")
+                    print("Got failed result with \(error.errorDescription)")
                 }
+            case .failure(let error):
+                print("Got failed event with error \(error)")
             }
         }
-                
+        
+        group.wait()
+        
+        return finalroom
     }
     
     func updateRoomName(room: Room, name: String) {
