@@ -151,8 +151,10 @@ subscription OnCreateUser {
     adPreference
     deviceFCMToken
     isOnline
-    invitedRooms
-    invitedTimers
+    invitedRooms {
+      roomID
+      timer
+    }
     secretPin
     friends
     rooms
@@ -190,8 +192,10 @@ subscription OnUpdateUser {
     adPreference
     deviceFCMToken
     isOnline
-    invitedRooms
-    invitedTimers
+    invitedRooms {
+      roomID
+      timer
+    }
     secretPin
     friends
     rooms
@@ -229,8 +233,10 @@ subscription OnDeleteUser {
     adPreference
     deviceFCMToken
     isOnline
-    invitedRooms
-    invitedTimers
+    invitedRooms {
+      roomID
+      timer
+    }
     secretPin
     friends
     rooms

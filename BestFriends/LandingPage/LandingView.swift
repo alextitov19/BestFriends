@@ -25,7 +25,7 @@ struct LandingView: View {
     @State private var stars: [Star] = []
     @State private var starButtons: [UIButton] = []
     @State private var titleText = ""
-    @State private var invitedChatIDs: [String] = []
+    @State private var invitedChatRooms: [InvitedRoom] = []
     
     
     @State private var isShakingCoolPresented = false
@@ -50,7 +50,7 @@ struct LandingView: View {
         print("Reloading...")
         getFriends()
         userDataSource.setOnlineStatus(isOnline: true)
-        invitedChatIDs = userDataSource.getCurrentUser().invitedRooms ?? []
+        invitedChatRooms = userDataSource.getCurrentUser().invitedRooms ?? []
     }
     
 //    let user: AuthUser
@@ -208,8 +208,8 @@ struct LandingView: View {
             }
             .isHidden(!isReviewPopupShowing)
             
-            ForEach(invitedChatIDs, id: \.self) { id in
-                NotificationPreLoad()
+            ForEach(invitedChatRooms, id: \.self.roomID) { invitedRoom in
+                NotificationPreLoad(roomID: invitedRoom.roomID)
             }
                
                 

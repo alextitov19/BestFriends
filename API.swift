@@ -849,8 +849,8 @@ public struct DeleteReportedMessageInput: GraphQLMapConvertible {
 public struct CreateUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [String?]? = nil, invitedTimers: [Int?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNoteInput?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool) {
-    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode]
+  public init(id: GraphQLID? = nil, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [InvitedRoomInput?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNoteInput?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool) {
+    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode]
   }
 
   public var id: GraphQLID? {
@@ -934,21 +934,12 @@ public struct CreateUserInput: GraphQLMapConvertible {
     }
   }
 
-  public var invitedRooms: [String?]? {
+  public var invitedRooms: [InvitedRoomInput?]? {
     get {
-      return graphQLMap["invitedRooms"] as! [String?]?
+      return graphQLMap["invitedRooms"] as! [InvitedRoomInput?]?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "invitedRooms")
-    }
-  }
-
-  public var invitedTimers: [Int?]? {
-    get {
-      return graphQLMap["invitedTimers"] as! [Int?]?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "invitedTimers")
     }
   }
 
@@ -1043,6 +1034,32 @@ public struct CreateUserInput: GraphQLMapConvertible {
   }
 }
 
+public struct InvitedRoomInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(roomId: String, timer: Int? = nil) {
+    graphQLMap = ["roomID": roomId, "timer": timer]
+  }
+
+  public var roomId: String {
+    get {
+      return graphQLMap["roomID"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "roomID")
+    }
+  }
+
+  public var timer: Int? {
+    get {
+      return graphQLMap["timer"] as! Int?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "timer")
+    }
+  }
+}
+
 public struct SmileNoteInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -1081,8 +1098,8 @@ public struct SmileNoteInput: GraphQLMapConvertible {
 public struct ModelUserConditionInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, invitedRooms: ModelStringInput? = nil, invitedTimers: ModelIntInput? = nil, secretPin: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, hiddenRooms: ModelStringInput? = nil, shakingCoolLinks: ModelStringInput? = nil, tokens: ModelIntInput? = nil, background: ModelIntInput? = nil, unlockedStickers: ModelIntInput? = nil, blueMode: ModelBooleanInput? = nil, and: [ModelUserConditionInput?]? = nil, or: [ModelUserConditionInput?]? = nil, not: ModelUserConditionInput? = nil) {
-    graphQLMap = ["firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "and": and, "or": or, "not": not]
+  public init(firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, secretPin: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, hiddenRooms: ModelStringInput? = nil, shakingCoolLinks: ModelStringInput? = nil, tokens: ModelIntInput? = nil, background: ModelIntInput? = nil, unlockedStickers: ModelIntInput? = nil, blueMode: ModelBooleanInput? = nil, and: [ModelUserConditionInput?]? = nil, or: [ModelUserConditionInput?]? = nil, not: ModelUserConditionInput? = nil) {
+    graphQLMap = ["firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "and": and, "or": or, "not": not]
   }
 
   public var firstName: ModelStringInput? {
@@ -1154,24 +1171,6 @@ public struct ModelUserConditionInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "isOnline")
-    }
-  }
-
-  public var invitedRooms: ModelStringInput? {
-    get {
-      return graphQLMap["invitedRooms"] as! ModelStringInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "invitedRooms")
-    }
-  }
-
-  public var invitedTimers: ModelIntInput? {
-    get {
-      return graphQLMap["invitedTimers"] as! ModelIntInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "invitedTimers")
     }
   }
 
@@ -1287,8 +1286,8 @@ public struct ModelUserConditionInput: GraphQLMapConvertible {
 public struct UpdateUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, firstName: String? = nil, lastName: String? = nil, birthday: String? = nil, pronouns: String? = nil, location: String? = nil, adPreference: String? = nil, deviceFcmToken: String? = nil, isOnline: Bool? = nil, invitedRooms: [String?]? = nil, invitedTimers: [Int?]? = nil, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNoteInput?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int? = nil, background: Int? = nil, unlockedStickers: [Int?]? = nil, blueMode: Bool? = nil) {
-    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode]
+  public init(id: GraphQLID, firstName: String? = nil, lastName: String? = nil, birthday: String? = nil, pronouns: String? = nil, location: String? = nil, adPreference: String? = nil, deviceFcmToken: String? = nil, isOnline: Bool? = nil, invitedRooms: [InvitedRoomInput?]? = nil, secretPin: String? = nil, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNoteInput?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int? = nil, background: Int? = nil, unlockedStickers: [Int?]? = nil, blueMode: Bool? = nil) {
+    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode]
   }
 
   public var id: GraphQLID {
@@ -1372,21 +1371,12 @@ public struct UpdateUserInput: GraphQLMapConvertible {
     }
   }
 
-  public var invitedRooms: [String?]? {
+  public var invitedRooms: [InvitedRoomInput?]? {
     get {
-      return graphQLMap["invitedRooms"] as! [String?]?
+      return graphQLMap["invitedRooms"] as! [InvitedRoomInput?]?
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "invitedRooms")
-    }
-  }
-
-  public var invitedTimers: [Int?]? {
-    get {
-      return graphQLMap["invitedTimers"] as! [Int?]?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "invitedTimers")
     }
   }
 
@@ -2290,8 +2280,8 @@ public struct ModelReportedMessageFilterInput: GraphQLMapConvertible {
 public struct ModelUserFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: ModelIDInput? = nil, firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, invitedRooms: ModelStringInput? = nil, invitedTimers: ModelIntInput? = nil, secretPin: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, hiddenRooms: ModelStringInput? = nil, shakingCoolLinks: ModelStringInput? = nil, tokens: ModelIntInput? = nil, background: ModelIntInput? = nil, unlockedStickers: ModelIntInput? = nil, blueMode: ModelBooleanInput? = nil, and: [ModelUserFilterInput?]? = nil, or: [ModelUserFilterInput?]? = nil, not: ModelUserFilterInput? = nil) {
-    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "and": and, "or": or, "not": not]
+  public init(id: ModelIDInput? = nil, firstName: ModelStringInput? = nil, lastName: ModelStringInput? = nil, birthday: ModelStringInput? = nil, pronouns: ModelStringInput? = nil, location: ModelStringInput? = nil, adPreference: ModelStringInput? = nil, deviceFcmToken: ModelStringInput? = nil, isOnline: ModelBooleanInput? = nil, secretPin: ModelStringInput? = nil, friends: ModelStringInput? = nil, rooms: ModelStringInput? = nil, hiddenRooms: ModelStringInput? = nil, shakingCoolLinks: ModelStringInput? = nil, tokens: ModelIntInput? = nil, background: ModelIntInput? = nil, unlockedStickers: ModelIntInput? = nil, blueMode: ModelBooleanInput? = nil, and: [ModelUserFilterInput?]? = nil, or: [ModelUserFilterInput?]? = nil, not: ModelUserFilterInput? = nil) {
+    graphQLMap = ["id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "and": and, "or": or, "not": not]
   }
 
   public var id: ModelIDInput? {
@@ -2372,24 +2362,6 @@ public struct ModelUserFilterInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "isOnline")
-    }
-  }
-
-  public var invitedRooms: ModelStringInput? {
-    get {
-      return graphQLMap["invitedRooms"] as! ModelStringInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "invitedRooms")
-    }
-  }
-
-  public var invitedTimers: ModelIntInput? {
-    get {
-      return graphQLMap["invitedTimers"] as! ModelIntInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "invitedTimers")
     }
   }
 
@@ -4431,7 +4403,7 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
 
 public final class CreateUserMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateUser($input: CreateUserInput!, $condition: ModelUserConditionInput) {\n  createUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms\n    invitedTimers\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateUser($input: CreateUserInput!, $condition: ModelUserConditionInput) {\n  createUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateUserInput
   public var condition: ModelUserConditionInput?
@@ -4485,8 +4457,7 @@ public final class CreateUserMutation: GraphQLMutation {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("invitedRooms", type: .list(.scalar(String.self))),
-        GraphQLField("invitedTimers", type: .list(.scalar(Int.self))),
+        GraphQLField("invitedRooms", type: .list(.object(InvitedRoom.selections))),
         GraphQLField("secretPin", type: .nonNull(.scalar(String.self))),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
@@ -4507,8 +4478,8 @@ public final class CreateUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [String?]? = nil, invitedTimers: [Int?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [InvitedRoom?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -4601,21 +4572,12 @@ public final class CreateUserMutation: GraphQLMutation {
         }
       }
 
-      public var invitedRooms: [String?]? {
+      public var invitedRooms: [InvitedRoom?]? {
         get {
-          return snapshot["invitedRooms"] as? [String?]
+          return (snapshot["invitedRooms"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { InvitedRoom(snapshot: $0) } } }
         }
         set {
-          snapshot.updateValue(newValue, forKey: "invitedRooms")
-        }
-      }
-
-      public var invitedTimers: [Int?]? {
-        get {
-          return snapshot["invitedTimers"] as? [Int?]
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "invitedTimers")
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "invitedRooms")
         }
       }
 
@@ -4724,6 +4686,53 @@ public final class CreateUserMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+
+      public struct InvitedRoom: GraphQLSelectionSet {
+        public static let possibleTypes = ["InvitedRoom"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("timer", type: .scalar(Int.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(roomId: String, timer: Int? = nil) {
+          self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var roomId: String {
+          get {
+            return snapshot["roomID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "roomID")
+          }
+        }
+
+        public var timer: Int? {
+          get {
+            return snapshot["timer"] as? Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "timer")
+          }
         }
       }
 
@@ -4886,7 +4895,7 @@ public final class CreateUserMutation: GraphQLMutation {
 
 public final class UpdateUserMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateUser($input: UpdateUserInput!, $condition: ModelUserConditionInput) {\n  updateUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms\n    invitedTimers\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateUser($input: UpdateUserInput!, $condition: ModelUserConditionInput) {\n  updateUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateUserInput
   public var condition: ModelUserConditionInput?
@@ -4940,8 +4949,7 @@ public final class UpdateUserMutation: GraphQLMutation {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("invitedRooms", type: .list(.scalar(String.self))),
-        GraphQLField("invitedTimers", type: .list(.scalar(Int.self))),
+        GraphQLField("invitedRooms", type: .list(.object(InvitedRoom.selections))),
         GraphQLField("secretPin", type: .nonNull(.scalar(String.self))),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
@@ -4962,8 +4970,8 @@ public final class UpdateUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [String?]? = nil, invitedTimers: [Int?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [InvitedRoom?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -5056,21 +5064,12 @@ public final class UpdateUserMutation: GraphQLMutation {
         }
       }
 
-      public var invitedRooms: [String?]? {
+      public var invitedRooms: [InvitedRoom?]? {
         get {
-          return snapshot["invitedRooms"] as? [String?]
+          return (snapshot["invitedRooms"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { InvitedRoom(snapshot: $0) } } }
         }
         set {
-          snapshot.updateValue(newValue, forKey: "invitedRooms")
-        }
-      }
-
-      public var invitedTimers: [Int?]? {
-        get {
-          return snapshot["invitedTimers"] as? [Int?]
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "invitedTimers")
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "invitedRooms")
         }
       }
 
@@ -5179,6 +5178,53 @@ public final class UpdateUserMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+
+      public struct InvitedRoom: GraphQLSelectionSet {
+        public static let possibleTypes = ["InvitedRoom"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("timer", type: .scalar(Int.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(roomId: String, timer: Int? = nil) {
+          self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var roomId: String {
+          get {
+            return snapshot["roomID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "roomID")
+          }
+        }
+
+        public var timer: Int? {
+          get {
+            return snapshot["timer"] as? Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "timer")
+          }
         }
       }
 
@@ -5341,7 +5387,7 @@ public final class UpdateUserMutation: GraphQLMutation {
 
 public final class DeleteUserMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteUser($input: DeleteUserInput!, $condition: ModelUserConditionInput) {\n  deleteUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms\n    invitedTimers\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteUser($input: DeleteUserInput!, $condition: ModelUserConditionInput) {\n  deleteUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteUserInput
   public var condition: ModelUserConditionInput?
@@ -5395,8 +5441,7 @@ public final class DeleteUserMutation: GraphQLMutation {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("invitedRooms", type: .list(.scalar(String.self))),
-        GraphQLField("invitedTimers", type: .list(.scalar(Int.self))),
+        GraphQLField("invitedRooms", type: .list(.object(InvitedRoom.selections))),
         GraphQLField("secretPin", type: .nonNull(.scalar(String.self))),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
@@ -5417,8 +5462,8 @@ public final class DeleteUserMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [String?]? = nil, invitedTimers: [Int?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [InvitedRoom?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -5511,21 +5556,12 @@ public final class DeleteUserMutation: GraphQLMutation {
         }
       }
 
-      public var invitedRooms: [String?]? {
+      public var invitedRooms: [InvitedRoom?]? {
         get {
-          return snapshot["invitedRooms"] as? [String?]
+          return (snapshot["invitedRooms"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { InvitedRoom(snapshot: $0) } } }
         }
         set {
-          snapshot.updateValue(newValue, forKey: "invitedRooms")
-        }
-      }
-
-      public var invitedTimers: [Int?]? {
-        get {
-          return snapshot["invitedTimers"] as? [Int?]
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "invitedTimers")
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "invitedRooms")
         }
       }
 
@@ -5634,6 +5670,53 @@ public final class DeleteUserMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+
+      public struct InvitedRoom: GraphQLSelectionSet {
+        public static let possibleTypes = ["InvitedRoom"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("timer", type: .scalar(Int.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(roomId: String, timer: Int? = nil) {
+          self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var roomId: String {
+          get {
+            return snapshot["roomID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "roomID")
+          }
+        }
+
+        public var timer: Int? {
+          get {
+            return snapshot["timer"] as? Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "timer")
+          }
         }
       }
 
@@ -7962,7 +8045,7 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
 
 public final class GetUserQuery: GraphQLQuery {
   public static let operationString =
-    "query GetUser($id: ID!) {\n  getUser(id: $id) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms\n    invitedTimers\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetUser($id: ID!) {\n  getUser(id: $id) {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -8014,8 +8097,7 @@ public final class GetUserQuery: GraphQLQuery {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("invitedRooms", type: .list(.scalar(String.self))),
-        GraphQLField("invitedTimers", type: .list(.scalar(Int.self))),
+        GraphQLField("invitedRooms", type: .list(.object(InvitedRoom.selections))),
         GraphQLField("secretPin", type: .nonNull(.scalar(String.self))),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
@@ -8036,8 +8118,8 @@ public final class GetUserQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [String?]? = nil, invitedTimers: [Int?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [InvitedRoom?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -8130,21 +8212,12 @@ public final class GetUserQuery: GraphQLQuery {
         }
       }
 
-      public var invitedRooms: [String?]? {
+      public var invitedRooms: [InvitedRoom?]? {
         get {
-          return snapshot["invitedRooms"] as? [String?]
+          return (snapshot["invitedRooms"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { InvitedRoom(snapshot: $0) } } }
         }
         set {
-          snapshot.updateValue(newValue, forKey: "invitedRooms")
-        }
-      }
-
-      public var invitedTimers: [Int?]? {
-        get {
-          return snapshot["invitedTimers"] as? [Int?]
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "invitedTimers")
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "invitedRooms")
         }
       }
 
@@ -8253,6 +8326,53 @@ public final class GetUserQuery: GraphQLQuery {
         }
         set {
           snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+
+      public struct InvitedRoom: GraphQLSelectionSet {
+        public static let possibleTypes = ["InvitedRoom"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("timer", type: .scalar(Int.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(roomId: String, timer: Int? = nil) {
+          self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var roomId: String {
+          get {
+            return snapshot["roomID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "roomID")
+          }
+        }
+
+        public var timer: Int? {
+          get {
+            return snapshot["timer"] as? Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "timer")
+          }
         }
       }
 
@@ -8415,7 +8535,7 @@ public final class GetUserQuery: GraphQLQuery {
 
 public final class ListUsersQuery: GraphQLQuery {
   public static let operationString =
-    "query ListUsers($filter: ModelUserFilterInput, $limit: Int, $nextToken: String) {\n  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      firstName\n      lastName\n      birthday\n      pronouns\n      location\n      adPreference\n      deviceFCMToken\n      isOnline\n      invitedRooms\n      invitedTimers\n      secretPin\n      friends\n      rooms\n      hiddenRooms\n      smileNotes {\n        __typename\n        id\n        favorite\n      }\n      shakingCoolLinks\n      tokens\n      background\n      unlockedStickers\n      blueMode\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListUsers($filter: ModelUserFilterInput, $limit: Int, $nextToken: String) {\n  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      firstName\n      lastName\n      birthday\n      pronouns\n      location\n      adPreference\n      deviceFCMToken\n      isOnline\n      invitedRooms {\n        __typename\n        roomID\n        timer\n      }\n      secretPin\n      friends\n      rooms\n      hiddenRooms\n      smileNotes {\n        __typename\n        id\n        favorite\n      }\n      shakingCoolLinks\n      tokens\n      background\n      unlockedStickers\n      blueMode\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelUserFilterInput?
   public var limit: Int?
@@ -8517,8 +8637,7 @@ public final class ListUsersQuery: GraphQLQuery {
           GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
           GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
           GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-          GraphQLField("invitedRooms", type: .list(.scalar(String.self))),
-          GraphQLField("invitedTimers", type: .list(.scalar(Int.self))),
+          GraphQLField("invitedRooms", type: .list(.object(InvitedRoom.selections))),
           GraphQLField("secretPin", type: .nonNull(.scalar(String.self))),
           GraphQLField("friends", type: .list(.scalar(String.self))),
           GraphQLField("rooms", type: .list(.scalar(String.self))),
@@ -8539,8 +8658,8 @@ public final class ListUsersQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [String?]? = nil, invitedTimers: [Int?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
-          self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
+        public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [InvitedRoom?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
         public var __typename: String {
@@ -8633,21 +8752,12 @@ public final class ListUsersQuery: GraphQLQuery {
           }
         }
 
-        public var invitedRooms: [String?]? {
+        public var invitedRooms: [InvitedRoom?]? {
           get {
-            return snapshot["invitedRooms"] as? [String?]
+            return (snapshot["invitedRooms"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { InvitedRoom(snapshot: $0) } } }
           }
           set {
-            snapshot.updateValue(newValue, forKey: "invitedRooms")
-          }
-        }
-
-        public var invitedTimers: [Int?]? {
-          get {
-            return snapshot["invitedTimers"] as? [Int?]
-          }
-          set {
-            snapshot.updateValue(newValue, forKey: "invitedTimers")
+            snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "invitedRooms")
           }
         }
 
@@ -8756,6 +8866,53 @@ public final class ListUsersQuery: GraphQLQuery {
           }
           set {
             snapshot.updateValue(newValue, forKey: "updatedAt")
+          }
+        }
+
+        public struct InvitedRoom: GraphQLSelectionSet {
+          public static let possibleTypes = ["InvitedRoom"]
+
+          public static let selections: [GraphQLSelection] = [
+            GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+            GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
+            GraphQLField("timer", type: .scalar(Int.self)),
+          ]
+
+          public var snapshot: Snapshot
+
+          public init(snapshot: Snapshot) {
+            self.snapshot = snapshot
+          }
+
+          public init(roomId: String, timer: Int? = nil) {
+            self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
+          }
+
+          public var __typename: String {
+            get {
+              return snapshot["__typename"]! as! String
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "__typename")
+            }
+          }
+
+          public var roomId: String {
+            get {
+              return snapshot["roomID"]! as! String
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "roomID")
+            }
+          }
+
+          public var timer: Int? {
+            get {
+              return snapshot["timer"] as? Int
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "timer")
+            }
           }
         }
 
@@ -11205,7 +11362,7 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
 
 public final class OnCreateUserSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateUser {\n  onCreateUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms\n    invitedTimers\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateUser {\n  onCreateUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -11250,8 +11407,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("invitedRooms", type: .list(.scalar(String.self))),
-        GraphQLField("invitedTimers", type: .list(.scalar(Int.self))),
+        GraphQLField("invitedRooms", type: .list(.object(InvitedRoom.selections))),
         GraphQLField("secretPin", type: .nonNull(.scalar(String.self))),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
@@ -11272,8 +11428,8 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [String?]? = nil, invitedTimers: [Int?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [InvitedRoom?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -11366,21 +11522,12 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         }
       }
 
-      public var invitedRooms: [String?]? {
+      public var invitedRooms: [InvitedRoom?]? {
         get {
-          return snapshot["invitedRooms"] as? [String?]
+          return (snapshot["invitedRooms"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { InvitedRoom(snapshot: $0) } } }
         }
         set {
-          snapshot.updateValue(newValue, forKey: "invitedRooms")
-        }
-      }
-
-      public var invitedTimers: [Int?]? {
-        get {
-          return snapshot["invitedTimers"] as? [Int?]
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "invitedTimers")
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "invitedRooms")
         }
       }
 
@@ -11489,6 +11636,53 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+
+      public struct InvitedRoom: GraphQLSelectionSet {
+        public static let possibleTypes = ["InvitedRoom"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("timer", type: .scalar(Int.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(roomId: String, timer: Int? = nil) {
+          self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var roomId: String {
+          get {
+            return snapshot["roomID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "roomID")
+          }
+        }
+
+        public var timer: Int? {
+          get {
+            return snapshot["timer"] as? Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "timer")
+          }
         }
       }
 
@@ -11651,7 +11845,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
 
 public final class OnUpdateUserSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateUser {\n  onUpdateUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms\n    invitedTimers\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateUser {\n  onUpdateUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -11696,8 +11890,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("invitedRooms", type: .list(.scalar(String.self))),
-        GraphQLField("invitedTimers", type: .list(.scalar(Int.self))),
+        GraphQLField("invitedRooms", type: .list(.object(InvitedRoom.selections))),
         GraphQLField("secretPin", type: .nonNull(.scalar(String.self))),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
@@ -11718,8 +11911,8 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [String?]? = nil, invitedTimers: [Int?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [InvitedRoom?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -11812,21 +12005,12 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         }
       }
 
-      public var invitedRooms: [String?]? {
+      public var invitedRooms: [InvitedRoom?]? {
         get {
-          return snapshot["invitedRooms"] as? [String?]
+          return (snapshot["invitedRooms"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { InvitedRoom(snapshot: $0) } } }
         }
         set {
-          snapshot.updateValue(newValue, forKey: "invitedRooms")
-        }
-      }
-
-      public var invitedTimers: [Int?]? {
-        get {
-          return snapshot["invitedTimers"] as? [Int?]
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "invitedTimers")
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "invitedRooms")
         }
       }
 
@@ -11935,6 +12119,53 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+
+      public struct InvitedRoom: GraphQLSelectionSet {
+        public static let possibleTypes = ["InvitedRoom"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("timer", type: .scalar(Int.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(roomId: String, timer: Int? = nil) {
+          self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var roomId: String {
+          get {
+            return snapshot["roomID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "roomID")
+          }
+        }
+
+        public var timer: Int? {
+          get {
+            return snapshot["timer"] as? Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "timer")
+          }
         }
       }
 
@@ -12097,7 +12328,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
 
 public final class OnDeleteUserSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteUser {\n  onDeleteUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms\n    invitedTimers\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteUser {\n  onDeleteUser {\n    __typename\n    id\n    firstName\n    lastName\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      favorite\n    }\n    shakingCoolLinks\n    tokens\n    background\n    unlockedStickers\n    blueMode\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -12142,8 +12373,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         GraphQLField("adPreference", type: .nonNull(.scalar(String.self))),
         GraphQLField("deviceFCMToken", type: .nonNull(.scalar(String.self))),
         GraphQLField("isOnline", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("invitedRooms", type: .list(.scalar(String.self))),
-        GraphQLField("invitedTimers", type: .list(.scalar(Int.self))),
+        GraphQLField("invitedRooms", type: .list(.object(InvitedRoom.selections))),
         GraphQLField("secretPin", type: .nonNull(.scalar(String.self))),
         GraphQLField("friends", type: .list(.scalar(String.self))),
         GraphQLField("rooms", type: .list(.scalar(String.self))),
@@ -12164,8 +12394,8 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [String?]? = nil, invitedTimers: [Int?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms, "invitedTimers": invitedTimers, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, firstName: String, lastName: String, birthday: String, pronouns: String, location: String, adPreference: String, deviceFcmToken: String, isOnline: Bool, invitedRooms: [InvitedRoom?]? = nil, secretPin: String, friends: [String?]? = nil, rooms: [String?]? = nil, hiddenRooms: [String?]? = nil, smileNotes: [SmileNote?]? = nil, shakingCoolLinks: [String?]? = nil, tokens: Int, background: Int, unlockedStickers: [Int?]? = nil, blueMode: Bool, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "User", "id": id, "firstName": firstName, "lastName": lastName, "birthday": birthday, "pronouns": pronouns, "location": location, "adPreference": adPreference, "deviceFCMToken": deviceFcmToken, "isOnline": isOnline, "invitedRooms": invitedRooms.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "secretPin": secretPin, "friends": friends, "rooms": rooms, "hiddenRooms": hiddenRooms, "smileNotes": smileNotes.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "shakingCoolLinks": shakingCoolLinks, "tokens": tokens, "background": background, "unlockedStickers": unlockedStickers, "blueMode": blueMode, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -12258,21 +12488,12 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         }
       }
 
-      public var invitedRooms: [String?]? {
+      public var invitedRooms: [InvitedRoom?]? {
         get {
-          return snapshot["invitedRooms"] as? [String?]
+          return (snapshot["invitedRooms"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { InvitedRoom(snapshot: $0) } } }
         }
         set {
-          snapshot.updateValue(newValue, forKey: "invitedRooms")
-        }
-      }
-
-      public var invitedTimers: [Int?]? {
-        get {
-          return snapshot["invitedTimers"] as? [Int?]
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "invitedTimers")
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "invitedRooms")
         }
       }
 
@@ -12381,6 +12602,53 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+
+      public struct InvitedRoom: GraphQLSelectionSet {
+        public static let possibleTypes = ["InvitedRoom"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
+          GraphQLField("timer", type: .scalar(Int.self)),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(roomId: String, timer: Int? = nil) {
+          self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var roomId: String {
+          get {
+            return snapshot["roomID"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "roomID")
+          }
+        }
+
+        public var timer: Int? {
+          get {
+            return snapshot["timer"] as? Int
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "timer")
+          }
         }
       }
 

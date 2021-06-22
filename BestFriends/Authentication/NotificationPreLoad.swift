@@ -13,6 +13,12 @@ struct NotificationPreLoad: View {
     @EnvironmentObject var sessionManager: SessionManager
     @State private var giveMeXHours: String = ""
     
+    var roomID: String
+    
+    init(roomID: String) {
+        self.roomID = roomID
+    }
+    
     var body: some View {
         NavigationView {
         ZStack {
@@ -105,7 +111,7 @@ struct NotificationPreLoad: View {
 }
 struct NotificationPreLoad_Previews : PreviewProvider {
     static var previews: some View {
-        NotificationPreLoad()
+        NotificationPreLoad(roomID: "")
     }
 }
 

@@ -40,8 +40,7 @@ type User @model {
   adPreference: String!
   deviceFCMToken: String!
   isOnline: Boolean!
-  invitedRooms: [String]
-  invitedTimers: [AWSTimestamp]
+  invitedRooms: [InvitedRoom]
   secretPin: String!
   friends: [String]
   rooms: [String]
@@ -52,6 +51,11 @@ type User @model {
   background: Int!
   unlockedStickers: [Int]
   blueMode: Boolean!
+}
+
+type InvitedRoom {
+  roomID: String!
+  timer: Int
 }
 
 type Advertisement @model {

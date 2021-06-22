@@ -15,7 +15,6 @@ extension User {
     case deviceFCMToken
     case isOnline
     case invitedRooms
-    case invitedTimers
     case secretPin
     case friends
     case rooms
@@ -46,8 +45,7 @@ extension User {
       .field(user.adPreference, is: .required, ofType: .string),
       .field(user.deviceFCMToken, is: .required, ofType: .string),
       .field(user.isOnline, is: .required, ofType: .bool),
-      .field(user.invitedRooms, is: .optional, ofType: .embeddedCollection(of: String.self)),
-      .field(user.invitedTimers, is: .optional, ofType: .embeddedCollection(of: Int.self)),
+      .field(user.invitedRooms, is: .optional, ofType: .embeddedCollection(of: InvitedRoom.self)),
       .field(user.secretPin, is: .required, ofType: .string),
       .field(user.friends, is: .optional, ofType: .embeddedCollection(of: String.self)),
       .field(user.rooms, is: .optional, ofType: .embeddedCollection(of: String.self)),

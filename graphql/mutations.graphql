@@ -172,8 +172,10 @@ mutation CreateUser(
     adPreference
     deviceFCMToken
     isOnline
-    invitedRooms
-    invitedTimers
+    invitedRooms {
+      roomID
+      timer
+    }
     secretPin
     friends
     rooms
@@ -214,8 +216,10 @@ mutation UpdateUser(
     adPreference
     deviceFCMToken
     isOnline
-    invitedRooms
-    invitedTimers
+    invitedRooms {
+      roomID
+      timer
+    }
     secretPin
     friends
     rooms
@@ -256,8 +260,10 @@ mutation DeleteUser(
     adPreference
     deviceFCMToken
     isOnline
-    invitedRooms
-    invitedTimers
+    invitedRooms {
+      roomID
+      timer
+    }
     secretPin
     friends
     rooms
