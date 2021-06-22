@@ -32,6 +32,9 @@ struct NotificationPreLoad: View {
                         
                     }) {
                         Text("Chat now")
+                            .foregroundColor(.green)
+                            .font(.system(size: 60))
+                            .bold()
                     }
                     .padding(20)
                     
@@ -39,6 +42,9 @@ struct NotificationPreLoad: View {
                         
                     }) {
                         Text("Give me 5 minutes")
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
+                            .font(.system(size: 27))
+                            .bold()
                     }
                     .padding(20)
                     
@@ -46,6 +52,9 @@ struct NotificationPreLoad: View {
                         
                     }) {
                         Text("Give me 10 minutes")
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
+                            .font(.system(size: 27))
+                            .bold()
                     }
                     .padding(20)
                     
@@ -53,6 +62,9 @@ struct NotificationPreLoad: View {
                         
                     }) {
                         Text("Give me 15 minutes")
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
+                            .font(.system(size: 27))
+                            .bold()
                     }
                     .padding(20)
                     
@@ -60,6 +72,9 @@ struct NotificationPreLoad: View {
                         
                     }) {
                         Text("Give me 30 minutes")
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
+                            .font(.system(size: 27))
+                            .bold()
                     }
                     .padding(20)
                     
@@ -67,13 +82,9 @@ struct NotificationPreLoad: View {
                         
                     }) {
                         Text("Give me an hour")
-                    }
-                    .padding(20)
-                    
-                    Button(action: {
-                        
-                    }) {
-                        Text("Give me 2 hours")
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
+                            .font(.system(size: 27))
+                            .bold()
                     }
                     .padding(20)
                     
@@ -81,6 +92,9 @@ struct NotificationPreLoad: View {
                         
                     }) {
                         Text("Can't chat for a while")
+                            .foregroundColor(.red)
+                            .font(.system(size: 30))
+                            .bold()
                     }
                     .padding(20)
                 }
