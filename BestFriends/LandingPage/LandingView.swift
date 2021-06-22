@@ -51,6 +51,11 @@ struct LandingView: View {
         getFriends()
         userDataSource.setOnlineStatus(isOnline: true)
         invitedChatRooms = userDataSource.getCurrentUser().invitedRooms ?? []
+        for i in 0..<invitedChatRooms.count {
+            if invitedChatRooms[i].timer != nil {
+                invitedChatRooms.remove(at: i)
+            }
+        }
     }
     
 //    let user: AuthUser
