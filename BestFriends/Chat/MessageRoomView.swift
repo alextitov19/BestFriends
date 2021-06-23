@@ -93,7 +93,7 @@ struct MessageRoomView: View {
                     showAd()
                 }
             
-                AdPlayerView(name: "first")
+                AdPlayerView(name: "EnrichHER")
                     .ignoresSafeArea()
                     .isHidden(areAdsHidden)
             
@@ -264,7 +264,7 @@ struct MessageRoomView: View {
                         
                             ScrollView {
                                 VStack {
-                                    ForEach(1...13, id: \.self) { i in
+                                    ForEach(1...3, id: \.self) { i in
                                         HStack {
                                             ForEach(1...4, id: \.self) { j in
                                                 let number = (4*(i-1))+j
