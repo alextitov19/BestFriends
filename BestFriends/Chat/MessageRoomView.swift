@@ -12,7 +12,10 @@ import Combine
 
 struct MessageRoomView: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+
     @ObservedObject var messageDataSource: MessageDataSource
+    
     @State var showingImagePicker = false
     @State var showingMediaMenu = false
     @State var stickerPopoverShowing = false
@@ -102,11 +105,10 @@ struct MessageRoomView: View {
                 HStack { //header
                     Spacer()
 
-                    Button(action: {
-                        
-                    }) {
-                        Text("< Back")
-                    }
+                    Text("< Back")
+                        .onTapGesture {
+                            sessionManager.showRooms()
+                        }
                     
                     Spacer()
                     

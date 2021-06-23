@@ -12,7 +12,7 @@ struct StickerView: View {
     var body: some View {
         ScrollView {
             VStack {
-                ForEach(1...13, id: \.self) { i in
+                ForEach(1...3, id: \.self) { i in
                     HStack {
                         ForEach(1...4, id: \.self) { j in
                             Image("Sticker\((4*(i-1))+j)")
