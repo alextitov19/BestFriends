@@ -8,6 +8,7 @@
 import SwiftUI
 import Firebase
 import FirebaseCore
+import Amplify
 
 class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -36,6 +37,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
             print("Error fetching FCM registration token: \(error)")
           } else if let token = token {
             print("FCM registration token: \(token)")
+            let user = UserDataSource().getCurrentUser()
+            if user.id != " " {
+                PushNotificationManager(userID: user.id).updateFirestorePushTokenIfNeeded()
+            }
           }
         }
         

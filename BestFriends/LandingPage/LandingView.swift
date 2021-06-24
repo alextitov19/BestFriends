@@ -9,6 +9,7 @@ import SwiftUI
 import Amplify
 import AVKit
 import CoreImage.CIFilterBuiltins
+import Firebase
 
 
 
@@ -41,6 +42,8 @@ struct LandingView: View {
     
     var userDataSource = UserDataSource()
 
+    let firebaseDataSource = FirebaseDataSource()
+
     
     var myID: String
 
@@ -59,6 +62,18 @@ struct LandingView: View {
                     print("Added")
                 }
             }
+        }
+        
+        Messaging.messaging().token { token, error in
+          if let error = error {
+            print("Error fetching FCM registration token: \(error)")
+          } else if let token = token {
+            print("FCM registration token: \(token)")
+            let user = UserDataSource().getCurrentUser()
+            if user.id != " " {
+                PushNotificationManager(userID: user.id).updateFirestorePushTokenIfNeeded()
+            }
+          }
         }
     }
     
@@ -329,9 +344,9 @@ struct LandingView: View {
     
 
     private func inviteClicked() {
-        PushNotificationSender().sendPushNotification(token: "fc3RRtjjkknmnmifG3CqZ0:APA91bG-iSLNZNPmB-j8sK8dkmkMLytXn5RA-4QxSxs8DBH8RNmb3ektbpyOef3-9nyVyfQmcC-w96taPjq5xHB6OIMHKUx3v9KjgyJqcZhE4_eBY4ozMwOlepD_K1_WzMq0xyuBzV9C", title: "My", body: "Notif")
         for index in 0..<stars.count {
             stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
+            
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
@@ -348,7 +363,18 @@ struct LandingView: View {
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
             userDataSource.addRoom(userID: myID, roomID: room.id)
+            var body = "Chat with: "
             for id in friendIDsToInvite {
+                let user = userDataSource.getUser(id: id)
+                body.append(user.firstName)
+                body.append(", ")
+            }
+            body.removeLast()
+            body.removeLast()
+
+            for id in friendIDsToInvite {
+                let token = userDataSource.getUser(id: id).deviceFCMToken
+                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) invited you to chat", body: body)
                 userDataSource.addRoom(userID: id, roomID: room.id)
             }
         }
