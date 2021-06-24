@@ -18,6 +18,7 @@ struct BestFriendsApp: App {
     
     init() {
         configureAmplify()
+        FirebaseApp.configure()
         sessionManager.getCurrentAuthUser()
         
         NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: .main) { _ in
