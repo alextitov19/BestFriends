@@ -50,4 +50,8 @@ class PushNotificationManager: NSObject, MessagingDelegate, UNUserNotificationCe
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         print(response)
     }
+    
+    func getFCMToken() -> String? {
+        return Messaging.messaging().fcmToken
+    }
 }

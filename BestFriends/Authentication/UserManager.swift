@@ -20,10 +20,7 @@ class UserManager: ObservableObject {
                 case .success:
                     print("Successfully created user")
                     
-                    let id = UserDataSource().getCurrentUser().id
-                    print("Registering with the following id: ", id)
-                    let pushManager = PushNotificationManager(userID: id)
-                    pushManager.registerForPushNotifications()
+                    
                     
                 case .failure(let error):
                     print(error)

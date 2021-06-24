@@ -1296,6 +1296,8 @@ struct SignUpQuestionPage3: View {
                         adPref.append("L ")
                     }
                     
+                    let pushManager = PushNotificationManager(userID: username)
+
                     let user = User(
                         id: username,
                         firstName: firstName,
@@ -1304,7 +1306,7 @@ struct SignUpQuestionPage3: View {
                         pronouns: pronouns,
                         location: location,
                         adPreference: adPref,
-                        deviceFCMToken: " ",
+                        deviceFCMToken: pushManager.getFCMToken() ?? "No token",
                         isOnline: true,
                         secretPin: currentPin,
                         tokens: 0,
@@ -1312,6 +1314,8 @@ struct SignUpQuestionPage3: View {
                         blueMode: false)
                     
                     userMamager.create(user)
+                    
+                    pushManager.registerForPushNotifications()
                     
                 }) {
                     Text("Submit")
