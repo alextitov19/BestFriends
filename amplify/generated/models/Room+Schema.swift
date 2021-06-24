@@ -7,6 +7,7 @@ extension Room {
    public enum CodingKeys: String, ModelKey {
     case id
     case name
+    case creatorID
     case members
     case messages
     case blueMode
@@ -25,6 +26,7 @@ extension Room {
     model.fields(
       .id(),
       .field(room.name, is: .required, ofType: .string),
+      .field(room.creatorID, is: .required, ofType: .string),
       .field(room.members, is: .required, ofType: .embeddedCollection(of: String.self)),
       .field(room.messages, is: .required, ofType: .embeddedCollection(of: Message.self)),
       .field(room.blueMode, is: .required, ofType: .bool),

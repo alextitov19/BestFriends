@@ -50,10 +50,14 @@ struct LandingView: View {
         print("Reloading...")
         getFriends()
         userDataSource.setOnlineStatus(isOnline: true)
-        invitedChatRooms = userDataSource.getCurrentUser().invitedRooms ?? []
-        for i in 0..<invitedChatRooms.count {
-            if invitedChatRooms[i].timer != nil {
-                invitedChatRooms.remove(at: i)
+        let possibleRooms = userDataSource.getCurrentUser().invitedRooms ?? []
+        invitedChatRooms = []
+        if possibleRooms.count > 0 {
+            for i in 0..<possibleRooms.count {
+                if possibleRooms[i].timer == nil {
+                    invitedChatRooms.append(possibleRooms[i])
+                    print("Added")
+                }
             }
         }
     }
@@ -339,7 +343,7 @@ struct LandingView: View {
     private func inviteSelectedFriends() {
         if friendIDsToInvite != [] {
             print("Inviting selected friends: ", friendIDsToInvite)
-            let room = Room(name: "Chat Room", members: friendIDsToInvite, blueMode: false)
+            let room = Room(name: "Chat Room", creatorID: myID, members: friendIDsToInvite, blueMode: false)
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
             userDataSource.addRoom(userID: myID, roomID: room.id)

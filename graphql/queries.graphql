@@ -3,6 +3,7 @@ query GetRoom($id: ID!) {
   getRoom(id: $id) {
     id
     name
+    creatorID
     members
     messages {
       id
@@ -29,6 +30,7 @@ query ListRooms(
     items {
       id
       name
+      creatorID
       members
       messages {
         id

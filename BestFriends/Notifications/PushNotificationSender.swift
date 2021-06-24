@@ -7,7 +7,7 @@
 
 import UIKit
 class PushNotificationSender {
-    func sendPushNotification(to token: String, title: String, body: String) {
+    func sendPushNotification(token: String, title: String, body: String) {
         let urlString = "https://fcm.googleapis.com/fcm/send"
         let url = NSURL(string: urlString)!
         let paramString: [String : Any] = ["to" : token,
