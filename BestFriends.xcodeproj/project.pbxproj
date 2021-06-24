@@ -196,7 +196,6 @@
 		7A417EC8265ED52900E95364 /* AdDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417EC7265ED52900E95364 /* AdDataSource.swift */; };
 		7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417ECB265F236700E95364 /* AdPlayerView.swift */; };
 		7A4B9B5E266FD00A00EAF3B9 /* EnrichHER.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B9B5D266FD00A00EAF3B9 /* EnrichHER.m4v */; };
-		7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */; };
 		7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
 		7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */; };
@@ -238,6 +237,7 @@
 		7ACEDED9268503CF00102E70 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEDEC8268503CF00102E70 /* Room.swift */; };
 		7ACEDEDA268503CF00102E70 /* InvitedRoom+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEDEC9268503CF00102E70 /* InvitedRoom+Schema.swift */; };
 		7ACEDEDB268503CF00102E70 /* SmileNote+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEDECA268503CF00102E70 /* SmileNote+Schema.swift */; };
+		7ACEDEDE2685194C00102E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */; };
 		7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1044F265AB93F007627FD /* UIWindowExtension.swift */; };
 		7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD10451265AB948007627FD /* UIDeviceExtension.swift */; };
 		7AD10455265AB9BE007627FD /* DeviceShakeViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD10454265AB9BE007627FD /* DeviceShakeViewModifier.swift */; };
@@ -517,7 +517,6 @@
 		7A417EC7265ED52900E95364 /* AdDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDataSource.swift; sourceTree = "<group>"; };
 		7A417ECB265F236700E95364 /* AdPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdPlayerView.swift; sourceTree = "<group>"; };
 		7A4B9B5D266FD00A00EAF3B9 /* EnrichHER.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = EnrichHER.m4v; sourceTree = "<group>"; };
-		7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolFullScreenView.swift; sourceTree = "<group>"; };
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
 		7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundAnimation.mp4; sourceTree = "<group>"; };
@@ -562,6 +561,7 @@
 		7ACEDEC9268503CF00102E70 /* InvitedRoom+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InvitedRoom+Schema.swift"; sourceTree = "<group>"; };
 		7ACEDECA268503CF00102E70 /* SmileNote+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SmileNote+Schema.swift"; sourceTree = "<group>"; };
 		7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriendsRelease.entitlements; sourceTree = "<group>"; };
+		7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7AD1044F265AB93F007627FD /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		7AD10451265AB948007627FD /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		7AD10454265AB9BE007627FD /* DeviceShakeViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceShakeViewModifier.swift; sourceTree = "<group>"; };
@@ -741,8 +741,8 @@
 				7A8F4256265797FD00E9CBF0 /* models */,
 				D15777B22650522200B6551A /* Gestures */,
 				D1577799264D082800B6551A /* SmileNotes */,
-				7A4C3D78265048100074E0E0 /* GoogleService-Info.plist */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
+				7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */,
 				7AE31CBD262A9A7F001EC5A3 /* Authentication */,
 				7A8943D2262CCA84008F7582 /* LandingPage */,
 				7AA200FB2635C6D100C9F00C /* Room */,
@@ -1106,8 +1106,8 @@
 				7A383FFD267AC306002F354A /* FieldFlowers.mp4 in Resources */,
 				7A4B9B5E266FD00A00EAF3B9 /* EnrichHER.m4v in Resources */,
 				DB15C6B4674E946ADCCFE253 /* amplifyconfiguration.json in Resources */,
-				7A4C3D79265048100074E0E0 /* GoogleService-Info.plist in Resources */,
 				C40B21779B4A21AEE4E5C9BB /* awsconfiguration.json in Resources */,
+				7ACEDEDE2685194C00102E70 /* GoogleService-Info.plist in Resources */,
 				7A384003267AC306002F354A /* blueChat.mp4 in Resources */,
 				7A384001267AC306002F354A /* lightPinkChat.mp4 in Resources */,
 				FADB708799E1553410EFE827 /* amplifyconfiguration.json in Resources */,

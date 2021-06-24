@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>641303044294-d4ve8tk14ul85qbdu49lqlhhftcrcoqh.apps.googleusercontent.com</string>
+	<string>641303044294-5e6stspcsr8j3r5oj4fm5curp4vkqeko.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.641303044294-d4ve8tk14ul85qbdu49lqlhhftcrcoqh</string>
+	<string>com.googleusercontent.apps.641303044294-5e6stspcsr8j3r5oj4fm5curp4vkqeko</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBLpWX4QMIf_EMn_-O93thNoyCrkWN2nDI</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>socialtechlabs.bestfriends</string>
+	<string>com.socialtechlabs.bestfriends</string>
 	<key>PROJECT_ID</key>
 	<string>bestfriends-5c885</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:641303044294:ios:02730d92a279a0453537c7</string>
+	<string>1:641303044294:ios:b404c28ea69760233537c7</string>
 </dict>
 </plist>
