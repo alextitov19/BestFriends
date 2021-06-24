@@ -329,6 +329,7 @@ struct LandingView: View {
     
 
     private func inviteClicked() {
+        PushNotificationSender().sendPushNotification(token: "fc3RRtjjkknmnmifG3CqZ0:APA91bG-iSLNZNPmB-j8sK8dkmkMLytXn5RA-4QxSxs8DBH8RNmb3ektbpyOef3-9nyVyfQmcC-w96taPjq5xHB6OIMHKUx3v9KjgyJqcZhE4_eBY4ozMwOlepD_K1_WzMq0xyuBzV9C", title: "My", body: "Notif")
         for index in 0..<stars.count {
             stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
         }
