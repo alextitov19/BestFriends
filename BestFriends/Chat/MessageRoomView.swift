@@ -235,6 +235,8 @@ struct MessageRoomView: View {
                         Button(action: {
                             let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
                             
+                            currentBody = ""
+                            
                             messageDataSource.sendMessage(message: message)
                         }) {
                             Image("arrow")

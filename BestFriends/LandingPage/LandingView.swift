@@ -374,8 +374,8 @@ struct LandingView: View {
 
             for id in friendIDsToInvite {
                 userDataSource.addRoom(userID: id, roomID: room.id)
-                let token = userDataSource.getUser(id: id).deviceFCMToken
-                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) invited you to chat", body: body)
+//                let token = userDataSource.getUser(id: id).deviceFCMToken
+//                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) invited you to chat", body: body)
             }
         }
     }
