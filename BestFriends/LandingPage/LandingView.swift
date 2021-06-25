@@ -358,8 +358,12 @@ struct LandingView: View {
     
     private func inviteSelectedFriends() {
         if friendIDsToInvite != [] {
+            var name = ""
+            for id in friendIDsToInvite {
+                name.append(userDataSource.getUser(id: id).firstName)
+            }
             print("Inviting selected friends: ", friendIDsToInvite)
-            let room = Room(name: "Chat Room", creatorID: myID, members: friendIDsToInvite, blueMode: false)
+            let room = Room(name: name, creatorID: myID, members: friendIDsToInvite, blueMode: false)
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
             userDataSource.addRoom(userID: myID, roomID: room.id)
