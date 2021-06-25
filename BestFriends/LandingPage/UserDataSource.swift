@@ -83,6 +83,27 @@ struct UserDataSource {
         return finaluser
             
     }
+    func getAllUsernames() -> [String] {
+        var usernames: [String] = []
+        Amplify.API.query(request: .paginatedList(User.self)) { event in
+                switch event {
+                case .success(let result):
+                    switch result {
+                    case .success(let users):
+                        print("Successfully retrieved list of users: \(users)")
+                        for user in users {
+                            usernames.append(user.id)
+                        }
+                    case .failure(let error):
+                        print("Got failed result with \(error.errorDescription)")
+                    }
+                case .failure(let error):
+                    print("Got failed event with error \(error)")
+                }
+            }
+        
+        return usernames
+    }
     
     func updateUser(user: User) {
         Amplify.API.mutate(request: .update(user)) { event in  //update user

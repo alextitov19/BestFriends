@@ -17,6 +17,7 @@ struct SignUpPage1: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     @State private var firstName: String = ""
+    @State private var readyToProceed = false
 
     var body: some View {
         NavigationView{
@@ -26,10 +27,6 @@ struct SignUpPage1: View {
                     .ignoresSafeArea()
                     .scaledToFill()
             
-               
-                
-            
-                    
                     VStack {
                        
                         Spacer()
@@ -77,17 +74,19 @@ struct SignUpPage1: View {
                         Spacer()
                             .frame(height: 50)
                         
-                        NavigationLink(destination: SignUpPage2(firstName: firstName).environmentObject(sessionManager)) {
-                                            Text("Next")
-                                                .font(.title)
-                                                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                                .frame(width: 200, height: 50)
-                                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                                .cornerRadius(25)
-                                        }
+                        Text("Next")
+                            .font(.title)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 200, height: 50)
+                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                            .onTapGesture {
+                                if firstName != "" {
+                                    readyToProceed = true
+                                }
+                            }
                         
-                        Spacer()
-                            .frame(height: 50)
+                        NavigationLink("", destination: SignUpPage2(firstName: firstName).environmentObject(sessionManager), isActive: $readyToProceed)
                         
                      
                     
@@ -106,6 +105,7 @@ struct SignUpPage2: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     @State private var lastName: String = ""
+    @State private var readyToProceed = false
     var firstName: String
     
     var body: some View {
@@ -168,14 +168,19 @@ struct SignUpPage2: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: SignUpPage3(firstName: firstName, lastName: lastName).environmentObject(sessionManager)) {
-                                    Text("Next")
-                                        .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                        .frame(width: 200, height: 50)
-                                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                                }
+                Text("Next")
+                    .font(.title)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .frame(width: 200, height: 50)
+                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                    .onTapGesture {
+                        if lastName != "" {
+                            readyToProceed = true
+                        }
+                    }
+                
+                NavigationLink("", destination: SignUpPage3(firstName: firstName, lastName: lastName).environmentObject(sessionManager), isActive: $readyToProceed)
                 
                 Spacer()
                     .frame(height: 125)
@@ -191,6 +196,8 @@ struct SignUpPage3: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     @State private var username: String = ""
+    @State private var readyToProceed = false
+    @State private var isUsernameTaken = false
     
     var firstName: String
     var lastName: String
@@ -205,67 +212,79 @@ struct SignUpPage3: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            
-            
+            VStack {
+                Text("That username is taken, try a new one.")
+                    .font(.system(size: 40))
+                    .foregroundColor(.red)
+                    .bold()
+                    .multilineTextAlignment(.center)
+                    .padding(20)
+                    .isHidden(!isUsernameTaken)
                 
-               
+                Text("What username do you want?")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 50)
+                TextField("Username", text: $username)
+                    .multilineTextAlignment(.center)
+                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .frame(width: 300, height: 40, alignment: .center)
+                    .font(.title)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .cornerRadius(20)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
                 
-                VStack {
-                    Text("What username do you want?")
-                        .font(.system(size: 30))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    TextField("Username", text: $username)
-                        .multilineTextAlignment(.center)
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 300, height: 40, alignment: .center)
-                        .font(.title)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .cornerRadius(20)
-                        .disableAutocorrection(true)
-                        .autocapitalization(.none)
-
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    NavigationLink(destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username).environmentObject(sessionManager)) {
-                                        Text("Next")
-                                            .font(.title)
-                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                            .frame(width: 200, height: 50)
-                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                    }
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    
-                    
-                   
-                    
-                    Image("Penguin1")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                        .scaledToFill()
-                }
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 50)
+                
+                Text("Next")
+                    .font(.title)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .frame(width: 200, height: 50)
+                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                    .onTapGesture {
+                        checkUsername()
+                    }
+                
+                NavigationLink("", destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username).environmentObject(sessionManager), isActive: $readyToProceed)
+                
+                Spacer()
+                    .frame(height: 50)
+                
+                Image("Penguin1")
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    .scaledToFill()
             }
+            Spacer()
+                .frame(height: 125)
         }
     }
+    
+    private func checkUsername() {
+        let usernames = UserDataSource().getAllUsernames()
+        for uname in usernames {
+            if uname == username {
+                isUsernameTaken = true
+                return
+            }
+        }
+        readyToProceed = true
+    }
+    
+}
 
 
 struct SignUpPage4: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     @State private var password: String = ""
+    @State private var readyToProceed = false
     
     var firstName: String
     var lastName: String
@@ -306,15 +325,21 @@ struct SignUpPage4: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    NavigationLink(destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password).environmentObject(sessionManager)) {
-                                        Text("Next")
-                                            .font(.title)
-                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                            .frame(width: 200, height: 50)
-                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                       
-                                    }
+                    
+                    Text("Next")
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
+                        .onTapGesture {
+                            if password != "" {
+                                readyToProceed = true
+                            }
+                        }
+                    
+                    NavigationLink("", destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password).environmentObject(sessionManager), isActive: $readyToProceed)
+                    
                     
                     Spacer()
                         .frame(height: 50)
@@ -345,6 +370,7 @@ struct SignUpPage5: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     @State private var email: String = ""
+    @State private var readyToProceed = false
     
     var firstName: String
     var lastName: String
@@ -413,14 +439,19 @@ struct SignUpPage5: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    NavigationLink(destination: SignUpPage6(firstName: firstName, lastName: lastName, username: username, password: password, email: email).environmentObject(sessionManager)) {
-                                        Text("Next")
-                                            .font(.title)
-                                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                            .frame(width: 200, height: 50)
-                                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
+                Text("Next")
+                    .font(.title)
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .frame(width: 200, height: 50)
+                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                    .onTapGesture {
+                        if email != "" {
+                            readyToProceed = true
+                        }
                     }
+                
+                NavigationLink("", destination: SignUpPage6(firstName: firstName, lastName: lastName, username: username, password: password, email: email).environmentObject(sessionManager), isActive: $readyToProceed)
 
                     Spacer()
                         .frame(height: 50)
@@ -1350,17 +1381,17 @@ struct SignUpQuestionPage3: View {
 struct SignUpPage1_Previews : PreviewProvider {
     static var previews: some View {
         
-        
-        SignUpPage1().environmentObject(SessionManager())
-        SignUpPage2(firstName: "").environmentObject(SessionManager())
-        SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
-        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
-        SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
-        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
-        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
-        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
-        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
-      
+//
+//        SignUpPage1().environmentObject(SessionManager())
+//        SignUpPage2(firstName: "").environmentObject(SessionManager())
+//        SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
+//        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
+//        SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
+//        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
+//        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
+//        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
+//        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
+//
         VStack {
         SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
         
