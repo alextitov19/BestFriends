@@ -447,7 +447,9 @@ struct SignUpPage5: View {
                     .cornerRadius(25)
                     .onTapGesture {
                         if email != "" {
-                            readyToProceed = true
+                            if email.contains("@") && email.contains(".") {
+                                readyToProceed = true
+                            }
                         }
                     }
                 
@@ -970,7 +972,14 @@ struct SignUpPage9: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 120, alignment: .center)
 
-                    .onAppear(){
+                Text("Tap to share location (one time only!)")
+                    .font(.system(size: 35))
+                    .fontWeight(.regular)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 400, height: 120, alignment: .center)
+                    .padding(20)
+                    .onTapGesture {
                         guard let exposedLocation = self.locationManager.exposedLocation else {
                             print("*** Error in \(#function): exposedLocation is nil")
                             return

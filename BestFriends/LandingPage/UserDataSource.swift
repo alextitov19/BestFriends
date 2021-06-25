@@ -85,6 +85,10 @@ struct UserDataSource {
     }
     func getAllUsernames() -> [String] {
         var usernames: [String] = []
+        
+        let group = DispatchGroup()
+        group.enter()
+        
         Amplify.API.query(request: .paginatedList(User.self)) { event in
                 switch event {
                 case .success(let result):
@@ -94,6 +98,7 @@ struct UserDataSource {
                         for user in users {
                             usernames.append(user.id)
                         }
+                        group.leave()
                     case .failure(let error):
                         print("Got failed result with \(error.errorDescription)")
                     }
@@ -102,6 +107,8 @@ struct UserDataSource {
                 }
             }
         
+        group.wait()
+
         return usernames
     }
     
