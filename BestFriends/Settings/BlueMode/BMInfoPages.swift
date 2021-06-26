@@ -70,13 +70,12 @@ struct BlueModePage1: View {
                 Spacer()
                      .frame(height: 10)
                 
-                NavigationLink(destination: EmptyView()) {
-                                    Text("or 'Skip' walk-through")
-                                        .font(.system(size: 30))
-                                        .fontWeight(.ultraLight)
-                                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                        .frame(width: 300, height: 50)
-                                        .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                NavigationLink(destination: BlueModePage3()) {
+                                    Text("Next")
+                                        .font(.title)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .frame(width: 205, height: 50)
+                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                     }
                 
@@ -98,6 +97,75 @@ struct BlueModePage1_Previews : PreviewProvider {
     }
 }
 
+// ***********************************
+struct BlueModePage3: View {
+
+    var body: some View {
+  
+        ZStack {
+            Image("Shayla3 copy")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
+            VStack {
+                ZStack {
+                    Image("ChatBubbleTrans")
+                        .resizable()
+                        .frame(width: 525, height: 300)
+                        .scaledToFill()
+                    
+                    Text("Before you start 'unfriending' each other on IG & Snap, or reposting private messages that will be hurtful - let's try 'BlueMode'.")
+                        .italic()
+                        .font(.system(size: 27))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 375, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                }
+                .padding()
+                
+            VStack {
+//                Spacer()
+                
+                Spacer()
+                    .frame(height: 325)
+                
+                Text("We know you're upset & hurt, wondering how it came to this after so much good from before.")
+                .italic()
+                .font(.system(size: 30))
+                .fontWeight(.regular)
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                .multilineTextAlignment(.center)
+                .frame(width: 425, height: 125, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                Spacer()
+                    .frame(height: 15)
+                NavigationLink(destination: BlueModePage4()) {
+                        Text("Maybe we can help  >>>")
+                            .font(.system(size: 30))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .frame(width: 375, height: 50)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+           
+                    }
+                
+                Spacer()
+                    .frame(height: 270)
+                }
+            }
+        }
+    }
+}
+
+
+struct BlueModePage3_Previews : PreviewProvider {
+    static var previews: some View {
+        BlueModePage3()
+    }
+}
 
 
 
@@ -110,7 +178,7 @@ struct BlueModePage2: View {
        // NavigationView{
         
         ZStack {
-            Image("Transition3")
+            Image("blueBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -125,7 +193,7 @@ struct BlueModePage2: View {
                             
                         
                         VStack {
-                        Text("Duck in for some quiet time with your thoughts & memories or invite your friend to fix this mess!")
+                        Text("Before the next fight agree to safeguards - helping fix this mess!")
                         .italic()
                         .font(.system(size: 30))
                         .fontWeight(.regular)
@@ -136,8 +204,8 @@ struct BlueModePage2: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            Text("BlueMode")
-                                .font(.system(size: 50))
+                            Text("BlueMode Agreement")
+                                .font(.system(size: 40))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(.blue)
                                 .multilineTextAlignment(.center)
@@ -221,75 +289,6 @@ struct BlueModePaqe2_Previews : PreviewProvider {
 
 
 
-// ***********************************
-struct BlueModePage3: View {
-
-    var body: some View {
-  
-        ZStack {
-            Image("Shayla3 copy")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-            
-            VStack {
-                ZStack {
-                    Image("ChatBubbleTrans")
-                        .resizable()
-                        .frame(width: 525, height: 300)
-                        .scaledToFill()
-                    
-                    Text("Before you start 'unfriending' each other on IG & Snap, or reposting private messages that will be hurtful - let's try 'BlueMode'.")
-                        .italic()
-                        .font(.system(size: 27))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 375, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                }
-                .padding()
-                
-            VStack {
-//                Spacer()
-                
-                Spacer()
-                    .frame(height: 325)
-                
-                Text("We know you're upset & hurt, wondering how it came to this after so much good from before.")
-                .italic()
-                .font(.system(size: 27))
-                .fontWeight(.regular)
-                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .multilineTextAlignment(.center)
-                .frame(width: 425, height: 125, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                Spacer()
-                    .frame(height: 15)
-                NavigationLink(destination: BlueModePage4()) {
-                        Text("Maybe we can help.")
-                            .font(.system(size: 30))
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .frame(width: 375, height: 50)
-                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                            .cornerRadius(25)
-           
-                    }
-                
-                Spacer()
-                    .frame(height: 270)
-                }
-            }
-        }
-    }
-}
-
-
-struct BlueModePage3_Previews : PreviewProvider {
-    static var previews: some View {
-        BlueModePage3()
-    }
-}
 
 // **************************************
 
@@ -568,12 +567,25 @@ struct BlueModePage5: View {
     }
 }
 
+    
+    
+    
+    
+    
 struct BlueModePage5_Previews : PreviewProvider {
     static var previews: some View {
         BlueModePage5()
         }
     }
 }
+
+
+
+
+
+
+
+
 
 
 
