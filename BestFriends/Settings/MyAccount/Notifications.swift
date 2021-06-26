@@ -54,7 +54,7 @@ struct Notifications: View {
                     Spacer()
                         .frame(height: 75)
                    
-                        Toggle("HomePage Notifications", isOn: $landingPageNotifications)
+                        Toggle("Notifications", isOn: $landingPageNotifications)
                            
                             .frame(width: 375, height: 50, alignment: .center)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -66,7 +66,7 @@ struct Notifications: View {
                         .frame(height: 50)
                    
                         
-                    Toggle("Blue-Chat Notifications", isOn: $blueChatNotifications)
+                    Toggle("BlueMode Notifications", isOn: $blueChatNotifications)
                        
                         .frame(width: 375, height: 50, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
