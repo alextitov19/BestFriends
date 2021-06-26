@@ -231,7 +231,7 @@ struct InfoViewPage3: View {
                                     .frame(width: 300, height: 175)
                                     .scaledToFill()
                             
-                                Text("BestFriends is about positivity")
+                                Text("Sending out Push Notifications - Tracking down your Friends to chat.")
                                     .italic()
                                     .font(.system(size: 20))
                                     .fontWeight(.ultraLight)
@@ -244,11 +244,11 @@ struct InfoViewPage3: View {
                                 .frame(height: 70)
                         }
                     }
-                    
+            
                 Spacer()
                     .frame(height: 70)
                     
-                    Text("We have a zero tolorane policy concerning sending hurtful messages to your friends. Please play nicely!")
+                    Text("On Landing page top icon top-right. Then tap Stars of friends you need to talk to right now!")
                        
                         .font(.system(size: 25))
                         .fontWeight(.regular)
