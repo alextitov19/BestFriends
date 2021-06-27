@@ -134,6 +134,42 @@ struct SmileNotesView: View {
                 
                 Spacer()
                 
+                HStack {
+                    
+                    Image("whiteHouse")
+                     .resizable()
+                     .frame(width: 40, height: 40)
+                     .scaledToFill()
+                     .onTapGesture {
+                         sessionManager.getCurrentAuthUser()
+                     }
+                     .padding(20)
+
+                    
+                   Image("messageIconWhite")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .scaledToFill()
+                    .onTapGesture {
+                        sessionManager.showRooms()
+                    }
+                    .padding(20)
+            
+            
+
+                   Image("settingsiconwhite")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .scaledToFill()
+                    .onTapGesture {
+                        sessionManager.showSettings()
+                    }
+                    .padding(20)
+                    
+                    
+                    
+                }
+                
             }
             
             

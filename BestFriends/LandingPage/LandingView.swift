@@ -32,21 +32,21 @@ struct LandingView: View {
     @State private var isShakingCoolPresented = false
     @State private var isAdViewPresented = false
     @State private var isReviewPopupShowing = false //change to true to show popup
-
-
-//    @State private var inviteMode = false
+    
+    
+    //    @State private var inviteMode = false
     
     @State private var selectedFriends = []
     
     @State var idsToInvite: [String] = []
     
     var userDataSource = UserDataSource()
-
+    
     let firebaseDataSource = FirebaseDataSource()
-
+    
     
     var myID: String
-
+    
     @EnvironmentObject var sessionManager: SessionManager
     
     private func reloadData() {
@@ -65,157 +65,148 @@ struct LandingView: View {
         }
         
         Messaging.messaging().token { token, error in
-          if let error = error {
-            print("Error fetching FCM registration token: \(error)")
-          } else if let token = token {
-            print("FCM registration token: \(token)")
-            let user = UserDataSource().getCurrentUser()
-            if user.id != " " {
-                PushNotificationManager(userID: user.id).updateFirestorePushTokenIfNeeded()
+            if let error = error {
+                print("Error fetching FCM registration token: \(error)")
+            } else if let token = token {
+                print("FCM registration token: \(token)")
+                let user = UserDataSource().getCurrentUser()
+                if user.id != " " {
+                    PushNotificationManager(userID: user.id).updateFirestorePushTokenIfNeeded()
+                }
             }
-          }
         }
     }
     
-//    let user: AuthUser
-
+    //    let user: AuthUser
+    
     var body: some View {
-            
+        
         ZStack {
-                
-                Image("purpleBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
-                
-                PlayerView()
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-                
             
-                VStack {
-                    Text(titleText)
-                        .foregroundColor(.white)
-                        .font(.title)
+            Image("purpleBackground")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
+            PlayerView()
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
+            
+            
+            VStack {
+                Text(titleText)
+                    .foregroundColor(.white)
+                    .font(.title)
+                
+                HStack {
+                    Spacer()
                     
-                    HStack {
-                        Spacer()
-                        
-                        Button(action: { inviteClicked() }) {
-                              Image("newMessageWhite")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                          }
-                        
-                        Spacer()
-                            .frame(width: 50)
+                    Button(action: { inviteClicked() }) {
+                        Image("newMessageWhite")
+                            .resizable()
+                            .frame(width: 30, height: 30)
                     }
                     
                     Spacer()
-                        .frame(height: 10)
-                    
-                    ForEach(stars, id: \.id) { star in
-                        VStack {
+                        .frame(width: 50)
+                }
+                
+                Spacer()
+                    .frame(height: 10)
+                
+                ForEach(stars, id: \.id) { star in
+                    VStack {
+                        
+                        HStack {
                             
-                            HStack {
-                                
-                                Spacer()
-                                    .frame(width: 100)
-                                
-                                Button(action: {
-                                    if friendIDsToInvite.contains(star.id) {
-                                        friendIDsToInvite.remove(at: friendIDsToInvite.firstIndex(of: star.id)!)
-                                        friendNamesToInvite.remove(at: friendNamesToInvite.firstIndex(of: star.name)!)
-                                    } else {
-                                        friendIDsToInvite.append(star.id)
-                                        friendNamesToInvite.append(star.name)
-                                    }
-                                }) { star }
-                            }
-
                             Spacer()
-                                .frame(height: 20)
-                        }
-                    }
-                    
-                    Spacer()
-                    
-                    HStack {
-                        
-                        Spacer()
-                        
-                        Button(action: {
-                            //Display invite menu
-                            self.showingActionSheet = true
-
-                          }) {
-                              Image("inviteWhite")
-                                .resizable()
-                                .frame(width: 40, height: 40)
+                                .frame(width: 100)
                             
-                          }
-                        .actionSheet(isPresented: $showingActionSheet) {
-                            ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR code. Add friends that you trust, confide in and that really care about you - and your happiness."), buttons: [
-                                .default(Text("My QR Code")) { showMyQR() },
-                                .default(Text("Photo Library")) { self.showingImagePicker = true },
-                                .cancel()
-                            ])
+                            Button(action: {
+                                if friendIDsToInvite.contains(star.id) {
+                                    friendIDsToInvite.remove(at: friendIDsToInvite.firstIndex(of: star.id)!)
+                                    friendNamesToInvite.remove(at: friendNamesToInvite.firstIndex(of: star.name)!)
+                                } else {
+                                    friendIDsToInvite.append(star.id)
+                                    friendNamesToInvite.append(star.name)
+                                }
+                            }) { star }
                         }
-                        .sheet(isPresented: $showingSheet) {
-                                    QRCodeView(image: myQRCode)
-                                }
-                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                            ImagePicker(image: self.$inputImage)
-                        }
-
-                        Spacer()
-                        
-                               Image("messageIconWhite")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                                .onTapGesture {
-                                    sessionManager.showRooms()
-                                }
                         
                         Spacer()
-//
-                               Image("whiteSmiley")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                                .onTapGesture {
-                                    sessionManager.showSmileNotes()
-                                }
-
-                        Spacer()
-//                        
-                               Image("settingsiconwhite")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                                .onTapGesture {
-                                    sessionManager.showSettings()
-                                }
-//
-//                        Spacer()
-//                        
-//                        NavigationLink(destination: MessagesView()) {
-//                               Image("settingsIconWhite")
-//                                .resizable()
-//                                .frame(width: 40, height: 40)
-//                                .scaledToFill()
-//                           }
-                        
-                        Spacer()
-                        
-                        Button("Sign Out", action: {sessionManager.signOut()})
-                        
+                            .frame(height: 20)
                     }
                 }
-                .navigationBarTitle("")
-                .navigationBarHidden(true)
+                
+                Spacer()
+                
+                HStack {
+                    
+                    
+                    Button(action: {
+                        //Display invite menu
+                        self.showingActionSheet = true
+                        
+                    }) {
+                        Image("inviteWhite")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                        
+                    }
+                    .actionSheet(isPresented: $showingActionSheet) {
+                        ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR code. Add friends that you trust, confide in and that really care about you - and your happiness."), buttons: [
+                            .default(Text("My QR Code")) { showMyQR() },
+                            .default(Text("Photo Library")) { self.showingImagePicker = true },
+                            .cancel()
+                        ])
+                    }
+                    .sheet(isPresented: $showingSheet) {
+                        QRCodeView(image: myQRCode)
+                    }
+                    .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                        ImagePicker(image: self.$inputImage)
+                    }                            .padding(10)
+                    
+                    
+                    
+                    Image("messageIconWhite")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.showRooms()
+                        }
+                        .padding(10)
+                    
+                    //
+                    Image("whiteSmiley")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.showSmileNotes()
+                        }
+                        .padding(10)
+                    
+                    //
+                    Image("settingsiconwhite")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.showSettings()
+                        }
+                        .padding(10)
+                    
+                    
+                    Button("Sign Out", action: {sessionManager.signOut()})
+                        .padding(10)
+                    
+                }
+            }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
             
             VStack {
                 Button(action: {
@@ -235,8 +226,8 @@ struct LandingView: View {
             ForEach(invitedChatRooms, id: \.self.roomID) { invitedRoom in
                 NotificationPreLoad(roomID: invitedRoom.roomID)
             }
-               
-                
+            
+            
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .fullScreenCover(isPresented: $isAdViewPresented, content: AdViewFullScreen.init)
@@ -256,14 +247,14 @@ struct LandingView: View {
         guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }
         
         let data = Data(userID.utf8)
-            filter.setValue(data, forKey: "inputMessage")
-
-            if let outputImage = filter.outputImage {
-                if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
-                    QRCode = UIImage(cgImage: cgimg)
-                    myQRCode = QRCode!
-                }
+        filter.setValue(data, forKey: "inputMessage")
+        
+        if let outputImage = filter.outputImage {
+            if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
+                QRCode = UIImage(cgImage: cgimg)
+                myQRCode = QRCode!
             }
+        }
         
         showingSheet.toggle()
     }
@@ -290,7 +281,7 @@ struct LandingView: View {
             }
             let features = qrDetector?.features(in: ciImage, options: options)
             return features
-
+            
         }
         return nil
     }
@@ -342,18 +333,18 @@ struct LandingView: View {
         }
     }
     
-
+    
     private func inviteClicked() {
         for index in 0..<stars.count {
             stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
             
         }
-
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             inviteSelectedFriends()
         }
-//        let sender = PushNotificationSender()
-//        sender.sendPushNotification(to: "eUQ_bhgw9E12qeZTEvPs4J:APA91bF7Ctromn1OjgNFpjHUSmpbB3f_bQy3D_x6o7KLISJyYmPqy-7ET6TcSYU6LH2zVMDjkiz3_xMWXdIzQHpUETLNd_Ds4HHwSdxPCvAMj8YvJl_5eGQEob0Z10HLO0rQIG60NUW9", title: "Notification title", body: "Notification body")
+        //        let sender = PushNotificationSender()
+        //        sender.sendPushNotification(to: "eUQ_bhgw9E12qeZTEvPs4J:APA91bF7Ctromn1OjgNFpjHUSmpbB3f_bQy3D_x6o7KLISJyYmPqy-7ET6TcSYU6LH2zVMDjkiz3_xMWXdIzQHpUETLNd_Ds4HHwSdxPCvAMj8YvJl_5eGQEob0Z10HLO0rQIG60NUW9", title: "Notification title", body: "Notification body")
     }
     
     private func inviteSelectedFriends() {
@@ -375,11 +366,11 @@ struct LandingView: View {
             }
             body.removeLast()
             body.removeLast()
-
+            
             for id in friendIDsToInvite {
                 userDataSource.addRoom(userID: id, roomID: room.id)
-//                let token = userDataSource.getUser(id: id).deviceFCMToken
-//                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) invited you to chat", body: body)
+                //                let token = userDataSource.getUser(id: id).deviceFCMToken
+                //                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) invited you to chat", body: body)
             }
         }
     }
