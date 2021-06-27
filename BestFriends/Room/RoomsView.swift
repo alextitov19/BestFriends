@@ -61,6 +61,44 @@ struct RoomsView: View {
                         Spacer().frame(width: 20)
                     }
                     
+                    Spacer()
+                    
+                    HStack {
+                        
+                        Image("whiteHouse")
+                         .resizable()
+                         .frame(width: 40, height: 40)
+                         .scaledToFill()
+                         .onTapGesture {
+                             sessionManager.getCurrentAuthUser()
+                         }
+                         .padding(20)
+
+                        
+                        Image("whiteSmiley")
+                         .resizable()
+                         .frame(width: 40, height: 40)
+                         .scaledToFill()
+                         .onTapGesture {
+                             sessionManager.showSmileNotes()
+                         }
+                        .padding(20)
+                
+                
+
+                       Image("settingsiconwhite")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.showSettings()
+                        }
+                        .padding(20)
+                        
+                        
+                        
+                    }
+                    
                 }
             }
             .popover(isPresented: $showingPopup) {
