@@ -7,13 +7,13 @@
 import Foundation
 import Amplify
 import SwiftUI
-import AVKit
+//import AVKit
 
 
 struct BlueModePage1: View {
 
     var body: some View {
-      // NavigationView{
+      NavigationView{
     
        
         ZStack {
@@ -40,7 +40,7 @@ struct BlueModePage1: View {
                             .italic()
                             .font(.system(size: 35))
                             .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0.5167014003, alpha: 1)))
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     }
@@ -48,17 +48,6 @@ struct BlueModePage1: View {
                     
                     Spacer()
                    
-              
-                
-                                    Text(" Unlock special features in 'BlueMode' to help ease this pain.")
-                                        .font(.system(size: 30))
-                                        .fontWeight(.ultraLight)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .frame(width: 425, height: 75
-                                        )
-                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                
                 
                 Spacer()
                      .frame(height: 10)
@@ -73,7 +62,7 @@ struct BlueModePage1: View {
                     }
                 
                 Spacer()
-                    .frame(height: 185)
+                    .frame(height: 250)
             
                     }
             }
@@ -111,7 +100,7 @@ struct BlueModePage2: View {
                         .italic()
                         .font(.system(size: 27))
                         .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0.5167014003, alpha: 1)))
                         .multilineTextAlignment(.center)
                         .frame(width: 375, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 }
@@ -123,18 +112,18 @@ struct BlueModePage2: View {
                 Spacer()
                     .frame(height: 325)
                 
-                Text("We know you're upset & hurt, wondering how it came to this after so much good from before.")
+                Text("We know you're upset & hurt, wondering how it could have come to all this!")
                 .italic()
                 .font(.system(size: 30))
                 .fontWeight(.regular)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .multilineTextAlignment(.center)
-                .frame(width: 425, height: 125, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 25)
                 NavigationLink(destination: BlueModePage3()) {
-                        Text("Maybe we can help  >>>")
+                        Text("Unlock 'Special' features >>>")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -185,36 +174,36 @@ struct BlueModePage3: View {
                             
                         
                         VStack {
-                        Text("Before the fight agree to safeguards fix this mess!")
+                            Text("Question?")
+                            .italic()
+                            .font(.system(size: 25))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 375, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            
+                        Text("What's the worst part of trying to makeup with someone?")
                         .italic()
-                        .font(.system(size: 30))
+                        .font(.system(size: 25))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 375, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
-                            Spacer()
-                                .frame(height: 20)
-                            
-                            Text("BlueMode Agreement")
-                                .font(.system(size: 40))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(.blue)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                       
                         
                         }
                         
                         Spacer()
-                            .frame(width: 75)
+                            .frame(width: 125)
                         
                     }
                     
                     
                 HStack {
                     VStack {
-                        Spacer()
-                            .frame(height:5)
+                     
                                               
                     }
                     
@@ -226,11 +215,11 @@ struct BlueModePage3: View {
                         
                             
                             VStack {
-                                Text("Because this hurts 💔")
+                                Text("Yep, not knowing if they are every going to talk to you again!💔")
                                     .italic()
-                                    .font(.system(size: 60))
+                                    .font(.system(size: 25))
                                     .fontWeight(.regular)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0.5167014003, alpha: 1)))
                                     .multilineTextAlignment(.center)
                                     .frame(width: 350, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 
@@ -238,7 +227,8 @@ struct BlueModePage3: View {
                             
                             }
                             
-                            
+                            Spacer()
+                                .frame(width: 350)
                         }
                         
                       
@@ -249,10 +239,10 @@ struct BlueModePage3: View {
                    
                    
                 NavigationLink(destination: BlueModePage4()) {
-                                    Text("Next")
+                                    Text("BlueMode User Agreement")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .frame(width: 325, height: 50)
+                                        .frame(width: 385, height: 50)
                                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
                     
@@ -261,7 +251,7 @@ struct BlueModePage3: View {
                     
                 }
             Spacer()
-                .frame(height: 265)
+                .frame(height: 120)
         
         }
         }
@@ -281,10 +271,129 @@ struct BlueModePaqe3_Previews : PreviewProvider {
 
 
 
+    // ********************************************
+
+    struct BlueModePage4: View {
+
+        var body: some View {
+
+           // NavigationView{
+            
+            ZStack {
+                Image("blueBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+                    
+                VStack {
+                    
+                    VStack {
+                        
+                       
+                        HStack {
+                            Spacer()
+                                
+                            
+                            VStack {
+                            Text("Here's the deal. When you agree to BlueMode's Terms you are granted 1 wish.")
+                            .italic()
+                            .font(.system(size: 25))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 375, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
+                             
+                                
+                                Text("BlueMode grants you the following wish: The person you put in BlueMode agrees to respond to one 'Special' push notification no matter what - and vice-versa.")
+                                    .font(.system(size: 25))
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            }
+                            
+                            Spacer()
+                                .frame(width: 75)
+                            
+                        }
+                        
+                        
+                    HStack {
+                        VStack {
+                            Spacer()
+                                .frame(height:5)
+                                                  
+                        }
+                        
+                            ZStack {
+                                Image("ChatBubbleTrans")
+                                    .resizable()
+                                    .frame(width: 525, height: 250)
+                                    .scaledToFill()
+                            
+                                
+                                VStack {
+                                    Text("A 'Special' push notification will be sent letting them know your're redeming your wish.")
+                                        .italic()
+                                        .font(.system(size: 20))
+                                        .fontWeight(.regular)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                                        .multilineTextAlignment(.center)
+                                        .frame(width: 350, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    
+                                  
+                                
+                                }
+                                
+                                Spacer()
+                                    .frame(width: 250)
+                            }
+                            
+                          
+                        }
+                    }
+     
+                    Spacer()
+                       
+                       
+                    NavigationLink(destination: BlueModePage5()) {
+                                        Text("Ok, I agree.")
+                                            .font(.title)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .frame(width: 385, height: 50)
+                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                        
+                        
+                        
+                        
+                    }
+                Spacer()
+                    .frame(height: 120)
+            
+            }
+            }
+        }
+    }
+
+
+
+
+    struct BlueModePaqe4_Previews : PreviewProvider {
+        static var previews: some View {
+       
+            BlueModePage4()
+        }
+    }
+
+
+
 
 // **************************************
 
-struct BlueModePage4: View {
+struct BlueModePage5: View {
     
 
     var body: some View {
@@ -299,7 +408,7 @@ struct BlueModePage4: View {
             VStack {
                 
      
-                Text("BlueMode")
+                Text("Special Features")
                     .font(.system(size: 50))
                     .fontWeight(.ultraLight)
                     .foregroundColor(.blue)
@@ -363,17 +472,7 @@ struct BlueModePage4: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        
-                        NavigationLink(
-                            destination: InfoViewPage1(),
-                            label: {
-                                Text("Ready? Let's try to set a time to meet or talk.")
-                            })
-                        .frame(width: 325, height: 50, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                        .cornerRadius(25)
-                        
+                   
                         
                         Spacer()
                             .frame(height: 15)
@@ -389,7 +488,7 @@ struct BlueModePage4: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        NavigationLink(destination: BlueModePage5()) {
+                        NavigationLink(destination: BlueModePage6()) {
                                             Text("Not ready to talk just yet?")
                                                 .font(.system(size: 30))
                                                 .fontWeight(.ultraLight)
@@ -422,16 +521,16 @@ struct BlueModePage4: View {
 
 
  
-struct BlueModePage4_Previews : PreviewProvider {
+struct BlueModePage5_Previews : PreviewProvider {
     static var previews: some View {
-        BlueModePage4()
+        BlueModePage5()
     }
 }
 
 
 // ***********************************
 
-struct BlueModePage5: View {
+struct BlueModePage6: View {
     
 
     var body: some View {
@@ -446,7 +545,7 @@ struct BlueModePage5: View {
                
                
                 
-                Text("BlueMode")
+                Text("Special Features")
                     .font(.system(size: 50))
                     .fontWeight(.ultraLight)
                     .foregroundColor(.blue)
@@ -537,7 +636,7 @@ struct BlueModePage5: View {
                         Spacer()
                             .frame(height: 55)
                      
-                        NavigationLink(destination: BlueModePage1()) {
+                        NavigationLink(destination: SettingsView()) {
                                             Text("Ok, let's do this >>>")
                                                 .font(.system(size: 30))
                                                 .fontWeight(.ultraLight)
@@ -564,9 +663,9 @@ struct BlueModePage5: View {
     
     
     
-struct BlueModePage5_Previews : PreviewProvider {
+struct BlueModePage6_Previews : PreviewProvider {
     static var previews: some View {
-        BlueModePage5()
+        BlueModePage6()
         }
     }
 }
@@ -651,3 +750,4 @@ struct BlueModePage5_Previews : PreviewProvider {
 //
 //
 
+}
