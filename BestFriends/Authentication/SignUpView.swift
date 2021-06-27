@@ -322,6 +322,15 @@ struct SignUpPage4: View {
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
 
+                    Text("Password must contain at least 8 characters plus one capital letter.")
+                        .italic()
+                        .font(.system(size: 15))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    
                     Spacer()
                         .frame(height: 50)
                     
