@@ -46,17 +46,10 @@ struct BlueModePage1: View {
                     }
             
                     
-               
-                    
                     Spacer()
                    
               
-                    
                 
-             
-               
-                
-                NavigationLink(destination: BlueModePage2()) {
                                     Text(" Unlock special features in 'BlueMode' to help ease this pain.")
                                         .font(.system(size: 30))
                                         .fontWeight(.ultraLight)
@@ -65,12 +58,12 @@ struct BlueModePage1: View {
                                         )
                                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                         .cornerRadius(25)
-                }
+                
                 
                 Spacer()
                      .frame(height: 10)
                 
-                NavigationLink(destination: BlueModePage3()) {
+                NavigationLink(destination: BlueModePage2()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -91,14 +84,13 @@ struct BlueModePage1: View {
 
 struct BlueModePage1_Previews : PreviewProvider {
     static var previews: some View {
-   
-        BlueModePage1()
+    BlueModePage1()
 
     }
 }
 
 // ***********************************
-struct BlueModePage3: View {
+struct BlueModePage2: View {
 
     var body: some View {
   
@@ -141,7 +133,7 @@ struct BlueModePage3: View {
                 
                 Spacer()
                     .frame(height: 15)
-                NavigationLink(destination: BlueModePage4()) {
+                NavigationLink(destination: BlueModePage3()) {
                         Text("Maybe we can help  >>>")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
@@ -161,9 +153,9 @@ struct BlueModePage3: View {
 }
 
 
-struct BlueModePage3_Previews : PreviewProvider {
+struct BlueModePage2_Previews : PreviewProvider {
     static var previews: some View {
-        BlueModePage3()
+        BlueModePage2()
     }
 }
 
@@ -171,7 +163,7 @@ struct BlueModePage3_Previews : PreviewProvider {
 
 // ********************************************
 
-struct BlueModePage2: View {
+struct BlueModePage3: View {
 
     var body: some View {
 
@@ -193,7 +185,7 @@ struct BlueModePage2: View {
                             
                         
                         VStack {
-                        Text("Before the next fight agree to safeguards - helping fix this mess!")
+                        Text("Before the fight agree to safeguards fix this mess!")
                         .italic()
                         .font(.system(size: 30))
                         .fontWeight(.regular)
@@ -256,7 +248,7 @@ struct BlueModePage2: View {
                 Spacer()
                    
                    
-                NavigationLink(destination: BlueModePage3()) {
+                NavigationLink(destination: BlueModePage4()) {
                                     Text("Next")
                                         .font(.title)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -279,10 +271,10 @@ struct BlueModePage2: View {
 
 
 
-struct BlueModePaqe2_Previews : PreviewProvider {
+struct BlueModePaqe3_Previews : PreviewProvider {
     static var previews: some View {
    
-        BlueModePage2()
+        BlueModePage3()
     }
 }
 
@@ -530,7 +522,7 @@ struct BlueModePage5: View {
                             .frame(height: 30)
                         
                         NavigationLink(
-                            destination: InfoViewPage1(),
+                            destination: EmptyView(),
                             label: {
                                 Text("We'll send push notifications instantly when your messages are read & new messages are posted in BlueMode Chat.")
                                     .frame(width: 400, height: 100, alignment: .center)
@@ -545,7 +537,7 @@ struct BlueModePage5: View {
                         Spacer()
                             .frame(height: 55)
                      
-                        NavigationLink(destination: EmptyView()) {
+                        NavigationLink(destination: BlueModePage1()) {
                                             Text("Ok, let's do this >>>")
                                                 .font(.system(size: 30))
                                                 .fontWeight(.ultraLight)
