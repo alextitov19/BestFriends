@@ -37,7 +37,7 @@ type User @model {
   lastName: String!
   birthday: AWSDate!
   pronouns: String!
-  location: String!
+  location: String
   adPreference: String!
   deviceFCMToken: String!
   isOnline: Boolean!

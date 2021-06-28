@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-  platform :ios, '14.0'
+  platform :ios, '14.6'
 
 target 'BestFriends' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -8,6 +8,7 @@ target 'BestFriends' do
   # Pods for BestFriends
   pod 'Amplify'
   pod 'Amplify/Tools'
+  pod 'AmplifyPlugins/AWSPinpointAnalyticsPlugin'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
   pod 'AmplifyPlugins/AWSAPIPlugin'
   pod 'AmplifyPlugins/AWSS3StoragePlugin'

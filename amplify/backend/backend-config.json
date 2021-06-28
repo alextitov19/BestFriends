@@ -31,6 +31,11 @@
       "providerPlugin": "awscloudformation"
     }
   },
-  "analytics": {},
+  "analytics": {
+    "bestfriends": {
+      "service": "Pinpoint",
+      "providerPlugin": "awscloudformation"
+    }
+  },
   "notifications": {}
 }
