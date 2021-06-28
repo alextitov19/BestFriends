@@ -42,7 +42,7 @@ struct NotificationPreLoad: View {
                         sessionManager.chat(room: RoomDataSource().getRoom(id: roomID))
                         setTimer(minutes: 0)
                     }) {
-                        Text("Chat now")
+                        Text("Chat now!")
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9338757992, blue: 0, alpha: 1)))
                             .font(.system(size: 60))
                             .bold()
@@ -105,7 +105,7 @@ struct NotificationPreLoad: View {
                     Button(action: {
                         setTimer(minutes: -1)
                     }) {
-                        Text("Sorry, I'm tied up for a while")
+                        Text("Sorry, I'm tied up for a while.")
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0.5167014003, alpha: 1)))
                             .font(.system(size: 30))
                             .bold()
