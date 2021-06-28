@@ -358,7 +358,7 @@ struct LandingView: View {
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
             userDataSource.addRoom(userID: myID, roomID: room.id)
-            var body = "Chat with: "
+            var body = "with: "
             for id in friendIDsToInvite {
                 let user = userDataSource.getUser(id: id)
                 body.append(user.firstName)
@@ -370,7 +370,7 @@ struct LandingView: View {
             for id in friendIDsToInvite {
                 userDataSource.addRoom(userID: id, roomID: room.id)
                 //                let token = userDataSource.getUser(id: id).deviceFCMToken
-                //                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) invited you to chat", body: body)
+                //                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk to you on BestFriends", body: body)
             }
         }
     }
