@@ -56,7 +56,7 @@ struct AddFriends: View {
                         .frame(width: 200, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                       
                     }
-                    Text("Step 1.  Select [my QR code]                  .")
+                    Text("Step 1.  Select [Get my QR code]                  .")
                         
                          .font(.system(size: 22))
                          .fontWeight(.regular)
@@ -81,7 +81,7 @@ struct AddFriends: View {
                          .multilineTextAlignment(.center)
                          .frame(width: 375, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                   
-                    Text("Step 4. Ask friend to select [my gallery] and tap the image of your QR code.")
+                    Text("Step 4. Ask friend to select [My Gallery] and tap the image of your QR code.")
                         
                          .font(.system(size: 22))
                          .fontWeight(.regular)
