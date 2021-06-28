@@ -155,9 +155,12 @@ struct LandingView: View {
                         
                     }
                     .actionSheet(isPresented: $showingActionSheet) {
-                        ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR code. Add friends that you trust, confide in and that really care about you - and your happiness."), buttons: [
+                        ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes. You MUST upgrade your OS on your iPhone to 14.5 or higher for QR codes to work."), buttons: [
                             .default(Text("Get my QR code")) { showMyQR() },
                             .default(Text("My Gallery")) { self.showingImagePicker = true },
+                           // Rob added a third option in the Add Friends popup on Landing page
+                            .default(Text("Add Friend Instructions")) { self.showingImagePicker = true },
+                            //
                             .cancel()
                         ])
                     }
