@@ -22,23 +22,44 @@ struct AddFriends: View {
                     .scaledToFill()
                 
                 VStack {
-                    Text("Adding Friends")
-                       
-                        .font(.system(size: 40))
+                
+                  
+                    Text("* You MUST update your iPhone to 14.5 or higher for QR codes to work.")
+                        .italic()
+                        .font(.system(size: 20))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
                         .fontWeight(.regular)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                  
-                    Text("(you can be in multiple friend groups)")
-                        .italic()
-                        .font(.system(size: 20))
-                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
+                    Spacer()
+                        .frame(height: 15)
+                Text("Adding friends with QR codes ... ")
+                    .italic()
+                     .font(.system(size: 25))
+                     .fontWeight(.regular)
+                     .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                     .multilineTextAlignment(.center)
+                     .frame(width: 385, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                    Text("KEEPS TROLLS OUT!")
+                       
+                         .font(.system(size: 25))
+                         .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
+                         .multilineTextAlignment(.center)
+                         .frame(width: 385, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                        .frame(height: 55)
+                    VStack {
+                        Text("How to Add Friends")
+                           
+                            .font(.system(size: 45))
+                            .fontWeight(.regular)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 385, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     HStack {
                     
                     Image("inviteWhite")
@@ -56,7 +77,7 @@ struct AddFriends: View {
                         .frame(width: 200, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                       
                     }
-                    Text("Step 1.  Select [Get my QR code]                  .")
+                    Text("Step 1.  Select [Get my QR code]")
                         
                          .font(.system(size: 22))
                          .fontWeight(.regular)
@@ -95,7 +116,7 @@ struct AddFriends: View {
                     NavigationLink(
                         destination: SettingsView(),
                         label: {
-                            Text("I'm Done")
+                            Text("Ok, got it.")
                         })
                         .font(.system(size: 35))
                         .frame(width: 325, height: 50)
@@ -105,18 +126,8 @@ struct AddFriends: View {
                                      .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                      )
                     
-                    VStack {
-                    
-                    Text("Add friends that you trust, confide in and that really care about you and your happiness.")
-                        .italic()
-                         .font(.system(size: 25))
-                         .fontWeight(.regular)
-                         .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
-                         .multilineTextAlignment(.center)
-                         .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
-                 
                    
+                 
                
                     Spacer()
                         .frame(height: 55)
