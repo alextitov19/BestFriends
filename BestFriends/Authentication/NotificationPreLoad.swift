@@ -31,17 +31,26 @@ struct NotificationPreLoad: View {
                 
                 VStack {
                     
-                    
+                    Text("What's up? I can ...")
+                        .italic()
+                        .font(.system(size: 40))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 375, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     Button(action: {
                         sessionManager.chat(room: RoomDataSource().getRoom(id: roomID))
                         setTimer(minutes: 0)
                     }) {
                         Text("Chat now")
-                            .foregroundColor(.green)
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9338757992, blue: 0, alpha: 1)))
                             .font(.system(size: 60))
                             .bold()
                     }
                     .padding(20)
+                    
+                    Spacer()
+                        .frame(height: 35)
                     
                     Button(action: {
                         setTimer(minutes: 5)
@@ -96,8 +105,8 @@ struct NotificationPreLoad: View {
                     Button(action: {
                         setTimer(minutes: -1)
                     }) {
-                        Text("Can't chat for a while")
-                            .foregroundColor(.red)
+                        Text("Sorry, I'm tied up for a while")
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0.5167014003, alpha: 1)))
                             .font(.system(size: 30))
                             .bold()
                     }
