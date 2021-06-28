@@ -370,7 +370,7 @@ struct LandingView: View {
             for id in friendIDsToInvite {
                 userDataSource.addRoom(userID: id, roomID: room.id)
                 //                let token = userDataSource.getUser(id: id).deviceFCMToken
-                //                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk to you on BestFriends", body: body)
+                //                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk. When can you talk on BestFriends", body: body)
             }
         }
     }
