@@ -1,0 +1,21 @@
+{
+    "appName": "bestfriends",
+    "roleName": "pinpointLambdaRolebeb80f5b",
+    "cloudformationPolicyName": "cloudformationPolicybeb80f5b",
+    "cloudWatchPolicyName": "cloudWatchPolicybeb80f5b",
+    "pinpointPolicyName": "pinpointPolicybeb80f5b",
+    "authPolicyName": "pinpoint_amplify_beb80f5b",
+    "unauthPolicyName": "pinpoint_amplify_beb80f5b",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}

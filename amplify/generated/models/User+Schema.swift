@@ -41,7 +41,7 @@ extension User {
       .field(user.lastName, is: .required, ofType: .string),
       .field(user.birthday, is: .required, ofType: .date),
       .field(user.pronouns, is: .required, ofType: .string),
-      .field(user.location, is: .required, ofType: .string),
+      .field(user.location, is: .optional, ofType: .string),
       .field(user.adPreference, is: .required, ofType: .string),
       .field(user.deviceFCMToken, is: .required, ofType: .string),
       .field(user.isOnline, is: .required, ofType: .bool),
