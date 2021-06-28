@@ -65,7 +65,7 @@ struct NotificationPreLoad: View {
                     Button(action: {
                         setTimer(minutes: 10)
                     }) {
-                        Text("Give me 10 minutes")
+                        Text("10 minutes")
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
                             .font(.system(size: 27))
                             .bold()
@@ -75,7 +75,7 @@ struct NotificationPreLoad: View {
                     Button(action: {
                         setTimer(minutes: 15)
                     }) {
-                        Text("Give me 15 minutes")
+                        Text("15 minutes")
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
                             .font(.system(size: 27))
                             .bold()
@@ -85,7 +85,7 @@ struct NotificationPreLoad: View {
                     Button(action: {
                         setTimer(minutes: 30)
                     }) {
-                        Text("Give me 30 minutes")
+                        Text("30 minutes")
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
                             .font(.system(size: 27))
                             .bold()
