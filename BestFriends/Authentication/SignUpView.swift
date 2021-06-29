@@ -345,8 +345,8 @@ struct SignUpPage4: View {
                             if password != "" {
                                 if password.count >= 8 {
                                     let capitalLetterRegEx  = ".*[A-Z]+.*"
-                                    var texttest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
-                                    var capitalresult = texttest!.evaluateWithObject(password)
+                                    let texttest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
+                                    let capitalresult = texttest.evaluate(with: password)
                                     if capitalresult == true {
                                         readyToProceed = true
                                     }
