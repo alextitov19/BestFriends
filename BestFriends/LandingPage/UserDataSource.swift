@@ -11,7 +11,7 @@ import Amplify
 struct UserDataSource {
     
     func getUser(id: String) -> User {
-        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, blueMode: false)
+        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, blueMode: false, notificationsBM: true, notificationsLP: true)
         
         let group = DispatchGroup()
         group.enter()
@@ -46,7 +46,7 @@ struct UserDataSource {
     }
     
     func getCurrentUser() -> User {
-        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, blueMode: false)
+        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, blueMode: false, notificationsBM: true, notificationsLP: true)
         
         guard let id = Amplify.Auth.getCurrentUser()?.username else {
             return finaluser

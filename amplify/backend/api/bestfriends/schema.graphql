@@ -53,6 +53,8 @@ type User @model {
   background: Int!
   unlockedStickers: [Int]
   blueMode: Boolean!
+  notificationsBM: Boolean!
+  notificationsLP: Boolean!
 }
 
 type InvitedRoom {

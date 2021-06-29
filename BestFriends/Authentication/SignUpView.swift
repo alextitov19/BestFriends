@@ -1371,7 +1371,9 @@ struct SignUpQuestionPage3: View {
                         secretPin: currentPin,
                         tokens: 0,
                         background: 1,
-                        blueMode: false)
+                        blueMode: false,
+                        notificationsBM: true,
+                        notificationsLP: true)
                     
                     userMamager.create(user)
                     

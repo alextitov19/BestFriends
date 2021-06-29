@@ -24,6 +24,8 @@ public struct User: Model {
   public var background: Int
   public var unlockedStickers: [Int]?
   public var blueMode: Bool
+  public var notificationsBM: Bool
+  public var notificationsLP: Bool
   
   public init(id: String = UUID().uuidString,
       firstName: String,
@@ -45,7 +47,9 @@ public struct User: Model {
       tokens: Int,
       background: Int,
       unlockedStickers: [Int]? = [],
-      blueMode: Bool) {
+      blueMode: Bool,
+      notificationsBM: Bool,
+      notificationsLP: Bool) {
       self.id = id
       self.firstName = firstName
       self.lastName = lastName
@@ -67,5 +71,7 @@ public struct User: Model {
       self.background = background
       self.unlockedStickers = unlockedStickers
       self.blueMode = blueMode
+      self.notificationsBM = notificationsBM
+      self.notificationsLP = notificationsLP
   }
 }

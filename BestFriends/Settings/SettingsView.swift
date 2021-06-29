@@ -81,9 +81,6 @@ struct SettingsView: View {
                                         .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
                                 )
                             
-                            
-                            
-                            
                             Spacer().frame(height: 45)
                             
                             
@@ -391,7 +388,6 @@ struct SettingsView: View {
                                                     .frame(height: 45)
                                                 
                                                 
-                                                
                                                 Text("Become Official BestFriends Beta Tester")
                                                     
                                                     .font(.system(size: 32))
@@ -415,33 +411,29 @@ struct SettingsView: View {
                                                             .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                                     )
                                                 
-                                                Spacer()
-                                                    .frame(height: 100)
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
+                                                VStack {
+                                                    
+                                                    Spacer()
+                                                        .frame(height: 100)
+                                                    
+                                                    NavigationLink(
+                                                        destination: EmptyView(),
+                                                        label: {
+                                                            Text("Sign Out")
+                                                        })
+                                                        .frame(width: 325, height: 50)
+                                                        .foregroundColor(Color(.red))
+                                                        .overlay(
+                                                            RoundedRectangle(cornerRadius: 25)
+                                                                .stroke(Color(.red), lineWidth: 1)
+                                                        )
+                                                }
                                             }
-                                            .navigationBarTitle("")
-                                            .navigationBarHidden(true)
                                         }
-                                        .navigationBarTitle("")
-                                        .navigationBarHidden(true)
                                     }
                                 }
-                                .navigationBarTitle("")
-                                .navigationBarHidden(true)
-                                
                             }
-                            
-                            
-                            
-                            .navigationBarTitle("")
-                            .navigationBarHidden(true)
                         }
-                        
                         .navigationBarTitle("")
                         .navigationBarHidden(true)
                     }
@@ -449,31 +441,31 @@ struct SettingsView: View {
                     HStack {
                         
                         Image("whiteHouse")
-                         .resizable()
-                         .frame(width: 40, height: 40)
-                         .scaledToFill()
-                         .onTapGesture {
-                             sessionManager.getCurrentAuthUser()
-                         }
-                         .padding(20)
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.getCurrentAuthUser()
+                            }
+                            .padding(20)
                         
                         Image("messageIconWhite")
-                         .resizable()
-                         .frame(width: 40, height: 40)
-                         .scaledToFill()
-                         .onTapGesture {
-                             sessionManager.showRooms()
-                         }
-                         .padding(20)
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showRooms()
+                            }
+                            .padding(20)
                         
                         Image("whiteSmiley")
-                         .resizable()
-                         .frame(width: 40, height: 40)
-                         .scaledToFill()
-                         .onTapGesture {
-                             sessionManager.showSmileNotes()
-                         }
-                        .padding(20)
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showSmileNotes()
+                            }
+                            .padding(20)
                         
                     }
                 }
@@ -481,3 +473,11 @@ struct SettingsView: View {
         }
     }
 }
+
+struct SettingsView_Previews : PreviewProvider {
+    static var previews: some View {
+        SettingsView()
+            .environmentObject(SessionManager())
+    }
+}
+
