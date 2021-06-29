@@ -12,6 +12,7 @@ struct ResetPassword: View {
    
     @State private var oldPassword: String = ""
     @State private var newPassword: String = ""
+    @State private var string = ""
 
     
     var body: some View {
@@ -31,6 +32,12 @@ struct ResetPassword: View {
                     
                     Spacer()
                         .frame(height: 50)
+                    
+                    Text("Password reset \(string)")
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .isHidden(string.count > 0)
                     
                     SecureField("Enter OLD password", text: $oldPassword)
                         .multilineTextAlignment(.center)
@@ -62,7 +69,12 @@ struct ResetPassword: View {
                         
                     Button(action: {
                         if(oldPassword != "" && newPassword != "" && oldPassword != newPassword) {
-                            UserManager().changePassword(oldPassword: oldPassword, newPassword: newPassword)
+                            let bool = UserManager().changePassword(oldPassword: oldPassword, newPassword: newPassword)
+                            if bool == true {
+                                string = "successfully"
+                            } else {
+                                string = "failed"
+                            }
                         }
 
                       }) {

@@ -67,15 +67,23 @@ class UserManager: ObservableObject {
         }
     }
 
-    func changePassword(oldPassword: String, newPassword: String) {
+    func changePassword(oldPassword: String, newPassword: String) -> Bool {
+        var bool = false
+        let group = DispatchGroup()
+        group.enter()
+        
         Amplify.Auth.update(oldPassword: oldPassword, to: newPassword) { result in
             switch result {
             case .success:
                 print("Change password succeeded")
+                bool = true
+                group.leave()
             case .failure(let error):
                 print("Change password failed with error \(error)")
             }
         }
+        group.wait()
+        return bool
     }
     
     func updateEmail(email: String) {
