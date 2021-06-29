@@ -285,6 +285,7 @@ struct SignUpPage4: View {
     @EnvironmentObject var sessionManager: SessionManager
     @State private var password: String = ""
     @State private var readyToProceed = false
+    @State private var changingColor = Color(.white)
     
     var firstName: String
     var lastName: String
@@ -326,7 +327,7 @@ struct SignUpPage4: View {
                         .italic()
                         .font(.system(size: 15))
                         .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .foregroundColor(changingColor)
                         .multilineTextAlignment(.center)
                         .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
@@ -352,6 +353,8 @@ struct SignUpPage4: View {
                                     }
                                 }
                             }
+                            changingColor = Color(.red)
+                            
                         }
                     
                     NavigationLink("", destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password).environmentObject(sessionManager), isActive: $readyToProceed)
