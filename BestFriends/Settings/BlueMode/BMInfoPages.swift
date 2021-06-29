@@ -122,6 +122,7 @@ struct BlueModePage2: View {
                 
                 Spacer()
                     .frame(height: 25)
+               
                 NavigationLink(destination: BlueModePage3()) {
                         Text("Unlock 'Special' features >>>")
                             .font(.system(size: 30))

@@ -155,9 +155,12 @@ struct LandingView: View {
                         
                     }
                     .actionSheet(isPresented: $showingActionSheet) {
-                        ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR code. Add friends that you trust, confide in and that really care about you - and your happiness."), buttons: [
-                            .default(Text("My QR Code")) { showMyQR() },
-                            .default(Text("Photo Library")) { self.showingImagePicker = true },
+                        ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes. You MUST upgrade your OS on your iPhone to 14.5 or higher for QR codes to work."), buttons: [
+                            .default(Text("Get my QR code")) { showMyQR() },
+                            .default(Text("My Gallery")) { self.showingImagePicker = true },
+                           // Rob added a third option in the Add Friends popup on Landing page
+                            .default(Text("Add Friend Instructions")) { self.showingImagePicker = true },
+                            //
                             .cancel()
                         ])
                     }
@@ -370,7 +373,7 @@ struct LandingView: View {
             for id in friendIDsToInvite {
                 userDataSource.addRoom(userID: id, roomID: room.id)
                 //                let token = userDataSource.getUser(id: id).deviceFCMToken
-                //                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk. When can you talk on BestFriends", body: body)
+                //                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk. Please let them know When can you talk on BestFriends", body: body)
             }
         }
     }
