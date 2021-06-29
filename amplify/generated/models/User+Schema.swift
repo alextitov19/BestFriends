@@ -8,6 +8,7 @@ extension User {
     case id
     case firstName
     case lastName
+    case email
     case birthday
     case pronouns
     case location
@@ -39,6 +40,7 @@ extension User {
       .id(),
       .field(user.firstName, is: .required, ofType: .string),
       .field(user.lastName, is: .required, ofType: .string),
+      .field(user.email, is: .required, ofType: .string),
       .field(user.birthday, is: .required, ofType: .date),
       .field(user.pronouns, is: .required, ofType: .string),
       .field(user.location, is: .optional, ofType: .string),

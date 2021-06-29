@@ -169,6 +169,7 @@ mutation CreateUser(
     id
     firstName
     lastName
+    email
     birthday
     pronouns
     location
@@ -213,6 +214,7 @@ mutation UpdateUser(
     id
     firstName
     lastName
+    email
     birthday
     pronouns
     location
@@ -257,6 +259,7 @@ mutation DeleteUser(
     id
     firstName
     lastName
+    email
     birthday
     pronouns
     location

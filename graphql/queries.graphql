@@ -114,6 +114,7 @@ query GetUser($id: ID!) {
     id
     firstName
     lastName
+    email
     birthday
     pronouns
     location
@@ -160,6 +161,7 @@ query ListUsers(
       id
       firstName
       lastName
+      email
       birthday
       pronouns
       location

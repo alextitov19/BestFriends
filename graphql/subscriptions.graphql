@@ -148,6 +148,7 @@ subscription OnCreateUser {
     id
     firstName
     lastName
+    email
     birthday
     pronouns
     location
@@ -189,6 +190,7 @@ subscription OnUpdateUser {
     id
     firstName
     lastName
+    email
     birthday
     pronouns
     location
@@ -230,6 +232,7 @@ subscription OnDeleteUser {
     id
     firstName
     lastName
+    email
     birthday
     pronouns
     location

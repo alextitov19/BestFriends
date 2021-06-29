@@ -6,6 +6,7 @@ public struct User: Model {
   public let id: String
   public var firstName: String
   public var lastName: String
+  public var email: String
   public var birthday: Temporal.Date
   public var pronouns: String
   public var location: String?
@@ -27,6 +28,7 @@ public struct User: Model {
   public init(id: String = UUID().uuidString,
       firstName: String,
       lastName: String,
+      email: String,
       birthday: Temporal.Date,
       pronouns: String,
       location: String? = nil,
@@ -47,6 +49,7 @@ public struct User: Model {
       self.id = id
       self.firstName = firstName
       self.lastName = lastName
+      self.email = email
       self.birthday = birthday
       self.pronouns = pronouns
       self.location = location
