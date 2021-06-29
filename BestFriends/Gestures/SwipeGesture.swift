@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwipeGesture: View {
     @State private var dragCompleted = false
-
+    
     var body: some View {
         VStack {
             Text("Drag me")
@@ -20,7 +20,7 @@ struct SwipeGesture: View {
                             dragCompleted = true
                         }
                 )
-
+            
             if dragCompleted {
                 Text("Drag completed!")
             }

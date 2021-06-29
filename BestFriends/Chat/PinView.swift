@@ -10,7 +10,7 @@ import Amplify
 
 struct PinView: View {
     
-  //  @State var title: String = "Enter your PIN"
+    //  @State var title: String = "Enter your PIN"
     @State var title: String = "To Restore Chat Messages, Enter your PIN"
     
     @State var currentPin: String = ""
@@ -27,13 +27,13 @@ struct PinView: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
-        
-            VStack {
             
-                Text(title)
-                   // .font(.system(size: 20).bold())
-                 //   .foregroundColor(.white)
+            VStack {
                 
+                Text(title)
+                    // .font(.system(size: 20).bold())
+                    //   .foregroundColor(.white)
+                    
                     .italic()
                     .font(.system(size: 25))
                     .fontWeight(.regular)
@@ -45,17 +45,17 @@ struct PinView: View {
                 
                 
                 Spacer().frame(height: 85)
-                    
+                
                 HStack {
                     Button(action: {
                         currentPin.append("7")
                         numberEntered()
                     }) {
                         Text("7")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.white)
+                            .background(Color.clear)
+                            .clipShape(Circle())
                             .overlay(
                                 RoundedRectangle(cornerRadius: 85)
                                     .stroke(Color.white, lineWidth: 2)
@@ -69,10 +69,10 @@ struct PinView: View {
                         numberEntered()
                     }) {
                         Text("8")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.white)
+                            .background(Color.clear)
+                            .clipShape(Circle())
                             .overlay(
                                 RoundedRectangle(cornerRadius: 85)
                                     .stroke(Color.white, lineWidth: 2)
@@ -86,10 +86,10 @@ struct PinView: View {
                         numberEntered()
                     }) {
                         Text("9")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.white)
+                            .background(Color.clear)
+                            .clipShape(Circle())
                             .overlay(
                                 RoundedRectangle(cornerRadius: 85)
                                     .stroke(Color.white, lineWidth: 2)
@@ -105,10 +105,10 @@ struct PinView: View {
                         numberEntered()
                     }) {
                         Text("4")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.white)
+                            .background(Color.clear)
+                            .clipShape(Circle())
                             .overlay(
                                 RoundedRectangle(cornerRadius: 85)
                                     .stroke(Color.white, lineWidth: 2)
@@ -122,10 +122,10 @@ struct PinView: View {
                         numberEntered()
                     }) {
                         Text("5")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.white)
+                            .background(Color.clear)
+                            .clipShape(Circle())
                             .overlay(
                                 RoundedRectangle(cornerRadius: 85)
                                     .stroke(Color.white, lineWidth: 2)
@@ -139,10 +139,10 @@ struct PinView: View {
                         numberEntered()
                     }) {
                         Text("6")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.white)
+                            .background(Color.clear)
+                            .clipShape(Circle())
                             .overlay(
                                 RoundedRectangle(cornerRadius: 85)
                                     .stroke(Color.white, lineWidth: 2)
@@ -158,10 +158,10 @@ struct PinView: View {
                         numberEntered()
                     }) {
                         Text("1")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.white)
+                            .background(Color.clear)
+                            .clipShape(Circle())
                             .overlay(
                                 RoundedRectangle(cornerRadius: 85)
                                     .stroke(Color.white, lineWidth: 2)
@@ -175,10 +175,10 @@ struct PinView: View {
                         numberEntered()
                     }) {
                         Text("2")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.white)
+                            .background(Color.clear)
+                            .clipShape(Circle())
                             .overlay(
                                 RoundedRectangle(cornerRadius: 85)
                                     .stroke(Color.white, lineWidth: 2)
@@ -192,10 +192,10 @@ struct PinView: View {
                         numberEntered()
                     }) {
                         Text("3")
-                           .frame(width: 100, height: 100)
-                           .foregroundColor(Color.white)
-                           .background(Color.clear)
-                           .clipShape(Circle())
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(Color.white)
+                            .background(Color.clear)
+                            .clipShape(Circle())
                             .overlay(
                                 RoundedRectangle(cornerRadius: 85)
                                     .stroke(Color.white, lineWidth: 2)
@@ -210,10 +210,10 @@ struct PinView: View {
                     numberEntered()
                 }) {
                     Text("0")
-                       .frame(width: 100, height: 100)
-                       .foregroundColor(Color.white)
-                       .background(Color.clear)
-                       .clipShape(Circle())
+                        .frame(width: 100, height: 100)
+                        .foregroundColor(Color.white)
+                        .background(Color.clear)
+                        .clipShape(Circle())
                         .overlay(
                             RoundedRectangle(cornerRadius: 85)
                                 .stroke(Color.white, lineWidth: 2)

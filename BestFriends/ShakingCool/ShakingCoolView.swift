@@ -11,7 +11,7 @@ import Amplify
 struct ShakingCoolView: View {
     
     var shakingCoolLinks: [String] = []
-
+    
     @State var showingImagePicker = false
     @State var inputImage: UIImage?
     var shakingCoolDataSource = ShakingCoolDataSource()
@@ -52,7 +52,7 @@ struct ShakingCoolView: View {
                 
                 
                 Spacer().frame(height: 30)
-
+                
                 ScrollView {
                     ForEach(shakingCoolLinks, id: \.self) { link in
                         Image(uiImage: shakingCoolDataSource.downloadImage(key: link, rotating: true, tall: false))
@@ -60,8 +60,8 @@ struct ShakingCoolView: View {
                             .scaledToFit()
                             .frame(height: 200)
                             .onTapGesture {
-                                    shakingCoolDataSource.deleteImage(id: link)
-                                    showingImagePicker = true
+                                shakingCoolDataSource.deleteImage(id: link)
+                                showingImagePicker = true
                             }
                         
                         Spacer()
@@ -73,12 +73,12 @@ struct ShakingCoolView: View {
                 Spacer()
                 
                 
-               Text("You can delete/replace an image by tapping it")
-                .font(.system(size: 20, weight: .thin))
-                .foregroundColor(.white)
+                Text("You can delete/replace an image by tapping it")
+                    .font(.system(size: 20, weight: .thin))
+                    .foregroundColor(.white)
                 
                 
-                    
+                
                 Spacer()
                     .frame(height: 10)
                 
@@ -99,7 +99,7 @@ struct ShakingCoolView: View {
                         ImagePicker(image: self.$inputImage)
                     }
                 
-                    
+                
                 
             }
             

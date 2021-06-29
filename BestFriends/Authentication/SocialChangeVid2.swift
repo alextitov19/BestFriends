@@ -15,18 +15,18 @@ struct SocialChangeVid2: View {
     
     var names: [String] = ["SocialChange"]
     
-//    var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    //    var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
     
     var body: some View {
         ZStack {
             AdPlayerView(name: "SocialChange")
                 .ignoresSafeArea()
-     
+            
         }
     }
 }
 struct SocialChangeVid2_Previews : PreviewProvider {
     static var previews: some View {
         SocialChangeVid2()
-        }
+    }
 }

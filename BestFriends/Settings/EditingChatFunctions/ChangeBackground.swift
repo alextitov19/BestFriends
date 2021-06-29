@@ -10,7 +10,7 @@ import Amplify
 import SwiftUI
 
 struct ChangeBackground: View {
-
+    
     var body: some View {
         
         ZStack {
@@ -24,8 +24,8 @@ struct ChangeBackground: View {
                 Text("Change Backgrounds")
                     .foregroundColor(.white)
                     .font(.title)
-            
-               
+                
+                
                 Text("(Not available in BlueMode - coming soon)")
                     .italic()
                     .font(.system(size: 25))
@@ -38,57 +38,57 @@ struct ChangeBackground: View {
                 
                 Spacer().frame(height: 25)
                 VStack {
-                
-                  
+                    
+                    
                     Spacer()
                         .frame(height: 30)
-                
+                    
                     NavigationLink(
                         destination: MotionBackground(),
                         label: {
                             Text("Motion Background")
                         })
-                   
+                        
                         .frame(width: 250, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
                                 .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
+                        )
                     
-                      
                     
-                      Spacer()
-                          .frame(height: 30)
-                  
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
                     NavigationLink(
                         destination: StaticBackground(),
                         label: {
                             Text("StaticBackground")
                         })
-                   
+                        
                         .frame(width: 250, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
                                 .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
-                      
+                        )
+                    
                     Spacer()
                         .frame(height: 30)
-                 
+                    
                     
                     
                     
                     
                     Spacer()
                         .frame(height: 100)
-                
-                    }
+                    
                 }
             }
         }
     }
+}
 
 struct ChangeBackground_Previews : PreviewProvider {
     static var previews: some View {

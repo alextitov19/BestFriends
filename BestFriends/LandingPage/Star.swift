@@ -20,17 +20,17 @@ struct Star: View {
                 .font(.headline)
                 .foregroundColor(.white)
                 .gesture(LongPressGesture(minimumDuration: 1)
-                .onEnded { _ in
-                    showingActionSheet = true
-                })
-
-              image
+                            .onEnded { _ in
+                                showingActionSheet = true
+                            })
+            
+            image
                 .resizable()
                 .frame(width: 80, height: 80, alignment: .center)
                 .scaledToFill()
                 .blendMode(.screen)
-                    
-              
+            
+            
         }
         .actionSheet(isPresented: $showingActionSheet) {
             ActionSheet(title: Text("Manage \(name)"), message: Text("Before you block or delete your friend, try BlueMode!"), buttons: [
@@ -51,5 +51,5 @@ struct Star: View {
         }
         
     }
-   
+    
 }

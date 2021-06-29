@@ -440,7 +440,6 @@
 		CF5263E32667621B00243DD7 /* ChangeChatFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */; };
 		CF5263EC266A246A00243DD7 /* SocialChangeVid2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */; };
 		CF5263F2266DDD4200243DD7 /* BlueModeUserDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */; };
-		CF5263F8266F1D5B00243DD7 /* EnrichHERVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F7266F1D5B00243DD7 /* EnrichHERVideo.swift */; };
 		CFE33572A2043B757FF71D3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
 		CFE6FD4626620E9A00DF92BD /* Popups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD4526620E9A00DF92BD /* Popups.swift */; };
@@ -664,7 +663,6 @@
 		CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatFontSize.swift; sourceTree = "<group>"; };
 		CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialChangeVid2.swift; sourceTree = "<group>"; };
 		CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeUserDashboard.swift; sourceTree = "<group>"; };
-		CF5263F7266F1D5B00243DD7 /* EnrichHERVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrichHERVideo.swift; sourceTree = "<group>"; };
 		CF5263FD266F202400243DD7 /* BlueHeartVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlueHeartVid.mp4; sourceTree = "<group>"; };
 		CF526402266F20A600243DD7 /* Mieko3.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mieko3.m4v; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
@@ -720,6 +718,7 @@
 				7AD1044F265AB93F007627FD /* UIWindowExtension.swift */,
 				7AD10451265AB948007627FD /* UIDeviceExtension.swift */,
 				7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */,
+				7AA201122635D5F500C9F00C /* Room+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -730,7 +729,6 @@
 				7A417EC5265ED4B000E95364 /* AdViewFullScreen.swift */,
 				7A417EC7265ED52900E95364 /* AdDataSource.swift */,
 				7A417ECB265F236700E95364 /* AdPlayerView.swift */,
-				CF5263F7266F1D5B00243DD7 /* EnrichHERVideo.swift */,
 			);
 			path = Advertisements;
 			sourceTree = "<group>";
@@ -873,7 +871,6 @@
 			isa = PBXGroup;
 			children = (
 				7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */,
-				7AA201122635D5F500C9F00C /* Room+Extensions.swift */,
 				7AA201102635D2E100C9F00C /* RoomRow.swift */,
 				7AA2010E2635D21100C9F00C /* RoomsView.swift */,
 			);
@@ -1394,7 +1391,6 @@
 				EE1A3CCD6B79C79F7C476B92 /* Room.swift in Sources */,
 				7581976595830FCB487E7844 /* AmplifyModels.swift in Sources */,
 				E9E3F159C2FC434B8748CC56 /* Message+Schema.swift in Sources */,
-				CF5263F8266F1D5B00243DD7 /* EnrichHERVideo.swift in Sources */,
 				2C303AB2F4DCCFCE153C1B24 /* Message.swift in Sources */,
 				814E2C76840C686927ADBBCF /* Room+Schema.swift in Sources */,
 				57FCC633F6C2DBE10FE73CF3 /* Room.swift in Sources */,

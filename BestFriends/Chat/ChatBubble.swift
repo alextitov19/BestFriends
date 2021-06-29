@@ -9,12 +9,12 @@ import SwiftUI
 import Amplify
 
 struct ChatBubble: View {
-
+    
     let message: Message
     let myID: String
     let messageDataSource: MessageDataSource
     @State var showingActionSheet = false
-
+    
     init(msg: Message, messageDS: MessageDataSource) {
         message = msg
         messageDataSource = messageDS
@@ -28,7 +28,7 @@ struct ChatBubble: View {
             let uiimage = messageDataSource.downloadImage(key: message.attachmentPath!)
             
             VStack {
-
+                
                 Text(message.senderName)
                     .frame(width: 100, height: 12)
                     .multilineTextAlignment(.center)
@@ -38,130 +38,130 @@ struct ChatBubble: View {
                 Image(uiImage: uiimage)
                     .resizable()
                     .scaledToFit()
-//                    .frame(width: 300, height: 200)
-//                    .aspectRatio(uiimage.size, contentMode: .fill)
+                    //                    .frame(width: 300, height: 200)
+                    //                    .aspectRatio(uiimage.size, contentMode: .fill)
                     .gesture(LongPressGesture(minimumDuration: 1)
-                    .onEnded { _ in
-                        showingActionSheet = true
-                    })
+                                .onEnded { _ in
+                                    showingActionSheet = true
+                                })
             }
             .actionSheet(isPresented: $showingActionSheet) {
                 ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
-                        .default(Text("Save to SmileNotes")) {
-                            messageDataSource.saveToSmileNotes(message: message)
-                        },
-                        .default(Text("Report as abusive")) {
-                            messageDataSource.reportMessage(message: message)
-                        },
-                        .cancel()
-                    ])
+                    .default(Text("Save to SmileNotes")) {
+                        messageDataSource.saveToSmileNotes(message: message)
+                    },
+                    .default(Text("Report as abusive")) {
+                        messageDataSource.reportMessage(message: message)
+                    },
+                    .cancel()
+                ])
             }
             
             
         } else if message.senderID == myID {
             // A message sent by the CURRENT USED
+            
+            VStack {
+                HStack {
+                    Spacer()
+                    
+                    Text(message.senderName)
+                        .frame(width: 200, alignment: .trailing)
+                        .foregroundColor(.white)
+                        .font(.system(size: 14).weight(.thin))
+                        .offset(x: -5, y: 5)
+                }
                 
-                VStack {
-                    HStack {
-                        Spacer()
-
-                        Text(message.senderName)
-                            .frame(width: 200, alignment: .trailing)
+                
+                HStack {
+                    Spacer()
+                    
+                    if message.stickerNumber != nil {
+                        Image("Sticker\(message.stickerNumber!)")
+                            .resizable()
+                            .frame(width: 150, height: 150)
+                            .scaledToFit()
+                    } else {
+                        Text(message.body)
+                            .padding(10)
+                            .multilineTextAlignment(.leading)
+                            .font(.system(size: 16).weight(.light))
                             .foregroundColor(.white)
-                            .font(.system(size: 14).weight(.thin))
-                            .offset(x: -5, y: 5)
-                    }
-                    
-                    
-                    HStack {
-                        Spacer()
-                        
-                        if message.stickerNumber != nil {
-                                Image("Sticker\(message.stickerNumber!)")
-                                    .resizable()
-                                    .frame(width: 150, height: 150)
-                                    .scaledToFit()
-                        } else {
-                                Text(message.body)
-                                    .padding(10)
-                                    .multilineTextAlignment(.leading)
-                                    .font(.system(size: 16).weight(.light))
-                                    .foregroundColor(.white)
-                                    .background(Color(.purple))
-                                    .cornerRadius(15)
-                                    .gesture(LongPressGesture(minimumDuration: 1)
-                                    .onEnded { _ in
-                                        showingActionSheet = true
-                                    })
-                        }
+                            .background(Color(.purple))
+                            .cornerRadius(15)
+                            .gesture(LongPressGesture(minimumDuration: 1)
+                                        .onEnded { _ in
+                                            showingActionSheet = true
+                                        })
                     }
                 }
-                .actionSheet(isPresented: $showingActionSheet) {
-                    ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
-                            .default(Text("Save to SmileNotes")) {
-                                messageDataSource.saveToSmileNotes(message: message)
-                            },
-                            .default(Text("Delete")) {
-                                messageDataSource.deleteMessage(message: message)
-                            },
-                            .cancel()
-                        ])
-                }
-                
+            }
+            .actionSheet(isPresented: $showingActionSheet) {
+                ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
+                    .default(Text("Save to SmileNotes")) {
+                        messageDataSource.saveToSmileNotes(message: message)
+                    },
+                    .default(Text("Delete")) {
+                        messageDataSource.deleteMessage(message: message)
+                    },
+                    .cancel()
+                ])
+            }
+            
             
             
         } else {
             // All other messages aka messages sent by USER'S FRIENDS
-                VStack {
-                    HStack {
-                        Text(message.senderName)
-                            .frame(width: 200, alignment: .leading)
+            VStack {
+                HStack {
+                    Text(message.senderName)
+                        .frame(width: 200, alignment: .leading)
+                        .foregroundColor(.white)
+                        .font(.system(size: 14).weight(.thin))
+                        .offset(x: 5, y: 5)
+                    
+                    Spacer()
+                }
+                
+                HStack {
+                    if message.stickerNumber != nil {
+                        Image("Sticker\(message.stickerNumber!)")
+                            .resizable()
+                            .frame(width: 150, height: 150)
+                            .scaledToFit()
+                    } else {
+                        Text(message.body)
+                            .padding(10)
+                            .multilineTextAlignment(.leading)
+                            .font(.system(size: 16).weight(.light))
                             .foregroundColor(.white)
-                            .font(.system(size: 14).weight(.thin))
-                            .offset(x: 5, y: 5)
-                        
-                        Spacer()
+                            .background(Color(.purple))
+                            .cornerRadius(15)
+                            .gesture(LongPressGesture(minimumDuration: 1)
+                                        .onEnded { _ in
+                                            showingActionSheet = true
+                                        })
                     }
                     
-                    HStack {
-                        if message.stickerNumber != nil {
-                                Image("Sticker\(message.stickerNumber!)")
-                                    .resizable()
-                                    .frame(width: 150, height: 150)
-                                    .scaledToFit()
-                        } else {
-                                Text(message.body)
-                                    .padding(10)
-                                    .multilineTextAlignment(.leading)
-                                    .font(.system(size: 16).weight(.light))
-                                    .foregroundColor(.white)
-                                    .background(Color(.purple))
-                                    .cornerRadius(15)
-                                    .gesture(LongPressGesture(minimumDuration: 1)
-                                    .onEnded { _ in
-                                        showingActionSheet = true
-                                    })
-                        }
-                        
-                        Spacer()
-                    }
+                    Spacer()
+                }
             }
             .actionSheet(isPresented: $showingActionSheet) {
                 ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
-                        .default(Text("Save to SmileNotes")) {
-                            messageDataSource.saveToSmileNotes(message: message)
-                        },
-                        .default(Text("Report as abusive")) {
-                            messageDataSource.reportMessage(message: message)
-                        },
-                        .cancel()
-                    ])
+                    .default(Text("Save to SmileNotes")) {
+                        messageDataSource.saveToSmileNotes(message: message)
+                    },
+                    .default(Text("Report as abusive")) {
+                        messageDataSource.reportMessage(message: message)
+                    },
+                    .cancel()
+                ])
             }
         }
-            
+        
         
     }
-            
+    
     func getWidth(text: String) -> CGFloat {
         if text.count > 24 {
             return 200

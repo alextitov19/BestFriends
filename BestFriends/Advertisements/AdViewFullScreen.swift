@@ -14,7 +14,7 @@ struct AdViewFullScreen: View {
     
     var names: [String] = ["first"]
     
-//    var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    //    var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
     
     var body: some View {
         ZStack {            
@@ -28,16 +28,16 @@ struct AdViewFullScreen: View {
     
     
     
-//    Bundle.main.url(forResource: names[0], withExtension: "mp4")
+    //    Bundle.main.url(forResource: names[0], withExtension: "mp4")
     
-//    private func cycleImages() {
-//        if index == links.count {
-//            presentationMode.wrappedValue.dismiss()
-//        } else if index < links.count {
-//            if !isPaused {
-//                image = images[index]
-//                index += 1
-//            }
-//        }
-//    }
+    //    private func cycleImages() {
+    //        if index == links.count {
+    //            presentationMode.wrappedValue.dismiss()
+    //        } else if index < links.count {
+    //            if !isPaused {
+    //                image = images[index]
+    //                index += 1
+    //            }
+    //        }
+    //    }
 }

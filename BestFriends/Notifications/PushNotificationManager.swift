@@ -10,7 +10,7 @@ class PushNotificationManager: NSObject, MessagingDelegate, UNUserNotificationCe
         self.userID = userID
         super.init()
     }
-
+    
     func registerForPushNotifications() {
         if #available(iOS 10.0, *) {
             // For iOS 10 display notification (sent via APNS)
@@ -26,11 +26,11 @@ class PushNotificationManager: NSObject, MessagingDelegate, UNUserNotificationCe
                 UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
             UIApplication.shared.registerUserNotificationSettings(settings)
         }
-
+        
         UIApplication.shared.registerForRemoteNotifications()
         updateFirestorePushTokenIfNeeded()
     }
-
+    
     func updateFirestorePushTokenIfNeeded() {
         if let token = Messaging.messaging().fcmToken {
             var user = UserDataSource().getCurrentUser()
@@ -38,16 +38,16 @@ class PushNotificationManager: NSObject, MessagingDelegate, UNUserNotificationCe
             UserDataSource().updateUser(user: user)
         }
     }
-
+    
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
         print("Firebase registration token: \(fcmToken)")
     }
-
-
+    
+    
     func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingDelegate) {
         print("Received data message: \(remoteMessage.description)")
     }
-
+    
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         print(response)
     }

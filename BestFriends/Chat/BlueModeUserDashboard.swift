@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct BlueModeUserDashboard: View {
-
+    
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -25,12 +25,12 @@ struct BlueModeUserDashboard: View {
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                         .multilineTextAlignment(.center)
-                
+                    
                     Spacer()
-
+                    
                     HStack {
                         
-                            
+                        
                         Link("Fight with best friend", destination: URL(string: "https://socialtechlabs.com/darkmode/")!)
                             .font(.system(size: 15))
                             .foregroundColor(.white)
@@ -91,7 +91,7 @@ struct BlueModeUserDashboard: View {
         }
     }
 }
-    
+
 struct BluemodeFeatures: View {
     var body: some View {
         ZStack {

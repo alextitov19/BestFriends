@@ -22,10 +22,10 @@ extension UIImage {
                             width: size.width, height: size.height))
             let rotatedImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
-
+            
             return rotatedImage ?? self
         }
-
+        
         return self
     }
 }

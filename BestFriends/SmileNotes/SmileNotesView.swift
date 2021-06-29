@@ -13,9 +13,9 @@ struct SmileNotesView: View {
     @State var hidingFriendButtons: Bool = true
     @State var friendIDs: [String] = []
     @State var friendNames: [String] = []
-
-
-
+    
+    
+    
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -25,7 +25,7 @@ struct SmileNotesView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-                
+            
             
             VStack {
                 // MARK: Header
@@ -83,12 +83,12 @@ struct SmileNotesView: View {
                                 hidingFriendButtons = true
                                 newSelection()
                             }
-
+                        
                     }
                 }
                 .border(Color.white, width: 1)
                 .isHidden(hidingFriendButtons)
-
+                
                 
                 Spacer()
                 
@@ -97,7 +97,7 @@ struct SmileNotesView: View {
                         card
                     }
                 }
-                    
+                
                 Spacer()
                 
                 HStack {
@@ -114,9 +114,9 @@ struct SmileNotesView: View {
                             }
                         }
                         .isHidden(index <= 0)
-                
-                
-             
+                    
+                    
+                    
                     Text("Next")
                         .frame(width: 150, height: 75, alignment: .center)
                         .background(Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)))
@@ -137,34 +137,34 @@ struct SmileNotesView: View {
                 HStack {
                     
                     Image("whiteHouse")
-                     .resizable()
-                     .frame(width: 40, height: 40)
-                     .scaledToFill()
-                     .onTapGesture {
-                         sessionManager.getCurrentAuthUser()
-                     }
-                     .padding(20)
-
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.getCurrentAuthUser()
+                        }
+                        .padding(20)
                     
-                   Image("messageIconWhite")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .scaledToFill()
-                    .onTapGesture {
-                        sessionManager.showRooms()
-                    }
-                    .padding(20)
-            
-            
-
-                   Image("settingsiconwhite")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .scaledToFill()
-                    .onTapGesture {
-                        sessionManager.showSettings()
-                    }
-                    .padding(20)
+                    
+                    Image("messageIconWhite")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.showRooms()
+                        }
+                        .padding(20)
+                    
+                    
+                    
+                    Image("settingsiconwhite")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.showSettings()
+                        }
+                        .padding(20)
                     
                     
                     
@@ -206,7 +206,7 @@ struct SmileNotesView: View {
                 friendNames.append(smileNote.message.senderName)
             }
         }
-    
+        
     }
     
     private func newSelection() {

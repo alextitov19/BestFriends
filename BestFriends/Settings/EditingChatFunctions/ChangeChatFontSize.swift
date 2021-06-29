@@ -10,17 +10,17 @@ import SwiftUI
 
 
 struct ChangeChatFontSize: View {
-
+    
     var body: some View {
         NavigationView{
-        ZStack {
-            
-            
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-        }
+            ZStack {
+                
+                
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+            }
         }
     }
 }

@@ -10,28 +10,28 @@ import Foundation
 
 class RoomDataSource: ObservableObject {
     @Published var rooms = [Room]()
-
+    
     func createRoom(room: Room) {
         Amplify.API.mutate(request: .create(room)) { [weak self] mutationResult in
             switch mutationResult {
-
+            
             case .success(let creationResult):
-
+                
                 switch creationResult {
                 case .success:
                     print("Successfully created room")
                     PushNotificationSender().sendPushNotification(token: "dP7qVfgfl0iSnhMuCYDjY-:APA91bHomhBOufgZg6T2jAdcvFhgpCgY8oCBeBas0YsLoa7eI1jpMKed7lrVLlr3qAC_ZcfdBfGX30ospbknmD4GS9g5M7fX0Cjqsx-SmgVGc-VYx655AQPmlGdDJrN5IgJrkD3eLyDy", title: "New Room", body: "Successfully made a new room!")
-
+                    
                 case .failure(let error):
                     print(error)
                 }
-
+                
             case .failure(let apiError):
                 print(apiError)
             }
         }
     }
-
+    
     func getRooms() {
         guard let currentID = Amplify.Auth.getCurrentUser()?.username else {return}
         let user = UserDataSource().getUser(id: currentID)
@@ -60,7 +60,7 @@ class RoomDataSource: ObservableObject {
                     print("Successfully retrieved room: \(room)")
                     finalroom = room
                     group.leave()
-                
+                    
                 case .failure(let error):
                     print("Got failed result with \(error.errorDescription)")
                 }
@@ -78,18 +78,18 @@ class RoomDataSource: ObservableObject {
         var newroom = room
         newroom.name = name
         Amplify.API.mutate(request: .update(newroom)) { event in  //update room
-                switch event {
-                case .success(let result):
-                    switch result {
-                    case .success(let room):
-                        print("Successfully updated room: \(newroom)")
-                    case .failure(let error):
-                        print("Got failed result with \(error.errorDescription)")
-                    }
+            switch event {
+            case .success(let result):
+                switch result {
+                case .success(let room):
+                    print("Successfully updated room: \(newroom)")
                 case .failure(let error):
-                    print("Got failed event with error \(error)")
+                    print("Got failed result with \(error.errorDescription)")
                 }
+            case .failure(let error):
+                print("Got failed event with error \(error)")
             }
+        }
     }
     
     func updateRoomTime(room: Room, isMember1: Bool) {
@@ -101,56 +101,56 @@ class RoomDataSource: ObservableObject {
         }
         
         Amplify.API.mutate(request: .update(newroom)) { event in  //update room
-                switch event {
-                case .success(let result):
-                    switch result {
-                    case .success(let newroom):
-                        print("Successfully updated room: \(newroom)")
-                    case .failure(let error):
-                        print("Got failed result with \(error.errorDescription)")
-                    }
+            switch event {
+            case .success(let result):
+                switch result {
+                case .success(let newroom):
+                    print("Successfully updated room: \(newroom)")
                 case .failure(let error):
-                    print("Got failed event with error \(error)")
+                    print("Got failed result with \(error.errorDescription)")
                 }
+            case .failure(let error):
+                print("Got failed event with error \(error)")
             }
+        }
     }
-
-
-//    func delete(_ message: Message) {
-//        Amplify.API.mutate(request: .delete(message)) { result in
-//            print(result)
-//        }
-//    }
-//
-//
-//    var subscription: GraphQLSubscriptionOperation<Message>?
-//
-//    func observeMessages() {
-//        subscription = Amplify.API.subscribe(
-//            request: .subscription(of: Message.self, type: .onCreate),
-//
-//            valueListener: { [weak self] subscriptionEvent in
-//                switch subscriptionEvent {
-//                case .connection(let connectionState):
-//                    print("connection state:", connectionState)
-//
-//                case .data(let dataResult):
-//                    do {
-//                        let message = try dataResult.get()
-//
-//                        DispatchQueue.main.async {
-//                            self?.messages.append(message)
-//                        }
-//                    } catch {
-//                        print(error)
-//                    }
-//                }
-//             },
-//             completionListener: { completion in
-//                print(completion)
-//             }
-//        )
-//    }
-
-
+    
+    
+    //    func delete(_ message: Message) {
+    //        Amplify.API.mutate(request: .delete(message)) { result in
+    //            print(result)
+    //        }
+    //    }
+    //
+    //
+    //    var subscription: GraphQLSubscriptionOperation<Message>?
+    //
+    //    func observeMessages() {
+    //        subscription = Amplify.API.subscribe(
+    //            request: .subscription(of: Message.self, type: .onCreate),
+    //
+    //            valueListener: { [weak self] subscriptionEvent in
+    //                switch subscriptionEvent {
+    //                case .connection(let connectionState):
+    //                    print("connection state:", connectionState)
+    //
+    //                case .data(let dataResult):
+    //                    do {
+    //                        let message = try dataResult.get()
+    //
+    //                        DispatchQueue.main.async {
+    //                            self?.messages.append(message)
+    //                        }
+    //                    } catch {
+    //                        print(error)
+    //                    }
+    //                }
+    //             },
+    //             completionListener: { completion in
+    //                print(completion)
+    //             }
+    //        )
+    //    }
+    
+    
 }

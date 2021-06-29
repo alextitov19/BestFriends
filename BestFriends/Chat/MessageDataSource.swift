@@ -9,7 +9,7 @@ import Amplify
 import Foundation
 
 class MessageDataSource: ObservableObject {
-  
+    
     @Published var room: Room
     var subscription: GraphQLSubscriptionOperation<Room>?
     
@@ -22,19 +22,19 @@ class MessageDataSource: ObservableObject {
         
         Amplify.API.mutate(request: .update(room)) { [weak self] mutationResult in
             switch mutationResult {
-                case .success(let creationResult):
-
-                    switch creationResult {
-                    case .success:
-                        print("Successfully sent a message", message)
-
-                    case .failure(let error):
-                        print("Message sending error: ", error)
-                    }
-
-                case .failure(let apiError):
-                    print("Message sending api error: ", apiError)
+            case .success(let creationResult):
+                
+                switch creationResult {
+                case .success:
+                    print("Successfully sent a message", message)
+                    
+                case .failure(let error):
+                    print("Message sending error: ", error)
                 }
+                
+            case .failure(let apiError):
+                print("Message sending api error: ", apiError)
+            }
         }
     }
     
@@ -47,19 +47,19 @@ class MessageDataSource: ObservableObject {
         user.smileNotes = smileNotes
         Amplify.API.mutate(request: .update(user)) { [weak self] mutationResult in
             switch mutationResult {
-                case .success(let creationResult):
-
-                    switch creationResult {
-                    case .success:
-                        print("Successfully saved a message to Smile Notes", message)
-
-                    case .failure(let error):
-                        print("Message saving to Smile Notes error: ", error)
-                    }
-
-                case .failure(let apiError):
-                    print("Message sending api error: ", apiError)
+            case .success(let creationResult):
+                
+                switch creationResult {
+                case .success:
+                    print("Successfully saved a message to Smile Notes", message)
+                    
+                case .failure(let error):
+                    print("Message saving to Smile Notes error: ", error)
                 }
+                
+            case .failure(let apiError):
+                print("Message sending api error: ", apiError)
+            }
         }
     }
     
@@ -67,19 +67,19 @@ class MessageDataSource: ObservableObject {
         room.messages.removeAll { $0.id == message.id }
         Amplify.API.mutate(request: .update(room)) { [weak self] mutationResult in
             switch mutationResult {
-                case .success(let creationResult):
-
-                    switch creationResult {
-                    case .success:
-                        print("Successfully deleted a message", message)
-
-                    case .failure(let error):
-                        print("Message deletion error: ", error)
-                    }
-
-                case .failure(let apiError):
-                    print("Message deletion api error: ", apiError)
+            case .success(let creationResult):
+                
+                switch creationResult {
+                case .success:
+                    print("Successfully deleted a message", message)
+                    
+                case .failure(let error):
+                    print("Message deletion error: ", error)
                 }
+                
+            case .failure(let apiError):
+                print("Message deletion api error: ", apiError)
+            }
         }
     }
     
@@ -88,7 +88,7 @@ class MessageDataSource: ObservableObject {
         let reportedMessage: ReportedMessage = ReportedMessage(reporterID: userid, reportedMessage: message, previousMessages: room.messages)
         Amplify.API.mutate(request: .create(reportedMessage)) { [weak self] mutationResult in
             switch mutationResult {
-
+            
             case .success(let creationResult):
                 
                 switch creationResult {
@@ -138,32 +138,32 @@ class MessageDataSource: ObservableObject {
         let data = image.pngData()!
         let key = "Image/" + randomString(length: 20)
         Amplify.Storage.uploadData(key: key, data: data,
-            progressListener: { progress in
-                print("Progress: \(progress)")
-            }, resultListener: { (event) in
-                switch event {
-                case .success(let data):
-                    print("Completed: \(data)")
-                    self.sendMessage(message: Message(id: self.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "", creationDate: Int(NSDate().timeIntervalSince1970), attachmentPath: key))
-                case .failure(let storageError):
-                    print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
-            }
-        })
+                                   progressListener: { progress in
+                                    print("Progress: \(progress)")
+                                   }, resultListener: { (event) in
+                                    switch event {
+                                    case .success(let data):
+                                        print("Completed: \(data)")
+                                        self.sendMessage(message: Message(id: self.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "", creationDate: Int(NSDate().timeIntervalSince1970), attachmentPath: key))
+                                    case .failure(let storageError):
+                                        print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+                                    }
+                                   })
     }
     
     func randomString(length: Int) -> String {
-
+        
         let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         let len = UInt32(letters.length)
-
+        
         var randomString = ""
-
+        
         for _ in 0 ..< length {
             let rand = arc4random_uniform(len)
             var nextChar = letters.character(at: Int(rand))
             randomString += NSString(characters: &nextChar, length: 1) as String
         }
-
+        
         return randomString
     }
     
@@ -187,8 +187,8 @@ class MessageDataSource: ObservableObject {
                     
                 case let .failure(storageError):
                     print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
-            }
-        })
+                }
+            })
         
         group.wait()
         

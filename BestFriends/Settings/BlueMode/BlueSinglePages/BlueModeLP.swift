@@ -9,9 +9,9 @@
 import SwiftUI
 
 struct BlueModeLP: View {
-
+    
     var body: some View {
-  
+        
         ZStack {
             Image("Shayla3 copy")
                 .resizable()
@@ -35,17 +35,17 @@ struct BlueModeLP: View {
                 }
                 .padding()
                 
-            VStack {
-                Spacer()
-                
-                Text("We can help.")
-                    .font(.system(size: 25))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                NavigationLink(destination: DarkModeView()) {
+                VStack {
+                    Spacer()
+                    
+                    Text("We can help.")
+                        .font(.system(size: 25))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    NavigationLink(destination: DarkModeView()) {
                         Text("Ok, activate 'BlueMode'")
                             .font(.system(size: 30))
                             .fontWeight(.ultraLight)
@@ -53,11 +53,11 @@ struct BlueModeLP: View {
                             .frame(width: 350, height: 50)
                             .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .cornerRadius(25)
-           
+                        
                     }
-                
-                Spacer()
-                    .frame(height: 160)
+                    
+                    Spacer()
+                        .frame(height: 160)
                 }
             }
         }

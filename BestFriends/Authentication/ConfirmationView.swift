@@ -10,9 +10,9 @@ import SwiftUI
 struct ConfirmationView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     @State var confirmationCode = ""
-
+    
     let username: String
     
     var body: some View {
@@ -30,7 +30,7 @@ struct ConfirmationView: View {
                     .font(.largeTitle)
                     .bold()
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-
+                
                 Spacer()
                 
                 Text("Username: \(username)")
@@ -48,7 +48,7 @@ struct ConfirmationView: View {
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .cornerRadius(25)
                     .autocapitalization(.none)
-
+                
                 Spacer()
                     .frame(height: 50)
                 

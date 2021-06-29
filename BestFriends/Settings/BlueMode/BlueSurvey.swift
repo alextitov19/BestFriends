@@ -13,7 +13,7 @@ import Amplify
 struct BlueSurvey: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-   
+    
     @State private var idea: String = ""
     
     @State private var pronouns: String = ""
@@ -23,8 +23,8 @@ struct BlueSurvey: View {
     @State var didTap3 = false
     @State var ready = false
     
-
-
+    
+    
     var body: some View {
         ZStack {
             Image("Transition2")
@@ -33,7 +33,7 @@ struct BlueSurvey: View {
                 .scaledToFill()
             VStack {
                 
-               
+                
                 
                 Spacer()
                     .frame(height: 5
@@ -42,22 +42,22 @@ struct BlueSurvey: View {
                 Text("Got a second?")
                     .italic()
                     .font(.system(size: 50))
-                  //  .foregroundColor(.white)
+                    //  .foregroundColor(.white)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                 
-              
+                
                 Spacer()
                     .frame(height: 25)
-     
+                
                 
                 VStack {
                     
                     Button("Would you be very dissapointed if we removed BlueMode from BestFriends?", action: {
-                            didTap1 = true
-                            didTap2 = false
-                            didTap3 = false
-                         
+                        didTap1 = true
+                        didTap2 = false
+                        didTap3 = false
+                        
                     })
                     .frame(width: 400, height: 175, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -68,12 +68,12 @@ struct BlueSurvey: View {
                     
                     Spacer()
                         .frame(height: 30)
-                
+                    
                     Button("Yes", action: {
-                            didTap1 = false
-                            didTap2 = true
-                            didTap3 = false
-                          
+                        didTap1 = false
+                        didTap2 = true
+                        didTap3 = false
+                        
                     })
                     .frame(width: 100, height: 75, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -84,12 +84,12 @@ struct BlueSurvey: View {
                     
                     Spacer()
                         .frame(height: 30)
-                
+                    
                     Button("No", action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = true
-                     
+                        
                     })
                     .frame(width: 100, height: 75, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -100,11 +100,11 @@ struct BlueSurvey: View {
                     
                     Spacer()
                         .frame(height: 30)
-                   
+                    
                     
                     VStack {
                         
-
+                        
                         
                         Text("How can we improve BlueMode for you?")
                             .frame(width: 385, height: 75, alignment: .center)
@@ -113,11 +113,11 @@ struct BlueSurvey: View {
                             .cornerRadius(25)
                             .font(.system(size: 30))
                         
-
-
+                        
+                        
                         Spacer()
                             .frame(height: 20)
-
+                        
                         TextField("Please type 'Idea' here", text: $idea)
                             .multilineTextAlignment(.center)
                             .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -128,53 +128,53 @@ struct BlueSurvey: View {
                             .cornerRadius(20)
                             .disableAutocorrection(true)
                             .autocapitalization(.none)
- 
-            }
-                    
-                    
-            
-            Button(action: {
-                
-                
-                
-                if didTap1 {
-                    pronouns = "YES"
-                }
-                if didTap2 {
-                    pronouns = "YES"
-                }
-                if didTap3 {
-                    pronouns = "NO"
-                }
-
-             
-                ready = true
-                }) {
-                    Text("Submit")
-                    .font(.title)
+                        
                     }
-                .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3) ? 50 : 0))
-                .disabled(!(didTap1 || didTap2 || didTap3))
-                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                .cornerRadius(25)
-                
                     
-               
-                
-                Spacer()
-                    .frame(height: 30)
-            
-        
+                    
+                    
+                    Button(action: {
+                        
+                        
+                        
+                        if didTap1 {
+                            pronouns = "YES"
+                        }
+                        if didTap2 {
+                            pronouns = "YES"
+                        }
+                        if didTap3 {
+                            pronouns = "NO"
+                        }
+                        
+                        
+                        ready = true
+                    }) {
+                        Text("Submit")
+                            .font(.title)
+                    }
+                    .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3) ? 50 : 0))
+                    .disabled(!(didTap1 || didTap2 || didTap3))
+                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                    
+                    
+                    
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    
                 }
             }
         }
     }
-
+    
     struct BlueSurvey_Previews : PreviewProvider {
         static var previews: some View {
             BlueSurvey().environmentObject(SessionManager())
-   
+            
         }
     }
 }

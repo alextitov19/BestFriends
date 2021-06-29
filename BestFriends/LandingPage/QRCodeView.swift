@@ -11,7 +11,7 @@ import AVKit
 struct QRCodeView: View {
     @Environment(\.presentationMode) var presentationMode
     let image: UIImage
-
+    
     var body: some View {
         VStack{
             Spacer()
@@ -38,7 +38,7 @@ struct QRCodeView: View {
                         .onEnded { _ in
                             presentationMode.wrappedValue.dismiss()
                         }
-                    )
+                )
             
             Spacer()
         }

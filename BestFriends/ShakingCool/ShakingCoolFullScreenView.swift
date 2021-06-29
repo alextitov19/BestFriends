@@ -42,10 +42,10 @@ struct ShakingCoolFullScreenView: View {
                 .ignoresSafeArea()
                 .scaledToFill()
                 .gesture(LongPressGesture(minimumDuration: 1)
-                .onEnded { _ in
-                    isPaused.toggle()
-                    print("Are we paused? - ", isPaused)
-                })
+                            .onEnded { _ in
+                                isPaused.toggle()
+                                print("Are we paused? - ", isPaused)
+                            })
             
         }
     }

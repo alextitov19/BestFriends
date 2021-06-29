@@ -28,8 +28,8 @@ struct SmieNotePopover: View {
             if smileNotes.count > 0 {
                 SmileNotesCard(smileNote: smileNotes.randomElement()!, hidden: false)
             } else {
-             Text("No SmileNotes yet, you should add some!")
-                .foregroundColor(.white)
+                Text("No SmileNotes yet, you should add some!")
+                    .foregroundColor(.white)
             }
             
         }

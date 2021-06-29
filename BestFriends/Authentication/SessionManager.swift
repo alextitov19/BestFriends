@@ -59,7 +59,7 @@ final class SessionManager: ObservableObject {
         let options = AuthSignUpRequest.Options(userAttributes: attributes)
         
         _ = Amplify.Auth.signUp(
-        username: username,
+            username: username,
             password: password,
             options: options
         ) { [weak self] result in

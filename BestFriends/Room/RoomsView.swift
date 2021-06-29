@@ -10,19 +10,19 @@ import Amplify
 
 
 struct RoomsView: View {
-
+    
     @State var text: String = ""
     @State var showingPopup = true
     @ObservedObject var dataSource = RoomDataSource()
-
+    
     @EnvironmentObject var sessionManager: SessionManager
-
-
+    
+    
     init() {
         dataSource.getRooms()
         print("Rooms: ", dataSource.rooms)
     }
-
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -31,7 +31,7 @@ struct RoomsView: View {
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
-                    
+                
                 VStack {
                     Text("Chat Rooms")
                         .font(.system(size: 40).bold())
@@ -66,34 +66,34 @@ struct RoomsView: View {
                     HStack {
                         
                         Image("whiteHouse")
-                         .resizable()
-                         .frame(width: 40, height: 40)
-                         .scaledToFill()
-                         .onTapGesture {
-                             sessionManager.getCurrentAuthUser()
-                         }
-                         .padding(20)
-
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.getCurrentAuthUser()
+                            }
+                            .padding(20)
+                        
                         
                         Image("whiteSmiley")
-                         .resizable()
-                         .frame(width: 40, height: 40)
-                         .scaledToFill()
-                         .onTapGesture {
-                             sessionManager.showSmileNotes()
-                         }
-                        .padding(20)
-                
-                
-
-                       Image("settingsiconwhite")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            sessionManager.showSettings()
-                        }
-                        .padding(20)
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showSmileNotes()
+                            }
+                            .padding(20)
+                        
+                        
+                        
+                        Image("settingsiconwhite")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showSettings()
+                            }
+                            .padding(20)
                         
                         
                         

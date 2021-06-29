@@ -14,7 +14,7 @@ struct RoomRow: View {
     var body: some View {
         HStack {
             Spacer().frame(width: 10)
-
+            
             VStack(alignment: .leading) {
                 Spacer()
                     .frame(height: 10)
@@ -31,7 +31,7 @@ struct RoomRow: View {
                 
                 HStack {
                     Spacer().frame(width: 10)
-
+                    
                     Text(room.messages.last?.body ?? "")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
@@ -43,9 +43,9 @@ struct RoomRow: View {
                     .frame(height: 10)
             }
             .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(room.blueMode == true ? Color.blue : Color.white, lineWidth: 2)
-                    )
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(room.blueMode == true ? Color.blue : Color.white, lineWidth: 2)
+            )
             
             Spacer().frame(width: 10)
         }

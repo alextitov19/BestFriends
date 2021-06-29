@@ -13,7 +13,7 @@ class UserManager: ObservableObject {
     func create(_ user: User) {
         Amplify.API.mutate(request: .create(user)) { [weak self] mutationResult in
             switch mutationResult {
-
+            
             case .success(let creationResult):
                 
                 switch creationResult {
@@ -47,7 +47,7 @@ class UserManager: ObservableObject {
             }
         }
     }
-
+    
     func confirmResetPassword(
         username: String,
         newPassword: String,
@@ -66,7 +66,7 @@ class UserManager: ObservableObject {
             }
         }
     }
-
+    
     func changePassword(oldPassword: String, newPassword: String) -> Bool {
         var bool = false
         let group = DispatchGroup()
@@ -112,7 +112,7 @@ class UserManager: ObservableObject {
             }
         }
     }
-
+    
 }
 
 

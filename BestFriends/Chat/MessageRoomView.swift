@@ -13,13 +13,13 @@ import Combine
 struct MessageRoomView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     @ObservedObject var messageDataSource: MessageDataSource
     
     @State var showingImagePicker = false
     @State var showingMediaMenu = false
     @State var stickerPopoverShowing = false
-
+    
     @State var showingPin = false
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
@@ -39,16 +39,16 @@ struct MessageRoomView: View {
     
     let adDataSource = AdDataSource()
     let userDataSource = UserDataSource()
-
+    
     
     var user: User
     var room: Room
     var lastRead: Int?
     
     var timer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
-
+    
     @State private var adButtonOffset: Float = 0
-
+    
     
     init(room: Room) {
         let id = Amplify.Auth.getCurrentUser()?.username ?? "Failed getting id"
@@ -80,7 +80,7 @@ struct MessageRoomView: View {
     }
     
     @State var currentBody: String = ""
-
+    
     var body: some View {
         
         ZStack{
@@ -93,18 +93,18 @@ struct MessageRoomView: View {
                     showAd()
                 }
             
-                AdPlayerView(name: "EnrichHER")
-                    .ignoresSafeArea()
-                    .isHidden(areAdsHidden)
+            AdPlayerView(name: "EnrichHER")
+                .ignoresSafeArea()
+                .isHidden(areAdsHidden)
             
-                AdPlayerView(name: "purpleChat")
-                    .ignoresSafeArea()
-                    .isHidden(!areAdsHidden)
+            AdPlayerView(name: "purpleChat")
+                .ignoresSafeArea()
+                .isHidden(!areAdsHidden)
             
             VStack {
                 HStack { //header
                     Spacer()
-
+                    
                     Text("< Back")
                         .onTapGesture {
                             sessionManager.showRooms()
@@ -115,12 +115,12 @@ struct MessageRoomView: View {
                     ZStack {
                         if roomname == "" {
                             Text(room.name)
-                            .font(.system(size: 40))
-                            .foregroundColor(.white)
+                                .font(.system(size: 40))
+                                .foregroundColor(.white)
                         } else {
                             Text(roomname)
-                            .font(.system(size: 40))
-                            .foregroundColor(.white)
+                                .font(.system(size: 40))
+                                .foregroundColor(.white)
                         }
                         
                         TextField("", text: $roomname) { changed in
@@ -133,9 +133,9 @@ struct MessageRoomView: View {
                         .background(Color(.clear))
                         .frame(width:200)
                     }
-                   
-
-                            
+                    
+                    
+                    
                     
                     Spacer()
                     
@@ -166,8 +166,8 @@ struct MessageRoomView: View {
                                 ChatBubble(msg: message, messageDS: messageDataSource)
                                     .padding()
                                 
-//                                Spacer()
-//                                    .frame(height: 20)
+                                //                                Spacer()
+                                //                                    .frame(height: 20)
                             }
                         }
                     }
@@ -176,18 +176,18 @@ struct MessageRoomView: View {
                 .padding()
                 .offset(y: -self.offset)
                 .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                                    .onEnded({ value in
-                                        if room.blueMode {
-                                            if value.translation.width < -10 || value.translation.width > 10{
-                                                // horizontal
-                                                print("Swipe horizontal")
-                                                withAnimation {
-                                                                    presentingDashboard = true
-                                                                }
-                                            }
+                            .onEnded({ value in
+                                if room.blueMode {
+                                    if value.translation.width < -10 || value.translation.width > 10{
+                                        // horizontal
+                                        print("Swipe horizontal")
+                                        withAnimation {
+                                            presentingDashboard = true
                                         }
-                                    }))
-
+                                    }
+                                }
+                            }))
+                
                 
                 
                 Spacer().frame(height: 30)
@@ -206,7 +206,7 @@ struct MessageRoomView: View {
                             Spacer()
                         }
                     }
-                        
+                    
                     
                     HStack { //footer
                         Button(action: {
@@ -263,7 +263,7 @@ struct MessageRoomView: View {
                         ZStack {
                             Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
                                 .ignoresSafeArea()
-                        
+                            
                             ScrollView {
                                 VStack {
                                     ForEach(1...3, id: \.self) { i in
@@ -338,7 +338,7 @@ struct MessageRoomView: View {
                     }
                     
                     Spacer().frame(height: 10)
-
+                    
                     ZStack {
                         Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
                             .frame(width: 60, height: 60)
@@ -362,17 +362,17 @@ struct MessageRoomView: View {
                 BlueModeUserDashboard()
                     .transition(.scale)
                     .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                                        .onEnded({ value in
-                                            if room.blueMode {
-                                                if value.translation.width < -10 || value.translation.width > 10{
-                                                    // horizontal
-                                                    print("Swipe horizontal")
-                                                    withAnimation {
-                                                                        presentingDashboard = false
-                                                                    }
-                                                }
+                                .onEnded({ value in
+                                    if room.blueMode {
+                                        if value.translation.width < -10 || value.translation.width > 10{
+                                            // horizontal
+                                            print("Swipe horizontal")
+                                            withAnimation {
+                                                presentingDashboard = false
                                             }
-                                        }))
+                                        }
+                                    }
+                                }))
             }
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {

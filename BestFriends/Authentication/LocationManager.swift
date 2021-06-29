@@ -36,9 +36,9 @@ extension LocationManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager,
                          didChangeAuthorization status: CLAuthorizationStatus) {
-
+        
         switch status {
-    
+        
         case .notDetermined         : print("notDetermined")        // location permission not asked for yet
         case .authorizedWhenInUse   : print("authorizedWhenInUse")  // location authorized
         case .authorizedAlways      : print("authorizedAlways")     // location authorized
