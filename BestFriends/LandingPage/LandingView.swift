@@ -163,13 +163,7 @@ struct LandingView: View {
                             //
                             .cancel()
                         ])
-                    }
-                    .sheet(isPresented: $showingSheet) {
-                        QRCodeView(image: myQRCode)
-                    }
-                    .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                        ImagePicker(image: self.$inputImage)
-                    }                            .padding(10)
+                    }                          .padding(10)
                     
                     
                     
@@ -191,6 +185,9 @@ struct LandingView: View {
                             sessionManager.showSmileNotes()
                         }
                         .padding(10)
+                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                            ImagePicker(image: self.$inputImage)
+                        }
                     
                     //
                     Image("settingsiconwhite")
@@ -223,6 +220,9 @@ struct LandingView: View {
                 
                 ReviewPopup()
                     .padding(20)
+            }
+            .sheet(isPresented: $showingSheet) {
+                QRCodeView(image: myQRCode)
             }
             .isHidden(!isReviewPopupShowing)
             
