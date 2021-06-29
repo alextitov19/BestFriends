@@ -256,7 +256,7 @@ struct SettingsView: View {
                                                 .frame(height: 20)
                                             
                                             NavigationLink(
-                                                destination: Notifications(),
+                                                destination: NotificationsOnOffPage(),
                                                 label: {
                                                     Text("Notification Settings ***(Need B/E)")
                                                 })

@@ -9,10 +9,16 @@
 import Amplify
 import SwiftUI
 
-struct Notifications: View {
-    @State private var landingPageNotifications = true
-    @State private var blueChatNotifications = true
-   
+struct NotificationsOnOffPage: View {
+    @State private var landingPageNotifications : Bool
+    @State private var blueChatNotifications : Bool
+    
+    init() {
+        let user = UserDataSource().getCurrentUser()
+        landingPageNotifications = user.notificationsLP
+        blueChatNotifications = user.notificationsBM
+    }
+    
     var body: some View {
         
         ZStack {
@@ -26,9 +32,9 @@ struct Notifications: View {
                 Text("Manage Notifications")
                     .foregroundColor(.white)
                     .font(.title)
-            
+                
                 Spacer().frame(height: 50)
-               
+                
                 
                 Text("Hold Up! Here's the Dealio ... ")
                     .frame(width: 415, height: 30, alignment: .center)
@@ -49,45 +55,56 @@ struct Notifications: View {
                 
                 
                 VStack {
-
+                    
                     
                     Spacer()
                         .frame(height: 75)
-                   
-                        Toggle("Notifications", isOn: $landingPageNotifications)
-                           
-                            .frame(width: 375, height: 50, alignment: .center)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .cornerRadius(25)
-                            .font(.system(size: 25, weight: .semibold))
-                           
-                        
-                    Spacer()
-                        .frame(height: 50)
-                   
-                        
-                    Toggle("BlueMode Notifications", isOn: $blueChatNotifications)
-                       
+                    
+                    Toggle("Notifications", isOn: $landingPageNotifications)
                         .frame(width: 375, height: 50, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .cornerRadius(25)
                         .font(.system(size: 25, weight: .semibold))
-                       
                     
-              
+                    
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    
+                    Toggle("BlueMode Notifications", isOn: $blueChatNotifications)
+                        .frame(width: 375, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .cornerRadius(25)
+                        .font(.system(size: 25, weight: .semibold))
+                    
+                    
+                    
                     
                     Spacer()
                         .frame(height: 100)
-                
+                    
+                    Button(action: {
+                        var user = UserDataSource().getCurrentUser()
+                        user.notificationsBM = blueChatNotifications
+                        user.notificationsLP = landingPageNotifications
+                        UserDataSource().updateUser(user: user)
+                    }) {
+                        Text("Save Changes")
+                            .frame(width: 415, height: 200, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)))
+                            .cornerRadius(25)
                     }
+                    .background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                    
                 }
             }
         }
     }
+}
 
 struct Notifications_Previews : PreviewProvider {
     static var previews: some View {
-        Notifications()
+        NotificationsOnOffPage()
     }
 }
 

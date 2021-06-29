@@ -147,6 +147,8 @@ query GetUser($id: ID!) {
     background
     unlockedStickers
     blueMode
+    notificationsBM
+    notificationsLP
     createdAt
     updatedAt
   }
@@ -185,6 +187,8 @@ query ListUsers(
       background
       unlockedStickers
       blueMode
+      notificationsBM
+      notificationsLP
       createdAt
       updatedAt
     }

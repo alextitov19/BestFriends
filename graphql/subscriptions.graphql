@@ -181,6 +181,8 @@ subscription OnCreateUser {
     background
     unlockedStickers
     blueMode
+    notificationsBM
+    notificationsLP
     createdAt
     updatedAt
   }
@@ -223,6 +225,8 @@ subscription OnUpdateUser {
     background
     unlockedStickers
     blueMode
+    notificationsBM
+    notificationsLP
     createdAt
     updatedAt
   }
@@ -265,6 +269,8 @@ subscription OnDeleteUser {
     background
     unlockedStickers
     blueMode
+    notificationsBM
+    notificationsLP
     createdAt
     updatedAt
   }

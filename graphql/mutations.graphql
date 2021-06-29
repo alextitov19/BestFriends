@@ -202,6 +202,8 @@ mutation CreateUser(
     background
     unlockedStickers
     blueMode
+    notificationsBM
+    notificationsLP
     createdAt
     updatedAt
   }
@@ -247,6 +249,8 @@ mutation UpdateUser(
     background
     unlockedStickers
     blueMode
+    notificationsBM
+    notificationsLP
     createdAt
     updatedAt
   }
@@ -292,6 +296,8 @@ mutation DeleteUser(
     background
     unlockedStickers
     blueMode
+    notificationsBM
+    notificationsLP
     createdAt
     updatedAt
   }
