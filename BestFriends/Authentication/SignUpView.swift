@@ -965,6 +965,7 @@ struct SignUpPage9: View {
     @State var readyToProceed = false
     
     private let locationManager = LocationManager()
+
     
     var body: some View {
         ZStack {
