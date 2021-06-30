@@ -272,11 +272,11 @@ struct SignUpPage3: View {
     }
 }
 
-
 struct SignUpPage4: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     @State private var password: String = ""
+    @State private var password2: String = ""
     @State private var readyToProceed = false
     @State private var changingColor = Color(.white)
     
@@ -286,7 +286,7 @@ struct SignUpPage4: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("Password")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -303,8 +303,16 @@ struct SignUpPage4: View {
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                     
+                    Text("Password must contain at least 8 characters plus one capital letter.")
+                        .italic()
+                        .font(.system(size: 15))
+                        .fontWeight(.regular)
+                        .foregroundColor(changingColor)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 375)
                     
                     SecureField("Enter password", text: $password)
                         .multilineTextAlignment(.center)
@@ -316,28 +324,32 @@ struct SignUpPage4: View {
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
                     
-                    Text("Password must contain at least 8 characters plus one capital letter.")
-                        .italic()
-                        .font(.system(size: 15))
-                        .fontWeight(.regular)
-                        .foregroundColor(changingColor)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                        .frame(height: 20)
                     
+                    SecureField("Enter password again", text: $password2)
+                        .multilineTextAlignment(.center)
+                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 300, height: 40, alignment: .center)
+                        .font(.title)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .cornerRadius(20)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 20)
                     
                     
                     Text("Next")
                         .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
                         .onTapGesture {
                             if password != "" {
-                                if password.count >= 8 {
+                                if password.count >= 8 && password == password2 {
                                     let capitalLetterRegEx  = ".*[A-Z]+.*"
                                     let texttest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
                                     let capitalresult = texttest.evaluate(with: password)
@@ -353,15 +365,13 @@ struct SignUpPage4: View {
                     NavigationLink("", destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password).environmentObject(sessionManager), isActive: $readyToProceed)
                     
                     
+                    
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 20)
                     
                     
                     
-                    Image("Penguin Sticker 24")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                        .scaledToFill()
+                    
                 }
                 
                 Spacer()
@@ -371,12 +381,6 @@ struct SignUpPage4: View {
         }
     }
 }
-
-
-
-
-
-
 
 struct SignUpPage5: View {
     
@@ -1410,9 +1414,9 @@ struct SignUpPage1_Previews : PreviewProvider {
         
         //
         SignUpPage1().environmentObject(SessionManager())
-        //        SignUpPage2(firstName: "").environmentObject(SessionManager())
-        //        SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
-        //        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
+                SignUpPage2(firstName: "").environmentObject(SessionManager())
+                SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
+                SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
         //        SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
         //        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
         //        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
