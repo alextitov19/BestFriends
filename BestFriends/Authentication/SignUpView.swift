@@ -733,8 +733,7 @@ struct SignUpPage8: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
-                .resizable()
+            Color(#colorLiteral(red: 0.7703897357, green: 0.4793686867, blue: 0.9979797006, alpha: 1))
                 .ignoresSafeArea()
                 .scaledToFill()
             
@@ -1406,7 +1405,7 @@ struct SignUpPage1_Previews : PreviewProvider {
 //                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
 //                SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
                 SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
-        //        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
+                SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
         //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
         //            SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
