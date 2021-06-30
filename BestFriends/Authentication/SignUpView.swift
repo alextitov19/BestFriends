@@ -11,7 +11,6 @@ import Amplify
 import AVKit
 
 
-
 struct SignUpPage1: View {
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -22,42 +21,48 @@ struct SignUpPage1: View {
     var body: some View {
         NavigationView{
             ZStack {
-                Image("purpleBackground")
+                Image("Firstname")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
                 
+                
+                
+                
+                
                 VStack {
                     
-                    Spacer()
-                        .frame(height: 20)
+                    //                        Spacer()
+                    //                            .frame(height: 0)
                     Text("Welcome to")
                         .font(.system(size: 25))
                         .italic()
+                        .fontWeight(.thin)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                     
                     
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 15)
                     
                     Text("BestFriends")
-                        .font(.system(size: 75))
+                        .font(.system(size: 65))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                     
                     
                     Text("the positivity app")
-                        .font(.system(size: 25))
+                        .font(.system(size: 17))
                         .italic()
+                        .fontWeight(.thin)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                     
                     
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 340)
                     
                     
                     TextField("First name", text: $firstName)
@@ -65,20 +70,19 @@ struct SignUpPage1: View {
                         .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .frame(width: 300, height: 40, alignment: .center)
                         .font(.title)
-                        
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .cornerRadius(20)
+                        .cornerRadius(25)
                         .disableAutocorrection(true)
                         .autocapitalization(.none)
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 20)
                     
                     Text("Next")
                         .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
                         .onTapGesture {
                             if firstName != "" {
@@ -87,6 +91,9 @@ struct SignUpPage1: View {
                         }
                     
                     NavigationLink("", destination: SignUpPage2(firstName: firstName).environmentObject(sessionManager), isActive: $readyToProceed)
+                    
+                    Spacer()
+                        .frame(height: 230)
                     
                     
                     
@@ -100,7 +107,6 @@ struct SignUpPage1: View {
     }
 }
 
-
 struct SignUpPage2: View {
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -110,7 +116,7 @@ struct SignUpPage2: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("Lastname")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -122,57 +128,44 @@ struct SignUpPage2: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 155)
+                            .frame(height: 120)
                         
-                        Image("Penguin Sticker 18")
-                            .resizable()
-                            .frame(width: 200, height: 200)
-                            .scaledToFill()
                         
                     }
                     VStack {
                         
-                        ZStack {
-                            
-                            
-                            Image("ChatBubbleTrans")
-                                .resizable()
-                                .frame(width: 300, height: 175)
-                                .scaledToFill()
-                            
-                            Text("We'll never sell or share your info!")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        }
+                        
+                        Text("We'll never sell or share your info!")
+                            .font(.system(size: 30))
+                            .fontWeight(.regular)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 350, height: 100, alignment: .center)
                         Spacer()
                             .frame(height: 125)
                     }
                 }
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 250)
                 
                 TextField("Last name", text: $lastName)
                     .multilineTextAlignment(.center)
-                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.6983423233, green: 0.5422503352, blue: 0.8220227361, alpha: 1)))
                     .frame(width: 300, height: 40, alignment: .center)
                     .font(.title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .cornerRadius(20)
+                    .cornerRadius(25)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 20)
                 
                 Text("Next")
                     .font(.title)
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 200, height: 50)
-                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                     .cornerRadius(25)
                     .onTapGesture {
                         if lastName != "" {
@@ -183,7 +176,7 @@ struct SignUpPage2: View {
                 NavigationLink("", destination: SignUpPage3(firstName: firstName, lastName: lastName).environmentObject(sessionManager), isActive: $readyToProceed)
                 
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 120)
                 
             }
             
@@ -207,45 +200,46 @@ struct SignUpPage3: View {
         ZStack {
             
             
-            Image("purpleBackground")
+            Image("Username")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
+            
+            
+            
+            
+            
+            Spacer()
+                .frame(height: 125)
+            
             VStack {
-                Text("That username is taken, try a new one.")
-                    .font(.system(size: 40))
-                    .foregroundColor(.red)
-                    .bold()
-                    .multilineTextAlignment(.center)
-                    .padding(20)
-                    .isHidden(!isUsernameTaken)
-                
                 Text("What username do you want?")
-                    .font(.system(size: 30))
+                    .font(.system(size: 27))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 400)
                 TextField("Username", text: $username)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 300, height: 40, alignment: .center)
                     .font(.title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .cornerRadius(20)
+                    .cornerRadius(25)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
                 
+                
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 20)
                 
                 Text("Next")
                     .font(.title)
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 200, height: 50)
-                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                     .cornerRadius(25)
                     .onTapGesture {
                         checkUsername()
@@ -254,12 +248,12 @@ struct SignUpPage3: View {
                 NavigationLink("", destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username).environmentObject(sessionManager), isActive: $readyToProceed)
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 90)
                 
-                Image("Penguin1")
-                    .resizable()
-                    .frame(width: 200, height: 200)
-                    .scaledToFill()
+                
+                
+                
+                
             }
             Spacer()
                 .frame(height: 125)
@@ -276,7 +270,6 @@ struct SignUpPage3: View {
         }
         readyToProceed = true
     }
-    
 }
 
 
@@ -1413,7 +1406,7 @@ struct SignUpPage1_Previews : PreviewProvider {
     static var previews: some View {
         
         //
-        //        SignUpPage1().environmentObject(SessionManager())
+        SignUpPage1().environmentObject(SessionManager())
         //        SignUpPage2(firstName: "").environmentObject(SessionManager())
         //        SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
         //        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
@@ -1423,15 +1416,13 @@ struct SignUpPage1_Previews : PreviewProvider {
         //        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
         //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
-        VStack {
-            SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
-            
-            SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
-            
-            SignUpQuestionPage3(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
-            
-            
-        }
+        //            SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+        
+        //            SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+        //
+        //            SignUpQuestionPage3(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+        
+        
     }
 }
 
