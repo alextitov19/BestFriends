@@ -1235,6 +1235,7 @@ struct SignUpQuestionPage3: View {
     @State var didTap2 = false
     @State var didTap3 = false
     @State var didTap4 = false
+    @State var didTap5 = false
     
     var userMamager = UserManager()
     
@@ -1315,7 +1316,7 @@ struct SignUpQuestionPage3: View {
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                    .background(didTap4 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                     .cornerRadius(25)
                     
                     Spacer()
@@ -1347,7 +1348,9 @@ struct SignUpQuestionPage3: View {
                     if didTap4 {
                         adPref.append("L ")
                     }
-                    
+                    if didTap5 {
+                        adPref.append("SI ")
+                    }
                     let pushManager = PushNotificationManager(userID: username)
                     
                     let user = User(
