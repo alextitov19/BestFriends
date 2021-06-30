@@ -170,8 +170,10 @@ struct AddFriends: View {
         }
     }
     
-
-        }
+//        struct AddFriends_Previews : PreviewProvider {
+//            static var previews: some View {
+//                AddFriends()
+//        }
     }
     
     
