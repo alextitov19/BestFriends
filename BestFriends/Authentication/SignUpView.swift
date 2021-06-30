@@ -396,48 +396,22 @@ struct SignUpPage5: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("ResetPass")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             
             VStack {
+                Text("Just in case we need to reset your password")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
                 
-                HStack {
-                    VStack {
-                        
-                        Spacer()
-                            .frame(height: 155)
-                        
-                        Image("Penguin Sticker 18")
-                            .resizable()
-                            .frame(width: 200, height: 200)
-                            .scaledToFill()
-                        
-                    }
-                    VStack {
-                        
-                        ZStack {
-                            
-                            
-                            Image("ChatBubbleTrans")
-                                .resizable()
-                                .frame(width: 300, height: 175)
-                                .scaledToFill()
-                            
-                            Text("Just in case you need to reset your password")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        }
-                        Spacer()
-                            .frame(height: 125)
-                    }
-                }
+                Spacer()
+                    .frame(height: 380)
+                
+                
                 
                 
                 
@@ -453,13 +427,13 @@ struct SignUpPage5: View {
                     .autocapitalization(.none)
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 20)
                 
                 Text("Next")
                     .font(.title)
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 200, height: 50)
-                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                     .cornerRadius(25)
                     .onTapGesture {
                         if email != "" {
@@ -474,8 +448,9 @@ struct SignUpPage5: View {
                 
                 NavigationLink("", destination: SignUpPage6(firstName: firstName, lastName: lastName, username: username, password: password, email: email).environmentObject(sessionManager), isActive: $readyToProceed)
                 
+                
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 120)
                 
                 
                 
@@ -487,7 +462,6 @@ struct SignUpPage5: View {
             
         }
     }
-    
     private func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         
@@ -495,7 +469,6 @@ struct SignUpPage5: View {
         return emailPred.evaluate(with: email)
     }
 }
-
 
 
 
@@ -1413,11 +1386,11 @@ struct SignUpPage1_Previews : PreviewProvider {
     static var previews: some View {
         
         //
-        SignUpPage1().environmentObject(SessionManager())
-                SignUpPage2(firstName: "").environmentObject(SessionManager())
-                SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
-                SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
-        //        SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
+//        SignUpPage1().environmentObject(SessionManager())
+//        SignUpPage2(firstName: "").environmentObject(SessionManager())
+//        SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
+//        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
+                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
         //        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
         //        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
         //        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
