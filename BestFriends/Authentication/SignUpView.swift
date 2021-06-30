@@ -722,7 +722,8 @@ struct SignUpPage8: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.7703897357, green: 0.4793686867, blue: 0.9979797006, alpha: 1))
+            Image("SignUpPinBackground")
+                .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
@@ -734,14 +735,16 @@ struct SignUpPage8: View {
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 120, alignment: .center)
+                    .padding(20)
                 
-                Spacer()
+                Spacer().frame(height: 30)
+                
                 
                 Text("Enter 4-digit PIN")
                     .font(.title)
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .padding()
                 
-                Spacer()
                 
                 
                 //From here down, only buttons
@@ -1398,8 +1401,8 @@ struct SignUpPage1_Previews : PreviewProvider {
         //        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
         //                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
         //                SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
-        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
-        //                SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
+//        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
+                        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
         //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
         //            SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
