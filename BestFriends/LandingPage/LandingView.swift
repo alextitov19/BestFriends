@@ -30,6 +30,7 @@ struct LandingView: View {
     
     
     @State private var isShakingCoolPresented = false
+    @State private var showingAddFriendInstructions = false
     @State private var isAdViewPresented = false
     @State private var isReviewPopupShowing = false //change to true to show popup
     
@@ -159,7 +160,7 @@ struct LandingView: View {
                             .default(Text("Get my QR code")) { showMyQR() },
                             .default(Text("My Gallery")) { self.showingImagePicker = true },
                             // Rob added a third option in the Add Friends popup on Landing page
-                            .default(Text("Add Friend Instructions")) { self.showingImagePicker = true },
+                            .default(Text("Add Friend Instructions")) { self.showingAddFriendInstructions = true },
                             //
                             .cancel()
                         ])
@@ -175,6 +176,9 @@ struct LandingView: View {
                             sessionManager.showRooms()
                         }
                         .padding(10)
+                        .sheet(isPresented: $showingAddFriendInstructions) {
+                            AddFriends()
+                        }
                     
                     //
                     Image("whiteSmiley")
@@ -233,7 +237,6 @@ struct LandingView: View {
             
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
-        .fullScreenCover(isPresented: $isAdViewPresented, content: AdViewFullScreen.init)
         .onAppear(perform: reloadData)
         .onShake {
             isAdViewPresented = true
