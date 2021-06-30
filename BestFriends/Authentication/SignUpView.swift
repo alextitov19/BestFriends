@@ -683,18 +683,6 @@ struct SignUpPage7: View {
                     .padding()
                     .offset(x: -45)
                 
-                //                TextField("Enter email", text: $birthDate)
-                //                .multilineTextAlignment(.center)
-                //                .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                //                .frame(width: 300, height: 40, alignment: .center)
-                //                .font(.title)
-                //                .textFieldStyle(RoundedBorderTextFieldStyle())
-                //                .cornerRadius(20)
-                //                .disableAutocorrection(true)
-                //                .autocapitalization(.none)
-                
-                
-                
                 Spacer()
                     .frame(height: 5)
                 
@@ -966,7 +954,7 @@ struct SignUpPage9: View {
     @State var readyToProceed = false
     
     private let locationManager = LocationManager()
-
+    
     
     var body: some View {
         ZStack {
@@ -1410,13 +1398,13 @@ struct SignUpPage1_Previews : PreviewProvider {
         //        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
         //                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
         //                SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
-                        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
+        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
         //                SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
         //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
         //            SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
         
-//        SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+        //        SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
         //
         //            SignUpQuestionPage3(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
         
