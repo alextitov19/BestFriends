@@ -474,6 +474,8 @@ struct SignUpPage5: View {
 
 // *******************************************
 
+
+
 struct SignUpPage6: View {
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -491,38 +493,38 @@ struct SignUpPage6: View {
     var username: String
     var password: String
     var email: String
-    
+
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("Prounouns")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             VStack {
                 
-                
+               
                 
                 Spacer()
                     .frame(height: 50)
                 
                 
-                Text("Please select your Pronouns?")
+                Text("Please select your Pronouns")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 50)
-                
+     
                 
                 VStack {
                     
                     Button("she / her", action: {
-                        didTap1 = true
-                        didTap2 = false
-                        didTap3 = false
-                        didTap4 = false
-                        didTap5 = false
+                            didTap1 = true
+                            didTap2 = false
+                            didTap3 = false
+                            didTap4 = false
+                            didTap5 = false
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -531,13 +533,13 @@ struct SignUpPage6: View {
                     
                     Spacer()
                         .frame(height: 30)
-                    
+                
                     Button("he / him", action: {
-                        didTap1 = false
-                        didTap2 = true
-                        didTap3 = false
-                        didTap4 = false
-                        didTap5 = false
+                            didTap1 = false
+                            didTap2 = true
+                            didTap3 = false
+                            didTap4 = false
+                            didTap5 = false
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -546,7 +548,7 @@ struct SignUpPage6: View {
                     
                     Spacer()
                         .frame(height: 30)
-                    
+                
                     Button("they / them", action: {
                         didTap1 = false
                         didTap2 = false
@@ -583,7 +585,7 @@ struct SignUpPage6: View {
                         didTap3 = false
                         didTap4 = false
                         didTap5 = true
-                        
+
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
@@ -592,45 +594,45 @@ struct SignUpPage6: View {
                     
                     Spacer()
                         .frame(height: 35)
+            
                     
-                    
-                    
-                }
+              
+            }
+            
+            Button(action: {
                 
-                Button(action: {
-                    
-                    
-                    
-                    if didTap1 {
-                        pronouns = "SHE"
-                    }
-                    if didTap2 {
-                        pronouns = "HE"
-                    }
-                    if didTap3 {
-                        pronouns = "THEY"
-                    }
-                    if didTap4 {
-                        pronouns = "OTHER"
-                    }
-                    if didTap5 {
-                        pronouns = "PNTS"
-                    }
-                    
-                    ready = true
+                
+                
+                if didTap1 {
+                    pronouns = "SHE"
+                }
+                if didTap2 {
+                    pronouns = "HE"
+                }
+                if didTap3 {
+                    pronouns = "THEY"
+                }
+                if didTap4 {
+                    pronouns = "OTHER"
+                }
+                if didTap5 {
+                    pronouns = "PNTS"
+                }
+             
+                ready = true
                 }) {
                     Text("Next")
-                        .font(.title)
-                }
+                    .font(.title)
+                    }
                 .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4 || didTap5) ? 50 : 0))
                 .disabled(!(didTap1 || didTap2 || didTap3 || didTap4 || didTap5))
                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                 .cornerRadius(25)
                 
-                
+        
             }
-            
+
             
             NavigationLink(
                 destination: SignUpPage7(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns).environmentObject(sessionManager),
@@ -639,11 +641,10 @@ struct SignUpPage6: View {
                     
                 })
         }
-        
+                
     }
 }
-
-
+    
 
 
 struct SignUpPage7: View {
@@ -1390,8 +1391,8 @@ struct SignUpPage1_Previews : PreviewProvider {
 //        SignUpPage2(firstName: "").environmentObject(SessionManager())
 //        SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
 //        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
-                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
-        //        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
+//                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
+                SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
         //        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
         //        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
         //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
