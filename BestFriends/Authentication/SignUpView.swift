@@ -676,7 +676,6 @@ struct SignUpPage7: View {
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 300)
                 
                 DatePicker("", selection: $birthDate, displayedComponents: .date)
                     .datePickerStyle(WheelDatePickerStyle())
@@ -697,7 +696,7 @@ struct SignUpPage7: View {
                 
                 
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 5)
                 
                 NavigationLink(destination: SignUpPage8(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
                     Text("Next")
@@ -709,6 +708,8 @@ struct SignUpPage7: View {
                     
                 }
                 
+                Spacer()
+                    .frame(height: 100)
             }
         }
     }
@@ -1409,13 +1410,13 @@ struct SignUpPage1_Previews : PreviewProvider {
         //        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
         //                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
         //                SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
-        //                SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
+                        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
         //                SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
         //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
         //            SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
         
-        SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+//        SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
         //
         //            SignUpQuestionPage3(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
         
