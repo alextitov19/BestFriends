@@ -646,7 +646,6 @@ struct SignUpPage6: View {
 }
     
 
-
 struct SignUpPage7: View {
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -661,7 +660,7 @@ struct SignUpPage7: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("Age")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -677,32 +676,45 @@ struct SignUpPage7: View {
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 300)
                 
                 DatePicker("", selection: $birthDate, displayedComponents: .date)
                     .datePickerStyle(WheelDatePickerStyle())
                     .colorScheme(.dark)
                     .padding()
-                    .offset(x: -70)
+                    .offset(x: -45)
+                
+//                TextField("Enter email", text: $birthDate)
+//                .multilineTextAlignment(.center)
+//                .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                .frame(width: 300, height: 40, alignment: .center)
+//                .font(.title)
+//                .textFieldStyle(RoundedBorderTextFieldStyle())
+//                .cornerRadius(20)
+//                .disableAutocorrection(true)
+//                .autocapitalization(.none)
+
                 
                 
                 Spacer()
                     .frame(height: 75)
                 
                 NavigationLink(destination: SignUpPage8(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
-                    Text("Next")
-                        .font(.title)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(25)
-                    
-                }
+                                    Text("Next")
+                                        .font(.title)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                        .frame(width: 200, height: 50)
+                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                        .cornerRadius(25)
+
+                                }
                 
             }
         }
     }
 }
+
+
 
 
 struct SignUpPage8: View {
@@ -1392,8 +1404,8 @@ struct SignUpPage1_Previews : PreviewProvider {
 //        SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
 //        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
 //                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
-                SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
-        //        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
+//                SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
+                SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
         //        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
         //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
