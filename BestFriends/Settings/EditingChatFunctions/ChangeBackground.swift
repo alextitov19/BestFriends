@@ -10,83 +10,99 @@ import Amplify
 import SwiftUI
 
 struct ChangeBackground: View {
-    
-    var body: some View {
         
+    var body: some View {
         ZStack {
-            
-            Image("purpleBackground")
+            Image("changeBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
-                Text("Change Backgrounds")
+                Text("Change Chat Background")
                     .foregroundColor(.white)
-                    .font(.title)
+                    .font(.system(size: 30, weight: .light))
+                    .padding()
                 
-                
-                Text("(Not available in BlueMode - coming soon)")
-                    .italic()
-                    .font(.system(size: 25))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 300, height: 100, alignment: .center
-                    )
-                
-                
-                Spacer().frame(height: 25)
-                VStack {
-                    
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    NavigationLink(
-                        destination: MotionBackground(),
-                        label: {
-                            Text("Motion Background")
-                        })
+                ScrollView {
+                    VStack {
+                        HStack {
+                            VStack {
+                                Image("purpleBackground")
+                                    .resizable()
+                                    .frame(width: 150, height: 250)
+                                    //                                .cornerRadius(25)
+                                    .border(Color.white, width: 2)
+                                
+                                Button("Select", action: { saveData(index: 1) })
+                                    .frame(width: 110, height: 40)
+                                    .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+                                    .foregroundColor(.white)
+                                    .cornerRadius(25)
+                            }
+                            .padding()
+                            
+                            VStack {
+                                Image("blueBackground")
+                                    .resizable()
+                                    .frame(width: 150, height: 250)
+                                    //                                .cornerRadius(25)
+                                    .border(Color.white, width: 2)
+                                
+                                Button("Select", action: { saveData(index: 1) })
+                                    .frame(width: 110, height: 40)
+                                    .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+                                    .foregroundColor(.white)
+                                    .cornerRadius(25)
+                            }
+                            .padding()
+                        }
                         
-                        .frame(width: 250, height: 50)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                        )
-                    
-                    
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    NavigationLink(
-                        destination: StaticBackground(),
-                        label: {
-                            Text("StaticBackground")
-                        })
-                        
-                        .frame(width: 250, height: 50)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                        )
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    
-                    
-                    
-                    
-                    Spacer()
-                        .frame(height: 100)
-                    
+                        HStack {
+                            VStack {
+                                Image("blueGradient1")
+                                    .resizable()
+                                    .frame(width: 150, height: 250)
+    //                                .cornerRadius(25)
+                                    .border(Color.white, width: 2)
+                                
+                                Button("Select", action: { saveData(index: 1) })
+                                    .frame(width: 110, height: 40)
+                                    .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+                                    .foregroundColor(.white)
+                                    .cornerRadius(25)
+                            }
+                            .padding()
+                                                    
+                            VStack {
+                                Image("blueGradient2")
+                                    .resizable()
+                                    .frame(width: 150, height: 250)
+    //                                .cornerRadius(25)
+                                    .border(Color.white, width: 2)
+                                
+                                Button("Select", action: { saveData(index: 1) })
+                                    .frame(width: 110, height: 40)
+                                    .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+                                    .foregroundColor(.white)
+                                    .cornerRadius(25)
+                            }
+                            .padding()
+                        }
+                    }
                 }
+                
+                
             }
         }
+        //        .navigationBarTitle("Change Chat Background")
+    }
+    
+    private func saveData(index: Int) {
+        print("Saving new static background as option #\(index)")
+        var user = UserDataSource().getCurrentUser()
+        user.background = index
+        UserDataSource().updateUser(user: user)
     }
 }
 
