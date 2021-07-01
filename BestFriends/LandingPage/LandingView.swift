@@ -180,7 +180,6 @@ struct LandingView: View {
                             AddFriends()
                         }
                     
-                    //
                     Image("whiteSmiley")
                         .resizable()
                         .frame(width: 40, height: 40)
@@ -193,7 +192,6 @@ struct LandingView: View {
                             ImagePicker(image: self.$inputImage)
                         }
                     
-                    //
                     Image("settingsiconwhite")
                         .resizable()
                         .frame(width: 40, height: 40)

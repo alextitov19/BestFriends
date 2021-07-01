@@ -75,7 +75,7 @@ struct AddFriends: View {
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                       
+                        
                         
                         Text("Select [Get my QR code]")
                             
@@ -111,15 +111,15 @@ struct AddFriends: View {
                             .frame(height: 15)
                         
                         VStack {
-                        
-                        Text("Step 3")
                             
-                            .font(.system(size: 22))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
+                            Text("Step 3")
+                                
+                                .font(.system(size: 22))
+                                .fontWeight(.regular)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .multilineTextAlignment(.center)
+                                .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
                             Text("Ask friend to save image of your QR code to their gallery.")
                                 
                                 .font(.system(size: 22))
@@ -127,22 +127,22 @@ struct AddFriends: View {
                                 .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
                                 .multilineTextAlignment(.center)
                                 .frame(width: 275, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                        
-                        
-                        
+                            
+                            
+                            
+                            
                             Spacer()
                                 .frame(height: 15)
-                        
-                        
-                        Text("Step 4")
                             
-                            .font(.system(size: 22))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
+                            
+                            Text("Step 4")
+                                
+                                .font(.system(size: 22))
+                                .fontWeight(.regular)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .multilineTextAlignment(.center)
+                                .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
                             Text("Ask friend to select [My Gallery] and tap the image of your QR code.")
                                 
                                 .font(.system(size: 22))
@@ -150,46 +150,47 @@ struct AddFriends: View {
                                 .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
                                 .multilineTextAlignment(.center)
                                 .frame(width: 375, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-             
-                    }
-                    
-                    VStack {
+                            
+                        }
                         
-                     
-                        
-                        
-                        
-                        Spacer()
-                            .frame(height: 55)
-                        
-                        
-                        
+                        VStack {
+                            
+                            
+                            
+                            
+                            
+                            Spacer()
+                                .frame(height: 55)
+                            
+                            
+                            
+                        }
                     }
                 }
             }
         }
+        
+        //        struct AddFriends_Previews : PreviewProvider {
+        //            static var previews: some View {
+        //                AddFriends()
+        //        }
     }
     
-//        struct AddFriends_Previews : PreviewProvider {
-//            static var previews: some View {
-//                AddFriends()
-//        }
-    }
     
     
-
-
-
-
-//Text("Ok, got it.")
-//    .onTapGesture {
-//        sessionManager.getCurrentAuthUser()
-//    }
-//    .font(.system(size: 35))
-//    .frame(width: 325, height: 50)
-//    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//    .overlay(
-//        RoundedRectangle(cornerRadius: 25)
-//            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-//    )
-
+    
+    
+    
+    //Text("Ok, got it.")
+    //    .onTapGesture {
+    //        sessionManager.getCurrentAuthUser()
+    //    }
+    //    .font(.system(size: 35))
+    //    .frame(width: 325, height: 50)
+    //    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+    //    .overlay(
+    //        RoundedRectangle(cornerRadius: 25)
+    //            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+    //    )
+    
+}
