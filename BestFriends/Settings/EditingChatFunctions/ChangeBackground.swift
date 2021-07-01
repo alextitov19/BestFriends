@@ -11,7 +11,7 @@ import SwiftUI
 import AVKit
 
 struct ChangeBackground: View {
-        
+    
     var body: some View {
         ZStack {
             Image("changeBackground")
@@ -70,7 +70,7 @@ struct ChangeBackground: View {
                                 Image("blueGradient1")
                                     .resizable()
                                     .frame(width: 150, height: 250)
-    //                                .cornerRadius(25)
+                                    //                                .cornerRadius(25)
                                     .border(Color.white, width: 2)
                                 
                                 Button("Select", action: { saveData(index: 3) })
@@ -80,12 +80,12 @@ struct ChangeBackground: View {
                                     .cornerRadius(25)
                             }
                             .padding()
-                                                    
+                            
                             VStack {
                                 Image("blueGradient2")
                                     .resizable()
                                     .frame(width: 150, height: 250)
-    //                                .cornerRadius(25)
+                                    //                                .cornerRadius(25)
                                     .border(Color.white, width: 2)
                                 
                                 Button("Select", action: { saveData(index: 4) })
@@ -106,7 +106,7 @@ struct ChangeBackground: View {
                             VStack {
                                 VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
                                     .frame(width: 150, height: 250)
-    //                                .cornerRadius(25)
+                                    //                                .cornerRadius(25)
                                     .border(Color.white, width: 2)
                                 
                                 Button("Select", action: { saveData(index: 101) })
@@ -116,11 +116,11 @@ struct ChangeBackground: View {
                                     .cornerRadius(25)
                             }
                             .padding()
-                                                    
+                            
                             VStack {
                                 VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
                                     .frame(width: 150, height: 250)
-    //                                .cornerRadius(25)
+                                    //                                .cornerRadius(25)
                                     .border(Color.white, width: 2)
                                 
                                 Button("Select", action: { saveData(index: 102) })
@@ -136,7 +136,7 @@ struct ChangeBackground: View {
                             VStack {
                                 VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
                                     .frame(width: 150, height: 250)
-    //                                .cornerRadius(25)
+                                    //                                .cornerRadius(25)
                                     .border(Color.white, width: 2)
                                 
                                 Button("Select", action: { saveData(index: 103) })
@@ -146,11 +146,11 @@ struct ChangeBackground: View {
                                     .cornerRadius(25)
                             }
                             .padding()
-                                                    
+                            
                             VStack {
                                 VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
                                     .frame(width: 150, height: 250)
-    //                                .cornerRadius(25)
+                                    //                                .cornerRadius(25)
                                     .border(Color.white, width: 2)
                                 
                                 Button("Select", action: { saveData(index: 104) })
@@ -163,9 +163,6 @@ struct ChangeBackground: View {
                         }
                     }
                 }
-                
-                
-                
             }
         }
         //        .navigationBarTitle("Change Chat Background")
