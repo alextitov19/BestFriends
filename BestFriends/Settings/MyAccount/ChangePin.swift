@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct ChangeRestoreChatPIN: View {
+struct ChangePin: View {
     
     @State private var PIN: String = ""
     @State private var readyToProceed = false
@@ -24,7 +24,7 @@ struct ChangeRestoreChatPIN: View {
                 
                 VStack {
                     
-                    Text("Change Restore Chat PIN (working)")
+                    Text("Change Restore Chat PIN")
                         .font(.system(size: 30))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)

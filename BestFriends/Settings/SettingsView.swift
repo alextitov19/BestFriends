@@ -252,35 +252,54 @@ struct SettingsView: View {
                                         
                                         VStack {
                                             
-                                            Spacer()
-                                                .frame(height: 20)
-                                            
-                                            NavigationLink(
-                                                destination: NotificationsOnOffPage(),
-                                                label: {
-                                                    Text("Notification Settings ***(Need B/E)")
-                                                })
-                                                .frame(width: 325, height: 50)
-                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                .overlay(
-                                                    RoundedRectangle(cornerRadius: 25)
-                                                        .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
-                                                )
-                                            
-                                            Spacer()
-                                                .frame(height: 20)
-                                            
-                                            NavigationLink(
-                                                destination: DeleteMyAccount(),
-                                                label: {
-                                                    Text("Delete Account ***(Not Built)")
-                                                })
-                                                .frame(width: 325, height: 50)
-                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                .overlay(
-                                                    RoundedRectangle(cornerRadius: 25)
-                                                        .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
-                                                )
+                                            VStack {
+                                                
+                                                Spacer()
+                                                    .frame(height: 20)
+                                                
+                                                NavigationLink(
+                                                    destination: NotificationsOnOffPage(),
+                                                    label: {
+                                                        Text("Notification Settings ***(Need B/E)")
+                                                    })
+                                                    .frame(width: 325, height: 50)
+                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                    .overlay(
+                                                        RoundedRectangle(cornerRadius: 25)
+                                                            .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
+                                                    )
+                                                
+                                                Spacer()
+                                                    .frame(height: 20)
+                                                
+                                                NavigationLink(
+                                                    destination: ChangePin(),
+                                                    label: {
+                                                        Text("Change pin for Hide Chat")
+                                                    })
+                                                    .frame(width: 325, height: 50)
+                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                    .overlay(
+                                                        RoundedRectangle(cornerRadius: 25)
+                                                            .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
+                                                    )
+                                                
+                                                Spacer()
+                                                    .frame(height: 20)
+                                                
+                                                NavigationLink(
+                                                    destination: DeleteMyAccount(),
+                                                    label: {
+                                                        Text("Delete Account ***(Not Built)")
+                                                    })
+                                                    .frame(width: 325, height: 50)
+                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                    .overlay(
+                                                        RoundedRectangle(cornerRadius: 25)
+                                                            .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
+                                                    )
+                                                
+                                            }
                                             
                                             
                                             Spacer()

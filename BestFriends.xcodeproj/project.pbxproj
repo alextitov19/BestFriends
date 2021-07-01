@@ -460,7 +460,7 @@
 		D1949C412644FD4F00FDB6C5 /* DeleteFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */; };
 		D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D27D39264303E300BDA75F /* InfoPages.swift */; };
 		D1E3CFDF2653A35700A26779 /* BlueModeLP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */; };
-		D1E3CFE326543C4D00A26779 /* ChangePIN.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFE226543C4D00A26779 /* ChangePIN.swift */; };
+		D1E3CFE326543C4D00A26779 /* ChangePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFE226543C4D00A26779 /* ChangePin.swift */; };
 		D201C6D8515541F50AD3C719 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		D24DB9F6AABE64EE3AE01DA5 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
 		D2F9FFFD127F471AF5BDE75D /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595FBDEA8A886CB212104DF8 /* Advertisement.swift */; };
@@ -682,7 +682,7 @@
 		D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFriend.swift; sourceTree = "<group>"; };
 		D1D27D39264303E300BDA75F /* InfoPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPages.swift; sourceTree = "<group>"; };
 		D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeLP.swift; sourceTree = "<group>"; };
-		D1E3CFE226543C4D00A26779 /* ChangePIN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePIN.swift; sourceTree = "<group>"; };
+		D1E3CFE226543C4D00A26779 /* ChangePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePin.swift; sourceTree = "<group>"; };
 		DB24A96E58E94680A190216A /* User+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "User+Schema.swift"; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
 		E31DEA02CBB542D5AA59CA4B /* User.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = User.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
 		E690BC969FCE5C1ADF9DEE97 /* SmileNote.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = SmileNote.swift; path = amplify/generated/models/SmileNote.swift; sourceTree = "<group>"; };
@@ -1052,7 +1052,7 @@
 				D1949C342644E15E00FDB6C5 /* MyAccount.swift */,
 				D15CCD682647458900BFE179 /* ResetPassword.swift */,
 				D1577796264CBBAD00B6551A /* ChangeEmail.swift */,
-				D1E3CFE226543C4D00A26779 /* ChangePIN.swift */,
+				D1E3CFE226543C4D00A26779 /* ChangePin.swift */,
 				D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */,
 				CF436A31265B40DD00B69506 /* NotificationsOnOffPage.swift */,
 			);
@@ -1406,7 +1406,7 @@
 				CF5263DE266479E400243DD7 /* MotionBackground.swift in Sources */,
 				8FE1F6B29927D7277CD1FB6A /* Room+Schema.swift in Sources */,
 				C6A858535E070565DF118AAB /* Room.swift in Sources */,
-				D1E3CFE326543C4D00A26779 /* ChangePIN.swift in Sources */,
+				D1E3CFE326543C4D00A26779 /* ChangePin.swift in Sources */,
 				A20883FC4BFEC45F646B169E /* User+Schema.swift in Sources */,
 				F448AA3262ADF2D73791AE6B /* AmplifyModels.swift in Sources */,
 				8DFA6C0C1027C5D93D05C2C0 /* Message+Schema.swift in Sources */,
