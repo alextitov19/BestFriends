@@ -106,6 +106,7 @@ struct MessageRoomView: View {
                     Spacer()
                     
                     Text("< Back")
+                        .foregroundColor(.white)
                         .onTapGesture {
                             sessionManager.showRooms()
                         }
@@ -260,7 +261,7 @@ struct MessageRoomView: View {
                         }
                     }
                     .popover(isPresented: $stickerPopoverShowing) {
-                        StickerPopover(messageDataSource: messageDataSource, user: user).environmentObject(sessionManager)
+                        StickerPopover(messageDataSource: messageDataSource, showSheet: $stickerPopoverShowing, user: user).environmentObject(sessionManager)
                     }
                 }
                 

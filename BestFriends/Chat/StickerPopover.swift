@@ -13,6 +13,8 @@ struct StickerPopover: View {
     
     @ObservedObject var messageDataSource: MessageDataSource
     
+    @Binding var showSheet: Bool
+    
     let userDataSource = UserDataSource()
     
     var user: User
@@ -50,16 +52,38 @@ struct StickerPopover: View {
                             HStack {
                                 ForEach(1...4, id: \.self) { j in
                                     let number = (4*(i-1))+j
-                                    Image(uiImage: messageDataSource.downloadImage(key: "Stickers/Sticker\(number).png"))
-                                        .resizable()
-                                        .frame(width: 65, height: 65)
-                                        .scaledToFit()
-                                        .padding()
-                                        .onTapGesture {
+                                    ZStack {
+                                        Image(uiImage: messageDataSource.downloadImage(key: "Stickers/Sticker\(number).png"))
+                                            .resizable()
+                                            .frame(width: 65, height: 65)
+                                            .scaledToFit()
+                                            .padding()
+                                        
+                                        if user.unlockedStickers == nil || user.unlockedStickers!.contains(number) == false {
+                                            Image("lockBlack")
+                                                .resizable()
+                                                .frame(width: 65, height: 65)
+                                                .scaledToFit()
+                                        }
+                                        
+                                        Button(action: {
+                                            if user.unlockedStickers == nil || user.unlockedStickers!.contains(number) == false {
+                                                var newuser = user
+                                                newuser.unlockedStickers?.append(number)
+                                                newuser.tokens -= 7
+                                                userDataSource.updateUser(user: newuser)
+                                            }
+                                            
                                             let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "sticker", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
                                             
                                             messageDataSource.sendMessage(message: message)
+                                            
+                                            self.showSheet = false
+                                        }) {
+                                            Color(.clear)
+                                                .frame(width: 65, height: 65)
                                         }
+                                    }
                                 }
                             }
                         }
