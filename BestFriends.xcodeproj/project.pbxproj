@@ -201,6 +201,7 @@
 		771AD6089F6265A871F0F171 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */; };
 		77FC07C16E388B9965B5EC17 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
 		78F9D5FE5DD3051379CAC40E /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24A96E58E94680A190216A /* User+Schema.swift */; };
+		7A01A96726939DA40047BB35 /* StickerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01A96626939DA40047BB35 /* StickerPopover.swift */; };
 		7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */; };
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
@@ -564,6 +565,7 @@
 		6938CF675DE8432796534940 /* Room+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "Room+Schema.swift"; path = "amplify/generated/models/Room+Schema.swift"; sourceTree = "<group>"; };
 		71B5DFCDF98DAA323331D1BC /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		762CEB4FA7014E308E51B33B /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		7A01A96626939DA40047BB35 /* StickerPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPopover.swift; sourceTree = "<group>"; };
 		7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
@@ -750,6 +752,7 @@
 				7A7F6E37264305AA0022F078 /* ChatBubble.swift */,
 				7A95EA5726530DDA00C6C700 /* PinView.swift */,
 				7AD8376A267E9A24005A2D48 /* SmileNotePopover.swift */,
+				7A01A96626939DA40047BB35 /* StickerPopover.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -1556,6 +1559,7 @@
 				3D18F719D4B42B0CE7916D43 /* ReportedMessage+Schema.swift in Sources */,
 				BCA4E12D5225C8DCC103E38C /* ReportedMessage.swift in Sources */,
 				FDB305C764EC08E517A87949 /* Room+Schema.swift in Sources */,
+				7A01A96726939DA40047BB35 /* StickerPopover.swift in Sources */,
 				BB791BE104F2C3226217BAF1 /* User.swift in Sources */,
 				11AEFD742E241C5DD2B17DAB /* Advertisement+Schema.swift in Sources */,
 				CABEC851257D408360ADBACC /* Message.swift in Sources */,

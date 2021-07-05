@@ -45,7 +45,7 @@ struct MessageRoomView: View {
     var room: Room
     var lastRead: Int?
     
-    var timer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
+    var timer = Timer.publish(every: 3000, on: .main, in: .common).autoconnect()
     
     @State private var adButtonOffset: Float = 0
     
@@ -260,32 +260,7 @@ struct MessageRoomView: View {
                         }
                     }
                     .popover(isPresented: $stickerPopoverShowing) {
-                        ZStack {
-                            Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
-                                .ignoresSafeArea()
-                            
-                            ScrollView {
-                                VStack {
-                                    ForEach(1...3, id: \.self) { i in
-                                        HStack {
-                                            ForEach(1...4, id: \.self) { j in
-                                                let number = (4*(i-1))+j
-                                                Image("Sticker\(number)")
-                                                    .resizable()
-                                                    .frame(width: 65, height: 65)
-                                                    .scaledToFit()
-                                                    .padding()
-                                                    .onTapGesture {
-                                                        let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "sticker", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
-                                                        
-                                                        messageDataSource.sendMessage(message: message)
-                                                    }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                        StickerPopover(messageDataSource: messageDataSource, user: user).environmentObject(sessionManager)
                     }
                 }
                 

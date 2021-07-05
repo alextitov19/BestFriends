@@ -77,7 +77,7 @@ struct ChatBubble: View {
                     Spacer()
                     
                     if message.stickerNumber != nil {
-                        Image("Sticker\(message.stickerNumber!)")
+                        Image(uiImage: messageDataSource.downloadImage(key: "Stickers/Sticker\(message.stickerNumber!).png"))
                             .resizable()
                             .frame(width: 150, height: 150)
                             .scaledToFit()
@@ -125,7 +125,7 @@ struct ChatBubble: View {
                 
                 HStack {
                     if message.stickerNumber != nil {
-                        Image("Sticker\(message.stickerNumber!)")
+                        Image(uiImage: messageDataSource.downloadImage(key: "Stickers/Sticker\(message.stickerNumber!).png"))
                             .resizable()
                             .frame(width: 150, height: 150)
                             .scaledToFit()
