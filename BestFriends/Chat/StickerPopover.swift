@@ -67,18 +67,31 @@ struct StickerPopover: View {
                                         }
                                         
                                         Button(action: {
-                                            if user.unlockedStickers == nil || user.unlockedStickers!.contains(number) == false {
+                                            if user.unlockedStickers != nil {
+                                                if user.unlockedStickers!.contains(number) == false && user.tokens >= 7 {
+                                                    var newuser = user
+                                                    newuser.unlockedStickers?.append(number)
+                                                    newuser.tokens -= 7
+                                                    userDataSource.updateUser(user: newuser)
+                                                    
+                                                    let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "sticker", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
+                                                    
+                                                    messageDataSource.sendMessage(message: message)
+                                                } else if user.unlockedStickers!.contains(number) == true {
+                                                    let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "sticker", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
+                                                    
+                                                    messageDataSource.sendMessage(message: message)
+                                                }
+                                            } else if user.tokens >= 7 {
                                                 var newuser = user
                                                 newuser.unlockedStickers?.append(number)
                                                 newuser.tokens -= 7
                                                 userDataSource.updateUser(user: newuser)
+                                                
+                                                let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "sticker", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
+                                                
+                                                messageDataSource.sendMessage(message: message)
                                             }
-                                            
-                                            let message = Message(id: messageDataSource.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "sticker", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
-                                            
-                                            messageDataSource.sendMessage(message: message)
-                                            
-                                            self.showSheet = false
                                         }) {
                                             Color(.clear)
                                                 .frame(width: 65, height: 65)
