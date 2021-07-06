@@ -59,7 +59,7 @@ type User @model {
 
 type InvitedRoom {
   roomID: String!
-  timer: AWSTimestamp!
+  timer: AWSTimestamp
 }
 
 type Advertisement @model {

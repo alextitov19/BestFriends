@@ -1091,7 +1091,7 @@ public struct CreateUserInput: GraphQLMapConvertible {
 public struct InvitedRoomInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(roomId: String, timer: Int? = nil) {
+  public init(roomId: String, timer: Int) {
     graphQLMap = ["roomID": roomId, "timer": timer]
   }
 
@@ -1104,9 +1104,9 @@ public struct InvitedRoomInput: GraphQLMapConvertible {
     }
   }
 
-  public var timer: Int? {
+  public var timer: Int {
     get {
-      return graphQLMap["timer"] as! Int?
+      return graphQLMap["timer"] as! Int
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "timer")
@@ -4899,7 +4899,7 @@ public final class CreateUserMutation: GraphQLMutation {
         public static let selections: [GraphQLSelection] = [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
-          GraphQLField("timer", type: .scalar(Int.self)),
+          GraphQLField("timer", type: .nonNull(.scalar(Int.self))),
         ]
 
         public var snapshot: Snapshot
@@ -4908,7 +4908,7 @@ public final class CreateUserMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(roomId: String, timer: Int? = nil) {
+        public init(roomId: String, timer: Int) {
           self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
         }
 
@@ -4930,9 +4930,9 @@ public final class CreateUserMutation: GraphQLMutation {
           }
         }
 
-        public var timer: Int? {
+        public var timer: Int {
           get {
-            return snapshot["timer"] as? Int
+            return snapshot["timer"]! as! Int
           }
           set {
             snapshot.updateValue(newValue, forKey: "timer")
@@ -5421,7 +5421,7 @@ public final class UpdateUserMutation: GraphQLMutation {
         public static let selections: [GraphQLSelection] = [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
-          GraphQLField("timer", type: .scalar(Int.self)),
+          GraphQLField("timer", type: .nonNull(.scalar(Int.self))),
         ]
 
         public var snapshot: Snapshot
@@ -5430,7 +5430,7 @@ public final class UpdateUserMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(roomId: String, timer: Int? = nil) {
+        public init(roomId: String, timer: Int) {
           self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
         }
 
@@ -5452,9 +5452,9 @@ public final class UpdateUserMutation: GraphQLMutation {
           }
         }
 
-        public var timer: Int? {
+        public var timer: Int {
           get {
-            return snapshot["timer"] as? Int
+            return snapshot["timer"]! as! Int
           }
           set {
             snapshot.updateValue(newValue, forKey: "timer")
@@ -5943,7 +5943,7 @@ public final class DeleteUserMutation: GraphQLMutation {
         public static let selections: [GraphQLSelection] = [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
-          GraphQLField("timer", type: .scalar(Int.self)),
+          GraphQLField("timer", type: .nonNull(.scalar(Int.self))),
         ]
 
         public var snapshot: Snapshot
@@ -5952,7 +5952,7 @@ public final class DeleteUserMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(roomId: String, timer: Int? = nil) {
+        public init(roomId: String, timer: Int) {
           self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
         }
 
@@ -5974,9 +5974,9 @@ public final class DeleteUserMutation: GraphQLMutation {
           }
         }
 
-        public var timer: Int? {
+        public var timer: Int {
           get {
-            return snapshot["timer"] as? Int
+            return snapshot["timer"]! as! Int
           }
           set {
             snapshot.updateValue(newValue, forKey: "timer")
@@ -8649,7 +8649,7 @@ public final class GetUserQuery: GraphQLQuery {
         public static let selections: [GraphQLSelection] = [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
-          GraphQLField("timer", type: .scalar(Int.self)),
+          GraphQLField("timer", type: .nonNull(.scalar(Int.self))),
         ]
 
         public var snapshot: Snapshot
@@ -8658,7 +8658,7 @@ public final class GetUserQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(roomId: String, timer: Int? = nil) {
+        public init(roomId: String, timer: Int) {
           self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
         }
 
@@ -8680,9 +8680,9 @@ public final class GetUserQuery: GraphQLQuery {
           }
         }
 
-        public var timer: Int? {
+        public var timer: Int {
           get {
-            return snapshot["timer"] as? Int
+            return snapshot["timer"]! as! Int
           }
           set {
             snapshot.updateValue(newValue, forKey: "timer")
@@ -9219,7 +9219,7 @@ public final class ListUsersQuery: GraphQLQuery {
           public static let selections: [GraphQLSelection] = [
             GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
             GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
-            GraphQLField("timer", type: .scalar(Int.self)),
+            GraphQLField("timer", type: .nonNull(.scalar(Int.self))),
           ]
 
           public var snapshot: Snapshot
@@ -9228,7 +9228,7 @@ public final class ListUsersQuery: GraphQLQuery {
             self.snapshot = snapshot
           }
 
-          public init(roomId: String, timer: Int? = nil) {
+          public init(roomId: String, timer: Int) {
             self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
           }
 
@@ -9250,9 +9250,9 @@ public final class ListUsersQuery: GraphQLQuery {
             }
           }
 
-          public var timer: Int? {
+          public var timer: Int {
             get {
-              return snapshot["timer"] as? Int
+              return snapshot["timer"]! as! Int
             }
             set {
               snapshot.updateValue(newValue, forKey: "timer")
@@ -12049,7 +12049,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
         public static let selections: [GraphQLSelection] = [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
-          GraphQLField("timer", type: .scalar(Int.self)),
+          GraphQLField("timer", type: .nonNull(.scalar(Int.self))),
         ]
 
         public var snapshot: Snapshot
@@ -12058,7 +12058,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(roomId: String, timer: Int? = nil) {
+        public init(roomId: String, timer: Int) {
           self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
         }
 
@@ -12080,9 +12080,9 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
           }
         }
 
-        public var timer: Int? {
+        public var timer: Int {
           get {
-            return snapshot["timer"] as? Int
+            return snapshot["timer"]! as! Int
           }
           set {
             snapshot.updateValue(newValue, forKey: "timer")
@@ -12562,7 +12562,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
         public static let selections: [GraphQLSelection] = [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
-          GraphQLField("timer", type: .scalar(Int.self)),
+          GraphQLField("timer", type: .nonNull(.scalar(Int.self))),
         ]
 
         public var snapshot: Snapshot
@@ -12571,7 +12571,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(roomId: String, timer: Int? = nil) {
+        public init(roomId: String, timer: Int) {
           self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
         }
 
@@ -12593,9 +12593,9 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
           }
         }
 
-        public var timer: Int? {
+        public var timer: Int {
           get {
-            return snapshot["timer"] as? Int
+            return snapshot["timer"]! as! Int
           }
           set {
             snapshot.updateValue(newValue, forKey: "timer")
@@ -13075,7 +13075,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
         public static let selections: [GraphQLSelection] = [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("roomID", type: .nonNull(.scalar(String.self))),
-          GraphQLField("timer", type: .scalar(Int.self)),
+          GraphQLField("timer", type: .nonNull(.scalar(Int.self))),
         ]
 
         public var snapshot: Snapshot
@@ -13084,7 +13084,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(roomId: String, timer: Int? = nil) {
+        public init(roomId: String, timer: Int) {
           self.init(snapshot: ["__typename": "InvitedRoom", "roomID": roomId, "timer": timer])
         }
 
@@ -13106,9 +13106,9 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
           }
         }
 
-        public var timer: Int? {
+        public var timer: Int {
           get {
-            return snapshot["timer"] as? Int
+            return snapshot["timer"]! as! Int
           }
           set {
             snapshot.updateValue(newValue, forKey: "timer")
