@@ -19,7 +19,7 @@ extension InvitedRoom {
     
     model.fields(
       .field(invitedRoom.roomID, is: .required, ofType: .string),
-      .field(invitedRoom.timer, is: .optional, ofType: .int)
+      .field(invitedRoom.timer, is: .required, ofType: .int)
     )
     }
 }
