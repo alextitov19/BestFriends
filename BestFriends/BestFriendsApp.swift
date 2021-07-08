@@ -56,7 +56,6 @@ struct BestFriendsApp: App {
             case .chat(let room):
                 MessageRoomView(room: room)
                     .environmentObject(sessionManager)
-                
             }
             
         }
