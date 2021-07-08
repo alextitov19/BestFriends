@@ -445,7 +445,6 @@
 		CF30FF93267E955A000B2730 /* SmileNotesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30FF92267E955A000B2730 /* SmileNotesCard.swift */; };
 		CF356D1C2671FE4900BCF572 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1B2671FE4900BCF572 /* Tokens.swift */; };
 		CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */; };
-		CF356D24267395B900BCF572 /* SplashScreenVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D23267395B900BCF572 /* SplashScreenVid.swift */; };
 		CF356D322674E3F100BCF572 /* AddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D312674E3F100BCF572 /* AddFriends.swift */; };
 		CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2226584E1800B69506 /* BlueTransitionPage.swift */; };
 		CF436A252658C64200B69506 /* BlueTransitionPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A242658C64200B69506 /* BlueTransitionPage1.swift */; };
@@ -455,7 +454,6 @@
 		CF5263DE266479E400243DD7 /* MotionBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263DD266479E400243DD7 /* MotionBackground.swift */; };
 		CF5263E026647A0A00243DD7 /* StaticBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263DF26647A0A00243DD7 /* StaticBackground.swift */; };
 		CF5263E32667621B00243DD7 /* ChangeChatFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */; };
-		CF5263EC266A246A00243DD7 /* SocialChangeVid2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */; };
 		CF5263F2266DDD4200243DD7 /* BlueModeUserDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */; };
 		CFE33572A2043B757FF71D3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
@@ -668,7 +666,6 @@
 		CF30FF92267E955A000B2730 /* SmileNotesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesCard.swift; sourceTree = "<group>"; };
 		CF356D1B2671FE4900BCF572 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreLoad.swift; sourceTree = "<group>"; };
-		CF356D23267395B900BCF572 /* SplashScreenVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenVid.swift; sourceTree = "<group>"; };
 		CF356D312674E3F100BCF572 /* AddFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriends.swift; sourceTree = "<group>"; };
 		CF436A2226584E1800B69506 /* BlueTransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage.swift; sourceTree = "<group>"; };
 		CF436A242658C64200B69506 /* BlueTransitionPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage1.swift; sourceTree = "<group>"; };
@@ -682,7 +679,6 @@
 		CF5263DD266479E400243DD7 /* MotionBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionBackground.swift; sourceTree = "<group>"; };
 		CF5263DF26647A0A00243DD7 /* StaticBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticBackground.swift; sourceTree = "<group>"; };
 		CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatFontSize.swift; sourceTree = "<group>"; };
-		CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialChangeVid2.swift; sourceTree = "<group>"; };
 		CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeUserDashboard.swift; sourceTree = "<group>"; };
 		CF5263FD266F202400243DD7 /* BlueHeartVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlueHeartVid.mp4; sourceTree = "<group>"; };
 		CF526402266F20A600243DD7 /* Mieko3.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mieko3.m4v; sourceTree = "<group>"; };
@@ -929,14 +925,12 @@
 			isa = PBXGroup;
 			children = (
 				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
-				CF5263EB266A246A00243DD7 /* SocialChangeVid2.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
 				7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */,
 				7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */,
 				7AC0DA9B262BAF3B007FC643 /* UserManager.swift */,
 				7AC8A23E26578C3E001812EF /* LocationManager.swift */,
 				CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */,
-				CF356D23267395B900BCF572 /* SplashScreenVid.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -1279,7 +1273,6 @@
 				7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */,
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */,
-				CF5263EC266A246A00243DD7 /* SocialChangeVid2.swift in Sources */,
 				7AB62A8526426F86005A7744 /* SettingsView.swift in Sources */,
 				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
@@ -1550,7 +1543,6 @@
 				50F72423B2278C6D331924A6 /* Room.swift in Sources */,
 				7F18CC0EC6D0B456D6443CF7 /* Advertisement.swift in Sources */,
 				3B15D8D6E1897757FD7700B4 /* AmplifyModels.swift in Sources */,
-				CF356D24267395B900BCF572 /* SplashScreenVid.swift in Sources */,
 				CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */,
 				4595F794360ECA666B80CD23 /* ManagementDocument+Schema.swift in Sources */,
 				73A6AA25D094C64B3E0C40E6 /* Message+Schema.swift in Sources */,
@@ -1921,7 +1913,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_PREVIEWS = YES;
@@ -1948,7 +1940,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_PREVIEWS = YES;

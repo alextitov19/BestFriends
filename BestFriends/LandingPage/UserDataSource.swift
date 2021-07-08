@@ -81,8 +81,8 @@ struct UserDataSource {
         group.wait()
         
         return finaluser
-        
     }
+    
     func getAllUsernames() -> [String] {
         var usernames: [String] = []
         

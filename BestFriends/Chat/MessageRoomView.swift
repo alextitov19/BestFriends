@@ -33,6 +33,7 @@ struct MessageRoomView: View {
     @State var adButtonsHidden = true
     @State var roomname = ""
     @State var presentingDashboard = false
+    @State var showingNotifications = false
     
     var adIDs: [String] = []
     var adNames: [String] = []
@@ -103,16 +104,13 @@ struct MessageRoomView: View {
             
             VStack {
                 HStack { //header
-                    Spacer()
-                    
                     Text("< Back")
                         .foregroundColor(.white)
                         .onTapGesture {
                             sessionManager.showRooms()
                         }
-                    
-                    Spacer()
-                    
+                        .padding()
+                                        
                     ZStack {
                         if roomname == "" {
                             Text(room.name)
@@ -134,12 +132,18 @@ struct MessageRoomView: View {
                         .background(Color(.clear))
                         .frame(width:200)
                     }
+                    .padding()
                     
-                    
-                    
-                    
-                    Spacer()
-                    
+                    Button(action: {
+                        showingNotifications = true
+                    }) {
+                        Image("whiteBell")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFit()
+                    }
+                    .padding()
+
                     Button(action: {
                         showingPin = true
                         var rooms = user.hiddenRooms ?? []
@@ -155,8 +159,7 @@ struct MessageRoomView: View {
                             .frame(width: 40, height: 40)
                             .scaledToFit()
                     }
-                    
-                    Spacer()
+                    .padding()
                 }
                 
                 ScrollView { //messages
@@ -264,9 +267,6 @@ struct MessageRoomView: View {
                         StickerPopover(messageDataSource: messageDataSource, showSheet: $stickerPopoverShowing, user: user).environmentObject(sessionManager)
                     }
                 }
-                
-                
-                
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
@@ -340,7 +340,7 @@ struct MessageRoomView: View {
                     .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
                                 .onEnded({ value in
                                     if room.blueMode {
-                                        if value.translation.width < -10 || value.translation.width > 10{
+                                        if value.translation.width < -10 || value.translation.width > 10 {
                                             // horizontal
                                             print("Swipe horizontal")
                                             withAnimation {
@@ -350,6 +350,30 @@ struct MessageRoomView: View {
                                     }
                                 }))
             }
+            
+            VStack {
+                Text("Send chat member a \npush notification")
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 18, weight: .light))
+                    .foregroundColor(.white)
+                    .padding()
+                
+                ForEach(room.members, id: \.self) { id in
+                    if id != user.id {
+                        let name = userDataSource.getUser(id: id).firstName + " " + userDataSource.getUser(id: id).lastName
+                        Button(name, action: {
+                            //send push notifiction
+                            showingNotifications = false
+                        })
+                        .font(.system(size: 22, weight: .bold))
+                        .foregroundColor(.white)
+                        .padding()
+                    }
+                }
+            }
+            .background(Color(#colorLiteral(red: 0.4978310466, green: 0.2762668133, blue: 1, alpha: 1)))
+            .cornerRadius(20)
+            .isHidden(!showingNotifications)
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
