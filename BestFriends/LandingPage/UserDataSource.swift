@@ -9,7 +9,7 @@ import Foundation
 import Amplify
 
 struct UserDataSource {
-    
+        
     func getUser(id: String) -> User {
         var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, blueMode: false, notificationsBM: true, notificationsLP: true)
         
@@ -23,6 +23,8 @@ struct UserDataSource {
                 case .success(let user):
                     guard let user = user else {
                         print("Could not find user")
+                        print("failed 0 for id: \(id) and my id is: \(Amplify.Auth.getCurrentUser()?.username)")
+//                        SessionManager().showLogin()
                         return
                     }
                     print("Successfully retrieved user: \(user)")
@@ -49,6 +51,8 @@ struct UserDataSource {
         var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, blueMode: false, notificationsBM: true, notificationsLP: true)
         
         guard let id = Amplify.Auth.getCurrentUser()?.username else {
+//            SessionManager().showLogin()
+            print("failed 1")
             return finaluser
         }
         
@@ -62,6 +66,8 @@ struct UserDataSource {
                 case .success(let user):
                     guard let user = user else {
                         print("Could not find user")
+                        print("failed 2")
+//                        SessionManager().signOut()
                         return
                     }
                     print("Successfully retrieved user: \(user)")
