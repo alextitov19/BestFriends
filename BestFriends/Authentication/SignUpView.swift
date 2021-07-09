@@ -1298,10 +1298,11 @@ struct SignUpQuestionPage3: View {
                         .frame(height: 30)
                     
                     Button("Social Impact / NGO's", action: {
+                        didTap5.toggle()
                     })
                     .frame(width: 300, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap4 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                    .background(didTap5 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                     .cornerRadius(25)
                     
                     Spacer()
@@ -1320,7 +1321,7 @@ struct SignUpQuestionPage3: View {
                         
                     )
                     
-                    var adPref: String = "NGO "
+                    var adPref: String = ""
                     if didTap1 {
                         adPref.append("BF ")
                     }
@@ -1334,7 +1335,7 @@ struct SignUpQuestionPage3: View {
                         adPref.append("L ")
                     }
                     if didTap5 {
-                        adPref.append("SI ")
+                        adPref.append("NGO ")
                     }
                     let pushManager = PushNotificationManager(userID: username)
                     
@@ -1364,8 +1365,8 @@ struct SignUpQuestionPage3: View {
                     Text("Submit")
                         .font(.title)
                 }
-                .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4) ? 50 : 0))
-                .disabled(!(didTap1 || didTap2 || didTap3 || didTap4))
+                .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4 || didTap5) ? 50 : 0))
+                .disabled(!(didTap1 || didTap2 || didTap3 || didTap4 || didTap5))
                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                 .cornerRadius(25)
