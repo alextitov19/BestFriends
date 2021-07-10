@@ -155,12 +155,7 @@ struct AddFriends: View {
                         
                         VStack {
                             
-                            
-                            
-                            
-                            
-                            Spacer()
-                                .frame(height: 55)
+                     
                             
                             
                             
@@ -170,27 +165,28 @@ struct AddFriends: View {
             }
         }
         
-        //        struct AddFriends_Previews : PreviewProvider {
-        //            static var previews: some View {
-        //                AddFriends()
-        //        }
     }
-    
-    
-    
-    
-    
-    
-    //Text("Ok, got it.")
-    //    .onTapGesture {
-    //        sessionManager.getCurrentAuthUser()
-    //    }
-    //    .font(.system(size: 35))
-    //    .frame(width: 325, height: 50)
-    //    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-    //    .overlay(
-    //        RoundedRectangle(cornerRadius: 25)
-    //            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-    //    )
-    
 }
+struct AddFriends_Previews : PreviewProvider {
+    static var previews: some View {
+        AddFriends()
+    }
+}
+        
+        
+        
+        
+        
+        
+        //Text("Ok, got it.")
+        //    .onTapGesture {
+        //        sessionManager.getCurrentAuthUser()
+        //    }
+        //    .font(.system(size: 35))
+        //    .frame(width: 325, height: 50)
+        //    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+        //    .overlay(
+        //        RoundedRectangle(cornerRadius: 25)
+        //            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+        //    )
+
