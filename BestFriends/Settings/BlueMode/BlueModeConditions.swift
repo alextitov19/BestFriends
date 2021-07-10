@@ -36,7 +36,7 @@ struct BlueModeConditions: View {
                         .frame(height: 15)
                     
                     
-                    VStack {
+                  
                        
                         
                         Text("Condition 1")
@@ -61,7 +61,7 @@ struct BlueModeConditions: View {
                         Spacer()
                             .frame(height: 25)
                         
-                        
+                    VStack {
                         Text("Condition 2")
                             
                             .font(.system(size: 30))
@@ -81,8 +81,6 @@ struct BlueModeConditions: View {
                             .frame(width: 320, height: 120, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                     
-                        
-                        VStack {
                             
                        
                             
@@ -97,12 +95,10 @@ struct BlueModeConditions: View {
                           
                             
                             Spacer()
-                                .frame(height: 200)
+                                .frame(height: 400)
                             
                         }
                         
-                        VStack {
-                            
                      
                             
                             
@@ -114,7 +110,7 @@ struct BlueModeConditions: View {
         }
         
     }
-}
+
 struct BlueModeConditions_Previews : PreviewProvider {
     static var previews: some View {
         BlueModeConditions()
@@ -124,4 +120,4 @@ struct BlueModeConditions_Previews : PreviewProvider {
         
         
 
-}
+
