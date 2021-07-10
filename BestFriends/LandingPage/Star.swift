@@ -39,7 +39,11 @@ struct Star: View {
             ActionSheet(title: Text("Manage \(name)"), message: Text("Before you block or delete your friend, try BlueMode!"), buttons: [
                 .default(Text("Switch to BlueMode")) {
                     // Code for switching to BlueMode below
-                    
+                    let friend = UserDataSource().getUser(id: id)
+                    let myself = UserDataSource().getCurrentUser()
+                    if friend.BMFriend == nil && myself.BMFriend == nil {
+                        BlueModeDataSource().addFriendToBlueMode(friendID: id)
+                    }
                 },
                 .default(Text("Block \(name)")) {
                     // Code for blocking your friend below

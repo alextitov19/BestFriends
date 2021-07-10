@@ -20,7 +20,6 @@ class RoomDataSource: ObservableObject {
                 switch creationResult {
                 case .success:
                     print("Successfully created room")
-                    PushNotificationSender().sendPushNotification(token: "dP7qVfgfl0iSnhMuCYDjY-:APA91bHomhBOufgZg6T2jAdcvFhgpCgY8oCBeBas0YsLoa7eI1jpMKed7lrVLlr3qAC_ZcfdBfGX30ospbknmD4GS9g5M7fX0Cjqsx-SmgVGc-VYx655AQPmlGdDJrN5IgJrkD3eLyDy", title: "New Room", body: "Successfully made a new room!")
                     
                 case .failure(let error):
                     print(error)
