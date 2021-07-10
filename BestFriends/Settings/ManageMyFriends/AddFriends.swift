@@ -135,10 +135,10 @@ struct AddFriends: View {
                                     .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                                 NavigationLink(destination: BlueModeConditions()) {
-                                    Text("BlueMode SetUp")
+                                    Text("SetUp BlueMode")
                                         .font(.title)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .frame(width: 300, height: 50)
+                                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                        .frame(width: 425, height: 50)
                                         .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                                         .cornerRadius(25)
                         

@@ -97,7 +97,7 @@ struct BlueModeConditions: View {
                                 Text("I Agree")
                                     .font(.title)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .frame(width: 300, height: 50)
+                                    .frame(width: 425, height: 50)
                                     .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                                     .cornerRadius(25)
                           
