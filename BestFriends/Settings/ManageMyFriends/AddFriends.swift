@@ -26,15 +26,7 @@ struct AddFriends: View {
                 VStack {
               
                     
-                    Text("QR codes Keep You Safe")
-                        .italic()
-                        .font(.system(size: 35))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 230, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    Spacer()
-                        .frame(height: 15)
+                   
                     
                     
                     VStack {
@@ -72,7 +64,7 @@ struct AddFriends: View {
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
-                        Text("Screen-shot your QR code and text it to your friend.")
+                        Text("Screen-shot your QR code and text image to your friend.")
                             
                             .font(.system(size: 22))
                             .fontWeight(.regular)
@@ -96,7 +88,7 @@ struct AddFriends: View {
                                 .multilineTextAlignment(.center)
                                 .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
-                            Text("Ask friend to save image of your QR code to their gallery.")
+                            Text("Ask friend to save QR image to their gallery.")
                                 
                                 .font(.system(size: 22))
                                 .fontWeight(.regular)
@@ -130,43 +122,29 @@ struct AddFriends: View {
                                 .frame(width: 375, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Spacer()
-                                .frame(height: 15)
+                                .frame(height: 55)
                             
                             VStack {
-                               
+                                Text("Step 5")
+                                    
+                                    .font(.system(size: 22))
+                                    .fontWeight(.regular)
+                                    .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                                   
+                                    .multilineTextAlignment(.center)
+                                    .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
-                            Text("Step 5")
-                                
-                                .font(.system(size: 22))
-                                .fontWeight(.regular)
-                                .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
-                               
-                                .multilineTextAlignment(.center)
-                                .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
-                            Text("Ask friend to accept BlueMode conditions.")
-                                
-                                .font(.system(size: 22))
-                                .fontWeight(.regular)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .multilineTextAlignment(.center)
-                                .frame(width: 375, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
-                            Spacer()
-                                .frame(height: 35)
-                            
-                            
-                            
-                            
-                                Image("downarrow")
-                                    .resizable()
-                                    .frame(width: 60, height: 60)
-                                    .scaledToFill()
-                                
-                            
+                                NavigationLink(destination: BlueModeConditions()) {
+                                    Text("BlueMode SetUp")
+                                        .font(.title)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .frame(width: 300, height: 50)
+                                        .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                        .cornerRadius(25)
+                        
                             
                             Spacer()
-                                .frame(height: 125)
+                                .frame(height: 55)
                             
                         }
                         
@@ -184,11 +162,11 @@ struct AddFriends: View {
         
     }
 }
-struct AddFriends_Previews : PreviewProvider {
-    static var previews: some View {
-        AddFriends()
-    }
-}
+//struct AddFriends_Previews : PreviewProvider {
+//    static var previews: some View {
+//        AddFriends()
+//    }
+//}
         
         
         
@@ -207,4 +185,5 @@ struct AddFriends_Previews : PreviewProvider {
         //            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
         //    )
 
+}
 }

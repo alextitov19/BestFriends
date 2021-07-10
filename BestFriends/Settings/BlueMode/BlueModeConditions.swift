@@ -55,11 +55,11 @@ struct BlueModeConditions: View {
                             .fontWeight(.regular)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .multilineTextAlignment(.center)
-                            .frame(width: 300, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 320, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                         
                         Spacer()
-                            .frame(height: 45)
+                            .frame(height: 25)
                         
                         
                         Text("Condition 2")
@@ -71,14 +71,14 @@ struct BlueModeConditions: View {
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
-                        Text("After a huge fight, I agree to speaking my friend that invited me in BlueMode one last time.")
+                        Text("After a huge fight, I agree to speak with my friend that invited me in BlueMode - one last time.")
                             
                             .font(.system(size: 22))
                             .fontWeight(.regular)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             
                             .multilineTextAlignment(.center)
-                            .frame(width: 300, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 320, height: 120, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                         
                         Spacer()
@@ -93,16 +93,14 @@ struct BlueModeConditions: View {
                                 .frame(height: 15)
                             
                             
+                            NavigationLink(destination: SettingsView()) {
+                                Text("I Agree")
+                                    .font(.title)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .frame(width: 300, height: 50)
+                                    .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                                    .cornerRadius(25)
                           
-                            
-                            
-                            
-                                Image("downarrow")
-                                    .resizable()
-                                    .frame(width: 60, height: 60)
-                                    .scaledToFill()
-                                
-                            
                             
                             Spacer()
                                 .frame(height: 125)
@@ -132,3 +130,4 @@ struct BlueModeConditions_Previews : PreviewProvider {
         
         
 
+}
