@@ -27,7 +27,7 @@ struct BlueModeConditions: View {
                     
                     Text("BlueMode Agreement")
                         .italic()
-                        .font(.system(size: 45))
+                        .font(.system(size: 35))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
@@ -44,7 +44,7 @@ struct BlueModeConditions: View {
                             .font(.system(size: 30))
                             .fontWeight(.regular)
                             
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
@@ -66,7 +66,7 @@ struct BlueModeConditions: View {
                             
                             .font(.system(size: 30))
                             .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                            
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -80,17 +80,11 @@ struct BlueModeConditions: View {
                             .multilineTextAlignment(.center)
                             .frame(width: 320, height: 120, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
-                        
-                        Spacer()
-                            .frame(height: 15)
+                    
                         
                         VStack {
                             
                        
-                            
-                            
-                            Spacer()
-                                .frame(height: 15)
                             
                             
                             NavigationLink(destination: SettingsView()) {
@@ -103,7 +97,7 @@ struct BlueModeConditions: View {
                           
                             
                             Spacer()
-                                .frame(height: 125)
+                                .frame(height: 200)
                             
                         }
                         
