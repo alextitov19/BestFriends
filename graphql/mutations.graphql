@@ -201,7 +201,8 @@ mutation CreateUser(
     tokens
     background
     unlockedStickers
-    blueMode
+    BMFriend
+    BMRoom
     notificationsBM
     notificationsLP
     createdAt
@@ -248,7 +249,8 @@ mutation UpdateUser(
     tokens
     background
     unlockedStickers
-    blueMode
+    BMFriend
+    BMRoom
     notificationsBM
     notificationsLP
     createdAt
@@ -295,7 +297,8 @@ mutation DeleteUser(
     tokens
     background
     unlockedStickers
-    blueMode
+    BMFriend
+    BMRoom
     notificationsBM
     notificationsLP
     createdAt

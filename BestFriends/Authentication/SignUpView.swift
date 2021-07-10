@@ -1353,7 +1353,6 @@ struct SignUpQuestionPage3: View {
                         secretPin: currentPin,
                         tokens: 0,
                         background: 1,
-                        blueMode: false,
                         notificationsBM: true,
                         notificationsLP: true)
                     

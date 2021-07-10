@@ -25,7 +25,8 @@ extension User {
     case tokens
     case background
     case unlockedStickers
-    case blueMode
+    case BMFriend
+    case BMRoom
     case notificationsBM
     case notificationsLP
   }
@@ -59,7 +60,8 @@ extension User {
       .field(user.tokens, is: .required, ofType: .int),
       .field(user.background, is: .required, ofType: .int),
       .field(user.unlockedStickers, is: .optional, ofType: .embeddedCollection(of: Int.self)),
-      .field(user.blueMode, is: .required, ofType: .bool),
+      .field(user.BMFriend, is: .optional, ofType: .string),
+      .field(user.BMRoom, is: .optional, ofType: .string),
       .field(user.notificationsBM, is: .required, ofType: .bool),
       .field(user.notificationsLP, is: .required, ofType: .bool)
     )

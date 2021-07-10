@@ -146,7 +146,8 @@ query GetUser($id: ID!) {
     tokens
     background
     unlockedStickers
-    blueMode
+    BMFriend
+    BMRoom
     notificationsBM
     notificationsLP
     createdAt
@@ -186,7 +187,8 @@ query ListUsers(
       tokens
       background
       unlockedStickers
-      blueMode
+      BMFriend
+      BMRoom
       notificationsBM
       notificationsLP
       createdAt
