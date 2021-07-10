@@ -245,7 +245,7 @@ struct SignUpPage3: View {
                         checkUsername()
                     }
                 
-                NavigationLink("", destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username).environmentObject(sessionManager), isActive: $readyToProceed)
+                NavigationLink("", destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username.lowercased()).environmentObject(sessionManager), isActive: $readyToProceed)
                 
                 Spacer()
                     .frame(height: 90)
@@ -262,8 +262,9 @@ struct SignUpPage3: View {
     
     private func checkUsername() {
         let usernames = UserDataSource().getAllUsernames()
+        let currentusername = username.lowercased()
         for uname in usernames {
-            if uname == username {
+            if uname == currentusername {
                 isUsernameTaken = true
                 return
             }

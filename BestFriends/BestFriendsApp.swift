@@ -19,6 +19,9 @@ struct BestFriendsApp: App {
     init() {
         configureAmplify()
         FirebaseApp.configure()
+        
+        sessionManager.signOut()
+        
 //        if Amplify.Auth.getCurrentUser() != nil {
 //            let id  = Amplify.Auth.getCurrentUser()!.username
 //            if UserDataSource().getAllEmails().contains(id) == false {
@@ -34,7 +37,7 @@ struct BestFriendsApp: App {
 //                return
 //            }
 //        }
-        sessionManager.getCurrentAuthUser()
+//        sessionManager.getCurrentAuthUser()
         
         NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: .main) { _ in
             // Background...
