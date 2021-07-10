@@ -40,7 +40,7 @@ class MessageDataSource: ObservableObject {
     
     func saveToSmileNotes(message: Message) {
         guard let userid = Amplify.Auth.getCurrentUser()?.username else {return}
-        let smileNote = SmileNote(id: randomString(length: 20), message: message, favorite: false)
+        let smileNote = SmileNote(id: Helper().randomString(length: 20), message: message, favorite: false)
         var user = UserDataSource().getUser(id: userid)
         var smileNotes: [SmileNote] = user.smileNotes ?? []
         smileNotes.append(smileNote)
@@ -136,7 +136,7 @@ class MessageDataSource: ObservableObject {
         guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }
         let user = UserDataSource().getUser(id: userID)
         let data = image.pngData()!
-        let key = "Image/" + randomString(length: 20)
+        let key = "Image/" + Helper().randomString(length: 20)
         Amplify.Storage.uploadData(key: key, data: data,
                                    progressListener: { progress in
                                     print("Progress: \(progress)")
@@ -144,27 +144,11 @@ class MessageDataSource: ObservableObject {
                                     switch event {
                                     case .success(let data):
                                         print("Completed: \(data)")
-                                        self.sendMessage(message: Message(id: self.randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "", creationDate: Int(NSDate().timeIntervalSince1970), attachmentPath: key))
+                                        self.sendMessage(message: Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "", creationDate: Int(NSDate().timeIntervalSince1970), attachmentPath: key))
                                     case .failure(let storageError):
                                         print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
                                     }
                                    })
-    }
-    
-    func randomString(length: Int) -> String {
-        
-        let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-        let len = UInt32(letters.length)
-        
-        var randomString = ""
-        
-        for _ in 0 ..< length {
-            let rand = arc4random_uniform(len)
-            var nextChar = letters.character(at: Int(rand))
-            randomString += NSString(characters: &nextChar, length: 1) as String
-        }
-        
-        return randomString
     }
     
     func downloadImage(key: String) -> UIImage {

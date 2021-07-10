@@ -53,7 +53,7 @@ struct ShakingCoolDataSource {
         guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }
         let user = UserDataSource().getUser(id: userID)
         let data = image.pngData()!
-        let key = "Image/" + randomString(length: 20)
+        let key = "Image/" + Helper().randomString(length: 20)
         Amplify.Storage.uploadData(key: key, data: data,
                                    progressListener: { progress in
                                     print("Progress: \(progress)")
@@ -73,21 +73,6 @@ struct ShakingCoolDataSource {
                                    })
     }
     
-    func randomString(length: Int) -> String {
-        
-        let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-        let len = UInt32(letters.length)
-        
-        var randomString = ""
-        
-        for _ in 0 ..< length {
-            let rand = arc4random_uniform(len)
-            var nextChar = letters.character(at: Int(rand))
-            randomString += NSString(characters: &nextChar, length: 1) as String
-        }
-        
-        return randomString
-    }
     
     func deleteImage(id: String) {
         guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }

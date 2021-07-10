@@ -290,6 +290,8 @@
 		7AF35CAA2699E68100A396CE /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF35C992699E68100A396CE /* Advertisement+Schema.swift */; };
 		7AF35CAB2699E68100A396CE /* SmileNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF35C9A2699E68100A396CE /* SmileNote.swift */; };
 		7AF35CAC2699E68100A396CE /* SmileNote+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF35C9B2699E68100A396CE /* SmileNote+Schema.swift */; };
+		7AF35CB22699E9E500A396CE /* BlueModeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF35CB12699E9E500A396CE /* BlueModeDataSource.swift */; };
+		7AF35CB42699EB6700A396CE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF35CB32699EB6700A396CE /* Helper.swift */; };
 		7AF6973F2630EE1900CF49CC /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6973E2630EE1900CF49CC /* Star.swift */; };
 		7AF96800E288C84537D074D8 /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B48DCD6F3795913CB8E7E /* ReportedMessage.swift */; };
 		7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */; };
@@ -662,6 +664,8 @@
 		7AF35C992699E68100A396CE /* Advertisement+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Advertisement+Schema.swift"; sourceTree = "<group>"; };
 		7AF35C9A2699E68100A396CE /* SmileNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileNote.swift; sourceTree = "<group>"; };
 		7AF35C9B2699E68100A396CE /* SmileNote+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SmileNote+Schema.swift"; sourceTree = "<group>"; };
+		7AF35CB12699E9E500A396CE /* BlueModeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeDataSource.swift; sourceTree = "<group>"; };
+		7AF35CB32699EB6700A396CE /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7AF6973E2630EE1900CF49CC /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A124BF81FC8B40FBA8260C00 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
@@ -820,12 +824,13 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7A8F4256265797FD00E9CBF0 /* models */,
+				7AF35CAE2699E9AB00A396CE /* BlueMode */,
 				7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */,
 				7A08E364264FB6CA00AEBC8F /* Notifications */,
 				7A417EC4265ED49C00E95364 /* Advertisements */,
 				7AD10453265AB9AF007627FD /* ShakingCool */,
 				7A1DBD602659B1A400EB4B42 /* Extensions */,
-				7A8F4256265797FD00E9CBF0 /* models */,
 				D15777B22650522200B6551A /* Gestures */,
 				D1577799264D082800B6551A /* SmileNotes */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
@@ -840,6 +845,7 @@
 				7AED44FB26473F7100944708 /* AppDelegate.swift */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
+				7AF35CB32699EB6700A396CE /* Helper.swift */,
 			);
 			path = BestFriends;
 			sourceTree = "<group>";
@@ -939,6 +945,14 @@
 				CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		7AF35CAE2699E9AB00A396CE /* BlueMode */ = {
+			isa = PBXGroup;
+			children = (
+				7AF35CB12699E9E500A396CE /* BlueModeDataSource.swift */,
+			);
+			path = BlueMode;
 			sourceTree = "<group>";
 		};
 		9E0E510CD719430077541E98 /* Pods */ = {
@@ -1346,6 +1360,7 @@
 				7A417EC6265ED4B000E95364 /* AdViewFullScreen.swift in Sources */,
 				8195EF9985493DF0513FE41E /* Room.swift in Sources */,
 				D1E3CFDF2653A35700A26779 /* BlueModeLP.swift in Sources */,
+				7AF35CB42699EB6700A396CE /* Helper.swift in Sources */,
 				5F191B231895C081FA325B55 /* User+Schema.swift in Sources */,
 				7AC8A23F26578C3E001812EF /* LocationManager.swift in Sources */,
 				F0CB1CEEB2A43F6F2842A262 /* User.swift in Sources */,
@@ -1690,6 +1705,7 @@
 				E23F898FFBFA855C2B369754 /* AmplifyModels.swift in Sources */,
 				F2FC287FD7A31815C7EA2419 /* InvitedRoom+Schema.swift in Sources */,
 				A900CC2BF3C0537C0F676E00 /* InvitedRoom.swift in Sources */,
+				7AF35CB22699E9E500A396CE /* BlueModeDataSource.swift in Sources */,
 				7AF35CA02699E68100A396CE /* Advertisement.swift in Sources */,
 				54D867608ED121DA50D92D7C /* ManagementDocument+Schema.swift in Sources */,
 				BF21E4AC9065BFD61DB07A51 /* ManagementDocument.swift in Sources */,
