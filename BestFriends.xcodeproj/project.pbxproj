@@ -451,6 +451,7 @@
 		CBED23C5A85DD4F2C28F661E /* ManagementDocument+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED45F58B91ABE1BBD1CB1D2 /* ManagementDocument+Schema.swift */; };
 		CEFD49FCC463CB40AFF7AF6A /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5F0D769FDC2A7AA84971E /* Advertisement+Schema.swift */; };
 		CF1E6AE5269A00DB00B8F985 /* PreAddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */; };
+		CF1E6AE7269A0D2000B8F985 /* BlueModeConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */; };
 		CF30FF93267E955A000B2730 /* SmileNotesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30FF92267E955A000B2730 /* SmileNotesCard.swift */; };
 		CF356D1C2671FE4900BCF572 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1B2671FE4900BCF572 /* Tokens.swift */; };
 		CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */; };
@@ -675,6 +676,7 @@
 		C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreAddFriends.swift; sourceTree = "<group>"; };
+		CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeConditions.swift; sourceTree = "<group>"; };
 		CF30FF92267E955A000B2730 /* SmileNotesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesCard.swift; sourceTree = "<group>"; };
 		CF356D1B2671FE4900BCF572 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreLoad.swift; sourceTree = "<group>"; };
@@ -1001,6 +1003,7 @@
 				CF436A262658D66F00B69506 /* BMInfoPages.swift */,
 				CF436A2F265A0FF400B69506 /* BlueSurvey.swift */,
 				CF436A2D265A0D3B00B69506 /* BlueSinglePages */,
+				CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */,
 			);
 			path = BlueMode;
 			sourceTree = "<group>";
@@ -1586,6 +1589,7 @@
 				BE0DC3D8A8A7C1B0C3D5974E /* User+Schema.swift in Sources */,
 				90A2FD62C68E5978DB4494FC /* User.swift in Sources */,
 				7EDBDE430D334EA464275D3B /* Advertisement+Schema.swift in Sources */,
+				CF1E6AE7269A0D2000B8F985 /* BlueModeConditions.swift in Sources */,
 				0AEF48CB09C9DA78A9F40E09 /* Advertisement.swift in Sources */,
 				C1FE81747FD8B6BCBD0A28E9 /* ManagementDocument.swift in Sources */,
 				ED9B9CC35E315655566DC5D8 /* Message+Schema.swift in Sources */,

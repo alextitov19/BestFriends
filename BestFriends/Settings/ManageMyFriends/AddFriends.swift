@@ -18,61 +18,34 @@ struct AddFriends: View {
         NavigationView{
             ZStack {
                 
-                Image("purpleBackground")
+                Image("SignUpPinBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
                 
                 VStack {
-                    Text("Adding friends with QR codes")
+              
+                    
+                    Text("QR codes Keep You Safe")
                         .italic()
-                        .font(.system(size: 25))
+                        .font(.system(size: 35))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
-                    Text("KEEPS TROLLS OUT!")
-                        
-                        .font(.system(size: 25))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 230, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     Spacer()
-                        .frame(height: 55)
+                        .frame(height: 15)
                     
                     
                     VStack {
-                        Text("How to Add Friends")
-                            
-                            .font(.system(size: 45))
-                            .fontWeight(.regular)
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        HStack {
-                            
-                            Image("inviteWhite")
-                                .resizable()
-                                .frame(width: 45, height: 45)
-                                .scaledToFill()
-                            
-                            
-                            Text("Tap icon on Homepage.")
-                                .italic()
-                                .font(.system(size: 27))
-                                .fontWeight(.regular)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .multilineTextAlignment(.center)
-                                .frame(width: 200, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
-                        }
+                       
+                        
                         Text("Step 1")
                             
                             .font(.system(size: 22))
                             .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
@@ -81,7 +54,7 @@ struct AddFriends: View {
                             
                             .font(.system(size: 22))
                             .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
@@ -94,7 +67,8 @@ struct AddFriends: View {
                             
                             .font(.system(size: 22))
                             .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                           
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
@@ -102,7 +76,8 @@ struct AddFriends: View {
                             
                             .font(.system(size: 22))
                             .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            
                             .multilineTextAlignment(.center)
                             .frame(width: 275, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
@@ -116,7 +91,8 @@ struct AddFriends: View {
                                 
                                 .font(.system(size: 22))
                                 .fontWeight(.regular)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                               
                                 .multilineTextAlignment(.center)
                                 .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
@@ -124,7 +100,8 @@ struct AddFriends: View {
                                 
                                 .font(.system(size: 22))
                                 .fontWeight(.regular)
-                                .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                               
                                 .multilineTextAlignment(.center)
                                 .frame(width: 275, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
@@ -139,7 +116,8 @@ struct AddFriends: View {
                                 
                                 .font(.system(size: 22))
                                 .fontWeight(.regular)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                               
                                 .multilineTextAlignment(.center)
                                 .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
@@ -147,9 +125,48 @@ struct AddFriends: View {
                                 
                                 .font(.system(size: 22))
                                 .fontWeight(.regular)
-                                .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .multilineTextAlignment(.center)
                                 .frame(width: 375, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            Spacer()
+                                .frame(height: 15)
+                            
+                            VStack {
+                               
+                            
+                            Text("Step 5")
+                                
+                                .font(.system(size: 22))
+                                .fontWeight(.regular)
+                                .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                               
+                                .multilineTextAlignment(.center)
+                                .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            Text("Ask friend to accept BlueMode conditions.")
+                                
+                                .font(.system(size: 22))
+                                .fontWeight(.regular)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .multilineTextAlignment(.center)
+                                .frame(width: 375, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            Spacer()
+                                .frame(height: 35)
+                            
+                            
+                            
+                            
+                                Image("downarrow")
+                                    .resizable()
+                                    .frame(width: 60, height: 60)
+                                    .scaledToFill()
+                                
+                            
+                            
+                            Spacer()
+                                .frame(height: 125)
                             
                         }
                         
@@ -190,3 +207,4 @@ struct AddFriends_Previews : PreviewProvider {
         //            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
         //    )
 
+}
