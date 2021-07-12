@@ -224,7 +224,7 @@ struct SignUpPage3: View {
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 300, height: 40, alignment: .center)
-                    .font(.title)
+                    .font(.system(size: 14, weight: .light))
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .cornerRadius(25)
                     .disableAutocorrection(true)
