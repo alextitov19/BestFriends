@@ -17,21 +17,22 @@ struct ConfirmationView: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("Earth")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 5)
                 
-                Text("Confirm Your Email")
+                Text("Confirm your email")
                     .font(.largeTitle)
                     .bold()
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 
                 Spacer()
+                    .frame(height: 300)
                 
                 Text("Username: \(username)")
                     .font(.title2)
@@ -39,28 +40,30 @@ struct ConfirmationView: View {
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 30)
                 
                 TextField("Confirmation Code", text: $confirmationCode)
-                    .frame(width: 200, height: 50, alignment: .center)
+                    .frame(width: 300, height: 50, alignment: .center)
                     .multilineTextAlignment(.center)
+                    .font(.title)
                     .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .cornerRadius(25)
                     .autocapitalization(.none)
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 30)
                 
                 Button("Confirm", action: {
                     sessionManager.confirm(username: username, code: confirmationCode)
                 })
-                .frame(width: 150, height: 50, alignment: .center)
+                .frame(width: 200, height: 50, alignment: .center)
+                .font(.title)
                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                 .cornerRadius(25)
                 
-                Spacer()
+               
             }
         }
     }
