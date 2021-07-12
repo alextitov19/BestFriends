@@ -62,7 +62,7 @@ struct SignUpPage1: View {
                     
                     
                     Spacer()
-                        .frame(height: 340)
+                        .frame(height: 440)
                     
                     
                     TextField("First name", text: $firstName)
@@ -99,8 +99,6 @@ struct SignUpPage1: View {
                     
                 }
                 
-                Spacer()
-                    .frame(height: 125)
                 
             }
         }
@@ -135,7 +133,7 @@ struct SignUpPage2: View {
                     VStack {
                         
                         
-                        Text("We'll never sell or share your info!")
+                        Text("We'll never sell your personal data.")
                             .font(.system(size: 30))
                             .fontWeight(.regular)
                             .foregroundColor(.white)
@@ -211,7 +209,7 @@ struct SignUpPage3: View {
             
             
             Spacer()
-                .frame(height: 125)
+                .frame(height: 130)
             
             VStack {
                 Text("What username do you want?")
@@ -220,7 +218,8 @@ struct SignUpPage3: View {
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 400)
+                    .frame(height: 415)
+                
                 TextField("Username", text: $username)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -296,7 +295,7 @@ struct SignUpPage4: View {
                 
                 
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 50)
                 
                 VStack {
                     Text("Choose your password.")
@@ -313,7 +312,7 @@ struct SignUpPage4: View {
                         .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     Spacer()
-                        .frame(height: 375)
+                        .frame(height: 177)
                     
                     SecureField("Enter password", text: $password)
                         .multilineTextAlignment(.center)

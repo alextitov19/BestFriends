@@ -18,22 +18,56 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("purpleBackground")
+                Image("Firstname")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
                 
                 VStack {
-                    Spacer()
-                        .frame(height: 75)
+                   
                     
                     Text("Login")
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    Spacer()
+                        .frame(height: 15)
+                    
+                    NavigationLink(
+                        destination: ForgotPassword(),
+                        label: {
+                            Text("Forgot Password")
+                        })
+                        .frame(width: 200, height: 30)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color(#colorLiteral(red: 0, green: 0.7539007068, blue: 0, alpha: 1)), lineWidth: 2)
+                        )
                     
                     Spacer()
+                        .frame(height: 10)
                     
+                    
+                    NavigationLink(
+                        destination: ForgotPassword(),
+                        label: {
+                            Text("Forgot Username")
+                        })
+                        .frame(width: 200, height: 30)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color(#colorLiteral(red: 0, green: 0.7539007068, blue: 0, alpha: 1)), lineWidth: 2)
+                        )
+                    
+                    
+                 
+                    VStack {
+                        Spacer()
+                            .frame(height: 300)
+                        
+                        
                     TextField("Username", text: $username)
                         .frame(width: 200, height: 50, alignment: .center)
                         .multilineTextAlignment(.center)
@@ -44,7 +78,7 @@ struct LoginView: View {
                         .autocapitalization(.none)
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 30)
                     
                     SecureField("Password", text: $password)
                         .frame(width: 200, height: 50, alignment: .center)
@@ -54,8 +88,15 @@ struct LoginView: View {
                         .cornerRadius(25)
                         .disableAutocorrection(true)
                         .autocapitalization(.none)
-                    Spacer()
-                        .frame(height: 40)
+                   
+                        Spacer()
+                        .frame(height: 15)
+                        
+                   
+                        
+                        
+                        Spacer()
+                        .frame(height: 30)
                     
                     Button("Login", action: {
                         sessionManager.login(
@@ -67,39 +108,42 @@ struct LoginView: View {
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                     .cornerRadius(25)
-                    
-                    Spacer()
-                    
+                 
+                    }
                     VStack {
-                        // Put in Forgot Username
-                        
-                        // Put in Forgot Password
-                        NavigationLink(
-                            destination: ForgotPassword(),
-                            label: {
-                                Text("Forgot Password")
-                            })
-                            .frame(width: 300, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                            )
                         
                         Spacer()
-                            .frame(height: 20)
+                        .frame(height: 15)
                         
                         
                         Button("Don't have an account? Sign up.", action: sessionManager.showSignUp)
-                            .frame(width: 300, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 270, height: 30)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
                             )
+                        // Put in Forgot Username
+                        
+                        // Put in Forgot Password
+//                        NavigationLink(
+//                            destination: ForgotPassword(),
+//                            label: {
+//                                Text("Forgot Password")
+//                            })
+//                            .frame(width: 300, height: 30)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .overlay(
+//                                RoundedRectangle(cornerRadius: 25)
+//                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+//                            )
+                        
+               
+                        
+                      
                         
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 85)
                         
                     }
                     
