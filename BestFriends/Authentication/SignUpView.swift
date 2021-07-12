@@ -402,7 +402,7 @@ struct SignUpPage5: View {
                 Text("Just in case you need to reset your password.")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
-                    .frame(width: 250, height: 100, alignment: .center)
+                    .frame(width: 350, height: 150, alignment: .center)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
@@ -667,7 +667,7 @@ struct SignUpPage7: View {
                 Spacer()
                     .frame(height: 100)
                 
-                Text("For your safety, Apple requires us to ask your age?")
+                Text("For your safety, Apple requires us to ask your age")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .frame(width: 325, height: 150)
@@ -959,13 +959,15 @@ struct SignUpPage9: View {
     
     
     var body: some View {
-        ZStack {
+        ZStack{
+            
+            
             Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
-           
+            VStack {
                 Text("Something just happen and you need to talk to your friends, FAST?")
                     .font(.system(size: 25))
                     .fontWeight(.ultraLight)
@@ -1035,6 +1037,8 @@ struct SignUpPage9: View {
                 
                 Spacer()
                     .frame(height: 100)
+          
+                }
             }
         }
     }
