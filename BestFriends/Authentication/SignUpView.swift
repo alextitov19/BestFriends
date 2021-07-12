@@ -34,17 +34,17 @@ struct SignUpPage1: View {
                     
                     //                        Spacer()
                     //                            .frame(height: 0)
-                    Text("Welcome to")
-                        .font(.system(size: 25))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                    
-                    
+//                    Text("Welcome to")
+//                        .font(.system(size: 25))
+//                        .italic()
+//                        .fontWeight(.thin)
+//                        .foregroundColor(.white)
+//                        .multilineTextAlignment(.center)
+//
+//
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 5)
                     
                     Text("BestFriends")
                         .font(.system(size: 65))
@@ -52,7 +52,7 @@ struct SignUpPage1: View {
                         .multilineTextAlignment(.center)
                     
                     
-                    Text("the positivity app")
+                    Text("The positivity app 😊")
                         .font(.system(size: 17))
                         .italic()
                         .fontWeight(.thin)
@@ -62,7 +62,7 @@ struct SignUpPage1: View {
                     
                     
                     Spacer()
-                        .frame(height: 440)
+                        .frame(height: 400)
                     
                     
                     TextField("First name", text: $firstName)
@@ -93,7 +93,7 @@ struct SignUpPage1: View {
                     NavigationLink("", destination: SignUpPage2(firstName: firstName).environmentObject(sessionManager), isActive: $readyToProceed)
                     
                     Spacer()
-                        .frame(height: 230)
+                        .frame(height: 150)
                     
                     
                     
@@ -295,7 +295,7 @@ struct SignUpPage4: View {
                 
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 45)
                 
                 VStack {
                     Text("Choose your password.")
@@ -303,16 +303,10 @@ struct SignUpPage4: View {
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                     
-                    Text("Password must contain at least 8 characters plus one capital letter.")
-                        .italic()
-                        .font(.system(size: 15))
-                        .fontWeight(.regular)
-                        .foregroundColor(changingColor)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
                     
                     Spacer()
-                        .frame(height: 177)
+                        .frame(height: 375)
                     
                     SecureField("Enter password", text: $password)
                         .multilineTextAlignment(.center)
@@ -327,7 +321,7 @@ struct SignUpPage4: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    SecureField("Enter password again", text: $password2)
+                    SecureField("Confirm password", text: $password2)
                         .multilineTextAlignment(.center)
                         .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .frame(width: 300, height: 40, alignment: .center)
@@ -364,18 +358,20 @@ struct SignUpPage4: View {
                     
                     NavigationLink("", destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password).environmentObject(sessionManager), isActive: $readyToProceed)
                     
-                    
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    
+             
+                    Text("Password must contain at least 8 characters plus one capital letter.")
+                        .italic()
+                        .font(.system(size: 15))
+                        .fontWeight(.regular)
+                        .foregroundColor(changingColor)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     
                 }
                 
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 55)
                 
             }
         }
@@ -403,13 +399,13 @@ struct SignUpPage5: View {
             
             
             VStack {
-                Text("Just in case we need to reset your password")
+                Text("Just in case you need to reset your password")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 380)
+                    .frame(height: 415)
                 
                 
                 
@@ -450,15 +446,13 @@ struct SignUpPage5: View {
                 
                 
                 Spacer()
-                    .frame(height: 120)
+                    .frame(height: 125)
                 
                 
                 
                 
             }
             
-            Spacer()
-                .frame(height: 125)
             
         }
     }
@@ -505,7 +499,7 @@ struct SignUpPage6: View {
                 
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 1)
                 
                 
                 Text("Please select your Pronouns")
@@ -593,7 +587,7 @@ struct SignUpPage6: View {
                     .cornerRadius(25)
                     
                     Spacer()
-                        .frame(height: 35)
+                        .frame(height: 120)
                     
                     
                     
@@ -630,6 +624,8 @@ struct SignUpPage6: View {
                 .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                 .cornerRadius(25)
                 
+                Spacer()
+                    .frame(height: 180)
                 
             }
             
@@ -729,7 +725,7 @@ struct SignUpPage8: View {
             
             VStack {
                 
-                Text("Hide your Chat messages from prying eyes. Only you can get them back with your 'secret' PIN.")
+                Text("Hide your Chat messages from prying eyes. Only you can get them back with your 'Secret' PIN.")
                     .font(.system(size: 25))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
@@ -751,10 +747,10 @@ struct SignUpPage8: View {
                 VStack {
                     HStack {
                         Button(action: {
-                            currentPin.append("7")
+                            currentPin.append("1")
                             numberEntered()
                         }) {
-                            Text("7")
+                            Text("1")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -768,10 +764,10 @@ struct SignUpPage8: View {
                         Spacer().frame(width: 20)
                         
                         Button(action: {
-                            currentPin.append("8")
+                            currentPin.append("2")
                             numberEntered()
                         }) {
-                            Text("8")
+                            Text("2")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -785,10 +781,10 @@ struct SignUpPage8: View {
                         Spacer().frame(width: 20)
                         
                         Button(action: {
-                            currentPin.append("9")
+                            currentPin.append("3")
                             numberEntered()
                         }) {
-                            Text("9")
+                            Text("3")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -857,10 +853,10 @@ struct SignUpPage8: View {
                     
                     HStack {
                         Button(action: {
-                            currentPin.append("1")
+                            currentPin.append("7")
                             numberEntered()
                         }) {
-                            Text("1")
+                            Text("7")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -874,10 +870,10 @@ struct SignUpPage8: View {
                         Spacer().frame(width: 20)
                         
                         Button(action: {
-                            currentPin.append("2")
+                            currentPin.append("8")
                             numberEntered()
                         }) {
-                            Text("2")
+                            Text("8")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -891,10 +887,10 @@ struct SignUpPage8: View {
                         Spacer().frame(width: 20)
                         
                         Button(action: {
-                            currentPin.append("3")
+                            currentPin.append("9")
                             numberEntered()
                         }) {
-                            Text("3")
+                            Text("9")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -976,7 +972,7 @@ struct SignUpPage9: View {
                 
                 
                 Spacer()
-                    .frame(height: 225)
+                    .frame(height: 375)
                 
                 NavigationLink("", destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: locationString).environmentObject(sessionManager), isActive: $readyToProceed)
                 

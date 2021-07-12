@@ -38,11 +38,11 @@ struct LoginView: View {
                         label: {
                             Text("Forgot Password")
                         })
-                        .frame(width: 200, height: 30)
+                        .frame(width: 160, height: 30)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color(#colorLiteral(red: 0, green: 0.7539007068, blue: 0, alpha: 1)), lineWidth: 2)
+                                .stroke(Color(#colorLiteral(red: 0, green: 0.9476842284, blue: 0, alpha: 1)), lineWidth: 2)
                         )
                     
                     Spacer()
@@ -54,11 +54,11 @@ struct LoginView: View {
                         label: {
                             Text("Forgot Username")
                         })
-                        .frame(width: 200, height: 30)
+                        .frame(width: 160, height: 30)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .overlay(
                             RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color(#colorLiteral(red: 0, green: 0.7539007068, blue: 0, alpha: 1)), lineWidth: 2)
+                                .stroke(Color(#colorLiteral(red: 0, green: 0.9476842284, blue: 0, alpha: 1)), lineWidth: 2)
                         )
                     
                     
@@ -69,7 +69,7 @@ struct LoginView: View {
                         
                         
                     TextField("Username", text: $username)
-                        .frame(width: 200, height: 50, alignment: .center)
+                        .frame(width: 225, height: 45, alignment: .center)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                         .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -78,10 +78,10 @@ struct LoginView: View {
                         .autocapitalization(.none)
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                     
                     SecureField("Password", text: $password)
-                        .frame(width: 200, height: 50, alignment: .center)
+                        .frame(width: 225, height: 45, alignment: .center)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                         .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -96,7 +96,7 @@ struct LoginView: View {
                         
                         
                         Spacer()
-                        .frame(height: 30)
+                        .frame(height: 25)
                     
                     Button("Login", action: {
                         sessionManager.login(
@@ -105,8 +105,8 @@ struct LoginView: View {
                         )
                     })
                     .frame(width: 150, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0, green: 0.9476842284, blue: 0, alpha: 1)))
                     .cornerRadius(25)
                  
                     }
@@ -143,7 +143,7 @@ struct LoginView: View {
                       
                         
                         Spacer()
-                            .frame(height: 85)
+                            .frame(height: 130)
                         
                     }
                     
@@ -308,3 +308,32 @@ struct LoginView_Previews : PreviewProvider {
         ConfirmNewPassword(username: "")
     }
 }
+
+
+
+//
+//
+//TextField("First name", text: $firstName)
+//    .multilineTextAlignment(.center)
+//    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//    .frame(width: 300, height: 40, alignment: .center)
+//    .font(.title)
+//    .textFieldStyle(RoundedBorderTextFieldStyle())
+//    .cornerRadius(25)
+//    .disableAutocorrection(true)
+//    .autocapitalization(.none)
+//
+//Spacer()
+//    .frame(height: 20)
+//
+//Text("Next")
+//    .font(.title)
+//    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//    .frame(width: 200, height: 50)
+//    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+//    .cornerRadius(25)
+//    .onTapGesture {
+//        if firstName != "" {
+//            readyToProceed = true
+//        }
+//    }
