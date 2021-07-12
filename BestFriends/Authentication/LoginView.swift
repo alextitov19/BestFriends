@@ -25,11 +25,13 @@ struct LoginView: View {
                 
                 VStack {
                    
+                    Text("LOGIN")
+                        .font(.system(size: 45))
+                        .foregroundColor(.white)
+                        .frame(width: 225, height: 50)
+                        .multilineTextAlignment(.center)
                     
-                    Text("Login")
-                        .font(.largeTitle)
-                        .bold()
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    
                     Spacer()
                         .frame(height: 15)
                     
