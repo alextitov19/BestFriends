@@ -621,7 +621,7 @@ struct SignUpPage6: View {
                 .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4 || didTap5) ? 50 : 0))
                 .disabled(!(didTap1 || didTap2 || didTap3 || didTap4 || didTap5))
                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                 .cornerRadius(25)
                 
                 Spacer()
@@ -656,7 +656,7 @@ struct SignUpPage7: View {
     
     var body: some View {
         ZStack {
-            Image("Age")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -666,12 +666,14 @@ struct SignUpPage7: View {
                 Spacer()
                     .frame(height: 100)
                 
-                Text("Your age?")
+                Text("For your safety, Apple requires us to ask your age?")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
+                    .frame(width: 325, height: 150)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
+                    .frame(height: 100)
                 
                 DatePicker("", selection: $birthDate, displayedComponents: .date)
                     .datePickerStyle(WheelDatePickerStyle())
@@ -680,7 +682,7 @@ struct SignUpPage7: View {
                     .offset(x: -45)
                 
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 100)
                 
                 NavigationLink(destination: SignUpPage8(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
                     Text("Next")
@@ -693,7 +695,7 @@ struct SignUpPage7: View {
                 }
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 200)
             }
         }
     }
@@ -733,12 +735,12 @@ struct SignUpPage8: View {
                     .frame(width: 400, height: 120, alignment: .center)
                     .padding(20)
                 
-                Spacer().frame(height: 30)
+                Spacer().frame(height: 5)
                 
                 
                 Text("Enter 4-digit PIN")
                     .font(.title)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 0, green: 0.8175823689, blue: 0, alpha: 1)))
                     .padding()
                 
                 
@@ -1030,82 +1032,54 @@ struct SignUpQuestionPage1: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("Earth")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
                 
-                
-                HStack {
-                    VStack {
-                        
-                        Spacer()
-                            .frame(height: 125)
-                        
-                        Image("Penguin Sticker 38")
-                            .resizable()
-                            .frame(width: 150, height: 150)
-                            .scaledToFill()
-                        
-                    }
-                    VStack {
-                        
-                        ZStack {
-                            
-                            
-                            Image("ChatBubbleTrans")
-                                .resizable()
-                                .frame(width: 300, height: 175)
-                                .scaledToFill()
-                            
-                            Text("Please help us - help 'YOU'")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        }
-                        
-                    }
-                }
-                
+               
                 Spacer()
-                    .frame(height: 50)
-                
-                Spacer()
-                    .frame(height: 20)
+                    .frame(height: 5)
+                        
+               
+            
+                Text("Help us - help 'YOU'")
+                    .italic()
+                    .font(.system(size: 35))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            
                 Text("Protect")
-                    .font(.system(size: 45))
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 105)
                 
                 
                 Text("'YOUR' Privacy")
-                    .font(.system(size: 55))
-                    .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
+                    .font(.system(size: 35))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 200)
                 
                 NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
-                    Text("Ok, let's go!")
+                    Text("Ok, how can I do that?")
                         .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .frame(width: 300, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
-                    
-                    //                        Spacer()
-                    //                            .frame(height: 25)
-                    //
+                        .multilineTextAlignment(.center)
+                  
                 }
             }
         }
@@ -1232,7 +1206,7 @@ struct SignUpQuestionPage3: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -1240,7 +1214,7 @@ struct SignUpQuestionPage3: View {
                 
                 Text("Just select what interests you the most and we're done.")
                     .font(.system(size: 25))
-                    .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .frame(width: 350)
                     .multilineTextAlignment(.center)
                 
@@ -1370,11 +1344,11 @@ struct SignUpQuestionPage3: View {
                     .frame(height: 30)
                 
                 
-                Link("By tapping [Submit] you agree to our Privacy Policy & Terms of Service", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
+                Link("By tapping [Submit] you agree to our Privacy Policy & Terms of Service.", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
                     
                     .frame(width: 325, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .cornerRadius(25)
                 
                 
