@@ -1140,7 +1140,7 @@ struct SignUpQuestionPage2: View {
                     
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 20)
                     
                     Text("Instead of us using 'cookies' to follow your every move on your iPhone and laptop, then bombarding you with Ads aligning with what you have been looking at.")
                         .font(.system(size: 25))
@@ -1171,9 +1171,7 @@ struct SignUpQuestionPage2: View {
                             .cornerRadius(25)
                             .multilineTextAlignment(.center)
                         
-                        
-                        Spacer()
-                            .frame(height: 50)
+                 
         
                     }
                 }
