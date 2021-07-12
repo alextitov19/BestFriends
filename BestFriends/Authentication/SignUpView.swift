@@ -1150,9 +1150,7 @@ struct SignUpQuestionPage2: View {
                         .frame(width: 400, height: 200)
                         .multilineTextAlignment(.center)
                     
-                    Spacer()
-                        .frame(height: 20)
-                    
+                  
                     
                     Text("We simply ‘Ask’ you about your interests.")
                         .font(.system(size: 30))

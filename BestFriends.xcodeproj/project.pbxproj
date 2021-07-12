@@ -915,7 +915,6 @@
 			isa = PBXGroup;
 			children = (
 				CF356D4426774C2E00BCF572 /* BlueMode */,
-				D1D27D39264303E300BDA75F /* InfoPages.swift */,
 				7AB62A8426426F86005A7744 /* SettingsView.swift */,
 				CF356D1A2671FE2100BCF572 /* Tokens */,
 				CF5263E1266761CC00243DD7 /* EditingChatFunctions */,
@@ -941,6 +940,7 @@
 			isa = PBXGroup;
 			children = (
 				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
+				D1D27D39264303E300BDA75F /* InfoPages.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
 				7AE31CC4262A9C57001EC5A3 /* ConfirmationView.swift */,
 				7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */,
