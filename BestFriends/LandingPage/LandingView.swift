@@ -34,7 +34,7 @@ struct LandingView: View {
     @State private var isAdViewPresented = false
     @State private var isReviewPopupShowing = false //change to true to show popup
     
-    
+    private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
     //    @State private var inviteMode = false
     
     @State private var selectedFriends = []
@@ -135,7 +135,7 @@ struct LandingView: View {
                     }) {
                         stars[index]
                     }
-                    .offset(x: CGFloat.random(in: -140..<140))
+                    .offset(x: randomOffsets[index])
                     .padding(20)
                 }
                 
