@@ -24,7 +24,7 @@ struct LoginView: View {
                     .scaledToFill()
                 
                 VStack {
-                   
+                    
                     Text("LOGIN")
                         .font(.system(size: 45))
                         .foregroundColor(.white)
@@ -64,58 +64,63 @@ struct LoginView: View {
                         )
                     
                     
-                 
+                    
                     VStack {
                         Spacer()
                             .frame(height: 300)
                         
                         
-                    TextField("Username", text: $username)
-                        .frame(width: 225, height: 45, alignment: .center)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .cornerRadius(25)
-                        .disableAutocorrection(true)
-                        .autocapitalization(.none)
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    SecureField("Password", text: $password)
-                        .frame(width: 225, height: 45, alignment: .center)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .cornerRadius(25)
-                        .disableAutocorrection(true)
-                        .autocapitalization(.none)
-                   
-                        Spacer()
-                        .frame(height: 15)
-                        
-                   
-                        
+                        TextField("Username", text: $username)
+                            .frame(width: 225, height: 45, alignment: .center)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .cornerRadius(25)
+                            .disableAutocorrection(true)
+                            .autocapitalization(.none)
                         
                         Spacer()
-                        .frame(height: 25)
-                    
-                    Button("Login", action: {
-                        sessionManager.login(
-                            username: username,
-                            password: password
-                        )
-                    })
-                    .frame(width: 150, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0, green: 0.9476842284, blue: 0, alpha: 1)))
-                    .cornerRadius(25)
-                 
+                            .frame(height: 20)
+                        
+                        SecureField("Password", text: $password)
+                            .frame(width: 225, height: 45, alignment: .center)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .cornerRadius(25)
+                            .disableAutocorrection(true)
+                            .autocapitalization(.none)
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 25)
+                        
+                        
+                        
+                        
+                        Button(action: {
+                            sessionManager.login(
+                                username: username,
+                                password: password
+                            )
+                        }) {
+                            Text("Login")
+                                .frame(width: 150, height: 50, alignment: .center)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .background(Color(#colorLiteral(red: 0, green: 0.9476842284, blue: 0, alpha: 1)))
+                                .cornerRadius(25)
+                        }
+                        
                     }
                     VStack {
                         
                         Spacer()
-                        .frame(height: 15)
+                            .frame(height: 15)
                         
                         
                         Button("Don't have an account? Sign up.", action: sessionManager.showSignUp)
@@ -128,21 +133,21 @@ struct LoginView: View {
                         // Put in Forgot Username
                         
                         // Put in Forgot Password
-//                        NavigationLink(
-//                            destination: ForgotPassword(),
-//                            label: {
-//                                Text("Forgot Password")
-//                            })
-//                            .frame(width: 300, height: 30)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .overlay(
-//                                RoundedRectangle(cornerRadius: 25)
-//                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-//                            )
+                        //                        NavigationLink(
+                        //                            destination: ForgotPassword(),
+                        //                            label: {
+                        //                                Text("Forgot Password")
+                        //                            })
+                        //                            .frame(width: 300, height: 30)
+                        //                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        //                            .overlay(
+                        //                                RoundedRectangle(cornerRadius: 25)
+                        //                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                        //                            )
                         
-               
                         
-                      
+                        
+                        
                         
                         Spacer()
                             .frame(height: 130)
