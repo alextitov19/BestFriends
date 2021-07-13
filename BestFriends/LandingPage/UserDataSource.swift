@@ -192,4 +192,35 @@ struct UserDataSource {
         return emails
     }
     
+    func getUsernameByEmail(email: String) -> String {
+        var username = ""
+        
+        let group = DispatchGroup()
+        group.enter()
+        
+        Amplify.API.query(request: .paginatedList(User.self)) { event in
+            switch event {
+            case .success(let result):
+                switch result {
+                case .success(let users):
+                    print("Successfully retrieved list of users: \(users)")
+                    for user in users {
+                        if user.email == email {
+                            username = user.id
+                        }
+                    }
+                    group.leave()
+                case .failure(let error):
+                    print("Got failed result with \(error.errorDescription)")
+                }
+            case .failure(let error):
+                print("Got failed event with error \(error)")
+            }
+        }
+        
+        group.wait()
+        
+        return username
+    }
+    
 }

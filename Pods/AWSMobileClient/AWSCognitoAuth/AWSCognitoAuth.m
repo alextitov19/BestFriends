@@ -80,7 +80,7 @@ API_AVAILABLE(ios(13.0))
 
 @implementation AWSCognitoAuth
 
-NSString *const AWSCognitoAuthSDKVersion = @"2.24.2";
+NSString *const AWSCognitoAuthSDKVersion = @"2.24.3";
 
 
 static NSMutableDictionary *_instanceDictionary = nil;
@@ -1206,6 +1206,8 @@ withPresentingViewController:(UIViewController *)presentingViewController {
     NSArray *pieces = [self.tokenString componentsSeparatedByString:@"."];
     if(pieces.count > 2){
         NSString * claims = pieces[1];
+        claims = [claims stringByReplacingOccurrencesOfString:@"-" withString:@"+"];
+        claims = [claims stringByReplacingOccurrencesOfString:@"_" withString:@"/"];
         //JWT is not padded with =, pad it if necessary
         NSUInteger paddedLength = claims.length + (4 - (claims.length % 4)) % 4;;
         claims = [claims stringByPaddingToLength:paddedLength withString:@"=" startingAtIndex:0];
