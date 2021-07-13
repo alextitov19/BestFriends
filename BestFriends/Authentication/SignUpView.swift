@@ -1250,46 +1250,54 @@ struct SignUpQuestionPage3: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("Health / Fitness / Nutrition", action: {
+                    Button(action: {
                         didTap2.toggle()
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap2 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("Health / Fitness / Nutrition")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap2 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("Sports Stuff", action: {
+                    Button(action: {
                         didTap3.toggle()
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap3 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("Sports / Fitness")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap3 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("Lifestyle", action: {
+                    Button(action: {
                         didTap4.toggle()
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap4 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("Lifestyle")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap4 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("Social Impact / NGO's", action: {
+                    Button(action: {
                         didTap5.toggle()
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap5 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("Social Impact / NGO")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap5 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 50)
