@@ -106,7 +106,7 @@ struct NotificationPreLoad: View {
                     setTimer(minutes: -1)
                 }) {
                     Text("Sorry, I'm tied up for a while.")
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0.5167014003, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 30))
                         .bold()
                 }

@@ -18,14 +18,14 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("Firstname")
+                Image("SignUpPinBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
                 
                 VStack {
                     
-                    Text("LOGIN")
+                    Text("BestFriends")
                         .font(.system(size: 45))
                         .foregroundColor(.white)
                         .frame(width: 225, height: 50)
