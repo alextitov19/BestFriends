@@ -28,7 +28,7 @@ struct LandingView: View {
     @State private var titleText = ""
     @State private var invitedChatRooms: [InvitedRoom] = []
     
-    
+    @State private var invitingFriends = false
     @State private var isShakingCoolPresented = false
     @State private var showingAddFriendInstructions = false
     @State private var isAdViewPresented = false
@@ -116,7 +116,7 @@ struct LandingView: View {
                 Spacer()
                     .frame(height: 10)
                 
-                ForEach(stars, id: \.id) { star in
+                ForEach(stars.indices, id: \.self) { index in
                     VStack {
                         
                         HStack {
@@ -125,14 +125,23 @@ struct LandingView: View {
                                 .frame(width: 100)
                             
                             Button(action: {
-                                if friendIDsToInvite.contains(star.id) {
-                                    friendIDsToInvite.remove(at: friendIDsToInvite.firstIndex(of: star.id)!)
-                                    friendNamesToInvite.remove(at: friendNamesToInvite.firstIndex(of: star.name)!)
-                                } else {
-                                    friendIDsToInvite.append(star.id)
-                                    friendNamesToInvite.append(star.name)
+                                print("tap")
+                                if invitingFriends {
+                                    if friendIDsToInvite.contains(stars[index].id) {
+                                        friendIDsToInvite.remove(at: friendIDsToInvite.firstIndex(of: stars[index].id)!)
+                                        friendNamesToInvite.remove(at: friendNamesToInvite.firstIndex(of: stars[index].name)!)
+                                        stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
+                                        print("Color change 1")
+                                    } else {
+                                        friendIDsToInvite.append(stars[index].id)
+                                        friendNamesToInvite.append(stars[index].name)
+                                        stars[index].image = Image(uiImage: UIImage(named: "starBig")!)
+                                        print("Color change 2")
+                                    }
                                 }
-                            }) { star }
+                            }) {
+                                stars[index]
+                            }
                         }
                         
                         Spacer()
@@ -339,12 +348,18 @@ struct LandingView: View {
     
     
     private func inviteClicked() {
+        invitingFriends = true
         for index in 0..<stars.count {
             stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
             
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            invitingFriends = false
+            for index in 0..<stars.count {
+                stars[index].image = Image(uiImage: UIImage(named: "starBig")!)
+                
+            }
             inviteSelectedFriends()
         }
     }
@@ -371,8 +386,8 @@ struct LandingView: View {
             
             for id in friendIDsToInvite {
                 userDataSource.addRoom(userID: id, roomID: room.id)
-                                let token = userDataSource.getUser(id: id).deviceFCMToken
-                                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk. Please let them know When can you talk on BestFriends", body: body)
+                let token = userDataSource.getUser(id: id).deviceFCMToken
+                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk. Please let them know When can you talk on BestFriends", body: body)
             }
         }
     }
