@@ -98,7 +98,7 @@ struct AdDataSource {
     
     private func uploadAnAd(name: String) {
         guard let url = Bundle.main.url(forResource: "first", withExtension: "mp4") else { fatalError() }
-        let key = "Advertisement/" + randomString(length: 20)
+        let key = "Advertisement/" + Helper().randomString(length: 20)
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data else { return }
@@ -142,22 +142,5 @@ struct AdDataSource {
                 print(apiError)
             }
         }
-    }
-    
-    
-    private func randomString(length: Int) -> String {
-        
-        let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-        let len = UInt32(letters.length)
-        
-        var randomString = ""
-        
-        for _ in 0 ..< length {
-            let rand = arc4random_uniform(len)
-            var nextChar = letters.character(at: Int(rand))
-            randomString += NSString(characters: &nextChar, length: 1) as String
-        }
-        
-        return randomString
     }
 }

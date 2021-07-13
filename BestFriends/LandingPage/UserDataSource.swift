@@ -9,9 +9,9 @@ import Foundation
 import Amplify
 
 struct UserDataSource {
-    
+        
     func getUser(id: String) -> User {
-        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, blueMode: false, notificationsBM: true, notificationsLP: true)
+        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, notificationsBM: true, notificationsLP: true)
         
         let group = DispatchGroup()
         group.enter()
@@ -23,6 +23,8 @@ struct UserDataSource {
                 case .success(let user):
                     guard let user = user else {
                         print("Could not find user")
+                        print("failed 0 for id: \(id) and my id is: \(Amplify.Auth.getCurrentUser()?.username)")
+//                        SessionManager().showLogin()
                         return
                     }
                     print("Successfully retrieved user: \(user)")
@@ -46,9 +48,11 @@ struct UserDataSource {
     }
     
     func getCurrentUser() -> User {
-        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, blueMode: false, notificationsBM: true, notificationsLP: true)
+        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: " ", deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, notificationsBM: true, notificationsLP: true)
         
         guard let id = Amplify.Auth.getCurrentUser()?.username else {
+//            SessionManager().showLogin()
+            print("failed 1")
             return finaluser
         }
         
@@ -62,6 +66,8 @@ struct UserDataSource {
                 case .success(let user):
                     guard let user = user else {
                         print("Could not find user")
+                        print("failed 2")
+//                        SessionManager().signOut()
                         return
                     }
                     print("Successfully retrieved user: \(user)")
@@ -184,6 +190,37 @@ struct UserDataSource {
         group.wait()
         
         return emails
+    }
+    
+    func getUsernameByEmail(email: String) -> String {
+        var username = ""
+        
+        let group = DispatchGroup()
+        group.enter()
+        
+        Amplify.API.query(request: .paginatedList(User.self)) { event in
+            switch event {
+            case .success(let result):
+                switch result {
+                case .success(let users):
+                    print("Successfully retrieved list of users: \(users)")
+                    for user in users {
+                        if user.email == email {
+                            username = user.id
+                        }
+                    }
+                    group.leave()
+                case .failure(let error):
+                    print("Got failed result with \(error.errorDescription)")
+                }
+            case .failure(let error):
+                print("Got failed event with error \(error)")
+            }
+        }
+        
+        group.wait()
+        
+        return username
     }
     
 }

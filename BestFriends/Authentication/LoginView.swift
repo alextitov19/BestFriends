@@ -18,89 +18,120 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("purpleBackground")
+                Image("SignUpPinBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
                 
                 VStack {
-                    Spacer()
-                        .frame(height: 75)
                     
-                    Text("Login")
-                        .font(.largeTitle)
-                        .bold()
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    
-                    Spacer()
-                    
-                    TextField("Username", text: $username)
-                        .frame(width: 200, height: 50, alignment: .center)
+                    Text("BestFriends")
+                        .font(.system(size: 40))
+                        .foregroundColor(.white)
+                        .frame(width: 225, height: 50)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .cornerRadius(25)
-                        .disableAutocorrection(true)
-                        .autocapitalization(.none)
                     
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    SecureField("Password", text: $password)
-                        .frame(width: 200, height: 50, alignment: .center)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .cornerRadius(25)
-                        .disableAutocorrection(true)
-                        .autocapitalization(.none)
-                    Spacer()
-                        .frame(height: 40)
-                    
-                    Button("Login", action: {
-                        sessionManager.login(
-                            username: username,
-                            password: password
-                        )
-                    })
-                    .frame(width: 150, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
-                    
-                    Spacer()
-                    
+                
                     VStack {
-                        // Put in Forgot Username
+                        Spacer()
+                            .frame(height: 375)
                         
-                        // Put in Forgot Password
+                        
+                        TextField("Username", text: $username)
+                            .frame(width: 225, height: 45, alignment: .center)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .cornerRadius(25)
+                            .disableAutocorrection(true)
+                            .autocapitalization(.none)
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        SecureField("Password", text: $password)
+                            .frame(width: 225, height: 45, alignment: .center)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .cornerRadius(25)
+                            .disableAutocorrection(true)
+                            .autocapitalization(.none)
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 25)
+                        
+                        
+                        
+                        
+                        Button(action: {
+                            sessionManager.login(
+                                username: username,
+                                password: password
+                            )
+                        }) {
+                            Text("Login")
+                                .frame(width: 150, height: 50, alignment: .center)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                .cornerRadius(25)
+                        }
+                        
+                    }
+                    VStack {
+                        
+                        Spacer()
+                            .frame(height: 50)
+                        
+                        
+                        Button("Don't have an account? Sign up.", action: sessionManager.showSignUp)
+                            .frame(width: 270, height: 30)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
+                            )
+                        
+                        Spacer()
+                            .frame(height: 25)
+                        
+                        
+                        HStack {
                         NavigationLink(
                             destination: ForgotPassword(),
                             label: {
                                 Text("Forgot Password")
                             })
-                            .frame(width: 300, height: 50)
+                            .frame(width: 150, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                    .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 2)
                             )
                         
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        
-                        Button("Don't have an account? Sign up.", action: sessionManager.showSignUp)
-                            .frame(width: 300, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                  
+                        NavigationLink(
+                            destination: ForgotUsername().environmentObject(sessionManager),
+                            label: {
+                                Text("Forgot Username")
+                            })
+                            .frame(width: 150, height: 30)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)), lineWidth: 1)
+                                    .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 2)
                             )
                         
+                      
+                        }
                         Spacer()
-                            .frame(height: 50)
-                        
+                            .frame(height: 130)
                     }
                     
                 }
@@ -256,11 +287,86 @@ struct ConfirmNewPassword: View {
     
 }
 
+struct ForgotUsername: View {
+    
+    @State var username = ""
+    @State var email = ""
+    @State var usernameFound = true
+    
+    @EnvironmentObject var sessionManager: SessionManager
+
+    var body: some View {
+        ZStack {
+            Image("blueGradient1")
+                .ignoresSafeArea()
+            
+            VStack {
+                Text("Forgot Username")
+                    .foregroundColor(.white)
+                    .font(.system(size: 35, weight: .light))
+                    .padding(20)
+
+                Text("Your username is: \(username)")
+                    .foregroundColor(.white)
+                    .font(.system(size: 30, weight: .light))
+                    .isHidden(username.count == 0)
+                    .padding(20)
+                
+                Text("There is not an account with that email")
+                    .foregroundColor(.red)
+                    .font(.system(size: 20, weight: .light))
+                    .isHidden(usernameFound)
+                    .padding(20)
+                
+                Spacer()
+                    .frame(height: 120)
+                
+                TextField(" Email", text: $email)
+                    .font(.system(size: 24, weight: .medium))
+                    .multilineTextAlignment(.center)
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
+                    .foregroundColor(.black)
+                    .background(Color(#colorLiteral(red: 0.228910774, green: 0.8312507868, blue: 1, alpha: 1)))
+                    .frame(width: 340)
+                    .cornerRadius(20)
+                    .padding(40)
+                
+                Spacer()
+                    .frame(height: 120)
+                                
+                Button(action: {
+                    showUsername()
+                }) {
+                    Text("Submit")
+                        .frame(width: 150, height: 50, alignment: .center)
+                        .font(.system(size: 24, weight: .light))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.046738334, green: 0.4033712745, blue: 0.9790328145, alpha: 1)))
+                        .cornerRadius(25)
+                }
+                .padding(20)
+            }
+        }
+    }
+    
+    private func showUsername() {
+        let result = UserDataSource().getUsernameByEmail(email: email)
+        if result == "" {
+            usernameFound = false
+        } else {
+            usernameFound = true
+            username = result
+        }
+    }
+}
+
 struct LoginView_Previews : PreviewProvider {
     static var previews: some View {
-        LoginView()
-            .environmentObject(SessionManager())
-        ForgotPassword()
-        ConfirmNewPassword(username: "")
+//        LoginView()
+//            .environmentObject(SessionManager())
+//        ForgotPassword()
+//        ConfirmNewPassword(username: "")
+        ForgotUsername()
     }
 }

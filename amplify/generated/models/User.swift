@@ -23,7 +23,8 @@ public struct User: Model {
   public var tokens: Int
   public var background: Int
   public var unlockedStickers: [Int]?
-  public var blueMode: Bool
+  public var BMFriend: String?
+  public var BMRoom: String?
   public var notificationsBM: Bool
   public var notificationsLP: Bool
   
@@ -47,7 +48,8 @@ public struct User: Model {
       tokens: Int,
       background: Int,
       unlockedStickers: [Int]? = [],
-      blueMode: Bool,
+      BMFriend: String? = nil,
+      BMRoom: String? = nil,
       notificationsBM: Bool,
       notificationsLP: Bool) {
       self.id = id
@@ -70,7 +72,8 @@ public struct User: Model {
       self.tokens = tokens
       self.background = background
       self.unlockedStickers = unlockedStickers
-      self.blueMode = blueMode
+      self.BMFriend = BMFriend
+      self.BMRoom = BMRoom
       self.notificationsBM = notificationsBM
       self.notificationsLP = notificationsLP
   }

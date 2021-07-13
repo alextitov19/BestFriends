@@ -13,12 +13,30 @@ import Firebase
 @main
 struct BestFriendsApp: App {
     
-    //    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+        @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @ObservedObject var sessionManager = SessionManager()
     
     init() {
         configureAmplify()
         FirebaseApp.configure()
+        
+//        sessionManager.signOut()
+        
+//        if Amplify.Auth.getCurrentUser() != nil {
+//            let id  = Amplify.Auth.getCurrentUser()!.username
+//            if UserDataSource().getAllEmails().contains(id) == false {
+//                print("Got into line 25 on BFA")
+//                sessionManager.signOut()
+//                sessionManager.appState = .login
+//                NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: .main) { _ in
+//                    // Background...
+//                    // Change user isOnline to false
+//                    print("App is in background")
+//                    UserDataSource().setOnlineStatus(isOnline: false)
+//                }
+//                return
+//            }
+//        }
         sessionManager.getCurrentAuthUser()
         
         NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: .main) { _ in
@@ -36,7 +54,7 @@ struct BestFriendsApp: App {
                 LoginView()
                     .environmentObject(sessionManager)
             case .signUp:
-                SignUpPage1()
+                InfoViewPage1()
                     .environmentObject(sessionManager)
             case .confirmationCode(let username):
                 ConfirmationView(username: username)

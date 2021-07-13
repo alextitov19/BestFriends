@@ -180,7 +180,8 @@ subscription OnCreateUser {
     tokens
     background
     unlockedStickers
-    blueMode
+    BMFriend
+    BMRoom
     notificationsBM
     notificationsLP
     createdAt
@@ -224,7 +225,8 @@ subscription OnUpdateUser {
     tokens
     background
     unlockedStickers
-    blueMode
+    BMFriend
+    BMRoom
     notificationsBM
     notificationsLP
     createdAt
@@ -268,7 +270,8 @@ subscription OnDeleteUser {
     tokens
     background
     unlockedStickers
-    blueMode
+    BMFriend
+    BMRoom
     notificationsBM
     notificationsLP
     createdAt

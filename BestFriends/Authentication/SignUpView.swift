@@ -34,7 +34,25 @@ struct SignUpPage1: View {
                     
                     //                        Spacer()
                     //                            .frame(height: 0)
-                    Text("Welcome to")
+                    //                    Text("Welcome to")
+                    //                        .font(.system(size: 25))
+                    //                        .italic()
+                    //                        .fontWeight(.thin)
+                    //                        .foregroundColor(.white)
+                    //                        .multilineTextAlignment(.center)
+                    //
+                    //
+                    
+                    Spacer()
+                        .frame(height: 5)
+                    
+                    Text("BestFriends")
+                        .font(.system(size: 65))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                    Text("The positivity app 😊")
                         .font(.system(size: 25))
                         .italic()
                         .fontWeight(.thin)
@@ -44,25 +62,7 @@ struct SignUpPage1: View {
                     
                     
                     Spacer()
-                        .frame(height: 15)
-                    
-                    Text("BestFriends")
-                        .font(.system(size: 65))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    Text("the positivity app")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    
-                    Spacer()
-                        .frame(height: 340)
+                        .frame(height: 400)
                     
                     
                     TextField("First name", text: $firstName)
@@ -93,14 +93,12 @@ struct SignUpPage1: View {
                     NavigationLink("", destination: SignUpPage2(firstName: firstName).environmentObject(sessionManager), isActive: $readyToProceed)
                     
                     Spacer()
-                        .frame(height: 230)
+                        .frame(height: 150)
                     
                     
                     
                 }
                 
-                Spacer()
-                    .frame(height: 125)
                 
             }
         }
@@ -116,7 +114,7 @@ struct SignUpPage2: View {
     
     var body: some View {
         ZStack {
-            Image("Lastname")
+            Image("Password")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -135,18 +133,18 @@ struct SignUpPage2: View {
                     VStack {
                         
                         
-                        Text("We'll never sell or share your info!")
+                        Text("You add your 5 BestFriends w/ QR codes, not usernames.")
                             .font(.system(size: 30))
                             .fontWeight(.regular)
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
-                            .frame(width: 350, height: 100, alignment: .center)
+                            .frame(width: 400, height: 150, alignment: .center)
                         Spacer()
                             .frame(height: 125)
                     }
                 }
                 Spacer()
-                    .frame(height: 250)
+                    .frame(height: 270)
                 
                 TextField("Last name", text: $lastName)
                     .multilineTextAlignment(.center)
@@ -161,22 +159,23 @@ struct SignUpPage2: View {
                 Spacer()
                     .frame(height: 20)
                 
-                Text("Next")
-                    .font(.title)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .frame(width: 200, height: 50)
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
-                    .onTapGesture {
-                        if lastName != "" {
-                            readyToProceed = true
-                        }
+                Button(action: {
+                    if lastName != "" {
+                        readyToProceed = true
                     }
+                }) {
+                    Text("Next")
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
+                }
                 
                 NavigationLink("", destination: SignUpPage3(firstName: firstName, lastName: lastName).environmentObject(sessionManager), isActive: $readyToProceed)
                 
                 Spacer()
-                    .frame(height: 120)
+                    .frame(height: 180)
                 
             }
             
@@ -211,16 +210,22 @@ struct SignUpPage3: View {
             
             
             Spacer()
-                .frame(height: 125)
+                .frame(height: 130)
             
             VStack {
-                Text("What username do you want?")
+                Text("We don't have a 'user search' function, protecting you from unwanted DM's & images.")
                     .font(.system(size: 27))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 400)
+                    .frame(height: 360)
+                
+                Text("What username do you want?")
+                    .font(.system(size: 27))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                
                 TextField("Username", text: $username)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -232,23 +237,25 @@ struct SignUpPage3: View {
                     .autocapitalization(.none)
                 
                 
+                
                 Spacer()
                     .frame(height: 20)
                 
-                Text("Next")
-                    .font(.title)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .frame(width: 200, height: 50)
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
-                    .onTapGesture {
-                        checkUsername()
-                    }
+                Button(action: {
+                    checkUsername()
+                }) {
+                    Text("Next")
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
+                }
                 
-                NavigationLink("", destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username).environmentObject(sessionManager), isActive: $readyToProceed)
+                NavigationLink("", destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username.lowercased()).environmentObject(sessionManager), isActive: $readyToProceed)
                 
                 Spacer()
-                    .frame(height: 90)
+                    .frame(height: 140)
                 
                 
                 
@@ -262,8 +269,9 @@ struct SignUpPage3: View {
     
     private func checkUsername() {
         let usernames = UserDataSource().getAllUsernames()
+        let currentusername = username.lowercased()
         for uname in usernames {
-            if uname == username {
+            if uname == currentusername {
                 isUsernameTaken = true
                 return
             }
@@ -286,7 +294,7 @@ struct SignUpPage4: View {
     
     var body: some View {
         ZStack {
-            Image("Password")
+            Image("Lastname")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -295,7 +303,7 @@ struct SignUpPage4: View {
                 
                 
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 45)
                 
                 VStack {
                     Text("Choose your password.")
@@ -303,13 +311,7 @@ struct SignUpPage4: View {
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                     
-                    Text("Password must contain at least 8 characters plus one capital letter.")
-                        .italic()
-                        .font(.system(size: 15))
-                        .fontWeight(.regular)
-                        .foregroundColor(changingColor)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
                     
                     Spacer()
                         .frame(height: 375)
@@ -327,7 +329,7 @@ struct SignUpPage4: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    SecureField("Enter password again", text: $password2)
+                    SecureField("Confirm password", text: $password2)
                         .multilineTextAlignment(.center)
                         .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .frame(width: 300, height: 40, alignment: .center)
@@ -340,42 +342,43 @@ struct SignUpPage4: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    
-                    Text("Next")
-                        .font(.title)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(25)
-                        .onTapGesture {
-                            if password != "" {
-                                if password.count >= 8 && password == password2 {
-                                    let capitalLetterRegEx  = ".*[A-Z]+.*"
-                                    let texttest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
-                                    let capitalresult = texttest.evaluate(with: password)
-                                    if capitalresult == true {
-                                        readyToProceed = true
-                                    }
+                    Button(action: {
+                        if password != "" {
+                            if password.count >= 8 && password == password2 {
+                                let capitalLetterRegEx  = ".*[A-Z]+.*"
+                                let texttest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
+                                let capitalresult = texttest.evaluate(with: password)
+                                if capitalresult == true {
+                                    readyToProceed = true
                                 }
                             }
-                            changingColor = Color(.red)
-                            
                         }
+                        changingColor = Color(.red)
+                    }) {
+                        Text("Next")
+                            .font(.title)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 200, height: 50)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                    }
                     
                     NavigationLink("", destination: SignUpPage5(firstName: firstName, lastName: lastName, username: username, password: password).environmentObject(sessionManager), isActive: $readyToProceed)
                     
                     
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    
+                    Text("Password must contain at least 8 characters plus one capital letter.")
+                        .italic()
+                        .font(.system(size: 15))
+                        .fontWeight(.regular)
+                        .foregroundColor(changingColor)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     
                 }
                 
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 55)
                 
             }
         }
@@ -403,13 +406,14 @@ struct SignUpPage5: View {
             
             
             VStack {
-                Text("Just in case we need to reset your password")
+                Text("Just in case you need to reset your password.")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
+                    .frame(width: 350, height: 150, alignment: .center)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 380)
+                    .frame(height: 370)
                 
                 
                 
@@ -429,36 +433,35 @@ struct SignUpPage5: View {
                 Spacer()
                     .frame(height: 20)
                 
-                Text("Next")
-                    .font(.title)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .frame(width: 200, height: 50)
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
-                    .onTapGesture {
-                        if email != "" {
-                            if isValidEmail(email) {
-                                let emails = UserDataSource().getAllEmails()
-                                if emails.contains(email) == false {
-                                    readyToProceed = true
-                                }
+                Button(action: {
+                    if email != "" {
+                        if isValidEmail(email) {
+                            let emails = UserDataSource().getAllEmails()
+                            if emails.contains(email) == false {
+                                readyToProceed = true
                             }
                         }
                     }
+                }) {
+                    Text("Next")
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
+                }
                 
                 NavigationLink("", destination: SignUpPage6(firstName: firstName, lastName: lastName, username: username, password: password, email: email).environmentObject(sessionManager), isActive: $readyToProceed)
                 
                 
                 Spacer()
-                    .frame(height: 120)
+                    .frame(height: 155)
                 
                 
                 
                 
             }
             
-            Spacer()
-                .frame(height: 125)
             
         }
     }
@@ -505,7 +508,7 @@ struct SignUpPage6: View {
                 
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 1)
                 
                 
                 Text("Please select your Pronouns")
@@ -519,90 +522,99 @@ struct SignUpPage6: View {
                 
                 VStack {
                     
-                    Button("she / her", action: {
+                    Button(action: {
                         didTap1 = true
                         didTap2 = false
                         didTap3 = false
                         didTap4 = false
                         didTap5 = false
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap1 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("she / her")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap1 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("he / him", action: {
+                    Button(action: {
                         didTap1 = false
                         didTap2 = true
                         didTap3 = false
                         didTap4 = false
                         didTap5 = false
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap2 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("he / him")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap2 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("they / them", action: {
+                    Button(action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = true
                         didTap4 = false
                         didTap5 = false
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap3 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("they / them")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap3 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
+                    
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("other", action: {
+                    Button(action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = false
                         didTap4 = true
                         didTap5 = false
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap4 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("other")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap4 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("prefer not to say", action: {
+                    Button(action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = false
                         didTap4 = false
                         didTap5 = true
                         
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap5 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("Prefer not to say")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap5 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
+                    
                     
                     Spacer()
-                        .frame(height: 35)
+                        .frame(height: 120)
                     
                     
                     
                 }
                 
                 Button(action: {
-                    
-                    
-                    
                     if didTap1 {
                         pronouns = "SHE"
                     }
@@ -623,13 +635,16 @@ struct SignUpPage6: View {
                 }) {
                     Text("Next")
                         .font(.title)
+                        .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4 || didTap5) ? 50 : 0))
+                        .disabled(!(didTap1 || didTap2 || didTap3 || didTap4 || didTap5))
+                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
                 }
-                .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4 || didTap5) ? 50 : 0))
-                .disabled(!(didTap1 || didTap2 || didTap3 || didTap4 || didTap5))
-                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                .cornerRadius(25)
                 
+                
+                Spacer()
+                    .frame(height: 180)
                 
             }
             
@@ -660,7 +675,7 @@ struct SignUpPage7: View {
     
     var body: some View {
         ZStack {
-            Image("Age")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -670,12 +685,14 @@ struct SignUpPage7: View {
                 Spacer()
                     .frame(height: 100)
                 
-                Text("Your age?")
+                Text("For your safety, Apple requires us to ask your age.")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
+                    .frame(width: 325, height: 150)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
+                    .frame(height: 60)
                 
                 DatePicker("", selection: $birthDate, displayedComponents: .date)
                     .datePickerStyle(WheelDatePickerStyle())
@@ -684,7 +701,7 @@ struct SignUpPage7: View {
                     .offset(x: -45)
                 
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 45)
                 
                 NavigationLink(destination: SignUpPage8(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthDate).environmentObject(sessionManager)) {
                     Text("Next")
@@ -697,7 +714,7 @@ struct SignUpPage7: View {
                 }
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 200)
             }
         }
     }
@@ -729,7 +746,7 @@ struct SignUpPage8: View {
             
             VStack {
                 
-                Text("Hide your Chat messages from prying eyes. Only you can get them back with your 'secret' PIN.")
+                Text("Hide your Chat messages from prying eyes. Only you can get them back with your 'Secret' PIN.")
                     .font(.system(size: 25))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
@@ -737,12 +754,12 @@ struct SignUpPage8: View {
                     .frame(width: 400, height: 120, alignment: .center)
                     .padding(20)
                 
-                Spacer().frame(height: 30)
+                Spacer().frame(height: 5)
                 
                 
                 Text("Enter 4-digit PIN")
                     .font(.title)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 0, green: 0.8175823689, blue: 0, alpha: 1)))
                     .padding()
                 
                 
@@ -751,10 +768,10 @@ struct SignUpPage8: View {
                 VStack {
                     HStack {
                         Button(action: {
-                            currentPin.append("7")
+                            currentPin.append("1")
                             numberEntered()
                         }) {
-                            Text("7")
+                            Text("1")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -768,10 +785,10 @@ struct SignUpPage8: View {
                         Spacer().frame(width: 20)
                         
                         Button(action: {
-                            currentPin.append("8")
+                            currentPin.append("2")
                             numberEntered()
                         }) {
-                            Text("8")
+                            Text("2")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -785,10 +802,10 @@ struct SignUpPage8: View {
                         Spacer().frame(width: 20)
                         
                         Button(action: {
-                            currentPin.append("9")
+                            currentPin.append("3")
                             numberEntered()
                         }) {
-                            Text("9")
+                            Text("3")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -857,10 +874,10 @@ struct SignUpPage8: View {
                     
                     HStack {
                         Button(action: {
-                            currentPin.append("1")
+                            currentPin.append("7")
                             numberEntered()
                         }) {
-                            Text("1")
+                            Text("7")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -874,10 +891,10 @@ struct SignUpPage8: View {
                         Spacer().frame(width: 20)
                         
                         Button(action: {
-                            currentPin.append("2")
+                            currentPin.append("8")
                             numberEntered()
                         }) {
-                            Text("2")
+                            Text("8")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -891,10 +908,10 @@ struct SignUpPage8: View {
                         Spacer().frame(width: 20)
                         
                         Button(action: {
-                            currentPin.append("3")
+                            currentPin.append("9")
                             numberEntered()
                         }) {
-                            Text("3")
+                            Text("9")
                                 .frame(width: 100, height: 100)
                                 .foregroundColor(Color.white)
                                 .background(Color.clear)
@@ -960,63 +977,91 @@ struct SignUpPage9: View {
     
     
     var body: some View {
-        ZStack {
-            Image("Earth")
+        ZStack{
+            
+            
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
-                Text("Where on Earth are you?")
-                    .font(.system(size: 35))
+                Text("Something just happen and you need to talk to your friends, FAST?")
+                    .font(.system(size: 25))
                     .fontWeight(.regular)
-                    .foregroundColor(.white)
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .frame(width: 400, height: 125)
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 120, alignment: .center)
-                
                 
                 Spacer()
-                    .frame(height: 225)
+                    .frame(height: 20)
+                
+                Text("No worries. We send a Push Notification instantly tracking them down.")
+                    .font(.system(size: 25))
+                    .fontWeight(.ultraLight)
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .frame(width: 400, height: 125)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 20)
+                
+                
+                Text("Then we send a Push Notificaiton right back to you with exactly when they can talk.")
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .frame(width: 400, height: 125)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 50)
                 
                 NavigationLink("", destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: locationString).environmentObject(sessionManager), isActive: $readyToProceed)
                 
-                Text("Next")
-                    .font(.title)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .frame(width: 200, height: 50)
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
-                    .onTapGesture {
-                        guard let exposedLocation = self.locationManager.exposedLocation else {
-                            print("*** Error in \(#function): exposedLocation is nil")
-                            return
-                        }
-                        
-                        self.locationManager.getPlace(for: exposedLocation) { placemark in
-                            guard let placemark = placemark else { return }
-                            
-                            locationString = ""
-                            if let country = placemark.country {
-                                locationString = locationString + "\(country)"
-                            }
-                            if let state = placemark.administrativeArea {
-                                locationString = locationString + ", \(state)"
-                            }
-                            if let town = placemark.locality {
-                                locationString = locationString + ", \(town)"
-                            }
-                        }
-                        
-                        readyToProceed = true
+                Button(action: {
+                    guard let exposedLocation = self.locationManager.exposedLocation else {
+                        print("*** Error in \(#function): exposedLocation is nil")
+                        return
                     }
+                    
+                    self.locationManager.getPlace(for: exposedLocation) { placemark in
+                        guard let placemark = placemark else { return }
+                        
+                        locationString = ""
+                        if let country = placemark.country {
+                            locationString = locationString + "\(country)"
+                        }
+                        if let state = placemark.administrativeArea {
+                            locationString = locationString + ", \(state)"
+                        }
+                        if let town = placemark.locality {
+                            locationString = locationString + ", \(town)"
+                        }
+                    }
+                    
+                    readyToProceed = true
+                }) {
+                    Text("Next")
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
+                }
                 
                 
                 Spacer()
                     .frame(height: 100)
+                
             }
         }
     }
 }
+
 
 struct SignUpQuestionPage1: View {
     
@@ -1034,7 +1079,7 @@ struct SignUpQuestionPage1: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("Earth")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -1042,74 +1087,42 @@ struct SignUpQuestionPage1: View {
             VStack {
                 
                 
-                HStack {
-                    VStack {
-                        
-                        Spacer()
-                            .frame(height: 125)
-                        
-                        Image("Penguin Sticker 38")
-                            .resizable()
-                            .frame(width: 150, height: 150)
-                            .scaledToFill()
-                        
-                    }
-                    VStack {
-                        
-                        ZStack {
-                            
-                            
-                            Image("ChatBubbleTrans")
-                                .resizable()
-                                .frame(width: 300, height: 175)
-                                .scaledToFill()
-                            
-                            Text("Please help us - help 'YOU'")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        }
-                        
-                    }
-                }
                 
-                Spacer()
-                    .frame(height: 50)
-                
-                Spacer()
-                    .frame(height: 20)
-                Text("Protect")
-                    .font(.system(size: 45))
+                Text("Help us - help 'YOU'")
+                    .italic()
+                    .font(.system(size: 35))
+                    .fontWeight(.ultraLight)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                
+                    .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 260)
+                
+                
+                Text("Protect")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
                 
                 
                 Text("'YOUR' Privacy")
-                    .font(.system(size: 55))
-                    .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
+                    .font(.system(size: 35))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 20)
                 
                 NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
-                    Text("Ok, let's go!")
+                    Text("Ok, how can I do that?")
                         .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .frame(width: 300, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
+                        .multilineTextAlignment(.center)
                     
-                    //                        Spacer()
-                    //                            .frame(height: 25)
-                    //
                 }
             }
         }
@@ -1133,7 +1146,7 @@ struct SignUpQuestionPage2: View {
     
     var body: some View {
         ZStack {
-            Image("Ads")
+            Image("SignUpPinBackground")
                 .resizable()                .ignoresSafeArea()
                 .scaledToFill()
             
@@ -1143,41 +1156,33 @@ struct SignUpQuestionPage2: View {
                 VStack {
                     
                     Text("We're changing how social media gathers user information.")
-                        .font(.system(size: 25))
+                        .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .frame(width: 350)
+                        .frame(width: 400, height: 150)
                         .multilineTextAlignment(.center)
                     
                     
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 20)
                     
-                    Text("Instead of us following your every move on your iPhone and laptop, then bombarding you with Ads aligning with what you have been looking at.")
-                        .font(.system(size: 19))
+                    Text("Instead of us using 'cookies' to follow your every move on your iPhone and laptop, then bombarding you with Ads aligning with what you have been looking at.")
+                        .font(.system(size: 25))
                         .fontWeight(.ultraLight)
                         .italic()
                         .foregroundColor(Color.white)
-                        .frame(width: 400, height: 75)
-                        
+                        .frame(width: 400, height: 200)
                         .multilineTextAlignment(.center)
                     
-                    Spacer()
-                        .frame(height: 10)
+                    
                     
                     Text("We simply ‘Ask’ you about your interests.")
                         .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .frame(width: 350)
+                        .frame(width: 300, height: 125)
                         .multilineTextAlignment(.center)
                     
                     
-                    Spacer()
-                        .frame(height: 200)
-                    
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
-                        
-                        Spacer()
-                            .frame(height: 350)
                         
                         Text("Next")
                             .font(.title)
@@ -1188,22 +1193,9 @@ struct SignUpQuestionPage2: View {
                             .multilineTextAlignment(.center)
                         
                         
-                        Spacer()
-                            .frame(height: 50)
-                        
                         
                     }
-                    
-                    // Spacer()
-                    //   .frame(height: 50)
-                    
-                    
-                    
                 }
-                
-                //Spacer()
-                //  .frame(height: 10)
-                
             }
         }
     }
@@ -1236,7 +1228,7 @@ struct SignUpQuestionPage3: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -1244,7 +1236,7 @@ struct SignUpQuestionPage3: View {
                 
                 Text("Just select what interests you the most and we're done.")
                     .font(.system(size: 25))
-                    .foregroundColor(Color(#colorLiteral(red: 0.2745916466, green: 0.513986089, blue: 1, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .frame(width: 350)
                     .multilineTextAlignment(.center)
                 
@@ -1253,56 +1245,68 @@ struct SignUpQuestionPage3: View {
                 
                 
                 VStack {
-                    Button("Beauty / Fashion", action: {
+                    Button(action: {
                         didTap1.toggle()
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap1 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("Beauty / Fashion")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap1 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
+                    
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("Health / Fitness / Nutrition", action: {
+                    Button(action: {
                         didTap2.toggle()
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap2 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("Health / Fitness / Nutrition")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap2 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("Sports Stuff", action: {
+                    Button(action: {
                         didTap3.toggle()
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap3 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("Sports / Fitness")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap3 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("Lifestyle", action: {
+                    Button(action: {
                         didTap4.toggle()
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap4 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("Lifestyle")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap4 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("Social Impact / NGO's", action: {
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap4 ? Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    Button(action: {
+                        didTap5.toggle()
+                    }) {
+                        Text("Social Impact / NGO")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap5 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 50)
@@ -1320,7 +1324,7 @@ struct SignUpQuestionPage3: View {
                         
                     )
                     
-                    var adPref: String = "NGO "
+                    var adPref: String = ""
                     if didTap1 {
                         adPref.append("BF ")
                     }
@@ -1334,7 +1338,7 @@ struct SignUpQuestionPage3: View {
                         adPref.append("L ")
                     }
                     if didTap5 {
-                        adPref.append("SI ")
+                        adPref.append("NGO ")
                     }
                     let pushManager = PushNotificationManager(userID: username)
                     
@@ -1352,7 +1356,6 @@ struct SignUpQuestionPage3: View {
                         secretPin: currentPin,
                         tokens: 0,
                         background: 1,
-                        blueMode: false,
                         notificationsBM: true,
                         notificationsLP: true)
                     
@@ -1364,21 +1367,21 @@ struct SignUpQuestionPage3: View {
                     Text("Submit")
                         .font(.title)
                 }
-                .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4) ? 50 : 0))
-                .disabled(!(didTap1 || didTap2 || didTap3 || didTap4))
+                .frame(width: 200, height: CGFloat((didTap1 || didTap2 || didTap3 || didTap4 || didTap5) ? 50 : 0))
+                .disabled(!(didTap1 || didTap2 || didTap3 || didTap4 || didTap5))
                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                 .cornerRadius(25)
                 
                 Spacer()
                     .frame(height: 30)
                 
                 
-                Link("By tapping [Submit] you agree to our Privacy Policy & Terms of Service", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
+                Link("By tapping [Submit] you agree to our Privacy Policy & Terms of Service.", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
                     
                     .frame(width: 325, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .cornerRadius(25)
                 
                 
@@ -1401,8 +1404,8 @@ struct SignUpPage1_Previews : PreviewProvider {
         //        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
         //                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
         //                SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
-//        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
-                        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
+        //        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
+        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
         //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
         //            SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
