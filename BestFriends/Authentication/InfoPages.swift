@@ -23,42 +23,42 @@ struct InfoViewPage1: View {
             VStack {
                 
                 
-                Text("Be the first to use new features in BestFriends that your friends don't even know about yet.")
-                    .font(.system(size: 30))
-                    .italic()
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 325, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                Text("WHY?")
-                    .font(.system(size: 30))
-                    .italic()
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 325, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                Text("Because they skipped this Walkthrough 💕")
-                    .font(.system(size: 30))
-                    .italic()
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 325, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
                 Spacer()
                     .frame(height: 60)
                 
                 VStack {
+                    Text("BestFriends \n Walk-through")
+                        .font(.system(size: 40))
+                       
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 350, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    Spacer()
+                        .frame(height: 300)
+                    
+                    Text("It only takes 90 seconds :)")
+                        .font(.system(size: 25))
+                        .italic()
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 350, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                        .frame(height: 20)
                     
                     NavigationLink(destination: InfoViewPage2()) {
-                        Text("It takes less than 90 seconds >")
+                        Text("Next")
                             .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .frame(width: 400, height: 50)
+                            .frame(width: 200, height: 50)
                             .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
+                   
+                   
+                        
+                    
                     }
                     
                     Spacer()
@@ -86,37 +86,31 @@ struct InfoViewPage2: View {
             VStack {
                 
                 
-                Text("On difficult days your never alone.")
-                    .font(.system(size: 40))
+                Text("You're never alone.")
+                    .font(.system(size: 35))
                     .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 325, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 400, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 100)
                 
                 
-                Text("Upon enter BestFriends a lighbeam is shot from your phone to everyone in the world on BestFriends that shows up as a tiny star.")
+                Text("Each tiny star on Landing page represents another user somewhere out there.")
                     .font(.system(size: 30))
                     .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 375, height: 220, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 400, height: 220, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 60)
                 
-                Text("And vise-versa, their lighbeams show up on yours.")
-                    .font(.system(size: 30))
-                    .italic()
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 325, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+             
                 
                 
                 
@@ -157,32 +151,33 @@ struct InfoViewPage3: View {
             
             VStack {
                 
-                
-                Text("BestFriends helps you find your smile.")
+                Text("ShakingCool")
                     .font(.system(size: 40))
-                    .italic()
+                    
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+              
                 
                 
                 Spacer()
                     .frame(height: 225)
                 
                 
-                Text("Just shake your phone. Three pics that alway make you smile.")
-                    .font(.system(size: 30))
+                Text("Just shake your phone and 3 pics that always make you smile ...")
+                    .font(.system(size: 27))
                     .italic()
                     .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 375, height: 175, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 400, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 
-                Text(" PopUp! 💕")
-                    .font(.system(size: 40))
-                    .italic()
+                Text(" Pop up!")
+                    .font(.system(size: 60))
+                    
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
@@ -305,24 +300,32 @@ struct InfoViewPage5: View {
             VStack {
                 
                 
-                Text("Just had a huge fight your your friend?")
-                    .font(.system(size: 40))
+                Text("BlueMode")
+                    .font(.system(size: 50))
+                    
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                Text("Just had a huge fight with a friend?")
+                    .font(.system(size: 35))
                     .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 
                 Spacer()
                     .frame(height: 200)
                 
                 
-                Text("Select 'BlueMode' unlocking special features helping you fix this mess.")
+                Text("Switch to BlueMode. \nWe'll help you fix this!")
                     .font(.system(size: 30))
                     .italic()
                     .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .frame(width: 375, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
@@ -416,7 +419,7 @@ struct InfoViewPage6: View {
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         
                         .multilineTextAlignment(.center)
-                        .frame(width: 275, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 300, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     
                     Spacer()
@@ -472,7 +475,7 @@ struct InfoViewPage6: View {
                         VStack {
                             
                             NavigationLink(destination: InfoViewPage6()) {
-                                Text("Let's Add your 1st Friend >")
+                                Text("Let's Add Your 1st Friend >")
                                     .font(.title)
                                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                     .frame(width: 435, height: 50)
