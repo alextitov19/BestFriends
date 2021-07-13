@@ -135,7 +135,7 @@ struct LandingView: View {
                                     } else {
                                         friendIDsToInvite.append(stars[index].id)
                                         friendNamesToInvite.append(stars[index].name)
-                                        stars[index].image = Image(uiImage: UIImage(named: "starBig")!)
+                                        stars[index].image = Image(uiImage: UIImage(named: "starGreen")!)
                                         print("Color change 2")
                                     }
                                 }
