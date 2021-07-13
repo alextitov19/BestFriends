@@ -522,78 +522,90 @@ struct SignUpPage6: View {
                 
                 VStack {
                     
-                    Button("she / her", action: {
+                    Button(action: {
                         didTap1 = true
                         didTap2 = false
                         didTap3 = false
                         didTap4 = false
                         didTap5 = false
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap1 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("she / her")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap1 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("he / him", action: {
+                    Button(action: {
                         didTap1 = false
                         didTap2 = true
                         didTap3 = false
                         didTap4 = false
                         didTap5 = false
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap2 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("he / him")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap2 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("they / them", action: {
+                    Button(action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = true
                         didTap4 = false
                         didTap5 = false
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap3 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("they / them")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap3 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
+                    
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("other", action: {
+                    Button(action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = false
                         didTap4 = true
                         didTap5 = false
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap4 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("other")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap4 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
                     
                     Spacer()
                         .frame(height: 30)
                     
-                    Button("prefer not to say", action: {
+                    Button(action: {
                         didTap1 = false
                         didTap2 = false
                         didTap3 = false
                         didTap4 = false
                         didTap5 = true
                         
-                    })
-                    .frame(width: 300, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
-                    .background(didTap5 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                    .cornerRadius(25)
+                    }) {
+                        Text("Prefer not to say")
+                            .frame(width: 300, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
+                            .background(didTap5 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .cornerRadius(25)
+                    }
+                    
                     
                     Spacer()
                         .frame(height: 120)
@@ -603,9 +615,6 @@ struct SignUpPage6: View {
                 }
                 
                 Button(action: {
-                    
-                    
-                    
                     if didTap1 {
                         pronouns = "SHE"
                     }
