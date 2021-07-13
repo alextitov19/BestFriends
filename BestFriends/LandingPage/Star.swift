@@ -12,13 +12,14 @@ struct Star: View {
     var name: String
 //    @State var isSelected = false
 //    @State var showingActionSheet = false
-    var image = Image(uiImage: UIImage(named: "starBig")!)
+    var image = Image(uiImage: UIImage(named: "starPurple")!)
     
     var body: some View {
         VStack {
             Text(name)
-                .font(.headline)
+                .font(.system(size: 16, weight: .light))
                 .foregroundColor(.white)
+                .offset(y: 10)
                            
             
             image

@@ -117,36 +117,26 @@ struct LandingView: View {
                     .frame(height: 10)
                 
                 ForEach(stars.indices, id: \.self) { index in
-                    VStack {
-                        
-                        HStack {
-                            
-                            Spacer()
-                                .frame(width: 100)
-                            
-                            Button(action: {
-                                print("tap")
-                                if invitingFriends {
-                                    if friendIDsToInvite.contains(stars[index].id) {
-                                        friendIDsToInvite.remove(at: friendIDsToInvite.firstIndex(of: stars[index].id)!)
-                                        friendNamesToInvite.remove(at: friendNamesToInvite.firstIndex(of: stars[index].name)!)
-                                        stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
-                                        print("Color change 1")
-                                    } else {
-                                        friendIDsToInvite.append(stars[index].id)
-                                        friendNamesToInvite.append(stars[index].name)
-                                        stars[index].image = Image(uiImage: UIImage(named: "starGreen")!)
-                                        print("Color change 2")
-                                    }
-                                }
-                            }) {
-                                stars[index]
+                    Button(action: {
+                        print("tap")
+                        if invitingFriends {
+                            if friendIDsToInvite.contains(stars[index].id) {
+                                friendIDsToInvite.remove(at: friendIDsToInvite.firstIndex(of: stars[index].id)!)
+                                friendNamesToInvite.remove(at: friendNamesToInvite.firstIndex(of: stars[index].name)!)
+                                stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
+                                print("Color change 1")
+                            } else {
+                                friendIDsToInvite.append(stars[index].id)
+                                friendNamesToInvite.append(stars[index].name)
+                                stars[index].image = Image(uiImage: UIImage(named: "starGreen")!)
+                                print("Color change 2")
                             }
                         }
-                        
-                        Spacer()
-                            .frame(height: 20)
+                    }) {
+                        stars[index]
                     }
+                    .offset(x: CGFloat.random(in: -140..<140))
+                    .padding(20)
                 }
                 
                 Spacer()
@@ -350,14 +340,14 @@ struct LandingView: View {
     private func inviteClicked() {
         invitingFriends = true
         for index in 0..<stars.count {
-            stars[index].image = Image(uiImage: UIImage(named: "starWhite")!)
+            stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
             
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             invitingFriends = false
             for index in 0..<stars.count {
-                stars[index].image = Image(uiImage: UIImage(named: "starBig")!)
+                stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
                 
             }
             inviteSelectedFriends()
