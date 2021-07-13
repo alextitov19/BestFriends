@@ -133,7 +133,7 @@ struct SignUpPage2: View {
                     VStack {
                         
                         
-                        Text("Add friends w/ QR codes (there is NO user 'Search'), protecting you from unwanted DM's & images.")
+                        Text("You add your 5 BestFriends w/ QR codes, not usernames.")
                             .font(.system(size: 30))
                             .fontWeight(.regular)
                             .foregroundColor(.white)
@@ -212,23 +212,29 @@ struct SignUpPage3: View {
                 .frame(height: 130)
             
             VStack {
-                Text("What username do you want?")
+                Text("We don't have a 'user search' function, protecting you from unwanted DM's & images.")
                     .font(.system(size: 27))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 415)
+                    .frame(height: 360)
+                
+                Text("What username do you want?")
+                    .font(.system(size: 27))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
                 
                 TextField("Username", text: $username)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 300, height: 40, alignment: .center)
-                    .font(.system(size: 14, weight: .light))
+                    .font(.title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .cornerRadius(25)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
+                
                 
                 
                 Spacer()
@@ -247,7 +253,7 @@ struct SignUpPage3: View {
                 NavigationLink("", destination: SignUpPage4(firstName: firstName, lastName: lastName, username: username.lowercased()).environmentObject(sessionManager), isActive: $readyToProceed)
                 
                 Spacer()
-                    .frame(height: 90)
+                    .frame(height: 140)
                 
                 
                 
@@ -402,11 +408,11 @@ struct SignUpPage5: View {
                 Text("Just in case you need to reset your password.")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
-                    .frame(width: 250, height: 100, alignment: .center)
+                    .frame(width: 350, height: 150, alignment: .center)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 415)
+                    .frame(height: 370)
                 
                 
                 
@@ -447,7 +453,7 @@ struct SignUpPage5: View {
                 
                 
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 155)
                 
                 
                 
@@ -667,14 +673,14 @@ struct SignUpPage7: View {
                 Spacer()
                     .frame(height: 100)
                 
-                Text("For your safety, Apple requires us to ask your age?")
+                Text("For your safety, Apple requires us to ask your age.")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .frame(width: 325, height: 150)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 60)
                 
                 DatePicker("", selection: $birthDate, displayedComponents: .date)
                     .datePickerStyle(WheelDatePickerStyle())
@@ -959,16 +965,18 @@ struct SignUpPage9: View {
     
     
     var body: some View {
-        ZStack {
+        ZStack{
+            
+            
             Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
-           
+            VStack {
                 Text("Something just happen and you need to talk to your friends, FAST?")
                     .font(.system(size: 25))
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
                     .frame(width: 400, height: 125)
@@ -991,7 +999,7 @@ struct SignUpPage9: View {
                 
                 Text("Then we send a Push Notificaiton right back to you with exactly when they can talk.")
                     .font(.system(size: 25))
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
                     .frame(width: 400, height: 125)
@@ -1035,6 +1043,8 @@ struct SignUpPage9: View {
                 
                 Spacer()
                     .frame(height: 100)
+          
+                }
             }
         }
     }

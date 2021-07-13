@@ -15,67 +15,49 @@ struct InfoViewPage1: View {
     var body: some View {
         
         ZStack {
-            Image("Transition3")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
                 
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("Welcome to")
-                    .italic() .italic()
-                    .font(.system(size: 25))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 275, height: 35, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("BestFriends")
-                    .font(.system(size: 60))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                
-                Text("the 'positivity' app")
+            
+                Text("Be the first to use new features in BestFriends that your friends don't even know about yet.")
                     .font(.system(size: 30))
+                .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 275, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 325, height: 250, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
-                
-                Spacer()
-                    .frame(height: 30)
-                
-                
-                Text("Because we can't wait until life isn't hard anymore to SMILE💕")
+                Text("WHY?")
                     .font(.system(size: 30))
+                .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 275, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 325, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
-                
+                Text("Because they skipped this Walkthrough 💕")
+                    .font(.system(size: 30))
+                .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 325, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
-                    .frame(height: 225)
+                    .frame(height: 60)
                 
                 VStack {
                     
                     NavigationLink(destination: InfoViewPage2()) {
-                        Text("Find my SMILES >>>")
+                        Text("It takes less than 90 seconds >")
                             .font(.title)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                            .frame(width: 400, height: 50)
-                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .frame(width: 375, height: 50)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
                     }
                     Spacer()
@@ -84,12 +66,12 @@ struct InfoViewPage1: View {
                     HStack {
                         
                         
-                        NavigationLink(destination: SettingsView()) {
+                        NavigationLink(destination: InfoViewPage2()) {
                             Text("Later")
                                 .font(.title)
-                                .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                                .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
                                 .frame(width: 100, height: 30)
-                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                                 .cornerRadius(25)
                             
                             
@@ -130,338 +112,267 @@ struct InfoViewPage2: View {
             
             VStack {
                 
-                HStack {
-                    VStack {
-                        Spacer()
-                            .frame(height: 125)
-                        
-                        Image("Penguin Sticker 32")
-                            .resizable()
-                            .frame(width: 150, height: 150)
-                            .scaledToFill()
-                        
-                    }
-                    
-                    VStack {
-                        ZStack {
-                            Image("ChatBubbleTrans")
-                                .resizable()
-                                .frame(width: 300, height: 175)
-                                .scaledToFill()
-                            
-                            Text("With BestFriends you're never alone - ever again!")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        }
-                        
-                        Spacer()
-                            .frame(height: 75)
-                    }
-                }
-                
-                Text("When entering BestFriends a lightbeam shoots from your phone to everyone, everyhere on BestFriends. That are their lightbeams you see on your landingpage.")
-                    
-                    .font(.system(size: 25))
+            
+                Text("On difficult days your never alone.")
+                    .font(.system(size: 40))
+                .italic()
                     .fontWeight(.regular)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 325, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
+               
+                Spacer()
+                    .frame(height: 40)
+               
+                
+                Text("Upon enter BestFriends a lighbeam is shot from your phone to everyone in the world on the app showing up as a tiny star.")
+                    .font(.system(size: 30))
+                .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 375, height: 220, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 40)
+                
+                Text("And vise-versa their's show up on yours.")
+                    .font(.system(size: 30))
+                .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 325, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 
-                NavigationLink(destination: InfoViewPage3()) {
-                    Text("Next")
-                        .font(.title)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(25)
+                
+                VStack {
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    NavigationLink(destination: InfoViewPage3()) {
+                        Text("That's cool >")
+                            .font(.title)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 250, height: 50)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                    }
+                   
+                    Spacer()
+                        .frame(height: 20)
+                    
+                        }
+                    }
                 }
-                Spacer()
-                    .frame(height: 95)
-                
             }
         }
         
-        
-        
-        
-    }
-}
-
-
-
+    
 
 
 struct InfoViewPage3: View {
     
     var body: some View {
+        
         ZStack {
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
-                HStack {
-                    VStack {
-                        Spacer()
-                            .frame(height: 125)
-                        
-                        Image("Penguin Sticker 38")
-                            .resizable()
-                            .frame(width: 150, height: 150)
-                            .scaledToFill()
-                        
-                    }
-                    VStack {
-                        
-                        ZStack {
-                            
-                            
-                            Image("ChatBubbleTrans")
-                                .resizable()
-                                .frame(width: 300, height: 175)
-                                .scaledToFill()
-                            
-                            Text("Sending out Push Notifications - Tracking down your Friends to chat.")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        }
-                        
-                        Spacer()
-                            .frame(height: 70)
-                    }
-                }
                 
-                Spacer()
-                    .frame(height: 70)
-                
-                Text("On Landing page top icon top-right. Then tap Stars of friends you need to talk to right now!")
-                    
-                    .font(.system(size: 25))
+            
+                Text("BestFriends helps you find your smile.")
+                    .font(.system(size: 40))
+                .italic()
                     .fontWeight(.regular)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
+               
+                Spacer()
+                    .frame(height: 225)
+               
                 
+                Text("Just shake your phone and 3 favorite pics that alway make you smile PopUp! 💕")
+                    .font(.system(size: 30))
+                .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 375, height: 175, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 10)
                 
-                NavigationLink(destination: InfoViewPage4()) {
-                    Text("Next")
-                        .font(.title)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(25)
+            
+                
+                VStack {
+                    Spacer()
+                        .frame(height: 20)
                     
+                    NavigationLink(destination: InfoViewPage4()) {
+                        Text("Next")
+                            .font(.title)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 250, height: 50)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                    }
+                   
+                    Spacer()
+                        .frame(height: 20)
                     
+                        }
+                    }
                 }
-                Spacer()
-                    .frame(height: 75)
-                
             }
         }
         
-        
-        
-    }
-}
-
-
-
-
+    
 
 
 
 
 //***************************************
+
 struct InfoViewPage4: View {
     
     var body: some View {
+        
         ZStack {
-            Image("purpleBackground")
+            Image("SmileNote4")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
-                HStack {
-                    VStack {
-                        Spacer()
-                            .frame(height: 125)
-                        
-                        Image("Penguin2")
-                            .resizable()
-                            .frame(width: 150, height: 150)
-                            .scaledToFill()
-                    }
+                
+            
+                Text("Can't find that special messages a friend sent 2 months ago.")
+                    .font(.system(size: 40))
+                .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+               
+                Spacer()
+                    .frame(height: 175)
+               
+                
+                Text("STOP SCROLLING. We'll have them waiting for you next time we see you.")
+                    .font(.system(size: 30))
+                .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 375, height: 175, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+           
+                
+                VStack {
+                    Spacer()
+                        .frame(height: 20)
                     
-                    VStack {
-                        
-                        ZStack {
-                            
-                            
-                            Image("ChatBubbleTrans")
-                                .resizable()
-                                .frame(width: 300, height: 175)
-                                .scaledToFill()
-                            
-                            Text("ShakingCool - finding smiles everyday")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    NavigationLink(destination: InfoViewPage2()) {
+                        Text("Just long-tap the message >")
+                            .font(.title)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 375, height: 50)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                   
+                  
+                    }
+                
                         }
-                        
-                        Spacer()
-                            .frame(height: 75)
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
+                        }
                     }
                 }
-                
-                Spacer()
-                    .frame(height: 70)
-                
-                Text("Just shake your phone and your 3 favorite pics that always make you smile ... Pop up!")
-                    
-                    .font(.system(size: 25))
-                    .fontWeight(.regular)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                Spacer()
-                    .frame(height: 35)
-                
-                
-                Text(" When a friend adds you to BestFrineds send them a pic you want them to put in their ShakingCool.")
-                    
-                    .font(.system(size: 25))
-                    .fontWeight(.regular)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                Spacer()
-                    .frame(height: 50)
-                
-                NavigationLink(destination: InfoViewPage5()) {
-                    Text("Next")
-                        .font(.title)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(25)
-                    
-                    
-                }
-                
-                Spacer()
-                    .frame(height: 75)
             }
-        }
-    }
-}
+        
+        
+    
 
 
 
+//***************************************
 
-
-// ************************************************
 struct InfoViewPage5: View {
     
     var body: some View {
         
         ZStack {
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
-                HStack {
-                    VStack {
-                        Spacer()
-                            .frame(height: 125)
-                        
-                        Image("Penguin1")
-                            .resizable()
-                            .frame(width: 150, height: 150)
-                            .scaledToFill()
-                    }
-                    
-                    VStack {
-                        ZStack {
-                            Image("ChatBubbleTrans")
-                                .resizable()
-                                .frame(width: 300, height: 175)
-                                .scaledToFill()
-                            
-                            Text("SmileNotes - can't find that 'special' message.")
-                                .italic()
-                                .font(.system(size: 20))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 200, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        }
-                        
-                        Spacer()
-                            .frame(height: 75)
-                    }
-                }
                 
-                Spacer()
-                    .frame(height: 70)
-                
-                Text("STOP SCROLLING. Just long-tap special messages when you get them. We save them for the next time we see you.")
-                    
-                    .font(.system(size: 25))
-                    .fontWeight(.regular)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .frame(width: 385, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                Spacer()
-                    .frame(height: 50)
-                
-                
-                NavigationLink(destination: InfoViewPage6()) {
-                    Text("Next")
-                        .font(.title)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(25)
-                }
-                Spacer()
-                    .frame(height: 95)
-                
-            }
             
+                Text("Just had a huge fight your your friend?")
+                    .font(.system(size: 40))
+                .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+               
+                Spacer()
+                    .frame(height: 40)
+               
+                
+                Text("Select 'BlueMode' unlocking special features helping you fix this mess.")
+                    .font(.system(size: 30))
+                .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 375, height: 225, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                Spacer()
+                    .frame(height: 10)
+                
+             
+                
+                VStack {
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    NavigationLink(destination: InfoViewPage2()) {
+                        Text("Next")
+                            .font(.title)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 250, height: 50)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                    }
+                   
+                    Spacer()
+                        .frame(height: 20)
+                    
+                        }
+                    }
+                }
+            }
         }
         
-        
-        
-        
-    }
-}
+    
+
+
+// ************************************************
 
 
 
@@ -658,3 +569,4 @@ struct InfoViewPags_Previews : PreviewProvider {
 
 
 
+    
