@@ -371,7 +371,6 @@ struct InfoViewPage6: View {
                         
                         .font(.system(size: 35))
                         .fontWeight(.regular)
-                        
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
                         .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)

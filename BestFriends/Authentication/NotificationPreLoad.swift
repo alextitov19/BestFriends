@@ -31,84 +31,113 @@ struct NotificationPreLoad: View {
             
             VStack {
                 
-                Text("What's up? I can ...")
-                    .italic()
-                    .font(.system(size: 40))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 375, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//                Text("")
+//                    .italic()
+//                    .font(.system(size: 40))
+//                    .fontWeight(.regular)
+//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                    .multilineTextAlignment(.center)
+//                    .frame(width: 375, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Button(action: {
                     sessionManager.chat(room: RoomDataSource().getRoom(id: roomID))
                     setTimer(minutes: 0)
                 }) {
+                    
+                    
                     Text("Chat now!")
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9338757992, blue: 0, alpha: 1)))
-                        .font(.system(size: 60))
-                        .bold()
+                       
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .frame(width: 300, height: 75)
+                        .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                        .cornerRadius(50)
+                        
+                        
+
                 }
-                .padding(20)
+                .padding(30)
+                
+                Text("OR IN ...")
+                    
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer()
-                    .frame(height: 35)
+                    .frame(height: 30)
                 
                 Button(action: {
                     setTimer(minutes: 5)
                 }) {
-                    Text("Give me 5 minutes")
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
-                        .font(.system(size: 27))
-                        .bold()
+                    Text("5 min.")
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
+                        
                 }
                 .padding(20)
                 
                 Button(action: {
                     setTimer(minutes: 10)
                 }) {
-                    Text("10 minutes")
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
-                        .font(.system(size: 27))
-                        .bold()
+                    Text("10 min.")
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
                 }
                 .padding(20)
                 
-                Button(action: {
-                    setTimer(minutes: 15)
-                }) {
-                    Text("15 minutes")
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
-                        .font(.system(size: 27))
-                        .bold()
-                }
-                .padding(20)
+//                Button(action: {
+//                    setTimer(minutes: 15)
+//                }) {
+//                    Text("15 min.")
+//                        .font(.title)
+//                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                        .frame(width: 200, height: 50)
+//                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+//                        .cornerRadius(25)
+//                }
+//                .padding(20)
                 
                 Button(action: {
                     setTimer(minutes: 30)
                 }) {
-                    Text("30 minutes")
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
-                        .font(.system(size: 27))
-                        .bold()
+                    Text("30 min.")
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
                 }
                 .padding(20)
                 
                 Button(action: {
                     setTimer(minutes: 60)
                 }) {
-                    Text("Give me an hour")
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.6852545142, blue: 1, alpha: 1)))
-                        .font(.system(size: 27))
-                        .bold()
+                    Text("1 hour")
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
                 }
                 .padding(20)
                 
                 Button(action: {
                     setTimer(minutes: -1)
                 }) {
-                    Text("Sorry, I'm tied up for a while.")
+                    Text("Can't talk now")
+                        .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 30))
-                        .bold()
+                        .frame(width: 200, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
                 }
                 .padding(20)
             }

@@ -17,7 +17,7 @@ struct ConfirmationView: View {
     
     var body: some View {
         ZStack {
-            Image("Earth")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
