@@ -110,7 +110,11 @@ final class SessionManager: ObservableObject {
         }
     }
     
-    func login(username: String, password: String) {
+    func login(username: String, password: String) -> Bool {
+        var foo = false
+        let group = DispatchGroup()
+        group.enter()
+        
         _ = Amplify.Auth.signIn(
             username: username,
             password: password
@@ -124,11 +128,17 @@ final class SessionManager: ObservableObject {
                         self?.getCurrentAuthUser()
                     }
                 }
+                foo = true
+                group.leave()
                 
             case .failure(let error):
                 print("Login error:", error)
+                foo = false
+                group.leave()
             }
         }
+        group.wait()
+        return foo
     }
     
     func signOut() {

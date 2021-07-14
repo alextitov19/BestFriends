@@ -14,6 +14,7 @@ struct LoginView: View {
     
     @State var username = ""
     @State var password = ""
+    @State var isErrorHidden = true
     
     var body: some View {
         NavigationView {
@@ -30,7 +31,6 @@ struct LoginView: View {
                         .foregroundColor(.white)
                         .frame(width: 225, height: 50)
                         .multilineTextAlignment(.center)
-                    
                 
                     VStack {
                         Spacer()
@@ -63,7 +63,11 @@ struct LoginView: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        
+                        Text("Double check the credentails")
+                            .font(.system(size: 28, weight: .light))
+                            .foregroundColor(.red)
+                            .multilineTextAlignment(.center)
+                            .isHidden(isErrorHidden)
                         
                         
                         Spacer()
@@ -73,10 +77,13 @@ struct LoginView: View {
                         
                         
                         Button(action: {
-                            sessionManager.login(
+                            let value = sessionManager.login(
                                 username: username,
                                 password: password
                             )
+                            if value == false {
+                                isErrorHidden = false
+                            }
                         }) {
                             Text("Login")
                                 .frame(width: 150, height: 50, alignment: .center)
@@ -84,6 +91,7 @@ struct LoginView: View {
                                 .font(.title)
                                 .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                 .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
                         
                     }
