@@ -73,9 +73,6 @@ struct LoginView: View {
                         Spacer()
                             .frame(height: 25)
                         
-                        
-                        
-                        
                         Button(action: {
                             let value = sessionManager.login(
                                 username: username,
