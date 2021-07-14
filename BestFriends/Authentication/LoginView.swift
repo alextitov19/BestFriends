@@ -40,6 +40,7 @@ struct LoginView: View {
                         TextField("Username", text: $username)
                             .frame(width: 225, height: 45, alignment: .center)
                             .multilineTextAlignment(.center)
+                            .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                             .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .cornerRadius(25)
@@ -53,6 +54,7 @@ struct LoginView: View {
                             .frame(width: 225, height: 45, alignment: .center)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                            .font(.title)
                             .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .cornerRadius(25)
                             .disableAutocorrection(true)
@@ -79,6 +81,7 @@ struct LoginView: View {
                             Text("Login")
                                 .frame(width: 150, height: 50, alignment: .center)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.title)
                                 .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                 .cornerRadius(25)
                         }
