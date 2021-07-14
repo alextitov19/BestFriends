@@ -38,7 +38,7 @@ struct InfoViewPage1: View {
                     Spacer()
                         .frame(height: 300)
                     
-                    Text("It only takes 90 seconds :)")
+                    Text("It only takes 30 seconds :)")
                         .font(.system(size: 25))
                         .italic()
                         .fontWeight(.regular)
@@ -49,7 +49,7 @@ struct InfoViewPage1: View {
                         .frame(height: 20)
                     
                     NavigationLink(destination: InfoViewPage2()) {
-                        Text("Next")
+                        Text("Ok, fine.")
                             .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .frame(width: 200, height: 50)
@@ -119,7 +119,7 @@ struct InfoViewPage2: View {
                         .frame(height: 20)
                     
                     NavigationLink(destination: InfoViewPage3()) {
-                        Text("That's cool >")
+                        Text("That's cool")
                             .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .frame(width: 250, height: 50)
@@ -224,43 +224,46 @@ struct InfoViewPage4: View {
     var body: some View {
         
         ZStack {
-            Image("SmileNote4")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
-                
-                
-                Text("Can't find that special messages a friend sent 2 months ago.")
+                Text("SmileNotes")
                     .font(.system(size: 40))
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 375, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                Text("Can't find that message that made you smile from 2 months ago.")
+                    .font(.system(size: 35))
                     .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 375, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 150)
                 
                 
-                Text("STOP SCROLLING. We'll have them waiting for you next time we see you.")
+                Text("STOP SCROLLING. We saved them in a special vault for you.")
                     .font(.system(size: 30))
-                    .italic()
                     .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .frame(width: 275, height: 175, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 
                 
                 VStack {
-                    Spacer()
-                        .frame(height: 150)
+                
                     
                     NavigationLink(destination: InfoViewPage5()) {
-                        Text("Long-tap saves the message >")
+                        Text("Long-tap to save message >")
                             .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .frame(width: 400, height: 50)
@@ -352,6 +355,8 @@ struct InfoViewPage5: View {
 
 // ************************************************
 
+
+
 struct InfoViewPage6: View {
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -364,137 +369,97 @@ struct InfoViewPage6: View {
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
-                
-                
+
+
                 VStack {
-                    Text("How do I Add a Friend?")
-                        
-                        .font(.system(size: 35))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
+                        Text("Adding Your Friends.")
+                            
+                            .font(.system(size: 40))
+                            .fontWeight(.regular)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 20)
                     
                     
-                    Text("Step 1")
-                        
-                        .font(.system(size: 22))
-                        .fontWeight(.regular)
-                        
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
-                    
-                    Text("Select [Get my QR code]")
-                        
-                        .font(.system(size: 22))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
-                    
-                    Spacer()
-                        .frame(height: 15)
-                    
-                    
-                    Text("Step 2")
-                        
-                        .font(.system(size: 22))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
-                        
-                        .multilineTextAlignment(.center)
-                        .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
-                    Text("Screen-shot your QR code and text image to your friend.")
-                        
-                        .font(.system(size: 22))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        
-                        .multilineTextAlignment(.center)
-                        .frame(width: 300, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    
-                    
-                    Spacer()
-                        .frame(height: 15)
-                    
-                    VStack {
-                        
-                        Text("Step 3")
+                    HStack {
+                          
+                      
+                            Text("Tap this icon on 'homepage' >")
+                                .italic()
+                                .font(.system(size: 27))
+                                .fontWeight(.regular)
+                                .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
+                                .multilineTextAlignment(.center)
+                                .frame(width: 200, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
-                            .font(.system(size: 22))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
-                            
-                            .multilineTextAlignment(.center)
-                            .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                       
                         
-                        Text("Ask friend to save QR image to their gallery.")
-                            
-                            .font(.system(size: 22))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            
-                            .multilineTextAlignment(.center)
-                            .frame(width: 275, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        Image("inviteWhite")
+                            .resizable()
+                            .frame(width: 45, height: 45)
+                            .scaledToFill()
                         
-                        
-                        
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
-                        
-                        Text("Step 4")
-                            
-                            .font(.system(size: 22))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
-                            
-                            .multilineTextAlignment(.center)
-                            .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                        Text("Ask friend to select [My Gallery] and tap the image of your QR code.")
-                            
-                            .font(.system(size: 22))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 375, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                        Spacer()
-                            .frame(height: 5)
-                        
-                        VStack {
-                            
-                            NavigationLink(destination: InfoViewPage6()) {
-                                Text("Let's Add Your 1st Friend >")
-                                    .font(.title)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                                    .frame(width: 435, height: 50)
-                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                    .cornerRadius(25)
-                                
-                                
-                            }
-                            
-                            
-                            Spacer()
-                                .frame(height: 100)
-                            
-                        }
                     }
-                }
+                        
+                        Text("(Follow instructions on Pop up)")
+                            
+                            .font(.system(size: 25))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
+                        
+                        
+                      
+                    
+                    Spacer()
+                        .frame(height: 275)
+                    
+                  
+                   
+                    Text("(That's it, you're done.)")
+                        .italic()
+                        .font(.system(size: 25))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    NavigationLink(destination: SettingsView()) {
+                        Text("Let's get started >")
+                            .font(.title)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 350, height: 50)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                     
+                      
+                    }
             }
         }
     }
 }
+
+}
+
+
+struct InfoViewPags_Previews : PreviewProvider {
+    static var previews: some View {
+        InfoViewPage1()
+        InfoViewPage2()
+        InfoViewPage3()
+        InfoViewPage4()
+        InfoViewPage5()
+        InfoViewPage6()
+        
+    }
+}
+
+
+
 
 //struct InfoViewPage6: View {
 //
@@ -669,24 +634,158 @@ struct InfoViewPage6: View {
 
 // ************************************************
 
-struct InfoViewPags_Previews : PreviewProvider {
-    static var previews: some View {
-        InfoViewPage1()
-        InfoViewPage2()
-        InfoViewPage3()
-        InfoViewPage4()
-        InfoViewPage5()
-        InfoViewPage6()
-    }
-}
 
 
-
-
-
-
-
-
-
-
-
+//
+//struct InfoViewPage6: View {
+//
+//    @EnvironmentObject var sessionManager: SessionManager
+//
+//    var body: some View {
+//        NavigationView{
+//            ZStack {
+//
+//                Image("SignUpPinBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//
+//
+//                VStack {
+//                    Text("How do I Add a Friend?")
+//
+//                        .font(.system(size: 35))
+//                        .fontWeight(.regular)
+//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                        .multilineTextAlignment(.center)
+//                        .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//
+//                    Spacer()
+//                        .frame(height: 15)
+//
+//
+//                    Text("Step 1")
+//
+//                        .font(.system(size: 22))
+//                        .fontWeight(.regular)
+//
+//                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+//                        .multilineTextAlignment(.center)
+//                        .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//
+//
+//                    Text("Select [Get my QR code]")
+//
+//                        .font(.system(size: 22))
+//                        .fontWeight(.regular)
+//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                        .multilineTextAlignment(.center)
+//                        .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//
+//
+//                    Spacer()
+//                        .frame(height: 15)
+//
+//
+//                    Text("Step 2")
+//
+//                        .font(.system(size: 22))
+//                        .fontWeight(.regular)
+//                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+//
+//                        .multilineTextAlignment(.center)
+//                        .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//
+//                    Text("Screen-shot your QR code and text image to your friend.")
+//
+//                        .font(.system(size: 22))
+//                        .fontWeight(.regular)
+//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//
+//                        .multilineTextAlignment(.center)
+//                        .frame(width: 300, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//
+//
+//                    Spacer()
+//                        .frame(height: 15)
+//
+//                    VStack {
+//
+//                        Text("Step 3")
+//
+//                            .font(.system(size: 22))
+//                            .fontWeight(.regular)
+//                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+//
+//                            .multilineTextAlignment(.center)
+//                            .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//
+//                        Text("Ask friend to save QR image to their gallery.")
+//
+//                            .font(.system(size: 22))
+//                            .fontWeight(.regular)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//
+//                            .multilineTextAlignment(.center)
+//                            .frame(width: 275, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//
+//
+//
+//
+//                        Spacer()
+//                            .frame(height: 15)
+//
+//
+//                        Text("Step 4")
+//
+//                            .font(.system(size: 22))
+//                            .fontWeight(.regular)
+//                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+//
+//                            .multilineTextAlignment(.center)
+//                            .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//
+//                        Text("Ask friend to select [My Gallery] and tap the image of your QR code.")
+//
+//                            .font(.system(size: 22))
+//                            .fontWeight(.regular)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .multilineTextAlignment(.center)
+//                            .frame(width: 375, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//
+//                        Spacer()
+//                            .frame(height: 5)
+//
+//                        VStack {
+//
+//                            NavigationLink(destination: InfoViewPage6()) {
+//                                Text("Let's Add Your 1st Friend >")
+//                                    .font(.title)
+//                                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                                    .frame(width: 435, height: 50)
+//                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+//                                    .cornerRadius(25)
+//
+//
+//                            }
+//
+//
+//                            Spacer()
+//                                .frame(height: 100)
+//
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
