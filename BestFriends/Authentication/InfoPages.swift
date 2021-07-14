@@ -230,7 +230,7 @@ struct InfoViewPage4: View {
                 .scaledToFill()
             
             VStack {
-                Text("SmileNotes")
+                Text("SmileVault")
                     .font(.system(size: 40))
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
