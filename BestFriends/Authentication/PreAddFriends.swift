@@ -19,42 +19,29 @@ struct PreAddFriends: View {
         NavigationView{
             ZStack {
                 
-                Image("purpleBackground")
+                Image("SignUpPinBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
                 
                 VStack {
-                    Text("QR Codes _ KEEP TROLLS OUT!")
-                        
-                        .font(.system(size: 25))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 385, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    Spacer()
-                        .frame(height: 10)
+                  
+                   
                     
-
-                    
-                        Text("How to Add Friends?")
+                        Text("Adding Your Friends.")
                             
-                            .font(.system(size: 42))
+                            .font(.system(size: 40))
                             .fontWeight(.regular)
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 20)
                     
                     
                     HStack {
                           
-                         
-                          
-                          
-                            
-                            
+                      
                             Text("Tap this icon on the next page >")
                                 .italic()
                                 .font(.system(size: 27))
@@ -70,15 +57,43 @@ struct PreAddFriends: View {
                             .frame(width: 45, height: 45)
                             .scaledToFill()
                         
+                    }
                         
-                        }
+                        Text("(Follow steps on Pop up)")
+                            
+                            .font(.system(size: 25))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
+                        
+                        
+                      
                     
                     Spacer()
-                        .frame(height: 55)
+                        .frame(height: 300)
                     
+                  
+                   
+                    Text("(You're done)")
+                        .italic()
+                        .font(.system(size: 25))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
+                    NavigationLink(destination: InfoViewPage3()) {
+                        Text("Got it.")
+                            .font(.title)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 250, height: 50)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                     
                     
-                }
+                    }
             }
         }
     }
@@ -93,3 +108,4 @@ struct PreAddFriends: View {
             
         }
   }
+}
