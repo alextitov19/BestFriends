@@ -11,12 +11,11 @@ import SwiftUI
 struct ChangeEmail: View {
     
     @State private var email: String = ""
-    @State private var readyToProceed = false
+    @State private var textHidden = true
     
     var body: some View {
         
         ZStack {
-            
             Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
@@ -27,10 +26,13 @@ struct ChangeEmail: View {
                 Text("Update Email")
                     .font(.system(size: 35))
                     .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
+                Text("Email updated")
+                    .font(.system(size: 35))
+                    .foregroundColor(.green)
+                    .isHidden(textHidden)
                 
                 Spacer()
                     .frame(height: 50)
@@ -52,7 +54,8 @@ struct ChangeEmail: View {
                 Button(action: {
                     if(email != "") {
                         UserManager().updateEmail(email: email)
-                        readyToProceed = true
+                        textHidden = false
+                        
                     }
                 }) {
                     Text("Submit")
@@ -67,7 +70,6 @@ struct ChangeEmail: View {
                 Spacer()
                     .frame(height: 50)
                 
-                NavigationLink(destination: ConfirmEmail(), isActive: $readyToProceed) { EmptyView() }
             }
         }
     }
