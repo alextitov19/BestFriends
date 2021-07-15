@@ -178,7 +178,7 @@ struct SettingsView: View {
                             
                             
                             NavigationLink(
-                                destination: AddFriends().environmentObject(sessionManager),
+                                destination: PreAddFriends().environmentObject(sessionManager),
                                 label: {
                                     Text("Add Friends")
                                 })

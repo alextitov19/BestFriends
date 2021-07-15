@@ -84,7 +84,7 @@ struct PreAddFriends: View {
                         .multilineTextAlignment(.center)
                         .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
-                    NavigationLink(destination: EmptyView()) {
+                    NavigationLink(destination: AddFriends()) {
                         Text("Got it.")
                             .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
