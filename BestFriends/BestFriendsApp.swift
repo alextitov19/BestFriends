@@ -77,6 +77,9 @@ struct BestFriendsApp: App {
             case .infoPages(let username, let password):
                 InfoViewPage1(username: username, password: password)
                     .environmentObject(sessionManager)
+            case .loading:
+                Loading()
+                    .environmentObject(sessionManager)
             }
             
         }

@@ -106,7 +106,7 @@ struct SettingsView: View {
                             .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                         NavigationLink(
-                            destination: SettingsView(),
+                            destination: SettingsInfoViewPage1().environmentObject(sessionManager),
                             label: {
                                 Text("BestFriends")
                             })
@@ -407,15 +407,8 @@ struct SettingsView: View {
                                                 )
                                             VStack {
                                                 
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
                                                 Spacer()
                                                     .frame(height: 45)
-                                                
                                                 
                                                 Text("Outside Resources")
                                                     
@@ -426,7 +419,6 @@ struct SettingsView: View {
                                                     .multilineTextAlignment(.center)
                                                     .frame(width: 385, height: 50, alignment: .center
                                                     )
-                                                
                                                 
                                                 Link("In crisis? Anonymously chat w/ trained teens on 'TeenLine'", destination: URL(string: "https://teenlineonline.org/")!)
                                                     .frame(width: 325, height: 50)
