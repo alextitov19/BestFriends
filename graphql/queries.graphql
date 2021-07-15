@@ -150,6 +150,7 @@ query GetUser($id: ID!) {
     BMRoom
     notificationsBM
     notificationsLP
+    chatFontSize
     createdAt
     updatedAt
   }
@@ -191,6 +192,7 @@ query ListUsers(
       BMRoom
       notificationsBM
       notificationsLP
+      chatFontSize
       createdAt
       updatedAt
     }

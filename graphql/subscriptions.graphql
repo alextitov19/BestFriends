@@ -184,6 +184,7 @@ subscription OnCreateUser {
     BMRoom
     notificationsBM
     notificationsLP
+    chatFontSize
     createdAt
     updatedAt
   }
@@ -229,6 +230,7 @@ subscription OnUpdateUser {
     BMRoom
     notificationsBM
     notificationsLP
+    chatFontSize
     createdAt
     updatedAt
   }
@@ -274,6 +276,7 @@ subscription OnDeleteUser {
     BMRoom
     notificationsBM
     notificationsLP
+    chatFontSize
     createdAt
     updatedAt
   }
