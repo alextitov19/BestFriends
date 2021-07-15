@@ -797,4 +797,7 @@ struct InfoViewPags_Previews : PreviewProvider {
 //
 //
 //
-//
+// Image("Penguin Sticker 24")
+//                            .resizable()
+//                            .frame(width: 150, height: 150)
+//                            .scaledToFill()
