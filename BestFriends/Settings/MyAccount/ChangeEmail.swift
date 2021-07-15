@@ -17,7 +17,7 @@ struct ChangeEmail: View {
         
         ZStack {
             
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -25,12 +25,15 @@ struct ChangeEmail: View {
             VStack {
                 
                 Text("Update Email")
-                    .font(.system(size: 30))
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                
                 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 50)
                 
                 TextField("Enter NEW Email", text: $email)
                     .multilineTextAlignment(.center)
@@ -39,6 +42,7 @@ struct ChangeEmail: View {
                     .font(.title)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .cornerRadius(20)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
                 
@@ -57,7 +61,7 @@ struct ChangeEmail: View {
                         .frame(width: 200, height: 50)
                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
-                    
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
                 
                 Spacer()

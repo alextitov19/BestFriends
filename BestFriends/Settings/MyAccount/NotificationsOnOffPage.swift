@@ -23,37 +23,43 @@ struct NotificationsOnOffPage: View {
         
         ZStack {
             
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
                 Text("Manage Notifications")
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
-                    .font(.title)
+                    .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 Spacer().frame(height: 50)
                 
                 
                 Text("Hold Up! Here's the Dealio ... ")
                     .frame(width: 415, height: 30, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0.4185581803, alpha: 1)))
+                    .cornerRadius(30)
+                    .font(.system(size: 30)
+                    .italic())
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                
+                
+                
+                Spacer().frame(height: 20)
+                
+                Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off Notifications we can NOT find your friends in a timely manner.")
+                    .frame(width: 375, height: 200, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .cornerRadius(25)
-                    .font(.system(size: 25).italic())
+                    .font(.system(size: 27)
+                    .italic())
                 
-                Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off 'Homepage Notifications' we can NOT find your friends in a timely manner.")
-                    .frame(width: 415, height: 200, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
-                    .cornerRadius(25)
-                    .font(.system(size: 25).italic())
-                
-                
-                
-                
-                
-                
-                
+               
                 VStack {
                     
                     
@@ -68,7 +74,7 @@ struct NotificationsOnOffPage: View {
                     
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 20)
                     
                     
                     Toggle("BlueMode Notifications", isOn: $blueChatNotifications)
@@ -81,7 +87,7 @@ struct NotificationsOnOffPage: View {
                     
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 30)
                     
                     Button(action: {
                         var user = UserDataSource().getCurrentUser()
@@ -90,11 +96,14 @@ struct NotificationsOnOffPage: View {
                         UserDataSource().updateUser(user: user)
                     }) {
                         Text("Save Changes")
-                            .frame(width: 415, height: 200, alignment: .center)
-                            .foregroundColor(Color(#colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)))
+                            .font(.title)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                            .frame(width: 225, height: 50)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     }
-                    .background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                    
                     
                 }
             }

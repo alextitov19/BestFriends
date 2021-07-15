@@ -191,21 +191,7 @@ struct SettingsView: View {
                           
                             Spacer().frame(height: 20)
                             
-                            
-                            NavigationLink(
-                                destination: AddFriends().environmentObject(sessionManager),
-                                label: {
-                                    Text("Block Friends")
-                                })
-                                .frame(width: 225, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
-                           
-                            
-                            
+                         
                             VStack {
                            
                                 Spacer().frame(height: 20)
