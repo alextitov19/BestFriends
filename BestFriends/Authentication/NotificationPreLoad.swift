@@ -24,7 +24,7 @@ struct NotificationPreLoad: View {
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()

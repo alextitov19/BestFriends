@@ -20,7 +20,7 @@ struct SmieNotePopover: View {
     
     var body: some View {
         ZStack {
-            Image("SmileNote4")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -28,11 +28,50 @@ struct SmieNotePopover: View {
             if smileNotes.count > 0 {
                 SmileNotesCard(smileNote: smileNotes.randomElement()!, hidden: false)
             } else {
-                Text("No SmileNotes yet, you should add some!")
-                    .foregroundColor(.white)
+               
+           
+            
+                VStack {
+                    
+                    Spacer()
+                        .frame(height: 5)
+                    
+                    
+                    Text("*Message for users page*")
+                        .font(.system(size: 20))
+                        .italic()
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                    
+                    Spacer()
+                        .frame(height: 25)
+                    
+                    
+                    Text("BlueMode coming soon!")
+                        .font(.system(size: 65))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                     
+                    
+                    
+                    
+                    
+                }
+            
+            
+            
             }
             
         }
     }
 }
 
+
+
+
+struct SmieNotePopover_Previews : PreviewProvider {
+    static var previews: some View {
+        
+        SmieNotePopover()
+    }
+}
