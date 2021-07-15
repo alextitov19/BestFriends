@@ -171,4 +171,4 @@ struct AddFriends: View {
         //    )
 
 }
-}
+
