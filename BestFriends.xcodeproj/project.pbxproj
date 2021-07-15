@@ -950,7 +950,6 @@
 				7AC0DA9B262BAF3B007FC643 /* UserManager.swift */,
 				7AC8A23E26578C3E001812EF /* LocationManager.swift */,
 				CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */,
-				CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -1107,6 +1106,7 @@
 		D15CCD6D2647A10100BFE179 /* ManageMyFriends */ = {
 			isa = PBXGroup;
 			children = (
+				CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */,
 				CF356D312674E3F100BCF572 /* AddFriends.swift */,
 				D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */,
 				D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */,
