@@ -18,6 +18,7 @@ enum AppState {
     case smileNotes
     case chat(room: Room)
     case infoPages(username: String, password: String)
+    case loading
 }
 
 final class SessionManager: ObservableObject {
@@ -43,6 +44,10 @@ final class SessionManager: ObservableObject {
         appState = .settings
     }
     
+    func showLoading() {
+        appState = .loading
+    }
+    
     func showSmileNotes() {
         appState = .smileNotes
     }
@@ -58,6 +63,8 @@ final class SessionManager: ObservableObject {
     func showInfoPages(username: String, password: String) {
         appState = .infoPages(username: username, password: password)
     }
+    
+    
     
     func signUp(username: String, email: String, password: String) {
         let attributes = [AuthUserAttribute(.email, value: email)]

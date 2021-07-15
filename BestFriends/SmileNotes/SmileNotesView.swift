@@ -23,7 +23,6 @@ struct SmileNotesView: View {
         ZStack {
             Image("smileNotesCircles")
                 .resizable()
-//                .rotationEffect(Angle(degrees: 90))
                 .scaledToFill()
                 .ignoresSafeArea()
             

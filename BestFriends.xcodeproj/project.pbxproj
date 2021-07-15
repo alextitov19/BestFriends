@@ -234,6 +234,8 @@
 		7A417EC8265ED52900E95364 /* AdDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417EC7265ED52900E95364 /* AdDataSource.swift */; };
 		7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417ECB265F236700E95364 /* AdPlayerView.swift */; };
 		7A4B9B5E266FD00A00EAF3B9 /* EnrichHER.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7A4B9B5D266FD00A00EAF3B9 /* EnrichHER.m4v */; };
+		7A4E32B526A0783300202BB7 /* SettingsInfoPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E32B426A0783300202BB7 /* SettingsInfoPages.swift */; };
+		7A4E32B726A079F200202BB7 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E32B626A079F200202BB7 /* Loading.swift */; };
 		7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */; };
 		7A554889A8EB6FE945CC3031 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
@@ -609,6 +611,8 @@
 		7A417EC7265ED52900E95364 /* AdDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDataSource.swift; sourceTree = "<group>"; };
 		7A417ECB265F236700E95364 /* AdPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdPlayerView.swift; sourceTree = "<group>"; };
 		7A4B9B5D266FD00A00EAF3B9 /* EnrichHER.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = EnrichHER.m4v; sourceTree = "<group>"; };
+		7A4E32B426A0783300202BB7 /* SettingsInfoPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInfoPages.swift; sourceTree = "<group>"; };
+		7A4E32B626A079F200202BB7 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolFullScreenView.swift; sourceTree = "<group>"; };
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
 		7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundAnimation.mp4; sourceTree = "<group>"; };
@@ -849,6 +853,7 @@
 				7A6A4D00262B865D00561D87 /* Assets */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7AED44FB26473F7100944708 /* AppDelegate.swift */,
+				7A4E32B626A079F200202BB7 /* Loading.swift */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
 				7AF35CB32699EB6700A396CE /* Helper.swift */,
@@ -923,6 +928,7 @@
 				D15CCD6526473E6700BFE179 /* MyAccount */,
 				D15CCD6D2647A10100BFE179 /* ManageMyFriends */,
 				D15777A2264DB7FD00B6551A /* BetaTesters.swift */,
+				7A4E32B426A0783300202BB7 /* SettingsInfoPages.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -1323,6 +1329,7 @@
 				7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */,
 				D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */,
 				7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */,
+				7A4E32B526A0783300202BB7 /* SettingsInfoPages.swift in Sources */,
 				D157779B264D086000B6551A /* SmileNotesView.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */,
@@ -1614,6 +1621,7 @@
 				D3542D4F0D5264529489E630 /* Message+Schema.swift in Sources */,
 				730BA854F269388B205B5CEB /* Room.swift in Sources */,
 				D24DB9F6AABE64EE3AE01DA5 /* User+Schema.swift in Sources */,
+				7A4E32B726A079F200202BB7 /* Loading.swift in Sources */,
 				743240188D2F80EA960D3003 /* User.swift in Sources */,
 				119A92E074AD98F090DA5999 /* AmplifyModels.swift in Sources */,
 				FCBE4C68E5132AEFFADA439D /* ManagementDocument+Schema.swift in Sources */,
