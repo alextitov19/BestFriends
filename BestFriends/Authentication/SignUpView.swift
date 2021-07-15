@@ -1083,7 +1083,8 @@ struct SignUpPage9: View {
                 
                 Button(action: {
                     guard let exposedLocation = self.locationManager.exposedLocation else {
-                        print("*** Error in \(#function): exposedLocation is nil")
+                        print("User denied location")
+                        readyToProceed = true
                         return
                     }
                     
@@ -1102,7 +1103,7 @@ struct SignUpPage9: View {
                         }
                     }
                     
-                    readyToProceed = true
+                    
                 }) {
                     Text("Next")
                         .font(.title)
