@@ -54,7 +54,7 @@ struct BestFriendsApp: App {
                 LoginView()
                     .environmentObject(sessionManager)
             case .signUp:
-                SignUpPage1()
+                SettingsView()
                     .environmentObject(sessionManager)
             case .confirmationCode(let username, let password):
                 ConfirmationView(username: username, password: password)

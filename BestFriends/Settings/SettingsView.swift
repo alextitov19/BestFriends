@@ -15,7 +15,7 @@ struct SettingsView: View {
         NavigationView {
             ZStack {
                 
-                Image("purpleBackground")
+                Image("SignUpPinBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
@@ -23,26 +23,86 @@ struct SettingsView: View {
                 
                 VStack {
                     ScrollView {
+                        Spacer().frame(height: 50)
+                     
                         
-                        Text("Settings")
-                            .font(.system(size: 50))
-                            .fontWeight(.ultraLight)
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        VStack {
+                            
+                            Text("Settings")
+                                .font(.system(size: 50))
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.center)
+                                .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                           
+                            Spacer().frame(height: 30)
+                          
+                            
+                            Text("We'd Love to Hear from You")
+                                
+                                .font(.system(size: 32))
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .multilineTextAlignment(.center)
+                                .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            Spacer().frame(height: 20)
+                            
+                       Link("User Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/211808350213142")!)
+                        .frame(width: 225, height: 50)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                        )
+                            
+                            Spacer().frame(height: 20)
+                            
+                            Link("BlueMode Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/211898588668178")!)
+                             .frame(width: 225, height: 50)
+                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                             .overlay(
+                                 RoundedRectangle(cornerRadius: 25)
+                                     .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                             )
                         
-                        Text("BestFriends: Because we can't wait until life isn't hard anymore to SMILE💕")
-                            .font(.system(size: 22))
-                            .italic()
-                            .fontWeight(.regular)
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            
+                            Spacer().frame(height: 30)
+                        }
                         
-                        Spacer().frame(height: 40)
+                        VStack {
+                            
+                            Text("Join BestFriends Crew")
+                                
+                                .font(.system(size: 32))
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .multilineTextAlignment(.center)
+                                .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                      
+                            NavigationLink(
+                                destination: BlueModePage1(),
+                                label: {
+                                    Text("Be 1st to see new features")
+                                })
+                                .frame(width: 225, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                )
+                            
+                            Spacer().frame(height: 30)
+                            
+                            
+                            
+                            
+                            
+                        }
                         
-                        
-                        Text("BestFriend Demo & Setup")
+                        Text("Walk-throughs")
                             .font(.system(size: 32))
                             .fontWeight(.ultraLight)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -50,67 +110,74 @@ struct SettingsView: View {
                             .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                         NavigationLink(
-                            destination: EmptyView(),
+                            destination: SettingsView(),
                             label: {
-                                Text("BestFriends Demo")
+                                Text("BestFriends")
                             })
-                            .frame(width: 325, height: 50)
+                            .frame(width: 225, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                             )
-                        
-                        
                         
                         Spacer().frame(height: 20)
                         
-                        
+                   
+                        NavigationLink(
+                            destination: BlueModePage1(),
+                            label: {
+                                Text("BlueMode")
+                            })
+                            .frame(width: 225, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                            )
                         
                         VStack {
-                            
+                           
+                        Spacer().frame(height: 20)
+                        
                             NavigationLink(
                                 destination: ShakingCoolView(),
                                 label: {
-                                    Text("ShakingCool SetUp")
+                                    Text("ShakingCool")
                                 })
-                                .frame(width: 325, height: 50)
+                                .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                 )
                             
-                            Spacer().frame(height: 45)
                             
-                            
-                            Text("Fight w/ Friend - Switch to BlueMode")
-                                .font(.system(size: 32))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                                .multilineTextAlignment(.center)
-                                .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            Spacer().frame(height: 20)
                             
                             NavigationLink(
-                                destination: BlueModePage1(),
+                                destination: Tokens(),
                                 label: {
-                                    Text("BlueMode Demo & Setup")
+                                    Text("Earning Tokens for Stickers")
                                 })
-                                .frame(width: 325, height: 50)
+                                
+                                .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)), lineWidth: 5)
+                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                 )
                             
-                            Spacer().frame(height: 45)
                             
-                            Text("My Friends")
+                            
+                            Spacer().frame(height: 45)
+                        
+                            Text("Manage Friends")
                                 .font(.system(size: 32))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .multilineTextAlignment(.center)
-                                .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 285, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             
                             
@@ -119,35 +186,48 @@ struct SettingsView: View {
                                 label: {
                                     Text("Add Friends")
                                 })
-                                .frame(width: 325, height: 50)
+                                .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .overlay(
                                     RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 5)
+                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                 )
-                            Spacer().frame(height: 45)
+                          
+                            Spacer().frame(height: 20)
+                            
+                            
+                            NavigationLink(
+                                destination: AddFriends().environmentObject(sessionManager),
+                                label: {
+                                    Text("Block Friends")
+                                })
+                                .frame(width: 225, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                )
+                           
+                            
                             
                             VStack {
-                                
-                                Text("Purchase Stickers & Gifs with Tokens")
-                                    .font(.system(size: 32))
-                                    .fontWeight(.ultraLight)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                    .multilineTextAlignment(.center)
-                                    .frame(width: 375, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                           
+                                Spacer().frame(height: 20)
+                       
                                 
                                 NavigationLink(
-                                    destination: Tokens(),
-                                    label: {
-                                        Text("How do Tokens work?")
-                                    })
-                                    
-                                    .frame(width: 325, height: 50)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 25)
-                                            .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
-                                    )
+                                destination: AddFriends().environmentObject(sessionManager),
+                                label: {
+                                    Text("Remove Friends")
+                                })
+                                .frame(width: 225, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                )
+                            
+                          
                                 
                                 VStack {
                                     
@@ -163,9 +243,7 @@ struct SettingsView: View {
                                         .multilineTextAlignment(.center)
                                         .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     
-                                    
-                                    
-                                    
+                                
                                     
                                     Link("Privacy Policy / Terms of Service", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
                                         .frame(width: 325, height: 50)
@@ -213,24 +291,11 @@ struct SettingsView: View {
                                             .font(.system(size: 32))
                                             .fontWeight(.ultraLight)
                                             
-                                            .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .multilineTextAlignment(.center)
                                             .frame(width: 385, height: 50, alignment: .center
                                             )
                                         
-                                        
-                                        NavigationLink(
-                                            destination: ManageMyFriends(),
-                                            label: {
-                                                Text("Add, Block or Delete my Friends")
-                                            })
-                                            
-                                            .frame(width: 325, height: 50)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 25)
-                                                    .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
-                                            )
                                         
                                         Spacer()
                                             .frame(height: 20)
@@ -244,7 +309,7 @@ struct SettingsView: View {
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .overlay(
                                                 RoundedRectangle(cornerRadius: 25)
-                                                    .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
+                                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                             )
                                         
                                         
@@ -260,13 +325,13 @@ struct SettingsView: View {
                                                 NavigationLink(
                                                     destination: NotificationsOnOffPage(),
                                                     label: {
-                                                        Text("Notification Settings ***(Need B/E)")
+                                                        Text("Notification Settings")
                                                     })
                                                     .frame(width: 325, height: 50)
                                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                     .overlay(
                                                         RoundedRectangle(cornerRadius: 25)
-                                                            .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
+                                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                                     )
                                                 
                                                 Spacer()
@@ -281,7 +346,7 @@ struct SettingsView: View {
                                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                     .overlay(
                                                         RoundedRectangle(cornerRadius: 25)
-                                                            .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
+                                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                                     )
                                                 
                                                 Spacer()
@@ -296,7 +361,7 @@ struct SettingsView: View {
                                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                     .overlay(
                                                         RoundedRectangle(cornerRadius: 25)
-                                                            .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
+                                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                                     )
                                                 
                                             }
@@ -380,33 +445,7 @@ struct SettingsView: View {
                                                     .frame(height: 45)
                                                 
                                                 
-                                                
-                                                Text("We'd Love to Hear from You")
-                                                    
-                                                    .font(.system(size: 32))
-                                                    .fontWeight(.ultraLight)
-                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .multilineTextAlignment(.center)
-                                                    .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                                
-                                                
-                                                
-                                                
-                                                NavigationLink(
-                                                    destination: ReviewPopup(),
-                                                    label: {
-                                                        Text("Are you enjoying BestFriends?")
-                                                    })
-                                                    .frame(width: 325, height: 50)
-                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 25)
-                                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                                    )
-                                                Spacer()
-                                                    .frame(height: 45)
-                                                
-                                                
+                                              
                                                 Text("Become Official BestFriends Beta Tester")
                                                     
                                                     .font(.system(size: 32))
