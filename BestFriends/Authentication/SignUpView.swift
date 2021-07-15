@@ -209,6 +209,8 @@ struct SignUpPage3: View {
                     .font(.system(size: 27))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 Spacer()
                     .frame(height: 360)
