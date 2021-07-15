@@ -128,8 +128,13 @@ struct SignUpPage2: View {
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                             .frame(width: 400, height: 150, alignment: .center)
+                            .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                            .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                        
+                        
                         Spacer()
                             .frame(height: 125)
+                            
                     }
                 }
                 Spacer()
@@ -306,7 +311,8 @@ struct SignUpPage4: View {
                         .font(.system(size: 30))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                    
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     
                     
                     Spacer()
@@ -410,6 +416,8 @@ struct SignUpPage5: View {
                     .foregroundColor(.white)
                     .frame(width: 350, height: 150, alignment: .center)
                     .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 Spacer()
                     .frame(height: 370)
@@ -504,6 +512,8 @@ struct SignUpPage6: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+              
+            
             VStack {
                 
                 
@@ -516,6 +526,9 @@ struct SignUpPage6: View {
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                
                 
                 Spacer()
                     .frame(height: 50)
@@ -697,6 +710,8 @@ struct SignUpPage7: View {
                     .foregroundColor(.white)
                     .frame(width: 325, height: 50)
                     .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 
                 Text("Apple requires us to ask your age.")
@@ -705,7 +720,7 @@ struct SignUpPage7: View {
                     .frame(width: 325, height: 100)
                     .multilineTextAlignment(.center)
                 
-                
+               
                 Spacer()
                     .frame(height: 60)
                 
@@ -769,6 +784,9 @@ struct SignUpPage8: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 120, alignment: .center)
                     .padding(20)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                
                 
                 Spacer().frame(height: 5)
                 
@@ -1011,7 +1029,8 @@ struct SignUpPage9: View {
                     .foregroundColor(Color.white)
                     .frame(width: 400, height: 150)
                     .multilineTextAlignment(.center)
-                
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
              
                 
                 Spacer()
@@ -1133,7 +1152,9 @@ struct SignUpQuestionPage1: View {
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .frame(width: 400, height: 150)
                     .multilineTextAlignment(.center)
-               
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+             
                 
                 Spacer()
                     .frame(height: 260)
@@ -1141,10 +1162,9 @@ struct SignUpQuestionPage1: View {
                 Text("Help us - help you Protect your Privacy.")
                     .italic()
                     .font(.system(size: 35))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .frame(width: 400, height: 150)
                     .multilineTextAlignment(.center)
-                    .frame(width: 350, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                
                 
               
@@ -1208,7 +1228,10 @@ struct SignUpQuestionPage2: View {
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .frame(width: 300, height: 125)
                         .multilineTextAlignment(.center)
-                   
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    
+                    
                     Spacer()
                         .frame(height: 30)
                     
@@ -1282,6 +1305,9 @@ struct SignUpQuestionPage3: View {
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .frame(width: 350)
                     .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                
                 
                 Spacer()
                     .frame(height: 50)
