@@ -129,17 +129,7 @@ struct Tokens: View {
                             
                             Spacer()
                                 .frame(height: 20)
-                            
-                            NavigationLink(destination: SettingsView()) {
-                                Text("Purchase Stickers in Chat >>>")
-                                    .font(.system(size: 30))
-                                    .fontWeight(.ultraLight)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .frame(width: 400, height: 50)
-                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                    .cornerRadius(25)
-                                
-                                
+                       
                             }
                             
                             
@@ -157,7 +147,7 @@ struct Tokens: View {
             }
         }
     }
-}
+
 
 
 
