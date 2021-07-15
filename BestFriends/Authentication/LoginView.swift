@@ -99,12 +99,14 @@ struct LoginView: View {
                         
                         
                         Button("Don't have an account? Sign up.", action: sessionManager.showSignUp)
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             .frame(width: 270, height: 30)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
-                            )
+//                            .overlay(
+//                                RoundedRectangle(cornerRadius: 25)
+//                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
+//                            )
                         
                         Spacer()
                             .frame(height: 25)
@@ -117,11 +119,16 @@ struct LoginView: View {
                                 Text("Forgot Password")
                             })
                             .frame(width: 150, height: 30)
+                            
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
                                     .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 2)
+                           
+                                    
+                                 
                             )
+                            
                         
                   
                         NavigationLink(
@@ -129,12 +136,13 @@ struct LoginView: View {
                             label: {
                                 Text("Forgot Username")
                             })
+                            
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             .frame(width: 150, height: 30)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 2)
-                            )
+                            .background(Color(#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)))
+                           
+                            
+                            
                         
                       
                         }
