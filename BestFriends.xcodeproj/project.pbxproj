@@ -286,6 +286,8 @@
 		7A4E336326A0D40C00202BB7 /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E335226A0D40C00202BB7 /* ReportedMessage.swift */; };
 		7A4E336426A0D40C00202BB7 /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E335326A0D40C00202BB7 /* Advertisement.swift */; };
 		7A4E336526A0D40C00202BB7 /* SmileNote+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E335426A0D40C00202BB7 /* SmileNote+Schema.swift */; };
+		7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */; };
+		7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E336826A0D72600202BB7 /* UIColorExtension.swift */; };
 		7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */; };
 		7A554889A8EB6FE945CC3031 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
@@ -713,6 +715,8 @@
 		7A4E335226A0D40C00202BB7 /* ReportedMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportedMessage.swift; sourceTree = "<group>"; };
 		7A4E335326A0D40C00202BB7 /* Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Advertisement.swift; sourceTree = "<group>"; };
 		7A4E335426A0D40C00202BB7 /* SmileNote+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SmileNote+Schema.swift"; sourceTree = "<group>"; };
+		7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
+		7A4E336826A0D72600202BB7 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolFullScreenView.swift; sourceTree = "<group>"; };
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
 		7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundAnimation.mp4; sourceTree = "<group>"; };
@@ -836,6 +840,8 @@
 				7AD10451265AB948007627FD /* UIDeviceExtension.swift */,
 				7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */,
 				7AA201122635D5F500C9F00C /* Room+Extensions.swift */,
+				7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */,
+				7A4E336826A0D72600202BB7 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1634,6 +1640,7 @@
 				AA63971095E98FB1FFC64E65 /* Message.swift in Sources */,
 				52CD226509A3861C98BBBF86 /* ReportedMessage+Schema.swift in Sources */,
 				838C782A20D1A1C80358A8CC /* ReportedMessage.swift in Sources */,
+				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
 				A92BF614575757801E17D64C /* Room+Schema.swift in Sources */,
 				CF30FF93267E955A000B2730 /* SmileNotesCard.swift in Sources */,
 				5C0A2C0B95C727644741CFC3 /* Room.swift in Sources */,
@@ -1685,6 +1692,7 @@
 				F52DBECEAB2BB0DD4165BC74 /* Message.swift in Sources */,
 				3D18F719D4B42B0CE7916D43 /* ReportedMessage+Schema.swift in Sources */,
 				BCA4E12D5225C8DCC103E38C /* ReportedMessage.swift in Sources */,
+				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A4E336026A0D40C00202BB7 /* User+Schema.swift in Sources */,
 				FDB305C764EC08E517A87949 /* Room+Schema.swift in Sources */,
 				7A01A96726939DA40047BB35 /* StickerPopover.swift in Sources */,

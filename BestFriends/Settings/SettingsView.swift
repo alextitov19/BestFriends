@@ -360,9 +360,6 @@ struct SettingsView: View {
                                             }
                                             
                                             
-                                            Spacer()
-                                                .frame(height: 45)
-                                            
                                             
                                             Text("Customize my Chat Rooms")
                                                 
