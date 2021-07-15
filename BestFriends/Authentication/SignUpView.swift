@@ -1103,7 +1103,7 @@ struct SignUpPage9: View {
                             }
                         }
                         
-                        
+                        readyToProceed = true
                     }) {
                         Text("Next")
                             .font(.title)
