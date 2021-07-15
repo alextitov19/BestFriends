@@ -144,6 +144,8 @@ struct SignUpPage2: View {
                     .cornerRadius(25)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                 
                 Spacer()
                     .frame(height: 20)
@@ -225,7 +227,8 @@ struct SignUpPage3: View {
                     .cornerRadius(25)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
-                
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                 
                 
                 Spacer()
@@ -316,7 +319,8 @@ struct SignUpPage4: View {
                         .cornerRadius(20)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                    
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     Spacer()
                         .frame(height: 20)
                     
@@ -329,7 +333,8 @@ struct SignUpPage4: View {
                         .cornerRadius(20)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-                    
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     Spacer()
                         .frame(height: 20)
                     
@@ -421,7 +426,8 @@ struct SignUpPage5: View {
                     .cornerRadius(20)
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
-                
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                 Spacer()
                     .frame(height: 20)
                 
@@ -1288,6 +1294,8 @@ struct SignUpQuestionPage3: View {
                             .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                             .background(didTap1 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                             .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     }
                     
                     
@@ -1302,6 +1310,8 @@ struct SignUpQuestionPage3: View {
                             .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                             .background(didTap2 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                             .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     }
                     
                     Spacer()
@@ -1315,6 +1325,8 @@ struct SignUpQuestionPage3: View {
                             .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                             .background(didTap3 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                             .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     }
                     
                     Spacer()
@@ -1328,6 +1340,8 @@ struct SignUpQuestionPage3: View {
                             .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                             .background(didTap4 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                             .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     }
                     
                     Spacer()
@@ -1341,6 +1355,8 @@ struct SignUpQuestionPage3: View {
                             .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                             .background(didTap5 ? Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)) : Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                             .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     }
                     
                     Spacer()

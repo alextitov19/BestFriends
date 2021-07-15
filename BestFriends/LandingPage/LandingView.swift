@@ -176,7 +176,7 @@ struct LandingView: View {
                         }
                         .padding(10)
                         .sheet(isPresented: $showingAddFriendInstructions) {
-                            AddFriends()
+                            AddFriendSteps()
                         }
                     
                     Image("whiteSmiley")
