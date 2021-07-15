@@ -220,8 +220,8 @@ struct InfoViewPage3: View {
                     .frame(height: 225)
                 
                 
-                Text("Just shake your phone and 3 pics that always make you smile ...")
-                    .font(.system(size: 27))
+                Text("Just shake your phone. Three pics of you and your friends that always make you smile ...")
+                    .font(.system(size: 25))
                     .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
