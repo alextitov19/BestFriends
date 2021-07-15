@@ -82,23 +82,19 @@ struct SettingsView: View {
                                 .multilineTextAlignment(.center)
                                 .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                       
-                            NavigationLink(
-                                destination: BlueModePage1(),
-                                label: {
-                                    Text("Be 1st to see new features")
-                                })
-                                .frame(width: 225, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
                             
+                            Link("Be 1st to test new features", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
+                             .frame(width: 225, height: 50)
+                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                             .overlay(
+                                 RoundedRectangle(cornerRadius: 25)
+                                     .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                             )
+                        
+                      
                             Spacer().frame(height: 30)
                             
-                            
-                            
-                            
+                      
                             
                         }
                         
@@ -421,53 +417,29 @@ struct SettingsView: View {
                                                     .frame(height: 45)
                                                 
                                                 
-                                                Text("Aditional Resources")
+                                                Text("Outside Resources")
                                                     
                                                     .font(.system(size: 32))
                                                     .fontWeight(.ultraLight)
                                                     
-                                                    .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                     .multilineTextAlignment(.center)
                                                     .frame(width: 385, height: 50, alignment: .center
                                                     )
                                                 
                                                 
-                                                Link("In 'crisis' mode? Anonymously chat with trained teens on 'TeenLine'", destination: URL(string: "https://teenlineonline.org/")!)
-                                                    .frame(width: 325, height: 50)
-                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 25)
-                                                            .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 1)
-                                                    )
-                                                
-                                                
-                                                Spacer()
-                                                    .frame(height: 45)
-                                                
-                                                
-                                              
-                                                Text("Become Official BestFriends Beta Tester")
-                                                    
-                                                    .font(.system(size: 32))
-                                                    .fontWeight(.ultraLight)
-                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .multilineTextAlignment(.center)
-                                                    .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                                
-                                                
-                                                
-                                                
-                                                NavigationLink(
-                                                    destination: BetaTesters(),
-                                                    label: {
-                                                        Text("I'm In!")
-                                                    })
+                                                Link("In crisis? Anonymously chat w/ trained teens on 'TeenLine'", destination: URL(string: "https://teenlineonline.org/")!)
                                                     .frame(width: 325, height: 50)
                                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                     .overlay(
                                                         RoundedRectangle(cornerRadius: 25)
                                                             .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                                     )
+                                                
+                                                
+                                                Spacer()
+                                                    .frame(height: 45)
+                                                
                                                 
                                                 VStack {
                                                     
