@@ -459,7 +459,7 @@ struct SettingsView: View {
                     
                     HStack {
                         
-                        Image("whiteHouse")
+                        Image("home-alt2")
                             .resizable()
                             .frame(width: 40, height: 40)
                             .scaledToFill()
@@ -468,7 +468,7 @@ struct SettingsView: View {
                             }
                             .padding(20)
                         
-                        Image("messageIconWhite")
+                        Image("chat icon")
                             .resizable()
                             .frame(width: 40, height: 40)
                             .scaledToFill()
@@ -477,7 +477,7 @@ struct SettingsView: View {
                             }
                             .padding(20)
                         
-                        Image("whiteSmiley")
+                        Image("happy-face icon")
                             .resizable()
                             .frame(width: 40, height: 40)
                             .scaledToFill()

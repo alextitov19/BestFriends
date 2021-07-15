@@ -104,7 +104,7 @@ struct LandingView: View {
                     Spacer()
                     
                     Button(action: { inviteClicked() }) {
-                        Image("newMessageWhite")
+                        Image("chat-add icon")
                             .resizable()
                             .frame(width: 30, height: 30)
                     }
@@ -149,9 +149,9 @@ struct LandingView: View {
                         self.showingActionSheet = true
                         
                     }) {
-                        Image("inviteWhite")
+                        Image("person-add icon")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 50, height: 50)
                         
                     }
                     .actionSheet(isPresented: $showingActionSheet) {
@@ -167,7 +167,7 @@ struct LandingView: View {
                     
                     
                     
-                    Image("messageIconWhite")
+                    Image("chat icon")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
@@ -179,7 +179,7 @@ struct LandingView: View {
                             AddFriendSteps()
                         }
                     
-                    Image("whiteSmiley")
+                    Image("happy-face icon")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
@@ -191,7 +191,7 @@ struct LandingView: View {
                             ImagePicker(image: self.$inputImage)
                         }
                     
-                    Image("settingsiconwhite")
+                    Image("settings icon")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
