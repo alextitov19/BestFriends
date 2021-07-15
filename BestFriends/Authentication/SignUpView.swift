@@ -64,7 +64,8 @@ struct SignUpPage1: View {
                         .cornerRadius(25)
                         .disableAutocorrection(true)
                         .autocapitalization(.none)
-                    
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                     Spacer()
                         .frame(height: 20)
                     
