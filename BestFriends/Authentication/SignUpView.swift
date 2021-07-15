@@ -40,6 +40,10 @@ struct SignUpPage1: View {
                         .font(.system(size: 65))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+
+
                     
                     
                     Text("The positivity app :)")
@@ -1438,14 +1442,14 @@ struct SignUpPage1_Previews : PreviewProvider {
     static var previews: some View {
         
         //
-        //        SignUpPage1().environmentObject(SessionManager())
+                SignUpPage1().environmentObject(SessionManager())
         //        SignUpPage2(firstName: "").environmentObject(SessionManager())
         //        SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
         //        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
         //                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
         //                SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
         //        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
-        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
+//        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
         //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
         //            SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
