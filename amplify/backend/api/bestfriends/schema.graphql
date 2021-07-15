@@ -39,7 +39,7 @@ type User @model {
   birthday: AWSDate!
   pronouns: String!
   location: String
-  adPreference: String!
+  adPreference: [Int!]!
   deviceFCMToken: String!
   isOnline: Boolean!
   invitedRooms: [InvitedRoom]

@@ -10,7 +10,7 @@ public struct User: Model {
   public var birthday: Temporal.Date
   public var pronouns: String
   public var location: String?
-  public var adPreference: String
+  public var adPreference: [Int]
   public var deviceFCMToken: String
   public var isOnline: Bool
   public var invitedRooms: [InvitedRoom]?
@@ -36,7 +36,7 @@ public struct User: Model {
       birthday: Temporal.Date,
       pronouns: String,
       location: String? = nil,
-      adPreference: String,
+      adPreference: [Int] = [],
       deviceFCMToken: String,
       isOnline: Bool,
       invitedRooms: [InvitedRoom]? = [],
