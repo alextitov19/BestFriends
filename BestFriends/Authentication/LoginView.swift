@@ -26,22 +26,24 @@ struct LoginView: View {
                 
                 VStack {
                     
-//                    Text("BestFriends")
-//                        .font(.system(size: 40))
-//                        .foregroundColor(.white)
-//                        .frame(width: 225, height: 50)
-//                        .multilineTextAlignment(.center)
-//
+                    //                    Text("BestFriends")
+                    //                        .font(.system(size: 40))
+                    //                        .foregroundColor(.white)
+                    //                        .frame(width: 225, height: 50)
+                    //                        .multilineTextAlignment(.center)
+                    //
                     
                     Image("BestFriends")
                         .resizable()
                         .frame(width: 150, height: 150)
                         .scaledToFill()
+                        .cornerRadius(30)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        .offset(y: 10)
                     
                     VStack {
                         Spacer()
-                            .frame(height: 125)
+                            .frame(height: 75)
                         
                         
                         TextField("Username", text: $username)
@@ -97,71 +99,58 @@ struct LoginView: View {
                                 .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                .shadow(color: Color(#colorLiteral(red: 0.8038745522, green: 0.3436358571, blue: 1, alpha: 1)), radius: 12)
-//                                .shadow(color: Color(#colorLiteral(red: 0.8038745522, green: 0.3436358571, blue: 1, alpha: 1)), radius: 12)
-//                                .shadow(color: Color(#colorLiteral(red: 0.8038745522, green: 0.3436358571, blue: 1, alpha: 1)), radius: 12)
-
+                            //                                .shadow(color: Color(#colorLiteral(red: 0.8038745522, green: 0.3436358571, blue: 1, alpha: 1)), radius: 12)
+                            //                                .shadow(color: Color(#colorLiteral(red: 0.8038745522, green: 0.3436358571, blue: 1, alpha: 1)), radius: 12)
+                            //                                .shadow(color: Color(#colorLiteral(red: 0.8038745522, green: 0.3436358571, blue: 1, alpha: 1)), radius: 12)
+                            
                         }
                         
                     }
                     VStack {
                         
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 200)
                         
-                      
-                        
-                        
-                        
-                        
-                        Button("Don't have an accou Sign up.", action: sessionManager.showSignUp)
-                            .background(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
-                           
-                            .frame(width: 270, height: 50)
+                        Button("Sign Up", action: sessionManager.showSignUp)
+                            .frame(width: 150, height: 50, alignment: .center)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .overlay(
-                               RoundedRectangle(cornerRadius: 25)
-                                 .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
-                          )
+                            .font(.title)
+                            .background(Color(#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)))
+                            .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                         Spacer()
                             .frame(height: 25)
                         
-                        
                         HStack {
-                        NavigationLink(
-                            destination: ForgotPassword(),
-                            label: {
-                                Text("Forgot Password")
-                            })
-                            .frame(width: 150, height: 30)
+                            NavigationLink(
+                                destination: ForgotPassword(),
+                                label: {
+                                    Text("Forgot Password")
+                                        .frame(width: 150, height: 30)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 25)
+                                                .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 2)
+                                        )
+                                })
+                                .padding(5)
+                                
                             
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 2)
-                           
-                                    
-                                 
-                            )
-                            
-                        
-                  
-                        NavigationLink(
-                            destination: ForgotUsername().environmentObject(sessionManager),
-                            label: {
-                                Text("Forgot Username")
-                            })
-                            
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            .frame(width: 150, height: 30)
-                            .background(Color(#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)))
-                           
-                            
-                            
-                        
-                      
+                            NavigationLink(
+                                destination: ForgotUsername().environmentObject(sessionManager),
+                                label: {
+                                    Text("Forgot Username")
+                                        .frame(width: 150, height: 30)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .overlay(
+                                            RoundedRectangle(cornerRadius: 25)
+                                                .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 2)
+                                        )
+                                })
+                                .padding(5)
                         }
+                        
                         Spacer()
                             .frame(height: 130)
                     }
@@ -326,7 +315,7 @@ struct ForgotUsername: View {
     @State var usernameFound = true
     
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     var body: some View {
         ZStack {
             Image("blueGradient1")
@@ -337,7 +326,7 @@ struct ForgotUsername: View {
                     .foregroundColor(.white)
                     .font(.system(size: 35, weight: .light))
                     .padding(20)
-
+                
                 Text("Your username is: \(username)")
                     .foregroundColor(.white)
                     .font(.system(size: 30, weight: .light))
@@ -366,7 +355,7 @@ struct ForgotUsername: View {
                 
                 Spacer()
                     .frame(height: 120)
-                                
+                
                 Button(action: {
                     showUsername()
                 }) {
@@ -395,10 +384,10 @@ struct ForgotUsername: View {
 
 struct LoginView_Previews : PreviewProvider {
     static var previews: some View {
-//        LoginView()
-//            .environmentObject(SessionManager())
-//        ForgotPassword()
-//        ConfirmNewPassword(username: "")
-        ForgotUsername()
+        LoginView()
+            .environmentObject(SessionManager())
+        //        ForgotPassword()
+        //        ConfirmNewPassword(username: "")
+        //        ForgotUsername()
     }
 }
