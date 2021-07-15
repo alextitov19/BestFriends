@@ -483,9 +483,8 @@
 		D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */; };
 		D16B11BC61C141F3FC75849A /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938CF675DE8432796534940 /* Room+Schema.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
-		D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */; };
 		D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */; };
-		D1949C412644FD4F00FDB6C5 /* DeleteFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */; };
+		D1949C412644FD4F00FDB6C5 /* RemoveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C402644FD4F00FDB6C5 /* RemoveFriend.swift */; };
 		D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D27D39264303E300BDA75F /* InfoPages.swift */; };
 		D1E3CFDF2653A35700A26779 /* BlueModeLP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */; };
 		D1E3CFE326543C4D00A26779 /* ChangePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFE226543C4D00A26779 /* ChangePin.swift */; };
@@ -714,9 +713,8 @@
 		D15CCD83264908A300BFE179 /* DarkModePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModePage1.swift; sourceTree = "<group>"; };
 		D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeNotReadyTalk.swift; sourceTree = "<group>"; };
 		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
-		D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFriend.swift; sourceTree = "<group>"; };
 		D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMyFriends.swift; sourceTree = "<group>"; };
-		D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFriend.swift; sourceTree = "<group>"; };
+		D1949C402644FD4F00FDB6C5 /* RemoveFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend.swift; sourceTree = "<group>"; };
 		D1D27D39264303E300BDA75F /* InfoPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPages.swift; sourceTree = "<group>"; };
 		D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeLP.swift; sourceTree = "<group>"; };
 		D1E3CFE226543C4D00A26779 /* ChangePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePin.swift; sourceTree = "<group>"; };
@@ -1115,8 +1113,7 @@
 				CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */,
 				CF356D312674E3F100BCF572 /* AddFriends.swift */,
 				D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */,
-				D1949C3C2644F42D00FDB6C5 /* BlockFriend.swift */,
-				D1949C402644FD4F00FDB6C5 /* DeleteFriend.swift */,
+				D1949C402644FD4F00FDB6C5 /* RemoveFriend.swift */,
 			);
 			path = ManageMyFriends;
 			sourceTree = "<group>";
@@ -1294,7 +1291,6 @@
 				7AE31CC2262A9BE1001EC5A3 /* LandingView.swift in Sources */,
 				D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */,
 				7AEFD546262CED7A00247757 /* ImagePicker.swift in Sources */,
-				D1949C3D2644F42E00FDB6C5 /* BlockFriend.swift in Sources */,
 				D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */,
 				7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */,
 				7AC8564226585CD20045D145 /* LiquidSwipe.swift in Sources */,
@@ -1315,7 +1311,7 @@
 				D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */,
 				7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */,
 				7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */,
-				D1949C412644FD4F00FDB6C5 /* DeleteFriend.swift in Sources */,
+				D1949C412644FD4F00FDB6C5 /* RemoveFriend.swift in Sources */,
 				7AEFD543262CED3A00247757 /* QRCodeView.swift in Sources */,
 				8F464A0A6BEA4CD09C25CF86 /* AmplifyModels.swift in Sources */,
 				3FAFF6936D7B422DBF25E91A /* Message.swift in Sources */,

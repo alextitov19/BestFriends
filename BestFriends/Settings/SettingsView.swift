@@ -24,7 +24,7 @@ struct SettingsView: View {
                 VStack {
                     ScrollView {
                         Spacer().frame(height: 50)
-                     
+                        
                         
                         VStack {
                             
@@ -35,9 +35,9 @@ struct SettingsView: View {
                                 .multilineTextAlignment(.center)
                                 .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
-                           
+                            
                             Spacer().frame(height: 30)
-                          
+                            
                             
                             Text("We'd Love to Hear from You")
                                 
@@ -49,24 +49,24 @@ struct SettingsView: View {
                             
                             Spacer().frame(height: 20)
                             
-                       Link("User Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/211808350213142")!)
-                        .frame(width: 225, height: 50)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 25)
-                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                        )
+                            Link("User Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/211808350213142")!)
+                                .frame(width: 225, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                )
                             
                             Spacer().frame(height: 20)
                             
                             Link("BlueMode Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/211898588668178")!)
-                             .frame(width: 225, height: 50)
-                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                             .overlay(
-                                 RoundedRectangle(cornerRadius: 25)
-                                     .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                             )
-                        
+                                .frame(width: 225, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                )
+                            
                             
                             
                             Spacer().frame(height: 30)
@@ -81,20 +81,20 @@ struct SettingsView: View {
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .multilineTextAlignment(.center)
                                 .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                      
+                            
                             
                             Link("Be 1st to test new features", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
-                             .frame(width: 225, height: 50)
-                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                             .overlay(
-                                 RoundedRectangle(cornerRadius: 25)
-                                     .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                             )
-                        
-                      
+                                .frame(width: 225, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                )
+                            
+                            
                             Spacer().frame(height: 30)
                             
-                      
+                            
                             
                         }
                         
@@ -119,7 +119,7 @@ struct SettingsView: View {
                         
                         Spacer().frame(height: 20)
                         
-                   
+                        
                         NavigationLink(
                             destination: BlueModePage1(),
                             label: {
@@ -133,9 +133,9 @@ struct SettingsView: View {
                             )
                         
                         VStack {
-                           
-                        Spacer().frame(height: 20)
-                        
+                            
+                            Spacer().frame(height: 20)
+                            
                             NavigationLink(
                                 destination: ShakingCoolView(),
                                 label: {
@@ -167,7 +167,7 @@ struct SettingsView: View {
                             
                             
                             Spacer().frame(height: 45)
-                        
+                            
                             Text("Manage Friends")
                                 .font(.system(size: 32))
                                 .fontWeight(.ultraLight)
@@ -188,28 +188,24 @@ struct SettingsView: View {
                                     RoundedRectangle(cornerRadius: 25)
                                         .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
                                 )
-                          
+                            
                             Spacer().frame(height: 20)
                             
-                         
-                            VStack {
-                           
-                                Spacer().frame(height: 20)
-                       
-                                
-                                NavigationLink(
-                                destination: AddFriends().environmentObject(sessionManager),
-                                label: {
-                                    Text("Remove Friends")
-                                })
-                                .frame(width: 225, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
                             
-                          
+                            VStack {
+                                NavigationLink(
+                                    destination: RemoveFriend(),
+                                    label: {
+                                        Text("Remove Friends")
+                                    })
+                                    .frame(width: 225, height: 50)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 25)
+                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
+                                    )
+                                
+                                
                                 
                                 VStack {
                                     
@@ -225,7 +221,7 @@ struct SettingsView: View {
                                         .multilineTextAlignment(.center)
                                         .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     
-                                
+                                    
                                     
                                     Link("Privacy Policy / Terms of Service", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
                                         .frame(width: 325, height: 50)
