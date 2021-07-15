@@ -141,8 +141,9 @@ struct InfoViewPage2: View {
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 16)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 16)
+
                 Spacer()
                     .frame(height: 100)
                 
@@ -521,12 +522,12 @@ struct InfoViewPage6: View {
 
 struct InfoViewPags_Previews : PreviewProvider {
     static var previews: some View {
-        //        InfoViewPage1()
-        InfoViewPage2(username: "", password: "")
-        //        InfoViewPage3()
-        //        InfoViewPage4()
-        //        InfoViewPage5()
-        //        InfoViewPage6()
+        //        InfoViewPage1().environmentObject(SessionManager())
+        InfoViewPage2(username: "", password: "").environmentObject(SessionManager())
+        //        InfoViewPage3().environmentObject(SessionManager())
+        //        InfoViewPage4().environmentObject(SessionManager())
+        //        InfoViewPage5().environmentObject(SessionManager())
+        //        InfoViewPage6().environmentObject(SessionManager())
         
     }
 }
