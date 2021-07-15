@@ -33,8 +33,10 @@ struct ChangeAdPreference: View {
                 
                 Text("Saved")
                     .font(.system(size: 40))
-                    .foregroundColor(Color(UIColor.random()))
+                    .foregroundColor(.green)
                     .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)), radius: 22)
                     .isHidden(!hasSaved)
                 
                 VStack {

@@ -23,6 +23,9 @@ struct ChangeBackground: View {
                 
                 //Start of IMAGE BACKGROUNDS
                 VStack {
+                    Spacer()
+                        .frame(height: 50)
+                    
                     Text("Static images")
                         .foregroundColor(.white)
                         .font(.system(size: 25, weight: .regular))
@@ -157,6 +160,7 @@ struct ChangeBackground: View {
                     }
                 }
             }
+            .ignoresSafeArea()
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)

@@ -113,7 +113,7 @@ struct Tokens: View {
                             
                             
                             NavigationLink(
-                                destination: SettingsView(),
+                                destination: ChangeAdPreference(),
                                 label: {
                                     Text("Edit my 'ad interest' categories")
                                 })
