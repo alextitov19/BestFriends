@@ -14,7 +14,7 @@ struct Loading: View {
     var body: some View {
         
         ZStack {
-            Image("smileNotesCircles")
+            Image("SignUpPinBackground")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
