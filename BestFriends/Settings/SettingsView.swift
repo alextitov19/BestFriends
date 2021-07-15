@@ -420,17 +420,17 @@ struct SettingsView: View {
                                                     Spacer()
                                                         .frame(height: 100)
                                                     
-                                                    NavigationLink(
-                                                        destination: EmptyView(),
-                                                        label: {
-                                                            Text("Sign Out")
-                                                        })
-                                                        .frame(width: 325, height: 50)
-                                                        .foregroundColor(Color(.red))
-                                                        .overlay(
-                                                            RoundedRectangle(cornerRadius: 25)
-                                                                .stroke(Color(.red), lineWidth: 1)
-                                                        )
+                                                    Button(action: {
+                                                        sessionManager.signOut()
+                                                    }) {
+                                                        Text("Sign Out")
+                                                            .frame(width: 325, height: 50)
+                                                            .foregroundColor(Color(.red))
+                                                            .overlay(
+                                                                RoundedRectangle(cornerRadius: 25)
+                                                                    .stroke(Color(.red), lineWidth: 1)
+                                                            )
+                                                    }
                                                 }
                                             }
                                         }
