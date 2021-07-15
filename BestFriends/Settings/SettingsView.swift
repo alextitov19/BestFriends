@@ -34,7 +34,8 @@ struct SettingsView: View {
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
                                 .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
+                                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                            
                             Spacer().frame(height: 30)
                           
