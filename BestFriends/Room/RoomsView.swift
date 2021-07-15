@@ -65,7 +65,7 @@ struct RoomsView: View {
                     
                     HStack {
                         
-                        Image("whiteHouse")
+                        Image("home-alt2")
                             .resizable()
                             .frame(width: 40, height: 40)
                             .scaledToFill()
@@ -75,7 +75,7 @@ struct RoomsView: View {
                             .padding(20)
                         
                         
-                        Image("whiteSmiley")
+                        Image("happy-face icon")
                             .resizable()
                             .frame(width: 40, height: 40)
                             .scaledToFill()
@@ -86,7 +86,7 @@ struct RoomsView: View {
                         
                         
                         
-                        Image("settingsiconwhite")
+                        Image("settings icon")
                             .resizable()
                             .frame(width: 40, height: 40)
                             .scaledToFill()
