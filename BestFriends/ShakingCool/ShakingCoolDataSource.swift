@@ -49,9 +49,10 @@ struct ShakingCoolDataSource {
         return image
     }
     
-    func uploadImage(image: UIImage) {
-        guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }
-        let user = UserDataSource().getUser(id: userID)
+    func uploadImage(image: UIImage) -> Bool {
+        var success = false
+        let group = DispatchGroup()
+        group.enter()
         let data = image.pngData()!
         let key = "Image/" + Helper().randomString(length: 20)
         Amplify.Storage.uploadData(key: key, data: data,
@@ -61,16 +62,20 @@ struct ShakingCoolDataSource {
                                     switch event {
                                     case .success(let data):
                                         print("Completed: \(data)")
-                                        guard let userid = Amplify.Auth.getCurrentUser()?.username else { return }
-                                        var user = UserDataSource().getUser(id: userid)
+                                        var user = UserDataSource().getCurrentUser()
                                         guard var links = user.shakingCoolLinks else { return }
                                         links.append(key)
                                         user.shakingCoolLinks = links
                                         UserDataSource().updateUser(user: user)
+                                        success = true
+                                        group.leave()
                                     case .failure(let storageError):
                                         print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+                                        group.leave()
                                     }
                                    })
+        group.wait()
+        return success
     }
     
     

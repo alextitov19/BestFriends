@@ -50,7 +50,7 @@ struct BlueModeNotReadyTalk: View {
                     Spacer().frame(height: 25)
                     
                     NavigationLink(
-                        destination: InfoViewPage1(),
+                        destination: EmptyView(),
                         label: {
                             Text("Upload images of you two from happier days to your 'FRIEND'S' ShakingCool activating good vibes!")
                                 .frame(width: 400, height: 100, alignment: .center)
@@ -81,7 +81,7 @@ struct BlueModeNotReadyTalk: View {
                         .frame(height: 30)
                     
                     NavigationLink(
-                        destination: InfoViewPage1(),
+                        destination: EmptyView(),
                         label: {
                             Text("Unlock special stickers saying the words you can't seem to say right now.")
                                 .frame(width: 400, height: 100, alignment: .center)
@@ -98,7 +98,7 @@ struct BlueModeNotReadyTalk: View {
                             .frame(height: 30)
                         
                         NavigationLink(
-                            destination: InfoViewPage1(),
+                            destination: EmptyView(),
                             label: {
                                 Text("Yep, all this waiting to hear back sucks. We'll send push notifications once your messages are read or new messages are posted in BlueMode.")
                                     .frame(width: 400, height: 100, alignment: .center)

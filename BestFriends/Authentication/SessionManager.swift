@@ -11,12 +11,14 @@ import AmplifyPlugins
 enum AppState {
     case signUp
     case login
-    case confirmationCode(username: String)
+    case confirmationCode(username: String, password: String)
     case home(userID: String)
     case rooms
     case settings
     case smileNotes
     case chat(room: Room)
+    case infoPages(username: String, password: String)
+    case loading
 }
 
 final class SessionManager: ObservableObject {
@@ -42,6 +44,10 @@ final class SessionManager: ObservableObject {
         appState = .settings
     }
     
+    func showLoading() {
+        appState = .loading
+    }
+    
     func showSmileNotes() {
         appState = .smileNotes
     }
@@ -53,6 +59,12 @@ final class SessionManager: ObservableObject {
     func showLogin() {
         appState = .login
     }
+    
+    func showInfoPages(username: String, password: String) {
+        appState = .infoPages(username: username, password: password)
+    }
+    
+    
     
     func signUp(username: String, email: String, password: String) {
         let attributes = [AuthUserAttribute(.email, value: email)]
@@ -77,7 +89,7 @@ final class SessionManager: ObservableObject {
                     print(details ?? "no details")
                     
                     DispatchQueue.main.async {
-                        self?.appState = .confirmationCode(username: username)
+                        self?.appState = .confirmationCode(username: username, password: password)
                     }
                 }
                 
@@ -89,7 +101,7 @@ final class SessionManager: ObservableObject {
         }
     }
     
-    func confirm(username: String, code: String) {
+    func confirm(username: String, password: String, code: String) {
         _ = Amplify.Auth.confirmSignUp(
             for: username,
             confirmationCode: code
@@ -100,7 +112,8 @@ final class SessionManager: ObservableObject {
                 print(confirmResult)
                 if confirmResult.isSignupComplete {
                     DispatchQueue.main.async {
-                        self?.showLogin()
+//                        self?.showLogin()
+                        self?.showInfoPages(username: username, password: password)
                     }
                 }
                 
@@ -110,7 +123,11 @@ final class SessionManager: ObservableObject {
         }
     }
     
-    func login(username: String, password: String) {
+    func login(username: String, password: String) -> Bool {
+        var foo = false
+        let group = DispatchGroup()
+        group.enter()
+        
         _ = Amplify.Auth.signIn(
             username: username,
             password: password
@@ -124,11 +141,17 @@ final class SessionManager: ObservableObject {
                         self?.getCurrentAuthUser()
                     }
                 }
+                foo = true
+                group.leave()
                 
             case .failure(let error):
                 print("Login error:", error)
+                foo = false
+                group.leave()
             }
         }
+        group.wait()
+        return foo
     }
     
     func signOut() {

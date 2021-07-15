@@ -21,11 +21,10 @@ struct SmileNotesView: View {
     
     var body: some View {
         ZStack {
-            Image("SmileNote4")
+            Image("smileNotesCircles")
                 .resizable()
-                .ignoresSafeArea()
                 .scaledToFill()
-            
+                .ignoresSafeArea()
             
             VStack {
                 // MARK: Header
@@ -136,7 +135,7 @@ struct SmileNotesView: View {
                 
                 HStack {
                     
-                    Image("whiteHouse")
+                    Image("home-alt2")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
@@ -146,7 +145,7 @@ struct SmileNotesView: View {
                         .padding(20)
                     
                     
-                    Image("messageIconWhite")
+                    Image("chat icon")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
@@ -157,7 +156,7 @@ struct SmileNotesView: View {
                     
                     
                     
-                    Image("settingsiconwhite")
+                    Image("settings icon")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()

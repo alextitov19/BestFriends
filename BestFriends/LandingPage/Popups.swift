@@ -47,7 +47,7 @@ struct SmileNotesPopup: View {
             
             // Take the user to the beta tester page on the website
             NavigationLink(
-                destination: InfoViewPage1(),
+                destination: EmptyView(),
                 label: {
                     Text("Long-tap your favorite messages - we just saved them for you!")
                 })
@@ -76,7 +76,7 @@ struct BFWalkThroughPopup: View {
             
             // Take the user to the beta tester page on the website
             NavigationLink(
-                destination: InfoViewPage1(),
+                destination: EmptyView(),
                 label: {
                     Text("Ok")
                 })

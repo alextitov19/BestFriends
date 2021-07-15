@@ -25,7 +25,7 @@ struct ChangeBackground: View {
                 VStack {
                     Text("Static images")
                         .foregroundColor(.white)
-                        .font(.system(size: 18, weight: .ultraLight))
+                        .font(.system(size: 25, weight: .regular))
                     
                     HStack {
                         VStack {
@@ -94,7 +94,7 @@ struct ChangeBackground: View {
                     //Start of VIDEO BACKGROUNDS
                     Text("Looping videos")
                         .foregroundColor(.white)
-                        .font(.system(size: 18, weight: .ultraLight))
+                        .font(.system(size: 25, weight: .regular))
                     
                     HStack {
                         VStack {

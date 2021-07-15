@@ -104,7 +104,7 @@ struct LandingView: View {
                     Spacer()
                     
                     Button(action: { inviteClicked() }) {
-                        Image("newMessageWhite")
+                        Image("chat-add icon")
                             .resizable()
                             .frame(width: 30, height: 30)
                     }
@@ -149,9 +149,9 @@ struct LandingView: View {
                         self.showingActionSheet = true
                         
                     }) {
-                        Image("inviteWhite")
+                        Image("person-add icon")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 50, height: 50)
                         
                     }
                     .actionSheet(isPresented: $showingActionSheet) {
@@ -167,7 +167,7 @@ struct LandingView: View {
                     
                     
                     
-                    Image("messageIconWhite")
+                    Image("chat icon")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
@@ -176,10 +176,10 @@ struct LandingView: View {
                         }
                         .padding(10)
                         .sheet(isPresented: $showingAddFriendInstructions) {
-                            AddFriends()
+                            AddFriendSteps()
                         }
                     
-                    Image("whiteSmiley")
+                    Image("happy-face icon")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
@@ -191,7 +191,7 @@ struct LandingView: View {
                             ImagePicker(image: self.$inputImage)
                         }
                     
-                    Image("settingsiconwhite")
+                    Image("settings icon")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
@@ -236,7 +236,7 @@ struct LandingView: View {
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onAppear(perform: reloadData)
         .onShake {
-            isAdViewPresented = true
+            isShakingCoolPresented = true
         }
     }
     
@@ -376,8 +376,11 @@ struct LandingView: View {
             
             for id in friendIDsToInvite {
                 userDataSource.addRoom(userID: id, roomID: room.id)
-                let token = userDataSource.getUser(id: id).deviceFCMToken
-                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk. Please let them know When can you talk on BestFriends", body: body)
+                let user = userDataSource.getUser(id: id)
+                if user.notificationsLP == true {
+                    let token = user.deviceFCMToken
+                    PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk. Please let them know When can you talk on BestFriends", body: body)
+                }
             }
         }
     }

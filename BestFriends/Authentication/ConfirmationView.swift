@@ -14,7 +14,8 @@ struct ConfirmationView: View {
     @State var confirmationCode = ""
     
     let username: String
-    
+    let password: String
+
     var body: some View {
         ZStack {
             Image("SignUpPinBackground")
@@ -26,10 +27,12 @@ struct ConfirmationView: View {
                 Spacer()
                     .frame(height: 5)
                 
-                Text("Confirm your email")
-                    .font(.largeTitle)
-                    .bold()
-                    .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                Text("Enter the confirmation code\nyou recieved in the email.")
+                    .font(.system(size: 28, weight: .light))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 Spacer()
                     .frame(height: 300)
@@ -50,18 +53,20 @@ struct ConfirmationView: View {
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .cornerRadius(25)
                     .autocapitalization(.none)
-                
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
                 Spacer()
                     .frame(height: 30)
                 
                 Button("Confirm", action: {
-                    sessionManager.confirm(username: username, code: confirmationCode)
+                    sessionManager.confirm(username: username, password: password, code: confirmationCode)
                 })
                 .frame(width: 200, height: 50, alignment: .center)
                 .font(.title)
                 .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                 .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                 .cornerRadius(25)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
                
             }
@@ -71,6 +76,6 @@ struct ConfirmationView: View {
 
 struct ConfirmationView_Previews : PreviewProvider {
     static var previews: some View {
-        ConfirmationView(username: "AlexTitov1")
+        ConfirmationView(username: "AlexTitov1", password: " ")
     }
 }

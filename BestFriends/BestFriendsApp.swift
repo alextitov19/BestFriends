@@ -20,7 +20,7 @@ struct BestFriendsApp: App {
         configureAmplify()
         FirebaseApp.configure()
         
-//        sessionManager.signOut()
+        sessionManager.signOut()
         
 //        if Amplify.Auth.getCurrentUser() != nil {
 //            let id  = Amplify.Auth.getCurrentUser()!.username
@@ -37,7 +37,7 @@ struct BestFriendsApp: App {
 //                return
 //            }
 //        }
-        sessionManager.getCurrentAuthUser()
+//        sessionManager.getCurrentAuthUser()
         
         NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: .main) { _ in
             // Background...
@@ -56,8 +56,8 @@ struct BestFriendsApp: App {
             case .signUp:
                 SignUpPage1()
                     .environmentObject(sessionManager)
-            case .confirmationCode(let username):
-                ConfirmationView(username: username)
+            case .confirmationCode(let username, let password):
+                ConfirmationView(username: username, password: password)
                     .environmentObject(sessionManager)
             case .home(let userID):
                 LandingView(myID: userID)
@@ -73,6 +73,12 @@ struct BestFriendsApp: App {
                     .environmentObject(sessionManager)
             case .chat(let room):
                 MessageRoomView(room: room)
+                    .environmentObject(sessionManager)
+            case .infoPages(let username, let password):
+                InfoViewPage1(username: username, password: password)
+                    .environmentObject(sessionManager)
+            case .loading:
+                Loading()
                     .environmentObject(sessionManager)
             }
             

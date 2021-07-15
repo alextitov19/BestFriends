@@ -24,20 +24,20 @@ struct NotificationPreLoad: View {
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
                 
-//                Text("")
-//                    .italic()
-//                    .font(.system(size: 40))
-//                    .fontWeight(.regular)
-//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                    .multilineTextAlignment(.center)
-//                    .frame(width: 375, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                //                Text("")
+                //                    .italic()
+                //                    .font(.system(size: 40))
+                //                    .fontWeight(.regular)
+                //                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                //                    .multilineTextAlignment(.center)
+                //                    .frame(width: 375, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Button(action: {
                     sessionManager.chat(room: RoomDataSource().getRoom(id: roomID))
                     setTimer(minutes: 0)
@@ -45,15 +45,16 @@ struct NotificationPreLoad: View {
                     
                     
                     Text("Chat now!")
-                       
+                        
                         .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .frame(width: 300, height: 75)
                         .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
                         .cornerRadius(50)
-                        
-                        
-
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                    
+                    
                 }
                 .padding(30)
                 
@@ -77,7 +78,8 @@ struct NotificationPreLoad: View {
                         .frame(width: 200, height: 50)
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
-                        
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
                 }
                 .padding(20)
                 
@@ -90,20 +92,22 @@ struct NotificationPreLoad: View {
                         .frame(width: 200, height: 50)
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
                 }
                 .padding(20)
                 
-//                Button(action: {
-//                    setTimer(minutes: 15)
-//                }) {
-//                    Text("15 min.")
-//                        .font(.title)
-//                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-//                        .frame(width: 200, height: 50)
-//                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-//                        .cornerRadius(25)
-//                }
-//                .padding(20)
+                //                Button(action: {
+                //                    setTimer(minutes: 15)
+                //                }) {
+                //                    Text("15 min.")
+                //                        .font(.title)
+                //                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                //                        .frame(width: 200, height: 50)
+                //                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                //                        .cornerRadius(25)
+                //                }
+                //                .padding(20)
                 
                 Button(action: {
                     setTimer(minutes: 30)
@@ -114,6 +118,8 @@ struct NotificationPreLoad: View {
                         .frame(width: 200, height: 50)
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
                 }
                 .padding(20)
                 
@@ -126,6 +132,8 @@ struct NotificationPreLoad: View {
                         .frame(width: 200, height: 50)
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
                 }
                 .padding(20)
                 
@@ -138,6 +146,8 @@ struct NotificationPreLoad: View {
                         .frame(width: 200, height: 50)
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
                 }
                 .padding(20)
             }
@@ -161,8 +171,11 @@ struct NotificationPreLoad: View {
                 default:
                     body = "\(user.firstName) will be ready to chat in \(minutes) minutes."
                 }
-                let token = userDataSource.getUser(id: RoomDataSource().getRoom(id: roomID).creatorID).deviceFCMToken
-                PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName)", body: body)
+                let user = userDataSource.getUser(id: RoomDataSource().getRoom(id: roomID).creatorID)
+                if user.notificationsLP {
+                    let token = user.deviceFCMToken
+                    PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName)", body: body)
+                }
             }
         }
     }

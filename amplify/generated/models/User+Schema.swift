@@ -29,6 +29,7 @@ extension User {
     case BMRoom
     case notificationsBM
     case notificationsLP
+    case chatFontSize
   }
   
   public static let keys = CodingKeys.self
@@ -47,7 +48,7 @@ extension User {
       .field(user.birthday, is: .required, ofType: .date),
       .field(user.pronouns, is: .required, ofType: .string),
       .field(user.location, is: .optional, ofType: .string),
-      .field(user.adPreference, is: .required, ofType: .string),
+      .field(user.adPreference, is: .required, ofType: .embeddedCollection(of: Int.self)),
       .field(user.deviceFCMToken, is: .required, ofType: .string),
       .field(user.isOnline, is: .required, ofType: .bool),
       .field(user.invitedRooms, is: .optional, ofType: .embeddedCollection(of: InvitedRoom.self)),
@@ -63,7 +64,8 @@ extension User {
       .field(user.BMFriend, is: .optional, ofType: .string),
       .field(user.BMRoom, is: .optional, ofType: .string),
       .field(user.notificationsBM, is: .required, ofType: .bool),
-      .field(user.notificationsLP, is: .required, ofType: .bool)
+      .field(user.notificationsLP, is: .required, ofType: .bool),
+      .field(user.chatFontSize, is: .required, ofType: .int)
     )
     }
 }
