@@ -10,39 +10,39 @@ import Amplify
 
 struct ShakingCoolView: View {
     
-    var shakingCoolLinks: [String] = []
+    @State var shakingCoolLinks: [String] = []
     
     @State var showingImagePicker = false
     @State var inputImage: UIImage?
     var shakingCoolDataSource = ShakingCoolDataSource()
     
-    init() {
-        reloadData()
-    }
+   
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
+                .onAppear {
+                    reloadData()
+                }
             
             VStack {
                 // MARK: Header
                 Text("Shaking Cool")
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 40, weight: .thin))
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-                Text("As you add friends they can send you a favorite image to add to 'your' ShakingCool.")
-                    .italic()
-                    .font(.system(size: 20))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 385, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                
-                
+//                Text("As you add friends they can send you a favorite image to add to 'your' ShakingCool.")
+//                    .italic()
+//                    .font(.system(size: 20))
+//                    .fontWeight(.ultraLight)
+//                    .foregroundColor(Color(#colorLiteral(red: 0.9930974841, green: 1, blue: 0.9261136651, alpha: 1)))
+//                    .multilineTextAlignment(.center)
+//                    .frame(width: 385, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer().frame(height: 20)
                 
@@ -59,9 +59,12 @@ struct ShakingCoolView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 200)
+                            .cornerRadius(30)
                             .onTapGesture {
                                 shakingCoolDataSource.deleteImage(id: link)
+                                reloadData()
                                 showingImagePicker = true
+                                
                             }
                         
                         Spacer()
@@ -69,27 +72,20 @@ struct ShakingCoolView: View {
                         
                     }
                 }
-                
                 Spacer()
-                
+                                
                 
                 Text("You can delete/replace an image by tapping it")
                     .font(.system(size: 20, weight: .thin))
                     .foregroundColor(.white)
                 
-                
-                
-                Spacer()
-                    .frame(height: 10)
-                
-                
-                
                 Text("Add Image")
                     .frame(width: 150, height: 50, alignment: .center)
-                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 25, weight: .regular))
+                    .font(.title)
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                     .cornerRadius(25)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     .onTapGesture {
                         if howManyLeft() > 0 {
                             showingImagePicker = true
@@ -98,7 +94,11 @@ struct ShakingCoolView: View {
                     .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                         ImagePicker(image: self.$inputImage)
                     }
+                    .padding()
+
                 
+                Spacer()
+                    .frame(height: 90)
                 
                 
             }
@@ -110,21 +110,27 @@ struct ShakingCoolView: View {
         showingImagePicker = false
         guard let inputImage = inputImage else { return }
         print("Got the image")
-        ShakingCoolDataSource().uploadImage(image: inputImage)
+        let state = ShakingCoolDataSource().uploadImage(image: inputImage)
+        if state == true {
+            sleep(3)
+            reloadData()
+        }
     }
     
-    private mutating func reloadData() {
-        guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
-        let user = UserDataSource().getUser(id: id)
+    private func reloadData() {
+        let user = UserDataSource().getCurrentUser()
         print("Got user: ", user)
-        guard let links = user.shakingCoolLinks else { return }
-        self.shakingCoolLinks = links
+        shakingCoolLinks = []
+        let links = user.shakingCoolLinks
+        if links != nil {
+            shakingCoolLinks = links!
+            print("Links: ", links!)
+        }
         print("Shaking Cool Links: ", shakingCoolLinks)
     }
     
     private func howManyLeft() -> Int {
-        guard let id = Amplify.Auth.getCurrentUser()?.username else { return 0 }
-        let user = UserDataSource().getUser(id: id)
+        let user = UserDataSource().getCurrentUser()
         let first = user.friends?.count ?? 0
         let second = user.shakingCoolLinks?.count ?? 0
         return 2 + first - second

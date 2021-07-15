@@ -236,7 +236,7 @@ struct LandingView: View {
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onAppear(perform: reloadData)
         .onShake {
-            isAdViewPresented = true
+            isShakingCoolPresented = true
         }
     }
     
