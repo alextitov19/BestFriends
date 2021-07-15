@@ -574,7 +574,7 @@ struct BlueModePage1: View {
                         Spacer().frame(height: 25)
                         
                         NavigationLink(
-                            destination: InfoViewPage1(),
+                            destination: EmptyView(),
                             label: {
                                 Text("Upload images of happier days to your friend's ShakingCool - prompting a smile!")
                                     .frame(width: 400, height: 100, alignment: .center)
@@ -605,7 +605,7 @@ struct BlueModePage1: View {
                             .frame(height: 30)
                         
                         NavigationLink(
-                            destination: InfoViewPage1(),
+                            destination: EmptyView(),
                             label: {
                                 Text("Unlock special stickers - saying the words you can't seem to say right now.")
                                     .frame(width: 400, height: 100, alignment: .center)

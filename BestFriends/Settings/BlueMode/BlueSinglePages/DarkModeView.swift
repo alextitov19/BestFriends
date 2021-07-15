@@ -96,7 +96,7 @@ struct DarkModeView: View {
                             
                             
                             NavigationLink(
-                                destination: InfoViewPage1(),
+                                destination: EmptyView(),
                                 label: {
                                     Text("Ready? Let's try to set a time to meet or talk.")
                                 })

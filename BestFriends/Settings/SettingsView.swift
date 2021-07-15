@@ -50,7 +50,7 @@ struct SettingsView: View {
                             .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                         NavigationLink(
-                            destination: InfoViewPage1(),
+                            destination: EmptyView(),
                             label: {
                                 Text("BestFriends Demo")
                             })

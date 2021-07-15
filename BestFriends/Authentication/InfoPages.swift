@@ -11,60 +11,66 @@ import Amplify
 import SwiftUI
 
 struct InfoViewPage1: View {
+    @EnvironmentObject var sessionManager: SessionManager
+    
+    let username: String
+    let password: String
     
     var body: some View {
-        
-        ZStack {
-            Image("SignUpPinBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+        NavigationView {
             
-            VStack {
-                
-                
-                Spacer()
-                    .frame(height: 60)
+            ZStack {
+                Image("SignUpPinBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
                 
                 VStack {
-                    Text("BestFriends \n Walk-through")
-                        .font(.system(size: 40))
-                       
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 350, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
                     
                     Spacer()
-                        .frame(height: 300)
+                        .frame(height: 60)
                     
-                    Text("It only takes 30 seconds :)")
-                        .font(.system(size: 25))
-                        .italic()
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .multilineTextAlignment(.center)
-                        .frame(width: 350, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    NavigationLink(destination: InfoViewPage2()) {
-                        Text("Ok, fine.")
-                            .font(.title)
+                    VStack {
+                        Text("BestFriends \n Walk-through")
+                            .font(.system(size: 40))
+                            
+                            .fontWeight(.regular)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .frame(width: 200, height: 50)
-                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                            .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
-                   
+                            .multilineTextAlignment(.center)
+                            .frame(width: 350, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
-                    
+                        Spacer()
+                            .frame(height: 300)
+                        
+                        Text("It only takes 30 seconds :)")
+                            .font(.system(size: 25))
+                            .italic()
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 350, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        NavigationLink(destination: InfoViewPage2(username: username, password: password).environmentObject(sessionManager)) {
+                            Text("Ok, fine.")
+                                .font(.title)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .frame(width: 200, height: 50)
+                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                            
+                            
+                            
+                        }
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        
                     }
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
                 }
             }
         }
@@ -75,6 +81,9 @@ struct InfoViewPage1: View {
 
 
 struct InfoViewPage2: View {
+    @EnvironmentObject var sessionManager: SessionManager
+    let username: String
+    let password: String
     
     var body: some View {
         
@@ -148,7 +157,7 @@ struct InfoViewPage2: View {
                 Spacer()
                     .frame(height: 60)
                 
-             
+                
                 
                 
                 
@@ -156,7 +165,7 @@ struct InfoViewPage2: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    NavigationLink(destination: InfoViewPage3()) {
+                    NavigationLink(destination: InfoViewPage3(username: username, password: password).environmentObject(sessionManager)) {
                         Text("That's cool")
                             .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -164,7 +173,7 @@ struct InfoViewPage2: View {
                             .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+                        
                     }
                     
                     Spacer()
@@ -180,6 +189,9 @@ struct InfoViewPage2: View {
 
 
 struct InfoViewPage3: View {
+    @EnvironmentObject var sessionManager: SessionManager
+    let username: String
+    let password: String
     
     var body: some View {
         
@@ -199,7 +211,7 @@ struct InfoViewPage3: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
-              
+                
                 
                 
                 Spacer()
@@ -234,7 +246,7 @@ struct InfoViewPage3: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    NavigationLink(destination: InfoViewPage4()) {
+                    NavigationLink(destination: InfoViewPage4(username: username, password: password).environmentObject(sessionManager)) {
                         Text("Next")
                             .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -242,7 +254,7 @@ struct InfoViewPage3: View {
                             .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+                        
                     }
                     
                     Spacer()
@@ -262,6 +274,9 @@ struct InfoViewPage3: View {
 //***************************************
 
 struct InfoViewPage4: View {
+    @EnvironmentObject var sessionManager: SessionManager
+    let username: String
+    let password: String
     
     var body: some View {
         
@@ -302,9 +317,9 @@ struct InfoViewPage4: View {
                 
                 
                 VStack {
-                
                     
-                    NavigationLink(destination: InfoViewPage5()) {
+                    
+                    NavigationLink(destination: InfoViewPage5(username: username, password: password).environmentObject(sessionManager)) {
                         Text("Long-tap to save message >")
                             .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -312,7 +327,7 @@ struct InfoViewPage4: View {
                             .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+                        
                         
                         
                     }
@@ -335,6 +350,9 @@ struct InfoViewPage4: View {
 //***************************************
 
 struct InfoViewPage5: View {
+    @EnvironmentObject var sessionManager: SessionManager
+    let username: String
+    let password: String
     
     var body: some View {
         
@@ -378,7 +396,7 @@ struct InfoViewPage5: View {
                 
                 
                 
-                NavigationLink(destination: InfoViewPage6()) {
+                NavigationLink(destination: InfoViewPage6(username: username, password: password).environmentObject(sessionManager)) {
                     Text("Next")
                         .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -386,7 +404,7 @@ struct InfoViewPage5: View {
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+                    
                 }
                 
                 Spacer()
@@ -404,8 +422,9 @@ struct InfoViewPage5: View {
 
 
 struct InfoViewPage6: View {
-    
     @EnvironmentObject var sessionManager: SessionManager
+    let username: String
+    let password: String
     
     var body: some View {
         NavigationView{
@@ -415,32 +434,32 @@ struct InfoViewPage6: View {
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
-
-
+                
+                
                 VStack {
-                        Text("Adding Your Friends.")
-                            
-                            .font(.system(size: 40))
-                            .fontWeight(.regular)
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    Text("Adding Your Friends.")
+                        
+                        .font(.system(size: 40))
+                        .fontWeight(.regular)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     Spacer()
                         .frame(height: 20)
                     
                     
                     HStack {
-                          
-                      
-                            Text("Tap this icon on 'homepage' >")
-                                .italic()
-                                .font(.system(size: 27))
-                                .fontWeight(.regular)
-                                .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
-                                .multilineTextAlignment(.center)
-                                .frame(width: 200, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
-                       
+                        
+                        
+                        Text("Tap this icon on 'homepage' >")
+                            .italic()
+                            .font(.system(size: 27))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)))
+                            .multilineTextAlignment(.center)
+                            .frame(width: 200, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
+                        
                         
                         Image("inviteWhite")
                             .resizable()
@@ -448,24 +467,24 @@ struct InfoViewPage6: View {
                             .scaledToFill()
                         
                     }
+                    
+                    Text("(Follow instructions on Pop up)")
                         
-                        Text("(Follow instructions on Pop up)")
-                            
-                            .font(.system(size: 25))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .multilineTextAlignment(.center)
-                            .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                        
-                        
-                      
+                        .font(.system(size: 25))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    
+                    
+                    
                     
                     Spacer()
                         .frame(height: 275)
                     
-                  
-                   
+                    
+                    
                     Text("(That's it, you're done.)")
                         .italic()
                         .font(.system(size: 25))
@@ -474,32 +493,35 @@ struct InfoViewPage6: View {
                         .multilineTextAlignment(.center)
                         .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
-                    NavigationLink(destination: SettingsView()) {
-                        Text("Let's get started >")
-                            .font(.title)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                            .frame(width: 350, height: 50)
-                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                            .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-              
-                    }
+                    Text("Let's get started >")
+                        .font(.title)
+                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                        .frame(width: 350, height: 50)
+                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(25)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        .onTapGesture {
+                            sessionManager.login(username: username, password: password)
+                        }
+                    
+                    Spacer()
+                        .frame(height: 100)
+                }
             }
         }
     }
-}
-
+    
 }
 
 
 struct InfoViewPags_Previews : PreviewProvider {
     static var previews: some View {
-//        InfoViewPage1()
-        InfoViewPage2()
-//        InfoViewPage3()
-//        InfoViewPage4()
-//        InfoViewPage5()
-//        InfoViewPage6()
+        //        InfoViewPage1()
+        InfoViewPage2(username: "", password: "")
+        //        InfoViewPage3()
+        //        InfoViewPage4()
+        //        InfoViewPage5()
+        //        InfoViewPage6()
         
     }
 }

@@ -72,7 +72,7 @@ struct Tokens: View {
                             .frame(height: 25)
                         
                         NavigationLink(
-                            destination: InfoViewPage1(),
+                            destination: EmptyView(),
                             label: {
                                 Text("Click Link in Ad video = 3 token.")
                             })
@@ -88,7 +88,7 @@ struct Tokens: View {
                             .frame(height: 20)
                         
                         NavigationLink(
-                            destination: InfoViewPage1(),
+                            destination: EmptyView(),
                             label: {
                                 Text("How many tokens do I have?")
                             })

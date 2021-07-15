@@ -14,7 +14,8 @@ struct ConfirmationView: View {
     @State var confirmationCode = ""
     
     let username: String
-    
+    let password: String
+
     var body: some View {
         ZStack {
             Image("SignUpPinBackground")
@@ -55,7 +56,7 @@ struct ConfirmationView: View {
                     .frame(height: 30)
                 
                 Button("Confirm", action: {
-                    sessionManager.confirm(username: username, code: confirmationCode)
+                    sessionManager.confirm(username: username, password: password, code: confirmationCode)
                 })
                 .frame(width: 200, height: 50, alignment: .center)
                 .font(.title)
@@ -71,6 +72,6 @@ struct ConfirmationView: View {
 
 struct ConfirmationView_Previews : PreviewProvider {
     static var previews: some View {
-        ConfirmationView(username: "AlexTitov1")
+        ConfirmationView(username: "AlexTitov1", password: " ")
     }
 }
