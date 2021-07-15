@@ -21,11 +21,11 @@ struct SmileNotesView: View {
     
     var body: some View {
         ZStack {
-            Image("SmileNote4")
+            Image("smileNotesCircles")
                 .resizable()
-                .ignoresSafeArea()
+//                .rotationEffect(Angle(degrees: 90))
                 .scaledToFill()
-            
+                .ignoresSafeArea()
             
             VStack {
                 // MARK: Header
