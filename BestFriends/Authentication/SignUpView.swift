@@ -1437,7 +1437,8 @@ struct SignUpQuestionPage3: View {
                         tokens: 0,
                         background: 1,
                         notificationsBM: true,
-                        notificationsLP: true)
+                        notificationsLP: true,
+                        chatFontSize: 16)
                     
                     userMamager.create(user)
                     

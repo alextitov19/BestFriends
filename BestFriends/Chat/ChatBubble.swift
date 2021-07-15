@@ -11,14 +11,14 @@ import Amplify
 struct ChatBubble: View {
     
     let message: Message
-    let myID: String
+    let user: User
     let messageDataSource: MessageDataSource
     @State var showingActionSheet = false
     
     init(msg: Message, messageDS: MessageDataSource) {
         message = msg
         messageDataSource = messageDS
-        myID = Amplify.Auth.getCurrentUser()?.username ?? "could not find username"
+        user = UserDataSource().getCurrentUser()
     }
     
     var body: some View {
@@ -33,7 +33,7 @@ struct ChatBubble: View {
                     .frame(width: 100, height: 12)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.white)
-                    .font(.system(size: 14).weight(.thin))
+                    .font(.system(size: CGFloat(user.chatFontSize)).weight(.thin))
                 
                 Image(uiImage: uiimage)
                     .resizable()
@@ -58,7 +58,7 @@ struct ChatBubble: View {
             }
             
             
-        } else if message.senderID == myID {
+        } else if message.senderID == user.id {
             // A message sent by the CURRENT USED
             
             VStack {

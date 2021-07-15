@@ -378,7 +378,7 @@ struct SettingsView: View {
                                             NavigationLink(
                                                 destination: ChangeChatFontSize(),
                                                 label: {
-                                                    Text("Chat Font Size *** (Not Built Yet)")
+                                                    Text("Chat Font Size")
                                                 })
                                                 
                                                 .frame(width: 325, height: 50)
