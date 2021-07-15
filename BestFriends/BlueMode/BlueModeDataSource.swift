@@ -28,8 +28,9 @@ struct BlueModeDataSource {
         
         userDS.updateUser(user: myself)
         userDS.updateUser(user: friend)
-        
-        PushNotificationSender().sendPushNotification(token: friend.deviceFCMToken, title: "\(myself.firstName) added you to BlueMode!", body: "It seems like \(myself.firstName) has something important to talk to you about.")
+        if friend.notificationsLP == true {
+            PushNotificationSender().sendPushNotification(token: friend.deviceFCMToken, title: "\(myself.firstName) added you to BlueMode!", body: "It seems like \(myself.firstName) has something important to talk to you about.")
+        }
     }
     
 }
