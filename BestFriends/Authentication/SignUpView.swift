@@ -1004,7 +1004,7 @@ struct SignUpPage9: View {
     var pronouns: String
     var birthdate: Date
     var currentPin: String
-    @State var locationString: String = ""
+    @State var locationString: String?
     @State var readyToProceed = false
     
     private let locationManager = LocationManager()
@@ -1092,13 +1092,13 @@ struct SignUpPage9: View {
                         
                         locationString = ""
                         if let country = placemark.country {
-                            locationString = locationString + "\(country)"
+                            locationString = locationString! + "\(country)"
                         }
                         if let state = placemark.administrativeArea {
-                            locationString = locationString + ", \(state)"
+                            locationString = locationString! + ", \(state)"
                         }
                         if let town = placemark.locality {
-                            locationString = locationString + ", \(town)"
+                            locationString = locationString! + ", \(town)"
                         }
                     }
                     
@@ -1135,7 +1135,7 @@ struct SignUpQuestionPage1: View {
     var pronouns: String
     var birthdate: Date
     var currentPin: String
-    var location: String
+    var location: String?
     
     var body: some View {
         ZStack {
@@ -1204,7 +1204,7 @@ struct SignUpQuestionPage2: View {
     var pronouns: String
     var birthdate: Date
     var currentPin: String
-    var location: String
+    var location: String?
     
     var body: some View {
         ZStack {
@@ -1290,7 +1290,7 @@ struct SignUpQuestionPage3: View {
     var pronouns: String
     var birthdate: Date
     var currentPin: String
-    var location: String
+    var location: String?
     
     var body: some View {
         ZStack {
@@ -1479,15 +1479,15 @@ struct SignUpPage1_Previews : PreviewProvider {
     static var previews: some View {
         
         //
-                SignUpPage1().environmentObject(SessionManager())
-        //        SignUpPage2(firstName: "").environmentObject(SessionManager())
-        //        SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
-        //        SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
-        //                SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
-        //                SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
-        //        SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
+//                SignUpPage1().environmentObject(SessionManager())
+//                SignUpPage2(firstName: "").environmentObject(SessionManager())
+//                SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
+//                SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
+//                        SignUpPage5(firstName: "", lastName: "", username: "", password: "").environmentObject(SessionManager())
+//                        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
+//                SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
 //        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
-        //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
+                SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
         //            SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
         
