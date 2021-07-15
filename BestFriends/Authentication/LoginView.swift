@@ -99,9 +99,9 @@ struct LoginView: View {
                         
                         
                         Button("Don't have an account? Sign up.", action: sessionManager.showSignUp)
-                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            .frame(width: 270, height: 30)
+                            .frame(width: 270, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
 //                            .overlay(
 //                                RoundedRectangle(cornerRadius: 25)
