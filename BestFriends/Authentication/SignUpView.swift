@@ -31,8 +31,6 @@ struct SignUpPage1: View {
                 
                 
                 VStack {
-                
-                    
                     Spacer()
                         .frame(height: 5)
                     
@@ -42,9 +40,6 @@ struct SignUpPage1: View {
                         .multilineTextAlignment(.center)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-
-
-                    
                     
                     Text("The positivity app :)")
                         .font(.system(size: 25))
@@ -52,9 +47,7 @@ struct SignUpPage1: View {
                         .fontWeight(.thin)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                    
-                    
-                    
+                                        
                     Spacer()
                         .frame(height: 400)
                     

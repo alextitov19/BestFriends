@@ -85,6 +85,43 @@ struct InfoViewPage2: View {
                 .scaledToFill()
             
             VStack {
+                Image("starPurple")
+                    .resizable()
+                    .frame(width: 80, height: 80, alignment: .center)
+                    .scaledToFill()
+                    .blendMode(.screen)
+                    .offset(x: -100, y: -110)
+                
+                Image("starPurple")
+                    .resizable()
+                    .frame(width: 80, height: 80, alignment: .center)
+                    .scaledToFill()
+                    .blendMode(.screen)
+                    .offset(x: 130, y: -240)
+                
+                Image("starPurple")
+                    .resizable()
+                    .frame(width: 80, height: 80, alignment: .center)
+                    .scaledToFill()
+                    .blendMode(.screen)
+                    .offset(x: -30, y: -100)
+                
+                Image("starBlue")
+                    .resizable()
+                    .frame(width: 80, height: 80, alignment: .center)
+                    .scaledToFill()
+                    .blendMode(.screen)
+                    .offset(x: -130, y: 130)
+                
+                Image("starGreen")
+                    .resizable()
+                    .frame(width: 80, height: 80, alignment: .center)
+                    .scaledToFill()
+                    .blendMode(.screen)
+                    .offset(x: 110, y: -20)
+            }
+            
+            VStack {
                 
                 
                 Text("You're never alone.")
@@ -457,12 +494,12 @@ struct InfoViewPage6: View {
 
 struct InfoViewPags_Previews : PreviewProvider {
     static var previews: some View {
-        InfoViewPage1()
+//        InfoViewPage1()
         InfoViewPage2()
-        InfoViewPage3()
-        InfoViewPage4()
-        InfoViewPage5()
-        InfoViewPage6()
+//        InfoViewPage3()
+//        InfoViewPage4()
+//        InfoViewPage5()
+//        InfoViewPage6()
         
     }
 }
