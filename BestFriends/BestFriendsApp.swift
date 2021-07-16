@@ -80,6 +80,9 @@ struct BestFriendsApp: App {
             case .loading:
                 Loading()
                     .environmentObject(sessionManager)
+            case .pin(let room):
+                PinView(room: room)
+                    .environmentObject(sessionManager)
             }
             
         }

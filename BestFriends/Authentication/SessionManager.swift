@@ -19,6 +19,8 @@ enum AppState {
     case chat(room: Room)
     case infoPages(username: String, password: String)
     case loading
+    case pin(room: Room)
+
 }
 
 final class SessionManager: ObservableObject {
@@ -64,6 +66,9 @@ final class SessionManager: ObservableObject {
         appState = .infoPages(username: username, password: password)
     }
     
+    func showPin(room: Room) {
+        appState = .pin(room: room)
+    }
     
     
     func signUp(username: String, email: String, password: String) {

@@ -20,7 +20,6 @@ struct MessageRoomView: View {
     @State var showingMediaMenu = false
     @State var stickerPopoverShowing = false
     
-    @State var showingPin = false
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
     @State var areAdsHidden = true
@@ -52,9 +51,8 @@ struct MessageRoomView: View {
     
     
     init(room: Room) {
-        let id = Amplify.Auth.getCurrentUser()?.username ?? "Failed getting id"
-        self.user = UserDataSource().getUser(id: id)
-        self.messageDataSource  = MessageDataSource(room: room)
+        self.user = UserDataSource().getCurrentUser()
+        self.messageDataSource = MessageDataSource(room: room)
         self.room = room
         
         let adDoc = adDataSource.getAdDocuemnt()
@@ -65,9 +63,7 @@ struct MessageRoomView: View {
         }
         print("Count of ids: \(adIDs.count), count of names: \(adNames.count)")
         
-        
         if room.blueMode == true {
-            
             if room.members[0] == Amplify.Auth.getCurrentUser()!.username {
                 RoomDataSource().updateRoomTime(room: room, isMember1: true)
                 lastRead = room.lastSeenByMember2
@@ -76,8 +72,14 @@ struct MessageRoomView: View {
                 lastRead = room.lastSeenByMember1
             }
         }
-        
-        
+    }
+    
+    private func checkHidden() {
+        if user.hiddenRooms != nil {
+            if user.hiddenRooms!.contains(room.id) {
+                sessionManager.showPin(room: room)
+            }
+        }
     }
     
     @State var currentBody: String = ""
@@ -89,18 +91,21 @@ struct MessageRoomView: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
+                .onAppear {
+                    checkHidden()
+                }
                 .onReceive(timer) { time in
                     print("Showing an ad")
                     showAd()
                 }
             
-            AdPlayerView(name: "EnrichHER")
-                .ignoresSafeArea()
-                .isHidden(areAdsHidden)
-            
-            AdPlayerView(name: "purpleChat")
-                .ignoresSafeArea()
-                .isHidden(!areAdsHidden)
+//            AdPlayerView(name: "EnrichHER")
+//                .ignoresSafeArea()
+//                .isHidden(areAdsHidden)
+//
+//            AdPlayerView(name: "purpleChat")
+//                .ignoresSafeArea()
+//                .isHidden(!areAdsHidden)
             
             VStack {
                 HStack { //header
@@ -109,30 +114,35 @@ struct MessageRoomView: View {
                         .onTapGesture {
                             sessionManager.showRooms()
                         }
-                        .padding()
-                                        
-                    ZStack {
-                        if roomname == "" {
-                            Text(room.name)
-                                .font(.system(size: 40))
-                                .foregroundColor(.white)
-                        } else {
-                            Text(roomname)
-                                .font(.system(size: 40))
-                                .foregroundColor(.white)
-                        }
-                        
-                        TextField("", text: $roomname) { changed in
-                            print("Editing...")
-                        } onCommit: {
-                            print("Uploading new name...")
-                            RoomDataSource().updateRoomName(room: room, name: roomname)
-                        }
-                        .foregroundColor(.clear)
-                        .background(Color(.clear))
-                        .frame(width:200)
-                    }
-                    .padding()
+                    
+//                    ZStack {
+//                        if roomname == "" {
+//                            Text(room.name)
+//                                .font(.system(size: 40))
+//                                .foregroundColor(.white)
+//                        } else {
+//                            Text(roomname)
+//                                .font(.system(size: 40))
+//                                .foregroundColor(.white)
+//                        }
+//
+//                        TextField("", text: $roomname) { changed in
+//                            print("Editing...")
+//                        } onCommit: {
+//                            print("Uploading new name...")
+//                            RoomDataSource().updateRoomName(room: room, name: roomname)
+//                        }
+//                        .foregroundColor(.clear)
+//                        .background(Color(.clear))
+//                        .frame(width:200)
+//                    }
+//                    .padding()
+                    
+                    Text(room.name)
+                        .font(.system(size: 25, weight: .light))
+                        .frame(width: 200)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
                     
                     Button(action: {
                         showingNotifications = true
@@ -142,24 +152,15 @@ struct MessageRoomView: View {
                             .frame(width: 40, height: 40)
                             .scaledToFit()
                     }
-                    .padding()
 
                     Button(action: {
-                        showingPin = true
-                        var rooms = user.hiddenRooms ?? []
-                        if rooms.contains(room.id) == false {
-                            rooms.append(room.id)
-                        }
-                        var updatedUser = user
-                        updatedUser.hiddenRooms = rooms
-                        UserDataSource().updateUser(user: updatedUser)
+                        hideChat()
                     }) {
                         Image("whiteLock")
                             .resizable()
                             .frame(width: 40, height: 40)
                             .scaledToFit()
                     }
-                    .padding()
                 }
                 
                 ScrollView { //messages
@@ -271,8 +272,6 @@ struct MessageRoomView: View {
             .navigationBarTitle("")
             .navigationBarHidden(true)
             
-            NavigationLink(destination: PinView(roomID: room.id), isActive: $showingPin) { EmptyView() }
-            
             if adButtonsHidden == false {
                 VStack { // Advertisement Buttons
                     ZStack {
@@ -379,6 +378,17 @@ struct MessageRoomView: View {
             ImagePicker(image: self.$inputImage)
         }
         
+    }
+    
+    private func hideChat() {
+        var rooms = user.hiddenRooms ?? []
+        if rooms.contains(room.id) == false {
+            rooms.append(room.id)
+            var updatedUser = user
+            updatedUser.hiddenRooms = rooms
+            UserDataSource().updateUser(user: updatedUser)
+            sessionManager.showPin(room: room)
+        }
     }
     
     private func loadImage() {

@@ -11,15 +11,12 @@ import Amplify
 struct PinView: View {
     
     //  @State var title: String = "Enter your PIN"
-    @State var title: String = "To Restore Chat Messages, Enter your PIN"
-    
+    @State var title: String = "To Restore Chat Messages, \nEnter your PIN"
     @State var currentPin: String = ""
-    
-    var roomID: String
-    
-    init(roomID: String) {
-        self.roomID = roomID
-    }
+    @State var color = Color(.white)
+    @EnvironmentObject var sessionManager: SessionManager
+
+    let room: Room
     
     var body: some View {
         ZStack {
@@ -29,20 +26,9 @@ struct PinView: View {
                 .ignoresSafeArea()
             
             VStack {
-                
                 Text(title)
-                    // .font(.system(size: 20).bold())
-                    //   .foregroundColor(.white)
-                    
-                    .italic()
-                    .font(.system(size: 25))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 300, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                
-                
+                    .font(.system(size: 25, weight: .light))
+                    .foregroundColor(color)
                 
                 Spacer().frame(height: 85)
                 
@@ -219,6 +205,11 @@ struct PinView: View {
                                 .stroke(Color.white, lineWidth: 2)
                         )
                 }
+                
+                Button("Return", action: {sessionManager.showRooms()})
+                    .foregroundColor(.white)
+                    .font(.system(size: 20, weight: .light))
+                    .padding(20)
             }
             
         }
@@ -227,24 +218,25 @@ struct PinView: View {
     private func numberEntered() {
         if currentPin.count == 4 {
             let userDataSource = UserDataSource()
-            
-            guard let userID = Amplify.Auth.getCurrentUser()?.username else {return}
-            var user = userDataSource.getUser(id: userID)
+            var user = userDataSource.getCurrentUser()
             
             if currentPin == user.secretPin {
                 // passcode correct -> remove or add current room id to hidden room ids for the current user
                 var rooms = user.hiddenRooms ?? []
-                if rooms.contains(roomID) {
-                    rooms.remove(at: rooms.firstIndex(of: roomID)!)
-                } else {
-                    rooms.append(roomID)
+                if rooms.contains(room.id) {
+                    rooms.remove(at: rooms.firstIndex(of: room.id)!)
+                    user.hiddenRooms = rooms
+                    userDataSource.updateUser(user: user)
+                    title = "Success"
+                    color = Color(.green)
+                    sessionManager.chat(room: room)
                 }
                 
-                user.hiddenRooms = rooms
-                userDataSource.updateUser(user: user)
+                
                 
             } else {
-                title = "Wrong pin"
+                title = "Wrong pin, try again"
+                color = Color(.red)
                 currentPin = ""
             }
         }
@@ -254,6 +246,6 @@ struct PinView: View {
 
 struct PinView_Previews : PreviewProvider {
     static var previews: some View {
-        PinView(roomID: "")
+        PinView(room: Room(name: "", creatorID: "", blueMode: true))
     }
 }
