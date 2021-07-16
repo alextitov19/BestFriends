@@ -70,8 +70,14 @@ struct InviteFriendsChat: View {
                         .frame(width: 345, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .font(.system(size: 22))
                     
-                    Spacer()
-                        .frame(height: 25)
+                    Image("starGreen")
+                        .resizable()
+                        .frame(width: 80, height: 80, alignment: .center)
+                        .scaledToFill()
+                        .blendMode(.screen)
+                        .offset(x: 110, y: -20)
+                    
+                  
                     
                     Text("Tips:")
                         .font(.system(size: 25))

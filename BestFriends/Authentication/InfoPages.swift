@@ -55,7 +55,7 @@ struct InfoViewPage1: View {
                         Spacer()
                             .frame(height: 100)
                         
-                        Text("Only takes 30 seconds!")
+                        Text("Only takes 40 seconds!")
                             .font(.system(size: 25))
                             .italic()
                             .fontWeight(.regular)
