@@ -178,6 +178,7 @@ struct NotificationPreLoad: View {
                 }
             }
         }
+        sessionManager.getCurrentAuthUser()
     }
 }
 

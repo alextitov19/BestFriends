@@ -58,8 +58,7 @@ struct LandingView: View {
         if possibleRooms.count > 0 {
             for i in 0..<possibleRooms.count {
                 if possibleRooms[i].timer == nil {
-                    invitedChatRooms.append(possibleRooms[i])
-                    print("Added")
+                    sessionManager.userHasBeenInvitedToChat(invitedRoomId: possibleRooms[i].roomID)
                 }
             }
         }
@@ -222,13 +221,7 @@ struct LandingView: View {
             .sheet(isPresented: $showingSheet) {
                 QRCodeView(image: myQRCode)
             }
-            .isHidden(!isReviewPopupShowing)
-            
-            ForEach(invitedChatRooms, id: \.self.roomID) { invitedRoom in
-                NotificationPreLoad(roomID: invitedRoom.roomID)
-            }
-            
-            
+            .isHidden(!isReviewPopupShowing) 
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onAppear(perform: reloadData)

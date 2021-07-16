@@ -83,6 +83,9 @@ struct BestFriendsApp: App {
             case .pin(let room):
                 PinView(room: room)
                     .environmentObject(sessionManager)
+            case .isInvitedToChat(let invitedRoomId):
+                NotificationPreLoad(roomID: invitedRoomId)
+                    .environmentObject(sessionManager)
             }
             
         }

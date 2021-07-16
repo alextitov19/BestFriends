@@ -20,6 +20,8 @@ enum AppState {
     case infoPages(username: String, password: String)
     case loading
     case pin(room: Room)
+    case isInvitedToChat(invitedRoomId: String)
+
 
 }
 
@@ -70,6 +72,9 @@ final class SessionManager: ObservableObject {
         appState = .pin(room: room)
     }
     
+    func userHasBeenInvitedToChat(invitedRoomId: String) {
+        appState = .isInvitedToChat(invitedRoomId: invitedRoomId)
+    }
     
     func signUp(username: String, email: String, password: String) {
         let attributes = [AuthUserAttribute(.email, value: email)]
