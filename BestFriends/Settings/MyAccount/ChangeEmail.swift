@@ -53,8 +53,14 @@ struct ChangeEmail: View {
                 
                 Button(action: {
                     if(email != "") {
-                        UserManager().updateEmail(email: email)
-                        textHidden = false
+                        let result = UserManager().updateEmail(email: email)
+                        if result {
+                            var user = UserDataSource().getCurrentUser()
+                            user.email = email
+                            UserDataSource().updateUser(user: user)
+                            textHidden = false
+                        }
+                        
                         
                     }
                 }) {

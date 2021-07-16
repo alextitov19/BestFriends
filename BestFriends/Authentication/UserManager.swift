@@ -86,7 +86,11 @@ class UserManager: ObservableObject {
         return bool
     }
     
-    func updateEmail(email: String) {
+    func updateEmail(email: String) -> Bool {
+        var bool = false
+        let group = DispatchGroup()
+        group.enter()
+        
         Amplify.Auth.update(userAttribute: AuthUserAttribute(.email, value: email)) { result in
             do {
                 let updateResult = try result.get()
@@ -95,11 +99,16 @@ class UserManager: ObservableObject {
                     print("Confirm the attribute with details send to - \(deliveryDetails) \(String(describing: info))")
                 case .done:
                     print("Update completed")
+                    bool = true
+                    group.leave()
                 }
             } catch {
                 print("Update attribute failed with error \(error)")
             }
         }
+        
+        group.wait()
+        return bool
     }
     
     func confirmEmailUpdate(code: String) {

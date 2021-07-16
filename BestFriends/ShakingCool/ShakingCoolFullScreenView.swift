@@ -25,7 +25,7 @@ struct ShakingCoolFullScreenView: View {
     
     var links: [String] = []
     
-    var timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    var timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
     
     var body: some View {
         ZStack {
