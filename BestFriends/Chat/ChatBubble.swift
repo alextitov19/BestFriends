@@ -68,7 +68,7 @@ struct ChatBubble: View {
                     Text(message.senderName)
                         .frame(width: 200, alignment: .trailing)
                         .foregroundColor(.white)
-                        .font(.system(size: 14).weight(.thin))
+                        .font(.system(size: CGFloat(user.chatFontSize)).weight(.thin))
                         .offset(x: -5, y: 5)
                 }
                 
@@ -85,7 +85,7 @@ struct ChatBubble: View {
                         Text(message.body)
                             .padding(10)
                             .multilineTextAlignment(.leading)
-                            .font(.system(size: 16).weight(.light))
+                            .font(.system(size: CGFloat(user.chatFontSize)).weight(.light))
                             .foregroundColor(.white)
                             .background(Color(.purple))
                             .cornerRadius(15)
@@ -117,7 +117,7 @@ struct ChatBubble: View {
                     Text(message.senderName)
                         .frame(width: 200, alignment: .leading)
                         .foregroundColor(.white)
-                        .font(.system(size: 14).weight(.thin))
+                        .font(.system(size: CGFloat(user.chatFontSize)).weight(.thin))
                         .offset(x: 5, y: 5)
                     
                     Spacer()
@@ -133,7 +133,7 @@ struct ChatBubble: View {
                         Text(message.body)
                             .padding(10)
                             .multilineTextAlignment(.leading)
-                            .font(.system(size: 16).weight(.light))
+                            .font(.system(size: CGFloat(user.chatFontSize)).weight(.light))
                             .foregroundColor(.white)
                             .background(Color(.purple))
                             .cornerRadius(15)
