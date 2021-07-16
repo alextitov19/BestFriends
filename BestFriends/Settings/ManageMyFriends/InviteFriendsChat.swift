@@ -18,7 +18,7 @@ struct InviteFriendsChat: View {
     var body: some View {
         ZStack {
             
-            Image("SignUpPinBackground")
+            Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
