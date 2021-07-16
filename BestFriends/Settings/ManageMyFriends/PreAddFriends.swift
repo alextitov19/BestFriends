@@ -102,9 +102,6 @@ struct PreAddFriends: View {
 struct PreAddFriends_Previews : PreviewProvider {
     static var previews: some View {
         PreAddFriends()
-        
-        
-        
-        
+   
     }
 }

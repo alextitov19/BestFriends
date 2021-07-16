@@ -53,6 +53,7 @@ struct LoginView: View {
                             .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
                             .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             .disableAutocorrection(true)
                             .autocapitalization(.none)
                         
@@ -66,6 +67,7 @@ struct LoginView: View {
                             .font(.title)
                             .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             .disableAutocorrection(true)
                             .autocapitalization(.none)
                         
@@ -99,9 +101,7 @@ struct LoginView: View {
                                 .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            //                                .shadow(color: Color(#colorLiteral(red: 0.8038745522, green: 0.3436358571, blue: 1, alpha: 1)), radius: 12)
-                            //                                .shadow(color: Color(#colorLiteral(red: 0.8038745522, green: 0.3436358571, blue: 1, alpha: 1)), radius: 12)
-                            //                                .shadow(color: Color(#colorLiteral(red: 0.8038745522, green: 0.3436358571, blue: 1, alpha: 1)), radius: 12)
+                          
                             
                         }
                         

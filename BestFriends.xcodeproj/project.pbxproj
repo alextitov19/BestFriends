@@ -535,6 +535,7 @@
 		CF5263E32667621B00243DD7 /* ChangeChatFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */; };
 		CF5263F2266DDD4200243DD7 /* BlueModeUserDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */; };
 		CFA5EBDA269F89D600BFEBA2 /* AddFriendSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5EBD9269F89D600BFEBA2 /* AddFriendSteps.swift */; };
+		CFA5EBDC26A158DB00BFEBA2 /* InviteFriendsChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5EBDB26A158DB00BFEBA2 /* InviteFriendsChat.swift */; };
 		CFC2E8AD5DEFA67A69C5E785 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6938CF675DE8432796534940 /* Room+Schema.swift */; };
 		CFE33572A2043B757FF71D3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
@@ -787,6 +788,7 @@
 		CF5263FD266F202400243DD7 /* BlueHeartVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BlueHeartVid.mp4; sourceTree = "<group>"; };
 		CF526402266F20A600243DD7 /* Mieko3.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mieko3.m4v; sourceTree = "<group>"; };
 		CFA5EBD9269F89D600BFEBA2 /* AddFriendSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendSteps.swift; sourceTree = "<group>"; };
+		CFA5EBDB26A158DB00BFEBA2 /* InviteFriendsChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsChat.swift; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		CFE6FD4526620E9A00DF92BD /* Popups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popups.swift; sourceTree = "<group>"; };
 		D1577796264CBBAD00B6551A /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
@@ -1201,6 +1203,7 @@
 				CF356D312674E3F100BCF572 /* AddFriends.swift */,
 				D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */,
 				D1949C402644FD4F00FDB6C5 /* RemoveFriend.swift */,
+				CFA5EBDB26A158DB00BFEBA2 /* InviteFriendsChat.swift */,
 			);
 			path = ManageMyFriends;
 			sourceTree = "<group>";
@@ -1420,6 +1423,7 @@
 				D157779B264D086000B6551A /* SmileNotesView.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */,
+				CFA5EBDC26A158DB00BFEBA2 /* InviteFriendsChat.swift in Sources */,
 				7AD8376B267E9A24005A2D48 /* SmileNotePopover.swift in Sources */,
 				7AF6973F2630EE1900CF49CC /* Star.swift in Sources */,
 				7A4E335826A0D40C00202BB7 /* Message.swift in Sources */,

@@ -34,7 +34,8 @@ struct SettingsView: View {
                                 .foregroundColor(.white)
                                 .multilineTextAlignment(.center)
                                 .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
+                                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                             
                             Spacer().frame(height: 30)
                             
@@ -52,20 +53,25 @@ struct SettingsView: View {
                             Link("User Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/211808350213142")!)
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
+                                .font(.system(size: 17))
+                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+
+                                
                             
                             Spacer().frame(height: 20)
                             
                             Link("BlueMode Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/211898588668178")!)
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
+                                .font(.system(size: 17))
+                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                               
+                                
                             
                             
                             
@@ -86,10 +92,10 @@ struct SettingsView: View {
                             Link("Be 1st to test new features", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
+                                .font(.system(size: 17))
+                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             
                             
                             Spacer().frame(height: 30)
@@ -112,10 +118,10 @@ struct SettingsView: View {
                             })
                             .frame(width: 225, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                            )
+                            .font(.system(size: 17))
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                         Spacer().frame(height: 20)
                         
@@ -127,10 +133,10 @@ struct SettingsView: View {
                             })
                             .frame(width: 225, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                            )
+                            .font(.system(size: 17))
+                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                         VStack {
                             
@@ -143,10 +149,10 @@ struct SettingsView: View {
                                 })
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
+                                .font(.system(size: 17))
+                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             
                             
                             Spacer().frame(height: 20)
@@ -159,10 +165,10 @@ struct SettingsView: View {
                                 
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
+                                .font(.system(size: 17))
+                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             
                             
                             
@@ -184,10 +190,10 @@ struct SettingsView: View {
                                 })
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 25)
-                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                )
+                                .font(.system(size: 17))
+                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             
                             Spacer().frame(height: 20)
                             
@@ -200,10 +206,10 @@ struct SettingsView: View {
                                     })
                                     .frame(width: 225, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 25)
-                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                    )
+                                    .font(.system(size: 17))
+                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                    .cornerRadius(25)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
                                 
                                 
@@ -226,10 +232,10 @@ struct SettingsView: View {
                                     Link("Privacy Policy / Terms of Service", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
                                         .frame(width: 325, height: 50)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 25)
-                                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                        )
+                                        .font(.system(size: 17))
+                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                        .cornerRadius(25)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                     Spacer()
                                         .frame(height: 20)
@@ -238,10 +244,10 @@ struct SettingsView: View {
                                     Link("Report Objectional Content & Behavior", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
                                         .frame(width: 325, height: 50)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 25)
-                                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                        )
+                                        .font(.system(size: 17))
+                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                        .cornerRadius(25)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                     
                                     
@@ -255,10 +261,10 @@ struct SettingsView: View {
                                         Link("Report Copyright Infringment", destination: URL(string: "https://socialtechlabs.com/report-copyright-infringements/")!)
                                             .frame(width: 325, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 25)
-                                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                            )
+                                            .font(.system(size: 17))
+                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                         
                                         Spacer()
                                             .frame(height: 45)
@@ -285,10 +291,10 @@ struct SettingsView: View {
                                             })
                                             .frame(width: 325, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .overlay(
-                                                RoundedRectangle(cornerRadius: 25)
-                                                    .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                            )
+                                            .font(.system(size: 17))
+                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                         
                                         
                                         
@@ -307,10 +313,10 @@ struct SettingsView: View {
                                                     })
                                                     .frame(width: 325, height: 50)
                                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 25)
-                                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                                    )
+                                                    .font(.system(size: 17))
+                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                    .cornerRadius(25)
+                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                 
                                                 Spacer()
                                                     .frame(height: 20)
@@ -322,10 +328,10 @@ struct SettingsView: View {
                                                     })
                                                     .frame(width: 325, height: 50)
                                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 25)
-                                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                                    )
+                                                    .font(.system(size: 17))
+                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                    .cornerRadius(25)
+                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                 
                                                 Spacer()
                                                     .frame(height: 20)
@@ -337,10 +343,10 @@ struct SettingsView: View {
                                                     })
                                                     .frame(width: 325, height: 50)
                                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 25)
-                                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                                    )
+                                                    .font(.system(size: 17))
+                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                    .cornerRadius(25)
+                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                 
                                                 Spacer()
                                                     .frame(height: 20)
@@ -352,10 +358,10 @@ struct SettingsView: View {
                                                     })
                                                     .frame(width: 325, height: 50)
                                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 25)
-                                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                                    )
+                                                    .font(.system(size: 17))
+                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                    .cornerRadius(25)
+                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                 
                                             }
                                             
@@ -380,10 +386,10 @@ struct SettingsView: View {
                                                 
                                                 .frame(width: 325, height: 50)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                .overlay(
-                                                    RoundedRectangle(cornerRadius: 25)
-                                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                                )
+                                                .font(.system(size: 17))
+                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                .cornerRadius(25)
+                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                             
                                             Spacer()
                                                 .frame(height: 20)
@@ -393,13 +399,13 @@ struct SettingsView: View {
                                                 label: {
                                                     Text("Chat Font Size")
                                                 })
-                                                
                                                 .frame(width: 325, height: 50)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                .overlay(
-                                                    RoundedRectangle(cornerRadius: 25)
-                                                        .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                                )
+                                                .font(.system(size: 17))
+                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                .cornerRadius(25)
+                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                            
                                             VStack {
                                                 
                                                 Spacer()
@@ -418,10 +424,10 @@ struct SettingsView: View {
                                                 Link("In crisis? Anonymously chat w/ trained teens on 'TeenLine'", destination: URL(string: "https://teenlineonline.org/")!)
                                                     .frame(width: 325, height: 50)
                                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 25)
-                                                            .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 1)
-                                                    )
+                                                    .font(.system(size: 17))
+                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                    .cornerRadius(25)
+                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                 
                                                 
                                                 Spacer()
@@ -438,11 +444,13 @@ struct SettingsView: View {
                                                     }) {
                                                         Text("Sign Out")
                                                             .frame(width: 325, height: 50)
-                                                            .foregroundColor(Color(.red))
-                                                            .overlay(
-                                                                RoundedRectangle(cornerRadius: 25)
-                                                                    .stroke(Color(.red), lineWidth: 1)
-                                                            )
+                                                            .frame(width: 325, height: 50)
+                                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                            .font(.system(size: 17))
+                                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                            .cornerRadius(25)
+                                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                            
                                                     }
                                                 }
                                             }
