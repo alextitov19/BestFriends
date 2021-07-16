@@ -50,7 +50,7 @@ struct InviteFriendsChat: View {
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 310, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     
                     Image("chat-add icon")
                         .resizable()
@@ -62,12 +62,12 @@ struct InviteFriendsChat: View {
                     .frame(height: 25)
                 
                 VStack {
-                    Text("Step 2: Now, you have 5 seconds to tap your friend's stars you want to invite, turning them to 'blue'.")
+                    Text("Step 2: Now, you have 5 seconds to tap your friend's stars that you want to invite, turning them to 'blue'.")
                         .font(.system(size: 22))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 335, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 345, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .font(.system(size: 22))
                     
                     Spacer()
