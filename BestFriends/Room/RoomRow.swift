@@ -11,9 +11,14 @@ struct RoomRow: View {
     
     let room: Room
     
+    @State var messageBody = ""
+    
     var body: some View {
         HStack {
             Spacer().frame(width: 10)
+                .onAppear {
+                    getBody()
+                }
             
             VStack(alignment: .leading) {
                 Spacer()
@@ -32,7 +37,7 @@ struct RoomRow: View {
                 HStack {
                     Spacer().frame(width: 10)
                     
-                    Text(room.messages.last?.body ?? "")
+                    Text(messageBody)
                         .font(.system(size: 16, weight: .light))
                         .foregroundColor(.white)
                     
@@ -48,6 +53,15 @@ struct RoomRow: View {
             )
             
             Spacer().frame(width: 10)
+        }
+    }
+    
+    private func getBody() {
+        messageBody = room.messages.last?.body ?? ""
+        if UserDataSource().getCurrentUser().hiddenRooms != nil {
+            if UserDataSource().getCurrentUser().hiddenRooms!.contains(room.id) {
+                messageBody = "*Hidden*"
+            }
         }
     }
 }

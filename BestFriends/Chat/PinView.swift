@@ -20,7 +20,7 @@ struct PinView: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
@@ -29,6 +29,7 @@ struct PinView: View {
                 Text(title)
                     .font(.system(size: 25, weight: .light))
                     .foregroundColor(color)
+                    .multilineTextAlignment(.center)
                 
                 Spacer().frame(height: 85)
                 
@@ -206,10 +207,16 @@ struct PinView: View {
                         )
                 }
                 
-                Button("Return", action: {sessionManager.showRooms()})
-                    .foregroundColor(.white)
-                    .font(.system(size: 20, weight: .light))
-                    .padding(20)
+                Button(action: {sessionManager.showRooms()}) {
+                    Text("Return")
+                    .frame(width: 150, height: 50, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.title)
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                }
+                .padding(20)
             }
             
         }
