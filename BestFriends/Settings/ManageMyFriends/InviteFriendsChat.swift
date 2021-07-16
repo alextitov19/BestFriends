@@ -79,10 +79,10 @@ struct InviteFriendsChat: View {
                         .frame(height: 5)
                 
                     
-                        Text("Safety Tip: Tapping stars multiple times creates mutiple chat rooms - that's bad.")
+                        Text("Safety Tip: Tap 'blue' star only once.")
                             .font(.system(size: 21))
                             .foregroundColor(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
-                            .frame(width: 375, height: 75)
+                            .frame(width: 375, height: 40)
                             .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
     //                        .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
