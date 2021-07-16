@@ -62,7 +62,7 @@ struct InviteFriendsChat: View {
                     .frame(height: 25)
                 
                 VStack {
-                    Text("Step 2: Now, you have 5 seconds to tap your friend's stars that you want to invite, turning them to 'blue'.")
+                    Text("Step 2: Now, you have 5 seconds to tap your friend's stars that you want to invite, turning them to 'green'.")
                         .font(.system(size: 22))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
