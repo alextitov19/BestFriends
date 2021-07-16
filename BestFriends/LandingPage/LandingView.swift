@@ -21,8 +21,7 @@ struct LandingView: View {
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
     @State private var friendIDs: [String] = []
-    @State private var friendIDsToInvite: [String] = []
-    @State private var friendNamesToInvite: [String] = []
+    @State private var membersOfNewRoom: [String] = []
     @State private var stars: [Star] = []
     @State private var starButtons: [UIButton] = []
     @State private var titleText = ""
@@ -120,14 +119,12 @@ struct LandingView: View {
                     Button(action: {
                         print("tap")
                         if invitingFriends {
-                            if friendIDsToInvite.contains(stars[index].id) {
-                                friendIDsToInvite.remove(at: friendIDsToInvite.firstIndex(of: stars[index].id)!)
-                                friendNamesToInvite.remove(at: friendNamesToInvite.firstIndex(of: stars[index].name)!)
+                            if membersOfNewRoom.contains(stars[index].id) {
+                                membersOfNewRoom.remove(at: membersOfNewRoom.firstIndex(of: stars[index].id)!)
                                 stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
                                 print("Color change 1")
                             } else {
-                                friendIDsToInvite.append(stars[index].id)
-                                friendNamesToInvite.append(stars[index].name)
+                                membersOfNewRoom.append(stars[index].id)
                                 stars[index].image = Image(uiImage: UIImage(named: "starGreen")!)
                                 print("Color change 2")
                             }
@@ -355,31 +352,28 @@ struct LandingView: View {
     }
     
     private func inviteSelectedFriends() {
-        if friendIDsToInvite != [] {
+        if membersOfNewRoom != [] {
+            membersOfNewRoom.append(myID)
             var name = ""
-            for id in friendIDsToInvite {
-                name.append(userDataSource.getUser(id: id).firstName)
+            for id in membersOfNewRoom {
+                let user = userDataSource.getUser(id: id)
+                name.append(user.firstName + " ")
             }
-            print("Inviting selected friends: ", friendIDsToInvite)
-            let room = Room(name: name, creatorID: myID, members: friendIDsToInvite, blueMode: false)
+            name.removeLast()
+            name.removeLast()
+
+            print("Members of chat room: ", membersOfNewRoom)
+            
+            let room = Room(name: name, creatorID: myID, members: membersOfNewRoom, blueMode: false)
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
-            userDataSource.addRoom(userID: myID, roomID: room.id)
-            var body = "with: "
-            for id in friendIDsToInvite {
-                let user = userDataSource.getUser(id: id)
-                body.append(user.firstName)
-                body.append(", ")
-            }
-            body.removeLast()
-            body.removeLast()
-            
-            for id in friendIDsToInvite {
-                userDataSource.addRoom(userID: id, roomID: room.id)
+            userDataSource.addRoom(room: room)
+            let body = "Members: " + room.name
+            for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
                 if user.notificationsLP == true {
                     let token = user.deviceFCMToken
-                    PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk. Please let them know When can you talk on BestFriends", body: body)
+                    PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk!", body: body)
                 }
             }
         }

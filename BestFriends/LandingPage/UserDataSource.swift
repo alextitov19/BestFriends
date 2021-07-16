@@ -148,13 +148,16 @@ struct UserDataSource {
         updateUser(user: myUser)
     }
     
-    func addRoom(userID: String, roomID: String) {
-        var user = getUser(id: userID)
-        user.rooms?.append(roomID)
-        if userID != Amplify.Auth.getCurrentUser()!.username {
-            user.invitedRooms?.append(InvitedRoom(roomID: roomID))
+    func addRoom(room: Room) {
+        let userDS = UserDataSource()
+        for id in room.members {
+            var user = userDS.getUser(id: id)
+            user.rooms?.append(room.id)
+            if id != room.creatorID {
+                user.invitedRooms?.append(InvitedRoom(roomID: room.id))
+            }
+            userDS.updateUser(user: user)
         }
-        updateUser(user: user)
     }
     
     func setOnlineStatus(isOnline: Bool) {
