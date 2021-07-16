@@ -33,7 +33,10 @@ struct InviteFriendsChat: View {
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-               
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                
+                
                 Spacer()
                     .frame(height: 20)
                 
@@ -41,13 +44,13 @@ struct InviteFriendsChat: View {
                 HStack {
                     
                     
-                    Text("After tapping this icon - all stars go from 'pruple' to 'blue' >")
+                    Text("After tapping icon - all stars turn from 'pruple' to 'blue' >")
                         .italic()
                         .font(.system(size: 22))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 325, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 300, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     
                     
@@ -79,16 +82,16 @@ struct InviteFriendsChat: View {
                         .frame(height: 5)
                 
                     
-                        Text("Safety Tip: Tap 'blue' star only once.")
+                        Text("*Safety Tip: Tap 'blue' star only once.")
                             .font(.system(size: 21))
-                            .foregroundColor(Color(#colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)))
                             .frame(width: 375, height: 40)
                             .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
     //                        .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 30)
                     
                     Text("Step 2.  Stars turn 'green' letting you know a push notification has been sent.")
                         
