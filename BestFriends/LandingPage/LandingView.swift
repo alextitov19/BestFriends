@@ -376,6 +376,8 @@ struct LandingView: View {
                     PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk!", body: body)
                 }
             }
+            
+            sessionManager.showRooms()
         }
     }
     
