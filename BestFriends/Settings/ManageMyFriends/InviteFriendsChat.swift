@@ -26,27 +26,27 @@ struct InviteFriendsChat: View {
             VStack {
                 
                 
-                Text("Inviting Friends to Chat.")
+                Text("How to Creat a New Chat Room with your Friends.")
                     
                     .font(.system(size: 40))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 385, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 385, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 30)
                 
                 
                 HStack {
                     
                     
-                    Text("Step 1: Tap this icon in top-right corner, turning stars from purple to blue")
-                        .italic()
-                        .font(.system(size: 22))
+                    Text("Step 1: Tap this icon in top-right corner of homepage. Stars change color from 'purple' to 'blue'.")
+                        
+                        .font(.system(size: 20))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
@@ -59,22 +59,32 @@ struct InviteFriendsChat: View {
                     
                 }
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 25)
                 
                 VStack {
-                    Text("Step 2: You have 5 seconds to tap the friends' blue stars you'd like to invite.")
+                    Text("Step 2: Now, you have 5 seconds to tap your friend's stars you want to invite, turning them to 'blue'.")
                         .font(.system(size: 22))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.center)
-                        .frame(width: 375, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 335, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .font(.system(size: 22))
                     
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 25)
                     
-                    Text("Tips:\n•Stars will toggle between blue and green\n•When 5 seconds are up, all the green stars will be invited to chat")
-                        .font(.system(size: 18))
+                    Text("Tips:")
+                        .font(.system(size: 25))
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                        .multilineTextAlignment(.leading)
+                        .frame(width: 375, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .font(.system(size: 22))
+                    
+                    
+                    Text("- All invited friends will receive push notifications letting them know you urgently need to talk.\n- You'll receive push notifications back telling you exactly when each can talk.")
+                        .italic()
+                        .font(.system(size: 20))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.leading)
