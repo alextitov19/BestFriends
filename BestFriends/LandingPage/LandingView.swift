@@ -357,7 +357,7 @@ struct LandingView: View {
             var name = ""
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
-                name.append(user.firstName + " ")
+                name.append(user.firstName + ", ")
             }
             name.removeLast()
             name.removeLast()
