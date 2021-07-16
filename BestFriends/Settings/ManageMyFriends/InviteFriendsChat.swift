@@ -88,7 +88,7 @@ struct InviteFriendsChat: View {
                         .font(.system(size: 22))
                     
                     
-                    Text("- All invited friends will receive push notifications telling them you urgently need to talk.\n- You'll receive push notifications back telling you exactly when each is available.")
+                    Text("- All invited friends will receive push notifications telling them you urgently need to talk.\n- You'll receive push notifications back telling you exactly when they are available.")
                         .italic()
                         .font(.system(size: 20))
                         .fontWeight(.regular)
