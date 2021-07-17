@@ -84,7 +84,6 @@ struct HomeView: View {
     var body: some View {
         
         ZStack {
-            
             Image("purpleBackground")
                 .resizable()
                 .scaledToFill()
@@ -93,9 +92,7 @@ struct HomeView: View {
             PlayerView()
                 .ignoresSafeArea()
                 .blendMode(.screen)
-            
-            
-            
+                        
             VStack {
                 Text(titleText)
                     .foregroundColor(.white)
