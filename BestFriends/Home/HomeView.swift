@@ -103,6 +103,15 @@ struct HomeView: View {
                 
                 HStack {
                     Spacer()
+                        .frame(width: 50)
+                    
+                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
+                        Image("reload")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
+                    
+                    Spacer()
                     
                     Button(action: { inviteClicked() }) {
                         Image("chat-add icon")
