@@ -869,7 +869,6 @@
 		7A6A4CD2262B56E900561D87 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */,
 				7A6A4CD9262B658200561D87 /* MessageDataSource.swift */,
 				7A33B63B2640D463004CB47F /* MessageRoomView.swift */,
 				7A7F6E37264305AA0022F078 /* ChatBubble.swift */,
@@ -937,6 +936,7 @@
 				7A8943D2262CCA84008F7582 /* LandingPage */,
 				7AA200FB2635C6D100C9F00C /* Room */,
 				7A6A4CD2262B56E900561D87 /* Chat */,
+				CF356D4426774C2E00BCF572 /* BlueMode */,
 				7AB62A8326426F7A005A7744 /* Settings */,
 				7A6A4D00262B865D00561D87 /* Assets */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
@@ -1010,7 +1010,6 @@
 			isa = PBXGroup;
 			children = (
 				7AB62A8426426F86005A7744 /* SettingsView.swift */,
-				CF356D4426774C2E00BCF572 /* BlueMode */,
 				CF356D1A2671FE2100BCF572 /* Tokens */,
 				CF5263E1266761CC00243DD7 /* EditingChatFunctions */,
 				D15CCD6526473E6700BFE179 /* MyAccount */,
@@ -1096,12 +1095,14 @@
 		CF356D4426774C2E00BCF572 /* BlueMode */ = {
 			isa = PBXGroup;
 			children = (
+				CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */,
 				CF436A262658D66F00B69506 /* BMInfoPages.swift */,
 				CF436A2F265A0FF400B69506 /* BlueSurvey.swift */,
 				CF436A2D265A0D3B00B69506 /* BlueSinglePages */,
 				CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */,
 			);
-			path = BlueMode;
+			name = BlueMode;
+			path = Settings/BlueMode;
 			sourceTree = "<group>";
 		};
 		CF436A2D265A0D3B00B69506 /* BlueSinglePages */ = {
