@@ -102,20 +102,20 @@ struct HomeView: View {
                     Spacer()
                         .frame(width: 50)
                     
-//                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
-//                        Image("reload")
-//                            .resizable()
-//                            .frame(width: 30, height: 30)
-//                    }
-//
+                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
+                        Image("reload")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
+
                     Spacer()
                     
-//                    Button(action: { inviteClicked() }) {
-//                        Image("chat-add icon")
-//                            .resizable()
-//                            .frame(width: 30, height: 30)
-//                    }
-//
+                    Button(action: { inviteClicked() }) {
+                        Image("chat-add icon")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
+
                     Spacer()
                         .frame(width: 50)
                 }
