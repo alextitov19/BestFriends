@@ -33,7 +33,7 @@ struct HomeView: View {
     @State private var isAdViewPresented = false
     @State private var isReviewPopupShowing = false //change to true to show popup
     @State private var bodyForPopup = ""
-    @State private var invitedFriendsPopupOffset: CGFloat = 900
+    @State private var invitedFriendsPopupOffset: CGFloat = 600
     
     
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
@@ -356,6 +356,7 @@ struct HomeView: View {
     
     private func inviteSelectedFriends() {
         if membersOfNewRoom != [] {
+            self.invitedFriendsPopupOffset = 600.0
             membersOfNewRoom.append(myID)
             var name = ""
             for id in membersOfNewRoom {
@@ -381,11 +382,13 @@ struct HomeView: View {
             }
             messageBody.removeFirst(9)
             bodyForPopup = messageBody
+            withAnimation {
+                withAnimation(.easeInOut(duration: 12)) { self.invitedFriendsPopupOffset = -600.0 }
+            }
         }
         
-        withAnimation {
-            withAnimation(.easeInOut(duration: 10)) { self.invitedFriendsPopupOffset = -900.0 }
-        }
+        membersOfNewRoom = []
+        
     }
     
     
