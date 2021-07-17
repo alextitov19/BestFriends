@@ -343,17 +343,48 @@ struct NotEnjoyingApp: View {
     }
 }
 
+struct InviteSentPopup: View {
+    
+    let names: String
+    
+    var body: some View {
+        VStack {
+            Text("Invitation sent!")
+                .font(.system(size: 30, weight: .light))
+                .foregroundColor(.white)
+                .frame(width: 270)
+                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                .padding()
+            
+            Group { Text("The following friends have been invited to chat:\n").font(.system(size: 20, weight: .light)) + Text("\(names)").font(.system(size: 20, weight: .bold)) }
+                .foregroundColor(.white)
+                .multilineTextAlignment(.center)
+                .frame(width: 270)
+                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                .padding()
+        }
+        .background(Image("SignUpPinBackground")
+                        .resizable()
+                        .scaledToFill())
+        .clipped()
+        .cornerRadius(40)
+    }
+}
+
 
 struct Popups_Previews : PreviewProvider {
     static var previews: some View {
-        ShakingCoolPopup()
-        SmileNotesPopup()
-        BFWalkThroughPopup()
-        BetaTesterPopup()
-        BlueModePopup()
-        ReviewPopup()
-        YesEnjoyingApp()
-        NotEnjoyingApp()
+        //        ShakingCoolPopup()
+        //        SmileNotesPopup()
+        //        BFWalkThroughPopup()
+        //        BetaTesterPopup()
+        //        BlueModePopup()
+        //        ReviewPopup()
+        //        YesEnjoyingApp()
+        //        NotEnjoyingApp()
+        InviteSentPopup(names: "Alex, John")
     }
 }
 

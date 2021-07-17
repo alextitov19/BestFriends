@@ -18,7 +18,7 @@ enum AppState {
     case smileNotes
     case chat(room: Room)
     case infoPages(username: String, password: String)
-    case loading
+    case loading(page: String)
     case pin(room: Room)
     case isInvitedToChat(invitedRoomId: String)
 
@@ -48,8 +48,8 @@ final class SessionManager: ObservableObject {
         appState = .settings
     }
     
-    func showLoading() {
-        appState = .loading
+    func reloadToPage(page: String) {
+        appState = .loading(page: page)
     }
     
     func showSmileNotes() {

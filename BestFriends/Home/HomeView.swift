@@ -13,7 +13,7 @@ import Firebase
 
 
 
-struct LandingView: View {
+struct HomeView: View {
     
     @State private var showingSheet = false
     @State private var showingActionSheet = false
@@ -32,6 +32,9 @@ struct LandingView: View {
     @State private var showingAddFriendInstructions = false
     @State private var isAdViewPresented = false
     @State private var isReviewPopupShowing = false //change to true to show popup
+    @State private var bodyForPopup = ""
+    @State private var invitedFriendsPopupOffset: CGFloat = 900
+    
     
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
     //    @State private var inviteMode = false
@@ -151,7 +154,7 @@ struct LandingView: View {
                         
                     }
                     .actionSheet(isPresented: $showingActionSheet) {
-                        ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes. You MUST upgrade your OS on your iPhone to 14.5 or higher for QR codes to work."), buttons: [
+                        ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes."), buttons: [
                             .default(Text("Get my QR code")) { showMyQR() },
                             .default(Text("My Gallery")) { self.showingImagePicker = true },
                             // Rob added a third option in the Add Friends popup on Landing page
@@ -221,13 +224,18 @@ struct LandingView: View {
             .sheet(isPresented: $showingSheet) {
                 QRCodeView(image: myQRCode)
             }
-            .isHidden(!isReviewPopupShowing) 
+            .isHidden(!isReviewPopupShowing)
+            
+            InviteSentPopup(names: bodyForPopup)
+                .offset(x: 0.0, y: invitedFriendsPopupOffset)
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onAppear(perform: reloadData)
         .onShake {
             isShakingCoolPresented = true
         }
+        
+        
     }
     
     // MARK: QR Code
@@ -287,6 +295,8 @@ struct LandingView: View {
                 guard let uid = row.messageString as String? else { return }
                 print("Preparing to send to: ", uid)
                 addFriend(id: uid)
+                sleep(2)
+                sessionManager.reloadToPage(page: "home")
             }
         }
     }
@@ -354,23 +364,27 @@ struct LandingView: View {
             }
             name.removeLast()
             name.removeLast()
-
+            
             print("Members of chat room: ", membersOfNewRoom)
             
             let room = Room(name: name, creatorID: myID, members: membersOfNewRoom, blueMode: false)
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
             userDataSource.addRoom(room: room)
-            let body = "Members: " + room.name
+            var messageBody = "Members: " + room.name
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
                 if user.notificationsLP == true {
                     let token = user.deviceFCMToken
-                    PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk!", body: body)
+                    PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk!", body: messageBody)
                 }
             }
-            
-            sessionManager.showRooms()
+            messageBody.removeFirst(9)
+            bodyForPopup = messageBody
+        }
+        
+        withAnimation {
+            withAnimation(.easeInOut(duration: 10)) { self.invitedFriendsPopupOffset = -900.0 }
         }
     }
     
@@ -395,7 +409,7 @@ struct LandingView: View {
 
 struct LandingView_Previews : PreviewProvider {
     static var previews: some View {
-        LandingView(myID: " ")
+        HomeView(myID: " ")
             .environmentObject(SessionManager())
     }
 }

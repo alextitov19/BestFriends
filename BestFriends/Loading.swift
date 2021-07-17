@@ -10,6 +10,7 @@ import SwiftUI
 struct Loading: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    let page: String
     
     var body: some View {
         
@@ -23,10 +24,21 @@ struct Loading: View {
                 .font(.system(size: 30, weight: .light))
                 .foregroundColor(.white)
                 .onAppear {
-                    sessionManager.showSettings()
+                    switchPage()
                 }
         }
         
         
+    }
+    
+    private func switchPage() {
+        switch page {
+        case "settings":
+            sessionManager.showSettings()
+        case "home":
+            sessionManager.getCurrentAuthUser()
+        default:
+            fatalError("switching to a page that is not an option in Loading.swift")
+        }
     }
 }
