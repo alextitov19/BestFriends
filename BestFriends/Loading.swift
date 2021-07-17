@@ -15,10 +15,15 @@ struct Loading: View {
     var body: some View {
         
         ZStack {
-            Image("SignUpPinBackground")
+            Image("Firstname")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
+            
+            VStack {
+                
+                Spacer()
+                    .frame(height: 150)
             
             Text("Loading")
                 .font(.system(size: 30, weight: .light))
@@ -27,7 +32,7 @@ struct Loading: View {
                     switchPage()
                 }
         }
-        
+        }
         
     }
     

@@ -363,6 +363,9 @@ struct HomeView: View {
     
     private func inviteSelectedFriends() {
         if membersOfNewRoom != [] {
+       
+            
+            
             self.invitedFriendsPopupOffset = 600.0
             membersOfNewRoom.append(myID)
             var name = ""
@@ -390,7 +393,7 @@ struct HomeView: View {
             messageBody.removeFirst(9)
             bodyForPopup = messageBody
             withAnimation {
-                withAnimation(.easeInOut(duration: 12)) { self.invitedFriendsPopupOffset = -600.0 }
+                withAnimation(.easeInOut(duration: 8)) { self.invitedFriendsPopupOffset = -600.0 }
             }
         }
         
