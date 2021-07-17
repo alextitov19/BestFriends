@@ -145,13 +145,13 @@ struct InfoViewPage2: View {
             VStack {
                 
                 
-                Text("You're never alone on a bad day, because ...")
+                Text("You're never alone on a bad day ...")
                     .font(.system(size: 35))
                     .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 16)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 16)
 
@@ -159,11 +159,11 @@ struct InfoViewPage2: View {
                     .frame(height: 100)
                 
                 
-                Text("each tiny star on the home page represents another user somewhere out there.")
+                Text("Because, each tiny star on the homepage represents another user somewhere out there.")
                     .font(.system(size: 30))
                     .italic()
                     .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .frame(width: 350, height: 220, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
@@ -185,8 +185,8 @@ struct InfoViewPage2: View {
                             .frame(width: 250, height: 50)
                             .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.7431745529, green: 0.284814775, blue: 0.8298347592, alpha: 1)), radius: 5, x:0, y:0)
-                            .shadow(color: Color(#colorLiteral(red: 0.7431745529, green: 0.284814775, blue: 0.8298347592, alpha: 1)), radius: 5, x:0, y:0)
+                            .shadow(color: Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)), radius: 5, x:0, y:0)
+                           
 
                     }
                     
@@ -471,7 +471,7 @@ struct InfoViewPage6: View {
                 HStack {
                     
                     
-                    Text("Step 1: Tap this icon in top-right corner, turning stars from purple to blue")
+                    Text("Step 1: Tap this icon, turning stars from 'purple' to 'blue'.")
                         .italic()
                         .font(.system(size: 22))
                         .fontWeight(.regular)
@@ -489,7 +489,7 @@ struct InfoViewPage6: View {
                     .frame(height: 40)
                 
                 VStack {
-                    Text("Step 2: You have 5 seconds to tap the friends' blue stars you'd like to invite.")
+                    Text("Step 2: Tap friends stars you'd like to invite, now truning 'green'.")
                         .font(.system(size: 22))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -500,8 +500,18 @@ struct InfoViewPage6: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("Tips:\n•Stars will toggle between blue and green\n•When 5 seconds are up, all the green stars will be invited to chat")
-                        .font(.system(size: 18))
+                    Text("Step 3: Watch for floating sending Push notifications to your friends letting them know you 'urgently' need to chat.")
+                        .font(.system(size: 22))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 375, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .font(.system(size: 22))
+                    
+                    
+                    Text(". ")
+                        .italic()
+                        .font(.system(size: 20))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .multilineTextAlignment(.leading)
