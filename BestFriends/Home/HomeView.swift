@@ -240,6 +240,7 @@ struct HomeView: View {
         .onShake {
             isShakingCoolPresented = true
         }
+        .transition(.scale)
         
         
     }
