@@ -102,20 +102,20 @@ struct HomeView: View {
                     Spacer()
                         .frame(width: 50)
                     
-                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
-                        Image("reload")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                    }
-                    
+//                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
+//                        Image("reload")
+//                            .resizable()
+//                            .frame(width: 30, height: 30)
+//                    }
+//
                     Spacer()
                     
-                    Button(action: { inviteClicked() }) {
-                        Image("chat-add icon")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                    }
-                    
+//                    Button(action: { inviteClicked() }) {
+//                        Image("chat-add icon")
+//                            .resizable()
+//                            .frame(width: 30, height: 30)
+//                    }
+//
                     Spacer()
                         .frame(width: 50)
                 }
@@ -168,7 +168,7 @@ struct HomeView: View {
                             //
                             .cancel()
                         ])
-                    }                          .padding(10)
+                    }                          .padding(4)
                     
                     
                     
@@ -179,7 +179,7 @@ struct HomeView: View {
                         .onTapGesture {
                             sessionManager.showRooms()
                         }
-                        .padding(10)
+                        .padding(8)
                         .sheet(isPresented: $showingAddFriendInstructions) {
                             AddFriendSteps()
                         }
@@ -191,7 +191,7 @@ struct HomeView: View {
                         .onTapGesture {
                             sessionManager.showSmileNotes()
                         }
-                        .padding(10)
+                        .padding(8)
                         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                             ImagePicker(image: self.$inputImage)
                         }
@@ -205,9 +205,22 @@ struct HomeView: View {
                         }
                         .padding(10)
                     
+                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
+                        Image("reload")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
+                    .padding(8)
                     
-                    Button("Sign Out", action: {sessionManager.signOut()})
-                        .padding(10)
+                    Button(action: { inviteClicked() }) {
+                        Image("chat-add icon")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                    }
+                    .padding(6)
+                    
+                    Button("X", action: {sessionManager.signOut()})
+                        .padding(1)
                     
                 }
             }

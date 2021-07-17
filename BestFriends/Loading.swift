@@ -25,8 +25,9 @@ struct Loading: View {
                 Spacer()
                     .frame(height: 150)
             
-            Text("Refreshing Homepage")
-                .font(.system(size: 30, weight: .light))
+            Text("Refreshing\nhomepage.")
+                .italic()
+                .font(.system(size: 25, weight: .light))
                 .foregroundColor(.white)
                 .onAppear {
                     switchPage()
