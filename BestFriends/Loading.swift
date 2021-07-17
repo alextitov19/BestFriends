@@ -25,7 +25,7 @@ struct Loading: View {
                 Spacer()
                     .frame(height: 150)
             
-            Text("Loading")
+            Text("Refreshing Homepage")
                 .font(.system(size: 30, weight: .light))
                 .foregroundColor(.white)
                 .onAppear {
