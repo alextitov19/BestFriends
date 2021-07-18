@@ -44,22 +44,38 @@ struct RoomsView: View {
                                 Spacer().frame(height: 10)
                                 
                                 ForEach(dataSource.rooms) { room in
-                                    RoomRow(room: room)
-                                        .onTapGesture { sessionManager.chat(room: room) }
-                                        .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
-                                        .actionSheet(isPresented: $showingActionSheet) {
-                                            ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room. The creator can also delete the chat room."), buttons: [
-                                                .default(Text("Leave")) {
-                                                    dataSource.leaveChatRoom(room: room)
-                                                    sessionManager.reloadToPage(page: "rooms")
-                                                },
-                                                .default(Text("Delete")) {
-                                                    dataSource.deleteChatRoom(room: room)
-                                                    sessionManager.reloadToPage(page: "rooms")
-                                                },
-                                                .cancel()
-                                            ])
-                                        }
+                                    if room.creatorID == UserDataSource().getCurrentUser().id {
+                                        RoomRow(room: room)
+                                            .onTapGesture { sessionManager.chat(room: room) }
+                                            .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
+                                            .actionSheet(isPresented: $showingActionSheet) {
+                                                    ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room. Since you made it, you can also delete the chat room."), buttons: [
+                                                        .default(Text("Leave")) {
+                                                            dataSource.leaveChatRoom(room: room)
+                                                            sessionManager.reloadToPage(page: "rooms")
+                                                        },
+                                                        .default(Text("Delete")) {
+                                                            dataSource.deleteChatRoom(room: room)
+                                                            sessionManager.reloadToPage(page: "rooms")
+                                                        },
+                                                        .cancel()
+                                                    ])
+                                                }
+                                    } else {
+                                        RoomRow(room: room)
+                                            .onTapGesture { sessionManager.chat(room: room) }
+                                            .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
+                                            .actionSheet(isPresented: $showingActionSheet) {
+                                                    ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room."), buttons: [
+                                                        .default(Text("Leave")) {
+                                                            dataSource.leaveChatRoom(room: room)
+                                                            sessionManager.reloadToPage(page: "rooms")
+                                                        },
+                                                        .cancel()
+                                                    ])
+                                                }
+                                    }
+                                    
                                     Spacer()
                                         .frame(height: 30)
                                 }
