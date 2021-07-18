@@ -1426,6 +1426,8 @@ struct SignUpQuestionPage3: View {
                     
                     pushManager.registerForPushNotifications()
                     
+                    sessionManager.showInfoPages(username: username, password: password)
+                    
                 }) {
                     Text("Submit")
                         .font(.title)
