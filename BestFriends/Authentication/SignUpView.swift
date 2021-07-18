@@ -425,7 +425,7 @@ struct SignUpPage5: View {
                     .frame(height: 100)
                 
                 
-                Text("Just in case.")
+                Text("Just in case")
                     .font(.system(size: 50))
                     .foregroundColor(.white)
                     .frame(width: 350, height: 150, alignment: .center)
@@ -799,7 +799,7 @@ struct SignUpPage8: View {
             
             VStack {
                 
-                Text("Hide Chat ")
+                Text("Hide Chat")
                     .font(.system(size: 50))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
@@ -810,13 +810,14 @@ struct SignUpPage8: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
+               
                 Text("Only you can restore with a 'Secret' PIN")
                     .font(.system(size: 30))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 120, alignment: .center)
-                    .padding(20)
+                    .frame(width: 400, height: 100, alignment: .center)
+//                    .padding(20)
                   
                 
                 
