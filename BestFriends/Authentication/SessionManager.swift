@@ -96,7 +96,7 @@ final class SessionManager: ObservableObject {
                     print("Finished sign up")
                     
                 case .confirmUser(let details, _):
-                    print(details ?? "no details")
+                    print("The details are: ", details ?? "no details")
                     
                     DispatchQueue.main.async {
                         self?.appState = .confirmationCode(username: username, password: password)

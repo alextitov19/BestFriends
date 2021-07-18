@@ -1079,7 +1079,7 @@ struct SignUpPage9: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    NavigationLink("", destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: locationString).environmentObject(sessionManager), isActive: $readyToProceed)
+                    NavigationLink("", destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: locationString ?? "N/A").environmentObject(sessionManager), isActive: $readyToProceed)
                     
                     Button(action: {
                         guard let exposedLocation = self.locationManager.exposedLocation else {
@@ -1394,16 +1394,13 @@ struct SignUpQuestionPage3: View {
                 }
                 
                 Button(action: {
-                    sessionManager.signUp(
-                        username: username,
-                        email: email,
-                        password: password
-                        
-                    )
-                    
                     
                     let pushManager = PushNotificationManager(userID: username)
+
                     
+
+                    print("Part 1")
+
                     let user = User(
                         id: username,
                         firstName: firstName,
@@ -1411,7 +1408,7 @@ struct SignUpQuestionPage3: View {
                         email: email,
                         birthday: Temporal.Date(birthdate),
                         pronouns: pronouns,
-                        location: location,
+                        location: location ?? "N/A",
                         adPreference: selectedOptions,
                         deviceFCMToken: pushManager.getFCMToken() ?? "No token",
                         isOnline: true,
@@ -1421,13 +1418,31 @@ struct SignUpQuestionPage3: View {
                         notificationsBM: true,
                         notificationsLP: true,
                         chatFontSize: 16)
+                    print("Part 2")
+
+                    print("This user: ", user)
                     
                     userMamager.create(user)
+
+                    print("Part 3")
                     
-                    pushManager.registerForPushNotifications()
+                    print("Part 4")
                     
-                    sessionManager.showInfoPages(username: username, password: password)
+                    sessionManager.signUp(
+                        username: username,
+                        email: email,
+                        password: password
+                    )
                     
+                    print("Part 2")
+
+//                    pushManager.registerForPushNotifications()
+
+                    
+                    
+                    print("Part 6")
+
+                                        
                 }) {
                     Text("Submit")
                         .font(.title)

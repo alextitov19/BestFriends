@@ -9,7 +9,7 @@ public struct User: Model {
   public var email: String
   public var birthday: Temporal.Date
   public var pronouns: String
-  public var location: String?
+  public var location: String
   public var adPreference: [Int]
   public var deviceFCMToken: String
   public var isOnline: Bool
@@ -35,7 +35,7 @@ public struct User: Model {
       email: String,
       birthday: Temporal.Date,
       pronouns: String,
-      location: String? = nil,
+      location: String,
       adPreference: [Int] = [],
       deviceFCMToken: String,
       isOnline: Bool,

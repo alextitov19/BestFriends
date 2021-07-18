@@ -11,6 +11,8 @@ import Amplify
 class UserManager: ObservableObject {
     
     func create(_ user: User) {
+        let group = DispatchGroup()
+        group.enter()
         Amplify.API.mutate(request: .create(user)) { [weak self] mutationResult in
             switch mutationResult {
             
@@ -19,7 +21,7 @@ class UserManager: ObservableObject {
                 switch creationResult {
                 case .success:
                     print("Successfully created user")
-                    
+                    group.leave()
                     
                     
                 case .failure(let error):
@@ -30,6 +32,8 @@ class UserManager: ObservableObject {
                 print(apiError)
             }
         }
+        group.wait()
+        return
     }
     
     func resetPassword(username: String) {
