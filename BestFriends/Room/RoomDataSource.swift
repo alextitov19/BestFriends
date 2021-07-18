@@ -10,7 +10,7 @@ import Foundation
 
 class RoomDataSource: ObservableObject {
     @Published var rooms = [Room]()
-    
+
     func createRoom(room: Room) {
         Amplify.API.mutate(request: .create(room)) { [weak self] mutationResult in
             switch mutationResult {
@@ -73,15 +73,16 @@ class RoomDataSource: ObservableObject {
         return finalroom
     }
     
-    func updateRoomName(room: Room, name: String) {
-        var newroom = room
-        newroom.name = name
-        Amplify.API.mutate(request: .update(newroom)) { event in  //update room
+    func updateRoom(room: Room) {
+        let group = DispatchGroup()
+        group.enter()
+        Amplify.API.mutate(request: .update(room)) { event in  //update room
             switch event {
             case .success(let result):
                 switch result {
                 case .success(let room):
-                    print("Successfully updated room: \(newroom)")
+                    print("Successfully updated room: \(room)")
+                    group.leave()
                 case .failure(let error):
                     print("Got failed result with \(error.errorDescription)")
                 }
@@ -89,6 +90,14 @@ class RoomDataSource: ObservableObject {
                 print("Got failed event with error \(error)")
             }
         }
+        group.wait()
+        return
+    }
+    
+    func updateRoomName(room: Room, name: String) {
+        var newroom = room
+        newroom.name = name
+        updateRoom(room: newroom)
     }
     
     func updateRoomTime(room: Room, isMember1: Bool) {
@@ -99,19 +108,56 @@ class RoomDataSource: ObservableObject {
             newroom.lastSeenByMember2 = Int(Date().timeIntervalSince1970)
         }
         
-        Amplify.API.mutate(request: .update(newroom)) { event in  //update room
-            switch event {
-            case .success(let result):
-                switch result {
-                case .success(let newroom):
-                    print("Successfully updated room: \(newroom)")
-                case .failure(let error):
-                    print("Got failed result with \(error.errorDescription)")
-                }
-            case .failure(let error):
-                print("Got failed event with error \(error)")
+        updateRoom(room: newroom)
+    }
+    
+    func leaveChatRoom(room: Room) {
+        let userDS = UserDataSource()
+        var user = userDS.getCurrentUser()
+        var theroom = room
+        if let index = theroom.members.firstIndex(of: user.id) {
+            theroom.members.remove(at: index)
+            updateRoom(room: theroom)
+            if let index = user.rooms!.firstIndex(of: room.id) {
+                user.rooms!.remove(at: index)
+                userDS.updateUser(user: user)
             }
         }
+    }
+    
+    private func delete(room : Room) {
+        let group = DispatchGroup()
+        group.enter()
+        Amplify.API.mutate(request: .delete(room)) { event in
+                switch event {
+                case .success(let result):
+                    switch result {
+                    case .success(let room):
+                        print("Successfully deleted room: \(room)")
+                        group.leave()
+                    case .failure(let error):
+                        print("Got failed result with \(error.errorDescription)")
+                    }
+                case .failure(let error):
+                    print("Got failed event with error \(error)")
+                }
+            }
+        group.wait()
+        return
+    }
+    
+    func deleteChatRoom(room: Room) {
+        let userDS = UserDataSource()
+        let memberIDs = room.members
+        for id in memberIDs {
+            var user = userDS.getUser(id: id)
+            if let index = user.rooms!.firstIndex(of: room.id) {
+                user.rooms!.remove(at: index)
+                print("removed a room for user \(user.id)")
+                userDS.updateUser(user: user)
+            }
+        }
+        delete(room: room)
     }
     
     

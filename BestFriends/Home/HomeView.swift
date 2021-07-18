@@ -295,7 +295,8 @@ struct HomeView: View {
     
     private func getFriends() {
         let user = userDataSource.getUser(id: myID)
-        guard let friends = user.friends else { return }
+        guard var friends = user.friends else { return }
+        friends.shuffle()
         friendIDs = friends
         displayStars()
     }
