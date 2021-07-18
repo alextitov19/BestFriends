@@ -804,14 +804,14 @@ struct SignUpPage8: View {
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 120, alignment: .center)
+                    .frame(width: 400, height: 50, alignment: .center)
                     .padding(20)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 Text("Only you can restore with a 'Secret' PIN")
-                    .font(.system(size: 50))
+                    .font(.system(size: 30))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
@@ -1054,7 +1054,7 @@ struct SignUpPage9: View {
             VStack {
                 
                 
-                Text("Need to talk to your friends, NOW?")
+                Text("Need to talk to your friends,\n NOW?")
                     .font(.system(size: 50))
                     .fontWeight(.regular)
                     .italic()
@@ -1183,7 +1183,7 @@ struct SignUpQuestionPage1: View {
                 Text("Instead of following your every move")
                     .font(.system(size: 50))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .frame(width: 400, height: 150)
+                    .frame(width: 400, height: 200)
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
@@ -1268,18 +1268,15 @@ struct SignUpQuestionPage2: View {
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    
+                      
                     Spacer()
                         .frame(height: 30)
                     
                     Text("about your interests.")
-                        .font(.system(size: 30))
-                        .fontWeight(.ultraLight)
                         .italic()
-                        .foregroundColor(Color.white)
-                        .frame(width: 400, height: 200)
+                        .font(.system(size: 35))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .frame(width: 400, height: 150)
                         .multilineTextAlignment(.center)
                        
                     
