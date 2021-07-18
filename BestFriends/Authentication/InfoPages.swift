@@ -55,8 +55,8 @@ struct InfoViewPage1: View {
                         Spacer()
                             .frame(height: 100)
                         
-                        Text("Only takes 40 seconds!")
-                            .font(.system(size: 25))
+                        Text("(Only takes 40 seconds)")
+                            .font(.system(size: 22))
                             .italic()
                             .fontWeight(.regular)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -106,46 +106,46 @@ struct InfoViewPage2: View {
                 .scaledToFill()
             
             VStack {
-                Image("starPurple")
-                    .resizable()
-                    .frame(width: 80, height: 80, alignment: .center)
-                    .scaledToFill()
-                    .blendMode(.screen)
-                    .offset(x: -100, y: -110)
-                
-                Image("starPurple")
-                    .resizable()
-                    .frame(width: 80, height: 80, alignment: .center)
-                    .scaledToFill()
-                    .blendMode(.screen)
-                    .offset(x: 130, y: -240)
-                
-                Image("starPurple")
-                    .resizable()
-                    .frame(width: 80, height: 80, alignment: .center)
-                    .scaledToFill()
-                    .blendMode(.screen)
-                    .offset(x: -30, y: -100)
-                
-                Image("starBlue")
-                    .resizable()
-                    .frame(width: 80, height: 80, alignment: .center)
-                    .scaledToFill()
-                    .blendMode(.screen)
-                    .offset(x: -130, y: 130)
-                
-                Image("starGreen")
-                    .resizable()
-                    .frame(width: 80, height: 80, alignment: .center)
-                    .scaledToFill()
-                    .blendMode(.screen)
-                    .offset(x: 110, y: -20)
-            }
+//                Image("starPurple")
+//                    .resizable()
+//                    .frame(width: 80, height: 80, alignment: .center)
+//                    .scaledToFill()
+//                    .blendMode(.screen)
+//                    .offset(x: -100, y: -110)
+//
+//                Image("starPurple")
+//                    .resizable()
+//                    .frame(width: 80, height: 80, alignment: .center)
+//                    .scaledToFill()
+//                    .blendMode(.screen)
+//                    .offset(x: 130, y: -240)
+//
+//                Image("starPurple")
+//                    .resizable()
+//                    .frame(width: 80, height: 80, alignment: .center)
+//                    .scaledToFill()
+//                    .blendMode(.screen)
+//                    .offset(x: -30, y: -100)
+//
+//                Image("starBlue")
+//                    .resizable()
+//                    .frame(width: 80, height: 80, alignment: .center)
+//                    .scaledToFill()
+//                    .blendMode(.screen)
+//                    .offset(x: -130, y: 130)
+//
+//                Image("starGreen")
+//                    .resizable()
+//                    .frame(width: 80, height: 80, alignment: .center)
+//                    .scaledToFill()
+//                    .blendMode(.screen)
+//                    .offset(x: 110, y: -20)
+                    }
             
             VStack {
                 
                 
-                Text("You're never alone on a bad day ...")
+                Text("You're never alone on a bad day.")
                     .font(.system(size: 35))
                     .italic()
                     .fontWeight(.regular)
@@ -159,7 +159,7 @@ struct InfoViewPage2: View {
                     .frame(height: 100)
                 
                 
-                Text("Because, each tiny star on the homepage represents another user somewhere out there.")
+                Text("Each tiny star on your homepage represents another user somewhere out there just like you.")
                     .font(.system(size: 30))
                     .italic()
                     .fontWeight(.regular)
@@ -232,7 +232,7 @@ struct InfoViewPage3: View {
                     .frame(height: 225)
                 
                 
-                Text("Just shake your phone. Three pics of you and your friends that always make you smile ...")
+                Text("Just shake your phone. Three pics of you and your friends that always make you SMILE ...")
                     .font(.system(size: 25))
                     .italic()
                     .fontWeight(.regular)
@@ -312,20 +312,21 @@ struct InfoViewPage4: View {
                 Spacer().frame(height: 130)
                 
                 
-                Text("Can't find that message that made you smile from 2 months ago.")
-                    .font(.system(size: 35))
+                Text("Can't find that message that made you SMILE from 2 months ago.")
+                    .font(.system(size: 26))
                     .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 375, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 400, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 
                 Spacer()
-                    .frame(height: 150)
+                    .frame(height: 100)
                 
                 
                 Text("STOP SCROLLING. We saved them in a special vault for you.")
+                    .italic()
                     .font(.system(size: 27))
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -338,7 +339,7 @@ struct InfoViewPage4: View {
                     
                     
                     NavigationLink(destination: InfoViewPage5(username: username, password: password).environmentObject(sessionManager)) {
-                        Text("Long-tap to save messages")
+                        Text("Long-tap saves nice messages.")
                             .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .frame(width: 400, height: 50)
@@ -393,7 +394,7 @@ struct InfoViewPage5: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 
-                Text("Just had a huge fight with a friend?")
+                Text("Just had a fight with your friend?")
                     .font(.system(size: 35))
                     .italic()
                     .fontWeight(.regular)
@@ -489,7 +490,7 @@ struct InfoViewPage6: View {
                     .frame(height: 40)
                 
                 VStack {
-                    Text("Step 2: Tap friends stars you'd like to invite, now truning 'green'.")
+                    Text("Step 2: Tap friend's stars to invite - now truning 'green' and rotating.")
                         .font(.system(size: 22))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -498,9 +499,9 @@ struct InfoViewPage6: View {
                         .font(.system(size: 22))
                     
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 30)
                     
-                    Text("Step 3: Watch for floating sending Push notifications to your friends letting them know you 'urgently' need to chat.")
+                    Text("Step 3: Tap [invite] sending Push notifications to your friends letting them know you 'urgently' need to chat.")
                         .font(.system(size: 22))
                         .fontWeight(.regular)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
