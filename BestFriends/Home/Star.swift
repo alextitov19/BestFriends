@@ -12,12 +12,12 @@ struct Star: View {
     var name: String
     var image = Image(uiImage: UIImage(named: "starPurple")!)
     var hidingName = true
-//    var isSpinning = true
+    var isSpinning = false
     @State var angle: Double = 0.0
         @State var isAnimating = false
         
         var foreverAnimation: Animation {
-            Animation.linear(duration: 2.0)
+            Animation.linear(duration: 4.0)
                 .repeatForever(autoreverses: false)
         }
     
@@ -29,7 +29,7 @@ struct Star: View {
                 .offset(y: 10)
                 .isHidden(hidingName)
             
-//            if isSpinning {
+            if isSpinning {
                 image
                     .resizable()
                     .frame(width: 80, height: 80, alignment: .center)
@@ -40,13 +40,13 @@ struct Star: View {
                                     .onAppear {
                                         self.isAnimating = true
                                 }
-//            } else {
-//                image
-//                    .resizable()
-//                    .frame(width: 80, height: 80, alignment: .center)
-//                    .scaledToFill()
-//                    .blendMode(.screen)
-//            }
+            } else {
+                image
+                    .resizable()
+                    .frame(width: 80, height: 80, alignment: .center)
+                    .scaledToFill()
+                    .blendMode(.screen)
+            }
             
             
             

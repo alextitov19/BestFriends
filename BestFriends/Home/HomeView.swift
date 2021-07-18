@@ -96,12 +96,12 @@ struct HomeView: View {
                                 membersOfNewRoom.remove(at: membersOfNewRoom.firstIndex(of: stars[index].id)!)
                                 stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
                                 print("Color change 1")
-//                                stars[index].isSpinning = false
+                                stars[index].isSpinning = false
                             } else {
                                 membersOfNewRoom.append(stars[index].id)
                                 stars[index].image = Image(uiImage: UIImage(named: "starGreen")!)
                                 print("Color change 2")
-//                                stars[index].isSpinning = true
+                                stars[index].isSpinning = true
                             }
                             
                         }
