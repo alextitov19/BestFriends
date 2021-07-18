@@ -239,8 +239,6 @@ struct PinView: View {
                     sessionManager.chat(room: room)
                 }
                 
-                
-                
             } else {
                 title = "Wrong pin, try again"
                 color = Color(.red)

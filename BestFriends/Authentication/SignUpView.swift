@@ -1156,7 +1156,7 @@ struct SignUpQuestionPage1: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-                Image("cookie-monster")
+                Image("dataPicture")
                     .resizable()
                     .frame(width: 200, height: 200)
                     .scaledToFill()
@@ -1247,7 +1247,11 @@ struct SignUpQuestionPage2: View {
                         .multilineTextAlignment(.center)
                     
                     
-                    
+                    Image("cookie-monster")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                        .scaledToFill()
+                        .padding(20)
                     
                     
                     
