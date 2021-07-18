@@ -14,17 +14,14 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                
                 Image("SignUpPinBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
                 
-                
                 VStack {
                     ScrollView(showsIndicators: false) {
                         Spacer().frame(height: 50)
-                        
                         
                         VStack {
                             

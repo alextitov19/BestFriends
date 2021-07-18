@@ -1156,16 +1156,11 @@ struct SignUpQuestionPage1: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-                Image("starPurple")
-                              .resizable()
-                              .frame(width: 80, height: 80, alignment: .center)
-                              .scaledToFill()
-                              .blendMode(.screen)
-                             .offset(x: -30, y: -100)
-                
-                
-                Spacer()
-                    .frame(height: 260)
+                Image("cookie-monster")
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    .scaledToFill()
+                    .padding(20)
                 
                 Text("Help us - help you Protect your Privacy.")
                     .italic()
@@ -1474,7 +1469,7 @@ struct SignUpPage1_Previews : PreviewProvider {
     static var previews: some View {
         
         //
-        //                SignUpPage1().environmentObject(SessionManager())
+                        SignUpPage1().environmentObject(SessionManager())
         //                SignUpPage2(firstName: "").environmentObject(SessionManager())
         //                SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
         //                SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
@@ -1482,13 +1477,13 @@ struct SignUpPage1_Previews : PreviewProvider {
         //                        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
         //                SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
         //        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
-        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
+//        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
-        //            SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
-        
-        //        SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
-        //
-        //            SignUpQuestionPage3(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+//                    SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+//
+//                SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+//
+//                    SignUpQuestionPage3(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
         
         
     }
