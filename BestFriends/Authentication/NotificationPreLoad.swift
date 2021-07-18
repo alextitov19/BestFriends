@@ -24,7 +24,7 @@ struct NotificationPreLoad: View {
     var body: some View {
         ZStack {
             
-            Image("SignUpPinBackground")
+            Image("Firstname")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -56,16 +56,16 @@ struct NotificationPreLoad: View {
                     
                     
                 }
-                .padding(30)
+                .padding(50)
                 
-                Text("OR IN ...")
-                    
-                    .font(.system(size: 25))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
+//                Text("I Need ...")
+//
+//                    .font(.system(size: 25))
+//                    .fontWeight(.regular)
+//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                    .multilineTextAlignment(.center)
+//                    .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+//
                 Spacer()
                     .frame(height: 30)
                 
