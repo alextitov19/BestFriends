@@ -1052,7 +1052,7 @@ struct SignUpPage9: View {
                     
                     
                     
-                    Text("'IF and WHEN'")
+                    Text("'I and When'")
                         .font(.system(size: 30))
                         .fontWeight(.regular)
                         .italic()
@@ -1155,6 +1155,13 @@ struct SignUpQuestionPage1: View {
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                
+                Image("starPurple")
+                              .resizable()
+                              .frame(width: 80, height: 80, alignment: .center)
+                              .scaledToFill()
+                              .blendMode(.screen)
+                             .offset(x: -30, y: -100)
                 
                 
                 Spacer()
