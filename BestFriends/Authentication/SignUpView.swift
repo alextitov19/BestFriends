@@ -42,7 +42,7 @@ struct SignUpPage1: View {
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     
                     Text("The positivity app :)")
-                        .font(.system(size: 25))
+                        .font(.system(size: 35))
                         .italic()
                         .fontWeight(.thin)
                         .foregroundColor(.white)
@@ -1052,7 +1052,7 @@ struct SignUpPage9: View {
                     
                     
                     
-                    Text("'I and When'")
+                    Text("'If and When'")
                         .font(.system(size: 30))
                         .fontWeight(.regular)
                         .italic()
