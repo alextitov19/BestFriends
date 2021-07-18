@@ -24,15 +24,15 @@ struct Loading: View {
                 
                 Spacer()
                     .frame(height: 150)
-            
-            Text("Refreshing\nhomepage.")
-                .italic()
-                .font(.system(size: 25, weight: .light))
-                .foregroundColor(.white)
-                .onAppear {
-                    switchPage()
-                }
-        }
+                
+                Text("Loading...")
+                    .italic()
+                    .font(.system(size: 25, weight: .light))
+                    .foregroundColor(.white)
+                    .onAppear {
+                        switchPage()
+                    }
+            }
         }
         
     }

@@ -13,13 +13,15 @@ struct Star: View {
 //    @State var isSelected = false
 //    @State var showingActionSheet = false
     var image = Image(uiImage: UIImage(named: "starPurple")!)
-    
+    var hidingName = true
+
     var body: some View {
         VStack {
             Text(name)
                 .font(.system(size: 16, weight: .light))
                 .foregroundColor(.white)
                 .offset(y: 10)
+                .isHidden(hidingName)
                            
             
             image

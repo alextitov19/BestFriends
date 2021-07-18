@@ -26,15 +26,9 @@ struct HomeView: View {
     @State private var starButtons: [UIButton] = []
     @State private var titleText = ""
     @State private var invitedChatRooms: [InvitedRoom] = []
-    
     @State private var invitingFriends = false
     @State private var isShakingCoolPresented = false
     @State private var showingAddFriendInstructions = false
-    @State private var isAdViewPresented = false
-    @State private var isReviewPopupShowing = false //change to true to show popup
-    @State private var bodyForPopup = ""
-    @State private var invitedFriendsPopupOffset: CGFloat = 700
-    
     
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
     //    @State private var inviteMode = false
@@ -94,35 +88,6 @@ struct HomeView: View {
                 .blendMode(.screen)
             
             VStack {
-                //                Text(titleText)
-                //                    .foregroundColor(.white)
-                //                    .font(.title)
-                //
-                //                HStack {
-                //                    Spacer()
-                //                        .frame(width: 50)
-                //
-                //                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
-                //                        Image("reload")
-                //                            .resizable()
-                //                            .frame(width: 30, height: 30)
-                //                    }
-                //
-                //                    Spacer()
-                //
-                //                    Button(action: { inviteClicked() }) {
-                //                        Image("chat-add icon")
-                //                            .resizable()
-                //                            .frame(width: 30, height: 30)
-                //                    }
-                //
-                //                    Spacer()
-                //                        .frame(width: 50)
-                //                }
-                
-                //                Spacer()
-                //                    .frame(height: 40)
-                
                 ForEach(stars.indices, id: \.self) { index in
                     Button(action: {
                         print("tap")
@@ -167,7 +132,7 @@ struct HomeView: View {
                             .cancel()
                         ])
                     }
-                    .padding(4)
+                    .padding(25)
                     
                     Image("chat icon")
                         .resizable()
@@ -200,48 +165,46 @@ struct HomeView: View {
                         .onTapGesture {
                             sessionManager.showSettings()
                         }
-                        .padding(10)
-                    
-                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
-                        Image("reload")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                    }
-                    .padding(8)
+                        .padding(8)
                     
                     Button(action: { inviteClicked() }) {
                         Image("chat-add icon")
                             .resizable()
-                            .frame(width: 30, height: 30)
+                            .frame(width: 40, height: 40)
                     }
                     
                     .sheet(isPresented: $showingSheet) {
                         QRCodeView(image: myQRCode)
                     }
-                    .padding(6)
+                    .padding(25)
                     
                 }
-//                .ignoresSafeArea()
-//                .offset(y: 20)
+                //                .ignoresSafeArea()
+                //                .offset(y: 20)
             }
             
-            VStack {
-                Button(action: {
-                    isReviewPopupShowing = false
-                }) {
-                    Text("X")
-                        .font(.headline)
-                        .foregroundColor(.white)
+            if invitingFriends == true {
+            Button(action: {
+                invitingFriends = false
+                for index in 0..<stars.count {
+                    stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
+                    stars[index].hidingName = true
                 }
-                .frame(alignment: .leading)
-
-                ReviewPopup()
-                    .padding(20)
+                inviteSelectedFriends()
+            }) {
+                Text("Invite")
+                    .frame(width: 150, height: 50, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 30, weight: .ultraLight))
+                    .cornerRadius(25)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 75)
+                            .stroke(Color.white, lineWidth: 2)
+                    )
             }
-            .isHidden(!isReviewPopupShowing)
-
-            InviteSentPopup(names: bodyForPopup)
-                .offset(x: 0.0, y: invitedFriendsPopupOffset)
+            .offset(y: 300)
+            .transition(.move(edge: .bottom))
+            }
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onAppear(perform: reloadData)
@@ -342,38 +305,24 @@ struct HomeView: View {
             guard let initial = user.lastName.first else { return }
             var name = user.firstName + " "
             name.append(initial)
-            var star = Star(id: user.id, name: name)
+            let star = Star(id: user.id, name: name)
             print("Successfully added a star for user: ", user.id)
             stars.append(star)
-            
-            
         }
     }
     
-    
     private func inviteClicked() {
-        invitingFriends = true
+        withAnimation {
+            invitingFriends = true
+        }
         for index in 0..<stars.count {
             stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
-            
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            invitingFriends = false
-            for index in 0..<stars.count {
-                stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
-                
-            }
-            inviteSelectedFriends()
+            stars[index].hidingName = false
         }
     }
     
     private func inviteSelectedFriends() {
         if membersOfNewRoom != [] {
-            
-            
-            
-            self.invitedFriendsPopupOffset = 700.0
             membersOfNewRoom.append(myID)
             var name = ""
             for id in membersOfNewRoom {
@@ -389,7 +338,7 @@ struct HomeView: View {
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
             userDataSource.addRoom(room: room)
-            var messageBody = "Members: " + room.name
+            let messageBody = "Members: " + room.name
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
                 if user.notificationsLP == true {
@@ -397,34 +346,17 @@ struct HomeView: View {
                     PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk!", body: messageBody)
                 }
             }
-            messageBody.removeFirst(9)
-            bodyForPopup = messageBody
-            withAnimation {
-                withAnimation(.easeInOut(duration: 8)) { self.invitedFriendsPopupOffset = -700.0 }
-            }
+            
+            membersOfNewRoom = []
+            
+            sleep(3)
+            sessionManager.chat(room: room)
+            
         }
-        
-        membersOfNewRoom = []
-        
     }
     
     
-    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 struct LandingView_Previews : PreviewProvider {
