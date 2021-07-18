@@ -94,34 +94,34 @@ struct HomeView: View {
                 .blendMode(.screen)
                         
             VStack {
-                Text(titleText)
-                    .foregroundColor(.white)
-                    .font(.title)
+//                Text(titleText)
+//                    .foregroundColor(.white)
+//                    .font(.title)
+//
+//                HStack {
+//                    Spacer()
+//                        .frame(width: 50)
+//
+//                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
+//                        Image("reload")
+//                            .resizable()
+//                            .frame(width: 30, height: 30)
+//                    }
+//
+//                    Spacer()
+//
+//                    Button(action: { inviteClicked() }) {
+//                        Image("chat-add icon")
+//                            .resizable()
+//                            .frame(width: 30, height: 30)
+//                    }
+//
+//                    Spacer()
+//                        .frame(width: 50)
+//                }
                 
-                HStack {
-                    Spacer()
-                        .frame(width: 50)
-                    
-                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
-                        Image("reload")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                    }
-
-                    Spacer()
-                    
-                    Button(action: { inviteClicked() }) {
-                        Image("chat-add icon")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                    }
-
-                    Spacer()
-                        .frame(width: 50)
-                }
-                
-                Spacer()
-                    .frame(height: 10)
+//                Spacer()
+//                    .frame(height: 40)
                 
                 ForEach(stars.indices, id: \.self) { index in
                     Button(action: {
@@ -219,13 +219,8 @@ struct HomeView: View {
                     }
                     .padding(6)
                     
-                    Button("X", action: {sessionManager.signOut()})
-                        .padding(1)
-                    
                 }
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
             
             VStack {
                 Button(action: {
@@ -236,7 +231,7 @@ struct HomeView: View {
                         .foregroundColor(.white)
                 }
                 .frame(alignment: .leading)
-                
+
                 ReviewPopup()
                     .padding(20)
             }
@@ -244,7 +239,7 @@ struct HomeView: View {
                 QRCodeView(image: myQRCode)
             }
             .isHidden(!isReviewPopupShowing)
-            
+
             InviteSentPopup(names: bodyForPopup)
                 .offset(x: 0.0, y: invitedFriendsPopupOffset)
         }
@@ -253,7 +248,6 @@ struct HomeView: View {
         .onShake {
             isShakingCoolPresented = true
         }
-        .transition(.scale)
         
         
     }
