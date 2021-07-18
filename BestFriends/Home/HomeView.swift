@@ -153,7 +153,7 @@ struct HomeView: View {
                         .onTapGesture {
                             sessionManager.showSmileNotes()
                         }
-                        .padding(8)
+                        .padding(10)
                         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                             ImagePicker(image: self.$inputImage)
                         }
@@ -193,13 +193,13 @@ struct HomeView: View {
                 inviteSelectedFriends()
             }) {
                 Text("Invite")
-                    .frame(width: 150, height: 50, alignment: .center)
+                    .frame(width: 150, height: 40, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 30, weight: .ultraLight))
                     .cornerRadius(25)
                     .overlay(
                         RoundedRectangle(cornerRadius: 75)
-                            .stroke(Color.white, lineWidth: 2)
+                            .stroke(Color.white, lineWidth: 1)
                     )
             }
             .offset(y: 300)
