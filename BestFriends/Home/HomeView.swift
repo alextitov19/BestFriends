@@ -33,7 +33,7 @@ struct HomeView: View {
     @State private var isAdViewPresented = false
     @State private var isReviewPopupShowing = false //change to true to show popup
     @State private var bodyForPopup = ""
-    @State private var invitedFriendsPopupOffset: CGFloat = 600
+    @State private var invitedFriendsPopupOffset: CGFloat = 700
     
     
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
@@ -92,36 +92,36 @@ struct HomeView: View {
             PlayerView()
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                        
+            
             VStack {
-//                Text(titleText)
-//                    .foregroundColor(.white)
-//                    .font(.title)
-//
-//                HStack {
-//                    Spacer()
-//                        .frame(width: 50)
-//
-//                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
-//                        Image("reload")
-//                            .resizable()
-//                            .frame(width: 30, height: 30)
-//                    }
-//
-//                    Spacer()
-//
-//                    Button(action: { inviteClicked() }) {
-//                        Image("chat-add icon")
-//                            .resizable()
-//                            .frame(width: 30, height: 30)
-//                    }
-//
-//                    Spacer()
-//                        .frame(width: 50)
-//                }
+                //                Text(titleText)
+                //                    .foregroundColor(.white)
+                //                    .font(.title)
+                //
+                //                HStack {
+                //                    Spacer()
+                //                        .frame(width: 50)
+                //
+                //                    Button(action: { sessionManager.reloadToPage(page: "home") }) {
+                //                        Image("reload")
+                //                            .resizable()
+                //                            .frame(width: 30, height: 30)
+                //                    }
+                //
+                //                    Spacer()
+                //
+                //                    Button(action: { inviteClicked() }) {
+                //                        Image("chat-add icon")
+                //                            .resizable()
+                //                            .frame(width: 30, height: 30)
+                //                    }
+                //
+                //                    Spacer()
+                //                        .frame(width: 50)
+                //                }
                 
-//                Spacer()
-//                    .frame(height: 40)
+                //                Spacer()
+                //                    .frame(height: 40)
                 
                 ForEach(stars.indices, id: \.self) { index in
                     Button(action: {
@@ -147,8 +147,6 @@ struct HomeView: View {
                 Spacer()
                 
                 HStack {
-                    
-                    
                     Button(action: {
                         //Display invite menu
                         self.showingActionSheet = true
@@ -168,9 +166,8 @@ struct HomeView: View {
                             //
                             .cancel()
                         ])
-                    }                          .padding(4)
-                    
-                    
+                    }
+                    .padding(4)
                     
                     Image("chat icon")
                         .resizable()
@@ -217,9 +214,15 @@ struct HomeView: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                     }
+                    
+                    .sheet(isPresented: $showingSheet) {
+                        QRCodeView(image: myQRCode)
+                    }
                     .padding(6)
                     
                 }
+//                .ignoresSafeArea()
+//                .offset(y: 20)
             }
             
             VStack {
@@ -234,9 +237,6 @@ struct HomeView: View {
 
                 ReviewPopup()
                     .padding(20)
-            }
-            .sheet(isPresented: $showingSheet) {
-                QRCodeView(image: myQRCode)
             }
             .isHidden(!isReviewPopupShowing)
 
@@ -370,10 +370,10 @@ struct HomeView: View {
     
     private func inviteSelectedFriends() {
         if membersOfNewRoom != [] {
-       
             
             
-            self.invitedFriendsPopupOffset = 600.0
+            
+            self.invitedFriendsPopupOffset = 700.0
             membersOfNewRoom.append(myID)
             var name = ""
             for id in membersOfNewRoom {
@@ -400,7 +400,7 @@ struct HomeView: View {
             messageBody.removeFirst(9)
             bodyForPopup = messageBody
             withAnimation {
-                withAnimation(.easeInOut(duration: 8)) { self.invitedFriendsPopupOffset = -600.0 }
+                withAnimation(.easeInOut(duration: 8)) { self.invitedFriendsPopupOffset = -700.0 }
             }
         }
         
