@@ -32,7 +32,7 @@ struct SignUpPage1: View {
                 
                 VStack {
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 100)
                     
                     Text("BestFriends")
                         .font(.system(size: 65))
@@ -46,14 +46,13 @@ struct SignUpPage1: View {
                     Spacer()
                         .frame(height: 400)
                     
-                    Text("The positivity app :)")
-                        .font(.system(size: 50))
-                        .italic()
-                        .fontWeight(.thin)
+                    Text("The Positivity app :)")
+                    .italic()
+                        .font(.system(size: 30))
+                        .fontWeight(.regular)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                   
+                        .frame(width: 400, height: 50, alignment: .center)
                     
                     TextField("First name", text: $firstName)
                         .multilineTextAlignment(.center)
@@ -136,14 +135,14 @@ struct SignUpPage2: View {
                     
                         
                         Spacer()
-                            .frame(height: 125)
+                            .frame(height: 100)
                         
                     }
                 }
                 Spacer()
                     .frame(height: 270)
                 
-                Text("With QR codes, not usernames.")
+                Text("Using QR codes, not usernames.")
                 .italic()
                     .font(.system(size: 30))
                     .fontWeight(.regular)
@@ -237,7 +236,7 @@ struct SignUpPage3: View {
                    
                 
                 Spacer()
-                    .frame(height: 380)
+                    .frame(height: 400)
                 
                 Text("Stops unwanted DM's & images.")
                     .font(.system(size: 30))
@@ -430,11 +429,12 @@ struct SignUpPage5: View {
             
             
             VStack {
-                Text("Just in case you need to reset your password.")
-                    .font(.system(size: 30))
+                Text("Just in case.")
+                    .font(.system(size: 50))
                     .foregroundColor(.white)
                     .frame(width: 350, height: 150, alignment: .center)
                     .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
@@ -442,7 +442,11 @@ struct SignUpPage5: View {
                     .frame(height: 370)
                 
                 
-                
+                Text("Reset your password.")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .frame(width: 350, height: 150, alignment: .center)
+                    .multilineTextAlignment(.center)
                 
                 
                 
