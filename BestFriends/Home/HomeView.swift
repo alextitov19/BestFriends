@@ -182,31 +182,31 @@ struct HomeView: View {
                     .padding(25)
                     
                 }
-                //                .ignoresSafeArea()
-                //                .offset(y: 20)
+                .ignoresSafeArea()
+                .offset(y: 35)
             }
             
             if invitingFriends == true {
-            Button(action: {
-                invitingFriends = false
-                for index in 0..<stars.count {
-                    stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
-                    stars[index].hidingName = true
+                Button(action: {
+                    invitingFriends = false
+                    for index in 0..<stars.count {
+                        stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
+                        stars[index].hidingName = true
+                    }
+                    inviteSelectedFriends()
+                }) {
+                    Text("Invite")
+                        .frame(width: 150, height: 40, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 30, weight: .ultraLight))
+                        .cornerRadius(25)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 75)
+                                .stroke(Color.white, lineWidth: 1)
+                        )
                 }
-                inviteSelectedFriends()
-            }) {
-                Text("Invite")
-                    .frame(width: 150, height: 40, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 30, weight: .ultraLight))
-                    .cornerRadius(25)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 75)
-                            .stroke(Color.white, lineWidth: 1)
-                    )
-            }
-            .offset(y: 300)
-            .transition(.move(edge: .bottom))
+                .offset(y: 300)
+                .transition(.move(edge: .bottom))
             }
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)

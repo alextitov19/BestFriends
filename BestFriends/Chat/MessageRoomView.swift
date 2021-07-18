@@ -99,9 +99,8 @@ struct MessageRoomView: View {
                     showAd()
                 }
             
-//            AdPlayerView(name: "EnrichHER")
-//                .ignoresSafeArea()
-//                .isHidden(areAdsHidden)
+            AdPlayerView(name: "FieldFlowers")
+                .ignoresSafeArea()
 //
 //            AdPlayerView(name: "purpleChat")
 //                .ignoresSafeArea()
