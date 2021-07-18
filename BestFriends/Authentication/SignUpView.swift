@@ -1156,13 +1156,13 @@ struct SignUpQuestionPage1: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-                Image("dataPicture")
-                    .resizable()
-                    .frame(width: 200, height: 200)
-                    .scaledToFill()
-                    .padding(20)
-                
-                Text("Help us - help you Protect your Privacy.")
+//                Image("dataPicture")
+//                    .resizable()
+//                    .frame(width: 200, height: 200)
+//                    .scaledToFill()
+//                    .padding(20)
+//
+                Text("We do NOT use Cookies.")
                     .italic()
                     .font(.system(size: 35))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -1179,7 +1179,7 @@ struct SignUpQuestionPage1: View {
                     .frame(height: 20)
                 
                 NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
-                    Text("Nice, how can I do that?")
+                    Text("Next")
                         .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .frame(width: 300, height: 50)
@@ -1226,7 +1226,7 @@ struct SignUpQuestionPage2: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    Text("We simply ‘ASK YOU' about your interests.")
+                    Text("Instead of us using 'cookies' and follow your every move.")
                         .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .frame(width: 300, height: 125)
@@ -1238,7 +1238,7 @@ struct SignUpQuestionPage2: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("Instead of us using 'cookies' to follow your every move on your iPhone and laptop, then bombarding you with Ads aligning with what you have been looking at.")
+                    Text("We simply ‘ASK YOU' about your interests.")
                         .font(.system(size: 25))
                         .fontWeight(.ultraLight)
                         .italic()
@@ -1247,12 +1247,12 @@ struct SignUpQuestionPage2: View {
                         .multilineTextAlignment(.center)
                     
                     
-                    Image("cookie-monster")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                        .scaledToFill()
-                        .padding(20)
-                    
+//                    Image("cookie-monster")
+//                        .resizable()
+//                        .frame(width: 200, height: 200)
+//                        .scaledToFill()
+//                        .padding(20)
+//
                     
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
