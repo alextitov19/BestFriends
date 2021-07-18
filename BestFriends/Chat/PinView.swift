@@ -233,9 +233,9 @@ struct PinView: View {
                 if rooms.contains(room.id) {
                     rooms.remove(at: rooms.firstIndex(of: room.id)!)
                     user.hiddenRooms = rooms
-                    userDataSource.updateUser(user: user)
                     title = "Success"
                     color = Color(.green)
+                    userDataSource.updateUser(user: user)
                     sessionManager.chat(room: room)
                 }
                 

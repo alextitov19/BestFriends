@@ -119,12 +119,15 @@ struct UserDataSource {
     }
     
     func updateUser(user: User) {
+        let group = DispatchGroup()
+        group.enter()
         Amplify.API.mutate(request: .update(user)) { event in  //update user
             switch event {
             case .success(let result):
                 switch result {
                 case .success(let user):
                     print("Successfully updated user: \(user)")
+                    group.leave()
                 case .failure(let error):
                     print("Got failed result with \(error.errorDescription)")
                 }
@@ -132,6 +135,8 @@ struct UserDataSource {
                 print("Got failed event with error \(error)")
             }
         }
+        group.wait()
+        return
     }
     
     func addFriend(user: User) {
