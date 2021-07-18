@@ -40,17 +40,20 @@ struct SignUpPage1: View {
                         .multilineTextAlignment(.center)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    
+                 
+                    Spacer()
+                        .frame(height: 400)
                     
                     Text("The positivity app :)")
-                        .font(.system(size: 35))
+                        .font(.system(size: 50))
                         .italic()
                         .fontWeight(.thin)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                    
-                    Spacer()
-                        .frame(height: 400)
-                    
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                   
                     
                     TextField("First name", text: $firstName)
                         .multilineTextAlignment(.center)
@@ -114,23 +117,23 @@ struct SignUpPage2: View {
                 HStack {
                     VStack {
                         
-                        Spacer()
-                            .frame(height: 120)
-                        
+//                        Spacer()
+//                            .frame(height: 120)
+//
                         
                     }
                     VStack {
-                        
-                        
-                        Text("Add your 5 BestFriends using QR codes, NOT usernames.")
-                            .font(.system(size: 30))
+                        Text("Add 5 BestFriends")
+                            .font(.system(size: 50))
                             .fontWeight(.regular)
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
-                            .frame(width: 400, height: 150, alignment: .center)
+                            .frame(width: 400, height: 50, alignment: .center)
+                            .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                             .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                             .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         
+                    
                         
                         Spacer()
                             .frame(height: 125)
@@ -139,6 +142,17 @@ struct SignUpPage2: View {
                 }
                 Spacer()
                     .frame(height: 270)
+                
+                Text("With QR codes, not usernames.")
+                .italic()
+                    .font(.system(size: 30))
+                    .fontWeight(.regular)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 400, height: 100, alignment: .center)
+                  
+                
+                
                 
                 TextField("Last name", text: $lastName)
                     .multilineTextAlignment(.center)
@@ -172,7 +186,7 @@ struct SignUpPage2: View {
                 NavigationLink("", destination: SignUpPage3(firstName: firstName, lastName: lastName).environmentObject(sessionManager), isActive: $readyToProceed)
                 
                 Spacer()
-                    .frame(height: 180)
+                    .frame(height: 100)
                 
             }
             
@@ -207,24 +221,29 @@ struct SignUpPage3: View {
             
             
             Spacer()
-                .frame(height: 130)
+                .frame(height: 100)
             
             VStack {
-                Text("There is NO 'user search' in BestFriends, protecting you from unwanted DM's & images.")
-                    .font(.system(size: 27))
+                Text("No 'User Search'")
+                    .font(.system(size: 50))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                
+              
+                   
+                   
                 
                 Spacer()
-                    .frame(height: 360)
+                    .frame(height: 380)
                 
-                Text("What username do you want?")
-                    .font(.system(size: 27))
+                Text("Stops unwanted DM's & images.")
+                    .font(.system(size: 30))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                
+//
                 TextField("Username", text: $username)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -307,13 +326,13 @@ struct SignUpPage4: View {
                     .frame(height: 45)
                 
                 VStack {
-                    Text("Choose your password.")
-                        .font(.system(size: 30))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    
+//                    Text("Choose your password.")
+//                        .font(.system(size: 30))
+//                        .foregroundColor(.white)
+//                        .multilineTextAlignment(.center)
+//                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+//                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+//
                     
                     Spacer()
                         .frame(height: 375)
@@ -377,7 +396,7 @@ struct SignUpPage4: View {
                         .fontWeight(.regular)
                         .foregroundColor(changingColor)
                         .multilineTextAlignment(.center)
-                        .frame(width: 275, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 275, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     
                 }
