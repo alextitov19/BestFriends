@@ -44,9 +44,9 @@ struct SignUpPage1: View {
                     
                  
                     Spacer()
-                        .frame(height: 400)
+                        .frame(height: 350)
                     
-                    Text("The Positivity app :)")
+                    Text("the Positivity app")
                         .font(.system(size: 30))
                         .fontWeight(.regular)
                         .foregroundColor(.white)
@@ -438,7 +438,7 @@ struct SignUpPage5: View {
                     .frame(height: 340)
                 
                 
-                Text("You forget your password.")
+                Text("you forget your password.")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .frame(width: 350, height: 50, alignment: .center)
@@ -547,7 +547,7 @@ struct SignUpPage6: View {
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+       
                
                 Spacer()
                     .frame(height: 50)
@@ -746,7 +746,7 @@ struct SignUpPage7: View {
                 
                 Spacer()
                     .frame(height: 35)
-                Text("Apple requires us to ask your age.")
+                Text("Apple requires your age.")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .frame(width: 325, height: 100)
@@ -811,17 +811,14 @@ struct SignUpPage8: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                
-                Text("Only you can restore with a 'Secret' PIN")
+                Text("Restore with your 'Secret' PIN")
                     .font(.system(size: 30))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 100, alignment: .center)
+                    .frame(width: 400, height: 50, alignment: .center)
 //                    .padding(20)
                   
-                
-                
-                Spacer().frame(height: 5)
                 
                 
                 Text("Enter a 4-digit PIN")
@@ -990,7 +987,7 @@ struct SignUpPage8: View {
                         }
                     }
                     
-                    Spacer().frame(height: 20)
+                 Spacer().frame(height: 20)
                     
                     Button(action: {
                         currentPin.append("0")
