@@ -168,24 +168,21 @@ struct MessageRoomView: View {
                 }
                 
                 ScrollViewReader { value in
-                    ScrollView {
-                        ForEach(messageDataSource.room.messages, id: \.id) { message in
-                            ChatBubble(msg: message, messageDS: messageDataSource, myuser: user)
-                                .padding()
+                    ScrollView(.vertical) {
+                        LazyVStack {
+                            ForEach(messageDataSource.room.messages, id: \.id) { message in
+                                ChatBubble(msg: message, messageDS: messageDataSource, myuser: user)
+                                    .id(message.id)
+                                    .padding()
+                            }
+                        }
+                        .onAppear {
+                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
+                        }
+                        .onChange(of: messageDataSource.room.messages.count) { _ in
+                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
                         }
                     }
-                    .onAppear {
-                        withAnimation {
-                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .center)
-                        }
-                    }
-                    .onChange(of: messageDataSource.room.messages.count) { _ in
-                        withAnimation {
-                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .center)
-                        }
-                        
-                    }
-                    
                 }
                 //                .padding()
                 //                .offset(y: -self.offset)
