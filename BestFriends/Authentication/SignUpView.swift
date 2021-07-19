@@ -1057,18 +1057,24 @@ struct SignUpPage9: View {
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 400, height: 150)
+                    .frame(width: 400, height: 200)
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 Spacer()
-                    .frame(height: 150)
+                    .frame(height: 125)
                 
                 
-                Text("No worries, we'll find out")
-                    .font(.system(size: 25))
+                Image("girlLooking")
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    .scaledToFill()
+                    .padding(20)
+                
+                Text("No worries, we'll find them.")
+                    .font(.system(size: 30))
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
@@ -1080,26 +1086,7 @@ struct SignUpPage9: View {
                 
                 VStack {
                     
-                    
-                    
-                    Text("'if and when'")
-                        .font(.system(size: 30))
-                        .fontWeight(.regular)
-                        .italic()
-                        .foregroundColor(Color.white)
-                        .frame(width: 350, height: 40)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    Text("they can talk.")
-                        .font(.system(size: 25))
-                        .fontWeight(.regular)
-                        .italic()
-                        .foregroundColor(Color.white)
-                        .frame(width: 350, height: 40)
-                        .multilineTextAlignment(.center)
-                    
-                    
+                
                     
                     Spacer()
                         .frame(height: 20)
@@ -1109,7 +1096,7 @@ struct SignUpPage9: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    NavigationLink("", destination: SignUpQuestionPage1(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: locationString ?? "N/A").environmentObject(sessionManager), isActive: $readyToProceed)
+                    NavigationLink("", destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: locationString ?? "N/A").environmentObject(sessionManager), isActive: $readyToProceed)
                     
                     Button(action: {
                         guard let exposedLocation = self.locationManager.exposedLocation else {
@@ -1153,79 +1140,74 @@ struct SignUpPage9: View {
     }
 }
 
-
-struct SignUpQuestionPage1: View {
-    
-    @EnvironmentObject var sessionManager: SessionManager
-    
-    var firstName: String
-    var lastName: String
-    var username: String
-    var password: String
-    var email: String
-    var pronouns: String
-    var birthdate: Date
-    var currentPin: String
-    var location: String?
-    
-    var body: some View {
-        ZStack {
-            Image("SignUpPinBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-            
-            VStack {
-                
-                
-                Text("Instead of following your every move")
-                    .font(.system(size: 50))
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .frame(width: 400, height: 200)
-                    .multilineTextAlignment(.center)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                
-                
-//                Image("dataPicture")
-//                    .resizable()
-//                    .frame(width: 200, height: 200)
-//                    .scaledToFill()
-//                    .padding(20)
 //
-                Text("We DON'T use Cookies.")
-                    .italic()
-                    .font(.system(size: 35))
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .frame(width: 400, height: 150)
-                    .multilineTextAlignment(.center)
-                
-                
-                
-                
-                
-                
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
-                    Text("Next")
-                        .font(.title)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 300, height: 50)
-                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(25)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
-                }
-            }
-        }
-    }
-}
-
+//struct SignUpQuestionPage1: View {
+//
+//    @EnvironmentObject var sessionManager: SessionManager
+//
+//    var firstName: String
+//    var lastName: String
+//    var username: String
+//    var password: String
+//    var email: String
+//    var pronouns: String
+//    var birthdate: Date
+//    var currentPin: String
+//    var location: String?
+//
+//    var body: some View {
+//        ZStack {
+//            Image("SignUpPinBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
+//            VStack {
+//
+//
+//                Text("Instead of following your every move")
+//                    .font(.system(size: 50))
+//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                    .frame(width: 400, height: 200)
+//                    .multilineTextAlignment(.center)
+//                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+//                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+//                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+//
+//
+//
+//                Text("We DON'T use Cookies.")
+//                    .italic()
+//                    .font(.system(size: 35))
+//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                    .frame(width: 400, height: 150)
+//                    .multilineTextAlignment(.center)
+//
+//
+//
+//
+//
+//
+//
+//                Spacer()
+//                    .frame(height: 20)
+//
+//                NavigationLink(destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
+//                    Text("Next")
+//                        .font(.title)
+//                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                        .frame(width: 300, height: 50)
+//                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+//                        .cornerRadius(25)
+//                        .multilineTextAlignment(.center)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                }
+//            }
+//        }
+//    }
+//}
+//
 
 struct SignUpQuestionPage2: View {
     
@@ -1252,20 +1234,11 @@ struct SignUpQuestionPage2: View {
             VStack {
                 VStack {
                     
-                    
-                    
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                 
-
-                    
-                    
-                    Text("We simply 'ask you' your interests")
+                
+                    Text("Instead of following you around,")
                         .font(.system(size: 50))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .frame(width: 300, height: 125)
+                        .frame(width: 300, height: 200)
                         .multilineTextAlignment(.center)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
@@ -1275,13 +1248,13 @@ struct SignUpQuestionPage2: View {
                         .frame(height: 30)
                   
                        
-                    Image("No Cookie")
-                         .resizable()
-                          .frame(width: 200, height: 200)
-                          .scaledToFill()
-                          .padding(20)
+                
                     
-               
+                    Image("NoCookie")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                        .scaledToFill()
+                        .padding(20)
                     
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
@@ -1332,7 +1305,7 @@ struct SignUpQuestionPage3: View {
             
             VStack {
                 
-                Text("I'm interested in ...")
+                Text("We simply ask your interests")
                     .font(.system(size: 50))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .frame(width: 350)
