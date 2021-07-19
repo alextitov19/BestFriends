@@ -28,6 +28,7 @@ struct HomeView: View {
     @State private var invitedChatRooms: [InvitedRoom] = []
     @State private var invitingFriends = false
     @State private var isShakingCoolPresented = false
+    @State private var isThreeDotsPresented = false
     @State private var showingAddFriendInstructions = false
     
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]

@@ -256,6 +256,7 @@
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
 		7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */; };
+		7A2B1F5D26A645F500EDBEAF /* ThreeCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B1F5C26A645F500EDBEAF /* ThreeCircles.swift */; };
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
 		7A383FF9267AC306002F354A /* BlueHeartVid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263FD266F202400243DD7 /* BlueHeartVid.mp4 */; };
 		7A383FFA267AC306002F354A /* CityMopeds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263DA266477DF00243DD7 /* CityMopeds.mp4 */; };
@@ -707,6 +708,7 @@
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		7A2B1F5C26A645F500EDBEAF /* ThreeCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeCircles.swift; sourceTree = "<group>"; };
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
 		7A383FEE267AC235002F354A /* blueChat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueChat.mp4; sourceTree = "<group>"; };
 		7A383FEF267AC235002F354A /* purpleChat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = purpleChat.mp4; sourceTree = "<group>"; };
@@ -967,6 +969,7 @@
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7AED44FB26473F7100944708 /* AppDelegate.swift */,
 				7A4E32B626A079F200202BB7 /* Loading.swift */,
+				7A2B1F5C26A645F500EDBEAF /* ThreeCircles.swift */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
 				7AF35CB32699EB6700A396CE /* Helper.swift */,
@@ -2029,6 +2032,7 @@
 				BB76DFF2CE64C1BBC46C6462 /* InvitedRoom.swift in Sources */,
 				6C813255F3BD3532A1736E0E /* ManagementDocument.swift in Sources */,
 				CFC2E8AD5DEFA67A69C5E785 /* Room+Schema.swift in Sources */,
+				7A2B1F5D26A645F500EDBEAF /* ThreeCircles.swift in Sources */,
 				B81ACA0DF043575C9B11AEFF /* SmileNote+Schema.swift in Sources */,
 				9724C83BB2B208DC9478C7EF /* SmileNote.swift in Sources */,
 				DC85A5AF0AD8D4B3E75B4F4C /* Advertisement.swift in Sources */,
