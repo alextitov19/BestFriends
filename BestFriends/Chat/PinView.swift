@@ -35,10 +35,10 @@ struct PinView: View {
                 
                 HStack {
                     Button(action: {
-                        currentPin.append("7")
+                        currentPin.append("1")
                         numberEntered()
                     }) {
-                        Text("7")
+                        Text("1")
                             .frame(width: 100, height: 100)
                             .foregroundColor(Color.white)
                             .background(Color.clear)
@@ -52,10 +52,10 @@ struct PinView: View {
                     Spacer().frame(width: 20)
                     
                     Button(action: {
-                        currentPin.append("8")
+                        currentPin.append("2")
                         numberEntered()
                     }) {
-                        Text("8")
+                        Text("2")
                             .frame(width: 100, height: 100)
                             .foregroundColor(Color.white)
                             .background(Color.clear)
@@ -69,10 +69,10 @@ struct PinView: View {
                     Spacer().frame(width: 20)
                     
                     Button(action: {
-                        currentPin.append("9")
+                        currentPin.append("3")
                         numberEntered()
                     }) {
-                        Text("9")
+                        Text("3")
                             .frame(width: 100, height: 100)
                             .foregroundColor(Color.white)
                             .background(Color.clear)
@@ -141,10 +141,10 @@ struct PinView: View {
                 
                 HStack {
                     Button(action: {
-                        currentPin.append("1")
+                        currentPin.append("7")
                         numberEntered()
                     }) {
-                        Text("1")
+                        Text("7")
                             .frame(width: 100, height: 100)
                             .foregroundColor(Color.white)
                             .background(Color.clear)
@@ -158,10 +158,10 @@ struct PinView: View {
                     Spacer().frame(width: 20)
                     
                     Button(action: {
-                        currentPin.append("2")
+                        currentPin.append("8")
                         numberEntered()
                     }) {
-                        Text("2")
+                        Text("8")
                             .frame(width: 100, height: 100)
                             .foregroundColor(Color.white)
                             .background(Color.clear)
@@ -175,10 +175,10 @@ struct PinView: View {
                     Spacer().frame(width: 20)
                     
                     Button(action: {
-                        currentPin.append("3")
+                        currentPin.append("9")
                         numberEntered()
                     }) {
-                        Text("3")
+                        Text("9")
                             .frame(width: 100, height: 100)
                             .foregroundColor(Color.white)
                             .background(Color.clear)
