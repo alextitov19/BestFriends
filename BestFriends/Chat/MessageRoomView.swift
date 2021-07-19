@@ -51,6 +51,7 @@ struct MessageRoomView: View {
     
     
     init(room: Room) {
+        print("Did init")
         self.user = UserDataSource().getCurrentUser()
         self.messageDataSource = MessageDataSource(room: room)
         self.room = room
@@ -356,29 +357,30 @@ struct MessageRoomView: View {
             //                                }))
             //            }
             //
-            VStack {
-                Text("Send chat member a \npush notification")
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 18, weight: .light))
-                    .foregroundColor(.white)
-                    .padding()
-                
-                ForEach(room.members, id: \.self) { id in
-                    if id != user.id {
-                        let name = userDataSource.getUser(id: id).firstName + " " + userDataSource.getUser(id: id).lastName
-                        Button(name, action: {
-                            //send push notifiction
-                            showingNotifications = false
-                        })
-                        .font(.system(size: 22, weight: .bold))
+            if showingNotifications {
+                VStack {
+                    Text("Send chat member a \npush notification")
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 18, weight: .light))
                         .foregroundColor(.white)
                         .padding()
+                    
+                    ForEach(room.members, id: \.self) { id in
+                        if id != user.id {
+                            let name = userDataSource.getUser(id: id).firstName + " " + userDataSource.getUser(id: id).lastName
+                            Button(name, action: {
+                                //send push notifiction
+                                showingNotifications = false
+                            })
+                            .font(.system(size: 22, weight: .bold))
+                            .foregroundColor(.white)
+                            .padding()
+                        }
                     }
                 }
+                .background(Color(#colorLiteral(red: 0.4978310466, green: 0.2762668133, blue: 1, alpha: 1)))
+                .cornerRadius(20)
             }
-            .background(Color(#colorLiteral(red: 0.4978310466, green: 0.2762668133, blue: 1, alpha: 1)))
-            .cornerRadius(20)
-            .isHidden(!showingNotifications)
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
