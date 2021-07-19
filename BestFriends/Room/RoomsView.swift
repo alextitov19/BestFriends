@@ -22,105 +22,95 @@ struct RoomsView: View {
     }
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                Image("purpleBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
+        ZStack {
+            Image("SignUpPinBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
+            VStack {
+                Spacer().frame(height: 20)
                 
-                VStack {
-                    Text("Chat Rooms")
-                        .font(.system(size: 40).bold())
-                        .foregroundColor(.white)
+                Text("Chat Rooms")
+                    .font(.system(size: 40).bold())
+                    .foregroundColor(.white)
+                    .padding()
+                
+                HStack {
+                    Spacer().frame(width: 20)
                     
-                    Spacer().frame(height: 30)
-                    
-                    HStack {
-                        Spacer().frame(width: 20)
-                        
-                        ScrollView {
-                            LazyVStack {
-                                ForEach(dataSource.rooms) { room in
-                                    if room.creatorID == UserDataSource().getCurrentUser().id {
-                                        RoomRow(room: room)
-                                            .onTapGesture { sessionManager.chat(room: room) }
-                                            .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
-                                            .actionSheet(isPresented: $showingActionSheet) {
-                                                ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room. Since you made it, you can also delete the chat room."), buttons: [
-                                                    .default(Text("Leave")) {
-                                                        dataSource.leaveChatRoom(room: room)
-                                                        sessionManager.reloadToPage(page: "rooms")
-                                                    },
-                                                    .default(Text("Delete")) {
-                                                        dataSource.deleteChatRoom(room: room)
-                                                        sessionManager.reloadToPage(page: "rooms")
-                                                    },
-                                                    .cancel()
-                                                ])
-                                            }
-                                            .padding()
-                                    } else {
-                                        RoomRow(room: room)
-                                            .onTapGesture { sessionManager.chat(room: room) }
-                                            .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
-                                            .actionSheet(isPresented: $showingActionSheet) {
-                                                ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room."), buttons: [
-                                                    .default(Text("Leave")) {
-                                                        dataSource.leaveChatRoom(room: room)
-                                                        sessionManager.reloadToPage(page: "rooms")
-                                                    },
-                                                    .cancel()
-                                                ])
-                                            }
-                                            .padding()
-                                    }
+                    ScrollView {
+                        LazyVStack {
+                            ForEach(dataSource.rooms) { room in
+                                if room.creatorID == UserDataSource().getCurrentUser().id {
+                                    RoomRow(room: room)
+                                        .onTapGesture { sessionManager.chat(room: room) }
+                                        .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
+                                        .actionSheet(isPresented: $showingActionSheet) {
+                                            ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room. Since you made it, you can also delete the chat room."), buttons: [
+                                                .default(Text("Leave")) {
+                                                    dataSource.leaveChatRoom(room: room)
+                                                    sessionManager.reloadToPage(page: "rooms")
+                                                },
+                                                .default(Text("Delete")) {
+                                                    dataSource.deleteChatRoom(room: room)
+                                                    sessionManager.reloadToPage(page: "rooms")
+                                                },
+                                                .cancel()
+                                            ])
+                                        }
+                                        .padding()
+                                } else {
+                                    RoomRow(room: room)
+                                        .onTapGesture { sessionManager.chat(room: room) }
+                                        .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
+                                        .actionSheet(isPresented: $showingActionSheet) {
+                                            ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room."), buttons: [
+                                                .default(Text("Leave")) {
+                                                    dataSource.leaveChatRoom(room: room)
+                                                    sessionManager.reloadToPage(page: "rooms")
+                                                },
+                                                .cancel()
+                                            ])
+                                        }
+                                        .padding()
                                 }
                             }
                         }
-                        
-                        Spacer().frame(width: 20)
                     }
-                    
-                    Spacer()
-                    
-                    HStack {
-                        
-                        Image("home-alt2")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .scaledToFill()
-                            .onTapGesture {
-                                sessionManager.getCurrentAuthUser()
-                            }
-                            .padding(20)
-                        
-                        
-                        Image("happy-face icon")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .scaledToFill()
-                            .onTapGesture {
-                                sessionManager.showSmileNotes()
-                            }
-                            .padding(20)
-                        
-                        
-                        
-                        Image("settings icon")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .scaledToFill()
-                            .onTapGesture {
-                                sessionManager.showSettings()
-                            }
-                            .padding(20)
-                        
-                        
-                        
-                    }
-                    
+                    Spacer().frame(width: 20)
                 }
+                
+                
+                HStack {
+                    Image("home-alt2")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.getCurrentAuthUser()
+                        }
+                        .padding(20)
+                    
+                    Image("happy-face icon")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.showSmileNotes()
+                        }
+                        .padding(20)
+                    
+                    Image("settings icon")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.showSettings()
+                        }
+                        .padding(20)
+                }
+                .padding()
             }
         }
     }

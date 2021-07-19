@@ -15,9 +15,6 @@ struct RoomRow: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(room.blueMode == true ? Color.blue : Color.white, lineWidth: 2)
-            
             HStack {
                 Spacer().frame(width: 10)
                     .onAppear {
@@ -55,7 +52,10 @@ struct RoomRow: View {
                 Spacer().frame(width: 10)
             }
         }
-        .background(Color(#colorLiteral(red: 0.5590314269, green: 0.3508415222, blue: 0.8826860785, alpha: 0.01)))
+        .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+        .cornerRadius(20)
+        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
     }
     
     private func getBody() {

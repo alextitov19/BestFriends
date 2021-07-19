@@ -255,6 +255,7 @@
 		7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */; };
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
+		7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */; };
 		7A33B63C2640D463004CB47F /* MessageRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A33B63B2640D463004CB47F /* MessageRoomView.swift */; };
 		7A383FF9267AC306002F354A /* BlueHeartVid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263FD266F202400243DD7 /* BlueHeartVid.mp4 */; };
 		7A383FFA267AC306002F354A /* CityMopeds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263DA266477DF00243DD7 /* CityMopeds.mp4 */; };
@@ -705,6 +706,7 @@
 		7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		7A33B63B2640D463004CB47F /* MessageRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRoomView.swift; sourceTree = "<group>"; };
 		7A383FEE267AC235002F354A /* blueChat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueChat.mp4; sourceTree = "<group>"; };
 		7A383FEF267AC235002F354A /* purpleChat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = purpleChat.mp4; sourceTree = "<group>"; };
@@ -866,6 +868,7 @@
 				7AA201122635D5F500C9F00C /* Room+Extensions.swift */,
 				7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */,
 				7A4E336826A0D72600202BB7 /* UIColorExtension.swift */,
+				7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1413,6 +1416,7 @@
 				D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */,
 				7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */,
 				7AC8564226585CD20045D145 /* LiquidSwipe.swift in Sources */,
+				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */,
 				D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */,
