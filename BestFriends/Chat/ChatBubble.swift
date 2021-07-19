@@ -107,6 +107,7 @@ struct ChatBubble: View {
                     .cancel()
                 ])
             }
+            .padding(5)
             
             
             
@@ -157,6 +158,7 @@ struct ChatBubble: View {
                     .cancel()
                 ])
             }
+            .padding(5)
         }
         
         

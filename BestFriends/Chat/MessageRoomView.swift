@@ -174,7 +174,6 @@ struct MessageRoomView: View {
                             ForEach(messageDataSource.room.messages, id: \.id) { message in
                                 ChatBubble(msg: message, messageDS: messageDataSource, myuser: user)
                                     .id(message.id)
-                                    .padding()
                             }
                         }
                         .onAppear {
