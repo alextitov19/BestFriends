@@ -15,10 +15,10 @@ struct ChatBubble: View {
     let messageDataSource: MessageDataSource
     @State var showingActionSheet = false
     
-    init(msg: Message, messageDS: MessageDataSource) {
+    init(msg: Message, messageDS: MessageDataSource, myuser: User) {
         message = msg
         messageDataSource = messageDS
-        user = UserDataSource().getCurrentUser()
+        user = myuser
     }
     
     var body: some View {

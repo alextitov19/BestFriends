@@ -55,7 +55,7 @@ struct MessageRoomView: View {
         self.messageDataSource = MessageDataSource(room: room)
         self.room = room
         messageDataSource.createSubscription()
-
+        
         //        let adDoc = adDataSource.getAdDocuemnt()
         //        let ids = adDoc.documents ?? []
         //        self.adIDs = ids
@@ -88,14 +88,14 @@ struct MessageRoomView: View {
     var body: some View {
         
         ZStack{
-//            Image("purpleBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .ignoresSafeArea()
+            //            Image("purpleBackground")
+            //                .resizable()
+            //                .scaledToFill()
+            //                .ignoresSafeArea()
             
-            Color(.blue)
-                .ignoresSafeArea()
-                
+            //            Color(.blue)
+            //                .ignoresSafeArea()
+            
             //                .onAppear {
             //                    checkHidden()
             //                }
@@ -104,8 +104,8 @@ struct MessageRoomView: View {
             //                    showAd()
             //                }
             
-            //            AdPlayerView(name: "FieldFlowers")
-            //                .ignoresSafeArea()
+            AdPlayerView(name: "FieldFlowers")
+                .ignoresSafeArea()
             //
             //            AdPlayerView(name: "purpleChat")
             //                .ignoresSafeArea()
@@ -167,54 +167,59 @@ struct MessageRoomView: View {
                     }
                 }
                 
-                ScrollView { //messages
-                    LazyVStack {
-                        let rooms: [String] = user.hiddenRooms ?? []
-                        if rooms.contains(room.id) == false {
-                            ForEach(messageDataSource.room.messages, id: \.id) { message in
-                                ChatBubble(msg: message, messageDS: messageDataSource)
-                                    .padding()
-                                
-                                //                                Spacer()
-                                //                                    .frame(height: 20)
-                            }
+                ScrollViewReader { value in
+                    ScrollView {
+                        ForEach(messageDataSource.room.messages, id: \.id) { message in
+                            ChatBubble(msg: message, messageDS: messageDataSource, myuser: user)
+                                .padding()
                         }
                     }
-                    .padding()
+                    .onAppear {
+                        withAnimation {
+                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .center)
+                        }
+                    }
+                    .onChange(of: messageDataSource.room.messages.count) { _ in
+                        withAnimation {
+                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .center)
+                        }
+                        
+                    }
+                    
                 }
-                .padding()
+                //                .padding()
                 //                .offset(y: -self.offset)
-                //                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                //                            .onEnded({ value in
-                //                                if room.blueMode {
-                //                                    if value.translation.width < -10 || value.translation.width > 10{
-                //                                        // horizontal
-                //                                        print("Swipe horizontal")
-                //                                        withAnimation {
-                //                                            presentingDashboard = true
-                //                                        }
-                //                                    }
-                //                                }
-                //                            }))
+                //                                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                //                                            .onEnded({ value in
+                //                                                if room.blueMode {
+                //                                                    if value.translation.width < -10 || value.translation.width > 10{
+                //                                                        // horizontal
+                //                                                        print("Swipe horizontal")
+                //                                                        withAnimation {
+                //                                                            presentingDashboard = true
+                //                                                        }
+                //                                                    }
+                //                                                }
+                //                                            }))
                 
                 
                 
                 Spacer().frame(height: 30)
                 VStack {
-                    //                    if lastRead != nil {
-                    //                        HStack {
-                    //                            Image("whiteEye")
-                    //                                .resizable()
-                    //                                .frame(width: 40, height: 40)
-                    //                                .scaledToFill()
+                    //                                        if lastRead != nil {
+                    //                                            HStack {
+                    //                                                Image("whiteEye")
+                    //                                                    .resizable()
+                    //                                                    .frame(width: 40, height: 40)
+                    //                                                    .scaledToFill()
                     //
-                    //                            Text(String(lastRead!))
-                    //                                .foregroundColor(.white)
-                    //                                .font(.system(size: 16))
+                    //                                                Text(String(lastRead!))
+                    //                                                    .foregroundColor(.white)
+                    //                                                    .font(.system(size: 16))
                     //
-                    //                            Spacer()
-                    //                        }
-                    //                    }
+                    //                                                Spacer()
+                    //                                            }
+                    //                                        }
                     
                     
                     HStack { //footer
@@ -242,9 +247,13 @@ struct MessageRoomView: View {
                             .padding(10)
                         
                         Button(action: {
-                            let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
-                            messageDataSource.sendMessage(message: message)
-                            currentBody = ""
+                            if !currentBody.trimmingCharacters(in: .whitespaces).isEmpty {
+                                // string contains non-whitespace characters
+                                let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
+                                messageDataSource.sendMessage(message: message)
+                                currentBody = ""
+                            }
+                            
                         }) {
                             Image("arrow")
                                 .resizable()
@@ -253,85 +262,85 @@ struct MessageRoomView: View {
                         
                     }
                     .padding()
-                    //                    .offset(y: -self.offset)
-                    //                    .animation(.spring())
-                    //                    .onAppear {
-                    //                        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { (noti) in
-                    //                            let value = noti.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
-                    //                            let height = value.height
-                    //                            self.offset = height/4
-                    //                        }
-                    //
-                    //                        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { (noti) in
-                    //                            self.offset = 0
-                    //                        }
-                    //                    }
-                    //                    .popover(isPresented: $stickerPopoverShowing) {
-                    //                        StickerPopover(messageDataSource: messageDataSource, showSheet: $stickerPopoverShowing, user: user).environmentObject(sessionManager)
-                    //                    }
+                    .offset(y: -self.offset)
+                    .animation(.spring())
+                    .onAppear {
+                        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { (noti) in
+                            let value = noti.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
+                            let height = value.height
+                            self.offset = height/4
+                        }
+                        
+                        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { (noti) in
+                            self.offset = 0
+                        }
+                    }
+                    .popover(isPresented: $stickerPopoverShowing) {
+                        StickerPopover(messageDataSource: messageDataSource, showSheet: $stickerPopoverShowing, user: user).environmentObject(sessionManager)
+                    }
                 }
             }
             
-            //            if adButtonsHidden == false {
-            //                VStack { // Advertisement Buttons
-            //                    ZStack {
-            //                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
-            //                            .frame(width: 60, height: 60)
-            //                            .cornerRadius(30)
-            //
-            //                        Image("whiteHeart")
-            //                            .resizable()
-            //                            .frame(width: 50, height: 50)
-            //                            .scaledToFit()
-            //                            .foregroundColor(.white)
-            //                            .onTapGesture {
-            //                                hasLiked = true
-            //                            }
-            //
-            //                        Text("\(currentLikes)")
-            //                            .foregroundColor(.white)
-            //                            .font(.system(size: 15))
-            //                    }
-            //
-            //                    Spacer().frame(height: 10)
-            //
-            //                    ZStack {
-            //                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
-            //                            .frame(width: 60, height: 60)
-            //                            .cornerRadius(30)
-            //
-            //                        Image("whiteLink")
-            //                            .resizable()
-            //                            .frame(width: 40, height: 40)
-            //                            .scaledToFit()
-            //                            .foregroundColor(.white)
-            //                            .onTapGesture {
-            //                                hasClickedLink = true
-            //                                doneWithAd()
-            //                                openURL(URL(string: currentLink)!)
-            //                            }
-            //                    }
-            //
-            //                    Spacer().frame(height: 10)
-            //
-            //                    ZStack {
-            //                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
-            //                            .frame(width: 60, height: 60)
-            //                            .cornerRadius(30)
-            //
-            //                        Image("whiteX")
-            //                            .resizable()
-            //                            .frame(width: 35, height: 35)
-            //                            .scaledToFit()
-            //                            .foregroundColor(.white)
-            //                            .onTapGesture {
-            //                                doneWithAd()
-            //                            }
-            //                    }
-            //                }
-            //                .offset(x: -165)
-            //                .transition(.move(edge: .leading))
-            //            }
+            if adButtonsHidden == false {
+                VStack { // Advertisement Buttons
+                    ZStack {
+                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
+                            .frame(width: 60, height: 60)
+                            .cornerRadius(30)
+                        
+                        Image("whiteHeart")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .scaledToFit()
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                hasLiked = true
+                            }
+                        
+                        Text("\(currentLikes)")
+                            .foregroundColor(.white)
+                            .font(.system(size: 15))
+                    }
+                    
+                    Spacer().frame(height: 10)
+                    
+                    ZStack {
+                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
+                            .frame(width: 60, height: 60)
+                            .cornerRadius(30)
+                        
+                        Image("whiteLink")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFit()
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                hasClickedLink = true
+                                doneWithAd()
+                                openURL(URL(string: currentLink)!)
+                            }
+                    }
+                    
+                    Spacer().frame(height: 10)
+                    
+                    ZStack {
+                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
+                            .frame(width: 60, height: 60)
+                            .cornerRadius(30)
+                        
+                        Image("whiteX")
+                            .resizable()
+                            .frame(width: 35, height: 35)
+                            .scaledToFit()
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                doneWithAd()
+                            }
+                    }
+                }
+                .offset(x: -165)
+                .transition(.move(edge: .leading))
+            }
             //
             //            if presentingDashboard {
             //                BlueModeUserDashboard()
@@ -350,35 +359,35 @@ struct MessageRoomView: View {
             //                                }))
             //            }
             //
-            //            VStack {
-            //                Text("Send chat member a \npush notification")
-            //                    .multilineTextAlignment(.center)
-            //                    .font(.system(size: 18, weight: .light))
-            //                    .foregroundColor(.white)
-            //                    .padding()
-            //
-            //                ForEach(room.members, id: \.self) { id in
-            //                    if id != user.id {
-            //                        let name = userDataSource.getUser(id: id).firstName + " " + userDataSource.getUser(id: id).lastName
-            //                        Button(name, action: {
-            //                            //send push notifiction
-            //                            showingNotifications = false
-            //                        })
-            //                        .font(.system(size: 22, weight: .bold))
-            //                        .foregroundColor(.white)
-            //                        .padding()
-            //                    }
-            //                }
-            //            }
-            //            .background(Color(#colorLiteral(red: 0.4978310466, green: 0.2762668133, blue: 1, alpha: 1)))
-            //            .cornerRadius(20)
-            //            .isHidden(!showingNotifications)
-            //        }
-            //        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-            //            ImagePicker(image: self.$inputImage)
-            //        }
-            
+            VStack {
+                Text("Send chat member a \npush notification")
+                    .multilineTextAlignment(.center)
+                    .font(.system(size: 18, weight: .light))
+                    .foregroundColor(.white)
+                    .padding()
+                
+                ForEach(room.members, id: \.self) { id in
+                    if id != user.id {
+                        let name = userDataSource.getUser(id: id).firstName + " " + userDataSource.getUser(id: id).lastName
+                        Button(name, action: {
+                            //send push notifiction
+                            showingNotifications = false
+                        })
+                        .font(.system(size: 22, weight: .bold))
+                        .foregroundColor(.white)
+                        .padding()
+                    }
+                }
+            }
+            .background(Color(#colorLiteral(red: 0.4978310466, green: 0.2762668133, blue: 1, alpha: 1)))
+            .cornerRadius(20)
+            .isHidden(!showingNotifications)
         }
+        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+            ImagePicker(image: self.$inputImage)
+        }
+        
+        
     }
     
     private func hideChat() {
