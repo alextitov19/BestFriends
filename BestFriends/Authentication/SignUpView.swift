@@ -1258,7 +1258,11 @@ struct SignUpQuestionPage2: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    Text("We simply 'ask you'")
+                 
+
+                    
+                    
+                    Text("We simply 'ask you' your interests")
                         .font(.system(size: 50))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .frame(width: 300, height: 125)
@@ -1269,22 +1273,15 @@ struct SignUpQuestionPage2: View {
                       
                     Spacer()
                         .frame(height: 30)
-                    
-                    Text("about your interests.")
-                        .italic()
-                        .font(.system(size: 35))
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .frame(width: 400, height: 150)
-                        .multilineTextAlignment(.center)
+                  
                        
+                    Image("No Cookie")
+                         .resizable()
+                          .frame(width: 200, height: 200)
+                          .scaledToFill()
+                          .padding(20)
                     
-                    
-//                    Image("cookie-monster")
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
-//                        .scaledToFill()
-//                        .padding(20)
-//
+               
                     
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
@@ -1335,7 +1332,7 @@ struct SignUpQuestionPage3: View {
             
             VStack {
                 
-                Text("What are your interests?")
+                Text("I'm interested in ...")
                     .font(.system(size: 50))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .frame(width: 350)
