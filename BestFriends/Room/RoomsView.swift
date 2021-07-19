@@ -41,43 +41,40 @@ struct RoomsView: View {
                         
                         ScrollView {
                             LazyVStack {
-                                Spacer().frame(height: 10)
-                                
                                 ForEach(dataSource.rooms) { room in
                                     if room.creatorID == UserDataSource().getCurrentUser().id {
                                         RoomRow(room: room)
                                             .onTapGesture { sessionManager.chat(room: room) }
                                             .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
                                             .actionSheet(isPresented: $showingActionSheet) {
-                                                    ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room. Since you made it, you can also delete the chat room."), buttons: [
-                                                        .default(Text("Leave")) {
-                                                            dataSource.leaveChatRoom(room: room)
-                                                            sessionManager.reloadToPage(page: "rooms")
-                                                        },
-                                                        .default(Text("Delete")) {
-                                                            dataSource.deleteChatRoom(room: room)
-                                                            sessionManager.reloadToPage(page: "rooms")
-                                                        },
-                                                        .cancel()
-                                                    ])
-                                                }
+                                                ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room. Since you made it, you can also delete the chat room."), buttons: [
+                                                    .default(Text("Leave")) {
+                                                        dataSource.leaveChatRoom(room: room)
+                                                        sessionManager.reloadToPage(page: "rooms")
+                                                    },
+                                                    .default(Text("Delete")) {
+                                                        dataSource.deleteChatRoom(room: room)
+                                                        sessionManager.reloadToPage(page: "rooms")
+                                                    },
+                                                    .cancel()
+                                                ])
+                                            }
+                                            .padding()
                                     } else {
                                         RoomRow(room: room)
                                             .onTapGesture { sessionManager.chat(room: room) }
                                             .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
                                             .actionSheet(isPresented: $showingActionSheet) {
-                                                    ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room."), buttons: [
-                                                        .default(Text("Leave")) {
-                                                            dataSource.leaveChatRoom(room: room)
-                                                            sessionManager.reloadToPage(page: "rooms")
-                                                        },
-                                                        .cancel()
-                                                    ])
-                                                }
+                                                ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room."), buttons: [
+                                                    .default(Text("Leave")) {
+                                                        dataSource.leaveChatRoom(room: room)
+                                                        sessionManager.reloadToPage(page: "rooms")
+                                                    },
+                                                    .cancel()
+                                                ])
+                                            }
+                                            .padding()
                                     }
-                                    
-                                    Spacer()
-                                        .frame(height: 30)
                                 }
                             }
                         }
