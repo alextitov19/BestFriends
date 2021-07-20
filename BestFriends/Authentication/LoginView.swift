@@ -32,6 +32,8 @@ struct LoginView: View {
                     //                        .frame(width: 225, height: 50)
                     //                        .multilineTextAlignment(.center)
                     //
+                    Spacer()
+                        .frame(height: 50)
                     
                     Image("BestFriends")
                         .resizable()
@@ -98,7 +100,7 @@ struct LoginView: View {
                                 .frame(width: 150, height: 50, alignment: .center)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.title)
-                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                           
@@ -109,18 +111,18 @@ struct LoginView: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 200)
+                            .frame(height: 100)
                         
                         Button("Sign Up", action: sessionManager.showSignUp)
                             .frame(width: 150, height: 50, alignment: .center)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.title)
-                            .background(Color(#colorLiteral(red: 0.3992940784, green: 0.1427273154, blue: 0.7588542104, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
                             .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                         Spacer()
-                            .frame(height: 25)
+                            .frame(height: 45)
                         
                         HStack {
                             NavigationLink(
@@ -131,7 +133,7 @@ struct LoginView: View {
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 25)
-                                                .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 2)
+                                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
                                         )
                                 })
                                 .padding(5)
@@ -145,7 +147,7 @@ struct LoginView: View {
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .overlay(
                                             RoundedRectangle(cornerRadius: 25)
-                                                .stroke(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)), lineWidth: 2)
+                                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
                                         )
                                 })
                                 .padding(5)

@@ -14,46 +14,48 @@ struct RoomRow: View {
     @State var messageBody = ""
     
     var body: some View {
-        HStack {
-            Spacer().frame(width: 10)
-                .onAppear {
-                    getBody()
-                }
-            
-            VStack(alignment: .leading) {
-                Spacer()
-                    .frame(height: 10)
+        ZStack {
+            HStack {
+                Spacer().frame(width: 10)
+                    .onAppear {
+                        getBody()
+                    }
                 
-                HStack {
-                    Spacer().frame(width: 10)
+                VStack(alignment: .leading) {
+                    Spacer()
+                        .frame(height: 10)
                     
-                    Text(room.name)
-                        .font(.system(size: 20, weight: .light))
-                        .foregroundColor(.white)
+                    HStack {
+                        Spacer().frame(width: 10)
+                        
+                        Text(room.name)
+                            .font(.system(size: 20, weight: .light))
+                            .foregroundColor(.white)
+                        
+                        Spacer()
+                    }
+                    
+                    HStack {
+                        Spacer().frame(width: 10)
+                        
+                        Text(messageBody)
+                            .font(.system(size: 16, weight: .light))
+                            .foregroundColor(.white)
+                        
+                        Spacer()
+                    }
                     
                     Spacer()
+                        .frame(height: 10)
                 }
                 
-                HStack {
-                    Spacer().frame(width: 10)
-                    
-                    Text(messageBody)
-                        .font(.system(size: 16, weight: .light))
-                        .foregroundColor(.white)
-                    
-                    Spacer()
-                }
-                
-                Spacer()
-                    .frame(height: 10)
+                Spacer().frame(width: 10)
             }
-            .overlay(
-                RoundedRectangle(cornerRadius: 20)
-                    .stroke(room.blueMode == true ? Color.blue : Color.white, lineWidth: 2)
-            )
-            
-            Spacer().frame(width: 10)
         }
+        .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+        .cornerRadius(20)
+        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
     }
     
     private func getBody() {

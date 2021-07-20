@@ -45,33 +45,35 @@ struct MessageRoomView: View {
     var room: Room
     var lastRead: Int?
     
-    var timer = Timer.publish(every: 3000, on: .main, in: .common).autoconnect()
+    //    var timer = Timer.publish(every: 3000, on: .main, in: .common).autoconnect()
     
     @State private var adButtonOffset: Float = 0
     
     
     init(room: Room) {
+        print("Did init")
         self.user = UserDataSource().getCurrentUser()
         self.messageDataSource = MessageDataSource(room: room)
         self.room = room
+        messageDataSource.createSubscription()
         
-        let adDoc = adDataSource.getAdDocuemnt()
-        let ids = adDoc.documents ?? []
-        self.adIDs = ids
-        for id in ids {
-            self.adNames.append(adDataSource.getAd(id: id).videoName)
-        }
-        print("Count of ids: \(adIDs.count), count of names: \(adNames.count)")
-        
-        if room.blueMode == true {
-            if room.members[0] == Amplify.Auth.getCurrentUser()!.username {
-                RoomDataSource().updateRoomTime(room: room, isMember1: true)
-                lastRead = room.lastSeenByMember2
-            } else {
-                RoomDataSource().updateRoomTime(room: room, isMember1: false)
-                lastRead = room.lastSeenByMember1
-            }
-        }
+        //        let adDoc = adDataSource.getAdDocuemnt()
+        //        let ids = adDoc.documents ?? []
+        //        self.adIDs = ids
+        //        for id in ids {
+        //            self.adNames.append(adDataSource.getAd(id: id).videoName)
+        //        }
+        //        print("Count of ids: \(adIDs.count), count of names: \(adNames.count)")
+        //
+        //        if room.blueMode == true {
+        //            if room.members[0] == Amplify.Auth.getCurrentUser()!.username {
+        //                RoomDataSource().updateRoomTime(room: room, isMember1: true)
+        //                lastRead = room.lastSeenByMember2
+        //            } else {
+        //                RoomDataSource().updateRoomTime(room: room, isMember1: false)
+        //                lastRead = room.lastSeenByMember1
+        //            }
+        //        }
     }
     
     private func checkHidden() {
@@ -87,24 +89,28 @@ struct MessageRoomView: View {
     var body: some View {
         
         ZStack{
-            Image("purpleBackground")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-                .onAppear {
-                    checkHidden()
-                }
-                .onReceive(timer) { time in
-                    print("Showing an ad")
-                    showAd()
-                }
+            //            Image("purpleBackground")
+            //                .resizable()
+            //                .scaledToFill()
+            //                .ignoresSafeArea()
+            
+            //            Color(.blue)
+            //                .ignoresSafeArea()
+            
+            //                .onAppear {
+            //                    checkHidden()
+            //                }
+            //                .onReceive(timer) { time in
+            //                    print("Showing an ad")
+            //                    showAd()
+            //                }
             
             AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
-//
-//            AdPlayerView(name: "purpleChat")
-//                .ignoresSafeArea()
-//                .isHidden(!areAdsHidden)
+            //
+            //            AdPlayerView(name: "purpleChat")
+            //                .ignoresSafeArea()
+            //                .isHidden(!areAdsHidden)
             
             VStack {
                 HStack { //header
@@ -114,28 +120,28 @@ struct MessageRoomView: View {
                             sessionManager.showRooms()
                         }
                     
-//                    ZStack {
-//                        if roomname == "" {
-//                            Text(room.name)
-//                                .font(.system(size: 40))
-//                                .foregroundColor(.white)
-//                        } else {
-//                            Text(roomname)
-//                                .font(.system(size: 40))
-//                                .foregroundColor(.white)
-//                        }
-//
-//                        TextField("", text: $roomname) { changed in
-//                            print("Editing...")
-//                        } onCommit: {
-//                            print("Uploading new name...")
-//                            RoomDataSource().updateRoomName(room: room, name: roomname)
-//                        }
-//                        .foregroundColor(.clear)
-//                        .background(Color(.clear))
-//                        .frame(width:200)
-//                    }
-//                    .padding()
+                    //                    ZStack {
+                    //                        if roomname == "" {
+                    //                            Text(room.name)
+                    //                                .font(.system(size: 40))
+                    //                                .foregroundColor(.white)
+                    //                        } else {
+                    //                            Text(roomname)
+                    //                                .font(.system(size: 40))
+                    //                                .foregroundColor(.white)
+                    //                        }
+                    //
+                    //                        TextField("", text: $roomname) { changed in
+                    //                            print("Editing...")
+                    //                        } onCommit: {
+                    //                            print("Uploading new name...")
+                    //                            RoomDataSource().updateRoomName(room: room, name: roomname)
+                    //                        }
+                    //                        .foregroundColor(.clear)
+                    //                        .background(Color(.clear))
+                    //                        .frame(width:200)
+                    //                    }
+                    //                    .padding()
                     
                     Text(room.name)
                         .font(.system(size: 25, weight: .light))
@@ -151,7 +157,7 @@ struct MessageRoomView: View {
                             .frame(width: 40, height: 40)
                             .scaledToFit()
                     }
-
+                    
                     Button(action: {
                         hideChat()
                     }) {
@@ -162,54 +168,55 @@ struct MessageRoomView: View {
                     }
                 }
                 
-                ScrollView { //messages
-                    LazyVStack {
-                        let rooms: [String] = user.hiddenRooms ?? []
-                        if rooms.contains(room.id) == false {
+                ScrollViewReader { value in
+                    ScrollView(.vertical) {
+                        LazyVStack {
                             ForEach(messageDataSource.room.messages, id: \.id) { message in
-                                ChatBubble(msg: message, messageDS: messageDataSource)
-                                    .padding()
-                                
-                                //                                Spacer()
-                                //                                    .frame(height: 20)
+                                ChatBubble(msg: message, messageDS: messageDataSource, myuser: user)
+                                    .id(message.id)
                             }
                         }
+                        .onAppear {
+                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
+                        }
+                        .onChange(of: messageDataSource.room.messages.count) { _ in
+                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
+                        }
                     }
-                    .padding()
                 }
-                .padding()
-                .offset(y: -self.offset)
-                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                            .onEnded({ value in
-                                if room.blueMode {
-                                    if value.translation.width < -10 || value.translation.width > 10{
-                                        // horizontal
-                                        print("Swipe horizontal")
-                                        withAnimation {
-                                            presentingDashboard = true
-                                        }
-                                    }
-                                }
-                            }))
+                //                .padding()
+                //                .offset(y: -self.offset)
+                //                                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+                //                                            .onEnded({ value in
+                //                                                if room.blueMode {
+                //                                                    if value.translation.width < -10 || value.translation.width > 10{
+                //                                                        // horizontal
+                //                                                        print("Swipe horizontal")
+                //                                                        withAnimation {
+                //                                                            presentingDashboard = true
+                //                                                        }
+                //                                                    }
+                //                                                }
+                //                                            }))
                 
                 
                 
                 Spacer().frame(height: 30)
                 VStack {
-                    if lastRead != nil {
-                        HStack {
-                            Image("whiteEye")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                            
-                            Text(String(lastRead!))
-                                .foregroundColor(.white)
-                                .font(.system(size: 16))
-                            
-                            Spacer()
-                        }
-                    }
+                    //                                        if lastRead != nil {
+                    //                                            HStack {
+                    //                                                Image("whiteEye")
+                    //                                                    .resizable()
+                    //                                                    .frame(width: 40, height: 40)
+                    //                                                    .scaledToFill()
+                    //
+                    //                                                Text(String(lastRead!))
+                    //                                                    .foregroundColor(.white)
+                    //                                                    .font(.system(size: 16))
+                    //
+                    //                                                Spacer()
+                    //                                            }
+                    //                                        }
                     
                     
                     HStack { //footer
@@ -237,11 +244,13 @@ struct MessageRoomView: View {
                             .padding(10)
                         
                         Button(action: {
-                            let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
+                            if !currentBody.trimmingCharacters(in: .whitespaces).isEmpty {
+                                // string contains non-whitespace characters
+                                let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
+                                messageDataSource.sendMessage(message: message)
+                                currentBody = ""
+                            }
                             
-                            currentBody = ""
-                            
-                            messageDataSource.sendMessage(message: message)
                         }) {
                             Image("arrow")
                                 .resizable()
@@ -268,8 +277,6 @@ struct MessageRoomView: View {
                     }
                 }
             }
-            .navigationBarTitle("")
-            .navigationBarHidden(true)
             
             if adButtonsHidden == false {
                 VStack { // Advertisement Buttons
@@ -331,51 +338,53 @@ struct MessageRoomView: View {
                 .offset(x: -165)
                 .transition(.move(edge: .leading))
             }
-            
-            if presentingDashboard {
-                BlueModeUserDashboard()
-                    .transition(.scale)
-                    .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                                .onEnded({ value in
-                                    if room.blueMode {
-                                        if value.translation.width < -10 || value.translation.width > 10 {
-                                            // horizontal
-                                            print("Swipe horizontal")
-                                            withAnimation {
-                                                presentingDashboard = false
-                                            }
-                                        }
-                                    }
-                                }))
-            }
-            
-            VStack {
-                Text("Send chat member a \npush notification")
-                    .multilineTextAlignment(.center)
-                    .font(.system(size: 18, weight: .light))
-                    .foregroundColor(.white)
-                    .padding()
-                
-                ForEach(room.members, id: \.self) { id in
-                    if id != user.id {
-                        let name = userDataSource.getUser(id: id).firstName + " " + userDataSource.getUser(id: id).lastName
-                        Button(name, action: {
-                            //send push notifiction
-                            showingNotifications = false
-                        })
-                        .font(.system(size: 22, weight: .bold))
+            //
+            //            if presentingDashboard {
+            //                BlueModeUserDashboard()
+            //                    .transition(.scale)
+            //                    .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
+            //                                .onEnded({ value in
+            //                                    if room.blueMode {
+            //                                        if value.translation.width < -10 || value.translation.width > 10 {
+            //                                            // horizontal
+            //                                            print("Swipe horizontal")
+            //                                            withAnimation {
+            //                                                presentingDashboard = false
+            //                                            }
+            //                                        }
+            //                                    }
+            //                                }))
+            //            }
+            //
+            if showingNotifications {
+                VStack {
+                    Text("Send chat member a \npush notification")
+                        .multilineTextAlignment(.center)
+                        .font(.system(size: 18, weight: .light))
                         .foregroundColor(.white)
                         .padding()
+                    
+                    ForEach(room.members, id: \.self) { id in
+                        if id != user.id {
+                            let name = userDataSource.getUser(id: id).firstName + " " + userDataSource.getUser(id: id).lastName
+                            Button(name, action: {
+                                //send push notifiction
+                                showingNotifications = false
+                            })
+                            .font(.system(size: 22, weight: .bold))
+                            .foregroundColor(.white)
+                            .padding()
+                        }
                     }
                 }
+                .background(Color(#colorLiteral(red: 0.4978310466, green: 0.2762668133, blue: 1, alpha: 1)))
+                .cornerRadius(20)
             }
-            .background(Color(#colorLiteral(red: 0.4978310466, green: 0.2762668133, blue: 1, alpha: 1)))
-            .cornerRadius(20)
-            .isHidden(!showingNotifications)
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
         }
+        
         
     }
     
