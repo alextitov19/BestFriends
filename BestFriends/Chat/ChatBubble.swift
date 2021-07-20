@@ -65,17 +65,6 @@ struct ChatBubble: View {
                 HStack {
                     Spacer()
                     
-                    Text(message.senderName)
-                        .frame(width: 200, alignment: .trailing)
-                        .foregroundColor(.white)
-                        .font(.system(size: CGFloat(user.chatFontSize)).weight(.thin))
-                        .offset(x: -5, y: 5)
-                }
-                
-                
-                HStack {
-                    Spacer()
-                    
                     if message.stickerNumber != nil {
                         Image(uiImage: messageDataSource.downloadImage(key: "Stickers/Sticker\(message.stickerNumber!).png"))
                             .resizable()
