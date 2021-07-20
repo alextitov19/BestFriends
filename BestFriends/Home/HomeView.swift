@@ -25,9 +25,6 @@ struct HomeView: View {
     @State private var friendIDs: [String] = []
     @State private var membersOfNewRoom: [String] = []
     @State private var stars: [Star] = []
-    @State private var starButtons: [UIButton] = []
-    @State private var titleText = ""
-    @State private var invitedChatRooms: [InvitedRoom] = []
     @State private var invitingFriends = false
     @State private var isShakingCoolPresented = false
     @State private var isThreeDotsPresented = false
@@ -43,7 +40,7 @@ struct HomeView: View {
     var userDataSource = UserDataSource()
     
     let firebaseDataSource = FirebaseDataSource()
-        
+    
     @EnvironmentObject var sessionManager: SessionManager
     
     init() {
@@ -57,7 +54,6 @@ struct HomeView: View {
         getFriends()
         userDataSource.setOnlineStatus(isOnline: true)
         let possibleRooms = USS.user.invitedRooms ?? []
-        invitedChatRooms = []
         if possibleRooms.count > 0 {
             for i in 0..<possibleRooms.count {
                 if possibleRooms[i].timer == nil {
@@ -245,7 +241,7 @@ struct HomeView: View {
         showingSheet.toggle()
     }
     
-    func loadImage() {
+    private func loadImage() {
         guard let inputImage = inputImage else { return }
         print("Got the image")
         displayQRString(image: inputImage)
@@ -254,7 +250,7 @@ struct HomeView: View {
     
     
     
-    func detectQRCode(_ image: UIImage?) -> [CIFeature]? {
+    private func detectQRCode(_ image: UIImage?) -> [CIFeature]? {
         if let image = image, let ciImage = CIImage.init(image: image){
             var options: [String: Any]
             let context = CIContext()
@@ -357,7 +353,6 @@ struct HomeView: View {
             membersOfNewRoom = []
             sleep(3)
             sessionManager.chat(room: room)
-            
         }
     }
 }
