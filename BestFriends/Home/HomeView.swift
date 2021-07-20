@@ -42,7 +42,6 @@ struct HomeView: View {
     
     let firebaseDataSource = FirebaseDataSource()
     
-    
     var myID: String
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -351,16 +350,12 @@ struct HomeView: View {
                     PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk!", body: messageBody)
                 }
             }
-            
             membersOfNewRoom = []
-            
             sleep(3)
             sessionManager.chat(room: room)
             
         }
     }
-    
-    
 }
 
 

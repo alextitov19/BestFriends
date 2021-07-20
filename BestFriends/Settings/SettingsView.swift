@@ -349,7 +349,7 @@ struct SettingsView: View {
                                                     .frame(height: 20)
                                                 
                                                 NavigationLink(
-                                                    destination: DeleteMyAccount(),
+                                                    destination: EmptyView(),
                                                     label: {
                                                         Text("Delete Account ***(Not Built)")
                                                     })
