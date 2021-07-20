@@ -15,6 +15,8 @@ import Firebase
 
 struct HomeView: View {
     
+    @ObservedObject var USS: UserSubscriptionService
+    
     @State private var showingSheet = false
     @State private var showingActionSheet = false
     @State private var myQRCode: UIImage = UIImage()
@@ -41,16 +43,20 @@ struct HomeView: View {
     var userDataSource = UserDataSource()
     
     let firebaseDataSource = FirebaseDataSource()
-    
-    var myID: String
-    
+        
     @EnvironmentObject var sessionManager: SessionManager
+    
+    init() {
+        let foo = userDataSource.getCurrentUser()
+        self.USS = UserSubscriptionService(user: foo)
+        USS.createSubscription()
+    }
     
     private func reloadData() {
         print("Reloading...")
         getFriends()
         userDataSource.setOnlineStatus(isOnline: true)
-        let possibleRooms = userDataSource.getCurrentUser().invitedRooms ?? []
+        let possibleRooms = USS.user.invitedRooms ?? []
         invitedChatRooms = []
         if possibleRooms.count > 0 {
             for i in 0..<possibleRooms.count {
@@ -65,9 +71,8 @@ struct HomeView: View {
                 print("Error fetching FCM registration token: \(error)")
             } else if let token = token {
                 print("FCM registration token: \(token)")
-                let user = UserDataSource().getCurrentUser()
-                if user.id != " " {
-                    PushNotificationManager(userID: user.id).updateFirestorePushTokenIfNeeded()
+                if USS.user.id != " " {
+                    PushNotificationManager(userID: USS.user.id).updateFirestorePushTokenIfNeeded()
                 }
             }
         }
@@ -225,7 +230,7 @@ struct HomeView: View {
         let filter = CIFilter.qrCodeGenerator()
         var QRCode: UIImage?
         
-        guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }
+        let userID = USS.user.id
         
         let data = Data(userID.utf8)
         filter.setValue(data, forKey: "inputMessage")
@@ -294,8 +299,7 @@ struct HomeView: View {
     
     
     private func getFriends() {
-        let user = userDataSource.getUser(id: myID)
-        guard var friends = user.friends else { return }
+        guard var friends = USS.user.friends else { return }
         friends.shuffle()
         friendIDs = friends
         displayStars()
@@ -327,7 +331,7 @@ struct HomeView: View {
     
     private func inviteSelectedFriends() {
         if membersOfNewRoom != [] {
-            membersOfNewRoom.append(myID)
+            membersOfNewRoom.append(USS.user.id)
             var name = ""
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
@@ -338,7 +342,7 @@ struct HomeView: View {
             
             print("Members of chat room: ", membersOfNewRoom)
             
-            let room = Room(name: name, creatorID: myID, members: membersOfNewRoom, blueMode: false)
+            let room = Room(name: name, creatorID: USS.user.id, members: membersOfNewRoom, blueMode: false)
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
             userDataSource.addRoom(room: room)
@@ -347,7 +351,7 @@ struct HomeView: View {
                 let user = userDataSource.getUser(id: id)
                 if user.notificationsLP == true {
                     let token = user.deviceFCMToken
-                    PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName) needs to talk!", body: messageBody)
+                    PushNotificationSender().sendPushNotification(token: token, title: "\(USS.user.firstName) needs to talk!", body: messageBody)
                 }
             }
             membersOfNewRoom = []
@@ -355,14 +359,6 @@ struct HomeView: View {
             sessionManager.chat(room: room)
             
         }
-    }
-}
-
-
-struct HomeView_Previews : PreviewProvider {
-    static var previews: some View {
-        HomeView(myID: " ")
-            .environmentObject(SessionManager())
     }
 }
 

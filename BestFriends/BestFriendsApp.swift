@@ -59,8 +59,8 @@ struct BestFriendsApp: App {
             case .confirmationCode(let username, let password):
                 ConfirmationView(username: username, password: password)
                     .environmentObject(sessionManager)
-            case .home(let userID):
-                HomeView(myID: userID)
+            case .home:
+                HomeView()
                     .environmentObject(sessionManager)
             case .rooms:
                 RoomsView()
@@ -72,7 +72,7 @@ struct BestFriendsApp: App {
                 SettingsView()
                     .environmentObject(sessionManager)
             case .chat(let room):
-                MessageRoomView(room: room)
+                ChatView(room: room)
                     .environmentObject(sessionManager)
             case .infoPages(let username, let password):
                 InfoViewPage1(username: username, password: password)

@@ -10,7 +10,7 @@ import Amplify
 import Combine
 
 
-struct MessageRoomView: View {
+struct ChatView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     

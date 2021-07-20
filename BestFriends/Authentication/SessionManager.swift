@@ -12,7 +12,7 @@ enum AppState {
     case signUp
     case login
     case confirmationCode(username: String, password: String)
-    case home(userID: String)
+    case home
     case rooms
     case settings
     case smileNotes
@@ -21,16 +21,14 @@ enum AppState {
     case loading(page: String)
     case pin(room: Room)
     case isInvitedToChat(invitedRoomId: String)
-
-
 }
 
 final class SessionManager: ObservableObject {
     @Published var appState: AppState = .login
     
     func getCurrentAuthUser() {
-        if let user = Amplify.Auth.getCurrentUser() {
-            appState = .home(userID: user.username)
+        if Amplify.Auth.getCurrentUser() != nil {
+            appState = .home
         } else {
             appState = .login
         }

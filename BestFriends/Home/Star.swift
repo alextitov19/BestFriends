@@ -14,12 +14,12 @@ struct Star: View {
     var hidingName = true
     var isSpinning = false
     @State var angle: Double = 0.0
-        @State var isAnimating = false
-        
-        var foreverAnimation: Animation {
-            Animation.linear(duration: 4.0)
-                .repeatForever(autoreverses: false)
-        }
+    @State var isAnimating = false
+    
+    var foreverAnimation: Animation {
+        Animation.linear(duration: 4.0)
+            .repeatForever(autoreverses: false)
+    }
     
     var body: some View {
         VStack {
@@ -36,10 +36,10 @@ struct Star: View {
                     .scaledToFill()
                     .blendMode(.screen)
                     .rotationEffect(Angle(degrees: self.isAnimating ? 360.0 : 0.0))
-                                    .animation(self.foreverAnimation)
-                                    .onAppear {
-                                        self.isAnimating = true
-                                }
+                    .animation(self.foreverAnimation)
+                    .onAppear {
+                        self.isAnimating = true
+                    }
             } else {
                 image
                     .resizable()
