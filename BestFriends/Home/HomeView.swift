@@ -359,7 +359,7 @@ struct HomeView: View {
 }
 
 
-struct LandingView_Previews : PreviewProvider {
+struct HomeView_Previews : PreviewProvider {
     static var previews: some View {
         HomeView(myID: " ")
             .environmentObject(SessionManager())

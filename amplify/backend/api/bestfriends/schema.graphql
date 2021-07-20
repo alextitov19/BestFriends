@@ -57,6 +57,7 @@ type User @model {
   notificationsBM: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
+  pendingNotifications: [String]
 }
 
 type InvitedRoom {

@@ -171,11 +171,18 @@ struct NotificationPreLoad: View {
                 default:
                     body = "\(user.firstName) will be ready to chat in \(minutes) minutes."
                 }
-                let user = userDataSource.getUser(id: RoomDataSource().getRoom(id: roomID).creatorID)
-                if user.notificationsLP {
+                var friend = userDataSource.getUser(id: RoomDataSource().getRoom(id: roomID).creatorID)
+                if friend.notificationsLP {
                     let token = user.deviceFCMToken
                     PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName)", body: body)
                 }
+                var pendingNotifs = friend.pendingNotifications
+                if pendingNotifs == nil {
+                    pendingNotifs = []
+                }
+                pendingNotifs!.append(body)
+                friend.pendingNotifications = pendingNotifs!
+                userDataSource.updateUser(user: friend)
             }
         }
         sessionManager.getCurrentAuthUser()

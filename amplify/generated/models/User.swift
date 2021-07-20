@@ -28,6 +28,7 @@ public struct User: Model {
   public var notificationsBM: Bool
   public var notificationsLP: Bool
   public var chatFontSize: Int
+  public var pendingNotifications: [String]?
   
   public init(id: String = UUID().uuidString,
       firstName: String,
@@ -53,7 +54,8 @@ public struct User: Model {
       BMRoom: String? = nil,
       notificationsBM: Bool,
       notificationsLP: Bool,
-      chatFontSize: Int) {
+      chatFontSize: Int,
+      pendingNotifications: [String]? = []) {
       self.id = id
       self.firstName = firstName
       self.lastName = lastName
@@ -79,5 +81,6 @@ public struct User: Model {
       self.notificationsBM = notificationsBM
       self.notificationsLP = notificationsLP
       self.chatFontSize = chatFontSize
+      self.pendingNotifications = pendingNotifications
   }
 }
