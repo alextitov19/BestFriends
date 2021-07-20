@@ -349,9 +349,9 @@ struct SettingsView: View {
                                                     .frame(height: 20)
                                                 
                                                 NavigationLink(
-                                                    destination: EmptyView(),
+                                                    destination: DeleteMyAccount(),
                                                     label: {
-                                                        Text("Delete Account ***(Not Built)")
+                                                        Text("Delete Account")
                                                     })
                                                     .frame(width: 325, height: 50)
                                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

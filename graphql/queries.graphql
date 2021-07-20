@@ -50,6 +50,35 @@ query ListRooms(
     nextToken
   }
 }
+query GetDeletionRequest($id: ID!) {
+  getDeletionRequest(id: $id) {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
+query ListDeletionRequests(
+  $filter: ModelDeletionRequestFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listDeletionRequests(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      userid
+      userEmail
+      reason
+      date
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
 query GetReportedMessage($id: ID!) {
   getReportedMessage(id: $id) {
     id

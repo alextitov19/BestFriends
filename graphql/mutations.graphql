@@ -74,6 +74,48 @@ mutation DeleteRoom(
     updatedAt
   }
 }
+mutation CreateDeletionRequest(
+  $input: CreateDeletionRequestInput!
+  $condition: ModelDeletionRequestConditionInput
+) {
+  createDeletionRequest(input: $input, condition: $condition) {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateDeletionRequest(
+  $input: UpdateDeletionRequestInput!
+  $condition: ModelDeletionRequestConditionInput
+) {
+  updateDeletionRequest(input: $input, condition: $condition) {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteDeletionRequest(
+  $input: DeleteDeletionRequestInput!
+  $condition: ModelDeletionRequestConditionInput
+) {
+  deleteDeletionRequest(input: $input, condition: $condition) {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
 mutation CreateReportedMessage(
   $input: CreateReportedMessageInput!
   $condition: ModelReportedMessageConditionInput

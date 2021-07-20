@@ -126,6 +126,25 @@ class UserManager: ObservableObject {
         }
     }
     
+    func deleteUser(reason: String) {
+        let user = UserDataSource().getCurrentUser()
+        let date = Temporal.Date.now()
+        let deletionRequest = DeletionRequest(userid: user.id, userEmail: user.email, reason: reason, date: date)
+        Amplify.API.mutate(request: .create(deletionRequest)) { [weak self] mutationResult in
+            switch mutationResult {
+            case .success(let creationResult):
+                switch creationResult {
+                case .success:
+                    print("Successfully created DeletionRequest")
+                case .failure(let error):
+                    print(error)
+                }
+            case .failure(let apiError):
+                print(apiError)
+            }
+        }
+    }
+    
 }
 
 

@@ -15,6 +15,14 @@ type SmileNote {
   favorite: Boolean!
 }
 
+type DeletionRequest @model {
+  id: ID!
+  userid: String!
+  userEmail: String!
+  reason: String!
+  date: AWSDate!
+}
+
 type Message {
   id: ID!
   senderName: String!

@@ -733,6 +733,200 @@ public struct DeleteRoomInput: GraphQLMapConvertible {
   }
 }
 
+public struct CreateDeletionRequestInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID? = nil, userid: String, userEmail: String, reason: String, date: String) {
+    graphQLMap = ["id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date]
+  }
+
+  public var id: GraphQLID? {
+    get {
+      return graphQLMap["id"] as! GraphQLID?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var userid: String {
+    get {
+      return graphQLMap["userid"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "userid")
+    }
+  }
+
+  public var userEmail: String {
+    get {
+      return graphQLMap["userEmail"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "userEmail")
+    }
+  }
+
+  public var reason: String {
+    get {
+      return graphQLMap["reason"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "reason")
+    }
+  }
+
+  public var date: String {
+    get {
+      return graphQLMap["date"] as! String
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "date")
+    }
+  }
+}
+
+public struct ModelDeletionRequestConditionInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(userid: ModelStringInput? = nil, userEmail: ModelStringInput? = nil, reason: ModelStringInput? = nil, date: ModelStringInput? = nil, and: [ModelDeletionRequestConditionInput?]? = nil, or: [ModelDeletionRequestConditionInput?]? = nil, not: ModelDeletionRequestConditionInput? = nil) {
+    graphQLMap = ["userid": userid, "userEmail": userEmail, "reason": reason, "date": date, "and": and, "or": or, "not": not]
+  }
+
+  public var userid: ModelStringInput? {
+    get {
+      return graphQLMap["userid"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "userid")
+    }
+  }
+
+  public var userEmail: ModelStringInput? {
+    get {
+      return graphQLMap["userEmail"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "userEmail")
+    }
+  }
+
+  public var reason: ModelStringInput? {
+    get {
+      return graphQLMap["reason"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "reason")
+    }
+  }
+
+  public var date: ModelStringInput? {
+    get {
+      return graphQLMap["date"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "date")
+    }
+  }
+
+  public var and: [ModelDeletionRequestConditionInput?]? {
+    get {
+      return graphQLMap["and"] as! [ModelDeletionRequestConditionInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "and")
+    }
+  }
+
+  public var or: [ModelDeletionRequestConditionInput?]? {
+    get {
+      return graphQLMap["or"] as! [ModelDeletionRequestConditionInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "or")
+    }
+  }
+
+  public var not: ModelDeletionRequestConditionInput? {
+    get {
+      return graphQLMap["not"] as! ModelDeletionRequestConditionInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "not")
+    }
+  }
+}
+
+public struct UpdateDeletionRequestInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID, userid: String? = nil, userEmail: String? = nil, reason: String? = nil, date: String? = nil) {
+    graphQLMap = ["id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date]
+  }
+
+  public var id: GraphQLID {
+    get {
+      return graphQLMap["id"] as! GraphQLID
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var userid: String? {
+    get {
+      return graphQLMap["userid"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "userid")
+    }
+  }
+
+  public var userEmail: String? {
+    get {
+      return graphQLMap["userEmail"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "userEmail")
+    }
+  }
+
+  public var reason: String? {
+    get {
+      return graphQLMap["reason"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "reason")
+    }
+  }
+
+  public var date: String? {
+    get {
+      return graphQLMap["date"] as! String?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "date")
+    }
+  }
+}
+
+public struct DeleteDeletionRequestInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: GraphQLID) {
+    graphQLMap = ["id": id]
+  }
+
+  public var id: GraphQLID {
+    get {
+      return graphQLMap["id"] as! GraphQLID
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+}
+
 public struct CreateReportedMessageInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -2431,6 +2625,86 @@ public struct ModelIDInput: GraphQLMapConvertible {
   }
 }
 
+public struct ModelDeletionRequestFilterInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(id: ModelIDInput? = nil, userid: ModelStringInput? = nil, userEmail: ModelStringInput? = nil, reason: ModelStringInput? = nil, date: ModelStringInput? = nil, and: [ModelDeletionRequestFilterInput?]? = nil, or: [ModelDeletionRequestFilterInput?]? = nil, not: ModelDeletionRequestFilterInput? = nil) {
+    graphQLMap = ["id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date, "and": and, "or": or, "not": not]
+  }
+
+  public var id: ModelIDInput? {
+    get {
+      return graphQLMap["id"] as! ModelIDInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "id")
+    }
+  }
+
+  public var userid: ModelStringInput? {
+    get {
+      return graphQLMap["userid"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "userid")
+    }
+  }
+
+  public var userEmail: ModelStringInput? {
+    get {
+      return graphQLMap["userEmail"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "userEmail")
+    }
+  }
+
+  public var reason: ModelStringInput? {
+    get {
+      return graphQLMap["reason"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "reason")
+    }
+  }
+
+  public var date: ModelStringInput? {
+    get {
+      return graphQLMap["date"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "date")
+    }
+  }
+
+  public var and: [ModelDeletionRequestFilterInput?]? {
+    get {
+      return graphQLMap["and"] as! [ModelDeletionRequestFilterInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "and")
+    }
+  }
+
+  public var or: [ModelDeletionRequestFilterInput?]? {
+    get {
+      return graphQLMap["or"] as! [ModelDeletionRequestFilterInput?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "or")
+    }
+  }
+
+  public var not: ModelDeletionRequestFilterInput? {
+    get {
+      return graphQLMap["not"] as! ModelDeletionRequestFilterInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "not")
+    }
+  }
+}
+
 public struct ModelReportedMessageFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -3702,6 +3976,429 @@ public final class DeleteRoomMutation: GraphQLMutation {
           set {
             snapshot.updateValue(newValue, forKey: "stickerNumber")
           }
+        }
+      }
+    }
+  }
+}
+
+public final class CreateDeletionRequestMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation CreateDeletionRequest($input: CreateDeletionRequestInput!, $condition: ModelDeletionRequestConditionInput) {\n  createDeletionRequest(input: $input, condition: $condition) {\n    __typename\n    id\n    userid\n    userEmail\n    reason\n    date\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: CreateDeletionRequestInput
+  public var condition: ModelDeletionRequestConditionInput?
+
+  public init(input: CreateDeletionRequestInput, condition: ModelDeletionRequestConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("createDeletionRequest", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(CreateDeletionRequest.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(createDeletionRequest: CreateDeletionRequest? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "createDeletionRequest": createDeletionRequest.flatMap { $0.snapshot }])
+    }
+
+    public var createDeletionRequest: CreateDeletionRequest? {
+      get {
+        return (snapshot["createDeletionRequest"] as? Snapshot).flatMap { CreateDeletionRequest(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "createDeletionRequest")
+      }
+    }
+
+    public struct CreateDeletionRequest: GraphQLSelectionSet {
+      public static let possibleTypes = ["DeletionRequest"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("userid", type: .nonNull(.scalar(String.self))),
+        GraphQLField("userEmail", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reason", type: .nonNull(.scalar(String.self))),
+        GraphQLField("date", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, userid: String, userEmail: String, reason: String, date: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "DeletionRequest", "id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var userid: String {
+        get {
+          return snapshot["userid"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userid")
+        }
+      }
+
+      public var userEmail: String {
+        get {
+          return snapshot["userEmail"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userEmail")
+        }
+      }
+
+      public var reason: String {
+        get {
+          return snapshot["reason"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "reason")
+        }
+      }
+
+      public var date: String {
+        get {
+          return snapshot["date"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "date")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class UpdateDeletionRequestMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation UpdateDeletionRequest($input: UpdateDeletionRequestInput!, $condition: ModelDeletionRequestConditionInput) {\n  updateDeletionRequest(input: $input, condition: $condition) {\n    __typename\n    id\n    userid\n    userEmail\n    reason\n    date\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: UpdateDeletionRequestInput
+  public var condition: ModelDeletionRequestConditionInput?
+
+  public init(input: UpdateDeletionRequestInput, condition: ModelDeletionRequestConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("updateDeletionRequest", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(UpdateDeletionRequest.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(updateDeletionRequest: UpdateDeletionRequest? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "updateDeletionRequest": updateDeletionRequest.flatMap { $0.snapshot }])
+    }
+
+    public var updateDeletionRequest: UpdateDeletionRequest? {
+      get {
+        return (snapshot["updateDeletionRequest"] as? Snapshot).flatMap { UpdateDeletionRequest(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "updateDeletionRequest")
+      }
+    }
+
+    public struct UpdateDeletionRequest: GraphQLSelectionSet {
+      public static let possibleTypes = ["DeletionRequest"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("userid", type: .nonNull(.scalar(String.self))),
+        GraphQLField("userEmail", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reason", type: .nonNull(.scalar(String.self))),
+        GraphQLField("date", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, userid: String, userEmail: String, reason: String, date: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "DeletionRequest", "id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var userid: String {
+        get {
+          return snapshot["userid"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userid")
+        }
+      }
+
+      public var userEmail: String {
+        get {
+          return snapshot["userEmail"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userEmail")
+        }
+      }
+
+      public var reason: String {
+        get {
+          return snapshot["reason"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "reason")
+        }
+      }
+
+      public var date: String {
+        get {
+          return snapshot["date"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "date")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class DeleteDeletionRequestMutation: GraphQLMutation {
+  public static let operationString =
+    "mutation DeleteDeletionRequest($input: DeleteDeletionRequestInput!, $condition: ModelDeletionRequestConditionInput) {\n  deleteDeletionRequest(input: $input, condition: $condition) {\n    __typename\n    id\n    userid\n    userEmail\n    reason\n    date\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var input: DeleteDeletionRequestInput
+  public var condition: ModelDeletionRequestConditionInput?
+
+  public init(input: DeleteDeletionRequestInput, condition: ModelDeletionRequestConditionInput? = nil) {
+    self.input = input
+    self.condition = condition
+  }
+
+  public var variables: GraphQLMap? {
+    return ["input": input, "condition": condition]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Mutation"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("deleteDeletionRequest", arguments: ["input": GraphQLVariable("input"), "condition": GraphQLVariable("condition")], type: .object(DeleteDeletionRequest.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(deleteDeletionRequest: DeleteDeletionRequest? = nil) {
+      self.init(snapshot: ["__typename": "Mutation", "deleteDeletionRequest": deleteDeletionRequest.flatMap { $0.snapshot }])
+    }
+
+    public var deleteDeletionRequest: DeleteDeletionRequest? {
+      get {
+        return (snapshot["deleteDeletionRequest"] as? Snapshot).flatMap { DeleteDeletionRequest(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "deleteDeletionRequest")
+      }
+    }
+
+    public struct DeleteDeletionRequest: GraphQLSelectionSet {
+      public static let possibleTypes = ["DeletionRequest"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("userid", type: .nonNull(.scalar(String.self))),
+        GraphQLField("userEmail", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reason", type: .nonNull(.scalar(String.self))),
+        GraphQLField("date", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, userid: String, userEmail: String, reason: String, date: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "DeletionRequest", "id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var userid: String {
+        get {
+          return snapshot["userid"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userid")
+        }
+      }
+
+      public var userEmail: String {
+        get {
+          return snapshot["userEmail"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userEmail")
+        }
+      }
+
+      public var reason: String {
+        get {
+          return snapshot["reason"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "reason")
+        }
+      }
+
+      public var date: String {
+        get {
+          return snapshot["date"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "date")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
         }
       }
     }
@@ -7828,6 +8525,335 @@ public final class ListRoomsQuery: GraphQLQuery {
   }
 }
 
+public final class GetDeletionRequestQuery: GraphQLQuery {
+  public static let operationString =
+    "query GetDeletionRequest($id: ID!) {\n  getDeletionRequest(id: $id) {\n    __typename\n    id\n    userid\n    userEmail\n    reason\n    date\n    createdAt\n    updatedAt\n  }\n}"
+
+  public var id: GraphQLID
+
+  public init(id: GraphQLID) {
+    self.id = id
+  }
+
+  public var variables: GraphQLMap? {
+    return ["id": id]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Query"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("getDeletionRequest", arguments: ["id": GraphQLVariable("id")], type: .object(GetDeletionRequest.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(getDeletionRequest: GetDeletionRequest? = nil) {
+      self.init(snapshot: ["__typename": "Query", "getDeletionRequest": getDeletionRequest.flatMap { $0.snapshot }])
+    }
+
+    public var getDeletionRequest: GetDeletionRequest? {
+      get {
+        return (snapshot["getDeletionRequest"] as? Snapshot).flatMap { GetDeletionRequest(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "getDeletionRequest")
+      }
+    }
+
+    public struct GetDeletionRequest: GraphQLSelectionSet {
+      public static let possibleTypes = ["DeletionRequest"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("userid", type: .nonNull(.scalar(String.self))),
+        GraphQLField("userEmail", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reason", type: .nonNull(.scalar(String.self))),
+        GraphQLField("date", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, userid: String, userEmail: String, reason: String, date: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "DeletionRequest", "id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var userid: String {
+        get {
+          return snapshot["userid"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userid")
+        }
+      }
+
+      public var userEmail: String {
+        get {
+          return snapshot["userEmail"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userEmail")
+        }
+      }
+
+      public var reason: String {
+        get {
+          return snapshot["reason"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "reason")
+        }
+      }
+
+      public var date: String {
+        get {
+          return snapshot["date"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "date")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class ListDeletionRequestsQuery: GraphQLQuery {
+  public static let operationString =
+    "query ListDeletionRequests($filter: ModelDeletionRequestFilterInput, $limit: Int, $nextToken: String) {\n  listDeletionRequests(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      userid\n      userEmail\n      reason\n      date\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+
+  public var filter: ModelDeletionRequestFilterInput?
+  public var limit: Int?
+  public var nextToken: String?
+
+  public init(filter: ModelDeletionRequestFilterInput? = nil, limit: Int? = nil, nextToken: String? = nil) {
+    self.filter = filter
+    self.limit = limit
+    self.nextToken = nextToken
+  }
+
+  public var variables: GraphQLMap? {
+    return ["filter": filter, "limit": limit, "nextToken": nextToken]
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Query"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("listDeletionRequests", arguments: ["filter": GraphQLVariable("filter"), "limit": GraphQLVariable("limit"), "nextToken": GraphQLVariable("nextToken")], type: .object(ListDeletionRequest.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(listDeletionRequests: ListDeletionRequest? = nil) {
+      self.init(snapshot: ["__typename": "Query", "listDeletionRequests": listDeletionRequests.flatMap { $0.snapshot }])
+    }
+
+    public var listDeletionRequests: ListDeletionRequest? {
+      get {
+        return (snapshot["listDeletionRequests"] as? Snapshot).flatMap { ListDeletionRequest(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "listDeletionRequests")
+      }
+    }
+
+    public struct ListDeletionRequest: GraphQLSelectionSet {
+      public static let possibleTypes = ["ModelDeletionRequestConnection"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("items", type: .list(.object(Item.selections))),
+        GraphQLField("nextToken", type: .scalar(String.self)),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(items: [Item?]? = nil, nextToken: String? = nil) {
+        self.init(snapshot: ["__typename": "ModelDeletionRequestConnection", "items": items.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, "nextToken": nextToken])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var items: [Item?]? {
+        get {
+          return (snapshot["items"] as? [Snapshot?]).flatMap { $0.map { $0.flatMap { Item(snapshot: $0) } } }
+        }
+        set {
+          snapshot.updateValue(newValue.flatMap { $0.map { $0.flatMap { $0.snapshot } } }, forKey: "items")
+        }
+      }
+
+      public var nextToken: String? {
+        get {
+          return snapshot["nextToken"] as? String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "nextToken")
+        }
+      }
+
+      public struct Item: GraphQLSelectionSet {
+        public static let possibleTypes = ["DeletionRequest"]
+
+        public static let selections: [GraphQLSelection] = [
+          GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+          GraphQLField("userid", type: .nonNull(.scalar(String.self))),
+          GraphQLField("userEmail", type: .nonNull(.scalar(String.self))),
+          GraphQLField("reason", type: .nonNull(.scalar(String.self))),
+          GraphQLField("date", type: .nonNull(.scalar(String.self))),
+          GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+          GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+        ]
+
+        public var snapshot: Snapshot
+
+        public init(snapshot: Snapshot) {
+          self.snapshot = snapshot
+        }
+
+        public init(id: GraphQLID, userid: String, userEmail: String, reason: String, date: String, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "DeletionRequest", "id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date, "createdAt": createdAt, "updatedAt": updatedAt])
+        }
+
+        public var __typename: String {
+          get {
+            return snapshot["__typename"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "__typename")
+          }
+        }
+
+        public var id: GraphQLID {
+          get {
+            return snapshot["id"]! as! GraphQLID
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "id")
+          }
+        }
+
+        public var userid: String {
+          get {
+            return snapshot["userid"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "userid")
+          }
+        }
+
+        public var userEmail: String {
+          get {
+            return snapshot["userEmail"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "userEmail")
+          }
+        }
+
+        public var reason: String {
+          get {
+            return snapshot["reason"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "reason")
+          }
+        }
+
+        public var date: String {
+          get {
+            return snapshot["date"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "date")
+          }
+        }
+
+        public var createdAt: String {
+          get {
+            return snapshot["createdAt"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "createdAt")
+          }
+        }
+
+        public var updatedAt: String {
+          get {
+            return snapshot["updatedAt"]! as! String
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "updatedAt")
+          }
+        }
+      }
+    }
+  }
+}
+
 public final class GetReportedMessageQuery: GraphQLQuery {
   public static let operationString =
     "query GetReportedMessage($id: ID!) {\n  getReportedMessage(id: $id) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    createdAt\n    updatedAt\n  }\n}"
@@ -11038,6 +12064,402 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
           set {
             snapshot.updateValue(newValue, forKey: "stickerNumber")
           }
+        }
+      }
+    }
+  }
+}
+
+public final class OnCreateDeletionRequestSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnCreateDeletionRequest {\n  onCreateDeletionRequest {\n    __typename\n    id\n    userid\n    userEmail\n    reason\n    date\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onCreateDeletionRequest", type: .object(OnCreateDeletionRequest.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onCreateDeletionRequest: OnCreateDeletionRequest? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onCreateDeletionRequest": onCreateDeletionRequest.flatMap { $0.snapshot }])
+    }
+
+    public var onCreateDeletionRequest: OnCreateDeletionRequest? {
+      get {
+        return (snapshot["onCreateDeletionRequest"] as? Snapshot).flatMap { OnCreateDeletionRequest(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onCreateDeletionRequest")
+      }
+    }
+
+    public struct OnCreateDeletionRequest: GraphQLSelectionSet {
+      public static let possibleTypes = ["DeletionRequest"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("userid", type: .nonNull(.scalar(String.self))),
+        GraphQLField("userEmail", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reason", type: .nonNull(.scalar(String.self))),
+        GraphQLField("date", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, userid: String, userEmail: String, reason: String, date: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "DeletionRequest", "id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var userid: String {
+        get {
+          return snapshot["userid"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userid")
+        }
+      }
+
+      public var userEmail: String {
+        get {
+          return snapshot["userEmail"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userEmail")
+        }
+      }
+
+      public var reason: String {
+        get {
+          return snapshot["reason"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "reason")
+        }
+      }
+
+      public var date: String {
+        get {
+          return snapshot["date"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "date")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class OnUpdateDeletionRequestSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnUpdateDeletionRequest {\n  onUpdateDeletionRequest {\n    __typename\n    id\n    userid\n    userEmail\n    reason\n    date\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onUpdateDeletionRequest", type: .object(OnUpdateDeletionRequest.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onUpdateDeletionRequest: OnUpdateDeletionRequest? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onUpdateDeletionRequest": onUpdateDeletionRequest.flatMap { $0.snapshot }])
+    }
+
+    public var onUpdateDeletionRequest: OnUpdateDeletionRequest? {
+      get {
+        return (snapshot["onUpdateDeletionRequest"] as? Snapshot).flatMap { OnUpdateDeletionRequest(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onUpdateDeletionRequest")
+      }
+    }
+
+    public struct OnUpdateDeletionRequest: GraphQLSelectionSet {
+      public static let possibleTypes = ["DeletionRequest"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("userid", type: .nonNull(.scalar(String.self))),
+        GraphQLField("userEmail", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reason", type: .nonNull(.scalar(String.self))),
+        GraphQLField("date", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, userid: String, userEmail: String, reason: String, date: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "DeletionRequest", "id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var userid: String {
+        get {
+          return snapshot["userid"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userid")
+        }
+      }
+
+      public var userEmail: String {
+        get {
+          return snapshot["userEmail"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userEmail")
+        }
+      }
+
+      public var reason: String {
+        get {
+          return snapshot["reason"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "reason")
+        }
+      }
+
+      public var date: String {
+        get {
+          return snapshot["date"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "date")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
+        }
+      }
+    }
+  }
+}
+
+public final class OnDeleteDeletionRequestSubscription: GraphQLSubscription {
+  public static let operationString =
+    "subscription OnDeleteDeletionRequest {\n  onDeleteDeletionRequest {\n    __typename\n    id\n    userid\n    userEmail\n    reason\n    date\n    createdAt\n    updatedAt\n  }\n}"
+
+  public init() {
+  }
+
+  public struct Data: GraphQLSelectionSet {
+    public static let possibleTypes = ["Subscription"]
+
+    public static let selections: [GraphQLSelection] = [
+      GraphQLField("onDeleteDeletionRequest", type: .object(OnDeleteDeletionRequest.selections)),
+    ]
+
+    public var snapshot: Snapshot
+
+    public init(snapshot: Snapshot) {
+      self.snapshot = snapshot
+    }
+
+    public init(onDeleteDeletionRequest: OnDeleteDeletionRequest? = nil) {
+      self.init(snapshot: ["__typename": "Subscription", "onDeleteDeletionRequest": onDeleteDeletionRequest.flatMap { $0.snapshot }])
+    }
+
+    public var onDeleteDeletionRequest: OnDeleteDeletionRequest? {
+      get {
+        return (snapshot["onDeleteDeletionRequest"] as? Snapshot).flatMap { OnDeleteDeletionRequest(snapshot: $0) }
+      }
+      set {
+        snapshot.updateValue(newValue?.snapshot, forKey: "onDeleteDeletionRequest")
+      }
+    }
+
+    public struct OnDeleteDeletionRequest: GraphQLSelectionSet {
+      public static let possibleTypes = ["DeletionRequest"]
+
+      public static let selections: [GraphQLSelection] = [
+        GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+        GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
+        GraphQLField("userid", type: .nonNull(.scalar(String.self))),
+        GraphQLField("userEmail", type: .nonNull(.scalar(String.self))),
+        GraphQLField("reason", type: .nonNull(.scalar(String.self))),
+        GraphQLField("date", type: .nonNull(.scalar(String.self))),
+        GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
+        GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
+      ]
+
+      public var snapshot: Snapshot
+
+      public init(snapshot: Snapshot) {
+        self.snapshot = snapshot
+      }
+
+      public init(id: GraphQLID, userid: String, userEmail: String, reason: String, date: String, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "DeletionRequest", "id": id, "userid": userid, "userEmail": userEmail, "reason": reason, "date": date, "createdAt": createdAt, "updatedAt": updatedAt])
+      }
+
+      public var __typename: String {
+        get {
+          return snapshot["__typename"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var id: GraphQLID {
+        get {
+          return snapshot["id"]! as! GraphQLID
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "id")
+        }
+      }
+
+      public var userid: String {
+        get {
+          return snapshot["userid"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userid")
+        }
+      }
+
+      public var userEmail: String {
+        get {
+          return snapshot["userEmail"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "userEmail")
+        }
+      }
+
+      public var reason: String {
+        get {
+          return snapshot["reason"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "reason")
+        }
+      }
+
+      public var date: String {
+        get {
+          return snapshot["date"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "date")
+        }
+      }
+
+      public var createdAt: String {
+        get {
+          return snapshot["createdAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "createdAt")
+        }
+      }
+
+      public var updatedAt: String {
+        get {
+          return snapshot["updatedAt"]! as! String
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "updatedAt")
         }
       }
     }

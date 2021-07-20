@@ -65,6 +65,39 @@ subscription OnDeleteRoom {
     updatedAt
   }
 }
+subscription OnCreateDeletionRequest {
+  onCreateDeletionRequest {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateDeletionRequest {
+  onUpdateDeletionRequest {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteDeletionRequest {
+  onDeleteDeletionRequest {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
 subscription OnCreateReportedMessage {
   onCreateReportedMessage {
     id
