@@ -380,8 +380,6 @@ struct ChatView: View {
                 .background(Color(#colorLiteral(red: 0.4978310466, green: 0.2762668133, blue: 1, alpha: 1)))
                 .cornerRadius(20)
             }
-            
-            
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
