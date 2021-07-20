@@ -29,6 +29,7 @@ struct HomeView: View {
     @State private var isShakingCoolPresented = false
     @State private var isThreeDotsPresented = false
     @State private var showingAddFriendInstructions = false
+    @State private var notificationsShowing = false
     
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
     //    @State private var inviteMode = false
@@ -89,6 +90,34 @@ struct HomeView: View {
                 .blendMode(.screen)
             
             VStack {
+                HStack {
+                    Image("whiteBell")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            withAnimation {
+                                notificationsShowing.toggle()
+                                if notificationsShowing == false {
+                                    var user = USS.user
+                                    user.pendingNotifications = []
+                                    userDataSource.updateUser(user: user)
+                                }
+                            }
+                        }
+                    
+                    Spacer().frame(width: 260)
+                    
+                    Button(action: { inviteClicked() }) {
+                        Image("chat-add icon")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                    }
+                    .sheet(isPresented: $showingSheet) {
+                        QRCodeView(image: myQRCode)
+                    }
+                }
+                
                 ForEach(stars.indices, id: \.self) { index in
                     Button(action: {
                         print("tap")
@@ -171,16 +200,7 @@ struct HomeView: View {
                         }
                         .padding(8)
                     
-                    Button(action: { inviteClicked() }) {
-                        Image("chat-add icon")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                    }
                     
-                    .sheet(isPresented: $showingSheet) {
-                        QRCodeView(image: myQRCode)
-                    }
-                    .padding(25)
                     
                 }
                 .ignoresSafeArea()
@@ -189,7 +209,9 @@ struct HomeView: View {
             
             if invitingFriends == true {
                 Button(action: {
-                    invitingFriends = false
+                    withAnimation {
+                        invitingFriends = false
+                    }
                     for index in 0..<stars.count {
                         stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
                         stars[index].hidingName = true
@@ -207,14 +229,30 @@ struct HomeView: View {
                         )
                 }
                 .offset(y: 300)
-                .transition(.move(edge: .bottom))
+                .transition(.scale)
             }
+            
+            VStack {
+                if USS.user.pendingNotifications != nil && notificationsShowing == true {
+                    ForEach(USS.user.pendingNotifications!.reversed(), id: \.self) { foo in
+                            Text(foo)
+                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .font(.system(size: 17, weight: .regular))
+                                .padding()
+                    }
+                }
+            }
+            .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+            .cornerRadius(30)
+            .transition(.scale)
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onAppear(perform: reloadData)
         .onShake {
             isShakingCoolPresented = true
         }
+        
+        
         
         
     }
