@@ -18,7 +18,7 @@ struct IntroPopups: View {
                 update()
             }) {
                 VStack {
-                    Text("Tap stars then \"Invite\" to invite your friends to chat")
+                    Text("Tap friend's stars then [Invite] \nto send chat requests")
                         .frame(width: 300, height: 75)
                         .font(.system(size: 20, weight: .medium))
                         .multilineTextAlignment(.center)
