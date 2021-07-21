@@ -30,11 +30,20 @@ struct ShakingCoolView: View {
             
             VStack {
                 // MARK: Header
-                Text("Shaking Cool")
+                Text("ShakingCool")
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 40, weight: .thin))
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                
+                Text("Add 1st image seen by all friends. Add 2 more for you. Then Shake and Smile.")
+                    .frame(width: 400, height: 100, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 25, weight: .thin))
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                
+                
+                
                 
 //                Text("As you add friends they can send you a favorite image to add to 'your' ShakingCool.")
 //                    .italic()
@@ -75,8 +84,8 @@ struct ShakingCoolView: View {
                 Spacer()
                                 
                 
-                Text("You can delete/replace an image by tapping it")
-                    .font(.system(size: 20, weight: .thin))
+                Text("Delete/replace image by tapping")
+                    .font(.system(size: 25, weight: .thin))
                     .foregroundColor(.white)
                 
                 Text("Add Image")
