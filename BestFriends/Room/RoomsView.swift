@@ -39,7 +39,7 @@ struct RoomsView: View {
                 HStack {
                     Spacer().frame(width: 20)
                     
-                    ScrollView {
+                    ScrollView(showsIndicators: false) {
                         LazyVStack {
                             ForEach(dataSource.rooms) { room in
                                 if room.creatorID == UserDataSource().getCurrentUser().id {

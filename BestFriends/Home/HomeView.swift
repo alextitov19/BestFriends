@@ -52,30 +52,33 @@ struct HomeView: View {
     }
     
     private func reloadData() {
-        print("Reloading...")
-        getFriends()
-        userDataSource.setOnlineStatus(isOnline: true)
-        let possibleRooms = USS.user.invitedRooms ?? []
-        if possibleRooms.count > 0 {
-            for i in 0..<possibleRooms.count {
-                if possibleRooms[i].timer == nil {
-                    sessionManager.userHasBeenInvitedToChat(invitedRoomId: possibleRooms[i].roomID)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            
+            print("Reloading...")
+            getFriends()
+            userDataSource.setOnlineStatus(isOnline: true)
+            let possibleRooms = USS.user.invitedRooms ?? []
+            if possibleRooms.count > 0 {
+                for i in 0..<possibleRooms.count {
+                    if possibleRooms[i].timer == nil {
+                        sessionManager.userHasBeenInvitedToChat(invitedRoomId: possibleRooms[i].roomID)
+                    }
                 }
             }
-        }
-        
-        Messaging.messaging().token { token, error in
-            if let error = error {
-                print("Error fetching FCM registration token: \(error)")
-            } else if let token = token {
-                print("FCM registration token: \(token)")
-                if USS.user.id != " " {
-                    PushNotificationManager(userID: USS.user.id).updateFirestorePushTokenIfNeeded()
+            
+            Messaging.messaging().token { token, error in
+                if let error = error {
+                    print("Error fetching FCM registration token: \(error)")
+                } else if let token = token {
+                    print("FCM registration token: \(token)")
+                    if USS.user.id != " " {
+                        PushNotificationManager(userID: USS.user.id).updateFirestorePushTokenIfNeeded()
+                    }
                 }
             }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { inviteClicked() }
         }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) { inviteClicked() }
     }
     
     //    let user: AuthUser
@@ -93,49 +96,21 @@ struct HomeView: View {
                 .blendMode(.screen)
             
             VStack {
-                HStack {
-                    Image("whiteBell")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            withAnimation {
-                                notificationsShowing.toggle()
-                                if notificationsShowing == false {
-                                    var user = USS.user
-                                    user.pendingNotifications = []
-                                    userDataSource.updateUser(user: user)
-                                }
-                            }
-                        }
-                    
-                    Spacer().frame(width: 260)
-                    
-                    Button(action: { inviteClicked() }) {
-                        Image("chat-add icon")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                    }
-                    .sheet(isPresented: $showingSheet) {
-                        QRCodeView(image: myQRCode)
-                    }
-                }
-                
                 ForEach(stars.indices, id: \.self) { index in
                     Button(action: {
                         print("tap")
-                            if membersOfNewRoom.contains(stars[index].id) {
-                                membersOfNewRoom.remove(at: membersOfNewRoom.firstIndex(of: stars[index].id)!)
-                                stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
-                                print("Color change 1")
-                                stars[index].isSpinning = false
-                            } else {
-                                membersOfNewRoom.append(stars[index].id)
-                                stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
-                                print("Color change 2")
-                                stars[index].isSpinning = true
-                            }
-                            
+                        if membersOfNewRoom.contains(stars[index].id) {
+                            membersOfNewRoom.remove(at: membersOfNewRoom.firstIndex(of: stars[index].id)!)
+                            stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
+                            print("Color change 1")
+                            stars[index].isSpinning = false
+                        } else {
+                            membersOfNewRoom.append(stars[index].id)
+                            stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
+                            print("Color change 2")
+                            stars[index].isSpinning = true
+                        }
+                        
                     }) {
                         stars[index]
                     }
@@ -145,67 +120,87 @@ struct HomeView: View {
                 
                 Spacer()
                 
-                HStack {
-                    Button(action: {
-                        //Display invite menu
-                        self.showingActionSheet = true
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        Spacer()
+                            .frame(width: 400)
                         
-                    }) {
-                        Image("person-add icon")
+                        Button(action: {
+                            //Display invite menu
+                            self.showingActionSheet = true
+                            
+                        }) {
+                            Image("person-add icon")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                            
+                        }
+                        .actionSheet(isPresented: $showingActionSheet) {
+                            ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes."), buttons: [
+                                .default(Text("Get my QR code")) { showMyQR() },
+                                .default(Text("My Gallery")) { self.showingImagePicker = true },
+                                // Rob added a third option in the Add Friends popup on Landing page
+                                .default(Text("Add Friend Instructions")) { self.showingAddFriendInstructions = true },
+                                //
+                                .cancel()
+                            ])
+                        }
+                        .padding(25)
+                        
+                        Image("chat icon")
                             .resizable()
-                            .frame(width: 50, height: 50)
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showRooms()
+                            }
+                            .padding(8)
+                            .sheet(isPresented: $showingAddFriendInstructions) {
+                                AddFriendSteps()
+                            }
+                        
+                        Image("happy-face icon")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showSmileNotes()
+                            }
+                            .padding(10)
+                            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                                ImagePicker(image: self.$inputImage)
+                            }
+                        
+                        Image("settings icon")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showSettings()
+                            }
+                            .padding(8)
+                        
+                        Image("whiteBell")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                withAnimation {
+                                    notificationsShowing.toggle()
+                                    if notificationsShowing == false {
+                                        var user = USS.user
+                                        user.pendingNotifications = []
+                                        userDataSource.updateUser(user: user)
+                                    }
+                                }
+                            }
+                        
+                        Spacer()
+                            .frame(width: 50)
                         
                     }
-                    .actionSheet(isPresented: $showingActionSheet) {
-                        ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes."), buttons: [
-                            .default(Text("Get my QR code")) { showMyQR() },
-                            .default(Text("My Gallery")) { self.showingImagePicker = true },
-                            // Rob added a third option in the Add Friends popup on Landing page
-                            .default(Text("Add Friend Instructions")) { self.showingAddFriendInstructions = true },
-                            //
-                            .cancel()
-                        ])
-                    }
-                    .padding(25)
-                    
-                    Image("chat icon")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            sessionManager.showRooms()
-                        }
-                        .padding(8)
-                        .sheet(isPresented: $showingAddFriendInstructions) {
-                            AddFriendSteps()
-                        }
-                    
-                    Image("happy-face icon")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            sessionManager.showSmileNotes()
-                        }
-                        .padding(10)
-                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                            ImagePicker(image: self.$inputImage)
-                        }
-                    
-                    Image("settings icon")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            sessionManager.showSettings()
-                        }
-                        .padding(8)
-                    
-                    
-                    
                 }
-                .ignoresSafeArea()
-                .offset(y: 35)
+                .offset(y: 30)
             }
             
             if membersOfNewRoom.count > 0 {
@@ -247,7 +242,7 @@ struct HomeView: View {
                         .scaledToFill()
                         .onAppear {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                    invitingFriends = false
+                                invitingFriends = false
                                 for index in 0..<stars.count {
                                     stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
                                     stars[index].hidingName = true
@@ -266,7 +261,7 @@ struct HomeView: View {
                                 .stroke(Color.white, lineWidth: 1)
                         )
                         .offset(y: 100)
-
+                    
                 }
             }
             

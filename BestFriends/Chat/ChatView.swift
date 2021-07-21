@@ -169,7 +169,7 @@ struct ChatView: View {
                 }
                 
                 ScrollViewReader { value in
-                    ScrollView(.vertical) {
+                    ScrollView(showsIndicators: false) {
                         LazyVStack {
                             ForEach(messageDataSource.room.messages, id: \.id) { message in
                                 ChatBubble(msg: message, messageDS: messageDataSource, myuser: user)

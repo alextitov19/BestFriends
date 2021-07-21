@@ -14,12 +14,16 @@ struct Star: View {
     var hidingName = true
     var isSpinning = false
     @State var angle: Double = 0.0
-    @State var isAnimating = false
+    @State var isRotating = false
+    @State var isAtMaxScale = false
     
-    var foreverAnimation: Animation {
+    private var foreverAnimation: Animation {
         Animation.linear(duration: 4.0)
             .repeatForever(autoreverses: false)
     }
+    
+    private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
+    private let maxScale: CGFloat = 2
     
     var body: some View {
         VStack {
@@ -32,20 +36,31 @@ struct Star: View {
             if isSpinning {
                 image
                     .resizable()
-                    .frame(width: 80, height: 80, alignment: .center)
+                    .frame(width: 60, height: 60, alignment: .center)
                     .scaledToFill()
                     .blendMode(.screen)
-                    .rotationEffect(Angle(degrees: self.isAnimating ? 360.0 : 0.0))
-                    .animation(self.foreverAnimation)
+                    .rotationEffect(Angle(degrees: self.isRotating ? 360.0 : 0.0))
+                    .scaleEffect(isAtMaxScale ? maxScale : 1)
                     .onAppear {
-                        self.isAnimating = true
+                        withAnimation(self.foreverAnimation) {
+                            self.isRotating.toggle()
+                        }
+                        withAnimation(self.animation, {
+                            self.isAtMaxScale.toggle()
+                        })
                     }
             } else {
                 image
                     .resizable()
-                    .frame(width: 80, height: 80, alignment: .center)
+                    .frame(width: 60, height: 60, alignment: .center)
                     .scaledToFill()
                     .blendMode(.screen)
+                    .scaleEffect(isAtMaxScale ? maxScale : 1)
+                    .onAppear {
+                        withAnimation(self.animation, {
+                            self.isAtMaxScale.toggle()
+                        })
+                    }
             }
             
             
