@@ -278,6 +278,10 @@ struct HomeView: View {
             .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
             .cornerRadius(30)
             .transition(.scale)
+            
+            if USS.user.needIntro {
+                IntroPopups()
+            }
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onAppear(perform: reloadData)

@@ -275,6 +275,9 @@ query GetManagementDocument($id: ID!) {
   getManagementDocument(id: $id) {
     id
     documents
+    emails
+    usernames
+    prices
     createdAt
     updatedAt
   }
@@ -292,6 +295,9 @@ query ListManagementDocuments(
     items {
       id
       documents
+      emails
+      usernames
+      prices
       createdAt
       updatedAt
     }

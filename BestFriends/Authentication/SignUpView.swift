@@ -286,7 +286,7 @@ struct SignUpPage3: View {
     }
     
     private func checkUsername() {
-        let usernames = UserDataSource().getAllUsernames()
+        let usernames = ManDocDataSource().getManDoc(id: "takenUsernames").usernames ?? []
         let currentusername = username.lowercased()
         for uname in usernames {
             if uname == currentusername {
@@ -405,7 +405,8 @@ struct SignUpPage5: View {
     @EnvironmentObject var sessionManager: SessionManager
     @State private var email: String = ""
     @State private var readyToProceed = false
-    
+    @State private var emailIsTaken = false
+
     var firstName: String
     var lastName: String
     var username: String
@@ -444,7 +445,10 @@ struct SignUpPage5: View {
                     .frame(width: 350, height: 50, alignment: .center)
                     .multilineTextAlignment(.center)
                 
-                
+                Text("Email is invalid or is already taken")
+                    .font(.system(size: 30, weight: .semibold))
+                    .foregroundColor(.red)
+                    .isHidden(!emailIsTaken)
                 
                 TextField("Enter email", text: $email)
                     .multilineTextAlignment(.center)
@@ -461,14 +465,7 @@ struct SignUpPage5: View {
                     .frame(height: 20)
                 
                 Button(action: {
-                    if email != "" {
-                        if isValidEmail(email) {
-                            let emails = UserDataSource().getAllEmails()
-                            if emails.contains(email) == false {
-                                readyToProceed = true
-                            }
-                        }
-                    }
+                    isValidEmail()
                 }) {
                     Text("Next")
                         .font(.title)
@@ -493,11 +490,22 @@ struct SignUpPage5: View {
             
         }
     }
-    private func isValidEmail(_ email: String) -> Bool {
+    private func isValidEmail() {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailPred.evaluate(with: email)
+        if emailPred.evaluate(with: email) == false {
+            return
+        }
+        
+        let emails = ManDocDataSource().getManDoc(id: "takenEmails").emails ?? []
+        for foo in emails {
+            if foo == email {
+                emailIsTaken = true
+                return
+            }
+        }
+        readyToProceed = true
     }
 }
 
@@ -1444,7 +1452,13 @@ struct SignUpQuestionPage3: View {
                     
                     
                     print("Part 6")
-
+                    let docDS = ManDocDataSource()
+                    var emailDoc = docDS.getManDoc(id: "takenEmails")
+                    var usernameDoc = docDS.getManDoc(id: "takenUsernames")
+                    emailDoc.emails?.append(email)
+                    usernameDoc.usernames?.append(username)
+                    docDS.updateDoc(doc: emailDoc)
+                    docDS.updateDoc(doc: usernameDoc)
                                         
                 }) {
                     Text("Submit")

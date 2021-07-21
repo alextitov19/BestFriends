@@ -89,35 +89,6 @@ struct UserDataSource {
         return finaluser
     }
     
-    func getAllUsernames() -> [String] {
-        var usernames: [String] = []
-        
-        let group = DispatchGroup()
-        group.enter()
-        
-        Amplify.API.query(request: .paginatedList(User.self)) { event in
-            switch event {
-            case .success(let result):
-                switch result {
-                case .success(let users):
-                    print("Successfully retrieved list of users: \(users)")
-                    for user in users {
-                        usernames.append(user.id)
-                    }
-                    group.leave()
-                case .failure(let error):
-                    print("Got failed result with \(error.errorDescription)")
-                }
-            case .failure(let error):
-                print("Got failed event with error \(error)")
-            }
-        }
-        
-        group.wait()
-        
-        return usernames
-    }
-    
     func updateUser(user: User) {
         let group = DispatchGroup()
         group.enter()
@@ -169,35 +140,6 @@ struct UserDataSource {
         var user = getCurrentUser()
         user.isOnline = isOnline
         updateUser(user: user)
-    }
-    
-    func getAllEmails() -> [String] {
-        var emails: [String] = []
-        
-        let group = DispatchGroup()
-        group.enter()
-        
-        Amplify.API.query(request: .paginatedList(User.self)) { event in
-            switch event {
-            case .success(let result):
-                switch result {
-                case .success(let users):
-                    print("Successfully retrieved list of users: \(users)")
-                    for user in users {
-                        emails.append(user.email)
-                    }
-                    group.leave()
-                case .failure(let error):
-                    print("Got failed result with \(error.errorDescription)")
-                }
-            case .failure(let error):
-                print("Got failed event with error \(error)")
-            }
-        }
-        
-        group.wait()
-        
-        return emails
     }
     
     func getUsernameByEmail(email: String) -> String {

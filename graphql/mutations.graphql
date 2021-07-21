@@ -420,6 +420,9 @@ mutation CreateManagementDocument(
   createManagementDocument(input: $input, condition: $condition) {
     id
     documents
+    emails
+    usernames
+    prices
     createdAt
     updatedAt
   }
@@ -431,6 +434,9 @@ mutation UpdateManagementDocument(
   updateManagementDocument(input: $input, condition: $condition) {
     id
     documents
+    emails
+    usernames
+    prices
     createdAt
     updatedAt
   }
@@ -442,6 +448,9 @@ mutation DeleteManagementDocument(
   deleteManagementDocument(input: $input, condition: $condition) {
     id
     documents
+    emails
+    usernames
+    prices
     createdAt
     updatedAt
   }

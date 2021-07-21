@@ -90,4 +90,7 @@ type Advertisement @model {
 type ManagementDocument @model {
   id: ID!
   documents: [String]
+  emails: [String]
+  usernames: [String]
+  prices: [Int]
 }

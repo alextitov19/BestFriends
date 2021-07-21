@@ -372,6 +372,9 @@ subscription OnCreateManagementDocument {
   onCreateManagementDocument {
     id
     documents
+    emails
+    usernames
+    prices
     createdAt
     updatedAt
   }
@@ -380,6 +383,9 @@ subscription OnUpdateManagementDocument {
   onUpdateManagementDocument {
     id
     documents
+    emails
+    usernames
+    prices
     createdAt
     updatedAt
   }
@@ -388,6 +394,9 @@ subscription OnDeleteManagementDocument {
   onDeleteManagementDocument {
     id
     documents
+    emails
+    usernames
+    prices
     createdAt
     updatedAt
   }

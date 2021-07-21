@@ -7,6 +7,9 @@ extension ManagementDocument {
    public enum CodingKeys: String, ModelKey {
     case id
     case documents
+    case emails
+    case usernames
+    case prices
   }
   
   public static let keys = CodingKeys.self
@@ -19,7 +22,10 @@ extension ManagementDocument {
     
     model.fields(
       .id(),
-      .field(managementDocument.documents, is: .optional, ofType: .embeddedCollection(of: String.self))
+      .field(managementDocument.documents, is: .optional, ofType: .embeddedCollection(of: String.self)),
+      .field(managementDocument.emails, is: .optional, ofType: .embeddedCollection(of: String.self)),
+      .field(managementDocument.usernames, is: .optional, ofType: .embeddedCollection(of: String.self)),
+      .field(managementDocument.prices, is: .optional, ofType: .embeddedCollection(of: Int.self))
     )
     }
 }

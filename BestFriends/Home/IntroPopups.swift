@@ -8,11 +8,58 @@
 import SwiftUI
 
 struct IntroPopups: View {
+    @State var firstHidden = false
+    @State var secondHidden = false
     
     var body: some View {
         VStack {
+            Button(action: {
+                firstHidden = true
+                update()
+            }) {
+                VStack {
+                    Text("Tap stars then \"Invite\" to invite your friends to chat")
+                        .frame(width: 300, height: 75)
+                        .font(.system(size: 20, weight: .medium))
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
+                        )
+                    }
+            }
+            .background(Color(#colorLiteral(red: 0.6159420609, green: 0.2348094881, blue: 1, alpha: 0.01)))
+            .cornerRadius(30)
+            .isHidden(firstHidden)
             
-            Text("Swipe across the bottom of the screen to see the icons")
+            Button(action: {
+                secondHidden = true
+                update()
+            }) {
+                VStack {
+                    Text("Swipe left across the bottom of this page to see the icons")
+                        .frame(width: 300, height: 75)
+                        .font(.system(size: 20, weight: .medium))
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 25)
+                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
+                        )
+                    }
+            }
+            .background(Color(#colorLiteral(red: 0.6159420609, green: 0.2348094881, blue: 1, alpha: 0.01)))
+            .offset(y: 200)
+            .isHidden(secondHidden)
+        }
+    }
+    
+    private func update() {
+        if firstHidden && secondHidden {
+            var user = UserDataSource().getCurrentUser()
+            user.needIntro = false
+            UserDataSource().updateUser(user: user)
         }
     }
 }

@@ -2319,8 +2319,8 @@ public struct DeleteAdvertisementInput: GraphQLMapConvertible {
 public struct CreateManagementDocumentInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, documents: [String?]? = nil) {
-    graphQLMap = ["id": id, "documents": documents]
+  public init(id: GraphQLID? = nil, documents: [String?]? = nil, emails: [String?]? = nil, usernames: [String?]? = nil, prices: [Int?]? = nil) {
+    graphQLMap = ["id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices]
   }
 
   public var id: GraphQLID? {
@@ -2340,13 +2340,40 @@ public struct CreateManagementDocumentInput: GraphQLMapConvertible {
       graphQLMap.updateValue(newValue, forKey: "documents")
     }
   }
+
+  public var emails: [String?]? {
+    get {
+      return graphQLMap["emails"] as! [String?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "emails")
+    }
+  }
+
+  public var usernames: [String?]? {
+    get {
+      return graphQLMap["usernames"] as! [String?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "usernames")
+    }
+  }
+
+  public var prices: [Int?]? {
+    get {
+      return graphQLMap["prices"] as! [Int?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "prices")
+    }
+  }
 }
 
 public struct ModelManagementDocumentConditionInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(documents: ModelStringInput? = nil, and: [ModelManagementDocumentConditionInput?]? = nil, or: [ModelManagementDocumentConditionInput?]? = nil, not: ModelManagementDocumentConditionInput? = nil) {
-    graphQLMap = ["documents": documents, "and": and, "or": or, "not": not]
+  public init(documents: ModelStringInput? = nil, emails: ModelStringInput? = nil, usernames: ModelStringInput? = nil, prices: ModelIntInput? = nil, and: [ModelManagementDocumentConditionInput?]? = nil, or: [ModelManagementDocumentConditionInput?]? = nil, not: ModelManagementDocumentConditionInput? = nil) {
+    graphQLMap = ["documents": documents, "emails": emails, "usernames": usernames, "prices": prices, "and": and, "or": or, "not": not]
   }
 
   public var documents: ModelStringInput? {
@@ -2355,6 +2382,33 @@ public struct ModelManagementDocumentConditionInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "documents")
+    }
+  }
+
+  public var emails: ModelStringInput? {
+    get {
+      return graphQLMap["emails"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "emails")
+    }
+  }
+
+  public var usernames: ModelStringInput? {
+    get {
+      return graphQLMap["usernames"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "usernames")
+    }
+  }
+
+  public var prices: ModelIntInput? {
+    get {
+      return graphQLMap["prices"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "prices")
     }
   }
 
@@ -2389,8 +2443,8 @@ public struct ModelManagementDocumentConditionInput: GraphQLMapConvertible {
 public struct UpdateManagementDocumentInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, documents: [String?]? = nil) {
-    graphQLMap = ["id": id, "documents": documents]
+  public init(id: GraphQLID, documents: [String?]? = nil, emails: [String?]? = nil, usernames: [String?]? = nil, prices: [Int?]? = nil) {
+    graphQLMap = ["id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices]
   }
 
   public var id: GraphQLID {
@@ -2408,6 +2462,33 @@ public struct UpdateManagementDocumentInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "documents")
+    }
+  }
+
+  public var emails: [String?]? {
+    get {
+      return graphQLMap["emails"] as! [String?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "emails")
+    }
+  }
+
+  public var usernames: [String?]? {
+    get {
+      return graphQLMap["usernames"] as! [String?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "usernames")
+    }
+  }
+
+  public var prices: [Int?]? {
+    get {
+      return graphQLMap["prices"] as! [Int?]?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "prices")
     }
   }
 }
@@ -3164,8 +3245,8 @@ public struct ModelAdvertisementFilterInput: GraphQLMapConvertible {
 public struct ModelManagementDocumentFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: ModelIDInput? = nil, documents: ModelStringInput? = nil, and: [ModelManagementDocumentFilterInput?]? = nil, or: [ModelManagementDocumentFilterInput?]? = nil, not: ModelManagementDocumentFilterInput? = nil) {
-    graphQLMap = ["id": id, "documents": documents, "and": and, "or": or, "not": not]
+  public init(id: ModelIDInput? = nil, documents: ModelStringInput? = nil, emails: ModelStringInput? = nil, usernames: ModelStringInput? = nil, prices: ModelIntInput? = nil, and: [ModelManagementDocumentFilterInput?]? = nil, or: [ModelManagementDocumentFilterInput?]? = nil, not: ModelManagementDocumentFilterInput? = nil) {
+    graphQLMap = ["id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices, "and": and, "or": or, "not": not]
   }
 
   public var id: ModelIDInput? {
@@ -3183,6 +3264,33 @@ public struct ModelManagementDocumentFilterInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "documents")
+    }
+  }
+
+  public var emails: ModelStringInput? {
+    get {
+      return graphQLMap["emails"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "emails")
+    }
+  }
+
+  public var usernames: ModelStringInput? {
+    get {
+      return graphQLMap["usernames"] as! ModelStringInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "usernames")
+    }
+  }
+
+  public var prices: ModelIntInput? {
+    get {
+      return graphQLMap["prices"] as! ModelIntInput?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "prices")
     }
   }
 
@@ -7677,7 +7785,7 @@ public final class DeleteAdvertisementMutation: GraphQLMutation {
 
 public final class CreateManagementDocumentMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateManagementDocument($input: CreateManagementDocumentInput!, $condition: ModelManagementDocumentConditionInput) {\n  createManagementDocument(input: $input, condition: $condition) {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateManagementDocument($input: CreateManagementDocumentInput!, $condition: ModelManagementDocumentConditionInput) {\n  createManagementDocument(input: $input, condition: $condition) {\n    __typename\n    id\n    documents\n    emails\n    usernames\n    prices\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateManagementDocumentInput
   public var condition: ModelManagementDocumentConditionInput?
@@ -7724,6 +7832,9 @@ public final class CreateManagementDocumentMutation: GraphQLMutation {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("emails", type: .list(.scalar(String.self))),
+        GraphQLField("usernames", type: .list(.scalar(String.self))),
+        GraphQLField("prices", type: .list(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -7734,8 +7845,8 @@ public final class CreateManagementDocumentMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, documents: [String?]? = nil, emails: [String?]? = nil, usernames: [String?]? = nil, prices: [Int?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -7765,6 +7876,33 @@ public final class CreateManagementDocumentMutation: GraphQLMutation {
         }
       }
 
+      public var emails: [String?]? {
+        get {
+          return snapshot["emails"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "emails")
+        }
+      }
+
+      public var usernames: [String?]? {
+        get {
+          return snapshot["usernames"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "usernames")
+        }
+      }
+
+      public var prices: [Int?]? {
+        get {
+          return snapshot["prices"] as? [Int?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "prices")
+        }
+      }
+
       public var createdAt: String {
         get {
           return snapshot["createdAt"]! as! String
@@ -7788,7 +7926,7 @@ public final class CreateManagementDocumentMutation: GraphQLMutation {
 
 public final class UpdateManagementDocumentMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateManagementDocument($input: UpdateManagementDocumentInput!, $condition: ModelManagementDocumentConditionInput) {\n  updateManagementDocument(input: $input, condition: $condition) {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateManagementDocument($input: UpdateManagementDocumentInput!, $condition: ModelManagementDocumentConditionInput) {\n  updateManagementDocument(input: $input, condition: $condition) {\n    __typename\n    id\n    documents\n    emails\n    usernames\n    prices\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateManagementDocumentInput
   public var condition: ModelManagementDocumentConditionInput?
@@ -7835,6 +7973,9 @@ public final class UpdateManagementDocumentMutation: GraphQLMutation {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("emails", type: .list(.scalar(String.self))),
+        GraphQLField("usernames", type: .list(.scalar(String.self))),
+        GraphQLField("prices", type: .list(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -7845,8 +7986,8 @@ public final class UpdateManagementDocumentMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, documents: [String?]? = nil, emails: [String?]? = nil, usernames: [String?]? = nil, prices: [Int?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -7876,6 +8017,33 @@ public final class UpdateManagementDocumentMutation: GraphQLMutation {
         }
       }
 
+      public var emails: [String?]? {
+        get {
+          return snapshot["emails"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "emails")
+        }
+      }
+
+      public var usernames: [String?]? {
+        get {
+          return snapshot["usernames"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "usernames")
+        }
+      }
+
+      public var prices: [Int?]? {
+        get {
+          return snapshot["prices"] as? [Int?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "prices")
+        }
+      }
+
       public var createdAt: String {
         get {
           return snapshot["createdAt"]! as! String
@@ -7899,7 +8067,7 @@ public final class UpdateManagementDocumentMutation: GraphQLMutation {
 
 public final class DeleteManagementDocumentMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteManagementDocument($input: DeleteManagementDocumentInput!, $condition: ModelManagementDocumentConditionInput) {\n  deleteManagementDocument(input: $input, condition: $condition) {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteManagementDocument($input: DeleteManagementDocumentInput!, $condition: ModelManagementDocumentConditionInput) {\n  deleteManagementDocument(input: $input, condition: $condition) {\n    __typename\n    id\n    documents\n    emails\n    usernames\n    prices\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteManagementDocumentInput
   public var condition: ModelManagementDocumentConditionInput?
@@ -7946,6 +8114,9 @@ public final class DeleteManagementDocumentMutation: GraphQLMutation {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("emails", type: .list(.scalar(String.self))),
+        GraphQLField("usernames", type: .list(.scalar(String.self))),
+        GraphQLField("prices", type: .list(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -7956,8 +8127,8 @@ public final class DeleteManagementDocumentMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, documents: [String?]? = nil, emails: [String?]? = nil, usernames: [String?]? = nil, prices: [Int?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -7984,6 +8155,33 @@ public final class DeleteManagementDocumentMutation: GraphQLMutation {
         }
         set {
           snapshot.updateValue(newValue, forKey: "documents")
+        }
+      }
+
+      public var emails: [String?]? {
+        get {
+          return snapshot["emails"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "emails")
+        }
+      }
+
+      public var usernames: [String?]? {
+        get {
+          return snapshot["usernames"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "usernames")
+        }
+      }
+
+      public var prices: [Int?]? {
+        get {
+          return snapshot["prices"] as? [Int?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "prices")
         }
       }
 
@@ -11112,7 +11310,7 @@ public final class ListAdvertisementsQuery: GraphQLQuery {
 
 public final class GetManagementDocumentQuery: GraphQLQuery {
   public static let operationString =
-    "query GetManagementDocument($id: ID!) {\n  getManagementDocument(id: $id) {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetManagementDocument($id: ID!) {\n  getManagementDocument(id: $id) {\n    __typename\n    id\n    documents\n    emails\n    usernames\n    prices\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -11157,6 +11355,9 @@ public final class GetManagementDocumentQuery: GraphQLQuery {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("emails", type: .list(.scalar(String.self))),
+        GraphQLField("usernames", type: .list(.scalar(String.self))),
+        GraphQLField("prices", type: .list(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -11167,8 +11368,8 @@ public final class GetManagementDocumentQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, documents: [String?]? = nil, emails: [String?]? = nil, usernames: [String?]? = nil, prices: [Int?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -11198,6 +11399,33 @@ public final class GetManagementDocumentQuery: GraphQLQuery {
         }
       }
 
+      public var emails: [String?]? {
+        get {
+          return snapshot["emails"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "emails")
+        }
+      }
+
+      public var usernames: [String?]? {
+        get {
+          return snapshot["usernames"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "usernames")
+        }
+      }
+
+      public var prices: [Int?]? {
+        get {
+          return snapshot["prices"] as? [Int?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "prices")
+        }
+      }
+
       public var createdAt: String {
         get {
           return snapshot["createdAt"]! as! String
@@ -11221,7 +11449,7 @@ public final class GetManagementDocumentQuery: GraphQLQuery {
 
 public final class ListManagementDocumentsQuery: GraphQLQuery {
   public static let operationString =
-    "query ListManagementDocuments($filter: ModelManagementDocumentFilterInput, $limit: Int, $nextToken: String) {\n  listManagementDocuments(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      documents\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListManagementDocuments($filter: ModelManagementDocumentFilterInput, $limit: Int, $nextToken: String) {\n  listManagementDocuments(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      documents\n      emails\n      usernames\n      prices\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelManagementDocumentFilterInput?
   public var limit: Int?
@@ -11316,6 +11544,9 @@ public final class ListManagementDocumentsQuery: GraphQLQuery {
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
           GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
           GraphQLField("documents", type: .list(.scalar(String.self))),
+          GraphQLField("emails", type: .list(.scalar(String.self))),
+          GraphQLField("usernames", type: .list(.scalar(String.self))),
+          GraphQLField("prices", type: .list(.scalar(Int.self))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
           GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
         ]
@@ -11326,8 +11557,8 @@ public final class ListManagementDocumentsQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
-          self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+        public init(id: GraphQLID, documents: [String?]? = nil, emails: [String?]? = nil, usernames: [String?]? = nil, prices: [Int?]? = nil, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
         public var __typename: String {
@@ -11354,6 +11585,33 @@ public final class ListManagementDocumentsQuery: GraphQLQuery {
           }
           set {
             snapshot.updateValue(newValue, forKey: "documents")
+          }
+        }
+
+        public var emails: [String?]? {
+          get {
+            return snapshot["emails"] as? [String?]
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "emails")
+          }
+        }
+
+        public var usernames: [String?]? {
+          get {
+            return snapshot["usernames"] as? [String?]
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "usernames")
+          }
+        }
+
+        public var prices: [Int?]? {
+          get {
+            return snapshot["prices"] as? [Int?]
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "prices")
           }
         }
 
@@ -15707,7 +15965,7 @@ public final class OnDeleteAdvertisementSubscription: GraphQLSubscription {
 
 public final class OnCreateManagementDocumentSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateManagementDocument {\n  onCreateManagementDocument {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateManagementDocument {\n  onCreateManagementDocument {\n    __typename\n    id\n    documents\n    emails\n    usernames\n    prices\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -15745,6 +16003,9 @@ public final class OnCreateManagementDocumentSubscription: GraphQLSubscription {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("emails", type: .list(.scalar(String.self))),
+        GraphQLField("usernames", type: .list(.scalar(String.self))),
+        GraphQLField("prices", type: .list(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -15755,8 +16016,8 @@ public final class OnCreateManagementDocumentSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, documents: [String?]? = nil, emails: [String?]? = nil, usernames: [String?]? = nil, prices: [Int?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -15786,6 +16047,33 @@ public final class OnCreateManagementDocumentSubscription: GraphQLSubscription {
         }
       }
 
+      public var emails: [String?]? {
+        get {
+          return snapshot["emails"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "emails")
+        }
+      }
+
+      public var usernames: [String?]? {
+        get {
+          return snapshot["usernames"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "usernames")
+        }
+      }
+
+      public var prices: [Int?]? {
+        get {
+          return snapshot["prices"] as? [Int?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "prices")
+        }
+      }
+
       public var createdAt: String {
         get {
           return snapshot["createdAt"]! as! String
@@ -15809,7 +16097,7 @@ public final class OnCreateManagementDocumentSubscription: GraphQLSubscription {
 
 public final class OnUpdateManagementDocumentSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateManagementDocument {\n  onUpdateManagementDocument {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateManagementDocument {\n  onUpdateManagementDocument {\n    __typename\n    id\n    documents\n    emails\n    usernames\n    prices\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -15847,6 +16135,9 @@ public final class OnUpdateManagementDocumentSubscription: GraphQLSubscription {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("emails", type: .list(.scalar(String.self))),
+        GraphQLField("usernames", type: .list(.scalar(String.self))),
+        GraphQLField("prices", type: .list(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -15857,8 +16148,8 @@ public final class OnUpdateManagementDocumentSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, documents: [String?]? = nil, emails: [String?]? = nil, usernames: [String?]? = nil, prices: [Int?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -15888,6 +16179,33 @@ public final class OnUpdateManagementDocumentSubscription: GraphQLSubscription {
         }
       }
 
+      public var emails: [String?]? {
+        get {
+          return snapshot["emails"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "emails")
+        }
+      }
+
+      public var usernames: [String?]? {
+        get {
+          return snapshot["usernames"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "usernames")
+        }
+      }
+
+      public var prices: [Int?]? {
+        get {
+          return snapshot["prices"] as? [Int?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "prices")
+        }
+      }
+
       public var createdAt: String {
         get {
           return snapshot["createdAt"]! as! String
@@ -15911,7 +16229,7 @@ public final class OnUpdateManagementDocumentSubscription: GraphQLSubscription {
 
 public final class OnDeleteManagementDocumentSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteManagementDocument {\n  onDeleteManagementDocument {\n    __typename\n    id\n    documents\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteManagementDocument {\n  onDeleteManagementDocument {\n    __typename\n    id\n    documents\n    emails\n    usernames\n    prices\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -15949,6 +16267,9 @@ public final class OnDeleteManagementDocumentSubscription: GraphQLSubscription {
         GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
         GraphQLField("id", type: .nonNull(.scalar(GraphQLID.self))),
         GraphQLField("documents", type: .list(.scalar(String.self))),
+        GraphQLField("emails", type: .list(.scalar(String.self))),
+        GraphQLField("usernames", type: .list(.scalar(String.self))),
+        GraphQLField("prices", type: .list(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -15959,8 +16280,8 @@ public final class OnDeleteManagementDocumentSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, documents: [String?]? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, documents: [String?]? = nil, emails: [String?]? = nil, usernames: [String?]? = nil, prices: [Int?]? = nil, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "ManagementDocument", "id": id, "documents": documents, "emails": emails, "usernames": usernames, "prices": prices, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -15987,6 +16308,33 @@ public final class OnDeleteManagementDocumentSubscription: GraphQLSubscription {
         }
         set {
           snapshot.updateValue(newValue, forKey: "documents")
+        }
+      }
+
+      public var emails: [String?]? {
+        get {
+          return snapshot["emails"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "emails")
+        }
+      }
+
+      public var usernames: [String?]? {
+        get {
+          return snapshot["usernames"] as? [String?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "usernames")
+        }
+      }
+
+      public var prices: [Int?]? {
+        get {
+          return snapshot["prices"] as? [Int?]
+        }
+        set {
+          snapshot.updateValue(newValue, forKey: "prices")
         }
       }
 
