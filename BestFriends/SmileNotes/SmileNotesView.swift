@@ -28,6 +28,23 @@ struct SmileNotesView: View {
             
             VStack {
                 // MARK: Header
+               
+                Text("SmileVault")
+                    .font(.system(size: 40))
+                    .fontWeight(.regular)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 400, height: 50, alignment: .center)
+                
+                Text("Stop Scrolling. Longtap Chat messages that make you Smile")
+                    .italic()
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 400, height: 75, alignment: .center)
+                
+                
                 HStack {
                     Text(selectedFriendName)
                         .font(.title).bold()
