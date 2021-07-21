@@ -219,6 +219,7 @@ subscription OnCreateUser {
     notificationsLP
     chatFontSize
     pendingNotifications
+    needIntro
     createdAt
     updatedAt
   }
@@ -266,6 +267,7 @@ subscription OnUpdateUser {
     notificationsLP
     chatFontSize
     pendingNotifications
+    needIntro
     createdAt
     updatedAt
   }
@@ -313,6 +315,7 @@ subscription OnDeleteUser {
     notificationsLP
     chatFontSize
     pendingNotifications
+    needIntro
     createdAt
     updatedAt
   }

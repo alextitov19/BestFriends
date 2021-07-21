@@ -249,6 +249,7 @@ mutation CreateUser(
     notificationsLP
     chatFontSize
     pendingNotifications
+    needIntro
     createdAt
     updatedAt
   }
@@ -299,6 +300,7 @@ mutation UpdateUser(
     notificationsLP
     chatFontSize
     pendingNotifications
+    needIntro
     createdAt
     updatedAt
   }
@@ -349,6 +351,7 @@ mutation DeleteUser(
     notificationsLP
     chatFontSize
     pendingNotifications
+    needIntro
     createdAt
     updatedAt
   }

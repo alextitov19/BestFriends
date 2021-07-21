@@ -1419,7 +1419,8 @@ struct SignUpQuestionPage3: View {
                         background: 1,
                         notificationsBM: true,
                         notificationsLP: true,
-                        chatFontSize: 16)
+                        chatFontSize: 16,
+                        needIntro: true)
                     print("Part 2")
 
                     print("This user: ", user)

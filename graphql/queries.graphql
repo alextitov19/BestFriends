@@ -181,6 +181,7 @@ query GetUser($id: ID!) {
     notificationsLP
     chatFontSize
     pendingNotifications
+    needIntro
     createdAt
     updatedAt
   }
@@ -224,6 +225,7 @@ query ListUsers(
       notificationsLP
       chatFontSize
       pendingNotifications
+      needIntro
       createdAt
       updatedAt
     }

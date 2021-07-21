@@ -31,6 +31,7 @@ extension User {
     case notificationsLP
     case chatFontSize
     case pendingNotifications
+    case needIntro
   }
   
   public static let keys = CodingKeys.self
@@ -67,7 +68,8 @@ extension User {
       .field(user.notificationsBM, is: .required, ofType: .bool),
       .field(user.notificationsLP, is: .required, ofType: .bool),
       .field(user.chatFontSize, is: .required, ofType: .int),
-      .field(user.pendingNotifications, is: .optional, ofType: .embeddedCollection(of: String.self))
+      .field(user.pendingNotifications, is: .optional, ofType: .embeddedCollection(of: String.self)),
+      .field(user.needIntro, is: .required, ofType: .bool)
     )
     }
 }

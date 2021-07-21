@@ -11,7 +11,7 @@ import Amplify
 struct UserDataSource {
         
     func getUser(id: String) -> User {
-        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: [1], deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, notificationsBM: true, notificationsLP: true, chatFontSize: 16)
+        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: [1], deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, notificationsBM: true, notificationsLP: true, chatFontSize: 16, needIntro: false)
         
         let group = DispatchGroup()
         group.enter()
@@ -48,7 +48,7 @@ struct UserDataSource {
     }
     
     func getCurrentUser() -> User {
-        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: [1], deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, notificationsBM: true, notificationsLP: true, chatFontSize: 16)
+        var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: [1], deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, notificationsBM: true, notificationsLP: true, chatFontSize: 16, needIntro: false)
         
         guard let id = Amplify.Auth.getCurrentUser()?.username else {
 //            SessionManager().showLogin()
