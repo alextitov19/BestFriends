@@ -145,7 +145,7 @@ struct HomeView: View {
                                 .cancel()
                             ])
                         }
-                        .padding(25)
+                        .padding(8)
                         
                         Image("chat icon")
                             .resizable()
@@ -166,10 +166,27 @@ struct HomeView: View {
                             .onTapGesture {
                                 sessionManager.showSmileNotes()
                             }
-                            .padding(10)
+                            .padding(8)
                             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                                 ImagePicker(image: self.$inputImage)
                             }
+                        
+                      
+                        Image("whitePhone")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showSmileNotes()
+                            }
+                            .padding(8)
+                            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                                ImagePicker(image: self.$inputImage)
+                            }
+                        
+                        
+                        
+                        
                         
                         Image("settings icon")
                             .resizable()
