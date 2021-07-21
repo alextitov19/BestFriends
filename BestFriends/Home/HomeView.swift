@@ -30,6 +30,7 @@ struct HomeView: View {
     @State private var isThreeDotsPresented = false
     @State private var showingAddFriendInstructions = false
     @State private var notificationsShowing = false
+    @State private var loadingShowing = false
     
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
     //    @State private var inviteMode = false
@@ -73,6 +74,8 @@ struct HomeView: View {
                 }
             }
         }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4) { inviteClicked() }
     }
     
     //    let user: AuthUser
@@ -121,20 +124,18 @@ struct HomeView: View {
                 ForEach(stars.indices, id: \.self) { index in
                     Button(action: {
                         print("tap")
-                        if invitingFriends {
                             if membersOfNewRoom.contains(stars[index].id) {
                                 membersOfNewRoom.remove(at: membersOfNewRoom.firstIndex(of: stars[index].id)!)
-                                stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
+                                stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
                                 print("Color change 1")
                                 stars[index].isSpinning = false
                             } else {
                                 membersOfNewRoom.append(stars[index].id)
-                                stars[index].image = Image(uiImage: UIImage(named: "starGreen")!)
+                                stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
                                 print("Color change 2")
                                 stars[index].isSpinning = true
                             }
                             
-                        }
                     }) {
                         stars[index]
                     }
@@ -207,16 +208,22 @@ struct HomeView: View {
                 .offset(y: 35)
             }
             
-            if invitingFriends == true {
+            if membersOfNewRoom.count > 0 {
                 Button(action: {
-                    withAnimation {
-                        invitingFriends = false
+                    if membersOfNewRoom != [] {
+                        withAnimation {
+                            loadingShowing = true
+                        }
+                    } else {
+                        withAnimation {
+                            invitingFriends = false
+                        }
+                        for index in 0..<stars.count {
+                            stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
+                            stars[index].hidingName = true
+                        }
                     }
-                    for index in 0..<stars.count {
-                        stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
-                        stars[index].hidingName = true
-                    }
-                    inviteSelectedFriends()
+                    
                 }) {
                     Text("Invite")
                         .frame(width: 150, height: 40, alignment: .center)
@@ -232,13 +239,44 @@ struct HomeView: View {
                 .transition(.scale)
             }
             
+            if loadingShowing == true {
+                ZStack {
+                    Image("Firstname")
+                        .resizable()
+                        .ignoresSafeArea()
+                        .scaledToFill()
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                    invitingFriends = false
+                                for index in 0..<stars.count {
+                                    stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
+                                    stars[index].hidingName = true
+                                }
+                                inviteSelectedFriends()
+                            }
+                        }
+                    
+                    Text("Loading...")
+                        .frame(width: 200, height: 40, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 30, weight: .ultraLight))
+                        .cornerRadius(25)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 75)
+                                .stroke(Color.white, lineWidth: 1)
+                        )
+                        .offset(y: 100)
+
+                }
+            }
+            
             VStack {
                 if USS.user.pendingNotifications != nil && notificationsShowing == true {
                     ForEach(USS.user.pendingNotifications!.reversed(), id: \.self) { foo in
-                            Text(foo)
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                .font(.system(size: 17, weight: .regular))
-                                .padding()
+                        Text(foo)
+                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .font(.system(size: 17, weight: .regular))
+                            .padding()
                     }
                 }
             }
@@ -358,7 +396,6 @@ struct HomeView: View {
             invitingFriends = true
         }
         for index in 0..<stars.count {
-            stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
             stars[index].hidingName = false
         }
     }
