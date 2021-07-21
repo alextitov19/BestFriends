@@ -36,10 +36,10 @@ struct ShakingCoolView: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-                Text("Add 1st image seen by all friends. Add 2 more for you. Then Shake and Smile.")
-                    .frame(width: 400, height: 100, alignment: .center)
+                Text("Add images 1 & 2 for yourself.\nAdd a 3rd  for your friends to see.")
+                    .frame(width: 300, height: 75, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 25, weight: .thin))
+                    .font(.system(size: 20, weight: .thin))
                     .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                 
                 
