@@ -145,7 +145,7 @@ struct HomeView: View {
                                 .cancel()
                             ])
                         }
-                        .padding(8)
+                        .padding(6)
                         
                         Image("chat icon")
                             .resizable()
@@ -182,6 +182,8 @@ struct HomeView: View {
                             .padding(8)
                             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                                 ImagePicker(image: self.$inputImage)
+                           
+//                                    .padding(5)
                             }
                         
                         
