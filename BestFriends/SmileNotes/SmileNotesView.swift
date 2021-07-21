@@ -36,13 +36,17 @@ struct SmileNotesView: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 50, alignment: .center)
                 
-                Text("Stop Scrolling. Longtap Chat messages that make you Smile")
+                Text("Stop Scrolling. Longtap Chat messages that make you Smile.")
                     .italic()
                     .font(.system(size: 25))
                     .fontWeight(.regular)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 75, alignment: .center)
+                    .frame(width: 375, height: 75, alignment: .center)
+                   
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                
                 
                 
                 HStack {
