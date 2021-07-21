@@ -179,7 +179,7 @@ struct InfoViewPage2: View {
                         .frame(height: 20)
                     
                     NavigationLink(destination: InfoViewPage3(username: username, password: password).environmentObject(sessionManager)) {
-                        Text("That's cool")
+                        Text("Let's get started")
                             .font(.title)
                             .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                             .frame(width: 250, height: 50)

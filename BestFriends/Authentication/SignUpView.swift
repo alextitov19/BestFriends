@@ -1243,10 +1243,10 @@ struct SignUpQuestionPage2: View {
                 VStack {
                     
                 
-                    Text("Instead of following you around,")
-                        .font(.system(size: 50))
+                    Text("We do not use cookies to follow your every move on your phone and laptop outside of BestFriends. Instead")
+                        .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .frame(width: 300, height: 200)
+                        .frame(width: 300, height: 400)
                         .multilineTextAlignment(.center)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
@@ -1256,14 +1256,24 @@ struct SignUpQuestionPage2: View {
                         .frame(height: 30)
                   
                        
-                
+                    Text("Instead ...")
+                        .font(.system(size: 50))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .frame(width: 300, height: 50)
+                        .multilineTextAlignment(.center)
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                      
+                    Spacer()
+                        .frame(height: 30)
                     
-                    Image("NoCookie")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                        .scaledToFill()
-                        .padding(20)
-                    
+//                    Image("NoCookie")
+//                        .resizable()
+//                        .frame(width: 200, height: 200)
+//                        .scaledToFill()
+//                        .padding(20)
+//
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
                         
