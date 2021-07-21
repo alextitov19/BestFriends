@@ -595,7 +595,6 @@
 		CBED23C5A85DD4F2C28F661E /* ManagementDocument+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED45F58B91ABE1BBD1CB1D2 /* ManagementDocument+Schema.swift */; };
 		CD4C6B0426C3F5FA51400B0B /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5F0D769FDC2A7AA84971E /* Advertisement+Schema.swift */; };
 		CEFD49FCC463CB40AFF7AF6A /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5F0D769FDC2A7AA84971E /* Advertisement+Schema.swift */; };
-		CF05A8A726A664A8009618E6 /* DeleteAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF05A8A626A664A8009618E6 /* DeleteAccount.swift */; };
 		CF1E6AE5269A00DB00B8F985 /* PreAddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */; };
 		CF1E6AE7269A0D2000B8F985 /* BlueModeConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */; };
 		CF2AFB216FD5D418D2277A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
@@ -876,7 +875,6 @@
 		C135A723BCB0654447D27EFC /* InvitedRoom+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "InvitedRoom+Schema.swift"; path = "amplify/generated/models/InvitedRoom+Schema.swift"; sourceTree = "<group>"; };
 		C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
-		CF05A8A626A664A8009618E6 /* DeleteAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAccount.swift; sourceTree = "<group>"; };
 		CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreAddFriends.swift; sourceTree = "<group>"; };
 		CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeConditions.swift; sourceTree = "<group>"; };
 		CF30FF92267E955A000B2730 /* SmileNotesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesCard.swift; sourceTree = "<group>"; };
@@ -1308,7 +1306,6 @@
 				D15CCD682647458900BFE179 /* ResetPassword.swift */,
 				D1577796264CBBAD00B6551A /* ChangeEmail.swift */,
 				D1E3CFE226543C4D00A26779 /* ChangePin.swift */,
-				CF05A8A626A664A8009618E6 /* DeleteAccount.swift */,
 				CF436A31265B40DD00B69506 /* NotificationsOnOffPage.swift */,
 				7A4E32FE26A0CABC00202BB7 /* ChangeAdPreference.swift */,
 				D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */,
@@ -2045,7 +2042,6 @@
 				3C3E11746F78B0ABBA87E5C3 /* Message+Schema.swift in Sources */,
 				1F4886C8AD2BDA0285F6BC57 /* Message.swift in Sources */,
 				44C736280CFD71EA3D4DECC9 /* ReportedMessage.swift in Sources */,
-				CF05A8A726A664A8009618E6 /* DeleteAccount.swift in Sources */,
 				11FE665E0ECE4515E5CC4672 /* Room+Schema.swift in Sources */,
 				206985DD2B99228C98C76873 /* Room.swift in Sources */,
 				7CDBC2A7467B853342848185 /* SmileNote+Schema.swift in Sources */,
