@@ -320,7 +320,7 @@ struct ForgotUsername: View {
     
     var body: some View {
         ZStack {
-            Image("blueGradient1")
+            Image("purpleBackground")
                 .ignoresSafeArea()
             
             VStack {
