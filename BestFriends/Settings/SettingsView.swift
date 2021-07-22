@@ -101,7 +101,7 @@ struct SettingsView: View {
                             
                         }
                         
-                        Text("Walk-throughs")
+                        Text("BlueMode Features")
                             .font(.system(size: 32))
                             .fontWeight(.ultraLight)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -111,7 +111,7 @@ struct SettingsView: View {
                         NavigationLink(
                             destination: SettingsInfoViewPage1().environmentObject(sessionManager),
                             label: {
-                                Text("BestFriends")
+                                Text("BestFriends Walk-through")
                             })
                             .frame(width: 225, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -119,22 +119,22 @@ struct SettingsView: View {
                             .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                        Spacer().frame(height: 20)
-                        
-                        
-                        NavigationLink(
-                            destination: BlueModePage1(),
-                            label: {
-                                Text("BlueMode")
-                            })
-                            .frame(width: 225, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 17))
-                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                            .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
+//
+//                        Spacer().frame(height: 20)
+//
+//
+//                        NavigationLink(
+//                            destination: BlueModePage1(),
+//                            label: {
+//                                Text("BlueMode")
+//                            })
+//                            .frame(width: 225, height: 50)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 17))
+//                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+//                            .cornerRadius(25)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
                         VStack {
                             
                             Spacer().frame(height: 20)
@@ -142,7 +142,7 @@ struct SettingsView: View {
                             NavigationLink(
                                 destination: ShakingCoolView(),
                                 label: {
-                                    Text("ShakingCool")
+                                    Text("Setup ShakingCool")
                                 })
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
