@@ -899,7 +899,6 @@
 		C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		C682BDDEBCC8842EA9E1C161 /* ShakingCool+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "ShakingCool+Schema.swift"; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
-		CF05A8A926A93D08009618E6 /* BestFriendsAd1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = BestFriendsAd1.m4v; path = ../../../../../../../Desktop/BestFriendsAd1.m4v; sourceTree = "<group>"; };
 		CF05A8B326A9CBA3009618E6 /* rainForest.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rainForest.mp4; sourceTree = "<group>"; };
 		CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueRoad.mp4; sourceTree = "<group>"; };
 		CF05A8B626A9CBAF009618E6 /* doubleGreen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = doubleGreen.mp4; sourceTree = "<group>"; };
@@ -1279,7 +1278,6 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
-				CF05A8A926A93D08009618E6 /* BestFriendsAd1.m4v */,
 				7ACEDEB62683FCE600102E70 /* EnrichHER.mp4 */,
 				7ACEDEB82683FCED00102E70 /* SplashScreen1.mp4 */,
 				7A4B9B5C266FD00900EAF3B9 /* Social Impact */,

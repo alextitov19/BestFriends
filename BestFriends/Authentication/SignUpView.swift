@@ -422,34 +422,21 @@ struct SignUpPage5: View {
             
             
             VStack {
-                Spacer()
-                    .frame(height: 100)
-                
-                
-                Text("Just in case")
-                    .font(.system(size: 50))
-                    .foregroundColor(.white)
-                    .frame(width: 350, height: 150, alignment: .center)
-                    .multilineTextAlignment(.center)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                
-                Spacer()
-                    .frame(height: 340)
-                
-                
-                Text("you forget your password.")
+                Text("Just in case\nyou forget your password.")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
-                    .frame(width: 350, height: 50, alignment: .center)
                     .multilineTextAlignment(.center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
+                Spacer()
+                    .frame(height: 400)
+                
+                if emailIsTaken {
                 Text("Email is invalid or is already taken")
                     .font(.system(size: 30, weight: .semibold))
                     .foregroundColor(.red)
-                    .isHidden(!emailIsTaken)
-                
+                }
                 TextField("Enter email", text: $email)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -477,11 +464,6 @@ struct SignUpPage5: View {
                 }
                 
                 NavigationLink("", destination: SignUpPage6(firstName: firstName, lastName: lastName, username: username, password: password, email: email).environmentObject(sessionManager), isActive: $readyToProceed)
-                
-                
-                Spacer()
-                    .frame(height: 155)
-                
                 
                 
                 
@@ -1050,22 +1032,17 @@ struct SignUpPage9: View {
     
     var body: some View {
         ZStack{
-            
-            
             Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
-                
-                
                 Text("Tough day, looking for your smile?")
                     .font(.system(size: 50))
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 400, height: 200)
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
@@ -1079,7 +1056,7 @@ struct SignUpPage9: View {
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 400, height: 40)
+                    .frame(width: 400)
                     .multilineTextAlignment(.center)
                 
 //
@@ -1095,11 +1072,13 @@ struct SignUpPage9: View {
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 200, height: 150)
+                    .frame(width: 200)
                     .multilineTextAlignment(.center)
                 
-                Spacer()
-                    .frame(height: 50)
+                AdPlayerView(name: "ShakingCoolVideo")
+                    .frame(width: 200, height: 250)
+                    .scaledToFill()
+                    .blendMode(.screen)
                 
                 Text("TWO, Check your SmileVault for your saved smiles.")
                     .italic()
@@ -1107,22 +1086,11 @@ struct SignUpPage9: View {
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 200, height: 150)
+                    .frame(width: 200)
                     .multilineTextAlignment(.center)
-                
+                    .padding()
                 
                 VStack {
-                    
-                
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    
                     NavigationLink("", destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: locationString ?? "N/A").environmentObject(sessionManager), isActive: $readyToProceed)
                     
                     Button(action: {
@@ -1158,9 +1126,6 @@ struct SignUpPage9: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     }
                     
-                    
-                    Spacer()
-                        .frame(height: 100)
                 }
             }
         }

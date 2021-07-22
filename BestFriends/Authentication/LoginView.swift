@@ -25,17 +25,10 @@ struct LoginView: View {
                     .scaledToFill()
                 
                 VStack {
-                    
-                    //                    Text("BestFriends")
-                    //                        .font(.system(size: 40))
-                    //                        .foregroundColor(.white)
-                    //                        .frame(width: 225, height: 50)
-                    //                        .multilineTextAlignment(.center)
-                    //
                     Spacer()
                         .frame(height: 50)
                     
-                    Image("BestFriends")
+                    Image("FatGuy")
                         .resizable()
                         .frame(width: 150, height: 150)
                         .scaledToFill()
@@ -172,7 +165,7 @@ struct ForgotPassword: View {
         NavigationView {
             ZStack {
                 
-                Image("purpleBackground")
+                Image("SignUpPinBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
@@ -239,7 +232,7 @@ struct ConfirmNewPassword: View {
         NavigationView {
             ZStack {
                 
-                Image("purpleBackground")
+                Image("SignUpPinBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
@@ -320,8 +313,10 @@ struct ForgotUsername: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("SignUpPinBackground")
+                .resizable()
                 .ignoresSafeArea()
+                .scaledToFill()
             
             VStack {
                 Text("Forgot Username")
