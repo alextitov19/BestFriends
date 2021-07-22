@@ -462,7 +462,7 @@ struct SignUpPage5: View {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 5)
                 
                 Button(action: {
                     isValidEmail()
@@ -1060,7 +1060,7 @@ struct SignUpPage9: View {
             VStack {
                 
                 
-                Text("Tough day - looking for a smile?")
+                Text("Tough day, looking for a smile?")
                     .font(.system(size: 50))
                     .fontWeight(.regular)
                     .italic()
@@ -1072,7 +1072,15 @@ struct SignUpPage9: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 25)
+                
+                Text("BestFriends can help.")
+                    .font(.system(size: 30))
+                    .fontWeight(.regular)
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .frame(width: 400, height: 40)
+                    .multilineTextAlignment(.center)
                 
 //
 //                Image("FindFriend")
@@ -1081,21 +1089,23 @@ struct SignUpPage9: View {
 //                    .scaledToFill()
 //                    .padding(20)
 
-                Text("Just shake your phone - n' smile")
-                    .font(.system(size: 30))
+                Text("Shake your phone and see what pops up.")
+                    .font(.system(size: 20))
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 400, height: 40)
+                    .frame(width: 400, height: 50)
                     .multilineTextAlignment(.center)
                 
+                Spacer()
+                    .frame(height: 125)
                 
-                Text("Save previous smiles in SmileVault")
-                    .font(.system(size: 30))
+                Text("We save previous smiles in SmileVault.")
+                    .font(.system(size: 20))
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 400, height: 40)
+                    .frame(width: 400, height: 50)
                     .multilineTextAlignment(.center)
                 
                 
@@ -1265,7 +1275,7 @@ struct SignUpQuestionPage2: View {
                     Text("Instead we \nsimply ...")
                         .font(.system(size: 50))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .frame(width: 300, height: 75)
+                        .frame(width: 300, height: 125)
                         .multilineTextAlignment(.center)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                        
