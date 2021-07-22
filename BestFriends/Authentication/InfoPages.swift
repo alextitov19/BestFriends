@@ -178,7 +178,7 @@ struct InfoViewPage1: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    Text("Let's get started >")
+                    Text("Let's add your first friend >")
                         .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .frame(width: 350, height: 50)

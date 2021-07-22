@@ -365,7 +365,6 @@
 		7AC783612389637F132A43F6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
 		7AC8564226585CD20045D145 /* LiquidSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8564126585CD20045D145 /* LiquidSwipe.swift */; };
 		7AC8A23F26578C3E001812EF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8A23E26578C3E001812EF /* LocationManager.swift */; };
-		7ACEDEB52683FCCE00102E70 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7ACEDEB42683FCCE00102E70 /* BestFriendsAd1.mp4 */; };
 		7ACEDEB72683FCE600102E70 /* EnrichHER.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7ACEDEB62683FCE600102E70 /* EnrichHER.mp4 */; };
 		7ACEDEB92683FCEE00102E70 /* SplashScreen1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7ACEDEB82683FCED00102E70 /* SplashScreen1.mp4 */; };
 		7ACEDEDE2685194C00102E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */; };
@@ -611,6 +610,8 @@
 		CCBFE5CAA51B40EB60789225 /* DeletionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7808CECE583EC8D59B0569BC /* DeletionRequest.swift */; };
 		CD4C6B0426C3F5FA51400B0B /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5F0D769FDC2A7AA84971E /* Advertisement+Schema.swift */; };
 		CEFD49FCC463CB40AFF7AF6A /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5F0D769FDC2A7AA84971E /* Advertisement+Schema.swift */; };
+		CF05A8AA26A93D08009618E6 /* BestFriendsAd1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8A926A93D08009618E6 /* BestFriendsAd1.m4v */; };
+		CF05A8AC26A93D42009618E6 /* VideoShakingCool.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8AB26A93D42009618E6 /* VideoShakingCool.mp4 */; };
 		CF1E6AE5269A00DB00B8F985 /* PreAddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */; };
 		CF1E6AE7269A0D2000B8F985 /* BlueModeConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */; };
 		CF2AFB216FD5D418D2277A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
@@ -868,7 +869,6 @@
 		7AC0DA9B262BAF3B007FC643 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		7AC8564126585CD20045D145 /* LiquidSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidSwipe.swift; sourceTree = "<group>"; };
 		7AC8A23E26578C3E001812EF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		7ACEDEB42683FCCE00102E70 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
 		7ACEDEB62683FCE600102E70 /* EnrichHER.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = EnrichHER.mp4; sourceTree = "<group>"; };
 		7ACEDEB82683FCED00102E70 /* SplashScreen1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashScreen1.mp4; sourceTree = "<group>"; };
 		7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriendsRelease.entitlements; sourceTree = "<group>"; };
@@ -896,6 +896,8 @@
 		C4BF332F0047438D8BC66E13 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		C682BDDEBCC8842EA9E1C161 /* ShakingCool+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "ShakingCool+Schema.swift"; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = "<group>"; };
 		C95590B9F99E4975B4D806B7 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		CF05A8A926A93D08009618E6 /* BestFriendsAd1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = BestFriendsAd1.m4v; path = ../../../../../../../Desktop/BestFriendsAd1.m4v; sourceTree = "<group>"; };
+		CF05A8AB26A93D42009618E6 /* VideoShakingCool.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = VideoShakingCool.mp4; path = ../../../../../../../Desktop/VideoShakingCool.mp4; sourceTree = "<group>"; };
 		CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreAddFriends.swift; sourceTree = "<group>"; };
 		CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeConditions.swift; sourceTree = "<group>"; };
 		CF30FF92267E955A000B2730 /* SmileNotesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesCard.swift; sourceTree = "<group>"; };
@@ -1270,7 +1272,8 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
-				7ACEDEB42683FCCE00102E70 /* BestFriendsAd1.mp4 */,
+				CF05A8A926A93D08009618E6 /* BestFriendsAd1.m4v */,
+				CF05A8AB26A93D42009618E6 /* VideoShakingCool.mp4 */,
 				7ACEDEB62683FCE600102E70 /* EnrichHER.mp4 */,
 				7ACEDEB82683FCED00102E70 /* SplashScreen1.mp4 */,
 				7A4B9B5C266FD00900EAF3B9 /* Social Impact */,
@@ -1443,9 +1446,10 @@
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A384002267AC306002F354A /* purpleChat.mp4 in Resources */,
 				7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */,
+				CF05A8AA26A93D08009618E6 /* BestFriendsAd1.m4v in Resources */,
+				CF05A8AC26A93D42009618E6 /* VideoShakingCool.mp4 in Resources */,
 				7A383FFB267AC306002F354A /* Skateboard.mp4 in Resources */,
 				7A383FF9267AC306002F354A /* BlueHeartVid.mp4 in Resources */,
-				7ACEDEB52683FCCE00102E70 /* BestFriendsAd1.mp4 in Resources */,
 				221B32BB2FDB4A74A8AC7691 /* awsconfiguration.json in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
 				AB791B981F62744749FC786D /* awsconfiguration.json in Resources */,
