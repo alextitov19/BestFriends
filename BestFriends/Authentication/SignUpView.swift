@@ -1060,7 +1060,7 @@ struct SignUpPage9: View {
             VStack {
                 
                 
-                Text("Need to talk to your friends,\n NOW?")
+                Text("Tough day - looking for a smile?")
                     .font(.system(size: 50))
                     .fontWeight(.regular)
                     .italic()
@@ -1074,14 +1074,14 @@ struct SignUpPage9: View {
                 Spacer()
                     .frame(height: 125)
                 
+//
+//                Image("FindFriend")
+//                    .resizable()
+//                    .frame(width: 200, height: 200)
+//                    .scaledToFill()
+//                    .padding(20)
 
-                Image("FindFriend")
-                    .resizable()
-                    .frame(width: 200, height: 200)
-                    .scaledToFill()
-                    .padding(20)
-
-                Text("No worries, we'll find them.")
+                Text("Just shake your phone - n' smile")
                     .font(.system(size: 30))
                     .fontWeight(.regular)
                     .italic()
@@ -1090,6 +1090,13 @@ struct SignUpPage9: View {
                     .multilineTextAlignment(.center)
                 
                 
+                Text("Save previous smiles in SmileVault")
+                    .font(.system(size: 30))
+                    .fontWeight(.regular)
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .frame(width: 400, height: 40)
+                    .multilineTextAlignment(.center)
                 
                 
                 VStack {
