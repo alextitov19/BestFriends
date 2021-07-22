@@ -36,7 +36,7 @@ struct ShakingCoolView: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-                Text("Add images 1 & 2 for yourself.\nAdd a 3rd  for your friends to see.")
+                Text("Add 2 images for yourself.\nThen add one for each friend to see.")
                     .frame(width: 300, height: 75, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 20, weight: .thin))
