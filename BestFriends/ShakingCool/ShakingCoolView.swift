@@ -11,13 +11,14 @@ import Amplify
 struct ShakingCoolView: View {
     
     @State private var shakingCool: [ShakingCool] = []
-    
     @State private var showingImagePicker = false
-    @State var inputImage: UIImage?
+    @State private var inputImage: UIImage?
     @State private var availableIDs: [String] = []
     @State private var availableNames: [String] = []
     @State private var chosenID = ""
     @State private var choosingRecipient = false
+    @State private var myid = ""
+    
     private var shakingCoolDataSource = ShakingCoolDataSource()
     
     var body: some View {
@@ -66,8 +67,9 @@ struct ShakingCoolView: View {
                 
                 ScrollView(showsIndicators: false) {
                     ForEach(shakingCool, id: \.id) { cool in
+                        let name = cool.intendedid == myid ? "Myself" : cool.intendedname
                         VStack {
-                            Text(cool.intendedname)
+                            Text(name)
                                 .foregroundColor(.white)
                                 .font(.system(size: 20, weight: .light))
                                 .padding()
@@ -108,7 +110,7 @@ struct ShakingCoolView: View {
                     .cornerRadius(25)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     .onTapGesture {
-                        
+                        choosingRecipient.toggle()
                     }
                     .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                         ImagePicker(image: self.$inputImage)
@@ -127,6 +129,7 @@ struct ShakingCoolView: View {
                         Button(action: {
                             chosenID = availableIDs[index]
                             showingImagePicker = true
+                            choosingRecipient = false
                         }) {
                             Text(availableNames[index])
                                 .frame(width: 150, height: 50, alignment: .center)
@@ -155,6 +158,7 @@ struct ShakingCoolView: View {
     private func reloadData() {
         let userDS = UserDataSource()
         let user = userDS.getCurrentUser()
+        myid = user.id
         print("Got user: ", user)
         shakingCool = []
         if user.shakingCool != nil {
@@ -178,6 +182,7 @@ struct ShakingCoolView: View {
         if mycounter < 2 {
             availableIDs.insert(user.id, at: 0)
             availableNames.insert("Myself", at: 0)
+            print("Added self")
         }
     }
     
