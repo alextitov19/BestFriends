@@ -1052,7 +1052,7 @@ struct SignUpPage9: View {
         ZStack{
             
             
-            Image("FindFriends")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -1074,13 +1074,13 @@ struct SignUpPage9: View {
                 Spacer()
                     .frame(height: 125)
                 
-//
-//                Image("")
-//                    .resizable()
-//                    .frame(width: 200, height: 200)
-//                    .scaledToFill()
-//                    .padding(20)
-//
+
+                Image("FindFriend")
+                    .resizable()
+                    .frame(width: 200, height: 200)
+                    .scaledToFill()
+                    .padding(20)
+
                 Text("No worries, we'll find them.")
                     .font(.system(size: 30))
                     .fontWeight(.regular)
@@ -1250,8 +1250,7 @@ struct SignUpQuestionPage2: View {
                         .multilineTextAlignment(.center)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                      
+                       
                     Spacer()
                         .frame(height: 30)
                   
