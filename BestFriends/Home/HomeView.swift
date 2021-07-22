@@ -247,10 +247,8 @@ struct HomeView: View {
             
             if loadingShowing == true {
                 ZStack {
-                    Image("Firstname")
-                        .resizable()
+                    Color(#colorLiteral(red: 0.6986119747, green: 0.2623180151, blue: 1, alpha: 1))
                         .ignoresSafeArea()
-                        .scaledToFill()
                         .onAppear {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                 invitingFriends = false
@@ -261,6 +259,12 @@ struct HomeView: View {
                                 inviteSelectedFriends()
                             }
                         }
+                    
+                    Image("FatGuy")
+                        .resizable()
+                        .frame(width: 300, height: 300)
+                        .scaledToFill()
+                        .offset(y: -100)
                     
                     Text("Loading...")
                         .frame(width: 200, height: 40, alignment: .center)
