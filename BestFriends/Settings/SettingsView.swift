@@ -77,7 +77,7 @@ struct SettingsView: View {
                         
                         VStack {
                             
-                            Text("Join BestFriends Crew")
+                            Text("Help Make BestFriends Better")
                                 
                                 .font(.system(size: 32))
                                 .fontWeight(.ultraLight)
@@ -86,7 +86,7 @@ struct SettingsView: View {
                                 .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             
-                            Link("Be 1st to test new features", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
+                            Link("Test new features before launch", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 17))
