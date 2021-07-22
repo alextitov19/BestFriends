@@ -10,13 +10,15 @@ import Amplify
 
 struct ShakingCoolView: View {
     
-    @State var shakingCoolLinks: [String] = []
+    @State private var shakingCool: [ShakingCool] = []
     
-    @State var showingImagePicker = false
+    @State private var showingImagePicker = false
     @State var inputImage: UIImage?
-    var shakingCoolDataSource = ShakingCoolDataSource()
-    
-   @State var chosenID = ""
+    @State private var availableIDs: [String] = []
+    @State private var availableNames: [String] = []
+    @State private var chosenID = ""
+    @State private var choosingRecipient = false
+    private var shakingCoolDataSource = ShakingCoolDataSource()
     
     var body: some View {
         ZStack {
@@ -45,13 +47,13 @@ struct ShakingCoolView: View {
                 
                 
                 
-//                Text("As you add friends they can send you a favorite image to add to 'your' ShakingCool.")
-//                    .italic()
-//                    .font(.system(size: 20))
-//                    .fontWeight(.ultraLight)
-//                    .foregroundColor(Color(#colorLiteral(red: 0.9930974841, green: 1, blue: 0.9261136651, alpha: 1)))
-//                    .multilineTextAlignment(.center)
-//                    .frame(width: 385, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                //                Text("As you add friends they can send you a favorite image to add to 'your' ShakingCool.")
+                //                    .italic()
+                //                    .font(.system(size: 20))
+                //                    .fontWeight(.ultraLight)
+                //                    .foregroundColor(Color(#colorLiteral(red: 0.9930974841, green: 1, blue: 0.9261136651, alpha: 1)))
+                //                    .multilineTextAlignment(.center)
+                //                    .frame(width: 385, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
                 Spacer().frame(height: 20)
                 
@@ -62,27 +64,37 @@ struct ShakingCoolView: View {
                 
                 Spacer().frame(height: 30)
                 
-                ScrollView {
-                    ForEach(shakingCoolLinks, id: \.self) { link in
-                        Image(uiImage: shakingCoolDataSource.downloadImage(key: link, rotating: true, tall: false))
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 200)
-                            .cornerRadius(30)
-                            .onTapGesture {
-                                shakingCoolDataSource.deleteImage(id: link)
-                                reloadData()
-                                showingImagePicker = true
-                                
-                            }
+                ScrollView(showsIndicators: false) {
+                    ForEach(shakingCool, id: \.id) { cool in
+                        VStack {
+                            Text(cool.intendedname)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20, weight: .light))
+                                .padding()
+                            
+                            Image(uiImage: shakingCoolDataSource.downloadImage(key: cool.link, rotating: true, tall: false))
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 200)
+                                .cornerRadius(30)
+                                .onTapGesture {
+                                    chosenID = cool.id
+                                    shakingCoolDataSource.deleteImage(id: cool.link)
+                                    reloadData()
+                                    showingImagePicker = true
+                                    
+                                }
+                            
+                            Spacer()
+                                .frame(height: 30)
+                        }
                         
-                        Spacer()
-                            .frame(height: 30)
+                        
                         
                     }
                 }
                 Spacer()
-                                
+                
                 
                 Text("Delete/replace image by tapping")
                     .font(.system(size: 25, weight: .thin))
@@ -96,22 +108,36 @@ struct ShakingCoolView: View {
                     .cornerRadius(25)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     .onTapGesture {
-                        if howManyLeft() > 0 {
-                            showingImagePicker = true
-                        }
+                        
                     }
                     .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                         ImagePicker(image: self.$inputImage)
                     }
                     .padding()
-
+                
                 
                 Spacer()
                     .frame(height: 90)
                 
                 
             }
-            
+            if choosingRecipient {
+                VStack {
+                    ForEach(availableIDs.indices, id: \.self) { index in
+                        Button(action: {
+                            chosenID = availableIDs[index]
+                            showingImagePicker = true
+                        }) {
+                            Text(availableNames[index])
+                                .frame(width: 150, height: 50, alignment: .center)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.title)
+                                .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                                .cornerRadius(25)
+                        }
+                    }
+                }
+            }
         }
     }
     
@@ -127,17 +153,32 @@ struct ShakingCoolView: View {
     }
     
     private func reloadData() {
-        let user = UserDataSource().getCurrentUser()
+        let userDS = UserDataSource()
+        let user = userDS.getCurrentUser()
         print("Got user: ", user)
-        shakingCoolLinks = []
-        let shakingCool = user.shakingCool
-        if shakingCool != nil {
-            for cool in shakingCool! {
-                shakingCoolLinks.append(cool.link)
+        shakingCool = []
+        if user.shakingCool != nil {
+            shakingCool = user.shakingCool!
+        }
+        print("Shaking Cool: ", shakingCool)
+        chosenID = user.id
+        var mycounter = 0
+        availableIDs = user.friends ?? []
+        for cool in shakingCool {
+            if cool.intendedid == user.id {
+                mycounter += 1
+            }
+            if let index = availableIDs.firstIndex(of: cool.intendedid) {
+                availableIDs.remove(at: index)
             }
         }
-        print("Shaking Cool Links: ", shakingCoolLinks)
-        chosenID = user.id
+        for id in availableIDs {
+            availableNames.append(userDS.getUser(id: id).firstName)
+        }
+        if mycounter < 2 {
+            availableIDs.insert(user.id, at: 0)
+            availableNames.insert("Myself", at: 0)
+        }
     }
     
     private func howManyLeft() -> Int {
