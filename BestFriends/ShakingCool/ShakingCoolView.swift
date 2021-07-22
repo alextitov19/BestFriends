@@ -19,6 +19,8 @@ struct ShakingCoolView: View {
     @State private var choosingRecipient = false
     @State private var myid = ""
     
+    @EnvironmentObject var sessionManager: SessionManager
+
     private var shakingCoolDataSource = ShakingCoolDataSource()
     
     var body: some View {
@@ -117,9 +119,17 @@ struct ShakingCoolView: View {
                     }
                     .padding()
                 
-                
-                Spacer()
-                    .frame(height: 90)
+                Text("Return")
+                    .frame(width: 150, height: 50, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                    .font(.title)
+                    .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+                    .cornerRadius(25)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    .onTapGesture {
+                        sessionManager.getCurrentAuthUser()
+                    }
+                    .padding()
                 
                 
             }

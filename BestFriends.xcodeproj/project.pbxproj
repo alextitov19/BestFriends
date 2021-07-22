@@ -610,8 +610,6 @@
 		CCBFE5CAA51B40EB60789225 /* DeletionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7808CECE583EC8D59B0569BC /* DeletionRequest.swift */; };
 		CD4C6B0426C3F5FA51400B0B /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5F0D769FDC2A7AA84971E /* Advertisement+Schema.swift */; };
 		CEFD49FCC463CB40AFF7AF6A /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA5F0D769FDC2A7AA84971E /* Advertisement+Schema.swift */; };
-		CF05A8AA26A93D08009618E6 /* BestFriendsAd1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8A926A93D08009618E6 /* BestFriendsAd1.m4v */; };
-		CF05A8AC26A93D42009618E6 /* VideoShakingCool.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8AB26A93D42009618E6 /* VideoShakingCool.mp4 */; };
 		CF1E6AE5269A00DB00B8F985 /* PreAddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */; };
 		CF1E6AE7269A0D2000B8F985 /* BlueModeConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */; };
 		CF2AFB216FD5D418D2277A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
@@ -1446,8 +1444,6 @@
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A384002267AC306002F354A /* purpleChat.mp4 in Resources */,
 				7B13219293464569BD3ABE91 /* amplifyconfiguration.json in Resources */,
-				CF05A8AA26A93D08009618E6 /* BestFriendsAd1.m4v in Resources */,
-				CF05A8AC26A93D42009618E6 /* VideoShakingCool.mp4 in Resources */,
 				7A383FFB267AC306002F354A /* Skateboard.mp4 in Resources */,
 				7A383FF9267AC306002F354A /* BlueHeartVid.mp4 in Resources */,
 				221B32BB2FDB4A74A8AC7691 /* awsconfiguration.json in Resources */,

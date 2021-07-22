@@ -86,6 +86,9 @@ struct BestFriendsApp: App {
             case .isInvitedToChat(let invitedRoomId):
                 NotificationPreLoad(roomID: invitedRoomId)
                     .environmentObject(sessionManager)
+            case .shakingCool:
+                ShakingCoolView()
+                    .environmentObject(sessionManager)
             }
             
         }
