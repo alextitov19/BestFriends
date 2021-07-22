@@ -15,6 +15,7 @@ struct ShakingCoolFullScreenView: View {
     @State var isPaused = false
     
     var images: [Image] = []
+    let userDS = UserDataSource()
     
     init() {
         loadData()
@@ -23,7 +24,7 @@ struct ShakingCoolFullScreenView: View {
     
     let shakingCoolDataSource = ShakingCoolDataSource()
     
-    var shakingCool: [ShakingCool] = []
+    var shakingCoolLinks: [String] = []
     
     var timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
     
@@ -52,14 +53,28 @@ struct ShakingCoolFullScreenView: View {
     
     
     private mutating func loadData() {
-        guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
-        let user = UserDataSource().getUser(id: id)
+        let user = UserDataSource().getCurrentUser()
         print("Got user: ", user)
-        guard let userlinks = user.shakingCool else { return }
-        shakingCool = userlinks
-        print("ShakingCool: ", shakingCool)
-        for cool in shakingCool {
-            images.append(Image(uiImage: shakingCoolDataSource.downloadImage(key: cool.link, rotating: true, tall: true)))
+        var shakingcool = user.shakingCool ?? []
+        for cool in shakingcool {
+            if cool.intendedid == user.id {
+                shakingCoolLinks.append(cool.link)
+            }
+        }
+        let friendids = user.friends ?? []
+        for id in friendids {
+            let friend = userDS.getUser(id: id)
+            var shakingcool = friend.shakingCool ?? []
+            for cool in shakingcool {
+                if cool.intendedid == user.id {
+                    shakingCoolLinks.append(cool.link)
+                }
+            }
+        }
+        
+        print("ShakingCool: ", shakingCoolLinks)
+        for link in shakingCoolLinks {
+            images.append(Image(uiImage: shakingCoolDataSource.downloadImage(key: link, rotating: true, tall: true)))
             if images.count == 1 {
                 image = images[0]
                 index += 1
@@ -69,9 +84,9 @@ struct ShakingCoolFullScreenView: View {
     }
     
     private func cycleImages() {
-        if index == shakingCool.count {
+        if index == shakingCoolLinks.count {
             presentationMode.wrappedValue.dismiss()
-        } else if index < shakingCool.count {
+        } else if index < shakingCoolLinks.count {
             if !isPaused {
                 image = images[index]
                 index += 1
