@@ -1243,7 +1243,7 @@ struct SignUpQuestionPage2: View {
                 VStack {
                     
                 
-                    Text("We do not use cookies to follow your every move on your phone and laptop outside of BestFriends. Instead")
+                    Text("We don't use cookies following your every move on your phone and laptop outside of BestFriends.")
                         .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .frame(width: 300, height: 400)
@@ -1255,7 +1255,7 @@ struct SignUpQuestionPage2: View {
                         .frame(height: 30)
                   
                        
-                    Text("Instead ...")
+                    Text("Instead we simply ...")
                         .font(.system(size: 50))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .frame(width: 300, height: 50)
@@ -1320,7 +1320,7 @@ struct SignUpQuestionPage3: View {
             
             VStack {
                 
-                Text("We simply ask your interests")
+                Text("Ask your interests.")
                     .font(.system(size: 50))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .frame(width: 350)

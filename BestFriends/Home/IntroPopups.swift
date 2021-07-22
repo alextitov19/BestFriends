@@ -38,7 +38,7 @@ struct IntroPopups: View {
                 update()
             }) {
                 VStack {
-                    Text("Swipe left on bottom of page, displaying icons")
+                    Text("Swipe left on bottom of page, unhiding icons")
                         .frame(width: 300, height: 75)
                         .font(.system(size: 20, weight: .medium))
                         .multilineTextAlignment(.center)
