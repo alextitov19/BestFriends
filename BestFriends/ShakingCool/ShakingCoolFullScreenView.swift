@@ -23,7 +23,7 @@ struct ShakingCoolFullScreenView: View {
     
     let shakingCoolDataSource = ShakingCoolDataSource()
     
-    var links: [String] = []
+    var shakingCool: [ShakingCool] = []
     
     var timer = Timer.publish(every: 2, on: .main, in: .common).autoconnect()
     
@@ -55,23 +55,23 @@ struct ShakingCoolFullScreenView: View {
         guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
         let user = UserDataSource().getUser(id: id)
         print("Got user: ", user)
-        guard let userlinks = user.shakingCoolLinks else { return }
-        links = userlinks
-        print("The links are: ", links)
-        for link in links {
-            images.append(Image(uiImage: shakingCoolDataSource.downloadImage(key: link, rotating: true, tall: true)))
+        guard let userlinks = user.shakingCool else { return }
+        shakingCool = userlinks
+        print("ShakingCool: ", shakingCool)
+        for cool in shakingCool {
+            images.append(Image(uiImage: shakingCoolDataSource.downloadImage(key: cool.link, rotating: true, tall: true)))
             if images.count == 1 {
                 image = images[0]
                 index += 1
             }
         }
-        print("Inmages count: ", images.count)
+        print("Images count: ", images.count)
     }
     
     private func cycleImages() {
-        if index == links.count {
+        if index == shakingCool.count {
             presentationMode.wrappedValue.dismiss()
-        } else if index < links.count {
+        } else if index < shakingCool.count {
             if !isPaused {
                 image = images[index]
                 index += 1

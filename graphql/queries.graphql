@@ -171,7 +171,12 @@ query GetUser($id: ID!) {
       }
       favorite
     }
-    shakingCoolLinks
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
     tokens
     background
     unlockedStickers
@@ -215,7 +220,12 @@ query ListUsers(
         id
         favorite
       }
-      shakingCoolLinks
+      shakingCool {
+        id
+        link
+        intendedid
+        intendedname
+      }
       tokens
       background
       unlockedStickers

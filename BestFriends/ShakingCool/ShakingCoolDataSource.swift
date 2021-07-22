@@ -49,7 +49,7 @@ struct ShakingCoolDataSource {
         return image
     }
     
-    func uploadImage(image: UIImage) -> Bool {
+    func uploadImage(image: UIImage, targetID: String) -> Bool {
         var success = false
         let group = DispatchGroup()
         group.enter()
@@ -63,9 +63,9 @@ struct ShakingCoolDataSource {
                                     case .success(let data):
                                         print("Completed: \(data)")
                                         var user = UserDataSource().getCurrentUser()
-                                        guard var links = user.shakingCoolLinks else { return }
-                                        links.append(key)
-                                        user.shakingCoolLinks = links
+                                        guard var shakingCool = user.shakingCool else { return }
+                                        shakingCool.append(ShakingCool(id: Helper().randomString(length: 20), link: key, intendedid: targetID, intendedname: UserDataSource().getUser(id: targetID).firstName))
+                                        user.shakingCool = shakingCool
                                         UserDataSource().updateUser(user: user)
                                         success = true
                                         group.leave()
@@ -82,11 +82,13 @@ struct ShakingCoolDataSource {
     func deleteImage(id: String) {
         guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }
         var user = UserDataSource().getUser(id: userID)
-        guard var links = user.shakingCoolLinks else { return }
-        if links.contains(id) {
-            links.remove(at: links.firstIndex(of: id)!)
+        guard var shakingCool = user.shakingCool else { return }
+        for i in shakingCool.indices {
+            if shakingCool[i].id == id {
+                shakingCool.remove(at: i)
+            }
         }
-        user.shakingCoolLinks = links
+        user.shakingCool = shakingCool
         UserDataSource().updateUser(user: user)
         
         Amplify.Storage.remove(key: id) { event in

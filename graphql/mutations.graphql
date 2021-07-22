@@ -239,7 +239,12 @@ mutation CreateUser(
       }
       favorite
     }
-    shakingCoolLinks
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
     tokens
     background
     unlockedStickers
@@ -290,7 +295,12 @@ mutation UpdateUser(
       }
       favorite
     }
-    shakingCoolLinks
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
     tokens
     background
     unlockedStickers
@@ -341,7 +351,12 @@ mutation DeleteUser(
       }
       favorite
     }
-    shakingCoolLinks
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
     tokens
     background
     unlockedStickers

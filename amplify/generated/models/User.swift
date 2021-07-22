@@ -19,7 +19,7 @@ public struct User: Model {
   public var rooms: [String]?
   public var hiddenRooms: [String]?
   public var smileNotes: [SmileNote]?
-  public var shakingCoolLinks: [String]?
+  public var shakingCool: [ShakingCool]?
   public var tokens: Int
   public var background: Int
   public var unlockedStickers: [Int]?
@@ -47,7 +47,7 @@ public struct User: Model {
       rooms: [String]? = [],
       hiddenRooms: [String]? = [],
       smileNotes: [SmileNote]? = [],
-      shakingCoolLinks: [String]? = [],
+      shakingCool: [ShakingCool]? = [],
       tokens: Int,
       background: Int,
       unlockedStickers: [Int]? = [],
@@ -74,7 +74,7 @@ public struct User: Model {
       self.rooms = rooms
       self.hiddenRooms = hiddenRooms
       self.smileNotes = smileNotes
-      self.shakingCoolLinks = shakingCoolLinks
+      self.shakingCool = shakingCool
       self.tokens = tokens
       self.background = background
       self.unlockedStickers = unlockedStickers

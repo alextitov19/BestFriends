@@ -16,7 +16,7 @@ struct ShakingCoolView: View {
     @State var inputImage: UIImage?
     var shakingCoolDataSource = ShakingCoolDataSource()
     
-   
+   @State var chosenID = ""
     
     var body: some View {
         ZStack {
@@ -119,7 +119,7 @@ struct ShakingCoolView: View {
         showingImagePicker = false
         guard let inputImage = inputImage else { return }
         print("Got the image")
-        let state = ShakingCoolDataSource().uploadImage(image: inputImage)
+        let state = ShakingCoolDataSource().uploadImage(image: inputImage, targetID: chosenID)
         if state == true {
             sleep(3)
             reloadData()
@@ -130,18 +130,19 @@ struct ShakingCoolView: View {
         let user = UserDataSource().getCurrentUser()
         print("Got user: ", user)
         shakingCoolLinks = []
-        let links = user.shakingCoolLinks
+        let links = user.shakingCool
         if links != nil {
             shakingCoolLinks = links!
             print("Links: ", links!)
         }
         print("Shaking Cool Links: ", shakingCoolLinks)
+        chosenID = user.id
     }
     
     private func howManyLeft() -> Int {
         let user = UserDataSource().getCurrentUser()
         let first = user.friends?.count ?? 0
-        let second = user.shakingCoolLinks?.count ?? 0
+        let second = user.shakingCool?.count ?? 0
         return 2 + first - second
     }
 }

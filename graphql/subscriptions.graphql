@@ -209,7 +209,12 @@ subscription OnCreateUser {
       }
       favorite
     }
-    shakingCoolLinks
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
     tokens
     background
     unlockedStickers
@@ -257,7 +262,12 @@ subscription OnUpdateUser {
       }
       favorite
     }
-    shakingCoolLinks
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
     tokens
     background
     unlockedStickers
@@ -305,7 +315,12 @@ subscription OnDeleteUser {
       }
       favorite
     }
-    shakingCoolLinks
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
     tokens
     background
     unlockedStickers

@@ -15,6 +15,13 @@ type SmileNote {
   favorite: Boolean!
 }
 
+type ShakingCool {
+  id: ID!
+  link: String!
+  intendedid: String!
+  intendedname: String!
+}
+
 type DeletionRequest @model {
   id: ID!
   userid: String!
@@ -56,7 +63,7 @@ type User @model {
   rooms: [String]
   hiddenRooms: [String]
   smileNotes: [SmileNote]
-  shakingCoolLinks: [String]
+  shakingCool: [ShakingCool]
   tokens: Int!
   background: Int!
   unlockedStickers: [Int]
