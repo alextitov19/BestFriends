@@ -132,6 +132,9 @@ struct HomeView: View {
                             Image("person-add icon")
                                 .resizable()
                                 .frame(width: 50, height: 50)
+                                .sheet(isPresented: $showingSheet) {
+                                    QRCodeView(image: myQRCode)
+                                }
                             
                         }
                         .actionSheet(isPresented: $showingActionSheet) {
@@ -191,7 +194,16 @@ struct HomeView: View {
                             }
                             .padding(8)
                         
-                        Image("whiteBell")
+                        Image("horn")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showSettings()
+                            }
+                            .padding(8)
+                        
+                        Image("bell")
                             .resizable()
                             .frame(width: 40, height: 40)
                             .scaledToFill()
@@ -207,11 +219,10 @@ struct HomeView: View {
                             }
                         
                         Spacer()
-                            .frame(width: 50)
+                            .frame(width: 100)
                         
                     }
                 }
-                .offset(y: 30)
             }
             
             if membersOfNewRoom.count > 0 {
@@ -334,10 +345,7 @@ struct HomeView: View {
         guard let inputImage = inputImage else { return }
         print("Got the image")
         displayQRString(image: inputImage)
-        
     }
-    
-    
     
     private func detectQRCode(_ image: UIImage?) -> [CIFeature]? {
         if let image = image, let ciImage = CIImage.init(image: image){

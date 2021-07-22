@@ -319,23 +319,6 @@ struct ChatView: View {
                                 openURL(URL(string: currentLink)!)
                             }
                     }
-                    
-                    Spacer().frame(height: 10)
-                    
-                    ZStack {
-                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
-                            .frame(width: 60, height: 60)
-                            .cornerRadius(30)
-                        
-                        Image("whiteX")
-                            .resizable()
-                            .frame(width: 35, height: 35)
-                            .scaledToFit()
-                            .foregroundColor(.white)
-                            .onTapGesture {
-                                doneWithAd()
-                            }
-                    }
                 }
                 .offset(x: -165)
                 .transition(.move(edge: .leading))
@@ -421,6 +404,9 @@ struct ChatView: View {
             areAdsHidden = true
             withAnimation {
                 adButtonsHidden = false
+                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                    doneWithAd()
+                }
             }
         }
         

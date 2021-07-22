@@ -38,7 +38,7 @@ struct IntroPopups: View {
                 update()
             }) {
                 VStack {
-                    Text("Swipe <-- (bottom of screen), showing icons")
+                    Text("To see the navigation icons, swipe left across the bottom of the screen")
                         .frame(width: 300, height: 75)
                         .font(.system(size: 20, weight: .medium))
                         .multilineTextAlignment(.center)
@@ -51,7 +51,7 @@ struct IntroPopups: View {
             }
             .background(Color(#colorLiteral(red: 0.6159420609, green: 0.2348094881, blue: 1, alpha: 0.01)))
             .cornerRadius(40)
-            .offset(y: 300)
+            .offset(y: 100)
             .isHidden(secondHidden)
         }
     }

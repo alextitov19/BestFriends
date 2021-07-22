@@ -42,7 +42,7 @@ struct SignUpPage1: View {
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     
-                 
+                    
                     Spacer()
                         .frame(height: 350)
                     
@@ -115,9 +115,9 @@ struct SignUpPage2: View {
                 HStack {
                     VStack {
                         
-//                        Spacer()
-//                            .frame(height: 120)
-//
+                        //                        Spacer()
+                        //                            .frame(height: 120)
+                        //
                         
                     }
                     VStack {
@@ -131,7 +131,7 @@ struct SignUpPage2: View {
                             .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                             .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         
-                    
+                        
                         
                         Spacer()
                             .frame(height: 100)
@@ -142,13 +142,13 @@ struct SignUpPage2: View {
                     .frame(height: 270)
                 
                 Text("Using QR codes, not usernames.")
-                .italic()
+                    .italic()
                     .font(.system(size: 30))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 100, alignment: .center)
-                  
+                
                 
                 
                 
@@ -206,17 +206,10 @@ struct SignUpPage3: View {
     
     var body: some View {
         ZStack {
-            
-            
             Image("Username")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            
-            
-            
-            
-            
             
             Spacer()
                 .frame(height: 100)
@@ -230,10 +223,6 @@ struct SignUpPage3: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-              
-                   
-                   
-                
                 Spacer()
                     .frame(height: 400)
                 
@@ -241,7 +230,16 @@ struct SignUpPage3: View {
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-//
+                //
+                if isUsernameTaken {
+                    Text("Username is taken")
+                        .italic()
+                        .font(.system(size: 15))
+                        .fontWeight(.regular)
+                        .foregroundColor(.red)
+                        .multilineTextAlignment(.center)
+                }
+                
                 TextField("Username", text: $username)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -324,7 +322,7 @@ struct SignUpPage4: View {
                     .frame(height: 45)
                 
                 VStack {
-          
+                    
                     Spacer()
                         .frame(height: 375)
                     
@@ -406,7 +404,7 @@ struct SignUpPage5: View {
     @State private var email: String = ""
     @State private var readyToProceed = false
     @State private var emailIsTaken = false
-
+    
     var firstName: String
     var lastName: String
     var username: String
@@ -433,9 +431,9 @@ struct SignUpPage5: View {
                     .frame(height: 400)
                 
                 if emailIsTaken {
-                Text("Email is invalid or is already taken")
-                    .font(.system(size: 30, weight: .semibold))
-                    .foregroundColor(.red)
+                    Text("Email is invalid or is already taken")
+                        .font(.system(size: 30, weight: .semibold))
+                        .foregroundColor(.red)
                 }
                 TextField("Enter email", text: $email)
                     .multilineTextAlignment(.center)
@@ -537,8 +535,8 @@ struct SignUpPage6: View {
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-       
-               
+                
+                
                 Spacer()
                     .frame(height: 50)
                 
@@ -723,7 +721,7 @@ struct SignUpPage7: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-              
+                
                 
                 Spacer()
                     .frame(height: 60)
@@ -800,15 +798,15 @@ struct SignUpPage8: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-               
+                
                 Text("Restore with your 'Secret' PIN")
                     .font(.system(size: 30))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 50, alignment: .center)
-//                    .padding(20)
-                  
+                //                    .padding(20)
+                
                 
                 
                 Text("Enter a 4-digit PIN")
@@ -977,7 +975,7 @@ struct SignUpPage8: View {
                         }
                     }
                     
-                 Spacer().frame(height: 20)
+                    Spacer().frame(height: 20)
                     
                     Button(action: {
                         currentPin.append("0")
@@ -1059,13 +1057,13 @@ struct SignUpPage9: View {
                     .frame(width: 400)
                     .multilineTextAlignment(.center)
                 
-//
-//                Image("FindFriend")
-//                    .resizable()
-//                    .frame(width: 200, height: 200)
-//                    .scaledToFill()
-//                    .padding(20)
-
+                //
+                //                Image("FindFriend")
+                //                    .resizable()
+                //                    .frame(width: 200, height: 200)
+                //                    .scaledToFill()
+                //                    .padding(20)
+                
                 Text("ONE, Shake your phone, what pops up will manke you smile.")
                     .italic()
                     .font(.system(size: 20))
@@ -1226,7 +1224,7 @@ struct SignUpQuestionPage2: View {
             VStack {
                 VStack {
                     
-                
+                    
                     Text("We don't use cookies following your every move on your phone and laptop outside of BestFriends.")
                         .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -1234,27 +1232,27 @@ struct SignUpQuestionPage2: View {
                         .multilineTextAlignment(.center)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                       
+                    
                     Spacer()
                         .frame(height: 30)
-                  
-                       
+                    
+                    
                     Text("Instead we \nsimply ...")
                         .font(.system(size: 50))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .frame(width: 300, height: 125)
                         .multilineTextAlignment(.center)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                       
+                    
                     Spacer()
                         .frame(height: 30)
                     
-//                    Image("NoCookie")
-//                        .resizable()
-//                        .frame(width: 200, height: 200)
-//                        .scaledToFill()
-//                        .padding(20)
-//
+                    //                    Image("NoCookie")
+                    //                        .resizable()
+                    //                        .frame(width: 200, height: 200)
+                    //                        .scaledToFill()
+                    //                        .padding(20)
+                    //
                     
                     NavigationLink(destination: SignUpQuestionPage3(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: location).environmentObject(sessionManager)) {
                         
@@ -1397,11 +1395,11 @@ struct SignUpQuestionPage3: View {
                 Button(action: {
                     
                     let pushManager = PushNotificationManager(userID: username)
-
                     
-
+                    
+                    
                     print("Part 1")
-
+                    
                     let user = User(
                         id: username,
                         firstName: firstName,
@@ -1421,11 +1419,11 @@ struct SignUpQuestionPage3: View {
                         chatFontSize: 16,
                         needIntro: true)
                     print("Part 2")
-
+                    
                     print("This user: ", user)
                     
                     userMamager.create(user)
-
+                    
                     print("Part 3")
                     
                     print("Part 4")
@@ -1437,9 +1435,9 @@ struct SignUpQuestionPage3: View {
                     )
                     
                     print("Part 2")
-
-//                    pushManager.registerForPushNotifications()
-
+                    
+                    //                    pushManager.registerForPushNotifications()
+                    
                     
                     
                     print("Part 6")
@@ -1450,7 +1448,7 @@ struct SignUpQuestionPage3: View {
                     usernameDoc.usernames?.append(username)
                     docDS.updateDoc(doc: emailDoc)
                     docDS.updateDoc(doc: usernameDoc)
-                                        
+                    
                 }) {
                     Text("Submit")
                         .font(.title)
@@ -1498,7 +1496,7 @@ struct SignUpPage1_Previews : PreviewProvider {
     static var previews: some View {
         
         //
-                        SignUpPage1().environmentObject(SessionManager())
+        SignUpPage1().environmentObject(SessionManager())
         //                SignUpPage2(firstName: "").environmentObject(SessionManager())
         //                SignUpPage3(firstName: "", lastName: "").environmentObject(SessionManager())
         //                SignUpPage4(firstName: "", lastName: "", username: "").environmentObject(SessionManager())
@@ -1506,13 +1504,13 @@ struct SignUpPage1_Previews : PreviewProvider {
         //                        SignUpPage6(firstName: "", lastName: "", username: "", password: "", email: "").environmentObject(SessionManager())
         //                SignUpPage7(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "").environmentObject(SessionManager())
         //        SignUpPage8(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date()).environmentObject(SessionManager())
-//        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
+        //        SignUpPage9(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "").environmentObject(SessionManager())
         //
-//                    SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
-//
-//                SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
-//
-//                    SignUpQuestionPage3(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+        //                    SignUpQuestionPage1(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+        //
+        //                SignUpQuestionPage2(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
+        //
+        //                    SignUpQuestionPage3(firstName: "", lastName: "", username: "", password: "", email: "", pronouns: "", birthdate: Date(), currentPin: "", location: "").environmentObject(SessionManager())
         
         
     }
