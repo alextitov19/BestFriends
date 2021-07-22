@@ -130,10 +130,11 @@ struct ShakingCoolView: View {
         let user = UserDataSource().getCurrentUser()
         print("Got user: ", user)
         shakingCoolLinks = []
-        let links = user.shakingCool
-        if links != nil {
-            shakingCoolLinks = links!
-            print("Links: ", links!)
+        let shakingCool = user.shakingCool
+        if shakingCool != nil {
+            for cool in shakingCool! {
+                shakingCoolLinks.append(cool.link)
+            }
         }
         print("Shaking Cool Links: ", shakingCoolLinks)
         chosenID = user.id
