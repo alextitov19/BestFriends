@@ -18,7 +18,7 @@ struct IntroPopups: View {
                 update()
             }) {
                 VStack {
-                    Text("To Chat: 1) add friends, 2) tap friend's stars, 3) tap [Invite] \n We'll quickly find them for you.")
+                    Text("To Chat: 1) add friends, 2) tap friend's stars, 3) tap [Invite].")
                         .frame(width: 300, height: 75)
                         .font(.system(size: 20, weight: .medium))
                         .multilineTextAlignment(.center)
@@ -38,7 +38,7 @@ struct IntroPopups: View {
                 update()
             }) {
                 VStack {
-                    Text("Swipe <-- (bottom of page), showing icons")
+                    Text("Swipe <-- (bottom of screen), showing icons")
                         .frame(width: 300, height: 75)
                         .font(.system(size: 20, weight: .medium))
                         .multilineTextAlignment(.center)

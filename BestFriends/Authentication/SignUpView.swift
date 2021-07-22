@@ -462,7 +462,7 @@ struct SignUpPage5: View {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 20)
                 
                 Button(action: {
                     isValidEmail()
@@ -1060,7 +1060,7 @@ struct SignUpPage9: View {
             VStack {
                 
                 
-                Text("Tough day, looking for a smile?")
+                Text("Tough day, looking for your smile?")
                     .font(.system(size: 50))
                     .fontWeight(.regular)
                     .italic()
@@ -1089,23 +1089,25 @@ struct SignUpPage9: View {
 //                    .scaledToFill()
 //                    .padding(20)
 
-                Text("Shake your phone and see what pops up.")
+                Text("ONE, Shake your phone, what pops up will manke you smile.")
+                    .italic()
                     .font(.system(size: 20))
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 400, height: 50)
+                    .frame(width: 200, height: 150)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 125)
+                    .frame(height: 50)
                 
-                Text("We save previous smiles in SmileVault.")
+                Text("TWO, Check your SmileVault for your saved smiles.")
+                    .italic()
                     .font(.system(size: 20))
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 400, height: 50)
+                    .frame(width: 200, height: 150)
                     .multilineTextAlignment(.center)
                 
                 
