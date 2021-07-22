@@ -11,6 +11,8 @@ struct SettingsView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+    @State private var loadingShowing = false
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -55,8 +57,8 @@ struct SettingsView: View {
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             
-
-                                
+                            
+                            
                             
                             Spacer().frame(height: 20)
                             
@@ -67,8 +69,8 @@ struct SettingsView: View {
                                 .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                               
-                                
+                            
+                            
                             
                             
                             
@@ -119,37 +121,40 @@ struct SettingsView: View {
                             .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                        Spacer().frame(height: 20)
-//
-//
-//                        NavigationLink(
-//                            destination: BlueModePage1(),
-//                            label: {
-//                                Text("BlueMode")
-//                            })
-//                            .frame(width: 225, height: 50)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 17))
-//                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-//                            .cornerRadius(25)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
+                        //
+                        //                        Spacer().frame(height: 20)
+                        //
+                        //
+                        //                        NavigationLink(
+                        //                            destination: BlueModePage1(),
+                        //                            label: {
+                        //                                Text("BlueMode")
+                        //                            })
+                        //                            .frame(width: 225, height: 50)
+                        //                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        //                            .font(.system(size: 17))
+                        //                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        //                            .cornerRadius(25)
+                        //                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        //
                         VStack {
                             
                             Spacer().frame(height: 20)
                             
-                            NavigationLink(
-                                destination: ShakingCoolView(),
-                                label: {
-                                    Text("Setup ShakingCool")
-                                })
-                                .frame(width: 225, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 17))
-                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            Button(action: {
+                                loadingShowing = true
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                    sessionManager.showShakingCool()
+                                }
+                            }) {
+                                Text("Setup ShakingCool")
+                                    .frame(width: 225, height: 50)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 17))
+                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                    .cornerRadius(25)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            }
                             
                             
                             Spacer().frame(height: 20)
@@ -447,7 +452,7 @@ struct SettingsView: View {
                                                             .background(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
                                                             .cornerRadius(25)
                                                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                                            
+                                                        
                                                     }
                                                     
                                                     Spacer()
@@ -491,6 +496,27 @@ struct SettingsView: View {
                                 sessionManager.showSmileNotes()
                             }
                             .padding(20)
+                        
+                    }
+                }
+                
+                if loadingShowing == true {
+                    ZStack {
+                        Image("Firstname")
+                            .resizable()
+                            .ignoresSafeArea()
+                            .scaledToFill()
+                        
+                        Text("Loading...")
+                            .frame(width: 200, height: 40, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30, weight: .ultraLight))
+                            .cornerRadius(25)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 75)
+                                    .stroke(Color.white, lineWidth: 1)
+                            )
+                            .offset(y: 100)
                         
                     }
                 }

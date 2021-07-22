@@ -18,9 +18,12 @@ struct ShakingCoolView: View {
     @State private var chosenID = ""
     @State private var choosingRecipient = false
     @State private var myid = ""
+    @State private var needToLoad = true
+    
+    @State private var images: [UIImage] = []
     
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     private var shakingCoolDataSource = ShakingCoolDataSource()
     
     var body: some View {
@@ -68,33 +71,29 @@ struct ShakingCoolView: View {
                 Spacer().frame(height: 30)
                 
                 ScrollView(showsIndicators: false) {
-                    ForEach(shakingCool, id: \.id) { cool in
-                        let name = cool.intendedid == myid ? "Myself" : cool.intendedname
+                    ForEach(shakingCool.indices, id: \.self) { index in
+                        let name = shakingCool[index].intendedid == myid ? "Myself" : shakingCool[index].intendedname
                         VStack {
                             Text(name)
                                 .foregroundColor(.white)
                                 .font(.system(size: 20, weight: .light))
                                 .padding()
                             
-                            Image(uiImage: shakingCoolDataSource.downloadImage(key: cool.link, rotating: true, tall: false))
+                            Image(uiImage: images[index])
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 200)
                                 .cornerRadius(30)
                                 .onTapGesture {
-                                    chosenID = cool.id
-                                    shakingCoolDataSource.deleteImage(id: cool.link)
+                                    chosenID = shakingCool[index].id
+                                    shakingCoolDataSource.deleteImage(id: shakingCool[index].link)
                                     reloadData()
                                     showingImagePicker = true
-                                    
                                 }
                             
                             Spacer()
                                 .frame(height: 30)
                         }
-                        
-                        
-                        
                     }
                 }
                 Spacer()
@@ -166,33 +165,37 @@ struct ShakingCoolView: View {
     }
     
     private func reloadData() {
-        let userDS = UserDataSource()
-        let user = userDS.getCurrentUser()
-        myid = user.id
-        print("Got user: ", user)
-        shakingCool = []
-        if user.shakingCool != nil {
-            shakingCool = user.shakingCool!
-        }
-        print("Shaking Cool: ", shakingCool)
-        chosenID = user.id
-        var mycounter = 0
-        availableIDs = user.friends ?? []
+            print("reloading Shaking cool")
+            let userDS = UserDataSource()
+            let user = userDS.getCurrentUser()
+            myid = user.id
+            print("Got user: ", user)
+            shakingCool = []
+            if user.shakingCool != nil {
+                shakingCool = user.shakingCool!
+            }
+            print("Shaking Cool: ", shakingCool)
+            chosenID = user.id
+            var mycounter = 0
+            availableIDs = user.friends ?? []
+            for cool in shakingCool {
+                if cool.intendedid == user.id {
+                    mycounter += 1
+                }
+                if let index = availableIDs.firstIndex(of: cool.intendedid) {
+                    availableIDs.remove(at: index)
+                }
+            }
+            for id in availableIDs {
+                availableNames.append(userDS.getUser(id: id).firstName)
+            }
+            if mycounter < 2 {
+                availableIDs.insert(user.id, at: 0)
+                availableNames.insert("Myself", at: 0)
+                print("Added self")
+            }
         for cool in shakingCool {
-            if cool.intendedid == user.id {
-                mycounter += 1
-            }
-            if let index = availableIDs.firstIndex(of: cool.intendedid) {
-                availableIDs.remove(at: index)
-            }
-        }
-        for id in availableIDs {
-            availableNames.append(userDS.getUser(id: id).firstName)
-        }
-        if mycounter < 2 {
-            availableIDs.insert(user.id, at: 0)
-            availableNames.insert("Myself", at: 0)
-            print("Added self")
+            images.append(shakingCoolDataSource.downloadImage(key: cool.link, rotating: true, tall: false))
         }
     }
     

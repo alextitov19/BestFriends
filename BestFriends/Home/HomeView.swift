@@ -84,229 +84,225 @@ struct HomeView: View {
     //    let user: AuthUser
     
     var body: some View {
-        NavigationView {
-            ZStack {
-                Image("purpleBackground")
-                    .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
-                
-                PlayerView()
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-                VStack {
-                    ForEach(stars.indices, id: \.self) { index in
-                        Button(action: {
-                            print("tap")
-                            if membersOfNewRoom.contains(stars[index].id) {
-                                membersOfNewRoom.remove(at: membersOfNewRoom.firstIndex(of: stars[index].id)!)
-                                stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
-                                print("Color change 1")
-                                stars[index].isSpinning = false
-                            } else {
-                                membersOfNewRoom.append(stars[index].id)
-                                stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
-                                print("Color change 2")
-                                stars[index].isSpinning = true
-                            }
-                            
-                        }) {
-                            stars[index]
-                        }
-                        .offset(x: randomOffsets[index])
-                        .padding(20)
-                    }
-                    
-                    Spacer()
-                    
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            Spacer()
-                                .frame(width: 500)
-                            
-                            Button(action: {
-                                //Display invite menu
-                                self.showingActionSheet = true
-                                
-                            }) {
-                                Image("person-add icon")
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                
-                            }
-                            .actionSheet(isPresented: $showingActionSheet) {
-                                ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes."), buttons: [
-                                    .default(Text("Get my QR code")) { showMyQR() },
-                                    .default(Text("My Gallery")) { self.showingImagePicker = true },
-                                    // Rob added a third option in the Add Friends popup on Landing page
-                                    .default(Text("Add Friend Instructions")) { self.showingAddFriendInstructions = true },
-                                    //
-                                    .cancel()
-                                ])
-                            }
-                            .padding(6)
-                            
-                            Image("chat icon")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                                .onTapGesture {
-                                    sessionManager.showRooms()
-                                }
-                                .padding(8)
-                                .sheet(isPresented: $showingAddFriendInstructions) {
-                                    AddFriendSteps()
-                                }
-                            
-                            Image("happy-face icon")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                                .onTapGesture {
-                                    sessionManager.showSmileNotes()
-                                }
-                                .padding(8)
-                                .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                                    ImagePicker(image: self.$inputImage)
-                                }
-                            
-                            NavigationLink(
-                                destination: ShakingCoolView(),
-                                label: {
-                                    Image("whitePhone")
-                                        .resizable()
-                                        .frame(width: 40, height: 40)
-                                        .scaledToFill()
-                                })
-                                .padding(8)
-                            
-                            
-                            
-                            
-                            
-                            Image("settings icon")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                                .onTapGesture {
-                                    sessionManager.showSettings()
-                                }
-                                .padding(8)
-                            
-                            Image("whiteBell")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                                .onTapGesture {
-                                    withAnimation {
-                                        notificationsShowing.toggle()
-                                        if notificationsShowing == false {
-                                            var user = USS.user
-                                            user.pendingNotifications = []
-                                            userDataSource.updateUser(user: user)
-                                        }
-                                    }
-                                }
-                            
-                            Spacer()
-                                .frame(width: 50)
-                            
-                        }
-                    }
-                    .offset(y: 30)
-                }
-                
-                if membersOfNewRoom.count > 0 {
+        ZStack {
+            Image("purpleBackground")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
+            PlayerView()
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
+            VStack {
+                ForEach(stars.indices, id: \.self) { index in
                     Button(action: {
-                        if membersOfNewRoom != [] {
-                            withAnimation {
-                                loadingShowing = true
-                            }
+                        print("tap")
+                        if membersOfNewRoom.contains(stars[index].id) {
+                            membersOfNewRoom.remove(at: membersOfNewRoom.firstIndex(of: stars[index].id)!)
+                            stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
+                            print("Color change 1")
+                            stars[index].isSpinning = false
                         } else {
-                            withAnimation {
-                                invitingFriends = false
-                            }
-                            for index in 0..<stars.count {
-                                stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
-                                stars[index].hidingName = true
-                            }
+                            membersOfNewRoom.append(stars[index].id)
+                            stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
+                            print("Color change 2")
+                            stars[index].isSpinning = true
                         }
                         
                     }) {
-                        Text("Invite")
-                            .frame(width: 150, height: 40, alignment: .center)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30, weight: .ultraLight))
-                            .cornerRadius(25)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 75)
-                                    .stroke(Color.white, lineWidth: 1)
-                            )
+                        stars[index]
                     }
-                    .offset(y: 300)
-                    .transition(.scale)
+                    .offset(x: randomOffsets[index])
+                    .padding(20)
                 }
                 
-                if loadingShowing == true {
-                    ZStack {
-                        Image("Firstname")
+                Spacer()
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        Spacer()
+                            .frame(width: 500)
+                        
+                        Button(action: {
+                            //Display invite menu
+                            self.showingActionSheet = true
+                            
+                        }) {
+                            Image("person-add icon")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                            
+                        }
+                        .actionSheet(isPresented: $showingActionSheet) {
+                            ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes."), buttons: [
+                                .default(Text("Get my QR code")) { showMyQR() },
+                                .default(Text("My Gallery")) { self.showingImagePicker = true },
+                                // Rob added a third option in the Add Friends popup on Landing page
+                                .default(Text("Add Friend Instructions")) { self.showingAddFriendInstructions = true },
+                                //
+                                .cancel()
+                            ])
+                        }
+                        .padding(6)
+                        
+                        Image("chat icon")
                             .resizable()
-                            .ignoresSafeArea()
+                            .frame(width: 40, height: 40)
                             .scaledToFill()
-                            .onAppear {
+                            .onTapGesture {
+                                sessionManager.showRooms()
+                            }
+                            .padding(8)
+                            .sheet(isPresented: $showingAddFriendInstructions) {
+                                AddFriendSteps()
+                            }
+                        
+                        Image("happy-face icon")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showSmileNotes()
+                            }
+                            .padding(8)
+                            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                                ImagePicker(image: self.$inputImage)
+                            }
+                        
+                        Image("whitePhone")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                loadingShowing = true
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                    invitingFriends = false
-                                    for index in 0..<stars.count {
-                                        stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
-                                        stars[index].hidingName = true
+                                    sessionManager.showShakingCool()
+                                }
+                            }
+                            .padding(8)
+                        
+                        Image("settings icon")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showSettings()
+                            }
+                            .padding(8)
+                        
+                        Image("whiteBell")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                withAnimation {
+                                    notificationsShowing.toggle()
+                                    if notificationsShowing == false {
+                                        var user = USS.user
+                                        user.pendingNotifications = []
+                                        userDataSource.updateUser(user: user)
                                     }
-                                    inviteSelectedFriends()
                                 }
                             }
                         
-                        Text("Loading...")
-                            .frame(width: 200, height: 40, alignment: .center)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30, weight: .ultraLight))
-                            .cornerRadius(25)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 75)
-                                    .stroke(Color.white, lineWidth: 1)
-                            )
-                            .offset(y: 100)
+                        Spacer()
+                            .frame(width: 50)
                         
                     }
                 }
-                
-                VStack {
-                    if USS.user.pendingNotifications != nil && notificationsShowing == true {
-                        ForEach(USS.user.pendingNotifications!.reversed(), id: \.self) { foo in
-                            Text(foo)
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                .font(.system(size: 17, weight: .regular))
-                                .padding()
+                .offset(y: 30)
+            }
+            
+            if membersOfNewRoom.count > 0 {
+                Button(action: {
+                    if membersOfNewRoom != [] {
+                        withAnimation {
+                            loadingShowing = true
+                        }
+                    } else {
+                        withAnimation {
+                            invitingFriends = false
+                        }
+                        for index in 0..<stars.count {
+                            stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
+                            stars[index].hidingName = true
                         }
                     }
+                    
+                }) {
+                    Text("Invite")
+                        .frame(width: 150, height: 40, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 30, weight: .ultraLight))
+                        .cornerRadius(25)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 75)
+                                .stroke(Color.white, lineWidth: 1)
+                        )
                 }
-                .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
-                .cornerRadius(30)
+                .offset(y: 300)
                 .transition(.scale)
-                
-                if USS.user.needIntro {
-                    IntroPopups()
+            }
+            
+            if loadingShowing == true {
+                ZStack {
+                    Image("Firstname")
+                        .resizable()
+                        .ignoresSafeArea()
+                        .scaledToFill()
+                        .onAppear {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                invitingFriends = false
+                                for index in 0..<stars.count {
+                                    stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
+                                    stars[index].hidingName = true
+                                }
+                                inviteSelectedFriends()
+                            }
+                        }
+                    
+                    Text("Loading...")
+                        .frame(width: 200, height: 40, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 30, weight: .ultraLight))
+                        .cornerRadius(25)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 75)
+                                .stroke(Color.white, lineWidth: 1)
+                        )
+                        .offset(y: 100)
+                    
                 }
             }
-            .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
-            .onAppear(perform: reloadData)
-            .onShake {
-                isShakingCoolPresented = true
+            
+            VStack {
+                if USS.user.pendingNotifications != nil && notificationsShowing == true {
+                    ForEach(USS.user.pendingNotifications!.reversed(), id: \.self) { foo in
+                        Text(foo)
+                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .font(.system(size: 17, weight: .regular))
+                            .padding()
+                    }
+                }
             }
+            .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+            .cornerRadius(30)
+            .transition(.scale)
             
-            
+            if USS.user.needIntro {
+                IntroPopups()
+            }
+        }
+        .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
+        .onAppear(perform: reloadData)
+        .onShake {
+            isShakingCoolPresented = true
         }
         
+        
     }
+    
     
     // MARK: QR Code
     
