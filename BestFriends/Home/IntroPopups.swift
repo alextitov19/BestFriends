@@ -24,13 +24,13 @@ struct IntroPopups: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 25)
+                            RoundedRectangle(cornerRadius: 15)
                                 .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
                         )
                     }
             }
             .background(Color(#colorLiteral(red: 0.6159420609, green: 0.2348094881, blue: 1, alpha: 0.01)))
-            .cornerRadius(30)
+            .cornerRadius(40)
             .isHidden(firstHidden)
             
             Button(action: {
@@ -44,13 +44,14 @@ struct IntroPopups: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
                         .overlay(
-                            RoundedRectangle(cornerRadius: 25)
+                            RoundedRectangle(cornerRadius: 15)
                                 .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
                         )
                     }
             }
             .background(Color(#colorLiteral(red: 0.6159420609, green: 0.2348094881, blue: 1, alpha: 0.01)))
-            .offset(y: 200)
+            .cornerRadius(40)
+            .offset(y: 300)
             .isHidden(secondHidden)
         }
     }

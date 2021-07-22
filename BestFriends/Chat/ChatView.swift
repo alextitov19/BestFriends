@@ -45,7 +45,7 @@ struct ChatView: View {
     var room: Room
     var lastRead: Int?
     
-    //    var timer = Timer.publish(every: 3000, on: .main, in: .common).autoconnect()
+    var timer = Timer.publish(every: 60, on: .main, in: .common).autoconnect()
     
     @State private var adButtonOffset: Float = 0
     
@@ -100,22 +100,24 @@ struct ChatView: View {
             //                .onAppear {
             //                    checkHidden()
             //                }
-            //                .onReceive(timer) { time in
-            //                    print("Showing an ad")
-            //                    showAd()
-            //                }
+            
             
             AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
+            
             //
-            //            AdPlayerView(name: "purpleChat")
-            //                .ignoresSafeArea()
-            //                .isHidden(!areAdsHidden)
+            AdPlayerView(name: "first")
+                .ignoresSafeArea()
+                .isHidden(!areAdsHidden)
             
             VStack {
                 HStack { //header
                     Text("< Back")
                         .foregroundColor(.white)
+                        .onReceive(timer) { time in
+                            print("Showing an ad")
+                            showAd()
+                        }
                         .onTapGesture {
                             sessionManager.showRooms()
                         }
