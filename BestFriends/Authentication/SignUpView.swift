@@ -1413,7 +1413,7 @@ struct SignUpQuestionPage3: View {
                         isOnline: true,
                         secretPin: currentPin,
                         tokens: 0,
-                        background: 1,
+                        background: 0,
                         notificationsBM: true,
                         notificationsLP: true,
                         chatFontSize: 16,

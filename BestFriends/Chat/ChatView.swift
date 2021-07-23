@@ -23,26 +23,26 @@ struct ChatView: View {
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
     @State var adButtonsOffset: CGFloat = -270
-
+    
     @State var areAdsHidden = true
-//    @State var currentAdIndex = 0
-//    @State var currentLink = ""
-//    @State var currentLikes = 0
-//    @State var hasLiked = false
-//    @State var hasClickedLink = false
-//    @Environment(\.openURL) var openURL
-//    @State var adButtonsHidden = true
-//    @State var roomname = ""
-//    @State var presentingDashboard = false
+    //    @State var currentAdIndex = 0
+    //    @State var currentLink = ""
+    //    @State var currentLikes = 0
+    //    @State var hasLiked = false
+    //    @State var hasClickedLink = false
+    //    @Environment(\.openURL) var openURL
+    //    @State var adButtonsHidden = true
+    //    @State var roomname = ""
+    //    @State var presentingDashboard = false
     @State var showingNotifications = false
     
-//    var adIDs: [String] = []
-//    var adNames: [String] = []
+    //    var adIDs: [String] = []
+    //    var adNames: [String] = []
     
-//    let adDataSource = AdDataSource()
+    //    let adDataSource = AdDataSource()
     let userDataSource = UserDataSource()
-    
-    
+    let backgroundImage: Image?
+    let index: Int
     var user: User
     var room: Room
     var lastRead: Int?
@@ -57,8 +57,15 @@ struct ChatView: View {
         self.user = UserDataSource().getCurrentUser()
         self.messageDataSource = MessageDataSource(room: room)
         self.room = room
+        index = user.background
+        if index == -1 {
+            self.backgroundImage = Image(uiImage: ShakingCoolDataSource().downloadImage(key: user.backgroundImageLink!, rotating: true, tall: true))
+        } else {
+            self.backgroundImage = nil
+        }
         messageDataSource.createSubscription()
         
+
         //        let adDoc = adDataSource.getAdDocuemnt()
         //        let ids = adDoc.documents ?? []
         //        self.adIDs = ids
@@ -103,14 +110,38 @@ struct ChatView: View {
             //                    checkHidden()
             //                }
             
+            switch index {
+            case -1:
+                GeometryReader { geo in
+                    backgroundImage!
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                        .frame(width: geo.size.width, height: geo.size.height + 100)
+                        .offset(y: -50)
+                    }
+
+            case 0:
+                AdPlayerView(name: "FieldFlowers")
+                    .ignoresSafeArea()
+            case 1:
+                AdPlayerView(name: "blueRoad")
+                    .ignoresSafeArea()
+            case 2:
+                AdPlayerView(name: "rainForest")
+                    .ignoresSafeArea()
+            case 3:
+                AdPlayerView(name: "Skateboard")
+                    .ignoresSafeArea()
+            default:
+                AdPlayerView(name: "FieldFlowers")
+                    .ignoresSafeArea()
+            }
             
-            AdPlayerView(name: "FieldFlowers")
-                .ignoresSafeArea()
             
             //
             if areAdsHidden == false {
-            AdPlayerView(name: "first")
-                .ignoresSafeArea()
+                AdPlayerView(name: "first")
+                    .ignoresSafeArea()
             }
             
             VStack {
@@ -283,55 +314,55 @@ struct ChatView: View {
                 }
             }
             
-//            if adButtonsHidden == false {
-                VStack { // Advertisement Buttons
-                    ZStack {
-                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
-                            .frame(width: 60, height: 60)
-                            .cornerRadius(30)
-                        
-                        Image("whiteHeart")
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                            .scaledToFit()
-                            .foregroundColor(.white)
-                            .onTapGesture {
-//                                hasLiked = true
-                                withAnimation {
-                                    adButtonsOffset = -270
-                                }
-                            }
-                        
-                        Text("25")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15))
-                    }
+            //            if adButtonsHidden == false {
+            VStack { // Advertisement Buttons
+                ZStack {
+                    Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
+                        .frame(width: 60, height: 60)
+                        .cornerRadius(30)
                     
-                    Spacer().frame(height: 10)
-                    
-                    ZStack {
-                        Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
-                            .frame(width: 60, height: 60)
-                            .cornerRadius(30)
-                        
-                        Image("whiteLink")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .scaledToFit()
-                            .foregroundColor(.white)
-                            .onTapGesture {
-//                                hasClickedLink = true
-//                                doneWithAd()
-//                                openURL(URL(string: currentLink)!)
-                                withAnimation {
-                                    adButtonsOffset = -270
-                                }
+                    Image("whiteHeart")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .scaledToFit()
+                        .foregroundColor(.white)
+                        .onTapGesture {
+                            //                                hasLiked = true
+                            withAnimation {
+                                adButtonsOffset = -270
                             }
-                    }
+                        }
+                    
+                    Text("25")
+                        .foregroundColor(.white)
+                        .font(.system(size: 15))
                 }
-                .offset(x: adButtonsOffset)
-                .transition(.move(edge: .leading))
-//            }
+                
+                Spacer().frame(height: 10)
+                
+                ZStack {
+                    Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
+                        .frame(width: 60, height: 60)
+                        .cornerRadius(30)
+                    
+                    Image("whiteLink")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFit()
+                        .foregroundColor(.white)
+                        .onTapGesture {
+                            //                                hasClickedLink = true
+                            //                                doneWithAd()
+                            //                                openURL(URL(string: currentLink)!)
+                            withAnimation {
+                                adButtonsOffset = -270
+                            }
+                        }
+                }
+            }
+            .offset(x: adButtonsOffset)
+            .transition(.move(edge: .leading))
+            //            }
             //
             //            if presentingDashboard {
             //                BlueModeUserDashboard()
@@ -404,10 +435,10 @@ struct ChatView: View {
     private func showAd() {
         print("Showing ad")
         areAdsHidden = false
-//        let ad = adDataSource.getAd(id: adIDs[currentAdIndex])
-//        let seconds = ad.duration
-//        currentLikes = ad.likes
-//        currentLink = ad.adLink
+        //        let ad = adDataSource.getAd(id: adIDs[currentAdIndex])
+        //        let seconds = ad.duration
+        //        currentLikes = ad.likes
+        //        currentLink = ad.adLink
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             // After ad is fully shown once
             areAdsHidden = true
@@ -423,27 +454,27 @@ struct ChatView: View {
         
     }
     
-//    private func doneWithAd() {
-//        var ad = adDataSource.getAd(id: adIDs[currentAdIndex])
-//        var user = userDataSource.getCurrentUser()
-//        user.tokens += 1
-//        ad.views += 1
-//        if hasLiked {
-//            ad.likes += 1
-//        }
-//        if hasClickedLink {
-//            ad.clicks += 1
-//            user.tokens += 3
-//        }
-//        adDataSource.updateAd(ad: ad)
-//        userDataSource.updateUser(user: user)
-//        adButtonsHidden = true
-//        if currentAdIndex < adIDs.count - 1 {
-//            currentAdIndex += 1
-//        }
-//        hasClickedLink = false
-//        hasLiked = false
-//    }
+    //    private func doneWithAd() {
+    //        var ad = adDataSource.getAd(id: adIDs[currentAdIndex])
+    //        var user = userDataSource.getCurrentUser()
+    //        user.tokens += 1
+    //        ad.views += 1
+    //        if hasLiked {
+    //            ad.likes += 1
+    //        }
+    //        if hasClickedLink {
+    //            ad.clicks += 1
+    //            user.tokens += 3
+    //        }
+    //        adDataSource.updateAd(ad: ad)
+    //        userDataSource.updateUser(user: user)
+    //        adButtonsHidden = true
+    //        if currentAdIndex < adIDs.count - 1 {
+    //            currentAdIndex += 1
+    //        }
+    //        hasClickedLink = false
+    //        hasLiked = false
+    //    }
     
     
 }
