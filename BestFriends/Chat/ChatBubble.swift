@@ -13,7 +13,9 @@ struct ChatBubble: View {
     let message: Message
     let user: User
     let messageDataSource: MessageDataSource
-    @State var showingActionSheet = false
+    @State private var showingActionSheet = false
+    @State private var isImagePresented = false
+    @State private var currentLink = ""
     
     init(msg: Message, messageDS: MessageDataSource, myuser: User) {
         message = msg
@@ -23,49 +25,29 @@ struct ChatBubble: View {
     
     var body: some View {
         
-        if message.attachmentPath != nil {
-            // A message that was sent with an image (no body text, just image)
-            let uiimage = messageDataSource.downloadImage(key: message.attachmentPath!)
-            
-            VStack {
-                
-                Text(message.senderName)
-                    .frame(width: 100, height: 12)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.white)
-                    .font(.system(size: CGFloat(user.chatFontSize)).weight(.thin))
-                
-                Image(uiImage: uiimage)
-                    .resizable()
-                    .scaledToFit()
-                    //                    .frame(width: 300, height: 200)
-                    //                    .aspectRatio(uiimage.size, contentMode: .fill)
-                    .gesture(LongPressGesture(minimumDuration: 1)
-                                .onEnded { _ in
-                                    showingActionSheet = true
-                                })
-            }
-            .actionSheet(isPresented: $showingActionSheet) {
-                ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
-                    .default(Text("Save to SmileNotes")) {
-                        messageDataSource.saveToSmileNotes(message: message)
-                    },
-                    .default(Text("Report as abusive")) {
-                        messageDataSource.reportMessage(message: message)
-                    },
-                    .cancel()
-                ])
-            }
-            
-            
-        } else if message.senderID == user.id {
+        if message.senderID == user.id {
             // A message sent by the CURRENT USED
             
             VStack {
                 HStack {
                     Spacer()
                     
-                    if message.stickerNumber != nil {
+                    if message.attachmentPath != nil {
+                        Text("Show image")
+                            .padding(10)
+                            .multilineTextAlignment(.leading)
+                            .font(.system(size: CGFloat(user.chatFontSize)).weight(.light))
+                            .foregroundColor(.white)
+                            .background(Color(#colorLiteral(red: 1, green: 0.6660452485, blue: 0, alpha: 1)))
+                            .cornerRadius(15)
+                            .onTapGesture {
+                                isImagePresented.toggle()
+                            }
+                            .sheet(isPresented: $isImagePresented) {
+                                FullScreenChatImage(link: message.attachmentPath!)
+                                    }
+
+                    } else if message.stickerNumber != nil {
                         Image(uiImage: messageDataSource.downloadImage(key: "Stickers/Sticker\(message.stickerNumber!).png"))
                             .resizable()
                             .frame(width: 150, height: 150)
@@ -114,7 +96,23 @@ struct ChatBubble: View {
                 }
                 
                 HStack {
-                    if message.stickerNumber != nil {
+                    if message.attachmentPath != nil {
+                        Text("Show image")
+                            .padding(10)
+                            .multilineTextAlignment(.leading)
+                            .font(.system(size: CGFloat(user.chatFontSize)).weight(.light))
+                            .foregroundColor(.white)
+                            .background(Color(#colorLiteral(red: 1, green: 0.6660452485, blue: 0, alpha: 1)))
+                            .cornerRadius(15)
+                            .onTapGesture {
+                                isImagePresented.toggle()
+                            }
+                            .sheet(isPresented: $isImagePresented) {
+                                FullScreenChatImage(link: message.attachmentPath!)
+                                    
+                                    }
+                        
+                    } else if message.stickerNumber != nil {
                         Image(uiImage: messageDataSource.downloadImage(key: "Stickers/Sticker\(message.stickerNumber!).png"))
                             .resizable()
                             .frame(width: 150, height: 150)
@@ -149,8 +147,6 @@ struct ChatBubble: View {
             }
             .padding(5)
         }
-        
-        
     }
     
     func getWidth(text: String) -> CGFloat {
@@ -168,4 +164,5 @@ struct ChatBubble: View {
     }
     
 }
+
 

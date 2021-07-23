@@ -360,6 +360,7 @@
 		7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201122635D5F500C9F00C /* Room+Extensions.swift */; };
 		7AAB444A265C619A00488983 /* ShakingCoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB4449265C619A00488983 /* ShakingCoolView.swift */; };
 		7AAB444C265C6B6800488983 /* ShakingCoolDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB444B265C6B6800488983 /* ShakingCoolDataSource.swift */; };
+		7AB070EF26AA564600425C27 /* FullScreenChatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB070EE26AA564600425C27 /* FullScreenChatImage.swift */; };
 		7AB62A8526426F86005A7744 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB62A8426426F86005A7744 /* SettingsView.swift */; };
 		7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC0DA9B262BAF3B007FC643 /* UserManager.swift */; };
 		7AC783612389637F132A43F6 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22146DA7D2C4FF68985049A /* Room.swift */; };
@@ -868,6 +869,7 @@
 		7AA201122635D5F500C9F00C /* Room+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+Extensions.swift"; sourceTree = "<group>"; };
 		7AAB4449265C619A00488983 /* ShakingCoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolView.swift; sourceTree = "<group>"; };
 		7AAB444B265C6B6800488983 /* ShakingCoolDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolDataSource.swift; sourceTree = "<group>"; };
+		7AB070EE26AA564600425C27 /* FullScreenChatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenChatImage.swift; sourceTree = "<group>"; };
 		7AB62A8426426F86005A7744 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7AC0DA9B262BAF3B007FC643 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		7AC8564126585CD20045D145 /* LiquidSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidSwipe.swift; sourceTree = "<group>"; };
@@ -1014,6 +1016,7 @@
 				7A95EA5726530DDA00C6C700 /* PinView.swift */,
 				7AD8376A267E9A24005A2D48 /* SmileNotePopover.swift */,
 				7A01A96626939DA40047BB35 /* StickerPopover.swift */,
+				7AB070EE26AA564600425C27 /* FullScreenChatImage.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -2119,6 +2122,7 @@
 				7A9361F426A8EC8800737B56 /* InvitedRoom.swift in Sources */,
 				C8845F886324357CFA9E6929 /* User+Schema.swift in Sources */,
 				6FBBEC621158EA8CCBC8A2C0 /* User.swift in Sources */,
+				7AB070EF26AA564600425C27 /* FullScreenChatImage.swift in Sources */,
 				CD4C6B0426C3F5FA51400B0B /* Advertisement+Schema.swift in Sources */,
 				B40C98230B3E3F4DD31ED216 /* Advertisement.swift in Sources */,
 				D23501371A456A0EA4CCA9DF /* AmplifyModels.swift in Sources */,
