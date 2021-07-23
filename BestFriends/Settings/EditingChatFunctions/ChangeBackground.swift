@@ -12,27 +12,35 @@ import AVKit
 
 struct ChangeBackground: View {
     
+    @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
+    @State private var changeBackgroundSuccess = false
+    
     var body: some View {
         ZStack {
             Image("changeBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+                .zIndex(-1)
             
             VStack {
                 Text("Looping videos")
                     .foregroundColor(.white)
                     .font(.system(size: 25, weight: .regular))
-                
+                    .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                        ImagePicker(image: self.$inputImage)
+                    }
                 Spacer()
             }
             .offset(y: -75)
+            .zIndex(-1)
             //Start of IMAGE BACKGROUNDS
             VStack {
                 //Start of VIDEO BACKGROUNDS
                 HStack {
                     VStack {
-                        VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
+                        AdPlayerView(name: "FieldFlowers")
                             .frame(width: 150, height: 250)
                             //                                .cornerRadius(25)
                             .border(Color.white, width: 2)
@@ -46,7 +54,7 @@ struct ChangeBackground: View {
                     .padding()
                     
                     VStack {
-                        VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
+                        AdPlayerView(name: "blueRoad")
                             .frame(width: 150, height: 250)
                             //                                .cornerRadius(25)
                             .border(Color.white, width: 2)
@@ -62,7 +70,7 @@ struct ChangeBackground: View {
                 
                 HStack {
                     VStack {
-                        VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
+                        AdPlayerView(name: "rainForest")
                             .frame(width: 150, height: 250)
                             //                                .cornerRadius(25)
                             .border(Color.white, width: 2)
@@ -76,7 +84,7 @@ struct ChangeBackground: View {
                     .padding()
                     
                     VStack {
-                        VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
+                        AdPlayerView(name: "Skateboard")
                             .frame(width: 150, height: 250)
                             //                                .cornerRadius(25)
                             .border(Color.white, width: 2)
@@ -90,13 +98,33 @@ struct ChangeBackground: View {
                     .padding()
                 }
                 
-                Button("Upload Gallery Image", action: { uploadCustom() })
+                Button("Upload Gallery Image", action: { showingImagePicker = true })
                     .frame(width: 200, height: 40)
                     .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
                     .foregroundColor(.white)
                     .cornerRadius(25)
             }
             .offset(y: -40)
+            .zIndex(-1)
+            
+            if changeBackgroundSuccess {
+                Text("Success!")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .frame(width: 250, height: 100)
+                    .background(Color.green)
+                    .cornerRadius(30)
+                    .transition(.scale)
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                            withAnimation {
+                                changeBackgroundSuccess.toggle()
+                            }
+                        }
+                    }
+                    .zIndex(-1)
+            }
+            
         }
     }
     
@@ -105,10 +133,39 @@ struct ChangeBackground: View {
         var user = UserDataSource().getCurrentUser()
         user.background = index
         UserDataSource().updateUser(user: user)
+        withAnimation {
+            changeBackgroundSuccess.toggle()
+        }
     }
     
-    private func uploadCustom() {
-        
+    private func loadImage() {
+        showingImagePicker = false
+        guard let inputImage = inputImage else { return }
+        print("Got the image")
+        uploadImage(image: inputImage)
+    }
+    
+    private func uploadImage(image: UIImage) {
+        var user = UserDataSource().getCurrentUser()
+        let data = image.pngData()!
+        let key = "Background/" + Helper().randomString(length: 20)
+        Amplify.Storage.uploadData(key: key, data: data,
+                                   progressListener: { progress in
+                                    print("Progress: \(progress)")
+                                   }, resultListener: { (event) in
+                                    switch event {
+                                    case .success(let data):
+                                        print("Completed: \(data)")
+                                        user.backgroundImageLink = key
+                                        user.background = -1
+                                        UserDataSource().updateUser(user: user)
+                                        withAnimation {
+                                            changeBackgroundSuccess.toggle()
+                                        }
+                                    case .failure(let storageError):
+                                        print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+                                    }
+                                   })
     }
 }
 
