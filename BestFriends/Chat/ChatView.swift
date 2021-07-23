@@ -22,7 +22,7 @@ struct ChatView: View {
     
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
-    @State var adButtonsOffset: CGFloat = -165
+    @State var adButtonsOffset: CGFloat = -270
 
     @State var areAdsHidden = true
 //    @State var currentAdIndex = 0
@@ -47,7 +47,7 @@ struct ChatView: View {
     var room: Room
     var lastRead: Int?
     
-    var timer = Timer.publish(every: 60, on: .main, in: .common).autoconnect()
+    var timer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
     
     @State private var adButtonOffset: Float = 0
     
@@ -298,7 +298,7 @@ struct ChatView: View {
                             .onTapGesture {
 //                                hasLiked = true
                                 withAnimation {
-                                    adButtonsOffset = -165
+                                    adButtonsOffset = -270
                                 }
                             }
                         
@@ -324,7 +324,7 @@ struct ChatView: View {
 //                                doneWithAd()
 //                                openURL(URL(string: currentLink)!)
                                 withAnimation {
-                                    adButtonsOffset = -165
+                                    adButtonsOffset = -270
                                 }
                             }
                     }
@@ -412,10 +412,10 @@ struct ChatView: View {
             // After ad is fully shown once
             areAdsHidden = true
             withAnimation {
-                adButtonsOffset = -100
+                adButtonsOffset = -165
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
                     withAnimation {
-                        adButtonsOffset = -165
+                        adButtonsOffset = -270
                     }
                 }
             }
