@@ -255,6 +255,7 @@ mutation CreateUser(
     chatFontSize
     pendingNotifications
     needIntro
+    backgroundImageLink
     createdAt
     updatedAt
   }
@@ -311,6 +312,7 @@ mutation UpdateUser(
     chatFontSize
     pendingNotifications
     needIntro
+    backgroundImageLink
     createdAt
     updatedAt
   }
@@ -367,6 +369,7 @@ mutation DeleteUser(
     chatFontSize
     pendingNotifications
     needIntro
+    backgroundImageLink
     createdAt
     updatedAt
   }

@@ -225,6 +225,7 @@ subscription OnCreateUser {
     chatFontSize
     pendingNotifications
     needIntro
+    backgroundImageLink
     createdAt
     updatedAt
   }
@@ -278,6 +279,7 @@ subscription OnUpdateUser {
     chatFontSize
     pendingNotifications
     needIntro
+    backgroundImageLink
     createdAt
     updatedAt
   }
@@ -331,6 +333,7 @@ subscription OnDeleteUser {
     chatFontSize
     pendingNotifications
     needIntro
+    backgroundImageLink
     createdAt
     updatedAt
   }

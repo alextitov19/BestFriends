@@ -74,6 +74,7 @@ type User @model {
   chatFontSize: Int!
   pendingNotifications: [String]
   needIntro: Boolean!
+  backgroundImageLink: String
 }
 
 type InvitedRoom {
