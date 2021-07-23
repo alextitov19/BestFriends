@@ -22,22 +22,24 @@ struct ChatView: View {
     
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
+    @State var adButtonsOffset: CGFloat = -165
+
     @State var areAdsHidden = true
-    @State var currentAdIndex = 0
-    @State var currentLink = ""
-    @State var currentLikes = 0
-    @State var hasLiked = false
-    @State var hasClickedLink = false
-    @Environment(\.openURL) var openURL
-    @State var adButtonsHidden = true
-    @State var roomname = ""
-    @State var presentingDashboard = false
+//    @State var currentAdIndex = 0
+//    @State var currentLink = ""
+//    @State var currentLikes = 0
+//    @State var hasLiked = false
+//    @State var hasClickedLink = false
+//    @Environment(\.openURL) var openURL
+//    @State var adButtonsHidden = true
+//    @State var roomname = ""
+//    @State var presentingDashboard = false
     @State var showingNotifications = false
     
-    var adIDs: [String] = []
-    var adNames: [String] = []
+//    var adIDs: [String] = []
+//    var adNames: [String] = []
     
-    let adDataSource = AdDataSource()
+//    let adDataSource = AdDataSource()
     let userDataSource = UserDataSource()
     
     
@@ -106,9 +108,10 @@ struct ChatView: View {
                 .ignoresSafeArea()
             
             //
+            if areAdsHidden == false {
             AdPlayerView(name: "first")
                 .ignoresSafeArea()
-                .isHidden(!areAdsHidden)
+            }
             
             VStack {
                 HStack { //header
@@ -280,7 +283,7 @@ struct ChatView: View {
                 }
             }
             
-            if adButtonsHidden == false {
+//            if adButtonsHidden == false {
                 VStack { // Advertisement Buttons
                     ZStack {
                         Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
@@ -293,10 +296,13 @@ struct ChatView: View {
                             .scaledToFit()
                             .foregroundColor(.white)
                             .onTapGesture {
-                                hasLiked = true
+//                                hasLiked = true
+                                withAnimation {
+                                    adButtonsOffset = -165
+                                }
                             }
                         
-                        Text("\(currentLikes)")
+                        Text("25")
                             .foregroundColor(.white)
                             .font(.system(size: 15))
                     }
@@ -314,15 +320,18 @@ struct ChatView: View {
                             .scaledToFit()
                             .foregroundColor(.white)
                             .onTapGesture {
-                                hasClickedLink = true
-                                doneWithAd()
-                                openURL(URL(string: currentLink)!)
+//                                hasClickedLink = true
+//                                doneWithAd()
+//                                openURL(URL(string: currentLink)!)
+                                withAnimation {
+                                    adButtonsOffset = -165
+                                }
                             }
                     }
                 }
-                .offset(x: -165)
+                .offset(x: adButtonsOffset)
                 .transition(.move(edge: .leading))
-            }
+//            }
             //
             //            if presentingDashboard {
             //                BlueModeUserDashboard()
@@ -395,44 +404,46 @@ struct ChatView: View {
     private func showAd() {
         print("Showing ad")
         areAdsHidden = false
-        let ad = adDataSource.getAd(id: adIDs[currentAdIndex])
-        let seconds = ad.duration
-        currentLikes = ad.likes
-        currentLink = ad.adLink
-        DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+//        let ad = adDataSource.getAd(id: adIDs[currentAdIndex])
+//        let seconds = ad.duration
+//        currentLikes = ad.likes
+//        currentLink = ad.adLink
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             // After ad is fully shown once
             areAdsHidden = true
             withAnimation {
-                adButtonsHidden = false
+                adButtonsOffset = -100
                 DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                    doneWithAd()
+                    withAnimation {
+                        adButtonsOffset = -165
+                    }
                 }
             }
         }
         
     }
     
-    private func doneWithAd() {
-        var ad = adDataSource.getAd(id: adIDs[currentAdIndex])
-        var user = userDataSource.getCurrentUser()
-        user.tokens += 1
-        ad.views += 1
-        if hasLiked {
-            ad.likes += 1
-        }
-        if hasClickedLink {
-            ad.clicks += 1
-            user.tokens += 3
-        }
-        adDataSource.updateAd(ad: ad)
-        userDataSource.updateUser(user: user)
-        adButtonsHidden = true
-        if currentAdIndex < adIDs.count - 1 {
-            currentAdIndex += 1
-        }
-        hasClickedLink = false
-        hasLiked = false
-    }
+//    private func doneWithAd() {
+//        var ad = adDataSource.getAd(id: adIDs[currentAdIndex])
+//        var user = userDataSource.getCurrentUser()
+//        user.tokens += 1
+//        ad.views += 1
+//        if hasLiked {
+//            ad.likes += 1
+//        }
+//        if hasClickedLink {
+//            ad.clicks += 1
+//            user.tokens += 3
+//        }
+//        adDataSource.updateAd(ad: ad)
+//        userDataSource.updateUser(user: user)
+//        adButtonsHidden = true
+//        if currentAdIndex < adIDs.count - 1 {
+//            currentAdIndex += 1
+//        }
+//        hasClickedLink = false
+//        hasLiked = false
+//    }
     
     
 }

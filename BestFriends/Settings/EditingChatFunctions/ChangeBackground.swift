@@ -26,73 +26,73 @@ struct ChangeBackground: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("Static images")
-                        .foregroundColor(.white)
-                        .font(.system(size: 25, weight: .regular))
-                    
-                    HStack {
-                        VStack {
-                            Image("purpleBackground")
-                                .resizable()
-                                .frame(width: 150, height: 250)
-                                //                                .cornerRadius(25)
-                                .border(Color.white, width: 2)
-                            
-                            Button("Select", action: { saveData(index: 1) })
-                                .frame(width: 110, height: 40)
-                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-                                .foregroundColor(.white)
-                                .cornerRadius(25)
-                        }
-                        .padding()
-                        
-                        VStack {
-                            Image("blueBackground")
-                                .resizable()
-                                .frame(width: 150, height: 250)
-                                //                                .cornerRadius(25)
-                                .border(Color.white, width: 2)
-                            
-                            Button("Select", action: { saveData(index: 2) })
-                                .frame(width: 110, height: 40)
-                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-                                .foregroundColor(.white)
-                                .cornerRadius(25)
-                        }
-                        .padding()
-                    }
-                    
-                    HStack {
-                        VStack {
-                            Image("blueGradient1")
-                                .resizable()
-                                .frame(width: 150, height: 250)
-                                //                                .cornerRadius(25)
-                                .border(Color.white, width: 2)
-                            
-                            Button("Select", action: { saveData(index: 3) })
-                                .frame(width: 110, height: 40)
-                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-                                .foregroundColor(.white)
-                                .cornerRadius(25)
-                        }
-                        .padding()
-                        
-                        VStack {
-                            Image("blueGradient2")
-                                .resizable()
-                                .frame(width: 150, height: 250)
-                                //                                .cornerRadius(25)
-                                .border(Color.white, width: 2)
-                            
-                            Button("Select", action: { saveData(index: 4) })
-                                .frame(width: 110, height: 40)
-                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-                                .foregroundColor(.white)
-                                .cornerRadius(25)
-                        }
-                        .padding()
-                    }
+//                    Text("Static images")
+//                        .foregroundColor(.white)
+//                        .font(.system(size: 25, weight: .regular))
+//
+//                    HStack {
+//                        VStack {
+//                            Image("purpleBackground")
+//                                .resizable()
+//                                .frame(width: 150, height: 250)
+//                                //                                .cornerRadius(25)
+//                                .border(Color.white, width: 2)
+//
+//                            Button("Select", action: { saveData(index: 1) })
+//                                .frame(width: 110, height: 40)
+//                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+//                                .foregroundColor(.white)
+//                                .cornerRadius(25)
+//                        }
+//                        .padding()
+//
+//                        VStack {
+//                            Image("blueBackground")
+//                                .resizable()
+//                                .frame(width: 150, height: 250)
+//                                //                                .cornerRadius(25)
+//                                .border(Color.white, width: 2)
+//
+//                            Button("Select", action: { saveData(index: 2) })
+//                                .frame(width: 110, height: 40)
+//                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+//                                .foregroundColor(.white)
+//                                .cornerRadius(25)
+//                        }
+//                        .padding()
+//                    }
+//
+//                    HStack {
+//                        VStack {
+//                            Image("blueGradient1")
+//                                .resizable()
+//                                .frame(width: 150, height: 250)
+//                                //                                .cornerRadius(25)
+//                                .border(Color.white, width: 2)
+//
+//                            Button("Select", action: { saveData(index: 3) })
+//                                .frame(width: 110, height: 40)
+//                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+//                                .foregroundColor(.white)
+//                                .cornerRadius(25)
+//                        }
+//                        .padding()
+//
+//                        VStack {
+//                            Image("blueGradient2")
+//                                .resizable()
+//                                .frame(width: 150, height: 250)
+//                                //                                .cornerRadius(25)
+//                                .border(Color.white, width: 2)
+//
+//                            Button("Select", action: { saveData(index: 4) })
+//                                .frame(width: 110, height: 40)
+//                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+//                                .foregroundColor(.white)
+//                                .cornerRadius(25)
+//                        }
+//                        .padding()
+//                    }
                     
                     //Start of VIDEO BACKGROUNDS
                     Text("Looping videos")
