@@ -13,6 +13,7 @@ struct RoomsView: View {
     
     @ObservedObject var dataSource = RoomDataSource()
     @State private var showingActionSheet = false
+    @State private var loadingShowing = false
     @EnvironmentObject var sessionManager: SessionManager
     
     
@@ -44,7 +45,12 @@ struct RoomsView: View {
                             ForEach(dataSource.rooms) { room in
                                 if room.creatorID == UserDataSource().getCurrentUser().id {
                                     RoomRow(room: room)
-                                        .onTapGesture { sessionManager.chat(room: room) }
+                                        .onTapGesture {
+                                            loadingShowing = true
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                sessionManager.chat(room: room)
+                                            }
+                                        }
                                         .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
                                         .actionSheet(isPresented: $showingActionSheet) {
                                             ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room. Since you made it, you can also delete the chat room."), buttons: [
@@ -62,7 +68,12 @@ struct RoomsView: View {
                                         .padding()
                                 } else {
                                     RoomRow(room: room)
-                                        .onTapGesture { sessionManager.chat(room: room) }
+                                        .onTapGesture {
+                                            loadingShowing = true
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                sessionManager.chat(room: room)
+                                            }
+                                        }
                                         .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
                                         .actionSheet(isPresented: $showingActionSheet) {
                                             ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room."), buttons: [
@@ -112,7 +123,31 @@ struct RoomsView: View {
                 }
                 .padding()
             }
-        }
+            if loadingShowing == true {
+                ZStack {
+                    Color(#colorLiteral(red: 0.6986119747, green: 0.2623180151, blue: 1, alpha: 1))
+                        .ignoresSafeArea()
+                    
+                    Image("FatGuy")
+                        .resizable()
+                        .frame(width: 300, height: 300)
+                        .scaledToFill()
+                        .offset(y: -100)
+                    
+                    Text("Loading...")
+                        .frame(width: 200, height: 40, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 30, weight: .ultraLight))
+                        .cornerRadius(25)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 75)
+                                .stroke(Color.white, lineWidth: 1)
+                        )
+                        .offset(y: 100)
+                    
+                }
+            }
+        }        
     }
 }
 

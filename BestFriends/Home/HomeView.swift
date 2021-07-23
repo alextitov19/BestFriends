@@ -154,7 +154,10 @@ struct HomeView: View {
                             .frame(width: 40, height: 40)
                             .scaledToFill()
                             .onTapGesture {
-                                sessionManager.showRooms()
+                                loadingShowing = true
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    sessionManager.showRooms()
+                                }
                             }
                             .padding(8)
                             .sheet(isPresented: $showingAddFriendInstructions) {
@@ -166,7 +169,10 @@ struct HomeView: View {
                             .frame(width: 40, height: 40)
                             .scaledToFill()
                             .onTapGesture {
-                                sessionManager.showSmileNotes()
+                                loadingShowing = true
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    sessionManager.showSmileNotes()
+                                }
                             }
                             .padding(8)
                             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
@@ -179,7 +185,7 @@ struct HomeView: View {
                             .scaledToFill()
                             .onTapGesture {
                                 loadingShowing = true
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                     sessionManager.showShakingCool()
                                 }
                             }
@@ -190,7 +196,10 @@ struct HomeView: View {
                             .frame(width: 40, height: 40)
                             .scaledToFill()
                             .onTapGesture {
-                                sessionManager.showSettings()
+                                loadingShowing = true
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    sessionManager.showSettings()
+                                }
                             }
                             .padding(8)
                         
