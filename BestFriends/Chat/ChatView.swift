@@ -65,7 +65,7 @@ struct ChatView: View {
         }
         messageDataSource.createSubscription()
         
-
+        
         //        let adDoc = adDataSource.getAdDocuemnt()
         //        let ids = adDoc.documents ?? []
         //        self.adIDs = ids
@@ -114,12 +114,12 @@ struct ChatView: View {
             case -1:
                 GeometryReader { geo in
                     backgroundImage!
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
                         .frame(width: geo.size.width, height: geo.size.height + 100)
                         .offset(y: -50)
-                    }
-
+                }
+                
             case 0:
                 AdPlayerView(name: "FieldFlowers")
                     .ignoresSafeArea()
@@ -154,6 +154,15 @@ struct ChatView: View {
                         }
                         .onTapGesture {
                             sessionManager.showRooms()
+                        }
+                        .onReceive(NotificationCenter.default.publisher(for: UIApplication.userDidTakeScreenshotNotification)) { _ in
+                            print("Screenshot taken")
+                            sendScreenCaptureNotification(video: false)
+                            
+                        }
+                        .onReceive(NotificationCenter.default.publisher(for: UIScreen.capturedDidChangeNotification)) { _ in
+                            print("Screen recording")
+                            sendScreenCaptureNotification(video: true)
                         }
                     
                     //                    ZStack {
@@ -452,6 +461,19 @@ struct ChatView: View {
             }
         }
         
+    }
+    
+    private func sendScreenCaptureNotification(video: Bool) {
+        var recipients = room.members
+        let body = video ? "\(user.firstName) screen recorded chat!" : "\(user.firstName) screenshotted chat!"
+        print("Body: ", body)
+        if let index = recipients.firstIndex(of: user.id) {
+            recipients.remove(at: index)
+        }
+        for recipient in recipients {
+            let foo = userDataSource.getUser(id: recipient)
+            PushNotificationSender().sendPushNotification(token: foo.deviceFCMToken, title: "Watch out!", body: body)
+        }
     }
     
     //    private func doneWithAd() {
