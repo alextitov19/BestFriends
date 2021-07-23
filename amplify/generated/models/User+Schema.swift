@@ -32,6 +32,7 @@ extension User {
     case chatFontSize
     case pendingNotifications
     case needIntro
+    case backgroundImageLink
   }
   
   public static let keys = CodingKeys.self
@@ -69,7 +70,8 @@ extension User {
       .field(user.notificationsLP, is: .required, ofType: .bool),
       .field(user.chatFontSize, is: .required, ofType: .int),
       .field(user.pendingNotifications, is: .optional, ofType: .embeddedCollection(of: String.self)),
-      .field(user.needIntro, is: .required, ofType: .bool)
+      .field(user.needIntro, is: .required, ofType: .bool),
+      .field(user.backgroundImageLink, is: .optional, ofType: .string)
     )
     }
 }

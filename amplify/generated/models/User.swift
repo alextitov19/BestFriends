@@ -30,6 +30,7 @@ public struct User: Model {
   public var chatFontSize: Int
   public var pendingNotifications: [String]?
   public var needIntro: Bool
+  public var backgroundImageLink: String?
   
   public init(id: String = UUID().uuidString,
       firstName: String,
@@ -57,7 +58,8 @@ public struct User: Model {
       notificationsLP: Bool,
       chatFontSize: Int,
       pendingNotifications: [String]? = [],
-      needIntro: Bool) {
+      needIntro: Bool,
+      backgroundImageLink: String? = nil) {
       self.id = id
       self.firstName = firstName
       self.lastName = lastName
@@ -85,5 +87,6 @@ public struct User: Model {
       self.chatFontSize = chatFontSize
       self.pendingNotifications = pendingNotifications
       self.needIntro = needIntro
+      self.backgroundImageLink = backgroundImageLink
   }
 }
