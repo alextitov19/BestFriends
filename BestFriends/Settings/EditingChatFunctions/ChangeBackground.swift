@@ -19,151 +19,85 @@ struct ChangeBackground: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            ScrollView {
+            VStack {
+                Text("Looping videos")
+                    .foregroundColor(.white)
+                    .font(.system(size: 25, weight: .regular))
                 
-                //Start of IMAGE BACKGROUNDS
-                VStack {
-                    Spacer()
-                        .frame(height: 50)
-                    
-//                    Text("Static images")
-//                        .foregroundColor(.white)
-//                        .font(.system(size: 25, weight: .regular))
-//
-//                    HStack {
-//                        VStack {
-//                            Image("purpleBackground")
-//                                .resizable()
-//                                .frame(width: 150, height: 250)
-//                                //                                .cornerRadius(25)
-//                                .border(Color.white, width: 2)
-//
-//                            Button("Select", action: { saveData(index: 1) })
-//                                .frame(width: 110, height: 40)
-//                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-//                                .foregroundColor(.white)
-//                                .cornerRadius(25)
-//                        }
-//                        .padding()
-//
-//                        VStack {
-//                            Image("blueBackground")
-//                                .resizable()
-//                                .frame(width: 150, height: 250)
-//                                //                                .cornerRadius(25)
-//                                .border(Color.white, width: 2)
-//
-//                            Button("Select", action: { saveData(index: 2) })
-//                                .frame(width: 110, height: 40)
-//                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-//                                .foregroundColor(.white)
-//                                .cornerRadius(25)
-//                        }
-//                        .padding()
-//                    }
-//
-//                    HStack {
-//                        VStack {
-//                            Image("blueGradient1")
-//                                .resizable()
-//                                .frame(width: 150, height: 250)
-//                                //                                .cornerRadius(25)
-//                                .border(Color.white, width: 2)
-//
-//                            Button("Select", action: { saveData(index: 3) })
-//                                .frame(width: 110, height: 40)
-//                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-//                                .foregroundColor(.white)
-//                                .cornerRadius(25)
-//                        }
-//                        .padding()
-//
-//                        VStack {
-//                            Image("blueGradient2")
-//                                .resizable()
-//                                .frame(width: 150, height: 250)
-//                                //                                .cornerRadius(25)
-//                                .border(Color.white, width: 2)
-//
-//                            Button("Select", action: { saveData(index: 4) })
-//                                .frame(width: 110, height: 40)
-//                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-//                                .foregroundColor(.white)
-//                                .cornerRadius(25)
-//                        }
-//                        .padding()
-//                    }
-                    
-                    //Start of VIDEO BACKGROUNDS
-                    Text("Looping videos")
-                        .foregroundColor(.white)
-                        .font(.system(size: 25, weight: .regular))
-                    
-                    HStack {
-                        VStack {
-                            VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
-                                .frame(width: 150, height: 250)
-                                //                                .cornerRadius(25)
-                                .border(Color.white, width: 2)
-                            
-                            Button("Select", action: { saveData(index: 101) })
-                                .frame(width: 110, height: 40)
-                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-                                .foregroundColor(.white)
-                                .cornerRadius(25)
-                        }
-                        .padding()
-                        
-                        VStack {
-                            VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
-                                .frame(width: 150, height: 250)
-                                //                                .cornerRadius(25)
-                                .border(Color.white, width: 2)
-                            
-                            Button("Select", action: { saveData(index: 102) })
-                                .frame(width: 110, height: 40)
-                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-                                .foregroundColor(.white)
-                                .cornerRadius(25)
-                        }
-                        .padding()
-                    }
-                    
-                    HStack {
-                        VStack {
-                            VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
-                                .frame(width: 150, height: 250)
-                                //                                .cornerRadius(25)
-                                .border(Color.white, width: 2)
-                            
-                            Button("Select", action: { saveData(index: 103) })
-                                .frame(width: 110, height: 40)
-                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-                                .foregroundColor(.white)
-                                .cornerRadius(25)
-                        }
-                        .padding()
-                        
-                        VStack {
-                            VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
-                                .frame(width: 150, height: 250)
-                                //                                .cornerRadius(25)
-                                .border(Color.white, width: 2)
-                            
-                            Button("Select", action: { saveData(index: 104) })
-                                .frame(width: 110, height: 40)
-                                .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
-                                .foregroundColor(.white)
-                                .cornerRadius(25)
-                        }
-                        .padding()
-                    }
-                }
+                Spacer()
             }
-            .ignoresSafeArea()
+            .offset(y: -75)
+            //Start of IMAGE BACKGROUNDS
+            VStack {
+                //Start of VIDEO BACKGROUNDS
+                HStack {
+                    VStack {
+                        VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
+                            .frame(width: 150, height: 250)
+                            //                                .cornerRadius(25)
+                            .border(Color.white, width: 2)
+                        
+                        Button("Select", action: { saveData(index: 0) })
+                            .frame(width: 110, height: 40)
+                            .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+                            .foregroundColor(.white)
+                            .cornerRadius(25)
+                    }
+                    .padding()
+                    
+                    VStack {
+                        VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
+                            .frame(width: 150, height: 250)
+                            //                                .cornerRadius(25)
+                            .border(Color.white, width: 2)
+                        
+                        Button("Select", action: { saveData(index: 1) })
+                            .frame(width: 110, height: 40)
+                            .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+                            .foregroundColor(.white)
+                            .cornerRadius(25)
+                    }
+                    .padding()
+                }
+                
+                HStack {
+                    VStack {
+                        VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
+                            .frame(width: 150, height: 250)
+                            //                                .cornerRadius(25)
+                            .border(Color.white, width: 2)
+                        
+                        Button("Select", action: { saveData(index: 2) })
+                            .frame(width: 110, height: 40)
+                            .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+                            .foregroundColor(.white)
+                            .cornerRadius(25)
+                    }
+                    .padding()
+                    
+                    VStack {
+                        VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "CityMopeds", withExtension: "mp4")!))
+                            .frame(width: 150, height: 250)
+                            //                                .cornerRadius(25)
+                            .border(Color.white, width: 2)
+                        
+                        Button("Select", action: { saveData(index: 3) })
+                            .frame(width: 110, height: 40)
+                            .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+                            .foregroundColor(.white)
+                            .cornerRadius(25)
+                    }
+                    .padding()
+                }
+                
+                Button("Upload Gallery Image", action: { uploadCustom() })
+                    .frame(width: 200, height: 40)
+                    .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
+                    .foregroundColor(.white)
+                    .cornerRadius(25)
+            }
+            .offset(y: -40)
         }
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
     }
     
     private func saveData(index: Int) {
@@ -171,6 +105,10 @@ struct ChangeBackground: View {
         var user = UserDataSource().getCurrentUser()
         user.background = index
         UserDataSource().updateUser(user: user)
+    }
+    
+    private func uploadCustom() {
+        
     }
 }
 
