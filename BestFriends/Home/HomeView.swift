@@ -103,11 +103,13 @@ struct HomeView: View {
                             stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
                             print("Color change 1")
                             stars[index].isSpinning = false
+                            stars[index].hidingName = false
                         } else {
                             membersOfNewRoom.append(stars[index].id)
                             stars[index].image = Image(uiImage: UIImage(named: "starBlue")!)
                             print("Color change 2")
                             stars[index].isSpinning = true
+                            stars[index].hidingName = true
                         }
                         
                     }) {
