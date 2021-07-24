@@ -268,7 +268,7 @@ struct HomeView: View {
                                 .stroke(Color.white, lineWidth: 1)
                         )
                 }
-                .offset(y: 300)
+                .offset(y: 330)
                 .transition(.scale)
             }
             
