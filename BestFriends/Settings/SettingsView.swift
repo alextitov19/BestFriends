@@ -147,7 +147,7 @@ struct SettingsView: View {
                                     sessionManager.showShakingCool()
                                 }
                             }) {
-                                Text("Setup ShakingCool")
+                                Text("Setup Phone Shake")
                                     .frame(width: 225, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 17))
