@@ -189,7 +189,7 @@ struct ChatView: View {
                     //                    .padding()
                     
                     Text(room.name)
-                        .font(.system(size: 25, weight: .light))
+                        .font(.system(size: 16, weight: .light))
                         .frame(width: 200)
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
