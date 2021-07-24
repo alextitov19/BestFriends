@@ -35,6 +35,8 @@ struct HomeView: View {
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
     //    @State private var inviteMode = false
     
+    private let starTimings = [1.0, 2.0, 4.0, 4.5, 5.0]
+    
     @State private var selectedFriends = []
     
     @State var idsToInvite: [String] = []
@@ -77,7 +79,9 @@ struct HomeView: View {
                 }
             }
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) { inviteClicked() }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.5) { inviteClicked() }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 14.0) { inviteClicked() }
+
         }
     }
     
@@ -412,14 +416,17 @@ struct HomeView: View {
     private func displayStars() {
         print("Friend count: ", friendIDs.count)
         
-        for friendID in friendIDs {
-            let user = userDataSource.getUser(id: friendID)
-            guard let initial = user.lastName.first else { return }
-            var name = user.firstName + " "
-            name.append(initial)
-            let star = Star(id: user.id, name: name)
-            print("Successfully added a star for user: ", user.id)
-            stars.append(star)
+        for index in friendIDs.indices {
+                DispatchQueue.main.asyncAfter(deadline: .now() + starTimings[index]) {
+
+                let user = userDataSource.getUser(id: friendIDs[index])
+                guard let initial = user.lastName.first else { return }
+                var name = user.firstName + " "
+                name.append(initial)
+                let star = Star(id: user.id, name: name)
+                print("Successfully added a star for user: ", user.id)
+                stars.append(star)
+            }
         }
     }
     
