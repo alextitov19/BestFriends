@@ -31,7 +31,10 @@ struct HomeView: View {
     @State private var showingAddFriendInstructions = false
     @State private var notificationsShowing = false
     @State private var loadingShowing = false
+    @State private var isAtMaxScale = false
     
+    private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
+
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
     //    @State private var inviteMode = false
     
@@ -223,6 +226,14 @@ struct HomeView: View {
                             .resizable()
                             .frame(width: 40, height: 40)
                             .scaledToFill()
+                            .scaleEffect(isAtMaxScale ? 1 : 0.5)
+                            .onAppear {
+                                if USS.user.pendingNotifications != nil {
+                                    withAnimation(self.animation, {
+                                        self.isAtMaxScale.toggle()
+                                    })
+                                }
+                            }
                             .onTapGesture {
                                 withAnimation {
                                     notificationsShowing.toggle()

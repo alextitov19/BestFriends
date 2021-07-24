@@ -35,7 +35,11 @@ struct ChatView: View {
     //    @State var roomname = ""
     //    @State var presentingDashboard = false
     @State var showingNotifications = false
-    
+    @State private var notificationsShowing = false
+    @State private var isAtMaxScale = false
+    private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
+    @ObservedObject var USS: UserSubscriptionService
+
     //    var adIDs: [String] = []
     //    var adNames: [String] = []
     
@@ -46,7 +50,6 @@ struct ChatView: View {
     var user: User
     var room: Room
     var lastRead: Int?
-    
     var timer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
     
     @State private var adButtonOffset: Float = 0
@@ -54,16 +57,22 @@ struct ChatView: View {
     
     init(room: Room) {
         print("Did init")
-        self.user = UserDataSource().getCurrentUser()
+        let foo = UserDataSource().getCurrentUser()
+        self.user = foo
+        self.USS = UserSubscriptionService(user: foo)
         self.messageDataSource = MessageDataSource(room: room)
         self.room = room
+        
+        
         index = user.background
         if index == -1 {
             self.backgroundImage = Image(uiImage: ShakingCoolDataSource().downloadImage(key: user.backgroundImageLink!, rotating: true, tall: true))
         } else {
             self.backgroundImage = nil
         }
-        messageDataSource.createSubscription()
+        
+
+        
         
         
         //        let adDoc = adDataSource.getAdDocuemnt()
@@ -83,6 +92,10 @@ struct ChatView: View {
         //                lastRead = room.lastSeenByMember1
         //            }
         //        }
+        
+        USS.createSubscription()
+        messageDataSource.createSubscription()
+        
     }
     
     private func checkHidden() {
@@ -197,14 +210,28 @@ struct ChatView: View {
                     Spacer()
                         .frame(width: 200)
                     
-                    Button(action: {
-                        showingNotifications = true
-                    }) {
-                        Image("whiteBell")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .scaledToFit()
-                    }
+                    Image("bell")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .scaleEffect(isAtMaxScale ? 1 : 0.5)
+                        .onAppear {
+                            if USS.user.pendingNotifications != nil {
+                                withAnimation(self.animation, {
+                                    self.isAtMaxScale.toggle()
+                                })
+                            }
+                        }
+                        .onTapGesture {
+                            withAnimation {
+                                notificationsShowing.toggle()
+                                if notificationsShowing == false {
+                                    var user = USS.user
+                                    user.pendingNotifications = []
+                                    userDataSource.updateUser(user: user)
+                                }
+                            }
+                        }
                     
                     Button(action: {
                         hideChat()
@@ -423,6 +450,20 @@ struct ChatView: View {
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
+            
+            VStack {
+                if USS.user.pendingNotifications != nil && notificationsShowing == true {
+                    ForEach(USS.user.pendingNotifications!.reversed(), id: \.self) { foo in
+                        Text(foo)
+                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .font(.system(size: 17, weight: .regular))
+                            .padding()
+                    }
+                }
+            }
+            .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+            .cornerRadius(30)
+            .transition(.scale)
         }
         
         

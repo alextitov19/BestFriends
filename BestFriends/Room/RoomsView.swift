@@ -18,7 +18,9 @@ struct RoomsView: View {
     @State private var showingActionSheet = false
     @State private var loadingShowing = false
     @State private var notificationsShowing = false
-    
+    @State private var isAtMaxScale = false
+    private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
+
     @EnvironmentObject var sessionManager: SessionManager
     
     
@@ -174,6 +176,14 @@ struct RoomsView: View {
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
+                        .scaleEffect(isAtMaxScale ? 1 : 0.5)
+                        .onAppear {
+                            if USS.user.pendingNotifications != nil {
+                                withAnimation(self.animation, {
+                                    self.isAtMaxScale.toggle()
+                                })
+                            }
+                        }
                         .onTapGesture {
                             withAnimation {
                                 notificationsShowing.toggle()

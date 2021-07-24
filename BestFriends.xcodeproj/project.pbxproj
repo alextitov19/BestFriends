@@ -380,6 +380,7 @@
 		7A724D2F26AC62910079AA85 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A724D1A26AC62910079AA85 /* Room+Schema.swift */; };
 		7A724D3026AC62910079AA85 /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A724D1B26AC62910079AA85 /* ReportedMessage+Schema.swift */; };
 		7A724D3226AC6E800079AA85 /* AdViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A724D3126AC6E800079AA85 /* AdViews.swift */; };
+		7A724D3426AC7C010079AA85 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A724D3326AC7C010079AA85 /* Shake.swift */; };
 		7A782E7A0EB4D5B449763B6B /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		7A7F6E38264305AA0022F078 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F6E37264305AA0022F078 /* ChatBubble.swift */; };
 		7A934002264FC94900BB5972 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934001264FC94900BB5972 /* PushNotificationSender.swift */; };
@@ -929,6 +930,7 @@
 		7A724D1A26AC62910079AA85 /* Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Room+Schema.swift"; sourceTree = "<group>"; };
 		7A724D1B26AC62910079AA85 /* ReportedMessage+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReportedMessage+Schema.swift"; sourceTree = "<group>"; };
 		7A724D3126AC6E800079AA85 /* AdViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViews.swift; sourceTree = "<group>"; };
+		7A724D3326AC7C010079AA85 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		7A7F6E37264305AA0022F078 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		7A934001264FC94900BB5972 /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
 		7A95EA5726530DDA00C6C700 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
@@ -1155,7 +1157,7 @@
 				7A2B1F5C26A645F500EDBEAF /* ThreeCircles.swift */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
-				7AF35CB32699EB6700A396CE /* Helper.swift */,
+				7A724D3526AC7C150079AA85 /* Helpers */,
 				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
 				7A244F8626A7D276000F49ED /* ManDocDataSource.swift */,
 			);
@@ -1168,6 +1170,15 @@
 				7A71BD052625292B00E6FA9E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7A724D3526AC7C150079AA85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7AF35CB32699EB6700A396CE /* Helper.swift */,
+				7A724D3326AC7C010079AA85 /* Shake.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		7A8943D2262CCA84008F7582 /* Home */ = {
@@ -2061,6 +2072,7 @@
 				3F745CAB293BF50524C47B75 /* User.swift in Sources */,
 				8ECC486A736398CBC5C8176F /* Advertisement+Schema.swift in Sources */,
 				7F10E209B0F56FDB8820D823 /* Advertisement.swift in Sources */,
+				7A724D3426AC7C010079AA85 /* Shake.swift in Sources */,
 				E4336FC4D3CED51210F23387 /* AmplifyModels.swift in Sources */,
 				7B152F6AA865D9F23B3A7191 /* InvitedRoom+Schema.swift in Sources */,
 				2705DB8351569E013F539821 /* InvitedRoom.swift in Sources */,
