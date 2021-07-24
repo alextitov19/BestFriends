@@ -379,6 +379,7 @@
 		7A724D2E26AC62910079AA85 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A724D1926AC62910079AA85 /* User+Schema.swift */; };
 		7A724D2F26AC62910079AA85 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A724D1A26AC62910079AA85 /* Room+Schema.swift */; };
 		7A724D3026AC62910079AA85 /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A724D1B26AC62910079AA85 /* ReportedMessage+Schema.swift */; };
+		7A724D3226AC6E800079AA85 /* AdViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A724D3126AC6E800079AA85 /* AdViews.swift */; };
 		7A782E7A0EB4D5B449763B6B /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E83D8ABA3F46EEB8785E44 /* Message+Schema.swift */; };
 		7A7F6E38264305AA0022F078 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F6E37264305AA0022F078 /* ChatBubble.swift */; };
 		7A934002264FC94900BB5972 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934001264FC94900BB5972 /* PushNotificationSender.swift */; };
@@ -927,6 +928,7 @@
 		7A724D1926AC62910079AA85 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
 		7A724D1A26AC62910079AA85 /* Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Room+Schema.swift"; sourceTree = "<group>"; };
 		7A724D1B26AC62910079AA85 /* ReportedMessage+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReportedMessage+Schema.swift"; sourceTree = "<group>"; };
+		7A724D3126AC6E800079AA85 /* AdViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViews.swift; sourceTree = "<group>"; };
 		7A7F6E37264305AA0022F078 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		7A934001264FC94900BB5972 /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
 		7A95EA5726530DDA00C6C700 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
@@ -1137,7 +1139,7 @@
 				7AD10453265AB9AF007627FD /* ShakingCool */,
 				7A1DBD602659B1A400EB4B42 /* Extensions */,
 				D15777B22650522200B6551A /* Gestures */,
-				D1577799264D082800B6551A /* SmileNotes */,
+				D1577799264D082800B6551A /* SmileVault */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
 				7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */,
 				7AE31CBD262A9A7F001EC5A3 /* Authentication */,
@@ -1405,14 +1407,15 @@
 			path = "Beauty Fashion";
 			sourceTree = "<group>";
 		};
-		D1577799264D082800B6551A /* SmileNotes */ = {
+		D1577799264D082800B6551A /* SmileVault */ = {
 			isa = PBXGroup;
 			children = (
 				D157779A264D086000B6551A /* SmileNotesView.swift */,
 				7AC8564126585CD20045D145 /* LiquidSwipe.swift */,
 				CF30FF92267E955A000B2730 /* SmileNotesCard.swift */,
+				7A724D3126AC6E800079AA85 /* AdViews.swift */,
 			);
-			path = SmileNotes;
+			path = SmileVault;
 			sourceTree = "<group>";
 		};
 		D15777B22650522200B6551A /* Gestures */ = {
@@ -1988,6 +1991,7 @@
 				4FBA2934E46EF5E7AC96CC8D /* Message.swift in Sources */,
 				B2BFA75B1EB63DCA828B7EDD /* Room+Schema.swift in Sources */,
 				CFA5EBDA269F89D600BFEBA2 /* AddFriendSteps.swift in Sources */,
+				7A724D3226AC6E800079AA85 /* AdViews.swift in Sources */,
 				18ED37E9D3870970C1ACB662 /* User+Schema.swift in Sources */,
 				5E1203C74375F68925ABF177 /* User.swift in Sources */,
 				7B17C46922F00FB584CEC895 /* Advertisement+Schema.swift in Sources */,

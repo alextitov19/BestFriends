@@ -19,7 +19,7 @@ struct ShakingCoolView: View {
     @State private var choosingRecipient = false
     @State private var myid = ""
     @State private var needToLoad = true
-    
+    @State private var isAdPresented = false
     @State private var images: [UIImage] = []
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -116,6 +116,7 @@ struct ShakingCoolView: View {
                     .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                         ImagePicker(image: self.$inputImage)
                     }
+                    .fullScreenCover(isPresented: $isAdPresented, content: ShakingCoolAdView.init)
                     .padding()
                 
                 Text("Return")
@@ -126,12 +127,14 @@ struct ShakingCoolView: View {
                     .cornerRadius(25)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     .onTapGesture {
-                        sessionManager.getCurrentAuthUser()
+                        isAdPresented = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 11) {
+                            sessionManager.getCurrentAuthUser()
+                        }
                     }
                     .padding()
-                
-                
             }
+            
             if choosingRecipient {
                 VStack {
                     ForEach(availableIDs.indices, id: \.self) { index in

@@ -4,18 +4,16 @@ import Amplify
 
 struct SmileNotesView: View {
     
-    @State var messages: [Message] = []
-    @State var cards: [SmileNotesCard] = []
-    @State var displayedCards: [SmileNotesCard] = []
-    @State var index: Int = 0
-    @State var selectedFriendID: String = "All Friends"
-    @State var selectedFriendName: String = "Filter By Friend"
-    @State var hidingFriendButtons: Bool = true
-    @State var friendIDs: [String] = []
-    @State var friendNames: [String] = []
-    
-    
-    
+    @State private var messages: [Message] = []
+    @State private var cards: [SmileNotesCard] = []
+    @State private var displayedCards: [SmileNotesCard] = []
+    @State private var index: Int = 0
+    @State private var selectedFriendID: String = "All Friends"
+    @State private var selectedFriendName: String = "Filter By Friend"
+    @State private var hidingFriendButtons: Bool = true
+    @State private var friendIDs: [String] = []
+    @State private var friendNames: [String] = []
+    @State private var isAdPresented = false
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -28,7 +26,7 @@ struct SmileNotesView: View {
             
             VStack {
                 // MARK: Header
-               
+                
                 Text("SmileVault")
                     .font(.system(size: 40))
                     .fontWeight(.regular)
@@ -36,15 +34,15 @@ struct SmileNotesView: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 50, alignment: .center)
                 
-//                Text("Stop Scrolling. Longtap Chat messages that make you Smile.")
-//                    .italic()
-//                    .font(.system(size: 20))
-//                    .fontWeight(.regular)
-//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                    .multilineTextAlignment(.center)
-//                    .frame(width: 300, height: 75, alignment: .center)
-//                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-//                    .cornerRadius(25)
+                //                Text("Stop Scrolling. Longtap Chat messages that make you Smile.")
+                //                    .italic()
+                //                    .font(.system(size: 20))
+                //                    .fontWeight(.regular)
+                //                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                //                    .multilineTextAlignment(.center)
+                //                    .frame(width: 300, height: 75, alignment: .center)
+                //                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                //                    .cornerRadius(25)
                 
                 
                 
@@ -148,6 +146,7 @@ struct SmileNotesView: View {
                             }
                         }
                         .isHidden(index >= displayedCards.count - 1)
+                        .fullScreenCover(isPresented: $isAdPresented, content: SmileVaultAdView.init)
                     
                 }
                 
@@ -160,7 +159,10 @@ struct SmileNotesView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .onTapGesture {
-                            sessionManager.getCurrentAuthUser()
+                            isAdPresented = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 13) {
+                                sessionManager.getCurrentAuthUser()
+                            }
                         }
                         .padding(20)
                     
@@ -170,7 +172,10 @@ struct SmileNotesView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .onTapGesture {
-                            sessionManager.showRooms()
+                            isAdPresented = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 13) {
+                                sessionManager.showRooms()
+                            }
                         }
                         .padding(20)
                     
@@ -181,7 +186,10 @@ struct SmileNotesView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .onTapGesture {
-                            sessionManager.showSettings()
+                            isAdPresented = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 13) {
+                                sessionManager.showSettings()
+                            }
                         }
                         .padding(20)
                     
