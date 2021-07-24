@@ -38,13 +38,17 @@ struct ShakingCoolView: View {
             
             VStack {
                 // MARK: Header
-                Text("ShakingCool")
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 40, weight: .thin))
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+//                Text("ShakingCool")
+//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                    .font(.system(size: 40, weight: .thin))
+//                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+//                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+//
                 
-                Text("Add 2 images for yourself.\nThen add one for each friend to see.")
+                Spacer()
+                    .frame(height: 50)
+                
+                Text("Add 2 images for yourself and then one for each friend to see when they 'Shake' their phone.")
                     .frame(width: 300, height: 75, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 20, weight: .thin))
@@ -61,14 +65,14 @@ struct ShakingCoolView: View {
                 //                    .multilineTextAlignment(.center)
                 //                    .frame(width: 385, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
-                Spacer().frame(height: 20)
+                Spacer().frame(height: 15)
                 
                 Text("You can add \(howManyLeft()) more image(s)")
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 20, weight: .thin))
                 
                 
-                Spacer().frame(height: 30)
+//                Spacer().frame(height: 30)
                 
                 ScrollView(showsIndicators: false) {
                     ForEach(shakingCool.indices, id: \.self) { index in
@@ -91,23 +95,24 @@ struct ShakingCoolView: View {
                                     showingImagePicker = true
                                 }
                             
-                            Spacer()
-                                .frame(height: 30)
+//                            Spacer()
+//                                .frame(height: 30)
                         }
                     }
                 }
-                Spacer()
-                
+              Spacer()
+              
                 
                 Text("Delete/replace image by tapping")
-                    .font(.system(size: 25, weight: .thin))
+                    .italic()
+                    .font(.system(size: 20, weight: .thin))
                     .foregroundColor(.white)
                 
                 Text("Add Image")
                     .frame(width: 150, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.title)
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
                     .cornerRadius(25)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     .onTapGesture {
@@ -123,7 +128,7 @@ struct ShakingCoolView: View {
                     .frame(width: 150, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
                     .font(.title)
-                    .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                     .cornerRadius(25)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     .onTapGesture {
@@ -132,7 +137,7 @@ struct ShakingCoolView: View {
                             sessionManager.getCurrentAuthUser()
                         }
                     }
-                    .padding()
+//                    .padding()
             }
             
             if choosingRecipient {
