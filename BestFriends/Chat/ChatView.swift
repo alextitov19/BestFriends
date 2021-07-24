@@ -293,6 +293,8 @@ struct ChatView: View {
                         
                         Button(action: {
                             if !currentBody.trimmingCharacters(in: .whitespaces).isEmpty {
+                                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+
                                 // string contains non-whitespace characters
                                 let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
                                 messageDataSource.sendMessage(message: message)
@@ -303,23 +305,24 @@ struct ChatView: View {
                             Image("arrow")
                                 .resizable()
                                 .frame(width: 40, height: 40)
+                                .offset(x: -12)
                         }
                         
                     }
                     .padding()
                     .offset(y: -self.offset)
                     .animation(.spring())
-                    .onAppear {
-                        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { (noti) in
-                            let value = noti.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
-                            let height = value.height
-                            self.offset = height/4
-                        }
-                        
-                        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { (noti) in
-                            self.offset = 0
-                        }
-                    }
+//                    .onAppear {
+//                        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: .main) { (noti) in
+//                            let value = noti.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
+//                            let height = value.height
+//                            self.offset = height/4
+//                        }
+//
+//                        NotificationCenter.default.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: .main) { (noti) in
+//                            self.offset = 0
+//                        }
+//                    }
                     .popover(isPresented: $stickerPopoverShowing) {
                         StickerPopover(messageDataSource: messageDataSource, showSheet: $stickerPopoverShowing, user: user).environmentObject(sessionManager)
                     }

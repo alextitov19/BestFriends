@@ -32,10 +32,19 @@ struct RoomsView: View {
     
     var body: some View {
         ZStack {
-            Image("SignUpPinBackground")
+//            Image("SignUpPinBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+            
+            Image("purpleBackground")
                 .resizable()
-                .ignoresSafeArea()
                 .scaledToFill()
+                .ignoresSafeArea()
+            
+//            PlayerView()
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
             
             VStack {
                 Spacer().frame(height: 20)
@@ -73,7 +82,10 @@ struct RoomsView: View {
                                                 .cancel()
                                             ])
                                         }
+                                        .frame(width: 375)
+                                        .scaledToFit()
                                         .padding()
+                                    
                                 } else {
                                     RoomRow(room: room)
                                         .onTapGesture {
@@ -92,6 +104,8 @@ struct RoomsView: View {
                                                 .cancel()
                                             ])
                                         }
+                                        .frame(width: 300)
+                                        .scaledToFit()
                                         .padding()
                                 }
                             }
@@ -171,7 +185,6 @@ struct RoomsView: View {
                             }
                         }
                 }
-                .offset(y: -40)
             }
             
             
