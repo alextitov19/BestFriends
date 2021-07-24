@@ -79,8 +79,8 @@ struct HomeView: View {
                 }
             }
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5.5) { inviteClicked() }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 14.0) { inviteClicked() }
+            DispatchQueue.main.asyncAfter(deadline: .now() + starTimings[stars.count - 1] + 0.5) { inviteClicked() }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 12.0) { inviteClicked() }
 
         }
     }
