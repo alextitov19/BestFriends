@@ -140,7 +140,7 @@ struct ChatView: View {
             
             //
             if areAdsHidden == false {
-                AdPlayerView(name: "first")
+                AdPlayerView(name: "BestFriendsAd1")
                     .ignoresSafeArea()
             }
             
@@ -208,7 +208,7 @@ struct ChatView: View {
                     }) {
                         Image("whiteLock")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 45, height: 45)
                             .scaledToFit()
                     }
                 }
@@ -270,7 +270,7 @@ struct ChatView: View {
                         }) {
                             Image("camera")
                                 .resizable()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 40, height: 40)
                         }
                         
                         Button(action: {
@@ -278,7 +278,7 @@ struct ChatView: View {
                         }) {
                             Image("stickerWhite")
                                 .resizable()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 37, height: 37)
                         }
                         
                         TextField("Message...", text: $currentBody)
@@ -286,7 +286,7 @@ struct ChatView: View {
                             .frame(maxWidth: 270)
                             .background(Color(#colorLiteral(red: 0.4884749055, green: 0.2207083404, blue: 0.971470058, alpha: 0.3971501029)))
                             .cornerRadius(15)
-                            .padding(10)
+                            .padding(5)
                         
                         Button(action: {
                             if !currentBody.trimmingCharacters(in: .whitespaces).isEmpty {
@@ -299,7 +299,7 @@ struct ChatView: View {
                         }) {
                             Image("arrow")
                                 .resizable()
-                                .frame(width: 30, height: 30)
+                                .frame(width: 40, height: 40)
                         }
                         
                     }
@@ -326,7 +326,7 @@ struct ChatView: View {
             //            if adButtonsHidden == false {
             VStack { // Advertisement Buttons
                 ZStack {
-                    Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
+                    Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1))
                         .frame(width: 60, height: 60)
                         .cornerRadius(30)
                     
@@ -350,7 +350,7 @@ struct ChatView: View {
                 Spacer().frame(height: 10)
                 
                 ZStack {
-                    Color(#colorLiteral(red: 0.8541358113, green: 0.2422761917, blue: 0.5319774747, alpha: 1))
+                    Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1))
                         .frame(width: 60, height: 60)
                         .cornerRadius(30)
                     

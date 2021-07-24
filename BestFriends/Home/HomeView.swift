@@ -142,12 +142,12 @@ struct HomeView: View {
                                 .default(Text("Get my QR code")) { showMyQR() },
                                 .default(Text("My Gallery")) { self.showingImagePicker = true },
                                 // Rob added a third option in the Add Friends popup on Landing page
-                                .default(Text("Add Friend Instructions")) { self.showingAddFriendInstructions = true },
+                                .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
                                 //
                                 .cancel()
                             ])
                         }
-                        .padding(6)
+                        .padding(0)
                         
                         Image("chat icon")
                             .resizable()
@@ -159,7 +159,7 @@ struct HomeView: View {
                                     sessionManager.showRooms()
                                 }
                             }
-                            .padding(8)
+                            .padding(5)
                             .sheet(isPresented: $showingAddFriendInstructions) {
                                 AddFriendSteps()
                             }
@@ -174,7 +174,7 @@ struct HomeView: View {
                                     sessionManager.showSmileNotes()
                                 }
                             }
-                            .padding(8)
+                            .padding(5)
                             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                                 ImagePicker(image: self.$inputImage)
                             }
@@ -189,7 +189,7 @@ struct HomeView: View {
                                     sessionManager.showShakingCool()
                                 }
                             }
-                            .padding(8)
+                            .padding(5)
                         
                         Image("settings icon")
                             .resizable()
@@ -201,7 +201,7 @@ struct HomeView: View {
                                     sessionManager.showSettings()
                                 }
                             }
-                            .padding(8)
+                            .padding(5)
                         
                         Image("horn")
                             .resizable()
@@ -210,7 +210,7 @@ struct HomeView: View {
                             .onTapGesture {
                                 sessionManager.showSettings()
                             }
-                            .padding(8)
+                            .padding(5)
                         
                         Image("bell")
                             .resizable()

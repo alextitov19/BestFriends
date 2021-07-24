@@ -38,7 +38,7 @@ struct IntroPopups: View {
                 update()
             }) {
                 VStack {
-                    Text("To see the navigation icons, swipe left across the bottom of the screen")
+                    Text("To see the navigation icons, swipe left across the bottom of screen")
                         .frame(width: 300, height: 75)
                         .font(.system(size: 20, weight: .medium))
                         .multilineTextAlignment(.center)

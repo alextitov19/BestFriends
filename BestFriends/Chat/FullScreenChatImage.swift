@@ -14,7 +14,7 @@ struct FullScreenChatImage: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.6986119747, green: 0.2623180151, blue: 1, alpha: 1))
+            Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
                 .ignoresSafeArea()
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
