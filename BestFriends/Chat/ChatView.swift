@@ -140,7 +140,7 @@ struct ChatView: View {
             
             //
             if areAdsHidden == false {
-                AdPlayerView(name: "BestFriendsAd1")
+                AdPlayerView(name: "first")
                     .ignoresSafeArea()
             }
             
