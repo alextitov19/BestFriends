@@ -40,7 +40,7 @@ class RoomDataSource: ObservableObject {
             self.rooms.append(getRoom(id: roomID))
         }
         
-        
+        sortRooms()
     }
     
     func sortRooms() {
