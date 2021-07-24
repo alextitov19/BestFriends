@@ -27,7 +27,8 @@ class MessageDataSource: ObservableObject {
                 switch creationResult {
                 case .success:
                     print("Successfully sent a message", message)
-                    
+                    self!.room.timeUpdated = Int(Date().timeIntervalSince1970)
+                    RoomDataSource().updateRoom(room: self!.room)
                 case .failure(let error):
                     print("Message sending error: ", error)
                 }

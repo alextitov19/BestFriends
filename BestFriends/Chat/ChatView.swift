@@ -188,11 +188,14 @@ struct ChatView: View {
                     //                    }
                     //                    .padding()
                     
-                    Text(room.name)
-                        .font(.system(size: 16, weight: .light))
+//                    Text(room.name)
+//                        .font(.system(size: 16, weight: .light))
+//                        .frame(width: 200)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(.white)
+                    
+                    Spacer()
                         .frame(width: 200)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.white)
                     
                     Button(action: {
                         showingNotifications = true

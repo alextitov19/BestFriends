@@ -39,10 +39,16 @@ class RoomDataSource: ObservableObject {
         for roomID in roomIDs {
             self.rooms.append(getRoom(id: roomID))
         }
+        
+        
+    }
+    
+    func sortRooms() {
+        rooms = rooms.sorted(by: { $0.timeUpdated > $1.timeUpdated })
     }
     
     func getRoom(id: String) -> Room {
-        var finalroom = Room(id: "", name: "", creatorID: " ", members: [], messages: [], blueMode: false, lastSeenByMember1: 0, lastSeenByMember2: 0)
+        var finalroom = Room(id: "", name: "", creatorID: " ", members: [], messages: [], timeUpdated: Int(Date().timeIntervalSince1970))
         
         let group = DispatchGroup()
         group.enter()
@@ -92,23 +98,6 @@ class RoomDataSource: ObservableObject {
         }
         group.wait()
         return
-    }
-    
-    func updateRoomName(room: Room, name: String) {
-        var newroom = room
-        newroom.name = name
-        updateRoom(room: newroom)
-    }
-    
-    func updateRoomTime(room: Room, isMember1: Bool) {
-        var newroom = room
-        if isMember1 {
-            newroom.lastSeenByMember1 = Int(Date().timeIntervalSince1970)
-        } else {
-            newroom.lastSeenByMember2 = Int(Date().timeIntervalSince1970)
-        }
-        
-        updateRoom(room: newroom)
     }
     
     func leaveChatRoom(room: Room) {

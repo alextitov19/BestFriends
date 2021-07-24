@@ -14,9 +14,7 @@ subscription OnCreateRoom {
       attachmentPath
       stickerNumber
     }
-    blueMode
-    lastSeenByMember1
-    lastSeenByMember2
+    timeUpdated
     createdAt
     updatedAt
   }
@@ -36,9 +34,7 @@ subscription OnUpdateRoom {
       attachmentPath
       stickerNumber
     }
-    blueMode
-    lastSeenByMember1
-    lastSeenByMember2
+    timeUpdated
     createdAt
     updatedAt
   }
@@ -58,9 +54,7 @@ subscription OnDeleteRoom {
       attachmentPath
       stickerNumber
     }
-    blueMode
-    lastSeenByMember1
-    lastSeenByMember2
+    timeUpdated
     createdAt
     updatedAt
   }

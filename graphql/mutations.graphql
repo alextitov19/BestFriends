@@ -17,9 +17,7 @@ mutation CreateRoom(
       attachmentPath
       stickerNumber
     }
-    blueMode
-    lastSeenByMember1
-    lastSeenByMember2
+    timeUpdated
     createdAt
     updatedAt
   }
@@ -42,9 +40,7 @@ mutation UpdateRoom(
       attachmentPath
       stickerNumber
     }
-    blueMode
-    lastSeenByMember1
-    lastSeenByMember2
+    timeUpdated
     createdAt
     updatedAt
   }
@@ -67,9 +63,7 @@ mutation DeleteRoom(
       attachmentPath
       stickerNumber
     }
-    blueMode
-    lastSeenByMember1
-    lastSeenByMember2
+    timeUpdated
     createdAt
     updatedAt
   }

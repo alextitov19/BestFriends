@@ -453,7 +453,7 @@ struct HomeView: View {
             
             print("Members of chat room: ", membersOfNewRoom)
             
-            let room = Room(name: name, creatorID: USS.user.id, members: membersOfNewRoom, blueMode: false)
+            let room = Room(name: name, creatorID: USS.user.id, members: membersOfNewRoom, timeUpdated: Int(Date().timeIntervalSince1970))
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
             userDataSource.addRoom(room: room)

@@ -251,6 +251,6 @@ struct PinView: View {
 
 struct PinView_Previews : PreviewProvider {
     static var previews: some View {
-        PinView(room: Room(name: "", creatorID: "", blueMode: true))
+        PinView(room: Room(name: "", creatorID: "", timeUpdated: 0))
     }
 }

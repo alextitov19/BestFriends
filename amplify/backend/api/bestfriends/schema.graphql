@@ -4,9 +4,7 @@ type Room @model {
   creatorID: String!
   members: [String!]!
   messages: [Message!]
-  blueMode: Boolean!
-  lastSeenByMember1: AWSTimestamp
-  lastSeenByMember2: AWSTimestamp
+  timeUpdated: AWSTimestamp!
 }
 
 type SmileNote {

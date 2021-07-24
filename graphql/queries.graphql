@@ -14,9 +14,7 @@ query GetRoom($id: ID!) {
       attachmentPath
       stickerNumber
     }
-    blueMode
-    lastSeenByMember1
-    lastSeenByMember2
+    timeUpdated
     createdAt
     updatedAt
   }
@@ -41,9 +39,7 @@ query ListRooms(
         attachmentPath
         stickerNumber
       }
-      blueMode
-      lastSeenByMember1
-      lastSeenByMember2
+      timeUpdated
       createdAt
       updatedAt
     }

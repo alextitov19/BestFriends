@@ -5,8 +5,8 @@ import AWSAppSync
 public struct CreateRoomInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID? = nil, name: String, creatorId: String, members: [String], messages: [MessageInput]? = nil, blueMode: Bool, lastSeenByMember1: Int? = nil, lastSeenByMember2: Int? = nil) {
-    graphQLMap = ["id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2]
+  public init(id: GraphQLID? = nil, name: String, creatorId: String, members: [String], messages: [MessageInput]? = nil, timeUpdated: Int) {
+    graphQLMap = ["id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages, "timeUpdated": timeUpdated]
   }
 
   public var id: GraphQLID? {
@@ -54,30 +54,12 @@ public struct CreateRoomInput: GraphQLMapConvertible {
     }
   }
 
-  public var blueMode: Bool {
+  public var timeUpdated: Int {
     get {
-      return graphQLMap["blueMode"] as! Bool
+      return graphQLMap["timeUpdated"] as! Int
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "blueMode")
-    }
-  }
-
-  public var lastSeenByMember1: Int? {
-    get {
-      return graphQLMap["lastSeenByMember1"] as! Int?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lastSeenByMember1")
-    }
-  }
-
-  public var lastSeenByMember2: Int? {
-    get {
-      return graphQLMap["lastSeenByMember2"] as! Int?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lastSeenByMember2")
+      graphQLMap.updateValue(newValue, forKey: "timeUpdated")
     }
   }
 }
@@ -156,8 +138,8 @@ public struct MessageInput: GraphQLMapConvertible {
 public struct ModelRoomConditionInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(name: ModelStringInput? = nil, creatorId: ModelStringInput? = nil, members: ModelStringInput? = nil, blueMode: ModelBooleanInput? = nil, lastSeenByMember1: ModelIntInput? = nil, lastSeenByMember2: ModelIntInput? = nil, and: [ModelRoomConditionInput?]? = nil, or: [ModelRoomConditionInput?]? = nil, not: ModelRoomConditionInput? = nil) {
-    graphQLMap = ["name": name, "creatorID": creatorId, "members": members, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2, "and": and, "or": or, "not": not]
+  public init(name: ModelStringInput? = nil, creatorId: ModelStringInput? = nil, members: ModelStringInput? = nil, timeUpdated: ModelIntInput? = nil, and: [ModelRoomConditionInput?]? = nil, or: [ModelRoomConditionInput?]? = nil, not: ModelRoomConditionInput? = nil) {
+    graphQLMap = ["name": name, "creatorID": creatorId, "members": members, "timeUpdated": timeUpdated, "and": and, "or": or, "not": not]
   }
 
   public var name: ModelStringInput? {
@@ -187,30 +169,12 @@ public struct ModelRoomConditionInput: GraphQLMapConvertible {
     }
   }
 
-  public var blueMode: ModelBooleanInput? {
+  public var timeUpdated: ModelIntInput? {
     get {
-      return graphQLMap["blueMode"] as! ModelBooleanInput?
+      return graphQLMap["timeUpdated"] as! ModelIntInput?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "blueMode")
-    }
-  }
-
-  public var lastSeenByMember1: ModelIntInput? {
-    get {
-      return graphQLMap["lastSeenByMember1"] as! ModelIntInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lastSeenByMember1")
-    }
-  }
-
-  public var lastSeenByMember2: ModelIntInput? {
-    get {
-      return graphQLMap["lastSeenByMember2"] as! ModelIntInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lastSeenByMember2")
+      graphQLMap.updateValue(newValue, forKey: "timeUpdated")
     }
   }
 
@@ -503,50 +467,6 @@ public struct ModelSizeInput: GraphQLMapConvertible {
   }
 }
 
-public struct ModelBooleanInput: GraphQLMapConvertible {
-  public var graphQLMap: GraphQLMap
-
-  public init(ne: Bool? = nil, eq: Bool? = nil, attributeExists: Bool? = nil, attributeType: ModelAttributeTypes? = nil) {
-    graphQLMap = ["ne": ne, "eq": eq, "attributeExists": attributeExists, "attributeType": attributeType]
-  }
-
-  public var ne: Bool? {
-    get {
-      return graphQLMap["ne"] as! Bool?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "ne")
-    }
-  }
-
-  public var eq: Bool? {
-    get {
-      return graphQLMap["eq"] as! Bool?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "eq")
-    }
-  }
-
-  public var attributeExists: Bool? {
-    get {
-      return graphQLMap["attributeExists"] as! Bool?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "attributeExists")
-    }
-  }
-
-  public var attributeType: ModelAttributeTypes? {
-    get {
-      return graphQLMap["attributeType"] as! ModelAttributeTypes?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "attributeType")
-    }
-  }
-}
-
 public struct ModelIntInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -639,8 +559,8 @@ public struct ModelIntInput: GraphQLMapConvertible {
 public struct UpdateRoomInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, name: String? = nil, creatorId: String? = nil, members: [String]? = nil, messages: [MessageInput]? = nil, blueMode: Bool? = nil, lastSeenByMember1: Int? = nil, lastSeenByMember2: Int? = nil) {
-    graphQLMap = ["id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2]
+  public init(id: GraphQLID, name: String? = nil, creatorId: String? = nil, members: [String]? = nil, messages: [MessageInput]? = nil, timeUpdated: Int? = nil) {
+    graphQLMap = ["id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages, "timeUpdated": timeUpdated]
   }
 
   public var id: GraphQLID {
@@ -688,30 +608,12 @@ public struct UpdateRoomInput: GraphQLMapConvertible {
     }
   }
 
-  public var blueMode: Bool? {
+  public var timeUpdated: Int? {
     get {
-      return graphQLMap["blueMode"] as! Bool?
+      return graphQLMap["timeUpdated"] as! Int?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "blueMode")
-    }
-  }
-
-  public var lastSeenByMember1: Int? {
-    get {
-      return graphQLMap["lastSeenByMember1"] as! Int?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lastSeenByMember1")
-    }
-  }
-
-  public var lastSeenByMember2: Int? {
-    get {
-      return graphQLMap["lastSeenByMember2"] as! Int?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lastSeenByMember2")
+      graphQLMap.updateValue(newValue, forKey: "timeUpdated")
     }
   }
 }
@@ -1683,6 +1585,50 @@ public struct ModelUserConditionInput: GraphQLMapConvertible {
   }
 }
 
+public struct ModelBooleanInput: GraphQLMapConvertible {
+  public var graphQLMap: GraphQLMap
+
+  public init(ne: Bool? = nil, eq: Bool? = nil, attributeExists: Bool? = nil, attributeType: ModelAttributeTypes? = nil) {
+    graphQLMap = ["ne": ne, "eq": eq, "attributeExists": attributeExists, "attributeType": attributeType]
+  }
+
+  public var ne: Bool? {
+    get {
+      return graphQLMap["ne"] as! Bool?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "ne")
+    }
+  }
+
+  public var eq: Bool? {
+    get {
+      return graphQLMap["eq"] as! Bool?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "eq")
+    }
+  }
+
+  public var attributeExists: Bool? {
+    get {
+      return graphQLMap["attributeExists"] as! Bool?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "attributeExists")
+    }
+  }
+
+  public var attributeType: ModelAttributeTypes? {
+    get {
+      return graphQLMap["attributeType"] as! ModelAttributeTypes?
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "attributeType")
+    }
+  }
+}
+
 public struct UpdateUserInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
@@ -2575,8 +2521,8 @@ public struct DeleteManagementDocumentInput: GraphQLMapConvertible {
 public struct ModelRoomFilterInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: ModelIDInput? = nil, name: ModelStringInput? = nil, creatorId: ModelStringInput? = nil, members: ModelStringInput? = nil, blueMode: ModelBooleanInput? = nil, lastSeenByMember1: ModelIntInput? = nil, lastSeenByMember2: ModelIntInput? = nil, and: [ModelRoomFilterInput?]? = nil, or: [ModelRoomFilterInput?]? = nil, not: ModelRoomFilterInput? = nil) {
-    graphQLMap = ["id": id, "name": name, "creatorID": creatorId, "members": members, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2, "and": and, "or": or, "not": not]
+  public init(id: ModelIDInput? = nil, name: ModelStringInput? = nil, creatorId: ModelStringInput? = nil, members: ModelStringInput? = nil, timeUpdated: ModelIntInput? = nil, and: [ModelRoomFilterInput?]? = nil, or: [ModelRoomFilterInput?]? = nil, not: ModelRoomFilterInput? = nil) {
+    graphQLMap = ["id": id, "name": name, "creatorID": creatorId, "members": members, "timeUpdated": timeUpdated, "and": and, "or": or, "not": not]
   }
 
   public var id: ModelIDInput? {
@@ -2615,30 +2561,12 @@ public struct ModelRoomFilterInput: GraphQLMapConvertible {
     }
   }
 
-  public var blueMode: ModelBooleanInput? {
+  public var timeUpdated: ModelIntInput? {
     get {
-      return graphQLMap["blueMode"] as! ModelBooleanInput?
+      return graphQLMap["timeUpdated"] as! ModelIntInput?
     }
     set {
-      graphQLMap.updateValue(newValue, forKey: "blueMode")
-    }
-  }
-
-  public var lastSeenByMember1: ModelIntInput? {
-    get {
-      return graphQLMap["lastSeenByMember1"] as! ModelIntInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lastSeenByMember1")
-    }
-  }
-
-  public var lastSeenByMember2: ModelIntInput? {
-    get {
-      return graphQLMap["lastSeenByMember2"] as! ModelIntInput?
-    }
-    set {
-      graphQLMap.updateValue(newValue, forKey: "lastSeenByMember2")
+      graphQLMap.updateValue(newValue, forKey: "timeUpdated")
     }
   }
 
@@ -3386,7 +3314,7 @@ public struct ModelManagementDocumentFilterInput: GraphQLMapConvertible {
 
 public final class CreateRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateRoom($input: CreateRoomInput!, $condition: ModelRoomConditionInput) {\n  createRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    blueMode\n    lastSeenByMember1\n    lastSeenByMember2\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateRoom($input: CreateRoomInput!, $condition: ModelRoomConditionInput) {\n  createRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateRoomInput
   public var condition: ModelRoomConditionInput?
@@ -3436,9 +3364,7 @@ public final class CreateRoomMutation: GraphQLMutation {
         GraphQLField("creatorID", type: .nonNull(.scalar(String.self))),
         GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
-        GraphQLField("blueMode", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("lastSeenByMember1", type: .scalar(Int.self)),
-        GraphQLField("lastSeenByMember2", type: .scalar(Int.self)),
+        GraphQLField("timeUpdated", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -3449,8 +3375,8 @@ public final class CreateRoomMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, blueMode: Bool, lastSeenByMember1: Int? = nil, lastSeenByMember2: Int? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, timeUpdated: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "timeUpdated": timeUpdated, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -3507,30 +3433,12 @@ public final class CreateRoomMutation: GraphQLMutation {
         }
       }
 
-      public var blueMode: Bool {
+      public var timeUpdated: Int {
         get {
-          return snapshot["blueMode"]! as! Bool
+          return snapshot["timeUpdated"]! as! Int
         }
         set {
-          snapshot.updateValue(newValue, forKey: "blueMode")
-        }
-      }
-
-      public var lastSeenByMember1: Int? {
-        get {
-          return snapshot["lastSeenByMember1"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember1")
-        }
-      }
-
-      public var lastSeenByMember2: Int? {
-        get {
-          return snapshot["lastSeenByMember2"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember2")
+          snapshot.updateValue(newValue, forKey: "timeUpdated")
         }
       }
 
@@ -3654,7 +3562,7 @@ public final class CreateRoomMutation: GraphQLMutation {
 
 public final class UpdateRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateRoom($input: UpdateRoomInput!, $condition: ModelRoomConditionInput) {\n  updateRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    blueMode\n    lastSeenByMember1\n    lastSeenByMember2\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateRoom($input: UpdateRoomInput!, $condition: ModelRoomConditionInput) {\n  updateRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateRoomInput
   public var condition: ModelRoomConditionInput?
@@ -3704,9 +3612,7 @@ public final class UpdateRoomMutation: GraphQLMutation {
         GraphQLField("creatorID", type: .nonNull(.scalar(String.self))),
         GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
-        GraphQLField("blueMode", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("lastSeenByMember1", type: .scalar(Int.self)),
-        GraphQLField("lastSeenByMember2", type: .scalar(Int.self)),
+        GraphQLField("timeUpdated", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -3717,8 +3623,8 @@ public final class UpdateRoomMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, blueMode: Bool, lastSeenByMember1: Int? = nil, lastSeenByMember2: Int? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, timeUpdated: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "timeUpdated": timeUpdated, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -3775,30 +3681,12 @@ public final class UpdateRoomMutation: GraphQLMutation {
         }
       }
 
-      public var blueMode: Bool {
+      public var timeUpdated: Int {
         get {
-          return snapshot["blueMode"]! as! Bool
+          return snapshot["timeUpdated"]! as! Int
         }
         set {
-          snapshot.updateValue(newValue, forKey: "blueMode")
-        }
-      }
-
-      public var lastSeenByMember1: Int? {
-        get {
-          return snapshot["lastSeenByMember1"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember1")
-        }
-      }
-
-      public var lastSeenByMember2: Int? {
-        get {
-          return snapshot["lastSeenByMember2"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember2")
+          snapshot.updateValue(newValue, forKey: "timeUpdated")
         }
       }
 
@@ -3922,7 +3810,7 @@ public final class UpdateRoomMutation: GraphQLMutation {
 
 public final class DeleteRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteRoom($input: DeleteRoomInput!, $condition: ModelRoomConditionInput) {\n  deleteRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    blueMode\n    lastSeenByMember1\n    lastSeenByMember2\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteRoom($input: DeleteRoomInput!, $condition: ModelRoomConditionInput) {\n  deleteRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteRoomInput
   public var condition: ModelRoomConditionInput?
@@ -3972,9 +3860,7 @@ public final class DeleteRoomMutation: GraphQLMutation {
         GraphQLField("creatorID", type: .nonNull(.scalar(String.self))),
         GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
-        GraphQLField("blueMode", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("lastSeenByMember1", type: .scalar(Int.self)),
-        GraphQLField("lastSeenByMember2", type: .scalar(Int.self)),
+        GraphQLField("timeUpdated", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -3985,8 +3871,8 @@ public final class DeleteRoomMutation: GraphQLMutation {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, blueMode: Bool, lastSeenByMember1: Int? = nil, lastSeenByMember2: Int? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, timeUpdated: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "timeUpdated": timeUpdated, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -4043,30 +3929,12 @@ public final class DeleteRoomMutation: GraphQLMutation {
         }
       }
 
-      public var blueMode: Bool {
+      public var timeUpdated: Int {
         get {
-          return snapshot["blueMode"]! as! Bool
+          return snapshot["timeUpdated"]! as! Int
         }
         set {
-          snapshot.updateValue(newValue, forKey: "blueMode")
-        }
-      }
-
-      public var lastSeenByMember1: Int? {
-        get {
-          return snapshot["lastSeenByMember1"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember1")
-        }
-      }
-
-      public var lastSeenByMember2: Int? {
-        get {
-          return snapshot["lastSeenByMember2"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember2")
+          snapshot.updateValue(newValue, forKey: "timeUpdated")
         }
       }
 
@@ -8501,7 +8369,7 @@ public final class DeleteManagementDocumentMutation: GraphQLMutation {
 
 public final class GetRoomQuery: GraphQLQuery {
   public static let operationString =
-    "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    blueMode\n    lastSeenByMember1\n    lastSeenByMember2\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -8549,9 +8417,7 @@ public final class GetRoomQuery: GraphQLQuery {
         GraphQLField("creatorID", type: .nonNull(.scalar(String.self))),
         GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
-        GraphQLField("blueMode", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("lastSeenByMember1", type: .scalar(Int.self)),
-        GraphQLField("lastSeenByMember2", type: .scalar(Int.self)),
+        GraphQLField("timeUpdated", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -8562,8 +8428,8 @@ public final class GetRoomQuery: GraphQLQuery {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, blueMode: Bool, lastSeenByMember1: Int? = nil, lastSeenByMember2: Int? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, timeUpdated: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "timeUpdated": timeUpdated, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -8620,30 +8486,12 @@ public final class GetRoomQuery: GraphQLQuery {
         }
       }
 
-      public var blueMode: Bool {
+      public var timeUpdated: Int {
         get {
-          return snapshot["blueMode"]! as! Bool
+          return snapshot["timeUpdated"]! as! Int
         }
         set {
-          snapshot.updateValue(newValue, forKey: "blueMode")
-        }
-      }
-
-      public var lastSeenByMember1: Int? {
-        get {
-          return snapshot["lastSeenByMember1"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember1")
-        }
-      }
-
-      public var lastSeenByMember2: Int? {
-        get {
-          return snapshot["lastSeenByMember2"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember2")
+          snapshot.updateValue(newValue, forKey: "timeUpdated")
         }
       }
 
@@ -8767,7 +8615,7 @@ public final class GetRoomQuery: GraphQLQuery {
 
 public final class ListRoomsQuery: GraphQLQuery {
   public static let operationString =
-    "query ListRooms($filter: ModelRoomFilterInput, $limit: Int, $nextToken: String) {\n  listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      name\n      creatorID\n      members\n      messages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      blueMode\n      lastSeenByMember1\n      lastSeenByMember2\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListRooms($filter: ModelRoomFilterInput, $limit: Int, $nextToken: String) {\n  listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      name\n      creatorID\n      members\n      messages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n      }\n      timeUpdated\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelRoomFilterInput?
   public var limit: Int?
@@ -8865,9 +8713,7 @@ public final class ListRoomsQuery: GraphQLQuery {
           GraphQLField("creatorID", type: .nonNull(.scalar(String.self))),
           GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
           GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
-          GraphQLField("blueMode", type: .nonNull(.scalar(Bool.self))),
-          GraphQLField("lastSeenByMember1", type: .scalar(Int.self)),
-          GraphQLField("lastSeenByMember2", type: .scalar(Int.self)),
+          GraphQLField("timeUpdated", type: .nonNull(.scalar(Int.self))),
           GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
           GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
         ]
@@ -8878,8 +8724,8 @@ public final class ListRoomsQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, blueMode: Bool, lastSeenByMember1: Int? = nil, lastSeenByMember2: Int? = nil, createdAt: String, updatedAt: String) {
-          self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2, "createdAt": createdAt, "updatedAt": updatedAt])
+        public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, timeUpdated: Int, createdAt: String, updatedAt: String) {
+          self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "timeUpdated": timeUpdated, "createdAt": createdAt, "updatedAt": updatedAt])
         }
 
         public var __typename: String {
@@ -8936,30 +8782,12 @@ public final class ListRoomsQuery: GraphQLQuery {
           }
         }
 
-        public var blueMode: Bool {
+        public var timeUpdated: Int {
           get {
-            return snapshot["blueMode"]! as! Bool
+            return snapshot["timeUpdated"]! as! Int
           }
           set {
-            snapshot.updateValue(newValue, forKey: "blueMode")
-          }
-        }
-
-        public var lastSeenByMember1: Int? {
-          get {
-            return snapshot["lastSeenByMember1"] as? Int
-          }
-          set {
-            snapshot.updateValue(newValue, forKey: "lastSeenByMember1")
-          }
-        }
-
-        public var lastSeenByMember2: Int? {
-          get {
-            return snapshot["lastSeenByMember2"] as? Int
-          }
-          set {
-            snapshot.updateValue(newValue, forKey: "lastSeenByMember2")
+            snapshot.updateValue(newValue, forKey: "timeUpdated")
           }
         }
 
@@ -12086,7 +11914,7 @@ public final class ListManagementDocumentsQuery: GraphQLQuery {
 
 public final class OnCreateRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateRoom {\n  onCreateRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    blueMode\n    lastSeenByMember1\n    lastSeenByMember2\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateRoom {\n  onCreateRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -12127,9 +11955,7 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
         GraphQLField("creatorID", type: .nonNull(.scalar(String.self))),
         GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
-        GraphQLField("blueMode", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("lastSeenByMember1", type: .scalar(Int.self)),
-        GraphQLField("lastSeenByMember2", type: .scalar(Int.self)),
+        GraphQLField("timeUpdated", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -12140,8 +11966,8 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, blueMode: Bool, lastSeenByMember1: Int? = nil, lastSeenByMember2: Int? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, timeUpdated: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "timeUpdated": timeUpdated, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -12198,30 +12024,12 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
         }
       }
 
-      public var blueMode: Bool {
+      public var timeUpdated: Int {
         get {
-          return snapshot["blueMode"]! as! Bool
+          return snapshot["timeUpdated"]! as! Int
         }
         set {
-          snapshot.updateValue(newValue, forKey: "blueMode")
-        }
-      }
-
-      public var lastSeenByMember1: Int? {
-        get {
-          return snapshot["lastSeenByMember1"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember1")
-        }
-      }
-
-      public var lastSeenByMember2: Int? {
-        get {
-          return snapshot["lastSeenByMember2"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember2")
+          snapshot.updateValue(newValue, forKey: "timeUpdated")
         }
       }
 
@@ -12345,7 +12153,7 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
 
 public final class OnUpdateRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateRoom {\n  onUpdateRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    blueMode\n    lastSeenByMember1\n    lastSeenByMember2\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateRoom {\n  onUpdateRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -12386,9 +12194,7 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
         GraphQLField("creatorID", type: .nonNull(.scalar(String.self))),
         GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
-        GraphQLField("blueMode", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("lastSeenByMember1", type: .scalar(Int.self)),
-        GraphQLField("lastSeenByMember2", type: .scalar(Int.self)),
+        GraphQLField("timeUpdated", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -12399,8 +12205,8 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, blueMode: Bool, lastSeenByMember1: Int? = nil, lastSeenByMember2: Int? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, timeUpdated: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "timeUpdated": timeUpdated, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -12457,30 +12263,12 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
         }
       }
 
-      public var blueMode: Bool {
+      public var timeUpdated: Int {
         get {
-          return snapshot["blueMode"]! as! Bool
+          return snapshot["timeUpdated"]! as! Int
         }
         set {
-          snapshot.updateValue(newValue, forKey: "blueMode")
-        }
-      }
-
-      public var lastSeenByMember1: Int? {
-        get {
-          return snapshot["lastSeenByMember1"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember1")
-        }
-      }
-
-      public var lastSeenByMember2: Int? {
-        get {
-          return snapshot["lastSeenByMember2"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember2")
+          snapshot.updateValue(newValue, forKey: "timeUpdated")
         }
       }
 
@@ -12604,7 +12392,7 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
 
 public final class OnDeleteRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteRoom {\n  onDeleteRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    blueMode\n    lastSeenByMember1\n    lastSeenByMember2\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteRoom {\n  onDeleteRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -12645,9 +12433,7 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
         GraphQLField("creatorID", type: .nonNull(.scalar(String.self))),
         GraphQLField("members", type: .nonNull(.list(.nonNull(.scalar(String.self))))),
         GraphQLField("messages", type: .list(.nonNull(.object(Message.selections)))),
-        GraphQLField("blueMode", type: .nonNull(.scalar(Bool.self))),
-        GraphQLField("lastSeenByMember1", type: .scalar(Int.self)),
-        GraphQLField("lastSeenByMember2", type: .scalar(Int.self)),
+        GraphQLField("timeUpdated", type: .nonNull(.scalar(Int.self))),
         GraphQLField("createdAt", type: .nonNull(.scalar(String.self))),
         GraphQLField("updatedAt", type: .nonNull(.scalar(String.self))),
       ]
@@ -12658,8 +12444,8 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
         self.snapshot = snapshot
       }
 
-      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, blueMode: Bool, lastSeenByMember1: Int? = nil, lastSeenByMember2: Int? = nil, createdAt: String, updatedAt: String) {
-        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "blueMode": blueMode, "lastSeenByMember1": lastSeenByMember1, "lastSeenByMember2": lastSeenByMember2, "createdAt": createdAt, "updatedAt": updatedAt])
+      public init(id: GraphQLID, name: String, creatorId: String, members: [String], messages: [Message]? = nil, timeUpdated: Int, createdAt: String, updatedAt: String) {
+        self.init(snapshot: ["__typename": "Room", "id": id, "name": name, "creatorID": creatorId, "members": members, "messages": messages.flatMap { $0.map { $0.snapshot } }, "timeUpdated": timeUpdated, "createdAt": createdAt, "updatedAt": updatedAt])
       }
 
       public var __typename: String {
@@ -12716,30 +12502,12 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
         }
       }
 
-      public var blueMode: Bool {
+      public var timeUpdated: Int {
         get {
-          return snapshot["blueMode"]! as! Bool
+          return snapshot["timeUpdated"]! as! Int
         }
         set {
-          snapshot.updateValue(newValue, forKey: "blueMode")
-        }
-      }
-
-      public var lastSeenByMember1: Int? {
-        get {
-          return snapshot["lastSeenByMember1"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember1")
-        }
-      }
-
-      public var lastSeenByMember2: Int? {
-        get {
-          return snapshot["lastSeenByMember2"] as? Int
-        }
-        set {
-          snapshot.updateValue(newValue, forKey: "lastSeenByMember2")
+          snapshot.updateValue(newValue, forKey: "timeUpdated")
         }
       }
 
