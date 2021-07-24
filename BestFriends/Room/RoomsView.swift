@@ -12,12 +12,20 @@ import Amplify
 struct RoomsView: View {
     
     @ObservedObject var dataSource = RoomDataSource()
+    @ObservedObject var USS: UserSubscriptionService
+    var userDataSource = UserDataSource()
+    
     @State private var showingActionSheet = false
     @State private var loadingShowing = false
+    @State private var notificationsShowing = false
+    
     @EnvironmentObject var sessionManager: SessionManager
     
     
-    init() {
+    init() {let foo = userDataSource.getCurrentUser()
+        self.USS = UserSubscriptionService(user: foo)
+        USS.createSubscription()
+        
         dataSource.getRooms()
         print("Rooms: ", dataSource.rooms)
     }
@@ -101,28 +109,72 @@ struct RoomsView: View {
                         .onTapGesture {
                             sessionManager.getCurrentAuthUser()
                         }
-                        .padding(20)
+                        .padding(5)
                     
                     Image("happy-face icon")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .onTapGesture {
-                            sessionManager.showSmileNotes()
+                            loadingShowing = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                sessionManager.showSmileNotes()
+                            }
                         }
-                        .padding(20)
+                        .padding(5)
+                    
+                    Image("whitePhone")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            loadingShowing = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                sessionManager.showShakingCool()
+                            }
+                        }
+                        .padding(5)
                     
                     Image("settings icon")
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .onTapGesture {
+                            loadingShowing = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                sessionManager.showSettings()
+                            }
+                        }
+                        .padding(5)
+                    
+                    Image("horn")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
                             sessionManager.showSettings()
                         }
-                        .padding(20)
+                        .padding(5)
+                    
+                    Image("bell")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture {
+                            withAnimation {
+                                notificationsShowing.toggle()
+                                if notificationsShowing == false {
+                                    var user = USS.user
+                                    user.pendingNotifications = []
+                                    userDataSource.updateUser(user: user)
+                                }
+                            }
+                        }
                 }
-                .padding()
+                .offset(y: -40)
             }
+            
+            
             if loadingShowing == true {
                 ZStack {
                     Color(#colorLiteral(red: 0.6986119747, green: 0.2623180151, blue: 1, alpha: 1))
@@ -147,10 +199,23 @@ struct RoomsView: View {
                     
                 }
             }
-        }        
+            
+            VStack {
+                if USS.user.pendingNotifications != nil && notificationsShowing == true {
+                    ForEach(USS.user.pendingNotifications!.reversed(), id: \.self) { foo in
+                        Text(foo)
+                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .font(.system(size: 17, weight: .regular))
+                            .padding()
+                    }
+                }
+            }
+            .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+            .cornerRadius(30)
+            .transition(.scale)
+        }
     }
 }
-
 
 struct RoomsView_Previews : PreviewProvider {
     static var previews: some View {
