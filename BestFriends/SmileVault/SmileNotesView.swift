@@ -160,7 +160,7 @@ struct SmileNotesView: View {
                         .scaledToFill()
                         .onTapGesture {
                             isAdPresented = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 13) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 12.63) {
                                 sessionManager.getCurrentAuthUser()
                             }
                         }
