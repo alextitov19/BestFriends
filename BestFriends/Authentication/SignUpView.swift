@@ -1246,7 +1246,7 @@ struct SignUpQuestionPage2: View {
                     Text("We don't use cookies following your every move on your phone and laptop outside of BestFriends.")
                         .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .frame(width: 400, height: 400)
+                        .frame(width: 300, height: 400)
                         .multilineTextAlignment(.center)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
@@ -1314,17 +1314,17 @@ struct SignUpQuestionPage3: View {
             
             VStack {
                 
-                Text("We just 'Ask' what you're interested in.")
+                Text("We just 'Ask' you're interests.")
                     .font(.system(size: 50))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .frame(width: 200, height: 200)
+                    .frame(width: 400, height:150)
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 5)
                 
                 
                 VStack {
