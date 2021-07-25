@@ -206,10 +206,7 @@ struct HomeView: View {
                             .frame(width: 40, height: 40)
                             .scaledToFill()
                             .onTapGesture {
-                                loadingShowing = true
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                    sessionManager.showSettings()
-                                }
+                                sessionManager.showSettings()
                             }
                             .padding(5)
                         
