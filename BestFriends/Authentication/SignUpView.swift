@@ -121,17 +121,15 @@ struct SignUpPage2: View {
                         
                     }
                     VStack {
-                        Text("Add 5 BestFriends")
-                            .font(.system(size: 50))
+                      
+                        
+                        Text("Using QR codes, not usernames.")
+                            .italic()
+                            .font(.system(size: 30))
                             .fontWeight(.regular)
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
-                            .frame(width: 400, height: 50, alignment: .center)
-                            .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                            .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                            .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                        
-                        
+                            .frame(width: 400, height: 100, alignment: .center)
                         
                         Spacer()
                             .frame(height: 100)
@@ -141,14 +139,16 @@ struct SignUpPage2: View {
                 Spacer()
                     .frame(height: 270)
                 
-                Text("Using QR codes, not usernames.")
-                    .italic()
-                    .font(.system(size: 30))
+              
+                Text("Add 5 BestFriends")
+                    .font(.system(size: 50))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 100, alignment: .center)
-                
+                    .frame(width: 400, height: 50, alignment: .center)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 
                 
@@ -215,6 +215,15 @@ struct SignUpPage3: View {
                 .frame(height: 100)
             
             VStack {
+                Text("Stops unwanted DM's & images.")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+              
+                Spacer()
+                    .frame(height: 400)
+                
+                
                 Text("No 'User Search'")
                     .font(.system(size: 50))
                     .foregroundColor(.white)
@@ -223,13 +232,10 @@ struct SignUpPage3: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-                Spacer()
-                    .frame(height: 400)
+
                 
-                Text("Stops unwanted DM's & images.")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
+                
+                
                 //
                 if isUsernameTaken {
                     Text("Username is taken")
@@ -787,7 +793,7 @@ struct SignUpPage8: View {
             
             VStack {
                 
-                Text("Hide Chat")
+                Text("Hide Your Chat Messages")
                     .font(.system(size: 50))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
