@@ -106,7 +106,7 @@ struct RoomsView: View {
                                                 .cancel()
                                             ])
                                         }
-                                        .frame(width: 300)
+                                        .frame(width: 375)
                                         .scaledToFit()
                                         .padding()
                                 }

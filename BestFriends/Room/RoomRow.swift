@@ -14,7 +14,6 @@ struct RoomRow: View {
     @State var messageBody = ""
     
     var body: some View {
-        ZStack {
             HStack {
                 Spacer().frame(width: 10)
                     .onAppear {
@@ -51,10 +50,8 @@ struct RoomRow: View {
                 
                 Spacer().frame(width: 10)
             }
-        }
         .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
         .cornerRadius(20)
-        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 
     }
     

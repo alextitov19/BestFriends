@@ -84,7 +84,7 @@ struct HomeView: View {
             
             if USS.user.friends != nil {
                 DispatchQueue.main.asyncAfter(deadline: .now() + starTimings[USS.user.friends!.count - 1] + 0.5) { inviteClicked() }
-            DispatchQueue.main.asyncAfter(deadline: .now() + 12.0) { inviteClicked() }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 12.0) { inviteClicked() }
             }
         }
     }
