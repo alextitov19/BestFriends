@@ -21,7 +21,7 @@ struct SmileVaultAdView: View {
 struct ShakingCoolAdView: View {
     @Environment(\.openURL) var openURL
     var body: some View {
-        AdPlayerView(name: "SplashScreen1")
+        AdPlayerView(name: "SplashScreen2")
             .ignoresSafeArea()
             .onTapGesture {
                 openURL(URL(string: "https://socialtechlabs.com/beta-team/")!)

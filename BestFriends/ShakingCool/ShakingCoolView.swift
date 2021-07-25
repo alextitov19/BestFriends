@@ -38,12 +38,12 @@ struct ShakingCoolView: View {
             
             VStack {
                 // MARK: Header
-//                Text("ShakingCool")
-//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                    .font(.system(size: 40, weight: .thin))
-//                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-//                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-//
+                //                Text("ShakingCool")
+                //                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                //                    .font(.system(size: 40, weight: .thin))
+                //                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                //                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                //
                 
                 Spacer()
                     .frame(height: 50)
@@ -72,7 +72,7 @@ struct ShakingCoolView: View {
                     .font(.system(size: 20, weight: .thin))
                 
                 
-//                Spacer().frame(height: 30)
+                //                Spacer().frame(height: 30)
                 
                 ScrollView(showsIndicators: false) {
                     ForEach(shakingCool.indices, id: \.self) { index in
@@ -95,13 +95,13 @@ struct ShakingCoolView: View {
                                     showingImagePicker = true
                                 }
                             
-//                            Spacer()
-//                                .frame(height: 30)
+                            //                            Spacer()
+                            //                                .frame(height: 30)
                         }
                     }
                 }
-              Spacer()
-              
+                Spacer()
+                
                 
                 Text("Delete/replace image by tapping")
                     .italic()
@@ -133,11 +133,10 @@ struct ShakingCoolView: View {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     .onTapGesture {
                         isAdPresented = true
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 11) {
                             sessionManager.getCurrentAuthUser()
                         }
                     }
-//                    .padding()
             }
             
             if choosingRecipient {
@@ -173,35 +172,35 @@ struct ShakingCoolView: View {
     }
     
     private func reloadData() {
-            print("reloading Shaking cool")
-            let userDS = UserDataSource()
-            let user = userDS.getCurrentUser()
-            myid = user.id
-            print("Got user: ", user)
-            shakingCool = []
-            if user.shakingCool != nil {
-                shakingCool = user.shakingCool!
+        print("reloading Shaking cool")
+        let userDS = UserDataSource()
+        let user = userDS.getCurrentUser()
+        myid = user.id
+        print("Got user: ", user)
+        shakingCool = []
+        if user.shakingCool != nil {
+            shakingCool = user.shakingCool!
+        }
+        print("Shaking Cool: ", shakingCool)
+        chosenID = user.id
+        var mycounter = 0
+        availableIDs = user.friends ?? []
+        for cool in shakingCool {
+            if cool.intendedid == user.id {
+                mycounter += 1
             }
-            print("Shaking Cool: ", shakingCool)
-            chosenID = user.id
-            var mycounter = 0
-            availableIDs = user.friends ?? []
-            for cool in shakingCool {
-                if cool.intendedid == user.id {
-                    mycounter += 1
-                }
-                if let index = availableIDs.firstIndex(of: cool.intendedid) {
-                    availableIDs.remove(at: index)
-                }
+            if let index = availableIDs.firstIndex(of: cool.intendedid) {
+                availableIDs.remove(at: index)
             }
-            for id in availableIDs {
-                availableNames.append(userDS.getUser(id: id).firstName)
-            }
-            if mycounter < 2 {
-                availableIDs.insert(user.id, at: 0)
-                availableNames.insert("Myself", at: 0)
-                print("Added self")
-            }
+        }
+        for id in availableIDs {
+            availableNames.append(userDS.getUser(id: id).firstName)
+        }
+        if mycounter < 2 {
+            availableIDs.insert(user.id, at: 0)
+            availableNames.insert("Myself", at: 0)
+            print("Added self")
+        }
         for cool in shakingCool {
             images.append(shakingCoolDataSource.downloadImage(key: cool.link, rotating: true, tall: false))
         }
