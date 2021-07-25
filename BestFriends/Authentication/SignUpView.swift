@@ -426,6 +426,10 @@ struct SignUpPage5: View {
             
             
             VStack {
+             
+                Spacer()
+                    .frame(height: 400)
+                
                 Text("Just in case\nyou forget your password.")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
@@ -433,8 +437,11 @@ struct SignUpPage5: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-                Spacer()
-                    .frame(height: 400)
+             
+               
+                
+                
+                
                 
                 if emailIsTaken {
                     Text("Email is invalid or is already taken")
@@ -727,7 +734,14 @@ struct SignUpPage7: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
-                
+                Spacer()
+                    .frame(height: 35)
+                Text("Apple requires your age.")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .frame(width: 325, height: 100)
+                    .multilineTextAlignment(.center)
+
                 
                 Spacer()
                     .frame(height: 60)
@@ -738,13 +752,6 @@ struct SignUpPage7: View {
                     .padding()
                     .offset(x: -45)
                 
-                Spacer()
-                    .frame(height: 35)
-                Text("Apple requires your age.")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .frame(width: 325, height: 100)
-                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 20)
@@ -798,14 +805,14 @@ struct SignUpPage8: View {
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 50, alignment: .center)
+                    .frame(width: 400, height: 100, alignment: .center)
                     .padding(20)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 
-                Text("Restore with your 'Secret' PIN")
+                Text("Restore with a 'Secret' PIN")
                     .font(.system(size: 30))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
@@ -1053,15 +1060,9 @@ struct SignUpPage9: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 20)
                 
-                Text("BestFriends can help.")
-                    .font(.system(size: 30))
-                    .fontWeight(.regular)
-                    .italic()
-                    .foregroundColor(Color.white)
-                    .frame(width: 400)
-                    .multilineTextAlignment(.center)
+             
                 
                 //
                 //                Image("FindFriend")
@@ -1070,7 +1071,7 @@ struct SignUpPage9: View {
                 //                    .scaledToFill()
                 //                    .padding(20)
                 
-                Text("ONE, Shake your phone, what pops up will manke you smile.")
+                Text("Try shaking your phone, it'll make you smile.")
                     .italic()
                     .font(.system(size: 20))
                     .fontWeight(.regular)
@@ -1084,15 +1085,24 @@ struct SignUpPage9: View {
                     .scaledToFill()
                     .blendMode(.screen)
                 
-                Text("TWO, Check your SmileVault for your saved smiles.")
+                Text("Open your SmileVault safegurding your smiles from before.")
                     .italic()
                     .font(.system(size: 20))
                     .fontWeight(.regular)
                     .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 200)
+                    .frame(width: 300)
                     .multilineTextAlignment(.center)
                     .padding()
+                
+                Text("BestFriends can help.")
+                    .font(.system(size: 30))
+                    .fontWeight(.regular)
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .frame(width: 400)
+                    .multilineTextAlignment(.center)
+                
                 
                 VStack {
                     NavigationLink("", destination: SignUpQuestionPage2(firstName: firstName, lastName: lastName, username: username, password: password, email: email, pronouns: pronouns, birthdate: birthdate, currentPin: currentPin, location: locationString ?? "N/A").environmentObject(sessionManager), isActive: $readyToProceed)
@@ -1242,13 +1252,7 @@ struct SignUpQuestionPage2: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    
-                    Text("Instead we \nsimply ...")
-                        .font(.system(size: 50))
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .frame(width: 300, height: 125)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                
                     
                     Spacer()
                         .frame(height: 30)
@@ -1308,10 +1312,10 @@ struct SignUpQuestionPage3: View {
             
             VStack {
                 
-                Text("Ask your interests.")
+                Text("We just 'Ask' what you're interested in.")
                     .font(.system(size: 50))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .frame(width: 350)
+                    .frame(width: 200, height: 100)
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
