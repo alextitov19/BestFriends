@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct SmileVaultAdView: View {
+    @Environment(\.openURL) var openURL
     var body: some View {
         AdPlayerView(name: "BestFriendsAd1")
             .ignoresSafeArea()
+            .onTapGesture {
+                openURL(URL(string: "https://socialtechlabs.com/beta-team/")!)
+            }
     }
 }
 
 struct ShakingCoolAdView: View {
+    @Environment(\.openURL) var openURL
     var body: some View {
         AdPlayerView(name: "SplashScreen1")
             .ignoresSafeArea()
+            .onTapGesture {
+                openURL(URL(string: "https://socialtechlabs.com/beta-team/")!)
+            }
     }
 }
