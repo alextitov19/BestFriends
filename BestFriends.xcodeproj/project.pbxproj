@@ -658,6 +658,7 @@
 		CF05A8B926A9CBB0009618E6 /* doubleGreen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8B626A9CBAF009618E6 /* doubleGreen.mp4 */; };
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
+		CF05A8C826ADFF28009618E6 /* SplashScreen2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C726ADFF28009618E6 /* SplashScreen2.mp4 */; };
 		CF1E6AE5269A00DB00B8F985 /* PreAddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */; };
 		CF1E6AE7269A0D2000B8F985 /* BlueModeConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */; };
 		CF2AFB216FD5D418D2277A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31DEA02CBB542D5AA59CA4B /* User.swift */; };
@@ -977,6 +978,7 @@
 		CF05A8B626A9CBAF009618E6 /* doubleGreen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = doubleGreen.mp4; sourceTree = "<group>"; };
 		CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShakingCoolVideo.mp4; sourceTree = "<group>"; };
 		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
+		CF05A8C726ADFF28009618E6 /* SplashScreen2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = SplashScreen2.mp4; path = ../../../../../../../Desktop/SplashScreen2.mp4; sourceTree = "<group>"; };
 		CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreAddFriends.swift; sourceTree = "<group>"; };
 		CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeConditions.swift; sourceTree = "<group>"; };
 		CF30FF92267E955A000B2730 /* SmileNotesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesCard.swift; sourceTree = "<group>"; };
@@ -1382,6 +1384,7 @@
 			isa = PBXGroup;
 			children = (
 				CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */,
+				CF05A8C726ADFF28009618E6 /* SplashScreen2.mp4 */,
 				7ACEDEB82683FCED00102E70 /* SplashScreen1.mp4 */,
 				7ACEDEB62683FCE600102E70 /* EnrichHER.mp4 */,
 				7A4B9B5C266FD00900EAF3B9 /* Social Impact */,
@@ -1583,6 +1586,7 @@
 				0CD3136A72279D2BCF55EF7A /* amplifyconfiguration.json in Resources */,
 				CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */,
 				7ACEDEB72683FCE600102E70 /* EnrichHER.mp4 in Resources */,
+				CF05A8C826ADFF28009618E6 /* SplashScreen2.mp4 in Resources */,
 				7ACEDEB92683FCEE00102E70 /* SplashScreen1.mp4 in Resources */,
 				4606F3DF2D174863997B7782 /* amplifyconfiguration.json in Resources */,
 			);
