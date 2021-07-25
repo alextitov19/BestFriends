@@ -9,6 +9,7 @@ import Foundation
 
 import Amplify
 import SwiftUI
+import AVKit
 
 //struct InfoViewPage1: View {
 //    @EnvironmentObject var sessionManager: SessionManager
@@ -110,22 +111,30 @@ struct InfoViewPage1: View {
                 
                 
                 Text("Coming soon!")
-                    .font(.system(size: 35))
+                    .font(.system(size: 40))
                     .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 350, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 350, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 16)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 16)
-
+               
+                Text("(stars will be 'live' in version 2.0)")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 350, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 75)
                 
                 
                 Text("So that you're never alone on a bad day ...")
                     .font(.system(size: 25))
-//                    .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
@@ -138,7 +147,7 @@ struct InfoViewPage1: View {
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 220, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(width: 400, height: 125, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                
                 
                 Text("You don't know them, but they are out there!")
@@ -155,15 +164,9 @@ struct InfoViewPage1: View {
                 
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 125)
                 
-                Text("(stars will be 'live' in version 2.0)")
-                    .font(.system(size: 15))
-                    .italic()
-                    .fontWeight(.regular)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .frame(width: 350, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+              
               
                 
                 VStack {
