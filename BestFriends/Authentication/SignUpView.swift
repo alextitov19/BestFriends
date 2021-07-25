@@ -738,7 +738,8 @@ struct SignUpPage7: View {
                     .frame(height: 15)
                
                 Text("Apple requires your age.")
-                    .font(.system(size: 30))
+                    .italic()
+                    .font(.system(size: 27))
                     .foregroundColor(.white)
                     .frame(width: 325, height: 50)
                     .multilineTextAlignment(.center)
@@ -1245,7 +1246,7 @@ struct SignUpQuestionPage2: View {
                     Text("We don't use cookies following your every move on your phone and laptop outside of BestFriends.")
                         .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .frame(width: 300, height: 400)
+                        .frame(width: 400, height: 400)
                         .multilineTextAlignment(.center)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                         .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
