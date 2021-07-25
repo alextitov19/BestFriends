@@ -176,12 +176,14 @@ struct RoomsView: View {
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFill()
-                        .scaleEffect(isAtMaxScale ? 1 : 0.5)
+                        .scaleEffect(isAtMaxScale ? 0.5 : 1)
                         .onAppear {
                             if USS.user.pendingNotifications != nil {
-                                withAnimation(self.animation, {
-                                    self.isAtMaxScale.toggle()
-                                })
+                                if USS.user.pendingNotifications!.count > 0 {
+                                    withAnimation(self.animation, {
+                                        self.isAtMaxScale.toggle()
+                                    })
+                                }
                             }
                         }
                         .onTapGesture {

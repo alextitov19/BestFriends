@@ -12,62 +12,56 @@ struct NotificationPreLoad: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     @State private var selectedMinutes: Int = -1
-    @State private var hidden = false
     var roomID: String
     var members: [String] = []
     var userDataSource = UserDataSource()
+    let roomDS = RoomDataSource()
+    let room: Room
+    var title: String
+    var subtitle: String
     
     init(roomID: String) {
         self.roomID = roomID
+        self.room = roomDS.getRoom(id: roomID)
+        self.title = "\(userDataSource.getUser(id: room.creatorID).firstName) has invited you to chat!"
+        self.subtitle = "Chat with: \(room.name)"
     }
     
     var body: some View {
         ZStack {
-            
-            Image("Firstname")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
             VStack {
+                Text(title)
+                    .font(.system(size: 24))
+                    .foregroundColor(Color(.white))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 375)
+                    .padding()
                 
-                //                Text("")
-                //                    .italic()
-                //                    .font(.system(size: 40))
-                //                    .fontWeight(.regular)
-                //                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                //                    .multilineTextAlignment(.center)
-                //                    .frame(width: 375, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                Text(subtitle)
+                    .font(.system(size: 18, weight: .light))
+                    .foregroundColor(Color(.white))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 375)
+                    .padding()
+
                 Button(action: {
                     sessionManager.chat(room: RoomDataSource().getRoom(id: roomID))
                     setTimer(minutes: 0)
                 }) {
-                    
-                    
                     Text("Chat now!")
-                        
                         .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .frame(width: 300, height: 75)
                         .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
                         .cornerRadius(50)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
-                    
-                    
                 }
                 .padding(50)
-                
-//                Text("I Need ...")
-//
-//                    .font(.system(size: 25))
-//                    .fontWeight(.regular)
-//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                    .multilineTextAlignment(.center)
-//                    .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-//
-                Spacer()
-                    .frame(height: 30)
                 
                 Button(action: {
                     setTimer(minutes: 5)
@@ -79,7 +73,6 @@ struct NotificationPreLoad: View {
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
                 }
                 .padding(20)
                 
@@ -93,21 +86,8 @@ struct NotificationPreLoad: View {
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
                 }
                 .padding(20)
-                
-                //                Button(action: {
-                //                    setTimer(minutes: 15)
-                //                }) {
-                //                    Text("15 min.")
-                //                        .font(.title)
-                //                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                //                        .frame(width: 200, height: 50)
-                //                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                //                        .cornerRadius(25)
-                //                }
-                //                .padding(20)
                 
                 Button(action: {
                     setTimer(minutes: 30)
@@ -119,7 +99,6 @@ struct NotificationPreLoad: View {
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
                 }
                 .padding(20)
                 
@@ -133,7 +112,6 @@ struct NotificationPreLoad: View {
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
                 }
                 .padding(20)
                 
@@ -147,12 +125,10 @@ struct NotificationPreLoad: View {
                         .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
                 }
                 .padding(20)
             }
         }
-        .isHidden(hidden)
     }
     
     private func setTimer(minutes: Int) {
@@ -161,7 +137,6 @@ struct NotificationPreLoad: View {
             if user.invitedRooms![i].roomID == roomID {
                 user.invitedRooms![i].timer = minutes
                 userDataSource.updateUser(user: user)
-                hidden = true
                 var body = ""
                 switch minutes {
                 case 0:
