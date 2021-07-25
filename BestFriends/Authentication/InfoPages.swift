@@ -104,48 +104,12 @@ struct InfoViewPage1: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            
-            VStack {
-//                Image("starPurple")
-//                    .resizable()
-//                    .frame(width: 80, height: 80, alignment: .center)
-//                    .scaledToFill()
-//                    .blendMode(.screen)
-//                    .offset(x: -100, y: -110)
-//
-//                Image("starPurple")
-//                    .resizable()
-//                    .frame(width: 80, height: 80, alignment: .center)
-//                    .scaledToFill()
-//                    .blendMode(.screen)
-//                    .offset(x: 130, y: -240)
-//
-//                Image("starPurple")
-//                    .resizable()
-//                    .frame(width: 80, height: 80, alignment: .center)
-//                    .scaledToFill()
-//                    .blendMode(.screen)
-//                    .offset(x: -30, y: -100)
-//
-//                Image("starBlue")
-//                    .resizable()
-//                    .frame(width: 80, height: 80, alignment: .center)
-//                    .scaledToFill()
-//                    .blendMode(.screen)
-//                    .offset(x: -130, y: 130)
-//
-//                Image("starGreen")
-//                    .resizable()
-//                    .frame(width: 80, height: 80, alignment: .center)
-//                    .scaledToFill()
-//                    .blendMode(.screen)
-//                    .offset(x: 110, y: -20)
-                    }
+         
             
             VStack {
                 
                 
-                Text("You're never alone on a bad day.")
+                Text("Coming soon!")
                     .font(.system(size: 35))
                     .italic()
                     .fontWeight(.regular)
@@ -156,26 +120,55 @@ struct InfoViewPage1: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 16)
 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 5)
                 
                 
-                Text("Each tiny star on your homepage represents another user somewhere out there just like you.")
-                    .font(.system(size: 30))
+                Text("So that you're never alone on a bad day ...")
+                    .font(.system(size: 25))
+//                    .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 275, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+               
+                
+                Text("Each of those tiny stars on your homepage represents another user somewhere out there just like you. ")
+                    .font(.system(size: 25))
+                    .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 400, height: 220, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+               
+                
+                Text("You don't know them, but they are out there!")
+                    .font(.system(size: 25))
+//                    .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .frame(width: 275, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                
+                
+                
+                
+                
+                Spacer()
+                    .frame(height: 50)
+                
+                Text("(stars will be 'live' in version 2.0)")
+                    .font(.system(size: 15))
                     .italic()
                     .fontWeight(.regular)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 350, height: 220, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                Spacer()
-                    .frame(height: 40)
-                
-                
+                    .frame(width: 350, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
               
                 
                 VStack {
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 5)
                     
                     Text("Let's add your first friend >")
                         .font(.title)
@@ -210,7 +203,7 @@ struct InfoViewPage1: View {
                     
                
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 75)
                     
                 }
             }
