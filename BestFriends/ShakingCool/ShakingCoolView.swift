@@ -21,7 +21,9 @@ struct ShakingCoolView: View {
     @State private var needToLoad = true
     @State private var isAdPresented = false
     @State private var images: [UIImage] = []
-    
+    @State private var currentlyLoading = false
+    @State private var showingPopup = true
+
     @EnvironmentObject var sessionManager: SessionManager
     
     private var shakingCoolDataSource = ShakingCoolDataSource()
@@ -45,14 +47,9 @@ struct ShakingCoolView: View {
                 //                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 //
                 
-                Spacer()
-                    .frame(height: 50)
+//                Spacer()
+//                    .frame(height: 50)
                 
-                Text("Add 2 images for yourself and then one for each friend to see when they 'Shake' their phone.")
-                    .frame(width: 300, height: 75, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 20, weight: .thin))
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                 
                 
                 
@@ -100,10 +97,10 @@ struct ShakingCoolView: View {
                         }
                     }
                 }
-                Spacer()
+                .frame(height: 500)
                 
                 
-                Text("Delete/replace image by tapping")
+                Text("Tap image to delete/replace")
                     .italic()
                     .font(.system(size: 20, weight: .thin))
                     .foregroundColor(.white)
@@ -139,6 +136,34 @@ struct ShakingCoolView: View {
                     }
             }
             
+            if currentlyLoading {
+                Text("Uploading image...")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .frame(width: 300, height: 200)
+                    .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                    .cornerRadius(25)
+                    .transition(.scale)
+            }
+            
+            if showingPopup {
+                Text("Add 2 images for yourself and then one for each friend they will see when they 'Shake' their phone.")
+                    .frame(width: 300, height: 100, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 20, weight: .thin))
+                    .padding()
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                    .transition(.scale)
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                            withAnimation {
+                                showingPopup = false
+                            }
+                        }
+                    }
+            }
+            
             if choosingRecipient {
                 VStack {
                     ForEach(availableIDs.indices, id: \.self) { index in
@@ -161,13 +186,24 @@ struct ShakingCoolView: View {
     }
     
     private func loadImage() {
-        showingImagePicker = false
-        guard let inputImage = inputImage else { return }
-        print("Got the image")
-        let state = ShakingCoolDataSource().uploadImage(image: inputImage, targetID: chosenID)
-        if state == true {
-            sleep(3)
-            reloadData()
+        withAnimation {
+            showingImagePicker = false
+            choosingRecipient = false
+            currentlyLoading = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+
+            guard let inputImage = inputImage else { return }
+            print("Got the image")
+            let state = ShakingCoolDataSource().uploadImage(image: inputImage, targetID: chosenID)
+            withAnimation {
+                currentlyLoading = false
+            }
+            if state == true {
+                sleep(1)
+                reloadData()
+            }
         }
     }
     

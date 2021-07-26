@@ -372,9 +372,9 @@ struct ChatView: View {
                         .foregroundColor(.white)
                         .onTapGesture {
                             //                                hasLiked = true
-                            withAnimation {
-                                adButtonsOffset = -270
-                            }
+//                            withAnimation {
+//                                adButtonsOffset = -270
+//                            }
                         }
                     
                     Text("25")
@@ -398,9 +398,9 @@ struct ChatView: View {
                             //                                hasClickedLink = true
                             //                                doneWithAd()
                             //                                openURL(URL(string: currentLink)!)
-                            withAnimation {
-                                adButtonsOffset = -270
-                            }
+//                            withAnimation {
+//                                adButtonsOffset = -270
+//                            }
                         }
                 }
             }
@@ -502,7 +502,7 @@ struct ChatView: View {
             areAdsHidden = true
             withAnimation {
                 adButtonsOffset = -165
-                DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
                     withAnimation {
                         adButtonsOffset = -270
                     }
