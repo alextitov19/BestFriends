@@ -20,11 +20,6 @@ struct BlueModeDataSource {
         let room = Room(id: Helper().randomString(length: 20),name: "BlueMode", creatorID: myself.id, members: [myself.id, friend.id], messages: [], timeUpdated: Int(Date().timeIntervalSince1970))
         roomDS.createRoom(room: room)
         
-        myself.BMRoom = room.id
-        myself.BMFriend = friend.id
-        
-        friend.BMRoom = room.id
-        friend.BMFriend = myself.id
         
         userDS.updateUser(user: myself)
         userDS.updateUser(user: friend)

@@ -13,22 +13,20 @@ public struct User: Model {
   public var adPreference: [Int]
   public var deviceFCMToken: String
   public var isOnline: Bool
-  public var invitedRooms: [InvitedRoom?]?
+  public var invitedRooms: [InvitedRoom]?
   public var secretPin: String
-  public var friends: [String?]?
-  public var rooms: [String?]?
-  public var hiddenRooms: [String?]?
-  public var smileNotes: [SmileNote?]?
-  public var shakingCool: [ShakingCool?]?
+  public var friends: [String]?
+  public var rooms: [String]?
+  public var hiddenRooms: [String]?
+  public var smileNotes: [SmileNote]?
+  public var shakingCool: [ShakingCool]?
   public var tokens: Int
   public var background: Int
-  public var unlockedStickers: [Int?]?
-  public var BMFriend: String?
-  public var BMRoom: String?
+  public var unlockedStickers: [Int]?
   public var notificationsBM: Bool
   public var notificationsLP: Bool
   public var chatFontSize: Int
-  public var pendingNotifications: [String?]?
+  public var pendingNotifications: [String]?
   public var needIntro: Bool
   public var backgroundImageLink: String?
   public var createdAt: Temporal.DateTime?
@@ -44,22 +42,20 @@ public struct User: Model {
       adPreference: [Int] = [],
       deviceFCMToken: String,
       isOnline: Bool,
-      invitedRooms: [InvitedRoom?]? = nil,
+      invitedRooms: [InvitedRoom]? = nil,
       secretPin: String,
-      friends: [String?]? = nil,
-      rooms: [String?]? = nil,
-      hiddenRooms: [String?]? = nil,
-      smileNotes: [SmileNote?]? = nil,
-      shakingCool: [ShakingCool?]? = nil,
+      friends: [String]? = nil,
+      rooms: [String]? = nil,
+      hiddenRooms: [String]? = nil,
+      smileNotes: [SmileNote]? = nil,
+      shakingCool: [ShakingCool]? = nil,
       tokens: Int,
       background: Int,
-      unlockedStickers: [Int?]? = nil,
-      BMFriend: String? = nil,
-      BMRoom: String? = nil,
+      unlockedStickers: [Int]? = nil,
       notificationsBM: Bool,
       notificationsLP: Bool,
       chatFontSize: Int,
-      pendingNotifications: [String?]? = nil,
+      pendingNotifications: [String]? = nil,
       needIntro: Bool,
       backgroundImageLink: String? = nil) {
     self.init(id: id,
@@ -82,8 +78,6 @@ public struct User: Model {
       tokens: tokens,
       background: background,
       unlockedStickers: unlockedStickers,
-      BMFriend: BMFriend,
-      BMRoom: BMRoom,
       notificationsBM: notificationsBM,
       notificationsLP: notificationsLP,
       chatFontSize: chatFontSize,
@@ -103,22 +97,20 @@ public struct User: Model {
       adPreference: [Int] = [],
       deviceFCMToken: String,
       isOnline: Bool,
-      invitedRooms: [InvitedRoom?]? = nil,
+      invitedRooms: [InvitedRoom]? = nil,
       secretPin: String,
-      friends: [String?]? = nil,
-      rooms: [String?]? = nil,
-      hiddenRooms: [String?]? = nil,
-      smileNotes: [SmileNote?]? = nil,
-      shakingCool: [ShakingCool?]? = nil,
+      friends: [String]? = nil,
+      rooms: [String]? = nil,
+      hiddenRooms: [String]? = nil,
+      smileNotes: [SmileNote]? = nil,
+      shakingCool: [ShakingCool]? = nil,
       tokens: Int,
       background: Int,
-      unlockedStickers: [Int?]? = nil,
-      BMFriend: String? = nil,
-      BMRoom: String? = nil,
+      unlockedStickers: [Int]? = nil,
       notificationsBM: Bool,
       notificationsLP: Bool,
       chatFontSize: Int,
-      pendingNotifications: [String?]? = nil,
+      pendingNotifications: [String]? = nil,
       needIntro: Bool,
       backgroundImageLink: String? = nil,
       createdAt: Temporal.DateTime? = nil,
@@ -143,8 +135,6 @@ public struct User: Model {
       self.tokens = tokens
       self.background = background
       self.unlockedStickers = unlockedStickers
-      self.BMFriend = BMFriend
-      self.BMRoom = BMRoom
       self.notificationsBM = notificationsBM
       self.notificationsLP = notificationsLP
       self.chatFontSize = chatFontSize

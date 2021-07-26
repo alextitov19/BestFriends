@@ -176,8 +176,6 @@ query GetUser($id: ID!) {
     tokens
     background
     unlockedStickers
-    BMFriend
-    BMRoom
     notificationsBM
     notificationsLP
     chatFontSize
@@ -226,8 +224,6 @@ query ListUsers(
       tokens
       background
       unlockedStickers
-      BMFriend
-      BMRoom
       notificationsBM
       notificationsLP
       chatFontSize

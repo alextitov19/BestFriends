@@ -1913,9 +1913,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "OBJECT",
-              "name" : "InvitedRoom",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "OBJECT",
+                "name" : "InvitedRoom",
+                "ofType" : null
+              }
             }
           },
           "isDeprecated" : false,
@@ -1943,9 +1947,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "isDeprecated" : false,
@@ -1958,9 +1966,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "isDeprecated" : false,
@@ -1973,9 +1985,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "isDeprecated" : false,
@@ -1988,9 +2004,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "OBJECT",
-              "name" : "SmileNote",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "OBJECT",
+                "name" : "SmileNote",
+                "ofType" : null
+              }
             }
           },
           "isDeprecated" : false,
@@ -2003,9 +2023,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "OBJECT",
-              "name" : "ShakingCool",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "OBJECT",
+                "name" : "ShakingCool",
+                "ofType" : null
+              }
             }
           },
           "isDeprecated" : false,
@@ -2048,32 +2072,14 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "Int",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "Int",
+                "ofType" : null
+              }
             }
-          },
-          "isDeprecated" : false,
-          "deprecationReason" : null
-        }, {
-          "name" : "BMFriend",
-          "description" : null,
-          "args" : [ ],
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "String",
-            "ofType" : null
-          },
-          "isDeprecated" : false,
-          "deprecationReason" : null
-        }, {
-          "name" : "BMRoom",
-          "description" : null,
-          "args" : [ ],
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "String",
-            "ofType" : null
           },
           "isDeprecated" : false,
           "deprecationReason" : null
@@ -2130,9 +2136,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "isDeprecated" : false,
@@ -2546,24 +2556,6 @@
           "type" : {
             "kind" : "INPUT_OBJECT",
             "name" : "ModelIntInput",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "BMFriend",
-          "description" : null,
-          "type" : {
-            "kind" : "INPUT_OBJECT",
-            "name" : "ModelStringInput",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "BMRoom",
-          "description" : null,
-          "type" : {
-            "kind" : "INPUT_OBJECT",
-            "name" : "ModelStringInput",
             "ofType" : null
           },
           "defaultValue" : null
@@ -4935,9 +4927,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "INPUT_OBJECT",
-              "name" : "InvitedRoomInput",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "INPUT_OBJECT",
+                "name" : "InvitedRoomInput",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -4961,9 +4957,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -4974,9 +4974,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -4987,9 +4991,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -5000,9 +5008,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "INPUT_OBJECT",
-              "name" : "SmileNoteInput",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "INPUT_OBJECT",
+                "name" : "SmileNoteInput",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -5013,9 +5025,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "INPUT_OBJECT",
-              "name" : "ShakingCoolInput",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "INPUT_OBJECT",
+                "name" : "ShakingCoolInput",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -5052,28 +5068,14 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "Int",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "Int",
+                "ofType" : null
+              }
             }
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "BMFriend",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "String",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "BMRoom",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "String",
-            "ofType" : null
           },
           "defaultValue" : null
         }, {
@@ -5122,9 +5124,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -5444,24 +5450,6 @@
           },
           "defaultValue" : null
         }, {
-          "name" : "BMFriend",
-          "description" : null,
-          "type" : {
-            "kind" : "INPUT_OBJECT",
-            "name" : "ModelStringInput",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "BMRoom",
-          "description" : null,
-          "type" : {
-            "kind" : "INPUT_OBJECT",
-            "name" : "ModelStringInput",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
           "name" : "notificationsBM",
           "description" : null,
           "type" : {
@@ -5668,9 +5656,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "INPUT_OBJECT",
-              "name" : "InvitedRoomInput",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "INPUT_OBJECT",
+                "name" : "InvitedRoomInput",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -5690,9 +5682,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -5703,9 +5699,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -5716,9 +5716,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -5729,9 +5733,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "INPUT_OBJECT",
-              "name" : "SmileNoteInput",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "INPUT_OBJECT",
+                "name" : "SmileNoteInput",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -5742,9 +5750,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "INPUT_OBJECT",
-              "name" : "ShakingCoolInput",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "INPUT_OBJECT",
+                "name" : "ShakingCoolInput",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -5773,28 +5785,14 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "Int",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "Int",
+                "ofType" : null
+              }
             }
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "BMFriend",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "String",
-            "ofType" : null
-          },
-          "defaultValue" : null
-        }, {
-          "name" : "BMRoom",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "String",
-            "ofType" : null
           },
           "defaultValue" : null
         }, {
@@ -5831,9 +5829,13 @@
             "kind" : "LIST",
             "name" : null,
             "ofType" : {
-              "kind" : "SCALAR",
-              "name" : "String",
-              "ofType" : null
+              "kind" : "NON_NULL",
+              "name" : null,
+              "ofType" : {
+                "kind" : "SCALAR",
+                "name" : "String",
+                "ofType" : null
+              }
             }
           },
           "defaultValue" : null
@@ -7530,6 +7532,23 @@
         "onFragment" : false,
         "onField" : false
       }, {
+        "name" : "deprecated",
+        "description" : null,
+        "locations" : [ "FIELD_DEFINITION", "ENUM_VALUE" ],
+        "args" : [ {
+          "name" : "reason",
+          "description" : null,
+          "type" : {
+            "kind" : "SCALAR",
+            "name" : "String",
+            "ofType" : null
+          },
+          "defaultValue" : "\"No longer supported\""
+        } ],
+        "onOperation" : false,
+        "onFragment" : false,
+        "onField" : false
+      }, {
         "name" : "aws_subscribe",
         "description" : "Tells the service which mutation triggers this subscription.",
         "locations" : [ "FIELD_DEFINITION" ],
@@ -7575,23 +7594,6 @@
             }
           },
           "defaultValue" : null
-        } ],
-        "onOperation" : false,
-        "onFragment" : false,
-        "onField" : false
-      }, {
-        "name" : "deprecated",
-        "description" : null,
-        "locations" : [ "FIELD_DEFINITION", "ENUM_VALUE" ],
-        "args" : [ {
-          "name" : "reason",
-          "description" : null,
-          "type" : {
-            "kind" : "SCALAR",
-            "name" : "String",
-            "ofType" : null
-          },
-          "defaultValue" : "\"No longer supported\""
         } ],
         "onOperation" : false,
         "onFragment" : false,

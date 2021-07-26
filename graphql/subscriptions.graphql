@@ -212,8 +212,6 @@ subscription OnCreateUser {
     tokens
     background
     unlockedStickers
-    BMFriend
-    BMRoom
     notificationsBM
     notificationsLP
     chatFontSize
@@ -266,8 +264,6 @@ subscription OnUpdateUser {
     tokens
     background
     unlockedStickers
-    BMFriend
-    BMRoom
     notificationsBM
     notificationsLP
     chatFontSize
@@ -320,8 +316,6 @@ subscription OnDeleteUser {
     tokens
     background
     unlockedStickers
-    BMFriend
-    BMRoom
     notificationsBM
     notificationsLP
     chatFontSize

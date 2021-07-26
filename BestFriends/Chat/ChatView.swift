@@ -245,22 +245,22 @@ struct ChatView: View {
                     }
                 }
                 
-                ScrollViewReader { value in
-                    ScrollView(showsIndicators: false) {
-                        LazyVStack {
-                            ForEach(messageDataSource.room.messages, id: \.id) { message in
-                                ChatBubble(msg: message, messageDS: messageDataSource, myuser: user)
-                                    .id(message.id)
-                            }
-                        }
-                        .onAppear {
-                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
-                        }
-                        .onChange(of: messageDataSource.room.messages.count) { _ in
-                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
-                        }
-                    }
-                }
+//                ScrollViewReader { value in
+//                    ScrollView(showsIndicators: false) {
+//                        LazyVStack {
+//                            ForEach(messageDataSource.room.messages, id: \.id) { message in
+//                                ChatBubble(msg: message, messageDS: messageDataSource, myuser: user)
+//                                    .id(message.id)
+//                            }
+//                        }
+//                        .onAppear {
+//                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
+//                        }
+//                        .onChange(of: messageDataSource.room.messages.count) { _ in
+//                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
+//                        }
+//                    }
+//                }
                 //                .padding()
                 //                .offset(y: -self.offset)
                 //                                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)

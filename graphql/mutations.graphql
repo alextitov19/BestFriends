@@ -242,8 +242,6 @@ mutation CreateUser(
     tokens
     background
     unlockedStickers
-    BMFriend
-    BMRoom
     notificationsBM
     notificationsLP
     chatFontSize
@@ -299,8 +297,6 @@ mutation UpdateUser(
     tokens
     background
     unlockedStickers
-    BMFriend
-    BMRoom
     notificationsBM
     notificationsLP
     chatFontSize
@@ -356,8 +352,6 @@ mutation DeleteUser(
     tokens
     background
     unlockedStickers
-    BMFriend
-    BMRoom
     notificationsBM
     notificationsLP
     chatFontSize

@@ -56,7 +56,7 @@ struct RoomRow: View {
     }
     
     private func getBody() {
-        messageBody = room.messages.last?.body ?? ""
+        messageBody = room.messages?.last?.body ?? ""
         if UserDataSource().getCurrentUser().hiddenRooms != nil {
             if UserDataSource().getCurrentUser().hiddenRooms!.contains(room.id) {
                 messageBody = "*Hidden*"

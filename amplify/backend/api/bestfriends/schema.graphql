@@ -55,22 +55,20 @@ type User @model {
   adPreference: [Int!]!
   deviceFCMToken: String!
   isOnline: Boolean!
-  invitedRooms: [InvitedRoom]
+  invitedRooms: [InvitedRoom!]
   secretPin: String!
-  friends: [String]
-  rooms: [String]
-  hiddenRooms: [String]
-  smileNotes: [SmileNote]
-  shakingCool: [ShakingCool]
+  friends: [String!]
+  rooms: [String!]
+  hiddenRooms: [String!]
+  smileNotes: [SmileNote!]
+  shakingCool: [ShakingCool!]
   tokens: Int!
   background: Int!
-  unlockedStickers: [Int]
-  BMFriend: String
-  BMRoom: String
+  unlockedStickers: [Int!]
   notificationsBM: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
-  pendingNotifications: [String]
+  pendingNotifications: [String!]
   needIntro: Boolean!
   backgroundImageLink: String
 }
