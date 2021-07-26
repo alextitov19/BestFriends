@@ -1077,13 +1077,11 @@ struct SignUpPage9: View {
                     .italic()
                     .font(.system(size: 20))
                     .fontWeight(.regular)
-                    .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 200)
                     .multilineTextAlignment(.center)
                 
                 AdPlayerView(name: "ShakingCoolVideo")
-                    .frame(width: 200, height: 250)
+                    .frame(width: 200, height: 175)
                     .scaledToFill()
                     .blendMode(.screen)
                 
@@ -1091,9 +1089,7 @@ struct SignUpPage9: View {
                     .italic()
                     .font(.system(size: 20))
                     .fontWeight(.regular)
-                    .italic()
                     .foregroundColor(Color.white)
-                    .frame(width: 300)
                     .multilineTextAlignment(.center)
                     .padding()
                 
@@ -1141,6 +1137,8 @@ struct SignUpPage9: View {
                             .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     }
+                    
+                    Spacer().frame(height: 100)
                     
                 }
             }
