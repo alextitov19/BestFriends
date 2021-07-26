@@ -236,7 +236,7 @@ struct PinView: View {
                     title = "Success"
                     color = Color(.green)
                     userDataSource.updateUser(user: user)
-                    sessionManager.chat(room: room)
+                    sessionManager.getCurrentAuthUser()
                 }
                 
             } else {

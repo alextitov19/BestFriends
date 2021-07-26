@@ -5,10 +5,13 @@
 //  Created by Alex Titov on 4/19/21.
 //
 
-import Foundation
+import SwiftUI
 import Amplify
 
 struct UserDataSource {
+    
+    @EnvironmentObject var sessionManager: SessionManager
+
         
     func getUser(id: String) -> User {
         var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: [1], deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, notificationsBM: true, notificationsLP: true, chatFontSize: 16, needIntro: false)
@@ -44,7 +47,6 @@ struct UserDataSource {
         group.wait()
         
         return finaluser
-        
     }
     
     func getCurrentUser() -> User {
@@ -173,6 +175,50 @@ struct UserDataSource {
         return username
     }
     
+    
+    func doesMyUserExist() -> Bool {
+        var finaluser = User(id: "DOESNOTEXIST", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: [1], deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, notificationsBM: true, notificationsLP: true, chatFontSize: 16, needIntro: false)
+        let id = Amplify.Auth.getCurrentUser()?.username
+        if id == nil {
+            return false
+        }
+        let group = DispatchGroup()
+        group.enter()
+        
+        Amplify.API.query(request: .get(User.self, byId: id!)) { event in
+            switch event {
+            case .success(let result):
+                switch result {
+                case .success(let user):
+                    guard let user = user else {
+                        print("Could not find user")
+                        print("failed -1 for id: \(id ?? "DIDNOTGETID") and my id is: \(Amplify.Auth.getCurrentUser()?.username ?? "NOUSERNAME")")
+                        group.leave()
+                        return
+                    }
+                    print("Successfully retrieved user: \(user)")
+                    //user found
+                    finaluser = user
+                    group.leave()
+                    
+                case .failure(let error):
+                    print("Got failed result with \(error.errorDescription)")
+                }
+            case .failure(let error):
+                print("Got failed event with error \(error)")
+            }
+        }
+        
+        
+        group.wait()
+        
+        if finaluser.id == "DOESNOTEXIST" {
+            return false
+        } else {
+            return true
+        }
+        
+    }
     
     
 }

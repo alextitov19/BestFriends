@@ -29,7 +29,12 @@ final class SessionManager: ObservableObject {
     
     func getCurrentAuthUser() {
         if Amplify.Auth.getCurrentUser() != nil {
-            appState = .home
+            if UserDataSource().doesMyUserExist() == true {
+                appState = .home
+            } else {
+                signOut()
+                appState = .login
+            }
         } else {
             appState = .login
         }

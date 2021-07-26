@@ -51,9 +51,13 @@ struct HomeView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     init() {
+        if userDataSource.doesMyUserExist() {
         let foo = userDataSource.getCurrentUser()
         self.USS = UserSubscriptionService(user: foo)
         USS.createSubscription()
+        } else {
+            fatalError()
+        }
     }
     
     private func reloadData() {

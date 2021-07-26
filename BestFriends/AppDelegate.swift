@@ -37,9 +37,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate {
                 print("Error fetching FCM registration token: \(error)")
             } else if let token = token {
                 print("FCM registration token: \(token)")
-                let user = UserDataSource().getCurrentUser()
-                if user.id != " " {
-                    PushNotificationManager(userID: user.id).updateFirestorePushTokenIfNeeded()
+                if UserDataSource().doesMyUserExist() {
+                    let user = UserDataSource().getCurrentUser()
+                    if user.id != " " {
+                        PushNotificationManager(userID: user.id).updateFirestorePushTokenIfNeeded()
+                    }
                 }
             }
         }
