@@ -22,7 +22,6 @@ struct ShakingCoolView: View {
     @State private var isAdPresented = false
     @State private var images: [UIImage] = []
     @State private var currentlyLoading = false
-    @State private var showingPopup = true
 
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -144,24 +143,6 @@ struct ShakingCoolView: View {
                     .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
                     .cornerRadius(25)
                     .transition(.scale)
-            }
-            
-            if showingPopup {
-                Text("Add 2 images for yourself and then one for each friend they will see when they 'Shake' their phone.")
-                    .frame(width: 300, height: 100, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 20, weight: .thin))
-                    .padding()
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
-                    .transition(.scale)
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
-                            withAnimation {
-                                showingPopup = false
-                            }
-                        }
-                    }
             }
             
             if choosingRecipient {
