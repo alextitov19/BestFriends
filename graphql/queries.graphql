@@ -1,0 +1,314 @@
+# this is an auto generated file. This will be overwritten
+query GetRoom($id: ID!) {
+  getRoom(id: $id) {
+    id
+    name
+    creatorID
+    members
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    timeUpdated
+    createdAt
+    updatedAt
+  }
+}
+query ListRooms(
+  $filter: ModelRoomFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      name
+      creatorID
+      members
+      messages {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      timeUpdated
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetDeletionRequest($id: ID!) {
+  getDeletionRequest(id: $id) {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
+query ListDeletionRequests(
+  $filter: ModelDeletionRequestFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listDeletionRequests(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      userid
+      userEmail
+      reason
+      date
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetReportedMessage($id: ID!) {
+  getReportedMessage(id: $id) {
+    id
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    previousMessages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    createdAt
+    updatedAt
+  }
+}
+query ListReportedMessages(
+  $filter: ModelReportedMessageFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listReportedMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      reporterID
+      reportedMessage {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      previousMessages {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetUser($id: ID!) {
+  getUser(id: $id) {
+    id
+    firstName
+    lastName
+    email
+    birthday
+    pronouns
+    location
+    adPreference
+    deviceFCMToken
+    isOnline
+    invitedRooms {
+      roomID
+      timer
+    }
+    secretPin
+    friends
+    rooms
+    hiddenRooms
+    smileNotes {
+      id
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
+    }
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
+    tokens
+    background
+    unlockedStickers
+    BMFriend
+    BMRoom
+    notificationsBM
+    notificationsLP
+    chatFontSize
+    pendingNotifications
+    needIntro
+    backgroundImageLink
+    createdAt
+    updatedAt
+  }
+}
+query ListUsers(
+  $filter: ModelUserFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listUsers(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      firstName
+      lastName
+      email
+      birthday
+      pronouns
+      location
+      adPreference
+      deviceFCMToken
+      isOnline
+      invitedRooms {
+        roomID
+        timer
+      }
+      secretPin
+      friends
+      rooms
+      hiddenRooms
+      smileNotes {
+        id
+        favorite
+      }
+      shakingCool {
+        id
+        link
+        intendedid
+        intendedname
+      }
+      tokens
+      background
+      unlockedStickers
+      BMFriend
+      BMRoom
+      notificationsBM
+      notificationsLP
+      chatFontSize
+      pendingNotifications
+      needIntro
+      backgroundImageLink
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetAdvertisement($id: ID!) {
+  getAdvertisement(id: $id) {
+    id
+    category
+    videoName
+    adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
+    createdAt
+    updatedAt
+  }
+}
+query ListAdvertisements(
+  $filter: ModelAdvertisementFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listAdvertisements(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      category
+      videoName
+      adLink
+      duration
+      hasAudio
+      likes
+      views
+      shares
+      clicks
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetManagementDocument($id: ID!) {
+  getManagementDocument(id: $id) {
+    id
+    documents
+    emails
+    usernames
+    prices
+    createdAt
+    updatedAt
+  }
+}
+query ListManagementDocuments(
+  $filter: ModelManagementDocumentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listManagementDocuments(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      id
+      documents
+      emails
+      usernames
+      prices
+      createdAt
+      updatedAt
+    }
+    nextToken
+  }
+}

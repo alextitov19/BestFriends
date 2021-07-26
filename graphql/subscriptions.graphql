@@ -1,0 +1,415 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateRoom {
+  onCreateRoom {
+    id
+    name
+    creatorID
+    members
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    timeUpdated
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateRoom {
+  onUpdateRoom {
+    id
+    name
+    creatorID
+    members
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    timeUpdated
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteRoom {
+  onDeleteRoom {
+    id
+    name
+    creatorID
+    members
+    messages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    timeUpdated
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateDeletionRequest {
+  onCreateDeletionRequest {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateDeletionRequest {
+  onUpdateDeletionRequest {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteDeletionRequest {
+  onDeleteDeletionRequest {
+    id
+    userid
+    userEmail
+    reason
+    date
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateReportedMessage {
+  onCreateReportedMessage {
+    id
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    previousMessages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateReportedMessage {
+  onUpdateReportedMessage {
+    id
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    previousMessages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteReportedMessage {
+  onDeleteReportedMessage {
+    id
+    reporterID
+    reportedMessage {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    previousMessages {
+      id
+      senderName
+      senderID
+      body
+      creationDate
+      attachmentPath
+      stickerNumber
+    }
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateUser {
+  onCreateUser {
+    id
+    firstName
+    lastName
+    email
+    birthday
+    pronouns
+    location
+    adPreference
+    deviceFCMToken
+    isOnline
+    invitedRooms {
+      roomID
+      timer
+    }
+    secretPin
+    friends
+    rooms
+    hiddenRooms
+    smileNotes {
+      id
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
+    }
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
+    tokens
+    background
+    unlockedStickers
+    BMFriend
+    BMRoom
+    notificationsBM
+    notificationsLP
+    chatFontSize
+    pendingNotifications
+    needIntro
+    backgroundImageLink
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateUser {
+  onUpdateUser {
+    id
+    firstName
+    lastName
+    email
+    birthday
+    pronouns
+    location
+    adPreference
+    deviceFCMToken
+    isOnline
+    invitedRooms {
+      roomID
+      timer
+    }
+    secretPin
+    friends
+    rooms
+    hiddenRooms
+    smileNotes {
+      id
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
+    }
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
+    tokens
+    background
+    unlockedStickers
+    BMFriend
+    BMRoom
+    notificationsBM
+    notificationsLP
+    chatFontSize
+    pendingNotifications
+    needIntro
+    backgroundImageLink
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteUser {
+  onDeleteUser {
+    id
+    firstName
+    lastName
+    email
+    birthday
+    pronouns
+    location
+    adPreference
+    deviceFCMToken
+    isOnline
+    invitedRooms {
+      roomID
+      timer
+    }
+    secretPin
+    friends
+    rooms
+    hiddenRooms
+    smileNotes {
+      id
+      message {
+        id
+        senderName
+        senderID
+        body
+        creationDate
+        attachmentPath
+        stickerNumber
+      }
+      favorite
+    }
+    shakingCool {
+      id
+      link
+      intendedid
+      intendedname
+    }
+    tokens
+    background
+    unlockedStickers
+    BMFriend
+    BMRoom
+    notificationsBM
+    notificationsLP
+    chatFontSize
+    pendingNotifications
+    needIntro
+    backgroundImageLink
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateAdvertisement {
+  onCreateAdvertisement {
+    id
+    category
+    videoName
+    adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateAdvertisement {
+  onUpdateAdvertisement {
+    id
+    category
+    videoName
+    adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteAdvertisement {
+  onDeleteAdvertisement {
+    id
+    category
+    videoName
+    adLink
+    duration
+    hasAudio
+    likes
+    views
+    shares
+    clicks
+    createdAt
+    updatedAt
+  }
+}
+subscription OnCreateManagementDocument {
+  onCreateManagementDocument {
+    id
+    documents
+    emails
+    usernames
+    prices
+    createdAt
+    updatedAt
+  }
+}
+subscription OnUpdateManagementDocument {
+  onUpdateManagementDocument {
+    id
+    documents
+    emails
+    usernames
+    prices
+    createdAt
+    updatedAt
+  }
+}
+subscription OnDeleteManagementDocument {
+  onDeleteManagementDocument {
+    id
+    documents
+    emails
+    usernames
+    prices
+    createdAt
+    updatedAt
+  }
+}
