@@ -20,7 +20,7 @@ struct BestFriendsApp: App {
         configureAmplify()
         FirebaseApp.configure()
         
-//                sessionManager.signOut()
+                sessionManager.signOut()
         
         //        if Amplify.Auth.getCurrentUser() != nil {
         //            let id  = Amplify.Auth.getCurrentUser()!.username
@@ -37,7 +37,9 @@ struct BestFriendsApp: App {
         //                return
         //            }
         //        }
-        sessionManager.getCurrentAuthUser()
+//        ManDocDataSource().createDoc()
+        
+//        sessionManager.getCurrentAuthUser()
         
         NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: .main) { _ in
             // Background...
@@ -97,7 +99,6 @@ struct BestFriendsApp: App {
     private func configureAmplify() {
         do {
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
-            try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
             try Amplify.add(plugin: AWSS3StoragePlugin())
             try Amplify.add(plugin: AWSAPIPlugin())
             try Amplify.configure()
