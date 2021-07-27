@@ -704,27 +704,19 @@
 		7AF2E2D126AF1CB500A82C6D /* models */ = {
 			isa = PBXGroup;
 			children = (
-				7AD259F026AF913100396CF2 /* amplify/generated/models/Advertisement.swift */,
-				7AD259F726AF913200396CF2 /* amplify/generated/models/Advertisement+Schema.swift */,
 				7AD259F226AF913100396CF2 /* AmplifyModels.swift */,
 				7AD259F926AF913200396CF2 /* DeletionRequest.swift */,
 				7AD259EE26AF913100396CF2 /* DeletionRequest+Schema.swift */,
 				7AD259FA26AF913200396CF2 /* InvitedRoom.swift */,
 				7AD259FE26AF913200396CF2 /* InvitedRoom+Schema.swift */,
-				7AD259F626AF913200396CF2 /* amplify/generated/models/ManagementDocument.swift */,
-				7AD259F426AF913200396CF2 /* amplify/generated/models/ManagementDocument+Schema.swift */,
-				7AD259ED26AF913100396CF2 /* amplify/generated/models/Message.swift */,
-				7AD259FF26AF913200396CF2 /* amplify/generated/models/Message+Schema.swift */,
 				7AD259FB26AF913200396CF2 /* ReportedMessage.swift */,
 				7AD259EC26AF913100396CF2 /* ReportedMessage+Schema.swift */,
 				7AD259F326AF913100396CF2 /* Room.swift */,
-				7AD259F526AF913200396CF2 /* amplify/generated/models/Room+Schema.swift */,
 				7AD259F126AF913100396CF2 /* ShakingCool.swift */,
 				7AD259FC26AF913200396CF2 /* ShakingCool+Schema.swift */,
 				7AD259EF26AF913100396CF2 /* SmileNote.swift */,
 				7AD259EB26AF913100396CF2 /* SmileNote+Schema.swift */,
 				7AD259FD26AF913200396CF2 /* User.swift */,
-				7AD259F826AF913200396CF2 /* amplify/generated/models/User+Schema.swift */,
 			);
 			name = models;
 			path = amplify/generated/models;
@@ -1347,7 +1339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_PREVIEWS = YES;
@@ -1375,7 +1367,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_PREVIEWS = YES;
