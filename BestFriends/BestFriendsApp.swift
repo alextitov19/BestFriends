@@ -19,7 +19,7 @@ struct BestFriendsApp: App {
     init() {
         configureAmplify()
         FirebaseApp.configure()
-        
+        sessionManager.signOut()
 //                sessionManager.signOut()
         
         //        if Amplify.Auth.getCurrentUser() != nil {
