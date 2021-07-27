@@ -263,15 +263,13 @@ struct SmileNotesView: View {
         newSmileNote.favorite.toggle()
         guard let username = Amplify.Auth.getCurrentUser()?.username else { return }
         var user = UserDataSource().getUser(id: username)
-        if user.smileNotes != nil {
-            for i in 0..<user.smileNotes!.count {
-                if user.smileNotes![i].id == oldSmileNote.id {
-                    user.smileNotes?.remove(at: i)
-                    user.smileNotes?.insert(newSmileNote, at: i)
+            for i in 0..<user.smileNotes.count {
+                if user.smileNotes[i].id == oldSmileNote.id {
+                    user.smileNotes.remove(at: i)
+                    user.smileNotes.insert(newSmileNote, at: i)
                     UserDataSource().updateUser(user: user)
                     return
                 }
-            }
         }
     }
 }

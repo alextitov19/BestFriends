@@ -28,7 +28,7 @@ extension Room {
       .field(room.name, is: .required, ofType: .string),
       .field(room.creatorID, is: .required, ofType: .string),
       .field(room.members, is: .required, ofType: .embeddedCollection(of: String.self)),
-      .field(room.messages, is: .optional, ofType: .embeddedCollection(of: Message.self)),
+      .field(room.messages, is: .required, ofType: .embeddedCollection(of: Message.self)),
       .field(room.timeUpdated, is: .required, ofType: .int),
       .field(room.createdAt, is: .optional, isReadOnly: true, ofType: .dateTime),
       .field(room.updatedAt, is: .optional, isReadOnly: true, ofType: .dateTime)

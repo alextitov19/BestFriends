@@ -86,8 +86,8 @@ struct HomeView: View {
                 }
             }
             
-            if USS.user.friends != nil {
-                DispatchQueue.main.asyncAfter(deadline: .now() + starTimings[USS.user.friends!.count - 1] + 0.5) { inviteClicked() }
+            if USS.user.friends.count > 0 {
+                DispatchQueue.main.asyncAfter(deadline: .now() + starTimings[USS.user.friends.count - 1] + 0.5) { inviteClicked() }
                 DispatchQueue.main.asyncAfter(deadline: .now() + 12.0) { inviteClicked() }
             }
         }
@@ -229,12 +229,10 @@ struct HomeView: View {
                             .scaledToFill()
                             .scaleEffect(isAtMaxScale ? 0.5 : 1)
                             .onAppear {
-                                if USS.user.pendingNotifications != nil {
-                                    if USS.user.pendingNotifications!.count > 0 {
+                                    if USS.user.pendingNotifications.count > 0 {
                                         withAnimation(self.animation, {
                                             self.isAtMaxScale.toggle()
                                         })
-                                    }
                                 }
                             }
                             .onTapGesture {
@@ -322,8 +320,8 @@ struct HomeView: View {
             }
             
             VStack {
-                if USS.user.pendingNotifications != nil && notificationsShowing == true {
-                    ForEach(USS.user.pendingNotifications!.reversed(), id: \.self) { foo in
+                if USS.user.pendingNotifications.count > 0 && notificationsShowing == true {
+                    ForEach(USS.user.pendingNotifications.reversed(), id: \.self) { foo in
                         Text(foo)
                             .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                             .font(.system(size: 17, weight: .regular))
@@ -422,7 +420,7 @@ struct HomeView: View {
     
     
     private func getFriends() {
-        guard var friends = USS.user.friends else { return }
+        var friends = USS.user.friends
         friends.shuffle()
         friendIDs = friends
         displayStars()

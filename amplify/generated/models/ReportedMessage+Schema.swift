@@ -25,7 +25,7 @@ extension ReportedMessage {
       .id(),
       .field(reportedMessage.reporterID, is: .required, ofType: .string),
       .field(reportedMessage.reportedMessage, is: .required, ofType: .embedded(type: Message.self)),
-      .field(reportedMessage.previousMessages, is: .optional, ofType: .embeddedCollection(of: Message.self)),
+      .field(reportedMessage.previousMessages, is: .required, ofType: .embeddedCollection(of: Message.self)),
       .field(reportedMessage.createdAt, is: .optional, isReadOnly: true, ofType: .dateTime),
       .field(reportedMessage.updatedAt, is: .optional, isReadOnly: true, ofType: .dateTime)
     )

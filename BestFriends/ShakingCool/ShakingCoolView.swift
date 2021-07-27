@@ -195,13 +195,11 @@ struct ShakingCoolView: View {
         myid = user.id
         print("Got user: ", user)
         shakingCool = []
-        if user.shakingCool != nil {
-            shakingCool = user.shakingCool!
-        }
+            shakingCool = user.shakingCool
         print("Shaking Cool: ", shakingCool)
         chosenID = user.id
         var mycounter = 0
-        availableIDs = user.friends ?? []
+        availableIDs = user.friends
         for cool in shakingCool {
             if cool.intendedid == user.id {
                 mycounter += 1
@@ -225,8 +223,8 @@ struct ShakingCoolView: View {
     
     private func howManyLeft() -> Int {
         let user = UserDataSource().getCurrentUser()
-        let first = user.friends?.count ?? 0
-        let second = user.shakingCool?.count ?? 0
+        let first = user.friends.count
+        let second = user.shakingCool.count
         return 2 + first - second
     }
 }

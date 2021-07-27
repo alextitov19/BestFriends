@@ -59,7 +59,7 @@ struct StickerPopover: View {
                                             .scaledToFit()
                                             .padding()
                                         
-                                        if user.unlockedStickers == nil || user.unlockedStickers!.contains(number) == false {
+                                        if user.unlockedStickers.contains(number) == false {
                                             Image("lockBlack")
                                                 .resizable()
                                                 .frame(width: 65, height: 65)
@@ -67,24 +67,24 @@ struct StickerPopover: View {
                                         }
                                         
                                         Button(action: {
-                                            if user.unlockedStickers != nil {
-                                                if user.unlockedStickers!.contains(number) == false && user.tokens >= 7 {
+                                            if user.unlockedStickers.count > 0 {
+                                                if user.unlockedStickers.contains(number) == false && user.tokens >= 7 {
                                                     var newuser = user
-                                                    newuser.unlockedStickers?.append(number)
+                                                    newuser.unlockedStickers.append(number)
                                                     newuser.tokens -= 7
                                                     userDataSource.updateUser(user: newuser)
                                                     
                                                     let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Sticker*", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
                                                     
                                                     messageDataSource.sendMessage(message: message)
-                                                } else if user.unlockedStickers!.contains(number) == true {
+                                                } else if user.unlockedStickers.contains(number) == true {
                                                     let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Sticker*", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
                                                     
                                                     messageDataSource.sendMessage(message: message)
                                                 }
                                             } else if user.tokens >= 7 {
                                                 var newuser = user
-                                                newuser.unlockedStickers?.append(number)
+                                                newuser.unlockedStickers.append(number)
                                                 newuser.tokens -= 7
                                                 userDataSource.updateUser(user: newuser)
                                                 

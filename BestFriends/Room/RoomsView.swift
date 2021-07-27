@@ -178,12 +178,10 @@ struct RoomsView: View {
                         .scaledToFill()
                         .scaleEffect(isAtMaxScale ? 0.5 : 1)
                         .onAppear {
-                            if USS.user.pendingNotifications != nil {
-                                if USS.user.pendingNotifications!.count > 0 {
+                                if USS.user.pendingNotifications.count > 0 {
                                     withAnimation(self.animation, {
                                         self.isAtMaxScale.toggle()
                                     })
-                                }
                             }
                         }
                         .onTapGesture {
@@ -227,7 +225,7 @@ struct RoomsView: View {
             
             VStack {
                 if USS.user.pendingNotifications != nil && notificationsShowing == true {
-                    ForEach(USS.user.pendingNotifications!.reversed(), id: \.self) { foo in
+                    ForEach(USS.user.pendingNotifications.reversed(), id: \.self) { foo in
                         Text(foo)
                             .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                             .font(.system(size: 17, weight: .regular))

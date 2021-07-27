@@ -115,14 +115,14 @@ struct UserDataSource {
     func addFriend(user: User) {
         //add myself as a friend of user
         guard let myID = Amplify.Auth.getCurrentUser()?.username else { return } // get my id
-        if ((user.friends?.contains(myID)) == true) { return }
+        if ((user.friends.contains(myID)) == true) { return }
         var friendUser = user
-        friendUser.friends?.append(myID) // append our id to user's friends list of ids
+        friendUser.friends.append(myID) // append our id to user's friends list of ids
         print("Preparing to update FriendUser ----------------------------")
         updateUser(user: friendUser)
         
         var myUser = getUser(id: myID) //add user as a friend of mine
-        myUser.friends?.append(user.id)         // appends other user's id to our own friend array of ids
+        myUser.friends.append(user.id)         // appends other user's id to our own friend array of ids
         updateUser(user: myUser)
     }
     
@@ -130,9 +130,9 @@ struct UserDataSource {
         let userDS = UserDataSource()
         for id in room.members {
             var user = userDS.getUser(id: id)
-            user.rooms?.append(room.id)
+            user.rooms.append(room.id)
             if id != room.creatorID {
-                user.invitedRooms?.append(InvitedRoom(roomID: room.id))
+                user.invitedRooms.append(InvitedRoom(roomID: room.id))
             }
             userDS.updateUser(user: user)
         }

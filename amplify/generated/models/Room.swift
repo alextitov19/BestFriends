@@ -7,7 +7,7 @@ public struct Room: Model {
   public var name: String
   public var creatorID: String
   public var members: [String]
-  public var messages: [Message]?
+  public var messages: [Message]
   public var timeUpdated: Int
   public var createdAt: Temporal.DateTime?
   public var updatedAt: Temporal.DateTime?
@@ -16,7 +16,7 @@ public struct Room: Model {
       name: String,
       creatorID: String,
       members: [String] = [],
-      messages: [Message]? = nil,
+      messages: [Message] = [],
       timeUpdated: Int) {
     self.init(id: id,
       name: name,
@@ -31,7 +31,7 @@ public struct Room: Model {
       name: String,
       creatorID: String,
       members: [String] = [],
-      messages: [Message]? = nil,
+      messages: [Message] = [],
       timeUpdated: Int,
       createdAt: Temporal.DateTime? = nil,
       updatedAt: Temporal.DateTime? = nil) {

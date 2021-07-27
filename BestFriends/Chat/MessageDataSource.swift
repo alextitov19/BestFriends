@@ -18,7 +18,7 @@ class MessageDataSource: ObservableObject {
     }
     
     func sendMessage(message: Message) {
-        room.messages?.append(message)
+        room.messages.append(message)
         
         Amplify.API.mutate(request: .update(room)) { [weak self] mutationResult in
             switch mutationResult {
@@ -43,8 +43,7 @@ class MessageDataSource: ObservableObject {
         guard let userid = Amplify.Auth.getCurrentUser()?.username else {return}
         let smileNote = SmileNote(id: Helper().randomString(length: 20), message: message, favorite: false)
         var user = UserDataSource().getUser(id: userid)
-        user.smileNotes = user.smileNotes ?? []
-        var smileNotes: [SmileNote] = user.smileNotes!
+        var smileNotes: [SmileNote] = user.smileNotes
         smileNotes.append(smileNote)
         user.smileNotes = smileNotes
         Amplify.API.mutate(request: .update(user)) { [weak self] mutationResult in
@@ -66,7 +65,7 @@ class MessageDataSource: ObservableObject {
     }
     
     func deleteMessage(message: Message) {
-        room.messages!.removeAll { $0.id == message.id }
+        room.messages.removeAll { $0.id == message.id }
         Amplify.API.mutate(request: .update(room)) { [weak self] mutationResult in
             switch mutationResult {
             case .success(let creationResult):

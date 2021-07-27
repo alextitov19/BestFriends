@@ -34,7 +34,7 @@ class RoomDataSource: ObservableObject {
     func getRooms() {
         guard let currentID = Amplify.Auth.getCurrentUser()?.username else {return}
         let user = UserDataSource().getUser(id: currentID)
-        guard let roomIDs: [String] = user.rooms else {return}
+        let roomIDs: [String] = user.rooms 
         
         for roomID in roomIDs {
             self.rooms.append(getRoom(id: roomID))
@@ -107,8 +107,8 @@ class RoomDataSource: ObservableObject {
         if let index = theroom.members.firstIndex(of: user.id) {
             theroom.members.remove(at: index)
             updateRoom(room: theroom)
-            if let index = user.rooms!.firstIndex(of: room.id) {
-                user.rooms!.remove(at: index)
+            if let index = user.rooms.firstIndex(of: room.id) {
+                user.rooms.remove(at: index)
                 userDS.updateUser(user: user)
             }
         }
@@ -140,8 +140,8 @@ class RoomDataSource: ObservableObject {
         let memberIDs = room.members
         for id in memberIDs {
             var user = userDS.getUser(id: id)
-            if let index = user.rooms!.firstIndex(of: room.id) {
-                user.rooms!.remove(at: index)
+            if let index = user.rooms.firstIndex(of: room.id) {
+                user.rooms.remove(at: index)
                 print("removed a room for user \(user.id)")
                 userDS.updateUser(user: user)
             }

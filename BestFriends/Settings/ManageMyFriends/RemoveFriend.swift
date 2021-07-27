@@ -78,21 +78,19 @@ struct RemoveFriend: View {
         selectedIDs = []
         let user = userDS.getCurrentUser()
         let friendarr = user.friends
-        if friendarr != nil {
-            friendids = friendarr!
-        }
+            friendids = friendarr
     }
     
     private func deleteFriends() {
         if selectedIDs.count > 0 {
             var user = userDS.getCurrentUser()
             for id in selectedIDs {
-                if let index = user.friends!.firstIndex(of: id) {
-                    user.friends!.remove(at: index)
+                if let index = user.friends.firstIndex(of: id) {
+                    user.friends.remove(at: index)
                 }
                 var otherUser = userDS.getUser(id: id)
-                if let index = otherUser.friends!.firstIndex(of: user.id) {
-                    otherUser.friends!.remove(at: index)
+                if let index = otherUser.friends.firstIndex(of: user.id) {
+                    otherUser.friends.remove(at: index)
                     userDS.updateUser(user: otherUser)
                 }
             }

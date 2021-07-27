@@ -133,9 +133,9 @@ struct NotificationPreLoad: View {
     
     private func setTimer(minutes: Int) {
         var user = userDataSource.getCurrentUser()
-        for i in 0..<user.invitedRooms!.count {
-            if user.invitedRooms![i].roomID == roomID {
-                user.invitedRooms![i].timer = minutes
+        for i in 0..<user.invitedRooms.count {
+            if user.invitedRooms[i].roomID == roomID {
+                user.invitedRooms[i].timer = minutes
                 userDataSource.updateUser(user: user)
                 var body = ""
                 switch minutes {
@@ -155,8 +155,8 @@ struct NotificationPreLoad: View {
                 if pendingNotifs == nil {
                     pendingNotifs = []
                 }
-                pendingNotifs!.append(body)
-                friend.pendingNotifications = pendingNotifs!
+                pendingNotifs.append(body)
+                friend.pendingNotifications = pendingNotifs
                 userDataSource.updateUser(user: friend)
             }
         }
