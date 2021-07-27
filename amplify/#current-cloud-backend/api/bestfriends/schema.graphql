@@ -3,7 +3,7 @@ type Room @model {
   name: String!
   creatorID: String!
   members: [String!]!
-  messages: [Message!]
+  messages: [Message!]!
   timeUpdated: AWSTimestamp!
 }
 
@@ -41,7 +41,7 @@ type Message {
 type ReportedMessage @model {
   reporterID: String!
   reportedMessage: Message!
-  previousMessages: [Message!]
+  previousMessages: [Message!]!
 }
 
 type User @model {
@@ -55,20 +55,20 @@ type User @model {
   adPreference: [Int!]!
   deviceFCMToken: String!
   isOnline: Boolean!
-  invitedRooms: [InvitedRoom!]
+  invitedRooms: [InvitedRoom!]!
   secretPin: String!
-  friends: [String!]
-  rooms: [String!]
-  hiddenRooms: [String!]
-  smileNotes: [SmileNote!]
-  shakingCool: [ShakingCool!]
+  friends: [String!]!
+  rooms: [String!]!
+  hiddenRooms: [String!]!
+  smileNotes: [SmileNote!]!
+  shakingCool: [ShakingCool!]!
   tokens: Int!
   background: Int!
-  unlockedStickers: [Int!]
+  unlockedStickers: [Int!]!
   notificationsBM: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
-  pendingNotifications: [String!]
+  pendingNotifications: [String!]!
   needIntro: Boolean!
   backgroundImageLink: String
 }

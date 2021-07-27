@@ -3,7 +3,7 @@ type Room {
   name: String!
   creatorID: String!
   members: [String!]!
-  messages: [Message!]
+  messages: [Message!]!
   timeUpdated: AWSTimestamp!
   createdAt: AWSDateTime!
   updatedAt: AWSDateTime!
@@ -46,7 +46,7 @@ type ReportedMessage {
   id: ID!
   reporterID: String!
   reportedMessage: Message!
-  previousMessages: [Message!]
+  previousMessages: [Message!]!
   createdAt: AWSDateTime!
   updatedAt: AWSDateTime!
 }
@@ -62,20 +62,20 @@ type User {
   adPreference: [Int!]!
   deviceFCMToken: String!
   isOnline: Boolean!
-  invitedRooms: [InvitedRoom!]
+  invitedRooms: [InvitedRoom!]!
   secretPin: String!
-  friends: [String!]
-  rooms: [String!]
-  hiddenRooms: [String!]
-  smileNotes: [SmileNote!]
-  shakingCool: [ShakingCool!]
+  friends: [String!]!
+  rooms: [String!]!
+  hiddenRooms: [String!]!
+  smileNotes: [SmileNote!]!
+  shakingCool: [ShakingCool!]!
   tokens: Int!
   background: Int!
-  unlockedStickers: [Int!]
+  unlockedStickers: [Int!]!
   notificationsBM: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
-  pendingNotifications: [String!]
+  pendingNotifications: [String!]!
   needIntro: Boolean!
   backgroundImageLink: String
   createdAt: AWSDateTime!
@@ -249,7 +249,7 @@ input CreateRoomInput {
   name: String!
   creatorID: String!
   members: [String!]!
-  messages: [MessageInput!]
+  messages: [MessageInput!]!
   timeUpdated: AWSTimestamp!
 }
 
@@ -380,7 +380,7 @@ input CreateReportedMessageInput {
   id: ID
   reporterID: String!
   reportedMessage: MessageInput!
-  previousMessages: [MessageInput!]
+  previousMessages: [MessageInput!]!
 }
 
 input UpdateReportedMessageInput {
@@ -463,20 +463,20 @@ input CreateUserInput {
   adPreference: [Int!]!
   deviceFCMToken: String!
   isOnline: Boolean!
-  invitedRooms: [InvitedRoomInput!]
+  invitedRooms: [InvitedRoomInput!]!
   secretPin: String!
-  friends: [String!]
-  rooms: [String!]
-  hiddenRooms: [String!]
-  smileNotes: [SmileNoteInput!]
-  shakingCool: [ShakingCoolInput!]
+  friends: [String!]!
+  rooms: [String!]!
+  hiddenRooms: [String!]!
+  smileNotes: [SmileNoteInput!]!
+  shakingCool: [ShakingCoolInput!]!
   tokens: Int!
   background: Int!
-  unlockedStickers: [Int!]
+  unlockedStickers: [Int!]!
   notificationsBM: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
-  pendingNotifications: [String!]
+  pendingNotifications: [String!]!
   needIntro: Boolean!
   backgroundImageLink: String
 }
