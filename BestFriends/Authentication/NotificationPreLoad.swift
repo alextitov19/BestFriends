@@ -50,8 +50,8 @@ struct NotificationPreLoad: View {
                     .padding()
 
                 Button(action: {
-                    sessionManager.chat(room: RoomDataSource().getRoom(id: roomID))
                     setTimer(minutes: 0)
+                    sessionManager.chat(room: RoomDataSource().getRoom(id: roomID))
                 }) {
                     Text("Chat now!")
                         .font(.title)

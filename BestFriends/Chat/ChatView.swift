@@ -249,12 +249,12 @@ struct ChatView: View {
                                     .id(message.id)
                             }
                         }
-//                        .onAppear {
-//                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
-//                        }
-//                        .onChange(of: messageDataSource.room.messages.count) { _ in
-//                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
-//                        }
+                        .onAppear {
+                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
+                        }
+                        .onChange(of: messageDataSource.room.messages.count) { _ in
+                            value.scrollTo(messageDataSource.room.messages.last?.id, anchor: .bottom)
+                        }
                     }
                 }
                 //                .padding()
