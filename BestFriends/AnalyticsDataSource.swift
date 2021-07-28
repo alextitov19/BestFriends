@@ -19,6 +19,6 @@ struct AnalyticsDataSource {
         let event = BasicAnalyticsEvent(name: "chatSessionEvent", properties: properties)
         Amplify.Analytics.record(event: event)
         Amplify.Analytics.flushEvents()
-        print("Flushed")
+        print("Flushed\n\n\n\n\n\n")
     }
 }
