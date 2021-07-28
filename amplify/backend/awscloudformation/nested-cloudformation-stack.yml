@@ -74,7 +74,7 @@
         "TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-32557-deployment/amplify-cfn-templates/auth/bestfriendsb9303424-cloudformation-template.yml",
         "Parameters": {
           "identityPoolName": "bestfriendsb9303424_identitypool_b9303424",
-          "allowUnauthenticatedIdentities": false,
+          "allowUnauthenticatedIdentities": true,
           "resourceNameTruncated": "bestfrb9303424",
           "userPoolName": "bestfriendsb9303424_userpool_b9303424",
           "autoVerifiedAttributes": "email",
@@ -169,6 +169,34 @@
           "s3PermissionsGuestUploads": "DISALLOW",
           "GuestAllowList": "DISALLOW",
           "triggerFunction": "NONE",
+          "env": "staging"
+        }
+      }
+    },
+    "analyticsbestfriends": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-32557-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+        "Parameters": {
+          "appName": "bestfriends",
+          "roleName": "pinpointLambdaRoleeeb76943",
+          "cloudformationPolicyName": "cloudformationPolicyeeb76943",
+          "cloudWatchPolicyName": "cloudWatchPolicyeeb76943",
+          "pinpointPolicyName": "pinpointPolicyeeb76943",
+          "authPolicyName": "pinpoint_amplify_eeb76943",
+          "unauthPolicyName": "pinpoint_amplify_eeb76943",
+          "authRoleName": {
+            "Ref": "AuthRoleName"
+          },
+          "unauthRoleName": {
+            "Ref": "UnauthRoleName"
+          },
+          "authRoleArn": {
+            "Fn::GetAtt": [
+              "AuthRole",
+              "Arn"
+            ]
+          },
           "env": "staging"
         }
       }

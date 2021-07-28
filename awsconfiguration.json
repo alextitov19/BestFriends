@@ -38,5 +38,16 @@
             "Bucket": "bestfriends65627c1625d24f0fb55d584ede78693532557-staging",
             "Region": "us-east-2"
         }
+    },
+    "PinpointAnalytics": {
+        "Default": {
+            "AppId": "a5dc2c310173424aa3c1a406483fbb82",
+            "Region": "us-east-1"
+        }
+    },
+    "PinpointTargeting": {
+        "Default": {
+            "Region": "us-east-1"
+        }
     }
 }
