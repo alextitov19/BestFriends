@@ -19,7 +19,7 @@ struct BestFriendsApp: App {
     init() {
         configureAmplify()
         FirebaseApp.configure()
-//        sessionManager.signOut()
+        //        sessionManager.signOut()
         
         //        if Amplify.Auth.getCurrentUser() != nil {
         //            let id  = Amplify.Auth.getCurrentUser()!.username
@@ -36,7 +36,7 @@ struct BestFriendsApp: App {
         //                return
         //            }
         //        }
-//        ManDocDataSource().createDoc()
+        //        ManDocDataSource().createDoc()
         
         sessionManager.getCurrentAuthUser()
         
@@ -103,6 +103,8 @@ struct BestFriendsApp: App {
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
             try Amplify.add(plugin: AWSS3StoragePlugin())
             try Amplify.add(plugin: AWSAPIPlugin())
+            try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
             try Amplify.configure()
             
             print("Amplify configured successfully")
