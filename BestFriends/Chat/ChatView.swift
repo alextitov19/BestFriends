@@ -450,7 +450,7 @@ struct ChatView: View {
             ImagePicker(image: self.$inputImage)
 
             VStack {
-                if USS.user.pendingNotifications != nil && notificationsShowing == true {
+                if notificationsShowing == true {
                     ForEach(USS.user.pendingNotifications.reversed(), id: \.self) { foo in
                         Text(foo)
                             .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -466,7 +466,7 @@ struct ChatView: View {
     }
     
     private func hideChat() {
-        var rooms = user.hiddenRooms ?? []
+        var rooms = user.hiddenRooms
         if rooms.contains(room.id) == false {
             rooms.append(room.id)
             var updatedUser = user

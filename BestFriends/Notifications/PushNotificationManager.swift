@@ -42,7 +42,7 @@ class PushNotificationManager: NSObject, MessagingDelegate, UNUserNotificationCe
     }
     
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-        print("Firebase registration token: \(fcmToken)")
+        print("Firebase registration token: \(fcmToken ?? "no token")")
     }
     
     

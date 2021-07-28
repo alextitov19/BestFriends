@@ -223,9 +223,9 @@ struct SmileNotesView: View {
         cards = []
         guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
         let user = UserDataSource().getUser(id: id)
-        var smileNotes = user.smileNotes ?? []
+        let smileNotes = user.smileNotes
         for smileNote in smileNotes {
-            var card = SmileNotesCard(smileNote: smileNote)
+            let card = SmileNotesCard(smileNote: smileNote)
             cards.append(card)
             
             if (friendIDs.contains(smileNote.message.senderID) == false) {

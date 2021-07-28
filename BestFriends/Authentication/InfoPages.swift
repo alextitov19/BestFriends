@@ -181,7 +181,7 @@ struct InfoViewPage1: View {
                         .cornerRadius(25)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .onTapGesture {
-                            sessionManager.login(username: username, password: password)
+                            _ = sessionManager.login(username: username, password: password)
                         }
                     
                     HStack {

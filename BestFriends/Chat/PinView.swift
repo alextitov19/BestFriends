@@ -229,7 +229,7 @@ struct PinView: View {
             
             if currentPin == user.secretPin {
                 // passcode correct -> remove or add current room id to hidden room ids for the current user
-                var rooms = user.hiddenRooms ?? []
+                var rooms = user.hiddenRooms
                 if rooms.contains(room.id) {
                     rooms.remove(at: rooms.firstIndex(of: room.id)!)
                     user.hiddenRooms = rooms

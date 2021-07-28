@@ -63,7 +63,7 @@ struct ShakingCoolDataSource {
                                     case .success(let data):
                                         print("Completed: \(data)")
                                         var user = UserDataSource().getCurrentUser()
-                                        var shakingCool = user.shakingCool ?? []
+                                        var shakingCool = user.shakingCool
                                         shakingCool.append(ShakingCool(id: Helper().randomString(length: 20), link: key, intendedid: targetID, intendedname: UserDataSource().getUser(id: targetID).firstName))
                                         user.shakingCool = shakingCool
                                         UserDataSource().updateUser(user: user)

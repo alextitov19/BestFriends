@@ -15,7 +15,7 @@ struct SmieNotePopover: View {
     init() {
         let username = Amplify.Auth.getCurrentUser()?.username ?? "Could not find user"
         let user = UserDataSource().getUser(id: username)
-        self.smileNotes = user.smileNotes ?? []
+        self.smileNotes = user.smileNotes
     }
     
     var body: some View {

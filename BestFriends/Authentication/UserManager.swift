@@ -13,7 +13,7 @@ class UserManager: ObservableObject {
     func create(_ user: User) {
         let group = DispatchGroup()
         group.enter()
-        Amplify.API.mutate(request: .create(user)) { [weak self] mutationResult in
+        Amplify.API.mutate(request: .create(user)) { mutationResult in
             switch mutationResult {
             
             case .success(let creationResult):
@@ -42,7 +42,7 @@ class UserManager: ObservableObject {
                 let resetResult = try result.get()
                 switch resetResult.nextStep {
                 case .confirmResetPasswordWithCode(let deliveryDetails, let info):
-                    print("Confirm reset password with code send to - \(deliveryDetails) \(info)")
+                    print("Confirm reset password with code send to - \(deliveryDetails) \(String(describing: info))")
                 case .done:
                     print("Reset completed")
                 }
@@ -130,7 +130,7 @@ class UserManager: ObservableObject {
         let user = UserDataSource().getCurrentUser()
         let date = Temporal.Date.now()
         let deletionRequest = DeletionRequest(userid: user.id, userEmail: user.email, reason: reason, date: date)
-        Amplify.API.mutate(request: .create(deletionRequest)) { [weak self] mutationResult in
+        Amplify.API.mutate(request: .create(deletionRequest)) { mutationResult in
             switch mutationResult {
             case .success(let creationResult):
                 switch creationResult {

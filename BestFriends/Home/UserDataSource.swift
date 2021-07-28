@@ -26,7 +26,7 @@ struct UserDataSource {
                 case .success(let user):
                     guard let user = user else {
                         print("Could not find user")
-                        print("failed 0 for id: \(id) and my id is: \(Amplify.Auth.getCurrentUser()?.username)")
+                        print("failed 0 for id: \(id) and my id is: \(Amplify.Auth.getCurrentUser()?.username ?? "No username")")
 //                        SessionManager().showLogin()
                         return
                     }

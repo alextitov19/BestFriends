@@ -66,7 +66,7 @@ struct HomeView: View {
             print("Reloading...")
             getFriends()
             userDataSource.setOnlineStatus(isOnline: true)
-            let possibleRooms = USS.user.invitedRooms ?? []
+            let possibleRooms = USS.user.invitedRooms
             if possibleRooms.count > 0 {
                 for i in 0..<possibleRooms.count {
                     if possibleRooms[i].timer == nil {

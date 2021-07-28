@@ -55,16 +55,16 @@ struct ShakingCoolFullScreenView: View {
     private mutating func loadData() {
         let user = UserDataSource().getCurrentUser()
         print("Got user: ", user)
-        let shakingcool = user.shakingCool ?? []
+        let shakingcool = user.shakingCool
         for cool in shakingcool {
             if cool.intendedid == user.id {
                 shakingCoolLinks.append(cool.link)
             }
         }
-        let friendids = user.friends ?? []
+        let friendids = user.friends
         for id in friendids {
             let friend = userDS.getUser(id: id)
-            let friendshakingcool = friend.shakingCool ?? []
+            let friendshakingcool = friend.shakingCool
             for cool in friendshakingcool {
                 if cool.intendedid == user.id {
                     shakingCoolLinks.append(cool.link)

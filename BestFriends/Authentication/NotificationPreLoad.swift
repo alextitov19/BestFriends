@@ -152,9 +152,6 @@ struct NotificationPreLoad: View {
                     PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName)", body: body)
                 }
                 var pendingNotifs = friend.pendingNotifications
-                if pendingNotifs == nil {
-                    pendingNotifs = []
-                }
                 pendingNotifs.append(body)
                 friend.pendingNotifications = pendingNotifs
                 userDataSource.updateUser(user: friend)

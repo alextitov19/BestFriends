@@ -14,53 +14,51 @@ struct RoomRow: View {
     @State var messageBody = ""
     
     var body: some View {
-            HStack {
-                Spacer().frame(width: 10)
-                    .onAppear {
-                        getBody()
-                    }
+        HStack {
+            Spacer().frame(width: 10)
+                .onAppear {
+                    getBody()
+                }
+            
+            VStack(alignment: .leading) {
+                Spacer()
+                    .frame(height: 10)
                 
-                VStack(alignment: .leading) {
-                    Spacer()
-                        .frame(height: 10)
+                HStack {
+                    Spacer().frame(width: 10)
                     
-                    HStack {
-                        Spacer().frame(width: 10)
-                        
-                        Text(room.name)
-                            .font(.system(size: 20, weight: .light))
-                            .foregroundColor(.white)
-                        
-                        Spacer()
-                    }
-                    
-                    HStack {
-                        Spacer().frame(width: 10)
-                        
-                        Text(messageBody)
-                            .font(.system(size: 16, weight: .light))
-                            .foregroundColor(.white)
-                        
-                        Spacer()
-                    }
+                    Text(room.name)
+                        .font(.system(size: 20, weight: .light))
+                        .foregroundColor(.white)
                     
                     Spacer()
-                        .frame(height: 10)
                 }
                 
-                Spacer().frame(width: 10)
+                HStack {
+                    Spacer().frame(width: 10)
+                    
+                    Text(messageBody)
+                        .font(.system(size: 16, weight: .light))
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+                }
+                
+                Spacer()
+                    .frame(height: 10)
             }
+            
+            Spacer().frame(width: 10)
+        }
         .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
         .cornerRadius(20)
-
+        
     }
     
     private func getBody() {
         messageBody = room.messages.last?.body ?? ""
-        if UserDataSource().getCurrentUser().hiddenRooms != nil {
-            if UserDataSource().getCurrentUser().hiddenRooms.contains(room.id) {
-                messageBody = "*Hidden*"
-            }
+        if UserDataSource().getCurrentUser().hiddenRooms.contains(room.id) {
+            messageBody = "*Hidden*"
         }
     }
 }

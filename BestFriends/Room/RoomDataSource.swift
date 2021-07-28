@@ -12,7 +12,7 @@ class RoomDataSource: ObservableObject {
     @Published var rooms = [Room]()
 
     func createRoom(room: Room) {
-        Amplify.API.mutate(request: .create(room)) { [weak self] mutationResult in
+        Amplify.API.mutate(request: .create(room)) { mutationResult in
             switch mutationResult {
             
             case .success(let creationResult):
