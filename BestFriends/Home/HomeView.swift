@@ -280,7 +280,7 @@ struct HomeView: View {
                                 .stroke(Color.white, lineWidth: 1)
                         )
                 }
-                .offset(y: 330)
+                .offset(y: 300)
                 .transition(.scale)
             }
             
