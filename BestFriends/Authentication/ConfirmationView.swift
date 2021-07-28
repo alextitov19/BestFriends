@@ -15,7 +15,7 @@ struct ConfirmationView: View {
     
     let username: String
     let password: String
-
+    
     var body: some View {
         ZStack {
             Image("SignUpPinBackground")
@@ -24,18 +24,26 @@ struct ConfirmationView: View {
                 .scaledToFill()
             
             VStack {
-                Spacer()
-                    .frame(height: 5)
-                
                 Text("Enter the confirmation code\nyou recieved in the email.")
                     .font(.system(size: 28, weight: .light))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
+                    .padding()
+                
+                Text("WARNING: DO NOT LEAVE THE APP WHILE ON THIS PAGE - MIGHT CAUSE AN ERROR!")
+                    .font(.system(size: 28, weight: .bold))
+                    .foregroundColor(Color(#colorLiteral(red: 0.7710047364, green: 0, blue: 0, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    
+                Text("Apologies for the inconvenience,\nwe're working on it")
+                    .font(.system(size: 20, weight: .light))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 300)
+                    .frame(height: 200)
                 
                 Text("Username: \(username)")
                     .font(.title2)
@@ -54,7 +62,7 @@ struct ConfirmationView: View {
                     .cornerRadius(25)
                     .autocapitalization(.none)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+                
                 Spacer()
                     .frame(height: 30)
                 
@@ -68,7 +76,7 @@ struct ConfirmationView: View {
                 .cornerRadius(25)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
-               
+                
             }
         }
     }
