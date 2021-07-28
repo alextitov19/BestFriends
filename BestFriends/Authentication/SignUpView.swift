@@ -1410,7 +1410,7 @@ struct SignUpQuestionPage3: View {
                     
                     print("Part 1")
                     
-                    let user = User(
+                    var user = User(
                         id: username,
                         firstName: firstName,
                         lastName: lastName,
@@ -1428,7 +1428,10 @@ struct SignUpQuestionPage3: View {
                         notificationsLP: true,
                         chatFontSize: 16,
                         needIntro: true)
+                    
                     print("Part 2")
+                    
+                    user.unlockedStickers = [1, 2, 3, 4]
                     
                     print("This user: ", user)
                     

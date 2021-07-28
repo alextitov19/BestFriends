@@ -21,7 +21,7 @@ struct StickerPopover: View {
     
     var body: some View {
         ZStack {
-            Image("blueGradient1")
+            Image("SignUpPinBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -46,6 +46,14 @@ struct StickerPopover: View {
                 }
                 .padding(10)
                 
+                Text("Each sticker costs 7 tokens")
+                    .foregroundColor(.white)
+                    .font(.system(size: 20, weight: .light))
+                
+                Text("1 token for watching a video\n3 for clicking the link")
+                    .foregroundColor(.white)
+                    .font(.system(size: 20, weight: .light))
+                
                 ScrollView {
                     VStack {
                         ForEach(1...1, id: \.self) { i in
@@ -67,8 +75,7 @@ struct StickerPopover: View {
                                         }
                                         
                                         Button(action: {
-                                            if user.unlockedStickers.count > 0 {
-                                                if user.unlockedStickers.contains(number) == false && user.tokens >= 7 {
+                                                if user.unlockedStickers.contains(number) == false && user.tokens >= 7 { // If user HAS NOT UNLOCKED this sticker but HAS ENOUGH tokens to unlock it (user buys sticker)
                                                     var newuser = user
                                                     newuser.unlockedStickers.append(number)
                                                     newuser.tokens -= 7
@@ -77,21 +84,11 @@ struct StickerPopover: View {
                                                     let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Sticker*", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
                                                     
                                                     messageDataSource.sendMessage(message: message)
-                                                } else if user.unlockedStickers.contains(number) == true {
+                                                } else if user.unlockedStickers.contains(number) == true { // If user HAS UNLOCKED this stikcer or it is FREE
                                                     let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Sticker*", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
                                                     
                                                     messageDataSource.sendMessage(message: message)
                                                 }
-                                            } else if user.tokens >= 7 {
-                                                var newuser = user
-                                                newuser.unlockedStickers.append(number)
-                                                newuser.tokens -= 7
-                                                userDataSource.updateUser(user: newuser)
-                                                
-                                                let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Sticker*", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
-                                                
-                                                messageDataSource.sendMessage(message: message)
-                                            }
                                         }) {
                                             Color(.clear)
                                                 .frame(width: 65, height: 65)

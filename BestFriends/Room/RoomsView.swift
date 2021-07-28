@@ -20,7 +20,7 @@ struct RoomsView: View {
     @State private var notificationsShowing = false
     @State private var isAtMaxScale = false
     private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
-
+    
     @EnvironmentObject var sessionManager: SessionManager
     
     
@@ -34,19 +34,19 @@ struct RoomsView: View {
     
     var body: some View {
         ZStack {
-//            Image("SignUpPinBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+            //            Image("SignUpPinBackground")
+            //                .resizable()
+            //                .ignoresSafeArea()
+            //                .scaledToFill()
             
             Image("purpleBackground")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
             
-//            PlayerView()
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+            //            PlayerView()
+            //                .ignoresSafeArea()
+            //                .blendMode(.screen)
             
             VStack {
                 Spacer().frame(height: 20)
@@ -156,10 +156,7 @@ struct RoomsView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .onTapGesture {
-                            loadingShowing = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                sessionManager.showSettings()
-                            }
+                            sessionManager.showSettings()
                         }
                         .padding(5)
                     
@@ -178,10 +175,10 @@ struct RoomsView: View {
                         .scaledToFill()
                         .scaleEffect(isAtMaxScale ? 0.5 : 1)
                         .onAppear {
-                                if USS.user.pendingNotifications.count > 0 {
-                                    withAnimation(self.animation, {
-                                        self.isAtMaxScale.toggle()
-                                    })
+                            if USS.user.pendingNotifications.count > 0 {
+                                withAnimation(self.animation, {
+                                    self.isAtMaxScale.toggle()
+                                })
                             }
                         }
                         .onTapGesture {
