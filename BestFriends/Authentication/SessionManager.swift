@@ -22,6 +22,7 @@ enum AppState {
     case pin(room: Room)
     case isInvitedToChat(invitedRoomId: String)
     case shakingCool
+    case broadcast
 }
 
 final class SessionManager: ObservableObject {
@@ -82,6 +83,10 @@ final class SessionManager: ObservableObject {
     
     func showShakingCool() {
         appState = .shakingCool
+    }
+    
+    func showBroadcast() {
+        appState = .broadcast
     }
     
     func signUp(username: String, email: String, password: String) {

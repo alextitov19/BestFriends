@@ -19,8 +19,7 @@ struct BestFriendsApp: App {
     init() {
         configureAmplify()
         FirebaseApp.configure()
-        sessionManager.signOut()
-//                sessionManager.signOut()
+//        sessionManager.signOut()
         
         //        if Amplify.Auth.getCurrentUser() != nil {
         //            let id  = Amplify.Auth.getCurrentUser()!.username
@@ -90,6 +89,9 @@ struct BestFriendsApp: App {
                     .environmentObject(sessionManager)
             case .shakingCool:
                 ShakingCoolView()
+                    .environmentObject(sessionManager)
+            case .broadcast:
+                BroadcastView()
                     .environmentObject(sessionManager)
             }
             

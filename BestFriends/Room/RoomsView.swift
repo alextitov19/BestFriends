@@ -165,7 +165,7 @@ struct RoomsView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .onTapGesture {
-                            sessionManager.showSettings()
+                            sessionManager.showBroadcast()
                         }
                         .padding(5)
                     
