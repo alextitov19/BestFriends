@@ -79,6 +79,7 @@
 		7A724D3226AC6E800079AA85 /* AdViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A724D3126AC6E800079AA85 /* AdViews.swift */; };
 		7A724D3426AC7C010079AA85 /* Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A724D3326AC7C010079AA85 /* Shake.swift */; };
 		7A78232326B1A64800CA76FC /* BroadcastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A78232226B1A64800CA76FC /* BroadcastView.swift */; };
+		7A78232526B2004500CA76FC /* AnalyticsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A78232426B2004500CA76FC /* AnalyticsDataSource.swift */; };
 		7A7F6E38264305AA0022F078 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F6E37264305AA0022F078 /* ChatBubble.swift */; };
 		7A934002264FC94900BB5972 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934001264FC94900BB5972 /* PushNotificationSender.swift */; };
 		7A95EA5826530DDA00C6C700 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95EA5726530DDA00C6C700 /* PinView.swift */; };
@@ -291,6 +292,7 @@
 		7A724D3126AC6E800079AA85 /* AdViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViews.swift; sourceTree = "<group>"; };
 		7A724D3326AC7C010079AA85 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		7A78232226B1A64800CA76FC /* BroadcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastView.swift; sourceTree = "<group>"; };
+		7A78232426B2004500CA76FC /* AnalyticsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDataSource.swift; sourceTree = "<group>"; };
 		7A7F6E37264305AA0022F078 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		7A934001264FC94900BB5972 /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
 		7A95EA5726530DDA00C6C700 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
@@ -610,6 +612,7 @@
 				7AED44FB26473F7100944708 /* AppDelegate.swift */,
 				7A4E32B626A079F200202BB7 /* Loading.swift */,
 				7A2B1F5C26A645F500EDBEAF /* ThreeCircles.swift */,
+				7A78232426B2004500CA76FC /* AnalyticsDataSource.swift */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
 				7A724D3526AC7C150079AA85 /* Helpers */,
@@ -1022,6 +1025,7 @@
 				7AD25A0226AF913200396CF2 /* amplify/generated/models/Message.swift in Sources */,
 				7AF2E2FA26AF1CB500A82C6D /* amplify/generated/models/Room+Schema.swift in Sources */,
 				7AF2E2E726AF1CB500A82C6D /* amplify/generated/models/DeletionRequest+Schema.swift in Sources */,
+				7A78232526B2004500CA76FC /* AnalyticsDataSource.swift in Sources */,
 				D15777A3264DB7FD00B6551A /* BetaTesters.swift in Sources */,
 				7AE31CC2262A9BE1001EC5A3 /* HomeView.swift in Sources */,
 				D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */,

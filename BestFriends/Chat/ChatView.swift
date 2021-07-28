@@ -51,6 +51,7 @@ struct ChatView: View {
     var room: Room
     var lastRead: Int?
     var timer = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
+    private let initialTime = Date()
     
     @State private var adButtonOffset: Float = 0
     
@@ -164,6 +165,9 @@ struct ChatView: View {
                             showAd()
                         }
                         .onTapGesture {
+                            let diffrence = Date().timeIntervalSince(initialTime)
+                            print("Diffrence: ", diffrence)
+                            AnalyticsDataSource().recordChatSessionEvent(duration: diffrence)
                             sessionManager.showRooms()
                         }
                         .onReceive(NotificationCenter.default.publisher(for: UIApplication.userDidTakeScreenshotNotification)) { _ in
