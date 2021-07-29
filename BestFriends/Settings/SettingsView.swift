@@ -88,7 +88,7 @@ struct SettingsView: View {
                                 .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             
-                            Link("Test new features before launch", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
+                            Link("Be 1st to test new features before made public", destination: URL(string: "https://socialtechlabs.com/beta-team/")!)
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 17))
@@ -103,24 +103,24 @@ struct SettingsView: View {
                             
                         }
                         
-                        Text("BlueMode Features")
+                        Text("BestFriend's Features")
                             .font(.system(size: 32))
                             .fontWeight(.ultraLight)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .multilineTextAlignment(.center)
                             .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
-                        NavigationLink(
-                            destination: SettingsInfoViewPage1().environmentObject(sessionManager),
-                            label: {
-                                Text("BestFriends Walk-through")
-                            })
-                            .frame(width: 225, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 17))
-                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                            .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        NavigationLink(
+//                            destination: SettingsInfoViewPage1().environmentObject(sessionManager),
+//                            label: {
+//                                Text("BestFriends Walk-through")
+//                            })
+//                            .frame(width: 225, height: 50)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 17))
+//                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+//                            .cornerRadius(25)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         //
                         //                        Spacer().frame(height: 20)
                         //
