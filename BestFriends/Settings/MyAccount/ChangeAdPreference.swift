@@ -45,7 +45,7 @@ struct ChangeAdPreference: View {
                     }) {
                         Text("Beauty / Fashion")
                             .frame(width: 300, height: 50, alignment: .center)
-                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1))) 
+                            .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                             .background(selectedOptions.contains(3) ? Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) : Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
                             .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -55,7 +55,7 @@ struct ChangeAdPreference: View {
                     Button(action: {
                         updateArray(number: 2)
                     }) {
-                        Text("Health / Fitness / Nutrition")
+                        Text("Health / Nutrition")
                             .frame(width: 300, height: 50, alignment: .center)
                             .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                             .background(selectedOptions.contains(3) ? Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) : Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
@@ -67,7 +67,7 @@ struct ChangeAdPreference: View {
                     Button(action: {
                         updateArray(number: 3)
                     }) {
-                        Text("Sports / Fitness")
+                        Text("Sports / Fitness / Apperel")
                             .frame(width: 300, height: 50, alignment: .center)
                             .foregroundColor(Color(#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1)))
                             .background(selectedOptions.contains(3) ? Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) : Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
