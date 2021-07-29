@@ -589,7 +589,7 @@ struct BlueModePage1: View {
                             .frame(height: 30)
                         
                         NavigationLink(
-                            destination: SmileNotesView(),
+                            destination: SmileVaultView(),
                             label: {
                                 Text("View your friend's SmileNotes - remembering the nice things.")
                                     .frame(width: 400, height: 100, alignment: .center)

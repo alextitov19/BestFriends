@@ -2,7 +2,7 @@
 import SwiftUI
 import Amplify
 
-struct SmileNotesView: View {
+struct SmileVaultView: View {
     
     @State private var messages: [Message] = []
     @State private var cards: [SmileNotesCard] = []
@@ -159,6 +159,7 @@ struct SmileNotesView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .onTapGesture {
+                            AnalyticsDataSource().recordSmileVaultDepartureEvent()
                             isAdPresented = true
                             DispatchQueue.main.asyncAfter(deadline: .now() + 12.63) {
                                 sessionManager.getCurrentAuthUser()
@@ -172,6 +173,7 @@ struct SmileNotesView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .onTapGesture {
+                            AnalyticsDataSource().recordSmileVaultDepartureEvent()
                             isAdPresented = true
                             DispatchQueue.main.asyncAfter(deadline: .now() + 13) {
                                 sessionManager.showRooms()
@@ -186,6 +188,7 @@ struct SmileNotesView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .onTapGesture {
+                            AnalyticsDataSource().recordSmileVaultDepartureEvent()
                             isAdPresented = true
                             DispatchQueue.main.asyncAfter(deadline: .now() + 13) {
                                 sessionManager.showSettings()
@@ -274,8 +277,8 @@ struct SmileNotesView: View {
     }
 }
 
-struct SileNotesView_Previews : PreviewProvider {
+struct SileVaultView_Previews : PreviewProvider {
     static var previews: some View {
-        SmileNotesView()
+        SmileVaultView()
     }
 }

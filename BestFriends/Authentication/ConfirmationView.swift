@@ -32,7 +32,7 @@ struct ConfirmationView: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .padding()
                 
-                Text("WARNING: DO NOT LEAVE THE APP WHILE ON THIS PAGE - MIGHT CAUSE AN ERROR!")
+                Text("WARNING: DO NOT LEAVE THE APP WHILE ON THIS PAGE TO GET YOUR CODE - MIGHT CAUSE AN ERROR!")
                     .font(.system(size: 28, weight: .bold))
                     .foregroundColor(Color(#colorLiteral(red: 0.7710047364, green: 0, blue: 0, alpha: 1)))
                     .multilineTextAlignment(.center)

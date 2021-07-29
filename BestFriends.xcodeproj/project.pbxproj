@@ -194,7 +194,7 @@
 		CFE6FD4626620E9A00DF92BD /* Popups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD4526620E9A00DF92BD /* Popups.swift */; };
 		D01BAD8F4BA2766AC7382AEB /* amplify/generated/models/User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259CF26AF292600396CF2 /* amplify/generated/models/User.swift */; };
 		D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1577796264CBBAD00B6551A /* ChangeEmail.swift */; };
-		D157779B264D086000B6551A /* SmileNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779A264D086000B6551A /* SmileNotesView.swift */; };
+		D157779B264D086000B6551A /* SmileVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779A264D086000B6551A /* SmileVaultView.swift */; };
 		D15777A3264DB7FD00B6551A /* BetaTesters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15777A2264DB7FD00B6551A /* BetaTesters.swift */; };
 		D15777B42650522200B6551A /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15777B32650522200B6551A /* SwipeGesture.swift */; };
 		D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD682647458900BFE179 /* ResetPassword.swift */; };
@@ -398,7 +398,7 @@
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
 		CFE6FD4526620E9A00DF92BD /* Popups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popups.swift; sourceTree = "<group>"; };
 		D1577796264CBBAD00B6551A /* ChangeEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmail.swift; sourceTree = "<group>"; };
-		D157779A264D086000B6551A /* SmileNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesView.swift; sourceTree = "<group>"; };
+		D157779A264D086000B6551A /* SmileVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileVaultView.swift; sourceTree = "<group>"; };
 		D15777A2264DB7FD00B6551A /* BetaTesters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTesters.swift; sourceTree = "<group>"; };
 		D15777B32650522200B6551A /* SwipeGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
 		D15CCD682647458900BFE179 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
@@ -840,7 +840,7 @@
 		D1577799264D082800B6551A /* SmileVault */ = {
 			isa = PBXGroup;
 			children = (
-				D157779A264D086000B6551A /* SmileNotesView.swift */,
+				D157779A264D086000B6551A /* SmileVaultView.swift */,
 				7AC8564126585CD20045D145 /* LiquidSwipe.swift */,
 				CF30FF92267E955A000B2730 /* SmileNotesCard.swift */,
 				7A724D3126AC6E800079AA85 /* AdViews.swift */,
@@ -1071,7 +1071,7 @@
 				D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */,
 				7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */,
 				7A4E32B526A0783300202BB7 /* SettingsInfoPages.swift in Sources */,
-				D157779B264D086000B6551A /* SmileNotesView.swift in Sources */,
+				D157779B264D086000B6551A /* SmileVaultView.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AD25A1226AF913200396CF2 /* User.swift in Sources */,
 				7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */,

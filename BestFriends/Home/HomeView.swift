@@ -340,6 +340,7 @@ struct HomeView: View {
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onAppear(perform: reloadData)
         .onShake {
+            AnalyticsDataSource().recordPhoneGotShakenEvent()
             isShakingCoolPresented = true
         }
         
