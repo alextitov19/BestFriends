@@ -38,7 +38,8 @@ struct BroadcastView: View {
                 
                 TextField("Your good news", text: $input)
                     .font(.system(size: 24))
-                    .background(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                    .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .cornerRadius(10)
                     .padding()
                 
