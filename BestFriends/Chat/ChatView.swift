@@ -107,9 +107,7 @@ struct ChatView: View {
             //            Color(.blue)
             //                .ignoresSafeArea()
             
-            //                .onAppear {
-            //                    checkHidden()
-            //                }
+                            
             
             switch index {
             case -1:
@@ -151,6 +149,9 @@ struct ChatView: View {
                         .onReceive(timer) { time in
                             print("Showing an ad")
                             showAd()
+                        }
+                        .onAppear {
+                            checkHidden()
                         }
                         .onTapGesture {
                             let diffrence = Date().timeIntervalSince(initialTime)
