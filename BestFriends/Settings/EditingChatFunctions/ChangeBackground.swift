@@ -70,7 +70,7 @@ struct ChangeBackground: View {
                 
                 HStack {
                     VStack {
-                        AdPlayerView(name: "rainForest")
+                        AdPlayerView(name: "bull")
                             .frame(width: 150, height: 250)
                             //                                .cornerRadius(25)
                             .border(Color.white, width: 2)

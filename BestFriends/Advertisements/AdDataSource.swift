@@ -148,7 +148,7 @@ struct AdDataSource {
 //    func createAd() {
 //            let group = DispatchGroup()
 //            group.enter()
-//        let ad = Advertisement(id: "school",category: "N/A", videoName: "school", adLink: "https://socialtechlabs.com/beta-team/", duration: 10.0, hasAudio: false, likes: 0, views: 0, shares: 0, clicks: 0)
+//        let ad = Advertisement(id: "chicken",category: "N/A", videoName: "chicken", adLink: "https://socialtechlabs.com/beta-team/", duration: 13.0, hasAudio: false, likes: 0, views: 0, shares: 0, clicks: 0)
 //        Amplify.API.mutate(request: .create(ad)) { mutationResult in
 //                switch mutationResult {
 //

@@ -128,7 +128,7 @@ struct ChatView: View {
                 AdPlayerView(name: "blueRoad")
                     .ignoresSafeArea()
             case 2:
-                AdPlayerView(name: "rainForest")
+                AdPlayerView(name: "bull")
                     .ignoresSafeArea()
             case 3:
                 AdPlayerView(name: "Skateboard")

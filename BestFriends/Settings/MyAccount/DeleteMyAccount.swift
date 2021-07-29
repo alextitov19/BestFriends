@@ -65,8 +65,6 @@ struct DeleteMyAccount: View {
                 .padding()
             }
         }
-        .navigationBarTitle("")
-        .navigationBarHidden(true)
     }
 }
 
