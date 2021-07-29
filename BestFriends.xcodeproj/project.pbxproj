@@ -64,7 +64,7 @@
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
 		7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */; };
 		7A6A4D07262B8A5000561D87 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4D06262B8A5000561D87 /* PlayerView.swift */; };
-		7A6DBE6F26B3061A00029187 /* chicken.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6DBE6E26B3061A00029187 /* chicken.mp4 */; };
+		7A6DBE7126B35E1300029187 /* chicken.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6DBE7026B35E1300029187 /* chicken.mp4 */; };
 		7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */; };
 		7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BD002625292A00E6FA9E /* SignUpView.swift */; };
 		7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD022625292B00E6FA9E /* Assets.xcassets */; };
@@ -271,7 +271,7 @@
 		7A6A4CD9262B658200561D87 /* MessageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataSource.swift; sourceTree = "<group>"; };
 		7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundAnimation.mp4; sourceTree = "<group>"; };
 		7A6A4D06262B8A5000561D87 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		7A6DBE6E26B3061A00029187 /* chicken.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = chicken.mp4; path = ../../../../../../../Desktop/chicken.mp4; sourceTree = "<group>"; };
+		7A6DBE7026B35E1300029187 /* chicken.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = chicken.mp4; sourceTree = "<group>"; };
 		7A71BCFB2625292A00E6FA9E /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsApp.swift; sourceTree = "<group>"; };
 		7A71BD002625292A00E6FA9E /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -779,7 +779,7 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
-				7A6DBE6E26B3061A00029187 /* chicken.mp4 */,
+				7A6DBE7026B35E1300029187 /* chicken.mp4 */,
 				7A78232826B2419600CA76FC /* blender.mp4 */,
 				7A78232A26B2419600CA76FC /* phone.mp4 */,
 				7A78232B26B2419600CA76FC /* pink.mp4 */,
@@ -921,7 +921,7 @@
 				7A383FFD267AC306002F354A /* FieldFlowers.mp4 in Resources */,
 				7ACEDEDE2685194C00102E70 /* GoogleService-Info.plist in Resources */,
 				CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */,
-				7A6DBE6F26B3061A00029187 /* chicken.mp4 in Resources */,
+				7A6DBE7126B35E1300029187 /* chicken.mp4 in Resources */,
 				CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */,
 				7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */,
 			);
