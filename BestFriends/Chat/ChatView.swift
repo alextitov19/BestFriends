@@ -226,9 +226,9 @@ struct ChatView: View {
                     Button(action: {
                         hideChat()
                     }) {
-                        Image("whiteLock")
+                        Image("lock-alt")
                             .resizable()
-                            .frame(width: 45, height: 45)
+                            .frame(width: 40, height: 40)
                             .scaledToFit()
                     }
                 }
