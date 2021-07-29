@@ -87,7 +87,7 @@ struct HomeView: View {
             }
             
             if USS.user.friends.count > 0 {
-                DispatchQueue.main.asyncAfter(deadline: .now() + starTimings[USS.user.friends.count - 1] + 0.5) { inviteClicked() }
+                DispatchQueue.main.asyncAfter(deadline: .now() + starTimings[USS.user.friends.count - 1] + 1.0) { inviteClicked() }
                 DispatchQueue.main.asyncAfter(deadline: .now() + 12.0) { inviteClicked() }
             }
         }
@@ -400,14 +400,15 @@ struct HomeView: View {
     
     private func displayQRString(image: UIImage) {
         print("Got into display")
-        if let features = detectQRCode(image), !features.isEmpty{
+        if let features = detectQRCode(image), !features.isEmpty {
             print("Got into if")
-            for case let row as CIQRCodeFeature in features{
+            for case let row as CIQRCodeFeature in features {
                 guard let uid = row.messageString as String? else { return }
                 print("Preparing to send to: ", uid)
                 addFriend(id: uid)
-                sleep(2)
-                sessionManager.reloadToPage(page: "home")
+                DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
+                    sessionManager.reloadToPage(page: "home")
+                }
             }
         }
     }
