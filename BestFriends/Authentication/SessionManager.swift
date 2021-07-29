@@ -34,7 +34,6 @@ final class SessionManager: ObservableObject {
                 appState = .home
             } else {
                 signOut()
-                appState = .login
             }
         } else {
             appState = .login
