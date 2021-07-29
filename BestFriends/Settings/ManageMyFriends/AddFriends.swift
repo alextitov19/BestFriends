@@ -25,11 +25,31 @@ struct AddFriends: View {
             VStack {
                 
                 
+                HStack {
+                    
+                    
+                    Text("Tap this icon on Homepage >")
+                        .italic()
+                        .font(.system(size: 27))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .multilineTextAlignment(.center)
+                        .frame(width: 200, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    
+                    
+                    Image("inviteWhite")
+                        .resizable()
+                        .frame(width: 45, height: 45)
+                        .scaledToFill()
+                    
+                }
                 
                 
                 
                 VStack {
-                    
+                    Spacer()
+                        .frame(height: 40)
                     
                     Text("Step 1")
                         
