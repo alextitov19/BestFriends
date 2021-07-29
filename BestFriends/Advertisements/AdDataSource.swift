@@ -143,4 +143,33 @@ struct AdDataSource {
             }
         }
     }
+    
+    
+//    func createAd() {
+//            let group = DispatchGroup()
+//            group.enter()
+//        let ad = Advertisement(id: "school",category: "N/A", videoName: "school", adLink: "https://socialtechlabs.com/beta-team/", duration: 10.0, hasAudio: false, likes: 0, views: 0, shares: 0, clicks: 0)
+//        Amplify.API.mutate(request: .create(ad)) { mutationResult in
+//                switch mutationResult {
+//
+//                case .success(let creationResult):
+//
+//                    switch creationResult {
+//                    case .success:
+//                        print("Successfully created ad")
+//                        group.leave()
+//
+//
+//                    case .failure(let error):
+//                        print(error)
+//                    }
+//
+//                case .failure(let apiError):
+//                    print(apiError)
+//                }
+//            }
+//            group.wait()
+//            return
+//        }
+    
 }
