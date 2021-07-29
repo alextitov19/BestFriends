@@ -136,7 +136,11 @@ struct HomeView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         Spacer()
-                            .frame(width: 500)
+                            .frame(width: 380)
+                        
+                        Text("< drag")
+                            .foregroundColor(.white)
+                            .font(.system(size: 24, weight: .light))
                         
                         Button(action: {
                             //Display invite menu
