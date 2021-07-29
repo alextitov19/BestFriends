@@ -148,7 +148,7 @@ struct NotificationPreLoad: View {
                 }
                 var friend = userDataSource.getUser(id: RoomDataSource().getRoom(id: roomID).creatorID)
                 if friend.notificationsLP {
-                    let token = user.deviceFCMToken
+                    let token = friend.deviceFCMToken
                     PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName)", body: body)
                 }
                 var pendingNotifs = friend.pendingNotifications

@@ -19,32 +19,18 @@ struct SmileVaultView: View {
     
     var body: some View {
         ZStack {
-            Image("smileNotesCircles")
+            Image("SignUpPinBackground")
                 .resizable()
-                .scaledToFill()
                 .ignoresSafeArea()
+                .scaledToFill()
             
             VStack {
-                // MARK: Header
+                Spacer()
+                    .frame(height: 40)
                 
                 Text("SmileVault")
                     .font(.system(size: 40))
-                    .fontWeight(.regular)
                     .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .frame(width: 400, height: 50, alignment: .center)
-                
-                //                Text("Stop Scrolling. Longtap Chat messages that make you Smile.")
-                //                    .italic()
-                //                    .font(.system(size: 20))
-                //                    .fontWeight(.regular)
-                //                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                //                    .multilineTextAlignment(.center)
-                //                    .frame(width: 300, height: 75, alignment: .center)
-                //                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                //                    .cornerRadius(25)
-                
-                
                 
                 HStack {
                     Text(selectedFriendName)
@@ -63,6 +49,7 @@ struct SmileVaultView: View {
                         }
                 }
                 
+                if !hidingFriendButtons {
                 VStack {
                     Text("All Friends")
                         .frame(width: 130, height: 50, alignment: .center)
@@ -104,8 +91,7 @@ struct SmileVaultView: View {
                     }
                 }
                 .border(Color.white, width: 1)
-                .isHidden(hidingFriendButtons)
-                
+                }
                 
                 Spacer()
                 
@@ -116,6 +102,7 @@ struct SmileVaultView: View {
                 }
                 
                 Spacer()
+                    .frame(height: 20)
                 
                 HStack {
                     
@@ -151,6 +138,13 @@ struct SmileVaultView: View {
                 }
                 
                 Spacer()
+                                
+                
+            }
+            
+            
+            VStack {
+                Spacer()
                 
                 HStack {
                     
@@ -161,7 +155,7 @@ struct SmileVaultView: View {
                         .onTapGesture {
                             AnalyticsDataSource().recordSmileVaultDepartureEvent()
                             isAdPresented = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 12.63) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 11.5) {
                                 sessionManager.getCurrentAuthUser()
                             }
                         }
@@ -199,11 +193,7 @@ struct SmileVaultView: View {
                     
                     
                 }
-                
             }
-            
-            
-            
         }
         .onAppear {
             loadData()
@@ -224,8 +214,7 @@ struct SmileVaultView: View {
     private func loadData() {
         displayedCards = []
         cards = []
-        guard let id = Amplify.Auth.getCurrentUser()?.username else { return }
-        let user = UserDataSource().getUser(id: id)
+        let user = UserDataSource().getCurrentUser()
         let smileNotes = user.smileNotes
         for smileNote in smileNotes {
             let card = SmileNotesCard(smileNote: smileNote)
@@ -264,8 +253,7 @@ struct SmileVaultView: View {
         let oldSmileNote = displayedCards[index].smileNote
         var newSmileNote = oldSmileNote
         newSmileNote.favorite.toggle()
-        guard let username = Amplify.Auth.getCurrentUser()?.username else { return }
-        var user = UserDataSource().getUser(id: username)
+        var user = UserDataSource().getCurrentUser()
             for i in 0..<user.smileNotes.count {
                 if user.smileNotes[i].id == oldSmileNote.id {
                     user.smileNotes.remove(at: i)

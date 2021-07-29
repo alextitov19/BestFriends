@@ -80,8 +80,7 @@ struct ShakingCoolDataSource {
     
     
     func deleteImage(id: String) {
-        guard let userID = Amplify.Auth.getCurrentUser()?.username else { return }
-        var user = UserDataSource().getUser(id: userID)
+        var user = UserDataSource().getCurrentUser()
         var shakingCool = user.shakingCool
         for i in shakingCool.indices {
             if shakingCool[i].id == id {

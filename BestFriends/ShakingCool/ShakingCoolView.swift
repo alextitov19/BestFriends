@@ -130,7 +130,7 @@ struct ShakingCoolView: View {
                     .onTapGesture {
                         AnalyticsDataSource().recordShakingCoolDepartureEvent()
                         isAdPresented = true
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 11.34) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 8.5) {
                             sessionManager.getCurrentAuthUser()
                         }
                     }
@@ -160,6 +160,7 @@ struct ShakingCoolView: View {
                                 .font(.title)
                                 .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
                                 .cornerRadius(25)
+                                .padding()
                         }
                     }
                 }
