@@ -49,7 +49,7 @@ struct SettingsView: View {
                             
                             Spacer().frame(height: 20)
                             
-                            Link("User Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/211808350213142")!)
+                            Link("User Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/211977332357158")!)
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 17))
@@ -62,7 +62,7 @@ struct SettingsView: View {
                             
                             Spacer().frame(height: 20)
                             
-                            Link("BlueMode Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/211898588668178")!)
+                            Link("BlueMode Survey (5 mins.)", destination: URL(string: "https://form.jotform.com/212061817666457")!)
                                 .frame(width: 225, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 17))
