@@ -51,7 +51,7 @@ struct AdDataSource {
         let group = DispatchGroup()
         group.enter()
         
-        Amplify.API.query(request: .get(ManagementDocument.self, byId: "currentRuningAds")) { event in
+        Amplify.API.query(request: .get(ManagementDocument.self, byId: "currentAds")) { event in
             switch event {
             case .success(let result):
                 switch result {

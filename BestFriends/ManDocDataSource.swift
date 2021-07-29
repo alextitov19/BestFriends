@@ -59,22 +59,22 @@ struct ManDocDataSource {
 //    func createDoc() {
 //            let group = DispatchGroup()
 //            group.enter()
-//        let doc = ManagementDocument(id: "takenEmails", emails: [])
-//            Amplify.API.mutate(request: .create(doc)) { [self] mutationResult in
+//        let doc = ManagementDocument(id: "currentAds", documents: ["blender", "bull", "phone", "pink", "school"])
+//            Amplify.API.mutate(request: .create(doc)) { mutationResult in
 //                switch mutationResult {
-//                
+//
 //                case .success(let creationResult):
-//                    
+//
 //                    switch creationResult {
 //                    case .success:
 //                        print("Successfully created doc")
 //                        group.leave()
-//                        
-//                        
+//
+//
 //                    case .failure(let error):
 //                        print(error)
 //                    }
-//                    
+//
 //                case .failure(let apiError):
 //                    print(apiError)
 //                }

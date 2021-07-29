@@ -36,7 +36,7 @@ struct BestFriendsApp: App {
         //                return
         //            }
         //        }
-//                AdDataSource().createAd()
+//                ManDocDataSource().createDoc()
         
         sessionManager.getCurrentAuthUser()
         
