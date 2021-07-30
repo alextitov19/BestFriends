@@ -10,7 +10,7 @@ import SwiftUI
 struct BroadcastView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     @State private var input: String = ""
     @State private var status: String = ""
     
@@ -87,8 +87,11 @@ struct BroadcastView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             let user = userDS.getCurrentUser()
             for id in user.friends {
-                let token = userDS.getUser(id: id).deviceFCMToken
-                pushNS.sendPushNotification(token: token, title: "\(user.firstName) has some exciting news!", body: input)
+                let friend = userDS.getUser(id: id)
+                if friend.notificationsBroadcast {
+                    let token = friend.deviceFCMToken
+                    pushNS.sendPushNotification(token: token, title: "\(user.firstName) has some exciting news!", body: input)
+                }
             }
             status = "Sent"
         }
