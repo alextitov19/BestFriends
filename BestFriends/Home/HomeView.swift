@@ -136,7 +136,7 @@ struct HomeView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         Spacer()
-                            .frame(width: 380)
+                            .frame(width: 370)
                         
                         Text("< drag")
                             .foregroundColor(.white)
@@ -149,7 +149,7 @@ struct HomeView: View {
                         }) {
                             Image("person-add icon")
                                 .resizable()
-                                .frame(width: 50, height: 50)
+                                .frame(width: 60, height: 60)
                                 .sheet(isPresented: $showingSheet) {
                                     QRCodeView(image: myQRCode)
                                 }
@@ -165,11 +165,11 @@ struct HomeView: View {
                                 .cancel()
                             ])
                         }
-                        .padding(0)
+                        .padding(10)
                         
                         Image("chat icon")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 55, height: 55)
                             .scaledToFill()
                             .onTapGesture {
                                 loadingShowing = true
@@ -177,14 +177,14 @@ struct HomeView: View {
                                     sessionManager.showRooms()
                                 }
                             }
-                            .padding(5)
+                            .padding(10)
                             .sheet(isPresented: $showingAddFriendInstructions) {
                                 AddFriendSteps()
                             }
                         
                         Image("happy-face icon")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 55, height: 55)
                             .scaledToFill()
                             .onTapGesture {
                                 loadingShowing = true
@@ -192,14 +192,14 @@ struct HomeView: View {
                                     sessionManager.showSmileNotes()
                                 }
                             }
-                            .padding(5)
+                            .padding(10)
                             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                                 ImagePicker(image: self.$inputImage)
                             }
                         
                         Image("whitePhone")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 55, height: 55)
                             .scaledToFill()
                             .onTapGesture {
                                 loadingShowing = true
@@ -207,31 +207,32 @@ struct HomeView: View {
                                     sessionManager.showShakingCool()
                                 }
                             }
-                            .padding(5)
+                            .padding(10)
                         
                         Image("settings icon")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 55, height: 55)
                             .scaledToFill()
                             .onTapGesture {
                                 sessionManager.showSettings()
                             }
-                            .padding(5)
+                            .padding(10)
                         
                         Image("horn")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 55, height: 55)
                             .scaledToFill()
                             .onTapGesture {
                                 sessionManager.showBroadcast()
                             }
-                            .padding(5)
+                            .padding(10)
                         
                         Image("bell")
                             .resizable()
-                            .frame(width: 40, height: 40)
+                            .frame(width: 55, height: 55)
                             .scaledToFill()
                             .scaleEffect(isAtMaxScale ? 0.5 : 1)
+                            .padding(10)
                             .onAppear {
                                     if USS.user.pendingNotifications.count > 0 {
                                         withAnimation(self.animation, {
@@ -251,7 +252,7 @@ struct HomeView: View {
                             }
                         
                         Spacer()
-                            .frame(width: 100)
+                            .frame(width: 50)
                         
                     }
                 }
