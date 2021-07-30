@@ -39,14 +39,25 @@ struct SmileVaultView: View {
                         .onTapGesture {
                             hidingFriendButtons = false
                         }
-                    
-                    Image("favoritesIcon")
-                        .resizable()
-                        .frame(width: 40, height: 40, alignment: .center)
-                        .scaledToFit()
-                        .onTapGesture {
-                            toggleFavorite()
+                    if displayedCards.count > 0 {
+                        if displayedCards[index].smileNote.favorite {
+                            Image("favoritesIcon")
+                                .resizable()
+                                .frame(width: 40, height: 40, alignment: .center)
+                                .scaledToFit()
+                                .onTapGesture {
+                                    toggleFavorite()
+                                }
+                        } else {
+                            Image("whiteStarIcon")
+                                .resizable()
+                                .frame(width: 40, height: 40, alignment: .center)
+                                .scaledToFit()
+                                .onTapGesture {
+                                    toggleFavorite()
+                                }
                         }
+                    }
                 }
                 
                 if !hidingFriendButtons {
@@ -259,6 +270,11 @@ struct SmileVaultView: View {
                     user.smileNotes.remove(at: i)
                     user.smileNotes.insert(newSmileNote, at: i)
                     UserDataSource().updateUser(user: user)
+                    loadData()
+                    selectedFriendID = "All Friends"
+                    selectedFriendName = "All Friends"
+                    hidingFriendButtons = true
+                    newSelection()
                     return
                 }
         }
