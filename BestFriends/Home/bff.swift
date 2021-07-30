@@ -34,7 +34,7 @@ struct bff: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 16)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 16)
                
-                Text("Yep, you've got tons of followers on social media, but we have ")
+                Text("You've got tons of connections on social media. We have ...")
                     .font(.system(size: 25))
 //                    .italic()
                     .fontWeight(.regular)
@@ -42,7 +42,7 @@ struct bff: View {
                     .multilineTextAlignment(.center)
                     .frame(width: 400, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
-                Text(" your best friends!")
+                Text("just your best friends!")
                     .font(.system(size: 35))
                     .italic()
                     .fontWeight(.regular)
