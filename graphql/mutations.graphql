@@ -242,7 +242,7 @@ mutation CreateUser(
     tokens
     background
     unlockedStickers
-    notificationsBM
+    notificationsBroadcast
     notificationsLP
     chatFontSize
     pendingNotifications
@@ -297,7 +297,7 @@ mutation UpdateUser(
     tokens
     background
     unlockedStickers
-    notificationsBM
+    notificationsBroadcast
     notificationsLP
     chatFontSize
     pendingNotifications
@@ -352,7 +352,7 @@ mutation DeleteUser(
     tokens
     background
     unlockedStickers
-    notificationsBM
+    notificationsBroadcast
     notificationsLP
     chatFontSize
     pendingNotifications

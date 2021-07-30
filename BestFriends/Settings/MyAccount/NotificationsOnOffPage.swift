@@ -11,12 +11,12 @@ import SwiftUI
 
 struct NotificationsOnOffPage: View {
     @State private var landingPageNotifications : Bool
-    @State private var blueChatNotifications : Bool
-    
+    @State private var broadcastNotifications : Bool
+
     init() {
         let user = UserDataSource().getCurrentUser()
         landingPageNotifications = user.notificationsLP
-        blueChatNotifications = user.notificationsBM
+        broadcastNotifications = user.notificationsBroadcast
     }
     
     var body: some View {
@@ -76,14 +76,11 @@ struct NotificationsOnOffPage: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    
-                    Toggle("BlueMode Notifications", isOn: $blueChatNotifications)
+                    Toggle("Broadcast Notifications", isOn: $broadcastNotifications)
                         .frame(width: 375, height: 50, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .cornerRadius(25)
                         .font(.system(size: 25, weight: .semibold))
-                    
-                    
                     
                     
                     Spacer()
@@ -91,7 +88,7 @@ struct NotificationsOnOffPage: View {
                     
                     Button(action: {
                         var user = UserDataSource().getCurrentUser()
-                        user.notificationsBM = blueChatNotifications
+                        user.notificationsBroadcast = broadcastNotifications
                         user.notificationsLP = landingPageNotifications
                         UserDataSource().updateUser(user: user)
                     }) {

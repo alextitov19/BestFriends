@@ -23,7 +23,7 @@ public struct User: Model {
   public var tokens: Int
   public var background: Int
   public var unlockedStickers: [Int]
-  public var notificationsBM: Bool
+  public var notificationsBroadcast: Bool
   public var notificationsLP: Bool
   public var chatFontSize: Int
   public var pendingNotifications: [String]
@@ -52,7 +52,7 @@ public struct User: Model {
       tokens: Int,
       background: Int,
       unlockedStickers: [Int] = [],
-      notificationsBM: Bool,
+      notificationsBroadcast: Bool,
       notificationsLP: Bool,
       chatFontSize: Int,
       pendingNotifications: [String] = [],
@@ -78,7 +78,7 @@ public struct User: Model {
       tokens: tokens,
       background: background,
       unlockedStickers: unlockedStickers,
-      notificationsBM: notificationsBM,
+      notificationsBroadcast: notificationsBroadcast,
       notificationsLP: notificationsLP,
       chatFontSize: chatFontSize,
       pendingNotifications: pendingNotifications,
@@ -107,7 +107,7 @@ public struct User: Model {
       tokens: Int,
       background: Int,
       unlockedStickers: [Int] = [],
-      notificationsBM: Bool,
+      notificationsBroadcast: Bool,
       notificationsLP: Bool,
       chatFontSize: Int,
       pendingNotifications: [String] = [],
@@ -135,7 +135,7 @@ public struct User: Model {
       self.tokens = tokens
       self.background = background
       self.unlockedStickers = unlockedStickers
-      self.notificationsBM = notificationsBM
+      self.notificationsBroadcast = notificationsBroadcast
       self.notificationsLP = notificationsLP
       self.chatFontSize = chatFontSize
       self.pendingNotifications = pendingNotifications

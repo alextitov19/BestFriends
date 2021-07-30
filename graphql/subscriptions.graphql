@@ -212,7 +212,7 @@ subscription OnCreateUser {
     tokens
     background
     unlockedStickers
-    notificationsBM
+    notificationsBroadcast
     notificationsLP
     chatFontSize
     pendingNotifications
@@ -264,7 +264,7 @@ subscription OnUpdateUser {
     tokens
     background
     unlockedStickers
-    notificationsBM
+    notificationsBroadcast
     notificationsLP
     chatFontSize
     pendingNotifications
@@ -316,7 +316,7 @@ subscription OnDeleteUser {
     tokens
     background
     unlockedStickers
-    notificationsBM
+    notificationsBroadcast
     notificationsLP
     chatFontSize
     pendingNotifications

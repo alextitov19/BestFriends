@@ -72,7 +72,7 @@ type User {
   tokens: Int!
   background: Int!
   unlockedStickers: [Int!]!
-  notificationsBM: Boolean!
+  notificationsBroadcast: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
   pendingNotifications: [String!]!
@@ -441,7 +441,7 @@ input ModelUserFilterInput {
   tokens: ModelIntInput
   background: ModelIntInput
   unlockedStickers: ModelIntInput
-  notificationsBM: ModelBooleanInput
+  notificationsBroadcast: ModelBooleanInput
   notificationsLP: ModelBooleanInput
   chatFontSize: ModelIntInput
   pendingNotifications: ModelStringInput
@@ -473,7 +473,7 @@ input CreateUserInput {
   tokens: Int!
   background: Int!
   unlockedStickers: [Int!]!
-  notificationsBM: Boolean!
+  notificationsBroadcast: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
   pendingNotifications: [String!]!
@@ -502,7 +502,7 @@ input UpdateUserInput {
   tokens: Int
   background: Int
   unlockedStickers: [Int!]
-  notificationsBM: Boolean
+  notificationsBroadcast: Boolean
   notificationsLP: Boolean
   chatFontSize: Int
   pendingNotifications: [String!]
@@ -531,7 +531,7 @@ input ModelUserConditionInput {
   tokens: ModelIntInput
   background: ModelIntInput
   unlockedStickers: ModelIntInput
-  notificationsBM: ModelBooleanInput
+  notificationsBroadcast: ModelBooleanInput
   notificationsLP: ModelBooleanInput
   chatFontSize: ModelIntInput
   pendingNotifications: ModelStringInput

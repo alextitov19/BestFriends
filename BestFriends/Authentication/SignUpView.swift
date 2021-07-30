@@ -1424,7 +1424,7 @@ struct SignUpQuestionPage3: View {
                         secretPin: currentPin,
                         tokens: 0,
                         background: 0,
-                        notificationsBM: true,
+                        notificationsBroadcast: true,
                         notificationsLP: true,
                         chatFontSize: 16,
                         needIntro: true)

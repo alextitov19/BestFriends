@@ -25,7 +25,7 @@ extension User {
     case tokens
     case background
     case unlockedStickers
-    case notificationsBM
+    case notificationsBroadcast
     case notificationsLP
     case chatFontSize
     case pendingNotifications
@@ -64,7 +64,7 @@ extension User {
       .field(user.tokens, is: .required, ofType: .int),
       .field(user.background, is: .required, ofType: .int),
       .field(user.unlockedStickers, is: .required, ofType: .embeddedCollection(of: Int.self)),
-      .field(user.notificationsBM, is: .required, ofType: .bool),
+      .field(user.notificationsBroadcast, is: .required, ofType: .bool),
       .field(user.notificationsLP, is: .required, ofType: .bool),
       .field(user.chatFontSize, is: .required, ofType: .int),
       .field(user.pendingNotifications, is: .required, ofType: .embeddedCollection(of: String.self)),

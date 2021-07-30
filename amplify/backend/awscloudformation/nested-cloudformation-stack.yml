@@ -134,7 +134,7 @@
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
           "DynamoDBEnableServerSideEncryption": false,
           "S3DeploymentBucket": "amplify-bestfriends-staging-32557-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/de56a585a7006aedc892692efa0591a6da4d732a",
+          "S3DeploymentRootKey": "amplify-appsync-files/d4d2c46e39f20dcc9a469b2f6d2e4db50e00795a",
           "env": "staging"
         }
       }
@@ -265,7 +265,7 @@
         },
         "Handler": "index.handler",
         "Runtime": "nodejs12.x",
-        "Timeout": "300",
+        "Timeout": 300,
         "Role": {
           "Fn::GetAtt": [
             "UpdateRolesWithIDPFunctionRole",

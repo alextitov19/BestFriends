@@ -176,7 +176,7 @@ query GetUser($id: ID!) {
     tokens
     background
     unlockedStickers
-    notificationsBM
+    notificationsBroadcast
     notificationsLP
     chatFontSize
     pendingNotifications
@@ -224,7 +224,7 @@ query ListUsers(
       tokens
       background
       unlockedStickers
-      notificationsBM
+      notificationsBroadcast
       notificationsLP
       chatFontSize
       pendingNotifications

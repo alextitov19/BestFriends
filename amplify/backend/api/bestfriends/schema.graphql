@@ -65,7 +65,7 @@ type User @model {
   tokens: Int!
   background: Int!
   unlockedStickers: [Int!]!
-  notificationsBM: Boolean!
+  notificationsBroadcast: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
   pendingNotifications: [String!]!
