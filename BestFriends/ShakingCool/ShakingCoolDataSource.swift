@@ -83,7 +83,7 @@ struct ShakingCoolDataSource {
         var user = UserDataSource().getCurrentUser()
         var shakingCool = user.shakingCool
         for i in shakingCool.indices {
-            if shakingCool[i].id == id {
+            if shakingCool[i].link == id {
                 shakingCool.remove(at: i)
             }
         }

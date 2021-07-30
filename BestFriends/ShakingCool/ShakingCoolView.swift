@@ -197,7 +197,10 @@ struct ShakingCoolView: View {
         myid = user.id
         print("Got user: ", user)
         shakingCool = []
-            shakingCool = user.shakingCool
+        images = []
+        availableNames = []
+        availableIDs = []
+        shakingCool = user.shakingCool
         print("Shaking Cool: ", shakingCool)
         chosenID = user.id
         var mycounter = 0
