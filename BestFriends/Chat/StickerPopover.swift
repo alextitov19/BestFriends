@@ -50,7 +50,7 @@ struct StickerPopover: View {
                     .foregroundColor(.white)
                     .font(.system(size: 20, weight: .light))
                 
-                Text("1 token for watching a video\n3 for clicking the link")
+                Text("Earn 1 token for watching an ad video,\n3 for clicking the link")
                     .foregroundColor(.white)
                     .font(.system(size: 20, weight: .light))
                 

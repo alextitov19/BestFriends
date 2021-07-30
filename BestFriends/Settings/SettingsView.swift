@@ -40,7 +40,6 @@ struct SettingsView: View {
                             
                             
                             Text("We'd Love to Hear from You")
-                                
                                 .font(.system(size: 32))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -80,7 +79,6 @@ struct SettingsView: View {
                         VStack {
                             
                             Text("Help Make BestFriends Better")
-                                
                                 .font(.system(size: 32))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -157,22 +155,6 @@ struct SettingsView: View {
                             }
                             
                             
-                            Spacer().frame(height: 20)
-                            
-                            NavigationLink(
-                                destination: Tokens(),
-                                label: {
-                                    Text("Earning Tokens for Stickers")
-                                })
-                                
-                                .frame(width: 225, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 17))
-                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                            
                             
                             Spacer().frame(height: 45)
                             
@@ -189,13 +171,14 @@ struct SettingsView: View {
                                 destination: AddFriends().environmentObject(sessionManager),
                                 label: {
                                     Text("Add Friends")
+                                        .frame(width: 225, height: 50)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 17))
+                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                        .cornerRadius(25)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
-                                .frame(width: 225, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 17))
-                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
                             
                             Spacer().frame(height: 20)
                             
@@ -205,31 +188,24 @@ struct SettingsView: View {
                                     destination: RemoveFriend(),
                                     label: {
                                         Text("Remove Friends")
+                                            .frame(width: 225, height: 50)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .font(.system(size: 17))
+                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     })
-                                    .frame(width: 225, height: 50)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 17))
-                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                    .cornerRadius(25)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                                
                                 
                                 VStack {
-                                    
                                     Spacer()
                                         .frame(height: 45)
                                     
-                                    
                                     Text("Privacy / Reporting Abuse")
-                                        
                                         .font(.system(size: 32))
                                         .fontWeight(.ultraLight)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .multilineTextAlignment(.center)
                                         .frame(width: 385, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                    
-                                    
                                     
                                     Link("Privacy Policy / Terms of Service", destination: URL(string: "https://socialtechlabs.com/privacy/")!)
                                         .frame(width: 325, height: 50)
@@ -279,32 +255,26 @@ struct SettingsView: View {
                                             
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .multilineTextAlignment(.center)
-                                            .frame(width: 385, height: 50, alignment: .center
-                                            )
-                                        
+                                            .frame(width: 385, height: 50, alignment: .center)
                                         
                                         Spacer()
                                             .frame(height: 20)
                                         
                                         NavigationLink(
-                                            destination: MyAccount(),
+                                            destination: ResetPassword(),
                                             label: {
-                                                Text("Change Password / Email")
+                                                Text("Change Password")
+                                                    .frame(width: 325, height: 50)
+                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                    .font(.system(size: 17))
+                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                    .cornerRadius(25)
+                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                             })
-                                            .frame(width: 325, height: 50)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 17))
-                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        
-                                        
-                                        
+                                            
                                         
                                         VStack {
-                                            
                                             VStack {
-                                                
                                                 Spacer()
                                                     .frame(height: 20)
                                                 
@@ -312,13 +282,13 @@ struct SettingsView: View {
                                                     destination: NotificationsOnOffPage(),
                                                     label: {
                                                         Text("Notification Settings")
+                                                            .frame(width: 325, height: 50)
+                                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                            .font(.system(size: 17))
+                                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                            .cornerRadius(25)
+                                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                     })
-                                                    .frame(width: 325, height: 50)
-                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .font(.system(size: 17))
-                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                                    .cornerRadius(25)
-                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                 
                                                 Spacer()
                                                     .frame(height: 20)
@@ -327,13 +297,14 @@ struct SettingsView: View {
                                                     destination: ChangePin(),
                                                     label: {
                                                         Text("Change pin for Hide Chat")
+                                                            .frame(width: 325, height: 50)
+                                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                            .font(.system(size: 17))
+                                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                            .cornerRadius(25)
+                                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                     })
-                                                    .frame(width: 325, height: 50)
-                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .font(.system(size: 17))
-                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                                    .cornerRadius(25)
-                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                    
                                                 
                                                 Spacer()
                                                     .frame(height: 20)
@@ -342,13 +313,14 @@ struct SettingsView: View {
                                                     destination: ChangeAdPreference(),
                                                     label: {
                                                         Text("Change Ad Preference")
+                                                            .frame(width: 325, height: 50)
+                                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                            .font(.system(size: 17))
+                                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                            .cornerRadius(25)
+                                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                     })
-                                                    .frame(width: 325, height: 50)
-                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .font(.system(size: 17))
-                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                                    .cornerRadius(25)
-                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                    
                                                 
                                                 Spacer()
                                                     .frame(height: 20)
@@ -357,13 +329,14 @@ struct SettingsView: View {
                                                     destination: DeleteMyAccount(),
                                                     label: {
                                                         Text("Delete Account")
+                                                            .frame(width: 325, height: 50)
+                                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                            .font(.system(size: 17))
+                                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                            .cornerRadius(25)
+                                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                     })
-                                                    .frame(width: 325, height: 50)
-                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .font(.system(size: 17))
-                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                                    .cornerRadius(25)
-                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                    
                                                 
                                             }
                                             
@@ -377,21 +350,21 @@ struct SettingsView: View {
                                                 
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .multilineTextAlignment(.center)
-                                                .frame(width: 385, height: 50, alignment: .center
-                                                )
+                                                .frame(width: 385, height: 50, alignment: .center)
                                             
                                             NavigationLink(
                                                 destination: ChangeBackground(),
                                                 label: {
                                                     Text("Customize Chat Backgrounds")
+                                                        .frame(width: 325, height: 50)
+                                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                        .font(.system(size: 17))
+                                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                        .cornerRadius(25)
+                                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                 })
                                                 
-                                                .frame(width: 325, height: 50)
-                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                .font(.system(size: 17))
-                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                                .cornerRadius(25)
-                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                
                                             
                                             Spacer()
                                                 .frame(height: 20)
@@ -400,13 +373,13 @@ struct SettingsView: View {
                                                 destination: ChangeChatFontSize(),
                                                 label: {
                                                     Text("Chat Font Size")
+                                                        .frame(width: 325, height: 50)
+                                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                        .font(.system(size: 17))
+                                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                        .cornerRadius(25)
+                                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                 })
-                                                .frame(width: 325, height: 50)
-                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                .font(.system(size: 17))
-                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                                .cornerRadius(25)
-                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                             
                                             VStack {
                                                 
