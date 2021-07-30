@@ -169,6 +169,7 @@
 		CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */; };
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
+		CF05A8CC26B4239B009618E6 /* bff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF05A8CB26B4239B009618E6 /* bff.swift */; };
 		CF1E6AE5269A00DB00B8F985 /* PreAddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */; };
 		CF1E6AE7269A0D2000B8F985 /* BlueModeConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */; };
 		CF30FF93267E955A000B2730 /* SmileNotesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30FF92267E955A000B2730 /* SmileNotesCard.swift */; };
@@ -365,6 +366,7 @@
 		CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueRoad.mp4; sourceTree = "<group>"; };
 		CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShakingCoolVideo.mp4; sourceTree = "<group>"; };
 		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
+		CF05A8CB26B4239B009618E6 /* bff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bff.swift; sourceTree = "<group>"; };
 		CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreAddFriends.swift; sourceTree = "<group>"; };
 		CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeConditions.swift; sourceTree = "<group>"; };
 		CF30FF92267E955A000B2730 /* SmileNotesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesCard.swift; sourceTree = "<group>"; };
@@ -632,6 +634,7 @@
 				7A68B67A26A7296D00EF20E3 /* UserSubscriptionService.swift */,
 				7A244F8426A7CAAD000F49ED /* IntroPopups.swift */,
 				7A78232226B1A64800CA76FC /* BroadcastView.swift */,
+				CF05A8CB26B4239B009618E6 /* bff.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1159,6 +1162,7 @@
 				E773ACADB99A782917B01876 /* amplify/generated/models/ManagementDocument+Schema.swift in Sources */,
 				40C7E0ADC429164225D78A4E /* amplify/generated/models/ManagementDocument.swift in Sources */,
 				CB0D8E2BD18D578E6A8E4EB9 /* amplify/generated/models/Message+Schema.swift in Sources */,
+				CF05A8CC26B4239B009618E6 /* bff.swift in Sources */,
 				A86720E43088E443172D2F99 /* amplify/generated/models/Message.swift in Sources */,
 				334F1FEB6C5560CC6D4D6119 /* amplify/generated/models/ReportedMessage+Schema.swift in Sources */,
 				6C37F90D51E651F95E15E751 /* ReportedMessage.swift in Sources */,
