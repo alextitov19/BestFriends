@@ -32,23 +32,28 @@ struct ConfirmationView: View {
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .padding()
                 
-                Text("WARNING: DO NOT LEAVE THE APP WHILE ON THIS PAGE TO GET YOUR CODE - MIGHT CAUSE AN ERROR!")
-                    .font(.system(size: 28, weight: .bold))
-                    .foregroundColor(Color(#colorLiteral(red: 0.7710047364, green: 0, blue: 0, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    
-                Text("Apologies for the inconvenience,\nwe're working on it")
-                    .font(.system(size: 20, weight: .light))
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .multilineTextAlignment(.center)
+                
                 
                 Spacer()
-                    .frame(height: 200)
+                    .frame(height: 150)
                 
                 Text("Username: \(username)")
                     .font(.title2)
                     .bold()
                     .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                
+                Text("WARNING: DO NOT LEAVE THE APP WHILE ON THIS PAGE TO GET YOUR CODE - MIGHT CAUSE AN ERROR!")
+                    .font(.system(size: 28, weight: .bold))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 30)
+                
+                Text("Apologies for the inconvenience,\nwe're working on it")
+                    .font(.system(size: 20, weight: .light))
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 30)
