@@ -360,8 +360,12 @@ struct ChatView: View {
                         .scaledToFit()
                         .foregroundColor(.white)
                         .onTapGesture {
-                            hasLiked = true
-                            currentLikes += 1
+                            hasLiked.toggle()
+                            if hasLiked {
+                                currentLikes += 1
+                            } else {
+                                currentLikes -= 1
+                            }
                         }
                     
                     Text("\(currentLikes)")
