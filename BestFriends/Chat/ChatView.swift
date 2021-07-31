@@ -23,7 +23,8 @@ struct ChatView: View {
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
     @State var adButtonsOffset: CGFloat = -270
-    
+    @State private var isShakingCoolPresented = false
+
     @State var areAdsHidden = true
     @State var currentAdIndex = 0
     @State var currentLink = ""
@@ -168,6 +169,7 @@ struct ChatView: View {
                             print("Screen recording")
                             sendScreenCaptureNotification(video: true)
                         }
+                        
                     
                     //                    ZStack {
                     //                        if roomname == "" {
@@ -384,12 +386,16 @@ struct ChatView: View {
                         .resizable()
                         .frame(width: 40, height: 40)
                         .scaledToFit()
-                        .foregroundColor(.white)
                         .onTapGesture {
                             hasClickedLink = true
                             openURL(URL(string: currentLink)!)
                         }
                 }
+                
+                Spacer().frame(height: 10)
+
+                Text("Sample Ad")
+                    .foregroundColor(.white)
             }
             .offset(x: adButtonsOffset)
             .transition(.move(edge: .leading))
@@ -435,6 +441,11 @@ struct ChatView: View {
             .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
             .cornerRadius(30)
             .transition(.scale)
+        }
+        .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
+        .onShake {
+            AnalyticsDataSource().recordPhoneGotShakenEvent()
+            isShakingCoolPresented = true
         }
     }
     
