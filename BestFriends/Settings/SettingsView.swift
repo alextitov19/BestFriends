@@ -78,7 +78,7 @@ struct SettingsView: View {
                         
                         VStack {
                             
-                            Text("Help Make BestFriends Better")
+                            Text("Ambassadorships")
                                 .font(.system(size: 32))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
