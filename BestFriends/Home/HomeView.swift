@@ -32,7 +32,9 @@ struct HomeView: View {
     @State private var notificationsShowing = false
     @State private var loadingShowing = false
     @State private var isAtMaxScale = false
-    
+    @State private var thereAlreadyisARoom = false
+    @State private var existingRoomId = ""
+
     private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
 
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
@@ -260,9 +262,26 @@ struct HomeView: View {
             
             if membersOfNewRoom.count > 0 {
                 Button(action: {
+                    
                     if membersOfNewRoom != [] {
                         withAnimation {
-                            loadingShowing = true
+                            invitingFriends = false
+                            for index in 0..<stars.count {
+                                stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
+                                stars[index].hidingName = true
+                            }
+                            membersOfNewRoom.append(USS.user.id)
+                            let roomid = userDataSource.checkIfRoomExists(memberids: membersOfNewRoom)
+                            if roomid.count > 0 {
+                                existingRoomId = roomid
+                                thereAlreadyisARoom = true
+                            } else {
+                                loadingShowing = true
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                    inviteNewRoom()
+                                }
+                            }
+                            
                         }
                     } else {
                         withAnimation {
@@ -289,20 +308,74 @@ struct HomeView: View {
                 .transition(.scale)
             }
             
+            
+            
+            VStack {
+                if USS.user.pendingNotifications.count > 0 && notificationsShowing == true {
+                    ForEach(USS.user.pendingNotifications.reversed(), id: \.self) { foo in
+                        Text(foo)
+                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .font(.system(size: 17, weight: .regular))
+                            .padding()
+                    }
+                }
+            }
+            .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+            .cornerRadius(30)
+            .transition(.scale)
+            
+            if thereAlreadyisARoom {
+                VStack {
+                    Text("There already is a chat room with all the friends you've selected. Do you want to use that one or make a new chat room?")
+                        .foregroundColor(.white)
+                        .font(.system(size: 30, weight: .bold))
+                        .multilineTextAlignment(.center)
+                        .padding(20)
+                    
+                    HStack {
+                        Button(action: {
+                            loadingShowing = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                inviteNewRoom()
+                            }
+                        }) {
+                            Text("Make new room")
+                                .frame(width: 150, height: 50, alignment: .center)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.title)
+                                .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        }
+                        .padding(20)
+
+                        Button(action: {
+                            loadingShowing = true
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                inviteOldRoom(roomid: existingRoomId)
+                            }
+                        }) {
+                            Text("Use existing room")
+                                .frame(width: 150, height: 50, alignment: .center)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.title)
+                                .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                                .cornerRadius(25)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        }
+                        .padding(20)
+                    }
+                }
+            }
+            
+            if USS.user.needIntro {
+                IntroPopups()
+            }
+            
             if loadingShowing == true {
                 ZStack {
                     Color(#colorLiteral(red: 0.6986119747, green: 0.2623180151, blue: 1, alpha: 1))
                         .ignoresSafeArea()
-                        .onAppear {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                invitingFriends = false
-                                for index in 0..<stars.count {
-                                    stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
-                                    stars[index].hidingName = true
-                                }
-                                inviteSelectedFriends()
-                            }
-                        }
                     
                     Image("FatGuy")
                         .resizable()
@@ -322,24 +395,6 @@ struct HomeView: View {
                         .offset(y: 100)
                     
                 }
-            }
-            
-            VStack {
-                if USS.user.pendingNotifications.count > 0 && notificationsShowing == true {
-                    ForEach(USS.user.pendingNotifications.reversed(), id: \.self) { foo in
-                        Text(foo)
-                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                            .font(.system(size: 17, weight: .regular))
-                            .padding()
-                    }
-                }
-            }
-            .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
-            .cornerRadius(30)
-            .transition(.scale)
-            
-            if USS.user.needIntro {
-                IntroPopups()
             }
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
@@ -459,9 +514,12 @@ struct HomeView: View {
         }
     }
     
-    private func inviteSelectedFriends() {
+    private func inviteNewRoom() {
         if membersOfNewRoom != [] {
-            membersOfNewRoom.append(USS.user.id)
+            
+            
+            
+            
             var name = ""
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
@@ -485,7 +543,29 @@ struct HomeView: View {
                 }
             }
             membersOfNewRoom = []
-            sleep(3)
+            sessionManager.chat(room: room)
+        }
+    }
+    
+    private func inviteOldRoom(roomid: String) {
+        if membersOfNewRoom != [] {
+            let room = RoomDataSource().getRoom(id: roomid)
+            for id in room.members {
+                var user = userDataSource.getUser(id: id)
+                if id != room.creatorID {
+                    user.invitedRooms.append(InvitedRoom(roomID: room.id))
+                }
+                userDataSource.updateUser(user: user)
+            }
+            let messageBody = "Members: " + room.name
+            for id in membersOfNewRoom {
+                let user = userDataSource.getUser(id: id)
+                if user.notificationsLP == true {
+                    let token = user.deviceFCMToken
+                    PushNotificationSender().sendPushNotification(token: token, title: "\(USS.user.firstName) needs to talk!", body: messageBody)
+                }
+            }
+            membersOfNewRoom = []
             sessionManager.chat(room: room)
         }
     }
