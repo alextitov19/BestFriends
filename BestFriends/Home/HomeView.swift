@@ -328,7 +328,8 @@ struct HomeView: View {
                 VStack {
                     Text("There already is a chat room with all the friends you've selected. Do you want to use that one or make a new chat room?")
                         .foregroundColor(.white)
-                        .font(.system(size: 30, weight: .bold))
+                        .font(.system(size: 22, weight: .bold))
+                        .frame(width: 300)
                         .multilineTextAlignment(.center)
                         .padding(20)
                     
@@ -339,11 +340,11 @@ struct HomeView: View {
                                 inviteNewRoom()
                             }
                         }) {
-                            Text("Make new room")
+                            Text("Make new")
                                 .frame(width: 150, height: 50, alignment: .center)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.title)
-                                .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                                .font(.system(size: 20))
+                                .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
@@ -355,10 +356,10 @@ struct HomeView: View {
                                 inviteOldRoom(roomid: existingRoomId)
                             }
                         }) {
-                            Text("Use existing room")
+                            Text("Use existing")
                                 .frame(width: 150, height: 50, alignment: .center)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.title)
+                                .font(.system(size: 20))
                                 .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
