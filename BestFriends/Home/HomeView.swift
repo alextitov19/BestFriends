@@ -10,6 +10,7 @@ import Amplify
 import AVKit
 import CoreImage.CIFilterBuiltins
 import Firebase
+import PhotosUI
 
 
 
@@ -34,9 +35,9 @@ struct HomeView: View {
     @State private var isAtMaxScale = false
     @State private var thereAlreadyisARoom = false
     @State private var existingRoomId = ""
-
+    
     private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
-
+    
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
     //    @State private var inviteMode = false
     
@@ -54,9 +55,9 @@ struct HomeView: View {
     
     init() {
         if userDataSource.doesMyUserExist() {
-        let foo = userDataSource.getCurrentUser()
-        self.USS = UserSubscriptionService(user: foo)
-        USS.createSubscription()
+            let foo = userDataSource.getCurrentUser()
+            self.USS = UserSubscriptionService(user: foo)
+            USS.createSubscription()
         } else {
             fatalError()
         }
@@ -160,7 +161,19 @@ struct HomeView: View {
                         .actionSheet(isPresented: $showingActionSheet) {
                             ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes."), buttons: [
                                 .default(Text("Get my QR code")) { showMyQR() },
-                                .default(Text("My Gallery")) { self.showingImagePicker = true },
+                                .default(Text("My Gallery")) {
+                                    let photos = PHPhotoLibrary.authorizationStatus()
+                                    if photos == .notDetermined {
+                                        PHPhotoLibrary.requestAuthorization({status in
+                                            if status == .authorized{
+                                                self.showingImagePicker = true
+                                                
+                                            } else {}
+                                        })
+                                    } else {
+                                        self.showingImagePicker = true
+                                    }
+                                },
                                 // Rob added a third option in the Add Friends popup on Landing page
                                 .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
                                 //
@@ -236,10 +249,10 @@ struct HomeView: View {
                             .scaleEffect(isAtMaxScale ? 0.5 : 1)
                             .padding(10)
                             .onAppear {
-                                    if USS.user.pendingNotifications.count > 0 {
-                                        withAnimation(self.animation, {
-                                            self.isAtMaxScale.toggle()
-                                        })
+                                if USS.user.pendingNotifications.count > 0 {
+                                    withAnimation(self.animation, {
+                                        self.isAtMaxScale.toggle()
+                                    })
                                 }
                             }
                             .onTapGesture {
@@ -349,7 +362,7 @@ struct HomeView: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
                         .padding(20)
-
+                        
                         Button(action: {
                             loadingShowing = true
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
@@ -493,8 +506,8 @@ struct HomeView: View {
         print("Friend count: ", friendIDs.count)
         
         for index in friendIDs.indices {
-                DispatchQueue.main.asyncAfter(deadline: .now() + starTimings[index]) {
-
+            DispatchQueue.main.asyncAfter(deadline: .now() + starTimings[index]) {
+                
                 let user = userDataSource.getUser(id: friendIDs[index])
                 guard let initial = user.lastName.first else { return }
                 var name = user.firstName + " "

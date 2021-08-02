@@ -23,7 +23,7 @@ struct ShakingCoolView: View {
     @State private var isAdPresented = false
     @State private var images: [UIImage] = []
     @State private var currentlyLoading = false
-
+    
     @EnvironmentObject var sessionManager: SessionManager
     
     private var shakingCoolDataSource = ShakingCoolDataSource()
@@ -47,8 +47,8 @@ struct ShakingCoolView: View {
                 //                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                 //
                 
-//                Spacer()
-//                    .frame(height: 50)
+                //                Spacer()
+                //                    .frame(height: 50)
                 
                 
                 
@@ -62,7 +62,7 @@ struct ShakingCoolView: View {
                 //                    .multilineTextAlignment(.center)
                 //                    .frame(width: 385, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
-               
+                
                 
                 Text("Two are for you & one per friend that will bring a smile on bad days. Shake your phone on Homepage.")
                     .font(.system(size: 15))
@@ -70,9 +70,9 @@ struct ShakingCoolView: View {
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .frame(width: 375, height: 50, alignment: .center)
-               
+                
                 Spacer().frame(height: 10)
-               
+                
                 Text("You can add \(howManyLeft()) more image(s)")
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 20, weight: .thin))
@@ -160,19 +160,19 @@ struct ShakingCoolView: View {
                     ForEach(availableIDs.indices, id: \.self) { index in
                         Button(action: {
                             let photos = PHPhotoLibrary.authorizationStatus()
-                                if photos == .notDetermined {
-                                    PHPhotoLibrary.requestAuthorization({status in
-                                        if status == .authorized{
-                                            chosenID = availableIDs[index]
-                                            showingImagePicker = true
-                                            choosingRecipient = false
-                                        } else {}
-                                    })
-                                } else {
-                                    chosenID = availableIDs[index]
-                                    showingImagePicker = true
-                                    choosingRecipient = false
-                                }
+                            if photos == .notDetermined {
+                                PHPhotoLibrary.requestAuthorization({status in
+                                    if status == .authorized{
+                                        chosenID = availableIDs[index]
+                                        showingImagePicker = true
+                                        choosingRecipient = false
+                                    } else {}
+                                })
+                            } else {
+                                chosenID = availableIDs[index]
+                                showingImagePicker = true
+                                choosingRecipient = false
+                            }
                         }) {
                             Text(availableNames[index])
                                 .frame(width: 150, height: 50, alignment: .center)
@@ -196,7 +196,7 @@ struct ShakingCoolView: View {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-
+            
             guard let inputImage = inputImage else { return }
             print("Got the image")
             let state = ShakingCoolDataSource().uploadImage(image: inputImage, targetID: chosenID)
