@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Amplify
+import PhotosUI
 
 struct ShakingCoolView: View {
     
@@ -97,7 +98,6 @@ struct ShakingCoolView: View {
                                     chosenID = shakingCool[index].id
                                     shakingCoolDataSource.deleteImage(id: shakingCool[index].link)
                                     reloadData()
-                                    showingImagePicker = true
                                 }
                             
                             //                            Spacer()
@@ -108,7 +108,7 @@ struct ShakingCoolView: View {
                 .frame(height: 500)
                 
                 
-                Text("(Tap image to delete/replace)")
+                Text("Tap an image to delete it")
                     .italic()
                     .font(.system(size: 20, weight: .thin))
                     .foregroundColor(.white)
@@ -159,9 +159,20 @@ struct ShakingCoolView: View {
                 VStack {
                     ForEach(availableIDs.indices, id: \.self) { index in
                         Button(action: {
-                            chosenID = availableIDs[index]
-                            showingImagePicker = true
-                            choosingRecipient = false
+                            let photos = PHPhotoLibrary.authorizationStatus()
+                                if photos == .notDetermined {
+                                    PHPhotoLibrary.requestAuthorization({status in
+                                        if status == .authorized{
+                                            chosenID = availableIDs[index]
+                                            showingImagePicker = true
+                                            choosingRecipient = false
+                                        } else {}
+                                    })
+                                } else {
+                                    chosenID = availableIDs[index]
+                                    showingImagePicker = true
+                                    choosingRecipient = false
+                                }
                         }) {
                             Text(availableNames[index])
                                 .frame(width: 150, height: 50, alignment: .center)

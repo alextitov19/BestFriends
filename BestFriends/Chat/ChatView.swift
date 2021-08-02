@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PhotosUI
 import Amplify
 import Combine
 
@@ -289,7 +290,16 @@ struct ChatView: View {
                     
                     HStack { //footer
                         Button(action: {
-                            showingImagePicker = true
+                            let photos = PHPhotoLibrary.authorizationStatus()
+                                if photos == .notDetermined {
+                                    PHPhotoLibrary.requestAuthorization({status in
+                                        if status == .authorized{
+                                            showingImagePicker = true
+                                        } else {}
+                                    })
+                                } else {
+                                    showingImagePicker = true
+                                }
                         }) {
                             Image("camera")
                                 .resizable()

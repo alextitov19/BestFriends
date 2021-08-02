@@ -82,21 +82,49 @@ struct ShakingCoolDataSource {
     func deleteImage(id: String) {
         var user = UserDataSource().getCurrentUser()
         var shakingCool = user.shakingCool
-        for i in shakingCool.indices {
+        print("Shaking cool:", shakingCool)
+        for i in 0..<shakingCool.count {
             if shakingCool[i].link == id {
                 shakingCool.remove(at: i)
+                user.shakingCool = shakingCool
+                UserDataSource().updateUser(user: user)
+                
+                Amplify.Storage.remove(key: id) { event in
+                    switch event {
+                    case let .success(data):
+                        print("Completed: Deleted \(data)")
+                    case let .failure(storageError):
+                        print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+                    }
+                }
+                
+                return
             }
         }
-        user.shakingCool = shakingCool
-        UserDataSource().updateUser(user: user)
         
-        Amplify.Storage.remove(key: id) { event in
-            switch event {
-            case let .success(data):
-                print("Completed: Deleted \(data)")
-            case let .failure(storageError):
-                print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+        for friendid in user.friends {
+            var friend = UserDataSource().getUser(id: friendid)
+            var shakingCool = friend.shakingCool
+            print("Shaking cool:", shakingCool)
+            for i in 0..<shakingCool.count {
+                if shakingCool[i].link == id {
+                    shakingCool.remove(at: i)
+                    friend.shakingCool = shakingCool
+                    UserDataSource().updateUser(user: friend)
+                    
+                    Amplify.Storage.remove(key: id) { event in
+                        switch event {
+                        case let .success(data):
+                            print("Completed: Deleted \(data)")
+                        case let .failure(storageError):
+                            print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+                        }
+                    }
+                    
+                    return
+                }
             }
         }
+        
     }
 }
