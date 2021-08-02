@@ -61,8 +61,17 @@ struct ShakingCoolView: View {
                 //                    .multilineTextAlignment(.center)
                 //                    .frame(width: 385, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 
-                Spacer().frame(height: 15)
+               
                 
+                Text("Add 2 for youself & one for each friend that will cheer them up on a bad day.")
+                    .font(.system(size: 15))
+                    .fontWeight(.regular)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 375, height: 50, alignment: .center)
+               
+                Spacer().frame(height: 10)
+               
                 Text("You can add \(howManyLeft()) more image(s)")
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 20, weight: .thin))
@@ -99,7 +108,7 @@ struct ShakingCoolView: View {
                 .frame(height: 500)
                 
                 
-                Text("Tap image to delete/replace")
+                Text("(Tap image to delete/replace)")
                     .italic()
                     .font(.system(size: 20, weight: .thin))
                     .foregroundColor(.white)
