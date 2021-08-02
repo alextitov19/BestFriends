@@ -63,7 +63,7 @@ struct ShakingCoolView: View {
                 
                
                 
-                Text("Add 2 for youself & one for each friend that will cheer them up on a bad day.")
+                Text("Two are for you & one per friend that will bring a smile on bad days. Shake your phone on Homepage.")
                     .font(.system(size: 15))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
