@@ -37,6 +37,8 @@
 	<string>The location is converted to coordinates which are then converted to the name of the nearest city. The name of that city is stored in the database to allow us to get an idea of where the majority of the users are coming from. The actual coordinates are not stored in the database.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The location is converted to coordinates which are then converted to the name of the nearest city. The name of that city is stored in the database to allow us to get an idea of where the majority of the users are coming from. The actual coordinates are not stored in the database.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>$(PRODUCT_NAME) photo use.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -69,7 +71,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>$(PRODUCT_NAME) photo use.</string>
 </dict>
 </plist>
