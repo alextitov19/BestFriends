@@ -11,8 +11,8 @@ import Amplify
 struct UserDataSource {
     
     @EnvironmentObject var sessionManager: SessionManager
-
-        
+    
+    
     func getUser(id: String) -> User {
         var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: [1], deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, notificationsBroadcast: true, notificationsLP: true, chatFontSize: 16, needIntro: false)
         
@@ -27,7 +27,7 @@ struct UserDataSource {
                     guard let user = user else {
                         print("Could not find user")
                         print("failed 0 for id: \(id) and my id is: \(Amplify.Auth.getCurrentUser()?.username ?? "No username")")
-//                        SessionManager().showLogin()
+                        //                        SessionManager().showLogin()
                         return
                     }
                     print("Successfully retrieved user: \(user)")
@@ -53,7 +53,7 @@ struct UserDataSource {
         var finaluser = User(id: " ", firstName: " ", lastName: " ", email: " ", birthday: .now(), pronouns: " ", location: " ", adPreference: [1], deviceFCMToken: " ", isOnline: false, secretPin: "", friends: [], rooms: [], tokens: 0, background: 1, notificationsBroadcast: true, notificationsLP: true, chatFontSize: 16, needIntro: false)
         
         guard let id = Amplify.Auth.getCurrentUser()?.username else {
-//            SessionManager().showLogin()
+            //            SessionManager().showLogin()
             print("failed 1")
             return finaluser
         }
@@ -69,7 +69,7 @@ struct UserDataSource {
                     guard let user = user else {
                         print("Could not find user")
                         print("failed 2")
-//                        SessionManager().signOut()
+                        //                        SessionManager().signOut()
                         return
                     }
                     print("Successfully retrieved user: \(user)")

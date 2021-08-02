@@ -25,7 +25,7 @@ struct ChatView: View {
     @State var offset: CGFloat = 0
     @State var adButtonsOffset: CGFloat = -270
     @State private var isShakingCoolPresented = false
-
+    
     @State var areAdsHidden = true
     @State var currentAdIndex = 0
     @State var currentLink = ""
@@ -109,7 +109,7 @@ struct ChatView: View {
             //            Color(.blue)
             //                .ignoresSafeArea()
             
-                            
+            
             
             switch index {
             case -1:
@@ -170,7 +170,7 @@ struct ChatView: View {
                             print("Screen recording")
                             sendScreenCaptureNotification(video: true)
                         }
-                        
+                    
                     
                     //                    ZStack {
                     //                        if roomname == "" {
@@ -291,15 +291,15 @@ struct ChatView: View {
                     HStack { //footer
                         Button(action: {
                             let photos = PHPhotoLibrary.authorizationStatus()
-                                if photos == .notDetermined {
-                                    PHPhotoLibrary.requestAuthorization({status in
-                                        if status == .authorized{
-                                            showingImagePicker = true
-                                        } else {}
-                                    })
-                                } else {
-                                    showingImagePicker = true
-                                }
+                            if photos == .notDetermined {
+                                PHPhotoLibrary.requestAuthorization({status in
+                                    if status == .authorized{
+                                        showingImagePicker = true
+                                    } else {}
+                                })
+                            } else {
+                                showingImagePicker = true
+                            }
                         }) {
                             Image("camera")
                                 .resizable()
@@ -403,7 +403,7 @@ struct ChatView: View {
                 }
                 
                 Spacer().frame(height: 10)
-
+                
                 Text("Sample Ad")
                     .foregroundColor(.white)
             }
