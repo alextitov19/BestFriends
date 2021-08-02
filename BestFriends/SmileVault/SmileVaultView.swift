@@ -81,7 +81,7 @@ struct SmileVaultView: View {
                         .cornerRadius(30)
                         .onTapGesture {
                             selectedFriendID = "Favorites"
-                            selectedFriendName = "Favorties"
+                            selectedFriendName = "Favorites"
                             hidingFriendButtons = true
                             newSelection()
                         }
