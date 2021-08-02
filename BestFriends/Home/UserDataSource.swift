@@ -224,7 +224,13 @@ struct UserDataSource {
         let user = getCurrentUser()
         for id in user.rooms {
             let room = RoomDataSource().getRoom(id: id)
-            if room.members == memberids {
+            var counter = 0
+            for member in room.members {
+                if memberids.contains(member) {
+                    counter += 1
+                }
+            }
+            if counter == memberids.count {
                 return room.id
             }
         }
