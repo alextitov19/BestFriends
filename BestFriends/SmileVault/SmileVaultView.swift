@@ -107,7 +107,7 @@ struct SmileVaultView: View {
                 Spacer()
                 
                 ZStack {
-                    ForEach(displayedCards, id: \.smileNote.message.id) { card in
+                    ForEach(displayedCards, id: \.smileNote.id) { card in
                         card
                     }
                 }
