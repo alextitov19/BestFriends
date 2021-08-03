@@ -1311,8 +1311,7 @@ struct SignUpQuestionPage3: View {
                 .scaledToFill()
             
             VStack {
-                
-                Text("We just 'Ask' you're interests.")
+                Text("We just 'Ask' your interests.")
                     .font(.system(size: 50))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .frame(width: 400, height:150)
@@ -1324,7 +1323,6 @@ struct SignUpQuestionPage3: View {
                 Spacer()
                     .frame(height: 5)
                 
-                
                 VStack {
                     Button(action: {
                         updateArray(number: 1)
@@ -1335,9 +1333,7 @@ struct SignUpQuestionPage3: View {
                             .background(selectedOptions.contains(1) ? Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)) : Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
                             .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
                     }
-                    
                     
                     Spacer()
                         .frame(height: 30)

@@ -551,7 +551,7 @@ struct HomeView: View {
             let messageBody = "Members: " + room.name
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
-                if user.notificationsLP == true {
+                if user.notificationsLP == true && user.id != USS.user.id {
                     let token = user.deviceFCMToken
                     PushNotificationSender().sendPushNotification(token: token, title: "\(USS.user.firstName) needs to talk!", body: messageBody)
                 }
@@ -574,7 +574,7 @@ struct HomeView: View {
             let messageBody = "Members: " + room.name
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
-                if user.notificationsLP == true {
+                if user.notificationsLP == true && user.id != USS.user.id {
                     let token = user.deviceFCMToken
                     PushNotificationSender().sendPushNotification(token: token, title: "\(USS.user.firstName) needs to talk!", body: messageBody)
                 }
