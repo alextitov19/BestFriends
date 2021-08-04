@@ -18,5 +18,6 @@ target 'BestFriends' do
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Crashlytics'
 
 end

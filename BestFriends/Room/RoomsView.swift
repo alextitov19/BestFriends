@@ -30,6 +30,9 @@ struct RoomsView: View {
         
         dataSource.getRooms()
         print("Rooms: ", dataSource.rooms)
+//        print("Will crash here: \n\n\n\n")
+//        let numbers = [0]
+//        let _ = numbers[1]
     }
     
     var body: some View {
