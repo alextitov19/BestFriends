@@ -347,7 +347,7 @@ struct HomeView: View {
                     Text("There already is a chat room with all the friends you've selected. Do you want to use that one or make a new chat room?")
                         .foregroundColor(.white)
                         .font(.system(size: 22, weight: .bold))
-                        .frame(width: 300)
+                        .frame(width: 250)
                         .multilineTextAlignment(.center)
                         .padding(20)
                     
