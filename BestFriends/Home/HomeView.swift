@@ -35,6 +35,7 @@ struct HomeView: View {
     @State private var isAtMaxScale = false
     @State private var thereAlreadyisARoom = false
     @State private var existingRoomId = ""
+    @State private var cantAddMoreFriends = false
     
     private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
     
@@ -147,7 +148,11 @@ struct HomeView: View {
                         
                         Button(action: {
                             //Display invite menu
-                            self.showingActionSheet = true
+                            if USS.user.friends.count < 5 {
+                                self.showingActionSheet = true
+                            } else {
+                                cantAddMoreFriends = true
+                            }
                             
                         }) {
                             Image("person-add icon")
@@ -384,6 +389,12 @@ struct HomeView: View {
             
             if USS.user.needIntro {
                 IntroPopups()
+            }
+            
+            if cantAddMoreFriends {
+                Text("You can't add more than 5 friends")
+                    .font(.title)
+                    .foregroundColor(.red)
             }
             
             if loadingShowing == true {

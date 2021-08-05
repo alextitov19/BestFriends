@@ -439,6 +439,37 @@ struct SettingsView: View {
                         }
                         .navigationBarTitle("")
                         .navigationBarHidden(true)
+                        
+                        HStack {
+                            
+                            Image("home-alt2")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                                .onTapGesture {
+                                    sessionManager.getCurrentAuthUser()
+                                }
+                                .padding(20)
+                            
+                            Image("chat icon")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                                .onTapGesture {
+                                    sessionManager.showRooms()
+                                }
+                                .padding(20)
+                            
+                            Image("happy-face icon")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                                .onTapGesture {
+                                    sessionManager.showSmileNotes()
+                                }
+                                .padding(20)
+                            
+                        }
                     }
                     
                     HStack {
