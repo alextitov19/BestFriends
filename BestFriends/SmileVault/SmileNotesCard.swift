@@ -27,18 +27,18 @@ struct SmileNotesCard: View {
                     .font(.system(size: 30, weight: .semibold))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .multilineTextAlignment(.center)
-                    .frame(width: 330)
+                    .frame(width: 280)
                 
                 Spacer().frame(height: 20)
                 
                 Text("- " + smileNote.message.senderName)
                     .font(.system(size: 20, weight: .semibold))
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .frame(width: 330, alignment: .trailing)
+                    .frame(width: 280, alignment: .trailing)
                 
             }
         }
-        .frame(width: 350, height: 350, alignment: .center)
+        .frame(width: 300, height: 300, alignment: .center)
         .cornerRadius(50)
         .isHidden(hidden)
     }

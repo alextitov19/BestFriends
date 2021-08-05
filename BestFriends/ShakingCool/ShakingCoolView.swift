@@ -105,7 +105,7 @@ struct ShakingCoolView: View {
                         }
                     }
                 }
-                .frame(height: 500)
+                .frame(height: 350)
                 
                 
                 Text("Tap an image to delete it")

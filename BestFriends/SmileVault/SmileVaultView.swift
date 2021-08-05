@@ -25,9 +25,6 @@ struct SmileVaultView: View {
                 .scaledToFill()
             
             VStack {
-                Spacer()
-                    .frame(height: 40)
-                
                 Text("SmileVault")
                     .font(.system(size: 40))
                     .foregroundColor(.white)
@@ -105,6 +102,7 @@ struct SmileVaultView: View {
                 }
                 
                 Spacer()
+                    .frame(height: 20)
                 
                 ZStack {
                     ForEach(displayedCards, id: \.smileNote.id) { card in
@@ -116,7 +114,6 @@ struct SmileVaultView: View {
                     .frame(height: 20)
                 
                 HStack {
-                    
                     Text("Previous")
                         .frame(width: 150, height: 75, alignment: .center)
                         .background(Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)))
@@ -129,8 +126,6 @@ struct SmileVaultView: View {
                             }
                         }
                         .isHidden(index <= 0)
-                    
-                    
                     
                     Text("Next")
                         .frame(width: 150, height: 75, alignment: .center)
@@ -145,20 +140,12 @@ struct SmileVaultView: View {
                         }
                         .isHidden(index >= displayedCards.count - 1)
                         .fullScreenCover(isPresented: $isAdPresented, content: SmileVaultAdView.init)
-                    
                 }
                 
                 Spacer()
-                                
-                
-            }
-            
-            
-            VStack {
-                Spacer()
-                
+                    .frame(height: 20)
+                           
                 HStack {
-                    
                     Image("home-alt2")
                         .resizable()
                         .frame(width: 40, height: 40)
@@ -171,7 +158,6 @@ struct SmileVaultView: View {
                             }
                         }
                         .padding(20)
-                    
                     
                     Image("chat icon")
                         .resizable()
@@ -186,8 +172,6 @@ struct SmileVaultView: View {
                         }
                         .padding(20)
                     
-                    
-                    
                     Image("settings icon")
                         .resizable()
                         .frame(width: 40, height: 40)
@@ -200,9 +184,6 @@ struct SmileVaultView: View {
                             }
                         }
                         .padding(20)
-                    
-                    
-                    
                 }
             }
         }
