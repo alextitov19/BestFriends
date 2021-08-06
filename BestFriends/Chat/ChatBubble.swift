@@ -104,6 +104,10 @@ struct ChatBubble: View {
                             .onTapGesture {
                                 isImagePresented.toggle()
                             }
+                            .gesture(LongPressGesture(minimumDuration: 1)
+                                        .onEnded { _ in
+                                            showingActionSheet = true
+                                        })
                             .sheet(isPresented: $isImagePresented) {
                                 FullScreenChatImage(link: message.attachmentPath!)
                                     

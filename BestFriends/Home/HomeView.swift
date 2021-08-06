@@ -575,13 +575,6 @@ struct HomeView: View {
     private func inviteOldRoom(roomid: String) {
         if membersOfNewRoom != [] {
             let room = RoomDataSource().getRoom(id: roomid)
-            for id in room.members {
-                var user = userDataSource.getUser(id: id)
-                if id != room.creatorID {
-                    user.invitedRooms.append(InvitedRoom(roomID: room.id))
-                }
-                userDataSource.updateUser(user: user)
-            }
             let messageBody = "Members: " + room.name
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
