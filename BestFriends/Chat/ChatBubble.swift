@@ -16,7 +16,9 @@ struct ChatBubble: View {
     @State private var showingActionSheet = false
     @State private var isImagePresented = false
     @State private var currentLink = ""
-    
+    @State private var backgroundColor1 = Color(.purple)
+    @State private var backgroundColor2 = Color(#colorLiteral(red: 1, green: 0.6660452485, blue: 0, alpha: 1))
+
     init(msg: Message, messageDS: MessageDataSource, myuser: User) {
         message = msg
         messageDataSource = messageDS
@@ -38,7 +40,7 @@ struct ChatBubble: View {
                             .multilineTextAlignment(.leading)
                             .font(.system(size: CGFloat(user.chatFontSize)).weight(.light))
                             .foregroundColor(.white)
-                            .background(Color(#colorLiteral(red: 1, green: 0.6660452485, blue: 0, alpha: 1)))
+                            .background(backgroundColor2)
                             .cornerRadius(15)
                             .onTapGesture {
                                 isImagePresented.toggle()
@@ -58,7 +60,7 @@ struct ChatBubble: View {
                             .multilineTextAlignment(.leading)
                             .font(.system(size: CGFloat(user.chatFontSize)).weight(.light))
                             .foregroundColor(.white)
-                            .background(Color(.purple))
+                            .background(backgroundColor1)
                             .cornerRadius(15)
                             .gesture(LongPressGesture(minimumDuration: 1)
                                         .onEnded { _ in
@@ -99,7 +101,7 @@ struct ChatBubble: View {
                             .multilineTextAlignment(.leading)
                             .font(.system(size: CGFloat(user.chatFontSize)).weight(.light))
                             .foregroundColor(.white)
-                            .background(Color(#colorLiteral(red: 1, green: 0.6660452485, blue: 0, alpha: 1)))
+                            .background(backgroundColor2)
                             .cornerRadius(15)
                             .onTapGesture {
                                 isImagePresented.toggle()
@@ -124,7 +126,7 @@ struct ChatBubble: View {
                             .multilineTextAlignment(.leading)
                             .font(.system(size: CGFloat(user.chatFontSize)).weight(.light))
                             .foregroundColor(.white)
-                            .background(Color(.purple))
+                            .background(backgroundColor1)
                             .cornerRadius(15)
                             .gesture(LongPressGesture(minimumDuration: 1)
                                         .onEnded { _ in
@@ -142,6 +144,8 @@ struct ChatBubble: View {
                     },
                     .default(Text("Report as abusive")) {
                         messageDataSource.reportMessage(message: message)
+                        backgroundColor1 = .red
+                        backgroundColor2 = .red
                     },
                     .cancel()
                 ])

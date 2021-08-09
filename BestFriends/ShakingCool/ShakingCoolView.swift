@@ -112,22 +112,23 @@ struct ShakingCoolView: View {
                     .italic()
                     .font(.system(size: 20, weight: .thin))
                     .foregroundColor(.white)
-                
-                Text("Add Image")
-                    .frame(width: 150, height: 50, alignment: .center)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.title)
-                    .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
-                    .cornerRadius(25)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    .onTapGesture {
-                        choosingRecipient.toggle()
-                    }
-                    .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                        ImagePicker(image: self.$inputImage)
-                    }
-                    .fullScreenCover(isPresented: $isAdPresented, content: ShakingCoolAdView.init)
-                    .padding()
+                if availableIDs.count > 0 {
+                    Text("Add Image")
+                        .frame(width: 150, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.title)
+                        .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+                        .cornerRadius(25)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        .onTapGesture {
+                            choosingRecipient.toggle()
+                        }
+                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                            ImagePicker(image: self.$inputImage)
+                        }
+                        .fullScreenCover(isPresented: $isAdPresented, content: ShakingCoolAdView.init)
+                        .padding()
+                }
                 
                 Text("Return")
                     .frame(width: 150, height: 50, alignment: .center)
