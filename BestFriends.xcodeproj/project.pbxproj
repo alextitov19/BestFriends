@@ -101,6 +101,7 @@
 		7AF35CB22699E9E500A396CE /* BlueModeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF35CB12699E9E500A396CE /* BlueModeDataSource.swift */; };
 		7AF35CB42699EB6700A396CE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF35CB32699EB6700A396CE /* Helper.swift */; };
 		7AF686F126BC86C900A287C2 /* Settings2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F026BC86C900A287C2 /* Settings2View.swift */; };
+		7AF686F326C1C21700A287C2 /* SettingsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F226C1C21700A287C2 /* SettingsInfoView.swift */; };
 		7AF6973F2630EE1900CF49CC /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6973E2630EE1900CF49CC /* Star.swift */; };
 		CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */; };
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
@@ -292,6 +293,7 @@
 		7AF35CB12699E9E500A396CE /* BlueModeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeDataSource.swift; sourceTree = "<group>"; };
 		7AF35CB32699EB6700A396CE /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7AF686F026BC86C900A287C2 /* Settings2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings2View.swift; sourceTree = "<group>"; };
+		7AF686F226C1C21700A287C2 /* SettingsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInfoView.swift; sourceTree = "<group>"; };
 		7AF6973E2630EE1900CF49CC /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E7FB9591EF8D5B8152D3CB /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
@@ -670,6 +672,7 @@
 			isa = PBXGroup;
 			children = (
 				7AF686F026BC86C900A287C2 /* Settings2View.swift */,
+				7AF686F226C1C21700A287C2 /* SettingsInfoView.swift */,
 			);
 			path = Settings2;
 			sourceTree = "<group>";
@@ -989,6 +992,7 @@
 				7AAB444A265C619A00488983 /* ShakingCoolView.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				7A5EFED826B4A2EC00281DDD /* Message+Schema.swift in Sources */,
+				7AF686F326C1C21700A287C2 /* SettingsInfoView.swift in Sources */,
 				7AD25A1326AF913200396CF2 /* amplify/generated/models/InvitedRoom+Schema.swift in Sources */,
 				D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */,
 				D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */,
