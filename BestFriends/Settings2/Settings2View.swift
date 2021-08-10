@@ -26,21 +26,23 @@ struct Settings2View: View {
                 // First name
                 Text(user.firstName)
                     .font(.system(size: 40, weight: .bold))
+                    .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
                     .padding(.leading, 10)
                 
                 // Email
                 Text(user.email)
                     .font(.system(size: 24, weight: .regular))
-                    .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
                     .padding(.leading, 10)
                 
                 // Overlay of the 3 into rectangle things
-                ZStack {
-                    RoundedRectangle(cornerRadius: 20)
-                        .frame(maxWidth: .infinity, maxHeight: 175)
-                        .foregroundColor(Color(#colorLiteral(red: 0.4067053795, green: 0.1521126628, blue: 1, alpha: 1)))
-                        .padding(10)
-                }
+                Text("Engagement")
+                    .font(.system(size: 20, weight: .bold))
+                    .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
+                    .offset(x: 10, y: 10)
+                
+                
+                SettingsInfoView(index: 1)
                 
                 // List of all the diffrent menu items
                 VStack {
@@ -212,5 +214,13 @@ struct Settings2View: View {
             }
             .frame(maxWidth: .infinity)
         }
+    }
+}
+
+
+struct Settings2ViewPreview : PreviewProvider {
+    static var previews: some View {
+        Settings2View()
+            .environmentObject(SessionManager())
     }
 }
