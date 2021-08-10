@@ -27,7 +27,7 @@ struct SettingsEngagementView: View {
                     .offset(x: 0, y: 35) //offset image itself, not the frame. AKA move it down/up but same coordinates
                     .frame(width: 200, height: 175, alignment: .center)
                     .clipped()
-                    .offset(x: 90, y: -2) // move the frame around
+                    .offset(x: 90, y: 0) // move the frame around
                 
                 VStack(alignment: .leading) {
                     Text("5 min")
@@ -79,7 +79,7 @@ struct SettingsEngagementView: View {
                     .offset(x: 0, y: 45) //offset image itself, not the frame. AKA move it down/up but same coordinates
                     .frame(width: 175, height: 175, alignment: .center)
                     .clipped()
-                    .offset(x: 70, y: -2) // move the frame around
+                    .offset(x: 70, y: 0) // move the frame around
                 
                 VStack(alignment: .leading) {
                     Text("5 min")
@@ -129,7 +129,7 @@ struct SettingsEngagementView: View {
                     .offset(x: 0, y: 40) //offset image itself, not the frame. AKA move it down/up but same coordinates
                     .frame(width: 110, height: 175, alignment: .center)
                     .clipped()
-                    .offset(x: 90, y: -2) // move the frame around
+                    .offset(x: 90, y: 0) // move the frame around
                 
                 VStack(alignment: .leading) {
                     Text("5 min")
