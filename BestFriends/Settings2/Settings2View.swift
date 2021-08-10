@@ -23,204 +23,226 @@ struct Settings2View: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                // Allows the VStack to be full screen width-wise
-                Spacer().frame(maxWidth: .infinity, maxHeight: .zero)
-                // First name
-                Text(user.firstName)
-                    .font(.system(size: 40, weight: .bold))
-                    .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
-                    .padding(.leading, 10)
+            ZStack {
+                Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+                    .ignoresSafeArea()
                 
-                // Email
-                Text(user.email)
-                    .font(.system(size: 24, weight: .regular))
-                    .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
-                    .padding(.leading, 10)
-                
-                // Overlay of the 3 into rectangle things
-                Text("Engagement")
-                    .font(.system(size: 20, weight: .bold))
-                    .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
-                    .offset(x: 10, y: 10)
-                
-                
-                SettingsInfoView(index: engagementIndex)
-                
-                // List of all the diffrent menu items
                 VStack {
-                    VStack {
-                        HStack {
-                            Image("home-alt2")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                                .scaledToFit()
-                                .colorInvert()
-                                .onReceive(timer) { time in
-                                    cycleEngagement()
+                    ScrollView {
+                        VStack(alignment: .leading) {
+                            // Allows the VStack to be full screen width-wise
+                            Spacer().frame(maxWidth: .infinity, maxHeight: .zero)
+                            // First name
+                            Text(user.firstName)
+                                .font(.system(size: 42, weight: .bold))
+                                .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
+                                .padding(.leading, 10)
+                            
+                            // Email
+                            Text(user.email)
+                                .font(.system(size: 18, weight: .regular))
+                                .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
+                                .padding(.leading, 10)
+                            
+                            // The main functionality of the app
+                            Text("Functions")
+                                .font(.system(size: 20, weight: .bold))
+                                .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
+                                .offset(x: 10, y: 10)
+                            
+                            SettingsFunctionView()
+                            
+                            // Overlay of the 3 into rectangle things
+                            Text("Engagement")
+                                .font(.system(size: 20, weight: .bold))
+                                .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
+                                .offset(x: 10, y: 10)
+                            
+                            
+                            SettingsEngagementView(index: engagementIndex)
+                            
+                            // List of all the diffrent menu items
+                            VStack {
+                                VStack {
+                                    HStack {
+                                        Image("home-alt2")
+                                            .resizable()
+                                            .frame(width: 30, height: 30)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                            .onReceive(timer) { time in
+                                                cycleEngagement()
+                                            }
+                                        
+                                        Text("Some item")
+                                            .font(.system(size: 20))
+                                        
+                                        Spacer().frame(maxHeight: 0)
+                                        
+                                        Image("arrowRight")
+                                            .resizable()
+                                            .frame(width: 25, height: 25)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                    }
+                                    
+                                    Divider()
+                                    
+                                    HStack {
+                                        Image("home-alt2")
+                                            .resizable()
+                                            .frame(width: 30, height: 30)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                        
+                                        Text("Some item")
+                                            .font(.system(size: 20))
+                                        
+                                        Spacer().frame(maxHeight: 0)
+                                        
+                                        Image("arrowRight")
+                                            .resizable()
+                                            .frame(width: 25, height: 25)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                    }
+                                    
+                                    Divider()
+                                    
+                                    HStack {
+                                        Image("home-alt2")
+                                            .resizable()
+                                            .frame(width: 30, height: 30)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                        
+                                        Text("Some item")
+                                            .font(.system(size: 20))
+                                        
+                                        Spacer().frame(maxHeight: 0)
+                                        
+                                        Image("arrowRight")
+                                            .resizable()
+                                            .frame(width: 25, height: 25)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                    }
+                                    
+                                    Divider()
                                 }
-                            
-                            Text("Some item")
-                                .font(.system(size: 20))
-                            
-                            Spacer().frame(maxHeight: 0)
-                            
-                            Image("arrowRight")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .scaledToFit()
-                                .colorInvert()
-                        }
-                        
-                        Divider()
-                        
-                        HStack {
-                            Image("home-alt2")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                                .scaledToFit()
-                                .colorInvert()
-                            
-                            Text("Some item")
-                                .font(.system(size: 20))
-                            
-                            Spacer().frame(maxHeight: 0)
-                            
-                            Image("arrowRight")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .scaledToFit()
-                                .colorInvert()
-                        }
-                        
-                        Divider()
-                        
-                        HStack {
-                            Image("home-alt2")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                                .scaledToFit()
-                                .colorInvert()
-                            
-                            Text("Some item")
-                                .font(.system(size: 20))
-                            
-                            Spacer().frame(maxHeight: 0)
-                            
-                            Image("arrowRight")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .scaledToFit()
-                                .colorInvert()
-                        }
-                        
-                        Divider()
-                    }
-                    
-                    VStack {
-                        HStack {
-                            Image("home-alt2")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                                .scaledToFit()
-                                .colorInvert()
-                                .onAppear { cycleEngagement()
+                                
+                                VStack {
+                                    HStack {
+                                        Image("home-alt2")
+                                            .resizable()
+                                            .frame(width: 30, height: 30)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                            .onAppear { cycleEngagement()
+                                            }
+                                        
+                                        Text("Some item")
+                                            .font(.system(size: 20))
+                                        
+                                        Spacer().frame(maxHeight: 0)
+                                        
+                                        Image("arrowRight")
+                                            .resizable()
+                                            .frame(width: 25, height: 25)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                    }
+                                    
+                                    Divider()
+                                    
+                                    HStack {
+                                        Image("home-alt2")
+                                            .resizable()
+                                            .frame(width: 30, height: 30)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                        
+                                        Text("Some item")
+                                            .font(.system(size: 20))
+                                        
+                                        Spacer().frame(maxHeight: 0)
+                                        
+                                        Image("arrowRight")
+                                            .resizable()
+                                            .frame(width: 25, height: 25)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                    }
+                                    
+                                    Divider()
+                                    
+                                    HStack {
+                                        Image("home-alt2")
+                                            .resizable()
+                                            .frame(width: 30, height: 30)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                        
+                                        Text("Some item")
+                                            .font(.system(size: 20))
+                                        
+                                        Spacer().frame(maxHeight: 0)
+                                        
+                                        Image("arrowRight")
+                                            .resizable()
+                                            .frame(width: 25, height: 25)
+                                            .scaledToFit()
+                                            .colorInvert()
+                                    }
                                 }
+                            }
+                            .padding(10)
                             
-                            Text("Some item")
-                                .font(.system(size: 20))
+                            Spacer()
                             
-                            Spacer().frame(maxHeight: 0)
-                            
-                            Image("arrowRight")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .scaledToFit()
-                                .colorInvert()
                         }
                         
-                        Divider()
                         
-                        HStack {
-                            Image("home-alt2")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                                .scaledToFit()
-                                .colorInvert()
-                            
-                            Text("Some item")
-                                .font(.system(size: 20))
-                            
-                            Spacer().frame(maxHeight: 0)
-                            
-                            Image("arrowRight")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .scaledToFit()
-                                .colorInvert()
-                        }
-                        
-                        Divider()
-                        
-                        HStack {
-                            Image("home-alt2")
-                                .resizable()
-                                .frame(width: 30, height: 30)
-                                .scaledToFit()
-                                .colorInvert()
-                            
-                            Text("Some item")
-                                .font(.system(size: 20))
-                            
-                            Spacer().frame(maxHeight: 0)
-                            
-                            Image("arrowRight")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .scaledToFit()
-                                .colorInvert()
-                        }
                     }
-                }
-                .padding(10)
-                
-                Spacer()
-                
-                // Bottom navigation icons
-                HStack() {
-                    Image("home-alt2")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            sessionManager.getCurrentAuthUser()
-                        }
-                        .padding(20)
-                        .colorInvert()
+                    .frame(maxWidth: .infinity)
+                    .navigationBarTitle(Text(""))
+                    .navigationBarHidden(true)
                     
-                    Image("chat icon")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            sessionManager.showRooms()
-                        }
-                        .padding(20)
-                        .colorInvert()
-                    
-                    Image("happy-face icon")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            sessionManager.showSmileNotes()
-                        }
-                        .padding(20)
-                        .colorInvert()
+                    // Bottom navigation icons
+                    HStack() {
+                        Image("home-alt2")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.getCurrentAuthUser()
+                            }
+                            .padding(20)
+                            .colorInvert()
+                        
+                        Image("chat icon")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showRooms()
+                            }
+                            .padding(20)
+                            .colorInvert()
+                        
+                        Image("happy-face icon")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .scaledToFill()
+                            .onTapGesture {
+                                sessionManager.showSmileNotes()
+                            }
+                            .padding(20)
+                            .colorInvert()
+                    }
+                    .frame(maxWidth: .infinity)
                 }
-                .frame(maxWidth: .infinity)
             }
-            .frame(maxWidth: .infinity)
         }
     }
     

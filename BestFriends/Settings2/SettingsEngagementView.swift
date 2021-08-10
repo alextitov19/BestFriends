@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SettingsInfoView: View {
+struct SettingsEngagementView: View {
     
     var index: Int
     
@@ -16,7 +16,8 @@ struct SettingsInfoView: View {
         case 1:
             ZStack {
                 RoundedRectangle(cornerRadius: 25) //Rectangle background
-                    .frame(maxWidth: .infinity, maxHeight: 175)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 175)
                     .foregroundColor(Color(#colorLiteral(red: 0.3744983077, green: 0.122321032, blue: 1, alpha: 1)))
                     .padding(10)
                 
@@ -67,7 +68,8 @@ struct SettingsInfoView: View {
         case 2:
             ZStack {
                 RoundedRectangle(cornerRadius: 25) //Rectangle background
-                    .frame(maxWidth: .infinity, maxHeight: 175)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 175)
                     .foregroundColor(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
                     .padding(10)
                 
@@ -116,7 +118,8 @@ struct SettingsInfoView: View {
         case 3:
             ZStack {
                 RoundedRectangle(cornerRadius: 25) //Rectangle background
-                    .frame(maxWidth: .infinity, maxHeight: 175)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 175)
                     .foregroundColor(Color(#colorLiteral(red: 0.7442547679, green: 0.6245918274, blue: 0.9848899245, alpha: 1)))
                     .padding(10)
                 
@@ -172,8 +175,8 @@ struct SettingsInfoView: View {
     
 }
 
-struct SettingsInfoViewPreview : PreviewProvider {
+struct SettingsEngagementViewPreview : PreviewProvider {
     static var previews: some View {
-        SettingsInfoView(index: 3)
+        SettingsEngagementView(index: 3)
     }
 }
