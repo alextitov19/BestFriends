@@ -24,7 +24,7 @@ struct Settings2View: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1))
+                Color(#colorLiteral(red: 0.8967117667, green: 0.8913813233, blue: 0.9008091688, alpha: 1))
                     .ignoresSafeArea()
                 
                 VStack {
