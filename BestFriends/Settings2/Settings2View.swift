@@ -62,141 +62,174 @@ struct Settings2View: View {
                             SettingsEngagementView(index: engagementIndex)
                             
                             // List of all the diffrent menu items
+                            Text("Settings")
+                                .font(.system(size: 20, weight: .bold))
+                                .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
+                                .offset(x: 10, y: 0)
+                            
                             VStack {
                                 VStack {
-                                    HStack {
-                                        Image("home-alt2")
-                                            .resizable()
-                                            .frame(width: 30, height: 30)
-                                            .scaledToFit()
-                                            .colorInvert()
-                                            .onReceive(timer) { time in
-                                                cycleEngagement()
-                                            }
+                                    VStack {
+                                        HStack {
+                                            Image("home-alt2")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                                .onReceive(timer) { time in
+                                                    cycleEngagement()
+                                                }
+                                            
+                                            Text("My Account")
+                                                .font(.system(size: 20))
+                                            
+                                            Spacer().frame(maxHeight: 0)
+                                            
+                                            Image("arrowRight")
+                                                .resizable()
+                                                .frame(width: 25, height: 25)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                        }
                                         
-                                        Text("Some item")
-                                            .font(.system(size: 20))
+                                        Divider()
                                         
-                                        Spacer().frame(maxHeight: 0)
+                                        HStack {
+                                            Image("home-alt2")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                            
+                                            Text("Notifications")
+                                                .font(.system(size: 20))
+                                            
+                                            Spacer().frame(maxHeight: 0)
+                                            
+                                            Image("arrowRight")
+                                                .resizable()
+                                                .frame(width: 25, height: 25)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                        }
                                         
-                                        Image("arrowRight")
-                                            .resizable()
-                                            .frame(width: 25, height: 25)
-                                            .scaledToFit()
-                                            .colorInvert()
+                                        Divider()
+                                        
+                                        HStack {
+                                            Image("home-alt2")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                            
+                                            Text("Customization")
+                                                .font(.system(size: 20))
+                                            
+                                            Spacer().frame(maxHeight: 0)
+                                            
+                                            Image("arrowRight")
+                                                .resizable()
+                                                .frame(width: 25, height: 25)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                        }
+                                        
+                                        Divider()
                                     }
                                     
-                                    Divider()
-                                    
-                                    HStack {
-                                        Image("home-alt2")
-                                            .resizable()
-                                            .frame(width: 30, height: 30)
-                                            .scaledToFit()
-                                            .colorInvert()
+                                    VStack {
+                                        HStack {
+                                            Image("home-alt2")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                                .onAppear { cycleEngagement()
+                                                }
+                                            
+                                            Text("Help & Support")
+                                                .font(.system(size: 20))
+                                            
+                                            Spacer().frame(maxHeight: 0)
+                                            
+                                            Image("arrowRight")
+                                                .resizable()
+                                                .frame(width: 25, height: 25)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                        }
                                         
-                                        Text("Some item")
-                                            .font(.system(size: 20))
+                                        Divider()
                                         
-                                        Spacer().frame(maxHeight: 0)
+                                        HStack {
+                                            Image("home-alt2")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                            
+                                            Text("Terms & Conditions")
+                                                .font(.system(size: 20))
+                                            
+                                            Spacer().frame(maxHeight: 0)
+                                            
+                                            Image("arrowRight")
+                                                .resizable()
+                                                .frame(width: 25, height: 25)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                        }
                                         
-                                        Image("arrowRight")
-                                            .resizable()
-                                            .frame(width: 25, height: 25)
-                                            .scaledToFit()
-                                            .colorInvert()
+                                        Divider()
+                                        
+                                        HStack {
+                                            Image("home-alt2")
+                                                .resizable()
+                                                .frame(width: 30, height: 30)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                            
+                                            Text("Report Abuse")
+                                                .font(.system(size: 20))
+                                            
+                                            Spacer().frame(maxHeight: 0)
+                                            
+                                            Image("arrowRight")
+                                                .resizable()
+                                                .frame(width: 25, height: 25)
+                                                .scaledToFit()
+                                                .colorInvert()
+                                        }
+                                        
+                                        Divider()
+                                        
+                                        HStack {
+                                            Image("home-alt2")
+                                                .renderingMode(.template)
+                                                .resizable()
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
+                                                .frame(width: 30, height: 30)
+                                            
+                                            Text("Sign Out")
+                                                .font(.system(size: 20))
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
+                                            
+                                            Spacer().frame(maxHeight: 0)
+                                            
+                                            Image("arrowRight")
+                                                .renderingMode(.template)
+                                                .resizable()
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
+                                                .frame(width: 25, height: 25)
+                                        }
                                     }
-                                    
-                                    Divider()
-                                    
-                                    HStack {
-                                        Image("home-alt2")
-                                            .resizable()
-                                            .frame(width: 30, height: 30)
-                                            .scaledToFit()
-                                            .colorInvert()
-                                        
-                                        Text("Some item")
-                                            .font(.system(size: 20))
-                                        
-                                        Spacer().frame(maxHeight: 0)
-                                        
-                                        Image("arrowRight")
-                                            .resizable()
-                                            .frame(width: 25, height: 25)
-                                            .scaledToFit()
-                                            .colorInvert()
-                                    }
-                                    
-                                    Divider()
                                 }
-                                
-                                VStack {
-                                    HStack {
-                                        Image("home-alt2")
-                                            .resizable()
-                                            .frame(width: 30, height: 30)
-                                            .scaledToFit()
-                                            .colorInvert()
-                                            .onAppear { cycleEngagement()
-                                            }
-                                        
-                                        Text("Some item")
-                                            .font(.system(size: 20))
-                                        
-                                        Spacer().frame(maxHeight: 0)
-                                        
-                                        Image("arrowRight")
-                                            .resizable()
-                                            .frame(width: 25, height: 25)
-                                            .scaledToFit()
-                                            .colorInvert()
-                                    }
-                                    
-                                    Divider()
-                                    
-                                    HStack {
-                                        Image("home-alt2")
-                                            .resizable()
-                                            .frame(width: 30, height: 30)
-                                            .scaledToFit()
-                                            .colorInvert()
-                                        
-                                        Text("Some item")
-                                            .font(.system(size: 20))
-                                        
-                                        Spacer().frame(maxHeight: 0)
-                                        
-                                        Image("arrowRight")
-                                            .resizable()
-                                            .frame(width: 25, height: 25)
-                                            .scaledToFit()
-                                            .colorInvert()
-                                    }
-                                    
-                                    Divider()
-                                    
-                                    HStack {
-                                        Image("home-alt2")
-                                            .resizable()
-                                            .frame(width: 30, height: 30)
-                                            .scaledToFit()
-                                            .colorInvert()
-                                        
-                                        Text("Some item")
-                                            .font(.system(size: 20))
-                                        
-                                        Spacer().frame(maxHeight: 0)
-                                        
-                                        Image("arrowRight")
-                                            .resizable()
-                                            .frame(width: 25, height: 25)
-                                            .scaledToFit()
-                                            .colorInvert()
-                                    }
-                                }
+                                .padding()
                             }
-                            .padding(10)
+                            .background(Color(.white))
+                            .cornerRadius(25)
+                            .padding(.leading, 12)
+                            .padding(.trailing, 12)
                             
                             Spacer()
                             

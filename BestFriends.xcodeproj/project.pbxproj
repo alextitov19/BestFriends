@@ -103,6 +103,7 @@
 		7AF686F126BC86C900A287C2 /* Settings2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F026BC86C900A287C2 /* Settings2View.swift */; };
 		7AF686F326C1C21700A287C2 /* SettingsEngagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F226C1C21700A287C2 /* SettingsEngagementView.swift */; };
 		7AF686F526C2BFBE00A287C2 /* SettingsFunctionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F426C2BFBE00A287C2 /* SettingsFunctionView.swift */; };
+		7AF686F726C32A9A00A287C2 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F626C32A9A00A287C2 /* MyAccountView.swift */; };
 		7AF6973F2630EE1900CF49CC /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6973E2630EE1900CF49CC /* Star.swift */; };
 		CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */; };
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
@@ -296,6 +297,7 @@
 		7AF686F026BC86C900A287C2 /* Settings2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings2View.swift; sourceTree = "<group>"; };
 		7AF686F226C1C21700A287C2 /* SettingsEngagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEngagementView.swift; sourceTree = "<group>"; };
 		7AF686F426C2BFBE00A287C2 /* SettingsFunctionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFunctionView.swift; sourceTree = "<group>"; };
+		7AF686F626C32A9A00A287C2 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		7AF6973E2630EE1900CF49CC /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E7FB9591EF8D5B8152D3CB /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
@@ -676,6 +678,7 @@
 				7AF686F026BC86C900A287C2 /* Settings2View.swift */,
 				7AF686F226C1C21700A287C2 /* SettingsEngagementView.swift */,
 				7AF686F426C2BFBE00A287C2 /* SettingsFunctionView.swift */,
+				7AF686F626C32A9A00A287C2 /* MyAccountView.swift */,
 			);
 			path = Settings2;
 			sourceTree = "<group>";
@@ -993,6 +996,7 @@
 				7AD25A0C26AF913200396CF2 /* amplify/generated/models/Advertisement+Schema.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
 				7AAB444A265C619A00488983 /* ShakingCoolView.swift in Sources */,
+				7AF686F726C32A9A00A287C2 /* MyAccountView.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				7A5EFED826B4A2EC00281DDD /* Message+Schema.swift in Sources */,
 				7AF686F326C1C21700A287C2 /* SettingsEngagementView.swift in Sources */,
