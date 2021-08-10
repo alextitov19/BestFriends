@@ -13,6 +13,9 @@ struct Settings2View: View {
     
     private let userDS = UserDataSource()
     private let user: User
+    private let timer = Timer.publish(every: 20, on: .main, in: .common).autoconnect()
+    
+    @State private var engagementIndex = 1
     
     init() {
         user = userDS.getCurrentUser()
@@ -42,7 +45,7 @@ struct Settings2View: View {
                     .offset(x: 10, y: 10)
                 
                 
-                SettingsInfoView(index: 1)
+                SettingsInfoView(index: engagementIndex)
                 
                 // List of all the diffrent menu items
                 VStack {
@@ -53,6 +56,9 @@ struct Settings2View: View {
                                 .frame(width: 30, height: 30)
                                 .scaledToFit()
                                 .colorInvert()
+                                .onReceive(timer) { time in
+                                    cycleEngagement()
+                                }
                             
                             Text("Some item")
                                 .font(.system(size: 20))
@@ -118,6 +124,8 @@ struct Settings2View: View {
                                 .frame(width: 30, height: 30)
                                 .scaledToFit()
                                 .colorInvert()
+                                .onAppear { cycleEngagement()
+                                }
                             
                             Text("Some item")
                                 .font(.system(size: 20))
@@ -199,7 +207,7 @@ struct Settings2View: View {
                         }
                         .padding(20)
                         .colorInvert()
-
+                    
                     Image("happy-face icon")
                         .resizable()
                         .frame(width: 40, height: 40)
@@ -214,6 +222,13 @@ struct Settings2View: View {
             }
             .frame(maxWidth: .infinity)
         }
+    }
+    
+    private func cycleEngagement() {
+        engagementIndex = 1
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) { engagementIndex = 2 }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) { engagementIndex = 3 }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 15) { engagementIndex = 2 }
     }
 }
 
