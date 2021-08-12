@@ -289,6 +289,9 @@ struct HomeView: View {
                                 stars[index].hidingName = true
                             }
                             membersOfNewRoom.append(USS.user.id)
+                            
+                            membersOfNewRoom = membersOfNewRoom.uniqued()
+                            
                             let roomid = userDataSource.checkIfRoomExists(memberids: membersOfNewRoom)
                             if roomid.count > 0 {
                                 existingRoomId = roomid
@@ -541,10 +544,7 @@ struct HomeView: View {
     
     private func inviteNewRoom() {
         if membersOfNewRoom != [] {
-            
-            
-            
-            
+            membersOfNewRoom = membersOfNewRoom.uniqued()
             var name = ""
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
@@ -574,6 +574,7 @@ struct HomeView: View {
     
     private func inviteOldRoom(roomid: String) {
         if membersOfNewRoom != [] {
+            membersOfNewRoom = membersOfNewRoom.uniqued()
             let room = RoomDataSource().getRoom(id: roomid)
             let messageBody = "Members: " + room.name
             for id in membersOfNewRoom {
