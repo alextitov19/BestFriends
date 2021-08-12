@@ -165,68 +165,90 @@ struct Settings2View: View {
                                     }
                                     
                                     VStack {
-                                        HStack {
-                                            Image("home-alt2")
-                                                .resizable()
-                                                .frame(width: 30, height: 30)
-                                                .scaledToFit()
-                                                .colorInvert()
-                                                .onAppear { cycleEngagement()
+                                        NavigationLink(
+                                            destination: HelpSupportView(),
+                                            label: {
+                                                HStack {
+                                                    Image("home-alt2")
+                                                        .resizable()
+                                                        .frame(width: 30, height: 30)
+                                                        .scaledToFit()
+                                                        .colorInvert()
+                                                        .onReceive(timer) { time in
+                                                            cycleEngagement()
+                                                        }
+                                                    
+                                                    Text("Help & Support")
+                                                        .font(.system(size: 20))
+                                                        .foregroundColor(.black)
+                                                    
+                                                    Spacer().frame(maxHeight: 0)
+                                                    
+                                                    Image("arrowRight")
+                                                        .resizable()
+                                                        .frame(width: 25, height: 25)
+                                                        .scaledToFit()
+                                                        .colorInvert()
                                                 }
-                                            
-                                            Text("Help & Support")
-                                                .font(.system(size: 20))
-                                            
-                                            Spacer().frame(maxHeight: 0)
-                                            
-                                            Image("arrowRight")
-                                                .resizable()
-                                                .frame(width: 25, height: 25)
-                                                .scaledToFit()
-                                                .colorInvert()
-                                        }
+                                            })
                                         
                                         Divider()
                                         
-                                        HStack {
-                                            Image("home-alt2")
-                                                .resizable()
-                                                .frame(width: 30, height: 30)
-                                                .scaledToFit()
-                                                .colorInvert()
-                                            
-                                            Text("Terms & Conditions")
-                                                .font(.system(size: 20))
-                                            
-                                            Spacer().frame(maxHeight: 0)
-                                            
-                                            Image("arrowRight")
-                                                .resizable()
-                                                .frame(width: 25, height: 25)
-                                                .scaledToFit()
-                                                .colorInvert()
-                                        }
+                                        NavigationLink(
+                                            destination: TermsConditionsView(),
+                                            label: {
+                                                HStack {
+                                                    Image("home-alt2")
+                                                        .resizable()
+                                                        .frame(width: 30, height: 30)
+                                                        .scaledToFit()
+                                                        .colorInvert()
+                                                        .onReceive(timer) { time in
+                                                            cycleEngagement()
+                                                        }
+                                                    
+                                                    Text("Terms & Conditions")
+                                                        .font(.system(size: 20))
+                                                        .foregroundColor(.black)
+                                                    
+                                                    Spacer().frame(maxHeight: 0)
+                                                    
+                                                    Image("arrowRight")
+                                                        .resizable()
+                                                        .frame(width: 25, height: 25)
+                                                        .scaledToFit()
+                                                        .colorInvert()
+                                                }
+                                            })
                                         
                                         Divider()
                                         
-                                        HStack {
-                                            Image("home-alt2")
-                                                .resizable()
-                                                .frame(width: 30, height: 30)
-                                                .scaledToFit()
-                                                .colorInvert()
-                                            
-                                            Text("Report Abuse")
-                                                .font(.system(size: 20))
-                                            
-                                            Spacer().frame(maxHeight: 0)
-                                            
-                                            Image("arrowRight")
-                                                .resizable()
-                                                .frame(width: 25, height: 25)
-                                                .scaledToFit()
-                                                .colorInvert()
-                                        }
+                                        NavigationLink(
+                                            destination: ReportAbuseView(),
+                                            label: {
+                                                HStack {
+                                                    Image("home-alt2")
+                                                        .resizable()
+                                                        .frame(width: 30, height: 30)
+                                                        .scaledToFit()
+                                                        .colorInvert()
+                                                        .onReceive(timer) { time in
+                                                            cycleEngagement()
+                                                        }
+                                                    
+                                                    Text("Report Abuse")
+                                                        .font(.system(size: 20))
+                                                        .foregroundColor(.black)
+                                                    
+                                                    Spacer().frame(maxHeight: 0)
+                                                    
+                                                    Image("arrowRight")
+                                                        .resizable()
+                                                        .frame(width: 25, height: 25)
+                                                        .scaledToFit()
+                                                        .colorInvert()
+                                                }
+                                            })
                                         
                                         Divider()
                                         

@@ -59,6 +59,9 @@
 		7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */; };
 		7A7AEF2A26C5B4AE00DE8344 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2926C5B4AE00DE8344 /* NotificationsView.swift */; };
 		7A7AEF2C26C5C68600DE8344 /* CustomizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2B26C5C68600DE8344 /* CustomizationView.swift */; };
+		7A7AEF2E26C5CF3F00DE8344 /* HelpSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2D26C5CF3F00DE8344 /* HelpSupportView.swift */; };
+		7A7AEF3026C5D21200DE8344 /* TermsConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2F26C5D21200DE8344 /* TermsConditions.swift */; };
+		7A7AEF3226C5D28600DE8344 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF3126C5D28600DE8344 /* ReportAbuse.swift */; };
 		7A7F6E38264305AA0022F078 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F6E37264305AA0022F078 /* ChatBubble.swift */; };
 		7A934002264FC94900BB5972 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934001264FC94900BB5972 /* PushNotificationSender.swift */; };
 		7A95EA5826530DDA00C6C700 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95EA5726530DDA00C6C700 /* PinView.swift */; };
@@ -235,6 +238,9 @@
 		7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtension.swift; sourceTree = "<group>"; };
 		7A7AEF2926C5B4AE00DE8344 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		7A7AEF2B26C5C68600DE8344 /* CustomizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationView.swift; sourceTree = "<group>"; };
+		7A7AEF2D26C5CF3F00DE8344 /* HelpSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSupportView.swift; sourceTree = "<group>"; };
+		7A7AEF2F26C5D21200DE8344 /* TermsConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditions.swift; sourceTree = "<group>"; };
+		7A7AEF3126C5D28600DE8344 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
 		7A7F6E37264305AA0022F078 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		7A934001264FC94900BB5972 /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
 		7A95EA5726530DDA00C6C700 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
@@ -688,6 +694,9 @@
 				7AF686F626C32A9A00A287C2 /* MyAccountView.swift */,
 				7A7AEF2926C5B4AE00DE8344 /* NotificationsView.swift */,
 				7A7AEF2B26C5C68600DE8344 /* CustomizationView.swift */,
+				7A7AEF2D26C5CF3F00DE8344 /* HelpSupportView.swift */,
+				7A7AEF2F26C5D21200DE8344 /* TermsConditions.swift */,
+				7A7AEF3126C5D28600DE8344 /* ReportAbuse.swift */,
 			);
 			path = Settings2;
 			sourceTree = "<group>";
@@ -976,6 +985,7 @@
 				7A6A4D07262B8A5000561D87 /* PlayerView.swift in Sources */,
 				7AD25A0A26AF913200396CF2 /* amplify/generated/models/Room+Schema.swift in Sources */,
 				D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */,
+				7A7AEF2E26C5CF3F00DE8344 /* HelpSupportView.swift in Sources */,
 				7AD25A0226AF913200396CF2 /* amplify/generated/models/Message.swift in Sources */,
 				7AF2E2E726AF1CB500A82C6D /* amplify/generated/models/DeletionRequest+Schema.swift in Sources */,
 				7A78232526B2004500CA76FC /* AnalyticsDataSource.swift in Sources */,
@@ -1025,6 +1035,7 @@
 				7AF2E2E826AF1CB500A82C6D /* amplify/generated/models/DeletionRequest.swift in Sources */,
 				7A7F6E38264305AA0022F078 /* ChatBubble.swift in Sources */,
 				CF356D1C2671FE4900BCF572 /* Tokens.swift in Sources */,
+				7A7AEF3026C5D21200DE8344 /* TermsConditions.swift in Sources */,
 				7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */,
 				D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */,
 				7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */,
@@ -1035,6 +1046,7 @@
 				7AD25A1226AF913200396CF2 /* amplify/generated/models/User.swift in Sources */,
 				7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */,
 				CFA5EBDC26A158DB00BFEBA2 /* InviteFriendsChat.swift in Sources */,
+				7A7AEF3226C5D28600DE8344 /* ReportAbuse.swift in Sources */,
 				7AD8376B267E9A24005A2D48 /* SmileNotePopover.swift in Sources */,
 				7A7AEF2A26C5B4AE00DE8344 /* NotificationsView.swift in Sources */,
 				7AF6973F2630EE1900CF49CC /* Star.swift in Sources */,
