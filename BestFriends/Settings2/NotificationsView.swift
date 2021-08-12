@@ -81,6 +81,11 @@ struct NotificationsView: View {
                 
                 Spacer()
                 
+                Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off Notifications your friend may NOT find you in a timely manner.")
+                    .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+                    .multilineTextAlignment(.center)
+                    .padding(20)
+                
                 Button(action: {
                     saveData()
                 }) {
