@@ -37,6 +37,9 @@ struct CustomizationView: View {
                         Text("Customization")
                             .font(.system(size: 30))
                             .offset(x: -25)
+                            .onAppear {
+                                loadData()
+                            }
                         
                         Spacer()
                     }
@@ -57,7 +60,7 @@ struct CustomizationView: View {
                             .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
                             .onTapGesture {
-                                chatFontSize += 1
+                                chatFontSize -= 1
                             }
                         
                         Text("\(chatFontSize)")
@@ -68,7 +71,7 @@ struct CustomizationView: View {
                             .scaledToFit()
                             .colorInvert()
                             .onTapGesture {
-                                chatFontSize -= 1
+                                chatFontSize += 1
                             }
                     }
                     
