@@ -24,14 +24,19 @@ struct Settings2View: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color(#colorLiteral(red: 0.8967117667, green: 0.8913813233, blue: 0.9008091688, alpha: 1))
+                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
+                
+                Image("settingsBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
                 
                 VStack {
                     ScrollView {
                         VStack(alignment: .leading) {
                             // Allows the VStack to be full screen width-wise
-                            Spacer().frame(maxWidth: .infinity, maxHeight: .zero)
+                            Spacer().frame(maxWidth: .infinity, maxHeight: 30)
                             // First name
                             Text(user.firstName)
                                 .font(.system(size: 42, weight: .bold))
@@ -46,16 +51,16 @@ struct Settings2View: View {
                             
                             // The main functionality of the app
                             Text("Functions")
-                                .font(.system(size: 20, weight: .bold))
-                                .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
+                                .font(.system(size: 30, weight: .bold))
+                                .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
                                 .offset(x: 10, y: 10)
                             
                             SettingsFunctionView()
                             
                             // Overlay of the 3 into rectangle things
                             Text("Engagement")
-                                .font(.system(size: 20, weight: .bold))
-                                .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
+                                .font(.system(size: 30, weight: .bold))
+                                .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
                                 .offset(x: 10, y: 10)
                             
                             
@@ -63,8 +68,8 @@ struct Settings2View: View {
                             
                             // List of all the diffrent menu items
                             Text("Settings")
-                                .font(.system(size: 20, weight: .bold))
-                                .foregroundColor(Color(#colorLiteral(red: 0.1693333387, green: 0.1839567721, blue: 0.203564167, alpha: 1)))
+                                .font(.system(size: 30, weight: .bold))
+                                .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
                                 .offset(x: 10, y: 0)
                             
                             VStack {
