@@ -87,7 +87,7 @@ struct HelpSupportView: View {
                     Divider()
                     
                     HStack {
-                        Text("BLock Friends")
+                        Text("Block Friends")
                             .font(.system(size: 20))
                         
                         Spacer()
