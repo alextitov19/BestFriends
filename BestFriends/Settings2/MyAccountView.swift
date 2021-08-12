@@ -9,8 +9,34 @@ import SwiftUI
 
 struct MyAccountView: View {
 
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
         VStack {
+            HStack {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image("arrowRight")
+                        .resizable()
+                        .frame(width: 25, height: 25)
+                        .scaledToFit()
+                        .colorInvert()
+                        .rotationEffect(Angle(degrees: 180))
+                }
+                
+                Spacer()
+                
+                Text("My Account")
+                    .font(.system(size: 30))
+                    .offset(x: -25)
+                
+                Spacer()
+            }
+            
+            Spacer()
+                .frame(height: 50)
+            
             HStack {
                 Text("Change Password")
                     .font(.system(size: 20))
@@ -58,7 +84,7 @@ struct MyAccountView: View {
             Spacer()
         }
         .padding(30)
-        .navigationBarTitle("My Account", displayMode: .large)
+        .navigationBarHidden(true)
     }
     
 }
