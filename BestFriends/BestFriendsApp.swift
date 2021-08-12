@@ -70,7 +70,7 @@ struct BestFriendsApp: App {
                 SmileVaultView()
                     .environmentObject(sessionManager)
             case .settings:
-                Settings2View()
+                SettingsView()
                     .environmentObject(sessionManager)
             case .chat(let room):
                 ChatView(room: room)
