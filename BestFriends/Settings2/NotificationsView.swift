@@ -1,4 +1,11 @@
 //
+//  NotificationsView.swift
+//  BestFriends
+//
+//  Created by Alex Titov on 8/12/21.
+//
+
+//
 //  MyAccountView.swift
 //  BestFriends
 //
@@ -7,9 +14,14 @@
 
 import SwiftUI
 
-struct MyAccountView: View {
+struct NotificationsView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    @State private var chatNotifications = true
+    @State private var broadcastNotifications = true
+    
+    private let userDS = UserDataSource()
     
     var body: some View {
         ZStack {
@@ -26,11 +38,14 @@ struct MyAccountView: View {
                             .scaledToFit()
                             .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
+                            .onAppear {
+                                loadData()
+                            }
                     }
                     
                     Spacer()
                     
-                    Text("My Account")
+                    Text("Notifications")
                         .font(.system(size: 30))
                         .offset(x: -25)
                     
@@ -40,33 +55,13 @@ struct MyAccountView: View {
                 Spacer()
                     .frame(height: 50)
                 
-                HStack {
-                    Text("Change Password")
-                        .font(.system(size: 20))
-                    
-                    Spacer().frame(maxHeight: 0)
-                    
-                    Image("arrowRight")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .scaledToFit()
-                        .colorInvert()
-                }
+                Toggle("Chat Notifications", isOn: $chatNotifications)
+                    .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                 
                 Divider()
                 
-                HStack {
-                    Text("Change PIN for Hide Chat")
-                        .font(.system(size: 20))
-                    
-                    Spacer().frame(maxHeight: 0)
-                    
-                    Image("arrowRight")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .scaledToFit()
-                        .colorInvert()
-                }
+                Toggle("Broadcast Notifications", isOn: $broadcastNotifications)
+                    .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                 
                 Divider()
                 
@@ -85,10 +80,34 @@ struct MyAccountView: View {
                 }
                 
                 Spacer()
+                
+                Button(action: {
+                    saveData()
+                }) {
+                    Text("Save")
+                        .frame(width: 250, height: 50, alignment: .center)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.title)
+                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .cornerRadius(10)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                }
             }
             .padding(30)
-            .navigationBarHidden(true)
         }
+        .navigationBarHidden(true)
     }
     
+    private func loadData() {
+        let user = userDS.getCurrentUser()
+        chatNotifications = user.notificationsLP
+        broadcastNotifications = user.notificationsBroadcast
+    }
+    
+    private func saveData() {
+        var user = userDS.getCurrentUser()
+        user.notificationsLP = chatNotifications
+        user.notificationsBroadcast = broadcastNotifications
+        userDS.updateUser(user: user)
+    }
 }
