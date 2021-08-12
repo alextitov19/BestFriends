@@ -134,24 +134,32 @@ struct Settings2View: View {
                                         
                                         Divider()
                                         
-                                        HStack {
-                                            Image("home-alt2")
-                                                .resizable()
-                                                .frame(width: 30, height: 30)
-                                                .scaledToFit()
-                                                .colorInvert()
-                                            
-                                            Text("Customization")
-                                                .font(.system(size: 20))
-                                            
-                                            Spacer().frame(maxHeight: 0)
-                                            
-                                            Image("arrowRight")
-                                                .resizable()
-                                                .frame(width: 25, height: 25)
-                                                .scaledToFit()
-                                                .colorInvert()
-                                        }
+                                        NavigationLink(
+                                            destination: CustomizationView(),
+                                            label: {
+                                                HStack {
+                                                    Image("home-alt2")
+                                                        .resizable()
+                                                        .frame(width: 30, height: 30)
+                                                        .scaledToFit()
+                                                        .colorInvert()
+                                                        .onReceive(timer) { time in
+                                                            cycleEngagement()
+                                                        }
+                                                    
+                                                    Text("Customization")
+                                                        .font(.system(size: 20))
+                                                        .foregroundColor(.black)
+                                                    
+                                                    Spacer().frame(maxHeight: 0)
+                                                    
+                                                    Image("arrowRight")
+                                                        .resizable()
+                                                        .frame(width: 25, height: 25)
+                                                        .scaledToFit()
+                                                        .colorInvert()
+                                                }
+                                            })
                                         
                                         Divider()
                                     }

@@ -59,7 +59,7 @@ struct MyAccountView: View {
                     Text("Change PIN for Hide Chat")
                         .font(.system(size: 20))
                     
-                    Spacer().frame(maxHeight: 0)
+                    Spacer()
                     
                     Image("arrowRight")
                         .resizable()

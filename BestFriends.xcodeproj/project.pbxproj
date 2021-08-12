@@ -58,6 +58,7 @@
 		7A78233126B2419600CA76FC /* school.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A78232C26B2419600CA76FC /* school.mp4 */; };
 		7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */; };
 		7A7AEF2A26C5B4AE00DE8344 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2926C5B4AE00DE8344 /* NotificationsView.swift */; };
+		7A7AEF2C26C5C68600DE8344 /* CustomizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2B26C5C68600DE8344 /* CustomizationView.swift */; };
 		7A7F6E38264305AA0022F078 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F6E37264305AA0022F078 /* ChatBubble.swift */; };
 		7A934002264FC94900BB5972 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934001264FC94900BB5972 /* PushNotificationSender.swift */; };
 		7A95EA5826530DDA00C6C700 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95EA5726530DDA00C6C700 /* PinView.swift */; };
@@ -233,6 +234,7 @@
 		7A78232C26B2419600CA76FC /* school.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = school.mp4; sourceTree = "<group>"; };
 		7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtension.swift; sourceTree = "<group>"; };
 		7A7AEF2926C5B4AE00DE8344 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		7A7AEF2B26C5C68600DE8344 /* CustomizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationView.swift; sourceTree = "<group>"; };
 		7A7F6E37264305AA0022F078 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		7A934001264FC94900BB5972 /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
 		7A95EA5726530DDA00C6C700 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
@@ -685,6 +687,7 @@
 				7AF686F426C2BFBE00A287C2 /* SettingsFunctionView.swift */,
 				7AF686F626C32A9A00A287C2 /* MyAccountView.swift */,
 				7A7AEF2926C5B4AE00DE8344 /* NotificationsView.swift */,
+				7A7AEF2B26C5C68600DE8344 /* CustomizationView.swift */,
 			);
 			path = Settings2;
 			sourceTree = "<group>";
@@ -1008,6 +1011,7 @@
 				7A5EFED826B4A2EC00281DDD /* Message+Schema.swift in Sources */,
 				7AF686F326C1C21700A287C2 /* SettingsEngagementView.swift in Sources */,
 				7AD25A1326AF913200396CF2 /* amplify/generated/models/InvitedRoom+Schema.swift in Sources */,
+				7A7AEF2C26C5C68600DE8344 /* CustomizationView.swift in Sources */,
 				D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */,
 				D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */,
 				7A33B63C2640D463004CB47F /* ChatView.swift in Sources */,
