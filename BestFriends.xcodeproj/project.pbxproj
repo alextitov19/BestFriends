@@ -11,6 +11,7 @@
 		7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */; };
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
+		7A23683426CB1DD300C56A97 /* SignUpView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683326CB1DD300C56A97 /* SignUpView1.swift */; };
 		7A244F8526A7CAAD000F49ED /* IntroPopups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A244F8426A7CAAD000F49ED /* IntroPopups.swift */; };
 		7A244F8726A7D276000F49ED /* ManDocDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A244F8626A7D276000F49ED /* ManDocDataSource.swift */; };
 		7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */; };
@@ -147,6 +148,7 @@
 		7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		7A23683326CB1DD300C56A97 /* SignUpView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView1.swift; sourceTree = "<group>"; };
 		7A244F8426A7CAAD000F49ED /* IntroPopups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPopups.swift; sourceTree = "<group>"; };
 		7A244F8626A7D276000F49ED /* ManDocDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManDocDataSource.swift; sourceTree = "<group>"; };
 		7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -439,6 +441,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7A23683226CB1DAC00C56A97 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				7A23683326CB1DD300C56A97 /* SignUpView1.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
 		7A417EC4265ED49C00E95364 /* Advertisements */ = {
 			isa = PBXGroup;
 			children = (
@@ -548,6 +558,7 @@
 		7A7A198226CACC730018D957 /* Registration2 */ = {
 			isa = PBXGroup;
 			children = (
+				7A23683226CB1DAC00C56A97 /* Sign Up */,
 				7A7A198626CACEAE0018D957 /* WelcomeView.swift */,
 			);
 			path = Registration2;
@@ -1036,6 +1047,7 @@
 				7A5EFED426B4A2EC00281DDD /* InvitedRoom.swift in Sources */,
 				7AF35CB42699EB6700A396CE /* Helper.swift in Sources */,
 				7AC8A23F26578C3E001812EF /* LocationManager.swift in Sources */,
+				7A23683426CB1DD300C56A97 /* SignUpView1.swift in Sources */,
 				7A417EC8265ED52900E95364 /* AdDataSource.swift in Sources */,
 				7A68B67B26A7296D00EF20E3 /* UserSubscriptionService.swift in Sources */,
 				7A5EFED526B4A2EC00281DDD /* ManagementDocument+Schema.swift in Sources */,
