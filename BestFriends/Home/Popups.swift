@@ -111,32 +111,6 @@ struct BetaTesterPopup: View {
     }
 }
 
-struct BlueModePopup: View {
-    
-    var body: some View {
-        VStack {
-            Text("Just had a huge fight with your best friend - we can help 💕")
-                .italic()
-                .font(.system(size: 30, weight: .regular))
-                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                .multilineTextAlignment(.center)
-                .frame(maxWidth: .infinity)
-                .padding(5)
-            
-            // Take the to blue mode walkthough
-            NavigationLink(
-                destination: BlueModePage1(),
-                label: {
-                    Text("Yes")
-                })
-                .font(.system(size: 35))
-                .foregroundColor(Color(#colorLiteral(red: 0, green: 1, blue: 0, alpha: 1)))
-                .cornerRadius(25)
-        }
-        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-    }
-}
-
 struct ReviewPopup: View {
     
     var body: some View {

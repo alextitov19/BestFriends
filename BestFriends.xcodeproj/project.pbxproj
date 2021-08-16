@@ -104,7 +104,6 @@
 		7AF2E2D026AE643A00A82C6D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AF2E2CE26AE643A00A82C6D /* awsconfiguration.json */; };
 		7AF2E2E726AF1CB500A82C6D /* amplify/generated/models/DeletionRequest+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF2E2D226AF1CB500A82C6D /* amplify/generated/models/DeletionRequest+Schema.swift */; };
 		7AF2E2E826AF1CB500A82C6D /* amplify/generated/models/DeletionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF2E2D326AF1CB500A82C6D /* amplify/generated/models/DeletionRequest.swift */; };
-		7AF35CB22699E9E500A396CE /* BlueModeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF35CB12699E9E500A396CE /* BlueModeDataSource.swift */; };
 		7AF35CB42699EB6700A396CE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF35CB32699EB6700A396CE /* Helper.swift */; };
 		7AF686F126BC86C900A287C2 /* Settings2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F026BC86C900A287C2 /* Settings2View.swift */; };
 		7AF686F326C1C21700A287C2 /* SettingsEngagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F226C1C21700A287C2 /* SettingsEngagementView.swift */; };
@@ -116,18 +115,12 @@
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
 		CF05A8CC26B4239B009618E6 /* bff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF05A8CB26B4239B009618E6 /* bff.swift */; };
 		CF1E6AE5269A00DB00B8F985 /* PreAddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */; };
-		CF1E6AE7269A0D2000B8F985 /* BlueModeConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */; };
 		CF30FF93267E955A000B2730 /* SmileNotesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF30FF92267E955A000B2730 /* SmileNotesCard.swift */; };
 		CF356D1C2671FE4900BCF572 /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1B2671FE4900BCF572 /* Tokens.swift */; };
 		CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */; };
 		CF356D322674E3F100BCF572 /* AddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D312674E3F100BCF572 /* AddFriends.swift */; };
-		CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2226584E1800B69506 /* BlueTransitionPage.swift */; };
-		CF436A252658C64200B69506 /* BlueTransitionPage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A242658C64200B69506 /* BlueTransitionPage1.swift */; };
-		CF436A272658D66F00B69506 /* BMInfoPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A262658D66F00B69506 /* BMInfoPages.swift */; };
-		CF436A30265A0FF400B69506 /* BlueSurvey.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A2F265A0FF400B69506 /* BlueSurvey.swift */; };
 		CF436A32265B40DD00B69506 /* NotificationsOnOffPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A31265B40DD00B69506 /* NotificationsOnOffPage.swift */; };
 		CF5263E32667621B00243DD7 /* ChangeChatFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */; };
-		CF5263F2266DDD4200243DD7 /* BlueModeUserDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */; };
 		CFA5EBDA269F89D600BFEBA2 /* AddFriendSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5EBD9269F89D600BFEBA2 /* AddFriendSteps.swift */; };
 		CFA5EBDC26A158DB00BFEBA2 /* InviteFriendsChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5EBDB26A158DB00BFEBA2 /* InviteFriendsChat.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
@@ -138,14 +131,10 @@
 		D15777B42650522200B6551A /* SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15777B32650522200B6551A /* SwipeGesture.swift */; };
 		D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD682647458900BFE179 /* ResetPassword.swift */; };
 		D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */; };
-		D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */; };
-		D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD83264908A300BFE179 /* DarkModePage1.swift */; };
-		D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */; };
 		D1949C352644E15E00FDB6C5 /* MyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C342644E15E00FDB6C5 /* MyAccount.swift */; };
 		D1949C3F2644FC6300FDB6C5 /* ManageMyFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */; };
 		D1949C412644FD4F00FDB6C5 /* RemoveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1949C402644FD4F00FDB6C5 /* RemoveFriend.swift */; };
 		D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D27D39264303E300BDA75F /* InfoPages.swift */; };
-		D1E3CFDF2653A35700A26779 /* BlueModeLP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */; };
 		D1E3CFE326543C4D00A26779 /* ChangePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFE226543C4D00A26779 /* ChangePin.swift */; };
 		F11E8CF700902496B65C1C89 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */; };
 /* End PBXBuildFile section */
@@ -304,7 +293,6 @@
 		7AF2E2DB26AF1CB500A82C6D /* amplify/generated/models/Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
 		7AF2E2E326AF1CB500A82C6D /* amplify/generated/models/ShakingCool+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = "<group>"; };
 		7AF2E2E526AF1CB500A82C6D /* amplify/generated/models/Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Room+Schema.swift"; sourceTree = "<group>"; };
-		7AF35CB12699E9E500A396CE /* BlueModeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeDataSource.swift; sourceTree = "<group>"; };
 		7AF35CB32699EB6700A396CE /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7AF686F026BC86C900A287C2 /* Settings2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings2View.swift; sourceTree = "<group>"; };
 		7AF686F226C1C21700A287C2 /* SettingsEngagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEngagementView.swift; sourceTree = "<group>"; };
@@ -318,20 +306,14 @@
 		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
 		CF05A8CB26B4239B009618E6 /* bff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bff.swift; sourceTree = "<group>"; };
 		CF1E6AE4269A00DB00B8F985 /* PreAddFriends.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreAddFriends.swift; sourceTree = "<group>"; };
-		CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeConditions.swift; sourceTree = "<group>"; };
 		CF30FF92267E955A000B2730 /* SmileNotesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotesCard.swift; sourceTree = "<group>"; };
 		CF356D1B2671FE4900BCF572 /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPreLoad.swift; sourceTree = "<group>"; };
 		CF356D312674E3F100BCF572 /* AddFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriends.swift; sourceTree = "<group>"; };
-		CF436A2226584E1800B69506 /* BlueTransitionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage.swift; sourceTree = "<group>"; };
-		CF436A242658C64200B69506 /* BlueTransitionPage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueTransitionPage1.swift; sourceTree = "<group>"; };
-		CF436A262658D66F00B69506 /* BMInfoPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMInfoPages.swift; sourceTree = "<group>"; };
-		CF436A2F265A0FF400B69506 /* BlueSurvey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueSurvey.swift; sourceTree = "<group>"; };
 		CF436A31265B40DD00B69506 /* NotificationsOnOffPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsOnOffPage.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
 		CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatFontSize.swift; sourceTree = "<group>"; };
-		CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeUserDashboard.swift; sourceTree = "<group>"; };
 		CFA5EBD9269F89D600BFEBA2 /* AddFriendSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendSteps.swift; sourceTree = "<group>"; };
 		CFA5EBDB26A158DB00BFEBA2 /* InviteFriendsChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsChat.swift; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
@@ -342,14 +324,10 @@
 		D15777B32650522200B6551A /* SwipeGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeGesture.swift; sourceTree = "<group>"; };
 		D15CCD682647458900BFE179 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		D15CCD6E2647A67400BFE179 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
-		D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
-		D15CCD83264908A300BFE179 /* DarkModePage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModePage1.swift; sourceTree = "<group>"; };
-		D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeNotReadyTalk.swift; sourceTree = "<group>"; };
 		D1949C342644E15E00FDB6C5 /* MyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccount.swift; sourceTree = "<group>"; };
 		D1949C3E2644FC6300FDB6C5 /* ManageMyFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageMyFriends.swift; sourceTree = "<group>"; };
 		D1949C402644FD4F00FDB6C5 /* RemoveFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend.swift; sourceTree = "<group>"; };
 		D1D27D39264303E300BDA75F /* InfoPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPages.swift; sourceTree = "<group>"; };
-		D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModeLP.swift; sourceTree = "<group>"; };
 		D1E3CFE226543C4D00A26779 /* ChangePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePin.swift; sourceTree = "<group>"; };
 		F74A567A97771BEE3D717A47 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -439,7 +417,6 @@
 			children = (
 				7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */,
 				7A934001264FC94900BB5972 /* PushNotificationSender.swift */,
-				7AD362FB26852AE7003F6447 /* FirebaseDataSource.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -464,7 +441,6 @@
 			isa = PBXGroup;
 			children = (
 				7A417EC5265ED4B000E95364 /* AdViewFullScreen.swift */,
-				7A417EC7265ED52900E95364 /* AdDataSource.swift */,
 				7A417ECB265F236700E95364 /* AdPlayerView.swift */,
 			);
 			path = Advertisements;
@@ -473,7 +449,6 @@
 		7A6A4CD2262B56E900561D87 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				7A6A4CD9262B658200561D87 /* MessageDataSource.swift */,
 				7A33B63B2640D463004CB47F /* ChatView.swift */,
 				7A7F6E37264305AA0022F078 /* ChatBubble.swift */,
 				7A95EA5726530DDA00C6C700 /* PinView.swift */,
@@ -529,30 +504,20 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
-				7AF686EF26BC86B800A287C2 /* Settings2 */,
-				7AF2E2D126AF1CB500A82C6D /* models */,
-				7AF35CAE2699E9AB00A396CE /* BlueMode */,
+				7A7A198426CACD1F0018D957 /* Old Files */,
+				7A7A198326CACCBC0018D957 /* Necessary Files */,
+				7A7A198226CACC730018D957 /* Registration2 */,
 				7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */,
-				7A08E364264FB6CA00AEBC8F /* Notifications */,
-				7A417EC4265ED49C00E95364 /* Advertisements */,
-				7AD10453265AB9AF007627FD /* ShakingCool */,
-				7A1DBD602659B1A400EB4B42 /* Extensions */,
-				D15777B22650522200B6551A /* Gestures */,
-				D1577799264D082800B6551A /* SmileVault */,
+				7AF2E2D126AF1CB500A82C6D /* models */,
+				7AF686EF26BC86B800A287C2 /* Settings2 */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
 				7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */,
-				7AE31CBD262A9A7F001EC5A3 /* Authentication */,
 				7A8943D2262CCA84008F7582 /* Home */,
 				7AA200FB2635C6D100C9F00C /* Room */,
 				7A6A4CD2262B56E900561D87 /* Chat */,
-				CF356D4426774C2E00BCF572 /* BlueMode */,
-				7AB62A8326426F7A005A7744 /* Settings */,
 				7A6A4D00262B865D00561D87 /* Assets */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7AED44FB26473F7100944708 /* AppDelegate.swift */,
-				7A4E32B626A079F200202BB7 /* Loading.swift */,
-				7A2B1F5C26A645F500EDBEAF /* ThreeCircles.swift */,
-				7A78232426B2004500CA76FC /* AnalyticsDataSource.swift */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
 				7A724D3526AC7C150079AA85 /* Helpers */,
@@ -579,6 +544,53 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		7A7A198226CACC730018D957 /* Registration2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration2;
+			sourceTree = "<group>";
+		};
+		7A7A198326CACCBC0018D957 /* Necessary Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A4E32B626A079F200202BB7 /* Loading.swift */,
+				7A2B1F5C26A645F500EDBEAF /* ThreeCircles.swift */,
+				7A7A198526CACD5B0018D957 /* Data Sources */,
+				7A417EC4265ED49C00E95364 /* Advertisements */,
+				7AD10453265AB9AF007627FD /* ShakingCool */,
+				D1577799264D082800B6551A /* SmileVault */,
+				D15777B22650522200B6551A /* Gestures */,
+				7A1DBD602659B1A400EB4B42 /* Extensions */,
+				7A08E364264FB6CA00AEBC8F /* Notifications */,
+			);
+			path = "Necessary Files";
+			sourceTree = "<group>";
+		};
+		7A7A198426CACD1F0018D957 /* Old Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AB62A8326426F7A005A7744 /* Settings */,
+				7AE31CBD262A9A7F001EC5A3 /* Authentication */,
+			);
+			path = "Old Files";
+			sourceTree = "<group>";
+		};
+		7A7A198526CACD5B0018D957 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7AAB444B265C6B6800488983 /* ShakingCoolDataSource.swift */,
+				7A417EC7265ED52900E95364 /* AdDataSource.swift */,
+				7AD362FB26852AE7003F6447 /* FirebaseDataSource.swift */,
+				7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */,
+				7A68B67A26A7296D00EF20E3 /* UserSubscriptionService.swift */,
+				7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */,
+				7A6A4CD9262B658200561D87 /* MessageDataSource.swift */,
+				7A78232426B2004500CA76FC /* AnalyticsDataSource.swift */,
+			);
+			path = "Data Sources";
+			sourceTree = "<group>";
+		};
 		7A8943D2262CCA84008F7582 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -588,8 +600,6 @@
 				7A6A4D06262B8A5000561D87 /* PlayerView.swift */,
 				7AEFD542262CED3A00247757 /* QRCodeView.swift */,
 				7AEFD545262CED7A00247757 /* ImagePicker.swift */,
-				7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */,
-				7A68B67A26A7296D00EF20E3 /* UserSubscriptionService.swift */,
 				7A244F8426A7CAAD000F49ED /* IntroPopups.swift */,
 				7A78232226B1A64800CA76FC /* BroadcastView.swift */,
 				CF05A8CB26B4239B009618E6 /* bff.swift */,
@@ -600,7 +610,6 @@
 		7AA200FB2635C6D100C9F00C /* Room */ = {
 			isa = PBXGroup;
 			children = (
-				7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */,
 				7AA201102635D2E100C9F00C /* RoomRow.swift */,
 				7AA2010E2635D21100C9F00C /* RoomsView.swift */,
 			);
@@ -626,7 +635,6 @@
 			children = (
 				7AD10454265AB9BE007627FD /* DeviceShakeViewModifier.swift */,
 				7AAB4449265C619A00488983 /* ShakingCoolView.swift */,
-				7AAB444B265C6B6800488983 /* ShakingCoolDataSource.swift */,
 				7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */,
 			);
 			path = ShakingCool;
@@ -677,14 +685,6 @@
 			path = amplify/generated/models;
 			sourceTree = SOURCE_ROOT;
 		};
-		7AF35CAE2699E9AB00A396CE /* BlueMode */ = {
-			isa = PBXGroup;
-			children = (
-				7AF35CB12699E9E500A396CE /* BlueModeDataSource.swift */,
-			);
-			path = BlueMode;
-			sourceTree = "<group>";
-		};
 		7AF686EF26BC86B800A287C2 /* Settings2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -724,32 +724,6 @@
 				CF356D1B2671FE4900BCF572 /* Tokens.swift */,
 			);
 			path = Tokens;
-			sourceTree = "<group>";
-		};
-		CF356D4426774C2E00BCF572 /* BlueMode */ = {
-			isa = PBXGroup;
-			children = (
-				CF5263F1266DDD4200243DD7 /* BlueModeUserDashboard.swift */,
-				CF436A262658D66F00B69506 /* BMInfoPages.swift */,
-				CF436A2F265A0FF400B69506 /* BlueSurvey.swift */,
-				CF436A2D265A0D3B00B69506 /* BlueSinglePages */,
-				CF1E6AE6269A0D2000B8F985 /* BlueModeConditions.swift */,
-			);
-			name = BlueMode;
-			path = Settings/BlueMode;
-			sourceTree = "<group>";
-		};
-		CF436A2D265A0D3B00B69506 /* BlueSinglePages */ = {
-			isa = PBXGroup;
-			children = (
-				D15CCD83264908A300BFE179 /* DarkModePage1.swift */,
-				D1E3CFDE2653A35700A26779 /* BlueModeLP.swift */,
-				D15CCD7F2648AF4000BFE179 /* DarkModeView.swift */,
-				D15CCD8D264C86D700BFE179 /* BlueModeNotReadyTalk.swift */,
-				CF436A242658C64200B69506 /* BlueTransitionPage1.swift */,
-				CF436A2226584E1800B69506 /* BlueTransitionPage.swift */,
-			);
-			path = BlueSinglePages;
 			sourceTree = "<group>";
 		};
 		CF5263E1266761CC00243DD7 /* EditingChatFunctions */ = {
@@ -995,7 +969,6 @@
 				7AD259E226AF292600396CF2 /* amplify/generated/models/User+Schema.swift in Sources */,
 				7AEFD546262CED7A00247757 /* ImagePicker.swift in Sources */,
 				7A5EFEDB26B4A2EC00281DDD /* ReportedMessage+Schema.swift in Sources */,
-				D15CCD802648AF4000BFE179 /* DarkModeView.swift in Sources */,
 				7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */,
 				7A5EFEDA26B4A2EC00281DDD /* ReportedMessage.swift in Sources */,
 				7AC8564226585CD20045D145 /* LiquidSwipe.swift in Sources */,
@@ -1022,8 +995,6 @@
 				7AF686F326C1C21700A287C2 /* SettingsEngagementView.swift in Sources */,
 				7AD25A1326AF913200396CF2 /* amplify/generated/models/InvitedRoom+Schema.swift in Sources */,
 				7A7AEF2C26C5C68600DE8344 /* CustomizationView.swift in Sources */,
-				D15CCD84264908A300BFE179 /* DarkModePage1.swift in Sources */,
-				D15CCD8E264C86D800BFE179 /* BlueModeNotReadyTalk.swift in Sources */,
 				7A33B63C2640D463004CB47F /* ChatView.swift in Sources */,
 				7A5EFEDF26B4A2EC00281DDD /* AmplifyModels.swift in Sources */,
 				7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */,
@@ -1059,7 +1030,6 @@
 				D15777B42650522200B6551A /* SwipeGesture.swift in Sources */,
 				7A417EC6265ED4B000E95364 /* AdViewFullScreen.swift in Sources */,
 				7A5EFED426B4A2EC00281DDD /* InvitedRoom.swift in Sources */,
-				D1E3CFDF2653A35700A26779 /* BlueModeLP.swift in Sources */,
 				7AF35CB42699EB6700A396CE /* Helper.swift in Sources */,
 				7AC8A23F26578C3E001812EF /* LocationManager.swift in Sources */,
 				7A417EC8265ED52900E95364 /* AdDataSource.swift in Sources */,
@@ -1071,13 +1041,8 @@
 				7A95EA5826530DDA00C6C700 /* PinView.swift in Sources */,
 				7AAB444C265C6B6800488983 /* ShakingCoolDataSource.swift in Sources */,
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
-				CF436A30265A0FF400B69506 /* BlueSurvey.swift in Sources */,
 				D1E3CFE326543C4D00A26779 /* ChangePin.swift in Sources */,
-				CF436A252658C64200B69506 /* BlueTransitionPage1.swift in Sources */,
 				CF436A32265B40DD00B69506 /* NotificationsOnOffPage.swift in Sources */,
-				CF436A272658D66F00B69506 /* BMInfoPages.swift in Sources */,
-				CF436A2326584E1800B69506 /* BlueTransitionPage.swift in Sources */,
-				CF5263F2266DDD4200243DD7 /* BlueModeUserDashboard.swift in Sources */,
 				CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */,
 				CF1E6AE5269A00DB00B8F985 /* PreAddFriends.swift in Sources */,
 				CFE6FD4626620E9A00DF92BD /* Popups.swift in Sources */,
@@ -1086,7 +1051,6 @@
 				CF30FF93267E955A000B2730 /* SmileNotesCard.swift in Sources */,
 				CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */,
 				7A244F8526A7CAAD000F49ED /* IntroPopups.swift in Sources */,
-				CF1E6AE7269A0D2000B8F985 /* BlueModeConditions.swift in Sources */,
 				7AD259E026AF292600396CF2 /* amplify/generated/models/ShakingCool.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A01A96726939DA40047BB35 /* StickerPopover.swift in Sources */,
@@ -1098,7 +1062,6 @@
 				7A69EA4726AA65AF00A54B6F /* SmileNote+Schema.swift in Sources */,
 				7A724D3426AC7C010079AA85 /* Shake.swift in Sources */,
 				7A4E32FF26A0CABC00202BB7 /* ChangeAdPreference.swift in Sources */,
-				7AF35CB22699E9E500A396CE /* BlueModeDataSource.swift in Sources */,
 				7AB070EF26AA564600425C27 /* FullScreenChatImage.swift in Sources */,
 				7A2B1F5D26A645F500EDBEAF /* ThreeCircles.swift in Sources */,
 				7AF686F126BC86C900A287C2 /* Settings2View.swift in Sources */,
