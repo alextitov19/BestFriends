@@ -10,7 +10,8 @@ import SwiftUI
 struct SignUpView1: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-    
+    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
@@ -62,6 +63,19 @@ struct SignUpView1: View {
             }
             
             VStack {
+                HStack {
+                    Spacer()
+                    
+                    Image("X")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40)
+                        .padding(.horizontal, 30)
+                        .onTapGesture {
+                            self.mode.wrappedValue.dismiss()
+                        }
+                }
+                
                 Spacer()
                 
                 Image("PeakingGuy")
