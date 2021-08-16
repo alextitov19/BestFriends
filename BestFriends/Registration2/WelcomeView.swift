@@ -32,6 +32,47 @@ struct WelcomeView: View {
                     .offset(x: 150, y: 100)
             }
             
+            VStack {
+                Spacer()
+
+                Image("Logo")
+                    .resizable()
+                    .frame(width: 120, height: 120)
+                    .scaledToFill()
+                
+                Spacer().frame(height: 300)
+                
+                Button(action: {
+                    
+                }) {
+                    Text("SIGN UP")
+                        .frame(maxWidth: .infinity, minHeight: 60)
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9)))
+                        .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .cornerRadius(20)
+                }
+                .padding(.horizontal, 30)
+                
+                Spacer().frame(height: 30)
+                
+                Button(action: {
+                    
+                }) {
+                    Text("LOG IN")
+                        .frame(maxWidth: .infinity, minHeight: 60)
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.white, lineWidth: 1)
+                        )
+                }
+                .padding(.horizontal, 30)
+                
+                Spacer().frame(height: 30)
+            }
+            
         }
     }
 }
