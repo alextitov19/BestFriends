@@ -13,18 +13,23 @@ struct WelcomeView: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1))
+            Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
                 .ignoresSafeArea()
-            VStack {
+            ZStack {
                 Circle()
-                    .frame(width: 300, height: 300)
-                    .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .offset(x: 200, y: -100)
+                    .frame(width: 400, height: 400)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: 200, y: -400)
                 
                 Circle()
                     .frame(width: 300, height: 300)
-                    .foregroundColor(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .offset(x: -200, y: 100)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: -200, y: -100)
+                
+                Circle()
+                    .frame(width: 200, height: 200)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: 150, y: 100)
             }
             
         }
