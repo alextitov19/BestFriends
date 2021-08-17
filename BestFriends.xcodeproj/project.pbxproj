@@ -12,6 +12,9 @@
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
 		7A23683426CB1DD300C56A97 /* SignUpView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683326CB1DD300C56A97 /* SignUpView1.swift */; };
+		7A23683626CB324100C56A97 /* SignUpView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683526CB324100C56A97 /* SignUpView2.swift */; };
+		7A23683826CB383E00C56A97 /* SignUpView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683726CB383E00C56A97 /* SignUpView3.swift */; };
+		7A23683A26CB395200C56A97 /* SignUpView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683926CB395200C56A97 /* SignUpView4.swift */; };
 		7A244F8526A7CAAD000F49ED /* IntroPopups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A244F8426A7CAAD000F49ED /* IntroPopups.swift */; };
 		7A244F8726A7D276000F49ED /* ManDocDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A244F8626A7D276000F49ED /* ManDocDataSource.swift */; };
 		7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */; };
@@ -149,6 +152,9 @@
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		7A23683326CB1DD300C56A97 /* SignUpView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView1.swift; sourceTree = "<group>"; };
+		7A23683526CB324100C56A97 /* SignUpView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView2.swift; sourceTree = "<group>"; };
+		7A23683726CB383E00C56A97 /* SignUpView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView3.swift; sourceTree = "<group>"; };
+		7A23683926CB395200C56A97 /* SignUpView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView4.swift; sourceTree = "<group>"; };
 		7A244F8426A7CAAD000F49ED /* IntroPopups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPopups.swift; sourceTree = "<group>"; };
 		7A244F8626A7D276000F49ED /* ManDocDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManDocDataSource.swift; sourceTree = "<group>"; };
 		7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -445,6 +451,9 @@
 			isa = PBXGroup;
 			children = (
 				7A23683326CB1DD300C56A97 /* SignUpView1.swift */,
+				7A23683526CB324100C56A97 /* SignUpView2.swift */,
+				7A23683726CB383E00C56A97 /* SignUpView3.swift */,
+				7A23683926CB395200C56A97 /* SignUpView4.swift */,
 			);
 			path = "Sign Up";
 			sourceTree = "<group>";
@@ -1062,6 +1071,7 @@
 				CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */,
 				CF1E6AE5269A00DB00B8F985 /* PreAddFriends.swift in Sources */,
 				CFE6FD4626620E9A00DF92BD /* Popups.swift in Sources */,
+				7A23683826CB383E00C56A97 /* SignUpView3.swift in Sources */,
 				CF356D322674E3F100BCF572 /* AddFriends.swift in Sources */,
 				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
 				CF30FF93267E955A000B2730 /* SmileNotesCard.swift in Sources */,
@@ -1073,6 +1083,7 @@
 				7A244F8726A7D276000F49ED /* ManDocDataSource.swift in Sources */,
 				7A4E32B726A079F200202BB7 /* Loading.swift in Sources */,
 				CFA5EBDA269F89D600BFEBA2 /* AddFriendSteps.swift in Sources */,
+				7A23683A26CB395200C56A97 /* SignUpView4.swift in Sources */,
 				7A724D3226AC6E800079AA85 /* AdViews.swift in Sources */,
 				7AD362FC26852AE7003F6447 /* FirebaseDataSource.swift in Sources */,
 				7A69EA4726AA65AF00A54B6F /* SmileNote+Schema.swift in Sources */,
@@ -1082,6 +1093,7 @@
 				7A2B1F5D26A645F500EDBEAF /* ThreeCircles.swift in Sources */,
 				7AF686F126BC86C900A287C2 /* Settings2View.swift in Sources */,
 				CF05A8CC26B4239B009618E6 /* bff.swift in Sources */,
+				7A23683626CB324100C56A97 /* SignUpView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
