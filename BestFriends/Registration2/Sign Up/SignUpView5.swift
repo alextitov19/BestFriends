@@ -124,7 +124,7 @@ struct SignUpView5: View {
                     
                 }) {
                     Text("SIGN UP")
-                        .font(.system(size: 24, weight: .semibold))
+                        .font(.system(size: 20, weight: .semibold))
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .frame(height: 60)
