@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-struct SignUpView10: View {
+struct SignUpView11: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
-    @State private var date = Date()
+    @State private var selectedPronoun = "She/Her"
+    private let pronouns = ["She/Her", "He/Him", "Other"]
     
     var body: some View {
         ZStack {
@@ -20,7 +21,7 @@ struct SignUpView10: View {
                 Spacer().frame(height: 80)
                 
                 HStack {
-                    Text("1/3")
+                    Text("2/3")
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(Color(#colorLiteral(red: 0.6782051325, green: 0.5380625725, blue: 0.9619095922, alpha: 1)))
                     
@@ -29,7 +30,7 @@ struct SignUpView10: View {
                 .padding(.horizontal, 40)
                 
                 HStack {
-                    Text("Date of Birth")
+                    Text("Which pronouns do you prefer?")
                         .font(.system(size: 30, weight: .bold))
                     
                     Spacer()
@@ -37,7 +38,7 @@ struct SignUpView10: View {
                 .padding(.horizontal, 40)
                 
                 HStack {
-                    Text("Apple requires BestFriends to acquire your age.")
+                    Text("Your pronoun preference is used only in system conversations. Your friends will not see your selection.")
                         .font(.system(size: 18, weight: .light))
                     
                     Spacer()
@@ -45,9 +46,13 @@ struct SignUpView10: View {
                 .padding(.horizontal, 40)
                 
                 
-                DatePicker("", selection: $date)
-                    .datePickerStyle(WheelDatePickerStyle())
-                    .padding(40)
+                Section {
+                    Picker("Select your pronouns", selection: $selectedPronoun) {
+                        ForEach(pronouns, id: \.self) {
+                            Text($0)
+                        }
+                    }
+                }
                 
                 
                 
@@ -89,9 +94,9 @@ struct SignUpView10: View {
     }
 }
 
-struct SignUpView10Preview : PreviewProvider {
+struct SignUpView11Preview : PreviewProvider {
     static var previews: some View {
-        SignUpView10()
+        SignUpView11()
             .environmentObject(SessionManager())
     }
 }
