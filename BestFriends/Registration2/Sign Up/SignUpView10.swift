@@ -2,12 +2,12 @@
 //  SignUpView6.swift
 //  BestFriends
 //
-//  Created by Alex Titov on 8/21/21.
+//  Created by Alex Titov on 8/22/21.
 //
 
 import SwiftUI
 
-struct SignUpView9: View {
+struct SignUpView10: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
@@ -19,14 +19,31 @@ struct SignUpView9: View {
             VStack {
                 Spacer()
                 
-                Text("Date of Birth")
-                    .font(.system(size: 30, weight: .bold))
-                    .padding()
+                HStack {
+                    Text("1/3")
+                        .font(.system(size: 30, weight: .bold))
+                        .foregroundColor(Color(#colorLiteral(red: 0.6782051325, green: 0.5380625725, blue: 0.9619095922, alpha: 1)))
+                    
+                    Spacer()
+                }
+                .padding(.horizontal, 40)
                 
-                Text("Apple requires BestFriends to acquire your age.")
-                    .font(.system(size: 20, weight: .regular))
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 40)
+                HStack {
+                    Text("Date of Birth")
+                        .font(.system(size: 30, weight: .bold))
+                    
+                    Spacer()
+                }
+                .padding(.horizontal, 40)
+                
+                HStack {
+                    Text("Apple requires BestFriends to acquire your age.")
+                        .font(.system(size: 18, weight: .light))
+                    
+                    Spacer()
+                }
+                .padding(.horizontal, 40)
+                
                 
                 DatePicker("", selection: $date)
                     .datePickerStyle(WheelDatePickerStyle())
@@ -70,9 +87,9 @@ struct SignUpView9: View {
     }
 }
 
-struct SignUpView9Preview : PreviewProvider {
+struct SignUpView10Preview : PreviewProvider {
     static var previews: some View {
-        SignUpView9()
+        SignUpView10()
             .environmentObject(SessionManager())
     }
 }

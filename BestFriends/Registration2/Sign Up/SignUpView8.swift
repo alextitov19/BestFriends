@@ -55,7 +55,7 @@ struct SignUpView8: View {
                         .resizable()
                         .renderingMode(.template)
                         .scaledToFit()
-                        .frame(width: 40, height: 40)
+                        .frame(width: 30, height: 30)
                         .padding(.horizontal, 30)
                         .onTapGesture {
                             self.mode.wrappedValue.dismiss()
