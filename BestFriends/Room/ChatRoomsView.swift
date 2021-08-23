@@ -13,3 +13,10 @@ struct ChatRoomsView: View {
         Color(.green)
     }
 }
+
+struct ChatRoomsViewPreview : PreviewProvider {
+    static var previews: some View {
+        ChatRoomsView()
+            .environmentObject(SessionManager())
+    }
+}
