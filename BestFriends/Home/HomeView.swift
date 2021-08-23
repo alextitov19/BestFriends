@@ -36,7 +36,8 @@ struct HomeView: View {
     @State private var thereAlreadyisARoom = false
     @State private var existingRoomId = ""
     @State private var cantAddMoreFriends = false
-    
+    @State private var startPos : CGPoint = .zero
+    @State private var isSwipping = true
     private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
     
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
@@ -109,6 +110,23 @@ struct HomeView: View {
             PlayerView()
                 .ignoresSafeArea()
                 .blendMode(.screen)
+                .gesture(DragGesture()
+                            .onChanged { gesture in
+                                if self.isSwipping {
+                                    self.startPos = gesture.location
+                                    self.isSwipping.toggle()
+                                }
+                            }
+                            .onEnded { gesture in
+                                let xDist =  abs(gesture.location.x - self.startPos.x)
+                                let yDist =  abs(gesture.location.y - self.startPos.y)
+                                if self.startPos.x > gesture.location.x && yDist < xDist {
+                                    print("Swipe left")
+                                    
+                                }
+                                self.isSwipping.toggle()
+                            }
+                )
             
             VStack {
                 ForEach(stars.indices, id: \.self) { index in
