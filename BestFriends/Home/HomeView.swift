@@ -101,7 +101,7 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("HomeBackground")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
