@@ -8,9 +8,36 @@
 import SwiftUI
 
 struct ChatRoomsView: View {
-        
+    
     var body: some View {
-        Color(.green)
+        ZStack {
+            Image("HomeBackground")
+                .resizable()
+                .rotationEffect(Angle(degrees: 180))
+                .scaledToFill()
+                .ignoresSafeArea()
+            
+            PlayerView()
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
+            VStack {
+                HStack {
+                    Text("Chat")
+                        .font(.system(size: 30, weight: .bold))
+                        .foregroundColor(.white)
+                        .padding(.leading, 20)
+
+                    Spacer()
+                    
+                    Image("addFriend")
+                        .resizable()
+                        .frame(width: 60, height: 60)
+                        .scaledToFit()
+                        .padding(.trailing, 20)
+                }
+            }
+        }
     }
 }
 
