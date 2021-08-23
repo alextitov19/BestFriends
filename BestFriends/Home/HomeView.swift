@@ -38,6 +38,8 @@ struct HomeView: View {
     @State private var cantAddMoreFriends = false
     @State private var startPos : CGPoint = .zero
     @State private var isSwipping = true
+    @State private var showingChatRooms = false
+
     private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
     
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
@@ -121,8 +123,11 @@ struct HomeView: View {
                                 let xDist =  abs(gesture.location.x - self.startPos.x)
                                 let yDist =  abs(gesture.location.y - self.startPos.y)
                                 if self.startPos.x > gesture.location.x && yDist < xDist {
+                                    //Swipe left recognized
                                     print("Swipe left")
-                                    
+                                    withAnimation {
+                                        showingChatRooms.toggle()
+                                    }
                                 }
                                 self.isSwipping.toggle()
                             }
@@ -441,6 +446,11 @@ struct HomeView: View {
                         .offset(y: 100)
                     
                 }
+            }
+            if showingChatRooms {
+                ChatRoomsView()
+                    .animation(.easeInOut(duration: 2.0))
+                    .transition(.move(edge: .trailing))
             }
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
