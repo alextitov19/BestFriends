@@ -26,6 +26,7 @@
 		7A417EC6265ED4B000E95364 /* AdViewFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417EC5265ED4B000E95364 /* AdViewFullScreen.swift */; };
 		7A417EC8265ED52900E95364 /* AdDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417EC7265ED52900E95364 /* AdDataSource.swift */; };
 		7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417ECB265F236700E95364 /* AdPlayerView.swift */; };
+		7A46D14026D4769000255A5C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A46D13F26D4769000255A5C /* SearchBar.swift */; };
 		7A4E32B526A0783300202BB7 /* SettingsInfoPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E32B426A0783300202BB7 /* SettingsInfoPages.swift */; };
 		7A4E32B726A079F200202BB7 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E32B626A079F200202BB7 /* Loading.swift */; };
 		7A4E32FF26A0CABC00202BB7 /* ChangeAdPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E32FE26A0CABC00202BB7 /* ChangeAdPreference.swift */; };
@@ -173,6 +174,7 @@
 		7A417EC5265ED4B000E95364 /* AdViewFullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewFullScreen.swift; sourceTree = "<group>"; };
 		7A417EC7265ED52900E95364 /* AdDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDataSource.swift; sourceTree = "<group>"; };
 		7A417ECB265F236700E95364 /* AdPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdPlayerView.swift; sourceTree = "<group>"; };
+		7A46D13F26D4769000255A5C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		7A4E32B426A0783300202BB7 /* SettingsInfoPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInfoPages.swift; sourceTree = "<group>"; };
 		7A4E32B626A079F200202BB7 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		7A4E32FE26A0CABC00202BB7 /* ChangeAdPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeAdPreference.swift; sourceTree = "<group>"; };
@@ -662,6 +664,7 @@
 				7AA201102635D2E100C9F00C /* RoomRow.swift */,
 				7AA2010E2635D21100C9F00C /* RoomsView.swift */,
 				7AB4744626D3DD6400053E76 /* ChatRoomsView.swift */,
+				7A46D13F26D4769000255A5C /* SearchBar.swift */,
 			);
 			path = Room;
 			sourceTree = "<group>";
@@ -1038,6 +1041,7 @@
 				7AE31CC5262A9C57001EC5A3 /* ConfirmationView.swift in Sources */,
 				D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */,
 				7A5EFEE426B4A2EC00281DDD /* ManagementDocument.swift in Sources */,
+				7A46D14026D4769000255A5C /* SearchBar.swift in Sources */,
 				7AB62A8526426F86005A7744 /* SettingsView.swift in Sources */,
 				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,
 				7AD25A0C26AF913200396CF2 /* amplify/generated/models/Advertisement+Schema.swift in Sources */,

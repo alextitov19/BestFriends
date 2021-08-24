@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ChatRoomsView: View {
     
+    @State private var filterText = ""
+    
     var body: some View {
         ZStack {
             Image("HomeBackground")
@@ -24,7 +26,7 @@ struct ChatRoomsView: View {
             VStack {
                 HStack {
                     Text("Chat")
-                        .font(.system(size: 30, weight: .bold))
+                        .font(.system(size: 40, weight: .bold))
                         .foregroundColor(.white)
                         .padding(.leading, 20)
 
@@ -36,6 +38,11 @@ struct ChatRoomsView: View {
                         .scaledToFit()
                         .padding(.trailing, 20)
                 }
+                .padding(.top, 30)
+
+                SearchBar(text: $filterText)
+                
+                Spacer()
             }
         }
     }
