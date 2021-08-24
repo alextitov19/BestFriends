@@ -11,6 +11,8 @@ struct ChatRoomsView: View {
     
     @State private var filterText = ""
     
+    let rooms: [Room]
+    
     var body: some View {
         ZStack {
             Image("HomeBackground")
@@ -41,8 +43,21 @@ struct ChatRoomsView: View {
                 .padding(.top, 30)
 
                 SearchBar(text: $filterText)
+                    .padding(.vertical, 15)
                 
-                Spacer()
+                ScrollView {
+                    VStack {
+                        ForEach(rooms) { room in
+                            RoomRow(room: room)
+                                .padding()
+                            
+                            Divider()
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.white)
+                .cornerRadius(25)
             }
         }
     }
@@ -50,7 +65,7 @@ struct ChatRoomsView: View {
 
 struct ChatRoomsViewPreview : PreviewProvider {
     static var previews: some View {
-        ChatRoomsView()
+        ChatRoomsView(rooms: [])
             .environmentObject(SessionManager())
     }
 }

@@ -17,7 +17,7 @@ import PhotosUI
 struct HomeView: View {
     
     @ObservedObject var USS: UserSubscriptionService
-    
+
     @State private var showingSheet = false
     @State private var showingActionSheet = false
     @State private var myQRCode: UIImage = UIImage()
@@ -40,6 +40,9 @@ struct HomeView: View {
     @State private var isSwipping = true
     @State private var showingChatRooms = false
 
+    
+    private var rooms: [Room]
+    
     private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
     
     private let randomOffsets : [CGFloat] = [CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140), CGFloat.random(in: -140..<140)]
@@ -61,7 +64,14 @@ struct HomeView: View {
         if userDataSource.doesMyUserExist() {
             let foo = userDataSource.getCurrentUser()
             self.USS = UserSubscriptionService(user: foo)
+            self.rooms = []
+            
             USS.createSubscription()
+
+            for id in USS.user.rooms {
+                self.rooms.append(RoomDataSource().getRoom(id: id))
+            }
+            
         } else {
             fatalError()
         }
@@ -448,7 +458,7 @@ struct HomeView: View {
                 }
             }
             if showingChatRooms {
-                ChatRoomsView()
+                ChatRoomsView(rooms: rooms)
                     .animation(.easeInOut(duration: 2.0))
                     .transition(.move(edge: .trailing))
             }

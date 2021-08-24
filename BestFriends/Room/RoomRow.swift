@@ -29,7 +29,7 @@ struct RoomRow: View {
                     
                     Text(room.name)
                         .font(.system(size: 20, weight: .light))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                     
                     Spacer()
                 }
@@ -39,7 +39,7 @@ struct RoomRow: View {
                     
                     Text(messageBody)
                         .font(.system(size: 16, weight: .light))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                     
                     Spacer()
                 }
@@ -50,8 +50,6 @@ struct RoomRow: View {
             
             Spacer().frame(width: 10)
         }
-        .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
-        .cornerRadius(20)
         
     }
     
