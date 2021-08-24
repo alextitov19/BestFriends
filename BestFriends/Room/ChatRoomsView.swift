@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ChatRoomsView: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+
     @State private var filterText = ""
     
     let rooms: [Room]
