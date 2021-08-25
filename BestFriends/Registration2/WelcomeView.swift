@@ -43,7 +43,7 @@ struct WelcomeView: View {
                 Spacer().frame(height: 300)
                 
                 Button(action: {
-                    
+                    sessionManager.showSignUp()
                 }) {
                     Text("SIGN UP")
                         .frame(maxWidth: .infinity, minHeight: 60)
@@ -57,7 +57,7 @@ struct WelcomeView: View {
                 Spacer().frame(height: 30)
                 
                 Button(action: {
-                    
+                    sessionManager.showLogin()
                 }) {
                     Text("LOG IN")
                         .frame(maxWidth: .infinity, minHeight: 60)

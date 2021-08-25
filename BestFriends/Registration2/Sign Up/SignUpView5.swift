@@ -18,6 +18,7 @@ struct SignUpView5: View {
     @State private var email = ""
     @State private var password = ""
     
+    @State private var errorMessage = ""
     
     var body: some View {
         ZStack {
@@ -120,8 +121,18 @@ struct SignUpView5: View {
                 
                 Spacer().frame(height: 100)
                 
+                Text(errorMessage)
+                    .foregroundColor(.red)
+                    .padding(.horizontal, 20)
+                
                 Button(action: {
-                    
+                    if checkUsername() == false {
+                        errorMessage = "Username is taken or is not valid"
+                    } else if isValidEmail() == false {
+                        errorMessage = "Email is taken or is not valid"
+                    } else {
+                        
+                    }
                 }) {
                     Text("SIGN UP")
                         .font(.system(size: 20, weight: .semibold))
@@ -166,6 +177,34 @@ struct SignUpView5: View {
                 Spacer()
             }
         }
+    }
+    
+    private func checkUsername() -> Bool {
+        let usernames = ManDocDataSource().getManDoc(id: "takenUsernames").usernames ?? []
+        let currentusername = username.lowercased()
+        for uname in usernames {
+            if uname == currentusername {
+                return false
+            }
+        }
+        return true
+    }
+    
+    private func isValidEmail() -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        if emailPred.evaluate(with: email) == false {
+            return false
+        }
+        
+        let emails = ManDocDataSource().getManDoc(id: "takenEmails").emails ?? []
+        for foo in emails {
+            if foo == email {
+                return false
+            }
+        }
+        return true
     }
     
 }

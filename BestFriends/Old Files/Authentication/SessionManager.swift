@@ -9,6 +9,7 @@ import Amplify
 import AmplifyPlugins
 
 enum AppState {
+    case welcome
     case signUp
     case login
     case confirmationCode(username: String, password: String)
@@ -26,7 +27,7 @@ enum AppState {
 }
 
 final class SessionManager: ObservableObject {
-    @Published var appState: AppState = .login
+    @Published var appState: AppState = .welcome
     
     func getCurrentAuthUser() {
         if Amplify.Auth.getCurrentUser() != nil {
@@ -36,7 +37,7 @@ final class SessionManager: ObservableObject {
                 signOut()
             }
         } else {
-            appState = .login
+            appState = .welcome
         }
     }
     
@@ -62,6 +63,10 @@ final class SessionManager: ObservableObject {
     
     func showSignUp() {
         appState = .signUp
+    }
+    
+    func showWelcome() {
+        appState = .welcome
     }
     
     func showLogin() {

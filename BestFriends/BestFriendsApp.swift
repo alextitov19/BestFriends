@@ -51,11 +51,14 @@ struct BestFriendsApp: App {
     var body: some Scene {
         WindowGroup {
             switch sessionManager.appState {
+            case .welcome:
+                WelcomeView()
+                    .environmentObject(sessionManager)
             case .login:
                 LoginView()
                     .environmentObject(sessionManager)
             case .signUp:
-                SignUpView11()
+                SignUpView1()
                     .environmentObject(sessionManager)
             case .confirmationCode(let username, let password):
                 ConfirmationView(username: username, password: password)

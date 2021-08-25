@@ -12,6 +12,8 @@ struct SignUpView3: View {
     @EnvironmentObject var sessionManager: SessionManager
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
+    @State private var readyToGo = false
+
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
@@ -59,13 +61,15 @@ struct SignUpView3: View {
                 Spacer().frame(height: 100)
                 
                 Button(action: {
-                    
+                    readyToGo = true
                 }) {
                     Image("ButtonArrowIcon")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 100, height: 100)
                 }
+                
+                NavigationLink("", destination: SignUpView4().environmentObject(sessionManager), isActive: $readyToGo)
             }
             
             VStack {
