@@ -10,6 +10,8 @@ import SwiftUI
 struct ChatRoomsView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    
+    @Binding var showingChatRooms: Bool
 
     @State private var filterText = ""
     
@@ -60,14 +62,33 @@ struct ChatRoomsView: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color.white)
                 .cornerRadius(25)
+                HStack {
+                    Image("home-alt2")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .scaledToFill()
+                    .onTapGesture {
+                        showingChatRooms = false
+                    }
+                    .padding(10)
+                    
+                    Image("happy-face icon")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+                    .scaledToFill()
+                    .onTapGesture {
+                        sessionManager.showSmileNotes()
+                    }
+                    .padding(10)
+                }
             }
         }
     }
 }
 
-struct ChatRoomsViewPreview : PreviewProvider {
-    static var previews: some View {
-        ChatRoomsView(rooms: [])
-            .environmentObject(SessionManager())
-    }
-}
+//struct ChatRoomsViewPreview : PreviewProvider {
+//    static var previews: some View {
+//        ChatRoomsView(rooms: [], showingChatRooms: <#Binding<Bool>#>)
+//            .environmentObject(SessionManager())
+//    }
+//}

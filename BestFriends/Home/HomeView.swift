@@ -38,7 +38,7 @@ struct HomeView: View {
     @State private var cantAddMoreFriends = false
     @State private var startPos : CGPoint = .zero
     @State private var isSwipping = true
-    @State private var showingChatRooms = false
+    @State var showingChatRooms = false
 
     
     private var rooms: [Room]
@@ -458,7 +458,7 @@ struct HomeView: View {
                 }
             }
             if showingChatRooms {
-                ChatRoomsView(rooms: rooms)
+                ChatRoomsView(showingChatRooms: $showingChatRooms, rooms: rooms)
                     .animation(.easeInOut(duration: 2.0))
                     .transition(.move(edge: .trailing))
             }
