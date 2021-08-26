@@ -20,6 +20,8 @@ struct SignUpView5: View {
     
     @State private var errorMessage = ""
     
+    @State private var readyToGo = false
+    
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.932589829, green: 0.9314347506, blue: 0.9335541129, alpha: 1))
@@ -126,13 +128,7 @@ struct SignUpView5: View {
                     .padding(.horizontal, 20)
                 
                 Button(action: {
-                    if checkUsername() == false {
-                        errorMessage = "Username is taken or is not valid"
-                    } else if isValidEmail() == false {
-                        errorMessage = "Email is taken or is not valid"
-                    } else {
-                        
-                    }
+                    
                 }) {
                     Text("SIGN UP")
                         .font(.system(size: 20, weight: .semibold))
@@ -156,6 +152,8 @@ struct SignUpView5: View {
                     
                     Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
                 }
+                
+                NavigationLink("", destination: SignUpView6(username: username, firstname: firstname, lastname: lastname, email: email, password: password).environmentObject(sessionManager), isActive: $readyToGo)
             }
             
             VStack {
@@ -173,10 +171,59 @@ struct SignUpView5: View {
                             self.mode.wrappedValue.dismiss()
                         }
                 }
+                .navigationBarTitle("")
+                .navigationBarHidden(true)
                 
                 Spacer()
             }
         }
+    }
+    
+    private func checkFields() {
+        if firstname == "" {
+            return
+        }
+        
+        if lastname == "" {
+            return
+        }
+        
+        if username == "" {
+            return
+        }
+        
+        if email == "" {
+            return
+        }
+        
+        if password == "" {
+            return
+        }
+        
+        if checkUsername() == false {
+            errorMessage = "Username is taken or is not valid"
+            return
+        }
+        
+        if isValidEmail() == false {
+            errorMessage = "Email is taken or is not valid"
+            return
+        }
+        
+        if password.count < 8 {
+            errorMessage = "Password must be 8 characters long and contain 1 capital letter."
+            return
+        }
+        
+        let capitalLetterRegEx  = ".*[A-Z]+.*"
+        let texttest = NSPredicate(format:"SELF MATCHES %@", capitalLetterRegEx)
+        let capitalresult = texttest.evaluate(with: password)
+        if capitalresult == false {
+            errorMessage = "Password must be 8 characters long and contain 1 capital letter."
+            return
+        }
+        
+        readyToGo = true
     }
     
     private func checkUsername() -> Bool {

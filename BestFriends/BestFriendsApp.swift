@@ -70,7 +70,8 @@ struct BestFriendsApp: App {
                 RoomsView()
                     .environmentObject(sessionManager)
             case .smileNotes:
-                HideoutsView()
+                SmileVaultView()
+                    .environmentObject(sessionManager)
             case .settings:
                 Settings2View()
                     .environmentObject(sessionManager)

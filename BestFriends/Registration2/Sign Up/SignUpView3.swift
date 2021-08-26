@@ -96,6 +96,8 @@ struct SignUpView3: View {
                 
                 Spacer()
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
     
