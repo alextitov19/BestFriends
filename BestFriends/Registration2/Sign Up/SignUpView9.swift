@@ -13,7 +13,9 @@ struct SignUpView9: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
-        
+    
+    @State private var adPref: [Int] = []
+    
     let username: String
     let firstname: String
     let lastname: String
@@ -57,49 +59,75 @@ struct SignUpView9: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack {
                         HStack {
-                            Text("Lifestyle")
-                                .frame(width: 150, height: 200)
-                                .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
-                                .cornerRadius(15)
-                                .padding(5)
+                            Button(action: {
+                                update(i: 1)
+                            }) {
+                                Text("Lifestyle")
+                                    .frame(width: 150, height: 200)
+                                    .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                                    .cornerRadius(15)
+                                    .padding(5)
+                            }
                             
-                            Text("Sports / Fitness")
-                                .frame(width: 150, height: 200)
-                                .background(Color(#colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)))
-                                .cornerRadius(15)
-                                .padding(5)
+                            Button(action: {
+                                update(i: 2)
+                            }) {
+                                Text("Sports / Fitness")
+                                    .frame(width: 150, height: 200)
+                                    .background(Color(#colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)))
+                                    .cornerRadius(15)
+                                    .padding(5)
+                            }
                         }
                         
                         HStack {
-                            Text("Beauty")
-                                .frame(width: 150, height: 200)
-                                .background(Color(#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)))
-                                .cornerRadius(15)
-                                .padding(5)
-
-                            Text("Fashion")
-                                .frame(width: 150, height: 200)
-                                .background(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
-                                .cornerRadius(15)
-                                .padding(5)
+                            Button(action: {
+                                update(i: 3)
+                            }) {
+                                Text("Beauty")
+                                    .frame(width: 150, height: 200)
+                                    .background(Color(#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)))
+                                    .cornerRadius(15)
+                                    .padding(5)
+                            }
+                            
+                            Button(action: {
+                                update(i: 4)
+                            }) {
+                                Text("Fashion")
+                                    .frame(width: 150, height: 200)
+                                    .background(Color(#colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)))
+                                    .cornerRadius(15)
+                                    .padding(5)
+                            }
                         }
                         
                         HStack {
-                            Text("Travel")
-                                .frame(width: 150, height: 200)
-                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                .cornerRadius(15)
-                                .padding(5)
-
-                            Text("Health / Nutrition")
-                                .frame(width: 150, height: 200)
-                                .background(Color(#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)))
-                                .cornerRadius(15)
-                                .padding(5)
+                            Button(action: {
+                                update(i: 5)
+                            }) {
+                                Text("Travel")
+                                    .frame(width: 150, height: 200)
+                                    .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                    .cornerRadius(15)
+                                    .padding(5)
+                            }
+                            
+                            Button(action: {
+                                update(i: 6)
+                            }) {
+                                Text("Health / Nutrition")
+                                    .frame(width: 150, height: 200)
+                                    .background(Color(#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)))
+                                    .cornerRadius(15)
+                                    .padding(5)
+                            }
                         }
                         
                         Button(action: {
-                            
+                            if adPref.count > 0 {
+                                signUp()
+                            }
                         }) {
                             Text("SUBMIT")
                                 .font(.system(size: 20, weight: .semibold))
@@ -117,6 +145,8 @@ struct SignUpView9: View {
                 
                 Spacer()
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
             
             VStack {
                 HStack {
@@ -140,6 +170,15 @@ struct SignUpView9: View {
         }
     }
     
+    private func update(i: Int) {
+        if let index = adPref.firstIndex(of: i) {
+            adPref.remove(at: index)
+        } else {
+            adPref.append(i)
+        }
+        adPref.sort()
+    }
+    
     private func signUp() {
         let pushManager = PushNotificationManager(userID: username)
         
@@ -147,7 +186,7 @@ struct SignUpView9: View {
         
         print("Part 1")
         
-       
+        
         
         var user = User(
             id: username,
@@ -157,7 +196,7 @@ struct SignUpView9: View {
             birthday: Temporal.Date(date),
             pronouns: pronoun,
             location: location,
-            adPreference: [1, 2, 3],
+            adPreference: adPref,
             deviceFCMToken: pushManager.getFCMToken() ?? "No token",
             isOnline: true,
             secretPin: "noPin",

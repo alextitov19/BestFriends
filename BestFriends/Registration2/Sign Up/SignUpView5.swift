@@ -58,18 +58,6 @@ struct SignUpView5: View {
                 .padding(.bottom, 30)
                 
                 VStack {
-                    TextField("  Username", text: $username)
-                        .frame(maxWidth: .infinity, maxHeight: 40)
-                        .font(.system(size: 24))
-                        .foregroundColor(.black)
-                        .background(Color.clear)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
-                        .padding(.horizontal, 40)
-                        .padding(.vertical, 10)
-                    
                     HStack {
                         TextField("  First Name", text: $firstname)
                             .frame(maxWidth: .infinity, maxHeight: 40)
@@ -80,6 +68,9 @@ struct SignUpView5: View {
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.gray, lineWidth: 1)
                             )
+                            .multilineTextAlignment(.center)
+                            .autocapitalization(.none)
+                            .disableAutocorrection(true)
                             .padding(.leading, 40)
                             .padding(.trailing, 5)
                         
@@ -92,11 +83,14 @@ struct SignUpView5: View {
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.gray, lineWidth: 1)
                             )
+                            .multilineTextAlignment(.center)
+                            .autocapitalization(.none)
+                            .disableAutocorrection(true)
                             .padding(.trailing, 40)
                             .padding(.leading, 5)
                     }
                     
-                    TextField("  Email", text: $username)
+                    TextField("  Username", text: $username)
                         .frame(maxWidth: .infinity, maxHeight: 40)
                         .font(.system(size: 24))
                         .foregroundColor(.black)
@@ -105,6 +99,24 @@ struct SignUpView5: View {
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.gray, lineWidth: 1)
                         )
+                        .multilineTextAlignment(.center)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 10)
+                    
+                    TextField("  Email", text: $email)
+                        .frame(maxWidth: .infinity, maxHeight: 40)
+                        .font(.system(size: 24))
+                        .foregroundColor(.black)
+                        .background(Color.clear)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.gray, lineWidth: 1)
+                        )
+                        .multilineTextAlignment(.center)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
                         .padding(.horizontal, 40)
                         .padding(.top, 10)
                     
@@ -117,6 +129,9 @@ struct SignUpView5: View {
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.gray, lineWidth: 1)
                         )
+                        .multilineTextAlignment(.center)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
                         .padding(.horizontal, 40)
                         .padding(.vertical, 10)
                 }
@@ -125,10 +140,11 @@ struct SignUpView5: View {
                 
                 Text(errorMessage)
                     .foregroundColor(.red)
+                    .multilineTextAlignment(.center)
                     .padding(.horizontal, 20)
                 
                 Button(action: {
-                    
+                    checkFields()
                 }) {
                     Text("SIGN UP")
                         .font(.system(size: 20, weight: .semibold))
@@ -137,7 +153,6 @@ struct SignUpView5: View {
                         .frame(height: 60)
                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(20)
-                        
                         .padding(.horizontal, 40)
                     
                 }

@@ -91,6 +91,8 @@ struct SignUpView8: View {
                 
                 Spacer()
             }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
             
             VStack {
                 HStack {
