@@ -21,6 +21,7 @@ struct SignUpView9: View {
     let password: String
     let date: Date
     let pronoun: String
+    let location: String
     
     var body: some View {
         ZStack {
@@ -155,7 +156,7 @@ struct SignUpView9: View {
             email: email,
             birthday: Temporal.Date(date),
             pronouns: pronoun,
-            location: "N/A",
+            location: location,
             adPreference: [1, 2, 3],
             deviceFCMToken: pushManager.getFCMToken() ?? "No token",
             isOnline: true,

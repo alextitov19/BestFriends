@@ -12,7 +12,8 @@ struct ConfirmationView: View {
     @EnvironmentObject var sessionManager: SessionManager
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
-    
+    let username: String
+    let password: String
     
     @State private var code = ""
     
@@ -48,7 +49,7 @@ struct ConfirmationView: View {
                     .padding(40)
                 
                 Button(action: {
-                    
+                    sessionManager.confirm(username: username, password: password, code: code)
                 }) {
                     Text("VERIFY")
                         .font(.system(size: 20, weight: .semibold))

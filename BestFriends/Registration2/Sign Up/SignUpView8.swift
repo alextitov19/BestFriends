@@ -13,10 +13,13 @@ struct SignUpView8: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     
     @State private var selectedPronoun = "She/Her"
-    private let pronouns = ["She/Her", "He/Him", "Other"]
+    private let pronouns = ["She/Her", "He/Him", "They/Them", "Other", "Prefer not to say"]
     
     @State private var readyToGo = false
-
+    @State private var locationString = ""
+    
+    private let locationManager = LocationManager()
+    
     let username: String
     let firstname: String
     let lastname: String
@@ -33,6 +36,27 @@ struct SignUpView8: View {
                     Text("2/3")
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(Color(#colorLiteral(red: 0.6782051325, green: 0.5380625725, blue: 0.9619095922, alpha: 1)))
+                        .onAppear {
+                            guard let exposedLocation = self.locationManager.exposedLocation else {
+                                print("User denied location")
+                                return
+                            }
+                            
+                            self.locationManager.getPlace(for: exposedLocation) { placemark in
+                                guard let placemark = placemark else { return }
+                                
+                                locationString = ""
+                                if let country = placemark.country {
+                                    locationString = locationString + "\(country)"
+                                }
+                                if let state = placemark.administrativeArea {
+                                    locationString = locationString + ", \(state)"
+                                }
+                                if let town = placemark.locality {
+                                    locationString = locationString + ", \(town)"
+                                }
+                            }
+                        }
                     
                     Spacer()
                 }
@@ -99,7 +123,7 @@ struct SignUpView8: View {
                     
                 }
                 
-                NavigationLink("", destination: SignUpView9(username: username, firstname: firstname, lastname: lastname, email: email, password: password, date: date, pronoun: selectedPronoun).environmentObject(sessionManager), isActive: $readyToGo)
+                NavigationLink("", destination: SignUpView9(username: username, firstname: firstname, lastname: lastname, email: email, password: password, date: date, pronoun: selectedPronoun, location: locationString).environmentObject(sessionManager), isActive: $readyToGo)
 
             }
         }

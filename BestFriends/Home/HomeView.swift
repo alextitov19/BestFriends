@@ -114,14 +114,10 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            Image("HomeBackground")
+            Image("HomeBackground2")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
-            
-            PlayerView()
-                .ignoresSafeArea()
-                .blendMode(.screen)
                 .gesture(DragGesture()
                             .onChanged { gesture in
                                 if self.isSwipping {
