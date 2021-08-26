@@ -30,7 +30,7 @@ struct BroadcastView: View {
                     .foregroundColor(.white)
                     .padding()
                 
-                Text("Broadcast good and exciting news to your best friends by sending them a push notification!")
+                Text("Broadcast cool, exciting news to your best friends by sending them a push notification!")
                     .font(.system(size: 25, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
