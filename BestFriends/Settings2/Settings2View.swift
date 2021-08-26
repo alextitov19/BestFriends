@@ -307,7 +307,7 @@ struct Settings2View: View {
                             .frame(width: 40, height: 40)
                             .scaledToFill()
                             .onTapGesture {
-                                sessionManager.showRooms()
+                                sessionManager.getCurrentAuthUser()
                             }
                             .padding(20)
                             .colorInvert()

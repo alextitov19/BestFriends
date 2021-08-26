@@ -146,6 +146,8 @@ struct SignUpView9: View {
         
         print("Part 1")
         
+       
+        
         var user = User(
             id: username,
             firstName: firstname,
@@ -154,10 +156,10 @@ struct SignUpView9: View {
             birthday: Temporal.Date(date),
             pronouns: pronoun,
             location: "N/A",
-            adPreference: "selectedOptions",
+            adPreference: [1, 2, 3],
             deviceFCMToken: pushManager.getFCMToken() ?? "No token",
             isOnline: true,
-            secretPin: 0,
+            secretPin: "noPin",
             tokens: 0,
             background: 0,
             notificationsBroadcast: true,

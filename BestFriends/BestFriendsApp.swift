@@ -61,25 +61,20 @@ struct BestFriendsApp: App {
                 SignUpView1()
                     .environmentObject(sessionManager)
             case .confirmationCode(let username, let password):
-                ConfirmationView(username: username, password: password)
+//                ConfirmationView(username: username, password: password)
+                SignUpView1()
                     .environmentObject(sessionManager)
             case .home:
                 HomeView()
                     .environmentObject(sessionManager)
-            case .rooms:
-                RoomsView()
-                    .environmentObject(sessionManager)
             case .smileNotes:
-                SmileVaultView()
+                HomeView()
                     .environmentObject(sessionManager)
             case .settings:
                 Settings2View()
                     .environmentObject(sessionManager)
             case .chat(let room):
                 ChatView(room: room)
-                    .environmentObject(sessionManager)
-            case .infoPages(let username, let password):
-                InfoViewPage1(username: username, password: password)
                     .environmentObject(sessionManager)
             case .loading(let page):
                 Loading(page: page)

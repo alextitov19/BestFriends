@@ -14,11 +14,9 @@ enum AppState {
     case login
     case confirmationCode(username: String, password: String)
     case home
-    case rooms
     case settings
     case smileNotes
     case chat(room: Room)
-    case infoPages(username: String, password: String)
     case loading(page: String)
     case pin(room: Room)
     case isInvitedToChat(invitedRoomId: String)
@@ -41,9 +39,6 @@ final class SessionManager: ObservableObject {
         }
     }
     
-    func showRooms() {
-        appState = .rooms
-    }
     
     func chat(room: Room) {
         appState = .chat(room: room)
@@ -71,10 +66,6 @@ final class SessionManager: ObservableObject {
     
     func showLogin() {
         appState = .login
-    }
-    
-    func showInfoPages(username: String, password: String) {
-        appState = .infoPages(username: username, password: password)
     }
     
     func showPin(room: Room) {
@@ -140,7 +131,7 @@ final class SessionManager: ObservableObject {
                 if confirmResult.isSignupComplete {
                     DispatchQueue.main.async {
 //                        self?.showLogin()
-                        self?.showInfoPages(username: username, password: password)
+                        self?.getCurrentAuthUser()
                     }
                 }
                 

@@ -43,8 +43,6 @@ struct Loading: View {
             sessionManager.showSettings()
         case "home":
             sessionManager.getCurrentAuthUser()
-        case "rooms":
-            sessionManager.showRooms()
         default:
             fatalError("switching to a page that is not an option in Loading.swift")
         }

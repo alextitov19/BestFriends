@@ -227,7 +227,7 @@ struct HomeView: View {
                             .onTapGesture {
                                 loadingShowing = true
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                    sessionManager.showRooms()
+                                    sessionManager.getCurrentAuthUser()
                                 }
                             }
                             .padding(10)

@@ -207,7 +207,7 @@ struct PinView: View {
                         )
                 }
                 
-                Button(action: {sessionManager.showRooms()}) {
+                Button(action: {sessionManager.getCurrentAuthUser()}) {
                     Text("Return")
                     .frame(width: 150, height: 50, alignment: .center)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
