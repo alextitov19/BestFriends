@@ -602,6 +602,7 @@
 			children = (
 				7A23683226CB1DAC00C56A97 /* Sign Up */,
 				7A7A198626CACEAE0018D957 /* WelcomeView.swift */,
+				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
 			);
 			path = Registration2;
 			sourceTree = "<group>";
@@ -704,7 +705,6 @@
 				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
 				D1D27D39264303E300BDA75F /* InfoPages.swift */,
 				CFA5EBD9269F89D600BFEBA2 /* AddFriendSteps.swift */,
-				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
 				7AE31CC4262A9C57001EC5A3 /* OldConfirmationView.swift */,
 				7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */,
 				7AC0DA9B262BAF3B007FC643 /* UserManager.swift */,

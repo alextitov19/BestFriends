@@ -19,10 +19,20 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Image("SignUpPinBackground")
-                    .resizable()
+                Color(#colorLiteral(red: 0.6942788959, green: 0.5351929069, blue: 0.9598786235, alpha: 1))
                     .ignoresSafeArea()
-                    .scaledToFill()
+                
+                ZStack {
+                    Circle()
+                        .frame(width: 400, height: 400)
+                        .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+                        .offset(x: 200, y: -400)
+                    
+                    Circle()
+                        .frame(width: 300, height: 300)
+                        .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+                        .offset(x: -200, y: 400)
+                }
                 
                 VStack {
                     Spacer()
@@ -38,33 +48,45 @@ struct LoginView: View {
                     
                     VStack {
                         Spacer()
-                            .frame(height: 75)
+                            .frame(height: 35)
                         
+                        Text("Welcome Back")
+                            .font(.system(size: 40, weight: .bold))
+                            .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                            .padding(30)
                         
-                        TextField("Username", text: $username)
-                            .frame(width: 225, height: 45, alignment: .center)
-                            .multilineTextAlignment(.center)
-                            .font(.title)
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                            .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                            .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            .disableAutocorrection(true)
+                        TextField("  Username", text: $username)
+                            .frame(maxWidth: .infinity, maxHeight: 40)
+                            .font(.system(size: 24))
+                            .foregroundColor(.black)
+                            .background(Color.clear)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.gray, lineWidth: 1)
+                            )
+                            .multilineTextAlignment(.leading)
                             .autocapitalization(.none)
+                            .disableAutocorrection(true)
+                            .padding(.horizontal, 40)
+                            .padding(.top, 10)
                         
                         Spacer()
                             .frame(height: 20)
                         
-                        SecureField("Password", text: $password)
-                            .frame(width: 225, height: 45, alignment: .center)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)))
-                            .font(.title)
-                            .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                            .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            .disableAutocorrection(true)
+                        SecureField("  Password", text: $password)
+                            .frame(maxWidth: .infinity, maxHeight: 40)
+                            .font(.system(size: 24))
+                            .foregroundColor(.black)
+                            .background(Color.clear)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.gray, lineWidth: 1)
+                            )
+                            .multilineTextAlignment(.leading)
                             .autocapitalization(.none)
+                            .disableAutocorrection(true)
+                            .padding(.horizontal, 40)
+                            .padding(.top, 10)
                         
                         Spacer()
                             .frame(height: 10)
@@ -89,14 +111,15 @@ struct LoginView: View {
                                 isErrorHidden = false
                             }
                         }) {
-                            Text("Login")
-                                .frame(width: 150, height: 50, alignment: .center)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.title)
-                                .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
-                                .cornerRadius(25)
+                            Text("LOGIN")
+                                .font(.system(size: 20, weight: .semibold))
+                                .foregroundColor(.white)
+                                .frame(width: 150)
+                                .frame(height: 60)
+                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .cornerRadius(20)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                          
+                            
                             
                         }
                         
@@ -106,13 +129,7 @@ struct LoginView: View {
                         Spacer()
                             .frame(height: 100)
                         
-                        Button("Sign Up", action: sessionManager.showSignUp)
-                            .frame(width: 150, height: 50, alignment: .center)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.title)
-                            .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
-                            .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
                         
                         Spacer()
                             .frame(height: 45)
@@ -122,12 +139,9 @@ struct LoginView: View {
                                 destination: ForgotPassword(),
                                 label: {
                                     Text("Forgot Password")
+                                        .underline()
                                         .frame(width: 150, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 25)
-                                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
-                                        )
                                 })
                                 .padding(5)
                                 
@@ -136,12 +150,10 @@ struct LoginView: View {
                                 destination: ForgotUsername().environmentObject(sessionManager),
                                 label: {
                                     Text("Forgot Username")
+                                        .underline()
                                         .frame(width: 150, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 25)
-                                                .stroke(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), lineWidth: 2)
-                                        )
+                                        
                                 })
                                 .padding(5)
                         }

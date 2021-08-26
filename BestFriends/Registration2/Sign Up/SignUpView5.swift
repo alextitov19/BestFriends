@@ -171,27 +171,8 @@ struct SignUpView5: View {
                 
                 NavigationLink("", destination: SignUpView6(username: username, firstname: firstname, lastname: lastname, email: email, password: password).environmentObject(sessionManager), isActive: $readyToGo)
             }
-            
-            VStack {
-                HStack {
-                    Spacer()
-                    
-                    Image("X")
-                        .resizable()
-                        .renderingMode(.template)
-                        .foregroundColor(.black)
-                        .scaledToFit()
-                        .frame(width: 30, height: 30)
-                        .padding(.horizontal, 30)
-                        .onTapGesture {
-                            self.mode.wrappedValue.dismiss()
-                        }
-                }
-                .navigationBarTitle("")
-                .navigationBarHidden(true)
-                
-                Spacer()
-            }
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
     

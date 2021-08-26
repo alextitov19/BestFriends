@@ -59,7 +59,7 @@ struct WelcomeView: View {
                 Button(action: {
                     sessionManager.showLogin()
                 }) {
-                    Text("LOG IN")
+                    Text("LOGIN")
                         .frame(maxWidth: .infinity, minHeight: 60)
                         .font(.system(size: 20, weight: .bold))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
