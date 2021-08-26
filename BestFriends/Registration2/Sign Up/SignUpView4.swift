@@ -86,14 +86,6 @@ struct SignUpView4: View {
                         }
                     
                     Spacer()
-                    
-                    Text("SKIP")
-                        .font(.system(size: 20, weight: .bold))
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 30)
-                        .onTapGesture {
-                            self.mode.wrappedValue.dismiss()
-                        }
                 }
                 
                 Spacer()
