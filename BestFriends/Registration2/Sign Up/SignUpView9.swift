@@ -45,7 +45,7 @@ struct SignUpView9: View {
                 .padding(.horizontal, 40)
                 
                 HStack {
-                    Text("We don’t use cookies to stalk you outside BestFriends. Instead, we ask you to share with us your interests and show ads based on your preference. You can always revise your decisions later in the setting.")
+                    Text("We don’t use cookies to stalk you outside of BestFriends. Instead, we simply 'Ask' you to share with us your interests. We will show ads based on your preferences. You can always revise your decisions later in Settings.")
                         .font(.system(size: 18, weight: .light))
                     
                     Spacer()
@@ -62,7 +62,7 @@ struct SignUpView9: View {
                                 .cornerRadius(15)
                                 .padding(5)
                             
-                            Text("Fitness")
+                            Text("Sports / Fitness")
                                 .frame(width: 150, height: 200)
                                 .background(Color(#colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)))
                                 .cornerRadius(15)
@@ -90,7 +90,7 @@ struct SignUpView9: View {
                                 .cornerRadius(15)
                                 .padding(5)
 
-                            Text("Health")
+                            Text("Health / Nutrition")
                                 .frame(width: 150, height: 200)
                                 .background(Color(#colorLiteral(red: 0.2588235438, green: 0.7568627596, blue: 0.9686274529, alpha: 1)))
                                 .cornerRadius(15)

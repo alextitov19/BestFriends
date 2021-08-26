@@ -44,7 +44,7 @@ struct SignUpView7: View {
                 .padding(.horizontal, 40)
                 
                 HStack {
-                    Text("Apple requires BestFriends to acquire your age.")
+                    Text("Apple requires BestFriends to ask your age.")
                         .font(.system(size: 18, weight: .light))
                     
                     Spacer()
