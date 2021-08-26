@@ -26,6 +26,7 @@ struct SignUpView5: View {
         ZStack {
             Color(#colorLiteral(red: 0.932589829, green: 0.9314347506, blue: 0.9335541129, alpha: 1))
                 .ignoresSafeArea()
+            
             ZStack {
                 Circle()
                     .frame(width: 400, height: 400)
