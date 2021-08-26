@@ -45,14 +45,14 @@ struct SignUpView2: View {
                     .scaledToFit()
                     .padding(.horizontal, 20)
                 
-                Text("BFF")
+                Text("BFFs")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Connect with up to 5 close friends and we help you keep it small and close.")
+                Text("Connect with up to 5 of your closest friends - keeping it personal and secure.")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
