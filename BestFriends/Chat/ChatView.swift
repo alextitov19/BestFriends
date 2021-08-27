@@ -216,20 +216,19 @@ struct ChatView: View {
                         .scaleEffect(isAtMaxScale ? 0.5 : 1)
                         .onAppear {
                             if USS.user.pendingNotifications.count > 0 {
+                                print("Pending notifs count: ", USS.user.pendingNotifications.count)
                                 withAnimation(self.animation, {
                                     self.isAtMaxScale.toggle()
                                 })
                             }
                         }
                         .onTapGesture {
-                            withAnimation {
                                 notificationsShowing.toggle()
                                 if notificationsShowing == false {
                                     var user = USS.user
                                     user.pendingNotifications = []
                                     userDataSource.updateUser(user: user)
                                 }
-                            }
                         }
                     
                     Button(action: {
@@ -501,8 +500,7 @@ struct ChatView: View {
                 }
             }
             .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
-            .cornerRadius(30)
-            .transition(.scale)
+            .cornerRadius(10)
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onShake {
