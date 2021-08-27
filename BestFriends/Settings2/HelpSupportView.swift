@@ -66,7 +66,7 @@ struct HelpSupportView: View {
                 
                 Link(destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!) {
                 HStack {
-                    Text("Report to BestFriends")
+                    Text("Report Objectionable Content & Behavior")
                         .font(.system(size: 20))
                         .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                     
@@ -79,12 +79,27 @@ struct HelpSupportView: View {
                         .frame(width: 25, height: 25)
                 }
                 }
+                
+                Divider()
+                
+                Link(destination: URL(string: "https://socialtechlabs.com/report-copyright-infringements/")!) {
+                HStack {
+                    Text("Report Copyright Infringement")
+                        .font(.system(size: 20))
+                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    
+                    Spacer()
+                    
+                    Image("arrowRight")
+                        .renderingMode(.template)
+                        .resizable()
+                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .frame(width: 25, height: 25)
+                }
+                }
+                
                 Spacer()
                 
-                Text("Wanna know 'How to?'\nHere we can help you learn.")
-                    .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .padding(20)
             }
             .padding(30)
             .navigationBarHidden(true)
