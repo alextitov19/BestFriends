@@ -22,7 +22,7 @@ struct ChatView: View {
     @State var stickerPopoverShowing = false
     
     @ObservedObject var textBindingManager = TextBindingManager(limit: 4)
-
+    
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
     @State var adButtonsOffset: CGFloat = -270
@@ -46,7 +46,7 @@ struct ChatView: View {
     
     
     @State private var newPinPopupShowing = false
-
+    
     var adIDs: [String] = []
     
     let adDataSource = AdDataSource()
@@ -223,12 +223,12 @@ struct ChatView: View {
                             }
                         }
                         .onTapGesture {
-                                notificationsShowing.toggle()
-                                if notificationsShowing == false {
-                                    var user = USS.user
-                                    user.pendingNotifications = []
-                                    userDataSource.updateUser(user: user)
-                                }
+                            notificationsShowing.toggle()
+                            if notificationsShowing == false {
+                                var user = USS.user
+                                user.pendingNotifications = []
+                                userDataSource.updateUser(user: user)
+                            }
                         }
                     
                     Button(action: {
@@ -459,7 +459,7 @@ struct ChatView: View {
                         .multilineTextAlignment(.center)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
-
+                    
                     Button(action: {
                         if textBindingManager.text.count == 4 {
                             var newuser = USS.user
@@ -483,14 +483,11 @@ struct ChatView: View {
                 .background(Color(#colorLiteral(red: 0.4790705442, green: 0.3037698865, blue: 0.836648941, alpha: 0.7836921892)))
                 .cornerRadius(20)
                 .padding(.horizontal, 40)
-
+                
             }
-        }
-        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-            ImagePicker(image: self.$inputImage)
             
-            VStack {
-                if notificationsShowing == true {
+            if notificationsShowing == true {
+                VStack {
                     ForEach(USS.user.pendingNotifications.reversed(), id: \.self) { foo in
                         Text(foo)
                             .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -498,15 +495,23 @@ struct ChatView: View {
                             .padding()
                     }
                 }
+                .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
+                .cornerRadius(10)
             }
-            .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
-            .cornerRadius(10)
+        }
+        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+            ImagePicker(image: self.$inputImage)
+            
+            
+            
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onShake {
             AnalyticsDataSource().recordPhoneGotShakenEvent()
             isShakingCoolPresented = true
         }
+        
+        
     }
     
     private func hideChat() {
@@ -514,13 +519,13 @@ struct ChatView: View {
             newPinPopupShowing = true
         } else {
             var rooms = USS.user.hiddenRooms
-        if rooms.contains(room.id) == false {
-            rooms.append(room.id)
-            var updatedUser = USS.user
-            updatedUser.hiddenRooms = rooms
-            UserDataSource().updateUser(user: updatedUser)
-            sessionManager.showPin(room: room)
-        }
+            if rooms.contains(room.id) == false {
+                rooms.append(room.id)
+                var updatedUser = USS.user
+                updatedUser.hiddenRooms = rooms
+                UserDataSource().updateUser(user: updatedUser)
+                sessionManager.showPin(room: room)
+            }
         }
     }
     
