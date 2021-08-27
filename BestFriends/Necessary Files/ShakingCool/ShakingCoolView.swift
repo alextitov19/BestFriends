@@ -141,7 +141,7 @@ struct ShakingCoolView: View {
                         AnalyticsDataSource().recordShakingCoolDepartureEvent()
                         isAdPresented = true
                         DispatchQueue.main.asyncAfter(deadline: .now() + 8.5) {
-                            sessionManager.getCurrentAuthUser()
+                            sessionManager.showHideouts()
                         }
                     }
             }

@@ -182,6 +182,15 @@ struct SmileVaultView: View {
                         }
                         .padding(20)
                     
+                    Image("hideouts")
+                        .resizable()
+                        .frame(width: 60, height: 60)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.showHideouts()
+                        }
+                        .padding(10)
+                    
                     Image("settings icon")
                         .resizable()
                         .frame(width: 40, height: 40)
