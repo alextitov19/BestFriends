@@ -54,7 +54,7 @@ struct AddFriendSteps: View {
                         .font(.system(size: 22))
                         .fontWeight(.regular)
                         
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
                         .multilineTextAlignment(.center)
                         .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
@@ -76,7 +76,7 @@ struct AddFriendSteps: View {
                         
                         .font(.system(size: 22))
                         .fontWeight(.regular)
-                        .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
                         
                         .multilineTextAlignment(.center)
                         .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -100,7 +100,7 @@ struct AddFriendSteps: View {
                             
                             .font(.system(size: 22))
                             .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
                             
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -125,7 +125,7 @@ struct AddFriendSteps: View {
                             
                             .font(.system(size: 22))
                             .fontWeight(.regular)
-                            .foregroundColor(Color(#colorLiteral(red: 0, green: 0.9791358113, blue: 0, alpha: 1)))
+                            .foregroundColor(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
                             
                             .multilineTextAlignment(.center)
                             .frame(width: 375, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
