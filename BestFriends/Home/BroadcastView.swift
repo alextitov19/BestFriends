@@ -18,12 +18,34 @@ struct BroadcastView: View {
     private var pushNS = PushNotificationSender()
     
     var body: some View {
-        ZStack {
-            Image("SignUpPinBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+//        ZStack {
+         
+            ZStack {
+                Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
+                    .ignoresSafeArea()
+                ZStack {
+                    Circle()
+                        .frame(width: 400, height: 400)
+                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                        .offset(x: 200, y: -400)
+                    
+                    Circle()
+                        .frame(width: 300, height: 300)
+                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                        .offset(x: -200, y: -100)
+                    
+                    Circle()
+                        .frame(width: 200, height: 200)
+                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                        .offset(x: 150, y: 100)
+                }
+                
             
+//            Image("SignUpPinBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
             VStack {
                 Text("Broadcast")
                     .font(.system(size: 50, weight: .bold))
