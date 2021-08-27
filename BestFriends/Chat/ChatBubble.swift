@@ -16,8 +16,8 @@ struct ChatBubble: View {
     @State private var showingActionSheet = false
     @State private var isImagePresented = false
     @State private var currentLink = ""
-    @State private var backgroundColor1 = Color(.purple)
-    @State private var backgroundColor2 = Color(#colorLiteral(red: 1, green: 0.6660452485, blue: 0, alpha: 1))
+    @State private var backgroundColor1 = Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 0.7475871361))
+    @State private var backgroundColor2 = Color(#colorLiteral(red: 1, green: 0.6660452485, blue: 0, alpha: 0.75))
 
     init(msg: Message, messageDS: MessageDataSource, myuser: User) {
         message = msg

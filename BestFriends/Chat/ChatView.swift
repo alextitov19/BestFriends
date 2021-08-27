@@ -21,6 +21,8 @@ struct ChatView: View {
     @State var showingMediaMenu = false
     @State var stickerPopoverShowing = false
     
+    @ObservedObject var textBindingManager = TextBindingManager(limit: 4)
+
     @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
     @State var adButtonsOffset: CGFloat = -270
@@ -42,6 +44,9 @@ struct ChatView: View {
     private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
     @ObservedObject var USS: UserSubscriptionService
     
+    
+    @State private var newPinPopupShowing = false
+
     var adIDs: [String] = []
     
     let adDataSource = AdDataSource()
@@ -326,7 +331,7 @@ struct ChatView: View {
                                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                                 
                                 // string contains non-whitespace characters
-                                let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
+                                let message = Message(id: Helper().randomString(length: 20), senderName: "\(user.firstName) \(user.lastName.first!)", senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970))
                                 messageDataSource.sendMessage(message: message)
                                 currentBody = ""
                             }
@@ -434,6 +439,53 @@ struct ChatView: View {
                 .background(Color(#colorLiteral(red: 0.4978310466, green: 0.2762668133, blue: 1, alpha: 1)))
                 .cornerRadius(20)
             }
+            
+            if newPinPopupShowing {
+                VStack {
+                    Text("Set up a 4 digit pin to use Hide Chat!")
+                        .font(.system(size: 20, weight: .light))
+                        .foregroundColor(.white)
+                        .padding(20)
+                    
+                    TextField("New pin", text: $textBindingManager.text)
+                        .keyboardType(.decimalPad)
+                        .frame(maxWidth: .infinity, maxHeight: 40)
+                        .font(.system(size: 24))
+                        .foregroundColor(.white)
+                        .background(Color.clear)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.gray, lineWidth: 1)
+                        )
+                        .multilineTextAlignment(.center)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+
+                    Button(action: {
+                        if textBindingManager.text.count == 4 {
+                            var newuser = USS.user
+                            newuser.secretPin = textBindingManager.text
+                            userDataSource.updateUser(user: newuser)
+                            newPinPopupShowing = false
+                        }
+                    }) {
+                        Text("CONFIRM")
+                            .font(.system(size: 20, weight: .semibold))
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 60)
+                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .cornerRadius(20)
+                            .padding(.horizontal, 40)
+                        
+                    }
+                    .padding(.vertical, 20)
+                }
+                .background(Color(#colorLiteral(red: 0.4790705442, green: 0.3037698865, blue: 0.836648941, alpha: 0.7836921892)))
+                .cornerRadius(20)
+                .padding(.horizontal, 40)
+
+            }
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage)
@@ -460,13 +512,17 @@ struct ChatView: View {
     }
     
     private func hideChat() {
-        var rooms = user.hiddenRooms
+        if USS.user.secretPin == "noPin" {
+            newPinPopupShowing = true
+        } else {
+            var rooms = USS.user.hiddenRooms
         if rooms.contains(room.id) == false {
             rooms.append(room.id)
-            var updatedUser = user
+            var updatedUser = USS.user
             updatedUser.hiddenRooms = rooms
             UserDataSource().updateUser(user: updatedUser)
             sessionManager.showPin(room: room)
+        }
         }
     }
     

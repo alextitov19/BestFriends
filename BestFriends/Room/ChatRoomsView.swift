@@ -39,6 +39,9 @@ struct ChatRoomsView: View {
                     VStack {
                         ForEach(rooms) { room in
                             RoomRow(room: room)
+                                .onTapGesture {
+                                    sessionManager.chat(room: room)
+                                }
                                 .padding()
                             
                             Divider()
@@ -58,15 +61,27 @@ struct ChatRoomsView: View {
                     }
                     .padding(10)
                     
-                    Image("happy-face icon")
+                    Image("hideouts")
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                    .scaledToFill()
+                    .onTapGesture {
+                        showingChatRooms = false
+                    }
+                    .padding(10)
+                    
+                    
+                    
+                    Image("settings icon")
                     .resizable()
                     .frame(width: 40, height: 40)
                     .scaledToFill()
                     .onTapGesture {
-                        sessionManager.showSmileNotes()
+                        sessionManager.showSettings()
                     }
                     .padding(10)
                 }
+                .padding(.bottom, 10)
             }
         }
     }
