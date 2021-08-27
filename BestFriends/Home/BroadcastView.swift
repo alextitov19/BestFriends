@@ -18,34 +18,34 @@ struct BroadcastView: View {
     private var pushNS = PushNotificationSender()
     
     var body: some View {
-//        ZStack {
-         
+        //        ZStack {
+        
+        ZStack {
+            Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
+                .ignoresSafeArea()
             ZStack {
-                Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
-                    .ignoresSafeArea()
-                ZStack {
-                    Circle()
-                        .frame(width: 400, height: 400)
-                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                        .offset(x: 200, y: -400)
-                    
-                    Circle()
-                        .frame(width: 300, height: 300)
-                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                        .offset(x: -200, y: -100)
-                    
-                    Circle()
-                        .frame(width: 200, height: 200)
-                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                        .offset(x: 150, y: 100)
-                }
+                Circle()
+                    .frame(width: 400, height: 400)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: 200, y: -400)
                 
+                Circle()
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: -200, y: -100)
+                
+                Circle()
+                    .frame(width: 200, height: 200)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: 150, y: 100)
+            }
             
-//            Image("SignUpPinBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//
+            
+            //            Image("SignUpPinBackground")
+            //                .resizable()
+            //                .ignoresSafeArea()
+            //                .scaledToFill()
+            //
             VStack {
                 Text("Broadcast")
                     .font(.system(size: 50, weight: .bold))
@@ -91,14 +91,25 @@ struct BroadcastView: View {
             VStack {
                 Spacer()
                 
-                Image("home-alt2")
-                    .resizable()
-                    .frame(width: 40, height: 40)
-                    .scaledToFill()
-                    .padding()
-                    .onTapGesture {
-                        sessionManager.getCurrentAuthUser()
-                    }
+                HStack {
+                    Image("home-alt2")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .padding()
+                        .onTapGesture {
+                            sessionManager.getCurrentAuthUser()
+                        }
+                    
+                    Image("hideouts")
+                        .resizable()
+                        .frame(width: 60, height: 60)
+                        .scaledToFill()
+                        .onTapGesture {
+                            sessionManager.showHideouts()
+                        }
+                        .padding(10)
+                }
             }
             .padding()
         }
