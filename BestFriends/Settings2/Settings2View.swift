@@ -271,6 +271,9 @@ struct Settings2View: View {
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
                                                 .frame(width: 25, height: 25)
                                         }
+                                        .onTapGesture {
+                                            sessionManager.signOut()
+                                        }
                                     }
                                 }
                                 .padding()

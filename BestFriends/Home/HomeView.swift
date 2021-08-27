@@ -17,7 +17,7 @@ import PhotosUI
 struct HomeView: View {
     
     @ObservedObject var USS: UserSubscriptionService
-
+    
     @State private var showingSheet = false
     @State private var showingActionSheet = false
     @State private var myQRCode: UIImage = UIImage()
@@ -39,7 +39,7 @@ struct HomeView: View {
     @State private var startPos : CGPoint = .zero
     @State private var isSwipping = true
     @State var showingChatRooms = false
-
+    
     
     private var rooms: [Room]
     
@@ -67,7 +67,7 @@ struct HomeView: View {
             self.rooms = []
             
             USS.createSubscription()
-
+            
             for id in USS.user.rooms {
                 self.rooms.append(RoomDataSource().getRoom(id: id))
             }
@@ -166,144 +166,63 @@ struct HomeView: View {
                 
                 Spacer()
                 
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        Spacer()
-                            .frame(width: 370)
-                        
-                        Text("< drag")
-                            .foregroundColor(.white)
-                            .font(.system(size: 24, weight: .light))
-                        
-                        Button(action: {
-                            //Display invite menu
-                            if USS.user.friends.count < 5 {
-                                self.showingActionSheet = true
-                            } else {
-                                cantAddMoreFriends = true
-                            }
-                            
-                        }) {
-                            Image("person-add icon")
-                                .resizable()
-                                .frame(width: 60, height: 60)
-                                .sheet(isPresented: $showingSheet) {
-                                    QRCodeView(image: myQRCode)
-                                }
-                            
+                HStack {
+                    Button(action: {
+                        //Display invite menu
+                        if USS.user.friends.count < 5 {
+                            self.showingActionSheet = true
+                        } else {
+                            cantAddMoreFriends = true
                         }
-                        .actionSheet(isPresented: $showingActionSheet) {
-                            ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes."), buttons: [
-                                .default(Text("Get my QR code")) { showMyQR() },
-                                .default(Text("My Gallery")) {
-                                    let photos = PHPhotoLibrary.authorizationStatus()
-                                    if photos == .notDetermined {
-                                        PHPhotoLibrary.requestAuthorization({status in
-                                            if status == .authorized{
-                                                self.showingImagePicker = true
-                                                
-                                            } else {}
-                                        })
-                                    } else {
-                                        self.showingImagePicker = true
-                                    }
-                                },
-                                // Rob added a third option in the Add Friends popup on Landing page
-                                .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
-                                //
-                                .cancel()
-                            ])
-                        }
-                        .padding(10)
-                        
-                        Image("chat icon")
+                    }) {
+                        Image("addFriend")
                             .resizable()
-                            .frame(width: 55, height: 55)
-                            .scaledToFill()
-                            .onTapGesture {
-                                loadingShowing = true
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                    sessionManager.getCurrentAuthUser()
-                                }
-                            }
-                            .padding(10)
-                            .sheet(isPresented: $showingAddFriendInstructions) {
-                                AddFriendSteps()
-                            }
-                        
-                        Image("happy-face icon")
-                            .resizable()
-                            .frame(width: 55, height: 55)
-                            .scaledToFill()
-                            .onTapGesture {
-                                loadingShowing = true
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                    sessionManager.showSmileNotes()
-                                }
-                            }
-                            .padding(10)
-                            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                                ImagePicker(image: self.$inputImage)
-                            }
-                        
-                        Image("whitePhone")
-                            .resizable()
-                            .frame(width: 55, height: 55)
-                            .scaledToFill()
-                            .onTapGesture {
-                                loadingShowing = true
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                    sessionManager.showShakingCool()
-                                }
-                            }
-                            .padding(10)
-                        
-                        Image("settings icon")
-                            .resizable()
-                            .frame(width: 55, height: 55)
-                            .scaledToFill()
-                            .onTapGesture {
-                                sessionManager.showSettings()
-                            }
-                            .padding(10)
-                        
-                        Image("horn")
-                            .resizable()
-                            .frame(width: 55, height: 55)
-                            .scaledToFill()
-                            .onTapGesture {
-                                sessionManager.showBroadcast()
-                            }
-                            .padding(10)
-                        
-                        Image("bell")
-                            .resizable()
-                            .frame(width: 55, height: 55)
+                            .frame(width: 70, height: 70)
                             .scaledToFill()
                             .scaleEffect(isAtMaxScale ? 0.5 : 1)
                             .padding(10)
                             .onAppear {
-                                if USS.user.pendingNotifications.count > 0 {
+                                if USS.user.friends.count < 1 {
                                     withAnimation(self.animation, {
                                         self.isAtMaxScale.toggle()
                                     })
                                 }
                             }
-                            .onTapGesture {
-                                withAnimation {
-                                    notificationsShowing.toggle()
-                                    if notificationsShowing == false {
-                                        var user = USS.user
-                                        user.pendingNotifications = []
-                                        userDataSource.updateUser(user: user)
-                                    }
-                                }
+                            .sheet(isPresented: $showingSheet) {
+                                QRCodeView(image: myQRCode)
                             }
-                        
-                        Spacer()
-                            .frame(width: 50)
-                        
+                            .sheet(isPresented: $showingAddFriendInstructions) {
+                                AddFriendSteps()
+                            }
+                            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                                ImagePicker(image: self.$inputImage)
+                            }
                     }
+                    .actionSheet(isPresented: $showingActionSheet) {
+                        ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes."), buttons: [
+                            .default(Text("Get my QR code")) { showMyQR() },
+                            .default(Text("My Gallery")) {
+                                let photos = PHPhotoLibrary.authorizationStatus()
+                                if photos == .notDetermined {
+                                    PHPhotoLibrary.requestAuthorization({status in
+                                        if status == .authorized{
+                                            self.showingImagePicker = true
+                                            
+                                        } else {}
+                                    })
+                                } else {
+                                    self.showingImagePicker = true
+                                }
+                            },
+                            // Rob added a third option in the Add Friends popup on Landing page
+                            .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
+                            //
+                            .cancel()
+                        ])
+                    }
+                    .padding(10)
+                    
+                    Spacer()
                 }
             }
             
@@ -378,10 +297,9 @@ struct HomeView: View {
                 VStack {
                     Text("There already is a chat room with all the friends you've selected. Do you want to use that one or make a new chat room?")
                         .foregroundColor(.white)
-                        .font(.system(size: 22, weight: .bold))
-                        .frame(width: 250)
+                        .font(.system(size: 22, weight: .thin))
                         .multilineTextAlignment(.center)
-                        .padding(20)
+                        .padding(30)
                     
                     HStack {
                         Button(action: {
@@ -410,7 +328,7 @@ struct HomeView: View {
                                 .frame(width: 150, height: 50, alignment: .center)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 20))
-                                .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
@@ -454,7 +372,7 @@ struct HomeView: View {
                 }
             }
             if showingChatRooms {
-                ChatRoomsView(showingChatRooms: $showingChatRooms, rooms: rooms)
+                ChatRoomsView(showingChatRooms: $showingChatRooms, user: USS.user, rooms: rooms)
                     .animation(.easeInOut(duration: 2.0))
                     .transition(.move(edge: .trailing))
             }

@@ -12,9 +12,8 @@ struct ChatRoomsView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     @Binding var showingChatRooms: Bool
-
-    @State private var filterText = ""
     
+    let user: User
     let rooms: [Room]
     
     var body: some View {
@@ -25,10 +24,6 @@ struct ChatRoomsView: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
-            PlayerView()
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
             VStack {
                 HStack {
                     Text("Chat")
@@ -37,17 +32,8 @@ struct ChatRoomsView: View {
                         .padding(.leading, 20)
 
                     Spacer()
-                    
-                    Image("addFriend")
-                        .resizable()
-                        .frame(width: 60, height: 60)
-                        .scaledToFit()
-                        .padding(.trailing, 20)
                 }
                 .padding(.top, 30)
-
-                SearchBar(text: $filterText)
-                    .padding(.vertical, 15)
                 
                 ScrollView {
                     VStack {
