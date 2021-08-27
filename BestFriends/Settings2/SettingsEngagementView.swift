@@ -14,6 +14,7 @@ struct SettingsEngagementView: View {
     var body: some View {
         switch index {
         case 1:
+            Link(destination: URL(string: "https://socialtechlabs.com/beta-team/")!) {
             ZStack {
                 RoundedRectangle(cornerRadius: 25) //Rectangle background
                     .frame(maxWidth: .infinity)
@@ -64,6 +65,7 @@ struct SettingsEngagementView: View {
                         .frame(maxWidth: 25, maxHeight: 6)
                 }
                 .offset(x: 125, y: 65)
+            }
             }
         case 2:
             ZStack {
