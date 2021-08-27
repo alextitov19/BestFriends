@@ -55,9 +55,13 @@ struct NotificationsView: View {
                 Spacer()
                     .frame(height: 50)
                 
+                NavigationLink(
+                    destination: NotificationsOnOffPage(),
+                    label: {
                 Toggle("Chat Notifications", isOn: $chatNotifications)
                     .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                
+                    }
+                    )
                 Divider()
                 
                 Toggle("Broadcast Notifications", isOn: $broadcastNotifications)

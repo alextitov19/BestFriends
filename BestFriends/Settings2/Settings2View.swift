@@ -50,12 +50,12 @@ struct Settings2View: View {
                                 .padding(.leading, 10)
                             
                             // The main functionality of the app
-                            Text("Functions")
-                                .font(.system(size: 30, weight: .bold))
-                                .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
-                                .offset(x: 10, y: 10)
-                            
-                            SettingsFunctionView()
+//                            Text("Functions")
+//                                .font(.system(size: 30, weight: .bold))
+//                                .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
+//                                .offset(x: 10, y: 10)
+//
+//                            SettingsFunctionView()
                             
                             // Overlay of the 3 into rectangle things
                             Text("Engagement")
@@ -79,14 +79,6 @@ struct Settings2View: View {
                                             destination: MyAccountView(),
                                             label: {
                                                 HStack {
-                                                    Image("home-alt2")
-                                                        .resizable()
-                                                        .frame(width: 30, height: 30)
-                                                        .scaledToFit()
-                                                        .colorInvert()
-                                                        .onReceive(timer) { time in
-                                                            cycleEngagement()
-                                                        }
                                                     
                                                     Text("My Account")
                                                         .font(.system(size: 20))
@@ -106,17 +98,9 @@ struct Settings2View: View {
                                         Divider()
                                         
                                         NavigationLink(
-                                            destination: NotificationsView(),
+                                            destination: NotificationsOnOffPage(),
                                             label: {
                                                 HStack {
-                                                    Image("home-alt2")
-                                                        .resizable()
-                                                        .frame(width: 30, height: 30)
-                                                        .scaledToFit()
-                                                        .colorInvert()
-                                                        .onReceive(timer) { time in
-                                                            cycleEngagement()
-                                                        }
                                                     
                                                     Text("Notifications")
                                                         .font(.system(size: 20))
@@ -138,14 +122,6 @@ struct Settings2View: View {
                                             destination: CustomizationView(),
                                             label: {
                                                 HStack {
-                                                    Image("home-alt2")
-                                                        .resizable()
-                                                        .frame(width: 30, height: 30)
-                                                        .scaledToFit()
-                                                        .colorInvert()
-                                                        .onReceive(timer) { time in
-                                                            cycleEngagement()
-                                                        }
                                                     
                                                     Text("Customization")
                                                         .font(.system(size: 20))
@@ -169,14 +145,6 @@ struct Settings2View: View {
                                             destination: HelpSupportView(),
                                             label: {
                                                 HStack {
-                                                    Image("home-alt2")
-                                                        .resizable()
-                                                        .frame(width: 30, height: 30)
-                                                        .scaledToFit()
-                                                        .colorInvert()
-                                                        .onReceive(timer) { time in
-                                                            cycleEngagement()
-                                                        }
                                                     
                                                     Text("Help & Support")
                                                         .font(.system(size: 20))
@@ -198,49 +166,12 @@ struct Settings2View: View {
                                             destination: TermsConditionsView(),
                                             label: {
                                                 HStack {
-                                                    Image("home-alt2")
-                                                        .resizable()
-                                                        .frame(width: 30, height: 30)
-                                                        .scaledToFit()
-                                                        .colorInvert()
-                                                        .onReceive(timer) { time in
-                                                            cycleEngagement()
-                                                        }
                                                     
                                                     Text("Terms & Conditions")
                                                         .font(.system(size: 20))
                                                         .foregroundColor(.black)
                                                     
-                                                    Spacer().frame(maxHeight: 0)
-                                                    
-                                                    Image("arrowRight")
-                                                        .resizable()
-                                                        .frame(width: 25, height: 25)
-                                                        .scaledToFit()
-                                                        .colorInvert()
-                                                }
-                                            })
-                                        
-                                        Divider()
-                                        
-                                        NavigationLink(
-                                            destination: ReportAbuseView(),
-                                            label: {
-                                                HStack {
-                                                    Image("home-alt2")
-                                                        .resizable()
-                                                        .frame(width: 30, height: 30)
-                                                        .scaledToFit()
-                                                        .colorInvert()
-                                                        .onReceive(timer) { time in
-                                                            cycleEngagement()
-                                                        }
-                                                    
-                                                    Text("Report Abuse")
-                                                        .font(.system(size: 20))
-                                                        .foregroundColor(.black)
-                                                    
-                                                    Spacer().frame(maxHeight: 0)
+                                                    Spacer()
                                                     
                                                     Image("arrowRight")
                                                         .resizable()
@@ -253,11 +184,6 @@ struct Settings2View: View {
                                         Divider()
                                         
                                         HStack {
-                                            Image("home-alt2")
-                                                .renderingMode(.template)
-                                                .resizable()
-                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-                                                .frame(width: 30, height: 30)
                                             
                                             Text("Sign Out")
                                                 .font(.system(size: 20))
@@ -301,26 +227,6 @@ struct Settings2View: View {
                             .scaledToFill()
                             .onTapGesture {
                                 sessionManager.getCurrentAuthUser()
-                            }
-                            .padding(20)
-                            .colorInvert()
-                        
-                        Image("chat icon")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .scaledToFill()
-                            .onTapGesture {
-                                sessionManager.getCurrentAuthUser()
-                            }
-                            .padding(20)
-                            .colorInvert()
-                        
-                        Image("happy-face icon")
-                            .resizable()
-                            .frame(width: 40, height: 40)
-                            .scaledToFill()
-                            .onTapGesture {
-                                sessionManager.showSmileNotes()
                             }
                             .padding(20)
                             .colorInvert()

@@ -40,40 +40,16 @@ struct HelpSupportView: View {
                     
                     Spacer()
                         .frame(height: 50)
-                    
-                    HStack {
-                        Text("Onboarding Tutorial")
-                            .font(.system(size: 20))
-                        
-                        Spacer()
-                        
-                        Image("arrowRight")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-                            .colorInvert()
-                    }
-                    
+                                        
                     Divider()
                     
-                    HStack {
-                        Text("Add Friends")
-                            .font(.system(size: 20))
-                        
-                        Spacer()
-                        
-                        Image("arrowRight")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-                            .colorInvert()
-                    }
-                    
-                    Divider()
-                    
+                    NavigationLink(
+                        destination: RemoveFriend(),
+                        label: {
                     HStack {
                         Text("Delete Friends")
                             .font(.system(size: 20))
+                            .foregroundColor(.black)
                         
                         Spacer()
                         
@@ -83,25 +59,12 @@ struct HelpSupportView: View {
                             .scaledToFit()
                             .colorInvert()
                     }
-                    
-                    Divider()
-                    
-                    HStack {
-                        Text("Block Friends")
-                            .font(.system(size: 20))
-                        
-                        Spacer()
-                        
-                        Image("arrowRight")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-                            .colorInvert()
-                    }
+                        })
                     
                     Divider()
                 }
                 
+                Link(destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!) {
                 HStack {
                     Text("Report to BestFriends")
                         .font(.system(size: 20))
@@ -115,7 +78,7 @@ struct HelpSupportView: View {
                         .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                         .frame(width: 25, height: 25)
                 }
-                
+                }
                 Spacer()
                 
                 Text("Wanna know 'How to?'\nHere we can help you learn.")

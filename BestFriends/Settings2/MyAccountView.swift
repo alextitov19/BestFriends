@@ -39,50 +39,63 @@ struct MyAccountView: View {
                 
                 Spacer()
                     .frame(height: 50)
-                
-                HStack {
-                    Text("Change Password")
-                        .font(.system(size: 20))
-                    
-                    Spacer().frame(maxHeight: 0)
-                    
-                    Image("arrowRight")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .scaledToFit()
-                        .colorInvert()
-                }
-                
-                Divider()
-                
-                HStack {
-                    Text("Change PIN for Hide Chat")
-                        .font(.system(size: 20))
-                    
-                    Spacer()
-                    
-                    Image("arrowRight")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .scaledToFit()
-                        .colorInvert()
-                }
+                NavigationLink(
+                    destination: ResetPassword(),
+                    label: {
+                        HStack {
+                            Text("Change Password")
+                                .font(.system(size: 20))
+                                .foregroundColor(.black)
+                            
+                            Spacer().frame(maxHeight: 0)
+                            
+                            Image("arrowRight")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .scaledToFit()
+                                .colorInvert()
+                        }
+                    })
                 
                 Divider()
                 
-                HStack {
-                    Text("Delete Account")
-                        .font(.system(size: 20))
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-                    
-                    Spacer().frame(maxHeight: 0)
-                    
-                    Image("arrowRight")
-                        .renderingMode(.template)
-                        .resizable()
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-                        .frame(width: 25, height: 25)
-                }
+                NavigationLink(
+                    destination: ChangePin(),
+                    label: {
+                        HStack {
+                            Text("Change PIN for Hide Chat")
+                                .font(.system(size: 20))
+                                .foregroundColor(.black)
+                            
+                            Spacer()
+                            
+                            Image("arrowRight")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .scaledToFit()
+                                .colorInvert()
+                        }
+                    })
+                
+                Divider()
+                
+                NavigationLink(
+                    destination: DeleteMyAccount(),
+                    label: {
+                        HStack {
+                            Text("Delete Account")
+                                .font(.system(size: 20))
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
+                            
+                            Spacer().frame(maxHeight: 0)
+                            
+                            Image("arrowRight")
+                                .renderingMode(.template)
+                                .resizable()
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
+                                .frame(width: 25, height: 25)
+                        }
+                    })
                 
                 Spacer()
             }

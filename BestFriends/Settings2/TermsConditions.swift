@@ -40,33 +40,43 @@ struct TermsConditionsView: View {
                 Spacer()
                     .frame(height: 50)
                 
-                HStack {
-                    Text("Privacy Policy")
-                        .font(.system(size: 20))
+                Link(destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!) {
                     
-                    Spacer().frame(maxHeight: 0)
-                    
-                    Image("arrowRight")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .scaledToFit()
-                        .colorInvert()
+                    HStack {
+                        Text("Privacy Policy")
+                            .font(.system(size: 20))
+                            .foregroundColor(.black)
+
+                        Spacer().frame(maxHeight: 0)
+                        
+                        Image("arrowRight")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .scaledToFit()
+                            .colorInvert()
+                    }
                 }
                 
                 Divider()
                 
-                HStack {
-                    Text("Terms of Serivce")
-                        .font(.system(size: 20))
-                    
-                    Spacer()
-                    
-                    Image("arrowRight")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .scaledToFit()
-                        .colorInvert()
+                Link(destination: URL(string: "https://socialtechlabs.com/terms-service/")!) {
+                    HStack {
+                        Text("Terms of Serivce")
+                            .font(.system(size: 20))
+                            .foregroundColor(.black)
+                        
+                        Spacer()
+                        
+                        Image("arrowRight")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .scaledToFit()
+                            .colorInvert()
+                    }
                 }
+                
+                
+                
                 
                 Spacer()
             }

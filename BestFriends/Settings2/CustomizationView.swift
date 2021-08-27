@@ -76,62 +76,56 @@ struct CustomizationView: View {
                     }
                     
                     Divider()
-                    
-                    HStack {
-                        Text("Chat Background")
-                            .font(.system(size: 20))
-                        
-                        Spacer()
-                        
-                        Image("arrowRight")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-                            .colorInvert()
-                    }
+                    NavigationLink(
+                        destination: ChangeBackground(),
+                        label: {
+                            HStack {
+                                Text("Chat Background")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(.black)
+
+                                Spacer()
+                                
+                                Image("arrowRight")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .scaledToFit()
+                                    .colorInvert()
+                            }
+                        })
                     
                     Divider()
                 }
                 
-                HStack {
-                    VStack {
-                        Text("Change Ad Preference")
-                            .font(.system(size: 20))
+                NavigationLink(
+                    destination: ChangeAdPreference(),
+                    label: {
                         
-                        Text("Ads you see are based on your interests")
-                            .font(.system(size: 10, weight: .light))
-                    }
-                    
-                    Spacer()
-                    
-                    Image("arrowRight")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .scaledToFit()
-                        .colorInvert()
-                }
+                        HStack {
+                            VStack {
+                                Text("Change Ad Preference")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(.black)
+                                
+                                Text("Ads you see are based on your interests")
+                                    .font(.system(size: 10, weight: .light))
+                                    .foregroundColor(.black)
+                            }
+                            
+                            Spacer()
+                            
+                            Image("arrowRight")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .scaledToFit()
+                                .colorInvert()
+                        }
+                        
+                    })
                 
                 Divider()
                 
-                HStack {
-                    Text("Set up Photo Shake")
-                        .font(.system(size: 20))
-                    
-                    Spacer()
-                    
-                    Image("arrowRight")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .scaledToFit()
-                        .colorInvert()
-                }
-                
                 Spacer()
-                
-                Text("Customize the appearances and set up with ad preferences and Photo Shake.")
-                    .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
-                    .multilineTextAlignment(.center)
-                    .padding(20)
                 
                 Button(action: {
                     saveData()

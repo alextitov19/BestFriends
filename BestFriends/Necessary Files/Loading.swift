@@ -15,7 +15,7 @@ struct Loading: View {
     var body: some View {
         
         ZStack {
-            Image("Firstname")
+            Image("blueBackground")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
