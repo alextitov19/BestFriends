@@ -66,7 +66,7 @@ struct ChatRoomsView: View {
                     .frame(width: 60, height: 60)
                     .scaledToFill()
                     .onTapGesture {
-                        showingChatRooms = false
+                        sessionManager.showHideouts()
                     }
                     .padding(10)
                     

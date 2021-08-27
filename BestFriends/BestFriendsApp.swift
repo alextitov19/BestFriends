@@ -19,7 +19,7 @@ struct BestFriendsApp: App {
     init() {
         configureAmplify()
         FirebaseApp.configure()
-//        sessionManager.signOut()
+        sessionManager.signOut()
         
         //        if Amplify.Auth.getCurrentUser() != nil {
         //            let id  = Amplify.Auth.getCurrentUser()!.username
@@ -38,7 +38,7 @@ struct BestFriendsApp: App {
         //        }
         //        AdDataSource().createAd()
         
-                sessionManager.getCurrentAuthUser()
+//                sessionManager.getCurrentAuthUser()
         
         NotificationCenter.default.addObserver(forName: UIApplication.didEnterBackgroundNotification, object: nil, queue: .main) { _ in
             // Background...
@@ -67,7 +67,7 @@ struct BestFriendsApp: App {
                 HomeView()
                     .environmentObject(sessionManager)
             case .smileNotes:
-                HomeView()
+                SmileVaultView()
                     .environmentObject(sessionManager)
             case .settings:
                 Settings2View()
@@ -89,6 +89,9 @@ struct BestFriendsApp: App {
                     .environmentObject(sessionManager)
             case .broadcast:
                 BroadcastView()
+                    .environmentObject(sessionManager)
+            case .hideouts:
+                HideoutsView()
                     .environmentObject(sessionManager)
             }
             

@@ -19,15 +19,27 @@ struct SmileVaultView: View {
     
     var body: some View {
         ZStack {
-            Image("SignUpPinBackground")
-                .resizable()
+            Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
                 .ignoresSafeArea()
-                .scaledToFill()
+            ZStack {
+                Circle()
+                    .frame(width: 400, height: 400)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: 200, y: -400)
+                
+                Circle()
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: -200, y: -100)
+                
+                Circle()
+                    .frame(width: 200, height: 200)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: 150, y: 100)
+            }
             
             VStack {
-                Text("SmileVault")
-                    .font(.system(size: 40))
-                    .foregroundColor(.white)
+                Spacer().frame(height: 30)
                 
                 HStack {
                     Text(selectedFriendName)
@@ -145,6 +157,17 @@ struct SmileVaultView: View {
                 Spacer()
                     .frame(height: 20)
                            
+                
+            }
+            
+            VStack {
+                Text("SmileVault")
+                    .font(.system(size: 40))
+                    .foregroundColor(.white)
+                    .padding(.vertical, 20)
+                
+                Spacer()
+                
                 HStack {
                     Image("home-alt2")
                         .resizable()
@@ -156,16 +179,6 @@ struct SmileVaultView: View {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 11.5) {
                                 sessionManager.getCurrentAuthUser()
                             }
-                        }
-                        .padding(20)
-                    
-                    Image("chat icon")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            AnalyticsDataSource().recordSmileVaultDepartureEvent()
-                            isAdPresented = true
                         }
                         .padding(20)
                     
