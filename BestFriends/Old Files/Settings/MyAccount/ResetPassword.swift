@@ -14,35 +14,67 @@ struct ResetPassword: View {
     @State private var newPassword: String = ""
     @State private var string = ""
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     
     var body: some View {
         
         ZStack {
             
-            Image("SignUpPinBackground")
-                .resizable()
+            Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
                 .ignoresSafeArea()
-                .scaledToFill()
+            ZStack {
+                Circle()
+                    .frame(width: 400, height: 400)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: 200, y: -400)
+                
+                Circle()
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: -200, y: -100)
+                
+                Circle()
+                    .frame(width: 200, height: 200)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: 150, y: 100)
+            }
             
             VStack {
-//                Text("Reset Password")
-//                    .font(.system(size: 30))
-//                    .foregroundColor(.white)
-//                    .multilineTextAlignment(.center)
+                HStack {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        Image("arrowRight")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .scaledToFit()
+                            .colorInvert()
+                            .rotationEffect(Angle(degrees: 180))
+                    }
+                    Spacer()
+                }
+                Spacer()
+            }
+            
+            
+            VStack {
+                //                Text("Reset Password")
+                //                    .font(.system(size: 30))
+                //                    .foregroundColor(.white)
+                //                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 50)
                 
-                Text("Password reset \(string)")
+                Text(string)
                     .font(.system(size: 35))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .isHidden(string.count > 0)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    
                     .frame(height: 100)
-               
+                
                 
                 SecureField("Enter OLD password", text: $oldPassword)
                     .multilineTextAlignment(.center)
@@ -92,7 +124,7 @@ struct ResetPassword: View {
                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(25)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                     
+                    
                     
                 }
                 
