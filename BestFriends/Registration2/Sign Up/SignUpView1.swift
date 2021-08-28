@@ -81,7 +81,7 @@ struct SignUpView1: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    Text("Social app connecting you with up to 5 of your closest friends.")
+                    Text("Connecting you with up to 5 of your closest friends.")
                         .font(.system(size: 27, weight: .light))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)

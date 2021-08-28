@@ -45,17 +45,17 @@ struct SignUpView4: View {
                     .scaledToFit()
                     .padding(.horizontal, 20)
                 
-            
                 
                 
-                Text("Blocking Trolls")
+                
+                Text("We Protect You")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("We only use sharable QR codes to add friends. Strangers cannot search usernames to find you.")
+                Text("You use sharable QR codes to add your friends. Strangers cannot search usernames to find you - keeping trolls out.")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
