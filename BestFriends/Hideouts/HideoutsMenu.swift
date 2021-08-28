@@ -33,6 +33,13 @@ struct HideoutsMenu : View {
                     .multilineTextAlignment(.center)
                     .padding(.all, 30)
                 
+                Text("when you are alone on a tough day")
+                    .font(.system(size: 15, weight: .bold))
+                    .italic()
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.all, 30)
+               
                 Button(action: {
                     sessionManager.showShakingCool()
                 }) {
