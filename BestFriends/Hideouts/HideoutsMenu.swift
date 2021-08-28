@@ -33,7 +33,7 @@ struct HideoutsMenu : View {
                     .multilineTextAlignment(.center)
 //                    .padding(.all, 30)
                 
-                Text("(One one of those days where you feel like lying in bed, curled up in a ball with the covers pulled over your head.)")
+                Text("On a day where you feel like lying in bed, curled up in a ball with the covers pulled over your head - we can help you find that smile of yours!")
                     .font(.system(size: 15, weight: .medium))
                     .italic()
                     .foregroundColor(.white)
