@@ -65,7 +65,7 @@ struct SignUpView1: View {
                         .multilineTextAlignment(.center)
                         .padding(.all, 30)
                     
-                    Text("A distinctive, safeguarded environment connecting you with your friends.")
+                    Text("A distinctive, positive and safeguarded environment connecting you with your friends.")
                         .font(.system(size: 20, weight: .light))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
