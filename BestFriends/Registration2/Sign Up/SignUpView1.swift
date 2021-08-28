@@ -66,7 +66,7 @@ struct SignUpView1: View {
                         .padding(.all, 30)
                     
                     Text("A Distinctive, Positive, Super Safe (Apple rated down to 4yrs of age) social app connecting you with your friends.")
-                        .font(.system(size: 20, weight: .light))
+                        .font(.system(size: 27, weight: .light))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 30)
