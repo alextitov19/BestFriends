@@ -71,7 +71,7 @@ struct SignUpView1: View {
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 30)
                     
-                    Text("(Apple safety rated to 4yrs of age) ")
+                    Text("(Apple safety rated down to 4yrs of age) ")
                         .font(.system(size: 20, weight: .light))
                         .italic()
                         .foregroundColor(.white)
