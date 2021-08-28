@@ -33,8 +33,8 @@ struct HideoutsMenu : View {
                     .multilineTextAlignment(.center)
                     .padding(.all, 30)
                 
-                Text("when you are alone on a tough day")
-                    .font(.system(size: 15, weight: .bold))
+                Text("(When you are alone on a tough day)")
+                    .font(.system(size: 15, weight: .medium))
                     .italic()
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
