@@ -55,7 +55,7 @@ struct SignUpView4: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("You use sharable QR codes to add your friends. Strangers cannot search usernames to find you - keeping trolls out.")
+                Text("You use sharable QR codes to add your friends. Trolls cannot search usernames to find you.")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
