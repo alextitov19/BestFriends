@@ -27,7 +27,7 @@ struct HideoutsMenu : View {
             VStack {
                 Spacer()
                 
-                Text("Hideout Gear")
+                Text("Hideouts Gear")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
