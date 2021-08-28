@@ -52,8 +52,8 @@ struct SignUpView3: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Just want to be by yourself on a difficult day - Hideouts offers the safety of your room with features to help you smile.")
-                    .font(.system(size: 20, weight: .light))
+                Text("Just want to be by yourself on a difficult day - Hideouts is like the safety of your room with features to help you smile.")
+                    .font(.system(size: 26, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 30)

@@ -53,7 +53,7 @@ struct SignUpView2: View {
                     .padding(.bottom, 10)
                 
                 Text("Having a bad day and need your friends? We keep your chats personal and secure.")
-                    .font(.system(size: 20, weight: .light))
+                    .font(.system(size: 26, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 30)
