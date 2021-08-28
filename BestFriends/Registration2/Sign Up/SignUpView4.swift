@@ -68,7 +68,7 @@ struct SignUpView4: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Unlike major social platforms - we don't install cookies. We respect your privacy!")
+                Text("Unlike major social platforms - we don't install cookies to stalk you. We respect your privacy!")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
