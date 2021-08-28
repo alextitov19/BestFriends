@@ -39,37 +39,26 @@ struct SignUpView3: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Image("SignUp3")
+                Image("SignUp4")
                     .resizable()
                     .frame(maxWidth: .infinity)
                     .scaledToFit()
                     .padding(.horizontal, 20)
                 
-                Text("Blocking Trolls")
+                Text("Hideout Gear")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("We only use sharable QR codes to add friends. Strangers cannot search usernames to find you.")
+                Text("Just want to be by yourself on a difficult day - Hideouts offers the safety of your room with features to help you smile.")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 30)
                 
-                Text("No Cookies")
-                    .font(.system(size: 40, weight: .bold))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 50)
-                    .padding(.bottom, 10)
                 
-                Text("Unlike major social platforms - we don't install cookies. We respect your privacy!")
-                    .font(.system(size: 20, weight: .light))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 30)
                 
                 Spacer().frame(height: 100)
                 
