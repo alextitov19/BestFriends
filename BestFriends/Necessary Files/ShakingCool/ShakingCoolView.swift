@@ -64,12 +64,12 @@ struct ShakingCoolView: View {
                 
                 
                 
-                Text("Two are for you & one per friend that will bring a smile on bad days. Shake your phone on Homepage.")
+                Text("Add 2 images that bring a smile on bad days. Add one image per friend they will see when 'shaking' their phone on Homepage.")
                     .font(.system(size: 15))
                     .fontWeight(.regular)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .frame(width: 375, height: 50, alignment: .center)
+                    .frame(width: 375, height: 75, alignment: .center)
                 
                 Spacer().frame(height: 10)
                 
