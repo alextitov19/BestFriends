@@ -27,6 +27,12 @@ struct HideoutsMenu : View {
             VStack {
                 Spacer()
                 
+                Text("Hideout Gear")
+                    .font(.system(size: 40, weight: .bold))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.all, 30)
+                
                 Button(action: {
                     sessionManager.showShakingCool()
                 }) {
