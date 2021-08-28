@@ -45,14 +45,14 @@ struct SignUpView4: View {
                     .scaledToFit()
                     .padding(.horizontal, 20)
                 
-                Text("No Cookies")
+                Text("Hideout Gear")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Unlike major social platforms - we don't install cookies. We respect your privacy!")
+                Text("Just want to be by yourself on a difficult day - Hideouts offers the safety of your room with features to help you smile.")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)

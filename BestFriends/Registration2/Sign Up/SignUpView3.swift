@@ -37,7 +37,7 @@ struct SignUpView3: View {
             
             VStack {
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 10)
                 
                 Image("SignUp3")
                     .resizable()
@@ -52,7 +52,20 @@ struct SignUpView3: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Strangers cannot search usernames to find you. We exclusively use sharable QR codes to add friends.")
+                Text("We only use sharable QR codes to add friends. Strangers cannot search usernames to find you.")
+                    .font(.system(size: 20, weight: .light))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 30)
+                
+                Text("No Cookies")
+                    .font(.system(size: 40, weight: .bold))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 50)
+                    .padding(.bottom, 10)
+                
+                Text("Unlike major social platforms - we don't install cookies. We respect your privacy!")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)

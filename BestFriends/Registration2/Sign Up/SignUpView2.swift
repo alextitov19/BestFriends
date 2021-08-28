@@ -52,7 +52,7 @@ struct SignUpView2: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Connect with up to 5 of your closest friends - keeping it personal and secure.")
+                Text("Having a bad day and need your friends? We keep your chat personal and secure.")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
