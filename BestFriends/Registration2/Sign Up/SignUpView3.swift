@@ -45,7 +45,7 @@ struct SignUpView3: View {
                     .scaledToFit()
                     .padding(.horizontal, 20)
                 
-                Text("Hideout Gear")
+                Text("Hideouts")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
