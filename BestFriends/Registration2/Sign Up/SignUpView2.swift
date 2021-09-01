@@ -37,7 +37,7 @@ struct SignUpView2: View {
             
             VStack {
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 75)
                 
                 Image("SignUp2")
                     .resizable()
