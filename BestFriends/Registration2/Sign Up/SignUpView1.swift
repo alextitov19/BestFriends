@@ -65,31 +65,27 @@ struct SignUpView1: View {
                         .multilineTextAlignment(.center)
                         .padding(.all, 30)
                     
-                    Text("Distinctive_Positive_Super Safe")
-                        .font(.system(size: 26, weight: .light))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 30)
+                   
                     
-                    Text("(Apple safety rated down to 4yrs of age) ")
-                        .font(.system(size: 20, weight: .light))
-                        .italic()
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 30)
+                 
                    
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 70)
                     
-                    Text("Connecting you with up to 5 of your closest friends.")
+                    Text("BestFriends provides you with a safe, private and positive environment where you connect with your friends.")
                         .font(.system(size: 27, weight: .light))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 30)
                     
                     Spacer()
-                    
-                    Spacer()
+                    Text("BestFriends is Apple'Safety Rated' down to 4yrs of age.")
+                        .font(.system(size: 23, weight: .light))
+                        .italic()
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 30)
+   Spacer()
 
                     Button(action: {
                         print("Hitmarker")
