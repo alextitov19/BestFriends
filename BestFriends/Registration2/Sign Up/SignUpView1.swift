@@ -79,7 +79,7 @@ struct SignUpView1: View {
                         .padding(.horizontal, 30)
                     
                     Spacer()
-                    Text("BestFriends is Apple'Safety Rated' down to 4yrs of age.")
+                    Text("BestFriends is Apple 'Safety Rated' down to 4yrs of age.")
                         .font(.system(size: 23, weight: .light))
                         .italic()
                         .foregroundColor(.white)
