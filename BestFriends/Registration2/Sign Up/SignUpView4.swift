@@ -37,29 +37,15 @@ struct SignUpView4: View {
             
             VStack {
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 10)
                 
-                Image("SignUp3")
+                Image("SignUp4")
                     .resizable()
                     .frame(maxWidth: .infinity)
                     .scaledToFit()
                     .padding(.horizontal, 20)
                 
-                
-                
-                
-                Text("We Protect You")
-                    .font(.system(size: 40, weight: .bold))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 50)
-                    .padding(.bottom, 10)
-                
-                Text("You use sharable QR codes to add your friends. Trolls cannot search usernames to find you.")
-                    .font(.system(size: 20, weight: .light))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 30)
+        
                 
                 Text("No Cookies")
                     .font(.system(size: 40, weight: .bold))
@@ -68,13 +54,22 @@ struct SignUpView4: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Unlike major social platforms - we don't install cookies to stalk your every move. We respect your privacy!")
+                Text("Unlike major social platforms - we don't install cookies stalking your every move outside of BestFriends. We never have and never will sell your data.")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 30)
                 
-                Spacer().frame(height: 100)
+                
+                Text("We Respect Your Privacy!")
+                    .font(.system(size: 30, weight: .bold))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 50)
+                    .padding(.bottom, 10)
+                
+                
+                Spacer().frame(height: 30)
                 
                 Button(action: {
                     readyToGo = true
