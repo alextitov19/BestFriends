@@ -124,6 +124,21 @@ struct SignUpView5: View {
                         .disableAutocorrection(true)
                         .padding(.horizontal, 40)
                         .padding(.vertical, 10)
+                                        
+                    SecureField("  Password", text: $password)
+                        .frame(maxWidth: .infinity, maxHeight: 40)
+                        .font(.system(size: 24))
+                        .foregroundColor(.black)
+                        .background(Color.clear)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.gray, lineWidth: 1)
+                        )
+                        .multilineTextAlignment(.center)
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 10)
                     
                     TextField("  Email", text: $email)
                         .frame(maxWidth: .infinity, maxHeight: 40)
@@ -139,21 +154,6 @@ struct SignUpView5: View {
                         .disableAutocorrection(true)
                         .padding(.horizontal, 40)
                         .padding(.top, 10)
-                    
-                    SecureField("  Password", text: $password)
-                        .frame(maxWidth: .infinity, maxHeight: 40)
-                        .font(.system(size: 24))
-                        .foregroundColor(.black)
-                        .background(Color.clear)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
-                        .multilineTextAlignment(.center)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .padding(.horizontal, 40)
-                        .padding(.vertical, 10)
                 }
                 
                 Spacer().frame(height: 100)

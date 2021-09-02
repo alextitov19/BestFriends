@@ -67,8 +67,7 @@ struct SignUpView7: View {
                 .padding(.horizontal, 40)
                 
                 
-                DatePicker("", selection: $date)
-                    .datePickerStyle(WheelDatePickerStyle())
+                DatePicker("", selection: $date, displayedComponents: [.date])
                     .padding(40)
                 
                 
