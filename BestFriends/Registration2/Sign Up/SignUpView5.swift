@@ -24,21 +24,40 @@ struct SignUpView5: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.932589829, green: 0.9314347506, blue: 0.9335541129, alpha: 1))
+//            Color(#colorLiteral(red: 0.932589829, green: 0.9314347506, blue: 0.9335541129, alpha: 1))
+//                .ignoresSafeArea()
+//
+//            ZStack {
+//                Circle()
+//                    .frame(width: 400, height: 400)
+//                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+//                    .offset(x: 200, y: -400)
+//
+//                Circle()
+//                    .frame(width: 300, height: 300)
+//                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+//                    .offset(x: -200, y: 400)
+//            }
+       
+            Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
                 .ignoresSafeArea()
-            
             ZStack {
                 Circle()
                     .frame(width: 400, height: 400)
-                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
                     .offset(x: 200, y: -400)
                 
                 Circle()
                     .frame(width: 300, height: 300)
-                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
-                    .offset(x: -200, y: 400)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: -200, y: -100)
+                
+                Circle()
+                    .frame(width: 200, height: 200)
+                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
+                    .offset(x: 150, y: 100)
+                
             }
-            
             VStack {
                 HStack {
                     Text("Get Started")
