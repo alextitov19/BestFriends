@@ -41,10 +41,12 @@ struct SignUpView6: View {
             VStack {
                 Text("Final Steps")
                     .font(.system(size: 30, weight: .bold))
+                    .foregroundColor(.black)
                     .padding()
                 
                 Text("In order for you to use BestFriends effeciently, please tell us a few things about yourself.")
                     .font(.system(size: 20, weight: .regular))
+                    .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 40)
                 

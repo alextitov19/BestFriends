@@ -57,6 +57,7 @@ struct SignUpView9: View {
                 HStack {
                     Text("What are your interests?")
                         .font(.system(size: 30, weight: .bold))
+                        .foregroundColor(.black)
                     
                     Spacer()
                 }
@@ -65,6 +66,7 @@ struct SignUpView9: View {
                 HStack {
                     Text("We don’t use cookies to stalk you outside of BestFriends. Instead, we simply 'Ask' you to share with us your interests. Ads are shown based on your preferences. You can always revise your decisions later in Settings.")
                         .font(.system(size: 18, weight: .light))
+                        .foregroundColor(.black)
                     
                     Spacer()
                 }
@@ -77,23 +79,41 @@ struct SignUpView9: View {
                             Button(action: {
                                 update(i: 1)
                             }) {
-                                Text("Lifestyle")
-                                    .frame(width: 150, height: 200)
-                                    .foregroundColor(.white)
-                                    .background(adPref.contains(1) ? Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)) : Color(#colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)))
-                                    .cornerRadius(15)
-                                    .padding(5)
+                                ZStack {
+                                    Text("Lifestyle")
+                                        .frame(width: 150, height: 200)
+                                        .foregroundColor(.white)
+                                        .background(adPref.contains(1) ? Color(#colorLiteral(red: 0.8287352324, green: 0, blue: 0.6316081882, alpha: 1)) : Color(#colorLiteral(red: 0.5451216102, green: 0.02884001844, blue: 0.4160692394, alpha: 1)))
+                                        .cornerRadius(15)
+                                        .padding(5)
+                                    
+                                    if adPref.contains(1) {
+                                        Image("check")
+                                            .resizable()
+                                            .frame(width: 150, height: 200)
+                                            .scaledToFill()
+                                    }
+                                }
                             }
                             
                             Button(action: {
                                 update(i: 2)
                             }) {
-                                Text("Sports / Fitness")
-                                    .frame(width: 150, height: 200)
-                                    .foregroundColor(.white)
-                                    .background(adPref.contains(2) ? Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)) : Color(#colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)))
-                                    .cornerRadius(15)
-                                    .padding(5)
+                                ZStack {
+                                    Text("Sports / Fitness")
+                                        .frame(width: 150, height: 200)
+                                        .foregroundColor(.white)
+                                        .background(adPref.contains(2) ? Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)) : Color(#colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)))
+                                        .cornerRadius(15)
+                                        .padding(5)
+                                    
+                                    if adPref.contains(2) {
+                                        Image("check")
+                                            .resizable()
+                                            .frame(width: 150, height: 200)
+                                            .scaledToFill()
+                                    }
+                                }
                             }
                         }
                         
@@ -101,23 +121,41 @@ struct SignUpView9: View {
                             Button(action: {
                                 update(i: 3)
                             }) {
-                                Text("Beauty")
-                                    .frame(width: 150, height: 200)
-                                    .foregroundColor(.white)
-                                    .background(adPref.contains(3) ? Color(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)) : Color(#colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)))
-                                    .cornerRadius(15)
-                                    .padding(5)
+                                ZStack {
+                                    Text("Beauty")
+                                        .frame(width: 150, height: 200)
+                                        .foregroundColor(.white)
+                                        .background(adPref.contains(3) ? Color(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)) : Color(#colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)))
+                                        .cornerRadius(15)
+                                        .padding(5)
+                                    
+                                    if adPref.contains(3) {
+                                        Image("check")
+                                            .resizable()
+                                            .frame(width: 150, height: 200)
+                                            .scaledToFill()
+                                    }
+                                }
                             }
                             
                             Button(action: {
                                 update(i: 4)
                             }) {
-                                Text("Fashion")
-                                    .frame(width: 150, height: 200)
-                                    .foregroundColor(.white)
-                                    .background(adPref.contains(4) ? Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)) : Color(#colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1)))
-                                    .cornerRadius(15)
-                                    .padding(5)
+                                ZStack {
+                                    Text("Fashion")
+                                        .frame(width: 150, height: 200)
+                                        .foregroundColor(.white)
+                                        .background(adPref.contains(4) ? Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)) : Color(#colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1)))
+                                        .cornerRadius(15)
+                                        .padding(5)
+                                    
+                                    if adPref.contains(4) {
+                                        Image("check")
+                                            .resizable()
+                                            .frame(width: 150, height: 200)
+                                            .scaledToFill()
+                                    }
+                                }
                             }
                         }
                         
@@ -125,23 +163,41 @@ struct SignUpView9: View {
                             Button(action: {
                                 update(i: 5)
                             }) {
-                                Text("Travel")
-                                    .frame(width: 150, height: 200)
-                                    .foregroundColor(.white)
-                                    .background(adPref.contains(5) ? Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)) : Color(#colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)))
-                                    .cornerRadius(15)
-                                    .padding(5)
+                                ZStack {
+                                    Text("Travel")
+                                        .frame(width: 150, height: 200)
+                                        .foregroundColor(.white)
+                                        .background(adPref.contains(5) ? Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)) : Color(#colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)))
+                                        .cornerRadius(15)
+                                        .padding(5)
+                                    
+                                    if adPref.contains(5) {
+                                        Image("check")
+                                            .resizable()
+                                            .frame(width: 150, height: 200)
+                                            .scaledToFill()
+                                    }
+                                }
                             }
                             
                             Button(action: {
                                 update(i: 6)
                             }) {
-                                Text("Health / Nutrition")
-                                    .frame(width: 150, height: 200)
-                                    .foregroundColor(.white)
-                                    .background(adPref.contains(6) ? Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)) : Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
-                                    .cornerRadius(15)
-                                    .padding(5)
+                                ZStack {
+                                    Text("Health / Nutrition")
+                                        .frame(width: 150, height: 200)
+                                        .foregroundColor(.white)
+                                        .background(adPref.contains(6) ? Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)) : Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
+                                        .cornerRadius(15)
+                                        .padding(5)
+                                    
+                                    if adPref.contains(6) {
+                                        Image("check")
+                                            .resizable()
+                                            .frame(width: 150, height: 200)
+                                            .scaledToFill()
+                                    }
+                                }
                             }
                         }
                         

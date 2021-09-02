@@ -80,7 +80,8 @@ struct SignUpView8: View {
                 HStack {
                     Text("Which pronouns do you prefer?")
                         .font(.system(size: 30, weight: .bold))
-                    
+                        .foregroundColor(.black)
+
                     Spacer()
                 }
                 .padding(.horizontal, 40)
@@ -88,7 +89,8 @@ struct SignUpView8: View {
                 HStack {
                     Text("Your pronoun preference is used only in system conversations. Your friends will not see your selection.")
                         .font(.system(size: 18, weight: .light))
-                    
+                        .foregroundColor(.black)
+
                     Spacer()
                 }
                 .padding(.horizontal, 40)
@@ -98,8 +100,10 @@ struct SignUpView8: View {
                     Picker("Select your pronouns", selection: $selectedPronoun) {
                         ForEach(pronouns, id: \.self) {
                             Text($0)
+                                .foregroundColor(.black)
                         }
                     }
+                    .foregroundColor(.black)
                 }
                 
                 

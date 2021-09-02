@@ -53,6 +53,7 @@ struct SignUpView7: View {
                 HStack {
                     Text("Date of Birth")
                         .font(.system(size: 30, weight: .bold))
+                        .foregroundColor(.black)
                     
                     Spacer()
                 }
@@ -61,7 +62,8 @@ struct SignUpView7: View {
                 HStack {
                     Text("Apple requires BestFriends to ask your age.")
                         .font(.system(size: 18, weight: .light))
-                    
+                        .foregroundColor(.black)
+
                     Spacer()
                 }
                 .padding(.horizontal, 40)
