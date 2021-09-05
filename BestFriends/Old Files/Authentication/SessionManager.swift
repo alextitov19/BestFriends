@@ -135,8 +135,7 @@ final class SessionManager: ObservableObject {
                 print(confirmResult)
                 if confirmResult.isSignupComplete {
                     DispatchQueue.main.async {
-//                        self?.showLogin()
-                        self?.getCurrentAuthUser()
+                        self?.login(username: username, password: password)
                     }
                 }
                 
@@ -170,6 +169,7 @@ final class SessionManager: ObservableObject {
             case .failure(let error):
                 print("Login error:", error)
                 foo = false
+                self?.signOut()
                 group.leave()
             }
         }
