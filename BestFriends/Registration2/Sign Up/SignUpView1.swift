@@ -72,7 +72,7 @@ struct SignUpView1: View {
                     Spacer()
                         .frame(height: 70)
                     
-                    Text("BestFriends provides you with a safe, private and positive environment where you connect with your friends.")
+                    Text("BestFriends provides you with a protected, private and positive environment where you connect with your friends.")
                         .font(.system(size: 27, weight: .light))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
