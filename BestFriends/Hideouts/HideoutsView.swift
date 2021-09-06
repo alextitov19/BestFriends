@@ -48,19 +48,6 @@ struct HideoutsView: View {
                             }
                 )
             
-            if showingPopup {
-                Text("So that you're never alone on a bad day. \nEach of those tiny stars on your homepage represents another user somewhere out there just like you.")
-                    .font(.system(size: 20, weight: .light))
-                    .foregroundColor(.white)
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 0.85)))
-                    .multilineTextAlignment(.center)
-                    .padding(30)
-                    .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                            showingPopup = false
-                        }
-                    }
-            }
             
             if showingMenu {
                 HideoutsMenu(showingMenu: $showingMenu)
