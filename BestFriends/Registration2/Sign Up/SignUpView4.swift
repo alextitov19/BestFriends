@@ -54,7 +54,7 @@ struct SignUpView4: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Our Privacy Policy gives us permission to use 'cookies, however we decided to NOT install cookies stalking you outside of BestFriends. And, nope we don't sell your data.")
+                Text("Our Privacy Policy gives us permission to use 'cookies, however, we decided to NOT install cookies stalking you outside of BestFriends. And, nope, we don't sell your data either.")
                     .font(.system(size: 26, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
