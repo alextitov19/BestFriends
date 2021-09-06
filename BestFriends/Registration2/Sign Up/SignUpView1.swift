@@ -59,7 +59,7 @@ struct SignUpView1: View {
                 }
                 
                 VStack {
-                    Text("Welcome to\nBestFriends!")
+                    Text("Introducing\nBestFriends!")
                         .font(.system(size: 40, weight: .bold))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -72,7 +72,7 @@ struct SignUpView1: View {
                     Spacer()
                         .frame(height: 70)
                     
-                    Text("BestFriends provides you with a protected, and positive environment where you connect with your friends.")
+                    Text("It's exciting, it's unique, it's positive and it's all in a safe environment where you connect with your friends.")
                         .font(.system(size: 27, weight: .light))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
