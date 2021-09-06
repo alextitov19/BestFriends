@@ -37,7 +37,7 @@ struct SignUpView4: View {
             
             VStack {
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 0)
                 
                 Image("SignUp4")
                     .resizable()
@@ -54,21 +54,24 @@ struct SignUpView4: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Our Privacy Policy gives us permission to use 'cookies, however, we decided to NOT install cookies stalking you outside of BestFriends. And we don't sell your data either.")
+                Text("Our Privacy Policy gives us permission to use 'cookies, however, we decided to NOT install cookies stalking you outside of BestFriends.")
                     .font(.system(size: 26, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 30)
                 
-//
-//                Text("We Respect Your Privacy!")
-//                    .font(.system(size: 30, weight: .bold))
-//                    .foregroundColor(.white)
-//                    .multilineTextAlignment(.center)
-//                    .padding(.top, 50)
-//                    .padding(.bottom, 10)
-//
-//
+                
+                
+                
+
+                Text("Nope, we don't sell your data to 3rd parties either!")
+                    .font(.system(size: 26, weight: .bold))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 50)
+                    .padding(.bottom, 10)
+
+
                 Spacer().frame(height: 30)
                 
                 Button(action: {
