@@ -72,7 +72,7 @@ struct SignUpView1: View {
                     Spacer()
                         .frame(height: 70)
                     
-                    Text("It's exciting, it's unique, it's positive and it's all in a safe environment where you connect with your friends.")
+                    Text("Yep, it's designed by teens. It's exciting, unique and it breaths positive all in a safe environment where you connect with your friends.")
                         .font(.system(size: 27, weight: .light))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
