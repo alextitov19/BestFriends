@@ -72,7 +72,7 @@ struct SignUpView1: View {
                     Spacer()
                         .frame(height: 70)
                     
-                    Text("BestFriends provides you with a protected, private and positive environment where you connect with your friends.")
+                    Text("BestFriends provides you with a protected, and positive environment where you connect with your friends.")
                         .font(.system(size: 27, weight: .light))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -113,7 +113,11 @@ struct SignUpView1: View {
 
 struct SignUpView1Preview : PreviewProvider {
     static var previews: some View {
-        SignUpView1()
-            .environmentObject(SessionManager())
+        Group {
+            SignUpView1()
+                .environmentObject(SessionManager())
+            SignUpView1()
+                .environmentObject(SessionManager())
+        }
     }
 }

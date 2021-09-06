@@ -60,15 +60,15 @@ struct SignUpView4: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 30)
                 
-                
-                Text("We Respect Your Privacy!")
-                    .font(.system(size: 30, weight: .bold))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 50)
-                    .padding(.bottom, 10)
-                
-                
+//
+//                Text("We Respect Your Privacy!")
+//                    .font(.system(size: 30, weight: .bold))
+//                    .foregroundColor(.white)
+//                    .multilineTextAlignment(.center)
+//                    .padding(.top, 50)
+//                    .padding(.bottom, 10)
+//
+//
                 Spacer().frame(height: 30)
                 
                 Button(action: {

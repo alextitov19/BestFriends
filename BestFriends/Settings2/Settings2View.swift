@@ -58,6 +58,10 @@ struct Settings2View: View {
 //                            SettingsFunctionView()
                             
                             // Overlay of the 3 into rectangle things
+                            
+                            Spacer()
+                                .frame(height: 30)
+                            
                             Text("Engagement")
                                 .font(.system(size: 30, weight: .bold))
                                 .foregroundColor(Color(#colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)))
