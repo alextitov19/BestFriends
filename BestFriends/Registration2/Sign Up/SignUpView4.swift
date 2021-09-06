@@ -54,7 +54,7 @@ struct SignUpView4: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Our Privacy Policy gives us permission to use 'cookies, however, we decided to NOT install cookies stalking you outside of BestFriends. And, nope, we don't sell your data either.")
+                Text("Our Privacy Policy gives us permission to use 'cookies, however, we decided to NOT install cookies stalking you outside of BestFriends. And we don't sell your data either.")
                     .font(.system(size: 26, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
@@ -134,6 +134,7 @@ struct SignUpView4: View {
 struct SignUpView4Preview : PreviewProvider {
     static var previews: some View {
         SignUpView4()
+            .padding(-4.0)
             .environmentObject(SessionManager())
     }
 }
