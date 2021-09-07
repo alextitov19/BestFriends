@@ -10,6 +10,7 @@
 		7A01A96726939DA40047BB35 /* StickerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01A96626939DA40047BB35 /* StickerPopover.swift */; };
 		7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */; };
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
+		7A1C04DE26E8029700DE0EEC /* ChatRoomsView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1C04DD26E8029700DE0EEC /* ChatRoomsView2.swift */; };
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
 		7A23683426CB1DD300C56A97 /* SignUpView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683326CB1DD300C56A97 /* SignUpView1.swift */; };
 		7A23683626CB324100C56A97 /* SignUpView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683526CB324100C56A97 /* SignUpView2.swift */; };
@@ -161,6 +162,7 @@
 		7A01A96626939DA40047BB35 /* StickerPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPopover.swift; sourceTree = "<group>"; };
 		7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
+		7A1C04DD26E8029700DE0EEC /* ChatRoomsView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomsView2.swift; sourceTree = "<group>"; };
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		7A23683326CB1DD300C56A97 /* SignUpView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView1.swift; sourceTree = "<group>"; };
 		7A23683526CB324100C56A97 /* SignUpView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView2.swift; sourceTree = "<group>"; };
@@ -676,6 +678,7 @@
 				7AA201102635D2E100C9F00C /* RoomRow.swift */,
 				7AA2010E2635D21100C9F00C /* RoomsView.swift */,
 				7AB4744626D3DD6400053E76 /* ChatRoomsView.swift */,
+				7A1C04DD26E8029700DE0EEC /* ChatRoomsView2.swift */,
 				7A46D13F26D4769000255A5C /* SearchBar.swift */,
 			);
 			path = Room;
@@ -1125,6 +1128,7 @@
 				CFE6FD4626620E9A00DF92BD /* Popups.swift in Sources */,
 				7A23683826CB383E00C56A97 /* SignUpView3.swift in Sources */,
 				CF356D322674E3F100BCF572 /* AddFriends.swift in Sources */,
+				7A1C04DE26E8029700DE0EEC /* ChatRoomsView2.swift in Sources */,
 				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
 				CF30FF93267E955A000B2730 /* SmileNotesCard.swift in Sources */,
 				CF356D1E2672A43000BCF572 /* NotificationPreLoad.swift in Sources */,

@@ -164,7 +164,7 @@ struct ChatView: View {
                             let diffrence = Date().timeIntervalSince(initialTime)
                             print("Diffrence: ", diffrence)
                             AnalyticsDataSource().recordChatSessionEvent(duration: diffrence)
-                            sessionManager.getCurrentAuthUser()
+                            sessionManager.showRooms()
                         }
                         .onReceive(NotificationCenter.default.publisher(for: UIApplication.userDidTakeScreenshotNotification)) { _ in
                             print("Screenshot taken")

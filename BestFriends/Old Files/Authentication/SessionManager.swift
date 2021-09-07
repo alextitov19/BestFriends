@@ -23,6 +23,7 @@ enum AppState {
     case shakingCool
     case broadcast
     case hideouts
+    case rooms
 }
 
 final class SessionManager: ObservableObject {
@@ -47,6 +48,10 @@ final class SessionManager: ObservableObject {
     
     func showSettings() {
         appState = .settings
+    }
+    
+    func showRooms() {
+        appState = .rooms
     }
     
     func reloadToPage(page: String) {
