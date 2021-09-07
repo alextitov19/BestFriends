@@ -56,7 +56,7 @@ struct SignUpView2: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Connect with up to 5 of your closest and most trusted friends on difficult days. BestFriends keeps it small, intimate and close.")
+                Text("Connect with up to 5 of your closest and most trusted friends. BestFriends keeps it small, intimate and close.")
                     .font(.system(size: 26, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
