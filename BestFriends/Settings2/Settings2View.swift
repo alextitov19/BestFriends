@@ -36,7 +36,7 @@ struct Settings2View: View {
                     ScrollView {
                         VStack(alignment: .leading) {
                             // Allows the VStack to be full screen width-wise
-                            Spacer().frame(maxWidth: .infinity, maxHeight: 30)
+                            Spacer().frame(maxWidth: .infinity, maxHeight: 40)
                             // First name
                             Text(user.firstName)
                                 .font(.system(size: 42, weight: .bold))
