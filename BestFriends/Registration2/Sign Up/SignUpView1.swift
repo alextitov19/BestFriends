@@ -65,7 +65,7 @@ struct SignUpView1: View {
                         .multilineTextAlignment(.center)
                         .padding(.all, 30)
                     
-                    Text("Finding Your Smile on Difficult Days.")
+                    Text("Finding Your Smile")
                         .font(.system(size: 15, weight: .light))
                     .italic()
                         .foregroundColor(.white)
