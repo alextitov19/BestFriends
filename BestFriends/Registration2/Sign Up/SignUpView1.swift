@@ -90,7 +90,7 @@ struct SignUpView1: View {
 //                        .foregroundColor(.white)
 //                        .multilineTextAlignment(.center)
 //                        .padding(.horizontal, 30)
-//   Spacer()
+  Spacer()
 
                     Button(action: {
                         print("Hitmarker")
