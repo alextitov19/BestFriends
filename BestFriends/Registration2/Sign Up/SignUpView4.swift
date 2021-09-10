@@ -47,24 +47,19 @@ struct SignUpView4: View {
                 
         
                 
-                Text("No Cookies")
+                Text("Usaer Data")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Our Privacy Policy gives us permission to use 'cookies, however, we decided to NOT install cookies stalking you outside of BestFriends.")
-                    .font(.system(size: 26, weight: .light))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 30)
-                
+             
                 
                 
                 
 
-                Text("Nope, we don't sell your data to 3rd parties either!")
+                Text("We don't sell your data to 3rd parties.")
                     .font(.system(size: 26, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
