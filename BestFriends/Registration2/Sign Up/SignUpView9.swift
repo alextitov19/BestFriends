@@ -64,7 +64,7 @@ struct SignUpView9: View {
                 .padding(.horizontal, 40)
                 
                 HStack {
-                    Text("We don’t use cookies to stalk you outside of BestFriends. Instead, we simply 'Ask' you to share with us your interests. Ads are shown based on your preferences. You can always revise your decisions later in Settings.")
+                    Text("Instead of installing cookies to stalk you outside of BestFriends, we simply 'Ask' you to share with us your interests. Ads are shown based on your preferences. You can always revise your decisions later in Settings.")
                         .font(.system(size: 18, weight: .light))
                         .foregroundColor(.black)
                     
@@ -90,7 +90,7 @@ struct SignUpView9: View {
                                     if adPref.contains(1) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 150, height: 200)
+                                            .frame(width: 75, height: 100)
                                             .scaledToFill()
                                     }
                                 }
@@ -110,7 +110,7 @@ struct SignUpView9: View {
                                     if adPref.contains(2) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 150, height: 200)
+                                            .frame(width: 75, height: 100)
                                             .scaledToFill()
                                     }
                                 }
@@ -132,7 +132,7 @@ struct SignUpView9: View {
                                     if adPref.contains(3) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 150, height: 200)
+                                            .frame(width: 75, height: 100)
                                             .scaledToFill()
                                     }
                                 }
@@ -152,7 +152,7 @@ struct SignUpView9: View {
                                     if adPref.contains(4) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 150, height: 200)
+                                            .frame(width: 75, height: 100)
                                             .scaledToFill()
                                     }
                                 }
@@ -174,7 +174,7 @@ struct SignUpView9: View {
                                     if adPref.contains(5) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 150, height: 200)
+                                            .frame(width: 75, height: 100)
                                             .scaledToFill()
                                     }
                                 }
@@ -194,7 +194,7 @@ struct SignUpView9: View {
                                     if adPref.contains(6) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 150, height: 200)
+                                            .frame(width: 75, height: 100)
                                             .scaledToFill()
                                     }
                                 }
