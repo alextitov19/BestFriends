@@ -164,7 +164,7 @@ struct SignUpView9: View {
                                 update(i: 5)
                             }) {
                                 ZStack {
-                                    Text("Travel")
+                                    Text("Longboarding")
                                         .frame(width: 150, height: 200)
                                         .foregroundColor(.white)
                                         .background(adPref.contains(5) ? Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)) : Color(#colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)))
