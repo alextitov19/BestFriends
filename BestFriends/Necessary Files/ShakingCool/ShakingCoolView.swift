@@ -127,7 +127,7 @@ struct ShakingCoolView: View {
                         .onTapGesture {
                             AnalyticsDataSource().recordShakingCoolDepartureEvent()
                             isAdPresented = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 8.5) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 10.8) {
                                 sessionManager.showHideouts()
                             }
                         }
