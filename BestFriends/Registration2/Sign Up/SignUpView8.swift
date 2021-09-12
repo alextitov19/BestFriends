@@ -87,7 +87,7 @@ struct SignUpView8: View {
                 .padding(.horizontal, 40)
                 
                 HStack {
-                    Text("Your pronoun preference is used only in system conversations. Your friends will not see your selection.")
+                    Text("Your friends will not see your selection.")
                         .font(.system(size: 18, weight: .light))
                         .foregroundColor(.black)
 
