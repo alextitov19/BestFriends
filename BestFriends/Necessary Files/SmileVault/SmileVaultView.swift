@@ -198,7 +198,7 @@ struct SmileVaultView: View {
                         .onTapGesture {
                             AnalyticsDataSource().recordSmileVaultDepartureEvent()
                             isAdPresented = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 13) {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 12) {
                                 sessionManager.showSettings()
                             }
                         }
