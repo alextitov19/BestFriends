@@ -47,7 +47,7 @@ struct SignUpView4: View {
                 
         
                 
-                Text("Usaer Data")
+                Text("User Data")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
