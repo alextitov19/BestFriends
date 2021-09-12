@@ -77,7 +77,7 @@ struct SignUpView1: View {
                     Spacer()
                         .frame(height: 70)
                     
-                    Text("It's exciting, unique and breaths positivity - all in a safe environment where you connect with your friends.")
+                    Text("It breaths positivity - all in a safe environment where you connect with your friends.")
                         .font(.system(size: 27, weight: .light))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
