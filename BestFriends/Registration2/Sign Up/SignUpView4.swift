@@ -51,7 +51,7 @@ struct SignUpView4: View {
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .padding(.top, 50)
+                    .padding(.top, 10)
                     .padding(.bottom, 10)
                 
              
@@ -63,11 +63,11 @@ struct SignUpView4: View {
                     .font(.system(size: 26, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .padding(.top, 50)
+                    .padding(.top, 20)
                     .padding(.bottom, 10)
 
 
-                Spacer().frame(height: 30)
+                Spacer().frame(height: 5)
                 
                 Button(action: {
                     readyToGo = true
