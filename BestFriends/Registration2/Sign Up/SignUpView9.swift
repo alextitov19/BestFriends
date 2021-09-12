@@ -64,7 +64,7 @@ struct SignUpView9: View {
                 .padding(.horizontal, 40)
                 
                 HStack {
-                    Text("Instead of installing cookies on your phone stalking you outside of BestFriends to help us decide what ads to best show you, we simply 'Ask' you to share your interests - helping protect your privacy.")
+                    Text("Instead of installing cookies on your phone, then stalking your moves outside of BestFriends for advertising purposes, we simply 'Ask' you to share your interests - helping protect your privacy.")
                         .font(.system(size: 18, weight: .light))
                         .foregroundColor(.black)
                     
@@ -215,7 +215,7 @@ struct SignUpView9: View {
                                 .cornerRadius(20)
                                 .padding(30)
                          
-                            Text("You may revise your selections in Settings.")
+                            Text("You can always revise your selections in Settings.")
                                 .font(.system(size: 15, weight: .light))
                                 .italic()
                                 .foregroundColor(.black)
