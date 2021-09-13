@@ -70,10 +70,9 @@ struct SignUpView5: View {
                             .font(.system(size: 24))
                             .foregroundColor(.black)
                             .background(Color.clear)
-
                             .overlay(
-                                RoundedRectangle(cornerRadius: 0)
-                                    .stroke(Color.black, lineWidth: 1)
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.gray, lineWidth: 1)
                             )
                             .multilineTextAlignment(.center)
                             .autocapitalization(.none)
