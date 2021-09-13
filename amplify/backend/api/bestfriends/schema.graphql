@@ -36,6 +36,7 @@ type Message {
   creationDate: AWSTimestamp!
   attachmentPath: String
   stickerNumber: Int
+  hasBeenLiked: Boolean!
 }
 
 type ReportedMessage @model {

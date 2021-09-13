@@ -40,6 +40,7 @@ type Message {
   creationDate: AWSTimestamp!
   attachmentPath: String
   stickerNumber: Int
+  hasBeenLiked: Boolean!
 }
 
 type ReportedMessage {
@@ -120,6 +121,7 @@ input MessageInput {
   creationDate: AWSTimestamp!
   attachmentPath: String
   stickerNumber: Int
+  hasBeenLiked: Boolean!
 }
 
 enum ModelSortDirection {

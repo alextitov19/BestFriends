@@ -145,7 +145,7 @@ class MessageDataSource: ObservableObject {
                                     switch event {
                                     case .success(let data):
                                         print("Completed: \(data)")
-                                        self.sendMessage(message: Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Image*", creationDate: Int(NSDate().timeIntervalSince1970), attachmentPath: key))
+                                        self.sendMessage(message: Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Image*", creationDate: Int(NSDate().timeIntervalSince1970), attachmentPath: key, hasBeenLiked: false))
                                     case .failure(let storageError):
                                         print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
                                     }

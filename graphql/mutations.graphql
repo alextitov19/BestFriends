@@ -16,6 +16,7 @@ mutation CreateRoom(
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     timeUpdated
     createdAt
@@ -39,6 +40,7 @@ mutation UpdateRoom(
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     timeUpdated
     createdAt
@@ -62,6 +64,7 @@ mutation DeleteRoom(
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     timeUpdated
     createdAt
@@ -125,6 +128,7 @@ mutation CreateReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     previousMessages {
       id
@@ -134,6 +138,7 @@ mutation CreateReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     createdAt
     updatedAt
@@ -154,6 +159,7 @@ mutation UpdateReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     previousMessages {
       id
@@ -163,6 +169,7 @@ mutation UpdateReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     createdAt
     updatedAt
@@ -183,6 +190,7 @@ mutation DeleteReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     previousMessages {
       id
@@ -192,6 +200,7 @@ mutation DeleteReportedMessage(
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     createdAt
     updatedAt
@@ -230,6 +239,7 @@ mutation CreateUser(
         creationDate
         attachmentPath
         stickerNumber
+        hasBeenLiked
       }
       favorite
     }
@@ -285,6 +295,7 @@ mutation UpdateUser(
         creationDate
         attachmentPath
         stickerNumber
+        hasBeenLiked
       }
       favorite
     }
@@ -340,6 +351,7 @@ mutation DeleteUser(
         creationDate
         attachmentPath
         stickerNumber
+        hasBeenLiked
       }
       favorite
     }

@@ -13,6 +13,7 @@ subscription OnCreateRoom {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     timeUpdated
     createdAt
@@ -33,6 +34,7 @@ subscription OnUpdateRoom {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     timeUpdated
     createdAt
@@ -53,6 +55,7 @@ subscription OnDeleteRoom {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     timeUpdated
     createdAt
@@ -104,6 +107,7 @@ subscription OnCreateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     previousMessages {
       id
@@ -113,6 +117,7 @@ subscription OnCreateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     createdAt
     updatedAt
@@ -130,6 +135,7 @@ subscription OnUpdateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     previousMessages {
       id
@@ -139,6 +145,7 @@ subscription OnUpdateReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     createdAt
     updatedAt
@@ -156,6 +163,7 @@ subscription OnDeleteReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     previousMessages {
       id
@@ -165,6 +173,7 @@ subscription OnDeleteReportedMessage {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     createdAt
     updatedAt
@@ -200,6 +209,7 @@ subscription OnCreateUser {
         creationDate
         attachmentPath
         stickerNumber
+        hasBeenLiked
       }
       favorite
     }
@@ -252,6 +262,7 @@ subscription OnUpdateUser {
         creationDate
         attachmentPath
         stickerNumber
+        hasBeenLiked
       }
       favorite
     }
@@ -304,6 +315,7 @@ subscription OnDeleteUser {
         creationDate
         attachmentPath
         stickerNumber
+        hasBeenLiked
       }
       favorite
     }

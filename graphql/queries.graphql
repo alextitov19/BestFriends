@@ -13,6 +13,7 @@ query GetRoom($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     timeUpdated
     createdAt
@@ -38,6 +39,7 @@ query ListRooms(
         creationDate
         attachmentPath
         stickerNumber
+        hasBeenLiked
       }
       timeUpdated
       createdAt
@@ -87,6 +89,7 @@ query GetReportedMessage($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     previousMessages {
       id
@@ -96,6 +99,7 @@ query GetReportedMessage($id: ID!) {
       creationDate
       attachmentPath
       stickerNumber
+      hasBeenLiked
     }
     createdAt
     updatedAt
@@ -118,6 +122,7 @@ query ListReportedMessages(
         creationDate
         attachmentPath
         stickerNumber
+        hasBeenLiked
       }
       previousMessages {
         id
@@ -127,6 +132,7 @@ query ListReportedMessages(
         creationDate
         attachmentPath
         stickerNumber
+        hasBeenLiked
       }
       createdAt
       updatedAt
@@ -164,6 +170,7 @@ query GetUser($id: ID!) {
         creationDate
         attachmentPath
         stickerNumber
+        hasBeenLiked
       }
       favorite
     }

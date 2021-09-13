@@ -81,11 +81,11 @@ struct StickerPopover: View {
                                                     newuser.tokens -= 7
                                                     userDataSource.updateUser(user: newuser)
                                                     
-                                                    let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Sticker*", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
+                                                    let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Sticker*", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number, hasBeenLiked: false)
                                                     
                                                     messageDataSource.sendMessage(message: message)
                                                 } else if user.unlockedStickers.contains(number) == true { // If user HAS UNLOCKED this stikcer or it is FREE
-                                                    let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Sticker*", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number)
+                                                    let message = Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Sticker*", creationDate: Int(NSDate().timeIntervalSince1970), stickerNumber: number, hasBeenLiked: false)
                                                     
                                                     messageDataSource.sendMessage(message: message)
                                                 }
