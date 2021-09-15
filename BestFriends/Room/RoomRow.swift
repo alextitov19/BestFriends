@@ -12,6 +12,7 @@ struct RoomRow: View {
     let room: Room
     
     @State var messageBody = ""
+    @State var timestring = ""
     
     var body: some View {
         HStack {
@@ -42,6 +43,10 @@ struct RoomRow: View {
                         .foregroundColor(.white)
                     
                     Spacer()
+                    
+                    Text(timestring)
+                        .font(.system(size: 12, weight: .light))
+                        .foregroundColor(.white)
                 }
                 
                 Spacer()
@@ -55,14 +60,15 @@ struct RoomRow: View {
     
     private func getBody() {
         messageBody = room.messages.last?.body ?? ""
+        let message = room.messages.last
+        if message != nil {
+            timestring = "\(Int(Int(NSDate().timeIntervalSince1970) - room.messages.last!.creationDate) / 60) minutes ago"
+        }
+        
+
         if UserDataSource().getCurrentUser().hiddenRooms.contains(room.id) {
             messageBody = "*Hidden*"
         }
     }
 }
 
-struct RoomsRow_Previews : PreviewProvider {
-    static var previews: some View {
-        RoomRow(room: Room(id: "", name: "Friends", creatorID: " ", members: ["", ""], messages: [Message(id: "", senderName: "", senderID: "", body: "Hello friends how are yall doing?", creationDate: Int(Date().timeIntervalSinceNow), attachmentPath: "", hasBeenLiked: false)], timeUpdated: 0))
-    }
-}
