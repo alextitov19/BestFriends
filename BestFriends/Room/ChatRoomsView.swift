@@ -86,10 +86,3 @@ struct ChatRoomsView: View {
         }
     }
 }
-
-//struct ChatRoomsViewPreview : PreviewProvider {
-//    static var previews: some View {
-//        ChatRoomsView(rooms: [], showingChatRooms: <#Binding<Bool>#>)
-//            .environmentObject(SessionManager())
-//    }
-//}

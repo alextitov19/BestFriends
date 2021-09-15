@@ -15,10 +15,15 @@ struct Loading: View {
     var body: some View {
         
         ZStack {
-            Image("blueBackground")
+            Image("purpleBackground")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
+            
+            Image("Logo")
+                .resizable()
+                .frame(width: 100, height: 100)
+                .scaledToFill()
             
             VStack {
                 

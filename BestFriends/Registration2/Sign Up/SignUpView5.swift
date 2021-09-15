@@ -24,25 +24,21 @@ struct SignUpView5: View {
     
     var body: some View {
         ZStack {
-//            Color(#colorLiteral(red: 0.932589829, green: 0.9314347506, blue: 0.9335541129, alpha: 1))
-//                .ignoresSafeArea()
-//
-//            ZStack {
-//                Circle()
-//                    .frame(width: 400, height: 400)
-//                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
-//                    .offset(x: 200, y: -400)
-//
-//                Circle()
-//                    .frame(width: 300, height: 300)
-//                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
-//                    .offset(x: -200, y: 400)
-//            }
+            Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
+                .ignoresSafeArea()
+
+            ZStack {
+                Circle()
+                    .frame(width: 400, height: 400)
+                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+                    .offset(x: 200, y: -400)
+
+                Circle()
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+                    .offset(x: -200, y: 400)
+            }
        
-                Image("Background")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
             
             VStack {
                 HStack {
@@ -175,6 +171,26 @@ struct SignUpView5: View {
                 }
                 
                 NavigationLink("", destination: SignUpView6(username: username, firstname: firstname, lastname: lastname, email: email, password: password).environmentObject(sessionManager), isActive: $readyToGo)
+            }
+            
+            
+            
+            VStack {
+                HStack {
+                    Image("arrowLeft")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30, height: 30)
+                        .padding(.horizontal, 30)
+                        .onTapGesture {
+                            self.mode.wrappedValue.dismiss()
+                        }
+                        .offset(x: 0, y: 50)
+                    
+                    Spacer()
+                }
+                
+                Spacer()
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)

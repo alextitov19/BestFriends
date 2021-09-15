@@ -34,9 +34,10 @@ struct LoginView: View {
                         .offset(x: -200, y: 400)
                 }
                 
+                
                 VStack {
-                    Spacer()
-                        .frame(height: 50)
+                    
+                    
                     
                     Image("FatGuy")
                         .resizable()
@@ -128,8 +129,14 @@ struct LoginView: View {
                         
                         Spacer()
                             .frame(height: 100)
-                        
-                        
+                            
+                            Text("Sign Up Instead")
+                                .underline()
+                                .frame(width: 150, height: 30)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .onTapGesture {
+                                    sessionManager.showSignUp()
+                                }
                         
                         Spacer()
                             .frame(height: 45)
@@ -144,7 +151,7 @@ struct LoginView: View {
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 })
                                 .padding(5)
-                                
+                            
                             
                             NavigationLink(
                                 destination: ForgotUsername().environmentObject(sessionManager),
@@ -153,7 +160,7 @@ struct LoginView: View {
                                         .underline()
                                         .frame(width: 150, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        
+                                    
                                 })
                                 .padding(5)
                         }
@@ -163,6 +170,7 @@ struct LoginView: View {
                     }
                     
                 }
+                
             }
         }
     }

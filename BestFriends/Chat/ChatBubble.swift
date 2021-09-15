@@ -54,9 +54,6 @@ struct ChatBubble: View {
                             .resizable()
                             .frame(width: 150, height: 150)
                             .scaledToFit()
-                            .onTapGesture(count: 2) {
-                                    print("Double tapped!")
-                                }
                     } else {
                         Text(message.body)
                             .padding(10)
@@ -65,13 +62,10 @@ struct ChatBubble: View {
                             .foregroundColor(.white)
                             .background(backgroundColor1)
                             .cornerRadius(15)
-//                            .gesture(LongPressGesture(minimumDuration: 1)
-//                                        .onEnded { _ in
-//                                            showingActionSheet = true
-//                                        })
-                            .onTapGesture(count: 2) {
-                                    print("Double tapped!")
-                                }
+                            .gesture(LongPressGesture(minimumDuration: 1)
+                                        .onEnded { _ in
+                                            showingActionSheet = true
+                                        })
                     }
                 }
             }
@@ -126,9 +120,6 @@ struct ChatBubble: View {
                             .resizable()
                             .frame(width: 150, height: 150)
                             .scaledToFit()
-                            .onTapGesture(count: 2) {
-                                    print("Double tapped!")
-                                }
                     } else {
                         Text(message.body)
                             .padding(10)
@@ -137,13 +128,10 @@ struct ChatBubble: View {
                             .foregroundColor(.white)
                             .background(backgroundColor1)
                             .cornerRadius(15)
-//                            .gesture(LongPressGesture(minimumDuration: 1)
-//                                        .onEnded { _ in
-//                                            showingActionSheet = true
-//                                        })
-                            .onTapGesture(count: 2) {
-                                    print("Double tapped!")
-                                }
+                            .gesture(LongPressGesture(minimumDuration: 1)
+                                        .onEnded { _ in
+                                            showingActionSheet = true
+                                        })
                     }
                     
                     Spacer()
