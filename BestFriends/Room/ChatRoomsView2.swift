@@ -32,6 +32,14 @@ struct ChatRoomsView2: View {
                 .ignoresSafeArea()
             
             VStack {
+                Spacer()
+                    .frame(height: 200)
+                
+                Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1))
+                    .ignoresSafeArea()
+            }
+            
+            VStack {
                 HStack {
                     Text("Chat")
                         .font(.system(size: 40, weight: .bold))
@@ -56,7 +64,7 @@ struct ChatRoomsView2: View {
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color.white)
+                .background(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
                 .cornerRadius(25)
                 HStack {
                     Image("home-alt2")

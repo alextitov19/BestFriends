@@ -68,6 +68,14 @@ struct ChatBubble: View {
                                         })
                     }
                 }
+                HStack {
+                    Spacer()
+                    
+                    Text("\(Int(Int(NSDate().timeIntervalSince1970) - message.creationDate) / 60) minutes ago")
+                        .foregroundColor(.white)
+                }
+                
+                
             }
             .actionSheet(isPresented: $showingActionSheet) {
                 ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
@@ -136,6 +144,14 @@ struct ChatBubble: View {
                     
                     Spacer()
                 }
+                
+                HStack {
+                    Text("\(Int(Int(NSDate().timeIntervalSince1970) - message.creationDate) / 60) minutes ago")
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+                }
+
             }
             .actionSheet(isPresented: $showingActionSheet) {
                 ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
