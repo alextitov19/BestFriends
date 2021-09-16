@@ -62,12 +62,21 @@ struct RoomRow: View {
         messageBody = room.messages.last?.body ?? ""
         let message = room.messages.last
         if message != nil {
-            timestring = "\(Int(Int(NSDate().timeIntervalSince1970) - room.messages.last!.creationDate) / 60) minutes ago"
+            getTimestring()
         }
         
 
         if UserDataSource().getCurrentUser().hiddenRooms.contains(room.id) {
             messageBody = "*Hidden*"
+        }
+    }
+    
+    func getTimestring() {
+        let minutes: Int = Int(Int(Int(NSDate().timeIntervalSince1970) - room.messages.last!.creationDate) / 60)
+        timestring = "\(minutes) minutes ago"
+        if minutes > 60 {
+            let hours = Int(minutes / 60)
+            timestring = "\(hours) hours ago"
         }
     }
 }

@@ -18,7 +18,8 @@ struct ChatBubble: View {
     @State private var currentLink = ""
     @State private var backgroundColor1 = Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 0.7475871361))
     @State private var backgroundColor2 = Color(#colorLiteral(red: 1, green: 0.6660452485, blue: 0, alpha: 0.75))
-
+    @State private var timestring = ""
+    
     init(msg: Message, messageDS: MessageDataSource, myuser: User) {
         message = msg
         messageDataSource = messageDS
@@ -47,8 +48,8 @@ struct ChatBubble: View {
                             }
                             .sheet(isPresented: $isImagePresented) {
                                 FullScreenChatImage(link: message.attachmentPath!)
-                                    }
-
+                            }
+                        
                     } else if message.stickerNumber != nil {
                         Image(uiImage: messageDataSource.downloadImage(key: "Stickers/Sticker\(message.stickerNumber!).png"))
                             .resizable()
@@ -71,8 +72,11 @@ struct ChatBubble: View {
                 HStack {
                     Spacer()
                     
-                    Text("\(Int(Int(NSDate().timeIntervalSince1970) - message.creationDate) / 60) minutes ago")
+                    Text(timestring)
                         .foregroundColor(.white)
+                        .onAppear {
+                            getTimestring()
+                        }
                 }
                 
                 
@@ -120,8 +124,8 @@ struct ChatBubble: View {
                                         })
                             .sheet(isPresented: $isImagePresented) {
                                 FullScreenChatImage(link: message.attachmentPath!)
-                                    
-                                    }
+                                
+                            }
                         
                     } else if message.stickerNumber != nil {
                         Image(uiImage: messageDataSource.downloadImage(key: "Stickers/Sticker\(message.stickerNumber!).png"))
@@ -146,12 +150,15 @@ struct ChatBubble: View {
                 }
                 
                 HStack {
-                    Text("\(Int(Int(NSDate().timeIntervalSince1970) - message.creationDate) / 60) minutes ago")
+                    Text(timestring)
                         .foregroundColor(.white)
+                        .onAppear {
+                            getTimestring()
+                        }
                     
                     Spacer()
                 }
-
+                
             }
             .actionSheet(isPresented: $showingActionSheet) {
                 ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
@@ -182,6 +189,15 @@ struct ChatBubble: View {
         let result = Double(text.count / 24)
         let rows = result.rounded(.up) + 1
         return CGFloat(rows * 30)
+    }
+    
+    func getTimestring() {
+        let minutes: Int = Int(Int(Int(NSDate().timeIntervalSince1970) - message.creationDate) / 60)
+        timestring = "\(minutes) minutes ago"
+        if minutes > 60 {
+            let hours = Int(minutes / 60)
+            timestring = "\(hours) hours ago"
+        }
     }
     
 }
