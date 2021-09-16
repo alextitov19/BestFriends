@@ -193,10 +193,10 @@ struct ChatBubble: View {
     
     func getTimestring() {
         let minutes: Int = Int(Int(Int(NSDate().timeIntervalSince1970) - message.creationDate) / 60)
-        timestring = "\(minutes) minutes ago"
+        timestring = "\(minutes) min"
         if minutes > 60 {
             let hours = Int(minutes / 60)
-            timestring = "\(hours) hours ago"
+            timestring = "\(hours) hr"
         }
     }
     
