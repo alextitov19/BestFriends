@@ -37,6 +37,7 @@ final class SessionManager: ObservableObject {
                 signOut()
             }
         } else {
+            print("No user, going to welcome")
             appState = .welcome
         }
     }
