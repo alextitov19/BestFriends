@@ -422,6 +422,8 @@ struct PrivacyPolicyView: View {
                                       
                                 }
                                 
+                                Spacer()
+                                    .frame(height: 10)
                                 
                                      Text("We will not sell your contact information to third parties for marketing purposes.")
                                          .font(.system(size: 10, weight: .light))
@@ -475,7 +477,10 @@ struct PrivacyPolicyView: View {
                                 Spacer()
                                   
                             }
-                            
+                            VStack{
+                                
+                            Spacer()
+                                .frame(height: 10)
                             
                                  Text("We may share, or we may permit third party ad networks, social media companies, and other third party services to collect information about the browsing behavior of our users of Services through cookies, social plug-ins, or other tracking technology. We may permit third party online advertising networks to collect information about your use of our Services over time, including location information, so that they may play or display ads that may be relevant to your interests on our Services as well as on other websites or services, or on other devices you may use. Typically, the information is collected through cookies or similar tracking technologies. You may be able to “opt out” of the collection of information through cookies or other tracking technology by actively managing the settings on your browser or mobile device. Please refer to your browser’s or mobile device’s technical information for instructions on how to delete, disable, and/or limit the use of cookies or other tracking/recording tools. Depending on your mobile device, you may not be able to control all tracking technologies through your device settings.  You may also be able to limit interest-based advertising through the settings on your browser or device. For example, you may be able to opt-out of some interest-based advertising on your mobile device by selecting “limit ad tracking” (iOS) or “opt-out of interest based ads” (Android). To learn more about interest-based advertising and how you may opt-out of some of this tracking, you may wish to visit the Network Advertising Initiative’s online resources, at http://www.networkadvertising.org/choices and/or the Digital Advertisers Alliance’s resources at www.aboutads.info/choices.  You may also be able to opt-out of some – but not all – interest-based ads served by mobile ad networks by visiting http://youradchoices.com/appchoices and downloading the mobile AppChoices app.  If you have any questions about third party tracking and advertising, you can contact us directly at Admin@SocialTech Labs.com.")
                                      .font(.system(size: 10, weight: .light))
@@ -502,7 +507,8 @@ struct PrivacyPolicyView: View {
                                     Spacer()
                                       
                                 }
-                                
+                                Spacer()
+                                    .frame(height: 10)
                                 
                                      Text("Following termination or deactivation of your account, SocialTech Labs may retain your information for a commercially reasonable time for backup, archival, or audit purposes, or to maintain and improve the Services. Furthermore, SocialTech Labs may retain and continue to use indefinitely all information (including User Content) contained in your communications to other Users or posted to public or semi-public areas of the Services after termination or deactivation of your account. Please contact us at contact@madlyradlabs.com if you wish to delete your account information from our systems, though we may not be able to delete all information, as noted in this Privacy Policy.")
                                          .font(.system(size: 10, weight: .light))
@@ -529,7 +535,8 @@ struct PrivacyPolicyView: View {
                                         Spacer()
                                           
                                     }
-                                    
+                                    Spacer()
+                                        .frame(height: 10)
                                     
                                          Text("SocialTech Labs cares about the security of your information and uses commercially reasonable physical, administrative, and technological safeguards to preserve the integrity and security of all information we collect and that we share with our service providers.  However, no security system is impenetrable, and we cannot guarantee the security of our systems 100%.  In the event that any information under our control is compromised as a result of a breach of security, we will take reasonable steps to investigate the situation and, where appropriate, notify those individuals whose information may have been compromised and take other steps, in accordance with any applicable laws and regulations. To protect your privacy and security, we take reasonable steps (such as requesting a unique password) to verify your identity before granting you access to your account. You are responsible for maintaining the secrecy of your unique password and account information and for controlling access to your email communications from SocialTech Labs, at all times.")
                                              .font(.system(size: 10, weight: .light))
@@ -555,7 +562,8 @@ struct PrivacyPolicyView: View {
                                             Spacer()
                                               
                                         }
-                                        
+                                        Spacer()
+                                            .frame(height: 10)
                                         
                                              Text("Protecting the privacy of young children is especially important. For that reason, SocialTech Labs does not knowingly collect or solicit personal information from anyone under the age of 13 or knowingly allow such persons to register as Users. If you are under 13, please do not send any information about yourself to us, including your name, address, telephone number, or email address. In the event that we learn that we have collected personal information from a child under age 13 without verification of parental consent, we will delete that information as quickly as possible. If you believe that we might have any information from or about a child under 13, please contact us at Admin@SocialTech Labs.com.")
                                                  .font(.system(size: 10, weight: .light))
@@ -585,7 +593,8 @@ struct PrivacyPolicyView: View {
                                                   
                                             }
                                             
-                                            
+                                            Spacer()
+                                                .frame(height: 10)
                                                  Text("We are not responsible for the practices employed by websites linked to or from the Services, nor the information or content contained therein. Please remember that when you use a link to go from the Services to another website, our Privacy Policy is no longer in effect. Your browsing and interaction on any other website, including those that have a link on our website, is subject to that website’s own rules and policies. Please read over those rules and policies before proceeding.")
                                                      .font(.system(size: 10, weight: .light))
                                                      .foregroundColor(.black)
@@ -614,7 +623,8 @@ struct PrivacyPolicyView: View {
                                                     Spacer()
                                                       
                                                 }
-                                                
+                                                Spacer()
+                                                    .frame(height: 10)
                                                 
                                                      Text("It is our policy to provide notifications, whether such notifications are required by law or are for marketing or other business related purposes, to you via email notice, written or hard copy notice, or through conspicuous posting of such notice on the Services, as determined by SocialTech Labs in its sole discretion. We reserve the right to determine the form and means of providing notifications to you, provided that you may opt out of certain means of notification, as described in this Privacy Policy.")
                                                          .font(.system(size: 10, weight: .light))
@@ -642,7 +652,8 @@ struct PrivacyPolicyView: View {
                                                           
                                                     }
                                                     
-                                                    
+                                                    Spacer()
+                                                        .frame(height: 10)
                                                          Text("If we change our privacy policies and procedures, we will post those changes on the Services to keep you aware of what information we collect, how we use it, and under what circumstances we may disclose it. Changes to this Privacy Policy are effective when they are posted on this page.")
                                                              .font(.system(size: 10, weight: .light))
                                                              .foregroundColor(.black)
@@ -656,17 +667,54 @@ struct PrivacyPolicyView: View {
                                         
                                                     
                                                          Text("For any questions on this Privacy Policy, please contact us by email at Admin@.SocialTech Labs.com or mail at SocialTech Labs, Inc., 815 Superior Avenue, East, Suite 1618, Cleveland, Ohio  44114")
-                                                             .font(.system(size: 10, weight: .light))
+                                                             .font(.system(size: 10, weight: .medium))
                                                              .foregroundColor(.black)
                                                              .multilineTextAlignment(.leading)
-                                                             .padding(.horizontal, 10)
+                                                             .padding(.horizontal, 5)
                                                              
                                                       
                                                              Spacer()
                                                              
                                                     
+                                                    
+                                                    
+                                                    
                                         
-                                                
+                                                    VStack {
+
+                                                        Spacer()
+                                                        .frame(height: 30)
+                                               
+                                                        Text("Terms of Service")
+                                                            .font(.system(size: 25, weight: .bold))
+                                                            .foregroundColor(.black)
+                                                            .multilineTextAlignment(.center)
+                                                            .padding(.horizontal, 0)
+                                                        
+                                                        
+                                                        Spacer()
+                                                            .frame(height: 15)
+                                                        
+                                                        Text("SOCIALTECH LABS, INC. PRIVACY POLICY")
+                                                            .font(.system(size: 15, weight: .bold))
+                                                            .italic()
+                                                            .foregroundColor(.black)
+                                                            .multilineTextAlignment(.leading)
+                                                          .padding(.horizontal, 0)
+                                                        
+                                                     
+                                                        Spacer()
+                                                            .frame(height: 25)
+                                                        
+                                                        
+                                                        Text("SocialTech Labs, Inc. owns the app called, BestFriends. Welcome to a facilitated website and online communication service provided by SocialTech Labs, Inc. (“SocialTech Labs”, “we,” or “us”). These Terms of Service (“Terms”) govern your access to and use of our services, including our various websites, SMS, APIs, email notifications, applications, buttons, widgets, ads, commerce services, and our other covered services that link to these Terms (collectively, the “Services”), and any information, text, links, graphics, photos, audio, videos, or other materials or arrangements of materials uploaded, downloaded or appearing on the Services (collectively referred to as “Content”). By accessing or using the Services, you represent that you have read, understood, and agree to be bound by this Agreement and to the collection and use of your information as set forth in the Privacy Policy, whether or not you are a registered user of our Services.")
+                                                            .font(.system(size: 10, weight: .light))
+                                                            .foregroundColor(.black)
+                                                            .multilineTextAlignment(.leading)
+                                                            .padding(.horizontal, 10)
+                                                    
+                                                        Spacer()
+                                                            .frame(height: 10)
                                         
     }
     
@@ -695,4 +743,14 @@ struct PrivacyPolicyView: View {
         }
         }
     }
+}
+}
+
+
+
+
+
+
+
+
 }

@@ -28,7 +28,6 @@
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
 		7A1C04DE26E8029700DE0EEC /* ChatRoomsView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1C04DD26E8029700DE0EEC /* ChatRoomsView2.swift */; };
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
-		7A234A0D26F42F01002BE042 /* TermsOfServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A234A0C26F42F01002BE042 /* TermsOfServiceView.swift */; };
 		7A234A0F26F42F0A002BE042 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A234A0E26F42F0A002BE042 /* PrivacyPolicyView.swift */; };
 		7A23683426CB1DD300C56A97 /* SignUpView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683326CB1DD300C56A97 /* SignUpView1.swift */; };
 		7A23683626CB324100C56A97 /* SignUpView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683526CB324100C56A97 /* SignUpView2.swift */; };
@@ -214,7 +213,6 @@
 		7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
 		7A1C04DD26E8029700DE0EEC /* ChatRoomsView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomsView2.swift; sourceTree = "<group>"; };
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
-		7A234A0C26F42F01002BE042 /* TermsOfServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceView.swift; sourceTree = "<group>"; };
 		7A234A0E26F42F0A002BE042 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		7A23683326CB1DD300C56A97 /* SignUpView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView1.swift; sourceTree = "<group>"; };
 		7A23683526CB324100C56A97 /* SignUpView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView2.swift; sourceTree = "<group>"; };
@@ -560,7 +558,6 @@
 				7AD1F10026D2C13300254306 /* SignUpView8.swift */,
 				7AD1F10226D2C71700254306 /* SignUpView9.swift */,
 				7AD1F0F626D1BC2000254306 /* ConfirmationView.swift */,
-				7A234A0C26F42F01002BE042 /* TermsOfServiceView.swift */,
 				7A234A0E26F42F0A002BE042 /* PrivacyPolicyView.swift */,
 			);
 			path = "Sign Up";
@@ -1212,7 +1209,6 @@
 				D1E3CFE326543C4D00A26779 /* ChangePin.swift in Sources */,
 				CF436A32265B40DD00B69506 /* NotificationsOnOffPage.swift in Sources */,
 				7A9B957D26EFFD81001D56E9 /* ManagementDocument.swift in Sources */,
-				7A234A0D26F42F01002BE042 /* TermsOfServiceView.swift in Sources */,
 				CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */,
 				CF1E6AE5269A00DB00B8F985 /* PreAddFriends.swift in Sources */,
 				CFE6FD4626620E9A00DF92BD /* Popups.swift in Sources */,

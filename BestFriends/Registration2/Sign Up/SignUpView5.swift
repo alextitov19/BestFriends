@@ -166,7 +166,7 @@ struct SignUpView5: View {
                 
                 Text("By signing up, you agree to our")
                     .popover(isPresented: $tosShowing, content: {
-                        TermsOfServiceView()
+//                        TermsOfServiceView()
                     })
                 
                 
