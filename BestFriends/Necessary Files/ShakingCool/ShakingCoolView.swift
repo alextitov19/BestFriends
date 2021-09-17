@@ -59,6 +59,8 @@ struct ShakingCoolView: View {
                         .frame(width: 375, height: 75, alignment: .center)
                     
                     Spacer().frame(height: 10)
+                
+         
                     
                     Text("You can add \(howManyLeft()) more image(s)")
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -132,7 +134,7 @@ struct ShakingCoolView: View {
                             }
                         }
                         .padding()
-                }
+              }
                 
                 if currentlyLoading {
                     Text("Uploading image...")
