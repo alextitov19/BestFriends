@@ -32,6 +32,9 @@ struct ShakingCoolView: View {
             ZStack {
                 Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
                     .ignoresSafeArea()
+                    .onAppear {
+                        reloadData()
+                    }
                 
                 ZStack {
                     Circle()
@@ -242,11 +245,5 @@ struct ShakingCoolView: View {
         let first = user.friends.count
         let second = user.shakingCool.count
         return 2 + first - second
-    }
-}
-
-struct ShakingCoolView_Previews : PreviewProvider {
-    static var previews: some View {
-        ShakingCoolView()
     }
 }
