@@ -171,14 +171,14 @@ struct SignUpView5: View {
                 
                 
                 HStack {
-                    Text(">")
+                    Text("")
                         .underline()
                         .foregroundColor(.blue)
                         .onTapGesture {
                             tosShowing = true
                         }
 
-                    Text(">")
+                    Text("")
                         .popover(isPresented: $privacyShowing, content: {
                             PrivacyPolicyView()
                         })
