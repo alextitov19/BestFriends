@@ -337,10 +337,6 @@ struct HomeView: View {
                 }
             }
             
-            if USS.user.needIntro {
-                IntroPopups()
-            }
-            
             if cantAddMoreFriends {
                 Text("You can't add more than 5 friends")
                     .font(.title)
