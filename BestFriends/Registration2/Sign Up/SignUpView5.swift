@@ -166,24 +166,24 @@ struct SignUpView5: View {
                 
                 Text("By signing up, you agree to our")
                     .popover(isPresented: $tosShowing, content: {
-//                        TermsOfServiceView()
+//                       TermsOfServiceView()
                     })
                 
                 
                 HStack {
-                    Text("Terms of Service")
+                    Text(">")
                         .underline()
                         .foregroundColor(.blue)
                         .onTapGesture {
                             tosShowing = true
                         }
-                    
-                    Text("and")
+
+                    Text(">")
                         .popover(isPresented: $privacyShowing, content: {
                             PrivacyPolicyView()
                         })
-                    
-                    Text("Privacy Policy")
+
+                    Text("Privacy Policy / Terms of Service")
                         .underline()
                         .foregroundColor(.blue)
                         .onTapGesture {
