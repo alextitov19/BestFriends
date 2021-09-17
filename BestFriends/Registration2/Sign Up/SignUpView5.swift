@@ -22,6 +22,10 @@ struct SignUpView5: View {
     
     @State private var readyToGo = false
     
+    @State private var tosShowing = false
+    @State private var privacyShowing = false
+
+    
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
@@ -161,13 +165,30 @@ struct SignUpView5: View {
                 .padding(.vertical, 20)
                 
                 Text("By signing up, you agree to our")
+                    .popover(isPresented: $tosShowing, content: {
+                        TermsOfServiceView()
+                    })
+                
                 
                 HStack {
-                    Link("Terms of Service", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
+                    Text("Terms of Service")
+                        .underline()
+                        .foregroundColor(.blue)
+                        .onTapGesture {
+                            tosShowing = true
+                        }
                     
                     Text("and")
+                        .popover(isPresented: $privacyShowing, content: {
+                            PrivacyPolicyView()
+                        })
                     
-                    Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
+                    Text("Privacy Policy")
+                        .underline()
+                        .foregroundColor(.blue)
+                        .onTapGesture {
+                            privacyShowing = true
+                        }
                 }
                 
                 NavigationLink("", destination: SignUpView6(username: username, firstname: firstname, lastname: lastname, email: email, password: password).environmentObject(sessionManager), isActive: $readyToGo)
