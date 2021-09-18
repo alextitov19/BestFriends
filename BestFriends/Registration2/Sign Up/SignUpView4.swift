@@ -51,7 +51,7 @@ struct SignUpView4: View {
                   .foregroundColor(.white)
                   .multilineTextAlignment(.center)
                   .padding(.top, 1)
-                  .padding(.bottom, 10)
+                  .padding(.bottom, 7)
 ////
 ////
 ////                NavigationLink(
@@ -75,7 +75,7 @@ struct SignUpView4: View {
                 
                
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 30)
                 
 
                 Text("We don't sell your data to 3rd parties.")
