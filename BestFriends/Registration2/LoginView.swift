@@ -185,7 +185,7 @@ struct ForgotPassword: View {
         NavigationView {
             ZStack {
                 
-                Image("SignUpPinBackground")
+                Image("settingsBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
@@ -194,21 +194,36 @@ struct ForgotPassword: View {
                     
                     Text("Reset Password")
                         .font(.system(size: 50))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .multilineTextAlignment(.center)
                     
                     Spacer()
                         .frame(height: 200)
                     
                     TextField("Enter Username", text: $username)
+//                        .multilineTextAlignment(.center)
+//                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                        .frame(width: 300, height: 40, alignment: .center)
+//                        .font(.title)
+//                        .textFieldStyle(RoundedBorderTextFieldStyle())
+//                        .cornerRadius(20)
+//                        .autocapitalization(.none)
+//                        .disableAutocorrection(true)
+//
+                        .frame(maxWidth: .infinity, maxHeight: 40)
+                        .font(.system(size: 24))
+                        .foregroundColor(.black)
+                        .background(Color.clear)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.gray, lineWidth: 1)
+                        )
                         .multilineTextAlignment(.center)
-                        .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 300, height: 40, alignment: .center)
-                        .font(.title)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .cornerRadius(20)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
+                        .padding(.horizontal, 40)
+                        .padding(.top, 10)
+
                     
                     Spacer()
                         .frame(height: 50)
@@ -332,20 +347,29 @@ struct ForgotUsername: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     var body: some View {
+        
         ZStack {
-            Image("SignUpPinBackground")
+            Image("settingsBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+
+       
             
             VStack {
+                
+                
+                
+                Spacer()
+                    .frame(height: 175)
+                
                 Text("Forgot Username")
-                    .foregroundColor(.white)
-                    .font(.system(size: 35, weight: .light))
+                    .foregroundColor(.black)
+                    .font(.system(size: 50, weight: .light))
                     .padding(20)
                 
                 Text("Your username is: \(username)")
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .font(.system(size: 30, weight: .light))
                     .isHidden(username.count == 0)
                     .padding(20)
@@ -357,21 +381,39 @@ struct ForgotUsername: View {
                     .padding(20)
                 
                 Spacer()
-                    .frame(height: 120)
+                    .frame(height: 15)
                 
-                TextField(" Email", text: $email)
-                    .font(.system(size: 24, weight: .medium))
+//                TextField(" Email", text: $email)
+//                    .font(.system(size: 24, weight: .medium))
+//                    .multilineTextAlignment(.center)
+//                    .autocapitalization(.none)
+//                    .disableAutocorrection(true)
+//                    .foregroundColor(.black)
+//                    .background(Color(#colorLiteral(red: 0.5851855278, green: 0.3716525435, blue: 1, alpha: 1)))
+//                    .frame(width: 340)
+//                    .cornerRadius(20)
+//                    .padding(40)
+//
+//
+                TextField("  Email", text: $email)
+                    .frame(maxWidth: .infinity, maxHeight: 40)
+                    .font(.system(size: 24))
+                    .foregroundColor(.black)
+                    .background(Color.clear)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.gray, lineWidth: 1)
+                    )
                     .multilineTextAlignment(.center)
                     .autocapitalization(.none)
                     .disableAutocorrection(true)
-                    .foregroundColor(.black)
-                    .background(Color(#colorLiteral(red: 0.228910774, green: 0.8312507868, blue: 1, alpha: 1)))
-                    .frame(width: 340)
-                    .cornerRadius(20)
-                    .padding(40)
+                    .padding(.horizontal, 40)
+                    .padding(.top, 10)
+
+                
                 
                 Spacer()
-                    .frame(height: 120)
+                    .frame(height: 0)
                 
                 Button(action: {
                     showUsername()
@@ -383,7 +425,7 @@ struct ForgotUsername: View {
                         .background(Color(#colorLiteral(red: 0.046738334, green: 0.4033712745, blue: 0.9790328145, alpha: 1)))
                         .cornerRadius(25)
                 }
-                .padding(20)
+                .padding(120)
             }
         }
     }
