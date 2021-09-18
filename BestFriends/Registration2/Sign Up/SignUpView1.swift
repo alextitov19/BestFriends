@@ -59,20 +59,38 @@ struct SignUpView1: View {
                 }
                 
                 VStack {
-                    Text("Introducing\nBestFriends!")
+                    
+                    Spacer()
+                        .frame(height: 115)
+                    
+                    
+                    Text("introducing")
+                        .font(.system(size: 15, weight: .light))
+                    .italic()
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+                    
+                    Text("BestFriends!")
                         .font(.system(size: 40, weight: .bold))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .padding(.all, 30)
+                        .padding(.all, 0)
+                
+                    
+                    
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
                     
                     Text("Built by Teens")
-                        .font(.system(size: 18, weight: .light))
-                    .italic()
+                        .font(.system(size: 20, weight: .light))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 30)
                     
-                 
+                    VStack{
                    
                     Spacer()
                         .frame(height: 70)
@@ -123,6 +141,7 @@ struct SignUpView1Preview : PreviewProvider {
                 .environmentObject(SessionManager())
             SignUpView1()
                 .environmentObject(SessionManager())
+            }
         }
     }
 }

@@ -52,7 +52,7 @@ struct SignUpView3: View {
                     .padding(.top, 50)
                     .padding(.bottom, 10)
                 
-                Text("Strangers can not search your username to find you. We only use sharable QR code to connect friends.")
+                Text("Strangers can't search your username to find you. We only use sharable QR codes to connect friends.")
                     .font(.system(size: 26, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)

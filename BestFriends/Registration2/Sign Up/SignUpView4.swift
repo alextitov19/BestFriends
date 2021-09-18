@@ -47,7 +47,7 @@ struct SignUpView4: View {
                 
         
                 
-                Text("Protected User Data")
+                Text("Protecting Your Data")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
@@ -64,21 +64,26 @@ struct SignUpView4: View {
                             .font(.system(size: 17))
                             .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                             .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                 
                
-                
+                Spacer()
+                    .frame(height: 50)
                 
 
                 Text("We don't sell your data to 3rd parties.")
-                    .font(.system(size: 26, weight: .bold))
+//                    .font(.system(size: 26, weight: .bold))
+//                    .foregroundColor(.white)
+//                    .multilineTextAlignment(.center)
+//                    .padding(.top, 20)
+//                    .padding(.bottom, 10)
+
+                    .font(.system(size: 26, weight: .light))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .padding(.top, 20)
-                    .padding(.bottom, 10)
-
-
+                    .padding(.horizontal, 30)
+                
                 Spacer()
                     .frame(height: 20)
                 

@@ -46,7 +46,7 @@ struct ConfirmationView: View {
                     .padding(.horizontal, 40)
                     .padding(.vertical, 10)
                 
-                Text("Enter the 6-digit code we just sent you on your email address.")
+                Text("Enter the 6-digit code we just sent to your email.")
                     .font(.system(size: 20, weight: .regular))
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 40)
