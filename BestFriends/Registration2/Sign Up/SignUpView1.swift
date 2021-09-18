@@ -65,8 +65,8 @@ struct SignUpView1: View {
                         .multilineTextAlignment(.center)
                         .padding(.all, 30)
                     
-                    Text("Designed by Teens")
-                        .font(.system(size: 15, weight: .light))
+                    Text("Built by Teens")
+                        .font(.system(size: 18, weight: .light))
                     .italic()
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
