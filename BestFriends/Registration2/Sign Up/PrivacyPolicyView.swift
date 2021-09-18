@@ -14,7 +14,7 @@ struct PrivacyPolicyView: View {
       
             ZStack {
            
-                Color(#colorLiteral(red: 0.8115023971, green: 0.7874596715, blue: 0.9853610396, alpha: 0.9))
+                Color(#colorLiteral(red: 0.968627451, green: 0.9647058824, blue: 0.9960784314, alpha: 0.9))
                     .ignoresSafeArea()
                 ZStack {
                     Circle()
