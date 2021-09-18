@@ -159,38 +159,49 @@ struct SignUpView5: View {
                         .frame(height: 60)
                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                         .cornerRadius(20)
-                        .padding(.horizontal, 40)
+                        .padding(.horizontal, 20)
                     
                 }
-                .padding(.vertical, 20)
-//
-//                Text("By signing up, you agree to our")
-//                    .popover(isPresented: $tosShowing, content: {
-//                       TermsOfServiceView()
-//                    })
                 
 //
-//                HStack {
-//                    Text("")
-//                        .underline()
-//                        .foregroundColor(.blue)
-//                        .onTapGesture {
-//                            tosShowing = true
-//                        }
+//                Text("By signing up you agree to our Privacy Policy and Terms of Service.")
+//                    .font(.system(size: 16, weight: .light))
+//                    .italic()
+//                    .multilineTextAlignment(.center)
+//                    .padding(.horizontal, 40)
 //
-//                    Text("")
-//                        .popover(isPresented: $privacyShowing, content: {
-//                            PrivacyPolicyView()
-//                        })
-//
-//                    Text("Privacy Policy / Terms of Service")
-//                        .underline()
-//                        .foregroundColor(.blue)
-//                        .onTapGesture {
-//                            privacyShowing = true
-//                        }
-//                }
-//
+               
+                        
+                
+
+
+               Text("By signing up, you agree to our")
+                  .popover(isPresented: $tosShowing, content: {
+                    TermsOfServiceView()
+                   })
+
+
+              HStack {
+                 Text("Terms of Service")
+                    .underline()
+                      .foregroundColor(.blue)
+                    .onTapGesture {
+                         tosShowing = true
+                        }
+
+                   Text("and")
+                     .popover(isPresented: $privacyShowing, content: {
+                       PrivacyPolicyView()
+                      })
+
+                Text("Privacy Policy")
+                      .underline()
+                      .foregroundColor(.blue)
+                     .onTapGesture {
+                        privacyShowing = true
+                     }
+           }
+
                 NavigationLink("", destination: SignUpView6(username: username, firstname: firstname, lastname: lastname, email: email, password: password).environmentObject(sessionManager), isActive: $readyToGo)
             }
             

@@ -180,6 +180,7 @@
 		CF356D322674E3F100BCF572 /* AddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF356D312674E3F100BCF572 /* AddFriends.swift */; };
 		CF436A32265B40DD00B69506 /* NotificationsOnOffPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF436A31265B40DD00B69506 /* NotificationsOnOffPage.swift */; };
 		CF5263E32667621B00243DD7 /* ChangeChatFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */; };
+		CF95B6A026F677E2005B616B /* TermsOfService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF95B69F26F677E2005B616B /* TermsOfService.swift */; };
 		CFA5EBDA269F89D600BFEBA2 /* AddFriendSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5EBD9269F89D600BFEBA2 /* AddFriendSteps.swift */; };
 		CFA5EBDC26A158DB00BFEBA2 /* InviteFriendsChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5EBDB26A158DB00BFEBA2 /* InviteFriendsChat.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
@@ -410,6 +411,7 @@
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
 		CF5263E22667621B00243DD7 /* ChangeChatFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatFontSize.swift; sourceTree = "<group>"; };
+		CF95B69F26F677E2005B616B /* TermsOfService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfService.swift; sourceTree = "<group>"; };
 		CFA5EBD9269F89D600BFEBA2 /* AddFriendSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendSteps.swift; sourceTree = "<group>"; };
 		CFA5EBDB26A158DB00BFEBA2 /* InviteFriendsChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendsChat.swift; sourceTree = "<group>"; };
 		CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeBackground.swift; sourceTree = "<group>"; };
@@ -559,6 +561,7 @@
 				7AD1F10226D2C71700254306 /* SignUpView9.swift */,
 				7AD1F0F626D1BC2000254306 /* ConfirmationView.swift */,
 				7A234A0E26F42F0A002BE042 /* PrivacyPolicyView.swift */,
+				CF95B69F26F677E2005B616B /* TermsOfService.swift */,
 			);
 			path = "Sign Up";
 			sourceTree = "<group>";
@@ -1151,6 +1154,7 @@
 				7A5EFEDF26B4A2EC00281DDD /* amplify/generated/models/AmplifyModels.swift in Sources */,
 				7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */,
 				D1949C412644FD4F00FDB6C5 /* RemoveFriend.swift in Sources */,
+				CF95B6A026F677E2005B616B /* TermsOfService.swift in Sources */,
 				7AEFD543262CED3A00247757 /* QRCodeView.swift in Sources */,
 				7AA200FD2635C6EF00C9F00C /* RoomDataSource.swift in Sources */,
 				D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */,
