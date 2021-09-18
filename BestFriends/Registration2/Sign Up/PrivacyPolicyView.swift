@@ -11,23 +11,9 @@ struct PrivacyPolicyView: View {
     
     var body: some View {
         ScrollView{
-       
-            
-            
-        Text("Privacy Policy")
-            .font(.system(size: 25, weight: .bold))
-            .foregroundColor(.black)
-            .multilineTextAlignment(.center)
-            .padding(.horizontal, 0)
       
-         
             ZStack {
-            
-               
-                 
-            
-            
-
+           
                 Color(#colorLiteral(red: 0.8115023971, green: 0.7874596715, blue: 0.9853610396, alpha: 0.9))
                     .ignoresSafeArea()
                 ZStack {

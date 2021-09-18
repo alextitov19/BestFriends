@@ -44,35 +44,34 @@ struct SignUpView4: View {
                     .frame(maxWidth: .infinity)
                     .scaledToFit()
                     .padding(.horizontal, 20)
-                
-              
-                
-                Text("Protecting Your Data")
-                    .font(.system(size: 40, weight: .bold))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.top, 10)
-                    .padding(.bottom, 10)
-                
-
-                NavigationLink(
-                    destination: PrivacyPolicyView(),
-                    label: {
-                        Text("Privacy Policy")
-                            .frame(width: 325, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 17))
-                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                            .cornerRadius(25)
 
 
-                        
-                     
-                        
-                        
-                        
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
+             Text("Protecting Your Data")
+             .font(.system(size: 40, weight: .bold))
+                  .foregroundColor(.white)
+                  .multilineTextAlignment(.center)
+                  .padding(.top, 1)
+                  .padding(.bottom, 10)
+////
+////
+////                NavigationLink(
+////                    destination: PrivacyPolicyView(),
+////                    label: {
+////                        Text("Privacy Policy")
+////                            .frame(width: 325, height: 50)
+////                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+////                            .font(.system(size: 17))
+////                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+////                            .cornerRadius(25)
+////
+////
+////
+////
+////
+////
+//
+////                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    }
                 
                
                 Spacer()
@@ -166,4 +165,5 @@ struct SignUpView4Preview : PreviewProvider {
             .environmentObject(SessionManager())
     }
 }
+
 }
