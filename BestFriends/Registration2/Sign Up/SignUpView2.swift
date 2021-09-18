@@ -49,7 +49,7 @@ struct SignUpView2: View {
                     .scaledToFit()
                     .padding(.horizontal, 20)
                 
-                Text("BFFs")
+                Text("BFF")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
