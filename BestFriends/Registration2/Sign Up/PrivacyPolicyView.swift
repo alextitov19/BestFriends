@@ -11,14 +11,23 @@ struct PrivacyPolicyView: View {
     
     var body: some View {
         ScrollView{
-        
+       
+            
+            
         Text("Privacy Policy / Terms of Service")
             .font(.system(size: 25, weight: .bold))
             .foregroundColor(.black)
             .multilineTextAlignment(.center)
             .padding(.horizontal, 0)
       
+         
             ZStack {
+            
+               
+                 
+            
+            
+
                 Color(#colorLiteral(red: 0.5193921328, green: 0.2514212728, blue: 1, alpha: 0.9))
                     .ignoresSafeArea()
                 ZStack {
@@ -26,17 +35,17 @@ struct PrivacyPolicyView: View {
                         .frame(width: 400, height: 400)
                         .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
                         .offset(x: 200, y: -400)
-                    
+
                     Circle()
                         .frame(width: 300, height: 300)
                         .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
                         .offset(x: -200, y: -100)
-                    
+
                     Circle()
                         .frame(width: 200, height: 200)
                         .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
                         .offset(x: 150, y: 100)
-                    
+
         
         VStack {
 
@@ -1463,5 +1472,7 @@ Text("– A mechanism for users to flag objectionable content; in BestFriends th
             }
         }
     }
+
+
 }
 }
