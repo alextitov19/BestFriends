@@ -202,7 +202,7 @@ struct SignUpView5: View {
                      }
            }
 
-                NavigationLink("", destination: SignUpView6(username: username, firstname: firstname, lastname: lastname, email: email, password: password).environmentObject(sessionManager), isActive: $readyToGo)
+                NavigationLink("", destination: SignUpView6(username: username.lowercased(), firstname: firstname, lastname: lastname, email: email, password: password).environmentObject(sessionManager), isActive: $readyToGo)
             }
             
             

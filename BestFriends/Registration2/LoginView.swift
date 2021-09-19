@@ -105,7 +105,7 @@ struct LoginView: View {
                         
                         Button(action: {
                             let value = sessionManager.login(
-                                username: username,
+                                username: username.lowercased(),
                                 password: password
                             )
                             if value == false {
