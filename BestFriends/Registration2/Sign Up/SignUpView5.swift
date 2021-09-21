@@ -24,25 +24,25 @@ struct SignUpView5: View {
     
     @State private var tosShowing = false
     @State private var privacyShowing = false
-
+    
     
     var body: some View {
         ZStack {
             Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
                 .ignoresSafeArea()
-
+            
             ZStack {
                 Circle()
                     .frame(width: 400, height: 400)
                     .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
                     .offset(x: 200, y: -400)
-
+                
                 Circle()
                     .frame(width: 300, height: 300)
                     .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
                     .offset(x: -200, y: 400)
             }
-       
+            
             
             VStack {
                 HStack {
@@ -110,7 +110,7 @@ struct SignUpView5: View {
                         .disableAutocorrection(true)
                         .padding(.horizontal, 40)
                         .padding(.vertical, 10)
-                                        
+                    
                     SecureField("  Password", text: $password)
                         .frame(maxWidth: .infinity, maxHeight: 40)
                         .font(.system(size: 24))
@@ -163,45 +163,43 @@ struct SignUpView5: View {
                     
                 }
                 
-//
-//                Text("By signing up you agree to our Privacy Policy and Terms of Service.")
-//                    .font(.system(size: 16, weight: .light))
-//                    .italic()
-//                    .multilineTextAlignment(.center)
-//                    .padding(.horizontal, 40)
-//
-               
-                        
+                //
+                //                Text("By signing up you agree to our Privacy Policy and Terms of Service.")
+                //                    .font(.system(size: 16, weight: .light))
+                //                    .italic()
+                //                    .multilineTextAlignment(.center)
+                //                    .padding(.horizontal, 40)
+                //
                 
-
-
-               Text("By signing up, you agree to our")
-                  .popover(isPresented: $tosShowing, content: {
-                    TermsOfServiceView()
-                   })
-
-
-              HStack {
-                 Text("Terms of Service")
-                    .underline()
-                      .foregroundColor(.blue)
-                    .onTapGesture {
-                         tosShowing = true
+                
+                
+                
+                
+                Text("By signing up, you agree to our")
+                    .popover(isPresented: $tosShowing, content: {
+                        TermsOfServiceView()
+                    })
+                
+                
+                HStack {
+                    Link("Terms of Service", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
+                        .foregroundColor(.blue)
+                        .onTapGesture {
+                            tosShowing = true
                         }
-
-                   Text("and")
-                     .popover(isPresented: $privacyShowing, content: {
-                       PrivacyPolicyView()
-                      })
-
-                Text("Privacy Policy")
-                      .underline()
-                      .foregroundColor(.blue)
-                     .onTapGesture {
-                        privacyShowing = true
-                     }
-           }
-
+                    
+                    Text("and")
+                        .popover(isPresented: $privacyShowing, content: {
+                            PrivacyPolicyView()
+                        })
+                    
+                    Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
+                        .foregroundColor(.blue)
+                        .onTapGesture {
+                            privacyShowing = true
+                        }
+                }
+                
                 NavigationLink("", destination: SignUpView6(username: username.lowercased(), firstname: firstname, lastname: lastname, email: email, password: password).environmentObject(sessionManager), isActive: $readyToGo)
             }
             
