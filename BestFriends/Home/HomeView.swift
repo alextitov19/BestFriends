@@ -195,7 +195,7 @@ struct HomeView: View {
                                 AddFriendSteps()
                             }
                             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                                ImagePicker(image: self.$inputImage)
+                                ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
                             }
                     }
                     .actionSheet(isPresented: $showingActionSheet) {

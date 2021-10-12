@@ -33,6 +33,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>We need to access your camera to enable you to take a picture and share it with your friends.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>The location is converted to coordinates which are then converted to the name of the nearest city. The name of that city is stored in the database to allow us to get an idea of where the majority of the users are coming from. The actual coordinates are not stored in the database.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>

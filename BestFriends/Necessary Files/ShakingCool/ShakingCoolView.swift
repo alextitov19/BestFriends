@@ -117,7 +117,7 @@ struct ShakingCoolView: View {
                                 choosingRecipient.toggle()
                             }
                             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                                ImagePicker(image: self.$inputImage)
+                                ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
                             }
                             .padding()
                     }

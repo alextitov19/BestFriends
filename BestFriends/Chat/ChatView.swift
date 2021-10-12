@@ -17,13 +17,14 @@ struct ChatView: View {
     
     @ObservedObject var messageDataSource: MessageDataSource
     
-    @State var showingImagePicker = false
-    @State var showingMediaMenu = false
+    @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
+    @State private var inputImage: UIImage?
+    @State private var showingImagePicker = false
+    
     @State var stickerPopoverShowing = false
     
     @ObservedObject var textBindingManager = TextBindingManager(limit: 4)
     
-    @State var inputImage: UIImage?
     @State var offset: CGFloat = 0
     @State var adButtonsOffset: CGFloat = -270
     @State private var isShakingCoolPresented = false
@@ -294,18 +295,42 @@ struct ChatView: View {
                     
                     HStack { //footer
                         Button(action: {
+                            let cam = AVCaptureDevice.authorizationStatus(for: .video)
+                            if cam == .notDetermined {
+                            AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
+                                    if response {
+                                        //access granted
+                                        self.sourceType = .camera
+                                        showingImagePicker = true
+                                    } else {}
+                                }
+                            } else {
+                                self.sourceType = .camera
+                                showingImagePicker = true
+                            }
+                            
+                            
+                        }) {
+                            Image("camera")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                        }
+                        
+                        Button(action: {
                             let photos = PHPhotoLibrary.authorizationStatus()
                             if photos == .notDetermined {
                                 PHPhotoLibrary.requestAuthorization({status in
                                     if status == .authorized{
+                                        self.sourceType = .photoLibrary
                                         showingImagePicker = true
                                     } else {}
                                 })
                             } else {
+                                self.sourceType = .photoLibrary
                                 showingImagePicker = true
                             }
                         }) {
-                            Image("camera")
+                            Image("whiteImages")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                         }
@@ -500,10 +525,7 @@ struct ChatView: View {
             }
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-            ImagePicker(image: self.$inputImage)
-            
-            
-            
+            ImagePicker(image: self.$inputImage, sourceType: sourceType)
         }
         .fullScreenCover(isPresented: $isShakingCoolPresented, content: ShakingCoolFullScreenView.init)
         .onShake {
