@@ -64,6 +64,39 @@ class MessageDataSource: ObservableObject {
         }
     }
     
+    func thumbsUpMessage(message: Message, theroom: Room) {
+        var updatedroom = theroom
+        
+        for index in 0..<updatedroom.messages.count {
+            if updatedroom.messages[index].id == message.id && message.hasBeenLiked == false {
+                updatedroom.messages[index].hasBeenLiked = true
+                
+                let group = DispatchGroup()
+                group.enter()
+                
+                Amplify.API.mutate(request: .update(updatedroom)) { event in  //update updatedroom
+                    switch event {
+                    case .success(let result):
+                        switch result {
+                        case .success(let updatedroom):
+                            print("Successfully updated updatedroom: \(updatedroom)")
+                            group.leave()
+                        case .failure(let error):
+                            print("Got failed result with \(error.errorDescription)")
+                        }
+                    case .failure(let error):
+                        print("Got failed event with error \(error)")
+                    }
+                }
+                
+                group.wait()
+                return
+            }
+        }
+        
+        return
+    }
+    
     func deleteMessage(message: Message) {
         room.messages.removeAll { $0.id == message.id }
         Amplify.API.mutate(request: .update(room)) { mutationResult in
@@ -89,7 +122,7 @@ class MessageDataSource: ObservableObject {
         let reportedMessage: ReportedMessage = ReportedMessage(reporterID: userid, reportedMessage: message, previousMessages: room.messages)
         Amplify.API.mutate(request: .create(reportedMessage)) { mutationResult in
             switch mutationResult {
-            
+                
             case .success(let creationResult):
                 
                 switch creationResult {
@@ -140,16 +173,16 @@ class MessageDataSource: ObservableObject {
         let key = "Image/" + Helper().randomString(length: 20)
         Amplify.Storage.uploadData(key: key, data: data,
                                    progressListener: { progress in
-                                    print("Progress: \(progress)")
-                                   }, resultListener: { (event) in
-                                    switch event {
-                                    case .success(let data):
-                                        print("Completed: \(data)")
-                                        self.sendMessage(message: Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Image*", creationDate: Int(NSDate().timeIntervalSince1970), attachmentPath: key, hasBeenLiked: false))
-                                    case .failure(let storageError):
-                                        print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
-                                    }
-                                   })
+            print("Progress: \(progress)")
+        }, resultListener: { (event) in
+            switch event {
+            case .success(let data):
+                print("Completed: \(data)")
+                self.sendMessage(message: Message(id: Helper().randomString(length: 20), senderName: user.firstName, senderID: user.id, body: "*Image*", creationDate: Int(NSDate().timeIntervalSince1970), attachmentPath: key, hasBeenLiked: false))
+            case .failure(let storageError):
+                print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+            }
+        })
     }
     
     func downloadImage(key: String) -> UIImage {

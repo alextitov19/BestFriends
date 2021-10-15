@@ -34,6 +34,12 @@ struct ChatBubble: View {
             VStack {
                 HStack {
                     Spacer()
+                        .onAppear {
+                            if message.hasBeenLiked {
+                                backgroundColor1 = .red
+                                backgroundColor2 = .red
+                            }
+                        }
                     
                     if message.attachmentPath != nil {
                         Text("Show image")
@@ -164,6 +170,9 @@ struct ChatBubble: View {
                 ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
                     .default(Text("Save to SmileNotes")) {
                         messageDataSource.saveToSmileNotes(message: message)
+                    },
+                    .default(Text("Thumbs Up")) {
+                        messageDataSource.thumbsUpMessage(message: message, theroom: messageDataSource.room)
                     },
                     .default(Text("Report as abusive")) {
                         messageDataSource.reportMessage(message: message)
