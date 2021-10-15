@@ -295,6 +295,7 @@ struct ChatView: View {
                     
                     HStack { //footer
                         Button(action: {
+                            self.sourceType = .camera
                             let cam = AVCaptureDevice.authorizationStatus(for: .video)
                             if cam == .notDetermined {
                             AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
@@ -305,7 +306,6 @@ struct ChatView: View {
                                     } else {}
                                 }
                             } else {
-                                self.sourceType = .camera
                                 showingImagePicker = true
                             }
                             
@@ -317,11 +317,11 @@ struct ChatView: View {
                         }
                         
                         Button(action: {
+                            self.sourceType = .photoLibrary
                             let photos = PHPhotoLibrary.authorizationStatus()
                             if photos == .notDetermined {
                                 PHPhotoLibrary.requestAuthorization({status in
                                     if status == .authorized{
-                                        self.sourceType = .photoLibrary
                                         showingImagePicker = true
                                     } else {}
                                 })
