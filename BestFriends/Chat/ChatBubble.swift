@@ -14,6 +14,7 @@ struct ChatBubble: View {
     let user: User
     let messageDataSource: MessageDataSource
     let showLiked: Bool
+    let showThumb: Bool
 
     @State private var showingActionSheet = false
     @State private var isImagePresented = false
@@ -26,11 +27,19 @@ struct ChatBubble: View {
         message = msg
         messageDataSource = messageDS
         user = myuser
+        
         if message.hasBeenLiked {
             print("Has been liked")
             showLiked = true
         } else {
             showLiked = false
+        }
+        
+        if message.hasBeenThumb {
+            print("Has been thumb")
+            showThumb = true
+        } else {
+            showThumb = false
         }
     }
     
@@ -80,8 +89,10 @@ struct ChatBubble: View {
                 HStack {
                     Spacer()
                     
+                    Text("👍")
+                        .isHidden(!showThumb)
+                    
                     Text("❤️")
-                        .foregroundColor(.red)
                         .isHidden(!showLiked)
                     
                     Text(timestring)
@@ -169,8 +180,10 @@ struct ChatBubble: View {
                         }
                     
                     Text("❤️")
-                        .foregroundColor(.red)
                         .isHidden(!showLiked)
+                    
+                    Text("👍")
+                        .isHidden(!showThumb)
                     
                     Spacer()
                 }
@@ -183,6 +196,9 @@ struct ChatBubble: View {
                     },
                     .default(Text("'Like' message")) {
                         messageDataSource.likeMessage(message: message, theroom: messageDataSource.room)
+                    },
+                    .default(Text("'Thumbs Up' message")) {
+                        messageDataSource.thumbsUpMessage(message: message, theroom: messageDataSource.room)
                     },
                     .default(Text("Report as abusive")) {
                         messageDataSource.reportMessage(message: message)

@@ -355,7 +355,7 @@ struct ChatView: View {
                                 UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                                 
                                 // string contains non-whitespace characters
-                                let message = Message(id: Helper().randomString(length: 20), senderName: "\(user.firstName) \(user.lastName.first!)", senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970), hasBeenLiked: false)
+                                let message = Message(id: Helper().randomString(length: 20), senderName: "\(user.firstName) \(user.lastName.first!)", senderID: user.id, body: currentBody, creationDate: Int(NSDate().timeIntervalSince1970), hasBeenLiked: false, hasBeenThumb: false)
                                 messageDataSource.sendMessage(message: message)
                                 currentBody = ""
                             }
