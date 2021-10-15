@@ -68,9 +68,10 @@ class MessageDataSource: ObservableObject {
         var updatedroom = theroom
         
         for index in 0..<updatedroom.messages.count {
+            print(updatedroom.messages[index].hasBeenLiked)
             if updatedroom.messages[index].id == message.id && message.hasBeenLiked == false {
                 updatedroom.messages[index].hasBeenLiked = true
-                
+                print("Updating")
                 let group = DispatchGroup()
                 group.enter()
                 

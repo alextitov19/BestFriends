@@ -24,6 +24,9 @@ struct ChatBubble: View {
         message = msg
         messageDataSource = messageDS
         user = myuser
+        if message.hasBeenLiked {
+            print("Has been liked")
+        }
     }
     
     var body: some View {
@@ -34,12 +37,6 @@ struct ChatBubble: View {
             VStack {
                 HStack {
                     Spacer()
-                        .onAppear {
-                            if message.hasBeenLiked {
-                                backgroundColor1 = .red
-                                backgroundColor2 = .red
-                            }
-                        }
                     
                     if message.attachmentPath != nil {
                         Text("Show image")
