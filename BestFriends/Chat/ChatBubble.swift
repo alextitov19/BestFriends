@@ -13,6 +13,8 @@ struct ChatBubble: View {
     let message: Message
     let user: User
     let messageDataSource: MessageDataSource
+    let showLiked: Bool
+
     @State private var showingActionSheet = false
     @State private var isImagePresented = false
     @State private var currentLink = ""
@@ -26,6 +28,9 @@ struct ChatBubble: View {
         user = myuser
         if message.hasBeenLiked {
             print("Has been liked")
+            showLiked = true
+        } else {
+            showLiked = false
         }
     }
     
@@ -74,6 +79,10 @@ struct ChatBubble: View {
                 }
                 HStack {
                     Spacer()
+                    
+                    Text("❤️")
+                        .foregroundColor(.red)
+                        .isHidden(!showLiked)
                     
                     Text(timestring)
                         .foregroundColor(.white)
@@ -159,6 +168,10 @@ struct ChatBubble: View {
                             getTimestring()
                         }
                     
+                    Text("❤️")
+                        .foregroundColor(.red)
+                        .isHidden(!showLiked)
+                    
                     Spacer()
                 }
                 
@@ -168,8 +181,8 @@ struct ChatBubble: View {
                     .default(Text("Save to SmileNotes")) {
                         messageDataSource.saveToSmileNotes(message: message)
                     },
-                    .default(Text("Thumbs Up")) {
-                        messageDataSource.thumbsUpMessage(message: message, theroom: messageDataSource.room)
+                    .default(Text("'Like' message")) {
+                        messageDataSource.likeMessage(message: message, theroom: messageDataSource.room)
                     },
                     .default(Text("Report as abusive")) {
                         messageDataSource.reportMessage(message: message)

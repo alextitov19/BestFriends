@@ -64,6 +64,40 @@ class MessageDataSource: ObservableObject {
         }
     }
     
+    func likeMessage(message: Message, theroom: Room) {
+        var updatedroom = theroom
+        
+        for index in 0..<updatedroom.messages.count {
+            print(updatedroom.messages[index].hasBeenLiked)
+            if updatedroom.messages[index].id == message.id && message.hasBeenLiked == false {
+                updatedroom.messages[index].hasBeenLiked = true
+                print("Updating")
+                let group = DispatchGroup()
+                group.enter()
+                
+                Amplify.API.mutate(request: .update(updatedroom)) { event in  //update updatedroom
+                    switch event {
+                    case .success(let result):
+                        switch result {
+                        case .success(let updatedroom):
+                            print("Successfully updated updatedroom: \(updatedroom)")
+                            group.leave()
+                        case .failure(let error):
+                            print("Got failed result with \(error.errorDescription)")
+                        }
+                    case .failure(let error):
+                        print("Got failed event with error \(error)")
+                    }
+                }
+                
+                group.wait()
+                return
+            }
+        }
+        
+        return
+    }
+    
     func thumbsUpMessage(message: Message, theroom: Room) {
         var updatedroom = theroom
         
