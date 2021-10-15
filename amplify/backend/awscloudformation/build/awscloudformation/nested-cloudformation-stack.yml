@@ -143,7 +143,7 @@
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
           "DynamoDBEnableServerSideEncryption": false,
           "S3DeploymentBucket": "amplify-bestfriends-staging-32557-deployment",
-          "S3DeploymentRootKey": "amplify-appsync-files/520b88643538ff322e91a77fb384bc77c5e44248",
+          "S3DeploymentRootKey": "amplify-appsync-files/70a040bc34592be479b61163247d6e37fc62bb31",
           "env": "staging"
         }
       }

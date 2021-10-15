@@ -14,6 +14,7 @@ subscription OnCreateRoom {
       attachmentPath
       stickerNumber
       hasBeenLiked
+      hasBeenThumb
     }
     timeUpdated
     createdAt
@@ -35,6 +36,7 @@ subscription OnUpdateRoom {
       attachmentPath
       stickerNumber
       hasBeenLiked
+      hasBeenThumb
     }
     timeUpdated
     createdAt
@@ -56,6 +58,7 @@ subscription OnDeleteRoom {
       attachmentPath
       stickerNumber
       hasBeenLiked
+      hasBeenThumb
     }
     timeUpdated
     createdAt
@@ -108,6 +111,7 @@ subscription OnCreateReportedMessage {
       attachmentPath
       stickerNumber
       hasBeenLiked
+      hasBeenThumb
     }
     previousMessages {
       id
@@ -118,6 +122,7 @@ subscription OnCreateReportedMessage {
       attachmentPath
       stickerNumber
       hasBeenLiked
+      hasBeenThumb
     }
     createdAt
     updatedAt
@@ -136,6 +141,7 @@ subscription OnUpdateReportedMessage {
       attachmentPath
       stickerNumber
       hasBeenLiked
+      hasBeenThumb
     }
     previousMessages {
       id
@@ -146,6 +152,7 @@ subscription OnUpdateReportedMessage {
       attachmentPath
       stickerNumber
       hasBeenLiked
+      hasBeenThumb
     }
     createdAt
     updatedAt
@@ -164,6 +171,7 @@ subscription OnDeleteReportedMessage {
       attachmentPath
       stickerNumber
       hasBeenLiked
+      hasBeenThumb
     }
     previousMessages {
       id
@@ -174,6 +182,7 @@ subscription OnDeleteReportedMessage {
       attachmentPath
       stickerNumber
       hasBeenLiked
+      hasBeenThumb
     }
     createdAt
     updatedAt
@@ -210,6 +219,7 @@ subscription OnCreateUser {
         attachmentPath
         stickerNumber
         hasBeenLiked
+        hasBeenThumb
       }
       favorite
     }
@@ -263,6 +273,7 @@ subscription OnUpdateUser {
         attachmentPath
         stickerNumber
         hasBeenLiked
+        hasBeenThumb
       }
       favorite
     }
@@ -316,6 +327,7 @@ subscription OnDeleteUser {
         attachmentPath
         stickerNumber
         hasBeenLiked
+        hasBeenThumb
       }
       favorite
     }

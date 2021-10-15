@@ -37,6 +37,7 @@ type Message {
   attachmentPath: String
   stickerNumber: Int
   hasBeenLiked: Boolean!
+  hasBeenThumb: Boolean!
 }
 
 type ReportedMessage @model {

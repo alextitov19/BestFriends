@@ -67,8 +67,8 @@ public struct CreateRoomInput: GraphQLMapConvertible {
 public struct MessageInput: GraphQLMapConvertible {
   public var graphQLMap: GraphQLMap
 
-  public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-    graphQLMap = ["id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked]
+  public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+    graphQLMap = ["id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb]
   }
 
   public var id: GraphQLID {
@@ -140,6 +140,15 @@ public struct MessageInput: GraphQLMapConvertible {
     }
     set {
       graphQLMap.updateValue(newValue, forKey: "hasBeenLiked")
+    }
+  }
+
+  public var hasBeenThumb: Bool {
+    get {
+      return graphQLMap["hasBeenThumb"] as! Bool
+    }
+    set {
+      graphQLMap.updateValue(newValue, forKey: "hasBeenThumb")
     }
   }
 }
@@ -3251,7 +3260,7 @@ public struct ModelManagementDocumentFilterInput: GraphQLMapConvertible {
 
 public final class CreateRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateRoom($input: CreateRoomInput!, $condition: ModelRoomConditionInput) {\n  createRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateRoom($input: CreateRoomInput!, $condition: ModelRoomConditionInput) {\n  createRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateRoomInput
   public var condition: ModelRoomConditionInput?
@@ -3410,6 +3419,7 @@ public final class CreateRoomMutation: GraphQLMutation {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -3418,8 +3428,8 @@ public final class CreateRoomMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -3502,6 +3512,15 @@ public final class CreateRoomMutation: GraphQLMutation {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -3509,7 +3528,7 @@ public final class CreateRoomMutation: GraphQLMutation {
 
 public final class UpdateRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateRoom($input: UpdateRoomInput!, $condition: ModelRoomConditionInput) {\n  updateRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateRoom($input: UpdateRoomInput!, $condition: ModelRoomConditionInput) {\n  updateRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateRoomInput
   public var condition: ModelRoomConditionInput?
@@ -3668,6 +3687,7 @@ public final class UpdateRoomMutation: GraphQLMutation {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -3676,8 +3696,8 @@ public final class UpdateRoomMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -3760,6 +3780,15 @@ public final class UpdateRoomMutation: GraphQLMutation {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -3767,7 +3796,7 @@ public final class UpdateRoomMutation: GraphQLMutation {
 
 public final class DeleteRoomMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteRoom($input: DeleteRoomInput!, $condition: ModelRoomConditionInput) {\n  deleteRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteRoom($input: DeleteRoomInput!, $condition: ModelRoomConditionInput) {\n  deleteRoom(input: $input, condition: $condition) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteRoomInput
   public var condition: ModelRoomConditionInput?
@@ -3926,6 +3955,7 @@ public final class DeleteRoomMutation: GraphQLMutation {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -3934,8 +3964,8 @@ public final class DeleteRoomMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -4016,6 +4046,15 @@ public final class DeleteRoomMutation: GraphQLMutation {
           }
           set {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+          }
+        }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
           }
         }
       }
@@ -4448,7 +4487,7 @@ public final class DeleteDeletionRequestMutation: GraphQLMutation {
 
 public final class CreateReportedMessageMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateReportedMessage($input: CreateReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  createReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateReportedMessage($input: CreateReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  createReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateReportedMessageInput
   public var condition: ModelReportedMessageConditionInput?
@@ -4587,6 +4626,7 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -4595,8 +4635,8 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -4677,6 +4717,15 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
           }
           set {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+          }
+        }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
           }
         }
       }
@@ -4694,6 +4743,7 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -4702,8 +4752,8 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -4786,6 +4836,15 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -4793,7 +4852,7 @@ public final class CreateReportedMessageMutation: GraphQLMutation {
 
 public final class UpdateReportedMessageMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateReportedMessage($input: UpdateReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  updateReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateReportedMessage($input: UpdateReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  updateReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateReportedMessageInput
   public var condition: ModelReportedMessageConditionInput?
@@ -4932,6 +4991,7 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -4940,8 +5000,8 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -5022,6 +5082,15 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
           }
           set {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+          }
+        }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
           }
         }
       }
@@ -5039,6 +5108,7 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -5047,8 +5117,8 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -5131,6 +5201,15 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -5138,7 +5217,7 @@ public final class UpdateReportedMessageMutation: GraphQLMutation {
 
 public final class DeleteReportedMessageMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteReportedMessage($input: DeleteReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  deleteReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteReportedMessage($input: DeleteReportedMessageInput!, $condition: ModelReportedMessageConditionInput) {\n  deleteReportedMessage(input: $input, condition: $condition) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteReportedMessageInput
   public var condition: ModelReportedMessageConditionInput?
@@ -5277,6 +5356,7 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -5285,8 +5365,8 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -5367,6 +5447,15 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
           }
           set {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+          }
+        }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
           }
         }
       }
@@ -5384,6 +5473,7 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -5392,8 +5482,8 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -5476,6 +5566,15 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -5483,7 +5582,7 @@ public final class DeleteReportedMessageMutation: GraphQLMutation {
 
 public final class CreateUserMutation: GraphQLMutation {
   public static let operationString =
-    "mutation CreateUser($input: CreateUserInput!, $condition: ModelUserConditionInput) {\n  createUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation CreateUser($input: CreateUserInput!, $condition: ModelUserConditionInput) {\n  createUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n        hasBeenThumb\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: CreateUserInput
   public var condition: ModelUserConditionInput?
@@ -5945,6 +6044,7 @@ public final class CreateUserMutation: GraphQLMutation {
             GraphQLField("attachmentPath", type: .scalar(String.self)),
             GraphQLField("stickerNumber", type: .scalar(Int.self)),
             GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+            GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
           ]
 
           public var snapshot: Snapshot
@@ -5953,8 +6053,8 @@ public final class CreateUserMutation: GraphQLMutation {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
           }
 
           public var __typename: String {
@@ -6037,6 +6137,15 @@ public final class CreateUserMutation: GraphQLMutation {
               snapshot.updateValue(newValue, forKey: "hasBeenLiked")
             }
           }
+
+          public var hasBeenThumb: Bool {
+            get {
+              return snapshot["hasBeenThumb"]! as! Bool
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+            }
+          }
         }
       }
 
@@ -6112,7 +6221,7 @@ public final class CreateUserMutation: GraphQLMutation {
 
 public final class UpdateUserMutation: GraphQLMutation {
   public static let operationString =
-    "mutation UpdateUser($input: UpdateUserInput!, $condition: ModelUserConditionInput) {\n  updateUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation UpdateUser($input: UpdateUserInput!, $condition: ModelUserConditionInput) {\n  updateUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n        hasBeenThumb\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: UpdateUserInput
   public var condition: ModelUserConditionInput?
@@ -6574,6 +6683,7 @@ public final class UpdateUserMutation: GraphQLMutation {
             GraphQLField("attachmentPath", type: .scalar(String.self)),
             GraphQLField("stickerNumber", type: .scalar(Int.self)),
             GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+            GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
           ]
 
           public var snapshot: Snapshot
@@ -6582,8 +6692,8 @@ public final class UpdateUserMutation: GraphQLMutation {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
           }
 
           public var __typename: String {
@@ -6666,6 +6776,15 @@ public final class UpdateUserMutation: GraphQLMutation {
               snapshot.updateValue(newValue, forKey: "hasBeenLiked")
             }
           }
+
+          public var hasBeenThumb: Bool {
+            get {
+              return snapshot["hasBeenThumb"]! as! Bool
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+            }
+          }
         }
       }
 
@@ -6741,7 +6860,7 @@ public final class UpdateUserMutation: GraphQLMutation {
 
 public final class DeleteUserMutation: GraphQLMutation {
   public static let operationString =
-    "mutation DeleteUser($input: DeleteUserInput!, $condition: ModelUserConditionInput) {\n  deleteUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
+    "mutation DeleteUser($input: DeleteUserInput!, $condition: ModelUserConditionInput) {\n  deleteUser(input: $input, condition: $condition) {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n        hasBeenThumb\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
 
   public var input: DeleteUserInput
   public var condition: ModelUserConditionInput?
@@ -7203,6 +7322,7 @@ public final class DeleteUserMutation: GraphQLMutation {
             GraphQLField("attachmentPath", type: .scalar(String.self)),
             GraphQLField("stickerNumber", type: .scalar(Int.self)),
             GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+            GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
           ]
 
           public var snapshot: Snapshot
@@ -7211,8 +7331,8 @@ public final class DeleteUserMutation: GraphQLMutation {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
           }
 
           public var __typename: String {
@@ -7293,6 +7413,15 @@ public final class DeleteUserMutation: GraphQLMutation {
             }
             set {
               snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+            }
+          }
+
+          public var hasBeenThumb: Bool {
+            get {
+              return snapshot["hasBeenThumb"]! as! Bool
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "hasBeenThumb")
             }
           }
         }
@@ -8366,7 +8495,7 @@ public final class DeleteManagementDocumentMutation: GraphQLMutation {
 
 public final class GetRoomQuery: GraphQLQuery {
   public static let operationString =
-    "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetRoom($id: ID!) {\n  getRoom(id: $id) {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -8523,6 +8652,7 @@ public final class GetRoomQuery: GraphQLQuery {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -8531,8 +8661,8 @@ public final class GetRoomQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -8615,6 +8745,15 @@ public final class GetRoomQuery: GraphQLQuery {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -8622,7 +8761,7 @@ public final class GetRoomQuery: GraphQLQuery {
 
 public final class ListRoomsQuery: GraphQLQuery {
   public static let operationString =
-    "query ListRooms($filter: ModelRoomFilterInput, $limit: Int, $nextToken: String) {\n  listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      name\n      creatorID\n      members\n      messages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n      }\n      timeUpdated\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListRooms($filter: ModelRoomFilterInput, $limit: Int, $nextToken: String) {\n  listRooms(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      name\n      creatorID\n      members\n      messages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n        hasBeenThumb\n      }\n      timeUpdated\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelRoomFilterInput?
   public var limit: Int?
@@ -8829,6 +8968,7 @@ public final class ListRoomsQuery: GraphQLQuery {
             GraphQLField("attachmentPath", type: .scalar(String.self)),
             GraphQLField("stickerNumber", type: .scalar(Int.self)),
             GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+            GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
           ]
 
           public var snapshot: Snapshot
@@ -8837,8 +8977,8 @@ public final class ListRoomsQuery: GraphQLQuery {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
           }
 
           public var __typename: String {
@@ -8919,6 +9059,15 @@ public final class ListRoomsQuery: GraphQLQuery {
             }
             set {
               snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+            }
+          }
+
+          public var hasBeenThumb: Bool {
+            get {
+              return snapshot["hasBeenThumb"]! as! Bool
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "hasBeenThumb")
             }
           }
         }
@@ -9258,7 +9407,7 @@ public final class ListDeletionRequestsQuery: GraphQLQuery {
 
 public final class GetReportedMessageQuery: GraphQLQuery {
   public static let operationString =
-    "query GetReportedMessage($id: ID!) {\n  getReportedMessage(id: $id) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetReportedMessage($id: ID!) {\n  getReportedMessage(id: $id) {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -9395,6 +9544,7 @@ public final class GetReportedMessageQuery: GraphQLQuery {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -9403,8 +9553,8 @@ public final class GetReportedMessageQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -9485,6 +9635,15 @@ public final class GetReportedMessageQuery: GraphQLQuery {
           }
           set {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+          }
+        }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
           }
         }
       }
@@ -9502,6 +9661,7 @@ public final class GetReportedMessageQuery: GraphQLQuery {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -9510,8 +9670,8 @@ public final class GetReportedMessageQuery: GraphQLQuery {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -9594,6 +9754,15 @@ public final class GetReportedMessageQuery: GraphQLQuery {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -9601,7 +9770,7 @@ public final class GetReportedMessageQuery: GraphQLQuery {
 
 public final class ListReportedMessagesQuery: GraphQLQuery {
   public static let operationString =
-    "query ListReportedMessages($filter: ModelReportedMessageFilterInput, $limit: Int, $nextToken: String) {\n  listReportedMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      reporterID\n      reportedMessage {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n      }\n      previousMessages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n      }\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
+    "query ListReportedMessages($filter: ModelReportedMessageFilterInput, $limit: Int, $nextToken: String) {\n  listReportedMessages(filter: $filter, limit: $limit, nextToken: $nextToken) {\n    __typename\n    items {\n      __typename\n      id\n      reporterID\n      reportedMessage {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n        hasBeenThumb\n      }\n      previousMessages {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n        hasBeenThumb\n      }\n      createdAt\n      updatedAt\n    }\n    nextToken\n  }\n}"
 
   public var filter: ModelReportedMessageFilterInput?
   public var limit: Int?
@@ -9788,6 +9957,7 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
             GraphQLField("attachmentPath", type: .scalar(String.self)),
             GraphQLField("stickerNumber", type: .scalar(Int.self)),
             GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+            GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
           ]
 
           public var snapshot: Snapshot
@@ -9796,8 +9966,8 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
           }
 
           public var __typename: String {
@@ -9878,6 +10048,15 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
             }
             set {
               snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+            }
+          }
+
+          public var hasBeenThumb: Bool {
+            get {
+              return snapshot["hasBeenThumb"]! as! Bool
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "hasBeenThumb")
             }
           }
         }
@@ -9895,6 +10074,7 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
             GraphQLField("attachmentPath", type: .scalar(String.self)),
             GraphQLField("stickerNumber", type: .scalar(Int.self)),
             GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+            GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
           ]
 
           public var snapshot: Snapshot
@@ -9903,8 +10083,8 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
           }
 
           public var __typename: String {
@@ -9987,6 +10167,15 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
               snapshot.updateValue(newValue, forKey: "hasBeenLiked")
             }
           }
+
+          public var hasBeenThumb: Bool {
+            get {
+              return snapshot["hasBeenThumb"]! as! Bool
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+            }
+          }
         }
       }
     }
@@ -9995,7 +10184,7 @@ public final class ListReportedMessagesQuery: GraphQLQuery {
 
 public final class GetUserQuery: GraphQLQuery {
   public static let operationString =
-    "query GetUser($id: ID!) {\n  getUser(id: $id) {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
+    "query GetUser($id: ID!) {\n  getUser(id: $id) {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n        hasBeenThumb\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
 
   public var id: GraphQLID
 
@@ -10455,6 +10644,7 @@ public final class GetUserQuery: GraphQLQuery {
             GraphQLField("attachmentPath", type: .scalar(String.self)),
             GraphQLField("stickerNumber", type: .scalar(Int.self)),
             GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+            GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
           ]
 
           public var snapshot: Snapshot
@@ -10463,8 +10653,8 @@ public final class GetUserQuery: GraphQLQuery {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
           }
 
           public var __typename: String {
@@ -10545,6 +10735,15 @@ public final class GetUserQuery: GraphQLQuery {
             }
             set {
               snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+            }
+          }
+
+          public var hasBeenThumb: Bool {
+            get {
+              return snapshot["hasBeenThumb"]! as! Bool
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "hasBeenThumb")
             }
           }
         }
@@ -11941,7 +12140,7 @@ public final class ListManagementDocumentsQuery: GraphQLQuery {
 
 public final class OnCreateRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateRoom {\n  onCreateRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateRoom {\n  onCreateRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -12091,6 +12290,7 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -12099,8 +12299,8 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -12183,6 +12383,15 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -12190,7 +12399,7 @@ public final class OnCreateRoomSubscription: GraphQLSubscription {
 
 public final class OnUpdateRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateRoom {\n  onUpdateRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateRoom {\n  onUpdateRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -12340,6 +12549,7 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -12348,8 +12558,8 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -12432,6 +12642,15 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -12439,7 +12658,7 @@ public final class OnUpdateRoomSubscription: GraphQLSubscription {
 
 public final class OnDeleteRoomSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteRoom {\n  onDeleteRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteRoom {\n  onDeleteRoom {\n    __typename\n    id\n    name\n    creatorID\n    members\n    messages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    timeUpdated\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -12589,6 +12808,7 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -12597,8 +12817,8 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -12679,6 +12899,15 @@ public final class OnDeleteRoomSubscription: GraphQLSubscription {
           }
           set {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+          }
+        }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
           }
         }
       }
@@ -13084,7 +13313,7 @@ public final class OnDeleteDeletionRequestSubscription: GraphQLSubscription {
 
 public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateReportedMessage {\n  onCreateReportedMessage {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateReportedMessage {\n  onCreateReportedMessage {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -13214,6 +13443,7 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -13222,8 +13452,8 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -13304,6 +13534,15 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
           }
           set {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+          }
+        }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
           }
         }
       }
@@ -13321,6 +13560,7 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -13329,8 +13569,8 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -13413,6 +13653,15 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -13420,7 +13669,7 @@ public final class OnCreateReportedMessageSubscription: GraphQLSubscription {
 
 public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateReportedMessage {\n  onUpdateReportedMessage {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateReportedMessage {\n  onUpdateReportedMessage {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -13550,6 +13799,7 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -13558,8 +13808,8 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -13640,6 +13890,15 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
           }
           set {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+          }
+        }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
           }
         }
       }
@@ -13657,6 +13916,7 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -13665,8 +13925,8 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -13749,6 +14009,15 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -13756,7 +14025,7 @@ public final class OnUpdateReportedMessageSubscription: GraphQLSubscription {
 
 public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteReportedMessage {\n  onDeleteReportedMessage {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n    }\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteReportedMessage {\n  onDeleteReportedMessage {\n    __typename\n    id\n    reporterID\n    reportedMessage {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    previousMessages {\n      __typename\n      id\n      senderName\n      senderID\n      body\n      creationDate\n      attachmentPath\n      stickerNumber\n      hasBeenLiked\n      hasBeenThumb\n    }\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -13886,6 +14155,7 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -13894,8 +14164,8 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -13976,6 +14246,15 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
           }
           set {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+          }
+        }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
           }
         }
       }
@@ -13993,6 +14272,7 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
           GraphQLField("attachmentPath", type: .scalar(String.self)),
           GraphQLField("stickerNumber", type: .scalar(Int.self)),
           GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+          GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
         ]
 
         public var snapshot: Snapshot
@@ -14001,8 +14281,8 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
           self.snapshot = snapshot
         }
 
-        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+        public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+          self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
         }
 
         public var __typename: String {
@@ -14085,6 +14365,15 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
             snapshot.updateValue(newValue, forKey: "hasBeenLiked")
           }
         }
+
+        public var hasBeenThumb: Bool {
+          get {
+            return snapshot["hasBeenThumb"]! as! Bool
+          }
+          set {
+            snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+          }
+        }
       }
     }
   }
@@ -14092,7 +14381,7 @@ public final class OnDeleteReportedMessageSubscription: GraphQLSubscription {
 
 public final class OnCreateUserSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnCreateUser {\n  onCreateUser {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnCreateUser {\n  onCreateUser {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n        hasBeenThumb\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -14545,6 +14834,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
             GraphQLField("attachmentPath", type: .scalar(String.self)),
             GraphQLField("stickerNumber", type: .scalar(Int.self)),
             GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+            GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
           ]
 
           public var snapshot: Snapshot
@@ -14553,8 +14843,8 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
           }
 
           public var __typename: String {
@@ -14637,6 +14927,15 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
               snapshot.updateValue(newValue, forKey: "hasBeenLiked")
             }
           }
+
+          public var hasBeenThumb: Bool {
+            get {
+              return snapshot["hasBeenThumb"]! as! Bool
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+            }
+          }
         }
       }
 
@@ -14712,7 +15011,7 @@ public final class OnCreateUserSubscription: GraphQLSubscription {
 
 public final class OnUpdateUserSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnUpdateUser {\n  onUpdateUser {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnUpdateUser {\n  onUpdateUser {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n        hasBeenThumb\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -15165,6 +15464,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
             GraphQLField("attachmentPath", type: .scalar(String.self)),
             GraphQLField("stickerNumber", type: .scalar(Int.self)),
             GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+            GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
           ]
 
           public var snapshot: Snapshot
@@ -15173,8 +15473,8 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
           }
 
           public var __typename: String {
@@ -15257,6 +15557,15 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
               snapshot.updateValue(newValue, forKey: "hasBeenLiked")
             }
           }
+
+          public var hasBeenThumb: Bool {
+            get {
+              return snapshot["hasBeenThumb"]! as! Bool
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "hasBeenThumb")
+            }
+          }
         }
       }
 
@@ -15332,7 +15641,7 @@ public final class OnUpdateUserSubscription: GraphQLSubscription {
 
 public final class OnDeleteUserSubscription: GraphQLSubscription {
   public static let operationString =
-    "subscription OnDeleteUser {\n  onDeleteUser {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
+    "subscription OnDeleteUser {\n  onDeleteUser {\n    __typename\n    id\n    firstName\n    lastName\n    email\n    birthday\n    pronouns\n    location\n    adPreference\n    deviceFCMToken\n    isOnline\n    invitedRooms {\n      __typename\n      roomID\n      timer\n    }\n    secretPin\n    friends\n    rooms\n    hiddenRooms\n    smileNotes {\n      __typename\n      id\n      message {\n        __typename\n        id\n        senderName\n        senderID\n        body\n        creationDate\n        attachmentPath\n        stickerNumber\n        hasBeenLiked\n        hasBeenThumb\n      }\n      favorite\n    }\n    shakingCool {\n      __typename\n      id\n      link\n      intendedid\n      intendedname\n    }\n    tokens\n    background\n    unlockedStickers\n    notificationsBroadcast\n    notificationsLP\n    chatFontSize\n    pendingNotifications\n    needIntro\n    backgroundImageLink\n    createdAt\n    updatedAt\n  }\n}"
 
   public init() {
   }
@@ -15785,6 +16094,7 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
             GraphQLField("attachmentPath", type: .scalar(String.self)),
             GraphQLField("stickerNumber", type: .scalar(Int.self)),
             GraphQLField("hasBeenLiked", type: .nonNull(.scalar(Bool.self))),
+            GraphQLField("hasBeenThumb", type: .nonNull(.scalar(Bool.self))),
           ]
 
           public var snapshot: Snapshot
@@ -15793,8 +16103,8 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
             self.snapshot = snapshot
           }
 
-          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool) {
-            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked])
+          public init(id: GraphQLID, senderName: String, senderId: String, body: String, creationDate: Int, attachmentPath: String? = nil, stickerNumber: Int? = nil, hasBeenLiked: Bool, hasBeenThumb: Bool) {
+            self.init(snapshot: ["__typename": "Message", "id": id, "senderName": senderName, "senderID": senderId, "body": body, "creationDate": creationDate, "attachmentPath": attachmentPath, "stickerNumber": stickerNumber, "hasBeenLiked": hasBeenLiked, "hasBeenThumb": hasBeenThumb])
           }
 
           public var __typename: String {
@@ -15875,6 +16185,15 @@ public final class OnDeleteUserSubscription: GraphQLSubscription {
             }
             set {
               snapshot.updateValue(newValue, forKey: "hasBeenLiked")
+            }
+          }
+
+          public var hasBeenThumb: Bool {
+            get {
+              return snapshot["hasBeenThumb"]! as! Bool
+            }
+            set {
+              snapshot.updateValue(newValue, forKey: "hasBeenThumb")
             }
           }
         }

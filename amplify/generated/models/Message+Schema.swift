@@ -13,6 +13,7 @@ extension Message {
     case attachmentPath
     case stickerNumber
     case hasBeenLiked
+    case hasBeenThumb
   }
   
   public static let keys = CodingKeys.self
@@ -31,7 +32,8 @@ extension Message {
       .field(message.creationDate, is: .required, ofType: .int),
       .field(message.attachmentPath, is: .optional, ofType: .string),
       .field(message.stickerNumber, is: .optional, ofType: .int),
-      .field(message.hasBeenLiked, is: .required, ofType: .bool)
+      .field(message.hasBeenLiked, is: .required, ofType: .bool),
+      .field(message.hasBeenThumb, is: .required, ofType: .bool)
     )
     }
 }

@@ -11,4 +11,5 @@ public struct Message: Embeddable {
   var attachmentPath: String?
   var stickerNumber: Int?
   var hasBeenLiked: Bool
+  var hasBeenThumb: Bool
 }
