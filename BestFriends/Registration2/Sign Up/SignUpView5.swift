@@ -69,7 +69,7 @@ struct SignUpView5: View {
                             .frame(maxWidth: .infinity, maxHeight: 40)
                             .font(.system(size: 24))
                             .foregroundColor(.black)
-                            .background(Color.clear)
+                            .background(Color.white)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.gray, lineWidth: 1)
@@ -84,7 +84,7 @@ struct SignUpView5: View {
                             .frame(maxWidth: .infinity, maxHeight: 40)
                             .font(.system(size: 24))
                             .foregroundColor(.black)
-                            .background(Color.clear)
+                            .background(Color.white)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.gray, lineWidth: 1)
