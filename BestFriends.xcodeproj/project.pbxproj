@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		07BCB3ED204876463112D1CC /* InvitedRoom+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69EA3726AA65AC00A54B6F /* InvitedRoom+Schema.swift */; };
-		0899627569430D7C5DEB5CE6 /* amplify/generated/models/DeletionRequest+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFEC426B4A2EC00281DDD /* amplify/generated/models/DeletionRequest+Schema.swift */; };
-		1303BAD5293C4A21C63FFC49 /* amplify/generated/models/Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259F326AF913100396CF2 /* amplify/generated/models/Room.swift */; };
+		0899627569430D7C5DEB5CE6 /* DeletionRequest+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFEC426B4A2EC00281DDD /* DeletionRequest+Schema.swift */; };
+		1303BAD5293C4A21C63FFC49 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259F326AF913100396CF2 /* Room.swift */; };
 		247BD56BCDCD144AF5ECC58C /* DeletionRequest+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69EA3A26AA65AC00A54B6F /* DeletionRequest+Schema.swift */; };
-		252EA3804F13E2A928D11F92 /* amplify/generated/models/ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259D426AF292600396CF2 /* amplify/generated/models/ReportedMessage+Schema.swift */; };
-		29744AE8B63FFAEC5AE7A8FB /* amplify/generated/models/User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFEC926B4A2EC00281DDD /* amplify/generated/models/User+Schema.swift */; };
+		252EA3804F13E2A928D11F92 /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259D426AF292600396CF2 /* ReportedMessage+Schema.swift */; };
+		29744AE8B63FFAEC5AE7A8FB /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFEC926B4A2EC00281DDD /* User+Schema.swift */; };
 		3160F15604AD92778D6C57AC /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69EA4026AA65AE00A54B6F /* ReportedMessage+Schema.swift */; };
-		344878345B2D45FE719C4FDE /* amplify/generated/models/InvitedRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B956A26EFFD81001D56E9 /* amplify/generated/models/InvitedRoom.swift */; };
-		3D7158822310EA9998947507 /* amplify/generated/models/DeletionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259C726AF292500396CF2 /* amplify/generated/models/DeletionRequest.swift */; };
-		47C93F9EF55FF1D724BD688C /* amplify/generated/models/Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B956E26EFFD81001D56E9 /* amplify/generated/models/Advertisement.swift */; };
-		48902E37427FADF35EBC5C94 /* amplify/generated/models/Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957126EFFD81001D56E9 /* amplify/generated/models/Room+Schema.swift */; };
-		4AC6BF097AB5948D383B4E5E /* amplify/generated/models/User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B956D26EFFD81001D56E9 /* amplify/generated/models/User.swift */; };
+		344878345B2D45FE719C4FDE /* InvitedRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B956A26EFFD81001D56E9 /* InvitedRoom.swift */; };
+		3D7158822310EA9998947507 /* DeletionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259C726AF292500396CF2 /* DeletionRequest.swift */; };
+		47C93F9EF55FF1D724BD688C /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B956E26EFFD81001D56E9 /* Advertisement.swift */; };
+		48902E37427FADF35EBC5C94 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957126EFFD81001D56E9 /* Room+Schema.swift */; };
+		4AC6BF097AB5948D383B4E5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B956D26EFFD81001D56E9 /* User.swift */; };
 		5DA0BEB80E6DD5F04E23B8C2 /* ShakingCool+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69EA3026AA65AB00A54B6F /* ShakingCool+Schema.swift */; };
 		606A5CF8E5AFB630E5B55689 /* ManagementDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69EA4126AA65AE00A54B6F /* ManagementDocument.swift */; };
-		77E1D1F90CB1D2FE80880F28 /* amplify/generated/models/Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957226EFFD81001D56E9 /* amplify/generated/models/Message.swift */; };
+		77E1D1F90CB1D2FE80880F28 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957226EFFD81001D56E9 /* Message.swift */; };
 		7A01A96726939DA40047BB35 /* StickerPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01A96626939DA40047BB35 /* StickerPopover.swift */; };
 		7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08E365264FB6DB00AEBC8F /* PushNotificationManager.swift */; };
 		7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */; };
@@ -72,11 +72,11 @@
 		7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */; };
 		7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E336826A0D72600202BB7 /* UIColorExtension.swift */; };
 		7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */; };
-		7A5EFED426B4A2EC00281DDD /* amplify/generated/models/InvitedRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFEBF26B4A2EC00281DDD /* amplify/generated/models/InvitedRoom.swift */; };
-		7A5EFED526B4A2EC00281DDD /* amplify/generated/models/ManagementDocument+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFEC026B4A2EC00281DDD /* amplify/generated/models/ManagementDocument+Schema.swift */; };
-		7A5EFED826B4A2EC00281DDD /* amplify/generated/models/Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFEC326B4A2EC00281DDD /* amplify/generated/models/Message+Schema.swift */; };
-		7A5EFEDF26B4A2EC00281DDD /* amplify/generated/models/AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFECA26B4A2EC00281DDD /* amplify/generated/models/AmplifyModels.swift */; };
-		7A5EFEE426B4A2EC00281DDD /* amplify/generated/models/ManagementDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFECF26B4A2EC00281DDD /* amplify/generated/models/ManagementDocument.swift */; };
+		7A5EFED426B4A2EC00281DDD /* InvitedRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFEBF26B4A2EC00281DDD /* InvitedRoom.swift */; };
+		7A5EFED526B4A2EC00281DDD /* ManagementDocument+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFEC026B4A2EC00281DDD /* ManagementDocument+Schema.swift */; };
+		7A5EFED826B4A2EC00281DDD /* Message+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFEC326B4A2EC00281DDD /* Message+Schema.swift */; };
+		7A5EFEDF26B4A2EC00281DDD /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFECA26B4A2EC00281DDD /* AmplifyModels.swift */; };
+		7A5EFEE426B4A2EC00281DDD /* ManagementDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFECF26B4A2EC00281DDD /* ManagementDocument.swift */; };
 		7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */; };
 		7A68B67B26A7296D00EF20E3 /* UserSubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68B67A26A7296D00EF20E3 /* UserSubscriptionService.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
@@ -108,8 +108,8 @@
 		7A934002264FC94900BB5972 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A934001264FC94900BB5972 /* PushNotificationSender.swift */; };
 		7A95EA5826530DDA00C6C700 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A95EA5726530DDA00C6C700 /* PinView.swift */; };
 		7A9B09DD26D04C67002164D4 /* SignUpView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B09DC26D04C67002164D4 /* SignUpView5.swift */; };
-		7A9B958826EFFD81001D56E9 /* amplify/generated/models/ShakingCool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957326EFFD81001D56E9 /* amplify/generated/models/ShakingCool.swift */; };
-		7A9B958C26EFFD81001D56E9 /* amplify/generated/models/User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957726EFFD81001D56E9 /* amplify/generated/models/User+Schema.swift */; };
+		7A9B958826EFFD81001D56E9 /* ShakingCool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957326EFFD81001D56E9 /* ShakingCool.swift */; };
+		7A9B958C26EFFD81001D56E9 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957726EFFD81001D56E9 /* User+Schema.swift */; };
 		7AA200FD2635C6EF00C9F00C /* RoomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */; };
 		7AA2010F2635D21100C9F00C /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2010E2635D21100C9F00C /* RoomsView.swift */; };
 		7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201102635D2E100C9F00C /* RoomRow.swift */; };
@@ -131,14 +131,14 @@
 		7AD1F0FF26D2BBF700254306 /* SignUpView7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1F0FE26D2BBF700254306 /* SignUpView7.swift */; };
 		7AD1F10126D2C13300254306 /* SignUpView8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1F10026D2C13300254306 /* SignUpView8.swift */; };
 		7AD1F10326D2C71700254306 /* SignUpView9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1F10226D2C71700254306 /* SignUpView9.swift */; };
-		7AD259D726AF292600396CF2 /* amplify/generated/models/Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259C226AF292500396CF2 /* amplify/generated/models/Advertisement.swift */; };
-		7AD25A0226AF913200396CF2 /* amplify/generated/models/Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259ED26AF913100396CF2 /* amplify/generated/models/Message.swift */; };
-		7AD25A0426AF913200396CF2 /* amplify/generated/models/SmileNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259EF26AF913100396CF2 /* amplify/generated/models/SmileNote.swift */; };
-		7AD25A0A26AF913200396CF2 /* amplify/generated/models/Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259F526AF913200396CF2 /* amplify/generated/models/Room+Schema.swift */; };
-		7AD25A0C26AF913200396CF2 /* amplify/generated/models/Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259F726AF913200396CF2 /* amplify/generated/models/Advertisement+Schema.swift */; };
-		7AD25A1126AF913200396CF2 /* amplify/generated/models/ShakingCool+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259FC26AF913200396CF2 /* amplify/generated/models/ShakingCool+Schema.swift */; };
-		7AD25A1226AF913200396CF2 /* amplify/generated/models/User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259FD26AF913200396CF2 /* amplify/generated/models/User.swift */; };
-		7AD25A1326AF913200396CF2 /* amplify/generated/models/InvitedRoom+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259FE26AF913200396CF2 /* amplify/generated/models/InvitedRoom+Schema.swift */; };
+		7AD259D726AF292600396CF2 /* Advertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259C226AF292500396CF2 /* Advertisement.swift */; };
+		7AD25A0226AF913200396CF2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259ED26AF913100396CF2 /* Message.swift */; };
+		7AD25A0426AF913200396CF2 /* SmileNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259EF26AF913100396CF2 /* SmileNote.swift */; };
+		7AD25A0A26AF913200396CF2 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259F526AF913200396CF2 /* Room+Schema.swift */; };
+		7AD25A0C26AF913200396CF2 /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259F726AF913200396CF2 /* Advertisement+Schema.swift */; };
+		7AD25A1126AF913200396CF2 /* ShakingCool+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259FC26AF913200396CF2 /* ShakingCool+Schema.swift */; };
+		7AD25A1226AF913200396CF2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259FD26AF913200396CF2 /* User.swift */; };
+		7AD25A1326AF913200396CF2 /* InvitedRoom+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259FE26AF913200396CF2 /* InvitedRoom+Schema.swift */; };
 		7AD362FC26852AE7003F6447 /* FirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD362FB26852AE7003F6447 /* FirebaseDataSource.swift */; };
 		7AD8376B267E9A24005A2D48 /* SmileNotePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8376A267E9A24005A2D48 /* SmileNotePopover.swift */; };
 		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
@@ -152,19 +152,19 @@
 		7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */; };
 		7AF2E2CF26AE643A00A82C6D /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AF2E2CD26AE643A00A82C6D /* amplifyconfiguration.json */; };
 		7AF2E2D026AE643A00A82C6D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AF2E2CE26AE643A00A82C6D /* awsconfiguration.json */; };
-		7AF2E2E726AF1CB500A82C6D /* amplify/generated/models/DeletionRequest+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF2E2D226AF1CB500A82C6D /* amplify/generated/models/DeletionRequest+Schema.swift */; };
+		7AF2E2E726AF1CB500A82C6D /* DeletionRequest+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF2E2D226AF1CB500A82C6D /* DeletionRequest+Schema.swift */; };
 		7AF35CB42699EB6700A396CE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF35CB32699EB6700A396CE /* Helper.swift */; };
 		7AF686F126BC86C900A287C2 /* Settings2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F026BC86C900A287C2 /* Settings2View.swift */; };
 		7AF686F326C1C21700A287C2 /* SettingsEngagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F226C1C21700A287C2 /* SettingsEngagementView.swift */; };
 		7AF686F526C2BFBE00A287C2 /* SettingsFunctionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F426C2BFBE00A287C2 /* SettingsFunctionView.swift */; };
 		7AF686F726C32A9A00A287C2 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF686F626C32A9A00A287C2 /* MyAccountView.swift */; };
 		7AF6973F2630EE1900CF49CC /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF6973E2630EE1900CF49CC /* Star.swift */; };
-		7F9CBA6FC495F6892046FFBF /* amplify/generated/models/DeletionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF2E2D326AF1CB500A82C6D /* amplify/generated/models/DeletionRequest.swift */; };
-		92B8863AB2514FCBF75A7548 /* amplify/generated/models/ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259D326AF292600396CF2 /* amplify/generated/models/ReportedMessage.swift */; };
+		7F9CBA6FC495F6892046FFBF /* DeletionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF2E2D326AF1CB500A82C6D /* DeletionRequest.swift */; };
+		92B8863AB2514FCBF75A7548 /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259D326AF292600396CF2 /* ReportedMessage.swift */; };
 		AA68BE6A8A8202FF1C790F9F /* ShakingCool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69EA2F26AA65AB00A54B6F /* ShakingCool.swift */; };
 		B6541DEE1FEAB19709E602BD /* ReportedMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69EA4326AA65AE00A54B6F /* ReportedMessage.swift */; };
-		C1C96C2AA182C2C1F5CB77E2 /* amplify/generated/models/SmileNote+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259CA26AF292600396CF2 /* amplify/generated/models/SmileNote+Schema.swift */; };
-		C3A756363DC69A5BEC3C5886 /* amplify/generated/models/ShakingCool+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957626EFFD81001D56E9 /* amplify/generated/models/ShakingCool+Schema.swift */; };
+		C1C96C2AA182C2C1F5CB77E2 /* SmileNote+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259CA26AF292600396CF2 /* SmileNote+Schema.swift */; };
+		C3A756363DC69A5BEC3C5886 /* ShakingCool+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957626EFFD81001D56E9 /* ShakingCool+Schema.swift */; };
 		CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */; };
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
@@ -181,7 +181,7 @@
 		CFA5EBDC26A158DB00BFEBA2 /* InviteFriendsChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA5EBDB26A158DB00BFEBA2 /* InviteFriendsChat.swift */; };
 		CFE6FD392660C1FD00DF92BD /* ChangeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD382660C1FD00DF92BD /* ChangeBackground.swift */; };
 		CFE6FD4626620E9A00DF92BD /* Popups.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6FD4526620E9A00DF92BD /* Popups.swift */; };
-		D01BAD8F4BA2766AC7382AEB /* amplify/generated/models/User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259CF26AF292600396CF2 /* amplify/generated/models/User.swift */; };
+		D01BAD8F4BA2766AC7382AEB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259CF26AF292600396CF2 /* User.swift */; };
 		D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1577796264CBBAD00B6551A /* ChangeEmail.swift */; };
 		D157779B264D086000B6551A /* SmileVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D157779A264D086000B6551A /* SmileVaultView.swift */; };
 		D15777A3264DB7FD00B6551A /* BetaTesters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15777A2264DB7FD00B6551A /* BetaTesters.swift */; };
@@ -194,9 +194,9 @@
 		D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D27D39264303E300BDA75F /* InfoPages.swift */; };
 		D1E3CFE326543C4D00A26779 /* ChangePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E3CFE226543C4D00A26779 /* ChangePin.swift */; };
 		DE7D83D350B29DACA0388423 /* Room+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69EA3C26AA65AD00A54B6F /* Room+Schema.swift */; };
-		E773ACADB99A782917B01876 /* amplify/generated/models/ManagementDocument+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259F426AF913200396CF2 /* amplify/generated/models/ManagementDocument+Schema.swift */; };
+		E773ACADB99A782917B01876 /* ManagementDocument+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD259F426AF913200396CF2 /* ManagementDocument+Schema.swift */; };
 		E7A9F0966AF78F2A4DF12C02 /* SmileNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69EA3526AA65AB00A54B6F /* SmileNote.swift */; };
-		E7E5FF45E31C3479DC7E778B /* amplify/generated/models/AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957526EFFD81001D56E9 /* amplify/generated/models/AmplifyModels.swift */; };
+		E7E5FF45E31C3479DC7E778B /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957526EFFD81001D56E9 /* AmplifyModels.swift */; };
 		F11E8CF700902496B65C1C89 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E533516C70DC2A502C17893 /* Pods_BestFriends.framework */; };
 		FD3C3D1F5C7DF3A17D852B5B /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F74A567A97771BEE3D717A47 /* amplifyconfiguration.json */; };
 		FD920B918716974034DBEB83 /* Advertisement+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A69EA3626AA65AB00A54B6F /* Advertisement+Schema.swift */; };
@@ -253,18 +253,18 @@
 		7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		7A4E336826A0D72600202BB7 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		7A4FA0DB265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolFullScreenView.swift; sourceTree = "<group>"; };
-		7A5EFEBD26B4A2EB00281DDD /* amplify/generated/models/DeletionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/DeletionRequest.swift; sourceTree = "<group>"; };
-		7A5EFEBF26B4A2EC00281DDD /* amplify/generated/models/InvitedRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/InvitedRoom.swift; sourceTree = "<group>"; };
-		7A5EFEC026B4A2EC00281DDD /* amplify/generated/models/ManagementDocument+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ManagementDocument+Schema.swift"; sourceTree = "<group>"; };
-		7A5EFEC326B4A2EC00281DDD /* amplify/generated/models/Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; };
-		7A5EFEC426B4A2EC00281DDD /* amplify/generated/models/DeletionRequest+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/DeletionRequest+Schema.swift"; sourceTree = "<group>"; };
-		7A5EFEC926B4A2EC00281DDD /* amplify/generated/models/User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
-		7A5EFECA26B4A2EC00281DDD /* amplify/generated/models/AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
-		7A5EFECB26B4A2EC00281DDD /* amplify/generated/models/Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Advertisement.swift; sourceTree = "<group>"; };
-		7A5EFECC26B4A2EC00281DDD /* amplify/generated/models/Advertisement+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Advertisement+Schema.swift"; sourceTree = "<group>"; };
-		7A5EFECD26B4A2EC00281DDD /* amplify/generated/models/Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
-		7A5EFECE26B4A2EC00281DDD /* amplify/generated/models/InvitedRoom+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/InvitedRoom+Schema.swift"; sourceTree = "<group>"; };
-		7A5EFECF26B4A2EC00281DDD /* amplify/generated/models/ManagementDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ManagementDocument.swift; sourceTree = "<group>"; };
+		7A5EFEBD26B4A2EB00281DDD /* DeletionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/DeletionRequest.swift; sourceTree = "<group>"; };
+		7A5EFEBF26B4A2EC00281DDD /* InvitedRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/InvitedRoom.swift; sourceTree = "<group>"; };
+		7A5EFEC026B4A2EC00281DDD /* ManagementDocument+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ManagementDocument+Schema.swift"; sourceTree = "<group>"; };
+		7A5EFEC326B4A2EC00281DDD /* Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; };
+		7A5EFEC426B4A2EC00281DDD /* DeletionRequest+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/DeletionRequest+Schema.swift"; sourceTree = "<group>"; };
+		7A5EFEC926B4A2EC00281DDD /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+		7A5EFECA26B4A2EC00281DDD /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		7A5EFECB26B4A2EC00281DDD /* Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Advertisement.swift; sourceTree = "<group>"; };
+		7A5EFECC26B4A2EC00281DDD /* Advertisement+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Advertisement+Schema.swift"; sourceTree = "<group>"; };
+		7A5EFECD26B4A2EC00281DDD /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
+		7A5EFECE26B4A2EC00281DDD /* InvitedRoom+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/InvitedRoom+Schema.swift"; sourceTree = "<group>"; };
+		7A5EFECF26B4A2EC00281DDD /* ManagementDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ManagementDocument.swift; sourceTree = "<group>"; };
 		7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		7A68B67A26A7296D00EF20E3 /* UserSubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSubscriptionService.swift; sourceTree = "<group>"; };
 		7A69EA2F26AA65AB00A54B6F /* ShakingCool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShakingCool.swift; path = amplify/generated/models/ShakingCool.swift; sourceTree = SOURCE_ROOT; };
@@ -319,15 +319,15 @@
 		7A934001264FC94900BB5972 /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
 		7A95EA5726530DDA00C6C700 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
 		7A9B09DC26D04C67002164D4 /* SignUpView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView5.swift; sourceTree = "<group>"; };
-		7A9B956A26EFFD81001D56E9 /* amplify/generated/models/InvitedRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/InvitedRoom.swift; sourceTree = "<group>"; };
-		7A9B956D26EFFD81001D56E9 /* amplify/generated/models/User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
-		7A9B956E26EFFD81001D56E9 /* amplify/generated/models/Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Advertisement.swift; sourceTree = "<group>"; };
-		7A9B957126EFFD81001D56E9 /* amplify/generated/models/Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Room+Schema.swift"; sourceTree = "<group>"; };
-		7A9B957226EFFD81001D56E9 /* amplify/generated/models/Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
-		7A9B957326EFFD81001D56E9 /* amplify/generated/models/ShakingCool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ShakingCool.swift; sourceTree = "<group>"; };
-		7A9B957526EFFD81001D56E9 /* amplify/generated/models/AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
-		7A9B957626EFFD81001D56E9 /* amplify/generated/models/ShakingCool+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = "<group>"; };
-		7A9B957726EFFD81001D56E9 /* amplify/generated/models/User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+		7A9B956A26EFFD81001D56E9 /* InvitedRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/InvitedRoom.swift; sourceTree = "<group>"; };
+		7A9B956D26EFFD81001D56E9 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		7A9B956E26EFFD81001D56E9 /* Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Advertisement.swift; sourceTree = "<group>"; };
+		7A9B957126EFFD81001D56E9 /* Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Room+Schema.swift"; sourceTree = "<group>"; };
+		7A9B957226EFFD81001D56E9 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
+		7A9B957326EFFD81001D56E9 /* ShakingCool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ShakingCool.swift; sourceTree = "<group>"; };
+		7A9B957526EFFD81001D56E9 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
+		7A9B957626EFFD81001D56E9 /* ShakingCool+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = "<group>"; };
+		7A9B957726EFFD81001D56E9 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
 		7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDataSource.swift; sourceTree = "<group>"; };
 		7AA2010E2635D21100C9F00C /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
 		7AA201102635D2E100C9F00C /* RoomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRow.swift; sourceTree = "<group>"; };
@@ -350,29 +350,29 @@
 		7AD1F0FE26D2BBF700254306 /* SignUpView7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView7.swift; sourceTree = "<group>"; };
 		7AD1F10026D2C13300254306 /* SignUpView8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView8.swift; sourceTree = "<group>"; };
 		7AD1F10226D2C71700254306 /* SignUpView9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView9.swift; sourceTree = "<group>"; };
-		7AD259C226AF292500396CF2 /* amplify/generated/models/Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Advertisement.swift; sourceTree = "<group>"; };
-		7AD259C726AF292500396CF2 /* amplify/generated/models/DeletionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/DeletionRequest.swift; sourceTree = "<group>"; };
-		7AD259CA26AF292600396CF2 /* amplify/generated/models/SmileNote+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/SmileNote+Schema.swift"; sourceTree = "<group>"; };
-		7AD259CB26AF292600396CF2 /* amplify/generated/models/ShakingCool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ShakingCool.swift; sourceTree = "<group>"; };
-		7AD259CD26AF292600396CF2 /* amplify/generated/models/User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
-		7AD259CF26AF292600396CF2 /* amplify/generated/models/User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
-		7AD259D326AF292600396CF2 /* amplify/generated/models/ReportedMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ReportedMessage.swift; sourceTree = "<group>"; };
-		7AD259D426AF292600396CF2 /* amplify/generated/models/ReportedMessage+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ReportedMessage+Schema.swift"; sourceTree = "<group>"; };
-		7AD259D526AF292600396CF2 /* amplify/generated/models/Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Room.swift; sourceTree = "<group>"; };
-		7AD259ED26AF913100396CF2 /* amplify/generated/models/Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
-		7AD259EF26AF913100396CF2 /* amplify/generated/models/SmileNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/SmileNote.swift; sourceTree = "<group>"; };
-		7AD259F026AF913100396CF2 /* amplify/generated/models/Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Advertisement.swift; sourceTree = "<group>"; };
-		7AD259F326AF913100396CF2 /* amplify/generated/models/Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Room.swift; sourceTree = "<group>"; };
-		7AD259F426AF913200396CF2 /* amplify/generated/models/ManagementDocument+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ManagementDocument+Schema.swift"; sourceTree = "<group>"; };
-		7AD259F526AF913200396CF2 /* amplify/generated/models/Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Room+Schema.swift"; sourceTree = "<group>"; };
-		7AD259F626AF913200396CF2 /* amplify/generated/models/ManagementDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ManagementDocument.swift; sourceTree = "<group>"; };
-		7AD259F726AF913200396CF2 /* amplify/generated/models/Advertisement+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Advertisement+Schema.swift"; sourceTree = "<group>"; };
-		7AD259F826AF913200396CF2 /* amplify/generated/models/User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
-		7AD259F926AF913200396CF2 /* amplify/generated/models/DeletionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/DeletionRequest.swift; sourceTree = "<group>"; };
-		7AD259FC26AF913200396CF2 /* amplify/generated/models/ShakingCool+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = "<group>"; };
-		7AD259FD26AF913200396CF2 /* amplify/generated/models/User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
-		7AD259FE26AF913200396CF2 /* amplify/generated/models/InvitedRoom+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/InvitedRoom+Schema.swift"; sourceTree = "<group>"; };
-		7AD259FF26AF913200396CF2 /* amplify/generated/models/Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; };
+		7AD259C226AF292500396CF2 /* Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Advertisement.swift; sourceTree = "<group>"; };
+		7AD259C726AF292500396CF2 /* DeletionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/DeletionRequest.swift; sourceTree = "<group>"; };
+		7AD259CA26AF292600396CF2 /* SmileNote+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/SmileNote+Schema.swift"; sourceTree = "<group>"; };
+		7AD259CB26AF292600396CF2 /* ShakingCool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ShakingCool.swift; sourceTree = "<group>"; };
+		7AD259CD26AF292600396CF2 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+		7AD259CF26AF292600396CF2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		7AD259D326AF292600396CF2 /* ReportedMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ReportedMessage.swift; sourceTree = "<group>"; };
+		7AD259D426AF292600396CF2 /* ReportedMessage+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ReportedMessage+Schema.swift"; sourceTree = "<group>"; };
+		7AD259D526AF292600396CF2 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Room.swift; sourceTree = "<group>"; };
+		7AD259ED26AF913100396CF2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
+		7AD259EF26AF913100396CF2 /* SmileNote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/SmileNote.swift; sourceTree = "<group>"; };
+		7AD259F026AF913100396CF2 /* Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Advertisement.swift; sourceTree = "<group>"; };
+		7AD259F326AF913100396CF2 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Room.swift; sourceTree = "<group>"; };
+		7AD259F426AF913200396CF2 /* ManagementDocument+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ManagementDocument+Schema.swift"; sourceTree = "<group>"; };
+		7AD259F526AF913200396CF2 /* Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Room+Schema.swift"; sourceTree = "<group>"; };
+		7AD259F626AF913200396CF2 /* ManagementDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ManagementDocument.swift; sourceTree = "<group>"; };
+		7AD259F726AF913200396CF2 /* Advertisement+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Advertisement+Schema.swift"; sourceTree = "<group>"; };
+		7AD259F826AF913200396CF2 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+		7AD259F926AF913200396CF2 /* DeletionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/DeletionRequest.swift; sourceTree = "<group>"; };
+		7AD259FC26AF913200396CF2 /* ShakingCool+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = "<group>"; };
+		7AD259FD26AF913200396CF2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/User.swift; sourceTree = "<group>"; };
+		7AD259FE26AF913200396CF2 /* InvitedRoom+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/InvitedRoom+Schema.swift"; sourceTree = "<group>"; };
+		7AD259FF26AF913200396CF2 /* Message+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Message+Schema.swift"; sourceTree = "<group>"; };
 		7AD362FB26852AE7003F6447 /* FirebaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataSource.swift; sourceTree = "<group>"; };
 		7AD8376A267E9A24005A2D48 /* SmileNotePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNotePopover.swift; sourceTree = "<group>"; };
 		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -387,14 +387,14 @@
 		7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashScreen2.mp4; sourceTree = "<group>"; };
 		7AF2E2CD26AE643A00A82C6D /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		7AF2E2CE26AE643A00A82C6D /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
-		7AF2E2D226AF1CB500A82C6D /* amplify/generated/models/DeletionRequest+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/DeletionRequest+Schema.swift"; sourceTree = "<group>"; };
-		7AF2E2D326AF1CB500A82C6D /* amplify/generated/models/DeletionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/DeletionRequest.swift; sourceTree = "<group>"; };
-		7AF2E2D426AF1CB500A82C6D /* amplify/generated/models/Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Advertisement.swift; sourceTree = "<group>"; };
-		7AF2E2D526AF1CB500A82C6D /* amplify/generated/models/ReportedMessage+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ReportedMessage+Schema.swift"; sourceTree = "<group>"; };
-		7AF2E2D626AF1CB500A82C6D /* amplify/generated/models/InvitedRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/InvitedRoom.swift; sourceTree = "<group>"; };
-		7AF2E2DB26AF1CB500A82C6D /* amplify/generated/models/Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
-		7AF2E2E326AF1CB500A82C6D /* amplify/generated/models/ShakingCool+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = "<group>"; };
-		7AF2E2E526AF1CB500A82C6D /* amplify/generated/models/Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Room+Schema.swift"; sourceTree = "<group>"; };
+		7AF2E2D226AF1CB500A82C6D /* DeletionRequest+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/DeletionRequest+Schema.swift"; sourceTree = "<group>"; };
+		7AF2E2D326AF1CB500A82C6D /* DeletionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/DeletionRequest.swift; sourceTree = "<group>"; };
+		7AF2E2D426AF1CB500A82C6D /* Advertisement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Advertisement.swift; sourceTree = "<group>"; };
+		7AF2E2D526AF1CB500A82C6D /* ReportedMessage+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ReportedMessage+Schema.swift"; sourceTree = "<group>"; };
+		7AF2E2D626AF1CB500A82C6D /* InvitedRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/InvitedRoom.swift; sourceTree = "<group>"; };
+		7AF2E2DB26AF1CB500A82C6D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/Message.swift; sourceTree = "<group>"; };
+		7AF2E2E326AF1CB500A82C6D /* ShakingCool+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = "<group>"; };
+		7AF2E2E526AF1CB500A82C6D /* Room+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/Room+Schema.swift"; sourceTree = "<group>"; };
 		7AF35CB32699EB6700A396CE /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7AF686F026BC86C900A287C2 /* Settings2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings2View.swift; sourceTree = "<group>"; };
 		7AF686F226C1C21700A287C2 /* SettingsEngagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEngagementView.swift; sourceTree = "<group>"; };
@@ -471,58 +471,58 @@
 				7A69EA3526AA65AB00A54B6F /* SmileNote.swift */,
 				7A69EA3326AA65AB00A54B6F /* User+Schema.swift */,
 				7A69EA3F26AA65AE00A54B6F /* User.swift */,
-				7AF2E2D426AF1CB500A82C6D /* amplify/generated/models/Advertisement.swift */,
-				7AF2E2D226AF1CB500A82C6D /* amplify/generated/models/DeletionRequest+Schema.swift */,
-				7AF2E2D326AF1CB500A82C6D /* amplify/generated/models/DeletionRequest.swift */,
-				7AF2E2D626AF1CB500A82C6D /* amplify/generated/models/InvitedRoom.swift */,
-				7AF2E2DB26AF1CB500A82C6D /* amplify/generated/models/Message.swift */,
-				7AF2E2D526AF1CB500A82C6D /* amplify/generated/models/ReportedMessage+Schema.swift */,
-				7AF2E2E526AF1CB500A82C6D /* amplify/generated/models/Room+Schema.swift */,
-				7AF2E2E326AF1CB500A82C6D /* amplify/generated/models/ShakingCool+Schema.swift */,
-				7AD259C226AF292500396CF2 /* amplify/generated/models/Advertisement.swift */,
-				7AD259C726AF292500396CF2 /* amplify/generated/models/DeletionRequest.swift */,
-				7AD259D426AF292600396CF2 /* amplify/generated/models/ReportedMessage+Schema.swift */,
-				7AD259D326AF292600396CF2 /* amplify/generated/models/ReportedMessage.swift */,
-				7AD259D526AF292600396CF2 /* amplify/generated/models/Room.swift */,
-				7AD259CB26AF292600396CF2 /* amplify/generated/models/ShakingCool.swift */,
-				7AD259CA26AF292600396CF2 /* amplify/generated/models/SmileNote+Schema.swift */,
-				7AD259CD26AF292600396CF2 /* amplify/generated/models/User+Schema.swift */,
-				7AD259CF26AF292600396CF2 /* amplify/generated/models/User.swift */,
-				7AD259F726AF913200396CF2 /* amplify/generated/models/Advertisement+Schema.swift */,
-				7AD259F026AF913100396CF2 /* amplify/generated/models/Advertisement.swift */,
-				7AD259F426AF913200396CF2 /* amplify/generated/models/ManagementDocument+Schema.swift */,
-				7AD259F626AF913200396CF2 /* amplify/generated/models/ManagementDocument.swift */,
-				7AD259FF26AF913200396CF2 /* amplify/generated/models/Message+Schema.swift */,
-				7AD259ED26AF913100396CF2 /* amplify/generated/models/Message.swift */,
-				7AD259F526AF913200396CF2 /* amplify/generated/models/Room+Schema.swift */,
-				7AD259F826AF913200396CF2 /* amplify/generated/models/User+Schema.swift */,
-				7AD259F926AF913200396CF2 /* amplify/generated/models/DeletionRequest.swift */,
-				7AD259FE26AF913200396CF2 /* amplify/generated/models/InvitedRoom+Schema.swift */,
-				7AD259F326AF913100396CF2 /* amplify/generated/models/Room.swift */,
-				7AD259FC26AF913200396CF2 /* amplify/generated/models/ShakingCool+Schema.swift */,
-				7AD259EF26AF913100396CF2 /* amplify/generated/models/SmileNote.swift */,
-				7AD259FD26AF913200396CF2 /* amplify/generated/models/User.swift */,
-				7A5EFECB26B4A2EC00281DDD /* amplify/generated/models/Advertisement.swift */,
-				7A5EFEBF26B4A2EC00281DDD /* amplify/generated/models/InvitedRoom.swift */,
-				7A5EFECF26B4A2EC00281DDD /* amplify/generated/models/ManagementDocument.swift */,
-				7A5EFEC326B4A2EC00281DDD /* amplify/generated/models/Message+Schema.swift */,
-				7A5EFECC26B4A2EC00281DDD /* amplify/generated/models/Advertisement+Schema.swift */,
-				7A5EFECA26B4A2EC00281DDD /* amplify/generated/models/AmplifyModels.swift */,
-				7A5EFEC426B4A2EC00281DDD /* amplify/generated/models/DeletionRequest+Schema.swift */,
-				7A5EFEBD26B4A2EB00281DDD /* amplify/generated/models/DeletionRequest.swift */,
-				7A5EFECE26B4A2EC00281DDD /* amplify/generated/models/InvitedRoom+Schema.swift */,
-				7A5EFEC026B4A2EC00281DDD /* amplify/generated/models/ManagementDocument+Schema.swift */,
-				7A5EFECD26B4A2EC00281DDD /* amplify/generated/models/Message.swift */,
-				7A5EFEC926B4A2EC00281DDD /* amplify/generated/models/User+Schema.swift */,
-				7A9B956E26EFFD81001D56E9 /* amplify/generated/models/Advertisement.swift */,
-				7A9B957526EFFD81001D56E9 /* amplify/generated/models/AmplifyModels.swift */,
-				7A9B956A26EFFD81001D56E9 /* amplify/generated/models/InvitedRoom.swift */,
-				7A9B957126EFFD81001D56E9 /* amplify/generated/models/Room+Schema.swift */,
-				7A9B957626EFFD81001D56E9 /* amplify/generated/models/ShakingCool+Schema.swift */,
-				7A9B956D26EFFD81001D56E9 /* amplify/generated/models/User.swift */,
-				7A9B957226EFFD81001D56E9 /* amplify/generated/models/Message.swift */,
-				7A9B957326EFFD81001D56E9 /* amplify/generated/models/ShakingCool.swift */,
-				7A9B957726EFFD81001D56E9 /* amplify/generated/models/User+Schema.swift */,
+				7AF2E2D426AF1CB500A82C6D /* Advertisement.swift */,
+				7AF2E2D226AF1CB500A82C6D /* DeletionRequest+Schema.swift */,
+				7AF2E2D326AF1CB500A82C6D /* DeletionRequest.swift */,
+				7AF2E2D626AF1CB500A82C6D /* InvitedRoom.swift */,
+				7AF2E2DB26AF1CB500A82C6D /* Message.swift */,
+				7AF2E2D526AF1CB500A82C6D /* ReportedMessage+Schema.swift */,
+				7AF2E2E526AF1CB500A82C6D /* Room+Schema.swift */,
+				7AF2E2E326AF1CB500A82C6D /* ShakingCool+Schema.swift */,
+				7AD259C226AF292500396CF2 /* Advertisement.swift */,
+				7AD259C726AF292500396CF2 /* DeletionRequest.swift */,
+				7AD259D426AF292600396CF2 /* ReportedMessage+Schema.swift */,
+				7AD259D326AF292600396CF2 /* ReportedMessage.swift */,
+				7AD259D526AF292600396CF2 /* Room.swift */,
+				7AD259CB26AF292600396CF2 /* ShakingCool.swift */,
+				7AD259CA26AF292600396CF2 /* SmileNote+Schema.swift */,
+				7AD259CD26AF292600396CF2 /* User+Schema.swift */,
+				7AD259CF26AF292600396CF2 /* User.swift */,
+				7AD259F726AF913200396CF2 /* Advertisement+Schema.swift */,
+				7AD259F026AF913100396CF2 /* Advertisement.swift */,
+				7AD259F426AF913200396CF2 /* ManagementDocument+Schema.swift */,
+				7AD259F626AF913200396CF2 /* ManagementDocument.swift */,
+				7AD259FF26AF913200396CF2 /* Message+Schema.swift */,
+				7AD259ED26AF913100396CF2 /* Message.swift */,
+				7AD259F526AF913200396CF2 /* Room+Schema.swift */,
+				7AD259F826AF913200396CF2 /* User+Schema.swift */,
+				7AD259F926AF913200396CF2 /* DeletionRequest.swift */,
+				7AD259FE26AF913200396CF2 /* InvitedRoom+Schema.swift */,
+				7AD259F326AF913100396CF2 /* Room.swift */,
+				7AD259FC26AF913200396CF2 /* ShakingCool+Schema.swift */,
+				7AD259EF26AF913100396CF2 /* SmileNote.swift */,
+				7AD259FD26AF913200396CF2 /* User.swift */,
+				7A5EFECB26B4A2EC00281DDD /* Advertisement.swift */,
+				7A5EFEBF26B4A2EC00281DDD /* InvitedRoom.swift */,
+				7A5EFECF26B4A2EC00281DDD /* ManagementDocument.swift */,
+				7A5EFEC326B4A2EC00281DDD /* Message+Schema.swift */,
+				7A5EFECC26B4A2EC00281DDD /* Advertisement+Schema.swift */,
+				7A5EFECA26B4A2EC00281DDD /* AmplifyModels.swift */,
+				7A5EFEC426B4A2EC00281DDD /* DeletionRequest+Schema.swift */,
+				7A5EFEBD26B4A2EB00281DDD /* DeletionRequest.swift */,
+				7A5EFECE26B4A2EC00281DDD /* InvitedRoom+Schema.swift */,
+				7A5EFEC026B4A2EC00281DDD /* ManagementDocument+Schema.swift */,
+				7A5EFECD26B4A2EC00281DDD /* Message.swift */,
+				7A5EFEC926B4A2EC00281DDD /* User+Schema.swift */,
+				7A9B956E26EFFD81001D56E9 /* Advertisement.swift */,
+				7A9B957526EFFD81001D56E9 /* AmplifyModels.swift */,
+				7A9B956A26EFFD81001D56E9 /* InvitedRoom.swift */,
+				7A9B957126EFFD81001D56E9 /* Room+Schema.swift */,
+				7A9B957626EFFD81001D56E9 /* ShakingCool+Schema.swift */,
+				7A9B956D26EFFD81001D56E9 /* User.swift */,
+				7A9B957226EFFD81001D56E9 /* Message.swift */,
+				7A9B957326EFFD81001D56E9 /* ShakingCool.swift */,
+				7A9B957726EFFD81001D56E9 /* User+Schema.swift */,
 			);
 			name = AmplifyModels;
 			sourceTree = "<group>";
@@ -1099,13 +1099,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BestFriends/Pods-BestFriends-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BestFriends/Pods-BestFriends-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1120,17 +1116,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A6A4D07262B8A5000561D87 /* PlayerView.swift in Sources */,
-				7AD25A0A26AF913200396CF2 /* amplify/generated/models/Room+Schema.swift in Sources */,
+				7AD25A0A26AF913200396CF2 /* Room+Schema.swift in Sources */,
 				7A48CCB2271A32360034D85A /* Room+Schema.swift in Sources */,
 				7A79868226D86F5E0037AD9E /* TextBindingManager.swift in Sources */,
-				7A9B958C26EFFD81001D56E9 /* amplify/generated/models/User+Schema.swift in Sources */,
+				7A9B958C26EFFD81001D56E9 /* User+Schema.swift in Sources */,
 				D1577797264CBBAD00B6551A /* ChangeEmail.swift in Sources */,
 				7A7AEF2E26C5CF3F00DE8344 /* HelpSupportView.swift in Sources */,
-				7AD25A0226AF913200396CF2 /* amplify/generated/models/Message.swift in Sources */,
+				7AD25A0226AF913200396CF2 /* Message.swift in Sources */,
 				7A48CCAF271A32360034D85A /* ShakingCool+Schema.swift in Sources */,
 				7A46D14326D5A32400255A5C /* HideoutsView.swift in Sources */,
 				7A234A0F26F42F0A002BE042 /* PrivacyPolicyView.swift in Sources */,
-				7AF2E2E726AF1CB500A82C6D /* amplify/generated/models/DeletionRequest+Schema.swift in Sources */,
+				7AF2E2E726AF1CB500A82C6D /* DeletionRequest+Schema.swift in Sources */,
 				7A78232526B2004500CA76FC /* AnalyticsDataSource.swift in Sources */,
 				D15777A3264DB7FD00B6551A /* BetaTesters.swift in Sources */,
 				7AB4744726D3DD6400053E76 /* ChatRoomsView.swift in Sources */,
@@ -1142,8 +1138,8 @@
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
 				7A48CCAC271A32360034D85A /* ReportedMessage.swift in Sources */,
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
-				7AD25A1126AF913200396CF2 /* amplify/generated/models/ShakingCool+Schema.swift in Sources */,
-				7AD259D726AF292600396CF2 /* amplify/generated/models/Advertisement.swift in Sources */,
+				7AD25A1126AF913200396CF2 /* ShakingCool+Schema.swift in Sources */,
+				7AD259D726AF292600396CF2 /* Advertisement.swift in Sources */,
 				7AD1F0F726D1BC2000254306 /* ConfirmationView.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */,
@@ -1154,24 +1150,24 @@
 				7AE31CC5262A9C57001EC5A3 /* OldConfirmationView.swift in Sources */,
 				7A48CCAA271A32360034D85A /* ReportedMessage+Schema.swift in Sources */,
 				D15CCD692647458900BFE179 /* ResetPassword.swift in Sources */,
-				7A5EFEE426B4A2EC00281DDD /* amplify/generated/models/ManagementDocument.swift in Sources */,
+				7A5EFEE426B4A2EC00281DDD /* ManagementDocument.swift in Sources */,
 				7A46D14026D4769000255A5C /* SearchBar.swift in Sources */,
 				7AB62A8526426F86005A7744 /* SettingsView.swift in Sources */,
 				7A71BD012625292A00E6FA9E /* SignUpView.swift in Sources */,
-				7AD25A0C26AF913200396CF2 /* amplify/generated/models/Advertisement+Schema.swift in Sources */,
+				7AD25A0C26AF913200396CF2 /* Advertisement+Schema.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
 				7A48CCA9271A32360034D85A /* InvitedRoom.swift in Sources */,
 				7AAB444A265C619A00488983 /* ShakingCoolView.swift in Sources */,
 				7AF686F726C32A9A00A287C2 /* MyAccountView.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
-				7A5EFED826B4A2EC00281DDD /* amplify/generated/models/Message+Schema.swift in Sources */,
+				7A5EFED826B4A2EC00281DDD /* Message+Schema.swift in Sources */,
 				7AF686F326C1C21700A287C2 /* SettingsEngagementView.swift in Sources */,
 				7AD1F10126D2C13300254306 /* SignUpView8.swift in Sources */,
-				7AD25A1326AF913200396CF2 /* amplify/generated/models/InvitedRoom+Schema.swift in Sources */,
+				7AD25A1326AF913200396CF2 /* InvitedRoom+Schema.swift in Sources */,
 				7A7AEF2C26C5C68600DE8344 /* CustomizationView.swift in Sources */,
 				7A33B63C2640D463004CB47F /* ChatView.swift in Sources */,
 				7AD1F10326D2C71700254306 /* SignUpView9.swift in Sources */,
-				7A5EFEDF26B4A2EC00281DDD /* amplify/generated/models/AmplifyModels.swift in Sources */,
+				7A5EFEDF26B4A2EC00281DDD /* AmplifyModels.swift in Sources */,
 				7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */,
 				D1949C412644FD4F00FDB6C5 /* RemoveFriend.swift in Sources */,
 				CF95B6A026F677E2005B616B /* TermsOfService.swift in Sources */,
@@ -1191,7 +1187,7 @@
 				D157779B264D086000B6551A /* SmileVaultView.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AD1F0FF26D2BBF700254306 /* SignUpView7.swift in Sources */,
-				7AD25A1226AF913200396CF2 /* amplify/generated/models/User.swift in Sources */,
+				7AD25A1226AF913200396CF2 /* User.swift in Sources */,
 				7A48CCB6271A32360034D85A /* DeletionRequest+Schema.swift in Sources */,
 				7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */,
 				CFA5EBDC26A158DB00BFEBA2 /* InviteFriendsChat.swift in Sources */,
@@ -1202,14 +1198,14 @@
 				7AA2010F2635D21100C9F00C /* RoomsView.swift in Sources */,
 				7A08E366264FB6DB00AEBC8F /* PushNotificationManager.swift in Sources */,
 				CF5263E32667621B00243DD7 /* ChangeChatFontSize.swift in Sources */,
-				7AD25A0426AF913200396CF2 /* amplify/generated/models/SmileNote.swift in Sources */,
+				7AD25A0426AF913200396CF2 /* SmileNote.swift in Sources */,
 				7A4FA0DC265D351D00F5C0D7 /* ShakingCoolFullScreenView.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				D15777B42650522200B6551A /* SwipeGesture.swift in Sources */,
 				7A48CCBB271A32360034D85A /* Advertisement.swift in Sources */,
 				7A417EC6265ED4B000E95364 /* AdViewFullScreen.swift in Sources */,
 				7AE384DF26D8769400D4837B /* HideoutsMenu.swift in Sources */,
-				7A5EFED426B4A2EC00281DDD /* amplify/generated/models/InvitedRoom.swift in Sources */,
+				7A5EFED426B4A2EC00281DDD /* InvitedRoom.swift in Sources */,
 				7AF35CB42699EB6700A396CE /* Helper.swift in Sources */,
 				7AC8A23F26578C3E001812EF /* LocationManager.swift in Sources */,
 				7A23683426CB1DD300C56A97 /* SignUpView1.swift in Sources */,
@@ -1217,14 +1213,14 @@
 				7A48CCBA271A32360034D85A /* ManagementDocument.swift in Sources */,
 				7A417EC8265ED52900E95364 /* AdDataSource.swift in Sources */,
 				7A68B67B26A7296D00EF20E3 /* UserSubscriptionService.swift in Sources */,
-				7A5EFED526B4A2EC00281DDD /* amplify/generated/models/ManagementDocument+Schema.swift in Sources */,
+				7A5EFED526B4A2EC00281DDD /* ManagementDocument+Schema.swift in Sources */,
 				7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */,
 				7AD10455265AB9BE007627FD /* DeviceShakeViewModifier.swift in Sources */,
 				7A934002264FC94900BB5972 /* PushNotificationSender.swift in Sources */,
 				7A95EA5826530DDA00C6C700 /* PinView.swift in Sources */,
 				7AAB444C265C6B6800488983 /* ShakingCoolDataSource.swift in Sources */,
 				7A48CCBD271A32360034D85A /* AmplifyModels.swift in Sources */,
-				7A9B958826EFFD81001D56E9 /* amplify/generated/models/ShakingCool.swift in Sources */,
+				7A9B958826EFFD81001D56E9 /* ShakingCool.swift in Sources */,
 				7AD1F0F926D1CBB500254306 /* SignUpView6.swift in Sources */,
 				7A48CCB4271A32360034D85A /* Message.swift in Sources */,
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
@@ -1260,37 +1256,37 @@
 				CF05A8CC26B4239B009618E6 /* bff.swift in Sources */,
 				7A23683626CB324100C56A97 /* SignUpView2.swift in Sources */,
 				FD920B918716974034DBEB83 /* Advertisement+Schema.swift in Sources */,
-				47C93F9EF55FF1D724BD688C /* amplify/generated/models/Advertisement.swift in Sources */,
-				E7E5FF45E31C3479DC7E778B /* amplify/generated/models/AmplifyModels.swift in Sources */,
-				0899627569430D7C5DEB5CE6 /* amplify/generated/models/DeletionRequest+Schema.swift in Sources */,
-				7F9CBA6FC495F6892046FFBF /* amplify/generated/models/DeletionRequest.swift in Sources */,
+				47C93F9EF55FF1D724BD688C /* Advertisement.swift in Sources */,
+				E7E5FF45E31C3479DC7E778B /* AmplifyModels.swift in Sources */,
+				0899627569430D7C5DEB5CE6 /* DeletionRequest+Schema.swift in Sources */,
+				7F9CBA6FC495F6892046FFBF /* DeletionRequest.swift in Sources */,
 				07BCB3ED204876463112D1CC /* InvitedRoom+Schema.swift in Sources */,
-				344878345B2D45FE719C4FDE /* amplify/generated/models/InvitedRoom.swift in Sources */,
-				E773ACADB99A782917B01876 /* amplify/generated/models/ManagementDocument+Schema.swift in Sources */,
+				344878345B2D45FE719C4FDE /* InvitedRoom.swift in Sources */,
+				E773ACADB99A782917B01876 /* ManagementDocument+Schema.swift in Sources */,
 				7A48CCB3271A32360034D85A /* User.swift in Sources */,
-				252EA3804F13E2A928D11F92 /* amplify/generated/models/ReportedMessage+Schema.swift in Sources */,
+				252EA3804F13E2A928D11F92 /* ReportedMessage+Schema.swift in Sources */,
 				B6541DEE1FEAB19709E602BD /* ReportedMessage.swift in Sources */,
-				48902E37427FADF35EBC5C94 /* amplify/generated/models/Room+Schema.swift in Sources */,
+				48902E37427FADF35EBC5C94 /* Room+Schema.swift in Sources */,
 				7A48CCAB271A32360034D85A /* InvitedRoom+Schema.swift in Sources */,
-				1303BAD5293C4A21C63FFC49 /* amplify/generated/models/Room.swift in Sources */,
-				C3A756363DC69A5BEC3C5886 /* amplify/generated/models/ShakingCool+Schema.swift in Sources */,
+				1303BAD5293C4A21C63FFC49 /* Room.swift in Sources */,
+				C3A756363DC69A5BEC3C5886 /* ShakingCool+Schema.swift in Sources */,
 				AA68BE6A8A8202FF1C790F9F /* ShakingCool.swift in Sources */,
-				C1C96C2AA182C2C1F5CB77E2 /* amplify/generated/models/SmileNote+Schema.swift in Sources */,
+				C1C96C2AA182C2C1F5CB77E2 /* SmileNote+Schema.swift in Sources */,
 				E7A9F0966AF78F2A4DF12C02 /* SmileNote.swift in Sources */,
-				29744AE8B63FFAEC5AE7A8FB /* amplify/generated/models/User+Schema.swift in Sources */,
-				4AC6BF097AB5948D383B4E5E /* amplify/generated/models/User.swift in Sources */,
+				29744AE8B63FFAEC5AE7A8FB /* User+Schema.swift in Sources */,
+				4AC6BF097AB5948D383B4E5E /* User.swift in Sources */,
 				7A48CCB5271A32360034D85A /* DeletionRequest.swift in Sources */,
 				247BD56BCDCD144AF5ECC58C /* DeletionRequest+Schema.swift in Sources */,
-				3D7158822310EA9998947507 /* amplify/generated/models/DeletionRequest.swift in Sources */,
+				3D7158822310EA9998947507 /* DeletionRequest.swift in Sources */,
 				606A5CF8E5AFB630E5B55689 /* ManagementDocument.swift in Sources */,
-				77E1D1F90CB1D2FE80880F28 /* amplify/generated/models/Message.swift in Sources */,
+				77E1D1F90CB1D2FE80880F28 /* Message.swift in Sources */,
 				3160F15604AD92778D6C57AC /* ReportedMessage+Schema.swift in Sources */,
-				92B8863AB2514FCBF75A7548 /* amplify/generated/models/ReportedMessage.swift in Sources */,
+				92B8863AB2514FCBF75A7548 /* ReportedMessage.swift in Sources */,
 				7A48CCAE271A32360034D85A /* ManagementDocument+Schema.swift in Sources */,
 				DE7D83D350B29DACA0388423 /* Room+Schema.swift in Sources */,
 				5DA0BEB80E6DD5F04E23B8C2 /* ShakingCool+Schema.swift in Sources */,
 				7A48CCB8271A32360034D85A /* SmileNote+Schema.swift in Sources */,
-				D01BAD8F4BA2766AC7382AEB /* amplify/generated/models/User.swift in Sources */,
+				D01BAD8F4BA2766AC7382AEB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
