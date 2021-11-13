@@ -199,7 +199,7 @@ struct HomeView: View {
                             }
                     }
                     .actionSheet(isPresented: $showingActionSheet) {
-                        ActionSheet(title: Text("Add Friends"), message: Text("Add up to '5' friends via QR codes."), buttons: [
+                        ActionSheet(title: Text("Add up to 5 Friends via QR codes"), message: Text("Get your personal QR code - protecting you from Trolls, unwanted DMs and images in a super safe space."), buttons: [
                             .default(Text("Get my QR code")) { showMyQR() },
                             .default(Text("My Gallery")) {
                                 let photos = PHPhotoLibrary.authorizationStatus()
