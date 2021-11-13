@@ -105,7 +105,7 @@ struct ChatBubble: View {
                 
             }
             .actionSheet(isPresented: $showingActionSheet) {
-                ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
+                ActionSheet(title: Text("What would you like to do with this message?"), message: Text(message.body), buttons: [
                     .default(Text("Delete")) {
                         messageDataSource.deleteMessage(message: message)
                     },
@@ -190,14 +190,14 @@ struct ChatBubble: View {
                 
             }
             .actionSheet(isPresented: $showingActionSheet) {
-                ActionSheet(title: Text("What would you like to do with the message?"), message: Text(message.body), buttons: [
+                ActionSheet(title: Text("What would you like to do with this message?"), message: Text(message.body), buttons: [
                     .default(Text("Save to SmileNotes")) {
                         messageDataSource.saveToSmileNotes(message: message)
                     },
-                    .default(Text("'Like' message")) {
+                    .default(Text("Add 'Like' emoji")) {
                         messageDataSource.likeMessage(message: message, theroom: messageDataSource.room)
                     },
-                    .default(Text("'Thumbs Up' message")) {
+                    .default(Text("Add 'Thumbs Up' emoji")) {
                         messageDataSource.thumbsUpMessage(message: message, theroom: messageDataSource.room)
                     },
                     .default(Text("Report as abusive")) {

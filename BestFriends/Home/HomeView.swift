@@ -177,7 +177,7 @@ struct HomeView: View {
                     }) {
                         Image("addFriend")
                             .resizable()
-                            .frame(width: 70, height: 70)
+                            .frame(width: 100, height: 100)
                             .scaledToFill()
                             .scaleEffect(isAtMaxScale ? 0.5 : 1)
                             .padding(10)
@@ -199,7 +199,7 @@ struct HomeView: View {
                             }
                     }
                     .actionSheet(isPresented: $showingActionSheet) {
-                        ActionSheet(title: Text("Add up to 5 Friends via QR codes"), message: Text("Get your personal QR code - protecting you from Trolls, unwanted DMs and images in a super safe space."), buttons: [
+                        ActionSheet(title: Text("Add up to 5 Friends with secret QR codes"), message: Text("There's a couple extra steps - but we keep trolls and unwanted DMs & images out. There's NO user search - strangers can't find you, EVER!"), buttons: [
                             .default(Text("Get my QR code")) { showMyQR() },
                             .default(Text("My Gallery")) {
                                 let photos = PHPhotoLibrary.authorizationStatus()
