@@ -28,18 +28,18 @@ struct SignUpView5: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
+            ColorManager.purple1
                 .ignoresSafeArea()
             
             ZStack {
                 Circle()
                     .frame(width: 400, height: 400)
-                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
-                    .offset(x: 200, y: -400)
+                    .foregroundColor(ColorManager.purple3)
+                    .offset(x: 200, y: -450)
                 
                 Circle()
                     .frame(width: 300, height: 300)
-                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+                    .foregroundColor(ColorManager.purple3)
                     .offset(x: -200, y: 400)
             }
             
@@ -48,6 +48,7 @@ struct SignUpView5: View {
                 HStack {
                     Text("Get Started")
                         .font(.system(size: 30, weight: .semibold))
+                        .foregroundColor(ColorManager.grey4)
                         .padding(.horizontal, 40)
                     
                     Spacer()
@@ -57,6 +58,7 @@ struct SignUpView5: View {
                 HStack {
                     Text("Just a few steps away")
                         .font(.system(size: 16, weight: .light))
+                        .foregroundColor(ColorManager.grey4)
                         .padding(.horizontal, 40)
                     
                     Spacer()
@@ -64,103 +66,28 @@ struct SignUpView5: View {
                 .padding(.bottom, 30)
                 
                 VStack {
-                    HStack {
-                        TextField("  First Name", text: $firstname)
-                            .frame(maxWidth: .infinity, maxHeight: 40)
-                            .font(.system(size: 24))
-                            .foregroundColor(.black)
-                            .background(Color.white)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.gray, lineWidth: 1)
-                            )
-                            .multilineTextAlignment(.center)
-                            .autocapitalization(.none)
-                            .disableAutocorrection(true)
-                            .padding(.leading, 40)
-                            .padding(.trailing, 5)
-                        
-                        TextField("  Last Name", text: $lastname)
-                            .frame(maxWidth: .infinity, maxHeight: 40)
-                            .font(.system(size: 24))
-                            .foregroundColor(.black)
-                            .background(Color.white)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.gray, lineWidth: 1)
-                            )
-                            .multilineTextAlignment(.center)
-                            .autocapitalization(.none)
-                            .disableAutocorrection(true)
-                            .padding(.trailing, 40)
-                            .padding(.leading, 5)
-                    }
+                    MainTextField(text: $firstname, placeholder: "First Name")
                     
-                    TextField("  Username", text: $username)
-                        .frame(maxWidth: .infinity, maxHeight: 40)
-                        .font(.system(size: 24))
-                        .foregroundColor(.black)
-                        .background(Color.clear)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
-                        .multilineTextAlignment(.center)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .padding(.horizontal, 40)
-                        .padding(.vertical, 10)
+                    MainTextField(text: $lastname, placeholder: "Last Name")
                     
-                    SecureField("  Password", text: $password)
-                        .frame(maxWidth: .infinity, maxHeight: 40)
-                        .font(.system(size: 24))
-                        .foregroundColor(.black)
-                        .background(Color.clear)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
-                        .multilineTextAlignment(.center)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .padding(.horizontal, 40)
-                        .padding(.vertical, 10)
+                    MainTextField(text: $username, placeholder: "Username")
                     
-                    TextField("  Email", text: $email)
-                        .frame(maxWidth: .infinity, maxHeight: 40)
-                        .font(.system(size: 24))
-                        .foregroundColor(.black)
-                        .background(Color.clear)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
-                        .multilineTextAlignment(.center)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
-                        .padding(.horizontal, 40)
-                        .padding(.top, 10)
+                    MainSecureField(text: $password, placeholder: "Password")
+                    
+                    MainTextField(text: $email, placeholder: "Email")
                 }
                 
-                Spacer().frame(height: 100)
+                Spacer().frame(height: 50)
                 
                 Text(errorMessage)
-                    .foregroundColor(.red)
+                    .foregroundColor(ColorManager.red)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 20)
                 
                 Button(action: {
                     checkFields()
                 }) {
-                    Text("SIGN UP")
-                        .font(.system(size: 25, weight: .semibold))
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 60)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(20)
-                        .padding(.horizontal, 20)
-                    
+                    CustomButtonInterior(text: "Sign Up", color: ColorManager.purple4)
                 }
                 
                 //
@@ -183,7 +110,7 @@ struct SignUpView5: View {
                 
                 HStack {
                     Link("Terms of Service", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
-                        .foregroundColor(.blue)
+                        .foregroundColor(ColorManager.purple5)
                         .onTapGesture {
                             tosShowing = true
                         }
@@ -194,7 +121,7 @@ struct SignUpView5: View {
                         })
                     
                     Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
-                        .foregroundColor(.blue)
+                        .foregroundColor(ColorManager.purple5)
                         .onTapGesture {
                             privacyShowing = true
                         }

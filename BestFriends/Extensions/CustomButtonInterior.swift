@@ -20,7 +20,7 @@ struct CustomButtonInterior: View {
     var body: some View {
             Text(text)
                 .font(.system(size: 20, weight: .semibold))
-                .foregroundColor(ColorManager.grey)
+                .foregroundColor(ColorManager.grey1)
                 .frame(maxWidth: 200)
                 .frame(height: 60)
                 .background(color)

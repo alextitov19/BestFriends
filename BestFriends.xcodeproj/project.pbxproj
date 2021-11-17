@@ -30,7 +30,7 @@
 		7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A575274416C200FB6B4F /* ViewExt.swift */; };
 		7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A576274416C200FB6B4F /* TextFieldCustom.swift */; };
 		7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */; };
-		7A22A57C274416C200FB6B4F /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A578274416C200FB6B4F /* ButtonCustom.swift */; };
+		7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */; };
 		7A234A0F26F42F0A002BE042 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A234A0E26F42F0A002BE042 /* PrivacyPolicyView.swift */; };
 		7A23683426CB1DD300C56A97 /* SignUpView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683326CB1DD300C56A97 /* SignUpView1.swift */; };
 		7A23683626CB324100C56A97 /* SignUpView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23683526CB324100C56A97 /* SignUpView2.swift */; };
@@ -127,6 +127,7 @@
 		7AC8564226585CD20045D145 /* LiquidSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8564126585CD20045D145 /* LiquidSwipe.swift */; };
 		7AC8A23F26578C3E001812EF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC8A23E26578C3E001812EF /* LocationManager.swift */; };
 		7ACEDEDE2685194C00102E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */; };
+		7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AD02B582744829D00500DD7 /* MainFont.ttf */; };
 		7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1044F265AB93F007627FD /* UIWindowExtension.swift */; };
 		7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD10451265AB948007627FD /* UIDeviceExtension.swift */; };
 		7AD10455265AB9BE007627FD /* DeviceShakeViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD10454265AB9BE007627FD /* DeviceShakeViewModifier.swift */; };
@@ -217,7 +218,7 @@
 		7A22A575274416C200FB6B4F /* ViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		7A22A576274416C200FB6B4F /* TextFieldCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCustom.swift; sourceTree = "<group>"; };
 		7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorExt+Mgr.swift"; sourceTree = "<group>"; };
-		7A22A578274416C200FB6B4F /* ButtonCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
+		7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonInterior.swift; sourceTree = "<group>"; };
 		7A234A0E26F42F0A002BE042 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		7A23683326CB1DD300C56A97 /* SignUpView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView1.swift; sourceTree = "<group>"; };
 		7A23683526CB324100C56A97 /* SignUpView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView2.swift; sourceTree = "<group>"; };
@@ -350,6 +351,7 @@
 		7AC8A23E26578C3E001812EF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriendsRelease.entitlements; sourceTree = "<group>"; };
 		7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7AD02B582744829D00500DD7 /* MainFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MainFont.ttf; sourceTree = "<group>"; };
 		7AD1044F265AB93F007627FD /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		7AD10451265AB948007627FD /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		7AD10454265AB9BE007627FD /* DeviceShakeViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceShakeViewModifier.swift; sourceTree = "<group>"; };
@@ -575,7 +577,7 @@
 				7A22A575274416C200FB6B4F /* ViewExt.swift */,
 				7A22A576274416C200FB6B4F /* TextFieldCustom.swift */,
 				7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */,
-				7A22A578274416C200FB6B4F /* ButtonCustom.swift */,
+				7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -634,6 +636,7 @@
 		7A6A4D00262B865D00561D87 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7AD02B582744829D00500DD7 /* MainFont.ttf */,
 				7A71BD022625292B00E6FA9E /* Assets.xcassets */,
 				7A6A4D01262B866500561D87 /* Videos */,
 			);
@@ -1053,6 +1056,7 @@
 				7A78232E26B2419600CA76FC /* bull.mp4 in Resources */,
 				7A78233026B2419600CA76FC /* pink.mp4 in Resources */,
 				7A383FFB267AC306002F354A /* Skateboard.mp4 in Resources */,
+				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				7AF2E2CF26AE643A00A82C6D /* amplifyconfiguration.json in Resources */,
 				7A78232D26B2419600CA76FC /* blender.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
@@ -1155,7 +1159,7 @@
 				7AEFD546262CED7A00247757 /* ImagePicker.swift in Sources */,
 				7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */,
 				7AC8564226585CD20045D145 /* LiquidSwipe.swift in Sources */,
-				7A22A57C274416C200FB6B4F /* ButtonCustom.swift in Sources */,
+				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
 				7A48CCAC271A32360034D85A /* ReportedMessage.swift in Sources */,
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
