@@ -8,13 +8,30 @@
 import SwiftUI
 
 struct ColorManager {
-    // create static variables for custom colors
-    static let darkYellow = Color(hex: "#c78a44")
-    static let lightYellow = Color(hex: "#d8b26e")
-    static let grey = Color(hex: "#dad5d2")
-    static let lightBlue = Color(hex: "#b4c1c5")
-    static let darkBlue = Color(hex: "#5f7782")
+    
+    // Primary Color
+    static let purple1 = Color(hex: "#f7f6fe")
+    static let purple2 = Color(hex: "#cec8f5")
+    static let purple3 = Color(hex: "#aea3ee")
+    static let purple4 = Color(hex: "#8d7ee7")
+    static let purple5 = Color(hex: "#5c46dd")
+    static let purple7 = Color(hex: "#372a85")
+    
+    // Secondary Color
+    static let orange1 = Color(hex: "#fef7ea")
+    static let orange2 = Color(hex: "#fce7c0")
+    static let orange3 = Color(hex: "#fbd796")
+    static let orange4 = Color(hex: "#f9c66c")
+    static let orange5 = Color(hex: "#f6ae2d")
 
+    // Greyscale
+    static let grey1 = Color(hex: "#e6e6e6")
+    static let grey2 = Color(hex: "#b3b3b3")
+    static let grey3 = Color(hex: "#808080")
+    static let grey4 = Color(hex: "#333333")
+    
+    // Negative action/event/warning
+    static let red = Color(hex: "#e02b2b")
 }
 
 extension Color {
