@@ -47,7 +47,7 @@ struct SignUpView5: View {
             VStack {
                 HStack {
                     Text("Get Started")
-                        .font(.system(size: 30, weight: .semibold))
+                        .font(.custom("MainFont", size: 30).bold())
                         .foregroundColor(ColorManager.grey4)
                         .padding(.horizontal, 40)
                     
@@ -57,8 +57,7 @@ struct SignUpView5: View {
                 
                 HStack {
                     Text("Just a few steps away")
-                        .font(.system(size: 16, weight: .light))
-                        .foregroundColor(ColorManager.grey4)
+                        .font(.custom("MainFont", size: 16))                        .foregroundColor(ColorManager.grey4)
                         .padding(.horizontal, 40)
                     
                     Spacer()
@@ -89,18 +88,6 @@ struct SignUpView5: View {
                 }) {
                     CustomButtonInterior(text: "Sign Up", color: ColorManager.purple4)
                 }
-                
-                //
-                //                Text("By signing up you agree to our Privacy Policy and Terms of Service.")
-                //                    .font(.system(size: 16, weight: .light))
-                //                    .italic()
-                //                    .multilineTextAlignment(.center)
-                //                    .padding(.horizontal, 40)
-                //
-                
-                
-                
-                
                 
                 Text("By signing up, you agree to our")
                     .popover(isPresented: $tosShowing, content: {
