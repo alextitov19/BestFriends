@@ -23,44 +23,37 @@ struct SignUpView6: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.932589829, green: 0.9314347506, blue: 0.9335541129, alpha: 1))
+            ColorManager.purple1
                 .ignoresSafeArea()
             
             ZStack {
                 Circle()
                     .frame(width: 400, height: 400)
-                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+                    .foregroundColor(ColorManager.purple3)
                     .offset(x: 200, y: -400)
                 
                 Circle()
                     .frame(width: 300, height: 300)
-                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+                    .foregroundColor(ColorManager.purple3)
                     .offset(x: -200, y: 400)
             }
             
             VStack {
                 Text("Final Steps")
                     .font(.system(size: 30, weight: .bold))
-                    .foregroundColor(.black)
+                    .foregroundColor(ColorManager.grey4)
                     .padding()
                 
                 Text("In order for you to use BestFriends effeciently, please tell us a few things about yourself.")
                     .font(.system(size: 20, weight: .regular))
-                    .foregroundColor(.black)
+                    .foregroundColor(ColorManager.grey4)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 40)
                 
                 Button(action: {
                     readyToGo = true
                 }) {
-                    Text("NEXT")
-                        .font(.system(size: 20, weight: .semibold))
-                        .foregroundColor(.white)
-                        .frame(maxWidth: 200)
-                        .frame(height: 60)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(20)
-                                            
+                    CustomButtonInterior(text: "Next", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
                 }
                 .padding(.vertical, 150)
                 .navigationBarTitle("")
@@ -93,7 +86,7 @@ struct SignUpView6: View {
 
 //struct SignUpView6Preview : PreviewProvider {
 //    static var previews: some View {
-//        SignUpView6()
+//        SignUpView6(username: "", firstname: "", lastname: "", email: "", password: "")
 //            .environmentObject(SessionManager())
 //    }
 //}

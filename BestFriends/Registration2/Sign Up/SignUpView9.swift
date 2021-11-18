@@ -27,18 +27,18 @@ struct SignUpView9: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.932589829, green: 0.9314347506, blue: 0.9335541129, alpha: 1))
+            ColorManager.purple1
                 .ignoresSafeArea()
             
             ZStack {
                 Circle()
                     .frame(width: 400, height: 400)
-                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+                    .foregroundColor(ColorManager.purple3)
                     .offset(x: 200, y: -400)
                 
                 Circle()
                     .frame(width: 300, height: 300)
-                    .foregroundColor(Color(#colorLiteral(red: 0.7975029945, green: 0.7191545963, blue: 0.9469521642, alpha: 1)))
+                    .foregroundColor(ColorManager.purple3)
                     .offset(x: -200, y: 400)
             }
             
@@ -48,29 +48,21 @@ struct SignUpView9: View {
                 HStack {
                     Text("3/3")
                         .font(.system(size: 30, weight: .bold))
-                        .foregroundColor(Color(#colorLiteral(red: 0.6782051325, green: 0.5380625725, blue: 0.9619095922, alpha: 1)))
-                    
+                        .foregroundColor(ColorManager.purple3)
+
                     Spacer()
                 }
                 .padding(.horizontal, 40)
                 
                 HStack {
-                    Text("We're trying something new.")
+                    Text("Select your intrests")
                         .font(.system(size: 30, weight: .bold))
-                        .foregroundColor(.black)
-                    
+                        .foregroundColor(ColorManager.grey4)
+
                     Spacer()
                 }
                 .padding(.horizontal, 40)
                 
-                HStack {
-                    Text("Instead of installing cookies on your phone, then stalking your moves outside of BestFriends for advertising purposes, we simply 'Ask' you to share your interests - helping to protect your privacy.")
-                        .font(.system(size: 18, weight: .light))
-                        .foregroundColor(.black)
-                    
-                    Spacer()
-                }
-                .padding(.horizontal, 40)
                 
                 
                 ScrollView(.vertical, showsIndicators: false) {
@@ -81,16 +73,16 @@ struct SignUpView9: View {
                             }) {
                                 ZStack {
                                     Text("Lifestyle")
-                                        .frame(width: 150, height: 200)
+                                        .frame(width: 150, height: 150)
                                         .foregroundColor(.white)
-                                        .background(adPref.contains(1) ? Color(#colorLiteral(red: 0.8287352324, green: 0, blue: 0.6316081882, alpha: 1)) : Color(#colorLiteral(red: 0.5451216102, green: 0.02884001844, blue: 0.4160692394, alpha: 1)))
+                                        .background(ColorManager.orange5)
                                         .cornerRadius(15)
                                         .padding(5)
                                     
                                     if adPref.contains(1) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 75, height: 100)
+                                            .frame(width: 50, height: 75)
                                             .scaledToFill()
                                     }
                                 }
@@ -101,16 +93,16 @@ struct SignUpView9: View {
                             }) {
                                 ZStack {
                                     Text("Sports / Fitness")
-                                        .frame(width: 150, height: 200)
+                                        .frame(width: 150, height: 150)
                                         .foregroundColor(.white)
-                                        .background(adPref.contains(2) ? Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)) : Color(#colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1)))
+                                        .background(ColorManager.purple4)
                                         .cornerRadius(15)
                                         .padding(5)
                                     
                                     if adPref.contains(2) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 75, height: 100)
+                                            .frame(width: 50, height: 75)
                                             .scaledToFill()
                                     }
                                 }
@@ -123,16 +115,16 @@ struct SignUpView9: View {
                             }) {
                                 ZStack {
                                     Text("Beauty")
-                                        .frame(width: 150, height: 200)
+                                        .frame(width: 150, height: 150)
                                         .foregroundColor(.white)
-                                        .background(adPref.contains(3) ? Color(#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)) : Color(#colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1)))
+                                        .background(ColorManager.purple4)
                                         .cornerRadius(15)
                                         .padding(5)
                                     
                                     if adPref.contains(3) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 75, height: 100)
+                                            .frame(width: 50, height: 75)
                                             .scaledToFill()
                                     }
                                 }
@@ -143,16 +135,16 @@ struct SignUpView9: View {
                             }) {
                                 ZStack {
                                     Text("Fashion")
-                                        .frame(width: 150, height: 200)
+                                        .frame(width: 150, height: 150)
                                         .foregroundColor(.white)
-                                        .background(adPref.contains(4) ? Color(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)) : Color(#colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1)))
+                                        .background(ColorManager.orange5)
                                         .cornerRadius(15)
                                         .padding(5)
                                     
                                     if adPref.contains(4) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 75, height: 100)
+                                            .frame(width: 50, height: 75)
                                             .scaledToFill()
                                     }
                                 }
@@ -165,16 +157,16 @@ struct SignUpView9: View {
                             }) {
                                 ZStack {
                                     Text("Skateboarding")
-                                        .frame(width: 150, height: 200)
+                                        .frame(width: 150, height: 150)
                                         .foregroundColor(.white)
-                                        .background(adPref.contains(5) ? Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)) : Color(#colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1)))
+                                        .background(ColorManager.orange5)
                                         .cornerRadius(15)
                                         .padding(5)
                                     
                                     if adPref.contains(5) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 75, height: 100)
+                                            .frame(width: 50, height: 75)
                                             .scaledToFill()
                                     }
                                 }
@@ -185,16 +177,16 @@ struct SignUpView9: View {
                             }) {
                                 ZStack {
                                     Text("Health / Nutrition")
-                                        .frame(width: 150, height: 200)
+                                        .frame(width: 150, height: 150)
                                         .foregroundColor(.white)
-                                        .background(adPref.contains(6) ? Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)) : Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
+                                        .background(ColorManager.purple4)
                                         .cornerRadius(15)
                                         .padding(5)
                                     
                                     if adPref.contains(6) {
                                         Image("check")
                                             .resizable()
-                                            .frame(width: 75, height: 100)
+                                            .frame(width: 50, height: 75)
                                             .scaledToFill()
                                     }
                                 }
@@ -206,22 +198,14 @@ struct SignUpView9: View {
                                 signUp()
                             }
                         }) {
-                            Text("SUBMIT")
-                                .font(.system(size: 20, weight: .semibold))
-                                .foregroundColor(.white)
-                                .frame(maxWidth: 200)
-                                .frame(height: 60)
-                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                .cornerRadius(20)
-                                .padding(30)
-                         
-                            Text("You can always revise your selections in Settings.")
-                                .font(.system(size: 15, weight: .light))
-                                .italic()
-                                .foregroundColor(.black)
-                            
-                            
+                            CustomButtonInterior(text: "Submit", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
                         }
+                        
+                        Text("You can always revise your selections in Settings.")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(ColorManager.grey4)
+
                     }
                 }
                 

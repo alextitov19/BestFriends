@@ -48,9 +48,9 @@ struct WelcomeView: View {
                 }) {
                     Text("SIGN UP")
                         .frame(maxWidth: .infinity, minHeight: 60)
-                        .font(.system(size: 20, weight: .bold))
-                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9)))
-                        .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundColor(ColorManager.purple5)
+                        .background(ColorManager.grey1)
                         .cornerRadius(20)
                 }
                 .padding(.horizontal, 30)
@@ -62,8 +62,8 @@ struct WelcomeView: View {
                 }) {
                     Text("LOGIN")
                         .frame(maxWidth: .infinity, minHeight: 60)
-                        .font(.system(size: 20, weight: .bold))
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 20, weight: .semibold))
+                        .foregroundColor(ColorManager.grey1)
                         .overlay(
                             RoundedRectangle(cornerRadius: 20)
                                 .stroke(Color.white, lineWidth: 1)
