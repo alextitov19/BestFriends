@@ -82,6 +82,8 @@
 		7A5EFEDF26B4A2EC00281DDD /* amplify/generated/models/AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFECA26B4A2EC00281DDD /* amplify/generated/models/AmplifyModels.swift */; };
 		7A5EFEE426B4A2EC00281DDD /* amplify/generated/models/ManagementDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EFECF26B4A2EC00281DDD /* amplify/generated/models/ManagementDocument.swift */; };
 		7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */; };
+		7A655E5B2745FBF3000ADDBB /* ForgotUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A655E5A2745FBF3000ADDBB /* ForgotUsername.swift */; };
+		7A655E5D2745FC27000ADDBB /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A655E5C2745FC27000ADDBB /* ForgotPassword.swift */; };
 		7A68B67B26A7296D00EF20E3 /* UserSubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68B67A26A7296D00EF20E3 /* UserSubscriptionService.swift */; };
 		7A6A4CDA262B658200561D87 /* MessageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A4CD9262B658200561D87 /* MessageDataSource.swift */; };
 		7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */; };
@@ -275,6 +277,8 @@
 		7A5EFECE26B4A2EC00281DDD /* amplify/generated/models/InvitedRoom+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/InvitedRoom+Schema.swift"; sourceTree = "<group>"; };
 		7A5EFECF26B4A2EC00281DDD /* amplify/generated/models/ManagementDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/ManagementDocument.swift; sourceTree = "<group>"; };
 		7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		7A655E5A2745FBF3000ADDBB /* ForgotUsername.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotUsername.swift; sourceTree = "<group>"; };
+		7A655E5C2745FC27000ADDBB /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		7A68B67A26A7296D00EF20E3 /* UserSubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSubscriptionService.swift; sourceTree = "<group>"; };
 		7A69EA2F26AA65AB00A54B6F /* ShakingCool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShakingCool.swift; path = amplify/generated/models/ShakingCool.swift; sourceTree = SOURCE_ROOT; };
 		7A69EA3026AA65AB00A54B6F /* ShakingCool+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ShakingCool+Schema.swift"; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = SOURCE_ROOT; };
@@ -726,6 +730,8 @@
 				7A23683226CB1DAC00C56A97 /* Sign Up */,
 				7A7A198626CACEAE0018D957 /* WelcomeView.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
+				7A655E5A2745FBF3000ADDBB /* ForgotUsername.swift */,
+				7A655E5C2745FC27000ADDBB /* ForgotPassword.swift */,
 			);
 			path = Registration2;
 			sourceTree = "<group>";
@@ -1233,6 +1239,7 @@
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				7A5EFED426B4A2EC00281DDD /* amplify/generated/models/InvitedRoom.swift in Sources */,
 				7AF35CB42699EB6700A396CE /* Helper.swift in Sources */,
+				7A655E5B2745FBF3000ADDBB /* ForgotUsername.swift in Sources */,
 				7AC8A23F26578C3E001812EF /* LocationManager.swift in Sources */,
 				7A23683426CB1DD300C56A97 /* SignUpView1.swift in Sources */,
 				7A48CCB7271A32360034D85A /* SmileNote.swift in Sources */,
@@ -1287,6 +1294,7 @@
 				47C93F9EF55FF1D724BD688C /* amplify/generated/models/Advertisement.swift in Sources */,
 				E7E5FF45E31C3479DC7E778B /* amplify/generated/models/AmplifyModels.swift in Sources */,
 				0899627569430D7C5DEB5CE6 /* amplify/generated/models/DeletionRequest+Schema.swift in Sources */,
+				7A655E5D2745FC27000ADDBB /* ForgotPassword.swift in Sources */,
 				7F9CBA6FC495F6892046FFBF /* amplify/generated/models/DeletionRequest.swift in Sources */,
 				07BCB3ED204876463112D1CC /* InvitedRoom+Schema.swift in Sources */,
 				344878345B2D45FE719C4FDE /* amplify/generated/models/InvitedRoom.swift in Sources */,
