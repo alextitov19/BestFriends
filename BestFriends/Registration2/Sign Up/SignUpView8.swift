@@ -103,6 +103,7 @@ struct SignUpView8: View {
                                 .foregroundColor(ColorManager.grey4)
                         }
                     }
+                    .pickerStyle(WheelPickerStyle())
                     .foregroundColor(ColorManager.grey4)
                 }
                 
