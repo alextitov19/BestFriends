@@ -58,7 +58,7 @@ struct LoginView: View {
                             isErrorHidden = false
                         }
                     }) {
-                        CustomButtonInterior(text: "Login", color: ColorManager.purple4)
+                        CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
                     }
                     
                     

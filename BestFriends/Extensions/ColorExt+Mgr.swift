@@ -32,6 +32,10 @@ struct ColorManager {
     
     // Negative action/event/warning
     static let red = Color(hex: "#e02b2b")
+    
+    // Color for circles on SignUpViews
+    // This is "purple5" + diffrent alpha
+    static let signUpCircleColor = Color(hex: "#5c46dd", alpha: 0.3)
 }
 
 extension Color {

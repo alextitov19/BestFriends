@@ -10,20 +10,22 @@ import SwiftUI
 struct CustomButtonInterior: View {
     
     let text: String
-    let color: Color
+    let backgroundColor: Color
+    let textColor: Color
 
-    init(text: String, color: Color) {
+    init(text: String, backgroundColor: Color, textColor: Color) {
         self.text = text
-        self.color = color
+        self.backgroundColor = backgroundColor
+        self.textColor = textColor
     }
 
     var body: some View {
             Text(text)
                 .font(.system(size: 20, weight: .semibold))
-                .foregroundColor(ColorManager.grey1)
+                .foregroundColor(textColor)
                 .frame(maxWidth: 200)
                 .frame(height: 60)
-                .background(color)
+                .background(backgroundColor)
                 .cornerRadius(20)
                 .padding(30)
         }

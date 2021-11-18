@@ -86,7 +86,7 @@ struct SignUpView5: View {
                 Button(action: {
                     checkFields()
                 }) {
-                    CustomButtonInterior(text: "Sign Up", color: ColorManager.purple4)
+                    CustomButtonInterior(text: "Sign Up", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
                 }
                 
                 Text("By signing up, you agree to our")
