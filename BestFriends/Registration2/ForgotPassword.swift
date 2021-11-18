@@ -16,10 +16,18 @@ struct ForgotPassword: View {
         NavigationView {
             ZStack {
                 
-                Image("settingsBackground")
-                    .resizable()
+                ColorManager.purple1
                     .ignoresSafeArea()
-                    .scaledToFill()
+                
+                Circle()
+                    .frame(width: 400, height: 400)
+                    .foregroundColor(ColorManager.purple3)
+                    .offset(x: 200, y: -400)
+                
+                Circle()
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(ColorManager.purple3)
+                    .offset(x: -200, y: 400)
                 
                 VStack {
                     
@@ -65,13 +73,8 @@ struct ForgotPassword: View {
                             readyToProceed = true
                         }
                     }) {
-                        Text("Next")
-                            .font(.title)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                            .frame(width: 200, height: 50)
-                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                            .cornerRadius(25)
-                        
+                        CustomButtonInterior(text: "Next", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
+
                     }
                     
                     Spacer()
@@ -97,11 +100,18 @@ struct ConfirmNewPassword: View {
     var body: some View {
         NavigationView {
             ZStack {
-                
-                Image("settingsBackground")
-                    .resizable()
+                ColorManager.purple1
                     .ignoresSafeArea()
-                    .scaledToFill()
+                
+                Circle()
+                    .frame(width: 400, height: 400)
+                    .foregroundColor(ColorManager.purple3)
+                    .offset(x: 200, y: -400)
+                
+                Circle()
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(ColorManager.purple3)
+                    .offset(x: -200, y: 400)
                 
                 VStack {
                     
@@ -172,12 +182,8 @@ struct ConfirmNewPassword: View {
                             UserManager().confirmResetPassword(username: username, newPassword: password, confirmationCode: code)
                         }
                     }) {
-                        Text("Submit")
-                            .font(.title)
-                            .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                            .frame(width: 200, height: 50)
-                            .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                            .cornerRadius(25)
+                        CustomButtonInterior(text: "Submit", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
+
                         
                     }
                     

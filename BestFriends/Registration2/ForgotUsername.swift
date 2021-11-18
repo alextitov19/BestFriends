@@ -18,10 +18,18 @@ struct ForgotUsername: View {
     var body: some View {
         
         ZStack {
-            Image("settingsBackground")
-                .resizable()
+            ColorManager.purple1
                 .ignoresSafeArea()
-                .scaledToFill()
+            
+            Circle()
+                .frame(width: 400, height: 400)
+                .foregroundColor(ColorManager.purple3)
+                .offset(x: 200, y: -400)
+            
+            Circle()
+                .frame(width: 300, height: 300)
+                .foregroundColor(ColorManager.purple3)
+                .offset(x: -200, y: 400)
             
             
             
@@ -82,12 +90,8 @@ struct ForgotUsername: View {
                 Button(action: {
                     showUsername()
                 }) {
-                    Text("Submit")
-                        .frame(width: 150, height: 50, alignment: .center)
-                        .font(.system(size: 24, weight: .light))
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .background(Color(#colorLiteral(red: 0.046738334, green: 0.4033712745, blue: 0.9790328145, alpha: 1)))
-                        .cornerRadius(25)
+                    CustomButtonInterior(text: "Submit", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
+
                 }
                 .padding(120)
             }
