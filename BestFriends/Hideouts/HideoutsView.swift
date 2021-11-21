@@ -49,7 +49,7 @@ struct HideoutsView: View {
                 )
             
             
-            Text("These points of light are others everywhere turning on a tiny light in a dark room on a difficult day - you're not alone.")
+            Text("These points of light are others everywhere that by enteing Hideouts have turned on a tiny light in a dark room - you're not alone on a hard day.")
                 .font(.system(size: 16, weight: .medium))
                 
 //                .scaleEffect(isAtMaxScale ? 0.3 : 1.1)
