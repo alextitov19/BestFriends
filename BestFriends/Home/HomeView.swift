@@ -200,6 +200,9 @@ struct HomeView: View {
                     }
                     .actionSheet(isPresented: $showingActionSheet) {
                         ActionSheet(title: Text("Add up to 5 Friends with secret QR codes"), message: Text("There's a couple extra steps - but we keep trolls and unwanted DMs & images out. There's NO user search - strangers can't find you, EVER!"), buttons: [
+                           
+                            .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
+                            
                             .default(Text("Get my QR code")) { showMyQR() },
                             .default(Text("My Gallery")) {
                                 let photos = PHPhotoLibrary.authorizationStatus()
@@ -214,9 +217,7 @@ struct HomeView: View {
                                     self.showingImagePicker = true
                                 }
                             },
-                            // Rob added a third option in the Add Friends popup on Landing page
-                            .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
-                            //
+                            
                             .cancel()
                         ])
                     }
