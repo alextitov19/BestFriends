@@ -177,9 +177,9 @@ struct HomeView: View {
                     }) {
                         Image("addFriend")
                             .resizable()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 135, height: 135)
                             .scaledToFill()
-                            .scaleEffect(isAtMaxScale ? 0.5 : 1)
+                            .scaleEffect(isAtMaxScale ? 0.3 : 1.1)
                             .padding(10)
                             .onAppear {
                                 if USS.user.friends.count < 1 {
