@@ -57,7 +57,7 @@ struct ChatView: View {
     var user: User
     var room: Room
     var lastRead: Int?
-    var timer = Timer.publish(every: 600, on: .main, in: .common).autoconnect()
+    var timer = Timer.publish(every: 60, on: .main, in: .common).autoconnect()
     private let initialTime = Date()
     
     @State private var adButtonOffset: Float = 0
