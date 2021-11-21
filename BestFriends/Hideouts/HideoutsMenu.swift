@@ -26,20 +26,31 @@ struct HideoutsMenu : View {
             
             VStack {
                 Spacer()
-                
+                Spacer().frame(height: 30)
                 Text("Hideouts Gear")
                     .font(.system(size: 40, weight: .bold))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
 //                    .padding(.all, 30)
                 
-                Text("Need a break from all the noise and drama - Welcome to Hideouts. We can help you find that smile of yours!")
-                    .font(.system(size: 15, weight: .medium))
-                    .italic()
+                Text("Need a break from all the noise and drama.")
+                    .font(.system(size: 18, weight: .medium))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .padding(.all, 30)
+                    .padding(.all, 2)
                
+                Text("We can help you find that smile of yours!")
+                    .font(.system(size: 25, weight: .medium))
+                  
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.all, 20)
+                
+             
+               
+                
+                VStack {
+                
                 Button(action: {
                     sessionManager.showShakingCool()
                 }) {
@@ -60,14 +71,15 @@ struct HideoutsMenu : View {
                             .frame(width: 300)
                 }
                 
-                
+                    Spacer().frame(height: 50)
                 Text("Perfect of a day where you feel like lying in bed, curled up in a ball with the covers pulled over your head.")
-                    .font(.system(size: 15, weight: .medium))
-                    .italic()
+                    .font(.system(size: 16, weight: .medium))
+                   
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.all, 30)
                 
+              
                 Spacer()
                 
                 HStack {
@@ -102,4 +114,5 @@ struct HideoutsMenu : View {
             }
         }
     }
+}
 }
