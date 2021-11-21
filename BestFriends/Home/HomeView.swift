@@ -299,7 +299,7 @@ struct HomeView: View {
             
             if thereAlreadyisARoom {
                 VStack {
-                    Text("There already is a chat room with all the friends you've selected. Do you want to use that one or make a new chat room?")
+                    Text("Do you want to start a new chat room or use existing room with the friends you just selected?")
                         .foregroundColor(.white)
                         .font(.system(size: 22, weight: .thin))
                         .multilineTextAlignment(.center)
@@ -312,7 +312,7 @@ struct HomeView: View {
                                 inviteNewRoom()
                             }
                         }) {
-                            Text("Make new")
+                            Text("Start New")
                                 .frame(width: 150, height: 50, alignment: .center)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 20))
@@ -328,7 +328,7 @@ struct HomeView: View {
                                 inviteOldRoom(roomid: existingRoomId)
                             }
                         }) {
-                            Text("Use existing")
+                            Text("Use Existing")
                                 .frame(width: 150, height: 50, alignment: .center)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 20))
