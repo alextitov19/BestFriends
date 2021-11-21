@@ -33,7 +33,7 @@ struct HideoutsMenu : View {
                     .multilineTextAlignment(.center)
 //                    .padding(.all, 30)
                 
-                Text("Just get away from it all for a minute. Or on a day where you feel like lying in bed, curled up in a ball with the covers pulled over your head - we can help you find that smile of yours!")
+                Text("Need a break from all the noise and drama - Welcome to Hideouts. We can help you find that smile of yours!")
                     .font(.system(size: 15, weight: .medium))
                     .italic()
                     .foregroundColor(.white)
@@ -59,6 +59,14 @@ struct HideoutsMenu : View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 300)
                 }
+                
+                
+                Text("Perfect of a day where you feel like lying in bed, curled up in a ball with the covers pulled over your head.")
+                    .font(.system(size: 15, weight: .medium))
+                    .italic()
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.all, 30)
                 
                 Spacer()
                 
