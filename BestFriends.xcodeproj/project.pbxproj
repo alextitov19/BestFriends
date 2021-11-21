@@ -116,6 +116,9 @@
 		7A9B09DD26D04C67002164D4 /* SignUpView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B09DC26D04C67002164D4 /* SignUpView5.swift */; };
 		7A9B958826EFFD81001D56E9 /* amplify/generated/models/ShakingCool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957326EFFD81001D56E9 /* amplify/generated/models/ShakingCool.swift */; };
 		7A9B958C26EFFD81001D56E9 /* amplify/generated/models/User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B957726EFFD81001D56E9 /* amplify/generated/models/User+Schema.swift */; };
+		7A9F09A9274B01B10099B30E /* HowToAddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F09A8274B01B10099B30E /* HowToAddFriends.swift */; };
+		7A9F09AB274B01C70099B30E /* WhatAreTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F09AA274B01C70099B30E /* WhatAreTokens.swift */; };
+		7A9F09AD274B01D40099B30E /* WhatIsHideouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F09AC274B01D40099B30E /* WhatIsHideouts.swift */; };
 		7AA200FD2635C6EF00C9F00C /* RoomDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */; };
 		7AA2010F2635D21100C9F00C /* RoomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2010E2635D21100C9F00C /* RoomsView.swift */; };
 		7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201102635D2E100C9F00C /* RoomRow.swift */; };
@@ -341,6 +344,9 @@
 		7A9B957526EFFD81001D56E9 /* amplify/generated/models/AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		7A9B957626EFFD81001D56E9 /* amplify/generated/models/ShakingCool+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/ShakingCool+Schema.swift"; sourceTree = "<group>"; };
 		7A9B957726EFFD81001D56E9 /* amplify/generated/models/User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "amplify/generated/models/User+Schema.swift"; sourceTree = "<group>"; };
+		7A9F09A8274B01B10099B30E /* HowToAddFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToAddFriends.swift; sourceTree = "<group>"; };
+		7A9F09AA274B01C70099B30E /* WhatAreTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatAreTokens.swift; sourceTree = "<group>"; };
+		7A9F09AC274B01D40099B30E /* WhatIsHideouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatIsHideouts.swift; sourceTree = "<group>"; };
 		7AA200FC2635C6EF00C9F00C /* RoomDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDataSource.swift; sourceTree = "<group>"; };
 		7AA2010E2635D21100C9F00C /* RoomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsView.swift; sourceTree = "<group>"; };
 		7AA201102635D2E100C9F00C /* RoomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRow.swift; sourceTree = "<group>"; };
@@ -683,6 +689,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7A9F09A7274B01790099B30E /* Walkthrough */,
 				7A22A574274416C200FB6B4F /* Extensions */,
 				7A46D14126D5A31700255A5C /* Hideouts */,
 				7AED44FB26473F7100944708 /* AppDelegate.swift */,
@@ -791,6 +798,16 @@
 				CF05A8CB26B4239B009618E6 /* bff.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		7A9F09A7274B01790099B30E /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				7A9F09A8274B01B10099B30E /* HowToAddFriends.swift */,
+				7A9F09AA274B01C70099B30E /* WhatAreTokens.swift */,
+				7A9F09AC274B01D40099B30E /* WhatIsHideouts.swift */,
+			);
+			path = Walkthrough;
 			sourceTree = "<group>";
 		};
 		7AA200FB2635C6D100C9F00C /* Room */ = {
@@ -1202,6 +1219,7 @@
 				7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */,
 				D1949C412644FD4F00FDB6C5 /* RemoveFriend.swift in Sources */,
 				CF95B6A026F677E2005B616B /* TermsOfService.swift in Sources */,
+				7A9F09A9274B01B10099B30E /* HowToAddFriends.swift in Sources */,
 				7AEFD543262CED3A00247757 /* QRCodeView.swift in Sources */,
 				7AA200FD2635C6EF00C9F00C /* RoomDataSource.swift in Sources */,
 				D1D27D3A264303E300BDA75F /* InfoPages.swift in Sources */,
@@ -1212,6 +1230,7 @@
 				7A7AEF3026C5D21200DE8344 /* TermsConditions.swift in Sources */,
 				7A1521C2262DE5BC00EC15B4 /* UserDataSource.swift in Sources */,
 				D15CCD6F2647A67400BFE179 /* DeleteMyAccount.swift in Sources */,
+				7A9F09AD274B01D40099B30E /* WhatIsHideouts.swift in Sources */,
 				7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */,
 				7A4E32B526A0783300202BB7 /* SettingsInfoPages.swift in Sources */,
 				7A7A198726CACEAE0018D957 /* WelcomeView.swift in Sources */,
@@ -1246,6 +1265,7 @@
 				7A48CCBA271A32360034D85A /* ManagementDocument.swift in Sources */,
 				7A417EC8265ED52900E95364 /* AdDataSource.swift in Sources */,
 				7A68B67B26A7296D00EF20E3 /* UserSubscriptionService.swift in Sources */,
+				7A9F09AB274B01C70099B30E /* WhatAreTokens.swift in Sources */,
 				7A5EFED526B4A2EC00281DDD /* amplify/generated/models/ManagementDocument+Schema.swift in Sources */,
 				7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */,
 				7AD10455265AB9BE007627FD /* DeviceShakeViewModifier.swift in Sources */,
