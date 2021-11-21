@@ -47,7 +47,7 @@ struct SmieNotePopover: View {
                         .frame(height: 25)
                     
                     
-                    Text("BlueMode coming soon!")
+                    Text("Hug-it-Out coming soon!")
                         .font(.system(size: 65))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
