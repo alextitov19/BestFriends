@@ -466,7 +466,7 @@ struct ChatView: View {
             
             if newPinPopupShowing {
                 VStack {
-                    Text("Set up a 4 digit pin to use Hide Chat!")
+                    Text("Set up 4 digit pin to Restore Your Chat Messages!")
                         .font(.system(size: 20, weight: .light))
                         .foregroundColor(.white)
                         .padding(20)
