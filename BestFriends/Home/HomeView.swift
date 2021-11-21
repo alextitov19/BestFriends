@@ -177,9 +177,9 @@ struct HomeView: View {
                     }) {
                         Image("addFriend")
                             .resizable()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 135, height: 135)
                             .scaledToFill()
-                            .scaleEffect(isAtMaxScale ? 0.5 : 1)
+                            .scaleEffect(isAtMaxScale ? 0.3 : 1.1)
                             .padding(10)
                             .onAppear {
                                 if USS.user.friends.count < 1 {
@@ -200,6 +200,9 @@ struct HomeView: View {
                     }
                     .actionSheet(isPresented: $showingActionSheet) {
                         ActionSheet(title: Text("Add up to 5 Friends with secret QR codes"), message: Text("There's a couple extra steps - but we keep trolls and unwanted DMs & images out. There's NO user search - strangers can't find you, EVER!"), buttons: [
+                           
+                            .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
+                            
                             .default(Text("Get my QR code")) { showMyQR() },
                             .default(Text("My Gallery")) {
                                 let photos = PHPhotoLibrary.authorizationStatus()
@@ -214,9 +217,10 @@ struct HomeView: View {
                                     self.showingImagePicker = true
                                 }
                             },
-                            // Rob added a third option in the Add Friends popup on Landing page
-                            .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
-                            //
+                            
+                                .default(Text("When finished - swipe 'Left' to enter Chat")) { self.showingAddFriendInstructions = true },
+                            
+                            
                             .cancel()
                         ])
                     }
@@ -295,7 +299,7 @@ struct HomeView: View {
             
             if thereAlreadyisARoom {
                 VStack {
-                    Text("There already is a chat room with all the friends you've selected. Do you want to use that one or make a new chat room?")
+                    Text("Do you want to start a new chat room or use existing room with the friends you just selected?")
                         .foregroundColor(.white)
                         .font(.system(size: 22, weight: .thin))
                         .multilineTextAlignment(.center)
@@ -308,7 +312,7 @@ struct HomeView: View {
                                 inviteNewRoom()
                             }
                         }) {
-                            Text("Make new")
+                            Text("Start New")
                                 .frame(width: 150, height: 50, alignment: .center)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 20))
@@ -324,7 +328,7 @@ struct HomeView: View {
                                 inviteOldRoom(roomid: existingRoomId)
                             }
                         }) {
-                            Text("Use existing")
+                            Text("Use Existing")
                                 .frame(width: 150, height: 50, alignment: .center)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 20))

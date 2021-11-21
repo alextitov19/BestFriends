@@ -62,7 +62,7 @@ struct LoginView: View {
                     }
                     
                     
-                    Text("Sign Up Instead")
+                    Text("Sign Up")
                         .underline()
                         .frame(width: 150, height: 30)
                         .foregroundColor(ColorManager.purple5)

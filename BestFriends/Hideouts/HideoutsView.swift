@@ -15,7 +15,7 @@ struct HideoutsView: View {
     @State private var startPos : CGPoint = .zero
     @State private var isSwipping = true
     @State private var showingPopup = true
-
+//    @State private var isAtMaxScale = false
     
     var body: some View {
         ZStack {
@@ -47,6 +47,29 @@ struct HideoutsView: View {
                                 self.isSwipping.toggle()
                             }
                 )
+            
+            
+            Text("These points of light are others everywhere that by enteing Hideouts have turned on a tiny light in a dark room - you're not alone on a hard day.")
+                .font(.system(size: 16, weight: .medium))
+                
+//                .scaleEffect(isAtMaxScale ? 0.3 : 1.1)
+                .foregroundColor(.white)
+                .multilineTextAlignment(.center)
+                .padding(.all, 100)
+            
+            
+//            Image("addFriend")
+//                .resizable()
+//                .frame(width: 135, height: 135)
+//                .scaledToFill()
+//                .scaleEffect(isAtMaxScale ? 0.3 : 1.1)
+//                .padding(10)
+//                .onAppear {
+//                    if USS.user.friends.count < 1 {
+//                        withAnimation(self.animation, {
+//                            self.isAtMaxScale.toggle()
+
+            
             
             
             if showingMenu {

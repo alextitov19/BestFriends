@@ -54,14 +54,24 @@ struct ShakingCoolView: View {
                 }
                 
                 VStack {
-                    Text("Add 2 images that bring a smile on bad days. Add one image per friend they will see when 'shaking' their phone on Homepage.")
+                    Text("Some images just make you SMILE. Now just 'shake' your phone and they popup.")
                         .font(.system(size: 15))
                         .fontWeight(.regular)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
-                        .frame(width: 375, height: 75, alignment: .center)
+                        .frame(width: 375, height: 50, alignment: .center)
                     
-                    Spacer().frame(height: 10)
+                    Text("Add 2 images for youself and one for each friend.")
+                        .font(.system(size: 15))
+                        .fontWeight(.regular)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 375, height: 25, alignment: .center)
+                    
+                    
+                    
+                    
+                    Spacer().frame(height: 2)
                 
          
                     
@@ -98,7 +108,7 @@ struct ShakingCoolView: View {
                     .frame(height: 350)
                     
                     
-                    Text("Tap an image to delete it")
+                    Text("Tap image to delete")
                         .italic()
                         .font(.system(size: 20, weight: .thin))
                         .foregroundColor(.white)

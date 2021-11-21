@@ -34,8 +34,8 @@ struct ChatRoomsView: View {
             
             VStack {
                 HStack {
-                    Text("Chat")
-                        .font(.system(size: 40, weight: .bold))
+                    Text("My Private Chat Rooms")
+                        .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.white)
                         .padding(.leading, 20)
 
@@ -72,7 +72,7 @@ struct ChatRoomsView: View {
                     
                     Image("hideouts")
                     .resizable()
-                    .frame(width: 60, height: 60)
+                    .frame(width: 50, height: 50)
                     .scaledToFill()
                     .onTapGesture {
                         sessionManager.showHideouts()
