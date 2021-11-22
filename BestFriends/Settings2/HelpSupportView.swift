@@ -32,7 +32,7 @@ struct HelpSupportView: View {
                         
                         Spacer()
                         
-                        Text("Delete Friends / Report Abuse / Tokens")
+                        Text("Delete Friends & Report Abuse")
                             .font(.system(size: 30))
                             .offset(x: -25)
                         
@@ -99,33 +99,30 @@ struct HelpSupportView: View {
                 }
                 }
                 
-                Divider()
-                
-                NavigationLink(
-                    destination: Tokens(),
-                    label: {
-                HStack {
-                    Text("Earn Tokens")
-                        .font(.system(size: 20))
-                        .foregroundColor(.black)
-                    
-                    Spacer()
-                
-                    Image("arrowRight")
-                        .resizable()
-                        .frame(width: 25, height: 25)
-                        .scaledToFit()
-                        .colorInvert()
-                    
+//                Divider()
+//
+//                NavigationLink(
+//                    destination: Tokens(),
+//                    label: {
+//                HStack {
+//                    Text("Earn Tokens")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(.black)
+//
+//                    Spacer()
+//
+//                    Image("arrowRight")
+//                        .resizable()
+//                        .frame(width: 25, height: 25)
+//                        .scaledToFit()
+//                        .colorInvert()
+//
                 Spacer()
                 
             }
             .padding(30)
             .navigationBarHidden(true)
         }
-   ) }
-    
+    } 
 }
-    }
-    }
 
