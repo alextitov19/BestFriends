@@ -218,7 +218,7 @@ struct HomeView: View {
                                 }
                             },
                             
-                                .default(Text("When finished - swipe 'Left' to enter Chat")) { self.showingAddFriendInstructions = true },
+//                                .default(Text("When finished - swipe 'Left' to enter Chat")) { self.showingAddFriendInstructions = true },
                             
                             
                             .cancel()
