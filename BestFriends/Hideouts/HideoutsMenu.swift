@@ -33,12 +33,12 @@ struct HideoutsMenu : View {
                     .multilineTextAlignment(.center)
 //                    .padding(.all, 30)
                 
-                Text("Need a break from all the noise and drama.")
-                    .font(.system(size: 18, weight: .medium))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.all, 2)
-               
+//                Text("Need a break from all the noise and drama.")
+//                    .font(.system(size: 18, weight: .medium))
+//                    .foregroundColor(.white)
+//                    .multilineTextAlignment(.center)
+//                    .padding(.all, 2)
+//
                 Text("We can help you find that smile of yours!")
                     .font(.system(size: 25, weight: .medium))
                   
@@ -71,15 +71,30 @@ struct HideoutsMenu : View {
                             .frame(width: 300)
                 }
                 
-                    Spacer().frame(height: 50)
-                Text("Perfect of a day where you feel like lying in bed, curled up in a ball with the covers pulled over your head.")
-                    .font(.system(size: 16, weight: .medium))
-                   
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .padding(.all, 30)
-                
-              
+                    Spacer().frame(height: 75)
+//                Text("Perfect of a day where you feel like lying in bed, curled up in a ball with the covers pulled over your head.")
+//                    .font(.system(size: 16, weight: .medium))
+//
+//                    .foregroundColor(.white)
+//                    .multilineTextAlignment(.center)
+//                    .padding(.all, 30)
+//
+//
+//                    Text("These points of light are others everywhere that by enteing Hideouts have turned on a tiny light in a dark room - you're not alone on a hard day.")
+//                        .font(.system(size: 16, weight: .medium))
+//
+//        //                .scaleEffect(isAtMaxScale ? 0.3 : 1.1)
+//                        .foregroundColor(.white)
+//                        .multilineTextAlignment(.center)
+//                        .padding(.all, 100)
+//
+                    
+                    Text("These tiny blinking stars are others like you that have entered Hideouts - you're no longer alone on bad days.")
+                        .font(.system(size: 23, weight: .light))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 30)
+                    
                 Spacer()
                 
                 HStack {

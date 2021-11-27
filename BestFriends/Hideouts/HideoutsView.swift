@@ -49,14 +49,14 @@ struct HideoutsView: View {
                 )
             
             
-            Text("These points of light are others everywhere that by enteing Hideouts have turned on a tiny light in a dark room - you're not alone on a hard day.")
-                .font(.system(size: 16, weight: .medium))
-                
-//                .scaleEffect(isAtMaxScale ? 0.3 : 1.1)
-                .foregroundColor(.white)
-                .multilineTextAlignment(.center)
-                .padding(.all, 100)
-            
+//            Text("These points of light are others everywhere that by enteing Hideouts have turned on a tiny light in a dark room - you're not alone on a hard day.")
+//                .font(.system(size: 16, weight: .medium))
+//
+////                .scaleEffect(isAtMaxScale ? 0.3 : 1.1)
+//                .foregroundColor(.white)
+//                .multilineTextAlignment(.center)
+//                .padding(.all, 100)
+//
             
 //            Image("addFriend")
 //                .resizable()
