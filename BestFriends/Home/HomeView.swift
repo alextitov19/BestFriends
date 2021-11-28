@@ -192,7 +192,7 @@ struct HomeView: View {
                                 QRCodeView(image: myQRCode)
                             }
                             .sheet(isPresented: $showingAddFriendInstructions) {
-                                AddFriendSteps()
+                                HowToAddFriends()
                             }
                             .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
                                 ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
