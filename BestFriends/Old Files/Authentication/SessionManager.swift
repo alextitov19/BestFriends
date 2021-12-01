@@ -96,14 +96,11 @@ final class SessionManager: ObservableObject {
     }
     
     func signUp(username: String, email: String, password: String) {
-        let attributes = [AuthUserAttribute(.email, value: email)]
-        let options = AuthSignUpRequest.Options(userAttributes: attributes)
+//        let attributes = [AuthUserAttribute(.email, value: email)]
+//        let options = AuthSignUpRequest.Options(userAttributes: attributes)
         
-        _ = Amplify.Auth.signUp(
-            username: username,
-            password: password,
-            options: options
-        ) { [weak self] result in
+        
+        _ = Amplify.Auth.signUp(username: username, password: password) { [weak self] result in
             
             switch result {
             
@@ -114,11 +111,17 @@ final class SessionManager: ObservableObject {
                 case .done:
                     print("Finished sign up")
                     
-                case .confirmUser(let details, _):
-                    print("The details are: ", details ?? "no details")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        print("Logging in after signup")
+                        self?.login(username: username, password: password)
+                    }
                     
-                    DispatchQueue.main.async {
-                        self?.appState = .confirmationCode(username: username, password: password)
+                case .confirmUser(let details, _):
+                    print("The details are: ", details.debugDescription ?? "no details")
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        print("Logging in after signup")
+                        self?.login(username: username, password: password)
                     }
                 }
                 
@@ -130,7 +133,7 @@ final class SessionManager: ObservableObject {
         }
     }
     
-    func confirm(username: String, password: String, code: String) {
+    func confirm(username: String, password: String, code: String) {        
         _ = Amplify.Auth.confirmSignUp(
             for: username,
             confirmationCode: code
