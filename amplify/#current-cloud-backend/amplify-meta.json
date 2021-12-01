@@ -12,7 +12,43 @@
       "AmplifyAppId": "d1gbl1lgbi3104"
     }
   },
-  "auth": {},
+  "auth": {
+    "bestfriendsaa01a2ce": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "loginMechanisms": [
+          "PREFERRED_USERNAME"
+        ],
+        "signupAttributes": [],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-32557-deployment/amplify-cfn-templates/auth/bestfriendsaa01a2ce-cloudformation-template.yml",
+        "logicalId": "authbestfriendsaa01a2ce"
+      },
+      "lastPushTimeStamp": "2021-12-01T00:47:49.218Z",
+      "output": {
+        "UserPoolId": "us-east-2_P9hyIBx0E",
+        "AppClientIDWeb": "29rf2rnkv40u05u0ej881cfmp1",
+        "AppClientID": "6iaca47oi9ddi6b4sdi74a6bt9",
+        "IdentityPoolId": "us-east-2:6e3f486f-5de0-43ba-8d8b-3252d867244d",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:565456385125:userpool/us-east-2_P9hyIBx0E",
+        "IdentityPoolName": "bestfriendsaa01a2ce_identitypool_aa01a2ce__staging",
+        "UserPoolName": "bestfriendsaa01a2ce_userpool_aa01a2ce"
+      },
+      "lastPushDirHash": "nUNaK44PIDasInjR7t5Iw+m/HJ0="
+    }
+  },
   "api": {
     "bestfriends": {
       "service": "AppSync",
@@ -36,7 +72,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-32557-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apibestfriends"
       },
-      "lastPushTimeStamp": "2021-12-01T00:35:44.101Z",
+      "lastPushTimeStamp": "2021-12-01T00:47:49.211Z",
       "lastPushDirHash": "UTGmADvNf2xOEgXsbhAQJbfkVqw="
     }
   },
@@ -48,7 +84,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-32557-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
         "logicalId": "storagebestfriendsbucket"
       },
-      "lastPushTimeStamp": "2021-12-01T00:35:44.105Z",
+      "lastPushTimeStamp": "2021-12-01T00:47:49.213Z",
       "output": {
         "BucketName": "bestfriends65627c1625d24f0fb55d584ede78693532557-staging",
         "Region": "us-east-2"
@@ -64,7 +100,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-32557-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
         "logicalId": "analyticsbestfriends"
       },
-      "lastPushTimeStamp": "2021-12-01T00:35:44.107Z",
+      "lastPushTimeStamp": "2021-12-01T00:47:49.214Z",
       "output": {
         "appName": "bestfriends-staging",
         "Region": "us-east-1",

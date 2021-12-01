@@ -35,6 +35,38 @@
                 "IdentityManager": {
                     "Default": {}
                 },
+                "CredentialsProvider": {
+                    "CognitoIdentity": {
+                        "Default": {
+                            "PoolId": "us-east-2:6e3f486f-5de0-43ba-8d8b-3252d867244d",
+                            "Region": "us-east-2"
+                        }
+                    }
+                },
+                "CognitoUserPool": {
+                    "Default": {
+                        "PoolId": "us-east-2_P9hyIBx0E",
+                        "AppClientId": "6iaca47oi9ddi6b4sdi74a6bt9",
+                        "Region": "us-east-2"
+                    }
+                },
+                "Auth": {
+                    "Default": {
+                        "authenticationFlowType": "USER_SRP_AUTH",
+                        "loginMechanisms": [
+                            "PREFERRED_USERNAME"
+                        ],
+                        "signupAttributes": [],
+                        "passwordProtectionSettings": {
+                            "passwordPolicyMinLength": 8,
+                            "passwordPolicyCharacters": []
+                        },
+                        "mfaConfiguration": "OFF",
+                        "mfaTypes": [
+                            "SMS"
+                        ]
+                    }
+                },
                 "AppSync": {
                     "Default": {
                         "ApiUrl": "https://ogqlhxbg3fgu5gmzyt27nafiy4.appsync-api.us-east-2.amazonaws.com/graphql",
