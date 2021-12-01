@@ -4,26 +4,6 @@
     "IdentityManager": {
         "Default": {}
     },
-    "CredentialsProvider": {
-        "CognitoIdentity": {
-            "Default": {
-                "PoolId": "us-east-2:83fb15b7-d44e-4308-8e87-35dead05820c",
-                "Region": "us-east-2"
-            }
-        }
-    },
-    "CognitoUserPool": {
-        "Default": {
-            "PoolId": "us-east-2_51IxeCjLU",
-            "AppClientId": "54tcg5vtud87murtvm4lpecdbu",
-            "Region": "us-east-2"
-        }
-    },
-    "Auth": {
-        "Default": {
-            "authenticationFlowType": "USER_SRP_AUTH"
-        }
-    },
     "AppSync": {
         "Default": {
             "ApiUrl": "https://ogqlhxbg3fgu5gmzyt27nafiy4.appsync-api.us-east-2.amazonaws.com/graphql",

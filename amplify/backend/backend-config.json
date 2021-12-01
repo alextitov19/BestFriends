@@ -1,12 +1,5 @@
 {
-  "auth": {
-    "bestfriendsb9303424": {
-      "service": "Cognito",
-      "providerPlugin": "awscloudformation",
-      "dependsOn": [],
-      "customAuth": false
-    }
-  },
+  "auth": {},
   "api": {
     "bestfriends": {
       "service": "AppSync",
