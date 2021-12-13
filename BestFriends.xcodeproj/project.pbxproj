@@ -316,7 +316,7 @@
 		7A724D3326AC7C010079AA85 /* Shake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shake.swift; sourceTree = "<group>"; };
 		7A78232226B1A64800CA76FC /* BroadcastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastView.swift; sourceTree = "<group>"; };
 		7A78232426B2004500CA76FC /* AnalyticsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDataSource.swift; sourceTree = "<group>"; };
-		7A78232826B2419600CA76FC /* blender.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blender.mp4; sourceTree = "<group>"; };
+		7A78232826B2419600CA76FC /* blender.mp4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = blender.mp4; sourceTree = "<group>"; };
 		7A78232926B2419600CA76FC /* bull.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bull.mp4; sourceTree = "<group>"; };
 		7A78232A26B2419600CA76FC /* phone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = phone.mp4; sourceTree = "<group>"; };
 		7A78232B26B2419600CA76FC /* pink.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pink.mp4; sourceTree = "<group>"; };
@@ -358,7 +358,7 @@
 		7AC8564126585CD20045D145 /* LiquidSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidSwipe.swift; sourceTree = "<group>"; };
 		7AC8A23E26578C3E001812EF /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriendsRelease.entitlements; sourceTree = "<group>"; };
-		7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "BestFriends/Necessary Files/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7AD02B582744829D00500DD7 /* MainFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MainFont.ttf; sourceTree = "<group>"; };
 		7AD1044F265AB93F007627FD /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		7AD10451265AB948007627FD /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
@@ -671,6 +671,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7AED44FB26473F7100944708 /* AppDelegate.swift */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7A7A198226CACC730018D957 /* Registration */,
@@ -678,15 +679,9 @@
 				7ACF91252767ABE300088ACA /* Chat */,
 				7AF686EF26BC86B800A287C2 /* Settings */,
 				7A6A4D00262B865D00561D87 /* Assets */,
-				7AED44FA2647310700944708 /* BestFriends.entitlements */,
-				7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */,
-				7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */,
-				7A71BD072625292B00E6FA9E /* Info.plist */,
-				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
 				7A7A198526CACD5B0018D957 /* API */,
 				7AF2E2D126AF1CB500A82C6D /* models */,
 				7A7A198326CACCBC0018D957 /* Necessary Files */,
-				7A7A198426CACD1F0018D957 /* Old Files */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
 			);
 			path = BestFriends;
@@ -725,6 +720,11 @@
 		7A7A198326CACCBC0018D957 /* Necessary Files */ = {
 			isa = PBXGroup;
 			children = (
+				7AED44FA2647310700944708 /* BestFriends.entitlements */,
+				7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */,
+				7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */,
+				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
+				7A7A198426CACD1F0018D957 /* Old Files */,
 				7A724D3526AC7C150079AA85 /* Helpers */,
 				7A4E32B626A079F200202BB7 /* Loading.swift */,
 				7A2B1F5C26A645F500EDBEAF /* ThreeCircles.swift */,
@@ -744,7 +744,8 @@
 				7AB62A8326426F7A005A7744 /* OldSettings */,
 				7AE31CBD262A9A7F001EC5A3 /* OldAuthentication */,
 			);
-			path = "Old Files";
+			name = "Old Files";
+			path = "../Old Files";
 			sourceTree = "<group>";
 		};
 		7A7A198526CACD5B0018D957 /* API */ = {
