@@ -307,7 +307,7 @@ struct HomeView: View {
                         BlurView(style: .systemThinMaterialDark)
                             .clipShape(CustomCorner(corners: [.topLeft, .topRight], radius: 30))
                         
-                        VStack {
+                        VStack(alignment: .center) {
                             
                             Capsule()
                                 .fill(Color.white)
@@ -315,8 +315,19 @@ struct HomeView: View {
                                 .padding(.top)
                             
                             //MARK: ScrollView content...
-                            
-                            
+                             
+                            ForEach(rooms.indices, id: \.self) { index in
+                                
+                                    RoomRow(room: rooms[index])
+                                    .onTapGesture {
+                                        sessionManager.chat(room: rooms[index])
+                                    }
+                                .padding(.horizontal, 15)
+                                .padding(.top, 15)
+                                
+                                CustomDivider(color: Color.white)
+                                    .padding(.horizontal, 30)
+                            }
                         }
                         .frame(maxHeight: .infinity, alignment: .top)
                     }

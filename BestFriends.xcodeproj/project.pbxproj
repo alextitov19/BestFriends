@@ -133,6 +133,7 @@
 		7ACEDEDE2685194C00102E70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */; };
 		7ACF91282767BC9500088ACA /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF91272767BC9500088ACA /* CustomCorner.swift */; };
 		7ACF912A2767BCBE00088ACA /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF91292767BCBE00088ACA /* BlurView.swift */; };
+		7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF912B2767C29A00088ACA /* CustomDivider.swift */; };
 		7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AD02B582744829D00500DD7 /* MainFont.ttf */; };
 		7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1044F265AB93F007627FD /* UIWindowExtension.swift */; };
 		7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD10451265AB948007627FD /* UIDeviceExtension.swift */; };
@@ -363,6 +364,7 @@
 		7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "BestFriends/Necessary Files/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7ACF91272767BC9500088ACA /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		7ACF91292767BCBE00088ACA /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		7ACF912B2767C29A00088ACA /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		7AD02B582744829D00500DD7 /* MainFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MainFont.ttf; sourceTree = "<group>"; };
 		7AD1044F265AB93F007627FD /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		7AD10451265AB948007627FD /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
@@ -583,6 +585,7 @@
 				7A4E336826A0D72600202BB7 /* UIColorExtension.swift */,
 				7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */,
 				7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */,
+				7ACF912B2767C29A00088ACA /* CustomDivider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1315,6 +1318,7 @@
 				7AF686F126BC86C900A287C2 /* Settings2View.swift in Sources */,
 				CF05A8CC26B4239B009618E6 /* bff.swift in Sources */,
 				7A23683626CB324100C56A97 /* SignUpView2.swift in Sources */,
+				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
 				FD920B918716974034DBEB83 /* Advertisement+Schema.swift in Sources */,
 				47C93F9EF55FF1D724BD688C /* amplify/generated/models/Advertisement.swift in Sources */,
 				E7E5FF45E31C3479DC7E778B /* amplify/generated/models/AmplifyModels.swift in Sources */,
