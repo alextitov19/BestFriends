@@ -97,9 +97,11 @@ struct ShakingCoolView: View {
                                     .frame(height: 200)
                                     .cornerRadius(30)
                                     .onTapGesture {
+                                        DispatchQueue.global(qos: .userInitiated).async {
                                         chosenID = shakingCool[index].id
                                         shakingCoolDataSource.deleteImage(id: shakingCool[index].link)
                                         reloadData()
+                                        }
                                     }
                                 
                                 //                            Spacer()
