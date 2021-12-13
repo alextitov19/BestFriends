@@ -11,7 +11,7 @@ import Amplify
 
 struct RoomsView: View {
     
-    @ObservedObject var dataSource = RoomDataSource()
+    var dataSource = RoomDataSource()
     @ObservedObject var USS: UserSubscriptionService
     var userDataSource = UserDataSource()
     
@@ -29,7 +29,7 @@ struct RoomsView: View {
         USS.createSubscription()
         
         dataSource.getRooms()
-        print("Rooms: ", dataSource.rooms)
+        
     }
     
     var body: some View {
@@ -56,65 +56,6 @@ struct RoomsView: View {
                     .foregroundColor(.white)
                     .padding()
                 
-                HStack {
-                    Spacer().frame(width: 20)
-                    
-                    ScrollView(showsIndicators: false) {
-                        LazyVStack {
-                            ForEach(dataSource.rooms) { room in
-                                if room.creatorID == UserDataSource().getCurrentUser().id {
-                                    RoomRow(room: room)
-                                        .onTapGesture {
-                                            loadingShowing = true
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                                sessionManager.chat(room: room)
-                                            }
-                                        }
-                                        .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
-                                        .actionSheet(isPresented: $showingActionSheet) {
-                                            ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room. Since you made it, you can also delete the chat room."), buttons: [
-                                                .default(Text("Leave")) {
-                                                    dataSource.leaveChatRoom(room: room)
-                                                    sessionManager.reloadToPage(page: "rooms")
-                                                },
-                                                .default(Text("Delete")) {
-                                                    dataSource.deleteChatRoom(room: room)
-                                                    sessionManager.reloadToPage(page: "rooms")
-                                                },
-                                                .cancel()
-                                            ])
-                                        }
-                                        .frame(width: 375)
-                                        .scaledToFit()
-                                        .padding()
-                                    
-                                } else {
-                                    RoomRow(room: room)
-                                        .onTapGesture {
-                                            loadingShowing = true
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                                sessionManager.chat(room: room)
-                                            }
-                                        }
-                                        .onLongPressGesture(minimumDuration: 1) { showingActionSheet = true }
-                                        .actionSheet(isPresented: $showingActionSheet) {
-                                            ActionSheet(title: Text("Manage Chat Room"), message: Text("Conversation dried up? You can leave the chat room."), buttons: [
-                                                .default(Text("Leave")) {
-                                                    dataSource.leaveChatRoom(room: room)
-                                                    sessionManager.reloadToPage(page: "rooms")
-                                                },
-                                                .cancel()
-                                            ])
-                                        }
-                                        .frame(width: 375)
-                                        .scaledToFit()
-                                        .padding()
-                                }
-                            }
-                        }
-                    }
-                    Spacer().frame(width: 20)
-                }
                 
                 
                 HStack {

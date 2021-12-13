@@ -16,73 +16,50 @@ import PhotosUI
 
 struct HomeView: View {
     
-    @ObservedObject var USS: UserSubscriptionService
+    // Main components...
+    private var user: User
+    var userDataSource = UserDataSource()
+    @State private var rooms: [Room] = []
+    var roomDataSource = RoomDataSource()
+    @EnvironmentObject var sessionManager: SessionManager
     
+    // Adding a friend...
     @State private var showingSheet = false
     @State private var showingActionSheet = false
     @State private var myQRCode: UIImage = UIImage()
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage?
-    @State private var friendIDs: [String] = []
+    
+    // Inviting to a room
     @State private var membersOfNewRoom: [String] = []
     @State private var stars: [Star] = []
     @State private var invitingFriends = false
-    @State private var isShakingCoolPresented = false
-    @State private var isThreeDotsPresented = false
-    @State private var showingAddFriendInstructions = false
-    @State private var notificationsShowing = false
-    @State private var loadingShowing = false
-    @State private var isAtMaxScale = false
-    @State private var thereAlreadyisARoom = false
-    @State private var existingRoomId = ""
-    @State private var cantAddMoreFriends = false
-    @State private var startPos : CGPoint = .zero
-    @State private var isSwipping = true
-    @State var showingChatRooms = false
-    
-    
-    private var rooms: [Room]
-    
-    private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
-    
-    @State private var selectedFriends = []
-    
     @State var idsToInvite: [String] = []
+    @State private var selectedFriends = []
+
+    // Other popovers...
+    @State private var isShakingCoolPresented = false
+    @State private var showingAddFriendInstructions = false
+    @State private var loadingShowing = false
+//    @State private var thereAlreadyisARoom = false
+//    @State private var existingRoomId = ""
     
-    var userDataSource = UserDataSource()
-    
-    let firebaseDataSource = FirebaseDataSource()
-    
-    @EnvironmentObject var sessionManager: SessionManager
-    
+    // For swiping up/down and scrolling the BlurView
     @State var offset: CGFloat = 0
     @State var lastOffset: CGFloat = 0
     @GestureState var gestureOffset: CGFloat = 0
     
     init() {
-        if userDataSource.doesMyUserExist() {
-            let foo = userDataSource.getCurrentUser()
-            self.USS = UserSubscriptionService(user: foo)
-            self.rooms = []
-            
-            USS.createSubscription()
-            
-            for id in USS.user.rooms {
-                self.rooms.append(RoomDataSource().getRoom(id: id))
-            }
-            
-        } else {
-            fatalError()
-        }
+        self.user = userDataSource.getCurrentUser()
     }
     
     private func reloadData() {
-        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 1.5) {
+        DispatchQueue.global(qos: .userInitiated).async() {
             
             print("Reloading...")
-            getFriends()
+            rooms = RoomDataSource().getRooms()
             userDataSource.setOnlineStatus(isOnline: true)
-            let possibleRooms = USS.user.invitedRooms
+            let possibleRooms = user.invitedRooms
             if possibleRooms.count > 0 {
                 for i in 0..<possibleRooms.count {
                     if possibleRooms[i].timer == nil {
@@ -96,21 +73,19 @@ struct HomeView: View {
                     print("Error fetching FCM registration token: \(error)")
                 } else if let token = token {
                     print("FCM registration token: \(token)")
-                    if USS.user.id != " " {
-                        PushNotificationManager(userID: USS.user.id).updateFirestorePushTokenIfNeeded()
+                    if user.id != " " {
+                        PushNotificationManager(userID: user.id).updateFirestorePushTokenIfNeeded()
                     }
                 }
             }
             
-            if USS.user.friends.count > 0 {
+            if user.friends.count > 0 {
                 DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 1.0) { inviteClicked() }
                 DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 12.0) { inviteClicked() }
             }
         }
     }
-    
-    //    let user: AuthUser
-    
+        
     var body: some View {
         
         ZStack {
@@ -163,14 +138,13 @@ struct HomeView: View {
                                     stars[index].image = Image(uiImage: UIImage(named: "starPurple")!)
                                     stars[index].hidingName = true
                                 }
-                                membersOfNewRoom.append(USS.user.id)
+                                membersOfNewRoom.append(user.id)
                                 
                                 membersOfNewRoom = membersOfNewRoom.uniqued()
                                 
                                 let roomid = userDataSource.checkIfRoomExists(memberids: membersOfNewRoom)
-                                if roomid.count > 0 {
-                                    existingRoomId = roomid
-                                    thereAlreadyisARoom = true
+                                if roomid != nil {
+                                    inviteOldRoom(roomid: roomid!)
                                 } else {
                                     loadingShowing = true
                                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
@@ -202,49 +176,13 @@ struct HomeView: View {
                     }
                     .transition(.scale)
                 }
-                
-                if thereAlreadyisARoom {
-                    HStack {
-                        Button(action: {
-                            loadingShowing = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                inviteNewRoom()
-                            }
-                        }) {
-                            Text("Start New")
-                                .frame(width: 150, height: 50, alignment: .center)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 20))
-                                .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        }
-                        .padding(20)
-                        
-                        Button(action: {
-                            loadingShowing = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                inviteOldRoom(roomid: existingRoomId)
-                            }
-                        }) {
-                            Text("Use Existing")
-                                .frame(width: 150, height: 50, alignment: .center)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 20))
-                                .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        }
-                        .padding(20)
-                    }
-                }
-                
+                                
                 Spacer()
                 
                 //                HStack {
                 //                    Button(action: {
                 //                        //Display invite menu
-                //                        if USS.user.friends.count < 5 {
+                //                        if user.friends.count < 5 {
                 //                            self.showingActionSheet = true
                 //                        } else {
                 //                            cantAddMoreFriends = true
@@ -368,15 +306,12 @@ struct HomeView: View {
             }
             .ignoresSafeArea()
             
-            if cantAddMoreFriends {
-                Text("You can't add more than 5 friends")
-                    .font(.title)
-                    .foregroundColor(.red)
-            }
-            
+            // MARK: Content shows when loading into a chat room
             if loadingShowing == true {
                 ZStack {
-                    Color(#colorLiteral(red: 0.6986119747, green: 0.2623180151, blue: 1, alpha: 1))
+                    Image("purpleBackground")
+                        .resizable()
+                        .scaledToFill()
                         .ignoresSafeArea()
                     
                     Image("FatGuy")
@@ -417,7 +352,7 @@ struct HomeView: View {
         let filter = CIFilter.qrCodeGenerator()
         var QRCode: UIImage?
         
-        let userID = USS.user.id
+        let userID = user.id
         
         let data = Data(userID.utf8)
         filter.setValue(data, forKey: "inputMessage")
@@ -478,30 +413,19 @@ struct HomeView: View {
         print("got the user")
         UserDataSource().addFriend(user: user)
         print("done adding friends")
-        getFriends()
     }
     
-    
-    
-    private func getFriends() {
-        var friends = USS.user.friends
-        friends.shuffle()
-        friendIDs = friends
-        displayStars()
-    }
     
     private func displayStars() {
-        print("Friend count: ", friendIDs.count)
-        
-        for index in friendIDs.indices {
+        for id in user.friends {
             DispatchQueue.main.async() {
                 
-                let user = userDataSource.getUser(id: friendIDs[index])
-                guard let initial = user.lastName.first else { return }
-                var name = user.firstName + " "
+                let friend = userDataSource.getUser(id: id)
+                guard let initial = friend.lastName.first else { return }
+                var name = friend.firstName + " "
                 name.append(initial)
-                let star = Star(id: user.id, name: name)
-                print("Successfully added a star for user: ", user.id)
+                let star = Star(id: friend.id, name: name)
+                print("Successfully added a star for user: ", friend.id)
                 stars.append(star)
             }
         }
@@ -529,16 +453,16 @@ struct HomeView: View {
             
             print("Members of chat room: ", membersOfNewRoom)
             
-            let room = Room(name: name, creatorID: USS.user.id, members: membersOfNewRoom, timeUpdated: Int(Date().timeIntervalSince1970))
+            let room = Room(name: name, creatorID: user.id, members: membersOfNewRoom, timeUpdated: Int(Date().timeIntervalSince1970))
             print("RoomID: ", room.id)
             RoomDataSource().createRoom(room: room)
             userDataSource.addRoom(room: room)
             let messageBody = "Members: " + room.name
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
-                if user.notificationsLP == true && user.id != USS.user.id {
+                if user.notificationsLP == true && user.id != user.id {
                     let token = user.deviceFCMToken
-                    PushNotificationSender().sendPushNotification(token: token, title: "\(USS.user.firstName) needs to talk!", body: messageBody)
+                    PushNotificationSender().sendPushNotification(token: token, title: "\(user.firstName) needs to talk!", body: messageBody)
                 }
             }
             membersOfNewRoom = []
@@ -553,9 +477,9 @@ struct HomeView: View {
             let messageBody = "Members: " + room.name
             for id in membersOfNewRoom {
                 let user = userDataSource.getUser(id: id)
-                if user.notificationsLP == true && user.id != USS.user.id {
+                if user.notificationsLP == true && user.id != user.id {
                     let token = user.deviceFCMToken
-                    PushNotificationSender().sendPushNotification(token: token, title: "\(USS.user.firstName) needs to talk!", body: messageBody)
+                    PushNotificationSender().sendPushNotification(token: token, title: "\(user.firstName) needs to talk!", body: messageBody)
                 }
             }
             membersOfNewRoom = []

@@ -220,21 +220,16 @@ struct UserDataSource {
         
     }
     
-    func checkIfRoomExists(memberids: [String]) -> String {
+    func checkIfRoomExists(memberids: [String]) -> String? {
         let user = getCurrentUser()
         for id in user.rooms {
             let room = RoomDataSource().getRoom(id: id)
-            var counter = 0
-            for member in room.members {
-                if memberids.contains(member) {
-                    counter += 1
-                }
-            }
-            if counter == memberids.count {
+            if room.members.count == memberids.count && room.members.sorted() == memberids.sorted() {
                 return room.id
             }
+            
         }
-        return ""
+        return nil
     }
     
     

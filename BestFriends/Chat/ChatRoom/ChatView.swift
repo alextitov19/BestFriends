@@ -162,10 +162,13 @@ struct ChatView: View {
                             checkHidden()
                         }
                         .onTapGesture {
+                            DispatchQueue.global(qos: .userInitiated).async() {
+
                             let diffrence = Date().timeIntervalSince(initialTime)
                             print("Diffrence: ", diffrence)
                             AnalyticsDataSource().recordChatSessionEvent(duration: diffrence)
-                            sessionManager.showRooms()
+                            sessionManager.home()
+                            }
                         }
                         .onReceive(NotificationCenter.default.publisher(for: UIApplication.userDidTakeScreenshotNotification)) { _ in
                             print("Screenshot taken")

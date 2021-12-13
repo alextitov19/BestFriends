@@ -12,7 +12,6 @@ enum AppState {
     case welcome
     case signUp
     case login
-    case confirmationCode(username: String, password: String)
     case home
     case settings
     case smileNotes
@@ -23,7 +22,6 @@ enum AppState {
     case shakingCool
     case broadcast
     case hideouts
-    case rooms
 }
 
 final class SessionManager: ObservableObject {
@@ -47,12 +45,12 @@ final class SessionManager: ObservableObject {
         appState = .chat(room: room)
     }
     
-    func showSettings() {
-        appState = .settings
+    func home() {
+        appState = .home
     }
     
-    func showRooms() {
-        appState = .rooms
+    func showSettings() {
+        appState = .settings
     }
     
     func reloadToPage(page: String) {

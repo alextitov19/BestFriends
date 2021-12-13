@@ -8,8 +8,7 @@
 import Amplify
 import Foundation
 
-class RoomDataSource: ObservableObject {
-    @Published var rooms = [Room]()
+class RoomDataSource {
 
     func createRoom(room: Room) {
         Amplify.API.mutate(request: .create(room)) { mutationResult in
@@ -31,20 +30,21 @@ class RoomDataSource: ObservableObject {
         }
     }
     
-    func getRooms() {
-        guard let currentID = Amplify.Auth.getCurrentUser()?.username else {return}
+    func getRooms() -> [Room] {
+        guard let currentID = Amplify.Auth.getCurrentUser()?.username else { return []}
         let user = UserDataSource().getUser(id: currentID)
         let roomIDs: [String] = user.rooms 
+        var rooms: [Room] = []
         
         for roomID in roomIDs {
-            self.rooms.append(getRoom(id: roomID))
+            rooms.append(getRoom(id: roomID))
         }
         
-        sortRooms()
+        return sortRooms(rooms: rooms)
     }
     
-    func sortRooms() {
-        rooms = rooms.sorted(by: { $0.timeUpdated > $1.timeUpdated })
+    func sortRooms(rooms: [Room]) -> [Room] {
+        return rooms.sorted(by: { $0.timeUpdated > $1.timeUpdated })
     }
     
     func getRoom(id: String) -> Room {
