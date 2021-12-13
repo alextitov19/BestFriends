@@ -566,6 +566,10 @@
 		7A1DBD602659B1A400EB4B42 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7A22A575274416C200FB6B4F /* ViewExt.swift */,
+				7A22A576274416C200FB6B4F /* TextFieldCustom.swift */,
+				7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */,
+				7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */,
 				7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */,
 				7AD1044F265AB93F007627FD /* UIWindowExtension.swift */,
 				7AD10451265AB948007627FD /* UIDeviceExtension.swift */,
@@ -575,17 +579,6 @@
 				7A4E336826A0D72600202BB7 /* UIColorExtension.swift */,
 				7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */,
 				7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		7A22A574274416C200FB6B4F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				7A22A575274416C200FB6B4F /* ViewExt.swift */,
-				7A22A576274416C200FB6B4F /* TextFieldCustom.swift */,
-				7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */,
-				7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -618,15 +611,7 @@
 			path = Advertisements;
 			sourceTree = "<group>";
 		};
-		7A46D14126D5A31700255A5C /* Hideouts */ = {
-			isa = PBXGroup;
-			children = (
-				7AE384DE26D8769400D4837B /* HideoutsView.swift */,
-			);
-			path = Hideouts;
-			sourceTree = "<group>";
-		};
-		7A6A4CD2262B56E900561D87 /* Chat */ = {
+		7A6A4CD2262B56E900561D87 /* ChatRoom */ = {
 			isa = PBXGroup;
 			children = (
 				7A33B63B2640D463004CB47F /* ChatView.swift */,
@@ -637,7 +622,7 @@
 				7AB070EE26AA564600425C27 /* FullScreenChatImage.swift */,
 				7A79868126D86F5E0037AD9E /* TextBindingManager.swift */,
 			);
-			path = Chat;
+			path = ChatRoom;
 			sourceTree = "<group>";
 		};
 		7A6A4D00262B865D00561D87 /* Assets */ = {
@@ -686,19 +671,16 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
-				7A9F09A7274B01790099B30E /* Walkthrough */,
-				7A22A574274416C200FB6B4F /* Extensions */,
-				7A46D14126D5A31700255A5C /* Hideouts */,
 				7AED44FB26473F7100944708 /* AppDelegate.swift */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
-				7A7A198226CACC730018D957 /* Registration2 */,
-				7AF686EF26BC86B800A287C2 /* Settings2 */,
+				7A7A198226CACC730018D957 /* Registration */,
+				7ACF91262767ACA000088ACA /* Features */,
+				7ACF91252767ABE300088ACA /* Chat */,
+				7AF686EF26BC86B800A287C2 /* Settings */,
 				7A6A4D00262B865D00561D87 /* Assets */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
 				7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */,
-				7A6A4CD2262B56E900561D87 /* Chat */,
 				7ACEDEDD2685194C00102E70 /* GoogleService-Info.plist */,
-				7A8943D2262CCA84008F7582 /* Home */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
 				7A7A198526CACD5B0018D957 /* API */,
@@ -706,7 +688,6 @@
 				7A7A198326CACCBC0018D957 /* Necessary Files */,
 				7A7A198426CACD1F0018D957 /* Old Files */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
-				7AA200FB2635C6D100C9F00C /* Room */,
 			);
 			path = BestFriends;
 			sourceTree = "<group>";
@@ -728,16 +709,17 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		7A7A198226CACC730018D957 /* Registration2 */ = {
+		7A7A198226CACC730018D957 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				7A9F09A7274B01790099B30E /* Walkthrough */,
 				7A23683226CB1DAC00C56A97 /* Sign Up */,
 				7A7A198626CACEAE0018D957 /* WelcomeView.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
 				7A655E5A2745FBF3000ADDBB /* ForgotUsername.swift */,
 				7A655E5C2745FC27000ADDBB /* ForgotPassword.swift */,
 			);
-			path = Registration2;
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		7A7A198326CACCBC0018D957 /* Necessary Files */ = {
@@ -759,8 +741,8 @@
 		7A7A198426CACD1F0018D957 /* Old Files */ = {
 			isa = PBXGroup;
 			children = (
-				7AB62A8326426F7A005A7744 /* Settings */,
-				7AE31CBD262A9A7F001EC5A3 /* Authentication */,
+				7AB62A8326426F7A005A7744 /* OldSettings */,
+				7AE31CBD262A9A7F001EC5A3 /* OldAuthentication */,
 			);
 			path = "Old Files";
 			sourceTree = "<group>";
@@ -785,7 +767,6 @@
 			isa = PBXGroup;
 			children = (
 				CFE6FD4526620E9A00DF92BD /* Popups.swift */,
-				7AE31CC1262A9BE1001EC5A3 /* HomeView.swift */,
 				7AF6973E2630EE1900CF49CC /* Star.swift */,
 				7A6A4D06262B8A5000561D87 /* PlayerView.swift */,
 				7AEFD542262CED3A00247757 /* QRCodeView.swift */,
@@ -807,19 +788,20 @@
 			path = Walkthrough;
 			sourceTree = "<group>";
 		};
-		7AA200FB2635C6D100C9F00C /* Room */ = {
+		7AA200FB2635C6D100C9F00C /* ChatRooms */ = {
 			isa = PBXGroup;
 			children = (
+				7AE31CC1262A9BE1001EC5A3 /* HomeView.swift */,
 				7AA201102635D2E100C9F00C /* RoomRow.swift */,
 				7AA2010E2635D21100C9F00C /* RoomsView.swift */,
 				7AB4744626D3DD6400053E76 /* ChatRoomsView.swift */,
 				7A1C04DD26E8029700DE0EEC /* ChatRoomsView2.swift */,
 				7A46D13F26D4769000255A5C /* SearchBar.swift */,
 			);
-			path = Room;
+			path = ChatRooms;
 			sourceTree = "<group>";
 		};
-		7AB62A8326426F7A005A7744 /* Settings */ = {
+		7AB62A8326426F7A005A7744 /* OldSettings */ = {
 			isa = PBXGroup;
 			children = (
 				7AB62A8426426F86005A7744 /* SettingsView.swift */,
@@ -830,7 +812,25 @@
 				D15777A2264DB7FD00B6551A /* BetaTesters.swift */,
 				7A4E32B426A0783300202BB7 /* SettingsInfoPages.swift */,
 			);
-			path = Settings;
+			path = OldSettings;
+			sourceTree = "<group>";
+		};
+		7ACF91252767ABE300088ACA /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7AA200FB2635C6D100C9F00C /* ChatRooms */,
+				7A8943D2262CCA84008F7582 /* Home */,
+				7A6A4CD2262B56E900561D87 /* ChatRoom */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		7ACF91262767ACA000088ACA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				7AE384DE26D8769400D4837B /* HideoutsView.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 		7AD10453265AB9AF007627FD /* ShakingCool */ = {
@@ -843,7 +843,7 @@
 			path = ShakingCool;
 			sourceTree = "<group>";
 		};
-		7AE31CBD262A9A7F001EC5A3 /* Authentication */ = {
+		7AE31CBD262A9A7F001EC5A3 /* OldAuthentication */ = {
 			isa = PBXGroup;
 			children = (
 				7A71BD002625292A00E6FA9E /* SignUpView.swift */,
@@ -855,7 +855,7 @@
 				7AC8A23E26578C3E001812EF /* LocationManager.swift */,
 				CF356D1D2672A43000BCF572 /* NotificationPreLoad.swift */,
 			);
-			path = Authentication;
+			path = OldAuthentication;
 			sourceTree = "<group>";
 		};
 		7AF2E2D126AF1CB500A82C6D /* models */ = {
@@ -887,7 +887,7 @@
 			path = amplify/generated/models;
 			sourceTree = SOURCE_ROOT;
 		};
-		7AF686EF26BC86B800A287C2 /* Settings2 */ = {
+		7AF686EF26BC86B800A287C2 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
 				7AF686F026BC86C900A287C2 /* Settings2View.swift */,
@@ -900,7 +900,7 @@
 				7A7AEF2F26C5D21200DE8344 /* TermsConditions.swift */,
 				7A7AEF3126C5D28600DE8344 /* ReportAbuse.swift */,
 			);
-			path = Settings2;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		9E0E510CD719430077541E98 /* Pods */ = {

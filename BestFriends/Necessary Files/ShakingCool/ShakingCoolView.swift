@@ -182,39 +182,39 @@ struct ShakingCoolView: View {
     
     private func reloadData() {
         DispatchQueue.global(qos: .userInitiated).async {
-        print("reloading Shaking cool")
-        let userDS = UserDataSource()
-        let user = userDS.getCurrentUser()
-        myid = user.id
-        print("Got user: ", user)
-        shakingCool = []
-        images = []
-        availableNames = []
-        availableIDs = []
-        shakingCool = user.shakingCool
-        print("Shaking Cool: ", shakingCool)
-        chosenID = user.id
-        var mycounter = 0
-        availableIDs = user.friends
-        for cool in shakingCool {
-            if cool.intendedid == user.id {
-                mycounter += 1
+            print("reloading Shaking cool")
+            let userDS = UserDataSource()
+            let user = userDS.getCurrentUser()
+            myid = user.id
+            print("Got user: ", user)
+            shakingCool = []
+            images = []
+            availableNames = []
+            availableIDs = []
+            shakingCool = user.shakingCool
+            print("Shaking Cool: ", shakingCool)
+            chosenID = user.id
+            var mycounter = 0
+            availableIDs = user.friends
+            for cool in shakingCool {
+                if cool.intendedid == user.id {
+                    mycounter += 1
+                }
+                if let index = availableIDs.firstIndex(of: cool.intendedid) {
+                    availableIDs.remove(at: index)
+                }
             }
-            if let index = availableIDs.firstIndex(of: cool.intendedid) {
-                availableIDs.remove(at: index)
+            for id in availableIDs {
+                availableNames.append(userDS.getUser(id: id).firstName)
             }
-        }
-        for id in availableIDs {
-            availableNames.append(userDS.getUser(id: id).firstName)
-        }
-        if mycounter < 2 {
-            availableIDs.insert(user.id, at: 0)
-            availableNames.insert("Myself", at: 0)
-            print("Added self")
-        }
-        for cool in shakingCool {
-            images.append(shakingCoolDataSource.downloadImage(key: cool.link, rotating: true, tall: false))
-        }
+            if mycounter < 2 {
+                availableIDs.insert(user.id, at: 0)
+                availableNames.insert("Myself", at: 0)
+                print("Added self")
+            }
+            for cool in shakingCool {
+                images.append(shakingCoolDataSource.downloadImage(key: cool.link, rotating: true, tall: false))
+            }
         }
     }
     

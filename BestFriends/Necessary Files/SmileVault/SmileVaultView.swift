@@ -19,24 +19,10 @@ struct SmileVaultView: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
+            Image("blueBackground")
+                .resizable()
+                .scaledToFill()
                 .ignoresSafeArea()
-            ZStack {
-                Circle()
-                    .frame(width: 400, height: 400)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                    .offset(x: 200, y: -400)
-                
-                Circle()
-                    .frame(width: 300, height: 300)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                    .offset(x: -200, y: -100)
-                
-                Circle()
-                    .frame(width: 200, height: 200)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                    .offset(x: 150, y: 100)
-            }
             
             VStack {
                 Spacer().frame(height: 30)
@@ -70,47 +56,47 @@ struct SmileVaultView: View {
                 }
                 
                 if !hidingFriendButtons {
-                VStack {
-                    Text("All Friends")
-                        .frame(width: 130, height: 50, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                        .background(Color(.clear))
-                        .cornerRadius(30)
-                        .onTapGesture {
-                            selectedFriendID = "All Friends"
-                            selectedFriendName = "All Friends"
-                            hidingFriendButtons = true
-                            newSelection()
-                        }
-                    
-                    Text("Favorites")
-                        .frame(width: 130, height: 50, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
-                        .background(Color(.clear))
-                        .cornerRadius(30)
-                        .onTapGesture {
-                            selectedFriendID = "Favorites"
-                            selectedFriendName = "Favorites"
-                            hidingFriendButtons = true
-                            newSelection()
-                        }
-                    
-                    ForEach(friendIDs, id: \.self) { id in
-                        Text(friendNames[friendIDs.firstIndex(of: id) ?? 0])
+                    VStack {
+                        Text("All Friends")
                             .frame(width: 130, height: 50, alignment: .center)
                             .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
                             .background(Color(.clear))
                             .cornerRadius(30)
                             .onTapGesture {
-                                selectedFriendID = id
-                                selectedFriendName = friendNames[friendIDs.firstIndex(of: id) ?? 0]
+                                selectedFriendID = "All Friends"
+                                selectedFriendName = "All Friends"
                                 hidingFriendButtons = true
                                 newSelection()
                             }
                         
+                        Text("Favorites")
+                            .frame(width: 130, height: 50, alignment: .center)
+                            .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                            .background(Color(.clear))
+                            .cornerRadius(30)
+                            .onTapGesture {
+                                selectedFriendID = "Favorites"
+                                selectedFriendName = "Favorites"
+                                hidingFriendButtons = true
+                                newSelection()
+                            }
+                        
+                        ForEach(friendIDs, id: \.self) { id in
+                            Text(friendNames[friendIDs.firstIndex(of: id) ?? 0])
+                                .frame(width: 130, height: 50, alignment: .center)
+                                .foregroundColor(Color(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)))
+                                .background(Color(.clear))
+                                .cornerRadius(30)
+                                .onTapGesture {
+                                    selectedFriendID = id
+                                    selectedFriendName = friendNames[friendIDs.firstIndex(of: id) ?? 0]
+                                    hidingFriendButtons = true
+                                    newSelection()
+                                }
+                            
+                        }
                     }
-                }
-                .border(Color.white, width: 1)
+                    .border(Color.white, width: 1)
                 }
                 
                 Spacer()
@@ -156,7 +142,7 @@ struct SmileVaultView: View {
                 
                 Spacer()
                     .frame(height: 20)
-                           
+                
                 
             }
             
@@ -223,20 +209,21 @@ struct SmileVaultView: View {
     }
     
     private func loadData() {
-        displayedCards = []
-        cards = []
-        let user = UserDataSource().getCurrentUser()
-        let smileNotes = user.smileNotes
-        for smileNote in smileNotes {
-            let card = SmileNotesCard(smileNote: smileNote)
-            cards.append(card)
-            
-            if (friendIDs.contains(smileNote.message.senderID) == false) {
-                friendIDs.append(smileNote.message.senderID)
-                friendNames.append(smileNote.message.senderName)
+        DispatchQueue.global(qos: .userInitiated).async {
+            displayedCards = []
+            cards = []
+            let user = UserDataSource().getCurrentUser()
+            let smileNotes = user.smileNotes
+            for smileNote in smileNotes {
+                let card = SmileNotesCard(smileNote: smileNote)
+                cards.append(card)
+                
+                if (friendIDs.contains(smileNote.message.senderID) == false) {
+                    friendIDs.append(smileNote.message.senderID)
+                    friendNames.append(smileNote.message.senderName)
+                }
             }
         }
-        
     }
     
     private func newSelection() {
@@ -261,10 +248,11 @@ struct SmileVaultView: View {
     }
     
     private func toggleFavorite() {
-        let oldSmileNote = displayedCards[index].smileNote
-        var newSmileNote = oldSmileNote
-        newSmileNote.favorite.toggle()
-        var user = UserDataSource().getCurrentUser()
+        DispatchQueue.global(qos: .userInitiated).async {
+            let oldSmileNote = displayedCards[index].smileNote
+            var newSmileNote = oldSmileNote
+            newSmileNote.favorite.toggle()
+            var user = UserDataSource().getCurrentUser()
             for i in 0..<user.smileNotes.count {
                 if user.smileNotes[i].id == oldSmileNote.id {
                     user.smileNotes.remove(at: i)
@@ -277,12 +265,7 @@ struct SmileVaultView: View {
                     newSelection()
                     return
                 }
+            }
         }
-    }
-}
-
-struct SileVaultView_Previews : PreviewProvider {
-    static var previews: some View {
-        SmileVaultView()
     }
 }
