@@ -78,7 +78,7 @@ struct HomeView: View {
     }
     
     private func reloadData() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 1.5) {
             
             print("Reloading...")
             getFriends()
@@ -104,8 +104,8 @@ struct HomeView: View {
             }
             
             if USS.user.friends.count > 0 {
-                DispatchQueue.main.asyncAfter(deadline: .now() + starTimings[USS.user.friends.count - 1] + 1.0) { inviteClicked() }
-                DispatchQueue.main.asyncAfter(deadline: .now() + 12.0) { inviteClicked() }
+                DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + starTimings[USS.user.friends.count - 1] + 1.0) { inviteClicked() }
+                DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 12.0) { inviteClicked() }
             }
         }
     }
@@ -177,17 +177,17 @@ struct HomeView: View {
                     }) {
                         Image("addFriend")
                             .resizable()
-                            .frame(width: 135, height: 135)
+                            .frame(width: 70, height: 70)
                             .scaledToFill()
-                            .scaleEffect(isAtMaxScale ? 0.3 : 1.1)
+//                            .scaleEffect(isAtMaxScale ? 0.3 : 1.1)
                             .padding(10)
-                            .onAppear {
-                                if USS.user.friends.count < 1 {
-                                    withAnimation(self.animation, {
-                                        self.isAtMaxScale.toggle()
-                                    })
-                                }
-                            }
+//                            .onAppear {
+//                                if USS.user.friends.count < 1 {
+//                                    withAnimation(self.animation, {
+//                                        self.isAtMaxScale.toggle()
+//                                    })
+//                                }
+//                            }
                             .sheet(isPresented: $showingSheet) {
                                 QRCodeView(image: myQRCode)
                             }

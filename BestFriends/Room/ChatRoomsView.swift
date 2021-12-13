@@ -34,7 +34,7 @@ struct ChatRoomsView: View {
             
             VStack {
                 HStack {
-                    Text("My Private Chat Rooms")
+                    Text("Chat Rooms")
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.white)
                         .padding(.leading, 20)

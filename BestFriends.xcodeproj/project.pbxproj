@@ -48,7 +48,6 @@
 		7A417EC8265ED52900E95364 /* AdDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417EC7265ED52900E95364 /* AdDataSource.swift */; };
 		7A417ECC265F236700E95364 /* AdPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A417ECB265F236700E95364 /* AdPlayerView.swift */; };
 		7A46D14026D4769000255A5C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A46D13F26D4769000255A5C /* SearchBar.swift */; };
-		7A46D14326D5A32400255A5C /* HideoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A46D14226D5A32400255A5C /* HideoutsView.swift */; };
 		7A48CCA9271A32360034D85A /* InvitedRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48CC94271A32340034D85A /* InvitedRoom.swift */; };
 		7A48CCAA271A32360034D85A /* ReportedMessage+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48CC95271A32350034D85A /* ReportedMessage+Schema.swift */; };
 		7A48CCAB271A32360034D85A /* InvitedRoom+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48CC96271A32350034D85A /* InvitedRoom+Schema.swift */; };
@@ -155,7 +154,7 @@
 		7AE31CC2262A9BE1001EC5A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC1262A9BE1001EC5A3 /* HomeView.swift */; };
 		7AE31CC5262A9C57001EC5A3 /* OldConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC4262A9C57001EC5A3 /* OldConfirmationView.swift */; };
 		7AE31CC8262A9D34001EC5A3 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */; };
-		7AE384DF26D8769400D4837B /* HideoutsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE384DE26D8769400D4837B /* HideoutsMenu.swift */; };
+		7AE384DF26D8769400D4837B /* HideoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE384DE26D8769400D4837B /* HideoutsView.swift */; };
 		7AED44FC26473F7100944708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AED44FB26473F7100944708 /* AppDelegate.swift */; };
 		7AEFD543262CED3A00247757 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFD542262CED3A00247757 /* QRCodeView.swift */; };
 		7AEFD546262CED7A00247757 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEFD545262CED7A00247757 /* ImagePicker.swift */; };
@@ -239,7 +238,6 @@
 		7A417EC7265ED52900E95364 /* AdDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdDataSource.swift; sourceTree = "<group>"; };
 		7A417ECB265F236700E95364 /* AdPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdPlayerView.swift; sourceTree = "<group>"; };
 		7A46D13F26D4769000255A5C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
-		7A46D14226D5A32400255A5C /* HideoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideoutsView.swift; sourceTree = "<group>"; };
 		7A48CC94271A32340034D85A /* InvitedRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvitedRoom.swift; sourceTree = "<group>"; };
 		7A48CC95271A32350034D85A /* ReportedMessage+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReportedMessage+Schema.swift"; sourceTree = "<group>"; };
 		7A48CC96271A32350034D85A /* InvitedRoom+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InvitedRoom+Schema.swift"; sourceTree = "<group>"; };
@@ -399,7 +397,7 @@
 		7AE31CC1262A9BE1001EC5A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7AE31CC4262A9C57001EC5A3 /* OldConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldConfirmationView.swift; sourceTree = "<group>"; };
 		7AE31CC7262A9D34001EC5A3 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		7AE384DE26D8769400D4837B /* HideoutsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideoutsMenu.swift; sourceTree = "<group>"; };
+		7AE384DE26D8769400D4837B /* HideoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideoutsView.swift; sourceTree = "<group>"; };
 		7AED44FA2647310700944708 /* BestFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriends.entitlements; sourceTree = "<group>"; };
 		7AED44FB26473F7100944708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AEFD542262CED3A00247757 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
@@ -623,8 +621,7 @@
 		7A46D14126D5A31700255A5C /* Hideouts */ = {
 			isa = PBXGroup;
 			children = (
-				7A46D14226D5A32400255A5C /* HideoutsView.swift */,
-				7AE384DE26D8769400D4837B /* HideoutsMenu.swift */,
+				7AE384DE26D8769400D4837B /* HideoutsView.swift */,
 			);
 			path = Hideouts;
 			sourceTree = "<group>";
@@ -1171,7 +1168,6 @@
 				7A7AEF2E26C5CF3F00DE8344 /* HelpSupportView.swift in Sources */,
 				7AD25A0226AF913200396CF2 /* amplify/generated/models/Message.swift in Sources */,
 				7A48CCAF271A32360034D85A /* ShakingCool+Schema.swift in Sources */,
-				7A46D14326D5A32400255A5C /* HideoutsView.swift in Sources */,
 				7A234A0F26F42F0A002BE042 /* PrivacyPolicyView.swift in Sources */,
 				7AF2E2E726AF1CB500A82C6D /* amplify/generated/models/DeletionRequest+Schema.swift in Sources */,
 				7A78232526B2004500CA76FC /* AnalyticsDataSource.swift in Sources */,
@@ -1254,7 +1250,7 @@
 				D15777B42650522200B6551A /* SwipeGesture.swift in Sources */,
 				7A48CCBB271A32360034D85A /* Advertisement.swift in Sources */,
 				7A417EC6265ED4B000E95364 /* AdViewFullScreen.swift in Sources */,
-				7AE384DF26D8769400D4837B /* HideoutsMenu.swift in Sources */,
+				7AE384DF26D8769400D4837B /* HideoutsView.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				7A5EFED426B4A2EC00281DDD /* amplify/generated/models/InvitedRoom.swift in Sources */,
 				7AF35CB42699EB6700A396CE /* Helper.swift in Sources */,
