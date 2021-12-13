@@ -178,56 +178,6 @@ struct HomeView: View {
                 }
                 
                 Spacer()
-                
-                //                HStack {
-                //                    Button(action: {
-                //                        //Display invite menu
-                //                        if user.friends.count < 5 {
-                //                            self.showingActionSheet = true
-                //                        } else {
-                //                            cantAddMoreFriends = true
-                //                        }
-                //                    }) {
-                //                        Image("addFriend")
-                //                            .resizable()
-                //                            .frame(width: 70, height: 70)
-                //                            .scaledToFill()
-                //                            .padding(10)
-                //                            .sheet(isPresented: $showingSheet) {
-                //                                QRCodeView(image: myQRCode)
-                //                            }
-                //                            .sheet(isPresented: $showingAddFriendInstructions) {
-                //                                HowToAddFriends()
-                //                            }
-                //                            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                //                                ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
-                //                            }
-                //                    }
-                //                    .actionSheet(isPresented: $showingActionSheet) {
-                //                        ActionSheet(title: "Add up to 5 Friends with secret QR codes"), message: Text("There's a couple extra steps - but we keep trolls and unwanted DMs & images out. There's NO user search - strangers can't find you, EVER!"), buttons: [
-                //
-                //                            .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
-                //                            .default(Text("Get my QR code")) { showMyQR() },
-                //                            .default(Text("My Gallery")) {
-                //                                let photos = PHPhotoLibrary.authorizationStatus()
-                //                                if photos == .notDetermined {
-                //                                    PHPhotoLibrary.requestAuthorization({status in
-                //                                        if status == .authorized{
-                //                                            self.showingImagePicker = true
-                //
-                //                                        } else {}
-                //                                    })
-                //                                } else {
-                //                                    self.showingImagePicker = true
-                //                                }
-                //                            },
-                //                            .cancel()
-                //                        ])
-                //                    }
-                //                    .padding(10)
-                //
-                //                    Spacer()
-                //                }
             }
             
             // MARK: Scrollable view that shows chat rooms...
@@ -270,17 +220,79 @@ struct HomeView: View {
                         .frame(maxHeight: .infinity, alignment: .top)
                         
                         // Action buttons...
-                        Button(action: {
-                            sessionManager.showHideouts()
-                        }) {
-                            Text("Personal")
-                                .frame(width: 200, height: 50)
-                                .foregroundColor(.white)
-                                .font(.system(size: 25))
-                                .background(ColorManager.purple7)
-                                .cornerRadius(20)
+                        HStack(alignment: .center) {
+                            
+                            // Invite button...
+                            if user.friends.count < 5 {
+                                
+                                Button(action: {
+                                    //Display invite menu
+                                    showingActionSheet = true
+                                    
+                                }) {
+                                    Image("inviteWhite")
+                                        .resizable()
+                                        .frame(width: 40, height: 40)
+                                        .scaledToFill()
+                                        .sheet(isPresented: $showingSheet) {
+                                            QRCodeView(image: myQRCode)
+                                        }
+                                        .sheet(isPresented: $showingAddFriendInstructions) {
+                                            HowToAddFriends()
+                                        }
+                                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                                            ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
+                                        }
+                                }
+                                .actionSheet(isPresented: $showingActionSheet) {
+                                    ActionSheet(title: Text("Add up to 5 Friends with secret QR codes"), buttons: [
+                                        
+                                        .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
+                                        .default(Text("Get my QR code")) { showMyQR() },
+                                        .default(Text("My Gallery")) {
+                                            let photos = PHPhotoLibrary.authorizationStatus()
+                                            if photos == .notDetermined {
+                                                PHPhotoLibrary.requestAuthorization({status in
+                                                    if status == .authorized{
+                                                        self.showingImagePicker = true
+                                                        
+                                                    } else {}
+                                                })
+                                            } else {
+                                                self.showingImagePicker = true
+                                            }
+                                        },
+                                        .cancel()
+                                    ])
+                                }
+                            } else {
+                                Spacer()
+                                    .frame(width: 40, height: 0)
+                            }
+                            
+                            Button(action: {
+                                sessionManager.showHideouts()
+                            }) {
+                                Text("Personal")
+                                    .frame(width: 200, height: 50)
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple7)
+                                    .cornerRadius(20)
+                            }
+                            .padding(.horizontal)
+                            
+                            Image("settings icon")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                                .onTapGesture {
+                                    sessionManager.showSettings()
+                                }
                         }
                         .offset(y: -height * 0.55)
+                        
+                        
                     }
                         .frame(width: width - 70)
                         .padding(.horizontal, 35)
