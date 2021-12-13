@@ -29,196 +29,159 @@ struct ShakingCoolView: View {
     private var shakingCoolDataSource = ShakingCoolDataSource()
     
     var body: some View {
-            ZStack {
-                Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
-                    .ignoresSafeArea()
-                    .onAppear {
-                        DispatchQueue.global(qos: .userInitiated).async {
-                            reloadData()
-                        }
+        ZStack {
+            Image("blueBackground")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+                .onAppear {
+                    DispatchQueue.global(qos: .userInitiated).async {
+                        reloadData()
                     }
-                
-                ZStack {
-                    Circle()
-                        .frame(width: 400, height: 400)
-                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                        .offset(x: 200, y: -400)
-
-                    Circle()
-                        .frame(width: 300, height: 300)
-                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                        .offset(x: -200, y: -100)
-
-                    Circle()
-                        .frame(width: 200, height: 200)
-                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                        .offset(x: 150, y: 100)
                 }
+            
+            VStack {
+                Text("You can add \(howManyLeft()) more image(s)")
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 20, weight: .thin))
                 
-                VStack {
-                    Text("Some images just make you SMILE. Now just 'shake' your phone and they popup.")
-                        .font(.system(size: 15))
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 375, height: 50, alignment: .center)
-                    
-                    Text("Add 2 images for youself and one for each friend.")
-                        .font(.system(size: 15))
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .frame(width: 375, height: 25, alignment: .center)
-                    
-                    
-                    
-                    
-                    Spacer().frame(height: 2)
-                
-         
-                    
-                    Text("You can add \(howManyLeft()) more image(s)")
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 20, weight: .thin))
-                    
-                                        
-                    ScrollView(showsIndicators: false) {
-                        ForEach(images.indices, id: \.self) { index in
-                            let name = shakingCool[index].intendedid == myid ? "Myself" : shakingCool[index].intendedname
-                            VStack {
-                                Text(name)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20, weight: .light))
-                                    .padding()
-                                
-                                Image(uiImage: images[index])
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(height: 200)
-                                    .cornerRadius(30)
-                                    .onTapGesture {
-                                        DispatchQueue.global(qos: .userInitiated).async {
+                ScrollView(showsIndicators: false) {
+                    ForEach(images.indices, id: \.self) { index in
+                        let name = shakingCool[index].intendedid == myid ? "Myself" : shakingCool[index].intendedname
+                        VStack {
+                            Text(name)
+                                .foregroundColor(.white)
+                                .font(.system(size: 20, weight: .light))
+                                .padding()
+                            
+                            Image(uiImage: images[index])
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 200)
+                                .cornerRadius(30)
+                                .onTapGesture {
+                                    DispatchQueue.global(qos: .userInitiated).async {
                                         chosenID = shakingCool[index].id
                                         shakingCoolDataSource.deleteImage(id: shakingCool[index].link)
                                         reloadData()
-                                        }
                                     }
-                                
-                                //                            Spacer()
-                                //                                .frame(height: 30)
-                            }
+                                }
                         }
                     }
-                    .frame(height: 350)
-                    
-                    
-                    Text("Tap image to delete")
-                        .italic()
-                        .font(.system(size: 20, weight: .thin))
-                        .foregroundColor(.white)
-                        .fullScreenCover(isPresented: $isAdPresented, content: ShakingCoolAdView.init)
-
-                    
-                    if availableIDs.count > 0 {
-                        Text("Add Image")
-                            .frame(width: 150, height: 50, alignment: .center)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.title)
-                            .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
-                            .cornerRadius(25)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            .onTapGesture {
-                                choosingRecipient.toggle()
-                            }
-                            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                                ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
-                            }
-                            .padding()
-                    }
-                    
-                    Text("Return")
+                }
+                //                    .frame(height: 350)
+                
+                
+                Text("Tap image to delete")
+                    .italic()
+                    .font(.system(size: 20, weight: .thin))
+                    .foregroundColor(.white)
+                    .fullScreenCover(isPresented: $isAdPresented, content: ShakingCoolAdView.init)
+                
+                
+                if availableIDs.count > 0 {
+                    Text("Add Image")
                         .frame(width: 150, height: 50, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.title)
-                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                        .background(Color(#colorLiteral(red: 0.9607843161, green: 0.7058823705, blue: 0.200000003, alpha: 1)))
                         .cornerRadius(25)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .onTapGesture {
-                            AnalyticsDataSource().recordShakingCoolDepartureEvent()
-                            isAdPresented = true
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 10.8) {
-                                sessionManager.showHideouts()
-                            }
+                            choosingRecipient.toggle()
+                        }
+                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                            ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
                         }
                         .padding()
-              }
-                
-                if currentlyLoading {
-                    Text("Uploading image...")
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .frame(width: 300, height: 200)
-                        .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
-                        .cornerRadius(25)
-                        .transition(.scale)
                 }
                 
-                if choosingRecipient {
-                    VStack {
-                        ForEach(availableIDs.indices, id: \.self) { index in
-                            Button(action: {
-                                let photos = PHPhotoLibrary.authorizationStatus()
-                                if photos == .notDetermined {
-                                    PHPhotoLibrary.requestAuthorization({status in
-                                        if status == .authorized{
-                                            chosenID = availableIDs[index]
-                                            showingImagePicker = true
-                                            choosingRecipient = false
-                                        } else {}
-                                    })
-                                } else {
-                                    chosenID = availableIDs[index]
-                                    showingImagePicker = true
-                                    choosingRecipient = false
-                                }
-                            }) {
-                                Text(availableNames[index])
-                                    .frame(width: 150, height: 50, alignment: .center)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.title)
-                                    .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
-                                    .cornerRadius(25)
-                                    .padding()
+                Text("Return")
+                    .frame(width: 150, height: 50, alignment: .center)
+                    .foregroundColor(Color(#colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)))
+                    .font(.title)
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    .onTapGesture {
+                        AnalyticsDataSource().recordShakingCoolDepartureEvent()
+                        isAdPresented = true
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 10.8) {
+                            sessionManager.showHideouts()
+                        }
+                    }
+                    .padding()
+            }
+            
+            if currentlyLoading {
+                Text("Uploading image...")
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .frame(width: 300, height: 200)
+                    .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                    .cornerRadius(25)
+                    .transition(.scale)
+            }
+            
+            if choosingRecipient {
+                VStack {
+                    ForEach(availableIDs.indices, id: \.self) { index in
+                        Button(action: {
+                            let photos = PHPhotoLibrary.authorizationStatus()
+                            if photos == .notDetermined {
+                                PHPhotoLibrary.requestAuthorization({status in
+                                    if status == .authorized{
+                                        chosenID = availableIDs[index]
+                                        showingImagePicker = true
+                                        choosingRecipient = false
+                                    } else {}
+                                })
+                            } else {
+                                chosenID = availableIDs[index]
+                                showingImagePicker = true
+                                choosingRecipient = false
                             }
+                        }) {
+                            Text(availableNames[index])
+                                .frame(width: 150, height: 50, alignment: .center)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.title)
+                                .background(Color(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)))
+                                .cornerRadius(25)
+                                .padding()
                         }
                     }
                 }
             }
         }
+    }
     
     private func loadImage() {
-        withAnimation {
-            showingImagePicker = false
-            choosingRecipient = false
-            currentlyLoading = true
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            
-            guard let inputImage = inputImage else { return }
-            print("Got the image")
-            let state = ShakingCoolDataSource().uploadImage(image: inputImage, targetID: chosenID)
+        DispatchQueue.global(qos: .userInitiated).async {
             withAnimation {
-                currentlyLoading = false
+                showingImagePicker = false
+                choosingRecipient = false
+                currentlyLoading = true
             }
-            if state == true {
-                sleep(1)
-                reloadData()
+            
+            DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 1.0) {
+                
+                guard let inputImage = inputImage else { return }
+                print("Got the image")
+                let state = ShakingCoolDataSource().uploadImage(image: inputImage, targetID: chosenID)
+                withAnimation {
+                    currentlyLoading = false
+                }
+                if state == true {
+                    sleep(1)
+                    reloadData()
+                }
             }
         }
     }
     
     private func reloadData() {
+        DispatchQueue.global(qos: .userInitiated).async {
         print("reloading Shaking cool")
         let userDS = UserDataSource()
         let user = userDS.getCurrentUser()
@@ -251,6 +214,7 @@ struct ShakingCoolView: View {
         }
         for cool in shakingCool {
             images.append(shakingCoolDataSource.downloadImage(key: cool.link, rotating: true, tall: false))
+        }
         }
     }
     

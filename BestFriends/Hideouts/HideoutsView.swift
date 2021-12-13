@@ -58,8 +58,8 @@ struct HideoutsView : View {
                         .onTapGesture {
                             sessionManager.getCurrentAuthUser()
                         }
-                        .padding(10)
-                    
+                        .padding(.horizontal, 10)
+
                     Image("settings icon")
                         .resizable()
                         .frame(width: 40, height: 40)
@@ -67,8 +67,8 @@ struct HideoutsView : View {
                         .onTapGesture {
                             sessionManager.showSettings()
                         }
-                        .padding(10)
-                    
+                        .padding(.horizontal, 10)
+
                     Image("horn")
                         .resizable()
                         .frame(width: 40, height: 40)
@@ -76,8 +76,10 @@ struct HideoutsView : View {
                         .onTapGesture {
                             sessionManager.showBroadcast()
                         }
-                        .padding(10)
+                        .padding(.horizontal, 10)
                 }
+                .ignoresSafeArea()
+                .offset(y: 10)
             }
         }
     }
