@@ -729,8 +729,6 @@
 				7A4E32B626A079F200202BB7 /* Loading.swift */,
 				7A2B1F5C26A645F500EDBEAF /* ThreeCircles.swift */,
 				7A417EC4265ED49C00E95364 /* Advertisements */,
-				7AD10453265AB9AF007627FD /* ShakingCool */,
-				D1577799264D082800B6551A /* SmileVault */,
 				D15777B22650522200B6551A /* Gestures */,
 				7A1DBD602659B1A400EB4B42 /* Extensions */,
 				7A08E364264FB6CA00AEBC8F /* Notifications */,
@@ -792,7 +790,6 @@
 		7AA200FB2635C6D100C9F00C /* ChatRooms */ = {
 			isa = PBXGroup;
 			children = (
-				7AE31CC1262A9BE1001EC5A3 /* HomeView.swift */,
 				7AA201102635D2E100C9F00C /* RoomRow.swift */,
 				7AA2010E2635D21100C9F00C /* RoomsView.swift */,
 				7AB4744626D3DD6400053E76 /* ChatRoomsView.swift */,
@@ -819,6 +816,7 @@
 		7ACF91252767ABE300088ACA /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				7AE31CC1262A9BE1001EC5A3 /* HomeView.swift */,
 				7AA200FB2635C6D100C9F00C /* ChatRooms */,
 				7A8943D2262CCA84008F7582 /* Home */,
 				7A6A4CD2262B56E900561D87 /* ChatRoom */,
@@ -830,6 +828,8 @@
 			isa = PBXGroup;
 			children = (
 				7AE384DE26D8769400D4837B /* HideoutsView.swift */,
+				7AD10453265AB9AF007627FD /* ShakingCool */,
+				D1577799264D082800B6551A /* SmileVault */,
 			);
 			path = Features;
 			sourceTree = "<group>";
