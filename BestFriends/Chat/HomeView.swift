@@ -58,7 +58,6 @@ struct HomeView: View {
             
             print("Reloading...")
             rooms = RoomDataSource().getRooms()
-            userDataSource.setOnlineStatus(isOnline: true)
             let possibleRooms = user.invitedRooms
             if possibleRooms.count > 0 {
                 for i in 0..<possibleRooms.count {
@@ -80,6 +79,7 @@ struct HomeView: View {
             }
             
             if user.friends.count > 0 {
+                displayStars()
                 DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 1.0) { inviteClicked() }
                 DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 12.0) { inviteClicked() }
             }
@@ -417,8 +417,8 @@ struct HomeView: View {
     
     
     private func displayStars() {
+        DispatchQueue.global(qos: .userInitiated).async() {
         for id in user.friends {
-            DispatchQueue.main.async() {
                 
                 let friend = userDataSource.getUser(id: id)
                 guard let initial = friend.lastName.first else { return }
@@ -427,7 +427,7 @@ struct HomeView: View {
                 let star = Star(id: friend.id, name: name)
                 print("Successfully added a star for user: ", friend.id)
                 stars.append(star)
-            }
+        }
         }
     }
     
