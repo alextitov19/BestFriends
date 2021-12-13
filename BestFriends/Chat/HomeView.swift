@@ -44,7 +44,7 @@ struct HomeView: View {
     private var rooms: [Room]
     
     private let animation = Animation.easeInOut(duration: 1).repeatForever(autoreverses: true)
-        
+    
     @State private var selectedFriends = []
     
     @State var idsToInvite: [String] = []
@@ -54,6 +54,10 @@ struct HomeView: View {
     let firebaseDataSource = FirebaseDataSource()
     
     @EnvironmentObject var sessionManager: SessionManager
+    
+    @State var offset: CGFloat = 0
+    @State var lastOffset: CGFloat = 0
+    @GestureState var gestureOffset: CGFloat = 0
     
     init() {
         if userDataSource.doesMyUserExist() {
@@ -122,6 +126,7 @@ struct HomeView: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
+            // MARK: Stars and star logic...
             VStack {
                 HStack {
                     ForEach(stars.indices, id: \.self) { index in
@@ -198,69 +203,7 @@ struct HomeView: View {
                     .transition(.scale)
                 }
                 
-                Spacer()
-                
-//                HStack {
-//                    Button(action: {
-//                        //Display invite menu
-//                        if USS.user.friends.count < 5 {
-//                            self.showingActionSheet = true
-//                        } else {
-//                            cantAddMoreFriends = true
-//                        }
-//                    }) {
-//                        Image("addFriend")
-//                            .resizable()
-//                            .frame(width: 70, height: 70)
-//                            .scaledToFill()
-//                            .padding(10)
-//                            .sheet(isPresented: $showingSheet) {
-//                                QRCodeView(image: myQRCode)
-//                            }
-//                            .sheet(isPresented: $showingAddFriendInstructions) {
-//                                HowToAddFriends()
-//                            }
-//                            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-//                                ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
-//                            }
-//                    }
-//                    .actionSheet(isPresented: $showingActionSheet) {
-//                        ActionSheet(title: Text("Add up to 5 Friends with secret QR codes"), message: Text("There's a couple extra steps - but we keep trolls and unwanted DMs & images out. There's NO user search - strangers can't find you, EVER!"), buttons: [
-//
-//                            .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
-//                            .default(Text("Get my QR code")) { showMyQR() },
-//                            .default(Text("My Gallery")) {
-//                                let photos = PHPhotoLibrary.authorizationStatus()
-//                                if photos == .notDetermined {
-//                                    PHPhotoLibrary.requestAuthorization({status in
-//                                        if status == .authorized{
-//                                            self.showingImagePicker = true
-//
-//                                        } else {}
-//                                    })
-//                                } else {
-//                                    self.showingImagePicker = true
-//                                }
-//                            },
-//                            .cancel()
-//                        ])
-//                    }
-//                    .padding(10)
-//
-//                    Spacer()
-//                }
-            }
-            
-            
-            
-            if thereAlreadyisARoom {
-                VStack {
-                    Text("Do you want to start a new chat room or use existing room with the friends you just selected?")
-                        .foregroundColor(.white)
-                        .font(.system(size: 22, weight: .thin))
-                        .multilineTextAlignment(.center)
-                        .padding(30)
-                    
+                if thereAlreadyisARoom {
                     HStack {
                         Button(action: {
                             loadingShowing = true
@@ -295,7 +238,124 @@ struct HomeView: View {
                         .padding(20)
                     }
                 }
+                
+                Spacer()
+                
+                //                HStack {
+                //                    Button(action: {
+                //                        //Display invite menu
+                //                        if USS.user.friends.count < 5 {
+                //                            self.showingActionSheet = true
+                //                        } else {
+                //                            cantAddMoreFriends = true
+                //                        }
+                //                    }) {
+                //                        Image("addFriend")
+                //                            .resizable()
+                //                            .frame(width: 70, height: 70)
+                //                            .scaledToFill()
+                //                            .padding(10)
+                //                            .sheet(isPresented: $showingSheet) {
+                //                                QRCodeView(image: myQRCode)
+                //                            }
+                //                            .sheet(isPresented: $showingAddFriendInstructions) {
+                //                                HowToAddFriends()
+                //                            }
+                //                            .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+                //                                ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
+                //                            }
+                //                    }
+                //                    .actionSheet(isPresented: $showingActionSheet) {
+                //                        ActionSheet(title: Text("Add up to 5 Friends with secret QR codes"), message: Text("There's a couple extra steps - but we keep trolls and unwanted DMs & images out. There's NO user search - strangers can't find you, EVER!"), buttons: [
+                //
+                //                            .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
+                //                            .default(Text("Get my QR code")) { showMyQR() },
+                //                            .default(Text("My Gallery")) {
+                //                                let photos = PHPhotoLibrary.authorizationStatus()
+                //                                if photos == .notDetermined {
+                //                                    PHPhotoLibrary.requestAuthorization({status in
+                //                                        if status == .authorized{
+                //                                            self.showingImagePicker = true
+                //
+                //                                        } else {}
+                //                                    })
+                //                                } else {
+                //                                    self.showingImagePicker = true
+                //                                }
+                //                            },
+                //                            .cancel()
+                //                        ])
+                //                    }
+                //                    .padding(10)
+                //
+                //                    Spacer()
+                //                }
             }
+            
+            // MARK: Scrollable view that shows chat rooms...
+            
+            // For getting height for Drag Gesture...
+            GeometryReader { proxy -> AnyView in
+                
+                let height = proxy.frame(in: .global).height
+                let width = proxy.frame(in: .global).width
+                
+                return AnyView(
+                    
+                    ZStack {
+                        
+                        BlurView(style: .systemThinMaterialDark)
+                            .clipShape(CustomCorner(corners: [.topLeft, .topRight], radius: 30))
+                        
+                        VStack {
+                            
+                            Capsule()
+                                .fill(Color.white)
+                                .frame(width: 60, height: 4)
+                                .padding(.top)
+                            
+                            //MARK: ScrollView content...
+                            
+                            
+                        }
+                        .frame(maxHeight: .infinity, alignment: .top)
+                    }
+                        .frame(width: width - 70)
+                        .padding(.horizontal, 35)
+                        .offset(y: height - 100)
+                        .offset(y: -offset > 0 ? -offset <= (height - 100) ? offset : -(height - 100) : 0)
+                        .gesture(DragGesture().updating($gestureOffset, body: {
+                            value, out, _ in
+                            
+                            out = value.translation.height
+                            onDragChange()
+                        }).onEnded({ value in
+                            
+                            let maxHeight = height - 150
+                            withAnimation {
+                                
+                                // Loginc conditions for moving states...
+                                // Up, Down, or Mid...
+                                if -offset > 100 && -offset < maxHeight * 0.6 {
+                                    // Mid...
+                                    offset = -(maxHeight / 3)
+                                }
+                                else if -offset > maxHeight * 0.6 {
+                                    // Up...
+                                    offset = -maxHeight
+                                }
+                                else  if -offset > 50 {
+                                    // Down...
+                                    offset = 0
+                                }
+                            }
+                            
+                            // Storing last offset so the gesture can continue from last position...
+                            lastOffset = offset
+                        }))
+                )
+            }
+            .ignoresSafeArea()
             
             if cantAddMoreFriends {
                 Text("You can't add more than 5 friends")
@@ -489,6 +549,13 @@ struct HomeView: View {
             }
             membersOfNewRoom = []
             sessionManager.chat(room: room)
+        }
+    }
+    
+    // Called whenever Drag Gesture updates (when dragged)...
+    private func onDragChange() {
+        DispatchQueue.main.async {
+            self.offset = lastOffset + gestureOffset
         }
     }
 }
