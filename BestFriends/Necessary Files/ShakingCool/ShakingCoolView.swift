@@ -33,7 +33,9 @@ struct ShakingCoolView: View {
                 Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
                     .ignoresSafeArea()
                     .onAppear {
-                        reloadData()
+                        DispatchQueue.global(qos: .userInitiated).async {
+                            reloadData()
+                        }
                     }
                 
                 ZStack {
@@ -81,7 +83,7 @@ struct ShakingCoolView: View {
                     
                                         
                     ScrollView(showsIndicators: false) {
-                        ForEach(shakingCool.indices, id: \.self) { index in
+                        ForEach(images.indices, id: \.self) { index in
                             let name = shakingCool[index].intendedid == myid ? "Myself" : shakingCool[index].intendedname
                             VStack {
                                 Text(name)

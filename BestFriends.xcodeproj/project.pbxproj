@@ -704,7 +704,7 @@
 				7A8943D2262CCA84008F7582 /* Home */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
-				7A244F8626A7D276000F49ED /* ManDocDataSource.swift */,
+				7A7A198526CACD5B0018D957 /* API */,
 				7AF2E2D126AF1CB500A82C6D /* models */,
 				7A7A198326CACCBC0018D957 /* Necessary Files */,
 				7A7A198426CACD1F0018D957 /* Old Files */,
@@ -749,7 +749,6 @@
 				7A724D3526AC7C150079AA85 /* Helpers */,
 				7A4E32B626A079F200202BB7 /* Loading.swift */,
 				7A2B1F5C26A645F500EDBEAF /* ThreeCircles.swift */,
-				7A7A198526CACD5B0018D957 /* Data Sources */,
 				7A417EC4265ED49C00E95364 /* Advertisements */,
 				7AD10453265AB9AF007627FD /* ShakingCool */,
 				D1577799264D082800B6551A /* SmileVault */,
@@ -769,9 +768,10 @@
 			path = "Old Files";
 			sourceTree = "<group>";
 		};
-		7A7A198526CACD5B0018D957 /* Data Sources */ = {
+		7A7A198526CACD5B0018D957 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				7A244F8626A7D276000F49ED /* ManDocDataSource.swift */,
 				7AAB444B265C6B6800488983 /* ShakingCoolDataSource.swift */,
 				7A417EC7265ED52900E95364 /* AdDataSource.swift */,
 				7AD362FB26852AE7003F6447 /* FirebaseDataSource.swift */,
@@ -781,7 +781,7 @@
 				7A6A4CD9262B658200561D87 /* MessageDataSource.swift */,
 				7A78232426B2004500CA76FC /* AnalyticsDataSource.swift */,
 			);
-			path = "Data Sources";
+			path = API;
 			sourceTree = "<group>";
 		};
 		7A8943D2262CCA84008F7582 /* Home */ = {
