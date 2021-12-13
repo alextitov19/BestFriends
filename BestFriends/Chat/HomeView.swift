@@ -36,13 +36,13 @@ struct HomeView: View {
     @State private var invitingFriends = false
     @State var idsToInvite: [String] = []
     @State private var selectedFriends = []
-
+    
     // Other popovers...
     @State private var isShakingCoolPresented = false
     @State private var showingAddFriendInstructions = false
     @State private var loadingShowing = false
-//    @State private var thereAlreadyisARoom = false
-//    @State private var existingRoomId = ""
+    //    @State private var thereAlreadyisARoom = false
+    //    @State private var existingRoomId = ""
     
     // For swiping up/down and scrolling the BlurView
     @State var offset: CGFloat = 0
@@ -85,7 +85,7 @@ struct HomeView: View {
             }
         }
     }
-        
+    
     var body: some View {
         
         ZStack {
@@ -176,7 +176,7 @@ struct HomeView: View {
                     }
                     .transition(.scale)
                 }
-                                
+                
                 Spacer()
                 
                 //                HStack {
@@ -204,7 +204,7 @@ struct HomeView: View {
                 //                            }
                 //                    }
                 //                    .actionSheet(isPresented: $showingActionSheet) {
-                //                        ActionSheet(title: Text("Add up to 5 Friends with secret QR codes"), message: Text("There's a couple extra steps - but we keep trolls and unwanted DMs & images out. There's NO user search - strangers can't find you, EVER!"), buttons: [
+                //                        ActionSheet(title: "Add up to 5 Friends with secret QR codes"), message: Text("There's a couple extra steps - but we keep trolls and unwanted DMs & images out. There's NO user search - strangers can't find you, EVER!"), buttons: [
                 //
                 //                            .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
                 //                            .default(Text("Get my QR code")) { showMyQR() },
@@ -253,21 +253,34 @@ struct HomeView: View {
                                 .padding(.top)
                             
                             //MARK: ScrollView content...
-                             
+                            
                             ForEach(rooms.indices, id: \.self) { index in
                                 
-                                    RoomRow(room: rooms[index])
+                                RoomRow(room: rooms[index])
                                     .onTapGesture {
                                         sessionManager.chat(room: rooms[index])
                                     }
-                                .padding(.horizontal, 15)
-                                .padding(.top, 15)
+                                    .padding(.horizontal, 15)
+                                    .padding(.top, 15)
                                 
                                 CustomDivider(color: Color.white)
                                     .padding(.horizontal, 30)
                             }
                         }
                         .frame(maxHeight: .infinity, alignment: .top)
+                        
+                        // Action buttons...
+                        Button(action: {
+                            sessionManager.showHideouts()
+                        }) {
+                            Text("Personal")
+                                .frame(width: 200, height: 50)
+                                .foregroundColor(.white)
+                                .font(.system(size: 25))
+                                .background(ColorManager.purple7)
+                                .cornerRadius(20)
+                        }
+                        .offset(y: -height * 0.55)
                     }
                         .frame(width: width - 70)
                         .padding(.horizontal, 35)
@@ -418,7 +431,7 @@ struct HomeView: View {
     
     private func displayStars() {
         DispatchQueue.global(qos: .userInitiated).async() {
-        for id in user.friends {
+            for id in user.friends {
                 
                 let friend = userDataSource.getUser(id: id)
                 guard let initial = friend.lastName.first else { return }
@@ -427,7 +440,7 @@ struct HomeView: View {
                 let star = Star(id: friend.id, name: name)
                 print("Successfully added a star for user: ", friend.id)
                 stars.append(star)
-        }
+            }
         }
     }
     
