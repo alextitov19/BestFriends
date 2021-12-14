@@ -29,6 +29,7 @@ public struct User: Model {
   public var pendingNotifications: [String]
   public var needIntro: Bool
   public var backgroundImageLink: String?
+  public var smileVaultLinks: [String]
   public var createdAt: Temporal.DateTime?
   public var updatedAt: Temporal.DateTime?
   
@@ -57,7 +58,8 @@ public struct User: Model {
       chatFontSize: Int,
       pendingNotifications: [String] = [],
       needIntro: Bool,
-      backgroundImageLink: String? = nil) {
+      backgroundImageLink: String? = nil,
+      smileVaultLinks: [String] = []) {
     self.init(id: id,
       firstName: firstName,
       lastName: lastName,
@@ -84,6 +86,7 @@ public struct User: Model {
       pendingNotifications: pendingNotifications,
       needIntro: needIntro,
       backgroundImageLink: backgroundImageLink,
+      smileVaultLinks: smileVaultLinks,
       createdAt: nil,
       updatedAt: nil)
   }
@@ -113,6 +116,7 @@ public struct User: Model {
       pendingNotifications: [String] = [],
       needIntro: Bool,
       backgroundImageLink: String? = nil,
+      smileVaultLinks: [String] = [],
       createdAt: Temporal.DateTime? = nil,
       updatedAt: Temporal.DateTime? = nil) {
       self.id = id
@@ -141,6 +145,7 @@ public struct User: Model {
       self.pendingNotifications = pendingNotifications
       self.needIntro = needIntro
       self.backgroundImageLink = backgroundImageLink
+      self.smileVaultLinks = smileVaultLinks
       self.createdAt = createdAt
       self.updatedAt = updatedAt
   }

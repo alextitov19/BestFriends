@@ -196,6 +196,7 @@ query GetUser($id: ID!) {
     pendingNotifications
     needIntro
     backgroundImageLink
+    smileVaultLinks
     createdAt
     updatedAt
   }
@@ -244,6 +245,7 @@ query ListUsers(
       pendingNotifications
       needIntro
       backgroundImageLink
+      smileVaultLinks
       createdAt
       updatedAt
     }

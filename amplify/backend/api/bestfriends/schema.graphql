@@ -73,6 +73,7 @@ type User @model {
   pendingNotifications: [String!]!
   needIntro: Boolean!
   backgroundImageLink: String
+  smileVaultLinks: [String!]!
 }
 
 type InvitedRoom {

@@ -238,6 +238,7 @@ subscription OnCreateUser {
     pendingNotifications
     needIntro
     backgroundImageLink
+    smileVaultLinks
     createdAt
     updatedAt
   }
@@ -292,6 +293,7 @@ subscription OnUpdateUser {
     pendingNotifications
     needIntro
     backgroundImageLink
+    smileVaultLinks
     createdAt
     updatedAt
   }
@@ -346,6 +348,7 @@ subscription OnDeleteUser {
     pendingNotifications
     needIntro
     backgroundImageLink
+    smileVaultLinks
     createdAt
     updatedAt
   }

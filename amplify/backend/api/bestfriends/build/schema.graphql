@@ -80,6 +80,7 @@ type User {
   pendingNotifications: [String!]!
   needIntro: Boolean!
   backgroundImageLink: String
+  smileVaultLinks: [String!]!
   createdAt: AWSDateTime!
   updatedAt: AWSDateTime!
 }
@@ -451,6 +452,7 @@ input ModelUserFilterInput {
   pendingNotifications: ModelStringInput
   needIntro: ModelBooleanInput
   backgroundImageLink: ModelStringInput
+  smileVaultLinks: ModelStringInput
   and: [ModelUserFilterInput]
   or: [ModelUserFilterInput]
   not: ModelUserFilterInput
@@ -483,6 +485,7 @@ input CreateUserInput {
   pendingNotifications: [String!]!
   needIntro: Boolean!
   backgroundImageLink: String
+  smileVaultLinks: [String!]!
 }
 
 input UpdateUserInput {
@@ -512,6 +515,7 @@ input UpdateUserInput {
   pendingNotifications: [String!]
   needIntro: Boolean
   backgroundImageLink: String
+  smileVaultLinks: [String!]
 }
 
 input DeleteUserInput {
@@ -541,6 +545,7 @@ input ModelUserConditionInput {
   pendingNotifications: ModelStringInput
   needIntro: ModelBooleanInput
   backgroundImageLink: ModelStringInput
+  smileVaultLinks: ModelStringInput
   and: [ModelUserConditionInput]
   or: [ModelUserConditionInput]
   not: ModelUserConditionInput

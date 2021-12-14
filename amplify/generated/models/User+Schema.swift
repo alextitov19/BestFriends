@@ -31,6 +31,7 @@ extension User {
     case pendingNotifications
     case needIntro
     case backgroundImageLink
+    case smileVaultLinks
     case createdAt
     case updatedAt
   }
@@ -70,6 +71,7 @@ extension User {
       .field(user.pendingNotifications, is: .required, ofType: .embeddedCollection(of: String.self)),
       .field(user.needIntro, is: .required, ofType: .bool),
       .field(user.backgroundImageLink, is: .optional, ofType: .string),
+      .field(user.smileVaultLinks, is: .required, ofType: .embeddedCollection(of: String.self)),
       .field(user.createdAt, is: .optional, isReadOnly: true, ofType: .dateTime),
       .field(user.updatedAt, is: .optional, isReadOnly: true, ofType: .dateTime)
     )

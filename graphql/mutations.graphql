@@ -268,6 +268,7 @@ mutation CreateUser(
     pendingNotifications
     needIntro
     backgroundImageLink
+    smileVaultLinks
     createdAt
     updatedAt
   }
@@ -325,6 +326,7 @@ mutation UpdateUser(
     pendingNotifications
     needIntro
     backgroundImageLink
+    smileVaultLinks
     createdAt
     updatedAt
   }
@@ -382,6 +384,7 @@ mutation DeleteUser(
     pendingNotifications
     needIntro
     backgroundImageLink
+    smileVaultLinks
     createdAt
     updatedAt
   }
