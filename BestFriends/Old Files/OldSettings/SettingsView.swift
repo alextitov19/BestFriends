@@ -465,7 +465,7 @@ struct SettingsView: View {
                                 .frame(width: 40, height: 40)
                                 .scaledToFill()
                                 .onTapGesture {
-                                    sessionManager.showSmileNotes()
+                                    sessionManager.showFavoriteMessages()
                                 }
                                 .padding(20)
                             
@@ -497,7 +497,7 @@ struct SettingsView: View {
                             .frame(width: 40, height: 40)
                             .scaledToFill()
                             .onTapGesture {
-                                sessionManager.showSmileNotes()
+                                sessionManager.showFavoriteMessages()
                             }
                             .padding(20)
                         

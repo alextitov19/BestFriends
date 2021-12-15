@@ -2,7 +2,7 @@
 import SwiftUI
 import Amplify
 
-struct SmileVaultView: View {
+struct FavoriteMessagesView: View {
     
     @State private var messages: [Message] = []
     @State private var cards: [SmileNotesCard] = []

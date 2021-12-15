@@ -63,8 +63,8 @@ struct BestFriendsApp: App {
             case .home:
                 HomeView()
                     .environmentObject(sessionManager)
-            case .smileNotes:
-                SmileVaultView()
+            case .favoriteMessages:
+                FavoriteMessagesView()
                     .environmentObject(sessionManager)
             case .settings:
                 Settings2View()

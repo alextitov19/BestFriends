@@ -36,10 +36,10 @@ struct HideoutsView : View {
                         .frame(width: 300)
                 }
                 .padding()
-
+                
                 // SmileVault Button...
                 Button(action: {
-                    sessionManager.showSmileNotes()
+                    sessionManager.showFavoriteMessages()
                 }) {
                     Image("smilevault")
                         .resizable()
@@ -50,33 +50,15 @@ struct HideoutsView : View {
                 Spacer()
                 
                 // Bottom navigation menu
-                HStack {
-                    Image("home-alt2")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            sessionManager.getCurrentAuthUser()
-                        }
-                        .padding(.horizontal, 10)
-
-                    Image("settings icon")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            sessionManager.showSettings()
-                        }
-                        .padding(.horizontal, 10)
-
-                    Image("horn")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .scaledToFill()
-                        .onTapGesture {
-                            sessionManager.showBroadcast()
-                        }
-                        .padding(.horizontal, 10)
+                Button(action: {
+                    sessionManager.home()
+                }) {
+                    Text("Home")
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(.white)
+                        .font(.system(size: 25))
+                        .background(ColorManager.purple7)
+                        .cornerRadius(20)
                 }
                 .ignoresSafeArea()
                 .offset(y: 10)

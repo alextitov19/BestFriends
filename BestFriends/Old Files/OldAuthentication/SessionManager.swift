@@ -14,7 +14,7 @@ enum AppState {
     case login
     case home
     case settings
-    case smileNotes
+    case favoriteMessages
     case chat(room: Room)
     case loading(page: String)
     case pin(room: Room)
@@ -57,8 +57,8 @@ final class SessionManager: ObservableObject {
         appState = .loading(page: page)
     }
     
-    func showSmileNotes() {
-        appState = .smileNotes
+    func showFavoriteMessages() {
+        appState = .favoriteMessages
     }
     
     func showSignUp() {
