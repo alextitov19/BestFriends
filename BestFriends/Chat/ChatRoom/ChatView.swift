@@ -74,7 +74,7 @@ struct ChatView: View {
         
         index = user.background
         if index == -1 {
-            self.backgroundImage = Image(uiImage: ShakingCoolDataSource().downloadImage(key: user.backgroundImageLink!, rotating: true, tall: true))
+            self.backgroundImage = Image(uiImage: ImageDataSource().downloadImage(key: user.backgroundImageLink!, rotating: true, tall: true))
         } else {
             self.backgroundImage = nil
         }

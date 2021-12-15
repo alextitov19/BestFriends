@@ -26,7 +26,7 @@ struct ShakingCoolView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
-    private var shakingCoolDataSource = ShakingCoolDataSource()
+    private var shakingCoolDataSource = ImageDataSource()
     
     var body: some View {
         ZStack {
@@ -168,7 +168,7 @@ struct ShakingCoolView: View {
                 
                 guard let inputImage = inputImage else { return }
                 print("Got the image")
-                let state = ShakingCoolDataSource().uploadImage(image: inputImage, targetID: chosenID)
+                let state = ImageDataSource().uploadImageToShakingCool(image: inputImage, targetID: chosenID)
                 withAnimation {
                     currentlyLoading = false
                 }

@@ -19,7 +19,7 @@ struct FullScreenChatImage: View {
                 .onAppear {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         print("Starting download")
-                        image = Image(uiImage: ShakingCoolDataSource().downloadImage(key: link, rotating: true, tall: true))
+                        image = Image(uiImage: ImageDataSource().downloadImage(key: link, rotating: true, tall: true))
                     }
                 }
             

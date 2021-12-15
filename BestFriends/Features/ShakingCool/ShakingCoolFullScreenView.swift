@@ -22,7 +22,7 @@ struct ShakingCoolFullScreenView: View {
     }
     
     
-    let shakingCoolDataSource = ShakingCoolDataSource()
+    let shakingCoolDataSource = ImageDataSource()
     
     var shakingCoolLinks: [String] = []
     

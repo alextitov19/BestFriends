@@ -8,7 +8,7 @@
 import SwiftUI
 import Amplify
 
-struct ShakingCoolDataSource {
+struct ImageDataSource {
     func downloadImage(key: String, rotating: Bool, tall: Bool) -> UIImage {
         var image = UIImage()
         
@@ -49,7 +49,7 @@ struct ShakingCoolDataSource {
         return image
     }
     
-    func uploadImage(image: UIImage, targetID: String) -> Bool {
+    func uploadImageToShakingCool(image: UIImage, targetID: String) -> Bool {
         var success = false
         let group = DispatchGroup()
         group.enter()
@@ -66,6 +66,35 @@ struct ShakingCoolDataSource {
                                         var shakingCool = user.shakingCool
                                         shakingCool.append(ShakingCool(id: Helper().randomString(length: 20), link: key, intendedid: targetID, intendedname: UserDataSource().getUser(id: targetID).firstName))
                                         user.shakingCool = shakingCool
+                                        UserDataSource().updateUser(user: user)
+                                        success = true
+                                        group.leave()
+                                    case .failure(let storageError):
+                                        print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
+                                        group.leave()
+                                    }
+                                   })
+        group.wait()
+        return success
+    }
+    
+    func uploadImageToSmileVault(image: UIImage) -> Bool {
+        var success = false
+        let group = DispatchGroup()
+        group.enter()
+        let data = image.pngData()!
+        let key = "Image/" + Helper().randomString(length: 20)
+        Amplify.Storage.uploadData(key: key, data: data,
+                                   progressListener: { progress in
+                                    print("Progress: \(progress)")
+                                   }, resultListener: { (event) in
+                                    switch event {
+                                    case .success(let data):
+                                        print("Completed: \(data)")
+                                        var user = UserDataSource().getCurrentUser()
+                                        var smileVaultLinks = user.smileVaultLinks
+                                        smileVaultLinks.append(key)
+                                        user.smileVaultLinks = smileVaultLinks
                                         UserDataSource().updateUser(user: user)
                                         success = true
                                         group.leave()

@@ -89,7 +89,7 @@
 		7AA201112635D2E100C9F00C /* RoomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201102635D2E100C9F00C /* RoomRow.swift */; };
 		7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201122635D5F500C9F00C /* Room+Extensions.swift */; };
 		7AAB444A265C619A00488983 /* ShakingCoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB4449265C619A00488983 /* ShakingCoolView.swift */; };
-		7AAB444C265C6B6800488983 /* ShakingCoolDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB444B265C6B6800488983 /* ShakingCoolDataSource.swift */; };
+		7AAB444C265C6B6800488983 /* ImageDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB444B265C6B6800488983 /* ImageDataSource.swift */; };
 		7AB070EF26AA564600425C27 /* FullScreenChatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB070EE26AA564600425C27 /* FullScreenChatImage.swift */; };
 		7AB62A8526426F86005A7744 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB62A8426426F86005A7744 /* SettingsView.swift */; };
 		7AC0DA9C262BAF3B007FC643 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC0DA9B262BAF3B007FC643 /* UserManager.swift */; };
@@ -302,7 +302,7 @@
 		7AA201102635D2E100C9F00C /* RoomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRow.swift; sourceTree = "<group>"; };
 		7AA201122635D5F500C9F00C /* Room+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+Extensions.swift"; sourceTree = "<group>"; };
 		7AAB4449265C619A00488983 /* ShakingCoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolView.swift; sourceTree = "<group>"; };
-		7AAB444B265C6B6800488983 /* ShakingCoolDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakingCoolDataSource.swift; sourceTree = "<group>"; };
+		7AAB444B265C6B6800488983 /* ImageDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataSource.swift; sourceTree = "<group>"; };
 		7AB070EE26AA564600425C27 /* FullScreenChatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenChatImage.swift; sourceTree = "<group>"; };
 		7AB62A8426426F86005A7744 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7AC0DA9B262BAF3B007FC643 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -712,7 +712,7 @@
 			isa = PBXGroup;
 			children = (
 				7A244F8626A7D276000F49ED /* ManDocDataSource.swift */,
-				7AAB444B265C6B6800488983 /* ShakingCoolDataSource.swift */,
+				7AAB444B265C6B6800488983 /* ImageDataSource.swift */,
 				7A417EC7265ED52900E95364 /* AdDataSource.swift */,
 				7AD362FB26852AE7003F6447 /* FirebaseDataSource.swift */,
 				7A1521C1262DE5BC00EC15B4 /* UserDataSource.swift */,
@@ -1214,7 +1214,7 @@
 				7A934002264FC94900BB5972 /* PushNotificationSender.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				7A95EA5826530DDA00C6C700 /* PinView.swift in Sources */,
-				7AAB444C265C6B6800488983 /* ShakingCoolDataSource.swift in Sources */,
+				7AAB444C265C6B6800488983 /* ImageDataSource.swift in Sources */,
 				7A9B958826EFFD81001D56E9 /* amplify/generated/models/ShakingCool.swift in Sources */,
 				7ACF912A2767BCBE00088ACA /* BlurView.swift in Sources */,
 				7AD1F0F926D1CBB500254306 /* SignUpView6.swift in Sources */,

@@ -424,7 +424,7 @@ struct HomeView: View {
                 guard let uid = row.messageString as String? else { return }
                 print("Preparing to send to: ", uid)
                 addFriend(id: uid)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 7) {
+                DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 7) {
                     sessionManager.reloadToPage(page: "home")
                 }
             }
