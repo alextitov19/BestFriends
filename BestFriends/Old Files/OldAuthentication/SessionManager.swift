@@ -22,6 +22,7 @@ enum AppState {
     case shakingCool
     case broadcast
     case hideouts
+    case smileVault
 }
 
 final class SessionManager: ObservableObject {
@@ -91,6 +92,10 @@ final class SessionManager: ObservableObject {
     
     func showHideouts() {
         appState = .hideouts
+    }
+    
+    func showSmileVault() {
+        appState = .smileVault
     }
     
     func signUp(username: String, email: String, password: String) {

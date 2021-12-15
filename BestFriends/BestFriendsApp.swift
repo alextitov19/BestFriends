@@ -90,6 +90,9 @@ struct BestFriendsApp: App {
             case .hideouts:
                 HideoutsView()
                     .environmentObject(sessionManager)
+            case .smileVault:
+                SmileVaultView()
+                    .environmentObject(sessionManager)
             }
             
         }

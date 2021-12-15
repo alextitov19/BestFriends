@@ -39,7 +39,7 @@ struct HideoutsView : View {
                 
                 // SmileVault Button...
                 Button(action: {
-                    sessionManager.showFavoriteMessages()
+                    sessionManager.showSmileVault()
                 }) {
                     Image("smilevault")
                         .resizable()
@@ -61,7 +61,6 @@ struct HideoutsView : View {
                         .cornerRadius(20)
                 }
                 .ignoresSafeArea()
-                .offset(y: 10)
             }
         }
     }
