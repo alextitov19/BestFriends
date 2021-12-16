@@ -20,7 +20,7 @@ struct SmileVaultView: View {
     
     @State private var isImagePickerActive = false // Image Picker for choosing image from gallery to upload to own vault
     @State private var inputImage : UIImage? // Image selected by the image picker is saved here
-    
+    @State private var currentImageIndex = 0
     var body: some View {
         
         ZStack {
@@ -33,14 +33,29 @@ struct SmileVaultView: View {
             
             // Images
             
-            ZStack {
-                ForEach(images, id: \.self) { uiimage in
-                    Image(uiImage: uiimage)
+            if images.count > 0 && currentImageIndex >= 0 && currentImageIndex < images.count {
+                    Image(uiImage: images[currentImageIndex])
                         .resizable()
-                        .frame(width: 300, height: 300)
+                        .frame(maxWidth: .infinity)
                         .scaledToFit()
-                }
+                        .gesture(DragGesture(minimumDistance: 3, coordinateSpace: .local)
+                                            .onEnded({ value in
+                                                if value.translation.width < 0 {
+                                                    // Swipe left
+                                                    if currentImageIndex + 1 < images.count {
+                                                        currentImageIndex += 1
+                                                    }
+                                                }
+
+                                                if value.translation.width > 0 {
+                                                    // right
+                                                    if currentImageIndex > 0 {
+                                                        currentImageIndex -= 1
+                                                    }
+                                                }
+                                            }))
             }
+
             
             
             // The border buttons and menus
@@ -108,8 +123,9 @@ struct SmileVaultView: View {
     private func addImage() {
         DispatchQueue.global(qos: .userInitiated).async() {
             if inputImage != nil {
-                print("Result: ", imageDS.uploadImageToSmileVault(image: inputImage!))
-                initialLoad()
+                let myimage = inputImage!
+                print("Result: ", imageDS.uploadImageToSmileVault(image: myimage))
+                images.append(myimage)
             }
         }
     }
