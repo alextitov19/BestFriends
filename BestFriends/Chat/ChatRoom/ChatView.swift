@@ -291,61 +291,74 @@ struct ChatView: View {
                     
                     
                     HStack { //footer
-                        Button(action: {
-                            self.sourceType = .camera
-                            let cam = AVCaptureDevice.authorizationStatus(for: .video)
-                            if cam == .notDetermined {
-                            AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
-                                    if response {
-                                        //access granted
-                                        self.sourceType = .camera
-                                        showingImagePicker = true
-                                    } else {}
+                        Menu {
+                            Button {
+                                self.sourceType = .camera
+                                let cam = AVCaptureDevice.authorizationStatus(for: .video)
+                                if cam == .notDetermined {
+                                AVCaptureDevice.requestAccess(for: AVMediaType.video) { response in
+                                        if response {
+                                            //access granted
+                                            self.sourceType = .camera
+                                            showingImagePicker = true
+                                        } else {}
+                                    }
+                                } else {
+                                    showingImagePicker = true
                                 }
-                            } else {
-                                showingImagePicker = true
+                                
+        
+                            } label: {
+                                Text("Camera")
+
                             }
                             
+                            Button {
+                                self.sourceType = .photoLibrary
+                                let photos = PHPhotoLibrary.authorizationStatus()
+                                if photos == .notDetermined {
+                                    PHPhotoLibrary.requestAuthorization({status in
+                                        if status == .authorized{
+                                            showingImagePicker = true
+                                        } else {}
+                                    })
+                                } else {
+                                    self.sourceType = .photoLibrary
+                                    showingImagePicker = true
+                                }
+                                
+        
+                            } label: {
+                                Text("Photo Gallery")
+
+                            }
                             
-                        }) {
+                            Button {
+                                stickerPopoverShowing = true
+                            } label: {
+                                Text("Stickers")
+                            }
+                            
+                        } label: {
                             Image("camera")
                                 .resizable()
                                 .frame(width: 40, height: 40)
                         }
                         
-                        Button(action: {
-                            self.sourceType = .photoLibrary
-                            let photos = PHPhotoLibrary.authorizationStatus()
-                            if photos == .notDetermined {
-                                PHPhotoLibrary.requestAuthorization({status in
-                                    if status == .authorized{
-                                        showingImagePicker = true
-                                    } else {}
-                                })
-                            } else {
-                                self.sourceType = .photoLibrary
-                                showingImagePicker = true
-                            }
-                        }) {
-                            Image("whiteImages")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                        }
+                        ZStack {
+                                                TextEditor(text: $currentBody)
+                                .cornerRadius(10)
+//                                                RoundedRectangle(cornerRadius: 10)
+//                                                    .stroke()
+//                                                    .foregroundColor(.gray)
+                                            }.frame(height: 50)
                         
-                        Button(action: {
-                            stickerPopoverShowing = true
-                        }) {
-                            Image("stickerWhite")
-                                .resizable()
-                                .frame(width: 37, height: 37)
-                        }
                         
-                        TextField("Message...", text: $currentBody)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .frame(maxWidth: 270)
-                            .background(Color(#colorLiteral(red: 0.4884749055, green: 0.2207083404, blue: 0.971470058, alpha: 0.3971501029)))
-                            .cornerRadius(15)
-                            .padding(5)
+//                        TextField("Message...", text: $currentBody)
+//                            .textFieldStyle(RoundedBorderTextFieldStyle())
+//                            .background(Color(#colorLiteral(red: 0.4884749055, green: 0.2207083404, blue: 0.971470058, alpha: 0.3971501029)))
+//                            .cornerRadius(15)
+//                            .padding(5)
                         
                         Button(action: {
                             if !currentBody.trimmingCharacters(in: .whitespaces).isEmpty {
@@ -361,7 +374,6 @@ struct ChatView: View {
                             Image("arrow")
                                 .resizable()
                                 .frame(width: 40, height: 40)
-                                .offset(x: -12)
                         }
                         
                     }
