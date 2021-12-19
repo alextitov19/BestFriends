@@ -191,7 +191,7 @@ struct ChatBubble: View {
             }
             .actionSheet(isPresented: $showingActionSheet) {
                 ActionSheet(title: Text("What would you like to do with this message?"), message: Text(message.body), buttons: [
-                    .default(Text("Save to SmileNotes")) {
+                    .default(Text("Save to FriendVault")) {
                         messageDataSource.saveToSmileNotes(message: message)
                     },
                     .default(Text("Add 'Like' emoji")) {
