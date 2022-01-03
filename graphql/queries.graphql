@@ -193,7 +193,7 @@ query GetUser($id: ID!) {
     notificationsBroadcast
     notificationsLP
     chatFontSize
-    pendingNotifications
+    notifications
     needIntro
     backgroundImageLink
     smileVaultLinks
@@ -242,7 +242,7 @@ query ListUsers(
       notificationsBroadcast
       notificationsLP
       chatFontSize
-      pendingNotifications
+      notifications
       needIntro
       backgroundImageLink
       smileVaultLinks

@@ -36,7 +36,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-32557-deployment/amplify-cfn-templates/auth/bestfriendsaa01a2ce-cloudformation-template.yml",
         "logicalId": "authbestfriendsaa01a2ce"
       },
-      "lastPushTimeStamp": "2021-12-14T17:52:37.327Z",
+      "lastPushTimeStamp": "2022-01-03T19:17:24.574Z",
       "output": {
         "UserPoolId": "us-east-2_P9hyIBx0E",
         "AppClientIDWeb": "29rf2rnkv40u05u0ej881cfmp1",
@@ -72,8 +72,8 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-32557-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apibestfriends"
       },
-      "lastPushTimeStamp": "2021-12-14T17:52:41.678Z",
-      "lastPushDirHash": "Sd4Sphyt1oTUxo6NwcsDE2oaVGc="
+      "lastPushTimeStamp": "2022-01-03T19:17:30.662Z",
+      "lastPushDirHash": "MiFBXIEZc6gRQ4s7rBdGwxvHVbo="
     }
   },
   "storage": {
@@ -84,7 +84,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-32557-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
         "logicalId": "storagebestfriendsbucket"
       },
-      "lastPushTimeStamp": "2021-12-14T17:52:37.331Z",
+      "lastPushTimeStamp": "2022-01-03T19:17:24.578Z",
       "output": {
         "BucketName": "bestfriends65627c1625d24f0fb55d584ede78693532557-staging",
         "Region": "us-east-2"
@@ -100,7 +100,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-bestfriends-staging-32557-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
         "logicalId": "analyticsbestfriends"
       },
-      "lastPushTimeStamp": "2021-12-14T17:52:37.332Z",
+      "lastPushTimeStamp": "2022-01-03T19:17:24.579Z",
       "output": {
         "appName": "bestfriends-staging",
         "Region": "us-east-1",

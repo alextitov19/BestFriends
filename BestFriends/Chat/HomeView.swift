@@ -16,6 +16,8 @@ import PhotosUI
 
 struct HomeView: View {
     
+    @State var areNotificationsShown = false
+    
     // Main components...
     private var user: User
     var userDataSource = UserDataSource()
@@ -265,22 +267,29 @@ struct HomeView: View {
                                         .cancel()
                                     ])
                                 }
-                            } else {
-                                Spacer()
-                                    .frame(width: 40, height: 0)
+                                .padding()
                             }
                             
-                            Button(action: {
-                                sessionManager.showHideouts()
-                            }) {
-                                Text("Personal")
-                                    .frame(width: 200, height: 50)
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple7)
-                                    .cornerRadius(20)
-                            }
-                            .padding(.horizontal)
+                            Image("hideouts")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                                .onTapGesture {
+                                    sessionManager.showHideouts()
+                                }
+                                .padding()
+                            
+                            Image("bell")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .scaledToFill()
+                                .onTapGesture {
+                                    areNotificationsShown.toggle()
+                                }
+                                .sheet(isPresented: $areNotificationsShown, content: {
+                                    NotificationsView()
+                                })
+                                .padding()
                             
                             Image("settings icon")
                                 .resizable()
@@ -289,6 +298,8 @@ struct HomeView: View {
                                 .onTapGesture {
                                     sessionManager.showSettings()
                                 }
+                                .padding()
+                            
                         }
                         .offset(y: -height * 0.55)
                         

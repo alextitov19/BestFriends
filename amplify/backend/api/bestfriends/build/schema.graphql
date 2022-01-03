@@ -77,7 +77,7 @@ type User {
   notificationsBroadcast: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
-  pendingNotifications: [String!]!
+  notifications: [String!]!
   needIntro: Boolean!
   backgroundImageLink: String
   smileVaultLinks: [String!]!
@@ -449,7 +449,7 @@ input ModelUserFilterInput {
   notificationsBroadcast: ModelBooleanInput
   notificationsLP: ModelBooleanInput
   chatFontSize: ModelIntInput
-  pendingNotifications: ModelStringInput
+  notifications: ModelStringInput
   needIntro: ModelBooleanInput
   backgroundImageLink: ModelStringInput
   smileVaultLinks: ModelStringInput
@@ -482,7 +482,7 @@ input CreateUserInput {
   notificationsBroadcast: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
-  pendingNotifications: [String!]!
+  notifications: [String!]!
   needIntro: Boolean!
   backgroundImageLink: String
   smileVaultLinks: [String!]!
@@ -512,7 +512,7 @@ input UpdateUserInput {
   notificationsBroadcast: Boolean
   notificationsLP: Boolean
   chatFontSize: Int
-  pendingNotifications: [String!]
+  notifications: [String!]
   needIntro: Boolean
   backgroundImageLink: String
   smileVaultLinks: [String!]
@@ -542,7 +542,7 @@ input ModelUserConditionInput {
   notificationsBroadcast: ModelBooleanInput
   notificationsLP: ModelBooleanInput
   chatFontSize: ModelIntInput
-  pendingNotifications: ModelStringInput
+  notifications: ModelStringInput
   needIntro: ModelBooleanInput
   backgroundImageLink: ModelStringInput
   smileVaultLinks: ModelStringInput

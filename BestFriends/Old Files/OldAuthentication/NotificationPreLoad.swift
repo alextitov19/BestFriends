@@ -151,9 +151,9 @@ struct NotificationPreLoad: View {
                     let token = friend.deviceFCMToken
                     PushNotificationSender().sendPushNotification(token: token, title: "\(userDataSource.getCurrentUser().firstName)", body: body)
                 }
-                var pendingNotifs = friend.pendingNotifications
+                var pendingNotifs = friend.notifications
                 pendingNotifs.append(body)
-                friend.pendingNotifications = pendingNotifs
+                friend.notifications = pendingNotifs
                 userDataSource.updateUser(user: friend)
             }
         }

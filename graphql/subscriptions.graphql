@@ -235,7 +235,7 @@ subscription OnCreateUser {
     notificationsBroadcast
     notificationsLP
     chatFontSize
-    pendingNotifications
+    notifications
     needIntro
     backgroundImageLink
     smileVaultLinks
@@ -290,7 +290,7 @@ subscription OnUpdateUser {
     notificationsBroadcast
     notificationsLP
     chatFontSize
-    pendingNotifications
+    notifications
     needIntro
     backgroundImageLink
     smileVaultLinks
@@ -345,7 +345,7 @@ subscription OnDeleteUser {
     notificationsBroadcast
     notificationsLP
     chatFontSize
-    pendingNotifications
+    notifications
     needIntro
     backgroundImageLink
     smileVaultLinks

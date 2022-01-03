@@ -14,7 +14,7 @@
 
 import SwiftUI
 
-struct NotificationsView: View {
+struct NotificationsSettingsView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     

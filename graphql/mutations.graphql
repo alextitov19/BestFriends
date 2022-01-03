@@ -265,7 +265,7 @@ mutation CreateUser(
     notificationsBroadcast
     notificationsLP
     chatFontSize
-    pendingNotifications
+    notifications
     needIntro
     backgroundImageLink
     smileVaultLinks
@@ -323,7 +323,7 @@ mutation UpdateUser(
     notificationsBroadcast
     notificationsLP
     chatFontSize
-    pendingNotifications
+    notifications
     needIntro
     backgroundImageLink
     smileVaultLinks
@@ -381,7 +381,7 @@ mutation DeleteUser(
     notificationsBroadcast
     notificationsLP
     chatFontSize
-    pendingNotifications
+    notifications
     needIntro
     backgroundImageLink
     smileVaultLinks

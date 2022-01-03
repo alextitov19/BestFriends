@@ -26,7 +26,7 @@ public struct User: Model {
   public var notificationsBroadcast: Bool
   public var notificationsLP: Bool
   public var chatFontSize: Int
-  public var pendingNotifications: [String]
+  public var notifications: [String]
   public var needIntro: Bool
   public var backgroundImageLink: String?
   public var smileVaultLinks: [String]
@@ -56,7 +56,7 @@ public struct User: Model {
       notificationsBroadcast: Bool,
       notificationsLP: Bool,
       chatFontSize: Int,
-      pendingNotifications: [String] = [],
+      notifications: [String] = [],
       needIntro: Bool,
       backgroundImageLink: String? = nil,
       smileVaultLinks: [String] = []) {
@@ -83,7 +83,7 @@ public struct User: Model {
       notificationsBroadcast: notificationsBroadcast,
       notificationsLP: notificationsLP,
       chatFontSize: chatFontSize,
-      pendingNotifications: pendingNotifications,
+      notifications: notifications,
       needIntro: needIntro,
       backgroundImageLink: backgroundImageLink,
       smileVaultLinks: smileVaultLinks,
@@ -113,7 +113,7 @@ public struct User: Model {
       notificationsBroadcast: Bool,
       notificationsLP: Bool,
       chatFontSize: Int,
-      pendingNotifications: [String] = [],
+      notifications: [String] = [],
       needIntro: Bool,
       backgroundImageLink: String? = nil,
       smileVaultLinks: [String] = [],
@@ -142,7 +142,7 @@ public struct User: Model {
       self.notificationsBroadcast = notificationsBroadcast
       self.notificationsLP = notificationsLP
       self.chatFontSize = chatFontSize
-      self.pendingNotifications = pendingNotifications
+      self.notifications = notifications
       self.needIntro = needIntro
       self.backgroundImageLink = backgroundImageLink
       self.smileVaultLinks = smileVaultLinks

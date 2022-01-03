@@ -116,7 +116,7 @@ struct RoomsView: View {
                         .scaledToFill()
                         .scaleEffect(isAtMaxScale ? 0.5 : 1)
                         .onAppear {
-                            if USS.user.pendingNotifications.count > 0 {
+                            if USS.user.notifications.count > 0 {
                                 withAnimation(self.animation, {
                                     self.isAtMaxScale.toggle()
                                 })
@@ -127,7 +127,7 @@ struct RoomsView: View {
                                 notificationsShowing.toggle()
                                 if notificationsShowing == false {
                                     var user = USS.user
-                                    user.pendingNotifications = []
+                                    user.notifications = []
                                     userDataSource.updateUser(user: user)
                                 }
                             }
@@ -163,7 +163,7 @@ struct RoomsView: View {
             
             VStack {
                 if notificationsShowing == true {
-                    ForEach(USS.user.pendingNotifications.reversed(), id: \.self) { foo in
+                    ForEach(USS.user.notifications.reversed(), id: \.self) { foo in
                         Text(foo)
                             .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                             .font(.system(size: 17, weight: .regular))

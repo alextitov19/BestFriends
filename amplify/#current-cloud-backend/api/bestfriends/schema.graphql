@@ -70,7 +70,7 @@ type User @model {
   notificationsBroadcast: Boolean!
   notificationsLP: Boolean!
   chatFontSize: Int!
-  pendingNotifications: [String!]!
+  notifications: [String!]!
   needIntro: Boolean!
   backgroundImageLink: String
   smileVaultLinks: [String!]!

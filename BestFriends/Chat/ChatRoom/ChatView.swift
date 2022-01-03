@@ -47,6 +47,7 @@ struct ChatView: View {
     
     
     @State private var newPinPopupShowing = false
+    @State private var areNotificationsShown = false
     
     var adIDs: [String] = []
     
@@ -212,22 +213,12 @@ struct ChatView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFill()
                         .scaleEffect(isAtMaxScale ? 0.5 : 1)
-                        .onAppear {
-                            if USS.user.pendingNotifications.count > 0 {
-                                print("Pending notifs count: ", USS.user.pendingNotifications.count)
-                                withAnimation(self.animation, {
-                                    self.isAtMaxScale.toggle()
-                                })
-                            }
-                        }
                         .onTapGesture {
-                            notificationsShowing.toggle()
-                            if notificationsShowing == false {
-                                var user = USS.user
-                                user.pendingNotifications = []
-                                userDataSource.updateUser(user: user)
-                            }
+                            areNotificationsShown.toggle()
                         }
+                        .sheet(isPresented: $areNotificationsShown, content: {
+                            NotificationsView()
+                        })
                     
                     Button(action: {
                         hideChat()
@@ -522,7 +513,7 @@ struct ChatView: View {
             
             if notificationsShowing == true {
                 VStack {
-                    ForEach(USS.user.pendingNotifications.reversed(), id: \.self) { foo in
+                    ForEach(USS.user.notifications.reversed(), id: \.self) { foo in
                         Text(foo)
                             .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                             .font(.system(size: 17, weight: .regular))
