@@ -55,7 +55,7 @@ struct SignUpView9: View {
                 .padding(.horizontal, 40)
                 
                 HStack {
-                    Text("Select your intrests")
+                    Text("Select your interests")
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(ColorManager.grey4)
 
