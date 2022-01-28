@@ -1,5 +1,5 @@
 //
-// Copyright 2010-2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// Copyright 2010-2022 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License").
 // You may not use this file except in compliance with the License.
@@ -8723,6 +8723,67 @@ NSString *const AWSPinpointTargetingErrorDomain = @"com.amazonaws.AWSPinpointTar
 
 @end
 
+@implementation AWSPinpointTargetingSendOTPMessageRequest
+
++ (BOOL)supportsSecureCoding {
+    return YES;
+}
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+	return @{
+             @"applicationId" : @"ApplicationId",
+             @"sendOTPMessageRequestParameters" : @"SendOTPMessageRequestParameters",
+             };
+}
+
++ (NSValueTransformer *)sendOTPMessageRequestParametersJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[AWSPinpointTargetingSendOTPMessageRequestParameters class]];
+}
+
+@end
+
+@implementation AWSPinpointTargetingSendOTPMessageRequestParameters
+
++ (BOOL)supportsSecureCoding {
+    return YES;
+}
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+	return @{
+             @"allowedAttempts" : @"AllowedAttempts",
+             @"brandName" : @"BrandName",
+             @"channel" : @"Channel",
+             @"codeLength" : @"CodeLength",
+             @"destinationIdentity" : @"DestinationIdentity",
+             @"entityId" : @"EntityId",
+             @"language" : @"Language",
+             @"originationIdentity" : @"OriginationIdentity",
+             @"referenceId" : @"ReferenceId",
+             @"templateId" : @"TemplateId",
+             @"validityPeriod" : @"ValidityPeriod",
+             };
+}
+
+@end
+
+@implementation AWSPinpointTargetingSendOTPMessageResponse
+
++ (BOOL)supportsSecureCoding {
+    return YES;
+}
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+	return @{
+             @"messageResponse" : @"MessageResponse",
+             };
+}
+
++ (NSValueTransformer *)messageResponseJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[AWSPinpointTargetingMessageResponse class]];
+}
+
+@end
+
 @implementation AWSPinpointTargetingSendUsersMessageRequest
 
 + (BOOL)supportsSecureCoding {
@@ -10184,6 +10245,73 @@ NSString *const AWSPinpointTargetingErrorDomain = @"com.amazonaws.AWSPinpointTar
 
 @end
 
+@implementation AWSPinpointTargetingVerificationResponse
+
++ (BOOL)supportsSecureCoding {
+    return YES;
+}
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+	return @{
+             @"valid" : @"Valid",
+             };
+}
+
+@end
+
+@implementation AWSPinpointTargetingVerifyOTPMessageRequest
+
++ (BOOL)supportsSecureCoding {
+    return YES;
+}
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+	return @{
+             @"applicationId" : @"ApplicationId",
+             @"verifyOTPMessageRequestParameters" : @"VerifyOTPMessageRequestParameters",
+             };
+}
+
++ (NSValueTransformer *)verifyOTPMessageRequestParametersJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[AWSPinpointTargetingVerifyOTPMessageRequestParameters class]];
+}
+
+@end
+
+@implementation AWSPinpointTargetingVerifyOTPMessageRequestParameters
+
++ (BOOL)supportsSecureCoding {
+    return YES;
+}
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+	return @{
+             @"destinationIdentity" : @"DestinationIdentity",
+             @"otp" : @"Otp",
+             @"referenceId" : @"ReferenceId",
+             };
+}
+
+@end
+
+@implementation AWSPinpointTargetingVerifyOTPMessageResponse
+
++ (BOOL)supportsSecureCoding {
+    return YES;
+}
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+	return @{
+             @"verificationResponse" : @"VerificationResponse",
+             };
+}
+
++ (NSValueTransformer *)verificationResponseJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[AWSPinpointTargetingVerificationResponse class]];
+}
+
+@end
+
 @implementation AWSPinpointTargetingVoiceChannelRequest
 
 + (BOOL)supportsSecureCoding {
@@ -10466,6 +10594,7 @@ NSString *const AWSPinpointTargetingErrorDomain = @"com.amazonaws.AWSPinpointTar
 	return @{
              @"activities" : @"Activities",
              @"creationDate" : @"CreationDate",
+             @"journeyChannelSettings" : @"JourneyChannelSettings",
              @"lastModifiedDate" : @"LastModifiedDate",
              @"limits" : @"Limits",
              @"localTime" : @"LocalTime",
@@ -10487,6 +10616,10 @@ NSString *const AWSPinpointTargetingErrorDomain = @"com.amazonaws.AWSPinpointTar
     } reverseBlock:^id(id mapMTLDictionary) {
         return [AWSModelUtility JSONDictionaryFromMapMTLDictionary:mapMTLDictionary];
     }];
+}
+
++ (NSValueTransformer *)journeyChannelSettingsJSONTransformer {
+    return [NSValueTransformer awsmtl_JSONDictionaryTransformerWithModelClass:[AWSPinpointTargetingJourneyChannelSettings class]];
 }
 
 + (NSValueTransformer *)limitsJSONTransformer {

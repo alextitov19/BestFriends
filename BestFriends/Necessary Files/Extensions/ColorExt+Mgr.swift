@@ -36,6 +36,13 @@ struct ColorManager {
     // Color for circles on SignUpViews
     // This is "purple5" + diffrent alpha
     static let signUpCircleColor = Color(hex: "#5c46dd", alpha: 0.3)
+    
+    // Colors for background of chats
+    static let chatBubble0 = Color(hex: "#CE3145", alpha: 0.8)
+    static let chatBubble1 = Color(hex: "#E3AD0E", alpha: 0.8)
+    static let chatBubble2 = Color(hex: "#6C4000", alpha: 0.8)
+    static let chatBubble3 = Color(hex: "#D26E0D", alpha: 0.8)
+    
 }
 
 extension Color {

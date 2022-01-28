@@ -1,5 +1,5 @@
 //
-// Copyright 2010-2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+// Copyright 2010-2022 Amazon.com, Inc. or its affiliates. All Rights Reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License").
 // You may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@
 #import "AWSPinpointTargetingResources.h"
 
 static NSString *const AWSInfoPinpointTargeting = @"PinpointTargeting";
-NSString *const AWSPinpointTargetingSDKVersion = @"2.26.5";
+NSString *const AWSPinpointTargetingSDKVersion = @"2.27.1";
 
 
 @interface AWSPinpointTargetingResponseSerializer : AWSJSONResponseSerializer
@@ -2388,6 +2388,29 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
     }];
 }
 
+- (AWSTask<AWSPinpointTargetingSendOTPMessageResponse *> *)sendOTPMessage:(AWSPinpointTargetingSendOTPMessageRequest *)request {
+    return [self invokeRequest:request
+                    HTTPMethod:AWSHTTPMethodPOST
+                     URLString:@"/v1/apps/{application-id}/otp"
+                  targetPrefix:@""
+                 operationName:@"SendOTPMessage"
+                   outputClass:[AWSPinpointTargetingSendOTPMessageResponse class]];
+}
+
+- (void)sendOTPMessage:(AWSPinpointTargetingSendOTPMessageRequest *)request
+     completionHandler:(void (^)(AWSPinpointTargetingSendOTPMessageResponse *response, NSError *error))completionHandler {
+    [[self sendOTPMessage:request] continueWithBlock:^id _Nullable(AWSTask<AWSPinpointTargetingSendOTPMessageResponse *> * _Nonnull task) {
+        AWSPinpointTargetingSendOTPMessageResponse *result = task.result;
+        NSError *error = task.error;
+
+        if (completionHandler) {
+            completionHandler(result, error);
+        }
+
+        return nil;
+    }];
+}
+
 - (AWSTask<AWSPinpointTargetingSendUsersMessagesResponse *> *)sendUsersMessages:(AWSPinpointTargetingSendUsersMessagesRequest *)request {
     return [self invokeRequest:request
                     HTTPMethod:AWSHTTPMethodPOST
@@ -2997,6 +3020,29 @@ static AWSSynchronizedMutableDictionary *_serviceClients = nil;
      completionHandler:(void (^)(AWSPinpointTargetingUpdateVoiceTemplateResponse *response, NSError *error))completionHandler {
     [[self updateVoiceTemplate:request] continueWithBlock:^id _Nullable(AWSTask<AWSPinpointTargetingUpdateVoiceTemplateResponse *> * _Nonnull task) {
         AWSPinpointTargetingUpdateVoiceTemplateResponse *result = task.result;
+        NSError *error = task.error;
+
+        if (completionHandler) {
+            completionHandler(result, error);
+        }
+
+        return nil;
+    }];
+}
+
+- (AWSTask<AWSPinpointTargetingVerifyOTPMessageResponse *> *)verifyOTPMessage:(AWSPinpointTargetingVerifyOTPMessageRequest *)request {
+    return [self invokeRequest:request
+                    HTTPMethod:AWSHTTPMethodPOST
+                     URLString:@"/v1/apps/{application-id}/verify-otp"
+                  targetPrefix:@""
+                 operationName:@"VerifyOTPMessage"
+                   outputClass:[AWSPinpointTargetingVerifyOTPMessageResponse class]];
+}
+
+- (void)verifyOTPMessage:(AWSPinpointTargetingVerifyOTPMessageRequest *)request
+     completionHandler:(void (^)(AWSPinpointTargetingVerifyOTPMessageResponse *response, NSError *error))completionHandler {
+    [[self verifyOTPMessage:request] continueWithBlock:^id _Nullable(AWSTask<AWSPinpointTargetingVerifyOTPMessageResponse *> * _Nonnull task) {
+        AWSPinpointTargetingVerifyOTPMessageResponse *result = task.result;
         NSError *error = task.error;
 
         if (completionHandler) {

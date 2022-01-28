@@ -76,11 +76,32 @@ struct CustomizationView: View {
                     }
                     
                     Divider()
+                    
                     NavigationLink(
                         destination: ChangeBackground(),
                         label: {
                             HStack {
                                 Text("Chat Background")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(.black)
+
+                                Spacer()
+                                
+                                Image("arrowRight")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .scaledToFit()
+                                    .colorInvert()
+                            }
+                        })
+                    
+                    Divider()
+                    
+                    NavigationLink(
+                        destination: ChatThemeSettings(),
+                        label: {
+                            HStack {
+                                Text("Chat Theme")
                                     .font(.system(size: 20))
                                     .foregroundColor(.black)
 

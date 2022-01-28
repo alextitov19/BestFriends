@@ -105,6 +105,9 @@ struct ChatView: View {
     
     @State var currentBody: String = ""
     
+    
+    
+    //MARK: Body
     var body: some View {
         
         ZStack{
@@ -234,7 +237,7 @@ struct ChatView: View {
                     ScrollView(showsIndicators: false) {
                         LazyVStack {
                             ForEach(messageDataSource.room.messages, id: \.id) { message in
-                                ChatBubble(msg: message, messageDS: messageDataSource, myuser: user)
+                                ChatBubble(msg: message, messageDS: messageDataSource, myuser: user, colorIndex: user.background)
                                     .id(message.id)
                             }
                         }

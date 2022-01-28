@@ -15,31 +15,45 @@ struct ChatBubble: View {
     let messageDataSource: MessageDataSource
     let showLiked: Bool
     let showThumb: Bool
-
+    private var backgroundColor: Color
+    
     @State private var showingActionSheet = false
     @State private var isImagePresented = false
     @State private var currentLink = ""
-    @State private var backgroundColor1 = Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 0.7475871361))
     @State private var backgroundColor2 = Color(#colorLiteral(red: 1, green: 0.6660452485, blue: 0, alpha: 0.75))
     @State private var timestring = ""
     
-    init(msg: Message, messageDS: MessageDataSource, myuser: User) {
-        message = msg
-        messageDataSource = messageDS
-        user = myuser
+    init(msg: Message, messageDS: MessageDataSource, myuser: User, colorIndex: Int) {
+        self.message = msg
+        self.messageDataSource = messageDS
+        self.user = myuser
         
+        // Set background color based off the theme
+        switch colorIndex {
+        case 0:
+            self.backgroundColor = ColorManager.chatBubble0
+        case 1:
+            self.backgroundColor = ColorManager.chatBubble1
+        case 2:
+            self.backgroundColor = ColorManager.chatBubble2
+        case 3:
+            self.backgroundColor = ColorManager.chatBubble3
+        default:
+            self.backgroundColor = ColorManager.chatBubble0
+        }
+                
         if message.hasBeenLiked {
             print("Has been liked")
-            showLiked = true
+            self.showLiked = true
         } else {
-            showLiked = false
+            self.showLiked = false
         }
         
         if message.hasBeenThumb {
             print("Has been thumb")
-            showThumb = true
+            self.showThumb = true
         } else {
-            showThumb = false
+            self.showThumb = false
         }
     }
     
@@ -78,12 +92,12 @@ struct ChatBubble: View {
                             .multilineTextAlignment(.leading)
                             .font(.system(size: CGFloat(user.chatFontSize)).weight(.light))
                             .foregroundColor(.white)
-                            .background(backgroundColor1)
+                            .background(backgroundColor)
                             .cornerRadius(15)
                             .gesture(LongPressGesture(minimumDuration: 1)
                                         .onEnded { _ in
-                                            showingActionSheet = true
-                                        })
+                                showingActionSheet = true
+                            })
                     }
                 }
                 HStack {
@@ -143,8 +157,8 @@ struct ChatBubble: View {
                             }
                             .gesture(LongPressGesture(minimumDuration: 1)
                                         .onEnded { _ in
-                                            showingActionSheet = true
-                                        })
+                                showingActionSheet = true
+                            })
                             .sheet(isPresented: $isImagePresented) {
                                 FullScreenChatImage(link: message.attachmentPath!)
                                 
@@ -161,12 +175,12 @@ struct ChatBubble: View {
                             .multilineTextAlignment(.leading)
                             .font(.system(size: CGFloat(user.chatFontSize)).weight(.light))
                             .foregroundColor(.white)
-                            .background(backgroundColor1)
+                            .background(backgroundColor)
                             .cornerRadius(15)
                             .gesture(LongPressGesture(minimumDuration: 1)
                                         .onEnded { _ in
-                                            showingActionSheet = true
-                                        })
+                                showingActionSheet = true
+                            })
                     }
                     
                     Spacer()
@@ -202,7 +216,6 @@ struct ChatBubble: View {
                     },
                     .default(Text("Report as abusive")) {
                         messageDataSource.reportMessage(message: message)
-                        backgroundColor1 = .red
                         backgroundColor2 = .red
                     },
                     .cancel()
