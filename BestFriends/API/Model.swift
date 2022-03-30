@@ -17,13 +17,11 @@ struct Credentials: Codable {
 struct SignUpUserData: Codable {
     let firstName: String
     let lastName: String
-    let email: String
-    let password: String
+    let credentials: Credentials
     enum CodingKeys: String, CodingKey {
         case firstName = "first_name"
         case lastName = "last_name"
-        case email = "email"
-        case password = "password"
+        case credentials = "credentials"
     }
 }
 

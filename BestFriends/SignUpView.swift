@@ -61,7 +61,7 @@ struct SignUpView: View {
                 
                 Button(action: {
                     if checkFields() {
-                        let data = SignUpUserData(firstName: firstname, lastName: lastname, email: email, password: password)
+                        let data = SignUpUserData(firstName: firstname, lastName: lastname, credentials: Credentials(email: email, password: password))
                         // Sign up
                         RestApi.instance.signUp(data).then{ response in
                             //   self.removeActivityIndicator(myActivityIndicator)
