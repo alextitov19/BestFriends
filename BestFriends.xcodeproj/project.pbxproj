@@ -13,6 +13,7 @@
 		7A0856A427F3D9C400E8282B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A327F3D9C400E8282B /* Model.swift */; };
 		7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A527F3D9E800E8282B /* KeychainPasswordItem.swift */; };
 		7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A727F3DA4E00E8282B /* Defaults.swift */; };
+		7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A927F3DCC300E8282B /* SessionManager.swift */; };
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
 		7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A575274416C200FB6B4F /* ViewExt.swift */; };
 		7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A576274416C200FB6B4F /* TextFieldCustom.swift */; };
@@ -57,6 +58,7 @@
 		7A0856A327F3D9C400E8282B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7A0856A527F3D9E800E8282B /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		7A0856A727F3DA4E00E8282B /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		7A0856A927F3DCC300E8282B /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		7A22A575274416C200FB6B4F /* ViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		7A22A576274416C200FB6B4F /* TextFieldCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCustom.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
+				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
 				7AC71DA627F3D7D4008D191B /* API */,
 				7A1DBD602659B1A400EB4B42 /* Extensions */,
 				7A6A4D00262B865D00561D87 /* Assets */,
@@ -415,6 +418,7 @@
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
+				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,

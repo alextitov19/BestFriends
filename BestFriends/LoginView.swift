@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
+    
+    @EnvironmentObject var sessionManager: SessionManager
         
-    @State var username = ""
+    @State var email = ""
     @State var password = ""
     @State var isErrorHidden = true
     
@@ -35,7 +37,7 @@ struct LoginView: View {
                         .foregroundColor(ColorManager.grey3)
                         .padding(30)
                     
-                    MainTextField(text: $username, placeholder: "Username")
+                    MainTextField(text: $email, placeholder: "Email")
                     
                     MainSecureField(text: $password, placeholder: "Password")
                     
@@ -47,13 +49,8 @@ struct LoginView: View {
                         .isHidden(isErrorHidden)
                     
                     Button(action: {
-//                        let value = sessionManager.login(
-//                            username: username.lowercased(),
-//                            password: password
-//                        )
-//                        if value == false {
-//                            isErrorHidden = false
-//                        }
+                        let fmtEmail = email.trimmingCharacters(in: .whitespaces).lowercased()
+                        print("Login result: ", sessionManager.login(username: fmtEmail, password: password))
                     }) {
                         CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
                     }

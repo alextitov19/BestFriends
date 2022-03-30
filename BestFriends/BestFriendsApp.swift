@@ -10,10 +10,13 @@ import SwiftUI
 @main
 struct BestFriendsApp: App {
     
+    var sessionManager = SessionManager()
+    
     var body: some Scene {
         WindowGroup {
             
             LoginView()
+                .environmentObject(sessionManager)
             
         }
     }
