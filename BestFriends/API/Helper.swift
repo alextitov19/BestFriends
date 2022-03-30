@@ -111,7 +111,7 @@ class Helper {
     }
     
     func login(email: String, password: String) -> Promise<Tokens> {
-        let cred = Credentials(username: email, password: password)
+        let cred = Credentials(email: email, password: password)
         let payload = try? JSONEncoder().encode(cred)
         if let p = payload {
             print(String(data:p,encoding:.utf8) as Any)

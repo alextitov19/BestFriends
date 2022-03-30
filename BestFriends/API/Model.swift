@@ -6,8 +6,12 @@
 //
 
 struct Credentials: Codable {
-    let username: String
+    let email: String
     let password: String
+    enum CodingKeys: String, CodingKey {
+        case email = "email"
+        case password = "password"
+    }
 }
 
 struct UserData: Codable {

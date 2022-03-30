@@ -13,8 +13,8 @@ struct LoginView: View {
         
     @State var email = ""
     @State var password = ""
-    @State var isErrorHidden = true
-    
+    @State private var errorString = ""
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -41,16 +41,30 @@ struct LoginView: View {
                     
                     MainSecureField(text: $password, placeholder: "Password")
                     
-                    Text("Double check the credentails")
+                    Text(errorString)
                         .font(.system(size: 20, weight: .light))
                         .italic()
                         .foregroundColor(ColorManager.red)
                         .multilineTextAlignment(.center)
-                        .isHidden(isErrorHidden)
                     
                     Button(action: {
-                        let fmtEmail = email.trimmingCharacters(in: .whitespaces).lowercased()
-                        print("Login result: ", sessionManager.login(username: fmtEmail, password: password))
+                        // Check if email and password are empty
+                        if email.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                            errorString = "All fields must be properly filled in"
+                            return
+                        }
+                        
+                        // Login
+                        RestApi.instance.login(email: email, password: password).then{ tokens in
+                            //   self.removeActivityIndicator(myActivityIndicator)
+                            print("Tokens: ", tokens)
+                        }.catch { err in
+                            print("Got error")
+                            print(err)
+                            //  self.removeActivityIndicator(myActivityIndicator)
+                            errorString = "Cannot login. Try again"
+                        }
+                        
                     }) {
                         CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
                     }
