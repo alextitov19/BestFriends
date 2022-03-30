@@ -15,7 +15,7 @@ struct BestFriendsApp: App {
     var body: some Scene {
         WindowGroup {
             
-            LoginView()
+            SignUpView()
                 .environmentObject(sessionManager)
             
         }

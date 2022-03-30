@@ -99,9 +99,8 @@ class Helper {
         accessToken = ""
     }
     
-    func signUp(_ user:User, _ password: String) -> Promise<Int> {
-        let userdata = UserData(name: user.name, username: user.email, password: password)
-        let payload = try? JSONEncoder().encode(userdata)
+    func signUp(_ userData: SignUpUserData) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(userData)
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }

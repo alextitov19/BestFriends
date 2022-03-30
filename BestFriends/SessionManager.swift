@@ -26,12 +26,4 @@ final class SessionManager: ObservableObject {
     func showLogin() {
         appState = .login
     }
-    
-    func signUp(username: String, email: String, password: String) {
-
-    }
-    
-    func login(username: String, password: String) -> Bool {
-        return true
-    }
 }
