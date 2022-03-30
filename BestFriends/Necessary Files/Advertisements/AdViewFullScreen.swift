@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Amplify
 import AVKit
 
 struct AdViewFullScreen: View {
