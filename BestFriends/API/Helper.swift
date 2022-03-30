@@ -46,7 +46,7 @@ enum AuthErrors: Error {
 }
 
 class Helper {
-    static let serviceName = "ZetMapService"
+    static let serviceName = "BestFriendsService"
     
     private var signUpUrl: String
     private var loginUrl: String
@@ -192,7 +192,7 @@ class Helper {
             self.accessToken = tokens.AccessToken.Token
             self.renewToken = tokens.RenewToken.Token
             do {
-                try AuthController.storeToken(user: Settings.currentUser!, token: tokens.RenewToken.Token)
+                try AuthController.storeToken(user: Defaults.currentUser!, token: tokens.RenewToken.Token)
             } catch {
                 print(error)
             }
