@@ -10,13 +10,22 @@ import SwiftUI
 @main
 struct BestFriendsApp: App {
     
-    var sessionManager = SessionManager()
+    @ObservedObject var sessionManager = SessionManager()
     
     var body: some Scene {
         WindowGroup {
+            switch sessionManager.appState {
+            case .signUp:
+                SignUpView()
+                    .environmentObject(sessionManager)
+            case .login:
+                LoginView()
+                    .environmentObject(sessionManager)
+            case .home:
+                HomeView()
+                    .environmentObject(sessionManager)
+            }
             
-            SignUpView()
-                .environmentObject(sessionManager)
             
         }
     }

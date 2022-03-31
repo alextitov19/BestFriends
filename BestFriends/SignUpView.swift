@@ -89,6 +89,15 @@ struct SignUpView: View {
                     Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
                         .foregroundColor(ColorManager.purple5)
                 }
+                
+                Text("Login")
+                    .underline()
+                    .frame(width: 150, height: 30)
+                    .foregroundColor(ColorManager.purple5)
+                    .onTapGesture {
+                        sessionManager.showLogin()
+                    }
+                    .padding()
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)

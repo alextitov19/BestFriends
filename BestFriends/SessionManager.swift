@@ -7,7 +7,7 @@
 import Foundation
 
 enum AppState {
-    case welcome
+    case home
     case signUp
     case login
 }
@@ -19,8 +19,8 @@ final class SessionManager: ObservableObject {
         appState = .signUp
     }
     
-    func showWelcome() {
-        appState = .welcome
+    func showHome() {
+        appState = .home
     }
     
     func showLogin() {

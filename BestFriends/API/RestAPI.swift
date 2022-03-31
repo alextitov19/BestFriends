@@ -11,7 +11,8 @@ import Promises
 class RestApi {
     var helper: Helper
     var userId: String?
-    let API_URL = "http://54.173.213.37:8080/api/v1"
+//    let API_URL = "http://54.173.213.37:8080/api/v1"
+    let API_URL = "http://localhost:8080/api/v1"
     
     public static var instance = RestApi()
     

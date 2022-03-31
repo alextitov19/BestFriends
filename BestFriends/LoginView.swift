@@ -56,12 +56,11 @@ struct LoginView: View {
                         
                         // Login
                         RestApi.instance.login(email: email, password: password).then{ tokens in
-                            //   self.removeActivityIndicator(myActivityIndicator)
                             print("Tokens: ", tokens)
+                            sessionManager.showHome()
                         }.catch { err in
                             print("Got error")
                             print(err)
-                            //  self.removeActivityIndicator(myActivityIndicator)
                             errorString = "Cannot login. Try again"
                         }
                         
@@ -69,37 +68,14 @@ struct LoginView: View {
                         CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
                     }
                     
-                    
+                    Button(action: {
+                        sessionManager.showSignUp()
+                    }) {
                     Text("Sign Up")
                         .underline()
                         .frame(width: 150, height: 30)
                         .foregroundColor(ColorManager.purple5)
-                        .onTapGesture {
-//                            sessionManager.showSignUp()
-                        }
-                    
-//                    HStack {
-//                        NavigationLink(
-//                            destination: ForgotUsername().environmentObject(sessionManager),
-//                            label: {
-//                                Text("Forgot Username")
-//                                    .underline()
-//                                    .frame(width: 150, height: 30)
-//                                    .foregroundColor(ColorManager.purple7)
-//
-//                            })
-//                            .padding(5)
-//
-//                        NavigationLink(
-//                            destination: ForgotPassword(),
-//                            label: {
-//                                Text("Forgot Password")
-//                                    .underline()
-//                                    .frame(width: 150, height: 30)
-//                                    .foregroundColor(ColorManager.purple7)
-//                            })
-//                            .padding(5)
-//                    }
+                    }
                 }
             }
         }
