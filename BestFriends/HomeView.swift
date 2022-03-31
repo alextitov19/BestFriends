@@ -33,9 +33,25 @@ struct HomeView: View {
                         .foregroundColor(ColorManager.grey3)
                         .padding(30)
                     
+                    Button(action: getHomeData, label: {
+                        Text("Get home data")
+                            .font(.custom("MainFont", size: 30).bold())
+                            .foregroundColor(ColorManager.red)
+                    })
+                    .padding(30)
+                    
                     
                 }
             }
+        }
+    }
+    
+    private func getHomeData() {
+        RestApi.instance.getHomeData().then{ data in
+            print("Got HomeData: ", data)
+        }.catch { err in
+            print("Got error")
+            print(err)
         }
     }
 }

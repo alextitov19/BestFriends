@@ -46,6 +46,9 @@
 		7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1044F265AB93F007627FD /* UIWindowExtension.swift */; };
 		7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD10451265AB948007627FD /* UIDeviceExtension.swift */; };
 		7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DEF827F615F000D9F0E1 /* HomeView.swift */; };
+		7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DEFA27F66C8900D9F0E1 /* HomeModels.swift */; };
+		7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DEFC27F66C9800D9F0E1 /* ChatModels.swift */; };
+		7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DEFE27F66F9100D9F0E1 /* AtmosphereModels.swift */; };
 		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
 		7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */; };
 		CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */; };
@@ -94,6 +97,9 @@
 		7AD1044F265AB93F007627FD /* UIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtension.swift; sourceTree = "<group>"; };
 		7AD10451265AB948007627FD /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		7AD8DEF827F615F000D9F0E1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7AD8DEFA27F66C8900D9F0E1 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		7AD8DEFC27F66C9800D9F0E1 /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
+		7AD8DEFE27F66F9100D9F0E1 /* AtmosphereModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereModels.swift; sourceTree = "<group>"; };
 		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7AED44FA2647310700944708 /* BestFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriends.entitlements; sourceTree = "<group>"; };
 		7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashScreen2.mp4; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 		7A1C048627F4C3A90002B173 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7AD8DEFA27F66C8900D9F0E1 /* HomeModels.swift */,
+				7AD8DEFC27F66C9800D9F0E1 /* ChatModels.swift */,
+				7AD8DEFE27F66F9100D9F0E1 /* AtmosphereModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -421,6 +430,7 @@
 				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
+				7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
@@ -435,8 +445,10 @@
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
 				7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */,
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
+				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
 				7A1C048527F4BEB30002B173 /* SignUpView.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
+				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
 				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,

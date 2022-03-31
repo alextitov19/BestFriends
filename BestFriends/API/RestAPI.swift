@@ -34,12 +34,16 @@ class RestApi {
         return helper.login(email: email, password: password)
     }
     
-    public func getUserDetails() -> Promise<User> {
-        return helper.callRestApi(url: API_URL + "/services/user", method: .get, User.self)
+    public func getCurrentUser() -> Promise<User> {
+        return helper.callRestApi(url: API_URL + "/services/users", method: .get, User.self)
+    }
+    
+    public func getHomeData() -> Promise<HomeData> {
+        return helper.callRestApi(url: API_URL + "/services/users/home", method: .get, HomeData.self)
     }
     
     public func updateUserId() {
-        getUserDetails().then { details in
+        getCurrentUser().then { details in
             self.userId = details.id
         }
     }

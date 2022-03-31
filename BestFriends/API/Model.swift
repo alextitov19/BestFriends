@@ -34,14 +34,31 @@ struct SignUpResponse: Codable {
     }
 }
 
+//struct User: Codable {
+//    let id: String
+//    let name: String
+//    let email: String
+//    enum CodingKeys: String, CodingKey {
+//        case id = "id"
+//        case name = "name"
+//        case email = "email"
+//    }
+//}
+
 struct User: Codable {
     let id: String
-    let name: String
-    let email: String
+    let firstName: String
+    let lastName: String
+    let friends: [String] = []
+    let groups: [String] = []
+    let atmosphere: String
     enum CodingKeys: String, CodingKey {
         case id = "id"
-        case name = "name"
-        case email = "email"
+        case firstName = "first_name"
+        case lastName = "last_name"
+        case friends = "friends"
+        case groups = "groups"
+        case atmosphere = "atmosphere"
     }
 }
 

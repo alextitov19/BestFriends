@@ -16,7 +16,7 @@ final class AuthController {
         }
         
         do {
-            let renewToken = try KeychainPasswordItem(service: serviceName, account: currentUser.email).readPassword()
+            let renewToken = try KeychainPasswordItem(service: serviceName, account: currentUser.id).readPassword()
             return renewToken.count > 0
         } catch {
             return false
@@ -24,14 +24,14 @@ final class AuthController {
     }
     
     class func storeToken(user: User, token: String) throws {
-        try KeychainPasswordItem(service: serviceName, account: user.email).savePassword(token)
+        try KeychainPasswordItem(service: serviceName, account: user.id).savePassword(token)
         Defaults.currentUser = user
             NotificationCenter.default.post(name: .loginStatusChanged, object: nil)
     }
     
     class func getToken() throws -> String {
         if let user = Defaults.currentUser {
-            return try KeychainPasswordItem(service: serviceName, account: user.email).readPassword()
+            return try KeychainPasswordItem(service: serviceName, account: user.id).readPassword()
         }
         return ""
     }
@@ -40,7 +40,7 @@ final class AuthController {
         guard let currentUser = Defaults.currentUser else {
             return
         }
-        try KeychainPasswordItem(service: serviceName, account: currentUser.email).deleteItem()
+        try KeychainPasswordItem(service: serviceName, account: currentUser.id).deleteItem()
         Defaults.currentUser = nil
         NotificationCenter.default.post(name: .loginStatusChanged, object: nil)
     }
