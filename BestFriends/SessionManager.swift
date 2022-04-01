@@ -26,4 +26,14 @@ final class SessionManager: ObservableObject {
     func showLogin() {
         appState = .login
     }
+    
+    func login(email: String, password: String) {
+        RestApi.instance.login(email: email, password: password).then{ tokens in
+            print("Tokens: ", tokens)
+            self.showHome()
+        }.catch { err in
+            print("Got error")
+            print(err)
+        }
+    }
 }

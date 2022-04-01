@@ -66,6 +66,7 @@ struct SignUpView: View {
                         RestApi.instance.signUp(data).then{ response in
                             //   self.removeActivityIndicator(myActivityIndicator)
                             print("Response: ", response)
+                            sessionManager.login(email: email, password: password)
                         }.catch { err in
                             print("Got error")
                             print(err)

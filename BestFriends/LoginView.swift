@@ -54,15 +54,7 @@ struct LoginView: View {
                             return
                         }
                         
-                        // Login
-                        RestApi.instance.login(email: email, password: password).then{ tokens in
-                            print("Tokens: ", tokens)
-                            sessionManager.showHome()
-                        }.catch { err in
-                            print("Got error")
-                            print(err)
-                            errorString = "Cannot login. Try again"
-                        }
+                        sessionManager.login(email: email, password: password)
                         
                     }) {
                         CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
