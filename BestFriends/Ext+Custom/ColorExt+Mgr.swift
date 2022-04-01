@@ -43,6 +43,15 @@ struct ColorManager {
     static let chatBubble2 = Color(hex: "#6C4000", alpha: 0.8)
     static let chatBubble3 = Color(hex: "#D26E0D", alpha: 0.8)
     
+    //Planet menu circle background colors
+    // PMBC = Planet menu Background Color
+    static let pmbc_green = Color(hex: "#A1B57D")
+    static let pmbc_blue = Color(hex: "#6998AB")
+    static let pmbc_pink = Color(hex: "#C99797")
+
+    
+    //Planet glow colors
+    
 }
 
 extension Color {
