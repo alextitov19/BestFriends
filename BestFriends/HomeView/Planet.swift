@@ -18,7 +18,20 @@ struct Planet: View {
         PlanetView(planet: planet, mood: mood)
             .scaledToFit()
             .frame(width: 120, height: 120)
-            .glow(color: ColorManager.pmbc_blue)
+            .glow(color: glowColor())
+    }
+    
+    private func glowColor() -> Color {
+        switch mood {
+        case 0:
+            return ColorManager.pmbc_blue
+        case 1:
+            return ColorManager.pmbc_green
+        case 2:
+            return ColorManager.pmbc_pink
+        default:
+            return ColorManager.pmbc_blue
+        }
     }
 }
 
@@ -30,7 +43,6 @@ struct PlanetView: View {
         Image("planet_\(planet)")
             .resizable()
     }
-    
 }
 
 struct PlanetActionsView: View {

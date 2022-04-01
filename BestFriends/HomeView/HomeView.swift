@@ -58,7 +58,8 @@ struct HomeView: View {
                                 .scaledToFit()
                                 .frame(width: 200, height: 200)
                                 .onTapGesture(perform: mainPlanetTapped)
-                                .multicolorGlow()
+                                .glow(color: glowColor(), radius: 20)
+                                .padding()
                         }
                         
                         // Tapped on the main planet
@@ -140,6 +141,20 @@ struct HomeView: View {
             withAnimation {
                 focusPlanet = false
             }
+        }
+    }
+    
+    // Get glow color for main planet
+    private func glowColor() -> Color {
+        switch homeData?.atmosphere.mood ?? 0 {
+        case 0:
+            return ColorManager.pmbc_blue
+        case 1:
+            return ColorManager.pmbc_green
+        case 2:
+            return ColorManager.pmbc_pink
+        default:
+            return ColorManager.pmbc_blue
         }
     }
 }
