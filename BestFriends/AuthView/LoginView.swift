@@ -20,6 +20,10 @@ struct LoginView: View {
             ZStack {
                 ColorManager.purple1
                     .ignoresSafeArea()
+                //TODO: Remove the onAppear for production
+                    .onAppear {
+                        sessionManager.login(email: "test1234@gmail.com", password: "secretPass")
+                    }
                 
                 Circle()
                     .frame(width: 400, height: 400)
@@ -54,7 +58,14 @@ struct LoginView: View {
                             return
                         }
                         
-                        sessionManager.login(email: email, password: password)
+                        RestApi.instance.login(email: email, password: password).then{ tokens in
+                            print("Tokens: ", tokens)
+                            sessionManager.showHome()
+                        }.catch { err in
+                            print("Got error")
+                            print(err)
+                            errorString = "Invalid Credentials"
+                        }
                         
                     }) {
                         CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)

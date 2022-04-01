@@ -51,6 +51,7 @@
 		7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DEFE27F66F9100D9F0E1 /* AtmosphereModels.swift */; };
 		7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DF0627F6948A00D9F0E1 /* AdViewFullScreen.swift */; };
 		7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DF0727F6948A00D9F0E1 /* AdPlayerView.swift */; };
+		7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */; };
 		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
 		7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */; };
 		CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */; };
@@ -104,6 +105,7 @@
 		7AD8DEFE27F66F9100D9F0E1 /* AtmosphereModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereModels.swift; sourceTree = "<group>"; };
 		7AD8DF0627F6948A00D9F0E1 /* AdViewFullScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewFullScreen.swift; sourceTree = "<group>"; };
 		7AD8DF0727F6948A00D9F0E1 /* AdPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPlayerView.swift; sourceTree = "<group>"; };
+		7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7AED44FA2647310700944708 /* BestFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriends.entitlements; sourceTree = "<group>"; };
 		7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashScreen2.mp4; sourceTree = "<group>"; };
@@ -208,10 +210,9 @@
 				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
-				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
-				7A1C048427F4BEB30002B173 /* SignUpView.swift */,
-				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
+				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
+				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
 				7A1C048627F4C3A90002B173 /* Models */,
 				7AC71DA627F3D7D4008D191B /* API */,
 				7A1DBD602659B1A400EB4B42 /* Ext+Custom */,
@@ -251,6 +252,24 @@
 			name = Advertisements;
 			path = "BestFriends/Necessary Files/Advertisements";
 			sourceTree = SOURCE_ROOT;
+		};
+		7AD8DF0A27F696F000D9F0E1 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		7AD8DF0B27F6970A00D9F0E1 /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				7AE31CBE262A9A94001EC5A3 /* LoginView.swift */,
+				7A1C048427F4BEB30002B173 /* SignUpView.swift */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
 		};
 		A3251877B3A7379C0839598D /* Frameworks */ = {
 			isa = PBXGroup;
@@ -453,6 +472,7 @@
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
+				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */,
