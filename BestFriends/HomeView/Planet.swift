@@ -17,7 +17,8 @@ struct Planet: View {
     var body: some View {
         PlanetView(planet: planet, mood: mood)
             .scaledToFit()
-            .frame(width: 100, height: 100)
+            .frame(width: 120, height: 120)
+            .glow(color: ColorManager.pmbc_blue)
     }
 }
 

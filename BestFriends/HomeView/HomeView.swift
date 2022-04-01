@@ -36,6 +36,20 @@ struct HomeView: View {
                 .onTapGesture(perform: backgroundTapped)
             
             VStack {
+                // Top 2 planets
+                HStack {
+                    if planets.count > 0 {
+                        planets[0]
+                    }
+                    
+                    if planets.count > 1 {
+                        Spacer()
+                            .frame(width: 80)
+                        
+                        planets[1]
+                    }
+                }
+                // Main planet
                 if homeData != nil {
                     ZStack {
                         // Main planet
@@ -54,6 +68,25 @@ struct HomeView: View {
                         
                         
                     }
+                }
+                // Middle 2 planets
+                HStack {
+                    if planets.count > 2 {
+                        planets[2]
+                    }
+                    
+                    if planets.count > 3 {
+                        Spacer()
+                            .frame(width: 80)
+                        
+                        planets[3]
+                    }
+                }
+                
+                // Bottom planet
+                if planets.count > 4 {
+                    planets[4]
+                        .padding()
                 }
             }
         }
@@ -74,6 +107,12 @@ struct HomeView: View {
     private func createPlanets() {
         let friends: [User] = homeData?.friends ?? []
         let atmosperes: [Atmosphere] = homeData?.friendAtmospheres ?? []
+        
+        // TODO: Remove the loop below, only for demo purposes
+        for _ in 1...5 {
+            let planet = Planet(user: User(id: "", firstName: "", lastName: "", atmosphere: ""), planet: 1, mood: 1)
+            planets.append(planet)
+        }
         
         for friend in friends {
             for atmosphere in atmosperes {
