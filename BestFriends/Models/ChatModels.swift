@@ -39,3 +39,10 @@ struct Message: Codable {
     }
 }
 
+struct CreateGroup: Codable {
+    let members: [String]
+    enum CodingKeys: String, CodingKey {
+        case members = "members"
+    }
+}
+

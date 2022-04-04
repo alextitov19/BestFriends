@@ -17,7 +17,8 @@ struct HomeView: View {
         
     @State private var focusPlanet = false
     
-    
+    @State private var newGroupMembers: [String] = []
+
     var body: some View {
         ZStack {
             // Background Image...
@@ -40,6 +41,7 @@ struct HomeView: View {
                 HStack {
                     if planets.count > 0 {
                         planets[0]
+                            .onTapGesture(perform: { friendPlanetTapped(id: planets[0].user.id)})
                     }
                     
                     if planets.count > 1 {
@@ -47,6 +49,7 @@ struct HomeView: View {
                             .frame(width: 80)
                         
                         planets[1]
+                            .onTapGesture(perform: { friendPlanetTapped(id: planets[1].user.id)})
                     }
                 }
                 // Main planet
@@ -74,6 +77,7 @@ struct HomeView: View {
                 HStack {
                     if planets.count > 2 {
                         planets[2]
+                            .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)})
                     }
                     
                     if planets.count > 3 {
@@ -81,13 +85,23 @@ struct HomeView: View {
                             .frame(width: 80)
                         
                         planets[3]
+                            .onTapGesture(perform: { friendPlanetTapped(id: planets[3].user.id)})
                     }
                 }
                 
                 // Bottom planet
                 if planets.count > 4 {
                     planets[4]
+                        .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)})
                         .padding()
+                }
+                
+                if newGroupMembers.count > 0 {
+                    Button(action: {
+                        createGroup()
+                    }, label: {
+                        Text("Create Group")
+                    })
                 }
             }
         }
@@ -111,7 +125,8 @@ struct HomeView: View {
         
         // TODO: Remove the loop below, only for demo purposes
         for _ in 1...5 {
-            let planet = Planet(user: User(id: "", firstName: "", lastName: "", atmosphere: ""), planet: 1, mood: 1)
+            let planet = Planet(user: User(id: "test123@gmail.com", firstName: "Test", lastName: "User", atmosphere: ""), planet: 1, mood: 1)
+            
             planets.append(planet)
         }
         
@@ -155,6 +170,26 @@ struct HomeView: View {
             return ColorManager.pmbc_pink
         default:
             return ColorManager.pmbc_blue
+        }
+    }
+    
+    private func friendPlanetTapped(id: String) {
+        // Add/remove friend to group memebrs
+        if newGroupMembers.contains(id) {
+            newGroupMembers.remove(at: newGroupMembers.firstIndex(of: id) ?? 0)
+        } else {
+            newGroupMembers.append(id)
+        }
+        print(newGroupMembers.count)
+    }
+    
+    private func createGroup() {
+        // Append self to group, create group
+        if newGroupMembers.count > 0 {
+            newGroupMembers.append(homeData!.user.id)
+            RestApi.instance.createGroup(members: newGroupMembers).then {response in
+                print("Create Group response: ", response)
+            }
         }
     }
 }

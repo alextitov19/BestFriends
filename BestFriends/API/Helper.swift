@@ -99,6 +99,19 @@ class Helper {
         accessToken = ""
     }
     
+    
+    func createGroup(url: String, createGroup: CreateGroup) -> Promise<Group> {
+        let payload = try? JSONEncoder().encode(createGroup)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, Group.self).then { group in
+            return Promise<Group>(group)
+        }
+    }
+    
+    
+    
     func signUp(_ userData: SignUpUserData) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(userData)
         if let p = payload {
