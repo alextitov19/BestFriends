@@ -103,6 +103,22 @@ struct HomeView: View {
                         Text("Create Group")
                     })
                 }
+                
+                HStack {
+                    Button(action: {
+                        createInvite()
+                    }, label: {
+                        Text("Create Invite")
+                    })
+                    .padding()
+                    
+                    Button(action: {
+                        getInvites()
+                    }, label: {
+                        Text("Get Invites")
+                    })
+                    .padding()
+                }
             }
         }
     }
@@ -190,6 +206,18 @@ struct HomeView: View {
             RestApi.instance.createGroup(members: newGroupMembers).then {response in
                 print("Create Group response: ", response)
             }
+        }
+    }
+    
+    private func createInvite() {
+        RestApi.instance.createInvite(recipient: "test12@gmail.com").then { response in
+            print("Create invite respones: ", response)
+        }
+    }
+    
+    private func getInvites() {
+        let invites = RestApi.instance.getInvites().then {invites in
+            print("Invites: ", invites)
         }
     }
 }
