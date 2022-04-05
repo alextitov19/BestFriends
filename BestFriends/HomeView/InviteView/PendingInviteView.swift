@@ -36,9 +36,7 @@ struct PendingInviteView: View {
             }
             
             HStack {
-                Button(action: {
-                    
-                }) {
+                Button(action: accept) {
                     Text("Accept")
                         .frame(width: 175, height: 40)
                         .foregroundColor(.white)
@@ -49,9 +47,7 @@ struct PendingInviteView: View {
                 
                 Spacer()
                 
-                Button(action: {
-                    
-                }) {
+                Button(action: reject) {
                     Text("Decline")
                         .frame(width: 175, height: 40)
                         .foregroundColor(.white)
@@ -64,5 +60,17 @@ struct PendingInviteView: View {
             }
         }
         .padding(.horizontal, 20)
+    }
+    
+    private func accept() {
+        RestApi.instance.acceptInvite(recipient: invite.recipient).then { result in
+            print("Got result: ", result)
+        }
+    }
+    
+    private func reject() {
+        RestApi.instance.rejectInvite(recipient: invite.recipient).then { result in
+            print("Got result: ", result)
+        }
     }
 }
