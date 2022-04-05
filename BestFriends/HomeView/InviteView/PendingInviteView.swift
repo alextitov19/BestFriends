@@ -39,26 +39,26 @@ struct PendingInviteView: View {
                 Button(action: {
                     
                 }) {
-                    Text("Invite")
-                        .frame(width: 100, height: 40)
+                    Text("Accept")
+                        .frame(width: 175, height: 40)
                         .foregroundColor(.white)
                         .background(Color.green)
                         .cornerRadius(15)
 
                 }
-                .padding(.horizontal, 5)
+                
+                Spacer()
                 
                 Button(action: {
                     
                 }) {
                     Text("Decline")
-                        .frame(width: 100, height: 40)
+                        .frame(width: 175, height: 40)
                         .foregroundColor(.white)
                         .background(Color.red)
                         .cornerRadius(15)
 
                 }
-                .padding(.horizontal, 5)
 
 
             }
