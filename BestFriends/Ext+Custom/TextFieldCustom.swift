@@ -58,7 +58,5 @@ struct MainSecureField: View {
             .disableAutocorrection(true)
             .font(Font.custom("MainFont", size: 20))
             .foregroundColor(.gray)
-            .padding(.horizontal, 40)
-            .padding(.vertical, 15)
     }
 }

@@ -10,11 +10,11 @@ import SwiftUI
 struct LoginView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-        
+    
     @State var email = ""
     @State var password = ""
     @State private var errorString = ""
-
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -22,7 +22,7 @@ struct LoginView: View {
                     .ignoresSafeArea()
                 //TODO: Remove the onAppear for production
                     .onAppear {
-                        sessionManager.login(email: "test12@gmail.com", password: "secretPass")
+                        //                        sessionManager.login(email: "test12@gmail.com", password: "secretPass")
                     }
                 
                 Circle()
@@ -42,10 +42,12 @@ struct LoginView: View {
                         .padding(30)
                     
                     MainTextField(text: $email, placeholder: "Email")
-                    .padding(.horizontal, 40)
-                    .padding(.vertical, 15)
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 15)
                     
                     MainSecureField(text: $password, placeholder: "Password")
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 15)
                     
                     Text(errorString)
                         .font(.system(size: 20, weight: .light))
@@ -76,10 +78,10 @@ struct LoginView: View {
                     Button(action: {
                         sessionManager.showSignUp()
                     }) {
-                    Text("Sign Up")
-                        .underline()
-                        .frame(width: 150, height: 30)
-                        .foregroundColor(ColorManager.purple5)
+                        Text("Sign Up")
+                            .underline()
+                            .frame(width: 150, height: 30)
+                            .foregroundColor(ColorManager.purple5)
                     }
                 }
             }
