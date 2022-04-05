@@ -11,7 +11,10 @@ struct PendingInviteView: View {
     
     let invite: Invite
     
+    @State private var showing = true
+    
     var body: some View {
+        if showing {
         VStack {
             HStack {
                 VStack {
@@ -60,17 +63,22 @@ struct PendingInviteView: View {
             }
         }
         .padding(.horizontal, 20)
+        } else {
+            EmptyView()
+        }
     }
     
     private func accept() {
         RestApi.instance.acceptInvite(recipient: invite.sender).then { result in
             print("Got result: ", result)
+            showing = false
         }
     }
     
     private func reject() {
         RestApi.instance.rejectInvite(recipient: invite.sender).then { result in
             print("Got result: ", result)
+            showing = false
         }
     }
 }
