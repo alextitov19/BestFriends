@@ -10,6 +10,7 @@ enum AppState {
     case home
     case signUp
     case login
+    case invite
 }
 
 final class SessionManager: ObservableObject {
@@ -35,5 +36,9 @@ final class SessionManager: ObservableObject {
             print("Got error")
             print(err)
         }
+    }
+    
+    func showInvite() {
+        appState = .invite
     }
 }

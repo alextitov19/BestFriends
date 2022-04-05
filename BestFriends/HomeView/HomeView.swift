@@ -39,12 +39,12 @@ struct HomeView: View {
             VStack {
                 // Top 2 planets
                 HStack {
-                    if planets.count > 0 {
+                    if planets.count > 0 && !focusPlanet {
                         planets[0]
                             .onTapGesture(perform: { friendPlanetTapped(id: planets[0].user.id)})
                     }
                     
-                    if planets.count > 1 {
+                    if planets.count > 1 && !focusPlanet {
                         Spacer()
                             .frame(width: 80)
                         
@@ -68,6 +68,7 @@ struct HomeView: View {
                         // Tapped on the main planet
                         if focusPlanet {
                             PlanetActionsView()
+                                .environmentObject(sessionManager)
                         }
                         
                         
@@ -75,12 +76,12 @@ struct HomeView: View {
                 }
                 // Middle 2 planets
                 HStack {
-                    if planets.count > 2 {
+                    if planets.count > 2 && !focusPlanet {
                         planets[2]
                             .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)})
                     }
                     
-                    if planets.count > 3 {
+                    if planets.count > 3 && !focusPlanet {
                         Spacer()
                             .frame(width: 80)
                         
@@ -90,34 +91,18 @@ struct HomeView: View {
                 }
                 
                 // Bottom planet
-                if planets.count > 4 {
+                if planets.count > 4 && !focusPlanet {
                     planets[4]
                         .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)})
                         .padding()
                 }
                 
-                if newGroupMembers.count > 0 {
+                if newGroupMembers.count > 0 && !focusPlanet {
                     Button(action: {
                         createGroup()
                     }, label: {
                         Text("Create Group")
                     })
-                }
-                
-                HStack {
-                    Button(action: {
-                        createInvite()
-                    }, label: {
-                        Text("Create Invite")
-                    })
-                    .padding()
-                    
-                    Button(action: {
-                        getInvites()
-                    }, label: {
-                        Text("Get Invites")
-                    })
-                    .padding()
                 }
             }
         }

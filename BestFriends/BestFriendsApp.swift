@@ -24,8 +24,11 @@ struct BestFriendsApp: App {
             case .home:
                 HomeView()
                     .environmentObject(sessionManager)
+            case .invite:
+                InviteView()
+                    .environmentObject(sessionManager)
             }
-            
+        
             
         }
     }

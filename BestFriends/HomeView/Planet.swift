@@ -47,6 +47,8 @@ struct PlanetView: View {
 
 struct PlanetActionsView: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+    
     var body: some View {
         HStack {
             VStack {
@@ -102,6 +104,7 @@ struct PlanetActionsView: View {
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
+                    .onTapGesture(perform: sessionManager.showInvite)
                 }
                 
                 Spacer()
