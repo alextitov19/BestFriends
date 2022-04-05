@@ -42,6 +42,8 @@ struct LoginView: View {
                         .padding(30)
                     
                     MainTextField(text: $email, placeholder: "Email")
+                    .padding(.horizontal, 40)
+                    .padding(.vertical, 15)
                     
                     MainSecureField(text: $password, placeholder: "Password")
                     

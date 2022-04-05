@@ -44,12 +44,20 @@ struct SignUpView: View {
                 
                 VStack {
                     MainTextField(text: $firstname, placeholder: "First Name")
+                    .padding(.horizontal, 40)
+                    .padding(.vertical, 15)
                     
                     MainTextField(text: $lastname, placeholder: "Last Name")
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 15)
                     
                     MainTextField(text: $email, placeholder: "Email")
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 15)
                                         
                     MainSecureField(text: $password, placeholder: "Password")
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 15)
                 }
                 
                 Spacer().frame(height: 50)
