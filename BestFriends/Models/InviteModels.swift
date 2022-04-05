@@ -10,9 +10,11 @@ import Foundation
 struct Invite: Codable {
     let sender: String
     let recipient: String
+    let name: String
     enum CodingKeys: String, CodingKey {
         case sender = "sender"
         case recipient = "recipient"
+        case name = "name"
     }
 }
 

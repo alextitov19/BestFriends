@@ -49,7 +49,7 @@ struct ColorManager {
     static let pmbc_blue = Color(hex: "#6998AB")
     static let pmbc_pink = Color(hex: "#C99797")
 
-    
+    static let darkGrey = Color(hex: "#343434")
     //Planet glow colors
     
 }

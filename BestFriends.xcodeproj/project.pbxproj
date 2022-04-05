@@ -43,6 +43,7 @@
 		7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201122635D5F500C9F00C /* Room+Extensions.swift */; };
 		7AC71DA827F3D803008D191B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC71DA727F3D803008D191B /* Helper.swift */; };
 		7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD20BB27FC99CA002F7800 /* InviteView.swift */; };
+		7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD20BD27FCBC18002F7800 /* PendingInviteView.swift */; };
 		7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACF912B2767C29A00088ACA /* CustomDivider.swift */; };
 		7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AD02B582744829D00500DD7 /* MainFont.ttf */; };
 		7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1044F265AB93F007627FD /* UIWindowExtension.swift */; };
@@ -98,6 +99,7 @@
 		7AA201122635D5F500C9F00C /* Room+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+Extensions.swift"; sourceTree = "<group>"; };
 		7AC71DA727F3D803008D191B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7ACD20BB27FC99CA002F7800 /* InviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteView.swift; sourceTree = "<group>"; };
+		7ACD20BD27FCBC18002F7800 /* PendingInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingInviteView.swift; sourceTree = "<group>"; };
 		7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriendsRelease.entitlements; sourceTree = "<group>"; };
 		7ACF912B2767C29A00088ACA /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		7AD02B582744829D00500DD7 /* MainFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MainFont.ttf; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				7ACD20BB27FC99CA002F7800 /* InviteView.swift */,
+				7ACD20BD27FCBC18002F7800 /* PendingInviteView.swift */,
 			);
 			path = InviteView;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
+				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,

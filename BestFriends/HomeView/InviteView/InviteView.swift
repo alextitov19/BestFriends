@@ -36,19 +36,16 @@ struct InviteView: View {
                     }
                     .frame(width: 120)
                 }
-                .padding(.horizontal, 10)
+                .padding()
 
+                Text("Friend Requests")
+                    .foregroundColor(.gray)
+                    .font(.system(size: 30, weight: .bold))
                 
                 // Invites
                 ScrollView (.vertical) {
                     ForEach(invites, id: \.sender) {invite in
-                        HStack {
-                            Text("Invite")
-                                .padding()
-                            
-                            Text("Accept")
-                                .padding()
-                        }
+                        PendingInviteView(invite: invite)
                     }
                 }
             }
@@ -72,7 +69,7 @@ struct InviteView: View {
     }
     
     private func getUser() {
-        RestApi.instance.getCurrentUser().then {result in
+        RestApi.instance.getCurrentUser().then { result in
             print("Got result: ", result)
             user = result
         }
