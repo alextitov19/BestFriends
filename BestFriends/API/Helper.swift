@@ -99,13 +99,23 @@ class Helper {
         accessToken = ""
     }
     
-    func createInvite(url: String, createInvite: CreateInvite) -> Promise<Invite> {
+    func createInvite(url: String, createInvite: CreateInvite) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(createInvite)
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
-        return callRestApi(url: url, method: .post, data: payload, Invite.self).then { invite in
-            return Promise<Invite>(invite)
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
+    func acceptRejectInvite(url: String, ari: AcceptRejectInvite) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(ari)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
         }
     }
     

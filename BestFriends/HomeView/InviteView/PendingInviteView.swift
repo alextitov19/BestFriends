@@ -63,13 +63,13 @@ struct PendingInviteView: View {
     }
     
     private func accept() {
-        RestApi.instance.acceptInvite(recipient: invite.recipient).then { result in
+        RestApi.instance.acceptInvite(recipient: invite.sender).then { result in
             print("Got result: ", result)
         }
     }
     
     private func reject() {
-        RestApi.instance.rejectInvite(recipient: invite.recipient).then { result in
+        RestApi.instance.rejectInvite(recipient: invite.sender).then { result in
             print("Got result: ", result)
         }
     }

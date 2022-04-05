@@ -18,16 +18,17 @@ struct Invite: Codable {
     }
 }
 
-struct InviteParams: Codable {
-    let name: String
-    enum CodingKeys: String, CodingKey {
-        case name = "name"
-    }
-}
-
 struct CreateInvite: Codable {
     let recipient: String
     enum CodingKeys: String, CodingKey {
         case recipient = "recipient"
+    }
+}
+
+// Same struct used for accepting or rejecting a friend invite
+struct AcceptRejectInvite: Codable {
+    let sender: String
+    enum CodingKeys: String, CodingKey {
+        case sender = "sender"
     }
 }
