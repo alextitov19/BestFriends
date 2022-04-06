@@ -19,7 +19,7 @@ struct HomeView: View {
     
     @State private var newGroupMembers: [String] = []
     
-    @State private var chatGroupsView = ChatGroupsView()
+    @State private var chatGroupsView = ChatGroupsView(groups: [])
 
     var body: some View {
         ZStack {
@@ -113,7 +113,9 @@ struct HomeView: View {
                 
             }
             
-            chatGroupsView
+            if homeData?.groups != nil {
+                ChatGroupsView(groups: homeData?.groups ?? [])
+            }
         }
     }
     
@@ -122,7 +124,8 @@ struct HomeView: View {
             print("Got HomeData: ", data)
             homeData = data
             createPlanets()
-            chatGroupsView.setGroups(chatGroups: data.groups)
+//            print("Got groups: ", data.groups.count)
+//            chatGroupsView = ChatGroupsView(groups: data.groups)
         }.catch { err in
             print("Got error")
             print(err)

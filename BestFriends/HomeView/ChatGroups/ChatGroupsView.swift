@@ -14,7 +14,7 @@ struct ChatGroupsView: View {
     @State var lastOffset: CGFloat = 0
     @GestureState var gestureOffset: CGFloat = 0
     
-    @State private var groups: [Group] = []
+    @State var groups: [Group]
     
     var body: some View {
         // MARK: Scrollable view that shows chat rooms...
@@ -42,7 +42,7 @@ struct ChatGroupsView: View {
                         //MARK: ScrollView content...
                         
                         ForEach(groups, id: \.id) { group in
-                        
+
                             GroupRow(group: group)
                                 .onTapGesture {
 //                                    sessionManager.chat(room: rooms[index])
@@ -100,9 +100,5 @@ struct ChatGroupsView: View {
         DispatchQueue.main.async {
             self.offset = lastOffset + gestureOffset
         }
-    }
-    
-    func setGroups(chatGroups: [Group]) {
-        groups = chatGroups
     }
 }

@@ -11,7 +11,7 @@ struct GroupRow: View {
     
     let group: Group
     
-    @State var messageBody = ""
+    @State var messageBody = "Last message"
     @State var timestring = "5 mins ago"
     
     var body: some View {
@@ -28,7 +28,7 @@ struct GroupRow: View {
                 HStack {
                     Spacer().frame(width: 10)
                     
-                    Text(group.name)
+                    Text("New chat group")
                         .font(.system(size: 20, weight: .light))
                         .foregroundColor(.white)
                     
