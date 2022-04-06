@@ -57,6 +57,10 @@
 		7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */; };
 		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
 		7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */; };
+		7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */; };
+		7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27927FDFFA800D2DB5C /* BlurView.swift */; };
+		7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */; };
+		7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */; };
 		CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */; };
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
@@ -115,6 +119,10 @@
 		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7AED44FA2647310700944708 /* BestFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriends.entitlements; sourceTree = "<group>"; };
 		7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashScreen2.mp4; sourceTree = "<group>"; };
+		7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupsView.swift; sourceTree = "<group>"; };
+		7AFCF27927FDFFA800D2DB5C /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
 		CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueRoad.mp4; sourceTree = "<group>"; };
 		CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShakingCoolVideo.mp4; sourceTree = "<group>"; };
 		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
@@ -274,6 +282,7 @@
 			children = (
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
 			);
 			path = HomeView;
@@ -286,6 +295,17 @@
 				7A1C048427F4BEB30002B173 /* SignUpView.swift */,
 			);
 			path = AuthView;
+			sourceTree = "<group>";
+		};
+		7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */ = {
+			isa = PBXGroup;
+			children = (
+				7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */,
+				7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */,
+				7AFCF27927FDFFA800D2DB5C /* BlurView.swift */,
+				7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */,
+			);
+			path = ChatGroups;
 			sourceTree = "<group>";
 		};
 		A3251877B3A7379C0839598D /* Frameworks */ = {
@@ -482,9 +502,11 @@
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
 				7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */,
+				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */,
+				7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
@@ -504,6 +526,8 @@
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
 				7A1C048527F4BEB30002B173 /* SignUpView.swift in Sources */,
+				7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */,
+				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,

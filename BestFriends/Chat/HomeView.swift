@@ -221,87 +221,87 @@ struct HomeView: View {
                         }
                         .frame(maxHeight: .infinity, alignment: .top)
                         
-                        // Action buttons...
-                        HStack(alignment: .center) {
-                            
-                            // Invite button...
-                            if user.friends.count < 5 {
-                                
-                                Button(action: {
-                                    //Display invite menu
-                                    showingActionSheet = true
-                                    
-                                }) {
-                                    Image("inviteWhite")
-                                        .resizable()
-                                        .frame(width: 40, height: 40)
-                                        .scaledToFill()
-                                        .sheet(isPresented: $showingSheet) {
-                                            QRCodeView(image: myQRCode)
-                                        }
-                                        .sheet(isPresented: $showingAddFriendInstructions) {
-                                            HowToAddFriends()
-                                        }
-                                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-                                            ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
-                                        }
-                                }
-                                .actionSheet(isPresented: $showingActionSheet) {
-                                    ActionSheet(title: Text("Add up to 5 Friends with secret QR codes"), buttons: [
-                                        
-                                        .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
-                                        .default(Text("Get my QR code")) { showMyQR() },
-                                        .default(Text("My Gallery")) {
-                                            let photos = PHPhotoLibrary.authorizationStatus()
-                                            if photos == .notDetermined {
-                                                PHPhotoLibrary.requestAuthorization({status in
-                                                    if status == .authorized{
-                                                        self.showingImagePicker = true
-                                                        
-                                                    } else {}
-                                                })
-                                            } else {
-                                                self.showingImagePicker = true
-                                            }
-                                        },
-                                        .cancel()
-                                    ])
-                                }
-                                .padding()
-                            }
-                            
-                            Image("hideouts")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                                .onTapGesture {
-                                    sessionManager.showHideouts()
-                                }
-                                .padding()
-                            
-                            Image("bell")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                                .onTapGesture {
-                                    areNotificationsShown.toggle()
-                                }
-                                .sheet(isPresented: $areNotificationsShown, content: {
-                                    NotificationsView()
-                                })
-                                .padding()
-                            
-                            Image("settings icon")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .scaledToFill()
-                                .onTapGesture {
-                                    sessionManager.showSettings()
-                                }
-                                .padding()
-                            
-                        }
-                        .offset(y: -height * 0.55)
+//                        // Action buttons...
+//                        HStack(alignment: .center) {
+//
+//                            // Invite button...
+//                            if user.friends.count < 5 {
+//
+//                                Button(action: {
+//                                    //Display invite menu
+//                                    showingActionSheet = true
+//
+//                                }) {
+//                                    Image("inviteWhite")
+//                                        .resizable()
+//                                        .frame(width: 40, height: 40)
+//                                        .scaledToFill()
+//                                        .sheet(isPresented: $showingSheet) {
+//                                            QRCodeView(image: myQRCode)
+//                                        }
+//                                        .sheet(isPresented: $showingAddFriendInstructions) {
+//                                            HowToAddFriends()
+//                                        }
+//                                        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+//                                            ImagePicker(image: self.$inputImage, sourceType: .photoLibrary)
+//                                        }
+//                                }
+//                                .actionSheet(isPresented: $showingActionSheet) {
+//                                    ActionSheet(title: Text("Add up to 5 Friends with secret QR codes"), buttons: [
+//
+//                                        .default(Text("How to Add Friends")) { self.showingAddFriendInstructions = true },
+//                                        .default(Text("Get my QR code")) { showMyQR() },
+//                                        .default(Text("My Gallery")) {
+//                                            let photos = PHPhotoLibrary.authorizationStatus()
+//                                            if photos == .notDetermined {
+//                                                PHPhotoLibrary.requestAuthorization({status in
+//                                                    if status == .authorized{
+//                                                        self.showingImagePicker = true
+//
+//                                                    } else {}
+//                                                })
+//                                            } else {
+//                                                self.showingImagePicker = true
+//                                            }
+//                                        },
+//                                        .cancel()
+//                                    ])
+//                                }
+//                                .padding()
+//                            }
+//
+//                            Image("hideouts")
+//                                .resizable()
+//                                .frame(width: 40, height: 40)
+//                                .scaledToFill()
+//                                .onTapGesture {
+//                                    sessionManager.showHideouts()
+//                                }
+//                                .padding()
+//
+//                            Image("bell")
+//                                .resizable()
+//                                .frame(width: 40, height: 40)
+//                                .scaledToFill()
+//                                .onTapGesture {
+//                                    areNotificationsShown.toggle()
+//                                }
+//                                .sheet(isPresented: $areNotificationsShown, content: {
+//                                    NotificationsView()
+//                                })
+//                                .padding()
+//
+//                            Image("settings icon")
+//                                .resizable()
+//                                .frame(width: 40, height: 40)
+//                                .scaledToFill()
+//                                .onTapGesture {
+//                                    sessionManager.showSettings()
+//                                }
+//                                .padding()
+//
+//                        }
+//                        .offset(y: -height * 0.55)
                         
                         
                     }

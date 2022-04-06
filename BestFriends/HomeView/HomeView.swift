@@ -18,6 +18,8 @@ struct HomeView: View {
     @State private var focusPlanet = false
     
     @State private var newGroupMembers: [String] = []
+    
+    @State private var chatGroupsView = ChatGroupsView()
 
     var body: some View {
         ZStack {
@@ -108,7 +110,10 @@ struct HomeView: View {
                             .cornerRadius(15)
                     })
                 }
+                
             }
+            
+            chatGroupsView
         }
     }
     
@@ -117,6 +122,7 @@ struct HomeView: View {
             print("Got HomeData: ", data)
             homeData = data
             createPlanets()
+            chatGroupsView.setGroups(chatGroups: data.groups)
         }.catch { err in
             print("Got error")
             print(err)
