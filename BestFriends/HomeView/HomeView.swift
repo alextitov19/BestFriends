@@ -102,6 +102,10 @@ struct HomeView: View {
                         createGroup()
                     }, label: {
                         Text("Create Group")
+                            .frame(width: 130, height: 40)
+                            .foregroundColor(.white)
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
                     })
                 }
             }

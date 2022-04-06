@@ -22,7 +22,7 @@ struct LoginView: View {
                     .ignoresSafeArea()
                 //TODO: Remove the onAppear for production
                     .onAppear {
-                        //                        sessionManager.login(email: "test12@gmail.com", password: "secretPass")
+                        sessionManager.login(email: "test12@gmail.com", password: "secretPass")
                     }
                 
                 Circle()
