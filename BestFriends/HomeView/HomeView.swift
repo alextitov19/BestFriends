@@ -207,16 +207,4 @@ struct HomeView: View {
             }
         }
     }
-    
-    private func createInvite() {
-        RestApi.instance.createInvite(recipient: "test12@gmail.com").then { response in
-            print("Create invite respones: ", response)
-        }
-    }
-    
-    private func getInvites() {
-        let invites = RestApi.instance.getInvites().then {invites in
-            print("Invites: ", invites)
-        }
-    }
 }

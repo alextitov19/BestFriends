@@ -63,7 +63,7 @@ struct ChatGroupsView: View {
                     .frame(width: width - 70)
                     .padding(.horizontal, 35)
                     .offset(y: height - 100)
-                    .offset(y: -offset > 0 ? -offset <= (height - 100) ? offset : -(height - 100) : 0)
+                    .offset(y: -offset > 0 ? -offset <= (height - 100) ? offset : -(height - 100) : 30)
                     .gesture(DragGesture().updating($gestureOffset, body: {
                         value, out, _ in
                         

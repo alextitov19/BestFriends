@@ -28,7 +28,7 @@ struct GroupRow: View {
                 HStack {
                     Spacer().frame(width: 10)
                     
-                    Text("New chat group")
+                    Text(group.name)
                         .font(.system(size: 20, weight: .light))
                         .foregroundColor(.white)
                     
