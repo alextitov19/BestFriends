@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ChatGroupsView: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+
     // For swiping up/down and scrolling the BlurView
     @State var offset: CGFloat = 0
     @State var lastOffset: CGFloat = 0
@@ -43,12 +45,13 @@ struct ChatGroupsView: View {
                         
                         ForEach(groups, id: \.id) { group in
 
+                            Button(action: {
+                                sessionManager.showChat(group: group)
+                            }) {
                             GroupRow(group: group)
-                                .onTapGesture {
-//                                    sessionManager.chat(room: rooms[index])
-                                }
                                 .padding(.horizontal, 15)
                                 .padding(.top, 15)
+                            }
                             
                             CustomDivider(color: Color.white)
                                 .padding(.horizontal, 30)

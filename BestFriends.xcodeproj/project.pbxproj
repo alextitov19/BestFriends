@@ -41,6 +41,7 @@
 		7A78233126B2419600CA76FC /* school.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A78232C26B2419600CA76FC /* school.mp4 */; };
 		7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */; };
 		7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201122635D5F500C9F00C /* Room+Extensions.swift */; };
+		7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4C01E27FF4A08000C4140 /* ChatView.swift */; };
 		7AC71DA827F3D803008D191B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC71DA727F3D803008D191B /* Helper.swift */; };
 		7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD20BB27FC99CA002F7800 /* InviteView.swift */; };
 		7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACD20BD27FCBC18002F7800 /* PendingInviteView.swift */; };
@@ -101,6 +102,7 @@
 		7A78232C26B2419600CA76FC /* school.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = school.mp4; sourceTree = "<group>"; };
 		7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtension.swift; sourceTree = "<group>"; };
 		7AA201122635D5F500C9F00C /* Room+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+Extensions.swift"; sourceTree = "<group>"; };
+		7AC4C01E27FF4A08000C4140 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		7AC71DA727F3D803008D191B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7ACD20BB27FC99CA002F7800 /* InviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteView.swift; sourceTree = "<group>"; };
 		7ACD20BD27FCBC18002F7800 /* PendingInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingInviteView.swift; sourceTree = "<group>"; };
@@ -245,6 +247,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7AC4C01D27FF49F9000C4140 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				7AC4C01E27FF4A08000C4140 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		7AC71DA627F3D7D4008D191B /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +294,7 @@
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
+				7AC4C01D27FF49F9000C4140 /* Chat */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -510,6 +521,7 @@
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
+				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,

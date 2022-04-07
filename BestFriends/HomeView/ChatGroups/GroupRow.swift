@@ -55,7 +55,6 @@ struct GroupRow: View {
             
             Spacer().frame(width: 10)
         }
-        
     }
     
     private func getBody() {

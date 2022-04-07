@@ -11,6 +11,7 @@ enum AppState {
     case signUp
     case login
     case invite
+    case chat(group: Group)
 }
 
 final class SessionManager: ObservableObject {
@@ -40,5 +41,9 @@ final class SessionManager: ObservableObject {
     
     func showInvite() {
         appState = .invite
+    }
+    
+    func showChat(group: Group) {
+        appState = .chat(group: group)
     }
 }

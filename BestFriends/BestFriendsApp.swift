@@ -27,6 +27,9 @@ struct BestFriendsApp: App {
             case .invite:
                 InviteView()
                     .environmentObject(sessionManager)
+            case .chat(let group):
+                ChatView(group: group)
+                    .environmentObject(sessionManager)
             }
         
             

@@ -115,6 +115,7 @@ struct HomeView: View {
             
             if homeData?.groups != nil {
                 ChatGroupsView(groups: homeData?.groups ?? [])
+                    .environmentObject(sessionManager)
             }
         }
     }
