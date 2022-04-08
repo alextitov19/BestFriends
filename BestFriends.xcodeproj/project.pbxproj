@@ -224,6 +224,7 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
+				CF3B65A9280071580003A714 /* Settings */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
 				7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */,
 				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
@@ -294,7 +295,6 @@
 			children = (
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
-				CF3B65A9280071580003A714 /* Settings */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
@@ -344,7 +344,8 @@
 			children = (
 				CF3B65AA2800718E0003A714 /* ReportAbuse.swift */,
 			);
-			path = Settings;
+			name = Settings;
+			path = HomeView/Settings;
 			sourceTree = "<group>";
 		};
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
