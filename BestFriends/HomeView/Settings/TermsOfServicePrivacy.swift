@@ -18,7 +18,7 @@ struct TermsConditionsView: View {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
             VStack {
-                HStack {
+                VStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
@@ -32,14 +32,20 @@ struct TermsConditionsView: View {
                     
                     Spacer()
                     
-                    Text("Privacy Policy & Terms of Service")
+                    Text("Privacy Policy")
                         .font(.system(size: 30))
                         .offset(x: -25)
            
-                    Spacer()
+                    Text("Terms of Service")
+                        .font(.system(size: 30))
+                        .offset(x: -25)
+                    
+                    
+//                    Spacer()
                     
                     Text("(in footer of website page)")
-                        .font(.system(size: 30))
+                        .font(.system(size: 20))
+                        .italic()
                         .offset(x: -25)
                     
           
@@ -96,4 +102,9 @@ struct TermsConditionsView: View {
         }
     }
     
+}
+struct TermsConditionsView_Previews : PreviewProvider {
+    static var previews: some View {
+        TermsConditionsView()
+    }
 }
