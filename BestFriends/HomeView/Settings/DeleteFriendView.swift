@@ -1,15 +1,16 @@
 //
-//  HelpSupportView.swift
+//  DeleteFriendView.swift
 //  BestFriends
 //
 //  Created by Social Tech on 4/8/22.
 //
 
+
 import Foundation
 
 import SwiftUI
 
-struct HelpSupportView: View {
+struct DeleteFriendView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
@@ -33,7 +34,7 @@ struct HelpSupportView: View {
                         
                         Spacer()
                         
-                        Text("Report Abuse & Copyright Infringements")
+                        Text("Delete Friend")
                             .font(.system(size: 30))
                             .offset(x: -25)
                         
@@ -62,50 +63,11 @@ struct HelpSupportView: View {
 //                            .colorInvert()
 //                    }
 //                        })
-                    
-                    Divider()
-                }
-                
-                Link(destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!) {
-                HStack {
-                    Text("Report Objectionable Content & Behavior")
-                        .font(.system(size: 20))
-                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    
-                    Spacer()
-                    
-                    Image("arrowRight")
-                        .renderingMode(.template)
-                        .resizable()
-                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .frame(width: 25, height: 25)
-                }
-                }
-                
-                Divider()
-                
-                Link(destination: URL(string: "https://socialtechlabs.com/report-copyright-infringements/")!) {
-                HStack {
-                    Text("Report Copyright Infringement")
-                        .font(.system(size: 20))
-                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    
-                    Spacer()
-                    
-                    Image("arrowRight")
-                        .renderingMode(.template)
-                        .resizable()
-                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .frame(width: 25, height: 25)
-                }
-                }
-                
-                Spacer()
-                
-            }
-            .padding(30)
-            .navigationBarHidden(true)
-        }
-    }
+             
     
+                }
+            }
+        }
+
+    }
 }
