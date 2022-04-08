@@ -36,11 +36,11 @@ struct SettingsEngagementView: View {
                     .offset(x: 90, y: 0) // move the frame around
                 
                 VStack(alignment: .leading) {
-                    Text("5 min")
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .font(.system(size: 16, weight: .regular))
-                    
-                   Text("Help us IMPROVE!")
+//                    Text("5 min")
+//                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                        .font(.system(size: 16, weight: .regular))
+//
+                   Text("Be 1st to see\n NEW FEATURES")
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                        .font(.system(size: 20, weight: .bold))
                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
@@ -95,11 +95,15 @@ struct SettingsEngagementView: View {
                     .offset(x: 70, y: 0) // move the frame around
                 
                 VStack(alignment: .leading) {
-                    Text("5 min")
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .font(.system(size: 16, weight: .regular))
+
+//
+                    Text("(just 3 min)")
+//                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                       .font(.system(size: 20, weight: .regular))
+                       . italic()
                     
-                    Text("Make us\nbetter!")
+                    
+                    Text("Help make\n us Better")
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 32, weight: .bold))
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
@@ -145,11 +149,12 @@ struct SettingsEngagementView: View {
                     .offset(x: 90, y: 0) // move the frame around
                 
                 VStack(alignment: .leading) {
-                    Text("5 min")
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .font(.system(size: 16, weight: .regular))
+                    Text("(just 3 min)")
+//                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+                       .font(.system(size: 20, weight: .regular))
+                       . italic()
                     
-                    Text("Shape cool\nfeatures!")
+                    Text("Shape cool\n features!")
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 32, weight: .bold))
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
