@@ -23,6 +23,9 @@ struct SettingsEngagementView: View {
                     .frame(height: 175)
                     .foregroundColor(Color(#colorLiteral(red: 0.3744983077, green: 0.122321032, blue: 1, alpha: 1)))
                     .padding(10)
+              
+                
+                
                 
                 Image("girlwalking")
                     .resizable()
@@ -37,10 +40,10 @@ struct SettingsEngagementView: View {
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .font(.system(size: 16, weight: .regular))
                     
-                    Text("Help us IMPROVE!")
+                   Text("Help us IMPROVE!")
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 32, weight: .bold))
-                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
+                       .font(.system(size: 20, weight: .bold))
+                       .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
                     
                     Text("BE AN INSIDER")
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -69,6 +72,12 @@ struct SettingsEngagementView: View {
                 .offset(x: 125, y: 65)
             }
             }
+            
+            
+            
+            
+            
+            
         case 2:
             ZStack {
                 RoundedRectangle(cornerRadius: 25) //Rectangle background
@@ -181,6 +190,6 @@ struct SettingsEngagementView: View {
 
 struct SettingsEngagementViewPreview : PreviewProvider {
     static var previews: some View {
-        SettingsEngagementView(index: 3)
+        SettingsEngagementView(index: 1)
     }
 }
