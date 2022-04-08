@@ -37,7 +37,7 @@ struct SettingsEngagementView: View {
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                         .font(.system(size: 16, weight: .regular))
                     
-                    Text("Help us\nimprove!")
+                    Text("Help us IMPROVE!")
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 32, weight: .bold))
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))

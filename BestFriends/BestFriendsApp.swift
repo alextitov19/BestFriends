@@ -15,21 +15,25 @@ struct BestFriendsApp: App {
     var body: some Scene {
         WindowGroup {
             switch sessionManager.appState {
+          
+             
             case .signUp:
                 SignUpView()
                     .environmentObject(sessionManager)
             case .login:
                 LoginView()
                     .environmentObject(sessionManager)
-            case .home:
-                HomeView()
-                    .environmentObject(sessionManager)
-//            case .settings:
-//                ReportAbuse()
-//                    .environmentObject(sessionManager)
-//
+                
             case .invite:
                 InviteView()
+                    .environmentObject(sessionManager)
+                
+            case .home:
+             HomeView()
+                 .environmentObject(sessionManager)
+        
+         
+         
                     .environmentObject(sessionManager)
             case .chat(let group):
                 ChatView(group: group)
