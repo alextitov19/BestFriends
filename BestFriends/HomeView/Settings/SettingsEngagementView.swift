@@ -195,6 +195,6 @@ struct SettingsEngagementView: View {
 
 struct SettingsEngagementViewPreview : PreviewProvider {
     static var previews: some View {
-        SettingsEngagementView(index: 1)
+        SettingsEngagementView(index: 2)
     }
 }
