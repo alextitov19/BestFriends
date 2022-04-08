@@ -109,3 +109,8 @@ struct HelpSupportView: View {
     }
     
 }
+struct HelpSupportView_Previews : PreviewProvider {
+    static var previews: some View {
+        HelpSupportView()
+    }
+}
