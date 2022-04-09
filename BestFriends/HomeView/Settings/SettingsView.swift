@@ -46,6 +46,7 @@ struct SettingsView: View {
                 
              Spacer()
                    .frame(height: 50)
+                
                NavigationLink(
                   destination: DemoVideoView(),
                   label: {
@@ -66,22 +67,23 @@ struct SettingsView: View {
 
                 Divider()
                 
-              NavigationLink(
-               destination: ReportAbuseView(),
-                 label: {
-                       HStack {
-                    Text("Be 1st to see NEW 'prototype Features")
-                              .font(.system(size: 20))
-//                             .foregroundColor(.black)
-                              .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                           Spacer()
+                NavigationLink(
+                   destination: DemoVideoView(),
+                   label: {
+                        HStack {
+                            Text("Get Involved ... See Prototype Features")
+                                .font(.system(size: 20))
+ //                              .foregroundColor(.black)
+                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            Spacer().frame(maxHeight: 0)
 
-                          Image("arrowRight")
-                              .resizable()                               .frame(width: 25, height: 25)
-                               .scaledToFit()
+                           Image("arrowRight")
+                               .resizable()
+                                .frame(width: 25, height: 25)
+                              .scaledToFit()
                                .colorInvert()
-                      }
-                   })
+                        }
+                    })
                 
                 Divider()
                 
@@ -89,7 +91,7 @@ struct SettingsView: View {
                  destination: ReportAbuseView(),
                    label: {
                          HStack {
-                      Text("Report Abuse")
+                      Text("Report Abusive Behavior")
                                 .font(.system(size: 20))
 //                               .foregroundColor(.black)
                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -108,7 +110,7 @@ struct SettingsView: View {
                  destination: MyAccountView(),
                    label: {
                          HStack {
-                      Text("My Account")
+                      Text("Manage My Account")
                                 .font(.system(size: 20))
 //                               .foregroundColor(.black)
                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -130,7 +132,7 @@ struct SettingsView: View {
                    label: {
                          HStack {
                       Text("Terms of Service & Privacy Policy")
-                             .font(.system(size: 18))
+                             .font(.system(size: 20))
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
 
                              Spacer()
