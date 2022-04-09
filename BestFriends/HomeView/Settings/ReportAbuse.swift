@@ -47,7 +47,7 @@ struct ReportAbuseView: View {
                 
                 HStack {
                     Text("Report Objectional Content & Behavior")
-                        .font(.system(size: 16))
+                        .font(.system(size: 20))
                     
                     Spacer()
                     

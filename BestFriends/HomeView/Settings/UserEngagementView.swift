@@ -1,15 +1,15 @@
 //
-//  SettingsEngagementView.swift
+//  UserEngagementView.swift
 //  BestFriends
 //
-//  Created by Social Tech on 4/8/22.
+//  Created by Social Tech on 4/9/22.
 //
 
 import Foundation
 
 import SwiftUI
 
-struct SettingsEngagementView: View {
+struct UserEngagementView: View {
     
     var index: Int
     
@@ -207,9 +207,9 @@ struct SettingsEngagementView: View {
     
 }
 
-struct SettingsEngagementView_Preview : PreviewProvider {
+struct UserfEngagementView_Preview : PreviewProvider {
     static var previews: some View {
-        SettingsEngagementView(index: 1
+        UserEngagementView(index: 1
         )
     }
 }

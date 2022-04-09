@@ -80,24 +80,62 @@ struct MyAccountView: View {
                 
                 Divider()
                 
-//                NavigationLink(
-//                    destination: DeleteMyAccount(),
-//                    label: {
-//                        HStack {
-//                            Text("Delete Account")
-//                                .font(.system(size: 20))
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-//
-//                            Spacer().frame(maxHeight: 0)
-//
-//                            Image("arrowRight")
-//                                .renderingMode(.template)
-//                                .resizable()
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-//                                .frame(width: 25, height: 25)
-//                        }
-//                    })
+                NavigationLink(
+                 destination: DeleteFriendView(),
+                   label: {
+                         HStack {
+                      Text("Delete Friend")
+                                .font(.system(size: 20))
+                               .foregroundColor(.black)
+
+                             Spacer()
+
+                            Image("arrowRight")
+                                .resizable()                               .frame(width: 25, height: 25)
+                                 .scaledToFit()
+                                 .colorInvert()
+                        }
+                     })
+                  
+                Divider()
                 
+                NavigationLink(
+                 destination: NotificationsView(),
+                   label: {
+                         HStack {
+                      Text("Change Notifications Status")
+                                .font(.system(size: 20))
+                               .foregroundColor(.black)
+
+                             Spacer()
+
+                            Image("arrowRight")
+                                .resizable()                               .frame(width: 25, height: 25)
+                                 .scaledToFit()
+                                 .colorInvert()
+                        }
+                     })
+                HStack {
+                Divider()
+                
+                NavigationLink(
+                 destination: DeleteMyAccountView(),
+                   label: {
+                         HStack {
+                      Text("Delete My Account")
+                                .font(.system(size: 20))
+                               .foregroundColor(.black)
+
+                             Spacer()
+
+                            Image("arrowRight")
+                                .resizable()                               .frame(width: 25, height: 25)
+                                 .scaledToFit()
+                                 .colorInvert()
+                        }
+                     })
+                
+       
                 Spacer()
             }
             .padding(30)
@@ -110,4 +148,5 @@ struct MyAccountView_Previews : PreviewProvider {
     static var previews: some View {
         MyAccountView()
     }
+}
 }
