@@ -369,16 +369,24 @@
 				CF3B65B428007EB50003A714 /* HelpSupportView.swift */,
 				CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */,
 				CF3B65BA2800836E0003A714 /* SettingsEngagementView.swift */,
-				CF3B65AC280075620003A714 /* MyAccountView.swift */,
-				CF3B65C7280108100003A714 /* ChangeChatPinView.swift */,
-				CF3B65CB2801D9400003A714 /* DeleteMyAccountView.swift */,
-				CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */,
+				CF3B65CD2801D9D70003A714 /* My Account */,
 				CF3B65B628007FAF0003A714 /* DeleteFriendView.swift */,
 				CF3B65B8280081550003A714 /* NotificationsView.swift */,
 				CF3B65C3280104290003A714 /* SettingsView.swift */,
 			);
 			name = Settings;
 			path = HomeView/Settings;
+			sourceTree = "<group>";
+		};
+		CF3B65CD2801D9D70003A714 /* My Account */ = {
+			isa = PBXGroup;
+			children = (
+				CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */,
+				CF3B65CB2801D9400003A714 /* DeleteMyAccountView.swift */,
+				CF3B65C7280108100003A714 /* ChangeChatPinView.swift */,
+				CF3B65AC280075620003A714 /* MyAccountView.swift */,
+			);
+			path = "My Account";
 			sourceTree = "<group>";
 		};
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
