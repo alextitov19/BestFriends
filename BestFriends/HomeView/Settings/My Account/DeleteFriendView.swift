@@ -63,16 +63,26 @@ struct DeleteFriendView: View {
 //                            .colorInvert()
 //                    }
 //                        })
-             
-    
+                    
+                    Divider()
                 }
+                 Spacer()
+                    
+                    Image("arrowRight")
+                        .renderingMode(.template)
+                        .resizable()
+                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .frame(width: 25, height: 25)
+                }
+                }
+                
+                Spacer()
+                
             }
-        }
+//           .padding(30)
+//            .navigationBarHidden(true)
+      }
+    
+    
 
-    }
-}
-struct DeleteFriendView_Previews : PreviewProvider {
-    static var previews: some View {
-        DeleteFriendView()
-    }
-}
+

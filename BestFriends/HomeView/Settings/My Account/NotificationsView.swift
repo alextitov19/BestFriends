@@ -17,7 +17,11 @@ struct NotificationsView: View {
     @State private var chatNotifications = true
     @State private var broadcastNotifications = true
     
-//    private let userDS = UserDataSource()
+//   private let userDS = UserDataSource()
+  
+ 
+    
+    
     
     var body: some View {
         ZStack {
@@ -66,17 +70,6 @@ struct NotificationsView: View {
                 Divider()
                 
                 HStack {
-                    Text("Delete Account")
-                        .font(.system(size: 20))
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-                    
-                    Spacer().frame(maxHeight: 0)
-                    
-                    Image("arrowRight")
-                        .renderingMode(.template)
-                        .resizable()
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-                        .frame(width: 25, height: 25)
                 }
                 
                 Spacer()
@@ -102,19 +95,21 @@ struct NotificationsView: View {
         }
 //        .navigationBarHidden(true)
     }
-    
-//    private func loadData() {
-//        let user = userDS.getCurrentUser()
-//        chatNotifications = user.notificationsLP
-//        broadcastNotifications = user.notificationsBroadcast
-//    }
+//    
+//  private func loadData() {
+//  let user = userDS.getCurrentUser()
+//    chatNotifications = user.notificationsLP
+//   broadcastNotifications = user.notificationsBroadcast
+// }
 //
-//    private func saveData() {
-//        var user = userDS.getCurrentUser()
-//        user.notificationsLP = chatNotifications
-//        user.notificationsBroadcast = broadcastNotifications
-//        userDS.updateUser(user: user)
-//    }
+//  private func saveData() {
+//    var user = userDS.getCurrentUser()
+//   user.notificationsLP = chatNotifications
+//   user.notificationsBroadcast = broadcastNotifications
+//     userDS.updateUser(user: user)
+//  }
+
+
 
 struct NotificationsView_Previews : PreviewProvider {
     static var previews: some View {
