@@ -23,18 +23,17 @@ struct BestFriendsApp: App {
             case .login:
                 LoginView()
                     .environmentObject(sessionManager)
-                
-            case .home:
-             HomeView()
-                 .environmentObject(sessionManager)
-        
+           case .home:
+                HomeView()
+                    .environmentObject(sessionManager)
             case .invite:
                 InviteView()
                     .environmentObject(sessionManager)
-         
-                    .environmentObject(sessionManager)
             case .chat(let group):
                 ChatView(group: group)
+                    .environmentObject(sessionManager)
+            case .settings:
+                SettingsView()
                     .environmentObject(sessionManager)
             }
         
