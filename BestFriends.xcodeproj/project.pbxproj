@@ -74,6 +74,8 @@
 		CF3B65BB2800836E0003A714 /* SettingsEngagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65BA2800836E0003A714 /* SettingsEngagementView.swift */; };
 		CF3B65BD280091280003A714 /* DemoVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65BC280091280003A714 /* DemoVideoView.swift */; };
 		CF3B65C22800AC4D0003A714 /* LiabilityWaiverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C12800AC4D0003A714 /* LiabilityWaiverView.swift */; };
+		CF3B65C4280104290003A714 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C3280104290003A714 /* SettingsView.swift */; };
+		CF3B65C8280108100003A714 /* ChangeChatPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C7280108100003A714 /* ChangeChatPinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +148,8 @@
 		CF3B65BA2800836E0003A714 /* SettingsEngagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsEngagementView.swift; sourceTree = "<group>"; };
 		CF3B65BC280091280003A714 /* DemoVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoVideoView.swift; sourceTree = "<group>"; };
 		CF3B65C12800AC4D0003A714 /* LiabilityWaiverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiabilityWaiverView.swift; sourceTree = "<group>"; };
+		CF3B65C3280104290003A714 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CF3B65C7280108100003A714 /* ChangeChatPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatPinView.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -358,6 +362,7 @@
 		CF3B65A9280071580003A714 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				CF3B65C3280104290003A714 /* SettingsView.swift */,
 				CF3B65BC280091280003A714 /* DemoVideoView.swift */,
 				CF3B65BA2800836E0003A714 /* SettingsEngagementView.swift */,
 				CF3B65AC280075620003A714 /* MyAccountView.swift */,
@@ -367,6 +372,7 @@
 				CF3B65B628007FAF0003A714 /* DeleteFriendView.swift */,
 				CF3B65B8280081550003A714 /* NotificationsView.swift */,
 				CF3B65C12800AC4D0003A714 /* LiabilityWaiverView.swift */,
+				CF3B65C7280108100003A714 /* ChangeChatPinView.swift */,
 			);
 			name = Settings;
 			path = HomeView/Settings;
@@ -560,6 +566,7 @@
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
+				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,
 				CF3B65BB2800836E0003A714 /* SettingsEngagementView.swift in Sources */,
 				CF3B65B9280081550003A714 /* NotificationsView.swift in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
@@ -575,6 +582,7 @@
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
 				CF3B65C22800AC4D0003A714 /* LiabilityWaiverView.swift in Sources */,
+				CF3B65C8280108100003A714 /* ChangeChatPinView.swift in Sources */,
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,

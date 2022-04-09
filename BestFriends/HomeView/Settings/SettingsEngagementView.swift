@@ -193,7 +193,7 @@ struct SettingsEngagementView: View {
     
 }
 
-struct SettingsEngagementViewPreview : PreviewProvider {
+struct SettingsEngagementView_Preview : PreviewProvider {
     static var previews: some View {
         SettingsEngagementView(index: 2)
     }
