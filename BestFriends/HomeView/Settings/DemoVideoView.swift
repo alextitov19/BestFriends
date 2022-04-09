@@ -36,15 +36,18 @@ struct DemoVideoView: View {
                     Text("BestFriends")
                         .font(.system(size: 30))
                         .offset(x: -2)
+                        
+                    
            
                     
                     
-//                    Spacer()
+                  Spacer()
                     
-                    Text("")
-                        .font(.system(size: 20))
+                    Text("'How To' Video")
+                        .font(.system(size: 30))
+                        .bold()
                         .italic()
-                        .offset(x: -25)
+                        .offset(x: -2)
                     
           
                     
@@ -58,7 +61,7 @@ struct DemoVideoView: View {
                 Link(destination: URL(string: "https://socialtechlabs.com")!) {
                     
                     HStack {
-                        Text("60-second 'Demo' video")
+                        Text("View 60-second BestFriends video")
                             .font(.system(size: 20))
                             .foregroundColor(.black)
 
