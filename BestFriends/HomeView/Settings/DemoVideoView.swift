@@ -35,7 +35,7 @@ struct DemoVideoView: View {
                     
                     Text("BestFriends")
                         .font(.system(size: 30))
-                        .offset(x: -25)
+                        .offset(x: -2)
            
                     
                     
