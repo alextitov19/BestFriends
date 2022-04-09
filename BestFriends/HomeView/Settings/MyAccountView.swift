@@ -39,45 +39,44 @@ struct MyAccountView: View {
                     Spacer()
                 }
                 
-//                Spacer()
-//                    .frame(height: 50)
-//                NavigationLink(
-//                    destination: ResetPassword(),
-//                    label: {
-//                        HStack {
-//                            Text("Change Password")
-//                                .font(.system(size: 20))
-//                                .foregroundColor(.black)
-//
-//                            Spacer().frame(maxHeight: 0)
-//
-//                            Image("arrowRight")
-//                                .resizable()
-//                                .frame(width: 25, height: 25)
-//                                .scaledToFit()
-//                                .colorInvert()
-//                        }
-//                    })
-//
+             Spacer()
+                   .frame(height: 50)
+               NavigationLink(
+                  destination: ResetPasswordView(),
+                  label: {
+                       HStack {
+                           Text("Change Password")
+                               .font(.system(size: 20))
+                              .foregroundColor(.black)
+
+                           Spacer().frame(maxHeight: 0)
+
+                          Image("arrowRight")
+                              .resizable()
+                               .frame(width: 25, height: 25)
+                             .scaledToFit()
+                              .colorInvert()
+                       }
+                   })
+
                 Divider()
                 
-//                NavigationLink(
-//                    destination: ChangePin(),
-//                    label: {
-//                        HStack {
-//                            Text("Change PIN for Hide Chat")
-//                                .font(.system(size: 20))
-//                                .foregroundColor(.black)
-//
-//                            Spacer()
-//
-//                            Image("arrowRight")
-//                                .resizable()
-//                                .frame(width: 25, height: 25)
-//                                .scaledToFit()
-//                                .colorInvert()
-//                        }
-//                    })
+              NavigationLink(
+               destination: ChangeChatPinView(),
+                 label: {
+                       HStack {
+                    Text("Change PIN for Hide Chat")
+                              .font(.system(size: 20))
+                             .foregroundColor(.black)
+
+                           Spacer()
+
+                          Image("arrowRight")
+                              .resizable()                               .frame(width: 25, height: 25)
+                               .scaledToFit()
+                               .colorInvert()
+                      }
+                   })
                 
                 Divider()
                 

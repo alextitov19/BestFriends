@@ -76,6 +76,7 @@
 		CF3B65C22800AC4D0003A714 /* LiabilityWaiverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C12800AC4D0003A714 /* LiabilityWaiverView.swift */; };
 		CF3B65C4280104290003A714 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C3280104290003A714 /* SettingsView.swift */; };
 		CF3B65C8280108100003A714 /* ChangeChatPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C7280108100003A714 /* ChangeChatPinView.swift */; };
+		CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,7 @@
 		CF3B65C12800AC4D0003A714 /* LiabilityWaiverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiabilityWaiverView.swift; sourceTree = "<group>"; };
 		CF3B65C3280104290003A714 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CF3B65C7280108100003A714 /* ChangeChatPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatPinView.swift; sourceTree = "<group>"; };
+		CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -362,17 +364,18 @@
 		CF3B65A9280071580003A714 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				CF3B65C3280104290003A714 /* SettingsView.swift */,
 				CF3B65BC280091280003A714 /* DemoVideoView.swift */,
-				CF3B65BA2800836E0003A714 /* SettingsEngagementView.swift */,
-				CF3B65B428007EB50003A714 /* HelpSupportView.swift */,
-				CF3B65AC280075620003A714 /* MyAccountView.swift */,
 				CF3B65AA2800718E0003A714 /* ReportAbuse.swift */,
+				CF3B65B428007EB50003A714 /* HelpSupportView.swift */,
 				CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */,
+				CF3B65C3280104290003A714 /* SettingsView.swift */,
+				CF3B65BA2800836E0003A714 /* SettingsEngagementView.swift */,
+				CF3B65AC280075620003A714 /* MyAccountView.swift */,
+				CF3B65C7280108100003A714 /* ChangeChatPinView.swift */,
+				CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */,
 				CF3B65B628007FAF0003A714 /* DeleteFriendView.swift */,
 				CF3B65B8280081550003A714 /* NotificationsView.swift */,
 				CF3B65C12800AC4D0003A714 /* LiabilityWaiverView.swift */,
-				CF3B65C7280108100003A714 /* ChangeChatPinView.swift */,
 			);
 			name = Settings;
 			path = HomeView/Settings;
@@ -570,6 +573,7 @@
 				CF3B65BB2800836E0003A714 /* SettingsEngagementView.swift in Sources */,
 				CF3B65B9280081550003A714 /* NotificationsView.swift in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
+				CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */,
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
 				CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */,
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
