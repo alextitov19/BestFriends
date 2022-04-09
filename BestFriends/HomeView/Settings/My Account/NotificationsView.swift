@@ -58,7 +58,7 @@ struct NotificationsView: View {
 //                    .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
 //                    }
 //                    )
-//                Divider()
+              Divider()
                 
                 Toggle("Broadcast Notifications", isOn: $broadcastNotifications)
                     .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -81,16 +81,16 @@ struct NotificationsView: View {
                 
                 Spacer()
                 
-                Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off Notifications your friend may NOT find you in a timely manner.")
+                Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off Notifications your friends may NOT respond to you in a timely manner.")
                     .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .padding(20)
                 
-//                Button(action: {
+//               Button(action: {
 //                    saveData()
 //                }) {
 //                    Text("Save")
-                        .frame(width: 250, height: 50, alignment: .center)
+                        .frame(width: 250, height: 450, alignment: .center)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.title)
                         .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -116,3 +116,8 @@ struct NotificationsView: View {
 //        userDS.updateUser(user: user)
 //    }
 
+struct NotificationsView_Previews : PreviewProvider {
+    static var previews: some View {
+        NotificationsView()
+    }
+}

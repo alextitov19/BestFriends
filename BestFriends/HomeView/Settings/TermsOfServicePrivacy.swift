@@ -35,6 +35,7 @@ struct TermsConditionsView: View {
                     Text("Privacy Policy")
                         .font(.system(size: 30))
                         .offset(x: -25)
+                    
            
                     Text("Terms of Service")
                         .font(.system(size: 30))
@@ -74,8 +75,9 @@ struct TermsConditionsView: View {
                     HStack {
                         Text("Privacy Policy")
                             .font(.system(size: 20))
-                            .foregroundColor(.black)
-
+//                            .foregroundColor(.black)
+                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                      
                         Spacer().frame(maxHeight: 0)
                         
                         Image("arrowRight")
@@ -92,7 +94,8 @@ struct TermsConditionsView: View {
                     HStack {
                         Text("Terms of Serivce")
                             .font(.system(size: 20))
-                            .foregroundColor(.black)
+//                            .foregroundColor(.black)
+                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                         
                         Spacer()
                         

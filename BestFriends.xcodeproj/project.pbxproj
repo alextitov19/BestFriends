@@ -68,7 +68,6 @@
 		CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AA2800718E0003A714 /* ReportAbuse.swift */; };
 		CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AC280075620003A714 /* MyAccountView.swift */; };
 		CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */; };
-		CF3B65B528007EB50003A714 /* HelpSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65B428007EB50003A714 /* HelpSupportView.swift */; };
 		CF3B65B728007FAF0003A714 /* DeleteFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65B628007FAF0003A714 /* DeleteFriendView.swift */; };
 		CF3B65B9280081550003A714 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65B8280081550003A714 /* NotificationsView.swift */; };
 		CF3B65BD280091280003A714 /* DemoVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65BC280091280003A714 /* DemoVideoView.swift */; };
@@ -143,7 +142,6 @@
 		CF3B65AA2800718E0003A714 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
 		CF3B65AC280075620003A714 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServicePrivacy.swift; sourceTree = "<group>"; };
-		CF3B65B428007EB50003A714 /* HelpSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSupportView.swift; sourceTree = "<group>"; };
 		CF3B65B628007FAF0003A714 /* DeleteFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteFriendView.swift; sourceTree = "<group>"; };
 		CF3B65B8280081550003A714 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		CF3B65BC280091280003A714 /* DemoVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoVideoView.swift; sourceTree = "<group>"; };
@@ -364,13 +362,12 @@
 		CF3B65A9280071580003A714 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				CF3B65CF2801DC020003A714 /* DemoVideos */,
-				CF3B65AA2800718E0003A714 /* ReportAbuse.swift */,
-				CF3B65B428007EB50003A714 /* HelpSupportView.swift */,
-				CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */,
-				CF3B65D02801DF1E0003A714 /* UserEngagementView.swift */,
-				CF3B65CD2801D9D70003A714 /* My Account */,
 				CF3B65C3280104290003A714 /* SettingsView.swift */,
+				CF3B65BC280091280003A714 /* DemoVideoView.swift */,
+				CF3B65D02801DF1E0003A714 /* UserEngagementView.swift */,
+				CF3B65AA2800718E0003A714 /* ReportAbuse.swift */,
+				CF3B65CD2801D9D70003A714 /* My Account */,
+				CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */,
 			);
 			name = Settings;
 			path = HomeView/Settings;
@@ -387,14 +384,6 @@
 				CF3B65CB2801D9400003A714 /* DeleteMyAccountView.swift */,
 			);
 			path = "My Account";
-			sourceTree = "<group>";
-		};
-		CF3B65CF2801DC020003A714 /* DemoVideos */ = {
-			isa = PBXGroup;
-			children = (
-				CF3B65BC280091280003A714 /* DemoVideoView.swift */,
-			);
-			path = DemoVideos;
 			sourceTree = "<group>";
 		};
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
@@ -595,7 +584,6 @@
 				CF3B65BD280091280003A714 /* DemoVideoView.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
-				CF3B65B528007EB50003A714 /* HelpSupportView.swift in Sources */,
 				7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */,
 				7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,

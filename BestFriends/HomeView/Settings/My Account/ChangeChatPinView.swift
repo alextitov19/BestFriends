@@ -45,3 +45,8 @@ struct ChangeChatPinView
         }
     }
 }
+struct ChangeChatPinView_Previews : PreviewProvider {
+    static var previews: some View {
+        ChangeChatPinView()
+    }
+}

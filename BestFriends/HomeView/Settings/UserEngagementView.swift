@@ -207,7 +207,7 @@ struct UserEngagementView: View {
     
 }
 
-struct UserfEngagementView_Preview : PreviewProvider {
+struct UserEngagementView_Preview : PreviewProvider {
     static var previews: some View {
         UserEngagementView(index: 1
         )

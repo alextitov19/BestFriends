@@ -47,8 +47,8 @@ struct MyAccountView: View {
                        HStack {
                            Text("Reset Password")
                                .font(.system(size: 20))
-                              .foregroundColor(.black)
-
+//                              .foregroundColor(.black)
+                              .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                            Spacer().frame(maxHeight: 0)
 
                           Image("arrowRight")
@@ -67,8 +67,8 @@ struct MyAccountView: View {
                        HStack {
                     Text("Change PIN for Hide Chat")
                               .font(.system(size: 20))
-                             .foregroundColor(.black)
-
+//                             .foregroundColor(.black)
+                              .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                            Spacer()
 
                           Image("arrowRight")
@@ -86,8 +86,8 @@ struct MyAccountView: View {
                          HStack {
                       Text("Delete Friend")
                                 .font(.system(size: 20))
-                               .foregroundColor(.black)
-
+//                               .foregroundColor(.black)
+                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                              Spacer()
 
                             Image("arrowRight")
@@ -105,8 +105,8 @@ struct MyAccountView: View {
                          HStack {
                       Text("Change Notifications Status")
                                 .font(.system(size: 20))
-                               .foregroundColor(.black)
-
+//                               .foregroundColor(.black)
+                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                              Spacer()
 
                             Image("arrowRight")
@@ -115,6 +115,8 @@ struct MyAccountView: View {
                                  .colorInvert()
                         }
                      })
+
+                
                 HStack {
                 Divider()
                 
@@ -123,8 +125,8 @@ struct MyAccountView: View {
                    label: {
                          HStack {
                       Text("Delete My Account")
-                                .font(.system(size: 20))
-                               .foregroundColor(.black)
+                             .font(.system(size: 20))
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
 
                              Spacer()
 

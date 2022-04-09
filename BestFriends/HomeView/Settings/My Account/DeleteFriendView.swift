@@ -71,3 +71,8 @@ struct DeleteFriendView: View {
 
     }
 }
+struct DeleteFriendView_Previews : PreviewProvider {
+    static var previews: some View {
+        DeleteFriendView()
+    }
+}
