@@ -41,7 +41,7 @@ struct DemoVideoView: View {
            
                     
                     
-                  Spacer()
+//                  Spacer()
                     
                     Text("'How To' Video")
                         .font(.system(size: 30))

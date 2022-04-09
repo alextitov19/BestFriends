@@ -16,8 +16,22 @@ struct SettingsEngagementView: View {
     var body: some View {
         switch index {
         case 1:
+            
+           
+            
             Link(destination: URL(string: "https://https://socialtechlabs.com/beta-tester-_-bestfriends-app/")!) {
-            ZStack {
+           
+                
+                
+                Image("arrowRight")
+                    .resizable()
+                    .frame(width: 25, height: 25)
+                    .scaledToFit()
+                    .colorInvert()
+                    .rotationEffect(Angle(degrees: 180))
+                
+                
+                ZStack {
                 RoundedRectangle(cornerRadius: 25) //Rectangle background
                     .frame(maxWidth: .infinity)
                     .frame(height: 175)
@@ -195,6 +209,7 @@ struct SettingsEngagementView: View {
 
 struct SettingsEngagementView_Preview : PreviewProvider {
     static var previews: some View {
-        SettingsEngagementView(index: 2)
+        SettingsEngagementView(index: 2
+        )
     }
 }
