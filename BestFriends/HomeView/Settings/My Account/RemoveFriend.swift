@@ -29,7 +29,7 @@ struct RemoveFriend: View {
                 }
             
             VStack {
-                Text("Remove friends")
+                Text("Remove Friends")
                     .font(.system(size: 65))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
