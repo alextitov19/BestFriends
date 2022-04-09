@@ -45,7 +45,7 @@ struct MyAccountView: View {
                   destination: ResetPasswordView(),
                   label: {
                        HStack {
-                           Text("Change Password")
+                           Text("Reset Password")
                                .font(.system(size: 20))
                               .foregroundColor(.black)
 
@@ -105,4 +105,9 @@ struct MyAccountView: View {
         }
     }
     
+}
+struct MyAccountView_Previews : PreviewProvider {
+    static var previews: some View {
+        MyAccountView()
+    }
 }

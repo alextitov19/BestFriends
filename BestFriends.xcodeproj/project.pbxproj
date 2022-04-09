@@ -76,6 +76,7 @@
 		CF3B65C4280104290003A714 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C3280104290003A714 /* SettingsView.swift */; };
 		CF3B65C8280108100003A714 /* ChangeChatPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C7280108100003A714 /* ChangeChatPinView.swift */; };
 		CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */; };
+		CF3B65CC2801D9400003A714 /* DeleteMyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65CB2801D9400003A714 /* DeleteMyAccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,7 @@
 		CF3B65C3280104290003A714 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CF3B65C7280108100003A714 /* ChangeChatPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatPinView.swift; sourceTree = "<group>"; };
 		CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		CF3B65CB2801D9400003A714 /* DeleteMyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccountView.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -369,6 +371,7 @@
 				CF3B65BA2800836E0003A714 /* SettingsEngagementView.swift */,
 				CF3B65AC280075620003A714 /* MyAccountView.swift */,
 				CF3B65C7280108100003A714 /* ChangeChatPinView.swift */,
+				CF3B65CB2801D9400003A714 /* DeleteMyAccountView.swift */,
 				CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */,
 				CF3B65B628007FAF0003A714 /* DeleteFriendView.swift */,
 				CF3B65B8280081550003A714 /* NotificationsView.swift */,
@@ -600,6 +603,7 @@
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
 				7AC71DA827F3D803008D191B /* Helper.swift in Sources */,
+				CF3B65CC2801D9400003A714 /* DeleteMyAccountView.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,
 			);

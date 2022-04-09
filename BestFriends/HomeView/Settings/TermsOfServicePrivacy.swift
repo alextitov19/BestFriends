@@ -50,10 +50,8 @@ struct TermsConditionsView: View {
                     
                     Spacer()
                     
-//                    Text("Liability\n Waiver")
-//                        .font(.system(size: 30))
-//                        .offset(x: -25)
-//           
+
+
                     Text("Disclaimer")
                         .font(.system(size: 30))
                         .offset(x: -25)
