@@ -48,8 +48,22 @@ struct TermsConditionsView: View {
                         .italic()
                         .offset(x: -25)
                     
-          
+                    Spacer()
                     
+//                    Text("Liability\n Waiver")
+//                        .font(.system(size: 30))
+//                        .offset(x: -25)
+//           
+                    Text("Disclaimer")
+                        .font(.system(size: 30))
+                        .offset(x: -25)
+                    
+                    
+                        .frame(height: 50)
+                    Text("The BestFriends app does not claim to offer clinical or professional psychological advice to the users. BestFriends strives to help make friends better friends. During difficult times users may connect with their 5 most trusted friends for support. If users are experiencing depression we recommend you consult a professional.")
+                        .font(.system(size: 20))
+                        .italic()
+                        .offset(x: -3)
                     
                     Spacer()
                 }
