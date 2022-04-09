@@ -62,7 +62,7 @@ struct MyAccountView: View {
                 Divider()
                 
               NavigationLink(
-               destination: ChangeChatPinView(),
+               destination: ChangePin(),
                  label: {
                        HStack {
                     Text("Change PIN for Hide Chat")
@@ -121,12 +121,12 @@ struct MyAccountView: View {
                 Divider()
                 
                 NavigationLink(
-                 destination: DeleteMyAccountView(),
+                 destination: DeleteMyAccount(),
                    label: {
                          HStack {
                       Text("Delete My Account")
-                             .font(.system(size: 20))
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
+                                .font(.system(size: 20))
+                               .foregroundColor(.black)
 
                              Spacer()
 

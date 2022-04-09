@@ -72,11 +72,11 @@
 		CF3B65B9280081550003A714 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65B8280081550003A714 /* NotificationsView.swift */; };
 		CF3B65BD280091280003A714 /* DemoVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65BC280091280003A714 /* DemoVideoView.swift */; };
 		CF3B65C4280104290003A714 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C3280104290003A714 /* SettingsView.swift */; };
-		CF3B65C8280108100003A714 /* ChangeChatPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C7280108100003A714 /* ChangeChatPinView.swift */; };
 		CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */; };
-		CF3B65CC2801D9400003A714 /* DeleteMyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65CB2801D9400003A714 /* DeleteMyAccountView.swift */; };
 		CF3B65D52801ED660003A714 /* GetInvolvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65D42801ED660003A714 /* GetInvolvedView.swift */; };
 		CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65DB2801F4D40003A714 /* CustomizationView.swift */; };
+		CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65DF28020D9A0003A714 /* ChangePin.swift */; };
+		CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -147,11 +147,11 @@
 		CF3B65B8280081550003A714 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		CF3B65BC280091280003A714 /* DemoVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoVideoView.swift; sourceTree = "<group>"; };
 		CF3B65C3280104290003A714 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		CF3B65C7280108100003A714 /* ChangeChatPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatPinView.swift; sourceTree = "<group>"; };
 		CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
-		CF3B65CB2801D9400003A714 /* DeleteMyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccountView.swift; sourceTree = "<group>"; };
 		CF3B65D42801ED660003A714 /* GetInvolvedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInvolvedView.swift; sourceTree = "<group>"; };
 		CF3B65DB2801F4D40003A714 /* CustomizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationView.swift; sourceTree = "<group>"; };
+		CF3B65DF28020D9A0003A714 /* ChangePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePin.swift; sourceTree = "<group>"; };
+		CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -380,11 +380,11 @@
 			children = (
 				CF3B65AC280075620003A714 /* MyAccountView.swift */,
 				CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */,
-				CF3B65C7280108100003A714 /* ChangeChatPinView.swift */,
+				CF3B65DF28020D9A0003A714 /* ChangePin.swift */,
 				CF3B65B628007FAF0003A714 /* DeleteFriendView.swift */,
 				CF3B65B8280081550003A714 /* NotificationsView.swift */,
-				CF3B65CB2801D9400003A714 /* DeleteMyAccountView.swift */,
 				CF3B65DB2801F4D40003A714 /* CustomizationView.swift */,
+				CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */,
 			);
 			path = "My Account";
 			sourceTree = "<group>";
@@ -572,6 +572,7 @@
 				7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */,
 				7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
+				CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */,
 				CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
@@ -592,8 +593,8 @@
 				7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
-				CF3B65C8280108100003A714 /* ChangeChatPinView.swift in Sources */,
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
+				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
 				7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */,
@@ -610,7 +611,6 @@
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
 				7AC71DA827F3D803008D191B /* Helper.swift in Sources */,
-				CF3B65CC2801D9400003A714 /* DeleteMyAccountView.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
 				CF3B65D52801ED660003A714 /* GetInvolvedView.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,

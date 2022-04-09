@@ -1,15 +1,14 @@
 //
-//  ResetPasswordView.swift
+//  ResetPassword.swift
 //  BestFriends
 //
-//  Created by Social Tech on 4/9/22.
+//  Created by Robert Roe on 5/8/21.
 //
 
-
 import SwiftUI
+import Amplify
 
-
-struct ResetPasswordView: View {
+struct ResetPassword: View {
     
     @State private var oldPassword: String = ""
     @State private var newPassword: String = ""
@@ -60,13 +59,10 @@ struct ResetPasswordView: View {
             
             
             VStack {
-                              Text("Reset Password")
-                                  .font(.system(size: 30))
-                                 .foregroundColor(.white)
-                                .multilineTextAlignment(.center)
-                                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                
+                //                Text("Reset Password")
+                //                    .font(.system(size: 30))
+                //                    .foregroundColor(.white)
+                //                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 50)
@@ -109,21 +105,18 @@ struct ResetPasswordView: View {
                 
                 Spacer()
                     .frame(height: 50)
-
-//             Button(action: {
-//                   if(oldPassword != "" && newPassword != "" && oldPassword != newPassword) {
-//                       let bool = UserManager().changePassword(oldPassword: oldPassword, newPassword: newPassword)
-//                       if bool == true {
-//                           string = "successfully"
-//                     } else {
-//                          string = "failed"
-//                       }
-//                   }
-//
-//               }) {
-//
-//
-                   
+                
+                Button(action: {
+                    if(oldPassword != "" && newPassword != "" && oldPassword != newPassword) {
+                        let bool = UserManager().changePassword(oldPassword: oldPassword, newPassword: newPassword)
+                        if bool == true {
+                            string = "successfully"
+                        } else {
+                            string = "failed"
+                        }
+                    }
+                    
+                }) {
                     Text("Submit")
                         .font(.title)
                         .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
@@ -142,14 +135,14 @@ struct ResetPasswordView: View {
             }
         }
     }
+}
 
 
 
 
-
-struct ResetPasswordView_Previews : PreviewProvider {
+struct ResetPassword_Previews : PreviewProvider {
     static var previews: some View {
-        ResetPasswordView()
+        ResetPassword()
     }
 }
 

@@ -17,7 +17,7 @@ struct NotificationsView: View {
     @State private var chatNotifications = true
     @State private var broadcastNotifications = true
     
-//   private let userDS = UserDataSource()
+
   
  
     
@@ -95,19 +95,6 @@ struct NotificationsView: View {
         }
 //        .navigationBarHidden(true)
     }
-//    
-//  private func loadData() {
-//  let user = userDS.getCurrentUser()
-//    chatNotifications = user.notificationsLP
-//   broadcastNotifications = user.notificationsBroadcast
-// }
-//
-//  private func saveData() {
-//    var user = userDS.getCurrentUser()
-//   user.notificationsLP = chatNotifications
-//   user.notificationsBroadcast = broadcastNotifications
-//     userDS.updateUser(user: user)
-//  }
 
 
 

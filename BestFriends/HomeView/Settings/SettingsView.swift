@@ -128,7 +128,7 @@ struct SettingsView: View {
                 Divider()
                 
                 NavigationLink(
-                 destination: DeleteMyAccountView(),
+                 destination: DeleteMyAccount(),
                    label: {
                          HStack {
                       Text("Terms of Service & Privacy Policy")
