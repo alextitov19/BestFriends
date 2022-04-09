@@ -82,7 +82,12 @@ struct DeleteFriendView: View {
 //           .padding(30)
 //            .navigationBarHidden(true)
       }
-    
-    
+  
+struct DeleteFriendView_Previews : PreviewProvider {
+    static var previews: some View {
+        DeleteFriendView()
+    }
+}
+
 
 
