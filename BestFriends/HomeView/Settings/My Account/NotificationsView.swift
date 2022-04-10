@@ -27,6 +27,14 @@ struct NotificationsView: View {
         ZStack {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
+            
+            
+            Image("HomeBackground2")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
+            
             VStack {
                 HStack {
                     Button(action: {
@@ -36,7 +44,8 @@ struct NotificationsView: View {
                             .resizable()
                             .frame(width: 25, height: 25)
                             .scaledToFit()
-                            .colorInvert()
+                            .foregroundColor(.white)
+//                            .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
                             .onAppear {
 //                                loadData()
@@ -48,7 +57,7 @@ struct NotificationsView: View {
                     Text("Notifications")
                         .font(.system(size: 30))
                         .offset(x: -25)
-                    
+                        .foregroundColor(.white)
                     Spacer()
                 }
                 
@@ -64,7 +73,8 @@ struct NotificationsView: View {
 //                    )
               Divider()
                 
-                Toggle("Broadcast Notifications", isOn: $broadcastNotifications)
+                Toggle("     Broadcast Notifications", isOn: $broadcastNotifications)
+                    .foregroundColor(.white)
                     .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                 
                 Divider()
@@ -72,10 +82,10 @@ struct NotificationsView: View {
                 HStack {
                 }
                 
-                Spacer()
+                Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off Notifications your friends may NOT respond in a timely manner.")
+//                    .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+                  .foregroundColor(.green)
                 
-                Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off Notifications your friends may NOT respond to you in a timely manner.")
-                    .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
                     .multilineTextAlignment(.center)
                     .padding(20)
                 
@@ -91,7 +101,7 @@ struct NotificationsView: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
             }
-            .padding(30)
+            .padding()
         }
 //        .navigationBarHidden(true)
     }
