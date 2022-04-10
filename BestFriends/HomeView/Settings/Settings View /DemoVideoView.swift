@@ -19,7 +19,8 @@ struct DemoVideoView: View {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
             VStack {
-                VStack {
+                
+                HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
@@ -33,31 +34,17 @@ struct DemoVideoView: View {
                     
                     Spacer()
                     
-                    Text("BestFriends")
+                    Text("Demo Video")
                         .font(.system(size: 30))
-                        .offset(x: -2)
-                        
-                    
-           
-                    
-                    
-//                  Spacer()
-                    
-                    Text("'How To' Video")
-                        .font(.system(size: 30))
-                        .bold()
-                        .italic()
-                        .offset(x: -2)
-                    
-          
+                        .offset(x: -25)
                     
                     
                     Spacer()
                 }
                 
-                Spacer()
-                    .frame(height: 50)
-                
+             Spacer()
+                   .frame(height: 50)
+         
                 Link(destination: URL(string: "https://socialtechlabs.com")!) {
                     
                     HStack {
@@ -87,9 +74,10 @@ struct DemoVideoView: View {
         }
     }
     
-}
+
 struct DemoVideoView_Previews : PreviewProvider {
     static var previews: some View {
         DemoVideoView()
     }
+}
 }
