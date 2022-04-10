@@ -51,7 +51,7 @@ struct SettingsView: View {
                   destination: DemoVideoView(),
                   label: {
                        HStack {
-                           Text("BestFriends Video")
+                           Text("Demo Video & Use Instructions")
                                .font(.system(size: 20))
 //                              .foregroundColor(.black)
                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -71,7 +71,7 @@ struct SettingsView: View {
                    destination: DemoVideoView(),
                    label: {
                         HStack {
-                            Text("Get Involved ... See Prototype Features")
+                            Text("Get Involved ... See 'Prototype' Features")
                                 .font(.system(size: 20))
  //                              .foregroundColor(.black)
                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))

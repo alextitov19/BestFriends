@@ -210,7 +210,7 @@ struct GetInvolvedView: View {
 
 struct GetInvolvedView_Preview : PreviewProvider {
     static var previews: some View {
-        GetInvolvedView(index: 1
+        GetInvolvedView(index: 3
         )
     }
 }
