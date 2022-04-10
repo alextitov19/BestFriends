@@ -33,7 +33,8 @@ struct TermsConditionsView: View {
                             .resizable()
                             .frame(width: 25, height: 25)
                             .scaledToFit()
-                            .colorInvert()
+                            .foregroundColor(.white)
+//                            .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
                     }
                     
