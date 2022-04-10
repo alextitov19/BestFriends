@@ -33,6 +33,13 @@ struct GetInvolvedView: View {
                 
                 
                 ZStack {
+                    
+//                    Image("settingsBackground")
+//                        .resizable()
+//                        .ignoresSafeArea()
+//                        .scaledToFill()
+//                    
+//                    
                 RoundedRectangle(cornerRadius: 25) //Rectangle background
                     .frame(maxWidth: .infinity)
                     .frame(height: 175)
@@ -40,7 +47,7 @@ struct GetInvolvedView: View {
                     .padding(10)
               
                 
-                
+            
                 
                 Image("girlwalking")
                     .resizable()

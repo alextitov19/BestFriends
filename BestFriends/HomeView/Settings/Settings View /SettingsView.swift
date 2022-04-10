@@ -22,6 +22,9 @@ struct SettingsView: View {
         ZStack {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
+            
+      
+            
             VStack {
                 HStack {
                     Button(action: {
@@ -51,7 +54,7 @@ struct SettingsView: View {
                   destination: DemoVideoView(),
                   label: {
                        HStack {
-                           Text("Demo Video & Use Instructions")
+                           Text("   Demo Video")
                                .font(.system(size: 20))
 //                              .foregroundColor(.black)
                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -64,14 +67,16 @@ struct SettingsView: View {
                               .colorInvert()
                        }
                    })
-
+               .padding(5)
+               .navigationBarHidden(true)
+                
                 Divider()
                 
                 NavigationLink(
                    destination: DemoVideoView(),
                    label: {
                         HStack {
-                            Text("Get Involved ... See 'Prototype' Features")
+                            Text("   Get Involved ... 1st to see NEW Features")
                                 .font(.system(size: 20))
  //                              .foregroundColor(.black)
                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -85,13 +90,16 @@ struct SettingsView: View {
                         }
                     })
                 
+                .padding(5)
+                .navigationBarHidden(true)
+                
                 Divider()
                 
                 NavigationLink(
                  destination: ReportAbuseView(),
                    label: {
                          HStack {
-                      Text("Report Abusive Behavior")
+                      Text("  Report Abusive Behavior")
                                 .font(.system(size: 20))
 //                               .foregroundColor(.black)
                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -102,7 +110,8 @@ struct SettingsView: View {
                                  .scaledToFit()
                                  .colorInvert()
                         }
-                     })
+                         .padding(0)
+                         .navigationBarHidden(true)     })
                   
                 Divider()
                 
@@ -110,7 +119,7 @@ struct SettingsView: View {
                  destination: MyAccountView(),
                    label: {
                          HStack {
-                      Text("Manage My Account")
+                      Text("     Manage My Account")
                                 .font(.system(size: 20))
 //                               .foregroundColor(.black)
                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -123,6 +132,9 @@ struct SettingsView: View {
                         }
                      })
 
+                .padding(0)
+                .navigationBarHidden(true)
+               
                 
                 HStack {
                 Divider()
@@ -131,7 +143,7 @@ struct SettingsView: View {
                  destination: DeleteMyAccount(),
                    label: {
                          HStack {
-                      Text("Terms of Service & Privacy Policy")
+                      Text(" Terms of Service & Privacy Policy")
                              .font(.system(size: 20))
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
 
@@ -147,7 +159,7 @@ struct SettingsView: View {
        
                 Spacer()
             }
-            .padding(30)
+            .padding(10)
             .navigationBarHidden(true)
         }
     }

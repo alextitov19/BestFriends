@@ -17,6 +17,14 @@ struct MyAccountView: View {
         ZStack {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
+            
+            
+            Image("holding iphone")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
+            
             VStack {
                 HStack {
                     Button(action: {
@@ -126,7 +134,7 @@ struct MyAccountView: View {
                          HStack {
                       Text("Delete My Account")
                                 .font(.system(size: 20))
-                               .foregroundColor(.black)
+                               .foregroundColor(.red)
 
                              Spacer()
 
@@ -140,7 +148,7 @@ struct MyAccountView: View {
        
                 Spacer()
             }
-            .padding(30)
+            .padding(50)
             .navigationBarHidden(true)
         }
     }
