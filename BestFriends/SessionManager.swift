@@ -13,6 +13,7 @@ enum AppState {
     case invite
     case chat(group: Group)
     case settings
+    case breath
 }
 
 final class SessionManager: ObservableObject {
@@ -51,7 +52,10 @@ final class SessionManager: ObservableObject {
     func showSettings() {
         appState = .settings
     }
-    
+   
+    func testBreathIn() {
+        appState = .breath
   
     }
 
+}
