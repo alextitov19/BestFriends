@@ -16,7 +16,7 @@ enum AppState {
 }
 
 final class SessionManager: ObservableObject {
-    @Published var appState: AppState = .login
+    @Published var appState: AppState = .chat(group: Group(id: "123", name: "", members: [], owner: "", createdOn: ""))
     
     func showSignUp() {
         appState = .signUp
