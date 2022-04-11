@@ -9,7 +9,8 @@ import Foundation
 import SwiftUI
 
 struct BreathIn: View {
-    
+//    let timer = timer.publish(every: 10, on: .main, in: .common).autoconnect()
+   
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
@@ -17,7 +18,7 @@ struct BreathIn: View {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
             
-            Image("HomeBackground2")
+            Image("Star Page")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -61,7 +62,7 @@ struct BreathIn: View {
 
 
                     Text("Breath in . . . ")
-                        .font(.system(size: 50))
+                        .font(.system(size: 60))
                         .offset(x: -25)
                         .foregroundColor(.white)
                         
