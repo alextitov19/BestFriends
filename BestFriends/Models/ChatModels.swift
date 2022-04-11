@@ -39,6 +39,14 @@ struct Message: Codable {
     }
 }
 
+
+struct CreateMessage: Codable {
+    let body: String
+    enum CodingKeys: String, CodingKey {
+        case body = "body"
+    }
+}
+
 struct CreateGroup: Codable {
     let members: [String]
     enum CodingKeys: String, CodingKey {
