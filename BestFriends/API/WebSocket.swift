@@ -16,8 +16,9 @@ class WebSocketStream: AsyncSequence {
         private var continuation: AsyncThrowingStream<Element, Error>.Continuation?
         private let socket: URLSessionWebSocketTask
 
-        init(url: String, session: URLSession = URLSession.shared) {
-            socket = session.webSocketTask(with: URL(string: url)!)
+    init(groupId: String, session: URLSession = URLSession.shared) {
+        let request = RestApi.instance.createChatWebSocketRequest(groupId: groupId)
+            socket = session.webSocketTask(with: request)
             stream = AsyncThrowingStream { continuation in
                 self.continuation = continuation
                 self.continuation?.onTermination = { @Sendable [socket] _ in

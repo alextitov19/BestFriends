@@ -14,6 +14,8 @@ class RestApi {
 //    let API_URL = "http://54.173.213.37:8080/api/v1/services"
     let API_URL = "http://localhost:8080/api/v1/services"
     
+    let WS_URL = "ws://localhost:8080/api/v1/services/messages/"
+    
     public static var instance = RestApi()
     
     public var needLogin : Bool {
@@ -65,6 +67,15 @@ class RestApi {
         let cg = CreateGroup(members: members)
         return helper.createGroup(url: API_URL + "/groups", createGroup: cg)
     }
+    
+    
+    
+    func createChatWebSocketRequest(groupId: String) -> URLRequest {
+        var request: URLRequest = URLRequest(url: URL(string: WS_URL + groupId)!)
+        helper.setWebSocketAuthorizationHeader(request: &request)
+        return request
+    }
+    
     
     public func updateUserId() {
         getCurrentUser().then { details in
