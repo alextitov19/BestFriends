@@ -48,4 +48,18 @@ class WebSocketStream: AsyncSequence {
             }
         }
     }
+    
+    func sendMessage(body: String) {
+        let message = CreateMessage(body: body)
+            guard let json = try? JSONEncoder().encode(message),
+                let jsonString = String(data: json, encoding: .utf8)
+            else {
+                return
+            }
+            socket.send(.string(jsonString)) { error in
+                if let error = error {
+                    print("Error sending message", error)
+                }
+            }
+    }
 }
