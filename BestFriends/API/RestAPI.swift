@@ -11,8 +11,8 @@ import Promises
 class RestApi {
     var helper: Helper
     var userId: String?
-    let API_URL = "http://54.173.213.37:8080/api/v1"
-//    let API_URL = "http://localhost:8080/api/v1"
+//    let API_URL = "http://54.173.213.37:8080/api/v1/services"
+    let API_URL = "http://localhost:8080/api/v1/services"
     
     public static var instance = RestApi()
     
@@ -23,7 +23,7 @@ class RestApi {
     }
     
     private init() {
-        helper = Helper(API_URL, signUp: "/services/signup", login: "/services/login", renew: "/services/renew")
+        helper = Helper(API_URL, signUp: "/signup", login: "/login", renew: "/renew")
     }
     
     public func signUp(_ userData: SignUpUserData) -> Promise<Int> {
@@ -35,35 +35,35 @@ class RestApi {
     }
     
     public func getCurrentUser() -> Promise<User> {
-        return helper.callRestApi(url: API_URL + "/services/users", method: .get, User.self)
+        return helper.callRestApi(url: API_URL + "/users", method: .get, User.self)
     }
     
     public func getHomeData() -> Promise<HomeData> {
-        return helper.callRestApi(url: API_URL + "/services/users/home", method: .get, HomeData.self)
+        return helper.callRestApi(url: API_URL + "/users/home", method: .get, HomeData.self)
     }
     
     public func getInvites() -> Promise<[Invite]> {
-        return helper.callRestApi(url: API_URL + "/services/invites", method: .get, [Invite].self)
+        return helper.callRestApi(url: API_URL + "/invites", method: .get, [Invite].self)
     }
     
     public func createInvite(recipient: String) -> Promise<Int> {
         let ci = CreateInvite(recipient: recipient)
-        return helper.createInvite(url: API_URL + "/services/invites", createInvite: ci)
+        return helper.createInvite(url: API_URL + "/invites", createInvite: ci)
     }
     
     public func acceptInvite(recipient: String) -> Promise<Int> {
         let ai = AcceptRejectInvite(sender: recipient)
-        return helper.acceptRejectInvite(url: API_URL + "/services/invites/accept", ari: ai)
+        return helper.acceptRejectInvite(url: API_URL + "/invites/accept", ari: ai)
     }
     
     public func rejectInvite(recipient: String) -> Promise<Int> {
         let ri = AcceptRejectInvite(sender: recipient)
-        return helper.acceptRejectInvite(url: API_URL + "/services/invites/reject", ari: ri)
+        return helper.acceptRejectInvite(url: API_URL + "/invites/reject", ari: ri)
     }
     
     public func createGroup(members: [String]) -> Promise<Group> {
         let cg = CreateGroup(members: members)
-        return helper.createGroup(url: API_URL + "/services/groups", createGroup: cg)
+        return helper.createGroup(url: API_URL + "/groups", createGroup: cg)
     }
     
     public func updateUserId() {

@@ -246,7 +246,6 @@
 		7A71BCFD2625292A00E6FA9E /* BestFriends */ = {
 			isa = PBXGroup;
 			children = (
-				CF3B65A9280071580003A714 /* Settings */,
 				7AED44FA2647310700944708 /* BestFriends.entitlements */,
 				7ACEDEDC2685181700102E70 /* BestFriendsRelease.entitlements */,
 				7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */,
@@ -255,6 +254,7 @@
 				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
+				CF3B65A9280071580003A714 /* Settings */,
 				7A1C048627F4C3A90002B173 /* Models */,
 				7AC71DA627F3D7D4008D191B /* API */,
 				7A1DBD602659B1A400EB4B42 /* Ext+Custom */,
