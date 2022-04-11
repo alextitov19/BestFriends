@@ -8,8 +8,6 @@ target 'BestFriends' do
 
   # Pods for BestFriends
   pod 'PromisesSwift'
-  pod 'Starscream'
-pod 'SwiftWebSocket'
 
 
 end
