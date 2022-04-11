@@ -42,15 +42,15 @@ struct testBreathIn: View {
                 
                 Spacer()
                 
-                Text("Breath in & HOLD")
-                    .font(.system(size: 50))
-                    .offset(x: -25)
+                Text("Breath in \n & HOLD")
+                    .font(.system(size: 40))
+                    .offset(x: 90)
                     .foregroundColor(.white)
                
                 
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 370)
             }
         
         
@@ -67,15 +67,18 @@ struct testBreathIn: View {
         .onReceive(timer, perform: { _ in
     if count  <= 1 {
         finishedText = "E  X  H  A  L  E"
+            
     } else {
         count -= 1
                 }
             }
         )}
+        
+        Spacer()
+            .frame(height: 20)
 }
 
-    
-    
+  
     
     
     
@@ -98,3 +101,4 @@ struct testBreathIn: View {
     }
 }
 }
+
