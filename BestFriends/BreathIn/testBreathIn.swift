@@ -26,7 +26,14 @@ struct testBreathIn: View {
             .resizable()
             .ignoresSafeArea()
             .scaledToFill()
-   
+
+        Image("settingsBackground")
+//            .fixedSize()
+            .resizable()
+            .ignoresSafeArea()
+            .scaledToFill()
+        
+        
         VStack {
             HStack {
                 Button(action: {
