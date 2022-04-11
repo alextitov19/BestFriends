@@ -15,5 +15,6 @@ struct ChatView: View {
     
     var body: some View {
         Text(group.name)
+        
     }
 }
