@@ -71,35 +71,64 @@ struct NotificationsView: View {
 //                    .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
 //                    }
 //                    )
-              Divider()
-                
-                Toggle("     Broadcast Notifications", isOn: $broadcastNotifications)
-                    .foregroundColor(.white)
-                    .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                
-                Divider()
-                
+//
                 HStack {
                 }
+               
+                
+                Text("Safety TIP")
+//                    .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+                    .font(.system(size: 30))
+                    
+                    .offset(x: -3)
+                    .foregroundColor(.red)
+                Spacer()
+                    .frame(height: 50)
                 
                 Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off Notifications your friends may NOT respond in a timely manner.")
 //                    .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
-                  .foregroundColor(.green)
+                    .font(.system(size: 20))
+                    .italic()
+                    .offset(x: -3)
+                    .foregroundColor(.white)
+                    
                 
-                    .multilineTextAlignment(.center)
-                    .padding(20)
+//                Spacer()
+//                    .frame(height: 50)
+//
+                
+                Spacer()
+                    .frame(height: 300)
+                
+                    Divider()
+                      
+                      Toggle("     Broadcast Notifications", isOn: $broadcastNotifications)
+                          .foregroundColor(.white)
+                          .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                      
+//                      Divider()
+                      
+                
+                
+                
+                
+//
+//                    .foregroundColor(.white)
+//
+//                    .multilineTextAlignment(.center)
+//                    .padding(20)
                 
 //               Button(action: {
 //                    saveData()
 //                }) {
 //                    Text("Save")
-                        .frame(width: 250, height: 450, alignment: .center)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.title)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(10)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                }
+//                        .frame(width: 250, height: 450, alignment: .center)
+//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                        .font(.title)
+//                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+//                        .cornerRadius(10)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                }
             }
             .padding()
         }
@@ -112,4 +141,5 @@ struct NotificationsView_Previews : PreviewProvider {
     static var previews: some View {
         NotificationsView()
     }
+}
 }

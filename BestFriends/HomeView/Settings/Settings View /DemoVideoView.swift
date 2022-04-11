@@ -56,7 +56,7 @@ struct DemoVideoView: View {
                 
 //
      
-           Link(destination: URL(string: "https://socialtechlabs.com")!) {
+           Link(destination: URL(string: "https://socialtechlabs.com/demo/")!) {
                   HStack {
                        Text("60-second Demo Video")
                           .font(.system(size: 20))

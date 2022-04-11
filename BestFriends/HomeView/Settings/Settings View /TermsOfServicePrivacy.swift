@@ -61,10 +61,11 @@ struct TermsConditionsView: View {
                     
 
 
-                    Text("Safety Tip")
+                    Text("Safety TIP")
                         .font(.system(size: 30))
                         .offset(x: -25)
                         .foregroundColor(.red)
+                        
 //                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
 //
                         .frame(height: 50)
@@ -72,7 +73,7 @@ struct TermsConditionsView: View {
                         .font(.system(size: 20))
                         .italic()
                         .offset(x: -3)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.white)
                         
 //                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     Spacer()
