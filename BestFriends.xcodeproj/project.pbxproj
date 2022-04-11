@@ -78,7 +78,6 @@
 		CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65DF28020D9A0003A714 /* ChangePin.swift */; };
 		CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */; };
 		CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E3280219B70003A714 /* RemoveFriend.swift */; };
-		CF3B65E82803E6AE0003A714 /* BreathIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E72803E6AE0003A714 /* BreathIn.swift */; };
 		CF3B65EA2803F3050003A714 /* testBreathIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E92803F3050003A714 /* testBreathIn.swift */; };
 /* End PBXBuildFile section */
 
@@ -156,7 +155,6 @@
 		CF3B65DF28020D9A0003A714 /* ChangePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePin.swift; sourceTree = "<group>"; };
 		CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
 		CF3B65E3280219B70003A714 /* RemoveFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend.swift; sourceTree = "<group>"; };
-		CF3B65E72803E6AE0003A714 /* BreathIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathIn.swift; sourceTree = "<group>"; };
 		CF3B65E92803F3050003A714 /* testBreathIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testBreathIn.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
@@ -408,7 +406,6 @@
 		CF3B65E62803E6860003A714 /* BreathIn */ = {
 			isa = PBXGroup;
 			children = (
-				CF3B65E72803E6AE0003A714 /* BreathIn.swift */,
 				CF3B65E92803F3050003A714 /* testBreathIn.swift */,
 			);
 			path = BreathIn;
@@ -603,7 +600,6 @@
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
-				CF3B65E82803E6AE0003A714 /* BreathIn.swift in Sources */,
 				CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,

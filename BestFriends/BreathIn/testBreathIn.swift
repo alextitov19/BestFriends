@@ -26,6 +26,36 @@ struct testBreathIn: View {
             .resizable()
             .ignoresSafeArea()
             .scaledToFill()
+   
+        VStack {
+            HStack {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image("arrowRight")
+                        .resizable()
+                        .frame(width: 25, height: 25)
+                        .scaledToFit()
+                        .colorInvert()
+                        .rotationEffect(Angle(degrees: 180))
+                }
+                
+                Spacer()
+                
+                Text("Breath in & HOLD")
+                    .font(.system(size: 50))
+                    .offset(x: -25)
+                    .foregroundColor(.white)
+               
+                
+                
+                Spacer()
+                    .frame(height: 50)
+            }
+        
+        
+        
+         
         
         Text(finishedText ?? "\(count)")
             .font(.system(size: 50))
@@ -36,15 +66,35 @@ struct testBreathIn: View {
 
         .onReceive(timer, perform: { _ in
     if count  <= 1 {
-        finishedText = "Breath Out"
+        finishedText = "E  X  H  A  L  E"
     } else {
         count -= 1
                 }
             }
         )}
 }
-struct testBreathIn_Previews : PreviewProvider {
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    struct testBreathIn_Previews : PreviewProvider {
     static var previews: some View {
         testBreathIn()
     }
+}
 }
