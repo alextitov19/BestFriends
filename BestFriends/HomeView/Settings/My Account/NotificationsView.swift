@@ -62,7 +62,7 @@ struct NotificationsView: View {
                 }
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 200)
                 
 //                NavigationLink(
 ////                    destination: NotificationsOnOffPage(),
@@ -98,7 +98,7 @@ struct NotificationsView: View {
 //
                 
                 Spacer()
-                    .frame(height: 300)
+                    .frame(height: 200)
                 
                     Divider()
                       
