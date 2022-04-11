@@ -10,12 +10,19 @@ import Foundation
 import SwiftUI
 
 struct testBreathIn: View {
+    
+    
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    
+    
     let timer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
-   
-  @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
+    
     @State var count: Int = 10
     @State var finishedText: String? = nil
+    
+    
     
     var body: some View {
     ZStack {
@@ -48,21 +55,17 @@ struct testBreathIn: View {
                 }
                 
                 Spacer()
+             
                 
                 Text("Breath in \n & HOLD")
                     .font(.system(size: 40))
-                    .offset(x: 90)
+                    .offset(x: 90, y: 50)
                     .foregroundColor(.white)
-               
-                
-                
+             
                 Spacer()
                     .frame(height: 370)
             }
-        
-        
-        
-         
+     
         
         Text(finishedText ?? "\(count)")
             .font(.system(size: 50))
@@ -77,6 +80,8 @@ struct testBreathIn: View {
             
     } else {
         count -= 1
+        
+        
                 }
             }
         )}
@@ -92,4 +97,5 @@ struct testBreathIn: View {
     }
 }
 }
+
 
