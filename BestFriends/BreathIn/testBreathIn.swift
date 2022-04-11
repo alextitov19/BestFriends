@@ -81,7 +81,6 @@ struct testBreathIn: View {
 //        count -= 1
 //
 //
-        
             .onReceive(timer) { _ in
         if count  == 1 {
             timer.upstream.connect().cancel()
@@ -89,11 +88,8 @@ struct testBreathIn: View {
                 
         } else {
             count -= 1
-            
         
-        
-        
-        
+          
                 }
             }
         }
