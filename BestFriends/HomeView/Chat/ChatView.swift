@@ -25,15 +25,24 @@ struct ChatView: View {
     
     var body: some View {
         VStack {
+            // MARK: Header
         Text(group.name)
             .task {
                 await listenForMessages()
             }
             
-            MainTextField(text: $messageBody, placeholder: "New Message")
-            Button(action: sendMessage) {
-                CustomButtonInterior(text: "Send", backgroundColor: .green, textColor: .white)
+            // MARK: Main scroll view
+            ScrollView(.vertical) {
+                ForEach(messages, id: \.id) { message in
+                    Text(message.body)
+                }
             }
+            
+            TextField(" Send a chat", text: $messageBody)
+                .padding()
+                .submitLabel(.send)
+                .onSubmit { sendMessage() }
+            
         }
     }
     
