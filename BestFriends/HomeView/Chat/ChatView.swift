@@ -45,11 +45,24 @@ struct ChatView: View {
                     }
                 }
                 
-                TextField(" Send a chat", text: $messageBody)
-                    .padding()
+                TextField("", text: $messageBody)
+                    .placeholder(when: messageBody.isEmpty) {
+                        HStack {
+                            Text("Send a chat").foregroundColor(.black)
+                            
+                            Spacer()
+                        }
+                    }
+                    .font(.system(size: 18))
                     .submitLabel(.send)
                     .onSubmit { sendMessage() }
-                
+                    .padding()
+                    .overlay(RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.gray)
+                                .frame(height: 40)
+                                .padding(.horizontal, 5)
+                    )
+
             }
         }
     }
