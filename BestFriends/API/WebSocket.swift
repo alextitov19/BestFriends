@@ -15,7 +15,7 @@ class WebSocketStream: AsyncSequence {
     private var stream: AsyncThrowingStream<Element, Error>?
         private var continuation: AsyncThrowingStream<Element, Error>.Continuation?
         private let socket: URLSessionWebSocketTask
-
+    
     init(groupId: String, session: URLSession = URLSession.shared) {
         let request = RestApi.instance.createChatWebSocketRequest(groupId: groupId)
             socket = session.webSocketTask(with: request)
@@ -40,6 +40,7 @@ class WebSocketStream: AsyncSequence {
         socket.receive { [unowned self] result in
             switch result {
             case .success(let message):
+                // Got a message
                 print("Got a websocket message: ", message)
                 continuation?.yield(message)
                 listenForMessages()

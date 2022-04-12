@@ -12,7 +12,10 @@ struct ChatView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let group: Group
-    private let stream: WebSocketStream
+    private var stream: WebSocketStream
+    
+    @State private var messages: [Message] = []
+    
     init(group: Group) {
         self.group = group
         stream = WebSocketStream(groupId: group.id)
@@ -24,14 +27,7 @@ struct ChatView: View {
         VStack {
         Text(group.name)
             .task {
-                // Listen for new messages
-                do {
-                    for try await message in stream {
-                        print("Got chat message: ", message)
-                    }
-                } catch {
-                    debugPrint("Oops something didn't go right")
-                }
+                await listenForMessages()
             }
             
             MainTextField(text: $messageBody, placeholder: "New Message")
@@ -44,5 +40,29 @@ struct ChatView: View {
     private func sendMessage() {
         if messageBody.count == 0 { return }
         stream.sendMessage(body: messageBody)
+    }
+    
+    private func listenForMessages() async {
+        let decoder = JSONDecoder()
+        do {
+            for try await message in stream {
+                switch message {
+                        case .string(let s):
+                    let jsonData = Data(s.utf8)
+                    do {
+                        let msg = try decoder.decode(Message.self, from: jsonData)
+                        self.messages.append(msg)
+                        print("Added a new message from json to messages array")
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+
+                        case .data(let data):
+                            print("Received binary message: \(data)")
+                }
+            }
+        } catch {
+            debugPrint("Oops something didn't go right")
+        }
     }
 }
