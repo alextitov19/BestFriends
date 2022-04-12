@@ -83,6 +83,7 @@ struct ChatView: View {
                     do {
                         let msg = try decoder.decode(Message.self, from: jsonData)
                         self.messages.append(msg)
+                        sortMessages()
                         print("Added a new message from json to messages array")
                     } catch {
                         print(error.localizedDescription)
@@ -98,5 +99,9 @@ struct ChatView: View {
         } catch {
             debugPrint("Oops something didn't go right")
         }
+    }
+    
+    private func sortMessages() {
+        messages = messages.sorted(by: { $0.createdOn < $1.createdOn })
     }
 }

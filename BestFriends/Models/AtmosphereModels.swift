@@ -24,7 +24,7 @@ struct MoodLog: Codable {
     let id: String
     let mood: Int
     let summary: String
-    let createdOn: String
+    let createdOn: Int64
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case mood = "mood"

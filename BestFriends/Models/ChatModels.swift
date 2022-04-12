@@ -13,7 +13,7 @@ struct Group: Codable {
     let members: [String]
     let owner: String
     let messages: [String] = []
-    let createdOn: String
+    let createdOn: Int64
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case name = "name"
@@ -29,7 +29,7 @@ struct Message: Codable {
     let senderId: String
     let senderName: String
     let body: String
-    let createdOn: String
+    let createdOn: Int64
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case senderId = "sender_id"

@@ -138,13 +138,6 @@ struct HomeView: View {
         let friends: [User] = homeData?.friends ?? []
         let atmosperes: [Atmosphere] = homeData?.friendAtmospheres ?? []
         
-        // TODO: Remove the loop below, only for demo purposes
-        for _ in 1...5 {
-            let planet = Planet(user: User(id: "test12@gmail.com", firstName: "Test", lastName: "User", atmosphere: ""), planet: 1, mood: 1)
-            
-            planets.append(planet)
-        }
-        
         for friend in friends {
             for atmosphere in atmosperes {
                 if friend.atmosphere == atmosphere.id {
