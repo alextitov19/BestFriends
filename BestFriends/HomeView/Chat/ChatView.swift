@@ -70,6 +70,7 @@ struct ChatView: View {
     private func sendMessage() {
         if messageBody.count == 0 { return }
         stream.sendMessage(body: messageBody)
+        messageBody = ""
     }
     
     private func listenForMessages() async {
