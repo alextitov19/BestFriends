@@ -11,12 +11,14 @@ struct ChatView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+    let user: User
     let group: Group
     private var stream: WebSocketStream
     
     @State private var messages: [Message] = []
     
-    init(group: Group) {
+    init(user: User, group: Group) {
+        self.user = user
         self.group = group
         stream = WebSocketStream(groupId: group.id)
     }
@@ -24,25 +26,31 @@ struct ChatView: View {
     @State private var messageBody: String = ""
     
     var body: some View {
-        VStack {
-            // MARK: Header
-        Text(group.name)
-            .task {
-                await listenForMessages()
-            }
+        ZStack {
+            AdPlayerView(name: "cloud")
+                .ignoresSafeArea()
             
-            // MARK: Main scroll view
-            ScrollView(.vertical) {
-                ForEach(messages, id: \.id) { message in
-                    Text(message.body)
+            
+            VStack {
+                // MARK: Header
+                Text(group.name)
+                    .task {
+                        await listenForMessages()
+                    }
+                
+                // MARK: Main scroll view
+                ScrollView(.vertical) {
+                    ForEach(messages, id: \.id) { message in
+                        ChatBubble(message: message, myOwnMessage: message.senderId == user.id)
+                    }
                 }
+                
+                TextField(" Send a chat", text: $messageBody)
+                    .padding()
+                    .submitLabel(.send)
+                    .onSubmit { sendMessage() }
+                
             }
-            
-            TextField(" Send a chat", text: $messageBody)
-                .padding()
-                .submitLabel(.send)
-                .onSubmit { sendMessage() }
-            
         }
     }
     
@@ -56,7 +64,7 @@ struct ChatView: View {
         do {
             for try await message in stream {
                 switch message {
-                        case .string(let s):
+                case .string(let s):
                     let jsonData = Data(s.utf8)
                     do {
                         let msg = try decoder.decode(Message.self, from: jsonData)
@@ -66,8 +74,11 @@ struct ChatView: View {
                         print(error.localizedDescription)
                     }
 
-                        case .data(let data):
-                            print("Received binary message: \(data)")
+                case .data(let data):
+                    print("Received binary message: \(data)")
+                    
+                @unknown default:
+                    print("Received some other UNKNOWN message")
                 }
             }
         } catch {

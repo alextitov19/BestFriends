@@ -21,6 +21,10 @@
 		7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */; };
 		7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */; };
 		7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */; };
+		7A2C2159280509DA009362CF /* cloud.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A2C2156280509DA009362CF /* cloud.mp4 */; };
+		7A2C215A280509DA009362CF /* green.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A2C2157280509DA009362CF /* green.mp4 */; };
+		7A2C215B280509DA009362CF /* blue.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A2C2158280509DA009362CF /* blue.mp4 */; };
+		7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2C215C28050BCD009362CF /* ChatBubble.swift */; };
 		7A383FFB267AC306002F354A /* Skateboard.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D8266477D300243DD7 /* Skateboard.mp4 */; };
 		7A383FFD267AC306002F354A /* FieldFlowers.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */; };
 		7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */; };
@@ -96,6 +100,10 @@
 		7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorExt+Mgr.swift"; sourceTree = "<group>"; };
 		7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonInterior.swift; sourceTree = "<group>"; };
 		7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		7A2C2156280509DA009362CF /* cloud.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloud.mp4; sourceTree = "<group>"; };
+		7A2C2157280509DA009362CF /* green.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = green.mp4; sourceTree = "<group>"; };
+		7A2C2158280509DA009362CF /* blue.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blue.mp4; sourceTree = "<group>"; };
+		7A2C215C28050BCD009362CF /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		7A4D50062783B9D3006F7404 /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
 		7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
@@ -281,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				7AC4C01E27FF4A08000C4140 /* ChatView.swift */,
+				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -428,6 +437,9 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
+				7A2C2158280509DA009362CF /* blue.mp4 */,
+				7A2C2156280509DA009362CF /* cloud.mp4 */,
+				7A2C2157280509DA009362CF /* green.mp4 */,
 				CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */,
 				7A78232926B2419600CA76FC /* bull.mp4 */,
 				CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */,
@@ -496,8 +508,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2C215A280509DA009362CF /* green.mp4 in Resources */,
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */,
+				7A2C215B280509DA009362CF /* blue.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A78233126B2419600CA76FC /* school.mp4 in Resources */,
@@ -505,6 +519,7 @@
 				7A78233026B2419600CA76FC /* pink.mp4 in Resources */,
 				7A383FFB267AC306002F354A /* Skateboard.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
+				7A2C2159280509DA009362CF /* cloud.mp4 in Resources */,
 				7A78232D26B2419600CA76FC /* blender.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
 				7A78232F26B2419600CA76FC /* phone.mp4 in Resources */,
@@ -610,6 +625,7 @@
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
 				CF3B65EA2803F3050003A714 /* testBreathIn.swift in Sources */,
 				CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */,
+				7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */,
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
 				CF3B65BD280091280003A714 /* DemoVideoView.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,

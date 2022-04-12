@@ -11,7 +11,7 @@ enum AppState {
     case signUp
     case login
     case invite
-    case chat(group: Group)
+    case chat(user: User, group: Group)
     case settings
     case breath
 }
@@ -36,8 +36,7 @@ final class SessionManager: ObservableObject {
             print("Tokens: ", tokens)
             self.showHome()
         }.catch { err in
-            print("Got error")
-            print(err)
+            print("Got error: ", err)
         }
     }
     
@@ -45,8 +44,8 @@ final class SessionManager: ObservableObject {
         appState = .invite
     }
     
-    func showChat(group: Group) {
-        appState = .chat(group: group)
+    func showChat(user: User, group: Group) {
+        appState = .chat(user: user, group: group)
     }
     
     func showSettings() {
@@ -55,7 +54,6 @@ final class SessionManager: ObservableObject {
    
     func testBreathIn() {
         appState = .breath
-  
     }
 
 }
