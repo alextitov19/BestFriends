@@ -57,7 +57,7 @@ struct DeleteMyAccount: View {
                 Spacer()
                     .frame(height: 125)
                 
-                Text("We're sorry to see you go. Please let us know how we can improve.")
+                Text("We're sorry to see you go. If you have a moment please let us know how we can improve.")
                     .font(.system(size: 25))
                     .fontWeight(.regular)
                     .foregroundColor(.black)
