@@ -27,7 +27,7 @@ struct Thought: View {
                         .frame(height: 50)
                     
                     Text("Just a Thought")
-                        .font(.system(size: 25, weight: .bold))
+                        .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
@@ -37,7 +37,7 @@ struct Thought: View {
                         .frame(height: 15)
                     
                     Text("Do something nice for a freind today")
-                        .font(.system(size: 15, weight: .bold))
+                        .font(.system(size: 20, weight: .bold))
                         .italic()
                         .foregroundColor(.green)
                         .multilineTextAlignment(.leading)
