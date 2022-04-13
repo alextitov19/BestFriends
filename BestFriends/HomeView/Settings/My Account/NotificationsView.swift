@@ -81,7 +81,7 @@ struct NotificationsView: View {
                     .font(.system(size: 30))
                     
                     .offset(x: -3)
-                    .foregroundColor(.red)
+                    .foregroundColor(.green)
                 Spacer()
                     .frame(height: 50)
                 
