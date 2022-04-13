@@ -43,14 +43,14 @@ struct MyAccountView: View {
                     
                     Text("My Account")
                         .font(.system(size: 30))
-                        .offset(x: -25, y: 50)
+//                        .offset(x: -25, y: 50)
                     
                     
                     Spacer()
                 }
                 
-             Spacer()
-                   .frame(height: 100)
+            
+//
                NavigationLink(
                   destination: ResetPasswordView(),
                   label: {
@@ -127,8 +127,8 @@ struct MyAccountView: View {
                      })
 
                 
-                HStack {
-                Divider()
+            
+            
                 
                 NavigationLink(
                  destination: DeleteMyAccount(),
@@ -138,7 +138,7 @@ struct MyAccountView: View {
                                 .font(.system(size: 20))
                                .foregroundColor(.red)
 
-//                             Spacer()
+                          Spacer()
 
                             Image("arrowRight")
                                 .resizable()                               .frame(width: 25, height: 25)
@@ -148,14 +148,19 @@ struct MyAccountView: View {
                      })
                 
        
-                Spacer()
-            }
-            .padding(50)
-            .navigationBarHidden(true)
-        }
-    }
+                .padding(.vertical, 170
+                )
     
+            .navigationBarHidden(true)
+   
+                Spacer()
+                
+            }
+    }
+   
 }
+    
+
 struct MyAccountView_Previews : PreviewProvider {
     static var previews: some View {
         MyAccountView()
