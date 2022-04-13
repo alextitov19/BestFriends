@@ -271,6 +271,7 @@
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
 				CF3B65A9280071580003A714 /* Settings */,
+				CF3B65F128075F3B0003A714 /* FriendVault */,
 				CF3B65E62803E6860003A714 /* BreathIn */,
 				7A1C048627F4C3A90002B173 /* Models */,
 				7AC71DA627F3D7D4008D191B /* API */,
@@ -424,6 +425,13 @@
 				CF3B65EF280741F30003A714 /* StoredtestBreathIn.swift */,
 			);
 			path = BreathIn;
+			sourceTree = "<group>";
+		};
+		CF3B65F128075F3B0003A714 /* FriendVault */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FriendVault;
 			sourceTree = "<group>";
 		};
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
