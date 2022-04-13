@@ -24,6 +24,8 @@ struct testBreathIn: View {
     
     
     var body: some View {
+       
+        
     ZStack {
         Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
            .ignoresSafeArea()
@@ -46,7 +48,7 @@ struct testBreathIn: View {
                 .offset(x: 10, y: 20)
                 .foregroundColor(.green)
             
-            Text("Breath 'in' for 5, then 'hold' for 5 sec")
+            Text("Breath 'in' for 5 seconds, then 'hold' for 5")
                 .font(.system(size: 15))
                 .offset(x: 10, y: 25)
                 .foregroundColor(.green)
@@ -96,11 +98,12 @@ struct testBreathIn: View {
 //
                 }
             }
-        }
+ 
+    }
         
-
+       
 }
-
+   
     
 //
 //    struct testBreathIn_Previews : PreviewProvider {
@@ -143,3 +146,4 @@ struct testBreathIn: View {
 //                    .frame(width: 25, height: 25)
 //                    .scaledToFit()
 //                    .colorInvert()
+

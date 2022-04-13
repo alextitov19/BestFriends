@@ -53,12 +53,17 @@ struct StoredtestBreathIn: View {
                 
                 Spacer()
              
+                Text("Let's try to Relax ...")
+                    .font(.system(size: 30))
+                    .offset(x: 10, y: 20)
+                    .foregroundColor(.green)
                 
-                Text("Breath in \n & HOLD")
-                    .font(.system(size: 40))
-                    .offset(x: 90, y: 50)
-                    .foregroundColor(.white)
-             
+                Text("Breath 'in' for 5 seconds - then 'hold' for 5")
+                    .font(.system(size: 15))
+                    .offset(x: 10, y: 25)
+                    .foregroundColor(.green)
+  
+//
                 Spacer()
                     .frame(height: 370)
             }
