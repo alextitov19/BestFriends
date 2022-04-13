@@ -84,6 +84,7 @@
 		CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E3280219B70003A714 /* RemoveFriend.swift */; };
 		CF3B65EA2803F3050003A714 /* testBreathIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E92803F3050003A714 /* testBreathIn.swift */; };
 		CF3B65EE280732B20003A714 /* BreathIn2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65ED280732B20003A714 /* BreathIn2.swift */; };
+		CF3B65F0280741F30003A714 /* StoredtestBreathIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65EF280741F30003A714 /* StoredtestBreathIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +167,7 @@
 		CF3B65E3280219B70003A714 /* RemoveFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend.swift; sourceTree = "<group>"; };
 		CF3B65E92803F3050003A714 /* testBreathIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testBreathIn.swift; sourceTree = "<group>"; };
 		CF3B65ED280732B20003A714 /* BreathIn2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathIn2.swift; sourceTree = "<group>"; };
+		CF3B65EF280741F30003A714 /* StoredtestBreathIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredtestBreathIn.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -419,6 +421,7 @@
 			children = (
 				CF3B65E92803F3050003A714 /* testBreathIn.swift */,
 				CF3B65ED280732B20003A714 /* BreathIn2.swift */,
+				CF3B65EF280741F30003A714 /* StoredtestBreathIn.swift */,
 			);
 			path = BreathIn;
 			sourceTree = "<group>";
@@ -642,6 +645,7 @@
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
+				CF3B65F0280741F30003A714 /* StoredtestBreathIn.swift in Sources */,
 				7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */,
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
