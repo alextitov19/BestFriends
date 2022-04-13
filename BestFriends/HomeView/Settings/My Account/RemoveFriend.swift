@@ -20,18 +20,18 @@ struct RemoveFriend: View {
     
     var body: some View {
         ZStack {
-            Image("SignUpPinBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-                .onAppear {
-//                    reloadData()
-                }
+            ZStack {
+                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                    .ignoresSafeArea()
+                Image("settingsBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
             
             VStack {
                 Text("Remove Friends")
-                    .font(.system(size: 65))
-                    .foregroundColor(.white)
+                    .font(.system(size: 35))
+                    .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
                     .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
@@ -116,4 +116,5 @@ struct RemoveFriend_Previews : PreviewProvider {
     static var previews: some View {
         RemoveFriend()
     }
+}
 }
