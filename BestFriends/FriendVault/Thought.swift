@@ -11,7 +11,7 @@ import SwiftUI
 struct Thought: View {
     
     var body: some View {
-        ScrollView{
+    
             
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
@@ -59,18 +59,18 @@ struct Thought: View {
                     Spacer()
                         .frame(height: 50)
                     
-
+                    
                     VStack {
                         
-                 
-                    
-                    Text("Nope, don't even get a special badge")
-                        .font(.system(size: 25))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    
-                   
+                        
+                        
+                        Text("Nope, don't even get a special badge")
+                            .font(.system(size: 25))
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 0)
+                        
+                        
                         Spacer()
                             .frame(height: 100)
                         
@@ -79,39 +79,36 @@ struct Thought: View {
                             .foregroundColor(.green)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 0)
-                       
+                        
                         
                         NavigationLink(
-                           destination: FriendVaultView(),
-                           label: {
+                            destination: FriendVaultView(),
+                            label: {
                                 HStack {
-                                    Text("Reset Password")
-                                        .font(.system(size: 20))
-         //                              .foregroundColor(.black)
-                                       .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                    Spacer().frame(maxHeight: 0)
-
-                                   Image("arrowRight")
-                                       .resizable()
-                                        .frame(width: 25, height: 25)
-                                      .scaledToFit()
-                                       .colorInvert()
-                        
+                                    Text("FriendVault")
+                                        .font(.system(size: 30))
+                                        .foregroundColor(.white)
+                                        .padding(30)
+                                    
+                                
+                                 
+                                    
+                                    
+                                }
+                            }
+                        )}
                 }
             }
-       )}
+            
+        }
     }
-}
-                           
-                    
-                    
-                    
-//                    struct Thought_Previews : PreviewProvider {
-//                        static var previews: some View {
-//                            Thought()
-//                        }
-//                    }
 
-}
+
+
+struct Thought_Previews : PreviewProvider {
+    static var previews: some View {
+        Thought()
     }
 }
+
+
