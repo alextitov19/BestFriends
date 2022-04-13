@@ -22,6 +22,13 @@ struct SettingsView: View {
         ZStack {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
+
+              Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                  .ignoresSafeArea()
+              Image("settingsBackground")
+                  .resizable()
+                  .ignoresSafeArea()
+                  .scaledToFill()
             
             
             VStack {
@@ -41,13 +48,13 @@ struct SettingsView: View {
                     
                     Text("Settings")
                         .font(.system(size: 30))
-                        .offset(x: -25)
+                        .offset(x: -25, y: 50)
                     
                     Spacer()
                 }
                 
              Spacer()
-                   .frame(height: 50)
+                   .frame(height: 100)
                 
                NavigationLink(
                   destination: DemoVideoView(),
