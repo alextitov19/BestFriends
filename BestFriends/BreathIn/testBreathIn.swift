@@ -72,6 +72,40 @@ struct testBreathIn: View {
             .lineLimit(1)
                        }
 
+            .onReceive(timer) { _ in
+        if count  == 1 {
+            timer.upstream.connect().cancel()
+            finishedText = "E X H A L E"
+                
+        } else {
+            count -= 1
+        
+//
+//
+                }
+            }
+        }
+        
+
+}
+
+    
+//
+//    struct testBreathIn_Previews : PreviewProvider {
+//    static var previews: some View {
+//        testBreathIn()
+//    }
+//}
+}
+
+
+    
+
+
+
+
+
+
 //        .onReceive(timer, perform: { _ in
 //    if count  == 1 {
 //        timer.upstream.connect().cancel()
@@ -81,29 +115,19 @@ struct testBreathIn: View {
 //        count -= 1
 //
 //
-            .onReceive(timer) { _ in
-        if count  == 1 {
-            timer.upstream.connect().cancel()
-            finishedText = "E  X  H  A  L  E"
-                
-        } else {
-            count -= 1
-        
-          
-                }
-            }
-        }
-        
-
-}
-
-    
-    
-    struct testBreathIn_Previews : PreviewProvider {
-    static var previews: some View {
-        testBreathIn()
-    }
-}
-}
-
-
+//NavigationLink(
+//            destination;: BreathIn2(),
+//        label: {
+//            HStack {
+//
+//                Text("Repeat")
+//                    .font(.system(size: 20))
+//                    .foregroundColor(.black)
+//
+//                Spacer().frame(maxHeight: 0)
+//
+//                Image("arrowRight")
+//                    .resizable()
+//                    .frame(width: 25, height: 25)
+//                    .scaledToFit()
+//                    .colorInvert()

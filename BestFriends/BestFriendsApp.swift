@@ -21,7 +21,7 @@ struct BestFriendsApp: App {
                 SignUpView()
                     .environmentObject(sessionManager)
             case .login:
-                LoginView()
+                testBreathIn()
                     .environmentObject(sessionManager)
             case .home:
                 HomeView()
