@@ -40,6 +40,18 @@ struct testBreathIn: View {
         
         
         VStack {
+            
+            Text("Let's try to Relax ...")
+                .font(.system(size: 30))
+                .offset(x: 10, y: 20)
+                .foregroundColor(.green)
+            
+            Text("Breath 'in' for 5, then 'hold' for 5 sec")
+                .font(.system(size: 15))
+                .offset(x: 10, y: 25)
+                .foregroundColor(.green)
+            
+            
             HStack {
                 Button(action: {
                     self.presentationMode.wrappedValue.dismiss()
@@ -55,7 +67,7 @@ struct testBreathIn: View {
                 Spacer()
              
                 
-                Text("Breath in \n & HOLD")
+                Text("Breath in \n & hold")
                     .font(.system(size: 40))
                     .offset(x: 90, y: 50)
                     .foregroundColor(.white)
