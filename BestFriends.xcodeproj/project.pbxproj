@@ -86,6 +86,7 @@
 		CF3B65EE280732B20003A714 /* BreathIn2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65ED280732B20003A714 /* BreathIn2.swift */; };
 		CF3B65F0280741F30003A714 /* StoredtestBreathIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65EF280741F30003A714 /* StoredtestBreathIn.swift */; };
 		CF3B65F32807888A0003A714 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65F22807888A0003A714 /* Thought.swift */; };
+		CF3B65F528078FE20003A714 /* FriendVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65F428078FE20003A714 /* FriendVaultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +171,7 @@
 		CF3B65ED280732B20003A714 /* BreathIn2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathIn2.swift; sourceTree = "<group>"; };
 		CF3B65EF280741F30003A714 /* StoredtestBreathIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredtestBreathIn.swift; sourceTree = "<group>"; };
 		CF3B65F22807888A0003A714 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
+		CF3B65F428078FE20003A714 /* FriendVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVaultView.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -433,6 +435,7 @@
 			isa = PBXGroup;
 			children = (
 				CF3B65F22807888A0003A714 /* Thought.swift */,
+				CF3B65F428078FE20003A714 /* FriendVaultView.swift */,
 			);
 			path = FriendVault;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
 				7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */,
+				CF3B65F528078FE20003A714 /* FriendVaultView.swift in Sources */,
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,

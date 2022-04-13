@@ -1,5 +1,5 @@
 //
-//  Thought.swift
+//  FriendVaultView.swift
 //  BestFriends
 //
 //  Created by Social Tech on 4/13/22.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Thought: View {
+struct FriendVaultView: View {
     
     var body: some View {
         ScrollView{
@@ -90,9 +90,9 @@ struct Thought: View {
                     
                     
                     
-                    struct Thought_Previews : PreviewProvider {
+                    struct FriendVaultView_Previews : PreviewProvider {
                         static var previews: some View {
-                            Thought()
+                            FriendVaultView()
                         }
                     }
 
