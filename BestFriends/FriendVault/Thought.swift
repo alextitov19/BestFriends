@@ -79,21 +79,39 @@ struct Thought: View {
                             .foregroundColor(.green)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 0)
+                       
                         
+                        NavigationLink(
+                           destination: FriendVaultView(),
+                           label: {
+                                HStack {
+                                    Text("Reset Password")
+                                        .font(.system(size: 20))
+         //                              .foregroundColor(.black)
+                                       .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                    Spacer().frame(maxHeight: 0)
+
+                                   Image("arrowRight")
+                                       .resizable()
+                                        .frame(width: 25, height: 25)
+                                      .scaledToFit()
+                                       .colorInvert()
                         
                 }
             }
-        }
+       )}
     }
 }
+                           
                     
                     
                     
-                    
-                    struct Thought_Previews : PreviewProvider {
-                        static var previews: some View {
-                            Thought()
-                        }
-                    }
+//                    struct Thought_Previews : PreviewProvider {
+//                        static var previews: some View {
+//                            Thought()
+//                        }
+//                    }
 
+}
+    }
 }

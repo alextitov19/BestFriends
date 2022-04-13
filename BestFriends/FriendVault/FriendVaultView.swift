@@ -26,7 +26,7 @@ struct FriendVaultView: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    Text("Just a Thought")
+                    Text("FriendVault")
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -36,50 +36,7 @@ struct FriendVaultView: View {
                     Spacer()
                         .frame(height: 15)
                     
-                    Text("Do something nice for a freind today")
-                        .font(.system(size: 20, weight: .bold))
-                        .italic()
-                        .foregroundColor(.green)
-                        .multilineTextAlignment(.leading)
-                        .padding(.horizontal, 0)
-                    
-                    
-                    Spacer()
-                        .frame(height: 25)
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    Text("Nope, you don't get free Tokens")
-                        .font(.system(size: 25))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    
-                    Spacer()
-                        .frame(height: 50)
-                    
-
-                    VStack {
-                        
-                 
-                    
-                    Text("Nope, don't even get a special badge")
-                        .font(.system(size: 25))
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    
                    
-                        Spacer()
-                            .frame(height: 100)
-                        
-                        Text("But maybe, just maybe you'll get a genuine smile back")
-                            .font(.system(size: 25, weight: .bold))
-                            .foregroundColor(.green)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 0)
-                        
                         
                 }
             }
@@ -96,4 +53,4 @@ struct FriendVaultView: View {
                         }
                     }
 
-}
+
