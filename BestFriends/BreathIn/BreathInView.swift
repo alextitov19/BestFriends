@@ -45,12 +45,12 @@ struct BreathInView: View {
                 
                 Text("Let's try to Relax ...")
                     .font(.system(size: 30))
-                    .offset(x: 10, y: 75)
+                    .offset(x: 10, y: 135)
                     .foregroundColor(.green)
                 
                 Text("Breath 'in' for 5 seconds, then 'hold' for 5")
                     .font(.system(size: 15))
-                    .offset(x: 10, y: 75)
+                    .offset(x: 10, y: 135)
                     .foregroundColor(.green)
                 
                 
