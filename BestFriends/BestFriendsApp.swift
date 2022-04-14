@@ -36,7 +36,7 @@ struct BestFriendsApp: App {
                 SettingsView()
                     .environmentObject(sessionManager)
             case .breath:
-                testBreathIn()
+                BreathInView()
                     .environmentObject(sessionManager)
             
             }

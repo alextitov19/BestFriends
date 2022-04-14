@@ -10,7 +10,7 @@ import Foundation
 
 import SwiftUI
 
-struct NotificationsView: View {
+struct SettingsNotificationsView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
@@ -77,7 +77,7 @@ struct NotificationsView: View {
                
                 
                 Text("Safety TIP")
-//                    .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+
                     .font(.system(size: 30))
                     
                     .offset(x: -3)
@@ -86,7 +86,7 @@ struct NotificationsView: View {
                     .frame(height: 50)
                 
                 Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off Notifications your friends may NOT respond in a timely manner.")
-//                    .foregroundColor(Color(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+
                     .font(.system(size: 20))
                     .italic()
                     .offset(x: -3)
@@ -137,9 +137,9 @@ struct NotificationsView: View {
 
 
 
-struct NotificationsView_Previews : PreviewProvider {
+struct SettingsNotificationsView_Previews : PreviewProvider {
     static var previews: some View {
-        NotificationsView()
+        SettingsNotificationsView()
     }
 }
 }

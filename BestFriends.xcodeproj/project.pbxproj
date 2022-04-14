@@ -73,7 +73,7 @@
 		CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AA2800718E0003A714 /* ReportAbuse.swift */; };
 		CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AC280075620003A714 /* MyAccountView.swift */; };
 		CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */; };
-		CF3B65B9280081550003A714 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65B8280081550003A714 /* NotificationsView.swift */; };
+		CF3B65B9280081550003A714 /* SettingsNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65B8280081550003A714 /* SettingsNotificationsView.swift */; };
 		CF3B65BD280091280003A714 /* DemoVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65BC280091280003A714 /* DemoVideoView.swift */; };
 		CF3B65C4280104290003A714 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C3280104290003A714 /* SettingsView.swift */; };
 		CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */; };
@@ -82,8 +82,7 @@
 		CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65DF28020D9A0003A714 /* ChangePin.swift */; };
 		CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */; };
 		CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E3280219B70003A714 /* RemoveFriend.swift */; };
-		CF3B65EA2803F3050003A714 /* testBreathIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E92803F3050003A714 /* testBreathIn.swift */; };
-		CF3B65EE280732B20003A714 /* BreathIn2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65ED280732B20003A714 /* BreathIn2.swift */; };
+		CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E92803F3050003A714 /* BreathInView.swift */; };
 		CF3B65F0280741F30003A714 /* StoredtestBreathIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65EF280741F30003A714 /* StoredtestBreathIn.swift */; };
 		CF3B65F32807888A0003A714 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65F22807888A0003A714 /* Thought.swift */; };
 		CF3B65F528078FE20003A714 /* FriendVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65F428078FE20003A714 /* FriendVaultView.swift */; };
@@ -158,7 +157,7 @@
 		CF3B65AA2800718E0003A714 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
 		CF3B65AC280075620003A714 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServicePrivacy.swift; sourceTree = "<group>"; };
-		CF3B65B8280081550003A714 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		CF3B65B8280081550003A714 /* SettingsNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNotificationsView.swift; sourceTree = "<group>"; };
 		CF3B65BC280091280003A714 /* DemoVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoVideoView.swift; sourceTree = "<group>"; };
 		CF3B65C3280104290003A714 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
@@ -167,8 +166,7 @@
 		CF3B65DF28020D9A0003A714 /* ChangePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePin.swift; sourceTree = "<group>"; };
 		CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
 		CF3B65E3280219B70003A714 /* RemoveFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend.swift; sourceTree = "<group>"; };
-		CF3B65E92803F3050003A714 /* testBreathIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testBreathIn.swift; sourceTree = "<group>"; };
-		CF3B65ED280732B20003A714 /* BreathIn2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathIn2.swift; sourceTree = "<group>"; };
+		CF3B65E92803F3050003A714 /* BreathInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInView.swift; sourceTree = "<group>"; };
 		CF3B65EF280741F30003A714 /* StoredtestBreathIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredtestBreathIn.swift; sourceTree = "<group>"; };
 		CF3B65F22807888A0003A714 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		CF3B65F428078FE20003A714 /* FriendVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVaultView.swift; sourceTree = "<group>"; };
@@ -402,7 +400,7 @@
 				CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */,
 				CF3B65DF28020D9A0003A714 /* ChangePin.swift */,
 				CF3B65E3280219B70003A714 /* RemoveFriend.swift */,
-				CF3B65B8280081550003A714 /* NotificationsView.swift */,
+				CF3B65B8280081550003A714 /* SettingsNotificationsView.swift */,
 				CF3B65DB2801F4D40003A714 /* CustomizationView.swift */,
 				CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */,
 			);
@@ -424,8 +422,7 @@
 		CF3B65E62803E6860003A714 /* BreathIn */ = {
 			isa = PBXGroup;
 			children = (
-				CF3B65E92803F3050003A714 /* testBreathIn.swift */,
-				CF3B65ED280732B20003A714 /* BreathIn2.swift */,
+				CF3B65E92803F3050003A714 /* BreathInView.swift */,
 				CF3B65EF280741F30003A714 /* StoredtestBreathIn.swift */,
 			);
 			path = BreathIn;
@@ -637,15 +634,14 @@
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
 				CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */,
-				CF3B65EE280732B20003A714 /* BreathIn2.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,
-				CF3B65B9280081550003A714 /* NotificationsView.swift in Sources */,
+				CF3B65B9280081550003A714 /* SettingsNotificationsView.swift in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
 				CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */,
 				CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */,
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
-				CF3B65EA2803F3050003A714 /* testBreathIn.swift in Sources */,
+				CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */,
 				CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */,
 				7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */,
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
