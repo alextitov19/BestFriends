@@ -72,6 +72,7 @@ struct BreathInView: View {
                     Text("Breath 'in' for 5 seconds, then 'hold' for 5")
                         .font(.system(size: 25))
                         .offset(x: 90, y: 50)
+                        
                         .foregroundColor(.white)
                     
                     Spacer()
