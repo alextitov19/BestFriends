@@ -45,12 +45,12 @@ struct BreathInView: View {
                 
                 Text("Let's try to Relax ...")
                     .font(.system(size: 30))
-                    .offset(x: 10, y: 20)
+                    .offset(x: 10, y: 75)
                     .foregroundColor(.green)
                 
                 Text("Breath 'in' for 5 seconds, then 'hold' for 5")
                     .font(.system(size: 15))
-                    .offset(x: 10, y: 25)
+                    .offset(x: 10, y: 75)
                     .foregroundColor(.green)
                 
                 
@@ -75,7 +75,7 @@ struct BreathInView: View {
                         .foregroundColor(.white)
                     
                     Spacer()
-                        .frame(height: 370)
+                        .frame(height: 460)
                 }
                 
                 
@@ -117,7 +117,7 @@ struct BreathInView: View {
                     
                     finishedText = "E X H A L E"
                     count = 11
-                    
+                        
                 } else {
                     count -= 1
                     finishedText = String(count)
