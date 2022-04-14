@@ -35,7 +35,7 @@ struct Thought: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("Go ahead & something nice")
+                    Text("Say something nice")
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.orange)
                         .multilineTextAlignment(.center)
