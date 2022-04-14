@@ -48,11 +48,11 @@ struct BreathInView: View {
                     .offset(x: 10, y: 135)
                     .foregroundColor(.green)
                 
-                Text("Breath 'in' for 5 seconds, then 'hold' for 5")
-                    .font(.system(size: 15))
-                    .offset(x: 10, y: 135)
-                    .foregroundColor(.green)
-                
+//                Text("Breath 'in' for 5 seconds, then 'hold' for 5")
+//                    .font(.system(size: 15))
+//                    .offset(x: 10, y: 135)
+//                    .foregroundColor(.green)
+//
                 
                 HStack {
                     Button(action: {
@@ -69,8 +69,8 @@ struct BreathInView: View {
                     Spacer()
                     
                     
-                    Text("Breath in \n & hold")
-                        .font(.system(size: 40))
+                    Text("Breath 'in' for 5 seconds, then 'hold' for 5")
+                        .font(.system(size: 25))
                         .offset(x: 90, y: 50)
                         .foregroundColor(.white)
                     
