@@ -24,47 +24,53 @@ struct Thought: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 5)
                     
-                    Text("Just a Thought")
-                        .font(.system(size: 30, weight: .bold))
+                    Text("TODAY,")
+                        .font(.system(size: 35, weight: .bold))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
-                    
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 10)
                     
-                    Text("Do something nice for a freind today")
+                    Text("Go ahead & something nice")
+                        .font(.system(size: 30, weight: .bold))
+                        .foregroundColor(.orange)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+                    Spacer()
+                        .frame(height: 5)
+                    
+                    Text("to your freind in chat")
                         .font(.system(size: 20, weight: .bold))
                         .italic()
-                        .foregroundColor(.green)
+                        
+                        .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
                     
+                  
                     
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 40)
                     
-                    Spacer()
-                        .frame(height: 50)
-                    
-                    Text("Nope, you don't get free Tokens")
+                    Text("*** Yep, you just started a streak")
                         .font(.system(size: 25))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 100)
                     
                     
                     VStack {
                         
                         
                         
-                        Text("Nope, don't even get a special badge")
+                        Text("and")
                             .font(.system(size: 25))
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
@@ -72,14 +78,17 @@ struct Thought: View {
                         
                         
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 5)
                         
-                        Text("But maybe, just maybe you'll get a genuine smile back")
+                        Text("Get a genuine smile back")
                             .font(.system(size: 25, weight: .bold))
-                            .foregroundColor(.green)
+                            .foregroundColor(.orange)
+                            .italic()
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 0)
                         
+                        Spacer()
+                            .frame(height: 80)
                         
                         NavigationLink(
                             destination: FriendVaultView(),
