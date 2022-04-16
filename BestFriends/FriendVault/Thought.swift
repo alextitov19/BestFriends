@@ -73,7 +73,8 @@ struct Thought: View {
                             .frame(height: 5)
                         
                         Text("You just started a streak")
-                            .font(.system(size: 25))
+                            .font(.system(size: 25,
+                    weight: .bold))
                             .foregroundColor(.green)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 0)
