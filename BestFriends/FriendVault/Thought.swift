@@ -55,12 +55,13 @@ struct Thought: View {
                     
                     Spacer()
                         .frame(height: 40)
-                    
-                    Text("*** Yep, you just started a streak")
-                        .font(.system(size: 25))
-                        .foregroundColor(.white)
+                    Text("Get a smile back")
+                        .font(.system(size: 25, weight: .bold))
+                        .foregroundColor(.orange)
+                        .italic()
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
+                    
                     
                     Spacer()
                         .frame(height: 100)
@@ -68,22 +69,12 @@ struct Thought: View {
                     
                     VStack {
                         
-                        
-                        
-                        Text("and")
-                            .font(.system(size: 25))
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 0)
-                        
-                        
                         Spacer()
                             .frame(height: 5)
                         
-                        Text("Get a genuine smile back")
-                            .font(.system(size: 25, weight: .bold))
-                            .foregroundColor(.orange)
-                            .italic()
+                        Text("You just started a streak")
+                            .font(.system(size: 25))
+                            .foregroundColor(.green)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 0)
                         
