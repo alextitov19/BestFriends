@@ -91,7 +91,7 @@ struct PlanetActionsView: View {
             
             VStack {
                 Button(action: {
-                    
+                    sessionManager.showInvite()
                 }) {
                     ZStack {
                         Circle()
@@ -104,7 +104,7 @@ struct PlanetActionsView: View {
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
-                    .onTapGesture(perform: sessionManager.showInvite)
+                    
                 }
                 
                 Spacer()
@@ -130,7 +130,7 @@ struct PlanetActionsView: View {
                     .frame(height: 40)
                 
                 Button(action: {
-                    
+                    sessionManager.showFreindVaultView()
                 }) {
                     ZStack {
                         Circle()
@@ -142,6 +142,8 @@ struct PlanetActionsView: View {
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+                  
+                    
                     }
                 }
                 
