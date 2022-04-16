@@ -39,8 +39,18 @@ struct FriendVaultView: View {
                                     .scaledToFit()
                                     .colorInvert()
                                     .rotationEffect(Angle(degrees: 180))
+                            
+                    Spacer()
+                            
+                                Image("Exclamation Mark")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .scaledToFit()
+                                    .colorInvert()
+                                    .rotationEffect(Angle(degrees: 180))
                             }
-                       
+                            
+                            
                         Spacer()
                             .frame(height: 40)
                     }
@@ -58,7 +68,7 @@ struct FriendVaultView: View {
 
                         Spacer()
 
-                        Image("StreakIcon")
+                        Image("StreakButton")
                         
                             .padding()
                      }
