@@ -23,17 +23,23 @@ struct BestFriendsApp: App {
             case .login:
                 LoginView()
                     .environmentObject(sessionManager)
-           case .home:
+            case .home:
                 HomeView()
                     .environmentObject(sessionManager)
             case .invite:
                 InviteView()
                     .environmentObject(sessionManager)
-            case .chat(let group):
-                ChatView(group: group)
+            case .chat(let user, let group):
+                ChatView(user: user, group: group)
                     .environmentObject(sessionManager)
             case .settings:
                 SettingsView()
+                    .environmentObject(sessionManager)
+            case .breath:
+                BreathInView()
+                    .environmentObject(sessionManager)
+            case .friendVault:
+                FriendVaultView()
                     .environmentObject(sessionManager)
             }
         

@@ -64,12 +64,12 @@ struct TermsConditionsView: View {
                     Text("Safety TIP")
                         .font(.system(size: 30))
                         .offset(x: -25)
-                        .foregroundColor(.red)
+                        .foregroundColor(.green)
                         
 //                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
 //
                         .frame(height: 50)
-                    Text("The BestFriends app does not claim to offer clinical or professional psychological advice to the users. BestFriends strives to help make friends better friends. During difficult times users may connect with their 5 most trusted friends for support. If users are experiencing depression we recommend you consult a professional.")
+                    Text("The BestFriends app does not claim to offer clinical or professional psychological advice to it's users. BestFriends strives to help make friends better friends. During difficult times users may connect with their 5 most trusted friends for support. If users are experiencing depression we recommend you consult a professional.")
                         .font(.system(size: 20))
                         .italic()
                         .offset(x: -3)

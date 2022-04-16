@@ -22,6 +22,13 @@ struct SettingsView: View {
         ZStack {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
+
+              Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                  .ignoresSafeArea()
+              Image("settingsBackground")
+                  .resizable()
+                  .ignoresSafeArea()
+                  .scaledToFill()
             
             
             VStack {
@@ -41,19 +48,19 @@ struct SettingsView: View {
                     
                     Text("Settings")
                         .font(.system(size: 30))
-                        .offset(x: -25)
+                        .offset(x: -25, y: 50)
                     
                     Spacer()
                 }
                 
              Spacer()
-                   .frame(height: 50)
+                   .frame(height: 100)
                 
                NavigationLink(
                   destination: DemoVideoView(),
                   label: {
                        HStack {
-                           Text("   Demo Video")
+                           Text("Demo Video")
                                .font(.system(size: 20))
 //                              .foregroundColor(.black)
                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -65,8 +72,9 @@ struct SettingsView: View {
                              .scaledToFit()
                               .colorInvert()
                        }
+                       .padding(.horizontal, 15)
                    })
-               .padding(5)
+            
                .navigationBarHidden(true)
                 
                 Divider()
@@ -75,7 +83,7 @@ struct SettingsView: View {
                    destination: DemoVideoView(),
                    label: {
                         HStack {
-                            Text("   Get Involved ... 1st to see NEW Features")
+                            Text("Get Involved")
                                 .font(.system(size: 20))
  //                              .foregroundColor(.black)
                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -87,9 +95,10 @@ struct SettingsView: View {
                               .scaledToFit()
                                .colorInvert()
                         }
+                        .padding(.horizontal, 15)
                     })
                 
-                .padding(5)
+            
                 .navigationBarHidden(true)
                 
                 Divider()
@@ -98,7 +107,7 @@ struct SettingsView: View {
                  destination: ReportAbuseView(),
                    label: {
                          HStack {
-                      Text("  Report Abusive Behavior")
+                      Text("Report Abusive Behavior")
                                 .font(.system(size: 20))
 //                               .foregroundColor(.black)
                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -109,7 +118,7 @@ struct SettingsView: View {
                                  .scaledToFit()
                                  .colorInvert()
                         }
-                         .padding(0)
+                         .padding(.horizontal, 15)
                          .navigationBarHidden(true)     })
                   
                 Divider()
@@ -118,7 +127,7 @@ struct SettingsView: View {
                  destination: MyAccountView(),
                    label: {
                          HStack {
-                      Text("     Manage My Account")
+                      Text("Manage My Account")
                                 .font(.system(size: 20))
 //                               .foregroundColor(.black)
                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
@@ -129,6 +138,7 @@ struct SettingsView: View {
                                  .scaledToFit()
                                  .colorInvert()
                         }
+                         .padding(.horizontal, 15)
                      })
 
                 .padding(0)
@@ -142,7 +152,7 @@ struct SettingsView: View {
                  destination: DeleteMyAccount(),
                    label: {
                          HStack {
-                      Text(" Terms of Service & Privacy Policy")
+                      Text("Terms of Service & Privacy Policy")
                              .font(.system(size: 20))
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
 
@@ -153,6 +163,7 @@ struct SettingsView: View {
                                  .scaledToFit()
                                  .colorInvert()
                         }
+                         .padding(.horizontal, 15)
                      })
                 
        

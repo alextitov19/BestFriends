@@ -278,6 +278,10 @@ class Helper {
         request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
     }
     
+    func setWebSocketAuthorizationHeader(request: inout URLRequest) {
+        request.setValue("Bearer \(accessToken!)", forHTTPHeaderField: "Authorization")
+    }
+    
     private func wrapWebRequest(
         on queue: DispatchQueue = .promises,
         _ work: @escaping (@escaping (Data?, URLResponse?, Error?) -> Void) throws -> Void

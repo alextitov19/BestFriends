@@ -23,28 +23,16 @@ struct ChangePin: View {
 //    var userDataSource = UserDataSource()
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             ZStack {
-                
-                Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
+                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-                ZStack {
-                    Circle()
-                        .frame(width: 400, height: 400)
-                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                        .offset(x: 200, y: -400)
-                    
-                    Circle()
-                        .frame(width: 300, height: 300)
-                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                        .offset(x: -200, y: -100)
-                    
-                    Circle()
-                        .frame(width: 200, height: 200)
-                        .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                        .offset(x: 150, y: 100)
-                }
+                Image("settingsBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
                 
+
                 VStack {
                     HStack {
                         Button(action: {
@@ -66,12 +54,10 @@ struct ChangePin: View {
                     
                     Text("Change Pin")
                         .font(.system(size: 35))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .multilineTextAlignment(.center)
                         .padding()
-                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                        .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    
+                 
                     
                     
                     Text(statusString)
@@ -108,21 +94,21 @@ struct ChangePin: View {
                     
                     Spacer()
                         .frame(height: 75)
-                    
-//                    Button("Submit", action: changePin)
-//                        .font(.title)
-//                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-//                        .frame(width: 200, height: 50)
-//                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-//                        .cornerRadius(25)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2).onTapGesture {
-//
+//                    
+//                 Button("Submit", action: changePin)
+//                     .font(.title)
+//                      .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
+//                     .frame(width: 200, height: 50)
+//                     .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+//                       .cornerRadius(25)
+//                      .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2).onTapGesture {
+
                         }
                     
                 }
             }
         }
-    }
+    
 //    
 //    private func changePin() {
 //        var user = userDataSource.getCurrentUser()

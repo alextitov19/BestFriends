@@ -20,24 +20,15 @@ struct DeleteMyAccount: View {
 
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 0.9))
+            
+            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
-            ZStack {
-                Circle()
-                    .frame(width: 400, height: 400)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                    .offset(x: 200, y: -400)
-                
-                Circle()
-                    .frame(width: 300, height: 300)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                    .offset(x: -200, y: -100)
-                
-                Circle()
-                    .frame(width: 200, height: 200)
-                    .foregroundColor(Color(#colorLiteral(red: 0.4874756932, green: 0.2377186716, blue: 0.9663465619, alpha: 1)))
-                    .offset(x: 150, y: 100)
-            }
+            Image("settingsBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
+
             
             VStack {
                 HStack {
@@ -60,16 +51,16 @@ struct DeleteMyAccount: View {
                 Text("Delete My Account")
                     .font(.system(size: 40))
                     .fontWeight(.regular)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 125)
                 
-                Text("We're sorry to see you go. Please let us know how we can improve.")
+                Text("We're sorry to see you go. If you have a moment please let us know how we can improve.")
                     .font(.system(size: 25))
                     .fontWeight(.regular)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
