@@ -29,12 +29,14 @@ struct Message: Codable {
     let senderId: String
     let senderName: String
     let body: String
+    let image: String?
     let createdOn: Int64
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case senderId = "sender_id"
         case senderName = "sender_name"
         case body = "body"
+        case image = "image"
         case createdOn = "created_on"
     }
 }
