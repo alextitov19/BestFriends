@@ -58,11 +58,11 @@ struct ChatView: View {
                     .onSubmit { sendMessage() }
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.gray)
-                                .frame(height: 40)
-                                .padding(.horizontal, 5)
+                        .stroke(Color.gray)
+                        .frame(height: 40)
+                        .padding(.horizontal, 5)
                     )
-
+                
             }
         }
     }
@@ -71,6 +71,19 @@ struct ChatView: View {
         if messageBody.count == 0 { return }
         stream.sendMessage(body: messageBody)
         messageBody = ""
+    }
+    
+    private func sendMessageWithImage() {
+        guard let image = UIImage(named: "FatGuy"),
+              let data = image.pngData() else {
+            print("Failed to convert image")
+            return
+        }
+        print("Image as data successfully")
+        RestApi.instance.createMessageWithImage(groupId: group.id, body: messageBody, image: data).then { response in
+            print("Got create message with image response: ", response)
+            messageBody = ""
+        }
     }
     
     private func listenForMessages() async {
@@ -88,7 +101,7 @@ struct ChatView: View {
                     } catch {
                         print(error.localizedDescription)
                     }
-
+                    
                 case .data(let data):
                     print("Received binary message: \(data)")
                     
