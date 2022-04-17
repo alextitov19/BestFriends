@@ -406,8 +406,8 @@
 				CF3B65E3280219B70003A714 /* RemoveFriend.swift */,
 				CF3B65B8280081550003A714 /* SettingsNotificationsView.swift */,
 				CF3B65DB2801F4D40003A714 /* CustomizationView.swift */,
-				CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */,
 				CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */,
+				CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */,
 			);
 			path = "My Account";
 			sourceTree = "<group>";

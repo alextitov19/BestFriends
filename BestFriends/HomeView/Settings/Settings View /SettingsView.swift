@@ -41,10 +41,10 @@ struct SettingsView: View {
                             .frame(width: 25, height: 25)
                             .scaledToFit()
                             .colorInvert()
-                            .rotationEffect(Angle(degrees: 180))
+                           .rotationEffect(Angle(degrees: 180))
                     }
                     
-                    Spacer()
+                  Spacer()
                     
                     Text("Settings")
                         .font(.system(size: 30))

@@ -11,6 +11,9 @@ import AVKit
 
 struct BreathInviteView: View {
     var body: some View {
+       
+//     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
         NavigationView {
         
             
@@ -34,6 +37,30 @@ struct BreathInviteView: View {
                 
                 VStack {
                   
+               HStack {
+                       Button(action: {
+//                           self.presentationMode.wrappedValue.dismiss()
+                       }) {
+                           Image("arrowRight")
+                                .resizable()
+                              .frame(width: 25, height: 25)
+                               .scaledToFit()
+                             
+                               .foregroundColor(.white)
+                              .colorInvert()
+                                .rotationEffect(Angle(degrees: 180))
+                       }
+
+                       Spacer()
+
+                       Text("C a l m i n g")
+                            .font(.system(size: 30))
+                            .offset(x: -25, y: 50);
+                   Spacer()
+                 }
+
+
+
                     Text("C a l m i n g")
                         .font(.system(size: 45, weight: .bold))
                         .foregroundColor(.purple)
@@ -62,7 +89,7 @@ struct BreathInviteView: View {
                     Spacer()
                         .frame(height: 50)
              
-                    
+                    VStack {
                     NavigationLink(
                         destination: BreathInView(),
                         label: {
@@ -87,7 +114,9 @@ struct BreathInviteView: View {
                 
                     Spacer()
                         .frame(height: 20)
-                    
+                    }
+                        
+                        
                     VStack {
                         HStack {
                             NavigationLink(
@@ -165,37 +194,55 @@ struct BreathInviteView: View {
                                     Spacer()
                                         .frame(height: 80)
                                    
+                        }
+                            
                                     VStack {
-                                            HStack {
+                                         
                                                 NavigationLink(
                                                     destination: BreathInView(),
                                                     label: {
-                                                        Text("SHARE")
-                                                            .frame(width: 225, height: 50)
+                                                        Text("<")
+                                                            .frame(width: 25, height: 50)
                                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                            .font(.system(size: 30))
-                                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                                            .cornerRadius(25)
-                                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                                    })
+//                                                    
+                                                        
+                                                        NavigationLink(
+                                                            destination: BreathInView(),
+                                                            label: {
+                                                                Text("SHARE")
+                                                                    .frame(width: 225, height: 50)
+                                                                   .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                                   .font(.system(size: 30))
+                                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                                    .cornerRadius(25)
+                                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                                
+                                                        
+                                                  }
                                                 
-                                            }
+                                                
+                                           ) }
                                             
                                 
-                            }
+                            )
                         }
                     }
                 }
             }
+//            .padding(10)
+            .navigationBarHidden(true)
         }
     }
 
-}
+
     
-
-
+    }
+    
 struct BreathInviteView_Previews : PreviewProvider {
     static var previews: some View {
         BreathInviteView()
     }
 }
+
+    
