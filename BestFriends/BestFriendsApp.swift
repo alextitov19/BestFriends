@@ -16,7 +16,7 @@ struct BestFriendsApp: App {
         WindowGroup {
             switch sessionManager.appState {
           
-             
+            
             case .signUp:
                 SignUpView()
                     .environmentObject(sessionManager)
@@ -40,6 +40,9 @@ struct BestFriendsApp: App {
                     .environmentObject(sessionManager)
             case .friendVault:
                 FriendVaultView()
+                    .environmentObject(sessionManager)
+            case .breathInvite:
+                BreathInviteView()
                     .environmentObject(sessionManager)
             }
         

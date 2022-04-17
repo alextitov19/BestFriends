@@ -21,6 +21,10 @@ struct BreathInviteView: View {
                     .ignoresSafeArea()
                     .scaledToFill()
                 
+                AdPlayerView(name: "backgroundAnimation")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
                 VStack {
                   
                     Text("C a l m i n g")
