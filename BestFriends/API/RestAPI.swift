@@ -11,11 +11,11 @@ import Promises
 class RestApi {
     var helper: Helper
     var userId: String?
-//    let API_URL = "http://54.173.213.37:8080/api/v1/services"
-//    let WS_URL = "ws://54.173.213.37:8080/api/v1/services/messages/"
-    
-    let API_URL = "http://localhost:8080/api/v1/services"
-    let WS_URL = "ws://localhost:8080/api/v1/services/messages/"
+    let API_URL = "http://54.173.213.37:8080/api/v1/services"
+    let WS_URL = "ws://54.173.213.37:8080/api/v1/services/messages/"
+//    
+//    let API_URL = "http://localhost:8080/api/v1/services"
+//    let WS_URL = "ws://localhost:8080/api/v1/services/messages/"
 
     public static var instance = RestApi()
     
