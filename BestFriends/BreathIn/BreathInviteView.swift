@@ -29,7 +29,7 @@ struct BreathInviteView: View {
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
-                    Text("ourselves down")
+                    Text("down")
                         .font(.system(size: 35, weight: .bold))
                         .foregroundColor(.purple)
                         .multilineTextAlignment(.center)
@@ -37,10 +37,10 @@ struct BreathInviteView: View {
                     
                     
                     Spacer()
-                        .frame(height: 35)
+                        .frame(height: 15)
 
                     
-                    Text("taking a much needed breather")
+                    Text("Calming down by taking \n a much needed breather")
                         .font(.system(size: 20, weight: .bold))
                         .italic()
                         
@@ -49,23 +49,8 @@ struct BreathInviteView: View {
                         .padding(.horizontal, 0)
                  
                     Spacer()
-                        .frame(height: 35)
-                    
-                    
-//                    Button(action: {
-//                    }) {
-//                        Text("Take a breather alone")
-//                    }
-//                    NavigationLink(
-//                          destination: BreathInView(),
-//                          label: {
-//
-//                                  Text("Take a Breather Alone")
-//                                      .font(.system(size: 10))
-//                                      .foregroundColor(.white)
-////                                      .padding(0)
-//
-              
+                        .frame(height: 70)
+             
                     
                     NavigationLink(
                         destination: BreathInView(),
@@ -78,8 +63,16 @@ struct BreathInviteView: View {
                                 .cornerRadius(25)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-                        
-                  
+                 
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    Text(". . . or, take a breather with a friend")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(.white)
+                        .italic()
+                        .multilineTextAlignment(.leading)
+                        .padding(.horizontal, 0)
                 
                 
                 
