@@ -69,6 +69,10 @@ class RestApi {
         return helper.createGroup(url: API_URL + "/groups", createGroup: cg)
     }
     
+    public func createMessageWithImage(groupId: String, body: String, image: Data) -> Promise<Int> {
+        let cmwi = CreateMessageWithImage(body: body, image: image)
+        return helper.createMessageWithImage(url: API_URL + "/messages/" + groupId, cmwi: cmwi)
+    }
     
     
     func createChatWebSocketRequest(groupId: String) -> URLRequest {

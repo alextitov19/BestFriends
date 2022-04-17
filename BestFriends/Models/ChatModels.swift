@@ -49,6 +49,15 @@ struct CreateMessage: Codable {
     }
 }
 
+struct CreateMessageWithImage: Codable {
+    let body: String
+    let image: Data
+    enum CodingKeys: String, CodingKey {
+        case body = "body"
+        case image = "image"
+    }
+}
+
 struct CreateGroup: Codable {
     let members: [String]
     enum CodingKeys: String, CodingKey {

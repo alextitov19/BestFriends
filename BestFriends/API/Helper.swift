@@ -129,6 +129,17 @@ class Helper {
         }
     }
     
+    func createMessageWithImage(url: String, cmwi: CreateMessageWithImage) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(cmwi)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
+    
     func signUp(_ userData: SignUpUserData) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(userData)
         if let p = payload {
