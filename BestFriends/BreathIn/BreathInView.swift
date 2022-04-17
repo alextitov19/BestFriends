@@ -105,7 +105,7 @@ struct BreathInView: View {
         isTimerRunning.toggle()
         if isTimerRunning == true {
             count = 11
-            buttonText = "Stop"
+            buttonText = "I'm Done"
         }else {
             buttonText = "Restart"
         }
