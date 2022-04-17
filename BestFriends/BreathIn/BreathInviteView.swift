@@ -33,7 +33,7 @@ struct BreathInviteView: View {
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
-                    Text("down")
+                    Text("breaths")
                         .font(.system(size: 35, weight: .bold))
                         .foregroundColor(.purple)
                         .multilineTextAlignment(.center)
@@ -44,7 +44,7 @@ struct BreathInviteView: View {
                         .frame(height: 15)
 
                     
-                    Text("Calming down by taking \n a much needed breather")
+                    Text("Taking a much needed breather")
                         .font(.system(size: 20, weight: .bold))
                         .italic()
                         
@@ -53,7 +53,7 @@ struct BreathInviteView: View {
                         .padding(.horizontal, 0)
                  
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 50)
              
                     
                     NavigationLink(
@@ -117,24 +117,76 @@ struct BreathInviteView: View {
                                         .cornerRadius(25)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
-                       
-                     
-                        
-                        
                         }
-                        
+                        VStack {
+                                HStack {
+                                    NavigationLink(
+                                        destination: BreathInView(),
+                                        label: {
+                                            Text("Friend 3")
+                                                .frame(width: 100, height: 30)
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                .font(.system(size: 15))
+                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                .cornerRadius(25)
+                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        })
+                                    NavigationLink(
+                                        destination: BreathInView(),
+                                        label: {
+                                            Text("Friend 4")
+                                                .frame(width: 100, height: 30)
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                .font(.system(size: 15))
+                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                .cornerRadius(25)
+                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        })
+                                    
+                                    NavigationLink(
+                                        destination: BreathInView(),
+                                        label: {
+                                            Text("Friend 5")
+                                                .frame(width: 100, height: 30)
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                .font(.system(size: 15))
+                                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                .cornerRadius(25)
+                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        })
+                                }
+                                    Spacer()
+                                        .frame(height: 80)
+                                   
+                                    VStack {
+                                            HStack {
+                                                NavigationLink(
+                                                    destination: BreathInView(),
+                                                    label: {
+                                                        Text("SHARE")
+                                                            .frame(width: 225, height: 50)
+                                                           .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                           .font(.system(size: 30))
+                                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                                            .cornerRadius(25)
+                                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                    })
+                                                
+                                            }
+                                            
+                                
+                            }
+                        }
                     }
-               
-
-                    
-
                 }
-            
+            }
         }
     }
-}
 
 }
+    
+
+
 struct BreathInviteView_Previews : PreviewProvider {
     static var previews: some View {
         BreathInviteView()
