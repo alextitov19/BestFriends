@@ -72,6 +72,7 @@
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
 		CF2FD93C280B5FDB0036F4BB /* FriendshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD93B280B5FDB0036F4BB /* FriendshipsView.swift */; };
 		CF2FD942280BBA1B0036F4BB /* BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* BreathInviteView.swift */; };
+		CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */; };
 		CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AA2800718E0003A714 /* ReportAbuse.swift */; };
 		CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AC280075620003A714 /* MyAccountView.swift */; };
 		CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */; };
@@ -157,6 +158,7 @@
 		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
 		CF2FD93B280B5FDB0036F4BB /* FriendshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendshipsView.swift; sourceTree = "<group>"; };
 		CF2FD941280BBA1B0036F4BB /* BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInviteView.swift; sourceTree = "<group>"; };
+		CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBackgroundView.swift; sourceTree = "<group>"; };
 		CF3B65AA2800718E0003A714 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
 		CF3B65AC280075620003A714 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServicePrivacy.swift; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				CF3B65B8280081550003A714 /* SettingsNotificationsView.swift */,
 				CF3B65DB2801F4D40003A714 /* CustomizationView.swift */,
 				CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */,
+				CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */,
 			);
 			path = "My Account";
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
 				7A1C048527F4BEB30002B173 /* SignUpView.swift in Sources */,
+				CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */,
 				7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */,
 				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,
 				CF3B65F32807888A0003A714 /* Thought.swift in Sources */,
