@@ -5,97 +5,71 @@
 //  Created by Social Tech on 4/16/22.
 //
 
-
 import Foundation
-
 import SwiftUI
 
 struct BreathInviteView: View {
-    
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
     var body: some View {
+        NavigationView {
         
-        ZStack {
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
-           
-            Image("blueBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
             
-            Spacer()
-        
+            ZStack {
+                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                    .ignoresSafeArea()
+                Image("blueBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+                
+                VStack {
+                  
+                    Text("C a l m i n g")
+                        .font(.system(size: 45, weight: .bold))
+                        .foregroundColor(.purple)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+                    
+                    Text("ourselves down")
+                        .font(.system(size: 35, weight: .bold))
+                        .foregroundColor(.purple)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+                    
+                    
+                    Spacer()
+                        .frame(height: 35)
 
-            
-            VStack {
-                HStack {
+                    
+                    Text("taking a much needed breather")
+                        .font(.system(size: 20, weight: .bold))
+                        .italic()
+                        
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.leading)
+                        .padding(.horizontal, 0)
+                 
+                    Spacer()
+                        .frame(height: 35)
+                    
+                    
                     Button(action: {
-                        self.presentationMode.wrappedValue.dismiss()
                     }) {
-                        Image("arrowRight")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-                            .colorInvert()
-                            .rotationEffect(Angle(degrees: 180))
+                        Text("Take a breather alone")
                     }
-                    
-                    Spacer()
-                    
-                    Text("App Usage Help")
-                        .font(.system(size: 30))
-                        .offset(x: -25)
-                    
-                    Spacer()
+                    NavigationLink(
+                          destination: BreathInView(),
+                          label: {
+                              
+                                  Text("Take a Breather Alone")
+                                      .font(.system(size: 10))
+                                      .foregroundColor(.white)
+//                                      .padding(0)
+                                      
                 }
-                
-             Spacer()
-                   .frame(height: 50)
-                
-//
-     
-           Link(destination: URL(string: "https://socialtechlabs.com/demo/")!) {
-                  HStack {
-                       Text("60-second Demo Video")
-                          .font(.system(size: 20))
-//                          .foregroundColor(.black)
-                         .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                       Spacer().frame(maxHeight: 0)
-                       Image("arrowRight")
-                           .resizable()
-                           .frame(width: 25, height: 25)
-                          .scaledToFit()
-                            .colorInvert()
-                    }
-                }
-                Divider()
-                
-                      Link(destination: URL(string: "https://socialtechlabs.com")!) {
-                             HStack {
-                                  Text("How use features")
-                                     .font(.system(size: 20))
-           //                          .foregroundColor(.black)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                  Spacer().frame(maxHeight: 0)
-                                  Image("arrowRight")
-                                      .resizable()
-                                      .frame(width: 25, height: 25)
-                                     .scaledToFit()
-                                       .colorInvert()
-                               }
-                           }
-
-                
-                
-                
-                Spacer()
-            }
-            .padding(40)
-            .navigationBarHidden(true)
+            )}
         }
     }
+}
 }
 
 struct BreathInviteView_Previews : PreviewProvider {
@@ -103,4 +77,3 @@ struct BreathInviteView_Previews : PreviewProvider {
         BreathInviteView()
     }
 }
-

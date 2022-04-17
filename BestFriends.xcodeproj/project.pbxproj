@@ -71,7 +71,7 @@
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
 		CF2FD93C280B5FDB0036F4BB /* FriendshipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD93B280B5FDB0036F4BB /* FriendshipsView.swift */; };
-		CF2FD940280BAAF50036F4BB /* BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD93F280BAAF50036F4BB /* BreathInviteView.swift */; };
+		CF2FD942280BBA1B0036F4BB /* BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* BreathInviteView.swift */; };
 		CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AA2800718E0003A714 /* ReportAbuse.swift */; };
 		CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AC280075620003A714 /* MyAccountView.swift */; };
 		CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */; };
@@ -156,7 +156,7 @@
 		CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShakingCoolVideo.mp4; sourceTree = "<group>"; };
 		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
 		CF2FD93B280B5FDB0036F4BB /* FriendshipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendshipsView.swift; sourceTree = "<group>"; };
-		CF2FD93F280BAAF50036F4BB /* BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInviteView.swift; sourceTree = "<group>"; };
+		CF2FD941280BBA1B0036F4BB /* BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInviteView.swift; sourceTree = "<group>"; };
 		CF3B65AA2800718E0003A714 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
 		CF3B65AC280075620003A714 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServicePrivacy.swift; sourceTree = "<group>"; };
@@ -425,7 +425,7 @@
 			isa = PBXGroup;
 			children = (
 				CF3B65E92803F3050003A714 /* BreathInView.swift */,
-				CF2FD93F280BAAF50036F4BB /* BreathInviteView.swift */,
+				CF2FD941280BBA1B0036F4BB /* BreathInviteView.swift */,
 				CF3B65F22807888A0003A714 /* Thought.swift */,
 			);
 			path = BreathIn;
@@ -660,7 +660,7 @@
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
-				CF2FD940280BAAF50036F4BB /* BreathInviteView.swift in Sources */,
+				CF2FD942280BBA1B0036F4BB /* BreathInviteView.swift in Sources */,
 				7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */,
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
