@@ -139,6 +139,11 @@ class Helper {
         }
     }
     
+    func getImage(url: String) -> Promise<Data> {
+        return callRestApi(url: url, method: .get, ImageData.self).then { response in
+            return Promise<Data>(response.image)
+        }
+    }
     
     func signUp(_ userData: SignUpUserData) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(userData)

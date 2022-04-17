@@ -42,6 +42,7 @@ struct ChatView: View {
                 ScrollView(.vertical) {
                     ForEach(messages, id: \.id) { message in
                         ChatBubble(message: message, myOwnMessage: message.senderId == user.id)
+                            .onTapGesture{ downloadImage(key: message.image) }
                     }
                 }
                 
@@ -55,7 +56,7 @@ struct ChatView: View {
                     }
                     .font(.system(size: 18))
                     .submitLabel(.send)
-                    .onSubmit { sendMessage() }
+                    .onSubmit { sendMessageWithImage() }
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.gray)
@@ -116,5 +117,17 @@ struct ChatView: View {
     
     private func sortMessages() {
         messages = messages.sorted(by: { $0.createdOn < $1.createdOn })
+    }
+    
+    private func downloadImage(key: String?) {
+        if key != nil {
+            print("Image key: ", key!)
+            RestApi.instance.getImage(folderId: group.id, imageId: key!).then { data in
+                print("Got data")
+                let img = UIImage(data: data)
+                print("Got image from data")
+            }
+        }
+        
     }
 }

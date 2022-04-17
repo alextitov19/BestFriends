@@ -50,10 +50,19 @@ struct CreateMessage: Codable {
 }
 
 struct CreateMessageWithImage: Codable {
+    let groupId: String
     let body: String
     let image: Data
     enum CodingKeys: String, CodingKey {
+        case groupId = "group_id"
         case body = "body"
+        case image = "image"
+    }
+}
+
+struct ImageData: Codable {
+    let image: Data
+    enum CodingKeys: String, CodingKey {
         case image = "image"
     }
 }
