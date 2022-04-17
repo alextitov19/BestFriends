@@ -199,13 +199,13 @@ struct BreathInviteView: View {
                                     VStack {
                                          
                                                 NavigationLink(
-                                                    destination: BreathInView(),
+                                                    destination: FriendVaultView(),
                                                     label: {
                                                         Text("<")
                                                             .frame(width: 25, height: 50)
                                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                            .font(.system(size: 30))
-//                                                    
+//
                                                         
                                                         NavigationLink(
                                                             destination: BreathInView(),
