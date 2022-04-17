@@ -19,12 +19,18 @@ struct BreathInviteView: View {
                     .ignoresSafeArea()
                 Image("blueBackground")
                     .resizable()
-                    .ignoresSafeArea()
                     .scaledToFill()
+                    .ignoresSafeArea()
+                    .onAppear {
+//                        getHomeData()
+                    }
                 
+                // Stars animation...
                 AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+//                    .onTapGesture(perform: backgroundTapped)
+//
                 
                 VStack {
                   
