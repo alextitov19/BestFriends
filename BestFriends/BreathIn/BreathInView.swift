@@ -64,7 +64,7 @@ struct BreathInView: View {
                     Spacer()
                     
                     
-                    Text("Breath 'in' Slowly, \n _HOLD_")
+                    Text("breath 'IN' slowly, \n and 'HOLD'")
                         .font(.system(size: 35))
                         .fontWeight(.light)
                         .offset(x: 120, y: 50)
