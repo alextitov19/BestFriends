@@ -11,8 +11,9 @@ import SwiftUI
 struct RobTrainingPage: View {
     
     var body: some View {
-        Text("hello world")
-            .padding()
+        Text("Hello World")
+            .font(.body)
+            .fontWeight(.ultraLight)
         
     
     

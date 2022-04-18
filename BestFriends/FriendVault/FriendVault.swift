@@ -30,6 +30,7 @@ struct FriendVault: View {
                     Text("TODAY")
                         .font(.system(size: 35, weight: .bold))
                         .foregroundColor(.white)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
@@ -39,6 +40,7 @@ struct FriendVault: View {
                     Text("Say something nice")
                         .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.orange)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     Spacer()
@@ -49,6 +51,7 @@ struct FriendVault: View {
                         .italic()
                         
                         .foregroundColor(.white)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
                     
@@ -77,6 +80,7 @@ struct FriendVault: View {
                             .font(.system(size: 25,
                     weight: .bold))
                             .foregroundColor(.green)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 0)
                         

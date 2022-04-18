@@ -62,13 +62,15 @@ struct BreathInviteView: View {
 
 
                     Text("C a l m i n g")
-                        .font(.system(size: 45, weight: .bold))
+                        .font(.system(size: 60, weight: .bold))
+                        .fontWeight(.ultraLight)
                         .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     Text("breaths")
-                        .font(.system(size: 35, weight: .bold))
+                        .font(.system(size: 45, weight: .bold))
+                        .fontWeight(.ultraLight)
                         .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
@@ -79,9 +81,9 @@ struct BreathInviteView: View {
 
                     
                     Text("Taking a much needed breather")
-                        .font(.system(size: 20, weight: .bold))
+                        .font(.system(size: 25, weight: .bold))
                         .italic()
-                        
+                        .fontWeight(.light)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
@@ -97,17 +99,19 @@ struct BreathInviteView: View {
                                 .frame(width: 325, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
+                            
                                 .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                  
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 100)
                     
                     Text(". . . or, take a breather with a friend")
                         .font(.system(size: 20, weight: .bold))
                         .foregroundColor(.white)
+                        .fontWeight(.light)
                         .italic()
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
@@ -198,7 +202,7 @@ struct BreathInviteView: View {
                                         })
                                 }
                                     Spacer()
-                                        .frame(height: 80)
+                                        .frame(height: 50)
                                    
                         }
                             
