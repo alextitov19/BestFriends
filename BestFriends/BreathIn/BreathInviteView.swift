@@ -63,13 +63,13 @@ struct BreathInviteView: View {
 
                     Text("C a l m i n g")
                         .font(.system(size: 45, weight: .bold))
-                        .foregroundColor(.purple)
+                        .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     Text("breaths")
                         .font(.system(size: 35, weight: .bold))
-                        .foregroundColor(.purple)
+                        .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
@@ -97,8 +97,8 @@ struct BreathInviteView: View {
                                 .frame(width: 325, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
-                                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                .cornerRadius(25)
+                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                                .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                  
@@ -123,10 +123,11 @@ struct BreathInviteView: View {
                                 destination: BreathInView(),
                                 label: {
                                     Text("Invite ALL")
+                                        .fontWeight(.bold)
                                         .frame(width: 100, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 15))
-                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                         .cornerRadius(25)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
@@ -134,7 +135,8 @@ struct BreathInviteView: View {
                             NavigationLink(
                                 destination: BreathInView(),
                                 label: {
-                                    Text("Friend 2")
+                                    Text("Friend 1")
+                                        .fontWeight(.bold)
                                         .frame(width: 100, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 15))
@@ -146,6 +148,7 @@ struct BreathInviteView: View {
                                 destination: BreathInView(),
                                 label: {
                                     Text("Firend 2")
+                                        .fontWeight(.bold)
                                         .frame(width: 100, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 15))
@@ -160,6 +163,7 @@ struct BreathInviteView: View {
                                         destination: BreathInView(),
                                         label: {
                                             Text("Friend 3")
+                                                .fontWeight(.bold)
                                                 .frame(width: 100, height: 30)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .font(.system(size: 15))
@@ -171,6 +175,7 @@ struct BreathInviteView: View {
                                         destination: BreathInView(),
                                         label: {
                                             Text("Friend 4")
+                                                .fontWeight(.bold)
                                                 .frame(width: 100, height: 30)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .font(.system(size: 15))
@@ -183,6 +188,7 @@ struct BreathInviteView: View {
                                         destination: BreathInView(),
                                         label: {
                                             Text("Friend 5")
+                                                .fontWeight(.bold)
                                                 .frame(width: 100, height: 30)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .font(.system(size: 15))
@@ -211,11 +217,14 @@ struct BreathInviteView: View {
                                                             destination: BreathInView(),
                                                             label: {
                                                                 Text("SHARE")
-                                                                    .frame(width: 225, height: 50)
-                                                                   .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                                   .font(.system(size: 30))
-                                                                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                                                    .cornerRadius(25)
+                                                                    .fontWeight(.semibold)
+                                                                    .foregroundColor(Color.white)
+                                                                    .frame(width: 350.0, height: 50)
+                                                                   .font(.system(size: 20))
+                           
+                      .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                                 
+                                                                                    .cornerRadius(15)
                                                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                                 
                                                         
