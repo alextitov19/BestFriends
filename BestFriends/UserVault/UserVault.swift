@@ -89,16 +89,17 @@ struct UserVault: View {
                     NavigationLink(
                         destination: BreathInView(),
                         label: {
-                            Text("Take a Breather")
+                            Text("     Take a Breather")
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
-                                .frame(width: 350, height: 80)
+                                .frame(width: 350, height: 80, alignment: .leading)
                                 .font(.system(size: 19))
+                                .padding(10)
                                 .background(Color(hue: 0.128, saturation: 0.086, brightness: 1.0))
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
+                               
                            
                         })
                     

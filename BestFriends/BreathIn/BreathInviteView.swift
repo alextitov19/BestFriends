@@ -59,7 +59,7 @@ struct BreathInviteView: View {
                    Spacer()
                  }
 
-
+                 
 
                     Text("Calming")
                       .font(.system(size: 60, weight: .ultraLight))
@@ -109,11 +109,12 @@ struct BreathInviteView: View {
                     Spacer()
                         .frame(height: 100)
                     
-                    Text(". . . or, take a breather with a friend")
-                        .font(.system(size: 20, weight: .bold))
+                    Text("Take a breather with a friend")
+                        .font(.system(size: 25, weight: .bold))
+                        .italic()
                         .foregroundColor(.white)
                         .fontWeight(.light)
-                        .italic()
+                       
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
                 
@@ -250,7 +251,7 @@ struct BreathInviteView: View {
     }
 
 
-    
+  
     
     
 struct BreathInviteView_Previews : PreviewProvider {
