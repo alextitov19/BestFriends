@@ -130,7 +130,7 @@ struct PlanetActionsView: View {
                     .frame(height: 40)
                 
                 Button(action: {
-                    sessionManager.showFreindVaultView()
+                    sessionManager.showFreindVault()
                 }) {
                     ZStack {
                         Circle()

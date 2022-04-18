@@ -58,7 +58,7 @@ final class SessionManager: ObservableObject {
     func testBreathIn() {
         appState = .breath
     }
-    func showFreindVaultView() {
+    func showFreindVault() {
         appState = .friendVault
     }
     func showBreathInviteView() {

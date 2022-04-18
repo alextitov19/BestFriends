@@ -1,14 +1,15 @@
 //
-//  FriendVaultView.swift
+//  UserVault.swift
 //  BestFriends
 //
-//  Created by Social Tech on 4/13/22.
+//  Created by Social Tech on 4/18/22.
 //
+
 
 import Foundation
 import SwiftUI
 
-struct FriendVaultView: View {
+struct UserVault: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
@@ -29,7 +30,7 @@ struct FriendVaultView: View {
               
                
              
-                VStack {    
+                VStack {
                         HStack {
                             Button(action: {
                                 self.presentationMode.wrappedValue.dismiss()
@@ -128,9 +129,9 @@ struct FriendVaultView: View {
 //        .padding(40)
 //        .navigationBarHidden(true)
     
-    struct FriendVaultView_Previews : PreviewProvider {
+    struct UserVault_Previews : PreviewProvider {
         static var previews: some View {
-            FriendVaultView()
+            UserVault()
         }
     }
     
