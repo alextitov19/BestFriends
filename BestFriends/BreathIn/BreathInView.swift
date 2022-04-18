@@ -43,37 +43,36 @@ struct BreathInView: View {
             
             VStack {
                 
-                Text("Let's try to Relax ...")
-                    .font(.system(size: 30))
-                    .offset(x: 10, y: 135)
-                    .foregroundColor(.green)
-                
-//                Text("Breath 'in' for 5 seconds, then 'hold' for 5")
-//                    .font(.system(size: 15))
-//                    .offset(x: 10, y: 135)
-//                    .foregroundColor(.green)
-//
-                
+               Text("R e l a x")
+                    .font(.system(size: 100, weight: .ultraLight))
+               
+                   .offset(x: 10, y: 135)
+                   .foregroundColor(.white)
+               
                 HStack {
-                    Button(action: {
-                        self.presentationMode.wrappedValue.dismiss()
-                    }) {
-                        Image("arrowRight")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-                            .colorInvert()
-                            .rotationEffect(Angle(degrees: 180))
-                    }
+//                    Button(action: {
+//                        self.presentationMode.wrappedValue.dismiss()
+//                    }) {
+//                        Image("arrowRight")
+//                            .resizable()
+//                            .frame(width: 25, height: 25)
+//                            .scaledToFit()
+//                            .colorInvert()
+//                            .rotationEffect(Angle(degrees: 180))
+//                    }
                     
                     Spacer()
                     
                     
-                    Text("Breath 'in' for 5 seconds, then 'hold' for 5")
-                        .font(.system(size: 25))
-                        .offset(x: 90, y: 50)
-                        
+                    Text("Breath 'in' Slowly, \n HOLD")
+                        .font(.system(size: 35))
+                        .fontWeight(.light)
+                        .offset(x: 120, y: 50)
                         .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                    
+               
+                    
                     
                     Spacer()
                         .frame(height: 460)
@@ -107,7 +106,7 @@ struct BreathInView: View {
             count = 11
             buttonText = "I'm Done"
         }else {
-            buttonText = "Restart"
+            buttonText = "Resume"
         }
     
     }
@@ -130,3 +129,9 @@ struct BreathInView: View {
     }
 }
 
+
+struct BreathInView_Previews : PreviewProvider {
+static var previews: some View {
+    BreathInView()
+}
+}
