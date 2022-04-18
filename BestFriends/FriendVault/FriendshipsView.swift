@@ -87,7 +87,7 @@ struct FriendshipsView: View {
                         NavigationLink(
                             destination: HomeView(),
                             label: {
-                                Text("Ok, take me to CHAT")
+                                Text("take me to CHAT")
                                     .fontWeight(.semibold)
                                     .foregroundColor(Color.white)
                                     .frame(width: 350.0, height: 50)
