@@ -87,7 +87,7 @@ struct UserVault: View {
                     
                     
                     NavigationLink(
-                        destination: BreathInView(),
+                        destination: BreathInviteView(),
                         label: {
                             Text("     Take a Breather")
                                 .fontWeight(.bold)
