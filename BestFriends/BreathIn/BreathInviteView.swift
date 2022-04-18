@@ -35,31 +35,36 @@ struct BreathInviteView: View {
 //
                 
                 VStack {
+                    HStack {
                     NavigationLink(
                         destination: UserVault(),
                         label: {
-                            Text("< UserVault")
-                                .frame(width: 170, height: 30)
+                            Text("<")
+                                .frame(width: 50, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 20))
+                                .font(.system(size: 30))
                                 .multilineTextAlignment(.leading)
                             })
-                    
+//                        Spacer()
+//                            .frame(width: 0)
+//
+                        Text("Calming")
+                          .font(.system(size: 60, weight: .ultraLight))
+                            .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                            .kerning(15)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 0)
+                        
+                    }
                     
 
-                   Spacer()
-                       .frame(height: 15)
-                 
+                 Spacer()
+                      .frame(height: 5)
+
                 VStack {
-                    Text("Calming")
-                      .font(.system(size: 60, weight: .ultraLight))
-                        .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                        .kerning(15)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    
+               
                     Text("breaths")
-                        .font(.system(size: 45, weight: .bold))
+                        .font(.system(size: 50, weight: .bold))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                         .kerning(10)
@@ -220,8 +225,10 @@ struct BreathInviteView: View {
                                                 
                                            ) }
                                             
-                                
-                            
+                              Spacer()
+                            .frame(height: 70
+                            )
+                        
                         }
                     }
                 }
