@@ -92,7 +92,7 @@ struct UserVault: View {
                             Text("Take a Breather")
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
-                                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                                .multilineTextAlignment(.leading)
                                 .frame(width: 350, height: 80)
                                 .font(.system(size: 19))
                                 .background(Color(hue: 0.128, saturation: 0.086, brightness: 1.0))

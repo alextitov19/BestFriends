@@ -61,10 +61,10 @@ struct BreathInviteView: View {
 
 
 
-                    Text("C a l m i n g")
-                        .font(.system(size: 60, weight: .bold))
-                        .fontWeight(.ultraLight)
+                    Text("Calming")
+                      .font(.system(size: 60, weight: .ultraLight))
                         .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                        .kerning(15)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
@@ -72,6 +72,7 @@ struct BreathInviteView: View {
                         .font(.system(size: 45, weight: .bold))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                        .kerning(10)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
@@ -95,7 +96,7 @@ struct BreathInviteView: View {
                     NavigationLink(
                         destination: BreathInView(),
                         label: {
-                            Text("Take a breather alone")
+                            Text("Take a beather alone")
                                 .frame(width: 325, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
