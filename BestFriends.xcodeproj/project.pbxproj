@@ -86,7 +86,6 @@
 		CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */; };
 		CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E3280219B70003A714 /* RemoveFriend.swift */; };
 		CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E92803F3050003A714 /* BreathInView.swift */; };
-		CF3B65F32807888A0003A714 /* Thought.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65F22807888A0003A714 /* Thought.swift */; };
 		CF3B65F528078FE20003A714 /* FriendVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65F428078FE20003A714 /* FriendVaultView.swift */; };
 /* End PBXBuildFile section */
 
@@ -172,7 +171,6 @@
 		CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
 		CF3B65E3280219B70003A714 /* RemoveFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend.swift; sourceTree = "<group>"; };
 		CF3B65E92803F3050003A714 /* BreathInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInView.swift; sourceTree = "<group>"; };
-		CF3B65F22807888A0003A714 /* Thought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thought.swift; sourceTree = "<group>"; };
 		CF3B65F428078FE20003A714 /* FriendVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVaultView.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
@@ -429,7 +427,6 @@
 			children = (
 				CF3B65E92803F3050003A714 /* BreathInView.swift */,
 				CF2FD941280BBA1B0036F4BB /* BreathInviteView.swift */,
-				CF3B65F22807888A0003A714 /* Thought.swift */,
 			);
 			path = BreathIn;
 			sourceTree = "<group>";
@@ -671,7 +668,6 @@
 				CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */,
 				7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */,
 				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,
-				CF3B65F32807888A0003A714 /* Thought.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,

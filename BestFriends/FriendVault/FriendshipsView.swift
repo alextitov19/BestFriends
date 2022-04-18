@@ -27,14 +27,14 @@ struct FriendshipsView: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("TODAY,")
+                    Text("TODAY")
                         .font(.system(size: 35, weight: .bold))
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 80)
                     
                     Text("Say something nice")
                         .font(.system(size: 30, weight: .bold))
@@ -85,9 +85,9 @@ struct FriendshipsView: View {
                 
                         
                         NavigationLink(
-                            destination: BreathInView(),
+                            destination: HomeView(),
                             label: {
-                                Text(" FriendVault")
+                                Text("CHAT")
                                     .fontWeight(.semibold)
                                     .foregroundColor(Color.white)
                                     .frame(width: 350.0, height: 50)
