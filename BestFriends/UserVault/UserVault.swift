@@ -14,7 +14,7 @@ struct UserVault: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        
+        NavigationView {
         ScrollView{
             
             ZStack {
@@ -89,12 +89,12 @@ struct UserVault: View {
                     NavigationLink(
                         destination: BreathInviteView(),
                         label: {
-                            Text("     Take a Breather")
+                            Text("  Take a Breather")
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
-                                .frame(width: 350, height: 80, alignment: .leading)
-                                .font(.system(size: 19))
+                                .frame(width: 325, height: 80, alignment: .leading)
+                                .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color(hue: 0.128, saturation: 0.086, brightness: 1.0))
                                 .cornerRadius(15)
@@ -126,7 +126,7 @@ struct UserVault: View {
     
     }
 }
-    
+}
 //        .padding(40)
 //        .navigationBarHidden(true)
     
@@ -137,9 +137,3 @@ struct UserVault: View {
     }
     
     
-
-
-//
-//}
-//
-//}

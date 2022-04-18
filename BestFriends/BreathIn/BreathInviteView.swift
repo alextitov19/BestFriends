@@ -10,13 +10,12 @@ import SwiftUI
 import AVKit
 
 struct BreathInviteView: View {
+    
+        @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+   
     var body: some View {
-       
-//     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
         NavigationView {
-        
-            
+         
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
@@ -36,31 +35,22 @@ struct BreathInviteView: View {
 //
                 
                 VStack {
-                  
-               HStack {
-                       Button(action: {
-//                           self.presentationMode.wrappedValue.dismiss()
-                       }) {
-                           Image("arrowRight")
-                                .resizable()
-                              .frame(width: 25, height: 25)
-                               .scaledToFit()
-                             
-                               .foregroundColor(.white)
-                              .colorInvert()
-                                .rotationEffect(Angle(degrees: 180))
-                       }
+                    NavigationLink(
+                        destination: UserVault(),
+                        label: {
+                            Text("< UserVault")
+                                .frame(width: 170, height: 30)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 20))
+                                .multilineTextAlignment(.leading)
+                            })
+                    
+                    
 
-                       Spacer()
-
-                       Text("C a l m i n g")
-                            .font(.system(size: 30))
-                            .offset(x: -25, y: 50);
                    Spacer()
-                 }
-
+                       .frame(height: 15)
                  
-
+                VStack {
                     Text("Calming")
                       .font(.system(size: 60, weight: .ultraLight))
                         .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
@@ -209,15 +199,6 @@ struct BreathInviteView: View {
                         }
                             
                                     VStack {
-                                         
-//                                                NavigationLink(
-//                                                    destination: FriendVaultView(),
-//                                                    label: {
-//                                                        Text("<")
-//                                                            .frame(width: 25, height: 50)
-//                                                           .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                                           .font(.system(size: 30))
-////
                                                         
                                                         NavigationLink(
                                                             destination: BreathInView(),
@@ -246,14 +227,14 @@ struct BreathInviteView: View {
                 }
             }
 //            .padding(10)
-            .navigationBarHidden(true)
+//            .navigationBarHidden(true)
         }
-    }
+    
 
 
-  
+}
     
-    
+}
 struct BreathInviteView_Previews : PreviewProvider {
     static var previews: some View {
         BreathInviteView()
