@@ -14,7 +14,7 @@ struct UserVault: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        NavigationView {
+       NavigationView {
 //       ScrollView{
             
             ZStack {
