@@ -21,7 +21,8 @@ struct BreathInView: View {
     @State private var count: Int = 10
     @State private var finishedText: String = "10"
     @State private var isTimerRunning = true
-    @State private var buttonText = "Stop"
+    @State private var buttonText = "I'm Done"
+//    @State private var buttonText = "Resume"
     
     var body: some View {
         
@@ -66,7 +67,7 @@ struct BreathInView: View {
                     
                     Text("breath 'IN' slowly, \n and 'HOLD'")
                         .font(.system(size: 35))
-                        .fontWeight(.light)
+                        .fontWeight(.thin)
                         .offset(x: 120, y: 50)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
@@ -75,14 +76,14 @@ struct BreathInView: View {
                     
                     
                     Spacer()
-                        .frame(height: 460)
+                        .frame(height: 400)
                 }
                 
                 
                 Text(finishedText)
                     .font(.system(size: 50))
+                    .fontWeight(.thin)
                     .foregroundColor(.white)
-                    .bold()
                     .lineLimit(1)
                 
                 Button(action: buttonClicked, label: {

@@ -125,3 +125,20 @@ struct FriendVault_Previews : PreviewProvider {
 
 
 
+
+//Button(action: {
+//    sessionManager.showBreathInviteView()
+//}) {
+//    ZStack {
+//        Circle()
+//            .frame(width: 100, height: 100)
+//            .foregroundColor(ColorManager.pmbc_green)
+//            .shadow(color: .black, radius: 2, x: 0, y: 2)
+//
+//        Text("User\nVault")
+//            .foregroundColor(.white)
+//            .font(.system(size: 15, weight: .bold))
+//            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+    
+    
