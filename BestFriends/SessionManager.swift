@@ -20,7 +20,7 @@ enum AppState {
 }
 
 final class SessionManager: ObservableObject {
-    @Published var appState: AppState = .login
+    @Published var appState: AppState = .home
     
     func showSignUp() {
         appState = .signUp
