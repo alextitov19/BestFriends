@@ -35,6 +35,25 @@ struct BreathInviteView: View {
                 
                 VStack {
                     HStack {
+                    Button(action: {
+                        self.presentationMode.wrappedValue.dismiss()
+                                                        }) {
+                        Image("home-alt2")
+                        .resizable()
+                        .frame(width: 35, height: 35)
+                        .scaledToFit()
+                        .foregroundColor(.white)
+                                                    
+                                                        
+                            Spacer()
+                                .frame(width: 300
+                                                                                        )
+                                        }
+                                                        
+                                    }
+                                                            
+                VStack{
+                    HStack {
                     NavigationLink(
                         destination: UserVault(),
                         label: {
@@ -217,37 +236,20 @@ struct BreathInviteView: View {
                                  
                                                                                     .cornerRadius(15)
                                                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                                            
+                                                                   
+                                                                    
+                                                                    .padding()
                                                                 
                
-                            
-                                Button(action: {
-                                    self.presentationMode.wrappedValue.dismiss()
-                                                                    }) {
-                                    Image("home-alt2")
-                                    .resizable()
-                                    .frame(width: 45, height: 45)
-                                    .scaledToFit()
-                                    .foregroundColor(.white)
-
-                            
-                                                                    
+                                    
                                                             Spacer()
                                                                     
                                                         }
                                                                     
-                                            }
-                                                
-                                                
-                                    )
-                                            
-         }
-//            .padding(10)
-//            .navigationBarHidden(true)
+                                            )}
+            }
+
         }
-    
-
-
 }
     
 }
@@ -256,12 +258,14 @@ struct BreathInviteView: View {
         
 }
     }
-}
 
+}
 struct BreathInviteView_Previews : PreviewProvider {
     static var previews: some View {
         BreathInviteView()
     }
 }
 
-    
+
+
+
