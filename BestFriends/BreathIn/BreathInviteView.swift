@@ -49,9 +49,13 @@ struct BreathInviteView: View {
                                         .frame(width: 50, height: 30)
                                         .font(.system(size: 30))
                                         .multilineTextAlignment(.leading)
-                                    Spacer()
-                                        .frame(width: 250)
+//                                    Spacer()
+//                                        .frame(width: 250)
+                                 
                                     
+//                                    NavigationLink(
+//                                        destination: HomeView(),
+//                                        label: {
                                     Image("home-alt2")
                                         .resizable()
                                         .frame(width: 35, height: 35)
@@ -269,6 +273,8 @@ struct BreathInviteView: View {
     }
     
 }
+
+
 struct BreathInviteView_Previews : PreviewProvider {
     static var previews: some View {
         BreathInviteView()
