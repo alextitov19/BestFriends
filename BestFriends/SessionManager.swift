@@ -16,11 +16,12 @@ enum AppState {
     case breath
     case friendVault
     case breathInvite
+    case userVault
     
 }
 
 final class SessionManager: ObservableObject {
-    @Published var appState: AppState = .breathInvite
+    @Published var appState: AppState = .login
     
     func showSignUp() {
         appState = .signUp
@@ -64,4 +65,9 @@ final class SessionManager: ObservableObject {
     func showBreathInviteView() {
         appState = .breathInvite
     }
+    func showUserVault() {
+        appState = .userVault
+    }
+    
+    
 }

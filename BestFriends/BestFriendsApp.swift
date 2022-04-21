@@ -44,9 +44,11 @@ struct BestFriendsApp: App {
             case .breathInvite:
                 BreathInviteView()
                     .environmentObject(sessionManager)
+            case .userVault:
+                UserVault()
+                    .environmentObject(sessionManager)
+           
             }
-        
-            
         }
     }
 }

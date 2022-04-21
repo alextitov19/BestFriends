@@ -242,7 +242,7 @@ struct BreathInviteView: View {
                                             Text("SHARE")
                                                 .fontWeight(.semibold)
                                                 .foregroundColor(Color.white)
-                                                .frame(width: 350.0, height: 50)
+                                                .frame(width: 300.0, height: 50)
                                                 .font(.system(size: 20))
                                             
                                                 .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
@@ -251,7 +251,7 @@ struct BreathInviteView: View {
                                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                             
                                             
-                                                .padding()
+                                                .padding(25)
                                             
                                             
                                             
