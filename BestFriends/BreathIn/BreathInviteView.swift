@@ -42,7 +42,7 @@ struct BreathInviteView: View {
                           
                             
                             NavigationLink(
-                                destination: UserVault(),
+                                destination: MasterFriendVault(),
                                 label: {
                                     Text("<")
                                         .foregroundColor(.white)
