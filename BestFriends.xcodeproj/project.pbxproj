@@ -88,6 +88,7 @@
 		CFC724EE280D259800C6B5A8 /* FriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724ED280D259800C6B5A8 /* FriendVault.swift */; };
 		CFC724F0280D266E00C6B5A8 /* UserVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724EF280D266E00C6B5A8 /* UserVault.swift */; };
 		CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */; };
+		CFE194642812973600ED5718 /* MasterFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194632812973600ED5718 /* MasterFriendVault.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +177,7 @@
 		CFC724ED280D259800C6B5A8 /* FriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVault.swift; sourceTree = "<group>"; };
 		CFC724EF280D266E00C6B5A8 /* UserVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVault.swift; sourceTree = "<group>"; };
 		CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobPracticePage.swift; sourceTree = "<group>"; };
+		CFE194632812973600ED5718 /* MasterFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFriendVault.swift; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54A61C5A22AA6A9255C7B05 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -436,9 +438,10 @@
 		CF3B65F128075F3B0003A714 /* FriendVault */ = {
 			isa = PBXGroup;
 			children = (
-				CFC724EF280D266E00C6B5A8 /* UserVault.swift */,
+				CFE194632812973600ED5718 /* MasterFriendVault.swift */,
 				CFC724ED280D259800C6B5A8 /* FriendVault.swift */,
 				CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */,
+				CFC724EF280D266E00C6B5A8 /* UserVault.swift */,
 			);
 			path = FriendVault;
 			sourceTree = "<group>";
@@ -672,6 +675,7 @@
 				CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */,
 				7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */,
 				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,
+				CFE194642812973600ED5718 /* MasterFriendVault.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,

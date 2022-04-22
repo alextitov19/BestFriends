@@ -47,7 +47,10 @@ struct BestFriendsApp: App {
             case .userVault:
                 UserVault()
                     .environmentObject(sessionManager)
-           
+            case .masterFriendVault:
+                MasterFriendVault()
+                    .environmentObject(sessionManager)
+                
             }
         }
     }
