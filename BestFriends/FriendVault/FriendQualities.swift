@@ -77,10 +77,15 @@ struct FriendQualities: View {
                         HStack {
                             
                         Image(systemName: "heart.fill")
+                                .font(.system(size: 50))
+                                .foregroundColor(.pink)
                         
                             Image(systemName: "heart.fill")
+                                .font(.system(size: 50)) .foregroundColor(.blue)
                             
                             Image(systemName: "heart.fill")
+                                .font(.system(size: 50))
+                                .foregroundColor(.purple)
 
                         }
                             
