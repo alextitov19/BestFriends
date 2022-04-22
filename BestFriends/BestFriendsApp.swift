@@ -38,9 +38,6 @@ struct BestFriendsApp: App {
             case .breath:
                 BreathInView()
                     .environmentObject(sessionManager)
-            case .friendVault:
-                FriendVault()
-                    .environmentObject(sessionManager)
             case .breathInvite:
                 BreathInviteView()
                     .environmentObject(sessionManager)

@@ -14,7 +14,6 @@ enum AppState {
     case chat(user: User, group: Group)
     case settings
     case breath
-    case friendVault
     case breathInvite
     case masterFriendVault
     case sendNiceChat
@@ -59,9 +58,6 @@ final class SessionManager: ObservableObject {
    
     func testBreathIn() {
         appState = .breath
-    }
-    func showFreindVault() {
-        appState = .friendVault
     }
     func showBreathInviteView() {
         appState = .breathInvite

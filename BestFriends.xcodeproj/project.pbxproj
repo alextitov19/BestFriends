@@ -85,7 +85,6 @@
 		CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */; };
 		CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E3280219B70003A714 /* RemoveFriend.swift */; };
 		CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E92803F3050003A714 /* BreathInView.swift */; };
-		CFC724EE280D259800C6B5A8 /* FriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724ED280D259800C6B5A8 /* FriendVault.swift */; };
 		CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */; };
 		CFE194642812973600ED5718 /* MasterFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194632812973600ED5718 /* MasterFriendVault.swift */; };
 		CFE194662812994B00ED5718 /* SendNiceChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194652812994B00ED5718 /* SendNiceChat.swift */; };
@@ -174,7 +173,6 @@
 		CF3B65E92803F3050003A714 /* BreathInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInView.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
-		CFC724ED280D259800C6B5A8 /* FriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVault.swift; sourceTree = "<group>"; };
 		CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobPracticePage.swift; sourceTree = "<group>"; };
 		CFE194632812973600ED5718 /* MasterFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFriendVault.swift; sourceTree = "<group>"; };
 		CFE194652812994B00ED5718 /* SendNiceChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendNiceChat.swift; sourceTree = "<group>"; };
@@ -281,6 +279,7 @@
 				CF3B65A9280071580003A714 /* Settings */,
 				CF3B65F128075F3B0003A714 /* FriendVault */,
 				CF3B65E62803E6860003A714 /* BreathIn */,
+				CFE1946728129CAC00ED5718 /* RobPracticePages */,
 				7A1C048627F4C3A90002B173 /* Models */,
 				7AC71DA627F3D7D4008D191B /* API */,
 				7A1DBD602659B1A400EB4B42 /* Ext+Custom */,
@@ -439,8 +438,6 @@
 			isa = PBXGroup;
 			children = (
 				CFE194632812973600ED5718 /* MasterFriendVault.swift */,
-				CFC724ED280D259800C6B5A8 /* FriendVault.swift */,
-				CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */,
 				CFE194652812994B00ED5718 /* SendNiceChat.swift */,
 			);
 			path = FriendVault;
@@ -472,6 +469,14 @@
 				CF5263D8266477D300243DD7 /* Skateboard.mp4 */,
 			);
 			path = "Background Videos";
+			sourceTree = "<group>";
+		};
+		CFE1946728129CAC00ED5718 /* RobPracticePages */ = {
+			isa = PBXGroup;
+			children = (
+				CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */,
+			);
+			path = RobPracticePages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -649,7 +654,6 @@
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
 				CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */,
 				CFE194662812994B00ED5718 /* SendNiceChat.swift in Sources */,
-				CFC724EE280D259800C6B5A8 /* FriendVault.swift in Sources */,
 				CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */,
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
 				CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */,
