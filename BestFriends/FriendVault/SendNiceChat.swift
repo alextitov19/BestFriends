@@ -65,7 +65,7 @@ struct SendNiceChat: View {
                     
                     
                     Spacer()
-                        .frame(height: 175)
+                        .frame(height: 200)
                     
                     
                     VStack {
@@ -79,7 +79,6 @@ struct SendNiceChat: View {
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 0)
                         
-                            .frame(height: 15)
                         
                         Text("STREAK")
                             .font(.system(size: 25,
