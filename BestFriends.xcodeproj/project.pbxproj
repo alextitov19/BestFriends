@@ -87,7 +87,7 @@
 		CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E92803F3050003A714 /* BreathInView.swift */; };
 		CFC724EE280D259800C6B5A8 /* FriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724ED280D259800C6B5A8 /* FriendVault.swift */; };
 		CFC724F0280D266E00C6B5A8 /* UserVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724EF280D266E00C6B5A8 /* UserVault.swift */; };
-		CFC724F2280D2B9200C6B5A8 /* RobTrainingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724F1280D2B9200C6B5A8 /* RobTrainingPage.swift */; };
+		CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,7 +175,7 @@
 		CF5263D8266477D300243DD7 /* Skateboard.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skateboard.mp4; sourceTree = "<group>"; };
 		CFC724ED280D259800C6B5A8 /* FriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVault.swift; sourceTree = "<group>"; };
 		CFC724EF280D266E00C6B5A8 /* UserVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVault.swift; sourceTree = "<group>"; };
-		CFC724F1280D2B9200C6B5A8 /* RobTrainingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobTrainingPage.swift; sourceTree = "<group>"; };
+		CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobPracticePage.swift; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54A61C5A22AA6A9255C7B05 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -277,7 +277,6 @@
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
 				CF3B65A9280071580003A714 /* Settings */,
-				CFC724EC280D252000C6B5A8 /* UserVault */,
 				CF3B65F128075F3B0003A714 /* FriendVault */,
 				CF3B65E62803E6860003A714 /* BreathIn */,
 				7A1C048627F4C3A90002B173 /* Models */,
@@ -437,8 +436,9 @@
 		CF3B65F128075F3B0003A714 /* FriendVault */ = {
 			isa = PBXGroup;
 			children = (
+				CFC724EF280D266E00C6B5A8 /* UserVault.swift */,
 				CFC724ED280D259800C6B5A8 /* FriendVault.swift */,
-				CFC724F1280D2B9200C6B5A8 /* RobTrainingPage.swift */,
+				CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */,
 			);
 			path = FriendVault;
 			sourceTree = "<group>";
@@ -469,14 +469,6 @@
 				CF5263D8266477D300243DD7 /* Skateboard.mp4 */,
 			);
 			path = "Background Videos";
-			sourceTree = "<group>";
-		};
-		CFC724EC280D252000C6B5A8 /* UserVault */ = {
-			isa = PBXGroup;
-			children = (
-				CFC724EF280D266E00C6B5A8 /* UserVault.swift */,
-			);
-			path = UserVault;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -637,7 +629,7 @@
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
-				CFC724F2280D2B9200C6B5A8 /* RobTrainingPage.swift in Sources */,
+				CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */,
 				7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */,

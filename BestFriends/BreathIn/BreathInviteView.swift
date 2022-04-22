@@ -49,8 +49,8 @@ struct BreathInviteView: View {
                                         .frame(width: 50, height: 30)
                                         .font(.system(size: 30))
                                         .multilineTextAlignment(.leading)
-//                                    Spacer()
-//                                        .frame(width: 250)
+                                    Spacer()
+                                        .frame(width: 250)
                                  
                                     
 //                                    NavigationLink(
