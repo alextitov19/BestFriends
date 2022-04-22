@@ -27,7 +27,7 @@ struct SendNiceChat: View {
                         .frame(height: 5)
                     
                     Text("TODAY")
-                        .font(.system(size: 35, weight: .bold))
+                        .font(.system(size: 35))
                         .foregroundColor(.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
@@ -37,8 +37,8 @@ struct SendNiceChat: View {
                         .frame(height: 80)
                     
                     Text("Say something nice")
-                        .font(.system(size: 30, weight: .bold))
-                        .foregroundColor(.orange)
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
@@ -46,9 +46,7 @@ struct SendNiceChat: View {
                         .frame(height: 5)
                     
                     Text("to your freind in chat")
-                        .font(.system(size: 20, weight: .bold))
-                        .italic()
-                        
+                        .font(.system(size: 30, weight: .bold))
                         .foregroundColor(.white)
                         .fontWeight(.light)
                         .multilineTextAlignment(.leading)
@@ -67,21 +65,32 @@ struct SendNiceChat: View {
                     
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 175)
                     
                     
                     VStack {
+                     
                         
-                        Spacer()
-                            .frame(height: 5)
-                        
-                        Text("You just started a streak")
+                        Text("You just started a . . .")
                             .font(.system(size: 25,
                     weight: .bold))
-                            .foregroundColor(.green)
+                            .foregroundColor(.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 0)
+                        
+                            .frame(height: 15)
+                        
+                        Text("STREAK")
+                            .font(.system(size: 25,
+                    weight: .bold))
+                            .italic()
+                            .foregroundColor(.green)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 0)
+                        
+                        
+                        
                         
                         Spacer()
                            .frame(height: 50)
