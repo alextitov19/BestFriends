@@ -89,6 +89,7 @@
 		CFE194642812973600ED5718 /* MasterFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194632812973600ED5718 /* MasterFriendVault.swift */; };
 		CFE194662812994B00ED5718 /* SendNiceChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194652812994B00ED5718 /* SendNiceChat.swift */; };
 		CFE1946928129D9600ED5718 /* FriendQualities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946828129D9600ED5718 /* FriendQualities.swift */; };
+		CFE1946C28132FBB00ED5718 /* PracticeFloatingCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946B28132FBB00ED5718 /* PracticeFloatingCircles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +179,7 @@
 		CFE194632812973600ED5718 /* MasterFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFriendVault.swift; sourceTree = "<group>"; };
 		CFE194652812994B00ED5718 /* SendNiceChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendNiceChat.swift; sourceTree = "<group>"; };
 		CFE1946828129D9600ED5718 /* FriendQualities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendQualities.swift; sourceTree = "<group>"; };
+		CFE1946B28132FBB00ED5718 /* PracticeFloatingCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeFloatingCircles.swift; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54A61C5A22AA6A9255C7B05 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -281,6 +283,7 @@
 				CF3B65A9280071580003A714 /* Settings */,
 				CF3B65F128075F3B0003A714 /* FriendVault */,
 				CF3B65E62803E6860003A714 /* BreathIn */,
+				CFE1946A2812A9E300ED5718 /* Streaks */,
 				CFE1946728129CAC00ED5718 /* RobPracticePages */,
 				7A1C048627F4C3A90002B173 /* Models */,
 				7AC71DA627F3D7D4008D191B /* API */,
@@ -478,8 +481,16 @@
 			isa = PBXGroup;
 			children = (
 				CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */,
+				CFE1946B28132FBB00ED5718 /* PracticeFloatingCircles.swift */,
 			);
 			path = RobPracticePages;
+			sourceTree = "<group>";
+		};
+		CFE1946A2812A9E300ED5718 /* Streaks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Streaks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -687,6 +698,7 @@
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
+				CFE1946C28132FBB00ED5718 /* PracticeFloatingCircles.swift in Sources */,
 				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
