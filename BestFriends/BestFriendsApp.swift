@@ -47,7 +47,9 @@ struct BestFriendsApp: App {
             case .sendNiceChat:
                 SendNiceChat()
                     .environmentObject(sessionManager)
-             
+            case .friendQualities:
+                FriendQualities()
+                    .environmentObject(sessionManager)
                 
                 
            
