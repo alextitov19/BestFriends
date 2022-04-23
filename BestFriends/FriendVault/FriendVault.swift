@@ -25,59 +25,62 @@ struct FriendVault: View {
                 .ignoresSafeArea()
                 .scaledToFill()
            
+            AdPlayerView(name: "backgroundAnimation")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .offset(y: -250)
+            
+            
             Image("planet_1")
         
         ZStack {
-//            animationAmount += 1
+
             
-            Rectangle()
-            .frame(width: 40, height: 40)
-            .clipShape(Circle())
-            .foregroundColor(.blue)
-            .offset(x: showItems ? -60 : 0)
-            Text("friend 1")
-                    .fontWeight(.ultraLight)
+            FriendVaultCircle (color: .pink, friendName: "Friend 1")
+                .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
+                
+            FriendVaultCircle (color: .orange, friendName: "Friend 2")
+                .offset(x: showItems ? -100 : 0, y: showItems ? -400: 0)
             
-            Rectangle()
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
-                .foregroundColor(.yellow)
-                .offset(y: showItems ? -60 : 0)
-            Text("friend 2")
-                    .fontWeight(.ultraLight)
+            FriendVaultCircle (color: .purple, friendName: "Friend 3")
+                .offset(x: showItems ? -150 : 0, y: showItems ? -550: 0)
             
-            Rectangle()
-                .frame(width: 40, height: 40)
-                .clipShape(Circle())
-                .foregroundColor(.purple)
-                .offset(x: showItems ? 60 : 0)
-            Text("friend 3")
-                    .fontWeight(.ultraLight)
+            FriendVaultCircle (color: .gray, friendName: "Friend 4")
+                .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
+            
+            FriendVaultCircle (color: .blue, friendName: "Friend 5")
+                .offset(x: showItems ? 80 : 0, y: showItems ? -260: 0)
+            
+         
            
             ZStack {
            
             Rectangle()
-                .frame(width: 200, height: 200)
+                .frame(width: 90, height: 90)
                 .clipShape(Circle())
                 .foregroundColor(.green)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 1, x: 1, y: 0)
+//                
 
                
-            Text("my \nDistinctive \nMessages")
-                    .font(.system(size: 35))
-                    .fontWeight(.ultraLight)
+            Text("My \nDistinctive \nMessages")
+                    .font(.system(size: 15))
+                    .foregroundColor(.white)
+                    .fontWeight(.medium)
                     .multilineTextAlignment(.center)
+    
+                
                 
 
-//                    .offset(x: 0, y: offset)
-//                    .onTapGesture {
-//                        withAnimation(.default) {
-//                            offset += 100.0
-//
             }
-           .onTapGesture { self.showItems.toggle()}
-                   .animation(Animation.easeInOut(duration: 1.0), value: showItems)
+            
+            
+           .onTapGesture {
+               withAnimation {
+               self.showItems.toggle()
+               }
+           }
+           .animation(Animation.easeInOut(duration: 1.0), value: showItems)
 
             }
         
@@ -87,46 +90,29 @@ struct FriendVault: View {
         }
    }
        
+struct FriendVaultCircle: View {
+    var color: Color
+    var friendName: String
+    
+    var body: some View {
+       
+        ZStack {
+        Rectangle()
+        .frame(width: 105, height: 105)
+        .clipShape(Circle())
+        .foregroundColor(color)
+        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
         
+        Text(friendName)
+                .fontWeight(.ultraLight)
+        }
+    }
+}
+
+
 struct FriendVault_Previews : PreviewProvider {
     static var previews: some View {
         FriendVault()
     }
 }
 
-
-//
-//
-//struct ContentView: View {
-//
-//    @State private var offset: CGFloat = 200.0
-//
-//    var body: some View {
-//
-//        Image(systemName: "ant")
-//            .font(Font.system(size: 100.0))
-//            .offset(y: offset)
-//            .shadow(radius: 10.0)
-//            .onTapGesture { offset -= 100.0 }
-//            .animation(Animation.easeInOut(duration: 1.0), value: offset)
-//
-//    }
-//}
-
-//
-//
-//struct SwiftUWithAnimation: View {
-//@State private var offset: CGFloat = .zero
-//
-//var body: some View {
-//
-//    Circle()
-//        .frame(width: 100, height: 100, alignment: .center)
-//        .offset(x: 0, y: offset)
-//        .onTapGesture {
-//            withAnimation(.default) {
-//                offset += 100.0
-//         }
-//      }
-//   }
-//}
