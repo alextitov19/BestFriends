@@ -24,7 +24,7 @@ struct BreathInviteView: View {
                     .scaledToFill()
                     .ignoresSafeArea()
                     .onAppear {
-                        //                        getHomeData()
+                       
                     }
                 
                 // Stars animation...
@@ -67,18 +67,6 @@ struct BreathInviteView: View {
                     
                     VStack{
                         HStack {
-//                            NavigationLink(
-//                                destination: UserVault(),
-//                                label: {
-//                                    Text("<")
-//                                        .foregroundColor(.white)
-//                                        .frame(width: 50, height: 30)
-//                                        .font(.system(size: 30))
-//                                        .multilineTextAlignment(.leading)
-//                                })
-                            //                        Spacer()
-                            //                            .frame(width: 0)
-                            //
                             Text("Calming")
                                 .font(.system(size: 60, weight: .ultraLight))
                                 .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))

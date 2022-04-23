@@ -15,87 +15,107 @@ import SwiftUI
 struct IndividualFriendMessages: View {
    
     var body: some View {
-        
-        ZStack {
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
-
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-           
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .offset(y: -250)
-            
-//            put in Friend 1 planet
-            Image("planet_1")
-        
-        ZStack {
-
-   
+        ScrollView {
             ZStack {
-           
-            Rectangle()
-                .frame(width: 90, height: 90)
-                .clipShape(Circle())
-                .foregroundColor(.green)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 1, x: 1, y: 0)
-//
+                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                    .ignoresSafeArea()
 
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
                
-            Text("Long-tapped best messages from Chat")
-                    .font(.system(size: 15))
-                    .foregroundColor(.white)
-                    .fontWeight(.medium)
-                    .multilineTextAlignment(.center)
-    
+                AdPlayerView(name: "backgroundAnimation")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .offset(y: -250)
                 
-//
-//
-//            }
-//
-//
-//           .onTapGesture {
-//               withAnimation {
-//               self.showItems.toggle()
-//               }
-//           }
-//           .animation(Animation.easeInOut(duration: 1.0), value: showItems)
-//
-//            }
-//
-//        }
-//
-//
-//        }
-//   }
-//
-//struct FriendVaultCircle: View {
-//    var color: Color
-//    var friendName: String
-//
-//    var body: some View {
-//
-//        ZStack {
-//        Rectangle()
-//        .frame(width: 105, height: 105)
-//        .clipShape(Circle())
-//        .foregroundColor(color)
-//        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
-//
-//        Text(friendName)
-//                .fontWeight(.ultraLight)
+    //            put in Friend 1 planet
+                Image("planet_6")
+            
                 
-                
-        }
-    }
-}
+                VStack {
+                    
+//              put in Friend 1 name below
+                    Text("Friend 1")
+                        .font(.system(size: 30))
+                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    
+                    Text("Nice Messages")
+                        .font(.system(size: 45))
+                       .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                    
+                   
+       
+            VStack {
+                    
+                    ZStack {
+                    Rectangle()
+                        .frame(width: 350, height: 50)
+                        .foregroundColor(.purple)
+                        .cornerRadius(25)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+        
+                    Text("1rd message from Friend 1 in Chat")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                            
+                            Divider ()
 
+                    }
+                    ZStack {
+                        Rectangle()
+                                .frame(width: 350, height: 50)
+                                .foregroundColor(.purple)
+                               .cornerRadius(25)
+                               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                
+                            Text("2rd message from Friend 1 in Chat")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(.white)
+                                    .fontWeight(.medium)
+                                    .multilineTextAlignment(.center)
+                           
+                            Divider ()
+                    }
+                       
+                ZStack {
+                    Rectangle()
+                            .frame(width: 350, height: 50)
+                            .foregroundColor(.purple)
+                            .cornerRadius(25)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            
+                        Text("2rd message from Friend 1 in Chat")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.center)
+                       
+                        Divider ()
+                }
+            
+            
+            
+            }
+                    
+            
+        }
+       
+                
+Spacer ()
+            
+            } }
+            
+            
+ }
     }
-}
+
+
+    
+
 struct IndividualFriendMessages_Previews : PreviewProvider {
     static var previews: some View {
         IndividualFriendMessages()
