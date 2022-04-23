@@ -26,16 +26,18 @@ struct FriendVault: View {
             
         
         ZStack {
+//            animationAmount += 1
+            
             Rectangle()
-            .frame(width: 60, height: 60)
+            .frame(width: 40, height: 40)
             .clipShape(Circle())
-            .foregroundColor(.green)
+            .foregroundColor(.blue)
             .offset(x: showItems ? -60 : 0)
             Text("friend 1")
                     .fontWeight(.ultraLight)
             
             Rectangle()
-                .frame(width: 60, height: 60)
+                .frame(width: 40, height: 40)
                 .clipShape(Circle())
                 .foregroundColor(.yellow)
                 .offset(y: showItems ? -60 : 0)
@@ -43,7 +45,7 @@ struct FriendVault: View {
                     .fontWeight(.ultraLight)
             
             Rectangle()
-                .frame(width: 60, height: 60)
+                .frame(width: 40, height: 40)
                 .clipShape(Circle())
                 .foregroundColor(.purple)
                 .offset(x: showItems ? 60 : 0)
@@ -51,20 +53,31 @@ struct FriendVault: View {
                     .fontWeight(.ultraLight)
            
             ZStack {
+                Image("planet_1")
             Rectangle()
                 .frame(width: 200, height: 200)
                 .clipShape(Circle())
-                .foregroundColor(.red)
+                .foregroundColor(.green)
+                
+//                .background(ColorManager.purple3)
                
-            Text("TAP for \nSpecial \nmessages")
+            Text("my \nDistinctive \nMessages")
+                    .font(.system(size: 35))
                     .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                    
+             
+                    Spacer ()
                 
             }
             .onTapGesture {
                     self.showItems.toggle()
             }
+        
+        }
             
-        }.animation(.easeInOut)
+        .animation(.easeInOut)
+            
         }
    }
 

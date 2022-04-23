@@ -41,8 +41,14 @@ struct MasterFriendVault: View {
                                     .scaledToFit()
                                     .colorInvert()
                                     .rotationEffect(Angle(degrees: 180))
-                            
-                    Spacer()
+                            Spacer ()
+                                Image("iconBell")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .scaledToFit()
+                                   .colorInvert()
+                             
+                                Spacer()
                             
                                 Image("Exclamation Mark")
                                     .resizable()
@@ -66,6 +72,8 @@ struct MasterFriendVault: View {
 
                        Spacer()
 
+                        
+                        
                        Image("Friend Vault")
 
                         Spacer()
