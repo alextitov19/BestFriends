@@ -13,6 +13,12 @@ struct MasterFriendVault: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+// trying to put in swipe up gesture for Chat on this page
+@EnvironmentObject var sessionManager: SessionManager
+    
+    @State private var chatGroupsView = ChatGroupsView(groups: [])
+    
+    
     var body: some View {
        NavigationView {
 //       ScrollView{
@@ -119,7 +125,8 @@ struct MasterFriendVault: View {
                     
                  Spacer()
                       
-                               .frame(height: 50)
+                     
+                        .frame(height: 50)
                 
                               
                 
@@ -145,3 +152,16 @@ struct MasterFriendVault: View {
     }
     
     
+
+
+//
+//@EnvironmentObject var sessionManager: SessionManager
+//
+//
+//@State private var chatGroupsView = ChatGroupsView(groups: [])
+
+//
+//
+//if homeData?.groups != nil {
+//    ChatGroupsView(groups: homeData?.groups ?? [])
+//        .environmentObject(sessionManager)
