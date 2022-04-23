@@ -10,7 +10,7 @@
 import Foundation
 import SwiftUI
 
-struct FriendVault: View {
+struct BestFriendMessages: View {
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
    
@@ -60,7 +60,7 @@ struct FriendVault: View {
                 .clipShape(Circle())
                 .foregroundColor(.green)
 //                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 1, x: 1, y: 0)
-//                
+//
 
                
             Text("My \nDistinctive \nMessages")
@@ -112,7 +112,7 @@ struct FriendVaultCircle: View {
 
 struct FriendVault_Previews : PreviewProvider {
     static var previews: some View {
-        FriendVault()
+        BestFriendMessages()
     }
 }
 

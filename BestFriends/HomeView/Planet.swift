@@ -172,7 +172,7 @@ struct PlanetActionsView: View {
                 Button(action: {
                     
 //                    trying to link to FriendVault page
-//                    $sessionManager.showFriendVault
+                    sessionManager.showBestFriendMessages()
                 }) {
                     ZStack {
                         Circle()
@@ -180,7 +180,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("My \nDestinctive \nMessages")
+                        Text("Best \nFriend \nMessages")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
