@@ -80,7 +80,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Smile\nVault")
+                        Text("SmileVault \n& PhotoPoP")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -171,6 +171,8 @@ struct PlanetActionsView: View {
                 
                 Button(action: {
                     
+//                    trying to link to FriendVault page
+//                    $sessionManager.showFriendVault
                 }) {
                     ZStack {
                         Circle()
@@ -178,7 +180,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Photo\nPop")
+                        Text("My \nDestinctive \nMessages")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
