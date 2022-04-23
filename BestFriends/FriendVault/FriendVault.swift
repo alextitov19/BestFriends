@@ -11,8 +11,9 @@ import Foundation
 import SwiftUI
 
 struct FriendVault: View {
-    @State var showItems: Bool = false
-    
+    @State private var showItems: Bool = false
+    @State private var offset: CGFloat = 200.0
+   
     var body: some View {
         
         ZStack {
@@ -23,7 +24,8 @@ struct FriendVault: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            
+           
+            Image("planet_1")
         
         ZStack {
 //            animationAmount += 1
@@ -53,38 +55,76 @@ struct FriendVault: View {
                     .fontWeight(.ultraLight)
            
             ZStack {
-                Image("planet_1")
+           
             Rectangle()
                 .frame(width: 200, height: 200)
                 .clipShape(Circle())
                 .foregroundColor(.green)
                 
-//                .background(ColorManager.purple3)
+
                
             Text("my \nDistinctive \nMessages")
                     .font(.system(size: 35))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                    
-             
-                    Spacer ()
-                
+
+//                    .offset(x: 0, y: offset)
+//                    .onTapGesture {
+//                        withAnimation(.default) {
+//                            offset += 100.0
+//
             }
-            .onTapGesture {
-                    self.showItems.toggle()
+           .onTapGesture { self.showItems.toggle()}
+                   .animation(Animation.easeInOut(duration: 1.0), value: showItems)
+
             }
         
         }
             
-        .animation(.easeInOut)
             
         }
    }
-
-}
+       
+        
 struct FriendVault_Previews : PreviewProvider {
     static var previews: some View {
         FriendVault()
     }
 }
 
+
+//
+//
+//struct ContentView: View {
+//
+//    @State private var offset: CGFloat = 200.0
+//
+//    var body: some View {
+//
+//        Image(systemName: "ant")
+//            .font(Font.system(size: 100.0))
+//            .offset(y: offset)
+//            .shadow(radius: 10.0)
+//            .onTapGesture { offset -= 100.0 }
+//            .animation(Animation.easeInOut(duration: 1.0), value: offset)
+//
+//    }
+//}
+
+//
+//
+//struct SwiftUWithAnimation: View {
+//@State private var offset: CGFloat = .zero
+//
+//var body: some View {
+//
+//    Circle()
+//        .frame(width: 100, height: 100, alignment: .center)
+//        .offset(x: 0, y: offset)
+//        .onTapGesture {
+//            withAnimation(.default) {
+//                offset += 100.0
+//         }
+//      }
+//   }
+//}

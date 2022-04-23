@@ -51,17 +51,7 @@ struct BreathInView: View {
                    .foregroundColor(.white)
                
                 HStack {
-//                    Button(action: {
-//                        self.presentationMode.wrappedValue.dismiss()
-//                    }) {
-//                        Image("arrowRight")
-//                            .resizable()
-//                            .frame(width: 25, height: 25)
-//                            .scaledToFit()
-//                            .colorInvert()
-//                            .rotationEffect(Angle(degrees: 180))
-//                    }
-                    
+
                     Spacer()
                     
                     
