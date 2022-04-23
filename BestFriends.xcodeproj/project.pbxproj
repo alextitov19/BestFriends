@@ -71,6 +71,7 @@
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
 		CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */; };
+		CF2738AC2813C6410070E9D3 /* NewSmileVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738AB2813C6410070E9D3 /* NewSmileVaultView.swift */; };
 		CF2FD942280BBA1B0036F4BB /* BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* BreathInviteView.swift */; };
 		CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */; };
 		CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AA2800718E0003A714 /* ReportAbuse.swift */; };
@@ -161,6 +162,7 @@
 		CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShakingCoolVideo.mp4; sourceTree = "<group>"; };
 		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
 		CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileNoteCard.swift; sourceTree = "<group>"; };
+		CF2738AB2813C6410070E9D3 /* NewSmileVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileVaultView.swift; sourceTree = "<group>"; };
 		CF2FD941280BBA1B0036F4BB /* BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInviteView.swift; sourceTree = "<group>"; };
 		CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBackgroundView.swift; sourceTree = "<group>"; };
 		CF3B65AA2800718E0003A714 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
@@ -449,9 +451,10 @@
 				CFE194632812973600ED5718 /* MasterFriendVault.swift */,
 				CFE1946D28133CF700ED5718 /* FriendVault.swift */,
 				CFE194652812994B00ED5718 /* SendNiceChat.swift */,
+				CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */,
 				CFE1946828129D9600ED5718 /* FriendQualities.swift */,
 				CFE1946B28132FBB00ED5718 /* PracticeFloatingCircles.swift */,
-				CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */,
+				CF2738AB2813C6410070E9D3 /* NewSmileVaultView.swift */,
 			);
 			path = FriendVault;
 			sourceTree = "<group>";
@@ -656,6 +659,7 @@
 				7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */,
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
+				CF2738AC2813C6410070E9D3 /* NewSmileVaultView.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
 				CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
