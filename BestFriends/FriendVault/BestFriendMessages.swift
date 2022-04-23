@@ -36,9 +36,17 @@ struct BestFriendMessages: View {
         ZStack {
 
             
+//            Need to link Friend 1 circle to IndividualFriendMessages page for friend 1
+          
+//            Button(action: {
+//                sessionManager.showIndividualFriendMessages()
+//
             FriendVaultCircle (color: .pink, friendName: "Friend 1")
                 .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
-                
+              
+            
+            
+            
             FriendVaultCircle (color: .orange, friendName: "Friend 2")
                 .offset(x: showItems ? -100 : 0, y: showItems ? -400: 0)
             
@@ -97,6 +105,10 @@ struct FriendVaultCircle: View {
     var body: some View {
        
         ZStack {
+            
+            
+//            do I make this a button?
+            
         Rectangle()
         .frame(width: 105, height: 105)
         .clipShape(Circle())
@@ -119,3 +131,20 @@ struct BestFriendMessages_Previews : PreviewProvider {
     }
 }
 
+
+
+
+//
+
+//}) {
+//    ZStack {
+//        Circle()
+//            .frame(width: 100, height: 100)
+//            .foregroundColor(ColorManager.pmbc_blue)
+//            .shadow(color: .black, radius: 2, x: 0, y: 2)
+//
+//        Text("Best \nFriend \nMessages")
+//            .foregroundColor(.white)
+//            .font(.system(size: 15, weight: .bold))
+//            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//    }

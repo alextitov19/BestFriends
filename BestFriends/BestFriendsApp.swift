@@ -53,8 +53,9 @@ struct BestFriendsApp: App {
             case .bestFriendMessages:
                 BestFriendMessages()
                     .environmentObject(sessionManager)
-                
-                
+            case .individualFriendMessages:
+                IndividualFriendMessages()
+                    .environmentObject(sessionManager)
            
                 
                 

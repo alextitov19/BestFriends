@@ -18,8 +18,8 @@ enum AppState {
     case masterFriendVault
     case sendNiceChat
     case friendQualities
-//    case friendVault
     case bestFriendMessages
+    case individualFriendMessages
     
 }
 
@@ -76,6 +76,11 @@ final class SessionManager: ObservableObject {
     }
     func showBestFriendMessages() {
             appState = .bestFriendMessages
-            
+    }
+    func showIndividualFriendMessages() {
+            appState = .individualFriendMessages
+        
+        
+        
         }
 }
