@@ -42,8 +42,8 @@ struct IndividualFriendMessages: View {
                         .foregroundColor(.white)
 //                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                         
-                    Text("Nice Messages")
-                        .font(.system(size: 45))
+                    Text("Thoughtful Messages")
+                        .font(.system(size: 40))
                         .foregroundColor(.white)
 //                       .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
 //
