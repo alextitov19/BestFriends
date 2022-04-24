@@ -15,7 +15,7 @@ import SwiftUI
 struct IndividualFriendMessages: View {
    
     var body: some View {
-        ScrollView {
+//        ScrollView {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
@@ -39,13 +39,15 @@ struct IndividualFriendMessages: View {
 //              put in Friend 1 name below
                     Text("Friend 1")
                         .font(.system(size: 30))
-                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    
+                        .foregroundColor(.white)
+//                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        
                     Text("Nice Messages")
                         .font(.system(size: 45))
-                       .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    
-                   
+                        .foregroundColor(.white)
+//                       .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+//
+                    ScrollView(.vertical) {
        
             VStack {
                     
