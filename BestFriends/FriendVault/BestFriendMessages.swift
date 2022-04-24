@@ -40,19 +40,20 @@ struct BestFriendMessages: View {
             
 //       Trying to link circles to the IndividualFriendMessages pages
        
-//            Button(action: {
-//                sessionManager.showIndividualFriendMessages()
-//            }) {
-//            FriendVaultCircle (color: .pink, friendName: "Friend 1")
-//                .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
-//                }
-//
-           
-              
-               
+            Button(action: {
+                sessionManager.showIndividualFriendMessages()
+            }) {
+                ZStack {
             FriendVaultCircle (color: .pink, friendName: "Friend 1")
                 .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
-                
+                }
+            }
+             
+              
+//       Put this back in to get to original coding
+//            FriendVaultCircle (color: .pink, friendName: "Friend 1")
+//                .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
+//
             
             
             FriendVaultCircle (color: .orange, friendName: "Friend 2")
@@ -137,7 +138,6 @@ struct BestFriendMessages_Previews : PreviewProvider {
     static var previews: some View {
         BestFriendMessages()
     }
-}
 
 
 //
@@ -150,3 +150,4 @@ struct BestFriendMessages_Previews : PreviewProvider {
 //    }
 //
 
+}
