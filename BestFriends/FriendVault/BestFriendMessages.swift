@@ -11,9 +11,11 @@ import Foundation
 import SwiftUI
 
 struct BestFriendMessages: View {
+    
     @State private var showItems: Bool = false
-    @State private var offset: CGFloat = 200.0
-   
+    @State private var offset: CGFloat = 200.0   
+    @EnvironmentObject var sessionManager: SessionManager
+    
     var body: some View {
         
         ZStack {
@@ -36,15 +38,19 @@ struct BestFriendMessages: View {
         ZStack {
 
             
-//            Need to link Friend 1 circle to IndividualFriendMessages page for friend 1
-          
+//       Trying to link circles to the IndividualFriendMessages pages
+       
 //            Button(action: {
 //                sessionManager.showIndividualFriendMessages()
+//            }) {
+//            FriendVaultCircle (color: .pink, friendName: "Friend 1")
+//                .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
+//                }
 //
+           
             FriendVaultCircle (color: .pink, friendName: "Friend 1")
                 .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
-              
-            
+                
             
             
             FriendVaultCircle (color: .orange, friendName: "Friend 2")
@@ -132,19 +138,13 @@ struct BestFriendMessages_Previews : PreviewProvider {
 }
 
 
-
-
 //
-
+//
+//Button(action: {
+//    sessionManager.showIndividualFriendMessages()
 //}) {
-//    ZStack {
-//        Circle()
-//            .frame(width: 100, height: 100)
-//            .foregroundColor(ColorManager.pmbc_blue)
-//            .shadow(color: .black, radius: 2, x: 0, y: 2)
-//
-//        Text("Best \nFriend \nMessages")
-//            .foregroundColor(.white)
-//            .font(.system(size: 15, weight: .bold))
-//            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//FriendVaultCircle (color: .pink, friendName: "Friend 1")
+//    .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
 //    }
+//
+
