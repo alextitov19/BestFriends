@@ -71,16 +71,17 @@ struct BestFriendMessages: View {
          
            
             ZStack {
-           
-            Rectangle()
-                .frame(width: 100, height: 100)
-                .clipShape(Circle())
-                .foregroundColor(.green)
-//               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 1, x: 1, y: 0)
-//
+           Image(systemName: "heart.fill")
+//            Rectangle()
+                    .resizable()
+                .frame(width: 160, height: 160)
+//                .clipShape(Circle())
+                .foregroundColor(.pink)
+              .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+
 
                
-            Text("Long-tap \nBest \nMessages \n from Chat")
+            Text("Thoughtful \nMessages \n'long-tapped' \nin Chat")
                     .font(.system(size: 15))
                     .foregroundColor(.white)
                     .fontWeight(.medium)
