@@ -48,6 +48,8 @@ struct BestFriendMessages: View {
 //                }
 //
            
+              
+               
             FriendVaultCircle (color: .pink, friendName: "Friend 1")
                 .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
                 
