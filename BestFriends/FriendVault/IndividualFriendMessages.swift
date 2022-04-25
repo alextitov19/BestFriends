@@ -35,7 +35,26 @@ struct IndividualFriendMessages: View {
             
                 
                 VStack {
-                    
+                    ZStack {
+                 
+                   
+                    Image(systemName: "heart.fill")
+         //            Rectangle()
+                             .resizable()
+                             .frame(width: 120, height: 110, alignment: .leading)
+         //                .clipShape(Circle())
+                         .foregroundColor(.pink)
+                       .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+
+                        
+                     Text("aah!")
+                             .font(.system(size: 45))
+                             .foregroundColor(.white)
+                             .fontWeight(.medium)
+                             .multilineTextAlignment(.center)
+                        Spacer()
+                            .frame(height: 10)
+                    }
 //              put in Friend 1 name below
                     Text("[Friend 1's name]")
                         .font(.system(size: 30))
