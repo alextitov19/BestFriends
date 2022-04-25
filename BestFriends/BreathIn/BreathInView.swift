@@ -43,16 +43,37 @@ struct BreathInView: View {
             
             
             VStack {
-                
+                ZStack {
                Text("R e l a x")
                     .font(.system(size: 100, weight: .ultraLight))
                
                    .offset(x: 10, y: 135)
                    .foregroundColor(.white)
                
+                Image(systemName: "heart.fill")
+     //            Rectangle()
+                         .resizable()
+                         .frame(width: 120, height: 110, alignment: .leading)
+     //                .clipShape(Circle())
+                     .foregroundColor(.pink)
+                   .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+
+                    
+                 Text("Yep, \nyou got this!")
+                         .font(.system(size: 15))
+                         .foregroundColor(.white)
+                         .fontWeight(.medium)
+                         .multilineTextAlignment(.center)
+         
+                     
+                
+                }
+                
+                
                 HStack {
 
                     Spacer()
+                        .frame(height: 5)
                     
                     
                     Text("breath 'IN' slowly, \n and 'HOLD'")
