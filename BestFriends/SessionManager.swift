@@ -20,6 +20,7 @@ enum AppState {
     case friendQualities
     case bestFriendMessages
     case individualFriendMessages
+    case myStreaks
     
 }
 
@@ -79,8 +80,9 @@ final class SessionManager: ObservableObject {
     }
     func showIndividualFriendMessages() {
             appState = .individualFriendMessages
-        
-        
+    }
+    func showMyStreaks() {
+            appState = .myStreaks
         
         }
 }
