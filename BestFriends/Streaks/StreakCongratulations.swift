@@ -55,7 +55,7 @@ struct StreakCongratulations: View {
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 0)
                       
-                        Text("with 'Friend xx'")
+                        Text("w/ 'Friend xx'")
                             .font(.system(size: 30))
                             .foregroundColor(.white)
                             .fontWeight(.light)
