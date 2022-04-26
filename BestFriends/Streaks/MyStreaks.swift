@@ -30,19 +30,21 @@ struct MyStreaks: View {
                     
 //                 Image("FatGuy")
                     
-                    Text("My Streaks")
-                        .font(.system(size: 80))
+                    Text("Oh, yeah!")
+                        .font(.system(size: 90))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 30)
+                    
+                    
                     Text("Friend Streaks")
-                        .font(.system(size: 30))
+                        .font(.system(size: 40))
                         .foregroundColor(.white)
-                        .fontWeight(.light)
+                        .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
@@ -55,13 +57,12 @@ struct MyStreaks: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
-                                .frame(width: 325, height: 30, alignment: .leading)
+                                .frame(width: 100, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(Color(hue: 0.128, saturation: 0.086, brightness: 1.0))
+                                .background(.gray)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                               
+                                .shadow(color:  .white, radius: 2, x: 0, y: 1)
                            
                         })
                      
@@ -72,13 +73,12 @@ struct MyStreaks: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
-                                .frame(width: 325, height: 30, alignment: .leading)
+                                .frame(width: 100, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(Color(hue: 0.128, saturation: 0.086, brightness: 1.0))
+                                .background(.gray)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                               
+                                .shadow(color:  .white, radius: 2, x: 0, y: 1)
                            
                         })
                     
@@ -89,16 +89,14 @@ struct MyStreaks: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
-                                .frame(width: 325, height: 30, alignment: .leading)
+                                .frame(width: 100, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(Color(hue: 0.128, saturation: 0.086, brightness: 1.0))
+                                .background(.gray)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                               
+                                .shadow(color:  .white, radius: 2, x: 0, y: 1)
                            
                         })
-                    
                     NavigationLink(
                         destination: BreathInviteView(),
                         label: {
@@ -106,15 +104,16 @@ struct MyStreaks: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
-                                .frame(width: 325, height: 30, alignment: .leading)
+                                .frame(width: 100, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(Color(hue: 0.128, saturation: 0.086, brightness: 1.0))
+                                .background(.gray)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                               
+                                .shadow(color:  .white, radius: 2, x: 0, y: 1)
                            
                         })
+                    
+                    
                     NavigationLink(
                         destination: BreathInviteView(),
                         label: {
@@ -122,22 +121,23 @@ struct MyStreaks: View {
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
-                                .frame(width: 325, height: 30, alignment: .leading)
+                                .frame(width: 100, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(Color(hue: 0.128, saturation: 0.086, brightness: 1.0))
+                                .background(.gray)
                                 .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
+                                .shadow(color:  .white, radius: 2, x: 0, y: 1)
+                           
                         })
                     VStack {
                     
                     Spacer()
-                        .frame(height: 10)
-                    Text("Goal Streaks")
-                        .font(.system(size: 30))
-                        .foregroundColor(.green)
-                        .fontWeight(.light)
+                        .frame(height: 30)
+                        
+                    Text("Goal Completions")
+                        .font(.system(size: 45))
+                        .foregroundColor(.black)
+                        .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                   
@@ -148,12 +148,14 @@ struct MyStreaks: View {
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.black)
                                     .multilineTextAlignment(.leading)
-                                    .frame(width: 325, height: 30, alignment: .leading)
+                                    .frame(width: 225, height: 30, alignment: .leading)
                                     .font(.system(size: 20))
                                     .padding(10)
-                                    .background(Color(hue: 0.128, saturation: 0.086, brightness: 1.0))
+                                    .background(Color(red: 0.679, green: 0.605, blue: 0.701))
+                                   
                                     .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 1)
+                                    .opacity(/*@START_MENU_TOKEN@*/5.8/*@END_MENU_TOKEN@*/)
                                    
                                
                             })
@@ -161,26 +163,29 @@ struct MyStreaks: View {
                         NavigationLink(
                             destination: BreathInviteView(),
                             label: {
-                                Text("Finished (xx) Rockets ")
+                                Text("Finished (xx) Rockets")
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.black)
                                     .multilineTextAlignment(.leading)
-                                    .frame(width: 325, height: 30, alignment: .leading)
+                                    .frame(width: 225, height: 30, alignment: .leading)
                                     .font(.system(size: 20))
                                     .padding(10)
-                                    .background(Color(hue: 0.128, saturation: 0.086, brightness: 1.0))
+                                    .background(Color(red: 0.679, green: 0.605, blue: 0.701))
+                                    .opacity(50)
                                     .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 1)
+                                    
                                    
                                
                             })
+                         
                      
                         
                         
                         
                         
                         Spacer()
-                        .frame(height: 300)
+                        .frame(height: 200)
            
                         
                         
