@@ -22,6 +22,7 @@ struct FriendQualities: View {
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
+//                Image("2 weeks")
                 
                 VStack {
                     
