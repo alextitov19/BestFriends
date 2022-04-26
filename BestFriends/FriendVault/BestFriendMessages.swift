@@ -76,7 +76,7 @@ struct BestFriendMessages: View {
                     .resizable()
                 .frame(width: 160, height: 160)
 //                .clipShape(Circle())
-                .foregroundColor(.pink)
+                .foregroundColor(.blue)
               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
 
                 VStack {
