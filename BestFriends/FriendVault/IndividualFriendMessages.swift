@@ -31,7 +31,7 @@ struct IndividualFriendMessages: View {
                     .offset(y: -250)
                 
     //            put in Friend 1 planet
-                Image("planet_6")
+                Image("2 weeks")
             
                 
                 VStack {
@@ -109,25 +109,26 @@ struct IndividualFriendMessages: View {
                             .cornerRadius(25)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             
-                        Text("2rd message from Friend 1 in Chat")
+                        Text("3rd message from Friend 1 in Chat")
                                 .font(.system(size: 20))
                                 .foregroundColor(.white)
                                 .fontWeight(.medium)
                                 .multilineTextAlignment(.center)
                        
                         Divider ()
+               
+                
                 }
             
+               
             
-            
-            }
-                    
-            
-        }
-       
+                }
+                        
                 
-Spacer ()
-            
+            }
+           
+                    
+                    
             } }
             
             
