@@ -41,14 +41,20 @@ struct StreakCongratulations: View {
                     
 //
                     VStack {
-                            Text("You completed a new goal")
+                            Text("You completed")
                                 .font(.system(size: 30))
                                 .foregroundColor(.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal, 0)
                             
-                        }
+                        Text("your goal")
+                            .font(.system(size: 30))
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 0)
+                         }
                     
                     Spacer()
                         .frame(height: 400)
