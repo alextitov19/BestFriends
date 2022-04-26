@@ -54,7 +54,17 @@ struct StreakCongratulations: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 0)
-                         }
+                      
+                        Text("with 'Friend xx'")
+                            .font(.system(size: 30))
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 0)
+                      
+                    
+                    
+                    }
                     
                     Spacer()
                         .frame(height: 400)
