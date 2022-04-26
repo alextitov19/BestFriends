@@ -41,9 +41,9 @@ struct IndividualFriendMessages: View {
                     Image(systemName: "heart.fill")
          //            Rectangle()
                              .resizable()
-                             .frame(width: 120, height: 110, alignment: .leading)
+                             .frame(width: 140, height: 130, alignment: .leading)
          //                .clipShape(Circle())
-                         .foregroundColor(.pink)
+                         .foregroundColor(.purple)
                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
 
                         
