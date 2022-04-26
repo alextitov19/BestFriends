@@ -41,19 +41,19 @@ struct StreakCongratulations: View {
                     
 //
                     VStack {
-                            Text("You completed")
+                            Text("Completed GOAL")
                                 .font(.system(size: 30))
                                 .foregroundColor(.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .padding(.horizontal, 0)
                             
-                        Text("your goal")
-                            .font(.system(size: 30))
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 0)
+//                        Text("your goal")
+//                            .font(.system(size: 30))
+//                            .foregroundColor(.white)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .padding(.horizontal, 0)
                       
                         Text("w/ 'Friend xx'")
                             .font(.system(size: 30))
@@ -67,7 +67,7 @@ struct StreakCongratulations: View {
                     }
                     
                     Spacer()
-                        .frame(height: 400)
+                        .frame(height: 350)
                     
                     NavigationLink(
                         destination: HomeView(),
