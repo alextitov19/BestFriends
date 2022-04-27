@@ -59,7 +59,9 @@ struct BestFriendsApp: App {
             case .myStreaks:
                 MyStreaks()
                     .environmentObject(sessionManager)
-                
+            case .impetus:
+                Impetus()
+                    .environmentObject(sessionManager)
                 
             }
         }

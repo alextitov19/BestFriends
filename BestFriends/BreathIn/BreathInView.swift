@@ -85,7 +85,7 @@ struct BreathInView: View {
                     
                     
                     Spacer()
-                        .frame(height: 400)
+                        .frame(height: 410)
                 }
                 
                 
