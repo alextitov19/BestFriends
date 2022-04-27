@@ -90,7 +90,7 @@ struct BreathInView: View {
                 
                 
                 Text(finishedText)
-                    .font(.system(size: 50))
+                    .font(.system(size: 80))
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .lineLimit(1)
