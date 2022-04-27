@@ -78,7 +78,7 @@ struct DramaView: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    Text("get a smile back")
+                    Text("")
                         .font(.system(size: 45, weight: .bold))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
