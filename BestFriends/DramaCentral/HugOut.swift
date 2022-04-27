@@ -18,11 +18,11 @@ struct HugOut: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-                Image("purpleBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
-              
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//
                 Image("girlwalking")
                     .resizable()
                     .frame(width: 350, height: 400)
@@ -33,17 +33,17 @@ struct HugOut: View {
 //                    .scaledToFill()
 //
                 
-                AdPlayerView(name: "backgroundAnimation")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .offset(y: -250)
-                
+//                AdPlayerView(name: "backgroundAnimation")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .offset(y: -250)
+//
                 VStack {
                     
              
                     Text("H U G")
                         .font(.system(size: 90))
-                        .foregroundColor(.white)
+                        .foregroundColor(.purple)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
@@ -52,7 +52,7 @@ struct HugOut: View {
                     
                     Text("it O U T")
                         .font(.system(size: 60))
-                        .foregroundColor(.white)
+                        .foregroundColor(.purple)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
@@ -63,7 +63,7 @@ struct HugOut: View {
                     Text("we hate it,")
                         .font(.system(size: 30))
                         .italic()
-                        .foregroundColor(.white)
+                        .foregroundColor(.purple)
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
@@ -73,7 +73,7 @@ struct HugOut: View {
                     Text("but we can't pass it by")
                         .font(.system(size: 30, weight: .bold))
                         .italic()
-                        .foregroundColor(.white)
+                        .foregroundColor(.purple)
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
