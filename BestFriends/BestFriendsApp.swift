@@ -62,6 +62,11 @@ struct BestFriendsApp: App {
             case .impetus:
                 Impetus()
                     .environmentObject(sessionManager)
+            case .dramaView:
+                DramaView()
+                    .environmentObject(sessionManager)
+                
+                
                 
             }
         }
