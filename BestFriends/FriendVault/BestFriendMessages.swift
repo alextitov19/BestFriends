@@ -37,47 +37,58 @@ struct BestFriendMessages: View {
         
         ZStack {
 
-            
-//       Trying to link circles to the IndividualFriendMessages pages
-       
+     
             Button(action: {
+             print("tap function is working")
                 sessionManager.showIndividualFriendMessages()
             }) {
-                ZStack {
-            FriendVaultCircle (color: .pink, friendName: "Friend 1")
-                .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
+                FriendVaultCircle (color: .pink, friendName: "Friend 1")
                 }
-            }
+            .offset(x: showItems ? 100 : 0, y: showItems ? -375: 0)
              
-              
-//       Put this back in to get to original coding
-//            FriendVaultCircle (color: .pink, friendName: "Friend 1")
-//                .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
-//
-            
-            
-            FriendVaultCircle (color: .orange, friendName: "Friend 2")
-                .offset(x: showItems ? -100 : 0, y: showItems ? -400: 0)
-            
-            FriendVaultCircle (color: .purple, friendName: "Friend 3")
-                .offset(x: showItems ? -150 : 0, y: showItems ? -550: 0)
-            
-            FriendVaultCircle (color: .gray, friendName: "Friend 4")
-                .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
-            
-            FriendVaultCircle (color: .blue, friendName: "Friend 5")
-                .offset(x: showItems ? 80 : 0, y: showItems ? -260: 0)
-            
-         
+       
            
+            Button(action: {
+             print("tap function is working")
+                sessionManager.showIndividualFriendMessages()
+            }) {
+                FriendVaultCircle (color: .orange, friendName: "Friend 2")
+                }
+            .offset(x: showItems ? -100 : 0, y: showItems ? -400: 0)
+            
+            
+            Button(action: {
+             print("tap function is working")
+                sessionManager.showIndividualFriendMessages()
+            }) {
+                FriendVaultCircle (color: .purple, friendName: "Friend 3")
+                }
+            .offset(x: showItems ? -150 : 0, y: showItems ? -550: 0)
+            
+            
+            Button(action: {
+             print("tap function is working")
+                sessionManager.showIndividualFriendMessages()
+            }) {
+                FriendVaultCircle (color: .gray, friendName: "Friend 4")
+                }
+            .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
+            
+            
+            Button(action: {
+             print("tap function is working")
+                sessionManager.showIndividualFriendMessages()
+            }) {
+                FriendVaultCircle (color: .blue, friendName: "Friend 5")
+                }
+            .offset(x: showItems ? 80 : 0, y: showItems ? -260: 0)
+         
             ZStack {
            Image(systemName: "heart.fill")
-//            Rectangle()
                     .resizable()
-                .frame(width: 160, height: 160)
-//                .clipShape(Circle())
-                .foregroundColor(.blue)
-              .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
+                    .frame(width: 160, height: 160)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
 
                 VStack {
                 
@@ -103,7 +114,9 @@ struct BestFriendMessages: View {
                withAnimation {
                self.showItems.toggle()
                }
+               print("tap function is working")
            }
+            
            .animation(Animation.easeInOut(duration: 1.0), value: showItems)
 
             }
@@ -121,19 +134,17 @@ struct FriendVaultCircle: View {
     var body: some View {
        
         ZStack {
-            
-            
-//            do I make this a button?
-            
+          
         Rectangle()
         .frame(width: 105, height: 105)
         .clipShape(Circle())
         .foregroundColor(color)
-//        .font(.title)
+
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
         
         Text(friendName)
-                .fontWeight(.ultraLight)
+                .fontWeight(.light)
+                .foregroundColor(.black)
             
            
        
@@ -146,16 +157,5 @@ struct BestFriendMessages_Previews : PreviewProvider {
     static var previews: some View {
         BestFriendMessages()
     }
-
-
-//
-//
-//Button(action: {
-//    sessionManager.showIndividualFriendMessages()
-//}) {
-//FriendVaultCircle (color: .pink, friendName: "Friend 1")
-//    .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
-//    }
-//
 
 }
