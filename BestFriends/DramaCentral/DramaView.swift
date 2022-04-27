@@ -21,11 +21,15 @@ struct DramaView: View {
                     .ignoresSafeArea()
                     .scaledToFill()
               
-                Image("ballons")
+                Image("girlwalking")
                     .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
+                    .frame(width: 350, height: 400)
                 
+                
+                
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//
                 
                 AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
@@ -35,17 +39,23 @@ struct DramaView: View {
                 VStack {
                     
              
-                    Text("go ahead")
-                        .font(.system(size: 100))
+                    Text("D R A M A")
+                        .font(.system(size: 90))
+                        .foregroundColor(.white)
+                        .fontWeight(.ultraLight)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+                    Text("D A Y")
+                        .font(.system(size: 50))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 270)
                     
-                    Text("say something nice")
+                    Text("before you un-friend")
                         .font(.system(size: 30))
                         .italic()
                         .foregroundColor(.white)
@@ -55,7 +65,7 @@ struct DramaView: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("to your freind in Chat")
+                    Text("let's figure this out")
                         .font(.system(size: 30, weight: .bold))
                         .italic()
                         .foregroundColor(.white)
@@ -66,7 +76,7 @@ struct DramaView: View {
                   
                     
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 20)
                     
                     Text("get a smile back")
                         .font(.system(size: 45, weight: .bold))
@@ -78,16 +88,16 @@ struct DramaView: View {
                     
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                     
                     NavigationLink(
                         destination: HomeView(),
                         label: {
-                            Text("Ok, take me to Chat")
+                            Text("Ok, take me to Hug-it-Out")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 190, height: 30, alignment: .leading)
+                                .frame(width: 225, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color.gray)
