@@ -58,7 +58,7 @@ struct HugOut: View {
                         .padding(.horizontal, 0)
                     
                     Spacer()
-                        .frame(height: 270)
+                        .frame(height: 250)
                     
                     Text("we hate it,")
                         .font(.system(size: 30))
@@ -70,7 +70,7 @@ struct HugOut: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("but we can't excape it")
+                    Text("but we can't pass it by")
                         .font(.system(size: 30, weight: .bold))
                         .italic()
                         .foregroundColor(.white)
@@ -81,7 +81,7 @@ struct HugOut: View {
                   
                     VStack {
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 10)
                     
                     Text("comming soon")
                         .font(.system(size: 45, weight: .bold))
@@ -98,11 +98,11 @@ struct HugOut: View {
                     NavigationLink(
                         destination: HomeView(),
                         label: {
-                            Text("")
+                            Text("after a big fight 80% of teens say they don't know what to do next")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 225, height: 30, alignment: .leading)
+                                .frame(width: 365, height: 50, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color.gray)
