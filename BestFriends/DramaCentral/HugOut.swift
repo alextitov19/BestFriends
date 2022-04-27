@@ -41,14 +41,17 @@ struct HugOut: View {
                 VStack {
                     
              
-                    Text("D R A M A")
+                    Text("H U G")
                         .font(.system(size: 90))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
-                    Text("D A Y")
-                        .font(.system(size: 50))
+                    
+                    
+                    
+                    Text("it O U T")
+                        .font(.system(size: 60))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
@@ -57,7 +60,7 @@ struct HugOut: View {
                     Spacer()
                         .frame(height: 270)
                     
-                    Text("before you un-friend")
+                    Text("we hate it,")
                         .font(.system(size: 30))
                         .italic()
                         .foregroundColor(.white)
@@ -67,7 +70,7 @@ struct HugOut: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("let's figure this out")
+                    Text("but we can't excape it")
                         .font(.system(size: 30, weight: .bold))
                         .italic()
                         .foregroundColor(.white)
@@ -76,11 +79,11 @@ struct HugOut: View {
                         .padding(.horizontal, 0)
                     
                   
-                    
+                    VStack {
                     Spacer()
                         .frame(height: 20)
                     
-                    Text("get a smile back")
+                    Text("comming soon")
                         .font(.system(size: 45, weight: .bold))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -95,7 +98,7 @@ struct HugOut: View {
                     NavigationLink(
                         destination: HomeView(),
                         label: {
-                            Text("Ok, take me to Hug-it-Out")
+                            Text("")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
@@ -113,7 +116,7 @@ struct HugOut: View {
                }
             }
         }
-    
+}
 
 struct HugOut_Previews : PreviewProvider {
     static var previews: some View {
