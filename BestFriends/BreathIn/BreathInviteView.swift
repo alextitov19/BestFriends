@@ -19,12 +19,13 @@ struct BreathInviteView: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-                Image("blueBackground")
+                Image("in bushes")
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
                     .onAppear {
-                       
+                 
+                     
                     }
                 
                 // Stars animation...
@@ -33,84 +34,64 @@ struct BreathInviteView: View {
                     .blendMode(.screen)
                 
                 
-                VStack {
-                    HStack {
-                        Button(action: {
-                            self.presentationMode.wrappedValue.dismiss()
-                        }) {
-                           
-                          
-                            
-                            NavigationLink(
-                                destination: MasterFriendVault(),
-                                label: {
-                                    Text("<")
-                                        .foregroundColor(.white)
-                                        .frame(width: 50, height: 30)
-                                        .font(.system(size: 30))
-                                        .multilineTextAlignment(.leading)
-                                    Spacer()
-                                        .frame(width: 250)
-                                 
-                                    
-//                                    NavigationLink(
-//                                        destination: HomeView(),
-//                                        label: {
-                                    Image("home-alt2")
-                                        .resizable()
-                                        .frame(width: 35, height: 35)
-                                        .scaledToFit()
-                                        .foregroundColor(.white)
-                                })
-                            }
-                        }
-                    
+//                VStack {
+//                    HStack {
+//                        Button(action: {
+//                            self.presentationMode.wrappedValue.dismiss()
+//                        }) {
+//
+//
+//
+//                            NavigationLink(
+//                                destination: MasterFriendVault(),
+//                                label: {
+//                                    Text("<")
+//                                        .foregroundColor(.white)
+//                                        .frame(width: 50, height: 30)
+//                                        .font(.system(size: 30))
+//                                        .multilineTextAlignment(.leading)
+//                                    Spacer()
+//                                        .frame(width: 250)
+//
+//
+////                                    NavigationLink(
+////                                        destination: HomeView(),
+////                                        label: {
+//                                    Image("home-alt2")
+//                                        .resizable()
+//                                        .frame(width: 35, height: 35)
+//                                        .scaledToFit()
+//                                        .foregroundColor(.white)
+//                                })
+//                            }
+//                        }
+//
                     VStack{
                         HStack {
                             Text("Calming")
                                 .font(.system(size: 60, weight: .ultraLight))
-                                .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                .kerning(15)
-                                .multilineTextAlignment(.center)
-                                .padding(.horizontal, 0)
-                            
+                                .foregroundColor(Color.purple)
+                                .kerning(25)
                         }
-                        
-                        
-                        Spacer()
-                            .frame(height: 5)
                         
                         VStack {
                             
                             Text("breaths")
-                                .font(.system(size: 50, weight: .bold))
+                                .font(.system(size: 60, weight: .bold))
                                 .fontWeight(.ultraLight)
-                                .foregroundColor(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                                .foregroundColor(Color.purple)
                                 .kerning(10)
-                                .multilineTextAlignment(.center)
-                                .padding(.horizontal, 0)
-                            
-                            
+                           
+                          
                             Spacer()
-                                .frame(height: 15)
-                            
-                            
-                            Text("Taking a much needed breather")
-                                .font(.system(size: 25, weight: .bold))
-                                .italic()
-                                .fontWeight(.light)
-                                .foregroundColor(.white)
-                                .multilineTextAlignment(.leading)
-                                .padding(.horizontal, 0)
-                            
-                            Spacer()
-                                .frame(height: 50)
+                                .frame(height: 1)
                             
                             VStack {
                                 NavigationLink(
                                     destination: BreathInView(),
                                     label: {
                                         Text("Take a beather alone")
+                                            .fontWeight(.thin)
                                             .frame(width: 325, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 30))
@@ -121,13 +102,13 @@ struct BreathInviteView: View {
                                     })
                                 
                                 Spacer()
-                                    .frame(height: 100)
+                                    .frame(height: 40)
                                 
                                 Text("Take a breather with a friend")
                                     .font(.system(size: 25, weight: .bold))
                                     .italic()
                                     .foregroundColor(.white)
-                                    .fontWeight(.light)
+                                    .fontWeight(.semibold)
                                 
                                     .multilineTextAlignment(.leading)
                                     .padding(.horizontal, 0)
@@ -218,7 +199,7 @@ struct BreathInviteView: View {
                                             })
                                     }
                                     Spacer()
-                                        .frame(height: 50)
+                                        .frame(height: 25)
                                     
                                 }
                                 
@@ -230,20 +211,14 @@ struct BreathInviteView: View {
                                             Text("SHARE")
                                                 .fontWeight(.semibold)
                                                 .foregroundColor(Color.white)
-                                                .frame(width: 400.0, height: 50)
+                                                .frame(width: 150.0, height: 50)
                                                 .font(.system(size: 20))
                                             
                                                 .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                             
-                                                .cornerRadius(0)
+                                                .cornerRadius(25)
                                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                             
-                                            
-//                                                .padding(25)
-                                            
-                                            
-                                            
-                                            Spacer()
                                             
                                         }
                                         
@@ -260,7 +235,7 @@ struct BreathInviteView: View {
         }
     }
     
-}
+
 
 
 struct BreathInviteView_Previews : PreviewProvider {
