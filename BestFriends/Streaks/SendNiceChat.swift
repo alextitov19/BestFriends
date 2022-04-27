@@ -16,17 +16,25 @@ struct SendNiceChat: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-//                Image("Star Page")
                 Image("purpleBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
+              
+                Image("ballons")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+                
+                
+                AdPlayerView(name: "backgroundAnimation")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .offset(y: -250)
                 
                 VStack {
                     
-                    Spacer()
-                        .frame(height: 5)
-                    
+             
                     Text("go ahead")
                         .font(.system(size: 100))
                         .foregroundColor(.white)
@@ -35,23 +43,23 @@ struct SendNiceChat: View {
                         .padding(.horizontal, 0)
                     
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 100)
                     
                     Text("say something nice")
                         .font(.system(size: 30))
                         .italic()
                         .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.heavy)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("to your freind in chat")
+                    Text("to your freind in Chat")
                         .font(.system(size: 30, weight: .bold))
                         .italic()
                         .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.heavy)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
                     
@@ -62,7 +70,7 @@ struct SendNiceChat: View {
                     
                     Text("get a smile back")
                         .font(.system(size: 45, weight: .bold))
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.bold)
                         .foregroundColor(.white)
 //                        .italic()
                         .multilineTextAlignment(.center)
@@ -70,78 +78,35 @@ struct SendNiceChat: View {
                     
                     
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 30)
                     
-                    
-                    VStack {
-                     
-                        
-//                        Text("You just started a . . .")
-//                            .font(.system(size: 25,
-//                    weight: .bold))
-//                            .foregroundColor(.white)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//                            .padding(.horizontal, 0)
-//
-//
-                        HStack {
-                        NavigationLink(
-                           destination: MyStreaks(),
-                             label: {
-                        Text("See My \nSTREAKS")
-                            .font(.system(size: 25,
-                    weight: .bold))
-                            .fontWeight(.regular)
-                            .italic()
-                            .foregroundColor(.green)
-//                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 10)
-                        
-                        
-                        
-                        
-                        Spacer()
-//                           .frame(height: 50)
-                        
-                        
-                        
-                    
-
-
-                      NavigationLink(
-                         destination: HomeView(),
-                           label: {
+                    NavigationLink(
+                        destination: HomeView(),
+                        label: {
+                            Text("Ok, take me to Chat")
+                                .fontWeight(.light)
+                                .foregroundColor(Color.black)
+                                .multilineTextAlignment(.center)
+                                .frame(width: 190, height: 30, alignment: .leading)
+                                .font(.system(size: 20))
+                                .padding(10)
+                                .background(Color.gray)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
                                
-                               Image("ChatBlue")
-                               
-                           }
-                               
-//                                Text("take me to CHAT")
-//                                   .fontWeight(.semibold)
-//                                   .foregroundColor(Color.white)
-//                                   .frame(width: 350.0, height: 50)
-//                                  .font(.system(size: 20))
-//                                  .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
-
-
-
-                        )}
-                      )}
+                 }
+                      }
                     
                }
             }
         }
-    }
-}
+    
+
 struct SendNiceChat_Previews : PreviewProvider {
     static var previews: some View {
         SendNiceChat()
     }
 }
 
-}
+
