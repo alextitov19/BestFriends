@@ -58,19 +58,19 @@ struct SendNiceChat: View {
                   
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 40)
                     
-                    Text("Yep, get a smile back")
-                        .font(.system(size: 25, weight: .bold))
-                        .fontWeight(.light)
-                        .foregroundColor(.yellow)
+                    Text("get a smile back")
+                        .font(.system(size: 45, weight: .bold))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(.white)
 //                        .italic()
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     
                     Spacer()
-                        .frame(height: 160)
+                        .frame(height: 60)
                     
                     
                     VStack {
@@ -101,7 +101,7 @@ struct SendNiceChat: View {
                         
                         
                         
-//                        Spacer()
+                        Spacer()
 //                           .frame(height: 50)
                         
                         

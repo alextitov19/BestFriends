@@ -55,7 +55,7 @@ struct BreathInView: View {
                          .resizable()
                          .frame(width: 135, height: 110, alignment: .leading)
      //                .clipShape(Circle())
-                     .foregroundColor(.blue)
+                         .foregroundColor(Color(hue: 0.586, saturation: 0.265, brightness: 0.381))
                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
 
                     

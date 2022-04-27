@@ -457,7 +457,6 @@
 				CFE194632812973600ED5718 /* MasterFriendVault.swift */,
 				CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */,
 				CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */,
-				CFE194652812994B00ED5718 /* SendNiceChat.swift */,
 				CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */,
 				CFE1946828129D9600ED5718 /* FriendQualities.swift */,
 				CFE1946B28132FBB00ED5718 /* PracticeFloatingCircles.swift */,
@@ -505,6 +504,7 @@
 		CFE1946A2812A9E300ED5718 /* Streaks */ = {
 			isa = PBXGroup;
 			children = (
+				CFE194652812994B00ED5718 /* SendNiceChat.swift */,
 				CFD12CC0281770B600AB2539 /* MyStreaks.swift */,
 				CFD12CC328179CD600AB2539 /* StreakCongratulations.swift */,
 			);
