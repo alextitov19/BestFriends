@@ -75,7 +75,7 @@ struct Impetus: View {
                         .foregroundColor(.white)
 //                        .italic()
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
+                         .padding(.horizontal, 0)
                     
                     
                     Spacer()
