@@ -85,7 +85,7 @@ struct Impetus: View {
 //                        HStack {
                             Text("the story")
                                 .fontWeight(.light)
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
                                 .frame(width: 80, height: 20, alignment: .leading)
                                 .font(.system(size: 20))
