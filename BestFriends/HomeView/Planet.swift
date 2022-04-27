@@ -61,7 +61,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Protective\nAtmosphere")
+                        Text("Build\nProtective\nAtmosphere")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -138,7 +138,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Friend \nVault")
+                        Text("Keeping\nFriends\nSafe")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
