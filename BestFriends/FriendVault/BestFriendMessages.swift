@@ -104,8 +104,7 @@ struct BestFriendMessages: View {
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                 }
-              
-                
+            
 
             }
             
@@ -145,9 +144,10 @@ struct FriendVaultCircle: View {
         Text(friendName)
                 .fontWeight(.light)
                 .foregroundColor(.black)
-            
-           
-       
+//
+//            Spacer()
+//                  .frame(height: 200)
+//
         }
     }
 }
