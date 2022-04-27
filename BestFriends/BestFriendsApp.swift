@@ -65,7 +65,9 @@ struct BestFriendsApp: App {
             case .dramaView:
                 DramaView()
                     .environmentObject(sessionManager)
-                
+            case .hugOut:
+                HugOut()
+                    .environmentObject(sessionManager)
                 
                 
             }

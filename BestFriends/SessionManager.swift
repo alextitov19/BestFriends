@@ -23,6 +23,7 @@ enum AppState {
     case myStreaks
     case impetus
     case dramaView
+    case hugOut
     
 }
 
@@ -91,6 +92,11 @@ final class SessionManager: ObservableObject {
     }
     func showDramaView() {
             appState = .dramaView
+    }
+    func showHugOut() {
+            appState = .hugOut
+        
+        
         
         }
 }
