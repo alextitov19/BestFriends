@@ -117,11 +117,11 @@ struct DramaMainView: View {
                 }) {
                     ZStack {
                         Circle()
-                            .frame(width: 130, height: 130)
+                            .frame(width: 160, height: 160)
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Set \nTime to \nTalk")
+                        Text("Set \ntime to \n>Talk<")
 //                            .background()
                             .foregroundColor(.gray)
                             .font(.system(size: 27, weight: .bold))
