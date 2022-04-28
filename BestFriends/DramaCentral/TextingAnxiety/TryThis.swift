@@ -35,43 +35,42 @@ struct TryThis: View {
                     .offset(y: -250)
                 
                 VStack {
-                    
-             
-                    Text("go ahead")
-                        .font(.system(size: 100))
+                    Text("While waiting")
+                        .font(.system(size: 60))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
-                    Spacer()
-                        .frame(height: 100)
                     
-                    Text("say something nice")
-                        .font(.system(size: 30))
-                        .italic()
+                    Text("for a return text")
+                        .font(.system(size: 70))
                         .foregroundColor(.white)
-                        .fontWeight(.heavy)
+                        .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 80)
                     
-                    Text("to your freind in Chat")
-                        .font(.system(size: 30, weight: .bold))
+                    Text("*listen to your favorite songs \n*take a walk \n*head to Chat and text a friend \n*watch a funny video on TikTok \n*eat some chocolate \n*watch a movie on NetFlix \n*pace yourself -this may take a while")
+                        .font(.system(size: 20))
                         .italic()
                         .foregroundColor(.white)
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.leading)
-                        .padding(.horizontal, 0)
+                        .padding(.horizontal, 10)
+                    Spacer()
+                        .frame(height: 5)
+                    
+                  
                     
                   
                     
                     Spacer()
                         .frame(height: 40)
                     
-                    Text("get a smile back")
-                        .font(.system(size: 45, weight: .bold))
+                    Text("be cool - we got this")
+                        .font(.system(size: 35, weight: .bold))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
 //                        .italic()
