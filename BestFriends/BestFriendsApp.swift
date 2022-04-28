@@ -74,8 +74,9 @@ struct BestFriendsApp: App {
             case .fightWithFriend:
                 FightWithFriend()
                     .environmentObject(sessionManager)
-                
-                
+            case .notReadyTalk:
+                NotReadyTalk()
+                    .environmentObject(sessionManager)
                 
             }
         }
