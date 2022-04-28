@@ -43,7 +43,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Ask your\nfriends \nto HELP")
+                        Text("Ask my\nfriends \nfor HELP")
                             .foregroundColor(.white)
                             .font(.system(size: 20, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -81,7 +81,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("I'm NOT\nReady to\nTalk Yet")
+                        Text("I'm NOT\nready \nto Talk")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -97,13 +97,14 @@ struct DramaMainView: View {
                 }) {
                     ZStack {
                         Circle()
-                            .frame(width: 140, height: 140)
+                            .frame(width: 150, height: 150)
                             .foregroundColor(ColorManager.pmbc_pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Fight \nwith your \n Friend")
-                            .foregroundColor(.white)
-                            .font(.system(size: 25, weight: .bold))
+                        Text("Fight \nwith my \n Friend")
+//                            .background()
+                            .foregroundColor(.gray)
+                            .font(.system(size: 34, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
                 }
@@ -116,14 +117,14 @@ struct DramaMainView: View {
                 }) {
                     ZStack {
                         Circle()
-                            .frame(width: 120, height: 120)
+                            .frame(width: 130, height: 130)
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         Text("Set \nTime to \nTalk")
-                            .background()
-                            .foregroundColor(.purple)
-                            .font(.system(size: 20, weight: .bold))
+//                            .background()
+                            .foregroundColor(.gray)
+                            .font(.system(size: 27, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                   
                     
@@ -134,7 +135,7 @@ struct DramaMainView: View {
             
             VStack {
                 Button(action: {
-                    
+                    sessionManager.showBreathInviteView()
                 }) {
                     ZStack {
                         Circle()
@@ -142,7 +143,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Take \na \nBREATH")
+                        Text("Slow Down \ntake a \nBREATH")
                             .foregroundColor(.white)
                             .font(.system(size: 20, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -163,9 +164,9 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Listen to \nsome \nmusic")
+                        Text("Should I \n text \nFIRST?")
                             .foregroundColor(.white)
-                            .font(.system(size: 15, weight: .bold))
+                            .font(.system(size: 20, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
                 }
