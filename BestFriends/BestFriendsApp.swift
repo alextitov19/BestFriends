@@ -62,9 +62,6 @@ struct BestFriendsApp: App {
             case .impetus:
                 Impetus()
                     .environmentObject(sessionManager)
-            case .dramaView:
-                DramaView()
-                    .environmentObject(sessionManager)
             case .hugOut:
                 HugOut()
                     .environmentObject(sessionManager)
@@ -77,6 +74,16 @@ struct BestFriendsApp: App {
             case .notReadyTalk:
                 NotReadyTalk()
                     .environmentObject(sessionManager)
+            case .nuclearOption:
+                NuclearOption()
+                    .environmentObject(sessionManager)
+                
+                
+                
+                
+                
+                
+                
                 
             }
         }

@@ -1,14 +1,14 @@
 //
-//  DramaView.swift
+//  NuclearOption.swift
 //  BestFriends
 //
-//  Created by Social Tech on 4/27/22.
+//  Created by Social Tech on 4/28/22.
 //
 
 import Foundation
 import SwiftUI
 
-struct DramaView: View {
+struct NuclearOption: View {
     
     var body: some View {
         NavigationView {
@@ -113,9 +113,9 @@ struct DramaView: View {
         }
     
 
-struct DramaView_Previews : PreviewProvider {
+struct NuclearOption_Previews : PreviewProvider {
     static var previews: some View {
-        DramaView()
+        NuclearOption()
     }
 }
 

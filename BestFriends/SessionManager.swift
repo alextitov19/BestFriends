@@ -22,11 +22,11 @@ enum AppState {
     case individualFriendMessages
     case myStreaks
     case impetus
-    case dramaView
     case hugOut
     case dramaMainView
     case fightWithFriend
     case notReadyTalk
+    case nuclearOption
     
 }
 
@@ -93,9 +93,6 @@ final class SessionManager: ObservableObject {
     func showImpetus() {
             appState = .impetus
     }
-    func showDramaView() {
-            appState = .dramaView
-    }
     func showHugOut() {
             appState = .hugOut
     }
@@ -107,7 +104,9 @@ final class SessionManager: ObservableObject {
     }
     func showNotReadyTalk() {
             appState = .notReadyTalk
-        
+    }
+    func showNuclearOption() {
+            appState = .nuclearOption
         
         
         

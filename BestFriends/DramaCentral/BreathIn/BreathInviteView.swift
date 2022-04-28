@@ -102,7 +102,7 @@ struct BreathInviteView: View {
                                     })
                                 
                                 Spacer()
-                                    .frame(height: 40)
+                                    .frame(height: 160)
                                 
                                 Text("Take a breather with a friend")
                                     .font(.system(size: 25, weight: .bold))
