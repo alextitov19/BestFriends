@@ -17,22 +17,22 @@ struct FightWithFriend: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-                Image("purpleBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
-              
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//
                 Image("ballons")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
-                
-                
-                AdPlayerView(name: "backgroundAnimation")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .offset(y: -250)
-                
+//
+//
+//                AdPlayerView(name: "backgroundAnimation")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .offset(y: -250)
+//
                 VStack {
                     
              
@@ -44,12 +44,12 @@ struct FightWithFriend: View {
 //                        .padding(.horizontal, 0)
 //
                     Spacer()
-                        .frame(height: 150)
+                        .frame(height: 250)
                     
                     Text("We hope to change the ")
                         .font(.system(size: 30))
                         .italic()
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
@@ -59,7 +59,7 @@ struct FightWithFriend: View {
                     Text("way you feel right now")
                         .font(.system(size: 30, weight: .bold))
                         .italic()
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
@@ -72,7 +72,7 @@ struct FightWithFriend: View {
                     Text("Let's once again, \nfind that smile of yours")
                         .font(.system(size: 20, weight: .bold))
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
 //                        .italic()
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)

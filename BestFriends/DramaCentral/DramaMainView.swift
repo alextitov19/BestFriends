@@ -18,15 +18,15 @@ struct DramaMainView: View {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
 
-            Image("purpleBackground")
+            Image("in bushes")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
            
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .offset(y: -250)
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .offset(y: -250)
 
 
 //            Image("planet_1")
