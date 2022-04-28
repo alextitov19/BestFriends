@@ -90,6 +90,7 @@
 		CFAB5400281A99B600BBF502 /* TextingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB53FF281A99B600BBF502 /* TextingFirst.swift */; };
 		CFAB5402281A9A1D00BBF502 /* TimeToTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5401281A9A1D00BBF502 /* TimeToTalk.swift */; };
 		CFAB5404281A9A9000BBF502 /* NuclearOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5403281A9A9000BBF502 /* NuclearOption.swift */; };
+		CFAB5407281AAFA100BBF502 /* TryThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5406281AAFA100BBF502 /* TryThis.swift */; };
 		CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
 		CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC0281770B600AB2539 /* MyStreaks.swift */; };
@@ -194,6 +195,7 @@
 		CFAB53FF281A99B600BBF502 /* TextingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextingFirst.swift; sourceTree = "<group>"; };
 		CFAB5401281A9A1D00BBF502 /* TimeToTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToTalk.swift; sourceTree = "<group>"; };
 		CFAB5403281A9A9000BBF502 /* NuclearOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuclearOption.swift; sourceTree = "<group>"; };
+		CFAB5406281AAFA100BBF502 /* TryThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryThis.swift; sourceTree = "<group>"; };
 		CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobPracticePage.swift; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
 		CFD12CC0281770B600AB2539 /* MyStreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStreaks.swift; sourceTree = "<group>"; };
@@ -511,6 +513,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAB53FF281A99B600BBF502 /* TextingFirst.swift */,
+				CFAB5406281AAFA100BBF502 /* TryThis.swift */,
 			);
 			path = TextingAnxiety;
 			sourceTree = "<group>";
@@ -739,6 +742,7 @@
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
+				CFAB5407281AAFA100BBF502 /* TryThis.swift in Sources */,
 				CFAB5404281A9A9000BBF502 /* NuclearOption.swift in Sources */,
 				CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */,
 				CFD12CD1281A754200AB2539 /* NotReadyTalk.swift in Sources */,

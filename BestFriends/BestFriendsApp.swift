@@ -80,7 +80,9 @@ struct BestFriendsApp: App {
             case .textingFirst:
                 TextingFirst()
                     .environmentObject(sessionManager)
-                
+            case .tryThis:
+                TryThis()
+                    .environmentObject(sessionManager)
                 
                 
                 

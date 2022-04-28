@@ -33,51 +33,18 @@ struct TextingFirst: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                
-//                VStack {
-//                    HStack {
-//                        Button(action: {
-//                            self.presentationMode.wrappedValue.dismiss()
-//                        }) {
-//
-//
-//
-//                            NavigationLink(
-//                                destination: MasterFriendVault(),
-//                                label: {
-//                                    Text("<")
-//                                        .foregroundColor(.white)
-//                                        .frame(width: 50, height: 30)
-//                                        .font(.system(size: 30))
-//                                        .multilineTextAlignment(.leading)
-//                                    Spacer()
-//                                        .frame(width: 250)
-//
-//
-////                                    NavigationLink(
-////                                        destination: HomeView(),
-////                                        label: {
-//                                    Image("home-alt2")
-//                                        .resizable()
-//                                        .frame(width: 35, height: 35)
-//                                        .scaledToFit()
-//                                        .foregroundColor(.white)
-//                                })
-//                            }
-//                        }
-//
-                    VStack{
+         VStack{
                         HStack {
-                            Text("TEXTING")
-                                .font(.system(size: 50, weight: .ultraLight))
+                            Text("RESOLUTION")
+                                .font(.system(size: 60, weight: .ultraLight))
                                 .foregroundColor(Color.purple)
-                                .kerning(25)
+//                                .kerning(25)
                         }
                         
                         VStack {
                             
-                            Text("FIRST")
-                                .font(.system(size: 40, weight: .bold))
+                            Text("via texting")
+                                .font(.system(size: 50, weight: .bold))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color.purple)
                                 .kerning(10)
@@ -108,13 +75,13 @@ struct TextingFirst: View {
                                 Spacer()
                                     .frame(height: 160)
                                 
-                                Text("While you're stresing \n out waiting for a REPLY")
+                                Text("While you're stresing \nwaiting for a REPLY")
                                     .font(.system(size: 25, weight: .bold))
                                     .italic()
                                     .foregroundColor(.white)
                                     .fontWeight(.semibold)
                                 
-                                    .multilineTextAlignment(.leading)
+//                                    .multilineTextAlignment(.leading)
                                     .padding(.horizontal, 0)
                                 
                                 Spacer()
@@ -155,96 +122,9 @@ struct TextingFirst: View {
                 }
                 
             }
-      
-
-
 
 struct TextingFirst_Previews : PreviewProvider {
     static var previews: some View {
         TextingFirst()
     }
 }
-
-//
-//VStack {
-//    HStack {
-//        NavigationLink(
-//            destination: BreathInView(),
-//            label: {
-//                Text("Invite ALL")
-//                    .fontWeight(.bold)
-//                    .frame(width: 100, height: 30)
-//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                    .font(.system(size: 15))
-//                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//                    .cornerRadius(25)
-//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//            })
-//
-//        NavigationLink(
-//            destination: BreathInView(),
-//            label: {
-//                Text("Friend 1")
-//                    .fontWeight(.bold)
-//                    .frame(width: 100, height: 30)
-//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                    .font(.system(size: 15))
-//                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-//                    .cornerRadius(25)
-//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//            })
-//        NavigationLink(
-//            destination: BreathInView(),
-//            label: {
-//                Text("Firend 2")
-//                    .fontWeight(.bold)
-//                    .frame(width: 100, height: 30)
-//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                    .font(.system(size: 15))
-//                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-//                    .cornerRadius(25)
-//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//            })
-//    }
-//    VStack {
-//        HStack {
-//            NavigationLink(
-//                destination: BreathInView(),
-//                label: {
-//                    Text("Friend 3")
-//                        .fontWeight(.bold)
-//                        .frame(width: 100, height: 30)
-//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                        .font(.system(size: 15))
-//                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-//                        .cornerRadius(25)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                })
-//            NavigationLink(
-//                destination: BreathInView(),
-//                label: {
-//                    Text("Friend 4")
-//                        .fontWeight(.bold)
-//                        .frame(width: 100, height: 30)
-//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                        .font(.system(size: 15))
-//                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-//                        .cornerRadius(25)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                })
-//
-//            NavigationLink(
-//                destination: BreathInView(),
-//                label: {
-//                    Text("Friend 5")
-//                        .fontWeight(.bold)
-//                        .frame(width: 100, height: 30)
-//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                        .font(.system(size: 15))
-//                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-//                        .cornerRadius(25)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                })
-//        }
-//
-//

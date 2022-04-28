@@ -28,6 +28,7 @@ enum AppState {
     case notReadyTalk
     case nuclearOption
     case textingFirst
+    case tryThis
     
 }
 
@@ -111,7 +112,8 @@ final class SessionManager: ObservableObject {
     }
     func showTextingFirst() {
             appState = .textingFirst
-        
+        func showTryThis() {
+                appState = .tryThis
         
         
         
