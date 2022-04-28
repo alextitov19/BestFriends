@@ -85,12 +85,12 @@ struct BreathInView: View {
                     
                     
                     Spacer()
-                        .frame(height: 410)
+                        .frame(height: 450)
                 }
                 
                 
                 Text(finishedText)
-                    .font(.system(size: 80))
+                    .font(.system(size: 60))
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .lineLimit(1)

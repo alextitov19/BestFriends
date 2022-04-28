@@ -62,7 +62,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Hold Up \n don't \nunfriend \nyet")
+                        Text("Hold Up. \n Don't \nunfriend \nyet!")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -73,7 +73,7 @@ struct DramaMainView: View {
             
             VStack {
                 Button(action: {
-                    sessionManager.showInvite()
+                    sessionManager.showNotReadyTalk()
                 }) {
                     ZStack {
                         Circle()
@@ -156,7 +156,7 @@ struct DramaMainView: View {
                 Button(action: {
                     
 //                    trying to link to FriendVault page
-                    sessionManager.showBestFriendMessages()
+                    sessionManager.showTextingFirst()
                 }) {
                     ZStack {
                         Circle()
