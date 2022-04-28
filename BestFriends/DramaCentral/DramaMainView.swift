@@ -35,7 +35,8 @@ struct DramaMainView: View {
         HStack {
             VStack {
                 Button(action: {
-                    
+//                    want to take to 'Atmosphere when built"
+//                    sessionManager.showHomeView()
                 }) {
                     ZStack {
                         Circle()
@@ -43,9 +44,9 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Ask my\nfriends \nfor HELP")
+                        Text("Suck my \nFriends into \nthis mess!")
                             .foregroundColor(.white)
-                            .font(.system(size: 20, weight: .bold))
+                            .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
                 }
@@ -81,7 +82,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("I'm NOT \n talking to \nYOU")
+                        Text("I'm NOT \n talking to \nYOU ...")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -103,7 +104,7 @@ struct DramaMainView: View {
                         
                         Text("Fight \nwith my \n Friend")
 //                            .background()
-                            .foregroundColor(.gray)
+                            .foregroundColor(.white)
                             .font(.system(size: 31, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
@@ -117,13 +118,13 @@ struct DramaMainView: View {
                 }) {
                     ZStack {
                         Circle()
-                            .frame(width: 115, height: 115)
+                            .frame(width: 120, height: 120)
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Set \ntime to \n>Talk<")
+                        Text("Meet & \n'Hug-it-Out'")
                             .foregroundColor(.white)
-                            .font(.system(size: 20, weight: .bold))
+                            .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                            
                   
@@ -143,7 +144,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Slow Down \ntake a \nBREATH")
+                        Text("Slow down, \ntake a \nBREATH")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -164,9 +165,9 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Anxiety \n of texting \nFIRST?")
+                        Text("Anxiety \n of texting \nFIRST")
                             .foregroundColor(.white)
-                            .font(.system(size: 20, weight: .bold))
+                            .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
                 }
