@@ -54,7 +54,7 @@ struct DramaMainView: View {
                     .frame(height: 40)
                 
                 Button(action: {
-                    
+                    sessionManager.showDramaView()
                 }) {
                     ZStack {
                         Circle()
@@ -104,7 +104,7 @@ struct DramaMainView: View {
                         Text("Fight \nwith my \n Friend")
 //                            .background()
                             .foregroundColor(.gray)
-                            .font(.system(size: 34, weight: .bold))
+                            .font(.system(size: 31, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
                 }

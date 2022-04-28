@@ -91,9 +91,9 @@ struct DramaView: View {
                         .frame(height: 20)
                     
                     NavigationLink(
-                        destination: HomeView(),
+                        destination: DramaMainView(),
                         label: {
-                            Text("Ok, take me to Hug-it-Out")
+                            Text("Ok, take me back")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
