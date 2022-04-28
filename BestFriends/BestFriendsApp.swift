@@ -88,7 +88,6 @@ struct BestFriendsApp: App {
                 
                 
                 
-                
             }
         }
     }

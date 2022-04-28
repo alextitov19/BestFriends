@@ -30,11 +30,12 @@ enum AppState {
     case textingFirst
     case tryThis
     
+    
 }
 
 final class SessionManager: ObservableObject {
     @Published var appState: AppState = .bestFriendMessages
-    
+
     func showSignUp() {
         appState = .signUp
     }
@@ -112,8 +113,9 @@ final class SessionManager: ObservableObject {
     }
     func showTextingFirst() {
             appState = .textingFirst
-        func showTryThis() {
-                appState = .tryThis
+    }
+    func showTryThis() {
+            appState = .tryThis
         
         
         
