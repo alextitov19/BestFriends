@@ -75,7 +75,7 @@ struct TextingFirst: View {
                                 Spacer()
                                     .frame(height: 160)
                                 
-                                Text("While you're stresing \nwaiting for a REPLY")
+                                Text("While you're stressing \nwaiting for a REPLY")
                                     .font(.system(size: 25, weight: .bold))
                                     .italic()
                                     .foregroundColor(.white)

@@ -44,7 +44,7 @@ struct TryThis: View {
                     
                     
                     Text("for a return text")
-                        .font(.system(size: 70))
+                        .font(.system(size: 50))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
