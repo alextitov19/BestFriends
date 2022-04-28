@@ -77,7 +77,9 @@ struct BestFriendsApp: App {
             case .nuclearOption:
                 NuclearOption()
                     .environmentObject(sessionManager)
-                
+            case .textingFirst:
+                TextingFirst()
+                    .environmentObject(sessionManager)
                 
                 
                 

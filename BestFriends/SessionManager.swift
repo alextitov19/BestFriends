@@ -27,6 +27,7 @@ enum AppState {
     case fightWithFriend
     case notReadyTalk
     case nuclearOption
+    case textingFirst
     
 }
 
@@ -107,6 +108,9 @@ final class SessionManager: ObservableObject {
     }
     func showNuclearOption() {
             appState = .nuclearOption
+    }
+    func showTextingFirst() {
+            appState = .textingFirst
         
         
         
