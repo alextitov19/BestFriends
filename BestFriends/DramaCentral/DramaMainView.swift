@@ -46,7 +46,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("#5 \n'Hug-it-Out'")
+                        Text("#5 \nSet \n'Hug-it-Out' \nTime")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -65,7 +65,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("#4 \nHelp from \nFriends")
+                        Text("#4 \nHelp from \nFriends?")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
