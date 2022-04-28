@@ -44,7 +44,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Suck my \nFriends into \nthis mess!")
+                        Text("#5 \n'Hug-it-Out'")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -63,7 +63,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Hold Up. \n Don't \nunfriend \nyet!")
+                        Text("#4 \nHelp from \nFriends")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -82,7 +82,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("I'm NOT \n talking to \nYOU ...")
+                        Text("NOT \nready to talk \n YET ...")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -102,10 +102,10 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Fight \nwith my \n Friend")
+                        Text("FIX \nFight \nwith \n Friend")
 //                            .background()
                             .foregroundColor(.white)
-                            .font(.system(size: 31, weight: .bold))
+                            .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
                 }
@@ -122,7 +122,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Meet & \n'Hug-it-Out'")
+                        Text("#3 \n Don't \nunfriend \nyet!")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -144,7 +144,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Slow down, \ntake a \nBREATH")
+                        Text("#1 \nTake a \nBREATH")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -165,7 +165,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Anxiety \n of texting \nFIRST")
+                        Text("#2 \nOvercome \nAnxiety \n of texting \n1st")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)

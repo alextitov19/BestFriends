@@ -35,7 +35,7 @@ struct TextingFirst: View {
                 
          VStack{
                         HStack {
-                            Text("RESOLUTION")
+                            Text("Ready to Start")
                                 .font(.system(size: 60, weight: .ultraLight))
                                 .foregroundColor(Color.purple)
 //                                .kerning(25)
@@ -61,7 +61,7 @@ struct TextingFirst: View {
 //                                NavigationLink(
 //                                    destination: BreathInView(),
 //                                    label: {
-                                       Text("Sample Text Messages")
+                                       Text("Not Sure What to Say")
                                             .fontWeight(.thin)
                                             .frame(width: 325, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -73,7 +73,7 @@ struct TextingFirst: View {
                                     }
                                 
                                 Spacer()
-                                    .frame(height: 160)
+                                    .frame(height: 300)
                                 
                                 Text("While you're stressing \nwaiting for a REPLY")
                                     .font(.system(size: 25, weight: .bold))
@@ -87,11 +87,7 @@ struct TextingFirst: View {
                                 Spacer()
                                     .frame(height: 20)
                             }
-                            
-                            
-                                 Spacer()
-                                        .frame(height: 25)
-                                    
+                                 
                                 }
                                 
                                 VStack {
@@ -110,8 +106,10 @@ struct TextingFirst: View {
                                                 .cornerRadius(25)
                                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                             
-                                            
+                                           
                                         }
+                                    
+                                        
                                         
                                     )}
                             }
