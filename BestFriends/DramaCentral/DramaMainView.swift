@@ -84,7 +84,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("NOT \nready to talk \n YET ...")
+                        Text("NOT \nready to talk \n YET!")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
