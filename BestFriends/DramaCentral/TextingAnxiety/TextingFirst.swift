@@ -97,7 +97,7 @@ struct TextingFirst: View {
                                 VStack {
                                     
                                     NavigationLink(
-                                        destination: BreathInView(),
+                                        destination: TryThis(),
                                         label: {
                                             Text("Try This")
                                                 .fontWeight(.semibold)
