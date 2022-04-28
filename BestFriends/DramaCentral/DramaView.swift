@@ -39,13 +39,13 @@ struct DramaView: View {
                 VStack {
                     
              
-                    Text("D R A M A")
+                    Text("P I S S E D")
                         .font(.system(size: 90))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
-                    Text("D A Y")
+                    Text("O F F")
                         .font(.system(size: 50))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
@@ -53,7 +53,7 @@ struct DramaView: View {
                         .padding(.horizontal, 0)
                     
                     Spacer()
-                        .frame(height: 270)
+                        .frame(height: 150)
                     
                     Text("before you un-friend")
                         .font(.system(size: 30))
@@ -65,7 +65,7 @@ struct DramaView: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("let's figure this out")
+                    Text("them on IG, Snap ...")
                         .font(.system(size: 30, weight: .bold))
                         .italic()
                         .foregroundColor(.white)
@@ -78,7 +78,7 @@ struct DramaView: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    Text("")
+                    Text("give us a chance \nto help you fix this mess")
                         .font(.system(size: 45, weight: .bold))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -93,11 +93,11 @@ struct DramaView: View {
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("Ok, take me back")
+                            Text("Ok, FINE")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 225, height: 30, alignment: .leading)
+                                .frame(width: 75, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color.gray)
