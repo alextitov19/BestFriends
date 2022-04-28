@@ -99,7 +99,7 @@ struct TextingFirst: View {
                                     NavigationLink(
                                         destination: TryThis(),
                                         label: {
-                                            Text("Try This")
+                                            Text("Try These")
                                                 .fontWeight(.semibold)
                                                 .foregroundColor(Color.white)
                                                 .frame(width: 150.0, height: 50)
