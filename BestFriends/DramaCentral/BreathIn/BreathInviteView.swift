@@ -206,7 +206,7 @@ struct BreathInviteView: View {
                                 VStack {
                                     
                                     NavigationLink(
-                                        destination: BreathInView(),
+                                        destination: DramaMainView(),
                                         label: {
                                             Text("SHARE")
                                                 .fontWeight(.semibold)

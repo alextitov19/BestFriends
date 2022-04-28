@@ -82,7 +82,7 @@ struct TryThis: View {
                         .frame(height: 30)
                     
                     NavigationLink(
-                        destination: HomeView(),
+                        destination: DramaMainView(),
                         label: {
                             Text("Ok, take me to Chat")
                                 .fontWeight(.light)
