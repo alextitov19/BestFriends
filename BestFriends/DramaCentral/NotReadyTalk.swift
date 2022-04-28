@@ -46,7 +46,7 @@ struct NotReadyTalk: View {
                   Spacer()
                         .frame(height: 150)
                     
-                    Text("We feel you")
+                    Text("in the meantime . . . ")
                         .font(.system(size: 30))
                         .italic()
                         .foregroundColor(.white)
@@ -82,9 +82,9 @@ struct NotReadyTalk: View {
                         .frame(height: 30)
                     
                     NavigationLink(
-                        destination: HomeView(),
+                        destination: DramaMainView(),
                         label: {
-                            Text("we can help you fix this mess")
+                            Text("We can help you fix this mess")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)

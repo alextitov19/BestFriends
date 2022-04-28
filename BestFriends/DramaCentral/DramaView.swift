@@ -16,11 +16,11 @@ struct DramaView: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-                Image("purpleBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
-              
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//
                 Image("girlwalking")
                     .resizable()
                     .frame(width: 350, height: 400)
@@ -39,36 +39,36 @@ struct DramaView: View {
                 VStack {
                     
              
-                    Text("P I S S E D")
-                        .font(.system(size: 90))
-                        .foregroundColor(.white)
+                    Text("N U C L E A R")
+                        .font(.system(size: 65))
+                        .foregroundColor(.gray)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
-                    Text("O F F")
+                    Text("O P T I O N")
                         .font(.system(size: 50))
-                        .foregroundColor(.white)
+                        .foregroundColor(.gray)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     Spacer()
-                        .frame(height: 150)
+                        .frame(height: 350)
                     
-                    Text("before you un-friend")
-                        .font(.system(size: 30))
+                    Text("before un-friending")
+                        .font(.system(size: 20))
                         .italic()
-                        .foregroundColor(.white)
+                        .foregroundColor(.gray)
                         .fontWeight(.medium)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("them on IG, Snap ...")
-                        .font(.system(size: 30, weight: .bold))
+                    Text("or posting private stuff \n on Insta or Snap - remember ")
+                        .font(.system(size: 20, weight: .bold))
                         .italic()
-                        .foregroundColor(.white)
+                        .foregroundColor(.gray)
                         .fontWeight(.medium)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
@@ -76,28 +76,28 @@ struct DramaView: View {
                   
                     
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 1)
                     
-                    Text("give us a chance \nto help you fix this mess")
-                        .font(.system(size: 45, weight: .bold))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-//                        .italic()
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    
-                    
+//                    Text("30 minutes ago you were \n best friends, consider taking \nthe high road")
+//                        .font(.system(size: 25, weight: .bold))
+//                        .fontWeight(.bold)
+//                        .foregroundColor(.white)
+//
+//                        .multilineTextAlignment(.center)
+//                        .padding(.horizontal, 0)
+//
+//
                     Spacer()
                         .frame(height: 20)
                     
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("Ok, FINE")
+                            Text("30 minutes ago you were best friends, consider taking the high road.")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 75, height: 30, alignment: .leading)
+                                .frame(width: 350, height: 50, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color.gray)
