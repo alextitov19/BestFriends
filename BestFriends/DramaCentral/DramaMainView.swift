@@ -20,8 +20,10 @@ struct DramaMainView: View {
 
             Image("in bushes")
                 .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+                .resizable()
+                .frame(width: 1500, height: 1000)
+//                .ignoresSafeArea()
+//                .scaledToFill()
            
 //            AdPlayerView(name: "backgroundAnimation")
 //                .ignoresSafeArea()
@@ -114,7 +116,7 @@ struct DramaMainView: View {
                     .frame(height: 40)
                 
                 Button(action: {
-                    sessionManager.showMasterFriendVault()
+                    sessionManager.showNuclearOption()
                 }) {
                     ZStack {
                         Circle()

@@ -36,7 +36,7 @@ struct NotReadyTalk: View {
                 VStack {
                     
 
-                    Text("It's 'OK' to patiently wait until hell freezes over before you talk to them")
+                    Text("We understand. Sometimes we wait until hell freezes over before we talk to them.")
                         .font(.system(size: 47))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)

@@ -104,7 +104,7 @@ struct BreathInviteView: View {
                                 Spacer()
                                     .frame(height: 160)
                                 
-                                Text("Take a breather with a friend")
+                                Text("Take a breather with your friend")
                                     .font(.system(size: 25, weight: .bold))
                                     .italic()
                                     .foregroundColor(.white)
@@ -208,7 +208,7 @@ struct BreathInviteView: View {
                                     NavigationLink(
                                         destination: DramaMainView(),
                                         label: {
-                                            Text("SHARE")
+                                            Text("INVITE")
                                                 .fontWeight(.semibold)
                                                 .foregroundColor(Color.white)
                                                 .frame(width: 150.0, height: 50)
