@@ -36,12 +36,12 @@ struct NotReadyTalk: View {
                 VStack {
                     
 
-                    Text("hell will freeze over before I talk to them")
+                    Text("It's 'OK' to patiently wait until hell freezes over before you talk to them")
                         .font(.system(size: 47))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
+                        .padding(.horizontal, 20)
 
                   Spacer()
                         .frame(height: 150)
@@ -50,7 +50,7 @@ struct NotReadyTalk: View {
                         .font(.system(size: 30))
                         .italic()
                         .foregroundColor(.white)
-                        .fontWeight(.heavy)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     Spacer()
@@ -69,13 +69,13 @@ struct NotReadyTalk: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    Text("Please, try hard to not let the actions \n of other darken your soul")
+                    Text("Please, try hard to not let the actions \n of others darken your soul")
                         .font(.system(size: 20, weight: .bold))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
 //                        .italic()
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
+                        .padding(.horizontal, 10)
                     
                     
                     Spacer()

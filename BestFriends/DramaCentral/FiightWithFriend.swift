@@ -56,13 +56,13 @@ struct FightWithFriend: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("way you feel right now")
-                        .font(.system(size: 30, weight: .bold))
+                    Text("way you're feeling right now")
+                        .font(.system(size: 25, weight: .bold))
                         .italic()
                         .foregroundColor(.black)
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.leading)
-                        .padding(.horizontal, 0)
+                        .padding(.horizontal, 10)
                     
                   
                     
@@ -84,11 +84,11 @@ struct FightWithFriend: View {
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("Ok, let's try")
+                            Text("check it out")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 190, height: 30, alignment: .leading)
+                                .frame(width: 110, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color.gray)
