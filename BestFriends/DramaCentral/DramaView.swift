@@ -59,7 +59,7 @@ struct DramaView: View {
                         .font(.system(size: 30))
                         .italic()
                         .foregroundColor(.white)
-                        .fontWeight(.heavy)
+                        .fontWeight(.medium)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     Spacer()
@@ -69,7 +69,7 @@ struct DramaView: View {
                         .font(.system(size: 30, weight: .bold))
                         .italic()
                         .foregroundColor(.white)
-                        .fontWeight(.heavy)
+                        .fontWeight(.medium)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
                     

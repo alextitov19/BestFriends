@@ -118,25 +118,17 @@ struct IndividualFriendMessages: View {
                         Divider ()
                
                 
-                }
+                            }
             
-               
-            
-                }
-                        
-                
+                        }
+                    }
             }
-           
+                
+        }
                     
-                    
-            } }
-            
-            
  }
     }
 
-
-    
 
 struct IndividualFriendMessages_Previews : PreviewProvider {
     static var previews: some View {

@@ -47,9 +47,10 @@ struct BestFriendMessages: View {
             .offset(x: showItems ? 100 : 0, y: showItems ? -375: 0)
              
        
+//Trying to use Friend 2 at a test to get me to DramaMainView
            
             Button(action: {
-             print("tap function is working")
+                print("tap function is working")
                 sessionManager.showIndividualFriendMessages()
             }) {
                 FriendVaultCircle (color: .orange, friendName: "Friend 2")
