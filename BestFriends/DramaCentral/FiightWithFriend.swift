@@ -69,7 +69,7 @@ struct FightWithFriend: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    Text("Let's once again, \nfind that smile of yours")
+                    Text("and once again, \nfind that smile of yours")
                         .font(.system(size: 20, weight: .bold))
                         .fontWeight(.bold)
                         .foregroundColor(.black)
@@ -82,7 +82,7 @@ struct FightWithFriend: View {
                         .frame(height: 30)
                     
                     NavigationLink(
-                        destination: HomeView(),
+                        destination: DramaMainView(),
                         label: {
                             Text("Ok, let's try")
                                 .fontWeight(.light)

@@ -36,8 +36,8 @@ struct NotReadyTalk: View {
                 VStack {
                     
 
-                    Text("hell will freeze over before I talk to you")
-                        .font(.system(size: 50))
+                    Text("hell will freeze over before I talk to them")
+                        .font(.system(size: 47))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
@@ -84,11 +84,11 @@ struct NotReadyTalk: View {
                     NavigationLink(
                         destination: HomeView(),
                         label: {
-                            Text("we can help you fix this")
+                            Text("we can help you fix this mess")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 200, height: 30, alignment: .leading)
+                                .frame(width: 260, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color.gray)
