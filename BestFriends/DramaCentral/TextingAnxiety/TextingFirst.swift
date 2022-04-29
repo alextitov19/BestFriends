@@ -35,7 +35,7 @@ struct TextingFirst: View {
                 
          VStack{
                         HStack {
-                            Text("Ready to Start")
+                            Text("T E X T I N G")
                                 .font(.system(size: 60, weight: .ultraLight))
                                 .foregroundColor(Color.purple)
 //                                .kerning(25)
@@ -43,7 +43,7 @@ struct TextingFirst: View {
                         
                         VStack {
                             
-                            Text("via texting")
+                            Text("first")
                                 .font(.system(size: 50, weight: .bold))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color.purple)
