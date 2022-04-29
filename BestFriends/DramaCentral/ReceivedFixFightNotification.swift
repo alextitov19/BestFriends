@@ -122,12 +122,12 @@ struct ReceivedFixFightNotification: View {
                                 VStack {
                                     
                                     NavigationLink(
-                                        destination: TryThis(),
+                                        destination: DramaMainView(),
                                         label: {
-                                            Text("Take me to Chat")
+                                            Text("OK, I'm ready to try")
                                                 .fontWeight(.semibold)
                                                 .foregroundColor(Color.white)
-                                                .frame(width: 200, height: 50)
+                                                .frame(width: 250, height: 50)
                                                 .font(.system(size: 20))
                                             
                                                 .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
