@@ -91,7 +91,7 @@ struct DramaCentralView: View {
                                 NavigationLink(
                                     destination: DramaMainView(),
                                     label: {
-                                        Text("How we can help you")
+                                        Text("How we help you fix this")
                                             .fontWeight(.thin)
                                             .frame(width: 325, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -209,7 +209,7 @@ struct DramaCentralView: View {
                                     NavigationLink(
                                         destination: DramaMainView(),
                                         label: {
-                                            Text("Send Push Notification")
+                                            Text("Invite via Push Notification")
                                                 .fontWeight(.semibold)
                                                 .foregroundColor(Color.white)
                                                 .frame(width: 275.0, height: 50)

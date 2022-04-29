@@ -19,13 +19,16 @@ struct ReceivedFixFightNotification: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-                Image("book")
+                Image("HugOut")
                     .resizable()
+                    .frame(width: 1000, height: 900)
                     .scaledToFill()
                     .ignoresSafeArea()
                     .onAppear {
-                 
-                     
+//                        Image("girlwalking")
+//                            .resizable()
+//                            .frame(width: 350, height: 400)
+//
                     }
                 
                 // Stars animation...
@@ -37,7 +40,7 @@ struct ReceivedFixFightNotification: View {
                         HStack {
                             Text("You Received an \nInvite to 'Fix-a-Fight'")
                                 .font(.system(size: 40, weight: .ultraLight))
-                                .foregroundColor(Color.purple)
+                                .foregroundColor(Color.black)
 //                                .kerning(25)
                         }
                         
@@ -99,7 +102,7 @@ struct ReceivedFixFightNotification: View {
                                    
                                     
                                     Spacer()
-                                    .frame(height: 140)
+                                    .frame(height: 240)
                                 
 //                                Text("While you're stressing \nwaiting for a REPLY")
 //                                    .font(.system(size: 25, weight: .bold))
