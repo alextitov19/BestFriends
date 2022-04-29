@@ -46,7 +46,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("#5 \nSet \n'Hug-it-Out' \nTime")
+                        Text("#5 \nFinal Step")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -65,7 +65,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("#4 \nUnderstand \n WHY?")
+                        Text("#4 \nWHY?")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -84,7 +84,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("NOT \nready to talk \n YET!")
+                        Text("NOT \nready to \ntalk")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -146,7 +146,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("#1 \nTake a \nBREATH")
+                        Text("#1 \nBREATHE")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)

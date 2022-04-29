@@ -542,9 +542,9 @@
 		CFD12CC92819E98800AB2539 /* DramaCentral */ = {
 			isa = PBXGroup;
 			children = (
+				CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */,
 				CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */,
 				CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */,
-				CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */,
 				CFD12CD2281A821C00AB2539 /* FiightWithFriend.swift */,
 				CFD12CD0281A754200AB2539 /* NotReadyTalk.swift */,
 				CF3B65E62803E6860003A714 /* BreathIn */,
