@@ -85,25 +85,65 @@ struct DramaCentralView: View {
                            
                           
                             Spacer()
-                                .frame(height: 20)
+                                .frame(height: 30)
                             
-                            VStack {
-                                NavigationLink(
-                                    destination: DramaMainView(),
-                                    label: {
-                                        Text("How we help you fix this")
-                                            .fontWeight(.thin)
-                                            .frame(width: 325, height: 50)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 30))
-                                            .background(ColorManager.purple3)
-                                        //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 3)
-                                    })
-                                
                                 Spacer()
-                                    .frame(height: 160)
+                                    .frame(height: 20)
+                                
+                                VStack {
+                                    Link(destination: URL(string: "https://socialtechlabs.com/fix-a-fight-terms/")!) {
+                               
+                                           Text("View Strategy")
+                                                .fontWeight(.thin)
+                                                .frame(width: 325, height: 50)
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                .font(.system(size: 30))
+                                                .background(ColorManager.purple3)
+                                                .cornerRadius(15)
+                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        }
+                                    Spacer()
+                                        .frame(height: 20)
+                                    
+                                    VStack {
+                                        
+//                            Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
+//
+                                   Text("Accept")
+                                        .fontWeight(.thin)
+                                        .frame(width: 325, height: 50)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 25))
+                                        .background(ColorManager.purple3)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                            }
+                               
+                                        Spacer()
+                                            .frame(height: 20)
+                                        
+                                        
+                                        VStack {
+                                            NavigationLink(
+                                                destination: DramaMainView(),
+                                                label: {
+                                                    Text("Take me to Fix-a-Fight")
+                                                        .fontWeight(.thin)
+                                                        .frame(width: 325, height: 50)
+                                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                        .font(.system(size: 30))
+                                                        .background(ColorManager.purple3)
+                                                    //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                                                        .cornerRadius(15)
+                                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 3)
+                                                })
+                                            
+                                        
+                                        
+                                        
+                                
+                                        Spacer()
+                                            .frame(height: 70)
                                 
                                 Text("Which friend did you fight with?")
                                     .font(.system(size: 25, weight: .bold))
@@ -236,6 +276,7 @@ struct DramaCentralView: View {
         }
     }
     
+    }
 
 
 

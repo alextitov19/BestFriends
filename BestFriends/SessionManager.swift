@@ -36,7 +36,7 @@ enum AppState {
 }
 
 final class SessionManager: ObservableObject {
-    @Published var appState: AppState = .home
+    @Published var appState: AppState = .dramaCentralView
 
     func showSignUp() {
         appState = .signUp
