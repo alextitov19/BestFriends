@@ -30,6 +30,7 @@ enum AppState {
     case textingFirst
     case tryThis
     case timeToTalk
+    case dramaCentralView
     
     
 }
@@ -120,7 +121,9 @@ final class SessionManager: ObservableObject {
     }
     func showTimeToTalk() {
             appState = .timeToTalk
-        
+    }
+    func showDramaCentralView() {
+            appState = .dramaCentralView
         
         
         }

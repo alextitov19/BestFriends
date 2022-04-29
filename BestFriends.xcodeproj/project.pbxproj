@@ -91,6 +91,8 @@
 		CFAB5402281A9A1D00BBF502 /* TimeToTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5401281A9A1D00BBF502 /* TimeToTalk.swift */; };
 		CFAB5404281A9A9000BBF502 /* NuclearOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5403281A9A9000BBF502 /* NuclearOption.swift */; };
 		CFAB5407281AAFA100BBF502 /* TryThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5406281AAFA100BBF502 /* TryThis.swift */; };
+		CFAB540B281BB6EE00BBF502 /* DramaCentralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */; };
+		CFAB540D281BBA4C00BBF502 /* ReceivedFixFightNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */; };
 		CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
 		CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC0281770B600AB2539 /* MyStreaks.swift */; };
@@ -196,6 +198,8 @@
 		CFAB5401281A9A1D00BBF502 /* TimeToTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeToTalk.swift; sourceTree = "<group>"; };
 		CFAB5403281A9A9000BBF502 /* NuclearOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuclearOption.swift; sourceTree = "<group>"; };
 		CFAB5406281AAFA100BBF502 /* TryThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TryThis.swift; sourceTree = "<group>"; };
+		CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaCentralView.swift; sourceTree = "<group>"; };
+		CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedFixFightNotification.swift; sourceTree = "<group>"; };
 		CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobPracticePage.swift; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
 		CFD12CC0281770B600AB2539 /* MyStreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStreaks.swift; sourceTree = "<group>"; };
@@ -538,6 +542,8 @@
 		CFD12CC92819E98800AB2539 /* DramaCentral */ = {
 			isa = PBXGroup;
 			children = (
+				CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */,
+				CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */,
 				CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */,
 				CFD12CD2281A821C00AB2539 /* FiightWithFriend.swift */,
 				CFD12CD0281A754200AB2539 /* NotReadyTalk.swift */,
@@ -737,6 +743,7 @@
 				7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
 				CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */,
+				CFAB540B281BB6EE00BBF502 /* DramaCentralView.swift in Sources */,
 				CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */,
 				CFE1946928129D9600ED5718 /* FriendQualities.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
@@ -786,6 +793,7 @@
 				CFAB5402281A9A1D00BBF502 /* TimeToTalk.swift in Sources */,
 				CFD12CCF281A67FC00AB2539 /* DramaMainView.swift in Sources */,
 				CFE194642812973600ED5718 /* MasterFriendVault.swift in Sources */,
+				CFAB540D281BBA4C00BBF502 /* ReceivedFixFightNotification.swift in Sources */,
 				CFAB5400281A99B600BBF502 /* TextingFirst.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
