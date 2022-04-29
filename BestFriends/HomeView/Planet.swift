@@ -111,7 +111,7 @@ struct PlanetActionsView: View {
                     .frame(height: 40)
                 
                 Button(action: {
-                    sessionManager.showNuclearOption()
+                    sessionManager.showDramaMainView()
                 }) {
                     ZStack {
                         Circle()
@@ -119,7 +119,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Drama or \nFight \nwith my  \n Friend")
+                        Text("Drama / \nFix-a-Fight")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)

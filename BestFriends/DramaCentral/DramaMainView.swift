@@ -104,7 +104,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("FIX \nFriend \nFights")
+                        Text("Fix-a-Fight")
 //                            .background()
                             .foregroundColor(.white)
                             .font(.system(size: 25, weight: .bold))
