@@ -16,20 +16,10 @@ struct NuclearOption: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//
+            
                 Image("girlwalking")
                     .resizable()
-                    .frame(width: 350, height: 400)
-                
-                
-                
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//
+                    .frame(width: 300, height: 300)
                 
                 AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
@@ -38,25 +28,26 @@ struct NuclearOption: View {
                 
                 VStack {
                     
-             
-                    Text("N U C L E A R")
-                        .font(.system(size: 65))
-                        .foregroundColor(.gray)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    Text("O P T I O N")
+                    Text("before going")
                         .font(.system(size: 50))
                         .foregroundColor(.gray)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
+                    Text("N U C L E A R")
+                        .font(.system(size: 65))
+                        .foregroundColor(.gray)
+                        .fontWeight(.ultraLight)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+                   
+             
                     Spacer()
-                        .frame(height: 350)
+                        .frame(height: 300)
                     
-                    Text("before un-friending")
-                        .font(.system(size: 20))
+                    Text("Un-friending")
+                        .font(.system(size: 25))
                         .italic()
                         .foregroundColor(.gray)
                         .fontWeight(.medium)
@@ -65,39 +56,41 @@ struct NuclearOption: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("or posting private messages \n on social media  - remember ")
-                        .font(.system(size: 20, weight: .bold))
+                    Text("Posting private messages \n on social media")
+                        .font(.system(size: 25, weight: .bold))
+                        .italic()
+                        .foregroundColor(.gray)
+                        .fontWeight(.medium)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+                    
+//                    Spacer()
+//                        .frame(height: 5)
+                    
+                    Text("REMEMBER")
+                        .font(.system(size: 30, weight: .bold))
                         .italic()
                         .foregroundColor(.gray)
                         .fontWeight(.medium)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 0)
                     
-                  
+                    VStack {
                     
                     Spacer()
                         .frame(height: 1)
-                    
-//                    Text("30 minutes ago you were \n best friends, consider taking \nthe high road")
-//                        .font(.system(size: 25, weight: .bold))
-//                        .fontWeight(.bold)
-//                        .foregroundColor(.white)
-//
-//                        .multilineTextAlignment(.center)
-//                        .padding(.horizontal, 0)
-//
-//
+
                     Spacer()
                         .frame(height: 20)
                     
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("30 minutes ago you were best friends, consider taking the high road.")
+                            Text("30 minutes ago you were best friends")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 350, height: 50, alignment: .leading)
+                                .frame(width: 330, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color.gray)
@@ -112,7 +105,7 @@ struct NuclearOption: View {
             }
         }
     
-
+}
 struct NuclearOption_Previews : PreviewProvider {
     static var previews: some View {
         NuclearOption()
