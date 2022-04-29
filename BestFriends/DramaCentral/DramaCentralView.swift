@@ -69,7 +69,7 @@ struct DramaCentralView: View {
 //
                     VStack{
                         HStack {
-                            Text("Calming")
+                            Text("wow")
                                 .font(.system(size: 60, weight: .ultraLight))
                                 .foregroundColor(Color.purple)
                                 .kerning(25)
@@ -77,7 +77,7 @@ struct DramaCentralView: View {
                         
                         VStack {
                             
-                            Text("breaths")
+                            Text("huge fight")
                                 .font(.system(size: 60, weight: .bold))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color.purple)
@@ -85,13 +85,13 @@ struct DramaCentralView: View {
                            
                           
                             Spacer()
-                                .frame(height: 1)
+                                .frame(height: 20)
                             
                             VStack {
                                 NavigationLink(
-                                    destination: BreathInView(),
+                                    destination: DramaMainView(),
                                     label: {
-                                        Text("Invite to 'Fix-a-Fight'")
+                                        Text("How we can help you")
                                             .fontWeight(.thin)
                                             .frame(width: 325, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -99,13 +99,13 @@ struct DramaCentralView: View {
                                             .background(ColorManager.purple3)
                                         //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                             .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 3)
                                     })
                                 
                                 Spacer()
                                     .frame(height: 160)
                                 
-                                Text("Invite to 'FIX-a-FIGHT'")
+                                Text("Invite to 'Fix-a-Fight'")
                                     .font(.system(size: 25, weight: .bold))
                                     .italic()
                                     .foregroundColor(.gray)

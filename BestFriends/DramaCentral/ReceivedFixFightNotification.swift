@@ -101,15 +101,15 @@ struct ReceivedFixFightNotification: View {
                                     Spacer()
                                     .frame(height: 140)
                                 
-                                Text("While you're stressing \nwaiting for a REPLY")
-                                    .font(.system(size: 25, weight: .bold))
-                                    .italic()
-                                    .foregroundColor(.white)
-                                    .fontWeight(.semibold)
-                                
-//                                    .multilineTextAlignment(.leading)
-                                    .padding(.horizontal, 0)
-                                
+//                                Text("While you're stressing \nwaiting for a REPLY")
+//                                    .font(.system(size: 25, weight: .bold))
+//                                    .italic()
+//                                    .foregroundColor(.white)
+//                                    .fontWeight(.semibold)
+//
+////                                    .multilineTextAlignment(.leading)
+//                                    .padding(.horizontal, 0)
+//
                                 Spacer()
                                     .frame(height: 20)
                             }
@@ -121,10 +121,10 @@ struct ReceivedFixFightNotification: View {
                                     NavigationLink(
                                         destination: TryThis(),
                                         label: {
-                                            Text("Try These")
+                                            Text("Take me to Chat")
                                                 .fontWeight(.semibold)
                                                 .foregroundColor(Color.white)
-                                                .frame(width: 150.0, height: 50)
+                                                .frame(width: 200, height: 50)
                                                 .font(.system(size: 20))
                                             
                                                 .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
