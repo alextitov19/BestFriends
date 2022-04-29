@@ -12,7 +12,7 @@ import SwiftUI
 struct FightWithFriend: View {
     
     var body: some View {
-        NavigationView {
+       NavigationView {
             
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
@@ -22,7 +22,7 @@ struct FightWithFriend: View {
 //                    .ignoresSafeArea()
 //                    .scaledToFill()
 //
-                Image("ballons")
+                Image("purpleBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
@@ -43,53 +43,68 @@ struct FightWithFriend: View {
 //                        .multilineTextAlignment(.center)
 //                        .padding(.horizontal, 0)
 //
-                    Spacer()
-                        .frame(height: 250)
-                    
-                    Text("We're hoping to change the ")
+//                    Spacer()
+//                        .frame(height: 50)
+//
+                    Text("We'll help you both")
                         .font(.system(size: 25))
                         .italic()
-                        .foregroundColor(.black)
-                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
+                   
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 20)
                     
-                    Text("way you're feeling right now")
+                    
+                    Text("through this drama")
+                        .font(.system(size: 25))
+                        .italic()
+                        .foregroundColor(.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+            
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    Text("minimizing the wreckage.")
                         .font(.system(size: 25, weight: .bold))
                         .italic()
-                        .foregroundColor(.black)
-                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 10)
                     
-                  
+                    VStack {
                     
+                  
                     Spacer()
                         .frame(height: 40)
                     
-                    Text("and once again, \nfind that smile of yours")
-                        .font(.system(size: 20, weight: .bold))
-                        .fontWeight(.bold)
-                        .foregroundColor(.black)
-//                        .italic()
+                    Text("Finding your smile!")
+                        .font(.system(size: 35, weight: .bold))
+                        .fontWeight(.light)
+                        .foregroundColor(.white)
+                        .italic()
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 50)
+                
                     
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("you READY?")
+                            Text("Ready?")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 110, height: 30, alignment: .leading)
-                                .font(.system(size: 20))
+                                .frame(width: 100, height: 30, alignment: .leading)
+                                .font(.system(size: 30))
                                 .padding(10)
                                 .background(Color.gray)
                                 .cornerRadius(15)
@@ -101,9 +116,9 @@ struct FightWithFriend: View {
                     
                }
             }
-        }
-    
-
+        
+}
+}
 struct FightWithFriend_Previews : PreviewProvider {
     static var previews: some View {
         FightWithFriend()

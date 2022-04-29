@@ -70,10 +70,10 @@ struct BreathInView: View {
                 
                 HStack {
 
-                    Spacer()
-                        .frame(height: 5)
-                    
-                    
+//                    Spacer()
+//                        .frame(height: 5)
+//                    
+//                    
                     Text("breath 'IN' slowly, \n'HOLD'")
                         .font(.system(size: 35))
                         .fontWeight(.thin)

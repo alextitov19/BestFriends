@@ -5,7 +5,7 @@
 //  Created by Social Tech on 4/16/22.
 //
 
-//import Foundation
+import Foundation
 import SwiftUI
 import AVKit
 
@@ -14,7 +14,7 @@ struct BreathInviteView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        NavigationView {
+       NavigationView {
             
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
@@ -33,40 +33,7 @@ struct BreathInviteView: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                
-//                VStack {
-//                    HStack {
-//                        Button(action: {
-//                            self.presentationMode.wrappedValue.dismiss()
-//                        }) {
-//
-//
-//
-//                            NavigationLink(
-//                                destination: MasterFriendVault(),
-//                                label: {
-//                                    Text("<")
-//                                        .foregroundColor(.white)
-//                                        .frame(width: 50, height: 30)
-//                                        .font(.system(size: 30))
-//                                        .multilineTextAlignment(.leading)
-//                                    Spacer()
-//                                        .frame(width: 250)
-//
-//
-////                                    NavigationLink(
-////                                        destination: HomeView(),
-////                                        label: {
-//                                    Image("home-alt2")
-//                                        .resizable()
-//                                        .frame(width: 35, height: 35)
-//                                        .scaledToFit()
-//                                        .foregroundColor(.white)
-//                                })
-//                            }
-//                        }
-//
-                    VStack{
+              VStack{
                         HStack {
                             Text("Calming")
                                 .font(.system(size: 60, weight: .ultraLight))
@@ -90,9 +57,9 @@ struct BreathInviteView: View {
                                 NavigationLink(
                                     destination: BreathInView(),
                                     label: {
-                                        Text("Take a beather alone")
+                                        Text("Take a beather")
                                             .fontWeight(.thin)
-                                            .frame(width: 325, height: 50)
+                                            .frame(width: 245, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 30))
                                             .background(ColorManager.purple3)
@@ -104,7 +71,7 @@ struct BreathInviteView: View {
                                 Spacer()
                                     .frame(height: 160)
                                 
-                                Text("Take a breather with your friend")
+                                Text("Take a breather with a friend")
                                     .font(.system(size: 25, weight: .bold))
                                     .italic()
                                     .foregroundColor(.white)
@@ -233,10 +200,7 @@ struct BreathInviteView: View {
             }
             
         }
-    }
-    
-
-
+}
 
 struct BreathInviteView_Previews : PreviewProvider {
     static var previews: some View {

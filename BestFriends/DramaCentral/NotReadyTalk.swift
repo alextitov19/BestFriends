@@ -12,7 +12,7 @@ import SwiftUI
 struct NotReadyTalk: View {
     
     var body: some View {
-        NavigationView {
+       NavigationView {
             
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
@@ -36,8 +36,8 @@ struct NotReadyTalk: View {
                 VStack {
                     
 
-                    Text("Take time getting into a good Headspace. Rushing may make matters worse")
-                        .font(.system(size: 47))
+                    Text("Take your time. \nTalking before you're ready may make matters worse.")
+                        .font(.system(size: 40))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
@@ -101,8 +101,8 @@ struct NotReadyTalk: View {
                     
                }
             }
-        }
-    
+        
+}
 
 struct NotReadyTalk_Previews : PreviewProvider {
     static var previews: some View {
