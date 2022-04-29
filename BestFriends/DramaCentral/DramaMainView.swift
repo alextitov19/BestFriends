@@ -57,7 +57,7 @@ struct DramaMainView: View {
                     .frame(height: 40)
                 
                 Button(action: {
-                    sessionManager.showTextingFirst()
+                    sessionManager.showWhy()
                 }) {
                     
                     
@@ -70,7 +70,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("#4 \nWHY")
+                        Text("#4 \nWHY?")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)

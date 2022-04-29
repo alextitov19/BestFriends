@@ -83,7 +83,7 @@ struct FightWithFriend: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    Text("Finding your smile!")
+                    Text("To find your smile!")
                         .font(.system(size: 35, weight: .bold))
                         .fontWeight(.light)
                         .foregroundColor(.white)
