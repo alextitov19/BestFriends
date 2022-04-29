@@ -43,7 +43,7 @@ struct TryThis: View {
                         .padding(.horizontal, 0)
                     
                     
-                    Text("for a return text")
+                    Text("on a return text")
                         .font(.system(size: 50))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
@@ -52,25 +52,38 @@ struct TryThis: View {
                     Spacer()
                         .frame(height: 80)
                     
-                    Text("*listen to your favorite songs \n*take a walk \n*head to Chat and text a friend \n*watch a funny video on TikTok \n*eat some chocolate \n*watch a movie on NetFlix \n*pace yourself -this may take a while")
+                    Text("*listen to your favorite songs \n*take a walk \n*text a friend \n*watch a funny video \n*eat some chocolate \n*watch a movie")
                         .font(.system(size: 20))
                         .italic()
+                        .fontWeight(.light)
                         .foregroundColor(.white)
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 10)
                     Spacer()
+                        .frame(height: 15)
+                    
+                    VStack {
+//                    Text("pace yourself -this may take a while")
+//                        .font(.system(size: 23))
+//                        .italic()
+//                        .fontWeight(.medium)
+//                        .foregroundColor(.white)
+//                        .fontWeight(.heavy)
+//                        .multilineTextAlignment(.leading)
+//                        .padding(.horizontal, 10)
+//
+                    Spacer()
                         .frame(height: 5)
                     
-                  
                     
                   
                     
                     Spacer()
                         .frame(height: 40)
                     
-                    Text("be cool - we got this")
-                        .font(.system(size: 35, weight: .bold))
+                    Text("do something with a friend")
+                        .font(.system(size: 25, weight: .bold))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
 //                        .italic()
@@ -84,11 +97,11 @@ struct TryThis: View {
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("Ok, take me to Chat")
+                            Text("Ok, take me to Daily Horizons")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 190, height: 30, alignment: .leading)
+                                .frame(width: 275, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color.gray)
@@ -102,7 +115,7 @@ struct TryThis: View {
                }
             }
         }
-    
+}
 
 struct TryThis_Previews : PreviewProvider {
     static var previews: some View {
