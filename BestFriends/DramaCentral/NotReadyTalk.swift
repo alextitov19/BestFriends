@@ -36,7 +36,7 @@ struct NotReadyTalk: View {
                 VStack {
                     
 
-                    Text("We understand. Sometimes we wait until hell freezes over before we talk to them.")
+                    Text("Get in good Headspace. If too early may make matters worse")
                         .font(.system(size: 47))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)

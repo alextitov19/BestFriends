@@ -51,29 +51,55 @@ struct TextingFirst: View {
                            
                           
                             Spacer()
-                                .frame(height: 30)
+                                .frame(height: 5)
                             
                             VStack {
                                 Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
-                                
-                                
-                                
-//                                NavigationLink(
-//                                    destination: BreathInView(),
-//                                    label: {
+                           
                                        Text("Not Sure What to Say")
                                             .fontWeight(.thin)
                                             .frame(width: 325, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 30))
                                             .background(ColorManager.purple3)
-                                        //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                             .cornerRadius(15)
                                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     }
                                 
                                 Spacer()
-                                    .frame(height: 300)
+                                    .frame(height: 15)
+                                
+                                VStack {
+                                    Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
+                               
+                                           Text("Appologize")
+                                                .fontWeight(.thin)
+                                                .frame(width: 325, height: 50)
+                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                .font(.system(size: 30))
+                                                .background(ColorManager.purple3)
+                                                .cornerRadius(15)
+                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        }
+                                    Spacer()
+                                        .frame(height: 15)
+                                    
+                                    VStack {
+                                        Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
+                                   
+                                               Text("Understanding Why")
+                                                    .fontWeight(.thin)
+                                                    .frame(width: 325, height: 50)
+                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                    .font(.system(size: 30))
+                                                    .background(ColorManager.purple3)
+                                                    .cornerRadius(15)
+                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                            }
+                                   
+                                    
+                                    Spacer()
+                                    .frame(height: 140)
                                 
                                 Text("While you're stressing \nwaiting for a REPLY")
                                     .font(.system(size: 25, weight: .bold))
@@ -120,7 +146,9 @@ struct TextingFirst: View {
                 }
                 
             }
-
+}
+}
+    
 struct TextingFirst_Previews : PreviewProvider {
     static var previews: some View {
         TextingFirst()

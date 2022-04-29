@@ -65,7 +65,7 @@ struct NuclearOption: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("or posting private messages \n on social media - remember ")
+                    Text("or posting private messages \n on social media  - remember ")
                         .font(.system(size: 20, weight: .bold))
                         .italic()
                         .foregroundColor(.gray)
