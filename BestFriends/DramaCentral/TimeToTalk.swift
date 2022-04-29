@@ -101,10 +101,10 @@ struct TimeToTalk: View {
                                     Spacer()
                                     .frame(height: 140)
                                 
-                                Text("While you're stressing \nwaiting for a REPLY")
+                                Text("Ready? \nLet's set a time to meet")
                                     .font(.system(size: 25, weight: .bold))
                                     .italic()
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.gray)
                                     .fontWeight(.semibold)
                                 
 //                                    .multilineTextAlignment(.leading)
