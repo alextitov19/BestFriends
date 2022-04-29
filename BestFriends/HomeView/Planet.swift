@@ -111,7 +111,7 @@ struct PlanetActionsView: View {
                     .frame(height: 40)
                 
                 Button(action: {
-                    sessionManager.showDramaMainView()
+                    sessionManager.showDramaCentralView()
                 }) {
                     ZStack {
                         Circle()

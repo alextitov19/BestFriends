@@ -69,16 +69,16 @@ struct DramaCentralView: View {
 //
                     VStack{
                         HStack {
-                            Text("wow")
-                                .font(.system(size: 60, weight: .ultraLight))
-                                .foregroundColor(Color.purple)
-                                .kerning(25)
+//                            Text("wow")
+//                                .font(.system(size: 60, weight: .ultraLight))
+//                                .foregroundColor(Color.purple)
+//                                .kerning(25)
                         }
                         
                         VStack {
                             
-                            Text("huge fight")
-                                .font(.system(size: 60, weight: .bold))
+                            Text("Huge Fight?")
+                                .font(.system(size: 55, weight: .bold))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color.purple)
                                 .kerning(10)
@@ -105,7 +105,7 @@ struct DramaCentralView: View {
                                 Spacer()
                                     .frame(height: 160)
                                 
-                                Text("Invite to 'Fix-a-Fight'")
+                                Text("Which friend did you fight with?")
                                     .font(.system(size: 25, weight: .bold))
                                     .italic()
                                     .foregroundColor(.gray)

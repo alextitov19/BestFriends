@@ -16,13 +16,14 @@ struct SendNiceChat: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-                Image("purpleBackground")
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//
+                Image("orangeRocket")
                     .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
-              
-                Image("ballons")
-                    .resizable()
+                    .frame(width: 900, height: 1000)
                     .ignoresSafeArea()
                     .scaledToFill()
                 
