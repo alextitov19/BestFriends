@@ -83,7 +83,9 @@ struct BestFriendsApp: App {
             case .tryThis:
                 TryThis()
                     .environmentObject(sessionManager)
-                
+            case .timeToTalk:
+                TimeToTalk()
+                    .environmentObject(sessionManager)
                 
                 
                 
