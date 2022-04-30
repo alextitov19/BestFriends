@@ -51,23 +51,23 @@ struct TextingFirst: View {
                             })
                     
                 
-                
+                        
                 
                 
                VStack{
                         
                         
-                            Text("Try")
-                                .font(.system(size: 60, weight: .ultraLight))
-                                .foregroundColor(Color.purple)
+//                            Text("Try")
+//                                .font(.system(size: 60, weight: .ultraLight))
+//                                .foregroundColor(Color.purple)
 
                    Text("T E X T I N G")
                        .font(.system(size: 55, weight: .ultraLight))
                        .foregroundColor(Color.purple)
                    
-                   Text("Frist")
-                       .font(.system(size: 40, weight: .ultraLight))
-                       .foregroundColor(Color.purple)
+//                   Text("Frist")
+//                       .font(.system(size: 40, weight: .ultraLight))
+//                       .foregroundColor(Color.purple)
                    
                }
                     }
@@ -76,7 +76,7 @@ struct TextingFirst: View {
                       
                           
                             Spacer()
-                                .frame(height: 5)
+                                .frame(height: 85)
                             
                             VStack {
                                 Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
