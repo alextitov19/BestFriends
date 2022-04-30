@@ -15,7 +15,7 @@ struct DramaCentralView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
@@ -34,38 +34,7 @@ struct DramaCentralView: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                
-//                VStack {
-//                    HStack {
-//                        Button(action: {
-//                            self.presentationMode.wrappedValue.dismiss()
-//                        }) {
-//
-//
-//
-//                            NavigationLink(
-//                                destination: MasterFriendVault(),
-//                                label: {
-//                                    Text("<")
-//                                        .foregroundColor(.white)
-//                                        .frame(width: 50, height: 30)
-//                                        .font(.system(size: 30))
-//                                        .multilineTextAlignment(.leading)
-//                                    Spacer()
-//                                        .frame(width: 250)
-//
-//
-////                                    NavigationLink(
-////                                        destination: HomeView(),
-////                                        label: {
-//                                    Image("home-alt2")
-//                                        .resizable()
-//                                        .frame(width: 35, height: 35)
-//                                        .scaledToFit()
-//                                        .foregroundColor(.white)
-//                                })
-//                            }
-//                        }
+        
 //
                     VStack{
                         HStack {
@@ -77,7 +46,7 @@ struct DramaCentralView: View {
                         
                         VStack {
                             
-                            Text("Huge Fight?")
+                            Text("Before we START")
                                 .font(.system(size: 55, weight: .bold))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color.purple)
@@ -106,40 +75,28 @@ struct DramaCentralView: View {
                                         .frame(height: 20)
                                     
                                     VStack {
+                                  
+                                        VStack {
+                                            NavigationLink(
+                                                destination: DramaMainView(),
+                                                label: {
+                                                    Text("NEXT")
+                                                        .fontWeight(.thin)
+                                                        .frame(width: 100, height: 50)
+                                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                                        .font(.system(size: 30))
+                                                        .background(ColorManager.purple3)
+                                                        .cornerRadius(15)
+                                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                })
+
                                         
-//                            Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
-//
-                                   Text("Accept")
-                                        .fontWeight(.thin)
-                                        .frame(width: 325, height: 50)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(ColorManager.purple3)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                            }
-                               
+                                        
+                                        
                                         Spacer()
                                             .frame(height: 20)
                                         
-                                        
-//                                        VStack {
-//                                            NavigationLink(
-//                                                destination: DramaMainView(),
-//                                                label: {
-//                                                    Text("Take me to Fix-a-Fight")
-//                                                        .fontWeight(.thin)
-//                                                        .frame(width: 325, height: 50)
-//                                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                                        .font(.system(size: 30))
-//                                                        .background(ColorManager.purple3)
-//                                                    //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//                                                        .cornerRadius(15)
-//                                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 3)
-//                                                })
-//
-                                        
-                                        
+                                     
                                         
                                 
                                         Spacer()
@@ -275,7 +232,7 @@ struct DramaCentralView: View {
             
         }
     }
-    
+    }
     
 
 
@@ -285,7 +242,5 @@ struct DramaCentralView_Previews : PreviewProvider {
         DramaCentralView()
     }
 }
-
-
 
 

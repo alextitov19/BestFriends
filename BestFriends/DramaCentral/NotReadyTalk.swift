@@ -21,88 +21,79 @@ struct NotReadyTalk: View {
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
-              
-//                Image("ballons")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//
-                
-                AdPlayerView(name: "backgroundAnimation")
+               AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .offset(y: -250)
                 
                 VStack {
                     
-
-                    Text("Take your time. \nTalking before you're ready may make matters worse.")
-                        .font(.system(size: 40))
+                    Text("I'm too")
+                        .font(.system(size: 60))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
-
-                  Spacer()
-                        .frame(height: 150)
-                    
-                    Text("in the meantime . . . ")
-                        .font(.system(size: 30))
-                        .italic()
+                  
+                    Text("U P S E T")
+                        .font(.system(size: 90))
                         .foregroundColor(.white)
-                        .fontWeight(.light)
+                        .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    Spacer()
-                        .frame(height: 5)
-                    
-                    Text("")
-                        .font(.system(size: 30, weight: .bold))
-                        .italic()
-                        .foregroundColor(.white)
-                        .fontWeight(.heavy)
-                        .multilineTextAlignment(.leading)
-                        .padding(.horizontal, 0)
-                    
+                        .padding(.horizontal, 20)
                   
                     
-                    Spacer()
-                        .frame(height: 40)
+                      Text("I need some")
+                          .font(.system(size: 60))
+                          .foregroundColor(.white)
+                          .fontWeight(.ultraLight)
+                          .multilineTextAlignment(.center)
+                          .padding(.horizontal, 20)
                     
-                    Text("Please, try hard to not let the actions \n of others darken your soul")
-                        .font(.system(size: 20, weight: .bold))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-//                        .italic()
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 10)
+                    
+                      Text("T I M E")
+                          .font(.system(size: 70))
+                          .foregroundColor(.white)
+                          .fontWeight(.ultraLight)
+                          .multilineTextAlignment(.center)
+                          .padding(.horizontal, 20)
+                    
                     
                     
                     Spacer()
                         .frame(height: 30)
                     
+                    Text("Please try not to let the actions \n of your friends darken your soul \nin between the screams")
+                        .font(.system(size: 20, weight: .light)) 
+                        .italic()
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 10)
+                    
+                    
+                    Spacer()
+                        .frame(height: 90)
+                    
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("We can help you fix this mess")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 260, height: 30, alignment: .leading)
-                                .font(.system(size: 20))
-                                .padding(10)
-                                .background(Color.gray)
+                            Text("Let's take a breath")
+                                .fontWeight(.thin)
+                                .frame(width: 300, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-                               
+
                  }
                       }
                     
                }
             }
-        
 }
+
 
 struct NotReadyTalk_Previews : PreviewProvider {
     static var previews: some View {

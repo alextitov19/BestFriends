@@ -17,11 +17,8 @@ struct FightWithFriend: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//
+
+
                 Image("purpleBackground")
                     .resizable()
                     .ignoresSafeArea()
@@ -35,18 +32,8 @@ struct FightWithFriend: View {
 //
                 VStack {
                     
-             
-//                    Text("go ahead")
-//                        .font(.system(size: 100))
-//                        .foregroundColor(.white)
-//                        .fontWeight(.ultraLight)
-//                        .multilineTextAlignment(.center)
-//                        .padding(.horizontal, 0)
-//
-//                    Spacer()
-//                        .frame(height: 50)
-//
-                    Text("We'll help you both")
+   
+                    Text("We'll pull both of you")
                         .font(.system(size: 25))
                         .italic()
                         .foregroundColor(.white)
@@ -58,7 +45,7 @@ struct FightWithFriend: View {
                         .frame(height: 20)
                     
                     
-                    Text("through this drama")
+                    Text("through this drama -")
                         .font(.system(size: 25))
                         .italic()
                         .foregroundColor(.white)
@@ -81,36 +68,32 @@ struct FightWithFriend: View {
                     
                   
                     Spacer()
-                        .frame(height: 40)
-                    
-                    Text("To find your smile!")
-                        .font(.system(size: 35, weight: .bold))
-                        .fontWeight(.light)
-                        .foregroundColor(.white)
-                        .italic()
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    
-                    
-                    Spacer()
-                        .frame(height: 50)
-                
+                        .frame(height: 100)
+             
                     
                     NavigationLink(
-                        destination: DramaMainView(),
+                        destination: DramaCentralView(),
                         label: {
-                            Text("Ready?")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 100, height: 30, alignment: .leading)
+                            Text("NEXT")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 50)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
-                                .padding(10)
-                                .background(Color.gray)
+                                .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-                               
+                            
+                        Text("Helping you smile again!")
+                    .font(.system(size: 55, weight: .bold))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.purple)
+//                    .kerning(10)
+               
+                            
+                       
+                           
+                        
                  }
                       }
                     
@@ -119,6 +102,8 @@ struct FightWithFriend: View {
         
 }
 }
+
+
 struct FightWithFriend_Previews : PreviewProvider {
     static var previews: some View {
         FightWithFriend()
