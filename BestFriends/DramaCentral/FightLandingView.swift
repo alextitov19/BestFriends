@@ -237,7 +237,7 @@ struct FightLandingView: View {
         }
     }
     }
-    
+}
 
 
 
