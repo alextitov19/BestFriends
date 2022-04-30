@@ -87,7 +87,7 @@ struct Why: View {
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
                
-                           Text("Being REAL with ourselves")
+                           Text("Being REAL with Ourselves")
                                 .fontWeight(.thin)
                                 .frame(width: 350, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

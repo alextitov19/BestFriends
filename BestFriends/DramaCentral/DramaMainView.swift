@@ -58,12 +58,7 @@ struct DramaMainView: View {
                 
                 Button(action: {
                     sessionManager.showWhy()
-                }) {
-                    
-                    
-//                    Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!)
-//
-                    
+                }) {   
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)

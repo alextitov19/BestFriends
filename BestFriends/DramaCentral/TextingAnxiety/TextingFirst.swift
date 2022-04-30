@@ -33,22 +33,47 @@ struct TextingFirst: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-         VStack{
-                        HStack {
-                            Text("T E X T I N G")
+        
+                
+                VStack {
+                    HStack {
+                    
+                        NavigationLink(
+                            destination: DramaMainView(),
+                            label: {
+                                Text("< back")
+                                    .fontWeight(.medium)
+                                    .frame(width: 60, height: 30)
+                                    .foregroundColor(Color.blue)
+                                    .font(.system(size: 17))
+                                
+
+                            })
+                    
+                
+                
+                
+                
+               VStack{
+                        
+                        
+                            Text("Try")
                                 .font(.system(size: 60, weight: .ultraLight))
                                 .foregroundColor(Color.purple)
-//                                .kerning(25)
-                        }
-                        
+
+                   Text("T E X T I N G")
+                       .font(.system(size: 55, weight: .ultraLight))
+                       .foregroundColor(Color.purple)
+                   
+                   Text("Frist")
+                       .font(.system(size: 40, weight: .ultraLight))
+                       .foregroundColor(Color.purple)
+                   
+               }
+                    }
                         VStack {
                             
-                            Text("first")
-                                .font(.system(size: 50, weight: .bold))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(Color.purple)
-                                .kerning(10)
-                           
+                      
                           
                             Spacer()
                                 .frame(height: 5)
@@ -72,7 +97,7 @@ struct TextingFirst: View {
                                 VStack {
                                     Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
                                
-                                           Text("Appologizing is HARD")
+                                           Text("Appologize?")
                                                 .fontWeight(.thin)
                                                 .frame(width: 325, height: 50)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -84,22 +109,29 @@ struct TextingFirst: View {
                                     Spacer()
                                         .frame(height: 15)
                                     
-                                    VStack {
-                                        Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
-                                   
-                                               Text("Understanding Why")
-                                                    .fontWeight(.thin)
-                                                    .frame(width: 325, height: 50)
-                                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                    .font(.system(size: 30))
-                                                    .background(ColorManager.purple3)
-                                                    .cornerRadius(15)
-                                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                            }
-                                   
-                                    
+                                        
+                                        VStack {
+                                            
+                                            NavigationLink(
+                                                destination: DramaMainView(),
+                                                label: {
+                                                    Text("Send a Text")
+                                                        .fontWeight(.thin)
+                                                        .foregroundColor(Color.white)
+                                                        .frame(width: 175, height: 50)
+                                                        .font(.system(size: 30))
+                                                    
+                                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                                                    
+                                                        .cornerRadius(25)
+                                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                                   
+                                                }
+                                            )}
+                                            
+                                            
                                     Spacer()
-                                    .frame(height: 140)
+                                    .frame(height: 100)
                                 
                                 Text("While you're stressing \nwaiting for a REPLY")
                                     .font(.system(size: 25, weight: .bold))
@@ -121,23 +153,20 @@ struct TextingFirst: View {
                                     NavigationLink(
                                         destination: TryThis(),
                                         label: {
-                                            Text("Try These")
-                                                .fontWeight(.semibold)
+                                            Text("Try This")
+                                                .fontWeight(.thin)
                                                 .foregroundColor(Color.white)
                                                 .frame(width: 150.0, height: 50)
-                                                .font(.system(size: 20))
+                                                .font(.system(size: 30))
                                             
                                                 .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                             
                                                 .cornerRadius(25)
                                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                            
                                            
                                         }
-                                    
-                                        
-                                        
                                     )}
+                                
                             }
                             
                         }
@@ -147,10 +176,15 @@ struct TextingFirst: View {
                 
             }
 }
-}
+
+    
+
     
 struct TextingFirst_Previews : PreviewProvider {
     static var previews: some View {
         TextingFirst()
     }
 }
+
+
+

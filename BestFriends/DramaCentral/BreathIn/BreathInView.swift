@@ -44,12 +44,12 @@ struct BreathInView: View {
             
             VStack {
                 ZStack {
-               Text("R e l a x")
-                    .font(.system(size: 100, weight: .ultraLight))
-               
-                   .offset(x: 10, y: 135)
-                   .foregroundColor(.white)
-               
+//               Text("R e l a x")
+//                    .font(.system(size: 100, weight: .ultraLight))
+//               
+//                   .offset(x: 10, y: 135)
+//                   .foregroundColor(.white)
+//               
                 Image(systemName: "heart.fill")
     
                          .resizable()
@@ -65,16 +65,22 @@ struct BreathInView: View {
                          .fontWeight(.medium)
                          .multilineTextAlignment(.center)
          
+                    Text("R e l a x")
+                         .font(.system(size: 100, weight: .ultraLight))
+                    
+                        .offset(x: 10, y: 135)
+                        .foregroundColor(.white)
+                    
+                
+                
+                
+                
+                
                 }
                 
                 
                 HStack {
-
-//                    Spacer()
-//                        .frame(height: 5)
-//                    
-//                    
-                    Text("breath 'IN' slowly, \n'HOLD'")
+             Text("breath 'IN' slowly, \n'HOLD'")
                         .font(.system(size: 35))
                         .fontWeight(.thin)
                         .offset(x: 120, y: 50)
@@ -85,7 +91,7 @@ struct BreathInView: View {
                     
                     
                     Spacer()
-                        .frame(height: 450)
+                        .frame(height: 375)
                 }
                 
                 

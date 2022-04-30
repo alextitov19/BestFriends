@@ -19,7 +19,7 @@ struct NuclearOption: View {
             
                 Image("girlwalking")
                     .resizable()
-                    .frame(width: 300, height: 300)
+                    .frame(width: 280, height: 270)
                 
                 AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
@@ -33,18 +33,24 @@ struct NuclearOption: View {
                         .foregroundColor(.gray)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
+                       
                     
                     Text("N U C L E A R")
                         .font(.system(size: 65))
                         .foregroundColor(.gray)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
+                      
+                    
+                    Text("by . . .")
+                        .font(.system(size: 50))
+                        .foregroundColor(.gray)
+                        .fontWeight(.ultraLight)
+                        .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
-                   
              
                     Spacer()
-                        .frame(height: 300)
+                        .frame(height: 250)
                     
                     Text("Un-friending")
                         .font(.system(size: 25))

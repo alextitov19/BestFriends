@@ -76,7 +76,7 @@ struct FightWithFriend: View {
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 50)
+                                .frame(width: 100, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)

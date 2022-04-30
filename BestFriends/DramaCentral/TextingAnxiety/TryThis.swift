@@ -82,7 +82,7 @@ struct TryThis: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    Text("do something with a friend")
+                    Text("or, do something with a friend \nin Daily Horizons")
                         .font(.system(size: 25, weight: .bold))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -94,21 +94,21 @@ struct TryThis: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    NavigationLink(
-                        destination: DramaMainView(),
-                        label: {
-                            Text("Ok, take me to Daily Horizons")
-                                .fontWeight(.light)
-                                .foregroundColor(Color.black)
-                                .multilineTextAlignment(.center)
-                                .frame(width: 275, height: 30, alignment: .leading)
-                                .font(.system(size: 20))
-                                .padding(10)
-                                .background(Color.gray)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                               
+//                    NavigationLink(
+//                        destination: DramaMainView(),
+//                        label: {
+//                            Text("Ok, take me to Daily Horizons")
+//                                .fontWeight(.light)
+//                                .foregroundColor(Color.black)
+//                                .multilineTextAlignment(.center)
+//                                .frame(width: 275, height: 30, alignment: .leading)
+//                                .font(.system(size: 20))
+//                                .padding(10)
+//                                .background(Color.gray)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
+//
                  }
                       }
                     
