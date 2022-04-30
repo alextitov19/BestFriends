@@ -46,13 +46,17 @@ struct FightLandingView: View {
                         
                         VStack {
                             
-                            Text("Before we START")
-                                .font(.system(size: 55, weight: .bold))
+                            Text("Ready to")
+                                .font(.system(size: 40, weight: .bold))
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(Color.purple)
+                               
+                           
+                            Text("BEGIN?")
+                                .font(.system(size: 60, weight: .bold))
                                 .fontWeight(.ultraLight)
                                 .foregroundColor(Color.purple)
                                 .kerning(10)
-                           
-                          
                             Spacer()
                                 .frame(height: 30)
                             
@@ -60,11 +64,11 @@ struct FightLandingView: View {
                                     .frame(height: 20)
                                 
                                 VStack {
-                                    Link(destination: URL(string: "https://socialtechlabs.com/fix-a-fight-terms/")!) {
+                                    Link(destination: URL(string: "https://socialtechlabs.com/ready-to-talk/")!) {
                                
-                                           Text("View Strategy")
+                                           Text("Am I ready to talk?")
                                                 .fontWeight(.thin)
-                                                .frame(width: 325, height: 50)
+                                                .frame(width: 290, height: 50)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .font(.system(size: 30))
                                                 .background(ColorManager.purple3)
@@ -102,7 +106,7 @@ struct FightLandingView: View {
                                         Spacer()
                                             .frame(height: 70)
                                 
-                                Text("Which friend did you fight with?")
+                                Text("When your ready; \nwhich friend did you fight with?")
                                     .font(.system(size: 25, weight: .bold))
                                     .italic()
                                     .foregroundColor(.gray)
