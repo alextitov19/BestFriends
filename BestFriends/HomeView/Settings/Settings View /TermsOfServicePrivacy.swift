@@ -69,7 +69,7 @@ struct TermsConditionsView: View {
 //                Spacer()
 //                    .frame(height: 50)
 //                
-                Link(destination: URL(string: "https://socialtechlabs.com")!) {
+                Link(destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!) {
                     
                     HStack {
                         Text("Privacy Policy")
@@ -89,7 +89,7 @@ struct TermsConditionsView: View {
                 
                 Divider()
                 
-                Link(destination: URL(string: "https://socialtechlabs.com")!) {
+                Link(destination: URL(string: "https://socialtechlabs.com/terms-service/")!) {
                     HStack {
                         Text("Terms of Serivce")
                             .font(.system(size: 20))
