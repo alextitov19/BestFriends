@@ -15,7 +15,7 @@ struct FightLandingView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-//        NavigationView {
+        NavigationView {
             
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
@@ -84,9 +84,9 @@ struct FightLandingView: View {
                                             NavigationLink(
                                                 destination: DramaMainView(),
                                                 label: {
-                                                    Text("NEXT")
+                                                    Text("< Not Ready Yet")
                                                         .fontWeight(.thin)
-                                                        .frame(width: 100, height: 40)
+                                                        .frame(width: 240, height: 40)
                                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                         .font(.system(size: 30))
                                                         .background(ColorManager.purple3)
