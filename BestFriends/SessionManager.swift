@@ -31,6 +31,7 @@ enum AppState {
     case timeToTalk
     case dramaCentralView
     case why
+    case fightLandingView
     
 }
 
@@ -123,6 +124,13 @@ final class SessionManager: ObservableObject {
     }
     func showWhy() {
             appState = .why
+    }
+    func showFightLandingView() {
+            appState = .fightLandingView
+        
+        
+        
+        
         
         }
 }

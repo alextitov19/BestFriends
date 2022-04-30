@@ -89,7 +89,9 @@ struct BestFriendsApp: App {
             case .why:
                 Why()
                     .environmentObject(sessionManager)
-                
+            case .fightLandingView:
+                FightLandingView()
+                    .environmentObject(sessionManager)
                 
             }
         }

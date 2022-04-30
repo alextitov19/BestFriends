@@ -95,6 +95,7 @@
 		CFAB540D281BBA4C00BBF502 /* ReceivedFixFightNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */; };
 		CFAB540F281CA79200BBF502 /* Why.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB540E281CA79200BBF502 /* Why.swift */; };
 		CFAB5411281CFF1900BBF502 /* NotifyFriendFixFight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5410281CFF1900BBF502 /* NotifyFriendFixFight.swift */; };
+		CFAB5413281D145100BBF502 /* FightLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5412281D145100BBF502 /* FightLandingView.swift */; };
 		CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
 		CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC0281770B600AB2539 /* MyStreaks.swift */; };
@@ -203,6 +204,7 @@
 		CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedFixFightNotification.swift; sourceTree = "<group>"; };
 		CFAB540E281CA79200BBF502 /* Why.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Why.swift; sourceTree = "<group>"; };
 		CFAB5410281CFF1900BBF502 /* NotifyFriendFixFight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyFriendFixFight.swift; sourceTree = "<group>"; };
+		CFAB5412281D145100BBF502 /* FightLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightLandingView.swift; sourceTree = "<group>"; };
 		CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobPracticePage.swift; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
 		CFD12CC0281770B600AB2539 /* MyStreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStreaks.swift; sourceTree = "<group>"; };
@@ -548,6 +550,7 @@
 				CFD12CD2281A821C00AB2539 /* FiightWithFriend.swift */,
 				CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */,
 				CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */,
+				CFAB5412281D145100BBF502 /* FightLandingView.swift */,
 				CFD12CD0281A754200AB2539 /* NotReadyTalk.swift */,
 				CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */,
 				CF3B65E62803E6860003A714 /* BreathIn */,
@@ -780,6 +783,7 @@
 				CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
+				CFAB5413281D145100BBF502 /* FightLandingView.swift in Sources */,
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,

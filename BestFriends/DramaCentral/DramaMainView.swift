@@ -96,7 +96,7 @@ struct DramaMainView: View {
                     .frame(height: 40)
                 
                 Button(action: {
-                    sessionManager.showFightWithFriend()
+                    sessionManager.showFightLandingView()
                 }) {
                     ZStack {
                         Circle()
@@ -104,7 +104,7 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Fix-a-Fight")
+                        Text("Who did \nyou fight \nwith?")
 //                            .background()
                             .foregroundColor(.white)
                             .font(.system(size: 25, weight: .bold))
