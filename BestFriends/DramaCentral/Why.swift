@@ -42,24 +42,22 @@ struct Why: View {
                         NavigationLink(
                             destination: DramaMainView(),
                             label: {
-                                Text("<")
-                                    .fontWeight(.thin)
-                                    .frame(width: 100, height: 50)
-                                    
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                                Text("< back")
+                                    .fontWeight(.medium)
+                                    .frame(width: 60, height: 30)
+                                    .foregroundColor(Color.blue)
+                                    .font(.system(size: 17))
+
                             })
                     
                    
-                    Text("What Started all this")
+                    Text("What Started this")
                         .font(.system(size: 40))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
+                        .multilineTextAlignment(.leading)
+//                        .padding(.horizontal, 20)
 
                     }
                         
@@ -67,8 +65,8 @@ struct Why: View {
                         .font(.system(size: 60))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
+                        .multilineTextAlignment(.trailing)
+//                        .padding(.horizontal, 20)
                     
                     
                   Spacer()
@@ -87,7 +85,7 @@ struct Why: View {
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
                
-                           Text("Being REAL with Ourselves")
+                           Text("Being Real with Ourselves")
                                 .fontWeight(.thin)
                                 .frame(width: 350, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

@@ -33,7 +33,7 @@ struct FightWithFriend: View {
                 VStack {
                     
    
-                    Text("We'll pull both of you")
+                    Text("We'll pull you")
                         .font(.system(size: 25))
                         .italic()
                         .foregroundColor(.white)
@@ -85,7 +85,7 @@ struct FightWithFriend: View {
                         })
                             
                         Text("Helping you smile again!")
-                    .font(.system(size: 55, weight: .bold))
+                    .font(.system(size: 45, weight: .bold))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.purple)
 //                    .kerning(10)
