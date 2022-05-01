@@ -19,7 +19,7 @@ struct NuclearOption: View {
             
                 Image("girlwalking")
                     .resizable()
-                    .frame(width: 280, height: 270)
+                    .frame(width: 280, height: 180)
                 
                 AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
@@ -42,7 +42,7 @@ struct NuclearOption: View {
                         .multilineTextAlignment(.center)
                       
                     
-                    Text("by . . .")
+                    Text("think twice before")
                         .font(.system(size: 50))
                         .foregroundColor(.gray)
                         .fontWeight(.ultraLight)
@@ -50,9 +50,9 @@ struct NuclearOption: View {
                         .padding(.horizontal, 0)
              
                     Spacer()
-                        .frame(height: 250)
+                        .frame(height: 200)
                     
-                    Text("Un-friending")
+                    Text("Un-friending and")
                         .font(.system(size: 25))
                         .italic()
                         .foregroundColor(.gray)
@@ -62,7 +62,7 @@ struct NuclearOption: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("Posting private messages \n on social media")
+                    Text("posting private messages \n on social media")
                         .font(.system(size: 25, weight: .bold))
                         .italic()
                         .foregroundColor(.gray)
@@ -92,14 +92,14 @@ struct NuclearOption: View {
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("30 minutes ago you were best friends")
+                            Text("30 minutes ago you were best friends\n and most likely will be again!")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 330, height: 30, alignment: .leading)
+                                .frame(width: 330, height: 60, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(Color.gray)
+                                .background(Color.purple)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })

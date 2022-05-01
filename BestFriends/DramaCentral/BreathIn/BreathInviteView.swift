@@ -70,7 +70,7 @@ struct BreathInviteView: View {
                                 NavigationLink(
                                     destination: DramaMainView(),
                                     label: {
-                                        Text("Feeling calmer - Take me to Step #2")
+                                        Text("Feeling calmer; 'Take me to Step #4'")
                                             .fontWeight(.thin)
                                             .frame(width: 375, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

@@ -37,19 +37,19 @@ struct Why: View {
                     .offset(y: -250)
                 
                 VStack {
-                    
-                    HStack {
-                        NavigationLink(
-                            destination: DramaMainView(),
-                            label: {
-                                
-                                Text("< back")
-                                    .fontWeight(.medium)
-                                    .frame(width: 60, height: 30)
-                                    .foregroundColor(Color.blue)
-                                    .font(.system(size: 17))
-
-                            })
+//
+//                    HStack {
+////                        NavigationLink(
+////                            destination: DramaMainView(),
+////                            label: {
+////
+////                                Text("< back")
+////                                    .fontWeight(.medium)
+////                                    .frame(width: 60, height: 30)
+////                                    .foregroundColor(Color.blue)
+////                                    .font(.system(size: 17))
+//
+//                            }
                     
                    
                     Text("What Started this")
@@ -59,7 +59,7 @@ struct Why: View {
                         .multilineTextAlignment(.leading)
 //                        .padding(.horizontal, 20)
 
-                    }
+                    
                         
                     Text("M E S S?")
                         .font(.system(size: 60))
@@ -101,8 +101,8 @@ struct Why: View {
             }
         }
     }
-}
 
+}
     
 struct Why_Previews : PreviewProvider {
     static var previews: some View {
