@@ -13,6 +13,8 @@ struct TimeToTalk: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+    @EnvironmentObject var sessionManager: SessionManager
+    
     var body: some View {
         NavigationView {
             
@@ -102,9 +104,7 @@ struct TimeToTalk: View {
                  .frame(height: 30)
              VStack {
                  
-             NavigationLink(
-                 destination: DramaMainView(),
-                 label: {
+                 Button(action: sessionManager.showDramaMainView, label: {
                      Text("< back to Main")
                          .fontWeight(.thin)
                          .frame(width: 200, height: 40)

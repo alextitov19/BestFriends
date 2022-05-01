@@ -18,17 +18,27 @@ struct DramaMainView: View {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
 
-            Image("in bushes")
-                .resizable()
-                .resizable()
-                .frame(width: 1300, height: 1000)
+//            Image("in bushes")
+//                .resizable()
+//                .resizable()
+//                .frame(width: 1300, height: 1000)
 
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+           
+            AdPlayerView(name: "backgroundAnimation")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .offset(y: -250)
+            
+            Image("2 weeks")
+            
     VStack {
         HStack {
             VStack {
                 Button(action: {
-//                    want to take to 'Atmosphere when built"
-//                    sessionManager.showHomeView()
                     sessionManager.showYouGotThis()
                     
                 }) {

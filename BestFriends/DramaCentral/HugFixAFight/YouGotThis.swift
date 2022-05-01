@@ -10,41 +10,39 @@ import SwiftUI
 
 struct YouGotThis: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+    
     var body: some View {
        NavigationView {
             
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-//
-//                Image("onPhone")
-//                    .resizable()
-//                    .frame(width: 500, height: 1000)
-//
-//
-                              Image("HugOut")
-                                   .resizable()
-                                  .frame(width: 900, height: 1000)
-                
-                
-                
-//
-//                AdPlayerView(name: "backgroundAnimation")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .offset(y: -250)
-//
-                VStack {
-                       
-                  
 
+                
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+               
+                AdPlayerView(name: "backgroundAnimation")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .offset(y: -250)
+                
+    //            put in Friend 1 planet
+                Image("2 weeks")
+            
+                
+                
+                VStack {
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 500)
                     
                     NavigationLink(
                         destination: TimeToTalk(),
                         label: {
-                            Text("it's going to be okay")
+                            Text("you got this >")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)

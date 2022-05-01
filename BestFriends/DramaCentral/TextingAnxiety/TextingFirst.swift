@@ -24,6 +24,18 @@ struct TextingFirst: View {
                     .scaledToFill()
                     .ignoresSafeArea()
                     .onAppear {
+
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//
+//                AdPlayerView(name: "backgroundAnimation")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .offset(y: -250)
+//
+//                Image("2 weeks")
                  
                      
                     }
