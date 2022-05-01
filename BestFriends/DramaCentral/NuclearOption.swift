@@ -19,7 +19,7 @@ struct NuclearOption: View {
             
                 Image("girlwalking")
                     .resizable()
-                    .frame(width: 280, height: 180)
+                    .frame(width: 280, height: 160)
                 
                 AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
@@ -43,16 +43,16 @@ struct NuclearOption: View {
                       
                     
                     Text("please think twice before")
-                        .font(.system(size: 35))
+                        .font(.system(size: 30))
                         .foregroundColor(.gray)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
              
                     Spacer()
-                        .frame(height: 200)
+                        .frame(height: 215)
                     
-                    Text("Un-friending and")
+                    Text("Unfriending and")
                         .font(.system(size: 25))
                         .italic()
                         .foregroundColor(.gray)

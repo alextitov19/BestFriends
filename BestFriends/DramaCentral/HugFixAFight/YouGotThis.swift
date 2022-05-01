@@ -22,9 +22,9 @@ struct YouGotThis: View {
 //                    .frame(width: 500, height: 1000)
 //
 //
-                              Image("VirtualHug")
+                              Image("HugOut")
                                    .resizable()
-                                  .frame(width: 800, height: 1000)
+                                  .frame(width: 900, height: 1000)
                 
                 
                 
@@ -39,14 +39,14 @@ struct YouGotThis: View {
                   
 
                     Spacer()
-                        .frame(height: 520)
+                        .frame(height: 20)
                     
                     NavigationLink(
                         destination: TimeToTalk(),
                         label: {
                             Text("it's going to be okay")
                                 .fontWeight(.light)
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
                                 .frame(width: 350, height: 50, alignment: .leading)
                                 .font(.system(size: 40))
@@ -55,7 +55,8 @@ struct YouGotThis: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-                               
+                    Spacer()
+                        .frame(height: 600)
                  }
                       }
                     
