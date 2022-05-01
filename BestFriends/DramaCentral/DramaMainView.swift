@@ -21,7 +21,7 @@ struct DramaMainView: View {
             Image("in bushes")
                 .resizable()
                 .resizable()
-                .frame(width: 1500, height: 1000)
+                .frame(width: 1300, height: 1000)
 
     VStack {
         HStack {
@@ -29,6 +29,8 @@ struct DramaMainView: View {
                 Button(action: {
 //                    want to take to 'Atmosphere when built"
 //                    sessionManager.showHomeView()
+                    sessionManager.showShowHug()
+                    
                 }) {
                     ZStack {
                         Circle()

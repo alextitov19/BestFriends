@@ -33,6 +33,8 @@ enum AppState {
     case why
     case fightLandingView
     case journalFight
+    case showHug
+    
     
 }
 
@@ -131,7 +133,9 @@ final class SessionManager: ObservableObject {
     }
     func showJournalFight() {
             appState = .journalFight
-        
+    }
+    func showShowHug() {
+            appState = .showHug
         
         
         

@@ -95,8 +95,9 @@ struct BestFriendsApp: App {
             case .journalFight:
                 JournalFight()
                     .environmentObject(sessionManager)
-                
-                
+            case .showHug:
+                ShowHug()
+                    .environmentObject(sessionManager)
                 
                 
             }
