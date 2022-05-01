@@ -43,7 +43,7 @@ struct DramaMainView: View {
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         
-                        Text("Journal")
+                        Text("face \nto \nface")
                             .foregroundColor(.white)
                             .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -223,11 +223,11 @@ struct DramaMainView: View {
             
                         VStack {
                             NavigationLink(
-                                destination: TimeToTalk(),
+                                destination: JournalFight(),
                                 label: {
-                                    Text("Final: Meet in Person")
+                                    Text("My Journal")
                                         .fontWeight(.medium)
-                                        .frame(width: 300, height: 50)
+                                        .frame(width: 275, height: 50)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 30))
                                         .background(ColorManager.purple3)
