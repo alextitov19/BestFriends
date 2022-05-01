@@ -192,9 +192,9 @@ struct FightLandingView: View {
                                     NavigationLink(
                                         destination: DramaMainView(),
                                         label: {
-                                            Text("< back    'Proceed to Step-3'")
+                                            Text("< back   'go to Step-3'")
                                                 .fontWeight(.medium)
-                                                .frame(width: 350, height: 30)
+                                                .frame(width: 290, height: 30)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .font(.system(size: 25))
                                                 .background(ColorManager.purple3)

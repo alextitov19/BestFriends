@@ -42,8 +42,8 @@ struct NuclearOption: View {
                         .multilineTextAlignment(.center)
                       
                     
-                    Text("think twice before")
-                        .font(.system(size: 50))
+                    Text("please think twice before")
+                        .font(.system(size: 35))
                         .foregroundColor(.gray)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
@@ -73,7 +73,7 @@ struct NuclearOption: View {
 //                    Spacer()
 //                        .frame(height: 5)
                     
-                    Text("REMEMBER")
+                    Text("*REMEMBER")
                         .font(.system(size: 30, weight: .bold))
                         .italic()
                         .foregroundColor(.gray)

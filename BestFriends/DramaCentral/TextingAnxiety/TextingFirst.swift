@@ -34,49 +34,14 @@ struct TextingFirst: View {
                     .blendMode(.screen)
                 
         
-                
-                VStack {
-                    HStack {
-                    
-                        NavigationLink(
-                            destination: DramaMainView(),
-                            label: {
-                                Text("< back")
-                                    .fontWeight(.medium)
-                                    .frame(width: 60, height: 30)
-                                    .foregroundColor(Color.blue)
-                                    .font(.system(size: 17))
-                                
-
-                            })
-                    
-                
-                        
-                
-                
                VStack{
-                        
-                        
-//                            Text("Try")
-//                                .font(.system(size: 60, weight: .ultraLight))
-//                                .foregroundColor(Color.purple)
-
                    Text("T E X T I N G")
                        .font(.system(size: 55, weight: .ultraLight))
                        .foregroundColor(Color.purple)
-                   
-//                   Text("Frist")
-//                       .font(.system(size: 40, weight: .ultraLight))
-//                       .foregroundColor(Color.purple)
-                   
-               }
-                    }
-                        VStack {
-                            
-                      
-                          
+              
+           
                             Spacer()
-                                .frame(height: 85)
+                                .frame(height: 25)
                             
                             VStack {
                                 Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
@@ -115,11 +80,11 @@ struct TextingFirst: View {
                                             NavigationLink(
                                                 destination: DramaMainView(),
                                                 label: {
-                                                    Text("Send a Text")
+                                                    Text("Send a Text w/ Push Notification")
                                                         .fontWeight(.thin)
                                                         .foregroundColor(Color.white)
-                                                        .frame(width: 175, height: 50)
-                                                        .font(.system(size: 30))
+                                                        .frame(width: 360, height: 50)
+                                                        .font(.system(size: 25))
                                                     
                                                         .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                                     
@@ -131,7 +96,7 @@ struct TextingFirst: View {
                                             
                                             
                                     Spacer()
-                                    .frame(height: 100)
+                                    .frame(height: 150)
                                 
                                 Text("While you're stressing \nwaiting for a REPLY")
                                     .font(.system(size: 25, weight: .bold))
@@ -175,7 +140,7 @@ struct TextingFirst: View {
                 }
                 
             }
-}
+
 
     
 

@@ -52,7 +52,7 @@ struct TryThis: View {
                     Spacer()
                         .frame(height: 80)
                     
-                    Text("*listen to your favorite songs \n*take a walk \n*text a friend \n*watch a funny video \n*eat some chocolate \n*watch a movie")
+                    Text("*hang out with a friend in Horizons \n*listen to your favorite songs \n*take a walk \n*text a friend \n*watch a funny video \n*eat some chocolate \n*watch a movie")
                         .font(.system(size: 20))
                         .italic()
                         .fontWeight(.light)
@@ -60,62 +60,38 @@ struct TryThis: View {
                         .fontWeight(.heavy)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 10)
+                  
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 75)
+                    
                     
                     VStack {
-//                    Text("pace yourself -this may take a while")
-//                        .font(.system(size: 23))
-//                        .italic()
-//                        .fontWeight(.medium)
-//                        .foregroundColor(.white)
-//                        .fontWeight(.heavy)
-//                        .multilineTextAlignment(.leading)
-//                        .padding(.horizontal, 10)
-//
-                    Spacer()
-                        .frame(height: 5)
+    
+                        NavigationLink(
+                            destination: DramaMainView(),
+                            label: {
+                                Text("< back  'when ready tap Step-7'")
+                                    .fontWeight(.medium)
+                                    .frame(width: 360, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                          
+                            
+                            
+                            })
                     
                     
-                  
-                    
-                    Spacer()
-                        .frame(height: 40)
-                    
-                    Text("or, do something with a friend \nin Daily Horizons")
-                        .font(.system(size: 25, weight: .bold))
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-//                        .italic()
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-                    
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-//                    NavigationLink(
-//                        destination: DramaMainView(),
-//                        label: {
-//                            Text("Ok, take me to Daily Horizons")
-//                                .fontWeight(.light)
-//                                .foregroundColor(Color.black)
-//                                .multilineTextAlignment(.center)
-//                                .frame(width: 275, height: 30, alignment: .leading)
-//                                .font(.system(size: 20))
-//                                .padding(10)
-//                                .background(Color.gray)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        })
-//
-                 }
+                                }
                       }
                     
                }
             }
         }
 }
+
 
 struct TryThis_Previews : PreviewProvider {
     static var previews: some View {
