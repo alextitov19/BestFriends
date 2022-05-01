@@ -72,7 +72,7 @@ struct TimeToTalk: View {
                                 VStack {
                                     Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
                                
-                                           Text("??? not done yet")
+                                           Text("? send a hug or herart ??")
                                                 .fontWeight(.thin)
                                                 .frame(width: 325, height: 50)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
