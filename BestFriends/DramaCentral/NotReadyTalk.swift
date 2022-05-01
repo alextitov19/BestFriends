@@ -89,9 +89,9 @@ struct NotReadyTalk: View {
                         NavigationLink(
                             destination: DramaMainView(),
                             label: {
-                                Text("< back  \nWhen ready to start; tap Circle 2")
+                                Text("< back  'when ready tap Step-2'")
                                     .fontWeight(.medium)
-                                    .frame(width: 370, height: 100)
+                                    .frame(width: 360, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 25))
                                     .background(ColorManager.purple3)

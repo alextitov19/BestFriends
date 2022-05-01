@@ -187,14 +187,14 @@ struct FightLandingView: View {
                                     
                                     
                                     Spacer ()
-                                        .frame(height: 100)
+                                        .frame(height: 160)
                                     
                                     NavigationLink(
                                         destination: DramaMainView(),
                                         label: {
-                                            Text("< back")
+                                            Text("< back    'Proceed to Step-3'")
                                                 .fontWeight(.medium)
-                                                .frame(width: 100, height: 30)
+                                                .frame(width: 350, height: 30)
                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                 .font(.system(size: 25))
                                                 .background(ColorManager.purple3)
