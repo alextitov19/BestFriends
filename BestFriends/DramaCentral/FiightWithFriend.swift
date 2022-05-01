@@ -33,8 +33,8 @@ struct FightWithFriend: View {
                 VStack {
                     
    
-                    Text("We'll pull you")
-                        .font(.system(size: 25))
+                    Text("we'll pull you")
+                        .font(.system(size: 32))
                         .italic()
                         .foregroundColor(.white)
                         .fontWeight(.light)
@@ -46,7 +46,7 @@ struct FightWithFriend: View {
                     
                     
                     Text("through this drama -")
-                        .font(.system(size: 25))
+                        .font(.system(size: 32))
                         .italic()
                         .foregroundColor(.white)
                         .fontWeight(.light)
@@ -56,8 +56,8 @@ struct FightWithFriend: View {
                     Spacer()
                         .frame(height: 20)
                     
-                    Text("minimizing the wreckage.")
-                        .font(.system(size: 25, weight: .bold))
+                    Text("minimizing the wreckage")
+                        .font(.system(size: 32, weight: .bold))
                         .italic()
                         .foregroundColor(.white)
                         .fontWeight(.light)
@@ -84,12 +84,15 @@ struct FightWithFriend: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                             
-                        Text("Finding your SMILE again!")
-                    .font(.system(size: 45, weight: .bold))
+                        Text("while helping you find")
+                    .font(.system(size: 40, weight: .bold))
                     .fontWeight(.ultraLight)
-                    .foregroundColor(Color.purple)
-//                    .kerning(10)
-               
+                    .foregroundColor(Color.gray)
+
+                        Text("your SMILE again")
+                    .font(.system(size: 40, weight: .bold))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.gray)
                             
                        
                            

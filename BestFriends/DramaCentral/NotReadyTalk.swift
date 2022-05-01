@@ -66,9 +66,9 @@ struct NotReadyTalk: View {
                     VStack {
                         Link(destination: URL(string: "https://socialtechlabs.com/ready-to-talk/")!) {
                    
-                               Text("When will be ready to talk?")
+                               Text("When will I be ready?")
                                     .fontWeight(.thin)
-                                    .frame(width: 335, height: 50)
+                                    .frame(width: 290, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(ColorManager.purple3)
@@ -82,14 +82,6 @@ struct NotReadyTalk: View {
 
                     VStack {
                         
-//                        Text("*When you are ready \nStart on Circle 1")
-//                            .font(.system(size: 30))
-//                            .foregroundColor(.white)
-//                            .fontWeight(.ultraLight)
-//                            .multilineTextAlignment(.center)
-//                            .padding(.horizontal, 20)
-//                            }
-//
                         
                         Spacer ()
                             .frame(height: 70)
@@ -123,6 +115,8 @@ struct NotReadyTalk: View {
 }
 
 }
+    
+
 struct NotReadyTalk_Previews : PreviewProvider {
     static var previews: some View {
         NotReadyTalk()
