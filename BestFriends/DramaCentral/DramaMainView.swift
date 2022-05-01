@@ -43,7 +43,7 @@ struct DramaMainView: View {
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         
-                        Text("face \nto \nface")
+                        Text("face \n-to- \nface")
                             .foregroundColor(.white)
                             .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
