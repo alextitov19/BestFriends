@@ -61,7 +61,7 @@ struct NotReadyTalk: View {
                     
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                     
                     VStack {
                         Link(destination: URL(string: "https://socialtechlabs.com/ready-to-talk/")!) {
@@ -78,7 +78,7 @@ struct NotReadyTalk: View {
                     
                     
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 60)
 
                     VStack {
                         

@@ -68,7 +68,7 @@ struct FightWithFriend: View {
                     
                   
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 115)
              
                     
                     NavigationLink(

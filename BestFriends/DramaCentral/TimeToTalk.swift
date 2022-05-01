@@ -69,50 +69,14 @@ struct TimeToTalk: View {
                                 
                                 Spacer()
                                     .frame(height: 15)
-                                
-                                VStack {
-                                    Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
-                               
-                                           Text("? open button ?")
-                                                .fontWeight(.thin)
-                                                .frame(width: 325, height: 50)
-                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                .font(.system(size: 30))
-                                                .background(ColorManager.purple3)
-                                                .cornerRadius(15)
-                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        }
-                                    Spacer()
-                                        .frame(height: 15)
-                                    
-                                    VStack {
-                                        NavigationLink(
-                                    destination: DramaMainView(),
-                                    label: {
-                                        Text("Fix-a-Fight Menu")
-                                            .fontWeight(.thin)
-                                            .frame(width: 200, height: 50)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 25))
-                                            .background(ColorManager.purple3)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
-                           
-                                   
+                              
                                     
                                     Spacer()
                                     .frame(height: 140)
                                 
                                 Text("Ready? \nLet's set a time to meet")
-                                    .font(.system(size: 25, weight: .bold))
-                                    .italic()
-                                    .foregroundColor(.gray)
-                                    .fontWeight(.semibold)
-                                
-//                                    .multilineTextAlignment(.leading)
-                                    .padding(.horizontal, 0)
-                                
+                                    .font(.system(size: 25, weight: .light))
+//
                                 Spacer()
                                     .frame(height: 20)
                             }
@@ -124,7 +88,7 @@ struct TimeToTalk: View {
                                     NavigationLink(
                                         destination: TryThis(),
                                         label: {
-                                            Text("Send Push Notification")
+                                            Text("Invite")
                                                 .fontWeight(.semibold)
                                                 .foregroundColor(Color.white)
                                                 .frame(width: 150.0, height: 50)
@@ -135,12 +99,27 @@ struct TimeToTalk: View {
                                                 .cornerRadius(25)
                                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                             
-                                           
                                         }
-                                    
-                                        
-                                        
                                     )}
+             Spacer()
+                 .frame(height: 50)
+             VStack {
+                 
+             NavigationLink(
+                 destination: DramaMainView(),
+                 label: {
+                     Text("< back to Main")
+                         .fontWeight(.thin)
+                         .frame(width: 200, height: 40)
+                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                         .font(.system(size: 25))
+                         .background(ColorManager.purple3)
+                         .cornerRadius(15)
+                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                 })
+             
+             
+             
                             }
                             
                         }
@@ -149,9 +128,9 @@ struct TimeToTalk: View {
                 }
                 
             }
-}
 
 }
+
 struct TimeToTalk_Previews : PreviewProvider {
     static var previews: some View {
         TimeToTalk()

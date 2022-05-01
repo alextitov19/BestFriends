@@ -57,32 +57,16 @@ struct BreathInviteView: View {
                                 NavigationLink(
                                     destination: BreathInView(),
                                     label: {
-                                        Text("Take a beather")
+                                        Text("Take a beather alone")
                                             .fontWeight(.thin)
-                                            .frame(width: 245, height: 50)
+                                            .frame(width: 300, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 30))
                                             .background(ColorManager.purple3)
                                             .cornerRadius(15)
                                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     })
-                                
-                                NavigationLink(
-                                    destination: DramaMainView(),
-                                    label: {
-                                        Text("Calmer now; 'Take me to Step #4'")
-                                            .fontWeight(.thin)
-                                            .frame(width: 375, height: 40)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 25))
-                                            .background(ColorManager.purple3)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
-                                
-                                
-                                
-                                
+                      
                                 
                                 
                                 Spacer()
@@ -178,7 +162,7 @@ struct BreathInviteView: View {
                                             })
                                     }
                                     Spacer()
-                                        .frame(height: 25)
+                                        .frame(height: 20)
                                     
                                 }
                                 
@@ -203,6 +187,24 @@ struct BreathInviteView: View {
                                         }
                                         
                                     )}
+                                
+                                Spacer ()
+                                    .frame(height: 30)
+                                
+                                VStack {
+                                NavigationLink(
+                                    destination: DramaMainView(),
+                                    label: {
+                                        Text("Calmer now; 'Take me to Step #4'")
+                                            .fontWeight(.thin)
+                                            .frame(width: 375, height: 40)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .font(.system(size: 25))
+                                            .background(ColorManager.purple3)
+                                            .cornerRadius(15)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    })
+                                
                             }
                             
                         }
@@ -215,6 +217,8 @@ struct BreathInviteView: View {
         }
 }
 
+    
+}
 struct BreathInviteView_Previews : PreviewProvider {
     static var previews: some View {
         BreathInviteView()
