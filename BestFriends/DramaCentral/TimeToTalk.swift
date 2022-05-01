@@ -25,11 +25,11 @@ struct TimeToTalk: View {
                     .frame(width: 400, height: 1000)
                     
                 
-              
-                AdPlayerView(name: "backgroundAnimation")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
+//
+//                AdPlayerView(name: "backgroundAnimation")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//
          VStack{
                         HStack {
                             Text("T A L K")
