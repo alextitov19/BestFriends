@@ -20,34 +20,30 @@ struct TimeToTalk: View {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
                
-                Image("FatGuy")
+               Image("Meet")
                     .resizable()
-                    .scaledToFill()
-                    .ignoresSafeArea()
-                    .onAppear {
-
-                     
-                    }
+                    .frame(width: 400, height: 1000)
+                    
                 
-                // Stars animation...
+              
                 AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
          VStack{
                         HStack {
-                            Text("Ready to Meet")
-                                .font(.system(size: 40, weight: .ultraLight))
-                                .foregroundColor(Color.purple)
-//                                .kerning(25)
+                            Text("T A L K")
+                                .font(.system(size: 70))
+                                .foregroundColor(.black)
+
                         }
                         
                         VStack {
                             
                             Text("in-person")
-                                .font(.system(size: 50, weight: .bold))
-                                .fontWeight(.ultraLight)
-                                .foregroundColor(Color.purple)
+                                .font(.system(size: 60))
+                                .fontWeight(.light)
+                                .foregroundColor(.black)
                                 .kerning(10)
                            
                           
@@ -74,8 +70,9 @@ struct TimeToTalk: View {
                                     Spacer()
                                     .frame(height: 140)
                                 
-                                Text("Ready? \nLet's set a time to meet")
-                                    .font(.system(size: 25, weight: .light))
+                                Text("Ready? \nLet's set a time")
+                                    .font(.system(size: 35, weight: .light))
+                                    .foregroundColor(.white)
 //
                                 Spacer()
                                     .frame(height: 20)
@@ -102,7 +99,7 @@ struct TimeToTalk: View {
                                         }
                                     )}
              Spacer()
-                 .frame(height: 50)
+                 .frame(height: 30)
              VStack {
                  
              NavigationLink(
