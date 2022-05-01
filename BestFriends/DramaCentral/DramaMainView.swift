@@ -84,7 +84,7 @@ struct DramaMainView: View {
             
             VStack {
                 Button(action: {
-                    sessionManager.showNotReadyTalk()
+                    sessionManager.showFightLandingView()
                 }) {
                     ZStack {
                         Circle()
@@ -99,7 +99,7 @@ struct DramaMainView: View {
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         
-                        Text("NOT \nready to \ntalk yet")
+                        Text("Who did \nyou fight \nwith?")
                             .foregroundColor(.white)
                             .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -111,7 +111,7 @@ struct DramaMainView: View {
                     .frame(height: 1)
                 
                 Button(action: {
-                    sessionManager.showFightLandingView()
+                    sessionManager.showNotReadyTalk()
                 }) {
                     ZStack {
                         Circle()
@@ -125,7 +125,7 @@ struct DramaMainView: View {
                             .font(.system(size: 150, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-                        Text("Who did \nyou fight \nwith?")
+                        Text("NOT \nready to \ntalk yet")
 //                            .background()
                             .foregroundColor(.white)
                             .font(.system(size: 25, weight: .bold))

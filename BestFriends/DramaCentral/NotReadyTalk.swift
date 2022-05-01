@@ -29,22 +29,22 @@ struct NotReadyTalk: View {
                 VStack {
                     
                     Text("I'm still too")
-                        .font(.system(size: 60))
+                        .font(.system(size: 70))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
                   
                     Text("U P S E T")
-                        .font(.system(size: 90))
+                        .font(.system(size: 100))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
                   
                     
-                      Text("need more")
-                          .font(.system(size: 50))
+                      Text("and need more")
+                          .font(.system(size: 40))
                           .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
@@ -52,7 +52,7 @@ struct NotReadyTalk: View {
                     
                     
                       Text("T I M E")
-                          .font(.system(size: 60))
+                          .font(.system(size: 50))
                           .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
@@ -63,46 +63,51 @@ struct NotReadyTalk: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("Safety Tip: Try not to let the actions \n of your friends darken your soul")
-                        .font(.system(size: 20, weight: .light)) 
-                        .italic()
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 10)
-                    
-                    
-                    Spacer()
-                        .frame(height: 20)
-
                     VStack {
-                        NavigationLink(
-                            destination: BreathInView(),
-                            label: {
-                                Text("Take a beather")
+                        Link(destination: URL(string: "https://socialtechlabs.com/ready-to-talk/")!) {
+                   
+                               Text("When will be ready to talk?")
                                     .fontWeight(.thin)
-                                    .frame(width: 245, height: 50)
+                                    .frame(width: 335, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+                            }
+                    
+                    
+                    Spacer()
+                        .frame(height: 40)
+
+                    VStack {
                         
+//                        Text("*When you are ready \nStart on Circle 1")
+//                            .font(.system(size: 30))
+//                            .foregroundColor(.white)
+//                            .fontWeight(.ultraLight)
+//                            .multilineTextAlignment(.center)
+//                            .padding(.horizontal, 20)
+//                            }
+//
                         
                         Spacer ()
-                            .frame(height: 20)
+                            .frame(height: 70)
                         
                         NavigationLink(
                             destination: DramaMainView(),
                             label: {
-                                Text("Fix-a-Fight Menu")
-                                    .fontWeight(.thin)
-                                    .frame(width: 200, height: 50)
+                                Text("< back  \nWhen ready to start; tap Circle 2")
+                                    .fontWeight(.medium)
+                                    .frame(width: 370, height: 100)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 25))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                          
+                            
+                            
                             })
                    
                     
@@ -114,10 +119,10 @@ struct NotReadyTalk: View {
                       }
                     
                }
+
 }
 
-
-
+}
 struct NotReadyTalk_Previews : PreviewProvider {
     static var previews: some View {
         NotReadyTalk()
@@ -149,18 +154,3 @@ struct NotReadyTalk_Previews : PreviewProvider {
 
 
 
-
-
-
-//                    NavigationLink(
-//                        destination: BreathInviteView(),
-//                        label: {
-//                            Text("Let's take a breath")
-//                                .fontWeight(.thin)
-//                                .frame(width: 300, height: 50)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 30))
-//                                .background(ColorManager.purple3)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
