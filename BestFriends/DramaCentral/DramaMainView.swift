@@ -53,7 +53,7 @@ struct DramaMainView: View {
                 }
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 1)
                 
                 Button(action: {
                     sessionManager.showTextingFirst()
@@ -108,7 +108,7 @@ struct DramaMainView: View {
                 }
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 1)
                 
                 Button(action: {
                     sessionManager.showFightLandingView()
@@ -136,7 +136,7 @@ struct DramaMainView: View {
                 }
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 1)
                 
                 Button(action: {
                     sessionManager.showWhy()
@@ -191,7 +191,7 @@ struct DramaMainView: View {
                 }
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 1)
                 
                 Button(action: {
                     

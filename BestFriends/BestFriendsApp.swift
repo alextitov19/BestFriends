@@ -98,7 +98,9 @@ struct BestFriendsApp: App {
             case .showHug:
                 ShowHug()
                     .environmentObject(sessionManager)
-                
+            case .youGotThis:
+                YouGotThis()
+                    .environmentObject(sessionManager)
                 
             }
         }

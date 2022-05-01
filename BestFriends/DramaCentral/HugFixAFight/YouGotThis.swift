@@ -1,5 +1,5 @@
 //
-//  ShowHug.swift
+//  YouGotThis.swift
 //  BestFriends
 //
 //  Created by Social Tech on 5/1/22.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ShowHug: View {
+struct YouGotThis: View {
     
     var body: some View {
         NavigationView {
@@ -64,9 +64,9 @@ struct ShowHug: View {
         }
     
 
-struct ShowHug_Previews : PreviewProvider {
+struct YouGotThis_Previews : PreviewProvider {
     static var previews: some View {
-        ShowHug()
+        YouGotThis()
     }
 }
 
