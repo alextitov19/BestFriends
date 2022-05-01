@@ -78,7 +78,7 @@ struct DramaCentralView: View {
                                   
                                         VStack {
                                             NavigationLink(
-                                                destination: DramaMainView(),
+                                                destination: NotReadyTalk(),
                                                 label: {
                                                     Text("NEXT")
                                                         .fontWeight(.thin)

@@ -33,7 +33,7 @@ struct DramaMainView: View {
 
 //            Image("planet_1")
 //
-            
+          
         HStack {
             VStack {
                 Button(action: {
@@ -42,33 +42,49 @@ struct DramaMainView: View {
                 }) {
                     ZStack {
                         Circle()
-                            .frame(width: 120, height: 120)
+                            .frame(width: 130, height: 130)
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("#5 \nFinal Step")
+                        Text("7")
+//                            .background()
+                            .foregroundColor(.purple)
+                            .font(.system(size: 130, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        
+                        Text("Journal")
                             .foregroundColor(.white)
-                            .font(.system(size: 17, weight: .bold))
+                            .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
                 }
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 10)
                 
                 Button(action: {
-                    sessionManager.showWhy()
-                }) {   
+                    sessionManager.showTextingFirst()
+                }) {
                     ZStack {
                         Circle()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 130, height: 130)
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
-                        
-                        Text("#4 \nWHY?")
-                            .foregroundColor(.white)
-                            .font(.system(size: 17, weight: .bold))
+
+                        Text("6")
+//                            .background()
+                            .foregroundColor(.purple)
+                            .font(.system(size: 130, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        
+                        Text("Texting \nFirst \nAnxiety")
+                            .foregroundColor(.white)
+                            .font(.system(size: 25, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+
+
                     }
                 }
                 
@@ -80,20 +96,27 @@ struct DramaMainView: View {
                 }) {
                     ZStack {
                         Circle()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 130, height: 130)
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
+                        Text("2")
+//                            .background()
+                            .foregroundColor(.purple)
+                            .font(.system(size: 125, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        
                         Text("NOT \nready to \ntalk yet")
                             .foregroundColor(.white)
-                            .font(.system(size: 17, weight: .bold))
+                            .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
                     
                 }
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 10)
                 
                 Button(action: {
                     sessionManager.showFightLandingView()
@@ -104,33 +127,48 @@ struct DramaMainView: View {
                             .foregroundColor(ColorManager.pmbc_pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
+                        Text("1")
+//                            .background()
+                            .foregroundColor(.purple)
+                            .font(.system(size: 150, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
                         Text("Who did \nyou fight \nwith?")
 //                            .background()
                             .foregroundColor(.white)
                             .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
+                    
                     }
                 }
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 10)
                 
                 Button(action: {
-                    sessionManager.showTextingFirst()
+                    sessionManager.showWhy()
                 }) {
                     ZStack {
                         Circle()
-                            .frame(width: 120, height: 120)
+                            .frame(width: 130, height: 130)
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
+                      
                         
-                        Text("#3 \nOvercome \nAnxiety \n of texting \n1st")
-                            .foregroundColor(.white)
-                            .font(.system(size: 17, weight: .bold))
+                        Text("5")
+//                            .background()
+                            .foregroundColor(.purple)
+                            .font(.system(size: 125, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-                           
-                  
-                    
+                        
+                        
+                        Text("Cause \nof \nFight")
+                            .foregroundColor(.white)
+                            .font(.system(size: 25, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                
+
                     }
                 }
                 
@@ -142,19 +180,26 @@ struct DramaMainView: View {
                 }) {
                     ZStack {
                         Circle()
-                            .frame(width: 115, height: 115)
+                            .frame(width: 130, height: 130)
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("#1 \nBREATHE")
+                        Text("3")
+//                            .background()
+                            .foregroundColor(.purple)
+                            .font(.system(size: 130, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        
+                        Text("Take \na \nBreaath")
                             .foregroundColor(.white)
-                            .font(.system(size: 17, weight: .bold))
+                            .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
                 }
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 10)
                 
                 Button(action: {
                     
@@ -163,13 +208,19 @@ struct DramaMainView: View {
                 }) {
                     ZStack {
                         Circle()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 130, height: 130)
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
+                        Text("4")
+//                            .background()
+                            .foregroundColor(.purple)
+                            .font(.system(size: 130, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-                        Text("#2 \nNuclear \nOption")
+                        
+                        Text("Stop \nNuclear \nOption")
                             .foregroundColor(.white)
-                            .font(.system(size: 17, weight: .bold))
+                            .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
                 }
