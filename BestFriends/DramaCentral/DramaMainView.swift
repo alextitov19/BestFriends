@@ -29,7 +29,7 @@ struct DramaMainView: View {
                 Button(action: {
 //                    want to take to 'Atmosphere when built"
 //                    sessionManager.showHomeView()
-                    sessionManager.showShowHug()
+                    sessionManager.showYouGotThis()
                     
                 }) {
                     ZStack {
