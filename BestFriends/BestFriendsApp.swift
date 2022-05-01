@@ -92,6 +92,12 @@ struct BestFriendsApp: App {
             case .fightLandingView:
                 FightLandingView()
                     .environmentObject(sessionManager)
+            case .journalFight:
+                JournalFight()
+                    .environmentObject(sessionManager)
+                
+                
+                
                 
             }
         }
