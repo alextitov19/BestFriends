@@ -13,6 +13,13 @@ enum AppState {
     case invite
     case chat(user: User, group: Group)
     case settings
+    
+    
+    
+    
+    
+    
+    
     case breath
     case breathInvite
     case masterFriendVault
@@ -43,7 +50,7 @@ enum AppState {
 }
 
 final class SessionManager: ObservableObject {
-    @Published var appState: AppState = .fightWithFriend
+    @Published var appState: AppState = .login
 
     func showSignUp() {
         appState = .signUp

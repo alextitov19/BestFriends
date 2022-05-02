@@ -46,6 +46,16 @@ struct ChatView: View {
                     }
                 }
                 
+                // MARK: The bottom portion containing text field and action buttons
+                HStack {
+                    
+                    Image("camera")
+                        .resizable()
+                        .colorInvert()
+                        .frame(width: 40, height: 40)
+                        .scaledToFit()
+                        .padding(.leading, 5)
+                
                 TextField("", text: $messageBody)
                     .placeholder(when: messageBody.isEmpty) {
                         HStack {
@@ -63,7 +73,7 @@ struct ChatView: View {
                         .frame(height: 40)
                         .padding(.horizontal, 5)
                     )
-                
+                }
             }
         }
     }
