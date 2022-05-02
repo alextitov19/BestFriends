@@ -19,25 +19,19 @@ struct TextingFirst: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-                Image("book")
+            
+                Image("purpleBackground")
                     .resizable()
-                    .scaledToFill()
                     .ignoresSafeArea()
-                    .onAppear {
-
-//                Image("purpleBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//
-//                AdPlayerView(name: "backgroundAnimation")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .offset(y: -250)
-//
-//                Image("2 weeks")
-                 
-                     
+                    .scaledToFill()
+                
+                AdPlayerView(name: "backgroundAnimation")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .offset(y: -250)
+                
+                VStack {
+           
                     }
                 
                 // Stars animation...
@@ -58,7 +52,7 @@ struct TextingFirst: View {
                             VStack {
                                 Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
                            
-                                       Text("Not Sure What to Say")
+                                       Text("Not Sure What to Say?")
                                             .fontWeight(.thin)
                                             .frame(width: 325, height: 50)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
