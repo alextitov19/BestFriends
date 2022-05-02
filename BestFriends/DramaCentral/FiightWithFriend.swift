@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 
+
 struct FightWithFriend: View {
     
     var body: some View {
