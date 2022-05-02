@@ -44,12 +44,7 @@ struct BreathInView: View {
             
             VStack {
                 ZStack {
-//               Text("R e l a x")
-//                    .font(.system(size: 100, weight: .ultraLight))
-//               
-//                   .offset(x: 10, y: 135)
-//                   .foregroundColor(.white)
-//               
+             
                 Image(systemName: "heart.fill")
     
                          .resizable()

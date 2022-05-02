@@ -21,8 +21,12 @@ struct TextOptionsView: View {
             ZStack {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
-               
- }
+
+
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
 
                VStack{
                    Text("Select one, or type \nyour own in Chat")
@@ -59,6 +63,8 @@ struct TextOptionsView: View {
     }
 }
 
+}
+    
 struct TestOptionsView_Previews : PreviewProvider {
     static var previews: some View {
         TextOptionsView()

@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import AVKit
 
 struct NuclearOption: View {
     
@@ -17,9 +18,10 @@ struct NuclearOption: View {
                 Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                     .ignoresSafeArea()
             
-                Image("girlwalking")
+                Image("purpleBackground")
                     .resizable()
-                    .frame(width: 280, height: 160)
+                    .ignoresSafeArea()
+                    .scaledToFill()
                 
                 AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
@@ -28,30 +30,43 @@ struct NuclearOption: View {
                 
                 VStack {
                     
-                    Text("before going")
-                        .font(.system(size: 50))
-                        .foregroundColor(.gray)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                       
+//                    Text("Before going")
+//                        .font(.system(size: 50))
+//                        .foregroundColor(.gray)
+//                        .fontWeight(.ultraLight)
+//                        .multilineTextAlignment(.center)
+//
+//
+//                    Text("N U C L E A R")
+//                        .font(.system(size: 65))
+//                        .foregroundColor(.gray)
+//                        .fontWeight(.ultraLight)
+//                        .multilineTextAlignment(.center)
+//
                     
-                    Text("N U C L E A R")
-                        .font(.system(size: 65))
-                        .foregroundColor(.gray)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                      
+                
+                    ZStack {
+                 
+                    Image(systemName: "heart.fill")
+        
+                             .resizable()
+                             .frame(width: 190, height: 170, alignment: .leading)
+       
+                             .foregroundColor(Color(hue: 0.714, saturation: 0.411, brightness: 0.626))
+                       .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+
+                        
+                     Text("please think \ntwice before ...")
+                             .font(.system(size: 20))
+                             .foregroundColor(.white)
+                             .fontWeight(.medium)
+                             .multilineTextAlignment(.center)
+                    }
                     
-                    Text("please think twice before")
-                        .font(.system(size: 30))
-                        .foregroundColor(.gray)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 0)
-             
-                    Spacer()
-                        .frame(height: 215)
                     
+                        Spacer()
+                            .frame(height: 50)
+      
                     Text("Unfriending and")
                         .font(.system(size: 25))
                         .italic()
@@ -62,7 +77,7 @@ struct NuclearOption: View {
                     Spacer()
                         .frame(height: 5)
                     
-                    Text("posting private messages \n on social media")
+                    Text("posting your friend's private messages \n on social media")
                         .font(.system(size: 25, weight: .bold))
                         .italic()
                         .foregroundColor(.gray)
@@ -70,33 +85,29 @@ struct NuclearOption: View {
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
-//                    Spacer()
-//                        .frame(height: 5)
+                    Spacer()
+                        .frame(height: 15)
                     
-                    Text("*REMEMBER")
-                        .font(.system(size: 30, weight: .bold))
-                        .italic()
-                        .foregroundColor(.gray)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.leading)
-                        .padding(.horizontal, 0)
-                    
+//                    Text("*REMEMBER")
+//                        .font(.system(size: 30, weight: .bold))
+//                        .italic()
+//                        .foregroundColor(.gray)
+//                        .fontWeight(.medium)
+//                        .multilineTextAlignment(.leading)
+//                        .padding(.horizontal, 0)
+//
                     VStack {
-                    
-                    Spacer()
-                        .frame(height: 1)
-
-                    Spacer()
-                        .frame(height: 20)
+                        Spacer()
+                            .frame(height: 60)
                     
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("30 minutes ago you were best friends\n and most likely will be again!")
+                            Text("< back    Remember, 30 minutes ago you were best friends and most likely will be again!")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 330, height: 60, alignment: .leading)
+                                .frame(width: 330, height: 100, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color.purple)

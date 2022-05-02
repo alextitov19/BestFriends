@@ -33,7 +33,7 @@ struct DramaMainView: View {
                 .blendMode(.screen)
                 .offset(y: -250)
             
-            Image("2 weeks")
+//            Image("2 weeks")
             
     VStack {
         HStack {
