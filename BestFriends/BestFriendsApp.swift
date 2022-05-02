@@ -104,7 +104,12 @@ struct BestFriendsApp: App {
             case .textOptionsView:
                 TextOptionsView()
                     .environmentObject(sessionManager)
-                
+            case .breakUpNote:
+                BreakUpNote()
+                    .environmentObject(sessionManager)
+            case .textingNote:
+                TextingNote()
+                    .environmentObject(sessionManager)
                 
                 
             }

@@ -88,7 +88,7 @@ struct Why: View {
                                 .frame(height: 100)
                             
                             NavigationLink(
-                                destination: DramaMainView(),
+                                destination: BreakUpNote(),
                                 label: {
                                     Text("< back  'go to Step-6'")
                                         .fontWeight(.medium)

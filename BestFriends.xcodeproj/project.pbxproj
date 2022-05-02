@@ -100,6 +100,8 @@
 		CFAB5419281E537D00BBF502 /* ShowHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5418281E537D00BBF502 /* ShowHug.swift */; };
 		CFAB541B281E5F8300BBF502 /* YouGotThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB541A281E5F8300BBF502 /* YouGotThis.swift */; };
 		CFAB541E281F52D600BBF502 /* TextOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB541D281F52D600BBF502 /* TextOptionsView.swift */; };
+		CFAB5420281FC2BB00BBF502 /* BreakUpNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB541F281FC2BB00BBF502 /* BreakUpNote.swift */; };
+		CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5421281FC8B800BBF502 /* TextingNote.swift */; };
 		CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
 		CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC0281770B600AB2539 /* MyStreaks.swift */; };
@@ -213,6 +215,8 @@
 		CFAB5418281E537D00BBF502 /* ShowHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHug.swift; sourceTree = "<group>"; };
 		CFAB541A281E5F8300BBF502 /* YouGotThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouGotThis.swift; sourceTree = "<group>"; };
 		CFAB541D281F52D600BBF502 /* TextOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOptionsView.swift; sourceTree = "<group>"; };
+		CFAB541F281FC2BB00BBF502 /* BreakUpNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakUpNote.swift; sourceTree = "<group>"; };
+		CFAB5421281FC8B800BBF502 /* TextingNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextingNote.swift; sourceTree = "<group>"; };
 		CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobPracticePage.swift; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
 		CFD12CC0281770B600AB2539 /* MyStreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStreaks.swift; sourceTree = "<group>"; };
@@ -549,6 +553,8 @@
 			children = (
 				CFAB5418281E537D00BBF502 /* ShowHug.swift */,
 				CFAB541A281E5F8300BBF502 /* YouGotThis.swift */,
+				CFAB541F281FC2BB00BBF502 /* BreakUpNote.swift */,
+				CFAB5421281FC8B800BBF502 /* TextingNote.swift */,
 			);
 			path = HugFixAFight;
 			sourceTree = "<group>";
@@ -793,6 +799,7 @@
 				CFAB5416281E1B8300BBF502 /* JournalFight.swift in Sources */,
 				CFAB540F281CA79200BBF502 /* Why.swift in Sources */,
 				CF3B65B9280081550003A714 /* SettingsNotificationsView.swift in Sources */,
+				CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
 				CFAB5411281CFF1900BBF502 /* NotifyFriendFixFight.swift in Sources */,
 				CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */,
@@ -827,6 +834,7 @@
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
 				7A1C048527F4BEB30002B173 /* SignUpView.swift in Sources */,
 				CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */,
+				CFAB5420281FC2BB00BBF502 /* BreakUpNote.swift in Sources */,
 				CFD12CC428179CD600AB2539 /* StreakCongratulations.swift in Sources */,
 				7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */,
 				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,

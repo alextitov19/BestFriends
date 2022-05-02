@@ -36,6 +36,8 @@ enum AppState {
     case showHug
     case youGotThis
     case textOptionsView
+    case breakUpNote
+    case textingNote
     
     
 }
@@ -144,6 +146,16 @@ final class SessionManager: ObservableObject {
     }
     func showTextOptionsView() {
             appState = .textOptionsView
+    }
+    func showBreakUpNote() {
+            appState = .breakUpNote
+    }
+    func showTextingNote() {
+            appState = .textingNote
+        
+        
+        
+        
         
         }
 }
