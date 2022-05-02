@@ -36,48 +36,39 @@ struct BreakUpNote: View {
                 
                 
                 VStack {
-                    
-                    Text("“Forgiveness is not something we do for other people. It's something we do for ourselves to move on.”")
+                    Text("Don't change yourself so that other people will like you. Be yourself, and the right people will like you.")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                         .frame(width: 350, height: 120, alignment: .leading)
-                    Spacer()
-                        .frame(height: 40)
                     
-                    Text("Don't change yourself so that other people will like you. Be yourself, and the right people will like you.")
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    Text("")
                         .font(.system(size: 25))
                         .fontWeight(.light)
-                        .foregroundColor(Color.black)
-                        .frame(width: 350, height: 120, alignment: .leading)
-                    
-                    Spacer()
-                        .frame(height: 40)
-                    
-                    Text("“It always seems impossible until it's done.” — Nelson Mandela")
-                        .font(.system(size: 25))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color.blue)
                         .frame(width: 350, height: 120, alignment: .leading)
                     Spacer()
-                        .frame(height: 200)
+                        .frame(height: 00)
                     
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("you got this >")
+                            Text("“It always seems impossible until it's done.” — Nelson Mandela")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 350, height: 40, alignment: .leading)
-                                .font(.system(size: 40))
+                                .frame(width: 350, height: 100, alignment: .leading)
+                                .font(.system(size: 25))
                                 .padding(10)
                                 .background(Color.purple)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 400)
                  }
                       }
                     
@@ -92,4 +83,9 @@ struct BreakUpNote_Previews : PreviewProvider {
     }
 }
 
-
+//
+//Text("“Forgiveness is not something we do for other people. It's something we do for ourselves to move on.”")
+//    .font(.system(size: 25))
+//    .fontWeight(.light)
+//    .foregroundColor(Color.white)
+//    .frame(width: 350, height: 120, alignment: .leading)

@@ -193,7 +193,7 @@ struct DramaMainView: View {
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         
-                        Text("Take \na \nBreaath")
+                        Text("Take \na \nBreath")
                             .foregroundColor(.white)
                             .font(.system(size: 25, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)

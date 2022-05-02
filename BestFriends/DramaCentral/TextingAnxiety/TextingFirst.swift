@@ -143,7 +143,7 @@ struct TextingFirst: View {
                    VStack {
    
                        NavigationLink(
-                           destination: DramaMainView(),
+                           destination: TextingNote(),
                            label: {
                                Text("< back  'when ready tap Step-7'")
                                    .fontWeight(.medium)

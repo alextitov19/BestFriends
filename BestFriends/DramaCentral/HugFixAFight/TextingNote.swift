@@ -39,38 +39,28 @@ struct TextingNote: View {
                 
                 VStack {
                     
-                    Text("Your friend: Hey")
+                    Text("Your friend: 'hey'")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
-                        .frame(width: 350, height: 120, alignment: .leading)
+                        
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 10)
                     
-                    Text("You: Hey")
+                    Text("You: 'hey'")
                         .font(.system(size: 25))
                         .fontWeight(.light)
-                        .foregroundColor(Color.black)
-                        .frame(width: 350, height: 120, alignment: .leading)
+                        .foregroundColor(Color.white)
+                        
                     
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 10)
                     
-                    Text("Your friend again: What's up?")
+                    Text("Your friend again: 'what's up'")
                         .font(.system(size: 25))
                         .fontWeight(.light)
-                        .foregroundColor(Color.black)
-                        .frame(width: 350, height: 120, alignment: .leading)
-                    
-                    Text("You: My standards, bye!")
-                        .font(.system(size: 25))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.black)
-                        .frame(width: 350, height: 120, alignment: .leading)
-                    
-                    
-                    
-                    
+                        .foregroundColor(Color.white)
+               
                     
                     Spacer()
                         .frame(height: 200)
@@ -78,7 +68,7 @@ struct TextingNote: View {
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("you got this >")
+                            Text("You: my standards!")
                                 .fontWeight(.light)
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
@@ -90,7 +80,7 @@ struct TextingNote: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 400)
                  }
                       }
                     
