@@ -35,6 +35,7 @@ enum AppState {
     case journalFight
     case showHug
     case youGotThis
+    case textOptionsView
     
     
 }
@@ -140,7 +141,9 @@ final class SessionManager: ObservableObject {
     }
     func showYouGotThis() {
             appState = .youGotThis
-        
+    }
+    func showTextOptionsView() {
+            appState = .textOptionsView
         
         }
 }

@@ -101,6 +101,11 @@ struct BestFriendsApp: App {
             case .youGotThis:
                 YouGotThis()
                     .environmentObject(sessionManager)
+            case .textOptionsView:
+                TextOptionsView()
+                    .environmentObject(sessionManager)
+                
+                
                 
             }
         }
