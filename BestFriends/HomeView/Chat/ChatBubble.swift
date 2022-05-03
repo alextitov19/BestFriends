@@ -68,7 +68,6 @@ struct ChatBubble: View {
                 print("Image key: ", key!)
                 RestApi.instance.getImage(folderId: groupId, imageId: key!).then { data in
                     print("Got data")
-                    let img = UIImage(data: data)
                     image = UIImage(data: data)
                     print("Got image from data")
                 }
