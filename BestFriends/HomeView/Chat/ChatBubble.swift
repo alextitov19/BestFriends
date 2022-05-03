@@ -63,15 +63,18 @@ struct ChatBubble: View {
     }
     
     private func downloadImage(key: String?) {
-        if key != nil {
-            print("Image key: ", key!)
-            RestApi.instance.getImage(folderId: groupId, imageId: key!).then { data in
-                print("Got data")
-                let img = UIImage(data: data)
-                image = UIImage(data: data)
-                print("Got image from data")
+        DispatchQueue.main.async {
+            if key != nil {
+                print("Image key: ", key!)
+                RestApi.instance.getImage(folderId: groupId, imageId: key!).then { data in
+                    print("Got data")
+                    let img = UIImage(data: data)
+                    image = UIImage(data: data)
+                    print("Got image from data")
+                }
             }
         }
+        
         
     }
 }
