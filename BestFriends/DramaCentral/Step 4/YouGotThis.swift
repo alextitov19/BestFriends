@@ -18,31 +18,72 @@ struct YouGotThis: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//
             //            put in Friend 1 planet
-            Image("2 weeks")
-                .resizable()
-                .frame(width: 400, height: 400)
-            
+//            Image("2 weeks")
+//                .resizable()
+//                .frame(width: 400, height: 400)
+//
             
             
             VStack {
                 
-                    Text("open page")
-                        .font(.system(size: 50, weight: .bold))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.black)
+                Text("Take a ")
+                    .font(.system(size: 40))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
                     
                     
-                    Text("?????")
-                        .font(.system(size: 80, weight: .bold))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.black)
+                Text("BREAK")
+                        .font(.system(size: 60))
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
                         .kerning(10)
+                
+                Spacer()
+                    .frame(height: 30)
                     
+                Text("Before the screams begin")
+                    .font(.system(size: 31))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.blue)
+                Spacer()
+                    .frame(height: 30)
+                
+                Text("Leaving your words forever \nburned in their brain")
+                    .font(.system(size: 23))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                Spacer()
+                    .frame(height: 30)
+               
+            VStack {
+                Text("Unable to never, \never be taken back")
+                    .font(.system(size: 23))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                Spacer()
+                    .frame(height: 30)
+                
+                Text("Unable to never, \never be forgotten")
+                    .font(.system(size: 23))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                Spacer()
+                    .frame(height: 30)
+                
+                Text("Erasing all the nice words \nyou've ever said")
+                    .font(.system(size: 31))
+                    .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(Color.blue)
+                Spacer()
+                    .frame(height: 50)
+                
                 NavigationLink(
                     destination: Step5_Why(),
                     label: {
@@ -62,6 +103,13 @@ struct YouGotThis: View {
         
     }
 }
+}
+
+
+
+
+
+
 
 
 struct YouGotThis_Previews : PreviewProvider {
