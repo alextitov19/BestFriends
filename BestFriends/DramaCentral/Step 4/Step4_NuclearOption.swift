@@ -80,19 +80,27 @@ struct Step4_NuclearOption: View {
             
                 
                 VStack {
-                Text("____________")
-                    .font(.system(size: 35))
-                    .foregroundColor(.green)
-                    .fontWeight(.thin)
-               
+              
+                    Text("30 minutes ago you were BFF and you will be again!")
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                        .frame(width: 275, height: 70, alignment: .leading)
+                        .font(.system(size: 25))
+                        .padding(10)
+                        .background(Color.purple)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
-                Text("30 minutes ago you were BFF and will be again!")
-                                       .font(.system(size: 35, weight: .thin))
-                                        .foregroundColor(.green)
-                                        .multilineTextAlignment(.leading)
-                                        .frame(width: 310, height: 140)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                Text("30 minutes ago you were BFF and will be again!")
+//                                       .font(.system(size: 35, weight: .thin))
+//                                        .foregroundColor(.green)
+//                                        .multilineTextAlignment(.leading)
+//                                        .frame(width: 310, height: 140)
+//                                        .cornerRadius(15)
+//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+               
+                    
                 VStack {
                     Spacer()
                         .frame(height: 30)

@@ -36,7 +36,7 @@ struct BreakUpNote: View {
                 
                 
                 VStack {
-                    Text("Don't change yourself so that other people will like you. Be yourself, and the right people will like you.")
+                    Text("Don't change yourself so that other people will like you. Be yourself, and the right people will be your friends. yep! yep!")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
