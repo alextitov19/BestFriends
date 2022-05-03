@@ -31,6 +31,18 @@ struct YouGotThis: View {
             
             VStack {
                 
+                    Text("open page")
+                        .font(.system(size: 50, weight: .bold))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(Color.black)
+                    
+                    
+                    Text("?????")
+                        .font(.system(size: 80, weight: .bold))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(Color.black)
+                        .kerning(10)
+                    
                 NavigationLink(
                     destination: Step5_Why(),
                     label: {
