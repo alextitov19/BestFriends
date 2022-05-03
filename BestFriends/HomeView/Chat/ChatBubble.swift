@@ -32,14 +32,33 @@ struct ChatBubble: View {
                     .padding(.horizontal, 5)
                     
                 } else {
-                MyChatMessage(messageBody: "📸")
-                    .onTapGesture { downloadImage(key: message.image) }
+                    MyChatMessage(messageBody: "📸")
+                        .onTapGesture { downloadImage(key: message.image) }
                 }
             } else {
                 MyChatMessage(messageBody: message.body)
             }
         } else {
-            FriendChatMessage(name: message.senderName, messageBody: message.body)
+            if message.image != nil {
+                if image != nil {
+                    HStack {
+                        Image(uiImage: image!)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 300)
+                            .cornerRadius(25)
+                        
+                        Spacer()
+                    }
+                    .padding(.horizontal, 5)
+                    
+                } else {
+                    FriendChatMessage(name: message.senderName, messageBody: "📸")
+                        .onTapGesture { downloadImage(key: message.image) }
+                }
+            } else {
+                FriendChatMessage(name: message.senderName, messageBody: message.body)
+            }
         }
     }
     
