@@ -390,6 +390,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */,
+				CFAB541A281E5F8300BBF502 /* YouGotThis.swift */,
 			);
 			path = "Step 4";
 			sourceTree = "<group>";
@@ -587,7 +588,6 @@
 			children = (
 				CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */,
 				CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */,
-				CFAB541A281E5F8300BBF502 /* YouGotThis.swift */,
 			);
 			path = "Step 7";
 			sourceTree = "<group>";

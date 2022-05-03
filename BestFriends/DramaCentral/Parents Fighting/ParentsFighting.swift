@@ -144,9 +144,9 @@ struct ParentsFighting: View {
                     .frame(height: 30)
                 
                 NavigationLink(
-                    destination: Step5_Why(),
+                    destination: HomeView(),
                     label: {
-                        Text("NEXT")
+                        Text("HOME")
                             .fontWeight(.thin)
                             .frame(width: 110, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

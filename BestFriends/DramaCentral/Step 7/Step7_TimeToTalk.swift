@@ -28,7 +28,7 @@ struct Step7_TimeToTalk: View {
             
             VStack {
                 
-                Text("be a H E R O")
+                Text("Be a H E R O")
                     .font(.system(size: 65))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.purple)
@@ -122,7 +122,7 @@ struct Step7_TimeToTalk: View {
 
 
 
-struct TimeToTalk_Previews : PreviewProvider {
+struct Step7_TimeToTalk_Previews : PreviewProvider {
     static var previews: some View {
         Step7_TimeToTalk()
     }
