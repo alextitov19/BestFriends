@@ -46,7 +46,7 @@ struct Step4_NuclearOption: View {
                 Spacer()
                     .frame(height: 50)
                 
-                Text("Unfriending and")
+                Text("Unfriending")
                     .font(.system(size: 25))
                     .italic()
                     .foregroundColor(.gray)
@@ -56,7 +56,17 @@ struct Step4_NuclearOption: View {
                 Spacer()
                     .frame(height: 5)
                 
-                Text("posting your friend's private messages \n on social media")
+                Text("or")
+                    .font(.system(size: 25))
+                    .italic()
+                    .foregroundColor(.gray)
+                    .fontWeight(.medium)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 0)
+                Spacer()
+                    .frame(height: 5)
+                
+                Text("posting your friend's \nprivate messages \n on social media")
                     .font(.system(size: 25, weight: .bold))
                     .italic()
                     .foregroundColor(.gray)
@@ -82,11 +92,11 @@ struct Step4_NuclearOption: View {
                     NavigationLink(
                         destination: YouGotThis(),
                         label: {
-                            Text("Next")
+                            Text("NEXT")
                                 .fontWeight(.thin)
-                                .frame(width: 120, height: 40)
+                                .frame(width: 110, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
+                                .font(.system(size: 30))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)

@@ -32,7 +32,7 @@ struct Step3_BreathInviteView: View {
             VStack{
                 HStack {
                     Text("Calming")
-                        .font(.system(size: 60, weight: .ultraLight))
+                        .font(.system(size: 47, weight: .ultraLight))
                         .foregroundColor(Color.purple)
                         .kerning(25)
                 }
@@ -171,8 +171,8 @@ struct Step3_BreathInviteView: View {
                                         .fontWeight(.thin)
                                         .font(.system(size: 30))
                                         .foregroundColor(Color.white)
-                                        .frame(width: 150.0, height: 50)
-                                        .font(.system(size: 20))
+                                        .frame(width: 160, height: 40)
+                                        .font(.system(size: 30))
                                     
                                         .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                     
@@ -192,9 +192,9 @@ struct Step3_BreathInviteView: View {
                             label: {
                                 Text("Step-4")
                                     .fontWeight(.thin)
-                                    .frame(width: 120, height: 40)
+                                    .frame(width: 110, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
+                                    .font(.system(size: 30))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)

@@ -34,10 +34,6 @@ struct Step2_FightLandingView: View {
             //
             VStack{
                 HStack {
-                    //                            Text("wow")
-                    //                                .font(.system(size: 60, weight: .ultraLight))
-                    //                                .foregroundColor(Color.purple)
-                    //                                .kerning(25)
                 }
                 
                 VStack {
@@ -60,7 +56,7 @@ struct Step2_FightLandingView: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("Which friend did you fight with?")
+                        Text("Who did you fight with?")
                             .font(.system(size: 25, weight: .bold))
                             .italic()
                             .foregroundColor(.gray)
@@ -189,10 +185,10 @@ struct Step2_FightLandingView: View {
                                 destination: Step3_BreathInviteView(),
                                 label: {
                                     Text("Step-3")
-                                        .fontWeight(.medium)
-                                        .frame(width: 120, height: 40)
+                                        .fontWeight(.thin)
+                                        .frame(width: 110, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
+                                        .font(.system(size: 30))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
