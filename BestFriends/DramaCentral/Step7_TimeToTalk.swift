@@ -98,7 +98,7 @@ struct Step7_TimeToTalk: View {
                         Button(action: {
                             sessionManager.showHome()
                         }, label: {
-                            Text("Done")
+                            Text("DONE")
                                 .fontWeight(.thin)
                                 .frame(width: 100, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

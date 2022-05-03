@@ -23,7 +23,16 @@ struct Step6_TextingFirst: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
-            VStack{
+            VStack {
+           
+                Text("Reaching out First")
+                .font(.system(size: 40, weight: .ultraLight))
+                .foregroundColor(Color.purple)
+            
+                Text("via")
+                .font(.system(size: 40, weight: .ultraLight))
+                .foregroundColor(Color.purple)
+                
                 Text("T E X T I N G")
                     .font(.system(size: 55, weight: .ultraLight))
                     .foregroundColor(Color.purple)
@@ -37,7 +46,7 @@ struct Step6_TextingFirst: View {
                         
                         Text("Not Sure What to Say?")
                             .fontWeight(.thin)
-                            .frame(width: 325, height: 50)
+                            .frame(width: 310, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)
@@ -51,9 +60,9 @@ struct Step6_TextingFirst: View {
                     VStack {
                         Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
                             
-                            Text("Appologize?")
+                            Text("Should I Appologize?")
                                 .fontWeight(.thin)
-                                .frame(width: 325, height: 50)
+                                .frame(width: 310, height: 50)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
@@ -69,15 +78,15 @@ struct Step6_TextingFirst: View {
                             NavigationLink(
                                 destination: DramaMainView(),
                                 label: {
-                                    Text("Send a Text w/ Push Notification")
+                                    Text("Send 1st Text \nwith Push Notification")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 360, height: 50)
+                                        .frame(width: 310, height: 70)
                                         .font(.system(size: 25))
                                     
                                         .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                     
-                                        .cornerRadius(25)
+                                        .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                 }
@@ -85,13 +94,13 @@ struct Step6_TextingFirst: View {
                         
                         
                         Spacer()
-                            .frame(height: 150)
+                            .frame(height: 60)
                         
                         Text("While you're stressing \nwaiting for a REPLY")
-                            .font(.system(size: 25, weight: .bold))
+                            .font(.system(size: 25, weight: .medium))
                             .italic()
                             .foregroundColor(.white)
-                            .fontWeight(.semibold)
+                        
                         
                         //                                    .multilineTextAlignment(.leading)
                             .padding(.horizontal, 0)
@@ -115,7 +124,7 @@ struct Step6_TextingFirst: View {
                             
                                 .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                             
-                                .cornerRadius(25)
+                                .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             
                         }
@@ -129,10 +138,10 @@ struct Step6_TextingFirst: View {
                         destination: Step7_TimeToTalk(),
                         label: {
                             Text("Step-7")
-                                .fontWeight(.medium)
-                                .frame(width: 120, height: 40)
+                                .fontWeight(.thin)
+                                .frame(width: 110, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
+                                .font(.system(size: 30))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)

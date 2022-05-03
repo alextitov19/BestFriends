@@ -27,30 +27,41 @@ struct TextingNote: View {
             //            put in Friend 1 planet
             Image("2 weeks")
                 .resizable()
-                .frame(width: 300, height: 300)
+                .frame(width: 400, height: 400)
             
             
             
             VStack {
+                Text("Before we")
+                    .font(.system(size: 50, weight: .bold))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.purple)
                 
-                Text("Your friend: 'hey'")
+                
+                Text("START")
+                    .font(.system(size: 80, weight: .bold))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.purple)
+                    .kerning(10)
+                
+                Text("Your friend: 'hey' \nYou: 'hey' \nYour friend: 'what's up' \nYOU: 'my STANDARDS'")
+                    .font(.system(size: 32))
+                    .fontWeight(.regular)
+                    .foregroundColor(Color.black)
+                    .padding(.vertical, 100)
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                 
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("You: 'hey'")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                
                 
                 Spacer()
                     .frame(height: 10)
                 
-                Text("Your friend again: 'what's up'")
+                Text("")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
