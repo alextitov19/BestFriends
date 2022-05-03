@@ -35,7 +35,7 @@ struct Step5_Why: View {
                 
                 
                 
-                Text("M E S S?")
+                Text("F I G H T ?")
                     .font(.system(size: 70))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)

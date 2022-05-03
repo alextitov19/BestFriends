@@ -63,6 +63,7 @@ struct Step4_NuclearOption: View {
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 0)
+               
                 Spacer()
                     .frame(height: 5)
                 
@@ -75,19 +76,26 @@ struct Step4_NuclearOption: View {
                     .padding(.horizontal, 0)
                 
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 25)
+            
                 
-                //                    Text("*REMEMBER")
-                //                        .font(.system(size: 30, weight: .bold))
-                //                        .italic()
-                //                        .foregroundColor(.gray)
-                //                        .fontWeight(.medium)
-                //                        .multilineTextAlignment(.leading)
-                //                        .padding(.horizontal, 0)
-                //
+                VStack {
+                Text("____________")
+                    .font(.system(size: 35))
+                    .foregroundColor(.green)
+                    .fontWeight(.thin)
+               
+                
+                Text("30 minutes ago you were BFF and will be again!")
+                                       .font(.system(size: 35, weight: .thin))
+                                        .foregroundColor(.green)
+                                        .multilineTextAlignment(.leading)
+                                        .frame(width: 310, height: 140)
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 VStack {
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 30)
                     
                     NavigationLink(
                         destination: YouGotThis(),
@@ -110,7 +118,7 @@ struct Step4_NuclearOption: View {
     
 }
 
-
+}
 
 
 
