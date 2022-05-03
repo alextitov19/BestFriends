@@ -87,7 +87,7 @@ struct YouGotThis: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.blue)
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 15)
                 
                 NavigationLink(
                     destination: Step5_Why(),
