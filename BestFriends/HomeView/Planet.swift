@@ -110,21 +110,22 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                Button(action: {
-                    sessionManager.showDramaCentralView()
-                }) {
-                    ZStack {
-                        Circle()
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.pmbc_pink)
-                            .shadow(color: .black, radius: 2, x: 0, y: 2)
-                        
-                        Text("Drama / \nFix-a-Fight")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    }
-                }
+                    NavigationLink(destination: FightWithFriend(),
+                                   label: {
+                        ZStack {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.pmbc_pink)
+                                .shadow(color: .black, radius: 2, x: 0, y: 2)
+                            
+                            Text("Drama / \nFix-a-Fight")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        }
+                    })
+                   
+                
                 
                 Spacer()
                     .frame(height: 40)

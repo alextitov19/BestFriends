@@ -33,20 +33,11 @@ struct BestFriendsApp: App {
             case .settings:
                 SettingsView()
                     .environmentObject(sessionManager)
-            case .breath:
-                BreathInView()
-                    .environmentObject(sessionManager)
-            case .breathInvite:
-                BreathInviteView()
+            case .dramaMainView:
+                DramaMainView()
                     .environmentObject(sessionManager)
             case .masterFriendVault:
                 MasterFriendVault()
-                    .environmentObject(sessionManager)
-            case .sendNiceChat:
-                SendNiceChat()
-                    .environmentObject(sessionManager)
-            case .friendQualities:
-                FriendQualities()
                     .environmentObject(sessionManager)
             case .bestFriendMessages:
                 BestFriendMessages()
@@ -54,61 +45,6 @@ struct BestFriendsApp: App {
             case .individualFriendMessages:
                 IndividualFriendMessages()
                     .environmentObject(sessionManager)
-            case .myStreaks:
-                MyStreaks()
-                    .environmentObject(sessionManager)
-            case .impetus:
-                Impetus()
-                    .environmentObject(sessionManager)
-            case .dramaMainView:
-                DramaMainView()
-                    .environmentObject(sessionManager)
-            case .fightWithFriend:
-                FightWithFriend()
-                    .environmentObject(sessionManager)
-            case .notReadyTalk:
-                NotReadyTalk()
-                    .environmentObject(sessionManager)
-            case .nuclearOption:
-                NuclearOption()
-                    .environmentObject(sessionManager)
-            case .textingFirst:
-                TextingFirst()
-                    .environmentObject(sessionManager)
-            case .tryThis:
-                TryThis()
-                    .environmentObject(sessionManager)
-            case .timeToTalk:
-                TimeToTalk()
-                    .environmentObject(sessionManager)
-            case .dramaCentralView:
-                DramaCentralView()
-                    .environmentObject(sessionManager)
-            case .why:
-                Why()
-                    .environmentObject(sessionManager)
-            case .fightLandingView:
-                FightLandingView()
-                    .environmentObject(sessionManager)
-            case .journalFight:
-                JournalFight()
-                    .environmentObject(sessionManager)
-            case .showHug:
-                ShowHug()
-                    .environmentObject(sessionManager)
-            case .youGotThis:
-                YouGotThis()
-                    .environmentObject(sessionManager)
-            case .textOptionsView:
-                TextOptionsView()
-                    .environmentObject(sessionManager)
-            case .breakUpNote:
-                BreakUpNote()
-                    .environmentObject(sessionManager)
-            case .textingNote:
-                TextingNote()
-                    .environmentObject(sessionManager)
-                
                 
             }
         }

@@ -9,22 +9,18 @@
 import Foundation
 import SwiftUI
 
-struct NotReadyTalk: View {
+struct Step1_NotReadyTalk: View {
     
     var body: some View {
-//       NavigationView {
-            
             ZStack {
-                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                    .ignoresSafeArea()
                 Image("purpleBackground")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
+                
                AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .offset(y: -250)
                 
                 VStack {
                     
@@ -87,11 +83,11 @@ struct NotReadyTalk: View {
                             .frame(height: 70)
                         
                         NavigationLink(
-                            destination: DramaMainView(),
+                            destination: Step2_FightLandingView(),
                             label: {
-                                Text("< back  'when ready tap Step-2'")
+                                Text("Step-2")
                                     .fontWeight(.medium)
-                                    .frame(width: 360, height: 40)
+                                    .frame(width: 120, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 25))
                                     .background(ColorManager.purple3)
@@ -119,7 +115,7 @@ struct NotReadyTalk: View {
 
 struct NotReadyTalk_Previews : PreviewProvider {
     static var previews: some View {
-        NotReadyTalk()
+        Step1_NotReadyTalk()
     }
 }
 

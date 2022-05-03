@@ -101,7 +101,7 @@ struct MasterFriendVault: View {
                     
                     
                     NavigationLink(
-                        destination: BreathInviteView(),
+                        destination: Step3_BreathInviteView(),
                         label: {
                             Text("  Take a Breather")
                                 .fontWeight(.bold)
