@@ -38,32 +38,16 @@ struct TextingNote: View {
                 
                 
                 VStack {
-                    
-                    Text("Your friend: 'hey'")
-                        .font(.system(size: 25))
+                    Text("Your friend:   hey \nYou:   hey \nYour friend:   what's up?")
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
-                        
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("You: 'hey'")
+                        .multilineTextAlignment(.leading)
+                        .frame(width: 250, height: 150, alignment: .leading)
                         .font(.system(size: 25))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                        
+                        .padding(40)
                     
                     Spacer()
-                        .frame(height: 10)
-                    
-                    Text("Your friend again: 'what's up'")
-                        .font(.system(size: 25))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-               
-                    
-                    Spacer()
-                        .frame(height: 200)
+                        .frame(height: 100)
                     
                     NavigationLink(
                         destination: DramaMainView(),
@@ -72,15 +56,15 @@ struct TextingNote: View {
                                 .fontWeight(.light)
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 350, height: 40, alignment: .leading)
-                                .font(.system(size: 40))
+                                .frame(width: 250, height: 40, alignment: .leading)
+                                .font(.system(size: 30))
                                 .padding(10)
                                 .background(Color.purple)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                     Spacer()
-                        .frame(height: 400)
+                        .frame(height: 500)
                  }
                       }
                     

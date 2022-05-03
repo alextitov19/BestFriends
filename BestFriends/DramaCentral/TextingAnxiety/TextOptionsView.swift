@@ -8,6 +8,9 @@
 import Foundation
 import SwiftUI
 
+// HAVE NOT STARTED THIS PAGE YET
+//THIS PAGE MOVES THE PAGE ON WEBSITE TO THE APP
+
 
 struct TextOptionsView: View {
     

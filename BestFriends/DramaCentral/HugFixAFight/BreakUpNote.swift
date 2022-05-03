@@ -40,18 +40,12 @@ struct BreakUpNote: View {
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
-                        .frame(width: 350, height: 120, alignment: .leading)
+                        .frame(width: 310, height: 120, alignment: .leading)
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 120)
                     
-                    Text("")
-                        .font(.system(size: 25))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.blue)
-                        .frame(width: 350, height: 120, alignment: .leading)
-                    Spacer()
-                        .frame(height: 00)
+                   
                     
                     NavigationLink(
                         destination: DramaMainView(),
@@ -60,7 +54,7 @@ struct BreakUpNote: View {
                                 .fontWeight(.light)
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 350, height: 100, alignment: .leading)
+                                .frame(width: 310, height: 100, alignment: .leading)
                                 .font(.system(size: 25))
                                 .padding(10)
                                 .background(Color.purple)

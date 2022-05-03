@@ -35,7 +35,7 @@ struct FightWithFriend: View {
                     
    
                     Text("we'll pull you")
-                        .font(.system(size: 32))
+                        .font(.system(size: 30))
                         .italic()
                         .foregroundColor(.white)
                         .fontWeight(.light)
@@ -47,7 +47,7 @@ struct FightWithFriend: View {
                     
                     
                     Text("through this drama -")
-                        .font(.system(size: 32))
+                        .font(.system(size: 30))
                         .italic()
                         .foregroundColor(.white)
                         .fontWeight(.light)
@@ -58,7 +58,7 @@ struct FightWithFriend: View {
                         .frame(height: 20)
                     
                     Text("minimizing the wreckage")
-                        .font(.system(size: 32, weight: .bold))
+                        .font(.system(size: 30, weight: .bold))
                         .italic()
                         .foregroundColor(.white)
                         .fontWeight(.light)
@@ -86,7 +86,7 @@ struct FightWithFriend: View {
                         })
                             
                         Text("while helping you find")
-                    .font(.system(size: 40, weight: .bold))
+                    .font(.system(size: 35, weight: .bold))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.gray)
 

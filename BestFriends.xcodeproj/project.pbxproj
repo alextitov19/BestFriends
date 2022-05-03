@@ -581,9 +581,9 @@
 			children = (
 				CFD12CD2281A821C00AB2539 /* FiightWithFriend.swift */,
 				CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */,
+				CFD12CD0281A754200AB2539 /* NotReadyTalk.swift */,
 				CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */,
 				CFAB5412281D145100BBF502 /* FightLandingView.swift */,
-				CFD12CD0281A754200AB2539 /* NotReadyTalk.swift */,
 				CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */,
 				CF3B65E62803E6860003A714 /* BreathIn */,
 				CFAB5405281AA59500BBF502 /* TextingAnxiety */,

@@ -107,7 +107,7 @@ struct NuclearOption: View {
                                 .fontWeight(.light)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.center)
-                                .frame(width: 330, height: 100, alignment: .leading)
+                                .frame(width: 310, height: 100, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
                                 .background(Color.purple)

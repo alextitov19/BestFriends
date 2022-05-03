@@ -64,7 +64,7 @@ struct FightLandingView: View {
                                         Spacer()
                                             .frame(height: 30)
                                 
-                                Text("Which friend did you fight with?")
+                                Text("I had a fight with")
                                     .font(.system(size: 25, weight: .bold))
                                     .italic()
                                     .foregroundColor(.gray)

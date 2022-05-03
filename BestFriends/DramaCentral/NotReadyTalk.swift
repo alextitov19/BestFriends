@@ -36,7 +36,7 @@ struct NotReadyTalk: View {
                         .padding(.horizontal, 20)
                   
                     Text("U P S E T")
-                        .font(.system(size: 100))
+                        .font(.system(size: 90))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
@@ -76,9 +76,6 @@ struct NotReadyTalk: View {
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             }
                     
-                    
-                    Spacer()
-                        .frame(height: 60)
 
                     VStack {
                         
@@ -91,9 +88,9 @@ struct NotReadyTalk: View {
                             label: {
                                 Text("< back  'when ready tap Step-2'")
                                     .fontWeight(.medium)
-                                    .frame(width: 360, height: 40)
+                                    .frame(width: 310, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
+                                    .font(.system(size: 20))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
