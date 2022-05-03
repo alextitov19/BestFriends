@@ -26,6 +26,9 @@ struct MyAccountView: View {
             
             VStack {
                 
+                Spacer()
+                    .frame(height: 5)
+                
                 HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
@@ -153,7 +156,7 @@ struct MyAccountView: View {
     
             .navigationBarHidden(true)
    
-                Spacer()
+            
                 
             }
     }

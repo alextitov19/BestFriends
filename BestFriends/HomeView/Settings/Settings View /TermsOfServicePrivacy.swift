@@ -44,20 +44,7 @@ struct TermsConditionsView: View {
                         .font(.system(size: 30))
                         .offset(x: -25)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-           
-//                    Text("Terms of Service")
-//                        .font(.system(size: 30))
-//                        .offset(x: -25)
-//
-//
-////                    Spacer()
-//
-//                    Text("(in footer of website page)")
-//                        .font(.system(size: 20))
-//                        .italic()
-//                        .offset(x: -25)
-//
-                    Spacer()
+            Spacer()
                     
 
 
@@ -82,7 +69,7 @@ struct TermsConditionsView: View {
 //                Spacer()
 //                    .frame(height: 50)
 //                
-                Link(destination: URL(string: "https://socialtechlabs.com")!) {
+                Link(destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!) {
                     
                     HStack {
                         Text("Privacy Policy")
@@ -102,7 +89,7 @@ struct TermsConditionsView: View {
                 
                 Divider()
                 
-                Link(destination: URL(string: "https://socialtechlabs.com")!) {
+                Link(destination: URL(string: "https://socialtechlabs.com/terms-service/")!) {
                     HStack {
                         Text("Terms of Serivce")
                             .font(.system(size: 20))

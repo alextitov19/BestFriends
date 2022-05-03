@@ -61,7 +61,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Atmosphere")
+                        Text("Build\nProtective\nAtmosphere")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -80,7 +80,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Smile\nVault")
+                        Text("Customize\nmy \nPlanet")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -99,7 +99,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Add\nFriends")
+                        Text("Add\nTrusted\nFriends")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -110,27 +110,28 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                Button(action: {
-                    
-                }) {
-                    ZStack {
-                        Circle()
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.pmbc_pink)
-                            .shadow(color: .black, radius: 2, x: 0, y: 2)
-                        
-                        Text("Customize\nPlanet")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    }
-                }
+                    NavigationLink(destination: FightWithFriend(),
+                                   label: {
+                        ZStack {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.pmbc_pink)
+                                .shadow(color: .black, radius: 2, x: 0, y: 2)
+                            
+                            Text("Fighting")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        }
+                    })
+                   
+                
                 
                 Spacer()
                     .frame(height: 40)
                 
                 Button(action: {
-                    sessionManager.showFreindVaultView()
+                    sessionManager.showMasterFriendVault()
                 }) {
                     ZStack {
                         Circle()
@@ -138,7 +139,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("User\nVault")
+                        Text("Keeping\nFriends\nSafe")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -171,6 +172,8 @@ struct PlanetActionsView: View {
                 
                 Button(action: {
                     
+//                    trying to link to FriendVault page
+                    sessionManager.showBestFriendMessages()
                 }) {
                     ZStack {
                         Circle()
@@ -178,7 +181,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Photo\nPop")
+                        Text("Friend's \nThourhtful \nMessages")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)

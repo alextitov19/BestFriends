@@ -11,10 +11,10 @@ import Promises
 class RestApi {
     var helper: Helper
     var userId: String?
-    let API_URL = "http://54.173.213.37:8080/api/v1/services"
+    let API_URL = "http://54.226.29.220:8080/api/v1/services"
+    let WS_URL = "ws://54.226.29.220:8080/api/v1/services/messages/"
+
 //    let API_URL = "http://localhost:8080/api/v1/services"
-    
-    let WS_URL = "ws://54.173.213.37:8080/api/v1/services/messages/"
 //    let WS_URL = "ws://localhost:8080/api/v1/services/messages/"
 
     public static var instance = RestApi()
@@ -69,7 +69,16 @@ class RestApi {
         return helper.createGroup(url: API_URL + "/groups", createGroup: cg)
     }
     
+    public func createMessageWithImage(groupId: String, body: String, image: Data) -> Promise<Int> {
+        let cmwi = CreateMessageWithImage(groupId: groupId, body: body, image: image)
+        return helper.createMessageWithImage(url: API_URL + "/messages/images", cmwi: cmwi)
+    }
     
+    public func getImage(folderId: String, imageId: String) -> Promise<Data> {
+        let url = API_URL + "/images/" + folderId + "/" + imageId
+        print("URL: ", url)
+        return helper.getImage(url: url)
+    }
     
     func createChatWebSocketRequest(groupId: String) -> URLRequest {
         var request: URLRequest = URLRequest(url: URL(string: WS_URL + groupId)!)

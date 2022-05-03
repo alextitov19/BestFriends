@@ -9,71 +9,122 @@ import SwiftUI
 
 struct ChatBubble: View {
     
+    let groupId: String
     let message: Message
     let myOwnMessage: Bool
+    
+    @State private var image: UIImage? = nil
     
     var body: some View {
         
         if myOwnMessage {
-            
-            VStack {
-                HStack {
-                    Spacer()
+            if message.image != nil {
+                if image != nil {
+                    HStack {
+                        Spacer()
+                        
+                        Image(uiImage: image!)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 300)
+                            .cornerRadius(25)
+                    }
+                    .padding(.horizontal, 5)
                     
-                    Text(message.body)
-                        .padding(10)
-                        .multilineTextAlignment(.leading)
-                        .font(.system(size: 16).weight(.light))
-                        .foregroundColor(.white)
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
+                } else {
+                    MyChatMessage(messageBody: "📸")
+                        .onTapGesture { downloadImage(key: message.image) }
                 }
-                .padding(.horizontal, 5)
+            } else {
+                MyChatMessage(messageBody: message.body)
             }
-            
         } else {
-            
-            VStack {
-                HStack {
-                    Text(message.senderName)
-                        .frame(width: 200, alignment: .leading)
-                        .foregroundColor(.white)
-                        .font(.system(size: 16).weight(.thin))
-                        .offset(x: 5, y: 5)
+            if message.image != nil {
+                if image != nil {
+                    HStack {
+                        Image(uiImage: image!)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 300)
+                            .cornerRadius(25)
+                        
+                        Spacer()
+                    }
+                    .padding(.horizontal, 5)
                     
-                    Spacer()
+                } else {
+                    FriendChatMessage(name: message.senderName, messageBody: "📸")
+                        .onTapGesture { downloadImage(key: message.image) }
                 }
-                
-                HStack {
-                    Text(message.body)
-                        .padding(10)
-                        .multilineTextAlignment(.leading)
-                        .font(.system(size: 16).weight(.light))
-                        .foregroundColor(.white)
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                    
-                    Spacer()
-                }
-                .padding(.horizontal, 5)
+            } else {
+                FriendChatMessage(name: message.senderName, messageBody: message.body)
             }
         }
     }
     
-    
-    func getWidth(text: String) -> CGFloat {
-        if text.count > 24 {
-            return 200
-        } else {
-            return CGFloat(text.count * (10))
+    private func downloadImage(key: String?) {
+        if key != nil {
+            print("Image key: ", key!)
+            RestApi.instance.getImage(folderId: groupId, imageId: key!).then { data in
+                print("Got data")
+                let img = UIImage(data: data)
+                image = UIImage(data: data)
+                print("Got image from data")
+            }
         }
-    }
-    
-    func getHeight(text: String) -> CGFloat {
-        let result = Double(text.count / 24)
-        let rows = result.rounded(.up) + 1
-        return CGFloat(rows * 30)
+        
     }
 }
 
+private struct MyChatMessage: View {
+    
+    let messageBody: String
+    
+    var body: some View {
+        HStack {
+            Spacer()
+            
+            Text(messageBody)
+                .padding(10)
+                .multilineTextAlignment(.leading)
+                .font(.system(size: 16).weight(.light))
+                .foregroundColor(.white)
+                .background(ColorManager.purple3)
+                .cornerRadius(15)
+        }
+        .padding(.horizontal, 5)
+    }
+}
 
+private struct FriendChatMessage: View {
+    
+    let name: String
+    let messageBody: String
+    
+    var body: some View {
+        VStack {
+            HStack {
+                Text(name)
+                    .frame(width: 200, alignment: .leading)
+                    .foregroundColor(.white)
+                    .font(.system(size: 16).weight(.thin))
+                    .offset(x: 5, y: 5)
+                
+                Spacer()
+            }
+            
+            HStack {
+                Text(messageBody)
+                    .padding(10)
+                    .multilineTextAlignment(.leading)
+                    .font(.system(size: 16).weight(.light))
+                    .foregroundColor(.white)
+                    .background(ColorManager.purple3)
+                    .cornerRadius(15)
+                
+                Spacer()
+            }
+            .padding(.horizontal, 5)
+        }
+    }
+}

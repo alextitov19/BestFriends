@@ -14,108 +14,110 @@ struct HomeView: View {
     @State private var homeData: HomeData?
     
     @State private var planets: [Planet] = []
-        
+    
     @State private var focusPlanet = false
     
     @State private var newGroupMembers: [String] = []
     
     @State private var chatGroupsView = ChatGroupsView(groups: [])
-
+    
     var body: some View {
-        ZStack {
-            // Background Image...
-            Image("blueBackground")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-                .onAppear {
-                    getHomeData()
-                }
-            
-            // Stars animation...
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .onTapGesture(perform: backgroundTapped)
-            
-            VStack {
-                // Top 2 planets
-                HStack {
-                    if planets.count > 0 && !focusPlanet {
-                        planets[0]
-                            .onTapGesture(perform: { friendPlanetTapped(id: planets[0].user.id)})
+        NavigationView {
+            ZStack {
+                // Background Image...
+                Image("blueBackground")
+                    .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                    .onAppear {
+                        getHomeData()
                     }
-                    
-                    if planets.count > 1 && !focusPlanet {
-                        Spacer()
-                            .frame(width: 80)
-                        
-                        planets[1]
-                            .onTapGesture(perform: { friendPlanetTapped(id: planets[1].user.id)})
-                    }
-                }
-                // Main planet
-                if homeData != nil {
-                    ZStack {
-                        // Main planet
-                        if !focusPlanet {
-                            PlanetView(planet: homeData?.atmosphere.planet ?? 0, mood: homeData?.atmosphere.mood ?? 0)
-                                .scaledToFit()
-                                .frame(width: 200, height: 200)
-                                .onTapGesture(perform: mainPlanetTapped)
-                                .glow(color: glowColor(), radius: 20)
-                                .padding()
+                
+                // Stars animation...
+                AdPlayerView(name: "backgroundAnimation")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .onTapGesture(perform: backgroundTapped)
+                
+                VStack {
+                    // Top 2 planets
+                    HStack {
+                        if planets.count > 0 && !focusPlanet {
+                            planets[0]
+                                .onTapGesture(perform: { friendPlanetTapped(id: planets[0].user.id)})
                         }
                         
-                        // Tapped on the main planet
-                        if focusPlanet {
-                            PlanetActionsView()
-                                .environmentObject(sessionManager)
+                        if planets.count > 1 && !focusPlanet {
+                            Spacer()
+                                .frame(width: 80)
+                            
+                            planets[1]
+                                .onTapGesture(perform: { friendPlanetTapped(id: planets[1].user.id)})
+                        }
+                    }
+                    // Main planet
+                    if homeData != nil {
+                        ZStack {
+                            // Main planet
+                            if !focusPlanet {
+                                PlanetView(planet: homeData?.atmosphere.planet ?? 0, mood: homeData?.atmosphere.mood ?? 0)
+                                    .scaledToFit()
+                                    .frame(width: 200, height: 200)
+                                    .onTapGesture(perform: mainPlanetTapped)
+                                    .glow(color: glowColor(), radius: 20)
+                                    .padding()
+                            }
+                            
+                            // Tapped on the main planet
+                            if focusPlanet {
+                                PlanetActionsView()
+                                    .environmentObject(sessionManager)
+                            }
+                            
+                            
+                        }
+                    }
+                    // Middle 2 planets
+                    HStack {
+                        if planets.count > 2 && !focusPlanet {
+                            planets[2]
+                                .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)})
                         }
                         
-                        
-                    }
-                }
-                // Middle 2 planets
-                HStack {
-                    if planets.count > 2 && !focusPlanet {
-                        planets[2]
-                            .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)})
+                        if planets.count > 3 && !focusPlanet {
+                            Spacer()
+                                .frame(width: 80)
+                            
+                            planets[3]
+                                .onTapGesture(perform: { friendPlanetTapped(id: planets[3].user.id)})
+                        }
                     }
                     
-                    if planets.count > 3 && !focusPlanet {
-                        Spacer()
-                            .frame(width: 80)
-                        
-                        planets[3]
-                            .onTapGesture(perform: { friendPlanetTapped(id: planets[3].user.id)})
+                    // Bottom planet
+                    if planets.count > 4 && !focusPlanet {
+                        planets[4]
+                            .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)})
+                            .padding()
                     }
+                    
+                    if newGroupMembers.count > 0 && !focusPlanet {
+                        Button(action: {
+                            createGroup()
+                        }, label: {
+                            Text("Create Group")
+                                .frame(width: 130, height: 40)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                        })
+                    }
+                    
                 }
                 
-                // Bottom planet
-                if planets.count > 4 && !focusPlanet {
-                    planets[4]
-                        .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)})
-                        .padding()
+                if homeData?.groups != nil {
+                    ChatGroupsView(groups: homeData?.groups ?? [])
+                        .environmentObject(sessionManager)
                 }
-                
-                if newGroupMembers.count > 0 && !focusPlanet {
-                    Button(action: {
-                        createGroup()
-                    }, label: {
-                        Text("Create Group")
-                            .frame(width: 130, height: 40)
-                            .foregroundColor(.white)
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                    })
-                }
-                
-            }
-            
-            if homeData?.groups != nil {
-                ChatGroupsView(groups: homeData?.groups ?? [])
-                    .environmentObject(sessionManager)
             }
         }
     }
@@ -125,8 +127,8 @@ struct HomeView: View {
             print("Got HomeData: ", data)
             homeData = data
             createPlanets()
-//            print("Got groups: ", data.groups.count)
-//            chatGroupsView = ChatGroupsView(groups: data.groups)
+            //            print("Got groups: ", data.groups.count)
+            //            chatGroupsView = ChatGroupsView(groups: data.groups)
         }.catch { err in
             print("Got error")
             print(err)

@@ -15,8 +15,6 @@ struct BestFriendsApp: App {
     var body: some Scene {
         WindowGroup {
             switch sessionManager.appState {
-          
-             
             case .signUp:
                 SignUpView()
                     .environmentObject(sessionManager)
@@ -35,15 +33,36 @@ struct BestFriendsApp: App {
             case .settings:
                 SettingsView()
                     .environmentObject(sessionManager)
-            case .breath:
-                BreathInView()
+            case .dramaMainView:
+                DramaMainView()
                     .environmentObject(sessionManager)
-            case .friendVault:
-                FriendVaultView()
+            case .masterFriendVault:
+                MasterFriendVault()
                     .environmentObject(sessionManager)
+            case .bestFriendMessages:
+                BestFriendMessages()
+                    .environmentObject(sessionManager)
+            case .individualFriendMessages:
+                IndividualFriendMessages()
+                    .environmentObject(sessionManager)
+            case .fightTextUserIdeas:
+                FightTextUserIdeas()
+                    .environmentObject(sessionManager)
+            case .whoFighting:
+                WhoFighting()
+                    .environmentObject(sessionManager)
+            case .parentsFighting:
+                ParentsFighting()
+                    .environmentObject(sessionManager)
+            case .fightWithFriend:
+                FightWithFriend()
+                    .environmentObject(sessionManager)
+                
+                
+                
+                
+                
             }
-        
-            
         }
     }
 }

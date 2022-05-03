@@ -13,13 +13,20 @@ enum AppState {
     case invite
     case chat(user: User, group: Group)
     case settings
-    case breath
-    case friendVault
+    case dramaMainView
+    case masterFriendVault
+    case individualFriendMessages
+    case bestFriendMessages
+    case fightTextUserIdeas
+    case whoFighting
+    case parentsFighting
+    case fightWithFriend
+    
 }
 
 final class SessionManager: ObservableObject {
     @Published var appState: AppState = .login
-    
+
     func showSignUp() {
         appState = .signUp
     }
@@ -52,11 +59,35 @@ final class SessionManager: ObservableObject {
     func showSettings() {
         appState = .settings
     }
-   
-    func testBreathIn() {
-        appState = .breath
+    
+    func showDramaMainView() {
+            appState = .dramaMainView
     }
-    func showFreindVaultView() {
-        appState = .friendVault
+    
+    func showMasterFriendVault() {
+        appState = .masterFriendVault
+    }
+
+    func showBestFriendMessages() {
+            appState = .bestFriendMessages
+    }
+    func showIndividualFriendMessages() {
+            appState = .individualFriendMessages
+    }
+    func showFightTextUserIdeas() {
+            appState = .fightTextUserIdeas
+    }
+    func showWhoFighting() {
+            appState = .whoFighting
+    }
+    func showParentsFighting() {
+            appState = .parentsFighting
+    }
+    func showFightWithFriend() {
+            appState = .fightWithFriend
+        
+        
+        
+        
     }
 }
