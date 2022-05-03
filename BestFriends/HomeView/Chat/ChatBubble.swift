@@ -12,24 +12,30 @@ struct ChatBubble: View {
     let message: Message
     let myOwnMessage: Bool
     
+    @State private var image: UIImage? = nil
+    
     var body: some View {
         
         if myOwnMessage {
             
-            VStack {
                 HStack {
                     Spacer()
                     
-                    Text(message.body)
-                        .padding(10)
-                        .multilineTextAlignment(.leading)
-                        .font(.system(size: 16).weight(.light))
-                        .foregroundColor(.white)
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
+                    if message.image != nil {
+                        if image != nil {
+                            
+                        }
+                    } else {
+                        Text(message.body)
+                            .padding(10)
+                            .multilineTextAlignment(.leading)
+                            .font(.system(size: 16).weight(.light))
+                            .foregroundColor(.white)
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                    }
                 }
                 .padding(.horizontal, 5)
-            }
             
         } else {
             
@@ -59,7 +65,7 @@ struct ChatBubble: View {
             }
         }
     }
-    
+        
     
     func getWidth(text: String) -> CGFloat {
         if text.count > 24 {

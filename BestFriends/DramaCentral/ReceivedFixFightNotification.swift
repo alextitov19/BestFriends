@@ -52,7 +52,7 @@ struct ReceivedFixFightNotification: View {
                             
                             VStack {
                                 NavigationLink(
-                                    destination: NotReadyTalk(),
+                                    destination: Step1_NotReadyTalk(),
                                     label: {
                                         Text("Not Ready to Talk Yet")
                                             .fontWeight(.thin)

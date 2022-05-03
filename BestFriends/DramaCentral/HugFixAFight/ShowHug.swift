@@ -42,7 +42,7 @@ struct ShowHug: View {
                         .frame(height: 520)
                     
                     NavigationLink(
-                        destination: TimeToTalk(),
+                        destination: Step7_TimeToTalk(),
                         label: {
                             Text("it's going to be okay")
                                 .fontWeight(.light)

@@ -51,7 +51,7 @@ struct MyStreaks: View {
                     
                     
                     NavigationLink(
-                        destination: BreathInviteView(),
+                        destination: Step3_BreathInviteView(),
                         label: {
                             Text("Friend 1")
                                 .fontWeight(.bold)
@@ -67,7 +67,7 @@ struct MyStreaks: View {
                         })
                      
                     NavigationLink(
-                        destination: BreathInviteView(),
+                        destination: Step3_BreathInviteView(),
                         label: {
                             Text("Friend 2")
                                 .fontWeight(.bold)
@@ -83,7 +83,7 @@ struct MyStreaks: View {
                         })
                     
                     NavigationLink(
-                        destination: BreathInviteView(),
+                        destination: Step3_BreathInviteView(),
                         label: {
                             Text("Friend 3")
                                 .fontWeight(.bold)
@@ -98,7 +98,7 @@ struct MyStreaks: View {
                            
                         })
                     NavigationLink(
-                        destination: BreathInviteView(),
+                        destination: Step3_BreathInviteView(),
                         label: {
                             Text("Friend 4")
                                 .fontWeight(.bold)
@@ -115,7 +115,7 @@ struct MyStreaks: View {
                     
                     
                     NavigationLink(
-                        destination: BreathInviteView(),
+                        destination: Step3_BreathInviteView(),
                         label: {
                             Text("Friend 5")
                                 .fontWeight(.bold)
@@ -142,7 +142,7 @@ struct MyStreaks: View {
                         .padding(.horizontal, 0)
                   
                         NavigationLink(
-                            destination: BreathInviteView(),
+                            destination: Step3_BreathInviteView(),
                             label: {
                                 Text("Finished (xx) Goals")
                                     .fontWeight(.bold)
@@ -161,7 +161,7 @@ struct MyStreaks: View {
                             })
                          
                         NavigationLink(
-                            destination: BreathInviteView(),
+                            destination: Step3_BreathInviteView(),
                             label: {
                                 Text("Finished (xx) Rockets")
                                     .fontWeight(.bold)
