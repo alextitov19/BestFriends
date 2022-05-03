@@ -13,150 +13,137 @@ import SwiftUI
 struct BestFriendMessages: View {
     
     @State private var showItems: Bool = false
-    @State private var offset: CGFloat = 200.0   
+    @State private var offset: CGFloat = 200.0
     @EnvironmentObject var sessionManager: SessionManager
+    
+    let user: User
+    let atmosphere: Atmosphere
+    
+    let friends: [User]
+    let friendAtmospheres: [Atmosphere]
+    
+    @State private var planets: [Planet] = []
     
     var body: some View {
         
         ZStack {
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
-
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-           
+                .onAppear(perform: createPlanets)
+            
             AdPlayerView(name: "backgroundAnimation")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .offset(y: -250)
             
             
-            Image("planet_1")
-        
-        ZStack {
-
-     
-            Button(action: {
-             print("tap function is working")
-                sessionManager.showIndividualFriendMessages()
-            }) {
-                FriendVaultCircle (color: .pink, friendName: "Friend 1")
-                }
-            .offset(x: showItems ? 100 : 0, y: showItems ? -375: 0)
-             
-       
-//Trying to use Friend 2 at a test to get me to DramaMainView
-           
-            Button(action: {
-                print("tap function is working")
-                sessionManager.showIndividualFriendMessages()
-            }) {
-                FriendVaultCircle (color: .orange, friendName: "Friend 2")
-                }
-            .offset(x: showItems ? -100 : 0, y: showItems ? -400: 0)
+//            PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
+//                .scaledToFit()
+//                .frame(width: 700)
             
-            
-            Button(action: {
-             print("tap function is working")
-                sessionManager.showIndividualFriendMessages()
-            }) {
-                FriendVaultCircle (color: .purple, friendName: "Friend 3")
-                }
-            .offset(x: showItems ? -150 : 0, y: showItems ? -550: 0)
-            
-            
-            Button(action: {
-             print("tap function is working")
-                sessionManager.showIndividualFriendMessages()
-            }) {
-                FriendVaultCircle (color: .gray, friendName: "Friend 4")
-                }
-            .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
-            
-            
-            Button(action: {
-             print("tap function is working")
-                sessionManager.showIndividualFriendMessages()
-            }) {
-                FriendVaultCircle (color: .blue, friendName: "Friend 5")
-                }
-            .offset(x: showItems ? 80 : 0, y: showItems ? -260: 0)
-         
             ZStack {
-           Image(systemName: "heart.fill")
-                    .resizable()
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
-                    .frame(width: 190, height: 190)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
-
-                VStack {
-                
-                Text("'TAP'")
-                        .font(.title)
-                        .foregroundColor(.green)
-                        .fontWeight(.medium)
-//                        .multilineTextAlignment(.center)
-               
-            Text("Thoughtful \nMessages you \n'long-tapped' \nin Chat")
-                    .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .fontWeight(.medium)
-                    .multilineTextAlignment(.center)
+                if showItems {
+                if planets.count > 0 {
+                    NavigationLink(destination: IndividualFriendMessages(friend: planets[0].user, atmosphere: planets[0].atmosphere), label: { planets[0] })
+                    .offset(x: showItems ? 100 : 0, y: showItems ? -305: 0)
                 }
-            
-
+                                
+                if planets.count > 1 {
+                    NavigationLink(destination: IndividualFriendMessages(friend: planets[1].user, atmosphere: planets[1].atmosphere), label: { planets[1] })
+                        .offset(x: showItems ? -100 : 0, y: showItems ? 305: 0)
+                }
+                
+                if planets.count > 2 {
+                    NavigationLink(destination: IndividualFriendMessages(friend: planets[2].user, atmosphere: planets[2].atmosphere), label: { planets[2] })
+                        .offset(x: showItems ? -150 : 0, y: showItems ? 150: 0)
+                }
+                                
+                if planets.count > 3 {
+                    NavigationLink(destination: IndividualFriendMessages(friend: planets[3].user, atmosphere: planets[3].atmosphere), label: { planets[3] })
+                        .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
+                }
+                
+                if planets.count > 4 {
+                    NavigationLink(destination: IndividualFriendMessages(friend: planets[4].user, atmosphere: planets[4].atmosphere), label: { planets[4] })
+                        .offset(x: showItems ? 80 : 0, y: showItems ? -260: 0)
+                }
+                }
+                
+                ZStack {
+                    Image(systemName: "heart.fill")
+                        .resizable()
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
+                        .frame(width: 190, height: 190)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+                    
+                    VStack {
+                        Text("'TAP'")
+                            .font(.title)
+                            .foregroundColor(.green)
+                            .fontWeight(.medium)
+                        
+                        Text("Thoughtful \nMessages you \n'long-tapped' \nin Chat")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                    }
+                }
+                .onTapGesture {
+                    withAnimation {
+                        self.showItems.toggle()
+                    }
+                    print("Planets count: ", planets.count)
+                }
+                .animation(Animation.easeInOut(duration: 1.0), value: showItems)
             }
-            
-            
-           .onTapGesture {
-               withAnimation {
-               self.showItems.toggle()
-               }
-               print("tap function is working")
-           }
-            
-           .animation(Animation.easeInOut(duration: 1.0), value: showItems)
-
+        }
+    }
+    
+    // Create plantes and populate the planets array
+    private func createPlanets() {
+        planets = []
+        for friend in friends {
+            for atm in friendAtmospheres {
+                if friend.atmosphere == atm.id {
+                    // Found the friend - atmosphere pair
+                    let planet = Planet(user: friend, atmosphere: atm)
+                    planets.append(planet)
+                    print("Created planet")
+                }
             }
-        
         }
-            
-            
-        }
-   }
+    }
+}
+
 
 struct FriendVaultCircle: View {
     var color: Color
     var friendName: String
     
     var body: some View {
-       
-        ZStack {
-          
-        Rectangle()
-        .frame(width: 105, height: 105)
-        .clipShape(Circle())
-        .foregroundColor(color)
-
-        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
         
-        Text(friendName)
+        ZStack {
+            Rectangle()
+                .frame(width: 105, height: 105)
+                .clipShape(Circle())
+                .foregroundColor(color)
+            
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
+            
+            Text(friendName)
                 .fontWeight(.light)
                 .foregroundColor(.black)
-//
-//            Spacer()
-//                  .frame(height: 200)
-//
+            
         }
     }
 }
 
 
-struct BestFriendMessages_Previews : PreviewProvider {
-    static var previews: some View {
-        BestFriendMessages()
-    }
-
-}
+//struct BestFriendMessages_Previews : PreviewProvider {
+//    static var previews: some View {
+//        BestFriendMessages()
+//    }
+//
+//}

@@ -45,7 +45,6 @@ struct ChatView: View {
                 ScrollView(.vertical) {
                     ForEach(messages, id: \.id) { message in
                         ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
-//                            .onTapGesture{ downloadImage(key: message.image) }
                     }
                 }
                 

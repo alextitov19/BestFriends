@@ -70,7 +70,7 @@ struct HomeView: View {
                             
                             // Tapped on the main planet
                             if focusPlanet {
-                                PlanetActionsView()
+                                PlanetActionsView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres)
                                     .environmentObject(sessionManager)
                             }
                             
@@ -137,6 +137,7 @@ struct HomeView: View {
     
     // Create plantes and populate the planets array
     private func createPlanets() {
+        planets = []
         let friends: [User] = homeData?.friends ?? []
         let atmosperes: [Atmosphere] = homeData?.friendAtmospheres ?? []
         
@@ -144,7 +145,7 @@ struct HomeView: View {
             for atmosphere in atmosperes {
                 if friend.atmosphere == atmosphere.id {
                     // Found the friend - atmosphere pair
-                    let planet = Planet(user: friend, planet: atmosphere.planet, mood: atmosphere.mood)
+                    let planet = Planet(user: friend, atmosphere: atmosphere)
                     planets.append(planet)
                 }
             }
