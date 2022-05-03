@@ -204,10 +204,10 @@ struct DramaMainView: View {
                         NavigationLink(
                             destination: WhoFighting(),
                             label: {
-                                Text("my Journal")
+                                Text("Who's Fighting?")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 150.0, height: 40)
+                                    .frame(width: 225.0, height: 40)
                                     .font(.system(size: 30))
                                 
                                     .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
