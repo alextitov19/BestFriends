@@ -94,7 +94,7 @@ struct ParentsFighting: View {
                         .kerning(10)
            
                 
-                Text("Are they getting a divorce?")
+                Text("Are they getting divorced?")
                     .font(.system(size: 23))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
