@@ -25,61 +25,59 @@ struct TextingNote: View {
                 .blendMode(.screen)
             
             //            put in Friend 1 planet
-            Image("2 weeks")
-                .resizable()
-                .frame(width: 400, height: 400)
-            
+//            Image("2 weeks")
+//                .resizable()
+//                .frame(width: 400, height: 400)
+//
             
             
             VStack {
-                Text("Before we")
+                Text("You Got ")
                     .font(.system(size: 50, weight: .bold))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.purple)
                 
                 
-                Text("START")
+                Text("T H I S")
                     .font(.system(size: 80, weight: .bold))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.purple)
                     .kerning(10)
                 
-                Text("Your friend: 'hey' \nYou: 'hey' \nYour friend: 'what's up' \nYOU: 'my STANDARDS'")
-                    .font(.system(size: 32))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color.black)
-                    .padding(.vertical, 100)
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 100)
                 
-                Text("")
-                    .font(.system(size: 25))
+                Text("“It always seems impossible until it's done.” — Nelson Mandela")
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 310, height: 100, alignment: .leading)
+                    .font(.system(size: 25))
+                    .padding(10)
+                    .background(Color.purple)
+                    .cornerRadius(15)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
+                
+                
+                Spacer()
+                    .frame(height: 170)
+              
                 
                 NavigationLink(
                     destination: Step6_TextingFirst(),
                     label: {
                         Text("Step-6")
-                            .fontWeight(.medium)
-                            .frame(width: 120, height: 40)
+                            .fontWeight(.thin)
+                            .frame(width: 110, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 25))
+                            .font(.system(size: 30))
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-                .padding(.vertical, 50)
+                
             }
         }
         
