@@ -33,8 +33,8 @@ struct ParentsFighting: View {
             VStack {
                 
                 
-                Text("OMG, my parents are")
-                    .font(.system(size: 35))
+                Text("Parents")
+                    .font(.system(size: 50))
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
                     
@@ -92,8 +92,12 @@ struct ParentsFighting: View {
                     Spacer()
                     .frame(height: 15)
                     
-                
-                
+                    Text("Questioning?")
+                        .font(.system(size: 40))
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.blue)
+                        .kerning(10)
+                    
                 Spacer()
                     .frame(height: 30)
                 
@@ -102,8 +106,7 @@ struct ParentsFighting: View {
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height: 10)
+            
                 }
                 
             VStack {
@@ -112,8 +115,7 @@ struct ParentsFighting: View {
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height: 10)
+              
                 
                 Text("Sometimes I really hate it here")
                     .font(.system(size: 23))
