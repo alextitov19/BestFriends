@@ -18,7 +18,7 @@ struct ChatBubble: View {
     var body: some View {
         
         if myOwnMessage {
-            if message.image != nil {
+            if message.image?.count ?? 0 > 0 {
                 if image != nil {
                     HStack {
                         Spacer()
@@ -39,7 +39,7 @@ struct ChatBubble: View {
                 MyChatMessage(messageBody: message.body)
             }
         } else {
-            if message.image != nil {
+            if message.image?.count ?? 0 > 0 {
                 if image != nil {
                     HStack {
                         Image(uiImage: image!)

@@ -74,6 +74,7 @@ struct ChatView: View {
                         }
                         .font(.system(size: 18))
                         .submitLabel(.send)
+                        .onSubmit { sendMessage() }
                         .padding()
                         .overlay(RoundedRectangle(cornerRadius: 20)
                             .stroke(Color.gray)
