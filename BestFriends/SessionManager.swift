@@ -18,6 +18,8 @@ enum AppState {
     case individualFriendMessages
     case bestFriendMessages
     case fightTextUserIdeas
+    case whoFighting
+    
 }
 
 final class SessionManager: ObservableObject {
@@ -72,8 +74,9 @@ final class SessionManager: ObservableObject {
     }
     func showFightTextUserIdeas() {
             appState = .fightTextUserIdeas
-        
-        
+    }
+    func showWhoFighting() {
+            appState = .whoFighting
         
         
     }

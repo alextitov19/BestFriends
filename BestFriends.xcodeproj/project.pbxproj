@@ -104,6 +104,7 @@
 		CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5421281FC8B800BBF502 /* TextingNote.swift */; };
 		CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */; };
 		CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB542728211BAC00BBF502 /* ParentsFighting.swift */; };
+		CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5429282123EA00BBF502 /* WhoFighting.swift */; };
 		CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
 		CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC0281770B600AB2539 /* MyStreaks.swift */; };
@@ -221,6 +222,7 @@
 		CFAB5421281FC8B800BBF502 /* TextingNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextingNote.swift; sourceTree = "<group>"; };
 		CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightTextUserIdeas.swift; sourceTree = "<group>"; };
 		CFAB542728211BAC00BBF502 /* ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsFighting.swift; sourceTree = "<group>"; };
+		CFAB5429282123EA00BBF502 /* WhoFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoFighting.swift; sourceTree = "<group>"; };
 		CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobPracticePage.swift; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
 		CFD12CC0281770B600AB2539 /* MyStreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStreaks.swift; sourceTree = "<group>"; };
@@ -584,7 +586,6 @@
 				CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */,
 				CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */,
 				CFAB541A281E5F8300BBF502 /* YouGotThis.swift */,
-				CFAB542728211BAC00BBF502 /* ParentsFighting.swift */,
 			);
 			path = "Step 7";
 			sourceTree = "<group>";
@@ -595,6 +596,21 @@
 				CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */,
 			);
 			path = "Push Notifiction Fight Invite";
+			sourceTree = "<group>";
+		};
+		CFAB542C2821244600BBF502 /* Fight w Friend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Fight w Friend";
+			sourceTree = "<group>";
+		};
+		CFAB542D2821245C00BBF502 /* Parents Fighting */ = {
+			isa = PBXGroup;
+			children = (
+				CFAB542728211BAC00BBF502 /* ParentsFighting.swift */,
+			);
+			path = "Parents Fighting";
 			sourceTree = "<group>";
 		};
 		CFD12CC52819436F00AB2539 /* OurStory */ = {
@@ -617,6 +633,9 @@
 		CFD12CC92819E98800AB2539 /* DramaCentral */ = {
 			isa = PBXGroup;
 			children = (
+				CFAB5429282123EA00BBF502 /* WhoFighting.swift */,
+				CFAB542D2821245C00BBF502 /* Parents Fighting */,
+				CFAB542C2821244600BBF502 /* Fight w Friend */,
 				CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */,
 				CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */,
 				CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */,
@@ -831,6 +850,7 @@
 				CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */,
 				CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */,
 				CFD12CD1281A754200AB2539 /* Step1_NotReadyTalk.swift in Sources */,
+				CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,
 				7ACB385328208D38009559AF /* ImagePicker.swift in Sources */,
