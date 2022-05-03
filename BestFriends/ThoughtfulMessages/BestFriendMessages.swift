@@ -99,8 +99,8 @@ struct BestFriendMessages: View {
                         .fontWeight(.medium)
 //                        .multilineTextAlignment(.center)
                
-            Text("Thoughtful \nMessages \nyou 'long-tapped' \nin Chat")
-                    .font(.system(size: 15))
+            Text("Thoughtful \nMessages you \n'long-tapped' \nin Chat")
+                    .font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)

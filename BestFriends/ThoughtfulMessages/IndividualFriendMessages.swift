@@ -10,16 +10,15 @@
 import Foundation
 import SwiftUI
 
-// Friend 1
+
 
 struct IndividualFriendMessages: View {
+   
+    @EnvironmentObject var sessionManager: SessionManager
    
     var body: some View {
 //        ScrollView {
             ZStack {
-                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                    .ignoresSafeArea()
-
                 Image("purpleBackground")
                     .resizable()
                     .ignoresSafeArea()
@@ -30,7 +29,8 @@ struct IndividualFriendMessages: View {
                     .blendMode(.screen)
                     .offset(y: -250)
                 
-    //            put in Friend 1 planet
+    //            put in appropriate Friend's  planet
+                
                 Image("2 weeks")
             
                 
@@ -55,17 +55,17 @@ struct IndividualFriendMessages: View {
                         Spacer()
                             .frame(height: 10)
                     }
+                    
 //              put in Friend 1 name below
                     Text("[Friend 1's name]")
                         .font(.system(size: 30))
                         .foregroundColor(.white)
-//                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+
                         
                     Text("Thoughtful Messages")
                         .font(.system(size: 40))
                         .foregroundColor(.white)
-//                       .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-//
+
                     ScrollView(.vertical) {
        
             VStack {
@@ -116,8 +116,24 @@ struct IndividualFriendMessages: View {
                                 .multilineTextAlignment(.center)
                        
                         Divider ()
-               
-                
+                }
+                    Spacer ()
+                        .frame(height: 140)
+                    
+                VStack {
+                    Button(action: {
+                        sessionManager.showHome()
+                    }, label: {
+                        Text("HOME")
+                            .fontWeight(.thin)
+                            .frame(width: 100, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        
+                    })
                             }
             
                         }
@@ -130,6 +146,17 @@ struct IndividualFriendMessages: View {
     }
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 struct IndividualFriendMessages_Previews : PreviewProvider {
     static var previews: some View {
         IndividualFriendMessages()

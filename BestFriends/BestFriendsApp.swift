@@ -45,6 +45,11 @@ struct BestFriendsApp: App {
             case .individualFriendMessages:
                 IndividualFriendMessages()
                     .environmentObject(sessionManager)
+            case .fightTextUserIdeas:
+                FightTextUserIdeas()
+                    .environmentObject(sessionManager)
+                
+                
                 
             }
         }
