@@ -90,7 +90,7 @@ struct ParentsFighting: View {
                 VStack {
                
                     Spacer()
-                    .frame(height: 30)
+                    .frame(height: 15)
                     
                 
                 
@@ -103,7 +103,7 @@ struct ParentsFighting: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 10)
                 }
                 
             VStack {
@@ -113,7 +113,7 @@ struct ParentsFighting: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 10)
                 
                 Text("Sometimes I really hate it here")
                     .font(.system(size: 23))
@@ -121,7 +121,7 @@ struct ParentsFighting: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 15)
                 
                 NavigationLink(
                     destination: JournalFight(),
@@ -138,7 +138,7 @@ struct ParentsFighting: View {
                         
                         
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 30)
                 
                 NavigationLink(
                     destination: Step5_Why(),
