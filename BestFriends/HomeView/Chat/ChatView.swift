@@ -44,7 +44,7 @@ struct ChatView: View {
                 // MARK: Main scroll view
                 ScrollView(.vertical) {
                     ForEach(messages, id: \.id) { message in
-                        ChatBubble(message: message, myOwnMessage: message.senderId == user.id)
+                        ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
 //                            .onTapGesture{ downloadImage(key: message.image) }
                     }
                 }
