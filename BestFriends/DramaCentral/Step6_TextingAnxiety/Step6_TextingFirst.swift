@@ -119,7 +119,7 @@ struct Step6_TextingFirst: View {
                             Text("Try This")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
-                                .frame(width: 150.0, height: 50)
+                                .frame(width: 150.0, height: 40)
                                 .font(.system(size: 30))
                             
                                 .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
