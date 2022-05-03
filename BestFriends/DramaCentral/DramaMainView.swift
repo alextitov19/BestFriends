@@ -202,7 +202,7 @@ struct DramaMainView: View {
                 VStack {
                         
                         NavigationLink(
-                            destination: TryThis(),
+                            destination: WhoFighting(),
                             label: {
                                 Text("my Journal")
                                     .fontWeight(.thin)

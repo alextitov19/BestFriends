@@ -40,7 +40,7 @@ struct WhoFighting: View {
      
             Button(action: {
              print("tap function is working")
-                sessionManager.showIndividualFriendMessages()
+                sessionManager.showFightWithFriend()
             }) {
                 WhoFightingCircle (color: .pink, friendName: " Fight w/ Friend")
                 }
@@ -51,9 +51,9 @@ struct WhoFighting: View {
            
             Button(action: {
                 print("tap function is working")
-                sessionManager.showIndividualFriendMessages()
+                sessionManager.showParentsFighting()
             }) {
-                WhoFightingCircle (color: .orange, friendName: "Parents Fighting")
+                WhoFightingCircle (color: .orange, friendName: "My Parents")
                 }
             .offset(x: showItems ? -100 : 0, y: showItems ? -400: 0)
             
@@ -87,7 +87,7 @@ struct WhoFighting: View {
 //            ZStack {
            Image(systemName: "heart.fill")
                     .resizable()
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.blue)
                     .frame(width: 250, height: 250)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
 
@@ -136,7 +136,7 @@ struct WhoFightingCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 175, height: 175)
+        .frame(width: 150, height: 150)
         .clipShape(Circle())
         .foregroundColor(color)
 

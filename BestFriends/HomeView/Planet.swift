@@ -110,7 +110,7 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                    NavigationLink(destination: WhoFighting(),
+                    NavigationLink(destination: FightWithFriend(),
                                    label: {
                         ZStack {
                             Circle()

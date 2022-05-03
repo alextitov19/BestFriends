@@ -127,7 +127,7 @@ struct ParentsFighting: View {
             VStack {
                     
                     NavigationLink(
-                        destination: TryThis(),
+                        destination: FightWithFriend(),
                         label: {
                             Text("my Journal")
                                 .fontWeight(.thin)
@@ -145,7 +145,7 @@ struct ParentsFighting: View {
                 NavigationLink(
                     destination: Step5_Why(),
                     label: {
-                        Text("Step-5")
+                        Text("NEXT")
                             .fontWeight(.thin)
                             .frame(width: 110, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
