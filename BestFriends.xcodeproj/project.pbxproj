@@ -103,6 +103,7 @@
 		CFAB5420281FC2BB00BBF502 /* BreakUpNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB541F281FC2BB00BBF502 /* BreakUpNote.swift */; };
 		CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5421281FC8B800BBF502 /* TextingNote.swift */; };
 		CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */; };
+		CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB542728211BAC00BBF502 /* ParentsFighting.swift */; };
 		CFC724F2280D2B9200C6B5A8 /* RobPracticePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
 		CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC0281770B600AB2539 /* MyStreaks.swift */; };
@@ -219,6 +220,7 @@
 		CFAB541F281FC2BB00BBF502 /* BreakUpNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakUpNote.swift; sourceTree = "<group>"; };
 		CFAB5421281FC8B800BBF502 /* TextingNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextingNote.swift; sourceTree = "<group>"; };
 		CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightTextUserIdeas.swift; sourceTree = "<group>"; };
+		CFAB542728211BAC00BBF502 /* ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsFighting.swift; sourceTree = "<group>"; };
 		CFC724F1280D2B9200C6B5A8 /* RobPracticePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobPracticePage.swift; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
 		CFD12CC0281770B600AB2539 /* MyStreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStreaks.swift; sourceTree = "<group>"; };
@@ -384,7 +386,6 @@
 			isa = PBXGroup;
 			children = (
 				CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */,
-				CFAB541A281E5F8300BBF502 /* YouGotThis.swift */,
 			);
 			path = "Step 4";
 			sourceTree = "<group>";
@@ -582,6 +583,8 @@
 			children = (
 				CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */,
 				CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */,
+				CFAB541A281E5F8300BBF502 /* YouGotThis.swift */,
+				CFAB542728211BAC00BBF502 /* ParentsFighting.swift */,
 			);
 			path = "Step 7";
 			sourceTree = "<group>";
@@ -888,6 +891,7 @@
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
 				7AC71DA827F3D803008D191B /* Helper.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
+				CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */,
 				CF3B65D52801ED660003A714 /* GetInvolvedView.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,
 			);
