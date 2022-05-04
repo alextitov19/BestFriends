@@ -22,11 +22,11 @@ struct DramaCentralView: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
-            
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
+//            
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//            
             
             VStack {
                 

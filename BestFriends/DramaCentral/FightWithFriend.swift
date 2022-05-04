@@ -30,45 +30,34 @@ struct FightWithFriend: View {
             //                    .offset(y: -250)
             //
             VStack {
-                
-                
-                Text("we'll pull you")
+                 
+                Text("83% of teens say; ")
                     .font(.system(size: 30))
-                    .italic()
                     .foregroundColor(.white)
                     .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
-                
+                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 10)
                 
-                
-                Text("through this drama -")
-                    .font(.system(size: 30))
+                Text("I don't know what to do next")
+                    .font(.system(size: 27))
                     .italic()
-                    .foregroundColor(.white)
+                    .foregroundColor(.purple)
                     .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
-                
+                 
                 Spacer()
-                    .frame(height: 20)
-                
-                Text("minimizing the wreckage")
-                    .font(.system(size: 30, weight: .bold))
+                    .frame(height: 10)
+                 
+                Text("next after a Huge Fight")
+                    .font(.system(size: 27, weight: .bold))
                     .italic()
-                    .foregroundColor(.white)
+                    .foregroundColor(.purple)
                     .fontWeight(.light)
-                    .multilineTextAlignment(.leading)
-                    .padding(.horizontal, 10)
+                   
                 
-                VStack {
-                    
-                    
+            VStack {
                     Spacer()
                         .frame(height: 115)
-                    
                     
                     NavigationLink(
                         destination: DramaCentralView(),
@@ -83,15 +72,37 @@ struct FightWithFriend: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                     
-                    Text("while helping you find")
-                        .font(.system(size: 35, weight: .bold))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.gray)
+                    Spacer()
+                        .frame(height: 115)
                     
-                    Text("your SMILE again")
-                        .font(.system(size: 35, weight: .bold))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.gray)
+                    Text("We'll walk you through")
+                        .font(.system(size: 30))
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
+                    
+                    Spacer()
+                        .frame(height: 10)
+                    
+                    Text("these tense times")
+                        .font(.system(size: 30))
+                        .fontWeight(.light)
+                        .foregroundColor(Color.purple)
+                    
+                    Spacer()
+                        .frame(height: 10)
+                    
+                    Text("minimazing the wreckage")
+                        .font(.system(size: 30))
+                        .fontWeight(.light)
+                        .foregroundColor(Color.purple)
+                    
+                    Spacer()
+                        .frame(height: 25)
+                    
+                    Text("finding your SMILE")
+                        .font(.system(size: 35))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.white)
                     
                     
                     

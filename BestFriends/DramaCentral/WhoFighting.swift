@@ -57,15 +57,16 @@ struct WhoFighting: View {
                 }
             .offset(x: showItems ? -100 : 0, y: showItems ? -400: 0)
             
-//
-//            Button(action: {
-//             print("tap function is working")
-//                sessionManager.showIndividualFriendMessages()
-//            }) {
-//                FriendVaultCircle (color: .purple, friendName: "Friend 3")
-//                }
-//            .offset(x: showItems ? -150 : 0, y: showItems ? -550: 0)
-//
+
+            Button(action: {
+                print("tap function is working")
+                sessionManager.showParentsFighting()
+            }) {
+                WhoFightingCircle (color: .blue, friendName: "Group of \nmy Friends \nFighting")
+                }
+            .offset(x: showItems ? -100 : 0, y: showItems ? -100: 0)
+            
+
 //
 //            Button(action: {
 //             print("tap function is working")
