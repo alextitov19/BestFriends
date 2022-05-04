@@ -33,7 +33,7 @@ struct WhoFighting: View {
 //                .offset(y: -250)
             
             
-            Image("planet_4")
+//            Image("planet_4")
         
         ZStack {
 
@@ -64,7 +64,7 @@ struct WhoFighting: View {
             }) {
                 WhoFightingCircle (color: .blue, friendName: "Group of \nmy Friends \nFighting")
                 }
-            .offset(x: showItems ? -100 : 0, y: showItems ? -100: 0)
+            .offset(x: showItems ? -50 : 0, y: showItems ? -150: 0)
             
 
 //
@@ -90,7 +90,7 @@ struct WhoFighting: View {
                     .resizable()
                     .foregroundColor(.gray)
                     .frame(width: 250, height: 250)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
                 VStack {
                 

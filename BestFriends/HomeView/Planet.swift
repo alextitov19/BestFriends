@@ -121,7 +121,7 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                NavigationLink(destination: FightWithFriend(),
+                NavigationLink(destination: WhoFighting(),
                                label: {
                     ZStack {
                         Circle()
@@ -202,6 +202,13 @@ struct PlanetActionsView: View {
     
 }
 
+
+
+
+
+
+
+//
 //struct ContentView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        PlanetActionsView()
