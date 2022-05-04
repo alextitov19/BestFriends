@@ -42,53 +42,27 @@ struct WhoFighting: View {
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
              
-       
-//Trying to use Friend 2 at a test to get me to DramaMainView
+     
            
-            Button(action: {
-                print("tap function is working")
-                sessionManager.showParentsFighting()
-            }) {
-                WhoFightingCircle (color: .orange, friendName: "OMG, my Parents \nAGAIN!")
-                }
+              NavigationLink(destination: ParentsFighting(), label: {
+                  WhoFightingCircle (color: .orange, friendName: "OMG, my Parents \nAGAIN!")
+            })
             .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
             
 
-            Button(action: {
-                print("tap function is working")
-                sessionManager.showFightWithFriend()
-            }) {
-                WhoFightingCircle (color: .blue, friendName: "All my \nFriends")
-                }
+            NavigationLink(destination: FightWithFriend(), label: { WhoFightingCircle (color: .blue, friendName: "All my \nFriends")
+            })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
 
-//
-//            Button(action: {
-//             print("tap function is working")
-//                sessionManager.showIndividualFriendMessages()
-//            }) {
-//                FriendVaultCircle (color: .gray, friendName: "Friend 4")
-//                }
-//            .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
-//
-//
-//            Button(action: {
-//             print("tap function is working")
-//                sessionManager.showIndividualFriendMessages()
-//            }) {
-//                FriendVaultCircle (color: .blue, friendName: "Friend 5")
-//                }
-//            .offset(x: showItems ? 80 : 0, y: showItems ? -260: 0)
-//
-//            ZStack {
-           Image(systemName: "heart.fill")
+
+        Image(systemName: "heart.fill")
                     .resizable()
                     .foregroundColor(.gray)
                     .frame(width: 250, height: 250)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
-                VStack {
+        VStack {
                 
 
             Text("Enter")
