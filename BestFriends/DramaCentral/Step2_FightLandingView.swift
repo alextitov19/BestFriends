@@ -75,7 +75,7 @@ struct Step2_FightLandingView: View {
                             NavigationLink(
                                 destination: BreathInView(),
                                 label: {
-                                    Text("Too Soon")
+                                    Text("ALL")
                                         .fontWeight(.bold)
                                         .frame(width: 100, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
