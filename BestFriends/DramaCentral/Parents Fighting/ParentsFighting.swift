@@ -31,22 +31,7 @@ struct ParentsFighting: View {
             
             
             VStack {
-                
-                
-                Text("Parents")
-                    .font(.system(size: 50))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
-                    
-                    
-                Text("FIGHTING?")
-                        .font(.system(size: 55))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        .kerning(10)
-                
-                
-                Spacer()
+             Spacer()
                     .frame(height: 30)
                 
                 Text("We know how unsettling")
@@ -66,7 +51,7 @@ struct ParentsFighting: View {
                     .foregroundColor(Color.blue)
                 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 10)
                 
                 Text("Hold tighly to")
                     .font(.system(size: 35))
@@ -85,7 +70,7 @@ struct ParentsFighting: View {
                 VStack {
                
                     Spacer()
-                    .frame(height: 30)
+                    .frame(height: 100)
                     
                     Text("Questioning?")
                         .font(.system(size: 40))
@@ -146,7 +131,7 @@ struct ParentsFighting: View {
                 NavigationLink(
                     destination: HomeView(),
                     label: {
-                        Text("HOME")
+                        Text("NEXT")
                             .fontWeight(.thin)
                             .frame(width: 110, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

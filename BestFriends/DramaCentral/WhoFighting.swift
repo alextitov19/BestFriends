@@ -42,9 +42,9 @@ struct WhoFighting: View {
              print("tap function is working")
                 sessionManager.showFightWithFriend()
             }) {
-                WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nFriend")
+                WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nBFF")
                 }
-            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
+            .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
              
        
 //Trying to use Friend 2 at a test to get me to DramaMainView
@@ -55,16 +55,16 @@ struct WhoFighting: View {
             }) {
                 WhoFightingCircle (color: .orange, friendName: "OMG, my Parents \nAGAIN!")
                 }
-            .offset(x: showItems ? -100 : 0, y: showItems ? -400: 0)
+            .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
             
 
             Button(action: {
                 print("tap function is working")
-                sessionManager.showParentsFighting()
+                sessionManager.showFightWithFriend()
             }) {
-                WhoFightingCircle (color: .blue, friendName: "Group of \nmy Friends \nFighting")
+                WhoFightingCircle (color: .blue, friendName: "My Friends")
                 }
-            .offset(x: showItems ? -50 : 0, y: showItems ? -150: 0)
+            .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
 
 //
