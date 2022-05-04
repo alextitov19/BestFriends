@@ -37,13 +37,9 @@ struct WhoFighting: View {
         
         ZStack {
 
-     
-            Button(action: {
-             print("tap function is working")
-                sessionManager.showFightWithFriend()
-            }) {
+            NavigationLink(destination: FightWithFriend(), label: {
                 WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nBFF")
-                }
+                })
             .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
              
        
