@@ -33,7 +33,9 @@ struct ChatBubble: View {
                     
                 } else {
                     MyChatMessage(messageBody: "📸")
-                        .onTapGesture { downloadImage(key: message.image) }
+                        .onTapGesture {
+                            Task { await downloadImage(key: message.image) }
+                        }
                 }
             } else {
                 MyChatMessage(messageBody: message.body)
@@ -54,7 +56,9 @@ struct ChatBubble: View {
                     
                 } else {
                     FriendChatMessage(name: message.senderName, messageBody: "📸")
-                        .onTapGesture { downloadImage(key: message.image) }
+                        .onTapGesture {
+                            Task { await downloadImage(key: message.image) }
+                        }
                 }
             } else {
                 FriendChatMessage(name: message.senderName, messageBody: message.body)
@@ -62,20 +66,46 @@ struct ChatBubble: View {
         }
     }
     
-    private func downloadImage(key: String?) {
-        DispatchQueue.main.async {
-            if key != nil {
-                print("Image key: ", key!)
-                RestApi.instance.getImage(folderId: groupId, imageId: key!).then { data in
-                    print("Got data")
-                    image = UIImage(data: data)
-                    print("Got image from data")
+    private func downloadImage(key: String?) async {
+        if key == nil { return }
+        if key!.count < 1 { return }
+        
+        let request = RestApi.instance.createDownloadImageWebSocketRequest(folderId: groupId, imageId: key!)
+        let stream = WebSocketStream(request: request)
+        await listenForImages(stream: stream)
+    }
+    
+    
+    
+    
+    private func listenForImages(stream: WebSocketStream) async {
+        let decoder = JSONDecoder()
+        do {
+            for try await message in stream {
+                switch message {
+                case .string(let s):
+                    let jsonData = Data(s.utf8)
+                    do {
+                        let img = try decoder.decode(ImageData.self, from: jsonData)
+                        self.image = UIImage(data: img.image)
+                        print("Added a new image from json")
+                    } catch {
+                        print(error.localizedDescription)
+                    }
+                    
+                case .data(let data):
+                    print("Received binary message: \(data)")
+                    
+                @unknown default:
+                    print("Received some other UNKNOWN message")
                 }
             }
+        } catch {
+            debugPrint("Oops something didn't go right")
         }
-        
-        
     }
+    
+    
 }
 
 private struct MyChatMessage: View {

@@ -8,24 +8,23 @@
 import Foundation
 
 class WebSocketStream: AsyncSequence {
-
+    
     typealias Element = URLSessionWebSocketTask.Message
     typealias AsyncIterator = AsyncThrowingStream<URLSessionWebSocketTask.Message, Error>.Iterator
-
-    private var stream: AsyncThrowingStream<Element, Error>?
-        private var continuation: AsyncThrowingStream<Element, Error>.Continuation?
-        private let socket: URLSessionWebSocketTask
     
-    init(groupId: String, session: URLSession = URLSession.shared) {
-        let request = RestApi.instance.createChatWebSocketRequest(groupId: groupId)
-            socket = session.webSocketTask(with: request)
-            stream = AsyncThrowingStream { continuation in
-                self.continuation = continuation
-                self.continuation?.onTermination = { @Sendable [socket] _ in
-                    socket.cancel()
-                }
+    private var stream: AsyncThrowingStream<Element, Error>?
+    private var continuation: AsyncThrowingStream<Element, Error>.Continuation?
+    private let socket: URLSessionWebSocketTask
+    
+    init(request: URLRequest, session: URLSession = URLSession.shared) {
+        socket = session.webSocketTask(with: request)
+        stream = AsyncThrowingStream { continuation in
+            self.continuation = continuation
+            self.continuation?.onTermination = { @Sendable [socket] _ in
+                socket.cancel()
             }
         }
+    }
     
     func makeAsyncIterator() -> AsyncIterator {
         guard let stream = stream else {
@@ -52,15 +51,15 @@ class WebSocketStream: AsyncSequence {
     
     func sendMessage(body: String) {
         let message = CreateMessage(body: body)
-            guard let json = try? JSONEncoder().encode(message),
-                let jsonString = String(data: json, encoding: .utf8)
-            else {
-                return
+        guard let json = try? JSONEncoder().encode(message),
+              let jsonString = String(data: json, encoding: .utf8)
+        else {
+            return
+        }
+        socket.send(.string(jsonString)) { error in
+            if let error = error {
+                print("Error sending message", error)
             }
-            socket.send(.string(jsonString)) { error in
-                if let error = error {
-                    print("Error sending message", error)
-                }
-            }
+        }
     }
 }

@@ -23,7 +23,8 @@ struct ChatView: View {
     init(user: User, group: Group) {
         self.user = user
         self.group = group
-        stream = WebSocketStream(groupId: group.id)
+        let request = RestApi.instance.createChatWebSocketRequest(groupId: group.id)
+        stream = WebSocketStream(request: request)
     }
     
     @State private var messageBody: String = ""
@@ -97,7 +98,7 @@ struct ChatView: View {
             return
         }
         
-        guard let data = image.pngData() else {
+        guard let data = image.jpeg(.lowest) else {
             print("Failed to convert image")
             return
         }
@@ -136,7 +137,7 @@ struct ChatView: View {
             debugPrint("Oops something didn't go right")
         }
     }
-    
+        
     private func sortMessages() {
         messages = messages.sorted(by: { $0.createdOn < $1.createdOn })
     }
