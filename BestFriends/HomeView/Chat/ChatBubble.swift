@@ -69,10 +69,15 @@ struct ChatBubble: View {
     private func downloadImage(key: String?) async {
         if key == nil { return }
         if key!.count < 1 { return }
-        
-        let request = RestApi.instance.createDownloadImageWebSocketRequest(folderId: groupId, imageId: key!)
-        let stream = WebSocketStream(request: request)
-        await listenForImages(stream: stream)
+        print("Image key: ", key!)
+        RestApi.instance.getImage(folderId: groupId, imageId: key!).then { data in
+            print("Got data")
+            self.image = UIImage(data: data)
+            print("Got image from data")
+        }
+        //        let request = RestApi.instance.createDownloadImageWebSocketRequest(folderId: groupId, imageId: key!)
+        //        let stream = WebSocketStream(request: request)
+        //        await listenForImages(stream: stream)
     }
     
     
