@@ -33,7 +33,7 @@ struct TextingNote: View {
             
             VStack {
                 Text("You Got ")
-                    .font(.system(size: 50, weight: .bold))
+                    .font(.system(size: 70, weight: .bold))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.purple)
                 
@@ -46,7 +46,7 @@ struct TextingNote: View {
                 
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 10)
                 
                 Text("“It always seems impossible until it's done.” — Nelson Mandela")
                     .fontWeight(.light)
@@ -62,13 +62,13 @@ struct TextingNote: View {
                 
                 
                 Spacer()
-                    .frame(height: 170)
+                    .frame(height: 150)
               
                 
                 NavigationLink(
                     destination: Step6_TextingFirst(),
                     label: {
-                        Text("Step-6")
+                        Text("NEXT")
                             .fontWeight(.thin)
                             .frame(width: 110, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

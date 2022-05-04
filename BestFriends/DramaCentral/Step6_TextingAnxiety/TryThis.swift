@@ -53,7 +53,7 @@ struct TryThis: View {
                         .frame(height: 80)
                     
                     Text("*hang out with a friend in Horizons \n*listen to your favorite songs \n*take a walk \n*text a friend \n*watch a funny video \n*eat some chocolate \n*watch a movie")
-                        .font(.system(size: 20))
+                        .font(.system(size: 23))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(.white)

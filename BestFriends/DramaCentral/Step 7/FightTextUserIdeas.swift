@@ -33,28 +33,32 @@ struct FightTextUserIdeas: View {
             
             VStack {
                 
-                Text("be a H E R O")
+                Text("H E L P")
                     .font(.system(size: 65))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.purple)
                     .frame(height: 30)
-
+                Spacer()
+                    .frame(height: 35)
+                Text("another User")
+                    .font(.system(size: 50))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.purple)
+                    .frame(height: 30)
+                
+                
                 Spacer()
                     .frame(height: 40)
                 
                 Text("Send us the text message \nthat worked best for you")
-                    .font(.system(size: 28))
-                    .fontWeight(.thin)
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
                     .foregroundColor(Color.white)
                
                 Spacer()
                     .frame(height: 30)
 
-                Text("We'll include it \non BestFriends")
-                    .font(.system(size: 30))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.purple)
-                    .kerning(10)
+            
                 
                 
                 Spacer()
@@ -78,14 +82,29 @@ struct FightTextUserIdeas: View {
                     Spacer()
                         .frame(height: 70)
                     
-                    Text("We'll give you authorship,")
+                    Text("We'll show \non BestFriends")
+                        .font(.system(size: 30))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                    
+                   
+                    Text("&")
+                        .font(.system(size: 30))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.white)
+                    
+                    Text("give you authorship,")
                         .font(.system(size: 28))
-                        .fontWeight(.thin)
+                        .fontWeight(.regular)
                         .foregroundColor(Color.white)
               
-                    Text("so you can show your friends")
-                        .font(.system(size: 26))
-                        .fontWeight(.thin)
+                  
+                    
+                    Text("(if you want)")
+                        .font(.system(size: 20))
+                        .italic()
+                        .fontWeight(.regular)
                         .foregroundColor(Color.white)
                     
                     

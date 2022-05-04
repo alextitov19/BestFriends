@@ -26,15 +26,15 @@ struct Step6_TextingFirst: View {
             VStack {
            
                 Text("Reaching out First")
-                .font(.system(size: 40, weight: .ultraLight))
+                .font(.system(size: 40, weight: .thin))
                 .foregroundColor(Color.purple)
             
                 Text("via")
-                .font(.system(size: 40, weight: .ultraLight))
+                .font(.system(size: 40, weight: .thin))
                 .foregroundColor(Color.purple)
                 
                 Text("T E X T I N G")
-                    .font(.system(size: 55, weight: .ultraLight))
+                    .font(.system(size: 55, weight: .thin))
                     .foregroundColor(Color.purple)
                 
                 
@@ -135,9 +135,9 @@ struct Step6_TextingFirst: View {
                     NavigationLink(
                         destination: Step7_TimeToTalk(),
                         label: {
-                            Text("Step-7")
+                            Text("NEXT")
                                 .fontWeight(.thin)
-                                .frame(width: 110, height: 40)
+                                .frame(width: 100, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
