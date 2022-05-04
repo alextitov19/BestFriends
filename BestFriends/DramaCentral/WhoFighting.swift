@@ -62,7 +62,7 @@ struct WhoFighting: View {
                 print("tap function is working")
                 sessionManager.showFightWithFriend()
             }) {
-                WhoFightingCircle (color: .blue, friendName: "My Friends")
+                WhoFightingCircle (color: .blue, friendName: "All my \nFriends")
                 }
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
@@ -94,20 +94,27 @@ struct WhoFighting: View {
 
                 VStack {
                 
-//                Text("")
-//                        .font(.title)
-//                        .foregroundColor(.green)
-//                        .fontWeight(.medium)
-////                        .multilineTextAlignment(.center)
-//
-            Text("Who's \nF I G H T I N G?")
-                    .font(.system(size: 28))
+
+            Text("Enter")
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
+                  
+                Text("BlueMode")
+                            .font(.system(size: 40))
+                            .foregroundColor(.blue)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                    
+                    
+                    Text("Who's \nF I G H T I N G?")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                    
                 }
-            
-
             }
             
             
@@ -121,11 +128,8 @@ struct WhoFighting: View {
            .animation(Animation.easeInOut(duration: 1.0), value: showItems)
 
             }
-        
         }
-            
-            
-        }
+    }
    
 
 struct WhoFightingCircle: View {

@@ -43,7 +43,7 @@ struct ParentsFighting: View {
              
                 VStack {
                 
-                Text("this can be")
+                Text("this can be for you")
                     .font(.system(size: 31))
                     .italic()
                     .fontWeight(.regular)

@@ -22,24 +22,24 @@ struct DramaCentralView: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
-//            
+//
 //            AdPlayerView(name: "backgroundAnimation")
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
-//            
+//
             
             VStack {
                 
-                Text("Before we")
+                Text("before entering")
                     .font(.system(size: 50, weight: .bold))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.purple)
                 
                 
-                Text("START")
-                    .font(.system(size: 80, weight: .bold))
+                Text("BlueMode")
+                    .font(.system(size: 65, weight: .bold))
                     .fontWeight(.ultraLight)
-                    .foregroundColor(Color.purple)
+                    .foregroundColor(Color.blue)
                     .kerning(10)
                 
                 
@@ -61,9 +61,9 @@ struct DramaCentralView: View {
                 Button(action: {
                     sessionManager.showDramaMainView()
                 }, label: {
-                    Text("NEXT _ go to Step-1")
+                    Text("NEXT")
                         .fontWeight(.thin)
-                        .frame(width: 310, height: 40)
+                        .frame(width: 100, height: 40)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 30))
                         .background(ColorManager.purple3)

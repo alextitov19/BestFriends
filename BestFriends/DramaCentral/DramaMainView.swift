@@ -33,15 +33,15 @@ struct DramaMainView: View {
                                         .frame(width: 115, height: 115)
                                         .foregroundColor(ColorManager.pmbc_green)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                    
-                                    Text("7")
-                                    //                            .background()
-                                        .foregroundColor(.purple)
-                                        .font(.system(size: 120, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    
-                                    
-                                    Text("Meet face \n-to- \nface")
+//
+//                                    Text("7")
+//                                    //                            .background()
+//                                        .foregroundColor(.purple)
+//                                        .font(.system(size: 120, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//
+                                    Text("Meet")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -49,7 +49,7 @@ struct DramaMainView: View {
                             })
                             
                             Spacer()
-                                .frame(height: 1)
+                                .frame(height: 20)
                             
                             NavigationLink(destination: Step6_TextingFirst(), label: {
                                 ZStack {
@@ -58,14 +58,14 @@ struct DramaMainView: View {
                                         .foregroundColor(ColorManager.pmbc_blue)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                     
-                                    Text("6")
-                                    //                            .background()
-                                        .foregroundColor(.purple)
-                                        .font(.system(size: 120, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    Text("6")
+//                                    //                            .background()
+//                                        .foregroundColor(.purple)
+//                                        .font(.system(size: 120, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
                                     
-                                    
-                                    Text("Texting \nFirst \nAnxiety")
+                                    Text("Texting \nAnxiety")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -82,14 +82,14 @@ struct DramaMainView: View {
                                         .foregroundColor(ColorManager.pmbc_blue)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                     
-                                    Text("2")
-                                    //                            .background()
-                                        .foregroundColor(.purple)
-                                        .font(.system(size: 120, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    Text("2")
+//                                    //                            .background()
+//                                        .foregroundColor(.purple)
+//                                        .font(.system(size: 120, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
                                     
-                                    
-                                    Text("Who did \nyou fight \nwith?")
+                                    Text("#1 \nBlueMode")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -97,7 +97,7 @@ struct DramaMainView: View {
                             })
                             
                             Spacer()
-                                .frame(height: 1)
+                                .frame(height: 20)
                             
                             NavigationLink(destination: Step1_NotReadyTalk(), label: {
                                 ZStack {
@@ -106,13 +106,13 @@ struct DramaMainView: View {
                                         .foregroundColor(ColorManager.pmbc_pink)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                     
-                                    Text("1")
-                                    //                            .background()
-                                        .foregroundColor(.purple)
-                                        .font(.system(size: 130, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    
-                                    Text("Am I \nREADY \nto TALK?")
+//                                    Text("1")
+//                                    //                            .background()
+//                                        .foregroundColor(.purple)
+//                                        .font(.system(size: 130, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+                                    Text("READY \nto TALK?")
                                     //                            .background()
                                         .foregroundColor(.white)
                                         .font(.system(size: 25, weight: .bold))
@@ -123,7 +123,7 @@ struct DramaMainView: View {
                             })
                             
                             Spacer()
-                                .frame(height: 1)
+                                .frame(height: 20)
                             
                             NavigationLink(destination: Step5_Why(), label: {
                                 ZStack {
@@ -132,15 +132,15 @@ struct DramaMainView: View {
                                         .foregroundColor(ColorManager.pmbc_green)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                     
-                                    
-                                    Text("5")
-                                    //                            .background()
-                                        .foregroundColor(.purple)
-                                        .font(.system(size: 120, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    
-                                    
-                                    Text("Cause \nof \nFight")
+//
+//                                    Text("5")
+//                                    //                            .background()
+//                                        .foregroundColor(.purple)
+//                                        .font(.system(size: 120, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//
+                                    Text("What \nCaused \nFight")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -156,15 +156,15 @@ struct DramaMainView: View {
                                         .frame(width: 115, height: 115)
                                         .foregroundColor(ColorManager.pmbc_green)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                    
-                                    Text("3")
-                                    //                            .background()
-                                        .foregroundColor(.purple)
-                                        .font(.system(size: 120, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    
-                                    
-                                    Text("Take \na \nBreath")
+//
+//                                    Text("3")
+//                                    //                            .background()
+//                                        .foregroundColor(.purple)
+//                                        .font(.system(size: 120, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//
+                                    Text("Breathe")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -172,7 +172,7 @@ struct DramaMainView: View {
                             })
                             
                             Spacer()
-                                .frame(height: 1)
+                                .frame(height: 20)
                             
                             NavigationLink(destination: Step4_NuclearOption(), label: {
                                 ZStack {
@@ -180,14 +180,14 @@ struct DramaMainView: View {
                                         .frame(width: 115, height: 115)
                                         .foregroundColor(ColorManager.pmbc_blue)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                    Text("4")
-                                    //                            .background()
-                                        .foregroundColor(.purple)
-                                        .font(.system(size: 120, weight: .bold))
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    Text("4")
+//                                    //                            .background()
+//                                        .foregroundColor(.purple)
+//                                        .font(.system(size: 120, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
                                     
-                                    
-                                    Text("Stop \nNuclear \nOption")
+                                    Text("Stop \nNuclear \nReaction")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -199,15 +199,18 @@ struct DramaMainView: View {
                         }
                     }
                     
+                    Spacer()
+                        .frame(height: 30)
+                    
                 VStack {
                         
                         NavigationLink(
                             destination: WhoFighting(),
                             label: {
-                                Text("Who's Fighting?")
+                                Text("my Journal")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
-                                    .frame(width: 225.0, height: 40)
+                                    .frame(width: 160, height: 40)
                                     .font(.system(size: 30))
                                 
                                     .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))

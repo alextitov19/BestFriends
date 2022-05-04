@@ -35,7 +35,7 @@ struct Step4_NuclearOption: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
                     
                     
-                    Text("please think \ntwice before ...")
+                    Text("please think \nbefore ...")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.medium)
@@ -110,7 +110,7 @@ struct Step4_NuclearOption: View {
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
-                                .frame(width: 110, height: 40)
+                                .frame(width: 100, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)

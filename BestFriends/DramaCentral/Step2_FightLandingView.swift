@@ -39,13 +39,13 @@ struct Step2_FightLandingView: View {
                 VStack {
                     
                     Text("Ready to")
-                        .font(.system(size: 40, weight: .bold))
+                        .font(.system(size: 40))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                     
                     
                     Text("BEGIN?")
-                        .font(.system(size: 60, weight: .bold))
+                        .font(.system(size: 60))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                         .kerning(10)
@@ -57,11 +57,10 @@ struct Step2_FightLandingView: View {
                             .frame(height: 30)
                         
                         Text("Who did you fight with?")
-                            .font(.system(size: 25, weight: .bold))
+                            .font(.system(size: 25))
                             .italic()
                             .foregroundColor(.gray)
                             .fontWeight(.semibold)
-                        
                             .multilineTextAlignment(.leading)
                             .padding(.horizontal, 0)
                         
@@ -164,7 +163,7 @@ struct Step2_FightLandingView: View {
                                         .fontWeight(.semibold)
                                         .foregroundColor(Color.white)
                                         .frame(width: 275.0, height: 50)
-                                        .font(.system(size: 20))
+                                        .font(.system(size: 15))
                                     
                                         .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                     
@@ -184,9 +183,9 @@ struct Step2_FightLandingView: View {
                             NavigationLink(
                                 destination: Step3_BreathInviteView(),
                                 label: {
-                                    Text("Step-3")
+                                    Text("NEXT")
                                         .fontWeight(.thin)
-                                        .frame(width: 110, height: 40)
+                                        .frame(width: 100, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 30))
                                         .background(ColorManager.purple3)
