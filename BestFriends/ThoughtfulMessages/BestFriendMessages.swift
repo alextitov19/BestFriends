@@ -51,7 +51,7 @@ struct BestFriendMessages: View {
                                 
                 if planets.count > 1 {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[1].user, atmosphere: planets[1].atmosphere), label: { planets[1] })
-                        .offset(x: showItems ? -100 : 0, y: showItems ? 305: 0)
+                        .offset(x: showItems ? -100 : 0, y: showItems ? 205: 0)
                 }
                 
                 if planets.count > 2 {
@@ -78,11 +78,11 @@ struct BestFriendMessages: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
                     
                     VStack {
-                        Text("'TAP'")
-                            .font(.title)
-                            .foregroundColor(.green)
-                            .fontWeight(.medium)
-                        
+//                        Text("'TAP'")
+//                            .font(.title)
+//                            .foregroundColor(.green)
+//                            .fontWeight(.medium)
+//                        
                         Text("Thoughtful \nMessages you \n'long-tapped' \nin Chat")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
