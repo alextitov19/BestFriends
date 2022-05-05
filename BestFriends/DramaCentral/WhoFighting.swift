@@ -47,10 +47,10 @@ struct WhoFighting: View {
               NavigationLink(destination: ParentsFighting(), label: {
                   WhoFightingCircle (color: .orange, friendName: "OMG, my Parents \nAGAIN!")
             })
-            .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
+            .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: FightWithFriend(), label: { WhoFightingCircle (color: .blue, friendName: "My \nFriend \nGroup")
+            NavigationLink(destination: FightWithFriend(), label: { WhoFightingCircle (color: .blue, friendName: "my \nFriend \nGroup")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
@@ -60,12 +60,13 @@ struct WhoFighting: View {
                     .resizable()
                     .foregroundColor(.gray)
                     .frame(width: 250, height: 250)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-
-        VStack {
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                    .shadow(color: .blue, radius: 50, x: 30, y: 50)
+        
+            VStack {
                 
 
-            Text("Enter")
+            Text("Entering")
                     .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.medium)
@@ -114,7 +115,6 @@ struct WhoFightingCircle: View {
         .frame(width: 150, height: 150)
         .clipShape(Circle())
         .foregroundColor(color)
-
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
         
         Text(friendName)
@@ -135,3 +135,11 @@ struct WhoFighting_Previews : PreviewProvider {
     }
 
 }
+
+//
+//    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+
+
+
+//    .glow(color: glowColor(), radius: 20)
+//        private func glowColor() -> Color {
