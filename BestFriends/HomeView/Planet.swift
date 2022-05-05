@@ -137,7 +137,6 @@ struct PlanetActionsView: View {
                         Text("BlueMode")
                             .foregroundColor(.blue)
                             .font(.system(size: 15, weight: .bold))
-                            .italic()
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                         
