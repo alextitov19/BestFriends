@@ -75,14 +75,16 @@ struct BestFriendMessages: View {
                         .resizable()
                         .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
                         .frame(width: 190, height: 190)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+                        .shadow(color: .orange, radius: 50, x: 40, y: 50)
+                    
                     
                     VStack {
 //                        Text("'TAP'")
 //                            .font(.title)
 //                            .foregroundColor(.green)
 //                            .fontWeight(.medium)
-//                        
+//
                         Text("Thoughtful \nMessages you \n'long-tapped' \nin Chat")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
