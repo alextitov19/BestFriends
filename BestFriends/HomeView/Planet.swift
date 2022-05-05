@@ -128,11 +128,21 @@ struct PlanetActionsView: View {
                             .frame(width: 100, height: 100)
                             .foregroundColor(ColorManager.pmbc_pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
-                        
+                        VStack {
                         Text("Fighting")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        Text("BlueMode")
+                            .foregroundColor(.blue)
+                            .font(.system(size: 15, weight: .bold))
+                            .italic()
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        }
+                        
+                        
+                        
                     }
                 })
                 
@@ -189,7 +199,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Friend's \nThourhtful \nMessages")
+                        Text("Friend's \nThoughtful \nMessages")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
