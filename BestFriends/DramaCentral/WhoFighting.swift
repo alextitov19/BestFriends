@@ -77,7 +77,7 @@ struct WhoFighting: View {
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
-                    
+                            .shadow(color: .gray, radius: 1, x: 0, y: 1)
                     
                     Text("Who's \nF I G H T I N G?")
                             .font(.system(size: 20))
