@@ -62,7 +62,7 @@ struct HomeView: View {
                             if !focusPlanet {
                                 PlanetView(planet: homeData?.atmosphere.planet ?? 0, mood: homeData?.atmosphere.mood ?? 0)
                                     .scaledToFit()
-                                    .frame(width: 200, height: 200)
+                                    .frame(width: 125, height: 125)
                                     .onTapGesture(perform: mainPlanetTapped)
                                     .glow(color: glowColor(), radius: 20)
                                     .padding()

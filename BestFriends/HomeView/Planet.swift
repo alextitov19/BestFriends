@@ -16,7 +16,7 @@ struct Planet: View {
         VStack {
             PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
                 .scaledToFit()
-                .frame(width: 120, height: 120)
+                .frame(width: 65, height: 65)
                 .glow(color: glowColor())
             
             
