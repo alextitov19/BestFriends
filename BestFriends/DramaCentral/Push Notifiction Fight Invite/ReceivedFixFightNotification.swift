@@ -25,10 +25,7 @@ struct ReceivedFixFightNotification: View {
                     .scaledToFill()
                     .ignoresSafeArea()
                     .onAppear {
-//                        Image("girlwalking")
-//                            .resizable()
-//                            .frame(width: 350, height: 400)
-//
+
                     }
                 
                 // Stars animation...
@@ -37,74 +34,58 @@ struct ReceivedFixFightNotification: View {
                     .blendMode(.screen)
                 
          VStack{
-                        HStack {
-                            Text("You Received an \nInvite to 'Fix-a-Fight'")
-                                .font(.system(size: 40, weight: .ultraLight))
-                                .foregroundColor(Color.black)
-//                                .kerning(25)
+            HStack {
+                Text("You Received an \nInvite to 'BlueMode'")
+                    .font(.system(size: 40, weight:
+                    .ultraLight))
+                    .foregroundColor(Color.black)
+
                         }
                         
-                        VStack {
+                VStack {
                             
 
-                            Spacer()
-                                .frame(height: 25)
+                    Spacer()
+                        .frame(height: 25)
                             
-                            VStack {
-                                NavigationLink(
-                                    destination: Step1_NotReadyTalk(),
-                                    label: {
-                                        Text("Not Ready to Talk Yet")
-                                            .fontWeight(.thin)
-                                            .frame(width: 325, height: 50)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 30))
-                                            .background(ColorManager.purple3)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
-                            
-                                Spacer()
-                                    .frame(height: 15)
+                VStack {
                                 
-                                VStack {
-                                    Link(destination: URL(string: "https://socialtechlabs.com/fix-a-fight-terms/")!) {
-                               
-                                           Text("View Strategy")
-                                                .fontWeight(.thin)
-                                                .frame(width: 325, height: 50)
-                                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                .font(.system(size: 30))
-                                                .background(ColorManager.purple3)
-                                                .cornerRadius(15)
-                                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        }
-                                    Spacer()
-                                        .frame(height: 15)
-                                    
-                                    VStack {
-                                        
-                                        VStack {
-                                            NavigationLink(
-                                                destination: DramaMainView(),
-                                                label: {
-                                                    Text("NEXT")
-                                                        .fontWeight(.thin)
-                                                        .frame(width: 100, height: 40)
-                                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                                        .font(.system(size: 30))
-                                                        .background(ColorManager.purple3)
-                                                        .cornerRadius(15)
-                                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+//  If user taps this button an in-app notification is sent to friend they fought with telling them [Need More Time].
+                                
+//  Don't need Navigation Link
+                NavigationLink(
+                    destination: Step1_NotReadyTalk(),
+                    label: {
+                        Text("I really need more time")
+                            .fontWeight(.thin)
+                            .frame(width: 325, height: 50)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                            
+                        Spacer()
+                            .frame(height: 15)
+                                
+
+                NavigationLink(destination: DramaMainView(),
+                    label: {
+                        Text("Ok, we can try to talk")
+                            .fontWeight(.thin)
+                            .frame(width: 325, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                 })
                                 
-                                            Spacer()
-                                    .frame(height: 240)
+                    Spacer()
+                        .frame(height: 240)
                                 
-
-
-                                Spacer()
-                                    .frame(height: 20)
                             }
                                  
                                 }
@@ -116,9 +97,10 @@ struct ReceivedFixFightNotification: View {
                 }
                 
             }
-}
-}
-}
+
+
+
+
 struct ReceivedFixFightNotification_Previews : PreviewProvider {
     static var previews: some View {
         ReceivedFixFightNotification()
