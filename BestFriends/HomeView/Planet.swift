@@ -110,10 +110,19 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Add\nTrusted\nFriends")
+                        VStack {
+                        Text("+")
+                            .foregroundColor(.white)
+                            .font(.system(size: 35, weight: .regular))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        
+                        Text("Trusted\nFriends")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
+                        }
                     }
                     
                 }
@@ -128,25 +137,23 @@ struct PlanetActionsView: View {
                             .frame(width: 100, height: 100)
                             .foregroundColor(ColorManager.pmbc_pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
+                       
                         VStack {
-                        Text("Fighting")
+                            Text("BlueMode")
+                                .foregroundColor(.blue)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            Text("Resolving \nFights")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-                        Text("BlueMode")
-                            .foregroundColor(.blue)
-                            .font(.system(size: 15, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
-                        
-                        
-                        
+                          
                     }
                 })
-                
-                
-                
+                 
                 Spacer()
                     .frame(height: 40)
                 
@@ -159,7 +166,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Keeping\nFriends\nSafe")
+                        Text("Safe \nFriends \nSpace")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -180,7 +187,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Daily\nHorizon")
+                        Text("Daily \nHorizon")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
