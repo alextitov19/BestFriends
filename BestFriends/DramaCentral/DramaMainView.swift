@@ -25,6 +25,15 @@ struct DramaMainView: View {
                     .blendMode(.screen)
                 
                 VStack {
+                    
+                    
+                    Text("BlueMode")
+                        .font(.system(size: 80))
+                        .foregroundColor(.blue)
+                        .fontWeight(.ultraLight)
+                        .multilineTextAlignment(.center)
+//                        .padding(.horizontal, 20)
+                    
                     HStack {
                         VStack {
                             NavigationLink(destination: Step7_TimeToTalk(), label: {
@@ -89,7 +98,7 @@ struct DramaMainView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("#1 \nBlueMode")
+                                    Text("#1 \nBegin")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -112,7 +121,7 @@ struct DramaMainView: View {
 //                                        .font(.system(size: 130, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
-                                    Text("READY \nto TALK?")
+                                    Text("Need \nMore \nTIME")
                                     //                            .background()
                                         .foregroundColor(.white)
                                         .font(.system(size: 25, weight: .bold))
@@ -140,7 +149,7 @@ struct DramaMainView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("What \nCaused \nFight")
+                                    Text("Reason \nfor \nFight")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -200,7 +209,7 @@ struct DramaMainView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 10)
                     
                 VStack {
                         
@@ -233,8 +242,7 @@ struct DramaMainView: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-                    .padding()
-                    
+                  
                     
                 }
             }

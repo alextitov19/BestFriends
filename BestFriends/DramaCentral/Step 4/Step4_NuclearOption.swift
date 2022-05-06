@@ -44,21 +44,33 @@ struct Step4_NuclearOption: View {
                 
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 10)
                 
                 Text("Unfriending")
-                    .font(.system(size: 25))
-                    .italic()
+                    .font(.system(size: 35))
+                   
                     .foregroundColor(.gray)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 0)
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 30)
                 
-                Text("or")
+                Text("Posting hurtful comments")
+                    .font(.system(size: 30))
+                  
+                    .foregroundColor(.gray)
+                    .fontWeight(.medium)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 0)
+               
+                Spacer()
+                    .frame(height: 5)
+            
+            VStack {
+                Text("-OR-")
                     .font(.system(size: 25))
-                    .italic()
+                  
                     .foregroundColor(.gray)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
@@ -67,16 +79,18 @@ struct Step4_NuclearOption: View {
                 Spacer()
                     .frame(height: 5)
                 
-                Text("posting your friend's \nprivate messages \n on social media")
-                    .font(.system(size: 25, weight: .bold))
-                    .italic()
+                
+                
+                Text("Sharing your friend's \nprivate messages \n on \n Social Media")
+                    .font(.system(size: 30, weight: .bold))
+                  
                     .foregroundColor(.gray)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 0)
                 
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 35)
             
                 
                 VStack {
@@ -84,6 +98,7 @@ struct Step4_NuclearOption: View {
                     Text("30 minutes ago you were BFF and you will be again!")
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
+                        .italic()
                         .multilineTextAlignment(.center)
                         .frame(width: 275, height: 70, alignment: .leading)
                         .font(.system(size: 25))
@@ -128,7 +143,7 @@ struct Step4_NuclearOption: View {
 
 }
 
-
+}
 
 struct NuclearOption_Previews : PreviewProvider {
     static var previews: some View {

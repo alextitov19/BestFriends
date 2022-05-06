@@ -35,7 +35,7 @@ struct ReceivedFixFightNotification: View {
                 
          VStack{
             HStack {
-                Text("You Received an \nInvite to 'BlueMode'")
+                Text("You Received an \nInvite to 'BlueMode' \n from [Friend 1]")
                     .font(.system(size: 40, weight:
                     .ultraLight))
                     .foregroundColor(Color.black)
@@ -75,7 +75,7 @@ struct ReceivedFixFightNotification: View {
                     label: {
                         Text("Ok, we can try to talk")
                             .fontWeight(.thin)
-                            .frame(width: 325, height: 40)
+                            .frame(width: 325, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)
