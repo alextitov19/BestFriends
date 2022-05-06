@@ -98,7 +98,7 @@ struct DramaMainView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("#1 \nBegin \nHere")
+                                    Text("#1 \nBegin \nHere >>>")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
