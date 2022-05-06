@@ -75,10 +75,10 @@ struct FightWithFriend: View {
                     Spacer()
                         .frame(height: 115)
                     
-                    Text("We'll walk you through")
+                    Text("We'll help you through")
                         .font(.system(size: 30))
                         .fontWeight(.light)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.purple)
                     
                     Spacer()
                         .frame(height: 10)

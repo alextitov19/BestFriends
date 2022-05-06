@@ -42,8 +42,8 @@ struct DramaCentralView: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("'NOT KNOWING'")
-                    .font(.system(size: 38))
+                Text("NOT KNOWING")
+                    .font(.system(size: 35))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                     .kerning(10)
@@ -51,7 +51,7 @@ struct DramaCentralView: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("what happens next")
+                Text("what's going to happen")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
