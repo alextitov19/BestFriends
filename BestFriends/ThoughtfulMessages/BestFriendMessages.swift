@@ -80,16 +80,18 @@ struct BestFriendMessages: View {
                     
                     
                     VStack {
-//                        Text("'TAP'")
-//                            .font(.title)
-//                            .foregroundColor(.green)
-//                            .fontWeight(.medium)
-//
-                        Text("Thoughtful \nMessages you \n'long-tapped' \nin Chat")
+                        Text("Thoughtful \nMessages")
+                            .font(.system(size: 20))
+                            .foregroundColor(.orange)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                   
+                        Text("you 'long-tapped' \nin Chat")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
+                    
                     }
                 }
                 .onTapGesture {

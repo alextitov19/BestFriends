@@ -68,9 +68,9 @@ struct Step4_NuclearOption: View {
                     .frame(height: 5)
             
             VStack {
-                Text("-OR-")
+                Text("- Or -")
                     .font(.system(size: 25))
-                  
+                    .italic()
                     .foregroundColor(.gray)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)

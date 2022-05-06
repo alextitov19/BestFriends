@@ -30,27 +30,39 @@ struct DramaCentralView: View {
             
             VStack {
                 
-                Text("before entering")
-                    .font(.system(size: 50, weight: .bold))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.purple)
+                Text("After a fight")
+                    .font(.system(size: 30))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                Text("the worst part is the,")
+                    .font(.system(size: 30))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
                 
+                Spacer()
+                    .frame(height: 15)
                 
-                Text("BlueMode")
-                    .font(.system(size: 65, weight: .bold))
-                    .fontWeight(.ultraLight)
+                Text("'NOT KNOWING'")
+                    .font(.system(size: 38))
+                    .fontWeight(.light)
                     .foregroundColor(Color.blue)
                     .kerning(10)
                 
+                Spacer()
+                    .frame(height: 15)
                 
+                Text("what happens next")
+                    .font(.system(size: 30))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
                 Spacer()
                     .frame(height: 60)
                 
                 Link(destination: URL(string: "https://socialtechlabs.com/fix-a-fight-terms/")!) {
                     
-                    Text("View / Agree to Strategy")
+                    Text("See how we can HELP")
                         .fontWeight(.thin)
-                        .frame(width: 310, height: 50)
+                        .frame(width: 300, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 30))
                         .background(ColorManager.purple3)
