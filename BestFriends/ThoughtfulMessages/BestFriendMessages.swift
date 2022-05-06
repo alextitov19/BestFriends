@@ -74,7 +74,7 @@ struct BestFriendMessages: View {
                     Image(systemName: "heart.fill")
                         .resizable()
                         .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
-                        .frame(width: 190, height: 190)
+                        .frame(width: 200, height: 200)
 //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
                         .shadow(color: .orange, radius: 50, x: 40, y: 50)
                     
@@ -85,6 +85,7 @@ struct BestFriendMessages: View {
                             .foregroundColor(.orange)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                    
                         Text("you 'long-tapped' \nin Chat")
                             .font(.system(size: 20))
