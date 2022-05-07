@@ -381,8 +381,8 @@
 			isa = PBXGroup;
 			children = (
 				7A0856A127F3D9A900E8282B /* RestAPI.swift */,
-				7A7A23B32803D62700B87613 /* WebSocket.swift */,
 				7AC71DA727F3D803008D191B /* Helper.swift */,
+				7A7A23B32803D62700B87613 /* WebSocket.swift */,
 				7A0856A727F3DA4E00E8282B /* Defaults.swift */,
 				7A0856A327F3D9C400E8282B /* Model.swift */,
 				7A0856A527F3D9E800E8282B /* KeychainPasswordItem.swift */,

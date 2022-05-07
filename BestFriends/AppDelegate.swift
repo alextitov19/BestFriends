@@ -11,34 +11,11 @@ import UserNotifications
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         // Code
-        registerForPushNotifications()
-        
         return true
     }
     
     
     // MARK: Notifications
-    
-    func registerForPushNotifications() {
-        UNUserNotificationCenter.current()
-          .requestAuthorization(
-            options: [.alert, .sound, .badge]) { [weak self] granted, _ in
-            print("Permission granted: \(granted)")
-            guard granted else { return }
-            self?.getNotificationSettings()
-          }
-    }
-    
-    func getNotificationSettings() {
-      UNUserNotificationCenter.current().getNotificationSettings { settings in
-        print("Notification settings: \(settings)")
-          guard settings.authorizationStatus == .authorized else { return }
-          DispatchQueue.main.async {
-            UIApplication.shared.registerForRemoteNotifications()
-          }
-      }
-    }
-    
     func application(
       _ application: UIApplication,
       didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
@@ -47,6 +24,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
       let token = tokenParts.joined()
       print("Device Token: \(token)")
         // TODO: Save the token
+        RestApi.instance.updateUserToken(token: token).then { response in
+            print("Server response: ", response)
+            if response == 200 {
+                print("Successfully updated user token")
+            } else {
+                print("Failed to update user token")
+            }
+        }
     }
     
     func application(

@@ -92,6 +92,9 @@ class RestApi {
         return request
     }
     
+    public func updateUserToken(token: String) -> Promise<Int> {
+        return helper.updateUserToken(url: API_URL + "/user/update/token/" + token)
+    }
     
     public func updateUserId() {
         getCurrentUser().then { details in
