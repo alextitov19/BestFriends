@@ -31,60 +31,49 @@ struct Step2_ParentsFighting: View {
             
             VStack {
                 
-                Text("Suggestions")
+                
+                Text("After things")
+                    .font(.system(size: 50))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.blue)
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("Calm Down")
                     .font(.system(size: 70))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
-               
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("- Stay out of the Argument \n- It's their fight \n- Not your job to referee")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-               
-                Spacer()
-                    .frame(height: 35)
-                
-                Text("Get Away")
-                    .font(.system(size: 35))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
                 
                 Spacer()
                     .frame(height: 20)
                 
-                Text("- Go Outside \n- Go to your room, close the door \n- Put your ear pods in \n- If gets violent call 911")
+                Text("- Tell parents how much their \narguing upsets you")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                
                 Spacer()
                     .frame(height: 20)
-        VStack {
-                Text("After things Calm Down")
-                    .font(.system(size: 35))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-        
-            
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("- Say upsetting \n- Take fight outside")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-              
-                
-            VStack {
-                Spacer()
-                    .frame(height: 35)
-            
-   
-                
+      
+                VStack {
+                    Spacer()
+                        .frame(height: 35)
+                    
+                    NavigationLink(
+                        destination: ParentsFighting(),
+                        label: {
+                            Text("Anonymous FORUM")
+                                .fontWeight(.thin)
+                                .frame(width: 300, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                      
+                        
+                        
+                        })
                 
                 VStack {
                     Spacer()
@@ -126,9 +115,8 @@ struct Step2_ParentsFighting: View {
     }
 }
 }
-}
-}
 
+}
 
 
 struct Step2_ParentsFighting_Previews : PreviewProvider {
