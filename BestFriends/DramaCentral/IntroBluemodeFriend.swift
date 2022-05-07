@@ -31,7 +31,13 @@ struct IntroBluemodeFriend: View {
             //
             VStack {
                  
-                Text("83% of teens say; ")
+                
+             
+                
+                Spacer()
+                    .frame(height: 25)
+                
+                Text("83% of teens said they ")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .fontWeight(.light)
@@ -39,19 +45,19 @@ struct IntroBluemodeFriend: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("I don't know what to do next")
-                    .font(.system(size: 27))
+                Text("don't know what to do")
+                    .font(.system(size: 30))
                     .italic()
-                    .foregroundColor(.purple)
+                    .foregroundColor(.white)
                     .fontWeight(.light)
                  
                 Spacer()
                     .frame(height: 10)
                  
-                Text("next after a Huge Fight")
-                    .font(.system(size: 27, weight: .bold))
+                Text("after a Huge Fight")
+                    .font(.system(size: 40))
                     .italic()
-                    .foregroundColor(.purple)
+                    .foregroundColor(.white)
                     .fontWeight(.light)
                    
                 
@@ -73,36 +79,30 @@ struct IntroBluemodeFriend: View {
                         })
                     
                     Spacer()
-                        .frame(height: 115)
-                    
-                    Text("We'll help you through")
-                        .font(.system(size: 30))
+                        .frame(height: 40)
+                
+                Text("introducing")
+                    .font(.system(size: 30))
+                    .italic()
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                
+                
+                Text("BlueMode")
+                    .font(.system(size: 90))
+                    .foregroundColor(.blue)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+              
+                
+                    Text("Easy-to-use, \n 7-Step method \nquickly helping you \nbecome friends again.")
+                        .font(.system(size: 25))
                         .fontWeight(.light)
-                        .foregroundColor(Color.purple)
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("these tense times")
-                        .font(.system(size: 30))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.purple)
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("minimazing the wreckage")
-                        .font(.system(size: 30))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.purple)
-                    
-                    Spacer()
-                        .frame(height: 25)
-                    
-                    Text("finding your SMILE")
-                        .font(.system(size: 35))
-                        .fontWeight(.regular)
                         .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                       
+               
                     
                     
                     
