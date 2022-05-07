@@ -83,7 +83,7 @@ struct Step1_NotReadyTalk: View {
                             .frame(height: 70)
                         
                         NavigationLink(
-                            destination: Step2_FightLandingView(),
+                            destination: Step3_BreathInviteView(),
                             label: {
                                 Text("NEXT")
                                     .fontWeight(.thin)
