@@ -48,7 +48,7 @@ struct Step1_ParentsFighting: View {
                     .foregroundColor(Color.white)
                     .kerning(10)
                 
-                Text("DIVORCED")
+                Text("Divorced")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
@@ -57,16 +57,11 @@ struct Step1_ParentsFighting: View {
             VStack {
                 Spacer()
                     .frame(height: 35)
-                
-                Text("NO")
-                    .font(.system(size: 60))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-                    .kerning(10)
+            
                 
                 Text("Iit's not your fault")
-                    .font(.system(size: 40))
-                    .fontWeight(.light)
+                    .font(.system(size: 45))
+                    .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
                
                 
@@ -87,7 +82,7 @@ struct Step1_ParentsFighting: View {
                     .foregroundColor(Color.white)
                     .kerning(10)
                 
-                Text("With the Screams")
+                Text("with the Screams")
                     .font(.system(size: 40))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.white)
@@ -113,6 +108,8 @@ struct Step1_ParentsFighting: View {
                 
                 
                 VStack {
+                    Spacer()
+                        .frame(height: 35)
                     
                     NavigationLink(
                         destination: ParentsFighting(),
