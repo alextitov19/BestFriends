@@ -73,7 +73,7 @@ struct Step7_TimeToTalk: View {
                     
 
                     Spacer()
-                        .frame(height: 300)
+                        .frame(height: 250)
                    
                     VStack {
                         
