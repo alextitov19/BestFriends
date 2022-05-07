@@ -474,6 +474,13 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CF381A4E2826883A00B3719E /* Friend Group Fighting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Friend Group Fighting";
+			sourceTree = "<group>";
+		};
 		CF3B65A9280071580003A714 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -605,6 +612,12 @@
 		CFAB542C2821244600BBF502 /* Fight w Friend */ = {
 			isa = PBXGroup;
 			children = (
+				CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */,
+				CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */,
+				CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */,
+				CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */,
+				CFAB5412281D145100BBF502 /* Step2_FightLandingView.swift */,
+				CFD12CD0281A754200AB2539 /* Step1_NotReadyTalk.swift */,
 			);
 			path = "Fight w Friend";
 			sourceTree = "<group>";
@@ -640,13 +653,8 @@
 			children = (
 				CFAB5429282123EA00BBF502 /* WhoFighting.swift */,
 				CFAB542D2821245C00BBF502 /* Parents Fighting */,
+				CF381A4E2826883A00B3719E /* Friend Group Fighting */,
 				CFAB542C2821244600BBF502 /* Fight w Friend */,
-				CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */,
-				CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */,
-				CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */,
-				CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */,
-				CFD12CD0281A754200AB2539 /* Step1_NotReadyTalk.swift */,
-				CFAB5412281D145100BBF502 /* Step2_FightLandingView.swift */,
 				CF3B65E62803E6860003A714 /* Step3_BreathIn */,
 				7ACB38542820A1D0009559AF /* Step 4 */,
 				7ACB38552820A29F009559AF /* Step 5 */,
