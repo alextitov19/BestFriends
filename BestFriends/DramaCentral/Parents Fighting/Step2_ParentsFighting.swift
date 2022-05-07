@@ -36,6 +36,7 @@ struct Step2_ParentsFighting: View {
                     .font(.system(size: 50))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
+                
                 Spacer()
                     .frame(height: 10)
                 
@@ -52,12 +53,16 @@ struct Step2_ParentsFighting: View {
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                
-                Spacer()
-                    .frame(height: 20)
+            
       
                 VStack {
                     Spacer()
-                        .frame(height: 35)
+                        .frame(height: 70)
+                    
+                    Text("Talk it out with others")
+                        .font(.system(size: 40))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(Color.blue)
                     
                     NavigationLink(
                         destination: ParentsFighting(),
@@ -80,9 +85,9 @@ struct Step2_ParentsFighting: View {
                         .frame(height: 35)
                     
                     NavigationLink(
-                        destination: ParentsFighting(),
+                        destination: HomeView(),
                         label: {
-                            Text("NEXT")
+                            Text("HOME")
                                 .fontWeight(.thin)
                                 .frame(width: 100, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

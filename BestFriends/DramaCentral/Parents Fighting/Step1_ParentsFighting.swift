@@ -60,39 +60,13 @@ struct Step1_ParentsFighting: View {
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
-               
-                Spacer()
-                    .frame(height: 20)
-        VStack {
-                Text("After things Calm Down")
-                    .font(.system(size: 35))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-        
-            
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("- Say upsetting \n- Take fight outside")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-              
-                
-            VStack {
-                Spacer()
-                    .frame(height: 35)
-            
-   
-                
-                
+     
                 VStack {
                     Spacer()
-                        .frame(height: 35)
+                        .frame(height: 45)
                     
                     NavigationLink(
-                        destination: ParentsFighting(),
+                        destination: Step2_ParentsFighting(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
@@ -127,8 +101,8 @@ struct Step1_ParentsFighting: View {
     }
 }
 }
-}
-}
+
+
 
 
 
