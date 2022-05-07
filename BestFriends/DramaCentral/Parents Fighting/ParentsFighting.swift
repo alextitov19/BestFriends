@@ -31,8 +31,6 @@ struct ParentsFighting: View {
             
             
             VStack {
-             Spacer()
-                    .frame(height: 30)
                 
                 Text("We know how")
                     .font(.system(size: 31))
@@ -106,7 +104,7 @@ struct ParentsFighting: View {
                
          
                 Spacer()
-                    .frame(height: 130)
+                    .frame(height: 40)
                 
                 NavigationLink(
                     destination: Step1_ParentsFighting(),

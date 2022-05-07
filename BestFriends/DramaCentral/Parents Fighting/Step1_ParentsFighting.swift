@@ -85,13 +85,13 @@ struct Step1_ParentsFighting: View {
                 
                 
                 Text("ALONE")
-                    .font(.system(size: 50))
+                    .font(.system(size: 30))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.white)
                     .kerning(10)
                 
                 Text("With the Screams")
-                    .font(.system(size: 50))
+                    .font(.system(size: 40))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.white)
                 
