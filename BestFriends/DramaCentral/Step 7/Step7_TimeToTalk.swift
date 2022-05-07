@@ -16,19 +16,19 @@ struct Step7_TimeToTalk: View {
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
+            Image("FatGuy")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//
             
             VStack {
                 
-                Text("Be a H E R O")
+                Text("Meet Up")
                     .font(.system(size: 65))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.purple)
@@ -37,7 +37,7 @@ struct Step7_TimeToTalk: View {
                 Spacer()
                     .frame(height: 40)
                 
-                Text("Send us the text message \nthat worked best for you")
+                Text("When you are ready set a time")
                     .font(.system(size: 28))
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
@@ -45,7 +45,7 @@ struct Step7_TimeToTalk: View {
                 Spacer()
                     .frame(height: 30)
 
-                Text("We'll include it \non BestFriends")
+                Text("??????????????")
                     .font(.system(size: 30))
                     .fontWeight(.thin)
                     .foregroundColor(Color.purple)
@@ -58,7 +58,7 @@ struct Step7_TimeToTalk: View {
                 VStack {
                     Link(destination: URL(string: "https://socialtechlabs.com/user-text-message-suggestions/")!) {
                         
-                        Text("Email Your 'text' Suggestion")
+                        Text("Calander ????")
                             .fontWeight(.thin)
                             .frame(width: 312, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -73,12 +73,12 @@ struct Step7_TimeToTalk: View {
                     Spacer()
                         .frame(height: 70)
                     
-                    Text("We'll give you authorship,")
+                    Text("????")
                         .font(.system(size: 28))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
               
-                    Text("so you can show your friends")
+                    Text("?????")
                         .font(.system(size: 26))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
