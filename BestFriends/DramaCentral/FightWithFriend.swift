@@ -31,19 +31,30 @@ struct FightWithFriend: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("We'll help you through \nthese tense times")
+                Text("We'll minamize these \ntense times")
                     .font(.system(size: 25))
                     .foregroundColor(.white)
+                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                  
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 30)
                  
-                Text("minimazing the wreckage")
+                Text("yanking you from")
                     .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.light)
+                
+                Text("the")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                
+                Text("Wreckage")
+                    .font(.system(size: 80))
+                    .foregroundColor(.blue)
+                    .fontWeight(.ultraLight)
                    
                 
             VStack {
@@ -67,14 +78,14 @@ struct FightWithFriend: View {
                         .frame(height: 60)
                 
                 Text("finding your")
-                    .font(.system(size: 30))
+                    .font(.system(size: 40))
                     .italic()
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                 
                 
                 Text("SMILE")
-                    .font(.system(size: 90))
+                    .font(.system(size: 100))
                     .foregroundColor(.blue)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
@@ -86,8 +97,8 @@ struct FightWithFriend: View {
 //                        .fontWeight(.light)
 //                        .foregroundColor(Color.white)
 //                        .multilineTextAlignment(.center)
-//                       
-//               
+//
+//
                     
                     
                     
