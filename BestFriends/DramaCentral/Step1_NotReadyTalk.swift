@@ -26,14 +26,14 @@ struct Step1_NotReadyTalk: View {
                     
                     Text("I'm still too")
                         .font(.system(size: 70))
-                        .foregroundColor(.white)
+                        .foregroundColor(.blue)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
                   
                     Text("U P S E T")
                         .font(.system(size: 90))
-                        .foregroundColor(.white)
+                        .foregroundColor(.blue)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
@@ -41,7 +41,7 @@ struct Step1_NotReadyTalk: View {
                     
                       Text("and need more")
                           .font(.system(size: 40))
-                          .foregroundColor(.blue)
+                          .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                           .padding(.horizontal, 20)
@@ -49,7 +49,7 @@ struct Step1_NotReadyTalk: View {
                     
                       Text("T I M E")
                           .font(.system(size: 50))
-                          .foregroundColor(.blue)
+                          .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                           .padding(.horizontal, 20)
@@ -87,15 +87,19 @@ struct Step1_NotReadyTalk: View {
                         
                         Text("Safety Tip:")
                             .font(.system(size: 40))
-                            .foregroundColor(.blue)
+                            .foregroundColor(.white)
                             .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 20)
                         
-                        Text("Talking before you're \n ready may make matters worse.")
-                            .font(.system(size: 40))
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("Talking before you're \n ready may make \nmatters worse.")
+                            .font(.system(size: 30))
+                            .italic()
                             .foregroundColor(.white)
-                            .fontWeight(.ultraLight)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 20)
                             
