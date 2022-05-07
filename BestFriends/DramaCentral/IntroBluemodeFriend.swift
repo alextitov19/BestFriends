@@ -28,8 +28,15 @@ struct IntroBluemodeFriend: View {
             //
             VStack {
       
+                
+                Text("Problem")
+                    .font(.system(size: 70))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 20)
                 
                 Text("83% of teens said they \ndon't know what to do after ")
                     .font(.system(size: 25))
@@ -38,7 +45,7 @@ struct IntroBluemodeFriend: View {
                     .multilineTextAlignment(.center)
                  
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 5)
                  
                 Text("a Huge Fight")
                     .font(.system(size: 35))
@@ -74,7 +81,7 @@ struct IntroBluemodeFriend: View {
                 
                 
                 Text("BlueMode")
-                    .font(.system(size: 90))
+                    .font(.system(size: 80))
                     .foregroundColor(.blue)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)

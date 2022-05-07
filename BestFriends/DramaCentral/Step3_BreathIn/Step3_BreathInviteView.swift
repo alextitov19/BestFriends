@@ -188,7 +188,7 @@ struct Step3_BreathInviteView: View {
                             .frame(height: 30)
                         
                         NavigationLink(
-                            destination: Step1_NotReadyTalk(),
+                            destination: Step4_NuclearOption(),
                             label: {
                                 Text("NEXT")
                                     .fontWeight(.thin)
