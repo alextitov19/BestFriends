@@ -41,18 +41,15 @@ struct Step1_ParentsFighting: View {
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
-                
-                Spacer()
-                    .frame(height: 15)
-                
-                Text("Get")
-                    .font(.system(size: 40))
+                 
+                Text("get")
+                    .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                     .kerning(10)
                 
                 Text("DIVORCED")
-                    .font(.system(size: 60))
+                    .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                     .kerning(10)
@@ -62,13 +59,13 @@ struct Step1_ParentsFighting: View {
                     .frame(height: 35)
                 
                 Text("NO")
-                    .font(.system(size: 40))
+                    .font(.system(size: 60))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                     .kerning(10)
                 
                 Text("Iit's not your fault")
-                    .font(.system(size: 30))
+                    .font(.system(size: 40))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                
@@ -78,7 +75,7 @@ struct Step1_ParentsFighting: View {
                 Spacer()
                     .frame(height: 35)
                 
-                Text("Your no longer ")
+                Text("You're no longer ")
                     .font(.system(size: 30))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.white)
