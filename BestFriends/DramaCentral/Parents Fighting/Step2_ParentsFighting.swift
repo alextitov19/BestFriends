@@ -64,10 +64,16 @@ struct Step2_ParentsFighting: View {
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.blue)
                     
+                    Text("comming fall 2022")
+                        .font(.system(size: 25))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
+                    
                     NavigationLink(
                         destination: ParentsFighting(),
                         label: {
-                            Text("Anonymous FORUM")
+                            Text("(Anonymous FORUM)")
                                 .fontWeight(.thin)
                                 .frame(width: 300, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -82,7 +88,7 @@ struct Step2_ParentsFighting: View {
                 
                 VStack {
                     Spacer()
-                        .frame(height: 35)
+                        .frame(height: 60)
                     
                     NavigationLink(
                         destination: HomeView(),
