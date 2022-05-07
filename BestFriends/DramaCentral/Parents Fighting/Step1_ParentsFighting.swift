@@ -32,78 +32,128 @@ struct Step1_ParentsFighting: View {
             
             VStack {
                 
-                Text("50% of Mom's and Dad's")
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                Text("Get a divorce")
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                
-                Spacer()
-                    .frame(height: 35)
-                
-                Text("That means yelling and screaming")
-                    .font(.system(size: 50))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.blue)
-                    .kerning(10)
-                
-                Text("This SUCKS")
-                    .font(.system(size: 80))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.blue)
-                    .kerning(10)
-                
-                Spacer()
-                    .frame(height: 35)
-                
-                Text("after you reach out first ")
-                    .font(.system(size: 30))
+                Text("50% of our")
+                    .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                
-                Text("and don't hear back")
-                    .font(.system(size: 30))
+                Text("Mom's and Dad's")
+                    .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                 
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 15)
                 
-//                Link(destination: URL(string: "https://socialtechlabs.com/fix-a-fight-terms/")!) {
+                Text("Get")
+                    .font(.system(size: 40))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                    .kerning(10)
+                
+                Text("DIVORCED")
+                    .font(.system(size: 60))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                    .kerning(10)
+                
+            VStack {
+                Spacer()
+                    .frame(height: 35)
+                
+                Text("NO")
+                    .font(.system(size: 40))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.blue)
+                    .kerning(10)
+                
+                Text("Iit's not your fault")
+                    .font(.system(size: 30))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.blue)
+               
+                
+                
+                
+                Spacer()
+                    .frame(height: 35)
+                
+                Text("Your no longer ")
+                    .font(.system(size: 30))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.white)
+                
+                
+                Text("ALONE")
+                    .font(.system(size: 50))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.white)
+                    .kerning(10)
+                
+                Text("With the Screams")
+                    .font(.system(size: 50))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.white)
+                
+                Spacer()
+                    .frame(height: 20)
+                     
+                VStack {
+                        
+                        NavigationLink(
+                            destination: HomeView(),
+                            label: {
+                                Text("my Journal")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 160, height: 40)
+                                    .font(.system(size: 30)).background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            }
+                        )}
+                
+                
+                VStack {
+                    
+                    NavigationLink(
+                        destination: ParentsFighting(),
+                        label: {
+                            Text("NEXT")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                      
+                        
+                        
+                        })
+                
 //
-//                    Text("See how we can HELP")
+//                Button(action: {
+//                    sessionManager.showDramaMainView()
+//                }, label: {
+//                    Text("NEXT")
 //                        .fontWeight(.thin)
-//                        .frame(width: 300, height: 50)
+//                        .frame(width: 100, height: 40)
 //                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
 //                        .font(.system(size: 30))
 //                        .background(ColorManager.purple3)
 //                        .cornerRadius(15)
 //                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                }
-                
-                Button(action: {
-                    sessionManager.showDramaMainView()
-                }, label: {
-                    Text("NEXT")
-                        .fontWeight(.thin)
-                        .frame(width: 100, height: 40)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 30))
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                })
-                .padding(.vertical, 40)
+//                })
+//                .padding(.vertical, 40)
                 
             }
         }
     }
 }
-
-
+}
+}
 
 
 
@@ -116,4 +166,4 @@ struct Step1_ParentsFighting: View {
 //    }
 //}
 //
-//
+
