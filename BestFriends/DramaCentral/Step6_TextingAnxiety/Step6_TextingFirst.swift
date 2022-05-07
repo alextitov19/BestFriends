@@ -27,16 +27,24 @@ struct Step6_TextingFirst: View {
            
                 Text("Reaching out First")
                 .font(.system(size: 40, weight: .thin))
-                .foregroundColor(Color.purple)
+                .foregroundColor(Color.blue)
             
                 Text("via")
                 .font(.system(size: 40, weight: .thin))
-                .foregroundColor(Color.purple)
+                .foregroundColor(Color.blue)
                 
                 Text("T E X T I N G")
                     .font(.system(size: 55, weight: .thin))
-                    .foregroundColor(Color.purple)
+                    .foregroundColor(Color.blue)
+                Spacer()
+                    .frame(height: 25)
                 
+               
+                Text("Not sure what to say \nin your 1st text?")
+                .font(.system(size: 30, weight: .thin))
+                .italic()
+                .foregroundColor(Color.white)
+                .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 25)
@@ -44,7 +52,7 @@ struct Step6_TextingFirst: View {
                 VStack {
                     Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
                         
-                        Text("Not Sure What to Say?")
+                        Text("Try One of Ours")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -58,17 +66,17 @@ struct Step6_TextingFirst: View {
                         .frame(height: 15)
                     
                     VStack {
-                        Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
-                            
-                            Text("Should I Appologize?")
-                                .fontWeight(.thin)
-                                .frame(width: 310, height: 50)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        }
+//                        Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
+//
+//                            Text("Should I Appologize?")
+//                                .fontWeight(.thin)
+//                                .frame(width: 310, height: 50)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 30))
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        }
                         Spacer()
                             .frame(height: 15)
                         
@@ -96,15 +104,13 @@ struct Step6_TextingFirst: View {
                         Spacer()
                             .frame(height: 60)
                         
-                        Text("While you're stressing \nwaiting for a REPLY")
-                            .font(.system(size: 25, weight: .medium))
-                            .italic()
-                            .foregroundColor(.white)
+                        Text("While waiting for a reply")
+                        .font(.system(size: 30, weight: .thin))
+                        .italic()
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
                         
-                        
-                        //                                    .multilineTextAlignment(.leading)
-                            .padding(.horizontal, 0)
-                        
+                      
                         Spacer()
                             .frame(height: 20)
                     }
@@ -116,7 +122,7 @@ struct Step6_TextingFirst: View {
                     NavigationLink(
                         destination: TryThis(),
                         label: {
-                            Text("Try This")
+                            Text("Try These")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
                                 .frame(width: 150.0, height: 40)

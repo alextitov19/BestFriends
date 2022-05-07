@@ -31,7 +31,7 @@ struct FightWithFriend: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("We'll minamize these \ntense times")
+                Text("We'll lessen these \ntense times")
                     .font(.system(size: 25))
                     .foregroundColor(.white)
                     .italic()

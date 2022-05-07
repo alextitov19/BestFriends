@@ -96,7 +96,6 @@
 		CFAB540B281BB6EE00BBF502 /* DramaCentralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */; };
 		CFAB540D281BBA4C00BBF502 /* ReceivedFixFightNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */; };
 		CFAB540F281CA79200BBF502 /* Step5_Why.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB540E281CA79200BBF502 /* Step5_Why.swift */; };
-		CFAB5411281CFF1900BBF502 /* NotifyFriendFixFight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5410281CFF1900BBF502 /* NotifyFriendFixFight.swift */; };
 		CFAB5413281D145100BBF502 /* Step2_FightLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5412281D145100BBF502 /* Step2_FightLandingView.swift */; };
 		CFAB5416281E1B8300BBF502 /* JournalFight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5415281E1B8300BBF502 /* JournalFight.swift */; };
 		CFAB5419281E537D00BBF502 /* ShowHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5418281E537D00BBF502 /* ShowHug.swift */; };
@@ -216,7 +215,6 @@
 		CFAB540A281BB6EE00BBF502 /* DramaCentralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaCentralView.swift; sourceTree = "<group>"; };
 		CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedFixFightNotification.swift; sourceTree = "<group>"; };
 		CFAB540E281CA79200BBF502 /* Step5_Why.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step5_Why.swift; sourceTree = "<group>"; };
-		CFAB5410281CFF1900BBF502 /* NotifyFriendFixFight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyFriendFixFight.swift; sourceTree = "<group>"; };
 		CFAB5412281D145100BBF502 /* Step2_FightLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2_FightLandingView.swift; sourceTree = "<group>"; };
 		CFAB5415281E1B8300BBF502 /* JournalFight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalFight.swift; sourceTree = "<group>"; };
 		CFAB5418281E537D00BBF502 /* ShowHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHug.swift; sourceTree = "<group>"; };
@@ -562,7 +560,6 @@
 			isa = PBXGroup;
 			children = (
 				CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */,
-				CFAB5410281CFF1900BBF502 /* NotifyFriendFixFight.swift */,
 				CFAB5406281AAFA100BBF502 /* TryThis.swift */,
 			);
 			path = Step6_TextingAnxiety;
@@ -866,7 +863,6 @@
 				CF3B65B9280081550003A714 /* SettingsNotificationsView.swift in Sources */,
 				CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
-				CFAB5411281CFF1900BBF502 /* NotifyFriendFixFight.swift in Sources */,
 				CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */,
 				CFAB541B281E5F8300BBF502 /* YouGotThis.swift in Sources */,
 				CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */,
