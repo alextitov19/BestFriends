@@ -14,10 +14,7 @@ struct FightWithFriend: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
-            
-            
+          
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
@@ -30,34 +27,28 @@ struct FightWithFriend: View {
             //                    .offset(y: -250)
             //
             VStack {
-                 
-                Text("83% of teens say; ")
-                    .font(.system(size: 30))
+      
+                Spacer()
+                    .frame(height: 25)
+                
+                Text("We'll help you through \nthese tense times")
+                    .font(.system(size: 25))
                     .foregroundColor(.white)
                     .fontWeight(.light)
-                 
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("I don't know what to do next")
-                    .font(.system(size: 27))
-                    .italic()
-                    .foregroundColor(.purple)
-                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
                  
                 Spacer()
                     .frame(height: 10)
                  
-                Text("next after a Huge Fight")
-                    .font(.system(size: 27, weight: .bold))
-                    .italic()
-                    .foregroundColor(.purple)
+                Text("minimazing the wreckage")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
                     .fontWeight(.light)
                    
                 
             VStack {
                     Spacer()
-                        .frame(height: 115)
+                        .frame(height: 60)
                     
                     NavigationLink(
                         destination: DramaCentralView(),
@@ -73,36 +64,30 @@ struct FightWithFriend: View {
                         })
                     
                     Spacer()
-                        .frame(height: 115)
-                    
-                    Text("We'll help you through")
-                        .font(.system(size: 30))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.purple)
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("these tense times")
-                        .font(.system(size: 30))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.purple)
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("minimazing the wreckage")
-                        .font(.system(size: 30))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.purple)
-                    
-                    Spacer()
-                        .frame(height: 25)
-                    
-                    Text("finding your SMILE")
-                        .font(.system(size: 35))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color.white)
+                        .frame(height: 60)
+                
+                Text("finding your")
+                    .font(.system(size: 30))
+                    .italic()
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                
+                
+                Text("SMILE")
+                    .font(.system(size: 90))
+                    .foregroundColor(.blue)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+              
+                
+//                    Text("Easy-to-use, \n 7-Step method \nquickly helping you \nbecome friends again.")
+//                        .font(.system(size: 25))
+//                        .fontWeight(.light)
+//                        .foregroundColor(Color.white)
+//                        .multilineTextAlignment(.center)
+//                       
+//               
                     
                     
                     
@@ -122,3 +107,10 @@ struct FightWithFriend_Previews : PreviewProvider {
 }
 
 
+
+//
+//   Text("We'll help you through \nthese tense times \nminimazing the wreckage")
+//       .font(.system(size: 30))
+//       .fontWeight(.light)
+//       .foregroundColor(Color.white)
+//
