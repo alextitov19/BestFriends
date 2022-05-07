@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct BestFriendsApp: App {
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     @ObservedObject var sessionManager = SessionManager()
     
     var body: some Scene {
