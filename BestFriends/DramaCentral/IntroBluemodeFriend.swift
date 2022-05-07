@@ -37,33 +37,26 @@ struct IntroBluemodeFriend: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("83% of teens said they ")
-                    .font(.system(size: 30))
+                Text("83% of teens said they \ndon't know what to do after ")
+                    .font(.system(size: 25))
                     .foregroundColor(.white)
                     .fontWeight(.light)
+                    .multilineTextAlignment(.center)
                  
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("don't know what to do")
-                    .font(.system(size: 30))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
+             
                  
                 Spacer()
                     .frame(height: 10)
                  
-                Text("after a Huge Fight")
-                    .font(.system(size: 40))
-                    .italic()
+                Text("a Huge Fight")
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                    
                 
             VStack {
                     Spacer()
-                        .frame(height: 115)
+                        .frame(height: 60)
                     
                     NavigationLink(
                         destination: FightWithFriend(),
@@ -79,7 +72,7 @@ struct IntroBluemodeFriend: View {
                         })
                     
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 60)
                 
                 Text("introducing")
                     .font(.system(size: 30))
