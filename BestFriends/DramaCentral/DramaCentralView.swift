@@ -42,14 +42,14 @@ struct DramaCentralView: View {
                 Spacer()
                     .frame(height: 35)
                 
-                Text("NOT")
-                    .font(.system(size: 90))
+                Text("the ")
+                    .font(.system(size: 50))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
                     .kerning(10)
                 
-                Text("KNOWING")
-                    .font(.system(size: 60))
+                Text("WAITING")
+                    .font(.system(size: 80))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
                     .kerning(10)
