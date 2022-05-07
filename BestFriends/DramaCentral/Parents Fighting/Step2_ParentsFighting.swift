@@ -1,10 +1,9 @@
 //
-//  Step1_ParentsFighting.swift
+//  Step2_ParentsFighting.swift
 //  BestFriends
 //
 //  Created by Social Tech on 5/7/22.
 //
-
 
 
 import Foundation
@@ -12,7 +11,7 @@ import Foundation
 import SwiftUI
 import AVKit
 
-struct Step1_ParentsFighting: View {
+struct Step2_ParentsFighting: View {
     
     @EnvironmentObject var sessionManager: SessionManager
 
@@ -132,9 +131,9 @@ struct Step1_ParentsFighting: View {
 
 
 
-struct Step1_ParentsFighting_Previews : PreviewProvider {
+struct Step2_ParentsFighting_Previews : PreviewProvider {
     static var previews: some View {
-        Step1_ParentsFighting()
+        Step2_ParentsFighting()
     }
 }
 
