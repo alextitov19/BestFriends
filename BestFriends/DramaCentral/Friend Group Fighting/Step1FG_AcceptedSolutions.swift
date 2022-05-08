@@ -64,7 +64,7 @@ struct Step1FG_SuggestedSolutions: View {
                         .frame(height: 45)
                     
                     NavigationLink(
-                        destination: Step2_ParentsFighting(),
+                        destination: Step2FG_NewSolutions(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
