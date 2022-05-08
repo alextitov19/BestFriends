@@ -79,6 +79,8 @@
 		CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */; };
 		CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */; };
 		CF381A502827372100B3719E /* Step2_ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4F2827372100B3719E /* Step2_ParentsFighting.swift */; };
+		CF381A5228283D5C00B3719E /* IntroFriendGpFight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A5128283D5C00B3719E /* IntroFriendGpFight.swift */; };
+		CF381A5428283FA000B3719E /* Step1FG_AcceptedSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */; };
 		CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AA2800718E0003A714 /* ReportAbuse.swift */; };
 		CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AC280075620003A714 /* MyAccountView.swift */; };
 		CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */; };
@@ -199,6 +201,8 @@
 		CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroBluemodeFriend.swift; sourceTree = "<group>"; };
 		CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1_ParentsFighting.swift; sourceTree = "<group>"; };
 		CF381A4F2827372100B3719E /* Step2_ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2_ParentsFighting.swift; sourceTree = "<group>"; };
+		CF381A5128283D5C00B3719E /* IntroFriendGpFight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFriendGpFight.swift; sourceTree = "<group>"; };
+		CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1FG_AcceptedSolutions.swift; sourceTree = "<group>"; };
 		CF3B65AA2800718E0003A714 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
 		CF3B65AC280075620003A714 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServicePrivacy.swift; sourceTree = "<group>"; };
@@ -482,6 +486,8 @@
 		CF381A4E2826883A00B3719E /* Friend Group Fighting */ = {
 			isa = PBXGroup;
 			children = (
+				CF381A5128283D5C00B3719E /* IntroFriendGpFight.swift */,
+				CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */,
 			);
 			path = "Friend Group Fighting";
 			sourceTree = "<group>";
@@ -899,10 +905,12 @@
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				7AD10450265AB93F007627FD /* UIWindowExtension.swift in Sources */,
 				7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */,
+				CF381A5228283D5C00B3719E /* IntroFriendGpFight.swift in Sources */,
 				CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
 				CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */,
+				CF381A5428283FA000B3719E /* Step1FG_AcceptedSolutions.swift in Sources */,
 				CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */,
 				CFAB5413281D145100BBF502 /* Step2_FightLandingView.swift in Sources */,
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
