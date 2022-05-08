@@ -36,7 +36,7 @@ struct DramaMainView: View {
                     Text("Fight with Friend")
                         .font(.system(size: 30))
                         .foregroundColor(.blue)
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
                     HStack {

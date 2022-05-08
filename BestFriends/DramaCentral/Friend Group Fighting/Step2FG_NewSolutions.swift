@@ -38,7 +38,7 @@ struct Step2FG_NewSolutions: View {
                     Text("Fight in Friend Group")
                         .font(.system(size: 30))
                         .foregroundColor(.blue)
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
 
                     
