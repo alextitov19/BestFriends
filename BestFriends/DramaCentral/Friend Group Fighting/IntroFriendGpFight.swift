@@ -59,7 +59,7 @@ struct IntroFriendGpFight: View {
                         .frame(height: 60)
                     
                     NavigationLink(
-                        destination: FightWithFriend(),
+                        destination: Step1FG_SuggestedSolutions(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
