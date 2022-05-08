@@ -77,7 +77,7 @@ struct Step7_TimeToTalk: View {
                    
                     VStack {
                         
-                        Text("Get Back to Bight Friends")
+                        Text("Get Back to Being Friends")
                             .font(.system(size: 30))
                             .fontWeight(.thin)
                             .foregroundColor(Color.black)

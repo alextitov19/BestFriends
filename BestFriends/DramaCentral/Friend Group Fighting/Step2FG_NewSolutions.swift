@@ -1,14 +1,16 @@
 //
-//  DramaMainView.swift
+//  Step2FG_NewSolutions.swift
 //  BestFriends
 //
-//  Created by Social Tech on 4/28/22.
+//  Created by Social Tech on 5/8/22.
 //
+
+
 
 import Foundation
 import SwiftUI
 
-struct DramaMainView: View {
+struct Step2FG_NewSolutions: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -33,11 +35,12 @@ struct DramaMainView: View {
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
 
-                    Text("Fight with Friend")
+                    Text("Fight in Friend Group")
                         .font(.system(size: 30))
                         .foregroundColor(.blue)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
+
                     
                     HStack {
                         VStack {
@@ -55,7 +58,7 @@ struct DramaMainView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("Meet Up")
+                                    Text("Plan \nGroup \nActivity")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -79,7 +82,7 @@ struct DramaMainView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("First \nText \nAnxiety")
+                                    Text("Group \nChating \nvs.1-on-1")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -103,7 +106,7 @@ struct DramaMainView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("Breathe")
+                                    Text("????")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -126,7 +129,7 @@ struct DramaMainView: View {
 //                                        .font(.system(size: 130, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
-                                    Text("Need \nMore \nTIME")
+                                    Text("My \nFriend \nGroup")
                                     //                            .background()
                                         .foregroundColor(.white)
                                         .font(.system(size: 25, weight: .bold))
@@ -154,7 +157,7 @@ struct DramaMainView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("Reason \nfor \nFight")
+                                    Text("????")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -178,7 +181,7 @@ struct DramaMainView: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("Who \nFight \n With?")
+                                    Text("Who \nFighting \n in Group?")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -264,9 +267,9 @@ struct DramaMainView: View {
 
 
 
-struct DramaMainView_Previews: PreviewProvider {
+struct Step2FG_NewSolutions_Previews: PreviewProvider {
     static var previews: some View {
-        DramaMainView()
+        Step2FG_NewSolutions()
     }
 }
 
