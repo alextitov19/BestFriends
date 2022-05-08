@@ -54,8 +54,8 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 20)
                 
-                Text("- these are teens we are talking about \n- the adult solutions will be in V2.0 \n - ")
-                    .font(.system(size: 25))
+                Text("- teens talk all the time \n- know exactly what is going on with everyone \n- they always take sides \n- they talk to each other about the fight \n- they express their opinions \n- exactly opposite what professionals say to do ")
+                    .font(.system(size: 15))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
      
