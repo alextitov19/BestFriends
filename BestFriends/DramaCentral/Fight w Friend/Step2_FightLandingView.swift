@@ -14,7 +14,7 @@ struct Step2_FightLandingView: View {
     
     let user: User
     let friends: [User]
-   
+    
     var body: some View {
         
         ZStack {
@@ -65,7 +65,7 @@ struct Step2_FightLandingView: View {
                             .foregroundColor(.gray)
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.leading)
-                            
+                        
                         
                         Spacer()
                             .frame(height: 20)
@@ -87,20 +87,20 @@ struct Step2_FightLandingView: View {
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
                             if friends.count > 0 {
-                            NavigationLink(
-                                destination: BreathInView(),
-                                label: {
-                                    Text(friends[0].firstName + " " + String(friends[0].lastName.first!))
-                                        .fontWeight(.bold)
-                                        .frame(width: 100, height: 30)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 10))
-                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                })
+                                NavigationLink(
+                                    destination: BreathInView(),
+                                    label: {
+                                        Text(friends[0].firstName + " " + String(friends[0].lastName.first!))
+                                            .fontWeight(.bold)
+                                            .frame(width: 100, height: 30)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .font(.system(size: 10))
+                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                                            .cornerRadius(25)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    })
                             }
-                                
+                            
                             NavigationLink(
                                 destination: BreathInView(),
                                 label: {
@@ -225,7 +225,7 @@ struct Step2_FightLandingView: View {
 
 struct FightLandingView_Previews : PreviewProvider {
     static var previews: some View {
-        Step2_FightLandingView(user: User(id: "", firstName: "", lastName: "", token: "", atmosphere: ""), friends: [])
+        Step2_FightLandingView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
     }
 }
 
