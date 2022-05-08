@@ -73,9 +73,9 @@ struct Step2_ParentsFighting: View {
                     NavigationLink(
                         destination: ParentsFighting(),
                         label: {
-                            Text("(Anonymous FORUM)")
+                            Text("Anonymous FORUM ???")
                                 .fontWeight(.thin)
-                                .frame(width: 300, height: 40)
+                                .frame(width: 310, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
