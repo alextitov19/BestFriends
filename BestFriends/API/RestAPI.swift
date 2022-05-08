@@ -7,6 +7,7 @@
 
 import Foundation
 import Promises
+import FirebaseMessaging
 
 class RestApi {
     var helper: Helper
@@ -92,10 +93,32 @@ class RestApi {
         return request
     }
     
-    public func updateUserToken(token: String) -> Promise<Int> {
+    public func registerAPNToken() {
+        Messaging.messaging().token { token, error in
+          if let error = error {
+            print("Error fetching FCM registration token: \(error)")
+          } else if let token = token {
+            print("FCM registration token: \(token)")
+              self.updateUserToken(token: token).then {result in
+                  if result == 200 {
+                  print("Successfully register token")
+                  } else {
+                      print("Failed to register token")
+                  }
+              }
+          }
+        }
+    }
+    
+    private func updateUserToken(token: String) -> Promise<Int> {
         return helper.updateUserToken(url: API_URL + "/user/update/token/" + token)
     }
     
+    public func sendPushNotification(title: String, body: String, APNToken: String) -> Promise<Int> {
+        let createNotification = CreateNotification(title: title, body: body, APNToken: APNToken)
+        return helper.sendPushNotification(url: API_URL + "/notification", createNotification: createNotification)
+    }
+        
     public func updateUserId() {
         getCurrentUser().then { details in
             self.userId = details.id
