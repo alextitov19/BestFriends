@@ -96,31 +96,30 @@ struct Step2_FightLandingView: View {
                             }
                         }
                         
-                        VStack {
-                            HStack {
-                                if friends.count > 2 {
-                                    RectView(user: user, friend: friends[2])
-                                }
-                                
-                                if friends.count > 3 {
-                                    RectView(user: user, friend: friends[3])
-                                }
-                                
-                                if friends.count > 4 {
-                                    RectView(user: user, friend: friends[4])
-                                }
+                        HStack {
+                            if friends.count > 2 {
+                                RectView(user: user, friend: friends[2])
                             }
-                            Spacer()
-                                .frame(height: 45)
                             
+                            if friends.count > 3 {
+                                RectView(user: user, friend: friends[3])
+                            }
+                            
+                            if friends.count > 4 {
+                                RectView(user: user, friend: friends[4])
+                            }
                         }
+                        
+                        Spacer()
+                            .frame(height: 45)
+                        
                         Text("Let them know you're \nready to talk")
                             .font(.system(size: 35))
                             .fontWeight(.light)
                             .foregroundColor(Color.purple)
                             .multilineTextAlignment(.center)
                         
-                 
+                        
                         VStack {
                             
                             
@@ -128,7 +127,7 @@ struct Step2_FightLandingView: View {
                                 .frame(height: 80)
                             
                             NavigationLink(
-                                destination: Step3_BreathInviteView(),
+                                destination: Step3_BreathInviteView(user: user, friends: friends),
                                 label: {
                                     Text("NEXT")
                                         .fontWeight(.thin)

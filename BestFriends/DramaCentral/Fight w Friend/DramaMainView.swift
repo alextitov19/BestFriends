@@ -170,7 +170,8 @@ struct DramaMainView: View {
                         }
                         
                         VStack {
-                            NavigationLink(destination: Step3_BreathInviteView(), label: {
+                            if user != nil {
+                            NavigationLink(destination: Step3_BreathInviteView(user: user!, friends: friends), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
@@ -190,6 +191,7 @@ struct DramaMainView: View {
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 }
                             })
+                            }
                             
                             Spacer()
                                 .frame(height: 20)

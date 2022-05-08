@@ -167,7 +167,7 @@ struct Step2FG_NewSolutions: View {
                         }
                         
                 VStack {
-                            NavigationLink(destination: Step3_BreathInviteView(), label: {
+                            NavigationLink(destination: EmptyView(), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
