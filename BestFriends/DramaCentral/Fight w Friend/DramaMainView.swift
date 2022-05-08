@@ -108,7 +108,7 @@ struct DramaMainView: View {
                                         //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         //
                                         
-                                        Text("Breathe")
+                                        Text("Who was \nFight \nWith?")
                                             .foregroundColor(.white)
                                             .font(.system(size: 20, weight: .bold))
                                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -184,7 +184,7 @@ struct DramaMainView: View {
                                     //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     //
                                     //
-                                    Text("Who \nFight \n With?")
+                                    Text("Take \na \nBreath")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
