@@ -86,73 +86,29 @@ struct Step2_FightLandingView: View {
                                         .cornerRadius(25)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
+                            
                             if friends.count > 0 {
-                                NavigationLink(
-                                    destination: BreathInView(),
-                                    label: {
-                                        Text(friends[0].firstName + " " + String(friends[0].lastName.first!))
-                                            .fontWeight(.bold)
-                                            .frame(width: 100, height: 30)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 10))
-                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
+                                RectView(user: user, friend: friends[0])
                             }
                             
-                            NavigationLink(
-                                destination: BreathInView(),
-                                label: {
-                                    Text("Firend 2")
-                                        .fontWeight(.bold)
-                                        .frame(width: 100, height: 30)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 15))
-                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                })
+                            if friends.count > 1 {
+                                RectView(user: user, friend: friends[1])
+                            }
                         }
+                        
                         VStack {
                             HStack {
-                                NavigationLink(
-                                    destination: BreathInView(),
-                                    label: {
-                                        Text("Friend 3")
-                                            .fontWeight(.bold)
-                                            .frame(width: 100, height: 30)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 15))
-                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
-                                NavigationLink(
-                                    destination: BreathInView(),
-                                    label: {
-                                        Text("Friend 4")
-                                            .fontWeight(.bold)
-                                            .frame(width: 100, height: 30)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 15))
-                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
+                                if friends.count > 2 {
+                                    RectView(user: user, friend: friends[2])
+                                }
                                 
-                                NavigationLink(
-                                    destination: BreathInView(),
-                                    label: {
-                                        Text("Friend 5")
-                                            .fontWeight(.bold)
-                                            .frame(width: 100, height: 30)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 15))
-                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
+                                if friends.count > 3 {
+                                    RectView(user: user, friend: friends[3])
+                                }
+                                
+                                if friends.count > 4 {
+                                    RectView(user: user, friend: friends[4])
+                                }
                             }
                             Spacer()
                                 .frame(height: 45)
@@ -164,26 +120,7 @@ struct Step2_FightLandingView: View {
                             .foregroundColor(Color.purple)
                             .multilineTextAlignment(.center)
                         
-                        VStack {
-                            
-                            NavigationLink(
-                                destination: DramaMainView(),
-                                label: {
-                                    Text("INVITE via push notification")
-                                        .fontWeight(.semibold)
-                                        .foregroundColor(Color.white)
-                                        .frame(width: 275.0, height: 50)
-                                        .font(.system(size: 20))
-                                    
-                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                    
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                    
-                                }
-                                
-                            )}
+                 
                         VStack {
                             
                             
@@ -219,7 +156,32 @@ struct Step2_FightLandingView: View {
         
     }
     
+    private struct RectView: View {
+        let user: User
+        let friend: User
+        
+        var body: some View {
+            Button(action: {
+                RestApi.instance.sendPushNotification(title: "BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken ?? "").then { response in
+                    print("Got send APN repsonse: ", response)
+                }
+            },
+                   label: {
+                Text(friend.firstName + " " + String(friend.lastName.first!))
+                    .fontWeight(.bold)
+                    .frame(width: 100, height: 30)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 10))
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            })
+        }
+    }
+    
 }
+
+
 
 
 

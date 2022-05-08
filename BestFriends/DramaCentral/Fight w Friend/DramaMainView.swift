@@ -22,6 +22,7 @@ struct DramaMainView: View {
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
+                    .onAppear(perform: loadData)
                 
                 AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
