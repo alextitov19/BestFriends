@@ -29,22 +29,24 @@ struct Step1FG_SuggestedSolutions: View {
 //
             
             VStack {
-                
-                Text("Adults Suggest")
-                    .font(.system(size: 40))
+          
+                Text("We Think Differently")
+                    .font(.system(size: 30))
+                    .foregroundColor(.blue)
                     .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-               
-                Spacer()
-                    .frame(height: 20)
+                    .multilineTextAlignment(.center)
                 
-                Text("- Disregard fight altogether \n- Don't get involved \n- Don't pick sides \n- Don't personalize the fight \n- It's their fight, they must fix it")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-               
                 Spacer()
-                    .frame(height: 35)
+                    .frame(height: 10)
+                
+                Text("Differently")
+                    .font(.system(size: 70))
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    
+                Spacer()
+                    .frame(height: 45)
                 
                 Text("Teen Reality")
                     .font(.system(size: 35))

@@ -39,8 +39,8 @@ struct IntroFriendGpFight: View {
                 Spacer()
                     .frame(height: 20)
                 
-                Text("fights between members cause")
-                    .font(.system(size: 25))
+                Text("How fix fights between ")
+                    .font(.system(size: 30))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -48,7 +48,7 @@ struct IntroFriendGpFight: View {
                 Spacer()
                     .frame(height: 5)
                  
-                Text("Drama in Group")
+                Text("Friend Group Members?")
                     .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.light)
@@ -74,28 +74,18 @@ struct IntroFriendGpFight: View {
                     Spacer()
                         .frame(height: 60)
                 
-                Text("what does everyone suggest")
-                    .font(.system(size: 30))
-                    .italic()
+                Text("Adults Suggest")
+                    .font(.system(size: 40))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.blue)
+               
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("- Don't get involved in fight\n- Don't pick sides \n- Don't personalize their fight \n- The two fighting must fix it")
+                    .font(.system(size: 23))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
-                
-                
-                Text("to fix this ")
-                    .font(.system(size: 80))
-                    .foregroundColor(.blue)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-              
-                
-                    Text("kdkdkdkdkdk")
-                        .font(.system(size: 25))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                       
-               
                     
                     
                     
