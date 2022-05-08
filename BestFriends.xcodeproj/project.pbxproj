@@ -81,6 +81,7 @@
 		CF381A502827372100B3719E /* Step2_ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4F2827372100B3719E /* Step2_ParentsFighting.swift */; };
 		CF381A5228283D5C00B3719E /* IntroFriendGpFight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A5128283D5C00B3719E /* IntroFriendGpFight.swift */; };
 		CF381A5428283FA000B3719E /* Step1FG_AcceptedSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */; };
+		CF381A56282842EA00B3719E /* Step2FG_NewSolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */; };
 		CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AA2800718E0003A714 /* ReportAbuse.swift */; };
 		CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AC280075620003A714 /* MyAccountView.swift */; };
 		CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */; };
@@ -203,6 +204,7 @@
 		CF381A4F2827372100B3719E /* Step2_ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2_ParentsFighting.swift; sourceTree = "<group>"; };
 		CF381A5128283D5C00B3719E /* IntroFriendGpFight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFriendGpFight.swift; sourceTree = "<group>"; };
 		CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1FG_AcceptedSolutions.swift; sourceTree = "<group>"; };
+		CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2FG_NewSolutions.swift; sourceTree = "<group>"; };
 		CF3B65AA2800718E0003A714 /* ReportAbuse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportAbuse.swift; sourceTree = "<group>"; };
 		CF3B65AC280075620003A714 /* MyAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountView.swift; sourceTree = "<group>"; };
 		CF3B65AE2800783F0003A714 /* TermsOfServicePrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServicePrivacy.swift; sourceTree = "<group>"; };
@@ -488,6 +490,7 @@
 			children = (
 				CF381A5128283D5C00B3719E /* IntroFriendGpFight.swift */,
 				CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */,
+				CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */,
 			);
 			path = "Friend Group Fighting";
 			sourceTree = "<group>";
@@ -872,6 +875,7 @@
 				CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */,
 				CFE1946928129D9600ED5718 /* FriendQualities.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
+				CF381A56282842EA00B3719E /* Step2FG_NewSolutions.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
 				CFAB5407281AAFA100BBF502 /* TryThis.swift in Sources */,

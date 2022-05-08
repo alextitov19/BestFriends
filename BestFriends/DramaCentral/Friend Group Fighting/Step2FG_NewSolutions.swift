@@ -1,14 +1,16 @@
 //
-//  DramaMainView.swift
+//  Step2FG_NewSolutions.swift
 //  BestFriends
 //
-//  Created by Social Tech on 4/28/22.
+//  Created by Social Tech on 5/8/22.
 //
+
+
 
 import Foundation
 import SwiftUI
 
-struct DramaMainView: View {
+struct Step2FG_NewSolutions: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -33,11 +35,12 @@ struct DramaMainView: View {
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
 
-                    Text("Fight with Friend")
+                    Text("Fight in Friend Group")
                         .font(.system(size: 30))
                         .foregroundColor(.blue)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
+
                     
                     HStack {
                         VStack {
@@ -264,9 +267,9 @@ struct DramaMainView: View {
 
 
 
-struct DramaMainView_Previews: PreviewProvider {
+struct Step2FG_NewSolutions_Previews: PreviewProvider {
     static var previews: some View {
-        DramaMainView()
+        Step2FG_NewSolutions()
     }
 }
 
