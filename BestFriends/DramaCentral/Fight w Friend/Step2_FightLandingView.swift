@@ -39,13 +39,13 @@ struct Step2_FightLandingView: View {
                 VStack {
                     
                     Text("Ready to")
-                        .font(.system(size: 40, weight: .bold))
+                        .font(.system(size: 50))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                     
                     
-                    Text("BEGIN?")
-                        .font(.system(size: 60, weight: .bold))
+                    Text("FIX THIS?")
+                        .font(.system(size: 65))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                         .kerning(10)
@@ -56,14 +56,13 @@ struct Step2_FightLandingView: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("Who did you fight with?")
-                            .font(.system(size: 25, weight: .bold))
+                        Text("Who are you fighting with?")
+                            .font(.system(size: 25))
                             .italic()
                             .foregroundColor(.gray)
                             .fontWeight(.semibold)
-                        
                             .multilineTextAlignment(.leading)
-                            .padding(.horizontal, 0)
+                            
                         
                         Spacer()
                             .frame(height: 20)
@@ -75,7 +74,7 @@ struct Step2_FightLandingView: View {
                             NavigationLink(
                                 destination: BreathInView(),
                                 label: {
-                                    Text("Too Soon")
+                                    Text("ALL")
                                         .fontWeight(.bold)
                                         .frame(width: 100, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -151,16 +150,21 @@ struct Step2_FightLandingView: View {
                                     })
                             }
                             Spacer()
-                                .frame(height: 25)
+                                .frame(height: 45)
                             
                         }
+                        Text("Let them know you're \nready to talk")
+                            .font(.system(size: 35))
+                            .fontWeight(.light)
+                            .foregroundColor(Color.purple)
+                            .multilineTextAlignment(.center)
                         
                         VStack {
                             
                             NavigationLink(
                                 destination: DramaMainView(),
                                 label: {
-                                    Text("Invite via Push Notification")
+                                    Text("INVITE via push notification")
                                         .fontWeight(.semibold)
                                         .foregroundColor(Color.white)
                                         .frame(width: 275.0, height: 50)
@@ -168,7 +172,7 @@ struct Step2_FightLandingView: View {
                                     
                                         .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                     
-                                        .cornerRadius(25)
+                                        .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                     
@@ -179,14 +183,14 @@ struct Step2_FightLandingView: View {
                             
                             
                             Spacer ()
-                                .frame(height: 160)
+                                .frame(height: 80)
                             
                             NavigationLink(
                                 destination: Step3_BreathInviteView(),
                                 label: {
-                                    Text("Step-3")
+                                    Text("NEXT")
                                         .fontWeight(.thin)
-                                        .frame(width: 110, height: 40)
+                                        .frame(width: 100, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 30))
                                         .background(ColorManager.purple3)

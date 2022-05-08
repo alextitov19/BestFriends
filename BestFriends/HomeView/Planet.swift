@@ -10,19 +10,24 @@ import SwiftUI
 struct Planet: View {
     
     let user: User
+    let atmosphere: Atmosphere
     
-    var planet: Int
-    var mood: Int
-
     var body: some View {
-        PlanetView(planet: planet, mood: mood)
-            .scaledToFit()
-            .frame(width: 120, height: 120)
-            .glow(color: glowColor())
+        VStack {
+            PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
+                .scaledToFit()
+                .frame(width: 65, height: 65)
+                .glow(color: glowColor())
+            
+            
+            Text(user.firstName + " " + String(user.lastName.first!))
+                .foregroundColor(.white)
+                .fontWeight(.thin)
+        }
     }
     
     private func glowColor() -> Color {
-        switch mood {
+        switch atmosphere.mood {
         case 0:
             return ColorManager.pmbc_blue
         case 1:
@@ -49,6 +54,12 @@ struct PlanetActionsView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+    let user: User
+    let atmosphere: Atmosphere
+    
+    let friends: [User]
+    let friendAtmospheres: [Atmosphere]
+    
     var body: some View {
         HStack {
             VStack {
@@ -61,7 +72,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Build\nProtective\nAtmosphere")
+                        Text("Protective \nAtmosphere")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -80,7 +91,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Customize\nmy \nPlanet")
+                        Text("Fashion \nmy \nPlanet")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -99,10 +110,19 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Add\nTrusted\nFriends")
+                        VStack {
+                        Text("+")
+                            .foregroundColor(.white)
+                            .font(.system(size: 35, weight: .regular))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        
+                        Text("Trusted\nFriends")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
+                        }
                     }
                     
                 }
@@ -110,23 +130,30 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                    NavigationLink(destination: FightWithFriend(),
-                                   label: {
-                        ZStack {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.pmbc_pink)
-                                .shadow(color: .black, radius: 2, x: 0, y: 2)
-                            
-                            Text("Fighting")
-                                .foregroundColor(.white)
+                NavigationLink(destination: WhoFighting(),
+                               label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(ColorManager.pmbc_pink)
+                            .shadow(color: .black, radius: 2, x: 0, y: 2)
+                       
+                        VStack {
+                            Text("BlueMode")
+                                .foregroundColor(.blue)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            Text("Resolving \nFights")
+                            .foregroundColor(.white)
+                            .font(.system(size: 15, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
                         }
-                    })
-                   
-                
-                
+                          
+                    }
+                })
+                 
                 Spacer()
                     .frame(height: 40)
                 
@@ -139,12 +166,12 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Keeping\nFriends\nSafe")
+                        Text("Safe \nFriend \nSpace")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-                  
-                    
+                        
+                        
                     }
                 }
                 
@@ -160,7 +187,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Daily\nHorizon")
+                        Text("Daily \nHorizon")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -170,23 +197,20 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                Button(action: {
-                    
-//                    trying to link to FriendVault page
-                    sessionManager.showBestFriendMessages()
-                }) {
+                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                               label: {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Friend's \nThourhtful \nMessages")
+                        Text("Friend's \nThoughtful \nMessages")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     }
-                }
+                })
                 
             }
         }
@@ -194,8 +218,15 @@ struct PlanetActionsView: View {
     
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        PlanetActionsView()
-    }
-}
+
+
+
+//
+//
+//
+//
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PlanetActionsView()
+// }
+//}

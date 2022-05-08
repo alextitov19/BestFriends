@@ -1,23 +1,21 @@
 //
-//  FiightWithFriend.swift
+//  IntroFriendGpFight.swift
 //  BestFriends
 //
-//  Created by Social Tech on 4/28/22.
+//  Created by Social Tech on 5/8/22.
 //
+
 
 
 import Foundation
 import SwiftUI
 
 
-struct FightWithFriend: View {
+struct IntroFriendGpFight: View {
     
     var body: some View {
         ZStack {
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
-            
-            
+          
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
@@ -30,48 +28,38 @@ struct FightWithFriend: View {
             //                    .offset(y: -250)
             //
             VStack {
+      
                 
-                
-                Text("we'll pull you")
-                    .font(.system(size: 30))
-                    .italic()
+                Text("Problem")
+                    .font(.system(size: 70))
                     .foregroundColor(.white)
-                    .fontWeight(.light)
+                    .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
                 
                 Spacer()
                     .frame(height: 20)
                 
-                
-                Text("through this drama -")
-                    .font(.system(size: 30))
-                    .italic()
+                Text("fights between members cause")
+                    .font(.system(size: 25))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
-                
+                 
                 Spacer()
-                    .frame(height: 20)
-                
-                Text("minimizing the wreckage")
-                    .font(.system(size: 30, weight: .bold))
-                    .italic()
+                    .frame(height: 5)
+                 
+                Text("Drama in Group")
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.light)
-                    .multilineTextAlignment(.leading)
-                    .padding(.horizontal, 10)
+                   
                 
-                VStack {
-                    
-                    
+            VStack {
                     Spacer()
-                        .frame(height: 115)
-                    
+                        .frame(height: 60)
                     
                     NavigationLink(
-                        destination: DramaCentralView(),
+                        destination: Step1FG_SuggestedSolutions(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
@@ -83,15 +71,31 @@ struct FightWithFriend: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                     
-                    Text("while helping you find")
-                        .font(.system(size: 35, weight: .bold))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.gray)
-                    
-                    Text("your SMILE again")
-                        .font(.system(size: 35, weight: .bold))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.gray)
+                    Spacer()
+                        .frame(height: 60)
+                
+                Text("what does everyone suggest")
+                    .font(.system(size: 30))
+                    .italic()
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                
+                
+                Text("to fix this ")
+                    .font(.system(size: 80))
+                    .foregroundColor(.blue)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+              
+                
+                    Text("kdkdkdkdkdk")
+                        .font(.system(size: 25))
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                       
+               
                     
                     
                     
@@ -104,9 +108,9 @@ struct FightWithFriend: View {
 }
 
 
-struct FightWithFriend_Previews : PreviewProvider {
+struct IntroFriendGpFight_Previews : PreviewProvider {
     static var previews: some View {
-        FightWithFriend()
+        IntroFriendGpFight()
     }
 }
 

@@ -23,7 +23,8 @@ struct ChatView: View {
     init(user: User, group: Group) {
         self.user = user
         self.group = group
-        stream = WebSocketStream(groupId: group.id)
+        let request = RestApi.instance.createChatWebSocketRequest(groupId: group.id)
+        stream = WebSocketStream(request: request)
     }
     
     @State private var messageBody: String = ""
@@ -45,7 +46,6 @@ struct ChatView: View {
                 ScrollView(.vertical) {
                     ForEach(messages, id: \.id) { message in
                         ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
-//                            .onTapGesture{ downloadImage(key: message.image) }
                     }
                 }
                 
@@ -74,6 +74,7 @@ struct ChatView: View {
                         }
                         .font(.system(size: 18))
                         .submitLabel(.send)
+                        .onSubmit { sendMessage() }
                         .padding()
                         .overlay(RoundedRectangle(cornerRadius: 20)
                             .stroke(Color.gray)
@@ -97,7 +98,7 @@ struct ChatView: View {
             return
         }
         
-        guard let data = image.pngData() else {
+        guard let data = image.jpeg(.lowest) else {
             print("Failed to convert image")
             return
         }
@@ -136,7 +137,7 @@ struct ChatView: View {
             debugPrint("Oops something didn't go right")
         }
     }
-    
+        
     private func sortMessages() {
         messages = messages.sorted(by: { $0.createdOn < $1.createdOn })
     }

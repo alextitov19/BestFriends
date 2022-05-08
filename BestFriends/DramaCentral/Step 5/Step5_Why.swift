@@ -46,7 +46,7 @@ struct Step5_Why: View {
                 Spacer()
                     .frame(height: 30)
                 
-                Text("this takes Courage \nto figure out . . . ")
+                Text("this takes Courage \nto figure out")
                     .font(.system(size: 25))
                     .italic()
                     .foregroundColor(.white)
@@ -80,7 +80,7 @@ struct Step5_Why: View {
                         label: {
                             Text("Next")
                                 .fontWeight(.thin)
-                                .frame(width: 110, height: 40)
+                                .frame(width: 100, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)

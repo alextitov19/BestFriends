@@ -33,80 +33,59 @@ struct WhoFighting: View {
 //                .offset(y: -250)
             
             
-            Image("planet_4")
+//            Image("planet_4")
         
         ZStack {
 
-     
-            Button(action: {
-             print("tap function is working")
-                sessionManager.showFightWithFriend()
-            }) {
-                WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nFriend")
-                }
-            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
+            NavigationLink(destination: IntroBluemodeFriend(), label: {
+                WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nBFF")
+                })
+            .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
              
-       
-//Trying to use Friend 2 at a test to get me to DramaMainView
+     
            
-            Button(action: {
-                print("tap function is working")
-                sessionManager.showParentsFighting()
-            }) {
-                WhoFightingCircle (color: .orange, friendName: "OMG, my Parents \nAGAIN!")
-                }
-            .offset(x: showItems ? -100 : 0, y: showItems ? -400: 0)
+              NavigationLink(destination: ParentsFighting(), label: {
+                  WhoFightingCircle (color: .orange, friendName: "OMG, my Parents \nAGAIN!")
+            })
+            .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
-//
-//            Button(action: {
-//             print("tap function is working")
-//                sessionManager.showIndividualFriendMessages()
-//            }) {
-//                FriendVaultCircle (color: .purple, friendName: "Friend 3")
-//                }
-//            .offset(x: showItems ? -150 : 0, y: showItems ? -550: 0)
-//
-//
-//            Button(action: {
-//             print("tap function is working")
-//                sessionManager.showIndividualFriendMessages()
-//            }) {
-//                FriendVaultCircle (color: .gray, friendName: "Friend 4")
-//                }
-//            .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
-//
-//
-//            Button(action: {
-//             print("tap function is working")
-//                sessionManager.showIndividualFriendMessages()
-//            }) {
-//                FriendVaultCircle (color: .blue, friendName: "Friend 5")
-//                }
-//            .offset(x: showItems ? 80 : 0, y: showItems ? -260: 0)
-//
-//            ZStack {
-           Image(systemName: "heart.fill")
+
+            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .blue, friendName: "my \nFriend \nGroup")
+            })
+            .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
+            
+
+
+        Image(systemName: "heart.fill")
                     .resizable()
                     .foregroundColor(.gray)
                     .frame(width: 250, height: 250)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
-
-                VStack {
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                    .shadow(color: .blue, radius: 50, x: 30, y: 50)
+        
+            VStack {
                 
-//                Text("")
-//                        .font(.title)
-//                        .foregroundColor(.green)
-//                        .fontWeight(.medium)
-////                        .multilineTextAlignment(.center)
-//
-            Text("Who's \nF I G H T I N G?")
-                    .font(.system(size: 28))
+
+            Text("Entering")
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
+                  
+                Text("BlueMode")
+                            .font(.system(size: 40))
+                            .foregroundColor(.blue)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    
+                    Text("Who's \nF I G H T I N G?")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                    
                 }
-            
-
             }
             
             
@@ -120,11 +99,8 @@ struct WhoFighting: View {
            .animation(Animation.easeInOut(duration: 1.0), value: showItems)
 
             }
-        
         }
-            
-            
-        }
+    }
    
 
 struct WhoFightingCircle: View {
@@ -139,7 +115,6 @@ struct WhoFightingCircle: View {
         .frame(width: 150, height: 150)
         .clipShape(Circle())
         .foregroundColor(color)
-
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
         
         Text(friendName)
@@ -160,3 +135,11 @@ struct WhoFighting_Previews : PreviewProvider {
     }
 
 }
+
+//
+//    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+
+
+
+//    .glow(color: glowColor(), radius: 20)
+//        private func glowColor() -> Color {

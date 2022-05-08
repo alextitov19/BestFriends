@@ -32,60 +32,30 @@ struct ParentsFighting: View {
             
             VStack {
                 
-                
-                Text("Parents")
-                    .font(.system(size: 50))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
-                    
-                    
-                Text("FIGHTING?")
-                        .font(.system(size: 55))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        .kerning(10)
-                
-                
-                Spacer()
-                    .frame(height: 30)
-                
-                Text("We know how unsettling")
+                Text("We know how")
                     .font(.system(size: 31))
-                    .italic()
-                    .fontWeight(.regular)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+             
+                Text("U N S E T T E L I N G")
+                    .font(.system(size: 45))
+                    .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.blue)
-             
-                VStack {
                 
                 Text("this can be")
                     .font(.system(size: 31))
-                    .italic()
-                    .fontWeight(.regular)
+                    .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.blue)
-                
-                Spacer()
-                    .frame(height: 30)
-                
-                Text("Hold tighly to")
-                    .font(.system(size: 35))
-                    .fontWeight(.thin)
                     .foregroundColor(Color.white)
-                    
-                    
-                Text("YOURSELF")
-                        .font(.system(size: 45))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        .kerning(10)
-                }
-                    
+                
+                
                     
                 VStack {
                
                     Spacer()
-                    .frame(height: 30)
+                    .frame(height: 50)
                     
                     Text("Questioning?")
                         .font(.system(size: 40))
@@ -93,62 +63,55 @@ struct ParentsFighting: View {
                         .foregroundColor(Color.blue)
                         .kerning(10)
            
-                
+                    Spacer()
+                    .frame(height: 20)
+                    
                 Text("Are they getting divorced?")
-                    .font(.system(size: 23))
-                    .fontWeight(.thin)
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
-            
+                  
+                    Spacer()
+                    .frame(height: 10)
                 }
                 
             VStack {
                 Text("What happens to me?")
-                    .font(.system(size: 23))
-                    .fontWeight(.thin)
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
               
+                Spacer()
+                .frame(height: 10)
                 
-                Text("Sometimes I really hate it here")
-                    .font(.system(size: 23))
-                    .fontWeight(.thin)
+                Text("I hate it when the screaming starts")
+                    .font(.system(size: 24))
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
+                
+                Spacer()
+                .frame(height: 10)
+                
                 Text("What can I do?")
-                    .font(.system(size: 23))
-                    .fontWeight(.thin)
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 
-                Spacer()
-                    .frame(height: 15)
+               
          
-                
-            VStack {
-                    
-                    NavigationLink(
-                        destination: FightWithFriend(),
-                        label: {
-                            Text("my Journal")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 160, height: 40)
-                                .font(.system(size: 30)).background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        }
-                    )}
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 40)
                 
                 NavigationLink(
-                    destination: Step5_Why(),
+                    destination: Step1_ParentsFighting(),
                     label: {
-                        Text("NEXT")
+                        Text("WE CAN HELP")
                             .fontWeight(.thin)
-                            .frame(width: 110, height: 40)
+                            .frame(width: 200, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)

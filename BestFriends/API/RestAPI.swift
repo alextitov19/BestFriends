@@ -7,15 +7,16 @@
 
 import Foundation
 import Promises
+import FirebaseMessaging
 
 class RestApi {
     var helper: Helper
     var userId: String?
     let API_URL = "http://54.226.29.220:8080/api/v1/services"
-    let WS_URL = "ws://54.226.29.220:8080/api/v1/services/messages/"
+    let WS_URL = "ws://54.226.29.220:8080/api/v1/services"
 
 //    let API_URL = "http://localhost:8080/api/v1/services"
-//    let WS_URL = "ws://localhost:8080/api/v1/services/messages/"
+//    let WS_URL = "ws://localhost:8080/api/v1/services"
 
     public static var instance = RestApi()
     
@@ -81,12 +82,43 @@ class RestApi {
     }
     
     func createChatWebSocketRequest(groupId: String) -> URLRequest {
-        var request: URLRequest = URLRequest(url: URL(string: WS_URL + groupId)!)
+        var request: URLRequest = URLRequest(url: URL(string: WS_URL + "/messages/" + groupId)!)
         helper.setWebSocketAuthorizationHeader(request: &request)
         return request
     }
     
+    func createDownloadImageWebSocketRequest(folderId: String, imageId: String) -> URLRequest {
+        var request: URLRequest = URLRequest(url: URL(string: WS_URL + "/images/" + folderId + "/" + imageId)!)
+        helper.setWebSocketAuthorizationHeader(request: &request)
+        return request
+    }
     
+    public func registerAPNToken() {
+        Messaging.messaging().token { token, error in
+          if let error = error {
+            print("Error fetching FCM registration token: \(error)")
+          } else if let token = token {
+            print("FCM registration token: \(token)")
+              self.updateUserToken(token: token).then {result in
+                  if result == 200 {
+                  print("Successfully register token")
+                  } else {
+                      print("Failed to register token")
+                  }
+              }
+          }
+        }
+    }
+    
+    private func updateUserToken(token: String) -> Promise<Int> {
+        return helper.updateUserToken(url: API_URL + "/user/update/token/" + token)
+    }
+    
+    public func sendPushNotification(title: String, body: String, APNToken: String) -> Promise<Int> {
+        let createNotification = CreateNotification(title: title, body: body, APNToken: APNToken)
+        return helper.sendPushNotification(url: API_URL + "/notification", createNotification: createNotification)
+    }
+        
     public func updateUserId() {
         getCurrentUser().then { details in
             self.userId = details.id

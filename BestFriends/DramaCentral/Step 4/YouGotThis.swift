@@ -31,50 +31,50 @@ struct YouGotThis: View {
             
             VStack {
                 
-                Text("Take a ")
-                    .font(.system(size: 40))
+                Text("Words")
+                    .font(.system(size: 90))
                     .fontWeight(.thin)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.purple)
                     
-                    
-                Text("BREAK")
-                        .font(.system(size: 60))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        .kerning(10)
-                
+//
+//                Text("BREAK")
+//                        .font(.system(size: 60))
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.white)
+//                        .kerning(10)
+//
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 5)
                     
-                Text("Before the screams begin")
-                    .font(.system(size: 31))
+                Text("you end up \ntaking back later")
+                    .font(.system(size: 40))
                     .italic()
-                    .fontWeight(.regular)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.blue)
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 60)
                 
-                Text("Leaving your words forever \nburned in their brain")
+                Text("Forever burned in their brain")
                     .font(.system(size: 23))
-                    .fontWeight(.thin)
+                    .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 10)
                
             VStack {
-                Text("Unable to never, \never be taken back")
+                Text("Unable to be taken back")
                     .font(.system(size: 23))
-                    .fontWeight(.thin)
+                    .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 10)
                 
-                Text("Unable to never, \never be forgotten")
+                Text("Unable to be forgotten")
                     .font(.system(size: 23))
-                    .fontWeight(.thin)
+                    .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 Spacer()
@@ -92,9 +92,9 @@ struct YouGotThis: View {
                 NavigationLink(
                     destination: Step5_Why(),
                     label: {
-                        Text("Step-5")
+                        Text("NEXT")
                             .fontWeight(.thin)
-                            .frame(width: 110, height: 40)
+                            .frame(width: 100, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)

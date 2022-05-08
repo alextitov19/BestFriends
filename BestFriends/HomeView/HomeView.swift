@@ -62,7 +62,7 @@ struct HomeView: View {
                             if !focusPlanet {
                                 PlanetView(planet: homeData?.atmosphere.planet ?? 0, mood: homeData?.atmosphere.mood ?? 0)
                                     .scaledToFit()
-                                    .frame(width: 200, height: 200)
+                                    .frame(width: 125, height: 125)
                                     .onTapGesture(perform: mainPlanetTapped)
                                     .glow(color: glowColor(), radius: 20)
                                     .padding()
@@ -70,7 +70,7 @@ struct HomeView: View {
                             
                             // Tapped on the main planet
                             if focusPlanet {
-                                PlanetActionsView()
+                                PlanetActionsView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres)
                                     .environmentObject(sessionManager)
                             }
                             
@@ -102,7 +102,8 @@ struct HomeView: View {
                     
                     if newGroupMembers.count > 0 && !focusPlanet {
                         Button(action: {
-                            createGroup()
+//                            createGroup()
+                            RestApi.instance.sendPushNotification(title: "Test title", body: "Test body", APNToken: homeData!.user.APNToken!)
                         }, label: {
                             Text("Create Group")
                                 .frame(width: 130, height: 40)
@@ -126,6 +127,10 @@ struct HomeView: View {
         RestApi.instance.getHomeData().then{ data in
             print("Got HomeData: ", data)
             homeData = data
+            RestApi.instance.registerAPNToken()
+            
+            
+
             createPlanets()
             //            print("Got groups: ", data.groups.count)
             //            chatGroupsView = ChatGroupsView(groups: data.groups)
@@ -133,10 +138,12 @@ struct HomeView: View {
             print("Got error")
             print(err)
         }
+        
     }
     
     // Create plantes and populate the planets array
     private func createPlanets() {
+        planets = []
         let friends: [User] = homeData?.friends ?? []
         let atmosperes: [Atmosphere] = homeData?.friendAtmospheres ?? []
         
@@ -144,7 +151,7 @@ struct HomeView: View {
             for atmosphere in atmosperes {
                 if friend.atmosphere == atmosphere.id {
                     // Found the friend - atmosphere pair
-                    let planet = Planet(user: friend, planet: atmosphere.planet, mood: atmosphere.mood)
+                    let planet = Planet(user: friend, atmosphere: atmosphere)
                     planets.append(planet)
                 }
             }
@@ -202,4 +209,5 @@ struct HomeView: View {
             }
         }
     }
+    
 }

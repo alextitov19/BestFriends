@@ -38,6 +38,7 @@ struct Token : Codable {
 enum HttpMethod: String {
     case get = "Get"
     case post = "Post"
+    case patch = "Patch"
 }
 
 enum AuthErrors: Error {
@@ -145,12 +146,28 @@ class Helper {
         }
     }
     
+    func updateUserToken(url: String) -> Promise<Int> {
+        return callRestApi(url: url, method: .post, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
+    func sendPushNotification(url: String, createNotification: CreateNotification) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(createNotification)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
     func signUp(_ userData: SignUpUserData) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(userData)
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
-        return callRestApiNoAuth(url: signUpUrl, method: .post, data: payload, SignUpResponse.self).then { signUpResponse in
+        return callRestApiNoAuth(url: signUpUrl, method: .patch, data: payload, SignUpResponse.self).then { signUpResponse in
             return Promise<Int>(signUpResponse.code)
         }
     }
@@ -166,7 +183,7 @@ class Helper {
             self.accessToken = tokens.AccessToken.Token
             self.renewToken = tokens.RenewToken.Token
             do {
-                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", atmosphere: ""), token: tokens.RenewToken.Token)
+                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: ""), token: tokens.RenewToken.Token)
                 print("Renew Token: ", tokens.RenewToken.Token)
             } catch {
                 print(error)

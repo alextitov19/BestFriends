@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct BestFriendsApp: App {
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     @ObservedObject var sessionManager = SessionManager()
     
     var body: some Scene {
@@ -39,12 +41,7 @@ struct BestFriendsApp: App {
             case .masterFriendVault:
                 MasterFriendVault()
                     .environmentObject(sessionManager)
-            case .bestFriendMessages:
-                BestFriendMessages()
-                    .environmentObject(sessionManager)
-            case .individualFriendMessages:
-                IndividualFriendMessages()
-                    .environmentObject(sessionManager)
+
             case .fightTextUserIdeas:
                 FightTextUserIdeas()
                     .environmentObject(sessionManager)

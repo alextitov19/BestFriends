@@ -35,7 +35,7 @@ struct Step4_NuclearOption: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
                     
                     
-                    Text("please think \ntwice before ...")
+                    Text("please think \nbefore ...")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.medium)
@@ -44,19 +44,31 @@ struct Step4_NuclearOption: View {
                 
                 
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 10)
                 
                 Text("Unfriending")
-                    .font(.system(size: 25))
-                    .italic()
+                    .font(.system(size: 35))
+                   
                     .foregroundColor(.gray)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 0)
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 30)
                 
-                Text("or")
+                Text("Posting hurtful comments")
+                    .font(.system(size: 30))
+                  
+                    .foregroundColor(.gray)
+                    .fontWeight(.medium)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 0)
+               
+                Spacer()
+                    .frame(height: 5)
+            
+            VStack {
+                Text("- Or -")
                     .font(.system(size: 25))
                     .italic()
                     .foregroundColor(.gray)
@@ -67,16 +79,18 @@ struct Step4_NuclearOption: View {
                 Spacer()
                     .frame(height: 5)
                 
-                Text("posting your friend's \nprivate messages \n on social media")
-                    .font(.system(size: 25, weight: .bold))
-                    .italic()
+                
+                
+                Text("Sharing your friend's \nprivate messages \n on \n Social Media")
+                    .font(.system(size: 30, weight: .bold))
+                  
                     .foregroundColor(.gray)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 0)
                 
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 35)
             
                 
                 VStack {
@@ -84,6 +98,7 @@ struct Step4_NuclearOption: View {
                     Text("30 minutes ago you were BFF and you will be again!")
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
+                        .italic()
                         .multilineTextAlignment(.center)
                         .frame(width: 275, height: 70, alignment: .leading)
                         .font(.system(size: 25))
@@ -110,7 +125,7 @@ struct Step4_NuclearOption: View {
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
-                                .frame(width: 110, height: 40)
+                                .frame(width: 100, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
@@ -128,7 +143,7 @@ struct Step4_NuclearOption: View {
 
 }
 
-
+}
 
 struct NuclearOption_Previews : PreviewProvider {
     static var previews: some View {
