@@ -102,8 +102,7 @@ struct HomeView: View {
                     
                     if newGroupMembers.count > 0 && !focusPlanet {
                         Button(action: {
-//                            createGroup()
-                            RestApi.instance.sendPushNotification(title: "Test title", body: "Test body", APNToken: homeData!.user.APNToken!)
+                            createGroup()
                         }, label: {
                             Text("Create Group")
                                 .frame(width: 130, height: 40)
