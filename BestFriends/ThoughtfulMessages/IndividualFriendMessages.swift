@@ -14,6 +14,9 @@ struct IndividualFriendMessages: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+    
+    
+    
     let friend: User
     let atmosphere: Atmosphere
     

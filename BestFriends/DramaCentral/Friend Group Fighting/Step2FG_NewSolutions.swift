@@ -92,7 +92,7 @@ struct Step2FG_NewSolutions: View {
                         }
                         
                         VStack {
-                            NavigationLink(destination: Step2_FightLandingView(), label: {
+                            NavigationLink(destination: EmptyView(), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
