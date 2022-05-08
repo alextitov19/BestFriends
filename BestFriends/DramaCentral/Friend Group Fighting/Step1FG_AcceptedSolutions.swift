@@ -30,15 +30,15 @@ struct Step1FG_SuggestedSolutions: View {
             
             VStack {
                 
-                Text("Societies Suggestions")
+                Text("Professionals Suggest")
                     .font(.system(size: 40))
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.light)
                     .foregroundColor(Color.blue)
                
                 Spacer()
                     .frame(height: 20)
                 
-                Text("- Disregard Fight Altogether \n- Do NOT get involved \n- Don't pick sides \n- Don't personalize the fight \n- ")
+                Text("- Disregard Fight Altogether \n- Do NOT get involved \n- Don't pick sides \n- Don't personalize the fight \n- It's their fight, they must fix it")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
