@@ -30,15 +30,15 @@ struct Step1FG_SuggestedSolutions: View {
             
             VStack {
                 
-                Text("Suggestions")
-                    .font(.system(size: 70))
+                Text("Societies Suggestions")
+                    .font(.system(size: 40))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
                
                 Spacer()
                     .frame(height: 20)
                 
-                Text("- Stay out of the Argument \n- It's their fight \n- Not your job to referee")
+                Text("- Disregard Fight Altogether \n- Do NOT get involved \n- Don't pick sides \n- Don't personalize the fight \n- ")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
@@ -46,7 +46,7 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 35)
                 
-                Text("Get Away")
+                Text("Good Luck with That")
                     .font(.system(size: 35))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
@@ -54,7 +54,7 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 20)
                 
-                Text("- Go Outside \n- Go to your room, close the door \n- Put your ear pods in \n- If gets violent call 911")
+                Text("- these are teens we are talking about \n- the adult solutions will be in V2.0 \n - ")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
