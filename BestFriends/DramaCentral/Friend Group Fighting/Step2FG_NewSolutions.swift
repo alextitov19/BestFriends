@@ -129,7 +129,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .font(.system(size: 130, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
-                                    Text("Need \nMore \nTIME")
+                                    Text("My \nFriend \nGroup")
                                     //                            .background()
                                         .foregroundColor(.white)
                                         .font(.system(size: 25, weight: .bold))
@@ -181,7 +181,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("Who \nFight \n With?")
+                                    Text("Who \nFighting \n in Group?")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
