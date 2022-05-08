@@ -152,6 +152,16 @@ class Helper {
         }
     }
     
+    func sendPushNotification(url: String, createNotification: CreateNotification) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(createNotification)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
     func signUp(_ userData: SignUpUserData) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(userData)
         if let p = payload {
@@ -173,7 +183,7 @@ class Helper {
             self.accessToken = tokens.AccessToken.Token
             self.renewToken = tokens.RenewToken.Token
             do {
-                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", token: "", atmosphere: ""), token: tokens.RenewToken.Token)
+                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: ""), token: tokens.RenewToken.Token)
                 print("Renew Token: ", tokens.RenewToken.Token)
             } catch {
                 print(error)

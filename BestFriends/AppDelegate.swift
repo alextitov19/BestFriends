@@ -5,39 +5,40 @@
 //  Created by Alex Titov on 5/7/22.
 //
 
-import SwiftUI
-import UserNotifications
+import UIKit
+import Firebase
+import FirebaseMessaging
 
-class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        // Code
-        return true
-    }
-    
-    
-    // MARK: Notifications
+class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
     func application(
-      _ application: UIApplication,
-      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data
-    ) {
-      let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
-      let token = tokenParts.joined()
-      print("Device Token: \(token)")
-        // TODO: Save the token
-        RestApi.instance.updateUserToken(token: token).then { response in
-            print("Server response: ", response)
-            if response == 200 {
-                print("Successfully updated user token")
-            } else {
-                print("Failed to update user token")
-            }
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions
+        launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
+    ) -> Bool {
+        // 1
+        FirebaseApp.configure()
+        // 2
+        FirebaseConfiguration.shared.setLoggerLevel(.min)
+        
+        if #available(iOS 10.0, *) {
+          // For iOS 10 display notification (sent via APNS)
+          UNUserNotificationCenter.current().delegate = self
+
+          let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+          UNUserNotificationCenter.current().requestAuthorization(
+            options: authOptions,
+            completionHandler: { _, _ in }
+          )
+        } else {
+          let settings: UIUserNotificationSettings =
+            UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+          application.registerUserNotificationSettings(settings)
         }
-    }
-    
-    func application(
-      _ application: UIApplication,
-      didFailToRegisterForRemoteNotificationsWithError error: Error
-    ) {
-      print("Failed to register: \(error)")
+
+        application.registerForRemoteNotifications()
+
+        Messaging.messaging().delegate = self
+        
+        return true
     }
 }

@@ -102,7 +102,8 @@ struct HomeView: View {
                     
                     if newGroupMembers.count > 0 && !focusPlanet {
                         Button(action: {
-                            createGroup()
+//                            createGroup()
+                            RestApi.instance.sendPushNotification(title: "Test title", body: "Test body", APNToken: homeData!.user.APNToken!)
                         }, label: {
                             Text("Create Group")
                                 .frame(width: 130, height: 40)
@@ -126,6 +127,10 @@ struct HomeView: View {
         RestApi.instance.getHomeData().then{ data in
             print("Got HomeData: ", data)
             homeData = data
+            RestApi.instance.registerAPNToken()
+            
+            
+
             createPlanets()
             //            print("Got groups: ", data.groups.count)
             //            chatGroupsView = ChatGroupsView(groups: data.groups)
@@ -134,7 +139,6 @@ struct HomeView: View {
             print(err)
         }
         
-        registerForPushNotifications()
     }
     
     // Create plantes and populate the planets array
@@ -206,33 +210,4 @@ struct HomeView: View {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // MARK: Notifications
-    func registerForPushNotifications() {
-        UNUserNotificationCenter.current()
-          .requestAuthorization(
-            options: [.alert, .sound, .badge]) { [self] granted, _ in
-            print("Permission granted: \(granted)")
-            guard granted else { return }
-            self.getNotificationSettings()
-          }
-    }
-    
-    func getNotificationSettings() {
-      UNUserNotificationCenter.current().getNotificationSettings { settings in
-        print("Notification settings: \(settings)")
-          guard settings.authorizationStatus == .authorized else { return }
-          DispatchQueue.main.async {
-            UIApplication.shared.registerForRemoteNotifications()
-          }
-      }
-    }
 }

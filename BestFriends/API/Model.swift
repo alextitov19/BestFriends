@@ -49,7 +49,7 @@ struct User: Codable {
     let id: String
     let firstName: String
     let lastName: String
-    let token: String?
+    let APNToken: String?
     let friends: [String] = []
     let groups: [String] = []
     let atmosphere: String
@@ -57,7 +57,7 @@ struct User: Codable {
         case id = "id"
         case firstName = "first_name"
         case lastName = "last_name"
-        case token = "token"
+        case APNToken = "apn_token"
         case friends = "friends"
         case groups = "groups"
         case atmosphere = "atmosphere"
