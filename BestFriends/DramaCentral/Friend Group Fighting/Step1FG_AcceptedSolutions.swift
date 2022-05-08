@@ -30,7 +30,7 @@ struct Step1FG_SuggestedSolutions: View {
             
             VStack {
                 
-                Text("Professionals Suggest")
+                Text("Adults Suggest")
                     .font(.system(size: 40))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
@@ -38,7 +38,7 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 20)
                 
-                Text("- Disregard Fight Altogether \n- Do NOT get involved \n- Don't pick sides \n- Don't personalize the fight \n- It's their fight, they must fix it")
+                Text("- Disregard fight altogether \n- Don't get involved \n- Don't pick sides \n- Don't personalize the fight \n- It's their fight, they must fix it")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
@@ -46,7 +46,7 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 35)
                 
-                Text("Good Luck with That")
+                Text("Teen Reality")
                     .font(.system(size: 35))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
@@ -54,8 +54,8 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 20)
                 
-                Text("- teens talk all the time \n- know exactly what is going on with everyone \n- they always take sides \n- they talk to each other about the fight \n- they express their opinions \n- exactly opposite what professionals say to do ")
-                    .font(.system(size: 15))
+                Text("- teens talk all the time to group members \n- know exactly what is going on with everyone \n- they always take sides \n- they talk to each other about other's fights \n- they express their opinions \n- exactly opposite what professionals say to do ")
+                    .font(.system(size: 18))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
      
