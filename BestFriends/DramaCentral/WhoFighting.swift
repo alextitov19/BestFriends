@@ -40,7 +40,7 @@ struct WhoFighting: View {
             NavigationLink(destination: IntroBluemodeFriend(), label: {
                 WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nBFF")
                 })
-            .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
+            .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
              
      
            

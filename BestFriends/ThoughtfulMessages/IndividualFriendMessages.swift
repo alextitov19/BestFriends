@@ -61,14 +61,22 @@ struct IndividualFriendMessages: View {
 //                        .frame(height: 10)
 //                }
                 
+             
+                
+                
+                Text("my revered \nchat messages from")
+                    .font(.system(size: 17))
+                    .italic()
+                    .fontWeight(.light)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                
                 Text(friend.firstName + " " + friend.lastName)
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                 
                 
-                Text("Thoughtful Messages")
-                    .font(.system(size: 40))
-                    .foregroundColor(.white)
+                
                 
                 ScrollView(.vertical) {
                     ForEach(messages, id: \.id) { message in
