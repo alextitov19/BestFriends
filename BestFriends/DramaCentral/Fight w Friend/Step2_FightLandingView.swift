@@ -57,7 +57,7 @@ struct Step2_FightLandingView: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 10)
                         
                         Text("Who are you fighting with?")
                             .font(.system(size: 25))
@@ -68,7 +68,7 @@ struct Step2_FightLandingView: View {
                         
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 60)
                     }
                     
                     
@@ -95,7 +95,8 @@ struct Step2_FightLandingView: View {
                                 RectView(user: user, friend: friends[1])
                             }
                         }
-                        
+                        Spacer()
+                            .frame(height: 35)
                         HStack {
                             if friends.count > 2 {
                                 RectView(user: user, friend: friends[2])
@@ -111,7 +112,7 @@ struct Step2_FightLandingView: View {
                         }
                         
                         Spacer()
-                            .frame(height: 45)
+                            .frame(height: 80)
                         
                         Text("By tapping their name \n you're sending a push notification. \nInviting them to BlueMode \nto try to fix this fight.")
                             .font(.system(size: 20))
@@ -124,7 +125,7 @@ struct Step2_FightLandingView: View {
                             
                             
                             Spacer ()
-                                .frame(height: 80)
+                                .frame(height: 50)
                             
                             NavigationLink(
                                 destination: Step3_BreathInviteView(user: user, friends: friends),

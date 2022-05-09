@@ -103,7 +103,9 @@ struct Step3_BreathInviteView: View {
                                 RectView(user: user, friend: friends[1])
                             }
                         }
-                        
+                     
+                        Spacer()
+                            .frame(height: 35)
                         HStack {
                             if friends.count > 2 {
                                 RectView(user: user, friend: friends[2])
