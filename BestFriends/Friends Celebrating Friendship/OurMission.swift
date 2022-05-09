@@ -77,7 +77,6 @@ struct OurMission: View {
 
                 Text("How Friends ")
                             .font(.system(size: 33))
-                            .italic()
                             .foregroundColor(.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -85,6 +84,7 @@ struct OurMission: View {
 
                 Text("HELP")
                             .font(.system(size: 37))
+                            .italic()
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
