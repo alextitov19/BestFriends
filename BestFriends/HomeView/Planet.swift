@@ -82,9 +82,12 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                Button(action: {
+//                Button(action: {
+//
+//                }) {
                     
-                }) {
+                    NavigationLink(destination: OurMission(),
+                                   label: {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
@@ -98,7 +101,7 @@ struct PlanetActionsView: View {
                     }
                 }
                 
-            }
+            )}
             
             VStack {
                 Button(action: {
