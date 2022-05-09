@@ -39,24 +39,31 @@ struct OurMission: View {
         
         ZStack {
 
-            NavigationLink(destination: IntroBluemodeFriend(), label: {
+            NavigationLink(destination: EmptyView(), label: {
                 WhoFightingCircle (color: .purple, friendName: "Where you can \nbe yourself \nwith your friends")
                 })
-            .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
+            .offset(x: showItems ? 100 : 0, y: showItems ? -285: 0)
              
      
            
-              NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .green, friendName: "Reach your \nGoals \ntogether")
+              NavigationLink(destination: EmptyView(), label: {
+                  WhoFightingCircle (color: .orange, friendName: "Reach your \nGoals \ntogether")
             })
-            .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
+            .offset(x: showItems ? -85 : 0, y: showItems ? 215: 0)
             
 
             NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .pink, friendName: "Reducing \nFriend Group \nDrama")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
-
+            NavigationLink(destination: EmptyView(), label: {
+                WhoFightingCircle (color: .green, friendName: "BestFriends \nwalk-through")
+          })
+          .offset(x: showItems ? 75 : 0, y: showItems ? 155: 0)
+            
+            
+            
+            
 
         Image(systemName: "heart.fill")
                     .resizable()
