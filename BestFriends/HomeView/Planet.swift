@@ -144,7 +144,7 @@ struct PlanetActionsView: View {
                                label: {
                     ZStack {
                         Circle()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 120, height: 120)
                             .foregroundColor(ColorManager.pmbc_pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                        
