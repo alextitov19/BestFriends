@@ -47,8 +47,8 @@ struct Step2_FightLandingView: View {
                         .foregroundColor(Color.purple)
                     
                     
-                    Text("FIX THIS?")
-                        .font(.system(size: 65))
+                    Text("Reach Out?")
+                        .font(.system(size: 60))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                         .kerning(10)
@@ -113,10 +113,10 @@ struct Step2_FightLandingView: View {
                         Spacer()
                             .frame(height: 45)
                         
-                        Text("Let them know you're \nready to talk")
-                            .font(.system(size: 35))
+                        Text("By tapping their name \n you're sending a push notification. \nInviting them to BlueMode \nto try to fix this fight.")
+                            .font(.system(size: 20))
                             .fontWeight(.light)
-                            .foregroundColor(Color.purple)
+                            .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
                         
                         

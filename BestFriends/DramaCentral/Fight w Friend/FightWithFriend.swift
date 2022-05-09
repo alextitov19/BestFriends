@@ -118,10 +118,3 @@ struct FightWithFriend_Previews : PreviewProvider {
 }
 
 
-
-//
-//   Text("We'll help you through \nthese tense times \nminimazing the wreckage")
-//       .font(.system(size: 30))
-//       .fontWeight(.light)
-//       .foregroundColor(Color.white)
-//

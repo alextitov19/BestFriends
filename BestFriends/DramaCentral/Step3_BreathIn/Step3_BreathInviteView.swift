@@ -121,7 +121,7 @@ struct Step3_BreathInviteView: View {
                         VStack {
                             
                             NavigationLink(
-                                destination: DramaMainView(),
+                                destination: EmptyView(),
                                 label: {
                                     Text("Invite")
                                         .fontWeight(.thin)
@@ -187,12 +187,13 @@ struct Step3_BreathInviteView: View {
         }
     }
 }
-//struct BreathInviteView_Previews : PreviewProvider {
+
+
+
+//struct Step3_BreathInviteView_Previews : PreviewProvider {
 //    static var previews: some View {
 //        Step3_BreathInviteView()
 //    }
 //}
-
-
 
 
