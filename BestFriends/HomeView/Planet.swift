@@ -82,11 +82,9 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-//                Button(action: {
-//
-//                }) {
+
                     
-                    NavigationLink(destination: OurMission(),
+                    NavigationLink(destination: WhoFighting(),
                                    label: {
                     ZStack {
                         Circle()
@@ -94,10 +92,19 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Friends \nCelebrating \nFriendship")
-                            .foregroundColor(.purple)
-                            .font(.system(size: 15, weight: .bold))
+                        VStack {
+                        Text("BlueMode")
+                            .foregroundColor(.blue)
+                            .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        Text("Resolving \nFights")
+                        .foregroundColor(.white)
+                        .font(.system(size: 15, weight: .bold))
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        }
+                        
+                    
                     }
                 }
                 
@@ -133,7 +140,7 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                NavigationLink(destination: WhoFighting(),
+                NavigationLink(destination: OurMission(),
                                label: {
                     ZStack {
                         Circle()
@@ -142,17 +149,12 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                        
                         VStack {
-                            Text("BlueMode")
-                                .foregroundColor(.blue)
-                                .font(.system(size: 17, weight: .bold))
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
-                            Text("Resolving \nFights")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        
-                        }
+                            Text("Friends \nCelebrating \nFriendship")
+                                .foregroundColor(.purple)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                  }
                           
                     }
                 })
@@ -170,7 +172,7 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                     
                     VStack {
-                        Text("My Friend's")
+                        Text("Friend")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)

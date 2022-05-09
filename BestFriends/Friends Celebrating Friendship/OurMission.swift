@@ -77,8 +77,9 @@ struct OurMission: View {
 
                 Text("Celebrating")
                         .font(.system(size: 25))
+                        .italic()
                         .foregroundColor(.white)
-                        .fontWeight(.light)
+                        .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
 
                 Text("Friendships")
