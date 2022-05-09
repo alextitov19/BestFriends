@@ -15,8 +15,9 @@ enum AppState {
     case settings
     case dramaMainView
     case masterFriendVault
-
     
+//    case bestFriendsMessages(user: User, atmosphere: Atmosphere, friends: [User], friendAtmospheres: [Atmosphere])
+//    
     case fightTextUserIdeas
     case whoFighting
     case parentsFighting
@@ -68,8 +69,6 @@ final class SessionManager: ObservableObject {
         appState = .masterFriendVault
     }
 
-    
-    
     func showFightTextUserIdeas() {
             appState = .fightTextUserIdeas
     }
@@ -81,5 +80,11 @@ final class SessionManager: ObservableObject {
     }
     func showFightWithFriend() {
             appState = .fightWithFriend
+ 
+//    }
+//    func showBestFriendMessages() {
+//        appState = .bestFriendMessages(user: User, atmosphere: Atmosphere, friends: [User], friendAtmosphere: [Atmosphere])
+
+    
     }
 }

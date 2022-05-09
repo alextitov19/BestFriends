@@ -54,8 +54,12 @@ struct BestFriendsApp: App {
             case .fightWithFriend:
                 FightWithFriend()
                     .environmentObject(sessionManager)
-                
-                
+          
+            
+//            case .bestFriendMessages(let user, let atmosphere, let friends, let friendAtmosphere):
+//                BestFriendMessages(user: user, atmosphere: atmosphere, friends: [user], friendAtmospheres: [atmosphere])
+//                    .environmentObject(sessionManager)
+//                
                 
                 
                 
