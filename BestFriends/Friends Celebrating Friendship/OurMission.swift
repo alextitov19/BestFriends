@@ -75,22 +75,23 @@ struct OurMission: View {
             VStack {
                 
 
-                Text("Friends")
+                Text("How Friends ")
                             .font(.system(size: 33))
+                            .italic()
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+
+                Text("HELP")
+                            .font(.system(size: 37))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-                Text("Celebrating")
-                        .font(.system(size: 25))
-                        .italic()
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-
-                Text("Friendships")
-                            .font(.system(size: 33))
+                Text("Friends")
+                            .font(.system(size: 37))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
