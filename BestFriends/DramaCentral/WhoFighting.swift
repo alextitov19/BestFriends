@@ -38,19 +38,19 @@ struct WhoFighting: View {
         ZStack {
 
             NavigationLink(destination: IntroBluemodeFriend(), label: {
-                WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nBFF")
+                WhoFightingCircle (color: .pink, friendName: "Me \nwith my \nBFF")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
              
      
            
               NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .orange, friendName: "OMG, my Parents \nAGAIN!")
+                  WhoFightingCircle (color: .orange, friendName: "OMG, \nmy Parents \nAGAIN!")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .blue, friendName: "my \nFriend \nGroup")
+            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .blue, friendName: "my \nFriend Group")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
@@ -66,24 +66,27 @@ struct WhoFighting: View {
             VStack {
                 
 
-            Text("Entering")
-                    .font(.system(size: 35))
+            Text("Who's Fighting?")
+                    .font(.system(size: 30))
+                    .italic()
                     .foregroundColor(.white)
-                    .fontWeight(.medium)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                  
+             
+//                Text("enter")
+//                        .font(.system(size: 15))
+//                        .foregroundColor(.white)
+//                        .fontWeight(.medium)
+//                        .multilineTextAlignment(.center)
+//
                 Text("BlueMode")
-                            .font(.system(size: 40))
+                            .font(.system(size: 43))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
-                    Text("Who's \nF I G H T I N G?")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
+                
                     
                 }
             }
@@ -119,11 +122,9 @@ struct WhoFightingCircle: View {
         
         Text(friendName)
                 .fontWeight(.light)
+                .italic()
                 .foregroundColor(.black)
-//
-//            Spacer()
-//                  .frame(height: 200)
-//
+
         }
     }
 }
