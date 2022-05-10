@@ -40,19 +40,19 @@ struct OurMission: View {
         ZStack {
 
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .purple, friendName: "Where you can \nbe yourself \nwith your friends")
+                WhoFightingCircle (color: .purple, friendName: "Be yourself \nwith your friends")
                 })
-            .offset(x: showItems ? 100 : 0, y: showItems ? -285: 0)
+            .offset(x: showItems ? -25 : 0, y: showItems ? -325: 0)
              
      
            
               NavigationLink(destination: EmptyView(), label: {
                   WhoFightingCircle (color: .orange, friendName: "Reach your \nGoals \ntogether")
             })
-            .offset(x: showItems ? -85 : 0, y: showItems ? 215: 0)
+            .offset(x: showItems ? 100 : 0, y: showItems ? -215: 0)
             
 
-            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .pink, friendName: "Reducing \nFriend Group \nDrama")
+            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .pink, friendName: "Reduce \nFriend Group \nDrama")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
@@ -60,6 +60,13 @@ struct OurMission: View {
                 WhoFightingCircle (color: .green, friendName: "BestFriends \nwalk-through")
           })
           .offset(x: showItems ? 75 : 0, y: showItems ? 155: 0)
+            
+            
+            NavigationLink(destination: EmptyView(), label: {
+                WhoFightingCircle (color: .purple, friendName: "Customize \nmy \nPlanet")
+          })
+          .offset(x: showItems ? -85 : 0, y: showItems ? 215: 0)
+        
             
             
             
@@ -76,7 +83,7 @@ struct OurMission: View {
                 
 
                 Text("Friends ")
-                            .font(.system(size: 33))
+                            .font(.system(size: 37))
                             .foregroundColor(.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
@@ -92,8 +99,8 @@ struct OurMission: View {
 
                 Text("Friends")
                             .font(.system(size: 37))
-                            .foregroundColor(.blue)
-                            .fontWeight(.medium)
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
