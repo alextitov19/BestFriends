@@ -72,7 +72,7 @@ struct IntroFriendGpFight: View {
                         })
                     
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 40)
                 
                 Text("Adults Suggest")
                     .font(.system(size: 40))
@@ -82,7 +82,7 @@ struct IntroFriendGpFight: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("- Don't get involved in fight\n- Don't pick sides \n- Don't personalize their fight \n- The two fighting must fix it")
+                Text("- Don't get involved in the fight\n- Don't pick sides \n- Don't commerizate \n- Don't personalize their fight \n- The two fighting must fix it")
                     .font(.system(size: 23))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
