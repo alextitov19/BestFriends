@@ -88,7 +88,7 @@ struct IntroBluemodeFriend: View {
                 
               
                 
-                    Text("Easy-to-use, \n 5-Step method \nquickly helping you \nbecome friends again.")
+                    Text("Quickly helping you \nbecome friends again, \ndeveloped by teens.")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
