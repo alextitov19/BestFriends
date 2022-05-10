@@ -92,7 +92,7 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("We hope for something \nbetter")
+                Text("Keeping Friend Groups \ntogether amist the DRAMA")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .fontWeight(.light)
