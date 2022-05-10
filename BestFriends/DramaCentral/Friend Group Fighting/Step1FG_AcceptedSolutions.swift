@@ -44,13 +44,12 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 25)
                 
-               
                 Text("Teens say they dislike drama")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                 
-                Text("but some in Friend Groups are:")
+                Text("but sometimes Friend Groups")
                     .font(.system(size: 26))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
@@ -59,7 +58,7 @@ struct Step1FG_SuggestedSolutions: View {
                     .frame(height: 20)
                 
             VStack {
-                Text("- drawn to it \n- get involved in others fights \n- commerizerate playing both sides \n- express their opinions \n- play two against one \n- talk behind others backs \n- win friends at the cost of others")
+                Text("- are drawn to it \n- get involved in others fights \n- commerizerate playing both sides \n- express their opinions \n- play two against one \n- talk behind others backs \n- win friends at the cost of others")
                     .font(.system(size: 24))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
