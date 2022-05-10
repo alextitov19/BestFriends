@@ -125,9 +125,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(.green)
                             .font(.system(size: 40, weight: .regular))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        
-                        
-                        Text("Trusted\nFriends")
+                      Text("Trusted\nFriends")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)

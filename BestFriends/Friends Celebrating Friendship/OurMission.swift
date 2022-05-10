@@ -69,6 +69,12 @@ struct OurMission: View {
         
             
             
+            NavigationLink(destination: EmptyView(), label: {
+                WhoFightingCircle (color: .gray, friendName: "Settings")
+          })
+          .offset(x: showItems ? 35 : 0, y: showItems ? 310: 0)
+        
+        
             
             
 
