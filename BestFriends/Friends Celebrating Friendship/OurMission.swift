@@ -63,7 +63,7 @@ struct OurMission: View {
             
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .purple, friendName: "Customize \nmy \nPlanet")
+                WhoFightingCircle (color: .purple, friendName: "Customize \nyour \nPlanet")
           })
           .offset(x: showItems ? -85 : 0, y: showItems ? 215: 0)
         
