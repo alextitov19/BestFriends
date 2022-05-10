@@ -108,7 +108,6 @@
 		CFAB540D281BBA4C00BBF502 /* ReceivedFixFightNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */; };
 		CFAB540F281CA79200BBF502 /* Step5_Why.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB540E281CA79200BBF502 /* Step5_Why.swift */; };
 		CFAB5413281D145100BBF502 /* Step2_FightLandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5412281D145100BBF502 /* Step2_FightLandingView.swift */; };
-		CFAB5416281E1B8300BBF502 /* JournalFight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5415281E1B8300BBF502 /* JournalFight.swift */; };
 		CFAB5419281E537D00BBF502 /* ShowHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5418281E537D00BBF502 /* ShowHug.swift */; };
 		CFAB541B281E5F8300BBF502 /* YouGotThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB541A281E5F8300BBF502 /* YouGotThis.swift */; };
 		CFAB5420281FC2BB00BBF502 /* BreakUpNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB541F281FC2BB00BBF502 /* BreakUpNote.swift */; };
@@ -236,7 +235,6 @@
 		CFAB540C281BBA4C00BBF502 /* ReceivedFixFightNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedFixFightNotification.swift; sourceTree = "<group>"; };
 		CFAB540E281CA79200BBF502 /* Step5_Why.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step5_Why.swift; sourceTree = "<group>"; };
 		CFAB5412281D145100BBF502 /* Step2_FightLandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2_FightLandingView.swift; sourceTree = "<group>"; };
-		CFAB5415281E1B8300BBF502 /* JournalFight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalFight.swift; sourceTree = "<group>"; };
 		CFAB5418281E537D00BBF502 /* ShowHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHug.swift; sourceTree = "<group>"; };
 		CFAB541A281E5F8300BBF502 /* YouGotThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouGotThis.swift; sourceTree = "<group>"; };
 		CFAB541F281FC2BB00BBF502 /* BreakUpNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakUpNote.swift; sourceTree = "<group>"; };
@@ -609,14 +607,6 @@
 			path = Step6_TextingAnxiety;
 			sourceTree = "<group>";
 		};
-		CFAB5414281E1B4F00BBF502 /* JournalFixAFight */ = {
-			isa = PBXGroup;
-			children = (
-				CFAB5415281E1B8300BBF502 /* JournalFight.swift */,
-			);
-			path = JournalFixAFight;
-			sourceTree = "<group>";
-		};
 		CFAB5417281E535400BBF502 /* HugFixAFight */ = {
 			isa = PBXGroup;
 			children = (
@@ -697,7 +687,6 @@
 				CFAB5405281AA59500BBF502 /* Step6_TextingAnxiety */,
 				CFAB54232820FF9F00BBF502 /* Step 7 */,
 				CFAB54242820FFCC00BBF502 /* Push Notifiction Fight Invite */,
-				CFAB5414281E1B4F00BBF502 /* JournalFixAFight */,
 				CFAB5417281E535400BBF502 /* HugFixAFight */,
 			);
 			path = DramaCentral;
@@ -917,7 +906,6 @@
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,
 				7ACB385328208D38009559AF /* ImagePicker.swift in Sources */,
-				CFAB5416281E1B8300BBF502 /* JournalFight.swift in Sources */,
 				CFAB540F281CA79200BBF502 /* Step5_Why.swift in Sources */,
 				CF3B65B9280081550003A714 /* SettingsNotificationsView.swift in Sources */,
 				CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */,
