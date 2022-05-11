@@ -148,7 +148,7 @@ struct PlanetActionsView: View {
                        
                         VStack {
                             
-                            Text("Settings, \nDemo, \nMy Planet")
+                            Text("My Planet, \nSettings, \n & Demo")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
