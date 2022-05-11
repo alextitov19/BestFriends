@@ -80,7 +80,7 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("Stop Scrolling Back")
+                        Text("STOP Searching")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.medium)

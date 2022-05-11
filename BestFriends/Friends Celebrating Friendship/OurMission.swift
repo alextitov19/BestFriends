@@ -150,7 +150,7 @@ struct OurMissionCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 150, height: 150)
+        .frame(width: 170, height: 170)
         .clipShape(Circle())
         .foregroundColor(color)
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
