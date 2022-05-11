@@ -23,8 +23,6 @@ struct SettingsView: View {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
 
-              Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                  .ignoresSafeArea()
               Image("settingsBackground")
                   .resizable()
                   .ignoresSafeArea()
@@ -57,20 +55,33 @@ struct SettingsView: View {
                    .frame(height: 100)
                 
                NavigationLink(
-                  destination: DemoVideoView(),
+//                  destination: EmptyView(),
+//                  label: {
+//                       HStack {
+//                           Text("Demo Video")
+//                               .font(.system(size: 20))
+////                              .foregroundColor(.black)
+//                              .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+//                           Spacer().frame(maxHeight: 0)
+//
+//                          Image("arrowRight")
+//                              .resizable()
+//                               .frame(width: 25, height: 25)
+//                             .scaledToFit()
+//                              .colorInvert()
+                destination: MyAccountView(),
                   label: {
-                       HStack {
-                           Text("Demo Video")
+                        HStack {
+                     Text("Manage My Account")
                                .font(.system(size: 20))
-//                              .foregroundColor(.black)
-                              .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                           Spacer().frame(maxHeight: 0)
+//                               .foregroundColor(.black)
+                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            Spacer()
 
-                          Image("arrowRight")
-                              .resizable()
-                               .frame(width: 25, height: 25)
-                             .scaledToFit()
-                              .colorInvert()
+                           Image("arrowRight")
+                               .resizable()                               .frame(width: 25, height: 25)
+                                .scaledToFit()
+                                .colorInvert()
                        }
                        .padding(.horizontal, 15)
                    })
@@ -80,20 +91,34 @@ struct SettingsView: View {
                 Divider()
                 
                 NavigationLink(
-                   destination: DemoVideoView(),
-                   label: {
-                        HStack {
-                            Text("Get Involved")
-                                .font(.system(size: 20))
- //                              .foregroundColor(.black)
-                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                            Spacer().frame(maxHeight: 0)
+//                   destination: EmptyView(),
+//                   label: {
+//                        HStack {
+//                            Text("Get Involved")
+//                                .font(.system(size: 20))
+// //                              .foregroundColor(.black)
+//                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+//                            Spacer().frame(maxHeight: 0)
+//
+//                           Image("arrowRight")
+//                               .resizable()
+//                                .frame(width: 25, height: 25)
+//                              .scaledToFit()
+//                               .colorInvert()
+                    destination: ReportAbuseView(),
+                      label: {
+                            HStack {
+                         Text("Report Abusive Behavior")
+                                   .font(.system(size: 20))
+   //                               .foregroundColor(.black)
+                                   .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                Spacer()
 
-                           Image("arrowRight")
-                               .resizable()
-                                .frame(width: 25, height: 25)
-                              .scaledToFit()
-                               .colorInvert()
+                               Image("arrowRight")
+                                   .resizable()
+                                   .frame(width: 25, height: 25)
+                                   .scaledToFit()
+                                   .colorInvert()
                         }
                         .padding(.horizontal, 15)
                     })
@@ -104,19 +129,20 @@ struct SettingsView: View {
                 Divider()
                 
                 NavigationLink(
-                 destination: ReportAbuseView(),
-                   label: {
-                         HStack {
-                      Text("Report Abusive Behavior")
+//
+                    destination: DeleteMyAccount(),
+                      label: {
+                            HStack {
+                         Text("Terms of Service & Privacy Policy")
                                 .font(.system(size: 20))
-//                               .foregroundColor(.black)
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                             Spacer()
+                               .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
 
-                            Image("arrowRight")
-                                .resizable()                               .frame(width: 25, height: 25)
-                                 .scaledToFit()
-                                 .colorInvert()
+                                Spacer()
+
+                               Image("arrowRight")
+                                   .resizable()                               .frame(width: 25, height: 25)
+                                    .scaledToFit()
+                                    .colorInvert()
                         }
                          .padding(.horizontal, 15)
                          .navigationBarHidden(true)     })
@@ -145,26 +171,26 @@ struct SettingsView: View {
                 .navigationBarHidden(true)
                
                 
-                HStack {
-                Divider()
-                
-                NavigationLink(
-                 destination: DeleteMyAccount(),
-                   label: {
-                         HStack {
-                      Text("Terms of Service & Privacy Policy")
-                             .font(.system(size: 20))
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-
-                             Spacer()
-
-                            Image("arrowRight")
-                                .resizable()                               .frame(width: 25, height: 25)
-                                 .scaledToFit()
-                                 .colorInvert()
-                        }
-                         .padding(.horizontal, 15)
-                     })
+//                HStack {
+//                Divider()
+//
+//                NavigationLink(
+//                 destination: EmptyView(),
+//                   label: {
+//                         HStack {
+//                      Text("Terms of Service & Privacy Policy")
+//                             .font(.system(size: 20))
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
+//
+//                             Spacer()
+//
+//                            Image("arrowRight")
+//                                .resizable()                               .frame(width: 25, height: 25)
+//                                 .scaledToFit()
+//                                 .colorInvert()
+//                        }
+//                         .padding(.horizontal, 15)
+//                     })
                 
        
                 Spacer()
@@ -175,12 +201,16 @@ struct SettingsView: View {
     }
     
 }
-struct SettingsView_Previews : PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-    }
-}
-}
+    
+    
+
+//
+//struct SettingsView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        SettingsView()
+//    }
+//}
+
 
 
 
