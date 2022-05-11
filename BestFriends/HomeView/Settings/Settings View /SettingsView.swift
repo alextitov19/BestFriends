@@ -55,20 +55,6 @@ struct SettingsView: View {
                    .frame(height: 100)
                 
                NavigationLink(
-//                  destination: EmptyView(),
-//                  label: {
-//                       HStack {
-//                           Text("Demo Video")
-//                               .font(.system(size: 20))
-////                              .foregroundColor(.black)
-//                              .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-//                           Spacer().frame(maxHeight: 0)
-//
-//                          Image("arrowRight")
-//                              .resizable()
-//                               .frame(width: 25, height: 25)
-//                             .scaledToFit()
-//                              .colorInvert()
                 destination: MyAccountView(),
                   label: {
                         HStack {
@@ -79,9 +65,10 @@ struct SettingsView: View {
                             Spacer()
 
                            Image("arrowRight")
-                               .resizable()                               .frame(width: 25, height: 25)
-                                .scaledToFit()
-                                .colorInvert()
+                               .resizable()
+                               .frame(width: 25, height: 25)
+                               .scaledToFit()
+                               .colorInvert()
                        }
                        .padding(.horizontal, 15)
                    })
@@ -91,20 +78,6 @@ struct SettingsView: View {
                 Divider()
                 
                 NavigationLink(
-//                   destination: EmptyView(),
-//                   label: {
-//                        HStack {
-//                            Text("Get Involved")
-//                                .font(.system(size: 20))
-// //                              .foregroundColor(.black)
-//                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-//                            Spacer().frame(maxHeight: 0)
-//
-//                           Image("arrowRight")
-//                               .resizable()
-//                                .frame(width: 25, height: 25)
-//                              .scaledToFit()
-//                               .colorInvert()
                     destination: ReportAbuseView(),
                       label: {
                             HStack {
@@ -129,20 +102,20 @@ struct SettingsView: View {
                 Divider()
                 
                 NavigationLink(
-//
-                    destination: DeleteMyAccount(),
+                    destination: TermsConditionsView(),
                       label: {
                             HStack {
                          Text("Terms of Service & Privacy Policy")
                                 .font(.system(size: 20))
-                               .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
+                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
 
                                 Spacer()
 
                                Image("arrowRight")
-                                   .resizable()                               .frame(width: 25, height: 25)
-                                    .scaledToFit()
-                                    .colorInvert()
+                                   .resizable()
+                                   .frame(width: 25, height: 25)
+                                   .scaledToFit()
+                                   .colorInvert()
                         }
                          .padding(.horizontal, 15)
                          .navigationBarHidden(true)     })
@@ -150,19 +123,20 @@ struct SettingsView: View {
                 Divider()
                 
                 NavigationLink(
-                 destination: MyAccountView(),
+                 destination: EmptyView(),
                    label: {
                          HStack {
-                      Text("Manage My Account")
+                      Text("open link")
                                 .font(.system(size: 20))
 //                               .foregroundColor(.black)
                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                              Spacer()
 
                             Image("arrowRight")
-                                .resizable()                               .frame(width: 25, height: 25)
-                                 .scaledToFit()
-                                 .colorInvert()
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .scaledToFit()
+                                .colorInvert()
                         }
                          .padding(.horizontal, 15)
                      })
@@ -170,28 +144,7 @@ struct SettingsView: View {
                 .padding(0)
                 .navigationBarHidden(true)
                
-                
-//                HStack {
-//                Divider()
-//
-//                NavigationLink(
-//                 destination: EmptyView(),
-//                   label: {
-//                         HStack {
-//                      Text("Terms of Service & Privacy Policy")
-//                             .font(.system(size: 20))
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-//
-//                             Spacer()
-//
-//                            Image("arrowRight")
-//                                .resizable()                               .frame(width: 25, height: 25)
-//                                 .scaledToFit()
-//                                 .colorInvert()
-//                        }
-//                         .padding(.horizontal, 15)
-//                     })
-                
+
        
                 Spacer()
             }

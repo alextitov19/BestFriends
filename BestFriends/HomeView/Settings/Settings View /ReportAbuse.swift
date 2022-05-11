@@ -31,52 +31,46 @@ struct ReportAbuseView: View {
                         Button(action: {
                             self.presentationMode.wrappedValue.dismiss()
                         }) {
+//                            Image("arrowRight")
+//                                .resizable()
+//                                .frame(width: 25, height: 25)
+//                                .scaledToFit()
+//                                .colorInvert()
+//                                .rotationEffect(Angle(degrees: 180))
+//                        }
+//
+//                        Spacer()
+//
+//                        Text("Report Abuse")
+//                            .font(.system(size: 27))
+//                            .offset(x: -5)
+                            
                             Image("arrowRight")
                                 .resizable()
                                 .frame(width: 25, height: 25)
                                 .scaledToFit()
                                 .colorInvert()
-                                .rotationEffect(Angle(degrees: 180))
+                               .rotationEffect(Angle(degrees: 180))
                         }
                         
-                        Spacer()
+                      Spacer()
                         
-                        Text("Report Abuse & Copyright Infringements")
+                        Text("Report Abuse")
                             .font(.system(size: 30))
-                            .offset(x: -25)
+                            .offset(x: -25, y: 50)
                         
                         Spacer()
                     }
                     
                     Spacer()
-                        .frame(height: 50)
-                                        
-                    Divider()
-//
-//                    NavigationLink(
-//                        destination: RemoveFriend(),
-//                        label: {
-//                    HStack {
-//                        Text("Delete Friends")
-//                            .font(.system(size: 20))
-//                            .foregroundColor(.black)
-//
-//                        Spacer()
-//
-//                        Image("arrowRight")
-//                            .resizable()
-//                            .frame(width: 25, height: 25)
-//                            .scaledToFit()
-//                            .colorInvert()
-//                    }
-//                        })
-                    
+                          .frame(height: 100)
+                  
                     Divider()
                 }
                 
                 Link(destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!) {
                 HStack {
-                    Text("Report Objectionable Content & Behavior")
+                    Text("Report Objectionable \nContent & Behavior")
                         .font(.system(size: 20))
                         .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                     
