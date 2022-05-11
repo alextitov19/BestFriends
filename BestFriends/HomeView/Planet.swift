@@ -148,7 +148,7 @@ struct PlanetActionsView: View {
                        
                         VStack {
                             
-                            Text("My Account")
+                            Text("Settings, \nDemo, \nMy Planet")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -171,12 +171,12 @@ struct PlanetActionsView: View {
                     
                     VStack {
                         Text("Friend")
-                            .foregroundColor(.gray)
+                            .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
                         Text("Locker")
-                            .foregroundColor(.gray)
+                            .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }

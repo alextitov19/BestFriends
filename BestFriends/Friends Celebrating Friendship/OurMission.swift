@@ -51,65 +51,76 @@ struct OurMission: View {
 //            })
 //            .offset(x: showItems ? 100 : 0, y: showItems ? -215: 0)
 //            
-//
-//            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .pink, friendName: "Reduce \nFriend Group \nDrama")
-//            })
-//            .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
-//            
+
+            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .pink, friendName: "Settings / \nMy Account")
+            })
+            .offset(x: showItems ? -100 : 0, y: showItems ? -100: 0)
+            
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .green, friendName: "BestFriends \nwalk-through")
+                WhoFightingCircle (color: .green, friendName: "BestFriends \nDEMO")
           })
-          .offset(x: showItems ? 75 : 0, y: showItems ? 155: 0)
+          .offset(x: showItems ? 75 : 0, y: showItems ? -255: 0)
             
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .purple, friendName: "Customize \nyour \nPlanet")
+                WhoFightingCircle (color: .purple, friendName: "Customize \nmy \nPlanet")
           })
-          .offset(x: showItems ? -85 : 0, y: showItems ? 215: 0)
+          .offset(x: showItems ? -65 : 0, y: showItems ? 115: 0)
         
             
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .gray, friendName: "Settings")
+                WhoFightingCircle (color: .gray, friendName: "")
           })
-          .offset(x: showItems ? 35 : 0, y: showItems ? 310: 0)
+          .offset(x: showItems ? 75 : 0, y: showItems ? 500: 0)
         
         
+            
+            NavigationLink(destination: EmptyView(), label: {
+                WhoFightingCircle (color: .white, friendName: "")
+          })
+          .offset(x: showItems ? -75 : 0, y: showItems ? -500: 0)
+        
+        
+   Circle()
+                .stroke(Color.blue, lineWidth: 10)
+                .shadow(color: .white, radius: 20, x: 20, y: 10)
+
             
             
 
-        Image(systemName: "heart.fill")
-                    .resizable()
-                    .foregroundColor(.pink)
-                    .frame(width: 250, height: 250)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                    .shadow(color: .blue, radius: 30, x: 20, y: 30)
-        
+//        Image(systemName: "heart.fill")
+//                    .resizable()
+//                    .foregroundColor(.gray)
+               
+//                    .frame(width: 300, height: 250)
+
+
             VStack {
                 
 
-                Text("Friends ")
-                            .font(.system(size: 37))
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                Text("My")
+//                            .font(.system(size: 37))
+//                            .foregroundColor(.white)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-                Text("HELPING")
-                            .font(.system(size: 37))
+                Text("BestFriends")
+                            .font(.system(size: 27))
                             .italic()
-                            .foregroundColor(.blue)
+                            .foregroundColor(.purple)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-
-                Text("Friends")
-                            .font(.system(size: 37))
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
+//
+//                Text("App")
+//                            .font(.system(size: 37))
+//                            .foregroundColor(.white)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
                 
                     
                 }
