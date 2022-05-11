@@ -69,9 +69,12 @@ struct TermsConditionsView: View {
                         Spacer()
                        
                         Image("arrowRight")
-                            .resizable()
+                          
+                            .resizable() .foregroundColor(.black)
                             .frame(width: 25, height: 25)
+                           
                             .scaledToFit()
+                           
                     }
                 }
                 
