@@ -65,7 +65,7 @@ struct OurMission: View {
             NavigationLink(destination: EmptyView(), label: {
                 WhoFightingCircle (color: .purple, friendName: "Customize \nmy \nPlanet")
           })
-          .offset(x: showItems ? -65 : 0, y: showItems ? 115: 0)
+          .offset(x: showItems ? -85 : 0, y: showItems ? 115: 0)
         
             
             
@@ -74,17 +74,17 @@ struct OurMission: View {
           })
           .offset(x: showItems ? 75 : 0, y: showItems ? 500: 0)
         
-        
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .white, friendName: "")
+                WhoFightingCircle (color: .gray, friendName: "")
           })
           .offset(x: showItems ? -75 : 0, y: showItems ? -500: 0)
         
-        
+       
+            
    Circle()
-                .stroke(Color.blue, lineWidth: 10)
-                .shadow(color: .white, radius: 20, x: 20, y: 10)
+                .stroke(Color.purple, lineWidth: 10)
+                .shadow(color: .white, radius: 15, x: 3, y: 2)
 
             
             
@@ -107,10 +107,10 @@ struct OurMission: View {
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                 Text("BestFriends")
-                            .font(.system(size: 27))
+                            .font(.system(size: 25))
                             .italic()
-                            .foregroundColor(.purple)
-                            .fontWeight(.medium)
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
