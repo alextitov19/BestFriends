@@ -79,9 +79,9 @@ struct PlanetActionsView: View {
                     }
                 }
                 
+              
                 Spacer()
                     .frame(height: 40)
-                
 
                     
                     NavigationLink(destination: WhoFighting(),
@@ -104,11 +104,16 @@ struct PlanetActionsView: View {
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                         
+                        
+                     
+                    }
+                     
                     
                     }
-                }
-                
+                                     
             )}
+            
+       
             
             VStack {
                 Button(action: {
@@ -123,7 +128,7 @@ struct PlanetActionsView: View {
                         VStack {
                         Text("+")
                                 .foregroundColor(.white)
-                            .font(.system(size: 40, weight: .regular))
+                            .font(.system(size: 30, weight: .regular))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                       Text("Trusted\nFriends")
                             .foregroundColor(.white)
@@ -156,7 +161,7 @@ struct PlanetActionsView: View {
                           
                     }
                 })
-                 
+                
                 Spacer()
                     .frame(height: 40)
                 
@@ -170,22 +175,25 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                     
                     VStack {
-                        Text("Friend")
+                        Text("Photo")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-                        Text("Locker")
+                        Text("POP")
                             .foregroundColor(.white)
                             .font(.system(size: 17, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
                 }
-                
+                Spacer()
+                      .frame(height: 200)
             }
-            
+           
             VStack {
+                
+              
                 Button(action: {
                     
                 }) {
@@ -195,7 +203,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
-                        Text("Horizons")
+                        Text("Shared \nGOALS")
                             .foregroundColor(.white)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -225,11 +233,14 @@ struct PlanetActionsView: View {
                         }
                     }
                 })
-                
+              Spacer()
+                   .frame(height: 200)
             }
+          
         }
+        
     }
-    
+   
 }
 
 

@@ -57,9 +57,9 @@ struct OurMission: View {
             .offset(x: showItems ? -100 : 0, y: showItems ? -100: 0)
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .green, friendName: "BestFriends \nDEMO")
+                WhoFightingCircle (color: .blue, friendName: "BestFriends \nDEMO")
           })
-          .offset(x: showItems ? 75 : 0, y: showItems ? -255: 0)
+          .offset(x: showItems ? 125 : 0, y: showItems ? -75: 0)
             
             
             NavigationLink(destination: EmptyView(), label: {
@@ -70,21 +70,28 @@ struct OurMission: View {
             
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .gray, friendName: "")
+                WhoFightingCircle (color: .orange, friendName: "")
           })
-          .offset(x: showItems ? 75 : 0, y: showItems ? 500: 0)
+          .offset(x: showItems ? 275 : 0, y: showItems ? 500: 0)
+        
+          
+            
+            NavigationLink(destination: EmptyView(), label: {
+                WhoFightingCircle (color: .green, friendName: "")
+          })
+          .offset(x: showItems ? -175 : 0, y: showItems ? 500: 0)
         
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .gray, friendName: "")
+                WhoFightingCircle (color: .white, friendName: "")
           })
-          .offset(x: showItems ? -75 : 0, y: showItems ? -500: 0)
+          .offset(x: showItems ? -75 : 0, y: showItems ? -600: 0)
         
        
             
    Circle()
-                .stroke(Color.purple, lineWidth: 10)
-                .shadow(color: .white, radius: 15, x: 3, y: 2)
+                .stroke(Color.purple, lineWidth: 15)
+                .shadow(color: .white, radius: 17, x: 3, y: 2)
 
             
             

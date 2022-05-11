@@ -58,12 +58,15 @@ struct BestFriendMessages: View {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[2].user, atmosphere: planets[2].atmosphere), label: { planets[2] })
                         .offset(x: showItems ? -150 : 0, y: showItems ? 150: 0)
                 }
-                                
-                if planets.count > 3 {
-                    NavigationLink(destination: IndividualFriendMessages(friend: planets[3].user, atmosphere: planets[3].atmosphere), label: { planets[3] })
-                        .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
-                }
-                
+                 
+                    if planets.count > 3 {
+                        NavigationLink(destination: IndividualFriendMessages(friend: planets[3].user, atmosphere: planets[3].atmosphere), label: { planets[3] })
+                            .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
+                    }
+                    
+                    
+                    
+                    
                 if planets.count > 4 {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[4].user, atmosphere: planets[4].atmosphere), label: { planets[4] })
                         .offset(x: showItems ? 80 : 0, y: showItems ? -260: 0)
