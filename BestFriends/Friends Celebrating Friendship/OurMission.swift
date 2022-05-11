@@ -70,14 +70,14 @@ struct OurMission: View {
             
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .orange, friendName: "")
+                WhoFightingCircle (color: .white, friendName: "")
           })
           .offset(x: showItems ? 275 : 0, y: showItems ? 500: 0)
         
           
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .green, friendName: "")
+                WhoFightingCircle (color: .white, friendName: "")
           })
           .offset(x: showItems ? -175 : 0, y: showItems ? 500: 0)
         
@@ -93,7 +93,7 @@ struct OurMission: View {
                 .stroke(Color.gray, style:
                             StrokeStyle(lineWidth: 15, lineCap: .butt, dash: [2]))
                 .frame(width: 400, height: 400)
-                .shadow(color: .blue, radius: 17, x: 3, y: 2)
+                .shadow(color: .pink, radius: 17, x: 3, y: 2)
 
             
             
