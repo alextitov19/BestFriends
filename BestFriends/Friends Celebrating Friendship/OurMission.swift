@@ -39,23 +39,23 @@ struct OurMission: View {
         
         ZStack {
 
-            NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .purple, friendName: "Be yourself \nwith your friends")
-                })
-            .offset(x: showItems ? -25 : 0, y: showItems ? -325: 0)
-             
-     
-           
-              NavigationLink(destination: EmptyView(), label: {
-                  WhoFightingCircle (color: .orange, friendName: "Reach your \nGoals \ntogether")
-            })
-            .offset(x: showItems ? 100 : 0, y: showItems ? -215: 0)
-            
-
-            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .pink, friendName: "Reduce \nFriend Group \nDrama")
-            })
-            .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
-            
+//            NavigationLink(destination: EmptyView(), label: {
+//                WhoFightingCircle (color: .purple, friendName: "Be yourself \nwith your friends")
+//                })
+//            .offset(x: showItems ? -25 : 0, y: showItems ? -325: 0)
+//             
+//     
+//           
+//              NavigationLink(destination: EmptyView(), label: {
+//                  WhoFightingCircle (color: .orange, friendName: "Reach your \nGoals \ntogether")
+//            })
+//            .offset(x: showItems ? 100 : 0, y: showItems ? -215: 0)
+//            
+//
+//            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .pink, friendName: "Reduce \nFriend Group \nDrama")
+//            })
+//            .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
+//            
             NavigationLink(destination: EmptyView(), label: {
                 WhoFightingCircle (color: .green, friendName: "BestFriends \nwalk-through")
           })
@@ -80,10 +80,10 @@ struct OurMission: View {
 
         Image(systemName: "heart.fill")
                     .resizable()
-                    .foregroundColor(.gray)
+                    .foregroundColor(.pink)
                     .frame(width: 250, height: 250)
 //                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                    .shadow(color: .blue, radius: 50, x: 30, y: 50)
+                    .shadow(color: .blue, radius: 30, x: 20, y: 30)
         
             VStack {
                 
