@@ -18,11 +18,18 @@ struct TermsConditionsView: View {
 //            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
 //                .ignoresSafeArea()
 //
-            Image("HomeBackground2")
-                .resizable()
+//            Image("HomeBackground2")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
+            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
-                .scaledToFill()
-            
+
+              Image("settingsBackground")
+                  .resizable()
+                  .ignoresSafeArea()
+                  .scaledToFill()
             
             VStack {
                 HStack {
@@ -33,8 +40,8 @@ struct TermsConditionsView: View {
                             .resizable()
                             .frame(width: 25, height: 25)
                             .scaledToFit()
-                            .foregroundColor(.white)
-                            .rotationEffect(Angle(degrees: 180))
+                            .colorInvert()
+                           .rotationEffect(Angle(degrees: 180))
                     }
                     
                     Spacer()
@@ -42,10 +49,11 @@ struct TermsConditionsView: View {
                     Text("Privacy Policy &\nTerms of Service")
                         .font(.system(size: 30))
                         .offset(x: -25)
+                        .foregroundColor(.black)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 }
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 70)
                 
                 
                 Divider()
@@ -55,8 +63,7 @@ struct TermsConditionsView: View {
                     
                     HStack {
                         Text("Privacy Policy")
-                            .font(.system(size: 30))
-                         .foregroundColor(.white)
+                            .font(.system(size: 30)) .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                          .frame(maxHeight: 0)
                         
                         Spacer()
@@ -74,7 +81,7 @@ struct TermsConditionsView: View {
                     HStack {
                         Text("Terms of Serivce")
                             .font(.system(size: 30))
-                      .foregroundColor(.white)
+                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
 
                         Spacer()
                       
@@ -101,7 +108,8 @@ struct TermsConditionsView: View {
                     .font(.system(size: 20))
                     .italic()
                     .offset(x: -3)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
+                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                     
                 
                 
