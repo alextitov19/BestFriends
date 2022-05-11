@@ -145,10 +145,12 @@ struct SettingsView: View {
                 
              
         Divider()
-            
+                    Spacer()
+                        .frame(height: 400)
             }
                 
-           Spacer()
+         
+                
     }
     }
 }

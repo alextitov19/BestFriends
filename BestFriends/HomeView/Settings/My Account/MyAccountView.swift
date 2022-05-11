@@ -157,11 +157,7 @@ struct MyAccountView: View {
                                  .colorInvert()
                         }
                      })
-                
-       
-//                .padding(.vertical, 170
-                
-    
+                Divider()
             .navigationBarHidden(true)
    
             Spacer ()
