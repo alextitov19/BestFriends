@@ -42,13 +42,13 @@ struct SettingsView: View {
                            .rotationEffect(Angle(degrees: 180))
                     }
                     
-                  Spacer()
+                 Spacer()
+                        .frame(width: 40)
                     
                     Text("Settings")
                         .font(.system(size: 30))
                         .offset(x: -25, y: 50)
                     
-                    Spacer()
                 }
                 
              Spacer()
@@ -117,9 +117,10 @@ struct SettingsView: View {
                                    .scaledToFit()
                                    .colorInvert()
                         }
-                         .padding(.horizontal, 15)
-                         .navigationBarHidden(true)     })
-                  
+                        .padding(.horizontal, 15)
+                        .navigationBarHidden(true)     })
+           
+                VStack {
                 Divider()
                 
                 NavigationLink(
@@ -139,30 +140,34 @@ struct SettingsView: View {
                                 .colorInvert()
                         }
                          .padding(.horizontal, 15)
+                         .navigationBarHidden(true)
                      })
-
-                .padding(0)
-                .navigationBarHidden(true)
-               
-
-       
-                Spacer()
+                
+             
+        Divider()
+            
             }
-            .padding(10)
-            .navigationBarHidden(true)
-        }
+                
+           Spacer()
     }
-    
+    }
 }
-    
+}
+
+
+
+
+
+
+
     
 
-//
-//struct SettingsView_Previews : PreviewProvider {
-//    static var previews: some View {
-//        SettingsView()
-//    }
-//}
+
+struct SettingsView_Previews : PreviewProvider {
+    static var previews: some View {
+        SettingsView()
+    }
+}
 
 
 

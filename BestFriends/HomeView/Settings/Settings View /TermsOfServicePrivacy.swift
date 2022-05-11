@@ -45,7 +45,7 @@ struct TermsConditionsView: View {
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 }
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 100)
                 
                 
                 Divider()

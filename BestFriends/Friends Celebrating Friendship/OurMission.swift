@@ -109,7 +109,7 @@ struct OurMission: View {
                 Text("BestFriends")
                             .font(.system(size: 25))
                             .italic()
-                            .foregroundColor(.white)
+                            .foregroundColor(.purple)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)

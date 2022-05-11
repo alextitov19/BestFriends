@@ -43,17 +43,17 @@ struct MyAccountView: View {
                     }
                     
                     Spacer()
+                        .frame(width: 30)
                     
-                    Text("My Account")
+                    Text("Manage My Account")
                         .font(.system(size: 30))
 //                        .offset(x: -25, y: 50)
-                    
-                    
-                    Spacer()
+                 
                 }
-                
+                Spacer()
+                    .frame(height: 70)
             
-//
+                Divider()
                NavigationLink(
                   destination: ResetPasswordView(),
                   label: {
@@ -62,7 +62,8 @@ struct MyAccountView: View {
                                .font(.system(size: 20))
 //                              .foregroundColor(.black)
                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                           Spacer().frame(maxHeight: 0)
+                         
+                           Spacer()
 
                           Image("arrowRight")
                               .resizable()
@@ -90,7 +91,7 @@ struct MyAccountView: View {
                               .colorInvert()
                       }
                    })
-                
+            VStack {
                 Divider()
                 
                 NavigationLink(
@@ -132,7 +133,7 @@ struct MyAccountView: View {
                 
             
             
-                
+                Divider()
                 NavigationLink(
                  destination: DeleteMyAccount(),
                    label: {
@@ -162,7 +163,7 @@ struct MyAccountView: View {
     }
    
 }
-    
+    }
 
 struct MyAccountView_Previews : PreviewProvider {
     static var previews: some View {
