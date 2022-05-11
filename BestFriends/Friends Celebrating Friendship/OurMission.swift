@@ -63,7 +63,7 @@ struct OurMission: View {
             
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .purple, friendName: "Customize \nmy \nPlanet")
+                WhoFightingCircle (color: .orange, friendName: "Customize \nmy \nPlanet")
           })
           .offset(x: showItems ? -85 : 0, y: showItems ? 115: 0)
         
@@ -90,8 +90,10 @@ struct OurMission: View {
        
             
    Circle()
-                .stroke(Color.purple, lineWidth: 15)
-                .shadow(color: .white, radius: 17, x: 3, y: 2)
+                .stroke(Color.gray, style:
+                            StrokeStyle(lineWidth: 15, lineCap: .butt, dash: [2]))
+                .frame(width: 400, height: 400)
+                .shadow(color: .blue, radius: 17, x: 3, y: 2)
 
             
             
@@ -157,7 +159,7 @@ struct OurMissionCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 170, height: 170)
+        .frame(width: 225, height: 225)
         .clipShape(Circle())
         .foregroundColor(color)
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
