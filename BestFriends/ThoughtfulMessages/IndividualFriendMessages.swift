@@ -85,7 +85,7 @@ struct IndividualFriendMessages: View {
                 }
                 
                 Button(action: {
-                    sessionManager.showHome()
+                    sessionManager.reloadHome()
                 }, label: {
                     Text("HOME")
                         .fontWeight(.thin)
