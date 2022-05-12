@@ -28,20 +28,20 @@ struct IntroFriendGpFight: View {
             //                    .offset(y: -250)
             //
             VStack {
-                Text("Fixing Friend \nGroup Fights")
-                    .font(.system(size: 65))
+//                Text("Fixing Friend \nGroup Fights")
+//                    .font(.system(size: 65))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//                Spacer()
+//                    .frame(height: 20)
+                Text("Problem")
+                    .font(.system(size: 70))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                Spacer()
-                    .frame(height: 20)
-                Text("Problem")
-                    .font(.system(size: 40))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
-             
+
+
                 
                 Text("Teens don't fit societie's")
                     .font(.system(size: 27))

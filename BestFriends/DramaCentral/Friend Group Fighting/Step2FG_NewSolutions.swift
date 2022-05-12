@@ -28,17 +28,12 @@ struct Step2FG_NewSolutions: View {
                 
                 VStack {
                     
-                    
-//                    Text("BlueMode")
-//                        .font(.system(size: 80))
-//                        .foregroundColor(.blue)
-//                        .fontWeight(.ultraLight)
-//                        .multilineTextAlignment(.center)
+    
 
                     Text("Friend Groups")
                         .font(.system(size: 60))
                         .foregroundColor(.blue)
-                        .fontWeight(.light)
+                        .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
 
                     
@@ -250,7 +245,7 @@ struct Step2FG_NewSolutions: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-                  
+              Spacer()
                     
                 }
             }

@@ -50,7 +50,7 @@ struct WhoFighting: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .blue, friendName: "Drama \nin my \nFriendGroup")
+            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .gray, friendName: "Drama \nin my \nFriendGroup")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
