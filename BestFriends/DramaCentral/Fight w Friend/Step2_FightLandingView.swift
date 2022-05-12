@@ -59,14 +59,21 @@ struct Step2_FightLandingView: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("Who are you fighting with?")
+                        Text("By tapping their name you're \nsending a push notification.")
                             .font(.system(size: 25))
                             .italic()
                             .foregroundColor(.gray)
                             .fontWeight(.semibold)
-                            .multilineTextAlignment(.leading)
+                            .multilineTextAlignment(.center)
+                        Spacer()
+                            .frame(height: 20)
                         
-                        
+                        Text("Inviting them to BlueMode \nto try to fix this fight.")
+                            .font(.system(size: 25))
+                            .italic()
+                            .foregroundColor(.gray)
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
                         Spacer()
                             .frame(height: 60)
                     }
@@ -112,20 +119,27 @@ struct Step2_FightLandingView: View {
                         }
                         
                         Spacer()
-                            .frame(height: 80)
+                            .frame(height: 40)
                         
-                        Text("By tapping their name \n you're sending a push notification. \nInviting them to BlueMode \nto try to fix this fight.")
+                        
+                        Text("Tip")
+                            .font(.system(size: 27))
+                            .fontWeight(.light)
+                            .foregroundColor(Color.green)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("Tip: If they're still upset \n they will most not likely \nnot respond to your notification.")
                             .font(.system(size: 20))
+                            .italic()
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
-                        
                         
                         VStack {
                             
                             
                             Spacer ()
-                                .frame(height: 50)
+                                .frame(height: 20)
                             
                             NavigationLink(
                                 destination: Step3_BreathInviteView(user: user, friends: friends),
