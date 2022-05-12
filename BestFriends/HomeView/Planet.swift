@@ -63,23 +63,26 @@ struct PlanetActionsView: View {
     var body: some View {
         HStack {
             VStack {
-                Button(action: {
-                    
-                }) {
+       
+//                NavigationLink needs to be changed to AtmosphereMain. But get error with try it
+                
+            
+                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                               label: {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.pmbc_green)
+                            .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
-                        
-                        Text("Protective \nAtmosphere")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        VStack {
+                            Text("Protective \nAtmosphere")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        }
                     }
-                }
-                
-              
+                })
+
                 Spacer()
                     .frame(height: 40)
 
@@ -93,11 +96,8 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
-//                        Text("BlueMode")
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 17, weight: .bold))
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
+
+
                         Text("Resolving \nFights")
                         .foregroundColor(.white)
                         .font(.system(size: 15, weight: .bold))
@@ -221,11 +221,6 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-//                        Text("Friend's")
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 15, weight: .bold))
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
                             Text("Special \nMessages")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
