@@ -106,7 +106,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("assign \nmediator")
+                                    Text("Who's \nFighting")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -157,7 +157,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("sign \ncontracts")
+                                    Text("Pick \nmediator")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -181,7 +181,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("Who \nFighting \n in Group?")
+                                    Text("Set \nBoundries")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -204,7 +204,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("Not \n Going \nNuclear")
+                                    Text("Be \nCool")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
