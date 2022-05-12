@@ -93,6 +93,7 @@ struct OurMission: View {
                 .stroke(Color.gray, style:
                             StrokeStyle(lineWidth: 15, lineCap: .butt, dash: [2]))
                 .frame(width: 400, height: 400)
+//                .trim(from: 0.2, to: 1.0)
                 .shadow(color: .pink, radius: 17, x: 3, y: 2)
 
             
