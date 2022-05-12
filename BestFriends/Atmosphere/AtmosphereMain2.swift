@@ -28,13 +28,33 @@ struct AtmosphereMain2: View {
  
     VStack {
           
-        
-        Text("Today I'm Feeling ...")
+        Text("Why?")
             .font(.system(size: 23))
             .fontWeight(.regular)
             .foregroundColor(Color.white)
             .multilineTextAlignment(.leading)
-            .padding(.trailing, 160.0)
+            .padding(.trailing, 290.0)
+        
+        Text("(You may type your reason here)")
+            .font(.system(size: 17))
+            .fontWeight(.regular)
+            .foregroundColor(Color.white)
+            .multilineTextAlignment(.leading)
+            .padding(.trailing, 100.0)
+        
+        Image("reason")
+        
+        
+        Spacer()
+            .frame(height: 50)
+        
+        Text("Today I'm Feeling ...")
+            .font(.system(size: 23))
+            .italic()
+            .fontWeight(.regular)
+            .foregroundColor(Color.white)
+            .multilineTextAlignment(.leading)
+            .padding(.trailing, 150.0)
         
         Text("(Select your current mood)")
             .font(.system(size: 15))
@@ -43,10 +63,8 @@ struct AtmosphereMain2: View {
             .foregroundColor(Color.white)
             .multilineTextAlignment(.leading)
             .padding(.trailing, 160.0)
+ 
         
-//    Spacer()
-//        .frame(height: 20)
-//
     HStack {
         VStack {
       
@@ -224,15 +242,24 @@ struct AtmosphereMain2: View {
                             .cornerRadius(7)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             
+            
             }
+        
         
     }
     .padding(/*@START_MENU_TOKEN@*/[.top, .leading, .trailing], 65.0/*@END_MENU_TOKEN@*/)
     }
     .padding(/*@START_MENU_TOKEN@*/.all, 0.0/*@END_MENU_TOKEN@*/)
         
-            }
-                   
+            
+//            Spacer()
+//                .frame(height: 100)
+//
+      
+            
+        }
+        
+        
         }
     }
 
