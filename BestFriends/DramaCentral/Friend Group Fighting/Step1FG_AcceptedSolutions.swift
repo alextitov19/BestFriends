@@ -63,10 +63,6 @@ struct Step1FG_SuggestedSolutions: View {
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
      
-                Text("")
-                    .font(.system(size: 17))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
                 
                 
                 
@@ -92,7 +88,7 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Keeping Friend Groups \ntogether amist the DRAMA")
+                Text("OK, now what do we do?")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .fontWeight(.light)
