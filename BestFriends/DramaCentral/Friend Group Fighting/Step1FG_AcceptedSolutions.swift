@@ -49,7 +49,7 @@ struct Step1FG_SuggestedSolutions: View {
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                 
-                Text("but sometimes Friend Groups")
+                Text("but sometimes they")
                     .font(.system(size: 26))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
