@@ -29,14 +29,14 @@ struct Step2FG_NewSolutions: View {
                 VStack {
                     
                     
-                    Text("BlueMode")
-                        .font(.system(size: 80))
-                        .foregroundColor(.blue)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
+//                    Text("BlueMode")
+//                        .font(.system(size: 80))
+//                        .foregroundColor(.blue)
+//                        .fontWeight(.ultraLight)
+//                        .multilineTextAlignment(.center)
 
-                    Text("Friend Group DRAMA")
-                        .font(.system(size: 30))
+                    Text("Friend Groups")
+                        .font(.system(size: 60))
                         .foregroundColor(.blue)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
