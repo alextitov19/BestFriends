@@ -41,45 +41,75 @@ struct AtmosphereMain: View {
                 
                 VStack {
                     
-                    Text("Ready to")
-                        .font(.system(size: 50))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.purple)
+                    Text("Today I'm Feeling ...")
+                        .font(.system(size: 23))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.leading)
+                        .padding(.trailing, 160.0)
+                    
+                    Text("(Select your current mood)")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.leading)
+                        .padding(.trailing, 160.0)
+              
+                    
+//                    I just put in a image of what is supposed to look like in this section.
+//                    Do we use 'buttons' or Navigation link, I am thinking buttons
+//                    when you tap the mood button it will change color. I does not take the user anywhere.
                     
                     
-                    Text("BEGIN?")
-                        .font(.system(size: 60))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.purple)
-                        .kerning(10)
+                    Image("atmosphereTop")
+                    
+                    
+                 
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    Text("Why?")
+                        .font(.system(size: 23))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.leading)
+                        .padding(.trailing, 290.0)
+                    
+                    Text("(You may type your reason here)")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.leading)
+                        .padding(.trailing, 125.0)
+                    
+                    
+//               We need a text box here like in Chat
+                    
+//                    When the push notification goes out to the users they selected below and hit [Share] when the user that received the push notification taps it it goes to another page where they can send 'hug' back, etc.
                     
                     
                     VStack {
-                        
                         Spacer()
-                            .frame(height: 10)
-                        
-                        Text("By tapping their name you're \nsending a push notification")
-                            .font(.system(size: 25))
-                            .italic()
-                            .foregroundColor(.gray)
-                            .fontWeight(.semibold)
-                            .multilineTextAlignment(.center)
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        Text("asking them to try to \nfix this fight in BlueMode.")
-                            .font(.system(size: 25))
-                            .italic()
-                            .foregroundColor(.gray)
-                            .fontWeight(.semibold)
-                            .multilineTextAlignment(.center)
-                        Spacer()
-                            .frame(height: 60)
+                            .frame(height: 235)
+                 
                     }
                     
                     
                     VStack {
+                        
+                        Text("I want to tell ...")
+                            .font(.system(size: 23))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.leading)
+                            .padding(.trailing, 230.0)
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        
                         HStack {
                             NavigationLink(
                                 destination: BreathInView(),
@@ -103,7 +133,7 @@ struct AtmosphereMain: View {
                             }
                         }
                         Spacer()
-                            .frame(height: 35)
+                            .frame(height: 100)
                         HStack {
                             if friends.count > 2 {
                                 RectView(user: user, friend: friends[2])
@@ -118,23 +148,9 @@ struct AtmosphereMain: View {
                             }
                         }
                         
-                        Spacer()
-                            .frame(height: 40)
+                  
                         
-                        
-                        Text("Tip")
-                            .font(.system(size: 27))
-                            .fontWeight(.light)
-                            .foregroundColor(Color.green)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("If they fail to respond they \nmost likely need more time - stay calm.")
-                            .font(.system(size: 20))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.center)
-                        
+                     
                         VStack {
                             
                             
@@ -144,9 +160,9 @@ struct AtmosphereMain: View {
                             NavigationLink(
                                 destination: Step3_BreathInviteView(user: user, friends: friends),
                                 label: {
-                                    Text("NEXT")
+                                    Text("SHARE")
                                         .fontWeight(.thin)
-                                        .frame(width: 100, height: 40)
+                                        .frame(width: 110, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 30))
                                         .background(ColorManager.purple3)
@@ -157,8 +173,8 @@ struct AtmosphereMain: View {
                                     
                                 })
                             
-                            
-                            
+                            Spacer ()
+                                .frame(height: 0)
                         }
                         
                     }
