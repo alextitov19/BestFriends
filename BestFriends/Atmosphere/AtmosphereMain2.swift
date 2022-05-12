@@ -111,12 +111,12 @@ struct AtmosphereMain2: View {
             .multilineTextAlignment(.leading)
             .padding(.trailing, 290.0)
         
-        Text("(You may type your reason here)")
+        Text("(If you want; type your reason here)")
             .font(.system(size: 15))
             .fontWeight(.regular)
             .foregroundColor(Color.white)
             .multilineTextAlignment(.leading)
-            .padding(.trailing, 100.0)
+            .padding(.trailing, 105.0)
         
         Image("reason")
         
@@ -370,10 +370,5 @@ struct AtmosphereMain2_Previews : PreviewProvider {
         static var previews: some View {
             AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
     
-    
-//    static var previews: some View {
-//        AtmosphereMain2()
-//                }
-
             }
 }

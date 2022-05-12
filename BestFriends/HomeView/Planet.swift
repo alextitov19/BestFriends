@@ -63,13 +63,7 @@ struct PlanetActionsView: View {
     var body: some View {
         HStack {
             VStack {
-       
-//                NavigationLink needs to be changed to AtmosphereMain. But get error with try it
-                
-            
-//                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-//                               label: {
-                    
+                   
                 NavigationLink(destination: AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
                                label: {
                 ZStack {
