@@ -129,7 +129,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .font(.system(size: 130, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
-                                    Text("My \nFriend \nGroup")
+                                    Text("Friend \nGroup \nDRAMA")
                                     //                            .background()
                                         .foregroundColor(.white)
                                         .font(.system(size: 25, weight: .bold))
