@@ -58,7 +58,7 @@ struct WhoFighting: View {
 
         Image(systemName: "heart.fill")
                     .resizable()
-                    .foregroundColor(.gray)
+                    .foregroundColor(.blue)
                     .frame(width: 250, height: 250)
 //                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                     .shadow(color: .blue, radius: 50, x: 30, y: 50)
@@ -81,7 +81,7 @@ struct WhoFighting: View {
 //
                 Text("BlueMode")
                             .font(.system(size: 43))
-                            .foregroundColor(.blue)
+                            .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
