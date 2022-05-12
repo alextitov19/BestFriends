@@ -104,6 +104,7 @@ struct Step2_FightLandingView: View {
                         }
                         Spacer()
                             .frame(height: 35)
+                        
                         HStack {
                             if friends.count > 2 {
                                 RectView(user: user, friend: friends[2])

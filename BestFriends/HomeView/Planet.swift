@@ -67,9 +67,12 @@ struct PlanetActionsView: View {
 //                NavigationLink needs to be changed to AtmosphereMain. But get error with try it
                 
             
-                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+//                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+//                               label: {
+                    
+                NavigationLink(destination: AtmosphereMain2(),
                                label: {
-                    ZStack {
+                ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
                             .foregroundColor(ColorManager.pmbc_blue)

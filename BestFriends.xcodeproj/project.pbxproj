@@ -118,6 +118,7 @@
 		CFAB542F28214D0600BBF502 /* FightPushNoteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB542E28214D0600BBF502 /* FightPushNoteResponse.swift */; };
 		CFD0468B282D700800BF0B02 /* AtmosphereMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468A282D700800BF0B02 /* AtmosphereMain.swift */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
+		CFD0468F282D84BC00BF0B02 /* AtmosphereFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468E282D84BC00BF0B02 /* AtmosphereFriendVault.swift */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
 		CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC0281770B600AB2539 /* MyStreaks.swift */; };
 		CFD12CC428179CD600AB2539 /* StreakCongratulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC328179CD600AB2539 /* StreakCongratulations.swift */; };
@@ -246,6 +247,7 @@
 		CFAB542E28214D0600BBF502 /* FightPushNoteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightPushNoteResponse.swift; sourceTree = "<group>"; };
 		CFD0468A282D700800BF0B02 /* AtmosphereMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain.swift; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
+		CFD0468E282D84BC00BF0B02 /* AtmosphereFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereFriendVault.swift; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
 		CFD12CC0281770B600AB2539 /* MyStreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStreaks.swift; sourceTree = "<group>"; };
 		CFD12CC328179CD600AB2539 /* StreakCongratulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCongratulations.swift; sourceTree = "<group>"; };
@@ -665,6 +667,7 @@
 			children = (
 				CFD0468A282D700800BF0B02 /* AtmosphereMain.swift */,
 				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
+				CFD0468E282D84BC00BF0B02 /* AtmosphereFriendVault.swift */,
 			);
 			path = Atmosphere;
 			sourceTree = "<group>";
@@ -913,6 +916,7 @@
 				CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */,
 				CFD12CD1281A754200AB2539 /* Step1_NotReadyTalk.swift in Sources */,
 				CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */,
+				CFD0468F282D84BC00BF0B02 /* AtmosphereFriendVault.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,
 				7ACB385328208D38009559AF /* ImagePicker.swift in Sources */,
