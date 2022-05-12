@@ -98,7 +98,7 @@ struct AtmosphereMain2: View {
                 
                                                 })
                 
-                
+                  
          Spacer()
                 
             }
