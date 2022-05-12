@@ -63,10 +63,9 @@ struct PlanetActionsView: View {
     var body: some View {
         HStack {
             VStack {
-                   
                 NavigationLink(destination: AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
                                label: {
-                ZStack {
+                    ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
                             .foregroundColor(ColorManager.pmbc_blue)
@@ -79,13 +78,12 @@ struct PlanetActionsView: View {
                         }
                     }
                 })
-
+                
                 Spacer()
                     .frame(height: 40)
-
-                    
-                    NavigationLink(destination: WhoFighting(),
-                                   label: {
+                
+                NavigationLink(destination: WhoFighting(),
+                               label: {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
@@ -93,24 +91,16 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
-
-
-                        Text("Resolving \nFights")
-                        .foregroundColor(.white)
-                        .font(.system(size: 15, weight: .bold))
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            
+                            Text("Resolving \nFights")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
-                        
-                        
-                     
                     }
-                     
-                    
-                    }
-                                     
-            )}
-            
-       
+                }
+                )}
             
             VStack {
                 Button(action: {
@@ -123,18 +113,16 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
-                        Text("+")
+                            Text("+")
                                 .foregroundColor(.white)
-                            .font(.system(size: 30, weight: .regular))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                      Text("Trusted\nFriends")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
+                                .font(.system(size: 30, weight: .regular))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            Text("Trusted\nFriends")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
-                    
                 }
                 
                 Spacer()
@@ -147,15 +135,13 @@ struct PlanetActionsView: View {
                             .frame(width: 120, height: 120)
                             .foregroundColor(ColorManager.pmbc_pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
-                       
+                        
                         VStack {
-                            
                             Text("My Planet, \nSettings, \n & Demo")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                  }
-                          
+                        }
                     }
                 })
                 
@@ -170,27 +156,23 @@ struct PlanetActionsView: View {
                             .frame(width: 100, height: 100)
                             .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
-                    
-                    VStack {
-                        Text("Photo")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
-                        Text("POP")
-                            .foregroundColor(.white)
-                            .font(.system(size: 17, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        VStack {
+                            Text("Photo")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            Text("POP")
+                                .foregroundColor(.white)
+                                .font(.system(size: 17, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
                 }
-                Spacer()
-                      .frame(height: 200)
             }
-           
+            
             VStack {
-                
-              
                 Button(action: {
                     
                 }) {
@@ -225,14 +207,9 @@ struct PlanetActionsView: View {
                         }
                     }
                 })
-              Spacer()
-                   .frame(height: 200)
             }
-          
         }
-        
     }
-   
 }
 
 
