@@ -47,7 +47,7 @@ struct Step2_FightLandingView: View {
                         .foregroundColor(Color.purple)
                     
                     
-                    Text("Reach Out?")
+                    Text("BEGIN?")
                         .font(.system(size: 60))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
