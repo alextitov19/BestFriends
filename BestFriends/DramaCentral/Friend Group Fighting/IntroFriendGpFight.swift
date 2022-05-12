@@ -28,19 +28,23 @@ struct IntroFriendGpFight: View {
             //                    .offset(y: -250)
             //
             VStack {
-      
-                
-                Text("Problem")
-                    .font(.system(size: 70))
+                Text("Fixing Friend \nGroup Fights")
+                    .font(.system(size: 65))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                
                 Spacer()
                     .frame(height: 20)
+                Text("Problem")
+                    .font(.system(size: 40))
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
                 
-                Text("How fix fights between ")
-                    .font(.system(size: 30))
+             
+                
+                Text("Teens don't fit societie's")
+                    .font(.system(size: 27))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -48,8 +52,8 @@ struct IntroFriendGpFight: View {
                 Spacer()
                     .frame(height: 5)
                  
-                Text("Friend Group Members?")
-                    .font(.system(size: 35))
+                Text("Suggested Solutions")
+                    .font(.system(size: 27))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                    
@@ -74,7 +78,7 @@ struct IntroFriendGpFight: View {
                     Spacer()
                         .frame(height: 40)
                 
-                Text("Adults Suggest")
+                Text("Solutions")
                     .font(.system(size: 40))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
@@ -82,7 +86,7 @@ struct IntroFriendGpFight: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("- Don't get involved in the fight\n- Don't pick sides \n- Don't commerizate \n- Don't personalize their fight \n- The two fighting must fix it")
+                Text("- Ignore the fight all together \n- Don't get involved \n- Don't pick sides \n- Don't commerizate \n- Don't personalize their fight \n- The two fighting must fix it")
                     .font(.system(size: 23))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
