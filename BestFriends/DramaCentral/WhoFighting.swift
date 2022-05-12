@@ -60,26 +60,13 @@ struct WhoFighting: View {
                     .resizable()
                     .foregroundColor(.blue)
                     .frame(width: 250, height: 250)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                    .shadow(color: .blue, radius: 50, x: 30, y: 50)
+                    .blur(radius: 2)
+
+                    .shadow(color: .white, radius: 65, x: 30, y: 50)
         
             VStack {
                 
-
-            Text("Who's Fighting?")
-                    .font(.system(size: 30))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-             
-//                Text("enter")
-//                        .font(.system(size: 15))
-//                        .foregroundColor(.white)
-//                        .fontWeight(.medium)
-//                        .multilineTextAlignment(.center)
-//
-                Text("BlueMode")
+              Text("BlueMode")
                             .font(.system(size: 43))
                             .foregroundColor(.white)
                             .fontWeight(.medium)

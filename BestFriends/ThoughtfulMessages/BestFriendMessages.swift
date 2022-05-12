@@ -78,7 +78,8 @@ struct BestFriendMessages: View {
                         .resizable()
                         .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
                         .frame(width: 250, height: 250)
-                        .shadow(color: .orange, radius: 50, x: 40, y: 50)
+                        .blur(radius: 2)
+                        .shadow(color: .orange, radius: 65, x: 40, y: 50)
                     
                     
                     VStack {
@@ -152,7 +153,7 @@ struct FriendVaultCircle: View {
                 .frame(width: 105, height: 105)
                 .clipShape(Circle())
                 .foregroundColor(color)
-            
+//                .blur(radius: 10)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
             
             Text(friendName)
@@ -164,6 +165,13 @@ struct FriendVaultCircle: View {
 }
 
 
+
+
+
+
+//
+//
+//
 //struct BestFriendMessages_Previews : PreviewProvider {
 //    static var previews: some View {
 //        BestFriendMessages()

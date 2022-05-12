@@ -93,6 +93,7 @@ struct OurMission: View {
                 .stroke(Color.gray, style:
                             StrokeStyle(lineWidth: 15, lineCap: .butt, dash: [2]))
                 .frame(width: 400, height: 400)
+                .blur(radius: 0.75)
 //                .trim(from: 0.2, to: 1.0)
                 .shadow(color: .pink, radius: 17, x: 3, y: 2)
 
@@ -161,7 +162,9 @@ struct OurMissionCircle: View {
           
         Rectangle()
         .frame(width: 225, height: 225)
+       
         .clipShape(Circle())
+        .blur(radius: 50)
         .foregroundColor(color)
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
         
