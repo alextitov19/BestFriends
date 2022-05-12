@@ -63,7 +63,7 @@ struct PlanetActionsView: View {
     var body: some View {
         HStack {
             VStack {
-                NavigationLink(destination: AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
+                NavigationLink(destination: AtmosphereMain2(user: user, friends: friends),
                                label: {
                     ZStack {
                         Circle()
