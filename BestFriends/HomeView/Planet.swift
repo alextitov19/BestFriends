@@ -70,7 +70,7 @@ struct PlanetActionsView: View {
 //                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
 //                               label: {
                     
-                NavigationLink(destination: AtmosphereMain2(),
+                NavigationLink(destination: AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
                                label: {
                 ZStack {
                         Circle()
