@@ -26,7 +26,7 @@ struct AtmosphereMain2: View {
             VStack {
                 HStack {
                     Text("Today I'm Feeling ...")
-                        .font(.system(size: 23))
+                        .font(.system(size: 30))
                         .foregroundColor(Color.white)
                     
                     Spacer()
@@ -228,7 +228,7 @@ struct AtmosphereMain2: View {
                 // MARK: End of feeling buttons
                 HStack {
                     Text("Why?")
-                        .font(.system(size: 23))
+                        .font(.system(size: 30))
                         .fontWeight(.regular)
                         .foregroundColor(Color.white)
                     
@@ -241,7 +241,11 @@ struct AtmosphereMain2: View {
                 
                 
                 HStack {
-                    Text("I want to tell...")
+                    Text("I want to tell ...")
+                        .font(.system(size: 30))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color.white)
+                    
                     
                     Spacer()
                 }
