@@ -177,7 +177,7 @@ struct Step2_FightLandingView: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken ?? "").then { response in
+                RestApi.instance.sendPushNotification(title: "BestFriends - BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken ?? "").then { response in
                     print("Got send APN repsonse: ", response)
                 }
             },

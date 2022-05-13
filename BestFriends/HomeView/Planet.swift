@@ -71,7 +71,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("Safe \nAtmosphere")
+                            Text("Atmosphere")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -117,7 +117,7 @@ struct PlanetActionsView: View {
                                 .foregroundColor(.white)
                                 .font(.system(size: 30, weight: .regular))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            Text("Trusted\nFriends")
+                            Text("Friends")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -200,7 +200,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("Special \nMessages")
+                            Text("Friends \nLike \nMe")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)

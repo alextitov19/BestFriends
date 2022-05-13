@@ -18,7 +18,8 @@ struct InviteView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey2
+              
+          ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear(perform: initLoadData)
             
@@ -33,8 +34,10 @@ struct InviteView: View {
                 
                 
                 Text("- There in good & 'BAD' times \n- Trustworthy / Loyal \n- Non-Judgmental \n- Make me feel safe")
+                    .fontWeight(.thin)
                     .foregroundColor(.white)
-                    .font(.system(size: 20, weight: .light))
+                    .italic()
+                    .font(.system(size: 20))
                 
                 
                 // Top part for inviting a friend

@@ -20,8 +20,11 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-            Color.gray
+
+            ColorManager.purple2
                 .ignoresSafeArea()
+                .onAppear()
+//                .onAppear(perform: initLoadData)
             
             VStack {
                 HStack {
@@ -314,8 +317,10 @@ struct AtmosphereMain2: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken ?? "").then { response in
+                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Temperament!", APNToken: friend.APNToken ?? "").then { response in
                     print("Got send APN repsonse: ", response)
+//                RestApi.instance.sendPushNotification(title: "BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken ?? "").then { response in
+//                    print("Got send APN repsonse: ", response)
                 }
             },
                    label: {
@@ -355,3 +360,6 @@ struct AtmosphereMain2_Previews : PreviewProvider {
         
     }
 }
+
+
+
