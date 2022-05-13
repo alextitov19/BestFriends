@@ -63,15 +63,15 @@ struct PlanetActionsView: View {
     var body: some View {
         HStack {
             VStack {
-                NavigationLink(destination: AtmosphereMain2(user: user, friends: friends),
+                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                label: {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.pmbc_blue)
+                            .foregroundColor(ColorManager.purple3)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("Atmosphere")
+                            Text("'LOOK' \nMy Friends \nLike Me")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -87,13 +87,14 @@ struct PlanetActionsView: View {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.pmbc_blue)
+//                            .foregroundColor(ColorManager.red)
+                            .foregroundColor(.pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
                             
                             
-                            Text("Resolving \nFights")
+                            Text("Huge \nFight")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -109,7 +110,7 @@ struct PlanetActionsView: View {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.pmbc_blue)
+                            .foregroundColor(ColorManager.pmbc_green)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
@@ -133,11 +134,11 @@ struct PlanetActionsView: View {
                     ZStack {
                         Circle()
                             .frame(width: 120, height: 120)
-                            .foregroundColor(ColorManager.pmbc_pink)
+                            .foregroundColor(ColorManager.grey3)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
-                            Text("My Planet, \nSettings, \n & Demo")
+                            Text("Demo \nn'\nSettings")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -154,16 +155,16 @@ struct PlanetActionsView: View {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.pmbc_green)
+                            .foregroundColor(ColorManager.purple3)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
-                            Text("Photo")
+                            Text("My")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
-                            Text("POP")
+                            Text("FRIENDS")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -173,22 +174,44 @@ struct PlanetActionsView: View {
             }
             
             VStack {
-                Button(action: {
-                    
-                }) {
+                NavigationLink(destination: AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
+                               label: {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.pmbc_green)
+                            .foregroundColor(ColorManager.purple2)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
-                        
-                        Text("Shared \nGoals")
-                            .foregroundColor(.white)
-                            .font(.system(size: 15, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        VStack {
+                            Text("Atmosphere")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        }
                     }
-                }
-                
+                })
+            
+            
+//            VStack {
+////                Button(action: {
+////
+////                }) {
+////                    ZStack {
+//
+//                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+//                               label: {
+//                    ZStack {
+//                        Circle()
+//                            .frame(width: 100, height: 100)
+//                            .foregroundColor(ColorManager.purple2)
+//                            .shadow(color: .black, radius: 2, x: 0, y: 2)
+//
+//                        Text("Atmosphere")
+//                            .foregroundColor(.white)
+//                            .font(.system(size: 15, weight: .bold))
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    }
+//                }
+//
                 Spacer()
                     .frame(height: 40)
                 
@@ -197,10 +220,10 @@ struct PlanetActionsView: View {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.pmbc_blue)
+                            .foregroundColor(ColorManager.purple2)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("Friends \nLike \nMe")
+                            Text("Shared \nPurpose")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)

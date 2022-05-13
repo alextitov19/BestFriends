@@ -76,7 +76,7 @@ struct BestFriendMessages: View {
                 ZStack {
                     Image(systemName: "heart.fill")
                         .resizable()
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(ColorManager.purple3)
                         .frame(width: 250, height: 250)
                         .blur(radius: 2)
                         .shadow(color: .orange, radius: 65, x: 40, y: 50)

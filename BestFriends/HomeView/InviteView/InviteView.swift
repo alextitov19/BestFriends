@@ -33,7 +33,7 @@ struct InviteView: View {
                     .font(.system(size: 27, weight: .light))
                 
                 
-                Text("- There in good & 'BAD' times \n- Trustworthy / Loyal \n- Non-Judgmental \n- Make me feel safe")
+                Text("- Always around in good & 'BAD' times \n- Trustworthy / Loyal \n- Non-Judgmental \n- Make me feel safe")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()

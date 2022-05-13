@@ -45,7 +45,7 @@ struct WhoFighting: View {
      
            
               NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .orange, friendName: "OMG, \nmy Parents \nAGAIN!")
+                  WhoFightingCircle (color: .orange, friendName: "OMG, \nmy Parents \nare Fighting \nAGAIN!")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
@@ -58,17 +58,17 @@ struct WhoFighting: View {
 
         Image(systemName: "heart.fill")
                     .resizable()
-                    .foregroundColor(.blue)
+                    .foregroundColor(.pink)
                     .frame(width: 250, height: 250)
                     .blur(radius: 2)
 
-                    .shadow(color: .white, radius: 65, x: 30, y: 50)
+                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
         
             VStack {
                 
               Text("BlueMode")
                             .font(.system(size: 43))
-                            .foregroundColor(.white)
+                            .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)

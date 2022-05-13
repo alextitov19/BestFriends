@@ -52,12 +52,12 @@ struct OurMission: View {
 //            .offset(x: showItems ? 100 : 0, y: showItems ? -215: 0)
 //            
 
-            NavigationLink(destination: SettingsView(), label: { WhoFightingCircle (color: .pink, friendName: "Settings / \nMy Account")
+            NavigationLink(destination: SettingsView(), label: { WhoFightingCircle (color: .gray, friendName: "Settings / \nMy Account")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -100: 0)
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .blue, friendName: "BestFriends \nDEMO")
+                WhoFightingCircle (color: .green, friendName: "BestFriends \nDEMO")
           })
           .offset(x: showItems ? 125 : 0, y: showItems ? -75: 0)
             
@@ -83,7 +83,7 @@ struct OurMission: View {
         
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .white, friendName: "")
+                WhoFightingCircle (color: .gray, friendName: "")
           })
           .offset(x: showItems ? -75 : 0, y: showItems ? -600: 0)
         
