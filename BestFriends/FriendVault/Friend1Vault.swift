@@ -42,28 +42,75 @@ struct Friend1Vault: View {
                 .blendMode(.screen)
             
             VStack {
+                
+              Image("5swipe")
+                
+                Spacer()
+                    .frame(height: 20)
+              
+                
+                
+//                Auto import message from [AtmosphereMain2] page for the below rectangle
+              Rectangle()
+                      .frame(width:325, height: 80)
+                      .cornerRadius(15)
+                      .foregroundColor(Color.gray)
+             
+                
+                Spacer()
+                    .frame(height: 20)
+                
+              Rectangle()
+                      .frame(width:325, height: 80)
+                      .cornerRadius(15)
+                      .foregroundColor(Color.white)
+              
+//                Limit the number of characters you can type in this box. maybe like Twitter 140
+                
+//                Do not know what (    , text: $reason) is???
+//                  TextField("Send Customized Support Message", text: $reason)
+//                  .font(.system(size: 20))
+//                  .foregroundColor(Color.black)
+//                  .padding(.horizontal, 50)
+//
                     HStack {
 //                        Button(action: {
 //                            self.presentationMode.wrappedValue.dismiss()
 //                        }) {
                             Image("Hug")
                                 .resizable()
-                                .frame(width: 70, height: 70)
+                                .frame(width: 50, height: 50)
                                 .scaledToFit()
 //                                .colorInvert()
 //                                .rotationEffect(Angle(degrees: 180))
                         Spacer ()
-                            Image("iconBell")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .scaledToFit()
-                               .colorInvert()
-                         
-                            Spacer()
+                            .frame(width: 30)
                         
-                            Image("Exclamation Mark")
+                        Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(.pink)
+                                    .frame(width: 40, height: 40)
+                                    .blur(radius: 2)
+
+                                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                        
+                        Spacer ()
+                            .frame(width: 30)
+                        
+                        Image("bell")
                                 .resizable()
-                                .frame(width: 25, height: 25)
+                                .frame(width: 45, height: 45)
+                                .scaledToFit()
+                             .colorInvert()
+                             .rotationEffect(Angle(degrees: 180))
+                         
+                        Spacer()
+                            .frame(width: 30)
+                        
+                        
+                            Image("bell")
+                                .resizable()
+                                .frame(width: 45, height: 45)
                                 .scaledToFit()
                                 .colorInvert()
                                 .rotationEffect(Angle(degrees: 180))
@@ -71,7 +118,7 @@ struct Friend1Vault: View {
                         
                         
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 500)
                 }
             
             
@@ -81,17 +128,7 @@ struct Friend1Vault: View {
           ZStack {
               
            
-                    
-                  Rectangle()
-                          .frame(width:325, height: 100)
-                          .cornerRadius(15)
-                          .foregroundColor(Color.white)
-                  
-//                  TextField("You can type your reason here ...", text: $reason)
-//                  .font(.system(size: 20))
-//                  .foregroundColor(Color.black)
-//                  .padding(.horizontal, 50)
-//
+         
           }
            
           Spacer ()
@@ -145,21 +182,7 @@ struct Friend1Vault: View {
                         Spacer()
                             .frame(height: 40)
                         
-                        
-                        Text("Tip")
-                            .font(.system(size: 27))
-                            .fontWeight(.light)
-                            .foregroundColor(Color.green)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("If they fail to respond they \nmost likely need more time - stay calm.")
-                            .font(.system(size: 20))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.center)
-                        
-                        VStack {
+                     VStack {
                             
                             
                             Spacer ()
@@ -168,9 +191,9 @@ struct Friend1Vault: View {
                             NavigationLink(
                                 destination: Step3_BreathInviteView(user: user, friends: friends),
                                 label: {
-                                    Text("NEXT")
+                                    Text("Send Support Message")
                                         .fontWeight(.thin)
-                                        .frame(width: 100, height: 40)
+                                        .frame(width: 310, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                         .font(.system(size: 30))
                                         .background(ColorManager.purple3)
