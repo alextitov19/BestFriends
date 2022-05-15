@@ -100,7 +100,7 @@ struct BestFriendMessages: View {
                         
                         Text("Special \nMessages")
                             .font(.system(size: 35))
-                            .foregroundColor(.orange)
+                            .foregroundColor(.purple)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
