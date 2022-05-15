@@ -68,7 +68,7 @@ struct PlanetActionsView: View {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.purple3)
+                            .foregroundColor(ColorManager.purple2)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
                             Text("'LOOK' \nMy Friends \nLike Me")
@@ -126,6 +126,7 @@ struct PlanetActionsView: View {
                     }
                 }
                 
+           
                 Spacer()
                     .frame(height: 40)
                 
@@ -134,7 +135,7 @@ struct PlanetActionsView: View {
                     ZStack {
                         Circle()
                             .frame(width: 120, height: 120)
-                            .foregroundColor(ColorManager.grey3)
+                            .foregroundColor(ColorManager.grey1)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
@@ -148,6 +149,10 @@ struct PlanetActionsView: View {
                 
                 Spacer()
                     .frame(height: 40)
+
+                
+                
+//                here^^^
                 
                 Button(action: {
                     sessionManager.showMasterFriendVault()
@@ -155,7 +160,7 @@ struct PlanetActionsView: View {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.purple3)
+                            .foregroundColor(ColorManager.purple4)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
@@ -163,8 +168,8 @@ struct PlanetActionsView: View {
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
-                            Text("FRIENDS")
+                           
+                            Text("Friends")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -173,7 +178,7 @@ struct PlanetActionsView: View {
                 }
             }
             
-            VStack {
+           VStack {
                 NavigationLink(destination: AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
                                label: {
                     ZStack {
@@ -182,7 +187,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.purple2)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("Atmosphere")
+                            Text("My \nAtmosphere")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -191,39 +196,19 @@ struct PlanetActionsView: View {
                 })
             
             
-//            VStack {
-////                Button(action: {
-////
-////                }) {
-////                    ZStack {
-//
-//                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-//                               label: {
-//                    ZStack {
-//                        Circle()
-//                            .frame(width: 100, height: 100)
-//                            .foregroundColor(ColorManager.purple2)
-//                            .shadow(color: .black, radius: 2, x: 0, y: 2)
-//
-//                        Text("Atmosphere")
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 15, weight: .bold))
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                    }
-//                }
-//
-                Spacer()
+            Spacer()
                     .frame(height: 40)
                 
+     
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                               label: {
+                              label: {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
                             .foregroundColor(ColorManager.purple2)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("Shared \nPurpose")
+                            Text("Shared \nHorizons")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)

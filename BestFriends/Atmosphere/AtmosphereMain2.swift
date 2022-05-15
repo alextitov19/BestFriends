@@ -237,7 +237,8 @@ struct AtmosphereMain2: View {
                     
                    Spacer()
                 }
-               .padding(0)
+                .padding(.horizontal)
+
                 
               
             ZStack {
@@ -265,7 +266,7 @@ struct AtmosphereMain2: View {
                     
                     Spacer()
                 }
-                .padding()
+                .padding(.horizontal)
                 
                 HStack {
                     if friends.count > 1 {

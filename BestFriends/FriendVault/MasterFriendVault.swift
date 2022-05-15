@@ -103,7 +103,7 @@ struct MasterFriendVault: View {
                     NavigationLink(
                         destination: EmptyView(),
                         label: {
-                            Text("  Take a Breather")
+                            Text("My Special Messages")
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
