@@ -21,7 +21,7 @@ struct AtmosphereMain2: View {
     var body: some View {
         ZStack {
 
-            ColorManager.purple2
+            ColorManager.purple3
                 .ignoresSafeArea()
                 .onAppear()
 //                .onAppear(perform: initLoadData)
@@ -227,7 +227,7 @@ struct AtmosphereMain2: View {
                 }
                 
                 
-                
+                VStack {
                 // MARK: End of feeling buttons
                 HStack {
                     Text("Why?")
@@ -235,14 +235,27 @@ struct AtmosphereMain2: View {
                         .fontWeight(.regular)
                         .foregroundColor(Color.white)
                     
-                    Spacer()
+                   Spacer()
                 }
-                .padding()
+               .padding(0)
                 
-                TextField("If you want; type your reason here", text: $reason)
-                    .padding(.horizontal)
+              
+            ZStack {
+                    Rectangle()
+                            .frame(width:325, height: 100)
+                            .cornerRadius(15)
+                            .foregroundColor(Color.white)
+                    
+                    TextField("You can type your reason here ...", text: $reason)
+                    .font(.system(size: 20))
+                    .foregroundColor(Color.black)
+                    .padding(.horizontal, 50)
                 
-                
+            }
+             
+                    
+                    
+                    
                 HStack {
                     Text("I want to tell ...")
                         .font(.system(size: 30))
@@ -310,7 +323,7 @@ struct AtmosphereMain2: View {
             }
         }
     }
-    
+    }
     private struct RectView: View {
         let user: User
         let friend: User
@@ -363,3 +376,23 @@ struct AtmosphereMain2_Previews : PreviewProvider {
 
 
 
+
+//
+//
+//TextField("", text: $messageBody)
+//    .placeholder(when: messageBody.isEmpty) {
+//        HStack {
+//            Text("Send a chat").foregroundColor(.black)
+//
+//            Spacer()
+//        }
+//    }
+//    .font(.system(size: 18))
+//    .submitLabel(.send)
+//    .onSubmit { sendMessage() }
+//    .padding()
+//    .overlay(RoundedRectangle(cornerRadius: 20)
+//        .stroke(Color.gray)
+//        .frame(height: 40)
+//        .padding(.horizontal, 5)
+//    )
