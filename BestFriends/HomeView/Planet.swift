@@ -150,13 +150,9 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
 
-                
-                
-//                here^^^
-                
-                Button(action: {
-                    sessionManager.showMasterFriendVault()
-                }) {
+               
+                NavigationLink(destination: Friend1Vault(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
+                               label: {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
@@ -175,8 +171,11 @@ struct PlanetActionsView: View {
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
-                }
+                })
             }
+            
+            
+         
             
            VStack {
                 NavigationLink(destination: AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
