@@ -46,12 +46,12 @@ struct Friend1Vault: View {
 //                        Button(action: {
 //                            self.presentationMode.wrappedValue.dismiss()
 //                        }) {
-                            Image("arrowRight")
+                            Image("Hug")
                                 .resizable()
-                                .frame(width: 25, height: 25)
+                                .frame(width: 70, height: 70)
                                 .scaledToFit()
-                                .colorInvert()
-                                .rotationEffect(Angle(degrees: 180))
+//                                .colorInvert()
+//                                .rotationEffect(Angle(degrees: 180))
                         Spacer ()
                             Image("iconBell")
                                 .resizable()
