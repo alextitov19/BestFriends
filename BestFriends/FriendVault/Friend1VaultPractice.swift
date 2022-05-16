@@ -9,13 +9,14 @@ import SwiftUI
 import Combine
 
 
-struct Friend1Vault: View {
+struct Friend1VaultPractice: View {
     
     let user: User
     let friends: [User]
     let friend: User
     
     @State private var customMessage = "Custom Message"
+    @State private var defaultMessage: String = ""
     
     var body: some View {
         ZStack {
@@ -93,7 +94,8 @@ struct Friend1Vault: View {
                 
                 VStack {
                     Button(action: {
-//                        feelingsButtonTapped(feeling: "powerful");
+//                       defaultMessageButtonTapped(defaultMessage: "Are you okay?");
+
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you okay?", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("Are you okay?")
@@ -101,6 +103,7 @@ struct Friend1Vault: View {
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
+//                            .background(defaultMessage == "Are you Okay?" ? Color.yellow : Color.gray)
                             .background(ColorManager.grey1)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -247,8 +250,9 @@ struct Friend1Vault: View {
             })
         }
         
-//        private func feelingsButtonTapped(feeling: String) {
-//            self.feeling = feeling
+//        private func defaultMessageButtonTapped(defaultMessage: String) {
+//            self.defaultMessage = defaultMessage
+   
     }
     
 }
@@ -257,8 +261,8 @@ struct Friend1Vault: View {
 
 
 
-struct Friend1Vault_Previews : PreviewProvider {
+struct Friend1VaultPractice_Previews : PreviewProvider {
     static var previews: some View {
-        Friend1Vault(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [], friend: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""))
+        Friend1VaultPractice(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [], friend: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""))
     }
 }
