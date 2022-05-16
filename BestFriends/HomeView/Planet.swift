@@ -204,9 +204,9 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.purple2)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("My \nAtmosphere")
+                            Text("Atmosphere")
                                 .foregroundColor(.white)
-                                .font(.system(size: 15, weight: .bold))
+                                .font(.system(size: 16, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
@@ -225,10 +225,18 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.purple2)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("Shared \nHorizons")
+                            Text("Shared")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            
+                            Text("Horizons")
+                                .foregroundColor(.white)
+                                .font(.system(size: 16, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            
                         }
                     }
                 })
