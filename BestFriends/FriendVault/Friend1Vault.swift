@@ -67,16 +67,7 @@ struct Friend1Vault: View {
                     .cornerRadius(15)
                     .onReceive(Just(customMessage)) { _ in limitText(50) }
                 
-                
-                //                Limit the number of characters you can type in this box. maybe like Twitter 140
-                
-                //                Do not know what (    , text: $reason) is???
-                
-                //                  TextField("Send Customized Support Message", text: $reason)
-                //                  .font(.system(size: 20))
-                //                  .foregroundColor(Color.black)
-                //                  .padding(.horizontal, 50)
-                //
+             
 //                HStack {
 //                    Image("Hug")
 //                        .resizable()
@@ -101,77 +92,84 @@ struct Friend1Vault: View {
                 
                 VStack {
                     Button(action: {
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you ok?", APNToken: friend.APNToken ?? "")
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you okay?", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("Are you okay?")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 30)
+                            .foregroundColor(.purple)
                             .font(.system(size: 20))
-                            .foregroundColor(.black)
-                            .frame(alignment: .leading)
+                            .background(ColorManager.grey1)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                     
-                    Divider()
                     
                     Button(action: {
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Do we need to talk?", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("Do we need to talk?")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 30)
+                            .foregroundColor(.purple)
                             .font(.system(size: 20))
-                            .foregroundColor(.black)
-                            .frame(alignment: .leading)
+                            .background(ColorManager.grey1)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                     
-                    Divider()
                     
                     Button(action: {
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulation, you did it!", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("Congradulations, you did it!")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 30)
+                            .foregroundColor(.purple)
                             .font(.system(size: 20))
-                            .foregroundColor(.black)
-                            .frame(alignment: .leading)
+                            .background(ColorManager.grey1)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                     
-                    Divider()
                 
             VStack {
-                        
+                    Spacer()
+                    .frame(height: 10)
                     }
                     Button(action: {
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Good Luck - you got this!", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("Good luck, you got this!")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 30)
+                            .foregroundColor(.purple)
                             .font(.system(size: 20))
-                            .foregroundColor(.black)
-                            .frame(alignment: .leading)
+                            .background(ColorManager.grey1)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-//
-//                    Divider()
-//
-//                    Button(action: {
-//
-//                    }, label: {
-//                        Text("We will figure this all out.")
-//                            .font(.system(size: 20))
-//                            .foregroundColor(.black)
-//                            .frame(alignment: .leading)
-//                    })
-//
-                   
-                  
-                    
-                    
-                    
-                    
-                    
-              
-                    
+
+                    Button(action: {
+
+                    }, label: {
+                        Text("We will figure this all out.")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 30)
+                            .foregroundColor(.purple)
+                            .font(.system(size: 20))
+                            .background(ColorManager.grey1)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)                    })
+
+
                     Button(action: {
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: customMessage, APNToken: friend.APNToken ?? "")
                     }, label: {
 //                        Text("Send Message")
-                        Text("Send Notification")
+                        Text("Send Push Notification")
                             .fontWeight(.thin)
-                            .frame(width: 250, height: 40)
+                            .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)
