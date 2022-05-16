@@ -184,7 +184,7 @@ struct PlanetActionsView: View {
                         VStack {
                             Text("Huge \nFight")
                                 .foregroundColor(.white)
-                                .font(.system(size: 15, weight: .bold))
+                                .font(.system(size: 16, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
