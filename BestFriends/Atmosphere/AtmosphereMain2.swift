@@ -20,11 +20,11 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-
+            
             ColorManager.purple3
                 .ignoresSafeArea()
                 .onAppear()
-//                .onAppear(perform: initLoadData)
+            //                .onAppear(perform: initLoadData)
             
             VStack {
                 HStack {
@@ -228,103 +228,116 @@ struct AtmosphereMain2: View {
                 
                 
                 VStack {
-                // MARK: End of feeling buttons
-                HStack {
-                    Text("What's going on?")
-                        .font(.system(size: 30))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color.white)
+                    // MARK: End of feeling buttons
+                    HStack {
+                        Text("What's going on?")
+                            .font(.system(size: 30))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color.white)
+                        
+                        Spacer()
+                    }
+                    .padding(.horizontal)
                     
-                   Spacer()
-                }
-                .padding(.horizontal)
-
-                
-              
-            ZStack {
-                    Rectangle()
+                    
+                    
+                    ZStack {
+                        Rectangle()
                             .frame(width:325, height: 100)
                             .cornerRadius(15)
                             .foregroundColor(Color.white)
+                        
+                        TextField("You can type your reason here ...", text: $reason)
+                            .font(.system(size: 20))
+                            .foregroundColor(Color.black)
+                            .padding(.horizontal, 50)
+                            .onReceive(Just(customMessage)) { _ in limitText(50) }
+                        
+                        
+                    }
                     
-                    TextField("You can type your reason here ...", text: $reason)
-                    .font(.system(size: 20))
-                    .foregroundColor(Color.black)
-                    .padding(.horizontal, 50)
-                
-            }
-             
                     
                     
                     
-                HStack {
-                    Text("Do you want to alert your friends ...")
-                        .font(.system(size: 30))
-                        .fontWeight(.regular)
-                        .foregroundColor(Color.white)
+                    HStack {
+                        Text("Do you want to alert your friends ...")
+                            .font(.system(size: 30))
+                            .fontWeight(.regular)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        Spacer()
+                    }
+                    .padding(.horizontal)
                     
+                    HStack {
+                        if friends.count > 1 {
+                            Button(action: {
+                                
+                            },
+                                   label: {
+                                Text("ALL")
+                                    .fontWeight(.bold)
+                                    .frame(width: 100, height: 30)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 15))
+                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                                    .cornerRadius(25)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                        }
+                        if friends.count > 0 {
+                            RectView(user: user, friend: friends[0])
+                        }
+                        
+                        if friends.count > 1 {
+                            RectView(user: user, friend: friends[1])
+                        }
+                    }
+                    
+                    HStack {
+                        if friends.count > 2 {
+                            RectView(user: user, friend: friends[2])
+                        }
+                        
+                        if friends.count > 3 {
+                            RectView(user: user, friend: friends[3])
+                        }
+                        
+                        if friends.count > 4 {
+                            RectView(user: user, friend: friends[4])
+                        }
+                    }
+                    
+                    Button(action: {},
+                           label: {
+                        Text("SHARE")
+                            .fontWeight(.thin)
+                            .frame(width: 110, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    .padding()
                     
                     Spacer()
                 }
-                .padding(.horizontal)
-                
-                HStack {
-                    if friends.count > 1 {
-                        Button(action: {
-                            
-                        },
-                               label: {
-                            Text("ALL")
-                                .fontWeight(.bold)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 15))
-                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                    }
-                    if friends.count > 0 {
-                        RectView(user: user, friend: friends[0])
-                    }
-                    
-                    if friends.count > 1 {
-                        RectView(user: user, friend: friends[1])
-                    }
-                }
-                
-                HStack {
-                    if friends.count > 2 {
-                        RectView(user: user, friend: friends[2])
-                    }
-                    
-                    if friends.count > 3 {
-                        RectView(user: user, friend: friends[3])
-                    }
-                    
-                    if friends.count > 4 {
-                        RectView(user: user, friend: friends[4])
-                    }
-                }
-                
-                Button(action: {},
-                       label: {
-                    Text("SHARE")
-                        .fontWeight(.thin)
-                        .frame(width: 110, height: 40)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 30))
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                })
-                .padding()
-                
-                Spacer()
             }
         }
+        
+        
     }
+    
+    private func limitText(_ upper: Int) {
+        if customMessage.count > upper {
+            customMessage = String(customMessage.prefix(upper))
+        }
     }
+    
+    
+    
     private struct RectView: View {
         let user: User
         let friend: User
@@ -333,8 +346,8 @@ struct AtmosphereMain2: View {
             Button(action: {
                 RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Temperament!", APNToken: friend.APNToken ?? "").then { response in
                     print("Got send APN repsonse: ", response)
-//                RestApi.instance.sendPushNotification(title: "BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken ?? "").then { response in
-//                    print("Got send APN repsonse: ", response)
+                    //                RestApi.instance.sendPushNotification(title: "BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken ?? "").then { response in
+                    //                    print("Got send APN repsonse: ", response)
                 }
             },
                    label: {
