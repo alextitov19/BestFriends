@@ -37,13 +37,8 @@ struct BestFriendMessages: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
-            
-//            PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
-//                .scaledToFit()
-//                .frame(width: 700)
-            
-            
-            // trying to put in section for PhotoPop
+          
+// trying to put in section for PhotoPop
             
             ZStack {
                 Image(systemName: "heart.fill")

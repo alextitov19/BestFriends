@@ -74,6 +74,33 @@ struct SettingsView: View {
                    })
             
                .navigationBarHidden(true)
+            
+//          Adding Photopop
+                Divider()
+                
+                NavigationLink(
+                    destination: EmptyView(),
+                      label: {
+                            HStack {
+                         Text("Set-up PhotoPoP")
+                                   .font(.system(size: 20))
+   //                               .foregroundColor(.black)
+                                   .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                Spacer()
+
+                               Image("arrowRight")
+                                   .resizable()
+                                   .frame(width: 25, height: 25)
+                                   .scaledToFit()
+                                   .colorInvert()
+                        }
+                        .padding(.horizontal, 15)
+                    })
+                
+            
+                .navigationBarHidden(true)
+                
+                
                 
                 Divider()
                 
