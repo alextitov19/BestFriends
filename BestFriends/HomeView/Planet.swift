@@ -68,10 +68,10 @@ struct PlanetActionsView: View {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.purple2)
+                            .foregroundColor(ColorManager.purple3)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("My \n Supportive \nFriends")
+                            Text("Support \n from \nFriends")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -88,23 +88,23 @@ struct PlanetActionsView: View {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.purple2)
+                            .foregroundColor(ColorManager.purple3)
                             .foregroundColor(.pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
                             
-                            Text("My")
+                            Text("Supporting")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                            
-                            Text("Friend")
+                            Text("my")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
-                            Text("Lockers")
+                            Text("Friends")
                                 .foregroundColor(.white)
                                 .font(.system(size: 17, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
