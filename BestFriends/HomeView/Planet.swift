@@ -71,7 +71,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.purple2)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("'LOOK' \nMy Friends \nLike Me")
+                            Text("My \n Supportive \nFriends")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -82,22 +82,33 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                NavigationLink(destination: WhoFighting(),
-                               label: {
+                 NavigationLink(destination: Friend1Vault(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
+                                label: {
+             
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-//                            .foregroundColor(ColorManager.red)
+                            .foregroundColor(ColorManager.purple2)
                             .foregroundColor(.pink)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
                             
-                            
-                            Text("Huge \nFight")
+                            Text("My")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
+                           
+                            Text("Friend")
+                                .foregroundColor(.white)
+                                .font(.system(size: 17, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            Text("Lockers")
+                                .foregroundColor(.white)
+                                .font(.system(size: 17, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                           
                         }
                     }
                 }
@@ -139,9 +150,9 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
-                            Text("Demo \nn'\nSettings")
+                            Text("My Account \nSettings \nn'\nApp Demo")
                                 .foregroundColor(.white)
-                                .font(.system(size: 15, weight: .bold))
+                                .font(.system(size: 13, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
@@ -150,33 +161,39 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
 
-               
-                NavigationLink(destination: Friend1Vault(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
-                               label: {
+                NavigationLink(destination: WhoFighting(),
+                              label: {
+
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
-                            .foregroundColor(ColorManager.purple4)
+                            .foregroundColor(ColorManager.pmbc_blue)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
-                            Text("My")
+                            Text("Huge \nFight")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                           
-                            Text("Friends")
-                                .foregroundColor(.white)
-                                .font(.system(size: 17, weight: .bold))
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
-                            Text("Mood")
-                                .foregroundColor(.white)
-                                .font(.system(size: 17, weight: .bold))
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            Text("My")
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 15, weight: .bold))
+//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//                            Text("Friend")
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 17, weight: .bold))
+//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//                            Text("Lockers")
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 17, weight: .bold))
+//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
                 })
+          
+            
             }
             
             
@@ -219,9 +236,13 @@ struct PlanetActionsView: View {
                         }
                     }
                 })
+              
             }
+ 
         }
+     
     }
+      
 }
 
 
