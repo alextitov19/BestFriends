@@ -78,7 +78,7 @@ struct PlanetActionsView: View {
                       
                             Text("SUPPORTING")
                                 .foregroundColor(.white)
-                                .font(.system(size: 15, weight: .bold))
+                                .font(.system(size: 14, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             Text("me")
                                 .foregroundColor(.white)
@@ -113,7 +113,7 @@ struct PlanetActionsView: View {
                       
                             Text("SUPPORTING")
                                 .foregroundColor(.white)
-                                .font(.system(size: 15, weight: .bold))
+                                .font(.system(size: 14, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             Text("friends")
                                 .foregroundColor(.white)
