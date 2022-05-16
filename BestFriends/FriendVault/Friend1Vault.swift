@@ -45,9 +45,17 @@ struct Friend1Vault: View {
                     .frame(width:325, height: 80)
                     .cornerRadius(15)
                     .foregroundColor(Color.gray)
-                
+
                 Spacer()
                     .frame(height: 20)
+
+                Text("Respond instantly via Push Notification")
+                    .font(.system(size: 18))
+                    .frame(width:325, height: 30)
+//                    .fontWeight(.light)
+//                .multilineTextAlignment(.center)
+                   .foregroundColor(Color.white)
+                    
                 
                 //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
                 TextEditor(text: $customMessage)
@@ -69,27 +77,27 @@ struct Friend1Vault: View {
                 //                  .foregroundColor(Color.black)
                 //                  .padding(.horizontal, 50)
                 //
-                HStack {
-                    Image("Hug")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .scaledToFit()
-                    
-                    Image(systemName: "heart.fill")
-                        .resizable()
-                        .foregroundColor(.pink)
-                        .frame(width: 40, height: 40)
-                        .blur(radius: 2)
-                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                        .padding(.horizontal, 30)
-                    
-                    Image("bell")
-                        .resizable()
-                        .frame(width: 45, height: 45)
-                        .scaledToFit()
-                        .colorInvert()
-                }
-                .padding(.bottom, 20)
+//                HStack {
+//                    Image("Hug")
+//                        .resizable()
+//                        .frame(width: 50, height: 50)
+//                        .scaledToFit()
+//
+//                    Image(systemName: "heart.fill")
+//                        .resizable()
+//                        .foregroundColor(.pink)
+//                        .frame(width: 40, height: 40)
+//                        .blur(radius: 2)
+//                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                        .padding(.horizontal, 30)
+//
+//                    Image("bell")
+//                        .resizable()
+//                        .frame(width: 45, height: 45)
+//                        .scaledToFit()
+//                        .colorInvert()
+//                }
+            
                 
                 VStack {
                     Button(action: {
@@ -104,9 +112,9 @@ struct Friend1Vault: View {
                     Divider()
                     
                     Button(action: {
-                        
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Do we need to talk?", APNToken: friend.APNToken ?? "")
                     }, label: {
-                        Text("Do you want to talk?")
+                        Text("Do we need to talk?")
                             .font(.system(size: 20))
                             .foregroundColor(.black)
                             .frame(alignment: .leading)
@@ -115,7 +123,7 @@ struct Friend1Vault: View {
                     Divider()
                     
                     Button(action: {
-                        
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulation, you did it!", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("Congradulations, you did it!")
                             .font(.system(size: 20))
@@ -124,28 +132,91 @@ struct Friend1Vault: View {
                     })
                     
                     Divider()
-                    
-                    Button(action: {
+                
+            VStack {
                         
+                    }
+                    Button(action: {
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Good Luck - you got this!", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("Good luck, you got this!")
                             .font(.system(size: 20))
                             .foregroundColor(.black)
                             .frame(alignment: .leading)
                     })
+//
+//                    Divider()
+//
+//                    Button(action: {
+//
+//                    }, label: {
+//                        Text("We will figure this all out.")
+//                            .font(.system(size: 20))
+//                            .foregroundColor(.black)
+//                            .frame(alignment: .leading)
+//                    })
+//
+                   
+                  
                     
-                    Spacer ()
+                    
+                    
+                    
+                    
+              
                     
                     Button(action: {
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: customMessage, APNToken: friend.APNToken ?? "")
                     }, label: {
-                        Text("Send Custom Message")
-                            
+//                        Text("Send Message")
+                        Text("Send Notification")
+                            .fontWeight(.thin)
+                            .frame(width: 250, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
+                    
+                    
+                    Spacer ()
+                        .frame(height: 40)
                 }
                 
+                Text("Send virtual Hug or Heart")
+                    .font(.system(size: 20))
+                    .frame(width:325, height: 30)
+//                    .fontWeight(.light)
+//                .multilineTextAlignment(.center)
+                   .foregroundColor(Color.white)
+                
+                HStack {
+                    Image("Hug")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .scaledToFit()
+                    
+                    Image(systemName: "heart.fill")
+                        .resizable()
+                        .foregroundColor(.pink)
+                        .frame(width: 40, height: 40)
+                        .blur(radius: 2)
+                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                        .padding(.horizontal, 30)
+                    
+//                    Image("Fireworks")
+//                        .resizable()
+//                        .frame(width: 45, height: 45)
+//                        .scaledToFit()
+//                        .colorInvert()
+                }
+                .padding(.bottom, 50)
             }
+            
+        
         }
+    
     }
     
     private func limitText(_ upper: Int) {
