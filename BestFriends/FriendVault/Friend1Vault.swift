@@ -93,7 +93,7 @@ struct Friend1Vault: View {
                 
                 VStack {
                     Button(action: {
-                        
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you ok?", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("Are you okay?")
                             .font(.system(size: 20))
@@ -107,6 +107,28 @@ struct Friend1Vault: View {
                         
                     }, label: {
                         Text("Do you want to talk?")
+                            .font(.system(size: 20))
+                            .foregroundColor(.black)
+                            .frame(alignment: .leading)
+                    })
+                    
+                    Divider()
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        Text("Congradulations, you did it!")
+                            .font(.system(size: 20))
+                            .foregroundColor(.black)
+                            .frame(alignment: .leading)
+                    })
+                    
+                    Divider()
+                    
+                    Button(action: {
+                        
+                    }, label: {
+                        Text("Good luck, you got this!")
                             .font(.system(size: 20))
                             .foregroundColor(.black)
                             .frame(alignment: .leading)
