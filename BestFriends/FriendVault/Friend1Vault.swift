@@ -16,7 +16,9 @@ struct Friend1Vault: View {
     
     let user: User
     let friends: [User]
-//    let friend: User
+    let friend: User
+  
+    @State private var customMessage = ""
     
     var body: some View {
         
@@ -37,13 +39,17 @@ struct Friend1Vault: View {
             
               
 //         code to get friends name at top of page
+            HStack {
+           Spacer()
+                    .frame(width: 35)
+                Text(friend.firstName + " " + friend.lastName)
+                .font(.system(size: 20))
+                .foregroundColor(.white)
+                Spacer()
+        
+            }
             
-//            Text(friend.firstName + " " + friend.lastName)
-//                .font(.system(size: 30))
-//                .foregroundColor(.white)
-
-            
-            
+//            padding(.horizontal, 10)
             
             
                 
@@ -58,10 +64,19 @@ struct Friend1Vault: View {
                     .frame(height: 20)
    
 //                Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
-              Rectangle()
-                      .frame(width:325, height: 80)
-                      .cornerRadius(15)
-                      .foregroundColor(Color.white)
+            
+          ZStack {
+                  Rectangle()
+                          .frame(width:325, height: 100)
+                          .cornerRadius(15)
+                          .foregroundColor(Color.white)
+                  
+                  TextField("You can type your reason here ...", text: $customMessage)
+                  .font(.system(size: 20))
+                  .foregroundColor(Color.black)
+                  .padding(.horizontal, 50)
+              
+          }
               
 //                Limit the number of characters you can type in this box. maybe like Twitter 140
                 
@@ -247,7 +262,7 @@ struct Friend1Vault: View {
 
 struct Friend1Vault_Previews : PreviewProvider {
     static var previews: some View {
-        Friend1Vault(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
+        Friend1Vault(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [], friend: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""))
     }
 }
 

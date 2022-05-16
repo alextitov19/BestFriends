@@ -94,7 +94,7 @@ struct PlanetActionsView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                 NavigationLink(destination: Friend1Vault(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
+                NavigationLink(destination: Friend1Vault(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [], friend: User(id: "", firstName: "fakename", lastName: "fake", APNToken: "", atmosphere: "")),
                                 label: {
              
                     ZStack {
