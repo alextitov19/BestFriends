@@ -15,7 +15,7 @@ struct AtmosphereMain2: View {
     let user: User
     let friends: [User]
     
-    @State private var feelings: [String] = []
+    @State private var feeling: String = ""
     @State private var reason = ""
     
     var body: some View {
@@ -58,7 +58,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feelings.contains("upset") ? Color.blue : Color.gray)
+                        .background(feeling == "upset" ? Color.blue : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -75,7 +75,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feelings.contains("stressed") ? Color.blue : Color.gray)
+                        .background(feeling == "stressed" ? Color.blue : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -92,7 +92,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feelings.contains("sad") ? Color.blue : Color.gray)
+                        .background(feeling == "sad" ? Color.blue : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -109,7 +109,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feelings.contains("lonely") ? Color.blue : Color.gray)
+                        .background(feeling == "lonely" ? Color.blue : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -128,7 +128,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feelings.contains("okay") ? Color.green : Color.gray)
+                        .background(feeling == "okay" ? Color.green : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -145,7 +145,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feelings.contains("bored") ? Color.orange : Color.gray)
+                        .background(feeling == "bored" ? Color.orange : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -167,7 +167,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feelings.contains("happy") ? Color.yellow : Color.gray)
+                        .background(feeling == "happy" ? Color.yellow : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -184,7 +184,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feelings.contains("excited") ? Color.yellow : Color.gray)
+                        .background(feeling == "excited" ? Color.yellow : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -201,7 +201,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feelings.contains("powerful") ? Color.yellow : Color.gray)
+                        .background(feeling == "powerful" ? Color.yellow : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -218,7 +218,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feelings.contains("carefree") ? Color.yellow : Color.gray)
+                        .background(feeling == "carefree" ? Color.yellow : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -351,13 +351,7 @@ struct AtmosphereMain2: View {
     }
     
     private func feelingsButtonTapped(feeling: String) {
-        if feelings.contains(feeling) {
-            if let index = feelings.firstIndex(of: feeling) {
-                feelings.remove(at: index)
-            }
-        } else {
-            feelings.append(feeling)
-        }
+        self.feeling = feeling
     }
 }
 
