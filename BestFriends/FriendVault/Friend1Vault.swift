@@ -135,6 +135,13 @@ struct Friend1Vault: View {
                     })
                     
                     Spacer ()
+                    
+                    Button(action: {
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: customMessage, APNToken: friend.APNToken ?? "")
+                    }, label: {
+                        Text("Send Custom Message")
+                            
+                    })
                 }
                 
             }
