@@ -6,7 +6,7 @@
 //
 
 
-import Foundation
+import Combine
 import SwiftUI
 
 
@@ -16,7 +16,7 @@ struct AtmosphereMain2: View {
     let friends: [User]
     
     @State private var feeling: String = ""
-    @State private var reason = ""
+    @State private var customMessage = ""
     
     var body: some View {
         ZStack {
@@ -247,7 +247,7 @@ struct AtmosphereMain2: View {
                             .cornerRadius(15)
                             .foregroundColor(Color.white)
                         
-                        TextField("You can type your reason here ...", text: $reason)
+                        TextField("You can type your reason here ...", text: $customMessage)
                             .font(.system(size: 20))
                             .foregroundColor(Color.black)
                             .padding(.horizontal, 50)
