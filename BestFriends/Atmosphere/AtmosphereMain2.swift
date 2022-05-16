@@ -37,7 +37,7 @@ struct AtmosphereMain2: View {
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("(Select your current mood)")
+                    Text("(What is you mood right now?)")
                         .font(.system(size: 15))
                         .italic()
                         .foregroundColor(Color.white)
@@ -230,7 +230,7 @@ struct AtmosphereMain2: View {
                 VStack {
                 // MARK: End of feeling buttons
                 HStack {
-                    Text("Why?")
+                    Text("What's going on?")
                         .font(.system(size: 30))
                         .fontWeight(.regular)
                         .foregroundColor(Color.white)
@@ -258,7 +258,7 @@ struct AtmosphereMain2: View {
                     
                     
                 HStack {
-                    Text("I want to tell ...")
+                    Text("Do you want to alert your friends ...")
                         .font(.system(size: 30))
                         .fontWeight(.regular)
                         .foregroundColor(Color.white)
