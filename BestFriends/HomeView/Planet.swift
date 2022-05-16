@@ -175,25 +175,10 @@ struct PlanetActionsView: View {
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                            Text("My")
-//                                .foregroundColor(.white)
-//                                .font(.system(size: 15, weight: .bold))
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-//                            Text("Friend")
-//                                .foregroundColor(.white)
-//                                .font(.system(size: 17, weight: .bold))
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-//                            Text("Lockers")
-//                                .foregroundColor(.white)
-//                                .font(.system(size: 17, weight: .bold))
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
                 })
           
-            
             }
             
             

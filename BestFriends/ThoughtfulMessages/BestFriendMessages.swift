@@ -51,34 +51,34 @@ struct BestFriendMessages: View {
                 
                 VStack {
                     
-                    Text("STOP Scrolling")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("quickly see")
-                        .font(.system(size: 15))
-                        .italic()
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    Text("Special \nMessages")
-                        .font(.system(size: 35))
-                        .foregroundColor(.purple)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-               
-                    Text("you 'long-tapped' \nfrom Chat")
-                        .font(.system(size: 16))
-                        .italic()
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-            
+//                    Text("STOP Scrolling")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(.white)
+//                        .fontWeight(.medium)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("quickly see")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .foregroundColor(.white)
+//                        .fontWeight(.medium)
+//                        .multilineTextAlignment(.center)
+//
+//
+//                    Text("Special \nMessages")
+//                        .font(.system(size: 35))
+//                        .foregroundColor(.purple)
+//                        .fontWeight(.medium)
+//                        .multilineTextAlignment(.center)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//                    Text("you 'long-tapped' \nfrom Chat")
+//                        .font(.system(size: 16))
+//                        .italic()
+//                        .foregroundColor(.white)
+//                        .fontWeight(.medium)
+//                        .multilineTextAlignment(.center)
+//
                        
                 }
             }

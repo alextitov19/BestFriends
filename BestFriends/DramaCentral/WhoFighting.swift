@@ -50,21 +50,24 @@ struct WhoFighting: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .gray, friendName: "Drama \nin my \nFriendGroup")
+            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .blue, friendName: "Drama \nin my \nFriendGroup")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
 
 
-        Image(systemName: "heart.fill")
+        Image(systemName: "triangle.fill")
                     .resizable()
-                    .foregroundColor(.pink)
-                    .frame(width: 250, height: 250)
-                    .blur(radius: 2)
+                    .foregroundColor(.gray)
+                    .frame(width: 260, height: 260)
+//                    .blur(radius: 2)
 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
-        
-            VStack {
+
+           VStack {
+               
+            Spacer ()
+                   .frame(height: 100)
                 
               Text("BlueMode")
                             .font(.system(size: 43))
