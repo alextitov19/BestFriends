@@ -42,6 +42,57 @@ struct BestFriendMessages: View {
 //                .scaledToFit()
 //                .frame(width: 700)
             
+            
+            // trying to put in section for PhotoPop
+            
+            ZStack {
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .foregroundColor(ColorManager.purple3)
+                    .frame(width: 350, height: 350)
+                    .blur(radius: 2)
+                    .shadow(color: .orange, radius: 65, x: 40, y: 50)
+                
+                
+                VStack {
+                    
+                    Text("STOP Scrolling")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.medium)
+                        .multilineTextAlignment(.center)
+                    
+                    Text("quickly see")
+                        .font(.system(size: 15))
+                        .italic()
+                        .foregroundColor(.white)
+                        .fontWeight(.medium)
+                        .multilineTextAlignment(.center)
+                    
+                    
+                    Text("Special \nMessages")
+                        .font(.system(size: 35))
+                        .foregroundColor(.purple)
+                        .fontWeight(.medium)
+                        .multilineTextAlignment(.center)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+               
+                    Text("you 'long-tapped' \nfrom Chat")
+                        .font(.system(size: 16))
+                        .italic()
+                        .foregroundColor(.white)
+                        .fontWeight(.medium)
+                        .multilineTextAlignment(.center)
+            
+                       
+                }
+            }
+            
+//
+//            Spacer ()
+//                .frame(height: 100)
+//
+            
             ZStack {
                 if showItems {
                 if planets.count > 0 {
@@ -113,8 +164,10 @@ struct BestFriendMessages: View {
                             .multilineTextAlignment(.center)
                     
                     }
+                     
                 }
-               .onTapGesture {
+              
+            .onTapGesture {
                     withAnimation {
                         self.showItems.toggle()
                     }
