@@ -16,6 +16,7 @@ struct Friend1Vault: View {
     
     let user: User
     let friends: [User]
+//    let friend: User
     
     var body: some View {
         
@@ -27,13 +28,24 @@ struct Friend1Vault: View {
         
          
         VStack {
-                
+            
+//              Just put in 'Image' as a place holder. Need to write code for swipping.
               Image("5swipe")
                 
                 Spacer()
                     .frame(height: 20)
+            
               
-        
+//         code to get friends name at top of page
+            
+//            Text(friend.firstName + " " + friend.lastName)
+//                .font(.system(size: 30))
+//                .foregroundColor(.white)
+
+            
+            
+            
+            
                 
 //                Auto import message from [AtmosphereMain2] page for the below rectangle
               Rectangle()
@@ -54,6 +66,7 @@ struct Friend1Vault: View {
 //                Limit the number of characters you can type in this box. maybe like Twitter 140
                 
 //                Do not know what (    , text: $reason) is???
+            
 //                  TextField("Send Customized Support Message", text: $reason)
 //                  .font(.system(size: 20))
 //                  .foregroundColor(Color.black)
@@ -237,6 +250,32 @@ struct Friend1Vault_Previews : PreviewProvider {
         Friend1Vault(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
     }
 }
+
+
+
+// Code to make Hug icon vibrate phone when it is tapped. But need it to work in a push notification. I believe the coders in India figured it out in UIKit. And there is an app out there that has figured it out.
+//
+//import SwiftUI
+//import AudioToolbox
+//
+//
+//struct ContentView: View {
+//    var body: some View {
+//        VStack{
+//
+//            Button("Press"){
+//                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {   }
+//
+//            }
+//
+//        }
+//
+//    }
+//}
+
+
+
+
 
 
 
