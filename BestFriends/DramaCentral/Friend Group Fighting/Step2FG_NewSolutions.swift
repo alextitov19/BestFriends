@@ -234,7 +234,7 @@ struct Step2FG_NewSolutions: View {
 //                        )}
                     
                     Button(action: {
-                        sessionManager.showHome()
+                        sessionManager.reloadHome()
                     }, label: {
                         Text("HOME")
                             .fontWeight(.thin)

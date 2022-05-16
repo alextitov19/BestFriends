@@ -71,10 +71,22 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.purple3)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("Support \n from \nFriends")
+                            Text("friends")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
+                      
+                            Text("SUPPORTING")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            Text("me")
+                                .foregroundColor(.white)
+                                .font(.system(size: 15, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
+                        
+                        
                         }
                     }
                 })
@@ -94,21 +106,20 @@ struct PlanetActionsView: View {
                         
                         VStack {
                             
-                            Text("Me")
+                            Text("me")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                           
-                            Text("Supporting")
+                      
+                            Text("SUPPORTING")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
-                            Text("Friends")
+                            Text("friends")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                           
+                        
                         }
                     }
                 }
