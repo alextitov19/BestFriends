@@ -115,8 +115,7 @@ struct Friend1Vault: View {
                                 .colorInvert()
                                 .rotationEffect(Angle(degrees: 180))
                         }
-                        
-                        
+                      
                     Spacer()
                         .frame(height: 500)
                 }
@@ -125,7 +124,7 @@ struct Friend1Vault: View {
             VStack {
              
                 
-          ZStack {
+//          ZStack {
               
            
          
@@ -216,7 +215,7 @@ struct Friend1Vault: View {
         }
         
     }
-    }
+    
     private struct RectView: View {
         let user: User
         let friend: User

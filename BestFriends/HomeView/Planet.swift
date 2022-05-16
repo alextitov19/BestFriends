@@ -169,6 +169,11 @@ struct PlanetActionsView: View {
                                 .foregroundColor(.white)
                                 .font(.system(size: 17, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            Text("Mood")
+                                .foregroundColor(.white)
+                                .font(.system(size: 17, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
                 })
