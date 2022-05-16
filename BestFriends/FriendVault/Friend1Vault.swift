@@ -10,7 +10,7 @@
 import Foundation
 
 import SwiftUI
-import AVKit
+
 
 struct Friend1Vault: View {
     
@@ -20,35 +20,20 @@ struct Friend1Vault: View {
     var body: some View {
         
         ZStack {
-            
-//            Image("purpleBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .ignoresSafeArea()
-//                .onAppear {
-//
-                    ColorManager.purple2
+                   ColorManager.purple2
                         .ignoresSafeArea()
-                        .onAppear {
-        //                .onAppear(perform: initLoadData)
-                 
-//                            Image("Friend1Box")
-                            
-                }
-            
-            // Stars animation...
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            VStack {
+                        .onAppear { }
+                   
+        
+         
+        VStack {
                 
               Image("5swipe")
                 
                 Spacer()
                     .frame(height: 20)
               
-                
+        
                 
 //                Auto import message from [AtmosphereMain2] page for the below rectangle
               Rectangle()
@@ -59,7 +44,8 @@ struct Friend1Vault: View {
                 
                 Spacer()
                     .frame(height: 20)
-                
+   
+//                Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
               Rectangle()
                       .frame(width:325, height: 80)
                       .cornerRadius(15)
@@ -104,16 +90,7 @@ struct Friend1Vault: View {
                              .colorInvert()
                              .rotationEffect(Angle(degrees: 180))
                          
-                        Spacer()
-                            .frame(width: 30)
-                        
-                        
-                            Image("bell")
-                                .resizable()
-                                .frame(width: 45, height: 45)
-                                .scaledToFit()
-                                .colorInvert()
-                                .rotationEffect(Angle(degrees: 180))
+                    
                         }
                       
                     Spacer()
@@ -122,28 +99,39 @@ struct Friend1Vault: View {
             
             
             VStack {
-             
                 
-//          ZStack {
-              
-           
-         
-          }
-           
-          Spacer ()
-                    .frame(height: 50)
+                Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                }
+                Text("Are you okay?")
+                    .font(.system(size: 20))
+                    .foregroundColor(.black)
+                    .frame(alignment: .leading)
+                          
+                Divider()
                 
-            //
-            VStack{
+                Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
+                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                }
+                Text("Do you want to talk?")
+                    .font(.system(size: 20))
+                    .foregroundColor(.black)
+                    .frame(alignment: .leading)
+                          
+                Divider()
+                
+//          }
+           
+       
+           Spacer ()
+                .frame(height: 10)
+            
+           VStack {
                 HStack {
-                    }
-                  
-                    VStack {
-                        HStack {
-                            NavigationLink(
-                                destination: BreathInView(),
-                                label: {
-                                    Text("ALL")
+                    NavigationLink(
+                        destination: BreathInView(),
+                            label: {
+                                Text("ALL")
                                         .fontWeight(.bold)
                                         .frame(width: 100, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -178,8 +166,7 @@ struct Friend1Vault: View {
                             }
                         }
                         
-                        Spacer()
-                            .frame(height: 40)
+                      
                         
                      VStack {
                             
@@ -214,7 +201,7 @@ struct Friend1Vault: View {
             
         }
         
-    }
+    
     
     private struct RectView: View {
         let user: User
@@ -239,7 +226,7 @@ struct Friend1Vault: View {
         }
     }
 
-
+}
 
 
 
