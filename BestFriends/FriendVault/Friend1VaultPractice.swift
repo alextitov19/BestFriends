@@ -16,7 +16,7 @@ struct Friend1VaultPractice: View {
     let friend: User
     
     @State private var customMessage = "Custom Message"
-    @State private var defaultMessage: String = ""
+    @State private var defaultMessageButtonTapped: String = ""
     
     var body: some View {
         ZStack {
@@ -54,8 +54,6 @@ struct Friend1VaultPractice: View {
                 Text("Respond instantly via Push Notification")
                     .font(.system(size: 18))
                     .frame(width:325, height: 30)
-//                    .fontWeight(.light)
-//                .multilineTextAlignment(.center)
                    .foregroundColor(Color.white)
                     
                 
@@ -94,7 +92,7 @@ struct Friend1VaultPractice: View {
                 
                 VStack {
                     Button(action: {
-//                       defaultMessageButtonTapped(defaultMessage: "Are you okay?");
+                       defaultMessageButtonTapped(defaultMessage: "Are you okay?");
 
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you okay?", APNToken: friend.APNToken ?? "")
                     }, label: {
@@ -103,8 +101,8 @@ struct Friend1VaultPractice: View {
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
-//                            .background(defaultMessage == "Are you Okay?" ? Color.yellow : Color.gray)
-                            .background(ColorManager.grey1)
+                            .background(defaultMessageButtonTapped == "Are you Okay?" ? Color.yellow : Color.gray)
+//                            .background(ColorManager.grey1)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
@@ -250,14 +248,14 @@ struct Friend1VaultPractice: View {
             })
         }
         
-//        private func defaultMessageButtonTapped(defaultMessage: String) {
-//            self.defaultMessage = defaultMessage
+        private func defaultMessageButtonTapped(defaultMessage: String) {
+            self.defaultMessageButtonTapped = defaultMessageButtonTapped
    
     }
     
 }
 
-
+}
 
 
 
