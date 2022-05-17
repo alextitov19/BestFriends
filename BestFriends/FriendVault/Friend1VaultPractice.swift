@@ -65,7 +65,7 @@ struct Friend1VaultPractice: View {
                     .frame(width:325, height: 100)
                     .foregroundColor(Color.white)
                     .cornerRadius(15)
-                    .onReceive(Just(customMessage)) { _ in limitText(60) }
+                    .onReceive(Just(customMessage)) { _ in limitText(75) }
                 
              
 //                HStack {
