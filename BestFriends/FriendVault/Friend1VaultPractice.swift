@@ -65,7 +65,7 @@ struct Friend1VaultPractice: View {
                     .frame(width:325, height: 100)
                     .foregroundColor(Color.white)
                     .cornerRadius(15)
-                    .onReceive(Just(customMessage)) { _ in limitText(50) }
+                    .onReceive(Just(customMessage)) { _ in limitText(60) }
                 
              
 //                HStack {
@@ -92,7 +92,7 @@ struct Friend1VaultPractice: View {
                 
                 VStack {
                     Button(action: {
-                       defaultMessageButtonTapped(defaultMessage: "Are you okay?");
+//                       defaultMessageButtonTapped(defaultMessage: "Are you okay?");
 
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you okay?", APNToken: friend.APNToken ?? "")
                     }, label: {
@@ -249,7 +249,7 @@ struct Friend1VaultPractice: View {
         }
         
         private func defaultMessageButtonTapped(defaultMessage: String) {
-            self.defaultMessageButtonTapped = defaultMessageButtonTapped
+//            self.defaultMessageButtonTapped = defaultMessageButtonTapped
    
     }
     
