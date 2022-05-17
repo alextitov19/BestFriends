@@ -75,7 +75,7 @@ struct PlanetActionsView: View {
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                      
+                            
                             Text("SUPPORTING")
                                 .foregroundColor(.white)
                                 .font(.system(size: 14, weight: .bold))
@@ -84,9 +84,9 @@ struct PlanetActionsView: View {
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        
-                        
-                        
+                            
+                            
+                            
                         }
                     }
                 })
@@ -95,8 +95,8 @@ struct PlanetActionsView: View {
                     .frame(height: 40)
                 
                 NavigationLink(destination: Friend1VaultPractice(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [], friend: User(id: "", firstName: "fakename", lastName: "fake", APNToken: "", atmosphere: "")),
-                                label: {
-             
+                               label: {
+                    
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
@@ -110,7 +110,7 @@ struct PlanetActionsView: View {
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                      
+                            
                             Text("SUPPORTING")
                                 .foregroundColor(.white)
                                 .font(.system(size: 14, weight: .bold))
@@ -119,13 +119,28 @@ struct PlanetActionsView: View {
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        
+                            
                         }
                     }
                 }
                 )}
             
             VStack {
+                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                               label: {
+                    ZStack {
+                        Circle()
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(ColorManager.purple3)
+                            .shadow(color: .black, radius: 2, x: 0, y: 2)
+                        
+                        Text("HUG")
+                            .foregroundColor(.white)
+                            .font(.system(size: 14, weight: .bold))
+                        
+                    }
+                })
+                
                 Button(action: {
                     sessionManager.showInvite()
                 }) {
@@ -148,7 +163,7 @@ struct PlanetActionsView: View {
                     }
                 }
                 
-           
+                
                 Spacer()
                     .frame(height: 40)
                 
@@ -171,10 +186,10 @@ struct PlanetActionsView: View {
                 
                 Spacer()
                     .frame(height: 40)
-
+                
                 NavigationLink(destination: WhoFighting(),
-                              label: {
-
+                               label: {
+                    
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
@@ -189,13 +204,13 @@ struct PlanetActionsView: View {
                         }
                     }
                 })
-          
+                
             }
             
             
-         
             
-           VStack {
+            
+            VStack {
                 NavigationLink(destination: AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
                                label: {
                     ZStack {
@@ -211,14 +226,14 @@ struct PlanetActionsView: View {
                         }
                     }
                 })
-            
-            
-            Spacer()
+                
+                
+                Spacer()
                     .frame(height: 40)
                 
-     
+                
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                              label: {
+                               label: {
                     ZStack {
                         Circle()
                             .frame(width: 100, height: 100)
@@ -240,13 +255,13 @@ struct PlanetActionsView: View {
                         }
                     }
                 })
-              
+                
             }
- 
+            
         }
-     
+        
     }
-      
+    
 }
 
 

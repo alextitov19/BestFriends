@@ -60,7 +60,7 @@ struct Friend1VaultPractice: View {
                     .font(.system(size: 20))
                     .foregroundColor(Color.black)
                     .padding(.horizontal, 50)
-                    .frame(width:325, height: 100)
+                    .frame(width:375, height: 100)
                     .foregroundColor(Color.white)
                     .cornerRadius(15)
                     .onReceive(Just(customMessage)) { _ in limitText(75) }
