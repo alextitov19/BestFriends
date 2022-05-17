@@ -154,9 +154,9 @@ struct Friend1VaultPractice: View {
                     })
 
                     Button(action: {
-
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "We will figure this out!", APNToken: friend.APNToken ?? "")
                     }, label: {
-                        Text("We will figure this all out.")
+                        Text("We will figure this out.")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
