@@ -16,7 +16,7 @@ struct Friend1VaultPractice: View {
     let friend: User
     
     @State private var customMessage = "Custom Message"
-    @State private var defaultMessageButtonTapped: String = ""
+    @State private var colorChangeTap: String = ""
     
     var body: some View {
         ZStack {
@@ -92,7 +92,7 @@ struct Friend1VaultPractice: View {
                 
                 VStack {
                     Button(action: {
-                      defaultMessageButtonTapped(defaultMessage: "Are you okay?");
+                      defaultMessageButtonTapped(defaultMessage: "Are you okay?")
 
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you okay?", APNToken: friend.APNToken ?? "")
                     }, label: {
@@ -101,7 +101,7 @@ struct Friend1VaultPractice: View {
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
-                            .background(defaultMessageButtonTapped == "Are you Okay?" ? Color.yellow : Color.gray)
+                            .background(colorChangeTap == "Are you okay?" ? Color.yellow : Color.gray)
 //                            .background(ColorManager.grey1)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -247,14 +247,12 @@ struct Friend1VaultPractice: View {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             })
         }
-        
-        private func defaultMessageButtonTapped(defaultMessage: String) {
-            self.defaultMessageButtonTapped = defaultMessageButtonTapped
-   
     }
     
-}
-
+        private func defaultMessageButtonTapped(defaultMessage: String) {
+            self.colorChangeTap = defaultMessage
+     
+        }
 }
 
 
