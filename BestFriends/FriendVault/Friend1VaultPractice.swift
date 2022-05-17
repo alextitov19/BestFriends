@@ -54,7 +54,7 @@ struct Friend1VaultPractice: View {
                 Text("Respond instantly via Push Notification")
                     .font(.system(size: 18))
                     .frame(width:325, height: 30)
-                   .foregroundColor(Color.white)
+                    
                     
                 
                 //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
@@ -101,8 +101,8 @@ struct Friend1VaultPractice: View {
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
-                            .background(colorChangeTap == "Are you okay?" ? Color.yellow : Color.gray)
-//                            .background(ColorManager.grey1)
+                            .background(colorChangeTap == "Are you okay?" ? ColorManager.grey2 : ColorManager.grey1)
+
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
