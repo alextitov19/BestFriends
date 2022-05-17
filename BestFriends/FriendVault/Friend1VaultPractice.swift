@@ -212,6 +212,9 @@ struct Friend1VaultPractice: View {
                         .resizable()
                         .frame(width: 50, height: 50)
                         .scaledToFit()
+                        .onTapGesture {
+                            RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
+                        }
                     
                     Image(systemName: "heart.fill")
                         .resizable()
