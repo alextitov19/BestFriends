@@ -47,8 +47,8 @@ struct MyAccountView: View {
                     
                     Text("Manage My Account")
                         .font(.system(size: 30))
-//                        .offset(x: -25, y: 50)
-                 
+
+                    Spacer()
                 }
                 Spacer()
                     .frame(height: 70)

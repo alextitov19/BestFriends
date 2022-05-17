@@ -57,7 +57,6 @@ struct ReportAbuseView: View {
                         
                         Text("Report Abuse")
                             .font(.system(size: 30))
-                            .offset(x: -25, y: 50)
                         
                         Spacer()
                     }
