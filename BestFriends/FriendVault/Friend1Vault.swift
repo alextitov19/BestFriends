@@ -44,7 +44,7 @@ struct Friend1Vault: View {
                 Rectangle()
                     .frame(width:325, height: 80)
                     .cornerRadius(15)
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(ColorManager.purple3)
 
                 Spacer()
                     .frame(height: 20)
