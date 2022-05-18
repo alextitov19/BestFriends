@@ -202,6 +202,15 @@ struct HomeView: View {
     private func createGroup() {
         // Append self to group, create group
         if newGroupMembers.count > 0 {
+            for newId in newGroupMembers {
+                for f in homeData!.friends {
+                    if f.id == newId {
+                        //MARK: Sending push notification to friend "f"
+                        RestApi.instance.sendPushNotification(title: "Group chat", body: homeData!.user.firstName + " " +  String(homeData!.user.lastName.first!) + " needs to talk", APNToken: f.APNToken ?? "")
+                    }
+                }
+            }
+            
             newGroupMembers.append(homeData!.user.id)
             RestApi.instance.createGroup(members: newGroupMembers).then {response in
                 print("Create Group response: ", response)

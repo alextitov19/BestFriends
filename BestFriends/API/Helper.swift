@@ -140,6 +140,26 @@ class Helper {
         }
     }
     
+    func updateAtmosphere(url: String, atm: Atmosphere) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(atm)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
+    func createMoodLog(url: String, createMoodLog: CreateMoodLog) -> Promise<MoodLog> {
+        let payload = try? JSONEncoder().encode(createMoodLog)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, MoodLog.self).then { moodLog in
+            return Promise<MoodLog>(moodLog)
+        }
+    }
+    
     func getImage(url: String) -> Promise<Data> {
         return callRestApi(url: url, method: .get, ImageData.self).then { response in
             return Promise<Data>(response.image)

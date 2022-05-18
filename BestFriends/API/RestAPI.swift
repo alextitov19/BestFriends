@@ -93,6 +93,15 @@ class RestApi {
         return request
     }
     
+    func updateAtmosphere(atmosphere: Atmosphere) -> Promise<Int> {
+        return helper.updateAtmosphere(url: API_URL + "/atmosphere", atm: atmosphere)
+    }
+    
+    public func createMoodLog(mood: Int, summary: String) -> Promise<MoodLog> {
+        let cml = CreateMoodLog(mood: mood, summary: summary)
+        return helper.createMoodLog(url: API_URL + "/atmosphere/mood", createMoodLog: cml)
+    }
+    
     public func registerAPNToken() {
         Messaging.messaging().token { token, error in
           if let error = error {

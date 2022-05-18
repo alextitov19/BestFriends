@@ -15,16 +15,14 @@ struct AtmosphereMain2: View {
     let user: User
     let friends: [User]
     
-    @State private var feeling: String = ""
-    @State private var customMessage = ""
+    @State private var mood: Int = -1
+    @State private var summary = ""
     
     var body: some View {
         ZStack {
-            
             ColorManager.purple3
                 .ignoresSafeArea()
                 .onAppear()
-            //                .onAppear(perform: initLoadData)
             
             VStack {
                 HStack {
@@ -50,7 +48,7 @@ struct AtmosphereMain2: View {
                 HStack {
                     VStack {
                         Button(action: {
-                            feelingsButtonTapped(feeling: "upset")
+                            mood = 0
                         }) {
                             
                             Text("Upset")
@@ -58,7 +56,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feeling == "upset" ? Color.blue : Color.gray)
+                        .background(mood == 0 ? Color.blue : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -67,7 +65,7 @@ struct AtmosphereMain2: View {
                             .frame(height: 20)
                         
                         Button(action: {
-                            feelingsButtonTapped(feeling: "stressed")
+                            mood = 1
                         }) {
                             
                             Text("Stressed")
@@ -75,7 +73,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feeling == "stressed" ? Color.blue : Color.gray)
+                        .background(mood == 1 ? Color.blue : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -84,7 +82,7 @@ struct AtmosphereMain2: View {
                             .frame(height: 20)
                         
                         Button(action: {
-                            feelingsButtonTapped(feeling: "sad")
+                            mood = 2
                         }) {
                             
                             Text("Sad")
@@ -92,7 +90,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feeling == "sad" ? Color.blue : Color.gray)
+                        .background(mood == 2 ? Color.blue : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -101,7 +99,7 @@ struct AtmosphereMain2: View {
                             .frame(height: 20)
                         
                         Button(action: {
-                            feelingsButtonTapped(feeling: "lonely")
+                            mood = 3
                         }) {
                             
                             Text("Lonely")
@@ -109,7 +107,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feeling == "lonely" ? Color.blue : Color.gray)
+                        .background(mood == 3 ? Color.blue : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -120,7 +118,7 @@ struct AtmosphereMain2: View {
                     
                     VStack {
                         Button(action: {
-                            feelingsButtonTapped(feeling: "okay")
+                            mood = 4
                         }) {
                             
                             Text("Okay")
@@ -128,7 +126,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feeling == "okay" ? Color.green : Color.gray)
+                        .background(mood == 4 ? Color.green : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -137,7 +135,7 @@ struct AtmosphereMain2: View {
                             .frame(height: 20)
                         
                         Button(action: {
-                            feelingsButtonTapped(feeling: "bored")
+                            mood = 5
                         }) {
                             
                             Text("Bored")
@@ -145,7 +143,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feeling == "bored" ? Color.orange : Color.gray)
+                        .background(mood == 5 ? Color.orange : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -159,7 +157,7 @@ struct AtmosphereMain2: View {
                     VStack {
                         
                         Button(action: {
-                            feelingsButtonTapped(feeling: "happy")
+                            mood = 6
                         }) {
                             
                             Text("Happy")
@@ -167,7 +165,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feeling == "happy" ? Color.yellow : Color.gray)
+                        .background(mood == 6 ? Color.yellow : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -176,7 +174,7 @@ struct AtmosphereMain2: View {
                             .frame(height: 20)
                         
                         Button(action: {
-                            feelingsButtonTapped(feeling: "excited")
+                            mood = 7
                         }) {
                             
                             Text("Excited")
@@ -184,7 +182,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feeling == "excited" ? Color.yellow : Color.gray)
+                        .background(mood == 7 ? Color.yellow : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -193,7 +191,7 @@ struct AtmosphereMain2: View {
                             .frame(height: 20)
                         
                         Button(action: {
-                            feelingsButtonTapped(feeling: "powerful")
+                            mood = 8
                         }) {
                             
                             Text("Powerful")
@@ -201,7 +199,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feeling == "powerful" ? Color.yellow : Color.gray)
+                        .background(mood == 8 ? Color.yellow : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -210,7 +208,7 @@ struct AtmosphereMain2: View {
                             .frame(height: 20)
                         
                         Button(action: {
-                            feelingsButtonTapped(feeling: "carefree")
+                            mood = 9
                         }) {
                             
                             Text("Carefree")
@@ -218,7 +216,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(feeling == "carefree" ? Color.yellow : Color.gray)
+                        .background(mood == 9 ? Color.yellow : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -247,11 +245,11 @@ struct AtmosphereMain2: View {
                             .cornerRadius(15)
                             .foregroundColor(Color.white)
                         
-                        TextField("You can type your reason here ...", text: $customMessage)
+                        TextField("You can type your reason here ...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(Color.black)
                             .padding(.horizontal, 50)
-                            .onReceive(Just(customMessage)) { _ in limitText(50) }
+                            .onReceive(Just(summary)) { _ in limitText(50) }
                         
                         
                     }
@@ -309,7 +307,9 @@ struct AtmosphereMain2: View {
                         }
                     }
                     
-                    Button(action: {},
+                    Button(action: {
+                        shareMood()
+                    },
                            label: {
                         Text("SHARE")
                             .fontWeight(.thin)
@@ -326,13 +326,17 @@ struct AtmosphereMain2: View {
                 }
             }
         }
-        
-        
+    }
+    
+    private func shareMood() {
+        RestApi.instance.createMoodLog(mood: mood, summary: summary).then({ moodLog in
+            print("Got mood log: ", moodLog)
+        })
     }
     
     private func limitText(_ upper: Int) {
-        if customMessage.count > upper {
-            customMessage = String(customMessage.prefix(upper))
+        if summary.count > upper {
+            summary = String(summary.prefix(upper))
         }
     }
     
@@ -361,10 +365,6 @@ struct AtmosphereMain2: View {
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             })
         }
-    }
-    
-    private func feelingsButtonTapped(feeling: String) {
-        self.feeling = feeling
     }
 }
 
