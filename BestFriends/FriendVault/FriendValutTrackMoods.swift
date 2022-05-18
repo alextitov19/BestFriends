@@ -37,7 +37,7 @@ struct FriendVaultTrackMoods: View {
                     .cornerRadius(15)
                     .foregroundColor(Color.gray)
                 
-                
+                Image("My feelings-1")
          
                     Spacer()
                         .frame(height: 60)
