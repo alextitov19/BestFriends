@@ -23,9 +23,8 @@ struct FriendVaultTrackMoods: View {
                
                 
                 Text("Tracking My Moods")
-                    .font(.system(size: 25))
+                    .font(.system(size: 40))
                     .foregroundColor(.white)
-                    .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                  
@@ -33,11 +32,13 @@ struct FriendVaultTrackMoods: View {
                     .frame(height: 30)
                  
                 Rectangle()
-                    .frame(width:325, height: 80)
+                    .frame(width:325, height: 150)
                     .cornerRadius(15)
-                    .foregroundColor(Color.gray)
+                   .foregroundColor(ColorManager.purple3)
                 
-                Image("My feelings-1")
+
+                
+                Image("My feeling-1")
          
                     Spacer()
                         .frame(height: 60)
