@@ -18,10 +18,7 @@ struct FriendVaultTrackMoods: View {
             ColorManager.purple2
                 .ignoresSafeArea()
             
-            VStack {
-                
-                
-                
+            VStack {  
                 Text("Tracking My Moods")
                     .font(.system(size: 40))
                     .foregroundColor(.white)
