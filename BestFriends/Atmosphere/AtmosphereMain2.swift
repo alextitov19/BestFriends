@@ -353,9 +353,9 @@ struct AtmosphereMain2: View {
                         shareMood()
                     },
                            label: {
-                        Text("SHARE with Friends")
+                        Text("SHARE")
                             .fontWeight(.thin)
-                            .frame(width: 250, height: 40)
+                            .frame(width: 100, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)
@@ -394,6 +394,16 @@ struct AtmosphereMain2: View {
             RestApi.instance.updateAtmosphere(atmosphere: atm).then({ response in
                 if response == 200 {
                     print("Successfully updated atmosphere")
+                    for i in sharedWith {
+                        for f in friends {
+                            if i == f.id {
+                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Temperament!", APNToken: f.APNToken ?? "")
+                            }
+                        }
+                        mood = -1
+                        summary = ""
+                        sharedWith = []
+                    }
                 } else {
                     print("Failed to update atmosphere")
                 }
