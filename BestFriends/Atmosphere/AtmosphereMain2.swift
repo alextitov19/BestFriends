@@ -13,6 +13,7 @@ import SwiftUI
 struct AtmosphereMain2: View {
     
     let user: User
+    let atmosphere: Atmosphere
     let friends: [User]
     
     @State private var mood: Int = -1
@@ -336,7 +337,7 @@ struct AtmosphereMain2: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-             
+                    
                     Spacer()
                 }
             }
@@ -346,6 +347,16 @@ struct AtmosphereMain2: View {
     private func shareMood() {
         RestApi.instance.createMoodLog(mood: mood, summary: summary).then({ moodLog in
             print("Got mood log: ", moodLog)
+            var m = atmosphere.moodLogs ?? []
+            m.append(moodLog.id)
+            let atm = Atmosphere(id: atmosphere.id, planet: atmosphere.planet, mood: mood, moodLogs: m)
+            RestApi.instance.updateAtmosphere(atmosphere: atm).then({ response in
+                if response == 200 {
+                    print("Successfully updated atmosphere")
+                } else {
+                    print("Failed to update atmosphere")
+                }
+            })
         })
     }
     
@@ -392,7 +403,7 @@ struct AtmosphereMain2: View {
 struct AtmosphereMain2_Previews : PreviewProvider {
     
     static var previews: some View {
-        AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
+        AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), atmosphere: Atmosphere(id: "", planet: 0, mood: 0, moodLogs: []), friends: [])
         
     }
 }

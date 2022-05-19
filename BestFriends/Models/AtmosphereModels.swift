@@ -11,7 +11,7 @@ struct Atmosphere: Codable {
     let id: String
     let planet: Int
     let mood: Int
-    let moodLogs: [String] = []
+    let moodLogs: [String]?
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case planet = "planet"
