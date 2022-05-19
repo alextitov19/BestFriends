@@ -18,6 +18,7 @@ struct AtmosphereMain2: View {
     
     @State private var mood: Int = -1
     @State private var summary = ""
+    @State private var sharedWith: [String] = []
     
     var body: some View {
         ZStack {
@@ -287,24 +288,64 @@ struct AtmosphereMain2: View {
                         }
                         if friends.count > 0 {
                             RectView(user: user, friend: friends[0])
+                                .onTapGesture(perform: {
+                                    if sharedWith.contains(friends[0].id) {
+                                        sharedWith = sharedWith.filter { $0 != friends[0].id }
+                                    } else {
+                                        sharedWith.append(friends[0].id)
+                                    }
+                                    print(sharedWith)
+                                })
                         }
                         
                         if friends.count > 1 {
                             RectView(user: user, friend: friends[1])
+                                .onTapGesture(perform: {
+                                    if sharedWith.contains(friends[1].id) {
+                                        sharedWith = sharedWith.filter { $0 != friends[1].id }
+                                    } else {
+                                        sharedWith.append(friends[1].id)
+                                    }
+                                    print(sharedWith)
+                                })
                         }
                     }
                     
                     HStack {
                         if friends.count > 2 {
                             RectView(user: user, friend: friends[2])
+                                .onTapGesture(perform: {
+                                    if sharedWith.contains(friends[2].id) {
+                                        sharedWith = sharedWith.filter { $0 != friends[2].id }
+                                    } else {
+                                        sharedWith.append(friends[2].id)
+                                    }
+                                    print(sharedWith)
+                                })
                         }
                         
                         if friends.count > 3 {
                             RectView(user: user, friend: friends[3])
+                                .onTapGesture(perform: {
+                                    if sharedWith.contains(friends[3].id) {
+                                        sharedWith = sharedWith.filter { $0 != friends[3].id }
+                                    } else {
+                                        sharedWith.append(friends[3].id)
+                                    }
+                                    print(sharedWith)
+                                })
                         }
                         
                         if friends.count > 4 {
                             RectView(user: user, friend: friends[4])
+                                .onTapGesture(perform: {
+                                    if sharedWith.contains(friends[4].id) {
+                                        sharedWith = sharedWith.filter { $0 != friends[4].id }
+                                    } else {
+                                        sharedWith.append(friends[4].id)
+                                    }
+                                    print(sharedWith)
+                                })
                         }
                     }
                     
@@ -345,7 +386,7 @@ struct AtmosphereMain2: View {
     }
     
     private func shareMood() {
-        RestApi.instance.createMoodLog(mood: mood, summary: summary).then({ moodLog in
+        RestApi.instance.createMoodLog(mood: mood, summary: summary, friends: sharedWith).then({ moodLog in
             print("Got mood log: ", moodLog)
             var m = atmosphere.moodLogs ?? []
             m.append(moodLog.id)
@@ -373,26 +414,18 @@ struct AtmosphereMain2: View {
         let friend: User
         
         var body: some View {
-            Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Temperament!", APNToken: friend.APNToken ?? "").then { response in
-                    print("Got send APN repsonse: ", response)
-                    //                RestApi.instance.sendPushNotification(title: "BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken ?? "").then { response in
-                    //                    print("Got send APN repsonse: ", response)
-                }
-            },
-                   label: {
-                Text(friend.firstName + " " + String(friend.lastName.first!))
-                    .fontWeight(.bold)
-                    .frame(width: 100, height: 30)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 10))
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-            })
+            Text(friend.firstName + " " + String(friend.lastName.first!))
+                .fontWeight(.bold)
+                .frame(width: 100, height: 30)
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                .font(.system(size: 10))
+                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                .cornerRadius(25)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
     }
 }
+
 
 
 
