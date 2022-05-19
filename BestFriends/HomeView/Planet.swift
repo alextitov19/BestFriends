@@ -85,7 +85,7 @@ struct PlanetActionsView: View {
                             .foregroundColor(ColorManager.purple3)
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         VStack {
-                            Text("friends")
+                            Text("freinds")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -120,16 +120,16 @@ struct PlanetActionsView: View {
                         
                         VStack {
                             
-                            Text("me")
+                            Text("my")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                       
-                            Text("SUPPORTING")
+                            Text("friends")
                                 .foregroundColor(.white)
                                 .font(.system(size: 14, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            Text("friends")
+                            Text("mood")
                                 .foregroundColor(.white)
                                 .font(.system(size: 15, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -175,7 +175,7 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
-                            Text("Settngs")
+                            Text("Settings")
                                 .foregroundColor(.white)
                                 .font(.system(size: 13, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
