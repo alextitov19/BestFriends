@@ -24,11 +24,13 @@ struct MoodLog: Codable {
     let id: String
     let mood: Int
     let summary: String
+    let sharedWith: [String]
     let createdOn: Int64
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case mood = "mood"
         case summary = "summary"
+        case sharedWith = "shared_with"
         case createdOn = "created_on"
     }
 }
@@ -36,8 +38,10 @@ struct MoodLog: Codable {
 struct CreateMoodLog: Codable {
     let mood: Int
     let summary: String
+    let sharedWith: [String]
     enum CodingKeys: String, CodingKey {
         case mood = "mood"
         case summary = "summary"
+        case sharedWith = "shared_with"
     }
 }

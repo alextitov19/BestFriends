@@ -98,7 +98,7 @@ class RestApi {
     }
     
     public func createMoodLog(mood: Int, summary: String) -> Promise<MoodLog> {
-        let cml = CreateMoodLog(mood: mood, summary: summary)
+        let cml = CreateMoodLog(mood: mood, summary: summary, sharedWith: [])
         return helper.createMoodLog(url: API_URL + "/atmosphere/mood", createMoodLog: cml)
     }
     
