@@ -287,7 +287,7 @@ struct AtmosphereMain2: View {
                             })
                         }
                         if friends.count > 0 {
-                            RectView(user: user, friend: friends[0])
+                            RectView(user: user, friend: friends[0], color: sharedWith.contains(friends[0].id) ? ColorManager.purple3 : ColorManager.purple5)
                                 .onTapGesture(perform: {
                                     if sharedWith.contains(friends[0].id) {
                                         sharedWith = sharedWith.filter { $0 != friends[0].id }
@@ -299,7 +299,7 @@ struct AtmosphereMain2: View {
                         }
                         
                         if friends.count > 1 {
-                            RectView(user: user, friend: friends[1])
+                            RectView(user: user, friend: friends[1], color: sharedWith.contains(friends[1].id) ? ColorManager.purple3 : ColorManager.purple5)
                                 .onTapGesture(perform: {
                                     if sharedWith.contains(friends[1].id) {
                                         sharedWith = sharedWith.filter { $0 != friends[1].id }
@@ -313,7 +313,7 @@ struct AtmosphereMain2: View {
                     
                     HStack {
                         if friends.count > 2 {
-                            RectView(user: user, friend: friends[2])
+                            RectView(user: user, friend: friends[2], color: sharedWith.contains(friends[2].id) ? ColorManager.purple3 : ColorManager.purple5)
                                 .onTapGesture(perform: {
                                     if sharedWith.contains(friends[2].id) {
                                         sharedWith = sharedWith.filter { $0 != friends[2].id }
@@ -325,7 +325,7 @@ struct AtmosphereMain2: View {
                         }
                         
                         if friends.count > 3 {
-                            RectView(user: user, friend: friends[3])
+                            RectView(user: user, friend: friends[3], color: sharedWith.contains(friends[3].id) ? ColorManager.purple3 : ColorManager.purple5)
                                 .onTapGesture(perform: {
                                     if sharedWith.contains(friends[3].id) {
                                         sharedWith = sharedWith.filter { $0 != friends[3].id }
@@ -337,7 +337,7 @@ struct AtmosphereMain2: View {
                         }
                         
                         if friends.count > 4 {
-                            RectView(user: user, friend: friends[4])
+                            RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
                                 .onTapGesture(perform: {
                                     if sharedWith.contains(friends[4].id) {
                                         sharedWith = sharedWith.filter { $0 != friends[4].id }
@@ -412,6 +412,7 @@ struct AtmosphereMain2: View {
     private struct RectView: View {
         let user: User
         let friend: User
+        let color: Color
         
         var body: some View {
             Text(friend.firstName + " " + String(friend.lastName.first!))
@@ -419,7 +420,7 @@ struct AtmosphereMain2: View {
                 .frame(width: 100, height: 30)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 .font(.system(size: 10))
-                .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                .background(color)
                 .cornerRadius(25)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
