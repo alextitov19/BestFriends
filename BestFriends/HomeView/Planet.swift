@@ -61,6 +61,20 @@ struct PlanetActionsView: View {
     let friendAtmospheres: [Atmosphere]
     
     var body: some View {
+        
+        VStack {
+//             MARK: need Setting icon. Takes to OurMission page
+            NavigationLink(destination: OurMission(),
+                           label: {
+            Image("Exclamation Mark")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .scaledToFit()
+                .colorInvert()
+                .rotationEffect(Angle(degrees: 180))
+//        }
+        
+        
         HStack {
             VStack {
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
@@ -161,7 +175,7 @@ struct PlanetActionsView: View {
                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                         
                         VStack {
-                            Text("My Account \nSettings \nn'\nApp Demo")
+                            Text("Settngs")
                                 .foregroundColor(.white)
                                 .font(.system(size: 13, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -247,10 +261,10 @@ struct PlanetActionsView: View {
      
     }
       
+)}
+
 }
-
-
-
+}
 
 //
 //
