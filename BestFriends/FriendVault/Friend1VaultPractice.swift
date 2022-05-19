@@ -43,10 +43,16 @@ struct Friend1VaultPractice: View {
                 }
                 
                 //TODO: Auto import message from [AtmosphereMain2] page for the below rectangle
+//                Rectangle()
+//                    .frame(width:325, height: 80)
+//                    .cornerRadius(15)
+//                    .foregroundColor(Color.gray)
+                
                 Rectangle()
                     .frame(width:325, height: 80)
                     .cornerRadius(15)
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(ColorManager.grey1)
+
                 
                 Spacer()
                     .frame(height: 20)
@@ -60,34 +66,12 @@ struct Friend1VaultPractice: View {
                     .font(.system(size: 20))
                     .foregroundColor(Color.black)
                     .padding(.horizontal, 50)
-                    .frame(width:375, height: 100)
-                    .foregroundColor(Color.white)
+                    .frame(width:310, height: 100)
+                    .background(ColorManager.purple3)
                     .cornerRadius(15)
                     .onReceive(Just(customMessage)) { _ in limitText(75) }
                 
-                
-                //                HStack {
-                //                    Image("Hug")
-                //                        .resizable()
-                //                        .frame(width: 50, height: 50)
-                //                        .scaledToFit()
-                //
-                //                    Image(systemName: "heart.fill")
-                //                        .resizable()
-                //                        .foregroundColor(.pink)
-                //                        .frame(width: 40, height: 40)
-                //                        .blur(radius: 2)
-                //                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                //                        .padding(.horizontal, 30)
-                //
-                //                    Image("bell")
-                //                        .resizable()
-                //                        .frame(width: 45, height: 45)
-                //                        .scaledToFit()
-                //                        .colorInvert()
-                //                }
-                
-                
+             
                 VStack {
                     Button(action: {
                         let m = customMessage

@@ -67,27 +67,7 @@ struct Friend1Vault: View {
                     .cornerRadius(15)
                     .onReceive(Just(customMessage)) { _ in limitText(50) }
                 
-             
-//                HStack {
-//                    Image("Hug")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
-//                        .scaledToFit()
-//
-//                    Image(systemName: "heart.fill")
-//                        .resizable()
-//                        .foregroundColor(.pink)
-//                        .frame(width: 40, height: 40)
-//                        .blur(radius: 2)
-//                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
-//                        .padding(.horizontal, 30)
-//
-//                    Image("bell")
-//                        .resizable()
-//                        .frame(width: 45, height: 45)
-//                        .scaledToFit()
-//                        .colorInvert()
-//                }
+    
             
                 
                 VStack {
