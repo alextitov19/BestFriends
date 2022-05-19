@@ -43,7 +43,7 @@ struct ChatView: View {
                     }
                 
                 // MARK: Main scroll view
-                ScrollView(.vertical) {
+                ScrollView(.vertical, showsIndicators: false) {
                     ForEach(messages, id: \.id) { message in
                         ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
                     }

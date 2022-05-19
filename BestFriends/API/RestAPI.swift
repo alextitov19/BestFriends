@@ -102,6 +102,10 @@ class RestApi {
         return helper.createMoodLog(url: API_URL + "/atmosphere/mood", createMoodLog: cml)
     }
     
+    public func getMoodLog(id: String) -> Promise<MoodLog> {
+        return helper.callRestApi(url: API_URL + "/atmosphere/mood/" + id, method: .get, MoodLog.self)
+    }
+    
     public func registerAPNToken() {
         Messaging.messaging().token { token, error in
           if let error = error {

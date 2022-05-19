@@ -367,7 +367,7 @@ struct AtmosphereMain2: View {
                     
                     
                     NavigationLink(
-                        destination: FriendVaultTrackMoods(),
+                        destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
                         label: {
                             Text("Mood Tracker")
                                 .fontWeight(.thin)

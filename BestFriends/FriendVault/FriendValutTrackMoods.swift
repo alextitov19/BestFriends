@@ -12,60 +12,103 @@ import SwiftUI
 
 struct FriendVaultTrackMoods: View {
     
+    let user: User
+    let atmosphere: Atmosphere
+    let friends: [User]
+    
+    @State private var moodLogs: [MoodLog] = []
+    
     var body: some View {
         ZStack {
-            
             ColorManager.purple2
                 .ignoresSafeArea()
+                .onAppear(perform: loadData)
             
-            VStack {  
+            VStack {
                 Text("Tracking My Moods")
-                    .font(.system(size: 40))
+                    .font(.system(size: 40, weight: .light))
                     .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 30)
                 
-                Rectangle()
-                    .frame(width:325, height: 150)
-                    .cornerRadius(15)
-                    .foregroundColor(ColorManager.purple3)
-                
-                
-                
-                Image("My feeling-1")
-                
-                Spacer()
-                    .frame(height: 60)
-                
-                NavigationLink(
-                    destination: DramaCentralView(),
-                    label: {
-                        Text("NEXT")
-                            .fontWeight(.thin)
-                            .frame(width: 100, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                
-                
+                ScrollView(.vertical, showsIndicators: false) {
+                    ForEach(moodLogs, id: \.id) { moodLog in
+                        ZStack {
+                            Color(.white)
+                                .cornerRadius(25)
+                            
+                            VStack{
+                                //MARK: Date and time
+                                HStack {
+                                    Text(getDateString(date: Date(timeIntervalSince1970: TimeInterval(moodLog.createdOn))))
+                                    
+                                    Spacer()
+                                }
+                                .padding()
+                                
+                                //MARK: Mood Log sumary
+                                HStack {
+                                    Text(moodLog.summary)
+                                    
+                                    Spacer()
+                                }
+                                .padding(.horizontal)
+                                
+                                CustomDivider(color: ColorManager.grey3)
+                                    .padding(.horizontal)
+                                
+                                //MARK: Friends you shared with
+                                HStack {
+                                    ForEach(friends, id: \.id) { friend in
+                                        if moodLog.sharedWith.contains(friend.id) {
+                                            ZStack {
+                                                ColorManager.purple3
+                                                    .frame(width: 50, height: 50)
+                                                    .cornerRadius(25)
+                                                
+                                                Text("\(String(friend.firstName.first!)) \(String(friend.lastName.first!))")
+                                                    .foregroundColor(.white)
+                                                    .fontWeight(.bold)
+                                            }
+                                        }
+                                    }
+                                    
+                                    Spacer()
+                                }
+                                .padding()
+                            }
+                        }
+                        .frame(width: 300, height: 200)
+                        .padding(.vertical)
+                    }
+                }
             }
         }
-        
+    }
+    
+    private func loadData() {
+        for id in atmosphere.moodLogs ?? [] {
+            RestApi.instance.getMoodLog(id: id).then({ ml in
+                self.moodLogs.append(ml)
+                print("Added mood log: ", ml.summary)
+            })
+        }
+    }
+    
+    private func getDateString(date: Date) -> String {
+        let formatter3 = DateFormatter()
+        formatter3.dateFormat = "HH:mm E, d MMM y"
+        return formatter3.string(from: date)
     }
 }
 
 
 
-struct FriendVaultTrackMoods_Previews : PreviewProvider {
-    static var previews: some View {
-        FriendVaultTrackMoods()
-    }
-}
+//struct FriendVaultTrackMoods_Previews : PreviewProvider {
+//    static var previews: some View {
+//        FriendVaultTrackMoods()
+//    }
+//}
 
 
