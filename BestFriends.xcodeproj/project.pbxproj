@@ -570,12 +570,12 @@
 		CF3B65F128075F3B0003A714 /* FriendVault */ = {
 			isa = PBXGroup;
 			children = (
-				CFD046902831327F00BF0B02 /* Friend1Vault.swift */,
-				CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */,
 				CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */,
+				CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */,
 				CFE194632812973600ED5718 /* MasterFriendVault.swift */,
 				CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */,
 				CFE1946828129D9600ED5718 /* FriendQualities.swift */,
+				CFD046902831327F00BF0B02 /* Friend1Vault.swift */,
 			);
 			path = FriendVault;
 			sourceTree = "<group>";
