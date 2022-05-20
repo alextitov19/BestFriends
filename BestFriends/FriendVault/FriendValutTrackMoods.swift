@@ -36,16 +36,21 @@ struct FriendVaultTrackMoods: View {
                     ForEach(moodLogs, id: \.id) { moodLog in
                         ZStack {
                             if moodLog.mood < 4 {
-                            Color(.blue)
+//                            Color(.blue)
+                                ColorManager.pmbc_blue
+                                
                                 .cornerRadius(25)
                             } else if moodLog.mood == 4 {
-                                Color(.green)
+//                                Color(.green)
+                                ColorManager.pmbc_green
                                     .cornerRadius(25)
                             } else if moodLog.mood == 5 {
-                                Color(.orange)
+//                                Color(.orange)
+                                ColorManager.orange2
                                     .cornerRadius(25)
                             } else {
-                                Color(.yellow)
+                               Color(.yellow)
+//                                ColorManager.yellow
                                     .cornerRadius(25)
                             }
                             

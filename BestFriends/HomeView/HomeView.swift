@@ -151,7 +151,7 @@ struct HomeView: View {
                         Button(action: {
                             createGroup()
                         }, label: {
-                            Text("Chat Invite")
+                            Text("Fix BlueMode")
                                 .frame(width: 130, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
