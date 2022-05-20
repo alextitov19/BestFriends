@@ -77,7 +77,7 @@ struct PlanetActionsView: View {
             //
             HStack {
                 VStack {
-                    NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                    NavigationLink(destination: HideoutsView(),
                                    label: {
                         ZStack {
                             Circle()
@@ -105,8 +105,10 @@ struct PlanetActionsView: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    NavigationLink(destination: EmptyView(),
-                                   label: {
+//                    NavigationLink(destination: BestFriendMessages(),
+                    
+                    NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                label: {
                         
                         ZStack {
                             Circle()
@@ -123,7 +125,7 @@ struct PlanetActionsView: View {
                                 //                                .font(.system(size: 15, weight: .bold))
                                 //                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 //
-                                Text("Empty")
+                                Text("old \nSpecial \nMessages")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
