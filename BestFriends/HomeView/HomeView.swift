@@ -136,7 +136,15 @@ struct HomeView: View {
                                 .cornerRadius(15)
                         })
 //                        .padding()
-                        
+                       
+                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
+                                        label: {
+                            Text("FriendVault")
+                                .frame(width: 130, height: 40)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                        })
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
                             Text("FriendVault")
@@ -147,26 +155,19 @@ struct HomeView: View {
                         })
                     
                     }
-                    if newGroupMembers.count > 0 && !focusPlanet {
-                        Button(action: {
-                            createGroup()
-                        }, label: {
-                            Text("Fix BlueMode")
-                                .frame(width: 130, height: 40)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                        })
-                    }
-                    
-                    
-                    
-                    
+
                 }
                 
                 if homeData?.groups != nil {
                     ChatGroupsView(groups: homeData?.groups ?? [])
                         .environmentObject(sessionManager)
+                    
+//  MARK: When toggle between Home view and Planet the [Atmosphere] and [FiendValult] buttons show up on Plant view and do not go away on Home view when the fiend's planet is tapped.
+//     MARK: Can not get the BlueMode to link to BlueMode page
+                    
+//                    if selectedPlanet != nil {
+//                        AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends)
+//
                 }
             }
         }
