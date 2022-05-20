@@ -47,7 +47,11 @@ struct HomeView: View {
                         if planets.count > 0 && !focusPlanet {
                             planets[0]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[0].user.id)
-                                    selectedPlanet = planets[0]
+                                    if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[0].user.id {
+                                        selectedPlanet = nil
+                                    } else {
+                                        selectedPlanet = planets[0]
+                                    }
                                 })
                         }
                         
@@ -57,7 +61,11 @@ struct HomeView: View {
                             
                             planets[1]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[1].user.id)
-                                    selectedPlanet = planets[1]
+                                    if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[1].user.id {
+                                        selectedPlanet = nil
+                                    } else {
+                                        selectedPlanet = planets[1]
+                                    }
                                 })
                         }
                     }
@@ -88,7 +96,11 @@ struct HomeView: View {
                         if planets.count > 2 && !focusPlanet {
                             planets[2]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)
-                                    selectedPlanet = planets[2]
+                                    if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[2].user.id {
+                                        selectedPlanet = nil
+                                    } else {
+                                        selectedPlanet = planets[2]
+                                    }
 
                                 })
                         }
@@ -99,7 +111,11 @@ struct HomeView: View {
                             
                             planets[3]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[3].user.id)
-                                    selectedPlanet = planets[3]
+                                    if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[3].user.id {
+                                        selectedPlanet = nil
+                                    } else {
+                                        selectedPlanet = planets[3]
+                                    }
 
                                 })
                         }
@@ -109,7 +125,11 @@ struct HomeView: View {
                     if planets.count > 4 && !focusPlanet {
                         planets[4]
                             .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)
-                                selectedPlanet = planets[4]
+                                if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[4].user.id {
+                                    selectedPlanet = nil
+                                } else {
+                                    selectedPlanet = planets[4]
+                                }
                             })
 //                            .padding()
                     }
