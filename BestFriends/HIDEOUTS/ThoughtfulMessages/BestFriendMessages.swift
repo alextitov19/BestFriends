@@ -38,7 +38,7 @@ struct BestFriendMessages: View {
             AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-       
+                .onAppear(perform: createPlanets)
 // trying to put in section for PhotoPop
             
             ZStack {
