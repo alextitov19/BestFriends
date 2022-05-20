@@ -10,26 +10,24 @@ import Combine
 
 
 struct Friend1VaultPractice: View {
-    
+    @EnvironmentObject var sessionManager: SessionManager
+
     let user: User
-    let friends: [User]
     let friend: User
+    let friendAtmosphere: Atmosphere
     
     @State private var customMessage = "Custom Message"
     @State private var colorChangeTap: String = ""
+    
+    @State private var mostRecentMoodLog: MoodLog?
     
     var body: some View {
         ZStack {
             ColorManager.purple2
                 .ignoresSafeArea()
+                .onAppear(perform: loadData)
             
             VStack {
-                //TODO: Just put in 'Image' as a place holder. Need to write code for swipping.
-                Image("5swipe")
-                
-                Spacer()
-                    .frame(height: 20)
-                
                 //MARK: code to get friends name at top of page
                 HStack {
                     Spacer()
@@ -43,16 +41,43 @@ struct Friend1VaultPractice: View {
                 }
                 
                 //TODO: Auto import message from [AtmosphereMain2] page for the below rectangle
-//                Rectangle()
-//                    .frame(width:325, height: 80)
-//                    .cornerRadius(15)
-//                    .foregroundColor(Color.gray)
-                
-                Rectangle()
-                    .frame(width:325, height: 80)
-                    .cornerRadius(15)
-                    .foregroundColor(ColorManager.grey1)
-
+                if mostRecentMoodLog != nil {
+                    ZStack {
+                        if mostRecentMoodLog!.mood < 4 {
+                            Color(.blue)
+                                .cornerRadius(25)
+                        } else if mostRecentMoodLog!.mood == 4 {
+                            Color(.green)
+                                .cornerRadius(25)
+                        } else if mostRecentMoodLog!.mood == 5 {
+                            Color(.orange)
+                                .cornerRadius(25)
+                        } else {
+                            Color(.yellow)
+                                .cornerRadius(25)
+                        }
+                        
+                        VStack{
+                            //MARK: Date and time
+                            HStack {
+                                Text(getDateString(date: Date(timeIntervalSince1970: TimeInterval(mostRecentMoodLog!.createdOn))))
+                                
+                                Spacer()
+                            }
+                            .padding()
+                            
+                            //MARK: Mood Log sumary
+                            HStack {
+                                Text(mostRecentMoodLog!.summary)
+                                
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                        }
+                    }
+                    .frame(width: 300, height: 150)
+                    .padding(.vertical)
+                }
                 
                 Spacer()
                     .frame(height: 20)
@@ -71,12 +96,10 @@ struct Friend1VaultPractice: View {
                     .cornerRadius(15)
                     .onReceive(Just(customMessage)) { _ in limitText(75) }
                 
-             
+                
                 VStack {
                     Button(action: {
-                        let m = customMessage
-                        customMessage = ""
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: m, APNToken: friend.APNToken ?? "")
+                        sendMessage()
                     }, label: {
                         Text("Send Custom Message to Chat")
                             .fontWeight(.thin)
@@ -129,7 +152,7 @@ struct Friend1VaultPractice: View {
                     
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "C")
-
+                        
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulation, you did it!", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("Congradulations, you did it!")
@@ -149,7 +172,7 @@ struct Friend1VaultPractice: View {
                     }
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "D")
-
+                        
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Good Luck - you got this!", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("Good luck, you got this!")
@@ -164,7 +187,7 @@ struct Friend1VaultPractice: View {
                     
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "E")
-
+                        
                         RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "We will figure this out!", APNToken: friend.APNToken ?? "")
                     }, label: {
                         Text("We will figure this out.")
@@ -177,7 +200,7 @@ struct Friend1VaultPractice: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)                    })
                     
                     
-                   
+                    
                     
                     
                     Spacer ()
@@ -222,6 +245,28 @@ struct Friend1VaultPractice: View {
         
     }
     
+    private func loadData() {
+        for id in friendAtmosphere.moodLogs ?? [] {
+            RestApi.instance.getMoodLog(id: id).then({ moodLog in
+                if moodLog.sharedWith.contains(user.id) {
+                    if mostRecentMoodLog == nil {
+                        mostRecentMoodLog = moodLog
+                    } else {
+                        if mostRecentMoodLog!.createdOn < moodLog.createdOn {
+                            mostRecentMoodLog = moodLog
+                        }
+                    }
+                }
+            })
+        }
+    }
+    
+    private func sendMessage() {
+        RestApi.instance.createGroup(members: [friend.id, user.id]).then({ group in
+            sessionManager.showChat(user: user, group: group)
+        })
+    }
+    
     private func limitText(_ upper: Int) {
         if customMessage.count > upper {
             customMessage = String(customMessage.prefix(upper))
@@ -255,12 +300,18 @@ struct Friend1VaultPractice: View {
         self.colorChangeTap = defaultMessage
         
     }
-}
-
-
-
-struct Friend1VaultPractice_Previews : PreviewProvider {
-    static var previews: some View {
-        Friend1VaultPractice(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [], friend: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""))
+    
+    private func getDateString(date: Date) -> String {
+        let formatter3 = DateFormatter()
+        formatter3.dateFormat = "HH:mm E, d MMM y"
+        return formatter3.string(from: date)
     }
 }
+
+
+
+//struct Friend1VaultPractice_Previews : PreviewProvider {
+//    static var previews: some View {
+//        Friend1VaultPractice(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [], friend: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""))
+//    }
+//}

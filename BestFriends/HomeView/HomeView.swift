@@ -15,6 +15,8 @@ struct HomeView: View {
     
     @State private var planets: [Planet] = []
     
+    @State private var selectedPlanet: Planet?
+    
     @State private var focusPlanet = false
     
     @State private var newGroupMembers: [String] = []
@@ -44,7 +46,9 @@ struct HomeView: View {
                     HStack {
                         if planets.count > 0 && !focusPlanet {
                             planets[0]
-                                .onTapGesture(perform: { friendPlanetTapped(id: planets[0].user.id)})
+                                .onTapGesture(perform: { friendPlanetTapped(id: planets[0].user.id)
+                                    selectedPlanet = planets[0]
+                                })
                         }
                         
                         if planets.count > 1 && !focusPlanet {
@@ -52,7 +56,9 @@ struct HomeView: View {
                                 .frame(width: 80)
                             
                             planets[1]
-                                .onTapGesture(perform: { friendPlanetTapped(id: planets[1].user.id)})
+                                .onTapGesture(perform: { friendPlanetTapped(id: planets[1].user.id)
+                                    selectedPlanet = planets[1]
+                                })
                         }
                     }
                     // Main planet
@@ -81,7 +87,10 @@ struct HomeView: View {
                     HStack {
                         if planets.count > 2 && !focusPlanet {
                             planets[2]
-                                .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)})
+                                .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)
+                                    selectedPlanet = planets[2]
+
+                                })
                         }
                         
                         if planets.count > 3 && !focusPlanet {
@@ -89,14 +98,19 @@ struct HomeView: View {
                                 .frame(width: 80)
                             
                             planets[3]
-                                .onTapGesture(perform: { friendPlanetTapped(id: planets[3].user.id)})
+                                .onTapGesture(perform: { friendPlanetTapped(id: planets[3].user.id)
+                                    selectedPlanet = planets[3]
+
+                                })
                         }
                     }
                     
                     // Bottom planet
                     if planets.count > 4 && !focusPlanet {
                         planets[4]
-                            .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)})
+                            .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)
+                                selectedPlanet = planets[4]
+                            })
                             .padding()
                     }
                     
@@ -105,6 +119,27 @@ struct HomeView: View {
                             createGroup()
                         }, label: {
                             Text("Create Group")
+                                .frame(width: 130, height: 40)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                        })
+                    }
+                    
+                    if selectedPlanet != nil {
+                        NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
+                                        label: {
+                            Text("Atmosphere")
+                                .frame(width: 130, height: 40)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                        })
+                        .padding()
+                        
+                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
+                                        label: {
+                            Text("FriendVault")
                                 .frame(width: 130, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
