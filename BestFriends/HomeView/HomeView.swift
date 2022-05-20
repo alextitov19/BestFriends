@@ -111,7 +111,7 @@ struct HomeView: View {
                             .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)
                                 selectedPlanet = planets[4]
                             })
-                            .padding()
+//                            .padding()
                     }
                     
                     if newGroupMembers.count > 0 && !focusPlanet {
@@ -135,7 +135,7 @@ struct HomeView: View {
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                         })
-                        .padding()
+//                        .padding()
                         
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
@@ -145,7 +145,22 @@ struct HomeView: View {
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                         })
+                    
                     }
+                    if newGroupMembers.count > 0 && !focusPlanet {
+                        Button(action: {
+                            createGroup()
+                        }, label: {
+                            Text("Chat Invite")
+                                .frame(width: 130, height: 40)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                        })
+                    }
+                    
+                    
+                    
                     
                 }
                 
