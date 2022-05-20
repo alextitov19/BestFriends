@@ -35,8 +35,19 @@ struct FriendVaultTrackMoods: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(moodLogs, id: \.id) { moodLog in
                         ZStack {
-                            Color(.white)
+                            if moodLog.mood < 4 {
+                            Color(.blue)
                                 .cornerRadius(25)
+                            } else if moodLog.mood == 4 {
+                                Color(.green)
+                                    .cornerRadius(25)
+                            } else if moodLog.mood == 5 {
+                                Color(.orange)
+                                    .cornerRadius(25)
+                            } else {
+                                Color(.yellow)
+                                    .cornerRadius(25)
+                            }
                             
                             VStack{
                                 //MARK: Date and time
