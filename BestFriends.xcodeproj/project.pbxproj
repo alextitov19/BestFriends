@@ -68,6 +68,7 @@
 		7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DF0727F6948A00D9F0E1 /* AdPlayerView.swift */; };
 		7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */; };
 		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
+		7AE3E9032838409B00567E2D /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3E9022838409A00567E2D /* ArrayExt.swift */; };
 		7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */; };
 		7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */; };
 		7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27927FDFFA800D2DB5C /* BlurView.swift */; };
@@ -197,6 +198,7 @@
 		7AD8DF0727F6948A00D9F0E1 /* AdPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPlayerView.swift; sourceTree = "<group>"; };
 		7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7AE3E9022838409A00567E2D /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		7AED44FA2647310700944708 /* BestFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriends.entitlements; sourceTree = "<group>"; };
 		7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashScreen2.mp4; sourceTree = "<group>"; };
 		7AFCF27727FDFF2C00D2DB5C /* ChatGroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGroupsView.swift; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 			children = (
 				7AD8DF0527F6948A00D9F0E1 /* Advertisements */,
 				7A22A575274416C200FB6B4F /* ViewExt.swift */,
+				7AE3E9022838409A00567E2D /* ArrayExt.swift */,
 				7A22A576274416C200FB6B4F /* TextFieldCustom.swift */,
 				7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */,
 				7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */,
@@ -1000,6 +1003,7 @@
 				7A1C048527F4BEB30002B173 /* SignUpView.swift in Sources */,
 				CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */,
 				CFAB5420281FC2BB00BBF502 /* BreakUpNote.swift in Sources */,
+				7AE3E9032838409B00567E2D /* ArrayExt.swift in Sources */,
 				CFD12CC428179CD600AB2539 /* StreakCongratulations.swift in Sources */,
 				7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */,
 				7AFCF27827FDFF2C00D2DB5C /* ChatGroupsView.swift in Sources */,

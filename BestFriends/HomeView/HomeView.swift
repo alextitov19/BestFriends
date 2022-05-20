@@ -138,7 +138,7 @@ struct HomeView: View {
                         Button(action: {
                             createGroup()
                         }, label: {
-                            Text("Send URGENT Chat Invite")
+                            Text("Chat Now")
                                 .frame(width: 225, height: 40)
                                 .foregroundColor(.pink)
                                 .background(ColorManager.purple3)
@@ -288,8 +288,16 @@ struct HomeView: View {
             }
             
             newGroupMembers.append(homeData!.user.id)
-            RestApi.instance.createGroup(members: newGroupMembers).then {response in
+            for group in homeData!.groups {
+                if group.members.containsSameElements(as: newGroupMembers) {
+                    sessionManager.showChat(user: homeData!.user, group: group)
+                    return
+                }
+            }
+            
+            RestApi.instance.createGroup(members: newGroupMembers).then { response in
                 print("Create Group response: ", response)
+                sessionManager.showChat(user: homeData!.user, group: response)
             }
         }
     }
