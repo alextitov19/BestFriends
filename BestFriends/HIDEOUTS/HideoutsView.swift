@@ -7,12 +7,20 @@
 
 import Foundation
 import SwiftUI
+import AVKit
 
 struct HideoutsView: View {
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
     @EnvironmentObject var sessionManager: SessionManager
+    
+//    let user: User
+//    let atmosphere: Atmosphere
+    
+//    let friends: [User]
+//    let friendAtmospheres: [Atmosphere]
+ 
     
     var body: some View {
         
@@ -25,42 +33,38 @@ struct HideoutsView: View {
                 .ignoresSafeArea()
                 .scaledToFill()
            
-            AdPlayerView(name: "backgroundAnimation")
+            AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 //                .offset(y: -250)
             
-            
-//            Image("planet_4")
         
-        ZStack {
+            NavigationLink(destination: EmptyView(), label: { HideoutsViewCircle (color: .purple, friendName: "Special \nMessages")
+            })
 
-            NavigationLink(destination: EmptyView(), label: {
-                HideoutsViewCircle (color: .pink, friendName: "Friend's \n Special Messages")
-                })
             .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
-             
-     
            
               NavigationLink(destination: EmptyView(), label: {
-                  HideoutsViewCircle (color: .orange, friendName: "Photo PoP")
+                  HideoutsViewCircle (color: .orange, friendName: "PhotoPoP")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: EmptyView(), label: { HideoutsViewCircle (color: .blue, friendName: "My BestFrinds \nPlaylist")
+            NavigationLink(destination: EmptyView(), label: { HideoutsViewCircle (color: .green, friendName: "BestFriends \nPlaylist")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
 
-
+Spacer()
+                .frame(height: 300)
+                
         Image(systemName: "triangle.fill")
                     .resizable()
-                    .foregroundColor(.gray)
-                    .frame(width: 260, height: 260)
+                    .foregroundColor(ColorManager .grey2)
+                    .frame(width: 160, height: 160)
 //                    .blur(radius: 2)
 
-                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                    .shadow(color: .orange, radius: 65, x: 30, y: 50)
 
            VStack {
                
@@ -68,8 +72,8 @@ struct HideoutsView: View {
                    .frame(height: 100)
                 
               Text("HIDEOUTS")
-                            .font(.system(size: 43))
-                            .foregroundColor(.blue)
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -91,7 +95,7 @@ struct HideoutsView: View {
 
             }
         }
-    }
+    
    
 
 struct HideoutsViewCircle: View {
@@ -103,7 +107,7 @@ struct HideoutsViewCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 150, height: 150)
+        .frame(width: 90, height: 90)
         .clipShape(Circle())
         .foregroundColor(color)
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
@@ -121,6 +125,8 @@ struct HideoutsViewCircle: View {
 struct HideoutsView_Previews : PreviewProvider {
     static var previews: some View {
         HideoutsView()
+        
+//        HideoutsView(user: User, atmosphere: Atmosphere)
     }
 
 }
