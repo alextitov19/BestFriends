@@ -139,15 +139,15 @@ struct HomeView: View {
                        
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
-                            Text("FriendVault")
+                            Text("FriendSafe")
                                 .frame(width: 130, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                         })
-                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
+                        NavigationLink(destination: WhoFighting(),
                                         label: {
-                            Text("FriendVault")
+                            Text("BlueMode-Fight")
                                 .frame(width: 130, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
