@@ -15,11 +15,11 @@ struct HideoutsView: View {
     @State private var offset: CGFloat = 200.0
     @EnvironmentObject var sessionManager: SessionManager
     
-//    let user: User
-//    let atmosphere: Atmosphere
+    let user: User
+    let atmosphere: Atmosphere
     
-//    let friends: [User]
-//    let friendAtmospheres: [Atmosphere]
+    let friends: [User]
+    let friendAtmospheres: [Atmosphere]
  
     
     var body: some View {
@@ -36,10 +36,9 @@ struct HideoutsView: View {
             AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-//                .offset(y: -250)
             
         
-            NavigationLink(destination: EmptyView(), label: { HideoutsViewCircle (color: .purple, friendName: "Special \nMessages")
+            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .purple, friendName: "Special \nMessages")
             })
 
             .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
@@ -121,15 +120,15 @@ struct HideoutsViewCircle: View {
     }
 }
 
-
-struct HideoutsView_Previews : PreviewProvider {
-    static var previews: some View {
-        HideoutsView()
-        
-//        HideoutsView(user: User, atmosphere: Atmosphere)
-    }
-
-}
+//
+//struct HideoutsView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        HideoutsView()
+//
+////        HideoutsView(user: User, atmosphere: Atmosphere)
+//    }
+//
+//}
 
 //
 //    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
