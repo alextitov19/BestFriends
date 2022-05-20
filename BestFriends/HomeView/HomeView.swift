@@ -126,17 +126,24 @@ struct HomeView: View {
                         })
                     }
                     
-                    if selectedPlanet != nil {
-                        NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
-                                        label: {
-                            Text("Update My Atmosphere")
-                                .frame(width: 200, height: 40)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                        })
-//                        .padding()
-                       
+//                    MARK: move [update my Atmosphere] to the Planet page
+                   
+//
+//                    if selectedPlanet != nil {
+//                        NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
+//                                        label: {
+//                            Text("Update My Atmosphere")
+//                                .frame(width: 200, height: 40)
+//                                .foregroundColor(.white)
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                        })
+////                        .padding()
+                        Text("received push notification")
+                            .foregroundColor(.white)
+                            .font(.system(size: 15, weight: .bold))
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
                             Text("Friend's Mood Changed")
