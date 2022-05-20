@@ -118,8 +118,8 @@ struct HomeView: View {
                         Button(action: {
                             createGroup()
                         }, label: {
-                            Text("Chat Invite-urgent")
-                                .frame(width: 160, height: 40)
+                            Text("Chat Invite (urgent)")
+                                .frame(width: 200, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -129,8 +129,8 @@ struct HomeView: View {
                     if selectedPlanet != nil {
                         NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
                                         label: {
-                            Text("Atmosphere-mood")
-                                .frame(width: 160, height: 40)
+                            Text("Atmosphere (my mood)")
+                                .frame(width: 200, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -139,16 +139,16 @@ struct HomeView: View {
                        
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
-                            Text("Friends-locker")
-                                .frame(width: 160, height: 40)
+                            Text("Friends (inerconnection)")
+                                .frame(width: 200, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                         })
                         NavigationLink(destination: WhoFighting(),
                                         label: {
-                            Text("BlueMode-fight")
-                                .frame(width: 160, height: 40)
+                            Text("BlueMode (fights)")
+                                .frame(width: 200, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
