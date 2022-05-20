@@ -150,7 +150,7 @@ struct HomeView: View {
                         
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
-                            Text("Friend's Mood Changed")
+                            Text("Friend Changed Mood")
                                 .frame(width: 200, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
