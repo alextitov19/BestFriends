@@ -158,7 +158,7 @@ struct HomeView: View {
                         })
                         NavigationLink(destination: WhoFighting(),
                                         label: {
-                            Text("BlueMode Invite")
+                            Text("Invited to BlueMode")
                                 .frame(width: 200, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)

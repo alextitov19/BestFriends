@@ -85,16 +85,19 @@ struct PlanetActionsView: View {
                                 .foregroundColor(ColorManager.purple3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             VStack {
-                                Text("my")
+//                                Text("my")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 15, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+                                Text("HIDEOUTS")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                
-                                Text("SMILES")
+                                Text("time for \nyourself")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 14, weight: .bold))
+                                    .font(.system(size: 13, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                            
                             }
                         }
                     })
@@ -102,7 +105,7 @@ struct PlanetActionsView: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    NavigationLink(destination: Friend1VaultPractice(user: friends[0], friend: user, friendAtmosphere: atmosphere),
+                    NavigationLink(destination: EmptyView(),
                                    label: {
                         
                         ZStack {
@@ -120,12 +123,12 @@ struct PlanetActionsView: View {
                                 //                                .font(.system(size: 15, weight: .bold))
                                 //                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 //
-                                Text("Friend")
+                                Text("Empty")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("Internconnections")
+                                Text("")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -223,7 +226,7 @@ struct PlanetActionsView: View {
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("update my mood")
+                                Text("update \nmood")
                                     .foregroundColor(.white)
                                     .font(.system(size: 12, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)

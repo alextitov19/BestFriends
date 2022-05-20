@@ -1,15 +1,14 @@
 //
-//  WhoFighting.swift
+//  HideoutsView.swift
 //  BestFriends
 //
-//  Created by Social Tech on 5/3/22.
+//  Created by Social Tech on 5/20/22.
 //
-
 
 import Foundation
 import SwiftUI
 
-struct WhoFighting: View {
+struct HideoutsView: View {
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -36,20 +35,20 @@ struct WhoFighting: View {
         
         ZStack {
 
-            NavigationLink(destination: IntroBluemodeFriend(), label: {
-                WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nBFF")
+            NavigationLink(destination: EmptyView(), label: {
+                HideoutsViewCircle (color: .pink, friendName: "Friend's \n Special Messages")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
              
      
            
-              NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .orange, friendName: "OMG, \nmy Parents \nare Fighting \nAGAIN!")
+              NavigationLink(destination: EmptyView(), label: {
+                  HideoutsViewCircle (color: .orange, friendName: "Photo PoP")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .blue, friendName: "Drama \nin my \nFriendGroup")
+            NavigationLink(destination: EmptyView(), label: { HideoutsViewCircle (color: .blue, friendName: "My BestFrinds \nPlaylist")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
@@ -68,7 +67,7 @@ struct WhoFighting: View {
             Spacer ()
                    .frame(height: 100)
                 
-              Text("BlueMode")
+              Text("HIDEOUTS")
                             .font(.system(size: 43))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
@@ -95,7 +94,7 @@ struct WhoFighting: View {
     }
    
 
-struct WhoFightingCircle: View {
+struct HideoutsViewCircle: View {
     var color: Color
     var friendName: String
     
@@ -119,9 +118,9 @@ struct WhoFightingCircle: View {
 }
 
 
-struct WhoFighting_Previews : PreviewProvider {
+struct HideoutsView_Previews : PreviewProvider {
     static var previews: some View {
-        WhoFighting()
+        HideoutsView()
     }
 
 }

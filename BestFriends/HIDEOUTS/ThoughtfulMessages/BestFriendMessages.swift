@@ -162,6 +162,7 @@ struct BestFriendMessages: View {
                      
                 }
               
+         
             .onTapGesture {
                     withAnimation {
                         self.showItems.toggle()
