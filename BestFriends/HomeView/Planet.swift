@@ -120,12 +120,12 @@ struct PlanetActionsView: View {
                                 //                                .font(.system(size: 15, weight: .bold))
                                 //                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 //
-                                Text("my")
+                                Text("Friend")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("Friends")
+                                Text("Internconnections")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -171,7 +171,7 @@ struct PlanetActionsView: View {
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             
                             VStack {
-                                Text("Settings")
+                                Text("Settings \nmy Planet \nDemo")
                                     .foregroundColor(.white)
                                     .font(.system(size: 13, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -223,7 +223,7 @@ struct PlanetActionsView: View {
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("my mood")
+                                Text("update my mood")
                                     .foregroundColor(.white)
                                     .font(.system(size: 12, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)

@@ -128,19 +128,23 @@ struct HomeView: View {
                     
 //                    MARK: move [update my Atmosphere] to the Planet page
                    
-//
-//                    if selectedPlanet != nil {
-//                        NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
-//                                        label: {
-//                            Text("Update My Atmosphere")
-//                                .frame(width: 200, height: 40)
-//                                .foregroundColor(.white)
-//                                .background(ColorManager.purple3)
-//                                .cornerRadius(15)
-//                        })
+
+                    if selectedPlanet != nil {
+                        NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
+                                        label: {
+                            Text("Update My Atmosphere")
+                                .frame(width: 200, height: 40)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                        })
+                        
+                        Spacer()
+                            .frame(height: 25)
 ////                        .padding()
                         Text("received push notification")
                             .foregroundColor(.white)
+                            .fontWeight(.thin)
                             .font(.system(size: 15, weight: .bold))
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                         
