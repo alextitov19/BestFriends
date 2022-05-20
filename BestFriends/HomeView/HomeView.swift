@@ -125,29 +125,30 @@ struct HomeView: View {
                                 .cornerRadius(15)
                         })
                     }
-                    
-//                    MARK: move [update my Atmosphere] to the Planet page
                    
+                    Spacer()
+                        .frame(height: 25)
 
+
+                    Text("received push notification")
+                        .foregroundColor(.white)
+                        .fontWeight(.thin)
+                        .font(.system(size: 15, weight: .bold))
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+            
+                    //                    MARK: Connect to Chat Now page
+                    
                     if selectedPlanet != nil {
                         NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
                                         label: {
-                            Text("Update My Atmosphere")
+                            Text("Got Urgent Chat Invite")
                                 .frame(width: 200, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                         })
                         
-                        Spacer()
-                            .frame(height: 25)
-////                        .padding()
-                        Text("received push notification")
-                            .foregroundColor(.white)
-                            .fontWeight(.thin)
-                            .font(.system(size: 15, weight: .bold))
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                        
+                       
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
                             Text("Friend Changed Mood")
