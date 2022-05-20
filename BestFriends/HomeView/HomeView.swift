@@ -118,8 +118,8 @@ struct HomeView: View {
                         Button(action: {
                             createGroup()
                         }, label: {
-                            Text("Chat Invite")
-                                .frame(width: 130, height: 40)
+                            Text("Chat Invite-urgent")
+                                .frame(width: 160, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -129,8 +129,8 @@ struct HomeView: View {
                     if selectedPlanet != nil {
                         NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
                                         label: {
-                            Text("Atmosphere")
-                                .frame(width: 130, height: 40)
+                            Text("Atmosphere-mood")
+                                .frame(width: 160, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -139,16 +139,16 @@ struct HomeView: View {
                        
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
-                            Text("FriendSafe")
-                                .frame(width: 130, height: 40)
+                            Text("Friends-locker")
+                                .frame(width: 160, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                         })
                         NavigationLink(destination: WhoFighting(),
                                         label: {
-                            Text("BlueMode-Fight")
-                                .frame(width: 130, height: 40)
+                            Text("BlueMode-fight")
+                                .frame(width: 160, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
