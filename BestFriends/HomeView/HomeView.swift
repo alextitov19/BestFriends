@@ -118,9 +118,9 @@ struct HomeView: View {
                         Button(action: {
                             createGroup()
                         }, label: {
-                            Text("Chat Invite (urgent)")
-                                .frame(width: 200, height: 40)
-                                .foregroundColor(.white)
+                            Text("Send URGENT Chat Invite")
+                                .frame(width: 225, height: 40)
+                                .foregroundColor(.pink)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                         })
@@ -129,7 +129,7 @@ struct HomeView: View {
                     if selectedPlanet != nil {
                         NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
                                         label: {
-                            Text("Atmosphere (my mood)")
+                            Text("Update My Atmosphere")
                                 .frame(width: 200, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
@@ -139,7 +139,7 @@ struct HomeView: View {
                        
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
-                            Text("Friends (inerconnection)")
+                            Text("Friend's Mood Changed")
                                 .frame(width: 200, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
@@ -147,7 +147,7 @@ struct HomeView: View {
                         })
                         NavigationLink(destination: WhoFighting(),
                                         label: {
-                            Text("BlueMode (fights)")
+                            Text("BlueMode Invite")
                                 .frame(width: 200, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
