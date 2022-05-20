@@ -103,6 +103,7 @@ struct FriendVaultTrackMoods: View {
             RestApi.instance.getMoodLog(id: id).then({ ml in
                 self.moodLogs.append(ml)
                 print("Added mood log: ", ml.summary)
+                self.moodLogs = self.moodLogs.sorted(by: { $0.createdOn > $1.createdOn })
             })
         }
     }
