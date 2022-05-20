@@ -148,13 +148,6 @@ struct HomeView: View {
                    
                     Spacer()
                         .frame(height: 25)
-
-
-                    Text("received push notification")
-                        .foregroundColor(.white)
-                        .fontWeight(.thin)
-                        .font(.system(size: 15, weight: .bold))
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
             
                     //                    MARK: Connect to Chat Now page
                     
