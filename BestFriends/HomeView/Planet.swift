@@ -63,18 +63,7 @@ struct PlanetActionsView: View {
     var body: some View {
         
         VStack {
-            ////             MARK: need Setting icon. Takes to OurMission page
-            //            NavigationLink(destination: OurMission(),
-            //                           label: {
-            //            Image("Exclamation Mark")
-            //                .resizable()
-            //                .frame(width: 50, height: 50)
-            //                .scaledToFit()
-            //                .colorInvert()
-            //                .rotationEffect(Angle(degrees: 180))
-            ////        }
-            //
-            //
+           
             HStack {
                 VStack {
                     NavigationLink(destination: HideoutsView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
@@ -85,16 +74,11 @@ struct PlanetActionsView: View {
                                 .foregroundColor(ColorManager.purple3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             VStack {
-//                                Text("my")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 15, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
                                 Text("HIDEOUTS")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("time for \nyourself")
+                                Text("my time")
                                     .foregroundColor(.white)
                                     .font(.system(size: 13, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -107,7 +91,7 @@ struct PlanetActionsView: View {
                     
 //                    NavigationLink(destination: BestFriendMessages(),
                     
-                    NavigationLink(destination: EmptyView()
+                    NavigationLink(destination: EmptyView(),
                                     
 //                                    BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                    
@@ -150,7 +134,7 @@ struct PlanetActionsView: View {
                             VStack {
                                 Text("+")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 30, weight: .regular))
+                                    .font(.system(size: 40, weight: .regular))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 Text("Friends")
                                     .foregroundColor(.white)
@@ -173,9 +157,9 @@ struct PlanetActionsView: View {
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             
                             VStack {
-                                Text("Settings \nmy Planet \nDemo")
+                                Text("my Planet \nDemo & \nSettings")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 13, weight: .bold))
+                                    .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
@@ -196,11 +180,11 @@ struct PlanetActionsView: View {
                             VStack {
                                 Text("Huge Fight")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 Text("friend group \nparents \nBFF")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
+                                    .font(.system(size: 13, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
@@ -222,12 +206,12 @@ struct PlanetActionsView: View {
                             VStack {
                                 Text("Atmosphere")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
                                 Text("update \nmood")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
+                                    .font(.system(size: 13, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
@@ -250,11 +234,11 @@ struct PlanetActionsView: View {
                                 
                                 Text("Horizons")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 Text("dreams \nwith \nfriends")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
+                                    .font(.system(size: 13, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
                             }
