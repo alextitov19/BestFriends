@@ -80,7 +80,7 @@ struct Friend1VaultPractice: View {
                 }
                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 7)
                 
                 
                 
@@ -91,10 +91,10 @@ struct Friend1VaultPractice: View {
                     .font(.system(size: 20))
                     .foregroundColor(Color.black)
                     .padding(.horizontal, 50)
-                    .frame(width:310, height: 100)
+                    .frame(width:310, height: 75)
                     .background(ColorManager.purple3)
                     .cornerRadius(15)
-                    .onReceive(Just(customMessage)) { _ in limitText(75) }
+                    .onReceive(Just(customMessage)) { _ in limitText(65) }
                 
                 
                 VStack {
@@ -204,7 +204,7 @@ struct Friend1VaultPractice: View {
                     
                     
                     Spacer ()
-                        .frame(height: 40)
+                        .frame(height: 10)
                 }
                 
                 Text("Send virtual Hug or Heart")
