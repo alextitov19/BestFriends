@@ -152,7 +152,8 @@ struct HomeView: View {
                     //                    MARK: Connect to Chat Now page
                     
                     if selectedPlanet != nil {
-                        NavigationLink(destination: AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
+                       
+                       NavigationLink(destination: UrgentChatInvite(),
                                         label: {
                             Text("Got Urgent Chat Invite")
                                 .frame(width: 200, height: 40)
