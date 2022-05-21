@@ -62,7 +62,7 @@ struct Friend1VaultPractice: View {
                             HStack {
                                 Text(getDateString(date: Date(timeIntervalSince1970: TimeInterval(mostRecentMoodLog!.createdOn))))
                                 
-                                Spacer()
+//                                Spacer()
                             }
                             .padding()
                             
@@ -103,7 +103,7 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Send Custom Message to Chat")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
+                            .frame(width: 310, height: 35)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 22))
                             .background(ColorManager.purple3)
