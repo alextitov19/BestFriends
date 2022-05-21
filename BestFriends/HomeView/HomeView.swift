@@ -155,8 +155,8 @@ struct HomeView: View {
                        
                        NavigationLink(destination: UrgentChatInvite(),
                                         label: {
-                            Text("Got Urgent Chat Invite")
-                                .frame(width: 200, height: 40)
+                            Text("Received Urgent Chat Invite")
+                                .frame(width: 220, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -166,7 +166,7 @@ struct HomeView: View {
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
                             Text("Friend Changed Mood")
-                                .frame(width: 200, height: 40)
+                                .frame(width: 220, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -174,7 +174,7 @@ struct HomeView: View {
                         NavigationLink(destination: WhoFighting(),
                                         label: {
                             Text("Invited to BlueMode")
-                                .frame(width: 200, height: 40)
+                                .frame(width: 220, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
