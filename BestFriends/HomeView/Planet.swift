@@ -107,7 +107,10 @@ struct PlanetActionsView: View {
                     
 //                    NavigationLink(destination: BestFriendMessages(),
                     
-                    NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                    NavigationLink(destination: EmptyView()
+                                    
+//                                    BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                   
                 label: {
                         
                         ZStack {
@@ -119,13 +122,7 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-                                
-                                //                            Text("Support")
-                                //                                .foregroundColor(.white)
-                                //                                .font(.system(size: 15, weight: .bold))
-                                //                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                //
-                                Text("old \nSpecial \nMessages")
+                                    Text("open planet")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
