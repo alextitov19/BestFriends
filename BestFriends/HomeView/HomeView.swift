@@ -153,7 +153,7 @@ struct HomeView: View {
                     
                     if selectedPlanet != nil {
                        
-                        NavigationLink(destination: UrgentChatInvite(user: user, owner: user, group: group),
+                        NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
                                         label: {
                             Text("Received Urgent Chat Invite")
                                 .frame(width: 220, height: 40)
