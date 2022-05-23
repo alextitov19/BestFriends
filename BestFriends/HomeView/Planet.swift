@@ -18,6 +18,7 @@ struct Planet: View {
                 .scaledToFit()
                 .frame(width: 65, height: 65)
                 .glow(color: glowColor())
+                .onAppear(perform: {print("Mood: ", atmosphere.mood)})
             
             
             Text(user.firstName + " " + String(user.lastName.first!))
@@ -31,9 +32,23 @@ struct Planet: View {
         case 0:
             return ColorManager.pmbc_blue
         case 1:
-            return ColorManager.pmbc_green
+            return ColorManager.pmbc_blue
         case 2:
-            return ColorManager.pmbc_pink
+            return ColorManager.pmbc_blue
+        case 3:
+            return ColorManager.pmbc_blue
+        case 4:
+            return ColorManager.pmbc_green
+        case 5:
+            return ColorManager.orange3
+        case 6:
+            return Color.yellow
+        case 7:
+            return Color.yellow
+        case 8:
+            return Color.yellow
+        case 9:
+            return Color.yellow
         default:
             return ColorManager.pmbc_blue
         }

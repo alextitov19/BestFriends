@@ -74,12 +74,13 @@ struct HomeView: View {
                         ZStack {
                             // Main planet
                             if !focusPlanet {
-                                PlanetView(planet: homeData?.atmosphere.planet ?? 0, mood: homeData?.atmosphere.mood ?? 0)
+                                PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                     .scaledToFit()
                                     .frame(width: 125, height: 125)
                                     .onTapGesture(perform: mainPlanetTapped)
-                                    .glow(color: glowColor(), radius: 20)
+                                    .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
                                     .padding()
+                                    .onAppear(perform: {print("Atm mood: ", homeData!.atmosphere.mood)})
                             }
                             
                             // Tapped on the main planet
@@ -253,14 +254,28 @@ struct HomeView: View {
     }
     
     // Get glow color for main planet
-    private func glowColor() -> Color {
-        switch homeData?.atmosphere.mood ?? 0 {
+    private func glowColor(mood: Int) -> Color {
+        switch mood {
         case 0:
             return ColorManager.pmbc_blue
         case 1:
-            return ColorManager.pmbc_green
+            return ColorManager.pmbc_blue
         case 2:
-            return ColorManager.pmbc_pink
+            return ColorManager.pmbc_blue
+        case 3:
+            return ColorManager.pmbc_blue
+        case 4:
+            return ColorManager.pmbc_green
+        case 5:
+            return ColorManager.orange3
+        case 6:
+            return Color.yellow
+        case 7:
+            return Color.yellow
+        case 8:
+            return Color.yellow
+        case 9:
+            return Color.yellow
         default:
             return ColorManager.pmbc_blue
         }
