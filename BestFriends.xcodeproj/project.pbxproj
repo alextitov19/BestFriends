@@ -116,6 +116,7 @@
 		CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */; };
 		CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB542728211BAC00BBF502 /* ParentsFighting.swift */; };
 		CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5429282123EA00BBF502 /* WhoFighting.swift */; };
+		CFAE7349283C748C00015FD2 /* UserBetaTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
 		CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */; };
@@ -247,6 +248,7 @@
 		CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightTextUserIdeas.swift; sourceTree = "<group>"; };
 		CFAB542728211BAC00BBF502 /* ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsFighting.swift; sourceTree = "<group>"; };
 		CFAB5429282123EA00BBF502 /* WhoFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoFighting.swift; sourceTree = "<group>"; };
+		CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBetaTesting.swift; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
 		CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendValutTrackMoods.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
 				CF381A572829202A00B3719E /* Friends Celebrating Friendship */,
 				CFD046992837D99300BF0B02 /* HIDEOUTS */,
+				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CF3B65F128075F3B0003A714 /* FriendVault */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
 				CFE1946A2812A9E300ED5718 /* Streaks */,
@@ -666,6 +669,14 @@
 				CF381A4F2827372100B3719E /* Step2_ParentsFighting.swift */,
 			);
 			path = "Parents Fighting";
+			sourceTree = "<group>";
+		};
+		CFAE7347283C745800015FD2 /* Help Beta Test */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */,
+			);
+			path = "Help Beta Test";
 			sourceTree = "<group>";
 		};
 		CFD04689282D6FDD00BF0B02 /* Atmosphere */ = {
@@ -1010,6 +1021,7 @@
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
 				CFE1946C28132FBB00ED5718 /* PracticeFloatingCircles.swift in Sources */,
 				7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */,
+				CFAE7349283C748C00015FD2 /* UserBetaTesting.swift in Sources */,
 				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
