@@ -125,10 +125,9 @@ struct Friend1VaultPractice: View {
                         Text("Are you okay?")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
-                            .foregroundColor(.purple)
+                           .foregroundColor(.purple)
                             .font(.system(size: 20))
                             .background(colorChangeTap == "Are you okay?" ? ColorManager.grey2 : ColorManager.grey1)
-                        
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })

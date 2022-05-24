@@ -18,6 +18,8 @@ struct UrgentChatInvite: View {
     let owner: User
     let group: Group
     
+    @State private var colorChangeTap: String = ""
+    
     var body: some View {
         ZStack {
             Image("purpleBackground")
@@ -26,11 +28,11 @@ struct UrgentChatInvite: View {
                 .scaledToFill()
             
             VStack {
-                Text("when can you")
+                Text("When can you")
                     .font(.system(size: 40, weight: .ultraLight))
                     .foregroundColor(Color.white)
                 
-                Text("T A L K")
+                Text("T A L K?")
                     .font(.system(size: 55, weight: .ultraLight))
                     .foregroundColor(Color.white)
                 
@@ -49,20 +51,24 @@ struct UrgentChatInvite: View {
                 .padding()
                 
                 Button(action: {
+                    defaultMessageButtonTapped(defaultMessage: "give me 5 minutes")
+                    
                     RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in 5 minutes", APNToken: owner.APNToken ?? "")
                 }, label: {
                     Text("give me 5 minutes")
                         .fontWeight(.thin)
                         .frame(width: 240, height: 50)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                       .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 27))
-                        .background(ColorManager.purple3)
+                        .background(colorChangeTap == "give me 5 minutes" ? ColorManager.grey3 : ColorManager.purple3)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })
                 .padding()
                 
                 Button(action: {
+                    defaultMessageButtonTapped(defaultMessage: "give me 10 minutes")
+                    
                     RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in 10 minutes", APNToken: owner.APNToken ?? "")
                 }, label: {
                     Text("give me 10 minutes")
@@ -70,13 +76,15 @@ struct UrgentChatInvite: View {
                         .frame(width: 240, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 27))
-                        .background(ColorManager.purple3)
+                        .background(colorChangeTap == "give me 10 minutes" ? ColorManager.grey3 : ColorManager.purple3)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })
                 .padding()
                 
                 Button(action: {
+                    defaultMessageButtonTapped(defaultMessage: "give me 30 minutes")
+                    
                     RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in 30 minutes", APNToken: owner.APNToken ?? "")
                 }, label: {
                     Text("give me 30 minutes")
@@ -84,13 +92,15 @@ struct UrgentChatInvite: View {
                         .frame(width: 240, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 27))
-                        .background(ColorManager.purple3)
+                        .background(colorChangeTap == "give me 30 minutes" ? ColorManager.grey3 : ColorManager.purple3)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })
                 .padding()
                 
                 Button(action: {
+                    defaultMessageButtonTapped(defaultMessage: "give me 60 minutes")
+
                     RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in an hour", APNToken: owner.APNToken ?? "")
                 }, label: {
                     Text("give me am hour")
@@ -98,13 +108,15 @@ struct UrgentChatInvite: View {
                         .frame(width: 240, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 27))
-                        .background(ColorManager.purple3)
+                        .background(colorChangeTap == "give me 60 minutes" ? ColorManager.grey3 : ColorManager.purple3)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })
                 .padding()
                 
                 Button(action: {
+                    defaultMessageButtonTapped(defaultMessage: "Can't talk for a while")
+                    
                     RestApi.instance.sendPushNotification(title: user.firstName, body: "Can't talk for a while", APNToken: owner.APNToken ?? "")
                 }, label: {
                     Text("Can't talk for a while")
@@ -112,15 +124,19 @@ struct UrgentChatInvite: View {
                         .frame(width: 240, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 27))
-                        .background(ColorManager.purple3)
+                        .background(colorChangeTap == "Can't talk for a while" ? ColorManager.pmbc_blue : ColorManager.purple3)
+//                        .background(ColorManager.purple3)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })
                 .padding()
                 
-                
-            }
+           }
         }
     }
+        
+    private func defaultMessageButtonTapped(defaultMessage: String) {
+        self.colorChangeTap = defaultMessage
+    }
+    
 }
-
