@@ -104,7 +104,7 @@ struct UserBetaTesting: View {
                 Spacer()
                       .frame(height: 115)
                
-                Text("The sincere hope of the BestFriends team is that we're able to build an app that actually reduces drama, anxiety and depression. \n\nBut, we need your help. \n\nWe have a couple of short surveys that we would love you to complete (only 3 questions). \n\nHelp us make BestFriends special.")
+                Text("The sincere hope of the BestFriends team is that we're able to build an app that actually REDUCES drama, anxiety and depression. \n\nBut, we need your help. \n\nWe have a couple of short 3-question surveys - earn some free tokens. \n\nHelp us make BestFriends SPECIAL.")
                     .font(.system(size: 23))
                     .fontWeight(.thin)
                     .italic()
