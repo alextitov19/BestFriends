@@ -62,10 +62,10 @@ struct UserBetaTesting: View {
                 Divider()
                     .foregroundColor(.white)
                 
-                Link(destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!) {
+                Link(destination: URL(string: "https://socialtechlabs.com/beta-tester-_-bestfriends-app/")!) {
                     
                     HStack {
-                        Text("Be a Beta Tester")
+                        Text("Yep, I want to HELP")
                             .font(.system(size: 30)) .foregroundColor(.green)
                          .frame(maxHeight: 0)
                         
