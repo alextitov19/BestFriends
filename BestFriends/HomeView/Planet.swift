@@ -121,16 +121,16 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-                                    Text("Help us")
+                                    Text("Help \nTest")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("Beta Test")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 15, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("BestFriends")
+//                                Text("Test")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 15, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                               Text("BestFriends")
                                     .foregroundColor(.white)
                                     .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)

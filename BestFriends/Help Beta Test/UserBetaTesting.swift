@@ -41,16 +41,18 @@ struct UserBetaTesting: View {
                             .resizable()
                             .frame(width: 25, height: 25)
                             .scaledToFit()
-                            .colorInvert()
+//                            .colorInvert()
                            .rotationEffect(Angle(degrees: 180))
                     }
                     
                     Spacer()
                     
-                    Text("")
+                    Text("Asking For Your Help")
                         .font(.system(size: 30))
-                        .offset(x: -25)
-                        .foregroundColor(.black)
+                        .fontWeight(.thin)
+//                        .offset(x: -25)
+//                        .fontWeight(.thin)
+                        .foregroundColor(.white)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                 }
                     Spacer()
@@ -63,8 +65,8 @@ struct UserBetaTesting: View {
                 Link(destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!) {
                     
                     HStack {
-                        Text("Become a \nBeta Tester")
-                            .font(.system(size: 30)) .foregroundColor(.white)
+                        Text("Be a Beta Tester")
+                            .font(.system(size: 30)) .foregroundColor(.green)
                          .frame(maxHeight: 0)
                         
                         Spacer()
@@ -101,18 +103,13 @@ struct UserBetaTesting: View {
 //
                 Spacer()
                       .frame(height: 115)
-                
-                Text("Asking for Your HELP")
-                    .font(.system(size: 40))
-                    .offset(x: -25)
-                    .foregroundColor(.green)
-                    .frame(height: 50)
-                
+               
                 Text("The sincere hope of the BestFriends team is that we're able to build an app that actually reduces drama, anxiety and depression. \n\nBut, we need your help. \n\nWe have a couple of short surveys that we would love you to complete (only 3 questions). \n\nHelp us make BestFriends special.")
                     .font(.system(size: 23))
+                    .fontWeight(.thin)
                     .italic()
                     .offset(x: -3)
-                    .foregroundColor(.green)
+                    .foregroundColor(.white)
                     .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                     
                 
