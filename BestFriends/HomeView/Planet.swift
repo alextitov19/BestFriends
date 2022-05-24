@@ -106,7 +106,7 @@ struct PlanetActionsView: View {
                     
 //                    NavigationLink(destination: BestFriendMessages(),
                     
-                    NavigationLink(destination: EmptyView(),
+                    NavigationLink(destination: UserBetaTesting(),
                                     
 //                                    BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                    
