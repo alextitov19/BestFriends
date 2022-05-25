@@ -15,9 +15,7 @@ struct MasterFriendVault: View {
     
 // trying to put in swipe up gesture for Chat on this page
 @EnvironmentObject var sessionManager: SessionManager
-    
-    @State private var chatGroupsView = ChatGroupsView(groups: [])
-    
+        
     
     var body: some View {
        NavigationView {

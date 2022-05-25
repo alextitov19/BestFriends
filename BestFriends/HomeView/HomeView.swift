@@ -21,7 +21,7 @@ struct HomeView: View {
     
     @State private var newGroupMembers: [String] = []
     
-    @State private var chatGroupsView = ChatGroupsView(groups: [])
+    @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", atmosphere: ""), groups: [])
     
     var body: some View {
         NavigationView {
@@ -185,8 +185,8 @@ struct HomeView: View {
 
                 }
                 
-                if homeData?.groups != nil {
-                    ChatGroupsView(groups: homeData?.groups ?? [])
+                if homeData?.groups != nil && homeData?.user != nil {
+                    ChatGroupsView(user: homeData!.user, groups: homeData?.groups ?? [])
                         .environmentObject(sessionManager)
                     
 //  MARK: When toggle between Home view and Planet the [Atmosphere] and [FiendValult] buttons show up on Plant view and do not go away on Home view when the fiend's planet is tapped.

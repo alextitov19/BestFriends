@@ -133,8 +133,8 @@ class RestApi {
     }
       
     
-    public func updateuser(user: User) -> Promise<Int> {
-        return helper.updateUser(url: API_URL + "/update/user", user: user)
+    public func updateUser(user: User) -> Promise<Int> {
+        return helper.updateUser(url: API_URL + "/user/update", user: user)
     }
     
     public func updateUserId() {

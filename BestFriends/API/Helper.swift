@@ -187,8 +187,8 @@ class Helper {
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
-        return callRestApi(url: url, method: .post, data: payload, SignUpResponse.self).then { signUpResponse in
-            return Promise<Int>(signUpResponse.code)
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
         }
     }
     

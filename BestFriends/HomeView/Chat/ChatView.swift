@@ -46,6 +46,7 @@ struct ChatView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(messages, id: \.id) { message in
                         ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
+                            .onLongPressGesture(minimumDuration: 1, perform: { ltMessage(message: message) })
                     }
                 }
                 
@@ -83,6 +84,35 @@ struct ChatView: View {
                         )
                 }
             }
+        }
+    }
+    
+    private func ltMessage(message: Message) {
+        print("User: ", user)
+        if user.smileNotes == nil {
+            var updatedUser = user
+            updatedUser.smileNotes = [message.id]
+            RestApi.instance.updateUser(user: updatedUser).then({ response in
+                if response == 200 {
+                    print("Successfully saved message to smile notes")
+                } else {
+                    print("Failed to save message to smile notes")
+                }
+            })
+            return
+        }
+        if !user.smileNotes!.contains(message.id) {
+            var updatedUser = user
+            updatedUser.smileNotes!.append(message.id)
+            RestApi.instance.updateUser(user: updatedUser).then({ response in
+                if response == 200 {
+                    print("Successfully saved message to smile notes")
+                } else {
+                    print("Failed to save message to smile notes")
+                }
+            })
+        } else {
+            print("User already has this message in smile notes")
         }
     }
     
