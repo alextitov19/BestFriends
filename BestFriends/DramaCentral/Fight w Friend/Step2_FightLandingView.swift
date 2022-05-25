@@ -200,10 +200,10 @@ struct Step2_FightLandingView: View {
 
 
 
-struct FightLandingView_Previews : PreviewProvider {
-    static var previews: some View {
-        Step2_FightLandingView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
-    }
-}
+//struct FightLandingView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        Step2_FightLandingView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
+//    }
+//}
 
 

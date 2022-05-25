@@ -443,13 +443,13 @@ struct AtmosphereMain2: View {
 
 
 
-
-struct AtmosphereMain2_Previews : PreviewProvider {
-    
-    static var previews: some View {
-        AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), atmosphere: Atmosphere(id: "", planet: 0, mood: 0, moodLogs: []), friends: [])
-        
-    }
-}
+//
+//struct AtmosphereMain2_Previews : PreviewProvider {
+//    
+//    static var previews: some View {
+//        AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), atmosphere: Atmosphere(id: "", planet: 0, mood: 0, moodLogs: []), friends: [])
+//        
+//    }
+//}
 
 

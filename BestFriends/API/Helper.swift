@@ -182,6 +182,16 @@ class Helper {
         }
     }
     
+    func updateUser(url: String, user: User) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(user)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, SignUpResponse.self).then { signUpResponse in
+            return Promise<Int>(signUpResponse.code)
+        }
+    }
+    
     func signUp(_ userData: SignUpUserData) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(userData)
         if let p = payload {
@@ -203,7 +213,7 @@ class Helper {
             self.accessToken = tokens.AccessToken.Token
             self.renewToken = tokens.RenewToken.Token
             do {
-                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: ""), token: tokens.RenewToken.Token)
+                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), token: tokens.RenewToken.Token)
                 print("Renew Token: ", tokens.RenewToken.Token)
             } catch {
                 print(error)

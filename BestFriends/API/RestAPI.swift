@@ -131,7 +131,12 @@ class RestApi {
         let createNotification = CreateNotification(title: title, body: body, APNToken: APNToken)
         return helper.sendPushNotification(url: API_URL + "/notification", createNotification: createNotification)
     }
-        
+      
+    
+    public func updateuser(user: User) -> Promise<Int> {
+        return helper.updateUser(url: API_URL + "/update/user", user: user)
+    }
+    
     public func updateUserId() {
         getCurrentUser().then { details in
             self.userId = details.id

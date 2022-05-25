@@ -53,6 +53,8 @@ struct User: Codable {
     let friends: [String] = []
     let groups: [String] = []
     let atmosphere: String
+    let chatPin: String?
+    let smileNotes: [String] = []
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case firstName = "first_name"
@@ -61,6 +63,8 @@ struct User: Codable {
         case friends = "friends"
         case groups = "groups"
         case atmosphere = "atmosphere"
+        case chatPin = "chat_pin"
+        case smileNotes = "smile_notes"
     }
 }
 
