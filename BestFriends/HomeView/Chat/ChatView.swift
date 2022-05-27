@@ -88,9 +88,19 @@ struct ChatView: View {
     }
     
     private func ltMessage(message: Message) {
-        RestApi.instance.createSmileNote(messageId: message.id, messageBody: message.body, sendername: message.senderName).then({ smileNote in
-            print("Got smile note from server: ", smileNote)
+        RestApi.instance.getSmileNotes().then({ smileNotes in
+            print("Got smile notes from server: ", smileNotes)
+            for sm in smileNotes {
+                if sm.messageId == message.id {
+                    print("This message is already a smile note")
+                    return
+                }
+            }
+            RestApi.instance.createSmileNote(messageId: message.id, messageBody: message.body, sendername: message.senderName).then({ smileNote in
+                print("Got smile note from server: ", smileNote)
+            })
         })
+        
     }
     
     private func sendMessage() {
