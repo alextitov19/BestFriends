@@ -134,6 +134,8 @@
 		CFE1946928129D9600ED5718 /* FriendQualities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946828129D9600ED5718 /* FriendQualities.swift */; };
 		CFE1946C28132FBB00ED5718 /* PracticeFloatingCircles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946B28132FBB00ED5718 /* PracticeFloatingCircles.swift */; };
 		CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */; };
+		D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */; };
+		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -266,6 +268,8 @@
 		CFE1946828129D9600ED5718 /* FriendQualities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendQualities.swift; sourceTree = "<group>"; };
 		CFE1946B28132FBB00ED5718 /* PracticeFloatingCircles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeFloatingCircles.swift; sourceTree = "<group>"; };
 		CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendMessages.swift; sourceTree = "<group>"; };
+		D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonHomeView.swift; sourceTree = "<group>"; };
+		D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonRocketColorPicker.swift; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54A61C5A22AA6A9255C7B05 /* Pods-BestFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.release.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -378,6 +382,7 @@
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
 				CF381A572829202A00B3719E /* Friends Celebrating Friendship */,
 				CFD046992837D99300BF0B02 /* HIDEOUTS */,
+				D0CC1A02283EE31900E7461F /* Horizons */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CF3B65F128075F3B0003A714 /* FriendVault */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
@@ -767,6 +772,15 @@
 			path = Streaks;
 			sourceTree = "<group>";
 		};
+		D0CC1A02283EE31900E7461F /* Horizons */ = {
+			isa = PBXGroup;
+			children = (
+				D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */,
+				D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */,
+			);
+			path = Horizons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -977,6 +991,7 @@
 				7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */,
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
 				CF3B65BD280091280003A714 /* DemoVideoView.swift in Sources */,
+				D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */,
 				CFD12CC7281943CA00AB2539 /* Impetus.swift in Sources */,
 				CFAB5419281E537D00BBF502 /* ShowHug.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
@@ -1019,6 +1034,7 @@
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
+				D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */,
 				CFE1946C28132FBB00ED5718 /* PracticeFloatingCircles.swift in Sources */,
 				7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */,
 				CFAE7349283C748C00015FD2 /* UserBetaTesting.swift in Sources */,

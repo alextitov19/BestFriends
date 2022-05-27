@@ -241,7 +241,7 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
                     
-                    NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                    NavigationLink(destination: HorizonHomeView(),
                                    label: {
                         ZStack {
                             Circle()
