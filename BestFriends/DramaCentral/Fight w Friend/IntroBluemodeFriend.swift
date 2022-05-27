@@ -29,12 +29,16 @@ struct IntroBluemodeFriend: View {
             VStack {
       
                 
-                Text("Problem")
-                    .font(.system(size: 70))
+                Text("asking for")
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                
+                Text("HELP")
+                    .font(.system(size: 90))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height: 20)
                 
