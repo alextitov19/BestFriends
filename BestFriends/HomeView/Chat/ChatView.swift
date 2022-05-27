@@ -88,32 +88,9 @@ struct ChatView: View {
     }
     
     private func ltMessage(message: Message) {
-        print("User: ", user)
-        if user.smileNotes == nil {
-            var updatedUser = user
-            updatedUser.smileNotes = [message.id]
-            RestApi.instance.updateUser(user: updatedUser).then({ response in
-                if response == 200 {
-                    print("Successfully saved message to smile notes")
-                } else {
-                    print("Failed to save message to smile notes")
-                }
-            })
-            return
-        }
-        if !user.smileNotes!.contains(message.id) {
-            var updatedUser = user
-            updatedUser.smileNotes!.append(message.id)
-            RestApi.instance.updateUser(user: updatedUser).then({ response in
-                if response == 200 {
-                    print("Successfully saved message to smile notes")
-                } else {
-                    print("Failed to save message to smile notes")
-                }
-            })
-        } else {
-            print("User already has this message in smile notes")
-        }
+        RestApi.instance.createSmileNote(messageId: message.id, messageBody: message.body, sendername: message.senderName).then({ smileNote in
+            print("Got smile note from server: ", smileNote)
+        })
     }
     
     private func sendMessage() {
