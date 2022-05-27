@@ -111,8 +111,8 @@ class RestApi {
         return helper.createSmileNote(url: API_URL + "/smile-notes", createSmileNote: csn)
     }
     
-    public func getSmileNotes(id: String) -> Promise<[SmileNote]> {
-        return helper.callRestApi(url: API_URL + "/smile-notes" + id, method: .get, [SmileNote].self)
+    public func getSmileNotes() -> Promise<[SmileNote]> {
+        return helper.callRestApi(url: API_URL + "/smile-notes", method: .get, [SmileNote].self)
     }
     
     public func registerAPNToken() {
