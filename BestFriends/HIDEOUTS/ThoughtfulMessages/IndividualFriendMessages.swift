@@ -20,7 +20,7 @@ struct IndividualFriendMessages: View {
     let friend: User
     let atmosphere: Atmosphere
     
-    @State private var messages: [Message] = []
+    @State private var smileNotes: [SmileNote] = []
     
     var body: some View {
         ZStack {
@@ -79,8 +79,8 @@ struct IndividualFriendMessages: View {
                 
                 
                 ScrollView(.vertical) {
-                    ForEach(messages, id: \.id) { message in
-                        FriendMessageView(message: message)
+                    ForEach(smileNotes, id: \.id) { smileNote in
+                        FriendMessageView(smileNote: smileNote)
                     }
                 }
               
@@ -132,18 +132,15 @@ struct IndividualFriendMessages: View {
     }
     
     private func loadData() {
-        let message1 = Message(id: "1", senderId: "", senderName: "", body: "Message body 1", image: nil, createdOn: 0)
-        let message2 = Message(id: "2", senderId: "", senderName: "", body: "Message body 2", image: nil, createdOn: 0)
-        let message3 = Message(id: "3", senderId: "", senderName: "", body: "Message body 3", image: nil, createdOn: 0)
-        messages.append(message1)
-        messages.append(message2)
-        messages.append(message3)
+        RestApi.instance.getSmileNotes().then({ sn in
+            self.smileNotes = sn
+        })
     }
 }
 
 private struct FriendMessageView: View {
     
-    let message: Message
+    let smileNote: SmileNote
     
     var body: some View {
         ZStack {
@@ -152,12 +149,20 @@ private struct FriendMessageView: View {
                 .foregroundColor(.purple)
                 .cornerRadius(25)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            VStack {
+                Text(smileNote.senderName)
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .fontWeight(.medium)
+                    .multilineTextAlignment(.center)
+                
+                Text(smileNote.messageBody)
+                    .font(.system(size: 20))
+                    .foregroundColor(.white)
+                    .fontWeight(.medium)
+                    .multilineTextAlignment(.center)
+            }
             
-            Text(message.body)
-                .font(.system(size: 20))
-                .foregroundColor(.white)
-                .fontWeight(.medium)
-                .multilineTextAlignment(.center)
         }
     }
 }
