@@ -106,6 +106,15 @@ class RestApi {
         return helper.callRestApi(url: API_URL + "/atmosphere/mood/" + id, method: .get, MoodLog.self)
     }
     
+    public func createSmileNote(messageId: String, messageBody: String, sendername: String) -> Promise<SmileNote> {
+        let csn = CreateSmileNote(messageId: messageId, messageBody: messageBody, senderName: sendername)
+        return helper.createSmileNote(url: API_URL + "/smile-notes", createSmileNote: csn)
+    }
+    
+    public func getSmileNotes(id: String) -> Promise<[SmileNote]> {
+        return helper.callRestApi(url: API_URL + "/smile-notes" + id, method: .get, [SmileNote].self)
+    }
+    
     public func registerAPNToken() {
         Messaging.messaging().token { token, error in
           if let error = error {

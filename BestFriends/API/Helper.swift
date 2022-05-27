@@ -160,6 +160,16 @@ class Helper {
         }
     }
     
+    func createSmileNote(url: String, createSmileNote: CreateSmileNote) -> Promise<SmileNote> {
+        let payload = try? JSONEncoder().encode(createSmileNote)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, SmileNote.self).then { smileNote in
+            return Promise<SmileNote>(smileNote)
+        }
+    }
+    
     func getImage(url: String) -> Promise<Data> {
         return callRestApi(url: url, method: .get, ImageData.self).then { response in
             return Promise<Data>(response.image)
