@@ -21,7 +21,7 @@ struct HorizonHomeView: View {
                     
                     Image(systemName: "eyedropper").resizable().foregroundColor(.gray).frame(width: UIScreen.main.bounds.size.width / 5, height: UIScreen.main.bounds.size.width / 5, alignment: Alignment.center)
                    .padding()
-                })-.position(x: UIScreen.main.bounds.size.width / 1.2, y: UIScreen.main.bounds.size.width / UIScreen.main.bounds.size.width)
+                }).position(x: UIScreen.main.bounds.size.width / 1.2, y: UIScreen.main.bounds.size.width / UIScreen.main.bounds.size.width)
             
                 
                     Image(imageName).resizable().scaledToFit()
