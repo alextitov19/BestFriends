@@ -44,11 +44,16 @@ struct DramaCentralView: View {
                 Spacer()
                     .frame(height: 35)
                 
-                Text("you reach out first")
+                Text("Wow, you reached out first")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
-                Text("with a text & hearing")
+                Text("with a text message in Chat")
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                
+                Text("trying to fix this MESS and . . .")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
@@ -57,18 +62,13 @@ struct DramaCentralView: View {
                     .frame(height: 40)
                 
                 VStack {
-                Text("NOTHING")
+                Text("NO")
                     .font(.system(size: 80))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
                     .kerning(10)
-                
-//                Text("WORD")
-//                    .font(.system(size: 60))
-//                    .fontWeight(.ultraLight)
-//                    .foregroundColor(Color.blue)
-//                    .kerning(10)
-                Text("BACK")
+        
+                Text("RESPONSE")
                     .font(.system(size: 60))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)

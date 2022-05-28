@@ -12,6 +12,10 @@ import SwiftUI
 
 struct TryThis: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+//    let user: User
+//    let atmosphere: Atmosphere
+//    
     var body: some View {
 //        NavigationView {
             
@@ -24,7 +28,7 @@ struct TryThis: View {
                     .scaledToFill()
          
                 VStack {
-                    Text("While counting the HOURS")
+                    Text("Counting the HOURS")
                         .font(.system(size: 30))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
@@ -78,7 +82,7 @@ struct TryThis: View {
                             })
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height:25)
                         
                         NavigationLink(
                            destination: EmptyView(),
@@ -94,10 +98,14 @@ struct TryThis: View {
                            })
                       
                         
+                        Spacer()
+                            .frame(height:25)
                         
-                        
-                        NavigationLink(
-                            destination: EmptyView(),
+//                        NavigationLink(
+//                            destination: EmptyView(),
+                        Button(action: {
+                            sessionManager.showHome()
+                        },
                            label: {
                                Text("Go to HIDEOUTS")
                                    .fontWeight(.thin)
@@ -124,3 +132,11 @@ struct TryThis_Previews : PreviewProvider {
         TryThis()
     }
 }
+
+
+
+
+//
+//
+//let friends: [User]
+//let friendAtmospheres: [Atmosphere]
