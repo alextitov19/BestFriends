@@ -24,13 +24,13 @@ struct DramaCentralView: View {
             
            
             VStack {
-             Text("the ")
-                    .font(.system(size: 40))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.blue)
-                    .kerning(10)
-                
-                Text("WAITING")
+                Text("helping you through")
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                Spacer()
+                    .frame(height: 25)
+                Text("the WAITING")
                     .font(.system(size: 40))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
@@ -45,11 +45,11 @@ struct DramaCentralView: View {
                     .frame(height: 35)
                 
                 Text("you reach out first")
-                    .font(.system(size: 30))
+                    .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
-                Text("with a text")
-                    .font(.system(size: 30))
+                Text("with a text, and")
+                    .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                 
