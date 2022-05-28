@@ -83,8 +83,12 @@ struct TryThis: View {
                         Spacer()
                             .frame(height:25)
                         
-                        NavigationLink(
-                           destination: EmptyView(),
+//                        NavigationLink(
+//                           destination: EmptyView(),
+                        
+                        Button(action: {
+                            sessionManager.showHome()
+                        },
                            label: {
                                Text("Talk to a friend in Chat")
                                    .fontWeight(.thin)
