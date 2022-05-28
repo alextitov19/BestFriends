@@ -20,33 +20,23 @@ struct TextingNote: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            //            put in Friend 1 planet
-//            Image("2 weeks")
-//                .resizable()
-//                .frame(width: 400, height: 400)
-//
-            
-            
+           
             VStack {
-                Text("You Got ")
-                    .font(.system(size: 70, weight: .bold))
+                Text("You got ")
+                    .font(.system(size: 50, weight: .bold))
                     .fontWeight(.ultraLight)
-                    .foregroundColor(Color.purple)
+                    .foregroundColor(Color.blue)
                 
                 
-                Text("T H I S")
-                    .font(.system(size: 80, weight: .bold))
+                Text("THIS")
+                    .font(.system(size: 90, weight: .bold))
                     .fontWeight(.ultraLight)
-                    .foregroundColor(Color.purple)
+                    .foregroundColor(Color.blue)
                     .kerning(10)
                 
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 70)
                 
                 Text("“It always seems impossible until it's done.” — Nelson Mandela")
                     .fontWeight(.light)
@@ -55,14 +45,14 @@ struct TextingNote: View {
                     .frame(width: 310, height: 100, alignment: .leading)
                     .font(.system(size: 25))
                     .padding(10)
-                    .background(Color.purple)
-                    .cornerRadius(15)
+                    .background(Color.green)
+                    .cornerRadius(35)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
                 
                 
                 Spacer()
-                    .frame(height: 150)
+                    .frame(height: 100)
               
                 
                 NavigationLink(

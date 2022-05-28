@@ -48,7 +48,7 @@ struct DramaCentralView: View {
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
-                Text("with a text, and")
+                Text("with a text & hearing")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)

@@ -119,6 +119,7 @@
 		CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5429282123EA00BBF502 /* WhoFighting.swift */; };
 		CFAE7349283C748C00015FD2 /* UserBetaTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */; };
 		CFAE73512840429B00015FD2 /* DropDownChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE73502840429B00015FD2 /* DropDownChat.swift */; };
+		CFAE73542841ACD800015FD2 /* BlueModePlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE73532841ACD800015FD2 /* BlueModePlaylist.swift */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
 		CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */; };
@@ -255,6 +256,7 @@
 		CFAB5429282123EA00BBF502 /* WhoFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoFighting.swift; sourceTree = "<group>"; };
 		CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBetaTesting.swift; sourceTree = "<group>"; };
 		CFAE73502840429B00015FD2 /* DropDownChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownChat.swift; sourceTree = "<group>"; };
+		CFAE73532841ACD800015FD2 /* BlueModePlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModePlaylist.swift; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
 		CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendValutTrackMoods.swift; sourceTree = "<group>"; };
@@ -690,6 +692,14 @@
 			path = "Help Beta Test";
 			sourceTree = "<group>";
 		};
+		CFAE73522841ACB600015FD2 /* BlueModePlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE73532841ACD800015FD2 /* BlueModePlaylist.swift */,
+			);
+			path = BlueModePlaylist;
+			sourceTree = "<group>";
+		};
 		CFD04689282D6FDD00BF0B02 /* Atmosphere */ = {
 			isa = PBXGroup;
 			children = (
@@ -752,6 +762,7 @@
 				7ACB38542820A1D0009559AF /* Step 4 */,
 				7ACB38552820A29F009559AF /* Step 5 */,
 				CFAB5405281AA59500BBF502 /* Step6_TextingAnxiety */,
+				CFAE73522841ACB600015FD2 /* BlueModePlaylist */,
 				CFAB54232820FF9F00BBF502 /* Step 7 */,
 				CFAB54242820FFCC00BBF502 /* Push Notifiction Fight Invite */,
 				CFAB5417281E535400BBF502 /* HugFixAFight */,
@@ -979,6 +990,7 @@
 				CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,
+				CFAE73542841ACD800015FD2 /* BlueModePlaylist.swift in Sources */,
 				7ACB385328208D38009559AF /* ImagePicker.swift in Sources */,
 				CFAB540F281CA79200BBF502 /* Step5_Why.swift in Sources */,
 				CF3B65B9280081550003A714 /* SettingsNotificationsView.swift in Sources */,

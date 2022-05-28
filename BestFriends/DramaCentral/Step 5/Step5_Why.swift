@@ -25,7 +25,7 @@ struct Step5_Why: View {
                 
                 Text("What Started this")
                     .font(.system(size: 40))
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.leading)
             

@@ -1,15 +1,14 @@
 //
-//  ParentsFighting.swift
+//  BlueModePlaylist.swift
 //  BestFriends
 //
-//  Created by Social Tech on 5/3/22.
+//  Created by Social Tech on 5/27/22.
 //
-
 
 import Foundation
 import SwiftUI
 
-struct ParentsFighting: View {
+struct BlueModePlaylist: View {
     
     var body: some View {
         ZStack {
@@ -23,19 +22,19 @@ struct ParentsFighting: View {
             
             VStack {
                 
-                Text("We know how")
+                Text("Build")
                     .font(.system(size: 31))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
              
-                Text("U N S E T T E L I N G")
+                Text("BlueMode")
                     .font(.system(size: 45))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.blue)
                 
-                Text("this can be")
+                Text("Playlist")
                     .font(.system(size: 31))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
@@ -43,29 +42,6 @@ struct ParentsFighting: View {
                 
                 
                     
-                VStack {
-               
-                    Spacer()
-                    .frame(height: 50)
-                    
-                    Text("Questioning?")
-                        .font(.system(size: 40))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.blue)
-                        .kerning(10)
-           
-                    Spacer()
-                    .frame(height: 20)
-                    
-                Text("Are they getting divorced?")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                  
-                    Spacer()
-                    .frame(height: 10)
-                }
                 
             VStack {
                 Text("What happens to me?")
@@ -98,9 +74,9 @@ struct ParentsFighting: View {
                     .frame(height: 40)
                 
                 NavigationLink(
-                    destination: Step1_ParentsFighting(),
+                    destination: EmptyView(),
                     label: {
-                        Text("WE CAN HELP")
+                        Text("what here???")
                             .fontWeight(.thin)
                             .frame(width: 200, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -125,9 +101,9 @@ struct ParentsFighting: View {
 
 
 
-struct ParentsFighting_Previews : PreviewProvider {
+struct BlueModePlaylist_Previews : PreviewProvider {
     static var previews: some View {
-        ParentsFighting()
+        BlueModePlaylist()
     }
 }
 
