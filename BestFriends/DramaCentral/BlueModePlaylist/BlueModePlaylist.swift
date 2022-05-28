@@ -23,19 +23,22 @@ struct BlueModePlaylist: View {
             VStack {
                 
                 Text("Build")
-                    .font(.system(size: 31))
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-             
-                Text("BlueMode")
-                    .font(.system(size: 45))
+                    .font(.system(size: 50))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.blue)
+             
+                Text("BlueMode")
+                    .font(.system(size: 80))
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.blue)
+               
+                Spacer()
+                    .frame(height: 40)
                 
                 Text("Playlist")
-                    .font(.system(size: 31))
+                    .font(.system(size: 40))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
@@ -44,32 +47,8 @@ struct BlueModePlaylist: View {
                     
                 
             VStack {
-                Text("What happens to me?")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-              
-                Spacer()
-                .frame(height: 10)
-                
-                Text("I hate it when the screaming starts")
-                    .font(.system(size: 24))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                
-                Spacer()
-                .frame(height: 10)
-                
-                Text("What can I do?")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                
                
-         
+                
                 Spacer()
                     .frame(height: 40)
                 
