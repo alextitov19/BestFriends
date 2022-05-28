@@ -27,7 +27,7 @@ struct TryThis: View {
                     .scaledToFill()
          
                 VStack {
-                    Text("Counting the HOURS")
+                    Text("While counting the HOURS")
                         .font(.system(size: 30))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
