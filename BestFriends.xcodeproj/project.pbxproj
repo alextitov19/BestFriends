@@ -713,6 +713,7 @@
 			isa = PBXGroup;
 			children = (
 				CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */,
+				CFAE73522841ACB600015FD2 /* BlueModePlaylist */,
 				CFD0469A2837D9BC00BF0B02 /* PhotoPoP */,
 				CFD12CC82819E83900AB2539 /* ThoughtfulMessages */,
 			);
@@ -762,7 +763,6 @@
 				7ACB38542820A1D0009559AF /* Step 4 */,
 				7ACB38552820A29F009559AF /* Step 5 */,
 				CFAB5405281AA59500BBF502 /* Step6_TextingAnxiety */,
-				CFAE73522841ACB600015FD2 /* BlueModePlaylist */,
 				CFAB54232820FF9F00BBF502 /* Step 7 */,
 				CFAB54242820FFCC00BBF502 /* Push Notifiction Fight Invite */,
 				CFAB5417281E535400BBF502 /* HugFixAFight */,

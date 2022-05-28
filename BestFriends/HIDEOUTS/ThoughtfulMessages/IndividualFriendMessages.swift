@@ -40,41 +40,19 @@ struct IndividualFriendMessages: View {
 
             
             VStack {
-//                ZStack {
-//                    
-//                    
-//                    Image(systemName: "heart.fill")
-//                    //            Rectangle()
-//                        .resizable()
-//                        .frame(width: 140, height: 130, alignment: .leading)
-//                    //                .clipShape(Circle())
-//                        .foregroundColor(.purple)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
-//                    
-//                    
-//                    Text("aah!")
-//                        .font(.system(size: 45))
-//                        .foregroundColor(.white)
-//                        .fontWeight(.medium)
-//                        .multilineTextAlignment(.center)
-//                    Spacer()
-//                        .frame(height: 10)
-//                }
-                
-             
                 
                 
-                Text("my 'SPECIAL' \nchat messages from")
+                Text("'Long-tapped' \nchat messages from")
                     .font(.system(size: 17))
-                    .italic()
                     .fontWeight(.light)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                
+
                 Text(friend.firstName + " " + friend.lastName)
                     .font(.system(size: 30))
-                    .foregroundColor(.white)
-                
+                    .fontWeight(.light)
+                    .foregroundColor(.gray)
+
                 
                 
                 
@@ -86,30 +64,30 @@ struct IndividualFriendMessages: View {
               
 //                trying to put in link for PhotoPop
                 
-                Text("'SHAKE' your phone")
-                    .font(.system(size: 20))
-                    .fontWeight(.light)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                Text("for SPECIAL images")
-                    .font(.system(size: 20))
-                    .fontWeight(.light)
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                
-                NavigationLink(
-                    destination: SettingsView(),
-                    label: {
-                        Text("SetUp PhotoPoP")
-                            .fontWeight(.thin)
-                            .frame(width: 290, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 27))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                
+//                Text("'SHAKE' your phone")
+//                    .font(.system(size: 20))
+//                    .fontWeight(.light)
+//                    .foregroundColor(.white)
+//                    .multilineTextAlignment(.center)
+//                Text("for SPECIAL images")
+//                    .font(.system(size: 20))
+//                    .fontWeight(.light)
+//                    .foregroundColor(.white)
+//                    .multilineTextAlignment(.center)
+//                
+//               NavigationLink(
+//                    destination: SettingsView(),
+//                    label: {
+//                        Text("SetUp PhotoPoP")
+//                            .fontWeight(.thin)
+//                            .frame(width: 290, height: 40)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 27))
+//                            .background(ColorManager.purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
+//
                 Spacer ()
                     .frame(height: 20)
                 
@@ -146,20 +124,20 @@ private struct FriendMessageView: View {
         ZStack {
             Rectangle()
                 .frame(width: 350, height: 50)
-                .foregroundColor(.purple)
+                .foregroundColor(.gray)
                 .cornerRadius(25)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
             VStack {
                 Text(smileNote.senderName)
-                    .font(.system(size: 30))
+                    .font(.system(size: 15))
                     .foregroundColor(.white)
-                    .fontWeight(.medium)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
                 Text(smileNote.messageBody)
                     .font(.system(size: 20))
                     .foregroundColor(.white)
-                    .fontWeight(.medium)
+                    .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
             }
             

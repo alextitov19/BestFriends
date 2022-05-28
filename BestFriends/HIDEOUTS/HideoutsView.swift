@@ -43,13 +43,13 @@ struct HideoutsView: View {
 
             .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
            
-              NavigationLink(destination: EmptyView(), label: {
-                  HideoutsViewCircle (color: .orange, friendName: "PhotoPoP")
+              NavigationLink(destination: SettingsView(), label: {
+                  HideoutsViewCircle (color: .orange, friendName: "shake \n'PhotoPoP' \nphone")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: EmptyView(), label: { HideoutsViewCircle (color: .green, friendName: "BestFriends \nPlaylist")
+            NavigationLink(destination: BlueModePlaylist(), label: { HideoutsViewCircle (color: .green, friendName: "BestFriends \nPlaylist")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
@@ -119,21 +119,3 @@ struct HideoutsViewCircle: View {
         }
     }
 }
-
-//
-//struct HideoutsView_Previews : PreviewProvider {
-//    static var previews: some View {
-//        HideoutsView()
-//
-////        HideoutsView(user: User, atmosphere: Atmosphere)
-//    }
-//
-//}
-
-//
-//    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-
-
-
-//    .glow(color: glowColor(), radius: 20)
-//        private func glowColor() -> Color {
