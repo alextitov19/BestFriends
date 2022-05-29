@@ -77,9 +77,9 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("Group \nChating \nvs.1-on-1")
+                                    Text("Be \nAccountable")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
+                                        .font(.system(size: 18, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 }
                             })

@@ -39,13 +39,13 @@ struct Step3FG_Accountability: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Trust, Safety & Always There")
+                Text("Trust, Safety &")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                 
-                Text("???")
-                    .font(.system(size: 26))
+                Text("Always there for each other")
+                    .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                
@@ -53,7 +53,7 @@ struct Step3FG_Accountability: View {
                     .frame(height: 20)
                 
             VStack {
-                Text("- maybe think of your FG as a team?  \n- its you're FG - you're in control \n- you love to talk - so, talk things out \n- FG drama -plan a FG event \n- maybe set some boundries \n- be accountable to each other? \n- ?? Q: can all have equal voice? \n- ?? Q: set up in Horizons or separate")
+                Text("- maybe think of your FG as a team?  \n- its you're FG - you're in control \n- you love to talk - so, talk things out")
                     .font(.system(size: 24))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
