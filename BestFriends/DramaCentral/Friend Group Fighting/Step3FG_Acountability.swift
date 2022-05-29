@@ -53,7 +53,7 @@ struct Step3FG_Accountability: View {
                     .frame(height: 20)
                 
             VStack {
-                Text("- maybe think of your FG as a team?  \n- its your FG - your in control \n- you love to talk - so, talk things out \n- FG drama -plan a FG event \n- maybe set some boundries \n- be accountable to each other? \n- ?? Q: can all have equal voice? \n- ?? Q: set up in Horizons or separate")
+                Text("- maybe think of your FG as a team?  \n- its you're FG - you're in control \n- you love to talk - so, talk things out \n- FG drama -plan a FG event \n- maybe set some boundries \n- be accountable to each other? \n- ?? Q: can all have equal voice? \n- ?? Q: set up in Horizons or separate")
                     .font(.system(size: 24))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
