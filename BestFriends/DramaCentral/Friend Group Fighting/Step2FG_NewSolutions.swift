@@ -30,7 +30,7 @@ struct Step2FG_NewSolutions: View {
                     
     
 
-                    Text("Friend Groups")
+                    Text("FG Ideas")
                         .font(.system(size: 60))
                         .foregroundColor(.blue)
                         .fontWeight(.ultraLight)
@@ -124,7 +124,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .font(.system(size: 130, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
-                                    Text("Friend \nGroup \nDRAMA")
+                                    Text("Build \nYour \nOwn")
                                     //                            .background()
                                         .foregroundColor(.white)
                                         .font(.system(size: 25, weight: .bold))

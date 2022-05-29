@@ -1,8 +1,8 @@
 //
-//  Step1FG_AcceptedSolutions.swift
+//  Step2FG_TeenBehavior.swift
 //  BestFriends
 //
-//  Created by Social Tech on 5/8/22.
+//  Created by Social Tech on 5/29/22.
 //
 
 import Foundation
@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 import AVKit
 
-struct Step1FG_SuggestedSolutions: View {
+struct Step2FG_TeenBehavior: View {
     
     @EnvironmentObject var sessionManager: SessionManager
 
@@ -30,13 +30,8 @@ struct Step1FG_SuggestedSolutions: View {
             
             VStack {
           
-           
-                
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("Teen Reality")
-                    .font(.system(size: 70))
+                Text("Here's the Deal")
+                    .font(.system(size: 55))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -44,34 +39,42 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Teens say they dislike drama")
-                    .font(.system(size: 30))
+                Text("Yep, we're teens ")
+                    .font(.system(size: 35))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
+                Spacer()
+                    .frame(height: 10)
                 
-                Text("but sometimes they")
-                    .font(.system(size: 26))
+                Text("Yep, we have some ideas")
+                    .font(.system(size: 35))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.blue)
+                Spacer()
+                    .frame(height: 10)
+            VStack {
+                
+                Text("But, you decide  ")
+                    .font(.system(size: 35))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 10)
                 
-            VStack {
-                Text("- are drawn to it \n- get involved in others fights \n- commerizerate playing both sides \n- express their opinions \n- play two against one \n- talk behind others backs")
-                    .font(.system(size: 24))
+                Text("YOU build YOUR solution")
+                    .font(.system(size: 35))
                     .fontWeight(.light)
-                    .foregroundColor(Color.white)
-     
+                    .foregroundColor(Color.blue)
                 
-                
+             
                 
             VStack {
                 Spacer()
-                    .frame(height: 45)
+                    .frame(height: 80)
                     
                     NavigationLink(
-                        destination: Step2FG_TeenBehavior(),
+                        destination: Step3FG_Accountability(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
@@ -86,24 +89,30 @@ struct Step1FG_SuggestedSolutions: View {
 
             }
                 
-                Spacer()
-                    .frame(height: 25)
-                
-                Text("Hey, we're just teens")
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-                
-                Text("being tenns")
-                    .font(.system(size: 26))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
                
                 Spacer()
                     .frame(height: 25)
                 
-                Text("OK, now what do we do?")
-                    .font(.system(size: 30))
+                Text("Reality: if we tell you how to build it you will try to figure out why it is stupid.")
+                    .font(.system(size: 10))
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+             
+                Spacer()
+                    .frame(height: 5)
+                
+                Text("Every FG is different - you need to build a solution that works for your FG.")
+                    .font(.system(size: 10))
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 5)
+                
+                Text("Besides, if it's your IDEA you will LOVE IT -right?")
+                    .font(.system(size: 10))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -117,9 +126,9 @@ struct Step1FG_SuggestedSolutions: View {
 
 
 
-struct Step1FG_SuggestedSolutions_Previews : PreviewProvider {
+struct Step2FG_TeenBehavior_Previews : PreviewProvider {
     static var previews: some View {
-        Step1FG_SuggestedSolutions()
+        Step2FG_TeenBehavior()
     }
 }
 
