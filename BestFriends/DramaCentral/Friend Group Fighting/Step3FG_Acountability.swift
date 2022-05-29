@@ -21,35 +21,30 @@ struct Step3FG_Accountability: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
-            
-//
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//
-            
-            VStack {
+          VStack {
           
            
-                
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("Teen Reality")
-                    .font(.system(size: 70))
+                Text("Friend Group")
+                    .font(.system(size: 50))
                     .foregroundColor(.white)
-                    .fontWeight(.light)
+                    .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
+              
+              Text("H A R M O N Y")
+                  .font(.system(size: 60))
+                  .foregroundColor(.white)
+                  .fontWeight(.ultraLight)
+                  .multilineTextAlignment(.center)
                     
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Teens say they dislike drama")
+                Text("Trust, Safety & Always There")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                 
-                Text("but sometimes they")
+                Text("???")
                     .font(.system(size: 26))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
@@ -58,7 +53,7 @@ struct Step3FG_Accountability: View {
                     .frame(height: 20)
                 
             VStack {
-                Text("- are drawn to it \n- get involved in others fights \n- commerizerate playing both sides \n- express their opinions \n- play two against one \n- talk behind others backs \n- win friends at the cost of others")
+                Text("- maybe think of your FG as a team?  \n- its your FG - your in control \n- you love to talk - so, talk things out \n- FG drama -plan a FG event \n- maybe set some boundries \n- be accountable to each other? \n- \n-")
                     .font(.system(size: 24))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
@@ -88,7 +83,7 @@ struct Step3FG_Accountability: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("OK, now what do we do?")
+                Text("")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .fontWeight(.light)
