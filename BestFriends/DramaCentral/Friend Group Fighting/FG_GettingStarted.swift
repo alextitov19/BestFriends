@@ -74,11 +74,10 @@ struct FG_GettingStarted: View {
 
                 
             VStack {
-                Spacer()
-                    .frame(height: 90)
+            
                     
                     NavigationLink(
-                        destination: FG_BeAccountable(),
+                        destination: FG_Team(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)

@@ -1,9 +1,10 @@
 //
-//  FG_BeAccountable.swift
+//  FG_Team.swift
 //  BestFriends
 //
 //  Created by Social Tech on 5/30/22.
 //
+
 
 
 import Foundation
@@ -11,7 +12,7 @@ import Foundation
 import SwiftUI
 
 
-struct FG_BeAccountable: View {
+struct FG_Team: View {
     
     @EnvironmentObject var sessionManager: SessionManager
 
@@ -29,19 +30,19 @@ struct FG_BeAccountable: View {
                
                   
                   VStack {
-                      Text("Being Accountable")
+                      Text("consider . . .")
                           .font(.system(size: 40))
                           .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                    
-                        Text("This will be a little more difficult")
+                        Text("coming together")
                             .font(.system(size: 50))
                             .foregroundColor(.white)
                             .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
                       
-                      Text("?????")
+                      Text("as a TEAM")
                           .font(.system(size: 60))
                           .foregroundColor(.white)
                           .fontWeight(.ultraLight)
@@ -49,16 +50,23 @@ struct FG_BeAccountable: View {
                             
                         Spacer()
                             .frame(height: 50)
-                     
+                        
+                      Text("- Teams rely on one another to win? \n- teams have each other's back \n- teams have common dreams \n- teams are basically - bad ass!")
+                          .font(.system(size: 24))
+                          .fontWeight(.light)
+                          .foregroundColor(Color.white)
+           
+                      Spacer()
+                          .frame(height: 60)
             VStack {
                       
-                        Text("We are moving to")
+                        Text("just a thought from our")
                             .font(.system(size: 30))
                             .italic()
                             .fontWeight(.light)
                             .foregroundColor(Color.blue)
                         
-                        Text("HORIZONS")
+                        Text("teens")
                             .font(.system(size: 50))
                             .italic()
                             .fontWeight(.light)
@@ -67,10 +75,10 @@ struct FG_BeAccountable: View {
                
             VStack {
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 40)
                     
                     NavigationLink(
-                        destination: Step2FG_NewSolutions(),
+                        destination: FG_BeAccountable(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
@@ -94,9 +102,10 @@ struct FG_BeAccountable: View {
 
 
 
-struct FG_BeAccountable_Previews : PreviewProvider {
+struct FG_Team_Previews : PreviewProvider {
     static var previews: some View {
-        FG_BeAccountable()
+        FG_Team()
     }
 }
+
 
