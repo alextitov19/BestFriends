@@ -30,7 +30,7 @@ struct Step2FG_NewSolutions: View {
                     
     
 
-                    Text("FG Ideas")
+                    Text("Some Ideas")
                         .font(.system(size: 60))
                         .foregroundColor(.blue)
                         .fontWeight(.ultraLight)
@@ -53,7 +53,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("Plan \nGroup \nActivity")
+                                    Text("Pick the \nRIGHT \nFriend Gp")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -77,7 +77,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("Be \nAccountable")
+                                    Text("Plan \nsomething \nFUN")
                                         .foregroundColor(.white)
                                         .font(.system(size: 18, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -101,9 +101,9 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("Who's \nFighting")
+                                    Text("Be a \nTEAM")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
+                                        .font(.system(size: 18, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 }
                             })
@@ -111,7 +111,7 @@ struct Step2FG_NewSolutions: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            NavigationLink(destination: Step1_NotReadyTalk(), label: {
+                            NavigationLink(destination: FG_GettingStarted(), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 130, height: 130)
@@ -124,12 +124,11 @@ struct Step2FG_NewSolutions: View {
 //                                        .font(.system(size: 130, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
-                                    Text("Build \nYour \nOwn")
-                                    //                            .background()
+                                    Text("Getting \nStarted")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 25, weight: .bold))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    
+                                 
                                     
                                 }
                             })
@@ -176,9 +175,9 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("Set \nBoundries")
+                                    Text("Be \nAccountable")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
+                                        .font(.system(size: 18, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 }
                             })
@@ -199,7 +198,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("Be \nCool")
+                                    Text("Set some \nBoundries")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -212,7 +211,7 @@ struct Step2FG_NewSolutions: View {
                     }
                     
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 60)
                     
 //                VStack {
 //

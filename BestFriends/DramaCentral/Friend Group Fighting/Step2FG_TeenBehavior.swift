@@ -36,7 +36,7 @@ struct Step2FG_TeenBehavior: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Our teens have")
+                Text("Our teen's have")
                     .font(.system(size: 35))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)

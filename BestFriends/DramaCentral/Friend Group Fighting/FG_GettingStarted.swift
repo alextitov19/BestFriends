@@ -1,16 +1,17 @@
 //
-//  Step3FG_Acountability.swift
+//  FG_GettingStarted.swift
 //  BestFriends
 //
-//  Created by Social Tech on 5/28/22.
+//  Created by Social Tech on 5/30/22.
 //
+
 
 import Foundation
 
 import SwiftUI
 import AVKit
 
-struct Step3FG_Accountability: View {
+struct FG_GettingStarted: View {
     
     @EnvironmentObject var sessionManager: SessionManager
 
@@ -24,13 +25,13 @@ struct Step3FG_Accountability: View {
           VStack {
           
            
-                Text("Friend Group")
+                Text("First,")
                     .font(.system(size: 50))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
               
-              Text("H A R M O N Y")
+              Text("It's Okay")
                   .font(.system(size: 60))
                   .foregroundColor(.white)
                   .fontWeight(.ultraLight)
@@ -39,12 +40,12 @@ struct Step3FG_Accountability: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Trust, safety &")
+                Text("Everything is ")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                 
-                Text("always there for each other")
+                Text("never going to be perfect")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
@@ -52,21 +53,21 @@ struct Step3FG_Accountability: View {
                 Spacer()
                     .frame(height: 40)
                 
-            VStack {
-                Text("- maybe think of your FG as a team? \n- teams watch out for each other \n- its you're team - you're in control \n- you love to talk - so, lets talk")
-                    .font(.system(size: 24))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-     
-                
-                
+//            VStack {
+//                Text("- maybe think of your FG as a team? \n- teams watch out for each other \n- its you're team - you're in control \n- you love to talk - so, lets talk")
+//                    .font(.system(size: 24))
+//                    .fontWeight(.light)
+//                    .foregroundColor(Color.white)
+//
+//
+//
                 
             VStack {
                 Spacer()
                     .frame(height: 145)
                     
                     NavigationLink(
-                        destination: Step2FG_NewSolutions(),
+                        destination: FG_BeAccountable(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
@@ -93,14 +94,14 @@ struct Step3FG_Accountability: View {
     }
 }
 }
-}
 
 
 
 
-struct Step3FG_Accountability_Previews : PreviewProvider {
+
+struct FG_GettingStarted_Previews : PreviewProvider {
     static var previews: some View {
-        Step3FG_Accountability()
+        FG_GettingStarted()
     }
 }
 

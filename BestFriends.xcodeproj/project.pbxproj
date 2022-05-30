@@ -105,6 +105,8 @@
 		CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */; };
 		CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */; };
 		CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */; };
+		CF9E33C8284530CF00107433 /* FG_GettingStarted.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C7284530CF00107433 /* FG_GettingStarted.swift */; };
+		CF9E33CA2845323200107433 /* FG_BeAccountable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C92845323200107433 /* FG_BeAccountable.swift */; };
 		CFAB5400281A99B600BBF502 /* Step6_TextingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */; };
 		CFAB5402281A9A1D00BBF502 /* Step7_TimeToTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */; };
 		CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */; };
@@ -245,6 +247,8 @@
 		CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3FG_Acountability.swift; sourceTree = "<group>"; };
 		CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2FG_TeenBehavior.swift; sourceTree = "<group>"; };
 		CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_OurAdvantage.swift; sourceTree = "<group>"; };
+		CF9E33C7284530CF00107433 /* FG_GettingStarted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_GettingStarted.swift; sourceTree = "<group>"; };
+		CF9E33C92845323200107433 /* FG_BeAccountable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_BeAccountable.swift; sourceTree = "<group>"; };
 		CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step6_TextingFirst.swift; sourceTree = "<group>"; };
 		CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step7_TimeToTalk.swift; sourceTree = "<group>"; };
 		CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4_NuclearOption.swift; sourceTree = "<group>"; };
@@ -538,6 +542,8 @@
 				CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */,
 				CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */,
 				CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */,
+				CF9E33C7284530CF00107433 /* FG_GettingStarted.swift */,
+				CF9E33C92845323200107433 /* FG_BeAccountable.swift */,
 			);
 			path = "Friend Group Fighting";
 			sourceTree = "<group>";
@@ -1006,6 +1012,7 @@
 				CFAB540F281CA79200BBF502 /* Step5_Why.swift in Sources */,
 				CF3B65B9280081550003A714 /* SettingsNotificationsView.swift in Sources */,
 				CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */,
+				CF9E33C8284530CF00107433 /* FG_GettingStarted.swift in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
 				CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */,
 				CFAB541B281E5F8300BBF502 /* YouGotThis.swift in Sources */,
@@ -1039,6 +1046,7 @@
 				CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */,
 				CFAB5413281D145100BBF502 /* Step2_FightLandingView.swift in Sources */,
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
+				CF9E33CA2845323200107433 /* FG_BeAccountable.swift in Sources */,
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
