@@ -534,8 +534,8 @@
 			children = (
 				CF381A5128283D5C00B3719E /* IntroFriendGpFight.swift */,
 				CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */,
-				CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */,
 				CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */,
+				CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */,
 				CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */,
 				CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */,
 			);

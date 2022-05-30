@@ -30,59 +30,70 @@ struct Step2FG_TeenBehavior: View {
             
             VStack {
                 
-                Text("Use who we are")
-                    .font(.system(size: 55))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                Text("too our ADVANTAGE")
-                    .font(.system(size: 55))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
           
-                Text("Here's the Deal")
-                    .font(.system(size: 55))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
+              
                     
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Yep, we're teens ")
+                Text("Our teens have")
                     .font(.system(size: 35))
                     .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("BestFriend's has some ideas")
-                    .font(.system(size: 31))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-                Spacer()
-                    .frame(height: 10)
-            VStack {
-                
-                Text("But, you decide  ")
-                    .font(.system(size: 35))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-               
-                Spacer()
-                    .frame(height: 10)
-                
-                Text("YOU build YOUR solution")
-                    .font(.system(size: 35))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-                
+                    .foregroundColor(Color.white)
              
                 
+                Text("some ideas, but ...")
+                    .font(.system(size: 31))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                
+                Spacer()
+                    .frame(height: 35)
+                
+            
+                
+                Text("All Friend Groups are ")
+                    .font(.system(size: 40))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.blue)
+          
+                
+                Text("DIFFERENT")
+                    .font(.system(size: 55))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.blue)
+                
+         
+                
             VStack {
                 Spacer()
-                    .frame(height: 80)
+                    .frame(height: 25)
+                
+                Text("Let's Customize")
+                    .font(.system(size: 30))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+             
+                
+                Text("& Accessorize")
+                    .font(.system(size: 30))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                
+                Spacer()
+                    .frame(height: 25)
+                
+                Text("too exactly fit your")
+                    .font(.system(size: 40))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.blue)
+                Text("FRIEND GROUP")
+                    .font(.system(size: 55))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.blue)
+          
+                Spacer()
+                    .frame(height: 60)
                     
                     NavigationLink(
                         destination: Step3FG_Accountability(),
@@ -100,35 +111,7 @@ struct Step2FG_TeenBehavior: View {
 
             }
                 
-               
-                Spacer()
-                    .frame(height: 25)
-                
-                Text("Reality: if we tell you how to build it you will try to figure out why it is stupid.")
-                    .font(.system(size: 10))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-             
-                Spacer()
-                    .frame(height: 5)
-                
-                Text("Every FG is different - you need to build a solution that works for your FG.")
-                    .font(.system(size: 10))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 5)
-                
-                Text("Besides, if it's your IDEA you will LOVE IT -right?")
-                    .font(.system(size: 10))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
-        }
+         
     }
 }
 }
