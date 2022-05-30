@@ -59,7 +59,7 @@ struct IntroFriendGpFight: View {
                     .frame(height: 15)
                 
                    
-                Text("to handle drama in Friend Groups")
+                Text("to handle Friend Group DRAMA")
                     .font(.system(size: 24))
                     .italic()
                     .foregroundColor(.white)
