@@ -36,7 +36,7 @@ struct IntroFriendGpFight: View {
 //                Spacer()
 //                    .frame(height: 20)
                 Text("Problem")
-                    .font(.system(size: 70))
+                    .font(.system(size: 80))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
@@ -45,19 +45,25 @@ struct IntroFriendGpFight: View {
                 
                 Text("Teens don't fit societie's")
                     .font(.system(size: 27))
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                     .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                 
+                
                 Spacer()
                     .frame(height: 5)
                  
                 Text("'Suggested Solutions'")
                     .font(.system(size: 27))
+                    .foregroundColor(.blue)
+                    .fontWeight(.light)
+                Spacer()
+                    .frame(height: 15)
+                
+                   
+                Text("to handle drama in Friend Groups")
+                    .font(.system(size: 24))
+                    .italic()
                     .foregroundColor(.white)
                     .fontWeight(.light)
-                   
-                
             VStack {
                     Spacer()
                         .frame(height: 60)
@@ -86,7 +92,7 @@ struct IntroFriendGpFight: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("Ignore fights in your Friend Group \n\nIf two friends are fighting;\n- Don't pick sides \n- Don't commerizate \n- Don't personalize their fight \n\nThe two fighting must fix it")
+                Text("1) Ignore all fights in your Friend Group \n\n2) If two friends are fighting;\n.   .   . Don't pick sides \n.   .   . Don't commerizate \n.   .   . Don't personalize their fight \n\n3) The two fighting must fix it - not you")
                     .font(.system(size: 23))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
