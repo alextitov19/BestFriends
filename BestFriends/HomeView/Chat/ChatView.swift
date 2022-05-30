@@ -30,6 +30,7 @@ struct ChatView: View {
     @State private var messageBody: String = ""
     
     var body: some View {
+
         ZStack {
             AdPlayerView(name: "cloud")
                 .ignoresSafeArea()
@@ -40,6 +41,7 @@ struct ChatView: View {
                 Text(group.name)
                     .task {
                         await listenForMessages()
+                        
                     }
                 
                 // MARK: Main scroll view

@@ -116,31 +116,42 @@ struct ChatBubble: View {
 private struct MyChatMessage: View {
     
     let messageBody: String
-    
+    let options: [DropdownOption] = [
+       DropdownOption(key: "d", value: "Save to SmileNotes"),
+       DropdownOption(key: "x", value: "Delete Message"),
+       DropdownOption(key: "uniqueKey", value: "Report User"),
+
+   ]
     var body: some View {
         HStack {
             Spacer()
-            
-            Text(messageBody)
-                .padding(10)
-                .multilineTextAlignment(.leading)
-                .font(.system(size: 16).weight(.light))
-                .foregroundColor(.white)
-                .background(ColorManager.purple3)
-                .cornerRadius(15)
+            DropdownSelector(placeholder: messageBody, options: options)
+//            Text(messageBody)
+//                .padding(10)
+//                .multilineTextAlignment(.leading)
+//                .font(.system(size: 16).weight(.light))
+//                .foregroundColor(.white)
+//                .background(ColorManager.purple3)
+//                .cornerRadius(15)
         }
         .padding(.horizontal, 5)
     }
 }
 
 private struct FriendChatMessage: View {
-    
+    let options: [DropdownOption] = [
+        DropdownOption(key: "d", value: "Save to SmileNotes"),
+       DropdownOption(key: "x", value: "Delete Message"),
+       DropdownOption(key: "uniqueKey", value: "Report User"),
+
+   ]
     let name: String
     let messageBody: String
     
     var body: some View {
         VStack {
             HStack {
+                DropdownSelector(placeholder: name + "\n" + messageBody, options: options)
                 Text(name)
                     .frame(width: 200, alignment: .leading)
                     .foregroundColor(.white)

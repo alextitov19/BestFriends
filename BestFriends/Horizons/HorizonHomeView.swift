@@ -10,6 +10,7 @@ import SwiftUI
 
 struct HorizonHomeView: View {
     @State var imageName = "blankrocketimage"
+         
     var body: some View {
         
         ZStack{
@@ -42,6 +43,7 @@ struct HorizonHomeView: View {
                 }){
                     Image(systemName: "plus.circle").resizable().frame(width: UIScreen.main.bounds.size.width / 3.5, height: UIScreen.main.bounds.size.width / 3.5, alignment: Alignment.center)
                 }.foregroundColor(.gray).padding().position(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height / 1.9)
+             
               
             }
         }

@@ -6,16 +6,18 @@
 //
 
 import Foundation
-
-import Foundation
 import SwiftUI
-
+import Promises
 struct TryThis: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-    
-    
+    @State private var homeData: HomeData?
+    init() {
+        print("is this working")
+          getHomeData()
+       }
     var body: some View {
+       
 //        NavigationView {
             
             ZStack {
@@ -24,7 +26,10 @@ struct TryThis: View {
                 Image("purpleBackground")
                     .resizable()
                     .ignoresSafeArea()
-                    .scaledToFill()
+                    .scaledToFill().onAppear{
+                        print("is this working")
+                        getHomeData()
+                    }
          
                 VStack {
                     Text("While counting the HOURS")
@@ -79,18 +84,13 @@ struct TryThis: View {
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
-                        
+                        if homeData != nil {
                         Spacer()
                             .frame(height:25)
-                        
-//                        NavigationLink(
-//                           destination: EmptyView(),
-                        
-                        Button(action: {
-                            sessionManager.showHome()
-                        },
+                        NavigationLink(
+                            destination: HideoutsView(user: self.homeData!.user, atmosphere: self.homeData!.atmosphere, friends: self.homeData!.friends, friendAtmospheres: self.homeData!.friendAtmospheres),
                            label: {
-                               Text("Talk to a friend in Chat")
+                               Text("Go To Hideouts")
                                    .fontWeight(.thin)
                                    .frame(width: 330, height: 40)
                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -98,7 +98,10 @@ struct TryThis: View {
                                    .background(ColorManager.purple3)
                                    .cornerRadius(15)
                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                           }).onAppear(perform:{
+                               getHomeData()
                            })
+                        }
                       
                         
                         Spacer()
@@ -110,7 +113,7 @@ struct TryThis: View {
                             sessionManager.showHome()
                         },
                            label: {
-                               Text("Go to HIDEOUTS")
+                               Text("Go to Chat")
                                    .fontWeight(.thin)
                                    .frame(width: 330, height: 40)
                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -124,22 +127,26 @@ struct TryThis: View {
                 }
             }
                     
+            }.onAppear{
+                getHomeData()
+            }
+    }
+    private func getHomeData() {
+        RestApi.instance.getHomeData().then{ data in
+            print("Got HomeData: ", data)
+            homeData = data
+        }.catch { err in
+            print("Got error")
+            print(err)
         }
+        
     }
         
 }
 
 
-struct TryThis_Previews : PreviewProvider {
-    static var previews: some View {
-        TryThis()
-    }
-}
-
-
-
-
-//
-//
-//let friends: [User]
-//let friendAtmospheres: [Atmosphere]
+//struct TryThis_Previews : PreviewProvider {
+//    static var previews: some View {
+//        TryThis()
+//    }
+//}

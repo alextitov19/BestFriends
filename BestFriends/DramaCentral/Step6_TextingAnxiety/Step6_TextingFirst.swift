@@ -151,11 +151,11 @@ struct Step6_TextingFirst: View {
 }
 
 
-struct TextingFirst_Previews : PreviewProvider {
-    static var previews: some View {
-        Step6_TextingFirst()
-    }
-}
+//struct TextingFirst_Previews : PreviewProvider {
+//    static var previews: some View {
+//        Step6_TextingFirst()
+//    }
+//}
 
 
 

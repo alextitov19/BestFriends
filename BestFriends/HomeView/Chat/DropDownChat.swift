@@ -74,25 +74,17 @@ struct DropdownSelector: View {
         Button(action: {
             self.shouldShowDropdown.toggle()
         }) {
-            HStack {
+
                 Text(selectedOption == nil ? placeholder : selectedOption!.value)
                     .font(.system(size: 14))
-                    .foregroundColor(selectedOption == nil ? Color.gray: Color.black)
-
-                Spacer()
-
-                Image(systemName: self.shouldShowDropdown ? "arrowtriangle.up.fill" : "arrowtriangle.down.fill")
-                    .resizable()
-                    .frame(width: 9, height: 5)
-                    .font(Font.system(size: 9, weight: .medium))
-                    .foregroundColor(Color.black)
-            }
+                    .foregroundColor(Color.white).multilineTextAlignment(.trailing)
+      
         }
         .padding(.horizontal)
         .cornerRadius(5)
-        .frame(width: .infinity, height: self.buttonHeight)
+        .frame(minWidth: 200, idealWidth: 200, maxWidth: UIScreen.main.bounds.size.width - 100, minHeight: self.buttonHeight, idealHeight: self.buttonHeight, maxHeight: self.buttonHeight)
         .overlay(
-            RoundedRectangle(cornerRadius: 5)
+            RoundedRectangle(cornerRadius: 15)
                 .stroke(Color.gray, lineWidth: 1)
         )
         .overlay(
@@ -108,7 +100,7 @@ struct DropdownSelector: View {
             }, alignment: .topLeading
         )
         .background(
-            RoundedRectangle(cornerRadius: 5).fill(Color.white)
+            RoundedRectangle(cornerRadius: 15).fill(ColorManager.purple3.opacity(0.5))
         )
     }
 }
@@ -124,12 +116,7 @@ struct DropdownSelector: View {
 //        UUID().uuidString
 //   }
 //
-//    static let options: [DropdownOption] = [
-//        DropdownOption(key: uniqueKey, value: "Save to SmileNotes"),
-//        DropdownOption(key: uniqueKey, value: "Delete Message"),
-//        DropdownOption(key: uniqueKey, value: "Report User"),
-//
-//    ]
+
 //}
 //    
 
