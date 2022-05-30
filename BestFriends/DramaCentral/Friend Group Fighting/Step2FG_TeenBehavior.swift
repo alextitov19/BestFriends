@@ -29,6 +29,17 @@ struct Step2FG_TeenBehavior: View {
 //
             
             VStack {
+                
+                Text("Use who we are")
+                    .font(.system(size: 55))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                Text("too our ADVANTAGE")
+                    .font(.system(size: 55))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
           
                 Text("Here's the Deal")
                     .font(.system(size: 55))

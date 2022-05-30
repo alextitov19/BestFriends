@@ -44,7 +44,7 @@ struct Step1FG_SuggestedSolutions: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Wow, that list did not sound")
+                Text("Wow, that list doesn't sound")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
