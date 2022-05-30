@@ -46,8 +46,8 @@ struct Step2FG_TeenBehavior: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("Yep, we have some ideas")
-                    .font(.system(size: 35))
+                Text("BestFriend's has some ideas")
+                    .font(.system(size: 31))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                 Spacer()
