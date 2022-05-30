@@ -36,21 +36,21 @@ struct Step1FG_SuggestedSolutions: View {
                     .frame(height: 10)
                 
                 Text("Teen Reality")
-                    .font(.system(size: 70))
+                    .font(.system(size: 75))
                     .foregroundColor(.white)
-                    .fontWeight(.light)
+                    .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                     
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Teens say they dislike drama")
+                Text("Wow, that list did not sound")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                 
-                Text("but sometimes they")
-                    .font(.system(size: 26))
+                Text("like me and my friends")
+                    .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                
@@ -58,12 +58,23 @@ struct Step1FG_SuggestedSolutions: View {
                     .frame(height: 20)
                 
             VStack {
-                Text("- are drawn to it \n- get involved in others fights \n- commerizerate playing both sides \n- express their opinions \n- play two against one \n- talk behind others backs")
+                Text("- we can't just ignore fights \n- we get involved \n- we sort of commerizerate \n- we for sure express our opinions \n- may even talk behind their back")
                     .font(.system(size: 24))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
      
+                Spacer()
+                    .frame(height: 25)
                 
+                Text("Hey, we're just teens")
+                    .font(.system(size: 37))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                
+                Text("being teens")
+                    .font(.system(size: 40))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
                 
                 
             VStack {
@@ -86,23 +97,12 @@ struct Step1FG_SuggestedSolutions: View {
 
             }
                 
-                Spacer()
-                    .frame(height: 25)
-                
-                Text("Hey, we're just teens")
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-                
-                Text("being tenns")
-                    .font(.system(size: 26))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
+             
                
                 Spacer()
                     .frame(height: 25)
                 
-                Text("OK, now what do we do?")
+                Text("So, now what do we do?")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .fontWeight(.light)
