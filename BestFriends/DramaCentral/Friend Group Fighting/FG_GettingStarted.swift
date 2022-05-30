@@ -30,41 +30,52 @@ struct FG_GettingStarted: View {
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
+         
               
-              Text("It's Okay")
+              Text("Some DRAMA in your ")
+                  .font(.system(size: 30))
+                  .fontWeight(.light)
+                  .foregroundColor(Color.blue)
+              
+              Text("Friend Group")
+                  .font(.system(size: 30))
+                  .fontWeight(.light)
+                  .foregroundColor(Color.blue)
+            
+        VStack {
+              Text("is expected")
                   .font(.system(size: 60))
                   .foregroundColor(.white)
                   .fontWeight(.ultraLight)
                   .multilineTextAlignment(.center)
-                    
-                Spacer()
-                    .frame(height: 25)
-                
-                Text("Everything is ")
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-                
-                Text("never going to be perfect")
-                    .font(.system(size: 30))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
+             
+              Spacer()
+                  .frame(height: 80)
+              
+              Text("BestFriends helps ")
+                  .font(.system(size: 30))
+                  .fontWeight(.light)
+                  .foregroundColor(Color.blue)
+            
+            Text("keep it too")
+                .font(.system(size: 30))
+                .fontWeight(.light)
+                .foregroundColor(Color.blue)
+         
+            
+              Text("managable screams")
+                  .font(.system(size: 45))
+                  .fontWeight(.light)
+                  .foregroundColor(Color.white)
+          
                
                 Spacer()
                     .frame(height: 40)
-                
-//            VStack {
-//                Text("- maybe think of your FG as a team? \n- teams watch out for each other \n- its you're team - you're in control \n- you love to talk - so, lets talk")
-//                    .font(.system(size: 24))
-//                    .fontWeight(.light)
-//                    .foregroundColor(Color.white)
-//
-//
-//
+
                 
             VStack {
                 Spacer()
-                    .frame(height: 145)
+                    .frame(height: 90)
                     
                     NavigationLink(
                         destination: FG_BeAccountable(),
@@ -94,7 +105,7 @@ struct FG_GettingStarted: View {
     }
 }
 }
-
+}
 
 
 

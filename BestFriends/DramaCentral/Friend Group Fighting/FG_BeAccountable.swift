@@ -27,38 +27,15 @@ struct FG_BeAccountable: View {
               VStack {
               
                
-                    Text("If your Friend Group")
-                        .font(.system(size: 40))
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
                   
-                  Text("is WACKED")
-                      .font(.system(size: 60))
-                      .foregroundColor(.white)
-                      .fontWeight(.ultraLight)
-                      .multilineTextAlignment(.center)
-                        
-                    Spacer()
-                        .frame(height: 25)
-                    
-                    Text("it seems like everything")
-                        .font(.system(size: 30))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.blue)
-                    
-                    Text("SUCKS")
-                        .font(.system(size: 30))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.blue)
-                   
-                    Spacer()
-                        .frame(height: 40)
-              
                   VStack {
-                  
+                      Text("consider . . .")
+                          .font(.system(size: 40))
+                          .foregroundColor(.white)
+                          .fontWeight(.ultraLight)
+                          .multilineTextAlignment(.center)
                    
-                        Text("Come together")
+                        Text("coming together")
                             .font(.system(size: 50))
                             .foregroundColor(.white)
                             .fontWeight(.ultraLight)
@@ -71,23 +48,30 @@ struct FG_BeAccountable: View {
                           .multilineTextAlignment(.center)
                             
                         Spacer()
-                            .frame(height: 25)
+                            .frame(height: 50)
                         
-                        Text("and ")
-                            .font(.system(size: 30))
-                            .fontWeight(.light)
-                            .foregroundColor(Color.blue)
-                        
-                        Text("SMILE")
-                            .font(.system(size: 50))
-                            .fontWeight(.light)
-                            .foregroundColor(Color.blue)
-                       
-                        Spacer()
-                            .frame(height: 40)
+                      Text("- Teams rely on one another to win? \n- teams have each other's back \n- teams have common dreams \n- teams are basically - bad ass!")
+                          .font(.system(size: 24))
+                          .fontWeight(.light)
+                          .foregroundColor(Color.white)
+           
+                      Spacer()
+                          .frame(height: 60)
+            VStack {
                       
-
-                
+                        Text("just a thought from our")
+                            .font(.system(size: 30))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(Color.blue)
+                        
+                        Text("teens")
+                            .font(.system(size: 50))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(Color.blue)
+                   
+               
             VStack {
                 Spacer()
                     .frame(height: 70)
@@ -107,20 +91,12 @@ struct FG_BeAccountable: View {
                         })
 
             }
-                Spacer()
-                    .frame(height: 25)
-                
-                Text("")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
+              
         }
     }
 }
 }
-
+    }
 }
 
 
