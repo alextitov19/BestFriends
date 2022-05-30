@@ -86,7 +86,7 @@ struct IntroFriendGpFight: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("- Ignore the fights all together \n- Don't get involved in the drama\n- Don't pick sides \n- Don't commerizate \n- Don't personalize other's fights \n- The two fighting must fix it")
+                Text("- Ignore fights in Friend Group \n- If two friends are fighting\n- Don't pick sides \n- Don't commerizate \n- Don't personalize their fight \n- The two fighting must fix it")
                     .font(.system(size: 23))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
