@@ -90,7 +90,7 @@ struct FG_BeAccountable: View {
                 
             VStack {
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 70)
                     
                     NavigationLink(
                         destination: Step2FG_NewSolutions(),
