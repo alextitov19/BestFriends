@@ -9,7 +9,7 @@
 import Foundation
 
 import SwiftUI
-import AVKit
+
 
 struct FG_BeAccountable: View {
     
