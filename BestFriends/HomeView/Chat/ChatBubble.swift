@@ -138,6 +138,9 @@ private struct MyChatMessage: View {
     }
 }
 
+
+
+
 private struct FriendChatMessage: View {
     let options: [DropdownOption] = [
         DropdownOption(key: "d", value: "Save to SmileNotes"),
