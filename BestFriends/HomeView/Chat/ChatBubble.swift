@@ -126,13 +126,7 @@ private struct MyChatMessage: View {
         HStack {
             Spacer()
             DropdownSelector(placeholder: messageBody, options: options)
-//            Text(messageBody)
-//                .padding(10)
-//                .multilineTextAlignment(.leading)
-//                .font(.system(size: 16).weight(.light))
-//                .foregroundColor(.white)
-//                .background(ColorManager.purple3)
-//                .cornerRadius(15)
+
         }
         .padding(.horizontal, 5)
     }

@@ -83,6 +83,7 @@ struct DropdownSelector: View {
       
         }
         .padding(.horizontal)
+        .fixedSize(horizontal:false, vertical:true)
         .cornerRadius(5)
         .frame(minWidth: 200, idealWidth: 200, maxWidth: UIScreen.main.bounds.size.width - 100, minHeight: self.buttonHeight, idealHeight: self.buttonHeight, maxHeight: self.buttonHeight)
         .overlay(
@@ -102,7 +103,7 @@ struct DropdownSelector: View {
             }, alignment: .topLeading
         )
         .background(
-            RoundedRectangle(cornerRadius: 15).fill(ColorManager.purple3.opacity(0.5))
+            RoundedRectangle(cornerRadius: 15).fill(ColorManager.purple3.opacity(0.3))
         )
     }
 }
