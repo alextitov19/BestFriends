@@ -29,6 +29,7 @@ struct ChatView: View {
     
     @State private var messageBody: String = ""
     @State var showsAlert = false
+    @State var pickerSourceType: UIImagePickerController.SourceType = .camera
     var body: some View {
 
         ZStack {
@@ -62,20 +63,19 @@ struct ChatView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFit()
                         .padding(.leading, 5)
-                        .onTapGesture { $showsAlert = true }
+                        .onTapGesture { showsAlert = true }
                         .alert("Add Photo/Video", isPresented: $showsAlert) {
                             Button("Pick From Library", action: {
+                                pickerSourceType = .photoLibrary
                                 isShowPhotoLibrary = !isShowPhotoLibrary
                             }).sheet(isPresented: $isShowPhotoLibrary) {
                                 ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
                                     .onDisappear { sendMessageWithImage() }
                             }
                             Button("Take Photo", action: {
+                                pickerSourceType = .camera
                                 isShowPhotoLibrary = !isShowPhotoLibrary
-                            }).sheet(isPresented: $isShowPhotoLibrary) {
-                                ImagePicker(image: $attachmentImage, sourceType: .camera)
-                                    .onDisappear { sendMessageWithImage() }
-                            }
+                            })
                             
                         
 //                        .alert(isPresented: self.$showsAlert, actions: {
@@ -87,6 +87,9 @@ struct ChatView: View {
 //
 //                            }
 //                                  )
+                        }.sheet(isPresented: $isShowPhotoLibrary) {
+                            ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
+                                .onDisappear { sendMessageWithImage() }
                         }
                       
                       
