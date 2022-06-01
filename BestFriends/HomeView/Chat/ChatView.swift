@@ -76,6 +76,10 @@ struct ChatView: View {
                                 pickerSourceType = .camera
                                 isShowPhotoLibrary = !isShowPhotoLibrary
                             })
+                            Button("Cancel", role: .cancel, action: {
+                                
+                            })
+                        
                             
                         
 //                        .alert(isPresented: self.$showsAlert, actions: {
