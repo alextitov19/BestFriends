@@ -28,7 +28,7 @@ struct ChatView: View {
     }
     
     @State private var messageBody: String = ""
-    
+    @State var showsAlert = false
     var body: some View {
 
         ZStack {
@@ -51,6 +51,7 @@ struct ChatView: View {
                             .onLongPressGesture(minimumDuration: 1, perform: { ltMessage(message: message) })
                     }
                 }
+               
                 
                 // MARK: The bottom portion containing text field and action buttons
                 HStack {
@@ -61,12 +62,34 @@ struct ChatView: View {
                         .frame(width: 40, height: 40)
                         .scaledToFit()
                         .padding(.leading, 5)
-                        .onTapGesture { isShowPhotoLibrary = true }
-                        .sheet(isPresented: $isShowPhotoLibrary) {
-                            ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
-                                .onDisappear { sendMessageWithImage() }
+                        .onTapGesture { $showsAlert = true }
+                        .alert("Add Photo/Video", isPresented: $showsAlert) {
+                            Button("Pick From Library", action: {
+                                isShowPhotoLibrary = !isShowPhotoLibrary
+                            }).sheet(isPresented: $isShowPhotoLibrary) {
+                                ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
+                                    .onDisappear { sendMessageWithImage() }
+                            }
+                            Button("Take Photo", action: {
+                                isShowPhotoLibrary = !isShowPhotoLibrary
+                            }).sheet(isPresented: $isShowPhotoLibrary) {
+                                ImagePicker(image: $attachmentImage, sourceType: .camera)
+                                    .onDisappear { sendMessageWithImage() }
+                            }
+                            
+                        
+//                        .alert(isPresented: self.$showsAlert, actions: {
+//                            Alert(title: Text("Title"), message: Text("Message..."),
+//                                      primaryButton: .default (Text("Pick From Library")) {
+//
+//                                      },
+//                                  secondaryButton: .default(Text("Take A Photo")) {
+//
+//                            }
+//                                  )
                         }
-                    
+                      
+                      
                     TextField("", text: $messageBody)
                         .placeholder(when: messageBody.isEmpty) {
                             HStack {

@@ -79,13 +79,14 @@ struct DropdownSelector: View {
 
                 Text(selectedOption == nil ? placeholder : selectedOption!.value)
                     .font(.system(size: 14))
-                    .foregroundColor(Color.white).multilineTextAlignment(.trailing)
+                    .foregroundColor(Color.white).multilineTextAlignment(.leading)
       
         }
+        .padding(.vertical)
         .padding(.horizontal)
         .fixedSize(horizontal:false, vertical:true)
         .cornerRadius(5)
-        .frame(minWidth: 200, idealWidth: 200, maxWidth: UIScreen.main.bounds.size.width - 100, minHeight: self.buttonHeight, idealHeight: self.buttonHeight, maxHeight: self.buttonHeight)
+ 
         .overlay(
             RoundedRectangle(cornerRadius: 15)
                 .stroke(Color.gray, lineWidth: 1)
@@ -107,11 +108,6 @@ struct DropdownSelector: View {
         )
     }
 }
-
-
-
-
-
 
 //
 //struct DropdownSelector_Previews: PreviewProvider {
