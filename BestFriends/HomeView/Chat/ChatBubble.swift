@@ -32,13 +32,13 @@ struct ChatBubble: View {
                     .padding(.horizontal, 5)
                     
                 } else {
-                    MyChatMessage(messageBody: "📸")
+                    MyChatMessage(messageBody: "📸",message: message)
                         .onTapGesture {
                             Task { await downloadImage(key: message.image) }
                         }
                 }
             } else {
-                MyChatMessage(messageBody: message.body)
+                MyChatMessage(messageBody: message.body, message: message)
             }
         } else {
             if message.image?.count ?? 0 > 0 {
@@ -55,13 +55,13 @@ struct ChatBubble: View {
                     .padding(.horizontal, 5)
                     
                 } else {
-                    FriendChatMessage(name: message.senderName, messageBody: "📸")
+                    FriendChatMessage(name: message.senderName, messageBody: "📸", message: message)
                         .onTapGesture {
                             Task { await downloadImage(key: message.image) }
                         }
                 }
             } else {
-                FriendChatMessage(name: message.senderName, messageBody: message.body)
+                FriendChatMessage(name: message.senderName, messageBody: message.body, message: message)
             }
         }
     }
@@ -116,25 +116,32 @@ struct ChatBubble: View {
 private struct MyChatMessage: View {
     
     let messageBody: String
+    let message: Message
     let options: [DropdownOption] = [
        DropdownOption(key: "d", value: "Save to SmileNotes"),
        DropdownOption(key: "x", value: "Delete Message"),
        DropdownOption(key: "uniqueKey", value: "Report User"),
 
    ]
+    @State var formatter1 = DateFormatter()
     var body: some View {
+        
         HStack {
             Spacer()
-            DropdownSelector(placeholder: messageBody, options: options)
-//            Text(messageBody)
-//                .padding(10)
-//                .multilineTextAlignment(.leading)
-//                .font(.system(size: 16).weight(.light))
-//                .foregroundColor(.white)
-//                .background(ColorManager.purple3)
-//                .cornerRadius(15)
+            ZStack {
+             
+                DropdownSelector(placeholder: messageBody, options: options, timeString:formatter1.string(from: Date(timeIntervalSince1970: TimeInterval(message.createdOn))))
+                
+            }
+           
+            
+            
         }
         .padding(.horizontal, 5)
+        .onAppear{
+            formatter1.dateStyle = .full
+   
+        }
     }
 }
 
@@ -150,11 +157,12 @@ private struct FriendChatMessage: View {
    ]
     let name: String
     let messageBody: String
-    
+    let message: Message
+    @State var formatter1 = DateFormatter()
     var body: some View {
         VStack {
             HStack {
-                DropdownSelector(placeholder: name + "\n" + messageBody, options: options)
+                DropdownSelector(placeholder: name + "\n" + messageBody, options: options, timeString:formatter1.string(from: Date(timeIntervalSince1970: TimeInterval(message.createdOn))))
                 Text(name)
                     .frame(width: 200, alignment: .leading)
                     .foregroundColor(.white)
@@ -176,6 +184,9 @@ private struct FriendChatMessage: View {
                 Spacer()
             }
             .padding(.horizontal, 5)
+            .onAppear{
+                formatter1.dateStyle = .full
+            }
         }
     }
 }

@@ -65,21 +65,25 @@ struct Dropdown: View {
 
 
 struct DropdownSelector: View {
+    
     @State private var shouldShowDropdown = false
     @State private var selectedOption: DropdownOption? = nil
     var placeholder: String
-    var options: [DropdownOption]
+    var options: [DropdownOption]?
     var onOptionSelected: ((_ option: DropdownOption) -> Void)?
     private let buttonHeight: CGFloat = 45
-
+    let timeString: String
     var body: some View {
         Button(action: {
             self.shouldShowDropdown.toggle()
         }) {
-
+            HStack{
                 Text(selectedOption == nil ? placeholder : selectedOption!.value)
                     .font(.system(size: 14))
                     .foregroundColor(Color.white).multilineTextAlignment(.leading)
+                Text(timeString)
+            }
+                
       
         }
         .padding(.vertical)
@@ -94,17 +98,22 @@ struct DropdownSelector: View {
         .overlay(
             VStack {
                 if self.shouldShowDropdown {
+                    if self.options != nil {
                     Spacer(minLength: buttonHeight + 10)
-                    Dropdown(options: self.options, onOptionSelected: { option in
+                    Dropdown(options: self.options!, onOptionSelected: { option in
                         shouldShowDropdown = false
                         selectedOption = option
                         self.onOptionSelected?(option)
                     })
+                    }
                 }
             }, alignment: .topLeading
         )
         .background(
             RoundedRectangle(cornerRadius: 15).fill(ColorManager.purple3.opacity(0.3))
+                .onAppear{
+                    print(timeString)
+                }
         )
     }
 }
