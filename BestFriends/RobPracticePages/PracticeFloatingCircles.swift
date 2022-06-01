@@ -43,6 +43,10 @@ struct PracticeFloatingCircles: View {
          
             
             Spacer()
+            Spacer()
+           
+            
+            
             
             Rectangle()
                 .frame(width: 60, height: 60)
