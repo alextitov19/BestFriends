@@ -44,7 +44,7 @@ struct ChatView: View {
                 HStack {
                     Image("home-alt2")
                         .resizable()
-                        .frame(width: 40, height: 40)
+                        .frame(width: 30, height: 30)
                         .scaledToFill()
                         .onTapGesture(perform: {
                             sessionManager.showHome()
@@ -54,9 +54,9 @@ struct ChatView: View {
                     .task {
                         await listenForMessages()
                     }
-                    Image("lockBlack")
+                    Image("lock-alt")
                         .resizable()
-                        .frame(width: 40, height: 40)
+                        .frame(width: 30, height: 30)
                         .scaledToFill()
                         .onTapGesture(perform: {
                             isLockTapped.toggle()
