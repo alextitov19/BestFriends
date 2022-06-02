@@ -30,6 +30,7 @@ struct ChatView: View {
     @State private var messageBody: String = ""
     @State var showsAlert = false
     @State private var showingMessageOptions = false
+    @State private var isLockTapped = false
     @State var pickerSourceType: UIImagePickerController.SourceType = .photoLibrary
     var body: some View {
         
@@ -40,11 +41,28 @@ struct ChatView: View {
             
             VStack {
                 // MARK: Header
+                HStack {
+                    Image("home-alt2")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture(perform: {
+                            sessionManager.showHome()
+                        })
+                    
                 Text(group.name)
                     .task {
                         await listenForMessages()
-                        
                     }
+                    Image("lockBlack")
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                        .scaledToFill()
+                        .onTapGesture(perform: {
+                            isLockTapped.toggle()
+                        })
+                        .fullScreenCover(isPresented: $isLockTapped, content: HideChatView.init)
+                }
                 
                 // MARK: Main scroll view
                 ScrollView(.vertical, showsIndicators: false) {
