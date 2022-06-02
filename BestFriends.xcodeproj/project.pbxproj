@@ -81,6 +81,8 @@
 		CF0911852848328F00CB0AF0 /* HideChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0911842848328F00CB0AF0 /* HideChat.swift */; };
 		CF09118A2848875C00CB0AF0 /* PhotoPopVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0911892848875C00CB0AF0 /* PhotoPopVideo.swift */; };
 		CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */; };
+		CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118D284894F400CB0AF0 /* InfoView.swift */; };
+		CF0911912848976A00CB0AF0 /* BestFriendsVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0911902848976A00CB0AF0 /* BestFriendsVideo.swift */; };
 		CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */; };
 		CF2738AC2813C6410070E9D3 /* NewSmileVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738AB2813C6410070E9D3 /* NewSmileVaultView.swift */; };
 		CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */; };
@@ -224,6 +226,8 @@
 		CF0911842848328F00CB0AF0 /* HideChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideChat.swift; sourceTree = "<group>"; };
 		CF0911892848875C00CB0AF0 /* PhotoPopVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopVideo.swift; sourceTree = "<group>"; };
 		CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTestVideo.swift; sourceTree = "<group>"; };
+		CF09118D284894F400CB0AF0 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		CF0911902848976A00CB0AF0 /* BestFriendsVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsVideo.swift; sourceTree = "<group>"; };
 		CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileNoteCard.swift; sourceTree = "<group>"; };
 		CF2738AB2813C6410070E9D3 /* NewSmileVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileVaultView.swift; sourceTree = "<group>"; };
 		CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3_BreathInviteView.swift; sourceTree = "<group>"; };
@@ -435,6 +439,7 @@
 				7AC4C01E27FF4A08000C4140 /* ChatView.swift */,
 				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
 				CF0911842848328F00CB0AF0 /* HideChat.swift */,
+				CF09118D284894F400CB0AF0 /* InfoView.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -495,6 +500,7 @@
 			children = (
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				CF09118F2848973C00CB0AF0 /* BestFriendsVideo */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
@@ -537,6 +543,14 @@
 				F54A61C5A22AA6A9255C7B05 /* Pods-BestFriends.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF09118F2848973C00CB0AF0 /* BestFriendsVideo */ = {
+			isa = PBXGroup;
+			children = (
+				CF0911902848976A00CB0AF0 /* BestFriendsVideo.swift */,
+			);
+			path = BestFriendsVideo;
 			sourceTree = "<group>";
 		};
 		CF381A4E2826883A00B3719E /* Friend Group Fighting */ = {
@@ -1007,6 +1021,7 @@
 				CFE1946928129D9600ED5718 /* FriendQualities.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				CF381A56282842EA00B3719E /* Step2FG_NewSolutions.swift in Sources */,
+				CF0911912848976A00CB0AF0 /* BestFriendsVideo.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */,
 				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
@@ -1052,6 +1067,7 @@
 				CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
+				CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */,
 				CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */,
 				CF381A5428283FA000B3719E /* Step1FG_AcceptedSolutions.swift in Sources */,
 				CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */,

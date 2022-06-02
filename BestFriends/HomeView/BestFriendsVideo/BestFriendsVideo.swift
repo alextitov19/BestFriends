@@ -1,9 +1,10 @@
 //
-//  PhotoPopVideo.swift
+//  BestFriendsVideo.swift
 //  BestFriends
 //
 //  Created by Social Tech on 6/2/22.
 //
+
 
 import Foundation
 
@@ -11,7 +12,7 @@ import SwiftUI
 import AVKit
 
 
-struct PhotoPopVideo: View {
+struct BestFriendsVideo: View {
     
     var body: some View {
         
@@ -26,7 +27,7 @@ Image("purpleBackground")
     .ignoresSafeArea()
     .scaledToFill()
 
-AdPlayerView(name: "ShakingCoolVideo")
+AdPlayerView(name: "SplashScreen2")
     .ignoresSafeArea()
     .blendMode(.screen)
 
@@ -37,11 +38,11 @@ AdPlayerView(name: "ShakingCoolVideo")
                         .frame(height: 0)
                     
                     NavigationLink(
-                        destination: SettingsView(),
+                        destination: OurMission(),
                         label: {
-                            Text("Set-up PhotoPop")
+                            Text("SKIP")
                                 .fontWeight(.thin)
-                                .frame(width: 250, height: 40)
+                                .frame(width: 100, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)

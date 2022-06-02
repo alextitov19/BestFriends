@@ -166,7 +166,7 @@ struct PlanetActionsView: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    NavigationLink(destination: OurMission(),
+                    NavigationLink(destination: BestFriendsVideo(),
                                    label: {
                         ZStack {
                             Circle()

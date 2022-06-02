@@ -42,6 +42,13 @@ struct ChatView: View {
             VStack {
                 // MARK: Header
                 HStack {
+                   
+                    Image("Exclamation Mark-1")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .scaledToFill()
+//                    sessionManager.showHome()
+                    
                     Image("home-alt2")
                         .resizable()
                         .frame(width: 30, height: 30)

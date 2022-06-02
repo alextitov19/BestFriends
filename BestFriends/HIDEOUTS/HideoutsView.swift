@@ -38,15 +38,15 @@ struct HideoutsView: View {
                 .blendMode(.screen)
             
         
-            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .pink, friendName: "Special \nMessages")
+            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .blue, friendName: "Special \nMessages")
             })
 
-            .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
+            .offset(x: showItems ? 100 : 0, y: showItems ? -165: 0)
            
               NavigationLink(destination: PhotoPopVideo(), label: {
-                  HideoutsViewCircle (color: .orange, friendName: "shake \n'PhotoPoP' \nphone")
+                  HideoutsViewCircle (color: .orange, friendName: "shake \nphone")
             })
-            .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
+            .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
             
 
             NavigationLink(destination: BlueModePlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "BestFriends \nPlaylist")
