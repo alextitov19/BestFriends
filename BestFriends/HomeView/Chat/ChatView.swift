@@ -29,9 +29,10 @@ struct ChatView: View {
     
     @State private var messageBody: String = ""
     @State var showsAlert = false
-    @State var pickerSourceType: UIImagePickerController.SourceType = .camera
+    @State private var showingMessageOptions = false
+    @State var pickerSourceType: UIImagePickerController.SourceType = .photoLibrary
     var body: some View {
-
+        
         ZStack {
             AdPlayerView(name: "cloud")
                 .ignoresSafeArea()
@@ -49,14 +50,25 @@ struct ChatView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(messages, id: \.id) { message in
                         ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
-                            .onLongPressGesture(minimumDuration: 1, perform: { ltMessage(message: message) })
+                            .onLongPressGesture(minimumDuration: 1, perform: { showingMessageOptions = true })
+                            .confirmationDialog("What would you like to do with this message?", isPresented: $showingMessageOptions, titleVisibility: .visible) {
+                                Button("Save to Smile Notes") {
+                                    saveToSmileNotes(message: message)
+                                }
+                                
+                                Button("Delete") {
+                                    
+                                }
+                                
+                                Link("Report Abuse", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
+                                
+                            }
                     }
                 }
-               
+                
                 
                 // MARK: The bottom portion containing text field and action buttons
                 HStack {
-                    
                     Image("camera")
                         .resizable()
                         .colorInvert()
@@ -64,39 +76,26 @@ struct ChatView: View {
                         .scaledToFit()
                         .padding(.leading, 5)
                         .onTapGesture { showsAlert = true }
-                        .alert("Add Photo/Video", isPresented: $showsAlert) {
-                            Button("Pick From Library", action: {
+                        .alert("Add Photo", isPresented: $showsAlert) {
+                            
+                            Button("Library", action: {
                                 pickerSourceType = .photoLibrary
                                 isShowPhotoLibrary = !isShowPhotoLibrary
-                            }).sheet(isPresented: $isShowPhotoLibrary) {
-                                ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
-                                    .onDisappear { sendMessageWithImage() }
-                            }
-                            Button("Take Photo", action: {
+                            })
+                            
+                            Button("Photo", action: {
                                 pickerSourceType = .camera
                                 isShowPhotoLibrary = !isShowPhotoLibrary
                             })
-                            Button("Cancel", role: .cancel, action: {
-                                
-                            })
-                        
                             
-                        
-//                        .alert(isPresented: self.$showsAlert, actions: {
-//                            Alert(title: Text("Title"), message: Text("Message..."),
-//                                      primaryButton: .default (Text("Pick From Library")) {
-//
-//                                      },
-//                                  secondaryButton: .default(Text("Take A Photo")) {
-//
-//                            }
-//                                  )
+                            Button("Cancel", role: .cancel, action: {})
+                            
                         }.sheet(isPresented: $isShowPhotoLibrary) {
                             ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                                 .onDisappear { sendMessageWithImage() }
                         }
-                      
-                      
+                    
+                    
                     TextField("", text: $messageBody)
                         .placeholder(when: messageBody.isEmpty) {
                             HStack {
@@ -114,12 +113,14 @@ struct ChatView: View {
                             .frame(height: 40)
                             .padding(.horizontal, 5)
                         )
+                    
+                    
                 }
             }
         }
     }
     
-    private func ltMessage(message: Message) {
+    private func saveToSmileNotes(message: Message) {
         RestApi.instance.getSmileNotes().then({ smileNotes in
             print("Got smile notes from server: ", smileNotes)
             for sm in smileNotes {
@@ -186,7 +187,7 @@ struct ChatView: View {
             debugPrint("Oops something didn't go right")
         }
     }
-        
+    
     private func sortMessages() {
         messages = messages.sorted(by: { $0.createdOn < $1.createdOn })
     }
