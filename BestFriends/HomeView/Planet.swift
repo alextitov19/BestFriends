@@ -106,7 +106,7 @@ struct PlanetActionsView: View {
                     
 //                    NavigationLink(destination: BestFriendMessages(),
                     
-                    NavigationLink(destination: UserBetaTesting(),
+                    NavigationLink(destination: BetaTestVideo(),
                                     
 //                                    BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                    
@@ -115,7 +115,7 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.red)
+                                .foregroundColor(ColorManager.purple3)
                                 .foregroundColor(.pink)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             
@@ -171,7 +171,7 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 120, height: 120)
-                                .foregroundColor(ColorManager.orange5)
+                                .foregroundColor(ColorManager.purple1)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             
                             VStack {

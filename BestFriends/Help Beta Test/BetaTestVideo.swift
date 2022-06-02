@@ -36,7 +36,7 @@ AdPlayerView(name: "BestFriendsAd1")
         
         VStack {
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 0)
                 
                 NavigationLink(
                     destination: UserBetaTesting(),
