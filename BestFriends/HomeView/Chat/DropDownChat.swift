@@ -82,6 +82,7 @@ struct DropdownSelector: View {
                     .font(.system(size: 14))
                     .foregroundColor(Color.white).multilineTextAlignment(.leading)
                 Text(timeString)
+                    .font(.system(size: 14))
             }
                 
       

@@ -114,23 +114,23 @@ struct ChatBubble: View {
 }
 
 private struct MyChatMessage: View {
-    
     let messageBody: String
     let message: Message
+    @State private var timeString = ""
     let options: [DropdownOption] = [
        DropdownOption(key: "d", value: "Save to SmileNotes"),
        DropdownOption(key: "x", value: "Delete Message"),
        DropdownOption(key: "uniqueKey", value: "Report User"),
-
    ]
     @State var formatter1 = DateFormatter()
     var body: some View {
         
         HStack {
             Spacer()
+                .onAppear(perform: loadData)
             ZStack {
              
-                DropdownSelector(placeholder: messageBody, options: options, timeString:formatter1.string(from: Date(timeIntervalSince1970: TimeInterval(message.createdOn))))
+                DropdownSelector(placeholder: messageBody, options: options, timeString: timeString)
                 
             }
            
@@ -142,6 +142,21 @@ private struct MyChatMessage: View {
             formatter1.dateStyle = .full
    
         }
+    }
+    
+    private func loadData() {
+        var x = Int64(Date().timeIntervalSince1970) - message.createdOn
+        x = x / 60
+        timeString = "\(x) min"
+        if x > 60 {
+            x = x / 6
+            timeString = "\(x) hr"
+            if x > 24 {
+                x = x / 24
+                timeString = "\(x) days"
+            }
+        }
+        
     }
 }
 
