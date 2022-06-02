@@ -35,7 +35,7 @@ struct Friend1VaultPractice: View {
             .ignoresSafeArea()
             .scaledToFill()
 
-        AdPlayerView(name: "pink")
+        AdPlayerView(name: "Skateboard")
             .ignoresSafeArea()
             .blendMode(.screen)
     
