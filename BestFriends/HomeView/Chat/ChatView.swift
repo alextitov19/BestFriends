@@ -89,7 +89,7 @@ struct ChatView: View {
                 HStack {
                     Image("camera")
                         .resizable()
-                        .colorInvert()
+//                        .colorInvert()
                         .frame(width: 40, height: 40)
                         .scaledToFit()
                         .padding(.leading, 5)
@@ -114,7 +114,7 @@ struct ChatView: View {
                     TextField("", text: $messageBody)
                         .placeholder(when: messageBody.isEmpty) {
                             HStack {
-                                Text("Send a chat").foregroundColor(.black)
+                                Text("Send a chat").foregroundColor(.white)
                                 
                                 Spacer()
                             }

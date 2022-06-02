@@ -32,7 +32,7 @@ AdPlayerView(name: "BestFriendsAd1")
     .ignoresSafeArea()
     .blendMode(.screen)
 
-        }
+        
         
         VStack {
                 Spacer()
@@ -52,5 +52,6 @@ AdPlayerView(name: "BestFriendsAd1")
                     })
         
     }
+}
 }
 }
