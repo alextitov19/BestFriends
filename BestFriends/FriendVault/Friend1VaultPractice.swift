@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Combine
-
+import AVKit
 
 struct Friend1VaultPractice: View {
     @EnvironmentObject var sessionManager: SessionManager
@@ -23,9 +23,33 @@ struct Friend1VaultPractice: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple2
-                .ignoresSafeArea()
-                .onAppear(perform: loadData)
+//            ColorManager.purple2
+//                .ignoresSafeArea()
+//                .onAppear(perform: loadData)
+//
+        Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+            .ignoresSafeArea()
+
+        Image("purpleBackground")
+            .resizable()
+            .ignoresSafeArea()
+            .scaledToFill()
+
+        AdPlayerView(name: "pink")
+            .ignoresSafeArea()
+            .blendMode(.screen)
+    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             TabView{
                 VStack {
                     //MARK: code to get friends name at top of page

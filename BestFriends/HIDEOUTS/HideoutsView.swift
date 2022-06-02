@@ -32,8 +32,8 @@ struct HideoutsView: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-           
-            AdPlayerView(name: "FieldFlowers")
+
+            AdPlayerView(name: "phone")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             

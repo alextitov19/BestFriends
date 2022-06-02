@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftUI
+import AVKit
 
 struct WhoFighting: View {
     
@@ -25,11 +26,15 @@ struct WhoFighting: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+          
            
-            AdPlayerView(name: "backgroundAnimation")
+            AdPlayerView(name: "cloud")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-//                .offset(y: -250)
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+////                .offset(y: -250)
             
             
 //            Image("planet_4")

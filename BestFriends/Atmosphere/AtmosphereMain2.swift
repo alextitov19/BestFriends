@@ -24,9 +24,24 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple3
+//            ColorManager.purple3
+//                .ignoresSafeArea()
+//                .onAppear()
+//
+            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
-                .onAppear()
+
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+
+            AdPlayerView(name: "pink")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+        
+            
+            
             
             VStack {
                 HStack {
