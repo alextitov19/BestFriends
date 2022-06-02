@@ -125,20 +125,23 @@ private struct MyChatMessage: View {
                     .onAppear(perform: loadData)
                 
                 Text(messageBody)
-                    .padding(10)
+                    .padding(4)
                     .multilineTextAlignment(.leading)
-                    .font(.system(size: 16).weight(.light))
+//                    .font(.system(size: 15).weight(.light))
+                    .background(ColorManager.grey2)
+                    .opacity(0.7)
+                    .font(.system(size: 15).weight(.thin))
                     .foregroundColor(.white)
-                    .background(ColorManager.purple3)
-                    .cornerRadius(15)
+                    .cornerRadius(7)
+                   
             }
             
             HStack {
                 Spacer()
                 
                 Text(timeString)
-                    .font(.system(size: 12).weight(.light))
-                    .foregroundColor(ColorManager.purple5)
+                    .font(.system(size: 10).weight(.light))
+                    .foregroundColor(ColorManager.grey2)
             }
         }
         .padding(.horizontal, 5)

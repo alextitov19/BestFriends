@@ -35,7 +35,7 @@ struct ChatView: View {
     var body: some View {
         
         ZStack {
-            AdPlayerView(name: "cloud")
+            AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
             
             
