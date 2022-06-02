@@ -115,7 +115,7 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
+                                .foregroundColor(ColorManager.pmbc_green)
                                 .foregroundColor(.pink)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             
@@ -192,12 +192,12 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.pmbc_blue)
+                                .foregroundColor(ColorManager.purple3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             
                             VStack {
                                 Text("Huge Fight")
-                                    .foregroundColor(ColorManager.red)
+                                    .foregroundColor(.white)
 //                                    .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
