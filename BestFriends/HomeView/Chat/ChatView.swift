@@ -76,20 +76,17 @@ struct ChatView: View {
                         .scaledToFit()
                         .padding(.leading, 5)
                         .onTapGesture { showsAlert = true }
-                        .alert("Add Photo", isPresented: $showsAlert) {
-                            
-                            Button("Library", action: {
+                        .confirmationDialog("Send an image", isPresented: $showsAlert, titleVisibility: .visible) {
+
+                            Button("Photo Library", action: {
                                 pickerSourceType = .photoLibrary
                                 isShowPhotoLibrary = !isShowPhotoLibrary
                             })
                             
-                            Button("Photo", action: {
+                            Button("Camera", action: {
                                 pickerSourceType = .camera
                                 isShowPhotoLibrary = !isShowPhotoLibrary
                             })
-                            
-                            Button("Cancel", role: .cancel, action: {})
-                            
                         }.sheet(isPresented: $isShowPhotoLibrary) {
                             ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                                 .onDisappear { sendMessageWithImage() }
