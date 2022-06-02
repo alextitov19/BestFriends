@@ -131,7 +131,7 @@ private struct MyChatMessage: View {
                     .background(ColorManager.grey2)
                     .opacity(0.7)
                     .font(.system(size: 15).weight(.thin))
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .cornerRadius(7)
                    
             }
