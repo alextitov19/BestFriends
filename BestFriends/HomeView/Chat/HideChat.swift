@@ -32,7 +32,8 @@ struct HideChatView: View {
         TextField("Enter your Pin ...", text: $pin)
             .keyboardType(.decimalPad)
             .foregroundColor(Color.white)
-            .font(.system(size: 35))
+            .font(.system(size: 37).weight(.thin))
+//            .font(.system(size: 35))
 //            .fontWeight(.ultraLight)
            
             .frame(width: 310, height: 50, alignment: .leading)
