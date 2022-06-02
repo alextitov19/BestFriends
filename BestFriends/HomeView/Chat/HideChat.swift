@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HideChatView: View {
     @State private var pin = ""
-    
+    @EnvironmentObject var sessionManager: SessionManager
     var body: some View {
         ZStack {
             
@@ -20,7 +20,15 @@ struct HideChatView: View {
                 .scaledToFill()
            
             VStack {
-            
+//                HStack {
+//                    Image("home-alt2")
+//                        .resizable()
+//                        .frame(width: 30, height: 30)
+//                        .scaledToFill()
+//                        .onTapGesture(perform: {
+//                            sessionManager.showHome()
+//                        })
+//
         TextField("Enter your Pin ...", text: $pin)
             .keyboardType(.decimalPad)
             .foregroundColor(Color.white)
