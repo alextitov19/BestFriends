@@ -79,6 +79,8 @@
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
 		CF0911852848328F00CB0AF0 /* HideChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0911842848328F00CB0AF0 /* HideChat.swift */; };
+		CF09118A2848875C00CB0AF0 /* PhotoPopVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0911892848875C00CB0AF0 /* PhotoPopVideo.swift */; };
+		CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */; };
 		CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */; };
 		CF2738AC2813C6410070E9D3 /* NewSmileVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738AB2813C6410070E9D3 /* NewSmileVaultView.swift */; };
 		CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */; };
@@ -220,6 +222,8 @@
 		CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShakingCoolVideo.mp4; sourceTree = "<group>"; };
 		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
 		CF0911842848328F00CB0AF0 /* HideChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideChat.swift; sourceTree = "<group>"; };
+		CF0911892848875C00CB0AF0 /* PhotoPopVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopVideo.swift; sourceTree = "<group>"; };
+		CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTestVideo.swift; sourceTree = "<group>"; };
 		CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileNoteCard.swift; sourceTree = "<group>"; };
 		CF2738AB2813C6410070E9D3 /* NewSmileVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileVaultView.swift; sourceTree = "<group>"; };
 		CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3_BreathInviteView.swift; sourceTree = "<group>"; };
@@ -706,6 +710,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */,
+				CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */,
 			);
 			path = "Help Beta Test";
 			sourceTree = "<group>";
@@ -741,6 +746,7 @@
 		CFD0469A2837D9BC00BF0B02 /* PhotoPoP */ = {
 			isa = PBXGroup;
 			children = (
+				CF0911892848875C00CB0AF0 /* PhotoPopVideo.swift */,
 			);
 			path = PhotoPoP;
 			sourceTree = "<group>";
@@ -977,6 +983,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */,
+				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
 				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
@@ -1052,6 +1059,7 @@
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
 				CF9E33CA2845323200107433 /* FG_BeAccountable.swift in Sources */,
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
+				CF09118A2848875C00CB0AF0 /* PhotoPopVideo.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
 				CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */,
