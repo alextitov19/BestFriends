@@ -117,31 +117,31 @@ private struct MyChatMessage: View {
     let messageBody: String
     let message: Message
     @State private var timeString = ""
-    let options: [DropdownOption] = [
-       DropdownOption(key: "d", value: "Save to SmileNotes"),
-       DropdownOption(key: "x", value: "Delete Message"),
-       DropdownOption(key: "uniqueKey", value: "Report User"),
-   ]
-    @State var formatter1 = DateFormatter()
+    
     var body: some View {
-        
-        HStack {
-            Spacer()
-                .onAppear(perform: loadData)
-            ZStack {
-             
-                DropdownSelector(placeholder: messageBody, options: options, timeString: timeString)
+        VStack {
+            HStack {
+                Spacer()
+                    .onAppear(perform: loadData)
                 
+                Text(messageBody)
+                    .padding(10)
+                    .multilineTextAlignment(.leading)
+                    .font(.system(size: 16).weight(.light))
+                    .foregroundColor(.white)
+                    .background(ColorManager.purple3)
+                    .cornerRadius(15)
             }
-           
             
-            
+            HStack {
+                Spacer()
+                
+                Text(timeString)
+                    .font(.system(size: 12).weight(.light))
+                    .foregroundColor(ColorManager.purple5)
+            }
         }
         .padding(.horizontal, 5)
-        .onAppear{
-            formatter1.dateStyle = .full
-   
-        }
     }
     
     private func loadData() {
@@ -156,7 +156,6 @@ private struct MyChatMessage: View {
                 timeString = "\(x) days"
             }
         }
-        
     }
 }
 
@@ -164,25 +163,20 @@ private struct MyChatMessage: View {
 
 
 private struct FriendChatMessage: View {
-    let options: [DropdownOption] = [
-        DropdownOption(key: "d", value: "Save to SmileNotes"),
-       DropdownOption(key: "x", value: "Delete Message"),
-       DropdownOption(key: "uniqueKey", value: "Report User"),
-
-   ]
     let name: String
     let messageBody: String
     let message: Message
-    @State var formatter1 = DateFormatter()
+    @State private var timeString = ""
+    
     var body: some View {
         VStack {
             HStack {
-                DropdownSelector(placeholder: name + "\n" + messageBody, options: options, timeString:formatter1.string(from: Date(timeIntervalSince1970: TimeInterval(message.createdOn))))
                 Text(name)
                     .frame(width: 200, alignment: .leading)
                     .foregroundColor(.white)
                     .font(.system(size: 16).weight(.thin))
                     .offset(x: 5, y: 5)
+                    .onAppear(perform: loadData)
                 
                 Spacer()
             }
@@ -199,8 +193,28 @@ private struct FriendChatMessage: View {
                 Spacer()
             }
             .padding(.horizontal, 5)
-            .onAppear{
-                formatter1.dateStyle = .full
+            
+            HStack {
+                Spacer()
+                
+                Text(timeString)
+                    .font(.system(size: 12).weight(.light))
+                    .foregroundColor(ColorManager.purple5)
+            }
+            .padding(.horizontal, 5)
+        }
+    }
+    
+    private func loadData() {
+        var x = Int64(Date().timeIntervalSince1970) - message.createdOn
+        x = x / 60
+        timeString = "\(x) min"
+        if x > 60 {
+            x = x / 6
+            timeString = "\(x) hr"
+            if x > 24 {
+                x = x / 24
+                timeString = "\(x) days"
             }
         }
     }
