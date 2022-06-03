@@ -7,7 +7,6 @@
 
 import Foundation
 
-import Foundation
 
 import SwiftUI
 import AVKit
@@ -28,10 +27,13 @@ Image("purpleBackground")
     .ignoresSafeArea()
     .scaledToFill()
 
-AdPlayerView(name: "BestFriendsAd1")
-    .ignoresSafeArea()
-    .blendMode(.screen)
+//AdPlayerView(name: "BestFriendsAd1")
+//    .ignoresSafeArea()
+//    .blendMode(.screen)
 
+            VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "BestFriendsAd1", withExtension: "mp4")!))
+                .ignoresSafeArea()
+                .blendMode(.screen)
         
         
         VStack {
