@@ -19,21 +19,26 @@ struct BestFriendsVideo: View {
         ZStack {
          
 
-Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-    .ignoresSafeArea()
+            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                .ignoresSafeArea()
 
-Image("purpleBackground")
-    .resizable()
-    .ignoresSafeArea()
-    .scaledToFill()
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
 
-AdPlayerView(name: "SplashScreen2")
-    .ignoresSafeArea()
-    .blendMode(.screen)
+//AdPlayerView(name: "SplashScreen2")
+//    .ignoresSafeArea()
+//    .blendMode(.screen)
 
             
             
             VStack {
+                
+                VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "SplashScreen2", withExtension: "mp4")!))
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
                     Spacer()
                         .frame(height: 0)
                     
@@ -52,7 +57,7 @@ AdPlayerView(name: "SplashScreen2")
             
             
             
-        }
-    }
-}
-}
+        }//VStack
+    }//ZStack
+}//body
+}//struct
