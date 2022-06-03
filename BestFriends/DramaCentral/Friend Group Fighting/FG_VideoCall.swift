@@ -60,7 +60,7 @@ struct FG_VideoCall: View {
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
             NavigationLink(destination: IntroFriendGpFight(), label: {
-                FG_VideoCallCircle (color: .gray, friendName: "Info \nPages")
+                FG_VideoCallCircle (color: .gray, friendName: "Why \n This \nWorks")
                 })
             .offset(x: showItems ? 40 : 0, y: showItems ? -200: 0)
              
