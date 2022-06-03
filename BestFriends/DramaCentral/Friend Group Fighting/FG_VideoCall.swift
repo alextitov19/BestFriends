@@ -1,16 +1,17 @@
 //
-//  WhoFighting.swift
+//  FG_VideoCall.swift
 //  BestFriends
 //
-//  Created by Social Tech on 5/3/22.
+//  Created by Social Tech on 6/3/22.
 //
+
 
 
 import Foundation
 import SwiftUI
 import AVKit
 
-struct WhoFighting: View {
+struct FG_VideoCall: View {
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -28,7 +29,7 @@ struct WhoFighting: View {
                 .scaledToFill()
           
            
-            AdPlayerView(name: "cloud")
+            AdPlayerView(name: "green")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 //            AdPlayerView(name: "backgroundAnimation")
@@ -42,39 +43,59 @@ struct WhoFighting: View {
         ZStack {
 
             NavigationLink(destination: IntroBluemodeFriend(), label: {
-                WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nBFF")
+                FG_VideoCallCircle (color: .pink, friendName: "Be \na \nTeam")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
              
      
            
               NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .orange, friendName: "OMG, \nmy Parents \nare Fighting \nAGAIN!")
+                  FG_VideoCallCircle (color: .orange, friendName: "Start \nVideo \nCall")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: FG_VideoCall(), label: { WhoFightingCircle (color: .blue, friendName: "Drama \nin my \nFriendGroup")
+            NavigationLink(destination: IntroFriendGpFight(), label: { FG_VideoCallCircle (color: .blue, friendName: "Be \nAccountable")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
+            NavigationLink(destination: IntroFriendGpFight(), label: {
+                FG_VideoCallCircle (color: .gray, friendName: "Info \nPages")
+                })
+            .offset(x: showItems ? 40 : 0, y: showItems ? -200: 0)
+             
+            
+               NavigationLink(destination: ParentsFighting(), label: {
+                   FG_VideoCallCircle (color: .green, friendName: "On \n Your \nNerves")
+             })
+             .offset(x: showItems ? -50 : 0, y: showItems ? 210: 0)
+             
+            
+            
+            
+            
+            
+            
+            
+            
+            
 
-
-        Image(systemName: "triangle.fill")
+        Image(systemName: "heart.fill")
                     .resizable()
-                    .foregroundColor(.gray)
-                    .frame(width: 260, height: 260)
+                    .foregroundColor(.purple)
+                    .frame(width: 150, height: 150)
 //                    .blur(radius: 2)
 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                   .opacity(0.9)
 
            VStack {
                
-            Spacer ()
-                   .frame(height: 100)
-                
-              Text("BlueMode")
-                            .font(.system(size: 43))
+//            Spacer ()
+//                   .frame(height: 100)
+//
+              Text("FriendGroup")
+                            .font(.system(size: 20))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
@@ -100,7 +121,7 @@ struct WhoFighting: View {
     }
    
 
-struct WhoFightingCircle: View {
+struct FG_VideoCallCircle: View {
     var color: Color
     var friendName: String
     
@@ -109,11 +130,13 @@ struct WhoFightingCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 150, height: 150)
+        .frame(width: 100, height: 100)
         .clipShape(Circle())
         .foregroundColor(color)
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
-        
+        .opacity(0.5)
+            
+            
         Text(friendName)
                 .fontWeight(.light)
                 .italic()
@@ -124,9 +147,9 @@ struct WhoFightingCircle: View {
 }
 
 
-struct WhoFighting_Previews : PreviewProvider {
+struct FG_VideoCall_Previews : PreviewProvider {
     static var previews: some View {
-        WhoFighting()
+        FG_VideoCall()
     }
 
 }
@@ -138,3 +161,4 @@ struct WhoFighting_Previews : PreviewProvider {
 
 //    .glow(color: glowColor(), radius: 20)
 //        private func glowColor() -> Color {
+
