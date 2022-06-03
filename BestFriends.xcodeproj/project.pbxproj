@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		39D0524EB9F9947C28B9D613 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */; };
 		62319AAD284A788000CA0359 /* FG_Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62319AAC284A788000CA0359 /* FG_Video.swift */; };
+		62319AAE284A7C0000CA0359 /* FGVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF091197284A736800CB0AF0 /* FGVideo2.mp4 */; };
 		7A0856A027F3D94500E8282B /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08569F27F3D94500E8282B /* AuthController.swift */; };
 		7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A127F3D9A900E8282B /* RestAPI.swift */; };
 		7A0856A427F3D9C400E8282B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A327F3D9C400E8282B /* Model.swift */; };
@@ -912,6 +913,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62319AAE284A7C0000CA0359 /* FGVideo2.mp4 in Resources */,
 				7A2C215A280509DA009362CF /* green.mp4 in Resources */,
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */,
