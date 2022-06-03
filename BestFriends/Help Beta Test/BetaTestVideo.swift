@@ -30,7 +30,11 @@ Image("purpleBackground")
 //AdPlayerView(name: "BestFriendsAd1")
 //    .ignoresSafeArea()
 //    .blendMode(.screen)
-
+            
+            VStack {
+          
+            
+            
             VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "BestFriendsAd1", withExtension: "mp4")!))
                 .ignoresSafeArea()
                 .blendMode(.screen)
@@ -52,8 +56,12 @@ Image("purpleBackground")
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-        
+            Text("Beta Testing Video")
+                .font(.system(size: 40))
+                .fontWeight(.thin)
+                .foregroundColor(Color.white)
     }
+}
 }
 }
 }

@@ -21,9 +21,9 @@ struct LoginView: View {
                 ColorManager.purple1
                     .ignoresSafeArea()
                 //TODO: Remove the onAppear for production
-//                    .onAppear {
-//                        sessionManager.login(email: "test1234@gmail.com", password: "secretPass")
-//                    }
+                    .onAppear {
+                        sessionManager.login(email: "test1234@gmail.com", password: "secretPass")
+                    }
                 
                 Circle()
                     .frame(width: 400, height: 400)
