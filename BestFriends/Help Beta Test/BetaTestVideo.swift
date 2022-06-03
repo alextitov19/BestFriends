@@ -19,28 +19,25 @@ struct BetaTestVideo: View {
         ZStack {
          
 
-Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-    .ignoresSafeArea()
+            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                .ignoresSafeArea()
 
-Image("purpleBackground")
-    .resizable()
-    .ignoresSafeArea()
-    .scaledToFill()
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
 
-//AdPlayerView(name: "BestFriendsAd1")
-//    .ignoresSafeArea()
-//    .blendMode(.screen)
+        VStack {
             
-            VStack {
-          
-            
+            Text("Beta Testing Video")
+                .font(.system(size: 40))
+                .fontWeight(.thin)
+                .foregroundColor(Color.white)
             
             VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "BestFriendsAd1", withExtension: "mp4")!))
                 .ignoresSafeArea()
                 .blendMode(.screen)
-        
-        
-        VStack {
+            
                 Spacer()
                     .frame(height: 0)
                 
@@ -56,12 +53,8 @@ Image("purpleBackground")
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-            Text("Beta Testing Video")
-                .font(.system(size: 40))
-                .fontWeight(.thin)
-                .foregroundColor(Color.white)
-    }
-}
-}
-}
-}
+    }//VStack
+}//ZStack
+}//body
+}//struct
+
