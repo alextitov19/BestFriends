@@ -34,6 +34,9 @@ struct ChatView: View {
     @State var pickerSourceType: UIImagePickerController.SourceType = .photoLibrary
     var body: some View {
         
+       
+            
+       
         ZStack {
             AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
@@ -47,7 +50,10 @@ struct ChatView: View {
                         .resizable()
                         .frame(width: 27, height: 27)
                         .scaledToFill()
-                        .colorInvert()
+                        .foregroundColor(.white)
+                        .onTapGesture(perform: {
+                            sessionManager.infoView()
+                        })
                     
                     
                     Image("home-alt2")
@@ -140,8 +146,8 @@ struct ChatView: View {
                     
                 }
             }
-        }
-    }
+        }//ZStack
+    }//body
     
     private func saveToSmileNotes(message: Message) {
         RestApi.instance.getSmileNotes().then({ smileNotes in
