@@ -43,7 +43,7 @@ struct FG_VideoCall: View {
         ZStack {
 
             NavigationLink(destination: IntroBluemodeFriend(), label: {
-                FG_VideoCallCircle (color: .pink, friendName: "Be \na \nTeam")
+                FG_VideoCallCircle (color: .pink, friendName: "Team")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
              

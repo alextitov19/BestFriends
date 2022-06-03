@@ -43,10 +43,11 @@ struct ChatView: View {
                 // MARK: Header
                 HStack {
                    
-                    Image("Exclamation Mark-1")
+                    Image(systemName: "info.circle")
                         .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 27, height: 27)
                         .scaledToFill()
+                        .colorInvert()
 //                    sessionManager.showHome()
                     
                     Image("home-alt2")
