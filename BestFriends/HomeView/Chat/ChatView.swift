@@ -48,7 +48,7 @@ struct ChatView: View {
                         .frame(width: 27, height: 27)
                         .scaledToFill()
                         .colorInvert()
-//                    sessionManager.showHome()
+                    
                     
                     Image("home-alt2")
                         .resizable()
