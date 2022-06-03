@@ -22,7 +22,7 @@ struct InfoView: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            AdPlayerView(name: "FieldFlowers")
+            AdPlayerView(name: "green")
                 .ignoresSafeArea()
             
             VStack {
@@ -34,32 +34,13 @@ struct InfoView: View {
                     .foregroundColor(Color.black)
              
                 Text("M E S S A G E")
-                    .font(.system(size: 60))
+                    .font(.system(size: 55))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
-                
-                Text("for dropdown")
-                    .font(.system(size: 40))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.black)
-                
-                
-                    
+          
                 VStack {
                
-                    Spacer()
-                    .frame(height: 250)
-                    
-//                    Text("Questioning?")
-//                        .font(.system(size: 40))
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.blue)
-//                        .kerning(10)
-//           
-//                    Spacer()
-//                    .frame(height: 20)
                     
                 Text("Save SuperCool Messages")
                     .font(.system(size: 25))
@@ -87,16 +68,73 @@ struct InfoView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 
-              
-               
-         
-                Spacer()
-                    .frame(height: 40)
                 
+                     Spacer()
+                     .frame(height: 30)
+                     
+               
+                Text("Hide Chat - Restore")
+                    .font(.system(size: 42))
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.purple)
+                
+                Text("with Secret PIN")
+                    .font(.system(size: 35))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.black)
+                
+                Text("(tap lock icon)")
+                    .font(.system(size: 25))
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                  
+                    Spacer()
+                    .frame(height: 30)
+                }
+                
+            VStack {
+                
+                Text("For Your Safety")
+                    .font(.system(size: 55))
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.purple)
+                
+                Text("Friends CAN'T")
+                    .font(.system(size: 35))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.black)
+                
+                Text("Download images")
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+              
+                Text("Copy/paste messages")
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                Text("Screen-shot Chat messages")
+                    .font(.system(size: 24))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                
+                Spacer()
+                .frame(height: 45)
+                
+           
                 NavigationLink(
                     destination: EmptyView(),
                     label: {
-                        Text("BACK")
+                        Text("back to Chat")
                             .fontWeight(.thin)
                             .frame(width: 200, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
