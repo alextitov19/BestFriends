@@ -15,57 +15,77 @@ struct Step7_TimeToTalk: View {
 
     var body: some View {
         ZStack {
-            
-            Image("FatGuy")
-                .resizable()
-                .scaledToFill()
+            ColorManager.purple2
                 .ignoresSafeArea()
+                .onAppear {
+//                .onAppear(perform: initLoadData)
+//                        Image("Friend1Box")
+      }
+
+        VStack {
+              
+            ZStack {
+                    
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .foregroundColor(ColorManager.purple3)
+                    .frame(width: 375, height: 375)
+                    .blur(radius: 2)
+                    .shadow(color: .orange, radius: 65, x: 40, y: 50)
+                    
+                    
+                    
+                Image(systemName: "triangle.fill")
+                    .resizable()
+                    .foregroundColor(ColorManager.grey2)
+                    .frame(width: 300, height: 300)
+                    .blur(radius: 2)
+                    .shadow(color: .orange, radius: 65, x: 40, y: 50)
+                    
+                    
+                    VStack {
+                        
+                  
+                        Text("HUG \n-it- \nOUT")
+                            .font(.system(size: 40))
+                            .foregroundColor(.purple)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                       
+                        Spacer ()
+                            .frame(height: 50)
+                        
+                        Text("Get Back to Being Friends")
+                            .font(.system(size: 23))
+                            .italic()
+                            .foregroundColor(.white)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                        Spacer ()
+                            .frame(height: 20)
+                           
+                    }
+                }
+              
+                
+                Text("You got this, ok!")
+                    .font(.system(size: 40))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.black)
+                
+               Spacer()
+                   .frame(height: 15)
             
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//
-            
-            VStack {
-                
-                Text("HUG")
-                    .font(.system(size: 65))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.purple)
-                    .frame(height: 30)
-
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("it")
-                    .font(.system(size: 50))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.purple)
-                    .frame(height: 30)
-
-                Spacer()
-                    .frame(height: 20)
-                
-                
-                Text("Out!")
-                    .font(.system(size: 65))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.purple)
-                    .frame(height: 30)
-
-                Spacer()
-                    .frame(height: 40)
-                
-             
                 VStack {
                     Link(destination: URL(string: "https://socialtechlabs.com/user-text-message-suggestions/")!) {
                         
-                        Text("Set time to meet")
+                        Text("Set time to MEET")
                             .fontWeight(.thin)
                             .frame(width: 225, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 27))
-                            .background(ColorManager.purple3)
+                            .background(ColorManager.pmbc_green)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     }
@@ -73,21 +93,12 @@ struct Step7_TimeToTalk: View {
                     
 
                     Spacer()
-                        .frame(height: 250)
+                        .frame(height: 80)
                    
                     VStack {
-                        
-                        Text("Get Back to Being Friends")
-                            .font(.system(size: 30))
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.black)
-                        
-                        
-                        Spacer ()
-                            .frame(height: 30)
-                        
+                         
                         Button(action: {
-                            sessionManager.showHome()
+                            sessionManager.reloadHome()
                         }, label: {
                             Text("HOME")
                                 .fontWeight(.thin)
@@ -102,19 +113,21 @@ struct Step7_TimeToTalk: View {
                                     
                         })
                             
-                        NavigationLink(
-                            destination: Step7_TimeToTalk(),
-                            label: {
-                                Text("Did this HELP?")
+//                        NavigationLink(
+//                            destination: EmptyView(),
+//                            label: {
+                                
+                        Link(destination: URL(string: "https://socialtechlabs.com/did-bluemode-help/")!) {
+                                Text("Let us know. Did this HELP?")
                                     .fontWeight(.thin)
-                                    .frame(width: 200, height: 40)
+                                    .frame(width: 310, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
+                                    .font(.system(size: 27))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     }
-                )}
+                }
             }
         }
     }
@@ -133,9 +146,6 @@ struct Step7_TimeToTalk_Previews : PreviewProvider {
         Step7_TimeToTalk()
     }
 }
-
-
-
 
 
 

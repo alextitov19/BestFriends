@@ -140,6 +140,36 @@ class Helper {
         }
     }
     
+    func updateAtmosphere(url: String, atm: Atmosphere) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(atm)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
+    func createMoodLog(url: String, createMoodLog: CreateMoodLog) -> Promise<MoodLog> {
+        let payload = try? JSONEncoder().encode(createMoodLog)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, MoodLog.self).then { moodLog in
+            return Promise<MoodLog>(moodLog)
+        }
+    }
+    
+    func createSmileNote(url: String, createSmileNote: CreateSmileNote) -> Promise<SmileNote> {
+        let payload = try? JSONEncoder().encode(createSmileNote)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, SmileNote.self).then { smileNote in
+            return Promise<SmileNote>(smileNote)
+        }
+    }
+    
     func getImage(url: String) -> Promise<Data> {
         return callRestApi(url: url, method: .get, ImageData.self).then { response in
             return Promise<Data>(response.image)
@@ -154,6 +184,16 @@ class Helper {
     
     func sendPushNotification(url: String, createNotification: CreateNotification) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(createNotification)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
+    func updateUser(url: String, user: User) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(user)
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
@@ -183,7 +223,7 @@ class Helper {
             self.accessToken = tokens.AccessToken.Token
             self.renewToken = tokens.RenewToken.Token
             do {
-                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: ""), token: tokens.RenewToken.Token)
+                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), token: tokens.RenewToken.Token)
                 print("Renew Token: ", tokens.RenewToken.Token)
             } catch {
                 print(error)

@@ -11,6 +11,9 @@ import AVKit
 
 struct Step3_BreathInviteView: View {
     
+    let user: User
+    let friends: [User]
+    
     var body: some View {
         
         ZStack {
@@ -82,7 +85,7 @@ struct Step3_BreathInviteView: View {
                             NavigationLink(
                                 destination: BreathInView(),
                                 label: {
-                                    Text("Invite ALL")
+                                    Text("ALL")
                                         .fontWeight(.bold)
                                         .frame(width: 100, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -92,80 +95,35 @@ struct Step3_BreathInviteView: View {
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 })
                             
-                            NavigationLink(
-                                destination: BreathInView(),
-                                label: {
-                                    Text("Friend 1")
-                                        .fontWeight(.bold)
-                                        .frame(width: 100, height: 30)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 15))
-                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                })
-                            NavigationLink(
-                                destination: BreathInView(),
-                                label: {
-                                    Text("Firend 2")
-                                        .fontWeight(.bold)
-                                        .frame(width: 100, height: 30)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 15))
-                                        .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                        .cornerRadius(25)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                })
-                        }
-                        VStack {
-                            HStack {
-                                NavigationLink(
-                                    destination: BreathInView(),
-                                    label: {
-                                        Text("Friend 3")
-                                            .fontWeight(.bold)
-                                            .frame(width: 100, height: 30)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 15))
-                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
-                                NavigationLink(
-                                    destination: BreathInView(),
-                                    label: {
-                                        Text("Friend 4")
-                                            .fontWeight(.bold)
-                                            .frame(width: 100, height: 30)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 15))
-                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
-                                
-                                NavigationLink(
-                                    destination: BreathInView(),
-                                    label: {
-                                        Text("Friend 5")
-                                            .fontWeight(.bold)
-                                            .frame(width: 100, height: 30)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 15))
-                                            .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                                            .cornerRadius(25)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
+                            if friends.count > 0 {
+                                RectView(user: user, friend: friends[0])
                             }
-                            Spacer()
-                                .frame(height: 20)
                             
+                            if friends.count > 1 {
+                                RectView(user: user, friend: friends[1])
+                            }
+                        }
+                     
+                        Spacer()
+                            .frame(height: 35)
+                        HStack {
+                            if friends.count > 2 {
+                                RectView(user: user, friend: friends[2])
+                            }
+                            
+                            if friends.count > 3 {
+                                RectView(user: user, friend: friends[3])
+                            }
+                            
+                            if friends.count > 4 {
+                                RectView(user: user, friend: friends[4])
+                            }
                         }
                         
                         VStack {
                             
                             NavigationLink(
-                                destination: DramaMainView(),
+                                destination: EmptyView(),
                                 label: {
                                     Text("Invite")
                                         .fontWeight(.thin)
@@ -208,14 +166,36 @@ struct Step3_BreathInviteView: View {
         }
     }
     
-    
-}
-struct BreathInviteView_Previews : PreviewProvider {
-    static var previews: some View {
-        Step3_BreathInviteView()
+    private struct RectView: View {
+        let user: User
+        let friend: User
+        
+        var body: some View {
+            Button(action: {
+                RestApi.instance.sendPushNotification(title: "Take a breath", body: "\(user.firstName) invited you to take a breath with them!", APNToken: friend.APNToken ?? "").then { response in
+                    print("Got send APN repsonse: ", response)
+                }
+            },
+                   label: {
+                Text(friend.firstName + " " + String(friend.lastName.first!))
+                    .fontWeight(.bold)
+                    .frame(width: 100, height: 30)
+                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .font(.system(size: 10))
+                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
+                    .cornerRadius(25)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+            })
+        }
     }
 }
 
 
+
+//struct Step3_BreathInviteView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        Step3_BreathInviteView()
+//    }
+//}
 
 

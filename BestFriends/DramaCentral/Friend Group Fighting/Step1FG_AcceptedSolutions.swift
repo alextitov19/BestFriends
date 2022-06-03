@@ -29,42 +29,60 @@ struct Step1FG_SuggestedSolutions: View {
 //
             
             VStack {
+          
+           
                 
-                Text("Adults Suggest")
-                    .font(.system(size: 40))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.blue)
-               
                 Spacer()
-                    .frame(height: 20)
-                
-                Text("- Disregard fight altogether \n- Don't get involved \n- Don't pick sides \n- Don't personalize the fight \n- It's their fight, they must fix it")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-               
-                Spacer()
-                    .frame(height: 35)
+                    .frame(height: 10)
                 
                 Text("Teen Reality")
-                    .font(.system(size: 35))
+                    .font(.system(size: 75))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                    
+                Spacer()
+                    .frame(height: 25)
+                
+                Text("Wow, that list doesn't sound")
+                    .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(Color.blue)
                 
+                Text("like me and my friends")
+                    .font(.system(size: 30))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.blue)
+               
                 Spacer()
                     .frame(height: 20)
                 
-                Text("- teens talk all the time to group members \n- know exactly what is going on with everyone \n- they always take sides \n- they talk to each other about other's fights \n- they express their opinions \n- exactly opposite what professionals say to do ")
-                    .font(.system(size: 18))
+            VStack {
+                Text("- we can't just ignore fights \n- we get involved \n- we sort of commerizerate \n- we for sure express our opinions \n- may even talk behind their back")
+                    .font(.system(size: 24))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
      
-                VStack {
-                    Spacer()
-                        .frame(height: 45)
+                Spacer()
+                    .frame(height: 25)
+                
+                Text("Hey, we're just teens")
+                    .font(.system(size: 37))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                
+                Text("being teens")
+                    .font(.system(size: 40))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                
+                
+            VStack {
+                Spacer()
+                    .frame(height: 45)
                     
                     NavigationLink(
-                        destination: Step2FG_NewSolutions(),
+                        destination: Step_OurAdvantage(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
@@ -75,31 +93,26 @@ struct Step1FG_SuggestedSolutions: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                       
-                        
-                        
                         })
-                
-//
-//                Button(action: {
-//                    sessionManager.showDramaMainView()
-//                }, label: {
-//                    Text("NEXT")
-//                        .fontWeight(.thin)
-//                        .frame(width: 100, height: 40)
-//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                        .font(.system(size: 30))
-//                        .background(ColorManager.purple3)
-//                        .cornerRadius(15)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                })
-//                .padding(.vertical, 40)
-                
+
             }
+                
+             
+               
+                Spacer()
+                    .frame(height: 25)
+                
+                Text("So, now what do we do?")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
         }
     }
 }
 }
-
+}
 
 
 

@@ -7,120 +7,92 @@
 
 import Foundation
 import SwiftUI
-import AVKit
+
 
 struct Step4_NuclearOption: View {
     
     var body: some View {
         
         ZStack {
-            Image("purpleBackground")
+         
+        Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
+       
+        
             VStack {
                 ZStack {
                     
                     Image(systemName: "heart.fill")
                     
                         .resizable()
-                        .frame(width: 190, height: 170, alignment: .leading)
+                        .frame(width: 220, height: 190, alignment: .leading)
                     
                         .foregroundColor(Color(hue: 0.714, saturation: 0.411, brightness: 0.626))
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
                     
                     
-                    Text("please think \nbefore ...")
-                        .font(.system(size: 20))
+                    Text("just a \nthought")
+                        .font(.system(size: 45))
                         .foregroundColor(.white)
-                        .fontWeight(.medium)
+                        .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                 }
                 
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 20)
                 
-                Text("Unfriending")
-                    .font(.system(size: 35))
+                Text("Before unfriending &")
+                    .font(.system(size: 25))
                    
-                    .foregroundColor(.gray)
-                    .fontWeight(.medium)
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 0)
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 15)
                 
-                Text("Posting hurtful comments")
-                    .font(.system(size: 30))
+                Text("making hurtful comments \non social media . . .")
+                    .font(.system(size: 25))
                   
-                    .foregroundColor(.gray)
-                    .fontWeight(.medium)
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 0)
                
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 20)
             
             VStack {
-                Text("- Or -")
-                    .font(.system(size: 25))
-                    .italic()
-                    .foregroundColor(.gray)
-                    .fontWeight(.medium)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
-               
-                Spacer()
-                    .frame(height: 5)
+           
+             
                 
                 
                 
-                Text("Sharing your friend's \nprivate messages \n on \n Social Media")
-                    .font(.system(size: 30, weight: .bold))
-                  
-                    .foregroundColor(.gray)
-                    .fontWeight(.medium)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
-                
-                Spacer()
-                    .frame(height: 35)
-            
-                
+             
+                Text("REMEMBER")
+                    .font(.system(size: 70))
+                    .foregroundColor(.blue)
+                    .fontWeight(.ultraLight)
+                   
                 VStack {
               
-                    Text("30 minutes ago you were BFF and you will be again!")
-                        .fontWeight(.light)
+                    Text("30 minutes ago you were BFF and will be again!")
+                        .fontWeight(.ultraLight)
                         .foregroundColor(Color.white)
                         .italic()
                         .multilineTextAlignment(.center)
-                        .frame(width: 275, height: 70, alignment: .leading)
-                        .font(.system(size: 25))
+                        .frame(width: 315, height: 130, alignment: .leading)
+                        .font(.system(size: 35))
                         .padding(10)
-                        .background(Color.purple)
-                        .cornerRadius(15)
+                        .background(Color.green)
+                        .cornerRadius(40)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                
-//                Text("30 minutes ago you were BFF and will be again!")
-//                                       .font(.system(size: 35, weight: .thin))
-//                                        .foregroundColor(.green)
-//                                        .multilineTextAlignment(.leading)
-//                                        .frame(width: 310, height: 140)
-//                                        .cornerRadius(15)
-//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-               
-                    
+              
                 VStack {
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    NavigationLink(
+                     NavigationLink(
                         destination: YouGotThis(),
                         label: {
                             Text("NEXT")
@@ -133,6 +105,8 @@ struct Step4_NuclearOption: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                     
+                    
+                    .padding(.vertical, 40)
                 }
             }
             

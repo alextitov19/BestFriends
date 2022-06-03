@@ -5,7 +5,7 @@
 //  Created by Social Tech on 5/3/22.
 //
 
-import Foundation
+
 import Foundation
 import SwiftUI
 
@@ -19,16 +19,7 @@ struct ParentsFighting: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//
-            //            put in Friend 1 planet
-//            Image("2 weeks")
-//                .resizable()
-//                .frame(width: 400, height: 400)
-//
-            
+         
             
             VStack {
                 

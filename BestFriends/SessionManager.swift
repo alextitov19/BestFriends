@@ -15,8 +15,9 @@ enum AppState {
     case settings
     case dramaMainView
     case masterFriendVault
-
     
+    //    case bestFriendsMessages(user: User, atmosphere: Atmosphere, friends: [User], friendAtmospheres: [Atmosphere])
+    //
     case fightTextUserIdeas
     case whoFighting
     case parentsFighting
@@ -26,7 +27,7 @@ enum AppState {
 
 final class SessionManager: ObservableObject {
     @Published var appState: AppState = .login
-
+    @Published var user: User!
     func showSignUp() {
         appState = .signUp
     }
@@ -61,25 +62,30 @@ final class SessionManager: ObservableObject {
     }
     
     func showDramaMainView() {
-            appState = .dramaMainView
+        appState = .dramaMainView
     }
     
     func showMasterFriendVault() {
         appState = .masterFriendVault
     }
-
-    
     
     func showFightTextUserIdeas() {
-            appState = .fightTextUserIdeas
+        appState = .fightTextUserIdeas
     }
     func showWhoFighting() {
-            appState = .whoFighting
+        appState = .whoFighting
     }
     func showParentsFighting() {
-            appState = .parentsFighting
+        appState = .parentsFighting
     }
     func showFightWithFriend() {
-            appState = .fightWithFriend
+        appState = .fightWithFriend
+    }
+    
+    func reloadHome() {
+        appState = .invite
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
+            self.appState = .home
+        }
     }
 }

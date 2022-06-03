@@ -43,26 +43,27 @@ struct MyAccountView: View {
                     }
                     
                     Spacer()
+                        .frame(width: 30)
                     
-                    Text("My Account")
+                    Text("Manage My Account")
                         .font(.system(size: 30))
-//                        .offset(x: -25, y: 50)
-                    
-                    
+
                     Spacer()
                 }
-                
+                Spacer()
+                    .frame(height: 70)
             
-//
+                Divider()
                NavigationLink(
                   destination: ResetPasswordView(),
                   label: {
                        HStack {
                            Text("Reset Password")
                                .font(.system(size: 20))
-//                              .foregroundColor(.black)
-                              .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                           Spacer().frame(maxHeight: 0)
+                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                               .offset(x: 25)
+                          
+                           Spacer()
 
                           Image("arrowRight")
                               .resizable()
@@ -77,20 +78,23 @@ struct MyAccountView: View {
               NavigationLink(
                destination: ChangePin(),
                  label: {
-                       HStack {
+                HStack {
                     Text("Change PIN for Hide Chat")
-                              .font(.system(size: 20))
-//                             .foregroundColor(.black)
-                              .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .font(.system(size: 20))
+                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .offset(x: 25)
+                    
                            Spacer()
 
                           Image("arrowRight")
-                              .resizable()                               .frame(width: 25, height: 25)
-                               .scaledToFit()
-                               .colorInvert()
+                              .resizable()
+                              .frame(width: 25, height: 25)
+                              .scaledToFit()
+                              .colorInvert()
                       }
                    })
-                
+          
+            VStack {
                 Divider()
                 
                 NavigationLink(
@@ -99,8 +103,9 @@ struct MyAccountView: View {
                          HStack {
                       Text("Remove Friend")
                                 .font(.system(size: 20))
-//                               .foregroundColor(.black)
                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .offset(x: 25)
+                             
                              Spacer()
 
                             Image("arrowRight")
@@ -118,12 +123,13 @@ struct MyAccountView: View {
                          HStack {
                       Text("Change Notifications Status")
                                 .font(.system(size: 20))
-//                               .foregroundColor(.black)
                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .offset(x: 25)
+                             
                              Spacer()
 
                             Image("arrowRight")
-                                .resizable()                               .frame(width: 25, height: 25)
+                                .resizable()              .frame(width: 25, height: 25)
                                  .scaledToFit()
                                  .colorInvert()
                         }
@@ -131,42 +137,46 @@ struct MyAccountView: View {
 
                 
             
-            
-                
+            VStack {
+                Divider()
+              
                 NavigationLink(
                  destination: DeleteMyAccount(),
                    label: {
                          HStack {
                       Text("Delete My Account")
-                                .font(.system(size: 20))
-                               .foregroundColor(.red)
+                                 .font(.system(size: 20))
+                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                 .offset(x: 25)
 
                           Spacer()
 
                             Image("arrowRight")
-                                .resizable()                               .frame(width: 25, height: 25)
+                                .resizable()               .frame(width: 25, height: 25)
                                  .scaledToFit()
                                  .colorInvert()
                         }
                      })
-                
-       
-                .padding(.vertical, 170
-                )
-    
+                Divider()
             .navigationBarHidden(true)
    
-            
+            Spacer ()
+                    .frame(height: 300)
                 
             }
     }
    
 }
-    
-
+    }
+    }
+}
+        
+        
+        
+        
 struct MyAccountView_Previews : PreviewProvider {
     static var previews: some View {
         MyAccountView()
     }
 }
-}
+

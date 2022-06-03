@@ -9,6 +9,7 @@
 
 import Foundation
 import SwiftUI
+import AVKit
 
 struct BestFriendMessages: View {
     
@@ -25,22 +26,68 @@ struct BestFriendMessages: View {
     @State private var planets: [Planet] = []
     
     var body: some View {
-        
         ZStack {
+            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                .ignoresSafeArea()
+
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-                .onAppear(perform: createPlanets)
-            
-            AdPlayerView(name: "backgroundAnimation")
+           
+            AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+                .onAppear(perform: createPlanets)
+// trying to put in section for PhotoPop
             
+            ZStack {
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .foregroundColor(ColorManager.purple3)
+                    .frame(width: 350, height: 350)
+                    .blur(radius: 2)
+                    .shadow(color: .orange, radius: 65, x: 40, y: 50)
+                
+                
+                VStack {
+                    
+//                    Text("STOP Scrolling")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(.white)
+//                        .fontWeight(.medium)
+//                        .multilineTextAlignment(.center)
+//
+//                    Text("quickly see")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .foregroundColor(.white)
+//                        .fontWeight(.medium)
+//                        .multilineTextAlignment(.center)
+//
+//
+//                    Text("Special \nMessages")
+//                        .font(.system(size: 35))
+//                        .foregroundColor(.purple)
+//                        .fontWeight(.medium)
+//                        .multilineTextAlignment(.center)
+//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//                    Text("you 'long-tapped' \nfrom Chat")
+//                        .font(.system(size: 16))
+//                        .italic()
+//                        .foregroundColor(.white)
+//                        .fontWeight(.medium)
+//                        .multilineTextAlignment(.center)
+//
+                       
+                }
+            }
             
-//            PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
-//                .scaledToFit()
-//                .frame(width: 700)
+//
+//            Spacer ()
+//                .frame(height: 100)
+//
             
             ZStack {
                 if showItems {
@@ -58,12 +105,15 @@ struct BestFriendMessages: View {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[2].user, atmosphere: planets[2].atmosphere), label: { planets[2] })
                         .offset(x: showItems ? -150 : 0, y: showItems ? 150: 0)
                 }
-                                
-                if planets.count > 3 {
-                    NavigationLink(destination: IndividualFriendMessages(friend: planets[3].user, atmosphere: planets[3].atmosphere), label: { planets[3] })
-                        .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
-                }
-                
+                 
+                    if planets.count > 3 {
+                        NavigationLink(destination: IndividualFriendMessages(friend: planets[3].user, atmosphere: planets[3].atmosphere), label: { planets[3] })
+                            .offset(x: showItems ? -60 : 0, y: showItems ? -160: 0)
+                    }
+                    
+                    
+                    
+                    
                 if planets.count > 4 {
                     NavigationLink(destination: IndividualFriendMessages(friend: planets[4].user, atmosphere: planets[4].atmosphere), label: { planets[4] })
                         .offset(x: showItems ? 80 : 0, y: showItems ? -260: 0)
@@ -73,29 +123,48 @@ struct BestFriendMessages: View {
                 ZStack {
                     Image(systemName: "heart.fill")
                         .resizable()
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
-                        .frame(width: 200, height: 200)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
-                        .shadow(color: .orange, radius: 50, x: 40, y: 50)
+                        .foregroundColor(ColorManager.purple3)
+                        .frame(width: 250, height: 250)
+                        .blur(radius: 2)
+                        .shadow(color: .orange, radius: 65, x: 40, y: 50)
                     
                     
                     VStack {
-                        Text("Thoughtful \nMessages")
+                        
+                        Text("STOP Scrolling")
                             .font(.system(size: 20))
-                            .foregroundColor(.orange)
+                            .foregroundColor(.white)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("quickly see")
+                            .font(.system(size: 15))
+                            .italic()
+                            .foregroundColor(.white)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                        Text("Special \nMessages")
+                            .font(.system(size: 35))
+                            .foregroundColor(.purple)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                    
-                        Text("you 'long-tapped' \nin Chat")
-                            .font(.system(size: 20))
+                        Text("you 'long-tapped' \nfrom Chat")
+                            .font(.system(size: 16))
+                            .italic()
                             .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                     
                     }
+                     
                 }
-                .onTapGesture {
+              
+         
+            .onTapGesture {
                     withAnimation {
                         self.showItems.toggle()
                     }
@@ -134,7 +203,7 @@ struct FriendVaultCircle: View {
                 .frame(width: 105, height: 105)
                 .clipShape(Circle())
                 .foregroundColor(color)
-            
+//                .blur(radius: 10)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
             
             Text(friendName)
@@ -146,6 +215,13 @@ struct FriendVaultCircle: View {
 }
 
 
+
+
+
+
+//
+//
+//
 //struct BestFriendMessages_Previews : PreviewProvider {
 //    static var previews: some View {
 //        BestFriendMessages()

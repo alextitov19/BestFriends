@@ -46,13 +46,15 @@ struct SignUpResponse: Codable {
 //}
 
 struct User: Codable {
-    let id: String
-    let firstName: String
-    let lastName: String
-    let APNToken: String?
-    let friends: [String] = []
-    let groups: [String] = []
-    let atmosphere: String
+    var id: String
+    var firstName: String
+    var lastName: String
+    var APNToken: String?
+    var friends: [String] = []
+    var groups: [String] = []
+    var atmosphere: String
+    var chatPin: String?
+    var smileNotes: [String]?
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case firstName = "first_name"
@@ -61,6 +63,8 @@ struct User: Codable {
         case friends = "friends"
         case groups = "groups"
         case atmosphere = "atmosphere"
+        case chatPin = "chat_pin"
+        case smileNotes = "smile_notes"
     }
 }
 

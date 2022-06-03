@@ -15,9 +15,7 @@ struct MasterFriendVault: View {
     
 // trying to put in swipe up gesture for Chat on this page
 @EnvironmentObject var sessionManager: SessionManager
-    
-    @State private var chatGroupsView = ChatGroupsView(groups: [])
-    
+        
     
     var body: some View {
        NavigationView {
@@ -101,9 +99,9 @@ struct MasterFriendVault: View {
                     
                     
                     NavigationLink(
-                        destination: Step3_BreathInviteView(),
+                        destination: EmptyView(),
                         label: {
-                            Text("  Take a Breather")
+                            Text("My Special Messages")
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)

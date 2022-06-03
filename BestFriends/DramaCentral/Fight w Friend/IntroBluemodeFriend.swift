@@ -29,29 +29,35 @@ struct IntroBluemodeFriend: View {
             VStack {
       
                 
-                Text("Problem")
-                    .font(.system(size: 70))
+//                Text("asking for")
+//                    .font(.system(size: 35))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//                Text("HELP")
+//                    .font(.system(size: 90))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//                Spacer()
+//                    .frame(height: 20)
+
+             Text("83% of teens said they \ndon't know what to do after a")
+                    .font(.system(size: 25))
                     .foregroundColor(.white)
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                 
+                Spacer()
+                    .frame(height: 15)
+                 
+                Text("HUGE FIGHT")
+                    .font(.system(size: 70))
+                    .foregroundColor(.blue)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("83% of teens said they \ndon't know what to do after ")
-                    .font(.system(size: 25))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                 
-                Spacer()
-                    .frame(height: 5)
-                 
-                Text("a Huge Fight")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                   
                 
             VStack {
                     Spacer()
@@ -88,7 +94,7 @@ struct IntroBluemodeFriend: View {
                 
               
                 
-                    Text("Easy-to-use, \n 5-Step method \nquickly helping you \nbecome friends again.")
+                    Text("A system developed by teens, \nto quickly help you \nbecome friends again.")
                         .font(.system(size: 25))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)

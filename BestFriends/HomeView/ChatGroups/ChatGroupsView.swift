@@ -11,6 +11,8 @@ struct ChatGroupsView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+    let user: User
+    
     // For swiping up/down and scrolling the BlurView
     @State var offset: CGFloat = 0
     @State var lastOffset: CGFloat = 0
@@ -46,9 +48,7 @@ struct ChatGroupsView: View {
                         ForEach(groups, id: \.id) { group in
 
                             Button(action: {
-                                RestApi.instance.getCurrentUser().then { user in
                                     sessionManager.showChat(user: user, group: group)
-                                }
                             }) {
                             GroupRow(group: group)
                                 .padding(.horizontal, 15)

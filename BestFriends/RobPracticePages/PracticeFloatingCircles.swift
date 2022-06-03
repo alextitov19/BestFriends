@@ -40,6 +40,13 @@ struct PracticeFloatingCircles: View {
                 .offset(y: showItems ? -60 : 0)
             Text("friend 2")
                     .fontWeight(.ultraLight)
+         
+            
+            Spacer()
+            Spacer()
+           
+            
+            
             
             Rectangle()
                 .frame(width: 60, height: 60)

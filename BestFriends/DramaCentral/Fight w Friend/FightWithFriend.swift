@@ -19,37 +19,21 @@ struct FightWithFriend: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            //
-            //
-            //                AdPlayerView(name: "backgroundAnimation")
-            //                    .ignoresSafeArea()
-            //                    .blendMode(.screen)
-            //                    .offset(y: -250)
-            //
+       
             VStack {
       
-                Spacer()
-                    .frame(height: 25)
-                
-                Text("We'll HELP in these \ntense times")
+               
+                Text("BlueMode")
+                    .font(.system(size: 80))
+                    .foregroundColor(.blue)
+                    .fontWeight(.ultraLight)
+                   
+                Text("yanking you from the")
                     .font(.system(size: 25))
                     .foregroundColor(.white)
-                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                 
-                Spacer()
-                    .frame(height: 30)
-                 
-                Text("Yanking you from")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
                     .fontWeight(.light)
                 
-                Text("the")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
+              
                 
                 Text("Wreckage")
                     .font(.system(size: 80))
@@ -76,12 +60,11 @@ struct FightWithFriend: View {
                     
                     Spacer()
                         .frame(height: 60)
-                
-                Text("finding your")
-                    .font(.system(size: 40))
-                    .italic()
+                Text("helping you find your ")
+                    .font(.system(size: 25))
+                    .foregroundColor(.white)
                     .fontWeight(.light)
-                    .foregroundColor(Color.white)
+              
                 
                 
                 Text("SMILE")
@@ -118,10 +101,3 @@ struct FightWithFriend_Previews : PreviewProvider {
 }
 
 
-
-//
-//   Text("We'll help you through \nthese tense times \nminimazing the wreckage")
-//       .font(.system(size: 30))
-//       .fontWeight(.light)
-//       .foregroundColor(Color.white)
-//

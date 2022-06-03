@@ -18,11 +18,28 @@ struct InviteView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey4
+              
+          ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear(perform: initLoadData)
             
             VStack {
+                
+                Spacer()
+                    .frame(height: 40)
+                
+                Text("You may add up to 5 friends")
+                    .foregroundColor(.purple)
+                    .font(.system(size: 27, weight: .light))
+                
+                
+                Text("- Always around in good & 'BAD' times \n- Trustworthy / Loyal \n- Non-Judgmental \n- Make me feel safe")
+                    .fontWeight(.thin)
+                    .foregroundColor(.white)
+                    .italic()
+                    .font(.system(size: 20))
+                
+                
                 // Top part for inviting a friend
                 HStack {
                     MainTextField(text: $email, placeholder: "Email")

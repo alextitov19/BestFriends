@@ -5,10 +5,10 @@
 //  Created by Social Tech on 5/3/22.
 //
 
-import Foundation
 
 import Foundation
 import SwiftUI
+import AVKit
 
 struct WhoFighting: View {
     
@@ -26,11 +26,15 @@ struct WhoFighting: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+          
            
-            AdPlayerView(name: "backgroundAnimation")
+            AdPlayerView(name: "cloud")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-//                .offset(y: -250)
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+////                .offset(y: -250)
             
             
 //            Image("planet_4")
@@ -40,50 +44,43 @@ struct WhoFighting: View {
             NavigationLink(destination: IntroBluemodeFriend(), label: {
                 WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nBFF")
                 })
-            .offset(x: showItems ? 100 : 0, y: showItems ? -325: 0)
+            .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
              
      
            
               NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .orange, friendName: "OMG, my Parents \nAGAIN!")
+                  WhoFightingCircle (color: .orange, friendName: "OMG, \nmy Parents \nare Fighting \nAGAIN!")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .blue, friendName: "my \nFriend \nGroup")
+            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .blue, friendName: "Drama \nin my \nFriendGroup")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
 
 
-        Image(systemName: "heart.fill")
+        Image(systemName: "triangle.fill")
                     .resizable()
                     .foregroundColor(.gray)
-                    .frame(width: 250, height: 250)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                    .shadow(color: .blue, radius: 50, x: 30, y: 50)
-        
-            VStack {
-                
+                    .frame(width: 260, height: 260)
+//                    .blur(radius: 2)
 
-            Text("Entering")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .fontWeight(.medium)
-                    .multilineTextAlignment(.center)
-                  
-                Text("BlueMode")
-                            .font(.system(size: 40))
+                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+
+           VStack {
+               
+            Spacer ()
+                   .frame(height: 100)
+                
+              Text("BlueMode")
+                            .font(.system(size: 43))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
-                    Text("Who's \nF I G H T I N G?")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
+                
                     
                 }
             }
@@ -119,11 +116,9 @@ struct WhoFightingCircle: View {
         
         Text(friendName)
                 .fontWeight(.light)
+                .italic()
                 .foregroundColor(.black)
-//
-//            Spacer()
-//                  .frame(height: 200)
-//
+
         }
     }
 }

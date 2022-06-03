@@ -28,17 +28,12 @@ struct Step2FG_NewSolutions: View {
                 
                 VStack {
                     
-                    
-                    Text("BlueMode")
-                        .font(.system(size: 80))
+    
+
+                    Text("Some Ideas")
+                        .font(.system(size: 60))
                         .foregroundColor(.blue)
                         .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-
-                    Text("Fight in Friend Group")
-                        .font(.system(size: 30))
-                        .foregroundColor(.blue)
-                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
 
                     
@@ -58,7 +53,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("Plan \nGroup \nActivity")
+                                    Text("Sub-group \nDynamics")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -82,9 +77,9 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("Group \nChating \nvs.1-on-1")
+                                    Text("Plan \nsomething \nFUN")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
+                                        .font(.system(size: 18, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 }
                             })
@@ -92,7 +87,7 @@ struct Step2FG_NewSolutions: View {
                         }
                         
                         VStack {
-                            NavigationLink(destination: Step2_FightLandingView(), label: {
+                            NavigationLink(destination: EmptyView(), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
@@ -106,9 +101,9 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("????")
+                                    Text("Be a \nTEAM")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
+                                        .font(.system(size: 18, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 }
                             })
@@ -116,7 +111,7 @@ struct Step2FG_NewSolutions: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            NavigationLink(destination: Step1_NotReadyTalk(), label: {
+                            NavigationLink(destination: FG_GettingStarted(), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 130, height: 130)
@@ -129,12 +124,11 @@ struct Step2FG_NewSolutions: View {
 //                                        .font(.system(size: 130, weight: .bold))
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
-                                    Text("My \nFriend \nGroup")
-                                    //                            .background()
+                                    Text("Getting \nStarted")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 25, weight: .bold))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    
+                                 
                                     
                                 }
                             })
@@ -157,7 +151,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("????")
+                                    Text("Pick \nmediator")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -167,7 +161,7 @@ struct Step2FG_NewSolutions: View {
                         }
                         
                 VStack {
-                            NavigationLink(destination: Step3_BreathInviteView(), label: {
+                            NavigationLink(destination: EmptyView(), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
@@ -181,9 +175,9 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
 //
-                                    Text("Who \nFighting \n in Group?")
+                                    Text("Be \nAccountable")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
+                                        .font(.system(size: 18, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 }
                             })
@@ -204,7 +198,7 @@ struct Step2FG_NewSolutions: View {
 //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                     
-                                    Text("Not \n Going \nNuclear")
+                                    Text("Set some \nBoundries")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -217,29 +211,29 @@ struct Step2FG_NewSolutions: View {
                     }
                     
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 60)
                     
-                VStack {
-                        
-                        NavigationLink(
-                            destination: WhoFighting(),
-                            label: {
-                                Text("my Journal")
-                                    .fontWeight(.thin)
-                                    .foregroundColor(Color.white)
-                                    .frame(width: 160, height: 40)
-                                    .font(.system(size: 30))
-                                
-                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            }
-                        )}
+//                VStack {
+//
+//                        NavigationLink(
+//                            destination: WhoFighting(),
+//                            label: {
+//                                Text("my Journal")
+//                                    .fontWeight(.thin)
+//                                    .foregroundColor(Color.white)
+//                                    .frame(width: 160, height: 40)
+//                                    .font(.system(size: 30))
+//
+//                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            }
+//                        )}
                     
                     Button(action: {
-                        sessionManager.showHome()
+                        sessionManager.reloadHome()
                     }, label: {
                         Text("HOME")
                             .fontWeight(.thin)
@@ -250,7 +244,7 @@ struct Step2FG_NewSolutions: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-                  
+              Spacer()
                     
                 }
             }

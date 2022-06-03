@@ -93,6 +93,28 @@ class RestApi {
         return request
     }
     
+    func updateAtmosphere(atmosphere: Atmosphere) -> Promise<Int> {
+        return helper.updateAtmosphere(url: API_URL + "/atmosphere", atm: atmosphere)
+    }
+    
+    public func createMoodLog(mood: Int, summary: String, friends: [String]) -> Promise<MoodLog> {
+        let cml = CreateMoodLog(mood: mood, summary: summary, sharedWith: friends)
+        return helper.createMoodLog(url: API_URL + "/atmosphere/mood", createMoodLog: cml)
+    }
+    
+    public func getMoodLog(id: String) -> Promise<MoodLog> {
+        return helper.callRestApi(url: API_URL + "/atmosphere/mood/" + id, method: .get, MoodLog.self)
+    }
+    
+    public func createSmileNote(messageId: String, messageBody: String, sendername: String) -> Promise<SmileNote> {
+        let csn = CreateSmileNote(messageId: messageId, messageBody: messageBody, senderName: sendername)
+        return helper.createSmileNote(url: API_URL + "/smile-notes", createSmileNote: csn)
+    }
+    
+    public func getSmileNotes() -> Promise<[SmileNote]> {
+        return helper.callRestApi(url: API_URL + "/smile-notes", method: .get, [SmileNote].self)
+    }
+    
     public func registerAPNToken() {
         Messaging.messaging().token { token, error in
           if let error = error {
@@ -118,7 +140,12 @@ class RestApi {
         let createNotification = CreateNotification(title: title, body: body, APNToken: APNToken)
         return helper.sendPushNotification(url: API_URL + "/notification", createNotification: createNotification)
     }
-        
+      
+    
+    public func updateUser(user: User) -> Promise<Int> {
+        return helper.updateUser(url: API_URL + "/user/update", user: user)
+    }
+    
     public func updateUserId() {
         getCurrentUser().then { details in
             self.userId = details.id

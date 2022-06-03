@@ -19,34 +19,26 @@ struct Step5_Why: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-            
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+  
             
             VStack {
                 
                 Text("What Started this")
                     .font(.system(size: 40))
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.leading)
-                //                        .padding(.horizontal, 20)
-                
-                
-                
+            
+               
                 Text("F I G H T ?")
-                    .font(.system(size: 70))
-                    .foregroundColor(.white)
+                    .font(.system(size: 80))
+                    .foregroundColor(.blue)
                     .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.trailing)
-                //                        .padding(.horizontal, 20)
-                
                 
                 Spacer()
                     .frame(height: 30)
                 
-                Text("this takes Courage \nto figure out")
+                Text("Yep, this takes 'Courage' \nto figure out")
                     .font(.system(size: 25))
                     .italic()
                     .foregroundColor(.white)
@@ -55,7 +47,7 @@ struct Step5_Why: View {
                     .padding(.horizontal, 0)
                 
                 Spacer()
-                    .frame(height:35)
+                    .frame(height:50)
                 
                 Link(destination: URL(string: "https://socialtechlabs.com/understanding-the-why/")!) {
                     

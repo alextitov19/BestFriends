@@ -6,13 +6,18 @@
 //
 
 import Foundation
-
-import Foundation
 import SwiftUI
-
+import Promises
 struct TryThis: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+    @State private var homeData: HomeData?
+    init() {
+        print("is this working")
+          getHomeData()
+       }
     var body: some View {
+       
 //        NavigationView {
             
             ZStack {
@@ -21,59 +26,127 @@ struct TryThis: View {
                 Image("purpleBackground")
                     .resizable()
                     .ignoresSafeArea()
-                    .scaledToFill()
-              
-//                Image("ballons")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
-//
-                
-                AdPlayerView(name: "backgroundAnimation")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .offset(y: -250)
-                
+                    .scaledToFill().onAppear{
+                        print("is this working")
+                        getHomeData()
+                    }
+         
                 VStack {
-                    Text("While waiting")
-                        .font(.system(size: 60))
+                    Text("While counting the HOURS")
+                        .font(.system(size: 30))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     
                     
-                    Text("on a return text")
-                        .font(.system(size: 50))
+                    Text("waiting on an")
+                        .font(.system(size: 30))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    Text("ANSWER BACK")
+                        .font(.system(size: 55))
+                        .foregroundColor(.blue)
+                        .fontWeight(.ultraLight)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 0)
+                    
                     Spacer()
                         .frame(height: 80)
                     
-                    Text("*hang out with a friend in Horizons \n*listen to your favorite songs \n*take a walk \n*text a friend \n*watch a funny video \n*eat some chocolate \n*watch a movie")
-                        .font(.system(size: 23))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(.white)
-                        .fontWeight(.heavy)
-                        .multilineTextAlignment(.leading)
-                        .padding(.horizontal, 10)
-                  
-                    Spacer()
-                        .frame(height: 75)
-                                          }
-                      }
+//                    Text("*hang out with a friend in Horizons \n*listen to your favorite songs \n*take a walk \n*text a friend \n*watch a funny video \n*eat some chocolate \n*watch a movie")
+//                        .font(.system(size: 23))
+//                        .italic()
+//                        .fontWeight(.light)
+//                        .foregroundColor(.white)
+//                        .fontWeight(.heavy)
+//                        .multilineTextAlignment(.leading)
+//                        .padding(.horizontal, 10)
+//
+//                    Spacer()
+//                        .frame(height: 75)
                     
-               }
+                    VStack {
+                         NavigationLink(
+                            destination: BlueModePlaylist(),
+                            label: {
+                                Text("Listen to your BlueMode Playlist")
+                                    .fontWeight(.thin)
+                                    .frame(width: 330, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                        if homeData != nil {
+                        Spacer()
+                            .frame(height:25)
+                        NavigationLink(
+                            destination: HideoutsView(user: self.homeData!.user, atmosphere: self.homeData!.atmosphere, friends: self.homeData!.friends, friendAtmospheres: self.homeData!.friendAtmospheres),
+                           label: {
+                               Text("Go To Hideouts")
+                                   .fontWeight(.thin)
+                                   .frame(width: 330, height: 40)
+                                   .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                   .font(.system(size: 25))
+                                   .background(ColorManager.purple3)
+                                   .cornerRadius(15)
+                                   .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                           }).onAppear(perform:{
+                               getHomeData()
+                           })
+                        }
+                      
+                        
+                        Spacer()
+                            .frame(height:25)
+                        
+//                        NavigationLink(
+//                            destination: EmptyView(),
+                        Button(action: {
+                            sessionManager.showHome()
+                        },
+                           label: {
+                               Text("Go to Chat")
+                                   .fontWeight(.thin)
+                                   .frame(width: 330, height: 40)
+                                   .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                   .font(.system(size: 25))
+                                   .background(ColorManager.purple3)
+                                   .cornerRadius(15)
+                                   .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                           })
+                      
+                        
+                }
             }
-        
-
-
-
-struct TryThis_Previews : PreviewProvider {
-    static var previews: some View {
-        TryThis()
+                    
+            }.onAppear{
+                getHomeData()
+            }
     }
+    private func getHomeData() {
+        RestApi.instance.getHomeData().then{ data in
+            print("Got HomeData: ", data)
+            homeData = data
+        }.catch { err in
+            print("Got error")
+            print(err)
+        }
+        
+    }
+        
 }
+
+
+//struct TryThis_Previews : PreviewProvider {
+//    static var previews: some View {
+//        TryThis()
+//    }
+//}

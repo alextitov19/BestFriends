@@ -28,46 +28,100 @@ struct ChatView: View {
     }
     
     @State private var messageBody: String = ""
-    
+    @State var showsAlert = false
+    @State private var showingMessageOptions = false
+    @State private var isLockTapped = false
+    @State var pickerSourceType: UIImagePickerController.SourceType = .photoLibrary
     var body: some View {
+        
         ZStack {
-            AdPlayerView(name: "cloud")
+            AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
             
             
             VStack {
                 // MARK: Header
+                HStack {
+                   
+                    Image("Exclamation Mark-1")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .scaledToFill()
+//                    sessionManager.showHome()
+                    
+                    Image("home-alt2")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .scaledToFill()
+                        .onTapGesture(perform: {
+                            sessionManager.showHome()
+                        })
+                    
                 Text(group.name)
                     .task {
                         await listenForMessages()
                     }
+                    Image("lock-alt")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .scaledToFill()
+                        .onTapGesture(perform: {
+                            isLockTapped.toggle()
+                        })
+                        .fullScreenCover(isPresented: $isLockTapped, content: HideChatView.init)
+                }
                 
                 // MARK: Main scroll view
-                ScrollView(.vertical) {
+                ScrollView(.vertical, showsIndicators: false) {
                     ForEach(messages, id: \.id) { message in
                         ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
+                            .onLongPressGesture(minimumDuration: 1, perform: { showingMessageOptions = true })
+                            .confirmationDialog("What would you like to do with this message?", isPresented: $showingMessageOptions, titleVisibility: .visible) {
+                                Button("Save to Smile Notes") {
+                                    saveToSmileNotes(message: message)
+                                }
+                                
+                                Button("Delete") {
+                                    
+                                }
+                                
+                                Link("Report Abuse", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
+                                
+                            }
                     }
                 }
                 
+                
                 // MARK: The bottom portion containing text field and action buttons
                 HStack {
-                    
                     Image("camera")
                         .resizable()
-                        .colorInvert()
+//                        .colorInvert()
                         .frame(width: 40, height: 40)
                         .scaledToFit()
                         .padding(.leading, 5)
-                        .onTapGesture { isShowPhotoLibrary = true }
-                        .sheet(isPresented: $isShowPhotoLibrary) {
-                            ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
+                        .onTapGesture { showsAlert = true }
+                        .confirmationDialog("Send an image", isPresented: $showsAlert, titleVisibility: .visible) {
+
+                            Button("Photo Library", action: {
+                                pickerSourceType = .photoLibrary
+                                isShowPhotoLibrary = !isShowPhotoLibrary
+                            })
+                            
+                            Button("Camera", action: {
+                                pickerSourceType = .camera
+                                isShowPhotoLibrary = !isShowPhotoLibrary
+                            })
+                        }.sheet(isPresented: $isShowPhotoLibrary) {
+                            ImagePicker(image: $attachmentImage, sourceType: pickerSourceType)
                                 .onDisappear { sendMessageWithImage() }
                         }
+                    
                     
                     TextField("", text: $messageBody)
                         .placeholder(when: messageBody.isEmpty) {
                             HStack {
-                                Text("Send a chat").foregroundColor(.black)
+                                Text("Send a chat").foregroundColor(.white)
                                 
                                 Spacer()
                             }
@@ -81,9 +135,27 @@ struct ChatView: View {
                             .frame(height: 40)
                             .padding(.horizontal, 5)
                         )
+                    
+                    
                 }
             }
         }
+    }
+    
+    private func saveToSmileNotes(message: Message) {
+        RestApi.instance.getSmileNotes().then({ smileNotes in
+            print("Got smile notes from server: ", smileNotes)
+            for sm in smileNotes {
+                if sm.messageId == message.id {
+                    print("This message is already a smile note")
+                    return
+                }
+            }
+            RestApi.instance.createSmileNote(messageId: message.id, messageBody: message.body, sendername: message.senderName).then({ smileNote in
+                print("Got smile note from server: ", smileNote)
+            })
+        })
+        
     }
     
     private func sendMessage() {
@@ -137,7 +209,7 @@ struct ChatView: View {
             debugPrint("Oops something didn't go right")
         }
     }
-        
+    
     private func sortMessages() {
         messages = messages.sorted(by: { $0.createdOn < $1.createdOn })
     }

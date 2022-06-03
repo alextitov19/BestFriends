@@ -18,76 +18,63 @@ struct YouGotThis: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//
-            //            put in Friend 1 planet
-//            Image("2 weeks")
-//                .resizable()
-//                .frame(width: 400, height: 400)
-//
-            
+
             
             VStack {
+                Text("We get it - your upset!")
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                Spacer()
+                    .frame(height: 15)
                 
-                Text("Words")
-                    .font(.system(size: 90))
+                Text("but,")
+                    .font(.system(size: 30))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                Text("Sharp Words")
+                    .font(.system(size: 70))
                     .fontWeight(.thin)
                     .foregroundColor(Color.purple)
-                    
-//
-//                Text("BREAK")
-//                        .font(.system(size: 60))
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.white)
-//                        .kerning(10)
-//
+        
+                
+              
                 Spacer()
-                    .frame(height: 5)
-                    
-                Text("you end up \ntaking back later")
-                    .font(.system(size: 40))
-                    .italic()
-                    .fontWeight(.thin)
+                    .frame(height: 45)
+               
+            VStack {
+                Text("Can't take them back")
+                    .font(.system(size: 23))
+                    .fontWeight(.regular)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.white)
+                Spacer()
+                    .frame(height: 15)
+                
+                Text("They will never forget")
+                    .font(.system(size: 23))
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
                 Spacer()
                     .frame(height: 60)
                 
-                Text("Forever burned in their brain")
-                    .font(.system(size: 23))
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height: 10)
-               
-            VStack {
-                Text("Unable to be taken back")
-                    .font(.system(size: 23))
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height: 10)
                 
-                Text("Unable to be forgotten")
-                    .font(.system(size: 23))
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
+                Text("Erasing all the nice words you've ever said")
+                    .fontWeight(.ultraLight)
                     .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height: 30)
-                
-                Text("Erasing all the nice words \nyou've ever said")
-                    .font(.system(size: 31))
                     .italic()
-                    .fontWeight(.regular)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.blue)
+//                    .multilineTextAlignment(.center)
+                    .frame(width: 320, height: 100, alignment: .leading)
+                    .font(.system(size: 35))
+                    .padding(10)
+                    .background(Color.green)
+                    .cornerRadius(40)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+               
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 65)
                 
                 NavigationLink(
                     destination: Step5_Why(),

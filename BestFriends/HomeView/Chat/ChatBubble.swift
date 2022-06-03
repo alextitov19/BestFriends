@@ -32,13 +32,13 @@ struct ChatBubble: View {
                     .padding(.horizontal, 5)
                     
                 } else {
-                    MyChatMessage(messageBody: "📸")
+                    MyChatMessage(messageBody: "📸",message: message)
                         .onTapGesture {
                             Task { await downloadImage(key: message.image) }
                         }
                 }
             } else {
-                MyChatMessage(messageBody: message.body)
+                MyChatMessage(messageBody: message.body, message: message)
             }
         } else {
             if message.image?.count ?? 0 > 0 {
@@ -55,13 +55,13 @@ struct ChatBubble: View {
                     .padding(.horizontal, 5)
                     
                 } else {
-                    FriendChatMessage(name: message.senderName, messageBody: "📸")
+                    FriendChatMessage(name: message.senderName, messageBody: "📸", message: message)
                         .onTapGesture {
                             Task { await downloadImage(key: message.image) }
                         }
                 }
             } else {
-                FriendChatMessage(name: message.senderName, messageBody: message.body)
+                FriendChatMessage(name: message.senderName, messageBody: message.body, message: message)
             }
         }
     }
@@ -114,29 +114,62 @@ struct ChatBubble: View {
 }
 
 private struct MyChatMessage: View {
-    
     let messageBody: String
+    let message: Message
+    @State private var timeString = ""
     
     var body: some View {
-        HStack {
-            Spacer()
+        VStack {
+            HStack {
+                Spacer()
+                    .onAppear(perform: loadData)
+                
+                Text(messageBody)
+                    .padding(4)
+                    .multilineTextAlignment(.leading)
+//                    .font(.system(size: 15).weight(.light))
+                    .background(ColorManager.grey2)
+                    .opacity(0.7)
+                    .font(.system(size: 15).weight(.thin))
+                    .foregroundColor(.black)
+                    .cornerRadius(7)
+                   
+            }
             
-            Text(messageBody)
-                .padding(10)
-                .multilineTextAlignment(.leading)
-                .font(.system(size: 16).weight(.light))
-                .foregroundColor(.white)
-                .background(ColorManager.purple3)
-                .cornerRadius(15)
+            HStack {
+                Spacer()
+                
+                Text(timeString)
+                    .font(.system(size: 10).weight(.light))
+                    .foregroundColor(ColorManager.grey2)
+            }
         }
         .padding(.horizontal, 5)
     }
+    
+    private func loadData() {
+        var x = Int64(Date().timeIntervalSince1970) - message.createdOn
+        x = x / 60
+        timeString = "\(x) min"
+        if x > 60 {
+            x = x / 6
+            timeString = "\(x) hr"
+            if x > 24 {
+                x = x / 24
+                timeString = "\(x) days"
+            }
+        }
+    }
 }
 
+
+
+
 private struct FriendChatMessage: View {
-    
     let name: String
     let messageBody: String
+    let message: Message
+    @State private var timeString = ""
     
     var body: some View {
         VStack {
@@ -146,6 +179,7 @@ private struct FriendChatMessage: View {
                     .foregroundColor(.white)
                     .font(.system(size: 16).weight(.thin))
                     .offset(x: 5, y: 5)
+                    .onAppear(perform: loadData)
                 
                 Spacer()
             }
@@ -162,6 +196,29 @@ private struct FriendChatMessage: View {
                 Spacer()
             }
             .padding(.horizontal, 5)
+            
+            HStack {
+                Spacer()
+                
+                Text(timeString)
+                    .font(.system(size: 12).weight(.light))
+                    .foregroundColor(ColorManager.purple5)
+            }
+            .padding(.horizontal, 5)
+        }
+    }
+    
+    private func loadData() {
+        var x = Int64(Date().timeIntervalSince1970) - message.createdOn
+        x = x / 60
+        timeString = "\(x) min"
+        if x > 60 {
+            x = x / 6
+            timeString = "\(x) hr"
+            if x > 24 {
+                x = x / 24
+                timeString = "\(x) days"
+            }
         }
     }
 }

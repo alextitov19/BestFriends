@@ -28,32 +28,42 @@ struct IntroFriendGpFight: View {
             //                    .offset(y: -250)
             //
             VStack {
-      
-                
+//                Text("Fixing Friend \nGroup Fights")
+//                    .font(.system(size: 65))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//                Spacer()
+//                    .frame(height: 20)
                 Text("Problem")
-                    .font(.system(size: 70))
+                    .font(.system(size: 80))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
+
+
                 
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("fights between members cause")
-                    .font(.system(size: 25))
-                    .foregroundColor(.white)
+                Text("Teens don't fit societie's")
+                    .font(.system(size: 27))
+                    .foregroundColor(.blue)
                     .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                 
+                
                 Spacer()
                     .frame(height: 5)
                  
-                Text("Drama in Group")
-                    .font(.system(size: 35))
+                Text("'Suggested Solutions'")
+                    .font(.system(size: 27))
+                    .foregroundColor(.blue)
+                    .fontWeight(.light)
+                Spacer()
+                    .frame(height: 15)
+                
+                   
+                Text("to handle Friend Group DRAMA")
+                    .font(.system(size: 24))
+                    .italic()
                     .foregroundColor(.white)
                     .fontWeight(.light)
-                   
-                
             VStack {
                     Spacer()
                         .frame(height: 60)
@@ -72,32 +82,28 @@ struct IntroFriendGpFight: View {
                         })
                     
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 40)
                 
-                Text("what does everyone suggest")
-                    .font(.system(size: 30))
-                    .italic()
+                Text("Their Solutions")
+                    .font(.system(size: 40))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.blue)
+               
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("1) Ignore all fights in your Friend Group \n\n2) If two friends are fighting;\n.   .   . Don't pick sides \n.   .   . Don't commerizate \n.   .   . Don't personalize their fight \n\n3) They must fix it - not you!")
+                    .font(.system(size: 23))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                 
+                Spacer()
+                    .frame(height: 10)
                 
-                Text("to fix this ")
-                    .font(.system(size: 80))
-                    .foregroundColor(.blue)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-              
-                
-                    Text("kdkdkdkdkdk")
-                        .font(.system(size: 25))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                       
-               
-                    
-                    
+                Text("")
+                    .font(.system(size: 40))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.blue)
                     
                     
                 }

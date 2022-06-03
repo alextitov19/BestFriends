@@ -22,13 +22,11 @@ struct SettingsView: View {
         ZStack {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
-
-              Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                  .ignoresSafeArea()
-              Image("settingsBackground")
-                  .resizable()
-                  .ignoresSafeArea()
-                  .scaledToFill()
+            
+            Image("settingsBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
             
             
             VStack {
@@ -41,146 +39,165 @@ struct SettingsView: View {
                             .frame(width: 25, height: 25)
                             .scaledToFit()
                             .colorInvert()
-                           .rotationEffect(Angle(degrees: 180))
+                            .rotationEffect(Angle(degrees: 180))
                     }
-                    
-                  Spacer()
+                    .padding(.trailing, 20)
                     
                     Text("Settings")
                         .font(.system(size: 30))
-                        .offset(x: -25, y: 50)
                     
                     Spacer()
+                    
+                    
                 }
                 
-             Spacer()
-                   .frame(height: 100)
-                
-               NavigationLink(
-                  destination: DemoVideoView(),
-                  label: {
-                       HStack {
-                           Text("Demo Video")
-                               .font(.system(size: 20))
-//                              .foregroundColor(.black)
-                              .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                           Spacer().frame(maxHeight: 0)
-
-                          Image("arrowRight")
-                              .resizable()
-                               .frame(width: 25, height: 25)
-                             .scaledToFit()
-                              .colorInvert()
-                       }
-                       .padding(.horizontal, 15)
-                   })
-            
-               .navigationBarHidden(true)
-                
-                Divider()
+                Spacer()
+                    .frame(height: 100)
                 
                 NavigationLink(
-                   destination: DemoVideoView(),
-                   label: {
+                    destination: MyAccountView(),
+                    label: {
                         HStack {
-                            Text("Get Involved")
+                            Text("Manage My Account")
                                 .font(.system(size: 20))
- //                              .foregroundColor(.black)
-                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                            Spacer().frame(maxHeight: 0)
-
-                           Image("arrowRight")
-                               .resizable()
+                            //                               .foregroundColor(.black)
+                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            Spacer()
+                            
+                            Image("arrowRight")
+                                .resizable()
                                 .frame(width: 25, height: 25)
-                              .scaledToFit()
-                               .colorInvert()
+                                .scaledToFit()
+                                .colorInvert()
                         }
                         .padding(.horizontal, 15)
                     })
                 
-            
+                .navigationBarHidden(true)
+                
+                //          Adding Photopop
+                Divider()
+                
+                NavigationLink(
+                    destination: EmptyView(),
+                    label: {
+                        HStack {
+                            Text("Set-up PhotoPoP")
+                                .font(.system(size: 20))
+                            //                               .foregroundColor(.black)
+                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            Spacer()
+                            
+                            Image("arrowRight")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .scaledToFit()
+                                .colorInvert()
+                        }
+                        .padding(.horizontal, 15)
+                    })
+                
+                
+                .navigationBarHidden(true)
+                
+                
+                
+                Divider()
+                
+                NavigationLink(
+                    destination: ReportAbuseView(),
+                    label: {
+                        HStack {
+                            Text("Report Abusive Behavior")
+                                .font(.system(size: 20))
+                            //                               .foregroundColor(.black)
+                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            Spacer()
+                            
+                            Image("arrowRight")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .scaledToFit()
+                                .colorInvert()
+                        }
+                        .padding(.horizontal, 15)
+                    })
+                
+                
                 .navigationBarHidden(true)
                 
                 Divider()
                 
                 NavigationLink(
-                 destination: ReportAbuseView(),
-                   label: {
-                         HStack {
-                      Text("Report Abusive Behavior")
+                    destination: TermsConditionsView(),
+                    label: {
+                        HStack {
+                            Text("Terms of Service & Privacy Policy")
                                 .font(.system(size: 20))
-//                               .foregroundColor(.black)
                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                             Spacer()
-
+                            
+                            Spacer()
+                            
                             Image("arrowRight")
-                                .resizable()                               .frame(width: 25, height: 25)
-                                 .scaledToFit()
-                                 .colorInvert()
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .scaledToFit()
+                                .colorInvert()
                         }
-                         .padding(.horizontal, 15)
-                         .navigationBarHidden(true)     })
-                  
-                Divider()
+                        .padding(.horizontal, 15)
+                        .navigationBarHidden(true)     })
                 
-                NavigationLink(
-                 destination: MyAccountView(),
-                   label: {
-                         HStack {
-                      Text("Manage My Account")
-                                .font(.system(size: 20))
-//                               .foregroundColor(.black)
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                             Spacer()
-
-                            Image("arrowRight")
-                                .resizable()                               .frame(width: 25, height: 25)
-                                 .scaledToFit()
-                                 .colorInvert()
-                        }
-                         .padding(.horizontal, 15)
-                     })
-
-                .padding(0)
-                .navigationBarHidden(true)
-               
+                VStack {
+                    Divider()
+                    
+                    NavigationLink(
+                        destination: EmptyView(),
+                        label: {
+                            HStack {
+                                Text("open link")
+                                    .font(.system(size: 20))
+                                //                               .foregroundColor(.black)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                Spacer()
+                                
+                                Image("arrowRight")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .scaledToFit()
+                                    .colorInvert()
+                            }
+                            .padding(.horizontal, 15)
+                            .navigationBarHidden(true)
+                        })
+                    
+                    
+                    Divider()
+                    Spacer()
+                        .frame(height: 400)
+                }
                 
-                HStack {
-                Divider()
                 
-                NavigationLink(
-                 destination: DeleteMyAccount(),
-                   label: {
-                         HStack {
-                      Text("Terms of Service & Privacy Policy")
-                             .font(.system(size: 20))
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)))
-
-                             Spacer()
-
-                            Image("arrowRight")
-                                .resizable()                               .frame(width: 25, height: 25)
-                                 .scaledToFit()
-                                 .colorInvert()
-                        }
-                         .padding(.horizontal, 15)
-                     })
                 
-       
-                Spacer()
             }
-            .padding(10)
-            .navigationBarHidden(true)
         }
     }
-    
 }
+
+
+
+
+
+
+
+
+
+
 struct SettingsView_Previews : PreviewProvider {
     static var previews: some View {
         SettingsView()
     }
 }
-}
+
 
 
 
