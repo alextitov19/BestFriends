@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39D0524EB9F9947C28B9D613 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */; };
+		62319AAD284A788000CA0359 /* FG_Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62319AAC284A788000CA0359 /* FG_Video.swift */; };
 		7A0856A027F3D94500E8282B /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08569F27F3D94500E8282B /* AuthController.swift */; };
 		7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A127F3D9A900E8282B /* RestAPI.swift */; };
 		7A0856A427F3D9C400E8282B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A327F3D9C400E8282B /* Model.swift */; };
@@ -154,6 +155,7 @@
 
 /* Begin PBXFileReference section */
 		16E04433DE68818589291B02 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		62319AAC284A788000CA0359 /* FG_Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Video.swift; sourceTree = "<group>"; };
 		7A08569F27F3D94500E8282B /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		7A0856A127F3D9A900E8282B /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		7A0856A327F3D9C400E8282B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -569,6 +571,7 @@
 				CF3802D628456C83005181E4 /* FG_Team.swift */,
 				CF9E33C92845323200107433 /* FG_BeAccountable.swift */,
 				CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */,
+				62319AAC284A788000CA0359 /* FG_Video.swift */,
 			);
 			path = "Friend Group Fighting";
 			sourceTree = "<group>";
@@ -1037,6 +1040,7 @@
 				CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */,
 				CFD12CD1281A754200AB2539 /* Step1_NotReadyTalk.swift in Sources */,
 				CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */,
+				62319AAD284A788000CA0359 /* FG_Video.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,
 				CFAE73542841ACD800015FD2 /* BlueModePlaylist.swift in Sources */,
