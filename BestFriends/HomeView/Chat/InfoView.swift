@@ -11,6 +11,8 @@ import SwiftUI
 import AVKit
 
 struct InfoView: View {
+    @EnvironmentObject var sessionManager: SessionManager
+    
     
     var body: some View {
         ZStack {
@@ -92,9 +94,9 @@ struct InfoView: View {
                     .frame(height: 40)
                 
                 NavigationLink(
-                    destination: Step1_ParentsFighting(),
+                    destination: EmptyView(),
                     label: {
-                        Text("???????")
+                        Text("BACK")
                             .fontWeight(.thin)
                             .frame(width: 200, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
