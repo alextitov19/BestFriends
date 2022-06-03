@@ -110,13 +110,13 @@ struct InfoView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.black)
                 
-                Text("Download images")
+                Text("Download your images")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
               
-                Text("Copy/paste messages")
+                Text("Copy/paste your messages")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
