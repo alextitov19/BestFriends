@@ -52,6 +52,7 @@ struct User: Codable {
     var APNToken: String?
     var friends: [String] = []
     var groups: [String] = []
+    var hiddenGroups: [String]?
     var atmosphere: String
     var chatPin: String?
     var smileNotes: [String]?
@@ -62,6 +63,7 @@ struct User: Codable {
         case APNToken = "apn_token"
         case friends = "friends"
         case groups = "groups"
+        case hiddenGroups = "hidden_groups"
         case atmosphere = "atmosphere"
         case chatPin = "chat_pin"
         case smileNotes = "smile_notes"

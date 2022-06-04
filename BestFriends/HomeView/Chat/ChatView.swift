@@ -33,19 +33,14 @@ struct ChatView: View {
     @State private var isLockTapped = false
     @State var pickerSourceType: UIImagePickerController.SourceType = .photoLibrary
     var body: some View {
-        
-       
-            
-       
         ZStack {
-            AdPlayerView(name: "FieldFlowers")
+            AdPlayerView(name: "test")
                 .ignoresSafeArea()
             
             
             VStack {
                 // MARK: Header
                 HStack {
-                   
                     Image(systemName: "info.circle")
                         .resizable()
                         .frame(width: 27, height: 27)
@@ -64,18 +59,33 @@ struct ChatView: View {
                             sessionManager.showHome()
                         })
                     
-                Text(group.name)
-                    .task {
-                        await listenForMessages()
-                    }
+                    Text(group.name)
+                        .task {
+                            await listenForMessages()
+                        }
                     Image("lock-alt")
                         .resizable()
                         .frame(width: 30, height: 30)
                         .scaledToFill()
                         .onTapGesture(perform: {
-                            isLockTapped.toggle()
+                            var hiddenGroups: [String] = user.hiddenGroups ?? []
+                            hiddenGroups.append(group.id)
+                            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, smileNotes: user.smileNotes)
+                            RestApi.instance.updateUser(user: updatedUser).then({ response in
+                                print("Got update response: ", response)
+                                isLockTapped.toggle()
+                            })
                         })
-                        .fullScreenCover(isPresented: $isLockTapped, content: HideChatView.init)
+                        .onAppear(perform: {
+                            if user.hiddenGroups != nil {
+                                if user.hiddenGroups!.contains(group.id) {
+                                    isLockTapped.toggle()
+                                }
+                            }
+                        })
+                        .fullScreenCover(isPresented: $isLockTapped) {
+                            HideChatView(sessionManager: _sessionManager, user: user, group: group)
+                        }
                 }
                 
                 // MARK: Main scroll view
@@ -103,13 +113,13 @@ struct ChatView: View {
                 HStack {
                     Image("camera")
                         .resizable()
-//                        .colorInvert()
+                    //                        .colorInvert()
                         .frame(width: 40, height: 40)
                         .scaledToFit()
                         .padding(.leading, 5)
                         .onTapGesture { showsAlert = true }
                         .confirmationDialog("Send an image", isPresented: $showsAlert, titleVisibility: .visible) {
-
+                            
                             Button("Photo Library", action: {
                                 pickerSourceType = .photoLibrary
                                 isShowPhotoLibrary = !isShowPhotoLibrary
@@ -220,6 +230,4 @@ struct ChatView: View {
     private func sortMessages() {
         messages = messages.sorted(by: { $0.createdOn < $1.createdOn })
     }
-    
-    
 }
