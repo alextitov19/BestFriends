@@ -15,16 +15,12 @@ struct MyStreaks: View {
         NavigationView {
             
             ZStack {
-                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                Color("Custom Color")
+                    .background(Color.gray.opacity(0.5))
                     .ignoresSafeArea()
-//                Image("Star Page")
-                Image("purpleBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
+
                
 //                Image("FatGuy")
-                Image("2 weeks")
                
                 VStack {
                     
@@ -32,7 +28,7 @@ struct MyStreaks: View {
                     
                     Text("Oh, yeah!")
                         .font(.system(size: 90))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
@@ -43,7 +39,7 @@ struct MyStreaks: View {
                     
                     Text("Friend Streaks")
                         .font(.system(size: 40))
-                        .foregroundColor(.white)
+                        .foregroundColor(.black)
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
@@ -52,15 +48,16 @@ struct MyStreaks: View {
                     
                     NavigationLink(
                         destination: EmptyView(),
+                        
                         label: {
-                            Text("Friend 1")
+                                Text("Friend 1")
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.black)
                                 .multilineTextAlignment(.leading)
                                 .frame(width: 100, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(.gray)
+                                .background(.white)
                                 .cornerRadius(15)
                                 .shadow(color:  .white, radius: 2, x: 0, y: 1)
                            
@@ -76,7 +73,7 @@ struct MyStreaks: View {
                                 .frame(width: 100, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(.gray)
+                                .background(.white)
                                 .cornerRadius(15)
                                 .shadow(color:  .white, radius: 2, x: 0, y: 1)
                            
@@ -92,7 +89,7 @@ struct MyStreaks: View {
                                 .frame(width: 100, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(.gray)
+                                .background(.white)
                                 .cornerRadius(15)
                                 .shadow(color:  .white, radius: 2, x: 0, y: 1)
                            
@@ -107,7 +104,7 @@ struct MyStreaks: View {
                                 .frame(width: 100, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(.gray)
+                                .background(.white)
                                 .cornerRadius(15)
                                 .shadow(color:  .white, radius: 2, x: 0, y: 1)
                            
@@ -124,7 +121,7 @@ struct MyStreaks: View {
                                 .frame(width: 100, height: 30, alignment: .leading)
                                 .font(.system(size: 20))
                                 .padding(10)
-                                .background(.gray)
+                                .background(.white)
                                 .cornerRadius(15)
                                 .shadow(color:  .white, radius: 2, x: 0, y: 1)
                            
@@ -151,7 +148,7 @@ struct MyStreaks: View {
                                     .frame(width: 225, height: 30, alignment: .leading)
                                     .font(.system(size: 20))
                                     .padding(10)
-                                    .background(Color(red: 0.679, green: 0.605, blue: 0.701))
+                                    .background(Color.white)
                                    
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 1)
@@ -170,7 +167,7 @@ struct MyStreaks: View {
                                     .frame(width: 225, height: 30, alignment: .leading)
                                     .font(.system(size: 20))
                                     .padding(10)
-                                    .background(Color(red: 0.679, green: 0.605, blue: 0.701))
+                                    .background(Color.white)
                                     .opacity(50)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 1)
