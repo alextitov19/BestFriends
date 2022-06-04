@@ -157,9 +157,9 @@ struct HomeView: View {
                        
                         NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
                                         label: {
-                            Text("got 'Urgent Chat Invite'")
+                            Text("'Urgent Chat Invite'")
                                 .fontWeight(.thin)
-                                .frame(width: 220, height: 40)
+                                .frame(width: 190, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -171,7 +171,7 @@ struct HomeView: View {
                                         label: {
                             Text("Friend Changed Mood")
                                 .fontWeight(.thin)
-                                .frame(width: 220, height: 40)
+                                .frame(width: 190, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -181,7 +181,7 @@ struct HomeView: View {
                                         label: {
                             Text("Invited to BlueMode")
                                 .fontWeight(.thin)
-                                .frame(width: 220, height: 40)
+                                .frame(width: 190, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -192,7 +192,7 @@ struct HomeView: View {
                                         label: {
                             Text("HUG")
                                 .fontWeight(.thin)
-                                .frame(width: 220, height: 40)
+                                .frame(width: 190, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
