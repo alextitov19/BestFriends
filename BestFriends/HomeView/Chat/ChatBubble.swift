@@ -27,7 +27,9 @@ struct ChatBubble: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 300)
-                            .cornerRadius(25)
+                            .cornerRadius(25).onTapGesture(perform: {
+                                image = nil
+                            })
                     }
                     .padding(.horizontal, 5)
                     
@@ -48,7 +50,9 @@ struct ChatBubble: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 300)
-                            .cornerRadius(25)
+                            .cornerRadius(25).onTapGesture(perform: {
+                                image = nil
+                            })
                         
                         Spacer()
                     }
@@ -57,7 +61,9 @@ struct ChatBubble: View {
                 } else {
                     FriendChatMessage(name: message.senderName, messageBody: "📸", message: message)
                         .onTapGesture {
-                            Task { await downloadImage(key: message.image) }
+                                Task { await downloadImage(key: message.image) }
+                            
+                           
                         }
                 }
             } else {
@@ -133,7 +139,6 @@ private struct MyChatMessage: View {
                     .font(.system(size: 15).weight(.thin))
                     .foregroundColor(.black)
                     .cornerRadius(7)
-                   
             }
             
             HStack {

@@ -52,7 +52,7 @@ struct ChatView: View {
                         .scaledToFill()
                         .foregroundColor(.white)
                         .onTapGesture(perform: {
-                            sessionManager.infoView()
+                            sessionManager.infoView(user: user,group:group)
                         })
                     
                     
