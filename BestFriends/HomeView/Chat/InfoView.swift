@@ -12,8 +12,8 @@ import AVKit
 
 struct InfoView: View {
     @EnvironmentObject var sessionManager: SessionManager
-    
-    
+    @State var group: Group
+    @State var user: User
     var body: some View {
         ZStack {
             
@@ -131,9 +131,7 @@ struct InfoView: View {
                 .frame(height: 45)
                 
            
-                NavigationLink(
-                    destination: EmptyView(),
-                    label: {
+                
                         Text("back to Chat")
                             .fontWeight(.thin)
                             .frame(width: 200, height: 40)
@@ -141,8 +139,10 @@ struct InfoView: View {
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2).onTapGesture(perform: {
+                                sessionManager.showChat(user: user,group:group)
+                            })
+               
                 
                
             }
@@ -157,12 +157,12 @@ struct InfoView: View {
 
 
 
-
-
-struct InfoView_Previews : PreviewProvider {
-    static var previews: some View {
-        InfoView()
-    }
-}
+//
+//
+//struct InfoView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        InfoView()
+//    }
+//}
 
 

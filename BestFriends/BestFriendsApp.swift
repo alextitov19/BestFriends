@@ -54,9 +54,8 @@ struct BestFriendsApp: App {
             case .fightWithFriend:
                 FightWithFriend()
                     .environmentObject(sessionManager)
-            case .infoView:
-                InfoView()
-                    .environmentObject(sessionManager)
+            case .infoView(let user, let group):
+                InfoView(group: group, user: user).environmentObject(sessionManager)
           
             
 //            case .bestFriendMessages(let user, let atmosphere, let friends, let friendAtmosphere):
