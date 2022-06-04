@@ -139,9 +139,10 @@ struct HomeView: View {
                         Button(action: {
                             createGroup()
                         }, label: {
-                            Text("Chat Now Invitation")
+                            Text("Invite to Chat, NOW!")
+                                .fontWeight(.regular)
                                 .frame(width: 225, height: 40)
-                                .foregroundColor(.pink)
+                                .foregroundColor(.purple)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                         })
@@ -156,31 +157,49 @@ struct HomeView: View {
                        
                         NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
                                         label: {
-                            Text("Received Urgent Chat Invite")
+                            Text("got 'Urgent Chat Invite'")
+                                .fontWeight(.thin)
                                 .frame(width: 220, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
+                                .opacity(0.8)
                         })
                         
                        
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, friendAtmosphere: homeData!.atmosphere),
                                         label: {
                             Text("Friend Changed Mood")
+                                .fontWeight(.thin)
                                 .frame(width: 220, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
+                                .opacity(0.8)
                         })
                         NavigationLink(destination: WhoFighting(),
                                         label: {
                             Text("Invited to BlueMode")
+                                .fontWeight(.thin)
                                 .frame(width: 220, height: 40)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
+                                .opacity(0.8)
                         })
                     
+                        NavigationLink(destination: EmptyView(),
+                                        label: {
+                            Text("HUG")
+                                .fontWeight(.thin)
+                                .frame(width: 220, height: 40)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .opacity(0.8)
+                        })
+                        
+                        
                     }
 
                 }
