@@ -6,45 +6,53 @@
 //
 
 
-
+import CoreHaptics
 import SwiftUI
 
-//struct VirtualHug: View {
-//    
-//    var body: some View {
-//        ZStack {
+struct VirtualHug: View {
+    @State private var engine: CHHapticEngine?
+    
+    var body: some View {
+        Text("tap")
+            .padding()
+            .onTapGesture(perform: simpleSuccess)
+    }
+    
+        func simpleSuccess() {
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
+        }
+    }
 //
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+////MARK: the below lets you customize the vibration
 //
-//         
-//
-//            VStack {
-//
-//                Text("Tap Here")
-//                    .padding()
-//                    .onTapGesture(perform: success)
-//            }
-//
-//            func success() {
-//                let generator = UINotificationFeedbackGenerator()
-//                generator.notificationOccurred(.success)
+//        func prepareHaptics() {
+//            guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+//            do {
+//                engine = try CHHapticEngine()
+//                try engine?.start()
+//            } catch {
+////                print("There was an error creating the engine: \(error.localizedDescription"))
 //            }
 //        }
+//
+//  func complexSuccess() {
+//            guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+//
+//var events = [CHHapticEvent]()
+//
+////      MARK: no done here. See video at 7:25 timeline
 //    }
-//}
+
+    
 //    
-    
-    
 //    struct VirtualHug_Previews : PreviewProvider {
 //        static var previews: some View {
 //            VirtualHug()
 //        }
 //    }
-
- 
+//
+// 
     
     
     

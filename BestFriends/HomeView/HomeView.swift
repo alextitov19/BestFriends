@@ -148,6 +148,8 @@ struct HomeView: View {
                         })
                     }
                    
+//                    Text("received push notification to")
+                    
                     Spacer()
                         .frame(height: 25)
             
