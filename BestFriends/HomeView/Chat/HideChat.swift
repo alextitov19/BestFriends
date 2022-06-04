@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct HideChatView: View {
-    @State private var pin = ""
     @EnvironmentObject var sessionManager: SessionManager
+
+    let user: User
+    let group: Group
+    
+    @State private var pin = ""
+    
     var body: some View {
         ZStack {
-            
-            
             Image("settingsBackground")
                 .resizable()
                 .ignoresSafeArea()
@@ -33,14 +36,11 @@ struct HideChatView: View {
             .keyboardType(.decimalPad)
             .foregroundColor(Color.white)
             .font(.system(size: 37).weight(.thin))
-//            .font(.system(size: 35))
-//            .fontWeight(.ultraLight)
-           
             .frame(width: 310, height: 50, alignment: .leading)
             .background(ColorManager.purple2)
             .cornerRadius(20)
             .submitLabel(.done)
-            .onSubmit {  }
+            .onSubmit {submitPin()}
             
             Text("Retreive Your Messages")
                 .font(.system(size: 80))
@@ -54,15 +54,29 @@ struct HideChatView: View {
             }
         }
     }
-}
-
-
-
-struct HideChatView_Previews : PreviewProvider {
-    static var previews: some View {
-        HideChatView()
+    
+    private func submitPin() {
+        if user.chatPin == pin {
+            var hiddenGroups: [String] = user.hiddenGroups ?? []
+            if let index = hiddenGroups.firstIndex(of: group.id) {
+                hiddenGroups.remove(at: index)
+            }
+            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, smileNotes: user.smileNotes)
+            RestApi.instance.updateUser(user: updatedUser).then({ response in
+                print("Got update response: ", response)
+                sessionManager.showHome()
+            })
+        }
     }
 }
+
+
+//
+//struct HideChatView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        HideChatView()
+//    }
+//}
 
 
 
