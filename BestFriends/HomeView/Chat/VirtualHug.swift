@@ -16,7 +16,7 @@ struct VirtualHug: View {
         
         
         VStack() {
-            
+
             Text("Hold phone to your")
                 .font(.system(size: 35))
                 .fontWeight(.ultraLight)
@@ -28,7 +28,7 @@ struct VirtualHug: View {
                 .fontWeight(.ultraLight)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
-            
+
         }
         Text("[tap here]")
             .font(.system(size: 50))
