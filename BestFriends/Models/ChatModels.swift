@@ -41,7 +41,6 @@ struct Message: Codable {
     }
 }
 
-
 struct CreateMessage: Codable {
     let body: String
     enum CodingKeys: String, CodingKey {

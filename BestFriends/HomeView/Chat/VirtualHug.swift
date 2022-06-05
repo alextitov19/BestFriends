@@ -15,7 +15,7 @@ struct VirtualHug: View {
     var body: some View {
         
         
-        VStack() {
+        VStack {
 
             Text("Hold phone to your")
                 .font(.system(size: 35))
@@ -28,42 +28,56 @@ struct VirtualHug: View {
                 .fontWeight(.ultraLight)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
-
+            Text("[tap here]")
+                .font(.system(size: 50))
+                .fontWeight(.ultraLight)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.blue)
+                .padding()
+                .onAppear(perform: prepareHaptics)
+                .onTapGesture(perform: complexSuccess)
         }
-        Text("[tap here]")
-            .font(.system(size: 50))
-            .fontWeight(.ultraLight)
-            .multilineTextAlignment(.center)
-            .foregroundColor(Color.blue)
-            .padding()
-            .onTapGesture(perform: simpleSuccess)
+      
     }
     
 
     
-        
-    }
-    
-        func simpleSuccess() {
-                let generator = UINotificationFeedbackGenerator()
-                generator.notificationOccurred(.success)
-        }
+
     
 
 //MARK: the below lets you customize the vibration
-//
-//        func prepareHaptics() {
-//            guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
-//            do {
-//                engine = try CHHapticEngine()
-//                try engine?.start()
-//            } catch {
-////                print("There was an error creating the engine: \(error.localizedDescription"))
-//            }
-//        }
-//
-//  func complexSuccess() {
-//            guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+
+        func prepareHaptics() {
+            guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+            do {
+                engine = try CHHapticEngine()
+                try engine?.start()
+            } catch {
+                print("There was an error creating the engine: \(error.localizedDescription)")
+            }
+        }
+
+  func complexSuccess() {
+      guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+
+      let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 3)
+      let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 1)
+      let decayTime = CHHapticEventParameter(parameterID: .decayTime, value: 2)
+      
+      
+      let event = CHHapticEvent(eventType: .hapticContinuous, parameters: [intensity, sharpness, decayTime], relativeTime: 0, duration: 4)
+
+      do {
+          let pattern = try CHHapticPattern(events: [event], parameters: [])
+          let player = try engine?.makeAdvancedPlayer(with: pattern)
+          try player?.start(atTime: 0)
+      }
+      catch {
+          print("failed to play \(error.localizedDescription)")
+      }
+  }
+        
+    }
 
 //      MARK: make sure this part works. See video at 7:25 timeline
     

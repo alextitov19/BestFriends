@@ -190,7 +190,7 @@ struct HomeView: View {
                                 .opacity(0.8)
                         })
                     
-                        NavigationLink(destination: EmptyView(),
+                        NavigationLink(destination: VirtualHug(),
                                         label: {
                             Text("HUG")
                                 .fontWeight(.thin)
