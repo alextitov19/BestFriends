@@ -24,6 +24,15 @@ struct Group: Codable {
     }
 }
 
+struct CreateGroup: Codable {
+    let name: String
+    let members: [String]
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case members = "members"
+    }
+}
+
 struct Message: Codable {
     let id: String
     let senderId: String
@@ -66,10 +75,5 @@ struct ImageData: Codable {
     }
 }
 
-struct CreateGroup: Codable {
-    let members: [String]
-    enum CodingKeys: String, CodingKey {
-        case members = "members"
-    }
-}
+
 

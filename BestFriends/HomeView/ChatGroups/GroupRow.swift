@@ -11,8 +11,7 @@ struct GroupRow: View {
     
     let group: Group
     
-    @State var messageBody = "Last message"
-    @State var timestring = "5 mins ago"
+    @State var timestring = ""
     
     var body: some View {
         HStack {
@@ -38,7 +37,7 @@ struct GroupRow: View {
                 HStack {
                     Spacer().frame(width: 10)
                     
-                    Text(messageBody)
+                    Text(group.name)
                         .font(.system(size: 16, weight: .light))
                         .foregroundColor(.white)
                     
@@ -58,8 +57,17 @@ struct GroupRow: View {
     }
     
     private func getBody() {
-        messageBody = "Last message"
-        timestring = "5 mins ago"
+        var x = Int64(Date().timeIntervalSince1970) - group.createdOn
+        x = x / 60
+        timestring = "\(x) min"
+        if x > 60 {
+            x = x / 60
+            timestring = "\(x) hr"
+            if x > 24 {
+                x = x / 24
+                timestring = "\(x) days"
+            }
+        }
     }
 }
 

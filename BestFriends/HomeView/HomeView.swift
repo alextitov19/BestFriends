@@ -139,13 +139,14 @@ struct HomeView: View {
                         Button(action: {
                             createGroup()
                         }, label: {
-                            Text("Invite to Chat, NOW!")
+                            Text("Chat")
                                 .fontWeight(.regular)
-                                .frame(width: 225, height: 40)
-                                .foregroundColor(.purple)
+                                .frame(width: 125, height: 40)
+                                .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                         })
+
                     }
                    
 //                    Text("received push notification to")
@@ -159,7 +160,7 @@ struct HomeView: View {
                        
                         NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
                                         label: {
-                            Text("'Urgent Chat Invite'")
+                            Text("Urgent Chat Invite")
                                 .fontWeight(.thin)
                                 .frame(width: 190, height: 30)
                                 .foregroundColor(.white)
@@ -333,7 +334,21 @@ struct HomeView: View {
                 }
             }
             
-            RestApi.instance.createGroup(members: newGroupMembers).then { response in
+            var name = ""
+            for m in newGroupMembers {
+                for f in homeData!.friends {
+                    if f.id == m {
+                        name.append(f.firstName)
+                        name.append(", ")
+                    }
+                }
+            }
+            if name.count > 2 {
+                name.removeLast()
+                name.removeLast()
+            }
+            
+            RestApi.instance.createGroup(name: name, members: newGroupMembers).then { response in
                 print("Create Group response: ", response)
                 sessionManager.showChat(user: homeData!.user, group: response)
             }

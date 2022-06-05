@@ -498,9 +498,7 @@ struct Friend1VaultPractice: View {
     }
     
     private func sendMessage() {
-        RestApi.instance.createGroup(members: [friend.id, user.id]).then({ group in
-            sessionManager.showChat(user: user, group: group)
-        })
+        
     }
     
     private func limitText(_ upper: Int) {

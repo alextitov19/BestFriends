@@ -38,3 +38,17 @@ extension View {
                 .shadow(color: color, radius: radius / 3)
         }
 }
+
+extension View {
+
+    func textFieldAlert(isShowing: Binding<Bool>,
+                        text: Binding<String>,
+                        title: String, placeholder: String) -> some View {
+        TextFieldAlert(isShowing: isShowing,
+                       text: text,
+                       presenting: self,
+                       placeholder: placeholder,
+                       title: title)
+    }
+
+}

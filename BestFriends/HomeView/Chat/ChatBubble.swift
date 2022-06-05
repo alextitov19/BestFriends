@@ -157,7 +157,7 @@ private struct MyChatMessage: View {
         x = x / 60
         timeString = "\(x) min"
         if x > 60 {
-            x = x / 6
+            x = x / 60
             timeString = "\(x) hr"
             if x > 24 {
                 x = x / 24
