@@ -95,7 +95,7 @@ struct VirtualHug: View {
       do {
           let pattern = try CHHapticPattern(events: [event], parameters: [])
           let player = try engine?.makeAdvancedPlayer(with: pattern)
-          try player?.start(atTime: 1.5)
+          try player?.start(atTime: 0)
       }
       catch {
           print("failed to play \(error.localizedDescription)")
