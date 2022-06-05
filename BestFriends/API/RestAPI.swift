@@ -12,11 +12,11 @@ import FirebaseMessaging
 class RestApi {
     var helper: Helper
     var userId: String?
-//    let API_URL = "http://54.226.29.220:8080/api/v1/services"
-//    let WS_URL = "ws://54.226.29.220:8080/api/v1/services"
+    let API_URL = "http://54.226.29.220:8080/api/v1/services"
+    let WS_URL = "ws://54.226.29.220:8080/api/v1/services"
 
-    let API_URL = "http://localhost:8080/api/v1/services"
-    let WS_URL = "ws://localhost:8080/api/v1/services"
+//    let API_URL = "http://localhost:8080/api/v1/services"
+//    let WS_URL = "ws://localhost:8080/api/v1/services"
 
     public static var instance = RestApi()
     
