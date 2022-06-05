@@ -14,6 +14,7 @@ struct Friend1VaultPractice: View {
 
     let user: User
     let friend: User
+    let groups: [Group]
     let friendAtmosphere: Atmosphere
     
     @State private var customMessage = "Custom Message"
@@ -498,7 +499,27 @@ struct Friend1VaultPractice: View {
     }
     
     private func sendMessage() {
+        if customMessage.count == 0 { return }
         
+        let arr = [user.id, friend.id]
+        for g in groups {
+            if g.members.containsSameElements(as: arr) {
+                // Send chat message to this existing group
+                RestApi.instance.createChatMessage(groupId: g.id, body: customMessage).then({ response in
+                    sessionManager.showChat(user: user, group: g)
+                })
+                
+                return
+            }
+        }
+        
+        // Create new group
+        RestApi.instance.createGroup(name: "\(user.firstName), \(friend.firstName)", members: arr).then { responseGroup in
+            // Send chat message to this group
+            RestApi.instance.createChatMessage(groupId: responseGroup.id, body: customMessage).then({ response in
+                sessionManager.showChat(user: user, group: responseGroup)
+            })
+        }
     }
     
     private func limitText(_ upper: Int) {
