@@ -14,20 +14,37 @@ struct VirtualHug: View {
     
     var body: some View {
         
+ 
+            ZStack {
+                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                    .ignoresSafeArea()
+                
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+                
+                AdPlayerView(name: "HugVideo")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
         
         VStack {
-
+                
             Text("Hold phone to your")
                 .font(.system(size: 35))
                 .fontWeight(.ultraLight)
                 .multilineTextAlignment(.center)
-                .foregroundColor(Color.white)
-
+                .foregroundColor(Color.black)
+ 
             Text("H E A R T")
                 .font(.system(size: 80))
                 .fontWeight(.ultraLight)
                 .multilineTextAlignment(.center)
-                .foregroundColor(Color.blue)
+                .foregroundColor(Color.pink)
+            
+            Spacer()
+                .frame(height: 100)
+            
             Text("[tap here]")
                 .font(.system(size: 50))
                 .fontWeight(.ultraLight)
@@ -36,6 +53,13 @@ struct VirtualHug: View {
                 .padding()
                 .onAppear(perform: prepareHaptics)
                 .onTapGesture(perform: complexSuccess)
+            
+//                .padding()
+            
+            Spacer()
+                .frame(height: 400)
+        }
+              
         }
       
     }
@@ -71,7 +95,7 @@ struct VirtualHug: View {
       do {
           let pattern = try CHHapticPattern(events: [event], parameters: [])
           let player = try engine?.makeAdvancedPlayer(with: pattern)
-          try player?.start(atTime: 0)
+          try player?.start(atTime: 1.5)
       }
       catch {
           print("failed to play \(error.localizedDescription)")

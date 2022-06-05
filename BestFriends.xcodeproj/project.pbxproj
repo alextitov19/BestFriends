@@ -136,6 +136,7 @@
 		CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5429282123EA00BBF502 /* WhoFighting.swift */; };
 		CFAE7349283C748C00015FD2 /* UserBetaTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */; };
 		CFAE73542841ACD800015FD2 /* BlueModePlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAE73532841ACD800015FD2 /* BlueModePlaylist.swift */; };
+		CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
 		CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */; };
@@ -289,6 +290,7 @@
 		CFAB5429282123EA00BBF502 /* WhoFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoFighting.swift; sourceTree = "<group>"; };
 		CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBetaTesting.swift; sourceTree = "<group>"; };
 		CFAE73532841ACD800015FD2 /* BlueModePlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueModePlaylist.swift; sourceTree = "<group>"; };
+		CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugVideo.mp4; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
 		CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendValutTrackMoods.swift; sourceTree = "<group>"; };
@@ -667,6 +669,7 @@
 			isa = PBXGroup;
 			children = (
 				CF590DD2284C24090036B6BE /* test.mp4 */,
+				CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */,
 				CF590DD4284C36EE0036B6BE /* groupPic.mp4 */,
 				7A2C2158280509DA009362CF /* blue.mp4 */,
 				7A2C2156280509DA009362CF /* cloud.mp4 */,
@@ -923,6 +926,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62319AAE284A7C0000CA0359 /* FGVideo2.mp4 in Resources */,
+				CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */,
 				7A2C215A280509DA009362CF /* green.mp4 in Resources */,
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */,
