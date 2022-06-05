@@ -44,6 +44,7 @@ struct VirtualHug: View {
     
 
     
+    
 
 //MARK: the below lets you customize the vibration
 
@@ -74,6 +75,7 @@ struct VirtualHug: View {
       }
       catch {
           print("failed to play \(error.localizedDescription)")
+          print("oh no")
       }
   }
         
