@@ -36,7 +36,7 @@ struct AtmosphereMain2: View {
                 .ignoresSafeArea()
                 .scaledToFill()
 
-            AdPlayerView(name: "pink")
+            AdPlayerView(name: "groupPic")
                 .ignoresSafeArea()
                 .blendMode(.screen)
         

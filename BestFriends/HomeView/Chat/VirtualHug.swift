@@ -13,18 +13,44 @@ struct VirtualHug: View {
     @State private var engine: CHHapticEngine?
     
     var body: some View {
-        Text("tap")
+        
+        
+        VStack() {
+            
+            Text("Hold phone to your")
+                .font(.system(size: 35))
+                .fontWeight(.ultraLight)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.white)
+
+            Text("H E A R T")
+                .font(.system(size: 80))
+                .fontWeight(.ultraLight)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.blue)
+            
+        }
+        Text("[tap here]")
+            .font(.system(size: 50))
+            .fontWeight(.ultraLight)
+            .multilineTextAlignment(.center)
+            .foregroundColor(Color.blue)
             .padding()
             .onTapGesture(perform: simpleSuccess)
+    }
+    
+
+    
+        
     }
     
         func simpleSuccess() {
                 let generator = UINotificationFeedbackGenerator()
                 generator.notificationOccurred(.success)
         }
-    }
-//
-////MARK: the below lets you customize the vibration
+    
+
+//MARK: the below lets you customize the vibration
 //
 //        func prepareHaptics() {
 //            guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
@@ -40,9 +66,9 @@ struct VirtualHug: View {
 //            guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
 //
 //var events = [CHHapticEvent]()
-//
-////      MARK: no done here. See video at 7:25 timeline
-//    }
+
+//      MARK: no done here. See video at 7:25 timeline
+    
 
     
 //    
@@ -62,19 +88,8 @@ struct VirtualHug: View {
     
     
     
-//            VStack {
-//                Text("Then, hold phone to your")
-//                    .font(.system(size: 35))
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-//
-//                Text("H E A R T")
-//                    .font(.system(size: 80))
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.blue)
-//
+         
+
               
                
             
