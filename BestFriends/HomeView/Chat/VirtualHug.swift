@@ -64,10 +64,8 @@ struct VirtualHug: View {
 //
 //  func complexSuccess() {
 //            guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
-//
-//var events = [CHHapticEvent]()
 
-//      MARK: no done here. See video at 7:25 timeline
+//      MARK: make sure this part works. See video at 7:25 timeline
     
 
     
