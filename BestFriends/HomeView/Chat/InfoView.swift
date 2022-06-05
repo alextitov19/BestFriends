@@ -22,7 +22,7 @@ struct InfoView: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            AdPlayerView(name: "green")
+            AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
             
             VStack {
@@ -46,7 +46,7 @@ struct InfoView: View {
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.black)
                   
                     Spacer()
                     .frame(height: 10)
@@ -57,7 +57,7 @@ struct InfoView: View {
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.black)
               
                 Spacer()
                 .frame(height: 10)
@@ -66,7 +66,7 @@ struct InfoView: View {
                     .font(.system(size: 24))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.black)
                 
                 
                      Spacer()
@@ -121,14 +121,25 @@ struct InfoView: View {
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
+                Spacer()
+                .frame(height: 30)
+                
                 Text("Screen-shot Chat messages")
                     .font(.system(size: 24))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 
+                Text("(coming end summer)")
+                    .font(.system(size: 20))
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                
+                
                 Spacer()
-                .frame(height: 45)
+                .frame(height: 15)
                 
            
                 
