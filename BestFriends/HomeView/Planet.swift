@@ -140,9 +140,7 @@ struct PlanetActionsView: View {
                     )}
                 
                 VStack {
-                    Button(action: {
-                        sessionManager.showInvite()
-                    }) {
+                    NavigationLink(destination: InviteView(), label: {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
@@ -160,7 +158,7 @@ struct PlanetActionsView: View {
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
-                    }
+                    })
                     
                     
                     Spacer()

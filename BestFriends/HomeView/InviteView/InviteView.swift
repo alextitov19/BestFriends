@@ -16,6 +16,8 @@ struct InviteView: View {
     
     @State private var invites: [Invite] = []
     
+    @State private var inviteClicked = false
+    
     var body: some View {
         ZStack {
               
@@ -28,17 +30,17 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                Text("You may add up to 5 friends")
-                    .foregroundColor(.purple)
-                    .font(.system(size: 27, weight: .light))
-                
-                
-                Text("- Always around in good & 'BAD' times \n- Trustworthy / Loyal \n- Non-Judgmental \n- Make me feel safe")
-                    .fontWeight(.thin)
-                    .foregroundColor(.white)
-                    .italic()
-                    .font(.system(size: 20))
-                
+//                Text("You may add up to 5 friends")
+//                    .foregroundColor(.purple)
+//                    .font(.system(size: 27, weight: .light))
+//                
+//                
+//                Text("- Always around in good & 'BAD' times \n- Trustworthy / Loyal \n- Non-Judgmental \n- Make me feel safe")
+//                    .fontWeight(.thin)
+//                    .foregroundColor(.white)
+//                    .italic()
+//                    .font(.system(size: 20))
+//                
                 
                 // Top part for inviting a friend
                 HStack {
@@ -48,7 +50,7 @@ struct InviteView: View {
                         Text("Invite")
                             .frame(width: 100, height: 40)
                             .foregroundColor(.white)
-                            .background(Color.green)
+                            .background(inviteClicked ? ColorManager.purple3 : Color.green)
                             .cornerRadius(15)
                     }
                     .frame(width: 120)
@@ -71,10 +73,14 @@ struct InviteView: View {
     
     private func inviteFriend() {
         if !email.isEmpty && user != nil {
+            inviteClicked = true
             // Send invite
             RestApi.instance.createInvite(recipient: email).then { result in
                 print("Got result: ", result)
                 email = ""
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    inviteClicked = false
+                }
             }
         }
         
