@@ -100,6 +100,11 @@ class Helper {
         accessToken = ""
     }
     
+    func signOut() {
+        self.renewToken = ""
+        self.accessToken = ""
+    }
+    
     func createInvite(url: String, createInvite: CreateInvite) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(createInvite)
         if let p = payload {

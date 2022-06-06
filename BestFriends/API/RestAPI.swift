@@ -26,6 +26,10 @@ class RestApi {
         }
     }
     
+    public func signOut() {
+        helper.signOut()
+    }
+    
     private init() {
         helper = Helper(API_URL, signUp: "/signup", login: "/login", renew: "/renew")
     }

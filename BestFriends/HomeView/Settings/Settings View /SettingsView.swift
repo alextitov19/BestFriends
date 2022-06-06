@@ -150,14 +150,12 @@ struct SettingsView: View {
                 VStack {
                     Divider()
                     
-                    NavigationLink(
-                        destination: EmptyView(),
-                        label: {
+                    
                             HStack {
                                 Text("Sign Out")
                                     .font(.system(size: 20))
-                                //                               .foregroundColor(.black)
-                                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                    .foregroundColor(ColorManager.red)
+                                
                                 Spacer()
                                 
                                 Image("arrowRight")
@@ -167,8 +165,10 @@ struct SettingsView: View {
                                     .colorInvert()
                             }
                             .padding(.horizontal, 15)
-                            .navigationBarHidden(true)
-                        })
+                            .onTapGesture {
+                                RestApi.instance.signOut()
+                                sessionManager.showLogin()
+                            }
                     
                     
                     Divider()
@@ -192,11 +192,11 @@ struct SettingsView: View {
 
 
 
-struct SettingsView_Previews : PreviewProvider {
-    static var previews: some View {
-        SettingsView()
-    }
-}
+//struct SettingsView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        SettingsView()
+//    }
+//}
 
 
 
