@@ -87,7 +87,7 @@ struct UserBetaTesting: View {
                 Spacer()
                       .frame(height: 25)
                 
-                Link(destination: URL(string: "https://socialtechlabs.com/beta-tester-_-bestfriends-app/")!) {
+                Link(destination: URL(string: "https://socialtechlabs.com/reporting-issues-in-bestfriends/")!) {
                     
                     HStack {
                         Text("Report 'issues' in BestFriends")
