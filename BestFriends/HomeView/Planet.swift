@@ -104,11 +104,9 @@ struct PlanetActionsView: View {
                     Spacer()
                         .frame(height: 40)
                     
-//                    NavigationLink(destination: BestFriendMessages(),
+
                     
                     NavigationLink(destination: BetaTestVideo(),
-                                    
-//                                    BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                    
                 label: {
                         
@@ -121,15 +119,11 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-                                    Text("Help Test")
+                                    Text("Fixing")
                                     .foregroundColor(.white)
                                     .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-//                                Text("Test")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 15, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                                Text("BestFriends")
                                     .foregroundColor(.white)
                                     .font(.system(size: 14, weight: .bold))

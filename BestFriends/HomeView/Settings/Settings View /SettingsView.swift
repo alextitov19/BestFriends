@@ -110,8 +110,8 @@ struct SettingsView: View {
                         HStack {
                             Text("Report Abusive Behavior")
                                 .font(.system(size: 20))
-                            //                               .foregroundColor(.black)
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .foregroundColor(ColorManager.red)
+                            
                             Spacer()
                             
                             Image("arrowRight")
@@ -148,6 +148,29 @@ struct SettingsView: View {
                         .navigationBarHidden(true)     })
                 
                 VStack {
+                    
+                    Divider()
+                    
+                    
+                            HStack {
+                                Text("Report issues with BestFriends")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(ColorManager.red)
+                                
+                                Spacer()
+                                
+                                Image("arrowRight")
+                                    .resizable()
+                                    .frame(width: 25, height: 25)
+                                    .scaledToFit()
+                                    .colorInvert()
+                            }
+                            .padding(.horizontal, 15)
+                            .onTapGesture {
+                                RestApi.instance.signOut()
+                                sessionManager.showLogin()
+                            }
+                    
                     Divider()
                     
                     
