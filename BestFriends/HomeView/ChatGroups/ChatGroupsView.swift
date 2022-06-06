@@ -44,23 +44,36 @@ struct ChatGroupsView: View {
                             .padding(.top)
                         
                         //MARK: ScrollView content...
-                        
-                        ForEach(groups, id: \.id) { group in
-
-                            Button(action: {
+                        ScrollView(.vertical, showsIndicators: false) {
+                            ForEach(groups, id: \.id) { group in
+                                
+                                Button(action: {
                                     sessionManager.showChat(user: user, group: group)
-                            }) {
-                            GroupRow(group: group)
-                                .padding(.horizontal, 15)
-                                .padding(.top, 15)
+                                }) {
+                                    GroupRow(group: group)
+                                        .padding(.horizontal, 15)
+                                        .padding(.top, 15)
+                                }
+                                
+                                CustomDivider(color: Color.white)
+                                    .padding(.horizontal, 30)
                             }
-                            
-                            CustomDivider(color: Color.white)
-                                .padding(.horizontal, 30)
                         }
                     }
                     .frame(maxHeight: .infinity, alignment: .top)
-                      
+                    
+                    VStack {
+                        Spacer()
+                        
+                        Text("Hide")
+                            .font(.system(size: 20))
+                            .foregroundColor(.white)
+                            .onTapGesture(perform: {
+                                self.offset = 30
+                            })
+                    }
+                    .padding(.bottom, 70)
+                    
                 }
                     .frame(width: width - 70)
                     .padding(.horizontal, 35)
