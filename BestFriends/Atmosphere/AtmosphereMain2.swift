@@ -52,7 +52,7 @@ struct AtmosphereMain2: View {
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("(What is you mood right now?)")
+                    Text("(Update your Mood)")
                         .font(.system(size: 15))
                         .italic()
                         .foregroundColor(Color.white)
@@ -274,7 +274,7 @@ struct AtmosphereMain2: View {
                     
                     
                     HStack {
-                        Text("Do you want to alert your friends ...")
+                        Text("ALEART - your friends")
                             .font(.system(size: 30))
                             .fontWeight(.regular)
                             .foregroundColor(Color.white)

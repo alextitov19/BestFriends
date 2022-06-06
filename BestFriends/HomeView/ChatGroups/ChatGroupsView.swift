@@ -66,8 +66,8 @@ struct ChatGroupsView: View {
                         Spacer()
                         
                         Text("Hide")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
+                            .font(.system(size: 35))
+                            .foregroundColor(.purple)
                             .onTapGesture(perform: {
                                 self.offset = 30
                             })
