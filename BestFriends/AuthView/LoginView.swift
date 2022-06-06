@@ -23,6 +23,9 @@ struct LoginView: View {
                 //TODO: Remove the onAppear for production
                     .onAppear {
 //                        sessionManager.login(email: "test1234@gmail.com", password: "secretPass")
+                        if RestApi.instance.needLogin == false {
+                            sessionManager.showHome()
+                        }
                     }
                 
                 Circle()
