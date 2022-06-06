@@ -50,8 +50,8 @@ struct User: Codable {
     var firstName: String
     var lastName: String
     var APNToken: String?
-    var friends: [String] = []
-    var groups: [String] = []
+    var friends: [String]?
+    var groups: [String]?
     var hiddenGroups: [String]?
     var atmosphere: String
     var chatPin: String?

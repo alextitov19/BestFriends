@@ -217,7 +217,7 @@ class Helper {
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
-        return callRestApiNoAuth(url: signUpUrl, method: .patch, data: payload, SignUpResponse.self).then { signUpResponse in
+        return callRestApiNoAuth(url: signUpUrl, method: .post, data: payload, SignUpResponse.self).then { signUpResponse in
             return Promise<Int>(signUpResponse.code)
         }
     }
