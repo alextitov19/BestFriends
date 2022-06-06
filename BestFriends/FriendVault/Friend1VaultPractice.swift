@@ -22,6 +22,14 @@ struct Friend1VaultPractice: View {
     
     @State private var mostRecentMoodLog: MoodLog?
     
+    init(user: User, friend: User, groups: [Group], friendAtmosphere: Atmosphere) {
+        self.user = user
+        self.friend = friend
+        self.groups = groups
+        self.friendAtmosphere = friendAtmosphere
+            UITextView.appearance().backgroundColor = .clear
+        }
+    
     var body: some View {
         ZStack {
             ColorManager.purple2
@@ -326,12 +334,10 @@ struct Friend1VaultPractice: View {
                     TextEditor(text: $customMessage)
                         .font(.system(size: 20))
                         .foregroundColor(Color.black)
-                        .padding(.horizontal, 50)
                         .frame(width:310, height: 75)
                         .background(ColorManager.purple3)
                         .cornerRadius(15)
                         .onReceive(Just(customMessage)) { _ in limitText(65) }
-                    
                     
                     VStack {
                         Button(action: {
