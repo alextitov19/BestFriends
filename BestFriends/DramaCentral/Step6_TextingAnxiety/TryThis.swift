@@ -73,9 +73,9 @@ struct TryThis: View {
                     
                     VStack {
                          NavigationLink(
-                            destination: BlueModePlaylist(),
+                            destination: HideoutsPlaylist(),
                             label: {
-                                Text("Listen to your BlueMode Playlist")
+                                Text("Listen to your Hideouts Playlist")
                                     .fontWeight(.thin)
                                     .frame(width: 330, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

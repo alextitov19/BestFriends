@@ -33,7 +33,7 @@ struct HideoutsView: View {
                 .ignoresSafeArea()
                 .scaledToFill()
 
-            AdPlayerView(name: "phone")
+            AdPlayerView(name: "Seaguls3")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -49,7 +49,7 @@ struct HideoutsView: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
             
 
-            NavigationLink(destination: BlueModePlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "BestFriends \nPlaylist")
+            NavigationLink(destination: HideoutsPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "BestFriends \nPlaylist")
             })
             .offset(x: showItems ? -60 : 0, y: showItems ? -145: 0)
             
