@@ -520,7 +520,7 @@
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				CF09118F2848973C00CB0AF0 /* BestFriendsVideo */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
-				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
+				CF785690284EF6D700B31803 /* PlanetMain */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
 			);
 			path = HomeView;
@@ -684,6 +684,14 @@
 				CF091197284A736800CB0AF0 /* FGVideo2.mp4 */,
 			);
 			path = "Background Videos";
+			sourceTree = "<group>";
+		};
+		CF785690284EF6D700B31803 /* PlanetMain */ = {
+			isa = PBXGroup;
+			children = (
+				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
+			);
+			path = PlanetMain;
 			sourceTree = "<group>";
 		};
 		CFAB5405281AA59500BBF502 /* Step6_TextingAnxiety */ = {
