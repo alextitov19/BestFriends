@@ -89,14 +89,17 @@ struct PlanetActionsView: View {
                                 .foregroundColor(ColorManager.purple3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             VStack {
+                                
+//                                Text("safe")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 15, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                
                                 Text("Hideouts")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("my time")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 11, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                               
                             }
                         }
                     })
@@ -113,21 +116,26 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.pmbc_green)
+                                .foregroundColor(ColorManager.purple5)
                                 .foregroundColor(.pink)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             
                             VStack {
                                 
-                                    Text("Fixing")
+                                    Text("help make")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 15, weight: .bold))
+                                    .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
                                Text("BestFriends")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 14, weight: .bold))
+                                    .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                
+                                Text("Better")
+                                     .foregroundColor(.white)
+                                     .font(.system(size: 17, weight: .bold))
+                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
                     }
@@ -163,11 +171,11 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 120, height: 120)
-                                .foregroundColor(ColorManager.purple1)
+                                .foregroundColor(ColorManager.orange2)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             
                             VStack {
-                                Text("my Planet \nDemo & \nSettings")
+                                Text("Settings")
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -193,10 +201,10 @@ struct PlanetActionsView: View {
 //                                    .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("friend group \nparents \nBFF")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 11, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                Text("friend group \nparents \nBFF")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 11, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
                     })
@@ -215,15 +223,18 @@ struct PlanetActionsView: View {
                                 .foregroundColor(ColorManager.purple3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             VStack {
+                                
+//                                Text("update \nmood")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 11, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
                                 Text("Atmosphere")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("update \nmood")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 11, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                              
                             }
                         }
                     })
@@ -247,11 +258,11 @@ struct PlanetActionsView: View {
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("dreams \nwith \nfriends")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 11, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                
+//                                Text("dreams \nwith \nfriends")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 11, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
                             }
                         }
                     })

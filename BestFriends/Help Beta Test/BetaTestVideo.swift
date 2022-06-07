@@ -12,6 +12,9 @@ import AVKit
 
 struct BetaTestVideo: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+
+    
     var body: some View {
         
         ZStack {
@@ -25,19 +28,26 @@ struct BetaTestVideo: View {
                 .scaledToFill()
 
             VStack {
-                
-                Text("Beta Testing Video")
-                    .font(.system(size: 40))
+//
+//
+                Text("Be 1st to test new 'Features' in")
+                    .font(.system(size: 30))
+                    .italic()
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
+                
+                                Text("BestFriends")
+                                    .font(.system(size: 50))
+                                    .fontWeight(.ultraLight)
+                                    .foregroundColor(Color.white)
                 
                 VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "BestFriendsAd1", withExtension: "mp4")!))
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                Spacer()
-                    .frame(height: 0)
-                    
+//                Spacer()
+//                    .frame(height: 0)
+//
                 NavigationLink(
                     destination: UserBetaTesting(),
                     label: {

@@ -747,8 +747,8 @@
 		CFAE7347283C745800015FD2 /* Help Beta Test */ = {
 			isa = PBXGroup;
 			children = (
-				CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */,
 				CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */,
+				CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */,
 			);
 			path = "Help Beta Test";
 			sourceTree = "<group>";
