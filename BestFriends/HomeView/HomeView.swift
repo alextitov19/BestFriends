@@ -12,7 +12,7 @@ struct HomeView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     @State private var homeData: HomeData?
-    
+    @State private var groups: [Group] = []
     @State private var planets: [Planet] = []
     
     @State private var selectedPlanet: Planet?
@@ -208,7 +208,7 @@ struct HomeView: View {
                 }
                 
                 if homeData?.groups != nil && homeData?.user != nil {
-                    ChatGroupsView(user: homeData!.user, groups: homeData?.groups ?? [])
+                    ChatGroupsView(user: homeData!.user, groups: groups)
                         .environmentObject(sessionManager)
                     
 //  MARK: When toggle between Home view and Planet the [Atmosphere] and [FiendValult] buttons show up on Plant view and do not go away on Home view when the fiend's planet is tapped.
@@ -227,7 +227,7 @@ struct HomeView: View {
             print("Got HomeData: ", data)
             homeData = data
             RestApi.instance.registerAPNToken()
-            
+            groups = homeData!.groups.sorted(by: { $0.createdOn > $1.createdOn })
             
 
             createPlanets()
@@ -340,6 +340,7 @@ struct HomeView: View {
                     if f.id == m {
                         name.append(f.firstName)
                         name.append(", ")
+                        
                     }
                 }
             }
@@ -347,6 +348,7 @@ struct HomeView: View {
                 name.removeLast()
                 name.removeLast()
             }
+            print("Name: ", name)
             
             RestApi.instance.createGroup(name: name, members: newGroupMembers).then { response in
                 print("Create Group response: ", response)
