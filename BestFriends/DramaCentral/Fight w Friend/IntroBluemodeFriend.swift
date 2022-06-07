@@ -28,19 +28,7 @@ struct IntroBluemodeFriend: View {
             //
             VStack {
       
-                
-//                Text("asking for")
-//                    .font(.system(size: 35))
-//                    .foregroundColor(.white)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//                Text("HELP")
-//                    .font(.system(size: 90))
-//                    .foregroundColor(.white)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//                Spacer()
-//                    .frame(height: 20)
+ 
 
              Text("83% of teens said they \ndon't know what to do after a")
                     .font(.system(size: 25))
@@ -100,8 +88,22 @@ struct IntroBluemodeFriend: View {
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                        
-               
-                    
+                Spacer()
+                    .frame(height: 45)
+                
+                NavigationLink(
+                    destination: DramaMainView(),
+                    label: {
+                        Text("Skip Intro")
+                            .fontWeight(.thin)
+                            .frame(width: 175, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.grey2)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                
                     
                     
                     
