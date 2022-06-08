@@ -58,6 +58,14 @@ struct SignUpView: View {
                     MainSecureField(text: $password, placeholder: "Password")
                         .padding(.horizontal, 40)
                         .padding(.vertical, 15)
+                    
+//                    Text("(8 characters - 1 Cap")
+//                        .font(.system(size: 15))
+//                        .foregroundColor(.blue)
+//                        .fontWeight(.ultraLight)
+//                      
+                    
+                    
                 }
                 
                 Spacer().frame(height: 50)
