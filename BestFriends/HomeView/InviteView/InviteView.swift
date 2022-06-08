@@ -39,7 +39,7 @@ struct InviteView: View {
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                 
                 
                 // Top part for inviting a friend
