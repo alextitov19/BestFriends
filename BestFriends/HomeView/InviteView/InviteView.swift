@@ -30,17 +30,17 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 40)
                 
-//                Text("You may add up to 5 friends")
-//                    .foregroundColor(.purple)
-//                    .font(.system(size: 27, weight: .light))
-//                
-//                
-//                Text("- Always around in good & 'BAD' times \n- Trustworthy / Loyal \n- Non-Judgmental \n- Make me feel safe")
-//                    .fontWeight(.thin)
-//                    .foregroundColor(.white)
-//                    .italic()
-//                    .font(.system(size: 20))
-//                
+                Text("You may add up to 5 friends")
+                    .foregroundColor(.purple)
+                    .font(.system(size: 27, weight: .light))
+                
+                
+                Text("1) Ask your friend to download BestFriends \n2) Enter their email and tap [Invite]")
+                    .fontWeight(.thin)
+                    .foregroundColor(.white)
+                    .italic()
+                    .font(.system(size: 20))
+                
                 
                 // Top part for inviting a friend
                 HStack {
