@@ -115,6 +115,8 @@
 		CF590DD3284C24090036B6BE /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF590DD2284C24090036B6BE /* test.mp4 */; };
 		CF590DD5284C36EE0036B6BE /* groupPic.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF590DD4284C36EE0036B6BE /* groupPic.mp4 */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
+		CF725E2428516D0B0096342F /* HideChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2328516D0B0096342F /* HideChat2.swift */; };
+		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF785692284F3CE900B31803 /* HideoutsPlayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF785691284F3CE900B31803 /* HideoutsPlayList.swift */; };
 		CF785695284F3DB900B31803 /* Playlist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF785694284F3DB900B31803 /* Playlist.mp4 */; };
 		CF785697284F44D700B31803 /* seaguls.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF785696284F44D700B31803 /* seaguls.mp4 */; };
@@ -274,6 +276,8 @@
 		CF590DD2284C24090036B6BE /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		CF590DD4284C36EE0036B6BE /* groupPic.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = groupPic.mp4; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
+		CF725E2328516D0B0096342F /* HideChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideChat2.swift; sourceTree = "<group>"; };
+		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF785691284F3CE900B31803 /* HideoutsPlayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideoutsPlayList.swift; sourceTree = "<group>"; };
 		CF785694284F3DB900B31803 /* Playlist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Playlist.mp4; sourceTree = "<group>"; };
 		CF785696284F44D700B31803 /* seaguls.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = seaguls.mp4; sourceTree = "<group>"; };
@@ -439,6 +443,7 @@
 				CF3B65F128075F3B0003A714 /* FriendVault */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
 				CFE1946A2812A9E300ED5718 /* Streaks */,
+				CF725E2628516E180096342F /* Tokens */,
 				CFD12CC52819436F00AB2539 /* OurStory */,
 				CFE1946728129CAC00ED5718 /* RobPracticePages */,
 				7A1C048627F4C3A90002B173 /* Models */,
@@ -621,6 +626,7 @@
 				CF3B65AC280075620003A714 /* MyAccountView.swift */,
 				CF3B65C92801D2DE0003A714 /* ResetPasswordView.swift */,
 				CF3B65DF28020D9A0003A714 /* ChangePin.swift */,
+				CF725E2328516D0B0096342F /* HideChat2.swift */,
 				CF3B65E3280219B70003A714 /* RemoveFriend.swift */,
 				CF3B65B8280081550003A714 /* SettingsNotificationsView.swift */,
 				CF3B65DB2801F4D40003A714 /* CustomizationView.swift */,
@@ -696,6 +702,14 @@
 				CF091197284A736800CB0AF0 /* FGVideo2.mp4 */,
 			);
 			path = "Background Videos";
+			sourceTree = "<group>";
+		};
+		CF725E2628516E180096342F /* Tokens */ = {
+			isa = PBXGroup;
+			children = (
+				CF725E2728516E4F0096342F /* Tokens.swift */,
+			);
+			path = Tokens;
 			sourceTree = "<group>";
 		};
 		CF785690284EF6D700B31803 /* PlanetMain */ = {
@@ -1097,6 +1111,7 @@
 				CFAB541B281E5F8300BBF502 /* YouGotThis.swift in Sources */,
 				CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */,
 				CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */,
+				CF725E2428516D0B0096342F /* HideChat2.swift in Sources */,
 				CFD0469C2837D9F400BF0B02 /* HideoutsView.swift in Sources */,
 				CFE194662812994B00ED5718 /* SendNiceChat.swift in Sources */,
 				CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */,
@@ -1142,6 +1157,7 @@
 				CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */,
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
 				7A1C048527F4BEB30002B173 /* SignUpView.swift in Sources */,
+				CF725E2828516E4F0096342F /* Tokens.swift in Sources */,
 				7A8A17C128414A390088DC04 /* SmileNoteModels.swift in Sources */,
 				CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */,
 				CFAB5420281FC2BB00BBF502 /* BreakUpNote.swift in Sources */,
@@ -1302,7 +1318,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1332,7 +1348,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

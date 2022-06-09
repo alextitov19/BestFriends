@@ -63,7 +63,7 @@ struct SignUpView: View {
 //                        .font(.system(size: 15))
 //                        .foregroundColor(.blue)
 //                        .fontWeight(.ultraLight)
-//                      
+//
                     
                     
                 }
