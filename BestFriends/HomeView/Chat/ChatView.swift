@@ -88,8 +88,8 @@ struct ChatView: View {
                         }
                     
                     Text("Leave")
-                        .foregroundColor(.red)
-                        .font(.system(size: 18, weight: .bold))
+                        .foregroundColor(.gray)
+                        .font(.system(size: 18, weight: .thin))
                         .onTapGesture(perform: leaveChatGroup)
                 }
                 
