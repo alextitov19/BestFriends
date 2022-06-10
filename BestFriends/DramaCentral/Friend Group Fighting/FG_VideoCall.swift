@@ -55,7 +55,7 @@ struct FG_VideoCall: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: IntroFriendGpFight(), label: { FG_VideoCallCircle (color: .blue, friendName: "Being \nAccountable")
+            NavigationLink(destination: FG_Team(), label: { FG_VideoCallCircle (color: .blue, friendName: "Being \nAccountable")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
@@ -71,7 +71,7 @@ struct FG_VideoCall: View {
              .offset(x: showItems ? -50 : 0, y: showItems ? 250: 0)
              
             
-               NavigationLink(destination: FG_Video(), label: {
+               NavigationLink(destination: SetBoundries(), label: {
                    FG_VideoCallCircle (color: .white, friendName: "Set \nBoundries")
              })
              .offset(x: showItems ? -100 : 0, y: showItems ? 90: 0)

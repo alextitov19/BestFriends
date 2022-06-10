@@ -78,7 +78,7 @@ struct FG_Team: View {
                     .frame(height: 40)
                     
                     NavigationLink(
-                        destination: FG_BeAccountable(),
+                        destination: FG_VideoCall(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)

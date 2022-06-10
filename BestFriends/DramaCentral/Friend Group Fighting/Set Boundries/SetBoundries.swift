@@ -7,7 +7,6 @@
 
 import Foundation
 
-import Foundation
 
 import SwiftUI
 
@@ -30,13 +29,13 @@ struct SetBoundries: View {
                
                   
                   VStack {
-                      Text("")
+                      Text("??")
                           .font(.system(size: 40))
                           .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                    
-                        Text("This will be a little more difficult")
+                        Text("???")
                             .font(.system(size: 50))
                             .foregroundColor(.white)
                             .fontWeight(.ultraLight)
@@ -53,13 +52,13 @@ struct SetBoundries: View {
                      
             VStack {
                       
-                        Text("We are moving to")
+                        Text("????")
                             .font(.system(size: 30))
                             .italic()
                             .fontWeight(.light)
                             .foregroundColor(Color.blue)
                         
-                        Text("HORIZONS")
+                        Text("???")
                             .font(.system(size: 50))
                             .italic()
                             .fontWeight(.light)
@@ -71,7 +70,7 @@ struct SetBoundries: View {
                     .frame(height: 30)
                     
                     NavigationLink(
-                        destination: Step2FG_NewSolutions(),
+                        destination: FG_VideoCall(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)

@@ -1,17 +1,16 @@
 //
-//  FG_BeAccountable.swift
+//  PickMediator.swift
 //  BestFriends
 //
-//  Created by Social Tech on 5/30/22.
+//  Created by Social Tech on 6/10/22.
 //
-
 
 import Foundation
 
 import SwiftUI
 
 
-struct FG_BeAccountable: View {
+struct PickMediator: View {
     
     @EnvironmentObject var sessionManager: SessionManager
 
@@ -29,13 +28,13 @@ struct FG_BeAccountable: View {
                
                   
                   VStack {
-                      Text("")
+                      Text("??")
                           .font(.system(size: 40))
                           .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                    
-                        Text("This will be a little more difficult")
+                        Text("???")
                             .font(.system(size: 50))
                             .foregroundColor(.white)
                             .fontWeight(.ultraLight)
@@ -52,13 +51,13 @@ struct FG_BeAccountable: View {
                      
             VStack {
                       
-                        Text("We are moving to")
+                        Text("????")
                             .font(.system(size: 30))
                             .italic()
                             .fontWeight(.light)
                             .foregroundColor(Color.blue)
                         
-                        Text("HORIZONS")
+                        Text("???")
                             .font(.system(size: 50))
                             .italic()
                             .fontWeight(.light)
@@ -70,7 +69,7 @@ struct FG_BeAccountable: View {
                     .frame(height: 30)
                     
                     NavigationLink(
-                        destination: Step2FG_NewSolutions(),
+                        destination: FG_VideoCall(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
@@ -94,9 +93,9 @@ struct FG_BeAccountable: View {
 
 
 
-struct FG_BeAccountable_Previews : PreviewProvider {
+struct PickMediator_Previews : PreviewProvider {
     static var previews: some View {
-        FG_BeAccountable()
+        PickMediator()
     }
 }
 
