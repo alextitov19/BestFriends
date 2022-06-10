@@ -1,18 +1,18 @@
 //
-//  FG_Team.swift
+//  SetBoundries.swift
 //  BestFriends
 //
-//  Created by Social Tech on 5/30/22.
+//  Created by Social Tech on 6/10/22.
 //
 
-
+import Foundation
 
 import Foundation
 
 import SwiftUI
 
 
-struct FG_Team: View {
+struct SetBoundries: View {
     
     @EnvironmentObject var sessionManager: SessionManager
 
@@ -30,19 +30,19 @@ struct FG_Team: View {
                
                   
                   VStack {
-                      Text("consider . . .")
+                      Text("")
                           .font(.system(size: 40))
                           .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                    
-                        Text("coming together")
+                        Text("This will be a little more difficult")
                             .font(.system(size: 50))
                             .foregroundColor(.white)
                             .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
                       
-                      Text("as a TEAM")
+                      Text("?????")
                           .font(.system(size: 60))
                           .foregroundColor(.white)
                           .fontWeight(.ultraLight)
@@ -50,23 +50,16 @@ struct FG_Team: View {
                             
                         Spacer()
                             .frame(height: 50)
-                        
-                      Text("- Teams rely on one another to win? \n- teams have each other's back \n- teams have common dreams \n- teams are basically - bad ass!")
-                          .font(.system(size: 24))
-                          .fontWeight(.light)
-                          .foregroundColor(Color.white)
-           
-                      Spacer()
-                          .frame(height: 60)
+                     
             VStack {
                       
-                        Text("just a thought from our")
+                        Text("We are moving to")
                             .font(.system(size: 30))
                             .italic()
                             .fontWeight(.light)
                             .foregroundColor(Color.blue)
                         
-                        Text("teens")
+                        Text("HORIZONS")
                             .font(.system(size: 50))
                             .italic()
                             .fontWeight(.light)
@@ -75,10 +68,10 @@ struct FG_Team: View {
                
             VStack {
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 30)
                     
                     NavigationLink(
-                        destination: FG_BeAccountable(),
+                        destination: Step2FG_NewSolutions(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
@@ -102,10 +95,9 @@ struct FG_Team: View {
 
 
 
-struct FG_Team_Previews : PreviewProvider {
+struct SetBoundries_Previews : PreviewProvider {
     static var previews: some View {
-        FG_Team()
+        SetBoundries()
     }
 }
-
 

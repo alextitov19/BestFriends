@@ -25,11 +25,11 @@ struct FG_GettingStarted: View {
           VStack {
           
            
-                Text("First,")
-                    .font(.system(size: 50))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
+//                Text("First,")
+//                    .font(.system(size: 50))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
          
               
               Text("Some DRAMA in your ")
@@ -77,7 +77,7 @@ struct FG_GettingStarted: View {
             
                     
                     NavigationLink(
-                        destination: FG_Team(),
+                        destination: Step3FG_Accountability(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
