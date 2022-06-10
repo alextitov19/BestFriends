@@ -78,6 +78,10 @@ class RestApi {
         return helper.createGroup(url: API_URL + "/groups", createGroup: cg)
     }
     
+    public func updateGroup(group: Group) -> Promise<Int> {
+        return helper.updateGroup(url: API_URL + "/groups/update", group: group)
+    }
+    
     public func createChatMessage(groupId: String, body: String) -> Promise<Int> {
         let cm = CreateMessage(body: body)
         return helper.createMessage(url: API_URL + "/messages/" + groupId, cm: cm)

@@ -135,6 +135,16 @@ class Helper {
         }
     }
     
+    func updateGroup(url: String, group: Group) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(group)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
     func createMessage(url: String, cm: CreateMessage) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(cm)
         if let p = payload {

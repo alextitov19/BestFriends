@@ -86,6 +86,11 @@ struct ChatView: View {
                         .fullScreenCover(isPresented: $isLockTapped) {
                             HideChatView(sessionManager: _sessionManager, user: user, group: group)
                         }
+                    
+                    Text("Leave")
+                        .foregroundColor(.red)
+                        .font(.system(size: 18, weight: .bold))
+                        .onTapGesture(perform: leaveChatGroup)
                 }
                 
                 // MARK: Main scroll view
@@ -229,5 +234,28 @@ struct ChatView: View {
     
     private func sortMessages() {
         messages = messages.sorted(by: { $0.createdOn < $1.createdOn })
+    }
+    
+    private func leaveChatGroup() {
+        if user.groups?.count == 0 { return }
+        //MARK: Update group
+        var members = group.members
+        if let index = members.firstIndex(of: user.id) {
+            members.remove(at: index)
+            let updatedGroup = Group(id: group.id, name: group.name, members: members, owner: group.owner, createdOn: group.createdOn)
+            RestApi.instance.updateGroup(group: updatedGroup).then({ result in
+                print("Update group result: ", result)
+            })
+        }
+        //MARK: Update user
+        var chatGroups = user.groups!
+        if let index = chatGroups.firstIndex(of: group.id) {
+            chatGroups.remove(at: index)
+            let updateduser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: chatGroups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, smileNotes: user.smileNotes)
+            RestApi.instance.updateUser(user: updateduser).then({ result in
+                print("Update user result: ", result)
+                sessionManager.showHome()
+            })
+        }
     }
 }
