@@ -18,6 +18,7 @@ struct HomeView: View {
     @State private var selectedPlanet: Planet?
     
     @State private var focusPlanet = false
+    @State private var showNewRoomNameDialog = false
     
     @State private var newGroupMembers: [String] = []
     
@@ -71,6 +72,21 @@ struct HomeView: View {
                     }
                     // Main planet
                     if homeData != nil {
+                        EmptyView()
+                            .alert(isPresented: $showNewRoomNameDialog,
+                                   TextAlert(title: "Create New Room",
+                                             message: "Input the desired name for the new chat room",
+                                             keyboardType: .numberPad) { name in
+                                if let text = name {
+                                    // Text was accepted
+                                    print("Got name: ", text)
+                                    createGroup(name: text)
+                                } else {
+                                    // The dialog was cancelled
+                                }
+                            })
+                            .frame(width: 0, height: 0)
+                        
                         ZStack {
                             // Main planet
                             if !focusPlanet {
@@ -81,6 +97,7 @@ struct HomeView: View {
                                     .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
                                     .padding()
                                     .onAppear(perform: {print("Atm mood: ", homeData!.atmosphere.mood)})
+                                
                             }
                             
                             // Tapped on the main planet
@@ -102,7 +119,7 @@ struct HomeView: View {
                                     } else {
                                         selectedPlanet = planets[2]
                                     }
-
+                                    
                                 })
                         }
                         
@@ -117,7 +134,7 @@ struct HomeView: View {
                                     } else {
                                         selectedPlanet = planets[3]
                                     }
-
+                                    
                                 })
                         }
                     }
@@ -132,12 +149,12 @@ struct HomeView: View {
                                     selectedPlanet = planets[4]
                                 }
                             })
-//                            .padding()
+                        //                            .padding()
                     }
                     
                     if newGroupMembers.count > 0 && !focusPlanet {
                         Button(action: {
-                            createGroup()
+                            chatButtonTapped()
                         }, label: {
                             Text("Chat")
                                 .fontWeight(.regular)
@@ -146,20 +163,20 @@ struct HomeView: View {
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                         })
-
+                        
                     }
-                   
-//                    Text("received push notification to")
+                    
+                    //                    Text("received push notification to")
                     
                     Spacer()
                         .frame(height: 25)
-            
+                    
                     //                    MARK: Connect to Chat Now page
                     
                     if selectedPlanet != nil {
                         if homeData!.groups.count > 0 {
                             NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
-                                            label: {
+                                           label: {
                                 Text("Urgent Chat Invite")
                                     .fontWeight(.thin)
                                     .frame(width: 190, height: 30)
@@ -170,9 +187,9 @@ struct HomeView: View {
                             })
                         }
                         
-                       
+                        
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, groups: homeData!.groups, friendAtmosphere: homeData!.atmosphere),
-                                        label: {
+                                       label: {
                             Text("Friend Changed Mood")
                                 .fontWeight(.thin)
                                 .frame(width: 190, height: 30)
@@ -182,7 +199,7 @@ struct HomeView: View {
                                 .opacity(0.8)
                         })
                         NavigationLink(destination: WhoFighting(),
-                                        label: {
+                                       label: {
                             Text("Invited to BlueMode")
                                 .fontWeight(.thin)
                                 .frame(width: 190, height: 30)
@@ -191,9 +208,9 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
-                    
+                        
                         NavigationLink(destination: VirtualHug(),
-                                        label: {
+                                       label: {
                             Text("HUG")
                                 .fontWeight(.thin)
                                 .frame(width: 190, height: 30)
@@ -205,19 +222,19 @@ struct HomeView: View {
                         
                         
                     }
-
+                    
                 }
                 
                 if homeData?.groups != nil && homeData?.user != nil {
                     ChatGroupsView(user: homeData!.user, groups: groups)
                         .environmentObject(sessionManager)
                     
-//  MARK: When toggle between Home view and Planet the [Atmosphere] and [FiendValult] buttons show up on Plant view and do not go away on Home view when the fiend's planet is tapped.
-//     MARK: Can not get the BlueMode to link to BlueMode page
+                    //  MARK: When toggle between Home view and Planet the [Atmosphere] and [FiendValult] buttons show up on Plant view and do not go away on Home view when the fiend's planet is tapped.
+                    //     MARK: Can not get the BlueMode to link to BlueMode page
                     
-//                    if selectedPlanet != nil {
-//                        AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends)
-//
+                    //                    if selectedPlanet != nil {
+                    //                        AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends)
+                    //
                 }
             }
         }
@@ -230,7 +247,7 @@ struct HomeView: View {
             RestApi.instance.registerAPNToken()
             groups = homeData!.groups.sorted(by: { $0.createdOn > $1.createdOn })
             
-
+            
             createPlanets()
             //            print("Got groups: ", data.groups.count)
             //            chatGroupsView = ChatGroupsView(groups: data.groups)
@@ -315,8 +332,7 @@ struct HomeView: View {
         print(newGroupMembers.count)
     }
     
-    private func createGroup() {
-        // Append self to group, create group
+    private func chatButtonTapped() {
         if newGroupMembers.count > 0 {
             for newId in newGroupMembers {
                 for f in homeData!.friends {
@@ -334,27 +350,14 @@ struct HomeView: View {
                     return
                 }
             }
-            
-            var name = ""
-            for m in newGroupMembers {
-                for f in homeData!.friends {
-                    if f.id == m {
-                        name.append(f.firstName)
-                        name.append(", ")
-                        
-                    }
-                }
-            }
-            if name.count > 2 {
-                name.removeLast()
-                name.removeLast()
-            }
-            print("Name: ", name)
-            
-            RestApi.instance.createGroup(name: name, members: newGroupMembers).then { response in
-                print("Create Group response: ", response)
-                sessionManager.showChat(user: homeData!.user, group: response)
-            }
+            showNewRoomNameDialog = true
+        }
+    }
+    
+    private func createGroup(name: String) {
+        RestApi.instance.createGroup(name: name, members: newGroupMembers).then { response in
+            print("Create Group response: ", response)
+            sessionManager.showChat(user: homeData!.user, group: response)
         }
     }
     

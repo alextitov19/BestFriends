@@ -40,15 +40,7 @@ extension View {
 }
 
 extension View {
-
-    func textFieldAlert(isShowing: Binding<Bool>,
-                        text: Binding<String>,
-                        title: String, placeholder: String) -> some View {
-        TextFieldAlert(isShowing: isShowing,
-                       text: text,
-                       presenting: self,
-                       placeholder: placeholder,
-                       title: title)
-    }
-
+  public func alert(isPresented: Binding<Bool>, _ alert: TextAlert) -> some View {
+    AlertWrapper(isPresented: isPresented, alert: alert, content: self)
+  }
 }

@@ -11,13 +11,14 @@ struct GroupRow: View {
     
     let group: Group
     
+    @State var namestring = ""
     @State var timestring = ""
     
     var body: some View {
         HStack {
             Spacer().frame(width: 10)
                 .onAppear {
-                    getBody()
+                    getData()
                 }
             
             VStack(alignment: .leading) {
@@ -37,7 +38,7 @@ struct GroupRow: View {
                 HStack {
                     Spacer().frame(width: 10)
                     
-                    Text(group.name)
+                    Text(namestring)
                         .font(.system(size: 16, weight: .light))
                         .foregroundColor(.white)
                     
@@ -56,7 +57,8 @@ struct GroupRow: View {
         }
     }
     
-    private func getBody() {
+    private func getData() {
+        // Get timestring
         var x = Int64(Date().timeIntervalSince1970) - group.createdOn
         x = x / 60
         timestring = "\(x) min"
@@ -66,6 +68,13 @@ struct GroupRow: View {
             if x > 24 {
                 x = x / 24
                 timestring = "\(x) days"
+            }
+        }
+        
+        // Get member names
+        for id in group.members {
+            RestApi.instance.getUserById(id: id).then { result in
+                namestring.append(result.firstName + " " + String(result.lastName.first!) + ", ")
             }
         }
     }
