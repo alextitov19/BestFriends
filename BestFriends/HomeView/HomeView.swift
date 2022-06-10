@@ -157,17 +157,18 @@ struct HomeView: View {
                     //                    MARK: Connect to Chat Now page
                     
                     if selectedPlanet != nil {
-                       
-                        NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
-                                        label: {
-                            Text("Urgent Chat Invite")
-                                .fontWeight(.thin)
-                                .frame(width: 190, height: 30)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .opacity(0.8)
-                        })
+                        if homeData!.groups.count > 0 {
+                            NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
+                                            label: {
+                                Text("Urgent Chat Invite")
+                                    .fontWeight(.thin)
+                                    .frame(width: 190, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .opacity(0.8)
+                            })
+                        }
                         
                        
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, groups: homeData!.groups, friendAtmosphere: homeData!.atmosphere),
