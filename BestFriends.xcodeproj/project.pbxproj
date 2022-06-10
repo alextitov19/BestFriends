@@ -587,6 +587,8 @@
 		CF381A4E2826883A00B3719E /* Friend Group Fighting */ = {
 			isa = PBXGroup;
 			children = (
+				CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */,
+				CF725E292853C3020096342F /* BeingTeens */,
 				CF381A5128283D5C00B3719E /* IntroFriendGpFight.swift */,
 				CF381A5328283FA000B3719E /* Step1FG_AcceptedSolutions.swift */,
 				CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */,
@@ -596,7 +598,6 @@
 				CF9E33C7284530CF00107433 /* FG_GettingStarted.swift */,
 				CF3802D628456C83005181E4 /* FG_Team.swift */,
 				CF9E33C92845323200107433 /* FG_BeAccountable.swift */,
-				CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */,
 				62319AAC284A788000CA0359 /* FG_Video.swift */,
 			);
 			path = "Friend Group Fighting";
@@ -710,6 +711,13 @@
 				CF725E2728516E4F0096342F /* Tokens.swift */,
 			);
 			path = Tokens;
+			sourceTree = "<group>";
+		};
+		CF725E292853C3020096342F /* BeingTeens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BeingTeens;
 			sourceTree = "<group>";
 		};
 		CF785690284EF6D700B31803 /* PlanetMain */ = {
