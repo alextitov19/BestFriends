@@ -220,7 +220,7 @@ struct HomeView: View {
                                 .opacity(0.8)
                         })
                         
-                        NavigationLink(destination: EmptyView(),
+                        NavigationLink(destination: HideoutsPlaylist(),
                                         label: {
                              Text("Friend Sent PlayList")
                                  .fontWeight(.thin)
