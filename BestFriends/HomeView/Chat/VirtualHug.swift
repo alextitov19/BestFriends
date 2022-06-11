@@ -29,35 +29,49 @@ struct VirtualHug: View {
                     .blendMode(.screen)
         
         VStack {
-                
-            Text("Hold phone to your")
-                .font(.system(size: 35))
+            Text("Hold your phone to your")
+                .font(.system(size: 30))
                 .fontWeight(.ultraLight)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.black)
- 
-            Text("H E A R T")
-                .font(.system(size: 80))
-                .fontWeight(.ultraLight)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.pink)
+         
+            ZStack {
+            Image(systemName: "heart.fill")
+                .resizable()
+                .foregroundColor(.purple)
+                .frame(width: 150, height: 150)
+                .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                .opacity(0.7)
             
-            Spacer()
-                .frame(height: 100)
             
-            Text("[tap here]")
-                .font(.system(size: 50))
-                .fontWeight(.ultraLight)
+            Text("TAP")
+                .font(.system(size: 35))
+                .fontWeight(.light)
                 .multilineTextAlignment(.center)
-                .foregroundColor(Color.blue)
+                .foregroundColor(Color.white)
                 .padding()
                 .onAppear(perform: prepareHaptics)
                 .onTapGesture(perform: complexSuccess)
-            
-//                .padding()
+               
+            }
             
             Spacer()
                 .frame(height: 400)
+            
+          
+            
+            Text("Cancel Audio")
+                .fontWeight(.thin)
+                .frame(width: 175, height: 40)
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                .font(.system(size: 30))
+                .background(ColorManager.purple3)
+                .cornerRadius(15)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+     
+            Spacer()
+                .frame(height: 100)
+            
         }
               
         }
@@ -104,6 +118,10 @@ struct VirtualHug: View {
   }
         
     }
+    
+
+    
+    
 
 //      MARK: make sure this part works. See video at 7:25 timeline
     

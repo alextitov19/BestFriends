@@ -102,10 +102,6 @@ struct FG_VideoCall: View {
                    .opacity(0.9)
 
            VStack {
-               
-//            Spacer ()
-//                   .frame(height: 100)
-//
               Text("FriendGroup")
                             .font(.system(size: 20))
                             .foregroundColor(.blue)
