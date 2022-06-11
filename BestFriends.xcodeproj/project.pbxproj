@@ -10,6 +10,8 @@
 		39D0524EB9F9947C28B9D613 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */; };
 		62319AAD284A788000CA0359 /* FG_Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62319AAC284A788000CA0359 /* FG_Video.swift */; };
 		62319AAE284A7C0000CA0359 /* FGVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF091197284A736800CB0AF0 /* FGVideo2.mp4 */; };
+		7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04C13C28553818003AB24A /* PhotoPopView.swift */; };
+		7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */; };
 		7A0856A027F3D94500E8282B /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08569F27F3D94500E8282B /* AuthController.swift */; };
 		7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A127F3D9A900E8282B /* RestAPI.swift */; };
 		7A0856A427F3D9C400E8282B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A327F3D9C400E8282B /* Model.swift */; };
@@ -172,6 +174,8 @@
 /* Begin PBXFileReference section */
 		16E04433DE68818589291B02 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		62319AAC284A788000CA0359 /* FG_Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Video.swift; sourceTree = "<group>"; };
+		7A04C13C28553818003AB24A /* PhotoPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopView.swift; sourceTree = "<group>"; };
+		7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopImageView.swift; sourceTree = "<group>"; };
 		7A08569F27F3D94500E8282B /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
 		7A0856A127F3D9A900E8282B /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		7A0856A327F3D9C400E8282B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -870,6 +874,8 @@
 			isa = PBXGroup;
 			children = (
 				CF0911892848875C00CB0AF0 /* PhotoPopVideo.swift */,
+				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
+				7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */,
 			);
 			path = PhotoPoP;
 			sourceTree = "<group>";
@@ -1180,8 +1186,10 @@
 				D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */,
 				CFD12CC7281943CA00AB2539 /* Impetus.swift in Sources */,
 				CFAB5419281E537D00BBF502 /* ShowHug.swift in Sources */,
+				7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */,
 				CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
+				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
 				CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				7ACACDA82853EAB700D8AB75 /* UIAlertControllerExtension.swift in Sources */,
