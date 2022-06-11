@@ -158,7 +158,7 @@ struct HomeView: View {
                         }, label: {
                             Text("Chat")
                                 .fontWeight(.regular)
-                                .frame(width: 125, height: 40)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -179,7 +179,7 @@ struct HomeView: View {
                                            label: {
                                 Text("Urgent Chat Invite")
                                     .fontWeight(.thin)
-                                    .frame(width: 190, height: 30)
+                                    .frame(width: 190, height: 25)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -192,7 +192,7 @@ struct HomeView: View {
                                        label: {
                             Text("Friend Changed Mood")
                                 .fontWeight(.thin)
-                                .frame(width: 190, height: 30)
+                                .frame(width: 190, height: 25)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -200,9 +200,9 @@ struct HomeView: View {
                         })
                         NavigationLink(destination: WhoFighting(),
                                        label: {
-                            Text("Invited to BlueMode")
+                            Text("Invited to DramaMode")
                                 .fontWeight(.thin)
-                                .frame(width: 190, height: 30)
+                                .frame(width: 190, height: 25)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -213,12 +213,27 @@ struct HomeView: View {
                                        label: {
                             Text("HUG")
                                 .fontWeight(.thin)
-                                .frame(width: 190, height: 30)
+                                .frame(width: 190, height: 25)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
+                        
+                        NavigationLink(destination: EmptyView(),
+                                        label: {
+                             Text("Friend Sent PlayList")
+                                 .fontWeight(.thin)
+                                 .frame(width: 190, height: 25)
+                                 .foregroundColor(.white)
+                                 .background(ColorManager.purple3)
+                                 .cornerRadius(15)
+                                 .opacity(0.8)
+                         })
+                         
+                        
+                        
+                        
                         
                         
                     }

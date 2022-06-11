@@ -39,11 +39,11 @@ struct HideoutsPlaylist: View {
                     .frame(height: 40)
                 
                 NavigationLink(
-                    destination: EmptyView(),
+                    destination: BuildFriendPlaylist(),
                     label: {
-                        Text("My Playlist")
+                        Text("Build Playlist for Friend")
                             .fontWeight(.thin)
-                            .frame(width: 200, height: 40)
+                            .frame(width: 300, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)

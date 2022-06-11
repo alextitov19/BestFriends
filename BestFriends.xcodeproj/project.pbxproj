@@ -96,6 +96,7 @@
 		CF2DBCEA2853D968008616A3 /* SetBoundries.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCE92853D968008616A3 /* SetBoundries.swift */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
 		CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2DBCF028552527008616A3 /* storm2.mp4 */; };
+		CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */; };
 		CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */; };
 		CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */; };
 		CF3802D728456C83005181E4 /* FG_Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3802D628456C83005181E4 /* FG_Team.swift */; };
@@ -261,6 +262,7 @@
 		CF2DBCE92853D968008616A3 /* SetBoundries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetBoundries.swift; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
 		CF2DBCF028552527008616A3 /* storm2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = storm2.mp4; sourceTree = "<group>"; };
+		CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildFriendPlaylist.swift; sourceTree = "<group>"; };
 		CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3_BreathInviteView.swift; sourceTree = "<group>"; };
 		CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBackgroundView.swift; sourceTree = "<group>"; };
 		CF3802D628456C83005181E4 /* FG_Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Team.swift; sourceTree = "<group>"; };
@@ -550,8 +552,8 @@
 		7AD8DF0A27F696F000D9F0E1 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				CF785690284EF6D700B31803 /* PlanetMain */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
@@ -771,6 +773,7 @@
 			isa = PBXGroup;
 			children = (
 				CF785691284F3CE900B31803 /* HideoutsPlayList.swift */,
+				CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */,
 			);
 			path = PlayLists;
 			sourceTree = "<group>";
@@ -1235,6 +1238,7 @@
 				7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */,
 				CFAE7349283C748C00015FD2 /* UserBetaTesting.swift in Sources */,
 				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
+				CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
 				7AC71DA827F3D803008D191B /* Helper.swift in Sources */,
