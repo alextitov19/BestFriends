@@ -94,8 +94,11 @@ struct PlanetActionsView: View {
 //                                    .foregroundColor(.white)
 //                                    .font(.system(size: 15, weight: .bold))
 //                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                
-                                Text("Hideouts")
+                                Text("My")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 16, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                Text("Room")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -118,12 +121,12 @@ struct PlanetActionsView: View {
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             
                             VStack {
-                                Text("FriendGroup")
-                                    .foregroundColor(.white)
+//                                Text("FriendGrou")
 //                                    .foregroundColor(.white)
-                                    .font(.system(size: 14, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("Drama")
+////                                    .foregroundColor(.white)
+//                                    .font(.system(size: 14, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                               Text("DramaMode")
                                     .foregroundColor(.white)
 //                                    .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
@@ -168,7 +171,12 @@ struct PlanetActionsView: View {
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                             
                             VStack {
-                                Text("Settings")
+                                Text("My")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 16, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                
+                                Text("Planet")
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -191,9 +199,10 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-                                    Text("help make")
+                                    Text("(help make)")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 14, weight: .bold))
+                                    .font(.system(size: 11, weight: .bold))
+                                    .italic()
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
                                Text("BestFriends")
@@ -235,6 +244,11 @@ struct PlanetActionsView: View {
 //                                    .font(.system(size: 11, weight: .bold))
 //                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
+                                
+                                Text("My")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 16, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 Text("Atmosphere")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
@@ -264,11 +278,12 @@ struct PlanetActionsView: View {
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                Text("dreams \nwith \nfriends")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 11, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
+                                Text("(in August)")
+                                .foregroundColor(.white)
+                                .font(.system(size: 11, weight: .bold))
+                                .italic()
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+
                             }
                         }
                     })

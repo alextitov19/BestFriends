@@ -44,12 +44,12 @@ struct HideoutsView: View {
             .offset(x: showItems ? 100 : 0, y: showItems ? -165: 0)
            
               NavigationLink(destination: PhotoPopVideo(), label: {
-                  HideoutsViewCircle (color: .orange, friendName: "shake \nphone")
+                  HideoutsViewCircle (color: .orange, friendName: "PhotoPoP")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
             
 
-            NavigationLink(destination: HideoutsPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "BestFriends \nPlaylist")
+            NavigationLink(destination: HideoutsPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "Playlist")
             })
             .offset(x: showItems ? -60 : 0, y: showItems ? -145: 0)
             
@@ -69,26 +69,26 @@ Spacer()
                
             Spacer ()
                    .frame(height: 100)
-               Text("safe")
-                             .font(.system(size: 15))
-                             .foregroundColor(.white)
-                             .fontWeight(.medium)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-               Text("soooothing")
-                             .font(.system(size: 15))
-                             .foregroundColor(.white)
-                             .fontWeight(.medium)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-               
-              Text("HIDEOUTS")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
+//               Text("safe")
+//                             .font(.system(size: 15))
+//                             .foregroundColor(.white)
+//                             .fontWeight(.medium)
+//                             .multilineTextAlignment(.center)
+//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//               Text("soooothing")
+//                             .font(.system(size: 15))
+//                             .foregroundColor(.white)
+//                             .fontWeight(.medium)
+//                             .multilineTextAlignment(.center)
+//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//               
+//              Text("HIDEOUTS")
+//                            .font(.system(size: 20))
+//                            .foregroundColor(.white)
+//                            .fontWeight(.medium)
+//                            .multilineTextAlignment(.center)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    
                 
                     
                 }

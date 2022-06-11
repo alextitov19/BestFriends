@@ -35,7 +35,7 @@ struct InviteView: View {
                     .font(.system(size: 27, weight: .light))
                 
                 
-                Text("1) Ask your friend to download BestFriends \n2) Enter their email and tap [Invite]")
+                Text("1)  First - ask friend to download BestFriends \n2) Then - enter their email and tap [Invite]")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()

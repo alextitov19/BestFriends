@@ -112,9 +112,9 @@ struct OurMission: View {
                         .foregroundColor(.gray)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
                     
-                    Text("BestFriends")
+                    Text("My Room")
                         .font(.system(size: 25))
-                        .italic()
+                        
                         .foregroundColor(.purple)
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)

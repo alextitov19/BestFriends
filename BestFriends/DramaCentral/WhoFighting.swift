@@ -28,7 +28,7 @@ struct WhoFighting: View {
                 .scaledToFill()
           
            
-            AdPlayerView(name: "cloud")
+            AdPlayerView(name: "storm2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 //            AdPlayerView(name: "backgroundAnimation")
@@ -73,8 +73,8 @@ struct WhoFighting: View {
             Spacer ()
                    .frame(height: 100)
                 
-              Text("BlueMode")
-                            .font(.system(size: 43))
+              Text("DramaMode")
+                            .font(.system(size: 37))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
