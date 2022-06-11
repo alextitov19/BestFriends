@@ -60,7 +60,7 @@ struct VirtualHug: View {
             
           
             
-            Text("Cancel Audio")
+            Text("Mute")
                 .fontWeight(.thin)
                 .frame(width: 175, height: 40)
                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
