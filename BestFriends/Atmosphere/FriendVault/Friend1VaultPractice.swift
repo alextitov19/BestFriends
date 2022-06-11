@@ -44,7 +44,7 @@ struct Friend1VaultPractice: View {
             .ignoresSafeArea()
             .scaledToFill()
 
-        AdPlayerView(name: "Skateboard")
+        AdPlayerView(name: "blueRoad")
             .ignoresSafeArea()
             .blendMode(.screen)
     
@@ -254,7 +254,8 @@ struct Friend1VaultPractice: View {
                             .onTapGesture {
                                 RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
                             }
-                        
+                       
+                        ZStack {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(.pink)
@@ -262,6 +263,14 @@ struct Friend1VaultPractice: View {
                             .blur(radius: 2)
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
                             .padding(.horizontal, 30)
+                            Text("Send PlayList")
+                                .font(.system(size: 13))
+                                .frame(width:50, height: 30)
+                            //                    .fontWeight(.light)
+                            //                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                        }
                         
                         //                    Image("Fireworks")
                         //                        .resizable()
@@ -448,7 +457,7 @@ struct Friend1VaultPractice: View {
                             .frame(height: 10)
                     }
                     
-                    Text("Send virtual Hug or Heart")
+                    Text("Send Hug or PlayList")
                         .font(.system(size: 20))
                         .frame(width:325, height: 30)
                     //                    .fontWeight(.light)
@@ -458,7 +467,7 @@ struct Friend1VaultPractice: View {
                     HStack {
                         Image("Hug")
                             .resizable()
-                            .frame(width: 50, height: 50)
+                            .frame(width: 70, height: 70)
                             .scaledToFit()
                             .onTapGesture {
                                 RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
@@ -467,7 +476,7 @@ struct Friend1VaultPractice: View {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(.pink)
-                            .frame(width: 40, height: 40)
+                            .frame(width: 70, height: 70)
                             .blur(radius: 2)
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
                             .padding(.horizontal, 30)

@@ -450,11 +450,10 @@
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
-				CF2DBCF328552E15008616A3 /* My ROOM */,
 				CFD046992837D99300BF0B02 /* HIDEOUTS */,
-				D0CC1A02283EE31900E7461F /* Horizons */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
 				CFE1946A2812A9E300ED5718 /* Streaks */,
+				D0CC1A02283EE31900E7461F /* Horizons */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD12CC52819436F00AB2539 /* OurStory */,
 				CFE1946728129CAC00ED5718 /* RobPracticePages */,
@@ -628,13 +627,6 @@
 				CF381A582829205800B3719E /* OurMission.swift */,
 			);
 			path = "My Planet";
-			sourceTree = "<group>";
-		};
-		CF2DBCF328552E15008616A3 /* My ROOM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "My ROOM";
 			sourceTree = "<group>";
 		};
 		CF381A4E2826883A00B3719E /* Friend Group Fighting */ = {
@@ -855,6 +847,7 @@
 			children = (
 				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */,
+				CF3B65F128075F3B0003A714 /* FriendVault */,
 			);
 			path = Atmosphere;
 			sourceTree = "<group>";
@@ -947,7 +940,6 @@
 			children = (
 				D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */,
 				D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */,
-				CF3B65F128075F3B0003A714 /* FriendVault */,
 			);
 			path = Horizons;
 			sourceTree = "<group>";
