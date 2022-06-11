@@ -99,12 +99,12 @@ struct VirtualHug: View {
   func complexSuccess() {
       guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
 
-      let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 3)
-      let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 1)
-      let decayTime = CHHapticEventParameter(parameterID: .decayTime, value: 2)
+      let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 5)
+      let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 5)
+      let decayTime = CHHapticEventParameter(parameterID: .decayTime, value: 1)
       
       
-      let event = CHHapticEvent(eventType: .hapticContinuous, parameters: [intensity, sharpness, decayTime], relativeTime: 0, duration: 4)
+      let event = CHHapticEvent(eventType: .hapticContinuous, parameters: [intensity, sharpness, decayTime], relativeTime: 1, duration: 4)
 
       do {
           let pattern = try CHHapticPattern(events: [event], parameters: [])
