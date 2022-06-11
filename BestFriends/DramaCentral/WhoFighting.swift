@@ -63,7 +63,7 @@ struct WhoFighting: View {
         Image(systemName: "triangle.fill")
                     .resizable()
                     .foregroundColor(.gray)
-                    .frame(width: 260, height: 260)
+                    .frame(width: 200, height: 200)
 //                    .blur(radius: 2)
 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
@@ -73,7 +73,7 @@ struct WhoFighting: View {
             Spacer ()
                    .frame(height: 100)
                 
-              Text("DramaMode")
+              Text("")
                             .font(.system(size: 37))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
