@@ -94,7 +94,7 @@ struct HomeView: View {
                                     .scaledToFit()
                                     .frame(width: 125, height: 125)
                                     .onTapGesture(perform: mainPlanetTapped)
-                                    .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
+                                    .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 10)
                                     .padding()
                                     .onAppear(perform: {print("Atm mood: ", homeData!.atmosphere.mood)})
                                 

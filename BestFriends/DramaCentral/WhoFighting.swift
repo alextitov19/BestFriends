@@ -42,32 +42,33 @@ struct WhoFighting: View {
         ZStack {
 
             NavigationLink(destination: IntroBluemodeFriend(), label: {
-                WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nBFF")
+                WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith \nBFF")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
              
      
            
               NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .orange, friendName: "OMG, \nmy Parents \nare Fighting \nAGAIN!")
+                  WhoFightingCircle (color: .orange, friendName: "OMG, \nparents \nfighting \nAGAIN!")
             })
-            .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
+            .offset(x: showItems ? 75 : 0, y: showItems ? 130: 0)
             
 
-            NavigationLink(destination: FG_VideoCall(), label: { WhoFightingCircle (color: .blue, friendName: "Drama \nin my \nFriendGroup")
+            NavigationLink(destination: FG_VideoCall(), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
             })
-            .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
+            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
             
 
 
         Image(systemName: "triangle.fill")
                     .resizable()
                     .foregroundColor(.gray)
-                    .frame(width: 200, height: 200)
+                    .frame(width: 170, height: 170)
 //                    .blur(radius: 2)
 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
-
+                    .opacity(0.65)
+            
            VStack {
                
             Spacer ()
@@ -109,9 +110,10 @@ struct WhoFightingCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 150, height: 150)
+        .frame(width: 100, height: 100)
         .clipShape(Circle())
         .foregroundColor(color)
+        .opacity(0.7)
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
         
         Text(friendName)
