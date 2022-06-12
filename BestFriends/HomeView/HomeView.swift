@@ -200,7 +200,7 @@ struct HomeView: View {
                         })
                         NavigationLink(destination: WhoFighting(),
                                        label: {
-                            Text("Invited to DramaMode")
+                            Text("Friend in DramaMode")
                                 .fontWeight(.thin)
                                 .frame(width: 190, height: 25)
                                 .foregroundColor(.white)

@@ -164,6 +164,7 @@
 		CFDB14F828559EE600155CEE /* FGdrama.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB14F728559EE600155CEE /* FGdrama.mp4 */; };
 		CFDB14FA2855A04800155CEE /* FGdrama2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB14F92855A04800155CEE /* FGdrama2.mp4 */; };
 		CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */; };
+		CFDB14FE2855ADE900155CEE /* FeetShowing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB14FD2855ADE900155CEE /* FeetShowing.mp4 */; };
 		CFE194642812973600ED5718 /* MasterFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194632812973600ED5718 /* MasterFriendVault.swift */; };
 		CFE194662812994B00ED5718 /* SendNiceChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194652812994B00ED5718 /* SendNiceChat.swift */; };
 		CFE1946928129D9600ED5718 /* FriendQualities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946828129D9600ED5718 /* FriendQualities.swift */; };
@@ -333,6 +334,7 @@
 		CFDB14F728559EE600155CEE /* FGdrama.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FGdrama.mp4; sourceTree = "<group>"; };
 		CFDB14F92855A04800155CEE /* FGdrama2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FGdrama2.mp4; sourceTree = "<group>"; };
 		CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dramaLights.mp4; sourceTree = "<group>"; };
+		CFDB14FD2855ADE900155CEE /* FeetShowing.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FeetShowing.mp4; sourceTree = "<group>"; };
 		CFE194632812973600ED5718 /* MasterFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFriendVault.swift; sourceTree = "<group>"; };
 		CFE194652812994B00ED5718 /* SendNiceChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendNiceChat.swift; sourceTree = "<group>"; };
 		CFE1946828129D9600ED5718 /* FriendQualities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendQualities.swift; sourceTree = "<group>"; };
@@ -730,6 +732,7 @@
 				CF785694284F3DB900B31803 /* Playlist.mp4 */,
 				7A2C2157280509DA009362CF /* green.mp4 */,
 				CFDB14ED2855983700155CEE /* girlYellow.mp4 */,
+				CFDB14FD2855ADE900155CEE /* FeetShowing.mp4 */,
 				CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */,
 				CFDB14F728559EE600155CEE /* FGdrama.mp4 */,
 				CFDB14F92855A04800155CEE /* FGdrama2.mp4 */,
@@ -1035,6 +1038,7 @@
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				7A2C2159280509DA009362CF /* cloud.mp4 in Resources */,
+				CFDB14FE2855ADE900155CEE /* FeetShowing.mp4 in Resources */,
 				7A78232D26B2419600CA76FC /* blender.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
 				7A78232F26B2419600CA76FC /* phone.mp4 in Resources */,
