@@ -239,7 +239,7 @@ struct Friend1VaultPractice: View {
                             .frame(height: 10)
                     }
                     
-                    Text("Send virtual Hug or Heart")
+                    Text("Send Hug or Heart")
                         .font(.system(size: 20))
                         .frame(width:325, height: 30)
                     //                    .fontWeight(.light)
@@ -457,7 +457,7 @@ struct Friend1VaultPractice: View {
                             .frame(height: 10)
                     }
                     
-                    Text("Send Hug or PlayList")
+                    Text("Send Hug or Song")
                         .font(.system(size: 20))
                         .frame(width:325, height: 30)
                     //                    .fontWeight(.light)
@@ -473,7 +473,7 @@ struct Friend1VaultPractice: View {
                                 RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
                             }
                         
-                        Image(systemName: "heart.fill")
+                        Image("note")
                             .resizable()
                             .foregroundColor(.pink)
                             .frame(width: 70, height: 70)
