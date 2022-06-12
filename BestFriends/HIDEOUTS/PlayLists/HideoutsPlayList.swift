@@ -24,7 +24,7 @@ struct HideoutsPlaylist: View {
                 .scaledToFill()
 
            
-            AdPlayerView(name: "cloud")
+            AdPlayerView(name: "girlsLongboard")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             

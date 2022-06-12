@@ -29,7 +29,7 @@ struct FG_VideoCall: View {
                 .scaledToFill()
           
            
-            AdPlayerView(name: "green")
+            AdPlayerView(name: "dramaLights")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 //            AdPlayerView(name: "backgroundAnimation")
