@@ -55,7 +55,7 @@ struct FG_VideoCall: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: EmptyView(), label: { FG_VideoCallCircle (color: .blue, friendName: "Hurt \nFeelings")
+            NavigationLink(destination: EmptyView(), label: { FG_VideoCallCircle (color: .blue, friendName: "Friend \nHurt my \nFeelings")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
@@ -72,7 +72,7 @@ struct FG_VideoCall: View {
              
             
                NavigationLink(destination: SetBoundries(), label: {
-                   FG_VideoCallCircle (color: .white, friendName: "Set \nBoundries")
+                   FG_VideoCallCircle (color: .white, friendName: "Apologies")
              })
              .offset(x: showItems ? -100 : 0, y: showItems ? 90: 0)
              
