@@ -233,12 +233,10 @@ struct Friend1VaultPractice: View {
                         .frame(height: 10)
                 }
                 
-                Text("Send Hug / Songs")
-                    .font(.system(size: 20))
+                Text("Send Hug / Playlist")
+                    .font(.system(size: 35))
                     .frame(width:325, height: 30)
-                //                    .fontWeight(.light)
-                //                .multilineTextAlignment(.center)
-                    .foregroundColor(Color.purple)
+                    .foregroundColor(Color.white)
                 
                 HStack {
                     if !hugTapped {
@@ -255,7 +253,7 @@ struct Friend1VaultPractice: View {
                     
                    
                         if !noteTapped {
-                        Image("note")
+                        Image("bell")
                             .resizable()
                             .foregroundColor(.pink)
                             .frame(width: 40, height: 40)
