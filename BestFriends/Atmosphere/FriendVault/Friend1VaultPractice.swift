@@ -11,7 +11,7 @@ import AVKit
 
 struct Friend1VaultPractice: View {
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     let user: User
     let friend: User
     let groups: [Group]
@@ -27,245 +27,223 @@ struct Friend1VaultPractice: View {
         self.friend = friend
         self.groups = groups
         self.friendAtmosphere = friendAtmosphere
-            UITextView.appearance().backgroundColor = .clear
-        }
+        UITextView.appearance().backgroundColor = .clear
+    }
     
     var body: some View {
         ZStack {
-            ColorManager.purple2
+            Image("purpleBackground")
+                .resizable()
                 .ignoresSafeArea()
+                .scaledToFill()
                 .onAppear(perform: loadData)
-
-        Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-            .ignoresSafeArea()
-
-        Image("purpleBackground")
-            .resizable()
-            .ignoresSafeArea()
-            .scaledToFill()
-
-        AdPlayerView(name: "girlYellow")
-            .ignoresSafeArea()
-            .blendMode(.screen)
-    
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            TabView{
-                VStack {
-                    //MARK: code to get friends name at top of page
-                    HStack {
-                        Spacer()
-                            .frame(width: 35)
-                        
-                        Text(friend.firstName + " " + friend.lastName)
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                        
-                        Spacer()
-                    }
+            VStack {
+                //MARK: code to get friends name at top of page
+                HStack {
+                    Spacer()
+                        .frame(width: 35)
                     
-                    //TODO: Auto import message from [AtmosphereMain2] page for the below rectangle
-                    if mostRecentMoodLog != nil {
-                        ZStack {
-                            if mostRecentMoodLog!.mood < 4 {
-                                ColorManager .pmbc_blue
-                                    .cornerRadius(25)
-                            } else if mostRecentMoodLog!.mood == 4 {
-//                                Color(.green)
-                                ColorManager .pmbc_green
-                                    .cornerRadius(25)
-                            } else if mostRecentMoodLog!.mood == 5 {
-                                Color(.orange)
-//                                ColorManager .pmbc_orange
-                                    .cornerRadius(25)
-                            } else {
-                                Color(.yellow)
-                               
-                                    .cornerRadius(25)
-                            }
-                            
-                            VStack{
-                                //MARK: Date and time
-                                HStack {
-                                    Text(getDateString(date: Date(timeIntervalSince1970: TimeInterval(mostRecentMoodLog!.createdOn))))
-                                    
-    //                                Spacer()
-                                }
-                                .padding()
-                                
-                                //MARK: Mood Log sumary
-                                HStack {
-                                    Text(mostRecentMoodLog!.summary)
-                                    
-                                    Spacer()
-                                }
-                                .padding(.horizontal)
-                            }
-                        }
-                        .frame(width: 300, height: 120)
-                        .opacity(0.85)
-                        .padding(.vertical)
-                    }
+                    Text(friend.firstName + " " + friend.lastName)
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
                     
                     Spacer()
-                        .frame(height: 7)
+                }
+                
+                //TODO: Auto import message from [AtmosphereMain2] page for the below rectangle
+                if mostRecentMoodLog != nil {
+                    ZStack {
+                        if mostRecentMoodLog!.mood < 4 {
+                            ColorManager .pmbc_blue
+                                .cornerRadius(25)
+                        } else if mostRecentMoodLog!.mood == 4 {
+                            //                                Color(.green)
+                            ColorManager .pmbc_green
+                                .cornerRadius(25)
+                        } else if mostRecentMoodLog!.mood == 5 {
+                            Color(.orange)
+                            //                                ColorManager .pmbc_orange
+                                .cornerRadius(25)
+                        } else {
+                            Color(.yellow)
+                            
+                                .cornerRadius(25)
+                        }
+                        
+                        VStack{
+                            //MARK: Date and time
+                            HStack {
+                                Text(getDateString(date: Date(timeIntervalSince1970: TimeInterval(mostRecentMoodLog!.createdOn))))
+                                
+                                //                                Spacer()
+                            }
+                            .padding()
+                            
+                            //MARK: Mood Log sumary
+                            HStack {
+                                Text(mostRecentMoodLog!.summary)
+                                
+                                Spacer()
+                            }
+                            .padding(.horizontal)
+                        }
+                    }
+                    .frame(width: 300, height: 120)
+                    .opacity(0.85)
+                    .padding(.vertical)
+                }
+                
+                Spacer()
+                    .frame(height: 7)
+                
+                
+                
+                
+                
+                //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
+                TextEditor(text: $customMessage)
+                    .font(.system(size: 18))
+                //                        .fontWeight(.thin)
+                    .foregroundColor(ColorManager .darkGrey)
+                    .padding(.horizontal, 50)
+                    .frame(width:310, height: 75)
+                    .background(ColorManager.purple3)
+                    .opacity(0.85)
+                    .cornerRadius(15)
+                    .onReceive(Just(customMessage)) { _ in limitText(65) }
+                
+                
+                VStack {
+                    Button(action: {
+                        sendMessage()
+                    }, label: {
+                        Text("Send Custom Message to Chat")
+                            .fontWeight(.thin)
+                            .frame(width: 310, height: 35)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 22))
+                        //                                .opacity(0.5)
+                            .background(ColorManager.purple3)
+                            .opacity(0.7)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    .padding()
                     
-                    
-                    
-                    
-                    
-                    //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
-                    TextEditor(text: $customMessage)
+                    Text("Respond instantly via Push Notification")
                         .font(.system(size: 18))
-//                        .fontWeight(.thin)
-                        .foregroundColor(ColorManager .darkGrey)
-                        .padding(.horizontal, 50)
-                        .frame(width:310, height: 75)
-                        .background(ColorManager.purple3)
-                        .opacity(0.85)
-                        .cornerRadius(15)
-                        .onReceive(Just(customMessage)) { _ in limitText(65) }
+                        .fontWeight(.medium)
+                        .frame(width:325, height: 30)
+                        .foregroundColor(.white)
+                    
+                    Button(action: {
+                        defaultMessageButtonTapped(defaultMessage: "Are you okay?")
+                        
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you okay?", APNToken: friend.APNToken ?? "")
+                    }, label: {
+                        Text("Are you okay?")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 30)
+                            .foregroundColor(.purple)
+                            .font(.system(size: 20))
+                            .background(colorChangeTap == "Are you okay?" ? ColorManager.grey2 : ColorManager.grey1)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    
+                    
+                    Button(action: {
+                        defaultMessageButtonTapped(defaultMessage: "Do we need to talk?")
+                        
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Do we need to talk?", APNToken: friend.APNToken ?? "")
+                    }, label: {
+                        Text("Do we need to talk?")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 30)
+                            .foregroundColor(.purple)
+                            .font(.system(size: 20))
+                            .background(colorChangeTap == "Do we need to talk?" ? ColorManager.grey2 : ColorManager.grey1)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                    
+                    
+                    Button(action: {
+                        defaultMessageButtonTapped(defaultMessage: "C")
+                        
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulation, you did it!", APNToken: friend.APNToken ?? "")
+                    }, label: {
+                        Text("Congradulations, you did it!")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 30)
+                            .foregroundColor(.purple)
+                            .font(.system(size: 20))
+                            .background(colorChangeTap == "C" ? ColorManager.grey2 : ColorManager.grey1)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
                     
                     
                     VStack {
-                        Button(action: {
-                            sendMessage()
-                        }, label: {
-                            Text("Send Custom Message to Chat")
-                                .fontWeight(.thin)
-                                .frame(width: 310, height: 35)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 22))
-//                                .opacity(0.5)
-                                .background(ColorManager.purple3)
-                                .opacity(0.7)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                        .padding()
-                        
-                        Text("Respond instantly via Push Notification")
-                            .font(.system(size: 18))
-                            .fontWeight(.medium)
-                            .frame(width:325, height: 30)
-                            .foregroundColor(.white)
-                        
-                        Button(action: {
-                            defaultMessageButtonTapped(defaultMessage: "Are you okay?")
-                            
-                            RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you okay?", APNToken: friend.APNToken ?? "")
-                        }, label: {
-                            Text("Are you okay?")
-                                .fontWeight(.thin)
-                                .frame(width: 260, height: 30)
-                               .foregroundColor(.purple)
-                                .font(.system(size: 20))
-                                .background(colorChangeTap == "Are you okay?" ? ColorManager.grey2 : ColorManager.grey1)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                        
-                        
-                        Button(action: {
-                            defaultMessageButtonTapped(defaultMessage: "Do we need to talk?")
-                            
-                            RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Do we need to talk?", APNToken: friend.APNToken ?? "")
-                        }, label: {
-                            Text("Do we need to talk?")
-                                .fontWeight(.thin)
-                                .frame(width: 260, height: 30)
-                                .foregroundColor(.purple)
-                                .font(.system(size: 20))
-                                .background(colorChangeTap == "Do we need to talk?" ? ColorManager.grey2 : ColorManager.grey1)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                        
-                        
-                        Button(action: {
-                            defaultMessageButtonTapped(defaultMessage: "C")
-                            
-                            RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulation, you did it!", APNToken: friend.APNToken ?? "")
-                        }, label: {
-                            Text("Congradulations, you did it!")
-                                .fontWeight(.thin)
-                                .frame(width: 260, height: 30)
-                                .foregroundColor(.purple)
-                                .font(.system(size: 20))
-                                .background(colorChangeTap == "C" ? ColorManager.grey2 : ColorManager.grey1)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                        
-                        
-                        VStack {
-                            Spacer()
-                                .frame(height: 10)
-                        }
-                        Button(action: {
-                            defaultMessageButtonTapped(defaultMessage: "D")
-                            
-                            RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Good Luck - you got this!", APNToken: friend.APNToken ?? "")
-                        }, label: {
-                            Text("Good luck, you got this!")
-                                .fontWeight(.thin)
-                                .frame(width: 260, height: 30)
-                                .foregroundColor(.purple)
-                                .font(.system(size: 20))
-                                .background(colorChangeTap == "D" ? ColorManager.grey2 : ColorManager.grey1)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                .opacity(0.8)
-                        })
-                        
-                        Button(action: {
-                            defaultMessageButtonTapped(defaultMessage: "E")
-                            
-                            RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "We will figure this out", APNToken: friend.APNToken ?? "")
-                        }, label: {
-                            Text("We will figure this out")
-                                .fontWeight(.thin)
-                                .frame(width: 260, height: 30)
-                                .foregroundColor(.purple)
-                                .font(.system(size: 20))
-                                .background(colorChangeTap == "E" ? ColorManager.grey2 : ColorManager.grey1)
-                                .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)                    })
-                        
-                        
-                        
-                        
-                        
-                        Spacer ()
+                        Spacer()
                             .frame(height: 10)
                     }
+                    Button(action: {
+                        defaultMessageButtonTapped(defaultMessage: "D")
+                        
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Good Luck - you got this!", APNToken: friend.APNToken ?? "")
+                    }, label: {
+                        Text("Good luck, you got this!")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 30)
+                            .foregroundColor(.purple)
+                            .font(.system(size: 20))
+                            .background(colorChangeTap == "D" ? ColorManager.grey2 : ColorManager.grey1)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        //                                .opacity(0.8)
+                    })
                     
-                    Text("Send Hug or Heart")
-                        .font(.system(size: 20))
-                        .frame(width:325, height: 30)
-                    //                    .fontWeight(.light)
-                    //                .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
+                    Button(action: {
+                        defaultMessageButtonTapped(defaultMessage: "E")
+                        
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "We will figure this out", APNToken: friend.APNToken ?? "")
+                    }, label: {
+                        Text("We will figure this out")
+                            .fontWeight(.thin)
+                            .frame(width: 260, height: 30)
+                            .foregroundColor(.purple)
+                            .font(.system(size: 20))
+                            .background(colorChangeTap == "E" ? ColorManager.grey2 : ColorManager.grey1)
+                            .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)                    })
                     
-                    HStack {
-                        Image("Hug")
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                            .scaledToFit()
-                            .onTapGesture {
-                                RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
-                            }
-                       
-                        ZStack {
+                    
+                    
+                    
+                    
+                    Spacer ()
+                        .frame(height: 10)
+                }
+                
+                Text("Send Hug or Heart")
+                    .font(.system(size: 20))
+                    .frame(width:325, height: 30)
+                //                    .fontWeight(.light)
+                //                .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                
+                HStack {
+                    Image("Hug")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                        .scaledToFit()
+                        .onTapGesture {
+                            RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
+                        }
+                    
+                    ZStack {
                         Image(systemName: "heart.fill")
                             .resizable()
                             .foregroundColor(.pink)
@@ -273,28 +251,27 @@ struct Friend1VaultPractice: View {
                             .blur(radius: 2)
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
                             .padding(.horizontal, 30)
-                            Text("Send PlayList")
-                                .font(.system(size: 13))
-                                .frame(width:50, height: 30)
-                            //                    .fontWeight(.light)
-                            //                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            
-                        }
+                        Text("Send PlayList")
+                            .font(.system(size: 13))
+                            .frame(width:50, height: 30)
+                        //                    .fontWeight(.light)
+                        //                .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
                         
-                        //                    Image("Fireworks")
-                        //                        .resizable()
-                        //                        .frame(width: 45, height: 45)
-                        //                        .scaledToFit()
-                        //                        .colorInvert()
                     }
-                    .padding(.bottom, 50)
+                    
+                    //                    Image("Fireworks")
+                    //                        .resizable()
+                    //                        .frame(width: 45, height: 45)
+                    //                        .scaledToFit()
+                    //                        .colorInvert()
                 }
+                .padding(.bottom, 50)
             }
-            
-            
-            
         }
+        
+        
+        
         
     }
     
