@@ -240,10 +240,11 @@ struct Friend1VaultPractice: View {
                     .foregroundColor(Color.white)
                 
                 HStack {
-                    Image("Hug")
+                    Image("Hug4")
                         .resizable()
                         .frame(width: 50, height: 50)
                         .scaledToFit()
+//                        .colorInvert()
                         .onTapGesture {
                             RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
                         }
