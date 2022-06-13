@@ -19,7 +19,7 @@ struct Friend1VaultPractice: View {
     
     @State private var customMessage = "Custom Message"
     @State private var colorChangeTap: String = ""
-    
+    @State private var hugTapped = false
     @State private var mostRecentMoodLog: MoodLog?
     
     init(user: User, friend: User, groups: [Group], friendAtmosphere: Atmosphere) {
@@ -240,6 +240,7 @@ struct Friend1VaultPractice: View {
                     .foregroundColor(Color.white)
                 
                 HStack {
+                    if !hugTapped {
                     Image("Hug4")
                         .resizable()
                         .frame(width: 50, height: 50)
@@ -247,7 +248,9 @@ struct Friend1VaultPractice: View {
 //                        .colorInvert()
                         .onTapGesture {
                             RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
+                            hugTapped.toggle()
                         }
+                    }
                     
                     ZStack {
                         Image(systemName: "heart.fill")
