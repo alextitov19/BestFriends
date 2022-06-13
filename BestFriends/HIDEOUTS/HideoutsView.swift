@@ -44,12 +44,12 @@ struct HideoutsView: View {
             .offset(x: showItems ? 100 : 0, y: showItems ? -165: 0)
            
             NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
-                  HideoutsViewCircle (color: .orange, friendName: "PhotoPoP")
+                  HideoutsViewCircle (color: .orange, friendName: "Shake \nPhone")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
             
 
-            NavigationLink(destination: HideoutsPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "Playlists")
+            NavigationLink(destination: EmptyView(), label: { HideoutsViewCircle (color: .gray, friendName: "Playlists")
             })
             .offset(x: showItems ? -60 : 0, y: showItems ? -145: 0)
             
@@ -75,14 +75,14 @@ Spacer()
                
             Spacer ()
                    .frame(height: 50)
-               
-//               Text("alone")
-//                             .font(.system(size: 15))
-//                             .foregroundColor(.white)
-//                             .fontWeight(.medium)
-//                             .multilineTextAlignment(.center)
-//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-               Text("Friends'")
+               Text("My")
+                             .font(.system(size: 22))
+                             .foregroundColor(.white)
+                             .fontWeight(.medium)
+                             .multilineTextAlignment(.center)
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+
+               Text("Friend's")
                              .font(.system(size: 22))
                              .foregroundColor(.white)
                              .fontWeight(.medium)
