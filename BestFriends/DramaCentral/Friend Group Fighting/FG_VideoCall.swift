@@ -43,7 +43,7 @@ struct FG_VideoCall: View {
         ZStack {
 
             NavigationLink(destination: IntroBluemodeFriend(), label: {
-                FG_VideoCallCircle (color: .pink, friendName: "Empty")
+                FG_VideoCallCircle (color: .pink, friendName: "Hugh Fight \nwith BFF")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
              
@@ -55,7 +55,7 @@ struct FG_VideoCall: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: FG_Team(), label: { FG_VideoCallCircle (color: .blue, friendName: "Being \nAccountable")
+            NavigationLink(destination: FG_Team(), label: { FG_VideoCallCircle (color: .blue, friendName: "Hurt \nFeelings")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
@@ -102,7 +102,7 @@ struct FG_VideoCall: View {
                    .opacity(0.9)
 
            VStack {
-              Text("FriendGroup")
+              Text("FriendGroups")
                             .font(.system(size: 20))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)

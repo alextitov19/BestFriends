@@ -129,7 +129,7 @@ struct PlanetActionsView: View {
 ////                                    .foregroundColor(.white)
 //                                    .font(.system(size: 14, weight: .bold))
 //                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                               Text("Drama \nMode")
+                               Text("Fights \n & \nDrama")
                                     .foregroundColor(.white)
 //                                    .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
