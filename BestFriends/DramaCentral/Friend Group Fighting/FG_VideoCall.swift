@@ -66,7 +66,7 @@ struct FG_VideoCall: View {
              
             
                NavigationLink(destination: FG_Team(), label: {
-                   FG_VideoCallCircle (color: .orange, friendName: "Friends \nAre ...")
+                   FG_VideoCallCircle (color: .orange, friendName: "True \nFriends")
              })
              .offset(x: showItems ? -50 : 0, y: showItems ? 250: 0)
              

@@ -16,6 +16,9 @@ struct FG_Team: View {
     
     @EnvironmentObject var sessionManager: SessionManager
 
+
+//    let friend: User
+    
     var body: some View {
         ZStack {
             
@@ -32,50 +35,72 @@ struct FG_Team: View {
                   VStack {
                       
                       
-                        Text("just a thought from our")
+                        Text("True friends are there in")
                             .font(.system(size: 30))
                             .italic()
-                            .fontWeight(.light)
+                            .fontWeight(.ultraLight)
                             .foregroundColor(Color.blue)
                         
-                        Text("teens")
+                        Text("hard times")
                             .font(.system(size: 50))
                             .italic()
                             .fontWeight(.light)
                             .foregroundColor(Color.blue)
-//                      Text("Being a Friend")
-//                          .font(.system(size: 40))
-//                          .foregroundColor(.white)
-//                          .fontWeight(.ultraLight)
-//                          .multilineTextAlignment(.center)
-//
-//                        Text("coming together")
-//                            .font(.system(size: 50))
-//                            .foregroundColor(.white)
-//                            .fontWeight(.ultraLight)
-//                            .multilineTextAlignment(.center)
-//
-//                      Text("as a TEAM")
-//                          .font(.system(size: 60))
-//                          .foregroundColor(.white)
-//                          .fontWeight(.ultraLight)
-//                          .multilineTextAlignment(.center)
-//
-                        Spacer()
-                            .frame(height: 50)
+                      
+                      Spacer()
+                            .frame(height: 40)
                         
-                      Text("- Friends are always there \n- have each other's back \n- trustworthy \n- make each other feel save!")
+                    
+                      
+                      Spacer()
+                          .frame(height: 20)
+                      
+                      Text("Maybe everyone's watching")
                           .font(.system(size: 24))
                           .fontWeight(.light)
                           .foregroundColor(Color.white)
-           
+                      Spacer()
+                          .frame(height: 20)
+                      
+                      
+                      Text("Maybe everyone's talking")
+                          .font(.system(size: 24))
+                          .fontWeight(.light)
+                          .foregroundColor(Color.white)
+                      Spacer()
+                          .frame(height: 20)
+                      
+                      Text("Maybe you don't know what to do?")
+                          .font(.system(size: 24))
+                          .fontWeight(.light)
+                          .foregroundColor(Color.white)
+                
+            VStack {
+                   
+                Spacer()
+                          .frame(height: 35)
+                
+                      Text("Send a Virtual Hug")
+                          .font(.system(size: 40))
+                          .italic()
+                          .fontWeight(.ultraLight)
+                          .foregroundColor(Color.blue)
+
+     
                       Spacer()
                           .frame(height: 60)
-            VStack {
-                     
+         
+                Image("Hug4")
+                    .resizable()
+                    .frame(width: 70, height: 70)
+                
+                    .scaledToFit()
+                    .onTapGesture {
+//                        RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
+//                   
                    
                
-            VStack {
+//            VStack {
 //                Spacer()
 //                    .frame(height: 40)
 //                    
@@ -102,12 +127,12 @@ struct FG_Team: View {
     }
 }
 
-
-
-struct FG_Team_Previews : PreviewProvider {
-    static var previews: some View {
-        FG_Team()
-    }
-}
+//
+//
+//struct FG_Team_Previews : PreviewProvider {
+//    static var previews: some View {
+//        FG_Team()
+//    }
+//}
 
 
