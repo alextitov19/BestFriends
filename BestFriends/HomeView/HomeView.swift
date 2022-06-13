@@ -197,6 +197,7 @@ struct HomeView: View {
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .opacity(0.8)
+                                .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
                         })
                         NavigationLink(destination: WhoFighting(),
                                        label: {
