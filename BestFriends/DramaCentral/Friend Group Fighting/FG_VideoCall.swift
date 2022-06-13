@@ -50,12 +50,12 @@ struct FG_VideoCall: View {
      
            
               NavigationLink(destination: ParentsFighting(), label: {
-                  FG_VideoCallCircle (color: .green, friendName: "Start \nVideo \nCall")
+                  FG_VideoCallCircle (color: .green, friendName: "Schedule \nFaceTime \nCall")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: FG_Team(), label: { FG_VideoCallCircle (color: .blue, friendName: "Hurt \nFeelings")
+            NavigationLink(destination: EmptyView(), label: { FG_VideoCallCircle (color: .blue, friendName: "Hurt \nFeelings")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
@@ -65,8 +65,8 @@ struct FG_VideoCall: View {
             .offset(x: showItems ? 40 : 0, y: showItems ? -200: 0)
              
             
-               NavigationLink(destination: FG_Video(), label: {
-                   FG_VideoCallCircle (color: .orange, friendName: "Empty")
+               NavigationLink(destination: FG_Team(), label: {
+                   FG_VideoCallCircle (color: .orange, friendName: "Friends \nAre ...")
              })
              .offset(x: showItems ? -50 : 0, y: showItems ? 250: 0)
              

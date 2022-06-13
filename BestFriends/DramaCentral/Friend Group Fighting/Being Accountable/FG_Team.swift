@@ -30,12 +30,25 @@ struct FG_Team: View {
                
                   
                   VStack {
-                      Text("Being Accountable")
-                          .font(.system(size: 40))
-                          .foregroundColor(.white)
-                          .fontWeight(.ultraLight)
-                          .multilineTextAlignment(.center)
-                   
+                      
+                      
+                        Text("just a thought from our")
+                            .font(.system(size: 30))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(Color.blue)
+                        
+                        Text("teens")
+                            .font(.system(size: 50))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(Color.blue)
+//                      Text("Being a Friend")
+//                          .font(.system(size: 40))
+//                          .foregroundColor(.white)
+//                          .fontWeight(.ultraLight)
+//                          .multilineTextAlignment(.center)
+//
 //                        Text("coming together")
 //                            .font(.system(size: 50))
 //                            .foregroundColor(.white)
@@ -59,37 +72,26 @@ struct FG_Team: View {
                       Spacer()
                           .frame(height: 60)
             VStack {
-                      
-                        Text("just a thought from our")
-                            .font(.system(size: 30))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(Color.blue)
-                        
-                        Text("teens")
-                            .font(.system(size: 50))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(Color.blue)
+                     
                    
                
             VStack {
-                Spacer()
-                    .frame(height: 40)
-                    
-                    NavigationLink(
-                        destination: FG_VideoCall(),
-                        label: {
-                            Text("NEXT")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                      
-                        })
+//                Spacer()
+//                    .frame(height: 40)
+//                    
+//                    NavigationLink(
+//                        destination: FG_VideoCall(),
+//                        label: {
+//                            Text("NEXT")
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 40)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 30))
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                      
+//                        })
 
             }
               
