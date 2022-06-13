@@ -188,7 +188,7 @@ struct HomeView: View {
                         }
                         
                         
-                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.friends[0], friend: homeData!.user, groups: homeData!.groups, friendAtmosphere: homeData!.atmosphere),
+                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: homeData!.atmosphere),
                                        label: {
                             Text("Friend Changed Mood")
                                 .fontWeight(.thin)
