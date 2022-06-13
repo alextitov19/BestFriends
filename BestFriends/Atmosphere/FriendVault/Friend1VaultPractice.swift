@@ -232,7 +232,7 @@ struct Friend1VaultPractice: View {
                         .frame(height: 10)
                 }
                 
-                Text("Send Hug or Heart")
+                Text("Send Hug / Songs")
                     .font(.system(size: 20))
                     .frame(width:325, height: 30)
                 //                    .fontWeight(.light)
