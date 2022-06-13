@@ -155,7 +155,7 @@ struct Friend1VaultPractice: View {
                         
                         Text("Respond instantly via Push Notification")
                             .font(.system(size: 18))
-                            .fontWeight(.regular)
+                            .fontWeight(.medium)
                             .frame(width:325, height: 30)
                             .foregroundColor(.white)
                         
