@@ -21,6 +21,7 @@ struct Friend1VaultPractice: View {
     @State private var colorChangeTap: String = ""
     @State private var hugTapped = false
     @State private var mostRecentMoodLog: MoodLog?
+    @State private var noteTapped = false
     
     init(user: User, friend: User, groups: [Group], friendAtmosphere: Atmosphere) {
         self.user = user
@@ -252,28 +253,23 @@ struct Friend1VaultPractice: View {
                         }
                     }
                     
-                    ZStack {
-                        Image(systemName: "heart.fill")
+                   
+                        if !noteTapped {
+                        Image("note")
                             .resizable()
                             .foregroundColor(.pink)
                             .frame(width: 40, height: 40)
+                            .colorInvert()
                             .blur(radius: 2)
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
                             .padding(.horizontal, 30)
-//                        Text("Send PlayList")
-//                            .font(.system(size: 13))
-//                            .frame(width:50, height: 30)
-//                        //                    .fontWeight(.light)
-//                        //                .multilineTextAlignment(.center)
-//                            .foregroundColor(Color.white)
-//
+                            .onTapGesture {
+                                RestApi.instance.sendPushNotification(title: "Note", body: "", APNToken: friend.APNToken ?? "")
+                            
+                            noteTapped.toggle()
+                            }
                     }
                     
-                    //                    Image("Fireworks")
-                    //                        .resizable()
-                    //                        .frame(width: 45, height: 45)
-                    //                        .scaledToFit()
-                    //                        .colorInvert()
                 }
                 .padding(.bottom, 30)
             }

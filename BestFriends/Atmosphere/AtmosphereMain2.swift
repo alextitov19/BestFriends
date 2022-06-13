@@ -275,8 +275,8 @@ struct AtmosphereMain2: View {
                     
                     
                     HStack {
-                        Text("Send Push Notification to friends")
-                            .font(.system(size: 25))
+                        Text("ALERT friends with Push Notification")
+                            .font(.system(size: 23))
                             .fontWeight(.regular)
                             .foregroundColor(Color.blue)
                         
