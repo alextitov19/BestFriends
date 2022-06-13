@@ -58,12 +58,16 @@ struct WhoFighting: View {
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -90: 0)
             
-
+            NavigationLink(destination: EmptyView(), label: {
+                WhoFightingCircle (color: .gray, friendName: "")
+            })
+            .offset(x: showItems ? -75 : 0, y: showItems ? -600: 0)
+            
 
         Image(systemName: "triangle.fill")
                     .resizable()
                     .foregroundColor(.gray)
-                    .frame(width: 170, height: 170)
+                    .frame(width: 175, height: 175)
 //                    .blur(radius: 2)
 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)

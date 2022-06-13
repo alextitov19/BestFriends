@@ -77,16 +77,19 @@ struct Friend1VaultPractice: View {
                     if mostRecentMoodLog != nil {
                         ZStack {
                             if mostRecentMoodLog!.mood < 4 {
-                                Color(.blue)
+                                ColorManager .pmbc_blue
                                     .cornerRadius(25)
                             } else if mostRecentMoodLog!.mood == 4 {
-                                Color(.green)
+//                                Color(.green)
+                                ColorManager .pmbc_green
                                     .cornerRadius(25)
                             } else if mostRecentMoodLog!.mood == 5 {
                                 Color(.orange)
+//                                ColorManager .pmbc_orange
                                     .cornerRadius(25)
                             } else {
                                 Color(.yellow)
+                               
                                     .cornerRadius(25)
                             }
                             
@@ -108,7 +111,8 @@ struct Friend1VaultPractice: View {
                                 .padding(.horizontal)
                             }
                         }
-                        .frame(width: 300, height: 150)
+                        .frame(width: 300, height: 120)
+                        .opacity(0.85)
                         .padding(.vertical)
                     }
                     
@@ -121,11 +125,13 @@ struct Friend1VaultPractice: View {
                     
                     //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
                     TextEditor(text: $customMessage)
-                        .font(.system(size: 20))
-                        .foregroundColor(Color.black)
+                        .font(.system(size: 18))
+//                        .fontWeight(.thin)
+                        .foregroundColor(ColorManager .darkGrey)
                         .padding(.horizontal, 50)
                         .frame(width:310, height: 75)
                         .background(ColorManager.purple3)
+                        .opacity(0.85)
                         .cornerRadius(15)
                         .onReceive(Just(customMessage)) { _ in limitText(65) }
                     
@@ -139,7 +145,9 @@ struct Friend1VaultPractice: View {
                                 .frame(width: 310, height: 35)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 22))
+//                                .opacity(0.5)
                                 .background(ColorManager.purple3)
+                                .opacity(0.7)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
@@ -147,6 +155,7 @@ struct Friend1VaultPractice: View {
                         
                         Text("Respond instantly via Push Notification")
                             .font(.system(size: 18))
+                            .fontWeight(.regular)
                             .frame(width:325, height: 30)
                             .foregroundColor(.white)
                         
@@ -215,14 +224,15 @@ struct Friend1VaultPractice: View {
                                 .background(colorChangeTap == "D" ? ColorManager.grey2 : ColorManager.grey1)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                .opacity(0.8)
                         })
                         
                         Button(action: {
                             defaultMessageButtonTapped(defaultMessage: "E")
                             
-                            RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "We will figure this out!", APNToken: friend.APNToken ?? "")
+                            RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "We will figure this out", APNToken: friend.APNToken ?? "")
                         }, label: {
-                            Text("We will figure this out.")
+                            Text("We will figure this out")
                                 .fontWeight(.thin)
                                 .frame(width: 260, height: 30)
                                 .foregroundColor(.purple)
@@ -345,8 +355,10 @@ struct Friend1VaultPractice: View {
                         .foregroundColor(Color.black)
                         .frame(width:310, height: 75)
                         .background(ColorManager.purple3)
+                        .opacity(0.7)
                         .cornerRadius(15)
                         .onReceive(Just(customMessage)) { _ in limitText(65) }
+//                        .opacity(0.7)
                     
                     VStack {
                         Button(action: {
@@ -379,6 +391,7 @@ struct Friend1VaultPractice: View {
                                .foregroundColor(.purple)
                                 .font(.system(size: 20))
                                 .background(colorChangeTap == "Are you okay?" ? ColorManager.grey2 : ColorManager.grey1)
+                                .opacity(0.5)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })

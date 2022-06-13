@@ -109,8 +109,9 @@ struct OurMission: View {
                     Rectangle()
                         .frame(width: 150, height: 150)
                         .clipShape(Circle())
-                        .foregroundColor(.gray)
+                        .foregroundColor(ColorManager .grey1)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
+                        .opacity(0.65)
                     
 //                    Text("")
 //                        .font(.system(size: 25))
