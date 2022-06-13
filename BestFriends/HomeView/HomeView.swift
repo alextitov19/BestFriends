@@ -201,7 +201,7 @@ struct HomeView: View {
                         })
                         NavigationLink(destination: WhoFighting(),
                                        label: {
-                            Text("Friend in DramaMode")
+                            Text("ALERT - FriendGroup")
                                 .fontWeight(.thin)
                                 .frame(width: 190, height: 25)
                                 .foregroundColor(.white)
@@ -221,7 +221,9 @@ struct HomeView: View {
                                 .opacity(0.8)
                         })
                         
-                        NavigationLink(destination: HideoutsPlaylist(),
+                        
+//                        MARK: Want to send this to the new [BestFriendsPlaylists] page
+                        NavigationLink(destination: EmptyView(),
                                         label: {
                              Text("Friend Sent PlayList")
                                  .fontWeight(.thin)

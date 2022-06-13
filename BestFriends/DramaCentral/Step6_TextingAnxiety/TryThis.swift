@@ -72,8 +72,10 @@ struct TryThis: View {
 //                        .frame(height: 75)
                     
                     VStack {
+                        
+//                        MARK: want to send this to the new [BestFriendsPlaylists] page
                          NavigationLink(
-                            destination: HideoutsPlaylist(),
+                            destination: EmptyView(),
                             label: {
                                 Text("Listen to your Hideouts Playlist")
                                     .fontWeight(.thin)

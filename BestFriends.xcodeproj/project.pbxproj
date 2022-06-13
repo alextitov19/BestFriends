@@ -457,14 +457,13 @@
 				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
-				CF2DBCF2285527C9008616A3 /* My Planet */,
 				CF3B65A9280071580003A714 /* Settings */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
+				CF2DBCF2285527C9008616A3 /* My Planet */,
 				CFD046992837D99300BF0B02 /* HIDEOUTS */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
-				CFE1946A2812A9E300ED5718 /* Streaks */,
 				D0CC1A02283EE31900E7461F /* Horizons */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD12CC52819436F00AB2539 /* OurStory */,
@@ -638,6 +637,8 @@
 			children = (
 				CF0911902848976A00CB0AF0 /* BestFriendsVideo.swift */,
 				CF381A582829205800B3719E /* OurMission.swift */,
+				CFDB15062857EC6700155CEE /* BuildFriendPlaylist */,
+				CFE1946A2812A9E300ED5718 /* Streaks */,
 			);
 			path = "My Planet";
 			sourceTree = "<group>";
@@ -786,7 +787,6 @@
 			isa = PBXGroup;
 			children = (
 				CFDB15042857DFF400155CEE /* BestFriendsPlaylists.swift */,
-				CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */,
 				CF785691284F3CE900B31803 /* HideoutsPlayList.swift */,
 			);
 			path = PlayLists;
@@ -940,6 +940,14 @@
 				CFDB150228574D8B00155CEE /* FightWithParents.swift */,
 			);
 			path = FightWithParents;
+			sourceTree = "<group>";
+		};
+		CFDB15062857EC6700155CEE /* BuildFriendPlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */,
+			);
+			path = BuildFriendPlaylist;
 			sourceTree = "<group>";
 		};
 		CFE1946728129CAC00ED5718 /* RobPracticePages */ = {
