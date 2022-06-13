@@ -68,7 +68,7 @@ struct Step2_ParentsFighting: View {
                     Spacer()
                         .frame(height: 25)
                     
-                    Text("comming fall 2022")
+                    Text("Comming fall 2022")
                         .font(.system(size: 25))
                         .italic()
                         .fontWeight(.light)
@@ -77,7 +77,7 @@ struct Step2_ParentsFighting: View {
                     NavigationLink(
                         destination: ParentsFighting(),
                         label: {
-                            Text("Anonymous FORUM ???")
+                            Text("FORUM")
                                 .fontWeight(.thin)
                                 .frame(width: 310, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
