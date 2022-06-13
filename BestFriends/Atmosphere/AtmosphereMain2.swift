@@ -259,7 +259,8 @@ struct AtmosphereMain2: View {
                         Rectangle()
                             .frame(width:325, height: 100)
                             .cornerRadius(15)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.gray)
+                            .opacity(0.7)
                         
                         TextField("You can type your reason here ...", text: $summary)
                             .font(.system(size: 20))
@@ -274,10 +275,10 @@ struct AtmosphereMain2: View {
                     
                     
                     HStack {
-                        Text("ALEART - your friends")
-                            .font(.system(size: 30))
+                        Text("Send Push Notification to friends")
+                            .font(.system(size: 25))
                             .fontWeight(.regular)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.blue)
                         
                         
                         Spacer()
