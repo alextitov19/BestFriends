@@ -176,9 +176,9 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 120, height: 120)
-                                .foregroundColor(ColorManager.orange2)
+                                .foregroundColor(ColorManager.orange5)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
-//                                .opacity(0.65)
+                               .opacity(0.65)
                             
                             VStack {
                                 Text("My")
