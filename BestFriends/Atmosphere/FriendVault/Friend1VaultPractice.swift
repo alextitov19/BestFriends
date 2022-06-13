@@ -232,12 +232,12 @@ struct Friend1VaultPractice: View {
                         .frame(height: 10)
                 }
                 
-                Text("Send Hug or Heart")
+                Text("Send Hug / Songs")
                     .font(.system(size: 20))
                     .frame(width:325, height: 30)
                 //                    .fontWeight(.light)
                 //                .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.purple)
                 
                 HStack {
                     if !hugTapped {
@@ -260,13 +260,13 @@ struct Friend1VaultPractice: View {
                             .blur(radius: 2)
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
                             .padding(.horizontal, 30)
-                        Text("Send PlayList")
-                            .font(.system(size: 13))
-                            .frame(width:50, height: 30)
-                        //                    .fontWeight(.light)
-                        //                .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
+//                        Text("Send PlayList")
+//                            .font(.system(size: 13))
+//                            .frame(width:50, height: 30)
+//                        //                    .fontWeight(.light)
+//                        //                .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//
                     }
                     
                     //                    Image("Fireworks")
@@ -275,7 +275,7 @@ struct Friend1VaultPractice: View {
                     //                        .scaledToFit()
                     //                        .colorInvert()
                 }
-                .padding(.bottom, 50)
+                .padding(.bottom, 30)
             }
         }
         
