@@ -277,7 +277,7 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
                     
-                    NavigationLink(destination: HorizonHomeView(),
+                    NavigationLink(destination: EmptyView(),
                                    label: {
                         ZStack {
                             Circle()
@@ -293,12 +293,16 @@ struct PlanetActionsView: View {
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("(August)")
+                                Text("available")
                                 .foregroundColor(.white)
                                 .font(.system(size: 11, weight: .bold))
                                 .italic()
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-
+                                Text("Q3: 2022")
+                                .foregroundColor(.white)
+                                .font(.system(size: 11, weight: .bold))
+                                .italic()
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
                     })

@@ -223,17 +223,17 @@ struct HomeView: View {
                         
                         
 //                        MARK: Want to send this to the new [BestFriendsPlaylists] page
-                        NavigationLink(destination: EmptyView(),
-                                        label: {
-                             Text("Friend Sent PlayList")
-                                 .fontWeight(.thin)
-                                 .frame(width: 190, height: 25)
-                                 .foregroundColor(.white)
-                                 .background(ColorManager.purple3)
-                                 .cornerRadius(15)
-                                 .opacity(0.8)
-                         })
-                         
+//                        NavigationLink(destination: EmptyView(),
+//                                        label: {
+//                             Text("Friend Sent PlayList")
+//                                 .fontWeight(.thin)
+//                                 .frame(width: 190, height: 25)
+//                                 .foregroundColor(.white)
+//                                 .background(ColorManager.purple3)
+//                                 .cornerRadius(15)
+//                                 .opacity(0.8)
+//                         })
+//                         
                         
                         
                         

@@ -96,7 +96,7 @@ struct FriendQualities: View {
                             .frame(height: 50)
                         
                       NavigationLink(
-                         destination: MasterFriendVault(),
+                         destination: EmptyView(),
                            label: {
                                 Text("Send a 'heart' in FriendVault")
                                    .fontWeight(.semibold)

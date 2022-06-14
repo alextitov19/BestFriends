@@ -251,9 +251,9 @@ struct Friend1VaultPractice: View {
                         }
                     }
                     
-                   
+//                   MARK: Below is for adding Playlist - put in the 'Note' image
                         if !noteTapped {
-                        Image("bell")
+                        Image("")
                             .resizable()
                             .foregroundColor(.pink)
                             .frame(width: 40, height: 40)
@@ -263,7 +263,7 @@ struct Friend1VaultPractice: View {
                             .padding(.horizontal, 30)
                             .onTapGesture {
                                 RestApi.instance.sendPushNotification(title: "Note", body: "", APNToken: friend.APNToken ?? "")
-                            
+
                             noteTapped.toggle()
                             }
                     }

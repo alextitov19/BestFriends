@@ -57,13 +57,13 @@ struct OurMission: View {
                 .offset(x: showItems ? -100 : 0, y: showItems ? -250: 0)
                 
                 NavigationLink(destination: BuildFriendPlaylist(), label: {
-                    WhoFightingCircle (color: .green, friendName: "Build \n Playlist \nfor friend")
+                    WhoFightingCircle (color: .green, friendName: "Build \n Playlist \nfor Friend")
                 })
                 .offset(x: showItems ? 50 : 0, y: showItems ? -150: 0)
                 
                 
                 NavigationLink(destination: EmptyView(), label: {
-                    WhoFightingCircle (color: .orange, friendName: "Customize \nmy \nPlanet")
+                    WhoFightingCircle (color: .orange, friendName: "Customize \nPlanet \n(Q3: 2022)")
                 })
                 .offset(x: showItems ? -85 : 0, y: showItems ? 115: 0)
                 
