@@ -169,6 +169,8 @@
 		CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB150228574D8B00155CEE /* FightWithParents.swift */; };
 		CFDB15052857DFF400155CEE /* BestFriendsPlaylists.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB15042857DFF400155CEE /* BestFriendsPlaylists.swift */; };
 		CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB1508285816AF00155CEE /* FaceTimeCall.swift */; };
+		CFDB150C2859103C00155CEE /* sadTeen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB150B2859103B00155CEE /* sadTeen.mp4 */; };
+		CFDB150E2859107600155CEE /* sadTeen2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB150D2859107600155CEE /* sadTeen2.mp4 */; };
 		CFE194642812973600ED5718 /* MasterFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194632812973600ED5718 /* MasterFriendVault.swift */; };
 		CFE194662812994B00ED5718 /* SendNiceChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194652812994B00ED5718 /* SendNiceChat.swift */; };
 		CFE1946928129D9600ED5718 /* FriendQualities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946828129D9600ED5718 /* FriendQualities.swift */; };
@@ -343,6 +345,8 @@
 		CFDB150228574D8B00155CEE /* FightWithParents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightWithParents.swift; sourceTree = "<group>"; };
 		CFDB15042857DFF400155CEE /* BestFriendsPlaylists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsPlaylists.swift; sourceTree = "<group>"; };
 		CFDB1508285816AF00155CEE /* FaceTimeCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTimeCall.swift; sourceTree = "<group>"; };
+		CFDB150B2859103B00155CEE /* sadTeen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sadTeen.mp4; sourceTree = "<group>"; };
+		CFDB150D2859107600155CEE /* sadTeen2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sadTeen2.mp4; sourceTree = "<group>"; };
 		CFE194632812973600ED5718 /* MasterFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFriendVault.swift; sourceTree = "<group>"; };
 		CFE194652812994B00ED5718 /* SendNiceChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendNiceChat.swift; sourceTree = "<group>"; };
 		CFE1946828129D9600ED5718 /* FriendQualities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendQualities.swift; sourceTree = "<group>"; };
@@ -735,6 +739,8 @@
 			isa = PBXGroup;
 			children = (
 				CF091197284A736800CB0AF0 /* FGVideo2.mp4 */,
+				CFDB150B2859103B00155CEE /* sadTeen.mp4 */,
+				CFDB150D2859107600155CEE /* sadTeen2.mp4 */,
 				CFDB14E92855957D00155CEE /* face.mp4 */,
 				CF2DBCF028552527008616A3 /* storm2.mp4 */,
 				CF78569A284F480000B31803 /* Seaguls3.mp4 */,
@@ -1080,6 +1086,7 @@
 				CF78569B284F480000B31803 /* Seaguls3.mp4 in Resources */,
 				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
+				CFDB150C2859103C00155CEE /* sadTeen.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				7A2C2159280509DA009362CF /* cloud.mp4 in Resources */,
 				CFDB14FE2855ADE900155CEE /* FeetShowing.mp4 in Resources */,
@@ -1095,6 +1102,7 @@
 				CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */,
 				7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */,
 				CFDB14F428559C5000155CEE /* girlsLongboard.mp4 in Resources */,
+				CFDB150E2859107600155CEE /* sadTeen2.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
 				CFDB14F828559EE600155CEE /* FGdrama.mp4 in Resources */,
 			);
