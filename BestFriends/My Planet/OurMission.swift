@@ -68,11 +68,11 @@ struct OurMission: View {
                 .offset(x: showItems ? -85 : 0, y: showItems ? 115: 0)
                 
                
-                NavigationLink(destination: MyStreaks(), label: {
-                                    WhoFightingCircle (color: .pink, friendName: "Streaks")
-                                })
-                                .offset(x: showItems ? 90 : 0, y: showItems ? 200: 0)
-                
+//                NavigationLink(destination: MyStreaks(), label: {
+//                                    WhoFightingCircle (color: .pink, friendName: "Streaks")
+//                                })
+//                                .offset(x: showItems ? 90 : 0, y: showItems ? 200: 0)
+//                
 //                NavigationLink(destination: EmptyView(), label: {
 //                    WhoFightingCircle (color: .white, friendName: "Streaks")
 //                })
