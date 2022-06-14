@@ -462,6 +462,7 @@
 				CF3B65A9280071580003A714 /* Settings */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
+				CFDB150A2858F4D200155CEE /* Virtual HUG */,
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
 				CF2DBCF2285527C9008616A3 /* My Planet */,
 				CFD046992837D99300BF0B02 /* HIDEOUTS */,
@@ -494,7 +495,6 @@
 				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
 				CF0911842848328F00CB0AF0 /* HideChat.swift */,
 				CF09118D284894F400CB0AF0 /* InfoView.swift */,
-				CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -959,6 +959,14 @@
 				CFDB1508285816AF00155CEE /* FaceTimeCall.swift */,
 			);
 			path = FaceTimeCall;
+			sourceTree = "<group>";
+		};
+		CFDB150A2858F4D200155CEE /* Virtual HUG */ = {
+			isa = PBXGroup;
+			children = (
+				CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */,
+			);
+			path = "Virtual HUG";
 			sourceTree = "<group>";
 		};
 		CFE1946728129CAC00ED5718 /* RobPracticePages */ = {
