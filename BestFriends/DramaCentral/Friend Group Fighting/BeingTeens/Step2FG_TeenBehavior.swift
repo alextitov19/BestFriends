@@ -36,7 +36,7 @@ struct Step2FG_TeenBehavior: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Our teen's have")
+                Text("Our teens have")
                     .font(.system(size: 35))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
@@ -74,16 +74,16 @@ struct Step2FG_TeenBehavior: View {
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.white)
              
-                
-                Text("& Accessorize")
-                    .font(.system(size: 30))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.white)
-                
+//
+//                Text("& Accessorize")
+//                    .font(.system(size: 30))
+//                    .fontWeight(.ultraLight)
+//                    .foregroundColor(Color.white)
+//
                 Spacer()
                     .frame(height: 25)
                 
-                Text("too exactly fit your")
+                Text("to fit your")
                     .font(.system(size: 40))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
@@ -96,7 +96,7 @@ struct Step2FG_TeenBehavior: View {
                     .frame(height: 100)
                     
                     NavigationLink(
-                        destination: Step3FG_Accountability(),
+                        destination: FG_GettingStarted(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)

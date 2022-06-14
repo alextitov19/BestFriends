@@ -53,7 +53,7 @@ struct Step3FG_Accountability: View {
                     .frame(height: 40)
                 
             VStack {
-                Text("- maybe think of your FG as a team? \n- teams watch out for each other \n- its you're team - you're in control \n- you love to talk - so, lets talk")
+                Text("- come up with a team name \n- teams members watch out for each other")
                     .font(.system(size: 24))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)

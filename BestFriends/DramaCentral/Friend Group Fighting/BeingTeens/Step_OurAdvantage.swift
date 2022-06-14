@@ -39,7 +39,7 @@ struct Step_OurAdvantage: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("too our")
+                Text("to our")
                     .font(.system(size: 55))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)

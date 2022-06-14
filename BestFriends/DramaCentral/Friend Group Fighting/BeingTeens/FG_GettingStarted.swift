@@ -57,7 +57,7 @@ struct FG_GettingStarted: View {
                   .fontWeight(.light)
                   .foregroundColor(Color.blue)
             
-            Text("keep it too")
+            Text("keep it to")
                 .font(.system(size: 30))
                 .fontWeight(.light)
                 .foregroundColor(Color.blue)
@@ -77,7 +77,7 @@ struct FG_GettingStarted: View {
             
                     
                     NavigationLink(
-                        destination: Step3FG_Accountability(),
+                        destination: FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
@@ -107,11 +107,11 @@ struct FG_GettingStarted: View {
 }
 
 
-
-
-struct FG_GettingStarted_Previews : PreviewProvider {
-    static var previews: some View {
-        FG_GettingStarted()
-    }
-}
-
+//
+//
+//struct FG_GettingStarted_Previews : PreviewProvider {
+//    static var previews: some View {
+//        FG_GettingStarted(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
+//    }
+//}
+//

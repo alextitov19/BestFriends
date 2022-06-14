@@ -58,7 +58,7 @@ struct Step1FG_SuggestedSolutions: View {
                     .frame(height: 20)
                 
             VStack {
-                Text("- we can't just ignore fights \n- we get involved \n- we sort of commerizerate \n- we for sure express our opinions \n- may even talk behind their back")
+                Text("- we can't just ignore fights \n- we get involved \n- we sort of commiserate \n- we for sure express our opinions \n- may even talk behind their back")
                     .font(.system(size: 24))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
