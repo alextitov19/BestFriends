@@ -70,7 +70,7 @@ struct SetBoundries: View {
                     .frame(height: 30)
                     
                     NavigationLink(
-                        destination: FG_VideoCall(),
+                        destination: FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)

@@ -66,7 +66,7 @@ struct Step3FG_Accountability: View {
                     .frame(height: 145)
                     
                     NavigationLink(
-                        destination: FG_VideoCall(),
+                        destination: FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)

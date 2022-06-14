@@ -33,7 +33,7 @@ struct FG_Video: View {
                     .frame(height: 0)
                 
                 NavigationLink(
-                    destination: FG_VideoCall(),
+                    destination: FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
                     label: {
                         Text("SKIP")
                             .fontWeight(.thin)

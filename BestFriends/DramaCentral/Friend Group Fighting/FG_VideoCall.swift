@@ -17,6 +17,9 @@ struct FG_VideoCall: View {
     @State private var offset: CGFloat = 200.0
     @EnvironmentObject var sessionManager: SessionManager
     
+    let user: User
+    let friends: [User]
+    
     var body: some View {
         
         ZStack {
@@ -49,7 +52,7 @@ struct FG_VideoCall: View {
              
      
            
-              NavigationLink(destination: ParentsFighting(), label: {
+            NavigationLink(destination: FaceTimeCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []), label: {
                   FG_VideoCallCircle (color: .green, friendName: "Schedule \nFaceTime \nCall")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
@@ -157,7 +160,7 @@ struct FG_VideoCallCircle: View {
 
 struct FG_VideoCall_Previews : PreviewProvider {
     static var previews: some View {
-        FG_VideoCall()
+        FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
     }
 
 }

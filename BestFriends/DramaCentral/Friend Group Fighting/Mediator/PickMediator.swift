@@ -69,7 +69,7 @@ struct PickMediator: View {
                     .frame(height: 30)
                     
                     NavigationLink(
-                        destination: FG_VideoCall(),
+                        destination: EmptyView(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)

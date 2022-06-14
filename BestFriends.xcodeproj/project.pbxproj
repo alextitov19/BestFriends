@@ -168,6 +168,7 @@
 		CFDB15002856E08C00155CEE /* FriendChangedMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB14FF2856E08C00155CEE /* FriendChangedMood.swift */; };
 		CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB150228574D8B00155CEE /* FightWithParents.swift */; };
 		CFDB15052857DFF400155CEE /* BestFriendsPlaylists.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB15042857DFF400155CEE /* BestFriendsPlaylists.swift */; };
+		CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB1508285816AF00155CEE /* FaceTimeCall.swift */; };
 		CFE194642812973600ED5718 /* MasterFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194632812973600ED5718 /* MasterFriendVault.swift */; };
 		CFE194662812994B00ED5718 /* SendNiceChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE194652812994B00ED5718 /* SendNiceChat.swift */; };
 		CFE1946928129D9600ED5718 /* FriendQualities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946828129D9600ED5718 /* FriendQualities.swift */; };
@@ -341,6 +342,7 @@
 		CFDB14FF2856E08C00155CEE /* FriendChangedMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendChangedMood.swift; sourceTree = "<group>"; };
 		CFDB150228574D8B00155CEE /* FightWithParents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightWithParents.swift; sourceTree = "<group>"; };
 		CFDB15042857DFF400155CEE /* BestFriendsPlaylists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsPlaylists.swift; sourceTree = "<group>"; };
+		CFDB1508285816AF00155CEE /* FaceTimeCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTimeCall.swift; sourceTree = "<group>"; };
 		CFE194632812973600ED5718 /* MasterFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFriendVault.swift; sourceTree = "<group>"; };
 		CFE194652812994B00ED5718 /* SendNiceChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendNiceChat.swift; sourceTree = "<group>"; };
 		CFE1946828129D9600ED5718 /* FriendQualities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendQualities.swift; sourceTree = "<group>"; };
@@ -919,6 +921,7 @@
 			isa = PBXGroup;
 			children = (
 				CFAB5429282123EA00BBF502 /* WhoFighting.swift */,
+				CFDB15072858169000155CEE /* FaceTimeCall */,
 				CFAB542D2821245C00BBF502 /* Parents Fighting */,
 				CFDB150128574D6100155CEE /* FightWithParents */,
 				CF381A4E2826883A00B3719E /* Friend Group Fighting */,
@@ -948,6 +951,14 @@
 				CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */,
 			);
 			path = BuildFriendPlaylist;
+			sourceTree = "<group>";
+		};
+		CFDB15072858169000155CEE /* FaceTimeCall */ = {
+			isa = PBXGroup;
+			children = (
+				CFDB1508285816AF00155CEE /* FaceTimeCall.swift */,
+			);
+			path = FaceTimeCall;
 			sourceTree = "<group>";
 		};
 		CFE1946728129CAC00ED5718 /* RobPracticePages */ = {
@@ -1158,6 +1169,7 @@
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				CF2738AC2813C6410070E9D3 /* NewSmileVaultView.swift in Sources */,
+				CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */,
 				CF2DBCEA2853D968008616A3 /* SetBoundries.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
