@@ -196,7 +196,7 @@ struct SettingsView: View {
                     
                     Divider()
                     Spacer()
-                        .frame(height: 400)
+                        .frame(height: 300)
                 }
                 
                 
