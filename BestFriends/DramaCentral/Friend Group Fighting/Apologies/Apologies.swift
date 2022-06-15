@@ -1,17 +1,19 @@
 //
-//  SetBoundries.swift
+//  Apologies.swift
 //  BestFriends
 //
-//  Created by Social Tech on 6/10/22.
+//  Created by Social Tech on 6/14/22.
 //
 
 import Foundation
 
 
+
+
 import SwiftUI
 
 
-struct SetBoundries: View {
+struct Apologies: View {
     
     @EnvironmentObject var sessionManager: SessionManager
 
@@ -94,9 +96,9 @@ struct SetBoundries: View {
 
 
 
-struct SetBoundries_Previews : PreviewProvider {
+struct Apologies_Previews : PreviewProvider {
     static var previews: some View {
-        SetBoundries()
+        Apologies()
     }
 }
 

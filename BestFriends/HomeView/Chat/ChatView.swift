@@ -105,7 +105,7 @@ struct ChatView: View {
                                 
 //                                MARK: We decided to not let the user have the option to 'delete' message for now. We need to see the message if they reported it as abusive
                                 
-//                                Button("Delete") {
+                               Button("Delete") {
                                     
                                 }
                                 
