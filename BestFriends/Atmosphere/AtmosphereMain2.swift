@@ -257,7 +257,7 @@ struct AtmosphereMain2: View {
                     
                     ZStack {
                         Rectangle()
-                            .frame(width:325, height: 100)
+                            .frame(width:400, height: 100)
                             .cornerRadius(15)
                             .foregroundColor(Color.gray)
                             .opacity(0.7)
@@ -265,8 +265,8 @@ struct AtmosphereMain2: View {
                         TextField("You can type your reason here ...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(Color.black)
-                            .padding(.horizontal, 50)
-                            .onReceive(Just(summary)) { _ in limitText(50) }
+                            .padding(.horizontal, 20)
+                            .onReceive(Just(summary)) { _ in limitText(40) }
                         
                         
                     }
