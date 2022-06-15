@@ -87,7 +87,7 @@ struct ChatView: View {
                             HideChatView(sessionManager: _sessionManager, user: user, group: group)
                         }
                     
-                    Text("Leave")
+                    Text("REMOVE me")
                         .foregroundColor(.gray)
                         .font(.system(size: 18, weight: .thin))
                         .onTapGesture(perform: leaveChatGroup)
@@ -103,7 +103,9 @@ struct ChatView: View {
                                     saveToSmileNotes(message: message)
                                 }
                                 
-                                Button("Delete") {
+//                                MARK: We decided to not let the user have the option to 'delete' message for now. We need to see the message if they reported it as abusive
+                                
+//                                Button("Delete") {
                                     
                                 }
                                 
