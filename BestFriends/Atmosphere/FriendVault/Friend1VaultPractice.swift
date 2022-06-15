@@ -17,7 +17,7 @@ struct Friend1VaultPractice: View {
     let groups: [Group]
     let friendAtmosphere: Atmosphere
     
-    @State private var customMessage = "Custom Message"
+    @State private var customMessage = ""
     @State private var colorChangeTap: String = ""
     @State private var hugTapped = false
     @State private var mostRecentMoodLog: MoodLog?
@@ -108,17 +108,23 @@ struct Friend1VaultPractice: View {
                 
                 
                 //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
-                TextEditor(text: $customMessage)
+                TextField("", text: $customMessage)
+                    .placeholder(when: customMessage.isEmpty) {
+                        HStack {
+                            Text("Send a supportive message").foregroundColor(.white)
+                            
+                            Spacer()
+                        }
+                    }
                     .font(.system(size: 18))
-                //                        .fontWeight(.thin)
-                    .foregroundColor(ColorManager .darkGrey)
-                    .padding(.horizontal, 50)
-                    .frame(width:310, height: 75)
-                    .background(ColorManager.purple3)
-                    .opacity(0.85)
-                    .cornerRadius(15)
+                    .submitLabel(.done)
                     .onReceive(Just(customMessage)) { _ in limitText(65) }
-                
+                    .padding()
+                    .overlay(RoundedRectangle(cornerRadius: 20)
+                        .stroke(Color.gray)
+                        .frame(height: 40)
+                        .padding(.horizontal, 5)
+                    )
                 
                 VStack {
                     Button(action: {
