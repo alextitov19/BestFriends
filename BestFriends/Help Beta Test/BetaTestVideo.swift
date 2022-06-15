@@ -27,39 +27,49 @@ struct BetaTestVideo: View {
                 .ignoresSafeArea()
                 .scaledToFill()
 
-            VStack {
-//
-//
-                Text("Be 1st to test new 'Features' in")
-                    .font(.system(size: 30))
-                    .italic()
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
-                
-                                Text("BestFriends")
-                                    .font(.system(size: 50))
-                                    .fontWeight(.ultraLight)
-                                    .foregroundColor(Color.white)
-                
-                VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "BestFriendsAd1", withExtension: "mp4")!))
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-//                Spacer()
-//                    .frame(height: 0)
-//
-                NavigationLink(
-                    destination: UserBetaTesting(),
-                    label: {
-                        Text("NEXT")
-                            .fontWeight(.thin)
-                            .frame(width: 100, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                })//NavLink
+                VStack {
+    
+                    Text("Be 1st to test new 'Features' in")
+                        .font(.system(size: 30))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                        
+                    
+                    Text("BestFriends")
+                        .font(.system(size: 50))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(Color.white)
+                    
+    //                    VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "BestFriendsAd1", withExtension: "mp4")!))
+    //                        .ignoresSafeArea()
+    //                        .blendMode(.screen)
+                        
+                    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "BestFriendsAd1", withExtension: "mp4")!)
+                       
+                    VideoPlayer(player: avPlayer)
+                        .onAppear() {
+                            avPlayer.isMuted = false
+                        }
+                        .onDisappear() {
+                            avPlayer.isMuted = true
+                        }
+                        .frame(height: 400)
+                            
+                    NavigationLink(
+                        destination: UserBetaTesting(),
+                        label: {
+                            Text("NEXT")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })//NavLink
+                    
+                    Spacer()
             }//VStack
         }//ZStack
     }//body

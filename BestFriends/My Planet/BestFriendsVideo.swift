@@ -25,26 +25,35 @@ struct BestFriendsVideo: View {
                 .scaledToFill()
 
             VStack {
-                
-                VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "SplashScreen2", withExtension: "mp4")!))
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
-                Spacer()
-                    .frame(height: 0)
-                
-                NavigationLink(
-                    destination: OurMission(),
-                    label: {
-                        Text("SKIP")
-                            .fontWeight(.thin)
-                            .frame(width: 100, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                })//NavLink
+//                    VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "SplashScreen2", withExtension: "mp4")!))
+//                        .ignoresSafeArea()
+//                        .blendMode(.screen)
+                    
+                    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "SplashScreen2", withExtension: "mp4")!)
+                   
+                    VideoPlayer(player: avPlayer)
+                        .onAppear() {
+                            avPlayer.isMuted = false
+                        }
+                        .onDisappear() {
+                            avPlayer.isMuted = true
+                        }
+                        .frame(height: 500)
+                    
+                    NavigationLink(
+                        destination: OurMission(),
+                        label: {
+                            Text("SKIP")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })//NavLink
+                    
+                    Spacer()
             }//VStack
         }//ZStack
     }//body
