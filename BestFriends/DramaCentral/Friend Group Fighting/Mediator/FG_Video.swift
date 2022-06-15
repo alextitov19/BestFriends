@@ -25,12 +25,23 @@ struct FG_Video: View {
 
             VStack {
                 
-                VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "FGVideo2", withExtension: "mp4")!))
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+//                VideoPlayer(player: AVPlayer(url:  Bundle.main.url(forResource: "FGVideo2", withExtension: "mp4")!))
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
                 
-                Spacer()
-                    .frame(height: 0)
+                let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "FGVideo2", withExtension: "mp4")!)
+               
+                VideoPlayer(player: avPlayer)
+                    .onAppear() {
+                        avPlayer.isMuted = false
+                    }
+                    .onDisappear() {
+                        avPlayer.isMuted = true
+                    }
+                    .frame(height: 500)
+                
+//                Spacer()
+//                    .frame(height: 0)
                 
                 NavigationLink(
                     destination: PickMediator(),
@@ -44,6 +55,8 @@ struct FG_Video: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })//NavLink
+                
+                Spacer()
             }//VStack
         }//ZStack
     }//body
