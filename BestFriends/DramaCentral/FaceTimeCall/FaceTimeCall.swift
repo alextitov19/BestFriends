@@ -78,7 +78,7 @@ struct FaceTimeCall: View {
                             .foregroundColor(.white)
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.center)
-                        Spacer()
+                    Spacer()
                             .frame(height: 60)
                     }
                     
