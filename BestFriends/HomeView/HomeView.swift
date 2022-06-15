@@ -22,7 +22,7 @@ struct HomeView: View {
     
     @State private var newGroupMembers: [String] = []
     
-    @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", atmosphere: ""), groups: [])
+    @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), groups: [])
     
     var body: some View {
         NavigationView {
@@ -188,7 +188,7 @@ struct HomeView: View {
                         }
                         
                         
-                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: homeData!.atmosphere),
+                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
                             Text("Friend Changed Mood")
                                 .fontWeight(.thin)

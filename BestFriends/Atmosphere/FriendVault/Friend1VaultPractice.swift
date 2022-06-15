@@ -146,7 +146,7 @@ struct Friend1VaultPractice: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "Are you okay?")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you okay?", APNToken: friend.APNToken ?? "")
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Are you okay?", APNToken: friend.APNToken)
                     }, label: {
                         Text("Are you okay?")
                             .fontWeight(.thin)
