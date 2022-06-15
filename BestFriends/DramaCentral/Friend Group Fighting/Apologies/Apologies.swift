@@ -34,7 +34,7 @@ struct Apologies: View {
                 .scaledToFill()
                 .ignoresSafeArea()
          
-            Image("Shayla3")
+            Image("book")
                 .frame(width: 320, height: 20)
 //                .resizable()
 //                .scaledToFill()
@@ -42,19 +42,21 @@ struct Apologies: View {
 //
               VStack {
               
-                  Spacer()
-                      .frame(height: 450)
+             
                   
                   VStack {
 //
 //
             VStack {
-                Text("Did they hurt \nyour friends feelings?")
-                    .font(.system(size: 30))
+                Text("Did you hurt \nyour friends feelings?")
+                    .font(.system(size: 28))
                     .italic()
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                  
+                Spacer()
+                    .frame(height: 350)
+                
             VStack {
                     NavigationLink(
                         destination: Apologies2(),
