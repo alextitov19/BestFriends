@@ -33,7 +33,7 @@ struct HideoutsView: View {
                 .ignoresSafeArea()
                 .scaledToFill()
 
-            AdPlayerView(name: "sadTeen")
+            AdPlayerView(name: "myRoom1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             

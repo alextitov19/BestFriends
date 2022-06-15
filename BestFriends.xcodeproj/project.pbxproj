@@ -128,6 +128,8 @@
 		CFA1226628598DAA00E22E84 /* Apologies2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226528598DAA00E22E84 /* Apologies2.swift */; };
 		CFA1226828598DB800E22E84 /* Apologies3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226728598DB800E22E84 /* Apologies3.swift */; };
 		CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA12269285994AE00E22E84 /* PickMediator2.swift */; };
+		CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */; };
+		CFA12270285A9A1E00E22E84 /* myRoom2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */; };
 		CFAB5400281A99B600BBF502 /* Step6_TextingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */; };
 		CFAB5402281A9A1D00BBF502 /* Step7_TimeToTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */; };
 		CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */; };
@@ -293,6 +295,8 @@
 		CFA1226528598DAA00E22E84 /* Apologies2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies2.swift; sourceTree = "<group>"; };
 		CFA1226728598DB800E22E84 /* Apologies3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies3.swift; sourceTree = "<group>"; };
 		CFA12269285994AE00E22E84 /* PickMediator2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator2.swift; sourceTree = "<group>"; };
+		CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom1.mp4; sourceTree = "<group>"; };
+		CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom2.mp4; sourceTree = "<group>"; };
 		CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step6_TextingFirst.swift; sourceTree = "<group>"; };
 		CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step7_TimeToTalk.swift; sourceTree = "<group>"; };
 		CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4_NuclearOption.swift; sourceTree = "<group>"; };
@@ -703,6 +707,8 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */,
+				CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */,
 				CF091197284A736800CB0AF0 /* FGVideo2.mp4 */,
 				CFDB150B2859103B00155CEE /* sadTeen.mp4 */,
 				CFDB14E92855957D00155CEE /* face.mp4 */,
@@ -1035,6 +1041,7 @@
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				CFDB14EA2855957D00155CEE /* face.mp4 in Resources */,
 				CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */,
+				CFA12270285A9A1E00E22E84 /* myRoom2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A78232E26B2419600CA76FC /* bull.mp4 in Resources */,
@@ -1043,6 +1050,7 @@
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CFDB150C2859103C00155CEE /* sadTeen.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
+				CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */,
 				7A2C2159280509DA009362CF /* cloud.mp4 in Resources */,
 				CFDB14FE2855ADE900155CEE /* FeetShowing.mp4 in Resources */,
 				7A78232D26B2419600CA76FC /* blender.mp4 in Resources */,
