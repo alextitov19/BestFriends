@@ -75,8 +75,7 @@ struct HomeView: View {
                         EmptyView()
                             .alert(isPresented: $showNewRoomNameDialog,
                                    TextAlert(title: "Create New Room",
-                                             message: "Input the desired name for the new chat room",
-                                             keyboardType: .numberPad) { name in
+                                             message: "Input the desired name for the new chat room") { name in
                                 if let text = name {
                                     // Text was accepted
                                     print("Got name: ", text)

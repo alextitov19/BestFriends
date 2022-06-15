@@ -98,11 +98,3 @@ struct HurtFeelings2: View {
     }
 }
 
-
-
-struct HurtFeelings2_Previews : PreviewProvider {
-    static var previews: some View {
-        HurtFeelings2()
-    }
-}
-
