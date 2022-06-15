@@ -125,6 +125,7 @@ struct Friend1VaultPractice: View {
                         .frame(height: 40)
                         .padding(.horizontal, 5)
                     )
+                    .padding(.horizontal, 10)
                 
                 VStack {
                     Button(action: {
