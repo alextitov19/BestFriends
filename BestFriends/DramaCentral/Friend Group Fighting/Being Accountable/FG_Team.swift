@@ -65,13 +65,50 @@ struct FG_Team: View {
                       
                       Spacer()
                             .frame(height: 100)
-                
+                      
+                      ZStack {
+//                      Image(systemName: "heart.fill")
+//                                  .resizable()
+//                                  .foregroundColor(.purple)
+//                                  .frame(width: 100, height: 100)
+//                                  .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                                  .opacity(0.5)
+//
+//                          Text("true")
+//                              .font(.system(size: 20))
+//                              .italic()
+//                              .fontWeight(.light)
+//                              .foregroundColor(Color.blue)
+                  
+                          
+                          Image(systemName: "heart.fill")
+                                      .resizable()
+                                      .foregroundColor(.purple)
+                                      .frame(width: 150, height: 150)
+                  //                    .blur(radius: 2)
+
+                                      .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                                     .opacity(0.9)
+
+                             VStack {
+                                Text("TrueFriends")
+                                              .font(.system(size: 20))
+                                              .foregroundColor(.blue)
+                                              .fontWeight(.medium)
+                                              .multilineTextAlignment(.center)
+                                              .shadow(color: .black, radius: 1, x: 0, y: 1)
+                             }
+                             
+                          
+                          
+
+                      }
                       Text("True friends don't leave a freind behind.")
                           .font(.system(size: 20))
                           .fontWeight(.light)
                           .foregroundColor(Color.white)
                       
-                      Text("One day you'll need their help.")
+                      Text("One day you'll need them!")
                           .font(.system(size: 20))
                           .fontWeight(.light)
                           .foregroundColor(Color.white)
@@ -82,31 +119,7 @@ struct FG_Team: View {
                 Spacer()
                           .frame(height: 35)
                 
-//                      Text("Send a Virtual Hug")
-//                          .font(.system(size: 40))
-//                          .italic()
-//                          .fontWeight(.ultraLight)
-//                          .foregroundColor(Color.blue)
-//
-//
-//                      Spacer()
-//                          .frame(height: 60)
-//
-//
-//
-//                    if !hugTapped {
-//                    Image("Hug4")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
-//                        .scaledToFit()
-//                //                        .colorInvert()
-//                        .onTapGesture {
-//                            RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
-//                            hugTapped.toggle()
-//
-//                    }
-                  
-                
+             
             }
               
         }
@@ -115,7 +128,8 @@ struct FG_Team: View {
 }
     }
 
-
+    
+ 
 //
 //
 //struct FG_Team_Previews : PreviewProvider {
