@@ -45,8 +45,8 @@ struct WhoFighting: View {
 //                WhoFightingCircle (color: .pink, friendName: "Fight \nwith \nParents")
 //                })
 //            .offset(x: showItems ? 100 : 0, y: showItems ? -150: 0)
-//             
-//     
+//
+//
            
               NavigationLink(destination: ParentsFighting(), label: {
                   WhoFightingCircle (color: .orange, friendName: "Parents \nFighting")
@@ -76,10 +76,10 @@ struct WhoFighting: View {
            VStack {
                
             Spacer ()
-                   .frame(height: 100)
+                   .frame(height: 125)
                 
-              Text("")
-                            .font(.system(size: 37))
+              Text("Drama n' Fights")
+                            .font(.system(size: 22))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
