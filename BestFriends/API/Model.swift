@@ -49,7 +49,7 @@ struct User: Codable {
     var id: String
     var firstName: String
     var lastName: String
-    var APNToken: String?
+    var APNToken: String
     var friends: [String]?
     var groups: [String]?
     var hiddenGroups: [String]?

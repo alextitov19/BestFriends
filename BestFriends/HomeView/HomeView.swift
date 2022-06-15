@@ -22,7 +22,7 @@ struct HomeView: View {
     
     @State private var newGroupMembers: [String] = []
     
-    @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", atmosphere: ""), groups: [])
+    @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), groups: [])
     
     var body: some View {
         NavigationView {
@@ -75,8 +75,7 @@ struct HomeView: View {
                         EmptyView()
                             .alert(isPresented: $showNewRoomNameDialog,
                                    TextAlert(title: "Create New Room",
-                                             message: "Input the desired name for the new chat room",
-                                             keyboardType: .numberPad) { name in
+                                             message: "Input the desired name for the new chat room") { name in
                                 if let text = name {
                                     // Text was accepted
                                     print("Got name: ", text)
@@ -188,7 +187,7 @@ struct HomeView: View {
                         }
                         
                         
-                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: homeData!.atmosphere),
+                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
                             Text("Friend Changed Mood")
                                 .fontWeight(.thin)

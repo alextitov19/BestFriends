@@ -7,6 +7,7 @@
 
 import Foundation
 import Promises
+import SwiftUI
 
 struct Tokens :Codable{
     var AccessToken: Token
@@ -47,6 +48,8 @@ enum AuthErrors: Error {
 }
 
 class Helper {
+    @EnvironmentObject var sessionManager: SessionManager
+
     static let serviceName = "BestFriendsService"
     
     private var signUpUrl: String
@@ -306,6 +309,7 @@ class Helper {
             data, response in
             return Promise<(data:Data,response:URLResponse)>{ fulfill, reject in
                 if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 401 {
+                    self.sessionManager.showLogin()
                     reject(AuthErrors.renewTokenExpired)
                     return
                 }

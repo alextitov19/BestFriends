@@ -50,13 +50,13 @@ struct PhotoPopView: View {
     }
     
     private func loadData() {
-        let p1 = PhotoPopImageView(image: UIImage(imageLiteralResourceName: "girlwalking"), user: User(id: "1", firstName: "First", lastName: "F", atmosphere: ""))
-        let p2 = PhotoPopImageView(image: UIImage(imageLiteralResourceName: "girlwalking"), user: User(id: "2", firstName: "Second", lastName: "F", atmosphere: ""))
-        let p3 = PhotoPopImageView(image: UIImage(imageLiteralResourceName: "girlwalking"), user: User(id: "3", firstName: "Third", lastName: "F", atmosphere: ""))
-        
-        photoPopImages.append(p1)
-        photoPopImages.append(p2)
-        photoPopImages.append(p3)
+//        let p1 = PhotoPopImageView(image: UIImage(imageLiteralResourceName: "girlwalking"), user: User(id: "1", firstName: "First", lastName: "F", atmosphere: ""))
+//        let p2 = PhotoPopImageView(image: UIImage(imageLiteralResourceName: "girlwalking"), user: User(id: "2", firstName: "Second", lastName: "F", atmosphere: ""))
+//        let p3 = PhotoPopImageView(image: UIImage(imageLiteralResourceName: "girlwalking"), user: User(id: "3", firstName: "Third", lastName: "F", atmosphere: ""))
+//        
+//        photoPopImages.append(p1)
+//        photoPopImages.append(p2)
+//        photoPopImages.append(p3)
 
     }
 }
