@@ -128,7 +128,6 @@
 		CFA1226628598DAA00E22E84 /* Apologies2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226528598DAA00E22E84 /* Apologies2.swift */; };
 		CFA1226828598DB800E22E84 /* Apologies3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226728598DB800E22E84 /* Apologies3.swift */; };
 		CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA12269285994AE00E22E84 /* PickMediator2.swift */; };
-		CFA1226C2859983600E22E84 /* PickMediator3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226B2859983600E22E84 /* PickMediator3.swift */; };
 		CFAB5400281A99B600BBF502 /* Step6_TextingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */; };
 		CFAB5402281A9A1D00BBF502 /* Step7_TimeToTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */; };
 		CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */; };
@@ -294,7 +293,6 @@
 		CFA1226528598DAA00E22E84 /* Apologies2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies2.swift; sourceTree = "<group>"; };
 		CFA1226728598DB800E22E84 /* Apologies3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies3.swift; sourceTree = "<group>"; };
 		CFA12269285994AE00E22E84 /* PickMediator2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator2.swift; sourceTree = "<group>"; };
-		CFA1226B2859983600E22E84 /* PickMediator3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator3.swift; sourceTree = "<group>"; };
 		CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step6_TextingFirst.swift; sourceTree = "<group>"; };
 		CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step7_TimeToTalk.swift; sourceTree = "<group>"; };
 		CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4_NuclearOption.swift; sourceTree = "<group>"; };
@@ -603,9 +601,9 @@
 		CF2DBCE72853D803008616A3 /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
+				62319AAC284A788000CA0359 /* FG_Video.swift */,
 				CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */,
 				CFA12269285994AE00E22E84 /* PickMediator2.swift */,
-				CFA1226B2859983600E22E84 /* PickMediator3.swift */,
 			);
 			path = Mediator;
 			sourceTree = "<group>";
@@ -630,7 +628,6 @@
 				CFA1225B285975E100E22E84 /* Apologies */,
 				CF2DBCE72853D803008616A3 /* Mediator */,
 				CF2DBCE62853D7E6008616A3 /* Being Accountable */,
-				62319AAC284A788000CA0359 /* FG_Video.swift */,
 				CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */,
 			);
 			path = "Friend Group Fighting";
@@ -1185,7 +1182,6 @@
 				CF785692284F3CE900B31803 /* HideoutsPlayList.swift in Sources */,
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
 				CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */,
-				CFA1226C2859983600E22E84 /* PickMediator3.swift in Sources */,
 				CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */,
 				7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */,
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
