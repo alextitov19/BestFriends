@@ -40,13 +40,13 @@ struct WhoFighting: View {
 //            Image("planet_4")
         
         ZStack {
-
-            NavigationLink(destination: FightWithParents(), label: {
-                WhoFightingCircle (color: .pink, friendName: "Fight \nwith \nParents")
-                })
-            .offset(x: showItems ? 100 : 0, y: showItems ? -150: 0)
-             
-     
+//
+//            NavigationLink(destination: FightWithParents(), label: {
+//                WhoFightingCircle (color: .pink, friendName: "Fight \nwith \nParents")
+//                })
+//            .offset(x: showItems ? 100 : 0, y: showItems ? -150: 0)
+//             
+//     
            
               NavigationLink(destination: ParentsFighting(), label: {
                   WhoFightingCircle (color: .orange, friendName: "Parents \nFighting")

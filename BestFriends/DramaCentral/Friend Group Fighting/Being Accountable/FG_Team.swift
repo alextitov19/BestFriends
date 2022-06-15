@@ -15,8 +15,11 @@ import SwiftUI
 struct FG_Team: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-
-
+    @State private var colorChangeTap: String = ""
+    @State private var hugTapped = false
+   
+ 
+//    let user: User
 //    let friend: User
     
     var body: some View {
@@ -80,44 +83,31 @@ struct FG_Team: View {
                 Spacer()
                           .frame(height: 35)
                 
-                      Text("Send a Virtual Hug")
-                          .font(.system(size: 40))
-                          .italic()
-                          .fontWeight(.ultraLight)
-                          .foregroundColor(Color.blue)
-
-     
-                      Spacer()
-                          .frame(height: 60)
-         
-                Image("Hug4")
-                    .resizable()
-                    .frame(width: 70, height: 70)
+//                      Text("Send a Virtual Hug")
+//                          .font(.system(size: 40))
+//                          .italic()
+//                          .fontWeight(.ultraLight)
+//                          .foregroundColor(Color.blue)
+//
+//
+//                      Spacer()
+//                          .frame(height: 60)
+//
+//
+//
+//                    if !hugTapped {
+//                    Image("Hug4")
+//                        .resizable()
+//                        .frame(width: 50, height: 50)
+//                        .scaledToFit()
+//                //                        .colorInvert()
+//                        .onTapGesture {
+//                            RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
+//                            hugTapped.toggle()
+//
+//                    }
+                  
                 
-                    .scaledToFit()
-                    .onTapGesture {
-//                        RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
-//                   
-                   
-               
-//            VStack {
-//                Spacer()
-//                    .frame(height: 40)
-//                    
-//                    NavigationLink(
-//                        destination: FG_VideoCall(),
-//                        label: {
-//                            Text("NEXT")
-//                                .fontWeight(.thin)
-//                                .frame(width: 100, height: 40)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 30))
-//                                .background(ColorManager.purple3)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                      
-//                        })
-
             }
               
         }
@@ -125,7 +115,7 @@ struct FG_Team: View {
 }
 }
     }
-}
+
 
 //
 //
@@ -134,5 +124,4 @@ struct FG_Team: View {
 //        FG_Team()
 //    }
 //}
-
 
