@@ -49,35 +49,34 @@ struct FG_Team: View {
                             .italic()
                             .fontWeight(.light)
                             .foregroundColor(Color.blue)
-                      
+                     
                       Spacer()
                             .frame(height: 40)
-                        
-                    
+               
                       
-                      Spacer()
-                          .frame(height: 20)
                       
-                      Text("Maybe everyone's watching")
+                      
+                  
+                      
+                      Text("Get the Friend Group together. \nHelp support them in the \nprivacy of BestFriends.")
                           .font(.system(size: 24))
                           .fontWeight(.light)
                           .foregroundColor(Color.white)
+                      
                       Spacer()
-                          .frame(height: 20)
-                      
-                      
-                      Text("Maybe everyone's talking")
-                          .font(.system(size: 24))
-                          .fontWeight(.light)
-                          .foregroundColor(Color.white)
-                      Spacer()
-                          .frame(height: 20)
-                      
-                      Text("Maybe you don't know what to do?")
-                          .font(.system(size: 24))
-                          .fontWeight(.light)
-                          .foregroundColor(Color.white)
+                            .frame(height: 100)
                 
+                      Text("True friends don't leave a freind behind.")
+                          .font(.system(size: 20))
+                          .fontWeight(.light)
+                          .foregroundColor(Color.white)
+                      
+                      Text("One day you'll need their help.")
+                          .font(.system(size: 20))
+                          .fontWeight(.light)
+                          .foregroundColor(Color.white)
+
+                      
             VStack {
                    
                 Spacer()
