@@ -201,7 +201,7 @@ struct HomeView: View {
                         })
                         NavigationLink(destination: WhoFighting(),
                                        label: {
-                            Text("ALERT - FriendGroup")
+                            Text("ALERT from FriendGroup")
                                 .fontWeight(.thin)
                                 .frame(width: 190, height: 25)
                                 .foregroundColor(.white)
