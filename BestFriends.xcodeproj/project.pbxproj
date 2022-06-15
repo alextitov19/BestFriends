@@ -613,8 +613,8 @@
 		CF2DBCF2285527C9008616A3 /* My Planet */ = {
 			isa = PBXGroup;
 			children = (
-				CF0911902848976A00CB0AF0 /* BestFriendsVideo.swift */,
 				CF381A582829205800B3719E /* OurMission.swift */,
+				CF0911902848976A00CB0AF0 /* BestFriendsVideo.swift */,
 				CFDB15062857EC6700155CEE /* BuildFriendPlaylist */,
 				CFE1946A2812A9E300ED5718 /* Streaks */,
 			);

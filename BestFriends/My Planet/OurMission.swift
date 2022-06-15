@@ -61,12 +61,12 @@ struct OurMission: View {
                 })
                 .offset(x: showItems ? 50 : 0, y: showItems ? -150: 0)
                 
-                
-                NavigationLink(destination: EmptyView(), label: {
-                    WhoFightingCircle (color: .orange, friendName: "Customize \nPlanet \n(Q3: 2022)")
-                })
-                .offset(x: showItems ? -85 : 0, y: showItems ? 115: 0)
-                
+//
+//                NavigationLink(destination: EmptyView(), label: {
+//                    WhoFightingCircle (color: .orange, friendName: "Customize \nPlanet \n(Q3: 2022)")
+//                })
+//                .offset(x: showItems ? -85 : 0, y: showItems ? 115: 0)
+//
                
 //                NavigationLink(destination: MyStreaks(), label: {
 //                                    WhoFightingCircle (color: .pink, friendName: "Streaks")
@@ -113,13 +113,13 @@ struct OurMission: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
                         .opacity(0.65)
                     
-//                    Text("")
-//                        .font(.system(size: 25))
-//                        
-//                        .foregroundColor(.purple)
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    Text("tap")
+                        .font(.system(size: 25))
+                        
+                        .foregroundColor(.purple)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                 }
                 
                 
