@@ -96,22 +96,19 @@ struct ChatView: View {
                 // MARK: Main scroll view
                 ScrollView(.vertical, showsIndicators: false) {
                     ForEach(messages, id: \.id) { message in
+                        if message.senderId == user.id {
+                            ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
+                        } else {
                         ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
                             .onLongPressGesture(minimumDuration: 1, perform: { showingMessageOptions = true })
                             .confirmationDialog("What would you like to do with this message?", isPresented: $showingMessageOptions, titleVisibility: .visible) {
                                 Button("Save to Smile Notes") {
                                     saveToSmileNotes(message: message)
                                 }
-                                
-//                                MARK: We decided to not let the user have the option to 'delete' message for now. We need to see the message if they reported it as abusive
-                                
-                               Button("Delete") {
-                                    
-                                }
-                                
                                 Link("Report Abuse", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
                                 
                             }
+                        }
                     }
                 }
                 
