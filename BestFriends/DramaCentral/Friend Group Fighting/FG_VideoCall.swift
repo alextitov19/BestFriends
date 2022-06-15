@@ -58,7 +58,7 @@ struct FG_VideoCall: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: EmptyView(), label: { FG_VideoCallCircle (color: .blue, friendName: "Friend \nHurt my \nFeelings")
+            NavigationLink(destination: HurtFeelings(), label: { FG_VideoCallCircle (color: .blue, friendName: "Friend \nHurt my \nFeelings")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             

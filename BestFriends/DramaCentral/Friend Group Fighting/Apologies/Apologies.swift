@@ -5,78 +5,63 @@
 //  Created by Social Tech on 6/14/22.
 //
 
+
 import Foundation
-
-
-
-
 import SwiftUI
-
 
 struct Apologies: View {
     
     @EnvironmentObject var sessionManager: SessionManager
 
     var body: some View {
-        ZStack {
+       
+        
+        VStack {
             
+      
+         
+            
+            Text("A P O L O G I E S")
+                .font(.system(size: 40))
+                .foregroundColor(.blue)
+                .fontWeight(.ultraLight)
+                .multilineTextAlignment(.center)
+        
+        ZStack {
+           
             Image("purpleBackground")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
          
-              
+            Image("Shayla3")
+                .frame(width: 320, height: 20)
+//                .resizable()
+//                .scaledToFill()
+//                .ignoresSafeArea()
+//
               VStack {
               
-               
+                  Spacer()
+                      .frame(height: 450)
                   
                   VStack {
-                      Text("??")
-                          .font(.system(size: 40))
-                          .foregroundColor(.white)
-                          .fontWeight(.ultraLight)
-                          .multilineTextAlignment(.center)
-                   
-                        Text("???")
-                            .font(.system(size: 50))
-                            .foregroundColor(.white)
-                            .fontWeight(.ultraLight)
-                            .multilineTextAlignment(.center)
-                      
-                      Text("?????")
-                          .font(.system(size: 60))
-                          .foregroundColor(.white)
-                          .fontWeight(.ultraLight)
-                          .multilineTextAlignment(.center)
-                            
-                        Spacer()
-                            .frame(height: 50)
-                     
+//
+//
             VStack {
-                      
-                        Text("????")
-                            .font(.system(size: 30))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(Color.blue)
-                        
-                        Text("???")
-                            .font(.system(size: 50))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(Color.blue)
-                   
-               
+                Text("Did they hurt \nyour friends feelings?")
+                    .font(.system(size: 30))
+                    .italic()
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                 
             VStack {
-                Spacer()
-                    .frame(height: 30)
-                    
                     NavigationLink(
-                        destination: FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []),
+                        destination: Apologies2(),
                         label: {
-                            Text("NEXT")
+                            Text("Need to Apologise?")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
+                                .frame(width: 300, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
@@ -94,7 +79,7 @@ struct Apologies: View {
     }
 }
 
-
+}
 
 struct Apologies_Previews : PreviewProvider {
     static var previews: some View {
