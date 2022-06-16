@@ -116,6 +116,7 @@
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
 		CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */; };
+		CF763F7E285B06000010D1A9 /* myRoom4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF763F7D285B06000010D1A9 /* myRoom4.mp4 */; };
 		CF785692284F3CE900B31803 /* HideoutsPlayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF785691284F3CE900B31803 /* HideoutsPlayList.swift */; };
 		CF785695284F3DB900B31803 /* Playlist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF785694284F3DB900B31803 /* Playlist.mp4 */; };
 		CF78569B284F480000B31803 /* Seaguls3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF78569A284F480000B31803 /* Seaguls3.mp4 */; };
@@ -286,6 +287,7 @@
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
 		CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPrototype.swift; sourceTree = "<group>"; };
+		CF763F7D285B06000010D1A9 /* myRoom4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom4.mp4; sourceTree = "<group>"; };
 		CF785691284F3CE900B31803 /* HideoutsPlayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideoutsPlayList.swift; sourceTree = "<group>"; };
 		CF785694284F3DB900B31803 /* Playlist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Playlist.mp4; sourceTree = "<group>"; };
 		CF78569A284F480000B31803 /* Seaguls3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Seaguls3.mp4; sourceTree = "<group>"; };
@@ -715,6 +717,7 @@
 			isa = PBXGroup;
 			children = (
 				CFA12277285AB7FE00E22E84 /* ocean.mp4 */,
+				CF763F7D285B06000010D1A9 /* myRoom4.mp4 */,
 				CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */,
 				CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */,
 				CF091197284A736800CB0AF0 /* FGVideo2.mp4 */,
@@ -1058,6 +1061,7 @@
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				CFDB14EA2855957D00155CEE /* face.mp4 in Resources */,
 				CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */,
+				CF763F7E285B06000010D1A9 /* myRoom4.mp4 in Resources */,
 				CFA12270285A9A1E00E22E84 /* myRoom2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				CFA12278285AB7FE00E22E84 /* ocean.mp4 in Resources */,
