@@ -487,8 +487,8 @@
 			children = (
 				7AC4C01E27FF4A08000C4140 /* ChatView.swift */,
 				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
-				CF0911842848328F00CB0AF0 /* HideChat.swift */,
 				CF09118D284894F400CB0AF0 /* InfoView.swift */,
+				CFD0ABCF285BC58D0032CA3D /* HideChat */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -900,6 +900,14 @@
 				CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */,
 			);
 			path = "URGENT Chat Invite";
+			sourceTree = "<group>";
+		};
+		CFD0ABCF285BC58D0032CA3D /* HideChat */ = {
+			isa = PBXGroup;
+			children = (
+				CF0911842848328F00CB0AF0 /* HideChat.swift */,
+			);
+			path = HideChat;
 			sourceTree = "<group>";
 		};
 		CFD12CC52819436F00AB2539 /* OurStory */ = {

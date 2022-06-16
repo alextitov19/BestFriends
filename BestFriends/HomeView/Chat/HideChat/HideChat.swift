@@ -32,17 +32,17 @@ struct HideChatView: View {
 //                            sessionManager.showHome()
 //                        })
 //
-        TextField("Enter your Pin ...", text: $pin)
-            .keyboardType(.decimalPad)
-            .foregroundColor(Color.white)
-            .font(.system(size: 37).weight(.thin))
-            .frame(width: 310, height: 50, alignment: .leading)
-            .background(ColorManager.purple2)
-            .cornerRadius(20)
-            .submitLabel(.done)
-            .onSubmit {submitPin()}
-            
-            Text("Retreive Your Messages")
+//        TextField("Enter your Pin ...", text: $pin)
+//            .keyboardType(.decimalPad)
+//            .foregroundColor(Color.white)
+//            .font(.system(size: 37).weight(.thin))
+//            .frame(width: 310, height: 50, alignment: .leading)
+//            .background(ColorManager.purple2)
+//            .cornerRadius(20)
+//            .submitLabel(.done)
+//            .onSubmit {submitPin()}
+//
+          Text("Retreive Your Messages")
                 .font(.system(size: 80))
                 .foregroundColor(.purple)
                 .fontWeight(.ultraLight)
