@@ -167,12 +167,12 @@ struct HideChatView: View {
                         }//9
                     }//7,8,9
                 }
-//
-          Text("Retreive Your Messages")
-                .font(.system(size: 80))
-                .foregroundColor(.purple)
-                .fontWeight(.ultraLight)
-                .padding()
+
+//          Text("Retreive Your Messages")
+//                .font(.system(size: 80))
+//                .foregroundColor(.purple)
+//                .fontWeight(.ultraLight)
+//                .padding()
             
             Spacer ()
                 .frame(height: 50)
