@@ -115,6 +115,7 @@
 		CF725E2428516D0B0096342F /* HideChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2328516D0B0096342F /* HideChat2.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
+		CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */; };
 		CF785692284F3CE900B31803 /* HideoutsPlayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF785691284F3CE900B31803 /* HideoutsPlayList.swift */; };
 		CF785695284F3DB900B31803 /* Playlist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF785694284F3DB900B31803 /* Playlist.mp4 */; };
 		CF78569B284F480000B31803 /* Seaguls3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF78569A284F480000B31803 /* Seaguls3.mp4 */; };
@@ -284,6 +285,7 @@
 		CF725E2328516D0B0096342F /* HideChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideChat2.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
+		CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPrototype.swift; sourceTree = "<group>"; };
 		CF785691284F3CE900B31803 /* HideoutsPlayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideoutsPlayList.swift; sourceTree = "<group>"; };
 		CF785694284F3DB900B31803 /* Playlist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Playlist.mp4; sourceTree = "<group>"; };
 		CF78569A284F480000B31803 /* Seaguls3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Seaguls3.mp4; sourceTree = "<group>"; };
@@ -452,13 +454,13 @@
 				CF3B65A9280071580003A714 /* Settings */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
+				D0CC1A02283EE31900E7461F /* Horizons */,
 				CFDB150A2858F4D200155CEE /* Virtual HUG */,
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
 				CF2DBCF2285527C9008616A3 /* My Planet */,
 				CF763F78285AF0150010D1A9 /* Being First */,
 				CFD046992837D99300BF0B02 /* HIDEOUTS */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
-				D0CC1A02283EE31900E7461F /* Horizons */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD12CC52819436F00AB2539 /* OurStory */,
 				7A1C048627F4C3A90002B173 /* Models */,
@@ -853,6 +855,7 @@
 			children = (
 				CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */,
 				CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */,
+				CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */,
 			);
 			path = "Help Beta Test";
 			sourceTree = "<group>";
@@ -1266,6 +1269,7 @@
 				CFD12CCF281A67FC00AB2539 /* DramaMainView.swift in Sources */,
 				7ACDB1812828186D009E1CFD /* NotificationModels.swift in Sources */,
 				CFAB540D281BBA4C00BBF502 /* ReceivedFixFightNotification.swift in Sources */,
+				CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */,
 				CFAB5400281A99B600BBF502 /* Step6_TextingFirst.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,

@@ -221,9 +221,14 @@ struct PlanetActionsView: View {
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("Prototype")
+                                Text("'Horizons'")
                                      .foregroundColor(.white)
                                      .font(.system(size: 17, weight: .bold))
+                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                
+                                Text("Prototype")
+                                     .foregroundColor(.white)
+                                     .font(.system(size: 15, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                  
                    
@@ -277,28 +282,28 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
                     
-                    NavigationLink(destination: EmptyView(),
+                    NavigationLink(destination: HorizonsPrototype(),
                                    label: {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
+                                .foregroundColor(ColorManager.grey3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                 .opacity(0.65)
                             
                             VStack {
                                 
                                 
-                                Text("Horizons")
+                                Text("")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("comming")
+                                Text("")
                                 .foregroundColor(.white)
-                                .font(.system(size: 11, weight: .bold))
+                                .font(.system(size: 16, weight: .bold))
                                 .italic()
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("Q3: 2022")
+                                Text("")
                                 .foregroundColor(.white)
                                 .font(.system(size: 11, weight: .bold))
                                 .italic()
