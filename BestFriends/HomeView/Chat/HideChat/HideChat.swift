@@ -41,6 +41,138 @@ struct HideChatView: View {
 //            .cornerRadius(20)
 //            .submitLabel(.done)
 //            .onSubmit {submitPin()}
+                
+                VStack
+                {
+                    Text("Please select your 4 digit PIN")
+                        .font(.title2)
+                        .foregroundColor(.purple)
+                        .fontWeight(.ultraLight)
+                    
+                    HStack
+                    {
+//                        Circle()
+//                        {
+//                            Text("1")
+//                                .fontWeight(.ultraLight)
+//                                .foregroundColor(.white)
+//                        }.foregroundColor(.purple)
+                        ZStack
+                        {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
+                            
+                            Text("1")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .fontWeight(.ultraLight)
+                        }//1
+                       
+                        ZStack
+                        {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
+                            
+                            Text("2")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .fontWeight(.ultraLight)
+                        }//2
+                        
+                        ZStack
+                        {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
+                            
+                            Text("3")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .fontWeight(.ultraLight)
+                        }//3
+                        
+                    }//1,2,3
+                    
+                    HStack
+                    {
+                        ZStack
+                        {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
+                            
+                            Text("4")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .fontWeight(.ultraLight)
+                        }//4
+                       
+                        ZStack
+                        {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
+                            
+                            Text("5")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .fontWeight(.ultraLight)
+                        }//5
+                        
+                        ZStack
+                        {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
+                            
+                            Text("6")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .fontWeight(.ultraLight)
+                        }//6
+                    }//4,5,6
+                    
+                    HStack
+                    {
+                        ZStack
+                        {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
+                            
+                            Text("7")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .fontWeight(.ultraLight)
+                        }//7
+                       
+                        ZStack
+                        {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
+                            
+                            Text("8")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .fontWeight(.ultraLight)
+                        }//8
+                        
+                        ZStack
+                        {
+                            Circle()
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
+                            
+                            Text("9")
+                                .foregroundColor(.white)
+                                .font(.largeTitle)
+                                .fontWeight(.ultraLight)
+                        }//9
+                    }//7,8,9
+                }
 //
           Text("Retreive Your Messages")
                 .font(.system(size: 80))
