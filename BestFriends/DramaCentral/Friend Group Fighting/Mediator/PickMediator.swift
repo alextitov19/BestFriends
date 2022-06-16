@@ -24,7 +24,7 @@ struct PickMediator: View {
 //                .fontWeight(.ultraLight)
 //                .multilineTextAlignment(.center)
 //
-            Text("M E A D I T O R")
+            Text("M E D I A T O R")
                 .font(.system(size: 40))
                 .foregroundColor(.blue)
                 .fontWeight(.ultraLight)

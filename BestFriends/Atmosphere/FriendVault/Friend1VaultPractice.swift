@@ -40,7 +40,7 @@ struct Friend1VaultPractice: View {
                 .onAppear(perform: loadData)
 
             
-            AdPlayerView(name: "girlYellow")
+            AdPlayerView(name: "blueRoad")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
