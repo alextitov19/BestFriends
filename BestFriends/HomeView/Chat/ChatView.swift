@@ -89,7 +89,7 @@ struct ChatView: View {
                                     isLockTapped.toggle()
                                 }
                             }
-                        })
+                        }) 
                         .fullScreenCover(isPresented: $isLockTapped) {
 //                            HideChatView(sessionManager: _sessionManager, user: user, group: group)
                             EmptyView()
