@@ -71,6 +71,8 @@ struct BetaTestVideo: View {
                             avPlayer.isMuted = true
                         }
                         .frame(height: 450)
+                  
+                    
                     Text("(if you iPhone is in 'silent mode' you will not hear audio)")
                         .font(.system(size: 15))
                         .italic()
