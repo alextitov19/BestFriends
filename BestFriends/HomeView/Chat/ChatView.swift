@@ -92,6 +92,7 @@ struct ChatView: View {
                         })
                         .fullScreenCover(isPresented: $isLockTapped) {
                             HideChatView(sessionManager: _sessionManager, user: user, group: group)
+//                            EmptyView()
                         }
 //                    }//NavLink
                     
