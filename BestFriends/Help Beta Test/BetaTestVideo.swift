@@ -29,15 +29,31 @@ struct BetaTestVideo: View {
 
                 VStack {
     
-                    Text("Be 1st to test new 'Features' in")
+                    
+                    
+                    NavigationLink(
+                        destination: UserBetaTesting(),
+                        label: {
+                            Text("NEXT")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })//NavLink
+                    
+                    
+                    Text("Be 1st to test")
                         .font(.system(size: 30))
                         .italic()
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                         
                     
-                    Text("BestFriends")
-                        .font(.system(size: 50))
+                    Text("protoype 'Features'")
+                        .font(.system(size: 47))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.white)
                     
@@ -54,20 +70,12 @@ struct BetaTestVideo: View {
                         .onDisappear() {
                             avPlayer.isMuted = true
                         }
-                        .frame(height: 400)
-                            
-                    NavigationLink(
-                        destination: UserBetaTesting(),
-                        label: {
-                            Text("NEXT")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })//NavLink
+                        .frame(height: 450)
+                    Text("(if you iPhone is in 'silent mode' you will not hear audio)")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
                     
                     Spacer()
             }//VStack
