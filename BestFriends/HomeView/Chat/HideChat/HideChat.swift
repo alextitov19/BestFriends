@@ -51,12 +51,6 @@ struct HideChatView: View {
                     
                     HStack
                     {
-//                        Circle()
-//                        {
-//                            Text("1")
-//                                .fontWeight(.ultraLight)
-//                                .foregroundColor(.white)
-//                        }.foregroundColor(.purple)
                         ZStack
                         {
                             Circle()
