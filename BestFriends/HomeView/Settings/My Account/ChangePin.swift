@@ -25,14 +25,9 @@ struct ChangePin: View {
     var body: some View {
 //        NavigationView {
             ZStack {
-                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                    .ignoresSafeArea()
-//                Image("settingsBackground")
-//                    .resizable()
-//                    .ignoresSafeArea()
-//                    .scaledToFill()
+               
                 
-                ColorManager.grey3
+                ColorManager.grey4
                     .ignoresSafeArea()
                 
 
@@ -127,9 +122,9 @@ struct ChangePin: View {
 //    }
 
 
-
-struct ChangePin_Previews : PreviewProvider {
-    static var previews: some View {
-        ChangePin()
-    }
-}
+//
+//struct ChangePin_Previews : PreviewProvider {
+//    static var previews: some View {
+//        ChangePin()
+//    }
+//}
