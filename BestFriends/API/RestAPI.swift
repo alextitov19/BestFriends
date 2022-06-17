@@ -158,7 +158,9 @@ class RestApi {
     public func sendPushNotification(title: String, body: String, APNToken: String) {
 //        pns.sendPushNotification(to: APNToken, title: title, body: body)
         let createNotification = CreateNotification(title: title, body: body, APNToken: APNToken)
-        helper.sendPushNotification(url: API_URL + "/notification", createNotification: createNotification)
+        helper.sendPushNotification(url: API_URL + "/notification", createNotification: createNotification).then({ result in
+            print("Result of sending push notification: ", result)
+        })
     }
       
     
