@@ -17,11 +17,14 @@ struct HideChatView: View {
     
     var body: some View {
         ZStack {
-            Image("settingsBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+//            Image("settingsBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
            
+            ColorManager.grey3
+                .ignoresSafeArea()
+            
             VStack {
 //                HStack {
 //                    Image("home-alt2")

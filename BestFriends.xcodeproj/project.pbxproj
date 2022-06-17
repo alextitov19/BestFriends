@@ -154,6 +154,7 @@
 		CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */; };
 		CFD0469C2837D9F400BF0B02 /* HideoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */; };
 		CFD0469F2838394C00BF0B02 /* UrgentChatInvite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */; };
+		CFD0ABD1285C00FF0032CA3D /* ReportIssues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
 		CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC0281770B600AB2539 /* MyStreaks.swift */; };
 		CFD12CC428179CD600AB2539 /* StreakCongratulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC328179CD600AB2539 /* StreakCongratulations.swift */; };
@@ -325,6 +326,7 @@
 		CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendValutTrackMoods.swift; sourceTree = "<group>"; };
 		CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideoutsView.swift; sourceTree = "<group>"; };
 		CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentChatInvite.swift; sourceTree = "<group>"; };
+		CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIssues.swift; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
 		CFD12CC0281770B600AB2539 /* MyStreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStreaks.swift; sourceTree = "<group>"; };
 		CFD12CC328179CD600AB2539 /* StreakCongratulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCongratulations.swift; sourceTree = "<group>"; };
@@ -668,6 +670,7 @@
 				CF3B65DB2801F4D40003A714 /* CustomizationView.swift */,
 				CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */,
 				CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */,
+				CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */,
 			);
 			path = "My Account";
 			sourceTree = "<group>";
@@ -1168,6 +1171,7 @@
 				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
+				CFD0ABD1285C00FF0032CA3D /* ReportIssues.swift in Sources */,
 				7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */,
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,

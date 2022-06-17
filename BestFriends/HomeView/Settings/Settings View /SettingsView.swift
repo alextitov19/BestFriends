@@ -23,12 +23,14 @@ struct SettingsView: View {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
             
-            Image("settingsBackground")
-                .resizable()
+//            Image("settingsBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
+            ColorManager.grey4
                 .ignoresSafeArea()
-                .scaledToFill()
-            
-            
+
             VStack {
                 HStack {
                     Button(action: {
@@ -41,10 +43,13 @@ struct SettingsView: View {
                             .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
                     }
-                    .padding(.trailing, 20)
+                    .padding(.trailing, 0)
                     
-                    Text("Settings")
-                        .font(.system(size: 30))
+                    Text("My Planet / Settings")
+//                        .font(.system(size: 30))
+//                    Text("Friend Requests")
+                        .foregroundColor(.gray)
+                        .font(.system(size: 30, weight: .bold))
                     
                     Spacer()
                     
@@ -109,7 +114,8 @@ struct SettingsView: View {
                         HStack {
                             Text("Report Abusive Behavior")
                                 .font(.system(size: 20))
-                                .foregroundColor(ColorManager.red)
+                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+//                                .foregroundColor(ColorManager.red)
                             
                             Spacer()
                             
@@ -150,11 +156,13 @@ struct SettingsView: View {
                     
                     Divider()
                     
-                    
+                    NavigationLink(
+                        destination: ReportIssues(),
+                        label: {
                             HStack {
-                                Text("Report issues with BestFriends")
+                                Text("Report Technical Issues")
                                     .font(.system(size: 20))
-                                    .foregroundColor(ColorManager.red)
+                                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                                 
                                 Spacer()
                                 
@@ -165,11 +173,28 @@ struct SettingsView: View {
                                     .colorInvert()
                             }
                             .padding(.horizontal, 15)
-                            .onTapGesture {
-                                RestApi.instance.signOut()
-                                sessionManager.showLogin()
-                            }
+                            .navigationBarHidden(true)     })
                     
+//                            HStack {
+//                                Text("Report issues with BestFriends")
+//                                    .font(.system(size: 20))
+//                                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+////                                    .foregroundColor(ColorManager.red)
+//
+//                                Spacer()
+//
+//                                Image("arrowRight")
+//                                    .resizable()
+//                                    .frame(width: 25, height: 25)
+//                                    .scaledToFit()
+//                                    .colorInvert()
+//                            }
+//                            .padding(.horizontal, 15)
+//                            .onTapGesture {
+//                                RestApi.instance.signOut()
+//                                sessionManager.showLogin()
+//                            }
+//
                     Divider()
                     
                     

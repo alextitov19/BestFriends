@@ -29,18 +29,19 @@ struct SettingsNotificationsView: View {
                 .ignoresSafeArea()
             
             
-            Image("HomeBackground2")
-                .resizable()
+//            Image("HomeBackground2")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+            ColorManager.grey3
                 .ignoresSafeArea()
-                .scaledToFill()
-            
             
             VStack {
                 HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
-                        Image("arrowRight")
+                        Image("")
                             .resizable()
                             .frame(width: 25, height: 25)
                             .scaledToFit()
@@ -62,7 +63,7 @@ struct SettingsNotificationsView: View {
                 }
                 
                 Spacer()
-                    .frame(height: 200)
+                    .frame(height: 100)
                 
 //                NavigationLink(
 ////                    destination: NotificationsOnOffPage(),
@@ -98,7 +99,7 @@ struct SettingsNotificationsView: View {
 //
                 
                 Spacer()
-                    .frame(height: 200)
+                    .frame(height: 100)
                 
                     Divider()
                       

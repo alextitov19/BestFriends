@@ -1,15 +1,15 @@
 //
-//  TermsOfServicePrivacy.swift
+//  ReportIssues.swift
 //  BestFriends
 //
-//  Created by Social Tech on 4/8/22.
+//  Created by Social Tech on 6/16/22.
 //
 
 import Foundation
 
 import SwiftUI
 
-struct TermsConditionsView: View {
+struct ReportIssues: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
@@ -43,7 +43,7 @@ struct TermsConditionsView: View {
                     
                     Spacer()
                     
-                    Text("Privacy Policy &\nTerms of Service")
+                    Text("Report Technical Issues")
                         .font(.system(size: 25))
                         .offset(x: -25)
                         .foregroundColor(.black)
@@ -56,10 +56,10 @@ struct TermsConditionsView: View {
                 Divider()
                     .foregroundColor(.white)
                 
-                Link(destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!) {
+                Link(destination: URL(string: "https://socialtechlabs.com/reporting-issues-in-bestfriends/")!) {
                     
                     HStack {
-                        Text("Privacy Policy")
+                        Text("Report Issues")
                             .font(.system(size: 25)) .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
                          .frame(maxHeight: 0)
                         
@@ -76,35 +76,35 @@ struct TermsConditionsView: View {
                 }
                 
                 Divider()
-                
-                Link(destination: URL(string: "https://socialtechlabs.com/terms-service/")!) {
-                    HStack {
-                        Text("Terms of Serivce")
-                            .font(.system(size: 30))
-                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-
-                        Spacer()
-                      
-
-                        Image("arrowRight")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-                        
-                       
-                    }
-                }
-                
+//
+//                Link(destination: URL(string: "https://socialtechlabs.com/terms-service/")!) {
+//                    HStack {
+//                        Text("Terms of Serivce")
+//                            .font(.system(size: 30))
+//                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+//
+//                        Spacer()
+//
+//
+//                        Image("arrowRight")
+//                            .resizable()
+//                            .frame(width: 25, height: 25)
+//                            .scaledToFit()
+//
+//
+//                    }
+//                }
+//
                 Spacer()
                       .frame(height: 115)
                 
-                Text("Safety TIP")
+                Text("We Ask")
                     .font(.system(size: 30))
                     .offset(x: -25)
                     .foregroundColor(.green)
                     .frame(height: 50)
                 
-                Text("The BestFriends app does not claim to offer clinical or professional psychological advice to it's users. BestFriends strives to help make friends better friends. During difficult times users may connect with their 5 most trusted friends for support. If users are experiencing depression we recommend you consult a professional.")
+                Text("Please report any technical issue you find so we can fix them as soon as possigle.")
                     .font(.system(size: 20))
                     .italic()
                     .offset(x: -3)
@@ -122,8 +122,8 @@ struct TermsConditionsView: View {
     }
     
 }
-struct TermsConditionsView_Previews : PreviewProvider {
+struct ReportIssues_Previews : PreviewProvider {
     static var previews: some View {
-        TermsConditionsView()
+        ReportIssues()
     }
 }

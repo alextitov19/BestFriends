@@ -282,7 +282,7 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
                     
-                    NavigationLink(destination: HorizonsPrototype(),
+                    NavigationLink(destination: EmptyView(),
                                    label: {
                         ZStack {
                             Circle()
