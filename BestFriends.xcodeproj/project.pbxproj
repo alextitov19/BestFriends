@@ -19,7 +19,6 @@
 		7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A727F3DA4E00E8282B /* Defaults.swift */; };
 		7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0856A927F3DCC300E8282B /* SessionManager.swift */; };
 		7A1C048527F4BEB30002B173 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1C048427F4BEB30002B173 /* SignUpView.swift */; };
-		7A1CC305285CFD6F00BCA620 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1CC304285CFD6F00BCA620 /* PushNotificationSender.swift */; };
 		7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */; };
 		7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A575274416C200FB6B4F /* ViewExt.swift */; };
 		7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A576274416C200FB6B4F /* TextFieldCustom.swift */; };
@@ -193,7 +192,6 @@
 		7A0856A727F3DA4E00E8282B /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		7A0856A927F3DCC300E8282B /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		7A1C048427F4BEB30002B173 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		7A1CC304285CFD6F00BCA620 /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
 		7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		7A22A575274416C200FB6B4F /* ViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		7A22A576274416C200FB6B4F /* TextFieldCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCustom.swift; sourceTree = "<group>"; };
@@ -461,7 +459,6 @@
 				7A71BD072625292B00E6FA9E /* Info.plist */,
 				7ACDB182282825C1009E1CFD /* GoogleService-Info.plist */,
 				7A380F1528271E3E007151AB /* AppDelegate.swift */,
-				7A1CC304285CFD6F00BCA620 /* PushNotificationSender.swift */,
 				7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */,
 				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
@@ -1296,7 +1293,6 @@
 				CF0911852848328F00CB0AF0 /* HideChat.swift in Sources */,
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
 				CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */,
-				7A1CC305285CFD6F00BCA620 /* PushNotificationSender.swift in Sources */,
 				CFDB15052857DFF400155CEE /* BestFriendsPlaylists.swift in Sources */,
 				CFA122642859801C00E22E84 /* HurtFeelings3.swift in Sources */,
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
