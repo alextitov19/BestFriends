@@ -18,8 +18,6 @@ class RestApi {
 //    let API_URL = "http://localhost:8080/api/v1/services"
 //    let WS_URL = "ws://localhost:8080/api/v1/services"
     
-    let pns = PushNotificationSender()
-
     public static var instance = RestApi()
     
     public var needLogin : Bool {
