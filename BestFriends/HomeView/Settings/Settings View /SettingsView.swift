@@ -28,7 +28,7 @@ struct SettingsView: View {
 //                .ignoresSafeArea()
 //                .scaledToFill()
 //
-            ColorManager.grey4
+            ColorManager.grey3
                 .ignoresSafeArea()
 
             VStack {
