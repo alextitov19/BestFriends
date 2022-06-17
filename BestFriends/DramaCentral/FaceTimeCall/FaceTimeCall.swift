@@ -140,9 +140,7 @@ struct FaceTimeCall: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends - FriendGroup", body: "\(user.firstName) Setup FaceTime Call", APNToken: friend.APNToken ?? "").then { response in
-                    print("Got send APN repsonse: ", response)
-                }
+                RestApi.instance.sendPushNotification(title: "BestFriends - FriendGroup", body: "\(user.firstName) Setup FaceTime Call", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))

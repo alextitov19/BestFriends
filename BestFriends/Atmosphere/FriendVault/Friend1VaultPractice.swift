@@ -169,7 +169,7 @@ struct Friend1VaultPractice: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "Do we need to talk?")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Do we need to talk?", APNToken: friend.APNToken ?? "")
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Do we need to talk?", APNToken: friend.APNToken )
                     }, label: {
                         Text("Do we need to talk?")
                             .fontWeight(.thin)
@@ -185,7 +185,7 @@ struct Friend1VaultPractice: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "C")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulation, you did it!", APNToken: friend.APNToken ?? "")
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulation, you did it!", APNToken: friend.APNToken )
                     }, label: {
                         Text("Congradulations, you did it!")
                             .fontWeight(.thin)
@@ -205,7 +205,7 @@ struct Friend1VaultPractice: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "D")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Good Luck - you got this!", APNToken: friend.APNToken ?? "")
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Good Luck - you got this!", APNToken: friend.APNToken )
                     }, label: {
                         Text("Good luck, you got this!")
                             .fontWeight(.thin)
@@ -221,7 +221,7 @@ struct Friend1VaultPractice: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "E")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "We will figure this out", APNToken: friend.APNToken ?? "")
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "We will figure this out", APNToken: friend.APNToken )
                     }, label: {
                         Text("We will figure this out")
                             .fontWeight(.thin)
@@ -253,7 +253,7 @@ struct Friend1VaultPractice: View {
                         .scaledToFit()
 //                        .colorInvert()
                         .onTapGesture {
-                            RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken ?? "")
+                            RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken )
                             hugTapped.toggle()
                         }
                     }
@@ -269,7 +269,7 @@ struct Friend1VaultPractice: View {
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
                             .padding(.horizontal, 30)
                             .onTapGesture {
-                                RestApi.instance.sendPushNotification(title: "Note", body: "", APNToken: friend.APNToken ?? "")
+                                RestApi.instance.sendPushNotification(title: "Note", body: "", APNToken: friend.APNToken )
 
                             noteTapped.toggle()
                             }
@@ -337,9 +337,7 @@ struct Friend1VaultPractice: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends - BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken ?? "").then { response in
-                    print("Got send APN repsonse: ", response)
-                }
+                RestApi.instance.sendPushNotification(title: "BestFriends - BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))

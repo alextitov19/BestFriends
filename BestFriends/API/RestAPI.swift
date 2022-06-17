@@ -17,6 +17,8 @@ class RestApi {
 
 //    let API_URL = "http://localhost:8080/api/v1/services"
 //    let WS_URL = "ws://localhost:8080/api/v1/services"
+    
+    let pns = PushNotificationSender()
 
     public static var instance = RestApi()
     
@@ -149,13 +151,14 @@ class RestApi {
         }
     }
     
-    private func updateUserToken(token: String) -> Promise<Int> {
+    public func updateUserToken(token: String) -> Promise<Int> {
         return helper.updateUserToken(url: API_URL + "/user/update/token/" + token)
     }
     
-    public func sendPushNotification(title: String, body: String, APNToken: String) -> Promise<Int> {
+    public func sendPushNotification(title: String, body: String, APNToken: String) {
+//        pns.sendPushNotification(to: APNToken, title: title, body: body)
         let createNotification = CreateNotification(title: title, body: body, APNToken: APNToken)
-        return helper.sendPushNotification(url: API_URL + "/notification", createNotification: createNotification)
+        helper.sendPushNotification(url: API_URL + "/notification", createNotification: createNotification)
     }
       
     

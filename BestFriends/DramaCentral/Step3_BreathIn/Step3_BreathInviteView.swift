@@ -172,9 +172,7 @@ struct Step3_BreathInviteView: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "Take a breath", body: "\(user.firstName) invited you to take a breath with them!", APNToken: friend.APNToken ?? "").then { response in
-                    print("Got send APN repsonse: ", response)
-                }
+                RestApi.instance.sendPushNotification(title: "Take a breath", body: "\(user.firstName) invited you to take a breath with them!", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
