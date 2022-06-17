@@ -45,30 +45,7 @@ struct SignUpResponse: Codable {
 //    }
 //}
 
-struct User: Codable {
-    var id: String
-    var firstName: String
-    var lastName: String
-    var APNToken: String
-    var friends: [String]?
-    var groups: [String]?
-    var hiddenGroups: [String]?
-    var atmosphere: String
-    var chatPin: String?
-    var smileNotes: [String]?
-    enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case firstName = "first_name"
-        case lastName = "last_name"
-        case APNToken = "apn_token"
-        case friends = "friends"
-        case groups = "groups"
-        case hiddenGroups = "hidden_groups"
-        case atmosphere = "atmosphere"
-        case chatPin = "chat_pin"
-        case smileNotes = "smile_notes"
-    }
-}
+
 
 struct RestResponse :Codable {
     var status: Int

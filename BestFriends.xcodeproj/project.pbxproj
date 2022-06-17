@@ -45,6 +45,7 @@
 		7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A23B32803D62700B87613 /* WebSocket.swift */; };
 		7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */; };
 		7A8A17C128414A390088DC04 /* SmileNoteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A17C028414A390088DC04 /* SmileNoteModels.swift */; };
+		7AA07F5F285D0DD400E9C5A4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA07F5E285D0DD400E9C5A4 /* UserModel.swift */; };
 		7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201122635D5F500C9F00C /* Room+Extensions.swift */; };
 		7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4C01E27FF4A08000C4140 /* ChatView.swift */; };
 		7AC71DA827F3D803008D191B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC71DA727F3D803008D191B /* Helper.swift */; };
@@ -219,6 +220,7 @@
 		7A7A23B32803D62700B87613 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtension.swift; sourceTree = "<group>"; };
 		7A8A17C028414A390088DC04 /* SmileNoteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNoteModels.swift; sourceTree = "<group>"; };
+		7AA07F5E285D0DD400E9C5A4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7AA201122635D5F500C9F00C /* Room+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+Extensions.swift"; sourceTree = "<group>"; };
 		7AC4C01E27FF4A08000C4140 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		7AC71DA727F3D803008D191B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 		7A1C048627F4C3A90002B173 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7AA07F5E285D0DD400E9C5A4 /* UserModel.swift */,
 				7AD8DEFA27F66C8900D9F0E1 /* HomeModels.swift */,
 				7A77FC6F27FBD3C7007CC5E6 /* InviteModels.swift */,
 				7AD8DEFC27F66C9800D9F0E1 /* ChatModels.swift */,
@@ -463,6 +466,7 @@
 				7A0856A927F3DCC300E8282B /* SessionManager.swift */,
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
+				7AC4C01D27FF49F9000C4140 /* Chat */,
 				CF3B65A9280071580003A714 /* Settings */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
@@ -501,7 +505,8 @@
 				CF09118D284894F400CB0AF0 /* InfoView.swift */,
 				CFD0ABCF285BC58D0032CA3D /* HideChat */,
 			);
-			path = Chat;
+			name = Chat;
+			path = HomeView/Chat;
 			sourceTree = "<group>";
 		};
 		7AC71DA627F3D7D4008D191B /* API */ = {
@@ -572,7 +577,6 @@
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				CF785690284EF6D700B31803 /* PlanetMain */,
-				7AC4C01D27FF49F9000C4140 /* Chat */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -1262,6 +1266,7 @@
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
 				CFA1225D285975FF00E22E84 /* Apologies.swift in Sources */,
+				7AA07F5F285D0DD400E9C5A4 /* UserModel.swift in Sources */,
 				CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				7ACACDA82853EAB700D8AB75 /* UIAlertControllerExtension.swift in Sources */,

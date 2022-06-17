@@ -14,6 +14,7 @@ struct HideChatView: View {
     let group: Group
     
     @State private var pin = ""
+    @State private var errorString = ""
     
     var body: some View {
         ZStack {
@@ -22,7 +23,7 @@ struct HideChatView: View {
 //                .ignoresSafeArea()
 //                .scaledToFill()
            
-            ColorManager.grey3
+            ColorManager.grey4
                 .ignoresSafeArea()
             
             VStack {
@@ -47,128 +48,180 @@ struct HideChatView: View {
                 
                 VStack
                 {
-                    Text("Please select your 4 digit PIN")
+                    Text("Enter your pin")
                         .font(.title2)
                         .foregroundColor(.purple)
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.light)
+                    
+                    Text(errorString)
+                        .font(.title3)
+                        .foregroundColor(.red)
+                        .fontWeight(.light)
                     
                     HStack
                     {
-                        ZStack
-                        {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
-                            
-                            Text("1")
-                                .foregroundColor(.white)
-                                .font(.largeTitle)
-                                .fontWeight(.ultraLight)
-                        }//1
-                       
-                        ZStack
-                        {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
-                            
-                            Text("2")
-                                .foregroundColor(.white)
-                                .font(.largeTitle)
-                                .fontWeight(.ultraLight)
-                        }//2
+                        Button(action: {
+                            onTap(n: 1)
+                        }, label: {
+                            ZStack
+                            {
+                                Circle()
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(ColorManager.purple3)
+                                
+                                Text("1")
+                                    .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                    .fontWeight(.ultraLight)
+                            }//1
+                        })
+                        .padding()
                         
-                        ZStack
-                        {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
-                            
-                            Text("3")
-                                .foregroundColor(.white)
-                                .font(.largeTitle)
-                                .fontWeight(.ultraLight)
-                        }//3
+                        Button(action: {
+                            onTap(n: 2)
+                        }, label: {
+                            ZStack
+                            {
+                                Circle()
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(ColorManager.purple3)
+                                
+                                Text("2")
+                                    .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                    .fontWeight(.ultraLight)
+                            }//2
+                        })
+                        .padding()
                         
+                        Button(action: {
+                            onTap(n: 3)
+                        }, label: {
+                            ZStack
+                            {
+                                Circle()
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(ColorManager.purple3)
+                                
+                                Text("3")
+                                    .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                    .fontWeight(.ultraLight)
+                            }//1
+                        })
+                        .padding()
+
                     }//1,2,3
                     
                     HStack
                     {
-                        ZStack
-                        {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
-                            
-                            Text("4")
-                                .foregroundColor(.white)
-                                .font(.largeTitle)
-                                .fontWeight(.ultraLight)
-                        }//4
-                       
-                        ZStack
-                        {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
-                            
-                            Text("5")
-                                .foregroundColor(.white)
-                                .font(.largeTitle)
-                                .fontWeight(.ultraLight)
-                        }//5
+                        Button(action: {
+                            onTap(n: 4)
+                        }, label: {
+                            ZStack
+                            {
+                                Circle()
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(ColorManager.purple3)
+                                
+                                Text("4")
+                                    .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                    .fontWeight(.ultraLight)
+                            }//1
+                        })
+                        .padding()
                         
-                        ZStack
-                        {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
-                            
-                            Text("6")
-                                .foregroundColor(.white)
-                                .font(.largeTitle)
-                                .fontWeight(.ultraLight)
-                        }//6
-                    }//4,5,6
+                        Button(action: {
+                            onTap(n: 5)
+                        }, label: {
+                            ZStack
+                            {
+                                Circle()
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(ColorManager.purple3)
+                                
+                                Text("5")
+                                    .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                    .fontWeight(.ultraLight)
+                            }//2
+                        })
+                        .padding()
+                        
+                        Button(action: {
+                            onTap(n: 6)
+                        }, label: {
+                            ZStack
+                            {
+                                Circle()
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(ColorManager.purple3)
+                                
+                                Text("6")
+                                    .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                    .fontWeight(.ultraLight)
+                            }//1
+                        })
+                        .padding()
+
+                    }//1,2,3
                     
                     HStack
                     {
-                        ZStack
-                        {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
-                            
-                            Text("7")
-                                .foregroundColor(.white)
-                                .font(.largeTitle)
-                                .fontWeight(.ultraLight)
-                        }//7
-                       
-                        ZStack
-                        {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
-                            
-                            Text("8")
-                                .foregroundColor(.white)
-                                .font(.largeTitle)
-                                .fontWeight(.ultraLight)
-                        }//8
+                        Button(action: {
+                            onTap(n: 7)
+                        }, label: {
+                            ZStack
+                            {
+                                Circle()
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(ColorManager.purple3)
+                                
+                                Text("7")
+                                    .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                    .fontWeight(.ultraLight)
+                            }//1
+                        })
+                        .padding()
                         
-                        ZStack
-                        {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
-                            
-                            Text("9")
-                                .foregroundColor(.white)
-                                .font(.largeTitle)
-                                .fontWeight(.ultraLight)
-                        }//9
-                    }//7,8,9
+                        Button(action: {
+                            onTap(n: 8)
+                        }, label: {
+                            ZStack
+                            {
+                                Circle()
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(ColorManager.purple3)
+                                
+                                Text("8")
+                                    .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                    .fontWeight(.ultraLight)
+                            }//2
+                        })
+                        .padding()
+                        
+                        Button(action: {
+                            onTap(n: 9)
+                        }, label: {
+                            ZStack
+                            {
+                                Circle()
+                                    .frame(width: 100, height: 100)
+                                    .foregroundColor(ColorManager.purple3)
+                                
+                                Text("9")
+                                    .foregroundColor(.white)
+                                    .font(.largeTitle)
+                                    .fontWeight(.ultraLight)
+                            }//1
+                        })
+                        .padding()
+
+                    }//1,2,3
                 }
 
 //          Text("Retreive Your Messages")
@@ -184,6 +237,13 @@ struct HideChatView: View {
         }
     }
     
+    private func onTap(n: Int) {
+        pin.append(String(n))
+        if pin.count == 4 {
+            submitPin()
+        }
+    }
+    
     private func submitPin() {
         if user.chatPin == pin {
             var hiddenGroups: [String] = user.hiddenGroups ?? []
@@ -195,6 +255,8 @@ struct HideChatView: View {
                 print("Got update response: ", response)
                 sessionManager.showHome()
             })
+        } else {
+            errorString = "Wrong pin"
         }
     }
 }
