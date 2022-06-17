@@ -21,11 +21,14 @@ struct HurtFeelings2: View {
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
-                .resizable()
-                .scaledToFill()
+//            Image("purpleBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .ignoresSafeArea()
+            ColorManager.purple4
                 .ignoresSafeArea()
-            
+                .onAppear()
+
        
               
               VStack {
@@ -35,7 +38,7 @@ struct HurtFeelings2: View {
                   VStack {
                       Text("If you're feeling")
                           .font(.system(size: 50))
-                          .foregroundColor(.blue)
+                          .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                    
@@ -43,7 +46,7 @@ struct HurtFeelings2: View {
                       
                       Text("B A D")
                           .font(.system(size: 65))
-                          .foregroundColor(.blue)
+                          .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                             
@@ -55,11 +58,12 @@ struct HurtFeelings2: View {
                         Text("It may be a good idea \nto let your friend know \nhow you're feeling to \nclear things up.")
                             .font(.system(size: 30))
                             .italic()
+                            .foregroundColor(ColorManager.grey4)
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
                 
                 Spacer()
-                    .frame(height: 70)
+                    .frame(height: 30)
                 
                 Text("Yes")
                     .font(.system(size: 50))

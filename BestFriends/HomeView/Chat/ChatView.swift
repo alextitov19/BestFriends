@@ -64,9 +64,6 @@ struct ChatView: View {
                             await listenForMessages()
                         }
                     
-//                    NavigationLink(destination: HideChatView(user: <#User#>, group: <#Group#>),label:
-//                    {
-                    
                     
                     Image("lock-alt")
                         .resizable()

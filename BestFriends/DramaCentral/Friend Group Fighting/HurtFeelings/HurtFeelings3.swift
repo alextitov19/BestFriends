@@ -27,18 +27,17 @@ struct HurtFeelings3: View {
     
     var body: some View {
         ZStack {
-            //            ColorManager.purple3
-            //                .ignoresSafeArea()
-            //                .onAppear()
-            //
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
+                        ColorManager.purple4
+                            .ignoresSafeArea()
+                            .onAppear()
             
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+          
             
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
             //            AdPlayerView(name: "face")
             //                .ignoresSafeArea()
             //                .blendMode(.screen)
@@ -51,25 +50,27 @@ struct HurtFeelings3: View {
                         .foregroundColor(Color.white)
                     
                     Spacer()
+//                        .frame(height: 20)
                 }
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("below are some example to approach your friend")
+                    Text("(Here are some examples on \nhow to approach your friend)")
                         .font(.system(size: 15))
                         .italic()
                         .foregroundColor(Color.white)
-                    
                     Spacer()
+//                        .frame(height: 20)
+                
                 }
                 .padding(.horizontal)
                 
                 
-                Text("Hey, I would like to talk \nto you about something \nyou said")
+                Text("Hey, I would like to \ntalk to you about \nsomething you said")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 30))
+                    .font(.system(size: 25))
                     .background(ColorManager.purple3)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -81,7 +82,7 @@ struct HurtFeelings3: View {
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 30))
+                    .font(.system(size: 25))
                     .background(ColorManager.purple3)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -97,11 +98,15 @@ struct HurtFeelings3: View {
                 
                 
                 HStack {
-                    Text("ALERT friends with Push Notification")
-                        .font(.system(size: 23))
+                    Text("ALERT Friend:")
+                        .font(.system(size: 30))
                         .fontWeight(.regular)
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(ColorManager.grey4)
                     
+                    Text("That you are sending them \na message in Chat \nvia Push Notification")
+                        .font(.system(size: 25))
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
                     
                     Spacer()
                 }

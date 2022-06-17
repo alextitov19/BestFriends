@@ -18,37 +18,16 @@ struct HideChatView: View {
     
     var body: some View {
         ZStack {
-            //            Image("settingsBackground")
-            //                .resizable()
-            //                .ignoresSafeArea()
-            //                .scaledToFill()
+           
             
             ColorManager.grey4
                 .ignoresSafeArea()
             
             VStack {
-                //                HStack {
-                //                    Image("home-alt2")
-                //                        .resizable()
-                //                        .frame(width: 30, height: 30)
-                //                        .scaledToFill()
-                //                        .onTapGesture(perform: {
-                //                            sessionManager.showHome()
-                //                        })
-                //
-                //        TextField("Enter your Pin ...", text: $pin)
-                //            .keyboardType(.decimalPad)
-                //            .foregroundColor(Color.white)
-                //            .font(.system(size: 37).weight(.thin))
-                //            .frame(width: 310, height: 50, alignment: .leading)
-                //            .background(ColorManager.purple2)
-                //            .cornerRadius(20)
-                //            .submitLabel(.done)
-                //            .onSubmit {submitPin()}
-                
+               
                 VStack
                 {
-                    Text(user.chatPin.count == 0 ? "Create chat pin" : "Enter your pin")
+                    Text(user.chatPin.count == 0 ? "Create chat PIN" : "Enter your PIN")
                         .font(.title2)
                         .foregroundColor(.purple)
                         .fontWeight(.light)
@@ -279,16 +258,3 @@ struct HideChatView: View {
 //    }
 //}
 
-
-
-//
-//    .fontWeight(.ultraLight)
-//    .foregroundColor(Color.white)
-//    .italic()
-////                    .multilineTextAlignment(.center)
-//    .frame(width: 320, height: 100, alignment: .leading)
-//    .font(.system(size: 35))
-//    .padding(10)
-//   .background(Color.green)
-//    .cornerRadius(40)
-//    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
