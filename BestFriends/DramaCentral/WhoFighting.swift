@@ -54,7 +54,7 @@ struct WhoFighting: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 130: 0)
             
 
-            NavigationLink(destination: FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: []), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
+            NavigationLink(destination: FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), friends: []), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -90: 0)
             

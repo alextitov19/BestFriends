@@ -160,11 +160,11 @@ struct FaceTimeCall: View {
 
 
 
-
-struct FaceTimeCall_Previews : PreviewProvider {
-    static var previews: some View {
-        FaceTimeCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
-    }
-}
+//
+//struct FaceTimeCall_Previews : PreviewProvider {
+//    static var previews: some View {
+//        FaceTimeCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), friends: [])
+//    }
+//}
 
 

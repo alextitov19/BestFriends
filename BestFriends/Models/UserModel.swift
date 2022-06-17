@@ -16,7 +16,7 @@ struct User: Codable {
     var groups: [String]?
     var hiddenGroups: [String]?
     var atmosphere: String
-    var chatPin: String?
+    var chatPin: String
     var smileNotes: [String]?
     enum CodingKeys: String, CodingKey {
         case id = "id"

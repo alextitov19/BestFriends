@@ -22,7 +22,7 @@ struct HomeView: View {
     
     @State private var newGroupMembers: [String] = []
     
-    @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), groups: [])
+    @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), groups: [])
     
     var body: some View {
         NavigationView {

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HideChatView: View {
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     let user: User
     let group: Group
     
@@ -18,37 +18,37 @@ struct HideChatView: View {
     
     var body: some View {
         ZStack {
-//            Image("settingsBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-           
+            //            Image("settingsBackground")
+            //                .resizable()
+            //                .ignoresSafeArea()
+            //                .scaledToFill()
+            
             ColorManager.grey4
                 .ignoresSafeArea()
             
             VStack {
-//                HStack {
-//                    Image("home-alt2")
-//                        .resizable()
-//                        .frame(width: 30, height: 30)
-//                        .scaledToFill()
-//                        .onTapGesture(perform: {
-//                            sessionManager.showHome()
-//                        })
-//
-//        TextField("Enter your Pin ...", text: $pin)
-//            .keyboardType(.decimalPad)
-//            .foregroundColor(Color.white)
-//            .font(.system(size: 37).weight(.thin))
-//            .frame(width: 310, height: 50, alignment: .leading)
-//            .background(ColorManager.purple2)
-//            .cornerRadius(20)
-//            .submitLabel(.done)
-//            .onSubmit {submitPin()}
+                //                HStack {
+                //                    Image("home-alt2")
+                //                        .resizable()
+                //                        .frame(width: 30, height: 30)
+                //                        .scaledToFill()
+                //                        .onTapGesture(perform: {
+                //                            sessionManager.showHome()
+                //                        })
+                //
+                //        TextField("Enter your Pin ...", text: $pin)
+                //            .keyboardType(.decimalPad)
+                //            .foregroundColor(Color.white)
+                //            .font(.system(size: 37).weight(.thin))
+                //            .frame(width: 310, height: 50, alignment: .leading)
+                //            .background(ColorManager.purple2)
+                //            .cornerRadius(20)
+                //            .submitLabel(.done)
+                //            .onSubmit {submitPin()}
                 
                 VStack
                 {
-                    Text("Enter your pin")
+                    Text(user.chatPin.count == 0 ? "Create chat pin" : "Enter your pin")
                         .font(.title2)
                         .foregroundColor(.purple)
                         .fontWeight(.light)
@@ -110,7 +110,7 @@ struct HideChatView: View {
                             }//1
                         })
                         .padding()
-
+                        
                     }//1,2,3
                     
                     HStack
@@ -165,7 +165,7 @@ struct HideChatView: View {
                             }//1
                         })
                         .padding()
-
+                        
                     }//1,2,3
                     
                     HStack
@@ -220,19 +220,19 @@ struct HideChatView: View {
                             }//1
                         })
                         .padding()
-
+                        
                     }//1,2,3
                 }
-
-//          Text("Retreive Your Messages")
-//                .font(.system(size: 80))
-//                .foregroundColor(.purple)
-//                .fontWeight(.ultraLight)
-//                .padding()
-            
-            Spacer ()
-                .frame(height: 50)
-            
+                
+                //          Text("Retreive Your Messages")
+                //                .font(.system(size: 80))
+                //                .foregroundColor(.purple)
+                //                .fontWeight(.ultraLight)
+                //                .padding()
+                
+                Spacer ()
+                    .frame(height: 50)
+                
             }
         }
     }
@@ -245,18 +245,28 @@ struct HideChatView: View {
     }
     
     private func submitPin() {
-        if user.chatPin == pin {
-            var hiddenGroups: [String] = user.hiddenGroups ?? []
-            if let index = hiddenGroups.firstIndex(of: group.id) {
-                hiddenGroups.remove(at: index)
-            }
-            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, smileNotes: user.smileNotes)
+        if user.chatPin.count == 0 {
+            // Create new chat pin
+            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: pin, smileNotes: user.smileNotes)
             RestApi.instance.updateUser(user: updatedUser).then({ response in
                 print("Got update response: ", response)
                 sessionManager.showHome()
             })
         } else {
-            errorString = "Wrong pin"
+            // Check in pins are equal, unhide room
+            if user.chatPin == pin {
+                var hiddenGroups: [String] = user.hiddenGroups ?? []
+                if let index = hiddenGroups.firstIndex(of: group.id) {
+                    hiddenGroups.remove(at: index)
+                }
+                let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, smileNotes: user.smileNotes)
+                RestApi.instance.updateUser(user: updatedUser).then({ response in
+                    print("Got update response: ", response)
+                    sessionManager.showHome()
+                })
+            } else {
+                errorString = "Wrong pin"
+            }
         }
     }
 }
