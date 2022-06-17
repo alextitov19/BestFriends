@@ -19,7 +19,8 @@ struct FG_VideoCall: View {
     
     let user: User
     let friends: [User]
-    
+    let groups: [Group]
+
     var body: some View {
         
         ZStack {
@@ -58,7 +59,7 @@ struct FG_VideoCall: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: HurtFeelings(), label: { FG_VideoCallCircle (color: .blue, friendName: "Friend \nHurt my \nFeelings")
+            NavigationLink(destination: HurtFeelings(user: user, friends: friends, groups: groups), label: { FG_VideoCallCircle (color: .blue, friendName: "Friend \nHurt my \nFeelings")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             

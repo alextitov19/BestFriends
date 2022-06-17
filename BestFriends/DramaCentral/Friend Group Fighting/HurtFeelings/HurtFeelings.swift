@@ -11,6 +11,10 @@ import SwiftUI
 struct HurtFeelings: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    
+    let user: User
+    let friends: [User]
+    let groups: [Group]
 
     var body: some View {
        
@@ -60,7 +64,7 @@ struct HurtFeelings: View {
                  
             VStack {  
                     NavigationLink(
-                        destination: HurtFeelings2(),
+                        destination: HurtFeelings2(user: user, friends: friends, groups: groups),
                         label: {
                             Text("If so, we can HELP")
                                 .fontWeight(.thin)
@@ -82,9 +86,9 @@ struct HurtFeelings: View {
     }
 
 
-struct HurtFeelings_Previews : PreviewProvider {
-    static var previews: some View {
-        HurtFeelings()
-    }
-}
+//struct HurtFeelings_Previews : PreviewProvider {
+//    static var previews: some View {
+//        HurtFeelings()
+//    }
+//}
 

@@ -109,7 +109,7 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
 
-                    NavigationLink(destination: WhoFighting(),
+                    NavigationLink(destination: WhoFighting(user: user, friends: friends, groups: groups),
                                    label: {
                         
                         ZStack {

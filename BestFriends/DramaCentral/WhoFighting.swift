@@ -12,6 +12,10 @@ import AVKit
 
 struct WhoFighting: View {
     
+    let user: User
+    let friends: [User]
+    let groups: [Group]
+    
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
     @EnvironmentObject var sessionManager: SessionManager
@@ -54,7 +58,7 @@ struct WhoFighting: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 130: 0)
             
 
-            NavigationLink(destination: FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), friends: []), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
+            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -90: 0)
             
@@ -130,12 +134,12 @@ struct WhoFightingCircle: View {
 }
 
 
-struct WhoFighting_Previews : PreviewProvider {
-    static var previews: some View {
-        WhoFighting()
-    }
-
-}
+//struct WhoFighting_Previews : PreviewProvider {
+//    static var previews: some View {
+//        WhoFighting()
+//    }
+//
+//}
 
 //
 //    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)

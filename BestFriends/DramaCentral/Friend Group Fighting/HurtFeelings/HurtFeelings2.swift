@@ -13,6 +13,10 @@ import SwiftUI
 struct HurtFeelings2: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    
+    let user: User
+    let friends: [User]
+    let groups: [Group]
 
     var body: some View {
         ZStack {
@@ -76,7 +80,7 @@ struct HurtFeelings2: View {
                     .frame(height: 30)
                     
                     NavigationLink(
-                        destination: EmptyView(),
+                        destination: HurtFeelings3(user: user, friends: friends, groups: groups),
                         label: {
                             Text("Let's give it a shot, ok!")
                                 .fontWeight(.thin)

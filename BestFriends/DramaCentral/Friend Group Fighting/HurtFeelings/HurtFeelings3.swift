@@ -16,8 +16,7 @@ struct HurtFeelings3: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
-    let friend: User
-    let friends: [User] = []
+    let friends: [User]
     let groups: [Group]
     
     @State private var customMessage = "Custom Message"
@@ -197,27 +196,27 @@ struct HurtFeelings3: View {
     }
     
     func sendMessage() {
-        if customMessage.count == 0 { return }
-        
-        let arr = [user.id, friend.id]
-        for g in groups {
-            if g.members.containsSameElements(as: arr) {
-                // Send chat message to this existing group
-                RestApi.instance.createChatMessage(groupId: g.id, body: customMessage).then({ response in
-                    sessionManager.showChat(user: user, group: g)
-                })
-                
-                return
-            }
-        }
-        
-        // Create new group
-        RestApi.instance.createGroup(name: "\(user.firstName), \(friend.firstName)", members: arr).then { responseGroup in
-            // Send chat message to this group
-            RestApi.instance.createChatMessage(groupId: responseGroup.id, body: customMessage).then({ response in
-                sessionManager.showChat(user: user, group: responseGroup)
-            })
-        }
+//        if customMessage.count == 0 { return }
+//        
+//        let arr = [user.id, friend.id]
+//        for g in groups {
+//            if g.members.containsSameElements(as: arr) {
+//                // Send chat message to this existing group
+//                RestApi.instance.createChatMessage(groupId: g.id, body: customMessage).then({ response in
+//                    sessionManager.showChat(user: user, group: g)
+//                })
+//                
+//                return
+//            }
+//        }
+//        
+//        // Create new group
+//        RestApi.instance.createGroup(name: "\(user.firstName), \(friend.firstName)", members: arr).then { responseGroup in
+//            // Send chat message to this group
+//            RestApi.instance.createChatMessage(groupId: responseGroup.id, body: customMessage).then({ response in
+//                sessionManager.showChat(user: user, group: responseGroup)
+//            })
+//        }
     }
     
     struct RectView: View {
