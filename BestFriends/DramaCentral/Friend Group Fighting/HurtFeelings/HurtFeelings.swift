@@ -36,10 +36,14 @@ struct HurtFeelings: View {
         
         ZStack {
            
-            Image("purpleBackground")
-                .resizable()
-                .scaledToFill()
+            ColorManager.purple4
                 .ignoresSafeArea()
+                .onAppear()
+            
+//            Image("purpleBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .ignoresSafeArea()
          
             Image("girlwalking")
 //                .frame(width: 300, height: 40)
