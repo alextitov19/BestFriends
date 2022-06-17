@@ -35,7 +35,7 @@ struct InviteView: View {
                     .font(.system(size: 27, weight: .light))
                 
                 
-                Text("1) Ask friend to download BestFriends \n2) Enter their email - tap [Invite] \n3) Only invite once \n4) Don't each invite each other \n 5) If duplicate planets delete in Settings")
+                Text("1) Ask friend to download BestFriends \n2) Enter their email - tap [Invite] \n3) Only invite once \n4) Only one person sends an invite \n 5) If duplicate planets delete in Settings")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()

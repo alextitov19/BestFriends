@@ -33,7 +33,7 @@ struct SettingsNotificationsView: View {
 //                .resizable()
 //                .ignoresSafeArea()
 //                .scaledToFill()
-            ColorManager.grey3
+            ColorManager.grey4
                 .ignoresSafeArea()
             
             VStack {
@@ -58,7 +58,7 @@ struct SettingsNotificationsView: View {
                     Text("Notifications")
                         .font(.system(size: 30))
                         .offset(x: -25)
-                        .foregroundColor(.white)
+                        .foregroundColor(.gray)
                     Spacer()
                 }
                 
@@ -82,7 +82,7 @@ struct SettingsNotificationsView: View {
                     .font(.system(size: 30))
                     
                     .offset(x: -3)
-                    .foregroundColor(.green)
+                    .foregroundColor(.purple)
                 Spacer()
                     .frame(height: 50)
                 
@@ -91,7 +91,7 @@ struct SettingsNotificationsView: View {
                     .font(.system(size: 20))
                     .italic()
                     .offset(x: -3)
-                    .foregroundColor(.white)
+                    .foregroundColor(.gray)
                     
                 
 //                Spacer()

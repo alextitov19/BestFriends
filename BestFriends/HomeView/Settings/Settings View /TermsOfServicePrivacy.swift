@@ -25,7 +25,7 @@ struct TermsConditionsView: View {
 //                  .ignoresSafeArea()
 //                  .scaledToFill()
             
-            ColorManager.grey3
+            ColorManager.grey4
                 .ignoresSafeArea()
             
             VStack {
@@ -37,7 +37,7 @@ struct TermsConditionsView: View {
                             .resizable()
                             .frame(width: 25, height: 25)
                             .scaledToFit()
-                            .colorInvert()
+//                            .colorInvert()
                            .rotationEffect(Angle(degrees: 180))
                     }
                     
@@ -46,8 +46,8 @@ struct TermsConditionsView: View {
                     Text("Privacy Policy &\nTerms of Service")
                         .font(.system(size: 25))
                         .offset(x: -25)
-                        .foregroundColor(.black)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .foregroundColor(.gray)
+                        
                 }
                     Spacer()
                         .frame(height: 70)
@@ -60,7 +60,8 @@ struct TermsConditionsView: View {
                     
                     HStack {
                         Text("Privacy Policy")
-                            .font(.system(size: 25)) .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .font(.system(size: 20))
+                            .foregroundColor(.purple)
                          .frame(maxHeight: 0)
                         
                         Spacer()
@@ -80,8 +81,8 @@ struct TermsConditionsView: View {
                 Link(destination: URL(string: "https://socialtechlabs.com/terms-service/")!) {
                     HStack {
                         Text("Terms of Serivce")
-                            .font(.system(size: 30))
-                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .font(.system(size: 20))
+                            .foregroundColor(.purple)
 
                         Spacer()
                       
@@ -89,6 +90,7 @@ struct TermsConditionsView: View {
                         Image("arrowRight")
                             .resizable()
                             .frame(width: 25, height: 25)
+                            .foregroundColor(.gray)
                             .scaledToFit()
                         
                        
@@ -96,7 +98,7 @@ struct TermsConditionsView: View {
                 }
                 
                 Spacer()
-                      .frame(height: 115)
+                      .frame(height: 80)
                 
                 Text("Safety TIP")
                     .font(.system(size: 30))
@@ -104,13 +106,11 @@ struct TermsConditionsView: View {
                     .foregroundColor(.green)
                     .frame(height: 50)
                 
-                Text("The BestFriends app does not claim to offer clinical or professional psychological advice to it's users. BestFriends strives to help make friends better friends. During difficult times users may connect with their 5 most trusted friends for support. If users are experiencing depression we recommend you consult a professional.")
+                Text("The BestFriends app does not claim to offer clinical or professional psychological advice to its users. BestFriends strives to strengthen friendships. During difficult times users may connect with their 5 most trusted friends for support. If users are experiencing anxiety, depression, or other mental health issues, we recommend you consult a professional.")
                     .font(.system(size: 20))
                     .italic()
                     .offset(x: -3)
-                    .foregroundColor(.black)
-                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    
+                    .foregroundColor(.gray)
                 
                 
                 

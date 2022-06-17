@@ -17,14 +17,8 @@ struct MyAccountView: View {
         ZStack {
          
 
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
-//            Image("settingsBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
             
-            ColorManager.grey3
+            ColorManager.grey4
                 .ignoresSafeArea()
             
             VStack {
@@ -39,9 +33,9 @@ struct MyAccountView: View {
                         Image("arrowRight")
                             .resizable()
                             .frame(width: 25, height: 25)
-                            
+                            .foregroundColor(.gray)
                             .scaledToFit()
-                            .colorInvert()
+//                            .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
                     }
                     
@@ -50,6 +44,7 @@ struct MyAccountView: View {
                     
                     Text("Manage My Account")
                         .font(.system(size: 30))
+                        .foregroundColor(.gray)
 
                     Spacer()
                 }
@@ -63,16 +58,16 @@ struct MyAccountView: View {
                        HStack {
                            Text("Reset Password")
                                .font(.system(size: 20))
-                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                               .foregroundColor(.purple)
                                .offset(x: 25)
-                          
                            Spacer()
 
                           Image("arrowRight")
                               .resizable()
                                .frame(width: 25, height: 25)
+                               .foregroundColor(.gray)
                              .scaledToFit()
-                              .colorInvert()
+//                              .colorInvert()
                        }
                    })
 
@@ -84,7 +79,7 @@ struct MyAccountView: View {
                 HStack {
                     Text("Change PIN for Hide Chat")
                             .font(.system(size: 20))
-                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .foregroundColor(.purple)
                             .offset(x: 25)
                     
                            Spacer()
@@ -92,8 +87,9 @@ struct MyAccountView: View {
                           Image("arrowRight")
                               .resizable()
                               .frame(width: 25, height: 25)
+                              .foregroundColor(.gray)
                               .scaledToFit()
-                              .colorInvert()
+//                              .colorInvert()
                       }
                    })
           
@@ -106,15 +102,16 @@ struct MyAccountView: View {
                          HStack {
                       Text("Remove Friend")
                                 .font(.system(size: 20))
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .foregroundColor(.purple)
                                 .offset(x: 25)
                              
                              Spacer()
 
                             Image("arrowRight")
-                                .resizable()                               .frame(width: 25, height: 25)
-                                 .scaledToFit()
-                                 .colorInvert()
+                                .resizable()                 .frame(width: 25, height: 25)
+                                .foregroundColor(.gray)
+                                .scaledToFit()
+//                                 .colorInvert()
                         }
                      })
                   
@@ -126,15 +123,16 @@ struct MyAccountView: View {
                          HStack {
                       Text("Change Notifications Status")
                                 .font(.system(size: 20))
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .foregroundColor(.purple)
                                 .offset(x: 25)
                              
                              Spacer()
 
                             Image("arrowRight")
                                 .resizable()              .frame(width: 25, height: 25)
+                                .foregroundColor(.gray)
                                  .scaledToFit()
-                                 .colorInvert()
+//                                 .colorInvert()
                         }
                      })
 
@@ -149,15 +147,16 @@ struct MyAccountView: View {
                          HStack {
                       Text("Delete My Account")
                                  .font(.system(size: 20))
-                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                 .foregroundColor(.purple)
                                  .offset(x: 25)
 
                           Spacer()
 
                             Image("arrowRight")
-                                .resizable()               .frame(width: 25, height: 25)
+                                .resizable()              .frame(width: 25, height: 25)
+                                .foregroundColor(.gray)
                                  .scaledToFit()
-                                 .colorInvert()
+//                                 .colorInvert()
                         }
                      })
                 Divider()

@@ -45,7 +45,7 @@ struct BetaTestVideo: View {
                         })//NavLink
                     
                     
-                    Text("Be 1st to test")
+                    Text("Be 1st to test new")
                         .font(.system(size: 30))
                         .italic()
                         .fontWeight(.thin)
@@ -73,7 +73,7 @@ struct BetaTestVideo: View {
                         .frame(height: 450)
                   
                     
-                    Text("(if you iPhone is in 'silent mode' you will not hear audio)")
+                    Text("(if your iPhone is on 'silent mode' you will not hear audio)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.thin)

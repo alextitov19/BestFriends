@@ -24,7 +24,7 @@ struct ReportAbuseView: View {
 //                .ignoresSafeArea()
 //                .scaledToFill()
             
-            ColorManager.grey3
+            ColorManager.grey4
                 .ignoresSafeArea()
             
             VStack {
@@ -50,8 +50,9 @@ struct ReportAbuseView: View {
                             Image("arrowRight")
                                 .resizable()
                                 .frame(width: 25, height: 25)
+                                .foregroundColor(.gray)
                                 .scaledToFit()
-                                .colorInvert()
+//                                .colorInvert()
                                .rotationEffect(Angle(degrees: 180))
                         }
                         
@@ -59,6 +60,7 @@ struct ReportAbuseView: View {
                         
                         Text("Report Abuse")
                             .font(.system(size: 30))
+                            .foregroundColor(.gray)
                         
                         Spacer()
                     }
@@ -73,14 +75,15 @@ struct ReportAbuseView: View {
                 HStack {
                     Text("Report Objectionable \nContent & Behavior")
                         .font(.system(size: 20))
-                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .foregroundColor(.purple)
+                       
                     
                     Spacer()
                     
                     Image("arrowRight")
                         .renderingMode(.template)
                         .resizable()
-                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .foregroundColor(.gray)
                         .frame(width: 25, height: 25)
                 }
                 }
@@ -91,14 +94,14 @@ struct ReportAbuseView: View {
                 HStack {
                     Text("Report Copyright Infringement")
                         .font(.system(size: 20))
-                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .foregroundColor(.purple)
                     
                     Spacer()
                     
                     Image("arrowRight")
                         .renderingMode(.template)
                         .resizable()
-                        .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                        .foregroundColor(.gray)
                         .frame(width: 25, height: 25)
                 }
                 }

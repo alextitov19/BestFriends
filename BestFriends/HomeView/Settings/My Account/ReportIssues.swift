@@ -25,7 +25,7 @@ struct ReportIssues: View {
 //                  .ignoresSafeArea()
 //                  .scaledToFill()
             
-            ColorManager.grey3
+            ColorManager.grey4
                 .ignoresSafeArea()
             
             VStack {
@@ -36,8 +36,9 @@ struct ReportIssues: View {
                         Image("arrowRight")
                             .resizable()
                             .frame(width: 25, height: 25)
+                            .foregroundColor(.gray)
                             .scaledToFit()
-                            .colorInvert()
+//                            .colorInvert()
                            .rotationEffect(Angle(degrees: 180))
                     }
                     
@@ -45,9 +46,9 @@ struct ReportIssues: View {
                     
                     Text("Report Technical Issues")
                         .font(.system(size: 25))
-                        .offset(x: -25)
-                        .foregroundColor(.black)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                        .offset(x: -25)
+                        .foregroundColor(.gray)
+                      
                 }
                     Spacer()
                         .frame(height: 70)
@@ -60,14 +61,16 @@ struct ReportIssues: View {
                     
                     HStack {
                         Text("Report Issues")
-                            .font(.system(size: 25)) .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                            .font(.system(size: 20))
+                            .foregroundColor(.purple)
                          .frame(maxHeight: 0)
                         
                         Spacer()
                        
                         Image("arrowRight")
                           
-                            .resizable() .foregroundColor(.black)
+                            .resizable()
+                            .foregroundColor(.gray)
                             .frame(width: 25, height: 25)
                            
                             .scaledToFit()
@@ -101,16 +104,14 @@ struct ReportIssues: View {
                 Text("We Ask")
                     .font(.system(size: 30))
                     .offset(x: -25)
-                    .foregroundColor(.green)
+                    .foregroundColor(.gray)
                     .frame(height: 50)
                 
-                Text("Please report any technical issue you find so we can fix them as soon as possigle.")
+                Text("Please report any technical issues you find so we can fix them as soon as possible.")
                     .font(.system(size: 20))
                     .italic()
                     .offset(x: -3)
-                    .foregroundColor(.black)
-                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    
+                    .foregroundColor(.gray)
                 
                 
                 

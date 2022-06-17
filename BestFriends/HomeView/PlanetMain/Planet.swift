@@ -92,10 +92,6 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-//                                Text("safe")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 15, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 Text("My")
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
@@ -124,11 +120,6 @@ struct PlanetActionsView: View {
                                 .opacity(0.65)
                             
                             VStack {
-//                                Text("FriendGrou")
-//                                    .foregroundColor(.white)
-////                                    .foregroundColor(.white)
-//                                    .font(.system(size: 14, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                                Text("Drama \n n' \nFights")
                                     .foregroundColor(.white)
 //                                    .foregroundColor(.white)
@@ -210,12 +201,7 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-//                                    Text("(help make)")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 11, weight: .bold))
-//                                    .italic()
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
+
                                Text("Test")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
@@ -232,10 +218,6 @@ struct PlanetActionsView: View {
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                  
                    
-//                                Text("friend group \nparents \nBFF")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 11, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
                     })
@@ -256,13 +238,7 @@ struct PlanetActionsView: View {
                                 .opacity(0.65)
                             
                             VStack {
-                                
-//                                Text("update \nmood")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 11, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-                                
+   
                                 Text("My")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
@@ -282,7 +258,7 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
                     
-                    NavigationLink(destination: EmptyView(),
+                    NavigationLink(destination: BuiltByTeens2(),
                                    label: {
                         ZStack {
                             Circle()
@@ -294,20 +270,21 @@ struct PlanetActionsView: View {
                             VStack {
                                 
                                 
-                                Text("")
+                                Text("Built")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 15, weight: .bold))
+                                    .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("")
+                               
+                                Text("by")
                                 .foregroundColor(.white)
                                 .font(.system(size: 16, weight: .bold))
-                                .italic()
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("")
+                             
+                                Text("Teens")
                                 .foregroundColor(.white)
-                                .font(.system(size: 11, weight: .bold))
-                                .italic()
+                                .font(.system(size: 16, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                
                             }
                         }
                     })
