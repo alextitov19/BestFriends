@@ -19,7 +19,6 @@ enum AppState {
     //    case bestFriendsMessages(user: User, atmosphere: Atmosphere, friends: [User], friendAtmospheres: [Atmosphere])
     //
     case fightTextUserIdeas
-    case whoFighting
     case parentsFighting
     case fightWithFriend
     case infoView(user:User,group: Group)
@@ -71,9 +70,6 @@ final class SessionManager: ObservableObject {
     
     func showFightTextUserIdeas() {
         appState = .fightTextUserIdeas
-    }
-    func showWhoFighting() {
-        appState = .whoFighting
     }
     func showParentsFighting() {
         appState = .parentsFighting

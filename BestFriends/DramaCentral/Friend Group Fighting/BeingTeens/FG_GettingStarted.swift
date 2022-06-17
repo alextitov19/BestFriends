@@ -77,7 +77,7 @@ struct FG_GettingStarted: View {
             
                     
                     NavigationLink(
-                        destination: FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), friends: []),
+                        destination: FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), friends: [], groups: []),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)

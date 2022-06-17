@@ -44,10 +44,7 @@ struct BestFriendsApp: App {
 
             case .fightTextUserIdeas:
                 FightTextUserIdeas()
-                    .environmentObject(sessionManager)
-            case .whoFighting:
-                WhoFighting()
-                    .environmentObject(sessionManager)
+//                    .environmentObject(sessionManager)
             case .parentsFighting:
                 ParentsFighting()
                     .environmentObject(sessionManager)

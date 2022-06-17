@@ -101,7 +101,7 @@ struct HomeView: View {
                             
                             // Tapped on the main planet
                             if focusPlanet {
-                                PlanetActionsView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres)
+                                PlanetActionsView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
                                     .environmentObject(sessionManager)
                             }
                             
@@ -198,7 +198,7 @@ struct HomeView: View {
                                 .opacity(0.8)
                                 .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
                         })
-                        NavigationLink(destination: WhoFighting(),
+                        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                        label: {
                             Text("ALERT from FriendGroup")
                                 .fontWeight(.thin)

@@ -159,12 +159,12 @@ struct FG_VideoCallCircle: View {
 }
 
 
-struct FG_VideoCall_Previews : PreviewProvider {
-    static var previews: some View {
-        FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), friends: [])
-    }
-
-}
+//struct FG_VideoCall_Previews : PreviewProvider {
+//    static var previews: some View {
+//        FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), friends: [])
+//    }
+//
+//}
 
 //
 //    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)

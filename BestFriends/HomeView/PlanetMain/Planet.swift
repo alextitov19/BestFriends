@@ -75,6 +75,8 @@ struct PlanetActionsView: View {
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
     
+    let groups: [Group]
+    
     var body: some View {
         
         VStack {
