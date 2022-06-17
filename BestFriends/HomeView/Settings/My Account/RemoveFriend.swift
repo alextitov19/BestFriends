@@ -21,21 +21,15 @@ struct RemoveFriend: View {
     var body: some View {
         ZStack {
             ZStack {
-                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+                ColorManager.grey4
                     .ignoresSafeArea()
-                Image("settingsBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
             
             VStack {
-                Text("Remove Friends")
+                Text("Remove Friend")
                     .font(.system(size: 35))
-                    .foregroundColor(.black)
+                    .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                    .padding(20)
+                   
                 
                 VStack {
                     ForEach(friendids, id: \.self) { id in
@@ -110,11 +104,12 @@ struct RemoveFriend: View {
                 }
             }
         }
+}
        
+//
+//struct RemoveFriend_Previews : PreviewProvider {
+//    static var previews: some View {
+//        RemoveFriend()
+//    }
+//}
 
-struct RemoveFriend_Previews : PreviewProvider {
-    static var previews: some View {
-        RemoveFriend()
-    }
-}
-}

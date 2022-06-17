@@ -25,25 +25,23 @@ struct ChangePin: View {
     var body: some View {
 //        NavigationView {
             ZStack {
-                Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+               
+                
+                ColorManager.grey4
                     .ignoresSafeArea()
-                Image("settingsBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
                 
 
                 VStack {
                     HStack {
-                        Button(action: {
-                            self.presentationMode.wrappedValue.dismiss()
-                        }) {
-                            Image("arrowRight")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .scaledToFit()
-                                .colorInvert()
-                                .rotationEffect(Angle(degrees: 180))
+//                        Button(action: {
+//                            self.presentationMode.wrappedValue.dismiss()
+//                        }) {
+//                            Image("arrowRight")
+//                                .resizable()
+//                                .frame(width: 25, height: 25)
+//                                .scaledToFit()
+//                                .colorInvert()
+//                                .rotationEffect(Angle(degrees: 180))
                         }
                         Spacer()
                     }
@@ -107,7 +105,7 @@ struct ChangePin: View {
                     
                 }
             }
-        }
+        
     
 //    
 //    private func changePin() {
@@ -124,9 +122,9 @@ struct ChangePin: View {
 //    }
 
 
-
-struct ChangePin_Previews : PreviewProvider {
-    static var previews: some View {
-        ChangePin()
-    }
-}
+//
+//struct ChangePin_Previews : PreviewProvider {
+//    static var previews: some View {
+//        ChangePin()
+//    }
+//}

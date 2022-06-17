@@ -29,18 +29,19 @@ struct SettingsNotificationsView: View {
                 .ignoresSafeArea()
             
             
-            Image("HomeBackground2")
-                .resizable()
+//            Image("HomeBackground2")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+            ColorManager.grey4
                 .ignoresSafeArea()
-                .scaledToFill()
-            
             
             VStack {
                 HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
-                        Image("arrowRight")
+                        Image("")
                             .resizable()
                             .frame(width: 25, height: 25)
                             .scaledToFit()
@@ -57,12 +58,12 @@ struct SettingsNotificationsView: View {
                     Text("Notifications")
                         .font(.system(size: 30))
                         .offset(x: -25)
-                        .foregroundColor(.white)
+                        .foregroundColor(.gray)
                     Spacer()
                 }
                 
                 Spacer()
-                    .frame(height: 200)
+                    .frame(height: 100)
                 
 //                NavigationLink(
 ////                    destination: NotificationsOnOffPage(),
@@ -81,7 +82,7 @@ struct SettingsNotificationsView: View {
                     .font(.system(size: 30))
                     
                     .offset(x: -3)
-                    .foregroundColor(.green)
+                    .foregroundColor(.purple)
                 Spacer()
                     .frame(height: 50)
                 
@@ -90,7 +91,7 @@ struct SettingsNotificationsView: View {
                     .font(.system(size: 20))
                     .italic()
                     .offset(x: -3)
-                    .foregroundColor(.white)
+                    .foregroundColor(.gray)
                     
                 
 //                Spacer()
@@ -98,7 +99,7 @@ struct SettingsNotificationsView: View {
 //
                 
                 Spacer()
-                    .frame(height: 200)
+                    .frame(height: 100)
                 
                     Divider()
                       

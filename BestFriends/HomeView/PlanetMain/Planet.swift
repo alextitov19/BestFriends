@@ -92,17 +92,13 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-//                                Text("safe")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 15, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 Text("My")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 Text("Room")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                
                             }
@@ -124,11 +120,6 @@ struct PlanetActionsView: View {
                                 .opacity(0.65)
                             
                             VStack {
-//                                Text("FriendGrou")
-//                                    .foregroundColor(.white)
-////                                    .foregroundColor(.white)
-//                                    .font(.system(size: 14, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                                Text("Drama \n n' \nFights")
                                     .foregroundColor(.white)
 //                                    .foregroundColor(.white)
@@ -171,7 +162,7 @@ struct PlanetActionsView: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    NavigationLink(destination: BestFriendsVideo(),
+                    NavigationLink(destination: SettingsView(),
                                    label: {
                         ZStack {
                             Circle()
@@ -203,34 +194,30 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.grey2)
+                                .foregroundColor(ColorManager.grey3)
                                 .foregroundColor(.pink)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                 .opacity(0.65)
                             
                             VStack {
                                 
-                                    Text("(help make)")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 11, weight: .bold))
-                                    .italic()
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                
-                               Text("BestFriends")
+
+                               Text("Test")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("Better")
+                                Text("'Horizons'")
                                      .foregroundColor(.white)
                                      .font(.system(size: 17, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                
+                                Text("Prototype")
+                                     .foregroundColor(.white)
+                                     .font(.system(size: 15, weight: .bold))
+                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                  
                    
-//                                Text("friend group \nparents \nBFF")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 11, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
                     })
@@ -251,13 +238,7 @@ struct PlanetActionsView: View {
                                 .opacity(0.65)
                             
                             VStack {
-                                
-//                                Text("update \nmood")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 11, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-                                
+   
                                 Text("My")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
@@ -277,32 +258,33 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
                     
-                    NavigationLink(destination: EmptyView(),
+                    NavigationLink(destination: BuiltByTeens2(),
                                    label: {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
+                                .foregroundColor(ColorManager.grey3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                 .opacity(0.65)
                             
                             VStack {
                                 
                                 
-                                Text("Horizons")
+                                Text("Built")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("comming")
+                               
+                                Text("by")
                                 .foregroundColor(.white)
-                                .font(.system(size: 11, weight: .bold))
-                                .italic()
+                                .font(.system(size: 16, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("Q3: 2022")
+                             
+                                Text("Teens")
                                 .foregroundColor(.white)
-                                .font(.system(size: 11, weight: .bold))
-                                .italic()
+                                .font(.system(size: 16, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                
                             }
                         }
                     })

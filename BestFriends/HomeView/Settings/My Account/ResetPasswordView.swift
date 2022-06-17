@@ -23,25 +23,26 @@ struct ResetPasswordView: View {
         ZStack {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
-            Image("settingsBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+//            Image("settingsBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
             
-
+            ColorManager.grey4
+                .ignoresSafeArea()
             
             VStack {
                 HStack {
-                    Button(action: {
-                        self.presentationMode.wrappedValue.dismiss()
-                    }) {
-                        Image("arrowRight")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-                            .colorInvert()
-                            .rotationEffect(Angle(degrees: 180))
-                    }
+//                    Button(action: {
+//                        self.presentationMode.wrappedValue.dismiss()
+//                    }) {
+//                        Image("arrowRight")
+//                            .resizable()
+//                            .frame(width: 25, height: 25)
+//                            .scaledToFit()
+//                            .colorInvert()
+//                            .rotationEffect(Angle(degrees: 180))
+//                    }
                     Spacer()
                 }
                 Spacer()
@@ -51,11 +52,9 @@ struct ResetPasswordView: View {
             VStack {
                               Text("Reset Password")
                                   .font(.system(size: 30))
-                                 .foregroundColor(.black)
+                                 .foregroundColor(.gray)
                                 .multilineTextAlignment(.center)
-                                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                                .shadow(color: Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)), radius: 22)
-                
+                                
                 
                 Spacer()
                     .frame(height: 50)
@@ -113,14 +112,14 @@ struct ResetPasswordView: View {
 //
 //
                    
-                    Text("Submit")
-                        .font(.title)
-                        .foregroundColor(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                        .frame(width: 200, height: 50)
-                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                        .cornerRadius(25)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    
+                Text("Submit")
+                .fontWeight(.thin)
+                .frame(width: 225, height: 40)
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                .font(.system(size: 30))
+                .background(ColorManager.purple3)
+                .cornerRadius(15)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     
                 }
                 

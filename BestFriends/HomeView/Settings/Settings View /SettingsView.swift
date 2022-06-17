@@ -23,12 +23,14 @@ struct SettingsView: View {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
             
-            Image("settingsBackground")
-                .resizable()
+//            Image("settingsBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
+            ColorManager.grey4
                 .ignoresSafeArea()
-                .scaledToFill()
-            
-            
+
             VStack {
                 HStack {
                     Button(action: {
@@ -36,15 +38,18 @@ struct SettingsView: View {
                     }) {
                         Image("arrowRight")
                             .resizable()
+                            .foregroundColor(.gray)
                             .frame(width: 25, height: 25)
+                            .foregroundColor(.gray)
                             .scaledToFit()
-                            .colorInvert()
+//                            .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
                     }
-                    .padding(.trailing, 20)
+                    .padding(.trailing, 0)
                     
-                    Text("Settings")
-                        .font(.system(size: 30))
+                    Text("My Planet / Settings")
+                        .foregroundColor(.gray)
+                        .font(.system(size: 30, weight: .bold))
                     
                     Spacer()
                     
@@ -60,15 +65,15 @@ struct SettingsView: View {
                         HStack {
                             Text("Manage My Account")
                                 .font(.system(size: 20))
-                            //                               .foregroundColor(.black)
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .foregroundColor(.purple)
+                            
                             Spacer()
                             
                             Image("arrowRight")
                                 .resizable()
                                 .frame(width: 25, height: 25)
                                 .scaledToFit()
-                                .colorInvert()
+//                                .colorInvert()
                         }
                         .padding(.horizontal, 15)
                     })
@@ -84,14 +89,16 @@ struct SettingsView: View {
                         HStack {
                             Text("Set-up PhotoPoP")
                                 .font(.system(size: 20))
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .foregroundColor(.purple)
+                                
+                                
                             Spacer()
                             
                             Image("arrowRight")
                                 .resizable()
                                 .frame(width: 25, height: 25)
                                 .scaledToFit()
-                                .colorInvert()
+//                                .colorInvert()
                         }
                         .padding(.horizontal, 15)
                     })
@@ -109,7 +116,7 @@ struct SettingsView: View {
                         HStack {
                             Text("Report Abusive Behavior")
                                 .font(.system(size: 20))
-                                .foregroundColor(ColorManager.red)
+                                .foregroundColor(.purple)
                             
                             Spacer()
                             
@@ -117,7 +124,7 @@ struct SettingsView: View {
                                 .resizable()
                                 .frame(width: 25, height: 25)
                                 .scaledToFit()
-                                .colorInvert()
+//                                .colorInvert()
                         }
                         .padding(.horizontal, 15)
                     })
@@ -133,7 +140,7 @@ struct SettingsView: View {
                         HStack {
                             Text("Terms of Service & Privacy Policy")
                                 .font(.system(size: 20))
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+                                .foregroundColor(.purple)
                             
                             Spacer()
                             
@@ -141,7 +148,7 @@ struct SettingsView: View {
                                 .resizable()
                                 .frame(width: 25, height: 25)
                                 .scaledToFit()
-                                .colorInvert()
+//                                .colorInvert()
                         }
                         .padding(.horizontal, 15)
                         .navigationBarHidden(true)     })
@@ -150,11 +157,13 @@ struct SettingsView: View {
                     
                     Divider()
                     
-                    
+                    NavigationLink(
+                        destination: ReportIssues(),
+                        label: {
                             HStack {
-                                Text("Report issues with BestFriends")
+                                Text("Report Technical Issues")
                                     .font(.system(size: 20))
-                                    .foregroundColor(ColorManager.red)
+                                    .foregroundColor(.purple)
                                 
                                 Spacer()
                                 
@@ -162,14 +171,31 @@ struct SettingsView: View {
                                     .resizable()
                                     .frame(width: 25, height: 25)
                                     .scaledToFit()
-                                    .colorInvert()
+//                                    .colorInvert()
                             }
                             .padding(.horizontal, 15)
-                            .onTapGesture {
-                                RestApi.instance.signOut()
-                                sessionManager.showLogin()
-                            }
+                            .navigationBarHidden(true)     })
                     
+//                            HStack {
+//                                Text("Report issues with BestFriends")
+//                                    .font(.system(size: 20))
+//                                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+////                                    .foregroundColor(ColorManager.red)
+//
+//                                Spacer()
+//
+//                                Image("arrowRight")
+//                                    .resizable()
+//                                    .frame(width: 25, height: 25)
+//                                    .scaledToFit()
+//                                    .colorInvert()
+//                            }
+//                            .padding(.horizontal, 15)
+//                            .onTapGesture {
+//                                RestApi.instance.signOut()
+//                                sessionManager.showLogin()
+//                            }
+//
                     Divider()
                     
                     
@@ -184,7 +210,7 @@ struct SettingsView: View {
                                     .resizable()
                                     .frame(width: 25, height: 25)
                                     .scaledToFit()
-                                    .colorInvert()
+//                                    .colorInvert()
                             }
                             .padding(.horizontal, 15)
                             .onTapGesture {

@@ -115,6 +115,9 @@
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2428516D0B0096342F /* HideChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2328516D0B0096342F /* HideChat2.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
+		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
+		CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */; };
+		CF763F7E285B06000010D1A9 /* myRoom4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF763F7D285B06000010D1A9 /* myRoom4.mp4 */; };
 		CF785692284F3CE900B31803 /* HideoutsPlayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF785691284F3CE900B31803 /* HideoutsPlayList.swift */; };
 		CF785695284F3DB900B31803 /* Playlist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF785694284F3DB900B31803 /* Playlist.mp4 */; };
 		CF78569B284F480000B31803 /* Seaguls3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF78569A284F480000B31803 /* Seaguls3.mp4 */; };
@@ -129,7 +132,8 @@
 		CFA1226628598DAA00E22E84 /* Apologies2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226528598DAA00E22E84 /* Apologies2.swift */; };
 		CFA1226828598DB800E22E84 /* Apologies3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226728598DB800E22E84 /* Apologies3.swift */; };
 		CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA12269285994AE00E22E84 /* PickMediator2.swift */; };
-		CFA1226C2859983600E22E84 /* PickMediator3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226B2859983600E22E84 /* PickMediator3.swift */; };
+		CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */; };
+		CFA12270285A9A1E00E22E84 /* myRoom2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */; };
 		CFAB5400281A99B600BBF502 /* Step6_TextingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */; };
 		CFAB5402281A9A1D00BBF502 /* Step7_TimeToTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */; };
 		CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */; };
@@ -150,6 +154,12 @@
 		CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */; };
 		CFD0469C2837D9F400BF0B02 /* HideoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */; };
 		CFD0469F2838394C00BF0B02 /* UrgentChatInvite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */; };
+		CFD0ABD1285C00FF0032CA3D /* ReportIssues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */; };
+		CFD0ABD4285C25990032CA3D /* BuiltByTeens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD3285C25990032CA3D /* BuiltByTeens.swift */; };
+		CFD0ABD8285C492F0032CA3D /* BuiltByTeens2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */; };
+		CFD0ABDA285C4C720032CA3D /* BuiltByTeensVid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD0ABD9285C4C720032CA3D /* BuiltByTeensVid.mp4 */; };
+		CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */; };
+		CFD0ABDE285C4E7C0032CA3D /* BFVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD0ABDD285C4E7C0032CA3D /* BFVideo.mp4 */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
 		CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC0281770B600AB2539 /* MyStreaks.swift */; };
 		CFD12CC428179CD600AB2539 /* StreakCongratulations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CC328179CD600AB2539 /* StreakCongratulations.swift */; };
@@ -282,6 +292,9 @@
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2328516D0B0096342F /* HideChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideChat2.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
+		CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPrototype.swift; sourceTree = "<group>"; };
+		CF763F7D285B06000010D1A9 /* myRoom4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom4.mp4; sourceTree = "<group>"; };
 		CF785691284F3CE900B31803 /* HideoutsPlayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideoutsPlayList.swift; sourceTree = "<group>"; };
 		CF785694284F3DB900B31803 /* Playlist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Playlist.mp4; sourceTree = "<group>"; };
 		CF78569A284F480000B31803 /* Seaguls3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Seaguls3.mp4; sourceTree = "<group>"; };
@@ -296,7 +309,8 @@
 		CFA1226528598DAA00E22E84 /* Apologies2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies2.swift; sourceTree = "<group>"; };
 		CFA1226728598DB800E22E84 /* Apologies3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies3.swift; sourceTree = "<group>"; };
 		CFA12269285994AE00E22E84 /* PickMediator2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator2.swift; sourceTree = "<group>"; };
-		CFA1226B2859983600E22E84 /* PickMediator3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator3.swift; sourceTree = "<group>"; };
+		CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom1.mp4; sourceTree = "<group>"; };
+		CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom2.mp4; sourceTree = "<group>"; };
 		CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step6_TextingFirst.swift; sourceTree = "<group>"; };
 		CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step7_TimeToTalk.swift; sourceTree = "<group>"; };
 		CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4_NuclearOption.swift; sourceTree = "<group>"; };
@@ -317,6 +331,12 @@
 		CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendValutTrackMoods.swift; sourceTree = "<group>"; };
 		CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideoutsView.swift; sourceTree = "<group>"; };
 		CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentChatInvite.swift; sourceTree = "<group>"; };
+		CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIssues.swift; sourceTree = "<group>"; };
+		CFD0ABD3285C25990032CA3D /* BuiltByTeens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltByTeens.swift; sourceTree = "<group>"; };
+		CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltByTeens2.swift; sourceTree = "<group>"; };
+		CFD0ABD9285C4C720032CA3D /* BuiltByTeensVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuiltByTeensVid.mp4; sourceTree = "<group>"; };
+		CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuiltByTeens3.mp4; sourceTree = "<group>"; };
+		CFD0ABDD285C4E7C0032CA3D /* BFVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BFVideo.mp4; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
 		CFD12CC0281770B600AB2539 /* MyStreaks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStreaks.swift; sourceTree = "<group>"; };
 		CFD12CC328179CD600AB2539 /* StreakCongratulations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCongratulations.swift; sourceTree = "<group>"; };
@@ -449,12 +469,14 @@
 				CF3B65A9280071580003A714 /* Settings */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
+				CFD0ABD2285C256C0032CA3D /* Built by Teens */,
+				D0CC1A02283EE31900E7461F /* Horizons */,
 				CFDB150A2858F4D200155CEE /* Virtual HUG */,
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
 				CF2DBCF2285527C9008616A3 /* My Planet */,
+				CF763F78285AF0150010D1A9 /* Being First */,
 				CFD046992837D99300BF0B02 /* HIDEOUTS */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
-				D0CC1A02283EE31900E7461F /* Horizons */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD12CC52819436F00AB2539 /* OurStory */,
 				7A1C048627F4C3A90002B173 /* Models */,
@@ -479,8 +501,8 @@
 			children = (
 				7AC4C01E27FF4A08000C4140 /* ChatView.swift */,
 				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
-				CF0911842848328F00CB0AF0 /* HideChat.swift */,
 				CF09118D284894F400CB0AF0 /* InfoView.swift */,
+				CFD0ABCF285BC58D0032CA3D /* HideChat */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -606,9 +628,9 @@
 		CF2DBCE72853D803008616A3 /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
+				62319AAC284A788000CA0359 /* FG_Video.swift */,
 				CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */,
 				CFA12269285994AE00E22E84 /* PickMediator2.swift */,
-				CFA1226B2859983600E22E84 /* PickMediator3.swift */,
 			);
 			path = Mediator;
 			sourceTree = "<group>";
@@ -633,7 +655,6 @@
 				CFA1225B285975E100E22E84 /* Apologies */,
 				CF2DBCE72853D803008616A3 /* Mediator */,
 				CF2DBCE62853D7E6008616A3 /* Being Accountable */,
-				62319AAC284A788000CA0359 /* FG_Video.swift */,
 				CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */,
 			);
 			path = "Friend Group Fighting";
@@ -661,6 +682,7 @@
 				CF3B65DB2801F4D40003A714 /* CustomizationView.swift */,
 				CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */,
 				CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */,
+				CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */,
 			);
 			path = "My Account";
 			sourceTree = "<group>";
@@ -709,6 +731,12 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CFD0ABD9285C4C720032CA3D /* BuiltByTeensVid.mp4 */,
+				CFD0ABDD285C4E7C0032CA3D /* BFVideo.mp4 */,
+				CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */,
+				CF763F7D285B06000010D1A9 /* myRoom4.mp4 */,
+				CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */,
+				CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */,
 				CF091197284A736800CB0AF0 /* FGVideo2.mp4 */,
 				CFDB150B2859103B00155CEE /* sadTeen.mp4 */,
 				CFDB14E92855957D00155CEE /* face.mp4 */,
@@ -746,6 +774,14 @@
 				CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */,
 			);
 			path = BeingTeens;
+			sourceTree = "<group>";
+		};
+		CF763F78285AF0150010D1A9 /* Being First */ = {
+			isa = PBXGroup;
+			children = (
+				CF763F79285AF03F0010D1A9 /* BeingFirst.swift */,
+			);
+			path = "Being First";
 			sourceTree = "<group>";
 		};
 		CF785690284EF6D700B31803 /* PlanetMain */ = {
@@ -839,6 +875,7 @@
 			children = (
 				CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */,
 				CFAE7348283C748C00015FD2 /* UserBetaTesting.swift */,
+				CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */,
 			);
 			path = "Help Beta Test";
 			sourceTree = "<group>";
@@ -880,6 +917,23 @@
 				CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */,
 			);
 			path = "URGENT Chat Invite";
+			sourceTree = "<group>";
+		};
+		CFD0ABCF285BC58D0032CA3D /* HideChat */ = {
+			isa = PBXGroup;
+			children = (
+				CF0911842848328F00CB0AF0 /* HideChat.swift */,
+			);
+			path = HideChat;
+			sourceTree = "<group>";
+		};
+		CFD0ABD2285C256C0032CA3D /* Built by Teens */ = {
+			isa = PBXGroup;
+			children = (
+				CFD0ABD3285C25990032CA3D /* BuiltByTeens.swift */,
+				CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */,
+			);
+			path = "Built by Teens";
 			sourceTree = "<group>";
 		};
 		CFD12CC52819436F00AB2539 /* OurStory */ = {
@@ -1041,14 +1095,19 @@
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				CFDB14EA2855957D00155CEE /* face.mp4 in Resources */,
 				CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */,
+				CF763F7E285B06000010D1A9 /* myRoom4.mp4 in Resources */,
+				CFA12270285A9A1E00E22E84 /* myRoom2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A78232E26B2419600CA76FC /* bull.mp4 in Resources */,
 				CF78569B284F480000B31803 /* Seaguls3.mp4 in Resources */,
+				CFD0ABDA285C4C720032CA3D /* BuiltByTeensVid.mp4 in Resources */,
 				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CFDB150C2859103C00155CEE /* sadTeen.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
+				CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */,
+				CFD0ABDE285C4E7C0032CA3D /* BFVideo.mp4 in Resources */,
 				7A2C2159280509DA009362CF /* cloud.mp4 in Resources */,
 				CFDB14FE2855ADE900155CEE /* FeetShowing.mp4 in Resources */,
 				7A78232D26B2419600CA76FC /* blender.mp4 in Resources */,
@@ -1056,6 +1115,7 @@
 				7A383FFD267AC306002F354A /* FieldFlowers.mp4 in Resources */,
 				CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */,
 				CFDB14EE2855983700155CEE /* girlYellow.mp4 in Resources */,
+				CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */,
 				CF785695284F3DB900B31803 /* Playlist.mp4 in Resources */,
 				CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */,
 				7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */,
@@ -1135,7 +1195,9 @@
 				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
 				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
+				CFD0ABD8285C492F0032CA3D /* BuiltByTeens2.swift in Sources */,
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
+				CFD0ABD1285C00FF0032CA3D /* ReportIssues.swift in Sources */,
 				7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */,
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
@@ -1188,10 +1250,10 @@
 				CF785692284F3CE900B31803 /* HideoutsPlayList.swift in Sources */,
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
 				CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */,
-				CFA1226C2859983600E22E84 /* PickMediator3.swift in Sources */,
 				CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */,
 				7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */,
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
+				CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */,
 				CF3B65BD280091280003A714 /* DemoVideoView.swift in Sources */,
 				CFA1226628598DAA00E22E84 /* Apologies2.swift in Sources */,
 				D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */,
@@ -1250,9 +1312,11 @@
 				CFD12CCF281A67FC00AB2539 /* DramaMainView.swift in Sources */,
 				7ACDB1812828186D009E1CFD /* NotificationModels.swift in Sources */,
 				CFAB540D281BBA4C00BBF502 /* ReceivedFixFightNotification.swift in Sources */,
+				CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */,
 				CFAB5400281A99B600BBF502 /* Step6_TextingFirst.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
+				CFD0ABD4285C25990032CA3D /* BuiltByTeens.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
 				D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */,
 				7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */,
@@ -1398,7 +1462,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1428,7 +1492,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

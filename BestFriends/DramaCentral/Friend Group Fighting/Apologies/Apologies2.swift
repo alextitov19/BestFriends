@@ -54,12 +54,24 @@ struct Apologies2: View {
                      
             VStack {
                 
-                Text("It may be time \nto apologize")
-                    .font(.system(size: 30))
-                  
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                
+                Link(destination: URL(string: "https://socialtechlabs.com/apoloigize/")!) {
+                    
+                    Text("Is it time to Apologize?")
+                        .fontWeight(.thin)
+                        .frame(width: 260, height: 40)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 27))
+                        .background(ColorManager.purple3)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                }
+//                Text("It may be time \nto apologize")
+//                    .font(.system(size: 30))
+//
+//                    .fontWeight(.light)
+//                    .foregroundColor(Color.white)
+//
                 Spacer()
                     .frame(height: 50)
                 
@@ -80,7 +92,7 @@ struct Apologies2: View {
                     NavigationLink(
                         destination: EmptyView(),
                         label: {
-                            Text("Breathe, you got this ...")
+                            Text("Ok, let's do this ...")
                                 .fontWeight(.thin)
                                 .frame(width: 300, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

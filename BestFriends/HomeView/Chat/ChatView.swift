@@ -63,6 +63,11 @@ struct ChatView: View {
                         .task {
                             await listenForMessages()
                         }
+                    
+//                    NavigationLink(destination: HideChatView(user: <#User#>, group: <#Group#>),label:
+//                    {
+                    
+                    
                     Image("lock-alt")
                         .resizable()
                         .frame(width: 30, height: 30)
@@ -75,6 +80,8 @@ struct ChatView: View {
                                 print("Got update response: ", response)
                                 isLockTapped.toggle()
                             })
+                            
+//                            sessionManager.showChat(user: <#T##User#>, group: <#T##Group#>)
                         })
                         .onAppear(perform: {
                             if user.hiddenGroups != nil {
@@ -86,6 +93,7 @@ struct ChatView: View {
                         .fullScreenCover(isPresented: $isLockTapped) {
                             HideChatView(sessionManager: _sessionManager, user: user, group: group)
                         }
+//                    }//NavLink
                     
                     Text("REMOVE me")
                         .foregroundColor(.gray)

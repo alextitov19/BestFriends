@@ -37,35 +37,20 @@ struct HurtFeelings: View {
                 .scaledToFill()
                 .ignoresSafeArea()
          
-            Image("AriC2")
-                .frame(width: 300, height: 40)
-//                .resizable()
-//                .scaledToFill()
-//                .ignoresSafeArea()
-//
-              VStack {
+            Image("girlwalking")
+//                .frame(width: 300, height: 40)
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+
+         
               
-                  Spacer()
-                      .frame(height: 450)
+                 
                   
-                  VStack {
-//                      Text("Hurt")
-//                          .font(.system(size: 60))
-//                          .foregroundColor(.blue)
-//                          .fontWeight(.ultraLight)
-//                          .multilineTextAlignment(.center)
-//
-//
-//
-//                      Text("F E E L I N G S")
-//                          .font(.system(size: 60))
-//                          .foregroundColor(.blue)
-//                          .fontWeight(.ultraLight)
-//                          .multilineTextAlignment(.center)
-//
-//                        Spacer()
-//                            .frame(height: 50)
-//
+                 
+                      
+                      Spacer()
+                          .frame(height: 350)
             VStack {
                 Text("Did they \ncross the line?")
                     .font(.system(size: 30))
@@ -79,7 +64,7 @@ struct HurtFeelings: View {
                         label: {
                             Text("If so, we can HELP")
                                 .fontWeight(.thin)
-                                .frame(width: 300, height: 40)
+                                .frame(width: 275, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
@@ -95,9 +80,7 @@ struct HurtFeelings: View {
 }
 }
     }
-}
 
-}
 
 struct HurtFeelings_Previews : PreviewProvider {
     static var previews: some View {
