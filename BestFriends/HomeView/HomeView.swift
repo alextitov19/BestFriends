@@ -33,7 +33,11 @@ struct HomeView: View {
                     .scaledToFill()
                     .ignoresSafeArea()
                     .onAppear {
-                        getHomeData()
+                        if RestApi.instance.needLogin {
+                            sessionManager.showLogin()
+                        } else {
+                            getHomeData()
+                        }
                     }
                 
                 // Stars animation...
