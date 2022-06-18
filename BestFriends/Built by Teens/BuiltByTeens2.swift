@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-import AVKit
+//import AVKit
 
 
 struct BuiltByTeens2: View {
@@ -36,21 +36,21 @@ struct BuiltByTeens2: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
                 
-                VStack {
-                
-                let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "BuiltByTeensVid", withExtension: "mp4")!)
-               
-                VideoPlayer(player: avPlayer)
-                    .onAppear() {
-                        avPlayer.isMuted = false
-                    }
-                    .onDisappear() {
-                        avPlayer.isMuted = true
-                    }
-//                    .frame(height: 300)
-                    .frame(width: 200, height: 400)
-                    .cornerRadius(15)
-            }
+//                VStack {
+//                
+//                let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "BuiltByTeensVid", withExtension: "mp4")!)
+//               
+//                VideoPlayer(player: avPlayer)
+//                    .onAppear() {
+//                        avPlayer.isMuted = false
+//                    }
+//                    .onDisappear() {
+//                        avPlayer.isMuted = true
+//                    }
+////                    .frame(height: 300)
+//                    .frame(width: 200, height: 400)
+//                    .cornerRadius(15)
+//            }
             
             Spacer()
                 .frame(height: 75)

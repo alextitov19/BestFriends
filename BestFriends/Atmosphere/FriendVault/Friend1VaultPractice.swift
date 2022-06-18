@@ -240,7 +240,7 @@ struct Friend1VaultPractice: View {
                         .frame(height: 10)
                 }
                 
-                Text("Send Hug / Playlist")
+                Text("Send Hug")
                     .font(.system(size: 35))
                     .frame(width:325, height: 30)
                     .foregroundColor(Color.white)
