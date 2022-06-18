@@ -180,6 +180,9 @@ struct HurtFeelings3: View {
                     
                     if friends.count > 4 {
                         RectView(user: user, friend: friends[4])
+                                 
+//                                 , color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
+                           
                             .onTapGesture(perform: {
                                 if sharedWith.contains(friends[4].id) {
                                     sharedWith = sharedWith.filter { $0 != friends[4].id }
@@ -188,6 +191,54 @@ struct HurtFeelings3: View {
                                 }
                                 print(sharedWith)
                             })
+                        
+//
+//                        if friends.count > 4 {
+//                            RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
+//                                .onTapGesture(perform: {
+//                                    if sharedWith.contains(friends[4].id) {
+//                                        sharedWith = sharedWith.filter { $0 != friends[4].id }
+//                                    } else {
+//                                        sharedWith.append(friends[4].id)
+//                                    }
+//                                    print(sharedWith)
+//                                })
+//
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        Button(action: {
+                            defaultMessageButtonTapped(defaultMessage: "SHARE")
+//                            shareMood()
+                        },
+                               label: {
+                            Text("SHARE")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                
+                                .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
+                                
+    //                            .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            
+                            
+                            Text("kdkdkd")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                        })
+                      
+                        
+                        
                     }
                 }
             }
@@ -251,8 +302,8 @@ struct HurtFeelings3: View {
     func defaultMessageButtonTapped(defaultMessage: String) {
         self.colorChangeTap = defaultMessage
     }
-    
 }
+
 
 
 

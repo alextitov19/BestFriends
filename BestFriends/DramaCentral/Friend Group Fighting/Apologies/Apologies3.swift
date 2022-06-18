@@ -32,7 +32,8 @@ struct Apologies3: View {
                             .ignoresSafeArea()
                             .onAppear()
             
-          
+            Image("holding iphone")
+                .frame(width: 300, height: 20)
             
 //            Image("purpleBackground")
 //                .resizable()
@@ -67,7 +68,7 @@ struct Apologies3: View {
                 .padding(.horizontal)
                 
                 
-                Text("Hey, I would like to \ntalk to you about \nsomething you said")
+                Text("Hey, I would like to apologize \nfor what I said.")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -79,7 +80,7 @@ struct Apologies3: View {
                 
                 
                 
-                Text("Hi, I wanted to let you \nknow that what you \nsaid hurt my feelings")
+                Text("Hi, I wanted to apologize \nfor what I did to you.")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
