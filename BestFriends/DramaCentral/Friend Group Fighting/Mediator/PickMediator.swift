@@ -11,6 +11,11 @@ import SwiftUI
 struct PickMediator: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    
+    let user: User
+    let friends: [User]
+    let groups: [Group]
+
 
     var body: some View {
        
@@ -50,7 +55,7 @@ struct PickMediator: View {
                 
             VStack {
                     NavigationLink(
-                        destination: EmptyView(),
+                        destination: PickMediator2(user: user, friends: friends, groups: groups),
                         label: {
                             Text("Choose a mutual mediator")
                                 .fontWeight(.thin)
@@ -72,11 +77,11 @@ struct PickMediator: View {
     
 
 
-
-
-struct PickMediator_Previews : PreviewProvider {
-    static var previews: some View {
-        PickMediator()
-    }
-}
-
+//
+//
+//struct PickMediator_Previews : PreviewProvider {
+//    static var previews: some View {
+//        PickMediator()
+//    }
+//}
+//
