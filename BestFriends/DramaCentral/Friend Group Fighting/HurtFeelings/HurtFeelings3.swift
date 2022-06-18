@@ -103,7 +103,7 @@ struct HurtFeelings3: View {
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey4)
                     
-                    Text("That you are sending them \na message in Chat \nvia Push Notification")
+                    Text("That you are sending them a message in Chat")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
