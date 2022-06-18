@@ -42,8 +42,8 @@ struct AtmosphereMain2: View {
             
             VStack {
                 HStack {
-                    Text("Today I'm Feeling ...")
-                        .font(.system(size: 30))
+                    Text("Did something just happen to change your mood?")
+                        .font(.system(size: 20))
                         .foregroundColor(Color.white)
                     
                     Spacer()
@@ -51,7 +51,7 @@ struct AtmosphereMain2: View {
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("(Update your Mood)")
+                    Text("(Want to let your friends know?)")
                         .font(.system(size: 15))
                         .italic()
                         .foregroundColor(Color.white)
