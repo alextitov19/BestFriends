@@ -6,26 +6,23 @@
 //
 
 import Foundation
-
-import Foundation
-
 import SwiftUI
-
 
 struct Apologies2: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    
+    let user: User
+    let friends: [User]
+    let groups: [Group]
 
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
-                .resizable()
-                .scaledToFill()
+            ColorManager.purple4
                 .ignoresSafeArea()
+                .onAppear()
             
-       
-              
               VStack {
               
                
@@ -33,19 +30,19 @@ struct Apologies2: View {
                   VStack {
                       Text("Do you think you hurt")
                           .font(.system(size: 37))
-                          .foregroundColor(.blue)
+                          .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                    
                       Text("your friend's")
                           .font(.system(size: 37))
-                          .foregroundColor(.blue)
+                          .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                       
                       Text("F E E L I N G S?")
                           .font(.system(size: 60))
-                          .foregroundColor(.blue)
+                          .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                             
@@ -78,7 +75,7 @@ struct Apologies2: View {
                       
                         Text("Holding yourself accountable \nis one of the best ways to be \na good friend and show them \nyou care.")
                             .font(.system(size: 25))
-                          
+                            .foregroundColor(ColorManager.grey4)
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
                           
@@ -90,7 +87,7 @@ struct Apologies2: View {
                     .frame(height: 70)
                     
                     NavigationLink(
-                        destination: EmptyView(),
+                        destination: Apologies3(user: user, friends: friends, groups: groups),
                         label: {
                             Text("Ok, let's do this ...")
                                 .fontWeight(.thin)
@@ -114,9 +111,14 @@ struct Apologies2: View {
 
 
 
-struct Apologies2_Previews : PreviewProvider {
-    static var previews: some View {
-        Apologies2()
-    }
-}
 
+
+
+//
+//
+//struct Apologies2_Previews : PreviewProvider {
+//    static var previews: some View {
+//        Apologies2(user: user, friends: friends, groups: groups)
+//    }
+//}
+//

@@ -12,6 +12,11 @@ import SwiftUI
 struct Apologies: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    
+    let user: User
+    let friends: [User]
+    let groups: [Group]
+    
 
     var body: some View {
        
@@ -59,7 +64,7 @@ struct Apologies: View {
                 
             VStack {
                     NavigationLink(
-                        destination: Apologies2(),
+                        destination: Apologies2(user: user, friends: friends, groups: groups),
                         label: {
                             Text("Need to Apologise?")
                                 .fontWeight(.thin)
@@ -83,9 +88,15 @@ struct Apologies: View {
 
 }
 
-struct Apologies_Previews : PreviewProvider {
-    static var previews: some View {
-        Apologies()
-    }
-}
 
+
+
+
+
+//
+//struct Apologies_Previews : PreviewProvider {
+//    static var previews: some View {
+//        Apologies(user: User, friends: [User], groups: [Group])
+//    }
+//}
+//

@@ -21,10 +21,6 @@ struct HurtFeelings2: View {
     var body: some View {
         ZStack {
             
-//            Image("purpleBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .ignoresSafeArea()
             ColorManager.purple4
                 .ignoresSafeArea()
                 .onAppear()
