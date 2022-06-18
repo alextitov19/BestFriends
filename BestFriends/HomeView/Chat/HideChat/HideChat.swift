@@ -27,7 +27,9 @@ struct HideChatView: View {
                
                 VStack
                 {
-                    Text(user.chatPin.count == 0 ? "Create chat PIN" : "Enter your PIN")
+                   
+                    
+                    Text(user.chatPin.count == 0 ? "Create 4 digit PIN" : "Enter your PIN")
                         .font(.title2)
                         .foregroundColor(.purple)
                         .fontWeight(.light)
@@ -197,17 +199,19 @@ struct HideChatView: View {
                                     .font(.largeTitle)
                                     .fontWeight(.ultraLight)
                             }//1
+                            
+                        
                         })
                         .padding()
                         
                     }//1,2,3
                 }
                 
-                //          Text("Retreive Your Messages")
-                //                .font(.system(size: 80))
-                //                .foregroundColor(.purple)
-                //                .fontWeight(.ultraLight)
-                //                .padding()
+                          Text("Hide Chat - restore with secret PIN")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                                .fontWeight(.ultraLight)
+                                .padding()
                 
                 Spacer ()
                     .frame(height: 50)
