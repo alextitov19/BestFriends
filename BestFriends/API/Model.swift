@@ -14,6 +14,17 @@ struct Credentials: Codable {
     }
 }
 
+struct UpdatePasswordCred: Codable {
+    let email: String
+    let password: String
+    let newPassword: String
+    enum CodingKeys: String, CodingKey {
+        case email = "email"
+        case password = "password"
+        case newPassword = "new_password"
+    }
+}
+
 struct SignUpUserData: Codable {
     let firstName: String
     let lastName: String

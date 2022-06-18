@@ -35,7 +35,7 @@ struct PhotoPopVideo: View {
                     .frame(height: 0)
                 
                 NavigationLink(
-                    destination: SettingsView(),
+                    destination: EmptyView(),
                     label: {
                         Text("Set-up PhotoPop")
                             .fontWeight(.thin)

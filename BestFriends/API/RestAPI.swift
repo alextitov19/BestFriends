@@ -31,7 +31,7 @@ class RestApi {
     }
     
     private init() {
-        helper = Helper(API_URL, signUp: "/signup", login: "/login", renew: "/renew")
+        helper = Helper(API_URL, signUp: "/signup", login: "/login", renew: "/renew", password: "/password")
     }
     
     public func signUp(_ userData: SignUpUserData) -> Promise<Int> {
@@ -40,6 +40,10 @@ class RestApi {
     
     public func login(email: String, password: String) -> Promise<Tokens> {
         return helper.login(email: email, password: password)
+    }
+    
+    public func updatePassword(email: String, password: String, newPassword: String) -> Promise<Tokens> {
+        return helper.updatePassord(email: email, password: password, newPassword: newPassword)
     }
     
     public func getCurrentUser() -> Promise<User> {

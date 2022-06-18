@@ -53,6 +53,7 @@ class Helper {
     private var signUpUrl: String
     private var loginUrl: String
     private var renewUrl: String
+    private var updatePasswordUrl: String
     private var sessionConfig: URLSessionConfiguration
     private var session: URLSession
     private var internalRenewToken: String?
@@ -84,10 +85,11 @@ class Helper {
         }
     }
     
-    init(_ apiUrl:String, signUp: String, login: String, renew: String) {
+    init(_ apiUrl:String, signUp: String, login: String, renew: String, password: String) {
         signUpUrl = apiUrl + signUp
         loginUrl = apiUrl + login
         renewUrl = apiUrl + renew
+        updatePasswordUrl = apiUrl + password
         sessionConfig = URLSessionConfiguration.default
         sessionConfig.waitsForConnectivity = true
         sessionConfig.allowsCellularAccess = true
@@ -257,6 +259,27 @@ class Helper {
             return Promise<Tokens>(tokens)
         }
     }
+    
+    func updatePassord(email: String, password: String, newPassword: String) -> Promise<Tokens> {
+        let cred = UpdatePasswordCred(email: email, password: password, newPassword: newPassword)
+        let payload = try? JSONEncoder().encode(cred)
+        if let p = payload {
+            print(String(data:p,encoding:.utf8) as Any)
+        }
+        return callRestApiNoAuth(url:updatePasswordUrl,method:.post,data:payload,TokensResponse.self).then { tokensResponse in
+            let tokens = tokensResponse.Data
+            self.accessToken = tokens.AccessToken.Token
+            self.renewToken = tokens.RenewToken.Token
+            do {
+                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), token: tokens.RenewToken.Token)
+                print("Renew Token: ", tokens.RenewToken.Token)
+            } catch {
+                print(error)
+            }
+            return Promise<Tokens>(tokens)
+        }
+    }
+    
     
     func callRestApiNoAuth<T>(url: String, method: HttpMethod, body: String? = nil, data: Data? = nil,_ type: T.Type) -> Promise<T> where T : Decodable {
         var request = URLRequest(url:URL(string: url)!)

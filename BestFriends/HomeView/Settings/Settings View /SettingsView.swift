@@ -13,6 +13,8 @@ import SwiftUI
 
 struct SettingsView: View {
     
+    let user: User
+    
     @EnvironmentObject var sessionManager: SessionManager
     @State private var loadingShowing = false
     
@@ -60,7 +62,7 @@ struct SettingsView: View {
                     .frame(height: 100)
                 
                 NavigationLink(
-                    destination: MyAccountView(),
+                    destination: MyAccountView(user: user),
                     label: {
                         HStack {
                             Text("Manage My Account")

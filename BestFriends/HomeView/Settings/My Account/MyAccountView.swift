@@ -11,12 +11,14 @@ import SwiftUI
 
 struct MyAccountView: View {
     
+    let user: User
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         ZStack {
-         
-
+            
+            
             
             ColorManager.grey4
                 .ignoresSafeArea()
@@ -35,7 +37,7 @@ struct MyAccountView: View {
                             .frame(width: 25, height: 25)
                             .foregroundColor(.gray)
                             .scaledToFit()
-//                            .colorInvert()
+                        //                            .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
                     }
                     
@@ -45,140 +47,140 @@ struct MyAccountView: View {
                     Text("Manage My Account")
                         .font(.system(size: 30))
                         .foregroundColor(.gray)
-
+                    
                     Spacer()
                 }
                 Spacer()
                     .frame(height: 70)
-            
-                Divider()
-               NavigationLink(
-                  destination: ResetPasswordView(),
-                  label: {
-                       HStack {
-                           Text("Reset Password")
-                               .font(.system(size: 20))
-                               .foregroundColor(.purple)
-                               .offset(x: 25)
-                           Spacer()
-
-                          Image("arrowRight")
-                              .resizable()
-                               .frame(width: 25, height: 25)
-                               .foregroundColor(.gray)
-                             .scaledToFit()
-//                              .colorInvert()
-                       }
-                   })
-
-                Divider()
                 
-              NavigationLink(
-               destination: ChangePin(),
-                 label: {
-                HStack {
-                    Text("Change PIN for Hide Chat")
-                            .font(.system(size: 20))
-                            .foregroundColor(.purple)
-                            .offset(x: 25)
-                    
-                           Spacer()
-
-                          Image("arrowRight")
-                              .resizable()
-                              .frame(width: 25, height: 25)
-                              .foregroundColor(.gray)
-                              .scaledToFit()
-//                              .colorInvert()
-                      }
-                   })
-          
-            VStack {
                 Divider()
-                
                 NavigationLink(
-                 destination: RemoveFriend(),
-                   label: {
-                         HStack {
-                      Text("Remove Friend")
+                    destination: ResetPasswordView(user: user),
+                    label: {
+                        HStack {
+                            Text("Reset Password")
                                 .font(.system(size: 20))
                                 .foregroundColor(.purple)
                                 .offset(x: 25)
-                             
-                             Spacer()
-
+                            Spacer()
+                            
                             Image("arrowRight")
-                                .resizable()                 .frame(width: 25, height: 25)
+                                .resizable()
+                                .frame(width: 25, height: 25)
                                 .foregroundColor(.gray)
                                 .scaledToFit()
-//                                 .colorInvert()
+                            //                              .colorInvert()
                         }
-                     })
-                  
+                    })
+                
                 Divider()
                 
                 NavigationLink(
-                 destination: SettingsNotificationsView(),
-                   label: {
-                         HStack {
-                      Text("Change Notifications Status")
+                    destination: ChangePin(),
+                    label: {
+                        HStack {
+                            Text("Change PIN for Hide Chat")
                                 .font(.system(size: 20))
                                 .foregroundColor(.purple)
                                 .offset(x: 25)
-                             
-                             Spacer()
-
+                            
+                            Spacer()
+                            
                             Image("arrowRight")
-                                .resizable()              .frame(width: 25, height: 25)
+                                .resizable()
+                                .frame(width: 25, height: 25)
                                 .foregroundColor(.gray)
-                                 .scaledToFit()
-//                                 .colorInvert()
+                                .scaledToFit()
+                            //                              .colorInvert()
                         }
-                     })
-
+                    })
                 
-            
-            VStack {
-                Divider()
-              
-                NavigationLink(
-                 destination: DeleteMyAccount(),
-                   label: {
-                         HStack {
-                      Text("Delete My Account")
-                                 .font(.system(size: 20))
-                                 .foregroundColor(.purple)
-                                 .offset(x: 25)
-
-                          Spacer()
-
-                            Image("arrowRight")
-                                .resizable()              .frame(width: 25, height: 25)
-                                .foregroundColor(.gray)
-                                 .scaledToFit()
-//                                 .colorInvert()
-                        }
-                     })
-                Divider()
-            .navigationBarHidden(true)
-   
-            Spacer ()
-                    .frame(height: 300)
+                VStack {
+                    Divider()
+                    
+                    NavigationLink(
+                        destination: RemoveFriend(),
+                        label: {
+                            HStack {
+                                Text("Remove Friend")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(.purple)
+                                    .offset(x: 25)
+                                
+                                Spacer()
+                                
+                                Image("arrowRight")
+                                    .resizable()                 .frame(width: 25, height: 25)
+                                    .foregroundColor(.gray)
+                                    .scaledToFit()
+                                //                                 .colorInvert()
+                            }
+                        })
+                    
+                    Divider()
+                    
+                    NavigationLink(
+                        destination: SettingsNotificationsView(),
+                        label: {
+                            HStack {
+                                Text("Change Notifications Status")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(.purple)
+                                    .offset(x: 25)
+                                
+                                Spacer()
+                                
+                                Image("arrowRight")
+                                    .resizable()              .frame(width: 25, height: 25)
+                                    .foregroundColor(.gray)
+                                    .scaledToFit()
+                                //                                 .colorInvert()
+                            }
+                        })
+                    
+                    
+                    
+                    VStack {
+                        Divider()
+                        
+                        NavigationLink(
+                            destination: DeleteMyAccount(),
+                            label: {
+                                HStack {
+                                    Text("Delete My Account")
+                                        .font(.system(size: 20))
+                                        .foregroundColor(.purple)
+                                        .offset(x: 25)
+                                    
+                                    Spacer()
+                                    
+                                    Image("arrowRight")
+                                        .resizable()              .frame(width: 25, height: 25)
+                                        .foregroundColor(.gray)
+                                        .scaledToFit()
+                                    //                                 .colorInvert()
+                                }
+                            })
+                        Divider()
+                            .navigationBarHidden(true)
+                        
+                        Spacer ()
+                            .frame(height: 300)
+                        
+                    }
+                }
                 
             }
-    }
-   
-}
-    }
+        }
     }
 }
-        
-        
-        
-        
-struct MyAccountView_Previews : PreviewProvider {
-    static var previews: some View {
-        MyAccountView()
-    }
-}
+
+
+
+//        
+//struct MyAccountView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        MyAccountView()
+//    }
+//}
 

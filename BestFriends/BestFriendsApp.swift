@@ -32,9 +32,6 @@ struct BestFriendsApp: App {
             case .chat(let user, let group):
                 ChatView(user: user, group: group)
                     .environmentObject(sessionManager)
-            case .settings:
-                SettingsView()
-                    .environmentObject(sessionManager)
             case .dramaMainView:
                 DramaMainView()
                     .environmentObject(sessionManager)
