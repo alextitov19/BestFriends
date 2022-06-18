@@ -14,57 +14,33 @@ struct PickMediator: View {
 
     var body: some View {
        
-        
-        VStack {
-            
-//
-//            Text("Pick a")
-//                .font(.system(size: 30))
-//                .foregroundColor(.blue)
-//                .fontWeight(.ultraLight)
-//                .multilineTextAlignment(.center)
-//
-            Text("M E D I A T O R")
-                .font(.system(size: 40))
-                .foregroundColor(.blue)
-                .fontWeight(.ultraLight)
-                .multilineTextAlignment(.center)
-            Spacer()
-                .frame(height: 10)
-        
         ZStack {
-           
-            Image("purpleBackground")
-                .resizable()
-                .scaledToFill()
+            
+            ColorManager.purple4
                 .ignoresSafeArea()
-         
+//                .onAppear()
+           
+       
             Image("ballons")
                 .frame(width: 320, height: 20)
 //                .resizable()
-//                .scaledToFill()
-//                .ignoresSafeArea()
-//
-              VStack {
-              
-                  Spacer()
-                      .frame(height: 350)
-                  
-                  VStack {
-//
-//
+                .scaledToFill()
+                .ignoresSafeArea()
+
+           
             VStack {
-                Text("Are you fighting with \n one of your friends?")
-                    .font(.system(size: 30))
-                    .italic()
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                
+             
+                Text("Can't resolve a fight \n with one of your friends?")
+                            .font(.system(size: 35))
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+
                 Spacer()
                     .frame(height: 30)
-                 
-                Text("Pick another friend to \nhelp you two become \nbest friends again!")
-                    .font(.system(size: 30))
+                
+                Text("Pick another friend to \nhelp you become \nbest friends again!")
+                    .font(.system(size: 35))
                     .italic()
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
@@ -93,10 +69,10 @@ struct PickMediator: View {
     }
 }
 }
-    }
-}
+    
 
-}
+
+
 
 struct PickMediator_Previews : PreviewProvider {
     static var previews: some View {

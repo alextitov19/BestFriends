@@ -53,7 +53,7 @@ struct Apologies: View {
 //
 //
             VStack {
-                Text("Did you hurt \nyour friends feelings?")
+                Text("Did you hurt \nyour friend's feelings?")
                     .font(.system(size: 28))
                     .italic()
                     .fontWeight(.light)
