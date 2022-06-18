@@ -76,7 +76,7 @@ struct MyAccountView: View {
                 Divider()
                 
                 NavigationLink(
-                    destination: ChangePin(),
+                    destination: ChangePin(user: user),
                     label: {
                         HStack {
                             Text("Change PIN for Hide Chat")
