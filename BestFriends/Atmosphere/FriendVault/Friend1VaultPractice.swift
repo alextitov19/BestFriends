@@ -239,23 +239,40 @@ struct Friend1VaultPractice: View {
                     Spacer ()
                         .frame(height: 10)
                 }
-                
-                Text("Send Hug")
-                    .font(.system(size: 35))
-                    .frame(width:325, height: 30)
-                    .foregroundColor(Color.white)
-                
+//
+//                Text("Send Hug")
+//                    .font(.system(size: 35))
+//                    .frame(width:325, height: 30)
+//                    .foregroundColor(Color.white)
+//
                 HStack {
+                    
+                    ZStack {
+                    
                     if !hugTapped {
-                    Image("Hug4")
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .scaledToFit()
+                        Text("Send Hug")
+                        
+//                        Image("Hug4")
+//                        .resizable()
+                        
+                        .fontWeight(.thin)
+                        .frame(width: 150, height: 40)
+                        .font(.system(size: 30))
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                        .scaledToFit()
 //                        .colorInvert()
+                        .background(ColorManager.purple3)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         .onTapGesture {
                             RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken )
                             hugTapped.toggle()
                         }
+
+                    }
+                        
+                        
+                        
                     }
                     
 //                   MARK: Below is for adding Playlist - put in the 'Note' image
@@ -263,7 +280,7 @@ struct Friend1VaultPractice: View {
                         Image("")
                             .resizable()
                             .foregroundColor(.pink)
-                            .frame(width: 40, height: 40)
+                            .frame(width: 5, height: 5)
                             .colorInvert()
                             .blur(radius: 2)
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
@@ -273,6 +290,24 @@ struct Friend1VaultPractice: View {
 
                             noteTapped.toggle()
                             }
+                            
+                    NavigationLink(
+                       destination: BuildFriendPlaylist(),
+                       label: {
+                           Text("Playlist")
+                               .fontWeight(.thin)
+                               .frame(width: 150, height: 40)
+                               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                               .font(.system(size: 30))
+                               .background(ColorManager.purple3)
+                               .cornerRadius(15)
+                               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                       })
+                   
+                            
+                            
+                            
+                            
                     }
                     
                 }
