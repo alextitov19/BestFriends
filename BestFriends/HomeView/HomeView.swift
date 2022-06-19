@@ -62,7 +62,7 @@ struct HomeView: View {
                         
                         if planets.count > 1 && !focusPlanet {
                             Spacer()
-                                .frame(width: 80)
+                                .frame(width: 90)
                             
                             planets[1]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[1].user.id)
@@ -95,7 +95,7 @@ struct HomeView: View {
                             if !focusPlanet {
                                 PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                     .scaledToFit()
-                                    .frame(width: 125, height: 125)
+                                    .frame(width: 120, height:120)
                                     .onTapGesture(perform: mainPlanetTapped)
                                     .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
                                     .padding()
@@ -223,6 +223,19 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
+                        
+                        NavigationLink(destination: ReceivedPlaylist(),
+                                       label: {
+                            Text("Playlist")
+                                .fontWeight(.thin)
+                                .frame(width: 190, height: 25)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .opacity(0.8)
+                        })
+                        
+                        
                         
                         
 //                        MARK: Want to send this to the new [BestFriendsPlaylists] page

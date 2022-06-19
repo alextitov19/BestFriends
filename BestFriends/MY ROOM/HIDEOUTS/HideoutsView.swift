@@ -49,7 +49,7 @@ struct HideoutsView: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
             
 
-            NavigationLink(destination: BuildFriendPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "Friend \nPlaylists")
+            NavigationLink(destination: ReceivedPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "Friend \nPlaylists")
             })
             .offset(x: showItems ? -60 : 0, y: showItems ? -145: 0)
             
