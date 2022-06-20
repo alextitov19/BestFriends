@@ -29,6 +29,13 @@ struct HomeView: View {
             
            
             ZStack {
+                
+                // Stars animation...
+                AdPlayerView(name: "backgroundAnimation")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .onTapGesture(perform: backgroundTapped)
+                
                 // Background Image...
                 Image("blueBackground")
                     .resizable()
@@ -42,13 +49,9 @@ struct HomeView: View {
                         }
                     }
                 
-                // Stars animation...
-                AdPlayerView(name: "backgroundAnimation")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .onTapGesture(perform: backgroundTapped)
+               
          
-//                ScrollView {
+
                 
                 VStack {
                     
