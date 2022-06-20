@@ -135,7 +135,7 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Send Custom Message to Chat")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 35)
+                            .frame(width: 310, height: 25)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 22))
                         //                                .opacity(0.5)
@@ -149,7 +149,7 @@ struct Friend1VaultPractice: View {
                     Text("Respond instantly via Push Notification")
                         .font(.system(size: 18))
                         .fontWeight(.medium)
-                        .frame(width:325, height: 30)
+                        .frame(width:325, height: 25)
                         .foregroundColor(.white)
                     
                     Button(action: {
@@ -159,7 +159,7 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Are you okay?")
                             .fontWeight(.thin)
-                            .frame(width: 260, height: 30)
+                            .frame(width: 260, height: 25)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
                             .background(colorChangeTap == "Are you okay?" ? ColorManager.grey2 : ColorManager.grey1)
@@ -175,7 +175,7 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Do we need to talk?")
                             .fontWeight(.thin)
-                            .frame(width: 260, height: 30)
+                            .frame(width: 260, height: 25)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
                             .background(colorChangeTap == "Do we need to talk?" ? ColorManager.grey2 : ColorManager.grey1)
@@ -191,7 +191,7 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Congradulations, you did it!")
                             .fontWeight(.thin)
-                            .frame(width: 260, height: 30)
+                            .frame(width: 260, height: 25)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
                             .background(colorChangeTap == "C" ? ColorManager.grey2 : ColorManager.grey1)
@@ -211,23 +211,7 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Good luck, you got this!")
                             .fontWeight(.thin)
-                            .frame(width: 260, height: 30)
-                            .foregroundColor(.purple)
-                            .font(.system(size: 20))
-                            .background(colorChangeTap == "D" ? ColorManager.grey2 : ColorManager.grey1)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        //                                .opacity(0.8)
-                    })
-                    
-                    Button(action: {
-                        defaultMessageButtonTapped(defaultMessage: "E")
-                        
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "We will figure this out", APNToken: friend.APNToken )
-                    }, label: {
-                        Text("We will figure this out")
-                            .fontWeight(.thin)
-                            .frame(width: 260, height: 30)
+                            .frame(width: 260, height: 25)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
                             .background(colorChangeTap == "E" ? ColorManager.grey2 : ColorManager.grey1)
@@ -252,13 +236,13 @@ struct Friend1VaultPractice: View {
                     ZStack {
                     
                     if !hugTapped {
-                        Text("Send Hug")
+                        Text("Hug")
                         
 //                        Image("Hug4")
 //                        .resizable()
                         
                         .fontWeight(.thin)
-                        .frame(width: 150, height: 40)
+                        .frame(width: 100, height: 30)
                         .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
 //                        .scaledToFit()
@@ -298,7 +282,7 @@ struct Friend1VaultPractice: View {
                        label: {
                            Text("Playlist")
                                .fontWeight(.thin)
-                               .frame(width: 150, height: 40)
+                               .frame(width: 130, height: 30)
                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                .font(.system(size: 30))
                                .background(ColorManager.purple3)
@@ -307,13 +291,13 @@ struct Friend1VaultPractice: View {
                        })
                    
                             
-                            
+//                        Spacer ()
                             
                             
                     }
                     
                 }
-                .padding(.bottom, 30)
+                .padding(.bottom, 55)
             }
         }
         

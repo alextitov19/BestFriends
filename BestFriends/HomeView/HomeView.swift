@@ -71,7 +71,9 @@ struct HomeView: View {
                         
                         if planets.count > 1 && !focusPlanet {
                             Spacer()
-                                .frame(width: 90)
+                                .frame(width: 40)
+//                                .frame(width: 40, height: 40)
+//                                .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
                             
                             planets[1]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[1].user.id)
@@ -137,7 +139,7 @@ struct HomeView: View {
                         
                         if planets.count > 3 && !focusPlanet {
                             Spacer()
-                                .frame(width: 80)
+                                .frame(width: 40)
                             
                             planets[3]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[3].user.id)
@@ -148,29 +150,34 @@ struct HomeView: View {
                                     }
                                     
                                 })
+                            
+                            // Bottom planet
+                            if planets.count > 4 && !focusPlanet {
+                                planets[4]
+                                    .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)
+                                        if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[4].user.id {
+                                            selectedPlanet = nil
+                                        } else {
+                                            selectedPlanet = planets[4]
+                                        }
+                                    })
+                            
+                            
+                            
                         }
                     }
                     
-                    // Bottom planet
-                    if planets.count > 4 && !focusPlanet {
-                        planets[4]
-                            .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)
-                                if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[4].user.id {
-                                    selectedPlanet = nil
-                                } else {
-                                    selectedPlanet = planets[4]
-                                }
-                            })
-                        //                            .padding()
+                   
+//                                                   .padding(50)
                     }
                     
                     if newGroupMembers.count > 0 && !focusPlanet {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("Chat")
+                            Text("Create New Chat")
                                 .fontWeight(.regular)
-                                .frame(width: 100, height: 30)
+                                .frame(width: 190, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -181,7 +188,7 @@ struct HomeView: View {
                     //                    Text("received push notification to")
                     
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 5)
                     
                     //                    MARK: Connect to Chat Now page
                     
@@ -244,7 +251,7 @@ struct HomeView: View {
                                 .opacity(0.8)
                         })
                         
-                        
+                     Spacer ()
                         
                         
 //                        MARK: Want to send this to the new [BestFriendsPlaylists] page
