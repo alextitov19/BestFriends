@@ -119,6 +119,7 @@
 		CF763F7E285B06000010D1A9 /* myRoom4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF763F7D285B06000010D1A9 /* myRoom4.mp4 */; };
 		CF76FA06285EE7CD000750A4 /* PlaylistForFriend2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76FA05285EE7CD000750A4 /* PlaylistForFriend2.swift */; };
 		CF76FA08285EED3E000750A4 /* ReceivedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */; };
+		CF76FA0A286002D9000750A4 /* AppOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76FA09286002D9000750A4 /* AppOverview.swift */; };
 		CF785695284F3DB900B31803 /* Playlist.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF785694284F3DB900B31803 /* Playlist.mp4 */; };
 		CF78569B284F480000B31803 /* Seaguls3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF78569A284F480000B31803 /* Seaguls3.mp4 */; };
 		CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */; };
@@ -295,6 +296,7 @@
 		CF763F7D285B06000010D1A9 /* myRoom4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom4.mp4; sourceTree = "<group>"; };
 		CF76FA05285EE7CD000750A4 /* PlaylistForFriend2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistForFriend2.swift; sourceTree = "<group>"; };
 		CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedPlaylist.swift; sourceTree = "<group>"; };
+		CF76FA09286002D9000750A4 /* AppOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOverview.swift; sourceTree = "<group>"; };
 		CF785694284F3DB900B31803 /* Playlist.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Playlist.mp4; sourceTree = "<group>"; };
 		CF78569A284F480000B31803 /* Seaguls3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Seaguls3.mp4; sourceTree = "<group>"; };
 		CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3FG_Acountability.swift; sourceTree = "<group>"; };
@@ -938,6 +940,7 @@
 			children = (
 				CFD0ABD3285C25990032CA3D /* BuiltByTeens.swift */,
 				CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */,
+				CF76FA09286002D9000750A4 /* AppOverview.swift */,
 			);
 			path = "Built by Teens";
 			sourceTree = "<group>";
@@ -1191,6 +1194,7 @@
 			files = (
 				CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */,
 				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
+				CF76FA0A286002D9000750A4 /* AppOverview.swift in Sources */,
 				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
 				CFD0ABD8285C492F0032CA3D /* BuiltByTeens2.swift in Sources */,

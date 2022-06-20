@@ -1,8 +1,8 @@
 //
-//  BuiltByTeens2.swift
+//  AppOverview.swift
 //  BestFriends
 //
-//  Created by Social Tech on 6/17/22.
+//  Created by Social Tech on 6/19/22.
 //
 
 import Foundation
@@ -10,40 +10,65 @@ import SwiftUI
 //import AVKit
 
 
-struct BuiltByTeens2: View {
+struct AppOverview: View {
+   
+    @EnvironmentObject var sessionManager: SessionManager
+    
+//
+//    @State private var user: User? = nil
+//    @State private var friends: [User] = []
+   
     
     var body: some View {
         
         ZStack {
-            
-            Image("BuiltByTeens")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-            
+//
+//            Image("BuiltByTeens")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
          
+            ColorManager.purple4
+                .ignoresSafeArea()
+                .onAppear()
 
             VStack {
                 
-                Link(destination: URL(string: "https://socialtechlabs.com/team/")!) {
-                        Text("Teen Team")
+                Link(destination: URL(string: "https://socialtechlabs.com/about-bestfriends/")!) {
+                        Text("How BestFriends Works")
                             .fontWeight(.thin)
-                            .frame(width: 150, height: 40)
+                            .frame(width: 310, height: 40)
                             .font(.system(size: 30))
                             .foregroundColor(.white)
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
-                Spacer()
-                    .frame(height: 75)
+                
+                
+                Button(action: {
+                    sessionManager.showHome()
+                }, label: {
+                    Text("HOME")
+                        .fontWeight(.thin)
+                        .frame(width: 100, height: 40)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 30))
+                        .background(ColorManager.purple3)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                })
+               
+                
+                
                 
                 NavigationLink(
-                    destination: AppOverview(),
+                    destination: EmptyView(),
                     label: {
-                        Text("How BestFriends Works")
+                        Text("Next")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
+                            .frame(width: 100, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)
@@ -75,6 +100,11 @@ struct BuiltByTeens2: View {
                         
 
             }//VStack
+            
+//            private func loadData() {
+//                RestApi.instance.getHomeData().then { homeData in
+//                    self.user = homeData.user
+//                    self.friends = homeData.friends
         }//ZStack
     }//body
 }//struct
