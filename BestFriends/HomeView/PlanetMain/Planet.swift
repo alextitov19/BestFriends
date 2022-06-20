@@ -174,17 +174,17 @@ struct PlanetActionsView: View {
                                .opacity(0.65)
                             
                             VStack {
-                                Text("Friends")
+                                Text("My")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("Celebrating")
+                                Text("Planet &")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("Friendships")
+                                Text("Settings")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -277,20 +277,20 @@ struct PlanetActionsView: View {
                             VStack {
                                 
                                 
-                                Text("Built")
+                                Text("About")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                
-                                Text("by")
+                                Text("BestFriends")
                                 .foregroundColor(.white)
                                 .font(.system(size: 16, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                              
-                                Text("Teens")
-                                .foregroundColor(.white)
-                                .font(.system(size: 16, weight: .bold))
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                Text("Teens")
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 16, weight: .bold))
+//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
                             }
                         }

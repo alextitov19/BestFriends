@@ -82,32 +82,33 @@ struct SettingsView: View {
                 
                 .navigationBarHidden(true)
                 
-                //          Adding Photopop
-                Divider()
+//                MARK: Set up [Customize my Planet here
                 
-                NavigationLink(
-                    destination: EmptyView(),
-                    label: {
-                        HStack {
-                            Text("Set-up PhotoPoP")
-                                .font(.system(size: 20))
-                                .foregroundColor(.purple)
-                                
-                                
-                            Spacer()
-                            
-                            Image("arrowRight")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .scaledToFit()
-//                                .colorInvert()
-                        }
-                        .padding(.horizontal, 15)
-                    })
+//                Divider()
                 
-                
-                .navigationBarHidden(true)
-                
+//                NavigationLink(
+//                    destination: EmptyView(),
+//                    label: {
+//                        HStack {
+//                            Text("Set-up PhotoPoP")
+//                                .font(.system(size: 20))
+//                                .foregroundColor(.purple)
+//
+//
+//                            Spacer()
+//
+//                            Image("arrowRight")
+//                                .resizable()
+//                                .frame(width: 25, height: 25)
+//                                .scaledToFit()
+////                                .colorInvert()
+//                        }
+//                        .padding(.horizontal, 15)
+//                    })
+//
+//
+//                .navigationBarHidden(true)
+//
                 
                 
                 Divider()

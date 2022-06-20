@@ -78,8 +78,7 @@ struct Step4_NuclearOption: View {
                     .fontWeight(.ultraLight)
                    
                 VStack {
-              
-                    Text("30 minutes ago you were BFF and will be again!")
+            Text("30 minutes ago you were BFF and will be again!")
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.white)
                         .italic()
@@ -91,7 +90,10 @@ struct Step4_NuclearOption: View {
                         .cornerRadius(40)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
               
-                VStack {
+               
+                    
+                    
+                    VStack {
                      NavigationLink(
                         destination: YouGotThis(),
                         label: {
