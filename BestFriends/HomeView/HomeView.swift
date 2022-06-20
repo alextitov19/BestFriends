@@ -48,9 +48,10 @@ struct HomeView: View {
                 // Stars animation...
                 AdPlayerView(name: "backgroundAnimation")
                     .ignoresSafeArea()
+//                    .scaledToFill()
                     .blendMode(.screen)
                     .onTapGesture(perform: backgroundTapped)
-         
+
 
                 
                 VStack {
@@ -86,6 +87,8 @@ struct HomeView: View {
                         }
                     }
                     // Main planet
+                    
+                    HStack {
                     if homeData != nil {
                         EmptyView()
                             .alert(isPresented: $showNewRoomNameDialog,
@@ -123,7 +126,8 @@ struct HomeView: View {
                             
                         }
                     }
-                    // Middle 2 planets
+                        
+                    // Bottom 3 planets
                     HStack {
                         if planets.count > 2 && !focusPlanet {
                             planets[2]
@@ -150,8 +154,13 @@ struct HomeView: View {
                                     }
                                     
                                 })
+                        }
                             
-                            // Bottom planet
+//                        if planets.count > 4 && !focusPlanet {
+                            Spacer()
+                                .frame(width: 40)
+                        
+                            // Old 3rd Bottom planet
                             if planets.count > 4 && !focusPlanet {
                                 planets[4]
                                     .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)
@@ -251,7 +260,8 @@ struct HomeView: View {
                                 .opacity(0.8)
                         })
                         
-                     Spacer ()
+                     Spacer()
+                            .frame(height: 100)
                         
                         
 //                        MARK: Want to send this to the new [BestFriendsPlaylists] page
