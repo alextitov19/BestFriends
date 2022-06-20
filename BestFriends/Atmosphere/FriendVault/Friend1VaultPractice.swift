@@ -43,6 +43,8 @@ struct Friend1VaultPractice: View {
             AdPlayerView(name: "girlYellow")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+      
+            
             
             VStack {
                 //MARK: code to get friends name at top of page

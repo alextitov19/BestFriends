@@ -53,11 +53,11 @@ struct InfoView: View {
                 }
                 
             VStack {
-                Text("Delete Message")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.black)
+//                Text("Delete Message")
+//                    .font(.system(size: 25))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.black)
               
                 Spacer()
                 .frame(height: 10)

@@ -26,6 +26,8 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
+            
+           
             ZStack {
                 // Background Image...
                 Image("blueBackground")
@@ -45,8 +47,12 @@ struct HomeView: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .onTapGesture(perform: backgroundTapped)
+         
+//                ScrollView {
                 
                 VStack {
+                    
+                
                     // Top 2 planets
                     HStack {
                         if planets.count > 0 && !focusPlanet {
@@ -396,3 +402,5 @@ struct HomeView: View {
     }
     
 }
+
+
