@@ -38,7 +38,7 @@ struct HideoutsView: View {
                 .blendMode(.screen)
             
         
-            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .blue, friendName: "Special \nMessages")
+            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .blue, friendName: "Smile \nVault")
             })
 
             .offset(x: showItems ? 100 : 0, y: showItems ? -165: 0)
