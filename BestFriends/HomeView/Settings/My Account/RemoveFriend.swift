@@ -33,18 +33,7 @@ struct RemoveFriend: View {
                 Spacer()
                     .frame(height: 15)
            
-            
-            TextField("Enter friends Email", text: $email)
-                .multilineTextAlignment(.center)
-                .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                .frame(width: 300, height: 40, alignment: .center)
-                .font(.title)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .cornerRadius(20)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                .autocapitalization(.none)
-                .disableAutocorrection(true)
-            
+         
             
             
                  VStack {
