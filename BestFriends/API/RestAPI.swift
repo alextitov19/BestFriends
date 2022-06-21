@@ -173,4 +173,9 @@ class RestApi {
             self.userId = details.id
         }
     }
+    
+    public func removeFriend(email:String, removeFriend:RemoveFriend)
+    {
+        
+    }
 }
