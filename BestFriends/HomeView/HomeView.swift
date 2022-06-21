@@ -85,50 +85,6 @@ struct HomeView: View {
                                     }
                                 })
                         }
-                    }
-                    // Main planet
-                    
-                    HStack {
-                    if homeData != nil {
-                        EmptyView()
-                            .alert(isPresented: $showNewRoomNameDialog,
-                                   TextAlert(title: "Create New Room",
-                                             message: "Input the desired name for the new chat room") { name in
-                                if let text = name {
-                                    // Text was accepted
-                                    print("Got name: ", text)
-                                    createGroup(name: text)
-                                } else {
-                                    // The dialog was cancelled
-                                }
-                            })
-                            .frame(width: 0, height: 0)
-                        
-                        ZStack {
-                            // Main planet
-                            if !focusPlanet {
-                                PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
-                                    .scaledToFit()
-                                    .frame(width: 120, height:120)
-                                    .onTapGesture(perform: mainPlanetTapped)
-                                    .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
-                                    .padding()
-                                    .onAppear(perform: {print("Atm mood: ", homeData!.atmosphere.mood)})
-                                
-                            }
-                            
-                            // Tapped on the main planet
-                            if focusPlanet {
-                                PlanetActionsView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
-                                    .environmentObject(sessionManager)
-                            }
-                            
-                            
-                        }
-                    }
-                        
-                    // Bottom 3 planets
-                    HStack {
                         if planets.count > 2 && !focusPlanet {
                             planets[2]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)
@@ -140,6 +96,15 @@ struct HomeView: View {
                                     
                                 })
                         }
+                    }
+                    // Main planet
+                    
+
+                   
+                        
+                    // Bottom 3 planets
+                    HStack {
+                        
                         
                         if planets.count > 3 && !focusPlanet {
                             Spacer()
@@ -154,6 +119,43 @@ struct HomeView: View {
                                     }
                                     
                                 })
+                        }
+                        if homeData != nil {
+                            EmptyView()
+                                .alert(isPresented: $showNewRoomNameDialog,
+                                       TextAlert(title: "Create New Room",
+                                                 message: "Input the desired name for the new chat room") { name in
+                                    if let text = name {
+                                        // Text was accepted
+                                        print("Got name: ", text)
+                                        createGroup(name: text)
+                                    } else {
+                                        // The dialog was cancelled
+                                    }
+                                })
+                                .frame(width: 0, height: 0)
+                            
+                            ZStack {
+                                // Main planet
+                                if !focusPlanet {
+                                    PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
+                                        .scaledToFit()
+                                        .frame(width: 120, height:120)
+                                        .onTapGesture(perform: mainPlanetTapped)
+                                        .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
+                                        .padding()
+                                        .onAppear(perform: {print("Atm mood: ", homeData!.atmosphere.mood)})
+                                    
+                                }
+                                
+                                // Tapped on the main planet
+                                if focusPlanet {
+                                    PlanetActionsView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups)
+                                        .environmentObject(sessionManager)
+                                }
+                                
+                                
+                            }
                         }
                             
 //                        if planets.count > 4 && !focusPlanet {
@@ -174,7 +176,7 @@ struct HomeView: View {
                             
                             
                         }
-                    }
+                    
                     
                    
 //                                                   .padding(50)
@@ -237,7 +239,7 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
-                        
+   
                         NavigationLink(destination: VirtualHug(),
                                        label: {
                             Text("HUG")
@@ -248,7 +250,7 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
-                        
+
                         NavigationLink(destination: BuildFriendPlaylist(),
                                        label: {
                             Text("Playlist")
@@ -259,9 +261,7 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
-                        
-                     Spacer()
-                            .frame(height: 100)
+                        Spacer()
                         
                         
 //                        MARK: Want to send this to the new [BestFriendsPlaylists] page
@@ -284,7 +284,7 @@ struct HomeView: View {
                     }
                     
                 }
-                
+                Spacer()
                 if homeData?.groups != nil && homeData?.user != nil {
                     ChatGroupsView(user: homeData!.user, groups: groups)
                         .environmentObject(sessionManager)

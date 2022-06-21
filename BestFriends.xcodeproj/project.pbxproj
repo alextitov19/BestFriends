@@ -178,6 +178,7 @@
 		CFDB150C2859103C00155CEE /* sadTeen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB150B2859103B00155CEE /* sadTeen.mp4 */; };
 		CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB150F2859415D00155CEE /* MasterFriendVault.swift */; };
 		CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */; };
+		D00D1CAA2862442300C870C6 /* HomeViewPractice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D1CA92862442300C870C6 /* HomeViewPractice2.swift */; };
 		D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */; };
 		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
 /* End PBXBuildFile section */
@@ -356,6 +357,7 @@
 		CFDB150B2859103B00155CEE /* sadTeen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sadTeen.mp4; sourceTree = "<group>"; };
 		CFDB150F2859415D00155CEE /* MasterFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFriendVault.swift; sourceTree = "<group>"; };
 		CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendMessages.swift; sourceTree = "<group>"; };
+		D00D1CA92862442300C870C6 /* HomeViewPractice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPractice2.swift; sourceTree = "<group>"; };
 		D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonHomeView.swift; sourceTree = "<group>"; };
 		D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonRocketColorPicker.swift; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -576,6 +578,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				D00D1CA92862442300C870C6 /* HomeViewPractice2.swift */,
 				CF47D5CE286126BB004B47A1 /* HomeViewPractice.swift */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
@@ -1256,6 +1259,7 @@
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
 				CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */,
 				CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */,
+				D00D1CAA2862442300C870C6 /* HomeViewPractice2.swift in Sources */,
 				7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */,
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
 				CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */,
