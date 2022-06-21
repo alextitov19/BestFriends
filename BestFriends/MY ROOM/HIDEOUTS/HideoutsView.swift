@@ -46,7 +46,7 @@ struct HideoutsView: View {
             NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
                   HideoutsViewCircle (color: .orange, friendName: "PhotoPoP")
             })
-            .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
+            .offset(x: showItems ? 75 : 0, y: showItems ? -600: 0)
             
 
             NavigationLink(destination: ReceivedPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "Friend \nPlaylists")
