@@ -99,7 +99,7 @@ struct MyAccountView: View {
                     Divider()
                     
                     NavigationLink(
-                        destination: RemoveFriend(),
+                        destination: RemoveFriend2(user: user, removeFriend: RemoveFriend()),
                         label: {
                             HStack {
                                 Text("Remove Friend")
