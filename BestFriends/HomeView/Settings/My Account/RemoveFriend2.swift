@@ -107,8 +107,7 @@ struct RemoveFriend2: View {
                             private func submit() {
                                 if friendEmail.count > 0 {
                                     RestApi.instance.removeFriend(email: user.id, removeFriend: removeFriend)
-                            
-                            
+                           
 //            })//then
         }//if
     }//submit
