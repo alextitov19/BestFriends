@@ -86,6 +86,8 @@ struct HomeView: View {
                                 })
                         }
                         if planets.count > 2 && !focusPlanet {
+                            Spacer()
+                                .frame(width: 40)
                             planets[2]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)
                                     if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[2].user.id {
@@ -107,8 +109,7 @@ struct HomeView: View {
                         
                         
                         if planets.count > 3 && !focusPlanet {
-                            Spacer()
-                                .frame(width: 40)
+                           
                             
                             planets[3]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[3].user.id)
@@ -159,8 +160,7 @@ struct HomeView: View {
                         }
                             
 //                        if planets.count > 4 && !focusPlanet {
-                            Spacer()
-                                .frame(width: 40)
+                         
                         
                             // Old 3rd Bottom planet
                             if planets.count > 4 && !focusPlanet {
@@ -188,7 +188,7 @@ struct HomeView: View {
                         }, label: {
                             Text("Create New Chat")
                                 .fontWeight(.regular)
-                                .frame(width: 190, height: 30)
+                                .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -199,7 +199,7 @@ struct HomeView: View {
                     //                    Text("received push notification to")
                     
                     Spacer()
-                        .frame(height: 5)
+                        .frame(height: 20)
                     
                     //                    MARK: Connect to Chat Now page
                     
@@ -209,53 +209,54 @@ struct HomeView: View {
                                            label: {
                                 Text("Urgent Chat Invite")
                                     .fontWeight(.thin)
-                                    .frame(width: 190, height: 25)
+                                    .frame(width: 210, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .opacity(0.8)
                             })
                         }
-                        
+                        Spacer().frame(height:20)
                         
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
                             Text("Friend Changed Mood")
                                 .fontWeight(.thin)
-                                .frame(width: 190, height: 25)
+                                .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .opacity(0.8)
                                 .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
                         })
+                        Spacer().frame(height:20)
                         NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                        label: {
                             Text("ALERT from FriendGroup")
                                 .fontWeight(.thin)
-                                .frame(width: 190, height: 25)
+                                .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
-   
+                        Spacer().frame(height:20)
                         NavigationLink(destination: VirtualHug(),
                                        label: {
                             Text("HUG")
                                 .fontWeight(.thin)
-                                .frame(width: 190, height: 25)
+                                .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
-
+                        Spacer().frame(height:20)
                         NavigationLink(destination: BuildFriendPlaylist(),
                                        label: {
                             Text("Playlist")
                                 .fontWeight(.thin)
-                                .frame(width: 190, height: 25)
+                                .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
