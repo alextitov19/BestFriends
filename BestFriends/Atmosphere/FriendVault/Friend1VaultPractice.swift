@@ -59,49 +59,7 @@ struct Friend1VaultPractice: View {
                     Spacer()
                 }
                 
-                //TODO: Auto import message from [AtmosphereMain2] page for the below rectangle
-                if mostRecentMoodLog != nil {
-                    ZStack {
-                        if mostRecentMoodLog!.mood < 4 {
-                            ColorManager .pmbc_blue
-                                .cornerRadius(25)
-                        } else if mostRecentMoodLog!.mood == 4 {
-                            //                                Color(.green)
-                            ColorManager .pmbc_green
-                                .cornerRadius(25)
-                        } else if mostRecentMoodLog!.mood == 5 {
-                            Color(.orange)
-                            //                                ColorManager .pmbc_orange
-                                .cornerRadius(25)
-                        } else {
-                            Color(.yellow)
-                            
-                                .cornerRadius(25)
-                        }
-                        
-                        VStack{
-                            //MARK: Date and time
-                            HStack {
-                                Text(getDateString(date: Date(timeIntervalSince1970: TimeInterval(mostRecentMoodLog!.createdOn))))
-                                
-                                //                                Spacer()
-                            }
-                            .padding()
-                            
-                            //MARK: Mood Log sumary
-                            HStack {
-                                Text(mostRecentMoodLog!.summary)
-                                
-                                Spacer()
-                            }
-                            .padding(.horizontal)
-                        }
-                    }
-                    .frame(width: 300, height: 120)
-                    .opacity(0.85)
-                    .padding(.vertical)
-                }
-                
+//                ReceivedPlaylist
                 Spacer()
                     .frame(height: 7)
                 

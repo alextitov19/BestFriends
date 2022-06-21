@@ -53,7 +53,7 @@ struct BuildFriendPlaylist: View {
                         .frame(height: 10)
                     
                     NavigationLink(
-                        destination: EmptyView(),
+                        destination: SendSongChat(),
                         label: {
                             Text("Let's do this!")
                                 .fontWeight(.thin)

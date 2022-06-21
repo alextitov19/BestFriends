@@ -249,7 +249,7 @@ struct HomeView: View {
                                 .opacity(0.8)
                         })
                         
-                        NavigationLink(destination: ReceivedPlaylist(),
+                        NavigationLink(destination: BuildFriendPlaylist(),
                                        label: {
                             Text("Playlist")
                                 .fontWeight(.thin)

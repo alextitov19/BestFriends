@@ -28,8 +28,23 @@ struct ReceivedPlaylist: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Your friends sent these songs for you")
-                    .font(.system(size: 27))
+                Text("Check to see if")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                
+                Text("your friends sent songs")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                
+                Text("in Chat that they listen to")
+                    .font(.system(size: 35))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                
+                Text("that match your mood.")
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                 
