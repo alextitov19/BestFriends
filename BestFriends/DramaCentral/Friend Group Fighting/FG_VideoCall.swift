@@ -49,7 +49,7 @@ struct FG_VideoCall: View {
             NavigationLink(destination: IntroBluemodeFriend(), label: {
                 FG_VideoCallCircle (color: .pink, friendName: "Huge Fight \nwith BFF")
                 })
-            .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
+            .offset(x: showItems ? 120 : 0, y: showItems ? -165: 0)
              
      
            
