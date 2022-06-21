@@ -13,6 +13,7 @@ struct ResetPasswordView: View {
     @EnvironmentObject var sessionManager: SessionManager
 
     let user: User
+    
     @State private var oldPassword: String = ""
     @State private var newPassword: String = ""
     @State private var string = ""
