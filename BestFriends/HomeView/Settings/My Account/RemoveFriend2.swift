@@ -97,13 +97,19 @@ struct RemoveFriend2: View {
 //                print("Reset password response: ", response)
 //                string = "Success"
                 
-                private func submit() {
-                    if friendEmail.count > 0 {
-                        RestApi.instance.removeFriend(email: user.id, removeFriend: removeFriend).then({ response in
-                            print("Remove Friend response: ", response)
-                            string = "Success"
-                
-            })//then
+//                private func submit() {
+//                    if friendEmail.count > 0 {
+//                        RestApi.instance.removeFriend(email: user.id, removeFriend: removeFriend).then({ response in
+//                            print("Remove Friend response: ", response)
+//                            string = "Success"
+//
+                            
+                            private func submit() {
+                                if friendEmail.count > 0 {
+                                    RestApi.instance.removeFriend(email: user.id, removeFriend: removeFriend)
+                            
+                            
+//            })//then
         }//if
     }//submit
 }
