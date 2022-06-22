@@ -199,7 +199,7 @@ struct HomeView: View {
                     //                    Text("received push notification to")
                     
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 25)
                     
                     //                    MARK: Connect to Chat Now page
                     
@@ -216,11 +216,11 @@ struct HomeView: View {
                                     .opacity(0.8)
                             })
                         }
-                        Spacer().frame(height:20)
+                        Spacer().frame(height:15)
                         
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
-                            Text("Friend Changed Mood")
+                            Text("Friend's Mood Changed")
                                 .fontWeight(.thin)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
@@ -229,7 +229,8 @@ struct HomeView: View {
                                 .opacity(0.8)
                                 .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
                         })
-                        Spacer().frame(height:20)
+                        Spacer().frame(height:15)
+                       
                         NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                        label: {
                             Text("ALERT from FriendGroup")
@@ -240,10 +241,11 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
-                        Spacer().frame(height:20)
+                        Spacer().frame(height:15)
+                        
                         NavigationLink(destination: VirtualHug(),
                                        label: {
-                            Text("HUG")
+                            Text("Friend sent HUG")
                                 .fontWeight(.thin)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
@@ -251,10 +253,11 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
-                        Spacer().frame(height:20)
+                        Spacer().frame(height:15)
+                       
                         NavigationLink(destination: BuildFriendPlaylist(),
                                        label: {
-                            Text("Playlist")
+                            Text("Friend sent Playlist")
                                 .fontWeight(.thin)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
