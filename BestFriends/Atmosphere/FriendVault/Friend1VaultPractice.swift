@@ -40,21 +40,29 @@ struct Friend1VaultPractice: View {
                 .onAppear(perform: loadData)
 
             
-            AdPlayerView(name: "girlYellow")
+//            AdPlayerView(name: "girlYellow")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//
+            ColorManager.purple4
                 .ignoresSafeArea()
-                .blendMode(.screen)
-      
+                .onAppear()
+
             
             
             VStack {
+                
+             
+                
                 //MARK: code to get friends name at top of page
                 HStack {
                     Spacer()
                         .frame(width: 35)
                     
                     Text(friend.firstName + " " + friend.lastName)
-                        .font(.system(size: 20))
+                        .font(.system(size: 17))
                         .foregroundColor(.white)
+               
                     
                     Spacer()
                 }
@@ -63,7 +71,17 @@ struct Friend1VaultPractice: View {
                 Spacer()
                     .frame(height: 7)
                 
+                Text("wants you to know")
+                    .font(.system(size: 20))
+                    .fontWeight(.medium)
+                    .frame(width:325, height: 25)
+                    .foregroundColor(.white)
                 
+                Text("their mood just changed")
+                    .font(.system(size: 20))
+                    .fontWeight(.medium)
+                    .frame(width:325, height: 25)
+                    .foregroundColor(.white)
                 
                 
                 
@@ -71,7 +89,7 @@ struct Friend1VaultPractice: View {
                 TextField("", text: $customMessage)
                     .placeholder(when: customMessage.isEmpty) {
                         HStack {
-                            Text("Send a supportive message").foregroundColor(.white)
+                            Text("Send a supportive message in Chat").foregroundColor(.purple)
                             
                             Spacer()
                         }
@@ -81,23 +99,24 @@ struct Friend1VaultPractice: View {
                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                     .padding()
                     .overlay(RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.gray)
+                        .stroke(Color.purple)
                         .frame(height: 40)
                         .padding(.horizontal, 5)
                     )
-                    .padding(.horizontal, 10)
+                    .padding(.horizontal, 0)
                 
                 VStack {
                     Button(action: {
                         sendMessage()
                     }, label: {
-                        Text("Send Custom Message to Chat")
+                        Text("Send to Chat")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 25)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .frame(width: 200, height: 25)
+                            .foregroundColor(.purple)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 22))
                         //                                .opacity(0.5)
-                            .background(ColorManager.purple3)
+                            .background(ColorManager.purple2)
                             .opacity(0.7)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -117,7 +136,7 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Are you okay?")
                             .fontWeight(.thin)
-                            .frame(width: 260, height: 25)
+                            .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
                             .background(colorChangeTap == "Are you okay?" ? ColorManager.grey2 : ColorManager.grey1)
@@ -133,7 +152,7 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Do we need to talk?")
                             .fontWeight(.thin)
-                            .frame(width: 260, height: 25)
+                            .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
                             .background(colorChangeTap == "Do we need to talk?" ? ColorManager.grey2 : ColorManager.grey1)
@@ -149,7 +168,7 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Congradulations, you did it!")
                             .fontWeight(.thin)
-                            .frame(width: 260, height: 25)
+                            .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
                             .background(colorChangeTap == "C" ? ColorManager.grey2 : ColorManager.grey1)
@@ -169,7 +188,7 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Good luck, you got this!")
                             .fontWeight(.thin)
-                            .frame(width: 260, height: 25)
+                            .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
                             .font(.system(size: 20))
                             .background(colorChangeTap == "E" ? ColorManager.grey2 : ColorManager.grey1)
@@ -200,7 +219,7 @@ struct Friend1VaultPractice: View {
 //                        .resizable()
                         
                         .fontWeight(.thin)
-                        .frame(width: 100, height: 30)
+                        .frame(width: 100, height: 32)
                         .font(.system(size: 30))
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
 //                        .scaledToFit()
@@ -240,7 +259,7 @@ struct Friend1VaultPractice: View {
                        label: {
                            Text("Playlist")
                                .fontWeight(.thin)
-                               .frame(width: 130, height: 30)
+                               .frame(width: 130, height: 32)
                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                .font(.system(size: 30))
                                .background(ColorManager.purple3)
