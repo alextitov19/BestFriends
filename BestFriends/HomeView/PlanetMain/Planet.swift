@@ -83,7 +83,7 @@ struct PlanetActionsView: View {
            
             HStack {
                 VStack {
-                    NavigationLink(destination: HideoutsView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                    NavigationLink(destination: MyRoomPreload(user: user, friends: friends, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                    label: {
                         ZStack {
                             Circle()
