@@ -6,11 +6,11 @@
 //
 
 
-import CoreHaptics
+//import CoreHaptics
 import SwiftUI
 
 struct VirtualHug: View {
-    @State private var engine: CHHapticEngine?
+//    @State private var engine: CHHapticEngine?
     
     var body: some View {
         
@@ -29,7 +29,7 @@ struct VirtualHug: View {
                     .blendMode(.screen)
         
         VStack {
-            Text("Hold your phone to your")
+            Text("Your friend sent you a ")
                 .font(.system(size: 30))
                 .fontWeight(.ultraLight)
                 .multilineTextAlignment(.center)
@@ -44,15 +44,15 @@ struct VirtualHug: View {
                 .opacity(0.7)
             
             
-            Text("TAP")
+            Text("HUG")
                 .font(.system(size: 35))
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
                 .padding()
-                .onAppear(perform: prepareHaptics)
-                .onTapGesture(perform: complexSuccess)
-               
+//                .onAppear(perform: prepareHaptics)
+//                .onTapGesture(perform: complexSuccess)
+//
             }
             
             Spacer()
@@ -78,46 +78,46 @@ struct VirtualHug: View {
       
     }
     
-
+}
     
 
     
     
 
 //MARK: the below lets you customize the vibration
-
-        func prepareHaptics() {
-            guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
-            do {
-                engine = try CHHapticEngine()
-                try engine?.start()
-            } catch {
-                print("There was an error creating the engine: \(error.localizedDescription)")
-            }
-        }
-
-  func complexSuccess() {
-      guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
-
-      let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 5)
-      let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 5)
-      let decayTime = CHHapticEventParameter(parameterID: .decayTime, value: 1)
-      
-      
-      let event = CHHapticEvent(eventType: .hapticContinuous, parameters: [intensity, sharpness, decayTime], relativeTime: 1, duration: 4)
-
-      do {
-          let pattern = try CHHapticPattern(events: [event], parameters: [])
-          let player = try engine?.makeAdvancedPlayer(with: pattern)
-          try player?.start(atTime: 0)
-      }
-      catch {
-          print("failed to play \(error.localizedDescription)")
-          print("oh no")
-      }
-  }
-        
-    }
+//
+//        func prepareHaptics() {
+//            guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+//            do {
+//                engine = try CHHapticEngine()
+//                try engine?.start()
+//            } catch {
+//                print("There was an error creating the engine: \(error.localizedDescription)")
+//            }
+//        }
+//
+//  func complexSuccess() {
+//      guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+//
+//      let intensity = CHHapticEventParameter(parameterID: .hapticIntensity, value: 5)
+//      let sharpness = CHHapticEventParameter(parameterID: .hapticSharpness, value: 5)
+//      let decayTime = CHHapticEventParameter(parameterID: .decayTime, value: 1)
+//
+//
+//      let event = CHHapticEvent(eventType: .hapticContinuous, parameters: [intensity, sharpness, decayTime], relativeTime: 1, duration: 4)
+//
+//      do {
+//          let pattern = try CHHapticPattern(events: [event], parameters: [])
+//          let player = try engine?.makeAdvancedPlayer(with: pattern)
+//          try player?.start(atTime: 0)
+//      }
+//      catch {
+//          print("failed to play \(error.localizedDescription)")
+//          print("oh no")
+//      }
+//  }
+//
+//    }
     
 
     
