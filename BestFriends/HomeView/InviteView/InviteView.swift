@@ -43,7 +43,7 @@ struct InviteView: View {
                     .font(.system(size: 27, weight: .light))
                 
                 
-                Text("1) Ask friend to download BestFriends \n2) Enter their email - tap [Invite] \n3) Only invite once \n4) Only one person sends an invite \n 5) If duplicate planets delete in Settings")
+                Text("1) 1st ask friend to download BestFriends \n2) Enter their email - tap [Invite] \n3) Only invite once \n4) Only one person send invite")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()
@@ -105,7 +105,7 @@ struct InviteView: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("A Push Notification alerts friend ")
+                        Text("A Push Notification alerts friend,")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
