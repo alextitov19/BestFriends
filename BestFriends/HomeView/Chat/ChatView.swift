@@ -78,7 +78,7 @@ struct ChatView: View {
                                 isLockTapped.toggle()
                             })
                             
-//                            sessionManager.showChat(user: <#T##User#>, group: <#T##Group#>)
+                            //                            sessionManager.showChat(user: <#T##User#>, group: <#T##Group#>)
                         })
                         .onAppear(perform: {
                             if user.hiddenGroups != nil {
@@ -90,7 +90,7 @@ struct ChatView: View {
                         .fullScreenCover(isPresented: $isLockTapped) {
                             HideChatView(sessionManager: _sessionManager, user: user, group: group)
                         }
-//                    }//NavLink
+                    //                    }//NavLink
                     
                     Text("REMOVE me")
                         .foregroundColor(.gray)
@@ -104,15 +104,15 @@ struct ChatView: View {
                         if message.senderId == user.id {
                             ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
                         } else {
-                        ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
-                            .onLongPressGesture(minimumDuration: 1, perform: { showingMessageOptions = true })
-                            .confirmationDialog("What would you like to do with this message?", isPresented: $showingMessageOptions, titleVisibility: .visible) {
-                                Button("Save to Smile Notes") {
-                                    saveToSmileNotes(message: message)
+                            ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
+                                .onLongPressGesture(minimumDuration: 1, perform: { showingMessageOptions = true })
+                                .confirmationDialog("What would you like to do with this message?", isPresented: $showingMessageOptions, titleVisibility: .visible) {
+                                    Button("Save to Smile Notes") {
+                                        saveToSmileNotes(message: message)
+                                    }
+                                    Link("Report Abuse", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
+                                    
                                 }
-                                Link("Report Abuse", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
-                                
-                            }
                         }
                     }
                 }
@@ -169,17 +169,9 @@ struct ChatView: View {
     }//body
     
     private func saveToSmileNotes(message: Message) {
-        RestApi.instance.getSmileNotes().then({ smileNotes in
-            print("Got smile notes from server: ", smileNotes)
-            for sm in smileNotes {
-                if sm.messageId == message.id {
-                    print("This message is already a smile note")
-                    return
-                }
-            }
-            RestApi.instance.createSmileNote(messageId: message.id, messageBody: message.body, sendername: message.senderName).then({ smileNote in
-                print("Got smile note from server: ", smileNote)
-            })
+        
+        RestApi.instance.createSmileNote(messageId: message.id, messageBody: message.body, sendername: message.senderName).then({ smileNote in
+            print("Got smile note from server: ", smileNote)
         })
         
     }
