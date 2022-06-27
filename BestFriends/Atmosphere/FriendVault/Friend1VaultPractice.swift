@@ -38,21 +38,21 @@ struct Friend1VaultPractice: View {
                 .ignoresSafeArea()
                 .scaledToFill()
                 .onAppear(perform: loadData)
-
             
-//            AdPlayerView(name: "girlYellow")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//
+            
+            //            AdPlayerView(name: "girlYellow")
+            //                .ignoresSafeArea()
+            //                .blendMode(.screen)
+            //
             ColorManager.purple4
                 .ignoresSafeArea()
                 .onAppear()
-
+            
             
             
             VStack {
                 
-             
+                
                 
                 //MARK: code to get friends name at top of page
                 HStack {
@@ -62,12 +62,41 @@ struct Friend1VaultPractice: View {
                     Text(friend.firstName + " " + friend.lastName)
                         .font(.system(size: 17))
                         .foregroundColor(.white)
-               
+                    
                     
                     Spacer()
                 }
                 
-//                ReceivedPlaylist
+                
+                if (mostRecentMoodLog != nil) {
+                    ZStack {
+                        if mostRecentMoodLog!.mood < 4 {
+                            Color(.cyan)
+                        } else if mostRecentMoodLog!.mood == 4 {
+                            Color(.green)
+                        } else if mostRecentMoodLog!.mood == 5 {
+                            Color(.orange)
+                        } else {
+                            Color(.yellow)
+                        }
+                        
+                        VStack {
+                            Text(mostRecentMoodLog!.summary)
+                                .padding()
+                            Text(getDateString(n: mostRecentMoodLog!.createdOn))
+                                .padding()
+                        }
+                    }
+                    .frame(width: 350, height: 150)
+                    .cornerRadius(25)
+                    .padding()
+                }
+                
+                
+                
+                
+                
+                //                ReceivedPlaylist
                 Spacer()
                     .frame(height: 7)
                 
@@ -113,7 +142,7 @@ struct Friend1VaultPractice: View {
                             .fontWeight(.thin)
                             .frame(width: 200, height: 25)
                             .foregroundColor(.purple)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        //                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 22))
                         //                                .opacity(0.5)
                             .background(ColorManager.purple2)
@@ -202,44 +231,44 @@ struct Friend1VaultPractice: View {
                     Spacer ()
                         .frame(height: 10)
                 }
-//
-//                Text("Send Hug")
-//                    .font(.system(size: 35))
-//                    .frame(width:325, height: 30)
-//                    .foregroundColor(Color.white)
-//
+                //
+                //                Text("Send Hug")
+                //                    .font(.system(size: 35))
+                //                    .frame(width:325, height: 30)
+                //                    .foregroundColor(Color.white)
+                //
                 HStack {
                     
                     ZStack {
-                    
-                    if !hugTapped {
-                        Text("Hug")
                         
-//                        Image("Hug4")
-//                        .resizable()
-                        
-                        .fontWeight(.thin)
-                        .frame(width: 100, height: 32)
-                        .font(.system(size: 30))
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                        .scaledToFit()
-//                        .colorInvert()
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        .onTapGesture {
-                            RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken )
-                            hugTapped.toggle()
+                        if !hugTapped {
+                            Text("Hug")
+                            
+                            //                        Image("Hug4")
+                            //                        .resizable()
+                            
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 32)
+                                .font(.system(size: 30))
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            //                        .scaledToFit()
+                            //                        .colorInvert()
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                .onTapGesture {
+                                    RestApi.instance.sendPushNotification(title: "Hug", body: "", APNToken: friend.APNToken )
+                                    hugTapped.toggle()
+                                }
+                            
                         }
-
-                    }
                         
                         
                         
                     }
                     
-//                   MARK: Below is for adding Playlist - put in the 'Note' image
-                        if !noteTapped {
+                    //                   MARK: Below is for adding Playlist - put in the 'Note' image
+                    if !noteTapped {
                         Image("")
                             .resizable()
                             .foregroundColor(.pink)
@@ -250,27 +279,27 @@ struct Friend1VaultPractice: View {
                             .padding(.horizontal, 30)
                             .onTapGesture {
                                 RestApi.instance.sendPushNotification(title: "Note", body: "", APNToken: friend.APNToken )
-
-                            noteTapped.toggle()
+                                
+                                noteTapped.toggle()
                             }
-                            
-                    NavigationLink(
-                       destination: BuildFriendPlaylist(),
-                       label: {
-                           Text("Playlist")
-                               .fontWeight(.thin)
-                               .frame(width: 130, height: 32)
-                               .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                               .font(.system(size: 30))
-                               .background(ColorManager.purple3)
-                               .cornerRadius(15)
-                               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                       })
-                   
-                            
-//                        Spacer ()
-                            
-                            
+                        
+                        NavigationLink(
+                            destination: BuildFriendPlaylist(),
+                            label: {
+                                Text("Playlist")
+                                    .fontWeight(.thin)
+                                    .frame(width: 130, height: 32)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                        
+                        
+                        //                        Spacer ()
+                        
+                        
                     }
                     
                 }
@@ -355,10 +384,20 @@ struct Friend1VaultPractice: View {
         
     }
     
-    private func getDateString(date: Date) -> String {
-        let formatter3 = DateFormatter()
-        formatter3.dateFormat = "HH:mm E, d MMM y"
-        return formatter3.string(from: date)
+    private func getDateString(n: Int64) -> String {
+        var timeString = ""
+        var x = Int64(Date().timeIntervalSince1970) - n
+        x = x / 60
+        timeString = "\(x) min"
+        if x > 60 {
+            x = x / 6
+            timeString = "\(x) hr"
+            if x > 24 {
+                x = x / 24
+                timeString = "\(x) days"
+            }
+        }
+        return timeString
     }
 }
 
