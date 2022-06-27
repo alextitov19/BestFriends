@@ -43,6 +43,12 @@ struct ChatGroupsView: View {
                             .frame(width: 60, height: 4)
                             .padding(.top)
                         
+                        
+                        Text("Chat Rooms")
+                            .font(.system(size: 25))
+                            .fontWeight(.thin)
+                            .foregroundColor(.purple)
+                        
                         //MARK: ScrollView content...
                         ScrollView(.vertical, showsIndicators: false) {
                             ForEach(groups, id: \.id) { group in
