@@ -56,7 +56,6 @@
 	<true/>
 	<key>UIBackgroundModes</key>
 	<array>
-		<string>external-accessory</string>
 		<string>fetch</string>
 		<string>processing</string>
 		<string>remote-notification</string>
