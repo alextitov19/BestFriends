@@ -30,6 +30,14 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 40)
                 
+                Text("Friend Requests")
+                    .foregroundColor(.gray)
+                    .font(.system(size: 30, weight: .bold))
+              
+                Spacer()
+                    .frame(height: 10)
+                
+                
                 Text("You may add up to 5 friends")
                     .foregroundColor(.purple)
                     .font(.system(size: 27, weight: .light))
@@ -41,7 +49,7 @@ struct InviteView: View {
                     .italic()
                     .font(.system(size: 17))
                 
-                
+                VStack {
                 // Top part for inviting a friend
                 HStack {
                     MainTextField(text: $email, placeholder: "Email")
@@ -55,11 +63,64 @@ struct InviteView: View {
                     }
                     .frame(width: 120)
                 }
-                .padding()
+               .padding()
 
-                Text("Friend Requests")
+                
+                Spacer()
+                    .frame(height: 30)
+                    
+                    VStack {
+                
+                Text("* Setup 1st Chat Room")
                     .foregroundColor(.gray)
                     .font(.system(size: 30, weight: .bold))
+                
+                Text("After your friend accepts your request")
+                    .fontWeight(.thin)
+                    .foregroundColor(.white)
+                    .italic()
+                    .font(.system(size: 17))
+                        
+                        Text("their 'planet' will popup on homepage")
+                            .fontWeight(.thin)
+                            .foregroundColor(.white)
+                            .italic()
+                            .font(.system(size: 17))
+                    
+                    Spacer()
+                        .frame(height: 30)
+                        
+                        Text("Tap their 'planet' then,")
+                            .fontWeight(.thin)
+                            .foregroundColor(.white)
+                            .italic()
+                            .font(.system(size: 17))
+                
+                        Text("tap the button [Create New Chat]")
+                            .fontWeight(.thin)
+                            .foregroundColor(.white)
+                            .italic()
+                            .font(.system(size: 17))
+                        
+                        Spacer()
+                            .frame(height: 30)
+                        
+                        Text("A Push Notification alerts friend ")
+                            .fontWeight(.thin)
+                            .foregroundColor(.white)
+                            .italic()
+                            .font(.system(size: 17))
+                        
+                        Text("slide up 'Chat Rooms' from bottom")
+                            .fontWeight(.thin)
+                            .foregroundColor(.white)
+                            .italic()
+                            .font(.system(size: 17))
+                        
+                    }
+
+                }
+                
                 
                 // Invites
                 ScrollView (.vertical) {
@@ -107,5 +168,6 @@ struct InviteView: View {
     
    
 }
+
 
 
