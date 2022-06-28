@@ -23,7 +23,7 @@ struct MyRoomPreload: View {
     var body: some View {
         ZStack {
             
-            ColorManager.purple4
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -94,7 +94,7 @@ struct MyRoomPreload: View {
                     Text("- see nice messages you \nlong-tapped in Chat")
                         .font(.system(size: 19))
                         .italic()
-                        .foregroundColor(ColorManager.grey4)
+                        .foregroundColor(ColorManager.grey2)
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                     
@@ -104,7 +104,7 @@ struct MyRoomPreload: View {
                     Text("- Shake you phone - images \nthat always make you SMILE \npop up for just a second")
                         .font(.system(size: 19))
                         .italic()
-                        .foregroundColor(ColorManager.grey4)
+                        .foregroundColor(ColorManager.grey2)
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                     
@@ -114,7 +114,7 @@ struct MyRoomPreload: View {
                     Text("- Check out songs that your friends \n sent you to match your mood")
                         .font(.system(size: 19))
                         .italic()
-                        .foregroundColor(ColorManager.grey4)
+                        .foregroundColor(ColorManager.grey2)
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                     VStack{
@@ -126,14 +126,17 @@ struct MyRoomPreload: View {
                             .font(.system(size: 35))
                             .italic()
                             .fontWeight(.light)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(ColorManager.grey2)
+//                            .foregroundColor(Color.white)
                         
                         
                         Text("Its ok to be sad for a while")
                             .font(.system(size: 30))
                             .italic()
                             .fontWeight(.light)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(ColorManager.grey2)
+//                            .foregroundColor(Color.white)
+                           
                         
                         
                         Spacer()
