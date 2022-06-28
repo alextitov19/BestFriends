@@ -103,7 +103,7 @@ struct FG_Team: View {
                           
 
                       }
-                      Text("True friends don't leave a freind behind.")
+                      Text("True friends don't leave a friend behind.")
                           .font(.system(size: 20))
                           .fontWeight(.light)
                           .foregroundColor(Color.white)
