@@ -174,8 +174,7 @@ class RestApi {
         }
     }
     
-    public func removeFriend(email:String, removeFriend:RemoveFriend)
-    {
+    public func removeFriend(email:String, removeFriend:RemoveFriend) {
         
     }
 }
