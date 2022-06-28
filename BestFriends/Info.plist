@@ -35,6 +35,11 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>We need to access your camera to enable you to take a picture and share it with your friends.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
@@ -42,7 +47,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The location is converted to coordinates which are then converted to the name of the nearest city. The name of that city is stored in the database to allow us to get an idea of where the majority of the users are coming from. The actual coordinates are not stored in the database.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>$(PRODUCT_NAME) photo use. User can send photos to their freinds in chat or ShakingCool. Only the users you send your photos to will have acess to the specific photos you&apos;ve sent them.</string>
+	<string>$(PRODUCT_NAME) photo use. User can send photos to their freinds in chat or ShakingCool. Only the users you send your photos to will have acess to the specific photos you've sent them.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>MainFont.ttf</string>
@@ -76,10 +81,5 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 </dict>
 </plist>

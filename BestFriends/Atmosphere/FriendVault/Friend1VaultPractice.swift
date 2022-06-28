@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Combine
-import AVKit
+//import AVKit
 
 struct Friend1VaultPractice: View {
     @EnvironmentObject var sessionManager: SessionManager
@@ -65,8 +65,24 @@ struct Friend1VaultPractice: View {
                     
                     
                     Spacer()
+                    
+                    
                 }
                 
+                Spacer()
+                    .frame(height: 7)
+                
+                Text("wants you to know")
+                    .font(.system(size: 20))
+                    .fontWeight(.thin)
+                    .frame(width:325, height: 25)
+                    .foregroundColor(.white)
+                
+                Text("their mood just changed")
+                    .font(.system(size: 20))
+                    .fontWeight(.thin)
+                    .frame(width:325, height: 25)
+                    .foregroundColor(.white)
                 
                 if (mostRecentMoodLog != nil) {
                     ZStack {
@@ -88,37 +104,24 @@ struct Friend1VaultPractice: View {
                         }
                     }
                     .frame(width: 350, height: 150)
+                    .opacity(0.63)
                     .cornerRadius(25)
                     .padding()
                 }
                 
                 
                 
-                
-                
                 //                ReceivedPlaylist
                 Spacer()
                     .frame(height: 7)
-                
-                Text("wants you to know")
-                    .font(.system(size: 20))
-                    .fontWeight(.medium)
-                    .frame(width:325, height: 25)
-                    .foregroundColor(.white)
-                
-                Text("their mood just changed")
-                    .font(.system(size: 20))
-                    .fontWeight(.medium)
-                    .frame(width:325, height: 25)
-                    .foregroundColor(.white)
-                
-                
+               
                 
                 //MARK: Send CUSTOM Support Message to user got push notificaiton from OR chose one from below
                 TextField("", text: $customMessage)
                     .placeholder(when: customMessage.isEmpty) {
                         HStack {
-                            Text("Send a supportive message in Chat").foregroundColor(.purple)
+                            Text("Send a supportive message in Chat")
+                            .foregroundColor(.white)
                             
                             Spacer()
                         }
@@ -130,9 +133,9 @@ struct Friend1VaultPractice: View {
                     .overlay(RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.purple)
                         .frame(height: 40)
-                        .padding(.horizontal, 5)
+                        .padding(.horizontal, 10)
                     )
-                    .padding(.horizontal, 0)
+//                    .padding(.horizontal, 0)
                 
                 VStack {
                     Button(action: {
@@ -142,7 +145,6 @@ struct Friend1VaultPractice: View {
                             .fontWeight(.thin)
                             .frame(width: 200, height: 25)
                             .foregroundColor(.purple)
-                        //                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 22))
                         //                                .opacity(0.5)
                             .background(ColorManager.purple2)
@@ -291,7 +293,7 @@ struct Friend1VaultPractice: View {
                                     .frame(width: 130, height: 32)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
-                                    .background(ColorManager.purple3)
+                                    .background(ColorManager.orange3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
