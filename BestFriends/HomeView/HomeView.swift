@@ -253,10 +253,12 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
+                        
                         Spacer().frame(height:15)
                        
-                        NavigationLink(destination: BuildFriendPlaylist(user: homeData!.user, groups: homeData!.groups, friend: selectedPlanet!.user, friendAtmosphere: selectedPlanet!.atmosphere),
-                                       label: {
+                        Button(action: {
+                            friendSentPlaylist(friend: selectedPlanet!.user)
+                        }, label: {
                             Text("Friend sent Playlist")
                                 .fontWeight(.thin)
                                 .frame(width: 210, height: 30)
@@ -265,6 +267,7 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
+                               
                         Spacer()
                         
                         
@@ -422,6 +425,15 @@ struct HomeView: View {
         RestApi.instance.createGroup(name: name, members: newGroupMembers).then { response in
             print("Create Group response: ", response)
             sessionManager.showChat(user: homeData!.user, group: response)
+        }
+    }
+    
+    private func friendSentPlaylist(friend: User) {
+        let arr = [friend.id, homeData!.user.id]
+        for group in homeData!.groups {
+            if group.members.containsSameElements(as: arr) {
+                sessionManager.showChat(user: homeData!.user, group: group)
+            }
         }
     }
     
