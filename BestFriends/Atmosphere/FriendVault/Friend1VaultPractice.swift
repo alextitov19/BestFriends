@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Combine
-import AVKit
+//import AVKit
 
 struct Friend1VaultPractice: View {
     @EnvironmentObject var sessionManager: SessionManager
@@ -293,7 +293,7 @@ struct Friend1VaultPractice: View {
                                     .frame(width: 130, height: 32)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
-                                    .background(ColorManager.purple3)
+                                    .background(ColorManager.orange3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
