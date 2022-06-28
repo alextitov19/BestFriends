@@ -255,7 +255,7 @@ struct HomeView: View {
                         })
                         Spacer().frame(height:15)
                        
-                        NavigationLink(destination: BuildFriendPlaylist(),
+                        NavigationLink(destination: BuildFriendPlaylist(user: homeData!.user, groups: homeData!.groups, friend: selectedPlanet!.user, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
                             Text("Friend sent Playlist")
                                 .fontWeight(.thin)

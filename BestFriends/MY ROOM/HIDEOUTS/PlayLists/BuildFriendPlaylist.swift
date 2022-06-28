@@ -9,6 +9,11 @@ import SwiftUI
 
 struct BuildFriendPlaylist: View {
     
+    let user: User
+    let groups: [Group]
+    let friend: User
+    let friendAtmosphere: Atmosphere
+    
     var body: some View {
         ZStack {
             ColorManager.purple4
@@ -53,7 +58,7 @@ struct BuildFriendPlaylist: View {
                         .frame(height: 10)
                     
                     NavigationLink(
-                        destination: SendSongChat(),
+                        destination: SendSongChat2(user: user, friend: friend, groups: groups, friendAtmosphere: friendAtmosphere),
                         label: {
                             Text("Let's do this!")
                                 .fontWeight(.thin)
@@ -88,10 +93,6 @@ struct BuildFriendPlaylist: View {
 }
 
 
-struct BuildFriendPlaylist_Previews : PreviewProvider {
-    static var previews: some View {
-        BuildFriendPlaylist()
-    }
-}
+
 
 

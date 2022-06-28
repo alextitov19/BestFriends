@@ -56,7 +56,7 @@ struct OurMission: View {
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? -250: 0)
                 
-                NavigationLink(destination: BuildFriendPlaylist(), label: {
+                NavigationLink(destination: EmptyView(), label: {
                     WhoFightingCircle (color: .green, friendName: "Build \n Playlist \nfor Friend")
                 })
                 .offset(x: showItems ? 50 : 0, y: showItems ? -150: 0)

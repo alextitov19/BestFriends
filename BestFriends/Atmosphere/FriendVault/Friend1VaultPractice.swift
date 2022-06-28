@@ -286,7 +286,7 @@ struct Friend1VaultPractice: View {
                             }
                         
                         NavigationLink(
-                            destination: BuildFriendPlaylist(),
+                            destination: BuildFriendPlaylist(user: user, groups: groups, friend: friend, friendAtmosphere: friendAtmosphere),
                             label: {
                                 Text("Playlist")
                                     .fontWeight(.thin)
