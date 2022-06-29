@@ -35,7 +35,7 @@ struct BetaTestVideo: View {
                     
                     
                     NavigationLink(
-                        destination: UserBetaTesting(),
+                        destination: HorizonsPrototype(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
