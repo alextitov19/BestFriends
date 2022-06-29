@@ -86,6 +86,7 @@
 		CF0911912848976A00CB0AF0 /* BestFriendsVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0911902848976A00CB0AF0 /* BestFriendsVideo.swift */; };
 		CF091195284A6DC900CB0AF0 /* FG_VideoCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */; };
 		CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */; };
+		CF1ECABD286C2AE100D999F8 /* rockSit.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1ECABC286C2AE100D999F8 /* rockSit.mp4 */; };
 		CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
 		CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2DBCF028552527008616A3 /* storm2.mp4 */; };
@@ -265,6 +266,7 @@
 		CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_VideoCall.swift; sourceTree = "<group>"; };
 		CF091197284A736800CB0AF0 /* FGVideo2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FGVideo2.mp4; sourceTree = "<group>"; };
 		CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongChat2.swift; sourceTree = "<group>"; };
+		CF1ECABC286C2AE100D999F8 /* rockSit.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rockSit.mp4; sourceTree = "<group>"; };
 		CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileNoteCard.swift; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
 		CF2DBCF028552527008616A3 /* storm2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = storm2.mp4; sourceTree = "<group>"; };
@@ -741,6 +743,7 @@
 			children = (
 				CFD0ABD9285C4C720032CA3D /* BuiltByTeensVid.mp4 */,
 				CFD0ABDD285C4E7C0032CA3D /* BFVideo.mp4 */,
+				CF1ECABC286C2AE100D999F8 /* rockSit.mp4 */,
 				CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */,
 				CF763F7D285B06000010D1A9 /* myRoom4.mp4 */,
 				CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */,
@@ -1128,6 +1131,7 @@
 				CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */,
 				CF785695284F3DB900B31803 /* Playlist.mp4 in Resources */,
 				CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */,
+				CF1ECABD286C2AE100D999F8 /* rockSit.mp4 in Resources */,
 				7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
 			);

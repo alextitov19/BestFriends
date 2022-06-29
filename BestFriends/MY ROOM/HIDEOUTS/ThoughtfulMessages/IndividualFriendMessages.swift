@@ -30,7 +30,7 @@ struct IndividualFriendMessages: View {
                 .scaledToFill()
                 .onAppear(perform: loadData)
             
-            AdPlayerView(name: "sadTeen")
+            AdPlayerView(name: "rockSit")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -49,9 +49,9 @@ struct IndividualFriendMessages: View {
                     .multilineTextAlignment(.center)
 
                 Text(friend.firstName + " " + friend.lastName)
-                    .font(.system(size: 20))
+                    .font(.system(size: 15))
                     .fontWeight(.light)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.white)
 
                 
                 
