@@ -40,7 +40,7 @@ struct BuildFriendPlaylist: View {
                 Spacer()
                     .frame(height: 5)
                  
-                Text("that matchs their ")
+                Text("that matches their ")
                     .font(.system(size: 27))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)

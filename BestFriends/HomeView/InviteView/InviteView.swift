@@ -43,7 +43,7 @@ struct InviteView: View {
                     .font(.system(size: 27, weight: .light))
                 
                 
-                Text("1) 1st ask friend to download BestFriends \n2) Enter their email - tap [Invite] \n3) Only invite once \n4) Only one person send invite")
+                Text("1) 1st ask friend to download BestFriends \n2) Enter their email - tap [Invite] \n3) Only one person send invite")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()
@@ -75,13 +75,9 @@ struct InviteView: View {
                     .foregroundColor(.gray)
                     .font(.system(size: 30, weight: .bold))
                 
-                Text("After your friend accepts your request")
-                    .fontWeight(.thin)
-                    .foregroundColor(.white)
-                    .italic()
-                    .font(.system(size: 17))
+     
                         
-                        Text("their 'planet' will popup on homepage")
+                        Text("Friend's 'planet' popups up on homepage")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
@@ -90,28 +86,24 @@ struct InviteView: View {
                     Spacer()
                         .frame(height: 30)
                         
-                        Text("Tap their 'planet' then,")
+                        Text("Tap 'planet' then [Create New Chat],")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
                             .font(.system(size: 17))
                 
-                        Text("tap the button [Create New Chat]")
-                            .fontWeight(.thin)
-                            .foregroundColor(.white)
-                            .italic()
-                            .font(.system(size: 17))
+                     
                         
                         Spacer()
                             .frame(height: 30)
                         
-                        Text("A Push Notification alerts friend,")
+                        Text("Name Chat Room - friend alerted,")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
                             .font(.system(size: 17))
                         
-                        Text("slide up 'Chat Rooms' from bottom")
+                        Text("via Push Notification")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()

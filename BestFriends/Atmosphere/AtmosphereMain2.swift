@@ -277,7 +277,7 @@ struct AtmosphereMain2: View {
                         Text("ALERT friends with Push Notification")
                             .font(.system(size: 23))
                             .fontWeight(.regular)
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(Color.white)
                         
                         
                         Spacer()
