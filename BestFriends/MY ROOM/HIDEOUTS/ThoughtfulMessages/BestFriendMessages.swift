@@ -128,28 +128,28 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("STOP Scrolling")
+                        Text("Re-live")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                         
-                        Text("quickly see")
-                            .font(.system(size: 15))
+                        Text("special messages")
+                            .font(.system(size: 20))
                             .italic()
                             .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("Special \nMessages")
+                        Text("that make \nyou SMILE")
                             .font(.system(size: 35))
                             .foregroundColor(.purple)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                    
-                        Text("you 'long-tapped' \nfrom Chat")
+                        Text("you 'long-tapped' \nin Chat")
                             .font(.system(size: 16))
                             .italic()
                             .foregroundColor(.white)

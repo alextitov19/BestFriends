@@ -51,7 +51,7 @@ struct MyRoomPreload: View {
                     .frame(height: 10)
                 
                 
-                Text("We really just want to be by ourselves")
+                Text("just wanna be alone")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                 
@@ -91,7 +91,7 @@ struct MyRoomPreload: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("- see nice messages you \nlong-tapped in Chat")
+                    Text("- re-read nice messages from Chat")
                         .font(.system(size: 19))
                         .italic()
                         .foregroundColor(ColorManager.grey2)
@@ -101,7 +101,7 @@ struct MyRoomPreload: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("- Shake you phone - images \nthat always make you SMILE \npop up for just a second")
+                    Text("- listen to a song a friend sent")
                         .font(.system(size: 19))
                         .italic()
                         .foregroundColor(ColorManager.grey2)
@@ -111,32 +111,33 @@ struct MyRoomPreload: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("- Check out songs that your friends \n sent you to match your mood")
+                    Text("- its ok to be sad for a while")
                         .font(.system(size: 19))
                         .italic()
                         .foregroundColor(ColorManager.grey2)
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
+                    
                     VStack{
                         
-                        Spacer()
-                            .frame(height: 30)
-                        
-                        Text("btw,")
-                            .font(.system(size: 35))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(ColorManager.grey2)
-//                            .foregroundColor(Color.white)
-                        
-                        
-                        Text("Its ok to be sad for a while")
-                            .font(.system(size: 30))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(ColorManager.grey2)
-//                            .foregroundColor(Color.white)
-                           
+//                        Spacer()
+//                            .frame(height: 30)
+//
+//                        Text("btw,")
+//                            .font(.system(size: 35))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .foregroundColor(ColorManager.grey2)
+////                            .foregroundColor(Color.white)
+//
+//
+//                        Text("Its ok to be sad for a while")
+//                            .font(.system(size: 30))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .foregroundColor(ColorManager.grey2)
+////                            .foregroundColor(Color.white)
+//
                         
                         
                         Spacer()
