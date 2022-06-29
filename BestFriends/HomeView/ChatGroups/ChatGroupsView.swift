@@ -44,7 +44,7 @@ struct ChatGroupsView: View {
                             .padding(.top)
                         
                         
-                        Text("Chat Rooms")
+                        Text("Existing Chat Rooms")
                             .font(.system(size: 25))
                             .fontWeight(.thin)
                             .foregroundColor(.purple)

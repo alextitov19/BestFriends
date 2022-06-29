@@ -77,7 +77,7 @@ struct InviteView: View {
                 
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 10)
                         
                         Text("Tap friend's 'planet' on homepage")
                             .fontWeight(.thin)
@@ -86,7 +86,7 @@ struct InviteView: View {
                             .font(.system(size: 17))
                     
                         
-                        Text("Tap [Create New Chat],")
+                        Text("Tap [Create New Chat]")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
@@ -94,13 +94,16 @@ struct InviteView: View {
                 
                      
                         
-                        Text("Name Chat Room - friend alerted,")
+                        Text("Name Chat Room")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
                             .font(.system(size: 17))
                         
-                        Text("via Push Notification")
+                        Spacer()
+                            .frame(height: 7)
+                        
+                        Text("Push Notification Sent")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
