@@ -201,6 +201,11 @@ struct HomeView: View {
                     Spacer()
                         .frame(height: 25)
                     
+                    Text("Received Push Notification about:")
+                        .font(.system(size: 15))
+                        .foregroundColor(.white)
+                        .fontWeight(.ultraLight)
+                    
                     //                    MARK: Connect to Chat Now page
                     
                     if selectedPlanet != nil {
@@ -220,7 +225,7 @@ struct HomeView: View {
                         
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
-                            Text("Friend's Mood Changed")
+                            Text("Friend's Aura Changed")
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)

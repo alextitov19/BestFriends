@@ -55,8 +55,8 @@ struct AtmosphereMain2: View {
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("Create your new atmosphere")
-                        .font(.system(size: 15))
+                    Text("Touch your new atmosphere")
+                        .font(.system(size: 21))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(ColorManager.grey1)
@@ -250,10 +250,11 @@ struct AtmosphereMain2: View {
                 VStack {
                     // MARK: End of feeling buttons
                     HStack {
-                        Text("What's going on?")
-                            .font(.system(size: 23))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color.white)
+                        Text("Ok, what's going on?")
+                            .font(.system(size: 21))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.grey1)
                         
                         Spacer()
                     }
@@ -268,7 +269,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(Color.gray)
                             .opacity(0.7)
                         
-                        TextField("You can type your reason here ...", text: $summary)
+                        TextField("You can type what's up here...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(Color.black)
                             .padding(.horizontal, 20)
@@ -283,8 +284,14 @@ struct AtmosphereMain2: View {
                     HStack {
                         Text("Hey, wanna let your friends know?")
                             .font(.system(size: 21))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color.white)
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.grey1)
+                        Text("So, they can laugh, smile, cheer or maybe help")
+                            .font(.system(size: 12))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.grey1)
                         
                         
                         Spacer()
