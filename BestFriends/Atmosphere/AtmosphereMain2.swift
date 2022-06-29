@@ -39,19 +39,29 @@ struct AtmosphereMain2: View {
             
             VStack {
                 HStack {
-                    Text("Did something just happen to change your mood?")
-                        .font(.system(size: 20))
+                    
+                    Text("'Aura'")
+                        .font(.system(size: 35))
+                        
                         .foregroundColor(Color.white)
+                    
+                    Text("distinctive stmosphere that surrounds you")
+                        .font(.system(size: 12))
+                        .foregroundColor(ColorManager.grey1)
+                      
                     
                     Spacer()
                 }
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("(Want to let your friends know?)")
+                    Text("Create your new atmosphere")
                         .font(.system(size: 15))
                         .italic()
-                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager.grey1)
+                    
+                 
                     
                     Spacer()
                 }
@@ -271,8 +281,8 @@ struct AtmosphereMain2: View {
                     
                     
                     HStack {
-                        Text("ALERT friends _ Push Notification")
-                            .font(.system(size: 23))
+                        Text("Hey, wanna let your friends know?")
+                            .font(.system(size: 21))
                             .fontWeight(.regular)
                             .foregroundColor(Color.white)
                         

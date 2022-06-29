@@ -259,7 +259,7 @@ struct HomeView: View {
                         Button(action: {
                             friendSentPlaylist(friend: selectedPlanet!.user)
                         }, label: {
-                            Text("Friend sent Song in Chat")
+                            Text("Aura Playlist")
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)

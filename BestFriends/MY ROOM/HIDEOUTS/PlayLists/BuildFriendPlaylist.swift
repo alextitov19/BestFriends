@@ -23,7 +23,7 @@ struct BuildFriendPlaylist: View {
 
             VStack {
               
-                Text("Playlists")
+                Text("Aura Playlists")
                     .font(.system(size: 80))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
@@ -40,7 +40,7 @@ struct BuildFriendPlaylist: View {
                 Spacer()
                     .frame(height: 5)
                  
-                Text("that matches their ")
+                Text("that matches their Aura")
                     .font(.system(size: 27))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
@@ -48,11 +48,11 @@ struct BuildFriendPlaylist: View {
                     .frame(height: 15)
                 
                    
-                Text("Mood")
-                    .font(.system(size: 70))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                
+//                Text("Mood")
+//                    .font(.system(size: 70))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                
             VStack {
                     Spacer()
                         .frame(height: 10)
