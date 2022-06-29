@@ -23,21 +23,18 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-//            ColorManager.purple3
+            ColorManager.purple4
+                .ignoresSafeArea()
+                .onAppear()
+          
+//            Image("purpleBackground")
+//                .resizable()
 //                .ignoresSafeArea()
-//                .onAppear()
+//                .scaledToFill()
 //
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
-
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-
-            AdPlayerView(name: "face")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+//            AdPlayerView(name: "face")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
         
             
             VStack {
@@ -244,7 +241,7 @@ struct AtmosphereMain2: View {
                     // MARK: End of feeling buttons
                     HStack {
                         Text("What's going on?")
-                            .font(.system(size: 30))
+                            .font(.system(size: 23))
                             .fontWeight(.regular)
                             .foregroundColor(Color.white)
                         
@@ -256,7 +253,7 @@ struct AtmosphereMain2: View {
                     
                     ZStack {
                         Rectangle()
-                            .frame(width:400, height: 100)
+                            .frame(width:375, height: 50)
                             .cornerRadius(15)
                             .foregroundColor(Color.gray)
                             .opacity(0.7)
@@ -274,7 +271,7 @@ struct AtmosphereMain2: View {
                     
                     
                     HStack {
-                        Text("ALERT friends with Push Notification")
+                        Text("ALERT friends _ Push Notification")
                             .font(.system(size: 23))
                             .fontWeight(.regular)
                             .foregroundColor(Color.white)
@@ -368,9 +365,9 @@ struct AtmosphereMain2: View {
                         shareMood()
                     },
                            label: {
-                        Text("SHARE")
+                        Text("Share")
                             .fontWeight(.thin)
-                            .frame(width: 100, height: 40)
+                            .frame(width: 100, height: 35)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             
@@ -389,7 +386,7 @@ struct AtmosphereMain2: View {
                         label: {
                             Text("Mood Tracker")
                                 .fontWeight(.thin)
-                                .frame(width: 200, height: 40)
+                                .frame(width: 200, height: 35)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
