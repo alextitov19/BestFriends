@@ -26,9 +26,9 @@ struct BuiltByTeens2: View {
             VStack {
                 
                 Link(destination: URL(string: "https://socialtechlabs.com/team/")!) {
-                        Text("Teen Team")
+                        Text("Built by Teen for Teens")
                             .fontWeight(.thin)
-                            .frame(width: 150, height: 40)
+                            .frame(width: 310, height: 40)
                             .font(.system(size: 30))
                             .foregroundColor(.white)
                             .background(ColorManager.purple3)
@@ -40,7 +40,7 @@ struct BuiltByTeens2: View {
                 
                
                 Link(destination: URL(string: "https://socialtechlabs.com/about-bestfriends/")!) {
-                        Text("How BestFriends Works")
+                        Text("BestFriends Demo")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 40)
                             .font(.system(size: 30))
