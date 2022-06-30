@@ -23,7 +23,13 @@ struct BuildFriendPlaylist: View {
 
             VStack {
               
-                Text("Aura Playlists")
+                Text("Send a Friend")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("a Song")
                     .font(.system(size: 80))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
@@ -52,7 +58,7 @@ struct BuildFriendPlaylist: View {
 //                    .font(.system(size: 70))
 //                    .foregroundColor(.white)
 //                    .fontWeight(.ultraLight)
-//                
+//
             VStack {
                     Spacer()
                         .frame(height: 10)
@@ -71,7 +77,7 @@ struct BuildFriendPlaylist: View {
                         })
                     
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 35)
                 
                 Text("One for Good days, ")
                     .font(.system(size: 40))

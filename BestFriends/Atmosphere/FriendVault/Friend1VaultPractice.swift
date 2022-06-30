@@ -195,9 +195,9 @@ struct Friend1VaultPractice: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "C")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulation, you did it!", APNToken: friend.APNToken )
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulations, you did it!", APNToken: friend.APNToken )
                     }, label: {
-                        Text("Congradulations, you did it!")
+                        Text("Congratulations, you did it!")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
