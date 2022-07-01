@@ -31,7 +31,7 @@ struct BuiltByTeens2: View {
             VStack {
                 
                 
-                Text("Building Resiliant")
+                Text("Building Resilient")
                     .font(.system(size: 40))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
