@@ -45,7 +45,7 @@ struct BuiltByTeens2: View {
                 Link(destination: URL(string: "https://socialtechlabs.com/team/")!) {
                         Text("Built by Teens")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
+                            .frame(width: 330, height: 40)
                             .font(.system(size: 30))
                             .foregroundColor(.white)
                             .background(ColorManager.purple3)
@@ -66,9 +66,9 @@ struct BuiltByTeens2: View {
                 
                
                 Link(destination: URL(string: "https://socialtechlabs.com/about-bestfriends/")!) {
-                        Text("BestFriend's Features")
+                        Text("See BestFriend's Features")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
+                            .frame(width: 330, height: 40)
                             .font(.system(size: 30))
                             .foregroundColor(.white)
                             .background(ColorManager.purple3)
