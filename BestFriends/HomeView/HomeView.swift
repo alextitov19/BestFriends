@@ -225,7 +225,7 @@ struct HomeView: View {
                         
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
-                            Text("Friend's Aura Changed")
+                            Text("Friend's day just changed")
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
@@ -250,7 +250,7 @@ struct HomeView: View {
                         
                         NavigationLink(destination: VirtualHug(),
                                        label: {
-                            Text("Friend sent HUG")
+                            Text("My friend sent a HUG")
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
@@ -264,7 +264,7 @@ struct HomeView: View {
                         Button(action: {
                             friendSentPlaylist(friend: selectedPlanet!.user)
                         }, label: {
-                            Text("Aura Playlist")
+                            Text("My friend sent a SONG")
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
