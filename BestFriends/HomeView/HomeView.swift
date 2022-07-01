@@ -225,7 +225,7 @@ struct HomeView: View {
                         
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
-                            Text("Friend's day just changed")
+                            Text("Friend changed Aura")
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)

@@ -65,8 +65,18 @@ struct SendSongChat2: View {
                     .frame(height: 40)
                     .padding(.horizontal, 10)
                 )
-//                    .padding(.horizontal, 0)
 
+
+        
+            
+            Text("one to fit their mood")
+                .font(.system(size: 30))
+                .foregroundColor(.white)
+                .fontWeight(.ultraLight)
+            
+            Spacer()
+                .frame(height: 50)
+            
             VStack {
                 Button(action: {
                     sendMessage()
@@ -84,14 +94,11 @@ struct SendSongChat2: View {
                 })
 
 
-                Spacer()
-                    .frame(height: 35)
-            
-                
-                Text("one to fit their mood")
-                    .font(.system(size: 35))
+                Text("(with push notification)")
+                    .font(.system(size: 15))
+                    .italic()
                     .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.light)
                 
             }
 

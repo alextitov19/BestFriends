@@ -66,10 +66,10 @@ struct BuiltByTeens2: View {
                 
                
                 Link(destination: URL(string: "https://socialtechlabs.com/about-bestfriends/")!) {
-                        Text("See BestFriend's Features")
+                        Text("BestFriend's Features Explained")
                             .fontWeight(.thin)
                             .frame(width: 330, height: 40)
-                            .font(.system(size: 30))
+                            .font(.system(size: 23))
                             .foregroundColor(.white)
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
