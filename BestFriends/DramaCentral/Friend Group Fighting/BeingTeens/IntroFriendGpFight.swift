@@ -15,12 +15,13 @@ struct IntroFriendGpFight: View {
     
     var body: some View {
         ZStack {
-          
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-            //
+            ColorManager.grey4
+                  .ignoresSafeArea()
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//            //
             //
             //                AdPlayerView(name: "backgroundAnimation")
             //                    .ignoresSafeArea()

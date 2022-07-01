@@ -16,17 +16,34 @@ struct BuiltByTeens2: View {
         
         ZStack {
             
-            Image("BuiltByTeens")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+            ColorManager.grey4
+                  .ignoresSafeArea()
+           
+            
+//            Image("BuiltByTeens")
+//                .frame(width: 100, height: 40)
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
             
          
 
             VStack {
                 
+                
+                Text("Building Resiliant")
+                    .font(.system(size: 40))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.blue)
+                
+                Text("Friendships")
+                    .font(.system(size: 60))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.blue)
+                
+                
                 Link(destination: URL(string: "https://socialtechlabs.com/team/")!) {
-                        Text("Built by Teen for Teens")
+                        Text("Built by Teens")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 40)
                             .font(.system(size: 30))
@@ -34,13 +51,22 @@ struct BuiltByTeens2: View {
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                 
                 }
+                Text("(the 'Zen Masters' of social media)")
+               
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.white)
+                
                 Spacer()
                     .frame(height: 75)
                 
                
                 Link(destination: URL(string: "https://socialtechlabs.com/about-bestfriends/")!) {
-                        Text("BestFriends Demo")
+                        Text("BestFriend's Features")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 40)
                             .font(.system(size: 30))

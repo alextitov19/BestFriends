@@ -14,11 +14,12 @@ struct IntroBluemodeFriend: View {
     
     var body: some View {
         ZStack {
-          
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+            ColorManager.grey4
+                  .ignoresSafeArea()
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
             //
             //
             //                AdPlayerView(name: "backgroundAnimation")
@@ -30,7 +31,7 @@ struct IntroBluemodeFriend: View {
       
  
 
-             Text("83% of teens said they \ndon't know what to do after a")
+             Text("Not sure what to do after")
                     .font(.system(size: 25))
                     .foregroundColor(.white)
                     .italic()
@@ -46,17 +47,30 @@ struct IntroBluemodeFriend: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
+                Text("with BFF")
+                    .font(.system(size: 50))
+                    .foregroundColor(.blue)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                Spacer()
+                    .frame(height: 35)
                 
+                Text("You're NOT ALONE")
+                       .font(.system(size: 25))
+                       .foregroundColor(.white)
+                       .italic()
+                       .fontWeight(.light)
+                       .multilineTextAlignment(.center)
             VStack {
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 15)
                     
                     NavigationLink(
-                        destination: FightWithFriend(),
+                        destination: DramaMainView(),
                         label: {
-                            Text("NEXT")
+                            Text("We can fix this")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
+                                .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
@@ -67,34 +81,35 @@ struct IntroBluemodeFriend: View {
                     Spacer()
                         .frame(height: 60)
                 
-                Text("introducing")
-                    .font(.system(size: 30))
-                    .italic()
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                
-                
-                Text("BlueMode")
-                    .font(.system(size: 80))
-                    .foregroundColor(.blue)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
               
                 
-                    Text("A system developed by teens, \nto quickly help you \nbecome friends again.")
-                        .font(.system(size: 25))
+                    Text("- Become friends again \n- Minimizing hurt feelings")
+                        .font(.system(size: 20))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
-                       
+                      
+                Spacer()
+                    .frame(height: 15)
+                Text("Get past ...")
+                       .font(.system(size: 25))
+                       .foregroundColor(.white)
+                       .italic()
+                       .fontWeight(.light)
+                       .multilineTextAlignment(.center)
+                         Text("I'm Not Talking to YOU!")
+                                .font(.system(size: 30))
+                                .foregroundColor(.white)
+                                .italic()
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height: 45)
                 
                 NavigationLink(
                     destination: DramaMainView(),
                     label: {
-                        Text("Skip Intro")
+                        Text("SKIP")
                             .fontWeight(.thin)
                             .frame(width: 175, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -103,8 +118,8 @@ struct IntroBluemodeFriend: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-                
-                    
+
+//
                     
                     
                 }

@@ -44,14 +44,14 @@ struct WhoFighting: View {
 //            Image("planet_4")
         
         ZStack {
-//
-//            NavigationLink(destination: FightWithParents(), label: {
-//                WhoFightingCircle (color: .pink, friendName: "Fight \nwith \nParents")
-//                })
-//            .offset(x: showItems ? 100 : 0, y: showItems ? -150: 0)
-//
-//
+
+            NavigationLink(destination: IntroBluemodeFriend(), label: {
+                WhoFightingCircle (color: .gray, friendName: "Fight \nwith \nBFF")
+                })
+            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
+
            
+
               NavigationLink(destination: ParentsFighting(), label: {
                   WhoFightingCircle (color: .purple, friendName: "Parents \nFighting")
             })
@@ -63,9 +63,9 @@ struct WhoFighting: View {
             .offset(x: showItems ? -100 : 0, y: showItems ? -90: 0)
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .gray, friendName: "")
+                WhoFightingCircle (color: .gray, friendName: "We can \nFix this")
             })
-            .offset(x: showItems ? -75 : 0, y: showItems ? -600: 0)
+            .offset(x: showItems ? 95 : 0, y: showItems ? -600: 0)
             
 
         Image(systemName: "triangle.fill")

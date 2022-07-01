@@ -10,41 +10,41 @@ import Foundation
 import SwiftUI
 
 struct Step1_NotReadyTalk: View {
+    @EnvironmentObject var sessionManager: SessionManager
     
     var body: some View {
 //        ScrollView {
             ZStack {
-                Image("purpleBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
-                
-               AdPlayerView(name: "backgroundAnimation")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+                ColorManager.grey4
+                      .ignoresSafeArea()
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+//                
+//               AdPlayerView(name: "backgroundAnimation")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
                 
         ScrollView {
                
                     VStack {
                     
-                    Text("I'm still too")
-                            .font(.largeTitle)
-                        .foregroundColor(.blue)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
+                        Text("I'm still too")
+                            .font(.system(size: 60))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(Color.blue)
                   
                         Text("U P S E T")
-                            .font(.largeTitle)
-                            .foregroundColor(.blue)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
+                            .font(.system(size: 80))
+                            .fontWeight(.ultraLight)
+                            .foregroundColor(Color.blue)
                   
-                    
-                      Text("and need more")
-                            .font(.largeTitle)
-//                            .font(.system(size: 40))
+                        Spacer()
+                            .frame(height: 50)
+                      Text("I need more")
+                            
+                            .font(.system(size: 40))
                           .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
@@ -68,18 +68,14 @@ struct Step1_NotReadyTalk: View {
 
                     VStack {
                        Spacer()
-//                            .frame(height: 50)
+                           .frame(height: 50)
                         
                         Text("Safety Tip:")
-                            .font(.largeTitle)
-                            .font(.system(size: 40))
-                            .foregroundColor(.white)
-                            .fontWeight(.ultraLight)
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 20)
+                            .foregroundColor(.gray)
+                            .font(.system(size: 30, weight: .bold))
                         
                         Spacer()
-//                            .frame(height: 10)
+                        .frame(height: 10)
                         
                         Text("Talking before you're \n ready may make \nmatters worse.")
                             .font(.body)

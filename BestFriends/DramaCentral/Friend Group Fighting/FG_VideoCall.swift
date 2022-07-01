@@ -69,11 +69,11 @@ struct FG_VideoCall: View {
             .offset(x: showItems ? 40 : 0, y: showItems ? -200: 0)
              
             
-            NavigationLink(destination: FG_Team(), label: {
-                   FG_VideoCallCircle (color: .orange, friendName: "True \nFriends")
-             })
-             .offset(x: showItems ? -50 : 0, y: showItems ? 250: 0)
-             
+//            NavigationLink(destination: FG_Team(), label: {
+//                   FG_VideoCallCircle (color: .orange, friendName: "True \nFriends")
+//             })
+//             .offset(x: showItems ? -50 : 0, y: showItems ? 250: 0)
+//
             
                NavigationLink(destination: Apologies(user: user, friends: friends, groups: groups), label: {
                    FG_VideoCallCircle (color: .white, friendName: "Apologies")

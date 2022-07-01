@@ -38,6 +38,8 @@ struct AtmosphereMain2: View {
         
             
             VStack {
+                
+                
                 HStack {
                     
                     Text("'Aura'")
@@ -55,7 +57,7 @@ struct AtmosphereMain2: View {
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("Touch your new atmosphere")
+                    Text("Update your Aura / Atmosphere")
                         .font(.system(size: 21))
                         .italic()
                         .fontWeight(.light)
