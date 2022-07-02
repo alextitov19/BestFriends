@@ -42,7 +42,7 @@ struct BuiltByTeens2: View {
                     .foregroundColor(Color.blue)
                 
                 
-                Link(destination: URL(string: "https://socialtechlabs.com/team/")!) {
+                Link(destination: URL(string: "https://socialtechlabs.com")!) {
                         Text("Built by Teens")
                             .fontWeight(.thin)
                             .frame(width: 330, height: 40)
@@ -75,16 +75,18 @@ struct BuiltByTeens2: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
+                Spacer()
+                    .frame(height: 75)
                 
                 NavigationLink(
                     destination: BetaTestVideo(),
                     label: {
-                        Text("Be 1st to see 'Future Prototypes'")
+                        Text("Test 'Future Prototypes'")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
+                            .frame(width: 330, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
-                            .background(ColorManager.grey2)
+                            .background(ColorManager.purple3)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
