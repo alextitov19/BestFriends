@@ -200,7 +200,7 @@ struct PlanetActionsView: View {
                     
                     Spacer()
                         .frame(height: 40)
-                    NavigationLink(destination: BetaTestVideo(),
+                    NavigationLink(destination: BuiltByTeens2(),
                                    
                 label: {
                         
@@ -215,19 +215,15 @@ struct PlanetActionsView: View {
                             VStack {
                                 
 
-                               Text("Test")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                
-                                Text("Future")
+                              
+                                Text("Look Inside")
                                      .foregroundColor(.white)
-                                     .font(.system(size: 16, weight: .bold))
+                                     .font(.system(size: 13, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("Prototypes")
+                                Text("BestFriends")
                                      .foregroundColor(.white)
-                                     .font(.system(size: 14, weight: .bold))
+                                     .font(.system(size: 16, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                  
                    
@@ -271,26 +267,27 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
                     
-                    NavigationLink(destination: BuiltByTeens2(),
+                    NavigationLink(destination: EmptyView(),
                                    label: {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.grey3)
+                                .foregroundColor(ColorManager.purple5)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                 .opacity(0.65)
                             
                             VStack {
                                 
                                 
-                                Text("Look Inside")
+                                Text("Horizons")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                
-                                Text("Built by Teens")
+                                Text("Comming Fall")
                                 .foregroundColor(.white)
-                                .font(.system(size: 12, weight: .bold))
+                                .italic()
+                                .font(.system(size: 11, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                              
 //                                Text("Teens")

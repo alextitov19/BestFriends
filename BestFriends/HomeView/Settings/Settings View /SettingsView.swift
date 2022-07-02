@@ -60,7 +60,7 @@ struct SettingsView: View {
                 }
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 20)
                 
                 NavigationLink(
                     destination: MyAccountView(user: user),
@@ -226,14 +226,14 @@ struct SettingsView: View {
                     Divider()
                  
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 10)
                     
                     
                     
                     VStack {
                         
                         
-                        Text("Getting you STARTED")
+                        Text("Getting STARTED")
                             .foregroundColor(.green)
                             .font(.system(size: 27, weight: .light))
                             .multilineTextAlignment(.leading)
@@ -241,38 +241,57 @@ struct SettingsView: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("1) Add Friends (up to five)")
-                            .fontWeight(.thin)
-                            .foregroundColor(.white)
+                        Text("1) First, add up to 5 Friends")
+                            .fontWeight(.light)
+                            .foregroundColor(.purple)
                             .italic()
-                            .font(.system(size: 17))
+                            .font(.system(size: 20))
                         
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("2) How to create first Chat Room:")
+                        Text("2) Now, create first Chat Rooms")
+                            .fontWeight(.light)
+                            .foregroundColor(.purple)
+                            .italic()
+                            .font(.system(size: 20))
+                
+                            
+                        Text("- Tap friend's planet you just added \n- Tap [Created New Chat Room] \n- Pull up [My Chat Rooms] to Chat")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
-                            .font(.system(size: 17))
+                            .font(.system(size: 15))
                         
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("- Tap friend's planet \n- Tap [Created New Chat Room] \n - Name Chat Room")
-                            .fontWeight(.thin)
-                            .foregroundColor(.white)
+                VStack {
+                    Text("3) Need to talk to friends - NOW")
+                        .fontWeight(.light)
+                        .foregroundColor(.purple)
+                        .italic()
+                        .font(.system(size: 20))
+                   
+                    Text("- Tap friend's planets \n- Tap [Created New Chat Room] \n - We send out 'Push Notification'")
+                        .fontWeight(.thin)
+                        .foregroundColor(.white)
+                        .italic()
+                        .font(.system(size: 15))
+                    
+                    Spacer()
+                        .frame(height: 10)
+                        Text("4) Got 'Push Notification' from Friend")
+                            .fontWeight(.light)
+                            .foregroundColor(.purple)
                             .italic()
-                            .font(.system(size: 17))
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        Text("3) Received Push Notification from Friend: \n- Tap friend's planet \n - Select appropriate dropdown")
-                            .fontWeight(.thin)
-                            .foregroundColor(.white)
-                            .italic()
-                            .font(.system(size: 17))
+                            .font(.system(size: 19))
+                    
+                    Text("- Tap friend's planet \n - Select appropriate dropdown")
+                        .fontWeight(.thin)
+                        .foregroundColor(.white)
+                        .italic()
+                        .font(.system(size: 15))
                         
                 }
                 
@@ -285,7 +304,7 @@ struct SettingsView: View {
 
 }
 
-
+}
 
 
 
