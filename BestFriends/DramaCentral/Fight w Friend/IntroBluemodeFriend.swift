@@ -32,14 +32,12 @@ struct IntroBluemodeFriend: View {
  
 
              Text("Not sure what to do after")
-                    .font(.system(size: 25))
+                    .font(.system(size: 20))
                     .foregroundColor(.white)
-                    .italic()
+                
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                 
-                Spacer()
-                    .frame(height: 15)
+            
                  
                 Text("HUGE FIGHT")
                     .font(.system(size: 70))
@@ -53,22 +51,22 @@ struct IntroBluemodeFriend: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 Spacer()
-                    .frame(height: 35)
+                    .frame(height: 5)
                 
-                Text("You're NOT ALONE")
-                       .font(.system(size: 25))
+                Text("(you're not alone)")
+                       .font(.system(size: 17))
                        .foregroundColor(.white)
                        .italic()
                        .fontWeight(.light)
                        .multilineTextAlignment(.center)
             VStack {
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 70)
                     
                     NavigationLink(
                         destination: DramaMainView(),
                         label: {
-                            Text("We can fix this")
+                            Text("Let us HELP you")
                                 .fontWeight(.thin)
                                 .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -79,11 +77,11 @@ struct IntroBluemodeFriend: View {
                         })
                     
                     Spacer()
-                        .frame(height: 60)
+                        .frame(height: 10)
                 
               
                 
-                    Text("- Become friends again \n- Minimizing hurt feelings")
+                    Text("Step-by-Step Suggestions")
                         .font(.system(size: 20))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
@@ -91,33 +89,34 @@ struct IntroBluemodeFriend: View {
                       
                 Spacer()
                     .frame(height: 15)
-                Text("Get past ...")
-                       .font(.system(size: 25))
-                       .foregroundColor(.white)
+                Text("To get past ...")
+                       .font(.system(size: 30))
+                       .foregroundColor(.green)
                        .italic()
                        .fontWeight(.light)
                        .multilineTextAlignment(.center)
+                
                          Text("I'm Not Talking to YOU!")
-                                .font(.system(size: 30))
+                                .font(.system(size: 32))
                                 .foregroundColor(.white)
-                                .italic()
+                                
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height: 45)
                 
-                NavigationLink(
-                    destination: DramaMainView(),
-                    label: {
-                        Text("SKIP")
-                            .fontWeight(.thin)
-                            .frame(width: 175, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.grey2)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
+//                NavigationLink(
+//                    destination: DramaMainView(),
+//                    label: {
+//                        Text("SKIP")
+//                            .fontWeight(.thin)
+//                            .frame(width: 175, height: 40)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 30))
+//                            .background(ColorManager.grey2)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
 
 //
                     

@@ -46,7 +46,7 @@ struct WhoFighting: View {
         ZStack {
 
             NavigationLink(destination: IntroBluemodeFriend(), label: {
-                WhoFightingCircle (color: .gray, friendName: "Fight \nwith \nBFF")
+                WhoFightingCircle (color: .gray, friendName: "HUGE \nFight with \nBFF")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
 
