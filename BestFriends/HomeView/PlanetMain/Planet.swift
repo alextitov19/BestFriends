@@ -187,12 +187,12 @@ struct PlanetActionsView: View {
                                 
                                 Text("STARTED")
                                     .foregroundColor(.green)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 18, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
                                 Text("& Settings")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
@@ -267,7 +267,7 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
                     
-                    NavigationLink(destination: EmptyView(),
+                    NavigationLink(destination: HorizonsPromoPage(),
                                    label: {
                         ZStack {
                             Circle()
@@ -284,10 +284,10 @@ struct PlanetActionsView: View {
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                
-                                Text("Comming Fall")
+                                Text("(Comming Fall)")
                                 .foregroundColor(.white)
                                 .italic()
-                                .font(.system(size: 11, weight: .bold))
+                                .font(.system(size: 9, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                              
 //                                Text("Teens")

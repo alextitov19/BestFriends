@@ -47,14 +47,13 @@ struct SettingsView: View {
 //                            .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
                     }
-                    .padding(.trailing, 0)
+//                    .padding(.trailing, 50)
                     
-                    Text("Settings / Get Started")
+                    Text("Settings")
                         .foregroundColor(.gray)
                         .font(.system(size: 30, weight: .bold))
                     
-//
-//                    Spacer()
+                        .padding(.trailing, 50)
                     
                     
                 }
@@ -226,7 +225,7 @@ struct SettingsView: View {
                     Divider()
                  
                     Spacer()
-                        .frame(height: 10)
+                        .frame(height: 20)
                     
                     
                     
@@ -235,8 +234,8 @@ struct SettingsView: View {
                         
                         Text("Getting STARTED")
                             .foregroundColor(.green)
-                            .font(.system(size: 27, weight: .light))
-                            .multilineTextAlignment(.leading)
+                            .font(.system(size: 30, weight: .bold))
+                           
                         
                         Spacer()
                             .frame(height: 10)
