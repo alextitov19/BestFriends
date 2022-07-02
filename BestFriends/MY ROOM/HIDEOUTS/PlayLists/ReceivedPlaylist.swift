@@ -19,55 +19,34 @@ struct ReceivedPlaylist: View {
 
             VStack {
               
-                Text("Playlists")
-                    .font(.system(size: 80))
+                Text("Song from a friend")
+                    .font(.system(size: 40))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
 
-                Spacer()
-                    .frame(height: 25)
                 
-                Text("Check to see if")
+                Text("when their mood matches yours")
                     .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                 
-                Text("your friends sent songs")
-                    .font(.system(size: 35))
+              
+                
+                Text("Check Push Notifications")
+                    .font(.system(size: 20))
+                    .italic()
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                 
-                Text("in Chat that they listen to")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                
-                Text("that match your mood.")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                
-                Spacer()
-                    .frame(height: 5)
-             
-                
-            VStack {
-                    Spacer()
-                        .frame(height: 10)
-                    
-                
-                
-                
-                
-    
+        
                     
                 }
             }
             
         }
     }
-}
+
 
 
 struct ReceivedPlaylist_Previews : PreviewProvider {
