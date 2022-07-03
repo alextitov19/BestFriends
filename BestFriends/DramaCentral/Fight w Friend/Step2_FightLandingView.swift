@@ -19,7 +19,7 @@ struct Step2_FightLandingView: View {
         
         ZStack {
             
-            ColorManager.grey2
+            ColorManager.grey4
                   .ignoresSafeArea()
                     
 //
@@ -31,7 +31,17 @@ struct Step2_FightLandingView: View {
 //                .blendMode(.screen)
 //
             VStack{
+                
+                Text("After looking at Steps 1-4")
+                    .font(.system(size: 25))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                Spacer()
+                    .frame(height: 20)
+                
                 HStack {
+                    
+                 
                     Text("Who'd you")
                         .font(.system(size: 47, weight: .ultraLight))
                         .foregroundColor(Color.purple)
@@ -46,15 +56,27 @@ struct Step2_FightLandingView: View {
                         .foregroundColor(Color.purple)
                         .kerning(10)
                     
+                  
+                    
+                    
                     Text("Send Push Notification")
-                        .font(.system(size: 30, weight: .bold))
+                        .font(.system(size: 25, weight: .bold))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(Color.purple)
+                    
+                    Text("with Chat massage")
+                        .font(.system(size: 25, weight: .bold))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                      
                     Text("'Inviting' them to fix this")
-                        .font(.system(size: 30, weight: .bold))
+                        .font(.system(size: 25, weight: .bold))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
+                    
+                    
+                    
+                    
                     
                     
                     

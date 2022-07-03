@@ -45,7 +45,7 @@ struct IntroBluemodeFriend: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("with BFF")
+                Text("with a BFF")
                     .font(.system(size: 50))
                     .foregroundColor(.blue)
                     .fontWeight(.ultraLight)

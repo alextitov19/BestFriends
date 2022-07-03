@@ -72,13 +72,13 @@ struct Step6_TextingFirst: View {
                             NavigationLink(
                                 destination: DramaMainView(),
                                 label: {
-                                    Text("Send 1st Text \nwith Push Notification")
+                                    Text("Let's go for it - who was fight with")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 70)
                                         .font(.system(size: 25))
-                                    
-                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+                                        .background(Color.gray)
+                                        
                                     
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -86,60 +86,60 @@ struct Step6_TextingFirst: View {
                                 }
                             )}
                         
-                        
-                        Spacer()
-                            .frame(height: 60)
-                        
-                        Text("While waiting for a reply")
-                        .font(.system(size: 30, weight: .thin))
-                        .foregroundColor(Color.white)
-                        .multilineTextAlignment(.center)
-                        
-                      
-                        Spacer()
-                            .frame(height: 20)
-                    }
-                    
-                }
-                
-                VStack {
-                    
-                    NavigationLink(
-                        destination: TryThis(),
-                        label: {
-                            Text("Try These")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 150.0, height: 40)
-                                .font(.system(size: 30))
-                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        }
-                    )}
-                Spacer()
-                    .frame(height: 40)
-                
-                VStack {
-                    
-                    NavigationLink(
-                        destination: Step7_TimeToTalk(),
-                        label: {
-                            Text("NEXT")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                            
-                            
-                        })
-                    
-                    
+//
+//                        Spacer()
+//                            .frame(height: 60)
+//
+//                        Text("While waiting for a reply")
+//                        .font(.system(size: 30, weight: .thin))
+//                        .foregroundColor(Color.white)
+//                        .multilineTextAlignment(.center)
+//
+//
+//                        Spacer()
+//                            .frame(height: 20)
+//                    }
+//
+//                }
+//
+//                VStack {
+//
+//                    NavigationLink(
+//                        destination: TryThis(),
+//                        label: {
+//                            Text("Try These")
+//                                .fontWeight(.thin)
+//                                .foregroundColor(Color.white)
+//                                .frame(width: 150.0, height: 40)
+//                                .font(.system(size: 30))
+//                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                        }
+//                    )}
+//                Spacer()
+//                    .frame(height: 40)
+//
+//                VStack {
+//
+//                    NavigationLink(
+//                        destination: Step7_TimeToTalk(),
+//                        label: {
+//                            Text("Who is Fight with?")
+//                                .fontWeight(.thin)
+//                                .frame(width: 300, height: 40)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 30))
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//
+//                        })
+//
+//
                     
                     
                 }
@@ -150,6 +150,7 @@ struct Step6_TextingFirst: View {
     }
 }
 
+    }
 
 //struct TextingFirst_Previews : PreviewProvider {
 //    static var previews: some View {

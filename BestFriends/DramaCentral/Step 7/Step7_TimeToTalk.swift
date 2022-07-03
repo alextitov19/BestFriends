@@ -78,8 +78,8 @@ struct Step7_TimeToTalk: View {
                    .frame(height: 15)
             
                 VStack {
-                    Link(destination: URL(string: "https://socialtechlabs.com/user-text-message-suggestions/")!) {
-                        
+                    
+//                   MARK: Set navigation back to HomeView
                         Text("Set time to MEET")
                             .fontWeight(.thin)
                             .frame(width: 225, height: 50)
@@ -95,44 +95,44 @@ struct Step7_TimeToTalk: View {
                     Spacer()
                         .frame(height: 80)
                    
-                    VStack {
-                         
-                        Button(action: {
-                            sessionManager.reloadHome()
-                        }, label: {
-                            Text("HOME")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                           
-                                    
-                        })
+//                    VStack {
+//
+//                        Button(action: {
+//                            sessionManager.reloadHome()
+//                        }, label: {
+//                            Text("HOME")
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 40)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 30))
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//
+//                        })
                             
 //                        NavigationLink(
 //                            destination: EmptyView(),
 //                            label: {
-                                
-                        Link(destination: URL(string: "https://socialtechlabs.com/did-bluemode-help/")!) {
-                                Text("Let us know. Did this HELP?")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 40)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 27))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                        Link(destination: URL(string: "https://socialtechlabs.com/did-bluemode-help/")!) {
+//                                Text("Let us know. Did this HELP?")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 310, height: 40)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 27))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     }
                 }
             }
         }
-    }
-}
-}
+    
+
+
 
 
 

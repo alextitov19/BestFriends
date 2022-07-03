@@ -42,10 +42,11 @@ struct Step1_NotReadyTalk: View {
                   
                         Spacer()
                             .frame(height: 20)
+                        
                       Text("I need more")
-                            
-                            .font(.system(size: 30))
-                            .italic()                          .foregroundColor(.white)
+                              .font(.system(size: 30))
+                            .italic()
+                            .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                           .padding(.horizontal, 20)
@@ -66,7 +67,7 @@ struct Step1_NotReadyTalk: View {
 
                     VStack {
                        Spacer()
-                           .frame(height: 40)
+                           .frame(height: 10)
                         
                         Text("Safety Tip:")
                             .foregroundColor(.gray)
@@ -84,20 +85,13 @@ struct Step1_NotReadyTalk: View {
                             .padding(.horizontal, 20)
                          
                         Spacer()
-                        .frame(height: 30)
-                        
-                        Text("When Ready:")
-                            .foregroundColor(.gray)
-                            .font(.system(size: 30, weight: .bold))
-                        
-                        Spacer()
-                        .frame(height: 10)
-                        
-                        Text("Go to Step 1")
-                            .font(.body)
-                            .italic()
-                            .foregroundColor(.white)
-                            .fontWeight(.light)
+                        .frame(height: 20)
+                       
+                        Text("When ready try Step 1")
+                                .font(.system(size: 30))
+                              .italic()
+                              .foregroundColor(.blue)
+                            .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 20)
                         
