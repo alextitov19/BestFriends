@@ -186,9 +186,9 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("Create New Chat Room")
+                            Text("Create 'New' Chat Room")
                                 .fontWeight(.regular)
-                                .frame(width: 210, height: 30)
+                                .frame(width: 270, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)

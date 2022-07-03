@@ -86,7 +86,7 @@ struct InviteView: View {
                             .font(.system(size: 17))
                     
                         
-                        Text("Tap [Create New Chat]")
+                        Text("Tap [Create 'New' Chat Room]")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()

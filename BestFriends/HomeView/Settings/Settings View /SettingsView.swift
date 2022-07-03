@@ -249,14 +249,14 @@ struct SettingsView: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("2) Now, create first Chat Rooms")
+                        Text("2) Create 'New' Chat Rooms")
                             .fontWeight(.light)
                             .foregroundColor(.purple)
                             .italic()
                             .font(.system(size: 20))
                 
                             
-                        Text("- Tap friend's planet you just added \n- Tap [Created New Chat Room] \n- Pull up [My Chat Rooms] to Chat")
+                        Text("- Tap friend's planet \n- Tap [Created 'New' Chat Room] \n- Name Chat Room - We send Push Notification")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
@@ -266,13 +266,13 @@ struct SettingsView: View {
                             .frame(height: 10)
                         
                 VStack {
-                    Text("3) Need to talk to friends - NOW")
+                    Text("3) Normal Chat")
                         .fontWeight(.light)
                         .foregroundColor(.purple)
                         .italic()
                         .font(.system(size: 20))
                    
-                    Text("- Tap friend's planets \n- Tap [Created New Chat Room] \n - We send out 'Push Notification'")
+                    Text("- Use [My Chat Rooms] pullup")
                         .fontWeight(.thin)
                         .foregroundColor(.white)
                         .italic()
