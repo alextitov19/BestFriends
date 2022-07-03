@@ -18,6 +18,7 @@ struct DramaMainView: View {
     var body: some View {
         NavigationView {
             ZStack {
+
                 Image("purpleBackground")
                     .resizable()
                     .ignoresSafeArea()
@@ -51,7 +52,7 @@ struct DramaMainView: View {
                                         .frame(width: 115, height: 115)
                                         .foregroundColor(ColorManager.pmbc_green)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                        .opacity(0.40)
+                                        .opacity(0.65)
            Text("(6) \nMeet Up")
                                         .foregroundColor(.white)
                                         .font(.system(size: 17, weight: .bold))
@@ -70,7 +71,7 @@ struct DramaMainView: View {
                                         .frame(width: 115, height: 115)
                                         .foregroundColor(ColorManager.pmbc_blue)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                        .opacity(0.40)
+                                        .opacity(0.65)
                                     //                                    Text("6")
                                     //                                    //                            .background()
                                     //                                        .foregroundColor(.purple)
@@ -89,13 +90,18 @@ struct DramaMainView: View {
                         
                         VStack {
                             if user != nil {
+                            
                                 NavigationLink(destination: Step2_FightLandingView(user: user!, friends: friends), label: {
+                                    
+                                  
+//                                    NavigationLink(destination: EmptyView(), label: {
+//
                                     ZStack {
                                         Circle()
                                             .frame(width: 115, height: 115)
                                             .foregroundColor(ColorManager.pmbc_blue)
                                             .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                            .opacity(0.40)
+                                            .opacity(0.65)
                                         //                                    Text("2")
                                         //                                    //                            .background()
                                         //                                        .foregroundColor(.purple)
@@ -103,7 +109,7 @@ struct DramaMainView: View {
                                         //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         //
                                         
-                                        Text("Step (1) \nWho's \nFighting?")
+                                        Text("Step (1) \nWho was \nFight \nWith?")
                                             .foregroundColor(.white)
                                             .font(.system(size: 17, weight: .bold))
                                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -120,14 +126,14 @@ struct DramaMainView: View {
                                         .frame(width: 130, height: 130)
                                         .foregroundColor(ColorManager.pmbc_pink)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                        .opacity(0.40)
+                                        .opacity(0.65)
                                     //                                    Text("1")
                                     //                                    //                            .background()
                                     //                                        .foregroundColor(.purple)
                                     //                                        .font(.system(size: 130, weight: .bold))
                                     //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     //
-                                    Text("I Need \nMore \nTIME")
+                                    Text("Need \nMore \nTIME")
                                     //                            .background()
                                         .foregroundColor(.white)
                                         .font(.system(size: 25, weight: .bold))
@@ -146,7 +152,7 @@ struct DramaMainView: View {
                                         .frame(width: 115, height: 115)
                                         .foregroundColor(ColorManager.pmbc_green)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                        .opacity(0.40)
+                                        .opacity(0.65)
                                     //
                                     //                                    Text("5")
                                     //                                    //                            .background()
@@ -172,7 +178,7 @@ struct DramaMainView: View {
                                         .frame(width: 115, height: 115)
                                         .foregroundColor(ColorManager.pmbc_green)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                        .opacity(0.40)
+                                        .opacity(0.65)
                                     //
                                     //                                    Text("3")
                                     //                                    //                            .background()
@@ -198,7 +204,7 @@ struct DramaMainView: View {
                                         .frame(width: 115, height: 115)
                                         .foregroundColor(ColorManager.pmbc_blue)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                        .opacity(0.40)
+                                        .opacity(0.65)
                                     //                                    Text("4")
                                     //                                    //                            .background()
                                     //                                        .foregroundColor(.purple)
@@ -206,9 +212,9 @@ struct DramaMainView: View {
                                     //                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     //
                                     
-                                    Text("(3) \nNuclear \nStand-down")
+                                    Text("(3) Not \n Going \nNuclear")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 17, weight: .bold))
+                                        .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     
                                 }
@@ -219,7 +225,7 @@ struct DramaMainView: View {
                     }
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 10)
                     
 //                    VStack {
 //                        
@@ -253,8 +259,7 @@ struct DramaMainView: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                     
-                    Spacer()
-                        .frame(height: 100)
+                    
                 }
             }
         }

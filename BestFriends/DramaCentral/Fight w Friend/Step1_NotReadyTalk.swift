@@ -41,34 +41,32 @@ struct Step1_NotReadyTalk: View {
                             .foregroundColor(Color.blue)
                   
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 20)
                       Text("I need more")
                             
-                            .font(.system(size: 40))
-                          .foregroundColor(.white)
+                            .font(.system(size: 30))
+                            .italic()                          .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                           .padding(.horizontal, 20)
                     
                     
                       Text("T I M E")
-                            .font(.largeTitle)
-//                            .font(.system(size: 50))
-                          .foregroundColor(.white)
+                         
+                           .font(.system(size: 70))
+                          .foregroundColor(.blue)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)
                           .padding(.horizontal, 20)
                     
                     
-                    
-                    Spacer()
-//                        .frame(height: 50)
+            
                     
                       
 
                     VStack {
                        Spacer()
-                           .frame(height: 50)
+                           .frame(height: 40)
                         
                         Text("Safety Tip:")
                             .foregroundColor(.gray)
@@ -84,7 +82,25 @@ struct Step1_NotReadyTalk: View {
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 20)
-                            
+                         
+                        Spacer()
+                        .frame(height: 30)
+                        
+                        Text("When Ready:")
+                            .foregroundColor(.gray)
+                            .font(.system(size: 30, weight: .bold))
+                        
+                        Spacer()
+                        .frame(height: 10)
+                        
+                        Text("Go to Step 1")
+                            .font(.body)
+                            .italic()
+                            .foregroundColor(.white)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 20)
+                        
                         }
 
                  }

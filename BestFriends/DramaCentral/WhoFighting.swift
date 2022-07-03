@@ -18,7 +18,7 @@ struct WhoFighting: View {
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
-    @EnvironmentObject var sessionManager: SessionManager
+//    @EnvironmentObject var sessionManager: SessionManager
     
     var body: some View {
         

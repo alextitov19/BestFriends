@@ -88,7 +88,7 @@ struct IntroBluemodeFriend: View {
                         .multilineTextAlignment(.center)
                       
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 45)
                 Text("To get past ...")
                        .font(.system(size: 30))
                        .foregroundColor(.green)

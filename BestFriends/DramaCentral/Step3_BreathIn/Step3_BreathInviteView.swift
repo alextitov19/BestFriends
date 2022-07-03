@@ -56,7 +56,7 @@ struct Step3_BreathInviteView: View {
                         NavigationLink(
                             destination: BreathInView(),
                             label: {
-                                Text("Take a breather alone")
+                                Text("Take a Breather")
                                     .fontWeight(.thin)
                                     .frame(width: 300, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
