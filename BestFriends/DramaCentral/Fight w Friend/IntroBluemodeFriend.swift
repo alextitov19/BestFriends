@@ -81,8 +81,8 @@ struct IntroBluemodeFriend: View {
                 
               
                 
-                    Text("Step-by-Step Suggestions")
-                        .font(.system(size: 20))
+                    Text("Step-by-Step things you can try")
+                        .font(.system(size: 18))
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
