@@ -21,34 +21,44 @@ struct PickMediator: View {
        
         ZStack {
             
-            ColorManager.purple4
+            ColorManager.grey4
                 .ignoresSafeArea()
 //                .onAppear()
            
-       
-            Image("ballons")
-                .frame(width: 320, height: 20)
-//                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-
-           
+//
+//            Image("ballons")
+//                .frame(width: 320, height: 20)
+////                .resizable()
+//                .scaledToFill()
+//                .ignoresSafeArea()
+//
+//
             VStack {
              
-                Text("Can't resolve a fight \n with one of your friends?")
-                            .font(.system(size: 35))
+                Text("Two friends in your \nFriend Group fighting?")
+                            .font(.system(size: 25))
                             .foregroundColor(.white)
-                            .fontWeight(.light)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                
+                Spacer()
+                    .frame(height: 15)
+                
+                Text("Making life unconfortable \nfor everyone.")
+                            .font(.system(size: 25))
+                            .foregroundColor(.white)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 
                 Spacer()
                     .frame(height: 30)
                 
-                Text("Pick another friend to \nhelp you become \nbest friends again!")
-                    .font(.system(size: 35))
+                Text("Try picking a third friend in the FG \nto be the go-between!")
+                    .font(.system(size: 20))
                     .italic()
-                    .fontWeight(.light)
+                    .fontWeight(.thin)
                     .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 30)

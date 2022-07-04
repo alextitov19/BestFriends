@@ -57,11 +57,11 @@ struct PickMediator2: View {
                 .padding(.horizontal)
                 
                 
-                Text("You must both agree on the \nfriend to be named, Mediator.")
+                Text("You must agree on the \nfriend to be named, Mediator.")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 25))
+                    .font(.system(size: 20))
                     .background(ColorManager.purple3)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -69,12 +69,12 @@ struct PickMediator2: View {
                 
                 
                 
-                Text("Hi, I wa")
+                Text("Note; this technique can \nbe used in Freind Groups and \nfor Huge Fight with BFF")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 25))
-                    .background(ColorManager.purple3)
+                    .font(.system(size: 20))
+                    .background(ColorManager.grey2)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
@@ -94,7 +94,7 @@ struct PickMediator2: View {
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey4)
                     
-                    Text("We need a friend to help us work this out")
+                    Text("Asling you to be a mediator")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
@@ -104,6 +104,8 @@ struct PickMediator2: View {
                 .padding(.horizontal)
                 
                 HStack {
+                    
+//                MARK: The [All] button is not activated. When tap nothing comes up in the bottom output screen
                     if friends.count > 1 {
                         Button(action: {
                             

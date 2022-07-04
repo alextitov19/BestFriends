@@ -19,21 +19,24 @@ struct FaceTimeCall: View {
         
         ZStack {
             
-            Image("purpleBackground")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-                .onAppear {
-                    
-                    
-                }
+            ColorManager.grey4
+                  .ignoresSafeArea()
             
-            // Stars animation...
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-            
+//            Image("purpleBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .ignoresSafeArea()
+//                .onAppear {
+//                    
+//                    
+//                }
+//            
+//            // Stars animation...
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//            
+//            
             //
             VStack{
                 HStack {
@@ -42,7 +45,7 @@ struct FaceTimeCall: View {
                 VStack {
                     
                     Text("FriendGroup")
-                        .font(.system(size: 50))
+                        .font(.system(size: 30))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                     
@@ -54,7 +57,7 @@ struct FaceTimeCall: View {
                         .kerning(10)
                     
                     Text("on you iPhone")
-                        .font(.system(size: 50))
+                        .font(.system(size: 40))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                     
@@ -67,7 +70,7 @@ struct FaceTimeCall: View {
                             .font(.system(size: 25))
                             
                             .foregroundColor(.white)
-                            .fontWeight(.semibold)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                     Spacer()
                             .frame(height: 60)
