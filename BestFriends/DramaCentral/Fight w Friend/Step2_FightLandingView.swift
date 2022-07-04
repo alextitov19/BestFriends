@@ -32,13 +32,16 @@ struct Step2_FightLandingView: View {
 //
             VStack{
                 
-                Text("After looking at Steps 1-4")
-                    .font(.system(size: 25))
+                Text("Ok, you looking at Steps 1-4 \nand posted a message in Chat")
+                    .font(.system(size: 20))
+                    .italic()
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height: 20)
+              
                 
+                Spacer()
+                    .frame(height: 30)
+
                 HStack {
                     
                  
@@ -61,16 +64,19 @@ struct Step2_FightLandingView: View {
                     
                     Text("Send Push Notification")
                         .font(.system(size: 25, weight: .bold))
+                        .italic()
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                     
-                    Text("with Chat massage")
+                    Text("'Inviting' them to read")
                         .font(.system(size: 25, weight: .bold))
+                        .italic()
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                      
-                    Text("'Inviting' them to fix this")
+                    Text(" your message in Chat")
                         .font(.system(size: 25, weight: .bold))
+                        .italic()
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
                     
