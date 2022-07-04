@@ -24,10 +24,17 @@ struct DramaMainView: View {
                     .ignoresSafeArea()
                     .scaledToFill()
                     .onAppear(perform: loadData)
-
-                AdPlayerView(name: "cloud")
+//
+//                AdPlayerView(name: "cloud")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//             
+              
+               
+                AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
                     .blendMode(.screen)
+                
                 
                 VStack {
                     
@@ -38,8 +45,9 @@ struct DramaMainView: View {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
-                                        .foregroundColor(ColorManager.pmbc_green)
-                                       
+                                        .foregroundColor(ColorManager.purple7)
+//                                        .foregroundColor(ColorManager: purple)
+                                      
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
            Text("(5) \nHug-it-Out")
@@ -58,7 +66,7 @@ struct DramaMainView: View {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
-                                        .foregroundColor(ColorManager.pmbc_blue)
+                                        .foregroundColor(ColorManager.purple5)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
                                    
@@ -98,7 +106,7 @@ struct DramaMainView: View {
                                 ZStack {
                                     Circle()
                                         .frame(width: 130, height: 130)
-                                        .foregroundColor(ColorManager.pmbc_pink)
+                                        .foregroundColor(ColorManager.grey1)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
                                   
@@ -118,7 +126,7 @@ struct DramaMainView: View {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
-                                        .foregroundColor(ColorManager.pmbc_green)
+                                        .foregroundColor(ColorManager.purple3)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
                                    
@@ -137,7 +145,7 @@ struct DramaMainView: View {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
-                                        .foregroundColor(ColorManager.pmbc_green)
+                                        .foregroundColor(ColorManager.purple2)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
                                     
@@ -156,7 +164,7 @@ struct DramaMainView: View {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
-                                        .foregroundColor(ColorManager.pmbc_blue)
+                                        .foregroundColor(ColorManager.purple3)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
                                    
