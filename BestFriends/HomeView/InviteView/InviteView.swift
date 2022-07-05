@@ -38,12 +38,12 @@ struct InviteView: View {
                     .frame(height: 10)
                 
                 
-                Text("You may add up to 5 friends")
+                Text("Add up to 5 friends")
                     .foregroundColor(.purple)
                     .font(.system(size: 27, weight: .light))
                 
                 
-                Text("1) 1st ask friend to download BestFriends \n2) Enter their email - tap [Invite] \n3) Only invite once \n4) Only one person send invite")
+                Text("1) Ask friend to download app \n2) Enter their email - tap [Invite] \n3) Only one of you send invite")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()
@@ -71,47 +71,39 @@ struct InviteView: View {
                     
                     VStack {
                 
-                Text("* Setup 1st Chat Room")
+                Text("* Setup Chat Rooms")
                     .foregroundColor(.gray)
                     .font(.system(size: 30, weight: .bold))
                 
-                Text("After your friend accepts your request")
-                    .fontWeight(.thin)
-                    .foregroundColor(.white)
-                    .italic()
-                    .font(.system(size: 17))
                         
-                        Text("their 'planet' will popup on homepage")
+                        Spacer()
+                            .frame(height: 10)
+                        
+                        Text("Tap friend's 'planet' on homepage")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
                             .font(.system(size: 17))
                     
-                    Spacer()
-                        .frame(height: 30)
                         
-                        Text("Tap their 'planet' then,")
+                        Text("Tap [Create 'New' Chat Room]")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
                             .font(.system(size: 17))
                 
-                        Text("tap the button [Create New Chat]")
+                     
+                        
+                        Text("Name Chat Room")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
                             .font(.system(size: 17))
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 7)
                         
-                        Text("A Push Notification alerts friend,")
-                            .fontWeight(.thin)
-                            .foregroundColor(.white)
-                            .italic()
-                            .font(.system(size: 17))
-                        
-                        Text("slide up 'Chat Rooms' from bottom")
+                        Text("Push Notification Sent")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()

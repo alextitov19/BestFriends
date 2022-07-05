@@ -105,14 +105,20 @@ struct Apologies3: View {
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey4)
                     
-                    Text("Let your friend know you are sending an apology in Chat")
-                        .font(.system(size: 25))
+                    Text("Let your friend \nknow you are sending \nan apology in Chat")
+                        .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                     
                     Spacer()
                 }
                 .padding(.horizontal)
+                
+                Text("(Please tap only once)")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
                 
                 HStack {
                     if friends.count > 1 {

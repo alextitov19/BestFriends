@@ -60,13 +60,14 @@ struct BreathInView: View {
                          .fontWeight(.medium)
                          .multilineTextAlignment(.center)
          
-                    Text("R e l a x")
-                         .font(.system(size: 100, weight: .ultraLight))
-                    
-                        .offset(x: 10, y: 135)
-                        .foregroundColor(.white)
-                    
-                
+//                    Text("Try to R e l a x")
+//                         .font(.system(size: 35, weight: .ultraLight))
+//
+//                        .offset(x: 10, y: 135)
+//                        .foregroundColor(.white)
+//                        .multilineTextAlignment(.center)
+//
+//
                 
                 
                 
@@ -75,9 +76,9 @@ struct BreathInView: View {
                 
                 
                 HStack {
-             Text("breath 'IN' slowly, \n'HOLD'")
-                        .font(.system(size: 35))
-                        .fontWeight(.thin)
+             Text("Breath 'IN' for 5 \n\n'HOLD' for 5")
+                        .font(.system(size: 25))
+                        .fontWeight(.light)
                         .offset(x: 120, y: 50)
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)

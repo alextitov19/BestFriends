@@ -23,38 +23,47 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-//            ColorManager.purple3
+            ColorManager.purple4
+                .ignoresSafeArea()
+                .onAppear()
+          
+//            Image("purpleBackground")
+//                .resizable()
 //                .ignoresSafeArea()
-//                .onAppear()
+//                .scaledToFill()
 //
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
-
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-
-            AdPlayerView(name: "face")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+//            AdPlayerView(name: "face")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
         
             
             VStack {
+                
+                
                 HStack {
-                    Text("Did something just happen to change your mood?")
-                        .font(.system(size: 20))
+                    
+                    Text("'Aura'")
+                        .font(.system(size: 35))
+                        
                         .foregroundColor(Color.white)
+                    
+                    Text("distinctive stmosphere that surrounds you")
+                        .font(.system(size: 12))
+                        .foregroundColor(ColorManager.grey1)
+                      
                     
                     Spacer()
                 }
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("(Want to let your friends know?)")
-                        .font(.system(size: 15))
+                    Text("Update your Aura / Atmosphere")
+                        .font(.system(size: 21))
                         .italic()
-                        .foregroundColor(Color.white)
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager.grey1)
+                    
+                 
                     
                     Spacer()
                 }
@@ -243,10 +252,11 @@ struct AtmosphereMain2: View {
                 VStack {
                     // MARK: End of feeling buttons
                     HStack {
-                        Text("What's going on?")
-                            .font(.system(size: 30))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color.white)
+                        Text("Ok, what's going on?")
+                            .font(.system(size: 21))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.grey1)
                         
                         Spacer()
                     }
@@ -256,12 +266,12 @@ struct AtmosphereMain2: View {
                     
                     ZStack {
                         Rectangle()
-                            .frame(width:400, height: 100)
+                            .frame(width:375, height: 50)
                             .cornerRadius(15)
                             .foregroundColor(Color.gray)
                             .opacity(0.7)
                         
-                        TextField("You can type your reason here ...", text: $summary)
+                        TextField("You can type what's up here...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(Color.black)
                             .padding(.horizontal, 20)
@@ -274,10 +284,16 @@ struct AtmosphereMain2: View {
                     
                     
                     HStack {
-                        Text("ALERT friends with Push Notification")
-                            .font(.system(size: 23))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color.blue)
+                        Text("Hey, wanna let your friends know?")
+                            .font(.system(size: 21))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.grey1)
+                        Text("So, they can laugh, smile, cheer or maybe help")
+                            .font(.system(size: 12))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.grey1)
                         
                         
                         Spacer()
@@ -368,9 +384,9 @@ struct AtmosphereMain2: View {
                         shareMood()
                     },
                            label: {
-                        Text("SHARE")
+                        Text("Share")
                             .fontWeight(.thin)
-                            .frame(width: 100, height: 40)
+                            .frame(width: 100, height: 35)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             
@@ -389,7 +405,7 @@ struct AtmosphereMain2: View {
                         label: {
                             Text("Mood Tracker")
                                 .fontWeight(.thin)
-                                .frame(width: 200, height: 40)
+                                .frame(width: 200, height: 35)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
@@ -415,7 +431,7 @@ struct AtmosphereMain2: View {
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Temperament!", APNToken: f.APNToken )
+                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Atmosphere!", APNToken: f.APNToken )
                             }
                         }
                         mood = -1

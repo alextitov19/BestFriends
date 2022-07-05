@@ -54,7 +54,7 @@ struct HurtFeelings: View {
                 Spacer()
                     .frame(height: 150)
                 
-                Text("Did they \ncross the line?")
+                Text("Did they say or do \nsomething hurtful?")
                     .font(.system(size: 30))
                     .italic()
                     .fontWeight(.light)

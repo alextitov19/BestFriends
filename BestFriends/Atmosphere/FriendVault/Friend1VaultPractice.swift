@@ -195,9 +195,9 @@ struct Friend1VaultPractice: View {
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "C")
                         
-                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulation, you did it!", APNToken: friend.APNToken )
+                        RestApi.instance.sendPushNotification(title: "From: \(user.firstName)", body: "Congratulations, you did it!", APNToken: friend.APNToken )
                     }, label: {
-                        Text("Congradulations, you did it!")
+                        Text("Congratulations, you did it!")
                             .fontWeight(.thin)
                             .frame(width: 260, height: 30)
                             .foregroundColor(.purple)
@@ -231,7 +231,7 @@ struct Friend1VaultPractice: View {
                     
                     
                     Spacer ()
-                        .frame(height: 10)
+                        .frame(height: 20)
                 }
                 //
                 //                Text("Send Hug")
@@ -244,18 +244,18 @@ struct Friend1VaultPractice: View {
                     ZStack {
                         
                         if !hugTapped {
-                            Text("Hug")
+                            Text("Send Hug")
                             
                             //                        Image("Hug4")
                             //                        .resizable()
                             
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 32)
-                                .font(.system(size: 30))
+                                .frame(width: 125, height: 32)
+                                .font(.system(size: 25))
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             //                        .scaledToFit()
                             //                        .colorInvert()
-                                .background(ColorManager.purple3)
+                                .background(ColorManager.orange4)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 .onTapGesture {
@@ -274,7 +274,7 @@ struct Friend1VaultPractice: View {
                         Image("")
                             .resizable()
                             .foregroundColor(.pink)
-                            .frame(width: 5, height: 5)
+                            .frame(width: 0, height: 0)
                             .colorInvert()
                             .blur(radius: 2)
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
@@ -288,12 +288,12 @@ struct Friend1VaultPractice: View {
                         NavigationLink(
                             destination: BuildFriendPlaylist(user: user, groups: groups, friend: friend, friendAtmosphere: friendAtmosphere),
                             label: {
-                                Text("Playlist")
+                                Text("Send Song")
                                     .fontWeight(.thin)
-                                    .frame(width: 130, height: 32)
+                                    .frame(width: 125, height: 32)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
-                                    .background(ColorManager.orange3)
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.orange4)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -366,7 +366,7 @@ struct Friend1VaultPractice: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends - BlueMode", body: "\(user.firstName) invited you to BlueMode!", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BestFriends - Fight with Friend", body: "\(user.firstName) Invited you to fix this!", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))

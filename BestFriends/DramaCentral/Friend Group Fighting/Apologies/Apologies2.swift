@@ -41,7 +41,7 @@ struct Apologies2: View {
                           .multilineTextAlignment(.center)
                       
                       Text("F E E L I N G S?")
-                          .font(.system(size: 60))
+                          .font(.system(size: 55))
                           .foregroundColor(.white)
                           .fontWeight(.ultraLight)
                           .multilineTextAlignment(.center)

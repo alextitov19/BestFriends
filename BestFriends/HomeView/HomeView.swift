@@ -186,9 +186,9 @@ struct HomeView: View {
                         Button(action: {
                             chatButtonTapped()
                         }, label: {
-                            Text("Create New Chat")
+                            Text("Create 'New' Chat Room")
                                 .fontWeight(.regular)
-                                .frame(width: 210, height: 30)
+                                .frame(width: 270, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -201,6 +201,11 @@ struct HomeView: View {
                     Spacer()
                         .frame(height: 25)
                     
+                    Text("Received Push Notification about:")
+                        .font(.system(size: 15))
+                        .foregroundColor(.white)
+                        .fontWeight(.ultraLight)
+                    
                     //                    MARK: Connect to Chat Now page
                     
                     if selectedPlanet != nil {
@@ -208,7 +213,7 @@ struct HomeView: View {
                             NavigationLink(destination: UrgentChatInvite(user: homeData!.user, owner: homeData!.user, group: homeData!.groups[0]),
                                            label: {
                                 Text("Urgent Chat Invite")
-                                    .fontWeight(.thin)
+                                    .fontWeight(.light)
                                     .frame(width: 210, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
@@ -220,8 +225,8 @@ struct HomeView: View {
                         
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
-                            Text("Friend's Mood Changed")
-                                .fontWeight(.thin)
+                            Text("Friend changed Aura")
+                                .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
@@ -233,8 +238,8 @@ struct HomeView: View {
                        
                         NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                        label: {
-                            Text("ALERT from FriendGroup")
-                                .fontWeight(.thin)
+                            Text("Drama ALERT")
+                                .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
@@ -245,8 +250,8 @@ struct HomeView: View {
                         
                         NavigationLink(destination: VirtualHug(),
                                        label: {
-                            Text("Friend sent HUG")
-                                .fontWeight(.thin)
+                            Text("My friend sent a HUG")
+                                .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
@@ -259,8 +264,8 @@ struct HomeView: View {
                         Button(action: {
                             friendSentPlaylist(friend: selectedPlanet!.user)
                         }, label: {
-                            Text("Friend sent Playlist")
-                                .fontWeight(.thin)
+                            Text("My friend sent a SONG")
+                                .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)

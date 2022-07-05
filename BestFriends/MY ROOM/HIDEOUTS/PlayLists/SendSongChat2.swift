@@ -40,29 +40,8 @@ struct SendSongChat2: View {
 
 
             VStack {
-
-                Text("Playlists")
-                    .font(.system(size: 80))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-
-                Spacer()
-                    .frame(height: 25)
-
-                Text("Send a couple songs that")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-
-                Spacer()
-                    .frame(height: 5)
-
-                Text("fit your friend's Mood")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-
+                
+              
         VStack {
 
             TextField("", text: $customMessage)
@@ -70,6 +49,7 @@ struct SendSongChat2: View {
                     HStack {
                         Text("Type name of song")
                         .foregroundColor(.white)
+                        .fontWeight(.thin)
 
                         Spacer()
                     }
@@ -85,17 +65,27 @@ struct SendSongChat2: View {
                     .frame(height: 40)
                     .padding(.horizontal, 10)
                 )
-//                    .padding(.horizontal, 0)
 
+
+        
+            
+            Text("one to fit their mood")
+                .font(.system(size: 30))
+                .foregroundColor(.white)
+                .fontWeight(.ultraLight)
+            
+            Spacer()
+                .frame(height: 50)
+            
             VStack {
                 Button(action: {
                     sendMessage()
                 }, label: {
                     Text("Send to Chat")
                         .fontWeight(.thin)
-                        .frame(width: 200, height: 25)
-                        .foregroundColor(.purple)
-                        .font(.system(size: 22))
+                        .frame(width: 200, height: 40)
+                        .foregroundColor(.white)
+                        .font(.system(size: 30))
                     //                                .opacity(0.5)
                         .background(ColorManager.purple2)
                         .opacity(0.7)
@@ -104,7 +94,12 @@ struct SendSongChat2: View {
                 })
 
 
-
+                Text("(with push notification)")
+                    .font(.system(size: 15))
+                    .italic()
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                
             }
 
         }

@@ -8,22 +8,28 @@
 
 import Foundation
 import SwiftUI
-import AVKit
+
 
 struct InfoView: View {
     @EnvironmentObject var sessionManager: SessionManager
+    
     @State var group: Group
     @State var user: User
+  
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
+//            AdPlayerView(name: "FieldFlowers")
+//                .ignoresSafeArea()
             
-            AdPlayerView(name: "FieldFlowers")
+            ColorManager.grey4
                 .ignoresSafeArea()
+                .onAppear()
             
             VStack {
                 
@@ -31,62 +37,46 @@ struct InfoView: View {
                     .font(.system(size: 40))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.purple)
              
                 Text("M E S S A G E")
-                    .font(.system(size: 55))
-                    .fontWeight(.light)
+                    .font(.system(size: 40))
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
           
                 VStack {
                
                     
-                Text("Save SuperCool Messages")
+                Text("-Save messages \nto SmileVault \n- Report User")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.black)
-                  
-                    Spacer()
-                    .frame(height: 10)
+                    .foregroundColor(.gray)
+
+             
                 }
                 
             VStack {
-//                Text("Delete Message")
-//                    .font(.system(size: 25))
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.black)
-              
-                Spacer()
-                .frame(height: 10)
-                
-                Text("Report User")
-                    .font(.system(size: 24))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.black)
-                
-                
                      Spacer()
                      .frame(height: 30)
                      
                
-                Text("Hide Chat - Restore")
-                    .font(.system(size: 42))
-                    .fontWeight(.regular)
+                Text("Hide Chat")
+                    .font(.system(size: 40))
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
                 
-                Text("with Secret PIN")
-                    .font(.system(size: 35))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.black)
-                
-                Text("(tap lock icon)")
+                Text("Restore with Secret PIN")
                     .font(.system(size: 25))
+                    .fontWeight(.light)
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+                 
+                
+                Text("(tap 'lock' icon - enter 4 digit PIN)")
+                    .font(.system(size: 15))
                     .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -99,47 +89,46 @@ struct InfoView: View {
             VStack {
                 
                 Text("For Your Safety")
-                    .font(.system(size: 55))
-                    .fontWeight(.regular)
+                    .font(.system(size: 40))
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
                 
-                Text("Friends CAN'T")
-                    .font(.system(size: 35))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.black)
-                
-                Text("Download your images")
+                Text("- Download images \n- Copy/Paste messages")
                     .font(.system(size: 25))
                     .fontWeight(.light)
+                    .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-              
-                Text("Copy/paste your messages")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                Spacer()
-                .frame(height: 30)
+                 
                 
-                Text("Screen-shot Chat messages")
-                    .font(.system(size: 24))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                
-                Text("(coming end summer)")
-                    .font(.system(size: 20))
+                Text("(112 bit encription)")
+                    .font(.system(size: 15))
                     .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
+                  
+                    Spacer()
+                    .frame(height: 30)
                 
-                
+           
                 Spacer()
-                .frame(height: 15)
+                .frame(height: 30)
+                
+//                Text("Screen-shot Chat messages")
+//                    .font(.system(size: 24))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+//
+//                Text("(coming end summer)")
+//                    .font(.system(size: 20))
+//                    .italic()
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+//
+                
                 
            
                 

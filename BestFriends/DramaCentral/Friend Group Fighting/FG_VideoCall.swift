@@ -46,10 +46,10 @@ struct FG_VideoCall: View {
         
         ZStack {
 
-            NavigationLink(destination: IntroBluemodeFriend(), label: {
-                FG_VideoCallCircle (color: .pink, friendName: "Huge Fight \nwith BFF")
+            NavigationLink(destination: EmptyView(), label: {
+                FG_VideoCallCircle (color: .pink, friendName: "")
                 })
-            .offset(x: showItems ? 120 : 0, y: showItems ? -165: 0)
+            .offset(x: showItems ? 120 : 0, y: showItems ? -565: 0)
              
      
            
@@ -64,16 +64,16 @@ struct FG_VideoCall: View {
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
             NavigationLink(destination: IntroFriendGpFight(), label: {
-                FG_VideoCallCircle (color: .gray, friendName: "Being \nTeens")
+                FG_VideoCallCircle (color: .gray, friendName: "")
                 })
-            .offset(x: showItems ? 40 : 0, y: showItems ? -200: 0)
+            .offset(x: showItems ? 40 : 0, y: showItems ? -600: 0)
              
             
-            NavigationLink(destination: FG_Team(), label: {
-                   FG_VideoCallCircle (color: .orange, friendName: "True \nFriends")
-             })
-             .offset(x: showItems ? -50 : 0, y: showItems ? 250: 0)
-             
+//            NavigationLink(destination: FG_Team(), label: {
+//                   FG_VideoCallCircle (color: .orange, friendName: "True \nFriends")
+//             })
+//             .offset(x: showItems ? -50 : 0, y: showItems ? 250: 0)
+//
             
                NavigationLink(destination: Apologies(user: user, friends: friends, groups: groups), label: {
                    FG_VideoCallCircle (color: .white, friendName: "Apologies")
@@ -85,7 +85,7 @@ struct FG_VideoCall: View {
             
            
               NavigationLink(destination: PickMediator(user: user, friends: friends, groups: groups), label: {
-                  FG_VideoCallCircle (color: .purple, friendName: "Pick \nYour \nMediator")
+                  FG_VideoCallCircle (color: .purple, friendName: "Pick \na \nMediator")
             })
             .offset(x: showItems ? 130 : 0, y: showItems ? -50: 0)
             
@@ -106,7 +106,7 @@ struct FG_VideoCall: View {
                    .opacity(0.9)
 
            VStack {
-              Text("FriendGroups")
+              Text("FriendGroup \nDrama")
                             .font(.system(size: 20))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)

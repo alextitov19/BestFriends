@@ -30,28 +30,28 @@ struct IndividualFriendMessages: View {
                 .scaledToFill()
                 .onAppear(perform: loadData)
             
-            AdPlayerView(name: "backgroundAnimation")
+            AdPlayerView(name: "rockSit")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
-            PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
-                .scaledToFit()
-                .frame(width: 350)
+//            PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
+//                .scaledToFit()
+//                .frame(width: 350)
 
             
             VStack {
                 
                 
-                Text("'Long-tapped' \nchat messages from")
+                Text("Special messages from")
                     .font(.system(size: 17))
                     .fontWeight(.light)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
 
                 Text(friend.firstName + " " + friend.lastName)
-                    .font(.system(size: 30))
+                    .font(.system(size: 15))
                     .fontWeight(.light)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.white)
 
                 
                 

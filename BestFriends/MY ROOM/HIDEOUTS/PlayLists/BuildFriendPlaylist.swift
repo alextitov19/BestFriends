@@ -23,8 +23,14 @@ struct BuildFriendPlaylist: View {
 
             VStack {
               
-                Text("Playlists")
-                    .font(.system(size: 80))
+                Text("Friend having a tough day?")
+                    .font(.system(size: 25))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("Send a Song")
+                    .font(.system(size: 60))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
@@ -32,27 +38,40 @@ struct BuildFriendPlaylist: View {
                 Spacer()
                     .frame(height: 25)
                 
-                Text("Build a Playlist for your Friends")
-                    .font(.system(size: 27))
+                Text("You know that one you listen to")
+                    .font(.system(size: 22))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                Text("over and over and over")
+                    .font(.system(size: 15))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                Text("on a sad day in the dark.")
+                    .font(.system(size: 15))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                 
+                
+                
+                
+                
+                
                 Spacer()
                     .frame(height: 5)
-                 
-                Text("that matchs their ")
-                    .font(.system(size: 27))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
+//
+//                Text("that matches their Aura")
+//                    .font(.system(size: 27))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
                 Spacer()
                     .frame(height: 15)
                 
                    
-                Text("Mood")
-                    .font(.system(size: 70))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                
+//                Text("Mood")
+//                    .font(.system(size: 70))
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//
             VStack {
                     Spacer()
                         .frame(height: 10)
@@ -60,7 +79,7 @@ struct BuildFriendPlaylist: View {
                     NavigationLink(
                         destination: SendSongChat2(user: user, friend: friend, groups: groups, friendAtmosphere: friendAtmosphere),
                         label: {
-                            Text("Let's do this!")
+                            Text("Be a BestFriend")
                                 .fontWeight(.thin)
                                 .frame(width: 300, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -70,20 +89,6 @@ struct BuildFriendPlaylist: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                     
-                    Spacer()
-                        .frame(height: 60)
-                
-                Text("One for Good days, ")
-                    .font(.system(size: 40))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.white)
-                
-                Text("one for Bad")
-                    .font(.system(size: 40))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.white)
-               
-             
                     
                 }
             }

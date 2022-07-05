@@ -18,7 +18,7 @@ struct WhoFighting: View {
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
-    @EnvironmentObject var sessionManager: SessionManager
+//    @EnvironmentObject var sessionManager: SessionManager
     
     var body: some View {
         
@@ -44,28 +44,28 @@ struct WhoFighting: View {
 //            Image("planet_4")
         
         ZStack {
-//
-//            NavigationLink(destination: FightWithParents(), label: {
-//                WhoFightingCircle (color: .pink, friendName: "Fight \nwith \nParents")
-//                })
-//            .offset(x: showItems ? 100 : 0, y: showItems ? -150: 0)
-//
-//
+
+            NavigationLink(destination: IntroBluemodeFriend(), label: {
+                WhoFightingCircle (color: .purple, friendName: "HUGE \nFight with \nBFF")
+                })
+            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
+
            
+
               NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .purple, friendName: "Parents \nFighting")
+                  WhoFightingCircle (color: .gray, friendName: "Parents \nFighting")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 130: 0)
             
 
-            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
+            NavigationLink(destination: IntroFriendGp2(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -90: 0)
             
             NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .gray, friendName: "")
+                WhoFightingCircle (color: .gray, friendName: "We can \nFix this")
             })
-            .offset(x: showItems ? -75 : 0, y: showItems ? -600: 0)
+            .offset(x: showItems ? 95 : 0, y: showItems ? -600: 0)
             
 
         Image(systemName: "triangle.fill")
