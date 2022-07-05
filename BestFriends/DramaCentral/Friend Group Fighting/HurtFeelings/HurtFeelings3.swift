@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 import SwiftUI
-import AVKit
+
 
 
 struct HurtFeelings3: View {
@@ -18,12 +18,11 @@ struct HurtFeelings3: View {
     let user: User
     let friends: [User]
     let groups: [Group]
+  
     
-    @State private var customMessage = "Custom Message"
-    @State private var colorChangeTap: String = ""
-    @State private var noteTapped = false
+    @State private var summary = ""
     @State private var sharedWith: [String] = []
-    
+    @State private var colorChangeTap: String = ""
     
     var body: some View {
         ZStack {
@@ -32,17 +31,7 @@ struct HurtFeelings3: View {
                             .onAppear()
             
           
-            
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//
-            //            AdPlayerView(name: "face")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //
-            
+    
             VStack {
                 HStack {
                     Text("How to tell your friend ...")
@@ -87,15 +76,7 @@ struct HurtFeelings3: View {
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                 
                 
                 HStack {
                     Text("ALERT Friend:")
@@ -103,19 +84,25 @@ struct HurtFeelings3: View {
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey4)
                     
-                    Text("That you are sending them a message in Chat")
-                        .font(.system(size: 25))
+                    Text("That you are sending \nthem a message in Chat")
+                        .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                     
-                    Spacer()
+//                    Spacer()
                 }
                 .padding(.horizontal)
+                
+                Text("(Please tap only once)")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.black)
                 
                 HStack {
                     if friends.count > 1 {
                         Button(action: {
-                            
+
                         },
                                label: {
                             Text("ALL")
@@ -178,11 +165,22 @@ struct HurtFeelings3: View {
                             })
                     }
                     
+//                NOTE: below code pulled in from AtmosphereMain2 page (what the button to change color when tapped. But on Atmosphere there is a [Share] button that must be tapped to send push Notification. On this page the push note goes out when button is tapped)
+//                    if friends.count > 4 {
+//                        RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
+//                            .onTapGesture(perform: {
+//                                if sharedWith.contains(friends[4].id) {
+//                                    sharedWith = sharedWith.filter { $0 != friends[4].id }
+//                                } else {
+//                                    sharedWith.append(friends[4].id)
+//                                }
+//                                print(sharedWith)
+//                            })
+                    
+                    
+                    
                     if friends.count > 4 {
                         RectView(user: user, friend: friends[4])
-                                 
-//                                 , color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
-                           
                             .onTapGesture(perform: {
                                 if sharedWith.contains(friends[4].id) {
                                     sharedWith = sharedWith.filter { $0 != friends[4].id }
@@ -192,47 +190,38 @@ struct HurtFeelings3: View {
                                 print(sharedWith)
                             })
                         
+                    
+                        Text("Please tap only once")
+                            .font(.system(size: 20))
+                            .fontWeight(.thin)
+                            .foregroundColor(Color.white)
+                        
+                        
+                        
+                        
 //
-//                        if friends.count > 4 {
-//                            RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
-//                                .onTapGesture(perform: {
-//                                    if sharedWith.contains(friends[4].id) {
-//                                        sharedWith = sharedWith.filter { $0 != friends[4].id }
-//                                    } else {
-//                                        sharedWith.append(friends[4].id)
-//                                    }
-//                                    print(sharedWith)
-//                                })
 //
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        Button(action: {
-                            defaultMessageButtonTapped(defaultMessage: "SHARE")
-//                            shareMood()
-                        },
-                               label: {
-                            Text("SHARE")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                
-                                .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
-                                
-    //                            .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-
-                        })
-                      
-                        
+//                        Button(action: {
+//                            defaultMessageButtonTapped(defaultMessage: "SHARE")
+////                            shareMood()
+//                        },
+//                               label: {
+//                            Text("SHARE")
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 40)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 30))
+//
+//                                .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
+//
+//    //                            .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                        })
+//
+//
                         
                     }
                 }
@@ -240,12 +229,12 @@ struct HurtFeelings3: View {
         }
     }
     
-    func limitText(_ upper: Int) {
-        if customMessage.count > upper {
-            customMessage = String(customMessage.prefix(upper))
-        }
-    }
-    
+//    func limitText(_ upper: Int) {
+//        if customMessage.count > upper {
+//            customMessage = String(customMessage.prefix(upper))
+//        }
+//    }
+//
     func sendMessage() {
 //        if customMessage.count == 0 { return }
 //        
@@ -299,18 +288,4 @@ struct HurtFeelings3: View {
     }
 }
 
-
-
-
-
-
-
-
-//
-//
-//struct HurtFeelings3_Previews : PreviewProvider {
-//    static var previews: some View {
-//HurtFeelings3()
-//    }
-//}
 

@@ -431,7 +431,7 @@ struct AtmosphereMain2: View {
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Temperament!", APNToken: f.APNToken )
+                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Atmosphere!", APNToken: f.APNToken )
                             }
                         }
                         mood = -1

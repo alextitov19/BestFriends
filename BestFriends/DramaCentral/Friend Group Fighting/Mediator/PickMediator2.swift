@@ -94,7 +94,7 @@ struct PickMediator2: View {
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey4)
                     
-                    Text("Asling you to be a mediator")
+                    Text("Asking you to be a mediator")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
@@ -102,6 +102,12 @@ struct PickMediator2: View {
                     Spacer()
                 }
                 .padding(.horizontal)
+                
+                Text("(Please tap only once)")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.black)
                 
                 HStack {
                     
