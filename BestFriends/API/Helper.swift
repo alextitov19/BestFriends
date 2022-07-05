@@ -198,6 +198,16 @@ class Helper {
         }
     }
     
+    func createPhotoPop(url: String, createPhotoPop: CreatePhotoPop) -> Promise<PhotoPop> {
+        let payload = try? JSONEncoder().encode(createPhotoPop)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, PhotoPop.self).then { photoPop in
+            return Promise<PhotoPop>(photoPop)
+        }
+    }
+    
     func getImage(url: String) -> Promise<Data> {
         return callRestApi(url: url, method: .get, ImageData.self).then { response in
             return Promise<Data>(response.image)

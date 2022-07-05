@@ -47,6 +47,7 @@
 		7A8A17C128414A390088DC04 /* SmileNoteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A17C028414A390088DC04 /* SmileNoteModels.swift */; };
 		7AA07F5F285D0DD400E9C5A4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA07F5E285D0DD400E9C5A4 /* UserModel.swift */; };
 		7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA201122635D5F500C9F00C /* Room+Extensions.swift */; };
+		7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA2514C2874AB7B0018C97E /* PhotoPopModels.swift */; };
 		7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4C01E27FF4A08000C4140 /* ChatView.swift */; };
 		7AC71DA827F3D803008D191B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC71DA727F3D803008D191B /* Helper.swift */; };
 		7ACACDA82853EAB700D8AB75 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACACDA72853EAB700D8AB75 /* UIAlertControllerExtension.swift */; };
@@ -226,6 +227,7 @@
 		7A8A17C028414A390088DC04 /* SmileNoteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNoteModels.swift; sourceTree = "<group>"; };
 		7AA07F5E285D0DD400E9C5A4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7AA201122635D5F500C9F00C /* Room+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+Extensions.swift"; sourceTree = "<group>"; };
+		7AA2514C2874AB7B0018C97E /* PhotoPopModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopModels.swift; sourceTree = "<group>"; };
 		7AC4C01E27FF4A08000C4140 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		7AC71DA727F3D803008D191B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7ACACDA72853EAB700D8AB75 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
@@ -392,6 +394,7 @@
 				7AD8DEFE27F66F9100D9F0E1 /* AtmosphereModels.swift */,
 				7ACDB1802828186D009E1CFD /* NotificationModels.swift */,
 				7A8A17C028414A390088DC04 /* SmileNoteModels.swift */,
+				7AA2514C2874AB7B0018C97E /* PhotoPopModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1344,6 +1347,7 @@
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
 				7AC71DA827F3D803008D191B /* Helper.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
+				7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */,
 				CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */,
 				CF3B65D52801ED660003A714 /* GetInvolvedView.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,

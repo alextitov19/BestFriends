@@ -136,6 +136,16 @@ class RestApi {
         return helper.callRestApi(url: API_URL + "/smile-notes", method: .get, [SmileNote].self)
     }
     
+    public func createPhotoPop(receiver: String, image: Data) -> Promise<PhotoPop> {
+        let cpp = CreatePhotoPop(receiver: receiver, image: image)
+        return helper.createPhotoPop(url: API_URL + "/photo-pop", createPhotoPop: cpp)
+    }
+    
+    public func getPhotoPops() -> Promise<[PhotoPop]> {
+        return helper.callRestApi(url: API_URL + "/photo-pop", method: .get, [PhotoPop].self)
+    }
+    
+    
     public func registerAPNToken() {
         Messaging.messaging().token { token, error in
           if let error = error {
