@@ -92,6 +92,8 @@
 		CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */; };
 		CF1ECAC3287143E900D999F8 /* FightInviteFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC2287143E900D999F8 /* FightInviteFriend.swift */; };
 		CF1ECAC52872AA4B00D999F8 /* IntroFreindGp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC42872AA4B00D999F8 /* IntroFreindGp2.swift */; };
+		CF1ECAC728752C3700D999F8 /* SettingsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC628752C3700D999F8 /* SettingsTutorial.swift */; };
+		CF1ECAC92875500100D999F8 /* InfoViewPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */; };
 		CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
 		CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2DBCF028552527008616A3 /* storm2.mp4 */; };
@@ -277,6 +279,8 @@
 		CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonPromoPage.swift; sourceTree = "<group>"; };
 		CF1ECAC2287143E900D999F8 /* FightInviteFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightInviteFriend.swift; sourceTree = "<group>"; };
 		CF1ECAC42872AA4B00D999F8 /* IntroFreindGp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFreindGp2.swift; sourceTree = "<group>"; };
+		CF1ECAC628752C3700D999F8 /* SettingsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTutorial.swift; sourceTree = "<group>"; };
+		CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewPlanet.swift; sourceTree = "<group>"; };
 		CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileNoteCard.swift; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
 		CF2DBCF028552527008616A3 /* storm2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = storm2.mp4; sourceTree = "<group>"; };
@@ -712,6 +716,7 @@
 			isa = PBXGroup;
 			children = (
 				CF3B65C3280104290003A714 /* SettingsView.swift */,
+				CF1ECAC628752C3700D999F8 /* SettingsTutorial.swift */,
 				CF3B65BC280091280003A714 /* DemoVideoView.swift */,
 				CF3B65D42801ED660003A714 /* GetInvolvedView.swift */,
 				CF3B65AA2800718E0003A714 /* ReportAbuse.swift */,
@@ -819,6 +824,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
+				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 			);
 			path = PlanetMain;
 			sourceTree = "<group>";
@@ -1234,6 +1240,7 @@
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				CFD0469F2838394C00BF0B02 /* UrgentChatInvite.swift in Sources */,
+				CF1ECAC92875500100D999F8 /* InfoViewPlanet.swift in Sources */,
 				CF3802D728456C83005181E4 /* FG_Team.swift in Sources */,
 				CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */,
 				CF381A592829205800B3719E /* OurMission.swift in Sources */,
@@ -1258,6 +1265,7 @@
 				CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */,
 				CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */,
 				CFD12CD1281A754200AB2539 /* Step1_NotReadyTalk.swift in Sources */,
+				CF1ECAC728752C3700D999F8 /* SettingsTutorial.swift in Sources */,
 				CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */,
 				CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */,
 				62319AAD284A788000CA0359 /* FG_Video.swift in Sources */,
@@ -1499,7 +1507,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1529,7 +1537,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 18;
+				CURRENT_PROJECT_VERSION = 19;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

@@ -34,26 +34,27 @@ struct HurtFeelings3: View {
     
             VStack {
                 HStack {
-                    Text("How to tell your friend ...")
-                        .font(.system(size: 30))
+                    Text("Some simple examples ...")
+                        .font(.system(size: 22))
                         .foregroundColor(Color.white)
                     
                     Spacer()
-//                        .frame(height: 20)
+                       .frame(height: 20)
                 }
-                .padding(.horizontal)
+               .padding(.horizontal)
                 
                 HStack {
-                    Text("(Here are some examples on \nhow to approach your friend)")
-                        .font(.system(size: 15))
-                        .italic()
-                        .foregroundColor(Color.white)
-                    Spacer()
-//                        .frame(height: 20)
+//                    Text("(Here are some examples on \nhow to approach your friend)")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .foregroundColor(Color.white)
+//                    Spacer()
+////                        .frame(height: 20)
                 
                 }
                 .padding(.horizontal)
-                
+                Spacer()
+                   .frame(height: 20)
                 
                 Text("Hey, I would like to \ntalk to you about \nsomething you said")
                     .fontWeight(.thin)

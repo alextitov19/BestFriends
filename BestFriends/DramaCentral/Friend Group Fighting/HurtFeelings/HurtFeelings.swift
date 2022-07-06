@@ -25,19 +25,19 @@ struct HurtFeelings: View {
         
         ZStack {
            
-            ColorManager.purple4
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
-            
-            Image("girlwalking")
-//                .frame(width: 300, height: 20)
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-                  
-                      Spacer()
-                          .frame(height: 0)
-            
+//            
+//            Image("girlwalking")
+////                .frame(width: 300, height: 20)
+//                .resizable()
+//                .scaledToFill()
+//                .ignoresSafeArea()
+//                  
+//                      Spacer()
+//                          .frame(height: 0)
+//            
             VStack {
                 Text("Did your friend hurt")
                     .font(.system(size: 30))
@@ -46,19 +46,15 @@ struct HurtFeelings: View {
                     .multilineTextAlignment(.center)
                 
                 Text("Y O U R  F E E L I N G S?")
-                    .font(.system(size: 38))
+                    .font(.system(size: 35))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 150)
+                    .frame(height: 50)
                 
-                Text("Did they say or do \nsomething hurtful?")
-                    .font(.system(size: 30))
-                    .italic()
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
+            
                  
             VStack {  
                     NavigationLink(
@@ -75,7 +71,15 @@ struct HurtFeelings: View {
                       
                         
                         })
-                
+//                
+//                Spacer()
+//                    .frame(height: 50)
+//                
+//                Text("Did they say or do \nsomething hurtful?")
+//                    .font(.system(size: 30))
+//                    .italic()
+//                    .fontWeight(.light)
+//                    .foregroundColor(Color.white)
             
             }
               

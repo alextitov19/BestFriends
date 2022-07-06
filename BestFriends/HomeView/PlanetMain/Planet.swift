@@ -80,8 +80,21 @@ struct PlanetActionsView: View {
     var body: some View {
         
         VStack {
-           
+//            Image(systemName: "info.circle")
+//                .resizable()
+//                .frame(width: 27, height: 27)
+//                .scaledToFill()
+//                .foregroundColor(.white)
+//                .multilineTextAlignment(.center)
+//                .onTapGesture(perform: {
+////                            sessionManager.infoView(user: user, group: group)
+//                })
             HStack {
+                
+                
+                HStack {
+                  
+                    
                 VStack {
                     NavigationLink(destination: MyRoomPreload(user: user, friends: friends, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
                                    label: {
@@ -308,14 +321,4 @@ struct PlanetActionsView: View {
     }
     
 }
-//}
-
-//
-//
-//
-//
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        PlanetActionsView()
-// }
-//}
+}

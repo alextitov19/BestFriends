@@ -21,7 +21,7 @@ struct HurtFeelings2: View {
     var body: some View {
         ZStack {
             
-            ColorManager.purple4
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
 
@@ -47,37 +47,20 @@ struct HurtFeelings2: View {
                           .multilineTextAlignment(.center)
                             
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 15)
                      
             VStack {
                       
-                        Text("It may be a good idea \nto let your friend know \nhow you're feeling to \nclear things up.")
-                            .font(.system(size: 30))
+                        Text("It's ok to let them know")
+                            .font(.system(size: 23))
                             .italic()
-                            .foregroundColor(ColorManager.grey4)
-                            .fontWeight(.light)
+//                            .foregroundColor(ColorManager.grey4)
+                            .fontWeight(.thin)
                             .foregroundColor(Color.white)
                 
                 Spacer()
-                    .frame(height: 30)
-                
-                Text("Yes")
-                    .font(.system(size: 50))
-                    .italic()
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                
-                
-                Text("It's absolutely okay \nto talk about this")
-                    .font(.system(size: 30))
-                    .italic()
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                
-                          
-            VStack {
-                Spacer()
-                    .frame(height: 30)
+                    .frame(height: 50)
+           
                     
                     NavigationLink(
                         destination: HurtFeelings3(user: user, friends: friends, groups: groups),
@@ -92,8 +75,19 @@ struct HurtFeelings2: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                       
                         })
-
-            }
+                Spacer()
+                    .frame(height: 30)
+                
+                Text("Before it starts eating")
+                    .font(.system(size: 30))
+                     .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                Text("you up inside.")
+                    .font(.system(size: 30))
+                     .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                          
+         
               
         }
     }

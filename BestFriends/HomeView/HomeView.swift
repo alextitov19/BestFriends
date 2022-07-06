@@ -55,8 +55,18 @@ struct HomeView: View {
 
                 
                 VStack {
+                    Image(systemName: "info.circle")
+                        .resizable()
+                        .frame(width: 27, height: 27)
+                        .scaledToFill()
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.leading)
+                        .onTapGesture(perform: {
+//                            sessionManager.infoView(user: user, group: group)
+                        })
+                    Spacer()
+                        .frame(height: 25)
                     
-                
                     // Top 2 planets
                     HStack {
                         if planets.count > 0 && !focusPlanet {
@@ -201,11 +211,11 @@ struct HomeView: View {
                     Spacer()
                         .frame(height: 25)
                     
-                    Text("Received Push Notification about:")
-                        .font(.system(size: 15))
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                    
+//                    Text("Received Push Notification about:")
+//                        .font(.system(size: 15))
+//                        .foregroundColor(.white)
+//                        .fontWeight(.ultraLight)
+//                    
                     //                    MARK: Connect to Chat Now page
                     
                     if selectedPlanet != nil {

@@ -47,7 +47,7 @@ struct AtmosphereMain2: View {
                         
                         .foregroundColor(Color.white)
                     
-                    Text("distinctive stmosphere that surrounds you")
+                    Text("distinctive 'Atmosphere' that surrounds you")
                         .font(.system(size: 12))
                         .foregroundColor(ColorManager.grey1)
                       
@@ -57,7 +57,7 @@ struct AtmosphereMain2: View {
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("Update your Aura / Atmosphere")
+                    Text("Update ...")
                         .font(.system(size: 21))
                         .italic()
                         .fontWeight(.light)
