@@ -46,11 +46,11 @@ struct FG_VideoCall: View {
         
         ZStack {
 
-            NavigationLink(destination: EmptyView(), label: {
-                FG_VideoCallCircle (color: .pink, friendName: "")
-                })
-            .offset(x: showItems ? 120 : 0, y: showItems ? -565: 0)
-             
+//            NavigationLink(destination: EmptyView(), label: {
+//                FG_VideoCallCircle (color: .pink, friendName: "")
+//                })
+//            .offset(x: showItems ? 120 : 0, y: showItems ? -565: 0)
+//             
      
            
             NavigationLink(destination: FaceTimeCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), friends: []), label: {
@@ -63,11 +63,11 @@ struct FG_VideoCall: View {
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
-            NavigationLink(destination: IntroFriendGpFight(), label: {
-                FG_VideoCallCircle (color: .gray, friendName: "")
-                })
-            .offset(x: showItems ? 40 : 0, y: showItems ? -600: 0)
-             
+//            NavigationLink(destination: IntroFriendGpFight(), label: {
+//                FG_VideoCallCircle (color: .gray, friendName: "")
+//                })
+//            .offset(x: showItems ? 40 : 0, y: showItems ? -600: 0)
+//
             
 //            NavigationLink(destination: FG_Team(), label: {
 //                   FG_VideoCallCircle (color: .orange, friendName: "True \nFriends")

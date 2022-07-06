@@ -252,9 +252,9 @@ struct SettingsView: View {
                             .foregroundColor(.purple)
                             .italic()
                             .font(.system(size: 20))
-//
-//                        Spacer()
-//                            .frame(height: 10)
+
+                        Spacer()
+                            .frame(height: 200)
 //
 //                        Text("2) Create 'New' Chat Rooms")
 //                            .fontWeight(.light)
