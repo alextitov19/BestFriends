@@ -26,7 +26,7 @@ struct HurtFeelings3: View {
     
     var body: some View {
         ZStack {
-                        ColorManager.purple4
+                        ColorManager.grey4
                             .ignoresSafeArea()
                             .onAppear()
             
@@ -53,6 +53,7 @@ struct HurtFeelings3: View {
                 
                 }
                 .padding(.horizontal)
+                
                 Spacer()
                    .frame(height: 20)
                 
@@ -83,7 +84,7 @@ struct HurtFeelings3: View {
                     Text("ALERT Friend:")
                         .font(.system(size: 30))
                         .fontWeight(.regular)
-                        .foregroundColor(ColorManager.grey4)
+                        .foregroundColor(Color.white)
                     
                     Text("That you are sending \nthem a message in Chat")
                         .font(.system(size: 20))
@@ -98,7 +99,7 @@ struct HurtFeelings3: View {
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.gray)
                 
                 HStack {
                     if friends.count > 1 {
@@ -191,7 +192,9 @@ struct HurtFeelings3: View {
                                 print(sharedWith)
                             })
                         
-                    
+                        Spacer()
+                          .frame(height: 20)
+                        
                         Text("Please tap only once")
                             .font(.system(size: 20))
                             .fontWeight(.thin)

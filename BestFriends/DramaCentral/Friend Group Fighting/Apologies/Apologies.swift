@@ -64,7 +64,7 @@ struct Apologies: View {
                 
             VStack {
                     NavigationLink(
-                        destination: Apologies2(user: user, friends: friends, groups: groups),
+                        destination: Apologies3(user: user, friends: friends, groups: groups),
                         label: {
                             Text("Need to Apologise?")
                                 .fontWeight(.thin)

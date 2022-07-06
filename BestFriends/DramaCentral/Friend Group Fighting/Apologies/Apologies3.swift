@@ -28,13 +28,13 @@ struct Apologies3: View {
     
     var body: some View {
         ZStack {
-                        ColorManager.purple4
+            ColorManager.grey4
                             .ignoresSafeArea()
                             .onAppear()
             
-            Image("holding iphone")
-                .frame(width: 300, height: 20)
-            
+//            Image("holding iphone")
+//                .frame(width: 300, height: 20)
+//
 //            Image("purpleBackground")
 //                .resizable()
 //                .ignoresSafeArea()
@@ -46,27 +46,51 @@ struct Apologies3: View {
             //
             
             VStack {
+//
+//                Text("Some simple examples ...")
+//                    .font(.system(size: 25))
+//                    .foregroundColor(Color.white)
+//                HStack {
+////                    Text("How to tell your friend ...")
+////                        .font(.system(size: 30))
+////                        .foregroundColor(Color.white)
+////
+//                    Spacer()
+//                     .frame(height: 20)
+//                }
+//                .padding(.horizontal)
+//
+//                HStack {
+////                    Text("(Here are some Examples")
+////                        .font(.system(size: 15))
+////                        .italic()
+////                        .foregroundColor(Color.white)
+////                    Spacer()
+//////                        .frame(height: 20)
+////
+//                }
+//                .padding(.horizontal)
+                
                 HStack {
-                    Text("How to tell your friend ...")
-                        .font(.system(size: 30))
+                    Text("Some simple examples ...")
+                        .font(.system(size: 22))
                         .foregroundColor(Color.white)
                     
                     Spacer()
-//                        .frame(height: 20)
+                       .frame(height: 20)
                 }
-                .padding(.horizontal)
+               .padding(.horizontal)
                 
                 HStack {
-                    Text("(Here are some examples on \nhow to approach your friend)")
-                        .font(.system(size: 15))
-                        .italic()
-                        .foregroundColor(Color.white)
-                    Spacer()
-//                        .frame(height: 20)
+//                    Text("(Here are some examples on \nhow to approach your friend)")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .foregroundColor(Color.white)
+//                    Spacer()
+////                        .frame(height: 20)
                 
                 }
                 .padding(.horizontal)
-                
                 
                 Text("Hey, I would like to apologize \nfor what I said.")
                     .fontWeight(.thin)
@@ -103,22 +127,25 @@ struct Apologies3: View {
                     Text("Apology Alert")
                         .font(.system(size: 30))
                         .fontWeight(.regular)
-                        .foregroundColor(ColorManager.grey4)
+                       .foregroundColor(Color.white)
                     
                     Text("Let your friend \nknow you are sending \nan apology in Chat")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                     
-                    Spacer()
+                   
                 }
                 .padding(.horizontal)
+                
+                Spacer()
+                  .frame(height: 20)
                 
                 Text("(Please tap only once)")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.gray)
                 
                 HStack {
                     if friends.count > 1 {

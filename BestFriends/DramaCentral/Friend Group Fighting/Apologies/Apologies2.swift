@@ -19,7 +19,7 @@ struct Apologies2: View {
     var body: some View {
         ZStack {
             
-            ColorManager.purple4
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -75,7 +75,7 @@ struct Apologies2: View {
                       
                         Text("Holding yourself accountable \nis one of the best ways to be \na good friend and show them \nyou care.")
                             .font(.system(size: 25))
-                            .foregroundColor(ColorManager.grey4)
+//                            .foregroundColor(ColorManager.white)
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
                           
@@ -84,7 +84,7 @@ struct Apologies2: View {
                           
             VStack {
                 Spacer()
-                    .frame(height: 70)
+                    .frame(height: 30)
                     
                     NavigationLink(
                         destination: Apologies3(user: user, friends: friends, groups: groups),
