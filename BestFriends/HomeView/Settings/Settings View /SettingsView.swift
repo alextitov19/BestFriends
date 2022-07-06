@@ -49,10 +49,17 @@ struct SettingsView: View {
                     }
 //                    .padding(.trailing, 50)
                     
+                    Text("back")
+                        .foregroundColor(.gray)
+                        .font(.system(size: 20, weight: .regular))
+                        .padding(.trailing, 50)
+                    
+                        .padding(.trailing, 50)
+                        
+                    
                     Text("Settings")
                         .foregroundColor(.gray)
                         .font(.system(size: 30, weight: .bold))
-                    
                         .padding(.trailing, 50)
                     
                     
@@ -225,7 +232,7 @@ struct SettingsView: View {
                     Divider()
                  
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 50)
                     
                     
                     
@@ -233,67 +240,67 @@ struct SettingsView: View {
                         
                         
                         Text("Getting STARTED")
-                            .foregroundColor(.green)
+                            .foregroundColor(.gray)
                             .font(.system(size: 30, weight: .bold))
                            
                         
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("1) First, add up to 5 Friends")
+                        Text("See 'Info' icon on Homepage")
                             .fontWeight(.light)
                             .foregroundColor(.purple)
                             .italic()
                             .font(.system(size: 20))
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        Text("2) Create 'New' Chat Rooms")
-                            .fontWeight(.light)
-                            .foregroundColor(.purple)
-                            .italic()
-                            .font(.system(size: 20))
-                
-                            
-                        Text("- Tap friend's planet \n- Tap [Created 'New' Chat Room] \n- Name Chat Room - We send Push Notification")
-                            .fontWeight(.thin)
-                            .foregroundColor(.white)
-                            .italic()
-                            .font(.system(size: 15))
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                VStack {
-                    Text("3) Normal Chat")
-                        .fontWeight(.light)
-                        .foregroundColor(.purple)
-                        .italic()
-                        .font(.system(size: 20))
-                   
-                    Text("- Use [My Chat Rooms] pullup")
-                        .fontWeight(.thin)
-                        .foregroundColor(.white)
-                        .italic()
-                        .font(.system(size: 15))
-                    
-                    Spacer()
-                        .frame(height: 10)
-                        Text("4) Got 'Push Notification' from Friend")
-                            .fontWeight(.light)
-                            .foregroundColor(.purple)
-                            .italic()
-                            .font(.system(size: 19))
-                    
-                    Text("- Tap friend's planet \n - Select appropriate dropdown")
-                        .fontWeight(.thin)
-                        .foregroundColor(.white)
-                        .italic()
-                        .font(.system(size: 15))
-                        
-                }
-                
+//
+//                        Spacer()
+//                            .frame(height: 10)
+//
+//                        Text("2) Create 'New' Chat Rooms")
+//                            .fontWeight(.light)
+//                            .foregroundColor(.purple)
+//                            .italic()
+//                            .font(.system(size: 20))
+//
+//
+//                        Text("- Tap friend's planet \n- Tap [Created 'New' Chat Room] \n- Name Chat Room - We send Push Notification")
+//                            .fontWeight(.thin)
+//                            .foregroundColor(.white)
+//                            .italic()
+//                            .font(.system(size: 15))
+//
+//                        Spacer()
+//                            .frame(height: 10)
+//
+//                VStack {
+//                    Text("3) Normal Chat")
+//                        .fontWeight(.light)
+//                        .foregroundColor(.purple)
+//                        .italic()
+//                        .font(.system(size: 20))
+//
+//                    Text("- Use [My Chat Rooms] pullup")
+//                        .fontWeight(.thin)
+//                        .foregroundColor(.white)
+//                        .italic()
+//                        .font(.system(size: 15))
+//
+//                    Spacer()
+//                        .frame(height: 10)
+//                        Text("4) Got 'Push Notification' from Friend")
+//                            .fontWeight(.light)
+//                            .foregroundColor(.purple)
+//                            .italic()
+//                            .font(.system(size: 19))
+//
+//                    Text("- Tap friend's planet \n - Select appropriate dropdown")
+//                        .fontWeight(.thin)
+//                        .foregroundColor(.white)
+//                        .italic()
+//                        .font(.system(size: 15))
+//
+//                }
+//
                 
                 
             }

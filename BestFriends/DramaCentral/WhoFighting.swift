@@ -62,10 +62,10 @@ struct WhoFighting: View {
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -90: 0)
             
-            NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .gray, friendName: "We can \nFix this")
-            })
-            .offset(x: showItems ? 95 : 0, y: showItems ? -600: 0)
+//            NavigationLink(destination: EmptyView(), label: {
+//                WhoFightingCircle (color: .gray, friendName: "We can \nFix this")
+//            })
+//            .offset(x: showItems ? 95 : 0, y: showItems ? -600: 0)
             
 
         Image(systemName: "triangle.fill")
@@ -75,7 +75,7 @@ struct WhoFighting: View {
 //                    .blur(radius: 2)
 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                    .opacity(0.65)
+                    .opacity(0.85)
             
            VStack {
                

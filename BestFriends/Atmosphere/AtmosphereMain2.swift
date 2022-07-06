@@ -47,8 +47,8 @@ struct AtmosphereMain2: View {
                         
                         .foregroundColor(Color.white)
                     
-                    Text("distinctive 'Atmosphere' that surrounds you")
-                        .font(.system(size: 12))
+                    Text("distinctive 'Atmosphere' \nthat surrounds you")
+                        .font(.system(size: 20))
                         .foregroundColor(ColorManager.grey1)
                       
                     
@@ -303,15 +303,19 @@ struct AtmosphereMain2: View {
                     HStack {
                         if friends.count > 1 {
                             Button(action: {
-                                
+                                defaultMessageButtonTapped(defaultMessage: "SHARE")
+                                shareMood()
                             },
                                    label: {
                                 Text("ALL")
                                     .fontWeight(.bold)
                                     .frame(width: 100, height: 30)
+                                
+                                    .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
+                                
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 15))
-                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                     .cornerRadius(25)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -431,7 +435,7 @@ struct AtmosphereMain2: View {
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Atmosphere!", APNToken: f.APNToken )
+                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Mood!", APNToken: f.APNToken )
                             }
                         }
                         mood = -1
