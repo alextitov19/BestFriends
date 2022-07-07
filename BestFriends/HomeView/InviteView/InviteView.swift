@@ -30,9 +30,9 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 40)
                 
-                Text("Friend Requests")
+                Text("Send Friend Requests")
                     .foregroundColor(.gray)
-                    .font(.system(size: 30, weight: .bold))
+                    .font(.system(size: 25, weight: .bold))
               
                 Spacer()
                     .frame(height: 10)
@@ -71,44 +71,28 @@ struct InviteView: View {
                     
                     VStack {
                 
-                Text("* Setup Chat Rooms")
+                Text("Accept Friend Requests")
                     .foregroundColor(.gray)
-                    .font(.system(size: 30, weight: .bold))
+                    .font(.system(size: 25, weight: .bold))
                 
                         
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("Tap friend's 'planet' on homepage")
+                        Text("-After friend sends Friend Request")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
                             .font(.system(size: 17))
                     
                         
-                        Text("Tap [Create 'New' Chat Room]")
+                        Text("-Come to this page and tap [Accept]")
                             .fontWeight(.thin)
                             .foregroundColor(.white)
                             .italic()
                             .font(.system(size: 17))
                 
-                     
-                        
-                        Text("Name Chat Room")
-                            .fontWeight(.thin)
-                            .foregroundColor(.white)
-                            .italic()
-                            .font(.system(size: 17))
-                        
-                        Spacer()
-                            .frame(height: 7)
-                        
-                        Text("Push Notification Sent")
-                            .fontWeight(.thin)
-                            .foregroundColor(.white)
-                            .italic()
-                            .font(.system(size: 17))
-                        
+           
                     }
 
                 }

@@ -238,20 +238,20 @@ struct SettingsView: View {
                     
                     VStack {
                         
-                        
-                        Text("Getting STARTED")
-                            .foregroundColor(.gray)
-                            .font(.system(size: 30, weight: .bold))
-                           
-                        
-                        Spacer()
-                            .frame(height: 10)
-                        
-                        Text("See 'Info' icon on Homepage")
-                            .fontWeight(.light)
-                            .foregroundColor(.purple)
-                            .italic()
-                            .font(.system(size: 20))
+//                        
+//                        Text("Getting STARTED")
+//                            .foregroundColor(.gray)
+//                            .font(.system(size: 30, weight: .bold))
+//                           
+//                        
+//                        Spacer()
+//                            .frame(height: 10)
+//                        
+//                        Text("See 'Info' icon on Homepage")
+//                            .fontWeight(.light)
+//                            .foregroundColor(.purple)
+//                            .italic()
+//                            .font(.system(size: 20))
 
                         Spacer()
                             .frame(height: 200)
