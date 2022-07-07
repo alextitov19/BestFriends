@@ -56,13 +56,13 @@ struct BuiltByTeens2: View {
                 }
                 Text("(the 'Zen Masters' of social media)")
                
-                    .font(.system(size: 15))
+                    .font(.system(size: 20))
                     .italic()
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.white)
                 
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 35)
                 
                
                 Link(destination: URL(string: "https://socialtechlabs.com/about-bestfriends/")!) {
@@ -76,7 +76,7 @@ struct BuiltByTeens2: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 }
                 Spacer()
-                    .frame(height: 75)
+                    .frame(height: 55)
                 
                 NavigationLink(
                     destination: BetaTestVideo(),
@@ -90,6 +90,13 @@ struct BuiltByTeens2: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
+                
+                Text("(beta test New Features with our teens)")
+               
+                    .font(.system(size: 20))
+                    .italic()
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(Color.white)
                 
                 
             

@@ -151,9 +151,9 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.pmbc_green)
+                                .foregroundColor(ColorManager.grey1)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.85)
+                                .opacity(0.2)
                             
                             VStack {
 //                                Text("(1)")
@@ -238,14 +238,14 @@ struct PlanetActionsView: View {
                                 
 
                               
-                                Text("Look Inside")
-                                     .foregroundColor(.white)
-                                     .font(.system(size: 13, weight: .bold))
-                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                
-                                Text("BestFriends")
+                                Text("Built \nby")
                                      .foregroundColor(.white)
                                      .font(.system(size: 16, weight: .bold))
+                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                
+                                Text("Teens")
+                                     .foregroundColor(.white)
+                                     .font(.system(size: 17, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                  
                    
