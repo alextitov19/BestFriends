@@ -22,23 +22,19 @@ struct Step6_TextingFirst: View {
             
             VStack {
            
-                Text("Want to reach out 1st")
-                .font(.system(size: 30, weight: .thin))
+                Text("Reach out 1st via")
+                .font(.system(size: 40, weight: .ultraLight))
                 .foregroundColor(Color.white)
             
-                Text("via")
-                .font(.system(size: 30, weight: .thin))
-                .foregroundColor(Color.white)
-                
                 Text("T E X T")
-                    .font(.system(size: 80, weight: .thin))
+                    .font(.system(size: 60, weight: .ultraLight))
                     .foregroundColor(Color.blue)
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 20)
                 
                
-                Text("But, not sure what to say?")
-                .font(.system(size: 25, weight: .thin))
+                Text("Not sure what to say?")
+                .font(.system(size: 20, weight: .thin))
                 .italic()
                 .foregroundColor(Color.white)
                 .multilineTextAlignment(.center)
@@ -49,7 +45,7 @@ struct Step6_TextingFirst: View {
                 VStack {
                     Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
                         
-                        Text("Try One of Ours")
+                        Text("Here are some ideas")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -60,7 +56,27 @@ struct Step6_TextingFirst: View {
                     }
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 25)
+                    
+                   
+                    
+                    Text("Go ahead - type message in Chat")
+                    .font(.system(size: 20, weight: .thin))
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                    
+                    Text("Then Tap [NEXT]")
+                    .font(.system(size: 20, weight: .thin))
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                    
+                    Text("To send Push Notification")
+                    .font(.system(size: 20, weight: .thin))
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
                     
                     VStack {
                         Spacer()
@@ -72,10 +88,10 @@ struct Step6_TextingFirst: View {
                             NavigationLink(
                                 destination: DramaMainView(),
                                 label: {
-                                    Text("Let's go for it - who was fight with")
+                                    Text("NEXT: Who Was Fight With?")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 310, height: 70)
+                                        .frame(width: 310, height: 40)
                                         .font(.system(size: 25))
                                         .background(Color.gray)
                                         
@@ -86,10 +102,10 @@ struct Step6_TextingFirst: View {
                                 }
                             )}
                         
-//
-//                        Spacer()
-//                            .frame(height: 60)
-//
+
+                        Spacer()
+                            .frame(height: 150)
+
 //                        Text("While waiting for a reply")
 //                        .font(.system(size: 30, weight: .thin))
 //                        .foregroundColor(Color.white)

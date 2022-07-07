@@ -45,12 +45,12 @@ struct DramaMainView: View {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
-                                        .foregroundColor(ColorManager.purple7)
+                                        .foregroundColor(ColorManager.grey3)
 //                                        .foregroundColor(ColorManager: purple)
                                       
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
-           Text("(5) \nHug-it-Out")
+           Text("(final step) \nHug-it-Out")
                                         .foregroundColor(.white)
                                         .font(.system(size: 17, weight: .bold))
                                         
@@ -87,13 +87,13 @@ struct DramaMainView: View {
                                    ZStack {
                                         Circle()
                                             .frame(width: 115, height: 115)
-                                            .foregroundColor(ColorManager.grey3)
+                                            .foregroundColor(ColorManager.purple7)
                                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                                             .opacity(0.65)
                                         
-                                        Text("Who was \nFight \nWith?")
+                                        Text("(5) \nWho Fighting?")
                                             .foregroundColor(.white)
-                                            .font(.system(size: 17, weight: .bold))
+                                            .font(.system(size: 16, weight: .bold))
                                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     }
                                 })

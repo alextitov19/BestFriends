@@ -32,9 +32,9 @@ struct Step2_FightLandingView: View {
 //
             VStack{
                 
-                Text("Ok, you looking at Steps 1-4 \nand posted a message in Chat")
-                    .font(.system(size: 20))
-                    .italic()
+                Text("OK, you sent message. Nice job!")
+                    .font(.system(size: 30))
+                    
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
               
@@ -44,41 +44,50 @@ struct Step2_FightLandingView: View {
 
                 HStack {
                     
-                 
-                    Text("Who'd you")
-                        .font(.system(size: 47, weight: .ultraLight))
-                        .foregroundColor(Color.purple)
+//
+//                    Text("Who'd you")
+//                        .font(.system(size: 47, weight: .ultraLight))
+//                        .foregroundColor(Color.purple)
                     
                 }
                 
                 VStack {
                     
-                    Text("Fight With?")
-                        .font(.system(size: 50, weight: .bold))
-                        .fontWeight(.light)
-                        .foregroundColor(Color.purple)
-                        .kerning(10)
-                    
-                  
-                    
-                    
-                    Text("Send Push Notification")
+                    Text("Let's send a Push Notification")
                         .font(.system(size: 25, weight: .bold))
                         .italic()
                         .fontWeight(.ultraLight)
-                        .foregroundColor(Color.purple)
+                        .foregroundColor(Color.white)
                     
                     Text("'Inviting' them to read")
                         .font(.system(size: 25, weight: .bold))
                         .italic()
                         .fontWeight(.ultraLight)
-                        .foregroundColor(Color.purple)
+                        .foregroundColor(Color.white)
                      
-                    Text(" your message in Chat")
+                    Text("your message in Chat")
                         .font(.system(size: 25, weight: .bold))
                         .italic()
                         .fontWeight(.ultraLight)
+                        .foregroundColor(Color.white)
+                    
+                    Spacer()
+                        .frame(height: 30)
+
+                    
+                    Text("Who'd you")
+                        .font(.system(size: 47, weight: .ultraLight))
                         .foregroundColor(Color.purple)
+                    
+                    Text("Fight With?")
+                        .font(.system(size: 45, weight: .ultraLight))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(Color.purple)
+                        .kerning(10)
+                    
+                  
+                    
+                  
                     
                     
                     
