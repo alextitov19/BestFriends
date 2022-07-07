@@ -53,11 +53,11 @@ struct HideoutsView: View {
             })
             .offset(x: showItems ? -60 : 0, y: showItems ? -145: 0)
             
-            NavigationLink(destination: EmptyView(), label: {
-                WhoFightingCircle (color: .gray, friendName: "")
-            })
-            .offset(x: showItems ? -75 : 0, y: showItems ? -600: 0)
-            
+//            NavigationLink(destination: EmptyView(), label: {
+//                WhoFightingCircle (color: .gray, friendName: "")
+//            })
+//            .offset(x: showItems ? -75 : 0, y: showItems ? -600: 0)
+//
 
 Spacer()
                 .frame(height: 300)
@@ -67,7 +67,7 @@ Spacer()
                     .foregroundColor(ColorManager .grey2)
                     .frame(width: 175, height: 175)
 //                    .blur(radius: 2)
-                    .opacity(0.65)
+                    .opacity(0.90)
 
                     .shadow(color: .orange, radius: 65, x: 30, y: 50)
 
