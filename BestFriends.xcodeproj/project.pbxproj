@@ -121,7 +121,6 @@
 		CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */; };
 		CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E3280219B70003A714 /* RemoveFriend.swift */; };
 		CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E92803F3050003A714 /* BreathInView.swift */; };
-		CF47D5CF286126BB004B47A1 /* HomeViewPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47D5CE286126BB004B47A1 /* HomeViewPractice.swift */; };
 		CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
@@ -187,7 +186,6 @@
 		CFDB150C2859103C00155CEE /* sadTeen.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB150B2859103B00155CEE /* sadTeen.mp4 */; };
 		CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB150F2859415D00155CEE /* MasterFriendVault.swift */; };
 		CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */; };
-		D00D1CAA2862442300C870C6 /* HomeViewPractice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00D1CA92862442300C870C6 /* HomeViewPractice2.swift */; };
 		D0CC1A04283EE33500E7461F /* HorizonHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */; };
 		D0F5AB1B2840519700053F17 /* HorizonRocketColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */; };
 /* End PBXBuildFile section */
@@ -308,7 +306,6 @@
 		CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
 		CF3B65E3280219B70003A714 /* RemoveFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend.swift; sourceTree = "<group>"; };
 		CF3B65E92803F3050003A714 /* BreathInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInView.swift; sourceTree = "<group>"; };
-		CF47D5CE286126BB004B47A1 /* HomeViewPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPractice.swift; sourceTree = "<group>"; };
 		CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend2.swift; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
@@ -375,7 +372,6 @@
 		CFDB150B2859103B00155CEE /* sadTeen.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sadTeen.mp4; sourceTree = "<group>"; };
 		CFDB150F2859415D00155CEE /* MasterFriendVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterFriendVault.swift; sourceTree = "<group>"; };
 		CFE1946D28133CF700ED5718 /* BestFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendMessages.swift; sourceTree = "<group>"; };
-		D00D1CA92862442300C870C6 /* HomeViewPractice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPractice2.swift; sourceTree = "<group>"; };
 		D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonHomeView.swift; sourceTree = "<group>"; };
 		D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonRocketColorPicker.swift; sourceTree = "<group>"; };
 		D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -597,8 +593,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
-				D00D1CA92862442300C870C6 /* HomeViewPractice2.swift */,
-				CF47D5CE286126BB004B47A1 /* HomeViewPractice.swift */,
+				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				CF785690284EF6D700B31803 /* PlanetMain */,
@@ -824,7 +819,6 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
-				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 			);
 			path = PlanetMain;
 			sourceTree = "<group>";
@@ -1281,7 +1275,6 @@
 				CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */,
 				CFAB541B281E5F8300BBF502 /* YouGotThis.swift in Sources */,
 				CFBB9E84286789A400AEC994 /* MyRoomPreload.swift in Sources */,
-				CF47D5CF286126BB004B47A1 /* HomeViewPractice.swift in Sources */,
 				CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */,
 				CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */,
 				CFD0469C2837D9F400BF0B02 /* HideoutsView.swift in Sources */,
@@ -1290,7 +1283,6 @@
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
 				CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */,
 				CF3B65AF2800783F0003A714 /* TermsOfServicePrivacy.swift in Sources */,
-				D00D1CAA2862442300C870C6 /* HomeViewPractice2.swift in Sources */,
 				7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */,
 				7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */,
 				CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */,

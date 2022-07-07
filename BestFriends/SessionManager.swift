@@ -67,17 +67,23 @@ final class SessionManager: ObservableObject {
     func showFightTextUserIdeas() {
         appState = .fightTextUserIdeas
     }
+    
     func showParentsFighting() {
         appState = .parentsFighting
     }
+    
     func showFightWithFriend() {
         appState = .fightWithFriend
     }
-    func infoView(user: User ,group: Group)
-    {
-        appState = .infoView(user: user,group: group)
+    
+    func infoView(user: User ,group: Group) {
+        appState = .infoView(user: user, group: group)
     }
     
+//    func infoViewPlanet(user: User, group: Group) {
+//        appState = .infoViewPlanet(user: user, group: group)
+//    }
+//
     func reloadHome() {
         appState = .invite
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {

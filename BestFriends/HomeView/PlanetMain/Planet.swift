@@ -156,10 +156,10 @@ struct PlanetActionsView: View {
                                 .opacity(0.85)
                             
                             VStack {
-                                Text("(2)")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 22, weight: .regular))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                Text("(1)")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 22, weight: .regular))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 Text("Add My")
                                     .foregroundColor(.white)
                                     .font(.system(size: 25, weight: .bold))
@@ -177,40 +177,49 @@ struct PlanetActionsView: View {
                     Spacer()
                         .frame(height: 40)
                     
-                    NavigationLink(destination: SettingsView(user: user),
+//                    NavigationLink(destination: InfoViewPlanet(),
+//                                   label: {
+//
+//                    MARK: First setup
+                    
+                    NavigationLink(destination: InfoViewPlanet(),
                                    label: {
                         ZStack {
                             Circle()
                                 .frame(width: 120, height: 120)
-                                .foregroundColor(ColorManager.orange5)
+                                .foregroundColor(ColorManager.grey3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
-                               .opacity(0.65)
+                                .opacity(0.65)
                             
                             VStack {
                                 
-                                Text("(1)")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 22, weight: .regular))
+//                                Text("(1)")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 22, weight: .regular))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+                                Text("Getting")
+                                    .foregroundColor(.green)
+                                    .font(.system(size: 17, weight: .bold))
+//                                    .italic()
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                
-                                Text("Get")
-                                    .foregroundColor(.green)
-                                    .font(.system(size: 16, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                Text("Started")
+                                .foregroundColor(.green)
+                                .italic()
+                                .font(.system(size: 27, weight: .bold))
+                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                             
+//                                Text("Teens")
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 16, weight: .bold))
+//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 
-                                Text("STARTED")
-                                    .foregroundColor(.green)
-                                    .font(.system(size: 18, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                
-                                Text("& Settings")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 15, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
                             }
                         }
                     })
                     
+               
                     Spacer()
                         .frame(height: 40)
                     NavigationLink(destination: BuiltByTeens2(),
@@ -220,10 +229,10 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.grey3)
+                                .foregroundColor(ColorManager.grey1)
                                 .foregroundColor(.pink)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.65)
+                                .opacity(0.2)
                             
                             VStack {
                                 
@@ -280,37 +289,28 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
                     
-                    NavigationLink(destination: HorizonsPromoPage(),
+                  
+                    NavigationLink(destination: SettingsView(user: user),
                                    label: {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple5)
+                                .foregroundColor(ColorManager.grey1)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.65)
-                            
+                               .opacity(0.2)
+
                             VStack {
-                                
-                                
-                                Text("Horizons")
+
+
+                               Text("Settings")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                               
-                                Text("(Comming Fall)")
-                                .foregroundColor(.white)
-                                .italic()
-                                .font(.system(size: 9, weight: .bold))
-                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                             
-//                                Text("Teens")
-//                                .foregroundColor(.white)
-//                                .font(.system(size: 16, weight: .bold))
-//                                .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                
                             }
                         }
                     })
+                    
+                    
                     
                 }
                 

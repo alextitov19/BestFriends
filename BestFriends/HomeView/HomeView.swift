@@ -11,6 +11,8 @@ struct HomeView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+  
+
     @State private var homeData: HomeData?
     @State private var groups: [Group] = []
     @State private var planets: [Planet] = []
@@ -62,7 +64,7 @@ struct HomeView: View {
                         .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
                         .onTapGesture(perform: {
-//                            sessionManager.infoView(user: user, group: group)
+//                            $sessionManager.infoViewPlanet(user: user, group: group)
                         })
                     Spacer()
                         .frame(height: 25)
@@ -215,7 +217,7 @@ struct HomeView: View {
 //                        .font(.system(size: 15))
 //                        .foregroundColor(.white)
 //                        .fontWeight(.ultraLight)
-//                    
+//
                     //                    MARK: Connect to Chat Now page
                     
                     if selectedPlanet != nil {
