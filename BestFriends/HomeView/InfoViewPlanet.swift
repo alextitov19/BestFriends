@@ -40,11 +40,18 @@ struct InfoViewPlanet: View {
                 Spacer()
                 .frame(height: 5)
               
-                Text("Tap Center Planet")
+                Text("Tap Center Planet on Homepage")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
+                
+                Text("-Planet menu page show up")
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager.grey1)
                 
                 Spacer()
                 .frame(height: 15)
@@ -63,7 +70,7 @@ struct InfoViewPlanet: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
                 
-                Text("-Tap 'green' circle on Main Planet Menu pg \n-Add up to five friends \n-Their 'Planets' will appear on Homepage")
+                Text("-Tap [Add My Friends] circle \n-Add up to five friends \n-Their 'Planets' will appear on Homepage")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -108,7 +115,7 @@ struct InfoViewPlanet: View {
                .multilineTextAlignment(.center)
                .foregroundColor(Color.purple)
            
-           Text("-Use 'Pullup' to see existing Rooms \nTap [Remove Me] to be removed \nTap 'HOME' icon to go to homepage \nTap 'info icon' for Chat features")
+           Text("-Use 'Pullup' to see existing Rooms \nTap [Remove Me] to be removed \nTap 'HOME' icon to Exit")
                .font(.system(size: 15))
                .fontWeight(.light)
                .multilineTextAlignment(.center)
@@ -125,7 +132,7 @@ struct InfoViewPlanet: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
                 
-                Text("-Tap 'Lock' icon \nTo 'Un-Hide' enter 4 digit PIN \nReset PIN in 'Settings' \n")
+                Text("-Tap 'Lock' icon \nTo 'Un-Hide' enter 4 digit PIN")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -138,19 +145,19 @@ struct InfoViewPlanet: View {
                 
             VStack {
                 
-                Text("Planet page Circles")
-                    .font(.system(size: 20))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.purple)
-                
-                Text("-[My Room] having a bad day \n-[My Atmosphere] mood changed \n[Drama & Fights] drama in FriendGroups \n{Horizons] building Dreams together")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .foregroundColor(ColorManager.grey1)
-//                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.center)
-                
+//                Text("Planet page Circles")
+//                    .font(.system(size: 20))
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.purple)
+//                
+//                Text("-[My Room] having a bad day \n-[My Atmosphere] mood changed \n[Drama & Fights] drama in FriendGroups \n{Horizons] building Dreams together")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .foregroundColor(ColorManager.grey1)
+////                    .foregroundColor(.gray)
+//                    .multilineTextAlignment(.center)
+//                
                 Spacer()
                      .frame(height: 15)
                 
