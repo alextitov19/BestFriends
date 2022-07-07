@@ -135,10 +135,10 @@ struct PlanetActionsView: View {
                                 .opacity(0.65)
                             
                             VStack {
-                               Text("Drama \n n' \nFights")
+                               Text("Drama in \nFriendGroup")
                                     .foregroundColor(.white)
 //                                    .foregroundColor(.white)
-                                    .font(.system(size: 17, weight: .bold))
+                                    .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     
                             }
