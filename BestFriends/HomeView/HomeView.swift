@@ -57,7 +57,7 @@ struct HomeView: View {
 
                 
                 VStack {
-                    Image(systemName: "info.circle")
+                    Image(systemName: ".")
                         .resizable()
                         .frame(width: 27, height: 27)
                         .scaledToFill()
