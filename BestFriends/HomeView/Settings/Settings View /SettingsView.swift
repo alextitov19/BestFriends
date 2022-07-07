@@ -54,7 +54,7 @@ struct SettingsView: View {
                         .font(.system(size: 20, weight: .regular))
                         .padding(.trailing, 50)
                     
-                        .padding(.trailing, 50)
+                        .padding(.trailing, 30)
                         
                     
                     Text("Settings")
@@ -210,7 +210,7 @@ struct SettingsView: View {
                     
                     
                             HStack {
-                                Text("Sign Out")
+                                Text("Sign Out (tap arrow)")
                                     .font(.system(size: 20))
                                     .foregroundColor(.white)
                                 
