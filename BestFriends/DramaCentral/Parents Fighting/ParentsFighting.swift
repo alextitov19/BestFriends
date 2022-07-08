@@ -14,16 +14,16 @@ struct ParentsFighting: View {
     var body: some View {
         ZStack {
             
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+
             
-                        ColorManager.purple4
-                            .ignoresSafeArea()
-                            .onAppear()
-                        
+//                        ColorManager.purple4
+//                            .ignoresSafeArea()
+//                            .onAppear()
+//
              
          
             

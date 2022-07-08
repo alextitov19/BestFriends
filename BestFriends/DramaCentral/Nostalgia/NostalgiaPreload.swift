@@ -6,155 +6,159 @@
 //
 
 
+
 import Foundation
-
 import SwiftUI
-
 
 struct NostalgiaPreload: View {
     
-    @EnvironmentObject var sessionManager: SessionManager
-    
-    let user: User
-    let friends: [User]
-    let atmosphere: Atmosphere
-    let friendAtmospheres: [Atmosphere]
-
     var body: some View {
         ZStack {
             
-            ColorManager.grey4
-                .ignoresSafeArea()
-                .onAppear()
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+
             
-            
-            
-            
-            
+                        ColorManager.grey4
+                            .ignoresSafeArea()
+                            .onAppear()
+
+             
+         
             
             VStack {
-                Text("ADULTS")
-                    .font(.system(size: 45))
-                    .foregroundColor(.white)
+                
+                Text("Post-teen Fights")
+                    .font(.system(size: 50))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                
-                
-                
-                Text("D A Y S")
-                    .font(.system(size: 65))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.purple)
+             
+//                Text("N O S T A L S I A")
+//                    .font(.system(size: 45))
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.purple)
                 
                 Spacer()
-                    .frame(height: 10)
+                .frame(height: 15)
+                
+                Text("OK, you're not a teen anymore")
+                    .font(.system(size: 25))
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                Text("But, it still hurts")
+                    .font(.system(size: 25))
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
                 
                 
-                Text("just wanna be alone")
+                    
+                VStack {
+               
+                    Spacer()
+                    .frame(height: 50)
+                    
+                    Text("Head to Chat")
+                        .font(.system(size: 40))
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.purple)
+                        .kerning(10)
+           
+                    Spacer()
+                    .frame(height: 20)
+                    
+                Text("- Send a song you listened to together")
                     .font(.system(size: 20))
-                    .foregroundColor(.white)
-                
                     .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                  
+                    Spacer()
+                    .frame(height: 10)
+                }
+                
+            VStack {
+                Text("- let youself be vounrable, \nsay somethinbg nice ")
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+              
+                Spacer()
+                .frame(height: 10)
+                
+                Text("-Scroll through your photo gallery \nand find a couple of special pics")
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 
                 Spacer()
-                    .frame(height: 50)
+                .frame(height: 10)
+                
+                Text("")
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                
+               
+         
+                Spacer()
+                    .frame(height: 20)
+                
+                NavigationLink(
+                    destination: EmptyView(),
+                    label: {
+                        Text("CHAT")
+                            .fontWeight(.thin)
+                            .frame(width: 100, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                 
+                        
+                   
+                    
+                        
+                    })
+                
+                Spacer()
+                .frame(height: 15)
+                
+                Text("Even if you friend isn't on BestFriends - \nDo it on your Phone!")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.light)
+                    .foregroundColor(Color.purple)
+    
                 
                 
-                
-                NavigationLink(destination: HideoutsView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres), label: {
-                    Text("My Room")
-                        .fontWeight(.thin)
-                        .frame(width: 200, height: 40)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 30))
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                })
-                
-//                NavigationLink(
-//                    destination: EmptyView(),
-//                    label: {
-//                        Text("My Room")
-//                            .fontWeight(.thin)
-//                            .frame(width: 300, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 30))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                    })
-                VStack {
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    Text("- re-read nice messages from Chat")
-                        .font(.system(size: 19))
-                        .italic()
-                        .foregroundColor(ColorManager.grey2)
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("- listen to a song a friend sent")
-                        .font(.system(size: 19))
-                        .italic()
-                        .foregroundColor(ColorManager.grey2)
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("- its ok to be sad for a while")
-                        .font(.system(size: 19))
-                        .italic()
-                        .foregroundColor(ColorManager.grey2)
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                    
-                    VStack{
-                        
-//                        Spacer()
-//                            .frame(height: 30)
-//
-//                        Text("btw,")
-//                            .font(.system(size: 35))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .foregroundColor(ColorManager.grey2)
-////                            .foregroundColor(Color.white)
-//
-//
-//                        Text("Its ok to be sad for a while")
-//                            .font(.system(size: 30))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .foregroundColor(ColorManager.grey2)
-////                            .foregroundColor(Color.white)
-//
-                        
-                        
-                        Spacer()
-                            .frame(height: 30)
-                        
-                        
-                        
-                    
-                    }
-                    
-                    
-                }
             }
-            
         }
         
     }
-    
 }
+}
+
+
+
+
+
+
+
+
+struct NostalgiaPreload_Previews : PreviewProvider {
+    static var previews: some View {
+        NostalgiaPreload()
+    }
+}
+
 
