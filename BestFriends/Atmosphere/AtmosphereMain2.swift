@@ -23,18 +23,18 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple4
-                .ignoresSafeArea()
-                .onAppear()
-          
-//            Image("purpleBackground")
-//                .resizable()
+//            ColorManager.purple4
 //                .ignoresSafeArea()
-//                .scaledToFill()
+//                .onAppear()
 //
-//            AdPlayerView(name: "face")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
+            AdPlayerView(name: "blueRoad")
+                .ignoresSafeArea()
+                .blendMode(.screen)
         
             
             VStack {
@@ -269,11 +269,11 @@ struct AtmosphereMain2: View {
                             .frame(width:375, height: 50)
                             .cornerRadius(15)
                             .foregroundColor(Color.gray)
-                            .opacity(0.7)
+                            .opacity(0.9)
                         
                         TextField("You can type what's up here...", text: $summary)
                             .font(.system(size: 20))
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color.white)
                             .padding(.horizontal, 20)
                             .onReceive(Just(summary)) { _ in limitText(40) }
                         
