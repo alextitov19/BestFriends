@@ -167,7 +167,7 @@ struct PlanetActionsView: View {
 //                                    .foregroundColor(.white)
 //                                    .font(.system(size: 22, weight: .regular))
 //                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                Text("FriendGroup \nDRAMA")
+                                Text("DRAMA \nn' \nFIGHTS")
                                      .foregroundColor(.white)
  //                                    .foregroundColor(.white)
                                      .font(.system(size: 15, weight: .bold))

@@ -24,12 +24,7 @@ struct DramaMainView: View {
                     .ignoresSafeArea()
                     .scaledToFill()
                     .onAppear(perform: loadData)
-//
-//                AdPlayerView(name: "cloud")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//             
-              
+        
                
                 AdPlayerView(name: "dramaLights")
                     .ignoresSafeArea()
@@ -41,17 +36,20 @@ struct DramaMainView: View {
  
                     HStack {
                         VStack {
+                            
+                            
+//                  MARK: First Position
+                            
                             NavigationLink(destination: Step7_TimeToTalk(), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
                                         .foregroundColor(ColorManager.grey3)
-//                                        .foregroundColor(ColorManager: purple)
                                       
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
-           Text("(final step) \nHug-it-Out")
-                                        .foregroundColor(.white)
+                                Text("(final step) \nHug-it-Out")
+                                        .foregroundColor(.blue)
                                         .font(.system(size: 17, weight: .bold))
                                         
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -62,11 +60,14 @@ struct DramaMainView: View {
                             Spacer()
                                 .frame(height: 20)
                             
+                        
+        //          MARK: 2nd Position
+                            
                             NavigationLink(destination: Step6_TextingFirst(), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
-                                        .foregroundColor(ColorManager.purple5)
+                                        .foregroundColor(ColorManager.purple3)
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
                                    
@@ -79,15 +80,21 @@ struct DramaMainView: View {
                             
                         }
                         
+                        
+                        
+            //MARK: 3nd Position
                         VStack {
                             if user != nil {
                             
+                                
+                                
+                                
                                 NavigationLink(destination: Step2_FightLandingView(user: user!, friends: friends), label: {
                                     
                                    ZStack {
                                         Circle()
                                             .frame(width: 115, height: 115)
-                                            .foregroundColor(ColorManager.purple7)
+                                            .foregroundColor(ColorManager.purple3)
                                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                                             .opacity(0.65)
                                         
@@ -97,10 +104,16 @@ struct DramaMainView: View {
                                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     }
                                 })
+                                
+                                
                             }
                             
                             Spacer()
                                 .frame(height: 20)
+                      
+            //MARK: 4th Position
+                            
+                            
                             
                             NavigationLink(destination: Step1_NotReadyTalk(), label: {
                                 ZStack {
@@ -141,7 +154,8 @@ struct DramaMainView: View {
                         
                         VStack {
                             if user != nil {
-                            NavigationLink(destination: Step3_BreathInviteView(user: user!, friends: friends), label: {
+                           
+                                NavigationLink(destination: Step3_BreathInviteView(user: user!, friends: friends), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
@@ -150,7 +164,7 @@ struct DramaMainView: View {
                                         .opacity(0.65)
                                     
                                     Text("STEP (1) \nTake a\nBreath")
-                                        .foregroundColor(.white)
+                                        .foregroundColor(.green)
                                         .font(.system(size: 17, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 }
@@ -184,38 +198,21 @@ struct DramaMainView: View {
                     Spacer()
                         .frame(height: 10)
                     
-//                    VStack {
-//                        
-//                        NavigationLink(
-//                            destination: WhoFighting(),
-//                            label: {
-//                                Text("my Journal")
-//                                    .fontWeight(.thin)
-//                                    .foregroundColor(Color.white)
-//                                    .frame(width: 160, height: 40)
-//                                    .font(.system(size: 30))
-//                                
-//                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//                                
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                
-//                            }
-//                        )}
-                    
-                    Button(action: {
-                        sessionManager.showHome()
-                    }, label: {
-                        Text("HOME")
-                            .fontWeight(.thin)
-                            .frame(width: 100, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                    
+
+//
+//                    Button(action: {
+//                        sessionManager.showHome()
+//                    }, label: {
+//                        Text("HOME")
+//                            .fontWeight(.thin)
+//                            .frame(width: 100, height: 40)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 30))
+//                            .background(ColorManager.purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
+//
                     
                 }
             }

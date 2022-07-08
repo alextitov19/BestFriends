@@ -35,7 +35,7 @@ struct AtmosphereMain2: View {
             AdPlayerView(name: "blueRoad")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-        
+
             
             VStack {
                 
