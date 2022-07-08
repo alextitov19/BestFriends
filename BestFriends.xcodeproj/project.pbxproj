@@ -126,6 +126,7 @@
 		CF4A08DA2877E4A000ADA9DD /* PhotoPopPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */; };
 		CF4A08DC2878495F00ADA9DD /* Atmosphere.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08DB2878495F00ADA9DD /* Atmosphere.mp4 */; };
 		CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */; };
+		CF4A08E028784A4100ADA9DD /* atmosphere3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08DF28784A4100ADA9DD /* atmosphere3.mp4 */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -315,6 +316,7 @@
 		CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopPreload.swift; sourceTree = "<group>"; };
 		CF4A08DB2878495F00ADA9DD /* Atmosphere.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atmosphere.mp4; sourceTree = "<group>"; };
 		CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atmosphere2.mp4; sourceTree = "<group>"; };
+		CF4A08DF28784A4100ADA9DD /* atmosphere3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = atmosphere3.mp4; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
@@ -770,6 +772,7 @@
 			children = (
 				CF4A08DB2878495F00ADA9DD /* Atmosphere.mp4 */,
 				CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */,
+				CF4A08DF28784A4100ADA9DD /* atmosphere3.mp4 */,
 				CFD0ABD9285C4C720032CA3D /* BuiltByTeensVid.mp4 */,
 				CFD0ABDD285C4E7C0032CA3D /* BFVideo.mp4 */,
 				CF1ECABC286C2AE100D999F8 /* rockSit.mp4 */,
@@ -1157,6 +1160,7 @@
 				CFDB150C2859103C00155CEE /* sadTeen.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */,
+				CF4A08E028784A4100ADA9DD /* atmosphere3.mp4 in Resources */,
 				CFD0ABDE285C4E7C0032CA3D /* BFVideo.mp4 in Resources */,
 				7A2C2159280509DA009362CF /* cloud.mp4 in Resources */,
 				CFDB14FE2855ADE900155CEE /* FeetShowing.mp4 in Resources */,
