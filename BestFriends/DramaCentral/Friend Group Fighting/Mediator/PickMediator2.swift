@@ -46,30 +46,26 @@ struct PickMediator2: View {
             VStack {
                  
                 HStack {
-                    Text("Each of you will tell \nyour side to the story to \nthe mediator and from \nthere the mediator will \nhelp you work things out.")
-                        .font(.system(size: 20))
-                        .italic()
-                        .foregroundColor(Color.white)
-                    Spacer()
+                    
 //                        .frame(height: 20)
                 
                 }
-                .padding(.horizontal)
+//                .padding(.horizontal)
                 
                 
-                Text("You must agree on the \nfriend to be named, Mediator.")
+                Text("NOTE: You must agree on the \nfriend to be named, Mediator.")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 20))
-                    .background(ColorManager.purple3)
+                    .background(ColorManager.grey2)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
                 
                 
                 
-                Text("Note; this technique can \nbe used in Freind Groups and \nfor Huge Fight with BFF")
+                Text("NOTE: Yhis technique can \nbe used in Freind Groups and \nfor Huge Fight with BFF")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
