@@ -32,7 +32,7 @@ struct AtmosphereMain2: View {
                 .ignoresSafeArea()
                 .scaledToFill()
             
-            AdPlayerView(name: "blueRoad")
+            AdPlayerView(name: "Atmosphere2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
