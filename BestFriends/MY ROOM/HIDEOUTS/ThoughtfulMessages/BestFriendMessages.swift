@@ -128,7 +128,7 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("Re-live")
+                        Text("TAP to 're-live'")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.medium)
