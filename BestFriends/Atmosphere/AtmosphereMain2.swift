@@ -26,7 +26,7 @@ struct AtmosphereMain2: View {
 //            ColorManager.purple4
 //                .ignoresSafeArea()
 //                .onAppear()
-//
+            //
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()

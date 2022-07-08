@@ -14,11 +14,17 @@ struct ParentsFighting: View {
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//
             
+                        ColorManager.purple4
+                            .ignoresSafeArea()
+                            .onAppear()
+                        
+             
          
             
             VStack {
@@ -27,13 +33,13 @@ struct ParentsFighting: View {
                     .font(.system(size: 31))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.purple)
              
                 Text("U N S E T T E L I N G")
                     .font(.system(size: 45))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.purple)
                 
                 Text("this can be")
                     .font(.system(size: 31))
@@ -51,7 +57,7 @@ struct ParentsFighting: View {
                     Text("Questioning?")
                         .font(.system(size: 40))
                         .fontWeight(.thin)
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(Color.purple)
                         .kerning(10)
            
                     Spacer()

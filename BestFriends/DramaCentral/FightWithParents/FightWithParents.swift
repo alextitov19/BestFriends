@@ -16,11 +16,18 @@ struct FightWithParents: View {
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
             
+                        ColorManager.purple4
+                            .ignoresSafeArea()
+                            .onAppear()
+                        
+             
+            
+//            Image("purpleBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .ignoresSafeArea()
+//
 //
 //            AdPlayerView(name: "backgroundAnimation")
 //                .ignoresSafeArea()
@@ -33,7 +40,7 @@ struct FightWithParents: View {
                 Text("Fighting with")
                     .font(.system(size: 40))
                     .fontWeight(.ultraLight)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.purple)
                 
                 Spacer()
                     .frame(height: 10)
@@ -41,7 +48,7 @@ struct FightWithParents: View {
                 Text("P A R E N T S")
                     .font(.system(size: 60))
                     .fontWeight(.ultraLight)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.purple)
                 
                 Spacer()
                     .frame(height: 20)
@@ -75,7 +82,7 @@ struct FightWithParents: View {
                     NavigationLink(
                         destination: EmptyView(),
                         label: {
-                            Text("Comming July 2022")
+                            Text("Comming Fall 2022")
                                 .fontWeight(.thin)
                                 .frame(width: 310, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
