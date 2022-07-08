@@ -34,7 +34,7 @@ struct HurtFeelings3: View {
     
             VStack {
                 HStack {
-                    Text("Some simple examples ...")
+                    Text("Some simple examples you COULD use ...")
                         .font(.system(size: 22))
                         .foregroundColor(Color.white)
                     
@@ -194,13 +194,13 @@ struct HurtFeelings3: View {
                         
                         Spacer()
                           .frame(height: 20)
-                        
-                        Text("Please tap only once")
-                            .font(.system(size: 20))
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.white)
-                        
-                        
+//                        
+//                        Text("Please tap only once")
+//                            .font(.system(size: 20))
+//                            .fontWeight(.thin)
+//                            .foregroundColor(Color.white)
+//                        
+//                        
                         
                         
 //

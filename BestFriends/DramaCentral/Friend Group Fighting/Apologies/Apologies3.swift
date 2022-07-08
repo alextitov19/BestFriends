@@ -72,7 +72,7 @@ struct Apologies3: View {
 //                .padding(.horizontal)
                 
                 HStack {
-                    Text("Some simple examples ...")
+                    Text("Some simple examples you COULD use...")
                         .font(.system(size: 22))
                         .foregroundColor(Color.white)
                     

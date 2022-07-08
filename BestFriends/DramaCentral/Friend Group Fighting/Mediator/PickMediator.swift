@@ -36,7 +36,7 @@ struct PickMediator: View {
             VStack {
              
                 Text("Two friends in your \nFriend Group fighting?")
-                            .font(.system(size: 25))
+                            .font(.system(size: 35))
                             .foregroundColor(.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
@@ -46,22 +46,23 @@ struct PickMediator: View {
                 
                 Text("Making life unconfortable \nfor everyone.")
                             .font(.system(size: 25))
+                            .italic()
                             .foregroundColor(.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 60)
                 
                 Text("Try picking a third friend in the FG \nto be the go-between!")
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 15)
                 
             VStack {
                     NavigationLink(
@@ -77,14 +78,32 @@ struct PickMediator: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                       
                         })
-
-            }
+                
+                
+                Spacer()
+                    .frame(height: 30)
+                
+                Text("Each of you will tell \nyour side to the story to \nthe mediator and from \nthere the mediator will \nhelp you work things out.")
+                    .font(.system(size: 17))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                    .multilineTextAlignment(.center)
+                    
+                    
+                    
+//
+//                    .font(.system(size: 20))
+//                    .italic()
+//                    .foregroundColor(Color.white)
+////                Spacer()
+//            }
               
         }
     }
 }
 }
-    
+}
 
 
 //
