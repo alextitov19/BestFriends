@@ -59,11 +59,28 @@ struct Step2_ParentsFighting: View {
                     Spacer()
                         .frame(height: 70)
                     
-                    Text("Talk it out with others")
-                        .font(.system(size: 40))
+                    Text("Talk it out with others like you")
+                        .font(.system(size: 27))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.white)
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    Text("(Send us an email if you \nwould like us to consider \nbuilding a forum.)")
+                        .font(.system(size: 20))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
                   
+                    Spacer()
+                        .frame(height: 20)
+                    
+                    Text("Admin@SocialTechLabs.com")
+                        .font(.system(size: 20))
+//                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
                     
                     Spacer()
                         .frame(height: 25)
