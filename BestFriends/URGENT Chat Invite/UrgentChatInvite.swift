@@ -103,7 +103,7 @@ struct UrgentChatInvite: View {
 
                     RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in an hour", APNToken: owner.APNToken )
                 }, label: {
-                    Text("give me am hour")
+                    Text("give me a hour")
                         .fontWeight(.thin)
                         .frame(width: 240, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
