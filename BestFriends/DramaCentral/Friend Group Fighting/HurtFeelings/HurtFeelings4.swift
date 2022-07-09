@@ -1,69 +1,62 @@
 //
-//  HurtFeelings3.swift
+//  HurtFeelings4.swift
 //  BestFriends
 //
-//  Created by Social Tech on 6/14/22.
+//  Created by Social Tech on 7/9/22.
 //
+
 
 import Foundation
 import Combine
 import SwiftUI
+import AVKit
 
 
-
-struct HurtFeelings3: View {
+struct HurtFeelings4: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
     let friends: [User]
     let groups: [Group]
-  
     
-    @State private var summary = ""
-    @State private var sharedWith: [String] = []
+    @State private var customMessage = "Custom Message"
     @State private var colorChangeTap: String = ""
+    @State private var noteTapped = false
+    @State private var sharedWith: [String] = []
+    
     
     var body: some View {
         ZStack {
-                        ColorManager.grey4
+                        ColorManager.purple4
                             .ignoresSafeArea()
                             .onAppear()
             
-          
-    
+            
             VStack {
-                HStack {
-                    Text("Some simple examples you COULD use ...")
-                        .font(.system(size: 22))
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                       .frame(height: 20)
-                }
-               .padding(.horizontal)
-                
-                HStack {
-//                    Text("(Here are some examples on \nhow to approach your friend)")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .foregroundColor(Color.white)
-//                    Spacer()
+//
+//                HStack {
+//
 ////                        .frame(height: 20)
+//
+//                }
+////                .padding(.horizontal)
+//
                 
-                }
-                .padding(.horizontal)
+                Text("Some EXAMPLES of what to \nsay in a Chat message")
+                    .font(.system(size: 25))
+                    .fontWeight(.regular)
+                    .foregroundColor(Color .white)
                 
                 Spacer()
-                   .frame(height: 20)
+                    .frame(height: 15)
                 
                 Text("Hey, I would like to \ntalk to you about \nsomething you said")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 25))
+                    .foregroundColor(Color .blue)
+                    .font(.system(size: 20))
                     .background(ColorManager.grey2)
-//                    .background(ColorManager.purple3)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
@@ -73,40 +66,53 @@ struct HurtFeelings3: View {
                 Text("Hi, I wanted to let you \nknow that what you \nsaid hurt my feelings")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 25))
+                    .foregroundColor(Color .blue)
+                    .font(.system(size: 20))
                     .background(ColorManager.grey2)
-//                    .background(ColorManager.purple3)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 
-                 
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 HStack {
-                    Text("ALERT Friend:")
-                        .font(.system(size: 30))
+                    Text("ALERT \nFriend")
+                        .font(.system(size: 27))
                         .fontWeight(.regular)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager.grey4)
                     
                     Text("That you are sending \nthem a message in Chat")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                     
-//                    Spacer()
+                    Spacer()
                 }
                 .padding(.horizontal)
+                .padding(.leading)
+                
+                Spacer()
+                    .frame(height: 15)
                 
                 Text("(Please tap only once)")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(Color.black)
                 
                 HStack {
+                    
+//                MARK: The [All] button is not activated. When tap nothing comes up in the bottom output screen
                     if friends.count > 1 {
                         Button(action: {
-
+                            
                         },
                                label: {
                             Text("ALL")
@@ -169,22 +175,11 @@ struct HurtFeelings3: View {
                             })
                     }
                     
-//                NOTE: below code pulled in from AtmosphereMain2 page (what the button to change color when tapped. But on Atmosphere there is a [Share] button that must be tapped to send push Notification. On this page the push note goes out when button is tapped)
-//                    if friends.count > 4 {
-//                        RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
-//                            .onTapGesture(perform: {
-//                                if sharedWith.contains(friends[4].id) {
-//                                    sharedWith = sharedWith.filter { $0 != friends[4].id }
-//                                } else {
-//                                    sharedWith.append(friends[4].id)
-//                                }
-//                                print(sharedWith)
-//                            })
-                    
-                    
-                    
                     if friends.count > 4 {
                         RectView(user: user, friend: friends[4])
+                                 
+//                                 , color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
+                           
                             .onTapGesture(perform: {
                                 if sharedWith.contains(friends[4].id) {
                                     sharedWith = sharedWith.filter { $0 != friends[4].id }
@@ -194,56 +189,68 @@ struct HurtFeelings3: View {
                                 print(sharedWith)
                             })
                         
-                        Spacer()
-                          .frame(height: 20)
-//                        
-//                        Text("Please tap only once")
-//                            .font(.system(size: 20))
-//                            .fontWeight(.thin)
-//                            .foregroundColor(Color.white)
-//                        
-//                        
+
+                        
+//                    MARK: Trying to get the the button color to change when tapped
+//                        if friends.count > 4 {
+//                            RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
+//                                .onTapGesture(perform: {
+//                                    if sharedWith.contains(friends[4].id) {
+//                                        sharedWith = sharedWith.filter { $0 != friends[4].id }
+//                                    } else {
+//                                        sharedWith.append(friends[4].id)
+//                                    }
+//                                    print(sharedWith)
+//                                })
+//
                         
                         
-//
-//
-//                        Button(action: {
-//                            defaultMessageButtonTapped(defaultMessage: "SHARE")
-////                            shareMood()
-//                        },
-//                               label: {
-//                            Text("SHARE")
-//                                .fontWeight(.thin)
-//                                .frame(width: 100, height: 40)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 30))
-//
-//                                .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
-//
-//    //                            .background(ColorManager.purple3)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
-//                        })
-//
-//
                         
                     }
                 }
+                    
+                VStack {
+                    Spacer()
+                        .frame(height: 20)
+                
+                Button(action: {
+                    defaultMessageButtonTapped(defaultMessage: "SHARE")
+//                            shareMood()
+                },
+                       label: {
+                    Text("SHARE")
+                        .fontWeight(.thin)
+                        .frame(width: 100, height: 40)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 30))
+                        
+                        .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
+                        
+//                            .background(ColorManager.purple3)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                 
+                })
+              
+                }
+                
+                
             }
+
+
         }
     }
     
-//    func limitText(_ upper: Int) {
-//        if customMessage.count > upper {
-//            customMessage = String(customMessage.prefix(upper))
-//        }
-//    }
-//
+    func limitText(_ upper: Int) {
+        if customMessage.count > upper {
+            customMessage = String(customMessage.prefix(upper))
+        }
+    }
+    
     func sendMessage() {
 //        if customMessage.count == 0 { return }
-//        
+//
 //        let arr = [user.id, friend.id]
 //        for g in groups {
 //            if g.members.containsSameElements(as: arr) {
@@ -251,11 +258,11 @@ struct HurtFeelings3: View {
 //                RestApi.instance.createChatMessage(groupId: g.id, body: customMessage).then({ response in
 //                    sessionManager.showChat(user: user, group: g)
 //                })
-//                
+//
 //                return
 //            }
 //        }
-//        
+//
 //        // Create new group
 //        RestApi.instance.createGroup(name: "\(user.firstName), \(friend.firstName)", members: arr).then { responseGroup in
 //            // Send chat message to this group
@@ -271,7 +278,7 @@ struct HurtFeelings3: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) You hurt my feelings", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Request you as a Mediator", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
@@ -293,5 +300,8 @@ struct HurtFeelings3: View {
         self.colorChangeTap = defaultMessage
     }
 }
+
+
+
 
 

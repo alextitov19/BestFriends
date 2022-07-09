@@ -31,17 +31,6 @@ struct PickMediator2: View {
                             .ignoresSafeArea()
                             .onAppear()
             
-          
-            
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//
-            //            AdPlayerView(name: "face")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //
             
             VStack {
                  
@@ -53,10 +42,10 @@ struct PickMediator2: View {
 //                .padding(.horizontal)
                 
                 
-                Text("NOTE: You must agree on the \nfriend to be named, Mediator.")
+                Text("NOTE: You must both agree on the \nfriend to be named, Mediator.")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .foregroundColor(Color .blue)
                     .font(.system(size: 20))
                     .background(ColorManager.grey2)
                     .cornerRadius(15)
@@ -68,7 +57,7 @@ struct PickMediator2: View {
                 Text("NOTE: This technique can \nbe used in Freind Groups and \nfor Huge Fight with BFF")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .foregroundColor(Color .blue)
                     .font(.system(size: 20))
                     .background(ColorManager.grey2)
                     .cornerRadius(15)
@@ -85,19 +74,23 @@ struct PickMediator2: View {
                 
                 
                 HStack {
-                    Text("Mediator Request")
-                        .font(.system(size: 30))
+                    Text("Mediator \nRequest")
+                        .font(.system(size: 27))
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey4)
                     
-                    Text("Asking you to be a mediator")
-                        .font(.system(size: 25))
+                    Text("Asking friend to \nbe a mediator")
+                        .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                     
                     Spacer()
                 }
                 .padding(.horizontal)
+                .padding(.leading)
+                
+                Spacer()
+                    .frame(height: 15)
                 
                 Text("(Please tap only once)")
                     .font(.system(size: 15))
@@ -187,7 +180,9 @@ struct PickMediator2: View {
                                 print(sharedWith)
                             })
                         
-//
+
+                        
+//                    MARK: Trying to get the the button color to change when tapped
 //                        if friends.count > 4 {
 //                            RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
 //                                .onTapGesture(perform: {
@@ -203,14 +198,11 @@ struct PickMediator2: View {
                         
                         
                     }
-                        
-                        
-                       
-                        
-                        
-                    }
+                }
                     
                 VStack {
+                    Spacer()
+                        .frame(height: 20)
                 
                 Button(action: {
                     defaultMessageButtonTapped(defaultMessage: "SHARE")
@@ -303,15 +295,4 @@ struct PickMediator2: View {
 
 
 
-
-
-
-
-//
-//
-//struct HurtFeelings3_Previews : PreviewProvider {
-//    static var previews: some View {
-//HurtFeelings3()
-//    }
-//}
 
