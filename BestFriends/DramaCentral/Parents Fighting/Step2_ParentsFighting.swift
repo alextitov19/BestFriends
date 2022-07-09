@@ -22,7 +22,7 @@ struct Step2_ParentsFighting: View {
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
-            
+        
 //
 //            AdPlayerView(name: "backgroundAnimation")
 //                .ignoresSafeArea()

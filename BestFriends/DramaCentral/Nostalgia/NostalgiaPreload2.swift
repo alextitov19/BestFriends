@@ -31,13 +31,18 @@ struct NostalgiaPreload2: View {
 //                        ColorManager.purple4
 //                            .ignoresSafeArea()
 //                            .onAppear()
+//            
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
             
-            Image("purpleBackground")
+            Image("blueBackground")
                 .resizable()
-                .ignoresSafeArea()
                 .scaledToFill()
+                .ignoresSafeArea()
             
-            AdPlayerView(name: "Atmosphere2")
+            AdPlayerView(name: "Planet6")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
@@ -47,34 +52,29 @@ struct NostalgiaPreload2: View {
                 Text("Post-teen Fights")
                     .font(.system(size: 35))
                     .fontWeight(.regular)
-                    .foregroundColor(Color .white)
+                    .foregroundColor(ColorManager.grey3)
   
-                Text("OK, you're not a teen anymore, \nbut it still hurts!")
+                Text("OK, you're not a teen anymore,")
+                    .font(.system(size: 17))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(ColorManager.grey2)
+                
+                Text("but it still hurts!")
                     .font(.system(size: 20))
                     .italic()
                     .fontWeight(.thin)
-                    .foregroundColor(Color .white)
+                    .foregroundColor(ColorManager.grey2)
                 
-//                Text("OK, you're not a teen anymore, \nbut it still hurts!")
-//                    .fontWeight(.thin)
-//                    .frame(width: 310, height: 100)
-//                    .foregroundColor(Color .blue)
-//                    .font(.system(size: 20))
-//                    .background(ColorManager.grey2)
-//                    .cornerRadius(15)
-//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-                
-                
-                Text("- Send a song you listened to together \n- let youself be vulnerable, \nsay something nice in Chat \n-Scroll through your gallery \nand send a picture that always make you smile!")
+                Text("- Send a song you listened    to together \n- let youself be vulnerable, \nsay something nice in Chat \n-Scroll through your gallery \nand send a picture that always made the both of you - Smile!")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 200)
-                    .foregroundColor(Color .blue)
+                    .foregroundColor(ColorManager.grey2)
                     .font(.system(size: 20))
-                    .background(ColorManager.grey2)
+                    .background(ColorManager.grey4)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                
+                    .opacity(0.65)
                 
                 
                 
@@ -87,11 +87,11 @@ struct NostalgiaPreload2: View {
                 
                 HStack {
                     Text("ALERT \nFriend")
-                        .font(.system(size: 27))
+                        .font(.system(size: 22))
                         .fontWeight(.regular)
-                        .foregroundColor(ColorManager.grey4)
+                        .foregroundColor(ColorManager.grey1)
                     
-                    Text("That you are sending \nthem a message in Chat")
+                    Text("That you are sending \nthem a something in Chat")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
@@ -108,7 +108,7 @@ struct NostalgiaPreload2: View {
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.white)
                 
                 HStack {
                     
@@ -238,14 +238,19 @@ struct NostalgiaPreload2: View {
                     Spacer()
                     .frame(height: 15)
                     
-                    Text("*Even if you friend isn't on BestFriends - \nDo it on your Phone!")
-                        .font(.system(size: 15))
+                    Text("*Even if you friend isn't on BestFriends")
+                        .font(.system(size: 17))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(Color.blue)
+                    Text("Just do it on your Phone!")
+                        .font(.system(size: 17))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(Color.blue)
                     
                     Spacer()
-                    .frame(height: 100)
+                    .frame(height: 75)
                 }
                 
                 

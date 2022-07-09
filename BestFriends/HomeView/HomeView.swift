@@ -48,7 +48,7 @@ struct HomeView: View {
                     }
                 
                 // Stars animation...
-                AdPlayerView(name: "backgroundAnimation")
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
 //                    .scaledToFill()
                     .blendMode(.screen)
