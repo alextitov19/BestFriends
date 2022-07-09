@@ -1,5 +1,5 @@
 //
-//  HurtFeelings4.swift
+//  NostalgiaPreload2.swift
 //  BestFriends
 //
 //  Created by Social Tech on 7/9/22.
@@ -12,7 +12,7 @@ import SwiftUI
 import AVKit
 
 
-struct HurtFeelings4: View {
+struct NostalgiaPreload2: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -28,36 +28,47 @@ struct HurtFeelings4: View {
     
     var body: some View {
         ZStack {
-                        ColorManager.purple4
-                            .ignoresSafeArea()
-                            .onAppear()
+//                        ColorManager.purple4
+//                            .ignoresSafeArea()
+//                            .onAppear()
             
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
+            AdPlayerView(name: "Atmosphere2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+
             
             VStack {
            
-                Text("Some EXAMPLES of what to \nsay in a Chat message")
-                    .font(.system(size: 25))
+                Text("Post-teen Fights")
+                    .font(.system(size: 35))
                     .fontWeight(.regular)
                     .foregroundColor(Color .white)
-                
-                Spacer()
-                    .frame(height: 15)
-                
-                Text("Hey, I would like to \ntalk to you about \nsomething you said")
-                    .fontWeight(.thin)
-                    .frame(width: 310, height: 100)
-                    .foregroundColor(Color .blue)
+  
+                Text("OK, you're not a teen anymore, \nbut it still hurts!")
                     .font(.system(size: 20))
-                    .background(ColorManager.grey2)
-                    .cornerRadius(15)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                
-                
-                
-                
-                Text("Hi, I wanted to let you \nknow that what you \nsaid hurt my feelings")
+                    .italic()
                     .fontWeight(.thin)
-                    .frame(width: 310, height: 100)
+                    .foregroundColor(Color .white)
+                
+//                Text("OK, you're not a teen anymore, \nbut it still hurts!")
+//                    .fontWeight(.thin)
+//                    .frame(width: 310, height: 100)
+//                    .foregroundColor(Color .blue)
+//                    .font(.system(size: 20))
+//                    .background(ColorManager.grey2)
+//                    .cornerRadius(15)
+//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+                
+                
+                Text("- Send a song you listened to together \n- let youself be vulnerable, \nsay something nice in Chat \n-Scroll through your gallery \nand send a picture that always make you smile!")
+                    .fontWeight(.thin)
+                    .frame(width: 310, height: 200)
                     .foregroundColor(Color .blue)
                     .font(.system(size: 20))
                     .background(ColorManager.grey2)
@@ -224,7 +235,17 @@ struct HurtFeelings4: View {
                     
                  
                 })
-              
+                    Spacer()
+                    .frame(height: 15)
+                    
+                    Text("*Even if you friend isn't on BestFriends - \nDo it on your Phone!")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(Color.blue)
+                    
+                    Spacer()
+                    .frame(height: 100)
                 }
                 
                 

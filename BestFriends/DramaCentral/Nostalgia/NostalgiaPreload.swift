@@ -83,7 +83,7 @@ struct NostalgiaPreload: View {
                 }
                 
             VStack {
-                Text("- let youself be vounrable, \nsay something nice ")
+                Text("- let youself be vounrable, \nsay something nice")
                     .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
