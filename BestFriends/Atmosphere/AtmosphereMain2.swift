@@ -57,8 +57,8 @@ struct AtmosphereMain2: View {
                 .padding(.horizontal)
                 
                 HStack {
-                    Text("Update ...")
-                        .font(.system(size: 21))
+                    Text("See friend's moods (atmosphere) instantly on homepage - letting you respond accordingly")
+                        .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(ColorManager.grey1)
