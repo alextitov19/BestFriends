@@ -67,12 +67,38 @@ struct Step7_TimeToTalk: View {
                            
                     }
                 }
-              
-                
+            VStack {
+            Text("Now it's time to")
+                .font(.system(size: 40))
+                .fontWeight(.thin)
+                .foregroundColor(Color.black)
+           
+            Text("meet in person")
+                .font(.system(size: 40))
+                .fontWeight(.thin)
+                .foregroundColor(Color.black)
+           
+            Spacer()
+               .frame(height: 20)
+            
+            Text("Just send a message")
+                .font(.system(size: 30))
+                .fontWeight(.thin)
+                .foregroundColor(Color.black)
+           
+             
+             Text("in Chat to set a time")
+                 .font(.system(size: 30))
+                 .fontWeight(.thin)
+                 .foregroundColor(Color.black)
+            
+           Spacer()
+               .frame(height: 15)
+        
                 Text("You got this, ok!")
                     .font(.system(size: 40))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.black)
+                    .fontWeight(.regular)
+                    .foregroundColor(Color.purple)
                 
                Spacer()
                    .frame(height: 15)
@@ -80,17 +106,17 @@ struct Step7_TimeToTalk: View {
                 VStack {
                     
 //                   MARK: Set navigation back to HomeView
-                        Text("Set time to MEET")
-                            .fontWeight(.thin)
-                            .frame(width: 225, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 27))
-                            .background(ColorManager.pmbc_green)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        Text("Set time to MEET")
+//                            .fontWeight(.thin)
+//                            .frame(width: 225, height: 50)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 27))
+//                            .background(ColorManager.pmbc_green)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     }
                     
-                    
+            }
 
                     Spacer()
                         .frame(height: 80)
