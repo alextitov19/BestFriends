@@ -83,7 +83,7 @@ struct NostalgiaPreload: View {
                 }
                 
             VStack {
-                Text("- let youself be vounrable, \nsay somethinbg nice ")
+                Text("- let youself be vounrable, \nsay something nice ")
                     .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -112,32 +112,29 @@ struct NostalgiaPreload: View {
                 Spacer()
                     .frame(height: 20)
                 
-                NavigationLink(
-                    destination: EmptyView(),
-                    label: {
-                        Text("CHAT")
-                            .fontWeight(.thin)
-                            .frame(width: 100, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                 
-                        
-                   
-                    
-                        
-                    })
+//                NavigationLink(
+//                    destination: EmptyView(),
+//                    label: {
+//                        Text("CHAT")
+//                            .fontWeight(.thin)
+//                            .frame(width: 100, height: 40)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 30))
+//                            .background(ColorManager.purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//                    })
                 
                 Spacer()
                 .frame(height: 15)
                 
-                Text("Even if you friend isn't on BestFriends - \nDo it on your Phone!")
+                Text("*Even if you friend isn't on BestFriends - \nDo it on your Phone!")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.light)
-                    .foregroundColor(Color.purple)
+                    .foregroundColor(Color.blue)
     
                 
                 
