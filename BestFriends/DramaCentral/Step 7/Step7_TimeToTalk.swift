@@ -92,17 +92,7 @@ struct Step7_TimeToTalk: View {
                  .fontWeight(.thin)
                  .foregroundColor(Color.black)
             
-           Spacer()
-               .frame(height: 15)
         
-                Text("You got this, ok!")
-                    .font(.system(size: 40))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color.purple)
-                
-               Spacer()
-                   .frame(height: 15)
-            
                 VStack {
                     
 //                   MARK: Set navigation back to HomeView

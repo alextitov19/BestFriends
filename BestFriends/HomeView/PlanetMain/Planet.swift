@@ -219,7 +219,7 @@ struct PlanetActionsView: View {
 //                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
                                 Text("Getting")
-                                    .foregroundColor(ColorManager.purple3)
+                                    .foregroundColor(ColorManager.purple1)
                                     .font(.system(size: 17, weight: .bold))
 //                                    .italic()
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -227,7 +227,7 @@ struct PlanetActionsView: View {
                                 
                                 
                                 Text("Started")
-                                    .foregroundColor(ColorManager.purple3)
+                                    .foregroundColor(ColorManager.purple1)
                                 .italic()
                                 .font(.system(size: 27, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)

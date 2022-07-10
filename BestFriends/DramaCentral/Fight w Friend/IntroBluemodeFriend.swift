@@ -14,16 +14,16 @@ struct IntroBluemodeFriend: View {
     
     var body: some View {
         ZStack {
-//            ColorManager.grey4
-//                  .ignoresSafeArea()
+            ColorManager.grey4
+                 .ignoresSafeArea()
 
-            ColorManager.grey3
-                  .ignoresSafeArea()
-          
-            // Stars animation...
-            AdPlayerView(name: "backgroundAnimation")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+//            ColorManager.grey3
+//                  .ignoresSafeArea()
+//
+//            // Stars animation...
+//            AdPlayerView(name: "backgroundAnimation")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
             VStack {
       
  
