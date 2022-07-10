@@ -31,7 +31,7 @@ struct NostalgiaPreload2: View {
 //                        ColorManager.purple4
 //                            .ignoresSafeArea()
 //                            .onAppear()
-//            
+//
 //            Image("purpleBackground")
 //                .resizable()
 //                .ignoresSafeArea()
@@ -66,7 +66,7 @@ struct NostalgiaPreload2: View {
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey2)
                 
-                Text("- Send a song you listened    to together \n- let youself be vulnerable, \nsay something nice in Chat \n-Scroll through your gallery \nand send a picture that always made the both of you - Smile!")
+                Text("- Send a song you both like \n- Let youself be vulnerable, \nsay something nice in Chat \n-Send a picture that always made the both of you - Smile! \nIt's ok to remember the good times")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 200)
                     .foregroundColor(ColorManager.grey2)
