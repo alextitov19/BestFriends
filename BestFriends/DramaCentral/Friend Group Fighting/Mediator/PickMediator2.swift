@@ -106,8 +106,9 @@ struct PickMediator2: View {
                             
                         },
                                label: {
-                            Text("ALL")
-                                .fontWeight(.bold)
+                            Text("select >")
+//                                .fontWeight(.bold)
+                                .fontWeight(.thin)
                                 .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 15))
