@@ -19,25 +19,26 @@ struct Step2_FightLandingView: View {
         
         ZStack {
             
-            ColorManager.grey4
+//            ColorManager.grey4
+//                  .ignoresSafeArea()
+
+            ColorManager.grey2
                   .ignoresSafeArea()
-                    
-//
-//                }
-//
-//            // Stars animation...
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//
+          
+            // Stars animation...
+            AdPlayerView(name: "backgroundAnimation")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             VStack{
                 
-                Text("OK, you sent message. Nice job!")
+                Text("OK, you sent message")
                     .font(.system(size: 30))
-                    
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
-              
+                Text("Nice!")
+                    .font(.system(size: 30))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
                 
                 Spacer()
                     .frame(height: 30)
@@ -75,11 +76,11 @@ struct Step2_FightLandingView: View {
                         .frame(height: 30)
 
                     
-                    Text("Who'd you")
+                    Text("Who's it")
                         .font(.system(size: 47, weight: .ultraLight))
                         .foregroundColor(Color.purple)
                     
-                    Text("Fight With?")
+                    Text("going to?")
                         .font(.system(size: 45, weight: .ultraLight))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.purple)
@@ -156,6 +157,8 @@ struct Step2_FightLandingView: View {
                                 }
                                 
                             )}
+                        Spacer()
+                            .frame(height: 100)
 //
 //                        Spacer ()
 //                            .frame(height: 30)

@@ -66,9 +66,9 @@ struct NostalgiaPreload2: View {
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey2)
                 
-                Text("- Send a song you both like \n- Let youself be vulnerable, \nsay something nice in Chat \n-Send a picture that always made the both of you - Smile! \nIt's ok to remember the good times")
+                Text("- Send a song you both like \n- Let youself be vulnerable, send a heart-flet message in Chat \n- Send a picture that always made \nthe both of you - Smile! \n- It's ok to remember the good times")
                     .fontWeight(.thin)
-                    .frame(width: 310, height: 200)
+                    .frame(width: 320, height: 200)
                     .foregroundColor(ColorManager.grey2)
                     .font(.system(size: 20))
                     .background(ColorManager.grey4)

@@ -14,24 +14,21 @@ struct IntroBluemodeFriend: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey4
+//            ColorManager.grey4
+//                  .ignoresSafeArea()
+
+            ColorManager.grey3
                   .ignoresSafeArea()
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-            //
-            //
-            //                AdPlayerView(name: "backgroundAnimation")
-            //                    .ignoresSafeArea()
-            //                    .blendMode(.screen)
-            //                    .offset(y: -250)
-            //
+          
+            // Stars animation...
+            AdPlayerView(name: "backgroundAnimation")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             VStack {
       
  
 
-             Text("Not sure what to do after")
+             Text("Not sure what to do after a")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                 
@@ -40,20 +37,20 @@ struct IntroBluemodeFriend: View {
             
                  
                 Text("HUGE FIGHT")
-                    .font(.system(size: 70))
-                    .foregroundColor(.blue)
-                    .fontWeight(.ultraLight)
+                    .font(.system(size: 60))
+                    .foregroundColor(.purple)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Text("with a BFF")
                     .font(.system(size: 50))
-                    .foregroundColor(.blue)
-                    .fontWeight(.ultraLight)
+                    .foregroundColor(.purple)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height: 5)
                 
-                Text("(you're not alone)")
+                Text("(it's ok, most TEENS don't)")
                        .font(.system(size: 17))
                        .foregroundColor(.white)
                        .italic()
@@ -89,9 +86,9 @@ struct IntroBluemodeFriend: View {
                       
                 Spacer()
                     .frame(height: 45)
-                Text("To get past ...")
+                Text("Getting you past ...")
                        .font(.system(size: 30))
-                       .foregroundColor(.green)
+                       .foregroundColor(.purple)
                        .italic()
                        .fontWeight(.light)
                        .multilineTextAlignment(.center)
@@ -103,7 +100,7 @@ struct IntroBluemodeFriend: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                 Spacer()
-                    .frame(height: 45)
+                    .frame(height: 125)
                 
 //                NavigationLink(
 //                    destination: DramaMainView(),

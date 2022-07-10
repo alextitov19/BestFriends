@@ -15,11 +15,17 @@ struct TextingNote: View {
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
-                .resizable()
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+            ColorManager.grey2
+                  .ignoresSafeArea()
+          
+            // Stars animation...
+            AdPlayerView(name: "backgroundAnimation")
                 .ignoresSafeArea()
-                .scaledToFill()
-            
+                .blendMode(.screen)
            
             VStack {
                 Text("You got ")

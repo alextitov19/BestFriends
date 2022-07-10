@@ -44,7 +44,7 @@ struct DramaMainView: View {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
-                                        .foregroundColor(ColorManager.grey3)
+                                        .foregroundColor(ColorManager.purple2)
                                       
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
@@ -98,7 +98,7 @@ struct DramaMainView: View {
                                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                                             .opacity(0.65)
                                         
-                                        Text("(5) \nWho Fighting?")
+                                        Text("(5) \nWho was Fight \nwith?")
                                             .foregroundColor(.white)
                                             .font(.system(size: 16, weight: .bold))
                                             .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -143,7 +143,7 @@ struct DramaMainView: View {
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
                                    
-                                    Text("(3) \nWhy \nFighting?")
+                                    Text("(3) \nLooking \nInside")
                                         .foregroundColor(.white)
                                         .font(.system(size: 17, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
