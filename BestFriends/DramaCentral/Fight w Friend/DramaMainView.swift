@@ -71,7 +71,7 @@ struct DramaMainView: View {
                                         .shadow(color: .black, radius: 2, x: 0, y: 2)
                                         .opacity(0.65)
                                    
-                                    Text("(4) \nReaching Out \n1st - Anxiety")
+                                    Text("(4) \nReach Out \n1st via Text")
                                         .foregroundColor(.white)
                                         .font(.system(size: 17, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -98,7 +98,7 @@ struct DramaMainView: View {
                                             .shadow(color: .black, radius: 2, x: 0, y: 2)
                                             .opacity(0.65)
                                         
-                                        Text("(5) \nWho was Fight \nwith?")
+                                        Text("(5) \nSending Push \n Notification")
                                             .foregroundColor(.white)
                                             .font(.system(size: 16, weight: .bold))
                                             .shadow(color: .black, radius: 1, x: 0, y: 1)

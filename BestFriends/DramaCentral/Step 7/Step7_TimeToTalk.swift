@@ -68,30 +68,30 @@ struct Step7_TimeToTalk: View {
                     }
                 }
             VStack {
-            Text("Now it's time to")
+            Text("When you're Ready")
                 .font(.system(size: 40))
                 .fontWeight(.thin)
                 .foregroundColor(Color.black)
            
-            Text("meet in person")
+            Text("set a time to meet")
                 .font(.system(size: 40))
                 .fontWeight(.thin)
                 .foregroundColor(Color.black)
            
-            Spacer()
-               .frame(height: 20)
-            
-            Text("Just send a message")
-                .font(.system(size: 30))
-                .fontWeight(.thin)
-                .foregroundColor(Color.black)
-           
-             
-             Text("in Chat to set a time")
-                 .font(.system(size: 30))
-                 .fontWeight(.thin)
-                 .foregroundColor(Color.black)
-            
+//            Spacer()
+//               .frame(height: 20)
+//
+//            Text("Just send a message")
+//                .font(.system(size: 30))
+//                .fontWeight(.thin)
+//                .foregroundColor(Color.black)
+//
+//
+//             Text("in Chat to set a time")
+//                 .font(.system(size: 30))
+//                 .fontWeight(.thin)
+//                 .foregroundColor(Color.black)
+//
         
                 VStack {
                     

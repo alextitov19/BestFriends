@@ -278,7 +278,7 @@ struct Apologies4: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Request you as a Mediator", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BestFriends - Apologie", body: "\(user.firstName) Sent you an Apologie in Chat", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))

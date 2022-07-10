@@ -190,7 +190,7 @@ struct Step2_FightLandingView: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BeatFriends - HUGE Fight", body: "\(user.firstName) invited you to work this out!", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BeatFriends - Fight", body: "\(user.firstName) Invited you to try to fix this!", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))

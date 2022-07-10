@@ -91,7 +91,7 @@ struct NostalgiaPreload2: View {
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey1)
                     
-                    Text("That you are sending \nthem a something in Chat")
+                    Text("You're sending something in Chat")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
@@ -296,7 +296,7 @@ struct NostalgiaPreload2: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Request you as a Mediator", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BestFriends - Nostalgia", body: "\(user.firstName) Sent you something in Chat", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
