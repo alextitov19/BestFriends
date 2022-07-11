@@ -12,6 +12,9 @@ import SwiftUI
 
 struct TextingNote: View {
     
+    let user: User
+    let friends: [User]
+    
     var body: some View {
         ZStack {
             
@@ -80,11 +83,11 @@ struct TextingNote: View {
     }
 }
 
-
-struct TextingNote_Previews : PreviewProvider {
-    static var previews: some View {
-        TextingNote()
-    }
-}
+//
+//struct TextingNote_Previews : PreviewProvider {
+//    static var previews: some View {
+//        TextingNote()
+//    }
+//}
 
 

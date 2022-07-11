@@ -34,50 +34,27 @@ struct Step2_FightLandingView: View {
           
             VStack{
                 
-                Text("OK, you sent your friend")
-                    .font(.system(size: 30))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.purple)
-                Text("a message in Chat")
-                    .font(.system(size: 30))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.purple)
-                
-                Spacer()
-                    .frame(height: 30)
+               
 
                 HStack {
                 }
                 
                 VStack {
                     
-                    Text("To make sure they got it")
-                        .font(.system(size: 25, weight: .bold))
-                        .italic()
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.white)
-                    
-                    Text("let's send a Push Notification")
-                        .font(.system(size: 25, weight: .bold))
-                        .italic()
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.white)
+                
  
                     
                     Spacer()
                         .frame(height: 20)
 
                     
-                    Text("Who's it going to?")
-                        .font(.system(size: 30, weight: .ultraLight))
+                    Text("Who's Notification")
+                        .font(.system(size: 35, weight: .ultraLight))
                         .foregroundColor(Color.purple)
-                    
-//                    Text("going to?")
-//                        .font(.system(size: 30, weight: .ultraLight))
-//                        .fontWeight(.ultraLight)
-//                        .foregroundColor(Color.purple)
-//                        .kerning(10)
-                    
+                    Text("going to?")
+                        .font(.system(size: 35, weight: .ultraLight))
+                        .foregroundColor(Color.purple)
+
       
                     VStack {
                         
@@ -133,8 +110,37 @@ struct Step2_FightLandingView: View {
                         VStack {
 
                             Spacer()
-                                .frame(height: 7)
+                                .frame(height: 15)
                             
+                         
+                            
+                            Text("(Now you know they got your message)")
+                                .font(.system(size: 15, weight: .bold))
+                                .italic()
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(Color.black)
+                           
+                            NavigationLink(
+                                destination: TryThis(),
+                                label: {
+                                    Text("Calm your 'Waiting Anxiety'")
+                                        .fontWeight(.thin)
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 310, height: 40)
+                                        .font(.system(size: 27))
+                                        .background(ColorManager.purple3)
+                                        
+        //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+        //
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                  }
+                         
+                              )}
+                          
+                        Spacer()
+                            .frame(height: 35)
+                        
                             Text("(When you're ready try to set a time to talk)")
                                 .font(.system(size: 15))
                                 .italic()
@@ -144,8 +150,7 @@ struct Step2_FightLandingView: View {
 //                            MARK: New [Next] button going go HugitOut
                             
                             
-                            Spacer()
-                                .frame(height: 20)
+                      
                             
                             NavigationLink(
                                 destination: Step7_TimeToTalk(),
@@ -161,11 +166,11 @@ struct Step2_FightLandingView: View {
         //
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                  
-                                  
-                                }
+                                  }
                          
-                            )}
+                              )}
+                        
+                        
                             
 //                            MARK: old [Invite] buttom going nowhere - was supposed to be a [Submit] button that changed color when tapped. But, having difficult time getting it to work - so changed it out to the above
                             
@@ -189,7 +194,7 @@ struct Step2_FightLandingView: View {
 //                            )}
                        
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 150)
 
                     }
                     
@@ -220,7 +225,7 @@ struct Step2_FightLandingView: View {
             })
         }
     }
-}
+
 
 
 //

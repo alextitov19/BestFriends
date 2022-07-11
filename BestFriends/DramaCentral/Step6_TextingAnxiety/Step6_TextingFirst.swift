@@ -34,7 +34,7 @@ struct Step6_TextingFirst: View {
                 .foregroundColor(Color.purple)
             
                 Text("T E X T")
-                    .font(.system(size: 60, weight: .ultraLight))
+                    .font(.system(size: 50, weight: .ultraLight))
                     .foregroundColor(Color.purple)
                 Spacer()
                     .frame(height: 20)
@@ -47,7 +47,7 @@ struct Step6_TextingFirst: View {
                 .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 15)
                 
                 VStack {
                     Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
@@ -67,22 +67,19 @@ struct Step6_TextingFirst: View {
                     
                    
                     
-                    Text("Go ahead - type message in Chat")
+                    Text("Now that you typed your \nmessage in Chat let's make \nsure they get it.")
                     .font(.system(size: 20, weight: .thin))
                     .italic()
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
+
+                    Spacer()
+                        .frame(height: 20)
                     
-                    Text("Then Tap [NEXT]")
+                    Text("Send Push Notification in Step 5")
                     .font(.system(size: 20, weight: .thin))
                     .italic()
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
-                    
-                    Text("To send Push Notification")
-                    .font(.system(size: 20, weight: .thin))
-                    .italic()
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.purple)
                     .multilineTextAlignment(.center)
                     
                     VStack {
