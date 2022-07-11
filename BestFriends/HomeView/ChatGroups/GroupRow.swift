@@ -72,6 +72,7 @@ struct GroupRow: View {
         }
         
         // Get member names
+        namestring = ""
         for id in group.members {
             RestApi.instance.getUserById(id: id).then { result in
                 namestring.append(result.firstName + " " + String(result.lastName.first!) + ", ")
