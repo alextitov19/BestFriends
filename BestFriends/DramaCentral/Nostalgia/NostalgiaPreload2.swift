@@ -60,7 +60,7 @@ struct NostalgiaPreload2: View {
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey2)
                 
-                Text("but it still hurts!")
+                Text("but it Fights still hurt!")
                     .font(.system(size: 20))
                     .italic()
                     .fontWeight(.thin)
