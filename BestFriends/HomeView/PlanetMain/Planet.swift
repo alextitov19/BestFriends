@@ -127,7 +127,7 @@ struct PlanetActionsView: View {
                         .frame(height: 40)
                     
 
-                    NavigationLink(destination: InviteView(), label: {
+                    NavigationLink(destination: InviteView(user: user), label: {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)

@@ -10,7 +10,6 @@ enum AppState {
     case home
     case signUp
     case login
-    case invite
     case chat(user: User, group: Group)
     case masterFriendVault
     
@@ -46,10 +45,6 @@ final class SessionManager: ObservableObject {
         }
     }
     
-    func showInvite() {
-        appState = .invite
-    }
-    
     func showChat(user: User, group: Group) {
         appState = .chat(user: user, group: group)
     }
@@ -81,7 +76,7 @@ final class SessionManager: ObservableObject {
 //    }
 //
     func reloadHome() {
-        appState = .invite
+        appState = .login
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
             self.appState = .home
         }
