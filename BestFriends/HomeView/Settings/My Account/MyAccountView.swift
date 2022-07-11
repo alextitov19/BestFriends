@@ -96,26 +96,26 @@ struct MyAccountView: View {
                     })
                 
                 VStack {
-                    Divider()
-                    
-                    NavigationLink(
-                        destination: RemoveFriend2(user: user, removeFriend: RemoveFriend()),
-                        label: {
-                            HStack {
-                                Text("Remove Friend")
-                                    .font(.system(size: 20))
-                                    .foregroundColor(.purple)
-                                    .offset(x: 25)
-                                
-                                Spacer()
-                                
-                                Image("arrowRight")
-                                    .resizable()                 .frame(width: 25, height: 25)
-                                    .foregroundColor(.gray)
-                                    .scaledToFit()
-                                //                                 .colorInvert()
-                            }
-                        })
+//                    Divider()
+//                    
+//                    NavigationLink(
+//                        destination: RemoveFriend2(user: user, removeFriend: RemoveFriend()),
+//                        label: {
+//                            HStack {
+//                                Text("Remove Friend")
+//                                    .font(.system(size: 20))
+//                                    .foregroundColor(.purple)
+//                                    .offset(x: 25)
+//                                
+//                                Spacer()
+//                                
+//                                Image("arrowRight")
+//                                    .resizable()                 .frame(width: 25, height: 25)
+//                                    .foregroundColor(.gray)
+//                                    .scaledToFit()
+//                                //                                 .colorInvert()
+//                            }
+//                        })
                     
                     Divider()
                     

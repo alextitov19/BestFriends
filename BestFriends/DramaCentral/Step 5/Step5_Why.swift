@@ -96,7 +96,7 @@ struct Step5_Why: View {
                             Text("Next_Step 4")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
-                                .frame(width: 310, height: 40)
+                                .frame(width: 200, height: 40)
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
                                 

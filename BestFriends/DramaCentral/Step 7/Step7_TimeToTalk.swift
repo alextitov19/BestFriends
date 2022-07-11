@@ -11,7 +11,7 @@ import AVKit
 
 struct Step7_TimeToTalk: View {
     
-//    @EnvironmentObject var sessionManager: SessionManager
+    @EnvironmentObject var sessionManager: SessionManager
 
     var body: some View {
         ZStack {
@@ -78,39 +78,57 @@ struct Step7_TimeToTalk: View {
                 .fontWeight(.thin)
                 .foregroundColor(Color.black)
            
-//            Spacer()
-//               .frame(height: 20)
-//
-//            Text("Just send a message")
-//                .font(.system(size: 30))
-//                .fontWeight(.thin)
-//                .foregroundColor(Color.black)
-//
-//
-//             Text("in Chat to set a time")
-//                 .font(.system(size: 30))
-//                 .fontWeight(.thin)
-//                 .foregroundColor(Color.black)
-//
+
+
         
                 VStack {
                     
 //                   MARK: Set navigation back to HomeView
-//                        Text("Set time to MEET")
-//                            .fontWeight(.thin)
-//                            .frame(width: 225, height: 50)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 27))
-//                            .background(ColorManager.pmbc_green)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    }
                     
-            }
+                    Button(action: {
+                        sessionManager.showLogin()
+                    },
+                        label: {
+                            Text("Home")
+                                .fontWeight(.thin)
+                                .frame(width: 200, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+                    
+
+                }
+          }
 
                     Spacer()
                         .frame(height: 80)
                    
+
+                    }
+                }
+            }
+        }
+    
+
+
+
+
+
+
+
+
+
+
+struct Step7_TimeToTalk_Previews : PreviewProvider {
+    static var previews: some View {
+        Step7_TimeToTalk()
+    }
+}
+
+
 //                    VStack {
 //
 //                        Button(action: {
@@ -142,26 +160,3 @@ struct Step7_TimeToTalk: View {
 //                                    .background(ColorManager.purple3)
 //                                    .cornerRadius(15)
 //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    }
-                }
-            }
-        }
-    
-
-
-
-
-
-
-
-
-
-
-struct Step7_TimeToTalk_Previews : PreviewProvider {
-    static var previews: some View {
-        Step7_TimeToTalk()
-    }
-}
-
-
-
