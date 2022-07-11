@@ -11,6 +11,9 @@ import Foundation
 import SwiftUI
 
 struct Step5_Why: View {
+    
+    let user: User
+    let friends: [User]
         
     var body: some View {
         ZStack {
@@ -88,7 +91,7 @@ struct Step5_Why: View {
                         .frame(height:30)
                   
                     NavigationLink(
-                        destination: Step6_TextingFirst(),
+                        destination: Step6_TextingFirst(user: user, friends: friends),
                         label: {
                             Text("Next_Step 4")
                                 .fontWeight(.thin)
@@ -115,12 +118,12 @@ struct Step5_Why: View {
     }
 
 }
-
-struct Why_Previews : PreviewProvider {
-    static var previews: some View {
-        Step5_Why()
-    }
-}
+//
+//struct Why_Previews : PreviewProvider {
+//    static var previews: some View {
+//        Step5_Why()
+//    }
+//}
 
 
 

@@ -11,6 +11,9 @@ import SwiftUI
 
 struct Step4_NuclearOption: View {
     
+    let user: User
+    let friends: [User]
+    
     var body: some View {
         
         ZStack {
@@ -112,7 +115,7 @@ struct Step4_NuclearOption: View {
                     
                     
                      NavigationLink(
-                        destination: YouGotThis(),
+                        destination: YouGotThis(user: user, friends: friends),
                         label: {
                             Text("Another Thought")
                                 .fontWeight(.thin)
@@ -138,12 +141,12 @@ struct Step4_NuclearOption: View {
 
 
 
-
-
-struct NuclearOption_Previews : PreviewProvider {
-    static var previews: some View {
-        Step4_NuclearOption()
-    }
-}
-
+//
+//
+//struct NuclearOption_Previews : PreviewProvider {
+//    static var previews: some View {
+//        Step4_NuclearOption()
+//    }
+//}
+//
 

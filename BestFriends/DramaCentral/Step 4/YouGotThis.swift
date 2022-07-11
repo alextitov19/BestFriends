@@ -10,6 +10,9 @@ import SwiftUI
 
 struct YouGotThis: View {
     
+    let user: User
+    let friends: [User]
+    
     var body: some View {
         ZStack {
             
@@ -93,7 +96,7 @@ struct YouGotThis: View {
                     .frame(height: 30)
                 
                 NavigationLink(
-                    destination: Step5_Why(),
+                    destination: Step5_Why(user: user, friends: friends),
                     label: {
                         Text("Next_Step 3")
                             .fontWeight(.thin)
@@ -119,12 +122,12 @@ struct YouGotThis: View {
 
 
 
-
-
-struct YouGotThis_Previews : PreviewProvider {
-    static var previews: some View {
-        YouGotThis()
-    }
-}
+//
+//
+//struct YouGotThis_Previews : PreviewProvider {
+//    static var previews: some View {
+//        YouGotThis()
+//    }
+//}
 
 

@@ -65,7 +65,7 @@ struct TextingNote: View {
               
                 
                 NavigationLink(
-                    destination: Step6_TextingFirst(),
+                    destination: Step6_TextingFirst(user: user, friends: friends),
                     label: {
                         Text("NEXT")
                             .fontWeight(.thin)

@@ -12,6 +12,9 @@ import SwiftUI
 
 struct IntroBluemodeFriend: View {
     
+    let user: User
+    let friends: [User]
+    
     var body: some View {
         ZStack {
             ColorManager.grey4
@@ -61,7 +64,7 @@ struct IntroBluemodeFriend: View {
                         .frame(height: 70)
                     
                     NavigationLink(
-                        destination: DramaMainView(),
+                        destination: DramaMainView(user: user, friends: friends),
                         label: {
                             Text("Let us HELP you")
                                 .fontWeight(.thin)
@@ -125,11 +128,11 @@ struct IntroBluemodeFriend: View {
     }
 }
 
-
-struct IntroBluemodeFriend_Previews : PreviewProvider {
-    static var previews: some View {
-        IntroBluemodeFriend()
-    }
-}
+//
+//struct IntroBluemodeFriend_Previews : PreviewProvider {
+//    static var previews: some View {
+//        IntroBluemodeFriend()
+//    }
+//}
 
 

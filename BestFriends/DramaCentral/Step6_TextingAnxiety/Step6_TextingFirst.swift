@@ -10,6 +10,9 @@ import SwiftUI
 
 
 struct Step6_TextingFirst: View {
+    
+    let user: User
+    let friends: [User]
         
     var body: some View {
         ZStack {
@@ -92,7 +95,7 @@ struct Step6_TextingFirst: View {
                             NavigationLink(
 //                                destination: Step2_FightLandingView(),
                                 
-                                destination: DramaMainView(),
+                                destination: Step2_FightLandingView(user: user, friends: friends),
                                 label: {
                                     Text("Next_Step 5")
                                         .fontWeight(.thin)

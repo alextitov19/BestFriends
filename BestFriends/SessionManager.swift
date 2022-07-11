@@ -12,7 +12,6 @@ enum AppState {
     case login
     case invite
     case chat(user: User, group: Group)
-    case dramaMainView
     case masterFriendVault
     
     //    case bestFriendsMessages(user: User, atmosphere: Atmosphere, friends: [User], friendAtmospheres: [Atmosphere])
@@ -56,10 +55,7 @@ final class SessionManager: ObservableObject {
     }
     
     
-    func showDramaMainView() {
-        appState = .dramaMainView
-    }
-    
+   
     func showMasterFriendVault() {
         appState = .masterFriendVault
     }
