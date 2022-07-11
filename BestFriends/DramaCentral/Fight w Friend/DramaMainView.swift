@@ -169,7 +169,8 @@ struct DramaMainView: View {
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 }
                             })
-                            }
+                                
+                        }
                             
                             Spacer()
                                 .frame(height: 20)
@@ -226,13 +227,6 @@ struct DramaMainView: View {
         }
     }
 }
-
-
-
-
-
-
-
 
 
 struct DramaMainView_Previews: PreviewProvider {

@@ -93,6 +93,8 @@ struct Step6_TextingFirst: View {
                         VStack {
                             
                             NavigationLink(
+//                                destination: Step2_FightLandingView(),
+                                
                                 destination: DramaMainView(),
                                 label: {
                                     Text("Next_Step 5")

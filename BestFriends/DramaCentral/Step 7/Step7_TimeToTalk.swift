@@ -11,7 +11,7 @@ import AVKit
 
 struct Step7_TimeToTalk: View {
     
-    @EnvironmentObject var sessionManager: SessionManager
+//    @EnvironmentObject var sessionManager: SessionManager
 
     var body: some View {
         ZStack {
