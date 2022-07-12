@@ -91,7 +91,7 @@ struct NostalgiaPreload2: View {
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey1)
                     
-                    Text("You're sending something in Chat")
+                    Text("You're sending \nsomething in Chat")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
