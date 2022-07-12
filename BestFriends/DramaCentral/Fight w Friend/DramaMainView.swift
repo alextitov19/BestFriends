@@ -93,7 +93,7 @@ struct DramaMainView: View {
                                     .shadow(color: .black, radius: 2, x: 0, y: 2)
                                     .opacity(0.65)
                                 Text("(final step) \nHug-it-Out")
-                                    .foregroundColor(.blue)
+                                    .foregroundColor(.purple)
                                     .font(.system(size: 17, weight: .bold))
                                 
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -188,7 +188,8 @@ struct DramaMainView: View {
                     }
                 }
                 
-                
+                Spacer()
+                    .frame(height: 30)
                 
                 Button(action: {
                     sessionManager.showLogin()
