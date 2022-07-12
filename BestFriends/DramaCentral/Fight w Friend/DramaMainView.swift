@@ -95,8 +95,8 @@ struct DramaMainView: View {
                                 Text("(final step) \nHug-it-Out")
                                     .foregroundColor(.purple)
                                     .font(.system(size: 17, weight: .bold))
-                                
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .shadow(color: .black, radius: 0.5, x: 0, y: 1)
+                                  
                                 
                             }
                         })
@@ -200,9 +200,10 @@ struct DramaMainView: View {
                             .frame(width: 100, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
-                            .background(ColorManager.purple3)
+                            .background(ColorManager.purple4)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .opacity(0.45)
                     })
                 
                 

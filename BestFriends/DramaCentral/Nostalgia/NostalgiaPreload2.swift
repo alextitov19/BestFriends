@@ -60,13 +60,13 @@ struct NostalgiaPreload2: View {
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey2)
                 
-                Text("but it Fights still hurt!")
+                Text("but Fights still HURT!")
                     .font(.system(size: 20))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey2)
                 
-                Text("- Send a song you both like \n- Let youself be vulnerable, send a heart-flet message in Chat \n- Send a picture that always made \nthe both of you - Smile! \n- It's ok to remember the good times")
+                Text("- Send a song you both like \n- Let youself be vulnerable, send a heart-flet message in Chat \n- Send a picture that always made \nthe both of you - Smile! \n- If this is something you want fix it, \nor let it go!")
                     .fontWeight(.thin)
                     .frame(width: 320, height: 200)
                     .foregroundColor(ColorManager.grey2)
