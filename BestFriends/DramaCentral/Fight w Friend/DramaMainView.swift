@@ -197,7 +197,7 @@ struct DramaMainView: View {
                     label: {
                         Text("Home")
                             .fontWeight(.thin)
-                            .frame(width: 200, height: 40)
+                            .frame(width: 100, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)
