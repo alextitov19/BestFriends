@@ -51,21 +51,21 @@ struct AtmosphereMain2: View {
                         .font(.system(size: 20))
                         .foregroundColor(ColorManager.grey1)
                       
-                    
-                    Spacer()
+                        .padding(.horizontal)
+//                    Spacer()
                 }
-                .padding(.horizontal)
+               
                 
                 HStack {
-                    Text("See friend's moods (atmosphere) instantly on homepage - letting you respond accordingly")
+                    Text("See friend's atmosphere on homepage")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(ColorManager.grey1)
                     
                  
-                    
-                    Spacer()
+                        .padding(.horizontal)
+//                    Spacer()
                 }
                 .padding(.horizontal)
                 
@@ -257,16 +257,17 @@ struct AtmosphereMain2: View {
                             .italic()
                             .fontWeight(.light)
                             .foregroundColor(ColorManager.grey1)
+                            .padding(.horizontal)
                         
-                        Spacer()
+//                        Spacer()
                     }
-                    .padding(.horizontal)
+//                    .padding(.horizontal)
                     
                     
                     
                     ZStack {
                         Rectangle()
-                            .frame(width:375, height: 50)
+                            .frame(width:330, height: 50)
                             .cornerRadius(15)
                             .foregroundColor(Color.gray)
                             .opacity(0.9)
@@ -274,7 +275,7 @@ struct AtmosphereMain2: View {
                         TextField("You can type what's up here...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(Color.white)
-                            .padding(.horizontal, 20)
+                            .padding(.horizontal, 40)
                             .onReceive(Just(summary)) { _ in limitText(40) }
                         
                         
@@ -284,19 +285,21 @@ struct AtmosphereMain2: View {
                     
                     
                     HStack {
-                        Text("Hey, wanna let your friends know?")
-                            .font(.system(size: 21))
+                        Text("Wanna let your friends know?")
+                            .font(.system(size: 20))
                             .italic()
                             .fontWeight(.light)
                             .foregroundColor(ColorManager.grey1)
-                        Text("So, they can laugh, smile, cheer or maybe help")
-                            .font(.system(size: 12))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(ColorManager.grey1)
+                            .padding(.horizontal)
+                        
+//                        Text("So, they can laugh, smile, cheer or maybe help")
+//                            .font(.system(size: 12))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .foregroundColor(ColorManager.grey1)
                         
                         
-                        Spacer()
+//                        Spacer()
                     }
                     .padding(.horizontal)
                     
@@ -382,6 +385,11 @@ struct AtmosphereMain2: View {
                                 })
                         }
                     }
+                 
+                    Spacer()
+                        .frame(height: 17)
+                    
+                    HStack {
                     
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "SHARE")
@@ -400,7 +408,7 @@ struct AtmosphereMain2: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-                    .padding()
+//                    .padding()
                     
                     
                     
@@ -409,14 +417,14 @@ struct AtmosphereMain2: View {
                         label: {
                             Text("Mood Tracker")
                                 .fontWeight(.thin)
-                                .frame(width: 200, height: 35)
+                                .frame(width: 180, height: 35)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-                    
+                    }
                     Spacer()
                 }
             }

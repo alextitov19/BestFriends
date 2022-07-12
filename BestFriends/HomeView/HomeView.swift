@@ -258,7 +258,8 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
-                        Spacer().frame(height:15)
+                        Spacer()
+                            .frame(height:15)
                         
                         NavigationLink(destination: VirtualHug(),
                                        label: {
@@ -270,23 +271,24 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.8)
                         })
-                        
-                        Spacer().frame(height:15)
-                       
-                        Button(action: {
-                            friendSentPlaylist(friend: selectedPlanet!.user)
-                        }, label: {
-                            Text("My friend sent a SONG")
-                                .fontWeight(.light)
-                                .frame(width: 210, height: 30)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .opacity(0.8)
-                        })
-                               
+//
+//                        Spacer().frame(height:15)
+//
+//                        Button(action: {
+//                            friendSentPlaylist(friend: selectedPlanet!.user)
+//                        }, label: {
+//                            Text("My friend sent a SONG")
+//                                .fontWeight(.light)
+//                                .frame(width: 210, height: 30)
+//                                .foregroundColor(.white)
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .opacity(0.8)
+//                        })
+//
+//                        Spacer()
                         Spacer()
-                        
+                            .frame(height:50)
                         
 //                        MARK: Want to send this to the new [BestFriendsPlaylists] page
 //                        NavigationLink(destination: EmptyView(),
