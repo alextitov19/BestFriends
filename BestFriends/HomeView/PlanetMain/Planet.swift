@@ -111,13 +111,13 @@ struct PlanetActionsView: View {
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.35)
+                                    .opacity(0.50)
                                 
                                 Text("Room")
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.35)
+                                    .opacity(0.50)
                                
                             }
                         }
@@ -140,13 +140,13 @@ struct PlanetActionsView: View {
                                     .foregroundColor(.white)
                                     .font(.system(size: 25, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.35)
+                                    .opacity(0.50)
                                 
                                 Text("My Friends")
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.35)
+                                    .opacity(0.50)
                              
                                     
                             }
@@ -177,7 +177,7 @@ struct PlanetActionsView: View {
  //                                    .foregroundColor(.white)
                                      .font(.system(size: 15, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.35)
+                                     .opacity(0.50)
                                 
 //                                Text("Add My")
 //                                    .foregroundColor(.white)
@@ -223,7 +223,7 @@ struct PlanetActionsView: View {
                                     .font(.system(size: 17, weight: .bold))
 //                                    .italic()
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.45)
+                                    .opacity(0.50)
                                 
                                 
                                 Text("Started")
@@ -231,7 +231,7 @@ struct PlanetActionsView: View {
                                 .italic()
                                 .font(.system(size: 27, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                .opacity(0.35)
+                                .opacity(0.50)
                                 
 //                                Text("Teens")
 //                                .foregroundColor(.white)
@@ -265,13 +265,13 @@ struct PlanetActionsView: View {
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 17, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.35)
+                                     .opacity(0.50)
                                 
                                 Text("Teens")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 17, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.35)
+                                     .opacity(0.50)
                  
                    
                             }
@@ -299,13 +299,13 @@ struct PlanetActionsView: View {
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.35)
+                                    .opacity(0.50)
                                 
                                 Text("Atmosphere")
                                     .foregroundColor(.white)
                                     .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.35)
+                                    .opacity(0.50)
                                 
                               
                             }
@@ -334,7 +334,7 @@ struct PlanetActionsView: View {
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.35)
+                                    .opacity(0.50)
                             }
                         }
                     })
