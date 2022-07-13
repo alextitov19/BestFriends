@@ -36,18 +36,18 @@ struct HurtFeelings4: View {
             VStack {
            
                 Text("Some EXAMPLES of what to \nsay in a Chat message")
-                    .font(.system(size: 25))
+                    .font(.system(size: 20))
                     .fontWeight(.regular)
                     .foregroundColor(Color .white)
                 
                 Spacer()
                     .frame(height: 15)
                 
-                Text("Hey, I would like to \ntalk to you about \nsomething you said")
+                Text("Hey, I would like to talk to you \nabout something you said.")
                     .fontWeight(.thin)
-                    .frame(width: 310, height: 100)
+                    .frame(width: 310, height: 50)
                     .foregroundColor(Color .blue)
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .background(ColorManager.grey2)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -55,11 +55,11 @@ struct HurtFeelings4: View {
                 
                 
                 
-                Text("Hi, I wanted to let you \nknow that what you \nsaid hurt my feelings")
+                Text("Hi, I wanted to let you know that \nwhat you said hurt my feelings")
                     .fontWeight(.thin)
-                    .frame(width: 310, height: 100)
+                    .frame(width: 310, height: 50)
                     .foregroundColor(Color .blue)
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .background(ColorManager.grey2)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -91,7 +91,7 @@ struct HurtFeelings4: View {
                 .padding(.leading)
                 
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 5)
                 
                 Text("(Please tap only once)")
                     .font(.system(size: 15))
@@ -185,17 +185,7 @@ struct HurtFeelings4: View {
 
                         
 //                    MARK: Trying to get the the button color to change when tapped
-//                        if friends.count > 4 {
-//                            RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
-//                                .onTapGesture(perform: {
-//                                    if sharedWith.contains(friends[4].id) {
-//                                        sharedWith = sharedWith.filter { $0 != friends[4].id }
-//                                    } else {
-//                                        sharedWith.append(friends[4].id)
-//                                    }
-//                                    print(sharedWith)
-//                                })
-//
+
                         
                         
                         
@@ -223,15 +213,16 @@ struct HurtFeelings4: View {
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     
-                 
+                      
                 })
-              
+//                .padding()
                 }
-                
-                
+              
+                           .padding()
             }
-
-
+//            .padding()
+//            Spacer()
+//                .frame(height: 100)
         }
     }
     

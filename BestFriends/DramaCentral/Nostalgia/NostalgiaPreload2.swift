@@ -42,29 +42,29 @@ struct NostalgiaPreload2: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "Planet6")
+            AdPlayerView(name: "nostalgia")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
             
             VStack {
            
-                Text("Post-teen Fights")
-                    .font(.system(size: 35))
-                    .fontWeight(.regular)
-                    .foregroundColor(ColorManager.grey3)
+//                Text("Post-teen Fights")
+//                    .font(.system(size: 35))
+//                    .fontWeight(.regular)
+//                    .foregroundColor(ColorManager.grey3)
   
                 Text("OK, you're not a teen anymore,")
                     .font(.system(size: 17))
                     .italic()
                     .fontWeight(.thin)
-                    .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(ColorManager.grey1)
                 
                 Text("but Fights still HURT!")
                     .font(.system(size: 20))
                     .italic()
                     .fontWeight(.thin)
-                    .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(ColorManager.grey1)
                 
                 Text("- Send a song you both like \n- Let youself be vulnerable, send a heart-flet message in Chat \n- Send a picture that always made \nthe both of you - Smile! \n- If this is something you want fix it, \nor let it go!")
                     .fontWeight(.thin)
