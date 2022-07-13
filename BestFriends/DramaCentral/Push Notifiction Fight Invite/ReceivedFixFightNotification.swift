@@ -71,7 +71,7 @@ struct ReceivedFixFightNotification: View {
                             .frame(height: 15)
                                 
 
-                NavigationLink(destination: DramaMainView(),
+                NavigationLink(destination: EmptyView(),
                     label: {
                         Text("Ok, we can try to talk")
                             .fontWeight(.thin)

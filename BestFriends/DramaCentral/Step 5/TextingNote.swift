@@ -12,14 +12,23 @@ import SwiftUI
 
 struct TextingNote: View {
     
+    let user: User
+    let friends: [User]
+    
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
-                .resizable()
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+            ColorManager.grey2
+                  .ignoresSafeArea()
+          
+            // Stars animation...
+            AdPlayerView(name: "backgroundAnimation")
                 .ignoresSafeArea()
-                .scaledToFill()
-            
+                .blendMode(.screen)
            
             VStack {
                 Text("You got ")
@@ -56,7 +65,7 @@ struct TextingNote: View {
               
                 
                 NavigationLink(
-                    destination: Step6_TextingFirst(),
+                    destination: Step6_TextingFirst(user: user, friends: friends),
                     label: {
                         Text("NEXT")
                             .fontWeight(.thin)
@@ -74,11 +83,11 @@ struct TextingNote: View {
     }
 }
 
-
-struct TextingNote_Previews : PreviewProvider {
-    static var previews: some View {
-        TextingNote()
-    }
-}
+//
+//struct TextingNote_Previews : PreviewProvider {
+//    static var previews: some View {
+//        TextingNote()
+//    }
+//}
 
 

@@ -10,25 +10,35 @@ import SwiftUI
 
 
 struct Step6_TextingFirst: View {
+    
+    let user: User
+    let friends: [User]
         
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
  
+            ColorManager.grey2
+                  .ignoresSafeArea()
+          
+            // Stars animation...
+            AdPlayerView(name: "backgroundAnimation")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             
             VStack {
            
                 Text("Reach out 1st via")
                 .font(.system(size: 40, weight: .ultraLight))
-                .foregroundColor(Color.white)
+                .foregroundColor(Color.purple)
             
                 Text("T E X T")
-                    .font(.system(size: 60, weight: .ultraLight))
-                    .foregroundColor(Color.blue)
+                    .font(.system(size: 50, weight: .ultraLight))
+                    .foregroundColor(Color.purple)
                 Spacer()
                     .frame(height: 20)
                 
@@ -40,7 +50,7 @@ struct Step6_TextingFirst: View {
                 .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 25)
+                    .frame(height: 15)
                 
                 VStack {
                     Link(destination: URL(string: "https://socialtechlabs.com/applink/")!) {
@@ -50,7 +60,7 @@ struct Step6_TextingFirst: View {
                             .frame(width: 310, height: 50)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
-                            .background(ColorManager.purple3)
+                            .background(ColorManager.purple2)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     }
@@ -60,22 +70,19 @@ struct Step6_TextingFirst: View {
                     
                    
                     
-                    Text("Go ahead - type message in Chat")
+                    Text("Now that you typed your \nmessage in Chat let's make \nsure they get it.")
                     .font(.system(size: 20, weight: .thin))
                     .italic()
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
+
+                    Spacer()
+                        .frame(height: 20)
                     
-                    Text("Then Tap [NEXT]")
+                    Text("Send Push Notification in Step 5")
                     .font(.system(size: 20, weight: .thin))
                     .italic()
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
-                    
-                    Text("To send Push Notification")
-                    .font(.system(size: 20, weight: .thin))
-                    .italic()
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.purple)
                     .multilineTextAlignment(.center)
                     
                     VStack {
@@ -86,16 +93,16 @@ struct Step6_TextingFirst: View {
                         VStack {
                             
                             NavigationLink(
-                                destination: DramaMainView(),
+//                                destination: Step2_FightLandingView(),
+                                
+                                destination: Step2_FightLandingView(user: user, friends: friends),
                                 label: {
-                                    Text("NEXT: Who Was Fight With?")
+                                    Text("Next_Step 5")
                                         .fontWeight(.thin)
                                         .foregroundColor(Color.white)
-                                        .frame(width: 310, height: 40)
+                                        .frame(width: 200, height: 40)
                                         .font(.system(size: 25))
-                                        .background(Color.gray)
-                                        
-                                    
+                                        .background(ColorManager.purple3)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     

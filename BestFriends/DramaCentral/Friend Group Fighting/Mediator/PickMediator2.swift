@@ -31,17 +31,6 @@ struct PickMediator2: View {
                             .ignoresSafeArea()
                             .onAppear()
             
-          
-            
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//
-            //            AdPlayerView(name: "face")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //
             
             VStack {
                  
@@ -53,10 +42,10 @@ struct PickMediator2: View {
 //                .padding(.horizontal)
                 
                 
-                Text("NOTE: You must agree on the \nfriend to be named, Mediator.")
+                Text("NOTE: You must both agree on the \nfriend to be named, Mediator.")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .foregroundColor(Color .blue)
                     .font(.system(size: 20))
                     .background(ColorManager.grey2)
                     .cornerRadius(15)
@@ -65,10 +54,10 @@ struct PickMediator2: View {
                 
                 
                 
-                Text("NOTE: Yhis technique can \nbe used in Freind Groups and \nfor Huge Fight with BFF")
+                Text("NOTE: This technique can \nbe used in Freind Groups and \nfor Huge Fight with BFF")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 100)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .foregroundColor(Color .blue)
                     .font(.system(size: 20))
                     .background(ColorManager.grey2)
                     .cornerRadius(15)
@@ -85,19 +74,23 @@ struct PickMediator2: View {
                 
                 
                 HStack {
-                    Text("Mediator Request")
-                        .font(.system(size: 30))
+                    Text("Mediator \nRequest")
+                        .font(.system(size: 27))
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey4)
                     
-                    Text("Asking you to be a mediator")
-                        .font(.system(size: 25))
+                    Text("Asking friend to \nbe a mediator")
+                        .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                     
                     Spacer()
                 }
                 .padding(.horizontal)
+                .padding(.leading)
+                
+                Spacer()
+                    .frame(height: 15)
                 
                 Text("(Please tap only once)")
                     .font(.system(size: 15))
@@ -113,8 +106,9 @@ struct PickMediator2: View {
                             
                         },
                                label: {
-                            Text("ALL")
-                                .fontWeight(.bold)
+                            Text("select >")
+//                                .fontWeight(.bold)
+                                .fontWeight(.thin)
                                 .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 15))
@@ -187,7 +181,9 @@ struct PickMediator2: View {
                                 print(sharedWith)
                             })
                         
-//
+
+                        
+//                    MARK: Trying to get the the button color to change when tapped
 //                        if friends.count > 4 {
 //                            RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
 //                                .onTapGesture(perform: {
@@ -202,36 +198,39 @@ struct PickMediator2: View {
                         
                         
                         
-                        
-                        
-                        
-                        
-                        
-                        Button(action: {
-                            defaultMessageButtonTapped(defaultMessage: "SHARE")
-//                            shareMood()
-                        },
-                               label: {
-                            Text("SHARE")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                
-                                .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
-                                
-    //                            .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                         
-                        })
-                      
-                        
-                        
                     }
                 }
+                    
+                VStack {
+                    Spacer()
+                        .frame(height: 20)
+                
+                Button(action: {
+                    defaultMessageButtonTapped(defaultMessage: "SHARE")
+//                            shareMood()
+                },
+                       label: {
+                    Text("SHARE")
+                        .fontWeight(.thin)
+                        .frame(width: 100, height: 40)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 30))
+                        
+                        .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
+                        
+//                            .background(ColorManager.purple3)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                 
+                })
+              
+                }
+                
+                
             }
+
+
         }
     }
     
@@ -271,7 +270,7 @@ struct PickMediator2: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) Request you as a Mediator", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BestFriends - Mediator", body: "\(user.firstName) Request you as a Mediator", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
@@ -297,15 +296,4 @@ struct PickMediator2: View {
 
 
 
-
-
-
-
-//
-//
-//struct HurtFeelings3_Previews : PreviewProvider {
-//    static var previews: some View {
-//HurtFeelings3()
-//    }
-//}
 

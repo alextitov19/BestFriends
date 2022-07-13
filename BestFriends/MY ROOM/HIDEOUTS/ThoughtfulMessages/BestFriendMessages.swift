@@ -42,10 +42,14 @@ struct BestFriendMessages: View {
 
             
             ZStack {
+                
+               
+                   
+                
                 Image(systemName: "heart.fill")
                     .resizable()
                     .foregroundColor(ColorManager.purple3)
-                    .frame(width: 350, height: 350)
+                    .frame(width: 300, height: 300)
                     .blur(radius: 2)
                     .shadow(color: .orange, radius: 65, x: 40, y: 50)
                 
@@ -80,11 +84,12 @@ struct BestFriendMessages: View {
                         .fontWeight(.medium)
                         .multilineTextAlignment(.center)
 
-                       
+                    
+                  
                 }
             }
-            
-
+             
+                    
             
             ZStack {
                 if showItems {
@@ -128,13 +133,13 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("TAP to 're-live'")
+                        Text("")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                         
-                        Text("special messages")
+                        Text("messages")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(.white)
@@ -149,13 +154,21 @@ struct BestFriendMessages: View {
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                    
-                        Text("you 'long-tapped' \nin Chat")
+                        Text("(you 'long-tapped' \nin Chat)")
                             .font(.system(size: 16))
                             .italic()
                             .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                     
+                        
+                        Image(systemName: "info.circle")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            .scaledToFill()
+                            .foregroundColor(.black)
+        //                    .onTapGesture(perform: {
+        //                        sessionManager.infoView(user: user, group: group
                     }
                      
                 }

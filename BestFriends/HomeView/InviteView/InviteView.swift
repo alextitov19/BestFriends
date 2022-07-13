@@ -12,7 +12,7 @@ struct InviteView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     @State private var email = ""
-    @State private var user: User?
+    let user: User
     
     @State private var invites: [Invite] = []
     
@@ -20,8 +20,8 @@ struct InviteView: View {
     
     var body: some View {
         ZStack {
-              
-          ColorManager.grey4
+            
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear(perform: initLoadData)
             
@@ -33,7 +33,7 @@ struct InviteView: View {
                 Text("Send Friend Requests")
                     .foregroundColor(.gray)
                     .font(.system(size: 25, weight: .bold))
-              
+                
                 Spacer()
                     .frame(height: 10)
                 
@@ -49,60 +49,66 @@ struct InviteView: View {
                     .italic()
                     .font(.system(size: 17))
                 
-                VStack {
-                // Top part for inviting a friend
-                HStack {
-                    MainTextField(text: $email, placeholder: "Email")
-                    
-                    Button(action: inviteFriend) {
-                        Text("Invite")
-                            .frame(width: 100, height: 40)
-                            .foregroundColor(.white)
-                            .background(inviteClicked ? ColorManager.purple3 : Color.green)
-                            .cornerRadius(15)
-                    }
-                    .frame(width: 120)
-                }
-               .padding()
-
-                
-                Spacer()
-                    .frame(height: 30)
-                    
+                if user.friends!.count < 5 {
                     VStack {
-                
-                Text("Accept Friend Requests")
-                    .foregroundColor(.gray)
-                    .font(.system(size: 25, weight: .bold))
-                
+                        // Top part for inviting a friend
+                        HStack {
+                            MainTextField(text: $email, placeholder: "Email")
+                            
+                            Button(action: inviteFriend) {
+                                Text("Invite")
+                                    .frame(width: 100, height: 40)
+                                    .foregroundColor(.white)
+                                    .background(inviteClicked ? ColorManager.purple3 : Color.green)
+                                    .cornerRadius(15)
+                            }
+                            .frame(width: 120)
+                        }
+                        .padding()
+                        
                         
                         Spacer()
-                            .frame(height: 10)
+                            .frame(height: 30)
                         
-                        Text("-After friend sends Friend Request")
-                            .fontWeight(.thin)
-                            .foregroundColor(.white)
-                            .italic()
-                            .font(.system(size: 17))
+                        VStack {
+                            
+                            Text("Accept Friend Requests")
+                                .foregroundColor(.gray)
+                                .font(.system(size: 25, weight: .bold))
+                            
+                            
+                            Spacer()
+                                .frame(height: 10)
+                            
+                            Text("-After friend sends Friend Request")
+                                .fontWeight(.thin)
+                                .foregroundColor(.white)
+                                .italic()
+                                .font(.system(size: 17))
+                            
+                            
+                            Text("-Come to this page and tap [Accept]")
+                                .fontWeight(.thin)
+                                .foregroundColor(.white)
+                                .italic()
+                                .font(.system(size: 17))
+                            
+                            
+                        }
+                        
+                    }
                     
-                        
-                        Text("-Come to this page and tap [Accept]")
-                            .fontWeight(.thin)
-                            .foregroundColor(.white)
-                            .italic()
-                            .font(.system(size: 17))
-                
-           
+                    
+                    // Invites
+                    ScrollView (.vertical) {
+                        ForEach(invites, id: \.sender) {invite in
+                            PendingInviteView(invite: invite)
+                        }
                     }
-
-                }
-                
-                
-                // Invites
-                ScrollView (.vertical) {
-                    ForEach(invites, id: \.sender) {invite in
-                        PendingInviteView(invite: invite)
-                    }
+                } else {
+                    Text("You already have 5 friends\nRemove a friend to add another one")
+                        .font(.system(size: 30))
+                        .foregroundColor(.red)
                 }
             }
         }
@@ -124,15 +130,7 @@ struct InviteView: View {
     }
     
     private func initLoadData() {
-        getUser()
         getInvites()
-    }
-    
-    private func getUser() {
-        RestApi.instance.getCurrentUser().then { result in
-            print("Got result: ", result)
-            user = result
-        }
     }
     
     private func getInvites() {
@@ -142,7 +140,7 @@ struct InviteView: View {
         }
     }
     
-   
+    
 }
 
 

@@ -20,23 +20,23 @@ struct Step3_BreathInviteView: View {
             
             ColorManager.grey2
                   .ignoresSafeArea()
-            
-//            Image("in bushes")
-//                .resizable()
-//                .scaledToFill()
-//                .ignoresSafeArea()
-//                .onAppear {
-//
-                    
-                
-            
+          
             // Stars animation...
             AdPlayerView(name: "backgroundAnimation")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
             VStack{
+                
+                Text("Step 1 (Take a Breath)")
+                    .font(.system(size: 17, weight: .ultraLight))
+                    .foregroundColor(Color.blue)
+                    
+                Spacer()
+                    .frame(height: 20)
+                
                 HStack {
+                    
                     Text("Calming")
                         .font(.system(size: 47, weight: .ultraLight))
                         .foregroundColor(Color.purple)
@@ -64,7 +64,7 @@ struct Step3_BreathInviteView: View {
                                     .frame(width: 300, height: 50)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
-                                    .background(ColorManager.purple3)
+                                    .background(ColorManager.purple2)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -149,17 +149,19 @@ struct Step3_BreathInviteView: View {
                             .frame(height: 30)
                         
                         NavigationLink(
-                            destination: Step4_NuclearOption(),
+                            destination: Step4_NuclearOption(user: user, friends: friends),
                             label: {
-                                Text("NEXT")
+                                Text("Next_Step 2")
                                     .fontWeight(.thin)
-                                    .frame(width: 100, height: 40)
+                                    .frame(width: 200, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
+                        Spacer ()
+                            .frame(height: 150)
                     }
                     
                 }

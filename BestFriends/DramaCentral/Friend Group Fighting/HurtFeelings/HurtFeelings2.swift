@@ -63,7 +63,7 @@ struct HurtFeelings2: View {
            
                     
                     NavigationLink(
-                        destination: HurtFeelings3(user: user, friends: friends, groups: groups),
+                        destination: HurtFeelings4(user: user, friends: friends, groups: groups),
                         label: {
                             Text("Let's give it a shot, ok!")
                                 .fontWeight(.thin)

@@ -10,15 +10,24 @@ import SwiftUI
 
 struct YouGotThis: View {
     
+    let user: User
+    let friends: [User]
+    
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
             
-
+            ColorManager.grey2
+                  .ignoresSafeArea()
+          
+            // Stars animation...
+            AdPlayerView(name: "backgroundAnimation")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             
             VStack {
                 Text("We get it - your upset!")
@@ -36,7 +45,7 @@ struct YouGotThis: View {
                 Text("Sharp Words")
                     .font(.system(size: 60))
                     .fontWeight(.ultraLight)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.purple)
         
                 Spacer()
                     .frame(height: 15)
@@ -56,7 +65,7 @@ struct YouGotThis: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 Spacer()
-                    .frame(height: 60)
+                    .frame(height: 40)
                 
                 Text("Erasing all the nice words you've ever said")
                             .fontWeight(.ultraLight)
@@ -84,14 +93,14 @@ struct YouGotThis: View {
 //                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                
                 Spacer()
-                    .frame(height: 65)
+                    .frame(height: 30)
                 
                 NavigationLink(
-                    destination: Step5_Why(),
+                    destination: Step5_Why(user: user, friends: friends),
                     label: {
-                        Text("What Started the Fight?")
+                        Text("Next_Step 3")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
+                            .frame(width: 200, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)
@@ -99,7 +108,8 @@ struct YouGotThis: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                 
-               
+                Spacer()
+                    .frame(height: 100)
             }
         }
         
@@ -112,12 +122,12 @@ struct YouGotThis: View {
 
 
 
-
-
-struct YouGotThis_Previews : PreviewProvider {
-    static var previews: some View {
-        YouGotThis()
-    }
-}
+//
+//
+//struct YouGotThis_Previews : PreviewProvider {
+//    static var previews: some View {
+//        YouGotThis()
+//    }
+//}
 
 

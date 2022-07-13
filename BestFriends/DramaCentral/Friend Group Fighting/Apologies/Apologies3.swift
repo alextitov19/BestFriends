@@ -32,18 +32,7 @@ struct Apologies3: View {
                             .ignoresSafeArea()
                             .onAppear()
             
-//            Image("holding iphone")
-//                .frame(width: 300, height: 20)
-//
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//
-            //            AdPlayerView(name: "face")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //
+
             
             VStack {
 //

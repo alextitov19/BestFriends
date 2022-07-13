@@ -11,28 +11,43 @@ import Foundation
 import SwiftUI
 
 struct Step5_Why: View {
+    
+    let user: User
+    let friends: [User]
         
     var body: some View {
         ZStack {
-            
-            Image("purpleBackground")
-                .resizable()
+            ColorManager.grey2
+                  .ignoresSafeArea()
+          
+            // Stars animation...
+            AdPlayerView(name: "backgroundAnimation")
                 .ignoresSafeArea()
-                .scaledToFill()
+                .blendMode(.screen)
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
   
             
             VStack {
+                Text("Step 3 (Looking Inside)")
+                    .font(.system(size: 17, weight: .ultraLight))
+                    .foregroundColor(Color.purple)
+                    
+                Spacer()
+                    .frame(height: 20)
                 
                 Text("This part takes")
                     .font(.system(size: 40))
-                    .foregroundColor(.blue)
+                    .foregroundColor(.purple)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.leading)
             
                
                 Text("COURAGE")
                     .font(.system(size: 70))
-                    .foregroundColor(.blue)
+                    .foregroundColor(.purple)
                     .fontWeight(.ultraLight)
                 
                 Spacer()
@@ -53,7 +68,8 @@ struct Step5_Why: View {
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 0)
                 
-                
+                VStack {
+                    
                 Spacer()
                     .frame(height:50)
                 
@@ -72,55 +88,42 @@ struct Step5_Why: View {
                 
                 VStack {
                     Spacer()
-                        .frame(height:50)
+                        .frame(height:30)
                   
                     NavigationLink(
-                        destination: Step6_TextingFirst(),
+                        destination: Step6_TextingFirst(user: user, friends: friends),
                         label: {
-                            Text("Send 1st Text \nwith Push Notification")
+                            Text("Next_Step 4")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
-                                .frame(width: 310, height: 70)
-                                .font(.system(size: 25))
-                                .background(Color.gray)
+                                .frame(width: 200, height: 40)
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
+                                
 //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
 //                            
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
+                          
+                          
                         }
+                 
                     )}
                     
-                    
-//
-//                    NavigationLink(
-//                        destination: TextingNote(),
-//                        label: {
-//                            Text("Next")
-//                                .fontWeight(.thin)
-//                                .frame(width: 100, height: 40)
-//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                .font(.system(size: 30))
-//                                .background(ColorManager.purple3)
-//                                .cornerRadius(15)
-//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                        })
-//
-                    
-                    
-                    
+                    Spacer()
+                        .frame(height: 100)
                 }
             }
         }
     }
 
-
-
-struct Why_Previews : PreviewProvider {
-    static var previews: some View {
-        Step5_Why()
-    }
 }
+//
+//struct Why_Previews : PreviewProvider {
+//    static var previews: some View {
+//        Step5_Why()
+//    }
+//}
 
 
 

@@ -12,6 +12,9 @@ import SwiftUI
 
 struct Step2FG_NewSolutions: View {
     
+    let user: User
+    let friends: [User]
+    
     @EnvironmentObject var sessionManager: SessionManager
     
     var body: some View {
@@ -63,7 +66,7 @@ struct Step2FG_NewSolutions: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            NavigationLink(destination: Step6_TextingFirst(), label: {
+                            NavigationLink(destination: Step6_TextingFirst(user: user, friends: friends), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
@@ -136,7 +139,7 @@ struct Step2FG_NewSolutions: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            NavigationLink(destination: Step5_Why(), label: {
+                            NavigationLink(destination: Step5_Why(user: user, friends: friends), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
@@ -185,7 +188,7 @@ struct Step2FG_NewSolutions: View {
                             Spacer()
                                 .frame(height: 20)
                             
-                            NavigationLink(destination: Step4_NuclearOption(), label: {
+                    NavigationLink(destination: Step4_NuclearOption(user: user, friends: friends), label: {
                                 ZStack {
                                     Circle()
                                         .frame(width: 115, height: 115)
@@ -257,15 +260,15 @@ struct Step2FG_NewSolutions: View {
 
 
 
-
-
-
-
-struct Step2FG_NewSolutions_Previews: PreviewProvider {
-    static var previews: some View {
-        Step2FG_NewSolutions()
-    }
-}
+//
+//
+//
+//
+//struct Step2FG_NewSolutions_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Step2FG_NewSolutions()
+//    }
+//}
 
 
 

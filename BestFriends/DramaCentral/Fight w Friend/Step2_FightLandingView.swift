@@ -15,163 +15,187 @@ struct Step2_FightLandingView: View {
     let user: User
     let friends: [User]
     
+//    @State private var colorChangeTap: String = ""
+    
     var body: some View {
         
         ZStack {
             
-            ColorManager.grey4
+            ColorManager.purple3
                   .ignoresSafeArea()
-                    
 //
-//                }
+//            ColorManager.grey2
+//                  .ignoresSafeArea()
 //
 //            // Stars animation...
 //            AdPlayerView(name: "backgroundAnimation")
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
-//
+          
             VStack{
                 
-                Text("OK, you sent message. Nice job!")
-                    .font(.system(size: 30))
-                    
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
-              
-                
-                Spacer()
-                    .frame(height: 30)
+               
 
                 HStack {
-                    
-//
-//                    Text("Who'd you")
-//                        .font(.system(size: 47, weight: .ultraLight))
-//                        .foregroundColor(Color.purple)
-                    
                 }
                 
                 VStack {
                     
-                    Text("Let's send a Push Notification")
-                        .font(.system(size: 25, weight: .bold))
-                        .italic()
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.white)
-                    
-                    Text("'Inviting' them to read")
-                        .font(.system(size: 25, weight: .bold))
-                        .italic()
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.white)
-                     
-                    Text("your message in Chat")
-                        .font(.system(size: 25, weight: .bold))
-                        .italic()
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.white)
+                
+ 
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
 
                     
-                    Text("Who'd you")
-                        .font(.system(size: 47, weight: .ultraLight))
+                    Text("Who's Notification")
+                        .font(.system(size: 35, weight: .ultraLight))
                         .foregroundColor(Color.purple)
-                    
-                    Text("Fight With?")
-                        .font(.system(size: 45, weight: .ultraLight))
-                        .fontWeight(.ultraLight)
+                    Text("going to?")
+                        .font(.system(size: 35, weight: .ultraLight))
                         .foregroundColor(Color.purple)
-                        .kerning(10)
-                    
-                  
-                    
-                  
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+      
                     VStack {
+                        
+                        Spacer()
+                            .frame(height: 7)
+                        
+                        Text("(Please tap only once)")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.thin)
+                            .foregroundColor(Color.black)
+                        
                         HStack {
-                            NavigationLink(
-                                destination: BreathInView(),
-                                label: {
-                                    Text("ALL")
-                                        .fontWeight(.bold)
+//                            NavigationLink(
+//                                destination: EmptyView(),
+//                                label: {
+                                    Text("select >")
+                                        .fontWeight(.thin)
+//                                        .fontWeight(.bold)
                                         .frame(width: 100, height: 30)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 15))
+                                        .font(.system(size: 20))
                                         .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                         .cornerRadius(25)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                })
-                            
+//                                })
+
                             if friends.count > 0 {
                                 RectView(user: user, friend: friends[0])
                             }
-                            
+
                             if friends.count > 1 {
                                 RectView(user: user, friend: friends[1])
                             }
                         }
-                     
+
                         Spacer()
                             .frame(height: 15)
                         HStack {
                             if friends.count > 2 {
                                 RectView(user: user, friend: friends[2])
                             }
-                            
+
                             if friends.count > 3 {
                                 RectView(user: user, friend: friends[3])
                             }
-                            
+
                             if friends.count > 4 {
                                 RectView(user: user, friend: friends[4])
                             }
                         }
-                        
+
                         VStack {
+
+                            Spacer()
+                                .frame(height: 15)
                             
+                         
+                            
+                            Text("(Now you know they got your message)")
+                                .font(.system(size: 15, weight: .bold))
+                                .italic()
+                                .fontWeight(.ultraLight)
+                                .foregroundColor(Color.black)
+                           
                             NavigationLink(
-                                destination: EmptyView(),
+                                destination: TryThis(),
                                 label: {
-                                    Text("Invite")
+                                    Text("Calm your 'Waiting Anxiety'")
                                         .fontWeight(.thin)
-                                        .font(.system(size: 30))
                                         .foregroundColor(Color.white)
-                                        .frame(width: 160, height: 40)
-                                        .font(.system(size: 30))
-                                    
-                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                    
+                                        .frame(width: 310, height: 40)
+                                        .font(.system(size: 27))
+                                        .background(ColorManager.purple3)
+                                        
+        //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+        //
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                    
-                                }
-                                
-                            )}
+                                  }
+                         
+                              )}
+                          
+                        Spacer()
+                            .frame(height: 35)
+                        
+                            Text("(When you're ready try to set a time to talk)")
+                                .font(.system(size: 15))
+                                .italic()
+                                .fontWeight(.thin)
+                                .foregroundColor(Color.black)
+                            
+//                            MARK: New [Next] button going go HugitOut
+                            
+                            
+                      
+                            
+                            NavigationLink(
+                                destination: Step7_TimeToTalk(),
+                                label: {
+                                    Text("Final Step")
+                                        .fontWeight(.thin)
+                                        .foregroundColor(Color.white)
+                                        .frame(width: 200, height: 40)
+                                        .font(.system(size: 30))
+                                        .background(ColorManager.purple3)
+                                        
+        //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+        //
+                                        .cornerRadius(15)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                  }
+                         
+                              )}
+                        
+                        
+                            
+//                            MARK: old [Invite] buttom going nowhere - was supposed to be a [Submit] button that changed color when tapped. But, having difficult time getting it to work - so changed it out to the above
+                            
+//                            NavigationLink(
+//                                destination: EmptyView(),
+//                                label: {
+//                                    Text("Invite")
+//                                        .fontWeight(.thin)
+//                                        .font(.system(size: 30))
+//                                        .foregroundColor(Color.white)
+//                                        .frame(width: 160, height: 40)
+//                                        .font(.system(size: 30))
 //
-//                        Spacer ()
-//                            .frame(height: 30)
+//                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
 //
-//                        NavigationLink(
-//                            destination: Step4_NuclearOption(),
-//                            label: {
-//                                Text("NEXT")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 100, height: 40)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            })
+//                                        .cornerRadius(15)
+//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                                }
+//
+//                            )}
+                       
+                        Spacer()
+                            .frame(height: 150)
+
                     }
                     
                 }
@@ -187,7 +211,7 @@ struct Step2_FightLandingView: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BeatFriends - HUGE Fight", body: "\(user.firstName) invited you to work this out!", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BeatFriends - Fight", body: "\(user.firstName) Invited you to try to fix this Fight!", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
@@ -201,14 +225,12 @@ struct Step2_FightLandingView: View {
             })
         }
     }
-}
 
 
 
-//struct Step3_BreathInviteView_Previews : PreviewProvider {
-//    static var previews: some View {
-//        Step3_BreathInviteView()
-//    }
+//
+//func defaultMessageButtonTapped(defaultMessage: String) {
+//    self.colorChangeTap = defaultMessage
 //}
-
+//}
 

@@ -249,6 +249,7 @@ struct HideChatView: View {
                 })
             } else {
                 errorString = "Wrong pin"
+                pin = ""
             }
         }
     }

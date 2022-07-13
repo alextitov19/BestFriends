@@ -87,7 +87,7 @@ struct Apologies2: View {
                     .frame(height: 30)
                     
                     NavigationLink(
-                        destination: Apologies3(user: user, friends: friends, groups: groups),
+                        destination: Apologies4(user: user, friends: friends, groups: groups),
                         label: {
                             Text("Ok, let's do this ...")
                                 .fontWeight(.thin)

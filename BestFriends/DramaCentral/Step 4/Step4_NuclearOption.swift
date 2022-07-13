@@ -11,30 +11,47 @@ import SwiftUI
 
 struct Step4_NuclearOption: View {
     
+    let user: User
+    let friends: [User]
+    
     var body: some View {
         
         ZStack {
          
-        Image("purpleBackground")
-                .resizable()
+//        Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+            ColorManager.grey2
+                  .ignoresSafeArea()
+          
+            // Stars animation...
+            AdPlayerView(name: "backgroundAnimation")
                 .ignoresSafeArea()
-                .scaledToFill()
-       
+                .blendMode(.screen)
         
             VStack {
+                
+                Text("Step 2 (Not Going Nuclear)")
+                    .font(.system(size: 17, weight: .ultraLight))
+                    .foregroundColor(Color.blue)
+                    
+                Spacer()
+                    .frame(height: 20)
+                
                 ZStack {
                     
                     Image(systemName: "heart.fill")
                     
                         .resizable()
-                        .frame(width: 220, height: 190, alignment: .leading)
+                        .frame(width: 150, height: 130, alignment: .leading)
                     
                         .foregroundColor(Color(hue: 0.714, saturation: 0.411, brightness: 0.626))
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
                     
                     
                     Text("Ok, all that breathing \ndidn't help much. ")
-                        .font(.system(size: 25))
+                        .font(.system(size: 15))
                         .foregroundColor(.white)
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
@@ -50,7 +67,7 @@ struct Step4_NuclearOption: View {
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
+//                    .padding(.horizontal, 0)
              
                 
                 Text("and making hurtful")
@@ -59,7 +76,7 @@ struct Step4_NuclearOption: View {
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
+//                    .padding(.horizontal, 0)
                 
                 Text("comments on social media")
                     .font(.system(size: 20))
@@ -67,20 +84,19 @@ struct Step4_NuclearOption: View {
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .padding(.horizontal, 0)
+//                    .padding(.horizontal, 0)
+               
                 VStack {
               
-                    Spacer()
-                    .frame(height: 10)
-            
-         
-           
+                 
                    Text("REMEMBER")
                     .font(.system(size: 50))
-                    .foregroundColor(.blue)
+                    .foregroundColor(.purple)
                     .fontWeight(.ultraLight)
                    
-
+                    Spacer()
+                        .frame(height: 20)
+                    
             Text("you were BFF and will be again!")
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.white)
@@ -94,11 +110,12 @@ struct Step4_NuclearOption: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
               
                
-                    
+                    Spacer()
+                        .frame(height: 20)
                     
                     
                      NavigationLink(
-                        destination: YouGotThis(),
+                        destination: YouGotThis(user: user, friends: friends),
                         label: {
                             Text("Another Thought")
                                 .fontWeight(.thin)
@@ -109,9 +126,11 @@ struct Step4_NuclearOption: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
+                  
+                    Spacer()
+                        .frame(height: 120)
                     
-                    
-                    .padding(.vertical, 40)
+//                    .padding(.vertical, 40)
                 }
             }
             
@@ -122,12 +141,12 @@ struct Step4_NuclearOption: View {
 
 
 
-
-
-struct NuclearOption_Previews : PreviewProvider {
-    static var previews: some View {
-        Step4_NuclearOption()
-    }
-}
-
+//
+//
+//struct NuclearOption_Previews : PreviewProvider {
+//    static var previews: some View {
+//        Step4_NuclearOption()
+//    }
+//}
+//
 
