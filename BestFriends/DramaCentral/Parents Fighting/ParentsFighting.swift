@@ -14,7 +14,7 @@ struct ParentsFighting: View {
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
+            Image("blueBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -30,19 +30,19 @@ struct ParentsFighting: View {
             VStack {
                 
                 Text("We know how")
-                    .font(.system(size: 31))
+                    .font(.system(size: 25))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.purple)
+                    .foregroundColor(Color.white)
              
                 Text("U N S E T T E L I N G")
-                    .font(.system(size: 45))
+                    .font(.system(size: 30))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.purple)
+                    .foregroundColor(Color.white)
                 
                 Text("this can be")
-                    .font(.system(size: 31))
+                    .font(.system(size: 30))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
@@ -52,56 +52,56 @@ struct ParentsFighting: View {
                 VStack {
                
                     Spacer()
-                    .frame(height: 50)
+                    .frame(height: 20)
                     
                     Text("Questioning?")
                         .font(.system(size: 40))
                         .fontWeight(.thin)
-                        .foregroundColor(Color.purple)
-                        .kerning(10)
+                        .foregroundColor(Color.blue)
+//                        .kerning(10)
            
                     Spacer()
                     .frame(height: 20)
                     
                 Text("Are they getting divorced?")
-                    .font(.system(size: 25))
+                    .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                   
                     Spacer()
-                    .frame(height: 10)
+                    .frame(height: 5)
                 }
                 
             VStack {
                 Text("What happens to me?")
-                    .font(.system(size: 25))
+                    .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
               
                 Spacer()
-                .frame(height: 10)
+                .frame(height: 5)
                 
                 Text("I hate it when the screaming starts")
-                    .font(.system(size: 24))
+                    .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
                 
                 Spacer()
-                .frame(height: 10)
+                .frame(height: 25)
                 
                 Text("What can I do?")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color.blue)
                 
                
          
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 10)
                 
                 NavigationLink(
                     destination: Step1_ParentsFighting(),
@@ -116,7 +116,8 @@ struct ParentsFighting: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
                 
-               
+                Spacer()
+                    .frame(height: 50)
             }
         }
         

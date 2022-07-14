@@ -44,9 +44,9 @@ struct PickMediator2: View {
                 
                 Text("NOTE: You must both agree on the \nfriend to be named, Mediator.")
                     .fontWeight(.thin)
-                    .frame(width: 310, height: 100)
+                    .frame(width: 310, height: 50)
                     .foregroundColor(Color .blue)
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .background(ColorManager.grey2)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -54,11 +54,11 @@ struct PickMediator2: View {
                 
                 
                 
-                Text("NOTE: This technique can \nbe used in Freind Groups and \nfor Huge Fight with BFF")
+                Text("NOTE: This technique can be used in \nFreind Groups and for Huge Fight with BFF")
                     .fontWeight(.thin)
-                    .frame(width: 310, height: 100)
+                    .frame(width: 310, height: 75)
                     .foregroundColor(Color .blue)
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .background(ColorManager.grey2)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -92,7 +92,7 @@ struct PickMediator2: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("(Please tap only once)")
+                Text("(Push Notification sent when 'Tapped')")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)
@@ -224,13 +224,15 @@ struct PickMediator2: View {
                     
                  
                 })
-              
+                    Spacer()
+                        .frame(height: 100)
                 }
-                
+               
                 
             }
 
-
+     
+            
         }
     }
     

@@ -84,7 +84,7 @@ struct HomeView: View {
                         
                         if planets.count > 1 && !focusPlanet {
                             Spacer()
-                                .frame(width: 40)
+                                .frame(width: 30)
 //                                .frame(width: 40, height: 40)
 //                                .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
                             
@@ -99,7 +99,7 @@ struct HomeView: View {
                         }
                         if planets.count > 2 && !focusPlanet {
                             Spacer()
-                                .frame(width: 40)
+                                .frame(width: 30)
                             planets[2]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)
                                     if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[2].user.id {
@@ -153,7 +153,7 @@ struct HomeView: View {
                                 if !focusPlanet {
                                     PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                         .scaledToFit()
-                                        .frame(width: 120, height:120)
+                                        .frame(width: 90, height: 90)
                                         .onTapGesture(perform: mainPlanetTapped)
                                         .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
                                         .padding()
@@ -200,9 +200,9 @@ struct HomeView: View {
                         }, label: {
                             Text("Create 'New' Chat Room")
                                 .fontWeight(.regular)
-                                .frame(width: 270, height: 30)
+                                .frame(width: 250, height: 30)
                                 .foregroundColor(.white)
-                                .background(ColorManager.purple3)
+                                .background(ColorManager.purple4)
                                 .cornerRadius(15)
                         })
                         
@@ -211,7 +211,7 @@ struct HomeView: View {
                     //                    Text("received push notification to")
                     
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 10)
                     
 //                    Text("Received Push Notification about:")
 //                        .font(.system(size: 15))
@@ -233,7 +233,7 @@ struct HomeView: View {
                                     .opacity(0.8)
                             })
                         }
-                        Spacer().frame(height:15)
+                        Spacer().frame(height: 10)
                         
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
@@ -246,7 +246,7 @@ struct HomeView: View {
                                 .opacity(0.8)
                                 .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
                         })
-                        Spacer().frame(height:15)
+                        Spacer().frame(height: 10)
                        
                         NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                        label: {
@@ -259,7 +259,7 @@ struct HomeView: View {
                                 .opacity(0.8)
                         })
                         Spacer()
-                            .frame(height:15)
+                            .frame(height: 10)
                         
                         NavigationLink(destination: VirtualHug(),
                                        label: {
@@ -288,7 +288,7 @@ struct HomeView: View {
 //
 //                        Spacer()
                         Spacer()
-                            .frame(height:50)
+                            .frame(height: 60)
                         
 //                        MARK: Want to send this to the new [BestFriendsPlaylists] page
 //                        NavigationLink(destination: EmptyView(),
@@ -308,7 +308,8 @@ struct HomeView: View {
                         
                         
                     }
-                    
+//                    Spacer()
+//                        .frame(height: 100)
                 }
                 Spacer()
                 if homeData?.groups != nil && homeData?.user != nil {

@@ -56,32 +56,22 @@ struct Friend1VaultPractice: View {
                 
                 //MARK: code to get friends name at top of page
                 HStack {
-                    Spacer()
-                        .frame(width: 35)
                     
                     Text(friend.firstName + " " + friend.lastName)
                         .font(.system(size: 17))
                         .foregroundColor(.white)
-                    
-                    
-                    Spacer()
-                    
-                    
+                        .padding()
+                      
                 }
-                
-                Spacer()
-                    .frame(height: 7)
-                
+               
                 Text("wants you to know")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
-                    .frame(width:325, height: 25)
                     .foregroundColor(.white)
                 
                 Text("their mood just changed")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
-                    .frame(width:325, height: 25)
                     .foregroundColor(.white)
                 
                 if (mostRecentMoodLog != nil) {
@@ -103,7 +93,7 @@ struct Friend1VaultPractice: View {
                                 .padding()
                         }
                     }
-                    .frame(width: 350, height: 150)
+                    .frame(width: 300, height: 100)
                     .opacity(0.63)
                     .cornerRadius(25)
                     .padding()
@@ -120,10 +110,10 @@ struct Friend1VaultPractice: View {
                 TextField("", text: $customMessage)
                     .placeholder(when: customMessage.isEmpty) {
                         HStack {
-                            Text("Send a supportive message in Chat")
+                            Text("Send supportive message in Chat")
                             .foregroundColor(.white)
-                            
-                            Spacer()
+//                            .frame(width: 300, height: 100)
+//                          Spacer()
                         }
                     }
                     .font(.system(size: 18))
@@ -143,21 +133,21 @@ struct Friend1VaultPractice: View {
                     }, label: {
                         Text("Send to Chat")
                             .fontWeight(.thin)
-                            .frame(width: 200, height: 25)
-                            .foregroundColor(.purple)
-                            .font(.system(size: 22))
+                            .frame(width: 150, height: 30)
+                            .foregroundColor(.white)
+                            .font(.system(size: 25))
                         //                                .opacity(0.5)
-                            .background(ColorManager.purple2)
+                            .background(ColorManager.purple3)
                             .opacity(0.7)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-                    .padding()
+//                    .padding()
                     
                     Text("Respond instantly via Push Notification")
-                        .font(.system(size: 18))
+                        .font(.system(size: 15))
                         .fontWeight(.medium)
-                        .frame(width:325, height: 25)
+//                        .frame(width:325, height: 25)
                         .foregroundColor(.white)
                     
                     Button(action: {
@@ -231,7 +221,7 @@ struct Friend1VaultPractice: View {
                     
                     
                     Spacer ()
-                        .frame(height: 20)
+                        .frame(height: 10)
                 }
                 //
                 //                Text("Send Hug")
@@ -250,12 +240,12 @@ struct Friend1VaultPractice: View {
                             //                        .resizable()
                             
                                 .fontWeight(.thin)
-                                .frame(width: 125, height: 32)
+                                .frame(width: 135, height: 32)
                                 .font(.system(size: 25))
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             //                        .scaledToFit()
                             //                        .colorInvert()
-                                .background(ColorManager.orange4)
+                                .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 .onTapGesture {
@@ -278,7 +268,7 @@ struct Friend1VaultPractice: View {
                             .colorInvert()
                             .blur(radius: 2)
                             .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                            .padding(.horizontal, 30)
+                            .padding(.horizontal, 0)
                             .onTapGesture {
                                 RestApi.instance.sendPushNotification(title: "Note", body: "", APNToken: friend.APNToken )
                                 
@@ -290,10 +280,10 @@ struct Friend1VaultPractice: View {
                             label: {
                                 Text("Send Song")
                                     .fontWeight(.thin)
-                                    .frame(width: 125, height: 32)
+                                    .frame(width: 135, height: 32)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 25))
-                                    .background(ColorManager.orange4)
+                                    .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -303,9 +293,10 @@ struct Friend1VaultPractice: View {
                         
                         
                     }
-                    
+//                    Spacer()
+//                        .frame(height: 50)
                 }
-                .padding(.bottom, 55)
+                .padding(.bottom, 57)
             }
         }
         

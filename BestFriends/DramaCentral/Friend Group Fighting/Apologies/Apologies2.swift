@@ -70,11 +70,11 @@ struct Apologies2: View {
 //                    .foregroundColor(Color.white)
 //
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 20)
                 
                       
                         Text("Holding yourself accountable \nis one of the best ways to be \na good friend and show them \nyou care.")
-                            .font(.system(size: 25))
+                            .font(.system(size: 20))
 //                            .foregroundColor(ColorManager.white)
                             .fontWeight(.light)
                             .foregroundColor(Color.white)
@@ -99,7 +99,8 @@ struct Apologies2: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                       
                         })
-
+                Spacer()
+                    .frame(height: 125)
             }
               
         }

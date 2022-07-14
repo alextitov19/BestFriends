@@ -44,18 +44,18 @@ struct Apologies4: View {
 //
                 
                 Text("Some EXAMPLES of what to \nsay in a Chat message")
-                    .font(.system(size: 25))
+                    .font(.system(size: 20))
                     .fontWeight(.regular)
                     .foregroundColor(Color .white)
                 
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 5)
                 
                 Text("Hey, I would like to apologize \nfor what I said.")
                     .fontWeight(.thin)
-                    .frame(width: 310, height: 100)
+                    .frame(width: 310, height: 50)
                     .foregroundColor(Color .blue)
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .background(ColorManager.grey2)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -65,9 +65,9 @@ struct Apologies4: View {
                 
                 Text("Hi, I wanted to apologize \nfor what I did to you.")
                     .fontWeight(.thin)
-                    .frame(width: 310, height: 100)
+                    .frame(width: 310, height: 50)
                     .foregroundColor(Color .blue)
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .background(ColorManager.grey2)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -101,7 +101,7 @@ struct Apologies4: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("(Please tap only once)")
+                Text("(Push Notification is sent when 'Tapped')")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)
@@ -233,7 +233,8 @@ struct Apologies4: View {
                     
                  
                 })
-              
+                    Spacer()
+                        .frame(height: 100)
                 }
                 
                 

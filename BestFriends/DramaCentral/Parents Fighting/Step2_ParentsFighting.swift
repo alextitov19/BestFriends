@@ -18,7 +18,13 @@ struct Step2_ParentsFighting: View {
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
+//            Image("purpleBackground")
+//                .resizable()
+//                .scaledToFill()
+//                .ignoresSafeArea()
+//
+            
+            Image("in bushes")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
@@ -33,57 +39,56 @@ struct Step2_ParentsFighting: View {
                 
                 
                 Text("After things")
-                    .font(.system(size: 50))
+                    .font(.system(size: 40))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
-                
-                Spacer()
-                    .frame(height: 10)
                 
                 Text("Calm Down")
-                    .font(.system(size: 70))
+                    .font(.system(size: 60))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
                 
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("- Tell parents how much their \narguing upsets you")
-                    .font(.system(size: 25))
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-               
             
-      
-                VStack {
-                    Spacer()
-                        .frame(height: 70)
-                    
-                    Text("Talk it out with others like you")
-                        .font(.system(size: 27))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    Text("(Send us an email if you \nwould like us to consider \nbuilding a forum.)")
-                        .font(.system(size: 20))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                  
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    Text("Admin@SocialTechLabs.com")
-                        .font(.system(size: 20))
+                
+                Text("Tell parents how much")
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.black)
+               
+  Text("their arguing upsets you")
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .foregroundColor(Color.black)
+//
+//                VStack {
+//                    Spacer()
+//                        .frame(height: 40)
+//
+//                    Text("Talk it out with others")
+//                        .font(.system(size: 27))
+//                        .fontWeight(.ultraLight)
+//                        .foregroundColor(Color.black)
+//
+//                    Spacer()
+//                        .frame(height: 20)
+//
+//                    Text("(Send us an email if you \nwould like us to consider \nbuilding a forum.)")
+//                        .font(.system(size: 20))
 //                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                    
+//                        .fontWeight(.light)
+//                        .foregroundColor(Color.white)
+//
+//                    Spacer()
+//                        .frame(height: 10)
+//
+//                    Text("Admin@SocialTechLabs.com")
+//                        .font(.system(size: 20))
+////                        .italic()
+//                        .fontWeight(.light)
+//                        .foregroundColor(Color.white)
+//
                     Spacer()
-                        .frame(height: 25)
+                        .frame(height: 285)
 //
 //
 //                    NavigationLink(
@@ -107,7 +112,7 @@ struct Step2_ParentsFighting: View {
         }
     }
 }
-}
+
 
 
 

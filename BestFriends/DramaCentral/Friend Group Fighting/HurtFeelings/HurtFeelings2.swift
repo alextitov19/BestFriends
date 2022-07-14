@@ -87,10 +87,15 @@ struct HurtFeelings2: View {
                      .fontWeight(.thin)
                     .foregroundColor(Color.white)
                           
-         
+          
               
         }
+                      
+                      Spacer()
+                          .frame(height: 75)
     }
+                  
+               
 }
 }
     }

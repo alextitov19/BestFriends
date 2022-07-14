@@ -121,10 +121,11 @@ struct PlanetActionsView: View {
                                
                             }
                         }
+                        
                     })
                     
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 15)
                     
 
                     NavigationLink(destination: InviteView(user: user), label: {
@@ -151,9 +152,11 @@ struct PlanetActionsView: View {
                                     
                             }
                         }
+                        
+                     
                     }
                     )}
-                
+                   
                 VStack {
 //                    NavigationLink(destination: InviteView(), label: {
                        
@@ -194,7 +197,7 @@ struct PlanetActionsView: View {
                     
                     
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 15)
                     
 //                    NavigationLink(destination: InfoViewPlanet(),
 //                                   label: {
@@ -205,7 +208,7 @@ struct PlanetActionsView: View {
                                    label: {
                         ZStack {
                             Circle()
-                                .frame(width: 120, height: 120)
+                                .frame(width: 110, height: 110)
                                 .foregroundColor(ColorManager.orange2)
                               
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
@@ -244,7 +247,7 @@ struct PlanetActionsView: View {
                     
                
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 15)
                     NavigationLink(destination: BuiltByTeens2(),
                                    
                 label: {
@@ -277,7 +280,7 @@ struct PlanetActionsView: View {
                             }
                         }
                     })
-                  
+                   
                 }
                 
                 
@@ -314,7 +317,7 @@ struct PlanetActionsView: View {
                     
                     
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 15)
                     
                     
                   
@@ -337,17 +340,24 @@ struct PlanetActionsView: View {
                                     .opacity(0.50)
                             }
                         }
+                       
                     })
                     
-                    
+                 
+
                     
                 }
-                
+               
+                    
             }
-            
+           
         }
         
     }
-    
+//        Spacer()
+//            .frame(height: 50)
 }
+  
+    
+    
 }

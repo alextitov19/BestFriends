@@ -62,19 +62,18 @@ struct Step7_TimeToTalk: View {
                             .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
-                        Spacer ()
-                            .frame(height: 20)
+                      
                            
                     }
                 }
             VStack {
             Text("When you're Ready")
-                .font(.system(size: 40))
+                .font(.system(size: 30))
                 .fontWeight(.thin)
                 .foregroundColor(Color.black)
            
             Text("set a time to meet")
-                .font(.system(size: 40))
+                .font(.system(size: 30))
                 .fontWeight(.thin)
                 .foregroundColor(Color.black)
            
@@ -104,7 +103,7 @@ struct Step7_TimeToTalk: View {
           }
 
                     Spacer()
-                        .frame(height: 80)
+                        .frame(height: 200)
                    
 
                     }

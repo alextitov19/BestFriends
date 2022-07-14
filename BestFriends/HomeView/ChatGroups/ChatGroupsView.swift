@@ -38,16 +38,32 @@ struct ChatGroupsView: View {
                     
                     VStack(alignment: .center) {
                         
-                        Capsule()
-                            .fill(Color.white)
-                            .frame(width: 60, height: 4)
-                            .padding(.top)
+                        HStack {
                         
-                        
+//                            Capsule()
+//                                .fill(Color.white)
+//                                .frame(width: 40, height: 4)
+//                                .padding(.top)
+                            
+                            Text("^")
+                                .font(.system(size: 35))
+                                .fontWeight(.thin)
+                                .foregroundColor(.white)
+                            
                         Text("My Chat Rooms")
                             .font(.system(size: 20))
                             .fontWeight(.thin)
-                            .foregroundColor(.purple)
+                            .foregroundColor(ColorManager.purple2)
+                        
+                            Text("^")
+                                .font(.system(size: 35))
+                                .fontWeight(.thin)
+                                .foregroundColor(.white)
+//                        Capsule()
+//                            .fill(Color.white)
+//                            .frame(width: 40, height: 4)
+//                            .padding(.top)
+                        }
                         
                         //MARK: ScrollView content...
                         ScrollView(.vertical, showsIndicators: false) {
@@ -61,7 +77,7 @@ struct ChatGroupsView: View {
                                         .padding(.top, 15)
                                 }
                                 
-                                CustomDivider(color: Color.white)
+                                CustomDivider(color: Color.purple)
                                     .padding(.horizontal, 30)
                             }
                         }
@@ -73,7 +89,8 @@ struct ChatGroupsView: View {
                         
                         Text("Hide")
                             .font(.system(size: 35))
-                            .foregroundColor(.purple)
+                            .foregroundColor(ColorManager.purple2)
+                           
                             .onTapGesture(perform: {
                                 self.offset = 30
                             })

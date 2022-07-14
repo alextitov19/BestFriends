@@ -44,15 +44,15 @@ struct AtmosphereMain2: View {
                     
                     Text("'Aura'")
                         .font(.system(size: 35))
-                        
+                        .fontWeight(.medium)
                         .foregroundColor(Color.white)
                     
                     Text("distinctive 'Atmosphere' \nthat surrounds you")
                         .font(.system(size: 20))
                         .foregroundColor(ColorManager.grey1)
                       
-                        .padding(.horizontal)
-//                    Spacer()
+//                        .padding(.horizontal)
+
                 }
                
                 
@@ -139,7 +139,7 @@ struct AtmosphereMain2: View {
                     }
                     
                     Spacer()
-                        .frame(width: 40)
+                        .frame(width: 20)
                     
                     VStack {
                         Button(action: {
@@ -177,7 +177,7 @@ struct AtmosphereMain2: View {
                     }
                     
                     Spacer()
-                        .frame(width: 40)
+                        .frame(width: 20)
                     
                     VStack {
                         
@@ -267,27 +267,27 @@ struct AtmosphereMain2: View {
                     
                     ZStack {
                         Rectangle()
-                            .frame(width:330, height: 50)
+                            .frame(width:310, height: 50)
                             .cornerRadius(15)
                             .foregroundColor(Color.gray)
                             .opacity(0.9)
                         
                         TextField("You can type what's up here...", text: $summary)
                             .font(.system(size: 20))
-                            .foregroundColor(Color.white)
-                            .padding(.horizontal, 40)
+                            .foregroundColor(ColorManager.purple2)
+                            .padding(.horizontal, 50)
                             .onReceive(Just(summary)) { _ in limitText(40) }
                         
                         
                     }
                     
-                    
-                    
+                    Spacer()
+                        .frame(height: 5)
                     
                     HStack {
-                        Text("Wanna let your friends know?")
-                            .font(.system(size: 20))
-                            .italic()
+                        Text("Alert friends")
+                            .font(.system(size: 30))
+                        
                             .fontWeight(.light)
                             .foregroundColor(ColorManager.grey1)
                             .padding(.horizontal)
@@ -301,7 +301,7 @@ struct AtmosphereMain2: View {
                         
 //                        Spacer()
                     }
-                    .padding(.horizontal)
+//                    .padding(.horizontal)
                     
                     HStack {
                         if friends.count > 1 {

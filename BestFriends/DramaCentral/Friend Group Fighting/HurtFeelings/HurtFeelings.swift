@@ -72,8 +72,7 @@ struct HurtFeelings: View {
                         
                         })
 //                
-//                Spacer()
-//                    .frame(height: 50)
+               
 //                
 //                Text("Did they say or do \nsomething hurtful?")
 //                    .font(.system(size: 30))
@@ -84,6 +83,9 @@ struct HurtFeelings: View {
             }
               
         }
+            Spacer()
+                .frame(height: 200)
+
     }
 }
 }

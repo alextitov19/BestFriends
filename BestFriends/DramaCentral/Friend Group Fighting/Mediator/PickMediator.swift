@@ -81,16 +81,17 @@ struct PickMediator: View {
                 
                 
                 Spacer()
-                    .frame(height: 30)
+                    .frame(height: 15)
                 
-                Text("Each of you will tell \nyour side to the story to \nthe mediator and from \nthere the mediator will \nhelp you work things out.")
+                Text("Each of you will tell your side of \nthe story to the, then mediator \nwill help you work things out.")
                     .font(.system(size: 17))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
                     .multilineTextAlignment(.center)
                     
-                    
+                Spacer()
+                    .frame(height: 75)
                     
 //
 //                    .font(.system(size: 20))
