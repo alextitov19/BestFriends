@@ -106,8 +106,11 @@ struct InviteView: View {
                         }
                     }
                 } else {
-                    Text("You already have 5 friends\nRemove a friend to add another one")
-                        .font(.system(size: 30))
+                    Spacer()
+                        .frame(height: 15)
+                    Text("You already have 5 friends\nRemove a friend to add new one")
+                        .font(.system(size: 20))
+                        .fontWeight(.thin)
                         .foregroundColor(.red)
                 }
             }
