@@ -30,7 +30,7 @@ struct IndividualFriendMessages: View {
                 .scaledToFill()
                 .onAppear(perform: loadData)
             
-            AdPlayerView(name: "rockSit")
+            AdPlayerView(name: "MoonChild")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             

@@ -236,22 +236,27 @@ struct NostalgiaPreload2: View {
                     
                  
                 })
-                    Spacer()
+                      Spacer ()
                     .frame(height: 15)
+                
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                    label: {
+                        Text("Home")
+                            .fontWeight(.thin)
+                            .frame(width: 150, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
                     
-                    Text("*Even if you friend isn't on BestFriends")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(Color.blue)
-                    Text("Just do it on your Phone!")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(Color.blue)
+                
                     
                     Spacer()
-                    .frame(height: 75)
+                    .frame(height: 55)
                 }
                 
                 
