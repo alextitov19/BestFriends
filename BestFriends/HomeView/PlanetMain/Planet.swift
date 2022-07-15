@@ -208,11 +208,11 @@ struct PlanetActionsView: View {
                                    label: {
                         ZStack {
                             Circle()
-                                .frame(width: 110, height: 110)
+                                .frame(width: 90, height: 90)
                                 .foregroundColor(ColorManager.orange2)
                               
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.55)
+                                .opacity(0.15)
                             
                             VStack {
                                 
@@ -224,14 +224,14 @@ struct PlanetActionsView: View {
                                 Text("Getting")
                                     .foregroundColor(.green)
 //                                    .foregroundColor(ColorManager.green)
-                                    .font(.system(size: 25, weight: .bold))
+                                    .font(.system(size: 22, weight: .bold))
 //                                    .italic()
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
                                 
                                 Text("Started")
-                                    .foregroundColor(ColorManager.purple1)
+                                    .foregroundColor(ColorManager.orange2)
                                 .italic()
                                 .font(.system(size: 17, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -255,7 +255,7 @@ struct PlanetActionsView: View {
                         
                         ZStack {
                             Circle()
-                                .frame(width: 80, height: 80)
+                                .frame(width: 85, height: 85)
                                 .foregroundColor(ColorManager.orange2)
                                 .foregroundColor(.pink)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
