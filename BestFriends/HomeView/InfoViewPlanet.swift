@@ -112,7 +112,7 @@ struct InfoViewPlanet: View {
                .multilineTextAlignment(.center)
                .foregroundColor(Color.purple)
            
-           Text("-Use 'Pullup' to see existing Rooms \nTap [Remove Me] to be removed \nTap 'HOME' icon to Exit")
+           Text("-Use 'Pullup' to see existing Rooms \n-Tap [Remove Me] to be removed \n-Tap 'HOME' icon to Exit")
                .font(.system(size: 15))
                .fontWeight(.light)
                .multilineTextAlignment(.center)
@@ -129,7 +129,7 @@ struct InfoViewPlanet: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
                 
-                Text("-Tap 'Lock' icon \nTo 'Un-Hide' enter 4 digit PIN")
+                Text("-Tap 'Lock' icon \n-to 'Un-Hide' enter 4 digit PIN")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -152,16 +152,23 @@ struct InfoViewPlanet: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
                 
-                Text("-Tap friend's planet, tap dropdown")
+                Text("-Tap friend's planet")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .foregroundColor(ColorManager.grey1)
 //                    .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                  
-         
+                Text("that sent notification, tap dropdown")
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
+                    .foregroundColor(ColorManager.grey1)
+//                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+             
+                
                 Spacer()
-                .frame(height: 70)
+                .frame(height: 135)
                 
 
            

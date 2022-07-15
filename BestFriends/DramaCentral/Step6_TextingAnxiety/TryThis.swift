@@ -24,10 +24,13 @@ struct TryThis: View {
 //        NavigationView {
             
             ZStack {
-                Image("blueBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
+                
+                ColorManager.grey2
+                      .ignoresSafeArea()
+//                Image("blueBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
                 
                     .onAppear{
                         print("is this working")
@@ -42,8 +45,8 @@ struct TryThis: View {
                     }
          
                 VStack {
-                    Text("While counting the HOURS")
-                        .font(.system(size: 30))
+                    Text("While counting the hours")
+                        .font(.system(size: 25))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
@@ -51,16 +54,16 @@ struct TryThis: View {
                     
                     
                     Text("waiting on an")
-                        .font(.system(size: 30))
+                        .font(.system(size: 25))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 0)
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 20)
                     
                     Text("ANSWER BACK")
-                        .font(.system(size: 55))
+                        .font(.system(size: 45))
                         .foregroundColor(.blue)
                         .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
@@ -70,7 +73,7 @@ struct TryThis: View {
                         .frame(height: 30)
                     
                     Text("*listen to your favorite songs \n*take a walk \n*watch a funny video \n*watch a movie \n*hangout with friends in Chat")
-                        .font(.system(size: 23))
+                        .font(.system(size: 17))
                         .italic()
                         .fontWeight(.light)
                         .foregroundColor(.white)
@@ -91,10 +94,10 @@ struct TryThis: View {
                            label: {
                                Text("Go to [My Room]")
                                    .fontWeight(.thin)
-                                   .frame(width: 330, height: 40)
+                                   .frame(width: 200, height: 40)
                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                    .font(.system(size: 25))
-                                   .background(ColorManager.purple3)
+                                   .background(ColorManager.purple5)
                                    .cornerRadius(15)
                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                            }).onAppear(perform:{
@@ -102,25 +105,25 @@ struct TryThis: View {
                            })
                         }
                       
-                        
                         Spacer()
-                            .frame(height:25)
+                            .frame(height:20)
                         
-//
-//                        Button(action: {
-//                            sessionManager.showHome()
-//                        },
-//                           label: {
-//                               Text("Hang-out with your friends in Chat")
-//                                   .fontWeight(.thin)
-//                                   .frame(width: 330, height: 40)
-//                                   .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                   .font(.system(size: 20))
-//                                   .background(ColorManager.purple3)
-//                                   .cornerRadius(15)
-//                                   .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                           })
-//                      
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                            label: {
+                                Text("Home")
+                                    .fontWeight(.thin)
+                                    .frame(width: 200, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                       
+                        
+                      
                         Spacer()
                             .frame(height: 130)
                 }

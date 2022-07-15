@@ -128,7 +128,7 @@ struct Step2_FightLandingView: View {
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 40)
                                         .font(.system(size: 27))
-                                        .background(ColorManager.purple3)
+                                        .background(ColorManager.purple5)
                                         
         //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
         //
