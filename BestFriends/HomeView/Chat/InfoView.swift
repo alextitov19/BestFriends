@@ -34,13 +34,13 @@ struct InfoView: View {
             VStack {
                 
                 Text("Long-tap")
-                    .font(.system(size: 40))
+                    .font(.system(size: 30))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
              
                 Text("M E S S A G E")
-                    .font(.system(size: 40))
+                    .font(.system(size: 35))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
@@ -49,7 +49,7 @@ struct InfoView: View {
                
                     
                 Text("-Save messages \nto SmileVault \n- Report User")
-                    .font(.system(size: 25))
+                    .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.gray)
@@ -59,17 +59,17 @@ struct InfoView: View {
                 
             VStack {
                      Spacer()
-                     .frame(height: 30)
+                     .frame(height: 20)
                      
                
                 Text("Hide Chat")
-                    .font(.system(size: 40))
+                    .font(.system(size: 35))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
                 
                 Text("Restore with Secret PIN")
-                    .font(.system(size: 25))
+                    .font(.system(size: 20))
                     .fontWeight(.light)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
@@ -83,56 +83,26 @@ struct InfoView: View {
                     .foregroundColor(Color.white)
                   
                     Spacer()
-                    .frame(height: 30)
+                    .frame(height: 20)
                 }
                 
             VStack {
                 
                 Text("For Your Safety")
-                    .font(.system(size: 40))
+                    .font(.system(size: 35))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
                 
-                Text("- Download images \n- Copy/Paste messages")
+                Text("- Can't download images \n- Can't Copy/Paste messages \n- 112 bit Encription")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                  
-                
-                Text("(112 bit encription)")
-                    .font(.system(size: 15))
-                    .italic()
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                  
-                    Spacer()
-                    .frame(height: 30)
-                
-           
-                Spacer()
-                .frame(height: 30)
-                
-//                Text("Screen-shot Chat messages")
-//                    .font(.system(size: 24))
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-//
-//                Text("(coming end summer)")
-//                    .font(.system(size: 20))
-//                    .italic()
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-//
-                
-                
-           
-                
-                        Text("back to Chat")
+            
+                 
+                Text("back to Chat")
                             .fontWeight(.thin)
                             .frame(width: 200, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
