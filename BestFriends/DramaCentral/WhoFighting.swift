@@ -53,19 +53,25 @@ struct WhoFighting: View {
               NavigationLink(destination: ParentsFighting(), label: {
                   WhoFightingCircle (color: .gray, friendName: "Parents \nFighting")
             })
-            .offset(x: showItems ? 75 : 0, y: showItems ? 130: 0)
+            .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
             
 
             NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "Teen \nFriendGroup \nDrama")
             })
-            .offset(x: showItems ? -100 : 0, y: showItems ? -90: 0)
+            .offset(x: showItems ? -90 : 0, y: showItems ? -150: 0)
             
             NavigationLink(destination: NostalgiaPreload2(user: user, friends: friends, groups: groups), label: {
                 WhoFightingCircle (color: .orange, friendName: "Nostalgia")
             })
             .offset(x: showItems ? 95 : 0, y: showItems ? -30: 0)
             
-
+            NavigationLink(destination: NostalgiaPreload2(user: user, friends: friends, groups: groups), label: {
+                WhoFightingCircle (color: .pink, friendName: "Sweetheart")
+            })
+            .offset(x: showItems ? -110 : 0, y: showItems ? 120: 0)
+           
+            
+            
         Image(systemName: "triangle.fill")
                     .resizable()
                     .foregroundColor(.gray)
