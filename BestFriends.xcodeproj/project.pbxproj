@@ -10,6 +10,7 @@
 		39D0524EB9F9947C28B9D613 /* Pods_BestFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */; };
 		62319AAD284A788000CA0359 /* FG_Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62319AAC284A788000CA0359 /* FG_Video.swift */; };
 		62319AAE284A7C0000CA0359 /* FGVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF091197284A736800CB0AF0 /* FGVideo2.mp4 */; };
+		62372A152884D57500CAB75C /* HorizonGoalChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62372A142884D57500CAB75C /* HorizonGoalChoices.swift */; };
 		7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04C13C28553818003AB24A /* PhotoPopView.swift */; };
 		7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */; };
 		7A0856A027F3D94500E8282B /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08569F27F3D94500E8282B /* AuthController.swift */; };
@@ -212,6 +213,7 @@
 /* Begin PBXFileReference section */
 		16E04433DE68818589291B02 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		62319AAC284A788000CA0359 /* FG_Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Video.swift; sourceTree = "<group>"; };
+		62372A142884D57500CAB75C /* HorizonGoalChoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizonGoalChoices.swift; sourceTree = "<group>"; };
 		7A04C13C28553818003AB24A /* PhotoPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopView.swift; sourceTree = "<group>"; };
 		7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopImageView.swift; sourceTree = "<group>"; };
 		7A08569F27F3D94500E8282B /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
@@ -1116,6 +1118,7 @@
 		D0CC1A02283EE31900E7461F /* Horizons */ = {
 			isa = PBXGroup;
 			children = (
+				62372A142884D57500CAB75C /* HorizonGoalChoices.swift */,
 				CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */,
 				D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */,
 				D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */,
@@ -1382,6 +1385,7 @@
 				CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */,
 				CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */,
 				CFA1226828598DB800E22E84 /* Apologies3.swift in Sources */,
+				62372A152884D57500CAB75C /* HorizonGoalChoices.swift in Sources */,
 				CFA122602859771600E22E84 /* HurtFeelings.swift in Sources */,
 				CFD12CC7281943CA00AB2539 /* Impetus.swift in Sources */,
 				7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */,

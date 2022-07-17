@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HorizonGoalChoices: View {
+struct HorizonGoalChoices: View { 
     var body: some View {
         
 //        UIScrollView()
