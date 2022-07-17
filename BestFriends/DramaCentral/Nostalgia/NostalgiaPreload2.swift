@@ -55,20 +55,20 @@ struct NostalgiaPreload2: View {
 //                    .foregroundColor(ColorManager.grey3)
   
                 Text("OK, you're not a teen anymore,")
-                    .font(.system(size: 17))
+                    .font(.system(size: 22))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("but Fights still HURT!")
+                Text("but Fights with dear frineds \nstill HURT!")
                     .font(.system(size: 20))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("- Send a song you both like \n- Let youself be vulnerable, send a heart-flet message in Chat \n- Send a picture that always made \nthe both of you - Smile! \n- If this is something you want fix it, \nor let it go!")
+                Text("- Send a song you both like \n- Let youself be vulnerable, send a heart-flet message in Chat \n- Send a picture that always made \nthe both of you - Smile! \n- Fix this!")
                     .fontWeight(.thin)
-                    .frame(width: 320, height: 200)
+                    .frame(width: 310, height: 165)
                     .foregroundColor(ColorManager.grey2)
                     .font(.system(size: 20))
                     .background(ColorManager.grey4)
@@ -90,7 +90,7 @@ struct NostalgiaPreload2: View {
                         .font(.system(size: 22))
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey1)
-                    
+                        .padding(.horizontal)
                     Text("You're sending \nsomething in Chat")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
@@ -243,9 +243,9 @@ struct NostalgiaPreload2: View {
                     sessionManager.showLogin()
                 },
                     label: {
-                        Text("Home")
+                        Text("Home / Chat")
                             .fontWeight(.thin)
-                            .frame(width: 150, height: 40)
+                            .frame(width: 200, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)

@@ -50,26 +50,26 @@ struct Sweetheart1: View {
             
             VStack {
            
-                Text("WOW!")
-                    .font(.system(size: 35))
-                    .fontWeight(.regular)
-                    .foregroundColor(ColorManager.grey3)
+//                Text("WOW!")
+//                    .font(.system(size: 35))
+//                    .fontWeight(.regular)
+//                    .foregroundColor(ColorManager.grey2)
   
-                Text("You just messed up")
+                Text("Facing the")
                     .font(.system(size: 20))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("Big Time")
-                    .font(.system(size: 30))
+                Text("M U S I C")
+                    .font(.system(size: 40))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("- Please do NOT think flowers take the palce of the 'talk' \n- Be 'real' - or they will see right on through you! \n- If you are just going to do it again - save them the heartache \n- Remember, you don't have to be jerk all the time.")
+                Text("- Please do NOT think flowers take the palce of the 'Talk' \n- Look them straight in the eyes, or they will look right on through you! \n- Take responsibility \n- If you are just going to do it again - save them the heartache \n- Grow up or move on!")
                     .fontWeight(.thin)
-                    .frame(width: 320, height: 200)
+                    .frame(width: 320, height: 210)
                     .foregroundColor(ColorManager.grey2)
                     .font(.system(size: 20))
                     .background(ColorManager.grey4)
@@ -92,7 +92,7 @@ struct Sweetheart1: View {
                         .fontWeight(.regular)
                         .foregroundColor(ColorManager.grey1)
                     
-                    Text("Ok, let's talk")
+                    Text("Ok, set a time to TALK")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
@@ -105,13 +105,28 @@ struct Sweetheart1: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("(Please tap only once)")
-                    .font(.system(size: 15))
-                    .italic()
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
+                Text("[SAFETY TIP] If you sleep with someone else you un-repariably break their love & trust forever.")
+//                    .font(.system(size: 17))
+//                    .italic()
+//                    .fontWeight(.thin)
+//                    .foregroundColor(Color.white)
+                    .fontWeight(.light)
+//                    .italic()
+                    .frame(width: 320, height: 75)
+                    .foregroundColor(ColorManager.grey2)
+                    .font(.system(size: 20))
+                    .background(ColorManager.grey4)
+                    .cornerRadius(15)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    .opacity(0.65)
+                
+                
+                
+                
                 
                 HStack {
+                    
+                    
                     
 //                MARK: The [All] button is not activated. When tap nothing comes up in the bottom output screen
                     if friends.count > 1 {
@@ -244,9 +259,9 @@ struct Sweetheart1: View {
                     sessionManager.showLogin()
                 },
                     label: {
-                        Text("Home")
+                        Text("Home / Chat")
                             .fontWeight(.thin)
-                            .frame(width: 150, height: 40)
+                            .frame(width: 200, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.grey2)
@@ -303,7 +318,7 @@ struct Sweetheart1: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends - Nostalgia", body: "\(user.firstName) Sent you something in Chat", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BestFriends - Messed Up", body: "\(user.firstName) Sent you something in Chat", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))

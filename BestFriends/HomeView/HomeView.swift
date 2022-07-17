@@ -84,7 +84,7 @@ struct HomeView: View {
                         
                         if planets.count > 1 && !focusPlanet {
                             Spacer()
-                                .frame(width: 30)
+                                .frame(width: 35)
 //                                .frame(width: 40, height: 40)
 //                                .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
                             
@@ -99,7 +99,7 @@ struct HomeView: View {
                         }
                         if planets.count > 2 && !focusPlanet {
                             Spacer()
-                                .frame(width: 30)
+                                .frame(width: 35)
                             planets[2]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)
                                     if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[2].user.id {
