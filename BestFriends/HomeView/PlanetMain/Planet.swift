@@ -131,7 +131,7 @@ struct PlanetActionsView: View {
                     NavigationLink(destination: InviteView(user: user), label: {
                         ZStack {
                             Circle()
-                                .frame(width: 90, height: 90)
+                                .frame(width: 85, height: 85)
                                 .foregroundColor(ColorManager.orange2)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                .opacity(0.15)
@@ -326,7 +326,7 @@ struct PlanetActionsView: View {
                                    label: {
                         ZStack {
                             Circle()
-                                .frame(width: 90, height: 90)
+                                .frame(width: 85, height: 85)
                                 .foregroundColor(ColorManager.orange2)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                .opacity(0.15)
