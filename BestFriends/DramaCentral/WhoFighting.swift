@@ -67,7 +67,7 @@ struct WhoFighting: View {
             
             
             NavigationLink(destination: Sweetheart1(user: user, friends: friends, groups: groups), label: {
-                WhoFightingCircle (color: .pink, friendName: "Sweetheart")
+                WhoFightingCircle (color: .pink, friendName: "Being \na \nJERK")
             })
             .offset(x: showItems ? -110 : 0, y: showItems ? 120: 0)
            

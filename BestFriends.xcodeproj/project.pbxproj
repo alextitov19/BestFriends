@@ -139,6 +139,9 @@
 		CF4A08F42883700100ADA9DD /* fish.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08F32883700100ADA9DD /* fish.mp4 */; };
 		CF4A08F62883717000ADA9DD /* SmileVault2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08F52883717000ADA9DD /* SmileVault2.mp4 */; };
 		CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */; };
+		CF4A08FD2883A90800ADA9DD /* pexels-tony-schnagl-5528018.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08FC2883A90800ADA9DD /* pexels-tony-schnagl-5528018.mp4 */; };
+		CF4A08FF2883A95B00ADA9DD /* Jerk1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08FE2883A95B00ADA9DD /* Jerk1.mp4 */; };
+		CF4A09012883AADA00ADA9DD /* Fishing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A09002883AADA00ADA9DD /* Fishing.mp4 */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -340,6 +343,9 @@
 		CF4A08F32883700100ADA9DD /* fish.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = fish.mp4; sourceTree = "<group>"; };
 		CF4A08F52883717000ADA9DD /* SmileVault2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SmileVault2.mp4; sourceTree = "<group>"; };
 		CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweetheart1.swift; sourceTree = "<group>"; };
+		CF4A08FC2883A90800ADA9DD /* pexels-tony-schnagl-5528018.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pexels-tony-schnagl-5528018.mp4"; sourceTree = "<group>"; };
+		CF4A08FE2883A95B00ADA9DD /* Jerk1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jerk1.mp4; sourceTree = "<group>"; };
+		CF4A09002883AADA00ADA9DD /* Fishing.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fishing.mp4; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
@@ -802,6 +808,9 @@
 			isa = PBXGroup;
 			children = (
 				CF4A08EF287F837900ADA9DD /* nostalgia.mp4 */,
+				CF4A09002883AADA00ADA9DD /* Fishing.mp4 */,
+				CF4A08FE2883A95B00ADA9DD /* Jerk1.mp4 */,
+				CF4A08FC2883A90800ADA9DD /* pexels-tony-schnagl-5528018.mp4 */,
 				CF4A08F52883717000ADA9DD /* SmileVault2.mp4 */,
 				CF4A08F1287F84DD00ADA9DD /* MoonChild.mp4 */,
 				CF4A08EB287956A100ADA9DD /* sky.mp4 */,
@@ -1183,7 +1192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				62319AAE284A7C0000CA0359 /* FGVideo2.mp4 in Resources */,
+				CF4A08FF2883A95B00ADA9DD /* Jerk1.mp4 in Resources */,
 				CF4A08F2287F84DD00ADA9DD /* MoonChild.mp4 in Resources */,
+				CF4A08FD2883A90800ADA9DD /* pexels-tony-schnagl-5528018.mp4 in Resources */,
 				CF4A08F0287F837900ADA9DD /* nostalgia.mp4 in Resources */,
 				CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */,
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
@@ -1214,6 +1225,7 @@
 				CFDB14FE2855ADE900155CEE /* FeetShowing.mp4 in Resources */,
 				7A78232D26B2419600CA76FC /* blender.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
+				CF4A09012883AADA00ADA9DD /* Fishing.mp4 in Resources */,
 				7A383FFD267AC306002F354A /* FieldFlowers.mp4 in Resources */,
 				CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */,
 				CFDB14EE2855983700155CEE /* girlYellow.mp4 in Resources */,

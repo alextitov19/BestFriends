@@ -43,26 +43,26 @@ struct Sweetheart1: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "nostalgia")
+            AdPlayerView(name: "Fishing")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
             
             VStack {
            
-                Text("Love Drama")
+                Text("WOW!")
                     .font(.system(size: 35))
                     .fontWeight(.regular)
                     .foregroundColor(ColorManager.grey3)
   
-                Text("Wow, you just messed up big time")
-                    .font(.system(size: 17))
+                Text("You just messed up")
+                    .font(.system(size: 20))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("!")
-                    .font(.system(size: 20))
+                Text("Big Time")
+                    .font(.system(size: 30))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey1)
