@@ -65,7 +65,7 @@ struct WhoFighting: View {
             })
             .offset(x: showItems ? 95 : 0, y: showItems ? -30: 0)
             
-            NavigationLink(destination: NostalgiaPreload2(user: user, friends: friends, groups: groups), label: {
+            NavigationLink(destination: EmptyView(), label: {
                 WhoFightingCircle (color: .pink, friendName: "Sweetheart")
             })
             .offset(x: showItems ? -110 : 0, y: showItems ? 120: 0)
