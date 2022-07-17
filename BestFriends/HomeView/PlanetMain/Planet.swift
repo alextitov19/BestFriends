@@ -16,14 +16,15 @@ struct Planet: View {
         VStack {
             PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
                 .scaledToFit()
-                .frame(width: 65, height: 65)
+                .frame(width: 50, height: 50)
                 .glow(color: glowColor())
                 .onAppear(perform: {print("Mood: ", atmosphere.mood)})
             
             
             Text(user.firstName + " " + String(user.lastName.first!))
+                .font(.system(size: 14))
                 .foregroundColor(.white)
-                .fontWeight(.thin)
+                .fontWeight(.ultraLight)
         }
     }
     

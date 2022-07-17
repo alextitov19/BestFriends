@@ -59,7 +59,7 @@ struct HomeView: View {
                 VStack {
                     Image(systemName: ".")
                         .resizable()
-                        .frame(width: 27, height: 27)
+                        .frame(width: 10, height: 10)
                         .scaledToFill()
                         .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
