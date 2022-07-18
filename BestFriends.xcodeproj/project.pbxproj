@@ -11,6 +11,7 @@
 		62319AAD284A788000CA0359 /* FG_Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62319AAC284A788000CA0359 /* FG_Video.swift */; };
 		62319AAE284A7C0000CA0359 /* FGVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF091197284A736800CB0AF0 /* FGVideo2.mp4 */; };
 		62372A152884D57500CAB75C /* HorizonGoalChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62372A142884D57500CAB75C /* HorizonGoalChoices.swift */; };
+		62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62372A162884D7F400CAB75C /* HorizonSetGoal.swift */; };
 		7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04C13C28553818003AB24A /* PhotoPopView.swift */; };
 		7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */; };
 		7A0856A027F3D94500E8282B /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08569F27F3D94500E8282B /* AuthController.swift */; };
@@ -214,6 +215,7 @@
 		16E04433DE68818589291B02 /* Pods-BestFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestFriends.debug.xcconfig"; path = "Target Support Files/Pods-BestFriends/Pods-BestFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		62319AAC284A788000CA0359 /* FG_Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Video.swift; sourceTree = "<group>"; };
 		62372A142884D57500CAB75C /* HorizonGoalChoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizonGoalChoices.swift; sourceTree = "<group>"; };
+		62372A162884D7F400CAB75C /* HorizonSetGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonSetGoal.swift; sourceTree = "<group>"; };
 		7A04C13C28553818003AB24A /* PhotoPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopView.swift; sourceTree = "<group>"; };
 		7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopImageView.swift; sourceTree = "<group>"; };
 		7A08569F27F3D94500E8282B /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
@@ -1122,6 +1124,7 @@
 				CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */,
 				D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */,
 				D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */,
+				62372A162884D7F400CAB75C /* HorizonSetGoal.swift */,
 			);
 			path = Horizons;
 			sourceTree = "<group>";
@@ -1329,6 +1332,7 @@
 				CF1ECAC92875500100D999F8 /* InfoViewPlanet.swift in Sources */,
 				CF3802D728456C83005181E4 /* FG_Team.swift in Sources */,
 				CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */,
+				62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */,
 				CF381A592829205800B3719E /* OurMission.swift in Sources */,
 				7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */,
 				7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */,
