@@ -33,7 +33,7 @@ struct Friend1VaultPractice: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
+            Image("blueBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
