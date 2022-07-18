@@ -66,9 +66,9 @@ struct HideoutsView: View {
                 sessionManager.showLogin()
             },
                 label: {
-                    Text("Home")
+                    Text("Home / Chat")
                         .fontWeight(.thin)
-                        .frame(width: 150, height: 40)
+                        .frame(width: 200, height: 40)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 30))
                         .background(ColorManager.purple3)
