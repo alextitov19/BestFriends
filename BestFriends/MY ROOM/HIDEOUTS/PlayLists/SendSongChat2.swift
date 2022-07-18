@@ -41,6 +41,34 @@ struct SendSongChat2: View {
 
             VStack {
                 
+                  Text("Just got Push Notification")
+                      .font(.system(size: 30))
+                      .foregroundColor(.white)
+                      .fontWeight(.ultraLight)
+                      .multilineTextAlignment(.center)
+                  
+                  Text("your friend changed their mood?")
+                      .font(.system(size: 30))
+                      .foregroundColor(.white)
+                      .fontWeight(.ultraLight)
+                      .multilineTextAlignment(.center)
+
+                  Spacer()
+                      .frame(height: 25)
+                  
+                  Text("Be a BestFrind by sending")
+                      .font(.system(size: 22))
+                      .foregroundColor(.white)
+                      .fontWeight(.ultraLight)
+                  Text("them a song you listen to")
+                      .font(.system(size: 15))
+                      .foregroundColor(.white)
+                      .fontWeight(.ultraLight)
+                  Text("when your mood matches theirs")
+                      .font(.system(size: 15))
+                      .foregroundColor(.white)
+                      .fontWeight(.ultraLight)
+                  
               
         VStack {
 

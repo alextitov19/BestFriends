@@ -167,7 +167,7 @@ private func shareMood() {
                 for i in sharedWith {
                     for f in friends {
                         if i == f.id {
-                            RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed their Mood!", APNToken: f.APNToken )
+                            RestApi.instance.sendPushNotification(title: "BestFriends - Horizons", body: "\(user.firstName) You are invited to Horizons", APNToken: f.APNToken )
                         }
                     }
                     mood = -1

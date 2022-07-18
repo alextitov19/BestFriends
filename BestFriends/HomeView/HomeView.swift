@@ -261,18 +261,31 @@ struct HomeView: View {
                         })
                         Spacer()
                             .frame(height: 10)
-                        
+                       
+                        HStack {
                         NavigationLink(destination: VirtualHug(),
                                        label: {
-                            Text("Friend sent a HUG")
+                            Text("Got HUG")
                                 .fontWeight(.light)
-                                .frame(width: 210, height: 30)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple1)
                                 .cornerRadius(15)
                                 .opacity(0.4)
                         })
 
+                        
+                        NavigationLink(destination: ReceivedPlaylist(),
+                                       label: {
+                            Text("Got SONG")
+                                .fontWeight(.light)
+                                .frame(width: 100, height: 30)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple1)
+                                .cornerRadius(15)
+                                .opacity(0.4)
+                        })
+                        }
                         Spacer().frame(height:10)
                         
                         NavigationLink(destination: EmptyView(),
