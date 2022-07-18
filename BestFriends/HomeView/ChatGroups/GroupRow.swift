@@ -15,6 +15,7 @@ struct GroupRow: View {
     @State var timestring = ""
     
     var body: some View {
+        NavigationView{
         HStack {
             Spacer().frame(width: 10)
                 .onAppear {
@@ -55,6 +56,7 @@ struct GroupRow: View {
             
             Spacer().frame(width: 10)
         }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
     
     private func getData() {

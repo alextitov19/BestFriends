@@ -33,6 +33,7 @@ struct ChatView: View {
     @State private var isLockTapped = false
     @State var pickerSourceType: UIImagePickerController.SourceType = .photoLibrary
     var body: some View {
+        NavigationView{
         ZStack {
             AdPlayerView(name: "FieldFlowers")
                 .ignoresSafeArea()
@@ -166,6 +167,7 @@ struct ChatView: View {
                 }
             }
         }//ZStack
+        }.navigationViewStyle(StackNavigationViewStyle())
     }//body
     
     private func saveToSmileNotes(message: Message) {

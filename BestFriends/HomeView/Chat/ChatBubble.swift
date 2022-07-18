@@ -16,7 +16,6 @@ struct ChatBubble: View {
     @State private var image: UIImage? = nil
     
     var body: some View {
-        
         if myOwnMessage {
             if message.image?.count ?? 0 > 0 {
                 if image != nil {

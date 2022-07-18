@@ -324,7 +324,7 @@ struct HomeView: View {
                     //
                 }
             }
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
     
     private func getHomeData() {
