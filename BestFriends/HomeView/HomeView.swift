@@ -59,7 +59,7 @@ struct HomeView: View {
                 VStack {
                     Image(systemName: ".")
                         .resizable()
-                        .frame(width: 27, height: 27)
+                        .frame(width: 10, height: 10)
                         .scaledToFill()
                         .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
@@ -84,7 +84,7 @@ struct HomeView: View {
                         
                         if planets.count > 1 && !focusPlanet {
                             Spacer()
-                                .frame(width: 30)
+                                .frame(width: 35)
 //                                .frame(width: 40, height: 40)
 //                                .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
                             
@@ -99,7 +99,7 @@ struct HomeView: View {
                         }
                         if planets.count > 2 && !focusPlanet {
                             Spacer()
-                                .frame(width: 30)
+                                .frame(width: 35)
                             planets[2]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[2].user.id)
                                     if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[2].user.id {
@@ -200,10 +200,11 @@ struct HomeView: View {
                         }, label: {
                             Text("Create 'New' Chat Room")
                                 .fontWeight(.regular)
-                                .frame(width: 250, height: 30)
+                                .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple4)
                                 .cornerRadius(15)
+                                .opacity(0.65)
                         })
                         
                     }
@@ -228,9 +229,9 @@ struct HomeView: View {
                                     .fontWeight(.light)
                                     .frame(width: 210, height: 30)
                                     .foregroundColor(.white)
-                                    .background(ColorManager.purple3)
+                                    .background(ColorManager.purple1)
                                     .cornerRadius(15)
-                                    .opacity(0.8)
+                                    .opacity(0.4)
                             })
                         }
                         Spacer().frame(height: 10)
@@ -241,9 +242,9 @@ struct HomeView: View {
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
-                                .background(ColorManager.purple3)
+                                .background(ColorManager.purple1)
                                 .cornerRadius(15)
-                                .opacity(0.8)
+                                .opacity(0.4)
                                 .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
                         })
                         Spacer().frame(height: 10)
@@ -254,9 +255,9 @@ struct HomeView: View {
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
-                                .background(ColorManager.purple3)
+                                .background(ColorManager.purple1)
                                 .cornerRadius(15)
-                                .opacity(0.8)
+                                .opacity(0.4)
                         })
                         Spacer()
                             .frame(height: 10)
@@ -267,9 +268,9 @@ struct HomeView: View {
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
-                                .background(ColorManager.purple3)
+                                .background(ColorManager.purple1)
                                 .cornerRadius(15)
-                                .opacity(0.8)
+                                .opacity(0.4)
                         })
 //
 //                        Spacer().frame(height:15)

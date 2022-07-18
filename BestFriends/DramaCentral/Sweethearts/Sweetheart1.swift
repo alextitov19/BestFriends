@@ -1,18 +1,19 @@
 //
-//  Apologies4.swift
+//  Sweetheart1.swift
 //  BestFriends
 //
-//  Created by Social Tech on 7/9/22.
+//  Created by Social Tech on 7/16/22.
 //
 
-import Foundation
+
+
 import Foundation
 import Combine
 import SwiftUI
 import AVKit
 
 
-struct Apologies4: View {
+struct Sweetheart1: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -28,50 +29,53 @@ struct Apologies4: View {
     
     var body: some View {
         ZStack {
-                        ColorManager.purple4
-                            .ignoresSafeArea()
-                            .onAppear()
+//                        ColorManager.purple4
+//                            .ignoresSafeArea()
+//                            .onAppear()
+//
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
             
+            Image("blueBackground")
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea()
+            
+            AdPlayerView(name: "Fishing")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+
             
             VStack {
-//
-//                HStack {
-//
-////                        .frame(height: 20)
-//
-//                }
-////                .padding(.horizontal)
-//
-                
-                Text("Some EXAMPLES of what to \nsay in a Chat message")
+           
+//                Text("WOW!")
+//                    .font(.system(size: 35))
+//                    .fontWeight(.regular)
+//                    .foregroundColor(ColorManager.grey2)
+  
+                Text("Facing the")
                     .font(.system(size: 20))
-                    .fontWeight(.regular)
-                    .foregroundColor(Color .white)
-                
-                Spacer()
-                    .frame(height: 5)
-                
-                Text("Hey, I would like to apologize \nfor what I said.")
+                    .italic()
                     .fontWeight(.thin)
-                    .frame(width: 310, height: 50)
-                    .foregroundColor(Color .blue)
-                    .font(.system(size: 17))
-                    .background(ColorManager.grey2)
+                    .foregroundColor(ColorManager.grey1)
+                
+                Text("M U S I C")
+                    .font(.system(size: 40))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(ColorManager.grey1)
+                
+                Text("- Please do NOT think flowers take the palce of the 'Talk' \n- Look them straight in the eyes, or they will look right on through you! \n- Take responsibility \n- If you are just going to do it again - save them the heartache \n- Grow up or move on!")
+                    .fontWeight(.thin)
+                    .frame(width: 320, height: 210)
+                    .foregroundColor(ColorManager.grey2)
+                    .font(.system(size: 20))
+                    .background(ColorManager.grey4)
                     .cornerRadius(15)
                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                
-                
-                
-                
-                Text("Hi, I wanted to apologize \nfor what I did to you.")
-                    .fontWeight(.thin)
-                    .frame(width: 310, height: 50)
-                    .foregroundColor(Color .blue)
-                    .font(.system(size: 17))
-                    .background(ColorManager.grey2)
-                    .cornerRadius(15)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                
+                    .opacity(0.65)
                 
                 
                 
@@ -83,12 +87,12 @@ struct Apologies4: View {
                 
                 
                 HStack {
-                    Text("ALERT \nFriend")
-                        .font(.system(size: 27))
+                    Text("ALERT")
+                        .font(.system(size: 22))
                         .fontWeight(.regular)
-                        .foregroundColor(ColorManager.grey4)
+                        .foregroundColor(ColorManager.grey1)
                     
-                    Text("That you are sending \nthem a message in Chat")
+                    Text("Ok, set a time to TALK")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
@@ -101,13 +105,28 @@ struct Apologies4: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("(Push Notification is sent when 'Tapped')")
-                    .font(.system(size: 15))
-                    .italic()
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.black)
+                Text("[SAFETY TIP] If you sleep with someone else you un-repariably break their love & trust forever.")
+//                    .font(.system(size: 17))
+//                    .italic()
+//                    .fontWeight(.thin)
+//                    .foregroundColor(Color.white)
+                    .fontWeight(.light)
+//                    .italic()
+                    .frame(width: 320, height: 75)
+                    .foregroundColor(ColorManager.grey2)
+                    .font(.system(size: 20))
+                    .background(ColorManager.grey4)
+                    .cornerRadius(15)
+                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    .opacity(0.65)
+                
+                
+                
+                
                 
                 HStack {
+                    
+                    
                     
 //                MARK: The [All] button is not activated. When tap nothing comes up in the bottom output screen
                     if friends.count > 1 {
@@ -116,8 +135,8 @@ struct Apologies4: View {
                         },
                                label: {
                             Text("select >")
-//                                .fontWeight(.bold)
                                 .fontWeight(.thin)
+//                                .fontWeight(.bold)
                                 .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 20))
@@ -225,7 +244,7 @@ struct Apologies4: View {
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 30))
                         
-                        .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
+                        .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.grey4)
                         
 //                            .background(ColorManager.purple3)
                         .cornerRadius(15)
@@ -233,25 +252,27 @@ struct Apologies4: View {
                     
                  
                 })
+                      Spacer ()
+                    .frame(height: 15)
+                
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                    label: {
+                        Text("Home / Chat")
+                            .fontWeight(.thin)
+                            .frame(width: 200, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.grey2)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
                     
-                    Spacer ()
-                        .frame(height: 15)
+                
                     
-                    Button(action: {
-                        sessionManager.showLogin()
-                    },
-                        label: {
-                            Text("Home / Chat")
-                                .fontWeight(.thin)
-                                .frame(width: 200, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
                     Spacer()
-                        .frame(height: 70)
+                    .frame(height: 55)
                 }
                 
                 
@@ -297,13 +318,14 @@ struct Apologies4: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends - Apologie", body: "\(user.firstName) Sent you an Apologie in Chat", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BestFriends - Messed Up", body: "\(user.firstName) Sent you something in Chat", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
                     .fontWeight(.bold)
                     .frame(width: 100, height: 30)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    .background(ColorManager.grey2)
+//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                     .font(.system(size: 10))
                     .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
                     .cornerRadius(25)

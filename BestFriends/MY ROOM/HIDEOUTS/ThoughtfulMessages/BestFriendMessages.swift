@@ -34,8 +34,8 @@ struct BestFriendMessages: View {
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-           
-            AdPlayerView(name: "FieldFlowers")
+
+            AdPlayerView(name: "SmileVault2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .onAppear(perform: createPlanets)
@@ -46,45 +46,17 @@ struct BestFriendMessages: View {
                
                    
                 
-                Image(systemName: "heart.fill")
+                Image(systemName: "circle.fill")
                     .resizable()
                     .foregroundColor(ColorManager.purple3)
                     .frame(width: 300, height: 300)
                     .blur(radius: 2)
-                    .shadow(color: .orange, radius: 65, x: 40, y: 50)
-                
+                    .shadow(color: .gray, radius: 65, x: 40, y: 50)
+                    .opacity(0.1)
                 
                 VStack {
                     
-                    Text("STOP Scrolling")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
 
-                    Text("quickly see")
-                        .font(.system(size: 15))
-                        .italic()
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-
-
-                    Text("Special \nMessages")
-                        .font(.system(size: 35))
-                        .foregroundColor(.purple)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-
-                    Text("you 'long-tapped' \nfrom Chat")
-                        .font(.system(size: 16))
-                        .italic()
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .multilineTextAlignment(.center)
-
-                    
                   
                 }
             }
@@ -123,13 +95,13 @@ struct BestFriendMessages: View {
                 }
                 
                 ZStack {
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "circle.fill")
                         .resizable()
-                        .foregroundColor(ColorManager.purple3)
+                        .foregroundColor(ColorManager.grey1)
                         .frame(width: 250, height: 250)
                         .blur(radius: 2)
-                        .shadow(color: .orange, radius: 65, x: 40, y: 50)
-                    
+                        .shadow(color: .white, radius: 65, x: 40, y: 50)
+                        .opacity(0.3)
                     
                     VStack {
                         
@@ -147,14 +119,16 @@ struct BestFriendMessages: View {
                             .multilineTextAlignment(.center)
                         
                         
-                        Text("that make \nyou SMILE")
+                        Text("that made \nyou SMILE")
                             .font(.system(size: 35))
-                            .foregroundColor(.purple)
+                            .foregroundColor(ColorManager.grey1)
+
+//                            .foregroundColor(.gray)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                    
-                        Text("(you 'long-tapped' \nin Chat)")
+                        Text("(you 'long-tapped' \nfrom Chat)")
                             .font(.system(size: 16))
                             .italic()
                             .foregroundColor(.white)

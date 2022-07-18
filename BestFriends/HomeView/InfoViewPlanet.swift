@@ -146,27 +146,32 @@ struct InfoViewPlanet: View {
                 Spacer()
                      .frame(height: 15)
                 
-                Text("Received Push Notification")
+                Text("Friend sent 'Push Notification'")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
                 
-                Text("-Tap friend's planet")
+                Text("-Tap friend's planet that sent")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .foregroundColor(ColorManager.grey1)
 //                    .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                  
-                Text("that sent notification, tap dropdown")
+                Text("notification, see dropdown")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .foregroundColor(ColorManager.grey1)
 //                    .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
              
-                
+                Text("- tap planets to 'show/hide' notifications")
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
+                    .foregroundColor(ColorManager.grey1)
+//                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
                 Spacer()
                 .frame(height: 135)
                 
