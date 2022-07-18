@@ -44,7 +44,7 @@ struct WhoFighting: View {
         ZStack {
 
             NavigationLink(destination: IntroBluemodeFriend(user: user, friends: friends), label: {
-                WhoFightingCircle (color: .purple, friendName: "HUGE \nFight w/ \nTeen BFF")
+                WhoFightingCircle (color: .purple, friendName: "HUGE \nFight w/ \nTEEN BFF")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
 
@@ -56,7 +56,7 @@ struct WhoFighting: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
             
 
-            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "Teen \nFriendGroup \nDrama")
+            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "TEEN \nFriendGroup \nDrama")
             })
             .offset(x: showItems ? -90 : 0, y: showItems ? -150: 0)
             
@@ -67,7 +67,7 @@ struct WhoFighting: View {
             
             
             NavigationLink(destination: Sweetheart1(user: user, friends: friends, groups: groups), label: {
-                WhoFightingCircle (color: .pink, friendName: "Messed \nUp")
+                WhoFightingCircle (color: .pink, friendName: "BetaTest \nthis!")
             })
             .offset(x: showItems ? -110 : 0, y: showItems ? 120: 0)
            
