@@ -12,6 +12,7 @@
 		62319AAE284A7C0000CA0359 /* FGVideo2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF091197284A736800CB0AF0 /* FGVideo2.mp4 */; };
 		62372A152884D57500CAB75C /* HorizonGoalChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62372A142884D57500CAB75C /* HorizonGoalChoices.swift */; };
 		62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62372A162884D7F400CAB75C /* HorizonSetGoal.swift */; };
+		62372A192884E27F00CAB75C /* HorizonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62372A182884E27F00CAB75C /* HorizonCustom.swift */; };
 		7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04C13C28553818003AB24A /* PhotoPopView.swift */; };
 		7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */; };
 		7A0856A027F3D94500E8282B /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08569F27F3D94500E8282B /* AuthController.swift */; };
@@ -216,6 +217,7 @@
 		62319AAC284A788000CA0359 /* FG_Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Video.swift; sourceTree = "<group>"; };
 		62372A142884D57500CAB75C /* HorizonGoalChoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizonGoalChoices.swift; sourceTree = "<group>"; };
 		62372A162884D7F400CAB75C /* HorizonSetGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonSetGoal.swift; sourceTree = "<group>"; };
+		62372A182884E27F00CAB75C /* HorizonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonCustom.swift; sourceTree = "<group>"; };
 		7A04C13C28553818003AB24A /* PhotoPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopView.swift; sourceTree = "<group>"; };
 		7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopImageView.swift; sourceTree = "<group>"; };
 		7A08569F27F3D94500E8282B /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
@@ -1125,6 +1127,7 @@
 				D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */,
 				D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */,
 				62372A162884D7F400CAB75C /* HorizonSetGoal.swift */,
+				62372A182884E27F00CAB75C /* HorizonCustom.swift */,
 			);
 			path = Horizons;
 			sourceTree = "<group>";
@@ -1466,6 +1469,7 @@
 				7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */,
 				CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */,
 				CF3B65D52801ED660003A714 /* GetInvolvedView.swift in Sources */,
+				62372A192884E27F00CAB75C /* HorizonCustom.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
