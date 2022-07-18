@@ -29,31 +29,16 @@ struct Sweetheart1: View {
     
     var body: some View {
         ZStack {
-                        ColorManager.grey3
-                            .ignoresSafeArea()
-                            .onAppear()
-
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
+            
             
             Image("blueBackground")
                 .resizable()
+                .ignoresSafeArea()
                 .scaledToFill()
-                .ignoresSafeArea()
-            
-            AdPlayerView(name: "")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-
-            
+  
             VStack {
            
-//                Text("WOW!")
-//                    .font(.system(size: 35))
-//                    .fontWeight(.regular)
-//                    .foregroundColor(ColorManager.grey2)
+
   
                 Text("Facing the")
                     .font(.system(size: 20))

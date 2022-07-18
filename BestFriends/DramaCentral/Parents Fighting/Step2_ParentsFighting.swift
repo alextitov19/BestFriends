@@ -18,23 +18,13 @@ struct Step2_ParentsFighting: View {
     var body: some View {
         ZStack {
             
-//            Image("purpleBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .ignoresSafeArea()
-//
             
-            Image("in bushes")
+            Image("blueBackground")
                 .resizable()
-                .scaledToFill()
                 .ignoresSafeArea()
-        
-//
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//
-            
+                .scaledToFill()
+
+    
             VStack {
                 
                 
@@ -53,12 +43,12 @@ struct Step2_ParentsFighting: View {
                 Text("Tell parents how much")
                     .font(.system(size: 20))
                     .fontWeight(.light)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.white)
                
   Text("their arguing upsets you")
                     .font(.system(size: 20))
                     .fontWeight(.light)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.white)
                 
                 Spacer ()
                     .frame(height: 15)
