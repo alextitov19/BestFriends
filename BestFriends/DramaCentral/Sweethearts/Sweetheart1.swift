@@ -29,10 +29,10 @@ struct Sweetheart1: View {
     
     var body: some View {
         ZStack {
-//                        ColorManager.purple4
-//                            .ignoresSafeArea()
-//                            .onAppear()
-//
+                        ColorManager.grey3
+                            .ignoresSafeArea()
+                            .onAppear()
+
 //            Image("purpleBackground")
 //                .resizable()
 //                .ignoresSafeArea()
@@ -43,7 +43,7 @@ struct Sweetheart1: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "Fishing")
+            AdPlayerView(name: "")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
@@ -67,7 +67,7 @@ struct Sweetheart1: View {
                     .fontWeight(.thin)
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("- Please do NOT think flowers take the palce of the 'Talk' \n- Look them straight in the eyes, or they will look right on through you! \n- Take responsibility \n- If you are just going to do it again - save them the heartache \n- Grow up or move on!")
+                Text("- Please do NOT think flowers take the place of the 'Talk' \n- Look them straight in the eyes, or they will look right on through you! \n- Take responsibility \n- If you are just going to do it again - save them the heartache \n- Grow up or move on!")
                     .fontWeight(.thin)
                     .frame(width: 320, height: 210)
                     .foregroundColor(ColorManager.grey2)
@@ -104,23 +104,23 @@ struct Sweetheart1: View {
                 
                 Spacer()
                     .frame(height: 15)
-                
-                Text("[SAFETY TIP] If you sleep with someone else you un-repariably break their love & trust forever.")
-//                    .font(.system(size: 17))
-//                    .italic()
-//                    .fontWeight(.thin)
-//                    .foregroundColor(Color.white)
-                    .fontWeight(.light)
-//                    .italic()
-                    .frame(width: 320, height: 75)
-                    .foregroundColor(ColorManager.grey2)
-                    .font(.system(size: 20))
-                    .background(ColorManager.grey4)
-                    .cornerRadius(15)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    .opacity(0.65)
-                
-                
+//
+//                Text("[SAFETY TIP] If you sleep with someone else you un-repariably break their love & trust forever.")
+////                    .font(.system(size: 17))
+////                    .italic()
+////                    .fontWeight(.thin)
+////                    .foregroundColor(Color.white)
+//                    .fontWeight(.light)
+////                    .italic()
+//                    .frame(width: 320, height: 75)
+//                    .foregroundColor(ColorManager.grey2)
+//                    .font(.system(size: 20))
+//                    .background(ColorManager.grey4)
+//                    .cornerRadius(15)
+//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    .opacity(0.65)
+//
+//
                 
                 
                 
