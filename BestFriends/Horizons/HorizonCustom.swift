@@ -35,7 +35,7 @@ struct HorizonCustom: View {
                 
                 
                 TextEditor(text: $summary)
-                    .frame(width: 300, height: 200)
+                    .frame(width: 300, height: 100)
                     .background(.white)
                 
                 Text("  Next  ")
