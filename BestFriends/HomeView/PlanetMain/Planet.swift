@@ -209,7 +209,7 @@ struct PlanetActionsView: View {
                                    label: {
                         ZStack {
                             Circle()
-                                .frame(width: 85, height: 85)
+                                .frame(width: 80, height: 80)
                                 .foregroundColor(ColorManager.orange2)
                               
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
@@ -250,7 +250,7 @@ struct PlanetActionsView: View {
                
                     Spacer()
                         .frame(height: 15)
-                    NavigationLink(destination: BuiltByTeens2(),
+                    NavigationLink(destination: HorizonHomeView(),
                                    
                 label: {
                         

@@ -41,7 +41,7 @@ struct InfoViewPlanet: View {
 //                .frame(height: 5)
                 
                 NavigationLink(
-                    destination: EmptyView(),
+                    destination: BuiltByTeens2(),
                     label: {
                         Text("Built by Teens; Demo & Prototypes")
                             .fontWeight(.thin)

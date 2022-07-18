@@ -264,7 +264,7 @@ struct HomeView: View {
                         
                         NavigationLink(destination: VirtualHug(),
                                        label: {
-                            Text("My friend sent a HUG")
+                            Text("Friend sent a HUG")
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
@@ -272,45 +272,26 @@ struct HomeView: View {
                                 .cornerRadius(15)
                                 .opacity(0.4)
                         })
-//
-//                        Spacer().frame(height:15)
-//
-//                        Button(action: {
-//                            friendSentPlaylist(friend: selectedPlanet!.user)
-//                        }, label: {
-//                            Text("My friend sent a SONG")
-//                                .fontWeight(.light)
-//                                .frame(width: 210, height: 30)
-//                                .foregroundColor(.white)
-//                                .background(ColorManager.purple3)
-//                                .cornerRadius(15)
-//                                .opacity(0.8)
-//                        })
-//
-//                        Spacer()
+
+                        Spacer().frame(height:10)
+                        
+                        NavigationLink(destination: EmptyView(),
+                                       label: {
+                            Text("Invited to Horizons")
+                                .fontWeight(.light)
+                                .frame(width: 210, height: 30)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple1)
+                                .cornerRadius(15)
+                                .opacity(0.4)
+                        })
+                        
+      
                         Spacer()
                             .frame(height: 60)
                         
-//                        MARK: Want to send this to the new [BestFriendsPlaylists] page
-//                        NavigationLink(destination: EmptyView(),
-//                                        label: {
-//                             Text("Friend Sent PlayList")
-//                                 .fontWeight(.thin)
-//                                 .frame(width: 190, height: 25)
-//                                 .foregroundColor(.white)
-//                                 .background(ColorManager.purple3)
-//                                 .cornerRadius(15)
-//                                 .opacity(0.8)
-//                         })
-//                         
-                        
-                        
-                        
-                        
-                        
                     }
-//                    Spacer()
-//                        .frame(height: 100)
+
                 }
                 Spacer()
                 if homeData?.groups != nil && homeData?.user != nil {

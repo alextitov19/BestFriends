@@ -18,19 +18,27 @@ struct HorizonInviteFriends: View {
     @State private var colorChangeTap: String = ""
     
     var body: some View {
+        
+        
+        
+        
+        
         HStack {
-            Text("Alert friends")
+            
+            
+            
+            Text("Invite friends")
                 .font(.system(size: 30))
             
                 .fontWeight(.light)
                 .foregroundColor(ColorManager.grey1)
                 .padding(.horizontal)
             
-//                        Text("So, they can laugh, smile, cheer or maybe help")
-//                            .font(.system(size: 12))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .foregroundColor(ColorManager.grey1)
+                        Text("To Join you with this Goal or Dream")
+                            .font(.system(size: 12))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.grey1)
             
             
 //                        Spacer()
@@ -204,3 +212,41 @@ private func defaultMessageButtonTapped(defaultMessage: String) {
 //    }
 //}
 
+
+
+//
+//VStack{
+//
+//
+//
+//    HStack {
+//    }
+//
+//    VStack {
+//
+//
+//
+//
+//        Spacer()
+//            .frame(height: 20)
+//
+//
+//        Text("Who's Notification")
+//            .font(.system(size: 35, weight: .ultraLight))
+//            .foregroundColor(Color.purple)
+//        Text("going to?")
+//            .font(.system(size: 35, weight: .ultraLight))
+//            .foregroundColor(Color.purple)
+//
+//
+//        VStack {
+//
+//            Spacer()
+//                .frame(height: 7)
+//
+//            Text("(Please tap only once)")
+//                .font(.system(size: 15))
+//                .italic()
+//                .fontWeight(.thin)
+//                .foregroundColor(Color.black)
+//
