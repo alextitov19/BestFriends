@@ -30,7 +30,6 @@ struct ChatGroupsView: View {
             let width = proxy.frame(in: .global).width
             
             return AnyView(
-                NavigationView{
                 ZStack {
                     
                     BlurView(style: .systemThinMaterialDark)
@@ -96,7 +95,6 @@ struct ChatGroupsView: View {
                             })
                     }
                     .padding(.bottom, 70)
-                }
                 }
                 
                     .frame(width: width - 70)
