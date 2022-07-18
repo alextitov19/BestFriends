@@ -209,7 +209,7 @@ struct PlanetActionsView: View {
                                    label: {
                         ZStack {
                             Circle()
-                                .frame(width: 90, height: 90)
+                                .frame(width: 85, height: 85)
                                 .foregroundColor(ColorManager.orange2)
                               
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
@@ -222,18 +222,18 @@ struct PlanetActionsView: View {
 //                                    .font(.system(size: 22, weight: .regular))
 //                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
-                                Text("Getting")
+                                Text("Start")
                                     .foregroundColor(.green)
 //                                    .foregroundColor(ColorManager.green)
-                                    .font(.system(size: 22, weight: .bold))
+                                    .font(.system(size: 25, weight: .bold))
 //                                    .italic()
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
                                 
-                                Text("Started")
+                                Text("Here")
                                     .foregroundColor(ColorManager.orange2)
-                                .italic()
+                                
                                 .font(.system(size: 17, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 .opacity(0.50)
@@ -256,23 +256,23 @@ struct PlanetActionsView: View {
                         
                         ZStack {
                             Circle()
-                                .frame(width: 85, height: 85)
-                                .foregroundColor(ColorManager.orange2)
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
                                 .foregroundColor(.pink)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.15)
+                                .opacity(0.50)
                             
                             VStack {
                                 
 
                               
-                                Text("Built \nby")
+                                Text("Dream")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 17, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
-                                Text("Teens")
+                                Text("Horizons")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 17, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)

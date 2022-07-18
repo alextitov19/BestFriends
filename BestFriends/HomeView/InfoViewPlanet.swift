@@ -39,6 +39,20 @@ struct InfoViewPlanet: View {
 //
 //                Spacer()
 //                .frame(height: 5)
+                
+                NavigationLink(
+                    destination: EmptyView(),
+                    label: {
+                        Text("Built by Teens; Demo & Prototypes")
+                            .fontWeight(.thin)
+                            .frame(width: 300, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 20))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                  
+                    })
               
                 Text("Tap Center Planet on Homepage")
                     .font(.system(size: 20))
