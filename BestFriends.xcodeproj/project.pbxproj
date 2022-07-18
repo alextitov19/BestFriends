@@ -151,6 +151,7 @@
 		CF4A090728860B7000ADA9DD /* slowclouds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090628860B7000ADA9DD /* slowclouds.mp4 */; };
 		CF4A090928860CC300ADA9DD /* clouds2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090828860CC300ADA9DD /* clouds2.mp4 */; };
 		CF4A090B28860DCD00ADA9DD /* cloudsAd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090A28860DCC00ADA9DD /* cloudsAd.mp4 */; };
+		CF6503FA28861D190092EEB9 /* NikeWaterBottleAd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -365,6 +366,7 @@
 		CF4A090828860CC300ADA9DD /* clouds2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clouds2.mp4; sourceTree = "<group>"; };
 		CF4A090A28860DCC00ADA9DD /* cloudsAd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloudsAd.mp4; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
+		CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NikeWaterBottleAd.mp4; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
@@ -815,6 +817,7 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */,
 				7A78232826B2419600CA76FC /* blender.mp4 */,
 				CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */,
 				7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */,
@@ -1222,6 +1225,7 @@
 				CF4A08FF2883A95B00ADA9DD /* Jerk1.mp4 in Resources */,
 				CF4A08F2287F84DD00ADA9DD /* MoonChild.mp4 in Resources */,
 				CF4A08FD2883A90800ADA9DD /* pexels-tony-schnagl-5528018.mp4 in Resources */,
+				CF6503FA28861D190092EEB9 /* NikeWaterBottleAd.mp4 in Resources */,
 				CF4A08F0287F837900ADA9DD /* nostalgia.mp4 in Resources */,
 				CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */,
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
