@@ -25,15 +25,6 @@ struct HorizonCustom: View {
                     .font(.title)
                     .foregroundColor(.white)
                 
-//                TextEditor(text: $summary)
-//                    .font(.system(size: 20))
-//                    .foregroundColor(ColorManager.purple2)
-//                    .padding(.horizontal, 50)
-//                    .background(.white)
-//                    .frame(height: 50)
-//                    .onReceive(Just(summary)) { _ in limitText(40) }
-                
-                
                 TextEditor(text: $summary)
                     .frame(width: 300, height: 100)
                     .background(.white)
@@ -46,7 +37,6 @@ struct HorizonCustom: View {
                 
                 Spacer()
             }//VStack
-            
         }//ZStack
     }//body
 }//struct

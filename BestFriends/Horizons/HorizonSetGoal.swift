@@ -63,7 +63,7 @@ struct HorizonSetGoal: View {
                 }
                 .foregroundColor(.white)
                 
-                Text("  Save  ")
+                Text("  Next  ")
                     .font(.title)
                     .background(ColorManager.purple4)
                     .foregroundColor(.white)

@@ -13,6 +13,7 @@
 		62372A152884D57500CAB75C /* HorizonGoalChoices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62372A142884D57500CAB75C /* HorizonGoalChoices.swift */; };
 		62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62372A162884D7F400CAB75C /* HorizonSetGoal.swift */; };
 		62372A192884E27F00CAB75C /* HorizonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62372A182884E27F00CAB75C /* HorizonCustom.swift */; };
+		62372A1B2884ECD500CAB75C /* HorizonInviteFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62372A1A2884ECD400CAB75C /* HorizonInviteFriends.swift */; };
 		7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04C13C28553818003AB24A /* PhotoPopView.swift */; };
 		7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */; };
 		7A0856A027F3D94500E8282B /* AuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A08569F27F3D94500E8282B /* AuthController.swift */; };
@@ -218,6 +219,7 @@
 		62372A142884D57500CAB75C /* HorizonGoalChoices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizonGoalChoices.swift; sourceTree = "<group>"; };
 		62372A162884D7F400CAB75C /* HorizonSetGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonSetGoal.swift; sourceTree = "<group>"; };
 		62372A182884E27F00CAB75C /* HorizonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonCustom.swift; sourceTree = "<group>"; };
+		62372A1A2884ECD400CAB75C /* HorizonInviteFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonInviteFriends.swift; sourceTree = "<group>"; };
 		7A04C13C28553818003AB24A /* PhotoPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopView.swift; sourceTree = "<group>"; };
 		7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopImageView.swift; sourceTree = "<group>"; };
 		7A08569F27F3D94500E8282B /* AuthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthController.swift; sourceTree = "<group>"; };
@@ -1128,6 +1130,7 @@
 				D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */,
 				62372A162884D7F400CAB75C /* HorizonSetGoal.swift */,
 				62372A182884E27F00CAB75C /* HorizonCustom.swift */,
+				62372A1A2884ECD400CAB75C /* HorizonInviteFriends.swift */,
 			);
 			path = Horizons;
 			sourceTree = "<group>";
@@ -1424,6 +1427,7 @@
 				CFAB5413281D145100BBF502 /* Step2_FightLandingView.swift in Sources */,
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
 				CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */,
+				62372A1B2884ECD500CAB75C /* HorizonInviteFriends.swift in Sources */,
 				7A469E54284D6AC0004AF547 /* TextAlert.swift in Sources */,
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
 				CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */,

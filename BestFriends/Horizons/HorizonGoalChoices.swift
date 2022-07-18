@@ -10,8 +10,6 @@ import SwiftUI
 struct HorizonGoalChoices: View { 
     var body: some View {
         
-//        UIScrollView()
-//        {
         ZStack
         {
             Image("purpleBackground")
@@ -212,9 +210,8 @@ struct HorizonGoalChoices: View {
             }//HStack
            
         }//ZStack
-//        }//UIScrollView
-    }
-}
+    }//body
+}//struct
 
 struct HorizonGoalChoices_Previews: PreviewProvider {
     static var previews: some View {
