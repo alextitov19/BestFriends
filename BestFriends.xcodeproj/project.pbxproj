@@ -146,6 +146,7 @@
 		CF4A08FD2883A90800ADA9DD /* pexels-tony-schnagl-5528018.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08FC2883A90800ADA9DD /* pexels-tony-schnagl-5528018.mp4 */; };
 		CF4A08FF2883A95B00ADA9DD /* Jerk1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08FE2883A95B00ADA9DD /* Jerk1.mp4 */; };
 		CF4A09012883AADA00ADA9DD /* Fishing.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A09002883AADA00ADA9DD /* Fishing.mp4 */; };
+		CF4A090328856B4E00ADA9DD /* ChangedMood.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090228856B4E00ADA9DD /* ChangedMood.mp4 */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -354,6 +355,7 @@
 		CF4A08FC2883A90800ADA9DD /* pexels-tony-schnagl-5528018.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pexels-tony-schnagl-5528018.mp4"; sourceTree = "<group>"; };
 		CF4A08FE2883A95B00ADA9DD /* Jerk1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jerk1.mp4; sourceTree = "<group>"; };
 		CF4A09002883AADA00ADA9DD /* Fishing.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fishing.mp4; sourceTree = "<group>"; };
+		CF4A090228856B4E00ADA9DD /* ChangedMood.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChangedMood.mp4; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
@@ -815,6 +817,7 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CF4A090228856B4E00ADA9DD /* ChangedMood.mp4 */,
 				CF4A08EF287F837900ADA9DD /* nostalgia.mp4 */,
 				CF4A09002883AADA00ADA9DD /* Fishing.mp4 */,
 				CF4A08FE2883A95B00ADA9DD /* Jerk1.mp4 */,
@@ -1228,6 +1231,7 @@
 				CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */,
 				CF4A08EA28794EE100ADA9DD /* Planet6.mp4 in Resources */,
 				CFDB150C2859103C00155CEE /* sadTeen.mp4 in Resources */,
+				CF4A090328856B4E00ADA9DD /* ChangedMood.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */,
 				CF4A08E828794E2100ADA9DD /* Planet7.mp4 in Resources */,

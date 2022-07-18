@@ -42,17 +42,23 @@ struct SendSongChat2: View {
             VStack {
                 
                   Text("Just got Push Notification")
-                      .font(.system(size: 30))
+                      .font(.system(size: 27))
                       .foregroundColor(.white)
                       .fontWeight(.ultraLight)
                       .multilineTextAlignment(.center)
                   
-                  Text("your friend changed their mood?")
-                      .font(.system(size: 30))
+                  Text("your friend changed")
+                      .font(.system(size: 27))
                       .foregroundColor(.white)
                       .fontWeight(.ultraLight)
                       .multilineTextAlignment(.center)
 
+                Text("their mood")
+                    .font(.system(size: 27))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
                   Spacer()
                       .frame(height: 25)
                   
@@ -95,15 +101,9 @@ struct SendSongChat2: View {
                 )
 
 
-        
-            
-            Text("one to fit their mood")
-                .font(.system(size: 30))
-                .foregroundColor(.white)
-                .fontWeight(.ultraLight)
             
             Spacer()
-                .frame(height: 50)
+                .frame(height: 10)
             
             VStack {
                 Button(action: {
@@ -127,6 +127,25 @@ struct SendSongChat2: View {
                     .italic()
                     .foregroundColor(.white)
                     .fontWeight(.light)
+              
+                Spacer()
+                    .frame(height: 25)
+                
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                    label: {
+                        Text("Home / Chat")
+                            .fontWeight(.thin)
+                            .frame(width: 200, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                Spacer()
+                    .frame(height: 50)
                 
             }
 

@@ -40,14 +40,14 @@ struct Friend1VaultPractice: View {
                 .onAppear(perform: loadData)
             
             
-            //            AdPlayerView(name: "girlYellow")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //
-            ColorManager.purple4
-                .ignoresSafeArea()
-                .onAppear()
-            
+                        AdPlayerView(name: "sky2")
+                            .ignoresSafeArea()
+                            .blendMode(.screen)
+//
+//            ColorManager.purple4
+//                .ignoresSafeArea()
+//                .onAppear()
+//
             
             
             VStack {

@@ -35,7 +35,7 @@ struct HomeView: View {
                 
                 
                 // Background Image...
-                Image("blueBackground")
+                Image("purpleBackground")
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
@@ -238,9 +238,9 @@ struct HomeView: View {
                         
                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                                        label: {
-                            Text("Friend changed Aura")
+                            Text("Changed Atmosphere")
                                 .fontWeight(.light)
-                                .frame(width: 210, height: 30)
+                                .frame(width: 210, height: 27)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple1)
                                 .cornerRadius(15)
