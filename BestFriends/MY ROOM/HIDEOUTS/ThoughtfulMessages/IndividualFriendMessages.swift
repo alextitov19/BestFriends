@@ -30,7 +30,7 @@ struct IndividualFriendMessages: View {
                 .scaledToFill()
                 .onAppear(perform: loadData)
             
-            AdPlayerView(name: "NikeWaterBottleAd")
+            AdPlayerView(name: "Nike2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
@@ -128,7 +128,7 @@ private struct FriendMessageView: View {
                 .foregroundColor(ColorManager .purple4)
                 .cornerRadius(25)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                .opacity(0.25)
+                .opacity(0.5)
             
             VStack {
                 Text(smileNote.senderName)
