@@ -177,13 +177,21 @@ struct Subscriptions: View {
                     .foregroundColor(ColorManager.grey1)
                 
                 
-                Text("-$2 per month \n-$19.95 per year")
+                Text("-$2 per month")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(Color.white)
                     .foregroundColor(ColorManager.grey1)
                 
+                
+                Text("-$19.95 per year")
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager.grey1)
+              
                 Spacer()
                 .frame(height: 200)
                
