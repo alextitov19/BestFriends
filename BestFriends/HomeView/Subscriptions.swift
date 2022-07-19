@@ -162,7 +162,7 @@ struct Subscriptions: View {
 //                    .foregroundColor(Color.white)
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("-Designed to minimize 'Disfunction'")
+                Text("-Designed to minimize 'Dysfunction'")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)

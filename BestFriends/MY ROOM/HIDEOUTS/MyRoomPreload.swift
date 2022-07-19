@@ -121,7 +121,7 @@ struct MyRoomPreload: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("- sooth a broken heart")
+                    Text("- soothe a broken heart")
                         .font(.system(size: 19))
                         .italic()
                         .foregroundColor(ColorManager.grey2)
