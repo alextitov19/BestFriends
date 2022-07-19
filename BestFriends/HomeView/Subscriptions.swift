@@ -47,6 +47,8 @@ struct Subscriptions: View {
                     .multilineTextAlignment(.center)
                    .foregroundColor(Color.purple)
               
+                Spacer()
+                .frame(height: 15)
                 
                 NavigationLink(
                     destination: EmptyView(),
@@ -101,7 +103,7 @@ struct Subscriptions: View {
                 NavigationLink(
                     destination: EmptyView(),
                     label: {
-                        Text("BestFriends")
+                        Text("BestFrends Premium")
                             .fontWeight(.thin)
                             .frame(width: 300, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -153,12 +155,27 @@ struct Subscriptions: View {
                     })
                 
                 
-                Text("-Add up to 10 users, Each! \n-Designed to minimize 'Disfunction'")
+                Text("-Add up to 10 users per User")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(Color.white)
                     .foregroundColor(ColorManager.grey1)
+                
+                Text("-Designed to minimize 'Disfunction'")
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager.grey1)
+                
+                Text("-Access all BestFriend's Premium benefits")
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager.grey1)
+                
                 
                 Text("-$2 per month \n-$19.95 per year")
                     .font(.system(size: 15))
@@ -168,85 +185,10 @@ struct Subscriptions: View {
                     .foregroundColor(ColorManager.grey1)
                 
                 Spacer()
-                .frame(height: 15)
+                .frame(height: 200)
                
-                
-                Spacer()
-                .frame(height: 15)
-                
-//
-//           Text("My Chat Rooms")
-//               .font(.system(size: 20))
-//               .fontWeight(.thin)
-//               .multilineTextAlignment(.center)
-//               .foregroundColor(Color.purple)
-//
-//           Text("-Use 'Pullup' to see existing Rooms \n-Tap [Remove Me] to be removed \n-Tap 'HOME' icon to Exit")
-//               .font(.system(size: 15))
-//               .fontWeight(.light)
-//               .multilineTextAlignment(.center)
-//               .foregroundColor(ColorManager.grey1)
-////               .foregroundColor(.gray)
-//
-//                Spacer()
-//                     .frame(height: 15)
-//
-//
-//                Text("Hide Chat")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.purple)
-//
-//                Text("-Tap 'Lock' icon \n-to 'Un-Hide' enter 4 digit PIN")
-//                    .font(.system(size: 15))
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(ColorManager.grey1)
-////                    .foregroundColor(.gray)
-//
-//                    Spacer()
-//                    .frame(height: 0)
-//                }
-//
-//            VStack {
-//
-////
-//                Spacer()
-//                     .frame(height: 15)
-//
-//                Text("Friend sent 'Push Notification'")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.purple)
-//
-//                Text("-Tap friend's planet that sent")
-//                    .font(.system(size: 15))
-//                    .fontWeight(.light)
-//                    .foregroundColor(ColorManager.grey1)
-////                    .foregroundColor(.gray)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("notification, see dropdown")
-//                    .font(.system(size: 15))
-//                    .fontWeight(.light)
-//                    .foregroundColor(ColorManager.grey1)
-////                    .foregroundColor(.gray)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("- tap planets to 'show/hide' notifications")
-//                    .font(.system(size: 15))
-//                    .fontWeight(.light)
-//                    .foregroundColor(ColorManager.grey1)
-////                    .foregroundColor(.gray)
-//                    .multilineTextAlignment(.center)
-//                Spacer()
-//                .frame(height: 135)
-//
-
-           
-               
+          
+       
             }
         }
         

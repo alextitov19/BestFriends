@@ -118,6 +118,16 @@ struct MyRoomPreload: View {
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
                     
+                    Spacer()
+                        .frame(height: 10)
+                    
+                    Text("- sooth a broken heart")
+                        .font(.system(size: 19))
+                        .italic()
+                        .foregroundColor(ColorManager.grey2)
+                        .fontWeight(.light)
+                        .foregroundColor(Color.white)
+                    
                     VStack{
                         
 //                        Spacer()
