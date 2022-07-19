@@ -154,6 +154,8 @@
 		CF6503FA28861D190092EEB9 /* NikeWaterBottleAd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */; };
 		CF6503FC288647240092EEB9 /* Nike1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FB288647230092EEB9 /* Nike1.mp4 */; };
 		CF6503FE288648BB0092EEB9 /* Nike2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FD288648BB0092EEB9 /* Nike2.mp4 */; };
+		CF65040028864AF00092EEB9 /* Nike3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* Nike3.mp4 */; };
+		CF650402288660520092EEB9 /* Subscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650401288660520092EEB9 /* Subscriptions.swift */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -371,6 +373,8 @@
 		CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NikeWaterBottleAd.mp4; sourceTree = "<group>"; };
 		CF6503FB288647230092EEB9 /* Nike1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nike1.mp4; sourceTree = "<group>"; };
 		CF6503FD288648BB0092EEB9 /* Nike2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nike2.mp4; sourceTree = "<group>"; };
+		CF6503FF28864AF00092EEB9 /* Nike3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nike3.mp4; sourceTree = "<group>"; };
+		CF650401288660520092EEB9 /* Subscriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriptions.swift; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
@@ -656,6 +660,7 @@
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
+				CF650401288660520092EEB9 /* Subscriptions.swift */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				CF785690284EF6D700B31803 /* PlanetMain */,
@@ -821,6 +826,7 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CF6503FF28864AF00092EEB9 /* Nike3.mp4 */,
 				CF6503FD288648BB0092EEB9 /* Nike2.mp4 */,
 				CF6503FB288647230092EEB9 /* Nike1.mp4 */,
 				CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */,
@@ -1261,6 +1267,7 @@
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */,
 				CF4A090B28860DCD00ADA9DD /* cloudsAd.mp4 in Resources */,
+				CF65040028864AF00092EEB9 /* Nike3.mp4 in Resources */,
 				CF4A08E828794E2100ADA9DD /* Planet7.mp4 in Resources */,
 				CF4A08E028784A4100ADA9DD /* atmosphere3.mp4 in Resources */,
 				CFD0ABDE285C4E7C0032CA3D /* BFVideo.mp4 in Resources */,
@@ -1372,6 +1379,7 @@
 				CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */,
 				62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */,
 				CF381A592829205800B3719E /* OurMission.swift in Sources */,
+				CF650402288660520092EEB9 /* Subscriptions.swift in Sources */,
 				7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */,
 				7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
