@@ -156,6 +156,7 @@
 		CF6503FE288648BB0092EEB9 /* Nike2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FD288648BB0092EEB9 /* Nike2.mp4 */; };
 		CF65040028864AF00092EEB9 /* Nike3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* Nike3.mp4 */; };
 		CF650402288660520092EEB9 /* Subscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650401288660520092EEB9 /* Subscriptions.swift */; };
+		CF6504042887E85D0092EEB9 /* SubscriptionsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6504032887E85D0092EEB9 /* SubscriptionsInfoView.swift */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -375,6 +376,7 @@
 		CF6503FD288648BB0092EEB9 /* Nike2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nike2.mp4; sourceTree = "<group>"; };
 		CF6503FF28864AF00092EEB9 /* Nike3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nike3.mp4; sourceTree = "<group>"; };
 		CF650401288660520092EEB9 /* Subscriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriptions.swift; sourceTree = "<group>"; };
+		CF6504032887E85D0092EEB9 /* SubscriptionsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsInfoView.swift; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
@@ -661,6 +663,7 @@
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 				CF650401288660520092EEB9 /* Subscriptions.swift */,
+				CF6504032887E85D0092EEB9 /* SubscriptionsInfoView.swift */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				CF785690284EF6D700B31803 /* PlanetMain */,
@@ -1513,6 +1516,7 @@
 				7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */,
 				CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */,
 				CF3B65D52801ED660003A714 /* GetInvolvedView.swift in Sources */,
+				CF6504042887E85D0092EEB9 /* SubscriptionsInfoView.swift in Sources */,
 				62372A192884E27F00CAB75C /* HorizonCustom.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,
 			);

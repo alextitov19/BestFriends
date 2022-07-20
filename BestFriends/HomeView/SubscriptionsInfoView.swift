@@ -1,9 +1,10 @@
 //
-//  Subscriptions.swift
+//  SubscriptionsInfoView.swift
 //  BestFriends
 //
-//  Created by Social Tech on 7/18/22.
+//  Created by Social Tech on 7/20/22.
 //
+
 
 
 import Foundation
@@ -11,7 +12,7 @@ import Foundation
 import SwiftUI
 
 
-struct Subscriptions: View {
+struct SubscriptionsInfoView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
 //    @State var group: Group
@@ -28,7 +29,7 @@ struct Subscriptions: View {
 //            AdPlayerView(name: "FieldFlowers")
 //                .ignoresSafeArea()
             
-            ColorManager.grey4
+            ColorManager.grey3
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -41,7 +42,7 @@ struct Subscriptions: View {
 //                Spacer()
 //                .frame(height: 5)
                 
-                Text("Select Plan")
+                Text("SUBSCRIBE NOW")
                     .font(.system(size: 40))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -53,7 +54,7 @@ struct Subscriptions: View {
                 NavigationLink(
                     destination: EmptyView(),
                     label: {
-                        Text("BestFriends")
+                        Text("BestFriends FAMILY")
                             .fontWeight(.thin)
                             .frame(width: 300, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -103,7 +104,7 @@ struct Subscriptions: View {
                 NavigationLink(
                     destination: EmptyView(),
                     label: {
-                        Text("BestFrends PURPLE")
+                        Text("BestFrends Elete")
                             .fontWeight(.thin)
                             .frame(width: 300, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -143,7 +144,7 @@ struct Subscriptions: View {
                 NavigationLink(
                     destination: SubscriptionsInfoView(),
                     label: {
-                        Text("BestFriends FAMILY - BEST DEAL")
+                        Text("BestFriends Family - BEST DEAL")
                             .fontWeight(.thin)
                             .frame(width: 300, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
