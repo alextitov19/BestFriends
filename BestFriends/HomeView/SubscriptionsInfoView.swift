@@ -46,11 +46,9 @@ struct SubscriptionsInfoView: View {
                     .font(.system(size: 40))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                   .foregroundColor(Color.purple)
+                   .foregroundColor(Color.blue)
               
-                Spacer()
-                .frame(height: 15)
-                
+              
                 NavigationLink(
                     destination: EmptyView(),
                     label: {
@@ -64,139 +62,91 @@ struct SubscriptionsInfoView: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                   
                     })
-              
-                
              
+                Spacer()
+                .frame(height: 25)
                 
-                Text("-FREE")
-                    .font(.system(size: 15))
+                
+                Text("Helps build stronger families")
+                    .font(.system(size: 35))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
+                    .foregroundColor(ColorManager.purple3)
                 
-                Text("-Access to all Features listed on previous page")
-                    .font(.system(size: 15))
+                Text("-Helps children get along better")
+                    .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
+                    .foregroundColor(ColorManager.grey2)
+                
+                Text("-Offers opportunity for them to work together")
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager.grey2)
+                
+                Text("(Teaching socialaization skills)")
+                    .font(.system(size: 12))
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+                    .foregroundColor(.white)
              
                 VStack {
-               
+                    Spacer()
+                    .frame(height: 25)
                     
-                Text("-Can Add up to 5 friends")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
-//                    .foregroundColor(.gray)
-
-             
-                }
-                Spacer()
-                .frame(height: 15)
+                    
+                    Text("Helps Resolve Fights")
+                        .font(.system(size: 35))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+    //                    .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager.purple3)
+                    
+                    Text("and Dissagreement")
+                        .font(.system(size: 35))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+    //                    .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager.purple3)
+                    
+                    Text("-For younger teens - 5 Step Strategy")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+    //                    .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager.grey2)
+                    
+                    Text("-Tips for older teens & college age")
+                        .font(.system(size: 20))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+    //                    .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager.grey2)
+                    
+                    Text("(........)")
+                        .font(.system(size: 12))
+                        .italic()
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+    //                    .foregroundColor(Color.white)
+                        .foregroundColor(.white)
+                 
                
             VStack {
                 
                 
                 
-                NavigationLink(
-                    destination: EmptyView(),
-                    label: {
-                        Text("BestFrends Elete")
-                            .fontWeight(.thin)
-                            .frame(width: 300, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 20))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                  
-                    })
+            
+                
+                   Spacer()
+                   .frame(height: 150)
               
-             
-              
-                
-                Text("-Customize Planets \n-Choose Premium backgrounds \n-???")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-                
-                Text("-.99 Cents per Month \n-$10 per year")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-               
-                Spacer()
-                .frame(height: 15)
-
-             
-                
-            VStack {
-                
-                
-                
-                NavigationLink(
-                    destination: SubscriptionsInfoView(),
-                    label: {
-                        Text("BestFriends Family - BEST DEAL")
-                            .fontWeight(.thin)
-                            .frame(width: 300, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 20))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                  
-                    })
-                
-                
-                Text("-Add up to 10 users per User")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-                
-                Text("-Designed to minimize 'Dysfunction'")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-                
-                Text("-Access all BestFriend's Premium benefits")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-                
-                
-                Text("-$2 per month")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-                
-                
-                Text("-$19.95 per year")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-              
-                Spacer()
-                .frame(height: 200)
-               
-          
        
             }
         }
