@@ -193,7 +193,7 @@ struct subscriptionCard: View {
                     Text(product.name)
                         .bold()
                     
-                    Text("\(product.price)$")
+                    Text("$\(product.price)")
                         .font(.caption)
                 }
                 .padding()
