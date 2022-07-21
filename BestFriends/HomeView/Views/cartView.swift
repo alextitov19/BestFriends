@@ -13,7 +13,7 @@ struct CartView: View {
     var body: some View {
         ScrollView {
             if cartManager.paymentSuccess {
-                Text("Thanks for your purchase! Your subscription is now confirmed.")
+                Text("Thanks for your purchase! Your subscription is now confirmed. You will receive an email confirmation shortly.")
                     .padding()
             } else {
                 if cartManager.products.count > 0 {
