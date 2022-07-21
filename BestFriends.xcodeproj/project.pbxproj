@@ -81,6 +81,15 @@
 		7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27927FDFFA800D2DB5C /* BlurView.swift */; };
 		7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */; };
 		7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */; };
+		AD60ADF72888B0470073CEDB /* cartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60ADF62888B0470073CEDB /* cartButton.swift */; };
+		AD60ADF92888B3B00073CEDB /* cartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60ADF82888B3B00073CEDB /* cartView.swift */; };
+		AD60ADFB2888B4D70073CEDB /* cartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60ADFA2888B4D70073CEDB /* cartManager.swift */; };
+		AD60ADFD2888C2E00073CEDB /* subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60ADFC2888C2DF0073CEDB /* subscription.swift */; };
+		AD60AE012888C8C10073CEDB /* subscriptionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60AE002888C8C00073CEDB /* subscriptionCard.swift */; };
+		AD60AE042888CC6A0073CEDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60AE032888CC6A0073CEDB /* ContentView.swift */; };
+		AD60AE062888D7220073CEDB /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60AE052888D7220073CEDB /* ProductRow.swift */; };
+		AD60AE082888D8AD0073CEDB /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60AE072888D8AD0073CEDB /* PaymentButton.swift */; };
+		AD60AE0A2888DF900073CEDB /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD60AE092888DF8F0073CEDB /* PaymentHandler.swift */; };
 		CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */; };
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
@@ -299,6 +308,15 @@
 		7AFCF27927FDFFA800D2DB5C /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
+		AD60ADF62888B0470073CEDB /* cartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartButton.swift; sourceTree = "<group>"; };
+		AD60ADF82888B3B00073CEDB /* cartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartView.swift; sourceTree = "<group>"; };
+		AD60ADFA2888B4D70073CEDB /* cartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cartManager.swift; sourceTree = "<group>"; };
+		AD60ADFC2888C2DF0073CEDB /* subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subscription.swift; sourceTree = "<group>"; };
+		AD60AE002888C8C00073CEDB /* subscriptionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subscriptionCard.swift; sourceTree = "<group>"; };
+		AD60AE032888CC6A0073CEDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD60AE052888D7220073CEDB /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		AD60AE072888D8AD0073CEDB /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
+		AD60AE092888DF8F0073CEDB /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 		CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueRoad.mp4; sourceTree = "<group>"; };
 		CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShakingCoolVideo.mp4; sourceTree = "<group>"; };
 		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
@@ -572,6 +590,8 @@
 				7A1DBD602659B1A400EB4B42 /* Ext+Custom */,
 				7A6A4D00262B865D00561D87 /* Assets */,
 				7A71BD042625292B00E6FA9E /* Preview Content */,
+				AD60ADFA2888B4D70073CEDB /* cartManager.swift */,
+				AD60AE092888DF8F0073CEDB /* PaymentHandler.swift */,
 			);
 			path = BestFriends;
 			sourceTree = "<group>";
@@ -660,6 +680,9 @@
 		7AD8DF0A27F696F000D9F0E1 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				AD60AE022888CC460073CEDB /* Views */,
+				AD60ADFF2888C8730073CEDB /* Component */,
+				AD60ADFE2888C8140073CEDB /* Model */,
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 				CF650401288660520092EEB9 /* Subscriptions.swift */,
@@ -697,6 +720,34 @@
 				D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD60ADFE2888C8140073CEDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD60ADFC2888C2DF0073CEDB /* subscription.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD60ADFF2888C8730073CEDB /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				AD60AE002888C8C00073CEDB /* subscriptionCard.swift */,
+				AD60ADF62888B0470073CEDB /* cartButton.swift */,
+				AD60AE052888D7220073CEDB /* ProductRow.swift */,
+				AD60AE072888D8AD0073CEDB /* PaymentButton.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		AD60AE022888CC460073CEDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD60AE032888CC6A0073CEDB /* ContentView.swift */,
+				AD60ADF82888B3B00073CEDB /* cartView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		B0AC56E4DD28BEF3B77FB63A /* Pods */ = {
@@ -1361,6 +1412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD60AE082888D8AD0073CEDB /* PaymentButton.swift in Sources */,
 				CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */,
 				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
 				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
@@ -1381,6 +1433,7 @@
 				CF3802D728456C83005181E4 /* FG_Team.swift in Sources */,
 				CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */,
 				62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */,
+				AD60AE0A2888DF900073CEDB /* PaymentHandler.swift in Sources */,
 				CF381A592829205800B3719E /* OurMission.swift in Sources */,
 				CF650402288660520092EEB9 /* Subscriptions.swift in Sources */,
 				7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */,
@@ -1423,6 +1476,7 @@
 				CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */,
 				CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */,
 				CFD0469C2837D9F400BF0B02 /* HideoutsView.swift in Sources */,
+				AD60AE062888D7220073CEDB /* ProductRow.swift in Sources */,
 				7ACACDAA2853EACF00D8AB75 /* AlertWrapper.swift in Sources */,
 				CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */,
 				7ACD20BE27FCBC18002F7800 /* PendingInviteView.swift in Sources */,
@@ -1452,6 +1506,7 @@
 				CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */,
+				AD60AE012888C8C10073CEDB /* subscriptionCard.swift in Sources */,
 				CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */,
 				7ACACDA82853EAB700D8AB75 /* UIAlertControllerExtension.swift in Sources */,
 				CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */,
@@ -1460,6 +1515,7 @@
 				7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */,
 				CF381A5228283D5C00B3719E /* IntroFriendGpFight.swift in Sources */,
 				CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */,
+				AD60ADF72888B0470073CEDB /* cartButton.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
@@ -1470,6 +1526,7 @@
 				CFAB5413281D145100BBF502 /* Step2_FightLandingView.swift in Sources */,
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
 				CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */,
+				AD60ADF92888B3B00073CEDB /* cartView.swift in Sources */,
 				62372A1B2884ECD500CAB75C /* HorizonInviteFriends.swift in Sources */,
 				7A469E54284D6AC0004AF547 /* TextAlert.swift in Sources */,
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
@@ -1479,6 +1536,7 @@
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
 				CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */,
 				CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */,
+				AD60ADFD2888C2E00073CEDB /* subscription.swift in Sources */,
 				7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */,
 				CF0911852848328F00CB0AF0 /* HideChat.swift in Sources */,
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
@@ -1507,6 +1565,7 @@
 				7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */,
 				CFAE7349283C748C00015FD2 /* UserBetaTesting.swift in Sources */,
 				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
+				AD60AE042888CC6A0073CEDB /* ContentView.swift in Sources */,
 				CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
@@ -1517,6 +1576,7 @@
 				CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */,
 				CF3B65D52801ED660003A714 /* GetInvolvedView.swift in Sources */,
 				CF6504042887E85D0092EEB9 /* SubscriptionsInfoView.swift in Sources */,
+				AD60ADFB2888B4D70073CEDB /* cartManager.swift in Sources */,
 				62372A192884E27F00CAB75C /* HorizonCustom.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,
 			);

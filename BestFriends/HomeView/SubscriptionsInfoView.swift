@@ -50,7 +50,7 @@ struct SubscriptionsInfoView: View {
               
               
                 NavigationLink(
-                    destination: EmptyView(),
+                    destination: ContentView(),
                     label: {
                         Text("BestFriends FAMILY")
                             .fontWeight(.thin)
