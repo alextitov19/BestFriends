@@ -265,7 +265,7 @@ struct HomeView: View {
                         })
 
                             
-                        NavigationLink(destination: EmptyView(),
+                        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                        label: {
                             Text("Mediator")
                                 .fontWeight(.light)

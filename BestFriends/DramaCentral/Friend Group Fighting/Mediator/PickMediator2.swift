@@ -102,7 +102,7 @@ struct PickMediator2: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("(Push Notification sent when tap [SHARE])")
+                Text("(Tap friends who fighting \n& send Push Notification)")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)
