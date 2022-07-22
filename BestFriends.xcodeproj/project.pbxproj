@@ -680,14 +680,15 @@
 		7AD8DF0A27F696F000D9F0E1 /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
+				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
+				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				AD60AE022888CC460073CEDB /* Views */,
 				AD60ADFF2888C8730073CEDB /* Component */,
 				AD60ADFE2888C8140073CEDB /* Model */,
-				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
-				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 				CF650401288660520092EEB9 /* Subscriptions.swift */,
+				AD60ADFC2888C2DF0073CEDB /* subscription.swift */,
 				CF6504032887E85D0092EEB9 /* SubscriptionsInfoView.swift */,
-				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				CF785690284EF6D700B31803 /* PlanetMain */,
 			);
@@ -725,7 +726,6 @@
 		AD60ADFE2888C8140073CEDB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AD60ADFC2888C2DF0073CEDB /* subscription.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1078,8 +1078,8 @@
 		CFD04689282D6FDD00BF0B02 /* Atmosphere */ = {
 			isa = PBXGroup;
 			children = (
-				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */,
+				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */,
 				CF3B65F128075F3B0003A714 /* FriendVault */,
 			);
@@ -1711,7 +1711,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1741,7 +1741,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
