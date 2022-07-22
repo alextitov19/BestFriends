@@ -15,7 +15,10 @@ struct FaceTimeCall: View {
     let user: User
     let friends: [User]
     
+    @EnvironmentObject var sessionManager: SessionManager
+    
     var body: some View {
+        
         
         ZStack {
             
@@ -72,59 +75,36 @@ struct FaceTimeCall: View {
                             .foregroundColor(.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
-                    Spacer()
-                            .frame(height: 60)
+                   
+                        Spacer()
+                            .frame(height: 20)
+                        
+                       
+                        
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                            label: {
+                                Text("Home / Chat")
+                                    .fontWeight(.thin)
+                                    .frame(width: 200, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                        
                     }
                     
-//
-//                    VStack {
-//                        HStack {
-//                            NavigationLink(
-//                                destination: EmptyView(),
-//                                label: {
-//                                    Text("ALL")
-//                                        .fontWeight(.bold)
-//                                        .frame(width: 100, height: 30)
-//                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                        .font(.system(size: 15))
-//                                        .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-//                                        .cornerRadius(25)
-//                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                })
-//
-//                            if friends.count > 0 {
-//                                RectView(user: user, friend: friends[0])
-//                            }
-//
-//                            if friends.count > 1 {
-//                                RectView(user: user, friend: friends[1])
-//                            }
-//                        }
-//                        Spacer()
-//                            .frame(height: 35)
-//
-//                        HStack {
-//                            if friends.count > 2 {
-//                                RectView(user: user, friend: friends[2])
-//                            }
-//
-//                            if friends.count > 3 {
-//                                RectView(user: user, friend: friends[3])
-//                            }
-//
-//                            if friends.count > 4 {
-//                                RectView(user: user, friend: friends[4])
-//                            }
-//                        }
-//
+                   
+                    
                         Spacer()
                             .frame(height: 40)
 
                         VStack {
                             
-                            
-                            Spacer ()
-                                .frame(height: 20)
+                        
                                                         
                         }
                         

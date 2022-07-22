@@ -41,39 +41,33 @@ struct SendSongChat2: View {
 
             VStack {
                 
-                  Text("Just got Push Notification")
-                      .font(.system(size: 27))
-                      .foregroundColor(.white)
-                      .fontWeight(.ultraLight)
-                      .multilineTextAlignment(.center)
+              
+               
                   
-                  Text("your friend changed")
-                      .font(.system(size: 27))
+                  Text("Be a BestFrind")
+                      .font(.system(size: 40))
                       .foregroundColor(.white)
                       .fontWeight(.ultraLight)
-                      .multilineTextAlignment(.center)
-
-                Text("their mood")
-                    .font(.system(size: 27))
+                
+                Text("by sending them")
+                    .font(.system(size: 25))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
                 
-                  Spacer()
-                      .frame(height: 25)
-                  
-                  Text("Be a BestFrind by sending")
-                      .font(.system(size: 22))
+                  Text("a song you listen to")
+                      .font(.system(size: 25))
                       .foregroundColor(.white)
                       .fontWeight(.ultraLight)
-                  Text("them a song you listen to")
-                      .font(.system(size: 15))
+                
+                  Text("when your mood")
+                      .font(.system(size: 25))
                       .foregroundColor(.white)
                       .fontWeight(.ultraLight)
-                  Text("when your mood matches theirs")
-                      .font(.system(size: 15))
-                      .foregroundColor(.white)
-                      .fontWeight(.ultraLight)
+                
+                Text("matches theirs")
+                    .font(.system(size: 25))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
                   
               
         VStack {
@@ -122,7 +116,7 @@ struct SendSongChat2: View {
                 })
 
 
-                Text("(with push notification)")
+                Text("(Push Notification automatically sent)")
                     .font(.system(size: 15))
                     .italic()
                     .foregroundColor(.white)
@@ -130,20 +124,20 @@ struct SendSongChat2: View {
               
                 Spacer()
                     .frame(height: 25)
-                
-                Button(action: {
-                    sessionManager.showLogin()
-                },
-                    label: {
-                        Text("Home / Chat")
-                            .fontWeight(.thin)
-                            .frame(width: 200, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
+//
+//                Button(action: {
+//                    sessionManager.showLogin()
+//                },
+//                    label: {
+//                        Text("Home / Chat")
+//                            .fontWeight(.thin)
+//                            .frame(width: 200, height: 40)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 30))
+//                            .background(ColorManager.purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
                 Spacer()
                     .frame(height: 50)
                 

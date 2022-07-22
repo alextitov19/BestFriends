@@ -11,7 +11,8 @@ struct HomeView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
-  
+//    let user: User
+//    let friends: [User]
 
     @State private var homeData: HomeData?
     @State private var groups: [Group] = []
@@ -247,18 +248,47 @@ struct HomeView: View {
                                 .opacity(0.4)
                                 .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
                         })
+                       
                         Spacer().frame(height: 10)
                        
-                        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+                        
+                        HStack {
+                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                        label: {
-                            Text("Drama ALERT")
+                            Text("FIGHT")
                                 .fontWeight(.light)
-                                .frame(width: 210, height: 30)
+                                .frame(width: 100, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple1)
                                 .cornerRadius(15)
                                 .opacity(0.4)
                         })
+
+                            
+                        NavigationLink(destination: EmptyView(),
+                                       label: {
+                            Text("Mediator")
+                                .fontWeight(.light)
+                                .frame(width: 100, height: 30)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple1)
+                                .cornerRadius(15)
+                                .opacity(0.4)
+                        })
+                        }
+                        
+                        
+                        
+//                        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+//                                       label: {
+//                            Text("Drama ALERT")
+//                                .fontWeight(.light)
+//                                .frame(width: 210, height: 30)
+//                                .foregroundColor(.white)
+//                                .background(ColorManager.purple1)
+//                                .cornerRadius(15)
+//                                .opacity(0.4)
+//                        })
                         Spacer()
                             .frame(height: 10)
                        

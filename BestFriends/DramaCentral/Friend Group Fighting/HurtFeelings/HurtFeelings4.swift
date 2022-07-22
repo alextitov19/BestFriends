@@ -93,7 +93,7 @@ struct HurtFeelings4: View {
                 Spacer()
                     .frame(height: 5)
                 
-                Text("(Push Notification is sent when 'Tapped')")
+                Text("(Push Notification is sent when tap [SHARE])")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)

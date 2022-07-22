@@ -35,8 +35,8 @@ struct PickMediator: View {
 //
             VStack {
              
-                Text("Two friends in your \nFriend Group fighting?")
-                            .font(.system(size: 35))
+                Text("Are two friends in your \nFriend Group fighting?")
+                            .font(.system(size: 30))
                             .foregroundColor(.white)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
@@ -54,7 +54,7 @@ struct PickMediator: View {
                 Spacer()
                     .frame(height: 60)
                 
-                Text("Try picking a third friend in the FG \nto be the go-between!")
+                Text("You can Refer them to a \nmutual friend \nto be the go-between!")
                     .font(.system(size: 17))
                     .italic()
                     .fontWeight(.thin)
@@ -62,15 +62,15 @@ struct PickMediator: View {
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 15)
+                    .frame(height: 25)
                 
             VStack {
                     NavigationLink(
                         destination: PickMediator2(user: user, friends: friends, groups: groups),
                         label: {
-                            Text("Choose a mutual mediator")
+                            Text("Start this Process")
                                 .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
+                                .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 27))
                                 .background(ColorManager.purple3)
@@ -80,15 +80,7 @@ struct PickMediator: View {
                         })
                 
                 
-                Spacer()
-                    .frame(height: 15)
-                
-                Text("Each of you will tell your side of \nthe story to the, then mediator \nwill help you work things out.")
-                    .font(.system(size: 17))
-                    .italic()
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
-                    .multilineTextAlignment(.center)
+      
                     
                 Spacer()
                     .frame(height: 75)

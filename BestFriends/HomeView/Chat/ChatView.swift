@@ -98,6 +98,8 @@ struct ChatView: View {
                         .font(.system(size: 18, weight: .thin))
                         .onTapGesture(perform: leaveChatGroup)
                 }
+               
+                
                 
                 // MARK: Main scroll view
                 ScrollView(.vertical, showsIndicators: false) {

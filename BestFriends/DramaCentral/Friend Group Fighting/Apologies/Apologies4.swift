@@ -5,7 +5,7 @@
 //  Created by Social Tech on 7/9/22.
 //
 
-import Foundation
+
 import Foundation
 import Combine
 import SwiftUI
@@ -101,7 +101,7 @@ struct Apologies4: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("(Push Notification is sent when 'Tapped')")
+                Text("(Push Notification is sent when tap [SHARE])")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)

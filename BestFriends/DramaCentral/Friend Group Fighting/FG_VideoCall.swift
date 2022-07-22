@@ -84,8 +84,8 @@ struct FG_VideoCall: View {
             
             
            
-              NavigationLink(destination: PickMediator(user: user, friends: friends, groups: groups), label: {
-                  FG_VideoCallCircle (color: .purple, friendName: "Pick \nmutual \nMediator")
+              NavigationLink(destination: EmptyView(), label: {
+                  FG_VideoCallCircle (color: .purple, friendName: "Request \nMediator")
             })
             .offset(x: showItems ? 130 : 0, y: showItems ? -50: 0)
             

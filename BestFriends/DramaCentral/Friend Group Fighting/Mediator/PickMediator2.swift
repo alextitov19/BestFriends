@@ -41,8 +41,18 @@ struct PickMediator2: View {
                 }
 //                .padding(.horizontal)
                 
+                Spacer()
+                    .frame(height: 15)
                 
-                Text("NOTE: You must both agree on the \nfriend to be named, Mediator.")
+//                Text("Each of you can tell your side of \nthe story, then mediator \nwill help you work things out.")
+//                    .font(.system(size: 17))
+//                    .italic()
+//                    .fontWeight(.thin)
+//                    .foregroundColor(Color.white)
+//                    .multilineTextAlignment(.center)
+//                
+                
+                Text("NOTE: Both friends fighting \nmust agree on the mediator.")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 50)
                     .foregroundColor(Color .blue)
@@ -54,7 +64,7 @@ struct PickMediator2: View {
                 
                 
                 
-                Text("NOTE: This technique can be used in \nFreind Groups and for Huge Fight with BFF")
+                Text("NOTE: Each of you can tell your side of \nthe story, then mediator \nwill help you work things out.")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 75)
                     .foregroundColor(Color .blue)
@@ -74,12 +84,12 @@ struct PickMediator2: View {
                 
                 
                 HStack {
-                    Text("Mediator \nRequest")
+                    Text("Alert \nFriends")
                         .font(.system(size: 27))
                         .fontWeight(.regular)
-                        .foregroundColor(ColorManager.grey4)
+                        .foregroundColor(ColorManager.grey2)
                     
-                    Text("Asking friend to \nbe a mediator")
+                    Text("We are requesting a Mediator \nto help resolve \nthis issue")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
@@ -92,7 +102,7 @@ struct PickMediator2: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("(Push Notification sent when 'Tapped')")
+                Text("(Push Notification sent when tap [SHARE])")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)
@@ -226,13 +236,13 @@ struct PickMediator2: View {
                 })
                     
                     Spacer ()
-                        .frame(height: 15)
+                        .frame(height: 25)
                     
                     Button(action: {
                         sessionManager.showLogin()
                     },
                         label: {
-                            Text("Home / Chat")
+                            Text("Find Mediator")
                                 .fontWeight(.thin)
                                 .frame(width: 200, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -289,7 +299,7 @@ struct PickMediator2: View {
         
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends - Mediator", body: "\(user.firstName) Request you as a Mediator", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BestFriends - Mediator", body: "\(user.firstName) Request Mediator Help You", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
