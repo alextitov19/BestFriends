@@ -57,57 +57,105 @@ struct AtmosphereInfo: View {
             Spacer()
             .frame(height: 15)
 
-            Text("Selecting NEW Aura")
+            Text("Select NEW Aura")
                 .font(.system(size: 20))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
-                
                .foregroundColor(Color.purple)
             
             
          
             VStack {
            
-                
-            Text("-Tap button reflecting NEW mood \n- Type a short explaination \nof whats going on")
-                .font(.system(size: 15))
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .foregroundColor(ColorManager.grey1)
-//                    .foregroundColor(.gray)
-             
                 Spacer()
-                .frame(height: 25)
+                .frame(height: 20)
                 
-                Text("Coloring Your Atmosphere")
+                Text("Atmosphere Surrounding Planet")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     
                    .foregroundColor(Color.purple)
          
-                Text("-Blue for 'negative' \n-Green for 'I'm Ok' \n-Orange for 'bored' \n-Yellow for 'positive'")
+                Text("Blue ... 'negative'")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey1)
+              
                 
+                
+                VStack {
+                    
+                    Text("Green ... 'I'm Ok'")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.grey1)
+                    
+                    Text("Orange ... 'bored'")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.grey1)
+                    
+                    
+                    Text("Yellow ... 'positive'")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.grey1)
                 Spacer()
-                .frame(height: 25)
+                .frame(height: 20)
                 
-                Text("Your's and Friends Atmosphere \ninstantly shows on homepage")
+                Text("Atmosphere instantly shows")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                    
                    .foregroundColor(Color.purple)
+                    
+                    Text("on homepage")
+                        .font(.system(size: 20))
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                       .foregroundColor(Color.purple)
+                    
+                    VStack {
+                        
+                Spacer()
+                .frame(height: 20)
                 
+                Text("Type a short explaination")
+                    .font(.system(size: 20))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                   .foregroundColor(Color.purple)
+                    
+                    Text("of whats going on")
+                        .font(.system(size: 20))
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                       .foregroundColor(Color.purple)
+                
+                Text("-Letting friends know what's up")
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.grey1)
+                    
+                    Text("-Makes entry into 'Tracker'")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.grey1)
+
+                    
             }
             
         VStack {
             
             Spacer()
-            .frame(height: 25)
+            .frame(height: 20)
             
       
        Text("Notifying Friends")
@@ -116,15 +164,15 @@ struct AtmosphereInfo: View {
            .multilineTextAlignment(.center)
            .foregroundColor(Color.purple)
        
-       Text("-Tap the names of the friends you want \nto notify of your change")
+       Text("-Tap the names of the friends \nyou want to notify \n-They can offer help \nor celebrate with you")
            .font(.system(size: 15))
            .fontWeight(.light)
            .multilineTextAlignment(.center)
            .foregroundColor(ColorManager.grey1)
-//               .foregroundColor(.gray)
+
                 
             Spacer()
-                 .frame(height: 25)
+                 .frame(height: 20)
                  
            
             Text("Sending Push Notification")
@@ -138,7 +186,7 @@ struct AtmosphereInfo: View {
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)
                 .foregroundColor(ColorManager.grey1)
-//                    .foregroundColor(.gray)
+
             
                 Spacer()
                 .frame(height: 0)
@@ -146,16 +194,16 @@ struct AtmosphereInfo: View {
             
         VStack {
   Spacer()
-            .frame(height: 35)
+            .frame(height: 15)
             
 
             
             NavigationLink(
                 destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
                 label: {
-                    Text("Update Aura")
+                    Text("SKIP")
                         .fontWeight(.thin)
-                        .frame(width: 150, height: 40)
+                        .frame(width: 100, height: 40)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 20))
                         .background(ColorManager.purple3)
@@ -165,7 +213,7 @@ struct AtmosphereInfo: View {
                 })
           
             Spacer()
-                 .frame(height: 125)
+                 .frame(height: 50)
         }
     }
     
@@ -173,6 +221,6 @@ struct AtmosphereInfo: View {
 }
 }
 }
+}
 
-
-
+}
