@@ -44,10 +44,14 @@ struct AtmosphereInfo: View {
             
         VStack {
             
-        
+            Text("Updating Your")
+                .font(.system(size: 30))
+                .fontWeight(.thin)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.blue)
          
             Text("A T O M S P H E R E")
-                .font(.system(size: 35))
+                .font(.system(size: 37))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
@@ -56,19 +60,27 @@ struct AtmosphereInfo: View {
             
             Spacer()
             .frame(height: 15)
-
-            Text("Select NEW Aura")
-                .font(.system(size: 20))
-                .fontWeight(.thin)
+            
+            Text("Friends can offer help on bad days")
+                .font(.system(size: 17))
+                .italic()
+                .fontWeight(.light)
                 .multilineTextAlignment(.center)
-               .foregroundColor(Color.purple)
-            
-            
+                .foregroundColor(Color.white)
+    
+       
+       Text("Celebrate with you on great days")
+           .font(.system(size: 20))
+           .italic()
+           .fontWeight(.light)
+           .multilineTextAlignment(.center)
+           .foregroundColor(Color.white)
+
          
             VStack {
            
                 Spacer()
-                .frame(height: 20)
+                .frame(height: 25)
                 
                 Text("Atmosphere Surrounding Planet")
                     .font(.system(size: 20))
@@ -153,23 +165,7 @@ struct AtmosphereInfo: View {
             }
             
         VStack {
-            
-            Spacer()
-            .frame(height: 20)
-            
-      
-       Text("Notifying Friends")
-           .font(.system(size: 20))
-           .fontWeight(.thin)
-           .multilineTextAlignment(.center)
-           .foregroundColor(Color.purple)
-       
-       Text("-Tap the names of the friends \nyou want to notify \n-They can offer help \nor celebrate with you")
-           .font(.system(size: 15))
-           .fontWeight(.light)
-           .multilineTextAlignment(.center)
-           .foregroundColor(ColorManager.grey1)
-
+        
                 
             Spacer()
                  .frame(height: 20)
@@ -181,12 +177,16 @@ struct AtmosphereInfo: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.purple)
             
+            Text("-Tap the names of the friends \nyou want to notify")
+                .font(.system(size: 15))
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+                .foregroundColor(ColorManager.grey1)
             Text("-Tap [Submit]")
                 .font(.system(size: 15))
                 .fontWeight(.light)
                 .multilineTextAlignment(.center)
                 .foregroundColor(ColorManager.grey1)
-
             
                 Spacer()
                 .frame(height: 0)
