@@ -202,7 +202,6 @@ struct Apologies4: View {
                             .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
                                         Button("OK", role: .cancel) { }
                                     }
-
                     })
                     
                     Spacer ()
