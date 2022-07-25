@@ -158,7 +158,7 @@ struct HurtFeelings4: View {
                                     colors[2] = ColorManager.purple3
                                 } else {
                                     selectedFriends.append(friends[2].id)
-                                    colors[2] = ColorManager.purple3
+                                    colors[2] = ColorManager.purple5
                                 }
                                 print(selectedFriends)
                             })
@@ -172,7 +172,7 @@ struct HurtFeelings4: View {
                                     colors[3] = ColorManager.purple3
                                 } else {
                                     selectedFriends.append(friends[3].id)
-                                    colors[3] = ColorManager.purple3
+                                    colors[3] = ColorManager.purple5
                                 }
                                 print(selectedFriends)
                             })
@@ -186,18 +186,10 @@ struct HurtFeelings4: View {
                                     colors[4] = ColorManager.purple3
                                 } else {
                                     selectedFriends.append(friends[4].id)
-                                    colors[4] = ColorManager.purple3
+                                    colors[4] = ColorManager.purple5
                                 }
                                 print(selectedFriends)
                             })
-                        
-                      
-                        
-//                    MARK: Trying to get the the button color to change when tapped
-
-                        
-                        
-                        
                     }
                     
                    
