@@ -60,9 +60,9 @@ struct ChatBubble: View {
                 } else {
                     FriendChatMessage(name: message.senderName, messageBody: "📸", message: message)
                         .onTapGesture {
-                                Task { await downloadImage(key: message.image) }
+                            Task { await downloadImage(key: message.image) }
                             
-                           
+                            
                         }
                 }
             } else {
@@ -132,7 +132,7 @@ private struct MyChatMessage: View {
                 Text(messageBody)
                     .padding(4)
                     .multilineTextAlignment(.leading)
-//                    .font(.system(size: 15).weight(.light))
+                //                    .font(.system(size: 15).weight(.light))
                     .background(ColorManager.grey3)
                     .opacity(0.7)
                     .font(.system(size: 15).weight(.thin))
@@ -181,11 +181,10 @@ private struct FriendChatMessage: View {
                 Text(name)
                     .frame(width: 200, alignment: .leading)
                     .foregroundColor(ColorManager.grey4)
-//                    .foregroundColor(.green)
+                //                    .foregroundColor(.green)
                     .font(.system(size: 16).weight(.thin))
                     .offset(x: 5, y: 5)
                     .onAppear(perform: loadData)
-                    .padding(.horizontal, 20)
                 
                 Spacer()
             }
@@ -195,24 +194,23 @@ private struct FriendChatMessage: View {
                     .padding(10)
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 16).weight(.light))
-//                    .background(ColorManager.grey4)
+                //                    .background(ColorManager.grey4)
                     .foregroundColor(.white)
                     .background(ColorManager.purple3)
                     .cornerRadius(15)
                 
                 Spacer()
             }
-            .padding(.horizontal, 20)
             
             HStack {
-                Spacer()
-                
                 Text(timeString)
                     .font(.system(size: 12).weight(.light))
                     .foregroundColor(ColorManager.purple5)
+                
+                Spacer()
             }
-            .padding(.horizontal, 160)
         }
+        .padding(.horizontal, 20)
     }
     
     private func loadData() {
