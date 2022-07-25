@@ -129,7 +129,7 @@ struct ChatView: View {
                     //                        .colorInvert()
                         .frame(width: 40, height: 40)
                         .scaledToFit()
-                        .padding(.leading, 5)
+                        .padding(.leading, 20)
                         .onTapGesture { showsAlert = true }
                         .confirmationDialog("Send an image", isPresented: $showsAlert, titleVisibility: .visible) {
                             
