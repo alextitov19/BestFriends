@@ -44,14 +44,14 @@ struct AtmosphereInfo: View {
             
         VStack {
             
-            Text("Updating Your")
+            Text("Why Update Your")
                 .font(.system(size: 30))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
          
-            Text("A T O M S P H E R E")
-                .font(.system(size: 37))
+            Text("A T M O S P H E R E ?")
+                .font(.system(size: 35))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
@@ -70,26 +70,53 @@ struct AtmosphereInfo: View {
     
        
        Text("Celebrate with you on great days")
-           .font(.system(size: 20))
+           .font(.system(size: 17))
            .italic()
            .fontWeight(.light)
            .multilineTextAlignment(.center)
            .foregroundColor(Color.white)
+            
+            Spacer()
+            .frame(height: 15)
 
+//            Text("Becoming a BestFriend")
+//                .font(.system(size: 30))
+//                .fontWeight(.thin)
+//                .multilineTextAlignment(.center)
+//                .foregroundColor(Color.blue)
+            Text("By doing the same for them")
+                .font(.system(size: 20))
+                .fontWeight(.thin)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.blue)
+          
+            
+            Text("Become a BestFriend")
+                .fontWeight(.thin)
+                .frame(width: 300, height: 50)
+                .foregroundColor(Color .blue)
+                .font(.system(size: 30))
+                .background(ColorManager.grey2)
+                .cornerRadius(15)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+           
          
+            
+            
+            
             VStack {
            
                 Spacer()
                 .frame(height: 25)
                 
-                Text("Atmosphere Surrounding Planet")
+                Text("Update your Atmosphere")
                     .font(.system(size: 20))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     
                    .foregroundColor(Color.purple)
          
-                Text("Blue ... 'negative'")
+                Text("'Negative' ... Blue")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -99,102 +126,94 @@ struct AtmosphereInfo: View {
                 
                 VStack {
                     
-                    Text("Green ... 'I'm Ok'")
+                    Text("'I'm Ok' ... Green")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.grey1)
                     
-                    Text("Orange ... 'bored'")
+                    Text("'Bored' ... Orange")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.grey1)
                     
                     
-                    Text("Yellow ... 'positive'")
+                    Text("'Positive' ... Yellow")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.grey1)
                 Spacer()
-                .frame(height: 20)
+                .frame(height: 10)
                 
-                Text("Atmosphere instantly shows")
-                    .font(.system(size: 20))
-                    .fontWeight(.thin)
+                Text("Updated Atmosphere instantly shows")
+                        .font(.system(size: 15))
+                        .italic()
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                   .foregroundColor(Color.purple)
+                   .foregroundColor(Color.white)
                     
-                    Text("on homepage")
-                        .font(.system(size: 20))
-                        .fontWeight(.thin)
+                    Text("on friend's homepage")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                       .foregroundColor(Color.purple)
+                       .foregroundColor(Color.white)
                     
                     VStack {
+            
                         
-                Spacer()
-                .frame(height: 20)
+                        Spacer()
+                        .frame(height: 20)
+
+                        Text("Alerting Friends")
+                            .font(.system(size: 30))
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.blue)
+//
+//                        Text("By doing the same for them")
+//                            .font(.system(size: 20))
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.blue)
+//
+                        
+//
+//                Text("Type a short explaination")
+//                    .font(.system(size: 20))
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//                   .foregroundColor(Color.purple)
+//
+//                    Text("of whats going on")
+//                        .font(.system(size: 20))
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                       .foregroundColor(Color.purple)
                 
-                Text("Type a short explaination")
-                    .font(.system(size: 20))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                   .foregroundColor(Color.purple)
-                    
-                    Text("of whats going on")
-                        .font(.system(size: 20))
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                       .foregroundColor(Color.purple)
-                
-                Text("-Letting friends know what's up")
+                Text("-Type short explaination \nof whats going on")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey1)
+                   
                     
-                    Text("-Makes entry into 'Tracker'")
-                        .font(.system(size: 15))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.grey1)
+//                    Text("-Mak")
+//                        .font(.system(size: 15))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager.grey1)
 
                     
             }
             
+      
         VStack {
-        
-                
-            Spacer()
-                 .frame(height: 20)
-                 
-           
-            Text("Sending Push Notification")
-                .font(.system(size: 20))
-                .fontWeight(.thin)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.purple)
-            
-            Text("-Tap the names of the friends \nyou want to notify")
-                .font(.system(size: 15))
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .foregroundColor(ColorManager.grey1)
-            Text("-Tap [Submit]")
-                .font(.system(size: 15))
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .foregroundColor(ColorManager.grey1)
-            
+  
                 Spacer()
-                .frame(height: 0)
-            }
-            
-        VStack {
-  Spacer()
-            .frame(height: 15)
+                    .frame(height: 15)
             
 
             

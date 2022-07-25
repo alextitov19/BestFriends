@@ -106,7 +106,7 @@ struct FG_VideoCall: View {
                    .opacity(0.9)
 
            VStack {
-              Text("FriendGroup \nDrama")
+              Text("Minimizing \nFriendGroup \nDrama")
                             .font(.system(size: 20))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)

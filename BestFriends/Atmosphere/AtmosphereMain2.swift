@@ -57,14 +57,14 @@ struct AtmosphereMain2: View {
                
                 
                 HStack {
-                    Text("See friend's atmosphere on homepage")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager.grey1)
-                    
+//                    Text("See friend's atmosphere on homepage")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .fontWeight(.light)
+//                        .foregroundColor(ColorManager.grey1)
+//
                  
-                        .padding(.horizontal)
+//                        .padding(.horizontal)
 //                    Spacer()
                 }
                 .padding(.horizontal)

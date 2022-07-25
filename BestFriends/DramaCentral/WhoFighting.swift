@@ -44,7 +44,7 @@ struct WhoFighting: View {
         ZStack {
 
             NavigationLink(destination: IntroBluemodeFriend(user: user, friends: friends), label: {
-                WhoFightingCircle (color: .purple, friendName: "HUGE \nFight w/ \nTEEN BFF")
+                WhoFightingCircle (color: .purple, friendName: "TEEN Fight \nSuggestions")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
 
@@ -56,21 +56,21 @@ struct WhoFighting: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
             
 
-            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "TEEN \nFriendGroup \nDrama")
+            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
             })
             .offset(x: showItems ? -90 : 0, y: showItems ? -150: 0)
             
             NavigationLink(destination: NostalgiaPreload2(user: user, friends: friends, groups: groups), label: {
-                WhoFightingCircle (color: .orange, friendName: "Nostalgia")
+                WhoFightingCircle (color: .orange, friendName: "Adult \nNostalgia")
             })
             .offset(x: showItems ? 95 : 0, y: showItems ? -30: 0)
             
             
             NavigationLink(destination: Sweetheart1(user: user, friends: friends, groups: groups), label: {
-                WhoFightingCircle (color: .pink, friendName: "BetaTest \nthis!")
+                WhoFightingCircle (color: .pink, friendName: "Messed \nUp?")
             })
-            .offset(x: showItems ? -110 : 0, y: showItems ? 120: 0)
-           
+            .offset(x: showItems ? -110 : 0, y: showItems ? 160: 0)
+            .opacity(0.7)
             
             
         Image(systemName: "triangle.fill")
@@ -85,16 +85,34 @@ struct WhoFighting: View {
            VStack {
                
             Spacer ()
-                   .frame(height: 125)
+                   .frame(height: 85)
                 
-              Text("Drama n' Fights")
+              Text("Fixing \n FIGHTS")
                             .font(.system(size: 22))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+               
+//               Spacer ()
+//                      .frame(height: 10)
+               
+               Text(" . . . ")
+                             .font(.system(size: 22))
+                             .foregroundColor(.blue)
+                             .fontWeight(.medium)
+                             .multilineTextAlignment(.center)
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+               
+               Spacer ()
+                      .frame(height: 5)
                     
-                
+               Text("Calming \nFriendGroups")
+                             .font(.system(size: 22))
+                             .foregroundColor(.blue)
+                             .fontWeight(.medium)
+                             .multilineTextAlignment(.center)
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
                 }
             }

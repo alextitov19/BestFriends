@@ -91,7 +91,7 @@ struct MyRoomPreload: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("- re-read nice messages from Chat")
+                    Text("- re-read nice messages from \nFriends you long-tapped in Chat")
                         .font(.system(size: 19))
                         .italic()
                         .foregroundColor(ColorManager.grey2)
@@ -148,10 +148,19 @@ struct MyRoomPreload: View {
 //                            .foregroundColor(ColorManager.grey2)
 ////                            .foregroundColor(Color.white)
 //
-                        
+//                        
+//                        Text("Become a BestFriend")
+//                            .fontWeight(.thin)
+//                            .frame(width: 310, height: 50)
+//                            .foregroundColor(Color .blue)
+//                            .font(.system(size: 30))
+//                            .background(ColorManager.grey2)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                       
                         
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 70)
                         
                         
                         

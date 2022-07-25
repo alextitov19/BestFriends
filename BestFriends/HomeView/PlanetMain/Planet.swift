@@ -266,7 +266,7 @@ struct PlanetActionsView: View {
                                 
 
                               
-                                Text("Dream")
+                                Text("Future")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 17, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
