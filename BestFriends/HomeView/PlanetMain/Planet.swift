@@ -129,22 +129,22 @@ struct PlanetActionsView: View {
                         .frame(height: 15)
                     
 
-                    NavigationLink(destination: InviteView(user: user), label: {
+                    NavigationLink(destination: EmptyView(), label: {
                         ZStack {
                             Circle()
-                                .frame(width: 85, height: 85)
-                                .foregroundColor(ColorManager.orange2)
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
-                               .opacity(0.15)
+                               .opacity(0.40)
                             
                             VStack {
-                                Text("Add")
-                                    .foregroundColor(.green)
-                                    .font(.system(size: 25, weight: .bold))
+                                Text("comming")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("Friends")
+                                Text("fall")
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -205,7 +205,7 @@ struct PlanetActionsView: View {
 //
 //                    MARK: First setup
                     
-                    NavigationLink(destination: InfoViewPlanet(),
+                    NavigationLink(destination: InfoViewPlanet(user: user),
                                    label: {
                         ZStack {
                             Circle()
@@ -224,7 +224,6 @@ struct PlanetActionsView: View {
 //
                                 Text("Start")
                                     .foregroundColor(.green)
-//                                    .foregroundColor(ColorManager.green)
                                     .font(.system(size: 25, weight: .bold))
 //                                    .italic()
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -232,9 +231,9 @@ struct PlanetActionsView: View {
                                 
                                 
                                 Text("Here")
-                                    .foregroundColor(ColorManager.orange2)
+                                    .foregroundColor(.green)
                                 
-                                .font(.system(size: 17, weight: .bold))
+                                .font(.system(size: 25, weight: .bold))
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                                 .opacity(0.50)
                                 
@@ -250,38 +249,99 @@ struct PlanetActionsView: View {
                
                     Spacer()
                         .frame(height: 15)
-                    NavigationLink(destination: HorizonHomeView(),
-                                   
-                label: {
-                        
-                        ZStack {
-                            Circle()
-                                .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.purple3)
-                                .foregroundColor(.pink)
-                                .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.50)
-                            
-                            VStack {
-                                
+                    
+                    
+                    
+                      NavigationLink(destination: SettingsView(user: user),
+                                     label: {
+                          ZStack {
+                              Circle()
+                                  .frame(width: 85, height: 85)
+                                  .foregroundColor(ColorManager.orange2)
+                                  .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                 .opacity(0.15)
 
-                              
-                                Text("Future")
-                                    .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 17, weight: .bold))
-                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.50)
-                                
-                                Text("Horizons")
-                                    .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 17, weight: .bold))
-                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.50)
-                 
-                   
-                            }
-                        }
-                    })
+                              VStack {
+
+
+                                 Text("Settings")
+                                      .foregroundColor(.white)
+                                      .font(.system(size: 17, weight: .bold))
+                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                      .opacity(0.50)
+                              }
+                          }
+                         
+                      })
+                    
+                    
+//                    NavigationLink(destination: HorizonHomeView(),
+//
+//                label: {
+//
+//                        ZStack {
+//                            Circle()
+//                                .frame(width: 100, height: 100)
+//                                .foregroundColor(ColorManager.purple3)
+//                                .foregroundColor(.pink)
+//                                .shadow(color: .black, radius: 2, x: 0, y: 2)
+//                                .opacity(0.50)
+//
+//                            VStack {
+//
+//
+//
+//                                Text("Future")
+//                                    .foregroundColor(ColorManager.grey1)
+//                                     .font(.system(size: 17, weight: .bold))
+//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                     .opacity(0.50)
+//
+//                                Text("Horizons")
+//                                    .foregroundColor(ColorManager.grey1)
+//                                     .font(.system(size: 17, weight: .bold))
+//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                     .opacity(0.50)
+//
+//
+//                            }
+//                        }
+//                    })
+//
+//                }
+//
+//
+//
+//
+//                VStack {
+//                    NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends),
+//                                   label: {
+//                        ZStack {
+//                            Circle()
+//                                .frame(width: 100, height: 100)
+//                                .foregroundColor(ColorManager.purple3)
+//                                .shadow(color: .black, radius: 2, x: 0, y: 2)
+//                                .opacity(0.40)
+//
+//                            VStack {
+//
+//                                Text("My")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 16, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
+//
+//                                Text("Atmosphere")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 16, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
+//
+//
+//                            }
+//                        }
+//                    })
+                    
                    
                 }
                 
@@ -318,32 +378,65 @@ struct PlanetActionsView: View {
                     })
                     
                     
+                    
+                    
                     Spacer()
                         .frame(height: 15)
                     
-                    
-                  
-                    NavigationLink(destination: SettingsView(user: user),
-                                   label: {
+                    NavigationLink(destination: HorizonHomeView(),
+                                   
+                label: {
+                        
                         ZStack {
                             Circle()
-                                .frame(width: 85, height: 85)
-                                .foregroundColor(ColorManager.orange2)
+                                .frame(width: 100, height: 100)
+                                .foregroundColor(ColorManager.purple3)
+                                .foregroundColor(.pink)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
-                               .opacity(0.15)
-
+                                .opacity(0.50)
+                            
                             VStack {
+                                
 
-
-                               Text("Settings")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 17, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
+                              
+                                Text("Future")
+                                    .foregroundColor(ColorManager.grey1)
+                                     .font(.system(size: 17, weight: .bold))
+                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                     .opacity(0.50)
+                                
+                                Text("Horizons")
+                                    .foregroundColor(ColorManager.grey1)
+                                     .font(.system(size: 17, weight: .bold))
+                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                     .opacity(0.50)
+                 
+                   
                             }
                         }
-                       
                     })
+//
+//                    NavigationLink(destination: SettingsView(user: user),
+//                                   label: {
+//                        ZStack {
+//                            Circle()
+//                                .frame(width: 85, height: 85)
+//                                .foregroundColor(ColorManager.orange2)
+//                                .shadow(color: .black, radius: 2, x: 0, y: 2)
+//                               .opacity(0.15)
+//
+//                            VStack {
+//
+//
+//                               Text("Settings")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 17, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
+//                            }
+//                        }
+//
+//                    })
                     
                  
 
