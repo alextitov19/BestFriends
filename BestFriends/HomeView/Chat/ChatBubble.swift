@@ -130,14 +130,14 @@ private struct MyChatMessage: View {
                     .onAppear(perform: loadData)
                 
                 Text(messageBody)
-                    .padding(4)
+                    .padding(10)
                     .multilineTextAlignment(.leading)
                 //                    .font(.system(size: 15).weight(.light))
                     .background(ColorManager.grey3)
                     .opacity(0.7)
                     .font(.system(size: 15).weight(.thin))
                     .foregroundColor(.black)
-                    .cornerRadius(7)
+                    .cornerRadius(15)
             }
             
             HStack {
