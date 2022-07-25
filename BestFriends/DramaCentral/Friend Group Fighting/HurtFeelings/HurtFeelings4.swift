@@ -26,6 +26,7 @@ struct HurtFeelings4: View {
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
     @State private var shareColor = ColorManager.purple5
+    @State private var showingAlert = false
     
     
     var body: some View {
@@ -40,33 +41,32 @@ struct HurtFeelings4: View {
                 Text("Some EXAMPLES of what to \nsay in a Chat message")
                     .font(.system(size: 20))
                     .fontWeight(.regular)
-                    .foregroundColor(Color .white)
+                    .foregroundColor(.white)
                 
                 Spacer()
                     .frame(height: 15)
                 
-                Text("Hey, I would like to talk to you \nabout something you said.")
-                    .fontWeight(.thin)
-                    .frame(width: 310, height: 50)
-                    .foregroundColor(Color .blue)
-                    .font(.system(size: 17))
-                    .background(ColorManager.grey2)
-                    .cornerRadius(15)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                
-                
-                
-                
-                Text("Hi, I wanted to let you know that \nwhat you said hurt my feelings")
-                    .fontWeight(.thin)
-                    .frame(width: 310, height: 50)
-                    .foregroundColor(Color .blue)
-                    .font(.system(size: 17))
-                    .background(ColorManager.grey2)
-                    .cornerRadius(15)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                
-                
+                VStack {
+                    Text("Hey, I would like to talk to you \nabout something you said.")
+                        .foregroundColor(.white)
+                        .font(.system(size: 17))
+                        .padding(.top)
+                        .padding(.horizontal)
+                    
+                    CustomDivider(color: .white)
+                        .frame(width: 240)
+                    
+                    Text("Hi, I wanted to let you know that \nwhat you said hurt my feelings")
+                        .foregroundColor(.white)
+                        .font(.system(size: 17))
+                        .padding(.bottom)
+                        .padding(.horizontal)
+                }
+                .overlay(
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(.white, lineWidth: 1)
+                    )
+                   
                 
                 
                 
@@ -221,7 +221,9 @@ struct HurtFeelings4: View {
                         .background(shareColor)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
+                        .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                                    Button("OK", role: .cancel) { }
+                                }
 
                 })
                     
@@ -272,6 +274,7 @@ struct HurtFeelings4: View {
             }
         }
         shareColor = ColorManager.darkGrey
+        showingAlert = true
     }
     
     struct RectView: View {
