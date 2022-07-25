@@ -30,7 +30,7 @@ struct ChatBubble: View {
                                 image = nil
                             })
                     }
-                    .padding(.horizontal, 5)
+                    .padding(.horizontal, 20)
                     
                 } else {
                     MyChatMessage(messageBody: "📸",message: message)
@@ -55,7 +55,7 @@ struct ChatBubble: View {
                         
                         Spacer()
                     }
-                    .padding(.horizontal, 5)
+                    .padding(.horizontal, 20)
                     
                 } else {
                     FriendChatMessage(name: message.senderName, messageBody: "📸", message: message)
@@ -180,10 +180,12 @@ private struct FriendChatMessage: View {
             HStack {
                 Text(name)
                     .frame(width: 200, alignment: .leading)
-                    .foregroundColor(.white)
+                    .foregroundColor(ColorManager.grey4)
+//                    .foregroundColor(.green)
                     .font(.system(size: 16).weight(.thin))
                     .offset(x: 5, y: 5)
                     .onAppear(perform: loadData)
+                    .padding(.horizontal, 20)
                 
                 Spacer()
             }

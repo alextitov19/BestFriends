@@ -93,8 +93,9 @@ struct ChatView: View {
                         }
                     //                    }//NavLink
                     
-                    Text("REMOVE me")
-                        .foregroundColor(.gray)
+                    Text("Delete Me")
+                        .foregroundColor(ColorManager.grey4)
+//                        .foregroundColor(.gray)
                         .font(.system(size: 18, weight: .thin))
                         .onTapGesture(perform: leaveChatGroup)
                 }
