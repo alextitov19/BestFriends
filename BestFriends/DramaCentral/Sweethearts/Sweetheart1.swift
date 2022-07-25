@@ -294,9 +294,6 @@ struct Sweetheart1: View {
     }
     
     
-    func defaultMessageButtonTapped(defaultMessage: String) {
-        self.colorChangeTap = defaultMessage
-    }
 }
 
 
