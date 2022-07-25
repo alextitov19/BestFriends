@@ -133,7 +133,7 @@ private struct MyChatMessage: View {
                     .padding(4)
                     .multilineTextAlignment(.leading)
 //                    .font(.system(size: 15).weight(.light))
-                    .background(ColorManager.grey2)
+                    .background(ColorManager.grey3)
                     .opacity(0.7)
                     .font(.system(size: 15).weight(.thin))
                     .foregroundColor(.black)
@@ -144,11 +144,11 @@ private struct MyChatMessage: View {
                 Spacer()
                 
                 Text(timeString)
-                    .font(.system(size: 10).weight(.light))
-                    .foregroundColor(ColorManager.grey2)
+                    .font(.system(size: 12).weight(.light))
+                    .foregroundColor(ColorManager.grey4)
             }
         }
-        .padding(.horizontal, 5)
+        .padding(.horizontal, 20)
     }
     
     private func loadData() {
@@ -193,13 +193,14 @@ private struct FriendChatMessage: View {
                     .padding(10)
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 16).weight(.light))
+//                    .background(ColorManager.grey4)
                     .foregroundColor(.white)
                     .background(ColorManager.purple3)
                     .cornerRadius(15)
                 
                 Spacer()
             }
-            .padding(.horizontal, 5)
+            .padding(.horizontal, 20)
             
             HStack {
                 Spacer()
@@ -208,7 +209,7 @@ private struct FriendChatMessage: View {
                     .font(.system(size: 12).weight(.light))
                     .foregroundColor(ColorManager.purple5)
             }
-            .padding(.horizontal, 5)
+            .padding(.horizontal, 160)
         }
     }
     

@@ -150,7 +150,7 @@ struct ChatView: View {
                     TextField("", text: $messageBody)
                         .placeholder(when: messageBody.isEmpty) {
                             HStack {
-                                Text("Send a chat").foregroundColor(.white)
+                                Text("Send a chat").foregroundColor(.purple)
                                 
                                 Spacer()
                             }
