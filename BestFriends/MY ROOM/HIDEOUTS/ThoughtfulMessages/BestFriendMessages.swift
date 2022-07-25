@@ -131,16 +131,16 @@ struct BestFriendMessages: View {
                         Text("(you 'long-tapped' \nfrom Chat)")
                             .font(.system(size: 16))
                             .italic()
-                            .foregroundColor(.white)
+                            .foregroundColor(.purple)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                     
                         
-                        Image(systemName: "info.circle")
-                            .resizable()
-                            .frame(width: 30, height: 30)
-                            .scaledToFill()
-                            .foregroundColor(.black)
+//                        Image(systemName: "info.circle")
+//                                               .resizable()
+//                                               .frame(width: 30, height: 30)
+//                                               .scaledToFill()
+//                                               .foregroundColor(.black)
         //                    .onTapGesture(perform: {
         //                        sessionManager.infoView(user: user, group: group
                     }
