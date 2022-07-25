@@ -138,7 +138,7 @@ struct PlanetActionsView: View {
                                .opacity(0.40)
                             
                             VStack {
-                                Text("comming")
+                                Text("this")
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -362,13 +362,13 @@ struct PlanetActionsView: View {
    
                                 Text("My")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("Atmosphere")
+                                Text("Aura")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 16, weight: .bold))
+                                    .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 

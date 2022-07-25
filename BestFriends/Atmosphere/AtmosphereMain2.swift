@@ -69,9 +69,10 @@ struct AtmosphereMain2: View {
                 }
                 .padding(.horizontal)
                 
-                
+             
                 HStack {
                     VStack {
+                       
                         Button(action: {
                             mood = 0
                         }) {
@@ -415,7 +416,7 @@ struct AtmosphereMain2: View {
                     NavigationLink(
                         destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
                         label: {
-                            Text("Mood Tracker")
+                            Text("Aura Tracker")
                                 .fontWeight(.thin)
                                 .frame(width: 180, height: 35)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

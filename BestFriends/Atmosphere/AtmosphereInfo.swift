@@ -50,16 +50,12 @@ struct AtmosphereInfo: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
          
-            Text("A T M O S P H E R E ?")
+            Text("A U R A ?")
                 .font(.system(size: 35))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
             
-          
-            
-            Spacer()
-            .frame(height: 15)
             
             Text("Friends can offer help on bad days")
                 .font(.system(size: 17))
@@ -68,7 +64,7 @@ struct AtmosphereInfo: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
     
-       
+            
        Text("Celebrate with you on great days")
            .font(.system(size: 17))
            .italic()
@@ -76,6 +72,13 @@ struct AtmosphereInfo: View {
            .multilineTextAlignment(.center)
            .foregroundColor(Color.white)
             
+            
+                    Text("Track 'Aura' if you want")
+                        .font(.system(size: 17))
+                        .italic()
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
             Spacer()
             .frame(height: 15)
 
@@ -107,45 +110,44 @@ struct AtmosphereInfo: View {
             VStack {
            
                 Spacer()
-                .frame(height: 25)
+                .frame(height: 40)
                 
-                Text("Update your Atmosphere")
-                    .font(.system(size: 20))
+                Text("Atmosphere Updates")
+                    .font(.system(size: 25))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                    
                    .foregroundColor(Color.purple)
          
-                Text("'Negative' ... Blue")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
-              
-                
-                
-                VStack {
-                    
-                    Text("'I'm Ok' ... Green")
-                        .font(.system(size: 15))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.grey1)
-                    
-                    Text("'Bored' ... Orange")
-                        .font(.system(size: 15))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.grey1)
-                    
-                    
-                    Text("'Positive' ... Yellow")
-                        .font(.system(size: 15))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.grey1)
-                Spacer()
-                .frame(height: 10)
+//                Text("'Negative' ... Blue")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager.grey1)
+//
+//
+//
+//                VStack {
+//
+//                    Text("'I'm Ok' ... Green")
+//                        .font(.system(size: 15))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager.grey1)
+//
+//                    Text("'Bored' ... Orange")
+//                        .font(.system(size: 15))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager.grey1)
+//
+//
+//                    Text("'Positive' ... Yellow")
+//                        .font(.system(size: 15))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager.grey1)
+             
+           
                 
                 Text("Updated Atmosphere instantly shows")
                         .font(.system(size: 15))
@@ -160,18 +162,25 @@ struct AtmosphereInfo: View {
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                        .foregroundColor(Color.white)
+                
+                Text("with corresponding color scheme")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                   .foregroundColor(Color.white)
                     
                     VStack {
             
                         
                         Spacer()
-                        .frame(height: 20)
+                        .frame(height: 15)
 
                         Text("Alerting Friends")
-                            .font(.system(size: 30))
+                            .font(.system(size: 25))
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color.blue)
+                            .foregroundColor(Color.purple)
 //
 //                        Text("By doing the same for them")
 //                            .font(.system(size: 20))
@@ -193,7 +202,7 @@ struct AtmosphereInfo: View {
 //                        .multilineTextAlignment(.center)
 //                       .foregroundColor(Color.purple)
                 
-                Text("-Type short explaination \nof whats going on")
+                Text("-Type short explaination and send")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -232,7 +241,7 @@ struct AtmosphereInfo: View {
                 })
           
             Spacer()
-                 .frame(height: 50)
+                 .frame(height: 125)
         }
     }
     
@@ -242,4 +251,4 @@ struct AtmosphereInfo: View {
 }
 }
 
-}
+
