@@ -23,25 +23,18 @@ struct Apologies4: View {
     @State private var customMessage = "Custom Message"
     @State private var colorChangeTap: String = ""
     @State private var noteTapped = false
-    @State private var sharedWith: [String] = []
+    @State private var selectedFriends: [String] = []
+    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
+    @State private var shareColor = ColorManager.purple5
+    @State private var showingAlert = false
     
     
     var body: some View {
         ZStack {
-                        ColorManager.purple4
-                            .ignoresSafeArea()
-                            .onAppear()
-            
-            
+            ColorManager.purple4
+                .ignoresSafeArea()
+                .onAppear()
             VStack {
-//
-//                HStack {
-//
-////                        .frame(height: 20)
-//
-//                }
-////                .padding(.horizontal)
-//
                 
                 Text("Some EXAMPLES of what to \nsay in a Chat message")
                     .font(.system(size: 20))
@@ -51,36 +44,26 @@ struct Apologies4: View {
                 Spacer()
                     .frame(height: 5)
                 
-                Text("Hey, I would like to apologize \nfor what I said.")
-                    .fontWeight(.thin)
-                    .frame(width: 310, height: 50)
-                    .foregroundColor(Color .blue)
-                    .font(.system(size: 17))
-                    .background(ColorManager.grey2)
-                    .cornerRadius(15)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                
-                
-                
-                
-                Text("Hi, I wanted to apologize \nfor what I did to you.")
-                    .fontWeight(.thin)
-                    .frame(width: 310, height: 50)
-                    .foregroundColor(Color .blue)
-                    .font(.system(size: 17))
-                    .background(ColorManager.grey2)
-                    .cornerRadius(15)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                VStack {
+                    Text("Hey, I would like to apologize \nfor what I said.")
+                        .foregroundColor(.white)
+                        .font(.system(size: 17))
+                        .padding(.top)
+                        .padding(.horizontal)
+                    
+                    CustomDivider(color: .white)
+                        .frame(width: 200)
+                    
+                    Text("Hi, I wanted to apologize \nfor what I did to you.")
+                        .foregroundColor(.white)
+                        .font(.system(size: 17))
+                        .padding(.bottom)
+                        .padding(.horizontal)
+                }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(.white, lineWidth: 1)
+                )
                 
                 HStack {
                     Text("ALERT \nFriend")
@@ -109,14 +92,14 @@ struct Apologies4: View {
                 
                 HStack {
                     
-//                MARK: The [All] button is not activated. When tap nothing comes up in the bottom output screen
+                    //                MARK: The [All] button is not activated. When tap nothing comes up in the bottom output screen
                     if friends.count > 1 {
                         Button(action: {
                             
                         },
                                label: {
                             Text("select >")
-//                                .fontWeight(.bold)
+                            //                                .fontWeight(.bold)
                                 .fontWeight(.thin)
                                 .frame(width: 100, height: 30)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -127,112 +110,100 @@ struct Apologies4: View {
                         })
                     }
                     if friends.count > 0 {
-                        RectView(user: user, friend: friends[0])
+                        RectView(user: user, friend: friends[0], color: colors[0])
                             .onTapGesture(perform: {
-                                if sharedWith.contains(friends[0].id) {
-                                    sharedWith = sharedWith.filter { $0 != friends[0].id }
+                                if selectedFriends.contains(friends[0].id) {
+                                    selectedFriends = selectedFriends.filter { $0 != friends[0].id }
+                                    colors[0] = ColorManager.purple3
                                 } else {
-                                    sharedWith.append(friends[0].id)
+                                    selectedFriends.append(friends[0].id)
+                                    colors[0] = ColorManager.purple5
                                 }
-                                print(sharedWith)
+                                print(selectedFriends)
                             })
                     }
                     
                     if friends.count > 1 {
-                        RectView(user: user, friend: friends[1])
+                        RectView(user: user, friend: friends[1], color: colors[1])
                             .onTapGesture(perform: {
-                                if sharedWith.contains(friends[1].id) {
-                                    sharedWith = sharedWith.filter { $0 != friends[1].id }
+                                if selectedFriends.contains(friends[1].id) {
+                                    selectedFriends = selectedFriends.filter { $0 != friends[1].id }
+                                    colors[1] = ColorManager.purple3
                                 } else {
-                                    sharedWith.append(friends[1].id)
+                                    selectedFriends.append(friends[1].id)
+                                    colors[1] = ColorManager.purple5
                                 }
-                                print(sharedWith)
+                                print(selectedFriends)
                             })
                     }
                 }
                 
                 HStack {
                     if friends.count > 2 {
-                        RectView(user: user, friend: friends[2])
+                        RectView(user: user, friend: friends[2], color: colors[2])
                             .onTapGesture(perform: {
-                                if sharedWith.contains(friends[2].id) {
-                                    sharedWith = sharedWith.filter { $0 != friends[2].id }
+                                if selectedFriends.contains(friends[2].id) {
+                                    selectedFriends = selectedFriends.filter { $0 != friends[2].id }
+                                    colors[2] = ColorManager.purple3
                                 } else {
-                                    sharedWith.append(friends[2].id)
+                                    selectedFriends.append(friends[2].id)
+                                    colors[2] = ColorManager.purple5
                                 }
-                                print(sharedWith)
+                                print(selectedFriends)
                             })
                     }
                     
                     if friends.count > 3 {
-                        RectView(user: user, friend: friends[3])
+                        RectView(user: user, friend: friends[3], color: colors[3])
                             .onTapGesture(perform: {
-                                if sharedWith.contains(friends[3].id) {
-                                    sharedWith = sharedWith.filter { $0 != friends[3].id }
+                                if selectedFriends.contains(friends[3].id) {
+                                    selectedFriends = selectedFriends.filter { $0 != friends[3].id }
+                                    colors[3] = ColorManager.purple3
                                 } else {
-                                    sharedWith.append(friends[3].id)
+                                    selectedFriends.append(friends[3].id)
+                                    colors[3] = ColorManager.purple5
                                 }
-                                print(sharedWith)
+                                print(selectedFriends)
                             })
                     }
                     
                     if friends.count > 4 {
-                        RectView(user: user, friend: friends[4])
-                                 
-//                                 , color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
-                           
+                        RectView(user: user, friend: friends[4], color: colors[4])
                             .onTapGesture(perform: {
-                                if sharedWith.contains(friends[4].id) {
-                                    sharedWith = sharedWith.filter { $0 != friends[4].id }
+                                if selectedFriends.contains(friends[4].id) {
+                                    selectedFriends = selectedFriends.filter { $0 != friends[4].id }
+                                    colors[4] = ColorManager.purple3
                                 } else {
-                                    sharedWith.append(friends[4].id)
+                                    selectedFriends.append(friends[4].id)
+                                    colors[4] = ColorManager.purple5
                                 }
-                                print(sharedWith)
+                                print(selectedFriends)
                             })
-                        
-
-                        
-//                    MARK: Trying to get the the button color to change when tapped
-//                        if friends.count > 4 {
-//                            RectView(user: user, friend: friends[4], color: sharedWith.contains(friends[4].id) ? ColorManager.purple3 : ColorManager.purple5)
-//                                .onTapGesture(perform: {
-//                                    if sharedWith.contains(friends[4].id) {
-//                                        sharedWith = sharedWith.filter { $0 != friends[4].id }
-//                                    } else {
-//                                        sharedWith.append(friends[4].id)
-//                                    }
-//                                    print(sharedWith)
-//                                })
-//
-                        
-                        
                         
                     }
                 }
-                    
+                
                 VStack {
                     Spacer()
                         .frame(height: 20)
-                
-                Button(action: {
-                    defaultMessageButtonTapped(defaultMessage: "SHARE")
-//                            shareMood()
-                },
-                       label: {
-                    Text("SHARE")
-                        .fontWeight(.thin)
-                        .frame(width: 100, height: 40)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 30))
-                        
-                        .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
-                        
-//                            .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     
-                 
-                })
+                    Button(action: {
+                        shareButtonTapped()
+                    },
+                           label: {
+                        Text("SHARE")
+                            .fontWeight(.thin)
+                            .frame(width: 100, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(shareColor)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+                                        Button("OK", role: .cancel) { }
+                                    }
+
+                    })
                     
                     Spacer ()
                         .frame(height: 15)
@@ -240,16 +211,16 @@ struct Apologies4: View {
                     Button(action: {
                         sessionManager.showLogin()
                     },
-                        label: {
-                            Text("Home / Chat")
-                                .fontWeight(.thin)
-                                .frame(width: 200, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
+                           label: {
+                        Text("Home / Chat")
+                            .fontWeight(.thin)
+                            .frame(width: 200, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
                     
                     Spacer()
                         .frame(height: 70)
@@ -257,8 +228,8 @@ struct Apologies4: View {
                 
                 
             }
-
-
+            
+            
         }
     }
     
@@ -268,51 +239,35 @@ struct Apologies4: View {
         }
     }
     
-    func sendMessage() {
-//        if customMessage.count == 0 { return }
-//
-//        let arr = [user.id, friend.id]
-//        for g in groups {
-//            if g.members.containsSameElements(as: arr) {
-//                // Send chat message to this existing group
-//                RestApi.instance.createChatMessage(groupId: g.id, body: customMessage).then({ response in
-//                    sessionManager.showChat(user: user, group: g)
-//                })
-//
-//                return
-//            }
-//        }
-//
-//        // Create new group
-//        RestApi.instance.createGroup(name: "\(user.firstName), \(friend.firstName)", members: arr).then { responseGroup in
-//            // Send chat message to this group
-//            RestApi.instance.createChatMessage(groupId: responseGroup.id, body: customMessage).then({ response in
-//                sessionManager.showChat(user: user, group: responseGroup)
-//            })
-//        }
+    func shareButtonTapped() {
+        if selectedFriends.count == 0 { return }
+        for id in selectedFriends {
+            for f in friends {
+                if f.id == id {
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent you an apology in chat!", APNToken: f.APNToken)
+                }
+            }
+        }
+        shareColor = ColorManager.darkGrey
+        showingAlert = true
     }
     
     struct RectView: View {
         let user: User
         let friend: User
+        let color: Color
         
         var body: some View {
-            Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends - Apologie", body: "\(user.firstName) Sent you an Apologie in Chat", APNToken: friend.APNToken )
-            },
-                   label: {
-                Text(friend.firstName + " " + String(friend.lastName.first!))
-                    .fontWeight(.bold)
-                    .frame(width: 100, height: 30)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 10))
-                    .background(Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)))
-                    .cornerRadius(25)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-            })
+            Text(friend.firstName + " " + String(friend.lastName.first!))
+                .fontWeight(.bold)
+                .frame(width: 100, height: 30)
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                .font(.system(size: 10))
+                .background(color)
+                .cornerRadius(25)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
     }
-    
     
     
     
