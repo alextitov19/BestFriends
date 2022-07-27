@@ -67,14 +67,7 @@ struct HurtFeelings4: View {
                             .stroke(.white, lineWidth: 1)
                     )
                    
-                
-                
-                
-                
-                
-                
-                
-                
+             
                 
                 HStack {
                     Text("ALERT \nFriend")

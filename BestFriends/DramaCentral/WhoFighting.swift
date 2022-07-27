@@ -73,8 +73,8 @@ struct WhoFighting: View {
             .opacity(0.7)
             
             
-            NavigationLink(destination: FightWithParents(), label: {
-                WhoFightingCircle (color: .green, friendName: "Fight \nwith \nParents")
+            NavigationLink(destination: FD_Step1(), label: {
+                WhoFightingCircle (color: .green, friendName: "Family \nDRAMA")
             })
             .offset(x: showItems ? -20 : 0, y: showItems ? 200: 0)
             .opacity(0.7)

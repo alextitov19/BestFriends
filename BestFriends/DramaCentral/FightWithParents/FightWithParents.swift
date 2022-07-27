@@ -40,60 +40,102 @@ struct FightWithParents: View {
             VStack {
                 
                 
-                Text("Fighting with")
+                Text("My Phone")
                     .font(.system(size: 40))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
                 
                 Spacer()
-                    .frame(height: 10)
-                
-                Text("P A R E N T S")
-                    .font(.system(size: 60))
-                    .fontWeight(.ultraLight)
-                    .foregroundColor(Color.blue)
+                    .frame(height: 25)
    
                 VStack {
+                   
+                      
+                        Text("Parents Checking my Phone.")
+                            .font(.system(size: 20))
+                            .fontWeight(.regular)
+                            .foregroundColor(.blue)
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        VStack {
+                            Text("If the phone was a gift to you by your parents before you were an adult, then")
+                                .foregroundColor(.white)
+                                .font(.system(size: 17))
+                                .padding(.top)
+                                .padding(.horizontal)
+                            
+                            CustomDivider(color: .white)
+                                .frame(width: 200)
+                            
+                            Text("since you are now an adult you have a right to privacy in all your affairs, including your mobile phone.")
+                                .foregroundColor(.white)
+                                .font(.system(size: 17))
+                                .padding(.bottom)
+                                .padding(.horizontal)
+                        }
+                        .overlay(
+                                RoundedRectangle(cornerRadius: 16)
+                                    .stroke(.white, lineWidth: 1)
+                            )
+                        
+                        
+                        VStack {
+                            Spacer()
+                                .frame(height: 35)
+                            
+                            Text("Can my parents take my")
+                                .font(.system(size: 20))
+                                .fontWeight(.regular)
+                                .foregroundColor(.blue)
+                            
+                            Text("phone if I paid for it?")
+                                .font(.system(size: 20))
+                                .fontWeight(.regular)
+                                .foregroundColor(.blue)
+                            
+                            Spacer()
+                                .frame(height: 15)
+                            
+                            VStack {
+                                Text("As long as you're under age 18 and living with your parents, you're under their authority.")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 17))
+                                    .padding(.top)
+                                    .padding(.horizontal)
+                                
+                                CustomDivider(color: .white)
+                                    .frame(width: 200)
+
+                               Text("They can take away your cell phone if they want, and the law gives you no recourse to get it back.")
+                                   .foregroundColor(.white)
+                                  .font(.system(size: 17))
+                                   .padding(.bottom)
+                                  .padding(.horizontal)
+                                
+                            }
+                            
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 16)
+                                    .stroke(.white, lineWidth: 1)
+                            )
+                            
+                      
+                    
+                    
+                    
+                    
                     Spacer()
                         .frame(height: 15)
                     
-                    Text("Family drama may be normal, but it still sucks. We have some suggestions to help handle these conflicts.")
-                        .font(.system(size: 15))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.white)
-                        .padding()
-                    
-                    Text("Parents Checking my Phone: If the phone was a gift to you by your parents before you were an adult, since you are now an adult you have a right to privacy in all your affairs, including your mobile phone.")
-                        .font(.system(size: 15))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.white)
-                        .padding()
-                    
-                    Text("Why do I hate my parents? Toxic behaviors, abuse, neglect, or conflict are just a few factors that can lead to feelings of animosity.")
-                        .font(.system(size: 15))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.white)
-                        .padding()
-                    Text("Can my parents take my phone if I paid for it? As long as you're under age 18 and living with your parents, you're under their authority; they can take away your cell phone if they want, and the law gives you no recourse to get it back.")
-                        .font(.system(size: 15))
-                        .fontWeight(.ultraLight)
-                        .foregroundColor(Color.white)
-                        .padding()
-                   
-                  
-                   
-                    
-                    Spacer()
-                        .frame(height: 15)
-                    
-                   
-                    
+              
                     NavigationLink(
-                        destination: EmptyView(),
+                        destination: FD_Step1(),
                         label: {
                             Text("NEXT")
                                 .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
+                                .frame(width: 100, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
@@ -103,13 +145,17 @@ struct FightWithParents: View {
 
                         
                         })
+                    
+                  
+                    Spacer()
+                        .frame(height: 150)
           }
         }
     }
 }
 }
 
-
+}
 
 
 struct FightWithParents_Previews : PreviewProvider {

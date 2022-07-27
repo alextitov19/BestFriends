@@ -34,6 +34,7 @@ struct Apologies4: View {
             ColorManager.purple4
                 .ignoresSafeArea()
                 .onAppear()
+           
             VStack {
                 
                 Text("Some EXAMPLES of what to \nsay in a Chat message")
