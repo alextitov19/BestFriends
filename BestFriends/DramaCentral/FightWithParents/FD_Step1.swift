@@ -13,34 +13,15 @@ import AVKit
 struct FD_Step1: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     var body: some View {
         ZStack {
-            
             Image("blueBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-//                        ColorManager.purple4
-//                            .ignoresSafeArea()
-//                            .onAppear()
-                        
-             
-            
-//            Image("purpleBackground")
-//                .resizable()
-//                .scaledToFill()
-//                .ignoresSafeArea()
-//
-//
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//
             
             VStack {
-                
-                
                 Text("My Parents")
                     .font(.system(size: 40))
                     .fontWeight(.ultraLight)
@@ -54,9 +35,8 @@ struct FD_Step1: View {
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                     .padding()
-   
+                
                 VStack {
-                  
                     Text("If your parents do or say something \nthat makes you extremely angry.")
                         .font(.system(size: 20))
                         .fontWeight(.regular)
@@ -74,18 +54,12 @@ struct FD_Step1: View {
                         
                         CustomDivider(color: .white)
                             .frame(width: 200)
-                        
-//                        Text("Hi, I wanted to let you know that \nwhat you said hurt my feelings")
-//                            .foregroundColor(.white)
-//                            .font(.system(size: 17))
-//                            .padding(.bottom)
-//                            .padding(.horizontal)
                     }
+                    .padding(.horizontal, 20)
                     .overlay(
-                            RoundedRectangle(cornerRadius: 16)
-                                .stroke(.white, lineWidth: 1)
-                        )
-                    
+                        RoundedRectangle(cornerRadius: 16)
+                            .stroke(.white, lineWidth: 1)
+                    )
                     
                     VStack {
                         Spacer()
@@ -108,60 +82,34 @@ struct FD_Step1: View {
                             
                             CustomDivider(color: .white)
                                 .frame(width: 200)
-                            
-//                            Text(".")
-//                                .foregroundColor(.white)
-//                                .font(.system(size: 15))
-//                                .padding(.bottom)
-//                                .padding(.horizontal)
                         }
+                        .padding(.horizontal, 20)
                         .overlay(
                             RoundedRectangle(cornerRadius: 16)
                                 .stroke(.white, lineWidth: 1)
                         )
                         
-                  
-               
-                   
-                  
-                   
-                    
-                    Spacer()
-                        .frame(height: 35)
-                    
-                   
-                    
-                    NavigationLink(
-                        destination: FightWithParents(),
-                        label: {
-                            Text("NEXT")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
-
+                        Spacer()
+                            .frame(height: 35)
                         
-                        })
-                    
-                  
-                    Spacer()
-                        .frame(height: 50)
-          }
+                        NavigationLink(
+                            destination: FightWithParents(),
+                            label: {
+                                Text("NEXT")
+                                    .fontWeight(.thin)
+                                    .frame(width: 100, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                        
+                        Spacer()
+                            .frame(height: 50)
+                    }
+                }
+            }
         }
     }
 }
-}
-
-}
-
-//
-//struct FightWithParents_Previews : PreviewProvider {
-//    static var previews: some View {
-//        FightWithParents()
-//    }
-//}
-

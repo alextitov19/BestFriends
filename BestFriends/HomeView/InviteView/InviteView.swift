@@ -49,7 +49,7 @@ struct InviteView: View {
                     .italic()
                     .font(.system(size: 17))
                 
-                if user.friends!.count < 5 {
+                if user.friends?.count ?? 0 < 5 {
                     VStack {
                         // Top part for inviting a friend
                         HStack {
