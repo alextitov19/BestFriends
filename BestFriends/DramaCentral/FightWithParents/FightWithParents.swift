@@ -100,12 +100,13 @@ struct FightWithParents: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        NavigationLink(
-                            destination: FD_Step1(),
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
                             label: {
-                                Text("NEXT")
+                                Text("Home / Chat")
                                     .fontWeight(.thin)
-                                    .frame(width: 100, height: 40)
+                                    .frame(width: 200, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(ColorManager.purple3)
