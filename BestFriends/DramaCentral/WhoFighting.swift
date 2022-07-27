@@ -73,6 +73,13 @@ struct WhoFighting: View {
             .opacity(0.7)
             
             
+            NavigationLink(destination: FightWithParents(), label: {
+                WhoFightingCircle (color: .green, friendName: "Fight \nwith \nParents")
+            })
+            .offset(x: showItems ? -20 : 0, y: showItems ? 200: 0)
+            .opacity(0.7)
+            
+            
         Image(systemName: "triangle.fill")
                     .resizable()
                     .foregroundColor(.gray)
