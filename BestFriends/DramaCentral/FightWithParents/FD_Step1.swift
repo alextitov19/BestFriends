@@ -34,7 +34,7 @@ struct FD_Step1: View {
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
-                    .padding()
+                    .padding(20)
                 
                 VStack {
                     Text("If your parents do or say something \nthat makes you extremely angry.")
@@ -55,11 +55,12 @@ struct FD_Step1: View {
                         CustomDivider(color: .white)
                             .frame(width: 200)
                     }
-                    .padding(.horizontal, 20)
                     .overlay(
                         RoundedRectangle(cornerRadius: 16)
                             .stroke(.white, lineWidth: 1)
                     )
+                    .padding(.horizontal, 30)
+
                     
                     VStack {
                         Spacer()
@@ -83,11 +84,12 @@ struct FD_Step1: View {
                             CustomDivider(color: .white)
                                 .frame(width: 200)
                         }
-                        .padding(.horizontal, 20)
                         .overlay(
                             RoundedRectangle(cornerRadius: 16)
                                 .stroke(.white, lineWidth: 1)
                         )
+                        .padding(.horizontal, 20)
+
                         
                         Spacer()
                             .frame(height: 35)
