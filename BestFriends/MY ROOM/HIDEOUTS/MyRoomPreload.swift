@@ -34,8 +34,8 @@ struct MyRoomPreload: View {
             
             VStack {
                 Text("Yep, its one of those")
-                    .font(.system(size: 45))
-                    .foregroundColor(.white)
+                    .font(.system(size: 37))
+                    .foregroundColor(.blue)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
@@ -43,7 +43,7 @@ struct MyRoomPreload: View {
                 
                 Text("D A Y S")
                     .font(.system(size: 65))
-                    .foregroundColor(.white)
+                    .foregroundColor(.blue)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
@@ -51,13 +51,22 @@ struct MyRoomPreload: View {
                     .frame(height: 10)
                 
                 
-                Text("Maybe just want to feel safe, be sad for a while, by yourself in your room.")
+                Text("Maybe just want to feel safe,")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                 
-          
+                Text("be sad for a while,")
+                    .font(.system(size: 20))
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                Text("be by yourself in your room.")
+                    .font(.system(size: 20))
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
                 
                 Spacer()
                     .frame(height: 50)
@@ -80,14 +89,16 @@ struct MyRoomPreload: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("You let your friends know how you feel, now let them help you")
+                    Text("You let your friends know how \nyou feel, now let them help you")
                         .font(.system(size: 20))
-                        .foregroundColor(.white)
+                        .foregroundColor(.blue)
                         .fontWeight(.light)
                         .foregroundColor(Color.white)
+                    Spacer()
+                        .frame(height: 15)
                     
                     Text("- re-read nice messages from \nFriends you long-tapped in Chat")
-                        .font(.system(size: 19))
+                        .font(.system(size: 15))
                         .italic()
                         .foregroundColor(ColorManager.grey2)
                         .fontWeight(.light)
@@ -96,8 +107,8 @@ struct MyRoomPreload: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("- listen to a song a friend sent to match your mood")
-                        .font(.system(size: 19))
+                    Text("- listen to a song a friend sent \nto match your mood")
+                        .font(.system(size: 15))
                         .italic()
                         .foregroundColor(ColorManager.grey2)
                         .fontWeight(.light)
@@ -106,8 +117,8 @@ struct MyRoomPreload: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    Text("- Shake you phone and see favorite images your friends sent you")
-                        .font(.system(size: 19))
+                    Text("- Shake you phone and see favorite \nimages your friends sent you")
+                        .font(.system(size: 15))
                         .italic()
                         .foregroundColor(ColorManager.grey2)
                         .fontWeight(.light)
