@@ -310,12 +310,3 @@ struct Step2_FightLandingView: View {
     
     
 }
-
-
-
-//
-//func defaultMessageButtonTapped(defaultMessage: String) {
-//    self.colorChangeTap = defaultMessage
-//}
-//}
-
