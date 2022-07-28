@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-//import AVKit
+import AVKit
 
 
 struct BetaTesters1: View {
@@ -16,16 +16,18 @@ struct BetaTesters1: View {
         
         ZStack {
             
-            ColorManager.grey4
-                  .ignoresSafeArea()
+//            ColorManager.grey4
+//                  .ignoresSafeArea()
 
+//         
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
 
-//            Image("teenLaptop")
-////                .frame(width: 100, height: 40)
-//               .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
          
 
             VStack {
