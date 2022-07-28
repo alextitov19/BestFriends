@@ -160,6 +160,7 @@
 		CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040928915A080092EEB9 /* FD_Step1.swift */; };
 		CF65040C28925FE00092EEB9 /* MyRoomDVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */; };
 		CF65040F289266400092EEB9 /* MyRoom DemVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF65040E289266400092EEB9 /* MyRoom DemVideo.mp4 */; };
+		CF6504122892F1730092EEB9 /* BetaTesters1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6504112892F1730092EEB9 /* BetaTesters1.swift */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -376,6 +377,7 @@
 		CF65040928915A080092EEB9 /* FD_Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FD_Step1.swift; sourceTree = "<group>"; };
 		CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomDVid.swift; sourceTree = "<group>"; };
 		CF65040E289266400092EEB9 /* MyRoom DemVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyRoom DemVideo.mp4"; sourceTree = "<group>"; };
+		CF6504112892F1730092EEB9 /* BetaTesters1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTesters1.swift; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
@@ -548,6 +550,7 @@
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
 				CF3B65A9280071580003A714 /* Settings */,
+				CF6504102892F1340092EEB9 /* Beta Tester */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD0ABD2285C256C0032CA3D /* Built by Teens */,
@@ -917,6 +920,14 @@
 				CF65040E289266400092EEB9 /* MyRoom DemVideo.mp4 */,
 			);
 			path = "Demo Videos";
+			sourceTree = "<group>";
+		};
+		CF6504102892F1340092EEB9 /* Beta Tester */ = {
+			isa = PBXGroup;
+			children = (
+				CF6504112892F1730092EEB9 /* BetaTesters1.swift */,
+			);
+			path = "Beta Tester";
 			sourceTree = "<group>";
 		};
 		CF725E2628516E180096342F /* Tokens */ = {
@@ -1404,6 +1415,7 @@
 				62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */,
 				AD60AE0A2888DF900073CEDB /* PaymentHandler.swift in Sources */,
 				CF381A592829205800B3719E /* OurMission.swift in Sources */,
+				CF6504122892F1730092EEB9 /* BetaTesters1.swift in Sources */,
 				CF650402288660520092EEB9 /* Subscriptions.swift in Sources */,
 				7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */,
 				7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */,

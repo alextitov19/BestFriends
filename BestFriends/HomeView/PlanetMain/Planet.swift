@@ -129,7 +129,7 @@ struct PlanetActionsView: View {
                         .frame(height: 15)
                     
 
-                    NavigationLink(destination: EmptyView(), label: {
+                    NavigationLink(destination: BetaTesters1(), label: {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
@@ -138,18 +138,23 @@ struct PlanetActionsView: View {
                                .opacity(0.40)
                             
                             VStack {
-                                Text("this")
+                                Text("See")
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("fall")
+                                Text("New Features")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 14, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.50)
+                                
+                              Text("FIRST!")
                                     .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
-                             
                                     
                             }
                         }
