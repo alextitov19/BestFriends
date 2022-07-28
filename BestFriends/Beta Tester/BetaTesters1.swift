@@ -20,7 +20,7 @@ struct BetaTesters1: View {
 //                  .ignoresSafeArea()
 
 //         
-            Image("purpleBackground")
+            Image("blueBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
