@@ -34,7 +34,7 @@ struct MyRoomPreload: View {
             
             VStack {
                 
-                NavigationLink(destination: MyRoomDVid(), label: {
+                NavigationLink(destination: MyRoomDVid(user: user, friends: friends, atmosphere: atmosphere, friendAtmospheres:  friendAtmospheres), label: {
                     Text("Demo Video")
                         .fontWeight(.thin)
                         .frame(width: 200, height: 40)
@@ -62,19 +62,31 @@ struct MyRoomPreload: View {
                 Spacer()
                     .frame(height: 10)
                 
-                
-                Text("Maybe just want to feel safe,")
+                VStack {
+               
+                    Text("Maybe you just want to")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                 
-                Text("be sad for a while,")
+                Text("be sad for a while.")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
-                Text("or just be by yourself.")
+                    
+                    Spacer()
+                        .frame(height: 15)
+                    
+                
+                Text("A chance to be by yourself")
+                    .font(.system(size: 20))
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                    .foregroundColor(Color.white)
+                
+                Text("in the Safety of your Room")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.light)
@@ -101,44 +113,44 @@ struct MyRoomPreload: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("You let your friends know how \nyou feel, now let them help you")
-                        .font(.system(size: 20))
-                        .foregroundColor(.blue)
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
+//                    Text("You let your friends know how \nyou feel, now let them help you")
+//                        .font(.system(size: 20))
+//                        .foregroundColor(.blue)
+//                        .fontWeight(.light)
+//                        .foregroundColor(Color.white)
                     Spacer()
                         .frame(height: 15)
                     
-                    Text("- re-read nice messages from \nFriends you long-tapped in Chat")
-                        .font(.system(size: 15))
-                        .italic()
-                        .foregroundColor(ColorManager.grey2)
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("- listen to a song a friend sent \nto match your mood")
-                        .font(.system(size: 15))
-                        .italic()
-                        .foregroundColor(ColorManager.grey2)
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                        .frame(height: 10)
-                    
-                    Text("- Shake you phone and see favorite \nimages your friends sent you")
-                        .font(.system(size: 15))
-                        .italic()
-                        .foregroundColor(ColorManager.grey2)
-                        .fontWeight(.light)
-                        .foregroundColor(Color.white)
-                    
+//                    Text("- re-read nice messages from \nFriends you long-tapped in Chat")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .foregroundColor(ColorManager.grey2)
+//                        .fontWeight(.light)
+//                        .foregroundColor(Color.white)
+//
+//                    Spacer()
+//                        .frame(height: 10)
+//
+//                    Text("- listen to a song a friend sent \nto match your mood")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .foregroundColor(ColorManager.grey2)
+//                        .fontWeight(.light)
+//                        .foregroundColor(Color.white)
+//
+//                    Spacer()
+//                        .frame(height: 10)
+//
+//                    Text("- Shake you phone and see favorite \nimages your friends sent you")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .foregroundColor(ColorManager.grey2)
+//                        .fontWeight(.light)
+//                        .foregroundColor(Color.white)
+//
                 
                     
-                    VStack{
+                   
                      
                         Spacer()
                             .frame(height: 70)
@@ -146,7 +158,7 @@ struct MyRoomPreload: View {
                         
                         
                     
-                    }
+                    
                     
                     
                 }
@@ -158,3 +170,4 @@ struct MyRoomPreload: View {
     
 }
 
+}
