@@ -33,6 +33,17 @@ struct MyRoomPreload: View {
             
             
             VStack {
+                HStack {
+                    Image(systemName: "demoVideo")
+                        .resizable()
+                        .frame(width: 27, height: 27)
+                        .scaledToFill()
+                        .foregroundColor(.white)
+//                        .onTapGesture(perform: {
+//                            sessionManager.infoView(user: user, group: group)
+                
+                }
+                
                 Text("Yep, its one of those")
                     .font(.system(size: 37))
                     .foregroundColor(.blue)
@@ -62,7 +73,7 @@ struct MyRoomPreload: View {
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
-                Text("be by yourself in your room.")
+                Text("or just be by yourself.")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.light)
