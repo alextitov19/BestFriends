@@ -59,30 +59,23 @@ struct PickMediator2: View {
                         .stroke(.white, lineWidth: 1)
                 )
                 
-                HStack {
-                    Text("Alert \nFriends")
-                        .font(.system(size: 27))
-                        .fontWeight(.regular)
-                        .foregroundColor(ColorManager.grey2)
-                    
-                    Text("We are requesting a Mediator \nto help resolve this issue")
-                        .font(.system(size: 20))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                }
-                .padding(.horizontal)
-                .padding(.leading)
-                
-                Spacer()
-                    .frame(height: 15)
-                
-                Text("(Tap friends who fighting \n& send Push Notification)")
+                Text("Alert Friends")
                     .font(.system(size: 15))
-                    .italic()
+                   
                     .fontWeight(.thin)
-                    .foregroundColor(Color.black)
+                    .foregroundColor(Color.white)
+       
+       Text("That you're")
+           .font(.system(size: 15))
+           .italic()
+           .fontWeight(.thin)
+           .foregroundColor(Color.black)
+       
+       Text("requesting a Mediator")
+           .font(.system(size: 15))
+           .italic()
+           .fontWeight(.thin)
+           .foregroundColor(Color.black)
                 
                 HStack {
                     
