@@ -12,11 +12,10 @@ struct InviteView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     @State private var email = ""
-    let user: User
-    
     @State private var invites: [Invite] = []
-    
     @State private var inviteClicked = false
+    
+    let user: User
     
     var body: some View {
         ZStack {

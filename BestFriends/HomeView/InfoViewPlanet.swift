@@ -43,61 +43,10 @@ struct InfoViewPlanet: View {
                 
                 Spacer()
                 .frame(height: 15)
-                NavigationLink(
-                    destination: InviteView(user: user),
-                    label: {
-                        Text("Add Friends")
-                            .fontWeight(.thin)
-                            .frame(width: 250, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 25))
-                            .background(ColorManager.pmbc_green)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                  
-                    })
-                
-           
-//
-//                Text("Tap Center Planet on Homepage")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.purple)
-//
-//                Text("-Planet menu page show up")
-//                    .font(.system(size: 15))
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-////                    .foregroundColor(Color.white)
-//                    .foregroundColor(ColorManager.grey1)
-                
-//                Spacer()
-//                .frame(height: 15)
-//
+              
                 
             VStack {
-                
-            
              
-//                Text("Add Friends")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.purple)
-                
-                Text("-Add up to five friends \n(10 with Premium) \n-Their 'Planets' will appear on Homepage")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-                
-                
-            
-                
-                Spacer()
-                     .frame(height: 15)
                 
                 Text("Friend sent \n'Push Notification'")
                     .font(.system(size: 25))
