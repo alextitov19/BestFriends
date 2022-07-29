@@ -42,6 +42,17 @@ struct ChatView: View {
             VStack {
                 // MARK: Header
                 HStack {
+                    
+                    Text("< back")
+//                        .resizable()
+                        .frame(width: 52, height: 30)
+                        .foregroundColor(.blue)
+                        .scaledToFill()
+                        .onTapGesture(perform: {
+                            sessionManager.showHome()
+                        })
+                    
+                    
                     Image(systemName: "info.circle")
                         .resizable()
                         .frame(width: 27, height: 27)
@@ -51,14 +62,14 @@ struct ChatView: View {
                             sessionManager.infoView(user: user, group: group)
                         })
                     
-                    
-                    Image("home-alt2")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .scaledToFill()
-                        .onTapGesture(perform: {
-                            sessionManager.showHome()
-                        })
+//
+//                    Image("home-alt2")
+//                        .resizable()
+//                        .frame(width: 30, height: 30)
+//                        .scaledToFill()
+//                        .onTapGesture(perform: {
+//                            sessionManager.showHome()
+//                        })
                     
                     Text(group.name)
                         .task {
