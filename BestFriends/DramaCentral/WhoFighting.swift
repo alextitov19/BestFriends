@@ -101,25 +101,7 @@ struct WhoFighting: View {
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                
-//               Spacer ()
-//                      .frame(height: 10)
-               
-               Text(" . . . ")
-                             .font(.system(size: 22))
-                             .foregroundColor(.blue)
-                             .fontWeight(.medium)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-               
-               Spacer ()
-                      .frame(height: 5)
-                    
-               Text("Calming \nFriendGroups")
-                             .font(.system(size: 22))
-                             .foregroundColor(.blue)
-                             .fontWeight(.medium)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+
                     
                 }
             }
