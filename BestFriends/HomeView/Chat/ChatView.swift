@@ -43,7 +43,7 @@ struct ChatView: View {
                 // MARK: Header
                 HStack {
                     
-                    Text("< back")
+                    Text("< Back")
 //                        .resizable()
                         .frame(width: 52, height: 30)
                         .foregroundColor(.blue)

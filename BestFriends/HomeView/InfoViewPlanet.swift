@@ -36,10 +36,7 @@ struct InfoViewPlanet: View {
 ////                    .foregroundColor(.gray)
 //                    .foregroundColor(ColorManager.grey2)
 //                    .font(.system(size: 25, weight: .bold))
-//
-//                Spacer()
-//                .frame(height: 5)
-             
+
                 
                 Spacer()
                 .frame(height: 15)
@@ -49,10 +46,10 @@ struct InfoViewPlanet: View {
              
                 
                 Text("Friend sent \n'Push Notification'")
-                    .font(.system(size: 25))
+                    .font(.system(size: 35))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.green)
                 
                 Text("-Tap friend's planet that sent")
                     .font(.system(size: 15))
@@ -61,14 +58,8 @@ struct InfoViewPlanet: View {
 //                    .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                  
-                Text("notification, see dropdown")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .foregroundColor(ColorManager.grey1)
-//                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.center)
              
-                Text("- tap planets to 'show/hide' notifications")
+                Text("-tap planet to 'hide' dropdown")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .foregroundColor(ColorManager.grey1)
@@ -77,75 +68,77 @@ struct InfoViewPlanet: View {
              
                 VStack {
                     Spacer()
-                    .frame(height: 15)
+                    .frame(height: 35)
 
-                    Text("Create NEW Chat Rooms")
-                        .font(.system(size: 25))
-                        .fontWeight(.thin)
+                    Text("Create")
+                        .font(.system(size: 35))
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        
-                       .foregroundColor(Color.purple)
+                       .foregroundColor(Color.green)
                     
-                Text("-Tap Friend's Planet \n-Tap [Create NEW Chat Rooms] \n-Name Chat Room \n-We send Push Notification to Friend")
+                    Text("NEW Chat Rooms")
+                        .font(.system(size: 35))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                       .foregroundColor(Color.green)
+                    
+                Text("-Tap Friend's Planet")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey1)
-//                    .foregroundColor(.gray)
+                   
+                    Text("-Tap [Create NEW Chat Rooms]")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.grey1)
 
-             
+                    Text("-Name Chat Room")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.grey1)
                 }
                 
             VStack {
                 
                 Spacer()
-                .frame(height: 15)
+                .frame(height: 35)
                 
           
-           Text("Inside Chat Rooms")
-               .font(.system(size: 20))
-               .fontWeight(.thin)
+           Text("Chat Rooms")
+               .font(.system(size: 35))
+               .fontWeight(.light)
                .multilineTextAlignment(.center)
-               .foregroundColor(Color.purple)
+               .foregroundColor(Color.green)
            
-           Text("-Use 'Pullup' to see Chat Rooms")
+           Text("-Long-tap messages to save to SmileVault")
                .font(.system(size: 15))
                .fontWeight(.light)
                .multilineTextAlignment(.center)
                .foregroundColor(ColorManager.grey1)
+                
+                Text("-Long-tap messages to Report Abuse")
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.grey1)
+                
                 Text("-Tap [Remove Me] to be removed")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey1)
-                Text("-Tap 'HOME' icon to Exit")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
+               
 
-                
-                
-                
-
-                    
-                Spacer()
-                     .frame(height: 15)
-                     
-//
-//                Text("Hide Chat")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.purple)
-//
                 Text("-Tap 'Lock' icon to Hide Chat")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey1)
 
-                Text("-to 'Un-Hide' enter 4 digit PIN")
+                Text("-'Un-Hide' Chat enter 4 digit PIN")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -160,20 +153,20 @@ struct InfoViewPlanet: View {
              
               
                 Spacer()
-                .frame(height: 15)
+                .frame(height: 40)
                 
-                NavigationLink(
-                    destination: Subscriptions(),
+                Button(action: {
+                    sessionManager.showLogin()
+                },
                     label: {
-                        Text("Get PREMIUM")
+                        Text("Home / Chat")
                             .fontWeight(.thin)
                             .frame(width: 200, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 25))
+                            .font(.system(size: 30))
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                  
                     })
                 
 //
@@ -197,7 +190,7 @@ struct InfoViewPlanet: View {
 
                 
                 Spacer()
-                .frame(height: 75)
+                .frame(height: 150)
                 
 
            
