@@ -57,7 +57,7 @@ struct IntuitiveView: View {
                         .font(.system(size: 35))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color.green)
+                        .foregroundColor(ColorManager.purple3)
 
                     Text("Sharing LIFE with FRIENDS")
                         .font(.system(size: 17))
@@ -75,7 +75,7 @@ struct IntuitiveView: View {
                         .font(.system(size: 35))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                       .foregroundColor(Color.green)
+                        .foregroundColor(ColorManager.purple3)
                     
                 Text("SAFE on BAD days")
                     .font(.system(size: 17))
@@ -95,7 +95,7 @@ struct IntuitiveView: View {
                .font(.system(size: 35))
                .fontWeight(.light)
                .multilineTextAlignment(.center)
-               .foregroundColor(Color.green)
+               .foregroundColor(ColorManager.purple3)
            
            Text("getting back to BEING FRIENDS")
                .font(.system(size: 17))
@@ -112,7 +112,7 @@ struct IntuitiveView: View {
                     .font(.system(size: 35))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.green)
+                    .foregroundColor(ColorManager.purple3)
 
                 Text("building DREAMS together")
                     .font(.system(size: 17))
