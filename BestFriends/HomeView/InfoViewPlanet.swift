@@ -49,7 +49,7 @@ struct InfoViewPlanet: View {
                     .font(.system(size: 35))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.green)
+                    .foregroundColor(ColorManager.purple3)
                 
                 Text("-Tap friend's planet that sent")
                     .font(.system(size: 15))
@@ -74,7 +74,7 @@ struct InfoViewPlanet: View {
                         .font(.system(size: 35))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                       .foregroundColor(Color.green)
+                        .foregroundColor(ColorManager.purple3)
                     
                     Text("NEW Chat Rooms")
                         .font(.system(size: 35))
@@ -111,7 +111,7 @@ struct InfoViewPlanet: View {
                .font(.system(size: 35))
                .fontWeight(.light)
                .multilineTextAlignment(.center)
-               .foregroundColor(Color.green)
+               .foregroundColor(ColorManager.purple3)
            
            Text("-Long-tap messages to save to SmileVault")
                .font(.system(size: 15))
