@@ -45,7 +45,13 @@ struct InfoViewPlanet: View {
             VStack {
              
                 
-                Text("Friend sent \n'Push Notification'")
+                Text("Friend sent")
+                    .font(.system(size: 35))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple3)
+                
+                Text("Push Notification")
                     .font(.system(size: 35))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -80,7 +86,7 @@ struct InfoViewPlanet: View {
                         .font(.system(size: 35))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                       .foregroundColor(Color.green)
+                        .foregroundColor(ColorManager.purple3)
                     
                 Text("-Tap Friend's Planet")
                     .font(.system(size: 15))
