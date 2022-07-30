@@ -35,7 +35,7 @@ struct ChatView: View {
     var body: some View {
 //        NavigationView{
         ZStack {
-            AdPlayerView(name: "FieldFlowers")
+            AdPlayerView(name: "Nike2")
                 .ignoresSafeArea()
             
             
@@ -46,7 +46,7 @@ struct ChatView: View {
                     Text("<")
 //                        .resizable()
                         .frame(width: 30, height: 30)
-                        .font(.system(size: 35))
+                        .font(.system(size: 30))
 //                        .fontWeight(.light)
                        .foregroundColor(.blue)
                       
@@ -165,12 +165,12 @@ struct ChatView: View {
                     TextField("", text: $messageBody)
                         .placeholder(when: messageBody.isEmpty) {
                             HStack {
-                                Text("Send a chat").foregroundColor(.purple)
+                                Text("Send a message").foregroundColor(.blue)
                                 
                                 Spacer()
                             }
                         }
-                        .font(.system(size: 18))
+                        .font(.system(size: 25))
                         .submitLabel(.send)
                         .onSubmit { sendMessage() }
                         .padding()

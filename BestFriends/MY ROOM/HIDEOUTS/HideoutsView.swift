@@ -38,26 +38,29 @@ struct HideoutsView: View {
                 .blendMode(.screen)
             
         
-            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .blue, friendName: "Smile \nVault")
+            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .blue, friendName: "Message \nVault")
             })
-
-            .offset(x: showItems ? 100 : 0, y: showItems ? -165: 0)
+                .offset(x: showItems ? 100 : 0, y: showItems ? -165: 0)
            
-//            NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
-//                  HideoutsViewCircle (color: .orange, friendName: "PhotoPoP")
-//            })
-//            .offset(x: showItems ? 75 : 0, y: showItems ? -90: 0)
+           
+            NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
+                  HideoutsViewCircle (color: .orange, friendName: "PhotoPoP")
+            })
+                .offset(x: showItems ? 75 : 0, y: showItems ? -90: 0)
+           
             
-
             NavigationLink(destination: ReceivedPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "Friend \nSent \nSong")
             })
-            .offset(x: showItems ? -60 : 0, y: showItems ? -145: 0)
+                .offset(x: showItems ? -60 : 0, y: showItems ? -145: 0)
             
-//            NavigationLink(destination: EmptyView(), label: {
-//                WhoFightingCircle (color: .gray, friendName: "")
-//            })
-//            .offset(x: showItems ? -75 : 0, y: showItems ? -600: 0)
-//
+            
+            NavigationLink(destination: EmptyView(), label: {
+                HideoutsViewCircle (color: .pink, friendName: "Is \nEveryone \nOk?")
+            })
+               .offset(x: showItems ? -75 : 0, y: showItems ? -55: 0)
+
+           
+            
             VStack {
                 
                 Spacer()
@@ -77,53 +80,34 @@ struct HideoutsView: View {
                 })
             }
             
-            Spacer()
-                .frame(height: 300)
-                
+            VStack {
+           
+                ZStack {
         Image(systemName: "triangle.fill")
                     .resizable()
                     .foregroundColor(ColorManager .grey2)
                     .frame(width: 150, height: 175)
 //                    .blur(radius: 2)
-                    .opacity(0.9)
+                    .opacity(0.95)
 
                     .shadow(color: .orange, radius: 65, x: 30, y: 50)
 
-           VStack {
-               
-            Spacer ()
-                   .frame(height: 50)
-               Text("Help")
-                             .font(.system(size: 22))
-                             .foregroundColor(.white)
-                             .fontWeight(.medium)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-
-               Text("from")
-                             .font(.system(size: 22))
-                             .foregroundColor(.white)
-                             .fontWeight(.medium)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-  
+          
+                    VStack {
                Spacer ()
-                      .frame(height: 15)
+                      .frame(height: 65)
                
                
-              Text("Friends")
-                            .font(.system(size: 35))
+              Text("Safe \nand \nSound")
+                            .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-               
-               
-                    
+                  
                 }
             }
-            
+            }
             
            .onTapGesture {
                withAnimation {
@@ -148,7 +132,7 @@ struct HideoutsViewCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 90, height: 90)
+        .frame(width: 85, height: 85)
         .clipShape(Circle())
         .foregroundColor(color)
         .opacity(0.3)
@@ -162,3 +146,5 @@ struct HideoutsViewCircle: View {
         }
     }
 }
+}
+
