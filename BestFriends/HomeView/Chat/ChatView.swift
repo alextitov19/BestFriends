@@ -43,10 +43,13 @@ struct ChatView: View {
                 // MARK: Header
                 HStack {
                     
-                    Text("< Back")
+                    Text("<")
 //                        .resizable()
-                        .frame(width: 52, height: 30)
-                        .foregroundColor(.blue)
+                        .frame(width: 30, height: 30)
+                        .font(.system(size: 35))
+//                        .fontWeight(.light)
+                       .foregroundColor(.blue)
+                      
                         .scaledToFill()
                         .onTapGesture(perform: {
                             sessionManager.showHome()
