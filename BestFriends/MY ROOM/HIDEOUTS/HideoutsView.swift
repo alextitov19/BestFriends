@@ -49,15 +49,15 @@ struct HideoutsView: View {
                 .offset(x: showItems ? 75 : 0, y: showItems ? -90: 0)
            
             
-            NavigationLink(destination: ReceivedPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "Friend \nSent \nSong")
+            NavigationLink(destination: ReceivedPlaylist(), label: { HideoutsViewCircle (color: .pink, friendName: "Friend \nSent \nSong")
             })
                 .offset(x: showItems ? -60 : 0, y: showItems ? -145: 0)
             
             
-            NavigationLink(destination: EmptyView(), label: {
-                HideoutsViewCircle (color: .pink, friendName: "Is \nEveryone \nOk?")
+            NavigationLink(destination: EverybodyOk(user: user), label: {
+                HideoutsViewCircle (color: .gray, friendName: "Is \nEverybody \nOk?")
             })
-               .offset(x: showItems ? -75 : 0, y: showItems ? -55: 0)
+               .offset(x: showItems ? -100 : 0, y: showItems ? -55: 0)
 
            
             

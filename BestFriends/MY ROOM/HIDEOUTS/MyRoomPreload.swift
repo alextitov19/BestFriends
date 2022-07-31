@@ -70,28 +70,30 @@ struct MyRoomPreload: View {
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                 
-                Text("be sad for a while.")
+
+                Text("by yourself for a while")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                     
                     Spacer()
-                        .frame(height: 15)
+                        .frame(height: 40)
                     
+                Text("in the Safety")
+                    .font(.system(size: 40))
+                    .fontWeight(.ultraLight)
+                    .foregroundColor(.blue)
                 
-                Text("A chance to be by yourself")
-                    .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
+                   
                 
-                Text("in the Safety of your Room")
-                    .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .foregroundColor(Color.white)
-                
+                    Text("of your Room")
+                        .font(.system(size: 40))
+                        .fontWeight(.ultraLight)
+                        .foregroundColor(.blue)
+                  
+                      
+                    
                 Spacer()
                     .frame(height: 50)
                 
