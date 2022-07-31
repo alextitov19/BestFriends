@@ -17,10 +17,15 @@ struct HorizonHomeView: View {
             ColorManager.purple2
                 .ignoresSafeArea()
             ZStack{
-                NavigationLink(destination: HorizonRocketColorPicker(), label: {
-                    Image(systemName: "eyedropper").resizable().foregroundColor(.gray).frame(width: UIScreen.main.bounds.size.width / 5, height: UIScreen.main.bounds.size.width / 5, alignment: Alignment.center)
-                   .padding()
-                }).position(x: UIScreen.main.bounds.size.width / 1.2, y: UIScreen.main.bounds.size.width / UIScreen.main.bounds.size.width)
+                
+                Button(action: {
+                    print("i have been tapped")
+                }){
+                    NavigationLink(destination: HorizonRocketColorPicker(), label: {
+                        Image(systemName: "paintbrush.fill").resizable().foregroundColor(.gray).frame(width: UIScreen.main.bounds.size.width / 5, height: UIScreen.main.bounds.size.width / 5, alignment: Alignment.center)
+                            .padding()
+                    })//NavigationLink
+                }.position(x: UIScreen.main.bounds.size.width / 1.2, y: UIScreen.main.bounds.size.width / UIScreen.main.bounds.size.width)
             
                 
                 Image(imageName).resizable().scaledToFit()
@@ -31,7 +36,7 @@ struct HorizonHomeView: View {
                     }){
                         NavigationLink(destination: HorizonGoalChoices(), label: {
                             Image(systemName: "plus.circle").resizable().frame(width: UIScreen.main.bounds.size.width / 3.5, height: UIScreen.main.bounds.size.width / 3.5, alignment: Alignment.center)
-                        })
+                        })//NavigationLink
                     }.foregroundColor(.gray).padding().position(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height / 5)
                 
                 
@@ -41,7 +46,7 @@ struct HorizonHomeView: View {
                     }){
                         NavigationLink(destination: HorizonGoalChoices(), label: {
                             Image(systemName: "plus.circle").resizable().frame(width: UIScreen.main.bounds.size.width / 3.5, height: UIScreen.main.bounds.size.width / 3.5, alignment: Alignment.center)
-                        })
+                        })//NavigationLink
                     }.foregroundColor(.gray).padding().position(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height / 2.8)
                 
                     
@@ -51,7 +56,7 @@ struct HorizonHomeView: View {
                     }){
                         NavigationLink(destination: HorizonGoalChoices(), label: {
                             Image(systemName: "plus.circle").resizable().frame(width: UIScreen.main.bounds.size.width / 3.5, height: UIScreen.main.bounds.size.width / 3.5, alignment: Alignment.center)
-                        })
+                        })//NavigationLink
                     }.foregroundColor(.gray).padding().position(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height / 1.9)
                 
               
