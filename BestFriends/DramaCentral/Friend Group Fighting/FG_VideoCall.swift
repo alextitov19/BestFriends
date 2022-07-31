@@ -59,24 +59,15 @@ struct FG_VideoCall: View {
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
             
 
-            NavigationLink(destination: HurtFeelings2(user: user, friends: friends, groups: groups), label: { FG_VideoCallCircle (color: .blue, friendName: "Friend \nHurt my \nFeelings")
+            NavigationLink(destination: HurtFeelings2(user: user, friends: friends, groups: groups), label: { FG_VideoCallCircle (color: .white, friendName: "Friend \nHurt my \nFeelings")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
             
-//            NavigationLink(destination: IntroFriendGpFight(), label: {
-//                FG_VideoCallCircle (color: .gray, friendName: "")
-//                })
-//            .offset(x: showItems ? 40 : 0, y: showItems ? -600: 0)
-//
-            
-//            NavigationLink(destination: FG_Team(), label: {
-//                   FG_VideoCallCircle (color: .orange, friendName: "True \nFriends")
-//             })
-//             .offset(x: showItems ? -50 : 0, y: showItems ? 250: 0)
+
 //
             
                NavigationLink(destination: Apologies2(user: user, friends: friends, groups: groups), label: {
-                   FG_VideoCallCircle (color: .white, friendName: "Apologies")
+                   FG_VideoCallCircle (color: .blue, friendName: "Apologies")
              })
              .offset(x: showItems ? -100 : 0, y: showItems ? 90: 0)
              
@@ -96,9 +87,10 @@ struct FG_VideoCall: View {
             
             
 
-        Image(systemName: "heart.fill")
+        Image(systemName: "circle.fill")
                     .resizable()
-                    .foregroundColor(.purple)
+//                    .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(.white)
                     .frame(width: 150, height: 150)
 //                    .blur(radius: 2)
 

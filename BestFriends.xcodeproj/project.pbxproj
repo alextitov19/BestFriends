@@ -158,6 +158,14 @@
 		CF6504042887E85D0092EEB9 /* SubscriptionsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6504032887E85D0092EEB9 /* SubscriptionsInfoView.swift */; };
 		CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650405288E76B50092EEB9 /* GotPushNotification.swift */; };
 		CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040928915A080092EEB9 /* FD_Step1.swift */; };
+		CF65040C28925FE00092EEB9 /* MyRoomDVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */; };
+		CF6504122892F1730092EEB9 /* BetaTesters1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6504112892F1730092EEB9 /* BetaTesters1.swift */; };
+		CF6504142892F66D0092EEB9 /* MyRoomVid2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6504132892F66D0092EEB9 /* MyRoomVid2.mp4 */; };
+		CF6504162893192C0092EEB9 /* AtmosphereDVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */; };
+		CF65041828931C0B0092EEB9 /* FightsDVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65041728931C0B0092EEB9 /* FightsDVid.swift */; };
+		CF65041A28931C2C0092EEB9 /* FightsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65041928931C2C0092EEB9 /* FightsInfo.swift */; };
+		CF65041C2893CDFF0092EEB9 /* IntuitiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65041B2893CDFF0092EEB9 /* IntuitiveView.swift */; };
+		CF65041E28964B410092EEB9 /* EverybodyOk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65041D28964B410092EEB9 /* EverybodyOk.swift */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -372,6 +380,14 @@
 		CF6504032887E85D0092EEB9 /* SubscriptionsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsInfoView.swift; sourceTree = "<group>"; };
 		CF650405288E76B50092EEB9 /* GotPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotPushNotification.swift; sourceTree = "<group>"; };
 		CF65040928915A080092EEB9 /* FD_Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FD_Step1.swift; sourceTree = "<group>"; };
+		CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomDVid.swift; sourceTree = "<group>"; };
+		CF6504112892F1730092EEB9 /* BetaTesters1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTesters1.swift; sourceTree = "<group>"; };
+		CF6504132892F66D0092EEB9 /* MyRoomVid2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyRoomVid2.mp4; sourceTree = "<group>"; };
+		CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereDVid.swift; sourceTree = "<group>"; };
+		CF65041728931C0B0092EEB9 /* FightsDVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightsDVid.swift; sourceTree = "<group>"; };
+		CF65041928931C2C0092EEB9 /* FightsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightsInfo.swift; sourceTree = "<group>"; };
+		CF65041B2893CDFF0092EEB9 /* IntuitiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntuitiveView.swift; sourceTree = "<group>"; };
+		CF65041D28964B410092EEB9 /* EverybodyOk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverybodyOk.swift; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
@@ -502,6 +518,7 @@
 		7A6A4D01262B866500561D87 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CF65040D2892661D0092EEB9 /* Demo Videos */,
 				CF5263FC266F201000243DD7 /* Background Videos */,
 				CF5263FB266F1FF600243DD7 /* Ad Videos */,
 				7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */,
@@ -543,9 +560,10 @@
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
 				CF3B65A9280071580003A714 /* Settings */,
-				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
-				CFAE7347283C745800015FD2 /* Help Beta Test */,
+				CF6504102892F1340092EEB9 /* Beta Tester */,
 				CFD0ABD2285C256C0032CA3D /* Built by Teens */,
+				CFAE7347283C745800015FD2 /* Help Beta Test */,
+				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				D0CC1A02283EE31900E7461F /* Horizons */,
 				CFDB150A2858F4D200155CEE /* Virtual HUG */,
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
@@ -651,6 +669,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				CF65041B2893CDFF0092EEB9 /* IntuitiveView.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
@@ -892,18 +911,20 @@
 			path = "Background Videos";
 			sourceTree = "<group>";
 		};
-		CF6504072890C64E0092EEB9 /* New Group */ = {
+		CF65040D2892661D0092EEB9 /* Demo Videos */ = {
 			isa = PBXGroup;
 			children = (
+				CF6504132892F66D0092EEB9 /* MyRoomVid2.mp4 */,
 			);
-			path = "New Group";
+			path = "Demo Videos";
 			sourceTree = "<group>";
 		};
-		CF6504082890C66D0092EEB9 /* New Group1 */ = {
+		CF6504102892F1340092EEB9 /* Beta Tester */ = {
 			isa = PBXGroup;
 			children = (
+				CF6504112892F1730092EEB9 /* BetaTesters1.swift */,
 			);
-			path = "New Group1";
+			path = "Beta Tester";
 			sourceTree = "<group>";
 		};
 		CF725E2628516E180096342F /* Tokens */ = {
@@ -1048,6 +1069,7 @@
 			children = (
 				CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */,
 				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
+				CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */,
 				CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */,
 				CF3B65F128075F3B0003A714 /* FriendVault */,
 			);
@@ -1058,7 +1080,9 @@
 			isa = PBXGroup;
 			children = (
 				CFBB9E83286789A400AEC994 /* MyRoomPreload.swift */,
+				CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */,
 				CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */,
+				CF65041D28964B410092EEB9 /* EverybodyOk.swift */,
 				CF785693284F3D2A00B31803 /* PlayLists */,
 				CFD0469A2837D9BC00BF0B02 /* PhotoPoP */,
 				CFD12CC82819E83900AB2539 /* ThoughtfulMessages */,
@@ -1122,8 +1146,8 @@
 		CFD12CC92819E98800AB2539 /* DramaCentral */ = {
 			isa = PBXGroup;
 			children = (
-				CF6504082890C66D0092EEB9 /* New Group1 */,
-				CF6504072890C64E0092EEB9 /* New Group */,
+				CF65041928931C2C0092EEB9 /* FightsInfo.swift */,
+				CF65041728931C0B0092EEB9 /* FightsDVid.swift */,
 				CFAB5429282123EA00BBF502 /* WhoFighting.swift */,
 				CFDB15072858169000155CEE /* FaceTimeCall */,
 				CF4A08D42877E23C00ADA9DD /* Nostalgia */,
@@ -1270,6 +1294,7 @@
 				CF4A08F62883717000ADA9DD /* SmileVault2.mp4 in Resources */,
 				CF4A090928860CC300ADA9DD /* clouds2.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
+				CF6504142892F66D0092EEB9 /* MyRoomVid2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A78232E26B2419600CA76FC /* bull.mp4 in Resources */,
@@ -1366,6 +1391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF65041C2893CDFF0092EEB9 /* IntuitiveView.swift in Sources */,
 				AD60AE082888D8AD0073CEDB /* PaymentButton.swift in Sources */,
 				CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */,
 				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
@@ -1389,6 +1415,7 @@
 				62372A172884D7F500CAB75C /* HorizonSetGoal.swift in Sources */,
 				AD60AE0A2888DF900073CEDB /* PaymentHandler.swift in Sources */,
 				CF381A592829205800B3719E /* OurMission.swift in Sources */,
+				CF6504122892F1730092EEB9 /* BetaTesters1.swift in Sources */,
 				CF650402288660520092EEB9 /* Subscriptions.swift in Sources */,
 				7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */,
 				7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */,
@@ -1418,11 +1445,13 @@
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,
 				7ACB385328208D38009559AF /* ImagePicker.swift in Sources */,
+				CF65041828931C0B0092EEB9 /* FightsDVid.swift in Sources */,
 				CFAB540F281CA79200BBF502 /* Step5_Why.swift in Sources */,
 				CF3B65B9280081550003A714 /* SettingsNotificationsView.swift in Sources */,
 				CFAB5422281FC8B800BBF502 /* TextingNote.swift in Sources */,
 				CF9E33C8284530CF00107433 /* FG_GettingStarted.swift in Sources */,
 				CF1ECAC3287143E900D999F8 /* FightInviteFriend.swift in Sources */,
+				CF6504162893192C0092EEB9 /* AtmosphereDVid.swift in Sources */,
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
 				CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */,
 				CFAB541B281E5F8300BBF502 /* YouGotThis.swift in Sources */,
@@ -1483,6 +1512,7 @@
 				AD60ADF92888B3B00073CEDB /* cartView.swift in Sources */,
 				62372A1B2884ECD500CAB75C /* HorizonInviteFriends.swift in Sources */,
 				CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */,
+				CF65040C28925FE00092EEB9 /* MyRoomDVid.swift in Sources */,
 				7A469E54284D6AC0004AF547 /* TextAlert.swift in Sources */,
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
 				CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */,
@@ -1496,6 +1526,7 @@
 				7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */,
 				CF0911852848328F00CB0AF0 /* HideChat.swift in Sources */,
 				7A1DBD622659B1BB00EB4B42 /* ViewExtension.swift in Sources */,
+				CF65041A28931C2C0092EEB9 /* FightsInfo.swift in Sources */,
 				CF76FA08285EED3E000750A4 /* ReceivedPlaylist.swift in Sources */,
 				CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */,
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
@@ -1535,6 +1566,7 @@
 				AD60ADFB2888B4D70073CEDB /* cartManager.swift in Sources */,
 				62372A192884E27F00CAB75C /* HorizonCustom.swift in Sources */,
 				7A0856A427F3D9C400E8282B /* Model.swift in Sources */,
+				CF65041E28964B410092EEB9 /* EverybodyOk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1667,7 +1699,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1697,7 +1729,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 28;
+				CURRENT_PROJECT_VERSION = 29;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

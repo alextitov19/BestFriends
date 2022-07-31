@@ -35,13 +35,27 @@ struct ChatView: View {
     var body: some View {
 //        NavigationView{
         ZStack {
-            AdPlayerView(name: "FieldFlowers")
+            AdPlayerView(name: "Nike2")
                 .ignoresSafeArea()
             
             
             VStack {
                 // MARK: Header
                 HStack {
+                    
+                    Text("<")
+//                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .font(.system(size: 30))
+//                        .fontWeight(.light)
+                       .foregroundColor(.blue)
+                      
+                        .scaledToFill()
+                        .onTapGesture(perform: {
+                            sessionManager.showHome()
+                        })
+                    
+                    
                     Image(systemName: "info.circle")
                         .resizable()
                         .frame(width: 27, height: 27)
@@ -51,14 +65,14 @@ struct ChatView: View {
                             sessionManager.infoView(user: user, group: group)
                         })
                     
-                    
-                    Image("home-alt2")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .scaledToFill()
-                        .onTapGesture(perform: {
-                            sessionManager.showHome()
-                        })
+//
+//                    Image("home-alt2")
+//                        .resizable()
+//                        .frame(width: 30, height: 30)
+//                        .scaledToFill()
+//                        .onTapGesture(perform: {
+//                            sessionManager.showHome()
+//                        })
                     
                     Text(group.name)
                         .task {
@@ -151,12 +165,12 @@ struct ChatView: View {
                     TextField("", text: $messageBody)
                         .placeholder(when: messageBody.isEmpty) {
                             HStack {
-                                Text("Send a chat").foregroundColor(.purple)
+                                Text("Send a message").foregroundColor(.blue)
                                 
                                 Spacer()
                             }
                         }
-                        .font(.system(size: 18))
+                        .font(.system(size: 25))
                         .submitLabel(.send)
                         .onSubmit { sendMessage() }
                         .padding()

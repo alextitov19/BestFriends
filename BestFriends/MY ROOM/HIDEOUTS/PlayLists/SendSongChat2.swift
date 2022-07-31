@@ -44,7 +44,7 @@ struct SendSongChat2: View {
               
                 Text("Being a BestFriend")
                     .fontWeight(.thin)
-                    .frame(width: 300, height: 50)
+                    .frame(width: 310, height: 50)
                     .foregroundColor(Color .blue)
                     .font(.system(size: 30))
                     .background(ColorManager.grey2)

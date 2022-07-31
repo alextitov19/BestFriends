@@ -65,31 +65,44 @@ struct Apologies4: View {
                     RoundedRectangle(cornerRadius: 16)
                         .stroke(.white, lineWidth: 1)
                 )
-                
-                HStack {
-                    Text("ALERT \nFriend")
-                        .font(.system(size: 27))
-                        .fontWeight(.regular)
-                        .foregroundColor(ColorManager.grey4)
-                    
-                    Text("That you are sending \nthem a message in Chat")
-                        .font(.system(size: 20))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                }
-                .padding(.horizontal)
-                .padding(.leading)
+//                VStack {
+////                HStack {
+//                    Text("BestFriends")
+//                        .font(.system(size: 27))
+//                        .fontWeight(.regular)
+//                        .foregroundColor(ColorManager.grey4)
+//
+//                    Text("are accountable")
+//                        .font(.system(size: 20))
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.white)
+//
+////                    Spacer()
+////                }
+////                .padding(.horizontal)
+////                .padding(.leading)
                 
                 Spacer()
                     .frame(height: 15)
+                         
+                         Text("Alert Friends")
+                             .font(.system(size: 15))
+                            
+                             .fontWeight(.thin)
+                             .foregroundColor(Color.white)
                 
-                Text("(Push Notification is sent when tap [SHARE])")
+                Text("That you're sending")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(Color.black)
+                
+                Text("them a message in Chat")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.black)
+                
                 
                 HStack {
                     

@@ -74,7 +74,7 @@ struct WhoFighting: View {
             
             
             NavigationLink(destination: FD_Step1(), label: {
-                WhoFightingCircle (color: .green, friendName: "Family \nDRAMA")
+                WhoFightingCircle (color: .green, friendName: "BestFamily")
             })
             .offset(x: showItems ? -20 : 0, y: showItems ? 200: 0)
             .opacity(0.7)
@@ -101,25 +101,7 @@ struct WhoFighting: View {
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                
-//               Spacer ()
-//                      .frame(height: 10)
-               
-               Text(" . . . ")
-                             .font(.system(size: 22))
-                             .foregroundColor(.blue)
-                             .fontWeight(.medium)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-               
-               Spacer ()
-                      .frame(height: 5)
-                    
-               Text("Calming \nFriendGroups")
-                             .font(.system(size: 22))
-                             .foregroundColor(.blue)
-                             .fontWeight(.medium)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+
                     
                 }
             }

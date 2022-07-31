@@ -10,7 +10,10 @@
 import SwiftUI
 
 struct VirtualHug: View {
+
 //    @State private var engine: CHHapticEngine?
+    
+ 
     
     var body: some View {
         
@@ -29,11 +32,25 @@ struct VirtualHug: View {
                     .blendMode(.screen)
         
         VStack {
-            Text("Your friend sent you a ")
+            Text("Your friend sent you a HUG")
                 .font(.system(size: 30))
                 .fontWeight(.ultraLight)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.black)
+            
+            Text("Tap Heart and hold phone")
+                .font(.system(size: 30))
+                .fontWeight(.ultraLight)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.black)
+            
+            Text("to your HEART")
+                .font(.system(size: 30))
+                .fontWeight(.ultraLight)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.black)
+            
+            
          
             ZStack {
             Image(systemName: "heart.fill")
@@ -50,16 +67,16 @@ struct VirtualHug: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
                 .padding()
-//                .onAppear(perform: prepareHaptics)
-//                .onTapGesture(perform: complexSuccess)
-//
-            }
+//            .onAppear(perform: prepareHaptics)
+//              .onTapGesture(perform: complexSuccess)
+
+           }
             
             Spacer()
                 .frame(height: 400)
             
-//          
-//            
+          
+//
 //            Text("Mute")
 //                .fontWeight(.thin)
 //                .frame(width: 175, height: 40)
@@ -68,9 +85,9 @@ struct VirtualHug: View {
 //                .background(ColorManager.purple3)
 //                .cornerRadius(15)
 //                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//     
-            Spacer()
-                .frame(height: 50)
+//
+//            Spacer()
+//                .frame(height: 50)
             
         }
               
@@ -116,8 +133,8 @@ struct VirtualHug: View {
 //          print("oh no")
 //      }
 //  }
-//
-//    }
+
+    
     
 
     
@@ -127,14 +144,14 @@ struct VirtualHug: View {
     
 
     
-//    
-//    struct VirtualHug_Previews : PreviewProvider {
-//        static var previews: some View {
-//            VirtualHug()
-//        }
-//    }
-//
-// 
+    
+    struct VirtualHug_Previews : PreviewProvider {
+        static var previews: some View {
+            VirtualHug()
+        }
+    }
+
+ 
     
     
     

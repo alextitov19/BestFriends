@@ -19,8 +19,8 @@ struct BetaTestVideo: View {
         
         ZStack {
          
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
+//            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+//                .ignoresSafeArea()
 
 //            Image("purpleBackground")
 //                .resizable()
@@ -56,7 +56,7 @@ struct BetaTestVideo: View {
                         
                     
                     Text("protoype 'Features'")
-                        .font(.system(size: 47))
+                        .font(.system(size: 40))
                         .fontWeight(.ultraLight)
                         .foregroundColor(Color.white)
                     
@@ -76,13 +76,20 @@ struct BetaTestVideo: View {
                         .frame(height: 450)
                   
                     
-                    Text("(if your iPhone is on 'silent mode' you will not hear audio)")
+                    Text("(if your iPhone is on 'silent mode'")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                    
+                    Text("you will not hear audio)")
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                     
                     Spacer()
+                        .frame(height: 50)
             }//VStack
         }//ZStack
     }//body

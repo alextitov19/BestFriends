@@ -68,31 +68,27 @@ struct HurtFeelings4: View {
                     )
                    
              
-                
-                HStack {
-                    Text("ALERT \nFriend")
-                        .font(.system(size: 27))
-                        .fontWeight(.regular)
-                        .foregroundColor(ColorManager.grey4)
-                    
-                    Text("That you are sending \nthem a message in Chat")
-                        .font(.system(size: 20))
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                }
-                .padding(.horizontal)
-                .padding(.leading)
+                Text("Alert Friends")
+                    .font(.system(size: 15))
+                   
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+       
+       Text("That you're sending")
+           .font(.system(size: 15))
+           .italic()
+           .fontWeight(.thin)
+           .foregroundColor(Color.black)
+       
+       Text("them a message in Chat")
+           .font(.system(size: 15))
+           .italic()
+           .fontWeight(.thin)
+           .foregroundColor(Color.black)
                 
                 Spacer()
                     .frame(height: 5)
                 
-                Text("(Push Notification is sent when tap [SHARE])")
-                    .font(.system(size: 15))
-                    .italic()
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.black)
                 
                 HStack {
                     
