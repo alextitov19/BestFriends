@@ -63,7 +63,9 @@ struct HorizonSetGoal: View {
                 }
                 .foregroundColor(.white)
                 
-                NavigationLink(destination: HorizonInviteFriends(friends: <#[User]#>, user: <#User#>, atmosphere: <#Atmosphere#>), label:  {
+                //NEED HELP WITH THIS NAVIGATION BELOW
+                
+                NavigationLink(destination: HorizonHomeView(), label:  {
                     Text("  Next  ")
                         .font(.title)
                         .background(ColorManager.purple4)

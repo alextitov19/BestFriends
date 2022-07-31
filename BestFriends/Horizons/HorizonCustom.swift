@@ -30,11 +30,11 @@ struct HorizonCustom: View {
                     .background(.white)
                 
                 NavigationLink(destination: HorizonSetGoal(), label: {
-                    Text("  Next  ")
+                    Text("Next      ")
                         .font(.title)
                         .background(ColorManager.purple4)
                         .foregroundColor(.white)
-                        .cornerRadius(20)
+                        .cornerRadius(15)
                 })//NavigationLink
                 
                 Spacer()
