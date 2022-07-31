@@ -63,11 +63,14 @@ struct HorizonSetGoal: View {
                 }
                 .foregroundColor(.white)
                 
-                Text("  Next  ")
-                    .font(.title)
-                    .background(ColorManager.purple4)
-                    .foregroundColor(.white)
-                    .cornerRadius(20)
+                NavigationLink(destination: HorizonInviteFriends(friends: <#[User]#>, user: <#User#>, atmosphere: <#Atmosphere#>), label:  {
+                    Text("  Next  ")
+                        .font(.title)
+                        .background(ColorManager.purple4)
+                        .foregroundColor(.white)
+                        .cornerRadius(20)
+                })//NavigationLink
+               
                 
                 Spacer()
 

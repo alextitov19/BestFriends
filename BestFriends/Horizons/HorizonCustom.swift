@@ -29,11 +29,13 @@ struct HorizonCustom: View {
                     .frame(width: 300, height: 100)
                     .background(.white)
                 
-                Text("  Next  ")
-                    .font(.title)
-                    .background(ColorManager.purple4)
-                    .foregroundColor(.white)
-                    .cornerRadius(20)
+                NavigationLink(destination: HorizonSetGoal(), label: {
+                    Text("  Next  ")
+                        .font(.title)
+                        .background(ColorManager.purple4)
+                        .foregroundColor(.white)
+                        .cornerRadius(20)
+                })//NavigationLink
                 
                 Spacer()
             }//VStack
