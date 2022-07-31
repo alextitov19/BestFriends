@@ -71,6 +71,8 @@ struct HomeView: View {
                         .frame(height: 25)
                     
                     // Top 2 planets
+                    
+                    
                     HStack {
                         if planets.count > 0 && !focusPlanet {
                             planets[0]
@@ -154,7 +156,7 @@ struct HomeView: View {
                                 if !focusPlanet {
                                     PlanetView(planet: homeData!.atmosphere.planet, mood: homeData!.atmosphere.mood)
                                         .scaledToFit()
-                                        .frame(width: 90, height: 90)
+                                        .frame(width: 80, height: 80)
                                         .onTapGesture(perform: mainPlanetTapped)
                                         .glow(color: glowColor(mood: homeData!.atmosphere.mood), radius: 20)
                                         .padding()
