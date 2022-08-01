@@ -37,9 +37,10 @@ struct Token : Codable {
 }
 
 enum HttpMethod: String {
-    case get = "Get"
-    case post = "Post"
-    case patch = "Patch"
+    case get = "GET"
+    case post = "POST"
+    case patch = "PATCH"
+    case delete = "DELETE"
 }
 
 enum AuthErrors: Error {
@@ -143,7 +144,7 @@ class Helper {
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
-        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+        return callRestApi(url: url, method: .patch, data: payload, RestResponse.self).then { response in
             return Promise<Int>(response.status)
         }
     }
@@ -173,7 +174,7 @@ class Helper {
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
-        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+        return callRestApi(url: url, method: .patch, data: payload, RestResponse.self).then { response in
             return Promise<Int>(response.status)
         }
     }
@@ -215,7 +216,7 @@ class Helper {
     }
     
     func updateUserToken(url: String) -> Promise<Int> {
-        return callRestApi(url: url, method: .post, RestResponse.self).then { response in
+        return callRestApi(url: url, method: .patch, RestResponse.self).then { response in
             return Promise<Int>(response.status)
         }
     }
@@ -235,7 +236,7 @@ class Helper {
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
-        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+        return callRestApi(url: url, method: .patch, data: payload, RestResponse.self).then { response in
             return Promise<Int>(response.status)
         }
     }
