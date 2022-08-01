@@ -11,8 +11,9 @@ struct PhotoPopView: View {
     let user: User
     let friends: [User]
     
-    @State private var availableRecipients : [User] = []
     @State private var photoPopImages: [PhotoPopImageView] = []
+    @State private var availableRecipients : [User] = []
+    @State private var showingRecipients = false
     
     var body: some View {
         ZStack {
@@ -36,16 +37,47 @@ struct PhotoPopView: View {
                 
                 Spacer()
                 
+                Button(action: {
+                    showingRecipients = true
+                }, label: {
+                    Text("Add Image")
+                        .fontWeight(.regular)
+                        .frame(width: 125, height: 40)
+                        .foregroundColor(.white)
+                        .background(ColorManager.purple3)
+                        .cornerRadius(15)
+                })
+            }
+            
+            if showingRecipients {
+                VStack {
+                    ForEach(availableRecipients, id: \.id) { recipient in
+                        var title = recipient.firstName + String(recipient.lastName.first!)
+                        if recipient.id == user.id {
+                            title = "Myself"
+                        }
+                        Button(action: {
+
+                        }, label: {
+                            Text(title)
+                                .fontWeight(.regular)
+                                .frame(width: 125, height: 40)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                        })
+                    }
                     Button(action: {
-                        
+                        showingRecipients = false
                     }, label: {
-                        Text("Add Image")
+                        Text("Cancel")
                             .fontWeight(.regular)
                             .frame(width: 125, height: 40)
                             .foregroundColor(.white)
-                            .background(ColorManager.purple3)
+                            .background(ColorManager.grey3)
                             .cornerRadius(15)
                     })
+                }
             }
         }
     }
