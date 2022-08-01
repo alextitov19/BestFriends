@@ -14,7 +14,11 @@ struct PhotoPopView: View {
     @State private var photoPopImages: [PhotoPopImageView] = []
     @State private var availableRecipients : [User] = []
     @State private var showingRecipients = false
-    
+   
+    @State private var currentReceiver: User?
+    @State private var isShowPhotoLibrary = false
+    @State private var attachmentImage: UIImage?
+
     var body: some View {
         ZStack {
             Image("blueBackground")
@@ -22,6 +26,10 @@ struct PhotoPopView: View {
                 .ignoresSafeArea()
                 .scaledToFill()
                 .onAppear(perform: loadData)
+                .sheet(isPresented: $isShowPhotoLibrary) {
+                    ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
+                        .onDisappear { createPhotoPop() }
+                }
             
             VStack {
                 Text("Photo Pop")
@@ -54,7 +62,9 @@ struct PhotoPopView: View {
                     ForEach(availableRecipients, id: \.id) { recipient in
                         if recipient.id == user.id {
                             Button(action: {
-                                
+                                currentReceiver = recipient
+                                isShowPhotoLibrary = !isShowPhotoLibrary
+                                showingRecipients = false
                             }, label: {
                                 Text("Myself")
                                     .fontWeight(.regular)
@@ -65,7 +75,9 @@ struct PhotoPopView: View {
                             })
                         } else {
                             Button(action: {
-                                
+                                currentReceiver = recipient
+                                isShowPhotoLibrary = !isShowPhotoLibrary
+                                showingRecipients = false
                             }, label: {
                                 Text(recipient.firstName + String(recipient.lastName.first!))
                                     .fontWeight(.regular)
@@ -134,14 +146,36 @@ struct PhotoPopView: View {
         availableRecipients.append(user)
         // Iterate through the array
         // Remove all recipients who already have a photo pop
-        for index in availableRecipients.indices {
+        for recipient in availableRecipients {
             for p in photoPopImages {
-                if p.photoPop.receiver == availableRecipients[index].id {
-                    availableRecipients.remove(at: index)
-                    print("Removed " + p.photoPop.receiver + " from available recipients")
+                if p.photoPop.receiver == recipient.id {
+                    let index = availableRecipients.firstIndex(where: {$0.id == recipient.id})
+                    if (index != nil) {
+                        availableRecipients.remove(at: index!)
+                        print("Removed " + p.photoPop.receiver + " from available recipients")
+                    }
                 }
             }
         }
         print("Available recipients: ", availableRecipients.count)
+    }
+    
+    private func createPhotoPop() {
+        if currentReceiver == nil { return }
+        guard let image: UIImage = attachmentImage else {
+            print("Attachment iamge is nil")
+            return
+        }
+        
+        guard let data = image.jpeg(.lowest) else {
+            print("Failed to convert image")
+            return
+        }
+        print("Image as data successful")
+        RestApi.instance.createPhotoPop(receiver: currentReceiver!.id, image: data).then({ response in
+            print("Create photo pop successful")
+            photoPopImages.append(PhotoPopImageView(photoPop: response, user: currentReceiver!))
+            loadRecipients()
+        })
     }
 }
