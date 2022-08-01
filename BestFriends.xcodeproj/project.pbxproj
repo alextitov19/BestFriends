@@ -677,7 +677,6 @@
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				AD60AE022888CC460073CEDB /* Views */,
 				AD60ADFF2888C8730073CEDB /* Component */,
-				AD60ADFE2888C8140073CEDB /* Model */,
 				CF650401288660520092EEB9 /* Subscriptions.swift */,
 				AD60ADFC2888C2DF0073CEDB /* subscription.swift */,
 				CF6504032887E85D0092EEB9 /* SubscriptionsInfoView.swift */,
@@ -713,13 +712,6 @@
 				D90857CC586E9F792F9143E5 /* Pods_BestFriends.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AD60ADFE2888C8140073CEDB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		AD60ADFF2888C8730073CEDB /* Component */ = {
