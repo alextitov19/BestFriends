@@ -75,7 +75,7 @@ struct ChatBubble: View {
         if key == nil { return }
         if key!.count < 1 { return }
         print("Image key: ", key!)
-        RestApi.instance.getImage(folderId: groupId, imageId: key!).then { data in
+        RestApi.instance.getImage(link: groupId + "/" + key!).then { data in
             print("Got data")
             self.image = UIImage(data: data)
             print("Got image from data")

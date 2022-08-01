@@ -8,14 +8,9 @@
 import Foundation
 import SwiftUI
 
-
-
 struct IndividualFriendMessages: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-    
-    
-    
     
     let friend: User
     let atmosphere: Atmosphere
@@ -34,14 +29,7 @@ struct IndividualFriendMessages: View {
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
-//            PlanetView(planet: atmosphere.planet, mood: atmosphere.mood)
-//                .scaledToFit()
-//                .frame(width: 350)
-
-            
             VStack {
-                
-                
                 Text("Special messages from")
                     .font(.system(size: 17))
                     .fontWeight(.light)
@@ -52,9 +40,6 @@ struct IndividualFriendMessages: View {
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .foregroundColor(.white)
-
-                
-                
                 
                 ScrollView(.vertical) {
                     ForEach(smileNotes, id: \.id) { smileNote in
@@ -63,32 +48,6 @@ struct IndividualFriendMessages: View {
                     }
                 }
               
-//                trying to put in link for PhotoPop
-                
-//                Text("'SHAKE' your phone")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.light)
-//                    .foregroundColor(.white)
-//                    .multilineTextAlignment(.center)
-//                Text("for SPECIAL images")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.light)
-//                    .foregroundColor(.white)
-//                    .multilineTextAlignment(.center)
-//                
-//               NavigationLink(
-//                    destination: SettingsView(),
-//                    label: {
-//                        Text("SetUp PhotoPoP")
-//                            .fontWeight(.thin)
-//                            .frame(width: 290, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 27))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-//
                 Spacer ()
                     .frame(height: 20)
                 
@@ -106,7 +65,6 @@ struct IndividualFriendMessages: View {
                })
                 Spacer ()
                     .frame(height: 100)
-                
             }
         }
     }

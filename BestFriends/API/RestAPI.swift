@@ -96,8 +96,8 @@ class RestApi {
         return helper.createMessageWithImage(url: API_URL + "/messages/images", cmwi: cmwi)
     }
     
-    public func getImage(folderId: String, imageId: String) -> Promise<Data> {
-        let url = API_URL + "/images/" + folderId + "/" + imageId
+    public func getImage(link: String) -> Promise<Data> {
+        let url = API_URL + "/images/" + link
         print("URL: ", url)
         return helper.getImage(url: url)
     }
