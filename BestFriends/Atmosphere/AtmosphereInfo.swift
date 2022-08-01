@@ -44,69 +44,42 @@ struct AtmosphereInfo: View {
             
         VStack {
             
-            NavigationLink(destination: AtmosphereDVid(user: user, atmosphere: atmosphere, friends: friends), label: {
-                Text("Demo Video")
-                    .fontWeight(.thin)
-                    .frame(width: 200, height: 40)
-                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                    .font(.system(size: 30))
-                    .background(ColorManager.pmbc_blue)
-                    .cornerRadius(15)
-                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-            })
+//            NavigationLink(destination: AtmosphereDVid(user: user, atmosphere: atmosphere, friends: friends), label: {
+//                Text("Demo Video")
+//                    .fontWeight(.thin)
+//                    .frame(width: 200, height: 40)
+//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                    .font(.system(size: 30))
+//                    .background(ColorManager.pmbc_blue)
+//                    .cornerRadius(15)
+//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//            })
             
-            Text("Why Update Your")
+            Text("Letting your friends know")
                 .font(.system(size: 30))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
-         
-            Text("A U R A ?")
-                .font(.system(size: 35))
+
+            Text("your A U R A changed")
+                .font(.system(size: 30))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
             
-            
-            Text("Friends can offer help on bad days")
-                .font(.system(size: 17))
-                .italic()
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .foregroundColor(Color.white)
-    
-            
-       Text("Celebrate with you on great days")
-           .font(.system(size: 17))
-           .italic()
-           .fontWeight(.light)
-           .multilineTextAlignment(.center)
-           .foregroundColor(Color.white)
-            
-            
-                    Text("Track 'Aura' if you want")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-          
-         
-            
-            
-            
+     
             VStack {
            
                 Spacer()
                 .frame(height: 40)
-                
+
                 Text("Atmosphere Updates")
-                    .font(.system(size: 25))
+                    .font(.system(size: 35))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                   .foregroundColor(Color.purple)
-         
-//                Text("'Negative' ... Blue")
+                   .foregroundColor(Color.blue)
+//
+////                Text("'Negative' ... Blue")
 //                    .font(.system(size: 15))
 //                    .fontWeight(.light)
 //                    .multilineTextAlignment(.center)
@@ -137,21 +110,21 @@ struct AtmosphereInfo: View {
              
            
                 
-                Text("Updated Atmosphere instantly shows")
-                        .font(.system(size: 15))
-                        .italic()
+                Text("Updates instantly ALERT")
+                        .font(.system(size: 20))
+                        
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                    .foregroundColor(Color.white)
                     
-                    Text("on friend's homepage")
-                        .font(.system(size: 15))
-                        .italic()
+                    Text("friends on homepage")
+                        .font(.system(size: 20))
+                        
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                        .foregroundColor(Color.white)
                 
-                Text("with corresponding color scheme")
+                Text("(color matches mood)")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.light)
@@ -160,48 +133,8 @@ struct AtmosphereInfo: View {
                     
                     VStack {
             
-                        
-                        Spacer()
-                        .frame(height: 15)
-
-                        Text("Alerting Friends")
-                            .font(.system(size: 25))
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.purple)
-//
-//                        Text("By doing the same for them")
-//                            .font(.system(size: 20))
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
-//                            .foregroundColor(Color.blue)
-//
-                        
-//
-//                Text("Type a short explaination")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                   .foregroundColor(Color.purple)
-//
-//                    Text("of whats going on")
-//                        .font(.system(size: 20))
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
-//                       .foregroundColor(Color.purple)
-                
-                Text("-Type short explaination and send")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
+//                
                    
-                    
-//                    Text("-Mak")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
 
                     
             }
@@ -227,28 +160,7 @@ struct AtmosphereInfo: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
               
                 })
-//
-//            Spacer()
-//            .frame(height: 15)
-//
-//
-//            Text("By doing the same for them")
-//                .font(.system(size: 20))
-//                .fontWeight(.thin)
-//                .multilineTextAlignment(.center)
-//                .foregroundColor(Color.blue)
-//
-//
-//            Text("Become a BestFriend")
-//                .fontWeight(.thin)
-//                .frame(width: 300, height: 50)
-//                .foregroundColor(Color .blue)
-//                .font(.system(size: 30))
-//                .background(ColorManager.grey2)
-//                .cornerRadius(15)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//
+
             
           
             Spacer()
