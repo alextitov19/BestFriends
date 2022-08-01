@@ -23,10 +23,7 @@ struct AtmosphereMain2: View {
     
     var body: some View {
         ZStack {
-//            ColorManager.purple4
-//                .ignoresSafeArea()
-//                .onAppear()
-            //
+
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
