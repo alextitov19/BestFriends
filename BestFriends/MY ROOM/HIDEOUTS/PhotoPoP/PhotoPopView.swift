@@ -52,21 +52,31 @@ struct PhotoPopView: View {
             if showingRecipients {
                 VStack {
                     ForEach(availableRecipients, id: \.id) { recipient in
-                        var title = recipient.firstName + String(recipient.lastName.first!)
                         if recipient.id == user.id {
-                            title = "Myself"
+                            Button(action: {
+                                
+                            }, label: {
+                                Text("Myself")
+                                    .fontWeight(.regular)
+                                    .frame(width: 125, height: 40)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                            })
+                        } else {
+                            Button(action: {
+                                
+                            }, label: {
+                                Text(recipient.firstName + String(recipient.lastName.first!))
+                                    .fontWeight(.regular)
+                                    .frame(width: 125, height: 40)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                            })
                         }
-                        Button(action: {
-
-                        }, label: {
-                            Text(title)
-                                .fontWeight(.regular)
-                                .frame(width: 125, height: 40)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                        })
                     }
+                    
                     Button(action: {
                         showingRecipients = false
                     }, label: {
