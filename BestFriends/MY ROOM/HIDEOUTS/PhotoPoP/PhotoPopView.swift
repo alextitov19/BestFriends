@@ -87,6 +87,7 @@ struct PhotoPopView: View {
                             .background(ColorManager.grey3)
                             .cornerRadius(15)
                     })
+                    .padding()
                 }
             }
         }
