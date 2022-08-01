@@ -211,6 +211,11 @@ struct PlanetActionsView: View {
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.70)
                                 
+                                Text("Here")
+                                    .foregroundColor(.green)
+                                    .font(.system(size: 25, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.70)
                               
                             }
                         }
