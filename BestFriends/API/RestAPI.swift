@@ -136,8 +136,8 @@ class RestApi {
         return helper.callRestApi(url: API_URL + "/smile-notes", method: .get, [SmileNote].self)
     }
     
-    public func favoriteSmileNote(id: String) -> Promise<RestResponse> {
-        return helper.callRestApi(url: API_URL + "/smile-notes/" + id, method: .patch, RestResponse.self)
+    public func favoriteSmileNote(id: String) -> Promise<SmileNote> {
+        return helper.callRestApi(url: API_URL + "/smile-notes/" + id, method: .patch, SmileNote.self)
     }
     
     public func createPhotoPop(receiver: String, image: Data) -> Promise<PhotoPop> {

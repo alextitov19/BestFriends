@@ -42,9 +42,9 @@ struct IndividualFriendMessages: View {
                     .foregroundColor(.white)
                 
                 ScrollView(.vertical) {
-                    ForEach(smileNotes, id: \.id) { smileNote in
-                        FriendMessageView(smileNote: smileNote)
-                            .onTapGesture(perform: { toggleFavorite(smileNote: smileNote) })
+                    ForEach(smileNotes.indices, id: \.self) { i in
+                        FriendMessageView(smileNote: smileNotes[i])
+                            .onTapGesture(perform: { toggleFavorite(index: i) })
                     }
                 }
               
@@ -75,9 +75,10 @@ struct IndividualFriendMessages: View {
         })
     }
     
-    private func toggleFavorite(smileNote: SmileNote) {
-        RestApi.instance.favoriteSmileNote(id: smileNote.id).then({ response in
-            print("Got toggle fav response: ", response)
+    private func toggleFavorite(index: Int) {
+        RestApi.instance.favoriteSmileNote(id: smileNotes[index].id).then({ smileNote in
+            print("Got toggled smile note: ", smileNote)
+                smileNotes[index] = smileNote
         })
     }
 }
