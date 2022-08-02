@@ -35,7 +35,7 @@ struct IndividualFriendMessages: View {
                     .fontWeight(.light)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-
+                
                 Text(friend.firstName + " " + friend.lastName)
                     .font(.system(size: 15))
                     .fontWeight(.light)
@@ -44,10 +44,12 @@ struct IndividualFriendMessages: View {
                 ScrollView(.vertical) {
                     ForEach(smileNotes.indices, id: \.self) { i in
                         FriendMessageView(smileNote: smileNotes[i])
+                            .cornerRadius(15)
+                            .padding(.horizontal, 20)
                             .onTapGesture(perform: { toggleFavorite(index: i) })
                     }
                 }
-              
+                
                 Spacer ()
                     .frame(height: 20)
                 
@@ -62,7 +64,7 @@ struct IndividualFriendMessages: View {
                         .background(ColorManager.purple3)
                         .cornerRadius(15)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-               })
+                })
                 Spacer ()
                     .frame(height: 100)
             }
@@ -78,7 +80,7 @@ struct IndividualFriendMessages: View {
     private func toggleFavorite(index: Int) {
         RestApi.instance.favoriteSmileNote(id: smileNotes[index].id).then({ smileNote in
             print("Got toggled smile note: ", smileNote)
-                smileNotes[index] = smileNote
+            smileNotes[index] = smileNote
         })
     }
 }
@@ -89,36 +91,33 @@ private struct FriendMessageView: View {
     
     var body: some View {
         ZStack {
-            Rectangle()
-                .frame(width: 350, height: 50)
-                .foregroundColor(ColorManager .purple4)
-                .cornerRadius(25)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                .opacity(0.5)
+            ColorManager.purple3
+                .cornerRadius(15)
             
-            VStack {
-                Text(smileNote.senderName)
-                    .font(.system(size: 15))
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
-                Text(smileNote.messageBody)
-                    .font(.system(size: 20))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
+            Text(smileNote.messageBody)
+                .font(.system(size: 20))
+                .foregroundColor(.white)
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+                .padding()
+            
+            HStack {
+                Spacer()
                 
                 if smileNote.favorite {
-                    Text("Favorite")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
+                    Image(systemName: "star.fill")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .scaledToFill()
+                        .foregroundColor(.yellow)
+                } else {
+                    Image(systemName: "star")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .scaledToFill()
                 }
-                
             }
-            
+            .padding()
         }
     }
 }
