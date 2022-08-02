@@ -73,7 +73,8 @@ struct IndividualFriendMessages: View {
     
     private func loadData() {
         RestApi.instance.getSmileNotes().then({ sn in
-            self.smileNotes = sn
+            smileNotes = sn
+            smileNotes.sort { $0.favorite && !$1.favorite }
         })
     }
     
@@ -81,6 +82,7 @@ struct IndividualFriendMessages: View {
         RestApi.instance.favoriteSmileNote(id: smileNotes[index].id).then({ smileNote in
             print("Got toggled smile note: ", smileNote)
             smileNotes[index] = smileNote
+            smileNotes.sort { $0.favorite && !$1.favorite }
         })
     }
 }
