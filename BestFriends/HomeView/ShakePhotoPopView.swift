@@ -41,6 +41,7 @@ struct ShakePhotoPopView: View {
                     presentationMode.wrappedValue.dismiss()
                 }
                 .onAppear(perform: loadData)
+                .padding()
             }
         }
     }
