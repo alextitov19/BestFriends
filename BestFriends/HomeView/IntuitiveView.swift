@@ -144,7 +144,7 @@ struct IntuitiveView: View {
                     })
                 
                 NavigationLink(
-                    destination: Subscriptions(),
+                    destination: ContentView(),
                     label: {
                         Text("Get PREMIUM")
                             .fontWeight(.thin)
