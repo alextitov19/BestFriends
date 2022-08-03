@@ -26,7 +26,9 @@ struct ShakePhotoPopView: View {
                             presentationMode.wrappedValue.dismiss()
                         }
                     }
+                    .ignoresSafeArea()
             }
+            
             if isLoading {
                 ProgressView()
                     .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
@@ -41,9 +43,10 @@ struct ShakePhotoPopView: View {
                     presentationMode.wrappedValue.dismiss()
                 }
                 .onAppear(perform: loadData)
-                .padding()
+                .padding(40)
             }
         }
+        .ignoresSafeArea()
     }
     
     private func loadData() {
