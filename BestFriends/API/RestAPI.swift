@@ -149,6 +149,10 @@ class RestApi {
         return helper.callRestApi(url: API_URL + "/photo-pop", method: .get, [PhotoPop].self)
     }
     
+    public func deletePhotoPop(id: String) -> Promise<RestResponse> {
+        return helper.callRestApi(url: API_URL + "/photo-pop/" + id, method: .delete, RestResponse.self)
+    }
+    
     
     public func registerAPNToken() {
         Messaging.messaging().token { token, error in

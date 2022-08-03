@@ -14,11 +14,13 @@ struct PhotoPopView: View {
     @State private var photoPopImages: [PhotoPopImageView] = []
     @State private var availableRecipients : [User] = []
     @State private var showingRecipients = false
-   
+    
     @State private var currentReceiver: User?
     @State private var isShowPhotoLibrary = false
     @State private var attachmentImage: UIImage?
-
+    
+    @State private var isLoading = true
+    
     var body: some View {
         ZStack {
             Image("blueBackground")
@@ -36,10 +38,18 @@ struct PhotoPopView: View {
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                 
+                if isLoading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
+                        .scaleEffect(2)
+                        .padding(.top, 100)
+                }
+                
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(photoPopImages, id: \.user.id) { photoPopImage in
-                        photoPopImage
+                    ForEach(photoPopImages.indices, id: \.self) { i in
+                        photoPopImages[i]
                             .padding()
+                            .onTapGesture(perform: { deletePhotoPop(index: i) })
                     }
                 }
                 
@@ -106,6 +116,7 @@ struct PhotoPopView: View {
     }
     
     private func loadData() {
+        isLoading = true
         loadRecipients()
         loadPhotoPops()
     }
@@ -113,6 +124,7 @@ struct PhotoPopView: View {
     private func loadPhotoPops() {
         print("Loading...")
         RestApi.instance.getPhotoPops().then({ photoPops in
+            isLoading = false
             print("Got " + String(photoPops.count) + " photo pops")
             for p in photoPops {
                 loadPhotoPopWithImage(photoPop: p)
@@ -176,6 +188,15 @@ struct PhotoPopView: View {
             print("Create photo pop successful")
             photoPopImages.append(PhotoPopImageView(photoPop: response, user: currentReceiver!))
             loadRecipients()
+        })
+    }
+    
+    private func deletePhotoPop(index: Int) {
+        RestApi.instance.deletePhotoPop(id: photoPopImages[index].photoPop.id).then({ response in
+            print("Got response from server for deleting photo pop: ", response)
+            if response.status == 200 {
+                photoPopImages.remove(at: index)
+            }
         })
     }
 }
