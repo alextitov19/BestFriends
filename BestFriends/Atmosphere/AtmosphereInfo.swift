@@ -55,7 +55,7 @@ struct AtmosphereInfo: View {
 //                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //            })
             
-            Text("Letting your friends know")
+            Text("Let your friends know")
                 .font(.system(size: 30))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
@@ -71,65 +71,32 @@ struct AtmosphereInfo: View {
             VStack {
            
                 Spacer()
-                .frame(height: 40)
+                .frame(height: 60)
 
-                Text("Atmosphere Updates")
-                    .font(.system(size: 35))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                   .foregroundColor(Color.blue)
-//
-////                Text("'Negative' ... Blue")
-//                    .font(.system(size: 15))
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(ColorManager.grey1)
-//
-//
-//
-//                VStack {
-//
-//                    Text("'I'm Ok' ... Green")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
-//
-//                    Text("'Bored' ... Orange")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
-//
-//
-//                    Text("'Positive' ... Yellow")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
-             
-           
+        
                 
-                Text("Updates instantly ALERT")
-                        .font(.system(size: 20))
-                        
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                   .foregroundColor(Color.white)
-                    
-                    Text("friends on homepage")
-                        .font(.system(size: 20))
-                        
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                       .foregroundColor(Color.white)
-                
-                Text("(color matches mood)")
-                    .font(.system(size: 15))
+                Text("Your friends can instantly see")
+                    .font(.system(size: 20))
                     .italic()
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                    .foregroundColor(Color.white)
+                
+                Text("from the color of the \natmosphere around your planet ")
+                    .font(.system(size: 20))
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                   .foregroundColor(Color.white)
+                
+                Spacer()
+                .frame(height: 20)
+                
+                Text("That your mood Changed")
+                    .font(.system(size: 30))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                   .foregroundColor(Color.blue)
                     
                     VStack {
             
