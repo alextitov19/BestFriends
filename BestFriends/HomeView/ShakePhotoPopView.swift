@@ -22,6 +22,9 @@ struct ShakePhotoPopView: View {
                     .scaledToFit()
                     .onTapGesture {
                         images.removeFirst()
+                        if images.count == 0 {
+                            presentationMode.wrappedValue.dismiss()
+                        }
                     }
             }
             if isLoading {
