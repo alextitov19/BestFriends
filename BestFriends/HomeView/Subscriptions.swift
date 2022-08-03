@@ -149,7 +149,7 @@ struct Subscriptions: View {
                 Spacer()
                 .frame(height: 20)
                 
-                Text(".99 Cents per Month")
+                Text("$1 per month")
                     .font(.system(size: 25))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
