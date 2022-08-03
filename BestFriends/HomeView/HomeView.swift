@@ -27,6 +27,7 @@ struct HomeView: View {
     
     @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), groups: [])
     
+    @State private var presentingPhotoPop = false
     var body: some View {
         NavigationView {
             
@@ -47,7 +48,11 @@ struct HomeView: View {
                             getHomeData()
                         }
                     }
-                
+                    .onShake {
+                        presentingPhotoPop = true
+                    }
+                    .fullScreenCover(isPresented: $presentingPhotoPop, content: ShakePhotoPopView.init)
+
                 // Stars animation...
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
