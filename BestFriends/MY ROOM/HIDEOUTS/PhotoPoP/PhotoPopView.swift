@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PhotoPopView: View {
+    
     let user: User
     let friends: [User]
     
