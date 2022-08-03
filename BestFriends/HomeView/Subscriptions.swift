@@ -66,34 +66,38 @@ struct Subscriptions: View {
                 
 
                 
-                Text("-FREE")
-                    .font(.system(size: 15))
+                Text("FREE")
+                    .font(.system(size: 25))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(Color.white)
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("-Access to all Features listed on previous page")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
+//                Text("-Access to all Features listed on previous page")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+////                    .foregroundColor(Color.white)
+//                    .foregroundColor(ColorManager.grey1)
              
                 VStack {
                
                     
                 Text("-Can Add up to 5 friends")
-                    .font(.system(size: 15))
+                    .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey1)
-//                    .foregroundColor(.gray)
 
+                    Text("-Access ALL Main Features")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.grey1)
              
                 }
                 Spacer()
-                .frame(height: 15)
+                .frame(height: 60)
                
             VStack {
                 
@@ -104,9 +108,9 @@ struct Subscriptions: View {
                     label: {
                         Text("BestFrends PURPLE")
                             .fontWeight(.thin)
-                            .frame(width: 300, height: 40)
+                            .frame(width: 250, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 20))
+                            .font(.system(size: 28))
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -114,85 +118,112 @@ struct Subscriptions: View {
                     })
               
              
-              
+                Text("-Add up to 10 friends")
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager.grey1)
                 
-                Text("-Customize Planets \n-Choose Premium backgrounds \n-???")
+                Text("-Customize Planets \n-Choose Premium backgrounds")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(Color.white)
                     .foregroundColor(ColorManager.grey1)
                 
-                Text("-.99 Cents per Month \n-$10 per year")
+                Text("-Rank Friend Behavior")
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(Color.white)
                     .foregroundColor(ColorManager.grey1)
+                
+//                Text("-Access all BestFriend's Premium benefits")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+////                    .foregroundColor(Color.white)
+//                    .foregroundColor(ColorManager.grey1)
                
                 Spacer()
-                .frame(height: 15)
-
+                .frame(height: 20)
+                
+                Text(".99 Cents per Month")
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager.purple3)
+               
+                Text("$10 per year")
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager.purple3)
+                
+         
              
                 
             VStack {
                 
                 
+//
+//                NavigationLink(
+//                    destination: SubscriptionsInfoView(),
+//                    label: {
+//                        Text("BestFriends FAMILY - BEST DEAL")
+//                            .fontWeight(.thin)
+//                            .frame(width: 300, height: 40)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 20))
+//                            .background(ColorManager.purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                    })
+//
                 
-                NavigationLink(
-                    destination: SubscriptionsInfoView(),
-                    label: {
-                        Text("BestFriends FAMILY - BEST DEAL")
-                            .fontWeight(.thin)
-                            .frame(width: 300, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 20))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                  
-                    })
-                
-                
-                Text("-Add up to 10 friends")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-                
-                Text("-Designed to minimize 'Dysfunction'")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-                
-                Text("-Access all BestFriend's Premium benefits")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-                
-                
-                Text("-$2 per month")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-                
-                
-                Text("-$19.95 per year")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(Color.white)
-                    .foregroundColor(ColorManager.grey1)
-              
+//                Text("-Add up to 10 friends")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+////                    .foregroundColor(Color.white)
+//                    .foregroundColor(ColorManager.grey1)
+////
+//                Text("-Designed to minimize 'Dysfunction'")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+////                    .foregroundColor(Color.white)
+//                    .foregroundColor(ColorManager.grey1)
+////
+//                Text("-Access all BestFriend's Premium benefits")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+////                    .foregroundColor(Color.white)
+//                    .foregroundColor(ColorManager.grey1)
+//
+////
+//                Text("-$2 per month")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+////                    .foregroundColor(Color.white)
+//                    .foregroundColor(ColorManager.grey1)
+//
+//
+//                Text("-$19.95 per year")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+////                    .foregroundColor(Color.white)
+//                    .foregroundColor(ColorManager.grey1)
+//
                 Spacer()
-                .frame(height: 200)
+                .frame(height: 150)
                
           
        
