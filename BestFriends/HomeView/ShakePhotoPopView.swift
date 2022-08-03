@@ -37,6 +37,7 @@ struct ShakePhotoPopView: View {
                 Button("Dismiss") {
                     presentationMode.wrappedValue.dismiss()
                 }
+                .onAppear(perform: loadData)
             }
         }
     }
