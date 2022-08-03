@@ -20,7 +20,7 @@ struct PhotoPopView: View {
     @State private var isShowPhotoLibrary = false
     @State private var attachmentImage: UIImage?
     
-    @State private var isLoading = true
+    @State private var isLoading = false
     
     var body: some View {
         ZStack {
@@ -117,9 +117,11 @@ struct PhotoPopView: View {
     }
     
     private func loadData() {
-        isLoading = true
         loadRecipients()
-        loadPhotoPops()
+        if user.photoPop?.count ?? 0 > 0 {
+            isLoading = true
+            loadPhotoPops()
+        }
     }
     
     private func loadPhotoPops() {
@@ -157,6 +159,8 @@ struct PhotoPopView: View {
         // Fill recipients array with all possible users
         availableRecipients = friends
         availableRecipients.append(user)
+        print("Recipient count initially: ", availableRecipients.count)
+        print("Friends: ", friends.count)
         // Iterate through the array
         // Remove all recipients who already have a photo pop
         for recipient in availableRecipients {
