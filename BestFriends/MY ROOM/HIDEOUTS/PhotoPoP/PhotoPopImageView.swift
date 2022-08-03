@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PhotoPopImageView: View {
-    let image: UIImage
+    let photoPop: PhotoPop
     let user: User
     
     var body: some View {
@@ -17,7 +17,7 @@ struct PhotoPopImageView: View {
                 .font(.system(size: 18, weight: .light))
                 .foregroundColor(.white)
             
-            Image(uiImage: image)
+            Image(uiImage: (UIImage(data: photoPop.image) ?? UIImage(systemName: "pencil"))!)
                 .resizable()
                 .frame(width: 300, height: 150)
                 .scaledToFill()

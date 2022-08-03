@@ -197,10 +197,10 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 80, height: 80)
-                                .foregroundColor(ColorManager.orange2)
+                                .foregroundColor(ColorManager.grey1)
                               
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.15)
+                                .opacity(0.6)
                             
                             VStack {
                                 
@@ -211,6 +211,11 @@ struct PlanetActionsView: View {
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.70)
                                 
+                                Text("Here")
+                                    .foregroundColor(.green)
+                                    .font(.system(size: 25, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.70)
                               
                             }
                         }

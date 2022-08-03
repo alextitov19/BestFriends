@@ -96,8 +96,8 @@ class RestApi {
         return helper.createMessageWithImage(url: API_URL + "/messages/images", cmwi: cmwi)
     }
     
-    public func getImage(folderId: String, imageId: String) -> Promise<Data> {
-        let url = API_URL + "/images/" + folderId + "/" + imageId
+    public func getImage(link: String) -> Promise<Data> {
+        let url = API_URL + "/images/" + link
         print("URL: ", url)
         return helper.getImage(url: url)
     }
@@ -136,6 +136,10 @@ class RestApi {
         return helper.callRestApi(url: API_URL + "/smile-notes", method: .get, [SmileNote].self)
     }
     
+    public func favoriteSmileNote(id: String) -> Promise<SmileNote> {
+        return helper.callRestApi(url: API_URL + "/smile-notes/" + id, method: .patch, SmileNote.self)
+    }
+    
     public func createPhotoPop(receiver: String, image: Data) -> Promise<PhotoPop> {
         let cpp = CreatePhotoPop(receiver: receiver, image: image)
         return helper.createPhotoPop(url: API_URL + "/photo-pop", createPhotoPop: cpp)
@@ -143,6 +147,10 @@ class RestApi {
     
     public func getPhotoPops() -> Promise<[PhotoPop]> {
         return helper.callRestApi(url: API_URL + "/photo-pop", method: .get, [PhotoPop].self)
+    }
+    
+    public func deletePhotoPop(id: String) -> Promise<RestResponse> {
+        return helper.callRestApi(url: API_URL + "/photo-pop/" + id, method: .delete, RestResponse.self)
     }
     
     

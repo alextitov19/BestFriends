@@ -8,10 +8,19 @@
 import SwiftUI
 
 struct PhotoPopView: View {
+    
     let user: User
     let friends: [User]
     
     @State private var photoPopImages: [PhotoPopImageView] = []
+    @State private var availableRecipients : [User] = []
+    @State private var showingRecipients = false
+    
+    @State private var currentReceiver: User?
+    @State private var isShowPhotoLibrary = false
+    @State private var attachmentImage: UIImage?
+    
+    @State private var isLoading = false
     
     var body: some View {
         ZStack {
@@ -20,43 +29,179 @@ struct PhotoPopView: View {
                 .ignoresSafeArea()
                 .scaledToFill()
                 .onAppear(perform: loadData)
+                .sheet(isPresented: $isShowPhotoLibrary) {
+                    ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
+                        .onDisappear { createPhotoPop() }
+                }
             
             VStack {
                 Text("Photo Pop")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                 
+                if isLoading {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
+                        .scaleEffect(2)
+                        .padding(.top, 100)
+                }
+                
                 ScrollView(.vertical, showsIndicators: false) {
-                    ForEach(photoPopImages, id: \.user.id) { photoPopImage in
-                        photoPopImage
+                    ForEach(photoPopImages.indices, id: \.self) { i in
+                        photoPopImages[i]
                             .padding()
+                            .onTapGesture(perform: { deletePhotoPop(index: i) })
                     }
                 }
                 
                 Spacer()
                 
+                Button(action: {
+                    showingRecipients = true
+                }, label: {
+                    Text("Add Image")
+                        .fontWeight(.regular)
+                        .frame(width: 125, height: 40)
+                        .foregroundColor(.white)
+                        .background(ColorManager.purple3)
+                        .cornerRadius(15)
+                })
+            }
+            
+            if showingRecipients {
+                VStack {
+                    ForEach(availableRecipients, id: \.id) { recipient in
+                        if recipient.id == user.id {
+                            Button(action: {
+                                currentReceiver = recipient
+                                isShowPhotoLibrary = !isShowPhotoLibrary
+                                showingRecipients = false
+                            }, label: {
+                                Text("Myself")
+                                    .fontWeight(.regular)
+                                    .frame(width: 125, height: 40)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                            })
+                        } else {
+                            Button(action: {
+                                currentReceiver = recipient
+                                isShowPhotoLibrary = !isShowPhotoLibrary
+                                showingRecipients = false
+                            }, label: {
+                                Text(recipient.firstName + String(recipient.lastName.first!))
+                                    .fontWeight(.regular)
+                                    .frame(width: 125, height: 40)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                            })
+                        }
+                    }
+                    
                     Button(action: {
-                        
+                        showingRecipients = false
                     }, label: {
-                        Text("Add Image")
+                        Text("Cancel")
                             .fontWeight(.regular)
                             .frame(width: 125, height: 40)
                             .foregroundColor(.white)
-                            .background(ColorManager.purple3)
+                            .background(ColorManager.grey3)
                             .cornerRadius(15)
                     })
+                    .padding()
+                }
             }
         }
     }
     
     private func loadData() {
-//        let p1 = PhotoPopImageView(image: UIImage(imageLiteralResourceName: "girlwalking"), user: User(id: "1", firstName: "First", lastName: "F", atmosphere: ""))
-//        let p2 = PhotoPopImageView(image: UIImage(imageLiteralResourceName: "girlwalking"), user: User(id: "2", firstName: "Second", lastName: "F", atmosphere: ""))
-//        let p3 = PhotoPopImageView(image: UIImage(imageLiteralResourceName: "girlwalking"), user: User(id: "3", firstName: "Third", lastName: "F", atmosphere: ""))
-//        
-//        photoPopImages.append(p1)
-//        photoPopImages.append(p2)
-//        photoPopImages.append(p3)
-
+        loadRecipients()
+        if user.photoPop?.count ?? 0 > 0 {
+            isLoading = true
+            loadPhotoPops()
+        }
+    }
+    
+    private func loadPhotoPops() {
+        print("Loading...")
+        RestApi.instance.getPhotoPops().then({ photoPops in
+            isLoading = false
+            print("Got " + String(photoPops.count) + " photo pops")
+            for p in photoPops {
+                loadPhotoPopWithImage(photoPop: p)
+            }
+        })
+    }
+    
+    private func loadPhotoPopWithImage(photoPop: PhotoPop) {
+        // Determine the user for the photo pop
+        if photoPop.receiver == user.id {
+            let p = PhotoPopImageView(photoPop: photoPop, user: user)
+            photoPopImages.append(p)
+            print("Added photo pop for self")
+            loadRecipients()
+        } else {
+            for f in friends {
+                if photoPop.receiver == f.id {
+                    let p = PhotoPopImageView(photoPop: photoPop, user: f)
+                    photoPopImages.append(p)
+                    print("Added photo pop for " + f.id)
+                    loadRecipients()
+                    break
+                }
+            }
+        }
+    }
+    
+    private func loadRecipients() {
+        // Fill recipients array with all possible users
+        availableRecipients = friends
+        availableRecipients.append(user)
+        print("Recipient count initially: ", availableRecipients.count)
+        print("Friends: ", friends.count)
+        // Iterate through the array
+        // Remove all recipients who already have a photo pop
+        for recipient in availableRecipients {
+            for p in photoPopImages {
+                if p.photoPop.receiver == recipient.id {
+                    let index = availableRecipients.firstIndex(where: {$0.id == recipient.id})
+                    if (index != nil) {
+                        availableRecipients.remove(at: index!)
+                        print("Removed " + p.photoPop.receiver + " from available recipients")
+                    }
+                }
+            }
+        }
+        print("Available recipients: ", availableRecipients.count)
+    }
+    
+    private func createPhotoPop() {
+        if currentReceiver == nil { return }
+        guard let image: UIImage = attachmentImage else {
+            print("Attachment iamge is nil")
+            return
+        }
+        
+        guard let data = image.jpeg(.lowest) else {
+            print("Failed to convert image")
+            return
+        }
+        print("Image as data successful")
+        RestApi.instance.createPhotoPop(receiver: currentReceiver!.id, image: data).then({ response in
+            print("Create photo pop successful")
+            photoPopImages.append(PhotoPopImageView(photoPop: response, user: currentReceiver!))
+            loadRecipients()
+        })
+    }
+    
+    private func deletePhotoPop(index: Int) {
+        RestApi.instance.deletePhotoPop(id: photoPopImages[index].photoPop.id).then({ response in
+            print("Got response from server for deleting photo pop: ", response)
+            if response.status == 200 {
+                photoPopImages.remove(at: index)
+            }
+        })
     }
 }

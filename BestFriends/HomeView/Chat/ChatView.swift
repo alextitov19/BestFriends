@@ -34,8 +34,11 @@ struct ChatView: View {
     @State var pickerSourceType: UIImagePickerController.SourceType = .photoLibrary
     var body: some View {
 //        NavigationView{
+      
+        
         ZStack {
-            AdPlayerView(name: "Nike2")
+       
+            AdPlayerView(name: "clouds2")
                 .ignoresSafeArea()
             
             

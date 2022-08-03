@@ -18,6 +18,8 @@ struct User: Codable {
     var atmosphere: String
     var chatPin: String
     var smileNotes: [String]?
+    var photoPop: [String]?
+
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case firstName = "first_name"
@@ -29,5 +31,6 @@ struct User: Codable {
         case atmosphere = "atmosphere"
         case chatPin = "chat_pin"
         case smileNotes = "smile_notes"
+        case photoPop = "photo_pop"
     }
 }

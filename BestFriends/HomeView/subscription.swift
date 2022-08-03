@@ -16,6 +16,4 @@ var price: Int
 }
 
 var subscriptionList = [subscription(name: "Purple monthly", price: Int(Double(1.00))),
-                        subscription(name: "Purple yearly", price: Int(Double(10.00))),
-                        subscription(name: "Family monthly", price: Int(Double(2.00))),
-                        subscription(name: "Family yearly",price: Int(Double(19.95)))]
+                        subscription(name: "Purple yearly", price: Int(Double(10.00)))]
