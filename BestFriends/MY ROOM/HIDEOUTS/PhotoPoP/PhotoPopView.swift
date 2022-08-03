@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct PhotoPopView: View {
-    
+    @EnvironmentObject var sessionManager: SessionManager
+
     let user: User
     let friends: [User]
     
