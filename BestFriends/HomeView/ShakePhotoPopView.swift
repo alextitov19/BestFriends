@@ -19,7 +19,7 @@ struct ShakePhotoPopView: View {
                 Image(uiImage: image)
                     .resizable()
                     .ignoresSafeArea()
-                    .scaledToFit()
+                    .scaledToFill()
                     .onTapGesture {
                         images.removeFirst()
                         if images.count == 0 {
@@ -53,7 +53,11 @@ struct ShakePhotoPopView: View {
             isLoading = false
             for p in photoPops {
                 guard let i = UIImage(data: p.image) else { return }
-                images.append(i)
+                if i.size.width > i.size.height {
+                    images.append(i.rotate(radians: .pi/2))
+                } else {
+                    images.append(i)
+                }
             }
         })
     }
