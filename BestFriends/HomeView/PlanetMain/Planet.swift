@@ -287,7 +287,7 @@ struct PlanetActionsView: View {
                     Spacer()
                         .frame(height: 15)
                     
-                    NavigationLink(destination: HorizonHomeView(),
+                    NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere),
                                    
                 label: {
                         

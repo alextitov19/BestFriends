@@ -9,6 +9,10 @@ import SwiftUI
 
 struct HorizonSetGoal: View {
     
+    let user: User
+    let friends: [User]
+    let atmosphere: Atmosphere
+    
     @State private var date = Date()
     @State private var startDate = Date()
     @State private var endDate = Date()
@@ -65,7 +69,7 @@ struct HorizonSetGoal: View {
                 
                 //NEED HELP WITH THIS NAVIGATION BELOW
                 
-                NavigationLink(destination: HorizonInviteFriends(friends: <#[User]#>, user: <#User#>, atmosphere: <#Atmosphere#>), label:  {
+                NavigationLink(destination: HorizonInviteFriends(friends: friends, user: user, atmosphere: atmosphere), label:  {
                     Text("Next     ")
                         .font(.title)
                         .background(ColorManager.purple4)
@@ -81,9 +85,9 @@ struct HorizonSetGoal: View {
     }//body
 }//struct
 
-struct HorizonSetGoal_Previews: PreviewProvider {
-    static var previews: some View {
-        HorizonSetGoal()
-            .previewDevice("iPod touch (7th generation)")
-    }
-}
+//struct HorizonSetGoal_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HorizonSetGoal()
+//            .previewDevice("iPod touch (7th generation)")
+//    }
+//}

@@ -9,6 +9,11 @@ import Foundation
 import SwiftUI
 
 struct HorizonHomeView: View {
+    
+    let user: User
+    let friends: [User]
+    let atmosphere: Atmosphere
+    
     @State var imageName = "blankrocketimage"
          
     var body: some View {
@@ -21,7 +26,7 @@ struct HorizonHomeView: View {
                 Button(action: {
                     print("i have been tapped")
                 }){
-                    NavigationLink(destination: HorizonRocketColorPicker(), label: {
+                    NavigationLink(destination: HorizonRocketColorPicker(user: user, friends: friends, atmosphere: atmosphere), label: {
                         Image(systemName: "paintbrush.fill").resizable().foregroundColor(.gray).frame(width: UIScreen.main.bounds.size.width / 5, height: UIScreen.main.bounds.size.width / 5, alignment: Alignment.center)
                             .padding()
                     })//NavigationLink
@@ -34,7 +39,7 @@ struct HorizonHomeView: View {
                     Button(action: {
                         print("i have been tapped")
                     }){
-                        NavigationLink(destination: HorizonGoalChoices(), label: {
+                        NavigationLink(destination: HorizonGoalChoices(user: user, friends: friends, atmosphere: atmosphere), label: {
                             Image(systemName: "plus.circle").resizable().frame(width: UIScreen.main.bounds.size.width / 3.5, height: UIScreen.main.bounds.size.width / 3.5, alignment: Alignment.center)
                         })//NavigationLink
                     }.foregroundColor(.gray).padding().position(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height / 5)
@@ -44,7 +49,7 @@ struct HorizonHomeView: View {
                     Button(action: {
                         print("i have been tapped")
                     }){
-                        NavigationLink(destination: HorizonGoalChoices(), label: {
+                        NavigationLink(destination: HorizonGoalChoices(user: user, friends: friends, atmosphere: atmosphere), label: {
                             Image(systemName: "plus.circle").resizable().frame(width: UIScreen.main.bounds.size.width / 3.5, height: UIScreen.main.bounds.size.width / 3.5, alignment: Alignment.center)
                         })//NavigationLink
                     }.foregroundColor(.gray).padding().position(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height / 2.8)
@@ -54,7 +59,7 @@ struct HorizonHomeView: View {
                     Button(action: {
                         print("i have been tapped")
                     }){
-                        NavigationLink(destination: HorizonGoalChoices(), label: {
+                        NavigationLink(destination: HorizonGoalChoices(user: user, friends: friends, atmosphere: atmosphere), label: {
                             Image(systemName: "plus.circle").resizable().frame(width: UIScreen.main.bounds.size.width / 3.5, height: UIScreen.main.bounds.size.width / 3.5, alignment: Alignment.center)
                         })//NavigationLink
                     }.foregroundColor(.gray).padding().position(x: UIScreen.main.bounds.size.width / 2, y: UIScreen.main.bounds.size.height / 1.9)

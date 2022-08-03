@@ -7,7 +7,13 @@
 
 import SwiftUI
 
-struct HorizonGoalChoices: View { 
+struct HorizonGoalChoices: View {
+    
+    let user: User
+    let friends: [User]
+    let atmosphere: Atmosphere
+    
+    
     var body: some View {
         
         ZStack
@@ -27,7 +33,7 @@ struct HorizonGoalChoices: View {
                 {
                     VStack
                     {
-                        NavigationLink(destination: HorizonCustom(), label: {
+                        NavigationLink(destination: HorizonCustom(user: user, friends: friends, atmosphere: atmosphere), label: {
                             HStack
                             {
                                 Image(systemName: "wrench")
@@ -37,7 +43,7 @@ struct HorizonGoalChoices: View {
                                     .frame(width: 50, height: 50)
                                     .padding(5)
                                     .border(Color.white,width:5)
-                                  
+                                
                                 Text("Custom")
                                     .font(.system(size: 17))
                                     .frame(width: 80,alignment: .leading)
@@ -47,7 +53,7 @@ struct HorizonGoalChoices: View {
                             .cornerRadius(15)
                         })//NavigationLink
                         
-                        NavigationLink(destination: HorizonSetGoal(), label: {
+                        NavigationLink(destination: HorizonSetGoal(user: user, friends: friends, atmosphere: atmosphere), label: {
                             HStack
                             {
                                 Image(systemName: "bubble.left")
@@ -57,7 +63,7 @@ struct HorizonGoalChoices: View {
                                     .frame(width: 50, height: 50)
                                     .padding(5)
                                     .border(Color.white,width:5)
-                                    
+                                
                                 
                                 Text("Check on my friends")
                                     .font(.system(size: 17))
@@ -68,7 +74,7 @@ struct HorizonGoalChoices: View {
                             .cornerRadius(15)
                         })//NavigationLink
                         
-                        NavigationLink(destination: HorizonSetGoal(), label: {
+                        NavigationLink(destination: HorizonSetGoal(user: user, friends: friends, atmosphere: atmosphere), label: {
                             HStack
                             {
                                 Image(systemName: "person.2.fill")
@@ -78,7 +84,7 @@ struct HorizonGoalChoices: View {
                                     .frame(width: 50, height: 50)
                                     .padding(5)
                                     .border(Color.white,width:5)
-                                    
+                                
                                 
                                 Text("Make plan with roommate")
                                     .font(.system(size: 15))
@@ -89,7 +95,7 @@ struct HorizonGoalChoices: View {
                             .cornerRadius(15)
                         })//NavigationLink
                         
-                        NavigationLink(destination: HorizonSetGoal(), label: {
+                        NavigationLink(destination: HorizonSetGoal(user: user, friends: friends, atmosphere: atmosphere), label: {
                             HStack
                             {
                                 Image(systemName: "music.note.list")
@@ -99,7 +105,7 @@ struct HorizonGoalChoices: View {
                                     .frame(width: 55, height: 57)
                                     .padding(5)
                                     .border(Color.white,width:5)
-                                    
+                                
                                 
                                 Text("New Playlist for my friend's mood")
                                     .font(.system(size: 14))
@@ -110,7 +116,7 @@ struct HorizonGoalChoices: View {
                             .cornerRadius(15)
                         })//NavigationLink
                         
-                        NavigationLink(destination: HorizonSetGoal(), label: {
+                        NavigationLink(destination: HorizonSetGoal(user: user, friends: friends, atmosphere: atmosphere), label: {
                             HStack
                             {
                                 Image(systemName: "cloud")
@@ -120,7 +126,7 @@ struct HorizonGoalChoices: View {
                                     .frame(width: 50, height: 50)
                                     .padding(5)
                                     .border(Color.white,width:5)
-                                    
+                                
                                 
                                 Text("Set up my Dreams")
                                     .font(.system(size: 17))
@@ -134,7 +140,7 @@ struct HorizonGoalChoices: View {
                     
                     VStack
                     {
-                        NavigationLink(destination: HorizonSetGoal(), label: {
+                        NavigationLink(destination: HorizonSetGoal(user: user, friends: friends, atmosphere: atmosphere), label: {
                             HStack
                             {
                                 Image(systemName: "tshirt")
@@ -144,7 +150,7 @@ struct HorizonGoalChoices: View {
                                     .frame(width: 50, height: 50)
                                     .padding(5)
                                     .border(Color.white,width:5)
-                                    
+                                
                                 
                                 Text("Declutter my closet")
                                     .font(.system(size: 17))
@@ -155,7 +161,7 @@ struct HorizonGoalChoices: View {
                             .cornerRadius(15)
                         })//NavigationLink
                         
-                        NavigationLink(destination: HorizonSetGoal(), label: {
+                        NavigationLink(destination: HorizonSetGoal(user: user, friends: friends, atmosphere: atmosphere), label: {
                             HStack
                             {
                                 Image(systemName: "hands.sparkles")
@@ -165,19 +171,19 @@ struct HorizonGoalChoices: View {
                                     .frame(width: 50, height: 50)
                                     .padding(5)
                                     .border(Color.white,width:5)
-                                    
+                                
                                 
                                 Text("Volunteer for a Day")
                                     .font(.system(size: 17))
                                     .frame(width: 80,alignment: .leading)
                                     .foregroundColor(.black)
-
+                                
                             }//HStack
                             .background(.blue)
                             .cornerRadius(15)
                         })//NavigationLink
                         
-                        NavigationLink(destination: HorizonSetGoal(), label: {
+                        NavigationLink(destination: HorizonSetGoal(user: user, friends: friends, atmosphere: atmosphere), label: {
                             HStack
                             {
                                 Image(systemName: "lightbulb")
@@ -187,7 +193,7 @@ struct HorizonGoalChoices: View {
                                     .frame(width: 50, height: 50)
                                     .padding(5)
                                     .border(Color.white,width:5)
-                                    
+                                
                                 
                                 Text("Try something new")
                                     .font(.system(size: 16))
@@ -198,7 +204,7 @@ struct HorizonGoalChoices: View {
                             .cornerRadius(15)
                         })//NavigationLink
                         
-                        NavigationLink(destination: HorizonSetGoal(), label: {
+                        NavigationLink(destination: HorizonSetGoal(user: user, friends: friends, atmosphere: atmosphere), label: {
                             HStack
                             {
                                 Image(systemName: "book")
@@ -208,7 +214,7 @@ struct HorizonGoalChoices: View {
                                     .frame(width: 50, height: 53)
                                     .padding(5)
                                     .border(Color.white,width:5)
-                                    
+                                
                                 
                                 Text("Read my favorite book")
                                     .font(.system(size: 17))
@@ -219,7 +225,7 @@ struct HorizonGoalChoices: View {
                             .cornerRadius(15)
                         })//NavigationLink
                         
-                        NavigationLink(destination: HorizonSetGoal(), label: {
+                        NavigationLink(destination: HorizonSetGoal(user: user, friends: friends, atmosphere: atmosphere), label: {
                             HStack
                             {
                                 Image(systemName: "sparkles.tv")
@@ -229,7 +235,7 @@ struct HorizonGoalChoices: View {
                                     .frame(width: 50, height: 53)
                                     .padding(5)
                                     .border(Color.white,width:5)
-                                    
+                                
                                 
                                 Text("Watch a new movie")
                                     .font(.system(size: 17))
@@ -246,9 +252,9 @@ struct HorizonGoalChoices: View {
     }//body
 }//struct
 
-struct HorizonGoalChoices_Previews: PreviewProvider {
-    static var previews: some View {
-        HorizonGoalChoices()
-            .previewDevice("iPod touch (7th generation)")
-    }
-}
+//struct HorizonGoalChoices_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HorizonGoalChoices()
+//            .previewDevice("iPod touch (7th generation)")
+//    }
+//}

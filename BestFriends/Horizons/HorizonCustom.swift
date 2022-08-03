@@ -9,6 +9,10 @@ import SwiftUI
 
 struct HorizonCustom: View {
     
+    let user: User
+    let friends: [User]
+    let atmosphere: Atmosphere
+    
     @State private var summary = "Enter custom goal"
     
     var body: some View {
@@ -29,7 +33,7 @@ struct HorizonCustom: View {
                     .frame(width: 300, height: 100)
                     .background(.white)
                 
-                NavigationLink(destination: HorizonSetGoal(), label: {
+                NavigationLink(destination: HorizonSetGoal(user: user, friends: friends, atmosphere: atmosphere), label: {
                     Text("Next      ")
                         .font(.title)
                         .background(ColorManager.purple4)
@@ -43,9 +47,9 @@ struct HorizonCustom: View {
     }//body
 }//struct
 
-struct HorizonCustom_Previews: PreviewProvider {
-    static var previews: some View {
-        HorizonCustom()
-            .previewDevice("iPod touch (7th generation)")
-    }
-}
+//struct HorizonCustom_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HorizonCustom()
+//            .previewDevice("iPod touch (7th generation)")
+//    }
+//}

@@ -9,6 +9,11 @@ import Foundation
 import SwiftUI
 
 struct HorizonRocketColorPicker: View {
+    
+    let user: User
+    let friends: [User]
+    let atmosphere: Atmosphere
+    
     var rocketColors: [String] = ["rocketbackgroundbluegold","rocketbackgroundbluewhite","rocketbackgroundbrown","rocketbackgroundlightpurple","rocketbackgroundneongreen","rocketbackgroundpinkpurplegreen","rocketbackgroundpinkwhite","rocketbackgroundpurplegreen"]
     var body: some View {
         ZStack {
@@ -18,7 +23,7 @@ struct HorizonRocketColorPicker: View {
                 Text("Choose Color \nSwipe To See Other Options")
                 TabView {
                     ForEach(rocketColors, id: \.self){ rocketName in
-                        NavigationLink(destination: HorizonHomeView(imageName: rocketName),
+                        NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere, imageName: rocketName),
                                        label: {
                             
                             Image(rocketName)
