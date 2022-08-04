@@ -58,6 +58,9 @@ struct ChatGroupsView: View {
                                 .font(.system(size: 35))
                                 .fontWeight(.thin)
                                 .foregroundColor(.white)
+                            
+                            
+                            
 //                        Capsule()
 //                            .fill(Color.white)
 //                            .frame(width: 40, height: 4)

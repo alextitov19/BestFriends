@@ -44,7 +44,23 @@ struct InfoViewPlanet: View {
                 
             VStack {
              
+                Text("Navigating")
+                    .font(.system(size: 30))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.blue)
                 
+                Text("Homepage")
+                    .font(.system(size: 30))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.blue)
+                
+                
+                Spacer()
+                .frame(height: 15)
+                
+                VStack {
                 Text("Friend sent you")
                     .font(.system(size: 35))
                     .fontWeight(.light)
@@ -179,7 +195,8 @@ struct InfoViewPlanet: View {
              
               
                 Spacer()
-                .frame(height: 40)
+                .frame(height: 20)
+                
                 VStack {
                         NavigationLink(
                             destination: SettingsView(user: user),
@@ -213,5 +230,6 @@ struct InfoViewPlanet: View {
 
 
 
+}
 }
 }
