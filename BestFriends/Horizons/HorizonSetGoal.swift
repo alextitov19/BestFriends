@@ -29,7 +29,7 @@ struct HorizonSetGoal: View {
             {
                 Text("Title")
                     .foregroundColor(.white)
-                    .font(.largeTitle)
+                    .font(.title2)
                 
                 DatePicker(
                     "Start Date",
@@ -48,6 +48,7 @@ struct HorizonSetGoal: View {
                     DatePicker("", selection: $startDate, displayedComponents: .hourAndMinute).colorInvert()
                         .colorMultiply(Color.white)
                             .labelsHidden()
+                            
                             
                     Text(">")
                 }

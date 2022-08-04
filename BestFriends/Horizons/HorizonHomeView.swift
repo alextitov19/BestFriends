@@ -68,7 +68,7 @@ struct HorizonHomeView: View {
             }//ZStack
         }//ZStack
             
-    }
-}
+    }//body
+}//struct
 
 
