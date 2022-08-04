@@ -243,18 +243,18 @@ struct HomeView: View {
                             })
                         }
                         Spacer().frame(height: 10)
-                        
-                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
-                                       label: {
-                            Text("Changed Atmosphere")
-                                .fontWeight(.light)
-                                .frame(width: 210, height: 27)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .opacity(0.4)
-                                .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
-                        })
+//
+//                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
+//                                       label: {
+//                            Text("Changed Atmosphere")
+//                                .fontWeight(.light)
+//                                .frame(width: 210, height: 27)
+//                                .foregroundColor(.white)
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .opacity(0.4)
+//                                .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
+//                        })
                        
                         Spacer().frame(height: 10)
                        
@@ -325,17 +325,44 @@ struct HomeView: View {
                         }
                         Spacer().frame(height:10)
                         
-                        NavigationLink(destination: EmptyView(),
-                                       label: {
-                            Text("Invited to Horizons")
-                                .fontWeight(.light)
-                                .frame(width: 210, height: 30)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .opacity(0.4)
-                        })
                         
+                         HStack {
+                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
+                             Text("Aura / Mood")
+                                 .fontWeight(.light)
+                                 .frame(width: 100, height: 30)
+                                 .foregroundColor(.white)
+                                 .background(ColorManager.purple3)
+                                 .cornerRadius(15)
+                                 .opacity(0.4)
+                         })
+
+                         
+                         NavigationLink(destination: EmptyView(),
+                                        label: {
+                             Text("Horizons")
+                                 .fontWeight(.light)
+                                 .frame(width: 100, height: 30)
+                                 .foregroundColor(.white)
+                                 .background(ColorManager.purple3)
+                                 .cornerRadius(15)
+                                 .opacity(0.4)
+                         })
+                         }
+                         Spacer().frame(height:10)
+                         
+//
+//                        NavigationLink(destination: EmptyView(),
+//                                       label: {
+//                            Text("Invited to Horizons")
+//                                .fontWeight(.light)
+//                                .frame(width: 210, height: 30)
+//                                .foregroundColor(.white)
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .opacity(0.4)
+//                        })
+//
       
                         Spacer()
                             .frame(height: 60)
