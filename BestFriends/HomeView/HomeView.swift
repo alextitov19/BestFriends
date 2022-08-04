@@ -11,12 +11,12 @@ struct HomeView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
-//    let user: User
-//    let friends: [User]
-//    
-//    let user: User
-//    let atmosphere: Atmosphere
-
+    //    let user: User
+    //    let friends: [User]
+    //    
+    //    let user: User
+    //    let atmosphere: Atmosphere
+    
     @State private var homeData: HomeData?
     @State private var groups: [Group] = []
     @State private var planets: [Planet] = []
@@ -34,7 +34,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             
-           
+            
             ZStack {
                 
                 
@@ -55,15 +55,31 @@ struct HomeView: View {
                         presentingPhotoPop = true
                     }
                     .fullScreenCover(isPresented: $presentingPhotoPop, content: ShakePhotoPopView.init)
-
+                
                 // Stars animation...
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
-//                    .scaledToFill()
+                //                    .scaledToFill()
                     .blendMode(.screen)
                     .onTapGesture(perform: backgroundTapped)
-
-
+                
+                
+                VStack {
+                    HStack {
+                        Spacer()
+                        
+                        if homeData {
+                            NavigationLink(destination: SettingsView(user: homeData!.user), label: {
+                                Image(systemName: "gearshape.fill")
+                                    .resizable()
+                                    .frame(width: 100, height: 100)
+                                    .scaledToFit()
+                            })
+                        }
+                    }
+                    
+                    Spacer()
+                }
                 
                 VStack {
                     Image(systemName: ".")
@@ -73,7 +89,7 @@ struct HomeView: View {
                         .foregroundColor(.white)
                         .multilineTextAlignment(.leading)
                         .onTapGesture(perform: {
-//                            $sessionManager.infoViewPlanet(user: user, group: group)
+                            //                            $sessionManager.infoViewPlanet(user: user, group: group)
                         })
                     Spacer()
                         .frame(height: 25)
@@ -96,8 +112,8 @@ struct HomeView: View {
                         if planets.count > 1 && !focusPlanet {
                             Spacer()
                                 .frame(width: 35)
-//                                .frame(width: 40, height: 40)
-//                                .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
+                            //                                .frame(width: 40, height: 40)
+                            //                                .offset(x: showItems ? 75 : 0, y: showItems ? 125: 0)
                             
                             planets[1]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[1].user.id)
@@ -124,15 +140,15 @@ struct HomeView: View {
                     }
                     // Main planet
                     
-
-                   
-                        
+                    
+                    
+                    
                     // Bottom 3 planets
                     HStack {
                         
                         
                         if planets.count > 3 && !focusPlanet {
-                           
+                            
                             
                             planets[3]
                                 .onTapGesture(perform: { friendPlanetTapped(id: planets[3].user.id)
@@ -181,28 +197,28 @@ struct HomeView: View {
                                 
                             }
                         }
-                            
-//                        if planets.count > 4 && !focusPlanet {
-                         
                         
-                            // Old 3rd Bottom planet
-                            if planets.count > 4 && !focusPlanet {
-                                planets[4]
-                                    .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)
-                                        if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[4].user.id {
-                                            selectedPlanet = nil
-                                        } else {
-                                            selectedPlanet = planets[4]
-                                        }
-                                    })
+                        //                        if planets.count > 4 && !focusPlanet {
+                        
+                        
+                        // Old 3rd Bottom planet
+                        if planets.count > 4 && !focusPlanet {
+                            planets[4]
+                                .onTapGesture(perform: { friendPlanetTapped(id: planets[4].user.id)
+                                    if (selectedPlanet != nil) && selectedPlanet!.user.id == planets[4].user.id {
+                                        selectedPlanet = nil
+                                    } else {
+                                        selectedPlanet = planets[4]
+                                    }
+                                })
                             
                             
                             
                         }
-                    
-                    
-                   
-//                                                   .padding(50)
+                        
+                        
+                        
+                        //                                                   .padding(50)
                     }
                     
                     if newGroupMembers.count > 0 && !focusPlanet {
@@ -225,11 +241,11 @@ struct HomeView: View {
                     Spacer()
                         .frame(height: 10)
                     
-//                    Text("Received Push Notification about:")
-//                        .font(.system(size: 15))
-//                        .foregroundColor(.white)
-//                        .fontWeight(.ultraLight)
-//
+                    //                    Text("Received Push Notification about:")
+                    //                        .font(.system(size: 15))
+                    //                        .foregroundColor(.white)
+                    //                        .fontWeight(.ultraLight)
+                    //
                     //                    MARK: Connect to Chat Now page
                     
                     if selectedPlanet != nil {
@@ -246,132 +262,132 @@ struct HomeView: View {
                             })
                         }
                         Spacer().frame(height: 10)
-//
-//                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
-//                                       label: {
-//                            Text("Changed Atmosphere")
-//                                .fontWeight(.light)
-//                                .frame(width: 210, height: 27)
-//                                .foregroundColor(.white)
-//                                .background(ColorManager.purple3)
-//                                .cornerRadius(15)
-//                                .opacity(0.4)
-//                                .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
-//                        })
-                       
+                        //
+                        //                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
+                        //                                       label: {
+                        //                            Text("Changed Atmosphere")
+                        //                                .fontWeight(.light)
+                        //                                .frame(width: 210, height: 27)
+                        //                                .foregroundColor(.white)
+                        //                                .background(ColorManager.purple3)
+                        //                                .cornerRadius(15)
+                        //                                .opacity(0.4)
+                        //                                .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
+                        //                        })
+                        
                         Spacer().frame(height: 10)
-                       
+                        
                         
                         HStack {
                             NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
-                                       label: {
-                            Text("FIGHT")
-                                .fontWeight(.light)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .opacity(0.4)
-                        })
-
+                                           label: {
+                                Text("FIGHT")
+                                    .fontWeight(.light)
+                                    .frame(width: 100, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .opacity(0.4)
+                            })
                             
-                        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
-                                       label: {
-                            Text("Mediator")
-                                .fontWeight(.light)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .opacity(0.4)
-                        })
+                            
+                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+                                           label: {
+                                Text("Mediator")
+                                    .fontWeight(.light)
+                                    .frame(width: 100, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .opacity(0.4)
+                            })
                         }
                         
                         
                         
-//                        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
-//                                       label: {
-//                            Text("Drama ALERT")
-//                                .fontWeight(.light)
-//                                .frame(width: 210, height: 30)
-//                                .foregroundColor(.white)
-//                                .background(ColorManager.purple1)
-//                                .cornerRadius(15)
-//                                .opacity(0.4)
-//                        })
+                        //                        NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+                        //                                       label: {
+                        //                            Text("Drama ALERT")
+                        //                                .fontWeight(.light)
+                        //                                .frame(width: 210, height: 30)
+                        //                                .foregroundColor(.white)
+                        //                                .background(ColorManager.purple1)
+                        //                                .cornerRadius(15)
+                        //                                .opacity(0.4)
+                        //                        })
                         Spacer()
                             .frame(height: 10)
-                       
-                        HStack {
-                        NavigationLink(destination: VirtualHug(),
-                                       label: {
-                            Text("Got HUG")
-                                .fontWeight(.light)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .opacity(0.4)
-                        })
-
                         
-                        NavigationLink(destination: ReceivedPlaylist(),
-                                       label: {
-                            Text("Got SONG")
-                                .fontWeight(.light)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(.white)
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .opacity(0.4)
-                        })
+                        HStack {
+                            NavigationLink(destination: VirtualHug(),
+                                           label: {
+                                Text("Got HUG")
+                                    .fontWeight(.light)
+                                    .frame(width: 100, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .opacity(0.4)
+                            })
+                            
+                            
+                            NavigationLink(destination: ReceivedPlaylist(),
+                                           label: {
+                                Text("Got SONG")
+                                    .fontWeight(.light)
+                                    .frame(width: 100, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .opacity(0.4)
+                            })
                         }
                         Spacer().frame(height:10)
                         
                         
-                         HStack {
-                         NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                             Text("Aura / Mood")
-                                 .fontWeight(.light)
-                                 .frame(width: 100, height: 30)
-                                 .foregroundColor(.white)
-                                 .background(ColorManager.purple3)
-                                 .cornerRadius(15)
-                                 .opacity(0.4)
-                         })
-
-                         
-                         NavigationLink(destination: EmptyView(),
-                                        label: {
-                             Text("Horizons")
-                                 .fontWeight(.light)
-                                 .frame(width: 100, height: 30)
-                                 .foregroundColor(.white)
-                                 .background(ColorManager.purple3)
-                                 .cornerRadius(15)
-                                 .opacity(0.4)
-                         })
-                         }
-                         Spacer().frame(height:10)
-                         
-//
-//                        NavigationLink(destination: EmptyView(),
-//                                       label: {
-//                            Text("Invited to Horizons")
-//                                .fontWeight(.light)
-//                                .frame(width: 210, height: 30)
-//                                .foregroundColor(.white)
-//                                .background(ColorManager.purple3)
-//                                .cornerRadius(15)
-//                                .opacity(0.4)
-//                        })
-//
-      
+                        HStack {
+                            NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
+                                Text("Aura / Mood")
+                                    .fontWeight(.light)
+                                    .frame(width: 100, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .opacity(0.4)
+                            })
+                            
+                            
+                            NavigationLink(destination: EmptyView(),
+                                           label: {
+                                Text("Horizons")
+                                    .fontWeight(.light)
+                                    .frame(width: 100, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .opacity(0.4)
+                            })
+                        }
+                        Spacer().frame(height:10)
+                        
+                        //
+                        //                        NavigationLink(destination: EmptyView(),
+                        //                                       label: {
+                        //                            Text("Invited to Horizons")
+                        //                                .fontWeight(.light)
+                        //                                .frame(width: 210, height: 30)
+                        //                                .foregroundColor(.white)
+                        //                                .background(ColorManager.purple3)
+                        //                                .cornerRadius(15)
+                        //                                .opacity(0.4)
+                        //                        })
+                        //
+                        
                         Spacer()
                             .frame(height: 60)
                         
                     }
-
+                    
                 }
                 Spacer()
                 if homeData?.groups != nil && homeData?.user != nil {
