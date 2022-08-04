@@ -40,7 +40,25 @@ struct InviteView: View {
                 Text("Add up to 5 friends")
                     .foregroundColor(.purple)
                     .font(.system(size: 27, weight: .light))
+          
                 
+                NavigationLink(
+                    destination: IntuitiveView(user: user),
+                    label: {
+                        Text("Up to 10 with PURPLE")
+                            .fontWeight(.thin)
+                            .frame(width: 250, height: 30)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 25))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                  
+                    
+                    })
+                
+                Spacer()
+                    .frame(height: 15)
                 
                 Text("1) Ask friend to download app \n2) Enter their email - tap [Invite] \n3) Only one of you send invite")
                     .fontWeight(.thin)

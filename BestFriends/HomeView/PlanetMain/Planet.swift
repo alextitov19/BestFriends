@@ -101,25 +101,36 @@ struct PlanetActionsView: View {
                                    label: {
                         ZStack {
                             Circle()
-                                .frame(width: 100, height: 100)
+                                .frame(width: 110, height: 110)
                                 .foregroundColor(ColorManager.purple3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                 .opacity(0.40)
                             
                             VStack {
                                 
-                                Text("My")
+                                Text("Safe Space")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 17, weight: .bold))
+                                    .font(.system(size: 12, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("Room")
+//                                Text("with 5 Closest")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 12, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
+                                
+                                Text("on")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 17, weight: .bold))
+                                    .font(.system(size: 12, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
-                               
+                                
+                                Text("Bad Days ")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 12, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.50)
                             }
                         }
                         
@@ -132,7 +143,7 @@ struct PlanetActionsView: View {
                     NavigationLink(destination: InviteView(user: user), label: {
                         ZStack {
                             Circle()
-                                .frame(width: 100, height: 100)
+                                .frame(width: 110, height: 110)
                                 .foregroundColor(ColorManager.purple3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                .opacity(0.40)
@@ -166,16 +177,35 @@ struct PlanetActionsView: View {
 
                         ZStack {
                             Circle()
-                                .frame(width: 100, height: 100)
+                                .frame(width: 110, height: 110)
                                 .foregroundColor(ColorManager.purple3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                 .opacity(0.40)
                             
                             VStack {
-                                Text("DRAMA \nn' \nFIGHTS")
+                                
+                                
+                                Text("Overcome")
                                      .foregroundColor(.white)
- 
-                                     .font(.system(size: 15, weight: .bold))
+                                     .font(.system(size: 12, weight: .bold))
+                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                     .opacity(0.50)
+                                
+                                Text("FIGHTS")
+                                     .foregroundColor(.white)
+                                     .font(.system(size: 12, weight: .bold))
+                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                     .opacity(0.50)
+                              
+                                Text("Fix")
+                                     .foregroundColor(.white)
+                                     .font(.system(size: 12, weight: .bold))
+                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                     .opacity(0.50)
+                               
+                                Text("Friendships")
+                                     .foregroundColor(.white)
+                                     .font(.system(size: 12, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
@@ -192,16 +222,16 @@ struct PlanetActionsView: View {
 //
 //                    MARK: First setup
                     
-                    NavigationLink(destination: IntuitiveView(user: user),
+                    NavigationLink(destination: InfoViewPlanet(user: user),
                                    label: {
                         ZStack {
                             Circle()
-                                .frame(width: 80, height: 80)
+                                .frame(width: 100, height: 100)
                                 .foregroundColor(ColorManager.grey1)
-                              
+
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                 .opacity(0.6)
-                            
+//
                             VStack {
                                 
 
@@ -227,23 +257,36 @@ struct PlanetActionsView: View {
                     
                     
                     
-                      NavigationLink(destination: SettingsView(user: user),
+                      NavigationLink(destination: IntuitiveView(user: user),
                                      label: {
                           ZStack {
                               Circle()
-                                  .frame(width: 85, height: 85)
-                                  .foregroundColor(ColorManager.orange2)
+                                  .frame(width: 90, height: 90)
+                                  .foregroundColor(ColorManager.grey1)
                                   .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                 .opacity(0.15)
+                                 .opacity(0.6)
 
                               VStack {
+                                  
+                                  Text("Go")
+                                       .foregroundColor(.green)
+                                       .font(.system(size: 23, weight: .bold))
+                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                       .opacity(0.50)
 
-
-                                 Text("Settings")
-                                      .foregroundColor(.white)
+                                 Text("PURPLE")
+                                      .foregroundColor(.purple)
                                       .font(.system(size: 17, weight: .bold))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                       .opacity(0.50)
+                                  
+//                                  Text("Parents")
+//                                       .foregroundColor(.white)
+//                                       .font(.system(size: 17, weight: .bold))
+//                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                       .opacity(0.50)
+                                  
+                                  
                               }
                           }
                          
@@ -257,26 +300,38 @@ struct PlanetActionsView: View {
                                    label: {
                         ZStack {
                             Circle()
-                                .frame(width: 100, height: 100)
+                                .frame(width: 110, height: 110)
                                 .foregroundColor(ColorManager.purple3)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                 .opacity(0.40)
                             
                             VStack {
    
-                                Text("My")
+                                Text("Share Mood")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 17, weight: .bold))
+                                    .font(.system(size: 12, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("Aura")
+                                Text("with")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 17, weight: .bold))
+                                    .font(.system(size: 12, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                              
+                                
+                                Text("Suportive")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 12, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.50)
+                                
+                                Text("Friends")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 12, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.50)
+                                
                             }
                         }
                     })
@@ -293,7 +348,7 @@ struct PlanetActionsView: View {
                         
                         ZStack {
                             Circle()
-                                .frame(width: 100, height: 100)
+                                .frame(width: 110, height: 110)
                                 .foregroundColor(ColorManager.purple3)
                                 .foregroundColor(.pink)
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
@@ -303,18 +358,23 @@ struct PlanetActionsView: View {
                                 
 
                               
-                                Text("My")
+                                Text("Building")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 17, weight: .bold))
+                                     .font(.system(size: 12, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
-                                Text("Horizons")
+                                Text("DREAMS")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 17, weight: .bold))
+                                     .font(.system(size: 12, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
-                 
+                              
+                                Text("Together")
+                                    .foregroundColor(ColorManager.grey1)
+                                     .font(.system(size: 12, weight: .bold))
+                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                     .opacity(0.50)
                    
                             }
                         }

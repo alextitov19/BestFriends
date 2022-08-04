@@ -73,6 +73,8 @@
 		7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DF0627F6948A00D9F0E1 /* AdViewFullScreen.swift */; };
 		7AD8DF0927F6948A00D9F0E1 /* AdPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DF0727F6948A00D9F0E1 /* AdPlayerView.swift */; };
 		7AD8DF0D27F6974C00D9F0E1 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */; };
+		7ADFDB31289B1EFE0004FB1C /* ShakeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFDB30289B1EFE0004FB1C /* ShakeExtensions.swift */; };
+		7ADFDB33289B1FA60004FB1C /* ShakePhotoPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */; };
 		7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE31CBE262A9A94001EC5A3 /* LoginView.swift */; };
 		7AE3E9032838409B00567E2D /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3E9022838409A00567E2D /* ArrayExt.swift */; };
 		7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */; };
@@ -294,6 +296,8 @@
 		7AD8DF0627F6948A00D9F0E1 /* AdViewFullScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdViewFullScreen.swift; sourceTree = "<group>"; };
 		7AD8DF0727F6948A00D9F0E1 /* AdPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdPlayerView.swift; sourceTree = "<group>"; };
 		7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		7ADFDB30289B1EFE0004FB1C /* ShakeExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeExtensions.swift; sourceTree = "<group>"; };
+		7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakePhotoPopView.swift; sourceTree = "<group>"; };
 		7AE31CBE262A9A94001EC5A3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7AE3E9022838409A00567E2D /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		7AED44FA2647310700944708 /* BestFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BestFriends.entitlements; sourceTree = "<group>"; };
@@ -493,6 +497,7 @@
 				7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */,
 				7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */,
 				7AD1044F265AB93F007627FD /* UIWindowExtension.swift */,
+				7ADFDB30289B1EFE0004FB1C /* ShakeExtensions.swift */,
 				7AD10451265AB948007627FD /* UIDeviceExtension.swift */,
 				7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */,
 				7ACB385228208D38009559AF /* ImagePicker.swift */,
@@ -671,6 +676,7 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
+				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				CF65041B2893CDFF0092EEB9 /* IntuitiveView.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
@@ -1481,6 +1487,7 @@
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
 				CFA1225D285975FF00E22E84 /* Apologies.swift in Sources */,
+				7ADFDB31289B1EFE0004FB1C /* ShakeExtensions.swift in Sources */,
 				7AA07F5F285D0DD400E9C5A4 /* UserModel.swift in Sources */,
 				CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
@@ -1514,6 +1521,7 @@
 				CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */,
 				CF09118A2848875C00CB0AF0 /* PhotoPopVideo.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
+				7ADFDB33289B1FA60004FB1C /* ShakePhotoPopView.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
 				CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */,
 				CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */,
@@ -1695,7 +1703,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1725,7 +1733,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

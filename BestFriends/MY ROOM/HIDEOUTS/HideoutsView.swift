@@ -98,7 +98,7 @@ struct HideoutsView: View {
                       .frame(height: 65)
                
                
-              Text("Safe \nand \nSound")
+              Text("My Room")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.medium)
