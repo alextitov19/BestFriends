@@ -114,13 +114,13 @@ struct PlanetActionsView: View {
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("with 5 Closest")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
+//                                Text("with 5 Closest")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 12, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
                                 
-                                Text("Friends on")
+                                Text("on")
                                     .foregroundColor(.white)
                                     .font(.system(size: 12, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -197,7 +197,7 @@ struct PlanetActionsView: View {
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
-                                Text("Strengthing")
+                                Text("Fixing")
                                      .foregroundColor(.white)
                                      .font(.system(size: 12, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -294,20 +294,20 @@ struct PlanetActionsView: View {
                             
                             VStack {
    
-                                Text("Share your")
+                                Text("Share Mood")
                                     .foregroundColor(.white)
                                     .font(.system(size: 12, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("Mood with")
+                                Text("with")
                                     .foregroundColor(.white)
                                     .font(.system(size: 12, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
                                 
-                                Text("most Suportive")
+                                Text("Suportive")
                                     .foregroundColor(.white)
                                     .font(.system(size: 12, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
