@@ -247,6 +247,8 @@ struct HorizonGoalChoices: View {
                         })//NavigationLink
                     }//VStack
                 }//HStack
+                
+                Spacer()
             }//VStack
         }//ZStack
     }//body
