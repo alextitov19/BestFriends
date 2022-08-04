@@ -13,6 +13,9 @@ struct HomeView: View {
     
 //    let user: User
 //    let friends: [User]
+//    
+//    let user: User
+//    let atmosphere: Atmosphere
 
     @State private var homeData: HomeData?
     @State private var groups: [Group] = []
