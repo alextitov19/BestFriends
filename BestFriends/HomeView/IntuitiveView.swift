@@ -48,7 +48,15 @@ struct IntuitiveView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.purple)
                 
-                Text("(a subscription for parents)")
+                Text("(a subscription for parents")
+                    .font(.system(size: 25))
+                    .italic()
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                
+                
+                Text("to help support their teens)")
                     .font(.system(size: 25))
                     .italic()
                     .fontWeight(.thin)
@@ -155,7 +163,7 @@ struct IntuitiveView: View {
 //                    })
 //
                 NavigationLink(
-                    destination: ContentView(),
+                    destination: Subscriptions(),
                     label: {
                         Text("BestFriends PURPLE")
                             .fontWeight(.thin)

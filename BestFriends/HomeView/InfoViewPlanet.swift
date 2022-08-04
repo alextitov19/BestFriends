@@ -77,6 +77,14 @@ struct InfoViewPlanet: View {
                     .foregroundColor(ColorManager.grey1)
 //                    .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
+                
+                Text("from dropdown menu")
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
+                    .foregroundColor(ColorManager.grey1)
+//                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+                
                 Text("-tap planet to 'hide' dropdown")
                     .font(.system(size: 15))
                     .fontWeight(.light)
@@ -172,53 +180,22 @@ struct InfoViewPlanet: View {
               
                 Spacer()
                 .frame(height: 40)
-                
-//                Button(action: {
-//                    sessionManager.EmptyView()
-//                },
-//                    label: {
-//                        Text("Settings")
-//                            .fontWeight(.thin)
-//                            .frame(width: 200, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 30))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-//                
-                Button(action: {
-                    sessionManager.showLogin()
-                },
-                    label: {
-                        Text("Home / Chat")
-                            .fontWeight(.thin)
-                            .frame(width: 200, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                
-//
-//                Spacer()
-//                .frame(height: 15)
-//
-//                NavigationLink(
-//                    destination: BuiltByTeens2(),
-//                    label: {
-//                        Text("Team / Demo / Prototypes")
-//                            .fontWeight(.thin)
-//                            .frame(width: 300, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 25))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                    })
-              
+                VStack {
+                        NavigationLink(
+                            destination: SettingsView(user: user),
+                            label: {
+                                Text("SETTINGS PAGE")
+                                    .fontWeight(.thin)
+                                    .frame(width: 275, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                          
+                            
+                            })
+            
 
                 
                 Spacer()
@@ -236,4 +213,5 @@ struct InfoViewPlanet: View {
 
 
 
+}
 }
