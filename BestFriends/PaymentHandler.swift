@@ -30,7 +30,7 @@ class PaymentHandler: NSObject {
     }
     
     // Define the shipping methods (this app only offers delivery) and the delivery dates
-    func shippingMethodCalculator() -> [PKShippingMethod] {
+    /*func shippingMethodCalculator() -> [PKShippingMethod] {
         
         let today = Date()
         let calendar = Calendar.current
@@ -50,7 +50,7 @@ class PaymentHandler: NSObject {
             return [shippingDelivery]
         }
         return []
-    }
+    }*/
     
     func startPayment(products: [subscription], total: Int, completion: @escaping PaymentCompletionHandler) {
         completionHandler = completion
@@ -76,9 +76,9 @@ class PaymentHandler: NSObject {
         paymentRequest.countryCode = "US"
         paymentRequest.currencyCode = "USD"
         paymentRequest.supportedNetworks = PaymentHandler.supportedNetworks // Types of cards supported
-        paymentRequest.shippingType = .delivery
-        paymentRequest.shippingMethods = shippingMethodCalculator()
-        paymentRequest.requiredShippingContactFields = [.name, .postalAddress]
+        //paymentRequest.shippingType = .delivery
+        //paymentRequest.shippingMethods = shippingMethodCalculator()
+        //paymentRequest.requiredShippingContactFields = [.name, .postalAddress]
         
         // Display the payment request in a sheet presentation
         paymentController = PKPaymentAuthorizationController(paymentRequest: paymentRequest)
