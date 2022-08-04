@@ -345,7 +345,7 @@ struct PlanetActionsView: View {
                                 
 
                               
-                                Text("Live")
+                                Text("Building")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 12, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -357,7 +357,7 @@ struct PlanetActionsView: View {
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
-                                Text("with BFFs")
+                                Text("Together")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 12, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
