@@ -92,7 +92,7 @@ struct AtmosphereInfo: View {
                 Spacer()
                 .frame(height: 20)
                 
-                Text("That your mood Changed")
+                Text("Your mood has Changed")
                     .font(.system(size: 30))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)

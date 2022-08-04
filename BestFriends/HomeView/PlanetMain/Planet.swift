@@ -222,7 +222,7 @@ struct PlanetActionsView: View {
 //
 //                    MARK: First setup
                     
-                    NavigationLink(destination: IntuitiveView(user: user),
+                    NavigationLink(destination: InfoViewPlanet(user: user),
                                    label: {
                         ZStack {
                             Circle()
@@ -257,23 +257,31 @@ struct PlanetActionsView: View {
                     
                     
                     
-                      NavigationLink(destination: SettingsView(user: user),
+                      NavigationLink(destination: IntuitiveView(user: user),
                                      label: {
                           ZStack {
-//                              Circle()
-//                                  .frame(width: 85, height: 85)
-//                                  .foregroundColor(ColorManager.orange2)
-//                                  .shadow(color: .black, radius: 2, x: 0, y: 2)
-//                                 .opacity(0.15)
+                              Circle()
+                                  .frame(width: 90, height: 90)
+                                  .foregroundColor(ColorManager.orange2)
+                                  .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                 .opacity(0.15)
 
                               VStack {
 
 
-                                 Text("Settings")
+                                 Text("PURPLE")
                                       .foregroundColor(.white)
                                       .font(.system(size: 17, weight: .bold))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                       .opacity(0.50)
+                                  
+//                                  Text("Parents")
+//                                       .foregroundColor(.white)
+//                                       .font(.system(size: 17, weight: .bold))
+//                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                       .opacity(0.50)
+                                  
+                                  
                               }
                           }
                          
