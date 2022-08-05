@@ -11,8 +11,14 @@ import SwiftUI
 struct BestFriendsApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
+    
     @ObservedObject var sessionManager = SessionManager()
+    @StateObject var storeManager = StoreManager()
+    
+    let productIDs = [
+            "com.socialtechlabs.bestfriends.iap.monthly",
+            "com.socialtechlabs.bestfriends.iap.yearly"
+        ]
     
     var body: some Scene {
         WindowGroup {
@@ -32,10 +38,10 @@ struct BestFriendsApp: App {
             case .masterFriendVault:
                 MasterFriendVault()
                     .environmentObject(sessionManager)
-
+                
             case .fightTextUserIdeas:
                 FightTextUserIdeas()
-//                    .environmentObject(sessionManager)
+                
             case .parentsFighting:
                 ParentsFighting()
                     .environmentObject(sessionManager)
@@ -44,18 +50,13 @@ struct BestFriendsApp: App {
                     .environmentObject(sessionManager)
             case .infoView(let user, let group):
                 InfoView(group: group, user: user).environmentObject(sessionManager)
-//          
-//            case .infoViewPlanet:
-//                InfoViewPlanet()
-//                    .environmentObject(sessionManager)
-//                
-            
-//            case .bestFriendMessages(let user, let atmosphere, let friends, let friendAtmosphere):
-//                BestFriendMessages(user: user, atmosphere: atmosphere, friends: [user], friendAtmospheres: [atmosphere])
-//                    .environmentObject(sessionManager)
-//                
                 
-                
+            case .store:
+                PurpleSubscriptionView(storeManager: storeManager)
+                    .environmentObject(sessionManager)
+                    .onAppear(perform: {
+                                storeManager.getProducts(productIDs: productIDs)
+                            })
                 
             }
         }

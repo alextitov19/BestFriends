@@ -386,30 +386,30 @@ struct HomeView: View {
                     //                        AtmosphereMain2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends)
                     //
                 }
-                
-                VStack {
-                    Spacer()
-                        .frame(height: 100)
-
-                    HStack {
-                        Spacer()
-                        
-                        if homeData != nil {
-                            NavigationLink(destination: SettingsView(user: homeData!.user), label: {
-                                Image(systemName: "gear")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .scaledToFit()
-                                    .foregroundColor(.white)
-                            })
-                        }
-                        
-                    }
-                    .padding(40)
-                    
-                    Spacer()
-                }
-                .ignoresSafeArea()
+//                
+//                VStack {
+//                    Spacer()
+//                        .frame(height: 100)
+//
+//                    HStack {
+//                        Spacer()
+//                        
+//                        if homeData != nil {
+//                            NavigationLink(destination: SettingsView(user: homeData!.user), label: {
+//                                Image(systemName: "gear")
+//                                    .resizable()
+//                                    .frame(width: 30, height: 30)
+//                                    .scaledToFit()
+//                                    .foregroundColor(.white)
+//                            })
+//                        }
+//                        
+//                    }
+//                    .padding(40)
+//                    
+//                    Spacer()
+//                }
+//                .ignoresSafeArea()
             }
         }.navigationViewStyle(StackNavigationViewStyle())
     }

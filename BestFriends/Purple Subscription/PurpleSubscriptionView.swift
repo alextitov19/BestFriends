@@ -9,62 +9,39 @@ import SwiftUI
 
 struct PurpleSubscriptionView: View {
     
+    @StateObject var storeManager: StoreManager
+
+    
     var body: some View {
         NavigationView {
-            List {
+            List(storeManager.myProducts, id: \.self) { product in
                 HStack {
                     VStack(alignment: .leading) {
-                        Text("PURPLE Monthly")
+                        Text(product.localizedTitle)
                             .font(.headline)
-                        Text("Try our plan for one month")
+                        Text(product.localizedDescription)
                             .font(.caption2)
                     }
-                    
                     Spacer()
-                    
-                    if UserDefaults.standard.bool(forKey: "*ID of IAP Product*") {
-                        Text("Purchased")
+                    if UserDefaults.standard.bool(forKey: product.productIdentifier) {
+                        Text ("Purchased")
                             .foregroundColor(.green)
                     } else {
                         Button(action: {
-                            //Purchase particular IAO product
+                            //Purchase particular ILO product
                         }) {
-                            Text("Buy for 0.99 $")
+                            Text("Buy for \(product.price) $")
                         }
-                        .foregroundColor(.blue)
+                            .foregroundColor(.blue)
                     }
                 }
-                
-                HStack {
-                    VStack(alignment: .leading) {
-                        Text("PURPLE Yearly")
-                            .font(.headline)
-                        Text("Get our plan for the year at a discount")
-                            .font(.caption2)
-                    }
-                    
-                    Spacer()
-                    
-                    if UserDefaults.standard.bool(forKey: "*ID of IAP Product*") {
-                        Text("Purchased")
-                            .foregroundColor(.green)
-                    } else {
-                        Button(action: {
-                            //Purchase particular IAO product
-                        }) {
-                            Text("Buy for 9.99 $")
-                        }
-                        .foregroundColor(.blue)
-                    }
-                }
-            }
-            .navigationTitle("PURPLE")
+            }            .navigationTitle("PURPLE Subscription")
             .toolbar(content: {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
                         //Restore products already purchased
                     }) {
-                        Text("Restore Purchases ")
+                        Text("Restore Purchases")
                     }
                 }
             })

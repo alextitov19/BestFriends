@@ -19,6 +19,8 @@ enum AppState {
     case parentsFighting
     case fightWithFriend
     case infoView(user:User,group: Group)
+    
+    case store
 }
 
 final class SessionManager: ObservableObject {
@@ -69,6 +71,10 @@ final class SessionManager: ObservableObject {
     
     func infoView(user: User ,group: Group) {
         appState = .infoView(user: user, group: group)
+    }
+    
+    func showStore() {
+        appState = .store
     }
     
 //    func infoViewPlanet(user: User, group: Group) {
