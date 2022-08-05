@@ -263,7 +263,7 @@ struct PlanetActionsView: View {
                     
                     
                     
-                      NavigationLink(destination: IntuitiveView(user: user),
+                      NavigationLink(destination: IntuitiveView(),
                                      label: {
                           ZStack {
                               Circle()

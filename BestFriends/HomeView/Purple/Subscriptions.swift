@@ -104,7 +104,7 @@ struct Subscriptions: View {
                 
                 
                 NavigationLink(
-                    destination: ContentView(),
+                    destination: PurpleSubscriptionView(),
                     label: {
                         Text("BestFrends PURPLE")
                             .fontWeight(.thin)

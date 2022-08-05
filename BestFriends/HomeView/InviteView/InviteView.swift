@@ -43,7 +43,7 @@ struct InviteView: View {
           
                 
                 NavigationLink(
-                    destination: IntuitiveView(user: user),
+                    destination: EmptyView(),
                     label: {
                         Text("Up to 10 with PURPLE")
                             .fontWeight(.thin)
