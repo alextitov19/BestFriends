@@ -176,19 +176,19 @@ struct IntuitiveView: View {
                   
                     })
                 
-                Text("Is your teen's happiness")
-                    .font(.system(size: 25))
+                Text("We think your teen's happiness")
+                    .font(.system(size: 23))
                     .italic()
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.white)
                 
-                Text("worth $10 a year?")
-                    .font(.system(size: 25))
+                Text("is worth $10 a year!")
+                    .font(.system(size: 30))
                     .italic()
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(Color.white)
                 
                 Spacer()
                 .frame(height: 75)

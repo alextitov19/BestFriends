@@ -679,7 +679,6 @@
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
-				CF65041B2893CDFF0092EEB9 /* IntuitiveView.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
@@ -725,6 +724,7 @@
 		AD60ADFF2888C8730073CEDB /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				CF65041B2893CDFF0092EEB9 /* IntuitiveView.swift */,
 				AD60AE002888C8C00073CEDB /* subscriptionCard.swift */,
 				AD60ADF62888B0470073CEDB /* cartButton.swift */,
 				AD60AE052888D7220073CEDB /* ProductRow.swift */,
