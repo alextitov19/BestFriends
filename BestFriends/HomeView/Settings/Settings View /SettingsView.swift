@@ -308,9 +308,20 @@ struct SettingsView: View {
                                       .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                               })
                           
+                        Spacer()
+                            .frame(height: 20)
+
+                        
+                        Text("Disclaimer: The BestFriends app does not claim to offer clinical or professional psychological advice to the users. BestFriends strives to make friends better friends and help users during difficult times connect with friends and celebrate good times. If users are experiencing depression we recommend you consult a professional.")
+                            .font(.system(size: 10))
+                            .foregroundColor(.white)
+                        
+                            .padding()
+                        
+                    
 
                         Spacer()
-                            .frame(height: 150)
+                            .frame(height: 100)
      
             }
         }
