@@ -263,7 +263,7 @@ struct PlanetActionsView: View {
                     
                     
                     
-                      NavigationLink(destination: IntuitiveView(),
+                      NavigationLink(destination: Subscriptions(),
                                      label: {
                           ZStack {
                               Circle()
@@ -274,7 +274,7 @@ struct PlanetActionsView: View {
 
                               VStack {
                                   
-                                  Text("Go")
+                                  Text("Ad Free")
                                        .foregroundColor(.green)
                                        .font(.system(size: 23, weight: .bold))
                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -286,13 +286,7 @@ struct PlanetActionsView: View {
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                       .opacity(0.50)
                                   
-//                                  Text("Parents")
-//                                       .foregroundColor(.white)
-//                                       .font(.system(size: 17, weight: .bold))
-//                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                       .opacity(0.50)
-                                  
-                                  
+  
                               }
                           }
                          

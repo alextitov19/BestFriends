@@ -220,18 +220,11 @@ struct HomeView: View {
                         })
                         
                     }
-                    
-                    //                    Text("received push notification to")
+             
                     
                     Spacer()
                         .frame(height: 10)
-                    
-                    //                    Text("Received Push Notification about:")
-                    //                        .font(.system(size: 15))
-                    //                        .foregroundColor(.white)
-                    //                        .fontWeight(.ultraLight)
-                    //
-                    //                    MARK: Connect to Chat Now page
+               
                     
                     if selectedPlanet != nil {
                         if homeData!.groups.count > 0 {
@@ -246,19 +239,8 @@ struct HomeView: View {
                                     .opacity(0.4)
                             })
                         }
-                        Spacer().frame(height: 10)
-                        //
-                        //                        NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
-                        //                                       label: {
-                        //                            Text("Changed Atmosphere")
-                        //                                .fontWeight(.light)
-                        //                                .frame(width: 210, height: 27)
-                        //                                .foregroundColor(.white)
-                        //                                .background(ColorManager.purple3)
-                        //                                .cornerRadius(15)
-                        //                                .opacity(0.4)
-                        //                                .onAppear(perform: {print("Selected: ", selectedPlanet!.user)})
-                        //                        })
+                        
+           
                         
                         Spacer().frame(height: 10)
                         
@@ -355,18 +337,18 @@ struct HomeView: View {
                         }
                         Spacer().frame(height:10)
                         
-                        //
-                        //                        NavigationLink(destination: EmptyView(),
-                        //                                       label: {
-                        //                            Text("Invited to Horizons")
-                        //                                .fontWeight(.light)
-                        //                                .frame(width: 210, height: 30)
-                        //                                .foregroundColor(.white)
-                        //                                .background(ColorManager.purple3)
-                        //                                .cornerRadius(15)
-                        //                                .opacity(0.4)
-                        //                        })
-                        //
+                        
+                        NavigationLink(destination: EmptyView(),
+                                       label: {
+                            Text("BestFriends World")
+                                .fontWeight(.light)
+                                .frame(width: 210, height: 30)
+                                .foregroundColor(.white)
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .opacity(0.4)
+                        })
+                    
                         
                         Spacer()
                             .frame(height: 60)
