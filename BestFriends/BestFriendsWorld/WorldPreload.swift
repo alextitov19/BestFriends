@@ -36,13 +36,13 @@ struct WorldPreload: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("and your favorite")
+                Text("and your BestFriends")
                     .font(.system(size: 25))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("images popup")
+                Text("WORLD image pops up")
                     .font(.system(size: 25))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
@@ -51,13 +51,13 @@ struct WorldPreload: View {
                 Spacer()
                     .frame(height:20)
                 
-                Text("bringing a Smile")
+                Text("You have 5 minutes ")
                     .font(.system(size: 25))
                     .foregroundColor(.blue)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("to your face")
+                Text("to upload")
                     .font(.system(size: 25))
                     .foregroundColor(.blue)
                     .fontWeight(.ultraLight)

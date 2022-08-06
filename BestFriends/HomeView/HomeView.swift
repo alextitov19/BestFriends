@@ -324,7 +324,7 @@ struct HomeView: View {
                             })
                             
                             
-                            NavigationLink(destination: EmptyView(),
+                            NavigationLink(destination: HorizonHomeView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
                                            label: {
                                 Text("Horizons")
                                     .fontWeight(.light)
