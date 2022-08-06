@@ -164,6 +164,8 @@
 		CF65041E28964B410092EEB9 /* EverybodyOk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65041D28964B410092EEB9 /* EverybodyOk.swift */; };
 		CF6504202897EE950092EEB9 /* Atmosphere3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF65041F2897EE950092EEB9 /* Atmosphere3.mp4 */; };
 		CF650422289EF8820092EEB9 /* PurpleNoAdInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650421289EF8820092EEB9 /* PurpleNoAdInfoView.swift */; };
+		CF650427289F11980092EEB9 /* WorldPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650426289F11980092EEB9 /* WorldPreload.swift */; };
+		CF650429289F124D0092EEB9 /* WorldUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650428289F124D0092EEB9 /* WorldUpload.swift */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -384,6 +386,8 @@
 		CF65041D28964B410092EEB9 /* EverybodyOk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverybodyOk.swift; sourceTree = "<group>"; };
 		CF65041F2897EE950092EEB9 /* Atmosphere3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atmosphere3.mp4; sourceTree = "<group>"; };
 		CF650421289EF8820092EEB9 /* PurpleNoAdInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleNoAdInfoView.swift; sourceTree = "<group>"; };
+		CF650426289F11980092EEB9 /* WorldPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPreload.swift; sourceTree = "<group>"; };
+		CF650428289F124D0092EEB9 /* WorldUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldUpload.swift; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
@@ -558,6 +562,7 @@
 				7AB52167289D9418005A49FA /* Purple Subscription */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
+				CF650423289F11490092EEB9 /* BestFriendsWorld */,
 				CF3B65A9280071580003A714 /* Settings */,
 				CF6504102892F1340092EEB9 /* Beta Tester */,
 				CFD0ABD2285C256C0032CA3D /* Built by Teens */,
@@ -903,6 +908,15 @@
 				CF6504112892F1730092EEB9 /* BetaTesters1.swift */,
 			);
 			path = "Beta Tester";
+			sourceTree = "<group>";
+		};
+		CF650423289F11490092EEB9 /* BestFriendsWorld */ = {
+			isa = PBXGroup;
+			children = (
+				CF650426289F11980092EEB9 /* WorldPreload.swift */,
+				CF650428289F124D0092EEB9 /* WorldUpload.swift */,
+			);
+			path = BestFriendsWorld;
 			sourceTree = "<group>";
 		};
 		CF725E2628516E180096342F /* Tokens */ = {
@@ -1482,6 +1496,7 @@
 				CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */,
 				CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */,
 				CF381A5428283FA000B3719E /* Step1FG_AcceptedSolutions.swift in Sources */,
+				CF650427289F11980092EEB9 /* WorldPreload.swift in Sources */,
 				CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */,
 				CFAB5413281D145100BBF502 /* Step2_FightLandingView.swift in Sources */,
 				7A0856AA27F3DCC300E8282B /* SessionManager.swift in Sources */,
@@ -1509,6 +1524,7 @@
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
 				7A1C048527F4BEB30002B173 /* SignUpView.swift in Sources */,
 				CF725E2828516E4F0096342F /* Tokens.swift in Sources */,
+				CF650429289F124D0092EEB9 /* WorldUpload.swift in Sources */,
 				7A8A17C128414A390088DC04 /* SmileNoteModels.swift in Sources */,
 				CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */,
 				7AE3E9032838409B00567E2D /* ArrayExt.swift in Sources */,

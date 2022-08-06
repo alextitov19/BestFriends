@@ -338,7 +338,7 @@ struct HomeView: View {
                         Spacer().frame(height:10)
                         
                         
-                        NavigationLink(destination: EmptyView(),
+                        NavigationLink(destination: PhotoPopPreload(user: homeData!.user, friends: homeData!.friends),
                                        label: {
                             Text("BestFriends World")
                                 .fontWeight(.light)

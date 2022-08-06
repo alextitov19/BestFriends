@@ -113,56 +113,9 @@ struct MyRoomPreload: View {
 
                 VStack {
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 150)
                     
-//                    Text("You let your friends know how \nyou feel, now let them help you")
-//                        .font(.system(size: 20))
-//                        .foregroundColor(.blue)
-//                        .fontWeight(.light)
-//                        .foregroundColor(Color.white)
-                    Spacer()
-                        .frame(height: 15)
-                    
-//                    Text("- re-read nice messages from \nFriends you long-tapped in Chat")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .foregroundColor(ColorManager.grey2)
-//                        .fontWeight(.light)
-//                        .foregroundColor(Color.white)
-//
-//                    Spacer()
-//                        .frame(height: 10)
-//
-//                    Text("- listen to a song a friend sent \nto match your mood")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .foregroundColor(ColorManager.grey2)
-//                        .fontWeight(.light)
-//                        .foregroundColor(Color.white)
-//
-//                    Spacer()
-//                        .frame(height: 10)
-//
-//                    Text("- Shake you phone and see favorite \nimages your friends sent you")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .foregroundColor(ColorManager.grey2)
-//                        .fontWeight(.light)
-//                        .foregroundColor(Color.white)
-//
-                
-                    
-                   
-                     
-                        Spacer()
-                            .frame(height: 70)
-                        
-                        
-                        
-                    
-                    
-                    
-                    
+            
                 }
             }
             
