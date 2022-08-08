@@ -91,7 +91,7 @@ struct WorldPreload: View {
                  
                     
                     NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
-                        Text("Update your Aura")
+                        Text("My New Aura")
                             .fontWeight(.thin)
                             .frame(width: 270, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
