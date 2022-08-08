@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct PurpleSubscriptionView: View {
     
     @StateObject var storeManager: StoreManager
-    
     
     var body: some View {
         NavigationView {
@@ -28,24 +28,23 @@ struct PurpleSubscriptionView: View {
                             .foregroundColor(.green)
                     } else {
                         Button(action: {
-                            //Purchase particular ILO product
+                            storeManager.purchaseProduct(product: product)
                         }) {
                             Text("Buy for \(product.price) $")
                         }
                         .foregroundColor(.blue)
                     }
                 }
+            }            .navigationTitle("PURPLE Subscription")
                 .toolbar(content: {
                     ToolbarItem(placement: .navigationBarTrailing) {
                         Button(action: {
-                            storeManager.purchaseProduct(product: product)
+                            storeManager.restoreProducts()
                         }) {
-                            Text("Buy for \(product.price) $")
+                            Text ("Restore Purchases ")
                         }
                     }
                 })
-            }
-            .navigationTitle("PURPLE Subscription")
         }
     }
 }

@@ -17,9 +17,9 @@ struct BestFriendsApp: App {
     @StateObject var storeManager = StoreManager()
     
     let productIDs = [
-            "com.socialtechlabs.bestfriends.iap.monthly",
-            "com.socialtechlabs.bestfriends.iap.yearly"
-        ]
+        "com.socialtechlabs.bestfriends.iap.monthly",
+        "com.socialtechlabs.bestfriends.iap.yearly"
+    ]
     
     var body: some Scene {
         WindowGroup {
@@ -57,8 +57,8 @@ struct BestFriendsApp: App {
                     .environmentObject(sessionManager)
                     .onAppear(perform: {
                         SKPaymentQueue.default().add(storeManager)
-                                storeManager.getProducts(productIDs: productIDs)
-                            })
+                        storeManager.getProducts(productIDs: productIDs)
+                    })
                 
             }
         }
