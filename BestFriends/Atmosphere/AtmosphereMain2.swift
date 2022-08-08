@@ -37,39 +37,28 @@ struct AtmosphereMain2: View {
             VStack {
                 
                 
-                HStack {
+//                HStack {
                     
-                    Text("'Aura'")
+                    Text("'My Aura'")
                         .font(.system(size: 35))
                         .fontWeight(.medium)
                         .foregroundColor(Color.white)
                     
-                    Text("distinctive 'Atmosphere' \nthat surrounds you")
+                    Text("distinctive 'Atmosphere' \nsurrounding each of us")
                         .font(.system(size: 20))
                         .foregroundColor(ColorManager.grey1)
                       
-//                        .padding(.horizontal)
-
-                }
-               
-                
                 HStack {
-//                    Text("See friend's atmosphere on homepage")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .fontWeight(.light)
-//                        .foregroundColor(ColorManager.grey1)
-//
-                 
-//                        .padding(.horizontal)
-//                    Spacer()
+
                 }
                 .padding(.horizontal)
                 
              
                 HStack {
                     VStack {
-                       
+                        
+                   
+                        
                         Button(action: {
                             mood = 0
                         }) {

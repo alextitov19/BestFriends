@@ -165,7 +165,6 @@
 		CF6504202897EE950092EEB9 /* Atmosphere3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF65041F2897EE950092EEB9 /* Atmosphere3.mp4 */; };
 		CF650422289EF8820092EEB9 /* PurpleNoAdInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650421289EF8820092EEB9 /* PurpleNoAdInfoView.swift */; };
 		CF650427289F11980092EEB9 /* WorldPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650426289F11980092EEB9 /* WorldPreload.swift */; };
-		CF650429289F124D0092EEB9 /* WorldUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650428289F124D0092EEB9 /* WorldUpload.swift */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -387,7 +386,6 @@
 		CF65041F2897EE950092EEB9 /* Atmosphere3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atmosphere3.mp4; sourceTree = "<group>"; };
 		CF650421289EF8820092EEB9 /* PurpleNoAdInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleNoAdInfoView.swift; sourceTree = "<group>"; };
 		CF650426289F11980092EEB9 /* WorldPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPreload.swift; sourceTree = "<group>"; };
-		CF650428289F124D0092EEB9 /* WorldUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldUpload.swift; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
@@ -914,7 +912,6 @@
 			isa = PBXGroup;
 			children = (
 				CF650426289F11980092EEB9 /* WorldPreload.swift */,
-				CF650428289F124D0092EEB9 /* WorldUpload.swift */,
 			);
 			path = BestFriendsWorld;
 			sourceTree = "<group>";
@@ -1524,7 +1521,6 @@
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
 				7A1C048527F4BEB30002B173 /* SignUpView.swift in Sources */,
 				CF725E2828516E4F0096342F /* Tokens.swift in Sources */,
-				CF650429289F124D0092EEB9 /* WorldUpload.swift in Sources */,
 				7A8A17C128414A390088DC04 /* SmileNoteModels.swift in Sources */,
 				CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */,
 				7AE3E9032838409B00567E2D /* ArrayExt.swift in Sources */,
@@ -1691,7 +1687,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1721,7 +1717,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
