@@ -20,16 +20,33 @@ struct WorldPreload: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey4
+//            ColorManager.grey3
+//                .ignoresSafeArea()
+//                .onAppear()
+            
+            Image("purpleBackground")
+                .resizable()
                 .ignoresSafeArea()
-                .onAppear()
+                .scaledToFill()
+            
+//            AdPlayerView(name: "Planet6")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+            
+            AdPlayerView(name: "PaperAirplanes")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+            
+//            AdPlayerView(name: "Atmosphere2")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
             
             VStack {
             
                 Text("Join the rest")
                     .font(.system(size: 60))
                     .italic()
-                    .foregroundColor(.blue)
+                    .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
@@ -37,27 +54,32 @@ struct WorldPreload: View {
                 Text("of the World")
                     .font(.system(size: 60))
                     .italic()
-                    .foregroundColor(.blue)
+                    .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height:40)
                 
-                Text("Where FRIENDS")
+                Text("Being BestFriends")
                              .font(.system(size: 30))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(Color.white)
                 Spacer()
                     .frame(height:10)
-                Text("Cheer you in good times,")
+                
+                Text("Cheering each other")
                              .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(Color.white)
-             
-                         Text("support you in bad.")
+                Text("in good times,")
+                             .font(.system(size: 20))
+                             .fontWeight(.thin)
+                             .multilineTextAlignment(.center)
+                             .foregroundColor(Color.white)
+                         Text("supporting in bad.")
                              .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
@@ -84,18 +106,18 @@ struct WorldPreload: View {
                     
                     Spacer()
                         .frame(height: 20)
-                   
-                    Text("Is Everybody")
-                        .font(.system(size: 30))
-                        .foregroundColor(.blue)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                    
-                    Text("Okay?")
-                        .font(.system(size: 30))
-                        .foregroundColor(.blue)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
+//                   
+//                    Text("Is Everybody")
+//                        .font(.system(size: 30))
+//                        .foregroundColor(.blue)
+//                        .fontWeight(.ultraLight)
+//                        .multilineTextAlignment(.center)
+//                    
+//                    Text("Okay?")
+//                        .font(.system(size: 30))
+//                        .foregroundColor(.blue)
+//                        .fontWeight(.ultraLight)
+//                        .multilineTextAlignment(.center)
                     
                     
                         Spacer()

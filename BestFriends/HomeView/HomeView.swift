@@ -314,7 +314,7 @@ struct HomeView: View {
                         
                         HStack {
                             NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("Aura / Mood")
+                                Text("Aura Change")
                                     .fontWeight(.light)
                                     .frame(width: 100, height: 30)
                                     .foregroundColor(.white)
@@ -340,7 +340,7 @@ struct HomeView: View {
                         
                         NavigationLink(destination: WorldPreload(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
                                        label: {
-                            Text("What's Up World")
+                            Text("BestFriends World")
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 30)
                                 .foregroundColor(.white)
