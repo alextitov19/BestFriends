@@ -42,9 +42,25 @@ struct WorldPreload: View {
 //                .blendMode(.screen)
             
             VStack {
-            
+                
+                Text("For the")
+                    .font(.system(size: 30))
+                    .italic()
+                    .foregroundColor(ColorManager.orange2)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("Next 3 Minutes")
+                    .font(.system(size: 55))
+                    
+                    .foregroundColor(ColorManager.orange2)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                Spacer()
+                    .frame(height:20)
+                
                 Text("Join the rest")
-                    .font(.system(size: 60))
+                    .font(.system(size: 40))
                     .italic()
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
@@ -52,51 +68,32 @@ struct WorldPreload: View {
                 
                 
                 Text("of the World")
-                    .font(.system(size: 60))
+                    .font(.system(size: 40))
                     .italic()
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Spacer()
-                    .frame(height:40)
+              
                 
                 Text("Being BestFriends")
                              .font(.system(size: 30))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
-                             .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height:10)
-                
-                Text("Cheering each other")
-                             .font(.system(size: 20))
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(Color.white)
-                Text("in good times,")
-                             .font(.system(size: 20))
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(Color.white)
-                         Text("supporting in bad.")
-                             .font(.system(size: 20))
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(Color.white)
+                             .foregroundColor(ColorManager.purple2)
                 
                 Spacer()
-                    .frame(height:50)
-                
+                    .frame(height:150)
+            
             
                 
                 VStack {
                  
                     
                     NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
-                        Text("For the Next 3 Minutes")
+                        Text("Update your Aura")
                             .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
+                            .frame(width: 270, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)
@@ -106,22 +103,42 @@ struct WorldPreload: View {
                     
                     Spacer()
                         .frame(height: 20)
-//                   
-//                    Text("Is Everybody")
-//                        .font(.system(size: 30))
-//                        .foregroundColor(.blue)
-//                        .fontWeight(.ultraLight)
-//                        .multilineTextAlignment(.center)
-//                    
-//                    Text("Okay?")
-//                        .font(.system(size: 30))
-//                        .foregroundColor(.blue)
-//                        .fontWeight(.ultraLight)
-//                        .multilineTextAlignment(.center)
                     
+                    Button(action: {
+                        sessionManager.showLogin()
+                    },
+                        label: {
+                            Text("Say Something Nice")
+                                .fontWeight(.thin)
+                                .frame(width: 270, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+                    
+                    
+                    VStack {
+                    Text("Cheering each other")
+                                 .font(.system(size: 20))
+                                 .fontWeight(.thin)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(Color.white)
+                    Text("in good times,")
+                                 .font(.system(size: 20))
+                                 .fontWeight(.thin)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(Color.white)
+                             Text("supporting in bad.")
+                                 .font(.system(size: 20))
+                                 .fontWeight(.thin)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(Color.white)
+                   
                     
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 120)
                  
                         
                     }
@@ -134,3 +151,4 @@ struct WorldPreload: View {
     }
     
 
+}
