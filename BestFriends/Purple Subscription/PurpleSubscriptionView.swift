@@ -10,7 +10,7 @@ import SwiftUI
 struct PurpleSubscriptionView: View {
     
     @StateObject var storeManager: StoreManager
-
+    
     
     var body: some View {
         NavigationView {
@@ -32,19 +32,20 @@ struct PurpleSubscriptionView: View {
                         }) {
                             Text("Buy for \(product.price) $")
                         }
-                            .foregroundColor(.blue)
+                        .foregroundColor(.blue)
                     }
                 }
-            }            .navigationTitle("PURPLE Subscription")
-            .toolbar(content: {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        //Restore products already purchased
-                    }) {
-                        Text("Restore Purchases")
+                .toolbar(content: {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button(action: {
+                            storeManager.purchaseProduct(product: product)
+                        }) {
+                            Text("Buy for \(product.price) $")
+                        }
                     }
-                }
-            })
+                })
+            }
+            .navigationTitle("PURPLE Subscription")
         }
     }
 }

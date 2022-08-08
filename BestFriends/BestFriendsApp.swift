@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StoreKit
 
 @main
 struct BestFriendsApp: App {
@@ -55,6 +56,7 @@ struct BestFriendsApp: App {
                 PurpleSubscriptionView(storeManager: storeManager)
                     .environmentObject(sessionManager)
                     .onAppear(perform: {
+                        SKPaymentQueue.default().add(storeManager)
                                 storeManager.getProducts(productIDs: productIDs)
                             })
                 
