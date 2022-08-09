@@ -23,7 +23,7 @@ struct SignUpView: View {
     @State private var ageString = ""
     @State private var gender = ""
     let genders = ["Male", "Female", "Other"]
-    @State private var locationString = ""
+    @State private var locationString = "Not shared"
     
     @State private var errorMessage = ""
     
@@ -52,13 +52,13 @@ struct SignUpView: View {
                     .padding(30)
                 
                 VStack {
-                    MainTextField(text: $firstname, placeholder: "First Name")
-                        .padding(.horizontal, 40)
-                        .padding(.vertical, 15)
-                    
-                    MainTextField(text: $lastname, placeholder: "Last Name")
-                        .padding(.horizontal, 40)
-                        .padding(.vertical, 15)
+                    HStack {
+                        MainTextField(text: $firstname, placeholder: "First Name")
+                        
+                        MainTextField(text: $lastname, placeholder: "Last Name")
+                    }
+                    .padding(.horizontal, 40)
+                    .padding(.vertical, 15)
                     
                     MainTextField(text: $email, placeholder: "Email")
                         .padding(.horizontal, 40)
@@ -115,12 +115,6 @@ struct SignUpView: View {
                         }
                         .frame(height: 40)
                         .cornerRadius(10)
-                        
-                        if locationManager.location == nil {
-                            Text("Tap to share location")
-                                .font(.system(size: 16))
-                                .foregroundColor(.gray)
-                        }
                     }
                     .padding(.horizontal, 40)
                     .padding(.vertical, 15)
