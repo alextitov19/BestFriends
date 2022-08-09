@@ -29,10 +29,16 @@ struct SignUpUserData: Codable {
     let firstName: String
     let lastName: String
     let credentials: Credentials
+    let age: Int
+    let gender: String
+    let location: String
     enum CodingKeys: String, CodingKey {
         case firstName = "first_name"
         case lastName = "last_name"
         case credentials = "credentials"
+        case age = "age"
+        case gender = "gender"
+        case location = "location"
     }
 }
 

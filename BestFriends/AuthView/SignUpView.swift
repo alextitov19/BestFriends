@@ -19,9 +19,11 @@ struct SignUpView: View {
     @State private var lastname = ""
     @State private var email = ""
     @State private var password = ""
-    @State private var age = ""
+    @State private var age: Int = 0
+    @State private var ageString = ""
     @State private var gender = ""
     let genders = ["Male", "Female", "Other"]
+    @State private var locationString = ""
     
     @State private var errorMessage = ""
     
@@ -67,7 +69,7 @@ struct SignUpView: View {
                         .padding(.vertical, 15)
                     
                     HStack {
-                        MainTextField(text: $age, placeholder: "Age")
+                        MainTextField(text: $ageString, placeholder: "Age")
                             .keyboardType(.decimalPad)
                         
                         
@@ -135,7 +137,7 @@ struct SignUpView: View {
                 
                 Button(action: {
                     if checkFields() {
-                        let data = SignUpUserData(firstName: firstname, lastName: lastname, credentials: Credentials(email: email, password: password))
+                        let data = SignUpUserData(firstName: firstname, lastName: lastname, credentials: Credentials(email: email, password: password), age: age, gender: gender, location: locationString)
                         // Sign up
                         RestApi.instance.signUp(data).then{ response in
                             //   self.removeActivityIndicator(myActivityIndicator)
@@ -181,6 +183,8 @@ struct SignUpView: View {
     
     private func checkFields() -> Bool {
         
+        errorMessage = "Fill out all fields"
+        
         if firstname == "" || lastname == "" {
             return false
         }
@@ -195,10 +199,18 @@ struct SignUpView: View {
             return false
         }
         
+        if let a = Int(ageString) {
+            age = a
+            if age < 12 { return false }
+        } else { return false }
+        
+        if gender.count == 0 {
+            return false
+        }
+        
         if let placemark = locationManager.placemark {
             print("Your location: \(placemark.description)")
-        } else {
-            return false
+            locationString = placemark.description
         }
         
         return true
