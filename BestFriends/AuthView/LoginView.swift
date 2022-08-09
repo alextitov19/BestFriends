@@ -18,8 +18,14 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                ColorManager.purple1
+                
+                ColorManager.grey4
                     .ignoresSafeArea()
+                
+//                ColorManager.purple1
+//                    .ignoresSafeArea()
+                
+                
                 //TODO: Remove the onAppear for production
                     .onAppear {
 //                        sessionManager.login(email: "test1234@gmail.com", password: "secretPass")

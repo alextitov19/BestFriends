@@ -29,8 +29,13 @@ struct SignUpView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple1
+            
+            ColorManager.grey4
                 .ignoresSafeArea()
+            
+            
+//            ColorManager.purple1
+//                .ignoresSafeArea()
             
             ZStack {
                 Circle()
@@ -128,7 +133,7 @@ struct SignUpView: View {
                     
                 }
                 
-                Spacer().frame(height: 15)
+//                Spacer().frame(height: 15)
                 
                 Text(errorMessage)
                     .foregroundColor(ColorManager.red)
