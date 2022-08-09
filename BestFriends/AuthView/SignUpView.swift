@@ -29,8 +29,13 @@ struct SignUpView: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple1
+            
+            ColorManager.grey4
                 .ignoresSafeArea()
+            
+            
+//            ColorManager.purple1
+//                .ignoresSafeArea()
             
             ZStack {
                 Circle()
@@ -46,10 +51,10 @@ struct SignUpView: View {
             
             
             VStack {
-                Text("Welcome to BestFriends")
-                    .font(.custom("MainFont", size: 40).bold())
-                    .foregroundColor(ColorManager.grey3)
-                    .padding(30)
+//                Text("Welcome to BestFriends")
+//                    .font(.custom("MainFont", size: 40).bold())
+//                    .foregroundColor(ColorManager.grey3)
+//                    .padding(30)
                 
                 VStack {
                     HStack {
@@ -122,7 +127,7 @@ struct SignUpView: View {
                     
                 }
                 
-                Spacer().frame(height: 50)
+//                Spacer().frame(height: 15)
                 
                 Text(errorMessage)
                     .foregroundColor(ColorManager.red)
@@ -151,11 +156,14 @@ struct SignUpView: View {
                 
                 // Terms of Service and Privacy Policy footer
                 Text("By signing up, you agree to our")
+                    .foregroundColor(.white)
+                
                 HStack {
                     Link("Terms of Service", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
                         .foregroundColor(ColorManager.purple5)
                     
                     Text("and")
+                        .foregroundColor(.white)
                     
                     Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
                         .foregroundColor(ColorManager.purple5)
@@ -163,7 +171,8 @@ struct SignUpView: View {
                 
                 Text("Login")
                     .underline()
-                    .frame(width: 150, height: 30)
+                    .font(.system(size: 25))
+                    .frame(width: 150, height: 50)
                     .foregroundColor(ColorManager.purple5)
                     .onTapGesture {
                         sessionManager.showLogin()

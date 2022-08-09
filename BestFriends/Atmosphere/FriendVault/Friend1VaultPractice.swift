@@ -111,12 +111,14 @@ struct Friend1VaultPractice: View {
                     .placeholder(when: customMessage.isEmpty) {
                         HStack {
                             Text("Send supportive message in Chat")
-                            .foregroundColor(.white)
+                                .foregroundColor(ColorManager.purple5)
+//                            .foregroundColor(.white)
 //                            .frame(width: 300, height: 100)
 //                          Spacer()
                         }
                     }
-                    .font(.system(size: 18))
+                    .font(.system(size: 15))
+                    .foregroundColor(ColorManager.purple1)
                     .submitLabel(.done)
                     .onReceive(Just(customMessage)) { _ in limitText(65) }
                     .padding()
