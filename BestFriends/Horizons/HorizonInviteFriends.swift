@@ -40,7 +40,7 @@ struct HorizonInviteFriends: View {
                 }//VStack
                 
                 HStack {
-                   
+                    
                     if friends.count > 0 {
                         RectView(user: user, friend: friends[0], color: sharedFriends.contains(friends[0].id) ? ColorManager.purple3 : ColorManager.purple5)
                             .onTapGesture(perform: {
@@ -118,7 +118,7 @@ struct HorizonInviteFriends: View {
                 }//VStack
                 
                 HStack {
-                   
+                    
                     if friends.count > 0 {
                         RectView(user: user, friend: friends[0], color: invitedFriends.contains(friends[0].id) ? ColorManager.purple3 : ColorManager.purple5)
                             .onTapGesture(perform: {
@@ -186,63 +186,63 @@ struct HorizonInviteFriends: View {
                     .frame(height: 50)
                 
                 HStack {
-                
+                    
                     Button(action: {
                         share()
                         colorChangeTap = "SHARE"
                     },
-                       label: {
-                    Text("Share")
-                        .fontWeight(.thin)
-                        .frame(width: 100, height: 35)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 30))
+                           label: {
+                        Text("Share")
+                            .fontWeight(.thin)
+                            .frame(width: 100, height: 35)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
                         
-                        .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
+                            .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
                         
-        //                            .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        //                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })//Button
-        //                    .padding()
+                    //                    .padding()
                 }//HStack
             }//VStack
         }//ZStack
-
-}
-
-private func share() {
-    for i in sharedFriends {
-        RestApi.instance.sendPushNotification(title: "\(user.firstName) has set a new goal!", body: "Support their journey on BestFriends", APNToken: i)
-    }
-    for i in invitedFriends {
-        RestApi.instance.sendPushNotification(title: "\(user.firstName) has made a new goal!", body: "You have been invited to participate in \(user.firstName)'s new goal.", APNToken: i)
-    }
-}
-
-private struct RectView: View {
-    let user: User
-    let friend: User
-    let color: Color
-    
-    var body: some View {
-        Text(friend.firstName + " " + String(friend.lastName.first!))
-            .fontWeight(.bold)
-            .frame(width: 100, height: 30)
-            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-            .font(.system(size: 10))
-            .background(color)
-            .cornerRadius(25)
-            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-    }
-   
         
+    }
     
-}
-
-private func defaultMessageButtonTapped(defaultMessage: String) {
-    self.colorChangeTap = defaultMessage
-}
+    private func share() {
+        for i in sharedFriends {
+            RestApi.instance.sendPushNotification(title: "\(user.firstName) has set a new goal!", body: "Support their journey on BestFriends", APNToken: i)
+        }
+        for i in invitedFriends {
+            RestApi.instance.sendPushNotification(title: "\(user.firstName) has made a new goal!", body: "You have been invited to participate in \(user.firstName)'s new goal.", APNToken: i)
+        }
+    }
+    
+    private struct RectView: View {
+        let user: User
+        let friend: User
+        let color: Color
+        
+        var body: some View {
+            Text(friend.firstName + " " + String(friend.lastName.first!))
+                .fontWeight(.bold)
+                .frame(width: 100, height: 30)
+                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                .font(.system(size: 10))
+                .background(color)
+                .cornerRadius(25)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+        }
+        
+        
+        
+    }
+    
+    private func defaultMessageButtonTapped(defaultMessage: String) {
+        self.colorChangeTap = defaultMessage
+    }
 }
 
 //struct HorizonInviteFriends_Previews: PreviewProvider {

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StoreKit
 
 @main
 struct BestFriendsApp: App {
@@ -16,9 +17,9 @@ struct BestFriendsApp: App {
     @StateObject var storeManager = StoreManager()
     
     let productIDs = [
-            "com.socialtechlabs.bestfriends.iap.monthly",
-            "com.socialtechlabs.bestfriends.iap.yearly"
-        ]
+        "com.socialtechlabs.bestfriends.iap.monthly",
+        "com.socialtechlabs.bestfriends.iap.yearly"
+    ]
     
     var body: some Scene {
         WindowGroup {
@@ -55,8 +56,9 @@ struct BestFriendsApp: App {
                 PurpleSubscriptionView(storeManager: storeManager)
                     .environmentObject(sessionManager)
                     .onAppear(perform: {
-                                storeManager.getProducts(productIDs: productIDs)
-                            })
+                        SKPaymentQueue.default().add(storeManager)
+                        storeManager.getProducts(productIDs: productIDs)
+                    })
                 
             }
         }
