@@ -162,14 +162,14 @@ struct SignUpView: View {
                 
                 // Terms of Service and Privacy Policy footer
                 Text("By signing up, you agree to our")
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
                 
                 HStack {
                     Link("Terms of Service", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
                         .foregroundColor(ColorManager.purple5)
                     
                     Text("and")
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                     
                     Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
                         .foregroundColor(ColorManager.purple5)
@@ -177,7 +177,8 @@ struct SignUpView: View {
                 
                 Text("Login")
                     .underline()
-                    .frame(width: 150, height: 30)
+                    .font(.system(size: 25))
+                    .frame(width: 150, height: 50)
                     .foregroundColor(ColorManager.purple5)
                     .onTapGesture {
                         sessionManager.showLogin()
