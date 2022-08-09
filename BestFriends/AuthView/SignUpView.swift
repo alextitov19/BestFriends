@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import CoreLocation
+import CoreLocationUI
 
 struct SignUpView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    
+    @StateObject var locationManager = LocationManager()
     
     @State private var firstname = ""
     @State private var lastname = ""
@@ -102,6 +106,24 @@ struct SignUpView: View {
                     .padding(.vertical, 15)
                     
                     
+                    
+                    VStack {
+                        LocationButton(.shareCurrentLocation) {
+                            locationManager.requestLocation()
+                        }
+                        .frame(height: 40)
+                        .cornerRadius(10)
+                        
+                        if locationManager.location == nil {
+                            Text("Tap to share location")
+                                .font(.system(size: 16))
+                                .foregroundColor(.gray)
+                        }
+                    }
+                    .padding(.horizontal, 40)
+                    .padding(.vertical, 15)
+                    
+                    
                 }
                 
                 Spacer().frame(height: 50)
@@ -170,6 +192,12 @@ struct SignUpView: View {
         
         if password.count < 4 {
             errorMessage = "Password must be longer than 4 character"
+            return false
+        }
+        
+        if let placemark = locationManager.placemark {
+            print("Your location: \(placemark.description)")
+        } else {
             return false
         }
         

@@ -57,6 +57,7 @@
 		7AB5216D289D97F7005A49FA /* IntuitiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB5216B289D97F7005A49FA /* IntuitiveView.swift */; };
 		7AB5216F289D9BBB005A49FA /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB5216E289D9BBB005A49FA /* StoreKit.framework */; };
 		7AB52171289D9BF1005A49FA /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB52170289D9BF1005A49FA /* StoreManager.swift */; };
+		7AB5217328A1E079005A49FA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB5217228A1E079005A49FA /* LocationManager.swift */; };
 		7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC4C01E27FF4A08000C4140 /* ChatView.swift */; };
 		7AC71DA827F3D803008D191B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC71DA727F3D803008D191B /* Helper.swift */; };
 		7ACACDA82853EAB700D8AB75 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACACDA72853EAB700D8AB75 /* UIAlertControllerExtension.swift */; };
@@ -279,6 +280,7 @@
 		7AB5216B289D97F7005A49FA /* IntuitiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntuitiveView.swift; path = BestFriends/HomeView/Purple/IntuitiveView.swift; sourceTree = SOURCE_ROOT; };
 		7AB5216E289D9BBB005A49FA /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		7AB52170289D9BF1005A49FA /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		7AB5217228A1E079005A49FA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		7AC4C01E27FF4A08000C4140 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		7AC71DA727F3D803008D191B /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7ACACDA72853EAB700D8AB75 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtension.swift; sourceTree = "<group>"; };
@@ -493,6 +495,7 @@
 				7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */,
 				7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */,
 				7A1DBD612659B1BB00EB4B42 /* ViewExtension.swift */,
+				7AB5217228A1E079005A49FA /* LocationManager.swift */,
 				7AD1044F265AB93F007627FD /* UIWindowExtension.swift */,
 				7ADFDB30289B1EFE0004FB1C /* ShakeExtensions.swift */,
 				7AD10451265AB948007627FD /* UIDeviceExtension.swift */,
@@ -1512,6 +1515,7 @@
 				CF65040C28925FE00092EEB9 /* MyRoomDVid.swift in Sources */,
 				7A469E54284D6AC0004AF547 /* TextAlert.swift in Sources */,
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
+				7AB5217328A1E079005A49FA /* LocationManager.swift in Sources */,
 				CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */,
 				CF09118A2848875C00CB0AF0 /* PhotoPopVideo.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
