@@ -15,6 +15,9 @@ struct SignUpView: View {
     @State private var lastname = ""
     @State private var email = ""
     @State private var password = ""
+    @State private var age = ""
+    @State private var gender = ""
+    let genders = ["Male", "Female", "Other"]
     
     @State private var errorMessage = ""
     
@@ -44,8 +47,8 @@ struct SignUpView: View {
                 
                 VStack {
                     MainTextField(text: $firstname, placeholder: "First Name")
-                    .padding(.horizontal, 40)
-                    .padding(.vertical, 15)
+                        .padding(.horizontal, 40)
+                        .padding(.vertical, 15)
                     
                     MainTextField(text: $lastname, placeholder: "Last Name")
                         .padding(.horizontal, 40)
@@ -54,16 +57,49 @@ struct SignUpView: View {
                     MainTextField(text: $email, placeholder: "Email")
                         .padding(.horizontal, 40)
                         .padding(.vertical, 15)
-                                        
+                    
                     MainSecureField(text: $password, placeholder: "Password")
                         .padding(.horizontal, 40)
                         .padding(.vertical, 15)
                     
-//                    Text("(8 characters - 1 Cap")
-//                        .font(.system(size: 15))
-//                        .foregroundColor(.blue)
-//                        .fontWeight(.ultraLight)
-//
+                    HStack {
+                        MainTextField(text: $age, placeholder: "Age")
+                            .keyboardType(.decimalPad)
+                        
+                        
+                        Menu {
+                            Picker(selection: $gender) {
+                                ForEach(genders, id: \.self) { g in
+                                    Text(g)
+                                        .tag(g)
+                                        .font(.largeTitle)
+                                }
+                            } label: {}
+                        } label: {
+                            if gender.count == 0 {
+                                Text("Gender")
+                                    .frame(width: 200)
+                                    .overlay(RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color.gray)
+                                        .frame(height: 40)
+                                    )
+                                    .font(Font.custom("MainFont", size: 20))
+                                    .foregroundColor(.gray)
+                            } else {
+                                Text(gender)
+                                    .frame(width: 200)
+                                    .overlay(RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color.gray)
+                                        .frame(height: 40)
+                                    )
+                                    .font(Font.custom("MainFont", size: 20))
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        
+                    }
+                    .padding(.horizontal, 40)
+                    .padding(.vertical, 15)
                     
                     
                 }
