@@ -46,10 +46,10 @@ struct SignUpView: View {
             
             
             VStack {
-                Text("Welcome to BestFriends")
-                    .font(.custom("MainFont", size: 40).bold())
-                    .foregroundColor(ColorManager.grey3)
-                    .padding(30)
+//                Text("Welcome to BestFriends")
+//                    .font(.custom("MainFont", size: 40).bold())
+//                    .foregroundColor(ColorManager.grey3)
+//                    .padding(30)
                 
                 VStack {
                     MainTextField(text: $firstname, placeholder: "First Name")
@@ -128,7 +128,7 @@ struct SignUpView: View {
                     
                 }
                 
-                Spacer().frame(height: 50)
+                Spacer().frame(height: 15)
                 
                 Text(errorMessage)
                     .foregroundColor(ColorManager.red)
@@ -157,11 +157,14 @@ struct SignUpView: View {
                 
                 // Terms of Service and Privacy Policy footer
                 Text("By signing up, you agree to our")
+                    .foregroundColor(.black)
+                
                 HStack {
                     Link("Terms of Service", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
                         .foregroundColor(ColorManager.purple5)
                     
                     Text("and")
+                        .foregroundColor(.black)
                     
                     Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
                         .foregroundColor(ColorManager.purple5)
