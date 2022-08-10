@@ -46,18 +46,18 @@ struct ChatView: View {
                 // MARK: Header
                 HStack {
                     
-                    Text("<")
-//                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .font(.system(size: 30))
-//                        .fontWeight(.light)
-                       .foregroundColor(.blue)
-                      
-                        .scaledToFill()
-                        .onTapGesture(perform: {
-                            sessionManager.showHome()
-                        })
-                    
+//                    Text("<")
+////                        .resizable()
+//                        .frame(width: 35, height: 35)
+//                        .font(.system(size: 30))
+////                        .fontWeight(.light)
+//                       .foregroundColor(.blue)
+//
+//                        .scaledToFill()
+//                        .onTapGesture(perform: {
+//                            sessionManager.showHome()
+//                        })
+//
                     
                     Image(systemName: "info.circle")
                         .resizable()
@@ -68,14 +68,14 @@ struct ChatView: View {
                             sessionManager.infoView(user: user, group: group)
                         })
                     
-//
-//                    Image("home-alt2")
-//                        .resizable()
-//                        .frame(width: 30, height: 30)
-//                        .scaledToFill()
-//                        .onTapGesture(perform: {
-//                            sessionManager.showHome()
-//                        })
+
+                    Image("home-alt2")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .scaledToFill()
+                        .onTapGesture(perform: {
+                            sessionManager.showHome()
+                        })
                     
                     Text(group.name)
                         .task {
@@ -168,7 +168,8 @@ struct ChatView: View {
                     TextField("", text: $messageBody)
                         .placeholder(when: messageBody.isEmpty) {
                             HStack {
-                                Text("Send a message").foregroundColor(.blue)
+                                Text("Send a message")
+                                    .foregroundColor(ColorManager.purple5)
                                 
                                 Spacer()
                             }

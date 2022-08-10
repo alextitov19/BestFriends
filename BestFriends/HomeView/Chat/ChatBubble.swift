@@ -180,7 +180,7 @@ private struct FriendChatMessage: View {
             HStack {
                 Text(name)
                     .frame(width: 200, alignment: .leading)
-                    .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(ColorManager.purple5)
                 //                    .foregroundColor(.green)
                     .font(.system(size: 16).weight(.thin))
                     .offset(x: 5, y: 5)
@@ -205,7 +205,7 @@ private struct FriendChatMessage: View {
             HStack {
                 Text(timeString)
                     .font(.system(size: 12).weight(.light))
-                    .foregroundColor(ColorManager.purple4)
+                    .foregroundColor(ColorManager.orange5)
                 
                 Spacer()
             }

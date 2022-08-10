@@ -122,7 +122,7 @@ struct SignUpView: View {
                         .cornerRadius(10)
                     }
                     .padding(.horizontal, 40)
-                    .padding(.vertical, 15)
+                    .padding(.vertical, 5)
                     
                     
                 }
@@ -177,7 +177,7 @@ struct SignUpView: View {
                     .onTapGesture {
                         sessionManager.showLogin()
                     }
-                    .padding()
+//                    .padding()
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)

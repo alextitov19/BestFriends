@@ -168,6 +168,7 @@
 		CF650427289F11980092EEB9 /* WorldPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650426289F11980092EEB9 /* WorldPreload.swift */; };
 		CF65042B28A185750092EEB9 /* PaperAirplanes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF65042A28A185750092EEB9 /* PaperAirplanes.mp4 */; };
 		CF65042D28A186210092EEB9 /* Planet6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF65042C28A186200092EEB9 /* Planet6.mp4 */; };
+		CF65043028A438970092EEB9 /* ChatReactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65042F28A438970092EEB9 /* ChatReactions.swift */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
 		CF763F7A285AF03F0010D1A9 /* BeingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F79285AF03F0010D1A9 /* BeingFirst.swift */; };
@@ -392,6 +393,7 @@
 		CF650426289F11980092EEB9 /* WorldPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPreload.swift; sourceTree = "<group>"; };
 		CF65042A28A185750092EEB9 /* PaperAirplanes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PaperAirplanes.mp4; sourceTree = "<group>"; };
 		CF65042C28A186200092EEB9 /* Planet6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet6.mp4; sourceTree = "<group>"; };
+		CF65042F28A438970092EEB9 /* ChatReactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatReactions.swift; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
 		CF763F79285AF03F0010D1A9 /* BeingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeingFirst.swift; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 				7A2C215C28050BCD009362CF /* ChatBubble.swift */,
 				CF09118D284894F400CB0AF0 /* InfoView.swift */,
 				CFD0ABCF285BC58D0032CA3D /* HideChat */,
+				CF65042E28A4386E0092EEB9 /* Chat Reactions */,
 			);
 			name = Chat;
 			path = HomeView/Chat;
@@ -923,6 +926,14 @@
 				CF650426289F11980092EEB9 /* WorldPreload.swift */,
 			);
 			path = BestFriendsWorld;
+			sourceTree = "<group>";
+		};
+		CF65042E28A4386E0092EEB9 /* Chat Reactions */ = {
+			isa = PBXGroup;
+			children = (
+				CF65042F28A438970092EEB9 /* ChatReactions.swift */,
+			);
+			path = "Chat Reactions";
 			sourceTree = "<group>";
 		};
 		CF725E2628516E180096342F /* Tokens */ = {
@@ -1478,6 +1489,7 @@
 				62372A152884D57500CAB75C /* HorizonGoalChoices.swift in Sources */,
 				CFA122602859771600E22E84 /* HurtFeelings.swift in Sources */,
 				CFD12CC7281943CA00AB2539 /* Impetus.swift in Sources */,
+				CF65043028A438970092EEB9 /* ChatReactions.swift in Sources */,
 				7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */,
 				CF4A08E62879481200ADA9DD /* NostalgiaPreload2.swift in Sources */,
 				CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */,
@@ -1699,7 +1711,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1729,7 +1741,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
