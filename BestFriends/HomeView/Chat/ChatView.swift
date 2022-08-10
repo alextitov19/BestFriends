@@ -48,7 +48,7 @@ struct ChatView: View {
                     
                     Text("<")
 //                        .resizable()
-                        .frame(width: 30, height: 30)
+                        .frame(width: 35, height: 35)
                         .font(.system(size: 30))
 //                        .fontWeight(.light)
                        .foregroundColor(.blue)
