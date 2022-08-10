@@ -44,7 +44,7 @@ struct PurpleSubscriptionView: View {
                     Button(action: {
                         sessionManager.showHome()
                     }) {
-                        Text ("Return")
+                        Text ("< Back")
                     }
                 }
                 
