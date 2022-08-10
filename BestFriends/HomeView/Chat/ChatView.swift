@@ -52,12 +52,12 @@ struct ChatView: View {
 //                        .font(.system(size: 30))
 ////                        .fontWeight(.light)
 //                       .foregroundColor(.blue)
-//                      
+//
 //                        .scaledToFill()
 //                        .onTapGesture(perform: {
 //                            sessionManager.showHome()
 //                        })
-//                    
+//
                     
                     Image(systemName: "info.circle")
                         .resizable()
@@ -168,7 +168,8 @@ struct ChatView: View {
                     TextField("", text: $messageBody)
                         .placeholder(when: messageBody.isEmpty) {
                             HStack {
-                                Text("Send a message").foregroundColor(.blue)
+                                Text("Send a message")
+                                    .foregroundColor(ColorManager.purple5)
                                 
                                 Spacer()
                             }
