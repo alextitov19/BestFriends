@@ -205,7 +205,7 @@ private struct FriendChatMessage: View {
             HStack {
                 Text(timeString)
                     .font(.system(size: 12).weight(.light))
-                    .foregroundColor(ColorManager.purple4)
+                    .foregroundColor(ColorManager.orange5)
                 
                 Spacer()
             }
