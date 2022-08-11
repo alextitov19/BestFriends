@@ -51,17 +51,17 @@ struct InboundMessageView: View {
                     
                     // Reaction icons
                     HStack(spacing: 20) {
-                        Image("like")
+                        Image("laughing")
                             .scaleEffect(Double(showHeart))
                         Image("thumbs_up")
                             .scaleEffect(Double(showThumbsUp))
                             .rotationEffect(.degrees(Double(rotateThumb)), anchor: .bottomLeading)
-                        Image("thumbs_down")
+                        Image("heart")
                             .scaleEffect(Double(showThumbsDown))
                             .rotationEffect(.degrees(Double(rotateThumb)), anchor: .topTrailing)
-                        Image("lol")
+                        Image("?")
                             .scaleEffect(Double(showLOLReaction))
-                        Image("wut_reaction")
+                        Image("Celebrating")
                             .scaleEffect(Double(showWutReaction))
                     }
                    
