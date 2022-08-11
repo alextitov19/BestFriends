@@ -878,11 +878,14 @@
 			isa = PBXGroup;
 			children = (
 				CF4A090828860CC300ADA9DD /* clouds2.mp4 */,
-				CF4A090A28860DCC00ADA9DD /* cloudsAd.mp4 */,
 				CF4A08EF287F837900ADA9DD /* nostalgia.mp4 */,
+				CF4A08F1287F84DD00ADA9DD /* MoonChild.mp4 */,
+				CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */,
+				CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */,
+				7A78232926B2419600CA76FC /* bull.mp4 */,
+				CF4A090A28860DCC00ADA9DD /* cloudsAd.mp4 */,
 				CF4A090628860B7000ADA9DD /* slowclouds.mp4 */,
 				CF4A08F52883717000ADA9DD /* SmileVault2.mp4 */,
-				CF4A08F1287F84DD00ADA9DD /* MoonChild.mp4 */,
 				CF4A0904288609D800ADA9DD /* nina1.mp4 */,
 				CF4A08EB287956A100ADA9DD /* sky.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
@@ -897,12 +900,9 @@
 				CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */,
 				CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */,
 				CF2DBCF028552527008616A3 /* storm2.mp4 */,
-				CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */,
 				CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */,
 				CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */,
-				CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */,
 				7A2C2156280509DA009362CF /* cloud.mp4 */,
-				7A78232926B2419600CA76FC /* bull.mp4 */,
 			);
 			path = "Background Videos";
 			sourceTree = "<group>";
@@ -1715,7 +1715,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1745,7 +1745,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

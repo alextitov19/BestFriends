@@ -38,7 +38,7 @@ struct ChatView: View {
         
         ZStack {
        
-            AdPlayerView(name: "clouds2")
+            AdPlayerView(name: "nostalgia")
                 .ignoresSafeArea()
             
             

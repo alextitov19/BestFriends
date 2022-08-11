@@ -90,8 +90,8 @@ struct SettingsView: View {
                 
                 Divider()
                 
-                Spacer()
-                    .frame(height: 20)
+//                Spacer()
+//                    .frame(height: 20)
                 
                 NavigationLink(
                     destination: CustomizeMyPlanetView(user: user, atmosphere: atmosphere),
