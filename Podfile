@@ -8,6 +8,6 @@ target 'BestFriends' do
 
   # Pods for BestFriends
   pod 'PromisesSwift'
-
+  pod 'Google-Mobile-Ads-SDK'
 
 end

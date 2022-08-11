@@ -62,77 +62,57 @@ struct Step7_TimeToTalk: View {
                             .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
-                        Spacer ()
-                            .frame(height: 20)
+                      
                            
                     }
                 }
-              
-                
-                Text("You got this, ok!")
-                    .font(.system(size: 40))
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.black)
-                
-               Spacer()
-                   .frame(height: 15)
-            
-                VStack {
-                    Link(destination: URL(string: "https://socialtechlabs.com/user-text-message-suggestions/")!) {
-                        
-                        Text("Set time to MEET")
-                            .fontWeight(.thin)
-                            .frame(width: 225, height: 50)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 27))
-                            .background(ColorManager.pmbc_green)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    }
-                    
-                    
+            VStack {
+            Text("When you're Ready")
+                .font(.system(size: 30))
+                .fontWeight(.thin)
+                .foregroundColor(Color.black)
+           
+            Text("set a time to meet")
+                .font(.system(size: 30))
+                .fontWeight(.thin)
+                .foregroundColor(Color.black)
+           
 
-                    Spacer()
-                        .frame(height: 80)
-                   
-                    VStack {
-                         
-                        Button(action: {
-                            sessionManager.reloadHome()
-                        }, label: {
-                            Text("HOME")
+
+        
+                VStack {
+                    
+//                   MARK: Set navigation back to HomeView
+                    
+                    Button(action: {
+                        sessionManager.showLogin()
+                    },
+                        label: {
+                            Text("Home / Chat")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 40)
+                                .frame(width: 200, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                           
-                                    
                         })
-                            
-//                        NavigationLink(
-//                            destination: EmptyView(),
-//                            label: {
-                                
-                        Link(destination: URL(string: "https://socialtechlabs.com/did-bluemode-help/")!) {
-                                Text("Let us know. Did this HELP?")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 40)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 27))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+
+                }
+          }
+
+                    Spacer()
+                        .frame(height: 200)
+                   
+
                     }
                 }
             }
         }
-    }
-}
-}
+    
+
+
 
 
 
@@ -148,4 +128,34 @@ struct Step7_TimeToTalk_Previews : PreviewProvider {
 }
 
 
-
+//                    VStack {
+//
+//                        Button(action: {
+//                            sessionManager.reloadHome()
+//                        }, label: {
+//                            Text("HOME")
+//                                .fontWeight(.thin)
+//                                .frame(width: 100, height: 40)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 30))
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//
+//
+//                        })
+                            
+//                        NavigationLink(
+//                            destination: EmptyView(),
+//                            label: {
+//
+//                        Link(destination: URL(string: "https://socialtechlabs.com/did-bluemode-help/")!) {
+//                                Text("Let us know. Did this HELP?")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 310, height: 40)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 27))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)

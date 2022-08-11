@@ -75,7 +75,6 @@ struct DramaCentralView: View {
                     .kerning(10)
               
                 Button(action: {
-                    sessionManager.showDramaMainView()
                 }, label: {
                     Text("NEXT")
                         .fontWeight(.thin)

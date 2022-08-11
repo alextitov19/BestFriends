@@ -5,18 +5,16 @@
 //  Created by Social Tech on 4/17/22.
 //
 //
-//import Foundation
-//
 //
 //import SwiftUI
 //import AVKit
 //
-//struct ChatBackground: View {
-//
+//struct ChangeBackground: View {
+//    
 //    @State private var showingImagePicker = false
 //    @State private var inputImage: UIImage?
 //    @State private var changeBackgroundSuccess = false
-//
+//    
 //    var body: some View {
 //        ZStack {
 //            Image("changeBackground")
@@ -24,7 +22,7 @@
 //                .ignoresSafeArea()
 //                .scaledToFill()
 //                .zIndex(-1)
-//
+//            
 //            VStack {
 //                Text("Looping videos")
 //                    .foregroundColor(.white)
@@ -45,7 +43,7 @@
 //                            .frame(width: 150, height: 250)
 //                            //                                .cornerRadius(25)
 //                            .border(Color.white, width: 2)
-//
+//                        
 //                        Button("Select", action: { saveData(index: 0) })
 //                            .frame(width: 110, height: 40)
 //                            .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
@@ -53,13 +51,13 @@
 //                            .cornerRadius(25)
 //                    }
 //                    .padding()
-//
+//                    
 //                    VStack {
 //                        AdPlayerView(name: "blueRoad")
 //                            .frame(width: 150, height: 250)
 //                            //                                .cornerRadius(25)
 //                            .border(Color.white, width: 2)
-//
+//                        
 //                        Button("Select", action: { saveData(index: 1) })
 //                            .frame(width: 110, height: 40)
 //                            .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
@@ -68,14 +66,14 @@
 //                    }
 //                    .padding()
 //                }
-//
+//                
 //                HStack {
 //                    VStack {
 //                        AdPlayerView(name: "bull")
 //                            .frame(width: 150, height: 250)
 //                            //                                .cornerRadius(25)
 //                            .border(Color.white, width: 2)
-//
+//                        
 //                        Button("Select", action: { saveData(index: 2) })
 //                            .frame(width: 110, height: 40)
 //                            .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
@@ -83,13 +81,13 @@
 //                            .cornerRadius(25)
 //                    }
 //                    .padding()
-//
+//                    
 //                    VStack {
 //                        AdPlayerView(name: "Skateboard")
 //                            .frame(width: 150, height: 250)
 //                            //                                .cornerRadius(25)
 //                            .border(Color.white, width: 2)
-//
+//                        
 //                        Button("Select", action: { saveData(index: 3) })
 //                            .frame(width: 110, height: 40)
 //                            .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
@@ -98,7 +96,7 @@
 //                    }
 //                    .padding()
 //                }
-//
+//                
 //                Button("Upload Gallery Image", action: { showingImagePicker = true })
 //                    .frame(width: 200, height: 40)
 //                    .background(Color(#colorLiteral(red: 0.5280093551, green: 0.4946141839, blue: 1, alpha: 1)))
@@ -107,7 +105,7 @@
 //            }
 //            .offset(y: -40)
 //            .zIndex(-1)
-//
+//            
 //            if changeBackgroundSuccess {
 //                Text("Success!")
 //                    .font(.title)
@@ -125,10 +123,10 @@
 //                    }
 //                    .zIndex(-1)
 //            }
-//
+//            
 //        }
 //    }
-//
+//    
 //    private func saveData(index: Int) {
 //        print("Saving new static background as option #\(index)")
 //        var user = UserDataSource().getCurrentUser()
@@ -138,14 +136,14 @@
 //            changeBackgroundSuccess.toggle()
 //        }
 //    }
-//
+//    
 //    private func loadImage() {
 //        showingImagePicker = false
 //        guard let inputImage = inputImage else { return }
 //        print("Got the image")
 //        uploadImage(image: inputImage)
 //    }
-//
+//    
 //    private func uploadImage(image: UIImage) {
 //        var user = UserDataSource().getCurrentUser()
 //        let data = image.pngData()!
@@ -170,9 +168,10 @@
 //    }
 //}
 //
-//struct ChatBackground_Previews : PreviewProvider {
+//struct ChangeBackground_Previews : PreviewProvider {
 //    static var previews: some View {
-//        ChatBackground()
+//        ChangeBackground()
 //    }
 //}
+//
 //

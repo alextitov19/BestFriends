@@ -2,12 +2,167 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-1455719427966531~4145927591</string>
+    <key>SKAdNetworkItems</key>
+      <array>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>cstr6suwn9.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>4fzdc2evr5.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>2fnua5tdw4.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>ydx93a7ass.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>5a6flpkh64.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>p78axxw29g.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>v72qych5uu.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>c6k4g5qg8m.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>s39g8k73mm.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>3qy4746246.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>3sh42y64q3.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>f38h382jlk.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>hs6bdukanm.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>prcb7njmu6.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>v4nxqhlyqp.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>wzmmz9fp6w.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>yclnxrl5pm.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>t38b2kh725.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>7ug5zh24hu.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>9rd848q2bz.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>n6fk4nfna4.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>kbd757ywx3.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>9t245vhmpl.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>4468km3ulz.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>2u9pt9hc89.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>8s468mfl3y.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>av6w8kgt66.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>klf5c3l5u5.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>ppxm28t8ap.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>424m5254lk.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>uw77j35x4d.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>578prtvx9j.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>4dzt52r2t5.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>e5fvkxwrpn.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>8c4e2ghe7u.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>zq492l623r.skadnetwork</string>
+        </dict>
+        <dict>
+          <key>SKAdNetworkIdentifier</key>
+          <string>3qcr597p9d.skadnetwork</string>
+        </dict>
+      </array>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
 		<string>com.socialtechlabs.bestfriends</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>BestFriends Network</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -33,6 +188,11 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>We need to access your camera to enable you to take a picture and share it with your friends.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
@@ -40,7 +200,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The location is converted to coordinates which are then converted to the name of the nearest city. The name of that city is stored in the database to allow us to get an idea of where the majority of the users are coming from. The actual coordinates are not stored in the database.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>$(PRODUCT_NAME) photo use. User can send photos to their freinds in chat or ShakingCool. Only the users you send your photos to will have acess to the specific photos you've sent them.</string>
+	<string>$(PRODUCT_NAME) photo use. User can send photos to their freinds in chat or ShakingCool. Only the users you send your photos to will have acess to the specific photos you&apos;ve sent them.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>MainFont.ttf</string>
@@ -66,9 +226,12 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

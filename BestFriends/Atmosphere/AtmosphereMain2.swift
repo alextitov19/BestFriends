@@ -12,6 +12,8 @@ import SwiftUI
 
 struct AtmosphereMain2: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+    
     let user: User
     let atmosphere: Atmosphere
     let friends: [User]
@@ -19,53 +21,46 @@ struct AtmosphereMain2: View {
     @State private var mood: Int = -1
     @State private var summary = ""
     @State private var sharedWith: [String] = []
-    
     @State private var colorChangeTap: String = ""
     
     var body: some View {
         ZStack {
-//            ColorManager.purple3
-//                .ignoresSafeArea()
-//                .onAppear()
-//
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
 
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-
-            AdPlayerView(name: "pink")
+            
+            AdPlayerView(name: "Atmosphere2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-        
-            
-            
+
             
             VStack {
-                HStack {
-                    Text("Today I'm Feeling ...")
-                        .font(.system(size: 30))
+                
+                
+//                HStack {
+                    
+                    Text("'My Aura'")
+                        .font(.system(size: 35))
+                        .fontWeight(.medium)
                         .foregroundColor(Color.white)
                     
-                    Spacer()
+                    Text("distinctive 'Atmosphere' \nsurrounding each of us")
+                        .font(.system(size: 20))
+                        .foregroundColor(ColorManager.grey1)
+                      
+                HStack {
+
                 }
                 .padding(.horizontal)
                 
-                HStack {
-                    Text("(What is you mood right now?)")
-                        .font(.system(size: 15))
-                        .italic()
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                }
-                .padding(.horizontal)
-                
-                
+             
                 HStack {
                     VStack {
+                        
+                   
+                        
                         Button(action: {
                             mood = 0
                         }) {
@@ -75,7 +70,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 0 ? Color.blue : Color.gray)
+                        .background(mood == 0 ? Color(.systemCyan) : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -92,7 +87,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 1 ? Color.blue : Color.gray)
+                        .background(mood == 1 ? Color(.systemCyan) : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -109,7 +104,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 2 ? Color.blue : Color.gray)
+                        .background(mood == 2 ? Color(.systemCyan) : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -126,14 +121,14 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 3 ? Color.blue : Color.gray)
+                        .background(mood == 3 ? Color(.systemCyan) : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
                     }
                     
                     Spacer()
-                        .frame(width: 40)
+                        .frame(width: 20)
                     
                     VStack {
                         Button(action: {
@@ -145,7 +140,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 4 ? Color.green : Color.gray)
+                        .background(mood == 4 ? Color(.systemGreen) : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -162,7 +157,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 5 ? Color.orange : Color.gray)
+                        .background(mood == 5 ? Color(.orange) : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -171,7 +166,7 @@ struct AtmosphereMain2: View {
                     }
                     
                     Spacer()
-                        .frame(width: 40)
+                        .frame(width: 20)
                     
                     VStack {
                         
@@ -184,7 +179,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 6 ? Color.yellow : Color.gray)
+                        .background(mood == 6 ? Color(.systemYellow) : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -201,7 +196,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 7 ? Color.yellow : Color.gray)
+                        .background(mood == 7 ? Color(.systemYellow) : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -218,7 +213,7 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 8 ? Color.yellow : Color.gray)
+                        .background(mood == 8 ? Color(.systemYellow) : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -235,10 +230,9 @@ struct AtmosphereMain2: View {
                                 .foregroundColor(Color.black)
                         }
                         .frame(width: 80, height: 30, alignment: .center)
-                        .background(mood == 9 ? Color.yellow : Color.gray)
+                        .background(mood == 9 ? Color(.systemYellow) : Color.gray)
                         .cornerRadius(7)
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
                         
                     }
                 }
@@ -247,58 +241,73 @@ struct AtmosphereMain2: View {
                 VStack {
                     // MARK: End of feeling buttons
                     HStack {
-                        Text("What's going on?")
-                            .font(.system(size: 30))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color.white)
+                        Text("Ok, what's going on?")
+                            .font(.system(size: 21))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.grey1)
+                            .padding(.horizontal)
                         
-                        Spacer()
+//                        Spacer()
                     }
-                    .padding(.horizontal)
+//                    .padding(.horizontal)
                     
                     
                     
                     ZStack {
                         Rectangle()
-                            .frame(width:325, height: 100)
+                            .frame(width:310, height: 50)
                             .cornerRadius(15)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.gray)
+                            .opacity(0.9)
                         
-                        TextField("You can type your reason here ...", text: $summary)
+                        TextField("You can type what's up here...", text: $summary)
                             .font(.system(size: 20))
-                            .foregroundColor(Color.black)
+                            .foregroundColor(ColorManager.purple2)
                             .padding(.horizontal, 50)
-                            .onReceive(Just(summary)) { _ in limitText(50) }
+                            .onReceive(Just(summary)) { _ in limitText(40) }
                         
                         
                     }
                     
-                    
-                    
+                    Spacer()
+                        .frame(height: 5)
                     
                     HStack {
-                        Text("Do you want to alert your friends ...")
+                        Text("Alert friends")
                             .font(.system(size: 30))
-                            .fontWeight(.regular)
-                            .foregroundColor(Color.white)
+                        
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.grey1)
+                            .padding(.horizontal)
+                        
+//                        Text("So, they can laugh, smile, cheer or maybe help")
+//                            .font(.system(size: 12))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .foregroundColor(ColorManager.grey1)
                         
                         
-                        Spacer()
+//                        Spacer()
                     }
-                    .padding(.horizontal)
+//                    .padding(.horizontal)
                     
                     HStack {
                         if friends.count > 1 {
                             Button(action: {
-                                
+                                defaultMessageButtonTapped(defaultMessage: "SHARE")
+                                shareMood()
                             },
                                    label: {
                                 Text("ALL")
                                     .fontWeight(.bold)
                                     .frame(width: 100, height: 30)
+                                
+                                    .background(colorChangeTap == "SHARE" ? ColorManager.grey3 : ColorManager.purple3)
+                                
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 15))
-                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
+//                                    .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
                                     .cornerRadius(25)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -365,15 +374,20 @@ struct AtmosphereMain2: View {
                                 })
                         }
                     }
+                 
+                    Spacer()
+                        .frame(height: 17)
+                    
+                    HStack {
                     
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "SHARE")
                         shareMood()
                     },
                            label: {
-                        Text("SHARE")
+                        Text("Share")
                             .fontWeight(.thin)
-                            .frame(width: 100, height: 40)
+                            .frame(width: 100, height: 35)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             
@@ -383,23 +397,42 @@ struct AtmosphereMain2: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-                    .padding()
+//                    .padding()
                     
                     
                     
                     NavigationLink(
                         destination: FriendVaultTrackMoods(user: user, atmosphere: atmosphere, friends: friends),
                         label: {
-                            Text("Mood Tracker")
+                            Text("Aura Tracker")
                                 .fontWeight(.thin)
-                                .frame(width: 200, height: 40)
+                                .frame(width: 180, height: 35)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
-                    
+                    }
+                 
+                    VStack {
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                            label: {
+                                Text("Home / Chat")
+                                    .fontWeight(.thin)
+                                    .frame(width: 175, height: 30)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                    }
                     Spacer()
                 }
             }
@@ -418,7 +451,7 @@ struct AtmosphereMain2: View {
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed thier Temperament!", APNToken: f.APNToken ?? "")
+                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed their Mood!", APNToken: f.APNToken )
                             }
                         }
                         mood = -1
@@ -470,15 +503,5 @@ struct AtmosphereMain2: View {
 
 
 
-
-
-//
-//struct AtmosphereMain2_Previews : PreviewProvider {
-//    
-//    static var previews: some View {
-//        AtmosphereMain2(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: ""), atmosphere: Atmosphere(id: "", planet: 0, mood: 0, moodLogs: []), friends: [])
-//        
-//    }
-//}
 
 

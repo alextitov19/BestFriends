@@ -30,7 +30,6 @@ struct ChatGroupsView: View {
             let width = proxy.frame(in: .global).width
             
             return AnyView(
-                
                 ZStack {
                     
                     BlurView(style: .systemThinMaterialDark)
@@ -38,30 +37,69 @@ struct ChatGroupsView: View {
                     
                     VStack(alignment: .center) {
                         
-                        Capsule()
-                            .fill(Color.white)
-                            .frame(width: 60, height: 4)
-                            .padding(.top)
+                        HStack {
+                        
+//                            Capsule()
+//                                .fill(Color.white)
+//                                .frame(width: 40, height: 4)
+//                                .padding(.top)
+                            
+                            Text("^")
+                                .font(.system(size: 35))
+                                .fontWeight(.thin)
+                                .foregroundColor(.white)
+                            
+                        Text("My Chat Rooms")
+                            .font(.system(size: 20))
+                            .fontWeight(.thin)
+                            .foregroundColor(ColorManager.purple2)
+                        
+                            Text("^")
+                                .font(.system(size: 35))
+                                .fontWeight(.thin)
+                                .foregroundColor(.white)
+                            
+                            
+                            
+//                        Capsule()
+//                            .fill(Color.white)
+//                            .frame(width: 40, height: 4)
+//                            .padding(.top)
+                        }
                         
                         //MARK: ScrollView content...
-                        
-                        ForEach(groups, id: \.id) { group in
-
-                            Button(action: {
+                        ScrollView(.vertical, showsIndicators: false) {
+                            ForEach(groups, id: \.id) { group in
+                                
+                                Button(action: {
                                     sessionManager.showChat(user: user, group: group)
-                            }) {
-                            GroupRow(group: group)
-                                .padding(.horizontal, 15)
-                                .padding(.top, 15)
+                                }) {
+                                    GroupRow(group: group)
+                                        .padding(.horizontal, 15)
+                                        .padding(.top, 15)
+                                }
+                                
+                                CustomDivider(color: Color.purple)
+                                    .padding(.horizontal, 30)
                             }
-                            
-                            CustomDivider(color: Color.white)
-                                .padding(.horizontal, 30)
                         }
                     }
                     .frame(maxHeight: .infinity, alignment: .top)
-                      
+                    
+                    VStack {
+                        Spacer()
+                        
+                        Text("Hide")
+                            .font(.system(size: 35))
+                            .foregroundColor(ColorManager.purple2)
+                           
+                            .onTapGesture(perform: {
+                                self.offset = 30
+                            })
+                    }
+                    .padding(.bottom, 70)
                 }
+                
                     .frame(width: width - 70)
                     .padding(.horizontal, 35)
                     .offset(y: height - 100)
@@ -106,4 +144,6 @@ struct ChatGroupsView: View {
             self.offset = lastOffset + gestureOffset
         }
     }
+                
 }
+            

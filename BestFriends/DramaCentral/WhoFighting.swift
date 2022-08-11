@@ -12,23 +12,25 @@ import AVKit
 
 struct WhoFighting: View {
     
+    let user: User
+    let friends: [User]
+    let groups: [Group]
+    
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
-    @EnvironmentObject var sessionManager: SessionManager
+//    @EnvironmentObject var sessionManager: SessionManager
     
     var body: some View {
         
         ZStack {
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
-
+           
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
           
            
-            AdPlayerView(name: "cloud")
+            AdPlayerView(name: "storm2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 //            AdPlayerView(name: "backgroundAnimation")
@@ -41,46 +43,65 @@ struct WhoFighting: View {
         
         ZStack {
 
-            NavigationLink(destination: IntroBluemodeFriend(), label: {
-                WhoFightingCircle (color: .pink, friendName: "Huge Fight \nwith my \nBFF")
+            NavigationLink(destination: IntroBluemodeFriend(user: user, friends: friends), label: {
+                WhoFightingCircle (color: .purple, friendName: "TEEN Fight \nSuggestions")
                 })
-            .offset(x: showItems ? 100 : 0, y: showItems ? -265: 0)
-             
-     
+            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
+
            
+
               NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .orange, friendName: "OMG, \nmy Parents \nare Fighting \nAGAIN!")
+                  WhoFightingCircle (color: .gray, friendName: "Parents \nFighting")
             })
-            .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
+            .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
             
 
-            NavigationLink(destination: IntroFriendGpFight(), label: { WhoFightingCircle (color: .blue, friendName: "Drama \nin my \nFriendGroup")
+            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
             })
-            .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
+            .offset(x: showItems ? -90 : 0, y: showItems ? -150: 0)
             
-
-
+            NavigationLink(destination: NostalgiaPreload2(user: user, friends: friends, groups: groups), label: {
+                WhoFightingCircle (color: .orange, friendName: "Adult \nNostalgia")
+            })
+            .offset(x: showItems ? 95 : 0, y: showItems ? -30: 0)
+            
+            
+            NavigationLink(destination: Sweetheart1(user: user, friends: friends, groups: groups), label: {
+                WhoFightingCircle (color: .pink, friendName: "Messed \nUp?")
+            })
+            .offset(x: showItems ? -110 : 0, y: showItems ? 160: 0)
+            .opacity(0.7)
+            
+            
+            NavigationLink(destination: FD_Step1(), label: {
+                WhoFightingCircle (color: .green, friendName: "BestFamily")
+            })
+            .offset(x: showItems ? -20 : 0, y: showItems ? 200: 0)
+            .opacity(0.7)
+            
+            
         Image(systemName: "triangle.fill")
                     .resizable()
                     .foregroundColor(.gray)
-                    .frame(width: 260, height: 260)
+                    .frame(width: 175, height: 175)
 //                    .blur(radius: 2)
 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
-
+                    .opacity(0.85)
+            
            VStack {
                
             Spacer ()
-                   .frame(height: 100)
+                   .frame(height: 85)
                 
-              Text("BlueMode")
-                            .font(.system(size: 43))
+              Text("Fixing \n FIGHTS")
+                            .font(.system(size: 22))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
-                
+               
+
                     
                 }
             }
@@ -109,9 +130,10 @@ struct WhoFightingCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 150, height: 150)
+        .frame(width: 100, height: 100)
         .clipShape(Circle())
         .foregroundColor(color)
+        .opacity(0.7)
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
         
         Text(friendName)
@@ -124,12 +146,12 @@ struct WhoFightingCircle: View {
 }
 
 
-struct WhoFighting_Previews : PreviewProvider {
-    static var previews: some View {
-        WhoFighting()
-    }
-
-}
+//struct WhoFighting_Previews : PreviewProvider {
+//    static var previews: some View {
+//        WhoFighting()
+//    }
+//
+//}
 
 //
 //    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)

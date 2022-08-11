@@ -38,3 +38,9 @@ extension View {
                 .shadow(color: color, radius: radius / 3)
         }
 }
+
+extension View {
+  public func alert(isPresented: Binding<Bool>, _ alert: TextAlert) -> some View {
+    AlertWrapper(isPresented: isPresented, alert: alert, content: self)
+  }
+}

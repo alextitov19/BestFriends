@@ -12,12 +12,12 @@ import FirebaseMessaging
 class RestApi {
     var helper: Helper
     var userId: String?
-    let API_URL = "http://54.226.29.220:8080/api/v1/services"
-    let WS_URL = "ws://54.226.29.220:8080/api/v1/services"
+    let API_URL = "http://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
+    let WS_URL = "ws://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
 
 //    let API_URL = "http://localhost:8080/api/v1/services"
 //    let WS_URL = "ws://localhost:8080/api/v1/services"
-
+    
     public static var instance = RestApi()
     
     public var needLogin : Bool {
@@ -26,8 +26,12 @@ class RestApi {
         }
     }
     
+    public func signOut() {
+        helper.signOut()
+    }
+    
     private init() {
-        helper = Helper(API_URL, signUp: "/signup", login: "/login", renew: "/renew")
+        helper = Helper(API_URL, signUp: "/signup", login: "/login", renew: "/renew", password: "/password")
     }
     
     public func signUp(_ userData: SignUpUserData) -> Promise<Int> {
@@ -38,8 +42,16 @@ class RestApi {
         return helper.login(email: email, password: password)
     }
     
+    public func updatePassword(email: String, password: String, newPassword: String) -> Promise<Tokens> {
+        return helper.updatePassord(email: email, password: password, newPassword: newPassword)
+    }
+    
     public func getCurrentUser() -> Promise<User> {
         return helper.callRestApi(url: API_URL + "/users", method: .get, User.self)
+    }
+    
+    public func getUserById(id: String) -> Promise<User> {
+        return helper.callRestApi(url: API_URL + "/users/" + id, method: .get, User.self)
     }
     
     public func getHomeData() -> Promise<HomeData> {
@@ -65,9 +77,18 @@ class RestApi {
         return helper.acceptRejectInvite(url: API_URL + "/invites/reject", ari: ri)
     }
     
-    public func createGroup(members: [String]) -> Promise<Group> {
-        let cg = CreateGroup(members: members)
+    public func createGroup(name: String, members: [String]) -> Promise<Group> {
+        let cg = CreateGroup(name: name, members: members)
         return helper.createGroup(url: API_URL + "/groups", createGroup: cg)
+    }
+    
+    public func updateGroup(group: Group) -> Promise<Int> {
+        return helper.updateGroup(url: API_URL + "/groups/update", group: group)
+    }
+    
+    public func createChatMessage(groupId: String, body: String) -> Promise<Int> {
+        let cm = CreateMessage(body: body)
+        return helper.createMessage(url: API_URL + "/messages/" + groupId, cm: cm)
     }
     
     public func createMessageWithImage(groupId: String, body: String, image: Data) -> Promise<Int> {
@@ -75,8 +96,8 @@ class RestApi {
         return helper.createMessageWithImage(url: API_URL + "/messages/images", cmwi: cmwi)
     }
     
-    public func getImage(folderId: String, imageId: String) -> Promise<Data> {
-        let url = API_URL + "/images/" + folderId + "/" + imageId
+    public func getImage(link: String) -> Promise<Data> {
+        let url = API_URL + "/images/" + link
         print("URL: ", url)
         return helper.getImage(url: url)
     }
@@ -115,6 +136,27 @@ class RestApi {
         return helper.callRestApi(url: API_URL + "/smile-notes", method: .get, [SmileNote].self)
     }
     
+    public func favoriteSmileNote(id: String) -> Promise<SmileNote> {
+        return helper.callRestApi(url: API_URL + "/smile-notes/" + id, method: .patch, SmileNote.self)
+    }
+    
+    public func createPhotoPop(receiver: String, image: Data) -> Promise<PhotoPop> {
+        let cpp = CreatePhotoPop(receiver: receiver, image: image)
+        return helper.createPhotoPop(url: API_URL + "/photo-pop", createPhotoPop: cpp)
+    }
+    
+    public func getPhotoPops() -> Promise<[PhotoPop]> {
+        return helper.callRestApi(url: API_URL + "/photo-pop", method: .get, [PhotoPop].self)
+    }
+    
+    public func deletePhotoPop(id: String) -> Promise<RestResponse> {
+        return helper.callRestApi(url: API_URL + "/photo-pop/" + id, method: .delete, RestResponse.self)
+    }
+    
+    public func getShakePhotoPops() -> Promise<[PhotoPop]> {
+        return helper.callRestApi(url: API_URL + "/photo-pop/shake", method: .get, [PhotoPop].self)
+    }
+    
     public func registerAPNToken() {
         Messaging.messaging().token { token, error in
           if let error = error {
@@ -132,15 +174,16 @@ class RestApi {
         }
     }
     
-    private func updateUserToken(token: String) -> Promise<Int> {
+    public func updateUserToken(token: String) -> Promise<Int> {
         return helper.updateUserToken(url: API_URL + "/user/update/token/" + token)
     }
     
-    public func sendPushNotification(title: String, body: String, APNToken: String) -> Promise<Int> {
+    public func sendPushNotification(title: String, body: String, APNToken: String) {
         let createNotification = CreateNotification(title: title, body: body, APNToken: APNToken)
-        return helper.sendPushNotification(url: API_URL + "/notification", createNotification: createNotification)
+        helper.sendPushNotification(url: API_URL + "/notification", createNotification: createNotification).then({ result in
+            print("Result of sending push notification: ", result)
+        })
     }
-      
     
     public func updateUser(user: User) -> Promise<Int> {
         return helper.updateUser(url: API_URL + "/user/update", user: user)
@@ -150,5 +193,9 @@ class RestApi {
         getCurrentUser().then { details in
             self.userId = details.id
         }
+    }
+    
+    public func removeFriend(email:String, removeFriend:RemoveFriend) {
+        
     }
 }

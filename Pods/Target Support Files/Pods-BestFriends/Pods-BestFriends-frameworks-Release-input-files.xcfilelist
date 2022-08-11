@@ -1,3 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-BestFriends/Pods-BestFriends-frameworks.sh
+${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework
 ${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework
 ${BUILT_PRODUCTS_DIR}/PromisesSwift/Promises.framework
+${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework

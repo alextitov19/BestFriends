@@ -7,6 +7,7 @@
 
 import Foundation
 import Promises
+import SwiftUI
 
 struct Tokens :Codable{
     var AccessToken: Token
@@ -36,9 +37,10 @@ struct Token : Codable {
 }
 
 enum HttpMethod: String {
-    case get = "Get"
-    case post = "Post"
-    case patch = "Patch"
+    case get = "GET"
+    case post = "POST"
+    case patch = "PATCH"
+    case delete = "DELETE"
 }
 
 enum AuthErrors: Error {
@@ -52,6 +54,7 @@ class Helper {
     private var signUpUrl: String
     private var loginUrl: String
     private var renewUrl: String
+    private var updatePasswordUrl: String
     private var sessionConfig: URLSessionConfiguration
     private var session: URLSession
     private var internalRenewToken: String?
@@ -83,10 +86,11 @@ class Helper {
         }
     }
     
-    init(_ apiUrl:String, signUp: String, login: String, renew: String) {
+    init(_ apiUrl:String, signUp: String, login: String, renew: String, password: String) {
         signUpUrl = apiUrl + signUp
         loginUrl = apiUrl + login
         renewUrl = apiUrl + renew
+        updatePasswordUrl = apiUrl + password
         sessionConfig = URLSessionConfiguration.default
         sessionConfig.waitsForConnectivity = true
         sessionConfig.allowsCellularAccess = true
@@ -98,6 +102,11 @@ class Helper {
             print(error)
         }
         accessToken = ""
+    }
+    
+    func signOut() {
+        self.renewToken = ""
+        self.accessToken = ""
     }
     
     func createInvite(url: String, createInvite: CreateInvite) -> Promise<Int> {
@@ -130,6 +139,26 @@ class Helper {
         }
     }
     
+    func updateGroup(url: String, group: Group) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(group)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .patch, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
+    func createMessage(url: String, cm: CreateMessage) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(cm)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
     func createMessageWithImage(url: String, cmwi: CreateMessageWithImage) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(cmwi)
         if let p = payload {
@@ -145,7 +174,7 @@ class Helper {
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
-        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+        return callRestApi(url: url, method: .patch, data: payload, RestResponse.self).then { response in
             return Promise<Int>(response.status)
         }
     }
@@ -170,6 +199,16 @@ class Helper {
         }
     }
     
+    func createPhotoPop(url: String, createPhotoPop: CreatePhotoPop) -> Promise<PhotoPop> {
+        let payload = try? JSONEncoder().encode(createPhotoPop)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, PhotoPop.self).then { photoPop in
+            return Promise<PhotoPop>(photoPop)
+        }
+    }
+    
     func getImage(url: String) -> Promise<Data> {
         return callRestApi(url: url, method: .get, ImageData.self).then { response in
             return Promise<Data>(response.image)
@@ -177,7 +216,7 @@ class Helper {
     }
     
     func updateUserToken(url: String) -> Promise<Int> {
-        return callRestApi(url: url, method: .post, RestResponse.self).then { response in
+        return callRestApi(url: url, method: .patch, RestResponse.self).then { response in
             return Promise<Int>(response.status)
         }
     }
@@ -197,7 +236,7 @@ class Helper {
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
-        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+        return callRestApi(url: url, method: .patch, data: payload, RestResponse.self).then { response in
             return Promise<Int>(response.status)
         }
     }
@@ -207,7 +246,7 @@ class Helper {
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }
-        return callRestApiNoAuth(url: signUpUrl, method: .patch, data: payload, SignUpResponse.self).then { signUpResponse in
+        return callRestApiNoAuth(url: signUpUrl, method: .post, data: payload, SignUpResponse.self).then { signUpResponse in
             return Promise<Int>(signUpResponse.code)
         }
     }
@@ -231,6 +270,27 @@ class Helper {
             return Promise<Tokens>(tokens)
         }
     }
+    
+    func updatePassord(email: String, password: String, newPassword: String) -> Promise<Tokens> {
+        let cred = UpdatePasswordCred(email: email, password: password, newPassword: newPassword)
+        let payload = try? JSONEncoder().encode(cred)
+        if let p = payload {
+            print(String(data:p,encoding:.utf8) as Any)
+        }
+        return callRestApiNoAuth(url:updatePasswordUrl,method:.post,data:payload,TokensResponse.self).then { tokensResponse in
+            let tokens = tokensResponse.Data
+            self.accessToken = tokens.AccessToken.Token
+            self.renewToken = tokens.RenewToken.Token
+            do {
+                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), token: tokens.RenewToken.Token)
+                print("Renew Token: ", tokens.RenewToken.Token)
+            } catch {
+                print(error)
+            }
+            return Promise<Tokens>(tokens)
+        }
+    }
+    
     
     func callRestApiNoAuth<T>(url: String, method: HttpMethod, body: String? = nil, data: Data? = nil,_ type: T.Type) -> Promise<T> where T : Decodable {
         var request = URLRequest(url:URL(string: url)!)
@@ -304,7 +364,7 @@ class Helper {
                 // print(error)
                 do{
                     try AuthController.signOut()
-                    
+
                 }catch {
                     print(error)
                 }

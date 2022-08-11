@@ -29,18 +29,19 @@ struct SettingsNotificationsView: View {
                 .ignoresSafeArea()
             
             
-            Image("HomeBackground2")
-                .resizable()
+//            Image("HomeBackground2")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+            ColorManager.grey4
                 .ignoresSafeArea()
-                .scaledToFill()
-            
             
             VStack {
                 HStack {
                     Button(action: {
                         self.presentationMode.wrappedValue.dismiss()
                     }) {
-                        Image("arrowRight")
+                        Image("")
                             .resizable()
                             .frame(width: 25, height: 25)
                             .scaledToFit()
@@ -57,21 +58,12 @@ struct SettingsNotificationsView: View {
                     Text("Notifications")
                         .font(.system(size: 30))
                         .offset(x: -25)
-                        .foregroundColor(.white)
+                        .foregroundColor(.gray)
                     Spacer()
                 }
                 
                 Spacer()
-                    .frame(height: 200)
-                
-//                NavigationLink(
-////                    destination: NotificationsOnOffPage(),
-////                    label: {
-//                Toggle("Chat Notifications", isOn: $chatNotifications)
-//                    .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-//                    }
-//                    )
-//
+                    .frame(height: 100)
                 HStack {
                 }
                
@@ -81,7 +73,7 @@ struct SettingsNotificationsView: View {
                     .font(.system(size: 30))
                     
                     .offset(x: -3)
-                    .foregroundColor(.green)
+                    .foregroundColor(.purple)
                 Spacer()
                     .frame(height: 50)
                 
@@ -90,45 +82,23 @@ struct SettingsNotificationsView: View {
                     .font(.system(size: 20))
                     .italic()
                     .offset(x: -3)
-                    .foregroundColor(.white)
+                    .foregroundColor(.gray)
                     
-                
-//                Spacer()
-//                    .frame(height: 50)
-//
+          
                 
                 Spacer()
-                    .frame(height: 200)
+                    .frame(height: 100)
                 
-                    Divider()
-                      
-                      Toggle("     Broadcast Notifications", isOn: $broadcastNotifications)
-                          .foregroundColor(.white)
-                          .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                      
+//                    Divider()
+//
+//                      Toggle("     Broadcast Notifications", isOn: $broadcastNotifications)
+//                          .foregroundColor(.white)
+//                          .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+//
 //                      Divider()
                       
                 
                 
-                
-                
-//
-//                    .foregroundColor(.white)
-//
-//                    .multilineTextAlignment(.center)
-//                    .padding(20)
-                
-//               Button(action: {
-//                    saveData()
-//                }) {
-//                    Text("Save")
-//                        .frame(width: 250, height: 450, alignment: .center)
-//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                        .font(.title)
-//                        .background(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-//                        .cornerRadius(10)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                }
             }
             .padding()
         }

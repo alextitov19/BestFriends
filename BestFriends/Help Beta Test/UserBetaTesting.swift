@@ -13,118 +13,63 @@ import SwiftUI
 struct UserBetaTesting: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
+    @EnvironmentObject var sessionManager: SessionManager
     
     var body: some View {
         ZStack {
-//            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-//                .ignoresSafeArea()
 
-           Image("HomeBackground2")
-               .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-
-//            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-//                .ignoresSafeArea()
-//
-//              Image("settingsBackground")
+//              Image("purpleBackground")
 //                  .resizable()
 //                  .ignoresSafeArea()
 //                  .scaledToFill()
-//
+            
+            Image("FatGuy")
+            
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+
             VStack {
-                HStack {
-                    Button(action: {
-                        self.presentationMode.wrappedValue.dismiss()
-                    }) {
-                        Image("arrowRight")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .scaledToFit()
-//                            .colorInvert()
-                           .rotationEffect(Angle(degrees: 180))
-                    }
-                    
-                    Spacer()
-                    
-                    Text("Asking For Your Help")
-                        .font(.system(size: 30))
-                        .fontWeight(.thin)
-//                        .offset(x: -25)
-//                        .fontWeight(.thin)
-                        .foregroundColor(.white)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                    NavigationLink(
+                        destination: HorizonsPrototype(),
+                        label: {
+                            Text("Sneak Peak!")
+                                .fontWeight(.thin)
+                                .frame(width: 175, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+                  
+                
+   
+               Spacer()
+                      .frame(height: 325)
+      
+                
+                     Text("The BestFriends \nteam sincerely \nhopes to make life \na little better for \nteens worldwide with \nyour HELP!")
+                         .font(.system(size: 30))
+                         .fontWeight(.thin)
+                         .italic()
+                         .foregroundColor(.purple)
+
+                   
                 }
-                    Spacer()
-                        .frame(height: 70)
-                
-                
-                Divider()
-                    .foregroundColor(.white)
-                
-                Link(destination: URL(string: "https://socialtechlabs.com/beta-tester-_-bestfriends-app/")!) {
-                    
-                    HStack {
-                        Text("Yep, I want to HELP")
-                            .font(.system(size: 30)) .foregroundColor(.green)
-                         .frame(maxHeight: 0)
-                        
-                        Spacer()
-                       
-                        Image("arrowRight")
-                          
-                            .resizable() .foregroundColor(.black)
-                            .frame(width: 25, height: 25)
-                           
-                            .scaledToFit()
-                           
-                    }
-                }
-                
-//                Divider()
-//
-//                Link(destination: URL(string: "https://socialtechlabs.com/terms-service/")!) {
-//                    HStack {
-//                        Text("Terms of Serivce")
-//                            .font(.system(size: 30))
-//                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-//
-//                        Spacer()
-//
-//
-//                        Image("arrowRight")
-//                            .resizable()
-//                            .frame(width: 25, height: 25)
-//                            .scaledToFit()
-//
-//
-//                    }
-//                }
-//
-                Spacer()
-                      .frame(height: 115)
-               
-                Text("The sincere hope of the BestFriends team is that we're able to build an app that actually REDUCES drama, anxiety and depression. \n\nBut, we need your help. \n\nWe have a couple of short 3-question surveys - earn some free tokens. \n\nHelp us make BestFriends SPECIAL.")
-                    .font(.system(size: 23))
-                    .fontWeight(.thin)
-                    .italic()
-                    .offset(x: -3)
-                    .foregroundColor(.white)
-                    .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                    
-                
-                
-                
-                Spacer()
             }
-            .padding(40)
-            .navigationBarHidden(true)
         }
-    }
     
 }
+
+
+    
+
 struct UserBetaTesting_Previews : PreviewProvider {
     static var previews: some View {
         UserBetaTesting()
     }
 }
+
+

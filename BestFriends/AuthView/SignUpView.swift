@@ -6,22 +6,36 @@
 //
 
 import SwiftUI
+import CoreLocation
+import CoreLocationUI
 
 struct SignUpView: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+    @StateObject var locationManager = LocationManager()
+    
     @State private var firstname = ""
     @State private var lastname = ""
     @State private var email = ""
     @State private var password = ""
+    @State private var age: Int = 0
+    @State private var ageString = ""
+    @State private var gender = ""
+    let genders = ["Male", "Female", "Other"]
+    @State private var locationString = "Not shared"
     
     @State private var errorMessage = ""
     
     var body: some View {
         ZStack {
-            ColorManager.purple1
+            
+            ColorManager.grey4
                 .ignoresSafeArea()
+            
+            
+//            ColorManager.purple1
+//                .ignoresSafeArea()
             
             ZStack {
                 Circle()
@@ -37,30 +51,83 @@ struct SignUpView: View {
             
             
             VStack {
-                Text("Welcome to BestFriends")
-                    .font(.custom("MainFont", size: 40).bold())
-                    .foregroundColor(ColorManager.grey3)
-                    .padding(30)
+//                Text("Welcome to BestFriends")
+//                    .font(.custom("MainFont", size: 40).bold())
+//                    .foregroundColor(ColorManager.grey3)
+//                    .padding(30)
                 
                 VStack {
-                    MainTextField(text: $firstname, placeholder: "First Name")
+                    HStack {
+                        MainTextField(text: $firstname, placeholder: "First Name")
+                        
+                        MainTextField(text: $lastname, placeholder: "Last Name")
+                    }
                     .padding(.horizontal, 40)
                     .padding(.vertical, 15)
-                    
-                    MainTextField(text: $lastname, placeholder: "Last Name")
-                        .padding(.horizontal, 40)
-                        .padding(.vertical, 15)
                     
                     MainTextField(text: $email, placeholder: "Email")
                         .padding(.horizontal, 40)
                         .padding(.vertical, 15)
-                                        
+                    
                     MainSecureField(text: $password, placeholder: "Password")
                         .padding(.horizontal, 40)
                         .padding(.vertical, 15)
+                    
+                    HStack {
+                        MainTextField(text: $ageString, placeholder: "Age")
+                            .keyboardType(.decimalPad)
+                        
+                        
+                        Menu {
+                            Picker(selection: $gender) {
+                                ForEach(genders, id: \.self) { g in
+                                    Text(g)
+                                        .tag(g)
+                                        .font(.largeTitle)
+                                }
+                            } label: {}
+                        } label: {
+                            if gender.count == 0 {
+                                Text("Gender")
+                                    .frame(width: 200)
+                                    .overlay(RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color.gray)
+                                        .frame(height: 40)
+                                    )
+                                    .font(Font.custom("MainFont", size: 20))
+                                    .foregroundColor(.gray)
+                            } else {
+                                Text(gender)
+                                    .frame(width: 200)
+                                    .overlay(RoundedRectangle(cornerRadius: 20)
+                                        .stroke(Color.gray)
+                                        .frame(height: 40)
+                                    )
+                                    .font(Font.custom("MainFont", size: 20))
+                                    .foregroundColor(.gray)
+                            }
+                        }
+                        
+                    }
+                    .padding(.horizontal, 40)
+                    .padding(.vertical, 15)
+                    
+                    
+                    
+                    VStack {
+                        LocationButton(.shareCurrentLocation) {
+                            locationManager.requestLocation()
+                        }
+                        .frame(height: 40)
+                        .cornerRadius(10)
+                    }
+                    .padding(.horizontal, 40)
+                    .padding(.vertical, 5)
+                    
+                    
                 }
                 
-                Spacer().frame(height: 50)
+//                Spacer().frame(height: 15)
                 
                 Text(errorMessage)
                     .foregroundColor(ColorManager.red)
@@ -69,7 +136,7 @@ struct SignUpView: View {
                 
                 Button(action: {
                     if checkFields() {
-                        let data = SignUpUserData(firstName: firstname, lastName: lastname, credentials: Credentials(email: email, password: password))
+                        let data = SignUpUserData(firstName: firstname, lastName: lastname, credentials: Credentials(email: email, password: password), age: age, gender: gender, location: locationString)
                         // Sign up
                         RestApi.instance.signUp(data).then{ response in
                             //   self.removeActivityIndicator(myActivityIndicator)
@@ -89,11 +156,14 @@ struct SignUpView: View {
                 
                 // Terms of Service and Privacy Policy footer
                 Text("By signing up, you agree to our")
+                    .foregroundColor(.white)
+                
                 HStack {
                     Link("Terms of Service", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
                         .foregroundColor(ColorManager.purple5)
                     
                     Text("and")
+                        .foregroundColor(.white)
                     
                     Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
                         .foregroundColor(ColorManager.purple5)
@@ -101,12 +171,13 @@ struct SignUpView: View {
                 
                 Text("Login")
                     .underline()
-                    .frame(width: 150, height: 30)
+                    .font(.system(size: 25))
+                    .frame(width: 150, height: 50)
                     .foregroundColor(ColorManager.purple5)
                     .onTapGesture {
                         sessionManager.showLogin()
                     }
-                    .padding()
+//                    .padding()
             }
             .navigationBarTitle("")
             .navigationBarHidden(true)
@@ -114,6 +185,8 @@ struct SignUpView: View {
     }
     
     private func checkFields() -> Bool {
+        
+        errorMessage = "Fill out all fields"
         
         if firstname == "" || lastname == "" {
             return false
@@ -127,6 +200,20 @@ struct SignUpView: View {
         if password.count < 4 {
             errorMessage = "Password must be longer than 4 character"
             return false
+        }
+        
+        if let a = Int(ageString) {
+            age = a
+            if age < 12 { return false }
+        } else { return false }
+        
+        if gender.count == 0 {
+            return false
+        }
+        
+        if let placemark = locationManager.placemark {
+            print("Your location: \(placemark.description)")
+            locationString = placemark.description
         }
         
         return true

@@ -14,14 +14,31 @@ struct Credentials: Codable {
     }
 }
 
+struct UpdatePasswordCred: Codable {
+    let email: String
+    let password: String
+    let newPassword: String
+    enum CodingKeys: String, CodingKey {
+        case email = "email"
+        case password = "password"
+        case newPassword = "new_password"
+    }
+}
+
 struct SignUpUserData: Codable {
     let firstName: String
     let lastName: String
     let credentials: Credentials
+    let age: Int
+    let gender: String
+    let location: String
     enum CodingKeys: String, CodingKey {
         case firstName = "first_name"
         case lastName = "last_name"
         case credentials = "credentials"
+        case age = "age"
+        case gender = "gender"
+        case location = "location"
     }
 }
 
@@ -45,28 +62,7 @@ struct SignUpResponse: Codable {
 //    }
 //}
 
-struct User: Codable {
-    var id: String
-    var firstName: String
-    var lastName: String
-    var APNToken: String?
-    var friends: [String] = []
-    var groups: [String] = []
-    var atmosphere: String
-    var chatPin: String?
-    var smileNotes: [String]?
-    enum CodingKeys: String, CodingKey {
-        case id = "id"
-        case firstName = "first_name"
-        case lastName = "last_name"
-        case APNToken = "apn_token"
-        case friends = "friends"
-        case groups = "groups"
-        case atmosphere = "atmosphere"
-        case chatPin = "chat_pin"
-        case smileNotes = "smile_notes"
-    }
-}
+
 
 struct RestResponse :Codable {
     var status: Int

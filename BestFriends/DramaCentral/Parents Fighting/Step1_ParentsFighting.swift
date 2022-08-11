@@ -19,7 +19,7 @@ struct Step1_ParentsFighting: View {
     var body: some View {
         ZStack {
             
-            Image("purpleBackground")
+            Image("blueBackground")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
@@ -33,37 +33,37 @@ struct Step1_ParentsFighting: View {
             VStack {
                 
                 Text("Suggestions")
-                    .font(.system(size: 70))
+                    .font(.system(size: 40))
                     .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
                
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 10)
                 
                 Text("- Stay out of the Argument \n- It's their fight \n- Not your job to referee")
-                    .font(.system(size: 25))
+                    .font(.system(size: 17))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
                
                 Spacer()
-                    .frame(height: 35)
+                    .frame(height: 25)
                 
                 Text("Get Away")
-                    .font(.system(size: 35))
-                    .fontWeight(.light)
+                    .font(.system(size: 40))
+                    .fontWeight(.ultraLight)
                     .foregroundColor(Color.blue)
                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 10)
                 
                 Text("- Go Outside \n- Go to your room, close the door \n- Put your ear pods in \n- If gets violent call 911")
-                    .font(.system(size: 25))
+                    .font(.system(size: 17))
                     .fontWeight(.light)
                     .foregroundColor(Color.white)
      
                 VStack {
                     Spacer()
-                        .frame(height: 45)
+                        .frame(height: 25)
                     
                     NavigationLink(
                         destination: Step2_ParentsFighting(),
@@ -80,7 +80,8 @@ struct Step1_ParentsFighting: View {
                         
                         
                         })
-                
+                    Spacer()
+                        .frame(height: 50)
 //
 //                Button(action: {
 //                    sessionManager.showDramaMainView()

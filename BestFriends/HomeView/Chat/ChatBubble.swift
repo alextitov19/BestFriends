@@ -16,7 +16,6 @@ struct ChatBubble: View {
     @State private var image: UIImage? = nil
     
     var body: some View {
-        
         if myOwnMessage {
             if message.image?.count ?? 0 > 0 {
                 if image != nil {
@@ -27,9 +26,11 @@ struct ChatBubble: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 300)
-                            .cornerRadius(25)
+                            .cornerRadius(25).onTapGesture(perform: {
+                                image = nil
+                            })
                     }
-                    .padding(.horizontal, 5)
+                    .padding(.horizontal, 20)
                     
                 } else {
                     MyChatMessage(messageBody: "📸",message: message)
@@ -48,16 +49,20 @@ struct ChatBubble: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 300)
-                            .cornerRadius(25)
+                            .cornerRadius(25).onTapGesture(perform: {
+                                image = nil
+                            })
                         
                         Spacer()
                     }
-                    .padding(.horizontal, 5)
+                    .padding(.horizontal, 20)
                     
                 } else {
                     FriendChatMessage(name: message.senderName, messageBody: "📸", message: message)
                         .onTapGesture {
                             Task { await downloadImage(key: message.image) }
+                            
+                            
                         }
                 }
             } else {
@@ -70,7 +75,7 @@ struct ChatBubble: View {
         if key == nil { return }
         if key!.count < 1 { return }
         print("Image key: ", key!)
-        RestApi.instance.getImage(folderId: groupId, imageId: key!).then { data in
+        RestApi.instance.getImage(link: groupId + "/" + key!).then { data in
             print("Got data")
             self.image = UIImage(data: data)
             print("Got image from data")
@@ -125,26 +130,25 @@ private struct MyChatMessage: View {
                     .onAppear(perform: loadData)
                 
                 Text(messageBody)
-                    .padding(4)
+                    .padding(10)
                     .multilineTextAlignment(.leading)
-//                    .font(.system(size: 15).weight(.light))
-                    .background(ColorManager.grey2)
+                //                    .font(.system(size: 15).weight(.light))
+                    .background(ColorManager.grey3)
                     .opacity(0.7)
                     .font(.system(size: 15).weight(.thin))
                     .foregroundColor(.black)
-                    .cornerRadius(7)
-                   
+                    .cornerRadius(15)
             }
             
             HStack {
                 Spacer()
                 
                 Text(timeString)
-                    .font(.system(size: 10).weight(.light))
-                    .foregroundColor(ColorManager.grey2)
+                    .font(.system(size: 12).weight(.light))
+                    .foregroundColor(ColorManager.grey4)
             }
         }
-        .padding(.horizontal, 5)
+        .padding(.horizontal, 20)
     }
     
     private func loadData() {
@@ -152,7 +156,7 @@ private struct MyChatMessage: View {
         x = x / 60
         timeString = "\(x) min"
         if x > 60 {
-            x = x / 6
+            x = x / 60
             timeString = "\(x) hr"
             if x > 24 {
                 x = x / 24
@@ -176,7 +180,8 @@ private struct FriendChatMessage: View {
             HStack {
                 Text(name)
                     .frame(width: 200, alignment: .leading)
-                    .foregroundColor(.white)
+                    .foregroundColor(ColorManager.purple5)
+                //                    .foregroundColor(.green)
                     .font(.system(size: 16).weight(.thin))
                     .offset(x: 5, y: 5)
                     .onAppear(perform: loadData)
@@ -189,23 +194,23 @@ private struct FriendChatMessage: View {
                     .padding(10)
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 16).weight(.light))
+                //                    .background(ColorManager.grey4)
                     .foregroundColor(.white)
                     .background(ColorManager.purple3)
                     .cornerRadius(15)
                 
                 Spacer()
             }
-            .padding(.horizontal, 5)
             
             HStack {
-                Spacer()
-                
                 Text(timeString)
                     .font(.system(size: 12).weight(.light))
-                    .foregroundColor(ColorManager.purple5)
+                    .foregroundColor(ColorManager.orange5)
+                
+                Spacer()
             }
-            .padding(.horizontal, 5)
         }
+        .padding(.horizontal, 20)
     }
     
     private func loadData() {

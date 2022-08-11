@@ -10,19 +10,17 @@ enum AppState {
     case home
     case signUp
     case login
-    case invite
     case chat(user: User, group: Group)
-    case settings
-    case dramaMainView
     case masterFriendVault
     
     //    case bestFriendsMessages(user: User, atmosphere: Atmosphere, friends: [User], friendAtmospheres: [Atmosphere])
     //
     case fightTextUserIdeas
-    case whoFighting
     case parentsFighting
     case fightWithFriend
+    case infoView(user:User,group: Group)
     
+    case store
 }
 
 final class SessionManager: ObservableObject {
@@ -49,22 +47,12 @@ final class SessionManager: ObservableObject {
         }
     }
     
-    func showInvite() {
-        appState = .invite
-    }
-    
     func showChat(user: User, group: Group) {
         appState = .chat(user: user, group: group)
     }
     
-    func showSettings() {
-        appState = .settings
-    }
     
-    func showDramaMainView() {
-        appState = .dramaMainView
-    }
-    
+   
     func showMasterFriendVault() {
         appState = .masterFriendVault
     }
@@ -72,18 +60,29 @@ final class SessionManager: ObservableObject {
     func showFightTextUserIdeas() {
         appState = .fightTextUserIdeas
     }
-    func showWhoFighting() {
-        appState = .whoFighting
-    }
+    
     func showParentsFighting() {
         appState = .parentsFighting
     }
+    
     func showFightWithFriend() {
         appState = .fightWithFriend
     }
     
+    func infoView(user: User ,group: Group) {
+        appState = .infoView(user: user, group: group)
+    }
+    
+    func showStore() {
+        appState = .store
+    }
+    
+//    func infoViewPlanet(user: User, group: Group) {
+//        appState = .infoViewPlanet(user: user, group: group)
+//    }
+//
     func reloadHome() {
-        appState = .invite
+        appState = .login
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
             self.appState = .home
         }

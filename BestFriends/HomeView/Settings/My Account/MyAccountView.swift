@@ -11,18 +11,17 @@ import SwiftUI
 
 struct MyAccountView: View {
     
+    let user: User
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         ZStack {
-         
-
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
+            
+            
+            
+            ColorManager.grey4
                 .ignoresSafeArea()
-            Image("settingsBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
             
             VStack {
                 
@@ -36,9 +35,9 @@ struct MyAccountView: View {
                         Image("arrowRight")
                             .resizable()
                             .frame(width: 25, height: 25)
-                            
+                            .foregroundColor(.gray)
                             .scaledToFit()
-                            .colorInvert()
+                        //                            .colorInvert()
                             .rotationEffect(Angle(degrees: 180))
                     }
                     
@@ -47,136 +46,141 @@ struct MyAccountView: View {
                     
                     Text("Manage My Account")
                         .font(.system(size: 30))
-
+                        .foregroundColor(.gray)
+                    
                     Spacer()
                 }
                 Spacer()
                     .frame(height: 70)
-            
+                
                 Divider()
-               NavigationLink(
-                  destination: ResetPasswordView(),
-                  label: {
-                       HStack {
-                           Text("Reset Password")
-                               .font(.system(size: 20))
-                               .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                               .offset(x: 25)
-                          
-                           Spacer()
-
-                          Image("arrowRight")
-                              .resizable()
-                               .frame(width: 25, height: 25)
-                             .scaledToFit()
-                              .colorInvert()
-                       }
-                   })
-
+                NavigationLink(
+                    destination: ResetPasswordView(user: user),
+                    label: {
+                        HStack {
+                            Text("Reset Password")
+                                .font(.system(size: 20))
+                                .foregroundColor(.purple)
+                                .offset(x: 25)
+                            Spacer()
+                            
+                            Image("arrowRight")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(.gray)
+                                .scaledToFit()
+                            //                              .colorInvert()
+                        }
+                    })
+                
                 Divider()
                 
-              NavigationLink(
-               destination: ChangePin(),
-                 label: {
-                HStack {
-                    Text("Change PIN for Hide Chat")
-                            .font(.system(size: 20))
-                            .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                            .offset(x: 25)
+                NavigationLink(
+                    destination: ChangePin(user: user),
+                    label: {
+                        HStack {
+                            Text("Change PIN for Hide Chat")
+                                .font(.system(size: 20))
+                                .foregroundColor(.purple)
+                                .offset(x: 25)
+                            
+                            Spacer()
+                            
+                            Image("arrowRight")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(.gray)
+                                .scaledToFit()
+                            //                              .colorInvert()
+                        }
+                    })
+                
+                VStack {
+//                    Divider()
+//                    
+//                    NavigationLink(
+//                        destination: RemoveFriend2(user: user, removeFriend: RemoveFriend()),
+//                        label: {
+//                            HStack {
+//                                Text("Remove Friend")
+//                                    .font(.system(size: 20))
+//                                    .foregroundColor(.purple)
+//                                    .offset(x: 25)
+//                                
+//                                Spacer()
+//                                
+//                                Image("arrowRight")
+//                                    .resizable()                 .frame(width: 25, height: 25)
+//                                    .foregroundColor(.gray)
+//                                    .scaledToFit()
+//                                //                                 .colorInvert()
+//                            }
+//                        })
                     
-                           Spacer()
-
-                          Image("arrowRight")
-                              .resizable()
-                              .frame(width: 25, height: 25)
-                              .scaledToFit()
-                              .colorInvert()
-                      }
-                   })
-          
-            VStack {
-                Divider()
-                
-                NavigationLink(
-                 destination: RemoveFriend(),
-                   label: {
-                         HStack {
-                      Text("Remove Friend")
-                                .font(.system(size: 20))
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                .offset(x: 25)
-                             
-                             Spacer()
-
-                            Image("arrowRight")
-                                .resizable()                               .frame(width: 25, height: 25)
-                                 .scaledToFit()
-                                 .colorInvert()
-                        }
-                     })
-                  
-                Divider()
-                
-                NavigationLink(
-                 destination: SettingsNotificationsView(),
-                   label: {
-                         HStack {
-                      Text("Change Notifications Status")
-                                .font(.system(size: 20))
-                                .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                .offset(x: 25)
-                             
-                             Spacer()
-
-                            Image("arrowRight")
-                                .resizable()              .frame(width: 25, height: 25)
-                                 .scaledToFit()
-                                 .colorInvert()
-                        }
-                     })
-
-                
-            
-            VStack {
-                Divider()
-              
-                NavigationLink(
-                 destination: DeleteMyAccount(),
-                   label: {
-                         HStack {
-                      Text("Delete My Account")
-                                 .font(.system(size: 20))
-                                 .foregroundColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-                                 .offset(x: 25)
-
-                          Spacer()
-
-                            Image("arrowRight")
-                                .resizable()               .frame(width: 25, height: 25)
-                                 .scaledToFit()
-                                 .colorInvert()
-                        }
-                     })
-                Divider()
-            .navigationBarHidden(true)
-   
-            Spacer ()
-                    .frame(height: 300)
+                    Divider()
+                    
+                    NavigationLink(
+                        destination: SettingsNotificationsView(),
+                        label: {
+                            HStack {
+                                Text("Change Notifications Status")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(.purple)
+                                    .offset(x: 25)
+                                
+                                Spacer()
+                                
+                                Image("arrowRight")
+                                    .resizable()              .frame(width: 25, height: 25)
+                                    .foregroundColor(.gray)
+                                    .scaledToFit()
+                                //                                 .colorInvert()
+                            }
+                        })
+                    
+                    
+                    
+                    VStack {
+                        Divider()
+                        
+                        NavigationLink(
+                            destination: DeleteMyAccount(),
+                            label: {
+                                HStack {
+                                    Text("Delete My Account")
+                                        .font(.system(size: 20))
+                                        .foregroundColor(.purple)
+                                        .offset(x: 25)
+                                    
+                                    Spacer()
+                                    
+                                    Image("arrowRight")
+                                        .resizable()              .frame(width: 25, height: 25)
+                                        .foregroundColor(.gray)
+                                        .scaledToFit()
+                                    //                                 .colorInvert()
+                                }
+                            })
+                        Divider()
+                            .navigationBarHidden(true)
+                        
+                        Spacer ()
+                            .frame(height: 300)
+                        
+                    }
+                }
                 
             }
-    }
-   
-}
-    }
+        }
     }
 }
-        
-        
-        
-        
-struct MyAccountView_Previews : PreviewProvider {
-    static var previews: some View {
-        MyAccountView()
-    }
-}
+
+
+
+//        
+//struct MyAccountView_Previews : PreviewProvider {
+//    static var previews: some View {
+//        MyAccountView()
+//    }
+//}
 

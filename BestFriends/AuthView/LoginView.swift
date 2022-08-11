@@ -18,12 +18,21 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                ColorManager.purple1
+                
+                ColorManager.grey4
                     .ignoresSafeArea()
+                
+//                ColorManager.purple1
+//                    .ignoresSafeArea()
+                
+                
                 //TODO: Remove the onAppear for production
-//                    .onAppear {
+                    .onAppear {
 //                        sessionManager.login(email: "test1234@gmail.com", password: "secretPass")
-//                    }
+                        if RestApi.instance.needLogin == false {
+                            sessionManager.showHome()
+                        }
+                    }
                 
                 Circle()
                     .frame(width: 400, height: 400)
@@ -79,12 +88,13 @@ struct LoginView: View {
                         sessionManager.showSignUp()
                     }) {
                         Text("Sign Up")
+                            .font(.system(size: 25))
                             .underline()
                             .frame(width: 150, height: 30)
                             .foregroundColor(ColorManager.purple5)
                     }
                 }
             }
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }

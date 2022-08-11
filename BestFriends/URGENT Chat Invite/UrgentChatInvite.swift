@@ -53,7 +53,7 @@ struct UrgentChatInvite: View {
                 Button(action: {
                     defaultMessageButtonTapped(defaultMessage: "give me 5 minutes")
                     
-                    RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in 5 minutes", APNToken: owner.APNToken ?? "")
+                    RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in 5 minutes", APNToken: owner.APNToken )
                 }, label: {
                     Text("give me 5 minutes")
                         .fontWeight(.thin)
@@ -69,7 +69,7 @@ struct UrgentChatInvite: View {
                 Button(action: {
                     defaultMessageButtonTapped(defaultMessage: "give me 10 minutes")
                     
-                    RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in 10 minutes", APNToken: owner.APNToken ?? "")
+                    RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in 10 minutes", APNToken: owner.APNToken )
                 }, label: {
                     Text("give me 10 minutes")
                         .fontWeight(.thin)
@@ -85,7 +85,7 @@ struct UrgentChatInvite: View {
                 Button(action: {
                     defaultMessageButtonTapped(defaultMessage: "give me 30 minutes")
                     
-                    RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in 30 minutes", APNToken: owner.APNToken ?? "")
+                    RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in 30 minutes", APNToken: owner.APNToken )
                 }, label: {
                     Text("give me 30 minutes")
                         .fontWeight(.thin)
@@ -101,9 +101,9 @@ struct UrgentChatInvite: View {
                 Button(action: {
                     defaultMessageButtonTapped(defaultMessage: "give me 60 minutes")
 
-                    RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in an hour", APNToken: owner.APNToken ?? "")
+                    RestApi.instance.sendPushNotification(title: user.firstName, body: "I can chat in an hour", APNToken: owner.APNToken )
                 }, label: {
-                    Text("give me am hour")
+                    Text("give me a hour")
                         .fontWeight(.thin)
                         .frame(width: 240, height: 50)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -117,7 +117,7 @@ struct UrgentChatInvite: View {
                 Button(action: {
                     defaultMessageButtonTapped(defaultMessage: "Can't talk for a while")
                     
-                    RestApi.instance.sendPushNotification(title: user.firstName, body: "Can't talk for a while", APNToken: owner.APNToken ?? "")
+                    RestApi.instance.sendPushNotification(title: user.firstName, body: "Can't talk for a while", APNToken: owner.APNToken )
                 }, label: {
                     Text("Can't talk for a while")
                         .fontWeight(.thin)
