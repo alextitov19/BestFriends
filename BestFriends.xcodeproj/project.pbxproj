@@ -43,6 +43,7 @@
 		7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */; };
 		7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD022625292B00E6FA9E /* Assets.xcassets */; };
 		7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD052625292B00E6FA9E /* Preview Assets.xcassets */; };
+		7A720CC328A583E900992FD2 /* CustomizeMyPlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A720CC228A583E900992FD2 /* CustomizeMyPlanetView.swift */; };
 		7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A77FC6F27FBD3C7007CC5E6 /* InviteModels.swift */; };
 		7A78232D26B2419600CA76FC /* blender.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A78232826B2419600CA76FC /* blender.mp4 */; };
 		7A78232E26B2419600CA76FC /* bull.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A78232926B2419600CA76FC /* bull.mp4 */; };
@@ -267,6 +268,7 @@
 		7A71BD022625292B00E6FA9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A71BD052625292B00E6FA9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A71BD072625292B00E6FA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A720CC228A583E900992FD2 /* CustomizeMyPlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeMyPlanetView.swift; sourceTree = "<group>"; };
 		7A77FC6F27FBD3C7007CC5E6 /* InviteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteModels.swift; sourceTree = "<group>"; };
 		7A78232826B2419600CA76FC /* blender.mp4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = blender.mp4; sourceTree = "<group>"; };
 		7A78232926B2419600CA76FC /* bull.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bull.mp4; sourceTree = "<group>"; };
@@ -812,6 +814,7 @@
 			isa = PBXGroup;
 			children = (
 				CF3B65C3280104290003A714 /* SettingsView.swift */,
+				7A720CC228A583E900992FD2 /* CustomizeMyPlanetView.swift */,
 				CF1ECAC628752C3700D999F8 /* SettingsTutorial.swift */,
 				CF3B65BC280091280003A714 /* DemoVideoView.swift */,
 				CF3B65D42801ED660003A714 /* GetInvolvedView.swift */,
@@ -1530,6 +1533,7 @@
 				7AB5217328A1E079005A49FA /* LocationManager.swift in Sources */,
 				CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */,
 				CF09118A2848875C00CB0AF0 /* PhotoPopVideo.swift in Sources */,
+				7A720CC328A583E900992FD2 /* CustomizeMyPlanetView.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7ADFDB33289B1FA60004FB1C /* ShakePhotoPopView.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,

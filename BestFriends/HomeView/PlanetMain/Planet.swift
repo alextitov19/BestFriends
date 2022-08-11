@@ -222,7 +222,7 @@ struct PlanetActionsView: View {
 //
 //                    MARK: First setup
                     
-                    NavigationLink(destination: InfoViewPlanet(user: user),
+                    NavigationLink(destination: InfoViewPlanet(user: user, atmosphere: atmosphere),
                                    label: {
                         ZStack {
                             Circle()

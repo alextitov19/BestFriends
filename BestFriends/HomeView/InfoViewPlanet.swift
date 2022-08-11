@@ -14,7 +14,7 @@ struct InfoViewPlanet: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
-    
+    let atmosphere: Atmosphere
     
     var body: some View {
         ZStack {
@@ -199,7 +199,7 @@ struct InfoViewPlanet: View {
                 
                 VStack {
                         NavigationLink(
-                            destination: SettingsView(user: user),
+                            destination: SettingsView(user: user, atmosphere: atmosphere),
                             label: {
                                 Text("SETTINGS PAGE")
                                     .fontWeight(.thin)
