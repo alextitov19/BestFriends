@@ -52,7 +52,11 @@ struct ChangeChatBackgroundView: View {
     }
     
     private func loadData() {
-        selectedBackground = Int(user.chatBackground ?? "0") ?? 0
+        if user.chatBackground == "" {
+            selectedBackground = 0
+        } else {
+            selectedBackground = Int(user.chatBackground) ?? 0
+        }
     }
     
     private struct BackgroundCard: View {

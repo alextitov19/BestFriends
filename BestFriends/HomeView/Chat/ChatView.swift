@@ -33,46 +33,20 @@ struct ChatView: View {
     @State private var isLockTapped = false
     @State var pickerSourceType: UIImagePickerController.SourceType = .photoLibrary
     var body: some View {
-//        NavigationView{
-      
-        
         ZStack {
-            if user.chatBackground == nil {
+            if user.chatBackground == "0" || user.chatBackground == "" {
                 Image("background_0")
                     .resizable()
                     .ignoresSafeArea()
                     .scaledToFill()
             } else {
-                if user.chatBackground! == "0" {
-                    Image("background_0")
-                        .resizable()
-                        .ignoresSafeArea()
-                        .scaledToFill()
-                } else {
-                    AdPlayerView(name: "background_" + user.chatBackground!)
-                        .ignoresSafeArea()
-                }
+                AdPlayerView(name: "background_" + user.chatBackground)
+                    .ignoresSafeArea()
             }
-            
-            
             
             VStack {
                 // MARK: Header
                 HStack {
-                    
-//                    Text("<")
-////                        .resizable()
-//                        .frame(width: 35, height: 35)
-//                        .font(.system(size: 30))
-////                        .fontWeight(.light)
-//                       .foregroundColor(.blue)
-//
-//                        .scaledToFill()
-//                        .onTapGesture(perform: {
-//                            sessionManager.showHome()
-//                        })
-//
-                    
                     Image(systemName: "info.circle")
                         .resizable()
                         .frame(width: 27, height: 27)
@@ -82,7 +56,7 @@ struct ChatView: View {
                             sessionManager.infoView(user: user, group: group)
                         })
                     
-
+                    
                     Image("home-alt2")
                         .resizable()
                         .frame(width: 30, height: 30)
@@ -126,11 +100,11 @@ struct ChatView: View {
                     
                     Text("Delete Me")
                         .foregroundColor(ColorManager.grey4)
-//                        .foregroundColor(.gray)
+                    //                        .foregroundColor(.gray)
                         .font(.system(size: 18, weight: .thin))
                         .onTapGesture(perform: leaveChatGroup)
                 }
-               
+                
                 
                 
                 // MARK: Main scroll view
@@ -202,7 +176,7 @@ struct ChatView: View {
                 }
             }
         }//ZStack
-//        }.navigationViewStyle(StackNavigationViewStyle())
+        //        }.navigationViewStyle(StackNavigationViewStyle())
     }//body
     
     private func saveToSmileNotes(message: Message) {

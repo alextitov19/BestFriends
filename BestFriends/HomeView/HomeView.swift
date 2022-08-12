@@ -28,7 +28,7 @@ struct HomeView: View {
     
     @State private var newGroupMembers: [String] = []
     
-    @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), groups: [])
+    @State private var chatGroupsView = ChatGroupsView(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: "", chatBackground: ""), groups: [])
     
     @State private var presentingPhotoPop = false
     var body: some View {

@@ -53,7 +53,7 @@ struct FG_VideoCall: View {
 //             
      
            
-            NavigationLink(destination: FaceTimeCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), friends: []), label: {
+            NavigationLink(destination: FaceTimeCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: "", chatBackground: ""), friends: []), label: {
                   FG_VideoCallCircle (color: .green, friendName: "Schedule \nFaceTime \nCall")
             })
             .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
