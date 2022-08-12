@@ -32,7 +32,7 @@
 		7A2C2159280509DA009362CF /* cloud.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A2C2156280509DA009362CF /* cloud.mp4 */; };
 		7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2C215C28050BCD009362CF /* ChatBubble.swift */; };
 		7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A380F1528271E3E007151AB /* AppDelegate.swift */; };
-		7A383FFD267AC306002F354A /* FieldFlowers.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */; };
+		7A383FFD267AC306002F354A /* background_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D6266477C600243DD7 /* background_4.mp4 */; };
 		7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */; };
 		7A469E54284D6AC0004AF547 /* TextAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A469E53284D6AC0004AF547 /* TextAlert.swift */; };
 		7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4D50062783B9D3006F7404 /* UIScreenExtension.swift */; };
@@ -44,9 +44,10 @@
 		7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD022625292B00E6FA9E /* Assets.xcassets */; };
 		7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD052625292B00E6FA9E /* Preview Assets.xcassets */; };
 		7A720CC328A583E900992FD2 /* CustomizeMyPlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A720CC228A583E900992FD2 /* CustomizeMyPlanetView.swift */; };
+		7A720CC528A6CB6800992FD2 /* ChangeChatBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A720CC428A6CB6800992FD2 /* ChangeChatBackgroundView.swift */; };
 		7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A77FC6F27FBD3C7007CC5E6 /* InviteModels.swift */; };
 		7A78232D26B2419600CA76FC /* blender.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A78232826B2419600CA76FC /* blender.mp4 */; };
-		7A78232E26B2419600CA76FC /* bull.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A78232926B2419600CA76FC /* bull.mp4 */; };
+		7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A78232926B2419600CA76FC /* background_5.mp4 */; };
 		7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A23B32803D62700B87613 /* WebSocket.swift */; };
 		7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */; };
 		7A8A17C128414A390088DC04 /* SmileNoteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A17C028414A390088DC04 /* SmileNoteModels.swift */; };
@@ -143,18 +144,18 @@
 		CF4A08E62879481200ADA9DD /* NostalgiaPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E52879481200ADA9DD /* NostalgiaPreload2.swift */; };
 		CF4A08EC287956A100ADA9DD /* sky.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08EB287956A100ADA9DD /* sky.mp4 */; };
 		CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08ED2879577E00ADA9DD /* sky2.mp4 */; };
-		CF4A08F0287F837900ADA9DD /* nostalgia.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08EF287F837900ADA9DD /* nostalgia.mp4 */; };
+		CF4A08F0287F837900ADA9DD /* background_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08EF287F837900ADA9DD /* background_3.mp4 */; };
 		CF4A08F2287F84DD00ADA9DD /* MoonChild.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08F1287F84DD00ADA9DD /* MoonChild.mp4 */; };
 		CF4A08F62883717000ADA9DD /* SmileVault2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08F52883717000ADA9DD /* SmileVault2.mp4 */; };
 		CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */; };
 		CF4A0905288609D800ADA9DD /* nina1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A0904288609D800ADA9DD /* nina1.mp4 */; };
 		CF4A090728860B7000ADA9DD /* slowclouds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090628860B7000ADA9DD /* slowclouds.mp4 */; };
-		CF4A090928860CC300ADA9DD /* clouds2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090828860CC300ADA9DD /* clouds2.mp4 */; };
+		CF4A090928860CC300ADA9DD /* background_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090828860CC300ADA9DD /* background_2.mp4 */; };
 		CF4A090B28860DCD00ADA9DD /* cloudsAd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090A28860DCC00ADA9DD /* cloudsAd.mp4 */; };
 		CF6503FA28861D190092EEB9 /* NikeWaterBottleAd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */; };
 		CF6503FC288647240092EEB9 /* Nike1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FB288647230092EEB9 /* Nike1.mp4 */; };
 		CF6503FE288648BB0092EEB9 /* Nike2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FD288648BB0092EEB9 /* Nike2.mp4 */; };
-		CF65040028864AF00092EEB9 /* Nike3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* Nike3.mp4 */; };
+		CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* background_1.mp4 */; };
 		CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650405288E76B50092EEB9 /* GotPushNotification.swift */; };
 		CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040928915A080092EEB9 /* FD_Step1.swift */; };
 		CF65040C28925FE00092EEB9 /* MyRoomDVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */; };
@@ -269,9 +270,10 @@
 		7A71BD052625292B00E6FA9E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A71BD072625292B00E6FA9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A720CC228A583E900992FD2 /* CustomizeMyPlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeMyPlanetView.swift; sourceTree = "<group>"; };
+		7A720CC428A6CB6800992FD2 /* ChangeChatBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatBackgroundView.swift; sourceTree = "<group>"; };
 		7A77FC6F27FBD3C7007CC5E6 /* InviteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteModels.swift; sourceTree = "<group>"; };
 		7A78232826B2419600CA76FC /* blender.mp4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = blender.mp4; sourceTree = "<group>"; };
-		7A78232926B2419600CA76FC /* bull.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = bull.mp4; sourceTree = "<group>"; };
+		7A78232926B2419600CA76FC /* background_5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_5.mp4; sourceTree = "<group>"; };
 		7A7A23B32803D62700B87613 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtension.swift; sourceTree = "<group>"; };
 		7A8A17C028414A390088DC04 /* SmileNoteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileNoteModels.swift; sourceTree = "<group>"; };
@@ -368,19 +370,19 @@
 		CF4A08E52879481200ADA9DD /* NostalgiaPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload2.swift; sourceTree = "<group>"; };
 		CF4A08EB287956A100ADA9DD /* sky.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sky.mp4; sourceTree = "<group>"; };
 		CF4A08ED2879577E00ADA9DD /* sky2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sky2.mp4; sourceTree = "<group>"; };
-		CF4A08EF287F837900ADA9DD /* nostalgia.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nostalgia.mp4; sourceTree = "<group>"; };
+		CF4A08EF287F837900ADA9DD /* background_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_3.mp4; sourceTree = "<group>"; };
 		CF4A08F1287F84DD00ADA9DD /* MoonChild.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MoonChild.mp4; sourceTree = "<group>"; };
 		CF4A08F52883717000ADA9DD /* SmileVault2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SmileVault2.mp4; sourceTree = "<group>"; };
 		CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweetheart1.swift; sourceTree = "<group>"; };
 		CF4A0904288609D800ADA9DD /* nina1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nina1.mp4; sourceTree = "<group>"; };
 		CF4A090628860B7000ADA9DD /* slowclouds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = slowclouds.mp4; sourceTree = "<group>"; };
-		CF4A090828860CC300ADA9DD /* clouds2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = clouds2.mp4; sourceTree = "<group>"; };
+		CF4A090828860CC300ADA9DD /* background_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_2.mp4; sourceTree = "<group>"; };
 		CF4A090A28860DCC00ADA9DD /* cloudsAd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloudsAd.mp4; sourceTree = "<group>"; };
-		CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FieldFlowers.mp4; sourceTree = "<group>"; };
+		CF5263D6266477C600243DD7 /* background_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_4.mp4; sourceTree = "<group>"; };
 		CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NikeWaterBottleAd.mp4; sourceTree = "<group>"; };
 		CF6503FB288647230092EEB9 /* Nike1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nike1.mp4; sourceTree = "<group>"; };
 		CF6503FD288648BB0092EEB9 /* Nike2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nike2.mp4; sourceTree = "<group>"; };
-		CF6503FF28864AF00092EEB9 /* Nike3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nike3.mp4; sourceTree = "<group>"; };
+		CF6503FF28864AF00092EEB9 /* background_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_1.mp4; sourceTree = "<group>"; };
 		CF650405288E76B50092EEB9 /* GotPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotPushNotification.swift; sourceTree = "<group>"; };
 		CF65040928915A080092EEB9 /* FD_Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FD_Step1.swift; sourceTree = "<group>"; };
 		CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomDVid.swift; sourceTree = "<group>"; };
@@ -815,6 +817,7 @@
 			children = (
 				CF3B65C3280104290003A714 /* SettingsView.swift */,
 				7A720CC228A583E900992FD2 /* CustomizeMyPlanetView.swift */,
+				7A720CC428A6CB6800992FD2 /* ChangeChatBackgroundView.swift */,
 				CF1ECAC628752C3700D999F8 /* SettingsTutorial.swift */,
 				CF3B65BC280091280003A714 /* DemoVideoView.swift */,
 				CF3B65D42801ED660003A714 /* GetInvolvedView.swift */,
@@ -863,7 +866,6 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
-				CF6503FF28864AF00092EEB9 /* Nike3.mp4 */,
 				CF6503FD288648BB0092EEB9 /* Nike2.mp4 */,
 				CF6503FB288647230092EEB9 /* Nike1.mp4 */,
 				CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */,
@@ -877,12 +879,13 @@
 		CF5263FC266F201000243DD7 /* Background Videos */ = {
 			isa = PBXGroup;
 			children = (
-				CF4A090828860CC300ADA9DD /* clouds2.mp4 */,
-				CF4A08EF287F837900ADA9DD /* nostalgia.mp4 */,
+				CF6503FF28864AF00092EEB9 /* background_1.mp4 */,
+				CF4A090828860CC300ADA9DD /* background_2.mp4 */,
+				CF4A08EF287F837900ADA9DD /* background_3.mp4 */,
+				CF5263D6266477C600243DD7 /* background_4.mp4 */,
+				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CF4A08F1287F84DD00ADA9DD /* MoonChild.mp4 */,
-				CF5263D6266477C600243DD7 /* FieldFlowers.mp4 */,
 				CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */,
-				7A78232926B2419600CA76FC /* bull.mp4 */,
 				CF4A090A28860DCC00ADA9DD /* cloudsAd.mp4 */,
 				CF4A090628860B7000ADA9DD /* slowclouds.mp4 */,
 				CF4A08F52883717000ADA9DD /* SmileVault2.mp4 */,
@@ -1298,19 +1301,19 @@
 				CF6503FC288647240092EEB9 /* Nike1.mp4 in Resources */,
 				CF4A08F2287F84DD00ADA9DD /* MoonChild.mp4 in Resources */,
 				CF6503FA28861D190092EEB9 /* NikeWaterBottleAd.mp4 in Resources */,
-				CF4A08F0287F837900ADA9DD /* nostalgia.mp4 in Resources */,
+				CF4A08F0287F837900ADA9DD /* background_3.mp4 in Resources */,
 				CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */,
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */,
 				CF4A08DC2878495F00ADA9DD /* Atmosphere.mp4 in Resources */,
 				CFA12270285A9A1E00E22E84 /* myRoom2.mp4 in Resources */,
 				CF4A08F62883717000ADA9DD /* SmileVault2.mp4 in Resources */,
-				CF4A090928860CC300ADA9DD /* clouds2.mp4 in Resources */,
+				CF4A090928860CC300ADA9DD /* background_2.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				CF6504142892F66D0092EEB9 /* MyRoomVid2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
-				7A78232E26B2419600CA76FC /* bull.mp4 in Resources */,
+				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,
 				CFD0ABDA285C4C720032CA3D /* BuiltByTeensVid.mp4 in Resources */,
 				CF4A0905288609D800ADA9DD /* nina1.mp4 in Resources */,
 				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,
@@ -1320,12 +1323,12 @@
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */,
 				CF4A090B28860DCD00ADA9DD /* cloudsAd.mp4 in Resources */,
-				CF65040028864AF00092EEB9 /* Nike3.mp4 in Resources */,
+				CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */,
 				CFD0ABDE285C4E7C0032CA3D /* BFVideo.mp4 in Resources */,
 				7A2C2159280509DA009362CF /* cloud.mp4 in Resources */,
 				7A78232D26B2419600CA76FC /* blender.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
-				7A383FFD267AC306002F354A /* FieldFlowers.mp4 in Resources */,
+				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,
 				CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */,
 				CF65042B28A185750092EEB9 /* PaperAirplanes.mp4 in Resources */,
 				CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */,
@@ -1437,6 +1440,7 @@
 				CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */,
 				CF1ECAC52872AA4B00D999F8 /* IntroFreindGp2.swift in Sources */,
 				7AB52171289D9BF1005A49FA /* StoreManager.swift in Sources */,
+				7A720CC528A6CB6800992FD2 /* ChangeChatBackgroundView.swift in Sources */,
 				CFAB540B281BB6EE00BBF502 /* DramaCentralView.swift in Sources */,
 				CF381A502827372100B3719E /* Step2_ParentsFighting.swift in Sources */,
 				CFA1226228597AFC00E22E84 /* HurtFeelings2.swift in Sources */,

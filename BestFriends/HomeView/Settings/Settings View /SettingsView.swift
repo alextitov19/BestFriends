@@ -112,6 +112,30 @@ struct SettingsView: View {
                         .padding(.horizontal, 15)
                     })
                 
+                Divider()
+                
+//                Spacer()
+//                    .frame(height: 20)
+                
+                NavigationLink(
+                    destination: ChangeChatBackgroundView(user: user),
+                    label: {
+                        HStack {
+                            Text("Change Chat Background")
+                                .font(.system(size: 20))
+                                .foregroundColor(.purple)
+                            
+                            Spacer()
+                            
+                            Image("arrowRight")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .scaledToFit()
+                            //                                .colorInvert()
+                        }
+                        .padding(.horizontal, 15)
+                    })
+                
                 .navigationBarHidden(true)
                 
                 //                MARK: Set up [Customize my Planet here

@@ -102,7 +102,7 @@ struct ChangePin: View {
             return
         }
         if user.chatPin == oldPin {
-            RestApi.instance.updateUser(user: User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: newPin, smileNotes: user.smileNotes)).then({ response in
+            RestApi.instance.updateUser(user: User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: newPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes)).then({ response in
                 if response == 200 {
                     statusString = "Success"
                     statusColor = Color.green

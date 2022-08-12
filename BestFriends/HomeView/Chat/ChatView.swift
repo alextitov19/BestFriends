@@ -37,9 +37,23 @@ struct ChatView: View {
       
         
         ZStack {
-       
-            AdPlayerView(name: "nostalgia")
-                .ignoresSafeArea()
+            if user.chatBackground == nil {
+                Image("background_0")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+            } else {
+                if user.chatBackground! == "0" {
+                    Image("background_0")
+                        .resizable()
+                        .ignoresSafeArea()
+                        .scaledToFill()
+                } else {
+                    AdPlayerView(name: "background_" + user.chatBackground!)
+                        .ignoresSafeArea()
+                }
+            }
+            
             
             
             VStack {
@@ -90,7 +104,7 @@ struct ChatView: View {
                         .onTapGesture(perform: {
                             var hiddenGroups: [String] = user.hiddenGroups ?? []
                             hiddenGroups.append(group.id)
-                            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, smileNotes: user.smileNotes)
+                            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes)
                             RestApi.instance.updateUser(user: updatedUser).then({ response in
                                 print("Got update response: ", response)
                                 isLockTapped.toggle()
@@ -270,7 +284,7 @@ struct ChatView: View {
         var chatGroups = user.groups!
         if let index = chatGroups.firstIndex(of: group.id) {
             chatGroups.remove(at: index)
-            let updateduser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: chatGroups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, smileNotes: user.smileNotes)
+            let updateduser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: chatGroups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes, photoPop: user.photoPop)
             RestApi.instance.updateUser(user: updateduser).then({ result in
                 print("Update user result: ", result)
                 sessionManager.showHome()

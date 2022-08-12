@@ -17,6 +17,7 @@ struct User: Codable {
     var hiddenGroups: [String]?
     var atmosphere: String
     var chatPin: String
+    var chatBackground: String
     var smileNotes: [String]?
     var photoPop: [String]?
 
@@ -30,6 +31,7 @@ struct User: Codable {
         case hiddenGroups = "hidden_groups"
         case atmosphere = "atmosphere"
         case chatPin = "chat_pin"
+        case chatBackground = "chat_background"
         case smileNotes = "smile_notes"
         case photoPop = "photo_pop"
     }
