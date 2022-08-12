@@ -38,7 +38,6 @@ struct ChatView: View {
                 Image("background_0")
                     .resizable()
                     .ignoresSafeArea()
-                    .scaledToFill()
             } else {
                 AdPlayerView(name: "background_" + user.chatBackground)
                     .ignoresSafeArea()

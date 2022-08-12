@@ -55,7 +55,7 @@ struct ChangeChatBackgroundView: View {
         if user.chatBackground == "" {
             selectedBackground = 0
         } else {
-            selectedBackground = Int(user.chatBackground) ?? 0
+            selectedBackground = Int(user.chatBackground)!
         }
     }
     
