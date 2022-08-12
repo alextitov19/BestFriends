@@ -20,6 +20,7 @@ struct ChangeChatBackgroundView: View {
             
             VStack {
                 Text("Change chat background")
+                    .onAppear(perform: loadData)
                 
                 HStack {
                     BackgroundCard(title: "Default", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
@@ -55,7 +56,7 @@ struct ChangeChatBackgroundView: View {
         if user.chatBackground == "" {
             selectedBackground = 0
         } else {
-            selectedBackground = Int(user.chatBackground)!
+            selectedBackground = Int(user.chatBackground) ?? 0
         }
     }
     
