@@ -54,7 +54,7 @@ struct DeleteMyAccount: View {
                 TextEditor(text: $reason)
                     .multilineTextAlignment(.center)
                     .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
-                    .frame(width: 300, height: 300, alignment: .center)
+                    .frame(width: 300, height: 100, alignment: .center)
 //                    .font(.title)
                     .font(.system(size: 20))
                     .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -62,36 +62,19 @@ struct DeleteMyAccount: View {
                     .disableAutocorrection(true)
                     .autocapitalization(.none)
                 
-                
-//
-//                Button(action: {
-//                    // Delete account code
-//                    userManager.deleteUser(reason: reason)
-//                    sessionManager.signOut()
-//                }) {
-//                    Text("Delete Account")
-//                    .fontWeight(.thin)
-//                    .frame(width: 225, height: 40)
-//                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                    .font(.system(size: 30))
-////                    .background(ColorManager.purple3)
-//                    .background(colorChangeTap == "Delete Account" ? ColorManager.purple2 : ColorManager.purple4)
-//
-//
-//                    .cornerRadius(15)
-//                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
 
                 Spacer()
                     .frame(height: 30)
                 
                 NavigationLink(
-                    destination: EmptyView(),
+                    destination: DeleteUserData(),
                     label: {
-                        Text("Delete Account")
+                        Text("Permanently Delete Account")
                             .fontWeight(.thin)
-                            .frame(width: 225, height: 40)
+                            .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
+                            .font(.system(size: 25))
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
