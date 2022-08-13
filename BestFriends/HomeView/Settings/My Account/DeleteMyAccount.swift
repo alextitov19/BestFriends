@@ -68,6 +68,20 @@ struct DeleteMyAccount: View {
 
                 Spacer()
                     .frame(height: 30)
+            
+                
+               
+                
+                Text("We will delete all your associated personal data. If you wish to delete your entire accout record please tell us in your email to us.")
+                    .font(.system(size: 20))
+                    .fontWeight(.regular)
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.center)
+                
+                    .padding()
+              
+                Spacer()
+                    .frame(height: 10)
                 
                 NavigationLink(
                     destination: DeleteUserData(),

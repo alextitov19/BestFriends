@@ -177,6 +177,7 @@
 		CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */; };
 		CF76FA08285EED3E000750A4 /* ReceivedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */; };
 		CF9957F128A72E77000BBAFF /* DeleteUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F028A72E77000BBAFF /* DeleteUserData.swift */; };
+		CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */; };
 		CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */; };
 		CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */; };
 		CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */; };
@@ -405,6 +406,7 @@
 		CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPrototype.swift; sourceTree = "<group>"; };
 		CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedPlaylist.swift; sourceTree = "<group>"; };
 		CF9957F028A72E77000BBAFF /* DeleteUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserData.swift; sourceTree = "<group>"; };
+		CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellingPURPLE.swift; sourceTree = "<group>"; };
 		CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3FG_Acountability.swift; sourceTree = "<group>"; };
 		CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2FG_TeenBehavior.swift; sourceTree = "<group>"; };
 		CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_OurAdvantage.swift; sourceTree = "<group>"; };
@@ -811,6 +813,7 @@
 				CF3B65E3280219B70003A714 /* RemoveFriend.swift */,
 				CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */,
 				CF9957F028A72E77000BBAFF /* DeleteUserData.swift */,
+				CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */,
 			);
 			path = "My Account";
 			sourceTree = "<group>";
@@ -1503,6 +1506,7 @@
 				7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */,
 				CF4A08E62879481200ADA9DD /* NostalgiaPreload2.swift in Sources */,
 				CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */,
+				CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */,
 				CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
@@ -1723,7 +1727,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 13;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1753,7 +1757,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
