@@ -178,6 +178,8 @@
 		CF76FA08285EED3E000750A4 /* ReceivedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */; };
 		CF9957F128A72E77000BBAFF /* DeleteUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F028A72E77000BBAFF /* DeleteUserData.swift */; };
 		CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */; };
+		CF9957F528A7F244000BBAFF /* SomethingBuggingYou.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */; };
+		CF9957F728A7FB05000BBAFF /* SaySomethingNice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F628A7FB05000BBAFF /* SaySomethingNice.swift */; };
 		CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */; };
 		CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */; };
 		CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */; };
@@ -407,6 +409,8 @@
 		CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedPlaylist.swift; sourceTree = "<group>"; };
 		CF9957F028A72E77000BBAFF /* DeleteUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserData.swift; sourceTree = "<group>"; };
 		CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellingPURPLE.swift; sourceTree = "<group>"; };
+		CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingBuggingYou.swift; sourceTree = "<group>"; };
+		CF9957F628A7FB05000BBAFF /* SaySomethingNice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice.swift; sourceTree = "<group>"; };
 		CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3FG_Acountability.swift; sourceTree = "<group>"; };
 		CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2FG_TeenBehavior.swift; sourceTree = "<group>"; };
 		CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_OurAdvantage.swift; sourceTree = "<group>"; };
@@ -936,6 +940,8 @@
 			isa = PBXGroup;
 			children = (
 				CF650426289F11980092EEB9 /* WorldPreload.swift */,
+				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
+				CF9957F628A7FB05000BBAFF /* SaySomethingNice.swift */,
 			);
 			path = BestFriendsWorld;
 			sourceTree = "<group>";
@@ -1458,6 +1464,7 @@
 				CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */,
 				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
 				CFAB5407281AAFA100BBF502 /* TryThis.swift in Sources */,
+				CF9957F528A7F244000BBAFF /* SomethingBuggingYou.swift in Sources */,
 				CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */,
 				CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */,
 				CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */,
@@ -1517,6 +1524,7 @@
 				CF9957F128A72E77000BBAFF /* DeleteUserData.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */,
+				CF9957F728A7FB05000BBAFF /* SaySomethingNice.swift in Sources */,
 				CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */,
 				7ACACDA82853EAB700D8AB75 /* UIAlertControllerExtension.swift in Sources */,
 				CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */,
