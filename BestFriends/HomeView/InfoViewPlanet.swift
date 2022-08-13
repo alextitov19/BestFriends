@@ -110,7 +110,7 @@ struct InfoViewPlanet: View {
              
                 VStack {
                     Spacer()
-                    .frame(height: 35)
+                    .frame(height: 15)
 
                     Text("Create")
                         .font(.system(size: 35))
@@ -146,7 +146,7 @@ struct InfoViewPlanet: View {
             VStack {
                 
                 Spacer()
-                .frame(height: 35)
+                .frame(height: 15)
                 
           
            Text("Chat Rooms")

@@ -34,7 +34,7 @@ struct DeleteMyAccount: View {
             
             VStack {
                 Text("Delete My Account")
-                    .font(.system(size: 40))
+                    .font(.system(size: 35))
                     .fontWeight(.regular)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
@@ -47,6 +47,8 @@ struct DeleteMyAccount: View {
                     .fontWeight(.regular)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
+                
+                    .padding()
                 
                 Spacer()
                     .frame(height: 20)
