@@ -63,7 +63,14 @@ struct CancellingPURPLE: View {
                 Spacer()
                     .frame(height: 15)
                 
-        
+                Text("NOTE: Before you send us an email to delete your account you MUST remove all your friends and REMOVE yourself from all Chat groups. If you do NOT do this we can NOT delete your account because it will de-active your friends accounts.")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(.red)
+                    .multilineTextAlignment(.center)
+                
+                    .padding()
                 
                 Button(action: {
                     sessionManager.showLogin()
@@ -78,7 +85,9 @@ struct CancellingPURPLE: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
+               
                 
+             
                 Spacer()
                     .frame(height: 150)
                 
@@ -96,7 +105,7 @@ struct CancellingPURPLE: View {
     }
 }
     
-
+                          
 struct CancellingPURPLE_Previews : PreviewProvider {
     static var previews: some View {
         CancellingPURPLE()
