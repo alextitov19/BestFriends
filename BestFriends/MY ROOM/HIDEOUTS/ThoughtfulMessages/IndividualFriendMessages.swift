@@ -25,7 +25,7 @@ struct IndividualFriendMessages: View {
                 .scaledToFill()
                 .onAppear(perform: loadData)
             
-            AdPlayerView(name: "Nike3")
+            AdPlayerView(name: "background_1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             

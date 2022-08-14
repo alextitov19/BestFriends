@@ -36,7 +36,7 @@ struct NostalgiaPreload2: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "nostalgia")
+            AdPlayerView(name: "background_3")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
