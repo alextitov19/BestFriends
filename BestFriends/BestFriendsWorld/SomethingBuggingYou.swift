@@ -95,7 +95,7 @@ struct SomethingBuggingYou: View {
                 Spacer()
                     .frame(height:40)
             
-                Text("For the next 3 minutes, this is your chance to \nget this off your chest, out in the open")
+                Text("For the next 3 minutes, this is your chance to \nget this off your chest, out in the open, \nand STOP stewing.")
                              .font(.system(size: 15))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
