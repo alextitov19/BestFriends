@@ -43,19 +43,20 @@ struct SomethingBuggingYou: View {
             
             VStack {
                 
-                Text("Building Stronger")
-                    .font(.system(size: 30))
-                    .italic()
-                    .foregroundColor(ColorManager.orange2)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Text("FRIENDSHIPS")
-                    .font(.system(size: 55))
-                    
-                    .foregroundColor(ColorManager.orange2)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
+//                Text("Building Stronger")
+//                    .font(.system(size: 30))
+//                    .italic()
+//                    .foregroundColor(ColorManager.orange2)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//                
+//                Text("FRIENDSHIPS")
+//                    .font(.system(size: 55))
+//                    
+//                    .foregroundColor(ColorManager.orange2)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+             
                 Spacer()
                     .frame(height:20)
                 
@@ -95,7 +96,7 @@ struct SomethingBuggingYou: View {
                 Spacer()
                     .frame(height:40)
             
-                Text("For the next 3 minutes, this is your chance to \nget this off your chest, out in the open, \nand STOP stewing.")
+                Text("For the next 10 minutes, this is your chance to \nget this off your chest, out in the open, \nand STOP stewing.")
                              .font(.system(size: 15))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)

@@ -222,7 +222,7 @@ struct PlanetActionsView: View {
 //
 //                    MARK: First setup
                     
-                    NavigationLink(destination: InfoViewPlanet(user: user, atmosphere: atmosphere),
+                    NavigationLink(destination: WorldPreload(user: user, atmosphere: atmosphere, friends: friends),
                                    label: {
                         ZStack {
                             Circle()
@@ -234,24 +234,23 @@ struct PlanetActionsView: View {
 //
                             VStack {
                                 
-
-                                Text("Start")
+                                Image("BestFriends")
+                                    .resizable()
+                                    .frame(width: 30, height: 30)
+                                    .scaledToFill()
+                                
+                                Text("Sunday's")
                                     .foregroundColor(.green)
-                                    .font(.system(size: 25, weight: .bold))
+                                    .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.70)
                                 
-                                Text("Here")
+                                Text("8pm")
                                     .foregroundColor(.green)
-                                    .font(.system(size: 25, weight: .bold))
+                                    .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.70)
-                              
-                                Text("& Settings")
-                                    .foregroundColor(.black)
-                                    .font(.system(size: 12, weight: .light))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.70)
+                             
                                 
                             }
                         }
@@ -263,8 +262,13 @@ struct PlanetActionsView: View {
                     
                     
                     
-                      NavigationLink(destination: Subscriptions(),
-                                     label: {
+//                      NavigationLink(destination: Subscriptions(),
+//                                   label: {
+//                        
+                          
+                          NavigationLink(destination: InfoViewPlanet(user: user, atmosphere: atmosphere),
+                                         label: {
+                          
                           ZStack {
                               Circle()
                                   .frame(width: 90, height: 90)
@@ -274,18 +278,36 @@ struct PlanetActionsView: View {
 
                               VStack {
                                   
-                                  Text("Ad Free")
-                                       .foregroundColor(.green)
-                                       .font(.system(size: 23, weight: .bold))
-                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                       .opacity(0.50)
-
-                                 Text("PURPLE")
-                                      .foregroundColor(.purple)
+                                  Text("Info &")
+                                      .foregroundColor(.green)
                                       .font(.system(size: 17, weight: .bold))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                      .opacity(0.50)
-                                  
+                                      .opacity(0.70)
+
+                                  Text("Settings")
+                                      .foregroundColor(.green)
+                                      .font(.system(size: 17, weight: .bold))
+                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                      .opacity(0.70)
+
+//                                  Text("& Settings")
+//                                      .foregroundColor(.black)
+//                                      .font(.system(size: 13, weight: .light))
+//                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                      .opacity(0.70)
+//
+//                                  Text("Ad Free")
+//                                       .foregroundColor(.green)
+//                                       .font(.system(size: 23, weight: .bold))
+//                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                       .opacity(0.50)
+//
+//                                 Text("PURPLE")
+//                                      .foregroundColor(.purple)
+//                                      .font(.system(size: 17, weight: .bold))
+//                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                      .opacity(0.50)
+//
   
                               }
                           }

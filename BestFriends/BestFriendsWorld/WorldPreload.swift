@@ -43,14 +43,14 @@ struct WorldPreload: View {
             
             VStack {
                 
-                Text("For the")
+                Text("For the next")
                     .font(.system(size: 30))
                     .italic()
                     .foregroundColor(ColorManager.orange2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("Next 3 Minutes")
+                Text("TEN Minutes")
                     .font(.system(size: 55))
                     
                     .foregroundColor(ColorManager.orange2)
@@ -90,11 +90,11 @@ struct WorldPreload: View {
                 VStack {
                     
                     NavigationLink(destination: SomethingBuggingYou(user: user, atmosphere: atmosphere, friends: friends), label: {
-                        Text("Something Bugging You")
+                        Text("What's Bugging You?")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
+                            .font(.system(size: 27))
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -102,51 +102,63 @@ struct WorldPreload: View {
                     
                     Spacer()
                         .frame(height:20)
-                    
-                    
-                    NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
-                        Text("My New Aura")
-                            .fontWeight(.thin)
-                            .frame(width: 270, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                    
+//
+//
+//                    NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
+//                        Text("My New Aura")
+//                            .fontWeight(.thin)
+//                            .frame(width: 270, height: 40)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 30))
+//                            .background(ColorManager.purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
+//
                     Spacer()
                         .frame(height: 20)
-                    
-                    NavigationLink(destination: SaySomethingNice(user: user, atmosphere: atmosphere, friends: friends), label: {
-                        Text("Say Something Nice")
-                            .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                    
-                    
+//
+//                    NavigationLink(destination: SaySomethingNice(user: user, atmosphere: atmosphere, friends: friends), label: {
+//                        Text("Say Something Nice")
+//                            .fontWeight(.thin)
+//                            .frame(width: 310, height: 40)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 30))
+//                            .background(ColorManager.purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
+
+                    Button(action: {
+                        sessionManager.showLogin()
+                    },
+                        label: {
+                            Text("Say Something nice in Chat")
+                                .fontWeight(.thin)
+                                .frame(width: 310, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 26))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
                     VStack {
-                    Text("Cheering each other")
-                                 .font(.system(size: 20))
-                                 .fontWeight(.thin)
-                                 .multilineTextAlignment(.center)
-                                 .foregroundColor(Color.white)
-                    Text("in good times,")
-                                 .font(.system(size: 20))
-                                 .fontWeight(.thin)
-                                 .multilineTextAlignment(.center)
-                                 .foregroundColor(Color.white)
-                             Text("supporting in bad.")
-                                 .font(.system(size: 20))
-                                 .fontWeight(.thin)
-                                 .multilineTextAlignment(.center)
-                                 .foregroundColor(Color.white)
-                   
+//                    Text("Push Notification")
+//                                 .font(.system(size: 20))
+//                                 .fontWeight(.thin)
+//                                 .multilineTextAlignment(.center)
+//                                 .foregroundColor(Color.white)
+//                    Text("every Sunday night")
+//                                 .font(.system(size: 20))
+//                                 .fontWeight(.thin)
+//                                 .multilineTextAlignment(.center)
+//                                 .foregroundColor(Color.white)
+//                             Text("at 8pm EST")
+//                                 .font(.system(size: 20))
+//                                 .fontWeight(.thin)
+//                                 .multilineTextAlignment(.center)
+//                                 .foregroundColor(Color.white)
+//                   
                     
                         Spacer()
                             .frame(height: 120)
