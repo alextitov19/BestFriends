@@ -292,7 +292,7 @@ struct PlanetActionsView: View {
                                   
                                   Text("& Settings")
                                       .foregroundColor(.black)
-                                      .font(.system(size: 14, weight: .bold))
+                                      .font(.system(size: 14, weight: .regular))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                       .opacity(0.70)
 
