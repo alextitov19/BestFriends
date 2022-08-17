@@ -20,7 +20,7 @@ struct SomethingBuggingYou: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey3
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -43,84 +43,85 @@ struct SomethingBuggingYou: View {
             
             VStack {
                 
-//                Text("Building Stronger")
-//                    .font(.system(size: 30))
-//                    .italic()
-//                    .foregroundColor(ColorManager.orange2)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//                
-//                Text("FRIENDSHIPS")
-//                    .font(.system(size: 55))
-//                    
-//                    .foregroundColor(ColorManager.orange2)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-             
+         
                 Spacer()
                     .frame(height:20)
                 
-                Text("Yep, your friend")
-                    .font(.system(size: 25))
+                Text("Did your friend")
+                    .font(.system(size: 30))
                     .italic()
-                    .foregroundColor(ColorManager.orange5)
+                    .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 
-                Text("did or said something")
-                    .font(.system(size: 25))
+                Text("do or said something")
+                    .font(.system(size: 30))
                     .italic()
-                    .foregroundColor(ColorManager.orange5)
+                    .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
               
                 
-                Text("that's been bugging you")
-                             .font(.system(size: 25))
+                Text("that hurt")
+                             .font(.system(size: 30))
                              .italic()
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
-                             .foregroundColor(ColorManager.orange5)
-                
-                Text("all week")
-                             .font(.system(size: 25))
-                             .italic()
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(ColorManager.orange5)
+                             .foregroundColor(ColorManager.purple2)
+//
+//                Text("all week")
+//                             .font(.system(size: 25))
+//                             .italic()
+//                             .fontWeight(.thin)
+//                             .multilineTextAlignment(.center)
+//                             .foregroundColor(ColorManager.purple2)
                
                 VStack {
                 
                 Spacer()
                     .frame(height:40)
             
-                Text("For the next 10 minutes, this is your chance to \nget this off your chest, out in the open, \nand STOP stewing.")
-                             .font(.system(size: 15))
+                Text("Let others on BestFriends")
+                             .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple1)
-                             .padding()
-                Text("Under the safety of everyone else \non BestFriends is doing it\n right now as well")
-                             .font(.system(size: 15))
+                    
+                    Text("give you the courage")
+                                 .font(.system(size: 20))
+                                 .fontWeight(.thin)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(ColorManager.purple1)
+                            
+                Text("to get it in the open,")
+                             .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple1)
-                             .padding()
-                VStack {
+                           
+               
+                    
+                    Text("so it can be fixed.")
+                                 .font(.system(size: 20))
+                                 .fontWeight(.thin)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(ColorManager.purple1)
+                                
+                    VStack {
                  
                     
                     Spacer()
-                        .frame(height: 20)
+                        .frame(height: 40)
                     
                     Button(action: {
                         sessionManager.showLogin()
                     },
                         label: {
-                            Text("Say it in Chat")
+                            Text("Mention it in Chat")
                                 .fontWeight(.thin)
-                                .frame(width: 150, height: 40)
+                                .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 20))
                                 .background(ColorManager.purple3)
@@ -130,29 +131,12 @@ struct SomethingBuggingYou: View {
                     
                     
                     VStack {
-                                            Text("You Got This!")
+                                            Text("You got this!")
                                                          .font(.system(size: 20))
                                                          .fontWeight(.thin)
                                                          .multilineTextAlignment(.center)
                                                          .foregroundColor(Color.white)
-                        
-//                    Text("Cheering each other")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(Color.white)
-//                    Text("in good times,")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(Color.white)
-//                             Text("supporting in bad.")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(Color.white)
-                   
-                    
+
                         Spacer()
                             .frame(height: 50)
                  

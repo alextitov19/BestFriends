@@ -180,6 +180,7 @@
 		CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */; };
 		CF9957F528A7F244000BBAFF /* SomethingBuggingYou.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */; };
 		CF9957F728A7FB05000BBAFF /* SaySomethingNice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F628A7FB05000BBAFF /* SaySomethingNice.swift */; };
+		CF9957F928ACAAC3000BBAFF /* WorldPhotoPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F828ACAAC3000BBAFF /* WorldPhotoPreload.swift */; };
 		CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */; };
 		CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */; };
 		CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */; };
@@ -411,6 +412,7 @@
 		CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellingPURPLE.swift; sourceTree = "<group>"; };
 		CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingBuggingYou.swift; sourceTree = "<group>"; };
 		CF9957F628A7FB05000BBAFF /* SaySomethingNice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice.swift; sourceTree = "<group>"; };
+		CF9957F828ACAAC3000BBAFF /* WorldPhotoPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPhotoPreload.swift; sourceTree = "<group>"; };
 		CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3FG_Acountability.swift; sourceTree = "<group>"; };
 		CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2FG_TeenBehavior.swift; sourceTree = "<group>"; };
 		CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_OurAdvantage.swift; sourceTree = "<group>"; };
@@ -942,6 +944,7 @@
 				CF650426289F11980092EEB9 /* WorldPreload.swift */,
 				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
 				CF9957F628A7FB05000BBAFF /* SaySomethingNice.swift */,
+				CF9957F828ACAAC3000BBAFF /* WorldPhotoPreload.swift */,
 			);
 			path = BestFriendsWorld;
 			sourceTree = "<group>";
@@ -1521,6 +1524,7 @@
 				7ADFDB31289B1EFE0004FB1C /* ShakeExtensions.swift in Sources */,
 				7AA07F5F285D0DD400E9C5A4 /* UserModel.swift in Sources */,
 				CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */,
+				CF9957F928ACAAC3000BBAFF /* WorldPhotoPreload.swift in Sources */,
 				CF9957F128A72E77000BBAFF /* DeleteUserData.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */,

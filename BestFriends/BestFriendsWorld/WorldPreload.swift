@@ -61,7 +61,7 @@ struct WorldPreload: View {
                 
                 Text("Join the rest")
                     .font(.system(size: 40))
-                    .italic()
+//                    .italic()
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
@@ -69,7 +69,7 @@ struct WorldPreload: View {
                 
                 Text("of the World")
                     .font(.system(size: 40))
-                    .italic()
+//                    .italic()
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
@@ -89,19 +89,7 @@ struct WorldPreload: View {
                 
                 VStack {
                     
-                    NavigationLink(destination: SomethingBuggingYou(user: user, atmosphere: atmosphere, friends: friends), label: {
-                        Text("What's Bugging You?")
-                            .fontWeight(.thin)
-                            .frame(width: 310, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 27))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                    
-                    Spacer()
-                        .frame(height:20)
+               
 //
 //
 //                    NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
@@ -115,19 +103,8 @@ struct WorldPreload: View {
 //                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
 //                    })
 //
-                    Spacer()
-                        .frame(height: 20)
-//
-//                    NavigationLink(destination: SaySomethingNice(user: user, atmosphere: atmosphere, friends: friends), label: {
-//                        Text("Say Something Nice")
-//                            .fontWeight(.thin)
-//                            .frame(width: 310, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 30))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
+                 
+
 
                     Button(action: {
                         sessionManager.showLogin()
@@ -142,24 +119,41 @@ struct WorldPreload: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
+                   
                     VStack {
-//                    Text("Push Notification")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(Color.white)
-//                    Text("every Sunday night")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(Color.white)
-//                             Text("at 8pm EST")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(Color.white)
-//                   
-                    
+                      
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        NavigationLink(destination: WorldPhotoPreload(user: user, friends: friends), label: {
+                            Text("PhotoShake")
+                                .fontWeight(.thin)
+                                .frame(width: 310, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 27))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        
+                        NavigationLink(destination: SomethingBuggingYou(user: user, atmosphere: atmosphere, friends: friends), label: {
+                            Text("Ouch, that hurt!")
+                                .fontWeight(.thin)
+                                .frame(width: 310, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 27))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+                        
+                        
+                        
+                        
+                        
                         Spacer()
                             .frame(height: 120)
                  
