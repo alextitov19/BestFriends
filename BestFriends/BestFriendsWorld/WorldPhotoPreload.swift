@@ -58,7 +58,7 @@ struct WorldPhotoPreload: View {
                     Spacer()
                         .frame(height: 50)
                     
-                    NavigationLink(destination: WorldPhotoPreload(user: user, friends: friends), label: {
+                    NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
                         Text("Load PhotoShake")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 40)
