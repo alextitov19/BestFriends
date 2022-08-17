@@ -17,6 +17,7 @@ struct SomethingBuggingYou: View {
     let user: User
     let atmosphere: Atmosphere
     let friends: [User]
+    let groups: [Group]
     
     var body: some View {
         ZStack {
@@ -83,19 +84,19 @@ struct SomethingBuggingYou: View {
                 Spacer()
                     .frame(height:40)
             
-                Text("Let others on BestFriends")
+                Text("Join everyone right now")
                              .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple1)
                     
-                    Text("give you the courage")
-                                 .font(.system(size: 20))
-                                 .fontWeight(.thin)
-                                 .multilineTextAlignment(.center)
-                                 .foregroundColor(ColorManager.purple1)
+//                    Text("give you the courage")
+//                                 .font(.system(size: 20))
+//                                 .fontWeight(.thin)
+//                                 .multilineTextAlignment(.center)
+//                                 .foregroundColor(ColorManager.purple1)
                             
-                Text("to get it in the open,")
+                Text("getting it in the open,")
                              .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
@@ -123,7 +124,7 @@ struct SomethingBuggingYou: View {
                                 .fontWeight(.thin)
                                 .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 20))
+                                .font(.system(size: 30))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -136,9 +137,23 @@ struct SomethingBuggingYou: View {
                                                          .fontWeight(.thin)
                                                          .multilineTextAlignment(.center)
                                                          .foregroundColor(Color.white)
-
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 30)
+                        
+                        NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: {
+                                Text("Need some help?")
+                                    .fontWeight(.thin)
+                                    .frame(width: 230, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                        
+                        
+                        Spacer()
+                            .frame(height: 150)
                  
                         
                     }
@@ -153,3 +168,7 @@ struct SomethingBuggingYou: View {
 
 }
 }
+
+
+
+

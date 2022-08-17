@@ -17,6 +17,7 @@ struct WorldPreload: View {
     let user: User
     let atmosphere: Atmosphere
     let friends: [User]
+    let groups: [Group]
     
     var body: some View {
         ZStack {
@@ -139,7 +140,7 @@ struct WorldPreload: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        NavigationLink(destination: SomethingBuggingYou(user: user, atmosphere: atmosphere, friends: friends), label: {
+                        NavigationLink(destination: SomethingBuggingYou(user: user, atmosphere: atmosphere, friends: friends, groups: groups), label: {
                             Text("Ouch, that hurt!")
                                 .fontWeight(.thin)
                                 .frame(width: 310, height: 40)

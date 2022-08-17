@@ -338,13 +338,14 @@ struct HomeView: View {
                         Spacer().frame(height:10)
                         
                         
-                        NavigationLink(destination: WorldPreload(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends),
+                        NavigationLink(destination: WorldPreload(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: groups),
                                        label: {
-                            Text("Push Notification BF World")
+                            Text("BestFriends World")
                                 .fontWeight(.light)
                                 .frame(width: 210, height: 29)
                                 .foregroundColor(.white)
-                                .background(ColorManager.purple3)
+                                .background(ColorManager.orange5)
+//                                .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .opacity(0.6)
                         })
