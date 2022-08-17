@@ -105,9 +105,9 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
+                        Text("TAP")
+                            .font(.system(size: 40))
+                            .foregroundColor(.green)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                         

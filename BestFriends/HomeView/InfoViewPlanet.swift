@@ -44,20 +44,19 @@ struct InfoViewPlanet: View {
                 
             VStack {
              
-                Text("Navigating")
+                Text("Each Planet")
                     .font(.system(size: 30))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.blue)
                 
-                Text("Homepage")
+                Text("is a Friend")
                     .font(.system(size: 30))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.blue)
                 
-                
-                Spacer()
+           
                 .frame(height: 15)
                 
                 VStack {
