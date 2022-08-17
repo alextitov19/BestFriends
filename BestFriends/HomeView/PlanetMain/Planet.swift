@@ -227,27 +227,27 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 100, height: 100)
-                                .foregroundColor(ColorManager.grey1)
+                                .foregroundColor(ColorManager.purple3)
 
                                 .shadow(color: .black, radius: 2, x: 0, y: 2)
                                 .opacity(0.6)
 //
                             VStack {
                                 
-                                Image("BestFriends")
-                                    .resizable()
-                                    .frame(width: 30, height: 30)
-                                    .scaledToFill()
+//                                Image("BestFriends")
+//                                    .resizable()
+//                                    .frame(width: 30, height: 30)
+//                                    .scaledToFill()
                                 
-                                Text("Sunday's")
+                                Text("BestFriends")
                                     .foregroundColor(.green)
-                                    .font(.system(size: 17, weight: .bold))
+                                    .font(.system(size: 16, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.70)
                                 
-                                Text("8pm")
+                                Text("World")
                                     .foregroundColor(.green)
-                                    .font(.system(size: 17, weight: .bold))
+                                    .font(.system(size: 20, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.70)
                              
