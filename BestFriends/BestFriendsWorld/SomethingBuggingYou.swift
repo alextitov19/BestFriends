@@ -49,7 +49,7 @@ struct SomethingBuggingYou: View {
                     .frame(height:20)
                 
                 Text("Did your friend")
-                    .font(.system(size: 30))
+                    .font(.system(size: 25))
                     .italic()
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
@@ -57,7 +57,7 @@ struct SomethingBuggingYou: View {
                 
                 
                 Text("do or said something")
-                    .font(.system(size: 30))
+                    .font(.system(size: 25))
                     .italic()
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
@@ -66,25 +66,39 @@ struct SomethingBuggingYou: View {
               
                 
                 Text("that hurt")
-                             .font(.system(size: 30))
+                             .font(.system(size: 25))
                              .italic()
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple2)
-//
-//                Text("all week")
-//                             .font(.system(size: 25))
-//                             .italic()
-//                             .fontWeight(.thin)
-//                             .multilineTextAlignment(.center)
-//                             .foregroundColor(ColorManager.purple2)
+
+                
+                       Spacer()
+                           .frame(height:20)
+                
+                
+              
+                Text("Did you do or say")
+                    .font(.system(size: 25))
+                    .italic()
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                
+                Text("something not nice?")
+                    .font(.system(size: 25))
+                    .italic()
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
                
                 VStack {
                 
                 Spacer()
                     .frame(height:40)
             
-                Text("Join everyone right now")
+                Text("If it's been")
                              .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
@@ -96,20 +110,20 @@ struct SomethingBuggingYou: View {
 //                                 .multilineTextAlignment(.center)
 //                                 .foregroundColor(ColorManager.purple1)
                             
-                Text("getting it in the open,")
+                Text("bugging you")
                              .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple1)
                            
                
-                    
-                    Text("so it can be fixed.")
-                                 .font(.system(size: 20))
-                                 .fontWeight(.thin)
-                                 .multilineTextAlignment(.center)
-                                 .foregroundColor(ColorManager.purple1)
-                                
+//
+//                    Text("so it can be fixed.")
+//                                 .font(.system(size: 20))
+//                                 .fontWeight(.thin)
+//                                 .multilineTextAlignment(.center)
+//                                 .foregroundColor(ColorManager.purple1)
+//
                     VStack {
                  
                     
@@ -150,6 +164,7 @@ struct SomethingBuggingYou: View {
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
+                        
                         
                         
                         Spacer()
