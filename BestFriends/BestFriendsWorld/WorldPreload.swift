@@ -44,15 +44,15 @@ struct WorldPreload: View {
             
             VStack {
                 
-                Text("For the next")
-                    .font(.system(size: 30))
+                Text("for")
+                    .font(.system(size: 25))
                     .italic()
                     .foregroundColor(ColorManager.orange2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
                 Text("TEN Minutes")
-                    .font(.system(size: 55))
+                    .font(.system(size: 30))
                     
                     .foregroundColor(ColorManager.orange2)
                     .fontWeight(.ultraLight)
@@ -61,7 +61,7 @@ struct WorldPreload: View {
                     .frame(height:20)
                 
                 Text("Join the rest")
-                    .font(.system(size: 40))
+                    .font(.system(size: 30))
 //                    .italic()
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
@@ -69,7 +69,7 @@ struct WorldPreload: View {
                 
                 
                 Text("of the World")
-                    .font(.system(size: 40))
+                    .font(.system(size: 30))
 //                    .italic()
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
@@ -78,7 +78,7 @@ struct WorldPreload: View {
               
                 
                 Text("Being BestFriends")
-                             .font(.system(size: 30))
+                             .font(.system(size: 40))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple2)
@@ -111,9 +111,9 @@ struct WorldPreload: View {
                         sessionManager.showLogin()
                     },
                         label: {
-                            Text("Say Something nice in Chat")
+                            Text("Send Nice Message")
                                 .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
+                                .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 26))
                                 .background(ColorManager.purple3)
@@ -127,9 +127,9 @@ struct WorldPreload: View {
                             .frame(height: 20)
                         
                         NavigationLink(destination: WorldPhotoPreload(user: user, friends: friends), label: {
-                            Text("PhotoShake")
+                            Text("PhotoPop")
                                 .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
+                                .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 27))
                                 .background(ColorManager.purple3)
@@ -141,9 +141,9 @@ struct WorldPreload: View {
                             .frame(height: 20)
                         
                         NavigationLink(destination: SomethingBuggingYou(user: user, atmosphere: atmosphere, friends: friends, groups: groups), label: {
-                            Text("Ouch, that hurt!")
+                            Text("Ouch!")
                                 .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
+                                .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 27))
                                 .background(ColorManager.purple3)
