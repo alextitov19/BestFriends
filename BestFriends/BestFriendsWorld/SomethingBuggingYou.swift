@@ -56,7 +56,7 @@ struct SomethingBuggingYou: View {
                     .multilineTextAlignment(.center)
                 
                 
-                Text("do or said something")
+                Text("do or say something")
                     .font(.system(size: 25))
                     .italic()
                     .foregroundColor(ColorManager.purple2)
@@ -65,7 +65,7 @@ struct SomethingBuggingYou: View {
                 
               
                 
-                Text("that hurt")
+                Text("that hurt?")
                              .font(.system(size: 25))
                              .italic()
                              .fontWeight(.thin)
