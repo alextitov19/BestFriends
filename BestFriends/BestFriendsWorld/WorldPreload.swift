@@ -44,21 +44,21 @@ struct WorldPreload: View {
             
             VStack {
                 
-                Text("for")
+                Text("Sunday's ")
                     .font(.system(size: 25))
                     .italic()
                     .foregroundColor(ColorManager.orange2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("TEN Minutes")
-                    .font(.system(size: 30))
+                Text("at 8pm")
+                    .font(.system(size: 20))
                     
                     .foregroundColor(ColorManager.orange2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 Spacer()
-                    .frame(height:20)
+                    .frame(height:40)
                 
                 Text("Join the rest")
                     .font(.system(size: 30))
@@ -78,7 +78,7 @@ struct WorldPreload: View {
               
                 
                 Text("Being BestFriends")
-                             .font(.system(size: 40))
+                             .font(.system(size: 35))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple2)

@@ -239,17 +239,17 @@ struct PlanetActionsView: View {
 //                                    .frame(width: 30, height: 30)
 //                                    .scaledToFill()
                                 
-                                Text("BestFriends")
-                                    .foregroundColor(.green)
-                                    .font(.system(size: 16, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.70)
-                                
+//                                Text("BestFriends")
+//                                    .foregroundColor(.green)
+//                                    .font(.system(size: 16, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.70)
+//
                                 Text("World")
-                                    .foregroundColor(.green)
-                                    .font(.system(size: 20, weight: .bold))
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 25, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.70)
+                                    .opacity(0.50)
                              
                                 
                             }
