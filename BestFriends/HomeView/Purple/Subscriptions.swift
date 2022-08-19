@@ -97,7 +97,7 @@ struct Subscriptions: View {
                      Spacer()
                      .frame(height: 10)
                      
-                     Text("and ...")
+                     Text("Customize Chat Background")
                          .font(.system(size: 17))
                          .fontWeight(.light)
                          .multilineTextAlignment(.center)
@@ -106,7 +106,7 @@ struct Subscriptions: View {
                      Spacer()
                      .frame(height: 10)
                      
-                     Text("and ...")
+                     Text("Use Nicknames")
                          .font(.system(size: 17))
                          .fontWeight(.light)
                          .multilineTextAlignment(.center)

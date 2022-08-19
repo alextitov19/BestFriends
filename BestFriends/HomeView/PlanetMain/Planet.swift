@@ -110,7 +110,7 @@ struct PlanetActionsView: View {
                                 
                                 Text("Safe Space")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
+                                    .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
@@ -122,13 +122,13 @@ struct PlanetActionsView: View {
                                 
                                 Text("on")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
+                                    .font(.system(size: 13, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
                                 Text("Bad Days ")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
+                                    .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                             }
@@ -187,25 +187,25 @@ struct PlanetActionsView: View {
                                 
                                 Text("Overcome")
                                      .foregroundColor(.white)
-                                     .font(.system(size: 12, weight: .bold))
+                                     .font(.system(size: 13, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
-                                Text("FIGHTS")
+                                Text("FIGHTS,")
                                      .foregroundColor(.white)
-                                     .font(.system(size: 12, weight: .bold))
+                                     .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
                                 Text("Fix")
                                      .foregroundColor(.white)
-                                     .font(.system(size: 12, weight: .bold))
+                                     .font(.system(size: 13, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                
                                 Text("Friendships")
                                      .foregroundColor(.white)
-                                     .font(.system(size: 12, weight: .bold))
+                                     .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
@@ -337,26 +337,26 @@ struct PlanetActionsView: View {
    
                                 Text("Share Mood")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
+                                    .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
                                 Text("with")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
+                                    .font(.system(size: 13, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
                                 
                                 Text("Suportive")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
+                                    .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
                                 Text("Friends")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
+                                    .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
@@ -388,21 +388,27 @@ struct PlanetActionsView: View {
                               
                                 Text("Building")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 12, weight: .bold))
+                                     .font(.system(size: 13, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
                                 Text("DREAMS")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 12, weight: .bold))
+                                     .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
                                 Text("Together")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 12, weight: .bold))
+                                     .font(.system(size: 13, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
+                                
+                                Text("(this Fall)")
+                                    .foregroundColor(.green)
+                                    .font(.system(size: 12, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.70)
                    
                             }
                         }
