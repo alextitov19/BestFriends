@@ -155,7 +155,7 @@ struct SomethingBuggingYou: View {
                             .frame(height: 30)
                         
                         NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: {
-                                Text("Need some help?")
+                                Text("Like some help?")
                                     .fontWeight(.thin)
                                     .frame(width: 230, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

@@ -52,34 +52,34 @@ struct FG_VideoCall: View {
 //            .offset(x: showItems ? 120 : 0, y: showItems ? -565: 0)
 //             
      
-           
-            NavigationLink(destination: FaceTimeCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: "", chatBackground: ""), friends: []), label: {
-                  FG_VideoCallCircle (color: .green, friendName: "Schedule \nFaceTime \nCall")
-            })
-            .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
-            
+//
+//            NavigationLink(destination: FaceTimeCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: "", chatBackground: ""), friends: []), label: {
+//                  FG_VideoCallCircle (color: .green, friendName: "Schedule \nFaceTime \nCall")
+//            })
+//            .offset(x: showItems ? 75 : 0, y: showItems ? 175: 0)
+//
 
             NavigationLink(destination: HurtFeelings2(user: user, friends: friends, groups: groups), label: { FG_VideoCallCircle (color: .white, friendName: "Friend \nHurt my \nFeelings")
             })
-            .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
+            .offset(x: showItems ? 100 : 0, y: showItems ? -170: 0)
             
 
 //
             
                NavigationLink(destination: Apologies2(user: user, friends: friends, groups: groups), label: {
-                   FG_VideoCallCircle (color: .blue, friendName: "Apologies")
+                   FG_VideoCallCircle (color: .white, friendName: "I Hurt \n Friend's \nFeelings")
              })
-             .offset(x: showItems ? -100 : 0, y: showItems ? 90: 0)
+             .offset(x: showItems ? -100 : 0, y: showItems ? -90: 0)
              
             
             
             
-           
-              NavigationLink(destination: PickMediator(user: user, friends: friends, groups: groups), label: {
-                  FG_VideoCallCircle (color: .purple, friendName: "Request \nMediator")
-            })
-            .offset(x: showItems ? 130 : 0, y: showItems ? -50: 0)
-            
+//
+//              NavigationLink(destination: PickMediator(user: user, friends: friends, groups: groups), label: {
+//                  FG_VideoCallCircle (color: .purple, friendName: "Request \nMediator")
+//            })
+//            .offset(x: showItems ? 130 : 0, y: showItems ? -50: 0)
+//
            
             
             
@@ -98,7 +98,7 @@ struct FG_VideoCall: View {
                    .opacity(0.9)
 
            VStack {
-              Text("Minimizing \nFriendGroup \nDrama")
+              Text("Minimizing \nDrama")
                             .font(.system(size: 20))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)

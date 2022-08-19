@@ -44,21 +44,21 @@ struct WhoFighting: View {
         ZStack {
 
             NavigationLink(destination: IntroBluemodeFriend(user: user, friends: friends), label: {
-                WhoFightingCircle (color: .purple, friendName: "TEEN Fight \nSuggestions")
+                WhoFightingCircle (color: .purple, friendName: "Fixing \nTEEN Fights")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
 
            
 
               NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .gray, friendName: "Parents \nFighting")
+                  WhoFightingCircle (color: .gray, friendName: "Parents \nFighting?")
             })
-            .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
+            .offset(x: showItems ? -75 : 0, y: showItems ? -150: 0)
             
 
-            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
-            })
-            .offset(x: showItems ? -90 : 0, y: showItems ? -150: 0)
+//            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
+//            })
+//            .offset(x: showItems ? -90 : 0, y: showItems ? -150: 0)
             
             NavigationLink(destination: NostalgiaPreload2(user: user, friends: friends, groups: groups), label: {
                 WhoFightingCircle (color: .orange, friendName: "Adult \nNostalgia")
@@ -66,12 +66,12 @@ struct WhoFighting: View {
             .offset(x: showItems ? 95 : 0, y: showItems ? -30: 0)
             
             
-            NavigationLink(destination: Sweetheart1(user: user, friends: friends, groups: groups), label: {
-                WhoFightingCircle (color: .pink, friendName: "Messed \nUp?")
-            })
-            .offset(x: showItems ? -110 : 0, y: showItems ? 160: 0)
-            .opacity(0.7)
-            
+//            NavigationLink(destination: Sweetheart1(user: user, friends: friends, groups: groups), label: {
+//                WhoFightingCircle (color: .pink, friendName: "Messed \nUp?")
+//            })
+//            .offset(x: showItems ? -110 : 0, y: showItems ? 160: 0)
+//            .opacity(0.7)
+//
             
             NavigationLink(destination: FD_Step1(), label: {
                 WhoFightingCircle (color: .green, friendName: "BestFamily")
