@@ -74,7 +74,7 @@ struct WhoFighting: View {
 //
             
             NavigationLink(destination: FD_Step1(), label: {
-                WhoFightingCircle (color: .green, friendName: "BestFamily")
+                WhoFightingCircle (color: .green, friendName: "Family \nDrama")
             })
             .offset(x: showItems ? -20 : 0, y: showItems ? 200: 0)
             .opacity(0.7)
