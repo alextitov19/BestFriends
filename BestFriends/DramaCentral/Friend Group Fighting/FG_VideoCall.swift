@@ -98,7 +98,7 @@ struct FG_VideoCall: View {
                    .opacity(0.9)
 
            VStack {
-              Text("The \nSoul \nof you")
+              Text("Protecting \nthe Soul \nof you")
                             .font(.system(size: 20))
                             .foregroundColor(.blue)
                             .fontWeight(.medium)
