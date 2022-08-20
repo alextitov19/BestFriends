@@ -51,7 +51,7 @@ struct WorldPreload: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("at 8pm your time")
+                Text("at 8pm EST")
                     .font(.system(size: 20))
                     
                     .foregroundColor(ColorManager.orange2)
