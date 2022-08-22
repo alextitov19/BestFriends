@@ -1,17 +1,16 @@
 //
-//  WorldPhotoPreload.swift
+//  WorldPhotoPreload2.swift
 //  BestFriends
 //
-//  Created by Social Tech on 8/17/22.
+//  Created by Social Tech on 8/22/22.
 //
-
 
 
 import Foundation
 import SwiftUI
 
 
-struct WorldPhotoPreload: View {
+struct WorldPhotoPreload2: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -28,58 +27,42 @@ struct WorldPhotoPreload: View {
               
                 
                 
-                Text("FriendGroups around the")
-                    .font(.system(size: 20))
+                Text("(on homepage)")
+                    .font(.system(size: 15))
                     .italic()
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("W O R L D")
+                Text("Shake Phone")
                     .font(.system(size: 50))
                     .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-             
-                
-                Text("are all together right now")
-                    .font(.system(size: 30))
-                    .italic()
-                    .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 80)
+                    .frame(height: 50)
                 
-                Text("Be part of something")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(.white)
+                Text("Images from")
+                    .font(.system(size: 30))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("'World' Popup")
+                    .font(.system(size: 35))
+                    .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
           
                 
-                Text("P O S I T I V E")
-                    .font(.system(size: 50))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                Text("on social media")
-                    .font(.system(size: 30))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
+             
                 
                 VStack {
                     Spacer()
                         .frame(height: 50)
                     
-                    NavigationLink(destination: WorldPhotoPreload2(user: user, friends: friends), label: {
+                    NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
                         Text("Load PhotoPop")
                             .fontWeight(.thin)
                             .frame(width: 250, height: 40)
