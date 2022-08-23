@@ -25,38 +25,59 @@ struct WorldPhotoPreload2: View {
             
             VStack {
               
-                
-                
-                Text("(on homepage)")
-                    .font(.system(size: 15))
+                Text("Where are images")
+                    .font(.system(size: 20))
                     .italic()
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("Shake Phone")
+                Text("Friends sent during")
+                    .font(.system(size: 20))
+                    .italic()
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+          
+                
+                Text("BestFriends WORLD")
+                    .font(.system(size: 40))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+             
+                Spacer()
+                    .frame(height: 70)
+                
+                Text("Simple")
+                    .font(.system(size: 17))
+                    .italic()
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("Shake")
                     .font(.system(size: 50))
                     .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                Text("Your Phone")
+                    .font(.system(size: 50))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("on Homepage")
+                    .font(.system(size: 17))
+                    .italic()
+                    .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 50)
                 
-                Text("Images from")
-                    .font(.system(size: 30))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Text("'World' Popup")
-                    .font(.system(size: 35))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-          
-                
-             
+           
                 
                 VStack {
                     Spacer()
