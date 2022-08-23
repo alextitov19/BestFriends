@@ -21,7 +21,7 @@ struct SaySomethingNice1: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey4
+            ColorManager.purple4
                 .ignoresSafeArea()
                 .onAppear()
 
