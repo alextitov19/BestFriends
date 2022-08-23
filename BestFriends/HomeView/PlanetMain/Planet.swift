@@ -226,34 +226,27 @@ struct PlanetActionsView: View {
                                    label: {
                         ZStack {
                             Circle()
-                                .frame(width: 100, height: 100)
+                                .frame(width: 110, height: 110)
                                 .foregroundColor(ColorManager.purple3)
+                                .shadow(color: .white, radius: 25, x: 10, y: 20)
+//                                .shadow(color: .orange, radius: 65, x: 30, y: 50)
+//                                .shadow(color: .black, radius: 2, x: 0, y: 2)
+//                                .glow(color: .white, radius: 20)
+                                .glow(color: ColorManager.purple4, radius: 3)
+                                .opacity(0.5)
 
-                                .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.6)
-//
                             VStack {
-                                
-//                                Image("BestFriends")
-//                                    .resizable()
-//                                    .frame(width: 30, height: 30)
-//                                    .scaledToFill()
-                                
-//                                Text("BestFriends")
-//                                    .foregroundColor(.green)
-//                                    .font(.system(size: 16, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                    .opacity(0.70)
-//
+
+
                                 Text("World")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 25, weight: .bold))
+                                    .font(.system(size: 27, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
                                 Text("FriendGroups")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 13, weight: .bold))
+                                    .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
