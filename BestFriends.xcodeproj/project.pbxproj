@@ -29,7 +29,6 @@
 		7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */; };
 		7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */; };
 		7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */; };
-		7A2C2159280509DA009362CF /* cloud.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A2C2156280509DA009362CF /* cloud.mp4 */; };
 		7A2C215D28050BCD009362CF /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2C215C28050BCD009362CF /* ChatBubble.swift */; };
 		7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A380F1528271E3E007151AB /* AppDelegate.swift */; };
 		7A383FFD267AC306002F354A /* background_4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF5263D6266477C600243DD7 /* background_4.mp4 */; };
@@ -46,7 +45,6 @@
 		7A720CC328A583E900992FD2 /* CustomizeMyPlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A720CC228A583E900992FD2 /* CustomizeMyPlanetView.swift */; };
 		7A720CC528A6CB6800992FD2 /* ChangeChatBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A720CC428A6CB6800992FD2 /* ChangeChatBackgroundView.swift */; };
 		7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A77FC6F27FBD3C7007CC5E6 /* InviteModels.swift */; };
-		7A78232D26B2419600CA76FC /* blender.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A78232826B2419600CA76FC /* blender.mp4 */; };
 		7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A78232926B2419600CA76FC /* background_5.mp4 */; };
 		7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A23B32803D62700B87613 /* WebSocket.swift */; };
 		7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */; };
@@ -91,7 +89,6 @@
 		7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27927FDFFA800D2DB5C /* BlurView.swift */; };
 		7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */; };
 		7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */; };
-		CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */; };
 		CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */; };
 		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
 		CF0911852848328F00CB0AF0 /* HideChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0911842848328F00CB0AF0 /* HideChat.swift */; };
@@ -140,7 +137,6 @@
 		CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */; };
 		CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */; };
 		CF4A08DA2877E4A000ADA9DD /* PhotoPopPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */; };
-		CF4A08DC2878495F00ADA9DD /* Atmosphere.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08DB2878495F00ADA9DD /* Atmosphere.mp4 */; };
 		CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */; };
 		CF4A08E228793CC900ADA9DD /* HurtFeelings4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E128793CC900ADA9DD /* HurtFeelings4.swift */; };
 		CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E32879443E00ADA9DD /* Apologies4.swift */; };
@@ -148,16 +144,8 @@
 		CF4A08EC287956A100ADA9DD /* sky.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08EB287956A100ADA9DD /* sky.mp4 */; };
 		CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08ED2879577E00ADA9DD /* sky2.mp4 */; };
 		CF4A08F0287F837900ADA9DD /* background_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08EF287F837900ADA9DD /* background_3.mp4 */; };
-		CF4A08F2287F84DD00ADA9DD /* MoonChild.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08F1287F84DD00ADA9DD /* MoonChild.mp4 */; };
-		CF4A08F62883717000ADA9DD /* SmileVault2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08F52883717000ADA9DD /* SmileVault2.mp4 */; };
 		CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */; };
-		CF4A0905288609D800ADA9DD /* nina1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A0904288609D800ADA9DD /* nina1.mp4 */; };
-		CF4A090728860B7000ADA9DD /* slowclouds.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090628860B7000ADA9DD /* slowclouds.mp4 */; };
 		CF4A090928860CC300ADA9DD /* background_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090828860CC300ADA9DD /* background_2.mp4 */; };
-		CF4A090B28860DCD00ADA9DD /* cloudsAd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090A28860DCC00ADA9DD /* cloudsAd.mp4 */; };
-		CF6503FA28861D190092EEB9 /* NikeWaterBottleAd.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */; };
-		CF6503FC288647240092EEB9 /* Nike1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FB288647230092EEB9 /* Nike1.mp4 */; };
-		CF6503FE288648BB0092EEB9 /* Nike2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FD288648BB0092EEB9 /* Nike2.mp4 */; };
 		CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* background_1.mp4 */; };
 		CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650405288E76B50092EEB9 /* GotPushNotification.swift */; };
 		CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040928915A080092EEB9 /* FD_Step1.swift */; };
@@ -168,11 +156,9 @@
 		CF65041828931C0B0092EEB9 /* FightsDVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65041728931C0B0092EEB9 /* FightsDVid.swift */; };
 		CF65041A28931C2C0092EEB9 /* FightsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65041928931C2C0092EEB9 /* FightsInfo.swift */; };
 		CF65041E28964B410092EEB9 /* EverybodyOk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65041D28964B410092EEB9 /* EverybodyOk.swift */; };
-		CF6504202897EE950092EEB9 /* Atmosphere3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF65041F2897EE950092EEB9 /* Atmosphere3.mp4 */; };
 		CF650422289EF8820092EEB9 /* PurpleNoAdInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650421289EF8820092EEB9 /* PurpleNoAdInfoView.swift */; };
 		CF650427289F11980092EEB9 /* WorldPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650426289F11980092EEB9 /* WorldPreload.swift */; };
 		CF65042B28A185750092EEB9 /* PaperAirplanes.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF65042A28A185750092EEB9 /* PaperAirplanes.mp4 */; };
-		CF65042D28A186210092EEB9 /* Planet6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF65042C28A186200092EEB9 /* Planet6.mp4 */; };
 		CF65043028A438970092EEB9 /* ChatReactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65042F28A438970092EEB9 /* ChatReactions.swift */; };
 		CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */; };
 		CF725E2828516E4F0096342F /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF725E2728516E4F0096342F /* Tokens.swift */; };
@@ -193,7 +179,6 @@
 		CFA1226828598DB800E22E84 /* Apologies3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA1226728598DB800E22E84 /* Apologies3.swift */; };
 		CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA12269285994AE00E22E84 /* PickMediator2.swift */; };
 		CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */; };
-		CFA12270285A9A1E00E22E84 /* myRoom2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */; };
 		CFAB5400281A99B600BBF502 /* Step6_TextingFirst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */; };
 		CFAB5402281A9A1D00BBF502 /* Step7_TimeToTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */; };
 		CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */; };
@@ -218,7 +203,6 @@
 		CFD0ABD1285C00FF0032CA3D /* ReportIssues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */; };
 		CFD0ABD4285C25990032CA3D /* BuiltByTeens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD3285C25990032CA3D /* BuiltByTeens.swift */; };
 		CFD0ABD8285C492F0032CA3D /* BuiltByTeens2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */; };
-		CFD0ABDA285C4C720032CA3D /* BuiltByTeensVid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD0ABD9285C4C720032CA3D /* BuiltByTeensVid.mp4 */; };
 		CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */; };
 		CFD0ABDE285C4E7C0032CA3D /* BFVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD0ABDD285C4E7C0032CA3D /* BFVideo.mp4 */; };
 		CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */; };
@@ -260,7 +244,6 @@
 		7A22A577274416C200FB6B4F /* ColorExt+Mgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ColorExt+Mgr.swift"; sourceTree = "<group>"; };
 		7A22A578274416C200FB6B4F /* CustomButtonInterior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonInterior.swift; sourceTree = "<group>"; };
 		7A2B1F5A26A630A200EDBEAF /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		7A2C2156280509DA009362CF /* cloud.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloud.mp4; sourceTree = "<group>"; };
 		7A2C215C28050BCD009362CF /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		7A380F1528271E3E007151AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A3F0310265C9E5A00DBA207 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -278,7 +261,6 @@
 		7A720CC228A583E900992FD2 /* CustomizeMyPlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeMyPlanetView.swift; sourceTree = "<group>"; };
 		7A720CC428A6CB6800992FD2 /* ChangeChatBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeChatBackgroundView.swift; sourceTree = "<group>"; };
 		7A77FC6F27FBD3C7007CC5E6 /* InviteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteModels.swift; sourceTree = "<group>"; };
-		7A78232826B2419600CA76FC /* blender.mp4 */ = {isa = PBXFileReference; lastKnownFileType = text; path = blender.mp4; sourceTree = "<group>"; };
 		7A78232926B2419600CA76FC /* background_5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_5.mp4; sourceTree = "<group>"; };
 		7A7A23B32803D62700B87613 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		7A7AEF2726C4CF6D00DE8344 /* SequenceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtension.swift; sourceTree = "<group>"; };
@@ -323,7 +305,6 @@
 		7AFCF27927FDFFA800D2DB5C /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
-		CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueRoad.mp4; sourceTree = "<group>"; };
 		CF05A8BB26A9CCCA009618E6 /* ShakingCoolVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShakingCoolVideo.mp4; sourceTree = "<group>"; };
 		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
 		CF0911842848328F00CB0AF0 /* HideChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideChat.swift; sourceTree = "<group>"; };
@@ -372,7 +353,6 @@
 		CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend2.swift; sourceTree = "<group>"; };
 		CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload.swift; sourceTree = "<group>"; };
 		CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopPreload.swift; sourceTree = "<group>"; };
-		CF4A08DB2878495F00ADA9DD /* Atmosphere.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atmosphere.mp4; sourceTree = "<group>"; };
 		CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atmosphere2.mp4; sourceTree = "<group>"; };
 		CF4A08E128793CC900ADA9DD /* HurtFeelings4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelings4.swift; sourceTree = "<group>"; };
 		CF4A08E32879443E00ADA9DD /* Apologies4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies4.swift; sourceTree = "<group>"; };
@@ -380,17 +360,9 @@
 		CF4A08EB287956A100ADA9DD /* sky.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sky.mp4; sourceTree = "<group>"; };
 		CF4A08ED2879577E00ADA9DD /* sky2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sky2.mp4; sourceTree = "<group>"; };
 		CF4A08EF287F837900ADA9DD /* background_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_3.mp4; sourceTree = "<group>"; };
-		CF4A08F1287F84DD00ADA9DD /* MoonChild.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = MoonChild.mp4; sourceTree = "<group>"; };
-		CF4A08F52883717000ADA9DD /* SmileVault2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SmileVault2.mp4; sourceTree = "<group>"; };
 		CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweetheart1.swift; sourceTree = "<group>"; };
-		CF4A0904288609D800ADA9DD /* nina1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = nina1.mp4; sourceTree = "<group>"; };
-		CF4A090628860B7000ADA9DD /* slowclouds.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = slowclouds.mp4; sourceTree = "<group>"; };
 		CF4A090828860CC300ADA9DD /* background_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_2.mp4; sourceTree = "<group>"; };
-		CF4A090A28860DCC00ADA9DD /* cloudsAd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloudsAd.mp4; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* background_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_4.mp4; sourceTree = "<group>"; };
-		CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = NikeWaterBottleAd.mp4; sourceTree = "<group>"; };
-		CF6503FB288647230092EEB9 /* Nike1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nike1.mp4; sourceTree = "<group>"; };
-		CF6503FD288648BB0092EEB9 /* Nike2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nike2.mp4; sourceTree = "<group>"; };
 		CF6503FF28864AF00092EEB9 /* background_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_1.mp4; sourceTree = "<group>"; };
 		CF650405288E76B50092EEB9 /* GotPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotPushNotification.swift; sourceTree = "<group>"; };
 		CF65040928915A080092EEB9 /* FD_Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FD_Step1.swift; sourceTree = "<group>"; };
@@ -401,11 +373,9 @@
 		CF65041728931C0B0092EEB9 /* FightsDVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightsDVid.swift; sourceTree = "<group>"; };
 		CF65041928931C2C0092EEB9 /* FightsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightsInfo.swift; sourceTree = "<group>"; };
 		CF65041D28964B410092EEB9 /* EverybodyOk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverybodyOk.swift; sourceTree = "<group>"; };
-		CF65041F2897EE950092EEB9 /* Atmosphere3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atmosphere3.mp4; sourceTree = "<group>"; };
 		CF650421289EF8820092EEB9 /* PurpleNoAdInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleNoAdInfoView.swift; sourceTree = "<group>"; };
 		CF650426289F11980092EEB9 /* WorldPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPreload.swift; sourceTree = "<group>"; };
 		CF65042A28A185750092EEB9 /* PaperAirplanes.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PaperAirplanes.mp4; sourceTree = "<group>"; };
-		CF65042C28A186200092EEB9 /* Planet6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planet6.mp4; sourceTree = "<group>"; };
 		CF65042F28A438970092EEB9 /* ChatReactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatReactions.swift; sourceTree = "<group>"; };
 		CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHug.swift; sourceTree = "<group>"; };
 		CF725E2728516E4F0096342F /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
@@ -426,7 +396,6 @@
 		CFA1226728598DB800E22E84 /* Apologies3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies3.swift; sourceTree = "<group>"; };
 		CFA12269285994AE00E22E84 /* PickMediator2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator2.swift; sourceTree = "<group>"; };
 		CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom1.mp4; sourceTree = "<group>"; };
-		CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom2.mp4; sourceTree = "<group>"; };
 		CFAB53FF281A99B600BBF502 /* Step6_TextingFirst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step6_TextingFirst.swift; sourceTree = "<group>"; };
 		CFAB5401281A9A1D00BBF502 /* Step7_TimeToTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step7_TimeToTalk.swift; sourceTree = "<group>"; };
 		CFAB5403281A9A9000BBF502 /* Step4_NuclearOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4_NuclearOption.swift; sourceTree = "<group>"; };
@@ -451,7 +420,6 @@
 		CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIssues.swift; sourceTree = "<group>"; };
 		CFD0ABD3285C25990032CA3D /* BuiltByTeens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltByTeens.swift; sourceTree = "<group>"; };
 		CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltByTeens2.swift; sourceTree = "<group>"; };
-		CFD0ABD9285C4C720032CA3D /* BuiltByTeensVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuiltByTeensVid.mp4; sourceTree = "<group>"; };
 		CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BuiltByTeens3.mp4; sourceTree = "<group>"; };
 		CFD0ABDD285C4E7C0032CA3D /* BFVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BFVideo.mp4; sourceTree = "<group>"; };
 		CFD12CBD281499D700AB2539 /* IndividualFriendMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualFriendMessages.swift; sourceTree = "<group>"; };
@@ -880,10 +848,6 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
-				CF6503FD288648BB0092EEB9 /* Nike2.mp4 */,
-				CF6503FB288647230092EEB9 /* Nike1.mp4 */,
-				CF6503F928861D190092EEB9 /* NikeWaterBottleAd.mp4 */,
-				7A78232826B2419600CA76FC /* blender.mp4 */,
 				CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */,
 				7AF2E2CB26AE003B00A82C6D /* SplashScreen2.mp4 */,
 			);
@@ -898,28 +862,16 @@
 				CF4A08EF287F837900ADA9DD /* background_3.mp4 */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
-				CF4A08F1287F84DD00ADA9DD /* MoonChild.mp4 */,
-				CF05A8B526A9CBAF009618E6 /* blueRoad.mp4 */,
-				CF4A090A28860DCC00ADA9DD /* cloudsAd.mp4 */,
-				CF4A090628860B7000ADA9DD /* slowclouds.mp4 */,
-				CF4A08F52883717000ADA9DD /* SmileVault2.mp4 */,
-				CF4A0904288609D800ADA9DD /* nina1.mp4 */,
-				CF4A08EB287956A100ADA9DD /* sky.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CF65042A28A185750092EEB9 /* PaperAirplanes.mp4 */,
-				CF4A08DB2878495F00ADA9DD /* Atmosphere.mp4 */,
-				CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */,
-				CF65041F2897EE950092EEB9 /* Atmosphere3.mp4 */,
-				CF65042C28A186200092EEB9 /* Planet6.mp4 */,
-				CFD0ABD9285C4C720032CA3D /* BuiltByTeensVid.mp4 */,
-				CFD0ABDD285C4E7C0032CA3D /* BFVideo.mp4 */,
-				CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */,
-				CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */,
-				CFA1226F285A9A1E00E22E84 /* myRoom2.mp4 */,
-				CF2DBCF028552527008616A3 /* storm2.mp4 */,
 				CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */,
+				CF2DBCF028552527008616A3 /* storm2.mp4 */,
+				CFA1226D285A99FA00E22E84 /* myRoom1.mp4 */,
 				CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */,
-				7A2C2156280509DA009362CF /* cloud.mp4 */,
+				CFD0ABDD285C4E7C0032CA3D /* BFVideo.mp4 */,
+				CF4A08EB287956A100ADA9DD /* sky.mp4 */,
+				CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */,
+				CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */,
 			);
 			path = "Background Videos";
 			sourceTree = "<group>";
@@ -1316,45 +1268,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF6503FC288647240092EEB9 /* Nike1.mp4 in Resources */,
-				CF4A08F2287F84DD00ADA9DD /* MoonChild.mp4 in Resources */,
-				CF6503FA28861D190092EEB9 /* NikeWaterBottleAd.mp4 in Resources */,
 				CF4A08F0287F837900ADA9DD /* background_3.mp4 in Resources */,
 				CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */,
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
-				CF05A8B826A9CBB0009618E6 /* blueRoad.mp4 in Resources */,
-				CF4A08DC2878495F00ADA9DD /* Atmosphere.mp4 in Resources */,
-				CFA12270285A9A1E00E22E84 /* myRoom2.mp4 in Resources */,
-				CF4A08F62883717000ADA9DD /* SmileVault2.mp4 in Resources */,
 				CF4A090928860CC300ADA9DD /* background_2.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				CF6504142892F66D0092EEB9 /* MyRoomVid2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,
-				CFD0ABDA285C4C720032CA3D /* BuiltByTeensVid.mp4 in Resources */,
-				CF4A0905288609D800ADA9DD /* nina1.mp4 in Resources */,
 				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */,
-				CF6503FE288648BB0092EEB9 /* Nike2.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */,
-				CF4A090B28860DCD00ADA9DD /* cloudsAd.mp4 in Resources */,
 				CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */,
 				CFD0ABDE285C4E7C0032CA3D /* BFVideo.mp4 in Resources */,
-				7A2C2159280509DA009362CF /* cloud.mp4 in Resources */,
-				7A78232D26B2419600CA76FC /* blender.mp4 in Resources */,
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
 				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,
 				CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */,
 				CF65042B28A185750092EEB9 /* PaperAirplanes.mp4 in Resources */,
 				CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */,
-				CF6504202897EE950092EEB9 /* Atmosphere3.mp4 in Resources */,
 				CF4A08EC287956A100ADA9DD /* sky.mp4 in Resources */,
-				CF65042D28A186210092EEB9 /* Planet6.mp4 in Resources */,
 				CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */,
-				CF4A090728860B7000ADA9DD /* slowclouds.mp4 in Resources */,
 				7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
 			);
@@ -1743,7 +1679,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1773,7 +1709,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
