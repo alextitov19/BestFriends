@@ -110,7 +110,7 @@ struct SomethingBuggingYou: View {
 //                                 .multilineTextAlignment(.center)
 //                                 .foregroundColor(ColorManager.purple1)
                             
-                Text("bugging you")
+                Text("bugging you all week ...")
                              .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)

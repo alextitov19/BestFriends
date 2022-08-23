@@ -1,8 +1,8 @@
 //
-//  SaySomethingNice.swift
+//  SaySomethingNice1.swift
 //  BestFriends
 //
-//  Created by Social Tech on 8/13/22.
+//  Created by Social Tech on 8/22/22.
 //
 
 
@@ -11,7 +11,7 @@ import Foundation
 import SwiftUI
 
 
-struct SaySomethingNice: View {
+struct SaySomethingNice1: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -21,93 +21,93 @@ struct SaySomethingNice: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey3
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
-            
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//
-//            AdPlayerView(name: "Planet6")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-            
-//            AdPlayerView(name: "PaperAirplanes")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-//
-//            AdPlayerView(name: "Atmosphere2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+
             
             VStack {
                 
-                Text("Building Stronger")
+                
+                Text("FriendGroups around the")
+                    .font(.system(size: 20))
+                    .italic()
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("W O R L D")
+                    .font(.system(size: 50))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+             
+                
+                Text("are together right now")
                     .font(.system(size: 30))
                     .italic()
-                    .foregroundColor(ColorManager.orange2)
+                    .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("FRIENDSHIPS")
-                    .font(.system(size: 55))
-                    
-                    .foregroundColor(ColorManager.orange2)
-                    .fontWeight(.ultraLight)
+                Spacer()
+                    .frame(height: 50)
+                
+                Text("Saying Something")
+                    .font(.system(size: 50))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                Text("Nice to Friends")
+                    .font(.system(size: 50))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 Spacer()
-                    .frame(height:20)
-                
-                Text("Yep, your friend")
-                    .font(.system(size: 25))
-                    .italic()
-                    .foregroundColor(ColorManager.orange5)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                
-                Text("did or said something")
-                    .font(.system(size: 25))
-                    .italic()
-                    .foregroundColor(ColorManager.orange5)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-              
-                
-                Text("that's been bugging you")
-                             .font(.system(size: 25))
-                             .italic()
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(ColorManager.orange5)
-                
-                Text("all week")
-                             .font(.system(size: 25))
-                             .italic()
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(ColorManager.orange5)
-               
+                    .frame(height: 80)
                 VStack {
+                Text("Be part of something")
+                    .font(.system(size: 20))
+                    .italic()
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+          
+                
+                Text("P O S I T I V E")
+                    .font(.system(size: 50))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                Text("on social media")
+                    .font(.system(size: 30))
+                    .italic()
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                
+               
+              
                 
                 Spacer()
                     .frame(height:40)
-            
-                Text("For the next 3 minutes, this is your chance to \nget this off your chest, out in the open")
-                             .font(.system(size: 15))
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(ColorManager.purple1)
-                             .padding()
-                Text("Under the safety of everyone else \non BestFriends is doing it\n right now as well")
-                             .font(.system(size: 15))
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(ColorManager.purple1)
-                             .padding()
+//
+//                Text("For the next 3 minutes, this is your chance to \nget this off your chest, out in the open")
+//                             .font(.system(size: 15))
+//                             .fontWeight(.thin)
+//                             .multilineTextAlignment(.center)
+//                             .foregroundColor(ColorManager.purple1)
+//                             .padding()
+//                Text("Under the safety of everyone else \non BestFriends is doing it\n right now as well")
+//                             .font(.system(size: 15))
+//                             .fontWeight(.thin)
+//                             .multilineTextAlignment(.center)
+//                             .foregroundColor(ColorManager.purple1)
+//                             .padding()
                 VStack {
                  
                     
