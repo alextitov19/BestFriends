@@ -88,24 +88,34 @@ struct FG_VideoCall: View {
             
 
         Image(systemName: "circle.fill")
+//                .frame(width: 130, height: 130)
+//                .foregroundColor(ColorManager.purple2)
+//                .shadow(color: .white, radius: 25, x: 10, y: 20)
+//                .glow(color: ColorManager.purple4, radius: 3)
+//                .opacity(0.5)
+
+            
+            
                     .resizable()
-//                    .foregroundColor(ColorManager.grey2)
                     .foregroundColor(.white)
                     .frame(width: 150, height: 150)
-//                    .blur(radius: 2)
-
-                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                    .shadow(color: .white, radius: 25, x: 10, y: 20)
+//                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                    .glow(color: ColorManager.purple4, radius: 3)
                    .opacity(0.9)
 
+
+            
+            
            VStack {
               Text("Protecting \nthe Soul \nof you")
                             .font(.system(size: 20))
-                            .foregroundColor(.blue)
+                            .foregroundColor(ColorManager.purple4)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                     
-                
+
                     
                 }
             }
@@ -151,18 +161,4 @@ struct FG_VideoCallCircle: View {
 }
 
 
-//struct FG_VideoCall_Previews : PreviewProvider {
-//    static var previews: some View {
-//        FG_VideoCall(user: User(id: "", firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), friends: [])
-//    }
-//
-//}
-
-//
-//    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-
-
-
-//    .glow(color: glowColor(), radius: 20)
-//        private func glowColor() -> Color {
 
