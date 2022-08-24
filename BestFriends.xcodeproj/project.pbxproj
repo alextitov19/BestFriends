@@ -113,6 +113,8 @@
 		CF37534428B3F297003817E3 /* WorldPhotoPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */; };
 		CF37534628B453F0003817E3 /* SaySomethingNice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534528B453F0003817E3 /* SaySomethingNice2.swift */; };
 		CF37534828B45616003817E3 /* SaySomethingNice1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534728B45616003817E3 /* SaySomethingNice1.swift */; };
+		CF37534B28B5D84B003817E3 /* HorizonsPreload1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */; };
+		CF37534F28B5E925003817E3 /* Dreams1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF37534E28B5E925003817E3 /* Dreams1.mp4 */; };
 		CF3802D728456C83005181E4 /* FG_Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3802D628456C83005181E4 /* FG_Team.swift */; };
 		CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */; };
 		CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */; };
@@ -329,6 +331,8 @@
 		CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPhotoPreload2.swift; sourceTree = "<group>"; };
 		CF37534528B453F0003817E3 /* SaySomethingNice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice2.swift; sourceTree = "<group>"; };
 		CF37534728B45616003817E3 /* SaySomethingNice1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice1.swift; sourceTree = "<group>"; };
+		CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPreload1.swift; sourceTree = "<group>"; };
+		CF37534E28B5E925003817E3 /* Dreams1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dreams1.mp4; sourceTree = "<group>"; };
 		CF3802D628456C83005181E4 /* FG_Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Team.swift; sourceTree = "<group>"; };
 		CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroBluemodeFriend.swift; sourceTree = "<group>"; };
 		CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1_ParentsFighting.swift; sourceTree = "<group>"; };
@@ -751,6 +755,13 @@
 			path = "My Planet";
 			sourceTree = "<group>";
 		};
+		CF37534928B5D7E8003817E3 /* My ROOM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "My ROOM";
+			sourceTree = "<group>";
+		};
 		CF381A4E2826883A00B3719E /* Friend Group Fighting */ = {
 			isa = PBXGroup;
 			children = (
@@ -862,6 +873,7 @@
 				CF4A08EF287F837900ADA9DD /* background_3.mp4 */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
+				CF37534E28B5E925003817E3 /* Dreams1.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
 				CF65042A28A185750092EEB9 /* PaperAirplanes.mp4 */,
 				CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */,
@@ -1064,6 +1076,7 @@
 		CFD046992837D99300BF0B02 /* HIDEOUTS */ = {
 			isa = PBXGroup;
 			children = (
+				CF37534928B5D7E8003817E3 /* My ROOM */,
 				CFBB9E83286789A400AEC994 /* MyRoomPreload.swift */,
 				CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */,
 				CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */,
@@ -1188,9 +1201,10 @@
 		D0CC1A02283EE31900E7461F /* Horizons */ = {
 			isa = PBXGroup;
 			children = (
+				CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */,
+				D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */,
 				62372A142884D57500CAB75C /* HorizonGoalChoices.swift */,
 				CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */,
-				D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */,
 				D0F5AB1A2840519700053F17 /* HorizonRocketColorPicker.swift */,
 				62372A162884D7F400CAB75C /* HorizonSetGoal.swift */,
 				62372A182884E27F00CAB75C /* HorizonCustom.swift */,
@@ -1293,6 +1307,7 @@
 				CF05A8BC26A9CCCA009618E6 /* ShakingCoolVideo.mp4 in Resources */,
 				7AF2E2CC26AE003C00A82C6D /* SplashScreen2.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
+				CF37534F28B5E925003817E3 /* Dreams1.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1401,6 +1416,7 @@
 				CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				CF381A56282842EA00B3719E /* Step2FG_NewSolutions.swift in Sources */,
+				CF37534B28B5D84B003817E3 /* HorizonsPreload1.swift in Sources */,
 				CF0911912848976A00CB0AF0 /* BestFriendsVideo.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */,

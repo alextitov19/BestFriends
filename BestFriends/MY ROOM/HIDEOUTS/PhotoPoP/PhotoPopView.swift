@@ -71,6 +71,14 @@ struct PhotoPopView: View {
                         .background(ColorManager.purple3)
                         .cornerRadius(15)
                 })
+                Text("tap saved images to Remove")
+                    .font(.system(size: 19))
+                    .italic()
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                    Spacer()
+                        .frame(height: 100)
                 .padding()
 //                
 //                Button(action: {

@@ -25,23 +25,23 @@ struct WorldPhotoPreload2: View {
             
             VStack {
               
-                Text("Where are images")
-                    .font(.system(size: 20))
+                Text("BestFriends")
+                    .font(.system(size: 35))
                     .italic()
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("Friends sent during")
-                    .font(.system(size: 20))
+                Text("World")
+                    .font(.system(size: 35))
                     .italic()
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
           
                 
-                Text("BestFriends WORLD")
-                    .font(.system(size: 40))
+                Text("PhotoPoP")
+                    .font(.system(size: 60))
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
@@ -49,12 +49,12 @@ struct WorldPhotoPreload2: View {
                 Spacer()
                     .frame(height: 70)
                 
-                Text("Simple")
-                    .font(.system(size: 17))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
+//                Text("Simple")
+//                    .font(.system(size: 17))
+//                    .italic()
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
                 
                 Text("Shake")
                     .font(.system(size: 50))
@@ -74,8 +74,7 @@ struct WorldPhotoPreload2: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Spacer()
-                    .frame(height: 50)
+            
                 
            
                 
@@ -94,14 +93,7 @@ struct WorldPhotoPreload2: View {
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
 
-                    Text("tap saved images to Remove")
-                        .font(.system(size: 19))
-                        .italic()
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                        Spacer()
-                            .frame(height: 100)
+               
                 
                     }
                 }

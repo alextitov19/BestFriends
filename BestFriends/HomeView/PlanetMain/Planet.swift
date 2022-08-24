@@ -365,8 +365,15 @@ struct PlanetActionsView: View {
                     Spacer()
                         .frame(height: 15)
                     
-                    NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere),
+//                    MARK: Reconnect once Horizons completed
+//
+//                    NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere),
+                                 
                                    
+                                   NavigationLink(destination: HorizonsPreload1(),
+                    
+                    
+                    
                 label: {
                         
                         ZStack {
@@ -399,12 +406,14 @@ struct PlanetActionsView: View {
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
-                                Text("(this Fall)")
-                                    .foregroundColor(.green)
-                                    .font(.system(size: 12, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.70)
+//                                Text("(this Fall)")
+//                                    .foregroundColor(.green)
+//                                    .font(.system(size: 12, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.70)
                    
+                                
+                                
                             }
                         }
                     })
