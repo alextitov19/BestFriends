@@ -138,7 +138,7 @@ struct WorldPreload: View {
                             .frame(height: 20)
                         
                         NavigationLink(destination: SomethingBuggingYou(user: user, atmosphere: atmosphere, friends: friends, groups: groups), label: {
-                            Text("Ouch!")
+                            Text("The Soul of You")
                                 .fontWeight(.thin)
                                 .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
