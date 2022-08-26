@@ -60,13 +60,19 @@ struct PhotoPopView: View {
                 Button(action: {
                     showingRecipients = true
                 }, label: {
-                    Text("Add Image")
+                    Text("Send Pic to Friend")
                         .fontWeight(.regular)
-                        .frame(width: 125, height: 40)
+                        .frame(width: 310, height: 40)
                         .foregroundColor(.white)
                         .background(ColorManager.purple3)
                         .cornerRadius(15)
                 })
+                
+                Text("(Select Friend, add image from gallery, image pops up when friend shakes their phone.)")
+                    .font(.system(size: 15, weight: .light))
+                    .italic()
+                    .foregroundColor(.white)
+                
                 .padding()
                 
                 Button(action: {
