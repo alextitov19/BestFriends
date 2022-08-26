@@ -62,7 +62,7 @@ struct PhotoPopView: View {
                 }, label: {
                     Text("Send Pic to Friend")
                         .fontWeight(.regular)
-                        .frame(width: 310, height: 40)
+                        .frame(width: 200, height: 40)
                         .foregroundColor(.white)
                         .background(ColorManager.purple3)
                         .cornerRadius(15)
