@@ -23,6 +23,13 @@ struct AtmosphereMain2: View {
     @State private var sharedWith: [String] = []
     @State private var colorChangeTap: String = ""
     
+    @State private var selectedFriends: [String] = []
+    @State private var shareColor = ColorManager.purple5
+    @State private var showingAlert = false
+    
+    
+   
+    
     var body: some View {
         ZStack {
 
@@ -437,6 +444,19 @@ struct AtmosphereMain2: View {
                 }
             }
         }
+    }
+    
+    func shareButtonTapped() {
+        if selectedFriends.count == 0 { return }
+        for id in selectedFriends {
+            for f in friends {
+                if f.id == id {
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent a song to match your Aura", APNToken: f.APNToken)
+                }
+            }
+        }
+        shareColor = ColorManager.darkGrey
+        showingAlert = true
     }
     
     private func shareMood() {
