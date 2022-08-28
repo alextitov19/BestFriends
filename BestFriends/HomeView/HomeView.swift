@@ -212,7 +212,7 @@ struct HomeView: View {
                         }, label: {
                             Text("Create 'New' Chat Room")
                                 .fontWeight(.regular)
-                                .frame(width: 210, height: 30)
+                                .frame(width: 240, height: 30)
                                 .foregroundColor(.white)
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
@@ -232,7 +232,7 @@ struct HomeView: View {
                                            label: {
                                 Text("Urgent Chat Invite")
                                     .fontWeight(.light)
-                                    .frame(width: 210, height: 30)
+                                    .frame(width: 240, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -248,9 +248,9 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
                                            label: {
-                                Text("FIGHT")
+                                Text("Fix Fight")
                                     .fontWeight(.light)
-                                    .frame(width: 100, height: 30)
+                                    .frame(width: 115, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -258,11 +258,14 @@ struct HomeView: View {
                             })
                             
                             
-                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+//                            NavigationLink(destination: WhoFighting(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+                        
+                            NavigationLink(destination: FG_VideoCall(user: homeData!.user, friends: homeData!.friends, groups: homeData!.groups),
+                                           
                                            label: {
-                                Text("Mediator")
+                                Text("Hurt")
                                     .fontWeight(.light)
-                                    .frame(width: 100, height: 30)
+                                    .frame(width: 115, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -288,9 +291,9 @@ struct HomeView: View {
                         HStack {
                             NavigationLink(destination: VirtualHug(),
                                            label: {
-                                Text("Got HUG")
+                                Text("Got Hug")
                                     .fontWeight(.light)
-                                    .frame(width: 100, height: 30)
+                                    .frame(width: 115, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -300,9 +303,9 @@ struct HomeView: View {
                             
                             NavigationLink(destination: ReceivedPlaylist(),
                                            label: {
-                                Text("Got SONG")
+                                Text("Got Song")
                                     .fontWeight(.light)
-                                    .frame(width: 100, height: 30)
+                                    .frame(width: 115, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -314,9 +317,9 @@ struct HomeView: View {
                         
                         HStack {
                             NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
-                                Text("Aura Change")
+                                Text("Friend's Aura")
                                     .fontWeight(.light)
-                                    .frame(width: 100, height: 30)
+                                    .frame(width: 115, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -328,7 +331,7 @@ struct HomeView: View {
                                            label: {
                                 Text("Horizons")
                                     .fontWeight(.light)
-                                    .frame(width: 100, height: 30)
+                                    .frame(width: 115, height: 30)
                                     .foregroundColor(.white)
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
@@ -342,7 +345,7 @@ struct HomeView: View {
                                        label: {
                             Text("BestFriends World")
                                 .fontWeight(.light)
-                                .frame(width: 210, height: 29)
+                                .frame(width: 240, height: 29)
                                 .foregroundColor(.white)
                                 .background(ColorManager.orange5)
 //                                .background(ColorManager.purple3)

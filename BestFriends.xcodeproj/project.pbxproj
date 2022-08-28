@@ -115,6 +115,7 @@
 		CF37534828B45616003817E3 /* SaySomethingNice1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534728B45616003817E3 /* SaySomethingNice1.swift */; };
 		CF37534B28B5D84B003817E3 /* HorizonsPreload1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */; };
 		CF37534F28B5E925003817E3 /* Dreams1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF37534E28B5E925003817E3 /* Dreams1.mp4 */; };
+		CF37535128BB3398003817E3 /* SendSongPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535028BB3398003817E3 /* SendSongPush.swift */; };
 		CF3802D728456C83005181E4 /* FG_Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3802D628456C83005181E4 /* FG_Team.swift */; };
 		CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */; };
 		CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */; };
@@ -333,6 +334,7 @@
 		CF37534728B45616003817E3 /* SaySomethingNice1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice1.swift; sourceTree = "<group>"; };
 		CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPreload1.swift; sourceTree = "<group>"; };
 		CF37534E28B5E925003817E3 /* Dreams1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dreams1.mp4; sourceTree = "<group>"; };
+		CF37535028BB3398003817E3 /* SendSongPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongPush.swift; sourceTree = "<group>"; };
 		CF3802D628456C83005181E4 /* FG_Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Team.swift; sourceTree = "<group>"; };
 		CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroBluemodeFriend.swift; sourceTree = "<group>"; };
 		CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1_ParentsFighting.swift; sourceTree = "<group>"; };
@@ -975,6 +977,7 @@
 			children = (
 				CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */,
 				CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */,
+				CF37535028BB3398003817E3 /* SendSongPush.swift */,
 				CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */,
 			);
 			path = PlayLists;
@@ -1429,6 +1432,7 @@
 				CFD12CD1281A754200AB2539 /* Step1_NotReadyTalk.swift in Sources */,
 				CF1ECAC728752C3700D999F8 /* SettingsTutorial.swift in Sources */,
 				CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */,
+				CF37535128BB3398003817E3 /* SendSongPush.swift in Sources */,
 				CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */,
 				CF37534828B45616003817E3 /* SaySomethingNice1.swift in Sources */,
 				62319AAD284A788000CA0359 /* FG_Video.swift in Sources */,

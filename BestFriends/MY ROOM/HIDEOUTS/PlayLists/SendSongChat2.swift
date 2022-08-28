@@ -14,6 +14,7 @@ struct SendSongChat2: View {
 
     let user: User
     let friend: User
+    let friends: [User]
     let groups: [Group]
     let friendAtmosphere: Atmosphere
 
@@ -24,9 +25,11 @@ struct SendSongChat2: View {
     init(user: User, friend: User, groups: [Group], friendAtmosphere: Atmosphere) {
         self.user = user
         self.friend = friend
+        self.friends = [user]
         self.groups = groups
         self.friendAtmosphere = friendAtmosphere
         UITextView.appearance().backgroundColor = .clear
+        
     }
 
 
@@ -52,17 +55,17 @@ struct SendSongChat2: View {
 //                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                
 
-                  Text("Be a BestFrind")
+                  Text("Be a BestFriend")
                       .font(.system(size: 40))
                       .foregroundColor(.white)
                       .fontWeight(.ultraLight)
                 
-                Text("by sending them")
+                Text("Send a song ")
                     .font(.system(size: 25))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                 
-                  Text("a song you listen to")
+                  Text("you listen to")
                       .font(.system(size: 25))
                       .foregroundColor(.white)
                       .fontWeight(.ultraLight)
@@ -111,9 +114,9 @@ struct SendSongChat2: View {
                 Button(action: {
                     sendMessage()
                 }, label: {
-                    Text("Send to Chat")
+                    Text("Send the song to Chat")
                         .fontWeight(.thin)
-                        .frame(width: 200, height: 40)
+                        .frame(width: 310, height: 40)
                         .foregroundColor(.white)
                         .font(.system(size: 30))
                     //                                .opacity(0.5)
@@ -123,29 +126,24 @@ struct SendSongChat2: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })
 
-
-                Text("(Push Notification automatically sent)")
-                    .font(.system(size: 15))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.light)
-              
                 Spacer()
-                    .frame(height: 25)
-//
-//                Button(action: {
-//                    sessionManager.showLogin()
-//                },
-//                    label: {
-//                        Text("Home / Chat")
-//                            .fontWeight(.thin)
-//                            .frame(width: 200, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 30))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
+                    .frame(height: 30)
+                
+
+                NavigationLink(
+                    destination: SendSongPush(user: user, friends: friends),
+                    label: {
+                        Text("Send Push Notification")
+                            .fontWeight(.thin)
+                            .frame(width: 300, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                  
+                    })
+              
                 Spacer()
                     .frame(height: 50)
                 
@@ -193,7 +191,7 @@ struct SendSongChat2: View {
 
         var body: some View {
             Button(action: {
-                RestApi.instance.sendPushNotification(title: "BestFriends - Playlist", body: "\(user.firstName) sent a song in Chat", APNToken: friend.APNToken )
+                RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent a song in Chat", APNToken: friend.APNToken )
             },
                    label: {
                 Text(friend.firstName + " " + String(friend.lastName.first!))
