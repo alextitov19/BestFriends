@@ -12,6 +12,7 @@ struct BuildFriendPlaylist: View {
     let user: User
     let groups: [Group]
     let friend: User
+    let friends: [User]
     let friendAtmosphere: Atmosphere
     
     var body: some View {
@@ -77,7 +78,7 @@ struct BuildFriendPlaylist: View {
                         .frame(height: 10)
                     
                     NavigationLink(
-                        destination: SendSongChat2(user: user, friend: friend, groups: groups, friendAtmosphere: friendAtmosphere),
+                        destination: SendSongChat2(user: user, friend: friend, friends: friends, groups: groups, friendAtmosphere: friendAtmosphere),
                         label: {
                             Text("Be a BestFriend")
                                 .fontWeight(.thin)

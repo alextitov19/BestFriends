@@ -14,6 +14,7 @@ struct Friend1VaultPractice: View {
     
     let user: User
     let friend: User
+    let friends: [User]
     let groups: [Group]
     let friendAtmosphere: Atmosphere
     
@@ -23,13 +24,6 @@ struct Friend1VaultPractice: View {
     @State private var mostRecentMoodLog: MoodLog?
     @State private var noteTapped = false
     
-    init(user: User, friend: User, groups: [Group], friendAtmosphere: Atmosphere) {
-        self.user = user
-        self.friend = friend
-        self.groups = groups
-        self.friendAtmosphere = friendAtmosphere
-        UITextView.appearance().backgroundColor = .clear
-    }
     
     var body: some View {
         ZStack {
@@ -278,7 +272,7 @@ struct Friend1VaultPractice: View {
                             }
                         
                         NavigationLink(
-                            destination: SendSongChat2(user: user, friend: friend, groups: groups, friendAtmosphere: friendAtmosphere),
+                            destination: SendSongChat2(user: user, friend: friend, friends: friends, groups: groups, friendAtmosphere: friendAtmosphere),
                             
                             
 //                            destination: BuildFriendPlaylist(user: user, groups: groups, friend: friend, friendAtmosphere: friendAtmosphere),

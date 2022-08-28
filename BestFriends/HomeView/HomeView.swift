@@ -316,7 +316,7 @@ struct HomeView: View {
                         
                         
                         HStack {
-                            NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
+                            NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
                                 Text("Friend's Aura")
                                     .fontWeight(.light)
                                     .frame(width: 115, height: 30)

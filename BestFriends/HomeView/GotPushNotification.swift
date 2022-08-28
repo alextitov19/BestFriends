@@ -79,7 +79,7 @@ if selectedPlanet != nil {
     }
     Spacer().frame(height: 10)
     
-    NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
+    NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),
                    label: {
         Text("Changed Atmosphere")
             .fontWeight(.light)

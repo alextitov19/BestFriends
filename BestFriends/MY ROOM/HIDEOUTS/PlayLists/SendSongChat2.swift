@@ -22,15 +22,7 @@ struct SendSongChat2: View {
     @State private var colorChangeTap: String = ""
 
 
-    init(user: User, friend: User, groups: [Group], friendAtmosphere: Atmosphere) {
-        self.user = user
-        self.friend = friend
-        self.friends = [user]
-        self.groups = groups
-        self.friendAtmosphere = friendAtmosphere
-        UITextView.appearance().backgroundColor = .clear
-        
-    }
+ 
 
 
 
