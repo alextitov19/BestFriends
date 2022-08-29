@@ -116,6 +116,7 @@
 		CF37534F28B5E925003817E3 /* Dreams1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF37534E28B5E925003817E3 /* Dreams1.mp4 */; };
 		CF37535128BB3398003817E3 /* SendSongPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535028BB3398003817E3 /* SendSongPush.swift */; };
 		CF37535328BD5544003817E3 /* SaySomethingNice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535228BD5544003817E3 /* SaySomethingNice2.swift */; };
+		CF37535528BD5BDD003817E3 /* SomethingBuggingYou2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */; };
 		CF3802D728456C83005181E4 /* FG_Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3802D628456C83005181E4 /* FG_Team.swift */; };
 		CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */; };
 		CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */; };
@@ -335,6 +336,7 @@
 		CF37534E28B5E925003817E3 /* Dreams1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dreams1.mp4; sourceTree = "<group>"; };
 		CF37535028BB3398003817E3 /* SendSongPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongPush.swift; sourceTree = "<group>"; };
 		CF37535228BD5544003817E3 /* SaySomethingNice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice2.swift; sourceTree = "<group>"; };
+		CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingBuggingYou2.swift; sourceTree = "<group>"; };
 		CF3802D628456C83005181E4 /* FG_Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Team.swift; sourceTree = "<group>"; };
 		CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroBluemodeFriend.swift; sourceTree = "<group>"; };
 		CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1_ParentsFighting.swift; sourceTree = "<group>"; };
@@ -914,6 +916,7 @@
 				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
 				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
 				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
+				CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */,
 			);
 			path = BestFriendsWorld;
 			sourceTree = "<group>";
@@ -1415,6 +1418,7 @@
 				7A720CC528A6CB6800992FD2 /* ChangeChatBackgroundView.swift in Sources */,
 				CFAB540B281BB6EE00BBF502 /* DramaCentralView.swift in Sources */,
 				CF381A502827372100B3719E /* Step2_ParentsFighting.swift in Sources */,
+				CF37535528BD5BDD003817E3 /* SomethingBuggingYou2.swift in Sources */,
 				CFA1226228597AFC00E22E84 /* HurtFeelings2.swift in Sources */,
 				CF3B65AD280075620003A714 /* MyAccountView.swift in Sources */,
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,

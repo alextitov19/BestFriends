@@ -45,8 +45,6 @@ struct SomethingBuggingYou: View {
             VStack {
                 
          
-                Spacer()
-                    .frame(height:20)
                 
                 Text("Did your friend")
                     .font(.system(size: 25))
@@ -71,28 +69,23 @@ struct SomethingBuggingYou: View {
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple2)
-
-                
-                       Spacer()
-                           .frame(height:20)
-                
                 
               
-                Text("Did you do or say")
+                    Text("...")
+                        .font(.system(size: 20))
+                        .italic()
+                        .foregroundColor(ColorManager.purple2)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                    
+                Text("Did you hurt them?")
                     .font(.system(size: 25))
                     .italic()
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                
-                Text("something not nice?")
-                    .font(.system(size: 25))
-                    .italic()
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-               
+             
                 VStack {
                 
                 Spacer()
@@ -103,38 +96,36 @@ struct SomethingBuggingYou: View {
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple1)
-                    
-//                    Text("give you the courage")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(ColorManager.purple1)
+
                             
-                Text("bugging you all week ...")
+                Text("bugging you all week -")
                              .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple1)
+                    Text("here's a chance to")
+                                 .font(.system(size: 40))
+                                 .fontWeight(.thin)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(ColorManager.purple3)
                            
-               
-//
-//                    Text("so it can be fixed.")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(ColorManager.purple1)
-//
+                    Text("Fix it!")
+                                 .font(.system(size: 50))
+                                 .italic()
+                                 .fontWeight(.regular)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(ColorManager.purple3)
                     VStack {
                  
                     
                     Spacer()
-                        .frame(height: 40)
+                        .frame(height: 50)
                     
                     Button(action: {
                         sessionManager.showLogin()
                     },
                         label: {
-                            Text("Mention it in Chat")
+                            Text("Say it in Chat")
                                 .fontWeight(.thin)
                                 .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -146,26 +137,41 @@ struct SomethingBuggingYou: View {
                     
                     
                     VStack {
-                                            Text("You got this!")
-                                                         .font(.system(size: 20))
-                                                         .fontWeight(.thin)
-                                                         .multilineTextAlignment(.center)
-                                                         .foregroundColor(Color.white)
+                                          
                         Spacer()
-                            .frame(height: 30)
+                            .frame(height: 15)
                         
                         NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: {
-                                Text("Like some help?")
+                                Text("Like some help w/ what to say?")
                                     .fontWeight(.thin)
-                                    .frame(width: 230, height: 40)
+                                    .frame(width: 310, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 23))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                        Text("You got this!")
+                                     .font(.system(size: 20))
+                                     .fontWeight(.thin)
+                                     .multilineTextAlignment(.center)
+                                     .foregroundColor(Color.white)
+                        
+                        
+                        
+                        Spacer()
+                            .frame(height: 40)
+                        
+                        NavigationLink(destination: SomethingBuggingYou2(user: user, friends: friends), label: {
+                                Text("Send Push Notification")
+                                    .fontWeight(.thin)
+                                    .frame(width: 310, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
-                        
-                        
                         
                         Spacer()
                             .frame(height: 150)
