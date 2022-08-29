@@ -42,12 +42,12 @@ struct HideoutsView: View {
             })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -165: 0)
            
-           
-            NavigationLink(destination: PhotoPopPreload(user: user, friends: friends), label: {
-                  HideoutsViewCircle (color: .orange, friendName: "Photo \nShake")
-            })
-                .offset(x: showItems ? 75 : 0, y: showItems ? -90: 0)
-           
+//           
+//            NavigationLink(destination: PhotoPopPreload(user: user, friends: friends), label: {
+//                  HideoutsViewCircle (color: .orange, friendName: "PhotoPOP")
+//            })
+//                .offset(x: showItems ? 75 : 0, y: showItems ? -90: 0)
+//           
             
             NavigationLink(destination: ReceivedPlaylist(), label: { HideoutsViewCircle (color: .pink, friendName: "Song \nfor \nMood")
             })

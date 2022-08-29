@@ -149,7 +149,13 @@ struct PlanetActionsView: View {
                                .opacity(0.40)
                             
                             VStack {
-                                Text("Add")
+                                Text("Add &")
+                                    .foregroundColor(.green)
+                                    .font(.system(size: 23, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.70)
+                                
+                                Text("Accept")
                                     .foregroundColor(.green)
                                     .font(.system(size: 23, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -222,7 +228,7 @@ struct PlanetActionsView: View {
 //
 //                    MARK: First setup
                     
-                    NavigationLink(destination: WorldPreload(user: user, atmosphere: atmosphere, friends: friends, groups: groups),
+                    NavigationLink(destination: WorldPreload(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                                    label: {
                         ZStack {
                             Circle()
@@ -275,13 +281,13 @@ struct PlanetActionsView: View {
                                   
                                   Text("Start")
                                       .foregroundColor(.green)
-                                      .font(.system(size: 22, weight: .bold))
+                                      .font(.system(size: 24, weight: .bold))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                       .opacity(0.70)
 
                                   Text("Here")
                                       .foregroundColor(.green)
-                                      .font(.system(size: 22, weight: .bold))
+                                      .font(.system(size: 24, weight: .bold))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                       .opacity(0.70)
                                   

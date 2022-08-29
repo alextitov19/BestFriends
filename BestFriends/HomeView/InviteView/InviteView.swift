@@ -79,17 +79,24 @@ struct InviteView: View {
                                     .background(inviteClicked ? ColorManager.purple3 : Color.green)
                                     .cornerRadius(15)
                             }
+                            
                             .frame(width: 120)
                         }
                         .padding()
                         
                         
-                        Spacer()
-                            .frame(height: 30)
+                       
                         
                         VStack {
+                            Text("*Email is CASE Sensitive")
+                                .fontWeight(.thin)
+                                .foregroundColor(.red)
+                                .italic()
+                                .font(.system(size: 17))
+                            Spacer()
+                                .frame(height: 40)
                             
-                            Text("Accept Friend Requests")
+                            Text("Accepting Friend Requests")
                                 .foregroundColor(.gray)
                                 .font(.system(size: 25, weight: .bold))
                             

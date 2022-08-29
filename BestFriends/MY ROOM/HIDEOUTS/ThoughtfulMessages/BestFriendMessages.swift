@@ -19,7 +19,6 @@ struct BestFriendMessages: View {
     
     let user: User
     let atmosphere: Atmosphere
-    
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
     

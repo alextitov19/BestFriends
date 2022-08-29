@@ -18,6 +18,7 @@ struct SaySomethingNice1: View {
     let user: User
     let atmosphere: Atmosphere
     let friends: [User]
+    let friendAtmospheres: [Atmosphere]
     
     var body: some View {
         ZStack {
@@ -28,39 +29,14 @@ struct SaySomethingNice1: View {
             
             VStack {
                 
-                
-                Text("FriendGroups around the")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Text("W O R L D")
-                    .font(.system(size: 50))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-             
-                
-                Text("are together right now")
-                    .font(.system(size: 30))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 50)
-                
+          
                 Text("Saying Something")
                     .font(.system(size: 50))
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("Nice to Friends")
+                Text("Nice to a Friend")
                     .font(.system(size: 50))
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
@@ -95,19 +71,7 @@ struct SaySomethingNice1: View {
                 
                 Spacer()
                     .frame(height:40)
-//
-//                Text("For the next 3 minutes, this is your chance to \nget this off your chest, out in the open")
-//                             .font(.system(size: 15))
-//                             .fontWeight(.thin)
-//                             .multilineTextAlignment(.center)
-//                             .foregroundColor(ColorManager.purple1)
-//                             .padding()
-//                Text("Under the safety of everyone else \non BestFriends is doing it\n right now as well")
-//                             .font(.system(size: 15))
-//                             .fontWeight(.thin)
-//                             .multilineTextAlignment(.center)
-//                             .foregroundColor(ColorManager.purple1)
-//                             .padding()
+
                 VStack {
                  
                     
@@ -136,25 +100,30 @@ struct SaySomethingNice1: View {
                                                          .multilineTextAlignment(.center)
                                                          .foregroundColor(Color.white)
                         
-//                    Text("Cheering each other")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(Color.white)
-//                    Text("in good times,")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(Color.white)
-//                             Text("supporting in bad.")
-//                                 .font(.system(size: 20))
-//                                 .fontWeight(.thin)
-//                                 .multilineTextAlignment(.center)
-//                                 .foregroundColor(Color.white)
+
+                        Spacer()
+                            .frame(height: 40)
+                        
+                        NavigationLink(
+                            destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                            label: {
+                                Text("See saved Nice Messages")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 320, height: 40)
+                                    .font(.system(size: 27))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                              
+                              
+                            }
+                     
+                        )}
                    
                     
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 150)
                  
                         
                     }
@@ -168,4 +137,4 @@ struct SaySomethingNice1: View {
     
 
 }
-}
+

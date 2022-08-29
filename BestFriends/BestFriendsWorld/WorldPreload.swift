@@ -18,6 +18,7 @@ struct WorldPreload: View {
     let atmosphere: Atmosphere
     let friends: [User]
     let groups: [Group]
+    let friendAtmospheres: [Atmosphere]
     
     var body: some View {
         ZStack {
@@ -44,44 +45,43 @@ struct WorldPreload: View {
             
             VStack {
                 
-                Text("Sunday's ")
+                Text("Sunday's at 8pm")
                     .font(.system(size: 25))
-                    .italic()
+//                    .italic()
                     .foregroundColor(ColorManager.orange2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("at 8pm EST")
+                Text("(for 10 minutes)")
                     .font(.system(size: 20))
-                    
+                    .italic()
                     .foregroundColor(ColorManager.orange2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height:40)
                 
-                Text("Join the rest")
+                Text("FriendGroups around the")
                     .font(.system(size: 30))
-//                    .italic()
-                    .foregroundColor(ColorManager.purple2)
+                    .italic()
+                    .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                
-                Text("of the World")
-                    .font(.system(size: 30))
-//                    .italic()
+                Text("W O R L D")
+                    .font(.system(size: 50))
                     .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-              
+             
                 
-                Text("Being BestFriends")
-                             .font(.system(size: 35))
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(ColorManager.purple2)
+                Text("are together right now")
+                    .font(.system(size: 30))
+                    .italic()
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height:100)
@@ -90,23 +90,9 @@ struct WorldPreload: View {
                 
                 VStack {
                     
-               
-//
-//
-//                    NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
-//                        Text("My New Aura")
-//                            .fontWeight(.thin)
-//                            .frame(width: 270, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 30))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-//
-                 
+
                     
-                    NavigationLink(destination: SaySomethingNice1(user: user, atmosphere: atmosphere, friends: friends), label: {
+                    NavigationLink(destination: SaySomethingNice1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                         Text("Say Something Nice!")
                             .fontWeight(.thin)
                             .frame(width: 250, height: 40)
@@ -124,7 +110,7 @@ struct WorldPreload: View {
                             .frame(height: 20)
                         
                         NavigationLink(destination: WorldPhotoPreload2(user: user, friends: friends), label: {
-                            Text("PhotoPop")
+                            Text("PhotoPOP")
                                 .fontWeight(.thin)
                                 .frame(width: 250, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

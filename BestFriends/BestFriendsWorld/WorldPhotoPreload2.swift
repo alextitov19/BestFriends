@@ -83,7 +83,7 @@ struct WorldPhotoPreload2: View {
                         .frame(height: 50)
                     
                     NavigationLink(destination: PhotoPopView(user: user, friends: friends), label: {
-                        Text("Load PhotoPop")
+                        Text("Upload Images")
                             .fontWeight(.thin)
                             .frame(width: 250, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

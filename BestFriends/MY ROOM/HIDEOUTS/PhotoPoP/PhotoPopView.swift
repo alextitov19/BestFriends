@@ -36,7 +36,7 @@ struct PhotoPopView: View {
                 }
             
             VStack {
-                Text("Photo Pop")
+                Text("PhotoPOP")
                     .font(.system(size: 20, weight: .light))
                     .foregroundColor(.white)
                 
@@ -56,19 +56,25 @@ struct PhotoPopView: View {
                 }
                 
                 Spacer()
+                Text("(Select Friend, add image from gallery, image pops up when friend shakes their phone on homepage.)")
+                    .font(.system(size: 15, weight: .light))
+                    .italic()
+                    .foregroundColor(.white)
+                    .padding()
                 
                 Button(action: {
                     showingRecipients = true
                 }, label: {
-                    Text("Send Pic to Friend")
+                    Text("TAP here to upload image")
                         .fontWeight(.regular)
-                        .frame(width: 200, height: 40)
+                        .frame(width: 310, height: 40)
                         .foregroundColor(.white)
+                        .font(.system(size: 27))
                         .background(ColorManager.purple3)
                         .cornerRadius(15)
                 })
                 
-                Text("(Select Friend, add image from gallery, image pops up when friend shakes their phone.)")
+                Text("(Tap image to delete and replace)")
                     .font(.system(size: 15, weight: .light))
                     .italic()
                     .foregroundColor(.white)
