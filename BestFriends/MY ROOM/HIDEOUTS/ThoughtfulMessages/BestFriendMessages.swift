@@ -110,25 +110,16 @@ struct BestFriendMessages: View {
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                         
-                        Text("messages")
-                            .font(.system(size: 20))
-                            .italic()
-                            .foregroundColor(.white)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
+//                        Text("Messages")
+//                            .font(.system(size: 20))
+//                            .italic()
+//                            .foregroundColor(.white)
+//                            .fontWeight(.medium)
+//                            .multilineTextAlignment(.center)
                         
-                        
-                        Text("that made \nyou SMILE")
-                            .font(.system(size: 35))
-                            .foregroundColor(ColorManager.grey1)
-
-//                            .foregroundColor(.gray)
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                   
-                        Text("(you 'long-tapped' \nfrom Chat)")
-                            .font(.system(size: 16))
+                  
+                        Text("(See Messages you \n'long-tapped' and \nsaved from Chat)")
+                            .font(.system(size: 18))
                             .italic()
                             .foregroundColor(.purple)
                             .fontWeight(.medium)

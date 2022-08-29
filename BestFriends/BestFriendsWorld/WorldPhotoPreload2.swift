@@ -17,6 +17,8 @@ struct WorldPhotoPreload2: View {
     let user: User
     let friends: [User]
     
+    @State private var showingAlert = false
+    
     var body: some View {
         ZStack {
             ColorManager.grey4

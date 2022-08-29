@@ -93,7 +93,6 @@ struct Step6_TextingFirst: View {
                         VStack {
                             
                             NavigationLink(
-//                                destination: Step2_FightLandingView(),
                                 
                                 destination: Step2_FightLandingView(user: user, friends: friends),
                                 label: {
