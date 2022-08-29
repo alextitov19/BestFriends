@@ -25,23 +25,29 @@ struct WorldPhotoPreload2: View {
             
             VStack {
               
-                Text("BestFriends")
-                    .font(.system(size: 35))
+                Text("Send a Friend")
+                    .font(.system(size: 30))
                     .italic()
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("World")
-                    .font(.system(size: 35))
+                Text("a picture that makes")
+                    .font(.system(size: 30))
                     .italic()
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
           
+                Text("them")
+                    .font(.system(size: 30))
+                    .italic()
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
                 
-                Text("PhotoPoP")
-                    .font(.system(size: 60))
+                Text("SMILE")
+                    .font(.system(size: 70))
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
@@ -67,7 +73,7 @@ struct WorldPhotoPreload2: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("on Homepage")
+                Text("(On Homepage to see the ones they sent you)")
                     .font(.system(size: 17))
                     .italic()
                     .foregroundColor(.white)
