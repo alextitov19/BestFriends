@@ -73,7 +73,7 @@ struct WorldPhotoPreload2: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("(On Homepage to see the ones they sent you)")
+                Text("(On Homepage: see if they sent you one!)")
                     .font(.system(size: 17))
                     .italic()
                     .foregroundColor(.white)
