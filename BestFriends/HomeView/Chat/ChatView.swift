@@ -115,7 +115,7 @@ struct ChatView: View {
                             ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
                                 .onLongPressGesture(minimumDuration: 1, perform: { showingMessageOptions = true })
                                 .confirmationDialog("What would you like to do with this message?", isPresented: $showingMessageOptions, titleVisibility: .visible) {
-                                    Button("Save to Smile Notes") {
+                                    Button("Save Nice Messages to Smile Notes") {
                                         saveToSmileNotes(message: message)
                                     }
                                     Link("Report Abuse", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
