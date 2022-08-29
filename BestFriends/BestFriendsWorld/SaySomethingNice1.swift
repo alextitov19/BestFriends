@@ -30,7 +30,7 @@ struct SaySomethingNice1: View {
             VStack {
                 
           
-                Text("Saying Something")
+                Text("Say something")
                     .font(.system(size: 50))
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
@@ -82,11 +82,11 @@ struct SaySomethingNice1: View {
                         sessionManager.showLogin()
                     },
                         label: {
-                            Text("Say it in Chat")
+                            Text("Say it in Chat, then notify")
                                 .fontWeight(.thin)
-                                .frame(width: 150, height: 40)
+                                .frame(width: 310, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 20))
+                                .font(.system(size: 27))
                                 .background(ColorManager.purple3)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -102,8 +102,27 @@ struct SaySomethingNice1: View {
                         
 
                         Spacer()
-                            .frame(height: 40)
-                        
+                            .frame(height: 5)
+                       
+                        NavigationLink(
+                            
+                            destination: SaySomethingNice2(user: user, friends: friends),
+                            label: {
+                                Text("Send Push Notfication")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .frame(width: 290, height: 40)
+                                    .font(.system(size: 27))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                
+                            }
+                        )}
+                    
+                    Spacer()
+                        .frame(height: 60)
+                    
                         NavigationLink(
                             destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                             label: {
@@ -120,24 +139,9 @@ struct SaySomethingNice1: View {
                             }
                      
                         )}
-                    Spacer()
-                        .frame(height: 25)
+                 
                     
-                    NavigationLink(
-                        
-                        destination: SaySomethingNice2(user: user, friends: friends),
-                        label: {
-                            Text("Send Push Notfication")
-                                .fontWeight(.thin)
-                                .foregroundColor(Color.white)
-                                .frame(width: 320, height: 40)
-                                .font(.system(size: 25))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            
-                        }
-                    )}
+              
                     
                         Spacer()
                             .frame(height: 150)

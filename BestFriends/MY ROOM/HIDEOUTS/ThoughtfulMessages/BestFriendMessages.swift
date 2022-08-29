@@ -118,10 +118,10 @@ struct BestFriendMessages: View {
 //                            .multilineTextAlignment(.center)
                         
                   
-                        Text("(See Messages you \n'long-tapped' and \nsaved from Chat)")
+                        Text("Nice messages you \n'long-tapped' and \nsaved from Chat")
                             .font(.system(size: 18))
                             .italic()
-                            .foregroundColor(.purple)
+                            .foregroundColor(ColorManager.grey1)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                     

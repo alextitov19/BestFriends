@@ -52,7 +52,7 @@ struct WorldPreload: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("(for 10 minutes)")
+                Text("(for a few minutes)")
                     .font(.system(size: 20))
                     .italic()
                     .foregroundColor(ColorManager.orange2)

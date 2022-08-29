@@ -135,11 +135,15 @@ struct SomethingBuggingYou: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                     
-                    
+                        Text("Get this OFF your chest!")
+                                     .font(.system(size: 20))
+                                     .fontWeight(.thin)
+                                     .multilineTextAlignment(.center)
+                                     .foregroundColor(Color.white)
                     VStack {
                                           
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 20)
                         
                         NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: {
                                 Text("Like some help w/ what to say?")
@@ -151,16 +155,12 @@ struct SomethingBuggingYou: View {
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
-                        Text("You got this!")
-                                     .font(.system(size: 20))
-                                     .fontWeight(.thin)
-                                     .multilineTextAlignment(.center)
-                                     .foregroundColor(Color.white)
+                      
                         
                         
                         
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 60)
                         
                         NavigationLink(destination: SomethingBuggingYou2(user: user, friends: friends), label: {
                                 Text("Send Push Notification")
