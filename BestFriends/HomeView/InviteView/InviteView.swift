@@ -60,7 +60,7 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 15)
                 
-                Text("1) Ask friend to download app \n2) Enter their email - tap [Invite] \n3) Only one of you send invite")
+                Text("1) Ask friend to download app \n2) Enter their email (Case Sensitive) \n3) Only one of you send invite \nOnly invite ONCE")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()

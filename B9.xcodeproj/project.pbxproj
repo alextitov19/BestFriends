@@ -1258,7 +1258,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7A71BCF62625292A00E6FA9E /* Build configuration list for PBXProject "BestFriends" */;
+			buildConfigurationList = 7A71BCF62625292A00E6FA9E /* Build configuration list for PBXProject "B9" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1699,7 +1699,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1729,7 +1729,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
@@ -1753,7 +1753,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7A71BCF62625292A00E6FA9E /* Build configuration list for PBXProject "BestFriends" */ = {
+		7A71BCF62625292A00E6FA9E /* Build configuration list for PBXProject "B9" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7A71BD082625292B00E6FA9E /* Debug */,
