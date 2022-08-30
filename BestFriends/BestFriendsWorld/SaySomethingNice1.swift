@@ -36,7 +36,7 @@ struct SaySomethingNice1: View {
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("Nice to a Friend")
+                Text("'Nice' to a Friend")
                     .font(.system(size: 50))
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
@@ -82,7 +82,7 @@ struct SaySomethingNice1: View {
                         sessionManager.showLogin()
                     },
                         label: {
-                            Text("Say it in Chat, then notify")
+                            Text("Type it in Chat, then notify")
                                 .fontWeight(.thin)
                                 .frame(width: 310, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -126,7 +126,7 @@ struct SaySomethingNice1: View {
                         NavigationLink(
                             destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                             label: {
-                                Text("See saved Nice Messages")
+                                Text("See saved 'Nice' Messages")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
                                     .frame(width: 320, height: 40)
@@ -140,7 +140,12 @@ struct SaySomethingNice1: View {
                      
                         )}
                  
-                    
+                    Text("(that you long-tapped in Chat)")
+                                 .font(.system(size: 20))
+                                 .italic()
+                                 .fontWeight(.thin)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(Color.white)
               
                     
                         Spacer()
