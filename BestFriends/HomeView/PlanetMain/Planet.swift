@@ -97,7 +97,7 @@ struct PlanetActionsView: View {
                   
                     
                 VStack {
-                    NavigationLink(destination: MyRoomPreload(user: user, friends: friends, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                    NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
                                    label: {
                         ZStack {
                             Circle()
@@ -108,27 +108,22 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-                                Text("Safe Space")
+                                Text("Built by")
                                     .foregroundColor(.white)
                                     .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
+      
                                 
-//                                Text("with 5 Closest")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 12, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                    .opacity(0.50)
-                                
-                                Text("on")
+                                Text("Teens")
                                     .foregroundColor(.white)
                                     .font(.system(size: 13, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("Bad Days ")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 14, weight: .bold))
+                                Text("for Teens")
+                                    .foregroundColor(.green)
+                                    .font(.system(size: 22, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                             }
