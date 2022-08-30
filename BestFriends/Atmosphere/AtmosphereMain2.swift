@@ -48,7 +48,7 @@ struct AtmosphereMain2: View {
                 
 //                HStack {
                     
-                    Text("'My Aura'")
+                    Text("What's your 'Aura'")
                         .font(.system(size: 35))
                         .fontWeight(.medium)
                         .foregroundColor(Color.white)
@@ -248,7 +248,7 @@ struct AtmosphereMain2: View {
                 VStack {
                     // MARK: End of feeling buttons
                     HStack {
-                        Text("Ok, what's going on?")
+                        Text("Tell friends what's going on")
                             .font(.system(size: 21))
                             .italic()
                             .fontWeight(.light)
@@ -271,7 +271,7 @@ struct AtmosphereMain2: View {
                         TextField("You can type what's up here...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple2)
-                            .padding(.horizontal, 50)
+                            .padding(.horizontal, 80)
                             .onReceive(Just(summary)) { _ in limitText(40) }
                         
                         
@@ -424,7 +424,7 @@ struct AtmosphereMain2: View {
                  
                     VStack {
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 20)
                         
                         Button(action: {
                             sessionManager.showLogin()
@@ -432,7 +432,7 @@ struct AtmosphereMain2: View {
                             label: {
                                 Text("Home / Chat")
                                     .fontWeight(.thin)
-                                    .frame(width: 175, height: 30)
+                                    .frame(width: 175, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(ColorManager.purple3)
