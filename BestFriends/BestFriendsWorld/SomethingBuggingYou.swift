@@ -63,14 +63,19 @@ struct SomethingBuggingYou: View {
                 
               
                 
-                Text("that hurt?")
+                Text("that hurt down to the")
                              .font(.system(size: 25))
                              .italic()
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple2)
                 
-              
+                Text("soul of you?")
+                             .font(.system(size: 25))
+                             .italic()
+                             .fontWeight(.thin)
+                             .multilineTextAlignment(.center)
+                             .foregroundColor(ColorManager.purple2)
                     Text("...")
                         .font(.system(size: 20))
                         .italic()
@@ -98,18 +103,18 @@ struct SomethingBuggingYou: View {
                              .foregroundColor(ColorManager.purple1)
 
                             
-                Text("bugging you all week -")
+                Text("bugging you all week")
                              .font(.system(size: 20))
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .foregroundColor(ColorManager.purple1)
                     Text("here's a chance to")
-                                 .font(.system(size: 40))
+                                 .font(.system(size: 20))
                                  .fontWeight(.thin)
                                  .multilineTextAlignment(.center)
-                                 .foregroundColor(ColorManager.purple3)
+                                 .foregroundColor(ColorManager.purple1)
                            
-                    Text("Fix it!")
+                    Text("smooth it over!")
                                  .font(.system(size: 50))
                                  .italic()
                                  .fontWeight(.regular)

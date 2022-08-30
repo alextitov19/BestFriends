@@ -37,13 +37,15 @@ struct Apologies4: View {
            
             VStack {
                 
-                Text("Some EXAMPLES of what to \nsay in a Chat message")
+                
+                
+                Text("Keep it simple. \nTry something like this ...")
                     .font(.system(size: 20))
                     .fontWeight(.regular)
                     .foregroundColor(Color .white)
                 
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 15)
                 
                 VStack {
                     Text("Hey, I would like to apologize \nfor what I said.")
