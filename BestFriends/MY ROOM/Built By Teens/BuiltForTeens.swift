@@ -88,7 +88,7 @@ struct BuiltForTeens: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("BestFriends app ")
+                Text("BestFriends app")
                     .font(.system(size: 50))
                 
                     .foregroundColor(.white)
