@@ -220,6 +220,11 @@ struct Apologies4: View {
                                     }
                     })
                     
+                    Text("That wasn't so bad was it.")
+                        .font(.system(size: 30))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color .white)
+                    
                     Spacer ()
                         .frame(height: 15)
                     

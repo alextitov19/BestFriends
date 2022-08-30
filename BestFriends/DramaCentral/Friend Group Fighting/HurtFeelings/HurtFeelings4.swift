@@ -208,6 +208,11 @@ struct HurtFeelings4: View {
 
                 })
                     
+                    Text("You got this. Nice Job!")
+                        .font(.system(size: 30))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color .white)
+                    
                     Spacer ()
                         .frame(height: 15)
                     
