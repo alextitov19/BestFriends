@@ -153,7 +153,7 @@ struct FightsInfo: View {
                         Spacer()
                         .frame(height: 100)
 
-                        Text("Getting you back to")
+                        Text("Helping get you back to")
                             .font(.system(size: 25))
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)

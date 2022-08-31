@@ -55,28 +55,25 @@ struct BuiltForTeens: View {
                 
                 Spacer()
                     .frame(height: 15)
-                
-                Text("We surveyed 500 teens")
-                    .font(.system(size: 25))
-                    .italic()
-                    .foregroundColor(ColorManager.orange2)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
               
-                
-                Text("We worked with 175 teens")
+                Text("We worked with over")
                     .font(.system(size: 25))
-                    .italic()
+                
                     .foregroundColor(ColorManager.orange2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-           
+                Text("175 teens worldwide")
+                    .font(.system(size: 25))
+                
+                    .foregroundColor(ColorManager.orange2)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
                 
                 Spacer()
                     .frame(height: 30)
                 
-                Text("Thus was born")
+                Text("building")
                     .font(.system(size: 20))
                     .italic()
                     .foregroundColor(.white)
@@ -96,8 +93,8 @@ struct BuiltForTeens: View {
                     VStack {
 
                         
-                        Link(destination: URL(string: "https://socialtechlabs.com/team/")!) {
-                                Text("Meet the Teen Team")
+                        Link(destination: URL(string: "https://socialtechlabs.com/teen-team/")!) {
+                                Text("Meet some of our Teens")
                                     .fontWeight(.thin)
                                     .frame(width: 310, height: 40)
                                     .font(.system(size: 30))
