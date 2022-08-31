@@ -42,11 +42,16 @@ struct InviteView: View {
                 Text("Add up to 5 friends")
                     .foregroundColor(.purple)
                     .font(.system(size: 27, weight: .light))
+                
+                Text("(Friends show up as planets on homepage)")
+                    .italic()
+                    .foregroundColor(.white)
+                    .font(.system(size: 15, weight: .thin))
               
                 Spacer()
                     .frame(height: 15)
                 
-                Text("1) Ask friend to download app \n2) Enter their email (Case Sensitive) \n3) Only one of you send invite \n4) Invite only ONCE")
+                Text("1) Ask friend to download app \n2) Enter their email (Case Sensitive) \n3) Only one of you send invite \n4) Invite only ONCE or friend's planet \n       shows up multiple times.")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()

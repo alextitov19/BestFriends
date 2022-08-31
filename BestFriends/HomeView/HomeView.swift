@@ -525,6 +525,11 @@ struct HomeView: View {
             if group.members.containsSameElements(as: arr) {
                 sessionManager.showChat(user: homeData!.user, group: group)
             }
+            
+            
+//            Spacer()
+//                .frame(height: 100)
+            
         }
     }
     

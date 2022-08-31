@@ -43,20 +43,36 @@ struct InfoViewPlanet: View {
               
                 
             VStack {
-             
-                Text("Each Planet")
-                    .font(.system(size: 30))
-                    .fontWeight(.thin)
+
+                Text("Add Friends")
+                    .font(.system(size: 35))
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(ColorManager.purple3)
                 
-                Text("is a Friend")
-                    .font(.system(size: 30))
-                    .fontWeight(.thin)
+                Text("-Tap the [Add & Invite Friends] circle")
+                    .font(.system(size: 15))
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(ColorManager.grey1)
+                     
+                     Text("-Add up to 5 friends")
+                         .font(.system(size: 15))
+                         .fontWeight(.light)
+                         .multilineTextAlignment(.center)
+                         .foregroundColor(ColorManager.grey1)
+                     
+                     Text("-Friend show up as planets on homepage")
+                         .font(.system(size: 15))
+                         .fontWeight(.light)
+                         .multilineTextAlignment(.center)
+                         .foregroundColor(ColorManager.grey1)
+                    
+
+                         Spacer()
+                         .frame(height: 0)
                 
-           
+                Spacer()
                 .frame(height: 15)
                 
                 VStack {

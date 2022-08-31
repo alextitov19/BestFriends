@@ -81,18 +81,12 @@ struct PlanetActionsView: View {
     var body: some View {
         
         VStack {
-//            Image(systemName: "info.circle")
-//                .resizable()
-//                .frame(width: 27, height: 27)
-//                .scaledToFill()
-//                .foregroundColor(.white)
-//                .multilineTextAlignment(.center)
-//                .onTapGesture(perform: {
-////                            sessionManager.infoView(user: user, group: group)
-//                })
+           
+       
+            
             HStack {
                 
-                
+
                 HStack {
                   
                     
@@ -427,16 +421,32 @@ struct PlanetActionsView: View {
                     })
              
                 }
-               
+                
                     
             }
-           
+              
         }
-        
-    }
+//            Spacer()
+//                .frame(height: 150)
+            
+//            NavigationLink(
+//                destination: InfoViewPlanet(user: user, atmosphere: atmosphere),
+//                label: {
+//                    Text("info")
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.white)
+//                        .font(.system(size: 16))
+//                        .italic()
+//                        .frame(width: 35, height: 35)
+//                        .background(.blue)
+//                        .cornerRadius(15)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                })
+            
+//            Spacer()
+//                .frame(height: 10)
+        }
 
-}
-  
-    
-    
+    }
+      
 }
