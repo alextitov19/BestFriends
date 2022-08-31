@@ -565,8 +565,7 @@
 				7AC4C01D27FF49F9000C4140 /* Chat */,
 				CF650423289F11490092EEB9 /* BestFriendsWorld */,
 				CF3B65A9280071580003A714 /* Settings */,
-				CF6504102892F1340092EEB9 /* Beta Tester */,
-				CFD0ABD2285C256C0032CA3D /* Built by Teens */,
+				CF37535628BECF34003817E3 /* Built By Teens */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				D0CC1A02283EE31900E7461F /* Horizons */,
@@ -574,7 +573,6 @@
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
 				CF2DBCF2285527C9008616A3 /* My Planet */,
 				CF763F78285AF0150010D1A9 /* Being First */,
-				CF37535628BECF34003817E3 /* Built By Teens */,
 				CF76FA02285E7429000750A4 /* MY ROOM */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
 				CF725E2628516E180096342F /* Tokens */,
@@ -773,6 +771,8 @@
 			isa = PBXGroup;
 			children = (
 				CF37535928BED060003817E3 /* BuiltForTeens.swift */,
+				CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */,
+				CFD0ABD2285C256C0032CA3D /* Built by Teens */,
 			);
 			name = "Built By Teens";
 			path = "MY ROOM/Built By Teens";
@@ -1136,8 +1136,8 @@
 		CFD0ABD2285C256C0032CA3D /* Built by Teens */ = {
 			isa = PBXGroup;
 			children = (
+				CF6504102892F1340092EEB9 /* Beta Tester */,
 				CFD0ABD3285C25990032CA3D /* BuiltByTeens.swift */,
-				CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */,
 			);
 			path = "Built by Teens";
 			sourceTree = "<group>";

@@ -116,14 +116,21 @@ struct PlanetActionsView: View {
       
                                 
                                 Text("Teens")
+                                    .foregroundColor(.green)
+                                    .font(.system(size: 24, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.50)
+                               
+                                Text("for")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 13, weight: .bold))
+                                    .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("for Teens")
+                                
+                                Text("Teens")
                                     .foregroundColor(.green)
-                                    .font(.system(size: 22, weight: .bold))
+                                    .font(.system(size: 24, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                             }
@@ -320,7 +327,7 @@ struct PlanetActionsView: View {
                 
              
                 VStack {
-                    NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends),
+                    NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
                                    label: {
                         ZStack {
                             Circle()

@@ -43,7 +43,7 @@ struct NostalgiaPreload2: View {
             
             VStack {
   
-                Text("OK, you're not a teen anymore,")
+                Text("OK, you're a little older now,")
                     .font(.system(size: 22))
                     .italic()
                     .fontWeight(.thin)
