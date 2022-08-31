@@ -56,7 +56,7 @@ struct MyRoomDVid: View {
     //                        .ignoresSafeArea()
     //                        .blendMode(.screen)
                         
-                    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "MyRoomVid2", withExtension: "mp4")!)
+                    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "sky2", withExtension: "mp4")!)
                        
                     VideoPlayer(player: avPlayer)
                         .onAppear() {

@@ -170,7 +170,7 @@ struct InfoViewPlanet: View {
                .multilineTextAlignment(.center)
                .foregroundColor(ColorManager.purple3)
            
-           Text("-Long-tap messages to save to SmileVault")
+           Text("-Long-tap messages to save to 'Nice' messages")
                .font(.system(size: 15))
                .fontWeight(.light)
                .multilineTextAlignment(.center)
