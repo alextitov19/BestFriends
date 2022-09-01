@@ -68,92 +68,13 @@ struct FightsInfo: View {
          
             VStack {
            
-//                Spacer()
-//                .frame(height: 40)
-//
-//                Text("We Help With")
-//                    .font(.system(size: 25))
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                   .foregroundColor(Color.purple)
-//
-//                Text("Huge Fight with BFF")
-//                    .font(.system(size: 15))
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(ColorManager.grey1)
-//
-//
-//
-//                VStack {
-//
-//                    Text("FriendGroup Drama")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
-//
-//                    Text("Adult Fights")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
-//
-//
-//                    Text("Parents Fighting")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
-//
-//                    Text("Fight with Parents")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
-//
-//                    Text("Just Messed Up Big Time")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
-//
-//
-//                    Text("BestFamily")
-//                        .font(.system(size: 15))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
-//
-//
-//                Text("Updated Atmosphere instantly shows")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                   .foregroundColor(Color.white)
-//
-//                    Text("on friend's homepage")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                       .foregroundColor(Color.white)
-//
-//                Text("with corresponding color scheme")
-//                    .font(.system(size: 15))
-//                    .italic()
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                   .foregroundColor(Color.white)
-//
                     VStack {
             
                         
                         Spacer()
-                        .frame(height: 100)
+                        .frame(height: 50)
 
-                        Text("Helping get you back to")
+                        Text("Helping you get back to")
                             .font(.system(size: 25))
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)

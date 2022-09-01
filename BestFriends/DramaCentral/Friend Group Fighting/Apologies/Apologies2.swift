@@ -54,7 +54,7 @@ struct Apologies2: View {
                         .fontWeight(.thin)
                         .frame(width: 260, height: 40)
                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .background(ColorManager.purple5)
+                        .background(ColorManager.pmbc_blue)
                         .font(.system(size: 27))
                         .background(ColorManager.purple3)
                         .cornerRadius(15)

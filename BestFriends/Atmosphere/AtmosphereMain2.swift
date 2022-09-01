@@ -50,12 +50,12 @@ struct AtmosphereMain2: View {
                     NavigationLink(
                         destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends),
                         label: {
-                            Text("info")
+                            Text("How this works")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
-                                .font(.system(size: 16))
+                                .font(.system(size: 13))
                                 .italic()
-                                .frame(width: 35, height: 35)
+                                .frame(width: 50, height: 50)
                                 .background(.blue)
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)

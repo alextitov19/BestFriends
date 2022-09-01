@@ -200,10 +200,7 @@ struct Step2_FightLandingView: View {
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 40)
                                         .font(.system(size: 27))
-                                        .background(ColorManager.purple5)
-                                    
-                                    //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                    //
+                                        .background(ColorManager.pmbc_blue)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 }
