@@ -64,17 +64,24 @@ struct BuiltForTeens: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("reselent,")
-                    .font(.system(size: 45))
+                Text("resilient,")
+                    .font(.system(size: 40))
                 
                     .foregroundColor(ColorManager.purple4)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                
                 Text("supportive")
-                    .font(.system(size: 55))
+                    .font(.system(size: 45))
                 
                     .foregroundColor(ColorManager.purple3)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("and yep - lasting")
+                    .font(.system(size: 48))
+                
+                    .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
@@ -82,7 +89,7 @@ struct BuiltForTeens: View {
                     .frame(height: 15)
                 
                 Text("FRIENDSHIPS")
-                    .font(.system(size: 60))
+                    .font(.system(size: 63))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
@@ -118,7 +125,7 @@ struct BuiltForTeens: View {
                             .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
                         
-                        Text("with teens, NOW!")
+                        Text("NOW!")
                             .font(.system(size: 25))
                             .italic()
                             .foregroundColor(ColorManager.orange2)
@@ -141,7 +148,7 @@ struct BuiltForTeens: View {
                    
                       
                         Spacer()
-                            .frame(height: 120)
+                            .frame(height: 100)
                  
                         
                     }
