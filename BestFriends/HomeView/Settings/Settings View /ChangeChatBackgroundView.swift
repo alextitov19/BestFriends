@@ -31,14 +31,14 @@ struct ChangeChatBackgroundView: View {
                 }
                 .padding(.horizontal, 10)
                 
-                HStack {
-                    BackgroundCard(title: "Clouds", backgroundNumber: 2, user: user, selectedBackground: $selectedBackground)
-                        .padding(5)
-                    
-                    BackgroundCard(title: "Nostalgia", backgroundNumber: 3, user: user, selectedBackground: $selectedBackground)
-                        .padding(5)
-                }
-                .padding(.horizontal, 10)
+//                HStack {
+//                    BackgroundCard(title: "Clouds", backgroundNumber: 2, user: user, selectedBackground: $selectedBackground)
+//                        .padding(5)
+//                    
+//                    BackgroundCard(title: "Nostalgia", backgroundNumber: 3, user: user, selectedBackground: $selectedBackground)
+//                        .padding(5)
+//                }
+//                .padding(.horizontal, 10)
                 
                 HStack {
                     BackgroundCard(title: "Flowers", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
