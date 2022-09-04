@@ -118,18 +118,18 @@ struct BuiltForTeens: View {
                         Spacer()
                             .frame(height: 100)
                         
-                        Text("We're beta testing")
-                            .font(.system(size: 25))
-                            .italic()
+                        Text("Why?")
+                            .font(.system(size: 45))
+                            
                             .foregroundColor(ColorManager.orange2)
-                            .fontWeight(.ultraLight)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
-                        Text("NOW!")
-                            .font(.system(size: 25))
+                        Text("Because we feel like it!")
+                            .font(.system(size: 30))
                             .italic()
                             .foregroundColor(ColorManager.orange2)
-                            .fontWeight(.ultraLight)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
                         NavigationLink(
