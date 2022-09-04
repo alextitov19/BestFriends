@@ -275,13 +275,13 @@ struct PlanetActionsView: View {
 
                               VStack {
                                   
-                                  Text("Start")
+                                  Text("Walk-")
                                       .foregroundColor(.green)
                                       .font(.system(size: 24, weight: .bold))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                       .opacity(0.70)
 
-                                  Text("Here")
+                                  Text("through")
                                       .foregroundColor(.green)
                                       .font(.system(size: 24, weight: .bold))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)

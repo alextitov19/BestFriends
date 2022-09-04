@@ -47,7 +47,7 @@ struct BuiltForTeens: View {
             VStack {
                 
                 
-                Text("building ...")
+                Text("helping you build")
                     .font(.system(size: 30))
                    .italic()
                     .foregroundColor(ColorManager.pmbc_blue)
