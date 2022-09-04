@@ -146,9 +146,7 @@
 		CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E32879443E00ADA9DD /* Apologies4.swift */; };
 		CF4A08E62879481200ADA9DD /* NostalgiaPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E52879481200ADA9DD /* NostalgiaPreload2.swift */; };
 		CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08ED2879577E00ADA9DD /* sky2.mp4 */; };
-		CF4A08F0287F837900ADA9DD /* background_3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08EF287F837900ADA9DD /* background_3.mp4 */; };
 		CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */; };
-		CF4A090928860CC300ADA9DD /* background_2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A090828860CC300ADA9DD /* background_2.mp4 */; };
 		CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* background_1.mp4 */; };
 		CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650405288E76B50092EEB9 /* GotPushNotification.swift */; };
 		CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040928915A080092EEB9 /* FD_Step1.swift */; };
@@ -363,9 +361,7 @@
 		CF4A08E32879443E00ADA9DD /* Apologies4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies4.swift; sourceTree = "<group>"; };
 		CF4A08E52879481200ADA9DD /* NostalgiaPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload2.swift; sourceTree = "<group>"; };
 		CF4A08ED2879577E00ADA9DD /* sky2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sky2.mp4; sourceTree = "<group>"; };
-		CF4A08EF287F837900ADA9DD /* background_3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_3.mp4; sourceTree = "<group>"; };
 		CF4A08FA2883A56200ADA9DD /* Sweetheart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sweetheart1.swift; sourceTree = "<group>"; };
-		CF4A090828860CC300ADA9DD /* background_2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_2.mp4; sourceTree = "<group>"; };
 		CF5263D6266477C600243DD7 /* background_4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_4.mp4; sourceTree = "<group>"; };
 		CF6503FF28864AF00092EEB9 /* background_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_1.mp4; sourceTree = "<group>"; };
 		CF650405288E76B50092EEB9 /* GotPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotPushNotification.swift; sourceTree = "<group>"; };
@@ -874,8 +870,6 @@
 			isa = PBXGroup;
 			children = (
 				CF6503FF28864AF00092EEB9 /* background_1.mp4 */,
-				CF4A090828860CC300ADA9DD /* background_2.mp4 */,
-				CF4A08EF287F837900ADA9DD /* background_3.mp4 */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CF37534E28B5E925003817E3 /* Dreams1.mp4 */,
@@ -1272,10 +1266,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF4A08F0287F837900ADA9DD /* background_3.mp4 in Resources */,
 				CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */,
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
-				CF4A090928860CC300ADA9DD /* background_2.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
@@ -1684,7 +1676,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1714,7 +1706,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

@@ -46,46 +46,41 @@ struct BuiltForTeens: View {
             
             VStack {
                 
-                Text("YEP!")
-                    .font(.system(size: 50))
-//                    .italic()
-                    .foregroundColor(ColorManager.orange2)
+                
+                Text("helping you build")
+                    .font(.system(size: 25))
+                   .italic()
+                    .foregroundColor(ColorManager.grey1)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
+                Spacer()
+                    .frame(height: 5)
+              
+                Text("Kickass,")
+                    .font(.system(size: 40))
+                
+                    .foregroundColor(ColorManager.purple3)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("Reselent")
+                    .font(.system(size: 40))
+                
+                    .foregroundColor(ColorManager.orange2)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height: 15)
-              
-                Text("We worked with over")
-                    .font(.system(size: 25))
                 
-                    .foregroundColor(ColorManager.orange2)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
                 
-                Text("175 teens worldwide")
-                    .font(.system(size: 25))
+                Text("F R I E N D S H I P S")
+                    .font(.system(size: 45))
                 
-                    .foregroundColor(ColorManager.orange2)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 30)
-                
-                Text("building")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Text("BestFriends app")
-                    .font(.system(size: 50))
-                
-                    .foregroundColor(.white)
+                    .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
+                
                 
                 Spacer()
                     .frame(height:20)
