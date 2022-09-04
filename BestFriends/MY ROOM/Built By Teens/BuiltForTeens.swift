@@ -47,41 +47,46 @@ struct BuiltForTeens: View {
             VStack {
                 
                 
-                Text("helping you build")
-                    .font(.system(size: 25))
+                Text("building")
+                    .font(.system(size: 30))
                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager.pmbc_blue)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 5)
+                    .frame(height: 25)
               
-                Text("Kickass,")
-                    .font(.system(size: 40))
+                Text("kickass,")
+                    .font(.system(size: 35))
+                
+                    .foregroundColor(ColorManager.purple5)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("reselent,")
+                    .font(.system(size: 45))
+                
+                    .foregroundColor(ColorManager.purple4)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+               
+                Text("supportive")
+                    .font(.system(size: 55))
                 
                     .foregroundColor(ColorManager.purple3)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("Reselent")
-                    .font(.system(size: 40))
-                
-                    .foregroundColor(ColorManager.orange2)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height: 15)
                 
-                
-                Text("F R I E N D S H I P S")
-                    .font(.system(size: 45))
+                Text("FRIENDSHIPS")
+                    .font(.system(size: 60))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                
-                
                 Spacer()
                     .frame(height:20)
             
