@@ -117,6 +117,7 @@
 		CF37535328BD5544003817E3 /* SaySomethingNice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535228BD5544003817E3 /* SaySomethingNice2.swift */; };
 		CF37535528BD5BDD003817E3 /* SomethingBuggingYou2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */; };
 		CF37535A28BED060003817E3 /* BuiltForTeens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535928BED060003817E3 /* BuiltForTeens.swift */; };
+		CF37535D28C6956D003817E3 /* HeartToContinue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535C28C6956D003817E3 /* HeartToContinue.swift */; };
 		CF3802D728456C83005181E4 /* FG_Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3802D628456C83005181E4 /* FG_Team.swift */; };
 		CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */; };
 		CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */; };
@@ -332,6 +333,7 @@
 		CF37535228BD5544003817E3 /* SaySomethingNice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice2.swift; sourceTree = "<group>"; };
 		CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingBuggingYou2.swift; sourceTree = "<group>"; };
 		CF37535928BED060003817E3 /* BuiltForTeens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltForTeens.swift; sourceTree = "<group>"; };
+		CF37535C28C6956D003817E3 /* HeartToContinue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartToContinue.swift; sourceTree = "<group>"; };
 		CF3802D628456C83005181E4 /* FG_Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Team.swift; sourceTree = "<group>"; };
 		CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroBluemodeFriend.swift; sourceTree = "<group>"; };
 		CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1_ParentsFighting.swift; sourceTree = "<group>"; };
@@ -554,6 +556,7 @@
 				CF37535628BECF34003817E3 /* Built By Teens */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
+				CF37535B28C6953B003817E3 /* DREAMS */,
 				D0CC1A02283EE31900E7461F /* Horizons */,
 				CFDB150A2858F4D200155CEE /* Virtual HUG */,
 				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
@@ -761,6 +764,15 @@
 			);
 			name = "Built By Teens";
 			path = "MY ROOM/Built By Teens";
+			sourceTree = "<group>";
+		};
+		CF37535B28C6953B003817E3 /* DREAMS */ = {
+			isa = PBXGroup;
+			children = (
+				CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */,
+				CF37535C28C6956D003817E3 /* HeartToContinue.swift */,
+			);
+			path = DREAMS;
 			sourceTree = "<group>";
 		};
 		CF381A4E2826883A00B3719E /* Friend Group Fighting */ = {
@@ -1185,7 +1197,6 @@
 		D0CC1A02283EE31900E7461F /* Horizons */ = {
 			isa = PBXGroup;
 			children = (
-				CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */,
 				D0CC1A03283EE33500E7461F /* HorizonHomeView.swift */,
 				62372A142884D57500CAB75C /* HorizonGoalChoices.swift */,
 				CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */,
@@ -1399,6 +1410,7 @@
 				CF37534B28B5D84B003817E3 /* HorizonsPreload1.swift in Sources */,
 				CF0911912848976A00CB0AF0 /* BestFriendsVideo.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
+				CF37535D28C6956D003817E3 /* HeartToContinue.swift in Sources */,
 				CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */,
 				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
 				CFAB5407281AAFA100BBF502 /* TryThis.swift in Sources */,

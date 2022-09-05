@@ -1,9 +1,10 @@
 //
-//  HorizonsPreload1.swift
+//  HeartToContinue.swift
 //  BestFriends
 //
-//  Created by Social Tech on 8/23/22.
+//  Created by Social Tech on 9/5/22.
 //
+
 
 
 import Foundation
@@ -11,7 +12,7 @@ import SwiftUI
 import AVKit
 
 
-struct HorizonsPreload1: View {
+struct HeartToContinue: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
@@ -33,37 +34,52 @@ struct HorizonsPreload1: View {
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
             
-            AdPlayerView(name: "Dreams1")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
             VStack {
               
-                Text("Coming")
-                    .font(.system(size: 20))
-                
-                    .foregroundColor(ColorManager.purple5)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                Text("this fall")
-                    .font(.system(size: 35))
-                    .foregroundColor(ColorManager.purple5)
-                 
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                
-                Text("(Built by 6 teen girls)")
-                    .font(.system(size: 20))
+                Text("Heart to Continue")
+                    .font(.system(size: 40))
                     .italic()
-                    .foregroundColor(ColorManager.purple5)
+                    .foregroundColor(ColorManager.purple1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-           
+                
+                             Spacer()
+                                 .frame(height: 15)
+                
+                Text("As if undamaged in the struggle for a \ndream safely nestled in the brier we reach without a net. ")
+                    .font(.system(size: 17))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+
+                   
+                Text("We unwrap our dreams after the moon-dive. Yet standing here, the next step looking like off the narrow edge.  ")
+                    .font(.system(size: 17))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                  
+                
+                Text(" Yet standing here, the next step looking like off the narrow edge. Then letting of the madness of making it all fit we dare to step into greatness. As they turn whispering underneath. ")
+                    .font(.system(size: 17))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                  
+                
+                Text("Then letting of the madness \nof making it all fit \nwe dare to step into greatness. \nAs they turn whispering underneath. ")
+                    .font(.system(size: 17))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
                 
                 
+             
                 Spacer()
                     .frame(height: 340)
 
@@ -72,12 +88,7 @@ struct HorizonsPreload1: View {
                 VStack {
 
                 
-                Text("Chase down")
-                    .font(.system(size: 30))
-                    .foregroundColor(ColorManager.purple5)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                   
+       
                     Spacer()
                         .frame(height: 15)
                 
