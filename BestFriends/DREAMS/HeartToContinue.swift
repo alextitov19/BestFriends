@@ -51,34 +51,7 @@ struct HeartToContinue: View {
                              Spacer()
                                  .frame(height: 15)
                 
-                Text("As if undamaged in the struggle for a \ndream safely nestled in the brier we reach without a net. ")
-                    .font(.system(size: 17))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-
-                   
-                Text("We unwrap our dreams after the moon-dive. Yet standing here, the next step looking like off the narrow edge.  ")
-                    .font(.system(size: 17))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                  
-                
-                Text(" Yet standing here, the next step looking like off the narrow edge. Then letting of the madness of making it all fit we dare to step into greatness. As they turn whispering underneath. ")
-                    .font(.system(size: 17))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                  
-                
-                Text("Then letting of the madness \nof making it all fit \nwe dare to step into greatness. \nAs they turn whispering underneath. ")
-                    .font(.system(size: 17))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                
+               
              
                 Spacer()
                     .frame(height: 340)

@@ -72,6 +72,9 @@ struct HorizonsPreload1: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
 
+                        Spacer()
+                            .frame(height: 15)
+                        
                         Link(destination: URL(string: "https://socialtechlabs.com/heart-to-continue/")!) {
                             
                             Text("Heart to Continue")
@@ -84,7 +87,11 @@ struct HorizonsPreload1: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
                         
-                        Link(destination: URL(string: "https://socialtechlabs.com/dreams-we-dare-but-whisper/")!) {
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        
+                        Link(destination: URL(string: "https://socialtechlabs.com/twinkie-dreams/")!) {
                             
                             Text("Twinkie Dreams")
                                 .fontWeight(.thin)
@@ -103,7 +110,7 @@ struct HorizonsPreload1: View {
                         
                         
                     Spacer()
-                        .frame(height: 155)
+                        .frame(height: 185)
                     
                 Text("T O G E T H E R")
                     .font(.system(size: 40))
