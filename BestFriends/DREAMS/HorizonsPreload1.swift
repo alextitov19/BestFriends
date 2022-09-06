@@ -112,36 +112,36 @@ struct HorizonsPreload1: View {
                     Spacer()
                         .frame(height: 185)
                     
-                Text("T O G E T H E R")
+                Text("More to come!")
                     .font(.system(size: 40))
                     .foregroundColor(.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                   
-                
-                        Text("with your BestFriends")
-                            .font(.system(size: 30))
-                            .italic()
-                            .foregroundColor(.white)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                
+//                
+//                        Text("with your BestFriends")
+//                            .font(.system(size: 30))
+//                            .italic()
+//                            .foregroundColor(.white)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
+//                
            
-                        NavigationLink(
-                            
-                            destination: HeartToContinue(),
-                            label: {
-                                Text("Go For It!")
-                                    .fontWeight(.thin)
-                                    .foregroundColor(Color.white)
-                                    .frame(width: 200, height: 40)
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            }
-                        )}
+//                        NavigationLink(
+//
+//                            destination: HeartToContinue(),
+//                            label: {
+//                                Text("Go For It!")
+//                                    .fontWeight(.thin)
+//                                    .foregroundColor(Color.white)
+//                                    .frame(width: 200, height: 40)
+//                                    .font(.system(size: 25))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            }
+//                        )}
                 
                     Spacer()
                         .frame(height: 90)
@@ -157,5 +157,5 @@ struct HorizonsPreload1: View {
         }
         
     }
-    
+}
 
