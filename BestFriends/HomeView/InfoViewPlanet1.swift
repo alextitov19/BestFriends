@@ -114,7 +114,7 @@ struct InfoViewPlanet1: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.grey2)
                     
-                Text("take a second to review ...")
+                Text("take a minute to review ...")
                     .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -145,9 +145,9 @@ struct InfoViewPlanet1: View {
                     
                 )}
              
-                    Text("(We're working to make it more user friendly)")
+                    Text("(We're working on user friendliness)")
                         .italic()
-                        .font(.system(size: 15))
+                        .font(.system(size: 20))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.red)

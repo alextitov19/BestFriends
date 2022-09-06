@@ -45,25 +45,34 @@ struct WorldPreload: View {
             
             VStack {
                 
-                Text("Sunday's at 8pm")
+                Text("Nightly at 8:03pm EST")
                     .font(.system(size: 25))
 //                    .italic()
                     .foregroundColor(ColorManager.orange2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("(for a few minutes)")
+             
+                
+                Text("(watch for push notification)")
                     .font(.system(size: 20))
                     .italic()
-                    .foregroundColor(ColorManager.orange2)
-                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager.red)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
+                
+//                Text("(for a few minutes)")
+//                    .font(.system(size: 20))
+//                    .italic()
+//                    .foregroundColor(ColorManager.orange2)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height:40)
                 
                 Text("FriendGroups around the")
                     .font(.system(size: 30))
-                    .italic()
+                    
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
@@ -76,12 +85,20 @@ struct WorldPreload: View {
                 
              
                 
-                Text("are together right now")
+                Text("are getting together")
                     .font(.system(size: 30))
-                    .italic()
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
+                
+                
+                Text("N O W!")
+                    .font(.system(size: 50))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+            
                 
                 Spacer()
                     .frame(height:100)
