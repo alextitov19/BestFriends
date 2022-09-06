@@ -145,7 +145,7 @@ struct InfoViewPlanet1: View {
                     
                 )}
              
-                    Text("(We'll working to make it more user friendly)")
+                    Text("(We're working to make it more user friendly)")
                         .italic()
                         .font(.system(size: 15))
                         .fontWeight(.light)
