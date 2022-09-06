@@ -40,7 +40,7 @@ struct HeartToContinue: View {
             
             VStack {
               
-                Text("Heart to Continue")
+                Text("Together with motivational stories \nand your friends we will help get you there!")
                     .font(.system(size: 40))
                     .italic()
                     .foregroundColor(ColorManager.purple1)

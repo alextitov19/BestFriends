@@ -37,13 +37,10 @@ struct InfoViewPlanet: View {
 //                    .foregroundColor(ColorManager.grey2)
 //                    .font(.system(size: 25, weight: .bold))
 
-                
-                Spacer()
-                .frame(height: 15)
+          
               
                 
             VStack {
-
                 Text("Add Friends")
                     .font(.system(size: 35))
                     .fontWeight(.light)
@@ -210,7 +207,7 @@ struct InfoViewPlanet: View {
              
               
                 Spacer()
-                .frame(height: 20)
+                .frame(height: 40)
                 
                 VStack {
                         NavigationLink(
@@ -231,7 +228,7 @@ struct InfoViewPlanet: View {
 
                 
                 Spacer()
-                .frame(height: 150)
+                .frame(height: 100)
                 
 
            
