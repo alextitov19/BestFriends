@@ -230,7 +230,7 @@ struct PlanetActionsView: View {
                             Circle()
                                 .frame(width: 110, height: 110)
                                 .foregroundColor(ColorManager.purple2)
-                                .shadow(color: .white, radius: 17, x: 7, y: 10)
+                                .shadow(color: .white, radius: 17, x: 0, y: 0)
                                 .glow(color: ColorManager.purple4, radius: 3)
                                 .opacity(0.5)
 
@@ -268,22 +268,23 @@ struct PlanetActionsView: View {
                           
                           ZStack {
                               Circle()
-                                  .frame(width: 100, height: 100)
+                                  .frame(width: 110, height: 110)
                                   .foregroundColor(ColorManager.grey1)
-                                  .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                  .shadow(color: .white, radius: 12, x: 0, y: 0)
+                                  .glow(color: ColorManager.pmbc_green, radius: 3)
                                  .opacity(0.6)
 
                               VStack {
                                   
-                                  Text("Walk-")
+                                  Text("START")
                                       .foregroundColor(.green)
                                       .font(.system(size: 24, weight: .bold))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                       .opacity(0.70)
 
-                                  Text("through")
+                                  Text("HERE!")
                                       .foregroundColor(.green)
-                                      .font(.system(size: 24, weight: .bold))
+                                      .font(.system(size: 20, weight: .bold))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                       .opacity(0.70)
                                   
@@ -292,25 +293,6 @@ struct PlanetActionsView: View {
                                       .font(.system(size: 14, weight: .regular))
                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
                                       .opacity(0.70)
-
-//                                  Text("& Settings")
-//                                      .foregroundColor(.black)
-//                                      .font(.system(size: 13, weight: .light))
-//                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                      .opacity(0.70)
-//
-//                                  Text("Ad Free")
-//                                       .foregroundColor(.green)
-//                                       .font(.system(size: 23, weight: .bold))
-//                                       .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                       .opacity(0.50)
-//
-//                                 Text("PURPLE")
-//                                      .foregroundColor(.purple)
-//                                      .font(.system(size: 17, weight: .bold))
-//                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                      .opacity(0.50)
-//
   
                               }
                           }
