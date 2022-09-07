@@ -61,19 +61,21 @@ struct InfoViewPlanet1: View {
                 Spacer()
                 .frame(height: 40)
                 
-                Text("*Yep! We're working out the bugs.")
+                Text("This is our frist PUBLIC launch.")
                     .italic()
                     .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.red)
                 
-                Text("We ask for your patience.")
+                Text("Yep! We're working out the bugs.")
                     .italic()
-                    .font(.system(size: 30))
+                    .font(.system(size: 20))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.red)
+                
+           
                 
                 
                 Spacer()
@@ -96,7 +98,12 @@ struct InfoViewPlanet1: View {
 
         
                 
-            
+                    Text("We ask for your patience.")
+                        .italic()
+                        .font(.system(size: 30))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.red)
                 
                 VStack {
                     Spacer()

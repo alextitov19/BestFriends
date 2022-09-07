@@ -45,7 +45,7 @@ struct WorldPreload: View {
             
             VStack {
                 
-                Text("Nightly at 8:03pm EST")
+                Text("Sunday's at 8:03pm EST")
                     .font(.system(size: 25))
 //                    .italic()
                     .foregroundColor(ColorManager.orange2)
