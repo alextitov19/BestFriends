@@ -35,7 +35,7 @@ struct ParentsFighting: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
              
-                Text("U N S E T T E L I N G")
+                Text("U N S E T T L I N G")
                     .font(.system(size: 30))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)

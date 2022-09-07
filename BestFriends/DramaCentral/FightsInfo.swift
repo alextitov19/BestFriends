@@ -54,13 +54,13 @@ struct FightsInfo: View {
 //            })
             
             Text("Welcome to ")
-                .font(.system(size: 30))
+                .font(.system(size: 40))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
          
             Text("Drama Central")
-                .font(.system(size: 35))
+                .font(.system(size: 55))
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.blue)
@@ -72,7 +72,7 @@ struct FightsInfo: View {
             
                         
                         Spacer()
-                        .frame(height: 20)
+                        .frame(height: 50)
 
                         Text("Helping you get back to")
                             .font(.system(size: 25))

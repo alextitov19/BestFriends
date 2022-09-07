@@ -52,19 +52,20 @@ struct AtmosphereInfo: View {
                         
                         Text("Let your friends know")
                             .font(.system(size: 33))
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                           .foregroundColor(Color.blue)
+                           .foregroundColor(Color.white)
+                        
                         Text("if your day has changed")
                             .font(.system(size: 33))
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                           .foregroundColor(Color.blue)
+                           .foregroundColor(Color.white)
             
-//                        Spacer()
-//                        .frame(height: 20)
-//               
-//                       
+                        Spacer()
+                        .frame(height: 10)
+               
+                       
                         Text("Your friends can instantly see")
                             .font(.system(size: 18))
                             .italic()
@@ -101,9 +102,9 @@ struct AtmosphereInfo: View {
                         Text("So They Can")
                             .font(.system(size: 30))
                             .italic()
-                            .fontWeight(.light)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey3)
+                          .foregroundColor(ColorManager .purple3)
                         
 
                         Text("Cheer you in good times")
@@ -132,7 +133,7 @@ struct AtmosphereInfo: View {
                         .italic()
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .purple3)
                     
                  
                     
@@ -141,14 +142,15 @@ struct AtmosphereInfo: View {
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                       .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple3)
                     
                     Text("Step 2: Type brief explaination")
                         .font(.system(size: 18))
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                       .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple3)
+                    
                 VStack {
           
                   
@@ -159,7 +161,7 @@ struct AtmosphereInfo: View {
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                       .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple3)
               
                     
                     Text("-tap [Share] sending push notification")
@@ -167,7 +169,7 @@ struct AtmosphereInfo: View {
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple3)
                   
                     Spacer()
                          .frame(height: 25)
@@ -177,7 +179,7 @@ struct AtmosphereInfo: View {
                         .italic()
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .purple3)
                 
                     
                     Text("Your friend taps the push notification")
@@ -185,7 +187,7 @@ struct AtmosphereInfo: View {
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                       .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple3)
                     
                     
                     Text("-taps your planet on homepage")
@@ -193,7 +195,7 @@ struct AtmosphereInfo: View {
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                       .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple3)
                     
                     
                     Text("-taps [Friends Aura] from the dropdown")
@@ -201,7 +203,7 @@ struct AtmosphereInfo: View {
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                       .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager .purple3)
                 
                     Spacer()
                          .frame(height: 25)
@@ -211,7 +213,7 @@ struct AtmosphereInfo: View {
                         .italic()
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey3)
+                        .foregroundColor(ColorManager .purple3)
       
                     Text("-with supportive message")
                         .font(.system(size: 18))
