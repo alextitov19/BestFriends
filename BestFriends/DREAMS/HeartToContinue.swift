@@ -21,28 +21,30 @@ struct HeartToContinue: View {
     
     var body: some View {
         ZStack {
-//            ColorManager.grey4
-//                .ignoresSafeArea()
-//                .onAppear()
-//
+          
+
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
             
-//            AdPlayerView(name: "Planet6")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+
             
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+            
+//            ColorManager.grey4
+//                .ignoresSafeArea()
+//                .onAppear()
+            
+            
         }
             VStack {
               
                 Text("DREAMS")
                     .font(.system(size: 45))
-                    .foregroundColor(.white)
+                    .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                
@@ -69,21 +71,21 @@ struct HeartToContinue: View {
                 Text("HORIZONS")
                     .font(.system(size: 45))
                     
-                    .foregroundColor(.white)
+                .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
             Text("Short-term PROJECTS")
                 .font(.system(size: 25))
                 
-                .foregroundColor(.white)
+                .foregroundColor(ColorManager.purple2)
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
             
                 Text("Together with your friends")
                     .font(.system(size: 20))
                     .italic()
-                    .foregroundColor(.white)
+                    .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
           

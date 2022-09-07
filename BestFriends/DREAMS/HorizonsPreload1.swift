@@ -117,6 +117,13 @@ struct HorizonsPreload1: View {
                     .foregroundColor(.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
+                        
+                        Text("(We'll send you a push notification)")
+                            .font(.system(size: 20))
+                            .italic()
+                            .foregroundColor(.white)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
                   
 //                
 //                        Text("with your BestFriends")
