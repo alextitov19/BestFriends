@@ -58,19 +58,35 @@ struct InfoViewPlanet1: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
                 
+               
+                
+                Link(destination: URL(string: "https://socialtechlabs.com/our-story/")!) {
+                    
+                    Text("Our Story")
+                        .fontWeight(.thin)
+                        .frame(width: 250, height: 40)
+                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                        .font(.system(size: 25))
+                        .background(ColorManager.pmbc_green)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                }
+                
+                VStack {
+                    
                 Spacer()
-                .frame(height: 40)
+                .frame(height: 70)
                 
                 Text("This is our frist PUBLIC launch.")
                     .italic()
-                    .font(.system(size: 20))
+                    .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.red)
                 
                 Text("Yep! We're working out the bugs.")
                     .italic()
-                    .font(.system(size: 20))
+                    .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.red)
@@ -88,7 +104,7 @@ struct InfoViewPlanet1: View {
                     
                     Text("Report Issues")
                         .fontWeight(.thin)
-                        .frame(width: 310, height: 40)
+                        .frame(width: 250, height: 40)
                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                         .font(.system(size: 25))
                         .background(ColorManager.pmbc_green)
@@ -100,7 +116,7 @@ struct InfoViewPlanet1: View {
                 
                     Text("We ask for your patience.")
                         .italic()
-                        .font(.system(size: 30))
+                        .font(.system(size: 20))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.red)
@@ -141,7 +157,7 @@ struct InfoViewPlanet1: View {
                         Text("Walk-Through")
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
-                            .frame(width: 200, height: 40)
+                            .frame(width: 250, height: 40)
                             .font(.system(size: 25))
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
@@ -152,24 +168,24 @@ struct InfoViewPlanet1: View {
                     
                 )}
              
-                    Text("(We're working on user friendliness)")
-                        .italic()
-                        .font(.system(size: 20))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.red)
-                    
+//                    Text("(We're working on user friendliness)")
+//                        .italic()
+//                        .font(.system(size: 20))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager.red)
+//
                     
                 Spacer()
-                .frame(height: 70)
+                .frame(height: 30)
                 
                 VStack {
                         NavigationLink(
                             destination: SettingsView(user: user, atmosphere: atmosphere),
                             label: {
-                                Text("SETTINGS PAGE")
+                                Text("SETTINGS")
                                     .fontWeight(.thin)
-                                    .frame(width: 275, height: 40)
+                                    .frame(width: 300, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 30))
                                     .background(ColorManager.purple3)
@@ -197,5 +213,5 @@ struct InfoViewPlanet1: View {
 
     }
 }
-
+}
 
