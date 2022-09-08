@@ -77,7 +77,7 @@ struct InfoViewPlanet1: View {
                 Spacer()
                 .frame(height: 70)
                 
-                Text("This is our frist PUBLIC launch.")
+                Text("This is our frist semi-Public launch.")
                     .italic()
                     .font(.system(size: 15))
                     .fontWeight(.light)
