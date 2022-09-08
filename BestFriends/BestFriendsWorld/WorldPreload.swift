@@ -55,7 +55,7 @@ struct WorldPreload: View {
              
                 
                 Text("(watch for push notification)")
-                    .font(.system(size: 20))
+                    .font(.system(size: 17))
                     .italic()
                     .foregroundColor(ColorManager.red)
                     .fontWeight(.regular)
