@@ -33,15 +33,9 @@ struct InfoViewPlanet1: View {
                 .ignoresSafeArea()
                 .onAppear()
             
-            VStack {
-//                Text("Getting STARTED")
-////                    .foregroundColor(.gray)
-//                    .foregroundColor(ColorManager.grey2)
-//                    .font(.system(size: 25, weight: .bold))
+        VStack {
 
-                
-              
-                
+         
             VStack {
 
                 Text("Hi everyone. Welcome to ")

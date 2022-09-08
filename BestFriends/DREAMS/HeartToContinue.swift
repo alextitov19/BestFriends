@@ -39,11 +39,18 @@ struct HeartToContinue: View {
 //                .onAppear()
             
             
-        }
+        
+        VStack {
             VStack {
               
+                Text("Chasing Down Your")
+                    .font(.system(size: 35))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
                 Text("DREAMS")
-                    .font(.system(size: 45))
+                    .font(.system(size: 65))
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -52,7 +59,7 @@ struct HeartToContinue: View {
                     
                     destination: HorizonsPreload1(),
                     label: {
-                        Text("Your Life's Dreams")
+                        Text("Your Special Dream")
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
                             .frame(width: 250, height: 40)
@@ -64,39 +71,61 @@ struct HeartToContinue: View {
                     }
                 )}
           
-            VStack {
+        
             Spacer()
-                .frame(height: 30)
+                .frame(height: 130)
             
-                Text("HORIZONS")
-                    .font(.system(size: 45))
-                    
-                .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-            Text("Short-term PROJECTS")
-                .font(.system(size: 25))
+            Text("Work on")
+                .font(.system(size: 35))
                 
                 .foregroundColor(ColorManager.purple2)
                 .fontWeight(.thin)
                 .multilineTextAlignment(.center)
+                
+            Text("Fun PROJECTS")
+                .font(.system(size: 50))
+                .foregroundColor(ColorManager.purple2)
+                .fontWeight(.thin)
+                .multilineTextAlignment(.center)
             
-                Text("Together with your friends")
-                    .font(.system(size: 20))
-                    .italic()
+                Text("together with your friends")
+                    .font(.system(size: 30))
+                    
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
+            
+            Spacer()
+                .frame(height: 15)
+            
+            Text("(coming this fall)")
+                .font(.system(size: 20))
+                .italic()
+                .foregroundColor(ColorManager.red)
+                .fontWeight(.thin)
+                .multilineTextAlignment(.center)
           
-
+            NavigationLink(
+                
+                destination: HorizonsPreload1(),
+                label: {
+                    Text("HORIZONS")
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                        .frame(width: 250, height: 40)
+                        .font(.system(size: 30))
+                        .background(ColorManager.purple3)
+                        .cornerRadius(15)
+                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    
+                }
+                
+                
+                
+            )}
+      
                   
-                        Text("(this fall)")
-                            .font(.system(size: 30))
-                            .italic()
-                            .foregroundColor(ColorManager.pmbc_green)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
+                      
                  
                 
            
@@ -113,8 +142,8 @@ struct HeartToContinue: View {
                 
             }
             
-        }
         
-    
+}
+
     
 
