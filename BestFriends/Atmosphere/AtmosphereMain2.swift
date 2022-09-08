@@ -264,6 +264,14 @@ struct AtmosphereMain2: View {
                 
                 VStack {
                     // MARK: End of feeling buttons
+                    
+                    Text("tap [return] to hide keyboard")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager.red)
+                    
+                    
                     HStack {
                         Text("Tell friends what's going on")
                             .font(.system(size: 21))
@@ -272,9 +280,9 @@ struct AtmosphereMain2: View {
                             .foregroundColor(ColorManager.grey1)
                             .padding(.horizontal)
                         
-//                        Spacer()
+                        
+                        
                     }
-//                    .padding(.horizontal)
                     
                     
                     
@@ -294,6 +302,10 @@ struct AtmosphereMain2: View {
                         
                     }
                     
+                
+                        
+                 
+                    
                     Spacer()
                         .frame(height: 5)
                     
@@ -305,11 +317,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(ColorManager.grey1)
                             .padding(.horizontal)
                         
-//                        Text("So, they can laugh, smile, cheer or maybe help")
-//                            .font(.system(size: 12))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .foregroundColor(ColorManager.grey1)
+                      
                         
                         
 //                        Spacer()
@@ -443,24 +451,28 @@ struct AtmosphereMain2: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                            label: {
-                                Text("Home / Chat")
-                                    .fontWeight(.thin)
-                                    .frame(width: 175, height: 40)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                            label: {
+//                                Text("Home / Chat")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 175, height: 40)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
                         
                      
                     }
-                    Spacer()
+//                    Spacer()
                 }
+                
+                Spacer()
+                    .frame(height: 100)
+                
             }
         }
     }
@@ -528,7 +540,7 @@ struct AtmosphereMain2: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
        
-            
+      
         
     }
     
