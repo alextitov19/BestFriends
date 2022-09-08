@@ -58,7 +58,7 @@ struct WorldPreload: View {
                     .font(.system(size: 20))
                     .italic()
                     .foregroundColor(ColorManager.red)
-                    .fontWeight(.thin)
+                    .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                 
 //                Text("(for a few minutes)")

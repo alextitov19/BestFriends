@@ -107,7 +107,7 @@ struct HeartToContinue: View {
           
             NavigationLink(
                 
-                destination: HorizonsPreload1(),
+                destination: EmptyView(),
                 label: {
                     Text("HORIZONS")
                         .fontWeight(.thin)
