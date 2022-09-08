@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ChangeChatBackgroundView: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
+    
     let user: User
     
     @State private var selectedBackground = 0
@@ -19,6 +21,23 @@ struct ChangeChatBackgroundView: View {
                 .ignoresSafeArea()
             
             VStack {
+                
+                
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                    label: {
+                        Text("Home / Chat")
+                            .fontWeight(.thin)
+                            .frame(width: 200, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                
+                
                 Text("Go ahead. Try a 'motion' background")
                     .font(.system(size: 17))
                     .fontWeight(.light)
@@ -117,12 +136,14 @@ struct ChangeChatBackgroundView: View {
                         })
                     }
                     
-                    
+                
                 }
             }
             .frame(height: 220)
             .cornerRadius(15)
         }
+        
+        
         
         private func update() {
             let u = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: String(backgroundNumber), smileNotes: user.smileNotes)
@@ -131,8 +152,16 @@ struct ChangeChatBackgroundView: View {
                 if result == 200 {
                     selectedBackground = backgroundNumber
                 }
+                
+                
             })
+            
+          
+               
         }
+        
+    
+        
     }
     
 }
