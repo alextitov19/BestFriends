@@ -70,10 +70,15 @@ struct AtmosphereMain2: View {
                     
                 
                     
-                    Text("distinctive 'Atmosphere' \nsurrounding each of us")
+                    Text("Our distinctive 'Atmosphere'")
                         .font(.system(size: 20))
                         .foregroundColor(ColorManager.grey1)
-                      
+               
+                Text("surrounding each of us")
+                    .font(.system(size: 20))
+                    .foregroundColor(ColorManager.grey1)
+                
+                
                 HStack {
 
                 }
@@ -274,9 +279,8 @@ struct AtmosphereMain2: View {
                     
                     HStack {
                         Text("Tell friends what's going on")
-                            .font(.system(size: 21))
-                            .italic()
-                            .fontWeight(.light)
+                            .font(.system(size: 26))
+                            .fontWeight(.regular)
                             .foregroundColor(ColorManager.grey1)
                             .padding(.horizontal)
                         
@@ -540,17 +544,17 @@ struct AtmosphereMain2: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
        
-      
+    
         
     }
     
     private func defaultMessageButtonTapped(defaultMessage: String) {
         self.colorChangeTap = defaultMessage
 }
-
-
-
 }
+
+
+
 
 
 

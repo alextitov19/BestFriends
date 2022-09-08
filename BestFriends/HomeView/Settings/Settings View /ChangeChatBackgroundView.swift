@@ -19,15 +19,30 @@ struct ChangeChatBackgroundView: View {
                 .ignoresSafeArea()
             
             VStack {
+                Text("Go ahead. Try a 'motion' background")
+                    .font(.system(size: 17))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple5)
+                
+                Spacer()
+                    .frame(height: 15)
+                
                 Text("Change chat background")
                     .onAppear(perform: loadData)
                 
                 HStack {
-                    BackgroundCard(title: "Default", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Default - static", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
-                    BackgroundCard(title: "Nike", backgroundNumber: 1, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Flowers - motion", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
+                    
+                 
+                   
+                  
+                    
+                 
                 }
                 .padding(.horizontal, 10)
                 
@@ -41,10 +56,12 @@ struct ChangeChatBackgroundView: View {
 //                .padding(.horizontal, 10)
                 
                 HStack {
-                    BackgroundCard(title: "Flowers", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
-                        .padding(5)
                     
-                    BackgroundCard(title: "Bull", backgroundNumber: 5, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Embedded Nike Ad", backgroundNumber: 1, user: user, selectedBackground: $selectedBackground)
+                        .padding(5)
+                  
+                    
+                    BackgroundCard(title: "Bull - motion", backgroundNumber: 5, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                 }
                 .padding(.horizontal, 10)

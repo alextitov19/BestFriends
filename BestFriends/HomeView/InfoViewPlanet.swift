@@ -140,19 +140,27 @@ struct InfoViewPlanet: View {
                     .font(.system(size: 15))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
+                    .foregroundColor(ColorManager.red)
                    
                     Text("-Tap [Create NEW Chat Rooms]")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.grey1)
+                        .foregroundColor(ColorManager.red)
 
                     Text("-Name Chat Room")
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.grey1)
+                        .foregroundColor(ColorManager.red)
+                    
+                    Text("-Try 'motion' background in Settings")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.pmbc_green)
+                    
+                    
                 }
                 
             VStack {
