@@ -55,9 +55,7 @@ struct DeleteMyAccount: View {
                 
                 TextEditor(text: $reason)
                     .multilineTextAlignment(.center)
-                    .background(Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)))
                     .frame(width: 300, height: 100, alignment: .center)
-//                    .font(.title)
                     .font(.system(size: 20))
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .cornerRadius(20)
