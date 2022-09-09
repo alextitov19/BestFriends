@@ -129,7 +129,7 @@ struct InfoViewPlanet1: View {
                 
                 VStack {
                     Spacer()
-                    .frame(height: 65)
+                    .frame(height: 50)
 
                     Text("First time through")
                         .font(.system(size: 20))
@@ -143,12 +143,12 @@ struct InfoViewPlanet1: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.grey2)
                     
-                Text("take a minute to review ...")
-                    .font(.system(size: 20))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey2)
-                   
+//                Text("take a minute to review ...")
+//                    .font(.system(size: 20))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager.grey2)
+//
                   
                 }
                 
@@ -165,7 +165,7 @@ struct InfoViewPlanet1: View {
                             .foregroundColor(Color.white)
                             .frame(width: 250, height: 40)
                             .font(.system(size: 25))
-                            .background(ColorManager.purple3)
+                            .background(ColorManager.red)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         
@@ -176,7 +176,7 @@ struct InfoViewPlanet1: View {
              
                     
                 Spacer()
-                .frame(height: 20)
+                .frame(height: 30)
                 
                 VStack {
                         NavigationLink(
