@@ -38,7 +38,7 @@ struct InfoViewPlanet1: View {
          
             VStack {
 
-                Text("Hi everyone. Welcome to ")
+                Text("Welcome to")
                     .italic()
                     .font(.system(size: 25))
                     .fontWeight(.light)
