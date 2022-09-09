@@ -122,14 +122,14 @@ struct BuiltForTeens: View {
                             .font(.system(size: 45))
                             
                             .foregroundColor(ColorManager.orange2)
-                            .fontWeight(.regular)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         Text("See new features before release!")
                             .font(.system(size: 23))
                             .italic()
                             .foregroundColor(ColorManager.orange2)
-                            .fontWeight(.regular)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                         
                         NavigationLink(
