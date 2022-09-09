@@ -102,8 +102,8 @@ struct BuiltByTeens2: View {
                     })
                 
                 
-                Spacer()
-                    .frame(height: 90)
+//                Spacer()
+//                    .frame(height: 30)
                 
          
             

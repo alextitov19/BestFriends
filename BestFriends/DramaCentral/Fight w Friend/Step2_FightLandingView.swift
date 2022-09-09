@@ -49,12 +49,13 @@ struct Step2_FightLandingView: View {
                         .frame(height: 20)
                     
                     
-                    Text("Who's Notification")
+                    Text("Send")
                         .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(Color.purple)
-                    Text("going to?")
+                        .foregroundColor(ColorManager.purple7)
+                    
+                    Text("Push Notification to ...")
                         .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(Color.purple)
+                        .foregroundColor(ColorManager.purple7)
                     
                     
                     VStack {
@@ -62,11 +63,6 @@ struct Step2_FightLandingView: View {
                         Spacer()
                             .frame(height: 7)
                         
-                        Text("(Please tap only once)")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.black)
                         
                         HStack {
                             //                            NavigationLink(
@@ -189,7 +185,7 @@ struct Step2_FightLandingView: View {
                             Text("(Now you know they got your message)")
                                 .font(.system(size: 15, weight: .bold))
                                 .italic()
-                                .fontWeight(.ultraLight)
+                                .fontWeight(.regular)
                                 .foregroundColor(Color.black)
                             
                             NavigationLink(
@@ -213,7 +209,7 @@ struct Step2_FightLandingView: View {
                         Text("(When you're ready try to set a time to talk)")
                             .font(.system(size: 15))
                             .italic()
-                            .fontWeight(.thin)
+                            .fontWeight(.regular)
                             .foregroundColor(Color.black)
                         
                         //                            MARK: New [Next] button going go HugitOut

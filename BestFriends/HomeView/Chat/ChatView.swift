@@ -97,7 +97,7 @@ struct ChatView: View {
                         }
                     //                    }//NavLink
                     
-                    Text("Delete Me")
+                    Text("Remove ME from room")
                         .foregroundColor(ColorManager.grey4)
                     //                        .foregroundColor(.gray)
                         .font(.system(size: 18, weight: .thin))

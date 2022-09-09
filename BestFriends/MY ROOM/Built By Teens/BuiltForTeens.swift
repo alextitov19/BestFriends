@@ -116,7 +116,7 @@ struct BuiltForTeens: View {
                         
                         
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 50)
                         
                         Text("Be First")
                             .font(.system(size: 45))
@@ -148,7 +148,7 @@ struct BuiltForTeens: View {
                    
                       
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 50)
                  
                         
                     }

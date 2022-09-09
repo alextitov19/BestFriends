@@ -327,7 +327,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.50)
                                 
                                 
-                                Text("Suportive")
+                                Text("Supportive")
                                     .foregroundColor(.white)
                                     .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)

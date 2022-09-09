@@ -58,7 +58,7 @@ struct NostalgiaPreload2: View {
                 Spacer()
                     .frame(height: 100)
                 
-                Text("- Send a song you both like \n- Let youself be vulnerable, send a heart-flet message in Chat \n- Send a picture that always made \nthe both of you - Smile! \n- Fix this!")
+                Text("- Send a song you both like \n- Let youself be vulnerable, send a heart-felt message in Chat \n- Send a picture that always made \nthe both of you - Smile! \n- Fix this!")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 165)
                     .foregroundColor(ColorManager.grey1)
