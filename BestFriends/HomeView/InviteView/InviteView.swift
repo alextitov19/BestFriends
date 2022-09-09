@@ -47,15 +47,32 @@ struct InviteView: View {
                     .italic()
                     .foregroundColor(.white)
                     .font(.system(size: 15, weight: .thin))
-              
-                Spacer()
-                    .frame(height: 15)
                 
-                Text("1) Ask friend to download app \n2) Enter their email (Case Sensitive) \n3) Only one of you send invite \n4) Invite only ONCE or friend's planet \n       shows up multiple times.")
+                Spacer()
+                    .frame(height: 10)
+              
+                Text("1) Ask friend to download BestFriendsNetwork \n2) Only one of you send invite \n3) Invite only ONCE or multi planets appear")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()
                     .font(.system(size: 17))
+                
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("Email is CASE SENSITIVE - \nmust enter email exactly how \nfirend typed email in Registration.")
+                    .fontWeight(.thin)
+                    .foregroundColor(.red)
+                    .italic()
+                    .font(.system(size: 17))
+                
+
+                
+                
+                
+                
+                
+                
                 
                 if user.friends?.count ?? 0 < 5 {
                     VStack {
@@ -82,11 +99,11 @@ struct InviteView: View {
                        
                         
                         VStack {
-                            Text("*Email is CASE Sensitive")
-                                .fontWeight(.thin)
-                                .foregroundColor(.red)
-                                .italic()
-                                .font(.system(size: 17))
+//                            Text("*Email is CASE Sensitive")
+//                                .fontWeight(.thin)
+//                                .foregroundColor(.red)
+//                                .italic()
+//                                .font(.system(size: 17))
                             Spacer()
                                 .frame(height: 40)
                             
@@ -149,6 +166,7 @@ struct InviteView: View {
         }
         
     }
+    
         
 //        shareColor = ColorManager.darkGrey
 //        showingAlert = true
@@ -167,5 +185,5 @@ struct InviteView: View {
     
 }
 
-//}
+
 

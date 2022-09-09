@@ -46,12 +46,24 @@ struct InfoViewPlanet1: View {
                     .foregroundColor(ColorManager.grey2)
                 
                 Text("BestFriends")
-                
                     .font(.system(size: 50))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
                 
+                Text("on iOS")
+                    .italic()
+                    .font(.system(size: 25))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.grey2)
+                
+                Text("Android version 2023 summer")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.red)
                
                 
                 Link(destination: URL(string: "https://socialtechlabs.com/our-story/")!) {
