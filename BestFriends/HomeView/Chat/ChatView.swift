@@ -49,6 +49,7 @@ struct ChatView: View {
                 Spacer()
                     .frame(height: 10)
                 
+        
                 HStack {
                     Image(systemName: "info.circle")
                         .resizable()
@@ -107,6 +108,15 @@ struct ChatView: View {
                         .font(.system(size: 10, weight: .thin))
                         .onTapGesture(perform: leaveChatGroup)
                 }
+                
+                Text("Room closed after 20 sec inactive - re-enter!")
+                             .font(.system(size: 13))
+                             .italic()
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+                             .foregroundColor(Color.red)
+
+                
                 
                 
                 

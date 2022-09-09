@@ -104,6 +104,12 @@ struct InfoViewPlanet: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.red)
                     
+                    Text("-Exit app and re-enter to Activate")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.red)
+                    
                     Text("-Try 'motion' background in Settings")
                         .font(.system(size: 15))
                         .fontWeight(.light)
@@ -119,7 +125,7 @@ struct InfoViewPlanet: View {
                 .frame(height: 15)
                 
           
-           Text("Chat Rooms")
+           Text("Inside Chat Rooms")
                .font(.system(size: 35))
                .fontWeight(.light)
                .multilineTextAlignment(.center)
