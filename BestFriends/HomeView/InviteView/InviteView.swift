@@ -45,7 +45,7 @@ struct InviteView: View {
                 
                 Text("(Friends show up as planets on homepage)")
                     .italic()
-                    .foregroundColor(.white)
+                    .foregroundColor(.green)
                     .font(.system(size: 15, weight: .thin))
                 
                 Spacer()
