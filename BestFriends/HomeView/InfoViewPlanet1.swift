@@ -117,7 +117,7 @@ struct InfoViewPlanet1: View {
                 
                 VStack {
                     Spacer()
-                    .frame(height: 110)
+                    .frame(height: 65)
 
                     Text("First time through")
                         .font(.system(size: 20))
@@ -162,16 +162,9 @@ struct InfoViewPlanet1: View {
                     
                 )}
              
-//                    Text("(We're working on user friendliness)")
-//                        .italic()
-//                        .font(.system(size: 20))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.red)
-//
                     
                 Spacer()
-                .frame(height: 30)
+                .frame(height: 20)
                 
                 VStack {
                         NavigationLink(

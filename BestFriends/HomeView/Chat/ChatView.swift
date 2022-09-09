@@ -45,6 +45,10 @@ struct ChatView: View {
             
             VStack {
                 // MARK: Header
+                
+                Spacer()
+                    .frame(height: 10)
+                
                 HStack {
                     Image(systemName: "info.circle")
                         .resizable()
@@ -97,10 +101,10 @@ struct ChatView: View {
                         }
                     //                    }//NavLink
                     
-                    Text("Remove ME from room")
+                    Text("Remove ME \nfrom room")
                         .foregroundColor(ColorManager.grey4)
                     //                        .foregroundColor(.gray)
-                        .font(.system(size: 18, weight: .thin))
+                        .font(.system(size: 10, weight: .thin))
                         .onTapGesture(perform: leaveChatGroup)
                 }
                 

@@ -51,11 +51,15 @@ struct ChangeChatBackgroundView: View {
                     .onAppear(perform: loadData)
                 
                 HStack {
-                    BackgroundCard(title: "Default - static", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
-                        .padding(5)
+                  
                     
                     BackgroundCard(title: "Flowers - motion", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
+                    
+                    BackgroundCard(title: "Default - static", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
+                        .padding(5)
+                    
+                 
                     
                  
                    
