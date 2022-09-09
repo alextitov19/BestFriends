@@ -109,7 +109,7 @@ struct ChatView: View {
                         .onTapGesture(perform: leaveChatGroup)
                 }
                 
-                Text("Room closed after 20 sec inactive - re-enter!")
+                Text("Room closes after 20 sec inactive - re-enter!")
                              .font(.system(size: 13))
                              .italic()
                              .fontWeight(.light)
