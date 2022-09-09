@@ -58,7 +58,7 @@ struct InfoViewPlanet1: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey2)
                 
-                Text("Android version 2023 summer")
+                Text("Android version summer 2023")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.light)

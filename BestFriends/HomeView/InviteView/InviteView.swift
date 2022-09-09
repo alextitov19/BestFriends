@@ -124,7 +124,7 @@ struct InviteView: View {
                             
                             Text("-Come to this page and tap [Accept]")
                                 .fontWeight(.thin)
-                                .foregroundColor(.white)
+                                .foregroundColor(.red)
                                 .italic()
                                 .font(.system(size: 17))
                             
