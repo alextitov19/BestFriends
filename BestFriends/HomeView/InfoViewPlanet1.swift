@@ -137,18 +137,18 @@ struct InfoViewPlanet1: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.grey2)
                     
-                    Text("is a little confusing,")
+                    Text("is CONFUSING!")
                         .font(.system(size: 23))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.grey2)
                     
-//                Text("take a minute to review ...")
-//                    .font(.system(size: 20))
-//                    .fontWeight(.light)
-//                    .multilineTextAlignment(.center)
-//                    .foregroundColor(ColorManager.grey2)
-//
+                Text("take a minute to review Setup")
+                    .font(.system(size: 20))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.red)
+
                   
                 }
                 
@@ -160,10 +160,10 @@ struct InfoViewPlanet1: View {
                     
                     destination: InfoViewPlanet(user: user, atmosphere: atmosphere),
                     label: {
-                        Text("Walk-Through")
+                        Text("-> Walk-Through <-")
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
-                            .frame(width: 250, height: 40)
+                            .frame(width: 250, height: 60)
                             .font(.system(size: 25))
                             .background(ColorManager.red)
                             .cornerRadius(15)

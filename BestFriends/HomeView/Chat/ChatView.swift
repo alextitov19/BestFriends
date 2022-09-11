@@ -109,8 +109,15 @@ struct ChatView: View {
                         .onTapGesture(perform: leaveChatGroup)
                 }
                 
-                Text("Room closes after 20 sec inactive - re-enter!")
-                             .font(.system(size: 13))
+                Text("Safety Feature ...")
+                             .font(.system(size: 19))
+                            
+                             .fontWeight(.regular)
+                             .multilineTextAlignment(.center)
+                             .foregroundColor(Color.green)
+                
+                Text("Room closes after 20 sec inactive - Exit & Re-enter!")
+                             .font(.system(size: 14))
                              .italic()
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
@@ -139,8 +146,17 @@ struct ChatView: View {
                     }
                 }
                 
-                
+                VStack {
                 // MARK: The bottom portion containing text field and action buttons
+                    
+                    Text("Try a 'motion' Chat background -> Settings")
+                                 .font(.system(size: 20))
+                                 .italic()
+                                 .fontWeight(.regular)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(Color.green)
+                
+                    
                 HStack {
                     Image("camera")
                         .resizable()
@@ -185,7 +201,9 @@ struct ChatView: View {
                             .padding(.horizontal, 5)
                         )
                     
-                    
+                
+                }
+                
                 }
             }
         }//ZStack
@@ -279,3 +297,4 @@ struct ChatView: View {
         }
     }
 }
+

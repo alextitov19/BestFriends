@@ -104,8 +104,14 @@ struct InfoViewPlanet: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.red)
                     
-                    Text("-Exit app and re-enter to Activate")
-                        .font(.system(size: 15))
+                    Text("-Exit app and re-enter")
+                        .font(.system(size: 23))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.red)
+                    
+                    Text("     to Activate Room")
+                        .font(.system(size: 23))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.red)
@@ -114,7 +120,7 @@ struct InfoViewPlanet: View {
                         .font(.system(size: 15))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.pmbc_green)
+                        .foregroundColor(.white)
                     
                     
                 }
