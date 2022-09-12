@@ -90,7 +90,7 @@ struct InfoViewPlanet1: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.red)
                 
-                Text("Yep! We're working out the bugs.")
+                Text("Yep! We're still work'n out the bugs.")
                     .italic()
                     .font(.system(size: 15))
                     .fontWeight(.light)

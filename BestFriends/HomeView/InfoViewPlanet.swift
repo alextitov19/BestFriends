@@ -110,7 +110,7 @@ struct InfoViewPlanet: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.red)
                     
-                    Text("     to Activate Room")
+                    Text("  to Activate NEW Room")
                         .font(.system(size: 23))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)

@@ -74,10 +74,10 @@ struct PhotoPopView: View {
                         .cornerRadius(15)
                 })
                 
-                Text("(Tap image to delete and replace)")
+                Text("(Delete/Replace function coming soon)")
                     .font(.system(size: 15, weight: .light))
                     .italic()
-                    .foregroundColor(.white)
+                    .foregroundColor(.red)
                 
                 .padding()
                 

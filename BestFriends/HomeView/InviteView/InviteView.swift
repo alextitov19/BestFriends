@@ -64,7 +64,7 @@ struct InviteView: View {
                     .fontWeight(.thin)
                     .foregroundColor(.red)
                     .italic()
-                    .font(.system(size: 17))
+                    .font(.system(size: 22))
                 
 
                 

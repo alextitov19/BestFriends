@@ -154,7 +154,7 @@ struct ChatView: View {
                                  .italic()
                                  .fontWeight(.regular)
                                  .multilineTextAlignment(.center)
-                                 .foregroundColor(Color.green)
+                                 .foregroundColor(.white)
                 
                     
                 HStack {
