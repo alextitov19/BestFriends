@@ -148,7 +148,7 @@ struct BuiltForTeens: View {
                    
                       
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 70)
                  
                         
                     }
