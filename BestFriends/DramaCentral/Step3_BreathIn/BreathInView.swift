@@ -29,11 +29,7 @@ struct BreathInView: View {
         
         ZStack {
               
-            
-            Image("Star Page")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+ 
 //
 //            Image("settingsBackground")
 //                .resizable()
@@ -63,7 +59,7 @@ struct BreathInView: View {
                   .opacity(0.6)
 
                     
-                 Text("Breath-In \n& \nHold")
+                 Text("Breathe-In \n& \nHold")
                          .font(.system(size: 20))
                          .foregroundColor(.white)
                          .fontWeight(.medium)
@@ -109,7 +105,7 @@ struct BreathInView: View {
         }else {
             buttonText = "Resume"
         }
-    
+
     }
     private func timerFunction() {
         if isTimerRunning {
