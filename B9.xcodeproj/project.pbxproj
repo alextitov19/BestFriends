@@ -210,6 +210,7 @@
 		CFD12CCF281A67FC00AB2539 /* DramaMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */; };
 		CFD12CD1281A754200AB2539 /* Step1_NotReadyTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CD0281A754200AB2539 /* Step1_NotReadyTalk.swift */; };
 		CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */; };
+		CFDA4BCB28CF698800118D90 /* Beach.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDA4BCA28CF698800118D90 /* Beach.mp4 */; };
 		CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */; };
 		CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB150228574D8B00155CEE /* FightWithParents.swift */; };
 		CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB1508285816AF00155CEE /* FaceTimeCall.swift */; };
@@ -425,6 +426,7 @@
 		CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaMainView.swift; sourceTree = "<group>"; };
 		CFD12CD0281A754200AB2539 /* Step1_NotReadyTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1_NotReadyTalk.swift; sourceTree = "<group>"; };
 		CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightWithFriend.swift; sourceTree = "<group>"; };
+		CFDA4BCA28CF698800118D90 /* Beach.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Beach.mp4; sourceTree = "<group>"; };
 		CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dramaLights.mp4; sourceTree = "<group>"; };
 		CFDB150228574D8B00155CEE /* FightWithParents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightWithParents.swift; sourceTree = "<group>"; };
 		CFDB1508285816AF00155CEE /* FaceTimeCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTimeCall.swift; sourceTree = "<group>"; };
@@ -890,6 +892,7 @@
 				CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */,
 				CFD0ABDD285C4E7C0032CA3D /* BFVideo.mp4 */,
 				CFD0ABDB285C4E040032CA3D /* BuiltByTeens3.mp4 */,
+				CFDA4BCA28CF698800118D90 /* Beach.mp4 */,
 			);
 			path = "Background Videos";
 			sourceTree = "<group>";
@@ -1264,6 +1267,7 @@
 				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */,
+				CFDA4BCB28CF698800118D90 /* Beach.mp4 in Resources */,
 				7AD02B592744829D00500DD7 /* MainFont.ttf in Resources */,
 				CFA1226E285A99FA00E22E84 /* myRoom1.mp4 in Resources */,
 				CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */,
