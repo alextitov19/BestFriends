@@ -354,7 +354,7 @@ struct PlanetActionsView: View {
 //                    NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere),
                                  
                                    
-                                   NavigationLink(destination: HeartToContinue(),
+                                   NavigationLink(destination: HeartToContinue(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
                     
                 label: {
                         

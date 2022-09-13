@@ -16,6 +16,13 @@ struct HeartToContinue: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+    let user: User
+    let atmosphere: Atmosphere
+    
+    let friends: [User]
+    let friendAtmospheres: [Atmosphere]
+    
+    
 //    let user: User
 //    let friends: [User]
     
@@ -57,13 +64,13 @@ struct HeartToContinue: View {
                
                 NavigationLink(
                     
-                    destination: HorizonsPreload1(),
+                    destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
                     label: {
-                        Text("Your Special Dream")
+                        Text("Dreams we dare but whisper")
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
-                            .frame(width: 250, height: 40)
-                            .font(.system(size: 25))
+                            .frame(width: 300, height: 80)
+                            .font(.system(size: 30))
                             .background(ColorManager.purple3)
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -114,7 +121,7 @@ struct HeartToContinue: View {
                     Text("HORIZONS")
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
-                        .frame(width: 250, height: 40)
+                        .frame(width: 290, height: 40)
                         .font(.system(size: 30))
                         .background(ColorManager.purple3)
                         .cornerRadius(15)
@@ -124,8 +131,8 @@ struct HeartToContinue: View {
                 
             )}
             
-//            Spacer()
-//                .frame(height: 100)
+            Spacer()
+                .frame(height: 30)
               
                 }
              
