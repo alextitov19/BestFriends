@@ -370,21 +370,21 @@ struct PlanetActionsView: View {
                                 
 
                               
-                                Text("Building")
+                                Text("Chasing")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 13, weight: .bold))
+                                     .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
-                                Text("DREAMS")
+                                Text("your")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
-                                Text("Together")
+                                Text("Dreams")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 13, weight: .bold))
+                                     .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 

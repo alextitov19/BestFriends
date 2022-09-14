@@ -40,59 +40,63 @@ struct DreamVaultView: View {
                 .blendMode(.screen)
             
         
-            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .blue, friendName: "Heart")
+            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .gray, friendName: "open")
             })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
            
-//
-//            NavigationLink(destination: PhotoPopPreload(user: user, friends: friends), label: {
-//                  HideoutsViewCircle (color: .orange, friendName: "PhotoPOP")
-//            })
-//                .offset(x: showItems ? 75 : 0, y: showItems ? -90: 0)
-//
+
+            NavigationLink(destination: PhotoPopPreload(user: user, friends: friends), label: {
+                  HideoutsViewCircle (color: .orange, friendName: "my dream")
+            })
+                .offset(x: showItems ? 150 : 0, y: showItems ? -350: 0)
+
             
-            NavigationLink(destination: ReceivedPlaylist(), label: { HideoutsViewCircle (color: .pink, friendName: "Night \nTime")
+            NavigationLink(destination: ReceivedPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "open")
             })
                 .offset(x: showItems ? 75 : 0, y: showItems ? -310: 0)
             
             
             NavigationLink(destination: EverybodyOk(user: user), label: {
-                HideoutsViewCircle (color: .gray, friendName: "Passion")
+                HideoutsViewCircle (color: .gray, friendName: "aassion")
             })
                .offset(x: showItems ? -50 : 0, y: showItems ? -190: 0)
 
            
             
+            NavigationLink(destination: Heart(user: user), label: {
+                HideoutsViewCircle (color: .gray, friendName: "heart \nto \ncontinue")
+            })
+               .offset(x: showItems ? -110 : 0, y: showItems ? -360: 0)
             VStack {
                 
                 Spacer()
                     .frame(height: 300)
-            Button(action: {
-                sessionManager.showLogin()
-            },
-                label: {
-                    Text("Home / Chat")
-                        .fontWeight(.thin)
-                        .frame(width: 200, height: 40)
-                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .font(.system(size: 30))
-                        .background(ColorManager.purple3)
-                        .cornerRadius(15)
-                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                })
+//            Button(action: {
+//                sessionManager.showLogin()
+//            },
+//                label: {
+//                    Text("Home / Chat")
+//                        .fontWeight(.thin)
+//                        .frame(width: 200, height: 40)
+//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                        .font(.system(size: 30))
+//                        .background(ColorManager.purple3)
+//                        .cornerRadius(15)
+//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                })
             }
             
             VStack {
            
                 ZStack {
-        Image(systemName: "triangle.fill")
+        Image(systemName: "rectangle.fill")
                     .resizable()
-                    .foregroundColor(ColorManager .grey2)
-                    .frame(width: 150, height: 175)
+                    .foregroundColor(ColorManager .grey4)
+                    .frame(width: 90, height: 250)
 //                    .blur(radius: 2)
-                    .opacity(0.95)
+                    .opacity(0.90)
 
-                    .shadow(color: .orange, radius: 65, x: 30, y: 50)
+                    .shadow(color: .white, radius: 65, x: 30, y: 50)
 
           
                     VStack {

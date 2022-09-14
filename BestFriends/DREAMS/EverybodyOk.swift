@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import AVKit
 
 
 struct EverybodyOk: View {
@@ -18,29 +19,33 @@ struct EverybodyOk: View {
     var body: some View {
         ZStack {
             
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+
 //            AdPlayerView(name: "FieldFlowers")
 //                .ignoresSafeArea()
             
-            ColorManager.grey3
+//            ColorManager.purple7
+//                .ignoresSafeArea()
+//                .onAppear()
+            
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
-                .onAppear()
+                .blendMode(.screen)
             
             VStack {
                
 
                 Text("Don't wait until life")
-                    .font(.system(size: 35))
+                    .font(.system(size: 25))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple3)
                 
                 Text("isn't hard to begin")
-                    .font(.system(size: 35))
+                    .font(.system(size: 25))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple3)
@@ -49,7 +54,7 @@ struct EverybodyOk: View {
                 .frame(height: 35)
                 
                 Text("Living")
-                    .font(.system(size: 50))
+                    .font(.system(size: 30))
                     
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -57,7 +62,7 @@ struct EverybodyOk: View {
                    .foregroundColor(ColorManager.grey2)
                 
                 Text("Your Dream")
-                    .font(.system(size: 60))
+                    .font(.system(size: 40))
                     
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -66,25 +71,28 @@ struct EverybodyOk: View {
                 
                 Spacer()
                 .frame(height: 35)
-
-        
-                VStack {
-                  
-//
-//                    Text("NO")
-//                        .font(.system(size: 50))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.purple3)
-//
-//                    Text("To-Do-Lists")
-//                        .font(.system(size: 25))
-//                        .fontWeight(.light)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.grey1)
-//
-//
-                   
+            
+                
+                Text("It's about picking you up and making it ok, then setting your down gently sending you on your way ...")
+                    .font(.system(size: 17))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(.white)
+                   .foregroundColor(ColorManager.grey2)
+                   .padding()
+                
+                Text("As the voice inside you becomes louders and ours softer, in realizing your dream you become big and bold, yet before its over, humbled.")
+                    .font(.system(size: 17))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(.white)
+                   .foregroundColor(ColorManager.grey2)
+                   .padding()
+                     
+                     
+                     
+                     VStack {
+           
                     
                     Spacer()
                     .frame(height: 35)
@@ -92,26 +100,7 @@ struct EverybodyOk: View {
                 
             VStack {
  
-//
-             
-//
-//                Spacer()
-//                .frame(height: 25)
-//
-//                NavigationLink(
-//                    destination: InfoViewPlanet(user: user),
-//                    label: {
-//                        Text("Getting STARTED")
-//                            .fontWeight(.thin)
-//                            .frame(width: 200, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 25))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                    })
-                
+
                 
                 Spacer()
                 .frame(height: 75)

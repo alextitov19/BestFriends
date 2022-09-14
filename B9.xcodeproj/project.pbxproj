@@ -215,6 +215,7 @@
 		CFDA4BD228D1060F00118D90 /* Launching.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDA4BD128D1060F00118D90 /* Launching.mp4 */; };
 		CFDA4BD428D1062D00118D90 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDA4BD328D1062D00118D90 /* PlanetSound.mp4 */; };
 		CFDA4BD628D10C9600118D90 /* DreamPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */; };
+		CFDA4BD828D1999900118D90 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD728D1999900118D90 /* Heart.swift */; };
 		CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */; };
 		CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB150228574D8B00155CEE /* FightWithParents.swift */; };
 		CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB1508285816AF00155CEE /* FaceTimeCall.swift */; };
@@ -435,6 +436,7 @@
 		CFDA4BD128D1060F00118D90 /* Launching.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Launching.mp4; sourceTree = "<group>"; };
 		CFDA4BD328D1062D00118D90 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamPlaylist.swift; sourceTree = "<group>"; };
+		CFDA4BD728D1999900118D90 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dramaLights.mp4; sourceTree = "<group>"; };
 		CFDB150228574D8B00155CEE /* FightWithParents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightWithParents.swift; sourceTree = "<group>"; };
 		CFDB1508285816AF00155CEE /* FaceTimeCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTimeCall.swift; sourceTree = "<group>"; };
@@ -782,6 +784,7 @@
 				CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */,
 				CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */,
 				CF65041D28964B410092EEB9 /* EverybodyOk.swift */,
+				CFDA4BD728D1999900118D90 /* Heart.swift */,
 			);
 			path = DREAMS;
 			sourceTree = "<group>";
@@ -1455,6 +1458,7 @@
 				CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */,
 				CF37535F28C6E909003817E3 /* InfoViewPlanet1.swift in Sources */,
 				CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */,
+				CFDA4BD828D1999900118D90 /* Heart.swift in Sources */,
 				CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,
 				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
