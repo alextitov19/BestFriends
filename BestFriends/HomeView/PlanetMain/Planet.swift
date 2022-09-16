@@ -376,19 +376,19 @@ struct PlanetActionsView: View {
                                 
 
                               
-                                Text("Dreams")
-                                    .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 14, weight: .bold))
-                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.50)
+//                                Text("")
+//                                    .foregroundColor(ColorManager.grey1)
+//                                     .font(.system(size: 14, weight: .bold))
+//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                     .opacity(0.50)
                                 
-                                Text("before")
+                                Text("Dream")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
-                                Text("Sleep")
+                                Text("Galaxy")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)

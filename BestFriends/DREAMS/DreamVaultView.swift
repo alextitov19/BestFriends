@@ -111,7 +111,7 @@ struct DreamVaultView: View {
 //                      .frame(height: 35)
 //               
                
-              Text("My \nDream \nGalaxy")
+              Text("Explore \nbefore \nSleep")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.medium)
