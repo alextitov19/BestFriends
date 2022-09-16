@@ -39,10 +39,11 @@ struct DreamVaultView: View {
                 .blendMode(.screen)
             
         
-            NavigationLink(destination: Neuroscience(user: user, friends: friends), label: { HideoutsViewCircle (color: .orange, friendName: "neuro- \nscience")
+         
+            NavigationLink(destination: Heart(user: user), label: {
+                HideoutsViewCircle (color: .gray, friendName: "twinkie \ndreams")
             })
-                .offset(x: showItems ? 100 : 0, y: showItems ? -90: 0)
-           
+               .offset(x: showItems ? 150 : 0, y: showItems ? -100: 0)
 
             NavigationLink(destination: MiroWhiteboard(user: user, friends: friends), label: {
                   HideoutsViewCircle (color: .gray, friendName: "sticky \nnotes")
@@ -60,7 +61,9 @@ struct DreamVaultView: View {
             })
                .offset(x: showItems ? -50 : 0, y: showItems ? -150: 0)
 
+            
            
+                
             
             NavigationLink(destination: Heart(user: user), label: {
                 HideoutsViewCircle (color: .gray, friendName: "heart \nto \ncontinue")
@@ -73,20 +76,17 @@ struct DreamVaultView: View {
 //            .frame(width: 185, height: 85)
             .offset(x: showItems ? 50 : 0, y: showItems ? -160: 0)
                
-            
-//            NavigationLink(destination: Heart(user: user), label: {
-//                HideoutsViewCircle (color: .gray, friendName: "heart \nto \ncontinue")
-//            })
-//               .offset(x: showItems ? -110 : 0, y: showItems ? -260: 0)
-//
-            
-            
-            
-            
-            
-            
             VStack {
-                
+          
+//
+                NavigationLink(destination: Neuroscience(user: user, friends: friends), label: { HideoutsViewCircle (color: .orange, friendName: "neuro- \nscience")
+                })
+                    .offset(x: showItems ? 200 : 0, y: showItems ? -400: 0)
+            
+            
+            
+            
+         
                 
                 Spacer()
                     .frame(height: 300)
