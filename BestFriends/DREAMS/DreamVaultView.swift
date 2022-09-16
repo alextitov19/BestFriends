@@ -79,7 +79,7 @@ struct DreamVaultView: View {
             VStack {
           
 //
-                NavigationLink(destination: Neuroscience(user: user, friends: friends), label: { HideoutsViewCircle (color: .orange, friendName: "neuro- \nscience")
+                NavigationLink(destination: Neuroscience(user: user, friends: friends), label: { HideoutsViewCircle (color: .orange, friendName: "what's \nout \nthere")
                 })
                     .offset(x: showItems ? 200 : 0, y: showItems ? -400: 0)
             
