@@ -24,18 +24,11 @@ struct Heart: View {
                 .ignoresSafeArea()
                 .scaledToFill()
 
-//            AdPlayerView(name: "FieldFlowers")
-//                .ignoresSafeArea()
-            
-            ColorManager.purple7
-                .ignoresSafeArea()
-                .onAppear()
-            
+
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
-            //                    .scaledToFill()
                 .blendMode(.screen)
-//                .onTapGesture(perform: backgroundTapped)
+
             
             VStack {
                
@@ -44,7 +37,6 @@ struct Heart: View {
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-//                    .foregroundColor(.white)
                    .foregroundColor(ColorManager.grey2)
                    .padding()
                      

@@ -216,6 +216,9 @@
 		CFDA4BD428D1062D00118D90 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDA4BD328D1062D00118D90 /* PlanetSound.mp4 */; };
 		CFDA4BD628D10C9600118D90 /* DreamPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */; };
 		CFDA4BD828D1999900118D90 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD728D1999900118D90 /* Heart.swift */; };
+		CFDA4BDA28D2A9AD00118D90 /* MiroWhiteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD928D2A9AD00118D90 /* MiroWhiteboard.swift */; };
+		CFDA4BDC28D2AFE400118D90 /* Neuroscience.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BDB28D2AFE400118D90 /* Neuroscience.swift */; };
+		CFDA4BDE28D3CEA300118D90 /* DreamMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BDD28D3CEA300118D90 /* DreamMap.swift */; };
 		CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */; };
 		CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB150228574D8B00155CEE /* FightWithParents.swift */; };
 		CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDB1508285816AF00155CEE /* FaceTimeCall.swift */; };
@@ -437,6 +440,9 @@
 		CFDA4BD328D1062D00118D90 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamPlaylist.swift; sourceTree = "<group>"; };
 		CFDA4BD728D1999900118D90 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
+		CFDA4BD928D2A9AD00118D90 /* MiroWhiteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiroWhiteboard.swift; sourceTree = "<group>"; };
+		CFDA4BDB28D2AFE400118D90 /* Neuroscience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neuroscience.swift; sourceTree = "<group>"; };
+		CFDA4BDD28D3CEA300118D90 /* DreamMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamMap.swift; sourceTree = "<group>"; };
 		CFDB14FB2855A1E600155CEE /* dramaLights.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dramaLights.mp4; sourceTree = "<group>"; };
 		CFDB150228574D8B00155CEE /* FightWithParents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightWithParents.swift; sourceTree = "<group>"; };
 		CFDB1508285816AF00155CEE /* FaceTimeCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTimeCall.swift; sourceTree = "<group>"; };
@@ -785,6 +791,9 @@
 				CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */,
 				CF65041D28964B410092EEB9 /* EverybodyOk.swift */,
 				CFDA4BD728D1999900118D90 /* Heart.swift */,
+				CFDA4BD928D2A9AD00118D90 /* MiroWhiteboard.swift */,
+				CFDA4BDB28D2AFE400118D90 /* Neuroscience.swift */,
+				CFDA4BDD28D3CEA300118D90 /* DreamMap.swift */,
 			);
 			path = DREAMS;
 			sourceTree = "<group>";
@@ -1456,6 +1465,8 @@
 				7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */,
 				CF4A08E62879481200ADA9DD /* NostalgiaPreload2.swift in Sources */,
 				CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */,
+				CFDA4BDC28D2AFE400118D90 /* Neuroscience.swift in Sources */,
+				CFDA4BDA28D2A9AD00118D90 /* MiroWhiteboard.swift in Sources */,
 				CF37535F28C6E909003817E3 /* InfoViewPlanet1.swift in Sources */,
 				CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */,
 				CFDA4BD828D1999900118D90 /* Heart.swift in Sources */,
@@ -1536,6 +1547,7 @@
 				CF650422289EF8820092EEB9 /* PurpleNoAdInfoView.swift in Sources */,
 				7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */,
 				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
+				CFDA4BDE28D3CEA300118D90 /* DreamMap.swift in Sources */,
 				CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
@@ -1680,7 +1692,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1692,7 +1704,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.4;
+				MARKETING_VERSION = 2.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialtechlabs.bestfriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1710,7 +1722,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
@@ -1721,7 +1733,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.4;
+				MARKETING_VERSION = 2.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.socialtechlabs.bestfriends;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

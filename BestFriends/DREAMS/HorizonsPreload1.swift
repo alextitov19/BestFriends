@@ -87,22 +87,7 @@ struct HorizonsPreload1: View {
 
                         Spacer()
                             .frame(height: 15)
-                        
-                        Link(destination: URL(string: "https://socialtechlabs.com/heart-to-continue/")!) {
-                            
-                            Text("Step into Greatness")
-                                .fontWeight(.thin)
-                                .frame(width: 310, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.pmbc_green)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        }
-                        
-                        Spacer()
-                            .frame(height: 15)
-                        
+
                         
                         Link(destination: URL(string: "https://socialtechlabs.com/twinkie-dreams/")!) {
                             
@@ -123,7 +108,7 @@ struct HorizonsPreload1: View {
                         VStack {
                         
                     Spacer()
-                        .frame(height: 150)
+                        .frame(height: 75)
                         
                        
                             
@@ -149,9 +134,9 @@ struct HorizonsPreload1: View {
                             
                             
                 NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres), label: {
-                        Text("Dream Galaxy")
+                        Text("My Dream Galaxy")
                                 .fontWeight(.thin)
-                                .frame(width: 200, height: 40)
+                                .frame(width: 310, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
@@ -159,36 +144,10 @@ struct HorizonsPreload1: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                                         })
                             
-                            
-                Text("More to come!")
-                    .font(.system(size: 35))
-                    .foregroundColor(.white)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                        
-                        Text("For now, work on step 1.")
-                            .font(.system(size: 25))
-                            .italic()
-                            .foregroundColor(.white)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                  
              
-//
-//                            NavigationLink(destination: HideoutsView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres), label: {
-//                                Text("SKIP")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 100, height: 40)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 30))
-//                                    .background(ColorManager.purple3)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                            })
-                            
                 
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 250)
 
 
                

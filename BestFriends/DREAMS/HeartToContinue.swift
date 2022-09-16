@@ -61,6 +61,13 @@ struct HeartToContinue: View {
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
+                
+//                Text("(a different methodology)")
+//                    .font(.system(size: 20))
+//                    .italic()
+//                    .foregroundColor(ColorManager.red)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
                
                 NavigationLink(
                     

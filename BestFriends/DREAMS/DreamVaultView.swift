@@ -40,33 +40,33 @@ struct DreamVaultView: View {
                 .blendMode(.screen)
             
         
-            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .gray, friendName: "open")
+            NavigationLink(destination: Neuroscience(user: user, friends: friends), label: { HideoutsViewCircle (color: .orange, friendName: "neuro- \nscience")
             })
-                .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
+                .offset(x: showItems ? 100 : 0, y: showItems ? -90: 0)
            
 
-            NavigationLink(destination: PhotoPopPreload(user: user, friends: friends), label: {
-                  HideoutsViewCircle (color: .orange, friendName: "my dream")
+            NavigationLink(destination: MiroWhiteboard(user: user, friends: friends), label: {
+                  HideoutsViewCircle (color: .gray, friendName: "sticky \nnotes")
             })
-                .offset(x: showItems ? 150 : 0, y: showItems ? -350: 0)
+                .offset(x: showItems ? 75 : 0, y: showItems ? -300: 0)
 
             
-            NavigationLink(destination: ReceivedPlaylist(), label: { HideoutsViewCircle (color: .gray, friendName: "open")
+            NavigationLink(destination: DreamMap(user: user, friends: friends), label: { HideoutsViewCircle (color: .gray, friendName: "after \nthe \nstart")
             })
-                .offset(x: showItems ? 75 : 0, y: showItems ? -310: 0)
+                .offset(x: showItems ? -25 : 0, y: showItems ? -325: 0)
             
             
             NavigationLink(destination: EverybodyOk(user: user), label: {
-                HideoutsViewCircle (color: .gray, friendName: "aassion")
+                HideoutsViewCircle (color: .gray, friendName: "passion")
             })
-               .offset(x: showItems ? -50 : 0, y: showItems ? -190: 0)
+               .offset(x: showItems ? -50 : 0, y: showItems ? -150: 0)
 
            
             
             NavigationLink(destination: Heart(user: user), label: {
                 HideoutsViewCircle (color: .gray, friendName: "heart \nto \ncontinue")
             })
-               .offset(x: showItems ? -110 : 0, y: showItems ? -360: 0)
+               .offset(x: showItems ? -110 : 0, y: showItems ? -260: 0)
             VStack {
                 
                 Spacer()

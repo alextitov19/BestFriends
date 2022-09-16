@@ -349,12 +349,10 @@ struct PlanetActionsView: View {
                     Spacer()
                         .frame(height: 15)
                     
-//                    MARK: Reconnect once Horizons completed
-//
-//                    NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere),
-                                 
-                                   
-                                   NavigationLink(destination: HeartToContinue(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
+                    
+//                    NavigationLink(destination: EmptyView(),
+               
+                                   NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
                     
                 label: {
                         
@@ -388,12 +386,7 @@ struct PlanetActionsView: View {
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
-//                                Text("(this Fall)")
-//                                    .foregroundColor(.green)
-//                                    .font(.system(size: 12, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                    .opacity(0.70)
-                   
+ 
                                 
                                 
                             }
@@ -406,25 +399,7 @@ struct PlanetActionsView: View {
             }
               
         }
-//            Spacer()
-//                .frame(height: 150)
-            
-//            NavigationLink(
-//                destination: InfoViewPlanet(user: user, atmosphere: atmosphere),
-//                label: {
-//                    Text("info")
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.white)
-//                        .font(.system(size: 16))
-//                        .italic()
-//                        .frame(width: 35, height: 35)
-//                        .background(.blue)
-//                        .cornerRadius(15)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                })
-            
-//            Spacer()
-//                .frame(height: 10)
+
         }
 
     }
