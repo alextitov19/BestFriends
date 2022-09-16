@@ -102,12 +102,18 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-                                Text("Built by")
+                                Text("Designed")
                                     .foregroundColor(.white)
                                     .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
       
+                                Text("by")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 14, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.50)
+                                
                                 
                                 Text("Teens")
                                     .foregroundColor(.green)
@@ -115,18 +121,18 @@ struct PlanetActionsView: View {
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                
-                                Text("for")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 14, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
-                                
-                                
-                                Text("Teens")
-                                    .foregroundColor(.green)
-                                    .font(.system(size: 24, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
+//                                Text("for")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 14, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
+//
+//
+//                                Text("Teens")
+//                                    .foregroundColor(.green)
+//                                    .font(.system(size: 24, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
                             }
                         }
                         
@@ -187,30 +193,30 @@ struct PlanetActionsView: View {
                             VStack {
                                 
                                 
-                                Text("Overcome")
+                                Text("Fixing")
                                      .foregroundColor(.white)
                                      .font(.system(size: 13, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
-                                Text("FIGHTS,")
+                                Text("FIGHTS")
                                      .foregroundColor(.white)
                                      .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
-                                Text("Fix")
-                                     .foregroundColor(.white)
-                                     .font(.system(size: 13, weight: .bold))
-                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.50)
-                               
-                                Text("Friendships")
-                                     .foregroundColor(.white)
-                                     .font(.system(size: 14, weight: .bold))
-                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.50)
-                                
+//                                Text("Fix")
+//                                     .foregroundColor(.white)
+//                                     .font(.system(size: 13, weight: .bold))
+//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                     .opacity(0.50)
+//
+//                                Text("Friendships")
+//                                     .foregroundColor(.white)
+//                                     .font(.system(size: 14, weight: .bold))
+//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                     .opacity(0.50)
+//
 
                             }
                         }
@@ -314,7 +320,7 @@ struct PlanetActionsView: View {
                             
                             VStack {
    
-                                Text("Share Mood")
+                                Text("Mood Share")
                                     .foregroundColor(.white)
                                     .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -352,8 +358,10 @@ struct PlanetActionsView: View {
                     
 //                    NavigationLink(destination: EmptyView(),
                
-                                   NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
-                    
+                                   NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
+                                                  
+                                                  
+//                                                  NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
                 label: {
                         
                         ZStack {
@@ -368,19 +376,19 @@ struct PlanetActionsView: View {
                                 
 
                               
-                                Text("Chasing")
+                                Text("Dreams")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
-                                Text("your")
+                                Text("before")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
-                                Text("Dreams")
+                                Text("Sleep")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 14, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
