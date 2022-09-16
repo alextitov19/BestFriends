@@ -51,7 +51,8 @@ struct HorizonsPreload1: View {
 
                 
                 Text("Chasing Down")
-                    .font(.system(size: 50))
+                    .font(.system(size: 40))
+                    .italic()
                     .foregroundColor(ColorManager.purple5)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -62,16 +63,7 @@ struct HorizonsPreload1: View {
                         .fontWeight(.thin)
                        .multilineTextAlignment(.center)
                     
-                    
-                    Spacer()
-                        .frame(height: 15)
-                    
-                    Text("Step 1: Take 1st Step")
-                        .font(.system(size: 40))
-                        .foregroundColor(ColorManager.purple5)
-                        .fontWeight(.thin)
-                       .multilineTextAlignment(.center)
-                
+                   
                     VStack {
                         Link(destination: URL(string: "https://socialtechlabs.com/dreams-we-dare-but-whisper/")!) {
                             
@@ -84,9 +76,15 @@ struct HorizonsPreload1: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
-
-//                        Spacer()
-//                            .frame(height: 15)
+                        
+                        Text("Step 1: Take 1st Step")
+                            .font(.system(size: 30))
+                            .foregroundColor(ColorManager.purple7)
+                            .fontWeight(.thin)
+                           .multilineTextAlignment(.center)
+                        
+                        Spacer()
+                            .frame(height: 15)
 //
 //
 //                        Link(destination: URL(string: "https://socialtechlabs.com/twinkie-dreams/")!) {
