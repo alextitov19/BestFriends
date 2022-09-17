@@ -24,18 +24,25 @@ struct DreamMap: View {
                 .onAppear()
             
             VStack {
-                Text("Living your Dream is not a goal")
-                    .font(.system(size: 20))
+                Text("Living your Dream")
+                    .font(.system(size: 30))
                     .italic()
-                    .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                Text("isn't a goal")
+                    .font(.system(size: 30))
+                    .italic()
+                    .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
 
                 Text("it's a by-product!")
-                    .font(.system(size: 30))
+                    .font(.system(size: 45))
                     .italic()
-                    .foregroundColor(ColorManager.grey2)
-                    .fontWeight(.ultraLight)
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
@@ -47,7 +54,7 @@ struct DreamMap: View {
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/dream-map/")!) {
                         
-                        Text("The Right Stuff")
+                        Text("The Stuff Inside")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

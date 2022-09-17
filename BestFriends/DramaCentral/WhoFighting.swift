@@ -33,13 +33,7 @@ struct WhoFighting: View {
             AdPlayerView(name: "storm2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-////                .offset(y: -250)
-            
-            
-//            Image("planet_4")
+
         
         ZStack {
 
@@ -114,7 +108,7 @@ struct WhoFighting: View {
                print("tap function is working")
            }
             
-           .animation(Animation.easeInOut(duration: 1.0), value: showItems)
+           .animation(Animation.easeInOut(duration: 1.5), value: showItems)
 
             }
         }
@@ -144,19 +138,3 @@ struct WhoFightingCircle: View {
         }
     }
 }
-
-
-//struct WhoFighting_Previews : PreviewProvider {
-//    static var previews: some View {
-//        WhoFighting()
-//    }
-//
-//}
-
-//
-//    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-
-
-
-//    .glow(color: glowColor(), radius: 20)
-//        private func glowColor() -> Color {

@@ -50,8 +50,8 @@ struct HorizonsPreload1: View {
                 VStack {
 
                 
-                Text("Chasing Down")
-                    .font(.system(size: 40))
+                Text("chasing down")
+                    .font(.system(size: 30))
                     .italic()
                     .foregroundColor(ColorManager.purple5)
                     .fontWeight(.thin)
@@ -77,7 +77,23 @@ struct HorizonsPreload1: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
                         
-                        Text("Step 1: Take 1st Step")
+                        Spacer()
+                            .frame(height: 25)
+//                        Text("just two things ...")
+//                            .font(.system(size: 20))
+//                            .italic()
+//                            .foregroundColor(ColorManager.purple7)
+//                            .fontWeight(.thin)
+//                           .multilineTextAlignment(.center)
+                        
+                        
+                        Text("action 1: START")
+                            .font(.system(size: 30))
+                            .foregroundColor(ColorManager.purple7)
+                            .fontWeight(.thin)
+                           .multilineTextAlignment(.center)
+                        
+                        Text("action 2: DON'T STOP")
                             .font(.system(size: 30))
                             .foregroundColor(ColorManager.purple7)
                             .fontWeight(.thin)

@@ -36,44 +36,41 @@ struct EverybodyOk: View {
                 .blendMode(.screen)
             
             VStack {
-               
-
-                Text("Don't wait until life")
-                    .font(.system(size: 25))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple3)
                 
-                Text("isn't hard to begin")
-                    .font(.system(size: 25))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple3)
-                
-                Spacer()
-                .frame(height: 35)
-                
-                Text("Living")
-                    .font(.system(size: 30))
-                    
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(.white)
-                   .foregroundColor(ColorManager.grey2)
-                
-                Text("Your Dream")
+                Text("D R E A M S")
                     .font(.system(size: 40))
-                    
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-//                    .foregroundColor(.white)
-                   .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(ColorManager.purple3)
+               
+                Text("for the less")
+                    .font(.system(size: 30))
+                    .italic()
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple3)
+            
+                Spacer()
+                .frame(height: 15)
+                
+                
+                Text("D I S I P L I N E D")
+                    .font(.system(size: 40))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple3)
+                
+             
+                
+
+//
+                VStack {
                 
                 Spacer()
                 .frame(height: 35)
             
                 
-                Text("It's about picking you up and making it ok, then setting your down gently sending you on your way ...")
+                Text("These poems help you supplement the much needed talent of disciplined (see 'the stuff inside') with the emotion of 'passion' to power your dreams.")
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -81,7 +78,7 @@ struct EverybodyOk: View {
                    .foregroundColor(ColorManager.grey2)
                    .padding()
                 
-                Text("As the voice inside you becomes louders and ours softer, in realizing your dream you become big and bold, yet before its over, humbled.")
+                Text("As the voice inside you becomes louders and ours softer, in realizing your dream you will become unstoppable, yet before its over, humbled.")
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -91,17 +88,36 @@ struct EverybodyOk: View {
                      
                      
                      
-                     VStack {
+        VStack {
            
                     
                     Spacer()
                     .frame(height: 35)
               }
                 
-            VStack {
- 
-
+                Text("Don't wait until life")
+                    .font(.system(size: 25))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple3)
                 
+                Text("isn't hard to begin living")
+                    .font(.system(size: 25))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple3)
+                
+                Spacer()
+                .frame(height: 15)
+                
+                Text("Your Dream")
+                    .font(.system(size: 40))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(.white)
+                   .foregroundColor(ColorManager.purple3)
+          
+   
                 Spacer()
                 .frame(height: 75)
                 
