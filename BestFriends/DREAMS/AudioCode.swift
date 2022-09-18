@@ -28,15 +28,15 @@ struct AudioCode: View {
 
             VStack {
         
-                Text("Scared Stiff!")
-                    .font(.system(size: 22))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(.white)
-                   .foregroundColor(ColorManager.grey2)
-           
-                Spacer()
-                .frame(height: 33)
+//                Text("Scared Stiff!")
+//                    .font(.system(size: 22))
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+////                    .foregroundColor(.white)
+//                   .foregroundColor(ColorManager.grey2)
+//           
+//                Spacer()
+//                .frame(height: 33)
                 
                 Text("As if undamaged in the struggle")
                     .font(.system(size: 17))
@@ -45,7 +45,7 @@ struct AudioCode: View {
                    .foregroundColor(ColorManager.grey2)
                    
                      
-                Text("for a dream safely nestled in the brier we reach")
+                Text("for a dream somewhere out there we venture")
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -55,7 +55,7 @@ struct AudioCode: View {
                 Spacer()
                 .frame(height: 33)
                      
-                Text("Without a net")
+                Text("Without a safety net")
                     .font(.system(size: 22))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -106,14 +106,14 @@ struct AudioCode: View {
             
             VStack {
                     
-                Text("We dare step into our Greatness")
+                Text("We dare step into our forever")
                     .font(.system(size: 22))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(.white)
                    .foregroundColor(ColorManager.grey2)
                    
-                Text("as they turn whispering underneath - jealous")
+                Text("as they turn whispering underneath")
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)

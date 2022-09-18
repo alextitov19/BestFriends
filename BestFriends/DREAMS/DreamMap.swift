@@ -31,29 +31,7 @@ struct DreamMap: View {
             VStack {
         
                 
-                Text("Living your Dream")
-                        .font(.system(size: 30))
-                        .italic()
-                        .foregroundColor(ColorManager.purple2)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                
-                    Text("isn't a goal")
-                        .font(.system(size: 30))
-                        .italic()
-                        .foregroundColor(ColorManager.purple2)
-                        .fontWeight(.ultraLight)
-                        .multilineTextAlignment(.center)
-                
-                    Text("it's a by-product!")
-                        .font(.system(size: 45))
-                        .italic()
-                        .foregroundColor(ColorManager.purple2)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                
-                    Spacer()
-                        .frame(height:30)
+               
                 VStack {
                 
                 
@@ -64,7 +42,7 @@ struct DreamMap: View {
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                 
-                        Text("Sitting here in the deep dark and tired - \nyet unknowingly so close to greatness.")
+                        Text("Floating here in the deep dark \naway from the Sun - \nyet unknowingly so close to our greatness.")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager.purple2)
@@ -74,7 +52,7 @@ struct DreamMap: View {
                         Spacer()
                             .frame(height: 15)
                 
-                        Text("Listening loudly to it all now.  \nThey're now convinced you're crazy, \nwondering how much longer you will \nwaste everyones time and patience.")
+                        Text("Listening loudly to it all now.  \nThey're now convinced we're crazy, \nwondering how much longer we'll \nventure out here \nwasting their patience.")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager.purple2)
@@ -84,7 +62,7 @@ struct DreamMap: View {
                         Spacer()
                             .frame(height: 15)
                 
-                        Text("Thinking of just going home, \nbut still not wanting to lose.")
+                        Text("Damn, we're thinking of turning \nheading home, \nbut still not wanting to return \nempty handed.")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager.purple2)
@@ -94,7 +72,7 @@ struct DreamMap: View {
                         Spacer()
                             .frame(height: 15)
                 
-                        Text("This then is where the losers are marked, \nand the winners are borne.")
+                        Text("Here and now is where losers are marked, \nand the winners are born.")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager.purple2)

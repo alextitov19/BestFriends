@@ -41,7 +41,7 @@ struct DreamVaultView: View {
         ZStack {
             NavigationLink(destination: Neuroscience(user: user, friends: friends), label: { WhoFightingCircle (color: .orange, friendName: "Neuro- \nscience")
             })
-                .offset(x: showItems ? 0 : 0, y: showItems ? 240: 0)
+                .offset(x: showItems ? -130 : 0, y: showItems ? 240: 0)
             
             NavigationLink(destination: TwinkieDream(user: user, friends: friends), label: {
                 DreamCircle (color: ColorManager.purple5, friendName: "twinkie \ndreams")
@@ -54,7 +54,7 @@ struct DreamVaultView: View {
                 .offset(x: showItems ? 75 : 0, y: showItems ? -335: 0)
 
             
-            NavigationLink(destination: DreamMap(), label: { WhoFightingCircle (color: ColorManager.orange3, friendName: "lunatic \nfringe")
+            NavigationLink(destination: DreamMap(), label: { WhoFightingCircle (color: ColorManager.orange3, friendName: "around \nthe next \nstar")
             })
                 .offset(x: showItems ? -25 : 0, y: showItems ? -345: 0)
             
@@ -62,11 +62,11 @@ struct DreamVaultView: View {
             NavigationLink(destination: EverybodyOk(user: user), label: {
                 WhoFightingCircle (color: ColorManager.pmbc_green, friendName: "passion \nvs. \ndisipline")
             })
-               .offset(x: showItems ? 0 : 0, y: showItems ? 150: 0)
+               .offset(x: showItems ? -130 : 0, y: showItems ? 150: 0)
 
             
             NavigationLink(destination: AudioCode(), label: {
-                WhoFightingCircle (color: ColorManager.grey2, friendName: "scared \nstiff!")
+                WhoFightingCircle (color: ColorManager.grey2, friendName: "embracing \nour \nunknown")
             })
                .offset(x: showItems ? -140 : 0, y: showItems ? -260: 0)
             
