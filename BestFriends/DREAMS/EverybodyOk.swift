@@ -70,7 +70,7 @@ struct EverybodyOk: View {
                 .frame(height: 35)
             
                 
-                Text("These poems help you supplement the much needed talent of disciplined (see 'the stuff inside') with the emotion of 'passion' to power your dreams.")
+                Text("These poems help you supplement the much needed talent of disciplined (see 'neuroscience') with the emotion of 'passion' to power your dreams.")
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)

@@ -39,9 +39,9 @@ struct DreamVaultView: View {
 
         
         ZStack {
-            NavigationLink(destination: Neuroscience(user: user, friends: friends), label: { WhoFightingCircle (color: .orange, friendName: "the \nstuff \ninside")
+            NavigationLink(destination: Neuroscience(user: user, friends: friends), label: { WhoFightingCircle (color: .orange, friendName: "Neuro- \nscience")
             })
-                .offset(x: showItems ? -150 : 0, y: showItems ? 250: 0)
+                .offset(x: showItems ? 0 : 0, y: showItems ? 240: 0)
             
             NavigationLink(destination: TwinkieDream(user: user, friends: friends), label: {
                 DreamCircle (color: ColorManager.purple5, friendName: "twinkie \ndreams")
@@ -54,30 +54,32 @@ struct DreamVaultView: View {
                 .offset(x: showItems ? 75 : 0, y: showItems ? -335: 0)
 
             
-            NavigationLink(destination: DreamMap(user: user, friends: friends), label: { WhoFightingCircle (color: ColorManager.orange3, friendName: "poems \nfor our \ndreams")
+            NavigationLink(destination: DreamMap(), label: { WhoFightingCircle (color: ColorManager.orange3, friendName: "lunatic \nfringe")
             })
-                .offset(x: showItems ? -25 : 0, y: showItems ? -365: 0)
+                .offset(x: showItems ? -25 : 0, y: showItems ? -345: 0)
             
             
             NavigationLink(destination: EverybodyOk(user: user), label: {
-                WhoFightingCircle (color: ColorManager.pmbc_green, friendName: "passion")
+                WhoFightingCircle (color: ColorManager.pmbc_green, friendName: "passion \nvs. \ndisipline")
             })
-               .offset(x: showItems ? -50 : 0, y: showItems ? -150: 0)
+               .offset(x: showItems ? 0 : 0, y: showItems ? 150: 0)
 
             
-            NavigationLink(destination: Heart(user: user), label: {
-                WhoFightingCircle (color: ColorManager.grey2, friendName: "heart \nto \ncontinue")
+            NavigationLink(destination: AudioCode(), label: {
+                WhoFightingCircle (color: ColorManager.grey2, friendName: "scared \nstiff!")
             })
-               .offset(x: showItems ? -110 : 0, y: showItems ? -260: 0)
+               .offset(x: showItems ? -140 : 0, y: showItems ? -260: 0)
             
            
             NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres), label: {
                 WhoFightingCircle (color: ColorManager.pmbc_pink, friendName: "dreams \nwe \ndare")
             })
-//            .frame(width: 185, height: 85)
-            .offset(x: showItems ? 50 : 0, y: showItems ? -160: 0)
+            .offset(x: showItems ? 50 : 0, y: showItems ? -190: 0)
             
-            
+            NavigationLink(destination: EmptyView(), label: {
+                WhoFightingCircle (color: ColorManager.grey3, friendName: "open")
+            })
+            .offset(x: showItems ? -120 : 0, y: showItems ? -190: 0)
             
             
          
@@ -94,7 +96,7 @@ struct DreamVaultView: View {
             
                                 VStack {
             
-                          Text("our \ndream's \nlive")
+                          Text("our \ndream's")
                                         .font(.system(size: 12))
                                         .foregroundColor(ColorManager.grey2)
                                         .fontWeight(.medium)

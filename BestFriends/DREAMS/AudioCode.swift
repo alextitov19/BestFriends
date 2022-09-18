@@ -1,8 +1,8 @@
 //
-//  Heart.swift
+//  AudioCode.swift
 //  BestFriends
 //
-//  Created by Social Tech on 9/14/22.
+//  Created by Social Tech on 9/17/22.
 //
 
 import Foundation
@@ -10,35 +10,40 @@ import SwiftUI
 import AVKit
 
 
-struct Heart: View {
-    @EnvironmentObject var sessionManager: SessionManager
-    
-    let user: User
-    
-    
+struct AudioCode: View {
+    @State var audioPlayer: AVAudioPlayer!
     var body: some View {
+        
         ZStack {
-            
+           
             Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
-
-
+          
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
+            //                    .scaledToFill()
                 .blendMode(.screen)
 
-            
             VStack {
-               
-
-                Text("As if undamaged in the struggle.")
+        
+                Text("Scared Stiff!")
+                    .font(.system(size: 22))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(.white)
+                   .foregroundColor(ColorManager.grey2)
+           
+                Spacer()
+                .frame(height: 33)
+                
+                Text("As if undamaged in the struggle")
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                    .foregroundColor(ColorManager.grey2)
-                   .padding()
+                   
                      
                 Text("for a dream safely nestled in the brier we reach")
                     .font(.system(size: 17))
@@ -46,15 +51,18 @@ struct Heart: View {
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(.white)
                    .foregroundColor(ColorManager.grey2)
-                   .padding()
+                
+                Spacer()
+                .frame(height: 33)
                      
                 Text("Without a net")
-                    .font(.system(size: 17))
+                    .font(.system(size: 22))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(.white)
                    .foregroundColor(ColorManager.grey2)
-                   .padding()
+           
+        VStack {
                      
                 Text("we unwrap our dreams after the moon-dives")
                     .font(.system(size: 17))
@@ -62,93 +70,99 @@ struct Heart: View {
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(.white)
                    .foregroundColor(ColorManager.grey2)
-                   .padding()
-                     
+          
+      
+                Spacer()
+                .frame(height: 33)
+                
                 Text("Yet standing here")
-                    .font(.system(size: 17))
+                    .font(.system(size: 22))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(.white)
                    .foregroundColor(ColorManager.grey2)
-                   .padding()
+                   
                      
-                Text("the next sterp looking like off the narrow edge")
+                Text("the next step looking like off the narrow edge")
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(.white)
                    .foregroundColor(ColorManager.grey2)
-                   .padding()
+                   
               
-                VStack {
+
                 
-                Text("Then letting go of the madness of making it all fit.")
+                Text("then letting go of the madness of making it all fit")
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
 //                    .foregroundColor(.white)
                    .foregroundColor(ColorManager.grey2)
-                   .padding()
-                    
-                
-                Text("We dare step into greatness")
-                    .font(.system(size: 17))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(.white)
-                   .foregroundColor(ColorManager.grey2)
-                   .padding()
-                Text("as the other turn whispering underneath")
-                    .font(.system(size: 17))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-//                    .foregroundColor(.white)
-                   .foregroundColor(ColorManager.grey2)
-                   .padding()
-                     VStack {
-                  
-             
+                   
                     
                     Spacer()
-                    .frame(height: 35)
+                    .frame(height: 33)
+            
+            VStack {
+                    
+                Text("We dare step into our Greatness")
+                    .font(.system(size: 22))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(.white)
+                   .foregroundColor(ColorManager.grey2)
+                   
+                Text("as they turn whispering underneath - jealous")
+                    .font(.system(size: 17))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+//                    .foregroundColor(.white)
+                   .foregroundColor(ColorManager.grey2)
+                   
+               
+                    Spacer()
+                    .frame(height: 25)
               }
                 
-         
- 
-
-             
-
-                Spacer()
-                .frame(height: 25)
-
-                NavigationLink(
-                    destination: AudioCode(),
-                    label: {
-                        Text("Heart to Continue")
-                            .fontWeight(.thin)
-                            .frame(width: 200, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 25))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
-                    })
-                
-                
-                Spacer()
-                .frame(height: 75)
-                
-
-           
-               
+            VStack {
+            
+                    Text("Listen").font(.system(size: 20)).font(.largeTitle)
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        self.audioPlayer.play()
+                    }) {
+                        Image(systemName: "play.circle.fill").resizable()
+                            .frame(width: 40, height: 40)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    Spacer()
+                    Button(action: {
+                        self.audioPlayer.pause()
+                    }) {
+                        Image(systemName: "pause.circle.fill").resizable()
+                            .frame(width: 40, height: 40)
+                            .aspectRatio(contentMode: .fit)
+                    }
+                    Spacer()
+                    
+                }
             }
+        .onAppear {
+            let sound = Bundle.main.path(forResource: "Meena", ofType: "m4a")
+            self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
         }
-        
     }
 }
+    
+}
+    }
 }
 
 
-
-
+//struct AudioCode_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AudioCode()
+//    }
+//}
