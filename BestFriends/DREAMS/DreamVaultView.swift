@@ -71,7 +71,7 @@ struct DreamVaultView: View {
                .offset(x: showItems ? -140 : 0, y: showItems ? -260: 0)
             
            
-            NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres), label: {
+            NavigationLink(destination: DreamsWeDare(), label: {
                 WhoFightingCircle (color: ColorManager.pmbc_pink, friendName: "dreams \nwe \ndare")
             })
             .offset(x: showItems ? 50 : 0, y: showItems ? -190: 0)
@@ -150,6 +150,9 @@ struct DreamCircle: View {
                 .foregroundColor(ColorManager.grey1)
 
         }
+       
+    
+        
     }
 }
 

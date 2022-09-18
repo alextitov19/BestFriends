@@ -140,6 +140,7 @@
 		CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */; };
 		CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E3280219B70003A714 /* RemoveFriend.swift */; };
 		CF3B65EA2803F3050003A714 /* BreathInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B65E92803F3050003A714 /* BreathInView.swift */; };
+		CF3DB36728D78BF300BF9CCD /* DreamsWeDare.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DB36628D78BF300BF9CCD /* DreamsWeDare.swift */; };
 		CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */; };
 		CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */; };
 		CF4A08DA2877E4A000ADA9DD /* PhotoPopPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */; };
@@ -366,6 +367,7 @@
 		CF3B65E1280215A90003A714 /* DeleteMyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteMyAccount.swift; sourceTree = "<group>"; };
 		CF3B65E3280219B70003A714 /* RemoveFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend.swift; sourceTree = "<group>"; };
 		CF3B65E92803F3050003A714 /* BreathInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathInView.swift; sourceTree = "<group>"; };
+		CF3DB36628D78BF300BF9CCD /* DreamsWeDare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamsWeDare.swift; sourceTree = "<group>"; };
 		CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend2.swift; sourceTree = "<group>"; };
 		CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload.swift; sourceTree = "<group>"; };
 		CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopPreload.swift; sourceTree = "<group>"; };
@@ -802,6 +804,7 @@
 				CFDA4BDD28D3CEA300118D90 /* DreamMap.swift */,
 				CFDA4BDF28D57A2300118D90 /* TwinkieDream.swift */,
 				CFDA4BE128D66B2600118D90 /* AudioCode.swift */,
+				CF3DB36628D78BF300BF9CCD /* DreamsWeDare.swift */,
 			);
 			path = DREAMS;
 			sourceTree = "<group>";
@@ -1502,6 +1505,7 @@
 				CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */,
 				7A22A579274416C200FB6B4F /* ViewExt.swift in Sources */,
 				CFDB150328574D8B00155CEE /* FightWithParents.swift in Sources */,
+				CF3DB36728D78BF300BF9CCD /* DreamsWeDare.swift in Sources */,
 				CF3B65AB2800718E0003A714 /* ReportAbuse.swift in Sources */,
 				CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */,
 				CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */,
