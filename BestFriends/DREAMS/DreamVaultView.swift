@@ -39,12 +39,16 @@ struct DreamVaultView: View {
 
         
         ZStack {
-//            NavigationLink(destination: EmptyView(), label: { WhoFightingCircle (color: .orange, friendName: "open")
-//            })
-//                .offset(x: showItems ? 180 : 0, y: showItems ? -240: 0)
             
-        
+//            NavigationLink(destination: OurStrategy(), label: { WhoFightingCircle (color: .orange, friendName: "how we \nhelp you")
+//            })
+//                .offset(x: showItems ? 150 : 0, y: showItems ? -140: 0)
 
+            NavigationLink(destination: DreamSteps(), label: { WhoFightingCircle (color: .orange, friendName: "dream \nsteps")
+            })
+                .offset(x: showItems ? 0 : 0, y: showItems ? 140: 0)
+            
+    
             NavigationLink(destination: MiroWhiteboard(user: user, friends: friends), label: {
                 WhoFightingCircle (color: ColorManager.purple2, friendName: "my \ntrajectory")
             })
@@ -57,9 +61,9 @@ struct DreamVaultView: View {
             
             
             NavigationLink(destination: EverybodyOk(user: user), label: {
-                WhoFightingCircle (color: ColorManager.pmbc_green, friendName: "passion \nvs. \ndiscipline")
+                WhoFightingCircle (color: ColorManager.pmbc_green, friendName: "neuro- \nscience")
             })
-               .offset(x: showItems ? 0 : 0, y: showItems ? 220: 0)
+               .offset(x: showItems ? 0 : 0, y: showItems ? 215: 0)
 
             
             NavigationLink(destination: AudioCode(), label: {

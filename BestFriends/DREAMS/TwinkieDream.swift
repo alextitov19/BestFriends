@@ -30,7 +30,7 @@ struct TwinkieDream: View {
 //                .ignoresSafeArea()
 //                .onAppear()
 //
-            Image("purpleBackground")
+            Image("Twinkie")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -49,37 +49,37 @@ struct TwinkieDream: View {
                 VStack {
 
                 
-                    Text("Oops,")
-                        .font(.system(size: 40))
-                        .foregroundColor(ColorManager.purple2)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    
-                        Spacer()
-                            .frame(height: 30)
-                    
-                Text("we thought our")
-                    .font(.system(size: 27))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    
-                    Text("dreams lasted")
-                        .font(.system(size: 27))
-                        .foregroundColor(ColorManager.purple2)
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    Text("forever")
-                        .font(.system(size: 80))
-                        .italic()
-                        .foregroundColor(ColorManager.purple2)
-                        .fontWeight(.thin)
-                       .multilineTextAlignment(.center)
-                    
+//                    Text("Oops,")
+//                        .font(.system(size: 40))
+//                        .foregroundColor(ColorManager.purple2)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//
+//
+//
+//                        Spacer()
+//                            .frame(height: 30)
+//
+//                Text("we thought our")
+//                    .font(.system(size: 27))
+//                    .foregroundColor(ColorManager.purple2)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//
+//                    Text("dreams lasted")
+//                        .font(.system(size: 27))
+//                        .foregroundColor(ColorManager.purple2)
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//
+//
+//                    Text("forever")
+//                        .font(.system(size: 80))
+//                        .italic()
+//                        .foregroundColor(ColorManager.purple2)
+//                        .fontWeight(.thin)
+//                       .multilineTextAlignment(.center)
+//
                    
                     VStack {
                         Link(destination: URL(string: "https://socialtechlabs.com/twinkie-dreams/")!) {
@@ -96,9 +96,9 @@ struct TwinkieDream: View {
 //
                   
  
-                
-                    Spacer()
-                        .frame(height: 200)
+//                
+//                    Spacer()
+//                        .frame(height: 200)
 
 
                
