@@ -193,32 +193,19 @@ struct PlanetActionsView: View {
                             VStack {
                                 
                                 
-                                Text("Fixing")
+                                Text("Making")
                                      .foregroundColor(.white)
-                                     .font(.system(size: 13, weight: .bold))
+                                     .font(.system(size: 20, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
-                                Text("FIGHTS")
+                                Text("Amends")
                                      .foregroundColor(.white)
-                                     .font(.system(size: 14, weight: .bold))
+                                     .font(.system(size: 20, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
-//                                Text("Fix")
-//                                     .foregroundColor(.white)
-//                                     .font(.system(size: 13, weight: .bold))
-//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                     .opacity(0.50)
-//
-//                                Text("Friendships")
-//                                     .foregroundColor(.white)
-//                                     .font(.system(size: 14, weight: .bold))
-//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                     .opacity(0.50)
-//
-
-                            }
+                         }
                         }
                     })
                     
@@ -320,30 +307,19 @@ struct PlanetActionsView: View {
                             
                             VStack {
    
-                                Text("Mood Share")
+                                Text("Share")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 14, weight: .bold))
+                                    .font(.system(size: 20, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("with")
+                                Text("Mood")
                                     .foregroundColor(.white)
-                                    .font(.system(size: 13, weight: .bold))
+                                    .font(.system(size: 20, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                
-                                Text("Supportive")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 14, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
-                                
-                                Text("Friends")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 14, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
+                       
                                 
                             }
                         }
@@ -384,13 +360,13 @@ struct PlanetActionsView: View {
                                 
                                 Text("Dream")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 14, weight: .bold))
+                                     .font(.system(size: 20, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
                                 Text("Galaxy")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 14, weight: .bold))
+                                     .font(.system(size: 20, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 

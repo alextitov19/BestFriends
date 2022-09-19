@@ -25,45 +25,7 @@ struct MiroWhiteboard: View {
                 .onAppear()
             
             VStack {
-                Text("If you want something")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(ColorManager.purple3)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                Text("you have to take a risk")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(ColorManager.purple3)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height:20)
-                
-                Text("If you 'Really' want something")
-                    .font(.system(size: 25))
-                    .italic()
-                    .foregroundColor(ColorManager.purple3)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                   
-                Text("you have to be willing")
-                    .font(.system(size: 25))
-                    .italic()
-                    .foregroundColor(ColorManager.purple3)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-              
-                Text("to risk everything")
-                    .font(.system(size: 30))
-                    .italic()
-                    .foregroundColor(.red)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height:50)
+               
                
             VStack {
 //                Text("If you're a visual person")

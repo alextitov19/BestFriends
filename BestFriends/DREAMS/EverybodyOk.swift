@@ -37,7 +37,7 @@ struct EverybodyOk: View {
             
             VStack {
                 
-                Text("D R E A M S")
+                Text("S U C C E S S")
                     .font(.system(size: 40))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -77,6 +77,24 @@ struct EverybodyOk: View {
 //                    .foregroundColor(.white)
                    .foregroundColor(ColorManager.grey2)
                    .padding()
+                    
+                    
+                    
+                    
+                    Link(destination: URL(string: "https://socialtechlabs.com/neuroscience/")!) {
+                        
+                        Text("Neuroscience - Strengths")
+                            .fontWeight(.thin)
+                            .frame(width: 310, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 23))
+                            .background(ColorManager.pmbc_green)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    }
+                      
+                    
+                    
                 
                 Text("As the voice inside you becomes louders and ours softer, in realizing your dream you will become unstoppable, yet before its over, humbled.")
                     .font(.system(size: 17))
