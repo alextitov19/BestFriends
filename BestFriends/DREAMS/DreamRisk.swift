@@ -61,17 +61,18 @@ struct DreamRisk: View {
                             .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
                            
-                        Text("you have to be willing")
+                        Text("you have to be willing to")
                             .font(.system(size: 25))
                             .italic()
                             .foregroundColor(ColorManager.purple3)
                             .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
                       
-                        Text("to risk everything")
-                            .font(.system(size: 30))
+                        Text("risk everything")
+                            .font(.system(size: 35))
                             .italic()
-                            .foregroundColor(.red)
+                            .foregroundColor(ColorManager.pmbc_pink)
+//                            .foregroundColor(.red)
                             .fontWeight(.ultraLight)
                             .multilineTextAlignment(.center)
                         
@@ -86,7 +87,7 @@ struct DreamRisk: View {
               }
                 
 //            VStack {
-//            
+//
 //                    Text("Listen").font(.system(size: 20)).font(.largeTitle)
 //                HStack {
 //                    Spacer()
@@ -106,14 +107,14 @@ struct DreamRisk: View {
 //                            .aspectRatio(contentMode: .fit)
 //                    }
 //                    Spacer()
-//                    
+//
 //                }
 //            }
 //        .onAppear {
 //            let sound = Bundle.main.path(forResource: "Meena", ofType: "m4a")
 //            self.audioPlayer = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
 //        }
-//                        
+//
                         Spacer()
                         .frame(height: 105)
                         

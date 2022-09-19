@@ -43,10 +43,7 @@ struct DreamVaultView: View {
 //            })
 //                .offset(x: showItems ? 180 : 0, y: showItems ? -240: 0)
             
-            NavigationLink(destination: TwinkieDream(user: user, friends: friends), label: {
-                DreamCircle (color: ColorManager.purple5, friendName: "twinkie \ndreams")
-            })
-               .offset(x: showItems ? 150 : 0, y: showItems ? -100: 0)
+        
 
             NavigationLink(destination: MiroWhiteboard(user: user, friends: friends), label: {
                 WhoFightingCircle (color: ColorManager.purple2, friendName: "my \ntrajectory")
@@ -54,7 +51,7 @@ struct DreamVaultView: View {
                 .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
 
             
-            NavigationLink(destination: DreamMap(), label: { WhoFightingCircle (color: ColorManager.orange3, friendName: "past \nthe next \nstar")
+            NavigationLink(destination: DreamMap(), label: { WhoFightingCircle (color: ColorManager.purple1, friendName: "past \nthe next \nstar")
             })
                 .offset(x: showItems ? -25 : 0, y: showItems ? -345: 0)
             
@@ -66,22 +63,25 @@ struct DreamVaultView: View {
 
             
             NavigationLink(destination: AudioCode(), label: {
-                WhoFightingCircle (color: ColorManager.grey2, friendName: "embracing \nour \nunknown")
+                WhoFightingCircle (color: ColorManager.purple2, friendName: "embracing \nour \nunknown")
             })
                .offset(x: showItems ? -140 : 0, y: showItems ? -260: 0)
             
            
             NavigationLink(destination: DreamsWeDare(), label: {
-                WhoFightingCircle (color: ColorManager.pmbc_pink, friendName: "dreams \nwe \ndare")
+                WhoFightingCircle (color: ColorManager.purple3, friendName: "dreams \nwe \ndare")
             })
             .offset(x: showItems ? 50 : 0, y: showItems ? -190: 0)
             
             NavigationLink(destination: DreamRisk(), label: {
-                WhoFightingCircle (color: ColorManager.grey3, friendName: "what \nit \ntakes")
+                WhoFightingCircle (color: ColorManager.grey2, friendName: "what \nit \ntakes")
             })
             .offset(x: showItems ? -120 : 0, y: showItems ? -190: 0)
             
-            
+            NavigationLink(destination: TwinkieDream(user: user, friends: friends), label: {
+                DreamCircle (color: ColorManager.grey1, friendName: "twinkie \ndreams")
+            })
+               .offset(x: showItems ? 150 : 0, y: showItems ? -100: 0)
          
             
             Image(systemName: "rectangle.fill")
@@ -147,7 +147,7 @@ struct DreamCircle: View {
         Text(friendName)
                 .fontWeight(.light)
                 .italic()
-                .foregroundColor(ColorManager.grey1)
+                .foregroundColor(ColorManager.grey4)
 
         }
        

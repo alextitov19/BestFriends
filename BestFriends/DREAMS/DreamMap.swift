@@ -95,7 +95,11 @@ struct DreamMap: View {
                 
             VStack {
             
-                    Text("Listen").font(.system(size: 20)).font(.largeTitle)
+                    Text("Listen").font(.system(size: 20))
+                    .foregroundColor(Color.blue)
+                    .fontWeight(.light)
+//                    .font(.largeTitle)
+                
                 HStack {
                     Spacer()
                     Button(action: {
