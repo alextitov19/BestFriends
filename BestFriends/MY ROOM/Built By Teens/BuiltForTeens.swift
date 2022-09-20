@@ -45,17 +45,29 @@ struct BuiltForTeens: View {
 //                .blendMode(.screen)
             
             VStack {
+                Text("the 'Zen Masters' \nof social media")
+                    .font(.system(size: 35, weight: .bold))
+                    .foregroundColor(.green)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+//                    .foregroundColor(ColorManager.purple5)
+//                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+
+                Spacer()
+                    .frame(height: 45)
                 
+            VStack {
+                    
                 
                 Text("helping you build")
                     .font(.system(size: 30))
-                   .italic()
-                    .foregroundColor(ColorManager.pmbc_blue)
+                
+                    .foregroundColor(Color.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Spacer()
-                    .frame(height: 25)
+              
               
                 Text("kickass,")
                     .font(.system(size: 35))
@@ -84,6 +96,8 @@ struct BuiltForTeens: View {
                     .foregroundColor(ColorManager.purple2)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
+            
+                    
                 
                 Spacer()
                     .frame(height: 15)
@@ -94,12 +108,13 @@ struct BuiltForTeens: View {
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
+               
                 Spacer()
                     .frame(height:20)
             
                     VStack {
 
-                        
+
                         Link(destination: URL(string: "https://socialtechlabs.com/teen-team/")!) {
                                 Text("Meet some of our Teens")
                                     .fontWeight(.thin)
@@ -110,55 +125,54 @@ struct BuiltForTeens: View {
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     .opacity(0.8)
-                         
+
                         }
-                        
+
                         
                         
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 75)
                         
-                        Text("Be First")
-                            .font(.system(size: 45))
-                            
-                            .foregroundColor(ColorManager.orange2)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        Text("See new features before release!")
-                            .font(.system(size: 23))
-                            .italic()
-                            .foregroundColor(ColorManager.orange2)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                        
-                        NavigationLink(
-                            destination: BetaTestVideo(),
-                            label: {
-                                Text("I want to get Involved!")
-                                    .fontWeight(.thin)
-                                    .frame(width: 310, height: 40)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
-                                    .background(ColorManager.pmbc_blue)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
-                   
+//                        Text("Be First")
+//                            .font(.system(size: 45))
+//
+//                            .foregroundColor(ColorManager.orange2)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//
+//                        Text("See new features before release!")
+//                            .font(.system(size: 23))
+//                            .italic()
+//                            .foregroundColor(ColorManager.orange2)
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//
+//                        NavigationLink(
+//                            destination: BetaTestVideo(),
+//                            label: {
+//                                Text("I want to get Involved!")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 310, height: 40)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 30))
+//                                    .background(ColorManager.pmbc_blue)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                            })
+//
                       
-                        Spacer()
-                            .frame(height: 70)
                  
                         
                     }
                 }
                 
             }
-            
-        }
-        
+}
     }
+}
+        
+    
     
 
 

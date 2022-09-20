@@ -62,7 +62,7 @@ struct DreamMap: View {
                         Spacer()
                             .frame(height: 15)
                 
-                        Text("Damn, we're thinking of turning \nheading home, \nbut still not wanting to return \nempty handed.")
+                        Text("Damn, we're thinking of turning \nheading home, \nbut still not wanting to return \ngiving up on our journey.")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(ColorManager.purple2)

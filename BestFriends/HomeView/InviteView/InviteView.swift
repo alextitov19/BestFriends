@@ -32,20 +32,20 @@ struct InviteView: View {
                     .frame(height: 40)
                 
                 Text("Send Friend Requests")
-                    .foregroundColor(.gray)
+                    .foregroundColor(.green)
                     .font(.system(size: 25, weight: .bold))
                 
                 Spacer()
                     .frame(height: 10)
                 
                 
-                Text("Add up to 5 friends")
-                    .foregroundColor(.purple)
+                Text("-> Add up to 5 friends <-")
+                    .foregroundColor(.green)
                     .font(.system(size: 27, weight: .light))
                 
                 Text("(Friends show up as planets on homepage)")
                     .italic()
-                    .foregroundColor(.green)
+                    .foregroundColor(.white)
                     .font(.system(size: 15, weight: .thin))
                 
                 Spacer()
@@ -108,7 +108,7 @@ struct InviteView: View {
                                 .frame(height: 40)
                             
                             Text("Accepting Friend Requests")
-                                .foregroundColor(.gray)
+                                .foregroundColor(.green)
                                 .font(.system(size: 25, weight: .bold))
                             
                             
@@ -124,7 +124,7 @@ struct InviteView: View {
                             
                             Text("-Come to this page and tap [Accept]")
                                 .fontWeight(.thin)
-                                .foregroundColor(.red)
+                                .foregroundColor(.white)
                                 .italic()
                                 .font(.system(size: 17))
                             

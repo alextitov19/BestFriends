@@ -55,7 +55,7 @@ struct DreamVaultView: View {
                 .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
 
             
-            NavigationLink(destination: DreamMap(), label: { WhoFightingCircle (color: ColorManager.purple1, friendName: "past \nthe next \nstar")
+            NavigationLink(destination: DreamMap(), label: { WhoFightingCircle (color: ColorManager.purple1, friendName: "passing \nthe next \nstar")
             })
                 .offset(x: showItems ? -25 : 0, y: showItems ? -345: 0)
             
@@ -67,9 +67,9 @@ struct DreamVaultView: View {
 
             
             NavigationLink(destination: AudioCode(), label: {
-                WhoFightingCircle (color: ColorManager.purple2, friendName: "embracing \nour \nunknown")
+                WhoFightingCircle (color: ColorManager.purple2, friendName: "off the \nnarrow \nedge")
             })
-               .offset(x: showItems ? -140 : 0, y: showItems ? -260: 0)
+               .offset(x: showItems ? -140 : 0, y: showItems ? -275: 0)
             
            
             NavigationLink(destination: DreamsWeDare(), label: {
@@ -78,7 +78,7 @@ struct DreamVaultView: View {
             .offset(x: showItems ? 50 : 0, y: showItems ? -190: 0)
             
             NavigationLink(destination: DreamRisk(), label: {
-                WhoFightingCircle (color: ColorManager.grey2, friendName: "what \nit \ntakes")
+                WhoFightingCircle (color: ColorManager.orange2, friendName: "NEW \n09.20.22")
             })
             .offset(x: showItems ? -120 : 0, y: showItems ? -190: 0)
             
@@ -142,7 +142,7 @@ struct DreamCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 100, height: 100)
+        .frame(width: 90, height: 90)
         .clipShape(Circle())
         .foregroundColor(color)
         .opacity(0.7)

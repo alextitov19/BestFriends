@@ -85,7 +85,7 @@ struct EverybodyOk: View {
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/neuroscience/")!) {
                         
-                        Text("Neuroscience & inate strengths")
+                        Text("Neuroscience & Inate Strengths")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
