@@ -53,20 +53,39 @@ struct BuiltForTeens: View {
 //                    .foregroundColor(ColorManager.purple5)
 //                    .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
+                
+                Text("doing our best to ")
+                    .font(.system(size: 35, weight: .bold))
+                    .foregroundColor(.green)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+//                    .foregroundColor(ColorManager.purple5)
+//                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
 
+                
+                Text("help you build ")
+                    .font(.system(size: 35, weight: .bold))
+                    .foregroundColor(.green)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+//                    .foregroundColor(ColorManager.purple5)
+//                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
                 Spacer()
                     .frame(height: 45)
                 
             VStack {
                     
                 
-                Text("helping you build")
-                    .font(.system(size: 30))
-                
-                    .foregroundColor(Color.white)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
+//                Text("help you build")
+//                    .font(.system(size: 30))
+//                
+//                    .foregroundColor(Color.white)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//                
               
               
                 Text("kickass,")
