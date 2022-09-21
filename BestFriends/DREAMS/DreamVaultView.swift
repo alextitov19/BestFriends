@@ -15,9 +15,9 @@ struct DreamVaultView: View {
     
     let user: User
     let atmosphere: Atmosphere
-    
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -33,7 +33,7 @@ struct DreamVaultView: View {
                 .scaledToFill()
           
            
-            AdPlayerView(name: "PlanetSound")
+            AdPlayerView(name: "PlanetSound10")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
@@ -77,7 +77,7 @@ struct DreamVaultView: View {
             })
             .offset(x: showItems ? 50 : 0, y: showItems ? -190: 0)
             
-            NavigationLink(destination: DreamRisk(), label: {
+            NavigationLink(destination: NewPoems(user: user, friends: friends, groups: groups), label: {
                 WhoFightingCircle (color: ColorManager.orange2, friendName: "NEW \n09.20.22")
             })
             .offset(x: showItems ? -120 : 0, y: showItems ? -190: 0)
@@ -85,7 +85,7 @@ struct DreamVaultView: View {
             NavigationLink(destination: TwinkieDream(user: user, friends: friends), label: {
                 DreamCircle (color: ColorManager.grey1, friendName: "twinkie \ndreams")
             })
-               .offset(x: showItems ? 150 : 0, y: showItems ? -100: 0)
+               .offset(x: showItems ? 150 : 0, y: showItems ? -270: 0)
          
             
             Image(systemName: "rectangle.fill")

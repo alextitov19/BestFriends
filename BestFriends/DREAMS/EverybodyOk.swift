@@ -37,32 +37,32 @@ struct EverybodyOk: View {
             
             VStack {
                 
-                Text("Science behind your")
+                Text("Science behind")
                     .font(.system(size: 30))
                     .italic()
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple3)
                 
-                Text("S U C C E S S")
+                Text("S U C C E S S F U L L Y")
+                    .font(.system(size: 35))
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager.purple3)
+                Spacer()
+                .frame(height: 20)
+                
+               
+                Text("living your Dreams")
                     .font(.system(size: 40))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple3)
-               
-             
             
                 Spacer()
                 .frame(height: 15)
                 
-                
-                Text("passion vs. discipline")
-                    .font(.system(size: 20))
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple3)
-                
-             
+          
                 
 
 //
@@ -72,7 +72,7 @@ struct EverybodyOk: View {
                 .frame(height: 35)
             
                 
-                Text("These poems help you super-charge your much needed talent of disciplined with the emotion of 'passion' powering your precious dreams.")
+                Text("Combining your Emotions with \nyour Innate Abilities & Strengths")
                     .font(.system(size: 17))
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
@@ -85,7 +85,7 @@ struct EverybodyOk: View {
                     
                     Link(destination: URL(string: "https://socialtechlabs.com/neuroscience/")!) {
                         
-                        Text("Neuroscience & Inate Strengths")
+                        Text("Neuroscience & Your Strengths")
                             .fontWeight(.thin)
                             .frame(width: 310, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

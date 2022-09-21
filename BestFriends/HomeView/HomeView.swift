@@ -325,9 +325,9 @@ struct HomeView: View {
                             })
                             
                             
-                            NavigationLink(destination: HorizonHomeView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+                            NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                            label: {
-                                Text("Horizons")
+                                Text("Dream Story")
                                     .fontWeight(.light)
                                     .frame(width: 115, height: 30)
                                     .foregroundColor(.white)
