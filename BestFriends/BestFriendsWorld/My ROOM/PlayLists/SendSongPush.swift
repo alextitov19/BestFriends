@@ -34,8 +34,7 @@ struct SendSongPush: View {
          
                 VStack {
                       
-                    Spacer()
-                        .frame(height: 20)
+                
                     
                     
                     Text("Who are you")
@@ -164,7 +163,19 @@ struct SendSongPush: View {
                             
                             Spacer()
                                 .frame(height: 30)
+                            
+                            Text("NOW")
+                                .font(.system(size: 35, weight: .ultraLight))
+                                .foregroundColor(Color.white)
+                            
                    
+                            Text("Pop over to Chat and")
+                                .font(.system(size: 35, weight: .ultraLight))
+                                .foregroundColor(Color.white)
+                            Text("send name of song")
+                                .font(.system(size: 35, weight: .ultraLight))
+                                .foregroundColor(Color.white)
+                            
                         }
                         
 

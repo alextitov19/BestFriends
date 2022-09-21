@@ -33,7 +33,7 @@ struct DreamVaultView: View {
                 .scaledToFill()
           
            
-            AdPlayerView(name: "PlanetSound10")
+            AdPlayerView(name: "PlanetSound")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
