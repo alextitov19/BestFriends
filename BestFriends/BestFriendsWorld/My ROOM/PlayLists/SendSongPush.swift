@@ -169,7 +169,7 @@ struct SendSongPush: View {
                                 .foregroundColor(Color.white)
                             
                    
-                            Text("Pop over to Chat and")
+                            Text("Jump over to Chat and")
                                 .font(.system(size: 35, weight: .ultraLight))
                                 .foregroundColor(Color.white)
                             Text("send name of song")
