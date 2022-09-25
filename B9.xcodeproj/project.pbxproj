@@ -144,12 +144,12 @@
 		CF3DB36928D7DD8B00BF9CCD /* DreamRisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DB36828D7DD8B00BF9CCD /* DreamRisk.swift */; };
 		CF3DB36B28D8DAC000BF9CCD /* DreamSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DB36A28D8DAC000BF9CCD /* DreamSteps.swift */; };
 		CF3DB36D28D8E08C00BF9CCD /* OurStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DB36C28D8E08C00BF9CCD /* OurStrategy.swift */; };
-		CF3DB37028DA6BCD00BF9CCD /* Emilia.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF3DB36F28DA6BCD00BF9CCD /* Emilia.m4a */; };
 		CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF3DB37128DA6D7D00BF9CCD /* Nadiah2.m4a */; };
 		CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */; };
 		CF3DB38328DAD2D200BF9CCD /* NewPoems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DB38228DAD2D200BF9CCD /* NewPoems.swift */; };
 		CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */; };
 		CF47CF0528DBB9AD008B6F11 /* SendSongWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0428DBB9AD008B6F11 /* SendSongWorld.swift */; };
+		CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */; };
 		CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */; };
 		CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */; };
 		CF4A08DA2877E4A000ADA9DD /* PhotoPopPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */; };
@@ -378,12 +378,12 @@
 		CF3DB36828D7DD8B00BF9CCD /* DreamRisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamRisk.swift; sourceTree = "<group>"; };
 		CF3DB36A28D8DAC000BF9CCD /* DreamSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamSteps.swift; sourceTree = "<group>"; };
 		CF3DB36C28D8E08C00BF9CCD /* OurStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurStrategy.swift; sourceTree = "<group>"; };
-		CF3DB36F28DA6BCD00BF9CCD /* Emilia.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia.m4a; sourceTree = "<group>"; };
 		CF3DB37128DA6D7D00BF9CCD /* Nadiah2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nadiah2.m4a; sourceTree = "<group>"; };
 		CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Meena1.m4a; sourceTree = "<group>"; };
 		CF3DB38228DAD2D200BF9CCD /* NewPoems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPoems.swift; sourceTree = "<group>"; };
 		CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CF47CF0428DBB9AD008B6F11 /* SendSongWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongWorld.swift; sourceTree = "<group>"; };
+		CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia2.m4a; sourceTree = "<group>"; };
 		CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend2.swift; sourceTree = "<group>"; };
 		CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload.swift; sourceTree = "<group>"; };
 		CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopPreload.swift; sourceTree = "<group>"; };
@@ -957,7 +957,7 @@
 				CFDA4BCA28CF698800118D90 /* Beach.mp4 */,
 				CFDA4BD128D1060F00118D90 /* Launching.mp4 */,
 				CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */,
-				CF3DB36F28DA6BCD00BF9CCD /* Emilia.m4a */,
+				CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */,
 				CF3DB37128DA6D7D00BF9CCD /* Nadiah2.m4a */,
 				CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */,
 			);
@@ -1319,10 +1319,10 @@
 				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
+				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
 				7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */,
 				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,
 				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,
-				CF3DB37028DA6BCD00BF9CCD /* Emilia.m4a in Resources */,
 				CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */,
@@ -1744,7 +1744,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1774,7 +1774,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 8;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
