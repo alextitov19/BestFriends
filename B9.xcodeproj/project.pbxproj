@@ -150,6 +150,7 @@
 		CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */; };
 		CF47CF0528DBB9AD008B6F11 /* SendSongWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0428DBB9AD008B6F11 /* SendSongWorld.swift */; };
 		CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */; };
+		CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0828E2C93E008B6F11 /* BeSinger.swift */; };
 		CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */; };
 		CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */; };
 		CF4A08DA2877E4A000ADA9DD /* PhotoPopPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */; };
@@ -384,6 +385,7 @@
 		CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CF47CF0428DBB9AD008B6F11 /* SendSongWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongWorld.swift; sourceTree = "<group>"; };
 		CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia2.m4a; sourceTree = "<group>"; };
+		CF47CF0828E2C93E008B6F11 /* BeSinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeSinger.swift; sourceTree = "<group>"; };
 		CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend2.swift; sourceTree = "<group>"; };
 		CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload.swift; sourceTree = "<group>"; };
 		CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopPreload.swift; sourceTree = "<group>"; };
@@ -823,6 +825,7 @@
 				CF3DB36A28D8DAC000BF9CCD /* DreamSteps.swift */,
 				CF3DB36C28D8E08C00BF9CCD /* OurStrategy.swift */,
 				CF3DB38228DAD2D200BF9CCD /* NewPoems.swift */,
+				CF47CF0828E2C93E008B6F11 /* BeSinger.swift */,
 			);
 			path = DREAMS;
 			sourceTree = "<group>";
@@ -911,6 +914,20 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		CF47CF0A28E2CAC7008B6F11 /* WORLD */ = {
+			isa = PBXGroup;
+			children = (
+				CF650426289F11980092EEB9 /* WorldPreload.swift */,
+				CF37534728B45616003817E3 /* SaySomethingNice1.swift */,
+				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
+				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
+				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
+				CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */,
+				CF47CF0428DBB9AD008B6F11 /* SendSongWorld.swift */,
+			);
+			path = WORLD;
+			sourceTree = "<group>";
+		};
 		CF4A08D42877E23C00ADA9DD /* Nostalgia */ = {
 			isa = PBXGroup;
 			children = (
@@ -967,14 +984,8 @@
 		CF650423289F11490092EEB9 /* BestFriendsWorld */ = {
 			isa = PBXGroup;
 			children = (
+				CF47CF0A28E2CAC7008B6F11 /* WORLD */,
 				CF37534928B5D7E8003817E3 /* My ROOM */,
-				CF650426289F11980092EEB9 /* WorldPreload.swift */,
-				CF37534728B45616003817E3 /* SaySomethingNice1.swift */,
-				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
-				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
-				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
-				CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */,
-				CF47CF0428DBB9AD008B6F11 /* SendSongWorld.swift */,
 			);
 			path = BestFriendsWorld;
 			sourceTree = "<group>";
@@ -1421,6 +1432,7 @@
 				CFD0ABD8285C492F0032CA3D /* BuiltByTeens2.swift in Sources */,
 				CF4A08E228793CC900ADA9DD /* HurtFeelings4.swift in Sources */,
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
+				CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */,
 				CFD0ABD1285C00FF0032CA3D /* ReportIssues.swift in Sources */,
 				7AD8DEFD27F66C9800D9F0E1 /* ChatModels.swift in Sources */,
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
