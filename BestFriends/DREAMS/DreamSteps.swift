@@ -35,14 +35,15 @@ struct DreamSteps: View {
                         Text("The 'TWO' most important STEPS")
                             .font(.system(size: 25))
                             .italic()
-                            .foregroundColor(ColorManager.purple3)
-                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager.purple1)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
+                      
                         Text("in realizing your Dreams")
                             .font(.system(size: 25))
                             .italic()
-                            .foregroundColor(ColorManager.purple3)
-                            .fontWeight(.ultraLight)
+                            .foregroundColor(ColorManager.purple1)
+                            .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                         
                         Spacer()
@@ -51,19 +52,19 @@ struct DreamSteps: View {
                         Text("#1 ... START")
                             .font(.system(size: 40))
 //                            .italic()
-                            .foregroundColor(ColorManager.orange3)
-                            .fontWeight(.ultraLight)
+                            .foregroundColor(.green)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
                         Text("Don't wait until life")
                             .font(.system(size: 20))
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple3)
                         
                         Text("isn't hard to begin living")
                             .font(.system(size: 20))
-                            .fontWeight(.thin)
+                            .fontWeight(.light)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple3)
                         
@@ -75,7 +76,7 @@ struct DreamSteps: View {
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
         //                    .foregroundColor(.white)
-                           .foregroundColor(ColorManager.purple3)
+                            .foregroundColor(.green)
             
                         
                         
@@ -86,9 +87,8 @@ struct DreamSteps: View {
                     
                         Text("#2 ... DON'T QUIT")
                             .font(.system(size: 40))
-//                            .italic()
-                            .foregroundColor(ColorManager.orange3)
-                            .fontWeight(.ultraLight)
+                            .foregroundColor(.green)
+                            .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                      
                         
@@ -96,28 +96,28 @@ struct DreamSteps: View {
                     Text("The poems and stories here")
                         .font(.system(size: 20))
                        
-                        .foregroundColor(ColorManager.purple3)
-//                            .foregroundColor(.red)
-                        .fontWeight(.ultraLight)
+                        .foregroundColor(ColorManager.purple2)
+
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     
                     
                     Text("will help you with both")
                         .font(.system(size: 20))
                   
-                        .foregroundColor(ColorManager.purple3)
+                        .foregroundColor(ColorManager.purple2)
 //                            .foregroundColor(.red)
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.light)
                         .multilineTextAlignment(.center)
                     Spacer()
-                        .frame(height:20)
+                        .frame(height:50)
 
-                    Text("(new one's added \nevery couple weeks)")
-                        .font(.system(size: 17))
-                        .italic()
-                        .foregroundColor(ColorManager.grey2)
+                    Text("(new stories added \nevery couple weeks)")
+                        .font(.system(size: 25))
+                        
+                        .foregroundColor(.green)
 //                            .foregroundColor(.red)
-                        .fontWeight(.ultraLight)
+                        .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                  
               
