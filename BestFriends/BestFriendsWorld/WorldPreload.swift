@@ -156,7 +156,7 @@ struct WorldPreload: View {
                             .frame(height: 20)
                         
                         NavigationLink(destination: SendSongPush(user: user, friends: friends), label: {
-                            Text("Send a Song")
+                            Text("Send NEW Music")
                                 .fontWeight(.thin)
                                 .frame(width: 270, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

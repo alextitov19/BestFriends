@@ -47,7 +47,7 @@ struct ChatView: View {
                 // MARK: Header
                 
                 Spacer()
-                    .frame(height: 10)
+                    .frame(height: 15)
                 
         
                 HStack {

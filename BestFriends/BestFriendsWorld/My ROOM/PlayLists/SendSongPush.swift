@@ -26,29 +26,68 @@ struct SendSongPush: View {
         
         ZStack {
             
-            ColorManager.purple3
-                .ignoresSafeArea()
+//            ColorManager.purple3
+//                .ignoresSafeArea()
            
-            
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+         
             VStack{
          
                 VStack {
                       
                 
-                    
-                    
-                    Text("Who are you")
-                        .font(.system(size: 35, weight: .ultraLight))
+                    Text("Did you just find a new ")
+                        .font(.system(size: 30, weight: .light))
                         .foregroundColor(Color.white)
-                    Text("sending song to?")
-                        .font(.system(size: 35, weight: .ultraLight))
+//                        .foregroundColor(ColorManager.purple3)
+                    
+                    Text("Song or Artist")
+                        .font(.system(size: 40, weight: .light))
+                        .foregroundColor(Color.white)
+//                        .foregroundColor(ColorManager.purple3)
+                    
+                    Text("on YouTube")
+                        .font(.system(size: 20, weight: .ultraLight))
+                        .foregroundColor(Color.white)
+//                        .foregroundColor(ColorManager.purple3)
+                    
+                    Text("you want to share?")
+                        .font(.system(size: 20, weight: .ultraLight))
+                        .foregroundColor(Color.white)
+//                        .foregroundColor(ColorManager.purple3)
+                    
+                    Spacer()
+                        .frame(height: 20)
+                   
+                    VStack {
+                        
+             
+                        
+               
+                        Text("Jump over to Chat and")
+                            .font(.system(size: 35, weight: .ultraLight))
+                            .foregroundColor(Color.white)
+                        Text("send name of song")
+                            .font(.system(size: 35, weight: .ultraLight))
+                            .foregroundColor(Color.white)
+                        
+                    }
+                    
+                    Spacer()
+                        .frame(height: 50)
+                    
+                    Text("Alert Friend via push notification")
+                        .font(.system(size: 20, weight: .ultraLight))
+                        .italic()
                         .foregroundColor(Color.white)
                     
                     
                     VStack {
                         
-                        Spacer()
-                            .frame(height: 20)
+                    
                         
                         
                         HStack {
@@ -164,21 +203,19 @@ struct SendSongPush: View {
                             Spacer()
                                 .frame(height: 30)
                             
-                            Text("NOW")
-                                .font(.system(size: 35, weight: .ultraLight))
+                            Text("In next version of BestFriends")
+                                .font(.system(size: 15, weight: .ultraLight))
                                 .foregroundColor(Color.white)
-                            
-                   
-                            Text("Jump over to Chat and")
-                                .font(.system(size: 35, weight: .ultraLight))
+
+                            Text("you'll be able to display the YouTube")
+                                .font(.system(size: 15, weight: .ultraLight))
                                 .foregroundColor(Color.white)
-                            Text("send name of song")
-                                .font(.system(size: 35, weight: .ultraLight))
+                            Text("video right in Chat")
+                                .font(.system(size: 15, weight: .ultraLight))
                                 .foregroundColor(Color.white)
-                            
                         }
                         
-
+                        VStack {
                         Button(action: {
                             sessionManager.showLogin()
                         },
@@ -194,8 +231,15 @@ struct SendSongPush: View {
                             })
 
                         }
-                    
-                    
+                    VStack {
+                        
+                        Image("in bushes")
+                            .frame(width: 20, height: 10)
+                    }
+                   
+//                        .resizable()
+//                        .ignoresSafeArea()
+//                        .scaledToFill()
                     
                 
                     Spacer()
@@ -209,13 +253,13 @@ struct SendSongPush: View {
         
     }
     
-    
+    }
     func shareButtonTapped() {
         if selectedFriends.count == 0 { return }
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent a song to match your Aura", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) just found NEW song wanted you to hear", APNToken: f.APNToken)
                 }
             }
         }

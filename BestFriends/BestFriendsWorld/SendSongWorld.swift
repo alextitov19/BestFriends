@@ -35,15 +35,29 @@ struct SendSongWorld: View {
          
                 VStack {
                       
+                
+                    
+                   
+                    
+              
+                    Text("Did you just find a new ")
+                        .font(.system(size: 35, weight: .ultraLight))
+                        .foregroundColor(ColorManager.purple3)
+                    
+                    Text("song on YouTube you want to share?")
+                        .font(.system(size: 35, weight: .ultraLight))
+                        .foregroundColor(ColorManager.purple3)
+                    
                     Spacer()
                         .frame(height: 20)
                     
                     
                     Text("Who are you")
-                        .font(.system(size: 35, weight: .ultraLight))
+                        .font(.system(size: 20, weight: .ultraLight))
                         .foregroundColor(Color.white)
-                    Text("sending song to?")
-                        .font(.system(size: 35, weight: .ultraLight))
+                    
+                    Text("sending NEW music to?")
+                        .font(.system(size: 20, weight: .ultraLight))
                         .foregroundColor(Color.white)
                     
                     
@@ -205,7 +219,7 @@ struct SendSongWorld: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent a song to match your Aura", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends World", body: "\(user.firstName) found new music they want you to here", APNToken: f.APNToken)
                 }
             }
         }
