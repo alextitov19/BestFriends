@@ -33,13 +33,13 @@ struct IndividualFriendMessages: View {
                 Text("Special messages from")
                     .font(.system(size: 17))
                     .fontWeight(.light)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                 
                 Text(friend.firstName + " " + friend.lastName)
                     .font(.system(size: 15))
                     .fontWeight(.light)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                 
                 ScrollView(.vertical) {
                     ForEach(smileNotes.indices, id: \.self) { i in
