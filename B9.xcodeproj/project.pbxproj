@@ -148,11 +148,11 @@
 		CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */; };
 		CF3DB38328DAD2D200BF9CCD /* NewPoems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DB38228DAD2D200BF9CCD /* NewPoems.swift */; };
 		CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */; };
-		CF47CF0528DBB9AD008B6F11 /* SendSongWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0428DBB9AD008B6F11 /* SendSongWorld.swift */; };
 		CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */; };
 		CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0828E2C93E008B6F11 /* BeSinger.swift */; };
 		CF47CF0C28E58B61008B6F11 /* VirtualHugActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0B28E58B61008B6F11 /* VirtualHugActive.swift */; };
 		CF47CF0E28E58E2B008B6F11 /* VirtualHugActive2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0D28E58E2B008B6F11 /* VirtualHugActive2.swift */; };
+		CF47CF1428E81BBE008B6F11 /* Wind2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */; };
 		CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */; };
 		CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */; };
 		CF4A08DA2877E4A000ADA9DD /* PhotoPopPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */; };
@@ -385,11 +385,11 @@
 		CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Meena1.m4a; sourceTree = "<group>"; };
 		CF3DB38228DAD2D200BF9CCD /* NewPoems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPoems.swift; sourceTree = "<group>"; };
 		CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
-		CF47CF0428DBB9AD008B6F11 /* SendSongWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongWorld.swift; sourceTree = "<group>"; };
 		CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia2.m4a; sourceTree = "<group>"; };
 		CF47CF0828E2C93E008B6F11 /* BeSinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeSinger.swift; sourceTree = "<group>"; };
 		CF47CF0B28E58B61008B6F11 /* VirtualHugActive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHugActive.swift; sourceTree = "<group>"; };
 		CF47CF0D28E58E2B008B6F11 /* VirtualHugActive2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHugActive2.swift; sourceTree = "<group>"; };
+		CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wind2.mp4; sourceTree = "<group>"; };
 		CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend2.swift; sourceTree = "<group>"; };
 		CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload.swift; sourceTree = "<group>"; };
 		CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopPreload.swift; sourceTree = "<group>"; };
@@ -926,7 +926,7 @@
 				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
 				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
 				CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */,
-				CF47CF0428DBB9AD008B6F11 /* SendSongWorld.swift */,
+				CF37535028BB3398003817E3 /* SendSongPush.swift */,
 				CFDB150A2858F4D200155CEE /* Virtual HUG */,
 			);
 			path = WORLD;
@@ -962,7 +962,6 @@
 			isa = PBXGroup;
 			children = (
 				CF6503FF28864AF00092EEB9 /* background_1.mp4 */,
-				CF3DB38A28DADD3E00BF9CCD /* New Group */,
 				CF5263D6266477C600243DD7 /* background_4.mp4 */,
 				7A78232926B2419600CA76FC /* background_5.mp4 */,
 				CF37534E28B5E925003817E3 /* Dreams1.mp4 */,
@@ -978,6 +977,8 @@
 				CFDA4BCA28CF698800118D90 /* Beach.mp4 */,
 				CFDA4BD128D1060F00118D90 /* Launching.mp4 */,
 				CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */,
+				CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */,
+				CF3DB38A28DADD3E00BF9CCD /* New Group */,
 				CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */,
 				CF3DB37128DA6D7D00BF9CCD /* Nadiah2.m4a */,
 				CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */,
@@ -1037,7 +1038,6 @@
 			children = (
 				CF2DBCF828554E5B008616A3 /* BuildFriendPlaylist.swift */,
 				CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */,
-				CF37535028BB3398003817E3 /* SendSongPush.swift */,
 				CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */,
 			);
 			path = PlayLists;
@@ -1341,6 +1341,7 @@
 				7A78232E26B2419600CA76FC /* background_5.mp4 in Resources */,
 				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,
 				CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */,
+				CF47CF1428E81BBE008B6F11 /* Wind2.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */,
 				CFDA4BCB28CF698800118D90 /* Beach.mp4 in Resources */,
@@ -1576,7 +1577,6 @@
 				7AB5217328A1E079005A49FA /* LocationManager.swift in Sources */,
 				CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */,
 				CF47CF0E28E58E2B008B6F11 /* VirtualHugActive2.swift in Sources */,
-				CF47CF0528DBB9AD008B6F11 /* SendSongWorld.swift in Sources */,
 				CF09118A2848875C00CB0AF0 /* PhotoPopVideo.swift in Sources */,
 				7A720CC328A583E900992FD2 /* CustomizeMyPlanetView.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,

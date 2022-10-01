@@ -13,7 +13,9 @@ import AVKit
 
 
 struct DreamMap: View {
+    
     @State var audioPlayer: AVAudioPlayer!
+   
     var body: some View {
         
         ZStack {

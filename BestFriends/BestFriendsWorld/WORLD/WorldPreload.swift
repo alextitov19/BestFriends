@@ -45,7 +45,7 @@ struct WorldPreload: View {
             
             VStack {
                 
-                Text("Sunday's at 8:03pm EST")
+                Text("Sunday's at 8:00pm EST")
                     .font(.system(size: 25))
 //                    .italic()
                     .foregroundColor(ColorManager.orange2)
@@ -152,21 +152,21 @@ struct WorldPreload: View {
                         })
                     
                         
-                        VStack {
-                                    Spacer()
-                                        .frame(height: 20)
-                                    
-                                    NavigationLink(destination: VirtualHug(), label: {
-                                        Text("Send a HUG")
-                                            .fontWeight(.thin)
-                                            .frame(width: 270, height: 40)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 24))
-                                            .background(ColorManager.purple3)
-                                            .cornerRadius(15)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    })
-                        
+//                        VStack {
+//                                    Spacer()
+//                                        .frame(height: 20)
+//
+//                                    NavigationLink(destination: VirtualHug(), label: {
+//                                        Text("Send a HUG")
+//                                            .fontWeight(.thin)
+//                                            .frame(width: 270, height: 40)
+//                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                            .font(.system(size: 24))
+//                                            .background(ColorManager.purple3)
+//                                            .cornerRadius(15)
+//                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                    })
+//
             VStack {
                         Spacer()
                             .frame(height: 20)
@@ -200,4 +200,4 @@ struct WorldPreload: View {
 
 }
 }
-}
+

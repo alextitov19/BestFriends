@@ -82,7 +82,7 @@ struct SaySomethingNice1: View {
                         sessionManager.showLogin()
                     },
                         label: {
-                            Text("Type it in Chat, then notify")
+                            Text("Type it in Chat")
                                 .fontWeight(.thin)
                                 .frame(width: 310, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -94,7 +94,7 @@ struct SaySomethingNice1: View {
                     
                     
                     VStack {
-                                            Text("You Got This!")
+                                            Text("THEN ...")
                                                          .font(.system(size: 20))
                                                          .fontWeight(.thin)
                                                          .multilineTextAlignment(.center)
