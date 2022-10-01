@@ -110,7 +110,6 @@
 		CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */; };
 		CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */; };
 		CF37534428B3F297003817E3 /* WorldPhotoPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */; };
-		CF37534828B45616003817E3 /* SaySomethingNice1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534728B45616003817E3 /* SaySomethingNice1.swift */; };
 		CF37534B28B5D84B003817E3 /* HorizonsPreload1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */; };
 		CF37534F28B5E925003817E3 /* Dreams1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF37534E28B5E925003817E3 /* Dreams1.mp4 */; };
 		CF37535128BB3398003817E3 /* SendSongPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535028BB3398003817E3 /* SendSongPush.swift */; };
@@ -348,7 +347,6 @@
 		CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3_BreathInviteView.swift; sourceTree = "<group>"; };
 		CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBackgroundView.swift; sourceTree = "<group>"; };
 		CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPhotoPreload2.swift; sourceTree = "<group>"; };
-		CF37534728B45616003817E3 /* SaySomethingNice1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingNice1.swift; sourceTree = "<group>"; };
 		CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPreload1.swift; sourceTree = "<group>"; };
 		CF37534E28B5E925003817E3 /* Dreams1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dreams1.mp4; sourceTree = "<group>"; };
 		CF37535028BB3398003817E3 /* SendSongPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongPush.swift; sourceTree = "<group>"; };
@@ -923,7 +921,6 @@
 			isa = PBXGroup;
 			children = (
 				CF650426289F11980092EEB9 /* WorldPreload.swift */,
-				CF37534728B45616003817E3 /* SaySomethingNice1.swift */,
 				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
 				CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */,
 				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
@@ -1491,7 +1488,6 @@
 				CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */,
 				CF37535128BB3398003817E3 /* SendSongPush.swift in Sources */,
 				CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */,
-				CF37534828B45616003817E3 /* SaySomethingNice1.swift in Sources */,
 				62319AAD284A788000CA0359 /* FG_Video.swift in Sources */,
 				7A0856A827F3DA4E00E8282B /* Defaults.swift in Sources */,
 				CF3B65C4280104290003A714 /* SettingsView.swift in Sources */,

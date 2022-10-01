@@ -103,7 +103,7 @@ struct DreamVaultView: View {
             
                                 VStack {
             
-                          Text("our \ndream's")
+                          Text("our \ndream's \nfloating")
                                         .font(.system(size: 12))
                                         .foregroundColor(ColorManager.grey2)
                                         .fontWeight(.medium)
