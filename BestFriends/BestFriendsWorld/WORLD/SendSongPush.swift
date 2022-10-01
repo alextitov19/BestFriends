@@ -238,15 +238,20 @@ struct SendSongPush: View {
                                 })
 
                         }
+                        
                     VStack {
-//
-//                        Image("in bushes")
-//                            .frame(width: 20, height: 10)
+                        
+                        Text("Wind by Shayla Bush, Producer Bryan Tyson")
+                            .font(.system(size: 12, weight: .light))
+                            .foregroundColor(Color.blue)
+
+                        Text("HRW Music Group")
+                            .font(.system(size: 12, weight: .light))
+                            .foregroundColor(Color.blue)
+                        
                     }
                    
-//                        .resizable()
-//                        .ignoresSafeArea()
-//                        .scaledToFill()
+
                     
                 
                     Spacer()

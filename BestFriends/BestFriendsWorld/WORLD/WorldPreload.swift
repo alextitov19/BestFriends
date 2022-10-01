@@ -109,7 +109,7 @@ struct WorldPreload: View {
                     
 
                     
-                    NavigationLink(destination: SaySomethingNice1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                    NavigationLink(destination: SaySomethingNice3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                         Text("Say Something Nice!")
                             .fontWeight(.thin)
                             .frame(width: 270, height: 40)

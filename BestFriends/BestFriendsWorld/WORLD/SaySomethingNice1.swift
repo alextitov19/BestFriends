@@ -43,27 +43,59 @@ struct SaySomethingNice1: View {
                     .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height: 80)
-                VStack {
-                Text("Be part of something")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-          
+               
+                ZStack {
                 
-                Text("P O S I T I V E")
-                    .font(.system(size: 50))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                Text("on social media")
-                    .font(.system(size: 30))
-                    .italic()
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
+                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .foregroundColor(ColorManager .pmbc_pink)
+                                        .frame(width: 140, height: 100)
+                    //                    .blur(radius: 2)
+                                        .opacity(0.90)
+                    
+                                        .shadow(color: .white, radius: 65, x: 30, y: 50)
+                    
+                    
+                                        VStack {
+                    
+                                  Text("be part of something")
+                                                .font(.system(size: 12))
+                                                .foregroundColor(ColorManager.grey2)
+                                                .fontWeight(.medium)
+                                                .multilineTextAlignment(.center)
+                                                .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                            
+                                                          Text("positive")
+                                                                        .font(.system(size: 12))
+                                                                        .foregroundColor(ColorManager.grey2)
+                                                                        .fontWeight(.medium)
+                                                                        .multilineTextAlignment(.center)
+                                                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                      
+                    
+                    
+                    
+//
+//                    Text("Be part of something")
+//                    .font(.system(size: 20))
+//                    .italic()
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//
+//
+//                Text("P O S I T I V E")
+//                    .font(.system(size: 50))
+//                    .foregroundColor(ColorManager.purple2)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("on social media")
+//                    .font(.system(size: 30))
+//                    .italic()
+//                    .foregroundColor(.white)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
                 
                 
                
@@ -160,7 +192,7 @@ struct SaySomethingNice1: View {
         }
         
     }
-    
+}
 
 
 
