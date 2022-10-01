@@ -45,7 +45,7 @@ struct WorldPreload: View {
             
             VStack {
                 
-                Text("Sunday's at 8:00pm EST")
+                Text("Every Sunday at 8:00pm")
                     .font(.system(size: 25))
 //                    .italic()
                     .foregroundColor(ColorManager.orange2)
@@ -54,13 +54,13 @@ struct WorldPreload: View {
                 
              
                 
-                Text("(watch for push notification)")
+                Text("(for 10 minutes)")
                     .font(.system(size: 17))
                     .italic()
                     .foregroundColor(ColorManager.red)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
-                
+
 //                Text("(for a few minutes)")
 //                    .font(.system(size: 20))
 //                    .italic()

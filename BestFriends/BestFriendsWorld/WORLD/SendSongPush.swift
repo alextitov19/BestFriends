@@ -28,7 +28,7 @@ struct SendSongPush: View {
         ZStack {
             
 
-            Image("purpleBackground")
+            Image("starPurple")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -45,13 +45,13 @@ struct SendSongPush: View {
                       
                 
                     Text("Did you just find a new ")
-                        .font(.system(size: 30, weight: .light))
-                        .foregroundColor(Color.white)
+                        .font(.system(size: 30, weight: .thin))
+                        .foregroundColor(Color.black)
 //                        .foregroundColor(ColorManager.purple3)
                     
                     Text("Song or Artist")
                         .font(.system(size: 40, weight: .light))
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.black)
 //                        .foregroundColor(ColorManager.purple3)
                     
 //                    Text("on YouTube")
@@ -74,10 +74,10 @@ struct SendSongPush: View {
                
                         Text("Jump over to Chat and")
                             .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.black)
                         Text("send name of song")
                             .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(Color.white)
+                            .foregroundColor(Color.black)
                         
                     }
                     
@@ -230,11 +230,12 @@ struct SendSongPush: View {
                                     Text("i wanna be a singer")
                                         .fontWeight(.thin)
                                         .frame(width: 300, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .foregroundColor(Color.white)
                                         .font(.system(size: 30))
-                                        .background(ColorManager.pmbc_green)
+                                        .background(Color.white)
+//                                        .background(ColorManager.purple2)
                                         .cornerRadius(15)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        .opacity(0.30)
                                 })
 
                         }
