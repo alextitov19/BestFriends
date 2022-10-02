@@ -14,6 +14,8 @@ struct InviteView: View {
     @State private var email = ""
     @State private var invites: [Invite] = []
     @State private var inviteClicked = false
+//    @State private var showingAlert = false
+//    @State private var shareColor = ColorManager.purple5
     
     let user: User
     
@@ -30,41 +32,47 @@ struct InviteView: View {
                     .frame(height: 40)
                 
                 Text("Send Friend Requests")
-                    .foregroundColor(.gray)
+                    .foregroundColor(.green)
                     .font(.system(size: 25, weight: .bold))
                 
                 Spacer()
                     .frame(height: 10)
                 
                 
-                Text("Add up to 5 friends")
-                    .foregroundColor(.purple)
+                Text("-> Add up to 5 friends <-")
+                    .foregroundColor(.green)
                     .font(.system(size: 27, weight: .light))
-          
-//                
-//                NavigationLink(
-//                    destination: EmptyView(),
-//                    label: {
-//                        Text("Up to 10 with PURPLE")
-//                            .fontWeight(.thin)
-//                            .frame(width: 250, height: 30)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 25))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                  
-//                    
-//                    })
-//                
-                Spacer()
-                    .frame(height: 15)
                 
-                Text("1) Ask friend to download app \n2) Enter their email - tap [Invite] \n3) Only one of you send invite")
+                Text("(Friends show up as planets on homepage)")
+                    .italic()
+                    .foregroundColor(.white)
+                    .font(.system(size: 15, weight: .thin))
+                
+                Spacer()
+                    .frame(height: 10)
+              
+                Text("1) Ask friend to download BestFriendsNetwork \n2) Only one of you send invite \n3) Invite only ONCE or multi planets appear")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()
                     .font(.system(size: 17))
+                
+                Spacer()
+                    .frame(height: 10)
+                
+                Text("Email is CASE SENSITIVE - \nmust enter email exactly how \nfirend typed email in Registration.")
+                    .fontWeight(.thin)
+                    .foregroundColor(.red)
+                    .italic()
+                    .font(.system(size: 22))
+                
+
+                
+                
+                
+                
+                
+                
                 
                 if user.friends?.count ?? 0 < 5 {
                     VStack {
@@ -78,19 +86,29 @@ struct InviteView: View {
                                     .foregroundColor(.white)
                                     .background(inviteClicked ? ColorManager.purple3 : Color.green)
                                     .cornerRadius(15)
+//                                    .alert("Push Notifications sent successfully", isPresented: $showingAlert) {
+//                                        Button("OK", role: .cancel) { }
+//
                             }
+                            
                             .frame(width: 120)
                         }
                         .padding()
                         
                         
-                        Spacer()
-                            .frame(height: 30)
+                       
                         
                         VStack {
+//                            Text("*Email is CASE Sensitive")
+//                                .fontWeight(.thin)
+//                                .foregroundColor(.red)
+//                                .italic()
+//                                .font(.system(size: 17))
+                            Spacer()
+                                .frame(height: 40)
                             
-                            Text("Accept Friend Requests")
-                                .foregroundColor(.gray)
+                            Text("Accepting Friend Requests")
+                                .foregroundColor(.green)
                                 .font(.system(size: 25, weight: .bold))
                             
                             
@@ -148,6 +166,10 @@ struct InviteView: View {
         }
         
     }
+    
+        
+//        shareColor = ColorManager.darkGrey
+//        showingAlert = true
     
     private func initLoadData() {
         getInvites()

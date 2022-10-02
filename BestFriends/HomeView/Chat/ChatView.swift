@@ -33,32 +33,24 @@ struct ChatView: View {
     @State private var isLockTapped = false
     @State var pickerSourceType: UIImagePickerController.SourceType = .photoLibrary
     var body: some View {
-//        NavigationView{
-      
-        
         ZStack {
-       
-            AdPlayerView(name: "clouds2")
-                .ignoresSafeArea()
-            
+            if user.chatBackground == "0" || user.chatBackground == "" {
+                Image("background_0")
+                    .resizable()
+                    .ignoresSafeArea()
+            } else {
+                AdPlayerView(name: "background_" + user.chatBackground)
+                    .ignoresSafeArea()
+            }
             
             VStack {
                 // MARK: Header
+                
+                Spacer()
+                    .frame(height: 15)
+                
+        
                 HStack {
-                    
-//                    Text("<")
-////                        .resizable()
-//                        .frame(width: 35, height: 35)
-//                        .font(.system(size: 30))
-////                        .fontWeight(.light)
-//                       .foregroundColor(.blue)
-//
-//                        .scaledToFill()
-//                        .onTapGesture(perform: {
-//                            sessionManager.showHome()
-//                        })
-//
-                    
                     Image(systemName: "info.circle")
                         .resizable()
                         .frame(width: 27, height: 27)
@@ -68,7 +60,7 @@ struct ChatView: View {
                             sessionManager.infoView(user: user, group: group)
                         })
                     
-
+                    
                     Image("home-alt2")
                         .resizable()
                         .frame(width: 30, height: 30)
@@ -90,7 +82,7 @@ struct ChatView: View {
                         .onTapGesture(perform: {
                             var hiddenGroups: [String] = user.hiddenGroups ?? []
                             hiddenGroups.append(group.id)
-                            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, smileNotes: user.smileNotes)
+                            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes)
                             RestApi.instance.updateUser(user: updatedUser).then({ response in
                                 print("Got update response: ", response)
                                 isLockTapped.toggle()
@@ -110,13 +102,29 @@ struct ChatView: View {
                         }
                     //                    }//NavLink
                     
-                    Text("Delete Me")
+                    Text("Remove ME \nfrom room")
                         .foregroundColor(ColorManager.grey4)
-//                        .foregroundColor(.gray)
-                        .font(.system(size: 18, weight: .thin))
+                    //                        .foregroundColor(.gray)
+                        .font(.system(size: 10, weight: .thin))
                         .onTapGesture(perform: leaveChatGroup)
                 }
-               
+                
+                Text("Safety Feature ...")
+                             .font(.system(size: 19))
+                            
+                             .fontWeight(.regular)
+                             .multilineTextAlignment(.center)
+                             .foregroundColor(Color.green)
+                
+                Text("Room closes after 20 sec inactive - Exit & Re-enter!")
+                             .font(.system(size: 14))
+                             .italic()
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+                             .foregroundColor(Color.red)
+
+                
+                
                 
                 
                 // MARK: Main scroll view
@@ -128,7 +136,7 @@ struct ChatView: View {
                             ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
                                 .onLongPressGesture(minimumDuration: 1, perform: { showingMessageOptions = true })
                                 .confirmationDialog("What would you like to do with this message?", isPresented: $showingMessageOptions, titleVisibility: .visible) {
-                                    Button("Save to Smile Notes") {
+                                    Button("Save Nice Messages to Smile Notes") {
                                         saveToSmileNotes(message: message)
                                     }
                                     Link("Report Abuse", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)
@@ -138,8 +146,17 @@ struct ChatView: View {
                     }
                 }
                 
-                
+                VStack {
                 // MARK: The bottom portion containing text field and action buttons
+                    
+                    Text("Try a 'motion' Chat background -> Settings")
+                                 .font(.system(size: 20))
+                                 .italic()
+                                 .fontWeight(.regular)
+                                 .multilineTextAlignment(.center)
+                                 .foregroundColor(.white)
+                
+                    
                 HStack {
                     Image("camera")
                         .resizable()
@@ -184,11 +201,13 @@ struct ChatView: View {
                             .padding(.horizontal, 5)
                         )
                     
-                    
+                
+                }
+                
                 }
             }
         }//ZStack
-//        }.navigationViewStyle(StackNavigationViewStyle())
+        //        }.navigationViewStyle(StackNavigationViewStyle())
     }//body
     
     private func saveToSmileNotes(message: Message) {
@@ -270,7 +289,7 @@ struct ChatView: View {
         var chatGroups = user.groups!
         if let index = chatGroups.firstIndex(of: group.id) {
             chatGroups.remove(at: index)
-            let updateduser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: chatGroups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, smileNotes: user.smileNotes)
+            let updateduser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: chatGroups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes, photoPop: user.photoPop)
             RestApi.instance.updateUser(user: updateduser).then({ result in
                 print("Update user result: ", result)
                 sessionManager.showHome()
@@ -278,3 +297,4 @@ struct ChatView: View {
         }
     }
 }
+

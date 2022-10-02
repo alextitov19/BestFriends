@@ -36,29 +36,32 @@ struct NostalgiaPreload2: View {
                 .scaledToFill()
                 .ignoresSafeArea()
             
-            AdPlayerView(name: "nostalgia")
+            AdPlayerView(name: "myRoom1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
 
             
             VStack {
   
-                Text("OK, you're not a teen anymore,")
+                Text("OK, you're a little older now,")
                     .font(.system(size: 22))
                     .italic()
                     .fontWeight(.thin)
-                    .foregroundColor(ColorManager.grey1)
+                    .foregroundColor(ColorManager.purple7)
                 
-                Text("but Fights with dear frineds \nstill HURT!")
+                Text("but Fights with dear friends \nstill HURT!")
                     .font(.system(size: 20))
                     .italic()
                     .fontWeight(.thin)
-                    .foregroundColor(ColorManager.grey1)
+                    .foregroundColor(ColorManager.purple7)
                 
-                Text("- Send a song you both like \n- Let youself be vulnerable, send a heart-flet message in Chat \n- Send a picture that always made \nthe both of you - Smile! \n- Fix this!")
+                Spacer()
+                    .frame(height: 100)
+                
+                Text("- Send a song you both like \n- Let yourself be vulnerable, send a heart-felt message in Chat \n- Send a picture that always made \nthe both of you - Smile! \n- Fix this!")
                     .fontWeight(.thin)
                     .frame(width: 310, height: 165)
-                    .foregroundColor(ColorManager.grey2)
+                    .foregroundColor(ColorManager.grey1)
                     .font(.system(size: 20))
                     .background(ColorManager.grey4)
                     .cornerRadius(15)
@@ -69,12 +72,12 @@ struct NostalgiaPreload2: View {
                     Text("ALERT \nFriend")
                         .font(.system(size: 22))
                         .fontWeight(.regular)
-                        .foregroundColor(ColorManager.grey1)
+                        .foregroundColor(ColorManager.purple7)
                         .padding(.horizontal)
                     Text("You're sending \nsomething in Chat")
                         .font(.system(size: 20))
                         .fontWeight(.thin)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(ColorManager.purple7)
                     
                     Spacer()
                 }
@@ -88,7 +91,7 @@ struct NostalgiaPreload2: View {
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.thin)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager.purple7)
                 
                 HStack {
                     
@@ -225,7 +228,7 @@ struct NostalgiaPreload2: View {
                 
                     
                     Spacer()
-                    .frame(height: 55)
+                    .frame(height: 85)
                 }
                 
                 

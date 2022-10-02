@@ -49,12 +49,13 @@ struct Step2_FightLandingView: View {
                         .frame(height: 20)
                     
                     
-                    Text("Who's Notification")
+                    Text("Send")
                         .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(Color.purple)
-                    Text("going to?")
+                        .foregroundColor(ColorManager.purple7)
+                    
+                    Text("Push Notification to ...")
                         .font(.system(size: 35, weight: .ultraLight))
-                        .foregroundColor(Color.purple)
+                        .foregroundColor(ColorManager.purple7)
                     
                     
                     VStack {
@@ -62,11 +63,6 @@ struct Step2_FightLandingView: View {
                         Spacer()
                             .frame(height: 7)
                         
-                        Text("(Please tap only once)")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.thin)
-                            .foregroundColor(Color.black)
                         
                         HStack {
                             //                            NavigationLink(
@@ -189,7 +185,7 @@ struct Step2_FightLandingView: View {
                             Text("(Now you know they got your message)")
                                 .font(.system(size: 15, weight: .bold))
                                 .italic()
-                                .fontWeight(.ultraLight)
+                                .fontWeight(.regular)
                                 .foregroundColor(Color.black)
                             
                             NavigationLink(
@@ -200,10 +196,7 @@ struct Step2_FightLandingView: View {
                                         .foregroundColor(Color.white)
                                         .frame(width: 310, height: 40)
                                         .font(.system(size: 27))
-                                        .background(ColorManager.purple5)
-                                    
-                                    //                                .background(Color(hue: 0.555, saturation: 1.0, brightness: 0.845))
-                                    //
+                                        .background(ColorManager.pmbc_blue)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 }
@@ -216,7 +209,7 @@ struct Step2_FightLandingView: View {
                         Text("(When you're ready try to set a time to talk)")
                             .font(.system(size: 15))
                             .italic()
-                            .fontWeight(.thin)
+                            .fontWeight(.regular)
                             .foregroundColor(Color.black)
                         
                         //                            MARK: New [Next] button going go HugitOut
@@ -282,7 +275,7 @@ struct Step2_FightLandingView: View {
         for id in selectedFriends {
             for f in friends {
                 if f.id == id {
-                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is asking if you would consider using a mediator to resolve your fight", APNToken: f.APNToken)
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) is asking if you want to fix this fight.", APNToken: f.APNToken)
                 }
             }
         }

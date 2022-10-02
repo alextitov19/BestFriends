@@ -8,7 +8,7 @@
 
 import Foundation
 import SwiftUI
-
+import AVKit
 struct BreathInView: View {
     
     
@@ -28,18 +28,21 @@ struct BreathInView: View {
         
         
         ZStack {
-            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-                .ignoresSafeArea()
+              
+ 
+//
+//            Image("settingsBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
             
-            Image("Star Page")
-                .resizable()
+            ColorManager.grey4
+                  .ignoresSafeArea()
+
+           
+            AdPlayerView(name: "Beach")
                 .ignoresSafeArea()
-                .scaledToFill()
-            
-            Image("settingsBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+                .blendMode(.screen)
             
             
             VStack {
@@ -52,42 +55,24 @@ struct BreathInView: View {
    
                          .foregroundColor(Color(hue: 0.714, saturation: 0.411, brightness: 0.626))
                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 3, x: 1, y: 3)
+                   .glow(color: ColorManager.purple3, radius: 7)
+                  .opacity(0.6)
 
                     
-                 Text("you've got \nthis!")
+                 Text("Breathe-In \n& \nHold")
                          .font(.system(size: 20))
                          .foregroundColor(.white)
                          .fontWeight(.medium)
                          .multilineTextAlignment(.center)
-         
-//                    Text("Try to R e l a x")
-//                         .font(.system(size: 35, weight: .ultraLight))
-//
-//                        .offset(x: 10, y: 135)
-//                        .foregroundColor(.white)
-//                        .multilineTextAlignment(.center)
-//
-//
-                
-                
-                
-                
+
+                   
                 }
                 
                 
                 HStack {
-             Text("Breath 'IN' for 5 \n\n'HOLD' for 5")
-                        .font(.system(size: 25))
-                        .fontWeight(.light)
-                        .offset(x: 120, y: 50)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                    
-               
-                    
-                    
+       
                     Spacer()
-                        .frame(height: 375)
+                        .frame(height: 40)
                 }
                 
                 
@@ -120,7 +105,7 @@ struct BreathInView: View {
         }else {
             buttonText = "Resume"
         }
-    
+
     }
     private func timerFunction() {
         if isTimerRunning {
@@ -141,9 +126,3 @@ struct BreathInView: View {
     }
 }
 
-
-struct BreathInView_Previews : PreviewProvider {
-static var previews: some View {
-    BreathInView()
-}
-}

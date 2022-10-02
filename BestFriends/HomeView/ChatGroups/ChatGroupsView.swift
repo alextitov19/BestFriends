@@ -12,6 +12,8 @@ struct ChatGroupsView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
+//    let atmosphere: Atmosphere
+    
     
     // For swiping up/down and scrolling the BlurView
     @State var offset: CGFloat = 0
@@ -43,6 +45,8 @@ struct ChatGroupsView: View {
 //                                .fill(Color.white)
 //                                .frame(width: 40, height: 4)
 //                                .padding(.top)
+                            
+                       
                             
                             Text("^")
                                 .font(.system(size: 35))

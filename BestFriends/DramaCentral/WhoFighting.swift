@@ -33,51 +33,45 @@ struct WhoFighting: View {
             AdPlayerView(name: "storm2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-//            AdPlayerView(name: "backgroundAnimation")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-////                .offset(y: -250)
-            
-            
-//            Image("planet_4")
+
         
         ZStack {
 
             NavigationLink(destination: IntroBluemodeFriend(user: user, friends: friends), label: {
-                WhoFightingCircle (color: .purple, friendName: "TEEN Fight \nSuggestions")
+                WhoFightingCircle (color: .purple, friendName: "Fixing \nTEEN Fights")
                 })
             .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
 
            
 
               NavigationLink(destination: ParentsFighting(), label: {
-                  WhoFightingCircle (color: .gray, friendName: "Parents \nFighting")
+                  WhoFightingCircle (color: .gray, friendName: "Parents \nFighting?")
             })
-            .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
+            .offset(x: showItems ? -75 : 0, y: showItems ? -150: 0)
             
 
-            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
-            })
-            .offset(x: showItems ? -90 : 0, y: showItems ? -150: 0)
+//            NavigationLink(destination: FG_VideoCall(user: user, friends: friends, groups: groups), label: { WhoFightingCircle (color: .blue, friendName: "FriendGroup \nDrama")
+//            })
+//            .offset(x: showItems ? -90 : 0, y: showItems ? -150: 0)
             
             NavigationLink(destination: NostalgiaPreload2(user: user, friends: friends, groups: groups), label: {
-                WhoFightingCircle (color: .orange, friendName: "Adult \nNostalgia")
+                WhoFightingCircle (color: .orange, friendName: "Nostalgia")
             })
             .offset(x: showItems ? 95 : 0, y: showItems ? -30: 0)
             
             
-            NavigationLink(destination: Sweetheart1(user: user, friends: friends, groups: groups), label: {
-                WhoFightingCircle (color: .pink, friendName: "Messed \nUp?")
-            })
-            .offset(x: showItems ? -110 : 0, y: showItems ? 160: 0)
-            .opacity(0.7)
+//            NavigationLink(destination: Sweetheart1(user: user, friends: friends, groups: groups), label: {
+//                WhoFightingCircle (color: .pink, friendName: "Messed \nUp?")
+//            })
+//            .offset(x: showItems ? -110 : 0, y: showItems ? 160: 0)
+//            .opacity(0.7)
+//
             
-            
-            NavigationLink(destination: FD_Step1(), label: {
-                WhoFightingCircle (color: .green, friendName: "BestFamily")
-            })
-            .offset(x: showItems ? -20 : 0, y: showItems ? 200: 0)
-            .opacity(0.7)
+//            NavigationLink(destination: FD_Step1(), label: {
+//                WhoFightingCircle (color: .green, friendName: "Family \nDrama \n(this Fall)")
+//            })
+//            .offset(x: showItems ? -20 : 0, y: showItems ? 200: 0)
+//            .opacity(0.7)
             
             
         Image(systemName: "triangle.fill")
@@ -114,7 +108,7 @@ struct WhoFighting: View {
                print("tap function is working")
            }
             
-           .animation(Animation.easeInOut(duration: 1.0), value: showItems)
+           .animation(Animation.easeInOut(duration: 1.5), value: showItems)
 
             }
         }
@@ -144,19 +138,3 @@ struct WhoFightingCircle: View {
         }
     }
 }
-
-
-//struct WhoFighting_Previews : PreviewProvider {
-//    static var previews: some View {
-//        WhoFighting()
-//    }
-//
-//}
-
-//
-//    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-
-
-
-//    .glow(color: glowColor(), radius: 20)
-//        private func glowColor() -> Color {

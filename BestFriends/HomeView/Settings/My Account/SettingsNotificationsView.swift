@@ -12,8 +12,12 @@ import SwiftUI
 
 struct SettingsNotificationsView: View {
     
+    @EnvironmentObject var sessionManager: SessionManager
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+//    let user: User
+//    let atmosphere: Atmosphere
+//
     @State private var chatNotifications = true
     @State private var broadcastNotifications = true
     
@@ -62,8 +66,23 @@ struct SettingsNotificationsView: View {
                     Spacer()
                 }
                 
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                    label: {
+                        Text("Home / Chat")
+                            .fontWeight(.thin)
+                            .frame(width: 200, height: 40)
+                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                            .font(.system(size: 30))
+                            .background(ColorManager.purple3)
+                            .cornerRadius(15)
+                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                    })
+                
+                
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 50)
                 HStack {
                 }
                
@@ -73,43 +92,44 @@ struct SettingsNotificationsView: View {
                     .font(.system(size: 30))
                     
                     .offset(x: -3)
-                    .foregroundColor(.purple)
+                    .foregroundColor(.green)
+                
                 Spacer()
-                    .frame(height: 50)
+                    .frame(height: 20)
                 
                 Text("BestFriends is designed to help you track down your friends when you NEED them. If you turn off Notifications your friends may NOT respond in a timely manner.")
 
                     .font(.system(size: 20))
                     .italic()
                     .offset(x: -3)
-                    .foregroundColor(.gray)
-                    
+                    .foregroundColor(.red)
+                    .padding()
+//                    .frame(width: 5)
           
                 
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 30)
                 
-//                    Divider()
-//
-//                      Toggle("     Broadcast Notifications", isOn: $broadcastNotifications)
-//                          .foregroundColor(.white)
-//                          .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
-//
+                    Divider()
+
+                      Toggle("     Broadcast Notifications", isOn: $broadcastNotifications)
+                          .foregroundColor(.white)
+                          .accentColor(Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)))
+
 //                      Divider()
                       
                 
                 
             }
             .padding()
+            
+     
         }
-//        .navigationBarHidden(true)
+       .navigationBarHidden(true)
     }
 
 
 
-struct SettingsNotificationsView_Previews : PreviewProvider {
-    static var previews: some View {
-        SettingsNotificationsView()
-    }
 }
-}
+
+

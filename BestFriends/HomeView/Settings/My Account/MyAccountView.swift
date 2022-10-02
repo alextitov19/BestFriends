@@ -51,7 +51,7 @@ struct MyAccountView: View {
                     Spacer()
                 }
                 Spacer()
-                    .frame(height: 70)
+                    .frame(height: 20)
                 
                 Divider()
                 NavigationLink(
@@ -165,7 +165,7 @@ struct MyAccountView: View {
                             .navigationBarHidden(true)
                         
                         Spacer ()
-                            .frame(height: 300)
+                            .frame(height: 400)
                         
                     }
                 }

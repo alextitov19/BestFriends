@@ -99,17 +99,17 @@ struct PurpleNoAdInfoView: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.grey1)
                     
-                    Text("Customize Your Planet")
+                    Text("Customize Chat Background")
                         .font(.system(size: 17))
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.grey1)
-                    
-                    Text("Customize Your Planet")
-                        .font(.system(size: 17))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.grey1)
+//                    
+//                    Text("")
+//                        .font(.system(size: 17))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager.grey1)
 
                 }
          

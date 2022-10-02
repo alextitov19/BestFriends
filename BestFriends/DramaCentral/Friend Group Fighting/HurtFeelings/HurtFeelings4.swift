@@ -47,7 +47,7 @@ struct HurtFeelings4: View {
                     .frame(height: 15)
                 
                 VStack {
-                    Text("Hey, I would like to talk to you \nabout something you said.")
+                    Text("Hey, I would like to talk to you \nabout something you said (or did).")
                         .foregroundColor(.white)
                         .font(.system(size: 17))
                         .padding(.top)
@@ -56,7 +56,7 @@ struct HurtFeelings4: View {
                     CustomDivider(color: .white)
                         .frame(width: 240)
                     
-                    Text("Hi, I wanted to let you know that \nwhat you said hurt my feelings")
+                    Text("Hi, I wanted to let you know that \nwhat you said (or did) hurt my feelings")
                         .foregroundColor(.white)
                         .font(.system(size: 17))
                         .padding(.bottom)
@@ -207,6 +207,15 @@ struct HurtFeelings4: View {
                                 }
 
                 })
+                    
+                    Spacer ()
+                        .frame(height: 45)
+                    
+                    
+                    Text("You got this. Nice Job!")
+                        .font(.system(size: 30))
+                        .fontWeight(.regular)
+                        .foregroundColor(Color .white)
                     
                     Spacer ()
                         .frame(height: 15)

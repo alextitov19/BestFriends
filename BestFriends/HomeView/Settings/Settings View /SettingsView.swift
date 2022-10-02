@@ -90,14 +90,38 @@ struct SettingsView: View {
                 
                 Divider()
                 
-                Spacer()
-                    .frame(height: 20)
+//                Spacer()
+//                    .frame(height: 20)
                 
                 NavigationLink(
                     destination: CustomizeMyPlanetView(user: user, atmosphere: atmosphere),
                     label: {
                         HStack {
                             Text("Customize my Planet")
+                                .font(.system(size: 20))
+                                .foregroundColor(.purple)
+                            
+                            Spacer()
+                            
+                            Image("arrowRight")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .scaledToFit()
+                            //                                .colorInvert()
+                        }
+                        .padding(.horizontal, 15)
+                    })
+                
+                Divider()
+                
+//                Spacer()
+//                    .frame(height: 20)
+                
+                NavigationLink(
+                    destination: ChangeChatBackgroundView(user: user),
+                    label: {
+                        HStack {
+                            Text("Change Chat Background")
                                 .font(.system(size: 20))
                                 .foregroundColor(.purple)
                             
@@ -237,15 +261,16 @@ struct SettingsView: View {
                         
                         
                         HStack {
-                            Text("Sign Out (tap arrow)")
+                            Text("Sign Out")
                                 .font(.system(size: 20))
-                                .foregroundColor(.white)
+                                .foregroundColor(.red)
                             
                             Spacer()
                             
                             Image("arrowRight")
                                 .resizable()
                                 .frame(width: 25, height: 25)
+                                .foregroundColor(.red)
                                 .scaledToFit()
                             //                                    .colorInvert()
                         }
@@ -259,86 +284,83 @@ struct SettingsView: View {
                         Divider()
                         
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 30)
                         
                     }
                     
                     VStack {
                         
+ 
+//                        
+//                        Spacer()
+//                            .frame(height: 10)
+//                        
+//                        NavigationLink(
+//                            destination: BuiltByTeens2(),
+//                            label: {
+//                                Text("BestFriends Team")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 200, height: 40)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 25))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                
+//                            })
+//                        
+//                        Spacer()
+//                            .frame(height: 20)
+//                        
+//                        NavigationLink(
+//                            destination: BetaTestVideo(),
+//                            label: {
+//                                Text("Help Test Prototypes")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 260, height: 40)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 25))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                
+//                            })
+//                        
+//                        Spacer()
+//                            .frame(height: 20)
                         
-                        //                        Spacer()
-                        //                        .frame(height: 20)
-                        //
-                        //                        NavigationLink(
-                        //                            destination: Subscriptions(),
-                        //                            label: {
-                        //                                Text("Get PURPLE")
-                        //                                    .fontWeight(.thin)
-                        //                                    .frame(width: 150, height: 40)
-                        //                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        //                                    .font(.system(size: 25))
-                        //                                    .background(ColorManager.purple3)
-                        //                                    .cornerRadius(15)
-                        //                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        //
-                        //                            })
-                        
-                        
-                        Spacer()
-                            .frame(height: 20)
                         
                         NavigationLink(
-                            destination: BuiltByTeens2(),
+                            destination: PurpleNoAdInfoView(),
                             label: {
-                                Text("BestFriends Team")
+                                Text("Purple Premium (avail 10.1.22)")
                                     .fontWeight(.thin)
-                                    .frame(width: 200, height: 40)
+                                    .frame(width: 320, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
+                                    .font(.system(size: 22))
+                                    .background(ColorManager.pmbc_green)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
                             })
                         
-                        Spacer()
-                            .frame(height: 20)
+                     
                         
-                        NavigationLink(
-                            destination: BetaTestVideo(),
-                            label: {
-                                Text("Help Test Prototypes")
-                                    .fontWeight(.thin)
-                                    .frame(width: 260, height: 40)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            })
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                               label: {
+//                            Text("HOME / CHAT")
+//                                .fontWeight(.thin)
+//                                .frame(width: 200, height: 40)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 30))
+//                                .background(ColorManager.purple3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        })
                         
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                               label: {
-                            Text("Home / Chat")
-                                .fontWeight(.thin)
-                                .frame(width: 200, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        
+                      
                         Text("Disclaimer: The BestFriends app does not claim to offer clinical or professional psychological advice to the users. BestFriends strives to make friends better friends and help users during difficult times connect with friends and celebrate good times. If users are experiencing depression we recommend you consult a professional.")
                             .font(.system(size: 10))
                             .foregroundColor(.white)
@@ -346,9 +368,23 @@ struct SettingsView: View {
                             .padding()
                         
                         
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                            label: {
+                                Text("Home / Chat")
+                                    .fontWeight(.thin)
+                                    .frame(width: 200, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                        
                         
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 70)
                         
                     }
                 }

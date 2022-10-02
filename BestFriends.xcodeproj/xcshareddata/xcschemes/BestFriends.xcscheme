@@ -17,7 +17,7 @@
                BlueprintIdentifier = "7A71BCFA2625292A00E6FA9E"
                BuildableName = "BestFriends.app"
                BlueprintName = "BestFriends"
-               ReferencedContainer = "container:BestFriends.xcodeproj">
+               ReferencedContainer = "container:B9.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "7A71BCFA2625292A00E6FA9E"
             BuildableName = "BestFriends.app"
             BlueprintName = "BestFriends"
-            ReferencedContainer = "container:BestFriends.xcodeproj">
+            ReferencedContainer = "container:B9.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "7A71BCFA2625292A00E6FA9E"
             BuildableName = "BestFriends.app"
             BlueprintName = "BestFriends"
-            ReferencedContainer = "container:BestFriends.xcodeproj">
+            ReferencedContainer = "container:B9.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

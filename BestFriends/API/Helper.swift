@@ -262,7 +262,7 @@ class Helper {
             self.accessToken = tokens.AccessToken.Token
             self.renewToken = tokens.RenewToken.Token
             do {
-                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), token: tokens.RenewToken.Token)
+                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: "", chatBackground: ""), token: tokens.RenewToken.Token)
                 print("Renew Token: ", tokens.RenewToken.Token)
             } catch {
                 print(error)
@@ -282,7 +282,7 @@ class Helper {
             self.accessToken = tokens.AccessToken.Token
             self.renewToken = tokens.RenewToken.Token
             do {
-                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: ""), token: tokens.RenewToken.Token)
+                try AuthController.storeToken(user: User(id: email, firstName: "", lastName: "", APNToken: "", atmosphere: "", chatPin: "", chatBackground: ""), token: tokens.RenewToken.Token)
                 print("Renew Token: ", tokens.RenewToken.Token)
             } catch {
                 print(error)

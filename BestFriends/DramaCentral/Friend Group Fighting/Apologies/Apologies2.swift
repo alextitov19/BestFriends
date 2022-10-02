@@ -29,36 +29,20 @@ struct Apologies2: View {
                   
                   VStack {
                       
-                      Text("Building Stronger FriendGroups")
-                          .fontWeight(.thin)
-                          .frame(width: 300, height: 40)
-                          .foregroundColor(Color .blue)
-                          .font(.system(size: 22))
-                          .background(ColorManager.grey2)
-                          .cornerRadius(15)
-                          .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                      
-                      Spacer()
-                          .frame(height: 15)
-                      
-                      Text("Do you think you hurt")
-                          .font(.system(size: 37))
-                          .foregroundColor(.white)
-                          .fontWeight(.ultraLight)
-                          .multilineTextAlignment(.center)
-                   
-                      Text("your friend's")
-                          .font(.system(size: 37))
-                          .foregroundColor(.white)
-                          .fontWeight(.ultraLight)
-                          .multilineTextAlignment(.center)
-                      
-                      Text("F E E L I N G S?")
-                          .font(.system(size: 55))
-                          .foregroundColor(.white)
-                          .fontWeight(.ultraLight)
-                          .multilineTextAlignment(.center)
-                            
+//
+//                      Text("Building Stronger")
+//                          .font(.system(size: 37))
+//                          .foregroundColor(.white)
+//                          .fontWeight(.ultraLight)
+//                          .multilineTextAlignment(.center)
+//                   
+//                   
+//                      Text("FriendGroups")
+//                          .font(.system(size: 55))
+//                          .foregroundColor(.white)
+//                          .fontWeight(.ultraLight)
+//                          .multilineTextAlignment(.center)
+//                            
                         Spacer()
                             .frame(height: 50)
                      
@@ -70,7 +54,7 @@ struct Apologies2: View {
                         .fontWeight(.thin)
                         .frame(width: 260, height: 40)
                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                        .background(ColorManager.purple5)
+                        .background(ColorManager.pmbc_blue)
                         .font(.system(size: 27))
                         .background(ColorManager.purple3)
                         .cornerRadius(15)
@@ -87,7 +71,7 @@ struct Apologies2: View {
                     .frame(height: 20)
                 
                       
-                        Text("Holding yourself accountable \nis one of the best ways to be \na good friend and show them \nyou care.")
+                        Text("There's no weakness is saying your sorry!")
                             .font(.system(size: 20))
 //                            .foregroundColor(ColorManager.white)
                             .fontWeight(.light)

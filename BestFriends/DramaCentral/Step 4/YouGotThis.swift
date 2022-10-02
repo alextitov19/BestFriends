@@ -30,7 +30,7 @@ struct YouGotThis: View {
                 .blendMode(.screen)
             
             VStack {
-                Text("We get it - your upset!")
+                Text("We get it - you're upset!")
                     .font(.system(size: 25))
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)

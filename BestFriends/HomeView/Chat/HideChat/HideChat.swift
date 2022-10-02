@@ -247,7 +247,7 @@ struct HideChatView: View {
     private func submitPin() {
         if user.chatPin.count == 0 {
             // Create new chat pin
-            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: pin, smileNotes: user.smileNotes)
+            let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: user.hiddenGroups, atmosphere: user.atmosphere, chatPin: pin, chatBackground: user.chatBackground, smileNotes: user.smileNotes)
             RestApi.instance.updateUser(user: updatedUser).then({ response in
                 print("Got update response: ", response)
                 sessionManager.showHome()
@@ -259,7 +259,7 @@ struct HideChatView: View {
                 if let index = hiddenGroups.firstIndex(of: group.id) {
                     hiddenGroups.remove(at: index)
                 }
-                let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, smileNotes: user.smileNotes)
+                let updatedUser = User(id: user.id, firstName: user.firstName, lastName: user.lastName, APNToken: user.APNToken, friends: user.friends, groups: user.groups, hiddenGroups: hiddenGroups, atmosphere: user.atmosphere, chatPin: user.chatPin, chatBackground: user.chatBackground, smileNotes: user.smileNotes)
                 RestApi.instance.updateUser(user: updatedUser).then({ response in
                     print("Got update response: ", response)
                     sessionManager.showHome()

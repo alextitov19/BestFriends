@@ -23,6 +23,13 @@ struct AtmosphereMain2: View {
     @State private var sharedWith: [String] = []
     @State private var colorChangeTap: String = ""
     
+    @State private var selectedFriends: [String] = []
+    @State private var shareColor = ColorManager.purple5
+    @State private var showingAlert = false
+    
+    
+   
+    
     var body: some View {
         ZStack {
 
@@ -38,18 +45,40 @@ struct AtmosphereMain2: View {
             
             VStack {
                 
-                
-//                HStack {
+                HStack {
+                   
+                    NavigationLink(
+                        destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends),
+                        label: {
+                            Text("How this works")
+                                .fontWeight(.thin)
+                                .foregroundColor(Color.white)
+                                .font(.system(size: 13))
+                                .italic()
+                                .frame(width: 50, height: 50)
+                                .background(.blue)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })
+
+                }
                     
-                    Text("'My Aura'")
+                    Text("Update your 'Aura'?")
                         .font(.system(size: 35))
                         .fontWeight(.medium)
                         .foregroundColor(Color.white)
                     
-                    Text("distinctive 'Atmosphere' \nsurrounding each of us")
+                
+                    
+                    Text("Our distinctive 'Atmosphere'")
                         .font(.system(size: 20))
                         .foregroundColor(ColorManager.grey1)
-                      
+               
+                Text("surrounding each of us")
+                    .font(.system(size: 20))
+                    .foregroundColor(ColorManager.grey1)
+                
+                
                 HStack {
 
                 }
@@ -240,17 +269,24 @@ struct AtmosphereMain2: View {
                 
                 VStack {
                     // MARK: End of feeling buttons
+                    
+                    Text("tap [return] to hide keyboard")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.light)
+                        .foregroundColor(ColorManager.red)
+                    
+                    
                     HStack {
-                        Text("Ok, what's going on?")
-                            .font(.system(size: 21))
-                            .italic()
-                            .fontWeight(.light)
+                        Text("Tell friends what's going on")
+                            .font(.system(size: 26))
+                            .fontWeight(.regular)
                             .foregroundColor(ColorManager.grey1)
                             .padding(.horizontal)
                         
-//                        Spacer()
+                        
+                        
                     }
-//                    .padding(.horizontal)
                     
                     
                     
@@ -264,11 +300,15 @@ struct AtmosphereMain2: View {
                         TextField("You can type what's up here...", text: $summary)
                             .font(.system(size: 20))
                             .foregroundColor(ColorManager.purple2)
-                            .padding(.horizontal, 50)
+                            .padding(.horizontal, 80)
                             .onReceive(Just(summary)) { _ in limitText(40) }
                         
                         
                     }
+                    
+                
+                        
+                 
                     
                     Spacer()
                         .frame(height: 5)
@@ -281,11 +321,7 @@ struct AtmosphereMain2: View {
                             .foregroundColor(ColorManager.grey1)
                             .padding(.horizontal)
                         
-//                        Text("So, they can laugh, smile, cheer or maybe help")
-//                            .font(.system(size: 12))
-//                            .italic()
-//                            .fontWeight(.light)
-//                            .foregroundColor(ColorManager.grey1)
+                      
                         
                         
 //                        Spacer()
@@ -417,26 +453,45 @@ struct AtmosphereMain2: View {
                  
                     VStack {
                         Spacer()
-                            .frame(height: 15)
+                            .frame(height: 20)
                         
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                            label: {
-                                Text("Home / Chat")
-                                    .fontWeight(.thin)
-                                    .frame(width: 175, height: 30)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                            label: {
+//                                Text("Home / Chat")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 175, height: 40)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
+                        
+                     
                     }
-                    Spacer()
+//                    Spacer()
+                }
+                
+                Spacer()
+                    .frame(height: 65)
+                
+            }
+        }
+    }
+    
+    func shareButtonTapped() {
+        if selectedFriends.count == 0 { return }
+        for id in selectedFriends {
+            for f in friends {
+                if f.id == id {
+                    RestApi.instance.sendPushNotification(title: "BestFriends", body: "\(user.firstName) sent a song to match your Aura", APNToken: f.APNToken)
                 }
             }
         }
+        shareColor = ColorManager.darkGrey
+        showingAlert = true
     }
     
     private func shareMood() {
@@ -451,7 +506,7 @@ struct AtmosphereMain2: View {
                     for i in sharedWith {
                         for f in friends {
                             if i == f.id {
-                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) Just changed their Mood!", APNToken: f.APNToken )
+                                RestApi.instance.sendPushNotification(title: "BestFriends - Atmosphere", body: "\(user.firstName) said something just happened to change their day!", APNToken: f.APNToken )
                             }
                         }
                         mood = -1
@@ -489,17 +544,17 @@ struct AtmosphereMain2: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
         }
        
-            
+    
         
     }
     
     private func defaultMessageButtonTapped(defaultMessage: String) {
         self.colorChangeTap = defaultMessage
 }
-
-
-
 }
+
+
+
 
 
 
