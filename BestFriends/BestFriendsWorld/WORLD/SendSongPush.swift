@@ -66,18 +66,27 @@ struct SendSongPush: View {
                     
                     Spacer()
                         .frame(height: 20)
-                   
+     
+                    
                     VStack {
-                        
-             
-                        
-               
-                        Text("Jump over to Chat and")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(Color.black)
-                        Text("send name of song")
-                            .font(.system(size: 35, weight: .ultraLight))
-                            .foregroundColor(Color.black)
+//
+//       Image(systemName: "heart.fill")
+//                        .resizable()
+//                        .foregroundColor(.red)
+//                        .frame(width: 100, height: 90)
+//    //                    .blur(radius: 2)
+//
+//                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                        .opacity(0.85)
+//
+//                        Text("send \nin \nChat")
+//                            .font(.system(size: 35, weight: .ultraLight))
+//                            .foregroundColor(Color.black)
+//
+  
+                        NavigationLink(destination:  HomeView(), label: {
+                            SomethingNiceCircle (color: ColorManager.purple4, friendName: "send \nin \nchat")
+                        })
                         
                     }
                     
@@ -300,3 +309,4 @@ struct SendSongPush: View {
     
     
 }
+
