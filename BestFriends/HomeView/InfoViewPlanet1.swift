@@ -16,6 +16,7 @@ struct InfoViewPlanet1: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
+    let friends: [User]
     let atmosphere: Atmosphere
     
     var body: some View {
@@ -180,7 +181,7 @@ struct InfoViewPlanet1: View {
                 
                 VStack {
                         NavigationLink(
-                            destination: SettingsView(user: user, atmosphere: atmosphere),
+                            destination: SettingsView(user: user, friends: friends, atmosphere: atmosphere),
                             label: {
                                 Text("SETTINGS")
                                     .fontWeight(.thin)

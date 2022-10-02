@@ -256,7 +256,7 @@ struct PlanetActionsView: View {
 //                                   label: {
 //                        
                           
-                          NavigationLink(destination: InfoViewPlanet1(user: user, atmosphere: atmosphere),
+                    NavigationLink(destination: InfoViewPlanet1(user: user, friends: friends, atmosphere: atmosphere),
                                          label: {
                           
                           ZStack {

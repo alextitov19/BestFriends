@@ -14,6 +14,7 @@ import SwiftUI
 struct SettingsView: View {
     
     let user: User
+    let friends: [User]
     let atmosphere: Atmosphere
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -70,7 +71,7 @@ struct SettingsView: View {
                     .frame(height: 20)
                 
                 NavigationLink(
-                    destination: MyAccountView(user: user),
+                    destination: MyAccountView(user: user, friends: friends),
                     label: {
                         HStack {
                             Text("Manage My Account")
