@@ -12,7 +12,7 @@ struct ShakePhotoPopView: View {
     
     @State private var images: [UIImage] = []
     @State private var isLoading = false
-
+    
     var body: some View {
         ZStack {
             ForEach(images, id: \.self) { image in
@@ -21,7 +21,7 @@ struct ShakePhotoPopView: View {
                     .ignoresSafeArea()
                     .scaledToFill()
                     .onTapGesture {
-                        images.removeFirst()
+                        images.removeLast()
                         if images.count == 0 {
                             presentationMode.wrappedValue.dismiss()
                         }
@@ -38,7 +38,7 @@ struct ShakePhotoPopView: View {
             
             VStack {
                 Spacer()
-            
+                
                 Button("Dismiss") {
                     presentationMode.wrappedValue.dismiss()
                 }
@@ -52,9 +52,10 @@ struct ShakePhotoPopView: View {
     private func loadData() {
         isLoading = true
         RestApi.instance.getShakePhotoPops().then({ photoPops in
-            print("Got shake photo pops: ", photoPops.count)
+            print("Got shake photo pops: ", photoPops)
             isLoading = false
             for p in photoPops {
+                print("Added photo pop: ", p)
                 guard let i = UIImage(data: p.image) else { return }
                 if i.size.width > i.size.height {
                     images.append(i.rotate(radians: .pi/2))
