@@ -104,35 +104,29 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("TAP")
-                            .font(.system(size: 40))
+                        Text("Remembering")
+                            .font(.system(size: 35))
                             .foregroundColor(.green)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
-                        
-//                        Text("Messages")
-//                            .font(.system(size: 20))
-//                            .italic()
-//                            .foregroundColor(.white)
-//                            .fontWeight(.medium)
-//                            .multilineTextAlignment(.center)
-                        
                   
-                        Text("Nice messages you \n'long-tapped' and \nsaved from Chat")
+                        Text("World Messages")
+                            .font(.system(size: 25))
+                            
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                        
+                        Spacer ()
+                            .frame(height: 15)
+                    
+                        Text("you \n'long-tapped'")
                             .font(.system(size: 18))
                             .italic()
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
-                    
-                        
-//                        Image(systemName: "info.circle")
-//                                               .resizable()
-//                                               .frame(width: 30, height: 30)
-//                                               .scaledToFill()
-//                                               .foregroundColor(.black)
-        //                    .onTapGesture(perform: {
-        //                        sessionManager.infoView(user: user, group: group
+
                     }
                      
                 }

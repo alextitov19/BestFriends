@@ -67,23 +67,32 @@ struct SaySomethingNice3: View {
 
 
               NavigationLink(destination: SaySomethingNice2(user: user, friends: friends), label: {
-                  SomethingNiceCircle (color: ColorManager.grey2, friendName: "send \npush \nnotification")
+                  SomethingNiceCircle (color: ColorManager.grey2, friendName: "#2_send \npush \nnotification")
             })
-            .offset(x: showItems ? -75 : 0, y: showItems ? -150: 0)
+            .offset(x: showItems ? -55 : 0, y: showItems ? -150: 0)
             
             
             NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                SomethingNiceCircle (color: .purple, friendName: "saved \nWorld \nmessages")
+                SomethingNiceCircle (color: .purple, friendName: "#3_see \nWorld \nMessages")
             })
             .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
             
+//
+//                NavigationLink(destination:  HomeView(), label: {
+//                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "send \nmessage in \nchat")
+//                })
+//                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
                 
-                NavigationLink(destination:  HomeView(), label: {
-                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "send \nmessage in \nchat")
+                NavigationLink(destination:  SaySomethingPreload(user: user, friends: friends), label: {
+                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "#1_start here")
                 })
-                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
+                .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
                 
- 
+                
+                
+                
+                
+                
                 NavigationLink(destination: EmptyView(), label: {
                     SomethingNiceCircle (color: .red, friendName: "")
                     })
