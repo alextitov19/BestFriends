@@ -17,7 +17,8 @@ struct GroupRow: View {
     var body: some View {
         
         HStack {
-            Spacer().frame(width: 10)
+            Spacer()
+                .frame(width: 10)
                 .onAppear {
                     getData()
                 }
@@ -27,7 +28,8 @@ struct GroupRow: View {
                     .frame(height: 10)
                 
                 HStack {
-                    Spacer().frame(width: 10)
+                    Spacer()
+                        .frame(width: 10)
                     
                     Text(group.name)
                         .font(.system(size: 20, weight: .light))

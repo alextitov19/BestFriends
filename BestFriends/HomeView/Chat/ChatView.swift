@@ -116,7 +116,7 @@ struct ChatView: View {
                              .multilineTextAlignment(.center)
                              .foregroundColor(Color.green)
                 
-                Text("Room closes after inactive for 30. Exit & Re-enter!")
+                Text("Room closes after 30 seconds inactive / Exit & Re-enter!")
                              .font(.system(size: 14))
                              .italic()
                              .fontWeight(.light)
@@ -149,7 +149,7 @@ struct ChatView: View {
                 VStack {
                 // MARK: The bottom portion containing text field and action buttons
                     
-                    Text("Try a 'motion' Chat background -> Settings")
+                    Text("Try 'MOTION' Chat background -> Settings")
                                  .font(.system(size: 20))
                                  .italic()
                                  .fontWeight(.regular)
