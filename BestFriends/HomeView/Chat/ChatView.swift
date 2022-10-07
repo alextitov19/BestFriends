@@ -116,7 +116,7 @@ struct ChatView: View {
                              .multilineTextAlignment(.center)
                              .foregroundColor(Color.green)
                 
-                Text("Room closes after 20 sec inactive - Exit & Re-enter!")
+                Text("Room closes after inactive for 30. Exit & Re-enter!")
                              .font(.system(size: 14))
                              .italic()
                              .fontWeight(.light)
@@ -136,7 +136,7 @@ struct ChatView: View {
                             ChatBubble(groupId: group.id, message: message, myOwnMessage: message.senderId == user.id)
                                 .onLongPressGesture(minimumDuration: 1, perform: { showingMessageOptions = true })
                                 .confirmationDialog("What would you like to do with this message?", isPresented: $showingMessageOptions, titleVisibility: .visible) {
-                                    Button("Save Nice Messages to Smile Notes") {
+                                    Button("Save message to WorldMessages") {
                                         saveToSmileNotes(message: message)
                                     }
                                     Link("Report Abuse", destination: URL(string: "https://socialtechlabs.com/report-objectionable-content-behavior/")!)

@@ -120,7 +120,14 @@ struct BestFriendMessages: View {
                         Spacer ()
                             .frame(height: 15)
                     
-                        Text("you \n'long-tapped'")
+                        Text("you \nlong-tapped")
+                            .font(.system(size: 18))
+                            .italic()
+                            .foregroundColor(ColorManager.grey1)
+                            .fontWeight(.medium)
+                            .multilineTextAlignment(.center)
+                        
+                        Text("in Chat")
                             .font(.system(size: 18))
                             .italic()
                             .foregroundColor(ColorManager.grey1)

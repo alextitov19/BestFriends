@@ -22,7 +22,7 @@ struct SaySomethingPreload: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple2
+            ColorManager.purple7
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -73,13 +73,20 @@ struct SaySomethingPreload: View {
                 Spacer()
                     .frame(height: 20)
                 
+                Text("- Type 'WorldMessage\nat start of messaage")
+                    .font(.system(size: 20))
+                    .italic()
+                    .foregroundColor(.pink)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
             VStack {
                     
                     Button(action: {
                         sessionManager.showLogin()
                     },
                         label: {
-                            Text("Home / Chat")
+                            Text("Chat")
                                 .fontWeight(.thin)
                                 .frame(width: 200, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -92,20 +99,23 @@ struct SaySomethingPreload: View {
                 Spacer()
                     .frame(height: 20)
                 
-                Text("Then come back here and \nsend them a push notifictiion \nto make sure they got it.")
+           
+                
+                
+                Text("- Send push notifictiion to alert them")
                     .font(.system(size: 20))
                     .italic()
                     .foregroundColor(.pink)
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 Spacer()
                     .frame(height: 20)
 
-                Text("Just long-tap their messages to you \nsaving them to World Messages, \nfor a rainy day.")
+                Text("- long-tap their messages \nsaving them to World Messages, \nfor a rainy day")
                     .font(.system(size: 20))
                     .italic()
                     .foregroundColor(.pink)
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                
                 Spacer()
