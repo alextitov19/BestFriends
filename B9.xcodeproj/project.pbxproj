@@ -207,6 +207,7 @@
 		CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5429282123EA00BBF502 /* WhoFighting.swift */; };
 		CFBB9E84286789A400AEC994 /* MyRoomPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB9E83286789A400AEC994 /* MyRoomPreload.swift */; };
 		CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */; };
+		CFC0ACC028EFD6DB00B49831 /* ChatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */; };
 		CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
@@ -446,6 +447,7 @@
 		CFAB5429282123EA00BBF502 /* WhoFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoFighting.swift; sourceTree = "<group>"; };
 		CFBB9E83286789A400AEC994 /* MyRoomPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomPreload.swift; sourceTree = "<group>"; };
 		CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingPreload.swift; sourceTree = "<group>"; };
+		CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo.swift; sourceTree = "<group>"; };
 		CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugVideo.mp4; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
@@ -720,8 +722,8 @@
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
-				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				CF785690284EF6D700B31803 /* PlanetMain */,
+				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -742,6 +744,7 @@
 				7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */,
 				7AFCF27927FDFFA800D2DB5C /* BlurView.swift */,
 				7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */,
+				CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */,
 			);
 			path = ChatGroups;
 			sourceTree = "<group>";
@@ -1584,6 +1587,7 @@
 				7A720CC328A583E900992FD2 /* CustomizeMyPlanetView.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
 				7ADFDB33289B1FA60004FB1C /* ShakePhotoPopView.swift in Sources */,
+				CFC0ACC028EFD6DB00B49831 /* ChatInfo.swift in Sources */,
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
 				CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */,
 				CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */,
