@@ -107,24 +107,25 @@ struct ChatView: View {
                     //                        .foregroundColor(.gray)
                         .font(.system(size: 10, weight: .thin))
                         .onTapGesture(perform: leaveChatGroup)
+              
+                
                 }
                 
-                Text("Safety Feature ...")
-                             .font(.system(size: 19))
-                            
-                             .fontWeight(.regular)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(Color.green)
-                
-                Text("Room closes after 30 seconds inactive / Exit & Re-enter!")
-                             .font(.system(size: 14))
-                             .italic()
-                             .fontWeight(.light)
-                             .multilineTextAlignment(.center)
-                             .foregroundColor(Color.red)
+//                Text("Safety Feature ...")
+//                             .font(.system(size: 19))
+//
+//                             .fontWeight(.regular)
+//                             .multilineTextAlignment(.center)
+//                             .foregroundColor(Color.green)
+//
+//                Text("Room closes after 30 seconds inactive / Exit & Re-enter!")
+//                             .font(.system(size: 14))
+//                             .italic()
+//                             .fontWeight(.light)
+//                             .multilineTextAlignment(.center)
+//                             .foregroundColor(Color.red)
 
-                
-                
+             
                 
                 
                 // MARK: Main scroll view
@@ -149,13 +150,25 @@ struct ChatView: View {
                 VStack {
                 // MARK: The bottom portion containing text field and action buttons
                     
-                    Text("Try 'MOTION' Chat background -> Settings")
-                                 .font(.system(size: 20))
-                                 .italic()
-                                 .fontWeight(.regular)
-                                 .multilineTextAlignment(.center)
-                                 .foregroundColor(.white)
-                
+//                    Text("Try 'MOTION' Chat background -> Settings")
+//                                 .font(.system(size: 20))
+//                                 .italic()
+//                                 .fontWeight(.regular)
+//                                 .multilineTextAlignment(.center)
+//                                 .foregroundColor(.white)
+                    NavigationLink(
+                        destination: ChatInfo2(user: user),
+                       label: {
+                           Text("Safety Shut-off after 30 sec. inactive")
+                               .fontWeight(.thin)
+                               .frame(width: 320, height: 20)
+                               .foregroundColor(ColorManager.purple1)
+                               .font(.system(size: 20))
+                               .background(ColorManager.grey3)
+                               .cornerRadius(15)
+                               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                       })
+                    
                     
                 HStack {
                     Image("camera")
@@ -201,9 +214,10 @@ struct ChatView: View {
                             .padding(.horizontal, 5)
                         )
                     
-                
+                  
+                    
                 }
-                
+
                 }
             }
         }//ZStack
