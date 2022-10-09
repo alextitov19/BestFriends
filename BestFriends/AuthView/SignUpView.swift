@@ -136,6 +136,7 @@ struct SignUpView: View {
                 
                 Button(action: {
                     if checkFields() {
+                        email = email.lowercased()
                         let data = SignUpUserData(firstName: firstname, lastName: lastname, credentials: Credentials(email: email, password: password), age: age, gender: gender, location: locationString)
                         // Sign up
                         RestApi.instance.signUp(data).then{ response in

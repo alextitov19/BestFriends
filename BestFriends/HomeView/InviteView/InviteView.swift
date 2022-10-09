@@ -156,6 +156,7 @@ struct InviteView: View {
         if !email.isEmpty && user != nil {
             inviteClicked = true
             // Send invite
+            email = email.lowercased()
             RestApi.instance.createInvite(recipient: email).then { result in
                 print("Got result: ", result)
                 email = ""

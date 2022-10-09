@@ -71,6 +71,8 @@ struct LoginView: View {
                             return
                         }
                         
+                        email = email.lowercased()
+                        
                         RestApi.instance.login(email: email, password: password).then{ tokens in
                             print("Tokens: ", tokens)
                             sessionManager.showHome()
