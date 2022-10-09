@@ -45,28 +45,22 @@ struct WorldPreload: View {
             
             VStack {
                 
-                Text("Every Sunday at 8:00pm")
-                    .font(.system(size: 25))
-//                    .italic()
-                    .foregroundColor(ColorManager.orange2)
-                    .fontWeight(.ultraLight)
+              
+             
+            
+                Text("every Sunday at 8pm")
+                    .font(.system(size: 42))
+                    .foregroundColor(ColorManager.purple2)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-             
-                
-                Text("(for 10 minutes)")
-                    .font(.system(size: 17))
+                Text("for 15 minutes")
+                    .font(.system(size: 25))
                     .italic()
-                    .foregroundColor(ColorManager.red)
+                    .foregroundColor(ColorManager.orange2)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
-
-//                Text("(for a few minutes)")
-//                    .font(.system(size: 20))
-//                    .italic()
-//                    .foregroundColor(ColorManager.orange2)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
+                
                 Spacer()
                     .frame(height:40)
                 
@@ -85,7 +79,7 @@ struct WorldPreload: View {
                 
              
                 
-                Text("are getting together")
+                Text("are getting together right")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
@@ -98,16 +92,20 @@ struct WorldPreload: View {
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-            
+           
                 
                 Spacer()
-                    .frame(height:100)
-            
-            
+                    .frame(height:70)
+                
                 
                 VStack {
                     
-
+                    Text("(building stronger friendships)")
+                        .font(.system(size: 20))
+                        .italic()
+                        .foregroundColor(ColorManager.grey1)
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
                     
                     NavigationLink(destination: SaySomethingNice3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                         Text("Say Something Nice!")
@@ -182,10 +180,15 @@ struct WorldPreload: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })
                         
-                        
+                Text("(these features are available anytime)")
+                    .font(.system(size: 17))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.regular)
+                    .multilineTextAlignment(.center)
                         
                         Spacer()
-                            .frame(height: 120)
+                            .frame(height: 30)
                  
                         
                     }
