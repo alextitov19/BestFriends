@@ -54,6 +54,10 @@ class RestApi {
         return helper.callRestApi(url: API_URL + "/users/" + id, method: .get, User.self)
     }
     
+    public func deleteUser() -> Promise<RestResponse> {
+        return helper.callRestApi(url: API_URL + "/users", method: .delete, RestResponse.self)
+    }
+    
     public func getHomeData() -> Promise<HomeData> {
         return helper.callRestApi(url: API_URL + "/users/home", method: .get, HomeData.self)
     }

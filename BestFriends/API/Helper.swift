@@ -82,6 +82,7 @@ class Helper {
     
     public var needLogin : Bool {
         get {
+            print("Renew token: ", renewToken)
             return renewToken!.isEmpty
         }
     }
