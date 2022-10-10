@@ -44,7 +44,7 @@ struct DeleteUserData: View {
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                 
-                Text("First name, last name, email address, list of your friends on BestFriends, Chat PIN, passcode, age, gender and location.")
+                Text("First name, last name, email address, list of your friends on BestFriends, Chat PIN, passcode, age, gender, location and message & images you sent in Chat")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.regular)
@@ -52,7 +52,9 @@ struct DeleteUserData: View {
                     .multilineTextAlignment(.center)
                 
                     .padding()
-            
+              
+                
+                
             VStack {
                     
                 Text("Please send us an email to:")
@@ -79,14 +81,16 @@ struct DeleteUserData: View {
                 Spacer()
                     .frame(height: 7)
                 
-                Text("Please allow us up to thirty (30) days to permanently delete your user data and/or user record. We will send your an email when this is complete.")
+                Text("Please allow us up to forty-five 45) days to permanently delete your user data and/or user record. We will send your an email when this is complete.")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.regular)
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
                                    .padding()
-                
+               
+                Spacer()
+                    .frame(height: 50)
                 
                 NavigationLink(
                     destination: CancellingPURPLE(),
@@ -105,7 +109,7 @@ struct DeleteUserData: View {
                     })
                 
                 Spacer()
-                    .frame(height: 150)
+                    .frame(height: 100)
                 
           
   

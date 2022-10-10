@@ -51,7 +51,7 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 10)
               
-                Text("1) Ask friend to download BestFriendsNetwork \n2) Only one of you send invite \n3) Invite only ONCE or multi planets appear")
+                Text("1) First, ask friend to download BestFriendsNetwork \n2) Only one of you send invite \n3) Invite only ONCE or multi planets appear")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()
@@ -60,12 +60,12 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("Email is CASE SENSITIVE - \nmust enter email exactly how \nfirend typed email in Registration.")
-                    .fontWeight(.thin)
-                    .foregroundColor(.red)
-                    .italic()
-                    .font(.system(size: 22))
-                
+//                Text("Email is CASE SENSITIVE - \nmust enter email exactly how \nfirend typed email in Registration.")
+//                    .fontWeight(.thin)
+//                    .foregroundColor(.red)
+//                    .italic()
+//                    .font(.system(size: 22))
+//
 
                 
                 
@@ -142,11 +142,16 @@ struct InviteView: View {
                     }
                 } else {
                     Spacer()
-                        .frame(height: 15)
-                    Text("You already have 5 friends\nRemove a friend to add new one")
-                        .font(.system(size: 20))
-                        .fontWeight(.thin)
-                        .foregroundColor(.red)
+                        .frame(height: 35)
+                    
+                    Text("You already have 5 friends. \nPlease remove one to add a new friend.")
+                        .foregroundColor(.green)
+                        .font(.system(size: 25, weight: .bold))
+                    
+//                    Text("You already have 5 friends\nRemove a friend to add new one")
+//                        .font(.system(size: 20))
+//                        .fontWeight(.thin)
+//                        .foregroundColor(.red)
                 }
             }
         }
