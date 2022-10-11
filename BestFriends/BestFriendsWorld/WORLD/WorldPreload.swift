@@ -124,7 +124,7 @@ struct WorldPreload: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        NavigationLink(destination: WorldPhotoPreload2(user: user, friends: friends), label: {
+                        NavigationLink(destination: PhotoPop1(user: user, friends: friends), label: {
                             Text("PhotoPOP")
                                 .fontWeight(.thin)
                                 .frame(width: 270, height: 40)

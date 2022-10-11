@@ -21,7 +21,7 @@ struct WorldPhotoPreload2: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey4
+            ColorManager.purple4
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -48,12 +48,35 @@ struct WorldPhotoPreload2: View {
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("SMILE")
-                    .font(.system(size: 70))
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-             
+                VStack {
+           
+            Image(systemName: "heart.fill")
+                        .resizable()
+                        .foregroundColor(.red)
+                        .frame(width: 220, height: 180)
+                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                        .opacity(0.85)
+//
+//                Spacer ()
+//                       .frame(height: 0)
+                    
+                  Text("my")
+                                .font(.system(size: 40))
+                                .italic()
+                                .foregroundColor(.blue)
+                                .fontWeight(.thin)
+                                .multilineTextAlignment(.center)
+    //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                   Text("FriendGroup")
+                                 .font(.system(size: 30))
+                                 .italic()
+                                 .foregroundColor(.blue)
+                                 .fontWeight(.thin)
+                                 .multilineTextAlignment(.center)
+     //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+
+                }
+                
                 Spacer()
                     .frame(height: 70)
                 

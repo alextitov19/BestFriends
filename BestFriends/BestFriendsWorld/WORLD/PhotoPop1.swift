@@ -1,8 +1,8 @@
 //
-//  SaySomethingNice3.swift
+//  PhotoPop1.swift
 //  BestFriends
 //
-//  Created by Social Tech on 10/1/22.
+//  Created by Social Tech on 10/10/22.
 //
 
 
@@ -11,14 +11,14 @@ import Foundation
 import SwiftUI
 import AVKit
 
-struct SaySomethingNice3: View {
+struct PhotoPop1: View {
     
 //    @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
-    let atmosphere: Atmosphere
+//    let atmosphere: Atmosphere
     let friends: [User]
-    let friendAtmospheres: [Atmosphere]
+//    let friendAtmospheres: [Atmosphere]
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -28,7 +28,7 @@ struct SaySomethingNice3: View {
         
         ZStack {
             
-            ColorManager.purple4
+            ColorManager.purple1
                 .ignoresSafeArea()
                 .onAppear()
            
@@ -66,35 +66,34 @@ struct SaySomethingNice3: View {
      
 
 
-              NavigationLink(destination: SaySomethingNice2(user: user, friends: friends), label: {
-                  SomethingNiceCircle (color: ColorManager.grey2, friendName: "#2_send \npush \nnotification")
+              NavigationLink(destination: PhotoPop3(user: user, friends: friends), label: {
+                  PhotoPopCircle (color: ColorManager.grey2, friendName: "#3_send \npush \nnotification")
             })
-            .offset(x: showItems ? -55 : 0, y: showItems ? -150: 0)
+            .offset(x: showItems ? 150 : 0, y: showItems ? 175: 0)
             
-            
-            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                SomethingNiceCircle (color: .purple, friendName: "#3_see \nWorld \nMessages")
+            NavigationLink(destination: PhotoPopInfo(user: user, friends: friends), label: {
+                PhotoPopCircle (color: .green, friendName: "#1_how \nthis \nworks ")
             })
-            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
-            
-//
+            .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
+
+
+
 //                NavigationLink(destination:  HomeView(), label: {
 //                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "send \nmessage in \nchat")
 //                })
 //                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
                 
-                NavigationLink(destination:  SaySomethingPreload(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "#1_start here")
+                NavigationLink(destination:  PhotoPopView(user: user, friends: friends), label: {
+                    PhotoPopCircle (color: ColorManager.purple4, friendName: "#2 \nload images")
                 })
-                .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
-                
+                .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
                 
                 
                 
                 
                 
                 NavigationLink(destination: EmptyView(), label: {
-                    SomethingNiceCircle (color: .red, friendName: "")
+                    PhotoPopCircle (color: .red, friendName: "")
                     })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
 
@@ -103,30 +102,30 @@ struct SaySomethingNice3: View {
             
         Image(systemName: "heart.fill")
                     .resizable()
-                    .foregroundColor(.red)
+                    .foregroundColor(.pink)
                     .frame(width: 220, height: 180)
 //                    .blur(radius: 2)
 
-                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                    .opacity(0.85)
+                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                    .opacity(0.9)
             
            VStack {
                
             Spacer ()
                    .frame(height: 0)
                 
-              Text("my")
-                            .font(.system(size: 40))
-                            .italic()
+              Text("making \nfriends")
+                            .font(.system(size: 30))
+                        
                             .foregroundColor(.blue)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-               Text("FriendGroup")
-                             .font(.system(size: 30))
-                             .italic()
+               Text("SMILE")
+                             .font(.system(size: 45))
+                        
                              .foregroundColor(.blue)
-                             .fontWeight(.thin)
+                             .fontWeight(.light)
                              .multilineTextAlignment(.center)
  //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 
@@ -149,7 +148,7 @@ struct SaySomethingNice3: View {
     }
    
 
-struct SomethingNiceCircle: View {
+struct PhotoPopCircle: View {
     var color: Color
     var friendName: String
     

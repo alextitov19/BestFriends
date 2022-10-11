@@ -103,6 +103,9 @@
 		CF1ECAC52872AA4B00D999F8 /* IntroFreindGp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC42872AA4B00D999F8 /* IntroFreindGp2.swift */; };
 		CF1ECAC728752C3700D999F8 /* SettingsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC628752C3700D999F8 /* SettingsTutorial.swift */; };
 		CF1ECAC92875500100D999F8 /* InfoViewPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */; };
+		CF24815528F5018B00D47AE3 /* PhotoPop1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815428F5018B00D47AE3 /* PhotoPop1.swift */; };
+		CF24815728F5060100D47AE3 /* PhotoPop3.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815628F5060100D47AE3 /* PhotoPop3.swift */; };
+		CF24815928F5075600D47AE3 /* PhotoPopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */; };
 		CF2738AA2813C5740070E9D3 /* NewSmileNoteCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */; };
 		CF2DBCEC2853DAF7008616A3 /* PickMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */; };
 		CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF2DBCF028552527008616A3 /* storm2.mp4 */; };
@@ -343,6 +346,9 @@
 		CF1ECAC42872AA4B00D999F8 /* IntroFreindGp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroFreindGp2.swift; sourceTree = "<group>"; };
 		CF1ECAC628752C3700D999F8 /* SettingsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTutorial.swift; sourceTree = "<group>"; };
 		CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewPlanet.swift; sourceTree = "<group>"; };
+		CF24815428F5018B00D47AE3 /* PhotoPop1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPop1.swift; sourceTree = "<group>"; };
+		CF24815628F5060100D47AE3 /* PhotoPop3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPop3.swift; sourceTree = "<group>"; };
+		CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopInfo.swift; sourceTree = "<group>"; };
 		CF2738A92813C5740070E9D3 /* NewSmileNoteCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSmileNoteCard.swift; sourceTree = "<group>"; };
 		CF2DBCEB2853DAF7008616A3 /* PickMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickMediator.swift; sourceTree = "<group>"; };
 		CF2DBCF028552527008616A3 /* storm2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = storm2.mp4; sourceTree = "<group>"; };
@@ -932,7 +938,10 @@
 				CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */,
 				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
 				CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */,
+				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
 				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
+				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
+				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
 				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
 				CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */,
 				CF37535028BB3398003817E3 /* SendSongPush.swift */,
@@ -1442,6 +1451,7 @@
 			files = (
 				CFD12CC1281770B600AB2539 /* MyStreaks.swift in Sources */,
 				CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */,
+				CF24815728F5060100D47AE3 /* PhotoPop3.swift in Sources */,
 				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
 				CF4A08DA2877E4A000ADA9DD /* PhotoPopPreload.swift in Sources */,
@@ -1534,6 +1544,7 @@
 				CFA1226828598DB800E22E84 /* Apologies3.swift in Sources */,
 				62372A152884D57500CAB75C /* HorizonGoalChoices.swift in Sources */,
 				CFA122602859771600E22E84 /* HurtFeelings.swift in Sources */,
+				CF24815928F5075600D47AE3 /* PhotoPopInfo.swift in Sources */,
 				CFD12CC7281943CA00AB2539 /* Impetus.swift in Sources */,
 				CF65043028A438970092EEB9 /* ChatReactions.swift in Sources */,
 				7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */,
@@ -1631,6 +1642,7 @@
 				7A380F1628271E3E007151AB /* AppDelegate.swift in Sources */,
 				7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */,
 				CFDA4BDE28D3CEA300118D90 /* DreamMap.swift in Sources */,
+				CF24815528F5018B00D47AE3 /* PhotoPop1.swift in Sources */,
 				CF3DB38328DAD2D200BF9CCD /* NewPoems.swift in Sources */,
 				CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
