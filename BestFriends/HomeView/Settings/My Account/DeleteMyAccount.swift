@@ -34,23 +34,46 @@ struct DeleteMyAccount: View {
                     }
                 })
             }, label: {
+  
+             
                 Text("Delete My Account")
                     .fontWeight(.regular)
                     .frame(width: 240, height: 40)
+                    .font(.system(size: 20))
                     .foregroundColor(.white)
                     .background(ColorManager.red)
                     .cornerRadius(15)
-                    .opacity(0.4)
+//                    .opacity(0.4)
             })
             
-            Spacer()
-                .frame(height: 45)
+                Text("By tapping [Delete My Account], we will delete your first name, last name, email address, list of your friends on BestFriends, Chat PIN, passcode, age, gender, and location instantly. Your chat messages will be deleted within 30 days.")
+                    .font(.system(size: 15))
+                    .italic()
+                    .fontWeight(.regular)
+                    .foregroundColor(.blue)
+                    .multilineTextAlignment(.center)
+                    .padding()
+           
+                
+//                Text("NOTE: Before you delete your account please REMOVE yourself from all Chat groups. If you do NOT do this we can NOT delete your account because it will de-active your friends accounts.")
+//                    .font(.system(size: 15))
+//                    .italic()
+//                    .fontWeight(.regular)
+//                    .foregroundColor(.red)
+//                    .multilineTextAlignment(.center)
+//                    .padding()
+              
+                
+                Spacer()
+                    .frame(height: 45)
+       
         VStack {
+           
             NavigationLink(
                 
                 destination: DeleteUserData(),
                 label: {
-                    Text("Permenently Delete All User Data")
+                    Text("Permenently Delete All User Record")
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
                         .frame(width: 310, height: 40)
