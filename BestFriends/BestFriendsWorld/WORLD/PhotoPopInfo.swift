@@ -53,15 +53,32 @@ struct PhotoPopInfo: View {
                 
                 Spacer()
                     .frame(height: 90)
+          
                 
-                Text("When they shake their")
+            VStack {
+                
+                Text("When they")
                     .font(.system(size: 20))
                  
                     .foregroundColor(.white)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("phone the image")
+                Text("S H A K E")
+                    .font(.system(size: 45))
+                  
+                    .foregroundColor(.purple)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
+                Text("their phone")
+                    .font(.system(size: 20))
+                  
+                    .foregroundColor(.white)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
+                
+                Text("image")
                     .font(.system(size: 20))
                   
                     .foregroundColor(.white)
@@ -72,7 +89,7 @@ struct PhotoPopInfo: View {
                     .font(.system(size: 45))
                   
                     .foregroundColor(.purple)
-                    .fontWeight(.light)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
@@ -113,5 +130,5 @@ struct PhotoPopInfo: View {
         }
         
 }
-    
+}
 
