@@ -116,7 +116,7 @@ struct PlanetActionsView: View {
                                 
                                 
                                 Text("Teens")
-                                    .foregroundColor(.green)
+                                    .foregroundColor(.white)
                                     .font(.system(size: 24, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
