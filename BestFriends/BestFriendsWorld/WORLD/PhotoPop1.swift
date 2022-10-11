@@ -67,12 +67,12 @@ struct PhotoPop1: View {
 
 
               NavigationLink(destination: PhotoPop3(user: user, friends: friends), label: {
-                  PhotoPopCircle (color: ColorManager.grey2, friendName: "#3_send \npush \nnotification")
+                  PhotoPopCircle (color: ColorManager.grey3, friendName: "#3_send \npush \nnotification")
             })
             .offset(x: showItems ? 150 : 0, y: showItems ? 175: 0)
             
             NavigationLink(destination: PhotoPopInfo(user: user, friends: friends), label: {
-                PhotoPopCircle (color: .green, friendName: "#1_how \nthis \nworks ")
+                PhotoPopCircle (color: ColorManager.purple1, friendName: "#1_how \nthis \nworks ")
             })
             .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
 
@@ -84,7 +84,7 @@ struct PhotoPop1: View {
 //                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
                 
                 NavigationLink(destination:  PhotoPopView(user: user, friends: friends), label: {
-                    PhotoPopCircle (color: ColorManager.purple4, friendName: "#2 \nload images")
+                    PhotoPopCircle (color: ColorManager.purple3, friendName: "#2 \nload images")
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
                 
