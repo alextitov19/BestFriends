@@ -109,22 +109,22 @@ struct SaySomethingNice3: View {
 //                    .blur(radius: 2)
 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                    .opacity(0.85)
+                    .opacity(0.9)
             
            VStack {
                
             Spacer ()
                    .frame(height: 0)
                 
-              Text("my")
-                            .font(.system(size: 40))
+              Text("touching a \nfriends")
+                            .font(.system(size: 27))
                             .italic()
                             .foregroundColor(.blue)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-               Text("FriendGroup")
-                             .font(.system(size: 30))
+               Text("H E A R T")
+                             .font(.system(size: 35))
                              .italic()
                              .foregroundColor(.blue)
                              .fontWeight(.thin)
