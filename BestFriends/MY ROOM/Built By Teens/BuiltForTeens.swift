@@ -15,12 +15,12 @@ struct BuiltForTeens: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
-    let user: User
-    let atmosphere: Atmosphere
-    let friends: [User]
-    let groups: [Group]
-    let friendAtmospheres: [Atmosphere]
-    
+//    let user: User
+//    let atmosphere: Atmosphere
+//    let friends: [User]
+//    let groups: [Group]
+//    let friendAtmospheres: [Atmosphere]
+//    
     var body: some View {
         ZStack {
 //            ColorManager.grey3
@@ -45,17 +45,26 @@ struct BuiltForTeens: View {
 //                .blendMode(.screen)
             
             VStack {
-                Text("the 'Zen Masters' \nof social media")
-                    .font(.system(size: 35, weight: .bold))
-                    .foregroundColor(.green)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-//                    .foregroundColor(ColorManager.purple5)
-//                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
+//                Text("the 'Zen Masters'")
+//                    .font(.system(size: 35, weight: .bold))
+//                    .foregroundColor(.green)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    .opacity(0.50)
+////                    .foregroundColor(ColorManager.purple5)
+////                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//                
+//                Text("of social media")
+//                    .font(.system(size: 35, weight: .bold))
+//                    .foregroundColor(.green)
+//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                    .opacity(0.50)
+////                    .foregroundColor(ColorManager.purple5)
+////                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
                 
                 Text("doing our best to ")
-                    .font(.system(size: 35, weight: .bold))
+                    .font(.system(size: 25, weight: .bold))
                     .foregroundColor(.green)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
@@ -64,8 +73,8 @@ struct BuiltForTeens: View {
                     .multilineTextAlignment(.center)
 
                 
-                Text("help you build ")
-                    .font(.system(size: 35, weight: .bold))
+                Text("help you build")
+                    .font(.system(size: 25, weight: .bold))
                     .foregroundColor(.green)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
@@ -129,7 +138,7 @@ struct BuiltForTeens: View {
                     .multilineTextAlignment(.center)
                
                 Spacer()
-                    .frame(height:20)
+                    .frame(height:120)
             
                     VStack {
 
@@ -147,6 +156,8 @@ struct BuiltForTeens: View {
 
                         }
 
+                        Spacer()
+                            .frame(height: 20)
                         
                         Link(destination: URL(string: "https://socialtechlabs.com/our-story/")!) {
                             
@@ -159,6 +170,11 @@ struct BuiltForTeens: View {
                                 .cornerRadius(15)
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
+                        
+                     
+                        
+                        
+                        
                         
                         
                         Spacer()

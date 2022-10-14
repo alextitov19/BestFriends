@@ -91,7 +91,7 @@ struct PlanetActionsView: View {
                   
                     
                 VStack {
-                    NavigationLink(destination: BuiltForTeens(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres),
+                    NavigationLink(destination: TeenVideo(),
                                    label: {
                         ZStack {
                             Circle()
