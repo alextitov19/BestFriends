@@ -36,19 +36,7 @@ struct TeenVideo: View {
     
                     
                     
-                    NavigationLink(
-                        destination: BuiltForTeens(),
-                        label: {
-                            Text("NEXT")
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 35)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 30))
-                                .background(ColorManager.purple3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        })//NavLink
-                    
+             
                     Text("the 'Zen Masters'")
                         .font(.system(size: 35, weight: .bold))
                         .foregroundColor(.green)
@@ -69,7 +57,7 @@ struct TeenVideo: View {
                     
                     
                     Spacer()
-                        .frame(height: 130)
+                        .frame(height: 40)
                         
                     let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "BuiltByTeens3", withExtension: "mp4")!)
                        
@@ -97,6 +85,20 @@ struct TeenVideo: View {
                     
                     Spacer()
                         .frame(height: 30)
+                    
+                    NavigationLink(
+                        destination: BuiltForTeens(),
+                        label: {
+                            Text("NEXT")
+                                .fontWeight(.thin)
+                                .frame(width: 100, height: 35)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 30))
+                                .background(ColorManager.purple3)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        })//NavLink
+                    
             }//VStack
         }//ZStack
     }//body

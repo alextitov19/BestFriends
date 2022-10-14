@@ -45,24 +45,7 @@ struct BuiltForTeens: View {
 //                .blendMode(.screen)
             
             VStack {
-//                Text("the 'Zen Masters'")
-//                    .font(.system(size: 35, weight: .bold))
-//                    .foregroundColor(.green)
-//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                    .opacity(0.50)
-////                    .foregroundColor(ColorManager.purple5)
-////                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//                
-//                Text("of social media")
-//                    .font(.system(size: 35, weight: .bold))
-//                    .foregroundColor(.green)
-//                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                    .opacity(0.50)
-////                    .foregroundColor(ColorManager.purple5)
-////                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-                
+         
                 Text("doing our best to ")
                     .font(.system(size: 25, weight: .bold))
                     .foregroundColor(.green)
@@ -83,20 +66,11 @@ struct BuiltForTeens: View {
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 45)
+                    .frame(height: 10)
                 
             VStack {
                     
-                
-//                Text("help you build")
-//                    .font(.system(size: 30))
-//                
-//                    .foregroundColor(Color.white)
-//                    .fontWeight(.thin)
-//                    .multilineTextAlignment(.center)
-//                
-              
-              
+          
                 Text("kickass,")
                     .font(.system(size: 35))
                 
@@ -138,7 +112,7 @@ struct BuiltForTeens: View {
                     .multilineTextAlignment(.center)
                
                 Spacer()
-                    .frame(height:120)
+                    .frame(height: 100)
             
                     VStack {
 
@@ -171,15 +145,32 @@ struct BuiltForTeens: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
                         
-                     
-                        
-                        
-                        
-                        
-                        
                         Spacer()
-                            .frame(height: 75)
+                            .frame(height: 40)
                         
+                        Button(action: {
+                            sessionManager.showLogin()
+                        },
+                            label: {
+                                Text("Home")
+                                    .fontWeight(.thin)
+                                    .frame(width: 100, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+                        
+
+                        
+                        
+                        
+                        
+//                        
+//                        Spacer()
+//                            .frame(height: 75)
+//                        
 //                        Text("Be First")
 //                            .font(.system(size: 45))
 //
