@@ -221,7 +221,7 @@ struct PlanetActionsView: View {
                                    label: {
                         ZStack {
                             Circle()
-                                .frame(width: 110, height: 110)
+                                .frame(width: 120, height: 120)
                                 .foregroundColor(ColorManager.purple2)
                                 .shadow(color: .white, radius: 17, x: 0, y: 0)
                                 .glow(color: ColorManager.purple4, radius: 3)
@@ -229,6 +229,11 @@ struct PlanetActionsView: View {
 
                             VStack {
 
+                                Text("Sundays 8pm")
+                                    .foregroundColor(.purple)
+                                    .font(.system(size: 15, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.50)
 
                                 Text("World")
                                     .foregroundColor(.white)
