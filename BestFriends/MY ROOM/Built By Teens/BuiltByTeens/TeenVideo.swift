@@ -89,9 +89,9 @@ struct TeenVideo: View {
                     NavigationLink(
                         destination: BuiltForTeens(),
                         label: {
-                            Text("NEXT")
+                            Text("Look Inside")
                                 .fontWeight(.thin)
-                                .frame(width: 100, height: 35)
+                                .frame(width: 200, height: 35)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 30))
                                 .background(ColorManager.purple3)
