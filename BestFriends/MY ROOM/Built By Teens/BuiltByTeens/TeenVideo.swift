@@ -39,19 +39,19 @@ struct TeenVideo: View {
              
                     Text("the 'Zen Masters'")
                         .font(.system(size: 35, weight: .bold))
-                        .foregroundColor(.green)
+                        .foregroundColor(ColorManager.grey1)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
-    //                    .foregroundColor(ColorManager.purple5)
+    //                    .foregroundColor(ColorManager.grey1)
     //                    .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                     
                     Text("of social media")
                         .font(.system(size: 35, weight: .bold))
-                        .foregroundColor(.green)
+                        .foregroundColor(ColorManager.grey1)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
-    //                    .foregroundColor(ColorManager.purple5)
+    //                    .foregroundColor(ColorManager.grey1)
     //                    .fontWeight(.ultraLight)
                         .multilineTextAlignment(.center)
                     

@@ -47,8 +47,9 @@ struct BuiltForTeens: View {
             VStack {
          
                 Text("doing our best to ")
-                    .font(.system(size: 25, weight: .bold))
-                    .foregroundColor(.green)
+//                    .font(.system(size: 25, weight: .bold))
+                    .font(.system(size: 35, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
 //                    .foregroundColor(ColorManager.purple5)
@@ -57,8 +58,9 @@ struct BuiltForTeens: View {
 
                 
                 Text("help you build")
-                    .font(.system(size: 25, weight: .bold))
-                    .foregroundColor(.green)
+//                    .font(.system(size: 25, weight: .bold))
+                    .font(.system(size: 35, weight: .bold))
+                 .foregroundColor(ColorManager .grey1)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
 //                    .foregroundColor(ColorManager.purple5)
