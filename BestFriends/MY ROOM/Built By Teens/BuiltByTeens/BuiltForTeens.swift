@@ -40,7 +40,7 @@ struct BuiltForTeens: View {
             
             VStack {
          
-                Text("doing our best to ")
+                Text("doing our best to")
 //                    .font(.system(size: 25, weight: .bold))
                     .font(.system(size: 35, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
@@ -113,6 +113,23 @@ struct BuiltForTeens: View {
                     VStack {
 
 
+                        NavigationLink(
+                            destination: ShaylaPage(),
+                            label: {
+                                Text("a Teen Girl's App Idea")
+                                    .fontWeight(.thin)
+                                    .frame(width: 310, height: 60)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 30))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+                            })
+                        
+                        Spacer()
+                            .frame(height: 20)
+                        
                         Link(destination: URL(string: "https://socialtechlabs.com/teen-team/")!) {
                                 Text("Meet some of our Teens")
                                     .fontWeight(.thin)
@@ -126,74 +143,43 @@ struct BuiltForTeens: View {
 
                         }
 
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        Link(destination: URL(string: "https://socialtechlabs.com/our-story/")!) {
-                            
-                            Text("Our Story")
-                                .fontWeight(.thin)
-                                .frame(width: 250, height: 40)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(ColorManager.pmbc_green)
-                                .cornerRadius(15)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        }
+                     
+//
+//                        Link(destination: URL(string: "https://socialtechlabs.com/our-story/")!) {
+//
+//                            Text("Our Story")
+//                                .fontWeight(.thin)
+//                                .frame(width: 250, height: 40)
+//                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                .font(.system(size: 25))
+//                                .background(ColorManager.pmbc_green)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                        }
                         
                         Spacer()
                             .frame(height: 40)
-                        
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                            label: {
-                                Text("Home")
-                                    .fontWeight(.thin)
-                                    .frame(width: 100, height: 40)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
-                                    .background(ColorManager.purple3)
-                                    .cornerRadius(15)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
-                        
+//
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                            label: {
+//                                Text("Home")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 100, height: 40)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
+//
 
                         
                         
-                        
-                        
-//                        
-//                        Spacer()
-//                            .frame(height: 75)
-//                        
-//                        Text("Be First")
-//                            .font(.system(size: 45))
-//
-//                            .foregroundColor(ColorManager.orange2)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//
-//                        Text("See new features before release!")
-//                            .font(.system(size: 23))
-//                            .italic()
-//                            .foregroundColor(ColorManager.orange2)
-//                            .fontWeight(.light)
-//                            .multilineTextAlignment(.center)
-//
-//                        NavigationLink(
-//                            destination: BetaTestVideo(),
-//                            label: {
-//                                Text("I want to get Involved!")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 310, height: 40)
-//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                                    .font(.system(size: 30))
-//                                    .background(ColorManager.pmbc_blue)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//
-//                            })
+
+
+
 //
                       
                  
