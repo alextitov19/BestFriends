@@ -27,22 +27,16 @@ struct BuiltForTeens: View {
 //                .ignoresSafeArea()
 //                .onAppear()
             
-            Image("purpleBackground")
+            Image("lampblue")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
+
             
-//            AdPlayerView(name: "Planet6")
+//            AdPlayerView(name: "sky2")
 //                .ignoresSafeArea()
 //                .blendMode(.screen)
-            
-            AdPlayerView(name: "sky2")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-            
-//            AdPlayerView(name: "Atmosphere2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+
             
             VStack {
          
