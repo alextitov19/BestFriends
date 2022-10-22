@@ -868,9 +868,9 @@
 		CF3AE3B328F9F5BE002584A6 /* BuiltByTeens */ = {
 			isa = PBXGroup;
 			children = (
+				CFC0EE6829022560006B3FAA /* ShaylaPage.swift */,
 				CF3AE3B428F9F5F8002584A6 /* TeenVideo.swift */,
 				CF37535928BED060003817E3 /* BuiltForTeens.swift */,
-				CFC0EE6829022560006B3FAA /* ShaylaPage.swift */,
 			);
 			path = BuiltByTeens;
 			sourceTree = "<group>";

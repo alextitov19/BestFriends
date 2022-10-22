@@ -40,7 +40,7 @@ struct ShaylaPage: View {
             
             VStack {
          
-                Text("Shayla at the age of 16 ")
+                Text("Shayla, at age 16 ")
 //                    .font(.system(size: 25, weight: .bold))
                     .font(.system(size: 35, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
@@ -51,7 +51,7 @@ struct ShaylaPage: View {
                     .multilineTextAlignment(.center)
 
                 
-                Text("was our initial")
+                Text("was our original")
 //                    .font(.system(size: 25, weight: .bold))
                     .font(.system(size: 40, weight: .bold))
                  .foregroundColor(ColorManager .grey1)
@@ -65,7 +65,7 @@ struct ShaylaPage: View {
                     .frame(height: 15)
                 
                 Text("V I S I O N A R Y")
-                    .font(.system(size: 63))
+                    .font(.system(size: 57))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
@@ -76,39 +76,7 @@ struct ShaylaPage: View {
                 
             VStack {
                     
-          
-//                Text("kickass,")
-//                    .font(.system(size: 35))
-//
-//                    .foregroundColor(ColorManager.purple5)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("resilient,")
-//                    .font(.system(size: 40))
-//
-//                    .foregroundColor(ColorManager.purple4)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("supportive")
-//                    .font(.system(size: 45))
-//
-//                    .foregroundColor(ColorManager.purple3)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//
-//                Text("and yep - lasting")
-//                    .font(.system(size: 48))
-//
-//                    .foregroundColor(ColorManager.purple2)
-//                    .fontWeight(.ultraLight)
-//                    .multilineTextAlignment(.center)
-//
-//
-                
-           
-               
+            
                 Spacer()
                     .frame(height: 100)
             
@@ -129,13 +97,13 @@ struct ShaylaPage: View {
 //                        }
 
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 120)
                         
                         Link(destination: URL(string: "https://socialtechlabs.com/our-story/")!) {
                             
-                            Text("Our Story")
+                            Text("Her Story")
                                 .fontWeight(.thin)
-                                .frame(width: 250, height: 40)
+                                .frame(width: 200, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 25))
                                 .background(ColorManager.pmbc_green)
@@ -144,13 +112,59 @@ struct ShaylaPage: View {
                         }
                         
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 20)
                         
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
+                        Link(destination: URL(string: "https://socialtechlabs.com/teen-team/")!) {
+                                Text("Meet some of our Teens")
+                                    .fontWeight(.thin)
+                                    .frame(width: 310, height: 40)
+                                    .font(.system(size: 30))
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.pmbc_green)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    .opacity(0.8)
+
+                        }
+
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        NavigationLink(
+                            destination: BuiltForTeens(),
                             label: {
-                                Text("Home")
+                                Text("Zen-masters of social media")
+                                    .fontWeight(.thin)
+                                    .frame(width: 310, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })//NavLink
+                       
+                        Spacer()
+                            .frame(height: 15)
+//
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                            label: {
+//                                Text("Home")
+//                                    .fontWeight(.thin)
+//                                    .frame(width: 100, height: 40)
+//                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    .font(.system(size: 30))
+//                                    .background(ColorManager.purple3)
+//                                    .cornerRadius(15)
+//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                            })
+//                        
+
+                        NavigationLink(
+                            destination: BuiltForTeens(),
+                            label: {
+                                Text("Next")
                                     .fontWeight(.thin)
                                     .frame(width: 100, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -158,10 +172,8 @@ struct ShaylaPage: View {
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                            })
-                        
 
-                        
+                            })
                         
                  
                     }

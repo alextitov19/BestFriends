@@ -91,7 +91,7 @@ struct PlanetActionsView: View {
                   
                     
                 VStack {
-                    NavigationLink(destination: TeenVideo(),
+                    NavigationLink(destination: ShaylaPage(),
                                    label: {
                         ZStack {
                             Circle()
@@ -102,9 +102,9 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-                                Text("Designed")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 14, weight: .bold))
+                                Text("Invisioned")
+                                    .foregroundColor(.green)
+                                    .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
       
