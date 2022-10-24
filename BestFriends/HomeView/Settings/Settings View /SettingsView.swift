@@ -334,7 +334,7 @@ struct SettingsView: View {
                         NavigationLink(
                             destination: PurpleNoAdInfoView(),
                             label: {
-                                Text("Purple Premium (avail 10.1.22)")
+                                Text("Purple Premium (avail. 2023)")
                                     .fontWeight(.thin)
                                     .frame(width: 320, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

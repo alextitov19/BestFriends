@@ -232,7 +232,7 @@ struct PlanetActionsView: View {
                                        label: {
                             ZStack {
                                 Circle()
-                                    .frame(width: 130, height: 130)
+                                    .frame(width: 140, height: 140)
                                     .foregroundColor(ColorManager.purple2)
                                     .shadow(color: .white, radius: 17, x: 0, y: 0)
                                     .glow(color: ColorManager.purple4, radius: 3)
@@ -311,7 +311,7 @@ struct PlanetActionsView: View {
                     
       
                 VStack {
-                    NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
+                    NavigationLink(destination: SettingsView(user: user, friends: friends, atmosphere: atmosphere),
                                    label: {
                         ZStack {
                             Circle()
