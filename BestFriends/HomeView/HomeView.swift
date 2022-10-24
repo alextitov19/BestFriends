@@ -324,6 +324,19 @@ struct HomeView: View {
                                     .opacity(0.4)
                             })
                             
+                           
+                            NavigationLink(destination: Friend1VaultPractice(user: homeData!.user, friend: selectedPlanet!.user, friends: homeData!.friends, groups: homeData!.groups, friendAtmosphere: selectedPlanet!.atmosphere),                                        label: {
+                                Text("Friend's Aura")
+                                    .fontWeight(.light)
+                                    .frame(width: 115, height: 30)
+                                    .foregroundColor(.white)
+                                    .background(ColorManager.purple3)
+                                    .cornerRadius(15)
+                                    .opacity(0.4)
+                            })
+                            
+                            
+                            
                             
                             NavigationLink(destination: DreamVaultView(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                            label: {

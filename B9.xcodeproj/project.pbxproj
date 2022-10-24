@@ -724,9 +724,9 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
-				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				CF37535E28C6E909003817E3 /* InfoViewPlanet1.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
+				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				CF785690284EF6D700B31803 /* PlanetMain */,

@@ -109,7 +109,7 @@ struct PlanetActionsView: View {
                                     .opacity(0.50)
       
                                 Text("by")
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.green)
                                     .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
@@ -177,129 +177,139 @@ struct PlanetActionsView: View {
                     }
                     )}
                    
-                VStack {
-//                    NavigationLink(destination: InviteView(), label: {
+                    VStack {
+                        
                        
-                    NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups),
-                                label: {
-
-                        ZStack {
-                            Circle()
-                                .frame(width: 110, height: 110)
-                                .foregroundColor(ColorManager.purple3)
-                                .shadow(color: .black, radius: 2, x: 0, y: 2)
-                                .opacity(0.40)
+                        NavigationLink(destination: InfoViewPlanet1(user: user, friends: friends, atmosphere: atmosphere),
+                                       label: {
                             
-                            VStack {
+                            ZStack {
+                                Circle()
+                                    .frame(width: 110, height: 110)
+                                    .foregroundColor(ColorManager.grey1)
+                                    .shadow(color: .white, radius: 12, x: 0, y: 0)
+//                                    .glow(color: ColorManager.pmbc_green, radius: 3)
+                                    .opacity(0.6)
                                 
-                                
-                                Text("Making")
-                                     .foregroundColor(.white)
-                                     .font(.system(size: 20, weight: .bold))
-                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.50)
-                                
-                                Text("Amends")
-                                     .foregroundColor(.white)
-                                     .font(.system(size: 20, weight: .bold))
-                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.50)
-                              
-                         }
-                        }
-                    })
-                    
-                    
-                    Spacer()
-                        .frame(height: 15)
-                    
-
-//
-//                    MARK: First setup
-                    
-                    NavigationLink(destination: WorldPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
-                                   label: {
-                        ZStack {
-                            Circle()
-                                .frame(width: 120, height: 120)
-                                .foregroundColor(ColorManager.purple2)
-                                .shadow(color: .white, radius: 17, x: 0, y: 0)
-                                .glow(color: ColorManager.purple4, radius: 3)
-                                .opacity(0.5)
-
-                            VStack {
-
-                                Text("Sunday's 8pm")
-                                    .foregroundColor(.purple)
-                                    .font(.system(size: 15, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
-
-                                Text("World")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 27, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
-                                
-                                Text("FriendGroups")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 15, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
-                                
+                                VStack {
+                                    
+                                    Text("1st time?")
+                                        .foregroundColor(.black)
+                                        .font(.system(size: 16, weight: .regular))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.70)
+                                    
+                                    Text("START")
+                                        .foregroundColor(.green)
+                                        .font(.system(size: 24, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.70)
+                                    
+                                    Text("HERE!")
+                                        .foregroundColor(.green)
+                                        .font(.system(size: 20, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.70)
+                                    
+                                   
+                                    
+                                }
                             }
-                        }
-                    })
+                            
+                        })
+                        
+                        //                }
+                        
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        
+                        //
+                        //                    MARK: First setup
+                        
+                        NavigationLink(destination: WorldPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                                       label: {
+                            ZStack {
+                                Circle()
+                                    .frame(width: 130, height: 130)
+                                    .foregroundColor(ColorManager.purple2)
+                                    .shadow(color: .white, radius: 17, x: 0, y: 0)
+                                    .glow(color: ColorManager.purple4, radius: 3)
+                                    .opacity(0.5)
+                                
+                                VStack {
+                                    
+//                                    Text("Sunday's 8pm")
+//                                        .foregroundColor(.purple)
+//                                        .font(.system(size: 15, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
+                                    
+                                    Text("World")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 37, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    Text("FriendGroups")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 17, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                }
+                            }
+                        })
+                        
+                        
+                        Spacer()
+                            .frame(height: 15)
+                        
+                        
+                        
+                        //                      NavigationLink(destination: Subscriptions(),
+                        //                                   label: {
+                        //
+                        
+                        NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups),
+                                       label: {
+                            
+                            ZStack {
+                                Circle()
+                                    .frame(width: 110, height: 110)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                    .opacity(0.40)
+                                
+                                VStack {
+                                    
+                                    
+                                    Text("Making")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    Text("Amends")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 20, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    Text("coming soon")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 12, weight: .bold))
+                                        .italic()
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                }
+                            }
+                        })
+                    }
                     
-               
-                    Spacer()
-                        .frame(height: 15)
-                    
-                    
-                    
-//                      NavigationLink(destination: Subscriptions(),
-//                                   label: {
-//                        
-                          
-                    NavigationLink(destination: InfoViewPlanet1(user: user, friends: friends, atmosphere: atmosphere),
-                                         label: {
-                          
-                          ZStack {
-                              Circle()
-                                  .frame(width: 110, height: 110)
-                                  .foregroundColor(ColorManager.grey1)
-                                  .shadow(color: .white, radius: 12, x: 0, y: 0)
-                                  .glow(color: ColorManager.pmbc_green, radius: 3)
-                                 .opacity(0.6)
-
-                              VStack {
-                                  
-                                  Text("START")
-                                      .foregroundColor(.green)
-                                      .font(.system(size: 24, weight: .bold))
-                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                      .opacity(0.70)
-
-                                  Text("HERE!")
-                                      .foregroundColor(.green)
-                                      .font(.system(size: 20, weight: .bold))
-                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                      .opacity(0.70)
-                                  
-                                  Text("& Settings")
-                                      .foregroundColor(.black)
-                                      .font(.system(size: 16, weight: .regular))
-                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                      .opacity(0.70)
-  
-                              }
-                          }
-                         
-                      })
-         
-                }
-                
-             
+      
                 VStack {
                     NavigationLink(destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
                                    label: {
@@ -312,17 +322,17 @@ struct PlanetActionsView: View {
                             
                             VStack {
    
-                                Text("Share")
-                                    .foregroundColor(.white)
+                                Text("Settings")
+                                    .foregroundColor(.green)
                                     .font(.system(size: 20, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
-                                Text("Mood")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 20, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
+//                                Text("Mood")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 20, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
                                 
                        
                                 
@@ -375,7 +385,12 @@ struct PlanetActionsView: View {
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
- 
+                                Text("coming soon")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 12, weight: .bold))
+                                    .italic()
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.50)
                                 
                                 
                             }
