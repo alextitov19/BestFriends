@@ -67,7 +67,7 @@ struct WorldPreload2: View {
                 .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
 
                 NavigationLink(destination:  SendSongPush(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.purple1, friendName: "send \nNEW \nMusic")
+                    SomethingNiceCircle (color: ColorManager.purple1, friendName: "found \nNEW \nMusic")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
 

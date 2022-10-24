@@ -66,12 +66,12 @@ struct BuggingPreload1: View {
 
 
               NavigationLink(destination: HurtFeelings2(user: user, friends: friends, groups: groups), label: {
-                  BuggingCircle (color: ColorManager.grey3, friendName: "friend \nhurt my \nFeelings")
+                  BuggingCircle (color: ColorManager.purple2, friendName: "friend \nhurt my \nFeelings")
             })
-            .offset(x: showItems ? 150 : 0, y: showItems ? 175: 0)
+            .offset(x: showItems ? 130 : 0, y: showItems ? -175: 0)
             
             NavigationLink(destination: Apologies2(user: user, friends: friends, groups: groups), label: {
-                BuggingCircle (color: ColorManager.purple1, friendName: "I \nhurt \nfriend's \nFeelings")
+                BuggingCircle (color: ColorManager.purple4, friendName: "hurt my \nfriend's \nFeelings")
             })
             .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
 
@@ -106,29 +106,32 @@ struct BuggingPreload1: View {
 //                    .blur(radius: 2)
 
                     .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                    .opacity(0.9)
+                    .opacity(0.99)
             
            VStack {
                
             Spacer ()
-                   .frame(height: 0)
-                
-              Text("safety")
-                            .font(.system(size: 30))
-                        
-                            .foregroundColor(.blue)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-               Text("in")
-                             .font(.system(size: 30))
+                   .frame(height: 30)
+
+               Text("everywhere")
+                             .font(.system(size: 20))
                          
                              .foregroundColor(.blue)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
  //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-               Text("numbers")
-                             .font(.system(size: 30))
+              Text("FriendGroups")
+                            .font(.system(size: 20))
+                        
+                            .foregroundColor(.blue)
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+               
+             
+               
+               Text("fixing this")
+                             .font(.system(size: 20))
                          
                              .foregroundColor(.blue)
                              .fontWeight(.thin)
