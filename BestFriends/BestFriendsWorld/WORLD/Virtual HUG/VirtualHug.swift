@@ -67,8 +67,10 @@ struct VirtualHug: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
                 .padding()
-//            .onAppear(perform: prepareHaptics)
-//              .onTapGesture(perform: complexSuccess)
+                .onTapGesture(perform: {
+                    let generator = UINotificationFeedbackGenerator()
+                        generator.notificationOccurred(.success)
+                })
 
            }
             
