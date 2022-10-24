@@ -64,7 +64,7 @@ struct HideoutsView: View {
             VStack {
                 
                 Spacer()
-                    .frame(height: 300)
+                    .frame(height: 190)
             Button(action: {
                 sessionManager.showLogin()
             },
