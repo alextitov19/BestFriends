@@ -228,7 +228,7 @@ struct PlanetActionsView: View {
                         //
                         //                    MARK: First setup
                         
-                        NavigationLink(destination: WorldPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                        NavigationLink(destination: WorldPreload2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                        label: {
                             ZStack {
                                 Circle()

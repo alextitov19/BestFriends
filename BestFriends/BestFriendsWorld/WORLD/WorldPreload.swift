@@ -135,7 +135,7 @@ struct WorldPreload: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        NavigationLink(destination: SomethingBuggingYou(user: user, atmosphere: atmosphere, friends: friends, groups: groups), label: {
+                        NavigationLink(destination: SomethingBuggingYou2(user: user, friends: friends), label: {
                             Text("Something Bugging You?")
                                 .fontWeight(.thin)
                                 .frame(width: 270, height: 40)

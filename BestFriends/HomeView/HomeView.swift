@@ -343,7 +343,7 @@ struct HomeView: View {
                         Spacer().frame(height:10)
                         
                         
-                        NavigationLink(destination: WorldPreload(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: groups, friendAtmospheres: homeData!.friendAtmospheres),
+                        NavigationLink(destination: WorldPreload2(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                        label: {
                             Text("BestFriends World")
                                 .fontWeight(.light)

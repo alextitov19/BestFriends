@@ -214,6 +214,7 @@
 		CFC0ACC228EFE26400B49831 /* ChatInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */; };
 		CFC0EE6929022560006B3FAA /* ShaylaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE6829022560006B3FAA /* ShaylaPage.swift */; };
 		CFC0EE6F2906772B006B3FAA /* WorldPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE6E2906772A006B3FAA /* WorldPreload2.swift */; };
+		CFC0EE722906F9FE006B3FAA /* BuggingPreload1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE712906F9FE006B3FAA /* BuggingPreload1.swift */; };
 		CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
@@ -457,6 +458,7 @@
 		CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo2.swift; sourceTree = "<group>"; };
 		CFC0EE6829022560006B3FAA /* ShaylaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaylaPage.swift; sourceTree = "<group>"; };
 		CFC0EE6E2906772A006B3FAA /* WorldPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPreload2.swift; sourceTree = "<group>"; };
+		CFC0EE712906F9FE006B3FAA /* BuggingPreload1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuggingPreload1.swift; sourceTree = "<group>"; };
 		CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugVideo.mp4; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
@@ -950,6 +952,7 @@
 		CF47CF0A28E2CAC7008B6F11 /* WORLD */ = {
 			isa = PBXGroup;
 			children = (
+				CFC0EE702906F9D9006B3FAA /* New Group */,
 				CF650426289F11980092EEB9 /* WorldPreload.swift */,
 				CFC0EE6E2906772A006B3FAA /* WorldPreload2.swift */,
 				CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */,
@@ -959,6 +962,7 @@
 				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
 				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
 				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
+				CFC0EE712906F9FE006B3FAA /* BuggingPreload1.swift */,
 				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
 				CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */,
 				CF37535028BB3398003817E3 /* SendSongPush.swift */,
@@ -1152,6 +1156,13 @@
 				CF763F7B285AFBAB0010D1A9 /* HorizonsPrototype.swift */,
 			);
 			path = "Help Beta Test";
+			sourceTree = "<group>";
+		};
+		CFC0EE702906F9D9006B3FAA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		CFD04689282D6FDD00BF0B02 /* Atmosphere */ = {
@@ -1627,6 +1638,7 @@
 				CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */,
 				7AD8DEFF27F66F9100D9F0E1 /* AtmosphereModels.swift in Sources */,
 				7A1C048527F4BEB30002B173 /* SignUpView.swift in Sources */,
+				CFC0EE722906F9FE006B3FAA /* BuggingPreload1.swift in Sources */,
 				CF37535A28BED060003817E3 /* BuiltForTeens.swift in Sources */,
 				CF3DB36D28D8E08C00BF9CCD /* OurStrategy.swift in Sources */,
 				CF725E2828516E4F0096342F /* Tokens.swift in Sources */,

@@ -18,6 +18,7 @@ struct WorldPreload2: View {
     let atmosphere: Atmosphere
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
 
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -76,7 +77,7 @@ struct WorldPreload2: View {
                 .offset(x: showItems ? -60 : 0, y: showItems ? -150: 0)
 
 
-                NavigationLink(destination: EmptyView(), label: {
+                NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
                     SomethingNiceCircle (color: .pink, friendName: "something \nBUGGING \nyou?")
                     })
                 .offset(x: showItems ? 25 : 0, y: showItems ? 240: 0)
