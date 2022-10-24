@@ -98,7 +98,7 @@ struct WorldPreload2: View {
             Spacer ()
                    .frame(height: 0)
 
-              Text("Touching")
+              Text("It's OK")
                             .font(.system(size: 17))
 //                            .italic()
                             .foregroundColor(.white)
@@ -106,7 +106,7 @@ struct WorldPreload2: View {
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("friend's")
+               Text("to be")
                              .font(.system(size: 17))
 //                             .italic()
                              .foregroundColor(.white)
@@ -114,7 +114,7 @@ struct WorldPreload2: View {
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("H E A R T S")
+               Text("N I C E")
                              .font(.system(size: 21))
                             .foregroundColor(.white)
                              .fontWeight(.thin)
