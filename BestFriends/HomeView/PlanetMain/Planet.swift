@@ -254,7 +254,13 @@ struct PlanetActionsView: View {
                                     
                                     Text("FriendGroups")
                                         .foregroundColor(.white)
-                                        .font(.system(size: 17, weight: .bold))
+                                        .font(.system(size: 20, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    Text("LIVE")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 30, weight: .light))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
