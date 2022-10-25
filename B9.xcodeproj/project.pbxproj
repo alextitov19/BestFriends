@@ -215,6 +215,8 @@
 		CFC0EE6929022560006B3FAA /* ShaylaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE6829022560006B3FAA /* ShaylaPage.swift */; };
 		CFC0EE6F2906772B006B3FAA /* WorldPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE6E2906772A006B3FAA /* WorldPreload2.swift */; };
 		CFC0EE722906F9FE006B3FAA /* BuggingPreload1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE712906F9FE006B3FAA /* BuggingPreload1.swift */; };
+		CFC0EE742907A823006B3FAA /* HugPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE732907A823006B3FAA /* HugPreload.swift */; };
+		CFC0EE762907AB7D006B3FAA /* HugPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */; };
 		CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
@@ -459,6 +461,8 @@
 		CFC0EE6829022560006B3FAA /* ShaylaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaylaPage.swift; sourceTree = "<group>"; };
 		CFC0EE6E2906772A006B3FAA /* WorldPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPreload2.swift; sourceTree = "<group>"; };
 		CFC0EE712906F9FE006B3FAA /* BuggingPreload1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuggingPreload1.swift; sourceTree = "<group>"; };
+		CFC0EE732907A823006B3FAA /* HugPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPreload.swift; sourceTree = "<group>"; };
+		CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPushNotification.swift; sourceTree = "<group>"; };
 		CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugVideo.mp4; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
@@ -1275,7 +1279,9 @@
 		CFDB150A2858F4D200155CEE /* Virtual HUG */ = {
 			isa = PBXGroup;
 			children = (
+				CFC0EE732907A823006B3FAA /* HugPreload.swift */,
 				CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */,
+				CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */,
 				CF47CF0B28E58B61008B6F11 /* VirtualHugActive.swift */,
 				CF47CF0D28E58E2B008B6F11 /* VirtualHugActive2.swift */,
 			);
@@ -1499,6 +1505,7 @@
 				7A77FC7027FBD3C7007CC5E6 /* InviteModels.swift in Sources */,
 				7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */,
 				7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */,
+				CFC0EE742907A823006B3FAA /* HugPreload.swift in Sources */,
 				CFDA4BCE28D1037100118D90 /* DreamVaultView.swift in Sources */,
 				CF091195284A6DC900CB0AF0 /* FG_VideoCall.swift in Sources */,
 				CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */,
@@ -1672,6 +1679,7 @@
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
 				7A0856A627F3D9E800E8282B /* KeychainPasswordItem.swift in Sources */,
 				CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */,
+				CFC0EE762907AB7D006B3FAA /* HugPushNotification.swift in Sources */,
 				7AC71DA827F3D803008D191B /* Helper.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
 				7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */,

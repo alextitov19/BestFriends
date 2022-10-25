@@ -55,8 +55,8 @@ struct WorldPreload2: View {
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
 
 
-            NavigationLink(destination: VirtualHug(), label: {
-                SomethingNiceCircle (color: ColorManager.purple3, friendName: "send HUG")
+                NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups), label: {
+                SomethingNiceCircle (color: ColorManager.purple3, friendName: "Virtual \nHUGS")
             })
 //            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
             .offset(x: showItems ? 120 : 0, y: showItems ? 135: 0)
