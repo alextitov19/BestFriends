@@ -220,7 +220,6 @@
 		CFC0EE7C290805E7006B3FAA /* InfoCreateChatRm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE7B290805E7006B3FAA /* InfoCreateChatRm.swift */; };
 		CFC0EE7E290805F8006B3FAA /* InfoInsideChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */; };
 		CFC0EE802908060C006B3FAA /* InfoPushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */; };
-		CFC0EE8229080679006B3FAA /* InfoKeepNotificationsOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE8129080679006B3FAA /* InfoKeepNotificationsOn.swift */; };
 		CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
@@ -470,7 +469,6 @@
 		CFC0EE7B290805E7006B3FAA /* InfoCreateChatRm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCreateChatRm.swift; sourceTree = "<group>"; };
 		CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoInsideChat.swift; sourceTree = "<group>"; };
 		CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPushNotifications.swift; sourceTree = "<group>"; };
-		CFC0EE8129080679006B3FAA /* InfoKeepNotificationsOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoKeepNotificationsOn.swift; sourceTree = "<group>"; };
 		CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugVideo.mp4; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
@@ -1192,7 +1190,6 @@
 				CFC0EE7B290805E7006B3FAA /* InfoCreateChatRm.swift */,
 				CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */,
 				CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */,
-				CFC0EE8129080679006B3FAA /* InfoKeepNotificationsOn.swift */,
 			);
 			path = "INFO Pages";
 			sourceTree = "<group>";
@@ -1519,7 +1516,6 @@
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */,
 				CF47CF0C28E58B61008B6F11 /* VirtualHugActive.swift in Sources */,
-				CFC0EE8229080679006B3FAA /* InfoKeepNotificationsOn.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AB5216C289D97F7005A49FA /* Subscriptions.swift in Sources */,

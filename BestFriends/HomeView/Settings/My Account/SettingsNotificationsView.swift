@@ -56,23 +56,15 @@ struct SettingsNotificationsView: View {
 //                                loadData()
                             }
                     }
-                    
-                    Spacer()
-                    
-                    Text("Notifications")
-                        .font(.system(size: 30))
-                        .offset(x: -25)
-                        .foregroundColor(.gray)
-                    Spacer()
-                }
+               }
                 
                 Button(action: {
                     sessionManager.showLogin()
                 },
                     label: {
-                        Text("Home / Chat")
+                        Text("Home")
                             .fontWeight(.thin)
-                            .frame(width: 200, height: 40)
+                            .frame(width: 150, height: 40)
                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                             .font(.system(size: 30))
                             .background(ColorManager.purple3)
@@ -83,11 +75,8 @@ struct SettingsNotificationsView: View {
                 
                 Spacer()
                     .frame(height: 50)
-                HStack {
-                }
-               
-                
-                Text("Safety TIP")
+            
+                Text("Push Notifications \nSafety TIP")
 
                     .font(.system(size: 30))
                     
@@ -123,12 +112,12 @@ struct SettingsNotificationsView: View {
             }
             .padding()
             
-     
+          
         }
        .navigationBarHidden(true)
     }
-
-
+ 
+  
 
 }
 
