@@ -120,7 +120,6 @@
 		CF37535528BD5BDD003817E3 /* SomethingBuggingYou2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */; };
 		CF37535A28BED060003817E3 /* BuiltForTeens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535928BED060003817E3 /* BuiltForTeens.swift */; };
 		CF37535D28C6956D003817E3 /* HeartToContinue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535C28C6956D003817E3 /* HeartToContinue.swift */; };
-		CF37535F28C6E909003817E3 /* InfoViewPlanet1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37535E28C6E909003817E3 /* InfoViewPlanet1.swift */; };
 		CF3802D728456C83005181E4 /* FG_Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3802D628456C83005181E4 /* FG_Team.swift */; };
 		CF381A4B2826584F00B3719E /* IntroBluemodeFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */; };
 		CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */; };
@@ -217,6 +216,11 @@
 		CFC0EE722906F9FE006B3FAA /* BuggingPreload1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE712906F9FE006B3FAA /* BuggingPreload1.swift */; };
 		CFC0EE742907A823006B3FAA /* HugPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE732907A823006B3FAA /* HugPreload.swift */; };
 		CFC0EE762907AB7D006B3FAA /* HugPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */; };
+		CFC0EE7A290805C8006B3FAA /* InfoAddFriends.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE79290805C8006B3FAA /* InfoAddFriends.swift */; };
+		CFC0EE7C290805E7006B3FAA /* InfoCreateChatRm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE7B290805E7006B3FAA /* InfoCreateChatRm.swift */; };
+		CFC0EE7E290805F8006B3FAA /* InfoInsideChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */; };
+		CFC0EE802908060C006B3FAA /* InfoPushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */; };
+		CFC0EE8229080679006B3FAA /* InfoKeepNotificationsOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0EE8129080679006B3FAA /* InfoKeepNotificationsOn.swift */; };
 		CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */; };
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
@@ -365,7 +369,6 @@
 		CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingBuggingYou2.swift; sourceTree = "<group>"; };
 		CF37535928BED060003817E3 /* BuiltForTeens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltForTeens.swift; sourceTree = "<group>"; };
 		CF37535C28C6956D003817E3 /* HeartToContinue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartToContinue.swift; sourceTree = "<group>"; };
-		CF37535E28C6E909003817E3 /* InfoViewPlanet1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewPlanet1.swift; sourceTree = "<group>"; };
 		CF3802D628456C83005181E4 /* FG_Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_Team.swift; sourceTree = "<group>"; };
 		CF381A4A2826584F00B3719E /* IntroBluemodeFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroBluemodeFriend.swift; sourceTree = "<group>"; };
 		CF381A4C2826790F00B3719E /* Step1_ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1_ParentsFighting.swift; sourceTree = "<group>"; };
@@ -463,6 +466,11 @@
 		CFC0EE712906F9FE006B3FAA /* BuggingPreload1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuggingPreload1.swift; sourceTree = "<group>"; };
 		CFC0EE732907A823006B3FAA /* HugPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPreload.swift; sourceTree = "<group>"; };
 		CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HugPushNotification.swift; sourceTree = "<group>"; };
+		CFC0EE79290805C8006B3FAA /* InfoAddFriends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAddFriends.swift; sourceTree = "<group>"; };
+		CFC0EE7B290805E7006B3FAA /* InfoCreateChatRm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCreateChatRm.swift; sourceTree = "<group>"; };
+		CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoInsideChat.swift; sourceTree = "<group>"; };
+		CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPushNotifications.swift; sourceTree = "<group>"; };
+		CFC0EE8129080679006B3FAA /* InfoKeepNotificationsOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoKeepNotificationsOn.swift; sourceTree = "<group>"; };
 		CFCB79A0284D2F9000B8D868 /* HugVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = HugVideo.mp4; sourceTree = "<group>"; };
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
@@ -710,6 +718,7 @@
 		7ACD20BA27FC99B4002F7800 /* InviteView */ = {
 			isa = PBXGroup;
 			children = (
+				CFC0EE772908057D006B3FAA /* New Group */,
 				7ACD20BB27FC99CA002F7800 /* InviteView.swift */,
 				7ACD20BD27FCBC18002F7800 /* PendingInviteView.swift */,
 			);
@@ -730,10 +739,9 @@
 			isa = PBXGroup;
 			children = (
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
-				CF37535E28C6E909003817E3 /* InfoViewPlanet1.swift */,
-				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
+				CFC0EE7829080585006B3FAA /* INFO Pages */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				CF785690284EF6D700B31803 /* PlanetMain */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
@@ -1169,6 +1177,26 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		CFC0EE772908057D006B3FAA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		CFC0EE7829080585006B3FAA /* INFO Pages */ = {
+			isa = PBXGroup;
+			children = (
+				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
+				CFC0EE79290805C8006B3FAA /* InfoAddFriends.swift */,
+				CFC0EE7B290805E7006B3FAA /* InfoCreateChatRm.swift */,
+				CFC0EE7D290805F8006B3FAA /* InfoInsideChat.swift */,
+				CFC0EE7F2908060C006B3FAA /* InfoPushNotifications.swift */,
+				CFC0EE8129080679006B3FAA /* InfoKeepNotificationsOn.swift */,
+			);
+			path = "INFO Pages";
+			sourceTree = "<group>";
+		};
 		CFD04689282D6FDD00BF0B02 /* Atmosphere */ = {
 			isa = PBXGroup;
 			children = (
@@ -1491,6 +1519,7 @@
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */,
 				CF47CF0C28E58B61008B6F11 /* VirtualHugActive.swift in Sources */,
+				CFC0EE8229080679006B3FAA /* InfoKeepNotificationsOn.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AB5216C289D97F7005A49FA /* Subscriptions.swift in Sources */,
@@ -1581,7 +1610,6 @@
 				CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */,
 				CFDA4BDC28D2AFE400118D90 /* Neuroscience.swift in Sources */,
 				CFDA4BDA28D2A9AD00118D90 /* MiroWhiteboard.swift in Sources */,
-				CF37535F28C6E909003817E3 /* InfoViewPlanet1.swift in Sources */,
 				CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */,
 				CFDA4BD828D1999900118D90 /* Heart.swift in Sources */,
 				CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */,
@@ -1594,6 +1622,7 @@
 				CF9957F128A72E77000BBAFF /* DeleteUserData.swift in Sources */,
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */,
+				CFC0EE802908060C006B3FAA /* InfoPushNotifications.swift in Sources */,
 				CFDA4BD628D10C9600118D90 /* DreamPlaylist.swift in Sources */,
 				CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */,
 				CFDA4BE028D57A2300118D90 /* TwinkieDream.swift in Sources */,
@@ -1636,6 +1665,7 @@
 				7AD8DF0827F6948A00D9F0E1 /* AdViewFullScreen.swift in Sources */,
 				CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */,
 				CFD12CBE281499D700AB2539 /* IndividualFriendMessages.swift in Sources */,
+				CFC0EE7A290805C8006B3FAA /* InfoAddFriends.swift in Sources */,
 				CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */,
 				7AD8DEF927F615F000D9F0E1 /* HomeView.swift in Sources */,
 				CF0911852848328F00CB0AF0 /* HideChat.swift in Sources */,
@@ -1665,6 +1695,7 @@
 				CF763F7C285AFBAB0010D1A9 /* HorizonsPrototype.swift in Sources */,
 				CFAB5400281A99B600BBF502 /* Step6_TextingFirst.swift in Sources */,
 				7A0856A027F3D94500E8282B /* AuthController.swift in Sources */,
+				CFC0EE7E290805F8006B3FAA /* InfoInsideChat.swift in Sources */,
 				7AD8DEFB27F66C8900D9F0E1 /* HomeModels.swift in Sources */,
 				CFDA4BE228D66B2600118D90 /* AudioCode.swift in Sources */,
 				7A22A57B274416C200FB6B4F /* ColorExt+Mgr.swift in Sources */,
@@ -1681,6 +1712,7 @@
 				CF4A08FB2883A56200ADA9DD /* Sweetheart1.swift in Sources */,
 				CFC0EE762907AB7D006B3FAA /* HugPushNotification.swift in Sources */,
 				7AC71DA827F3D803008D191B /* Helper.swift in Sources */,
+				CFC0EE7C290805E7006B3FAA /* InfoCreateChatRm.swift in Sources */,
 				7ACF912C2767C29A00088ACA /* CustomDivider.swift in Sources */,
 				7AA2514D2874AB7B0018C97E /* PhotoPopModels.swift in Sources */,
 				CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */,

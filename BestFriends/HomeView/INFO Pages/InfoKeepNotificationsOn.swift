@@ -1,16 +1,17 @@
 //
-//  InfoViewPlanet.swift
+//  InfoKeepNotificationsOn.swift
 //  BestFriends
 //
-//  Created by Social Tech on 7/6/22.
+//  Created by Social Tech on 10/25/22.
 //
 
-import Foundation
 
+
+import Foundation
 import SwiftUI
 
 
-struct InfoViewPlanet: View {
+struct InfoKeepNotificationsOn: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
