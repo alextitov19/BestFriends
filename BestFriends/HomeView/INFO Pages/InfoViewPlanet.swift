@@ -13,10 +13,7 @@ import SwiftUI
 struct InfoViewPlanet: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-    
-    //    let user: User
-    //    let atmosphere: Atmosphere
-    //
+
     var body: some View {
         ZStack {
             

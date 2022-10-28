@@ -180,7 +180,7 @@ struct PlanetActionsView: View {
                     VStack {
                         
                        
-                        NavigationLink(destination: InfoViewPlanet(),
+                        NavigationLink(destination: INFOPreload(),
                                        label: {
                             
                             ZStack {

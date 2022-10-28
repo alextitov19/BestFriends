@@ -44,6 +44,9 @@ struct WorldPreload2: View {
             AdPlayerView(name: "PaperAirplanes")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+            
+            
+            
             ZStack{
 
 
