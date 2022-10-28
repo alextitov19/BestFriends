@@ -50,7 +50,7 @@ struct InfoCoolVideo: View {
                         })//NavLink
                     
                     
-                    Text("-a friend standing with you in the storm \n-a friend always having your back \n-a friend that never gives up on you \n-feeling safe in the silence")
+                    Text("-friends standing with you in the storm \n-friends always having each other's backs \n-friends not giveing up on each other \n-friends feeling safe in the silence")
                         .font(.system(size: 20))
                         .italic()
                         .fontWeight(.thin)
