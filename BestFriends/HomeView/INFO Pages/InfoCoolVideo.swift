@@ -34,20 +34,29 @@ struct InfoCoolVideo: View {
             
                 VStack {
                     
-                      Text("a place where we know")
-                          .font(.system(size: 25))
-                          .italic()
-                          .fontWeight(.thin)
-                          .foregroundColor(Color.white)
-                          .padding()
-                    Text("we are loved")
-                        .font(.system(size: 25))
+                    Text("introducing")
+                        .font(.system(size: 17))
                         .italic()
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
-                        .padding()
+                        
+                    
+                    Text("World FriendGroups")
+                        .font(.system(size: 25))
+                  
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                        
+                    
+//                      Text("where we know we're loved")
+//                          .font(.system(size: 25))
+//
+//                          .fontWeight(.thin)
+//                          .foregroundColor(Color.white)
+//
+//
                 
-                    Text("-BestFriends isn't flashy \n-it's more of a twinge in your heart \n-of what's around the next corner \n-because we all long for our friends to like us")
+                    Text("-Nope, it's not flashy \n-it's more of a twinge in your heart \n-with friends like us")
                         .font(.system(size: 17))
                         .italic()
                         .fontWeight(.thin)
@@ -82,7 +91,12 @@ struct InfoCoolVideo: View {
                         .frame(height: 30)
                     
                     
-                  
+                    Text("F R I E N D S")
+                        .font(.system(size: 25))
+                    
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                        .padding()
                     
                     Text("-standing with us in the storm \n-always having our back \n-never giving up on us \n-while feeling safety in the silence")
                         .font(.system(size: 20))
