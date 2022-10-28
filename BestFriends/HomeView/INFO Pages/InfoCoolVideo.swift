@@ -33,7 +33,19 @@ struct InfoCoolVideo: View {
                 .ignoresSafeArea()
             
                 VStack {
-    
+                    
+                      Text("a place where we know")
+                          .font(.system(size: 25))
+                          .italic()
+                          .fontWeight(.thin)
+                          .foregroundColor(Color.white)
+                          .padding()
+                    Text("we are loved")
+                        .font(.system(size: 25))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                        .padding()
                 
                     Text("-BestFriends isn't flashy \n-it's more of a twinge in your heart \n-of what's around the next corner \n-because we all long for our friends to like us")
                         .font(.system(size: 17))

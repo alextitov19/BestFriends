@@ -102,25 +102,13 @@ struct INFOPreload: View {
                         
                         
                         Spacer()
-                            .frame(height: 190)
-                       
+                            .frame(height: 200)
+                    
                         
-                    }
-               
-//
-//                    Text("You're Unique")
-//                        .font(.system(size: 35))
-//                        .fontWeight(.thin)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(ColorManager.purple1)
-//
-//
-                    
-                    
-                    VStack {
+                        
                         
                         Spacer()
-                            .frame(height: 120)
+                            .frame(height: 10)
                         
                         
                         
