@@ -125,7 +125,7 @@ struct INFOPreload: View {
                         
                         
                         NavigationLink(
-                            destination: InfoViewPlanet(),
+                            destination: InfoCoolVideo(),
                             label: {
                                 Text("Walk-through")
                                     .fontWeight(.thin)
