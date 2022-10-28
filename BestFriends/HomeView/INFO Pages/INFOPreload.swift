@@ -24,9 +24,20 @@ struct INFOPreload: View {
             
             ZStack {
                 
-                ColorManager.purple1
+//                ColorManager.purple1
+//                    .ignoresSafeArea()
+//                    .onAppear()
+//
+
+                Image("purpleBackground")
+                    .resizable()
                     .ignoresSafeArea()
-                    .onAppear()
+                    .scaledToFill()
+
+                AdPlayerView(name: "HugVideo")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.75)
                 
                 
                 VStack {
@@ -41,6 +52,8 @@ struct INFOPreload: View {
                     
                     
                     
+                    Spacer ()
+                        .frame(height: 30)
                     
                     ZStack{
                         
@@ -53,12 +66,10 @@ struct INFOPreload: View {
                         //                    .blur(radius: 2)
                         
                             .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                            .opacity(0.99)
+                            .opacity(0.70)
                         
                         VStack {
-                            
-                            Spacer ()
-                                .frame(height: 0)
+                        
                             
                             Text("Just")
                                 .font(.system(size: 20))
@@ -91,7 +102,7 @@ struct INFOPreload: View {
                         
                         
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 190)
                        
                         
                     }
@@ -101,7 +112,7 @@ struct INFOPreload: View {
                         .font(.system(size: 35))
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.purple3)
+                        .foregroundColor(ColorManager.purple1)
                     
                     
                     
@@ -109,7 +120,7 @@ struct INFOPreload: View {
                     VStack {
                         
                         Spacer()
-                            .frame(height: 35)
+                            .frame(height: 20)
                         
                         
                         
@@ -129,7 +140,7 @@ struct INFOPreload: View {
           
                         
                         Spacer()
-                            .frame(height: 125)
+                            .frame(height: 100)
                     }
                 }
                 
