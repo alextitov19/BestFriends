@@ -34,6 +34,52 @@ struct InfoCoolVideo: View {
             
                 VStack {
     
+                
+                    Text("-BestFriends isn't flashy \n-it's more of a twinge in your heart \n-of what's around the next corner \n-because we all long for our friends to like us")
+                        .font(.system(size: 17))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                        .padding()
+  
+                    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "CoolVideo", withExtension: "mp4")!)
+                       
+                    VideoPlayer(player: avPlayer)
+                        .onAppear() {
+                            avPlayer.isMuted = false
+                        }
+                        .onDisappear() {
+                            avPlayer.isMuted = true
+                        }
+                        .frame(height: 250)
+                  
+//
+//                    Text("(if your iPhone is on 'silent mode'")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.white)
+//
+//                    Text("you will not hear audio)")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .fontWeight(.thin)
+//                        .foregroundColor(Color.white)
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    
+                  
+                    
+                    Text("-standing with us in the storm \n-always having our back \n-never giving up on us \n-while feeling safety in the silence")
+                        .font(.system(size: 20))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                    
+                    Spacer()
+                        .frame(height: 20)
                     
                     
                     NavigationLink(
@@ -49,46 +95,10 @@ struct InfoCoolVideo: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })//NavLink
                     
-                    
-                    Text("-friends standing with you in the storm \n-friends always having each other's backs \n-friends not giveing up on each other \n-friends feeling safe in the silence")
-                        .font(.system(size: 20))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        
-                    
-//                    Text("protoype 'Features'")
-//                        .font(.system(size: 40))
-//                        .fontWeight(.ultraLight)
-//                        .foregroundColor(Color.white)
-                    
-                       
-                    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "CoolVideo", withExtension: "mp4")!)
-                       
-                    VideoPlayer(player: avPlayer)
-                        .onAppear() {
-                            avPlayer.isMuted = false
-                        }
-                        .onDisappear() {
-                            avPlayer.isMuted = true
-                        }
-                        .frame(height: 250)
-                  
-                    
-                    Text("(if your iPhone is on 'silent mode'")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                    
-                    Text("you will not hear audio)")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                    
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 40)
+                    
+                    
             }//VStack
         }//ZStack
     }//body

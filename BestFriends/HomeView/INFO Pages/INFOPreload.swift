@@ -71,7 +71,7 @@ struct INFOPreload: View {
                         VStack {
                         
                             
-                            Text("Just")
+                            Text("just")
                                 .font(.system(size: 20))
                             //                            .italic()
                                 .foregroundColor(.white)
@@ -79,7 +79,7 @@ struct INFOPreload: View {
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
-                            Text("Another")
+                            Text("another")
                                 .font(.system(size: 20))
                             //                             .italic()
                                 .foregroundColor(.white)
@@ -107,20 +107,20 @@ struct INFOPreload: View {
                         
                     }
                
-                    
-                    Text("You're Unique")
-                        .font(.system(size: 35))
-                        .fontWeight(.thin)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.purple1)
-                    
-                    
+//
+//                    Text("You're Unique")
+//                        .font(.system(size: 35))
+//                        .fontWeight(.thin)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager.purple1)
+//
+//
                     
                     
                     VStack {
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 120)
                         
                         
                         
