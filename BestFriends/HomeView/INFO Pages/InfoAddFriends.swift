@@ -44,31 +44,51 @@ struct InfoAddFriends: View {
                     .multilineTextAlignment(.center)
                     .foregroundColor(ColorManager.purple3)
 
-                Text("-Tap the [Add & Invite Friends] circle")
-                    .font(.system(size: 15))
+            
+//
+                
+                Text("-First, ask you friend to download the app \n-Then,tap the [Add & Invite Friends] circle \nEnter your friends email and send 'Invite' \n-You may add up to 5 friends \n-Friend show up as planets on homepage \n-Their 'mood' shows up at the atmosphere around their planet")
+                    .font(.system(size: 17))
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                    .padding()
+                
+                                Spacer()
+                                .frame(height: 35)
+                
+                Text("Why only 5 friends")
+                    .font(.system(size: 30))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
-                     
-                     Text("-Add up to 5 friends")
-                         .font(.system(size: 15))
-                         .fontWeight(.light)
-                         .multilineTextAlignment(.center)
-                         .foregroundColor(ColorManager.grey1)
-                     
-                     Text("-Friend show up as planets on homepage")
-                         .font(.system(size: 15))
-                         .fontWeight(.light)
-                         .multilineTextAlignment(.center)
-                         .foregroundColor(ColorManager.grey1)
-                    
-
-
-//                Spacer()
-//                .frame(height: 15)
-
+                    .foregroundColor(ColorManager.purple3)
+              
+//                Text("After speaking with almost 1,000 teens worldwide")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager.grey1)
+//
+//                Text("the majority only wanted add between 2 to 5")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager.grey1)
+//
+//                Text("forming fewer, deeper connections")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager.grey1)
+//
+//
+//
                 VStack {
-
+                    Text("After speaking with almost 1,000 teens worldwide the majority only wanted to add between 2 to 5 friends, forming fewer, deeper connections.")
+                        .font(.system(size: 15))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager.grey1)
+                        .padding(30)
                
             }
         }

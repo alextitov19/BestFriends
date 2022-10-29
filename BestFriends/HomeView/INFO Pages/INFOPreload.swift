@@ -42,7 +42,8 @@ struct INFOPreload: View {
                 
                 VStack {
                     
-                    
+                    Spacer()
+                        .frame(height: 30)
                     
                     Text("No one wants to be")
                         .font(.system(size: 30))
@@ -102,13 +103,9 @@ struct INFOPreload: View {
                         
                         
                         Spacer()
-                            .frame(height: 200)
+                            .frame(height: 290)
                     
                         
-                        
-                        
-                        Spacer()
-                            .frame(height: 10)
                         
                         
                         
