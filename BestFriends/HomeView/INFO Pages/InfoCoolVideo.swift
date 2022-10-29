@@ -15,99 +15,70 @@ import AVKit
 struct InfoCoolVideo: View {
     
     @EnvironmentObject var sessionManager: SessionManager
-
+    
     
     var body: some View {
         
         ZStack {
-         
-//            Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
-//                .ignoresSafeArea()
-
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-
+            
             ColorManager.grey4
                 .ignoresSafeArea()
             
-                VStack {
-                    
-                    Text("introducing")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        
-                    
-                    Text("World FriendGroups")
-                        .font(.system(size: 25))
-                  
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        
-                    
-//                      Text("where we know we're loved")
-//                          .font(.system(size: 25))
-//
-//                          .fontWeight(.thin)
-//                          .foregroundColor(Color.white)
-//
-//
+            VStack {
                 
-                    Text("-Nope, it's not normal social media \n-it's more of a welcomed twinge in your heart \n-like a girl's face from getting flowers")
-                        .font(.system(size: 17))
-                        .italic()
-                        .fontWeight(.thin)
-                        .foregroundColor(Color.white)
-                        .padding()
-  
-                    let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "CoolVideo", withExtension: "mp4")!)
-                       
-                    VideoPlayer(player: avPlayer)
-                        .onAppear() {
-                            avPlayer.isMuted = false
-                        }
-                        .onDisappear() {
-                            avPlayer.isMuted = true
-                        }
-                        .frame(height: 250)
-                  
-//
-//                    Text("(if your iPhone is on 'silent mode'")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.white)
-//
-//                    Text("you will not hear audio)")
-//                        .font(.system(size: 15))
-//                        .italic()
-//                        .fontWeight(.thin)
-//                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    
+                Text("introducing")
+                    .font(.system(size: 17))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                
+                
+                Text("World FriendGroups")
+                    .font(.system(size: 25))
+                
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                
+                Text("-Nope, it's not traditional social media \n-it's more of a welcomed twinge in your heart \n-like a girl's face suprised by flowers")
+                    .font(.system(size: 17))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                    .padding()
+                
+                let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "CoolVideo", withExtension: "mp4")!)
+                
+                VideoPlayer(player: avPlayer)
+                    .onAppear() {
+                        avPlayer.isMuted = false
+                    }
+                    .onDisappear() {
+                        avPlayer.isMuted = true
+                    }
+                    .frame(height: 230)
+                
+             
+                VStack {
                     Text("F R I E N D S")
                         .font(.system(size: 25))
                     
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
-                        .padding()
+               
                     
-                    Text("-standing with us in the storm \n-always having our backs \n-never giving up on us \n-while feeling safety in the silence")
-                        .font(.system(size: 20))
-                        .italic()
+                    Text("-standing with us in the storm \n-always having our backs \n-never giving up on us \n-like kicking througth the leaves in fall")
+                        .font(.system(size: 18))
+                    
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
-                    
-                    Spacer()
-                        .frame(height: 20)
-                    
-                    
+//                        .padding()
+//
+//
+//
+//                    Spacer()
+//                        .frame(height: 20)
+//
+//
                     NavigationLink(
                         destination: InfoViewPlanet(),
                         label: {
@@ -121,12 +92,20 @@ struct InfoCoolVideo: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         })//NavLink
                     
-                    Spacer()
-                        .frame(height: 40)
+                    Text("a friend may well be reckoned the masterpiece \nof nature --- Ralph Waldo Emerson")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.thin)
+                        .foregroundColor(Color.white)
+                        .multilineTextAlignment(.center)
+                
+//
+//                    Spacer()
+//                        .frame(height: 40)
+//
                     
-                    
-            }//VStack
-        }//ZStack
-    }//body
-}//struct
-
+                }//VStack
+            }//ZStack
+        }//body
+    }//struct
+}
