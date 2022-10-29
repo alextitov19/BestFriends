@@ -31,40 +31,16 @@ struct InfoInsideChat: View {
                .fontWeight(.light)
                .multilineTextAlignment(.center)
                .foregroundColor(ColorManager.purple3)
-           
-           Text("-Long-tap messages to save to 'Nice' messages")
-               .font(.system(size: 15))
-               .fontWeight(.light)
-               .multilineTextAlignment(.center)
-               .foregroundColor(ColorManager.grey1)
-                
-                Text("-Long-tap messages to Report Abuse")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
-                
-                Text("-Tap [Remove Me] to be removed")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
-               
-
-                Text("-Tap 'Lock' icon to Hide Chat")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
-
-                Text("-'Un-Hide' Chat enter 4 digit PIN")
-                    .font(.system(size: 15))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.grey1)
-                    
-                
+            
+            
+            
               
+              Text("-Long-tap messages saving messages \n      to World FriendGroups \n      'Say Something Nice' feature \n-Long-tap messages to 'Report Abuse' \n\n\n-Tap [Remove Me] to be removed from room \n\n\n-Tap 'Lock' icon to Hide Chat \n-To 'Un-Hide' Chat, enter 4 digit PIN \n\n\n-Tap 'home' icon to return to homepage")
+                  .font(.system(size: 17))
+                  .fontWeight(.light)
+                  .foregroundColor(Color .white)
+                  .padding()
+            
                 Spacer()
                 .frame(height: 100)
                 
