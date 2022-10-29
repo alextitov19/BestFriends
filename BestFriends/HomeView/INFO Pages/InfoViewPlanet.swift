@@ -14,6 +14,8 @@ struct InfoViewPlanet: View {
     
     @EnvironmentObject var sessionManager: SessionManager
 
+    let user: User
+    
     var body: some View {
         ZStack {
             
@@ -67,7 +69,7 @@ struct InfoViewPlanet: View {
                     
                     
                     NavigationLink(
-                        destination: InfoCreateChatRm(),
+                        destination: InfoCreateChatRm(user: user),
                         label: {
                             Text("Create NEW Chat Rooms")
                                 .fontWeight(.thin)

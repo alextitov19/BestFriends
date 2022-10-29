@@ -121,18 +121,7 @@ struct PlanetActionsView: View {
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                
-//                                Text("for")
-//                                    .foregroundColor(.white)
-//                                    .font(.system(size: 14, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                    .opacity(0.50)
-//
-//
-//                                Text("Teens")
-//                                    .foregroundColor(.green)
-//                                    .font(.system(size: 24, weight: .bold))
-//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                    .opacity(0.50)
+
                             }
                         }
                         
@@ -180,7 +169,7 @@ struct PlanetActionsView: View {
                     VStack {
                         
                        
-                        NavigationLink(destination: INFOPreload(),
+                        NavigationLink(destination: INFOPreload(user: user),
                                        label: {
                             
                             ZStack {
