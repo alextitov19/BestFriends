@@ -56,7 +56,7 @@ struct InfoCoolVideo: View {
 //
 //
                 
-                    Text("-Nope, it's not flashy \n-it's more of a twinge in your heart \n-with friends like us")
+                    Text("-Nope, it's not normal social media \n-it's more of a welcomed twinge in your heart \n-like a girl's face from getting flowers")
                         .font(.system(size: 17))
                         .italic()
                         .fontWeight(.thin)
@@ -98,7 +98,7 @@ struct InfoCoolVideo: View {
                         .foregroundColor(Color.white)
                         .padding()
                     
-                    Text("-standing with us in the storm \n-always having our back \n-never giving up on us \n-while feeling safety in the silence")
+                    Text("-standing with us in the storm \n-always having our backs \n-never giving up on us \n-while feeling safety in the silence")
                         .font(.system(size: 20))
                         .italic()
                         .fontWeight(.thin)
