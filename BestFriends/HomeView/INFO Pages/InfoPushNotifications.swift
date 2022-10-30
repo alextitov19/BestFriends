@@ -35,11 +35,11 @@ struct InfoPushNotifications: View {
                 
                 
                   
-                  Text("-Tap friend's planet that sent Push Notification \n-Tap appropriate notification from \n      dropdown menu \n\nThen, just tap planet to 'hide' dropdown")
+                  Text("-Tap friend's planet that sent \n      Push Notification \n\n-Tap appropriate notification from \n      dropdown menu \n\n-Then, tap friend's planet to 'hide' dropdown")
                       .font(.system(size: 17))
                       .fontWeight(.light)
                       .foregroundColor(Color .white)
-                      .padding()
+                      .padding(30)
                 
              
                 Spacer()

@@ -67,12 +67,12 @@ struct InfoCoolVideo: View {
                         .foregroundColor(Color.white)
                
                     
-                    Text("-standing with us in the storm \n-always having our backs \n-never giving up on us \n-like kicking througth the leaves in fall")
+                    Text("-standing with us in the storm \n-always having our backs \n-never giving up on us \n")
                         .font(.system(size: 18))
                     
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
-//                        .padding()
+                        .padding()
 //
 //
 //
