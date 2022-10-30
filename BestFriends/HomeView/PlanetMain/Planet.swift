@@ -175,7 +175,7 @@ struct PlanetActionsView: View {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.grey1)
+                                    .foregroundColor(ColorManager.purple2)
                                     .shadow(color: .white, radius: 12, x: 0, y: 0)
 //                                    .glow(color: ColorManager.pmbc_green, radius: 3)
                                     .opacity(0.6)

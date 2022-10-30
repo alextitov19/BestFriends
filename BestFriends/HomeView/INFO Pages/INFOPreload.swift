@@ -42,7 +42,7 @@ struct INFOPreload: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 125)
                     
                     Text("No one wants to be")
                         .font(.system(size: 30))
@@ -66,7 +66,7 @@ struct INFOPreload: View {
                         //                    .blur(radius: 2)
                         
                             .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                            .opacity(0.70)
+                            .opacity(0.57)
                         
                         VStack {
                         
