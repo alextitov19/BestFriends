@@ -33,7 +33,7 @@ struct INFOPreload: View {
                     .ignoresSafeArea()
                     .scaledToFill()
 
-                AdPlayerView(name: "HugVideo")
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.75)
@@ -42,13 +42,13 @@ struct INFOPreload: View {
                 VStack {
                     
                     Spacer()
-                        .frame(height: 30)
+                        .frame(height: 100)
                     
                     Text("No one wants to be")
                         .font(.system(size: 30))
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(ColorManager.purple2)
                     
                     
                     
@@ -102,7 +102,7 @@ struct INFOPreload: View {
                         
                         
                         Spacer()
-                            .frame(height: 290)
+                            .frame(height: 195)
                     
                         
                         
@@ -124,7 +124,7 @@ struct INFOPreload: View {
           
                         
                         Spacer()
-                            .frame(height: 100)
+                            .frame(height: 70)
                     }
                 }
                 
