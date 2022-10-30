@@ -47,7 +47,7 @@ struct InfoCoolVideo: View {
                     .foregroundColor(Color.white)
                     .padding()
                 
-                let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "CoolVideo", withExtension: "mp4")!)
+                let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "WorldVid", withExtension: "mp4")!)
                 
                 VideoPlayer(player: avPlayer)
                     .onAppear() {
