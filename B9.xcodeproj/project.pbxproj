@@ -93,7 +93,6 @@
 		CF09118A2848875C00CB0AF0 /* PhotoPopVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0911892848875C00CB0AF0 /* PhotoPopVideo.swift */; };
 		CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */; };
 		CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118D284894F400CB0AF0 /* InfoView.swift */; };
-		CF0911912848976A00CB0AF0 /* BestFriendsVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0911902848976A00CB0AF0 /* BestFriendsVideo.swift */; };
 		CF091195284A6DC900CB0AF0 /* FG_VideoCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */; };
 		CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */; };
 		CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */; };
@@ -112,8 +111,6 @@
 		CF2FD942280BBA1B0036F4BB /* Step3_BreathInviteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */; };
 		CF2FD944280CA20F0036F4BB /* ChatBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */; };
 		CF3295F7290BAA7C0014F658 /* INFOPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3295F6290BAA7C0014F658 /* INFOPreload.swift */; };
-		CF3295F9290BB9300014F658 /* SplashScreen2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3295F8290BB9300014F658 /* SplashScreen2.mp4 */; };
-		CF3295FB290BBC720014F658 /* CoolVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3295FA290BBC720014F658 /* CoolVideo.mp4 */; };
 		CF3295FD290BBD210014F658 /* InfoCoolVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */; };
 		CF3295FF290EAF820014F658 /* WorldVid.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3295FE290EAF820014F658 /* WorldVid.mp4 */; };
 		CF37534428B3F297003817E3 /* WorldPhotoPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */; };
@@ -345,7 +342,6 @@
 		CF0911892848875C00CB0AF0 /* PhotoPopVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopVideo.swift; sourceTree = "<group>"; };
 		CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTestVideo.swift; sourceTree = "<group>"; };
 		CF09118D284894F400CB0AF0 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		CF0911902848976A00CB0AF0 /* BestFriendsVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsVideo.swift; sourceTree = "<group>"; };
 		CF091194284A6DC900CB0AF0 /* FG_VideoCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FG_VideoCall.swift; sourceTree = "<group>"; };
 		CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongChat2.swift; sourceTree = "<group>"; };
 		CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo.swift; sourceTree = "<group>"; };
@@ -364,8 +360,6 @@
 		CF2FD941280BBA1B0036F4BB /* Step3_BreathInviteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3_BreathInviteView.swift; sourceTree = "<group>"; };
 		CF2FD943280CA20F0036F4BB /* ChatBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBackgroundView.swift; sourceTree = "<group>"; };
 		CF3295F6290BAA7C0014F658 /* INFOPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload.swift; sourceTree = "<group>"; };
-		CF3295F8290BB9300014F658 /* SplashScreen2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = SplashScreen2.mp4; path = ../../../../../../../Desktop/SplashScreen2.mp4; sourceTree = "<group>"; };
-		CF3295FA290BBC720014F658 /* CoolVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoolVideo.mp4; sourceTree = "<group>"; };
 		CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCoolVideo.swift; sourceTree = "<group>"; };
 		CF3295FE290EAF820014F658 /* WorldVid.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = WorldVid.mp4; sourceTree = "<group>"; };
 		CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldPhotoPreload2.swift; sourceTree = "<group>"; };
@@ -816,7 +810,6 @@
 			isa = PBXGroup;
 			children = (
 				CF381A582829205800B3719E /* OurMission.swift */,
-				CF0911902848976A00CB0AF0 /* BestFriendsVideo.swift */,
 				CFE1946A2812A9E300ED5718 /* Streaks */,
 			);
 			path = "My Planet";
@@ -1010,9 +1003,7 @@
 			isa = PBXGroup;
 			children = (
 				CF3295FE290EAF820014F658 /* WorldVid.mp4 */,
-				CF3295FA290BBC720014F658 /* CoolVideo.mp4 */,
 				CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */,
-				CF3295F8290BB9300014F658 /* SplashScreen2.mp4 */,
 			);
 			path = "Ad Videos";
 			sourceTree = "<group>";
@@ -1427,7 +1418,6 @@
 				CF2DBCF128552527008616A3 /* storm2.mp4 in Resources */,
 				CF3295FF290EAF820014F658 /* WorldVid.mp4 in Resources */,
 				CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */,
-				CF3295FB290BBC720014F658 /* CoolVideo.mp4 in Resources */,
 				CF47CF1428E81BBE008B6F11 /* Wind2.mp4 in Resources */,
 				CFDB14FC2855A1E600155CEE /* dramaLights.mp4 in Resources */,
 				CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */,
@@ -1440,7 +1430,6 @@
 				CF65042B28A185750092EEB9 /* PaperAirplanes.mp4 in Resources */,
 				CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */,
 				CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */,
-				CF3295F9290BB9300014F658 /* SplashScreen2.mp4 in Resources */,
 				7ACDB183282825C1009E1CFD /* GoogleService-Info.plist in Resources */,
 				CF37534F28B5E925003817E3 /* Dreams1.mp4 in Resources */,
 			);
@@ -1559,7 +1548,6 @@
 				7AE31CBF262A9A94001EC5A3 /* LoginView.swift in Sources */,
 				CF381A56282842EA00B3719E /* Step2FG_NewSolutions.swift in Sources */,
 				CF37534B28B5D84B003817E3 /* HorizonsPreload1.swift in Sources */,
-				CF0911912848976A00CB0AF0 /* BestFriendsVideo.swift in Sources */,
 				CF3295F7290BAA7C0014F658 /* INFOPreload.swift in Sources */,
 				7AD10452265AB948007627FD /* UIDeviceExtension.swift in Sources */,
 				CF37535D28C6956D003817E3 /* HeartToContinue.swift in Sources */,
