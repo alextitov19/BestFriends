@@ -62,12 +62,12 @@ struct WorldPreload2: View {
                 SomethingNiceCircle (color: ColorManager.purple3, friendName: "Virtual \nHUGS")
             })
 //            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
-            .offset(x: showItems ? 120 : 0, y: showItems ? 135: 0)
+            .offset(x: showItems ? 120 : 0, y: showItems ? 120: 0)
 //
                 NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.purple4, friendName: "PhotoPOP")
                 })
-                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
+                .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
 
                 NavigationLink(destination:  SendSongPush(user: user, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.purple1, friendName: "found \nNEW \nMusic")
@@ -75,7 +75,7 @@ struct WorldPreload2: View {
                 .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
 
                 NavigationLink(destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.purple5, friendName: "share Mood")
+                    SomethingNiceCircle (color: ColorManager.purple5, friendName: "Mood \nChanged")
                 })
                 .offset(x: showItems ? -60 : 0, y: showItems ? -150: 0)
 
@@ -83,7 +83,7 @@ struct WorldPreload2: View {
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
                     SomethingNiceCircle (color: .pink, friendName: "something \nBUGGING \nyou?")
                     })
-                .offset(x: showItems ? 25 : 0, y: showItems ? 240: 0)
+                .offset(x: showItems ? -130 : 0, y: showItems ? -40: 0)
 
 
 
@@ -100,9 +100,9 @@ struct WorldPreload2: View {
            VStack {
 
             Spacer ()
-                   .frame(height: 0)
+                   .frame(height: 270)
 
-              Text("It's OK")
+              Text("Join FriendGroups")
                             .font(.system(size: 17))
 //                            .italic()
                             .foregroundColor(.white)
@@ -110,7 +110,7 @@ struct WorldPreload2: View {
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("to be")
+               Text("around the")
                              .font(.system(size: 17))
 //                             .italic()
                              .foregroundColor(.white)
@@ -118,18 +118,41 @@ struct WorldPreload2: View {
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("N I C E")
+               Text("W O R L D")
                              .font(.system(size: 21))
                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
 
+               
+               Spacer ()
+                      .frame(height: 210)
+               
+               Text("Putting 'POSITIVITY'")
+                             .font(.system(size: 35))
+                             .foregroundColor(ColorManager .purple2)
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
+               
+               Text("back in social media")
+                             .font(.system(size: 30))
+                                .italic()
+                                .foregroundColor(ColorManager .purple2)
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+               
                 }
             }
 
 
+           
+            
+            
+            
            .onTapGesture {
                withAnimation {
                self.showItems.toggle()

@@ -128,7 +128,7 @@ struct InfoViewPlanet: View {
                         
                         destination: SettingsNotificationsView(),
                         label: {
-                            Text("Why keep Notifications 'ON'")
+                            Text("Why keep Notifications 'ON'?")
                                 .fontWeight(.thin)
                                 .foregroundColor(Color.white)
                                 .frame(width: 310, height: 40)
