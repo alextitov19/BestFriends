@@ -137,7 +137,7 @@ struct WorldPreload2: View {
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                
-               Text("back in social media")
+               Text("in social media")
                              .font(.system(size: 30))
                                 .italic()
                                 .foregroundColor(ColorManager .purple2)

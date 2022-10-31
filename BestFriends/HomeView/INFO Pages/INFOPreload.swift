@@ -57,7 +57,9 @@ struct INFOPreload: View {
                     
                     ZStack{
                         
-                        
+                        NavigationLink(destination:  InfoCoolVideo(user: user), label: {
+                            SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "")
+                        })
                         
                         Image(systemName: "heart.fill")
                             .resizable()
