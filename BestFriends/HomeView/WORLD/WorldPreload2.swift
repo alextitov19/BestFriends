@@ -65,25 +65,25 @@ struct WorldPreload2: View {
             .offset(x: showItems ? 120 : 0, y: showItems ? -290: 0)
 //
                 NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "PhotoPOP")
+                    SomethingNiceCircle (color: ColorManager.orange2, friendName: "PhotoPOP")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
 
                 NavigationLink(destination:  SendSongPush(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.purple1, friendName: "found \nNEW \nMusic")
+                    SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "found \nNEW \nMusic")
                 })
-                .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
+                .offset(x: showItems ? -110 : 0, y: showItems ? -250: 0)
 
                 NavigationLink(destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.pmbc_pink, friendName: "Mood \nChanged")
                 })
-                .offset(x: showItems ? -60 : 0, y: showItems ? -150: 0)
+                .offset(x: showItems ? -60 : 0, y: showItems ? -135: 0)
 
 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    SomethingNiceCircle (color: ColorManager.grey2, friendName: "something \nBUGGING \nyou?")
+                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "something \nBUGGING \nyou?")
                     })
-                .offset(x: showItems ? 130 : 0, y: showItems ? 140: 0)
+                .offset(x: showItems ? 130 : 0, y: showItems ? 170: 0)
 
             
                
