@@ -59,10 +59,10 @@ struct WorldPreload2: View {
 
 
                 NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups), label: {
-                SomethingNiceCircle (color: ColorManager.purple3, friendName: "Virtual \nHUGS")
+                SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "Virtual \nHUGS")
             })
 //            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
-            .offset(x: showItems ? 120 : 0, y: showItems ? 120: 0)
+            .offset(x: showItems ? 120 : 0, y: showItems ? -290: 0)
 //
                 NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.purple4, friendName: "PhotoPOP")
@@ -81,9 +81,9 @@ struct WorldPreload2: View {
 
 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "something \nBUGGING \nyou?")
+                    SomethingNiceCircle (color: ColorManager.grey2, friendName: "something \nBUGGING \nyou?")
                     })
-                .offset(x: showItems ? -130 : 0, y: showItems ? -40: 0)
+                .offset(x: showItems ? 130 : 0, y: showItems ? 140: 0)
 
             
                

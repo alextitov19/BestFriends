@@ -616,8 +616,6 @@
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AB52167289D9418005A49FA /* Purple Subscription */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
-				7AC4C01D27FF49F9000C4140 /* Chat */,
-				CF3B65A9280071580003A714 /* Settings */,
 				CF37535628BECF34003817E3 /* Built By Teens */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
@@ -669,8 +667,7 @@
 				CFD0ABCF285BC58D0032CA3D /* HideChat */,
 				CF65042E28A4386E0092EEB9 /* Chat Reactions */,
 			);
-			name = Chat;
-			path = HomeView/Chat;
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		7AC71DA627F3D7D4008D191B /* API */ = {
@@ -741,11 +738,13 @@
 				7AD8DEF827F615F000D9F0E1 /* HomeView.swift */,
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
+				CF785690284EF6D700B31803 /* PlanetMain */,
+				7ACD20BA27FC99B4002F7800 /* InviteView */,
+				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
+				7AC4C01D27FF49F9000C4140 /* Chat */,
+				CF3B65A9280071580003A714 /* Settings */,
 				CFC0EE7829080585006B3FAA /* INFO Pages */,
 				CF47CF0A28E2CAC7008B6F11 /* WORLD */,
-				7ACD20BA27FC99B4002F7800 /* InviteView */,
-				CF785690284EF6D700B31803 /* PlanetMain */,
-				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -896,8 +895,7 @@
 				CF3B65E528021C540003A714 /* Settings View  */,
 				CF3B65CD2801D9D70003A714 /* My Account */,
 			);
-			name = Settings;
-			path = HomeView/Settings;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		CF3B65CD2801D9D70003A714 /* My Account */ = {
