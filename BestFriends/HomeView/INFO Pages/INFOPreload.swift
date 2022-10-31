@@ -45,7 +45,8 @@ struct INFOPreload: View {
                         .frame(height: 125)
                     
                     Text("No one wants to be")
-                        .font(.system(size: 30))
+                        .font(.system(size: 27))
+                        .italic()
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.purple2)
@@ -72,7 +73,8 @@ struct INFOPreload: View {
                         
                         VStack {
                         
-                            
+                            Spacer ()
+                                .frame(height: 40)
                             Text("just")
                                 .font(.system(size: 20))
                             //                            .italic()
@@ -88,6 +90,10 @@ struct INFOPreload: View {
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            
+                            Spacer ()
+                                .frame(height: 7)
+                            
                             
                             Text("F R I E N D")
                                 .font(.system(size: 30))
