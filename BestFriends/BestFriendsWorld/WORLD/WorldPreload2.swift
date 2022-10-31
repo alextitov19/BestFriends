@@ -75,51 +75,69 @@ struct WorldPreload2: View {
                 .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
 
                 NavigationLink(destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.purple5, friendName: "Mood \nChanged")
+                    SomethingNiceCircle (color: ColorManager.pmbc_pink, friendName: "Mood \nChanged")
                 })
                 .offset(x: showItems ? -60 : 0, y: showItems ? -150: 0)
 
 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    SomethingNiceCircle (color: .pink, friendName: "something \nBUGGING \nyou?")
+                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "something \nBUGGING \nyou?")
                     })
                 .offset(x: showItems ? -130 : 0, y: showItems ? -40: 0)
 
-
-
-
-        Image(systemName: "heart.fill")
+            
+               
+                NavigationLink(destination: EmptyView(), label: {
+                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "something \nBUGGING \nyou?")
+                    })
+                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+                
+                
+                
+                Image(systemName: "heart.fill")
                     .resizable()
-                    .foregroundColor(.pink)
-                    .frame(width: 145, height: 145)
-//                    .blur(radius: 2)
+                    .foregroundColor(ColorManager .purple4)
+                    .frame(width: 250, height: 200)
+                //                    .blur(radius: 2)
+                
+                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                    .opacity(0.9)
+                
 
-                    .shadow(color: .white, radius: 65, x: 30, y: 50)
-                    .opacity(0.99)
+//
+//
+//        Image(systemName: "heart.fill")
+//                    .resizable()
+//                    .foregroundColor(ColorManager .purple3)
+//                    .frame(width: 170, height: 145)
+////                    .blur(radius: 2)
+//
+//                    .shadow(color: .white, radius: 65, x: 30, y: 50)
+//                    .opacity(0.95)
 
            VStack {
 
             Spacer ()
                    .frame(height: 270)
-
-              Text("Join FriendGroups")
-                            .font(.system(size: 17))
-//                            .italic()
-                            .foregroundColor(.white)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//              Text("Join FriendGroups")
+//                            .font(.system(size: 17))
+////                            .italic()
+//                            .foregroundColor(.white)
+//                            .fontWeight(.thin)
+//                            .multilineTextAlignment(.center)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                Text("around the")
-                             .font(.system(size: 17))
-//                             .italic()
+                             .font(.system(size: 30))
+                             .italic()
                              .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                Text("W O R L D")
-                             .font(.system(size: 21))
+                             .font(.system(size: 47))
                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
