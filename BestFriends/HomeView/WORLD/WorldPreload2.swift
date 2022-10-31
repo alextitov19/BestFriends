@@ -100,33 +100,15 @@ struct WorldPreload2: View {
                     .frame(width: 250, height: 200)
                 //                    .blur(radius: 2)
                 
-                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
                     .opacity(0.9)
-                
 
-//
-//
-//        Image(systemName: "heart.fill")
-//                    .resizable()
-//                    .foregroundColor(ColorManager .purple3)
-//                    .frame(width: 170, height: 145)
-////                    .blur(radius: 2)
-//
-//                    .shadow(color: .white, radius: 65, x: 30, y: 50)
-//                    .opacity(0.95)
 
            VStack {
 
             Spacer ()
                    .frame(height: 270)
-//
-//              Text("Join FriendGroups")
-//                            .font(.system(size: 17))
-////                            .italic()
-//                            .foregroundColor(.white)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+
 
                Text("around the")
                              .font(.system(size: 30))

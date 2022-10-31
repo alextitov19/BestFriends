@@ -742,6 +742,7 @@
 				7ADFDB32289B1FA60004FB1C /* ShakePhotoPopView.swift */,
 				CF650405288E76B50092EEB9 /* GotPushNotification.swift */,
 				CFC0EE7829080585006B3FAA /* INFO Pages */,
+				CF47CF0A28E2CAC7008B6F11 /* WORLD */,
 				7ACD20BA27FC99B4002F7800 /* InviteView */,
 				CF785690284EF6D700B31803 /* PlanetMain */,
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
@@ -1034,7 +1035,6 @@
 		CF650423289F11490092EEB9 /* BestFriendsWorld */ = {
 			isa = PBXGroup;
 			children = (
-				CF47CF0A28E2CAC7008B6F11 /* WORLD */,
 				CF37534928B5D7E8003817E3 /* My ROOM */,
 			);
 			path = BestFriendsWorld;
