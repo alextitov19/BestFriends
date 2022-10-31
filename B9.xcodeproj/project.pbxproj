@@ -885,7 +885,6 @@
 			children = (
 				CFC0EE6829022560006B3FAA /* ShaylaPage.swift */,
 				CF3AE3B428F9F5F8002584A6 /* TeenVideo.swift */,
-				CF37535928BED060003817E3 /* BuiltForTeens.swift */,
 			);
 			path = BuiltByTeens;
 			sourceTree = "<group>";
@@ -1188,6 +1187,7 @@
 			children = (
 				CF3295F6290BAA7C0014F658 /* INFOPreload.swift */,
 				CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */,
+				CF37535928BED060003817E3 /* BuiltForTeens.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
 				CFC0EE79290805C8006B3FAA /* InfoAddFriends.swift */,
 				CFC0EE7B290805E7006B3FAA /* InfoCreateChatRm.swift */,

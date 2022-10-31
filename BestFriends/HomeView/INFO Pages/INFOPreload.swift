@@ -61,7 +61,7 @@ struct INFOPreload: View {
                         
                         Image(systemName: "heart.fill")
                             .resizable()
-                            .foregroundColor(.pink)
+                            .foregroundColor(ColorManager .purple4)
                             .frame(width: 250, height: 200)
                         //                    .blur(radius: 2)
                         
@@ -111,9 +111,9 @@ struct INFOPreload: View {
                         NavigationLink(
                             destination: InfoCoolVideo(user: user),
                             label: {
-                                Text("Walk-through")
+                                Text("Next")
                                     .fontWeight(.thin)
-                                    .frame(width: 200, height: 30)
+                                    .frame(width: 100, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 25))
                                     .background(ColorManager.purple3)

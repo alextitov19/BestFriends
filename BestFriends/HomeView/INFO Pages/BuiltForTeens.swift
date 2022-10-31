@@ -15,7 +15,7 @@ struct BuiltForTeens: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
-//    let user: User
+    let user: User
 //    let atmosphere: Atmosphere
 //    let friends: [User]
 //    let groups: [Group]
@@ -38,75 +38,32 @@ struct BuiltForTeens: View {
 //                .blendMode(.screen)
 
             
-            VStack {
+        
          
-                Text("trying our best to")
-//                    .font(.system(size: 25, weight: .bold))
-                    .font(.system(size: 35, weight: .bold))
-                    .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-//                    .foregroundColor(ColorManager.purple5)
-//                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-
-                
-                Text("help you build")
-//                    .font(.system(size: 25, weight: .bold))
-                    .font(.system(size: 35, weight: .bold))
-                 .foregroundColor(ColorManager .grey1)
-                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    .opacity(0.50)
-//                    .foregroundColor(ColorManager.purple5)
-//                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 10)
-                
+             
             VStack {
                     
           
-                Text("kickass,")
-                    .font(.system(size: 35))
-                
-                    .foregroundColor(ColorManager.purple5)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Text("resilient,")
-                    .font(.system(size: 40))
-                
-                    .foregroundColor(ColorManager.purple4)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-               
-                Text("supportive")
-                    .font(.system(size: 45))
-                
-                    .foregroundColor(ColorManager.purple3)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-                
-                Text("and yep - lasting")
-                    .font(.system(size: 48))
-                
-                    .foregroundColor(ColorManager.purple2)
-                    .fontWeight(.ultraLight)
-                    .multilineTextAlignment(.center)
-            
-                    
-                
-                Spacer()
-                    .frame(height: 15)
-                
-                Text("FRIENDSHIPS")
+                Text("FriendGroups")
                     .font(.system(size: 63))
                 
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                
+                
+                Spacer()
+                    .frame(height: 15)
+                
+                
+                     
+                     Text("- standing together in the storm \n- always having each other's backs \n- never giving up on each other \n")
+                         .font(.system(size: 23))
+                     
+                         .fontWeight(.thin)
+                         .foregroundColor(Color.white)
+                         .padding()
+ //
                 Spacer()
                     .frame(height: 100)
             
@@ -114,13 +71,13 @@ struct BuiltForTeens: View {
 
 
                         NavigationLink(
-                            destination: TeenVideo(),
+                            destination: InfoViewPlanet(user: user),
                             label: {
-                                Text("Next")
+                                Text("Walk-through")
                                     .fontWeight(.thin)
-                                    .frame(width: 100, height: 40)
+                                    .frame(width: 200, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 30))
+                                    .font(.system(size: 25))
                                     .background(ColorManager.purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
@@ -190,9 +147,60 @@ struct BuiltForTeens: View {
             }
 }
     }
-}
+
         
     
     
-
-
+//                Text("kickass,")
+//                    .font(.system(size: 35))
+//
+//                    .foregroundColor(ColorManager.purple5)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("resilient,")
+//                    .font(.system(size: 40))
+//
+//                    .foregroundColor(ColorManager.purple4)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("supportive")
+//                    .font(.system(size: 45))
+//
+//                    .foregroundColor(ColorManager.purple3)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//
+//                Text("and yep - lasting")
+//                    .font(.system(size: 48))
+//
+//                    .foregroundColor(ColorManager.purple2)
+//                    .fontWeight(.ultraLight)
+//                    .multilineTextAlignment(.center)
+//
+//
+//
+//Text("trying our best to")
+////                    .font(.system(size: 25, weight: .bold))
+//    .font(.system(size: 35, weight: .bold))
+//    .foregroundColor(ColorManager .grey1)
+//    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//    .opacity(0.50)
+////                    .foregroundColor(ColorManager.purple5)
+////                    .fontWeight(.ultraLight)
+//    .multilineTextAlignment(.center)
+//
+//
+//Text("help you build")
+////                    .font(.system(size: 25, weight: .bold))
+//    .font(.system(size: 35, weight: .bold))
+// .foregroundColor(ColorManager .grey1)
+//    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//    .opacity(0.50)
+////                    .foregroundColor(ColorManager.purple5)
+////                    .fontWeight(.ultraLight)
+//    .multilineTextAlignment(.center)
+//
+//Spacer()
+//    .frame(height: 10)

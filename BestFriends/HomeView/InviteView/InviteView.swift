@@ -51,11 +51,12 @@ struct InviteView: View {
                 Spacer()
                     .frame(height: 10)
               
-                Text("1) First, ask friend to download BestFriendsNetwork \n2) Only one of you send invite \n3) Invite only ONCE or multi planets appear")
+                Text("1) First, ask friend to download \n             BestFriendsNetwork \n2) Only one of you send invite \n3) Invite only ONCE or multi planets appear")
                     .fontWeight(.thin)
                     .foregroundColor(.white)
                     .italic()
                     .font(.system(size: 17))
+                    .padding()
                 
                 Spacer()
                     .frame(height: 10)
