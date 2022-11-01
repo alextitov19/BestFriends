@@ -42,7 +42,12 @@ struct BuiltForTeens: View {
          
              
             VStack {
-                    
+                Text("building")
+                    .font(.system(size: 30))
+                    .italic()
+                    .foregroundColor(ColorManager.grey1)
+                    .fontWeight(.thin)
+                    .multilineTextAlignment(.center)
           
                 Text("FriendGroups")
                     .font(.system(size: 63))
@@ -57,7 +62,7 @@ struct BuiltForTeens: View {
                 
                 
                      
-                     Text("- standing together in the storm \n- always having each other's backs \n- never giving up on each other \n")
+                     Text("- standing together in the storm \n- always having each other's backs \n- never giving up on each other \n- each of us uniquely special")
                          .font(.system(size: 23))
                      
                          .fontWeight(.thin)

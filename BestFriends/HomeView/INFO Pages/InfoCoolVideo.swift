@@ -39,22 +39,29 @@ struct InfoCoolVideo: View {
             
             VStack {
                 
-                Text("hi, welcome to")
-                    .font(.system(size: 17))
-                    .italic()
-                    .fontWeight(.thin)
-                    .foregroundColor(Color.white)
+            
                
                 Spacer()
                     .frame(height: 10)
                 
                 Text("World FriendGroups")
                     .font(.system(size: 32))
-                
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
                 
-                Text("It's a moment of kindness, \n\n    a warm twinge in your heart, \n\n    feeling safe in the silence, \n\n    a girl's face holding unexpected flowers, \n\n    it's like kicking through Autumn leaves.")
+                Text("moments of kindness")
+                    .font(.system(size: 17))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                
+                Text("building a sustainable planet")
+                    .font(.system(size: 17))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                
+                Text("   warm pings in our hearts, \n\n   feeling safe in the silence, \n\n   a girl's face holding unexpected flowers, \n\n   kicking in Autumn leaves comfortable inside \n\n   carefree, making a snow angle")
                     .font(.system(size: 18))
 //                    .italic()
                     .fontWeight(.thin)
