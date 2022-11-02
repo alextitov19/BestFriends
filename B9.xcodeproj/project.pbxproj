@@ -620,7 +620,6 @@
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				D0CC1A02283EE31900E7461F /* Horizons */,
-				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
 				CF2DBCF2285527C9008616A3 /* My Planet */,
 				CF37535B28C6953B003817E3 /* DREAMS */,
 				CFDA4BCC28D0F8D500118D90 /* DREAM VAULT */,
@@ -964,17 +963,11 @@
 				CFC0EE702906F9D9006B3FAA /* New Group */,
 				CF650426289F11980092EEB9 /* WorldPreload.swift */,
 				CFC0EE6E2906772A006B3FAA /* WorldPreload2.swift */,
-				CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */,
-				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
-				CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */,
-				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
-				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
-				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
-				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
-				CFC0EE712906F9FE006B3FAA /* BuggingPreload1.swift */,
-				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
-				CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */,
-				CF37535028BB3398003817E3 /* SendSongPush.swift */,
+				CFD8BD052912A98A00F86EFB /* SaySomethingNice */,
+				CFD8BD032912A8F300F86EFB /* PhotoPOP */,
+				CFD8BD042912A95900F86EFB /* SomethingBuggingYou */,
+				CFD8BD062912A9C500F86EFB /* SendSong */,
+				CFD04689282D6FDD00BF0B02 /* Atmosphere */,
 				CFDB150A2858F4D200155CEE /* Virtual HUG */,
 			);
 			path = WORLD;
@@ -1272,6 +1265,45 @@
 				CFAB54242820FFCC00BBF502 /* Push Notifiction Fight Invite */,
 			);
 			path = DramaCentral;
+			sourceTree = "<group>";
+		};
+		CFD8BD032912A8F300F86EFB /* PhotoPOP */ = {
+			isa = PBXGroup;
+			children = (
+				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
+				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
+				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
+				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
+			);
+			path = PhotoPOP;
+			sourceTree = "<group>";
+		};
+		CFD8BD042912A95900F86EFB /* SomethingBuggingYou */ = {
+			isa = PBXGroup;
+			children = (
+				CFC0EE712906F9FE006B3FAA /* BuggingPreload1.swift */,
+				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
+				CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */,
+			);
+			path = SomethingBuggingYou;
+			sourceTree = "<group>";
+		};
+		CFD8BD052912A98A00F86EFB /* SaySomethingNice */ = {
+			isa = PBXGroup;
+			children = (
+				CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */,
+				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
+				CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */,
+			);
+			path = SaySomethingNice;
+			sourceTree = "<group>";
+		};
+		CFD8BD062912A9C500F86EFB /* SendSong */ = {
+			isa = PBXGroup;
+			children = (
+				CF37535028BB3398003817E3 /* SendSongPush.swift */,
+			);
+			path = SendSong;
 			sourceTree = "<group>";
 		};
 		CFDA4BCC28D0F8D500118D90 /* DREAM VAULT */ = {
@@ -1850,7 +1882,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -1880,7 +1912,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;

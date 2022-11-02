@@ -182,7 +182,7 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                    Text("1st time?")
+                                    Text("new user?")
                                         .foregroundColor(.black)
                                         .font(.system(size: 16, weight: .regular))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -190,13 +190,13 @@ struct PlanetActionsView: View {
                                     
                                     Text("START")
                                         .foregroundColor(.green)
-                                        .font(.system(size: 24, weight: .bold))
+                                        .font(.system(size: 26, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.70)
                                     
                                     Text("HERE!")
                                         .foregroundColor(.green)
-                                        .font(.system(size: 20, weight: .bold))
+                                        .font(.system(size: 24, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.70)
                                     

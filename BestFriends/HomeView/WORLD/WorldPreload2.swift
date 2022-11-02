@@ -59,29 +59,29 @@ struct WorldPreload2: View {
 
 
                 NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups), label: {
-                SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "Virtual \nHUGS")
+                SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "send \nVirtual \nHUG")
             })
 //            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
             .offset(x: showItems ? 120 : 0, y: showItems ? -290: 0)
 //
                 NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.orange2, friendName: "PhotoPOP")
+                    SomethingNiceCircle (color: ColorManager.orange2, friendName: "Shaking \nCool \nPhotos")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
 
                 NavigationLink(destination:  SendSongPush(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "found \nNEW \nMusic")
+                    SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "YEP, \nfound \nNEW \nMusic")
                 })
                 .offset(x: showItems ? -110 : 0, y: showItems ? -250: 0)
 
                 NavigationLink(destination:  AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.pmbc_pink, friendName: "Mood \nChanged")
+                    SomethingNiceCircle (color: ColorManager.pmbc_pink, friendName: "my \nDAY \nJust \nChanged")
                 })
-                .offset(x: showItems ? -60 : 0, y: showItems ? -135: 0)
+                .offset(x: showItems ? -60 : 0, y: showItems ? -155: 0)
 
 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "something \nBUGGING \nyou?")
+                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "OK, \nsomething's \nBUGGING \nme")
                     })
                 .offset(x: showItems ? 130 : 0, y: showItems ? 170: 0)
 
@@ -107,40 +107,54 @@ struct WorldPreload2: View {
            VStack {
 
             Spacer ()
-                   .frame(height: 270)
-
-
-               Text("around the")
+                   .frame(height: 240)
+              
+               Text("tell a")
                              .font(.system(size: 30))
-                             .italic()
-                             .foregroundColor(.white)
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-
-               Text("W O R L D")
-                             .font(.system(size: 47))
                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
 
+               Text("F R I E N D")
+                             .font(.system(size: 40))
+                            .foregroundColor(.white)
+                             .fontWeight(.thin)
+                             .multilineTextAlignment(.center)
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+
+               Text("N O W ...")
+                             .font(.system(size: 30))
+                             .italic()
+                            .foregroundColor(.green)
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+               
                
                Spacer ()
-                      .frame(height: 210)
+                      .frame(height: 130)
                
-               Text("Putting 'POSITIVITY'")
-                             .font(.system(size: 35))
-                             .foregroundColor(ColorManager .purple2)
+               Text("Building")
+                             .font(.system(size: 20))
+                             .italic()
+                             .foregroundColor(.white)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                
-               Text("in social media")
+               Text("B E T T E R")
+                             .font(.system(size: 47))
+                             .foregroundColor(ColorManager .purple2)
+//                            .foregroundColor(.white)
+                             .fontWeight(.thin)
+                             .multilineTextAlignment(.center)
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+               
+               Text("F R I E N D S H I P S")
                              .font(.system(size: 30))
-                                .italic()
-                                .foregroundColor(ColorManager .purple2)
+                            .foregroundColor(ColorManager .purple2)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)

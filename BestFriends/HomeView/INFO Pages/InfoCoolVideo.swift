@@ -55,14 +55,14 @@ struct InfoCoolVideo: View {
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
                 
-                Text("building a sustainable planet")
+                Text("building a more sustainable planet")
                     .font(.system(size: 17))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
                 
-                Text("   warm pings in our hearts, \n\n   feeling safe in the silence, \n\n   a girl's face holding unexpected flowers, \n\n   kicking in Autumn leaves comfortable inside \n\n   carefree, making a snow angle")
-                    .font(.system(size: 18))
+                Text("   Our friends sending warm pings for our hearts. \n\n   Feeling safe in the silence, we're truely Special, \n\n   like a girl's face holding unexpected flowers. \n\n   Kicking autumn's leaves; knowing our friends like us \n\n   NOW, we're somehow lighter as if making snow angles")
+                    .font(.system(size: 12))
 //                    .italic()
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
