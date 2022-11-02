@@ -103,13 +103,13 @@ struct PlanetActionsView: View {
                             VStack {
                                 
                                 Text("Envisioned")
-                                    .foregroundColor(.green)
+                                    .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
       
                                 Text("by")
-                                    .foregroundColor(.green)
+                                    .foregroundColor(.white)
                                     .font(.system(size: 14, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)

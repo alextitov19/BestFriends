@@ -108,7 +108,7 @@ struct WorldPreload2: View {
            VStack {
 
             Spacer ()
-                   .frame(height: 240)
+                   .frame(height: 125)
               
                Text("You're ")
                              .font(.system(size: 30))
@@ -135,7 +135,7 @@ struct WorldPreload2: View {
                
                Spacer ()
                       .frame(height: 130)
-//               
+//
 //               Text("Building")
 //                             .font(.system(size: 20))
 //                             .italic()
@@ -144,7 +144,7 @@ struct WorldPreload2: View {
 //                             .multilineTextAlignment(.center)
 //                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 //
-//               
+//
 //               Text("B E T T E R")
 //                             .font(.system(size: 47))
 //                             .foregroundColor(ColorManager .purple2)
@@ -152,14 +152,14 @@ struct WorldPreload2: View {
 //                             .fontWeight(.thin)
 //                             .multilineTextAlignment(.center)
 //                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-//               
+//
 //               Text("F R I E N D S H I P S")
 //                             .font(.system(size: 30))
 //                            .foregroundColor(ColorManager .purple2)
 //                             .fontWeight(.light)
 //                             .multilineTextAlignment(.center)
 //                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-//               
+//
                 }
             }
 
