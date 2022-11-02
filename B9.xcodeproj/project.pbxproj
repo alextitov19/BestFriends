@@ -622,8 +622,6 @@
 				D0CC1A02283EE31900E7461F /* Horizons */,
 				CF2DBCF2285527C9008616A3 /* My Planet */,
 				CF37535B28C6953B003817E3 /* DREAMS */,
-				CFDA4BCC28D0F8D500118D90 /* DREAM VAULT */,
-				CF650423289F11490092EEB9 /* BestFriendsWorld */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD12CC52819436F00AB2539 /* OurStory */,
@@ -814,16 +812,6 @@
 			path = "My Planet";
 			sourceTree = "<group>";
 		};
-		CF37534928B5D7E8003817E3 /* My ROOM */ = {
-			isa = PBXGroup;
-			children = (
-				CFD12CC82819E83900AB2539 /* ThoughtfulMessages */,
-				CFD0469A2837D9BC00BF0B02 /* PhotoPoP */,
-				CF785693284F3D2A00B31803 /* PlayLists */,
-			);
-			path = "My ROOM";
-			sourceTree = "<group>";
-		};
 		CF37535628BECF34003817E3 /* Built By Teens */ = {
 			isa = PBXGroup;
 			children = (
@@ -854,6 +842,7 @@
 				CF3DB36C28D8E08C00BF9CCD /* OurStrategy.swift */,
 				CF3DB38228DAD2D200BF9CCD /* NewPoems.swift */,
 				CF47CF0828E2C93E008B6F11 /* BeSinger.swift */,
+				CFDA4BCC28D0F8D500118D90 /* DREAM VAULT */,
 			);
 			path = DREAMS;
 			sourceTree = "<group>";
@@ -1021,14 +1010,6 @@
 				CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */,
 			);
 			path = "Background Videos";
-			sourceTree = "<group>";
-		};
-		CF650423289F11490092EEB9 /* BestFriendsWorld */ = {
-			isa = PBXGroup;
-			children = (
-				CF37534928B5D7E8003817E3 /* My ROOM */,
-			);
-			path = BestFriendsWorld;
 			sourceTree = "<group>";
 		};
 		CF65042E28A4386E0092EEB9 /* Chat Reactions */ = {
@@ -1274,6 +1255,7 @@
 				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
 				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
 				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
+				CFD0469A2837D9BC00BF0B02 /* PhotoPoP */,
 			);
 			path = PhotoPOP;
 			sourceTree = "<group>";
@@ -1294,6 +1276,7 @@
 				CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */,
 				CF37535228BD5544003817E3 /* SaySomethingNice2.swift */,
 				CF4CFAC128E8DC3B00D6AEA9 /* SaySomethingNice3.swift */,
+				CFD12CC82819E83900AB2539 /* ThoughtfulMessages */,
 			);
 			path = SaySomethingNice;
 			sourceTree = "<group>";
@@ -1302,6 +1285,7 @@
 			isa = PBXGroup;
 			children = (
 				CF37535028BB3398003817E3 /* SendSongPush.swift */,
+				CF785693284F3D2A00B31803 /* PlayLists */,
 			);
 			path = SendSong;
 			sourceTree = "<group>";
