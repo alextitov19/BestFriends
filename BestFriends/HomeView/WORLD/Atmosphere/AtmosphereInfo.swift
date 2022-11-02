@@ -71,7 +71,7 @@ struct AtmosphereInfo: View {
                         .frame(height: 30)
                     
                     
-                    Text("with a")
+                    Text("with an")
                         .font(.system(size: 18))
                         
                         .fontWeight(.light)
@@ -81,6 +81,13 @@ struct AtmosphereInfo: View {
                  
                     
                     VStack {
+                        
+                        Text("URGENT")
+                            .font(.system(size: 30))
+                            
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.pink)
                         
                         Text("PUSH NOTIFICATION")
                             .font(.system(size: 30))
@@ -99,7 +106,20 @@ struct AtmosphereInfo: View {
                         Spacer()
                             .frame(height: 20)
                         
-                    
+                        NavigationLink(
+                            destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
+                            label: {
+                                Text("How this works")
+                                    .fontWeight(.thin)
+                                    .foregroundColor(Color.white)
+                                    .font(.system(size: 17))
+                                    .italic()
+                                    .frame(width: 75, height: 75)
+                                    .background(.blue)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            })
+
                         
                         
                         Spacer()
@@ -132,7 +152,7 @@ struct AtmosphereInfo: View {
                         
                         
                         Spacer()
-                            .frame(height: 75)
+                            .frame(height: 35)
                         
                         
                         VStack {
@@ -143,26 +163,26 @@ struct AtmosphereInfo: View {
                             NavigationLink(
                                 destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
                                 label: {
-                                    Text("Next")
+                                    Text("Enter")
                                         .fontWeight(.thin)
-                                        .frame(width: 100, height: 30)
+                                        .frame(width: 150, height: 40)
                                         .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
+                                        .font(.system(size: 30))
                                         .background(ColorManager.purple3)
                                         .cornerRadius(15)
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                 })
-                            
-                            Text("your atmosphere color \nwill change on homepage ")
-                                .font(.system(size: 18))
-                                .italic()
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            Spacer()
-                                .frame(height: 140)
-                            
+//                            
+//                            Text("your atmosphere color \nwill change on homepage ")
+//                                .font(.system(size: 18))
+//                                .italic()
+//                                .fontWeight(.light)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
+//                            Spacer()
+//                                .frame(height: 140)
+//
                         }
                     }
                     
