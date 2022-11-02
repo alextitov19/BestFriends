@@ -269,13 +269,13 @@ struct AtmosphereMain2: View {
                 
                 VStack {
                     // MARK: End of feeling buttons
-                    
-                    Text("tap [return] to hide keyboard")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager.red)
-                    
+//
+//                    Text("tap [return] to hide keyboard")
+//                        .font(.system(size: 15))
+//                        .italic()
+//                        .fontWeight(.light)
+//                        .foregroundColor(ColorManager.red)
+//
                     
                     HStack {
                         Text("Tell friends what's going on")
@@ -414,7 +414,7 @@ struct AtmosphereMain2: View {
                     Spacer()
                         .frame(height: 17)
                     
-                    HStack {
+                    VStack {
                     
                     Button(action: {
                         defaultMessageButtonTapped(defaultMessage: "SHARE")
