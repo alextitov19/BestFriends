@@ -71,7 +71,7 @@ struct AtmosphereInfo: View {
                         .frame(height: 30)
                     
                     
-                    Text("with an")
+                    Text("with a Special")
                         .font(.system(size: 18))
                         
                         .fontWeight(.light)

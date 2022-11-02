@@ -19,6 +19,7 @@ struct WorldPreload2: View {
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
     let groups: [Group]
+//    let friendAtmospheres: [Atmosphere]
 
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -74,7 +75,7 @@ struct WorldPreload2: View {
                 })
                 .offset(x: showItems ? -110 : 0, y: showItems ? -250: 0)
 
-                NavigationLink(destination:  AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends), label: {
+                NavigationLink(destination:  AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                     SomethingNiceCircle (color: ColorManager.pmbc_pink, friendName: "my \nDAY \nJust \nChanged")
                 })
                 .offset(x: showItems ? -60 : 0, y: showItems ? -155: 0)
@@ -101,7 +102,7 @@ struct WorldPreload2: View {
                 //                    .blur(radius: 2)
                 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                    .opacity(0.9)
+                    .opacity(0.95)
 
 
            VStack {
@@ -109,24 +110,24 @@ struct WorldPreload2: View {
             Spacer ()
                    .frame(height: 240)
               
-               Text("tell a")
+               Text("You're ")
                              .font(.system(size: 30))
                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("F R I E N D")
-                             .font(.system(size: 40))
-                            .foregroundColor(.white)
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-
-               Text("N O W ...")
-                             .font(.system(size: 30))
-                             .italic()
+               Text("L I V E")
+                             .font(.system(size: 55))
                             .foregroundColor(.green)
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+
+               Text("with Friends")
+                             .font(.system(size: 25))
+                             .italic()
+                            .foregroundColor(.white)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -134,31 +135,31 @@ struct WorldPreload2: View {
                
                Spacer ()
                       .frame(height: 130)
-               
-               Text("Building")
-                             .font(.system(size: 20))
-                             .italic()
-                             .foregroundColor(.white)
-                             .fontWeight(.light)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-
-               
-               Text("B E T T E R")
-                             .font(.system(size: 47))
-                             .foregroundColor(ColorManager .purple2)
-//                            .foregroundColor(.white)
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-               
-               Text("F R I E N D S H I P S")
-                             .font(.system(size: 30))
-                            .foregroundColor(ColorManager .purple2)
-                             .fontWeight(.light)
-                             .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-               
+//               
+//               Text("Building")
+//                             .font(.system(size: 20))
+//                             .italic()
+//                             .foregroundColor(.white)
+//                             .fontWeight(.light)
+//                             .multilineTextAlignment(.center)
+//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//               
+//               Text("B E T T E R")
+//                             .font(.system(size: 47))
+//                             .foregroundColor(ColorManager .purple2)
+////                            .foregroundColor(.white)
+//                             .fontWeight(.thin)
+//                             .multilineTextAlignment(.center)
+//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//               
+//               Text("F R I E N D S H I P S")
+//                             .font(.system(size: 30))
+//                            .foregroundColor(ColorManager .purple2)
+//                             .fontWeight(.light)
+//                             .multilineTextAlignment(.center)
+//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//               
                 }
             }
 

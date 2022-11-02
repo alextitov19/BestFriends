@@ -92,10 +92,3 @@ struct ReceivedPlaylist: View {
 
 
 
-struct ReceivedPlaylist_Previews : PreviewProvider {
-    static var previews: some View {
-        ReceivedPlaylist()
-    }
-}
-
-
