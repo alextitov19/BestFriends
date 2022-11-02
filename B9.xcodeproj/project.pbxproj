@@ -237,6 +237,7 @@
 		CFD12CCF281A67FC00AB2539 /* DramaMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */; };
 		CFD12CD1281A754200AB2539 /* Step1_NotReadyTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CD0281A754200AB2539 /* Step1_NotReadyTalk.swift */; };
 		CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */; };
+		CFD8BD082912B0EB00F86EFB /* AtmosphereInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */; };
 		CFDA4BCE28D1037100118D90 /* DreamVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */; };
 		CFDA4BD628D10C9600118D90 /* DreamPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */; };
 		CFDA4BD828D1999900118D90 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD728D1999900118D90 /* Heart.swift */; };
@@ -487,6 +488,7 @@
 		CFD12CCE281A67FC00AB2539 /* DramaMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DramaMainView.swift; sourceTree = "<group>"; };
 		CFD12CD0281A754200AB2539 /* Step1_NotReadyTalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1_NotReadyTalk.swift; sourceTree = "<group>"; };
 		CFD12CD2281A821C00AB2539 /* FightWithFriend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightWithFriend.swift; sourceTree = "<group>"; };
+		CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo2.swift; sourceTree = "<group>"; };
 		CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamVaultView.swift; sourceTree = "<group>"; };
 		CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamPlaylist.swift; sourceTree = "<group>"; };
 		CFDA4BD728D1999900118D90 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
@@ -1173,6 +1175,7 @@
 			isa = PBXGroup;
 			children = (
 				CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */,
+				CFD8BD072912B0EB00F86EFB /* AtmosphereInfo2.swift */,
 				CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */,
 				CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */,
 				CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */,
@@ -1575,6 +1578,7 @@
 				CFD12CD1281A754200AB2539 /* Step1_NotReadyTalk.swift in Sources */,
 				CF1ECAC728752C3700D999F8 /* SettingsTutorial.swift in Sources */,
 				CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */,
+				CFD8BD082912B0EB00F86EFB /* AtmosphereInfo2.swift in Sources */,
 				CF37535128BB3398003817E3 /* SendSongPush.swift in Sources */,
 				CFDB15102859415D00155CEE /* MasterFriendVault.swift in Sources */,
 				62319AAD284A788000CA0359 /* FG_Video.swift in Sources */,

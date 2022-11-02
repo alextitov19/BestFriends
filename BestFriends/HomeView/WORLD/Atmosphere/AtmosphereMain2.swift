@@ -48,7 +48,7 @@ struct AtmosphereMain2: View {
                 HStack {
                    
                     NavigationLink(
-                        destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends),
+                        destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
                         label: {
                             Text("How this works")
                                 .fontWeight(.thin)

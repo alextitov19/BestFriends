@@ -40,52 +40,24 @@ struct AtmosphereInfo: View {
     //                          .frame(height: 0)
     //
         
-           
-            
-        VStack {
-            
-
-     
             VStack {
            
-                    VStack {
-                        
-                        Text("Let your friends know")
-                            .font(.system(size: 33))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                           .foregroundColor(Color.white)
-                        
-                        Text("if your day has changed")
-                            .font(.system(size: 33))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                           .foregroundColor(Color.white)
-            
-                        Spacer()
-                        .frame(height: 10)
-               
-                       
-                        Text("Your friends can instantly see")
+                
+                        Text("Your friends instantly see")
                             .font(.system(size: 18))
                             .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                            .foregroundColor(Color.white)
                         
-                        Text("how your day is going")
+                        Text("your 'mood' reflected in the color ")
                             .font(.system(size: 18))
                             .italic()
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
                            .foregroundColor(Color.white)
                         
-                        Text("by the color of the")
-                            .font(.system(size: 18))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                           .foregroundColor(Color.white)
+                    
                         
                         Text("atmosphere around your planet")
                             .font(.system(size: 18))
@@ -97,7 +69,7 @@ struct AtmosphereInfo: View {
                         Spacer()
                              .frame(height: 25)
                     
-                        VStack {
+        VStack {
                             
                         Text("So They Can")
                             .font(.system(size: 30))
@@ -121,122 +93,10 @@ struct AtmosphereInfo: View {
                     
             }
                 
-                
-                VStack {
+           
           
                         Spacer()
                             .frame(height: 25)
-                 
-                    
-                    Text("YOU")
-                        .font(.system(size: 30))
-                        .italic()
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                 
-                    
-                    Text("Step 1: Select your new Aura")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    Text("Step 2: Type brief explaination")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                VStack {
-          
-                  
-                    
-                    
-                    Text("Step 3: Slect who you want to notify")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-              
-                    
-                    Text("-tap [Share] sending push notification")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                  
-                    Spacer()
-                         .frame(height: 25)
-                VStack {
-                    Text("YOUR FRIEND")
-                        .font(.system(size: 30))
-                        .italic()
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                
-                    
-                    Text("Your friend taps the push notification")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    
-                    Text("-taps your planet on homepage")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    
-                    Text("-taps [Friends Aura] from the dropdown")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                
-                    Spacer()
-                         .frame(height: 25)
-                    
-                    Text("FRIEND RESPONDS")
-                        .font(.system(size: 30))
-                        .italic()
-                        .fontWeight(.regular)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-      
-                    Text("-with supportive message")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    
-                    Text("-a virtual Hug")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
-                    
-                    
-                    Text("-a song that matches your Aura")
-                        .font(.system(size: 18))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .purple3)
                     
                     
         VStack {
@@ -267,9 +127,9 @@ struct AtmosphereInfo: View {
 }
 }
 }
-}
-}
-}
-}
 
-}
+
+
+
+
+
