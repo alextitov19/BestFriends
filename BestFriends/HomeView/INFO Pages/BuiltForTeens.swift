@@ -42,7 +42,7 @@ struct BuiltForTeens: View {
          
              
             VStack {
-                Text("building")
+                Text("our")
                     .font(.system(size: 30))
                     .italic()
                     .foregroundColor(ColorManager.grey1)
@@ -62,7 +62,7 @@ struct BuiltForTeens: View {
                 
                 
                      
-                     Text("- standing together in the storm \n- always having each other's backs \n- never giving up on each other \n- each of us uniquely special")
+                     Text("- standing together in the storm \n- always having each other's backs \n- never giving up on each other \n- yet, each of us uniquely special")
                          .font(.system(size: 23))
                      
                          .fontWeight(.thin)
@@ -78,9 +78,9 @@ struct BuiltForTeens: View {
                         NavigationLink(
                             destination: InfoViewPlanet(user: user),
                             label: {
-                                Text("Walk-through")
+                                Text("App Walk-through")
                                     .fontWeight(.thin)
-                                    .frame(width: 200, height: 30)
+                                    .frame(width: 225, height: 30)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 25))
                                     .background(ColorManager.purple3)

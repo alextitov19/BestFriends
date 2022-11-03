@@ -66,7 +66,7 @@ struct AtmosphereInfo1: View {
      
 
 
-              NavigationLink(destination: EmptyView(), label: {
+              NavigationLink(destination: ReceivedPlaylist(), label: {
                   AtmosphereCircle (color: ColorManager.grey3, friendName: "Alone \nwith my \nPlaylist")
             })
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)

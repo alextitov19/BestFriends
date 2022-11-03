@@ -42,6 +42,13 @@ struct InfoCoolVideo: View {
             
                
                 Spacer()
+                
+                Text("building")
+                    .font(.system(size: 20))
+                    .italic()
+                    .fontWeight(.thin)
+                    .foregroundColor(Color.white)
+                
                     .frame(height: 10)
                 
                 Text("World FriendGroups")
@@ -55,13 +62,13 @@ struct InfoCoolVideo: View {
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
                 
-                Text("building a more sustainable planet")
+                Text("amoung friends")
                     .font(.system(size: 17))
                     .italic()
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
                 
-                Text("   Our friends sending warm pings for our hearts. \n\n   Feeling safe in the silence, we're truely Special, \n\n   like a girl's face holding unexpected flowers. \n\n   Kicking autumn's leaves; knowing our friends like us \n\n   NOW, we're somehow lighter as if making snow angles")
+                Text("   Our friends sending warm pings touching our hearts \n\n   Feeling safe in the silence \n\n   Feeling special, like a girl's face holding unexpected flowers. \n\n   Kicking through autumn's leaves, our lives perfect in the moment \n\n   NOW, feeling somehow lighter as if making snow angles")
                     .font(.system(size: 12))
 //                    .italic()
                     .fontWeight(.thin)

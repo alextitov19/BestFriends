@@ -46,7 +46,7 @@ struct INFOPreload: View {
                     
                     Text("No one wants to be")
                         .font(.system(size: 27))
-                        .italic()
+                        
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.purple2)
@@ -109,8 +109,26 @@ struct INFOPreload: View {
                     VStack {
                         
                         
+                        Spacer ()
+                            .frame(height: 30)
+                        
+                        Text("amoung so many")
+                            .font(.system(size: 25))
+                        
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.purple2)
+                        
+                        Text("calling themselves Friends")
+                            .font(.system(size: 29))
+                            .italic()
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.purple2)
+                        
+                      
                         Spacer()
-                            .frame(height: 195)
+                            .frame(height: 80)
                     
                         
                         
@@ -131,8 +149,17 @@ struct INFOPreload: View {
                             })
           
                         
-                        Spacer()
-                            .frame(height: 70)
+                        Spacer ()
+                            .frame(height: 30)
+                        
+                        Text("deep down, we want to feel special")
+                            .font(.system(size: 18))
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.purple2)
+                        
+//                        Spacer()
+//                            .frame(height: 70)
                     }
                 }
                 
