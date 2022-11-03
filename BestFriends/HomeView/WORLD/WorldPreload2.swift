@@ -76,7 +76,7 @@ struct WorldPreload2: View {
                 .offset(x: showItems ? -110 : 0, y: showItems ? -250: 0)
 
                 NavigationLink(destination:  AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                    SomethingNiceCircle (color: ColorManager.pmbc_pink, friendName: "my \nDAY \nJust \nChanged")
+                    SomethingNiceCircle (color: ColorManager.pmbc_pink, friendName: "Something \njust \nHAPPENED")
                 })
                 .offset(x: showItems ? -60 : 0, y: showItems ? -155: 0)
 

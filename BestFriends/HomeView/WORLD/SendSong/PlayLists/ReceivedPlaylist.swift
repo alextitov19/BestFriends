@@ -17,49 +17,74 @@ struct ReceivedPlaylist: View {
             ColorManager.grey3
                 .ignoresSafeArea()
                 .onAppear()
-          
-
+            
+            
             VStack {
-              
-
-                Text("Your friend just sent")
-                    .font(.system(size: 30))
+                
+                
+                Text("comming soon")
+                    .font(.system(size: 20))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
-
-                
-                Text("you a song that they listen")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                
-                
-                Text("to when their mood")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                
-                Text("matches yours")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                
                 
                 Spacer ()
-                        .frame(height: 30)
+                    .frame(height: 30)
                 
-                Text("(Check Chat)")
-                    .font(.system(size: 17))
-                    .italic()
+                
+                Text("Want friends to know ")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                
+                Text("something just happend")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                
+                Text("But, NOT feeling like talking")
+                    .font(.system(size: 30))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                 
                 
-                Button(action: {
-                    sessionManager.showLogin()
-                },
-                    label: {
+                Text("to anyone right now")
+                    .font(.system(size: 30))
+                    .foregroundColor(.white)
+                    .fontWeight(.ultraLight)
+                
+                VStack {
+                    
+                    Spacer ()
+                        .frame(height: 30)
+                    
+                    Text("Build your Playlist of songs")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.ultraLight)
+                    
+                    Text("friends recommended")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.ultraLight)
+                    
+                    Text("when their mood matches your's now")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.ultraLight)
+                    
+                    
+                    
+                    Spacer ()
+                        .frame(height: 30)
+                    
+                    
+                    
+                    
+                    Button(action: {
+                        sessionManager.showLogin()
+                    },
+                           label: {
                         Text("Chat")
                             .fontWeight(.thin)
                             .frame(width: 100, height: 40)
@@ -69,17 +94,17 @@ struct ReceivedPlaylist: View {
                             .cornerRadius(15)
                             .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                     })
-                
-                
-                
-        Spacer ()
-                .frame(height: 150)
+                    
+                    
+                    
+                    Spacer ()
+                        .frame(height: 150)
                     
                 }
             }
             
         }
     }
-
-
+    
+}
 

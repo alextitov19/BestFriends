@@ -73,7 +73,7 @@ struct AtmosphereInfo1: View {
             
             
             NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends), label: {
-                AtmosphereCircle (color: ColorManager.purple3, friendName: "Tell \na \nFriend")
+                AtmosphereCircle (color: ColorManager.purple3, friendName: "Something \njust \nHappened")
             })
             .offset(x: showItems ? -75 : 0, y: showItems ? -175: 0)
 

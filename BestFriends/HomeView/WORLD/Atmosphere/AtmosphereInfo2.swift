@@ -55,7 +55,7 @@ struct AtmosphereInfo2: View {
                     
                     Text("YOU")
                         .font(.system(size: 30))
-                        .italic()
+                        
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
@@ -81,7 +81,7 @@ struct AtmosphereInfo2: View {
                   
                     
                     
-                    Text("Step 3: Slect who you want to notify")
+                    Text("Step 3: Select who you want to notify")
                         .font(.system(size: 18))
                         .italic()
                         .fontWeight(.light)
@@ -101,19 +101,27 @@ struct AtmosphereInfo2: View {
                 VStack {
                     Text("YOUR FRIEND")
                         .font(.system(size: 30))
-                        .italic()
+                        
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
                 
                     
-                    Text("Your friend taps the push notification")
+                    Text("-friend taps your")
                         .font(.system(size: 18))
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
+                   
+                    Text("SPECIAL URGENT Push Notification")
+                        .font(.system(size: 25))
+                        .italic()
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.green)
                     
+                  
                     
                     Text("-taps your planet on homepage")
                         .font(.system(size: 18))
@@ -129,13 +137,15 @@ struct AtmosphereInfo2: View {
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
-                
+      
+            VStack {
+                    
                     Spacer()
                          .frame(height: 25)
                     
                     Text("FRIEND RESPONDS")
                         .font(.system(size: 30))
-                        .italic()
+                        
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
@@ -156,7 +166,7 @@ struct AtmosphereInfo2: View {
                         .foregroundColor(ColorManager .purple3)
                     
                     
-                    Text("-a song that matches your Aura")
+                    Text("-or a song that matches your Aura")
                         .font(.system(size: 18))
                         .italic()
                         .fontWeight(.light)
@@ -164,24 +174,9 @@ struct AtmosphereInfo2: View {
                         .foregroundColor(ColorManager .purple3)
                     
                     
-        VStack {
+       
   
-            
-//            
-//            
-//            NavigationLink(
-//                destination: AtmosphereMain2(user: user, atmosphere: atmosphere, friends: friends),
-//                label: {
-//                    Text("Next")
-//                        .fontWeight(.thin)
-//                        .frame(width: 100, height: 30)
-//                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                        .font(.system(size: 25))
-//                        .background(ColorManager.purple3)
-//                        .cornerRadius(15)
-//                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    
-//                })
+
                 Spacer()
                     .frame(height: 140)
             
