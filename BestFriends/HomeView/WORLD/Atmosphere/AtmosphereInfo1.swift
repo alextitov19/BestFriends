@@ -66,36 +66,23 @@ struct AtmosphereInfo1: View {
      
 
 
-              NavigationLink(destination: ReceivedPlaylist(), label: {
-                  AtmosphereCircle (color: ColorManager.grey3, friendName: "Alone \nwith my \nPlaylist")
+                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                  AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "Alone \nwith \nNICE \nMessages")
             })
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
             
             
             NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends), label: {
-                AtmosphereCircle (color: ColorManager.purple3, friendName: "Something \njust \nHappened")
+                AtmosphereCircle (color: ColorManager.red, friendName: "ALERT \nFriends \nNOW!")
             })
             .offset(x: showItems ? -75 : 0, y: showItems ? -175: 0)
 
+         
                 
-//
-//
-//                NavigationLink(destination:  HomeView(), label: {
-//                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "send \nmessage in \nchat")
-//                })
-//                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
-//
-//                NavigationLink(destination:  SaySomethingPreload(user: user, friends: friends), label: {
-//                    SomethingNiceCircle (color: ColorManager.purple1, friendName: "#1_start here")
-//                })
-//                .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0
-//
-//                NavigationLink(destination: EmptyView(), label: {
-//                    SomethingNiceCircle (color: .red, friendName: "")
-//                    })
-//                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-//
-//
+                NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends), label: {
+                    AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "Listen \nto my \nPlaylist")
+                })
+                .offset(x: showItems ? 75 : 0, y: showItems ? 130: 0)
                 
             
         Image(systemName: "triangle.fill")
@@ -110,7 +97,7 @@ struct AtmosphereInfo1: View {
            VStack {
                
             Spacer ()
-                   .frame(height: 0)
+                   .frame(height: 20)
                 
               Text("Friend")
                             .font(.system(size: 30))
@@ -125,9 +112,16 @@ struct AtmosphereInfo1: View {
                              .foregroundColor(.red)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
- //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-                    
+               
+               Text("& Time Alone")
+                             .font(.system(size: 30))
+                             
+                             .foregroundColor(ColorManager .purple1)
+                             .fontWeight(.thin)
+                             .multilineTextAlignment(.center)
+               
                 }
             }
             
