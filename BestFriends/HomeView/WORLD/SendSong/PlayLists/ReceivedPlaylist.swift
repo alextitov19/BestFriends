@@ -14,7 +14,7 @@ struct ReceivedPlaylist: View {
     
     var body: some View {
         ZStack {
-            ColorManager.grey3
+            ColorManager.grey4
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -24,7 +24,7 @@ struct ReceivedPlaylist: View {
                 
                 Text("comming soon")
                     .font(.system(size: 20))
-                    .foregroundColor(.white)
+                    .foregroundColor(.green)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
@@ -80,21 +80,21 @@ struct ReceivedPlaylist: View {
                     
                     
                     
-                    
-                    Button(action: {
-                        sessionManager.showLogin()
-                    },
-                           label: {
-                        Text("Chat")
-                            .fontWeight(.thin)
-                            .frame(width: 100, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 30))
-                            .background(ColorManager.purple3)
-                            .cornerRadius(15)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                    })
-                    
+//
+//                    Button(action: {
+//                        sessionManager.showLogin()
+//                    },
+//                           label: {
+//                        Text("Chat")
+//                            .fontWeight(.thin)
+//                            .frame(width: 100, height: 40)
+//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                            .font(.system(size: 30))
+//                            .background(ColorManager.purple3)
+//                            .cornerRadius(15)
+//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                    })
+//
                     
                     
                     Spacer ()
