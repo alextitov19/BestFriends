@@ -105,7 +105,7 @@ struct WorldPreload2: View {
                     .frame(width: 250, height: 200)
                 //                    .blur(radius: 2)
                 
-                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
                     .opacity(0.95)
 
 
@@ -119,28 +119,29 @@ struct WorldPreload2: View {
                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                Text("Helping you build")
                              .font(.system(size: 17))
                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                
-               Text("better")
+               Text("BETTER")
                              .font(.system(size: 30))
-                            .foregroundColor(.green)
+                             .foregroundColor(ColorManager .purple1)
+//                            .foregroundColor(.green)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
-                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                
                
                Text("'FriendGroups'")
                              .font(.system(size: 25))
-                             
-                            .foregroundColor(.white)
+                             .foregroundColor(ColorManager .purple3)
+//                            .foregroundColor(.white)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)

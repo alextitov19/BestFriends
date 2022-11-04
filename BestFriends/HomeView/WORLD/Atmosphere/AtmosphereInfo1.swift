@@ -84,11 +84,11 @@ struct AtmosphereInfo1: View {
             
         Image(systemName: "triangle.fill")
                     .resizable()
-                    .foregroundColor(ColorManager .pmbc_blue)
+                    .foregroundColor(ColorManager .grey2)
                     .frame(width: 220, height: 180)
 //                    .blur(radius: 2)
 
-                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
                     .opacity(0.95)
             
            VStack {
@@ -105,16 +105,16 @@ struct AtmosphereInfo1: View {
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                Text("just")
                              .font(.system(size: 25))
-                             .foregroundColor(.white)
+                             .foregroundColor(ColorManager .purple5)
+//                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                
                Text("C H A N G E D!")
                              .font(.system(size: 27))
-                             
-                             .foregroundColor(ColorManager .red)
+                             .foregroundColor(ColorManager .purple5)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
                

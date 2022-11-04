@@ -33,7 +33,7 @@ struct MyRoomInfo: View {
 //                .onAppear()
 
          
-            Image("purpleBackground")
+            Image("ShaylaBest3")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
@@ -88,22 +88,22 @@ struct MyRoomInfo: View {
                             .multilineTextAlignment(.center)
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                
-               Text("M Y")
+               Text("my")
                              .font(.system(size: 37))
                              .foregroundColor(ColorManager .purple1)
                             
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                
-               Text("R O O M")
+               Text("Room")
                              .font(.system(size: 37))
                              .foregroundColor(ColorManager .purple1)
                             
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
-                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                
           
