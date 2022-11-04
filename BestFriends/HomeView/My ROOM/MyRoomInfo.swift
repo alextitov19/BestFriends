@@ -105,7 +105,7 @@ struct MyRoomInfo: View {
                
                Text("my room")
                              .font(.system(size: 37))
-                             .foregroundColor(ColorManager .purple1)
+                             .foregroundColor(ColorManager .purple3)
                             
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
@@ -114,7 +114,7 @@ struct MyRoomInfo: View {
                Text("Safe n' Sound")
                              .font(.system(size: 20))
                              
-                             .foregroundColor(ColorManager .purple3)
+                             .foregroundColor(ColorManager .purple4)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                          

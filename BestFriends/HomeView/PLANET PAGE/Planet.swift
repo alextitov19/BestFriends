@@ -319,7 +319,7 @@ struct PlanetActionsView: View {
    
                                 Text("Settings")
                                     .foregroundColor(.black)
-                                    .font(.system(size: 20, weight: .bold))
+                                    .font(.system(size: 15, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
                                 
@@ -353,10 +353,20 @@ struct PlanetActionsView: View {
                         ZStack {
                             Circle()
                                 .frame(width: 110, height: 110)
-                                .foregroundColor(ColorManager.purple3)
+                                .foregroundColor(ColorManager.purple2)
                                 .foregroundColor(.pink)
-                                .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                .shadow(color: .white, radius: 10, x: 0, y: 0)
+                                .glow(color: ColorManager.purple4, radius: 3)
                                 .opacity(0.50)
+                            
+                            
+//                                .frame(width: 140, height: 140)
+//                                .foregroundColor(ColorManager.purple2)
+//                                .shadow(color: .white, radius: 17, x: 0, y: 0)
+//                                .glow(color: ColorManager.purple4, radius: 3)
+//                                .opacity(0.5)
+                            
+                            
                             
                             VStack {
                                 
@@ -370,13 +380,13 @@ struct PlanetActionsView: View {
                                 
                                 Text("My")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 20, weight: .bold))
+                                     .font(.system(size: 27, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
                                 Text("Room")
                                     .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 20, weight: .bold))
+                                     .font(.system(size: 25, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 

@@ -49,8 +49,8 @@ struct DreamVaultView: View {
                 .offset(x: showItems ? 0 : 0, y: showItems ? 140: 0)
             
     
-            NavigationLink(destination: MiroWhiteboard(user: user, friends: friends), label: {
-                WhoFightingCircle (color: ColorManager.purple2, friendName: "my \ntrajectory")
+            NavigationLink(destination: HorizonHomeView(user: user, friends: friends, atmosphere: atmosphere), label: {
+                WhoFightingCircle (color: Color .green, friendName: "Let's \nDo This")
             })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 290: 0)
 
