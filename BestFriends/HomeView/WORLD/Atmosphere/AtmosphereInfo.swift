@@ -44,7 +44,7 @@ struct AtmosphereInfo: View {
                     
                     Text("WOW")
                         .font(.system(size: 40))
-                        
+                    
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
@@ -60,51 +60,45 @@ struct AtmosphereInfo: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("Let your friends know INSTANTLY")
+                    Text("Let your friends know with \na Push Notification INSTANTLY")
                         .font(.system(size: 18))
                     
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-                   
+                    
                     Spacer()
                         .frame(height: 30)
                     
-                    
-                    Text("with a Special")
-                        .font(.system(size: 18))
-                        
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
+                    Text("So They Can")
+                        .font(.system(size: 30))
                         .foregroundColor(Color.white)
+                        .italic()
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .purple3)
                     
-                 
+                    
+                    Text("Cheer you in good times")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .purple3)
+                    
+                    Text("and lend Support in bad")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.white)
+                        .fontWeight(.thin)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .purple3)
                     
                     VStack {
                         
-                        Text("URGENT")
-                            .font(.system(size: 30))
-                            
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                        
-                        Text("PUSH NOTIFICATION")
-                            .font(.system(size: 30))
-                            
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.green)
-                        
-                        Text("TO THEIR PHONES")
-                            .font(.system(size: 30))
-                            
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.green)
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 30)
+                        
                         
                         NavigationLink(
                             destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
@@ -119,44 +113,8 @@ struct AtmosphereInfo: View {
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
-
                         
-                        
-                        Spacer()
-                            .frame(height: 50)
-                        
-                        VStack {
-                            
-                            Text("So They Can")
-                                .font(.system(size: 30))
-                                .foregroundColor(Color.white)
-                                .italic()
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .purple3)
-                            
-                            
-                            Text("Cheer you in good times")
-                                .font(.system(size: 25))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .purple3)
-                            
-                            Text("and lend Support in bad")
-                                .font(.system(size: 25))
-                                .foregroundColor(Color.white)
-                                .fontWeight(.thin)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .purple3)
-                            
-                        }
-                        
-                        
-                        
-                        Spacer()
-                            .frame(height: 35)
-                        
+                    
                         
                         VStack {
                             
@@ -176,16 +134,34 @@ struct AtmosphereInfo: View {
                                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                     
                                 })
-//                            
-//                            Text("your atmosphere color \nwill change on homepage ")
-//                                .font(.system(size: 18))
-//                                .italic()
-//                                .fontWeight(.light)
-//                                .multilineTextAlignment(.center)
-//                                .foregroundColor(Color.white)
-//                            Spacer()
-//                                .frame(height: 140)
-//
+   
+                            
+                            
+                            Spacer()
+                                .frame(height: 30)
+                            
+                            Text("Maybe just want to be alone")
+                                .font(.system(size: 20))
+                            
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                            Text("for a while")
+                                .font(.system(size: 20))
+                            
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                            Text("Check-0ut My Room")
+                                .font(.system(size: 20))
+                            
+                                .fontWeight(.light)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                            
+                            
                         }
                     }
                     
@@ -194,8 +170,8 @@ struct AtmosphereInfo: View {
         }
     }
     
+    
 }
-
 
 
 
