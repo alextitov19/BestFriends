@@ -31,26 +31,26 @@ struct MyRoomInfo: View {
 //            ColorManager.purple1
 //                .ignoresSafeArea()
 //                .onAppear()
-//
-            Image("ShaylaBest3")
+
+         
+            Image("purpleBackground")
                 .resizable()
                 .ignoresSafeArea()
                 .scaledToFill()
                 .opacity(0.5)
-
 
             AdPlayerView(name: "myRoom1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
             
             
-            
+        
             
             
             ZStack{
 
                 NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                  AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "Saved \n'Nice' \nmessages")
+                  AtmosphereCircle (color: ColorManager.purple3, friendName: "Saved \n'Nice' \nmessages")
             })
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -58,7 +58,7 @@ struct MyRoomInfo: View {
 
              
                 NavigationLink(destination: ReceivedPlaylist(), label: {
-                    AtmosphereCircle (color: ColorManager.orange4, friendName: "Listen \nto my \nPlaylist")
+                    AtmosphereCircle (color: ColorManager.orange5, friendName: "Listen \nto my \nPlaylist")
                 })
                 .offset(x: showItems ? -75 : 0, y: showItems ? 150: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -68,11 +68,11 @@ struct MyRoomInfo: View {
             
         Image(systemName: "triangle.fill")
                     .resizable()
-                    .foregroundColor(ColorManager .pmbc_blue)
+                    .foregroundColor(ColorManager .orange4)
                     .frame(width: 220, height: 180)
 //                    .blur(radius: 2)
 
-                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                    .shadow(color: .orange, radius: 65, x: 30, y: 50)
                     .opacity(0.9)
             
            VStack {
