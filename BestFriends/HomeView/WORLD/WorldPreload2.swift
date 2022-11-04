@@ -66,7 +66,7 @@ struct WorldPreload2: View {
             .offset(x: showItems ? 120 : 0, y: showItems ? -290: 0)
 //
                 NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.grey2, friendName: "Shaking \nCool \nPhotos")
+                    SomethingNiceCircle (color: ColorManager.grey2, friendName: "PhotoPOP")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
 

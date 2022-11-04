@@ -82,7 +82,13 @@ struct MyRoomInfo: View {
             
       
                 
-                
+                NavigationLink(destination: EmptyView(), label: {
+                    AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "PhotoPOP \n'shake' \nphone")
+                })
+                .offset(x: showItems ? 95 : 0, y: showItems ? -50: 0)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+         
+   
                 
                 
                 
@@ -111,13 +117,13 @@ struct MyRoomInfo: View {
                              .multilineTextAlignment(.center)
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                
-               Text("Safe n' Sound")
-                             .font(.system(size: 20))
-                             
-                             .foregroundColor(ColorManager .purple4)
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-                         
+//               Text("Safe n' Sound")
+//                             .font(.system(size: 20))
+//
+//                             .foregroundColor(ColorManager .purple4)
+//                             .fontWeight(.thin)
+//                             .multilineTextAlignment(.center)
+//
                
           
                 }
