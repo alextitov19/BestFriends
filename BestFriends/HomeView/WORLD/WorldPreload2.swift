@@ -71,7 +71,7 @@ struct WorldPreload2: View {
                 .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
 
                 NavigationLink(destination:  SendSongPush(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "YEP, \nfound \nNEW \nMusic")
+                    SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "send \nNEW \nMusic")
                 })
                 .offset(x: showItems ? -110 : 0, y: showItems ? -250: 0)
 
@@ -92,6 +92,10 @@ struct WorldPreload2: View {
                     SomethingNiceCircle (color: ColorManager.purple4, friendName: "something \nBUGGING \nyou?")
                     })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
+
+//                .shadow(color: .blue, radius: 65, x: 30, y: 50)
+              
+                
                 
                 
                 
@@ -110,24 +114,33 @@ struct WorldPreload2: View {
             Spacer ()
                    .frame(height: 125)
               
-               Text("You're ")
-                             .font(.system(size: 30))
+               Text("IDEAS")
+                             .font(.system(size: 25))
                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("L I V E")
-                             .font(.system(size: 55))
+               Text("Helping you build")
+                             .font(.system(size: 25))
+                            .foregroundColor(.white)
+                             .fontWeight(.thin)
+                             .multilineTextAlignment(.center)
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+
+               
+               Text("better")
+                             .font(.system(size: 30))
                             .foregroundColor(.green)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
-
-               Text("with Friends")
+               
+               
+               Text("friend groups")
                              .font(.system(size: 25))
-                             .italic()
-                            .foregroundColor(.white)
+                             
+                            .foregroundColor(.green)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -194,8 +207,10 @@ struct WorldPreloadCircle: View {
         .frame(width: 110, height: 110)
         .clipShape(Circle())
         .foregroundColor(color)
+//        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
         .opacity(0.7)
-        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
+
 
         Text(friendName)
                 .fontWeight(.light)

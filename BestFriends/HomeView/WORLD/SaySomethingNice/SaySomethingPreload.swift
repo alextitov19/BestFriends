@@ -22,7 +22,7 @@ struct SaySomethingPreload: View {
     
     var body: some View {
         ZStack {
-            ColorManager.purple7
+            ColorManager.purple3
                 .ignoresSafeArea()
                 .onAppear()
             
@@ -31,35 +31,50 @@ struct SaySomethingPreload: View {
             
                 
                 Text("Be part of making")
-                    .font(.system(size: 30))
+                    .font(.system(size: 20))
                     .italic()
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
-                Text("social media ")
-                    .font(.system(size: 30))
+                Text("social media less negative")
+                    .font(.system(size: 20))
                     .italic()
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
           
-                Text("less toxit and negative")
+              
+                
+                Spacer()
+                    .frame(height: 20)
+                
+                Text("It's S I M P L E")
                     .font(.system(size: 30))
-                    .italic()
+                 
                     .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Spacer()
-                    .frame(height: 40)
+                    .frame(height: 20)
                 
-                Text("Say Something Nice")
+                Text("YEP! Just say Something")
                     .font(.system(size: 37))
                  
                     .foregroundColor(.white)
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
+                
+                Text("'Nice'")
+                    .font(.system(size: 45))
+                 
+                    .foregroundColor(.white)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                
+                VStack {
+                        
                 
                 Text("to a friend in Chat")
                     .font(.system(size: 37))
@@ -72,16 +87,8 @@ struct SaySomethingPreload: View {
              
                 Spacer()
                     .frame(height: 20)
-                
-                Text("- Type 'WorldMessage\nat start of messaage")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(.pink)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
-            VStack {
-                    
+              
+           
                     Button(action: {
                         sessionManager.showLogin()
                     },
@@ -101,8 +108,15 @@ struct SaySomethingPreload: View {
                 
            
                 
+                Text("- Type message in Chat")
+                    .font(.system(size: 20))
+                    .italic()
+                    .foregroundColor(.pink)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
                 
-                Text("- Send push notifictiion to alert them")
+                
+                Text("- Send push notifictiion alerting them")
                     .font(.system(size: 20))
                     .italic()
                     .foregroundColor(.pink)
@@ -111,7 +125,7 @@ struct SaySomethingPreload: View {
                 Spacer()
                     .frame(height: 20)
 
-                Text("- long-tap their messages \nsaving them to World Messages, \nfor a rainy day")
+                Text("- long-tap receuved 'Nice' messages \nsaving them to My Room")
                     .font(.system(size: 20))
                     .italic()
                     .foregroundColor(.pink)

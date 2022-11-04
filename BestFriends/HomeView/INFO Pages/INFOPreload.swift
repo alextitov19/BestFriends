@@ -120,8 +120,8 @@ struct INFOPreload: View {
                             .foregroundColor(ColorManager.purple2)
                         
                         Text("calling themselves Friends")
-                            .font(.system(size: 29))
-                            .italic()
+                            .font(.system(size: 25))
+                            
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple2)

@@ -140,20 +140,20 @@ struct PlanetActionsView: View {
                                .opacity(0.40)
                             
                             VStack {
-                                Text("Add &")
+                                Text("Add")
                                     .foregroundColor(.green)
                                     .font(.system(size: 23, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.70)
                                 
-                                Text("Accept")
-                                    .foregroundColor(.green)
-                                    .font(.system(size: 23, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.70)
+//                                Text("Accept")
+//                                    .foregroundColor(.green)
+//                                    .font(.system(size: 23, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.70)
                                 
                                 Text("5 Friends")
-                                    .foregroundColor(.white)
+                                    .foregroundColor(.green)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)

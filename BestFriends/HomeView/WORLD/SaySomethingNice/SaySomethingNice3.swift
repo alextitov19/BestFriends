@@ -69,26 +69,21 @@ struct SaySomethingNice3: View {
               NavigationLink(destination: SaySomethingNice2(user: user, friends: friends), label: {
                   SomethingNiceCircle (color: ColorManager.grey3, friendName: "#2_send \npush \nnotification")
             })
-//              .offset(x: showItems ? 150 : 0, y: showItems ? 175: 0)
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
-            
+              .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
             
             NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                 SomethingNiceCircle (color: ColorManager.purple3, friendName: "#3_see \nWorld \nMessages")
             })
-//            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
-            .offset(x: showItems ? 150 : 0, y: showItems ? 175: 0)
-//
-//                NavigationLink(destination:  HomeView(), label: {
-//                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "send \nmessage in \nchat")
-//                })
-//                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
+            .offset(x: showItems ? -50 : 0, y: showItems ? -130: 0)
+            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+
                 
                 NavigationLink(destination:  SaySomethingPreload(user: user, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.purple1, friendName: "#1_start here")
                 })
                 .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
-                
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
                 
                 
@@ -163,8 +158,8 @@ struct SomethingNiceCircle: View {
         .clipShape(Circle())
         .foregroundColor(color)
         .opacity(0.7)
-        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
-        
+//        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
+//
         Text(friendName)
                 .fontWeight(.light)
                 .italic()

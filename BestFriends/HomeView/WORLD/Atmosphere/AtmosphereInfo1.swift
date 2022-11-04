@@ -70,19 +70,23 @@ struct AtmosphereInfo1: View {
                   AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "Alone \nwith \nNICE \nMessages")
             })
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
+              .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
             
-            
+                
+                
             NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends), label: {
                 AtmosphereCircle (color: ColorManager.red, friendName: "ALERT \nFriends \nNOW!")
             })
-            .offset(x: showItems ? -75 : 0, y: showItems ? -175: 0)
-
+           .offset(x: showItems ? -75 : 0, y: showItems ? -175: 0)
+           .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
          
                 
                 NavigationLink(destination: ReceivedPlaylist(), label: {
                     AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "Listen \nto my \nPlaylist")
                 })
-                .offset(x: showItems ? 75 : 0, y: showItems ? 130: 0)
+                .offset(x: showItems ? -75 : 0, y: showItems ? 150: 0)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                
                 
             
         Image(systemName: "triangle.fill")
@@ -153,8 +157,8 @@ struct AtmosphereCircle: View {
         .clipShape(Circle())
         .foregroundColor(color)
         .opacity(0.7)
-        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
-        
+//        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
+//
         Text(friendName)
                 .fontWeight(.light)
                 .italic()

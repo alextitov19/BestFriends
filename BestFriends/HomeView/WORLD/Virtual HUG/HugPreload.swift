@@ -102,7 +102,7 @@ struct HugPreload: View {
         Image(systemName: "square.fill")
                     .resizable()
                     .foregroundColor(ColorManager .grey2)
-                    .frame(width: 130, height: 130)
+                    .frame(width: 150, height: 150)
 //                    .blur(radius: 2)
 
                     .shadow(color: .purple, radius: 65, x: 30, y: 50)
@@ -113,31 +113,33 @@ struct HugPreload: View {
             Spacer ()
                    .frame(height: 10)
 
-               Text("HUGS")
-                             .font(.system(size: 30))
+               Text("Does a friend")
+                             .font(.system(size: 25))
                          
                              .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
  //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//              Text("FriendGroups")
-//                            .font(.system(size: 20))
-//
-//                            .foregroundColor(.blue)
-//                            .fontWeight(.thin)
-//                            .multilineTextAlignment(.center)
-////                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-//
-//
-//               Text("fixing this")
-//                             .font(.system(size: 20))
-//
-//                             .foregroundColor(.blue)
-//                             .fontWeight(.thin)
-//                             .multilineTextAlignment(.center)
-// //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
+               Text("need a")
+                             .font(.system(size: 25))
+                         
+                             .foregroundColor(.white)
+                             .fontWeight(.thin)
+                             .multilineTextAlignment(.center)
+ //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+               
+               Text("HUG")
+                             .font(.system(size: 45))
+                         
+                             .foregroundColor(.white)
+                             .fontWeight(.thin)
+                             .multilineTextAlignment(.center)
+ //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+               
+               
+               
+               
+               
                 }
             }
             
