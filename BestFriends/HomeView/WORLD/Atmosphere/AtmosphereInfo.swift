@@ -87,7 +87,7 @@ struct AtmosphereInfo: View {
                             
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color.pink)
+                            .foregroundColor(Color.white)
                         
                         Text("PUSH NOTIFICATION")
                             .font(.system(size: 30))
@@ -115,7 +115,7 @@ struct AtmosphereInfo: View {
                                     .font(.system(size: 17))
                                     .italic()
                                     .frame(width: 75, height: 75)
-                                    .background(.blue)
+                                    .background(ColorManager .purple3)
                                     .cornerRadius(15)
                                     .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             })
@@ -129,6 +129,7 @@ struct AtmosphereInfo: View {
                             
                             Text("So They Can")
                                 .font(.system(size: 30))
+                                .foregroundColor(Color.white)
                                 .italic()
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
@@ -137,12 +138,14 @@ struct AtmosphereInfo: View {
                             
                             Text("Cheer you in good times")
                                 .font(.system(size: 25))
+                                .foregroundColor(Color.white)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .purple3)
                             
                             Text("and lend Support in bad")
                                 .font(.system(size: 25))
+                                .foregroundColor(Color.white)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .purple3)

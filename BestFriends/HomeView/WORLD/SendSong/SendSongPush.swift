@@ -85,7 +85,7 @@ struct SendSongPush: View {
 //
   
                         NavigationLink(destination:  HomeView(), label: {
-                            SomethingNiceCircle (color: ColorManager.purple4, friendName: "send \nin \nchat")
+                            SomethingNiceCircle (color: ColorManager.purple4, friendName: "send \nto friend \nin Chat")
                         })
                         
                     }

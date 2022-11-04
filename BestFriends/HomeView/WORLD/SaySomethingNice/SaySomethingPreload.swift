@@ -60,10 +60,10 @@ struct SaySomethingPreload: View {
                     .frame(height: 20)
                 
                 Text("YEP! Just say Something")
-                    .font(.system(size: 37))
+                    .font(.system(size: 27))
                  
                     .foregroundColor(.white)
-                    .fontWeight(.light)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 Text("'Nice'")
@@ -77,10 +77,10 @@ struct SaySomethingPreload: View {
                         
                 
                 Text("to a friend in Chat")
-                    .font(.system(size: 37))
+                    .font(.system(size: 27))
                   
                     .foregroundColor(.white)
-                    .fontWeight(.light)
+                    .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
                 
@@ -104,35 +104,41 @@ struct SaySomethingPreload: View {
                         })
                 
                 Spacer()
-                    .frame(height: 20)
+                    .frame(height: 50)
                 
            
-                
-                Text("- Type message in Chat")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(.pink)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                
-                
-                Text("- Send push notifictiion alerting them")
-                    .font(.system(size: 20))
-                    .italic()
-                    .foregroundColor(.pink)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                Spacer()
-                    .frame(height: 20)
+//
+//                Text("-type message in Chat")
+//                    .font(.system(size: 20))
+//                    .italic()
+//                    .foregroundColor(.pink)
+//                    .fontWeight(.light)
+////                    .multilineTextAlignment(.center)
+//                    .padding()
+//
+//                Text("-send push notifictiion alerting friend")
+//                    .font(.system(size: 20))
+//                    .italic()
+//                    .foregroundColor(.pink)
+//                    .fontWeight(.light)
+////                    .multilineTextAlignment(.center)
+//                    .padding()
 
-                Text("- long-tap receuved 'Nice' messages \nsaving them to My Room")
+                    Text("-quick, send Push Notification \nalerting friend")
+                        .font(.system(size: 20))
+                        .italic()
+                        .foregroundColor(.blue)
+                        .fontWeight(.light)
+                        .padding()
+                    
+                Text("-long-tap received messages \nsaving them to 'My Room' \nto re-visit on difficult days")
                     .font(.system(size: 20))
                     .italic()
-                    .foregroundColor(.pink)
+                    .foregroundColor(.blue)
                     .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-               
-                Spacer()
+                    .padding()
+              
+                    Spacer()
                     .frame(height: 50)
                     }
                 }

@@ -107,19 +107,14 @@ struct AtmosphereInfo2: View {
                         .foregroundColor(ColorManager .purple3)
                 
                     
-                    Text("-friend taps your")
+                    Text("-friend taps your Push Notification")
                         .font(.system(size: 18))
                         .italic()
                         .fontWeight(.light)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
                    
-                    Text("SPECIAL URGENT Push Notification")
-                        .font(.system(size: 25))
-                        .italic()
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.green)
+                    
                     
                   
                     

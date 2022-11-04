@@ -5,7 +5,6 @@
 //  Created by Social Tech on 11/2/22.
 //
 
-import Foundation
 
 import Foundation
 import SwiftUI
@@ -66,8 +65,8 @@ struct AtmosphereInfo1: View {
      
 
 
-                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                  AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "Alone \nwith \nNICE \nMessages")
+                NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                  AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "Need time \nalone in \n'My Room'")
             })
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -80,14 +79,8 @@ struct AtmosphereInfo1: View {
            .offset(x: showItems ? -75 : 0, y: showItems ? -175: 0)
            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
          
-                
-                NavigationLink(destination: ReceivedPlaylist(), label: {
-                    AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "Listen \nto my \nPlaylist")
-                })
-                .offset(x: showItems ? -75 : 0, y: showItems ? 150: 0)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                
-                
+
+
             
         Image(systemName: "triangle.fill")
                     .resizable()
@@ -96,34 +89,33 @@ struct AtmosphereInfo1: View {
 //                    .blur(radius: 2)
 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                    .opacity(0.9)
+                    .opacity(0.95)
             
            VStack {
                
             Spacer ()
                    .frame(height: 20)
                 
-              Text("Friend")
-                            .font(.system(size: 30))
+              Text("my DAY")
+                            .font(.system(size: 25))
                             
                             .foregroundColor(ColorManager .purple1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-               Text("A L E R T!")
-                             .font(.system(size: 37))
-                             
-                             .foregroundColor(.red)
-                             .fontWeight(.light)
+               Text("just")
+                             .font(.system(size: 25))
+                             .foregroundColor(.white)
+                             .fontWeight(.thin)
                              .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                
-               Text("& Time Alone")
-                             .font(.system(size: 30))
+               Text("C H A N G E D!")
+                             .font(.system(size: 27))
                              
-                             .foregroundColor(ColorManager .purple1)
-                             .fontWeight(.thin)
+                             .foregroundColor(ColorManager .red)
+                             .fontWeight(.light)
                              .multilineTextAlignment(.center)
                
                 }

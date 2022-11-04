@@ -116,7 +116,7 @@ struct PlanetActionsView: View {
                                 
                                 
                                 Text("Teens")
-                                    .foregroundColor(.green)
+                                    .foregroundColor(.white)
                                     .font(.system(size: 24, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
@@ -153,7 +153,7 @@ struct PlanetActionsView: View {
 //                                    .opacity(0.70)
                                 
                                 Text("5 Friends")
-                                    .foregroundColor(.green)
+                                    .foregroundColor(.white)
                                     .font(.system(size: 17, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)
@@ -318,7 +318,7 @@ struct PlanetActionsView: View {
                             VStack {
    
                                 Text("Settings")
-                                    .foregroundColor(.green)
+                                    .foregroundColor(.black)
                                     .font(.system(size: 20, weight: .bold))
                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                                     .opacity(0.50)

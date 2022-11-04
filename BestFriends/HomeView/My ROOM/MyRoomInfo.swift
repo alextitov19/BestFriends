@@ -1,8 +1,8 @@
 //
-//  SaySomethingNice3.swift
+//  MyRoomInfo.swift
 //  BestFriends
 //
-//  Created by Social Tech on 10/1/22.
+//  Created by Social Tech on 11/4/22.
 //
 
 
@@ -11,7 +11,7 @@ import Foundation
 import SwiftUI
 import AVKit
 
-struct SaySomethingNice3: View {
+struct MyRoomInfo: View {
     
 //    @EnvironmentObject var sessionManager: SessionManager
     
@@ -28,105 +28,85 @@ struct SaySomethingNice3: View {
         
         ZStack {
             
-            ColorManager.purple1
+//            ColorManager.purple1
+//                .ignoresSafeArea()
+//                .onAppear()
+//
+            Image("ShaylaBest3")
+                .resizable()
                 .ignoresSafeArea()
-                .onAppear()
-           
-//            Image("purpleBackground")
-//                .resizable()
-//                .ignoresSafeArea()
-//                .scaledToFill()
-//
-//
-//            AdPlayerView(name: "storm2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
+                .scaledToFill()
+                .opacity(0.5)
+
+
+            AdPlayerView(name: "myRoom1")
+                .ignoresSafeArea()
+                .blendMode(.screen)
             
             
             
             
             
             ZStack{
-//                  Text("Say something")
-//                      .font(.system(size: 50))
-//                      .foregroundColor(ColorManager.purple2)
-//                      .fontWeight(.thin)
-//                      .multilineTextAlignment(.center)
-//
-//                  Text("'Nice' to a Friend")
-//                      .font(.system(size: 50))
-//                      .foregroundColor(ColorManager.purple2)
-//                      .fontWeight(.thin)
-//                      .multilineTextAlignment(.center)
-//                  Spacer()
-//                      .frame(height: 80)
-        
-        
 
-     
-
-
-              NavigationLink(destination: SaySomethingNice2(user: user, friends: friends), label: {
-                  SomethingNiceCircle (color: ColorManager.grey3, friendName: "Send \nPush \nNotification")
+                NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                  AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "Saved \n'Nice' \nmessages")
             })
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-//
-//            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-//                SomethingNiceCircle (color: ColorManager.purple3, friendName: "#3_see \nWorld \nMessages")
-//            })
-//            .offset(x: showItems ? -50 : 0, y: showItems ? -130: 0)
-//            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-
-                
-                NavigationLink(destination:  SaySomethingPreload(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.purple1, friendName: "Say it")
-                })
-                .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                
-                
-                
-                
-                
-                NavigationLink(destination: EmptyView(), label: {
-                    SomethingNiceCircle (color: .red, friendName: "")
-                    })
-                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-
-                           
-                
             
-        Image(systemName: "heart.fill")
+
+             
+                NavigationLink(destination: ReceivedPlaylist(), label: {
+                    AtmosphereCircle (color: ColorManager.orange4, friendName: "Listen \nto my \nPlaylist")
+                })
+                .offset(x: showItems ? -75 : 0, y: showItems ? 150: 0)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+
+                
+ 
+            
+        Image(systemName: "triangle.fill")
                     .resizable()
-                    .foregroundColor(.red)
+                    .foregroundColor(ColorManager .pmbc_blue)
                     .frame(width: 220, height: 180)
 //                    .blur(radius: 2)
 
                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                    .opacity(0.95)
+                    .opacity(0.9)
             
            VStack {
                
             Spacer ()
-                   .frame(height: 0)
+                   .frame(height: 20)
                 
-              Text("makeing friends")
-                            .font(.system(size: 27))
+              Text("Safe in")
+                            .font(.system(size: 30))
                             
-                            .foregroundColor(.blue)
+                            .foregroundColor(ColorManager .purple1)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-               Text("S M I L E")
-                             .font(.system(size: 35))
-                             
-                             .foregroundColor(.blue)
+               
+               Text("M Y")
+                             .font(.system(size: 37))
+                             .foregroundColor(ColorManager .purple1)
+                            
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
- //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-                    
+               
+               Text("R O O M")
+                             .font(.system(size: 37))
+                             .foregroundColor(ColorManager .purple1)
+                            
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+
+               
+          
                 }
             }
             
@@ -145,7 +125,7 @@ struct SaySomethingNice3: View {
     }
    
 
-struct SomethingNiceCircle: View {
+struct MyRoomCircle: View {
     var color: Color
     var friendName: String
     
