@@ -344,7 +344,7 @@ struct PlanetActionsView: View {
                     
 //                    NavigationLink(destination: EmptyView(),
                
-                    NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups),
+                    NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups),
                                                   
                                                   
 //                                                  NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
@@ -368,24 +368,24 @@ struct PlanetActionsView: View {
 //                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
 //                                     .opacity(0.50)
                                 
-                                Text("Dream")
+                                Text("My")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 20, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                               
-                                Text("Galaxy")
+                                Text("Room")
                                     .foregroundColor(ColorManager.grey1)
                                      .font(.system(size: 20, weight: .bold))
                                      .shadow(color: .black, radius: 1, x: 0, y: 1)
                                      .opacity(0.50)
                                 
-                                Text("coming 2023")
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 12, weight: .bold))
-                                    .italic()
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
+//                                Text("coming 2023")
+//                                    .foregroundColor(.white)
+//                                    .font(.system(size: 12, weight: .bold))
+//                                    .italic()
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
                                 
                                 
                             }

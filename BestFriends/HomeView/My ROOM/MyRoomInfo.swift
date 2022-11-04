@@ -19,6 +19,7 @@ struct MyRoomInfo: View {
     let atmosphere: Atmosphere
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -33,12 +34,20 @@ struct MyRoomInfo: View {
 //                .onAppear()
 
          
-            Image("ShaylaBest3")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-                .opacity(0.5)
+//            Image("ShaylaBest3")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//                .opacity(0.5)
 
+                        Image("purpleBackground")
+                            .resizable()
+                            .ignoresSafeArea()
+                            .scaledToFill()
+                            .opacity(0.5)
+            
+            
+            
             AdPlayerView(name: "myRoom1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
@@ -64,47 +73,51 @@ struct MyRoomInfo: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
                 
- 
+                
+                   NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
+                       AtmosphereCircle (color: ColorManager.grey2, friendName: "my \nDream \nGalaxy")
+                   })
+                   .offset(x: showItems ? -75 : 0, y: showItems ? -150: 0)
+                   .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
             
-        Image(systemName: "triangle.fill")
+      
+                
+                
+                
+                
+                
+                Image(systemName: "triangle.fill")
                     .resizable()
-                    .foregroundColor(ColorManager .orange4)
+                    .foregroundColor(ColorManager .orange3)
                     .frame(width: 220, height: 180)
 //                    .blur(radius: 2)
 
                     .shadow(color: .orange, radius: 65, x: 30, y: 50)
-                    .opacity(0.9)
+                    .opacity(0.95)
             
            VStack {
                
             Spacer ()
-                   .frame(height: 20)
+                   .frame(height: 40)
                 
-              Text("Safe in")
-                            .font(.system(size: 30))
-                            
-                            .foregroundColor(ColorManager .purple1)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+            
+ 
                
-               Text("my")
+               Text("my room")
                              .font(.system(size: 37))
                              .foregroundColor(ColorManager .purple1)
                             
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-
                
-               Text("Room")
-                             .font(.system(size: 37))
-                             .foregroundColor(ColorManager .purple1)
-                            
-                             .fontWeight(.light)
+               Text("Safe n' Sound")
+                             .font(.system(size: 20))
+                             
+                             .foregroundColor(ColorManager .purple3)
+                             .fontWeight(.thin)
                              .multilineTextAlignment(.center)
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-
+                         
                
           
                 }

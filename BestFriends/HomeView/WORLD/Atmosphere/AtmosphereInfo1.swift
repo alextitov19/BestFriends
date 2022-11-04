@@ -18,6 +18,7 @@ struct AtmosphereInfo1: View {
     let atmosphere: Atmosphere
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
+    let groups: [Group]
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -65,8 +66,8 @@ struct AtmosphereInfo1: View {
      
 
 
-                NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                  AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "Need time \nalone in \n'My Room'")
+                NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
+                  AtmosphereCircle (color: .yellow, friendName: "Need time \nalone in \n'My Room'")
             })
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -99,7 +100,7 @@ struct AtmosphereInfo1: View {
               Text("my DAY")
                             .font(.system(size: 25))
                             
-                            .foregroundColor(ColorManager .purple1)
+                            .foregroundColor(ColorManager .purple5)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -109,7 +110,7 @@ struct AtmosphereInfo1: View {
 //                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                           .shadow(color: .black, radius: 1, x: 0, y: 1)
 
                
                Text("C H A N G E D!")
@@ -117,7 +118,7 @@ struct AtmosphereInfo1: View {
                              .foregroundColor(ColorManager .purple5)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
-               
+                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                 }
             }
             
