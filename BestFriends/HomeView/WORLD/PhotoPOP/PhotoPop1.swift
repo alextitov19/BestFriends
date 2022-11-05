@@ -39,22 +39,13 @@ struct PhotoPop1: View {
             })
             .offset(x: showItems ? 100 : 0, y: showItems ? -155: 0)
                 
-//            
-//            NavigationLink(destination: PhotoPopInfo(user: user, friends: friends), label: {
-//                PhotoPopCircle (color: ColorManager.purple1, friendName: "how \nthis \nworks ")
-//            })
-//            .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
-//
-
-                
+              
                 NavigationLink(destination:  PhotoPopView(user: user, friends: friends), label: {
                     PhotoPopCircle (color: ColorManager.purple3, friendName: "load \nimages for \nfriends")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? -200: 0)
                 
-                
-                
-                
+        
                 
                 NavigationLink(destination: EmptyView(), label: {
                     PhotoPopCircle (color: .red, friendName: "")
@@ -95,8 +86,8 @@ struct PhotoPop1: View {
                              .multilineTextAlignment(.center)
  //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                
-               Text("IMAGE")
-                             .font(.system(size: 37))
+               Text("IMAGES")
+                             .font(.system(size: 35))
                         
                              .foregroundColor(.blue)
                              .fontWeight(.light)

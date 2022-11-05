@@ -66,37 +66,17 @@ struct BuggingPreload1: View {
 
 
               NavigationLink(destination: HurtFeelings2(user: user, friends: friends, groups: groups), label: {
-                  BuggingCircle (color: ColorManager.purple2, friendName: "friend \nhurt my \nFeelings")
+                  BuggingCircle (color: ColorManager.purple2, friendName: "Hurt \nFeelings")
             })
-            .offset(x: showItems ? 130 : 0, y: showItems ? -175: 0)
+              .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
             
-            NavigationLink(destination: Apologies2(user: user, friends: friends, groups: groups), label: {
-                BuggingCircle (color: ColorManager.purple4, friendName: "hurt my \nfriend's \nFeelings")
+            NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
+                BuggingCircle (color: ColorManager.purple4, friendName: "HUGE \nFight")
             })
-            .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
+            .offset(x: showItems ? 100 : 0, y: showItems ? -175: 0)
+            
 
-
-
-//                NavigationLink(destination:  HomeView(), label: {
-//                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "send \nmessage in \nchat")
-//                })
-//                .offset(x: showItems ? -100 : 0, y: showItems ? 200: 0)
-                
-//                NavigationLink(destination:  PhotoPopView(user: user, friends: friends), label: {
-//                    BuggingCircle (color: ColorManager.purple3, friendName: "#2 \nload images")
-//                })
-//                .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
-//
-//
-//
-//
-//
-//                NavigationLink(destination: EmptyView(), label: {
-//                    BuggingCircle (color: .red, friendName: "")
-//                    })
-//                .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-
-                           
+                  
                 
             
         Image(systemName: "triangle.fill")
@@ -111,33 +91,24 @@ struct BuggingPreload1: View {
            VStack {
                
             Spacer ()
-                   .frame(height: 30)
+                   .frame(height: 50)
 
-               Text("everywhere")
-                             .font(.system(size: 20))
+               Text("DRAMA")
+                             .font(.system(size: 30))
                          
                              .foregroundColor(.blue)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
  //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-              Text("FriendGroups")
-                            .font(.system(size: 20))
+              Text("Central")
+                            .font(.system(size: 50))
                         
                             .foregroundColor(.blue)
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
 //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
                
-             
-               
-               Text("fixing this")
-                             .font(.system(size: 20))
-                         
-                             .foregroundColor(.blue)
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
- //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-                    
+       
                 }
             }
             

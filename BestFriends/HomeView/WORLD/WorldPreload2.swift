@@ -55,44 +55,45 @@ struct WorldPreload2: View {
               NavigationLink(destination: SaySomethingNice3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                   SomethingNiceCircle (color: ColorManager.purple2, friendName: "say \nsomething \nNICE")
             })
-//              .offset(x: showItems ? 150 : 0, y: showItems ? 175: 0)
-              .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
+              .offset(x: showItems ? 120 : 0, y: showItems ? -200: 0)
 
 
                 NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups), label: {
                 SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "send \nVirtual \nHUG")
             })
-                .offset(x: showItems ? 120 : 0, y: showItems ? -290: 0)
-//
+                .offset(x: showItems ? -20 : 0, y: showItems ? -150: 0)
+                
+                
                 NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.grey2, friendName: "PhotoPOP")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
 
                 NavigationLink(destination:  SendSongPush(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.pmbc_blue, friendName: "send \nNEW \nMusic")
+                    SomethingNiceCircle (color: ColorManager.orange3, friendName: "send \nNEW \nMusic")
                 })
-                .offset(x: showItems ? -110 : 0, y: showItems ? -250: 0)
+                .offset(x: showItems ? 100 : 0, y: showItems ? 90: 0)
 
                 NavigationLink(destination:  AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
                     SomethingNiceCircle (color: ColorManager.red, friendName: "Something \njust \nHAPPENED")
                 })
-                .offset(x: showItems ? -60 : 0, y: showItems ? -155: 0)
+                .offset(x: showItems ? -90 : 0, y: showItems ? -240: 0)
+             
 
 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "OK, \nsomething's \nBUGGING \nme")
+                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "Something's \nBUGGING \nme")
                     })
-                .offset(x: showItems ? 130 : 0, y: showItems ? 170: 0)
+                .offset(x: showItems ? 0 : 0, y: showItems ? 225: 0)
+               
 
             
                
                 NavigationLink(destination: EmptyView(), label: {
-                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "something \nBUGGING \nyou?")
+                    SomethingNiceCircle (color: ColorManager.purple4, friendName: "")
                     })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
 
-//                .shadow(color: .blue, radius: 65, x: 30, y: 50)
               
                 
                 
@@ -121,7 +122,7 @@ struct WorldPreload2: View {
                              .multilineTextAlignment(.center)
 //                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("building")
+               Text("for building")
                              .font(.system(size: 20))
                              .italic()
                              .foregroundColor(.white)

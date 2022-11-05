@@ -267,7 +267,7 @@ struct PlanetActionsView: View {
                         //                                   label: {
                         //
                         
-                        NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups),
+                        NavigationLink(destination: EmptyView(),
                                        label: {
                             
                             ZStack {
