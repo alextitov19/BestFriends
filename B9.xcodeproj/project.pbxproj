@@ -179,7 +179,6 @@
 		CF76FA08285EED3E000750A4 /* ReceivedPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */; };
 		CF9957F128A72E77000BBAFF /* DeleteUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F028A72E77000BBAFF /* DeleteUserData.swift */; };
 		CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */; };
-		CF9957F528A7F244000BBAFF /* SomethingBuggingYou.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */; };
 		CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */; };
 		CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */; };
 		CF9E33C6284522AE00107433 /* Step_OurAdvantage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */; };
@@ -236,6 +235,7 @@
 		CFD8BD0A29132AE700F86EFB /* AtmosphereInfo1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */; };
 		CFD8BD0E2915565B00F86EFB /* MyRoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */; };
 		CFD8BD102915581500F86EFB /* myRoom1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD8BD0F2915581500F86EFB /* myRoom1.mp4 */; };
+		CFD8BD142916BDD700F86EFB /* HurtFeelingsPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD132916BDD700F86EFB /* HurtFeelingsPreload.swift */; };
 		CFDA4BCE28D1037100118D90 /* DreamVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */; };
 		CFDA4BD628D10C9600118D90 /* DreamPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */; };
 		CFDA4BD828D1999900118D90 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD728D1999900118D90 /* Heart.swift */; };
@@ -428,7 +428,6 @@
 		CF76FA07285EED3E000750A4 /* ReceivedPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedPlaylist.swift; sourceTree = "<group>"; };
 		CF9957F028A72E77000BBAFF /* DeleteUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserData.swift; sourceTree = "<group>"; };
 		CF9957F228A73EFA000BBAFF /* CancellingPURPLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancellingPURPLE.swift; sourceTree = "<group>"; };
-		CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomethingBuggingYou.swift; sourceTree = "<group>"; };
 		CF9E33C12843040B00107433 /* Step3FG_Acountability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3FG_Acountability.swift; sourceTree = "<group>"; };
 		CF9E33C32843E0D800107433 /* Step2FG_TeenBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2FG_TeenBehavior.swift; sourceTree = "<group>"; };
 		CF9E33C5284522AE00107433 /* Step_OurAdvantage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_OurAdvantage.swift; sourceTree = "<group>"; };
@@ -485,6 +484,7 @@
 		CFD8BD0929132AE700F86EFB /* AtmosphereInfo1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereInfo1.swift; sourceTree = "<group>"; };
 		CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomInfo.swift; sourceTree = "<group>"; };
 		CFD8BD0F2915581500F86EFB /* myRoom1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom1.mp4; sourceTree = "<group>"; };
+		CFD8BD132916BDD700F86EFB /* HurtFeelingsPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelingsPreload.swift; sourceTree = "<group>"; };
 		CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamVaultView.swift; sourceTree = "<group>"; };
 		CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamPlaylist.swift; sourceTree = "<group>"; };
 		CFDA4BD728D1999900118D90 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
@@ -614,13 +614,13 @@
 				7AD8DF0B27F6970A00D9F0E1 /* AuthView */,
 				7AB52167289D9418005A49FA /* Purple Subscription */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
+				CFD12CC92819E98800AB2539 /* DramaCentral */,
 				CF37535628BECF34003817E3 /* Built By Teens */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
 				CFD0469D2838392200BF0B02 /* URGENT Chat Invite */,
 				D0CC1A02283EE31900E7461F /* Horizons */,
 				CF2DBCF2285527C9008616A3 /* My Planet */,
 				CF37535B28C6953B003817E3 /* DREAMS */,
-				CFD12CC92819E98800AB2539 /* DramaCentral */,
 				CF725E2628516E180096342F /* Tokens */,
 				CFD12CC52819436F00AB2539 /* OurStory */,
 				7A1C048627F4C3A90002B173 /* Models */,
@@ -841,7 +841,6 @@
 				CF3DB36C28D8E08C00BF9CCD /* OurStrategy.swift */,
 				CF3DB38228DAD2D200BF9CCD /* NewPoems.swift */,
 				CF47CF0828E2C93E008B6F11 /* BeSinger.swift */,
-				CFDA4BCC28D0F8D500118D90 /* DREAM VAULT */,
 			);
 			path = DREAMS;
 			sourceTree = "<group>";
@@ -1255,7 +1254,7 @@
 			isa = PBXGroup;
 			children = (
 				CFC0EE712906F9FE006B3FAA /* BuggingPreload1.swift */,
-				CF9957F428A7F244000BBAFF /* SomethingBuggingYou.swift */,
+				CFD8BD132916BDD700F86EFB /* HurtFeelingsPreload.swift */,
 				CF37535428BD5BDD003817E3 /* SomethingBuggingYou2.swift */,
 			);
 			path = SomethingBuggingYou;
@@ -1285,6 +1284,7 @@
 			isa = PBXGroup;
 			children = (
 				CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */,
+				CFDA4BCC28D0F8D500118D90 /* DREAM VAULT */,
 			);
 			path = "My ROOM";
 			sourceTree = "<group>";
@@ -1557,6 +1557,7 @@
 				CF3B65E2280215A90003A714 /* DeleteMyAccount.swift in Sources */,
 				CF1ECAC52872AA4B00D999F8 /* IntroFreindGp2.swift in Sources */,
 				7AB52171289D9BF1005A49FA /* StoreManager.swift in Sources */,
+				CFD8BD142916BDD700F86EFB /* HurtFeelingsPreload.swift in Sources */,
 				7A720CC528A6CB6800992FD2 /* ChangeChatBackgroundView.swift in Sources */,
 				CFAB540B281BB6EE00BBF502 /* DramaCentralView.swift in Sources */,
 				CF381A502827372100B3719E /* Step2_ParentsFighting.swift in Sources */,
@@ -1572,7 +1573,6 @@
 				CF9E33C22843040B00107433 /* Step3FG_Acountability.swift in Sources */,
 				7AC4C01F27FF4A08000C4140 /* ChatView.swift in Sources */,
 				CFAB5407281AAFA100BBF502 /* TryThis.swift in Sources */,
-				CF9957F528A7F244000BBAFF /* SomethingBuggingYou.swift in Sources */,
 				CF9E33C42843E0D800107433 /* Step2FG_TeenBehavior.swift in Sources */,
 				CFAB5404281A9A9000BBF502 /* Step4_NuclearOption.swift in Sources */,
 				CF3B65DC2801F4D40003A714 /* CustomizationView.swift in Sources */,

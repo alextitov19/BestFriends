@@ -280,13 +280,13 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                     
-                                    Text("Making")
+                                    Text("HUGE")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("Amends")
+                                    Text("Fight")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)

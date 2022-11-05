@@ -110,14 +110,3 @@ struct Apologies2: View {
 
 
 
-
-
-
-//
-//
-//struct Apologies2_Previews : PreviewProvider {
-//    static var previews: some View {
-//        Apologies2(user: user, friends: friends, groups: groups)
-//    }
-//}
-//
