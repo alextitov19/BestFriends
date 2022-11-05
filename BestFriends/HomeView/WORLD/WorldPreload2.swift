@@ -62,8 +62,7 @@ struct WorldPreload2: View {
                 NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups), label: {
                 SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "send \nVirtual \nHUG")
             })
-//            .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
-            .offset(x: showItems ? 120 : 0, y: showItems ? -290: 0)
+                .offset(x: showItems ? 120 : 0, y: showItems ? -290: 0)
 //
                 NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.grey2, friendName: "PhotoPOP")
@@ -112,24 +111,27 @@ struct WorldPreload2: View {
            VStack {
 
             Spacer ()
-                   .frame(height: 125)
+                   .frame(height: 100)
               
-               Text("IDEAS")
-                             .font(.system(size: 25))
+               Text("Teen-designed")
+                             .font(.system(size: 20))
+                             .italic()
                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
 //                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("Helping you build")
-                             .font(.system(size: 17))
-                            .foregroundColor(.white)
+               Text("building")
+                             .font(.system(size: 20))
+                             .italic()
+                             .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
 //                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-
+               Spacer ()
+                      .frame(height: 7)
                
-               Text("BETTER")
+               Text("CLOSER")
                              .font(.system(size: 30))
                              .foregroundColor(ColorManager .purple1)
 //                            .foregroundColor(.green)
@@ -140,7 +142,7 @@ struct WorldPreload2: View {
                
                Text("'FriendGroups'")
                              .font(.system(size: 25))
-                             .foregroundColor(ColorManager .purple3)
+                             .foregroundColor(ColorManager .purple1)
 //                            .foregroundColor(.white)
                              .fontWeight(.light)
                              .multilineTextAlignment(.center)
@@ -149,31 +151,7 @@ struct WorldPreload2: View {
                
                Spacer ()
                       .frame(height: 130)
-//
-//               Text("Building")
-//                             .font(.system(size: 20))
-//                             .italic()
-//                             .foregroundColor(.white)
-//                             .fontWeight(.light)
-//                             .multilineTextAlignment(.center)
-//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-//
-//               Text("B E T T E R")
-//                             .font(.system(size: 47))
-//                             .foregroundColor(ColorManager .purple2)
-////                            .foregroundColor(.white)
-//                             .fontWeight(.thin)
-//                             .multilineTextAlignment(.center)
-//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
-//               Text("F R I E N D S H I P S")
-//                             .font(.system(size: 30))
-//                            .foregroundColor(ColorManager .purple2)
-//                             .fontWeight(.light)
-//                             .multilineTextAlignment(.center)
-//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-//
+
                 }
             }
 

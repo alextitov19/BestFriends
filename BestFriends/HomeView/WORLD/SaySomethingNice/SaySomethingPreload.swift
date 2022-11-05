@@ -48,18 +48,9 @@ struct SaySomethingPreload: View {
                 
                 Spacer()
                     .frame(height: 20)
+             
                 
-                Text("It's S I M P L E")
-                    .font(.system(size: 30))
-                 
-                    .foregroundColor(.white)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 20)
-                
-                Text("YEP! Just say Something")
+                Text("Say Something")
                     .font(.system(size: 27))
                  
                     .foregroundColor(.white)
@@ -106,32 +97,9 @@ struct SaySomethingPreload: View {
                 Spacer()
                     .frame(height: 50)
                 
-           
-//
-//                Text("-type message in Chat")
-//                    .font(.system(size: 20))
-//                    .italic()
-//                    .foregroundColor(.pink)
-//                    .fontWeight(.light)
-////                    .multilineTextAlignment(.center)
-//                    .padding()
-//
-//                Text("-send push notifictiion alerting friend")
-//                    .font(.system(size: 20))
-//                    .italic()
-//                    .foregroundColor(.pink)
-//                    .fontWeight(.light)
-////                    .multilineTextAlignment(.center)
-//                    .padding()
+ 
 
-                    Text("-quick, send Push Notification \nalerting friend")
-                        .font(.system(size: 20))
-                        .italic()
-                        .foregroundColor(.blue)
-                        .fontWeight(.light)
-                        .padding()
-                    
-                Text("-long-tap received messages \nsaving them to 'My Room' \nto re-visit on difficult days")
+                Text("long-tap received messages \nsaving them to 'My Room' \nto read on difficult days")
                     .font(.system(size: 20))
                     .italic()
                     .foregroundColor(.blue)

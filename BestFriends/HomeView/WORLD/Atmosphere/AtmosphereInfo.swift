@@ -41,35 +41,7 @@ struct AtmosphereInfo: View {
                 //
                 
                 VStack {
-                    
-                    Text("WOW")
-                        .font(.system(size: 40))
-                    
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                    
-                    Text("Something just happen?")
-                        .font(.system(size: 25))
-                    
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                    
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
-                    Text("Let your friends know with \na Push Notification INSTANTLY")
-                        .font(.system(size: 18))
-                    
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                    
-                    Spacer()
-                        .frame(height: 30)
-                    
+
                     Text("So They Can")
                         .font(.system(size: 30))
                         .foregroundColor(Color.white)
@@ -103,7 +75,7 @@ struct AtmosphereInfo: View {
                         NavigationLink(
                             destination: AtmosphereInfo2(user: user, atmosphere: atmosphere, friends: friends),
                             label: {
-                                Text("How this works")
+                                Text("How feature works")
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
                                     .font(.system(size: 17))
@@ -119,6 +91,8 @@ struct AtmosphereInfo: View {
                         VStack {
                             
                             
+                            Spacer()
+                                .frame(height: 40)
                             
                             
                             NavigationLink(
@@ -135,32 +109,7 @@ struct AtmosphereInfo: View {
                                     
                                 })
    
-                            
-                            
-                            Spacer()
-                                .frame(height: 30)
-                            
-                            Text("Maybe just want to be alone")
-                                .font(.system(size: 20))
-                            
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            
-                            Text("for a while")
-                                .font(.system(size: 20))
-                            
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            
-                            Text("Check-0ut My Room")
-                                .font(.system(size: 20))
-                            
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                            
+                 
                             
                         }
                     }

@@ -153,12 +153,9 @@
 		CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */; };
 		CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */; };
 		CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0828E2C93E008B6F11 /* BeSinger.swift */; };
-		CF47CF0C28E58B61008B6F11 /* VirtualHugActive.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0B28E58B61008B6F11 /* VirtualHugActive.swift */; };
-		CF47CF0E28E58E2B008B6F11 /* VirtualHugActive2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0D28E58E2B008B6F11 /* VirtualHugActive2.swift */; };
 		CF47CF1428E81BBE008B6F11 /* Wind2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */; };
 		CF47D5D32862531C004B47A1 /* RemoveFriend2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */; };
 		CF4A08D82877E2B600ADA9DD /* NostalgiaPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */; };
-		CF4A08DA2877E4A000ADA9DD /* PhotoPopPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */; };
 		CF4A08DE2878497800ADA9DD /* Atmosphere2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */; };
 		CF4A08E228793CC900ADA9DD /* HurtFeelings4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E128793CC900ADA9DD /* HurtFeelings4.swift */; };
 		CF4A08E42879443E00ADA9DD /* Apologies4.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A08E32879443E00ADA9DD /* Apologies4.swift */; };
@@ -406,12 +403,9 @@
 		CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia2.m4a; sourceTree = "<group>"; };
 		CF47CF0828E2C93E008B6F11 /* BeSinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeSinger.swift; sourceTree = "<group>"; };
-		CF47CF0B28E58B61008B6F11 /* VirtualHugActive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHugActive.swift; sourceTree = "<group>"; };
-		CF47CF0D28E58E2B008B6F11 /* VirtualHugActive2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualHugActive2.swift; sourceTree = "<group>"; };
 		CF47CF1328E81BBE008B6F11 /* Wind2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wind2.mp4; sourceTree = "<group>"; };
 		CF47D5D22862531C004B47A1 /* RemoveFriend2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFriend2.swift; sourceTree = "<group>"; };
 		CF4A08D72877E2B600ADA9DD /* NostalgiaPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NostalgiaPreload.swift; sourceTree = "<group>"; };
-		CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPopPreload.swift; sourceTree = "<group>"; };
 		CF4A08DD2878497800ADA9DD /* Atmosphere2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Atmosphere2.mp4; sourceTree = "<group>"; };
 		CF4A08E128793CC900ADA9DD /* HurtFeelings4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelings4.swift; sourceTree = "<group>"; };
 		CF4A08E32879443E00ADA9DD /* Apologies4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apologies4.swift; sourceTree = "<group>"; };
@@ -1188,9 +1182,8 @@
 		CFD0469A2837D9BC00BF0B02 /* PhotoPoP */ = {
 			isa = PBXGroup;
 			children = (
-				CF4A08D92877E4A000ADA9DD /* PhotoPopPreload.swift */,
+				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
 				CF0911892848875C00CB0AF0 /* PhotoPopVideo.swift */,
-				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
 				7A04C13E2855390B003AB24A /* PhotoPopImageView.swift */,
 			);
 			path = PhotoPoP;
@@ -1255,9 +1248,9 @@
 		CFD8BD032912A8F300F86EFB /* PhotoPOP */ = {
 			isa = PBXGroup;
 			children = (
-				CF24815828F5075600D47AE3 /* PhotoPopInfo.swift */,
-				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
 				CF24815428F5018B00D47AE3 /* PhotoPop1.swift */,
+				7A04C13C28553818003AB24A /* PhotoPopView.swift */,
+				CF37534328B3F297003817E3 /* WorldPhotoPreload2.swift */,
 				CF24815628F5060100D47AE3 /* PhotoPop3.swift */,
 				CFD0469A2837D9BC00BF0B02 /* PhotoPoP */,
 			);
@@ -1344,8 +1337,6 @@
 				CFC0EE732907A823006B3FAA /* HugPreload.swift */,
 				CF70374D284BBA6E0064DEF0 /* VirtualHug.swift */,
 				CFC0EE752907AB7D006B3FAA /* HugPushNotification.swift */,
-				CF47CF0B28E58B61008B6F11 /* VirtualHugActive.swift */,
-				CF47CF0D28E58E2B008B6F11 /* VirtualHugActive2.swift */,
 			);
 			path = "Virtual HUG";
 			sourceTree = "<group>";
@@ -1543,7 +1534,6 @@
 				CF24815728F5060100D47AE3 /* PhotoPop3.swift in Sources */,
 				7A22A57C274416C200FB6B4F /* CustomButtonInterior.swift in Sources */,
 				7A7AEF2826C4CF6D00DE8344 /* SequenceExtension.swift in Sources */,
-				CF4A08DA2877E4A000ADA9DD /* PhotoPopPreload.swift in Sources */,
 				CFD0ABD8285C492F0032CA3D /* BuiltByTeens2.swift in Sources */,
 				CF4A08E228793CC900ADA9DD /* HurtFeelings4.swift in Sources */,
 				7A2B1F5B26A630A200EDBEAF /* ColorExtension.swift in Sources */,
@@ -1553,7 +1543,6 @@
 				7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */,
 				7A0856A227F3D9A900E8282B /* RestAPI.swift in Sources */,
 				CFDB1509285816AF00155CEE /* FaceTimeCall.swift in Sources */,
-				CF47CF0C28E58B61008B6F11 /* VirtualHugActive.swift in Sources */,
 				7A7A23B42803D62700B87613 /* WebSocket.swift in Sources */,
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AB5216C289D97F7005A49FA /* Subscriptions.swift in Sources */,
@@ -1694,7 +1683,6 @@
 				CF4CFAC228E8DC3B00D6AEA9 /* SaySomethingNice3.swift in Sources */,
 				7AB5217328A1E079005A49FA /* LocationManager.swift in Sources */,
 				CFA1226A285994AE00E22E84 /* PickMediator2.swift in Sources */,
-				CF47CF0E28E58E2B008B6F11 /* VirtualHugActive2.swift in Sources */,
 				CF09118A2848875C00CB0AF0 /* PhotoPopVideo.swift in Sources */,
 				7A720CC328A583E900992FD2 /* CustomizeMyPlanetView.swift in Sources */,
 				7ACD20BC27FC99CA002F7800 /* InviteView.swift in Sources */,
