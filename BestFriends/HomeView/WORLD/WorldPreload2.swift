@@ -129,6 +129,7 @@ struct WorldPreload2: View {
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
 //                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+              
                Spacer ()
                       .frame(height: 7)
                
@@ -149,6 +150,14 @@ struct WorldPreload2: View {
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
                
+              
+               
+               Text("together")
+                             .font(.system(size: 20))
+                             .italic()
+                             .foregroundColor(.white)
+                             .fontWeight(.thin)
+                             .multilineTextAlignment(.center)
                
                Spacer ()
                       .frame(height: 130)
