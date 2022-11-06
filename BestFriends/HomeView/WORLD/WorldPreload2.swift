@@ -70,7 +70,7 @@ struct WorldPreload2: View {
                 
                 
                 NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.grey2, friendName: "PhotoPOP")
+                    SomethingNiceCircle (color: ColorManager.grey2, friendName: "PhotoPOP \n'shake' \niPhone")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -79,7 +79,7 @@ struct WorldPreload2: View {
                 
                 
                 NavigationLink(destination:  SendSongPush(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.orange3, friendName: "send \nNEW \nMusic")
+                    SomethingNiceCircle (color: ColorManager.orange3, friendName: "found \nNEW \nMusic")
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? 90: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -97,7 +97,7 @@ struct WorldPreload2: View {
 
 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "Help, \nsomething's \nBUGGING me")
+                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "Help, \nsomething's \nBUGGING \nme")
                     })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 225: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
