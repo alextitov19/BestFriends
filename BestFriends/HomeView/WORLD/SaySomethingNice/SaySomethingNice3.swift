@@ -71,13 +71,8 @@ struct SaySomethingNice3: View {
             })
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)
               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-//
-//            NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-//                SomethingNiceCircle (color: ColorManager.purple3, friendName: "#3_see \nWorld \nMessages")
-//            })
-//            .offset(x: showItems ? -50 : 0, y: showItems ? -130: 0)
-//            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
+                
                 
                 NavigationLink(destination:  SaySomethingPreload(user: user, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.purple1, friendName: "Say it")
@@ -86,8 +81,7 @@ struct SaySomethingNice3: View {
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
                 
-                
-                
+    
                 
                 NavigationLink(destination: EmptyView(), label: {
                     SomethingNiceCircle (color: .red, friendName: "")

@@ -53,39 +53,54 @@ struct WorldPreload2: View {
 
 
               NavigationLink(destination: SaySomethingNice3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                  SomethingNiceCircle (color: ColorManager.purple2, friendName: "say \nsomething \nNICE")
+                  SomethingNiceCircle (color: ColorManager.purple2, friendName: "QUICK, say \nsomething \nNICE")
             })
               .offset(x: showItems ? 120 : 0, y: showItems ? -200: 0)
+              .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
-
+                
+                
+                
                 NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups), label: {
-                SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "send \nVirtual \nHUG")
+                SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "launch \ncomforting \nHUG")
             })
                 .offset(x: showItems ? -20 : 0, y: showItems ? -150: 0)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                
                 
                 
                 NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.grey2, friendName: "PhotoPOP")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
-
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+            
+                
+                
+                
                 NavigationLink(destination:  SendSongPush(user: user, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.orange3, friendName: "send \nNEW \nMusic")
                 })
                 .offset(x: showItems ? 100 : 0, y: showItems ? 90: 0)
-
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+              
+                
+                
+                
                 NavigationLink(destination:  AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-                    SomethingNiceCircle (color: ColorManager.red, friendName: "Something \njust \nHAPPENED")
+                    SomethingNiceCircle (color: ColorManager.red, friendName: "Something \nJUST \nHappened")
                 })
                 .offset(x: showItems ? -90 : 0, y: showItems ? -240: 0)
-             
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                
+                
 
 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "Something's \nBUGGING \nme")
+                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "Help, \nsomething's \nBUGGING me")
                     })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 225: 0)
-               
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
             
                
@@ -93,8 +108,7 @@ struct WorldPreload2: View {
                     SomethingNiceCircle (color: ColorManager.purple4, friendName: "")
                     })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 0: 0)
-
-              
+                
                 
                 
                 
@@ -112,7 +126,7 @@ struct WorldPreload2: View {
            VStack {
 
             Spacer ()
-                   .frame(height: 100)
+                   .frame(height: 120)
               
                Text("Teen-designed")
                              .font(.system(size: 20))
@@ -122,7 +136,7 @@ struct WorldPreload2: View {
                              .multilineTextAlignment(.center)
 //                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("for building")
+               Text("helping you build")
                              .font(.system(size: 20))
                              .italic()
                              .foregroundColor(.white)
@@ -150,15 +164,15 @@ struct WorldPreload2: View {
                              .multilineTextAlignment(.center)
                              .shadow(color: .black, radius: 1, x: 0, y: 1)
                
-              
-               
-               Text("together")
-                             .font(.system(size: 20))
-                             .italic()
-                             .foregroundColor(.white)
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-               
+//
+//
+//               Text("together")
+//                             .font(.system(size: 20))
+//                             .italic()
+//                             .foregroundColor(.white)
+//                             .fontWeight(.thin)
+//                             .multilineTextAlignment(.center)
+//
                Spacer ()
                       .frame(height: 130)
 
@@ -196,7 +210,7 @@ struct WorldPreloadCircle: View {
         .frame(width: 110, height: 110)
         .clipShape(Circle())
         .foregroundColor(color)
-//        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+      
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
         .opacity(0.7)
 
