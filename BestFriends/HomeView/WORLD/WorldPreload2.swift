@@ -62,7 +62,7 @@ struct WorldPreload2: View {
                 
                 
                 NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups), label: {
-                SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "launch \ncomforting \nHUG")
+                SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "send \ncomforting \nHUG")
             })
                 .offset(x: showItems ? -20 : 0, y: showItems ? -150: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -70,7 +70,7 @@ struct WorldPreload2: View {
                 
                 
                 NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.grey2, friendName: "PhotoPOP \n'shake' \niPhone")
+                    SomethingNiceCircle (color: ColorManager.grey2, friendName: "PhotoPOP")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)

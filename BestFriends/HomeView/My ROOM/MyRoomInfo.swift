@@ -67,25 +67,34 @@ struct MyRoomInfo: View {
 
              
                 NavigationLink(destination: ReceivedPlaylist(), label: {
-                    AtmosphereCircle (color: ColorManager.orange5, friendName: "Listen \nto my \nPlaylist")
+                    AtmosphereCircle (color: ColorManager.orange5, friendName: "Playlist")
                 })
                 .offset(x: showItems ? 95 : 0, y: showItems ? -50: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
 
                 
                 
-                   NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
+                NavigationLink(destination: DreamVaultView(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
                        AtmosphereCircle (color: ColorManager.grey2, friendName: "Dream \nGalaxy \n(comming \n2023)")
                    })
-                   .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
-                   .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                .offset(x: showItems ? 75 : 0, y: showItems ? 150: 0)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
             
       
+                    
+                NavigationLink(destination: EmptyView(), label: {
+                    AtmosphereCircle (color: ColorManager.purple2, friendName: "my \nVibe \n(comming \nsoon)")
+                    })
+                .offset(x: showItems ? -75 : 0, y: showItems ? -250: 0)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                   
+                
+              
                 
                 NavigationLink(destination: EmptyView(), label: {
-                    AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "PhotoPOP \n'shake' \nphone")
+                    AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "PhotoPOP \n'shake' \niPhone")
                 })
-                .offset(x: showItems ? -75 : 0, y: showItems ? -150: 0)
+                .offset(x: showItems ? -35 : 0, y: showItems ? -150: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
          
    
