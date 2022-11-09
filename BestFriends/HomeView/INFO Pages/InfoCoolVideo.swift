@@ -74,17 +74,17 @@ struct InfoCoolVideo: View {
                     .fontWeight(.thin)
                     .foregroundColor(Color.white)
                     .padding()
-                
-                let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "WorldVid", withExtension: "mp4")!)
-                
-                VideoPlayer(player: avPlayer)
-                    .onAppear() {
-                        avPlayer.isMuted = false
-                    }
-                    .onDisappear() {
-                        avPlayer.isMuted = true
-                    }
-                    .frame(height: 230)
+//                
+//                let avPlayer = AVPlayer(url:  Bundle.main.url(forResource: "WorldVid", withExtension: "mp4")!)
+//                
+//                VideoPlayer(player: avPlayer)
+//                    .onAppear() {
+//                        avPlayer.isMuted = false
+//                    }
+//                    .onDisappear() {
+//                        avPlayer.isMuted = true
+//                    }
+//                    .frame(height: 230)
                 
              
                 VStack {

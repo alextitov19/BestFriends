@@ -236,6 +236,7 @@
 		CFD8BD0E2915565B00F86EFB /* MyRoomInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */; };
 		CFD8BD102915581500F86EFB /* myRoom1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CFD8BD0F2915581500F86EFB /* myRoom1.mp4 */; };
 		CFD8BD142916BDD700F86EFB /* HurtFeelingsPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD132916BDD700F86EFB /* HurtFeelingsPreload.swift */; };
+		CFD8BD16291B3D6600F86EFB /* INFOPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */; };
 		CFDA4BCE28D1037100118D90 /* DreamVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */; };
 		CFDA4BD628D10C9600118D90 /* DreamPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */; };
 		CFDA4BD828D1999900118D90 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD728D1999900118D90 /* Heart.swift */; };
@@ -485,6 +486,7 @@
 		CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomInfo.swift; sourceTree = "<group>"; };
 		CFD8BD0F2915581500F86EFB /* myRoom1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = myRoom1.mp4; sourceTree = "<group>"; };
 		CFD8BD132916BDD700F86EFB /* HurtFeelingsPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelingsPreload.swift; sourceTree = "<group>"; };
+		CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload2.swift; sourceTree = "<group>"; };
 		CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamVaultView.swift; sourceTree = "<group>"; };
 		CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamPlaylist.swift; sourceTree = "<group>"; };
 		CFDA4BD728D1999900118D90 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
@@ -1149,6 +1151,7 @@
 			isa = PBXGroup;
 			children = (
 				CF3295F6290BAA7C0014F658 /* INFOPreload.swift */,
+				CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */,
 				CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */,
 				CF37535928BED060003817E3 /* BuiltForTeens.swift */,
 				CF1ECAC82875500100D999F8 /* InfoViewPlanet.swift */,
@@ -1541,6 +1544,7 @@
 				7AA201132635D5F500C9F00C /* Room+Extensions.swift in Sources */,
 				7AB5216C289D97F7005A49FA /* Subscriptions.swift in Sources */,
 				CFD0469F2838394C00BF0B02 /* UrgentChatInvite.swift in Sources */,
+				CFD8BD16291B3D6600F86EFB /* INFOPreload2.swift in Sources */,
 				CF1ECAC92875500100D999F8 /* InfoViewPlanet.swift in Sources */,
 				CF3802D728456C83005181E4 /* FG_Team.swift in Sources */,
 				CFD12CD3281A821C00AB2539 /* FightWithFriend.swift in Sources */,

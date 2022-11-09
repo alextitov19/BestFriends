@@ -135,7 +135,7 @@ struct INFOPreload: View {
                         
                         
                         NavigationLink(
-                            destination: InfoCoolVideo(user: user),
+                            destination: INFOPreload2(user: user),
                             label: {
                                 Text("Next")
                                     .fontWeight(.thin)
