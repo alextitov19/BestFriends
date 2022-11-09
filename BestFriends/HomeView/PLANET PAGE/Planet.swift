@@ -267,7 +267,7 @@ struct PlanetActionsView: View {
                         //                                   label: {
                         //
                         
-                        NavigationLink(destination: EmptyView(),
+                        NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups),
                                        label: {
                             
                             ZStack {
@@ -280,24 +280,24 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                     
-                                    Text("Dream")
+                                    Text("Making")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("Galaxy")
+                                    Text("Amends")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
-                                    
-                                    Text("coming 2023")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 12, weight: .bold))
-                                        .italic()
-                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                        .opacity(0.50)
+//                                    
+//                                    Text("coming 2023")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 12, weight: .bold))
+//                                        .italic()
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
                                     
                                 }
                             }

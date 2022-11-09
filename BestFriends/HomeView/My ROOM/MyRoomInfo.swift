@@ -91,7 +91,7 @@ struct MyRoomInfo: View {
                 
               
                 
-                NavigationLink(destination: EmptyView(), label: {
+                NavigationLink(destination: PhotoPop1(user: user, friends: friends), label: {
                     AtmosphereCircle (color: ColorManager.pmbc_blue, friendName: "PhotoPOP \n'shake' \niPhone")
                 })
                 .offset(x: showItems ? -35 : 0, y: showItems ? -150: 0)
