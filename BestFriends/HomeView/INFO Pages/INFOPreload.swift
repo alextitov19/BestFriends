@@ -128,7 +128,7 @@ struct INFOPreload: View {
                         
                       
                         Spacer()
-                            .frame(height: 80)
+                            .frame(height: 50)
                     
                         
                         
@@ -150,7 +150,7 @@ struct INFOPreload: View {
           
                         
                         Spacer ()
-                            .frame(height: 30)
+                            .frame(height: 10)
                         
                         Text("deep down, we want to feel special")
                             .font(.system(size: 18))
@@ -158,8 +158,11 @@ struct INFOPreload: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple2)
                         
-//                        Spacer()
-//                            .frame(height: 70)
+                        Spacer()
+                            .frame(height: 130)
+                        
+                        
+                        
                     }
                 }
                 
