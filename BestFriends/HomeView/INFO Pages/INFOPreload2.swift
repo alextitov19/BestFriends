@@ -92,7 +92,7 @@ struct INFOPreload2: View {
                 VStack {
                 
                             
-                    Text("receiving warm pings \ntouching our hearts")
+                    Text("receiving warm pings \ntouching our hearts,")
                             .font(.system(size: 25))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
@@ -100,7 +100,7 @@ struct INFOPreload2: View {
                     Spacer()
                         .frame(height: 15)
                     
-                    Text("the look on a girl's face \nholding unexpected flowers")
+                    Text("the look on a girl's face \nholding unexpected flowers,")
                             .font(.system(size: 25))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
@@ -109,7 +109,7 @@ struct INFOPreload2: View {
                     Spacer()
                         .frame(height: 15)
                     
-                    Text("kicking through \nAutumn's leaves")
+                    Text("kicking through \nAutumn's leaves,")
                             .font(.system(size: 25))
                             .fontWeight(.thin)
                             .foregroundColor(Color.white)
@@ -118,7 +118,7 @@ struct INFOPreload2: View {
                         .frame(height: 15)
                     
             VStack {
-                Text("making snow angles")
+                Text("like making snow angles.")
                         .font(.system(size: 25))
                         .fontWeight(.thin)
                         .foregroundColor(Color.white)
@@ -126,7 +126,7 @@ struct INFOPreload2: View {
                 Spacer()
                     .frame(height: 30)
                
-                Text("Feeling a little lighter")
+                Text("Feeling a little lighter - NOW")
                             .font(.system(size: 27))
                             .italic()
                             .fontWeight(.light)
