@@ -37,12 +37,58 @@ struct HomeView: View {
             
             ZStack {
                 
+         
+                
+//                //
+//                //            Image("purpleBackground")
+//                //                .resizable()
+//                //                .ignoresSafeArea()
+//                //                .scaledToFill()
+//                //                .onAppear(perform: loadData)
+//                //
+//                //            AdPlayerView(name: "background_1")
+//                //                .ignoresSafeArea()
+//                //                .blendMode(.screen)
+//
+//
+//                             ColorManager.grey4
+//                                 .ignoresSafeArea()
+//                                 .onAppear()
+//
+//                 //            Image("blueBackground")
+//                 //                .resizable()
+//                 //                .ignoresSafeArea()
+//                                 .scaledToFill()
+//                //                 .onAppear(perform: loadData)
+//                //                 .sheet(isPresented: $isShowPhotoLibrary) {
+//                //                     ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
+//                //                         .onDisappear { createPhotoPop() }
+//
+//                            AdPlayerView(name: "background_1")
+//                                          .ignoresSafeArea()
+//                                           .blendMode(.screen)
+//
+//
+                
+                
+                
+                
+                
+                
+                Color .black
+                  .ignoresSafeArea()
+                  .onAppear()
+                
+                ColorManager .purple7
+                  .ignoresSafeArea()
+                  .onAppear()
+                
                 
                 
                 // Background Image...
-                Image("purpleBackground")
-                    .resizable()
-                    .scaledToFill()
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .scaledToFill()
                     .ignoresSafeArea()
                     .onAppear {
                         if RestApi.instance.needLogin {
@@ -64,6 +110,8 @@ struct HomeView: View {
                     .onTapGesture(perform: backgroundTapped)
                 
       
+                
+                
                 VStack {
                     Image(systemName: ".")
                         .resizable()
