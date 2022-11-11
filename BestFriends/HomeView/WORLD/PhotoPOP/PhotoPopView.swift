@@ -25,9 +25,14 @@ struct PhotoPopView: View {
     
     var body: some View {
         ZStack {
-            Image("blueBackground")
-                .resizable()
+           
+            ColorManager.grey4
                 .ignoresSafeArea()
+                .onAppear()
+            
+//            Image("blueBackground")
+//                .resizable()
+//                .ignoresSafeArea()
                 .scaledToFill()
                 .onAppear(perform: loadData)
                 .sheet(isPresented: $isShowPhotoLibrary) {
@@ -236,5 +241,12 @@ struct PhotoPopView: View {
                 photoPopImages.remove(at: index)
             }
         })
+        
+        
+        
+//        Spacer ()
+//               .frame(height: 100)
+        
+        
     }
 }

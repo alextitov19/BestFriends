@@ -23,35 +23,26 @@ struct ReceivedPlaylist: View {
                 
                 
                 Text("comming soon")
-                    .font(.system(size: 20))
+                    .font(.system(size: 23))
+                    .italic()
                     .foregroundColor(.green)
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.light)
                     .multilineTextAlignment(.center)
                 
                 Spacer ()
                     .frame(height: 30)
                 
-                
-                Text("Want friends to know ")
-                    .font(.system(size: 30))
+             
+                Text("Mood Matching")
+                    .font(.system(size: 40))
                     .foregroundColor(.white)
                     .fontWeight(.ultraLight)
-                
-                Text("something just happend")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                
-                Text("But, NOT feeling like talking")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
-                
-                
-                Text("to anyone right now")
-                    .font(.system(size: 30))
-                    .foregroundColor(.white)
-                    .fontWeight(.ultraLight)
+              
+              Text("P L A Y L I S T")
+                  .font(.system(size: 45))
+                  .foregroundColor(.white)
+                  .fontWeight(.ultraLight)
+            
                 
                 VStack {
                     
@@ -63,12 +54,12 @@ struct ReceivedPlaylist: View {
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                     
-                    Text("friends recommended")
+                    Text("that match your Mood")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
                     
-                    Text("when their mood matches your's now")
+                    Text("for all your friends to see")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
