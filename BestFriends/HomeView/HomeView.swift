@@ -79,11 +79,13 @@ struct HomeView: View {
                   .ignoresSafeArea()
                   .onAppear()
                 
-                ColorManager .purple7
-                  .ignoresSafeArea()
-                  .onAppear()
-                
-                
+//                ColorManager .grey4
+//                  .ignoresSafeArea()
+//                  .onAppear()
+//                
+//                ColorManager .orange5
+//                  .ignoresSafeArea()
+//                  .onAppear()
                 
                 // Background Image...
 //                Image("purpleBackground")
