@@ -38,6 +38,9 @@ struct PhotoPopView: View {
                 .sheet(isPresented: $isShowPhotoLibrary) {
                     ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
                         .onDisappear { createPhotoPop() }
+                    
+                    
+                    
                 }
             
             VStack {

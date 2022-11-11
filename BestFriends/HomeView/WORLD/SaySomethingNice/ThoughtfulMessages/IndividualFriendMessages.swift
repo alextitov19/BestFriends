@@ -19,25 +19,48 @@ struct IndividualFriendMessages: View {
     
     var body: some View {
         ZStack {
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-                .onAppear(perform: loadData)
+//
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+//                .onAppear(perform: loadData)
+//
+//            AdPlayerView(name: "background_1")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+         
             
+             ColorManager.grey4
+                 .ignoresSafeArea()
+                 .onAppear()
+             
+ //            Image("blueBackground")
+ //                .resizable()
+ //                .ignoresSafeArea()
+                 .scaledToFill()
+//                 .onAppear(perform: loadData)
+//                 .sheet(isPresented: $isShowPhotoLibrary) {
+//                     ImagePicker(image: $attachmentImage, sourceType: .photoLibrary)
+//                         .onDisappear { createPhotoPop() }
+                     
             AdPlayerView(name: "background_1")
-                .ignoresSafeArea()
-                .blendMode(.screen)
+                          .ignoresSafeArea()
+                           .blendMode(.screen)
+            
+            
+            
+            
             
             VStack {
                 Text("Special messages from")
-                    .font(.system(size: 17))
+                    .font(.system(size: 40))
                     .fontWeight(.light)
                     .foregroundColor(.black)
                     .multilineTextAlignment(.center)
                 
                 Text(friend.firstName + " " + friend.lastName)
-                    .font(.system(size: 15))
+                    .font(.system(size: 40))
                     .fontWeight(.light)
                     .foregroundColor(.black)
                 
@@ -124,21 +147,4 @@ private struct FriendMessageView: View {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-//
-//struct IndividualFriendMessages_Previews : PreviewProvider {
-//    static var previews: some View {
-//        IndividualFriendMessages()
-//    }
-//}
 
