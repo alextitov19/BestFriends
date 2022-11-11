@@ -56,13 +56,20 @@ struct IndividualFriendMessages: View {
                 Text("Special messages from")
                     .font(.system(size: 40))
                     .fontWeight(.light)
-                    .foregroundColor(.black)
+                    .foregroundColor(ColorManager .purple4)
                     .multilineTextAlignment(.center)
                 
                 Text(friend.firstName + " " + friend.lastName)
                     .font(.system(size: 40))
                     .fontWeight(.light)
-                    .foregroundColor(.black)
+                    .foregroundColor(ColorManager .grey4)
+                
+                Text("(tap 'star' to favorite)")
+                    .font(.system(size: 25))
+                    .italic()
+                    .fontWeight(.light)
+                    .foregroundColor(ColorManager .grey4)
+                    .multilineTextAlignment(.center)
                 
                 ScrollView(.vertical) {
                     ForEach(smileNotes.indices, id: \.self) { i in
@@ -70,6 +77,12 @@ struct IndividualFriendMessages: View {
                             .cornerRadius(15)
                             .padding(.horizontal, 20)
                             .onTapGesture(perform: { toggleFavorite(index: i) })
+                        
+                        
+                        
+                        
+                        
+                        
                     }
                 }
                 
