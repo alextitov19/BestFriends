@@ -104,13 +104,13 @@ struct BestFriendMessages: View {
                     
                     VStack {
                         
-                        Text("Remembering")
+                        Text("SmileVault")
                             .font(.system(size: 35))
                             .foregroundColor(.green)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                   
-                        Text("World Messages")
+                        Text("'Nice' messages")
                             .font(.system(size: 25))
                             
                             .foregroundColor(ColorManager.grey1)
