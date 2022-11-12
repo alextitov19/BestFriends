@@ -42,12 +42,12 @@ struct BuiltForTeens: View {
          
              
             VStack {
-                Text("our")
-                    .font(.system(size: 30))
-                    .italic()
-                    .foregroundColor(ColorManager.grey1)
-                    .fontWeight(.thin)
-                    .multilineTextAlignment(.center)
+//                Text("our")
+//                    .font(.system(size: 30))
+//                    .italic()
+//                    .foregroundColor(ColorManager.grey1)
+//                    .fontWeight(.thin)
+//                    .multilineTextAlignment(.center)
           
                 Text("FriendGroups")
                     .font(.system(size: 63))

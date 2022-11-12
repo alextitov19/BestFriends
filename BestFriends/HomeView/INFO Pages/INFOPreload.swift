@@ -152,7 +152,7 @@ struct INFOPreload: View {
                         Spacer ()
                             .frame(height: 10)
                         
-                        Text("deep down, we want to feel special")
+                        Text("we're special")
                             .font(.system(size: 18))
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)

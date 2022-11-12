@@ -22,7 +22,7 @@ struct ReceivedPlaylist: View {
             VStack {
                 
                 
-                Text("comming soon")
+                Text("comming 2023")
                     .font(.system(size: 23))
                     .italic()
                     .foregroundColor(.green)
@@ -33,9 +33,9 @@ struct ReceivedPlaylist: View {
                     .frame(height: 30)
                 
              
-                Text("Mood Matching")
+                Text("FriendGroup")
                     .font(.system(size: 40))
-                    .foregroundColor(.white)
+                    .foregroundColor(ColorManager .purple3)
                     .fontWeight(.ultraLight)
               
               Text("P L A Y L I S T")
@@ -49,20 +49,32 @@ struct ReceivedPlaylist: View {
                     Spacer ()
                         .frame(height: 30)
                     
-                    Text("Build your Playlist of songs")
+                    Text("-Your friends can add songs \nto your Playlist")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
+                        .padding()
                     
-                    Text("that match your Mood")
+                    Text("-You can appept or reject")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
+                        .padding()
                     
-                    Text("for all your friends to see")
+                    Text("-Auto upload to Apple Music")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
+                        .padding()
+                    
+                    
+                    
+                    Text("-Check Daily vs. Push Notification?")
+                        .font(.system(size: 20))
+                        .foregroundColor(.white)
+                        .fontWeight(.ultraLight)
+                        .padding()
+                    
                     
                     
                     
