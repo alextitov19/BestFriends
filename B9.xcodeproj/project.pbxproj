@@ -239,7 +239,6 @@
 		CFD8BD142916BDD700F86EFB /* HurtFeelingsPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD132916BDD700F86EFB /* HurtFeelingsPreload.swift */; };
 		CFD8BD16291B3D6600F86EFB /* INFOPreload2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */; };
 		CFDA4BCE28D1037100118D90 /* DreamVaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */; };
-		CFDA4BD628D10C9600118D90 /* DreamPlaylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */; };
 		CFDA4BD828D1999900118D90 /* Heart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD728D1999900118D90 /* Heart.swift */; };
 		CFDA4BDA28D2A9AD00118D90 /* MiroWhiteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BD928D2A9AD00118D90 /* MiroWhiteboard.swift */; };
 		CFDA4BDC28D2AFE400118D90 /* Neuroscience.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDA4BDB28D2AFE400118D90 /* Neuroscience.swift */; };
@@ -490,7 +489,6 @@
 		CFD8BD132916BDD700F86EFB /* HurtFeelingsPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtFeelingsPreload.swift; sourceTree = "<group>"; };
 		CFD8BD15291B3D6600F86EFB /* INFOPreload2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload2.swift; sourceTree = "<group>"; };
 		CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamVaultView.swift; sourceTree = "<group>"; };
-		CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamPlaylist.swift; sourceTree = "<group>"; };
 		CFDA4BD728D1999900118D90 /* Heart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heart.swift; sourceTree = "<group>"; };
 		CFDA4BD928D2A9AD00118D90 /* MiroWhiteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiroWhiteboard.swift; sourceTree = "<group>"; };
 		CFDA4BDB28D2AFE400118D90 /* Neuroscience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neuroscience.swift; sourceTree = "<group>"; };
@@ -1290,7 +1288,9 @@
 			isa = PBXGroup;
 			children = (
 				CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */,
-				CFDA4BCC28D0F8D500118D90 /* DREAM VAULT */,
+				CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */,
+				CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */,
+				CFBB9E83286789A400AEC994 /* MyRoomPreload.swift */,
 			);
 			path = "My ROOM";
 			sourceTree = "<group>";
@@ -1301,17 +1301,6 @@
 				7AD8DF0C27F6974C00D9F0E1 /* Planet.swift */,
 			);
 			path = "PLANET PAGE";
-			sourceTree = "<group>";
-		};
-		CFDA4BCC28D0F8D500118D90 /* DREAM VAULT */ = {
-			isa = PBXGroup;
-			children = (
-				CFBB9E83286789A400AEC994 /* MyRoomPreload.swift */,
-				CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */,
-				CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */,
-				CFDA4BD528D10C9600118D90 /* DreamPlaylist.swift */,
-			);
-			path = "DREAM VAULT";
 			sourceTree = "<group>";
 		};
 		CFDB150128574D6100155CEE /* FightWithParents */ = {
@@ -1649,7 +1638,6 @@
 				7A22A57A274416C200FB6B4F /* TextFieldCustom.swift in Sources */,
 				CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */,
 				CFC0EE802908060C006B3FAA /* InfoPushNotifications.swift in Sources */,
-				CFDA4BD628D10C9600118D90 /* DreamPlaylist.swift in Sources */,
 				CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */,
 				CFDA4BE028D57A2300118D90 /* TwinkieDream.swift in Sources */,
 				7ACACDA82853EAB700D8AB75 /* UIAlertControllerExtension.swift in Sources */,

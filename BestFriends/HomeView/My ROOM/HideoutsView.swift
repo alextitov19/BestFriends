@@ -10,20 +10,20 @@ import SwiftUI
 import AVKit
 
 struct HideoutsView: View {
-    
+
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
     @EnvironmentObject var sessionManager: SessionManager
-    
+
     let user: User
     let atmosphere: Atmosphere
-    
+
     let friends: [User]
     let friendAtmospheres: [Atmosphere]
- 
-    
+
+
     var body: some View {
-        
+
         ZStack {
             Color(#colorLiteral(red: 0.9301232696, green: 0.9072448611, blue: 0.9865264297, alpha: 1))
                 .ignoresSafeArea()
@@ -36,33 +36,33 @@ struct HideoutsView: View {
             AdPlayerView(name: "myRoom1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-            
-        
+
+
             NavigationLink(destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: { HideoutsViewCircle (color: .blue, friendName: "Smile \nNotes")
             })
                 .offset(x: showItems ? 100 : 0, y: showItems ? -165: 0)
-           
-//           
+
+//
 //            NavigationLink(destination: PhotoPopPreload(user: user, friends: friends), label: {
 //                  HideoutsViewCircle (color: .orange, friendName: "PhotoPOP")
 //            })
 //                .offset(x: showItems ? 75 : 0, y: showItems ? -90: 0)
-//           
-            
+//
+
             NavigationLink(destination: ReceivedPlaylist(), label: { HideoutsViewCircle (color: .pink, friendName: "Song \nfor \nMood")
             })
                 .offset(x: showItems ? -60 : 0, y: showItems ? -145: 0)
-            
-            
+
+
             NavigationLink(destination: EverybodyOk(user: user), label: {
                 HideoutsViewCircle (color: .gray, friendName: "Is \nEverybody \nOk?")
             })
                .offset(x: showItems ? -100 : 0, y: showItems ? -55: 0)
 
-           
-            
+
+
             VStack {
-                
+
                 Spacer()
                     .frame(height: 190)
             Button(action: {
@@ -79,9 +79,9 @@ struct HideoutsView: View {
                         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                 })
             }
-            
+
             VStack {
-           
+
                 ZStack {
         Image(systemName: "triangle.fill")
                     .resizable()
@@ -92,52 +92,52 @@ struct HideoutsView: View {
 
                     .shadow(color: .orange, radius: 65, x: 30, y: 50)
 
-          
+
                     VStack {
                Spacer ()
                       .frame(height: 65)
-               
-               
+
+
               Text("My Room")
                             .font(.system(size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-                  
+
                 }
             }
             }
-            
+
            .onTapGesture {
                withAnimation {
                self.showItems.toggle()
                }
                print("tap function is working")
            }
-            
+
            .animation(Animation.easeInOut(duration: 1.0), value: showItems)
 
             }
         }
-    
-   
+
+
 
 struct HideoutsViewCircle: View {
     var color: Color
     var friendName: String
-    
+
     var body: some View {
-       
+
         ZStack {
-          
+
         Rectangle()
         .frame(width: 85, height: 85)
         .clipShape(Circle())
         .foregroundColor(color)
         .opacity(0.3)
         .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 5, x: 0, y: 5)
-        
+
         Text(friendName)
                 .fontWeight(.light)
                 .italic()
