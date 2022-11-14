@@ -86,7 +86,19 @@ struct PhotoPOPFGPreload: View {
                     .frame(height: 50)
                 
  
+                    
+                    
+                    Text("-Public images \n-Comments allowed")
+                        .font(.system(size: 25))
+                     
+                        .foregroundColor(.white)
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
 
+                    
+                    Spacer()
+                        .frame(height: 20)
+                    
                 Text("comming soon")
                     .font(.system(size: 20))
                     .italic()
