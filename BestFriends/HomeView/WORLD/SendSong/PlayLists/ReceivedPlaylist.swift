@@ -38,7 +38,7 @@ struct ReceivedPlaylist: View {
                     .foregroundColor(ColorManager .purple3)
                     .fontWeight(.ultraLight)
               
-              Text("P L A Y L I S T")
+              Text("P L A Y L I S T S")
                   .font(.system(size: 45))
                   .foregroundColor(.white)
                   .fontWeight(.ultraLight)
@@ -47,26 +47,41 @@ struct ReceivedPlaylist: View {
                 VStack {
                     
                     Spacer ()
-                        .frame(height: 30)
+                        .frame(height: 70)
                     
-                    Text("-Your friends can add songs \nto your Playlist")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
+                    Text("Friends can add songs")
+                        .font(.system(size: 30))
+                        .foregroundColor(ColorManager .purple3)
                         .fontWeight(.ultraLight)
-                        .padding()
+                    
+                    
+                    Text("to your Playlist")
+                        .font(.system(size: 30))
+                        .foregroundColor(ColorManager .purple3)
+                        .fontWeight(.ultraLight)
+                    
+                    
+                    Spacer ()
+                        .frame(height: 10)
                     
                     Text("-You can appept or reject")
                         .font(.system(size: 20))
                         .foregroundColor(.white)
                         .fontWeight(.ultraLight)
-                        .padding()
+                        
                     
-                    Text("-Auto upload to Apple Music")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
+                    Spacer ()
+                        .frame(height: 30)
+                    
+                    Text("Auto upload to")
+                        .font(.system(size: 30))
+                        .foregroundColor(ColorManager .purple3)
                         .fontWeight(.ultraLight)
-                        .padding()
                     
+                    Text("Apple Music")
+                        .font(.system(size: 30))
+                        .foregroundColor(ColorManager .purple3)
+                        .fontWeight(.ultraLight)
                    
                     
                     Spacer ()

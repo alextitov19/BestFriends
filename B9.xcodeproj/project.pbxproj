@@ -38,7 +38,6 @@
 		7A4E336726A0D6FC00202BB7 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */; };
 		7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4E336826A0D72600202BB7 /* UIColorExtension.swift */; };
 		7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */; };
-		7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */; };
 		7A71BCFF2625292A00E6FA9E /* BestFriendsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */; };
 		7A71BD032625292B00E6FA9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD022625292B00E6FA9E /* Assets.xcassets */; };
 		7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A71BD052625292B00E6FA9E /* Preview Assets.xcassets */; };
@@ -88,7 +87,6 @@
 		7AFCF27A27FDFFA800D2DB5C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27927FDFFA800D2DB5C /* BlurView.swift */; };
 		7AFCF27C27FDFFB000D2DB5C /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */; };
 		7AFCF27F27FE005F00D2DB5C /* GroupRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */; };
-		CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */; };
 		CF0911852848328F00CB0AF0 /* HideChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0911842848328F00CB0AF0 /* HideChat.swift */; };
 		CF09118C28488A5700CB0AF0 /* BetaTestVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */; };
 		CF09118E284894F400CB0AF0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09118D284894F400CB0AF0 /* InfoView.swift */; };
@@ -164,7 +162,6 @@
 		CF65040028864AF00092EEB9 /* background_1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF6503FF28864AF00092EEB9 /* background_1.mp4 */; };
 		CF650406288E76B50092EEB9 /* GotPushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF650405288E76B50092EEB9 /* GotPushNotification.swift */; };
 		CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040928915A080092EEB9 /* FD_Step1.swift */; };
-		CF65040C28925FE00092EEB9 /* MyRoomDVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */; };
 		CF6504162893192C0092EEB9 /* AtmosphereDVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */; };
 		CF65041828931C0B0092EEB9 /* FightsDVid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65041728931C0B0092EEB9 /* FightsDVid.swift */; };
 		CF65041A28931C2C0092EEB9 /* FightsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65041928931C2C0092EEB9 /* FightsInfo.swift */; };
@@ -203,7 +200,6 @@
 		CFAB54262821007B00BBF502 /* FightTextUserIdeas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */; };
 		CFAB542828211BAC00BBF502 /* ParentsFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB542728211BAC00BBF502 /* ParentsFighting.swift */; };
 		CFAB542A282123EA00BBF502 /* WhoFighting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB5429282123EA00BBF502 /* WhoFighting.swift */; };
-		CFBB9E84286789A400AEC994 /* MyRoomPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB9E83286789A400AEC994 /* MyRoomPreload.swift */; };
 		CFC0ACBE28EF4E7B00B49831 /* SaySomethingPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */; };
 		CFC0ACC028EFD6DB00B49831 /* ChatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */; };
 		CFC0ACC228EFE26400B49831 /* ChatInfo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */; };
@@ -220,7 +216,6 @@
 		CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */; };
 		CFD046932832F9D000BF0B02 /* Friend1VaultPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */; };
 		CFD046952835925F00BF0B02 /* FriendValutTrackMoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */; };
-		CFD0469C2837D9F400BF0B02 /* HideoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */; };
 		CFD0469F2838394C00BF0B02 /* UrgentChatInvite.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */; };
 		CFD0ABD1285C00FF0032CA3D /* ReportIssues.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */; };
 		CFD0ABD8285C492F0032CA3D /* BuiltByTeens2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */; };
@@ -285,7 +280,6 @@
 		7A4E336626A0D6FC00202BB7 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		7A4E336826A0D72600202BB7 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		7A63AF8A26A339C70072E21E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundAnimation.mp4; sourceTree = "<group>"; };
 		7A71BCFB2625292A00E6FA9E /* BestFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A71BCFE2625292A00E6FA9E /* BestFriendsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestFriendsApp.swift; sourceTree = "<group>"; };
 		7A71BD022625292B00E6FA9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -337,7 +331,6 @@
 		7AFCF27927FDFFA800D2DB5C /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		7AFCF27B27FDFFB000D2DB5C /* CustomCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 		7AFCF27E27FE005F00D2DB5C /* GroupRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupRow.swift; sourceTree = "<group>"; };
-		CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = BestFriendsAd1.mp4; sourceTree = "<group>"; };
 		CF0911842848328F00CB0AF0 /* HideChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideChat.swift; sourceTree = "<group>"; };
 		CF09118B28488A5700CB0AF0 /* BetaTestVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaTestVideo.swift; sourceTree = "<group>"; };
 		CF09118D284894F400CB0AF0 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
@@ -414,7 +407,6 @@
 		CF6503FF28864AF00092EEB9 /* background_1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_1.mp4; sourceTree = "<group>"; };
 		CF650405288E76B50092EEB9 /* GotPushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotPushNotification.swift; sourceTree = "<group>"; };
 		CF65040928915A080092EEB9 /* FD_Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FD_Step1.swift; sourceTree = "<group>"; };
-		CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomDVid.swift; sourceTree = "<group>"; };
 		CF6504152893192C0092EEB9 /* AtmosphereDVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereDVid.swift; sourceTree = "<group>"; };
 		CF65041728931C0B0092EEB9 /* FightsDVid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightsDVid.swift; sourceTree = "<group>"; };
 		CF65041928931C2C0092EEB9 /* FightsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightsInfo.swift; sourceTree = "<group>"; };
@@ -453,7 +445,6 @@
 		CFAB54252821007B00BBF502 /* FightTextUserIdeas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightTextUserIdeas.swift; sourceTree = "<group>"; };
 		CFAB542728211BAC00BBF502 /* ParentsFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentsFighting.swift; sourceTree = "<group>"; };
 		CFAB5429282123EA00BBF502 /* WhoFighting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoFighting.swift; sourceTree = "<group>"; };
-		CFBB9E83286789A400AEC994 /* MyRoomPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRoomPreload.swift; sourceTree = "<group>"; };
 		CFC0ACBD28EF4E7B00B49831 /* SaySomethingPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaySomethingPreload.swift; sourceTree = "<group>"; };
 		CFC0ACBF28EFD6DB00B49831 /* ChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo.swift; sourceTree = "<group>"; };
 		CFC0ACC128EFE26400B49831 /* ChatInfo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo2.swift; sourceTree = "<group>"; };
@@ -470,7 +461,6 @@
 		CFD0468C282D7F8400BF0B02 /* AtmosphereMain2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereMain2.swift; sourceTree = "<group>"; };
 		CFD046922832F9D000BF0B02 /* Friend1VaultPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend1VaultPractice.swift; sourceTree = "<group>"; };
 		CFD046942835925F00BF0B02 /* FriendValutTrackMoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendValutTrackMoods.swift; sourceTree = "<group>"; };
-		CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideoutsView.swift; sourceTree = "<group>"; };
 		CFD0469E2838394C00BF0B02 /* UrgentChatInvite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrgentChatInvite.swift; sourceTree = "<group>"; };
 		CFD0ABD0285C00FF0032CA3D /* ReportIssues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIssues.swift; sourceTree = "<group>"; };
 		CFD0ABD7285C492F0032CA3D /* BuiltByTeens2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltByTeens2.swift; sourceTree = "<group>"; };
@@ -579,7 +569,6 @@
 			children = (
 				CF5263FC266F201000243DD7 /* Background Videos */,
 				CF5263FB266F1FF600243DD7 /* Ad Videos */,
-				7A6A4D02262B868D00561D87 /* backgroundAnimation.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -982,7 +971,6 @@
 		CF5263FB266F1FF600243DD7 /* Ad Videos */ = {
 			isa = PBXGroup;
 			children = (
-				CF05A8C526AC6DB1009618E6 /* BestFriendsAd1.mp4 */,
 			);
 			path = "Ad Videos";
 			sourceTree = "<group>";
@@ -1288,9 +1276,6 @@
 			isa = PBXGroup;
 			children = (
 				CFD8BD0D2915565B00F86EFB /* MyRoomInfo.swift */,
-				CF65040B28925FE00092EEB9 /* MyRoomDVid.swift */,
-				CFD0469B2837D9F400BF0B02 /* HideoutsView.swift */,
-				CFBB9E83286789A400AEC994 /* MyRoomPreload.swift */,
 			);
 			path = "My ROOM";
 			sourceTree = "<group>";
@@ -1423,7 +1408,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFCB79A1284D2F9000B8D868 /* HugVideo.mp4 in Resources */,
-				7A6A4D04262B889D00561D87 /* backgroundAnimation.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
@@ -1440,7 +1424,6 @@
 				7A63AF8B26A339C70072E21E /* Launch Screen.storyboard in Resources */,
 				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,
 				CF3DB37228DA6D7D00BF9CCD /* Nadiah2.m4a in Resources */,
-				CF05A8C626AC6DB1009618E6 /* BestFriendsAd1.mp4 in Resources */,
 				CF65042B28A185750092EEB9 /* PaperAirplanes.mp4 in Resources */,
 				CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */,
 				CFD0ABDC285C4E040032CA3D /* BuiltByTeens3.mp4 in Resources */,
@@ -1595,10 +1578,8 @@
 				7A4D50072783B9D3006F7404 /* UIScreenExtension.swift in Sources */,
 				CF3B65CA2801D2DE0003A714 /* ResetPasswordView.swift in Sources */,
 				CFAB541B281E5F8300BBF502 /* YouGotThis.swift in Sources */,
-				CFBB9E84286789A400AEC994 /* MyRoomPreload.swift in Sources */,
 				CFE1946E28133CF700ED5718 /* BestFriendMessages.swift in Sources */,
 				CF381A4D2826790F00B3719E /* Step1_ParentsFighting.swift in Sources */,
-				CFD0469C2837D9F400BF0B02 /* HideoutsView.swift in Sources */,
 				7ACACDAA2853EACF00D8AB75 /* AlertWrapper.swift in Sources */,
 				CF3B65E4280219B70003A714 /* RemoveFriend.swift in Sources */,
 				CF3295FD290BBD210014F658 /* InfoCoolVideo.swift in Sources */,
@@ -1666,7 +1647,6 @@
 				7AB52169289D959D005A49FA /* PurpleSubscriptionView.swift in Sources */,
 				62372A1B2884ECD500CAB75C /* HorizonInviteFriends.swift in Sources */,
 				CF65040A28915A080092EEB9 /* FD_Step1.swift in Sources */,
-				CF65040C28925FE00092EEB9 /* MyRoomDVid.swift in Sources */,
 				7A469E54284D6AC0004AF547 /* TextAlert.swift in Sources */,
 				CF3B65E028020D9A0003A714 /* ChangePin.swift in Sources */,
 				CF4CFAC228E8DC3B00D6AEA9 /* SaySomethingNice3.swift in Sources */,
