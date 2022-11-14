@@ -81,7 +81,7 @@ struct WorldPreload2: View {
                 NavigationLink(destination:  SendSongPush(user: user, friends: friends), label: {
                     SomethingNiceCircle (color: ColorManager.orange3, friendName: "found \nNEW \nMusic")
                 })
-                .offset(x: showItems ? 100 : 0, y: showItems ? 90: 0)
+                .offset(x: showItems ? 80 : 0, y: showItems ? 90: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
               
                 
@@ -104,6 +104,14 @@ struct WorldPreload2: View {
 
             
                
+                
+                NavigationLink(destination: ReceivedPlaylist(), label: {
+                    AtmosphereCircle (color: ColorManager.orange5, friendName: "FriendGroup \nPlaylists")
+                })
+                .offset(x: showItems ? 110 : 0, y: showItems ? 170: 0)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                
+                
                 NavigationLink(destination: EmptyView(), label: {
                     SomethingNiceCircle (color: ColorManager.purple4, friendName: "")
                     })

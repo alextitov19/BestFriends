@@ -67,16 +67,7 @@ struct ReceivedPlaylist: View {
                         .fontWeight(.ultraLight)
                         .padding()
                     
-                    
-                    
-                    Text("-Check Daily vs. Push Notification?")
-                        .font(.system(size: 20))
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .padding()
-                    
-                    
-                    
+                   
                     
                     Spacer ()
                         .frame(height: 30)
