@@ -158,6 +158,9 @@ struct BestFriendMessages: View {
                 if friend.atmosphere == atm.id {
                     // Found the friend - atmosphere pair
                     let planet = Planet(user: friend, atmosphere: atm)
+                  
+                    
+                    
                     planets.append(planet)
                     print("Created planet")
                 }
