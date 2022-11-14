@@ -46,10 +46,10 @@ struct PhotoPop1: View {
                 .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
                 
         
-                NavigationLink(destination:  PhotoPOPFGPreload(user: user, friends: friends), label: {
-                    PhotoPopCircle (color: ColorManager.purple3, friendName: "load public\nimages for \nFriendGroups")
-                })
-                .offset(x: showItems ? 0 : 0, y: showItems ? -250: 0)
+//                NavigationLink(destination:  PhotoPOPFGPreload(user: user, friends: friends), label: {
+//                    PhotoPopCircle (color: ColorManager.purple3, friendName: "load public\nimages for \nFriendGroups")
+//                })
+//                .offset(x: showItems ? 0 : 0, y: showItems ? -250: 0)
                 
                 
                 
