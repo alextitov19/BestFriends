@@ -54,18 +54,18 @@ struct IndividualFriendMessages: View {
             
             VStack {
                 Text("Special messages from")
-                    .font(.system(size: 40))
+                    .font(.system(size: 30))
                     .fontWeight(.light)
                     .foregroundColor(ColorManager .purple4)
                     .multilineTextAlignment(.center)
                 
                 Text(friend.firstName + " " + friend.lastName)
-                    .font(.system(size: 40))
+                    .font(.system(size: 5))
                     .fontWeight(.light)
                     .foregroundColor(ColorManager .grey4)
                 
                 Text("(tap 'star' to favorite)")
-                    .font(.system(size: 25))
+                    .font(.system(size: 20))
                     .italic()
                     .fontWeight(.light)
                     .foregroundColor(ColorManager .grey4)

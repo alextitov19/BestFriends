@@ -41,11 +41,18 @@ struct PhotoPop1: View {
                 
               
                 NavigationLink(destination:  PhotoPopView(user: user, friends: friends), label: {
-                    PhotoPopCircle (color: ColorManager.purple3, friendName: "load \nimages for \nfriends")
+                    PhotoPopCircle (color: ColorManager.purple2, friendName: "load private \nimages for \nfriends")
                 })
-                .offset(x: showItems ? -100 : 0, y: showItems ? -200: 0)
+                .offset(x: showItems ? -100 : 0, y: showItems ? -170: 0)
                 
         
+                NavigationLink(destination:  PhotoPOPFGPreload(user: user, friends: friends), label: {
+                    PhotoPopCircle (color: ColorManager.purple3, friendName: "load public\nimages for \nFriendGroups")
+                })
+                .offset(x: showItems ? 0 : 0, y: showItems ? -250: 0)
+                
+                
+                
                 
                 NavigationLink(destination: EmptyView(), label: {
                     PhotoPopCircle (color: .red, friendName: "")
@@ -122,7 +129,7 @@ struct PhotoPopCircle: View {
         ZStack {
           
         Rectangle()
-        .frame(width: 110, height: 110)
+        .frame(width: 120, height: 120)
         .clipShape(Circle())
         .foregroundColor(color)
         .opacity(0.7)

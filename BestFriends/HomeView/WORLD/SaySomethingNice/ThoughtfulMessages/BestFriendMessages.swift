@@ -110,7 +110,7 @@ struct BestFriendMessages: View {
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                   
-                        Text("'Nice' messages")
+                        Text("'Nice' Messages")
                             .font(.system(size: 25))
                             
                             .foregroundColor(ColorManager.grey1)
