@@ -70,34 +70,16 @@ struct ShaylaPage: View {
                     .foregroundColor(ColorManager.grey1)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
-                
-                Spacer()
-                    .frame(height: 10)
+            
                 
             VStack {
                     
             
                 Spacer()
-                    .frame(height: 100)
+                    .frame(height: 30)
             
                     VStack {
 
-//
-//                        Link(destination: URL(string: "https://socialtechlabs.com/teen-team/")!) {
-//                                Text("Meet some of our Teens")
-//                                    .fontWeight(.thin)
-//                                    .frame(width: 310, height: 40)
-//                                    .font(.system(size: 30))
-//                                    .foregroundColor(.white)
-//                                    .background(ColorManager.pmbc_blue)
-//                                    .cornerRadius(15)
-//                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                                    .opacity(0.8)
-//
-//                        }
-
-                        Spacer()
-                            .frame(height: 120)
                         
                         Link(destination: URL(string: "https://socialtechlabs.com/our-story/")!) {
                             
@@ -112,7 +94,7 @@ struct ShaylaPage: View {
                         }
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 10)
                         
                         Link(destination: URL(string: "https://socialtechlabs.com/teen-team/")!) {
                                 Text("Meet some of our Teens")
@@ -127,6 +109,43 @@ struct ShaylaPage: View {
 
                         }
 
+                        Spacer()
+                            .frame(height: 130)
+                        
+                        Text("we'd love t0")
+        //                    .font(.system(size: 25, weight: .bold))
+                            .font(.system(size: 35, weight: .bold))
+                            .foregroundColor(ColorManager .grey1)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.50)
+        //                    .foregroundColor(ColorManager.purple5)
+        //                    .fontWeight(.ultraLight)
+                            .multilineTextAlignment(.center)
+
+           
+                        
+                        
+                        Text("hear from you ")
+        //                    .font(.system(size: 25, weight: .bold))
+                            .font(.system(size: 35, weight: .bold))
+                            .foregroundColor(ColorManager .grey1)
+                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+                            .opacity(0.50)
+        //                    .foregroundColor(ColorManager.purple5)
+        //                    .fontWeight(.ultraLight)
+                            .multilineTextAlignment(.center)
+                        Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSdpTah0IIOpTjgGgC6x8hxxA5zs5MA6JZWohmd0bKwXDzK0bQ/viewform?usp=sf_link")!) {
+                            
+                            Text("Survey - 90 Seconds")
+                                .fontWeight(.thin)
+                                .frame(width: 310, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 25))
+                                .background(ColorManager.pmbc_green)
+                                .cornerRadius(15)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                        }
+                        
                         Spacer()
                             .frame(height: 15)
                         
