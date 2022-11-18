@@ -30,12 +30,18 @@ struct SignUpView: View {
     var body: some View {
         ZStack {
             
-            ColorManager.grey4
-                .ignoresSafeArea()
-            
-            
-//            ColorManager.purple1
+//            ColorManager.grey4
 //                .ignoresSafeArea()
+            
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.75)
             
             ZStack {
                 Circle()
@@ -51,10 +57,7 @@ struct SignUpView: View {
             
             
             VStack {
-//                Text("Welcome to BestFriends")
-//                    .font(.custom("MainFont", size: 40).bold())
-//                    .foregroundColor(ColorManager.grey3)
-//                    .padding(30)
+
                 
                 VStack {
                     HStack {

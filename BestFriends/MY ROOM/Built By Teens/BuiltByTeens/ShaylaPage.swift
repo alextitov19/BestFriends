@@ -41,24 +41,18 @@ struct ShaylaPage: View {
             VStack {
          
                 Text("Shayla, at age 16 ")
-//                    .font(.system(size: 25, weight: .bold))
                     .font(.system(size: 35, weight: .bold))
                     .foregroundColor(ColorManager .grey1)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
-//                    .foregroundColor(ColorManager.purple5)
-//                    .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
 
                 
                 Text("was our original")
-//                    .font(.system(size: 25, weight: .bold))
                     .font(.system(size: 40, weight: .bold))
                  .foregroundColor(ColorManager .grey1)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .opacity(0.50)
-//                    .foregroundColor(ColorManager.purple5)
-//                    .fontWeight(.ultraLight)
                     .multilineTextAlignment(.center)
                 
                 Spacer()

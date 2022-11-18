@@ -18,12 +18,17 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ZStack {
+ 
                 
-                ColorManager.grey4
+                Image("purpleBackground")
+                    .resizable()
                     .ignoresSafeArea()
-                
-//                ColorManager.purple1
-//                    .ignoresSafeArea()
+                    .scaledToFill()
+
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.75)
                 
                 
                 //TODO: Remove the onAppear for production
@@ -45,10 +50,21 @@ struct LoginView: View {
                     .offset(x: -200, y: 400)
                 
                 VStack {
-                    Text("Welcome Back")
-                        .font(.custom("MainFont", size: 40).bold())
-                        .foregroundColor(ColorManager.grey3)
-                        .padding(30)
+                  
+                    Text("building harmonious")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(ColorManager .grey1)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        .opacity(0.50)
+                        .multilineTextAlignment(.center)
+                       
+                    
+                    Text("FriendGroups")
+                        .font(.system(size: 35, weight: .bold))
+                        .foregroundColor(ColorManager .grey1)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        .opacity(0.50)
+                        .multilineTextAlignment(.center)
                     
                     MainTextField(text: $email, placeholder: "Email")
                         .padding(.horizontal, 40)

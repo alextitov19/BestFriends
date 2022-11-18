@@ -148,7 +148,7 @@ struct WorldPreload2: View {
                              .multilineTextAlignment(.center)
 //                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("helping you build")
+               Text("building more")
                              .font(.system(size: 20))
                              .italic()
                              .foregroundColor(.white)
@@ -159,7 +159,7 @@ struct WorldPreload2: View {
                Spacer ()
                       .frame(height: 7)
                
-               Text("CLOSER")
+               Text("HARMONIOUS")
                              .font(.system(size: 30))
                              .foregroundColor(ColorManager .purple1)
 //                            .foregroundColor(.green)
