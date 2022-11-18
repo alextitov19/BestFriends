@@ -148,6 +148,7 @@
 		CF4128042922A451003BCBFA /* PhotoPOPFGPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */; };
 		CF4128082927133B003BCBFA /* StoriesPreLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4128072927133B003BCBFA /* StoriesPreLoad.swift */; };
 		CF41280A292715A5003BCBFA /* StoriesPreLoad2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF412809292715A5003BCBFA /* StoriesPreLoad2.swift */; };
+		CF41280E29275467003BCBFA /* SurveyStickersPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41280D29275467003BCBFA /* SurveyStickersPreload.swift */; };
 		CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */; };
 		CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */; };
 		CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0828E2C93E008B6F11 /* BeSinger.swift */; };
@@ -394,6 +395,7 @@
 		CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPOPFGPreload.swift; sourceTree = "<group>"; };
 		CF4128072927133B003BCBFA /* StoriesPreLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPreLoad.swift; sourceTree = "<group>"; };
 		CF412809292715A5003BCBFA /* StoriesPreLoad2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPreLoad2.swift; sourceTree = "<group>"; };
+		CF41280D29275467003BCBFA /* SurveyStickersPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStickersPreload.swift; sourceTree = "<group>"; };
 		CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia2.m4a; sourceTree = "<group>"; };
 		CF47CF0828E2C93E008B6F11 /* BeSinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeSinger.swift; sourceTree = "<group>"; };
@@ -734,6 +736,7 @@
 				7AFCF27D27FDFFBA00D2DB5C /* ChatGroups */,
 				7AC4C01D27FF49F9000C4140 /* Chat */,
 				CF3B65A9280071580003A714 /* Settings */,
+				CF41280C2927542B003BCBFA /* SurveyStickers */,
 				CFC0EE7829080585006B3FAA /* INFO Pages */,
 				CF47CF0A28E2CAC7008B6F11 /* WORLD */,
 				CFD8BD0C2915562D00F86EFB /* My ROOM */,
@@ -946,6 +949,14 @@
 				CF412809292715A5003BCBFA /* StoriesPreLoad2.swift */,
 			);
 			path = "STORIES _ STORIES _ STORIES";
+			sourceTree = "<group>";
+		};
+		CF41280C2927542B003BCBFA /* SurveyStickers */ = {
+			isa = PBXGroup;
+			children = (
+				CF41280D29275467003BCBFA /* SurveyStickersPreload.swift */,
+			);
+			path = SurveyStickers;
 			sourceTree = "<group>";
 		};
 		CF47CF0A28E2CAC7008B6F11 /* WORLD */ = {
@@ -1622,6 +1633,7 @@
 				CFDA4BDC28D2AFE400118D90 /* Neuroscience.swift in Sources */,
 				CFDA4BDA28D2A9AD00118D90 /* MiroWhiteboard.swift in Sources */,
 				CF9957F328A73EFA000BBAFF /* CancellingPURPLE.swift in Sources */,
+				CF41280E29275467003BCBFA /* SurveyStickersPreload.swift in Sources */,
 				CFDA4BD828D1999900118D90 /* Heart.swift in Sources */,
 				CF70374E284BBA6E0064DEF0 /* VirtualHug.swift in Sources */,
 				7A3F0311265C9E5A00DBA207 /* UIImageExtension.swift in Sources */,

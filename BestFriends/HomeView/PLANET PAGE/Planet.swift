@@ -271,7 +271,7 @@ struct PlanetActionsView: View {
                         //                                   label: {
                         //
                         
-                        NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups),
+                        NavigationLink(destination: SurveyStickersPreload(),
                                        label: {
                             
                             ZStack {
@@ -290,7 +290,7 @@ struct PlanetActionsView: View {
                                 
                                 VStack {
                                     
-                                    Text("Get")
+                                    Text("Get Free")
                                         .foregroundColor(ColorManager .pmbc_blue)
                                         .font(.system(size: 15, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
