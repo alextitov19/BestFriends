@@ -174,12 +174,16 @@ struct PlanetActionsView: View {
                             
                             ZStack {
                                 Circle()
-                                    .frame(width: 110, height: 110)
-                                    .foregroundColor(ColorManager.purple2)
-                                    .shadow(color: .white, radius: 12, x: 0, y: 0)
-//                                    .glow(color: ColorManager.pmbc_green, radius: 3)
-                                    .opacity(0.6)
+//                                    .frame(width: 110, height: 110)
+//                                    .foregroundColor(ColorManager.purple2)
+//                                    .shadow(color: .white, radius: 12, x: 0, y: 0)
+////                                    .glow(color: ColorManager.pmbc_green, radius: 3)
+//                                    .opacity(0.6)
                                 
+                                    .frame(width: 110, height: 110)
+                                    .foregroundColor(ColorManager.purple3)
+                                    .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                    .opacity(0.40)
                                 VStack {
                                     
                                     Text("new user?")
@@ -272,27 +276,44 @@ struct PlanetActionsView: View {
                             
                             ZStack {
                                 Circle()
+//                                    .frame(width: 110, height: 110)
+//                                    .foregroundColor(ColorManager.purple3)
+//                                    .foregroundColor(.pink)
+//                                    .shadow(color: .white, radius: 10, x: 0, y: 0)
+//                                    .glow(color: ColorManager.purple4, radius: 3)
+//                                    .opacity(0.50)
+                                
                                     .frame(width: 110, height: 110)
                                     .foregroundColor(ColorManager.purple3)
-                                    .foregroundColor(.pink)
-                                    .shadow(color: .white, radius: 10, x: 0, y: 0)
-                                    .glow(color: ColorManager.purple4, radius: 3)
-                                    .opacity(0.50)
+                                    .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                    .opacity(0.40)
                                 
                                 VStack {
                                     
-                                    
-                                    Text("Making")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 25, weight: .bold))
+                                    Text("Get")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 15, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("Amends")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 25, weight: .bold))
+                                    Text("Stickers")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 15, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
+                                    
+                                    
+//                                    Text("Making")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 25, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
+//
+//                                    Text("Amends")
+//                                        .foregroundColor(.white)
+//                                        .font(.system(size: 25, weight: .bold))
+//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                        .opacity(0.50)
 
                                 }
                             }
@@ -332,7 +353,7 @@ struct PlanetActionsView: View {
                     
 //                    NavigationLink(destination: EmptyView(),
                
-                    NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups),
+                    NavigationLink(destination: InfoViewPlanet(user: user),
                                                   
                                                   
 //                                                  NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
@@ -340,29 +361,40 @@ struct PlanetActionsView: View {
                         
                         ZStack {
                             Circle()
+//
+                            
                                 .frame(width: 110, height: 110)
                                 .foregroundColor(ColorManager.purple3)
-                                .foregroundColor(.pink)
-                                .shadow(color: .white, radius: 10, x: 0, y: 0)
-                                .glow(color: ColorManager.purple4, radius: 3)
-                                .opacity(0.50)
+                                .shadow(color: .black, radius: 2, x: 0, y: 2)
+                                .opacity(0.40)
                             
-          
                             VStack {
                                 
                 
-                                Text("My")
-                                    .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 25, weight: .bold))
-                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.50)
-                              
-                                Text("Room")
-                                    .foregroundColor(ColorManager.grey1)
-                                     .font(.system(size: 25, weight: .bold))
-                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                     .opacity(0.50)
+                                Text("Walk-")
+                                    .foregroundColor(ColorManager .pmbc_blue)
+                                    .font(.system(size: 17, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.50)
                                 
+                                
+                                Text("through")
+                                    .foregroundColor(ColorManager .pmbc_blue)
+                                    .font(.system(size: 17, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.50)
+//                                Text("Walk-Through")
+//                                    .foregroundColor(ColorManager.grey1)
+//                                     .font(.system(size: 25, weight: .bold))
+//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                     .opacity(0.50)
+                              
+//                                Text("Room")
+//                                    .foregroundColor(ColorManager.grey1)
+//                                     .font(.system(size: 25, weight: .bold))
+//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                     .opacity(0.50)
+//
                               
                                 
                             }
