@@ -80,7 +80,18 @@ struct SurveyStickersPreload: View {
                                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                         }
                      
-                Text("get free sticker pack")
+                Text("get")
+//                    .font(.system(size: 25, weight: .bold))
+                    .font(.system(size: 35, weight: .bold))
+                    .foregroundColor(ColorManager .grey1)
+                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                    .opacity(0.50)
+//                    .foregroundColor(ColorManager.purple5)
+//                    .fontWeight(.ultraLight)
+                    .multilineTextAlignment(.center)
+                
+                
+                Text("free sticker pack")
 //                    .font(.system(size: 25, weight: .bold))
                     .font(.system(size: 35, weight: .bold))
                     .foregroundColor(ColorManager .grey1)

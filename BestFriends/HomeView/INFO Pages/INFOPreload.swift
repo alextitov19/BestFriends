@@ -23,11 +23,6 @@ struct INFOPreload: View {
             
             ZStack {
                 
-//                ColorManager.purple1
-//                    .ignoresSafeArea()
-//                    .onAppear()
-//
-
                 Image("purpleBackground")
                     .resizable()
                     .ignoresSafeArea()
@@ -148,15 +143,7 @@ struct INFOPreload: View {
                                 
                             })
           
-                        
-                        Spacer ()
-                            .frame(height: 10)
-                        
-                        Text("we're special")
-                            .font(.system(size: 18))
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager.purple2)
+             
                         
                         Spacer()
                             .frame(height: 130)
