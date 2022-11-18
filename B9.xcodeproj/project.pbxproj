@@ -146,6 +146,8 @@
 		CF3DB37628DA85BA00BF9CCD /* Meena1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */; };
 		CF3DB38328DAD2D200BF9CCD /* NewPoems.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3DB38228DAD2D200BF9CCD /* NewPoems.swift */; };
 		CF4128042922A451003BCBFA /* PhotoPOPFGPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */; };
+		CF4128082927133B003BCBFA /* StoriesPreLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4128072927133B003BCBFA /* StoriesPreLoad.swift */; };
+		CF41280A292715A5003BCBFA /* StoriesPreLoad2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF412809292715A5003BCBFA /* StoriesPreLoad2.swift */; };
 		CF47CF0328DB67A8008B6F11 /* PlanetSound.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */; };
 		CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */; };
 		CF47CF0928E2C93E008B6F11 /* BeSinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47CF0828E2C93E008B6F11 /* BeSinger.swift */; };
@@ -390,6 +392,8 @@
 		CF3DB37528DA85BA00BF9CCD /* Meena1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Meena1.m4a; sourceTree = "<group>"; };
 		CF3DB38228DAD2D200BF9CCD /* NewPoems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPoems.swift; sourceTree = "<group>"; };
 		CF4128032922A451003BCBFA /* PhotoPOPFGPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPOPFGPreload.swift; sourceTree = "<group>"; };
+		CF4128072927133B003BCBFA /* StoriesPreLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPreLoad.swift; sourceTree = "<group>"; };
+		CF412809292715A5003BCBFA /* StoriesPreLoad2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesPreLoad2.swift; sourceTree = "<group>"; };
 		CF47CF0228DB67A8008B6F11 /* PlanetSound.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSound.mp4; sourceTree = "<group>"; };
 		CF47CF0628DD1CFE008B6F11 /* Emilia2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Emilia2.m4a; sourceTree = "<group>"; };
 		CF47CF0828E2C93E008B6F11 /* BeSinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeSinger.swift; sourceTree = "<group>"; };
@@ -606,6 +610,7 @@
 				7AB52167289D9418005A49FA /* Purple Subscription */,
 				7AD8DF0A27F696F000D9F0E1 /* HomeView */,
 				CF37535B28C6953B003817E3 /* DREAMS */,
+				CF412806292712FD003BCBFA /* STORIES _ STORIES _ STORIES */,
 				CFD12CC92819E98800AB2539 /* DramaCentral */,
 				CF37535628BECF34003817E3 /* Built By Teens */,
 				CFAE7347283C745800015FD2 /* Help Beta Test */,
@@ -815,7 +820,6 @@
 		CF37535B28C6953B003817E3 /* DREAMS */ = {
 			isa = PBXGroup;
 			children = (
-				CF3AE3B228F9F5B6002584A6 /* New Group */,
 				CF37535C28C6956D003817E3 /* HeartToContinue.swift */,
 				CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */,
 				CFDA4BCD28D1037100118D90 /* DreamVaultView.swift */,
@@ -848,13 +852,6 @@
 				CF381A55282842EA00B3719E /* Step2FG_NewSolutions.swift */,
 			);
 			path = "Friend Group Fighting";
-			sourceTree = "<group>";
-		};
-		CF3AE3B228F9F5B6002584A6 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		CF3AE3B328F9F5BE002584A6 /* BuiltByTeens */ = {
@@ -933,6 +930,22 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		CF412805292712E2003BCBFA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		CF412806292712FD003BCBFA /* STORIES _ STORIES _ STORIES */ = {
+			isa = PBXGroup;
+			children = (
+				CF4128072927133B003BCBFA /* StoriesPreLoad.swift */,
+				CF412809292715A5003BCBFA /* StoriesPreLoad2.swift */,
+			);
+			path = "STORIES _ STORIES _ STORIES";
 			sourceTree = "<group>";
 		};
 		CF47CF0A28E2CAC7008B6F11 /* WORLD */ = {
@@ -1209,6 +1222,7 @@
 		CFD12CC92819E98800AB2539 /* DramaCentral */ = {
 			isa = PBXGroup;
 			children = (
+				CF412805292712E2003BCBFA /* New Group */,
 				CF65041928931C2C0092EEB9 /* FightsInfo.swift */,
 				CF65041728931C0B0092EEB9 /* FightsDVid.swift */,
 				CFAB5429282123EA00BBF502 /* WhoFighting.swift */,
@@ -1599,6 +1613,7 @@
 				62372A152884D57500CAB75C /* HorizonGoalChoices.swift in Sources */,
 				CFA122602859771600E22E84 /* HurtFeelings.swift in Sources */,
 				CF24815928F5075600D47AE3 /* PhotoPopInfo.swift in Sources */,
+				CF4128082927133B003BCBFA /* StoriesPreLoad.swift in Sources */,
 				CFD12CC7281943CA00AB2539 /* Impetus.swift in Sources */,
 				CF65043028A438970092EEB9 /* ChatReactions.swift in Sources */,
 				7A04C13D28553818003AB24A /* PhotoPopView.swift in Sources */,
@@ -1613,6 +1628,7 @@
 				7A04C13F2855390B003AB24A /* PhotoPopImageView.swift in Sources */,
 				CFA1225D285975FF00E22E84 /* Apologies.swift in Sources */,
 				7ADFDB31289B1EFE0004FB1C /* ShakeExtensions.swift in Sources */,
+				CF41280A292715A5003BCBFA /* StoriesPreLoad2.swift in Sources */,
 				7AA07F5F285D0DD400E9C5A4 /* UserModel.swift in Sources */,
 				CFD0468D282D7F8400BF0B02 /* AtmosphereMain2.swift in Sources */,
 				CF9957F128A72E77000BBAFF /* DeleteUserData.swift in Sources */,

@@ -105,11 +105,15 @@ struct WorldPreload2: View {
             
                
               
-//                NavigationLink(destination: ReceivedPlaylist(), label: {
-//                    AtmosphereCircle (color: ColorManager.orange5, friendName: "FriendGroup \nPlaylists")
-//                })
-//                .offset(x: showItems ? 110 : 0, y: showItems ? 170: 0)
-//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                NavigationLink(destination: StoriesPreLoad(user: user, friends: friends), label: {
+                    AtmosphereCircle (color: ColorManager.orange5, friendName: "MomentPOP")
+                })
+                .offset(x: showItems ? 110 : 0, y: showItems ? 170: 0)
+                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+                
+               
+                
+                
                 
                 
                 NavigationLink(destination: EmptyView(), label: {
