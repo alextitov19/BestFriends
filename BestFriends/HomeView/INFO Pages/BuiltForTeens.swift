@@ -27,23 +27,57 @@ struct BuiltForTeens: View {
 //                .ignoresSafeArea()
 //                .onAppear()
             
-            Image("lampblue")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+//            Image("lampblue")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
 
-       
+            
+            Color .black
+              .ignoresSafeArea()
+              .onAppear()
+            
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.75)
+          
+            ZStack {
+                Circle()
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(ColorManager.purple3)
+                    .offset(x: 200, y: -450)
+                
+                Circle()
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(ColorManager.purple3)
+                    .offset(x: -200, y: 400)
+            }
+                
             VStack {
+                
+                
+                Text("Never alone in the silence")
+                            .font(.system(size: 27))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.purple3)
                
                      Text("- standing together in the storm \n- always having each other's backs \n- never giving up on each other \n- yet, each of us uniquely special")
                          .font(.system(size: 23))
-                     
                          .fontWeight(.thin)
                          .foregroundColor(Color.white)
                          .padding()
+                
+                
  //
                 Spacer()
-                    .frame(height: 350)
+                    .frame(height: 100)
             
                     VStack {
 
@@ -62,7 +96,7 @@ struct BuiltForTeens: View {
                                 
                             })
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 80)
 
    
                       

@@ -708,7 +708,6 @@
 		7ACD20BA27FC99B4002F7800 /* InviteView */ = {
 			isa = PBXGroup;
 			children = (
-				CFC0EE772908057D006B3FAA /* New Group */,
 				7ACD20BB27FC99CA002F7800 /* InviteView.swift */,
 				7ACD20BD27FCBC18002F7800 /* PendingInviteView.swift */,
 			);
@@ -1145,13 +1144,6 @@
 			sourceTree = "<group>";
 		};
 		CFC0EE702906F9D9006B3FAA /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		CFC0EE772908057D006B3FAA /* New Group */ = {
 			isa = PBXGroup;
 			children = (
 			);

@@ -25,17 +25,35 @@ struct INFOPreload2: View {
 //
     var body: some View {
         ZStack {
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+            
+            Color .black
+              .ignoresSafeArea()
+              .onAppear()
+            
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
 
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.75)
           
-        
+            ZStack {
+                Circle()
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(ColorManager.purple3)
+                    .offset(x: 200, y: -450)
+                
+                Circle()
+                    .frame(width: 300, height: 300)
+                    .foregroundColor(ColorManager.purple3)
+                    .offset(x: -200, y: 400)
+                
+                
+            }
+            
          
              
             VStack {
@@ -131,12 +149,7 @@ struct INFOPreload2: View {
                             
                         })
       
-                    
-                    Text("Feeling lighter now")
-                                .font(.system(size: 27))
-                                .italic()
-                                .fontWeight(.light)
-                                .foregroundColor(ColorManager.purple3)
+               
                         
                     
                     

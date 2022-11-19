@@ -23,10 +23,14 @@ struct INFOPreload: View {
             
             ZStack {
                 
-                Image("purpleBackground")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .scaledToFill()
+                Color .black
+                  .ignoresSafeArea()
+                  .onAppear()
+//                
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
@@ -61,8 +65,6 @@ struct INFOPreload: View {
                             .resizable()
                             .foregroundColor(ColorManager .purple4)
                             .frame(width: 250, height: 200)
-                        //                    .blur(radius: 2)
-//                            .shadow(color: ColorManager .purple1, radius: 65, x: 30, y: 50)
                            .shadow(color: .white, radius: 65, x: 30, y: 50)
                             .opacity(0.65)
                         

@@ -37,7 +37,9 @@ struct HomeView: View {
             
             ZStack {
                 
-         
+                Color .black
+                  .ignoresSafeArea()
+                  .onAppear()
                 
 //                //
 //                //            Image("purpleBackground")
@@ -68,16 +70,7 @@ struct HomeView: View {
 //                                          .ignoresSafeArea()
 //                                           .blendMode(.screen)
 //
-//
-                
-                
-                
-                
-                
-                
-                Color .black
-                  .ignoresSafeArea()
-                  .onAppear()
+             
                 
 //                ColorManager .grey4
 //                  .ignoresSafeArea()

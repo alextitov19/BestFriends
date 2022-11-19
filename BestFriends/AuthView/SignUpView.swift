@@ -58,6 +58,8 @@ struct SignUpView: View {
             
             VStack {
 
+                Text("Yep, just one page")
+                    .foregroundColor(.white)
                 
                 VStack {
                     HStack {
