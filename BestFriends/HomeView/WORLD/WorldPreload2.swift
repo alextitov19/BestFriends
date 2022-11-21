@@ -97,7 +97,7 @@ struct WorldPreload2: View {
 
 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "Ouch! \nsomething's \nBUGGING \nme")
+                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "Something's \nBUGGING \nme")
                     })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 225: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)

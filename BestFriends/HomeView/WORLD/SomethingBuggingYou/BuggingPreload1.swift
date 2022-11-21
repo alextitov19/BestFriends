@@ -65,13 +65,13 @@ struct BuggingPreload1: View {
      
 
 
-              NavigationLink(destination: HurtFeelingsPreload(user: user, friends: friends, groups: groups), label: {
-                  BuggingCircle (color: ColorManager.purple2, friendName: "Hurt \nFeelings")
+              NavigationLink(destination: HurtFeelings2(user: user, friends: friends, groups: groups), label: {
+                  BuggingCircle (color: ColorManager.purple2, friendName: "My \nFeeling \ngot hurt")
             })
               .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
             
-            NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
-                BuggingCircle (color: ColorManager.purple4, friendName: "HUGE \nFight")
+            NavigationLink(destination: Apologies(user: user, friends: friends, groups: groups), label: {
+                BuggingCircle (color: ColorManager.purple4, friendName: "I hurt \nmy friend's \nFeelings")
             })
             .offset(x: showItems ? 100 : 0, y: showItems ? -175: 0)
             
@@ -91,22 +91,57 @@ struct BuggingPreload1: View {
            VStack {
                
             Spacer ()
-                   .frame(height: 50)
-
-               Text("DRAMA")
-                             .font(.system(size: 30))
+                   .frame(height: 30)
+               
+               Text("Nervious")
+                             .font(.system(size: 15))
                          
-                             .foregroundColor(.blue)
-                             .fontWeight(.thin)
+                             .foregroundColor(.white)
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+
+               Text("to say anything?")
+                             .font(.system(size: 15))
+                         
+                             .foregroundColor(.white)
+                             .fontWeight(.light)
                              .multilineTextAlignment(.center)
  //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-              Text("Central")
-                            .font(.system(size: 50))
-                        
-                            .foregroundColor(.blue)
-                            .fontWeight(.thin)
-                            .multilineTextAlignment(.center)
-//                            .shadow(color: .black, radius: 1, x: 0, y: 1)
+         
+               Spacer ()
+                      .frame(height: 8)
+               
+               
+               Text("Join users around the ")
+                             .font(.system(size: 15))
+                         
+                             .foregroundColor(.white)
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+               
+               Text("world saying something")
+                             .font(.system(size: 15))
+                         
+                             .foregroundColor(.white)
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+               
+               Text("NOW!")
+                             .font(.system(size: 25))
+                         
+                             .foregroundColor(.white)
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+               
+               
+               Text("(strength in numbers)")
+                             .font(.system(size: 15))
+                         
+                             .foregroundColor(.blue)
+                             .fontWeight(.light)
+                             .multilineTextAlignment(.center)
+               
+               
                
        
                 }
