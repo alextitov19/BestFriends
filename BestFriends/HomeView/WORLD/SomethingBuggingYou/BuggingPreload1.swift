@@ -131,7 +131,7 @@ struct BuggingPreload1: View {
                     
                     
                     Text("NOW!")
-                        .font(.system(size: 22))
+                        .font(.system(size: 25))
                     
                         .foregroundColor(.white)
                         .fontWeight(.light)

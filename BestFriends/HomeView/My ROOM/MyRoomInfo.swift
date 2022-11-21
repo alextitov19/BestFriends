@@ -184,14 +184,26 @@ struct MyRoomInfo: View {
 //
 //
 //                }
-                .onTapGesture {
-                    withAnimation {
-                        self.showItems.toggle()
-                    }
-                    print("tap function is working")
-                }
                 
-                .animation(Animation.easeInOut(duration: 1.5), value: showItems)
+                
+               .onTapGesture {
+                   withAnimation {
+                   self.showItems.toggle()
+                   }
+                   print("tap function is working")
+               }
+
+               .animation(Animation.easeInOut(duration: 2.5), value: showItems)
+                
+//                
+//                .onTapGesture {
+//                    withAnimation {
+//                        self.showItems.toggle()
+//                    }
+//                    print("tap function is working")
+//                }
+//                
+//                .animation(Animation.easeInOut(duration: 1.5), value: showItems)
                 
             }
         }
