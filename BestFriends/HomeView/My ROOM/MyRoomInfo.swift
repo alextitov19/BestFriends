@@ -73,7 +73,7 @@ struct MyRoomInfo: View {
                 
                 
                 
-                NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
+                NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
                     AtmosphereCircle (color: ColorManager.red, friendName: "Huge \nFIGHT")
                         })
                         .offset(x: showItems ? -100 : 0, y: showItems ? -300: 0)
