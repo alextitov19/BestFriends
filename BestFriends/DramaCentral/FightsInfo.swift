@@ -27,18 +27,7 @@ struct FightsInfo: View {
                 ColorManager.grey4
                     .ignoresSafeArea()
                     .onAppear()
-    //
-    //            Image("girlwalking")
-    ////                .frame(width: 300, height: 20)
-    //                .resizable()
-    //                .scaledToFill()
-    //                .ignoresSafeArea()
-    //
-    //                      Spacer()
-    //                          .frame(height: 0)
-    //
         
-           
             
         VStack {
             
