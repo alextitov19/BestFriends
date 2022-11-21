@@ -62,7 +62,13 @@ struct BuiltForTeens: View {
             VStack {
                 
                 
-                Text("Never alone in the silence")
+                Text("Add up to five ...")
+                            .font(.system(size: 27))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager.purple3)
+                
+                Text("closest, trusted FRIENDS")
                             .font(.system(size: 27))
                             .italic()
                             .fontWeight(.light)
