@@ -30,16 +30,25 @@ struct HorizonsPreload1: View {
 //            ColorManager.grey4
 //                .ignoresSafeArea()
 //                .onAppear()
+            
+            //            AdPlayerView(name: "Planet6")
+            //                .ignoresSafeArea()
+            //                .blendMode(.screen)
 //
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
+          
 
-//            AdPlayerView(name: "Planet6")
+
+//            Image("purpleBackground")
+//                .resizable()
 //                .ignoresSafeArea()
-//                .blendMode(.screen)
-
+//                .scaledToFill()
+          
+            
+            Color .black
+              .ignoresSafeArea()
+              .onAppear()
+            
+            
             AdPlayerView(name: "Dreams1")
                 .ignoresSafeArea()
                 .blendMode(.screen)

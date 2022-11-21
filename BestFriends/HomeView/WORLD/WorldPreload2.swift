@@ -53,7 +53,7 @@ struct WorldPreload2: View {
 
 
               NavigationLink(destination: SaySomethingNice3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                  SomethingNiceCircle (color: ColorManager.purple2, friendName: "QUICK, say \nsomething \nNICE")
+                  SomethingNiceCircle (color: ColorManager.purple2, friendName: "Just say \nsomething \nNICE")
             })
               .offset(x: showItems ? 120 : 0, y: showItems ? -200: 0)
               .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -69,8 +69,8 @@ struct WorldPreload2: View {
                 
                 
                 
-                NavigationLink(destination:  PhotoPop1(user: user, friends: friends), label: {
-                    SomethingNiceCircle (color: ColorManager.grey2, friendName: "PhotoPOP")
+                NavigationLink(destination:  PhotoPopView(user: user, friends: friends), label: {
+                    SomethingNiceCircle (color: ColorManager.grey2, friendName: "PhotoPOP \n'shake \niPhone'")
                 })
                 .offset(x: showItems ? -100 : 0, y: showItems ? 150: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -86,18 +86,18 @@ struct WorldPreload2: View {
               
                 
                 
-                
-                NavigationLink(destination:  AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
-                    SomethingNiceCircle (color: ColorManager.red, friendName: "Something \nJUST \nHappened")
-                })
-                .offset(x: showItems ? -90 : 0, y: showItems ? -240: 0)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
-                
-                
+//                
+//                NavigationLink(destination:  AtmosphereInfo1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups), label: {
+//                    SomethingNiceCircle (color: ColorManager.red, friendName: "Something \nJUST \nHappened")
+//                })
+//                .offset(x: showItems ? -90 : 0, y: showItems ? -240: 0)
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+//                
+//                
 
 
                 NavigationLink(destination: BuggingPreload1(user: user, friends: friends, groups: groups), label: {
-                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "Help, \nsomething's \nBUGGING \nme")
+                    SomethingNiceCircle (color: ColorManager.grey1, friendName: "Ouch! \nsomething's \nBUGGING \nme")
                     })
                 .offset(x: showItems ? 0 : 0, y: showItems ? 225: 0)
                 .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
@@ -105,11 +105,11 @@ struct WorldPreload2: View {
             
                
               
-                NavigationLink(destination: StoriesPreLoad(user: user, friends: friends), label: {
-                    AtmosphereCircle (color: ColorManager.orange5, friendName: "MomentPOP")
-                })
-                .offset(x: showItems ? 110 : 0, y: showItems ? 170: 0)
-                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
+//                NavigationLink(destination: StoriesPreLoad(user: user, friends: friends), label: {
+//                    AtmosphereCircle (color: ColorManager.orange5, friendName: "MomentPOP \n(stories)")
+//                })
+//                .offset(x: showItems ? 110 : 0, y: showItems ? 170: 0)
+//                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 10, x: 10, y: 10)
                 
                
                 
@@ -140,15 +140,15 @@ struct WorldPreload2: View {
             Spacer ()
                    .frame(height: 120)
               
-               Text("Teen-designed")
-                             .font(.system(size: 20))
-                             .italic()
-                            .foregroundColor(.white)
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//               Text("Teen-designed")
+//                             .font(.system(size: 20))
+//                             .italic()
+//                            .foregroundColor(.white)
+//                             .fontWeight(.thin)
+//                             .multilineTextAlignment(.center)
+////                             .shadow(color: .black, radius: 1, x: 0, y: 1)
 
-               Text("building more")
+               Text("building")
                              .font(.system(size: 20))
                              .italic()
                              .foregroundColor(.white)

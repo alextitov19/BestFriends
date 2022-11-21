@@ -26,29 +26,45 @@ struct AtmosphereInfo: View {
             
             ZStack {
                 
-                ColorManager.grey4
+//                ColorManager.grey4
+//                    .ignoresSafeArea()
+//                    .onAppear()
+              
+                
+                Color .black
+                  .ignoresSafeArea()
+                  .onAppear()
+                
+    //            Image("purpleBackground")
+    //                .resizable()
+    //                .ignoresSafeArea()
+    //                .scaledToFill()
+
+                AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
-                    .onAppear()
-                //
-                //            Image("girlwalking")
-                ////                .frame(width: 300, height: 20)
-                //                .resizable()
-                //                .scaledToFill()
-                //                .ignoresSafeArea()
-                //
-                //                      Spacer()
-                //                          .frame(height: 0)
-                //
+                    .blendMode(.screen)
+                    .opacity(0.75)
+                
                 
                 VStack {
 
-                    Text("So They Can")
+                    Text("Want to tell firinds")
                         .font(.system(size: 30))
                         .foregroundColor(Color.white)
                         .italic()
                         .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager .purple3)
+                    
+                    Text("so they can")
+                        .font(.system(size: 30))
+                        .foregroundColor(Color.white)
+                        .italic()
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .purple3)
+                    
+                    
                     
                     
                     Text("Cheer you in good times")

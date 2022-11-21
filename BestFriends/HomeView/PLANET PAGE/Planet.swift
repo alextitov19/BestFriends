@@ -356,7 +356,7 @@ struct PlanetActionsView: View {
                     
 //                    NavigationLink(destination: EmptyView(),
                
-                    NavigationLink(destination: InfoViewPlanet(user: user),
+                    NavigationLink(destination: MyRoomInfo(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres, groups: groups),
                                                   
                                                   
 //                                                  NavigationLink(destination: HorizonsPreload1(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres:  friendAtmospheres),
@@ -373,32 +373,31 @@ struct PlanetActionsView: View {
                             
                             VStack {
                                 
-                
-                                Text("Walk-")
-                                    .foregroundColor(ColorManager .pmbc_blue)
-                                    .font(.system(size: 17, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
-                                
-                                
-                                Text("through")
-                                    .foregroundColor(ColorManager .pmbc_blue)
-                                    .font(.system(size: 17, weight: .bold))
-                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
-                                    .opacity(0.50)
-//                                Text("Walk-Through")
-//                                    .foregroundColor(ColorManager.grey1)
-//                                     .font(.system(size: 25, weight: .bold))
-//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                     .opacity(0.50)
-                              
-//                                Text("Room")
-//                                    .foregroundColor(ColorManager.grey1)
-//                                     .font(.system(size: 25, weight: .bold))
-//                                     .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                     .opacity(0.50)
 //
-                              
+//                                Text("time alone")
+//                                    .foregroundColor(ColorManager .pmbc_blue)
+//                                    .font(.system(size: 17, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
+
+//
+//                                Text("Room")
+//                                    .foregroundColor(ColorManager .pmbc_blue)
+//                                    .font(.system(size: 17, weight: .bold))
+//                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+//                                    .opacity(0.50)
+
+                                Text("My")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 19, weight: .regular))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.70)
+                                
+                                Text("Room")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 19, weight: .bold))
+                                    .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                    .opacity(0.70)
                                 
                             }
                         }

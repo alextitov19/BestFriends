@@ -22,20 +22,29 @@ struct SurveyStickersPreload: View {
 //
     var body: some View {
         ZStack {
-//            ColorManager.grey3
-//                .ignoresSafeArea()
-//                .onAppear()
+
             
-            Image("ShaylaBest")
-                .resizable()
+//            Image("ShaylaBest")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+
+
+            
+            Color .black
+              .ignoresSafeArea()
+              .onAppear()
+            
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
-                .scaledToFill()
-
+                .blendMode(.screen)
+                .opacity(0.75)
             
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-
             
             VStack {
 //                        Spacer()

@@ -27,11 +27,13 @@ struct DreamVaultView: View {
         
         ZStack {
            
-            Image("purpleBackground")
-                .resizable()
-                .ignoresSafeArea()
-                .scaledToFill()
-          
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
+            Color .black
+              .ignoresSafeArea()
+              .onAppear()
            
             AdPlayerView(name: "PlanetSound")
                 .ignoresSafeArea()

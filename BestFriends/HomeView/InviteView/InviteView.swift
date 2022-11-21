@@ -32,7 +32,7 @@ struct InviteView: View {
                     .frame(height: 40)
                 
                 Text("Send Friend Requests")
-                    .foregroundColor(.green)
+                    .foregroundColor(ColorManager .purple3)
                     .font(.system(size: 25, weight: .bold))
                 
                 Spacer()
@@ -109,7 +109,7 @@ struct InviteView: View {
                                 .frame(height: 40)
                             
                             Text("Accepting Friend Requests")
-                                .foregroundColor(.green)
+                                .foregroundColor(ColorManager .purple3)
                                 .font(.system(size: 25, weight: .bold))
                             
                             
