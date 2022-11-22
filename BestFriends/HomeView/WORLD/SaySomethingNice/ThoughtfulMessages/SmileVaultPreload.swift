@@ -65,7 +65,7 @@ struct SmileVaultPreload: View {
      
 
 
-              NavigationLink(destination: SaySomethingNice2(user: user, friends: friends), label: {
+              NavigationLink(destination: SaySomethingNice2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
                   SmileVaultCircle (color: ColorManager.grey3, friendName: "View Individual Friend's 'nice' messages")
             })
               .offset(x: showItems ? 100 : 0, y: showItems ? -200: 0)

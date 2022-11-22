@@ -97,7 +97,7 @@ struct BestFriendMessages: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(ColorManager.grey1)
-                        .frame(width: 250, height: 250)
+                        .frame(width: 200, height: 200)
                         .blur(radius: 2)
                         .shadow(color: .white, radius: 65, x: 40, y: 50)
                         .opacity(0.3)
@@ -106,29 +106,27 @@ struct BestFriendMessages: View {
                         
                         Text("SmileVault")
                             .font(.system(size: 35))
-                            .foregroundColor(.green)
+                            .foregroundColor(ColorManager .purple7)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                   
                         Text("'Nice' Messages")
-                            .font(.system(size: 25))
+                            .font(.system(size: 17))
                             
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                         
-                        Spacer ()
-                            .frame(height: 15)
                     
                         Text("you \nlong-tapped")
-                            .font(.system(size: 18))
+                            .font(.system(size: 17))
                             .italic()
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
                         
                         Text("in Chat")
-                            .font(.system(size: 18))
+                            .font(.system(size: 17))
                             .italic()
                             .foregroundColor(ColorManager.grey1)
                             .fontWeight(.medium)

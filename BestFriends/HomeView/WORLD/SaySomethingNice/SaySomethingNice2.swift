@@ -15,8 +15,13 @@ struct SaySomethingNice2: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+
+    
     let user: User
+    let atmosphere: Atmosphere
     let friends: [User]
+    let friendAtmospheres: [Atmosphere]
+//    let groups: [Group]
     
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
@@ -41,10 +46,10 @@ struct SaySomethingNice2: View {
                         
                         
                         Text("Who are you")
-                            .font(.system(size: 20, weight: .light))
+                            .font(.system(size: 20, weight: .ultraLight))
                             .foregroundColor(Color.white)
                         Text("sending message to?")
-                            .font(.system(size: 20, weight: .light))
+                            .font(.system(size: 20, weight: .ultraLight))
                             .foregroundColor(Color.white)
                         
                         
@@ -177,14 +182,14 @@ struct SaySomethingNice2: View {
                                     .font(.system(size: 20))
                                     .italic()
                                     .foregroundColor(.white)
-                                    .fontWeight(.ultraLight)
+                                    .fontWeight(.light)
                                     .multilineTextAlignment(.center)
 
                                 Text("social media less negative")
                                     .font(.system(size: 20))
                                     .italic()
                                     .foregroundColor(.white)
-                                    .fontWeight(.ultraLight)
+                                    .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                 
                                 Spacer()
@@ -205,21 +210,25 @@ struct SaySomethingNice2: View {
                                                         .fontWeight(.light)
                                                         .multilineTextAlignment(.center)
                                 
+                                Spacer()
+                                    .frame(height: 30)
+                                
                                 NavigationLink(
-                                   destination: YouGotThis(user: user, friends: friends),
+                                   destination: BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
                                    label: {
-                                       Text("Another Thought")
+                                       Text("See received 'Nice' messages")
                                            .fontWeight(.thin)
-                                           .frame(width: 250, height: 40)
+                                           .frame(width: 320, height: 40)
                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                           .font(.system(size: 30))
-                                           .background(ColorManager.purple3)
+                                           .font(.system(size: 25))
+                                           .background(ColorManager.pmbc_green)
                                            .cornerRadius(15)
                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                    })
                                 
                                 
-                                
+                                Spacer()
+                                    .frame(height: 30)
                                 
                             }
                             
@@ -228,9 +237,9 @@ struct SaySomethingNice2: View {
                                                         sessionManager.showLogin()
                                                     },
                                                         label: {
-                                                            Text("Chat")
+                                                            Text("Send 'Nice' Message")
                                                                 .fontWeight(.thin)
-                                                                .frame(width: 100, height: 30)
+                                                                .frame(width: 310, height: 30)
                                                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                                                 .font(.system(size: 25))
                                                                 .background(ColorManager.purple3)
