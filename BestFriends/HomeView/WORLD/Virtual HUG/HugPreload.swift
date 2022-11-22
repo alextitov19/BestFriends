@@ -50,7 +50,7 @@ struct HugPreload: View {
                 NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends), label: {
                 HugCircle (color: ColorManager.red, friendName: "ALERT \nfriends! \nMY day just \nCHANGED")
             })
-                .offset(x: showItems ? 70 : 0, y: showItems ? 175: 0)
+                .offset(x: showItems ? 120 : 0, y: showItems ? -220: 0)
            
                 
 
@@ -68,14 +68,14 @@ struct HugPreload: View {
             Spacer ()
                    .frame(height: 10)
 
-               Text("Does a friend")
+               Text("Do you or a")
                              .font(.system(size: 25))
                          
                              .foregroundColor(.white)
                              .fontWeight(.thin)
                              .multilineTextAlignment(.center)
  //                            .shadow(color: .black, radius: 1, x: 0, y: 1)
-               Text("need a")
+               Text("friend need a")
                              .font(.system(size: 25))
                          
                              .foregroundColor(.white)
