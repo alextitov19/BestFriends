@@ -201,7 +201,7 @@ struct PlanetActionsView: View {
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("GEAR")
+                                    Text("ROOM")
                                         .foregroundColor(.white)
                                         .font(.system(size: 20, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
@@ -267,6 +267,14 @@ struct PlanetActionsView: View {
                                         .font(.system(size: 35, weight: .light))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
+                                   
+                                    Text("8pm EST")
+                                        .foregroundColor(ColorManager .red)
+                                        .italic()
+                                        .font(.system(size: 15, weight: .light))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
                                     
                                 }
                             }
