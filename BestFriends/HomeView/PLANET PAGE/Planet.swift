@@ -353,7 +353,7 @@ struct PlanetActionsView: View {
                     
                     
                     VStack {
-                        NavigationLink(destination: SaySomethingNice3(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres),
+                        NavigationLink(destination: SaySomethingNice2(user: user, friends: friends),
                                        label: {
                             ZStack {
                                 Circle()

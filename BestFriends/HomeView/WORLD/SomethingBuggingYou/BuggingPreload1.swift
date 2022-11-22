@@ -79,12 +79,12 @@ struct BuggingPreload1: View {
                 NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
                     BuggingCircle (color: ColorManager.red, friendName: "Just had \nHUGE \nFIGHT")
                 })
-                .offset(x: showItems ? -100 : 0, y: showItems ? 175: 0)
+                .offset(x: showItems ? -100 : 0, y: showItems ? -155: 0)
                 
                 
                 Image(systemName: "triangle.fill")
                     .resizable()
-                    .foregroundColor(.pink)
+                    .foregroundColor(.cyan)
                     .frame(width: 300, height: 260)
                 //                    .blur(radius: 2)
                 
@@ -133,7 +133,7 @@ struct BuggingPreload1: View {
                         .frame(height: 8)
                     
                     
-                    Text("NOW!")
+                    Text("R I G H T  N O W!")
                         .font(.system(size: 25))
                     
                         .foregroundColor(.white)
