@@ -140,7 +140,7 @@ struct PlanetActionsView: View {
                             .frame(height: 15)
                         
                         
-                        NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups), label: {
+                        NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
                             ZStack {
                                 Circle()
                                     .frame(width: 110, height: 110)
@@ -195,25 +195,31 @@ struct PlanetActionsView: View {
                                 VStack {
                                     
                                     
-                                    Text("My")
+                                    Text("Add Friends")
                                         .foregroundColor(ColorManager .pmbc_blue)
-                                        .font(.system(size: 17, weight: .bold))
+                                        .font(.system(size: 15, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
                                     
-                                    Text("ROOM")
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 20, weight: .bold))
+                                    Text("Settings")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 15, weight: .bold))
                                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                                         .opacity(0.50)
-//
-//                                    Text("HERE!")
-//                                        .foregroundColor(.green)
-//                                        .font(.system(size: 24, weight: .bold))
-//                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
-//                                        .opacity(0.70)
-//
+
+                                  
                                     
+                                    Text("Free Stickers")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 15, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
+                                    
+                                    Text("About Us")
+                                        .foregroundColor(ColorManager .pmbc_blue)
+                                        .font(.system(size: 15, weight: .bold))
+                                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                                        .opacity(0.50)
                                     
                                 }
                             }

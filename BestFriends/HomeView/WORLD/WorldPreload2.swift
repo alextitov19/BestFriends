@@ -61,7 +61,7 @@ struct WorldPreload2: View {
                 
                 
                 
-                NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups), label: {
+                NavigationLink(destination: HugPreload(user: user, friends: friends, groups: groups, atmosphere: atmosphere), label: {
                 SomethingNiceCircle (color: ColorManager.pmbc_green, friendName: "send \ncomforting \nHUG")
             })
                 .offset(x: showItems ? -20 : 0, y: showItems ? -150: 0)

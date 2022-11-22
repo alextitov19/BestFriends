@@ -59,23 +59,23 @@ struct INFOPreload2: View {
             VStack {
            
              
-                Text("W O R L D")
+                Text("Creating")
                     .font(.system(size: 63))
                 
                     .foregroundColor(ColorManager.purple3)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                 
-                Text("FriendGroups")
+                Text("F I E L I N G S")
                     .font(.system(size: 63))
                 
                     .foregroundColor(ColorManager.purple3)
                     .fontWeight(.thin)
                     .multilineTextAlignment(.center)
                
-                Text("it's like ...")
-                        .font(.system(size: 27))
-                        .italic()
+                Text("like ...")
+                        .font(.system(size: 35))
+                      
                         .fontWeight(.light)
                         .foregroundColor(ColorManager .purple3)
              

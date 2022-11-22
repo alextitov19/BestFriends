@@ -108,14 +108,14 @@ struct StartHere1: View {
                 
                 
                 
-                Image(systemName: "square.fill")
+                Image(systemName: "triangle.fill")
                     .resizable()
                     .foregroundColor(ColorManager .purple4)
                     .frame(width: 150, height: 80)
                 //                    .blur(radius: 2)
                 
-                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
-                    .opacity(0.95)
+//                    .shadow(color: .purple, radius: 65, x: 30, y: 50)
+                    .opacity(0.90)
 
 
            VStack {
@@ -130,25 +130,25 @@ struct StartHere1: View {
 //                             .fontWeight(.thin)
 //                             .multilineTextAlignment(.center)
 ////                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-
-               Text("My")
-                             .font(.system(size: 20))
-                             .italic()
-                             .foregroundColor(.white)
-                             .fontWeight(.thin)
-                             .multilineTextAlignment(.center)
-//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
-              
-               Spacer ()
-                      .frame(height: 7)
-               
-               Text("GEAR")
-                             .font(.system(size: 30))
-                             .foregroundColor(ColorManager .purple1)
-//                            .foregroundColor(.green)
-                             .fontWeight(.light)
-                             .multilineTextAlignment(.center)
-//                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//               Text("My")
+//                             .font(.system(size: 20))
+//                             .italic()
+//                             .foregroundColor(.white)
+//                             .fontWeight(.thin)
+//                             .multilineTextAlignment(.center)
+////                             .shadow(color: .black, radius: 1, x: 0, y: 1)
+//
+//               Spacer ()
+//                      .frame(height: 7)
+//
+//               Text("GEAR")
+//                             .font(.system(size: 30))
+//                             .foregroundColor(ColorManager .purple1)
+////                            .foregroundColor(.green)
+//                             .fontWeight(.light)
+//                             .multilineTextAlignment(.center)
+////                             .shadow(color: .black, radius: 1, x: 0, y: 1)
                
 //
 //               Text("'FriendGroups'")

@@ -62,14 +62,14 @@ struct BuiltForTeens: View {
             VStack {
                 
                 
-                Text("Add up to five ...")
-                            .font(.system(size: 27))
-                            .italic()
-                            .fontWeight(.light)
-                            .foregroundColor(ColorManager.purple3)
+//                Text("Add up to five ...")
+//                            .font(.system(size: 27))
+//                            .italic()
+//                            .fontWeight(.light)
+//                            .foregroundColor(ColorManager.purple3)
                 
-                Text("closest, trusted FRIENDS")
-                            .font(.system(size: 27))
+                Text("FriendGroups")
+                            .font(.system(size: 45))
                             .italic()
                             .fontWeight(.light)
                             .foregroundColor(ColorManager.purple3)

@@ -43,9 +43,9 @@ struct INFOPreload: View {
                     Spacer()
                         .frame(height: 125)
                     
-                    Text("No one wants to be")
-                        .font(.system(size: 27))
-                        
+                    Text("Nightly 8:00pm EST")
+                        .font(.system(size: 15))
+                        .italic()
                         .fontWeight(.thin)
                         .multilineTextAlignment(.center)
                         .foregroundColor(ColorManager.purple2)
@@ -72,7 +72,11 @@ struct INFOPreload: View {
                         
                             Spacer ()
                                 .frame(height: 40)
-                            Text("just")
+                            
+                        
+                            
+                            
+                            Text("share")
                                 .font(.system(size: 20))
                             //                            .italic()
                                 .foregroundColor(.white)
@@ -80,7 +84,7 @@ struct INFOPreload: View {
                                 .multilineTextAlignment(.center)
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                             
-                            Text("another")
+                            Text("smiles with")
                                 .font(.system(size: 20))
                             //                             .italic()
                                 .foregroundColor(.white)
@@ -92,8 +96,8 @@ struct INFOPreload: View {
                                 .frame(height: 7)
                             
                             
-                            Text("F R I E N D")
-                                .font(.system(size: 30))
+                            Text("F R I E N D S")
+                                .font(.system(size: 26))
                                 .foregroundColor(.white)
                                 .fontWeight(.thin)
                                 .multilineTextAlignment(.center)
@@ -108,15 +112,26 @@ struct INFOPreload: View {
                         
                         Spacer ()
                             .frame(height: 30)
+                       
+                        Text("in a safe, positive space")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.thin)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(ColorManager.purple2)
                         
-                        Text("amoung so many")
+                        Spacer ()
+                            .frame(height: 15)
+                        
+                        
+                        Text("making hearts")
                             .font(.system(size: 25))
                         
                             .fontWeight(.thin)
                             .multilineTextAlignment(.center)
                             .foregroundColor(ColorManager.purple2)
                         
-                        Text("calling themselves Friends")
+                        Text("H A P P Y")
                             .font(.system(size: 25))
                             
                             .fontWeight(.thin)

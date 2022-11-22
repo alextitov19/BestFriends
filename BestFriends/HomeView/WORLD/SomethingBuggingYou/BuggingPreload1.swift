@@ -76,7 +76,10 @@ struct BuggingPreload1: View {
                 .offset(x: showItems ? 100 : 0, y: showItems ? -175: 0)
                 
                 
-                
+                NavigationLink(destination: FightsInfo(user: user, friends: friends, groups: groups), label: {
+                    BuggingCircle (color: ColorManager.red, friendName: "Just had \nHUGE \nFIGHT")
+                })
+                .offset(x: showItems ? -100 : 0, y: showItems ? 175: 0)
                 
                 
                 Image(systemName: "triangle.fill")

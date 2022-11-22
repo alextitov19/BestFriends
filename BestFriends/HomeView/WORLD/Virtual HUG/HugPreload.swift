@@ -16,6 +16,7 @@ struct HugPreload: View {
     let user: User
     let friends: [User]
     let groups: [Group]
+    let atmosphere: Atmosphere
     
     @State private var showItems: Bool = false
     @State private var offset: CGFloat = 200.0
@@ -36,6 +37,9 @@ struct HugPreload: View {
             })
               .offset(x: showItems ? -80 : 0, y: showItems ? -250: 0)
             
+                
+                
+                
                 NavigationLink(destination: VirtualHug(), label: {
                 HugCircle (color: ColorManager.purple4, friendName: "received \nHUG")
             })
@@ -43,6 +47,12 @@ struct HugPreload: View {
            
 
 
+                NavigationLink(destination: AtmosphereInfo(user: user, atmosphere: atmosphere, friends: friends), label: {
+                HugCircle (color: ColorManager.red, friendName: "ALERT! \nmy day \njust \nCHANGED")
+            })
+                .offset(x: showItems ? 70 : 0, y: showItems ? 175: 0)
+           
+                
 
         Image(systemName: "square.fill")
                     .resizable()
